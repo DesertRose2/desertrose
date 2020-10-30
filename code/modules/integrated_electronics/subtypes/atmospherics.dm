@@ -167,7 +167,7 @@
 		direction = SOURCE_TO_TARGET
 	target_pressure = min(PUMP_MAX_VOLUME,abs(new_amount))
 
-/obj/item/integrated_circuit/atmospherics/pump/volume/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air)
+/obj/item/integrated_circuit/atmospherics/pump/volume/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air, obj/item/tank/snowflake)
 	// No moles = nothing to pump
 	if(source_air.total_moles() <= 0)
 		return
