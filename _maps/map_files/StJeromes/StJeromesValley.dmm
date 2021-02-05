@@ -36355,8 +36355,8 @@
 	},
 /area/f13/caves)
 "cdJ" = (
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/cultivator,
+/obj/item/reagent_containers/glass/bucket/wood,
+/obj/item/cultivator/wood,
 /obj/item/shovel/spade,
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/legion)

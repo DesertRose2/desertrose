@@ -9280,7 +9280,7 @@
 /area/f13/village)
 "hge" = (
 /obj/structure/rack,
-/obj/item/cultivator,
+/obj/item/cultivator/wood,
 /obj/item/shovel/spade,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/legion)

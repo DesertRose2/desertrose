@@ -2142,6 +2142,7 @@
 #include "code\modules\fallout\obj\structures\window.dm"
 #include "code\modules\fallout\obj\trash\deconstruction.dm"
 #include "code\modules\fallout\obj\trash\electronics.dm"
+#include "code\modules\fallout\primitive\rake.dm"
 #include "code\modules\fallout\reagents\alcohol.dm"
 #include "code\modules\fallout\reagents\drinks.dm"
 #include "code\modules\fallout\reagents\drugs.dm"
