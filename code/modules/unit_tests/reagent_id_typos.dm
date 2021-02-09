@@ -13,12 +13,14 @@
 				if(!GLOB.chemical_reagents_list[id])
 					Fail("Unknown chemical id \"[id]\" in recipe [R.type]")
 	
-	for (var/type in subtypesof(/obj/item/reagent_containers/food))
+	for (var/type in subtypesof(/obj/item/reagent_containers/food/))
 		var/obj/item/reagent_containers/food/item = new type()
 		for(var/id in item.list_reagents)
 			if(!GLOB.chemical_reagents_list[id])
 				Fail("Unknown chemical id \"[id]\" in list_reagents on [type]")
-		for(var/id in item.bonus_reagents)
-			if(!GLOB.chemical_reagents_list[id])
-				Fail("Unknown chemical id \"[id]\" in bonus_reagents on [type]")
+		if(istype(item, /obj/item/reagent_containers/food/snacks))
+			var/obj/item/reagent_containers/food/snacks/snackitem = item
+			for(var/id in snackitem.bonus_reagents)
+				if(!GLOB.chemical_reagents_list[id])
+					Fail("Unknown chemical id \"[id]\" in bonus_reagents on [type]")
 		qdel(item)
