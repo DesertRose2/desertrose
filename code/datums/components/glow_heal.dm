@@ -58,7 +58,8 @@
 			livingMob.adjustToxLoss(-livingMob.maxHealth*0.1)
 		if(healing_types[4])	
 			livingMob.adjustOxyLoss(-livingMob.maxHealth*0.1)
-		if(livingMob.stat == DEAD && revive_allowed)
+		if(livingMob.stat == DEAD && revive_allowed && livingMob.glowrevived == FALSE)
 			livingMob.revive(full_heal = TRUE)
+			livingMob.glowrevived = TRUE
 		var/obj/effect/temp_visual/heal/H = new /obj/effect/temp_visual/heal(get_turf(livingMob)) //shameless copy from blobbernaut
 		H.color = "#d9ff00" //I want yellow because glowing; sidenote: maybe this should be a var so it can be multiple things

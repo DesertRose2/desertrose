@@ -158,3 +158,6 @@
 	var/sprint_buffer_regen_last = 0		//last world.time this was regen'd for math.
 	var/sprint_stamina_cost = 0.70			//stamina loss per tile while insufficient sprint buffer.
 	//---End
+
+	//Glow heal reviving - makes a mob only get revived once
+	var/glowrevived = FALSE
