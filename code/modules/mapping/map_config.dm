@@ -24,12 +24,12 @@
 
 	var/traits = list(
 					list(
-						"Gravity" = 1, 
-						"Station" = 1
+						ZTRAIT_GRAVITY = 1, 
+						ZTRAIT_STATION = 1
 						),
 					list(
-						"Gravity" = 1,
-						"Baseturf" = /turf/open/indestructible/ground/inside/mountain
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain
 						)
 					)
 	var/space_ruin_levels = 0
