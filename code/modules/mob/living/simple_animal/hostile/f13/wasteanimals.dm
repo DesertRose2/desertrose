@@ -408,6 +408,10 @@
 	GLOB.mob_nests -= src
 	. = ..()
 
+/mob/living/simple_animal/hostile/giantantqueen/Destroy()
+	GLOB.mob_nests -= src
+	. = ..()
+
 /mob/living/simple_animal/hostile/giantantqueen/Aggro()
 	..()
 	summon_backup(10)
