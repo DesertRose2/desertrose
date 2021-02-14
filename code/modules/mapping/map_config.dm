@@ -23,15 +23,15 @@
 	var/list/removed_jobs = list()   //Removes the "none" faction using job name - can also use #all# (case sensitive)
 
 	var/traits = list(
-					  list(
-						  "Gravity" = 1, 
-						  "Station" = 1
-						  ),
-					  list(
-						  "Gravity" = 1,
-						  "Baseturf" = /turf/open/indestructible/ground/inside/mountain
-						  )
-					 )
+					list(
+						"Gravity" = 1, 
+						"Station" = 1
+						),
+					list(
+						"Gravity" = 1,
+						"Baseturf" = /turf/open/indestructible/ground/inside/mountain
+						)
+					)
 	var/space_ruin_levels = 0
 	var/space_empty_levels = 0
 	var/station_ruin_budget = 0 // can be set to manually override the station ruins budget on maps that don't support station ruins, stopping the error from being unable to place the ruins.
