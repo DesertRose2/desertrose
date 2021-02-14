@@ -32,8 +32,8 @@
 						  "Baseturf" = /turf/open/indestructible/ground/inside/mountain
 						  )
 					 )
-	var/space_ruin_levels = 4
-	var/space_empty_levels = 1
+	var/space_ruin_levels = 0
+	var/space_empty_levels = 0
 	var/station_ruin_budget = -1 // can be set to manually override the station ruins budget on maps that don't support station ruins, stopping the error from being unable to place the ruins.
 
 	var/minetype// = "lavaland" // we don't want lavaland
@@ -44,10 +44,9 @@
 
 	var/allow_custom_shuttles = TRUE
 	var/shuttles = list(
-		"cargo" = "cargo_box",
+		"cargo" = "cargo_pahrump",
 		"ferry" = "ferry_fancy",
-		"whiteship" = "whiteship_box",
-		"emergency" = "emergency_box")
+		"emergency" = "emergency_pahrump")
 
 	var/year_offset = 540 //The offset of ingame year from the actual IRL year. You know you want to make a map that takes place in the 90's. Don't lie.
 
