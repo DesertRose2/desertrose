@@ -124,7 +124,6 @@
 		else
 			adminwho += ", [C]"
 
-	reason = sanitizeSQL(reason)
 	if(maxadminbancheck)
 		var/datum/DBQuery/query_check_adminban_amt = SSdbcore.NewQuery(
 			"SELECT count(id) AS num FROM [format_table_name("ban")] WHERE ( a_ckey = :a_ckey) AND (bantype = 'ADMIN_PERMABAN'  OR (bantype = 'ADMIN_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned)",
@@ -277,14 +276,12 @@
 		return
 	qdel(query_edit_ban_get_details)
 
-	reason = sanitizeSQL(reason)
 	var/value
 
 	switch(param)
 		if("reason")
 			if(!value)
 				value = input("Insert the new reason for [p_key]'s ban", "New Reason", "[reason]", null) as null|text
-				value = sanitizeSQL(value)
 				if(!value)
 					to_chat(usr, "Cancelled")
 					return
@@ -449,21 +446,24 @@
 	output += "Please note that all jobban bans or unbans are in-effect the following round."
 
 	if(adminckey || playerckey || ip || cid)
-		var/list/searchlist = list()
-		if(playerckey)
-			searchlist += "ckey = '[sanitizeSQL(ckey(playerckey))]'"
-		if(adminckey)
-			searchlist += "a_ckey = '[sanitizeSQL(ckey(adminckey))]'"
-		if(ip)
-			searchlist += "ip = INET_ATON('[sanitizeSQL(ip)]')"
-		if(cid)
-			searchlist += "computerid = '[sanitizeSQL(cid)]'"
-		var/search = searchlist.Join(" AND ")
 		var/bancount = 0
 		var/bansperpage = 15
 		var/pagecount = 0
 		page = text2num(page)
-		var/datum/DBQuery/query_count_bans = SSdbcore.NewQuery("SELECT COUNT(id) FROM [format_table_name("ban")] WHERE [search]")
+		var/datum/DBQuery/query_count_bans = SSdbcore.NewQuery({"
+			SELECT COUNT(id)
+			FROM [format_table_name("ban")]
+			WHERE
+				(:player_key IS NULL OR ckey = :player_key) AND
+				(:admin_key IS NULL OR a_ckey = :admin_key) AND
+				(:player_ip IS NULL OR ip = INET_ATON(:player_ip)) AND
+				(:player_cid IS NULL OR computerid = :player_cid)
+		"}, list(
+			"player_key" = ckey(playerckey),
+			"admin_key" = ckey(adminckey),
+			"player_ip" = ip,
+			"player_cid" = cid,
+		))
 		if(!query_count_bans.warn_execute())
 			qdel(query_count_bans)
 			return
@@ -490,8 +490,53 @@
 		output += "<th width='20%'><b>ADMIN</b></th>"
 		output += "<th width='15%'><b>OPTIONS</b></th>"
 		output += "</tr>"
-		var/limit = " LIMIT [bansperpage * page], [bansperpage]"
-		var/datum/DBQuery/query_search_bans = SSdbcore.NewQuery("SELECT id, bantime, bantype, reason, job, duration, expiration_time, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].ckey), ckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].a_ckey), a_ckey), unbanned, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].unbanned_ckey), unbanned_ckey), unbanned_datetime, edits, round_id FROM [format_table_name("ban")] WHERE [search] ORDER BY bantime DESC[limit]")
+		var/datum/DBQuery/query_search_bans = SSdbcore.NewQuery({"
+			SELECT
+				id,
+				bantime,
+				round_id,
+				role,
+				expiration_time,
+				TIMESTAMPDIFF(MINUTE, bantime, expiration_time),
+				IF(expiration_time < NOW(), 1, NULL),
+				applies_to_admins,
+				reason,
+				IFNULL((
+					SELECT byond_key
+					FROM [format_table_name("player")]
+					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].ckey
+				), ckey),
+				INET_NTOA(ip),
+				computerid,
+				IFNULL((
+					SELECT byond_key
+					FROM [format_table_name("player")]
+					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].a_ckey
+				), a_ckey),
+				IF(edits IS NOT NULL, 1, NULL),
+				unbanned_datetime,
+				IFNULL((
+					SELECT byond_key
+					FROM [format_table_name("player")]
+					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].unbanned_ckey
+				), unbanned_ckey),
+				unbanned_round_id
+			FROM [format_table_name("ban")]
+			WHERE
+				(:player_key IS NULL OR ckey = :player_key) AND
+				(:admin_key IS NULL OR a_ckey = :admin_key) AND
+				(:player_ip IS NULL OR ip = INET_ATON(:player_ip)) AND
+				(:player_cid IS NULL OR computerid = :player_cid)
+			ORDER BY id DESC
+			LIMIT :skip, :take
+		"}, list(
+			"player_key" = ckey(playerckey),
+			"admin_key" = ckey(adminckey),
+			"player_ip" = ip,
+			"player_cid" = cid,
+			"skip" = bansperpage * page,
+			"take" = bansperpage,
+		))
 		if(!query_search_bans.warn_execute())
 			qdel(query_search_bans)
 			return

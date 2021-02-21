@@ -588,7 +588,9 @@
 		var/datum/admins/A = GLOB.protected_admins[i]
 		sql_admins += list(list("ckey" = A.target, "rank" = A.rank.name))
 	SSdbcore.MassInsert(format_table_name("admin"), sql_admins, duplicate_key = TRUE)
-	var/datum/DBQuery/query_admin_rank_update = SSdbcore.NewQuery("UPDATE [format_table_name("player")] p INNER JOIN [format_table_name("admin")] a ON p.ckey = a.ckey SET p.lastadminrank = a.rank")
+	var/datum/DBQuery/query_admin_rank_update = SSdbcore.NewQuery(
+		"UPDATE [format_table_name("player")] p INNER JOIN [format_table_name("admin")] a ON p.ckey = a.ckey SET p.lastadminrank = a.rank"
+	)
 	query_admin_rank_update.Execute()
 	qdel(query_admin_rank_update)
 

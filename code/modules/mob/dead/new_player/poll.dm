@@ -412,8 +412,8 @@
 		return 0
 	//validate the poll is actually the right type of poll and its still active
 	var/datum/DBQuery/query_validate_poll = SSdbcore.NewQuery(
-		"SELECT id FROM [format_table_name("poll_question")] WHERE id = [pollid] AND Now() BETWEEN starttime AND endtime AND polltype = :polltype [(holder ? "" : "AND adminonly = false")]",
-		list("polltype" = type)
+		"SELECT id FROM [format_table_name("poll_question")] WHERE id = :pollid AND Now() BETWEEN starttime AND endtime AND polltype = :polltype [(holder ? "" : "AND adminonly = false")]",
+		list("pollid" = pollid, "polltype" = type)
 	)
 	if(!query_validate_poll.warn_execute())
 		qdel(query_validate_poll)
@@ -442,8 +442,6 @@
 	var/rank = "Player"
 	if (holder)
 		rank = holder.rank.name
-	var/ckey = client.ckey
-	var/address = client.address
 
 	//validate the poll
 	if (!vote_valid_check(pollid, holder, POLLTYPE_IRV))
@@ -474,18 +472,24 @@
 		to_chat(src, "<span class='danger'>Invalid vote data</span>")
 		return 0
 
-	//lets add the vote, first we generate an insert statement.
-
-	var/sqlrowlist = ""
+	var/list/special_columns = list(
+		"datetime" = "NOW()",
+		"ip" = "INET_ATON(?)",
+	)
+	var/sql_votes = list()
 	for (var/vote in numberedvotelist)
-		if (sqlrowlist != "")
-			sqlrowlist += ", " //a comma (,) at the start of the first row to insert will trigger a SQL error
-		sqlrowlist += "(Now(), [pollid], [vote], '[sanitizeSQL(ckey)]', INET_ATON('[sanitizeSQL(address)]'), '[sanitizeSQL(rank)]')"
+		sql_votes += list(list(
+			"pollid" = pollid,
+			"vote" = vote,
+			"ckey" = client.ckey,
+			"ip" = client.address,
+			"adminrank" = rank
+		))
 
 	//now lets delete their old votes (if any)
 	var/datum/DBQuery/query_irv_del_old = SSdbcore.NewQuery(
-		"DELETE FROM [format_table_name("poll_vote")] WHERE pollid = [pollid] AND ckey = :ckey",
-		list("ckey" = ckey)
+		"DELETE FROM [format_table_name("poll_vote")] WHERE pollid = :pollid AND ckey = :ckey",
+		list("pollid" = pollid, "ckey" = client.ckey)
 	)
 	if(!query_irv_del_old.warn_execute())
 		qdel(query_irv_del_old)
@@ -493,14 +497,8 @@
 	qdel(query_irv_del_old)
 
 	//now to add the new ones.
-	var/datum/DBQuery/query_irv_vote = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank) VALUES [sqlrowlist]")
-	if(!query_irv_vote.warn_execute())
-		qdel(query_irv_vote)
-		return 0
-	qdel(query_irv_vote)
-	if(!QDELETED(src))
-		src << browse(null,"window=playerpoll")
-	return 1
+	SSdbcore.MassInsert(format_table_name("poll_vote"), sql_votes, special_columns = special_columns)
+	return TRUE
 
 
 /mob/dead/new_player/proc/vote_on_poll(pollid, optionid)
@@ -520,7 +518,13 @@
 	var/adminrank = poll_rank()
 	if(!adminrank)
 		return
-	var/datum/DBQuery/query_option_vote = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank) VALUES (Now(), [pollid], [optionid], '[ckey]', INET_ATON('[client.address]'), '[adminrank]')")
+	var/datum/DBQuery/query_option_vote = SSdbcore.NewQuery(
+		{"
+			INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank)
+			VALUES (Now(), :pollid, :optionid, :ckey, INET_ATON(:ip), :adminrank)
+		"},
+		list("pollid" = pollid, "optionid" = optionid, "ckey" = ckey, "ip" = client.address, "adminrank" = adminrank)
+	)
 	if(!query_option_vote.warn_execute())
 		qdel(query_option_vote)
 		return
@@ -546,17 +550,28 @@
 	var/voted = poll_check_voted(pollid, text = TRUE, silent = TRUE)
 	if(isnull(voted))
 		return
-	if(!poll_rank())
+	var/adminrank = poll_rank()
+	if(!adminrank)
 		return
-	replytext = sanitizeSQL(replytext)
 	if(!(length(replytext) > 0) || !(length(replytext) <= 8000))
 		to_chat(usr, "The text you entered was invalid or too long. Please correct the text and submit again.")
 		return
 	var/datum/DBQuery/query_text_vote
 	if(!voted)
-		query_text_vote  = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_textreply")] (datetime ,pollid ,ckey ,ip ,replytext ,adminrank) VALUES (Now(), [pollid], '[ckey]', INET_ATON('[client.address]'), '[replytext]', '[adminrank]')")
+		query_text_vote  = SSdbcore.NewQuery(
+			{"
+				INSERT INTO [format_table_name("poll_textreply")] (datetime ,pollid ,ckey ,ip ,replytext ,adminrank)
+				VALUES (Now(), :pollid, :ckey, INET_ATON(:ip), :replytext, :adminrank')
+			"}, list("pollid" = pollid, "ckey" = ckey, "ip" = client.address, "replytext" = replytext, "adminrank" = adminrank)
+		)
 	else
-		query_text_vote  = SSdbcore.NewQuery("UPDATE [format_table_name("poll_textreply")] SET datetime = Now(), ip = INET_ATON('[client.address]'), replytext = '[replytext]' WHERE pollid = '[pollid]' AND ckey = '[ckey]'")
+		query_text_vote  = SSdbcore.NewQuery(
+			{"
+				UPDATE [format_table_name("poll_textreply")] SET datetime = Now(), ip = INET_ATON(:id), replytext = :replytext
+				WHERE pollid = :pollid AND ckey = :ckey
+			"},
+			list("ip" = client.address, "replytext" = replytext, "pollid" = pollid, "ckey" = ckey)
+		)
 	if(!query_text_vote.warn_execute())
 		qdel(query_text_vote)
 		return
@@ -591,8 +606,12 @@
 	var/adminrank = "Player"
 	if(client.holder)
 		adminrank = client.holder.rank.name
-	adminrank = sanitizeSQL(adminrank)
-	var/datum/DBQuery/query_numval_vote = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_vote")] (datetime ,pollid ,optionid ,ckey ,ip ,adminrank, rating) VALUES (Now(), [pollid], [optionid], '[ckey]', INET_ATON('[client.address]'), '[adminrank]', [(isnull(rating)) ? "null" : rating])")
+	var/datum/DBQuery/query_numval_vote = SSdbcore.NewQuery(
+		{"
+			INSERT INTO [format_table_name("poll_vote")] (datetime ,pollid ,optionid ,ckey ,ip ,adminrank, rating)
+			VALUES (Now(), :pollid, :optionid, :ckey, INET_ATON(:ip), :adminrank, IFNULL(rating, 'null'))
+		"}, list("pollid" = pollid, "optionid" = optionid, "ckey" = ckey, "ip" = client.address, "adminrank" = adminrank, "rating" = rating)
+	)
 	if(!query_numval_vote.warn_execute())
 		qdel(query_numval_vote)
 		return
@@ -612,7 +631,10 @@
 	//validate the poll
 	if (!vote_valid_check(pollid, client.holder, POLLTYPE_MULTI))
 		return 0
-	var/datum/DBQuery/query_multi_choicelen = SSdbcore.NewQuery("SELECT multiplechoiceoptions FROM [format_table_name("poll_question")] WHERE id = [pollid]")
+	var/datum/DBQuery/query_multi_choicelen = SSdbcore.NewQuery(
+		"SELECT multiplechoiceoptions FROM [format_table_name("poll_question")] WHERE id = :pollid",
+		list("pollid" = pollid)
+	)
 	if(!query_multi_choicelen.warn_execute())
 		qdel(query_multi_choicelen)
 		return 1
@@ -621,8 +643,8 @@
 		i = text2num(query_multi_choicelen.item[1])
 	qdel(query_multi_choicelen)
 	var/datum/DBQuery/query_multi_hasvoted = SSdbcore.NewQuery(
-		"SELECT id FROM [format_table_name("poll_vote")] WHERE pollid = [pollid] AND ckey = :ckey",
-		list("ckey" = ckey)
+		"SELECT id FROM [format_table_name("poll_vote")] WHERE pollid = :pollid AND ckey = :ckey",
+		list("pollid" = pollid, "ckey" = ckey)
 	)
 	if(!query_multi_hasvoted.warn_execute())
 		qdel(query_multi_hasvoted)
@@ -638,8 +660,12 @@
 	var/adminrank = "Player"
 	if(!QDELETED(client) && client.holder)
 		adminrank = client.holder.rank.name
-	adminrank = sanitizeSQL(adminrank)
-	var/datum/DBQuery/query_multi_vote = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank) VALUES (Now(), [pollid], [optionid], '[ckey]', INET_ATON('[client.address]'), '[adminrank]')")
+	var/datum/DBQuery/query_multi_vote = SSdbcore.NewQuery(
+		{"
+			INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank)
+			VALUES (Now(), :pollid, :optionid, :ckey, INET_ATON(:address), :adminrank)
+		"}, list("pollid" = pollid, "optionid" = optionid, "ckey" = ckey, "address" = client.address, "adminrank" = adminrank)
+	)
 	if(!query_multi_vote.warn_execute())
 		qdel(query_multi_vote)
 		return 1
