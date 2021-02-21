@@ -192,8 +192,8 @@ GLOBAL_PROTECT(exp_to_update)
 		prefs.db_flags |= newflag
 
 	var/datum/DBQuery/flag_update = SSdbcore.NewQuery(
-		"UPDATE [format_table_name("player")] SET flags = :flags WHERE ckey='[sanitizeSQL(ckey)]'",
-		list("flags" = prefs.db_flags)
+		"UPDATE [format_table_name("player")] SET flags = :flags WHERE ckey= :ckey",
+		list("flags" = prefs.db_flags, "ckey" = ckey)
 	)
 
 	if(!flag_update.Execute())

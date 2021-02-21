@@ -197,7 +197,6 @@
 		if(expire_time == "-1")
 			new_expiry = "non-expiring"
 		else
-			expire_time = sanitizeSQL(expire_time)
 			var/datum/DBQuery/query_validate_expire_time_edit = SSdbcore.NewQuery("SELECT IF(STR_TO_DATE('[expire_time]','%Y-%c-%d %T') > NOW(), STR_TO_DATE('[expire_time]','%Y-%c-%d %T'), 0)")
 			if(!query_validate_expire_time_edit.warn_execute())
 				qdel(query_validate_expire_time_edit)
@@ -213,8 +212,8 @@
 				new_expiry = query_validate_expire_time_edit.item[1]
 			qdel(query_validate_expire_time_edit)
 		var/datum/DBQuery/query_edit_message_expiry = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET expire_timestamp = [expire_time == "-1" ? "NULL" : "'[new_expiry]'"], lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Expiration time edited by [usr.key] on [SQLtime()] from [old_expiry] to [new_expiry]<hr>"]') WHERE id = [message_id] AND deleted = 0",
-			list("lasteditor" = usr.ckey)
+			"UPDATE [format_table_name("messages")] SET expire_timestamp = IFNULL(:new_expiry, "NULL"), lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Expiration time edited by [usr.key] on [SQLtime()] from [old_expiry] to [new_expiry]<hr>"]') WHERE id = [message_id] AND deleted = 0",
+			list("lasteditor" = usr.ckey, "new_expiry" = new_expiry)
 		)
 		if(!query_edit_message_expiry.warn_execute())
 			qdel(query_edit_message_expiry)
@@ -288,8 +287,8 @@
 		var/secret = text2num(query_find_message_secret.item[4])
 		var/edit_text = "Made [secret ? "not secret" : "secret"] by [usr.key] on [SQLtime()]<hr>"
 		var/datum/DBQuery/query_message_secret = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET secret = NOT secret, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE id = [message_id]",
-			list("lasteditor" = usr.ckey)
+			"UPDATE [format_table_name("messages")] SET secret = NOT secret, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''), :edit_text) WHERE id = [message_id]",
+			list("lasteditor" = usr.ckey, "edit_text" = edit_text)
 		)
 		if(!query_message_secret.warn_execute())
 			qdel(query_find_message_secret)

@@ -538,8 +538,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		related_accounts_ip += "[query_get_related_ip.item[1]], "
 	qdel(query_get_related_ip)
 	var/datum/DBQuery/query_get_related_cid = SSdbcore.NewQuery(
-		"SELECT ckey FROM [format_table_name("player")] WHERE computerid = :computerid AND ckey != '[sql_ckey]'",
-		list("computerid" = computer_id)
+		"SELECT ckey FROM [format_table_name("player")] WHERE computerid = :computerid AND ckey != :sql_ckey",
+		list("computerid" = computer_id, "sql_ckey" = sql_ckey)
 	)
 	if(!query_get_related_cid.Execute())
 		qdel(query_get_related_cid)
@@ -637,8 +637,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	qdel(query_get_client_age)
 	if(!new_player)
 		var/datum/DBQuery/query_log_player = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = :lastseen_round_id, ip = INET_ATON('[sql_ip]'), computerid = :computerid, lastadminrank = :lastadminrank, accountjoindate = [account_join_date ? "'[account_join_date]'" : "NULL"] WHERE ckey = :ckey",
-			list("lastseen_round_id" = GLOB.round_id, "computerid" = sql_computerid, "lastadminrank" = sql_admin_rank, "ckey" = sql_ckey)
+			"UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = :lastseen_round_id, ip = INET_ATON( :sql_ip), computerid = :computerid, lastadminrank = :lastadminrank, accountjoindate = IFNULL(:account_join_date, \"NULL\") WHERE ckey = :ckey",
+			list("lastseen_round_id" = GLOB.round_id, "computerid" = sql_computerid, "lastadminrank" = sql_admin_rank, "ckey" = sql_ckey, "sql_ip" = sql_ip, "account_join_date" = account_join_date)
 		)
 		if(!query_log_player.Execute())
 			qdel(query_log_player)
