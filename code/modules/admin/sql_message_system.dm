@@ -9,9 +9,10 @@
 		var/new_key = input(usr,"Who would you like to create a [type] for?","Enter a key or ckey",null) as null|text
 		if(!new_key)
 			return
+		var/new_ckey = ckey(new_key)
 		var/datum/DBQuery/query_find_ckey = SSdbcore.NewQuery(
 			"SELECT ckey FROM [format_table_name("player")] WHERE ckey = :ckey",
-			list("ckey" = ckey(new_key))
+			list("ckey" = new_key)
 		)
 		if(!query_find_ckey.warn_execute())
 			qdel(query_find_ckey)
@@ -25,15 +26,12 @@
 		target_key = new_key
 	if(QDELETED(usr))
 		return
-	if(target_ckey)
-		target_ckey = sanitizeSQL(target_ckey)
 	if(!target_key)
 		target_key = target_ckey
 	if(!admin_ckey)
 		admin_ckey = usr.ckey
 		if(!admin_ckey)
 			return
-	admin_ckey = sanitizeSQL(admin_ckey)
 	if(!target_ckey)
 		target_ckey = admin_ckey
 	if(!text)
@@ -47,7 +45,6 @@
 		var/ssqlname = CONFIG_GET(string/serversqlname)
 		if (ssqlname)
 			server = ssqlname
-	server = sanitizeSQL(server)
 	if(isnull(secret))
 		switch(alert("Hide note from being viewed by players?", "Secret note?","Yes","No","Cancel"))
 			if("Yes")
@@ -62,7 +59,10 @@
 			if(!expire_time)
 				return
 			expire_time = sanitizeSQL(expire_time)
-			var/datum/DBQuery/query_validate_expire_time = SSdbcore.NewQuery("SELECT IF(STR_TO_DATE('[expire_time]','%Y-%c-%d %T') > NOW(), STR_TO_DATE('[expire_time]','%Y-%c-%d %T'), 0)")
+			var/datum/DBQuery/query_validate_expire_time = SSdbcore.NewQuery(
+				"SELECT IF(STR_TO_DATE(:expire_time,'%Y-%c-%d %T') > NOW(), STR_TO_DATE(:expire_time,'%Y-%c-%d %T'), 0)",
+				list("expire_time" = expire_time)
+			)
 			if(!query_validate_expire_time.warn_execute())
 				qdel(query_validate_expire_time)
 				return
@@ -79,7 +79,10 @@
 		if(!note_severity)
 			return
 	note_severity = sanitizeSQL(note_severity)
-	var/datum/DBQuery/query_create_message = SSdbcore.NewQuery("INSERT INTO [format_table_name("messages")] (type, targetckey, adminckey, text, timestamp, server, server_ip, server_port, round_id, secret, expire_timestamp, severity) VALUES ('[type]', '[target_ckey]', '[admin_ckey]', '[text]', '[timestamp]', '[server]', INET_ATON(IF('[world.internet_address]' LIKE '', '0', '[world.internet_address]')), '[world.port]', '[GLOB.round_id]','[secret]', [expiry ? "'[expiry]'" : "NULL"], [note_severity ? "'[note_severity]'" : "NULL"])")
+	var/datum/DBQuery/query_create_message = SSdbcore.NewQuery(
+		"INSERT INTO [format_table_name("messages")] (type, targetckey, adminckey, text, timestamp, server, server_ip, server_port, round_id, secret, expire_timestamp, severity) VALUES (:type, :target_ckey, :admin_ckey, :text, :timestamp, :server, INET_ATON(IF(:internet_address LIKE '', '0', :internet_address)), :port, :round_id, :secret, IFNULL(:expiry, \"NULL\"), IFNULL(:note_severity, \"NULL\"))",
+		list("type" = type, "target_ckey" = target_ckey, "admin_ckey" = admin_ckey, "text" = text, "timestamp" = timestamp, "server" = server, "internet_address" = world.internet_address, "port" = world.port, "round_id" = GLOB.round_id, "secret" = secret, "expiry" = expiry, "note_severity" = note_severity)
+	)
 	var/pm = "[key_name(usr)] has created a [type][(type == "note" || type == "message" || type == "watchlist entry") ? " for [target_key]" : ""]: [text]"
 	var/header = "[key_name_admin(usr)] has created a [type][(type == "note" || type == "message" || type == "watchlist entry") ? " for [target_key]" : ""]"
 	if(!query_create_message.warn_execute())
@@ -108,7 +111,10 @@
 	var/text
 	var/user_key_name = key_name(usr)
 	var/user_name_admin = key_name_admin(usr)
-	var/datum/DBQuery/query_find_del_message = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), text FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
+	var/datum/DBQuery/query_find_del_message = SSdbcore.NewQuery(
+		"SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), text FROM [format_table_name("messages")] WHERE id = :message_id AND deleted = 0",
+		list("message_id" = message_id)
+	)
 	if(!query_find_del_message.warn_execute())
 		qdel(query_find_del_message)
 		return
@@ -117,7 +123,10 @@
 		target_key = query_find_del_message.item[2]
 		text = query_find_del_message.item[3]
 	qdel(query_find_del_message)
-	var/datum/DBQuery/query_del_message = SSdbcore.NewQuery("UPDATE [format_table_name("messages")] SET deleted = 1 WHERE id = [message_id]")
+	var/datum/DBQuery/query_del_message = SSdbcore.NewQuery(
+		"UPDATE [format_table_name("messages")] SET deleted = 1 WHERE id = :message_id",
+		list("message_id" = message_id)
+	)
 	if(!query_del_message.warn_execute())
 		qdel(query_del_message)
 		return
@@ -141,7 +150,10 @@
 		return
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
-	var/datum/DBQuery/query_find_edit_message = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), targetckey), text FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
+	var/datum/DBQuery/query_find_edit_message = SSdbcore.NewQuery(
+		"SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), targetckey), text FROM [format_table_name("messages")] WHERE id = :message_id AND deleted = 0",
+		list("message_id" = message_id)
+	)
 	if(!query_find_edit_message.warn_execute())
 		qdel(query_find_edit_message)
 		return
@@ -156,8 +168,8 @@
 			return
 		new_text = sanitizeSQL(new_text)
 		var/datum/DBQuery/query_edit_message = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET text = :text, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Edited by [usr.key] on [SQLtime()] from<br>[old_text]<br>to<br>[new_text]<hr>"]') WHERE id = [message_id] AND deleted = 0",
-			list("text" = new_text, "lasteditor" = usr.ckey)
+			"UPDATE [format_table_name("messages")] SET text = :text, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''), 'Edited by :lasteditor on :time from<br>:old_text<br>to<br>:text<hr>') WHERE id = :message_id AND deleted = 0",
+			list("text" = new_text, "lasteditor" = usr.ckey, "time" = SQLtime(), "old_text" = old_text)
 		)
 		if(!query_edit_message.warn_execute())
 			qdel(query_edit_message)
@@ -180,7 +192,10 @@
 		return
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
-	var/datum/DBQuery/query_find_edit_expiry_message = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), expire_timestamp FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
+	var/datum/DBQuery/query_find_edit_expiry_message = SSdbcore.NewQuery(
+		"SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), expire_timestamp FROM [format_table_name("messages")] WHERE id = :message_id AND deleted = 0"
+		list("message_id" = message_id)
+	)
 	if(!query_find_edit_expiry_message.warn_execute())
 		qdel(query_find_edit_expiry_message)
 		return
@@ -197,7 +212,10 @@
 		if(expire_time == "-1")
 			new_expiry = "non-expiring"
 		else
-			var/datum/DBQuery/query_validate_expire_time_edit = SSdbcore.NewQuery("SELECT IF(STR_TO_DATE('[expire_time]','%Y-%c-%d %T') > NOW(), STR_TO_DATE('[expire_time]','%Y-%c-%d %T'), 0)")
+			var/datum/DBQuery/query_validate_expire_time_edit = SSdbcore.NewQuery(
+				"SELECT IF(STR_TO_DATE(:expire_time,'%Y-%c-%d %T') > NOW(), STR_TO_DATE(:expire_time,'%Y-%c-%d %T'), 0)",
+				list("expire_time" = expire_time)
+			)
 			if(!query_validate_expire_time_edit.warn_execute())
 				qdel(query_validate_expire_time_edit)
 				qdel(query_find_edit_expiry_message)
@@ -212,8 +230,8 @@
 				new_expiry = query_validate_expire_time_edit.item[1]
 			qdel(query_validate_expire_time_edit)
 		var/datum/DBQuery/query_edit_message_expiry = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET expire_timestamp = IFNULL(:new_expiry, "NULL"), lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Expiration time edited by [usr.key] on [SQLtime()] from [old_expiry] to [new_expiry]<hr>"]') WHERE id = [message_id] AND deleted = 0",
-			list("lasteditor" = usr.ckey, "new_expiry" = new_expiry)
+			"UPDATE [format_table_name("messages")] SET expire_timestamp = IFNULL(:new_expiry, 'NULL'), lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'Expiration time edited by :lasteditor on :time from :old_expiry to :new_expiry<hr>') WHERE id = :message_id AND deleted = 0",
+			list("lasteditor" = usr.ckey, "new_expiry" = new_expiry, "time" = SQLtime(), "old_expiry" = old_expiry)
 		)
 		if(!query_edit_message_expiry.warn_execute())
 			qdel(query_edit_message_expiry)
@@ -237,7 +255,10 @@
 		return
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
-	var/datum/DBQuery/query_find_edit_note_severity = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), severity FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
+	var/datum/DBQuery/query_find_edit_note_severity = SSdbcore.NewQuery(
+		"SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), severity FROM [format_table_name("messages")] WHERE id = :message_id AND deleted = 0",
+		list("message_id" = message_id)
+	)
 	if(!query_find_edit_note_severity.warn_execute())
 		qdel(query_find_edit_note_severity)
 		return
@@ -254,8 +275,8 @@
 			return
 		new_severity = sanitizeSQL(new_severity)
 		var/datum/DBQuery/query_edit_note_severity = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET severity = :severity, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Note severity edited by [usr.key] on [SQLtime()] from [old_severity] to [new_severity]<hr>"]') WHERE id = [message_id] AND deleted = 0",
-			list("severity" = new_severity, "lasteditor" = usr.ckey)
+			"UPDATE [format_table_name("messages")] SET severity = :severity, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'Note severity edited by :lasteditor on :time from :old_severity to :severity<hr>') WHERE id = :message_id AND deleted = 0",
+			list("severity" = new_severity, "lasteditor" = usr.ckey, "time" = SQLtime(), "old_severity" = old_severity, "message_id" = message_id)
 		)
 		if(!query_edit_note_severity.warn_execute(async = TRUE))
 			qdel(query_edit_note_severity)
@@ -287,8 +308,8 @@
 		var/secret = text2num(query_find_message_secret.item[4])
 		var/edit_text = "Made [secret ? "not secret" : "secret"] by [usr.key] on [SQLtime()]<hr>"
 		var/datum/DBQuery/query_message_secret = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET secret = NOT secret, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''), :edit_text) WHERE id = [message_id]",
-			list("lasteditor" = usr.ckey, "edit_text" = edit_text)
+			"UPDATE [format_table_name("messages")] SET secret = NOT secret, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''), :edit_text) WHERE id = :message_id",
+			list("lasteditor" = usr.ckey, "edit_text" = edit_text, "message_id" = message_id)
 		)
 		if(!query_message_secret.warn_execute())
 			qdel(query_find_message_secret)
@@ -488,8 +509,6 @@
 		var/search
 		output += "<center><a href='?_src_=holder;[HrefToken()];addmessageempty=1'>Add message</a><a href='?_src_=holder;[HrefToken()];addwatchempty=1'>Add watchlist entry</a><a href='?_src_=holder;[HrefToken()];addnoteempty=1'>Add note</a></center>"
 		output += ruler
-		if(!isnum(index))
-			index = sanitizeSQL(index)
 		switch(index)
 			if(1)
 				search = "^."
@@ -497,7 +516,10 @@
 				search = "^\[^\[:alpha:\]\]"
 			else
 				search = "^[index]"
-		var/datum/DBQuery/query_list_messages = SSdbcore.NewQuery("SELECT DISTINCT targetckey, (SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey) FROM [format_table_name("messages")] WHERE type <> 'memo' AND targetckey REGEXP '[search]' AND deleted = 0 AND (expire_timestamp > NOW() OR expire_timestamp IS NULL) ORDER BY targetckey")
+		var/datum/DBQuery/query_list_messages = SSdbcore.NewQuery(
+			"SELECT DISTINCT targetckey, (SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey) FROM [format_table_name("messages")] WHERE type <> 'memo' AND targetckey REGEXP :search AND deleted = 0 AND (expire_timestamp > NOW() OR expire_timestamp IS NULL) ORDER BY targetckey",
+			list("search" = search)
+		)
 		if(!query_list_messages.warn_execute())
 			qdel(query_list_messages)
 			return
@@ -526,11 +548,17 @@
 	if(!type)
 		return
 	var/output
-	if(target_ckey)
-		target_ckey = sanitizeSQL(target_ckey)
-	var/query = "SELECT id, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), text, timestamp, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = lasteditor), lasteditor) FROM [format_table_name("messages")] WHERE type = '[type]' AND deleted = 0 AND (expire_timestamp > NOW() OR expire_timestamp IS NULL)"
+	var/datum/DBQuery/query_get_message_output
 	if(type == "message" || type == "watchlist entry")
-		query += " AND targetckey = '[target_ckey]'"
+		query_get_message_output = SSdbcore.NewQuery(
+			"SELECT id, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), text, timestamp, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = lasteditor), lasteditor) FROM [format_table_name("messages")] WHERE type = :type AND deleted = 0 AND (expire_timestamp > NOW() OR expire_timestamp IS NULL) AND targetckey = :target_ckey",
+			list("target_ckey" = target_ckey)
+		)
+	else
+		query_get_message_output = SSdbcore.NewQuery(
+			"SELECT id, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), text, timestamp, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = lasteditor), lasteditor) FROM [format_table_name("messages")] WHERE type = :type AND deleted = 0 AND (expire_timestamp > NOW() OR expire_timestamp IS NULL)",
+			list("type" = type)
+		)
 	var/datum/DBQuery/query_get_message_output = SSdbcore.NewQuery(query)
 	if(!query_get_message_output.warn_execute())
 		qdel(query_get_message_output)
@@ -563,7 +591,7 @@
 	return output
 
 #define NOTESFILE "data/player_notes.sav"
-//if the AUTOCONVERT_NOTES is turned on, anytime a player connects this will be run to try and add all their notes to the databas
+//if the AUTOCONVERT_NOTES is turned on, anytime a player connects this will be run to try and add all their notes to the database
 /proc/convert_notes_sql(ckey)
 	if(!fexists(NOTESFILE))
 		return
@@ -585,7 +613,10 @@
 		var/timestamp = note.group[1]
 		notetext = note.group[2]
 		var/admin_ckey = note.group[3]
-		var/datum/DBQuery/query_convert_time = SSdbcore.NewQuery("SELECT ADDTIME(STR_TO_DATE('[timestamp]','%d-%b-%Y'), '0')")
+		var/datum/DBQuery/query_convert_time = SSdbcore.NewQuery(
+			"SELECT ADDTIME(STR_TO_DATE(:timestamp,'%d-%b-%Y'), '0')",
+			list("timestamp" = timestamp)
+		)
 		if(!query_convert_time.Execute())
 			qdel(query_convert_time)
 			return

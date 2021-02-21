@@ -33,7 +33,7 @@
 		C.jobbancache = list()
 		var/datum/DBQuery/query_jobban_build_cache = SSdbcore.NewQuery(
 			"SELECT job, reason FROM [format_table_name("ban")] WHERE ckey = :ckey AND (bantype = 'JOB_PERMABAN'  OR (bantype = 'JOB_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned)",
-			list("ckey" = C.ckey))
+			list("ckey" = C.ckey)
 		)
 		if(!query_jobban_build_cache.warn_execute())
 			qdel(query_jobban_build_cache)
