@@ -537,7 +537,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	while(query_get_related_ip.NextRow())
 		related_accounts_ip += "[query_get_related_ip.item[1]], "
 	qdel(query_get_related_ip)
-	var/datum/DBQuery/query_get_related_cid = SSdbcore.NewQuery("SELECT ckey FROM [format_table_name("player")] WHERE computerid = '[computer_id]' AND ckey != '[sql_ckey]'")
+	var/datum/DBQuery/query_get_related_cid = SSdbcore.NewQuery(
+		"SELECT ckey FROM [format_table_name("player")] WHERE computerid = :computerid AND ckey != '[sql_ckey]'",
+		list("computerid" = computer_id)
+	)
 	if(!query_get_related_cid.Execute())
 		qdel(query_get_related_cid)
 		return
@@ -555,7 +558,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/sql_computerid = sanitizeSQL(computer_id)
 	var/sql_admin_rank = sanitizeSQL(admin_rank)
 	var/new_player
-	var/datum/DBQuery/query_client_in_db = SSdbcore.NewQuery("SELECT 1 FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
+	var/datum/DBQuery/query_client_in_db = SSdbcore.NewQuery(
+		"SELECT 1 FROM [format_table_name("player")] WHERE ckey = :ckey",
+		list("ckey" = sql_ckey)
+	)
 	if(!query_client_in_db.Execute())
 		qdel(query_client_in_db)
 		return
@@ -603,7 +609,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 						update_flag_db(DB_FLAG_AGE_CONFIRMATION_INCOMPLETE, TRUE)
 
 	qdel(query_client_in_db)
-	var/datum/DBQuery/query_get_client_age = SSdbcore.NewQuery("SELECT firstseen, DATEDIFF(Now(),firstseen), accountjoindate, DATEDIFF(Now(),accountjoindate) FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
+	var/datum/DBQuery/query_get_client_age = SSdbcore.NewQuery(
+		"SELECT firstseen, DATEDIFF(Now(),firstseen), accountjoindate, DATEDIFF(Now(),accountjoindate) FROM [format_table_name("player")] WHERE ckey = :ckey",
+		list("ckey" = sql_ckey)
+	)
 	if(!query_get_client_age.Execute())
 		qdel(query_get_client_age)
 		return
@@ -627,7 +636,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 					qdel(query_datediff)
 	qdel(query_get_client_age)
 	if(!new_player)
-		var/datum/DBQuery/query_log_player = SSdbcore.NewQuery("UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = '[GLOB.round_id]', ip = INET_ATON('[sql_ip]'), computerid = '[sql_computerid]', lastadminrank = '[sql_admin_rank]', accountjoindate = [account_join_date ? "'[account_join_date]'" : "NULL"] WHERE ckey = '[sql_ckey]'")
+		var/datum/DBQuery/query_log_player = SSdbcore.NewQuery(
+			"UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = :lastseen_round_id, ip = INET_ATON('[sql_ip]'), computerid = '[sql_computerid]', lastadminrank = '[sql_admin_rank]', accountjoindate = [account_join_date ? "'[account_join_date]'" : "NULL"] WHERE ckey = '[sql_ckey]'",
+			list("lastseen_round_id" = GLOB.round_id)
+		)
 		if(!query_log_player.Execute())
 			qdel(query_log_player)
 			return
@@ -660,7 +672,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 /client/proc/validate_key_in_db()
 	var/sql_ckey = sanitizeSQL(ckey)
 	var/sql_key
-	var/datum/DBQuery/query_check_byond_key = SSdbcore.NewQuery("SELECT byond_key FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
+	var/datum/DBQuery/query_check_byond_key = SSdbcore.NewQuery(
+		"SELECT byond_key FROM [format_table_name("player")] WHERE ckey = :ckey",
+		list("ckey" = sql_ckey)
+	)
 	if(!query_check_byond_key.Execute())
 		qdel(query_check_byond_key)
 		return
@@ -677,7 +692,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			var/regex/R = regex("\\tkey = \"(.+)\"")
 			if(R.Find(F))
 				var/web_key = sanitizeSQL(R.group[1])
-				var/datum/DBQuery/query_update_byond_key = SSdbcore.NewQuery("UPDATE [format_table_name("player")] SET byond_key = '[web_key]' WHERE ckey = '[sql_ckey]'")
+				var/datum/DBQuery/query_update_byond_key = SSdbcore.NewQuery(
+					"UPDATE [format_table_name("player")] SET byond_key = :byond_key WHERE ckey = '[sql_ckey]'",
+					list("byond_key" = web_key)
+				)
 				query_update_byond_key.Execute()
 				qdel(query_update_byond_key)
 			else
@@ -695,7 +713,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/static/cidcheck_failedckeys = list() //to avoid spamming the admins if the same guy keeps trying.
 	var/static/cidcheck_spoofckeys = list()
 	var/sql_ckey = sanitizeSQL(ckey)
-	var/datum/DBQuery/query_cidcheck = SSdbcore.NewQuery("SELECT computerid FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
+	var/datum/DBQuery/query_cidcheck = SSdbcore.NewQuery(
+		"SELECT computerid FROM [format_table_name("player")] WHERE ckey = :ckey",
+		list("ckey" = sql_ckey)
+	)
 	query_cidcheck.Execute()
 
 	var/lastcid
@@ -773,7 +794,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/sql_system_ckey = sanitizeSQL(system_ckey)
 	var/sql_ckey = sanitizeSQL(ckey)
 	//check to see if we noted them in the last day.
-	var/datum/DBQuery/query_get_notes = SSdbcore.NewQuery("SELECT id FROM [format_table_name("messages")] WHERE type = 'note' AND targetckey = '[sql_ckey]' AND adminckey = '[sql_system_ckey]' AND timestamp + INTERVAL 1 DAY < NOW() AND deleted = 0 AND expire_timestamp > NOW()")
+	var/datum/DBQuery/query_get_notes = SSdbcore.NewQuery(
+		"SELECT id FROM [format_table_name("messages")] WHERE type = 'note' AND targetckey = :targetckey AND adminckey = '[sql_system_ckey]' AND timestamp + INTERVAL 1 DAY < NOW() AND deleted = 0 AND expire_timestamp > NOW()",
+		list("targetckey" = sql_ckey)
+	)
 	if(!query_get_notes.Execute())
 		qdel(query_get_notes)
 		return

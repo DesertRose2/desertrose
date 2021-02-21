@@ -81,7 +81,10 @@
 	var/banned_mob_guest_key = had_banned_mob && IsGuestKey(banned_mob.key)
 	banned_mob = null
 	var/sql_ckey = sanitizeSQL(ckey)
-	var/datum/DBQuery/query_add_ban_get_ckey = SSdbcore.NewQuery("SELECT 1 FROM [format_table_name("player")] WHERE ckey = '[sql_ckey]'")
+	var/datum/DBQuery/query_add_ban_get_ckey = SSdbcore.NewQuery(
+		"SELECT 1 FROM [format_table_name("player")] WHERE ckey = :ckey",
+		list("ckey" = sql_ckey)
+	)
 	if(!query_add_ban_get_ckey.warn_execute())
 		qdel(query_add_ban_get_ckey)
 		return
@@ -125,7 +128,10 @@
 	reason = sanitizeSQL(reason)
 	var/sql_a_ckey = sanitizeSQL(a_ckey)
 	if(maxadminbancheck)
-		var/datum/DBQuery/query_check_adminban_amt = SSdbcore.NewQuery("SELECT count(id) AS num FROM [format_table_name("ban")] WHERE (a_ckey = '[sql_a_ckey]') AND (bantype = 'ADMIN_PERMABAN'  OR (bantype = 'ADMIN_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned)")
+		var/datum/DBQuery/query_check_adminban_amt = SSdbcore.NewQuery(
+			"SELECT count(id) AS num FROM [format_table_name("ban")] WHERE ( a_ckey = :a_ckey) AND (bantype = 'ADMIN_PERMABAN'  OR (bantype = 'ADMIN_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned)",
+			list("a_ckey" = sql_a_ckey)
+		)
 		if(!query_check_adminban_amt.warn_execute())
 			qdel(query_check_adminban_amt)
 			return
@@ -290,7 +296,10 @@
 					to_chat(usr, "Cancelled")
 					return
 
-			var/datum/DBQuery/query_edit_ban_reason = SSdbcore.NewQuery("UPDATE [format_table_name("ban")] SET reason = '[value]', edits = CONCAT(edits,'- [e_key] changed ban reason from <cite><b>\\\"[reason]\\\"</b></cite> to <cite><b>\\\"[value]\\\"</b></cite><BR>') WHERE id = [banid]")
+			var/datum/DBQuery/query_edit_ban_reason = SSdbcore.NewQuery(
+				"UPDATE [format_table_name("ban")] SET reason = :reason, edits = CONCAT(edits,'- [e_key] changed ban reason from <cite><b>\\\"[reason]\\\"</b></cite> to <cite><b>\\\"[value]\\\"</b></cite><BR>') WHERE id = [banid]",
+				list("reason" = value)
+			)
 			if(!query_edit_ban_reason.warn_execute())
 				qdel(query_edit_ban_reason)
 				return

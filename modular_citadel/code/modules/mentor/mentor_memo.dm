@@ -30,7 +30,10 @@
 	var/sql_ckey = sanitizeSQL(ckey)
 	switch(task)
 		if("Write")
-			var/datum/DBQuery/query_memocheck = SSdbcore.NewQuery("SELECT ckey FROM [format_table_name("mentor_memo")] WHERE ckey = '[sql_ckey]'")
+			var/datum/DBQuery/query_memocheck = SSdbcore.NewQuery(
+				"SELECT ckey FROM [format_table_name("mentor_memo")] WHERE ckey = :ckey",
+				list("ckey" = sql_ckey)
+			)
 			if(!query_memocheck.Execute())
 				var/err = query_memocheck.ErrorMsg()
 				qdel(query_memocheck)
@@ -74,7 +77,10 @@
 			if(!target_ckey)
 				return
 			var/target_sql_ckey = sanitizeSQL(target_ckey)
-			var/datum/DBQuery/query_memofind = SSdbcore.NewQuery("SELECT memotext FROM [format_table_name("mentor_memo")] WHERE ckey = '[target_sql_ckey]'")
+			var/datum/DBQuery/query_memofind = SSdbcore.NewQuery(
+				"SELECT memotext FROM [format_table_name("mentor_memo")] WHERE ckey = :ckey",
+				list("ckey" = target_sql_ckey)
+			)
 			if(!query_memofind.Execute())
 				var/err = query_memofind.ErrorMsg()
 				qdel(query_memofind)
@@ -89,7 +95,10 @@
 				new_memo = sanitizeSQL(new_memo)
 				var/edit_text = "Edited by [sql_ckey] on [SQLtime()] from<br>[old_memo]<br>to<br>[new_memo]<hr>"
 				edit_text = sanitizeSQL(edit_text)
-				var/datum/DBQuery/update_query = SSdbcore.NewQuery("UPDATE [format_table_name("mentor_memo")] SET memotext = '[new_memo]', last_editor = '[sql_ckey]', edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE ckey = '[target_sql_ckey]'")
+				var/datum/DBQuery/update_query = SSdbcore.NewQuery(
+					"UPDATE [format_table_name("mentor_memo")] SET memotext = :memotext, last_editor = '[sql_ckey]', edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE ckey = '[target_sql_ckey]'",
+					list("memotext" = new_memo)
+				)
 				if(!update_query.Execute())
 					var/err = update_query.ErrorMsg()
 					qdel(update_query)
@@ -145,7 +154,10 @@
 			if(!target_ckey)
 				return
 			var/target_sql_ckey = sanitizeSQL(target_ckey)
-			var/datum/DBQuery/query_memodel = SSdbcore.NewQuery("DELETE FROM [format_table_name("memo")] WHERE ckey = '[target_sql_ckey]'")
+			var/datum/DBQuery/query_memodel = SSdbcore.NewQuery(
+				"DELETE FROM [format_table_name("memo")] WHERE ckey = :ckey",
+				list("ckey" = target_sql_ckey)
+			)
 			if(!query_memodel.Execute())
 				var/err = query_memodel.ErrorMsg()
 				qdel(query_memodel)
