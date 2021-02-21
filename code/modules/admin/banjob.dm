@@ -5,8 +5,8 @@
 
 	if(!M.client) //no cache. fallback to a datum/DBQuery
 		var/datum/DBQuery/query_jobban_check_ban = SSdbcore.NewQuery(
-			"SELECT reason FROM [format_table_name("ban")] WHERE ckey = :ckey AND (bantype = 'JOB_PERMABAN'  OR (bantype = 'JOB_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned) AND job = '[sanitizeSQL(rank)]'",
-			list("ckey" = M.ckey))
+			"SELECT reason FROM [format_table_name("ban")] WHERE ckey = :ckey AND (bantype = 'JOB_PERMABAN'  OR (bantype = 'JOB_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned) AND job = :job",
+			list("ckey" = M.ckey, "job" = rank)
 		)
 		if(!query_jobban_check_ban.warn_execute())
 			qdel(query_jobban_check_ban)

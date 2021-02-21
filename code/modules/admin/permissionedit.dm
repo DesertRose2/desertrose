@@ -338,8 +338,8 @@
 			qdel(query_add_rank_log)
 		qdel(query_rank_in_db)
 		var/datum/DBQuery/query_change_rank = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("admin")] SET rank = :rank WHERE ckey = '[admin_ckey]'",
-			list("rank" = new_rank)
+			"UPDATE [format_table_name("admin")] SET rank = :rank WHERE ckey = :ckey",
+			list("rank" = new_rank, "ckey" = admin_ckey)
 		)
 		if(!query_change_rank.warn_execute())
 			qdel(query_change_rank)
@@ -389,8 +389,8 @@
 			old_can_edit_flags = text2num(query_get_rank_flags.item[3])
 		qdel(query_get_rank_flags)
 		var/datum/DBQuery/query_change_rank_flags = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("admin_ranks")] SET flags = :flags, exclude_flags = '[new_exclude_flags]', can_edit_flags = '[new_can_edit_flags]' WHERE rank = '[D.rank.name]'",
-			list("flags" = new_flags)
+			"UPDATE [format_table_name("admin_ranks")] SET flags = :flags, exclude_flags = :exclude_flags, can_edit_flags = :can_edit_flags WHERE rank = :rank",
+			list("flags" = new_flags, "exclude_flags" = new_exclude_flags, "can_edit_flags" = new_can_edit_flags, "rank" = D.rank.name)
 		)
 		if(!query_change_rank_flags.warn_execute())
 			qdel(query_change_rank_flags)
@@ -485,8 +485,8 @@
 		sqlrank = sanitizeSQL(D.rank.name)
 	admin_ckey = sanitizeSQL(admin_ckey)
 	var/datum/DBQuery/query_sync_lastadminrank = SSdbcore.NewQuery(
-		"UPDATE [format_table_name("player")] SET lastadminrank = :lastadminrank WHERE ckey = '[admin_ckey]'",
-		list("lastadminrank" = sqlrank)
+		"UPDATE [format_table_name("player")] SET lastadminrank = :lastadminrank WHERE ckey = :ckey",
+		list("lastadminrank" = sqlrank, "ckey" = admin_ckey)
 	)
 	if(!query_sync_lastadminrank.warn_execute())
 		qdel(query_sync_lastadminrank)

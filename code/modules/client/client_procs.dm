@@ -637,8 +637,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	qdel(query_get_client_age)
 	if(!new_player)
 		var/datum/DBQuery/query_log_player = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = :lastseen_round_id, ip = INET_ATON('[sql_ip]'), computerid = '[sql_computerid]', lastadminrank = '[sql_admin_rank]', accountjoindate = [account_join_date ? "'[account_join_date]'" : "NULL"] WHERE ckey = '[sql_ckey]'",
-			list("lastseen_round_id" = GLOB.round_id)
+			"UPDATE [format_table_name("player")] SET lastseen = Now(), lastseen_round_id = :lastseen_round_id, ip = INET_ATON('[sql_ip]'), computerid = :computerid, lastadminrank = :lastadminrank, accountjoindate = [account_join_date ? "'[account_join_date]'" : "NULL"] WHERE ckey = :ckey",
+			list("lastseen_round_id" = GLOB.round_id, "computerid" = sql_computerid, "lastadminrank" = sql_admin_rank, "ckey" = sql_ckey)
 		)
 		if(!query_log_player.Execute())
 			qdel(query_log_player)
@@ -693,8 +693,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			if(R.Find(F))
 				var/web_key = sanitizeSQL(R.group[1])
 				var/datum/DBQuery/query_update_byond_key = SSdbcore.NewQuery(
-					"UPDATE [format_table_name("player")] SET byond_key = :byond_key WHERE ckey = '[sql_ckey]'",
-					list("byond_key" = web_key)
+					"UPDATE [format_table_name("player")] SET byond_key = :byond_key WHERE ckey = :ckey",
+					list("byond_key" = web_key, "ckey" = sql_ckey)
 				)
 				query_update_byond_key.Execute()
 				qdel(query_update_byond_key)
@@ -795,8 +795,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/sql_ckey = sanitizeSQL(ckey)
 	//check to see if we noted them in the last day.
 	var/datum/DBQuery/query_get_notes = SSdbcore.NewQuery(
-		"SELECT id FROM [format_table_name("messages")] WHERE type = 'note' AND targetckey = :targetckey AND adminckey = '[sql_system_ckey]' AND timestamp + INTERVAL 1 DAY < NOW() AND deleted = 0 AND expire_timestamp > NOW()",
-		list("targetckey" = sql_ckey)
+		"SELECT id FROM [format_table_name("messages")] WHERE type = 'note' AND targetckey = :targetckey AND adminckey = :adminckey AND timestamp + INTERVAL 1 DAY < NOW() AND deleted = 0 AND expire_timestamp > NOW()",
+		list("targetckey" = sql_ckey, "adminckey" = sql_system_ckey)
 	)
 	if(!query_get_notes.Execute())
 		qdel(query_get_notes)

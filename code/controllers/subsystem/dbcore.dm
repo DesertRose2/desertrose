@@ -142,10 +142,9 @@ SUBSYSTEM_DEF(dbcore)
 /datum/controller/subsystem/dbcore/proc/SetRoundEnd()
 	if(!Connect())
 		return
-	var/sql_station_name = sanitizeSQL(station_name())
 	var/datum/DBQuery/query_round_end = SSdbcore.NewQuery(
 		"UPDATE [format_table_name("round")] SET end_datetime = Now(), game_mode_result = :game_mode_result, station_name = :station_name WHERE id = :round_id",
-		list("game_mode_result" = SSticker.mode_result, "station_name" = sql_station_name, "round_id" = GLOB.round_id)
+		list("game_mode_result" = SSticker.mode_result, "station_name" = station_name(), "round_id" = GLOB.round_id)
 	)
 	query_round_end.Execute()
 	qdel(query_round_end)

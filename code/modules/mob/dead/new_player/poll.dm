@@ -517,7 +517,7 @@
 	var/voted = poll_check_voted(pollid)
 	if(isnull(voted) || voted) //Failed or already voted.
 		return
-	var/adminrank = sanitizeSQL(poll_rank())
+	var/adminrank = poll_rank()
 	if(!adminrank)
 		return
 	var/datum/DBQuery/query_option_vote = SSdbcore.NewQuery("INSERT INTO [format_table_name("poll_vote")] (datetime, pollid, optionid, ckey, ip, adminrank) VALUES (Now(), [pollid], [optionid], '[ckey]', INET_ATON('[client.address]'), '[adminrank]')")
@@ -546,8 +546,7 @@
 	var/voted = poll_check_voted(pollid, text = TRUE, silent = TRUE)
 	if(isnull(voted))
 		return
-	var/adminrank = sanitizeSQL(poll_rank())
-	if(!adminrank)
+	if(!poll_rank())
 		return
 	replytext = sanitizeSQL(replytext)
 	if(!(length(replytext) > 0) || !(length(replytext) <= 8000))

@@ -9,10 +9,9 @@
 		var/new_key = input(usr,"Who would you like to create a [type] for?","Enter a key or ckey",null) as null|text
 		if(!new_key)
 			return
-		var/new_ckey = sanitizeSQL(ckey(new_key))
 		var/datum/DBQuery/query_find_ckey = SSdbcore.NewQuery(
 			"SELECT ckey FROM [format_table_name("player")] WHERE ckey = :ckey",
-			list("ckey" = new_ckey)
+			list("ckey" = ckey(new_key))
 		)
 		if(!query_find_ckey.warn_execute())
 			qdel(query_find_ckey)
@@ -140,8 +139,6 @@
 	message_id = text2num(message_id)
 	if(!message_id)
 		return
-	var/editor_ckey = sanitizeSQL(usr.ckey)
-	var/editor_key = sanitizeSQL(usr.key)
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
 	var/datum/DBQuery/query_find_edit_message = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), targetckey), text FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
@@ -158,10 +155,9 @@
 			qdel(query_find_edit_message)
 			return
 		new_text = sanitizeSQL(new_text)
-		var/edit_text = sanitizeSQL("Edited by [editor_key] on [SQLtime()] from<br>[old_text]<br>to<br>[new_text]<hr>")
 		var/datum/DBQuery/query_edit_message = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET text = :text, lasteditor = '[editor_ckey]', edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE id = [message_id] AND deleted = 0",
-			list("text" = new_text)
+			"UPDATE [format_table_name("messages")] SET text = :text, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Edited by [usr.key] on [SQLtime()] from<br>[old_text]<br>to<br>[new_text]<hr>"]') WHERE id = [message_id] AND deleted = 0",
+			list("text" = new_text, "lasteditor" = usr.ckey)
 		)
 		if(!query_edit_message.warn_execute())
 			qdel(query_edit_message)
@@ -182,8 +178,6 @@
 	message_id = text2num(message_id)
 	if(!message_id)
 		return
-	var/editor_ckey = sanitizeSQL(usr.ckey)
-	var/editor_key = sanitizeSQL(usr.key)
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
 	var/datum/DBQuery/query_find_edit_expiry_message = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), adminckey), expire_timestamp FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
@@ -218,10 +212,9 @@
 					return
 				new_expiry = query_validate_expire_time_edit.item[1]
 			qdel(query_validate_expire_time_edit)
-		var/edit_text = sanitizeSQL("Expiration time edited by [editor_key] on [SQLtime()] from [old_expiry] to [new_expiry]<hr>")
 		var/datum/DBQuery/query_edit_message_expiry = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET expire_timestamp = [expire_time == "-1" ? "NULL" : "'[new_expiry]'"], lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE id = [message_id] AND deleted = 0",
-			list("lasteditor" = editor_ckey)
+			"UPDATE [format_table_name("messages")] SET expire_timestamp = [expire_time == "-1" ? "NULL" : "'[new_expiry]'"], lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Expiration time edited by [usr.key] on [SQLtime()] from [old_expiry] to [new_expiry]<hr>"]') WHERE id = [message_id] AND deleted = 0",
+			list("lasteditor" = usr.ckey)
 		)
 		if(!query_edit_message_expiry.warn_execute())
 			qdel(query_edit_message_expiry)
@@ -256,17 +249,14 @@
 		var/old_severity = query_find_edit_note_severity.item[4]
 		if(!old_severity)
 			old_severity = "NA"
-		var/editor_key = sanitizeSQL(usr.key)
-		var/editor_ckey = sanitizeSQL(usr.ckey)
 		var/new_severity = input("Set the severity of the note.", "Severity", null, null) as null|anything in list("high", "medium", "minor", "none") //lowercase for edit log consistency
 		if(!new_severity)
 			qdel(query_find_edit_note_severity)
 			return
 		new_severity = sanitizeSQL(new_severity)
-		var/edit_text = sanitizeSQL("Note severity edited by [editor_key] on [SQLtime()] from [old_severity] to [new_severity]<hr>")
 		var/datum/DBQuery/query_edit_note_severity = SSdbcore.NewQuery(
-			"UPDATE [format_table_name("messages")] SET severity = :severity, lasteditor = '[editor_ckey]', edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE id = [message_id] AND deleted = 0",
-			list("severity" = new_severity)
+			"UPDATE [format_table_name("messages")] SET severity = :severity, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'["Note severity edited by [usr.key] on [SQLtime()] from [old_severity] to [new_severity]<hr>"]') WHERE id = [message_id] AND deleted = 0",
+			list("severity" = new_severity, "lasteditor" = usr.ckey)
 		)
 		if(!query_edit_note_severity.warn_execute(async = TRUE))
 			qdel(query_edit_note_severity)
@@ -285,8 +275,6 @@
 	message_id = text2num(message_id)
 	if(!message_id)
 		return
-	var/editor_ckey = sanitizeSQL(usr.ckey)
-	var/editor_key = sanitizeSQL(usr.key)
 	var/kn = key_name(usr)
 	var/kna = key_name_admin(usr)
 	var/datum/DBQuery/query_find_message_secret = SSdbcore.NewQuery("SELECT type, IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = targetckey), targetckey), IFNULL((SELECT byond_key FROM [format_table_name("player")] WHERE ckey = adminckey), targetckey), secret FROM [format_table_name("messages")] WHERE id = [message_id] AND deleted = 0")
@@ -298,10 +286,10 @@
 		var/target_key = query_find_message_secret.item[2]
 		var/admin_key = query_find_message_secret.item[3]
 		var/secret = text2num(query_find_message_secret.item[4])
-		var/edit_text = "Made [secret ? "not secret" : "secret"] by [editor_key] on [SQLtime()]<hr>"
+		var/edit_text = "Made [secret ? "not secret" : "secret"] by [usr.key] on [SQLtime()]<hr>"
 		var/datum/DBQuery/query_message_secret = SSdbcore.NewQuery(
 			"UPDATE [format_table_name("messages")] SET secret = NOT secret, lasteditor = :lasteditor, edits = CONCAT(IFNULL(edits,''),'[edit_text]') WHERE id = [message_id]",
-			list("lasteditor" = editor_ckey)
+			list("lasteditor" = usr.ckey)
 		)
 		if(!query_message_secret.warn_execute())
 			qdel(query_find_message_secret)

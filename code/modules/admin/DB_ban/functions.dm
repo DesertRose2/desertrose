@@ -80,10 +80,9 @@
 	var/client/banned_client = banned_mob?.client
 	var/banned_mob_guest_key = had_banned_mob && IsGuestKey(banned_mob.key)
 	banned_mob = null
-	var/sql_ckey = sanitizeSQL(ckey)
 	var/datum/DBQuery/query_add_ban_get_ckey = SSdbcore.NewQuery(
 		"SELECT 1 FROM [format_table_name("player")] WHERE ckey = :ckey",
-		list("ckey" = sql_ckey)
+		list("ckey" = ckey)
 	)
 	if(!query_add_ban_get_ckey.warn_execute())
 		qdel(query_add_ban_get_ckey)
@@ -126,11 +125,10 @@
 			adminwho += ", [C]"
 
 	reason = sanitizeSQL(reason)
-	var/sql_a_ckey = sanitizeSQL(a_ckey)
 	if(maxadminbancheck)
 		var/datum/DBQuery/query_check_adminban_amt = SSdbcore.NewQuery(
 			"SELECT count(id) AS num FROM [format_table_name("ban")] WHERE ( a_ckey = :a_ckey) AND (bantype = 'ADMIN_PERMABAN'  OR (bantype = 'ADMIN_TEMPBAN' AND expiration_time > Now())) AND isnull(unbanned)",
-			list("a_ckey" = sql_a_ckey)
+			list("a_ckey" = a_ckey)
 		)
 		if(!query_check_adminban_amt.warn_execute())
 			qdel(query_check_adminban_amt)
@@ -149,12 +147,7 @@
 		computerid = "0"
 	if(!ip)
 		ip = "0.0.0.0"
-	var/sql_job = sanitizeSQL(job)
-	var/sql_computerid = sanitizeSQL(computerid)
-	var/sql_ip = sanitizeSQL(ip)
-	var/sql_a_computerid = sanitizeSQL(a_computerid)
-	var/sql_a_ip = sanitizeSQL(a_ip)
-	var/sql = "INSERT INTO [format_table_name("ban")] (`bantime`,`server_ip`,`server_port`,`round_id`,`bantype`,`reason`,`job`,`duration`,`expiration_time`,`ckey`,`computerid`,`ip`,`a_ckey`,`a_computerid`,`a_ip`,`who`,`adminwho`) VALUES (Now(), INET_ATON(IF('[world.internet_address]' LIKE '', '0', '[world.internet_address]')), '[world.port]', '[GLOB.round_id]', '[bantype_str]', '[reason]', '[sql_job]', [(duration)?"[duration]":"0"], Now() + INTERVAL [(duration>0) ? duration : 0] MINUTE, '[sql_ckey]', '[sql_computerid]', INET_ATON('[sql_ip]'), '[sql_a_ckey]', '[sql_a_computerid]', INET_ATON('[sql_a_ip]'), '[who]', '[adminwho]')"
+	var/sql = "INSERT INTO [format_table_name("ban")] (`bantime`,`server_ip`,`server_port`,`round_id`,`bantype`,`reason`,`job`,`duration`,`expiration_time`,`ckey`,`computerid`,`ip`,`a_ckey`,`a_computerid`,`a_ip`,`who`,`adminwho`) VALUES (Now(), INET_ATON(IF('[world.internet_address]' LIKE '', '0', '[world.internet_address]')), '[world.port]', '[GLOB.round_id]', '[bantype_str]', '[reason]', '[job]', [(duration)?"[duration]":"0"], Now() + INTERVAL [(duration>0) ? duration : 0] MINUTE, '[sql_ckey]', '[computerid]', INET_ATON('[ip]'), '[sql_a_ckey]', '[a_computerid]', INET_ATON('[a_ip]'), '[who]', '[adminwho]')"
 	var/datum/DBQuery/query_add_ban = SSdbcore.NewQuery(sql)
 	if(!query_add_ban.warn_execute())
 		qdel(query_add_ban)
@@ -218,11 +211,9 @@
 		bantype_sql = "(bantype = 'JOB_PERMABAN' OR (bantype = 'JOB_TEMPBAN' AND expiration_time > Now() ) )"
 	else
 		bantype_sql = "bantype = '[bantype_str]'"
-	var/sql_ckey = sanitizeSQL(ckey)
-	var/sql = "SELECT id FROM [format_table_name("ban")] WHERE ckey = '[sql_ckey]' AND [bantype_sql] AND (unbanned is null OR unbanned = false)"
+	var/sql = "SELECT id FROM [format_table_name("ban")] WHERE ckey = '[ckey]' AND [bantype_sql] AND (unbanned is null OR unbanned = false)"
 	if(job)
-		var/sql_job = sanitizeSQL(job)
-		sql += " AND job = '[sql_job]'"
+		sql += " AND job = '[job]'"
 
 	if(!SSdbcore.Connect())
 		return

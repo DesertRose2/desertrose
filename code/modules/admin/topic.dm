@@ -1264,10 +1264,9 @@
 	else if(href_list["messageedits"])
 		if(!check_rights(R_ADMIN))
 			return
-		var/message_id = sanitizeSQL("[href_list["messageedits"]]")
 		var/datum/DBQuery/query_get_message_edits = SSdbcore.NewQuery(
 			"SELECT edits FROM [format_table_name("messages")] WHERE id = :id",
-			list("id" = message_id)
+			list("id" = "[href_list["messageedits"]]")
 		)
 		if(!query_get_message_edits.warn_execute())
 			qdel(query_get_message_edits)
