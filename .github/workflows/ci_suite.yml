@@ -221,20 +221,13 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update || true
-          sudo apt install libmariadb-client-lgpl-dev:i386
-          sudo apt install libmariadbd-dev
-          sudo apt install build-essential
           sudo apt install gcc-multilib
-          sudo apt install g++-multilib
-          sudo apt install gcc-4.8-multilib
-          sudo apt install g++-4.8-multilib
-      
-      - name: Install bsql
-        run: |
-          bash tools/ci/build_bsql.sh
+          sudo apt install g++-7
+          sudo apt install g++-7-multilib
 
       - name: Install rust-g
         run: |
+          sudo apt install zlib1g:i386
           sudo apt install libssl1.1:i386
           bash tools/ci/install_rust_g.sh
 
