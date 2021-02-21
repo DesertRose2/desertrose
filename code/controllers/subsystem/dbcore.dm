@@ -96,7 +96,6 @@ SUBSYSTEM_DEF(dbcore)
 	else
 		connection = null
 		last_error = result["data"]
-		world.log << last_error
 		log_sql("Connect() failed | [last_error]")
 		++failed_connections
 
