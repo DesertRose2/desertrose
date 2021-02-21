@@ -240,7 +240,7 @@
 			return FALSE
 		qdel(query_add_admin)
 		var/datum/DBQuery/query_add_admin_log = SSdbcore.NewQuery(
-			"INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'add admin', :target, 'New admin added:' + :target)",
+			"INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'add admin', :target, CONCAT('New admin added:', :target))",
 			list("time" = SQLtime(), "round_id" = GLOB.round_id, "ckey" = usr.ckey, "ip" = usr.client.address, "target" = .)
 		)
 		if(!query_add_admin_log.warn_execute())
@@ -265,7 +265,10 @@
 				qdel(query_add_rank)
 				return
 			qdel(query_add_rank)
-			var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES ('[SQLtime()]', '[GLOB.round_id]', '[usr.ckey]', INET_ATON('[usr.client.address]'), 'remove admin', '[admin_ckey]', 'Admin removed: [admin_ckey]')")
+			var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery(
+				"INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'remove admin', :admin_ckey, CONCAT('Admin removed: ', :admin_ckey))",
+				list("time" = SQLtime(), "round_id" = GLOB.round_id, "ckey" = usr.ckey, "ip" = usr.client.address, "admin_ckey" = admin_ckey)
+			)
 			if(!query_add_rank_log.warn_execute())
 				qdel(query_add_rank_log)
 				return
@@ -336,12 +339,18 @@
 			return
 		if(!query_rank_in_db.NextRow())
 			QDEL_NULL(query_rank_in_db)
-			var/datum/DBQuery/query_add_rank = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_ranks")] (rank, flags, exclude_flags, can_edit_flags) VALUES ('[new_rank]', '0', '0', '0')")
+			var/datum/DBQuery/query_add_rank = SSdbcore.NewQuery(
+				"INSERT INTO [format_table_name("admin_ranks")] (rank, flags, exclude_flags, can_edit_flags) VALUES (:new_rank, '0', '0', '0')",
+				list("new_rank" = new_rank)
+			)
 			if(!query_add_rank.warn_execute())
 				qdel(query_add_rank)
 				return
 			qdel(query_add_rank)
-			var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES ('[SQLtime()]', '[GLOB.round_id]', '[usr.ckey]', INET_ATON('[usr.client.address]'), 'add rank', '[new_rank]', 'New rank added: [new_rank]')")
+			var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery(
+				"INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'add rank', :new_rank, CONCAT('New rank added: ', :new_rank))",
+				list("time" = SQLtime(), "round_id" = GLOB.round_id, "ckey" = usr.ckey, "ip" = usr.client.address, "new_rank" = new_rank)
+			)
 			if(!query_add_rank_log.warn_execute())
 				qdel(query_add_rank_log)
 				return
@@ -355,7 +364,11 @@
 			qdel(query_change_rank)
 			return
 		qdel(query_change_rank)
-		var/datum/DBQuery/query_change_rank_log = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES ('[SQLtime()]', '[GLOB.round_id]', '[usr.ckey]', INET_ATON('[usr.client.address]'), 'change admin rank', '[admin_ckey]', 'Rank of [admin_ckey] changed from [old_rank] to [new_rank]')")
+		var/datum/DBQuery/query_change_rank_log = SSdbcore.NewQuery({"
+			INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log)
+			VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'change admin rank', :admin_ckey, CONCAT('Rank of ', :admin_ckey, ' changed from ', :old_rank, ' to ', :new_rank))"},
+			list("time" = SQLtime(), "round_id" = GLOB.round_id, "ckey" = usr.ckey, "ip" = usr.client.address, "admin_ckey" = admin_ckey, "old_rank" = old_rank, "new_rank" = new_rank)
+		)
 		if(!query_change_rank_log.warn_execute())
 			qdel(query_change_rank_log)
 			return
@@ -406,7 +419,11 @@
 			qdel(query_change_rank_flags)
 			return
 		qdel(query_change_rank_flags)
-		var/datum/DBQuery/query_change_rank_flags_log = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES ('[SQLtime()]', '[GLOB.round_id]', '[usr.ckey]', INET_ATON('[usr.client.address]'), 'change rank flags', '[D.rank.name]', 'Permissions of [D.rank.name] changed from[rights2text(old_flags," ")][rights2text(old_exclude_flags," ", "-")][rights2text(old_can_edit_flags," ", "*")] to[rights2text(new_flags," ")][rights2text(new_exclude_flags," ", "-")][rights2text(new_can_edit_flags," ", "*")]')")
+		var/log_message = "Permissions of [usr.ckey] changed from[rights2text(old_flags," ")][rights2text(old_exclude_flags," ", "-")][rights2text(old_can_edit_flags," ", "*")] to[rights2text(new_flags," ")][rights2text(new_exclude_flags," ", "-")][rights2text(new_can_edit_flags," ", "*")]"
+		var/datum/DBQuery/query_change_rank_flags_log = SSdbcore.NewQuery({"
+			INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log)
+			VALUES (:time, :round_id, :adminckey, INET_ATON(:adminip), 'change rank flags', :rank_name, :log)
+		"}, list("time" = SQLtime(), "round_id" = "[GLOB.round_id]", "adminckey" = usr.ckey, "adminip" = usr.client.address, "log" = log_message))
 		if(!query_change_rank_flags_log.warn_execute())
 			qdel(query_change_rank_flags_log)
 			return
@@ -480,7 +497,10 @@
 			qdel(query_add_rank)
 			return
 		qdel(query_add_rank)
-		var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery("INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES ('[SQLtime()]', '[GLOB.round_id]', '[usr.ckey]', INET_ATON('[usr.client.address]'), 'remove rank', '[admin_rank]', 'Rank removed: [admin_rank]')")
+		var/datum/DBQuery/query_add_rank_log = SSdbcore.NewQuery(
+			"INSERT INTO [format_table_name("admin_log")] (datetime, round_id, adminckey, adminip, operation, target, log) VALUES (:time, :round_id, :ckey, INET_ATON(:ip), 'remove rank', :admin_rank, CONCAT('Rank removed: ', :admin_rank))",
+			list("time" = SQLtime(), "round_id" = GLOB.round_id, "ckey" = usr.ckey, "ip" = usr.client.address, "admin_ckey" = admin_ckey, "admin_rank" = admin_rank)
+		)
 		if(!query_add_rank_log.warn_execute())
 			qdel(query_add_rank_log)
 			return
