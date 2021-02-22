@@ -221,6 +221,9 @@
 	var/bulb_emergency_pow_min = 0.5	// the minimum value for the light's power in emergency mode
 	var/hijacked = FALSE	// if true, the light is in a hijacked area
 
+	var/flicker_chance = 100/90 // the chance to flicker every tick (2 seconds) as a percentage;
+	// 100/90 is once every 90 ticks/three minutes, roughly.
+
 /obj/machinery/light/broken
 	status = LIGHT_BROKEN
 	icon_state = "tube-broken"
@@ -386,6 +389,8 @@
 		cell.charge = min(cell.maxcharge, cell.charge + LIGHT_EMERGENCY_POWER_USE) //Recharge emergency power automatically while not using it
 	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
 		update(FALSE) //Disables emergency mode and sets the color to normal
+	if(!flickering && prob(flicker_chance))
+		flicker()
 
 /obj/machinery/light/proc/burn_out()
 	if(status == LIGHT_OK)
@@ -566,23 +571,6 @@
 	cell.use(pwr)
 	set_light(brightness * bulb_emergency_brightness_mul, max(bulb_emergency_pow_min, bulb_emergency_pow_mul * (cell.charge / cell.maxcharge)), bulb_emergency_colour)
 	return TRUE
-
-
-/obj/machinery/light/proc/flicker(amount = rand(10, 20))
-	set waitfor = 0
-	if(flickering)
-		return
-	flickering = 1
-	if(on && status == LIGHT_OK)
-		for(var/i = 0; i < amount; i++)
-			if(status != LIGHT_OK)
-				break
-			on = !on
-			update(0)
-			sleep(rand(5, 15))
-		on = (status == LIGHT_OK)
-		update(0)
-	flickering = 0
 
 // ai attack - make lights flicker, because why not
 
@@ -914,13 +902,14 @@
 		if(prob(damage_amount * 10))
 			flicker(damage_amount*rand(1,3))
 
-/obj/machinery/light/flicker(amount = rand(10, 20))
+/obj/machinery/light/proc/flicker(amount = rand(10, 20), loud = TRUE)
 	set waitfor = 0
 	if(flickering)
 		return
 	flickering = TRUE
 	if(on && status == LIGHT_OK)
-		visible_message("<span class='warning'>[src] begins flickering!</span>","<span class='italics'>You hear an electrical sparking.</span>")
+		if(loud)
+			visible_message("<span class='warning'>[src] begins flickering!</span>","<span class='italics'>You hear an electrical sparking.</span>")
 		for(var/i = 0; i < amount; i++)
 			if(status != LIGHT_OK)
 				break
