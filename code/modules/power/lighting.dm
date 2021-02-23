@@ -286,6 +286,8 @@
 					break_light_tube(1)
 		spawn(1)
 			update(0)
+	if(flicker_chance)
+		START_PROCESSING(SSmachines, src)
 
 /obj/machinery/light/Destroy()
 	var/area/A = get_area(src)
@@ -381,7 +383,7 @@
 	update()
 
 /obj/machinery/light/process()
-	if (!cell)
+	if (!cell && !flicker_chance)
 		return PROCESS_KILL
 	if(has_power())
 		if (cell.charge == cell.maxcharge)
@@ -390,7 +392,7 @@
 	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
 		update(FALSE) //Disables emergency mode and sets the color to normal
 	if(!flickering && prob(flicker_chance))
-		flicker()
+		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
 
 /obj/machinery/light/proc/burn_out()
 	if(status == LIGHT_OK)
@@ -902,7 +904,7 @@
 		if(prob(damage_amount * 10))
 			flicker(damage_amount*rand(1,3))
 
-/obj/machinery/light/proc/flicker(amount = rand(10, 20), loud = TRUE)
+/obj/machinery/light/proc/flicker(amount = rand(10, 20), spark = TRUE, sounds = TRUE, loud = TRUE)
 	set waitfor = 0
 	if(flickering)
 		return
@@ -914,11 +916,12 @@
 			if(status != LIGHT_OK)
 				break
 			on = !on
-			if(prob(18) && !on)//only spark when off so it doesn't occur too much
+			if(prob(18) && !on && spark)//only spark when off so it doesn't occur too much
 				do_sparks(1, FALSE, src)
 			else if(prob(40))
 				bulb_colour = LIGHT_COLOR_BROWN
-				playsound(src, pick('sound/effects/sparks1.ogg', 'sound/effects/sparks2.ogg', 'sound/effects/sparks3.ogg', 'sound/effects/sparks4.ogg', 'sound/effects/light_flicker.ogg'), 100, 1)
+				if(sounds)
+					playsound(src, pick('sound/effects/sparks1.ogg', 'sound/effects/sparks2.ogg', 'sound/effects/sparks3.ogg', 'sound/effects/sparks4.ogg', 'sound/effects/light_flicker.ogg'), 100, 1)
 			update(FALSE)
 			sleep(rand(1, 5))
 		on = (status == LIGHT_OK)

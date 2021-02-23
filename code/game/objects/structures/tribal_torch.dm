@@ -1,4 +1,6 @@
 /obj/structure/destructible/tribal_torch
+	name = "tribal torch"
+	desc = "A standing torch, used to provide light in dark environments."
 	density = FALSE
 	anchored = TRUE
 	icon = 'icons/obj/candle.dmi'
