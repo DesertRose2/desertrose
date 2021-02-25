@@ -494,42 +494,32 @@
 			SELECT
 				id,
 				bantime,
-				round_id,
-				role,
-				expiration_time,
-				TIMESTAMPDIFF(MINUTE, bantime, expiration_time),
-				IF(expiration_time < NOW(), 1, NULL),
-				applies_to_admins,
+				bantype,
 				reason,
-				IFNULL((
-					SELECT byond_key
-					FROM [format_table_name("player")]
-					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].ckey
-				), ckey),
-				INET_NTOA(ip),
-				computerid,
-				IFNULL((
-					SELECT byond_key
-					FROM [format_table_name("player")]
-					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].a_ckey
-				), a_ckey),
-				IF(edits IS NOT NULL, 1, NULL),
+				job,
+				duration,
+				expiration_time,
+				IFNULL(
+					(SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].ckey),
+					ckey),
+				IFNULL(
+					(SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].a_ckey),
+					a_ckey),
+				unbanned,
+				IFNULL(
+					(SELECT byond_key FROM [format_table_name("player")] WHERE [format_table_name("player")].ckey = [format_table_name("ban")].unbanned_ckey),
+					unbanned_ckey),
 				unbanned_datetime,
-				IFNULL((
-					SELECT byond_key
-					FROM [format_table_name("player")]
-					WHERE [format_table_name("player")].ckey = [format_table_name("ban")].unbanned_ckey
-				), unbanned_ckey),
-				unbanned_round_id
+				edits,
+				round_id
 			FROM [format_table_name("ban")]
 			WHERE
 				(:player_key IS NULL OR ckey = :player_key) AND
 				(:admin_key IS NULL OR a_ckey = :admin_key) AND
 				(:player_ip IS NULL OR ip = INET_ATON(:player_ip)) AND
 				(:player_cid IS NULL OR computerid = :player_cid)
-			ORDER BY id DESC
-			LIMIT :skip, :take
-		"}, list(
+			ORDER BY bantime DESC LIMIT :skip, :take
+			"}, list(
 			"player_key" = ckey(playerckey),
 			"admin_key" = ckey(adminckey),
 			"player_ip" = ip,
