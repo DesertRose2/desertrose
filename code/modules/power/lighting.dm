@@ -385,9 +385,10 @@
 /obj/machinery/light/process()
 	if (!cell && !flicker_chance)
 		return PROCESS_KILL
-	if (!cell && !flickering && prob(flicker_chance))
+	if (!flickering && prob(flicker_chance))
 		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
-		return
+		if(!cell)
+			return
 	if(has_power())
 		if (cell.charge == cell.maxcharge)
 			return PROCESS_KILL
