@@ -385,14 +385,15 @@
 /obj/machinery/light/process()
 	if (!cell && !flicker_chance)
 		return PROCESS_KILL
+	if (!cell && !flickering && prob(flicker_chance))
+		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
+		return
 	if(has_power())
 		if (cell.charge == cell.maxcharge)
 			return PROCESS_KILL
 		cell.charge = min(cell.maxcharge, cell.charge + LIGHT_EMERGENCY_POWER_USE) //Recharge emergency power automatically while not using it
 	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
 		update(FALSE) //Disables emergency mode and sets the color to normal
-	if(!flickering && prob(flicker_chance))
-		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
 
 /obj/machinery/light/proc/burn_out()
 	if(status == LIGHT_OK)
