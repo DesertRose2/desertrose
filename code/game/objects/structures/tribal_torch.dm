@@ -78,7 +78,7 @@
 /obj/structure/destructible/tribal_torch/wall/update_icon()
 	. = ..()
 	icon_state = "wall_[icon_state]"
-	pixel_y = (dir == NORTH) ? -10 : 0
+	pixel_y = (dir == NORTH) ? 15 : 0
 	pixel_x = 0
 
 /obj/structure/destructible/tribal_torch/wall/lit
