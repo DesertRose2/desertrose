@@ -210,7 +210,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	can_suppress = FALSE
-	fire_sound = 'sound/f13weapons/ninemil.ogg'
+	fire_sound = 'sound/f13weapons/beretta.ogg'
 	can_attachments = TRUE
 	extra_damage = 3
 

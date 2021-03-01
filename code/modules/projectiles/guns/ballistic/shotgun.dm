@@ -12,6 +12,7 @@
 	var/recentpump = 0 // to prevent spammage
 	weapon_weight = WEAPON_HEAVY
 	spawnwithmagazine = TRUE
+	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 
 /obj/item/gun/ballistic/shotgun/attackby(obj/item/A, mob/user, params)
 	. = ..()
@@ -59,7 +60,7 @@
 /obj/item/gun/ballistic/shotgun/proc/pump(mob/M, visible = TRUE)
 	if(visible)
 		M.visible_message("<span class='warning'>[M] racks [src].</span>", "<span class='warning'>You rack [src].</span>")
-	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
+	playsound(M, pump_sound, 60, 1)
 	pump_unload(M)
 	pump_reload(M)
 	update_icon()	//I.E. fix the desc
@@ -408,6 +409,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	sawn_desc = "A concealed hand blaster, for any situation."
+	fire_sound = 'sound/f13weapons/shotgun.ogg'
 
 /obj/item/gun/ballistic/shotgun/hunting/attackby(obj/item/A, mob/user, params)
 	..()
@@ -549,7 +551,7 @@
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
-//	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
+	pump_sound = 'sound/f13weapons/leveractionreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4
@@ -560,6 +562,7 @@
 	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of brooding veterans and cigarettes."
 	icon_state = "scopedcowboyrepeater"
 	item_state = "scopedcowboyrepeater"
+	pump_sound = 'sound/f13weapons/leveractionreload.ogg'
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -572,6 +575,7 @@
 	item_state = "trailcarbine"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	fire_sound = 'sound/f13weapons/44mag.ogg'
+	pump_sound = 'sound/f13weapons/leveractionreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4
@@ -593,6 +597,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
+	pump_sound = 'sound/f13weapons/leveractionreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4
@@ -614,7 +619,7 @@
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/antimateriel
 	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
-//	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'
+	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13

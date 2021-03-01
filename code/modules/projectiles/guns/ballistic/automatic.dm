@@ -632,6 +632,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	extra_damage = 2
+	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
 
 /obj/item/gun/ballistic/automatic/marksman/automatic
 	name = "assault marksman carbine"
