@@ -47,7 +47,7 @@
 				),
 				CAT_DRINK = CAT_NONE,
 				CAT_CLOTHING = list(
-					CAT_GENCLOTHING,
+					CAT_GENCLOTHES,
 					CAT_SHOES,
 					CAT_MISCCLOTHING,
 					CAT_ARMOR,
