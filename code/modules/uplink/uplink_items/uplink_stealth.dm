@@ -32,13 +32,6 @@
 	cost = 4
 	surplus = 50
 
-/datum/uplink_item/stealthy_weapons/dehy_carp
-	name = "Dehydrated Space Carp"
-	desc = "Looks like a plush toy carp, but just add water and it becomes a real-life space carp! Activate in \
-			your hand before use so it knows not to kill you."
-	item = /obj/item/toy/plush/carpplushie/dehy_carp
-	cost = 1
-
 /datum/uplink_item/stealthy_weapons/edagger
 	name = "Energy Dagger"
 	desc = "A dagger made of energy that looks and functions as a pen when off."

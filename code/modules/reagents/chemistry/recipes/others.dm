@@ -197,19 +197,6 @@
 	results = list(/datum/reagent/mulligan = 1)
 	required_reagents = list(/datum/reagent/slime_toxin = 1, /datum/reagent/toxin/mutagen = 1)
 
-
-/datum/chemical_reaction/fermis_plush
-	name = "Fermis plush"
-	id = "fermis_plush"
-	required_reagents = list(/datum/reagent/consumable/caramel = 10, /datum/reagent/blood = 10, /datum/reagent/stable_plasma = 10)
-	mob_react = FALSE
-	required_temp = 300
-
-/datum/chemical_reaction/fermis_plush/on_reaction(datum/reagents/holder, multiplier)
-	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= multiplier, i+=10)
-		new /obj/item/toy/plush/catgirl/fermis(location)
-
 ////////////////////////////////// VIROLOGY //////////////////////////////////////////
 
 /datum/chemical_reaction/virus_food

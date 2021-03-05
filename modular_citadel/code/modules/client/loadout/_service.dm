@@ -17,17 +17,3 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_JOBS
 	restricted_roles = list("Assistant")
 	cost = 2
-
-/datum/gear/backpack/plushvar
-	name = "Ratvar Plushie"
-	path = /obj/item/toy/plush/plushvar
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
-	cost = 5
-	restricted_roles = list("Chaplain")
-
-/datum/gear/backpack/narplush
-	name = "Narsie Plushie"
-	path = /obj/item/toy/plush/narplush
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_TOYS
-	cost = 5
-	restricted_roles = list("Chaplain")

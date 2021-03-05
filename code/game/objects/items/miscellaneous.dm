@@ -216,17 +216,6 @@
 	M.put_in_hands(new choice)
 	qdel(src)
 
-/obj/item/choice_beacon/box/plushie/spawn_option(choice,mob/living/M)
-	if(ispath(choice, /obj/item/toy/plush))
-		..() //regular plush, spawn it naturally
-	else
-		//snowflake plush
-		var/obj/item/toy/plush/snowflake_plushie = new(get_turf(M))
-		snowflake_plushie.set_snowflake_from_config(choice)
-		M.temporarilyRemoveItemFromInventory(src, TRUE)
-		M.put_in_hands(new choice)
-		qdel(src)
-
 /obj/item/choice_beacon/box/carpet //donator carpet beacon
 	name = "choice box (carpet)"
 	desc = "Contains 50 of a selected carpet inside!"
@@ -254,13 +243,8 @@
 
 /obj/item/choice_beacon/box/plushie/generate_display_names()
 	var/list/plushie_list = list()
-	//plushie set 1: just subtypes of /obj/item/toy/plush
-	var/list/plushies_set_one = subtypesof(/obj/item/toy/plush) - list(/obj/item/toy/plush/narplush, /obj/item/toy/plush/awakenedplushie, /obj/item/toy/plush/random_snowflake, /obj/item/toy/plush/plushling) //don't allow these special ones (you can still get narplush/hugbox)
+	var/list/plushies_set_one = subtypesof(/obj/item/toy/plush)
 	for(var/V in plushies_set_one)
 		var/atom/A = V
 		plushie_list[initial(A.name)] = A
-	//plushie set 2: snowflake plushies
-	var/list/plushies_set_two = CONFIG_GET(keyed_list/snowflake_plushies)
-	for(var/V in plushies_set_two)
-		plushie_list[V] = V //easiest way to do this which works with how selecting options works, despite being snowflakey to have the key equal the value
 	return plushie_list

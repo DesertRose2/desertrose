@@ -81,7 +81,7 @@ SUBSYSTEM_DEF(traumas)
 					"greytide"  = typecacheof(list(/obj/item/clothing/under/color/grey, /obj/item/melee/baton/cattleprod,
 						/obj/item/twohanded/spear, /obj/item/clothing/mask/gas)),
 
-					"lizards"   = typecacheof(list(/obj/item/toy/plush/lizardplushie, /obj/item/reagent_containers/food/snacks/kebab/tail,
+					"lizards"   = typecacheof(list(/obj/item/reagent_containers/food/snacks/kebab/tail,
 						/obj/item/organ/tail/lizard, /obj/item/reagent_containers/food/drinks/bottle/lizardwine)),
 
 					"skeletons" = typecacheof(list(/obj/item/organ/tongue/bone, /obj/item/clothing/suit/armor/bone, /obj/item/stack/sheet/bone,
@@ -176,7 +176,7 @@ SUBSYSTEM_DEF(traumas)
 						/obj/machinery/computer/pod/old/syndicate, /obj/machinery/vending/medical/syndicate_access, /obj/item/mmi/syndie, /obj/item/target/syndicate, /obj/machinery/vending/cigarette/syndicate, /obj/item/robot_module/syndicate, /obj/item/clothing/mask/gas/syndicate, /obj/machinery/power/singularity_beacon/syndicate, /obj/item/clothing/head/syndicatefake,
 						/obj/item/radio/headset/syndicate, /obj/item/gun/ballistic/automatic/pistol/antitank/syndicate, /obj/item/pda/syndicate, /obj/item/clothing/suit/armor/vest/capcarapace/syndicate, /obj/item/gun/ballistic/automatic/flechette, /obj/item/ammo_box/magazine/flechette, /obj/item/clothing/suit/toggle/lawyer/black/syndie, /obj/item/melee/transforming/energy/sword/cx/traitor,
 						/obj/structure/sign/poster/contraband/syndicate_pistol, /obj/structure/sign/poster/contraband/syndicate_recruitment, /obj/item/bedsheet/syndie, /obj/item/borg/upgrade/syndicate, /obj/item/tank/jetpack/oxygen/harness, /obj/item/firing_pin/implant/pindicate, /obj/item/reagent_containers/glass/bottle/traitor, /obj/item/storage/belt/military,
-						/obj/item/shockpaddles/syndicate, /obj/item/clothing/mask/cigarette/syndicate, /obj/item/toy/plush/nukeplushie)),
+						/obj/item/shockpaddles/syndicate, /obj/item/clothing/mask/cigarette/syndicate)),
 
 					"eye" = typecacheof(list(/obj/item/organ/eyes, /obj/item/reagent_containers/syringe))
 						)

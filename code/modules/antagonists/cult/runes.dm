@@ -115,9 +115,6 @@ structure_check() searches for nearby cultist structures required for the invoca
 		invokers += user
 	if(req_cultists > 1 || istype(src, /obj/effect/rune/narsie) || istype(src, /obj/effect/rune/convert))
 		var/list/things_in_range = range(1, src)
-		var/obj/item/toy/plush/narplush/plushsie = locate() in things_in_range
-		if(istype(plushsie) && plushsie.is_invoker)
-			invokers += plushsie
 		for(var/mob/living/L in things_in_range)
 			if(iscultist(L))
 				if(L == user)
@@ -141,9 +138,6 @@ structure_check() searches for nearby cultist structures required for the invoca
 			if(invoke_damage)
 				L.apply_damage(invoke_damage, BRUTE)
 				to_chat(L, "<span class='cult italic'>[src] saps your strength!</span>")
-		else if(istype(M, /obj/item/toy/plush/narplush))
-			var/obj/item/toy/plush/narplush/P = M
-			P.visible_message("<span class='cult italic'>[P] squeaks loudly!</span>")
 	do_invoke_glow()
 
 /obj/effect/rune/proc/do_invoke_glow()

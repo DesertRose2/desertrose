@@ -338,15 +338,6 @@
 		"Eyebot" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "eyebotmed"),
 		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymed")
 		)
-		var/list/L = list("Medihound" = "medihound", "Medihound Dark" = "medihounddark", "Vale" = "valemed")
-		for(var/a in L)
-			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
-			wide.pixel_x = -16
-			med_icons[a] = wide
-		if(R.client && R.client.ckey == "nezuli")
-			var/image/bad_snowflake = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "alina-med")
-			bad_snowflake.pixel_x = -16
-			med_icons["Alina"] = bad_snowflake
 		med_icons = sortList(med_icons)
 	var/med_borg_icon = show_radial_menu(R, R , med_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(med_borg_icon)
@@ -426,15 +417,6 @@
 		"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "spidereng"),
 		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyeng")
 		)
-		var/list/L = list("Pup Dozer" = "pupdozer", "Vale" = "valeeng")
-		for(var/a in L)
-			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
-			wide.pixel_x = -16
-			engi_icons[a] = wide
-		if(R.client && R.client.ckey == "nezuli")
-			var/image/bad_snowflake = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "alina-eng")
-			bad_snowflake.pixel_x = -16
-			engi_icons["Alina"] = bad_snowflake
 		engi_icons = sortList(engi_icons)
 	var/engi_borg_icon = show_radial_menu(R, R , engi_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(engi_borg_icon)
@@ -506,15 +488,6 @@
 		"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "spidersec"),
 		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavysec")
 		)
-		var/list/L = list("K9" = "k9", "Vale" = "valesec", "K9 Dark" = "k9dark")
-		for(var/a in L)
-			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
-			wide.pixel_x = -16
-			sec_icons[a] = wide
-		if(R.client && R.client.ckey == "nezuli")
-			var/image/bad_snowflake = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "alina-sec")
-			bad_snowflake.pixel_x = -16
-			sec_icons["Alina"] = bad_snowflake
 		sec_icons = sortList(sec_icons)
 	var/sec_borg_icon = show_radial_menu(R, R , sec_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(sec_borg_icon)
@@ -591,13 +564,6 @@
 		if("Spider")
 			cyborg_base_icon = "whitespider"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Borgi")
-			cyborg_base_icon = "borgi"
-			moduleselect_icon = "borgi"
-			moduleselect_alternate_icon = 'modular_citadel/icons/ui/screen_cyborg.dmi'
-			hat_offset = INFINITY
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			has_snowflake_deadsprite = TRUE
 		else
 			return FALSE
 	return ..()
@@ -738,16 +704,6 @@
 		"(Janitor) Can" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "canjan"),
 		"(Janitor) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyjan")
 		)
-		var/list/L = list("(Service) DarkK9" = "k50", "(Service) Vale" = "valeserv", "(Service) ValeDark" = "valeservdark",
-						"(Janitor) Scrubpuppy" = "scrubpup")
-		for(var/a in L)
-			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
-			wide.pixel_x = -16
-			service_icons[a] = wide
-		if(R.client && R.client.ckey == "nezuli")
-			var/image/bad_snowflake = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "alina-sec")
-			bad_snowflake.pixel_x = -16
-			service_icons["Alina"] = bad_snowflake
 		service_icons = sortList(service_icons)
 	var/service_robot_icon = show_radial_menu(R, R , service_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(service_robot_icon)
@@ -835,11 +791,6 @@
 		"Can" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "canmin"),
 		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymin")
 		)
-		var/list/L = list("Blade" = "blade", "Vale" = "valemine")
-		for(var/a in L)
-			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
-			wide.pixel_x = -16
-			mining_icons[a] = wide
 		mining_icons = sortList(mining_icons)
 	var/mining_borg_icon = show_radial_menu(R, R , mining_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(mining_borg_icon)

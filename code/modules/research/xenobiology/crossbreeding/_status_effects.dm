@@ -629,12 +629,6 @@ datum/status_effect/stabilized/blue/on_remove()
 		var/obj/item/reagent_containers/food/snacks/cube/cube = O
 		cube.Expand()
 
-	// Dehydrated carp
-	else if(istype(O, /obj/item/toy/plush/carpplushie/dehy_carp))
-		to_chat(owner, "<span class='warning'>[linked_extract] kept your hands wet! It makes [O] expand!</span>")
-		var/obj/item/toy/plush/carpplushie/dehy_carp/dehy = O
-		dehy.Swell() // Makes a carp
-
 	else if(istype(O, /obj/item/stack/sheet/hairlesshide))
 		to_chat(owner, "<span class='warning'>[linked_extract] kept your hands wet! It wets [O]!</span>")
 		var/obj/item/stack/sheet/hairlesshide/HH = O
