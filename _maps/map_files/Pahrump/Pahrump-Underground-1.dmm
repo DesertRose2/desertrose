@@ -46,11 +46,13 @@
 /area/f13/tunnel)
 "aj" = (
 /obj/machinery/button{
+	id = NW CELL;
 	pixel_x = -5;
 	pixel_y = 30
 	},
 /obj/machinery/button{
-	pixel_x = 5;
+	id = NE CELL;
+	pixel_x = 6;
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/darkred/side{
@@ -1566,7 +1568,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /turf/open/floor/plasteel/darkred/side{
-	dir = 5
+	dir = 1
 	},
 /area/f13/brotherhood)
 "fi" = (
@@ -4530,9 +4532,7 @@
 	req_access_txt = "120"
 	},
 /obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plasteel/darkred/side{
-	dir = 5
-	},
+/turf/open/floor/plasteel/dark,
 /area/f13/brotherhood)
 "on" = (
 /obj/structure/window/fulltile/house{
@@ -7082,6 +7082,7 @@
 /area/f13/brotherhood)
 "wE" = (
 /obj/machinery/button{
+	id = SW CELL;
 	pixel_y = -30
 	},
 /turf/open/floor/plasteel/darkred/side,
@@ -9589,6 +9590,16 @@
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"EF" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/flasher{
+	id = SW CELL;
+	pixel_x = -30
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/f13/brotherhood)
 "EG" = (
 /obj/machinery/door/window/westleft{
 	dir = 2;
@@ -12001,6 +12012,16 @@
 "ME" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/tunnel)
+"MF" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/flasher{
+	id = NE CELL;
+	pixel_x = -30
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/f13/brotherhood)
 "MH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains{
@@ -13559,6 +13580,12 @@
 /obj/machinery/recharger,
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood)
+"Ro" = (
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/plasteel/darkgreen/side{
+	dir = 9
+	},
+/area/f13/brotherhood)
 "Rp" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -13836,6 +13863,7 @@
 	dir = 8
 	},
 /obj/machinery/flasher{
+	id = NW CELL;
 	pixel_x = -30
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -15639,7 +15667,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "XM" = (
-/obj/machinery/mineral/ore_redemption,
+/obj/machinery/mineral/ore_redemption{
+	input_dir = 2;
+	output_dir = 1
+	},
 /obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
@@ -65964,7 +65995,7 @@ Fz
 Fz
 NT
 NT
-aJ
+Ro
 sk
 Cp
 Dd
@@ -69834,7 +69865,7 @@ qF
 Rf
 IV
 DN
-Sk
+EF
 ES
 NT
 Fr
@@ -70599,7 +70630,7 @@ YC
 Nb
 NT
 ES
-Sk
+MF
 EG
 jo
 mP
