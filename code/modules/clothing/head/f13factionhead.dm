@@ -192,7 +192,7 @@
 	strip_delay = 50
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	
+
 /obj/item/clothing/head/helmet/f13/legion/recruit
 	name = "legion recruit helmet"
 	desc = "(III) It's a leather skullcap issued to recruits."
@@ -413,6 +413,13 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
+/obj/item/clothing/head/f13/ncr_campaign
+	name = "NCR campaign hat"
+	desc = "(VII) A khaki campaign hat, popularly used by senior NCOs in the NCRA."
+	icon_state = "ncr_campaign"
+	item_state = "ncr_campaign"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 //NCR Ranger
 
 /obj/item/clothing/head/beret/ncr_recon_ranger
@@ -614,7 +621,7 @@
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-	
+
 /obj/item/clothing/head/helmet/f13/wayfarer/chief/attack_self(mob/user)
 	weldingvisortoggle(user)
 
