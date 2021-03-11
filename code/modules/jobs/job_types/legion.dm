@@ -565,7 +565,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
 		/obj/item/gun/ballistic/revolver/m29/snub=1,
 		/obj/item/ammo_box/m44=1,
-		/obj/item/melee/curator_whip=1.
+		/obj/item/melee/curator_whip=1,
 		/obj/item/razor=1,
 		/obj/item/restraints/legcuffs/bola=1,
 		/obj/item/key/scollar=1,
