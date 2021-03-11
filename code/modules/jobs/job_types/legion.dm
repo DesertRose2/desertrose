@@ -85,7 +85,7 @@ Needs whitelist
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=2,
-		/obj/item/melee/powerfist=1,
+		/obj/item/melee/goliath=1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
 		/obj/item/storage/bag/money/small/legion=1)
@@ -134,12 +134,11 @@ Centurion
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
-		/obj/item/melee/powerfist/goliath=1,
 		/obj/item/key/scollar=1,
 		/obj/item/key/bcollar=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/electropack/shockcollar=1,
-		/obj/item/electropack/shockcollar/explosive=2,
+		/obj/item/electropack/shockcollar/explosive=1,
 		/obj/item/storage/bag/money/small/legofficers=1)
 
 /datum/outfit/loadout/centheavy
@@ -150,6 +149,7 @@ Centurion
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/gun/energy/laser/plasma/glock=1,
+		/obj/item/melee/goliath=1,
 		/obj/item/stock_parts/cell/ammo/ec=2)
 
 /datum/outfit/loadout/centassault
@@ -160,6 +160,8 @@ Centurion
 	backpack_contents = list(
 		/obj/item/ammo_box/a50MG=2,	
 		/obj/item/gun/ballistic/automatic/pistol/deagle=1,
+		/obj/item/claymore/machete/spatha=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/ammo_box/magazine/m44=1
 	)
 /datum/outfit/loadout/centbreacher
@@ -170,6 +172,8 @@ Centurion
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762=2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil=1,
+		/obj/item/claymore/machete/spatha=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/ammo_box/magazine/m9mm=3)
 
 /*
@@ -448,6 +452,7 @@ Decanii
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears = 			/obj/item/radio/headset/headset_legion
 	suit_store = 	/obj/item/gun/ballistic/automatic/mini_uzi
+	l_hand =		/obj/item/shield/riot
 	r_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm=3,
@@ -556,12 +561,17 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	ears =			/obj/item/radio/headset/headset_legion
 	r_pocket =		 /obj/item/restraints/handcuffs
 	backpack_contents = list(
-		/obj/item/claymore/machete/gladius=1,
+		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
-		/obj/item/flashlight/lantern=1,
-		/obj/item/melee/curator_whip=1,
+		/obj/item/gun/ballistic/revolver/m29/snub=1,
+		/obj/item/ammo_box/m44=1,
+		/obj/item/melee/curator_whip=1.
 		/obj/item/razor=1,
 		/obj/item/restraints/legcuffs/bola=1,
+		/obj/item/key/scollar=1,
+		/obj/item/key/bcollar=1,
+		/obj/item/electropack/shockcollar=1,
+		/obj/item/electropack/shockcollar/explosive=2,
 		/obj/item/stack/medical/gauze/improvised = 1)
 
 
@@ -615,7 +625,7 @@ Veteran Legionary
 	suit_store = /obj/item/gun/ballistic/automatic/smg10mm
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
-		/obj/item/shield/riot/roman=1)
+		/obj/item/shield/riot=1)
 
 /datum/outfit/loadout/vetlegrange
 	name = "Ranged Legionary"
@@ -645,7 +655,7 @@ Prime Legionairy
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(
-	/datum/outfit/loadout/legassault, //5.56 pistol, spear quiver
+	/datum/outfit/loadout/legassault, //.45 pistol, javelins, buckler
 	/datum/outfit/loadout/legline, //Glaive, extended 10mm
 	/datum/outfit/loadout/legbreach, //Lever-action shotgun
 	/datum/outfit/loadout/legrange //trail carbine
@@ -676,11 +686,12 @@ Prime Legionairy
 
 /datum/outfit/loadout/legassault
 	name = "Foot Legionary"
-	suit_store = /obj/item/gun/ballistic/revolver/thatgun
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/shield/legion/buckler=1,
 		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2)
+		/obj/item/ammo_box/magazine/m45=3)
 
 /datum/outfit/loadout/legline
 	name = "Lineman"
