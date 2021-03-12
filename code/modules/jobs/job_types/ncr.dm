@@ -281,7 +281,7 @@ First Sergeant
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	suit_store = 	/obj/item/gun/ballistic/automatic/assault_carbine
 	belt = 			/obj/item/storage/belt/military/NCR_Bandolier
-	head = 			/obj/item/clothing/head/f13/ncr_campaign
+	head = 			/obj/item/clothing/head/f13/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3
 	)

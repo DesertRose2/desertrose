@@ -150,6 +150,13 @@
 							"NCR Off-Duty",
 							"NCR Ranger"
 						)
+/datum/gear/head/ncr_campaign
+	name = "NCR campaign hat"
+	path = /obj/item/clothing/head/f13/ncr_campaign
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR First Sergeant",
+							"NCR Sergeant"
+						)
 
 /datum/gear/head/ncr_stetson
 	name = "NCR air cavalry stetson"
