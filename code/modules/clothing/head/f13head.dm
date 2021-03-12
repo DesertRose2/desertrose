@@ -651,6 +651,13 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES
 
+/obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
+	name = "galerum lacertarex"
+	desc = "(VI) The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
+	icon_state = "diohelmet"
+	item_state = "diohelmet"
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+
 /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened
 	name = "hardened midwestern power helmet"
 	desc = "This helmet once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities."
