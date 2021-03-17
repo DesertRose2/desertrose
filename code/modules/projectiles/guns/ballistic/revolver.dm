@@ -729,3 +729,13 @@
 	extra_damage = 20
 	extra_penetration = 0.1
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
+
+/obj/item/gun/ballistic/revolver/babygun
+	name = "babygun"
+	desc = "A crudely-made 9mm pistol. You're not sure this thing is reliable."
+	icon_state = "zipgun"
+	item_state = "gun"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised9mm
+	spread = 20
+	extra_penetration = 10
