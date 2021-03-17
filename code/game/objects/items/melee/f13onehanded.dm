@@ -90,23 +90,21 @@
 
 /obj/item/claymore/machete/gladius
 	name = "gladius"
-	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	icon_state = "gladius"
-	item_state = "gladius"
+	desc = "A forged steel machete, the blade has been laborously sharpened and the weight has been evenly distributed for maximum killing power. An image of a bull is burned into the wooden handle."
+	icon_state = "machete"
+	item_state = "machete"
 	slot_flags = ITEM_SLOT_BELT
 	force = 35
 	throwforce = 25
 	block_chance = 10
 
 /obj/item/claymore/machete/spatha
-	name = "spatha"
-	desc = "This long blade is favoured by Legion officers and leaders, a finely crafted weapon with good steel and hilt made from brass and bone."
+	name = "\improper Spatha"
+	desc = "This blade is what is known as a Spatha, a particular longsword design that it quickly becoming the favourite of the Legion Officers in Yuma. This one has more care done to it, bone handle, wooden guard and a blade that looks like it could sheer through metal."
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	icon_state = "spatha"
-	item_state = "spatha"
+	icon_state = "machete_kalebman"
+	item_state = "claymore"
 	slot_flags = ITEM_SLOT_BELT
 	force = 40
 	throwforce = 25

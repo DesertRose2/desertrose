@@ -75,6 +75,12 @@
 	name = "Rusted Cowboy Hat"
 	path = /obj/item/clothing/head/helmet/f13/rustedcowboyhat
 
+/datum/gear/head/trail_ranger
+	name = "NCR trail ranger hat"
+	path = /obj/item/clothing/head/f13/trailranger
+	restricted_desc = "Rangers"
+	restricted_roles = list("NCR Veteran Ranger", "NCR Patrol Ranger", "NCR Scout Ranger")
+
 /datum/gear/head/ncr_sapper
 	name = "NCR sapper beret"
 	path = /obj/item/clothing/head/beret/ncr_sapper
@@ -91,7 +97,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Patrol Ranger",
+							"NCR Scout Ranger"
 						)
 
 /datum/gear/head/ncr_cap
@@ -110,7 +117,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Patrol Ranger",
+							"NCR Scout Ranger"
 						)
 
 /datum/gear/head/ncr_recon
@@ -129,33 +137,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-/datum/gear/head/ncr_scout
-	name = "NCR scout beret"
-	path = /obj/item/clothing/head/beret/ncr_scout
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Specialist",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-/datum/gear/head/ncr_campaign
-	name = "NCR campaign hat"
-	path = /obj/item/clothing/head/f13/ncr_campaign
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR First Sergeant",
+							"NCR Patrol Ranger",
+							"NCR Scout Ranger"
 						)
 
 /datum/gear/head/ncr_stetson
@@ -174,7 +157,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Patrol Ranger",
+							"NCR Scout Ranger"
 						)
 
 /datum/gear/head/wkepi

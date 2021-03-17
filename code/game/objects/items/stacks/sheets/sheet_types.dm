@@ -93,6 +93,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("meatspike frame", /obj/structure/kitchenspike_frame, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("reflector frame", /obj/structure/reflector, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
+	new/datum/stack_recipe("grenade casing", /obj/item/grenade/chem_grenade), \
 	new/datum/stack_recipe("light fixture frame", /obj/item/wallframe/light_fixture, 2), \
 	new/datum/stack_recipe("small light fixture frame", /obj/item/wallframe/light_fixture/small, 1), \
 	null, \
@@ -284,8 +285,6 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("tiki mask", /obj/item/clothing/mask/gas/tiki_mask, 2), \
 	new/datum/stack_recipe("grave marker", /obj/structure/statue/wood/headstonewood, 3, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("bonfire", /obj/structure/bonfire, 30, time = 300, one_per_turf = TRUE),\
-	new/datum/stack_recipe("cross", /obj/structure/cross, 10, time = 10),\
-	new/datum/stack_recipe("gallow", /obj/structure/gallow, 10, time = 10),\
 	null, \
 	new/datum/stack_recipe("picture frame", /obj/item/wallframe/picture, 1, time = 10),\
 	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 1, time = 10),\

@@ -56,14 +56,15 @@
 	item_state = "combat_helmet"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	strip_delay = 50
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
-	flags_cover = HEADCOVERSEYES
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/f13/combat/dark
+	name = "combat helmet"
 	color = "#302E2E" // Dark Grey
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 /obj/item/clothing/head/helmet/f13/combat/Initialize()
 	. = ..()
@@ -632,17 +633,6 @@
 	item_state = "rigscustom_helmet"
 	icon = 'icons/fallout/clothing/hats.dmi'
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
-	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
-	icon_state = "foxranger"
-	item_state = "foxranger"
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
-	can_toggle = 1
-	toggle_cooldown = 0
-
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mosshelmet
 	name = "veteran patrol stetson"
 	desc = "A weathered campaign hat tightly fitted over the viscera of a ranger combat helmet. The old stetson is faded with age and heavy use, having seen the green shores of California to the white peaks of the rockies."
@@ -688,21 +678,3 @@
 	item_state = "gamblerrang"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
-	name = "galerum lacertarex"
-	desc = "(VI) The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
-	icon_state = "diohelmet"
-	item_state = "diohelmet"
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
-
-/obj/item/clothing/head/helmet/f13/herbertranger
-	name = "weathered desert ranger helmet"
-	icon_state = "modified_usmc_riot"
-	item_state = "modified_usmc_riot"
-	desc = "(IV) An ancient USMC riot helmet. This paticular piece retains the classic colouration of the legendary Desert Rangers, and looks as if it has been worn for decades; its night vision no longer seems to be functional. Scratched into the helmet is the sentence: 'Death to the Devils that simulate our freedom.'"
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""

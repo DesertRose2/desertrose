@@ -37,6 +37,5 @@ Mexrex
 MintCookie
 Octus
 Vincieyork
-JimmyTombstone
 </pre>
 </i>

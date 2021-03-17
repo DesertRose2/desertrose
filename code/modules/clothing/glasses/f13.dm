@@ -5,21 +5,15 @@
 
 /obj/item/clothing/glasses/f13/biker
 	name = "biker goggles"
-	desc = "Simple goggles to protect against wind and dirt."
+	desc = "B-B-B-B-Bad,<br>B-B-B-B-Bad,<br>B-B-B-B-Bad,<br>Bad to the bone!"
 	icon_state = "biker"
 	item_state = "biker"
 
 /obj/item/clothing/glasses/legiongoggles
 	name = "sandstorm goggles"
-	desc = "Post-war makeshift protective goggles made by legion artisans."
+	desc = "Post-war makeshift goggles fasioned together inside Legion camps. Standard issue to most legionarys."
 	icon_state = "legion"
 	item_state = "legion"
-
-/obj/item/clothing/glasses/legionpolarizing
-	name = "polarizing goggles"
-	desc = "Fancy goggles with rare polarizing glass, usually reserved for commanders due to rarity."
-	icon_state = "legpolarizing"
-	item_state = "legpolarizing"
 
 //Fallout 13 sunglasses
 

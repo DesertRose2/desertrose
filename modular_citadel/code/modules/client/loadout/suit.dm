@@ -25,11 +25,6 @@
 	path = /obj/item/clothing/suit/jacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 
-/datum/gear/suit/oldjacketbomber
-	name = "Old bomber jacket"
-	path = /obj/item/clothing/suit/bomber
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
-
 /datum/gear/suit/jacketflannelblack // all of these are reskins of bomber jackets but with the vibe to make you look like a true lumberjack
 	name = "Black flannel jacket"
 	path = /obj/item/clothing/suit/jacket/flannel
@@ -253,12 +248,3 @@
 /datum/gear/suit/samurai
 	name = "Samurai outfit"
 	path = /obj/item/clothing/suit/samurai
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
-// BEGIN_INCLUDE
-// END_INCLUDE

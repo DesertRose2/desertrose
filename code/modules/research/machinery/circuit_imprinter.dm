@@ -31,6 +31,3 @@
 /obj/machinery/rnd/production/circuit_imprinter/offstation
 	offstation_security_levels = FALSE
 	circuit = /obj/item/circuitboard/machine/circuit_imprinter/offstation
-
-/obj/machinery/rnd/production/circuit_imprinter/AfterMaterialInsert() //doesnt use have an animation like lathes do
-	return

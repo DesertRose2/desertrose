@@ -292,22 +292,7 @@
 		/obj/item/organ/regenerative_core,
 		/obj/item/wormhole_jaunter,
 		/obj/item/storage/bag/plants,
-		/obj/item/stack/marker_beacon,
-		/obj/item/melee/baton,
-		/obj/item/melee/classic_baton,
-		/obj/item/grenade,
-		/obj/item/reagent_containers/spray/pepper,
-		/obj/item/restraints/handcuffs,
-		/obj/item/assembly/flash/handheld,
-		/obj/item/clothing/glasses,
-		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_box,
-		/obj/item/reagent_containers/food/snacks/donut,
-		/obj/item/flashlight/seclite,
-		/obj/item/melee/classic_baton/telescopic,
-		/obj/item/radio,
-		/obj/item/clothing/gloves,
-		/obj/item/restraints/legcuffs/bola
+		/obj/item/stack/marker_beacon
 		))
 
 
@@ -467,7 +452,7 @@
 	new /obj/item/kitchen/knife/combat(src)
 	new /obj/item/ammo_box/magazine/m9mmds(src)
 	update_icon()
-
+	
 /obj/item/storage/belt/durathread
 	name = "durathread toolbelt"
 	desc = "A toolbelt made out of durathread, it seems robust enough to hold bigger tools like RCDs or RPDs, with enough pouches to hold more gear than a normal belt."
@@ -720,7 +705,7 @@
 /obj/item/storage/belt/holster/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 4
+	STR.max_items = 3
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.can_hold = typecacheof(list(
 		/obj/item/gun/ballistic/automatic/pistol,
@@ -756,37 +741,6 @@
 	new /obj/item/gun/ballistic/revolver/detective(src)
 	new /obj/item/ammo_box/c38(src)
 	new /obj/item/ammo_box/c38(src)
-
-/obj/item/storage/belt/holster/ranger44/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver44(src)
-	new /obj/item/ammo_box/m44(src)
-	new /obj/item/ammo_box/m44(src)
-	new /obj/item/ammo_box/m44(src)
-
-/obj/item/storage/belt/holster/ranger357/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/colt357(src)
-	new /obj/item/ammo_box/a357(src)
-	new /obj/item/ammo_box/a357(src)
-	new /obj/item/ammo_box/a357(src)
-
-/obj/item/storage/belt/holster/ranger45/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver45(src)
-	new /obj/item/ammo_box/c45rev(src)
-	new /obj/item/ammo_box/c45rev(src)
-	new /obj/item/ammo_box/c45rev(src)
-
-/obj/item/storage/belt/holster/ranger4570/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/sequoia(src)
-	new /obj/item/ammo_box/c4570(src)
-	new /obj/item/ammo_box/c4570(src)
-	new /obj/item/ammo_box/c4570(src)
-
-/obj/item/storage/belt/holster/ranger10mm/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/colt6520(src)
-	new /obj/item/ammo_box/l10mm(src)
-	new /obj/item/ammo_box/l10mm(src)
-	new /obj/item/ammo_box/l10mm(src)
-
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"

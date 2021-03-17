@@ -570,8 +570,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Veteran Ranger"
 	icon_state = "NCR Veteran Ranger"
 
-/obj/effect/landmark/start/f13/ncrranger
-	name = "NCR Ranger"
+/obj/effect/landmark/start/f13/ncrrangerpatrol
+	name = "NCR Patrol Ranger"
+	icon_state = "NCR Patrol Ranger"
+
+/obj/effect/landmark/start/f13/ncrrangerscout
+	name = "NCR Scout Ranger"
 	icon_state = "NCR Patrol Ranger"
 
 /obj/effect/landmark/start/f13/ncrrearechelon
@@ -659,23 +663,23 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Head Scribe"
 
 /obj/effect/landmark/start/f13/seniorscribe
-	name = "Proctor"
+	name = "Senior Scribe"
 	icon_state = "Head Scribe"
 
 /obj/effect/landmark/start/f13/sentinel
-	name = "Head Paladin"
+	name = "Sentinel"
 	icon_state = "Paladin"
 
 /obj/effect/landmark/start/f13/knightcap
-	name = "Head Knight"
+	name = "Knight-Captain"
 	icon_state = "Initiate Knight"
 
 /obj/effect/landmark/start/f13/seniorknight
-	name = "Star Knight"
+	name = "Senior Knight"
 	icon_state = "Initiate Knight"
 
 /obj/effect/landmark/start/f13/seniorpaladin
-	name = "Star Paladin"
+	name = "Senior Paladin"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/paladin

@@ -662,8 +662,3 @@
 	else
 		. = ..()
 
-/obj/machinery/autolathe/ammo/unlocked
-	simple = 1
-	basic = 1
-	intermediate = 1
-	advanced = 1
