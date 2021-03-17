@@ -46,8 +46,8 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
 	"Head Scribe",
-	"Sentinel",
-	"Knight-Captain",
+	"Head Paladin",
+	"Head Knight",
 
 	"Legion Centurion",
 	"Legion Orator",
@@ -79,14 +79,14 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Elder",
-"Sentinel",
-"Knight-Captain",
+"Head Paladin",
+"Head Knight",
 "Head Scribe",
-"Senior Paladin",
+"Star Paladin",
 "Paladin",
-"Senior Knight",
+"Star Knight",
 "Knight",
-"Senior Scribe",
+"Proctor",
 "Scribe",
 "BoS Off-Duty",
 
@@ -138,11 +138,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
-"Senior Paladin",
+"Star Paladin",
 "Paladin",
-"Senior Knight",
+"Star Knight",
 "Knight",
-"Senior Scribe",
+"Proctor",
 "Scribe",
 "BoS Off-Duty",
 
@@ -185,17 +185,17 @@ GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
-	"Sentinel",
-	"Knight-Captain",
+	"Head Paladin",
+	"Head Knight",
 	"Head Scribe"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Senior Paladin",
+	"Star Paladin",
 	"Paladin",
-	"Senior Knight",
+	"Star Knight",
 	"Knight",
-	"Senior Scribe",
+	"Proctor",
 	"Scribe",
 	"Initiate",
 	"BoS Off-Duty"
@@ -252,8 +252,7 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
-	"NCR Patrol Ranger",
-	"NCR Scout Ranger"
+	"NCR Ranger"
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
@@ -265,8 +264,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
 	"NCR Rear Echelon",
 	"NCR Off-Duty",
-	"NCR Patrol Ranger",
-	"NCR Scout Ranger"
+	"NCR Ranger"
 ))
 
 GLOBAL_LIST_INIT(vault_command_positions, list(
@@ -334,7 +332,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_WASTELAND     = list("titles" = wasteland_positions),
 	EXP_TYPE_TRIBAL        = list("titles" = tribal_positions),
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
-	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Patrol Ranger", "NCR Scout Ranger")),
+	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
 	EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
 

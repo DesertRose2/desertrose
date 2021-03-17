@@ -239,6 +239,7 @@
 				/obj/effect/spawner/bundle/f13/armor/badlands,
 				/obj/effect/spawner/bundle/f13/armor/psycho,
 				/obj/item/clothing/suit/f13/duster,
+				/obj/effect/spawner/bundle/f13/armor/combatduster,
 				/obj/item/clothing/suit/armor/f13/raider/iconoclast
 	)
 
@@ -275,6 +276,13 @@
 	items = list(
 				/obj/item/clothing/suit/armor/f13/raider/badlands,
 				/obj/item/clothing/head/helmet/f13/fiend
+				)
+
+/obj/effect/spawner/bundle/f13/armor/combatduster
+	name = "combat duster raider armor spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/f13/raider/combatduster,
+				/obj/item/clothing/head/helmet/f13/raidercombathelmet
 				)
 
 /obj/effect/spawner/bundle/f13/armor/psycho
@@ -752,7 +760,7 @@
 	name = "Colt 6520 and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/colt6520,
-				/obj/item/ammo_box/magazine/m10mm_adv
+				/obj/item/ammo_box/l10mm
 				)
 
 /obj/effect/spawner/bundle/f13/varmint
@@ -908,7 +916,8 @@
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/beretta/select,
 				/obj/effect/spawner/bundle/f13/deagle,
-				/obj/effect/spawner/bundle/f13/neostead
+				/obj/effect/spawner/bundle/f13/neostead,
+				/obj/effect/spawner/bundle/f13/auto5
 				)
 
 /obj/effect/spawner/bundle/f13/miniuzi
@@ -922,7 +931,7 @@
 	name = "10mm SMG and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg10mm,
-				/obj/item/ammo_box/magazine/m10mm_auto
+				/obj/item/ammo_box/magazine/m10mm_adv/ext
 				)
 
 /obj/effect/spawner/bundle/f13/greasegun
@@ -1001,6 +1010,14 @@
 	name = "Neostead 2000 shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/shotgun/neostead,
+				/obj/item/storage/fancy/ammobox/lethalshot,
+				/obj/item/storage/fancy/ammobox/slugshot
+	)
+
+/obj/effect/spawner/bundle/f13/auto5
+	name = "Auto 5 shotgun and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
 				/obj/item/storage/fancy/ammobox/lethalshot,
 				/obj/item/storage/fancy/ammobox/slugshot
 	)
@@ -1231,7 +1248,7 @@
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/tommygunm45,
 				/obj/item/ammo_box/tube/m44,
-				/obj/item/ammo_box/magazine/m10mm_auto,
+				/obj/item/ammo_box/magazine/m10mm_adv/ext,
 				/obj/item/stock_parts/cell/ammo/ec
 				)
 
