@@ -729,3 +729,14 @@
 	extra_damage = 20
 	extra_penetration = 0.1
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
+
+/obj/item/gun/ballistic/revolver/goldengun
+	name = "Golden Gun"
+	desc = "This gun will fucking murder you in one hit, don't get clapped, fool."
+	item_state = "goldenrevolverold"
+	icon_state = "m29"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
+	fire_sound = 'sound/f13weapons/44mag.ogg'
+	fire_delay = 1
+	can_scope = FALSE
+	extra_damage = 9999
