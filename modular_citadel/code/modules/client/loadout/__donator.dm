@@ -68,11 +68,7 @@
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570
 	ckeywhitelist = list("superballs",
-						"allakai",
-						"shoi87",
-						"svenja",
-						"panzer1944",
-						"topbirb")
+						"allakai")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -87,12 +83,7 @@
 						"idiocityinc",
 						"zeronetalpha",
 						"mrmatrixman",
-						"thegreatcoward",
-						"usotsukihime",
-						"melarinn",
-						"jackofoak",
-						"purplepineapple",
-						"lynuahsororitas")
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -102,16 +93,14 @@
 	ckeywhitelist = list("seabass390",
 						"poots13",
 						"julwaters",
-						"asterixcodix",
-						"edisnij")
+						"asterixcodix")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
 	name = ".357 Magnum Service Revolver"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger357
-	ckeywhitelist = list("shoi87",
-						"someonewithapen")
+	ckeywhitelist = list("shoi87")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -125,20 +114,14 @@
 	name = "Ranger-Captain Pins"
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ranger/CPT
-	ckeywhitelist = list("superballs",
-						"shoi87",
-						"svenja")
+	ckeywhitelist = list("superballs")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerlieutenantpins
 	name = "Ranger-Lieutenant Pins"
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ranger/LT
-	ckeywhitelist = list("allakai",
-						"shoi87",
-						"svenja",
-						"panzer1944",
-						"topbirb")
+	ckeywhitelist = list("allakai")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -157,14 +140,7 @@
 						"zeronetalpha",
 						"mrmatrixman",
 						"asterixcodix",
-						"thegreatcoward",
-						"purplepineapple",
-						"usotsukihime",
-						"jackofoak",
-						"edisnij",
-						"melarinn",
-						"someonewithapen",
-						"lynuahsororitas")
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform

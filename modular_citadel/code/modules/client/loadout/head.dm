@@ -79,8 +79,19 @@
 	name = "NCR sapper beret"
 	path = /obj/item/clothing/head/beret/ncr_sapper
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Combat Engineer",
-							"NCR Off-Duty"
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Veteran Ranger",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Specialist",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger"
 						)
 
 /datum/gear/head/ncr_cap
@@ -90,6 +101,7 @@
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR First Sergeant",
+							"NCR Veteran Ranger",
 							"NCR Lieutenant",
 							"NCR First Sergeant",
 							"NCR Sergeant",
@@ -97,20 +109,47 @@
 							"NCR Specialist",
 							"NCR Trooper",
 							"NCR Rear Echelon",
-							"NCR Off-Duty"
+							"NCR Off-Duty",
+							"NCR Ranger"
 						)
 
 /datum/gear/head/ncr_recon
 	name = "NCR recon beret"
 	path = /obj/item/clothing/head/beret/ncr_recon
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Off-Duty")
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Veteran Ranger",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Specialist",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger"
+						)
 
 /datum/gear/head/ncr_scout
 	name = "NCR scout beret"
 	path = /obj/item/clothing/head/beret/ncr_scout
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Off-Duty")
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Veteran Ranger",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Specialist",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger"
+						)
 
 /datum/gear/head/ncr_campaign
 	name = "NCR campaign hat"
@@ -123,7 +162,20 @@
 	name = "NCR air cavalry stetson"
 	path = /obj/item/clothing/head/f13/ncr_stetson
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Off-Duty")
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Veteran Ranger",
+							"NCR Lieutenant",
+							"NCR First Sergeant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Specialist",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger"
+						)
 
 /datum/gear/head/wkepi
 	name = "white kepi"
