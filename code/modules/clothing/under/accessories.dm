@@ -423,15 +423,15 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/knightcaptain
-	name = "Knight-Captain pins"
-	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on blue-cloth. Worn by the Knight Captain."
+	name = "Head Knight pins"
+	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on blue-cloth. Worn by the Head Knight."
 	icon_state = "knight-captain"
 	item_color = "knight-captain"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/seniorscribe
-	name = "Senior Scribe pins"
-	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of red cloth; worn by the high-ranking Senior Scribe."
+	name = "Proctor pins"
+	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of red cloth; worn by the high-ranking Proctor."
 	icon_state = "seniorscribe"
 	item_color = "seniorscribe"
 	minimize_when_attached = TRUE
@@ -444,15 +444,15 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/seniorpaladin
-	name = "Senior Paladin pins"
-	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Senior Paladin."
+	name = "Star Paladin pins"
+	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Star Paladin."
 	icon_state = "seniorpaladin"
 	item_color = "seniorpaladin"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/seniorknight
-	name = "Senior Knight pins"
-	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Senior Knight."
+	name = "Star Knight pins"
+	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Star Knight."
 	icon_state = "seniorknight"
 	item_color = "seniorknight"
 	minimize_when_attached = TRUE
@@ -472,15 +472,15 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/headscribe
-	name = "Head-Scribe pins"
+	name = "Head Scribe pins"
 	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on red-cloth. Worn by the Head Scribe."
 	icon_state = "headscribe"
 	item_color = "headscribe"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/sentinel
-	name = "Sentinel pins"
-	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on purple-cloth. Worn by the Sentinel."
+	name = "Head Paladin pins"
+	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on purple-cloth. Worn by the Head Paladin."
 	icon_state = "sentinel"
 	item_color = "sentinel"
 	minimize_when_attached = TRUE
@@ -508,20 +508,27 @@
 	item_color = "captainrank"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/LT
-	name = "(O-1) Lieutenant rank pin"
-	desc = "An officer holding the rank of Lieutenant should wear this."
-	icon_state = "lieutenantrank"
-	item_color = "lieutenantrank"
+/obj/item/clothing/accessory/ncr/LT1
+	name = "(O-2) First Lieutenant rank pin"
+	desc = "An officer holding the rank of First Lieutenant should wear this."
+	icon_state = "firstlieutenantrank"
+	item_color = "firstlieutenantrank"
+	minimize_when_attached = TRUE
+
+/obj/item/clothing/accessory/ncr/LT2
+	name = "(O-1) Second Lieutenant rank pin"
+	desc = "An officer holding the rank of Second Lieutenant should wear this."
+	icon_state = "secondlieutenantrank"
+	item_color = "secondlieutenantrank"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/armband/med/ncr
-	name = "medical armband (O-1 Medical Officer)"
-	desc = "An armband worn by NCR Medical Officers to diplay their rank and specialty. This one is white."
+	name = "Medical Personnel armband"
+	desc = "An armband worn by NCR medical personnel. This one is white."
 
 /obj/item/clothing/accessory/ncr/FSGT
-	name = "(E-8) First Sergeant rank pins"
-	desc = "A trooper holding the rank of Staff Sergeant should wear this."
+	name = "(E-7) Sergeant First Class rank pins"
+	desc = "A trooper holding the rank of Sergeant First Class should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
