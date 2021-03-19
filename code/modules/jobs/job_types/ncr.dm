@@ -252,7 +252,7 @@ First Sergeant
 	flag = F13FIRSTSERGEANT
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Lieutenant as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
+	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Lieutenant as well as act as in the second in Command. You have the authority to recommend promotions as well as managing the enlisted personnel"
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_FIRSTSERGEANT
@@ -646,7 +646,7 @@ Veteran Ranger
 
 /datum/outfit/loadout/vrbrush
 	name = "Brush Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush 
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570=3)
 
