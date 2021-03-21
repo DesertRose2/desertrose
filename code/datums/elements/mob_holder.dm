@@ -182,7 +182,7 @@
 /obj/item/clothing/head/mob_holder/proc/get_loc_for_air()
 	var/atom/location = loc
 	if(!loc)
-		return //null
+		return null
 	var/turf/T = get_turf(loc)
 	while(location != T)
 		location = location.loc

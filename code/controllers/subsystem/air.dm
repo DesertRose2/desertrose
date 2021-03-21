@@ -25,6 +25,7 @@ SUBSYSTEM_DEF(air)
 	var/list/networks = list()
 	var/list/pipenets_needing_rebuilt = list()
 	var/list/deferred_airs = list()
+	var/max_deferred_airs = 0
 	var/list/obj/machinery/atmos_machinery = list()
 	var/list/pipe_init_dirs_cache = list()
 
@@ -83,10 +84,12 @@ SUBSYSTEM_DEF(air)
 	setup_atmos_machinery()
 	setup_pipenets()
 	gas_reactions = init_gas_reactions()
+	auxtools_update_reactions()
 	return ..()
 
 /datum/controller/subsystem/air/proc/extools_update_ssair()
-//datum/controller/subsystem/air/proc/extools_update_reactions()
+
+/datum/controller/subsystem/air/proc/auxtools_update_reactions()
 
 /proc/reset_all_air()
 	SSair.can_fire = 0
@@ -266,6 +269,7 @@ SUBSYSTEM_DEF(air)
 		pipenets_needing_rebuilt += atmos_machine
 
 /datum/controller/subsystem/air/proc/process_deferred_airs(resumed = 0)
+	max_deferred_airs = max(deferred_airs.len,max_deferred_airs)
 	while(deferred_airs.len)
 		var/list/cur_op = deferred_airs[deferred_airs.len]
 		deferred_airs.len--

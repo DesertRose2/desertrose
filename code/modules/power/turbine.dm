@@ -128,9 +128,8 @@
 	cut_overlays()
 
 	rpm = 0.9* rpm + 0.1 * rpmtarget
-	var/datum/gas_mixture/environment = inturf.return_air()
-
 	// It's a simplified version taking only 1/10 of the moles from the turf nearby. It should be later changed into a better version
+	// above todo 7 years and counting
 
 	inturf.transfer_air_ratio(gas_contained, 0.1)
 
