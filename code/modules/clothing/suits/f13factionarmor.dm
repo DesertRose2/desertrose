@@ -616,7 +616,7 @@
 	name = "NCRCF jacket"
 	icon_state = "ncrcfjacket"
 	item_state = "ncrcfjacket"
-	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
+	desc = "(I) A cheap teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/soldier
