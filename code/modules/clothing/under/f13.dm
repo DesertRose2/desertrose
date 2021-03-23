@@ -35,6 +35,13 @@
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
+/obj/item/clothing/under/f13/ncrcf
+	name = "NCRCF fatigues"
+	desc = "A set of cheap, worn-in blue dress shirt and slacks. Emblazened on the back are the initials of the NCR Correctional Facility, as a meek reminder of who owns you."
+	icon_state = "ncrcf"
+	item_state = "ncrcf"
+	item_color = "ncrcf"
+
 //NCR
 
 /obj/item/clothing/under/f13/ncr
