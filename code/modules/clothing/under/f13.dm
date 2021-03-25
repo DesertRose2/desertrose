@@ -68,6 +68,14 @@
 	item_state = "caravaneer"
 	item_color = "caravaneer"
 
+/obj/item/clothing/under/f13/ncrcf
+	name = "caravaneer outfit"
+	desc = "A cheap blue shirt and slacks, the letters 'NCRCF' emblazened on the back. A meek reminder of who owns you."
+	can_adjust = TRUE
+	icon_state = "ncrcf"
+	item_state = "ncrcf"
+	item_color = "ncrcf"
+
 //Settlers
 
 /obj/item/clothing/under/f13/brahminm
@@ -200,6 +208,14 @@
 	desc = "A vacuum-sealed asbestos jumpsuit covering the entire body."
 	icon_state = "recon"
 	item_state = "recon"
+	item_color = "recon"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 80)
+
+/obj/item/clothing/under/f13/recon/outcast
+	name = "recon bodysuit"
+	desc = "A vacuum-sealed asbestos jumpsuit covering the entire body, dyed and painted black with red markings."
+	icon_state = "recon_outcast"
+	item_state = "recon_outcast"
 	item_color = "recon"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 80)
 

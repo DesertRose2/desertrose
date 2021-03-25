@@ -64,10 +64,12 @@
 	path = /obj/item/storage/box/large/custom_kit/piperrivera
 	ckeywhitelist = list("purplepineapple")
 
+/*
 /datum/gear/donator/kits/digger
 	name = "Digger's belongings"
 	path = /obj/item/storage/box/large/custom_kit/digger
 	ckeywhitelist = list("entityatlas")
+*/
 
 /datum/gear/donator/kits/orvencross
 	name = "Orven Cross' belongings"
@@ -83,7 +85,11 @@
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570
 	ckeywhitelist = list("superballs",
-						"allakai")
+						"allakai",
+						"shoi87",
+						"svenja",
+						"panzer1944",
+						"topbirb")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -98,7 +104,13 @@
 						"idiocityinc",
 						"zeronetalpha",
 						"mrmatrixman",
-						"thegreatcoward")
+						"thegreatcoward",
+						"usotsukihime",
+						"melarinn",
+						"jackofoak",
+						"purplepineapple",
+						"lynuahsororitas",
+						"prawn04")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -108,14 +120,16 @@
 	ckeywhitelist = list("seabass390",
 						"poots13",
 						"julwaters",
-						"asterixcodix")
+						"asterixcodix",
+						"edisnij")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
 	name = ".357 Magnum Service Revolver"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger357
-	ckeywhitelist = list("shoi87")
+	ckeywhitelist = list("shoi87",
+						"someonewithapen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -129,14 +143,20 @@
 	name = "Ranger-Captain Pins"
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ranger/CPT
-	ckeywhitelist = list("superballs")
+	ckeywhitelist = list("superballs",
+						"shoi87",
+						"svenja")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerlieutenantpins
 	name = "Ranger-Lieutenant Pins"
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ranger/LT
-	ckeywhitelist = list("allakai")
+	ckeywhitelist = list("allakai",
+						"shoi87",
+						"svenja",
+						"panzer1944",
+						"topbirb")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -155,7 +175,14 @@
 						"zeronetalpha",
 						"mrmatrixman",
 						"asterixcodix",
-						"thegreatcoward")
+						"thegreatcoward",
+						"purplepineapple",
+						"usotsukihime",
+						"jackofoak",
+						"edisnij",
+						"melarinn",
+						"someonewithapen",
+						"lynuahsororitas")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform

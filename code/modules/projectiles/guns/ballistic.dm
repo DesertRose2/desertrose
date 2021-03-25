@@ -5,6 +5,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	var/spawnwithmagazine = TRUE
 	var/mag_type = /obj/item/ammo_box/magazine/m10mm //Removes the need for max_ammo and caliber info
+	var/init_mag_type = null
 	var/obj/item/ammo_box/magazine/magazine
 	var/casing_ejector = TRUE //whether the gun ejects the chambered casing
 	var/magazine_wording = "magazine"
@@ -16,15 +17,18 @@
 		update_icon()
 		return
 	if (!magazine)
-		magazine = new mag_type(src)
+		if(init_mag_type)
+			magazine = new init_mag_type(src)
+		else
+			magazine = new mag_type(src)
 	chamber_round()
 	update_icon()
 
 /obj/item/gun/ballistic/update_icon_state()
 	if(current_skin)
-		icon_state = "[unique_reskin[current_skin]][suppressed ? "-suppressed" : ""][sawn_off ? "-sawn" : ""]"
+		icon_state = "[unique_reskin[current_skin]][sawn_off ? "-sawn" : ""]"
 	else
-		icon_state = "[initial(icon_state)][suppressed ? "-suppressed" : ""][sawn_off ? "-sawn" : ""]"
+		icon_state = "[initial(icon_state)][sawn_off ? "-sawn" : ""]"
 
 /obj/item/gun/ballistic/process_chamber(mob/living/user, empty_chamber = 1)
 	var/obj/item/ammo_casing/AC = chambered //Find chambered round
@@ -97,6 +101,7 @@
 		if(user.transferItemToLoc(A, src))
 			to_chat(user, "<span class='notice'>You screw [S] onto [src].</span>")
 			install_suppressor(A)
+			update_overlays()
 			return
 	return 0
 
@@ -105,7 +110,6 @@
 	suppressed = S
 	S.oldsound = fire_sound
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
-	w_class += S.w_class //so pistols do not fit in pockets when suppressed
 	update_icon()
 
 /obj/item/gun/ballistic/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -117,7 +121,6 @@
 			to_chat(user, "<span class='notice'>You unscrew [suppressed] from [src].</span>")
 			user.put_in_hands(suppressed)
 			fire_sound = S.oldsound
-			w_class -= S.w_class
 			suppressed = null
 			update_icon()
 			return
