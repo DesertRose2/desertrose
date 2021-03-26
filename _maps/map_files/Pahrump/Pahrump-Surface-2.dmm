@@ -12543,10 +12543,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"jbR" = (
-/obj/structure/simple_door/interior,
-/turf/closed/wall/f13/wood/house,
-/area/f13/brotherhood)
 "jbV" = (
 /obj/structure/chair/wood/modern{
 	dir = 4;
@@ -70614,7 +70610,7 @@ tJA
 hqb
 rXU
 rXU
-jbR
+huY
 dsD
 dsD
 mMy
