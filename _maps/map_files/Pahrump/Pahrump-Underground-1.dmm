@@ -413,6 +413,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood)
+"ayF" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/brotherhood)
 "ayH" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -3026,14 +3032,13 @@
 	},
 /area/f13/bunker)
 "dlT" = (
-/obj/machinery/door/poddoor/gate{
-	icon_state = "open";
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor/gate/preopen{
 	id = "boscheckpoint";
 	name = "Checkpoint";
-	req_access_txt = "120";
+	req_one_access = "120";
 	req_one_access_txt = "120"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood)
 "dmp" = (
@@ -4136,8 +4141,13 @@
 /area/f13/tunnel)
 "efw" = (
 /obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "boscheckpoint";
+	name = "Research Checkpoint Button";
+	pixel_x = 11;
+	pixel_y = 22
+	},
 /obj/structure/window/reinforced{
-	color = "#3e3d42";
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -5580,6 +5590,13 @@
 /obj/structure/chalkboard,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"fQp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/brotherhood)
 "fQG" = (
 /obj/structure/lattice/catwalk/clockwork,
 /turf/open/floor/bronze{
@@ -5776,6 +5793,12 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood)
+"gdM" = (
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/brotherhood)
 "geb" = (
@@ -11309,11 +11332,11 @@
 /turf/open/floor/wood,
 /area/f13/brotherhood)
 "lzS" = (
-/obj/machinery/ore_silo,
 /obj/structure/sign/poster/prewar/poster94{
 	icon_state = "poster70";
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "engine"
 	},
@@ -11464,6 +11487,10 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/brotherhood)
+"lIV" = (
+/obj/machinery/ore_silo,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "lKa" = (
 /obj/item/multitool,
@@ -12609,10 +12636,12 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/tunnel)
 "mTt" = (
-/obj/machinery/suit_storage_unit/mining,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "neutralrustyfull"
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
 	},
 /area/f13/brotherhood)
 "mTv" = (
@@ -18012,6 +18041,9 @@
 "ttW" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
 	},
@@ -85310,8 +85342,8 @@ kIJ
 gsT
 txh
 jZH
-lBg
-lBg
+fQp
+fQp
 muD
 muD
 nzb
@@ -85507,7 +85539,7 @@ dur
 bFi
 dYf
 dZz
-oZm
+mTt
 uvD
 uvD
 eqw
@@ -86083,10 +86115,10 @@ lbi
 jZH
 lFo
 jZH
+mRj
+mRj
 xnb
-mTt
-xnb
-jZH
+ayF
 nOZ
 jZH
 jZH
@@ -86340,11 +86372,11 @@ kWj
 jZH
 lHV
 men
-lBg
-kCo
+fQp
+gdM
 nDK
-jZH
-scG
+lBg
+lIV
 scG
 scG
 oCp
@@ -86598,7 +86630,7 @@ jZH
 jZH
 jZH
 jZH
-jZH
+kCo
 jZH
 jZH
 jZH
