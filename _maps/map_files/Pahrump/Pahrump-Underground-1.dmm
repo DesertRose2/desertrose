@@ -2715,6 +2715,22 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"cTG" = (
+/obj/structure/chair/office/dark{
+	dir = 1;
+	icon_state = "officechair_dark"
+	},
+/obj/machinery/button/door{
+	id = "boscheckpoint";
+	name = "Research Checkpoint Button";
+	pixel_x = -32;
+	pixel_y = 64
+	},
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood)
 "cTM" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "bosdoors";
@@ -10065,6 +10081,12 @@
 	dir = 1;
 	icon_state = "officechair_dark"
 	},
+/obj/machinery/button/door{
+	id = "boscheckpoint";
+	name = "Research Checkpoint Button";
+	pixel_x = 32;
+	pixel_y = 64
+	},
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -13322,6 +13344,12 @@
 	pixel_y = 12
 	},
 /obj/machinery/light/small,
+/obj/machinery/button/door{
+	id = "boscheckpoint";
+	name = "Research Checkpoint Button";
+	pixel_y = -32;
+	req_one_access_txt = "120"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood)
 "nGb" = (
@@ -82507,7 +82535,7 @@ jrn
 otJ
 jQD
 khb
-knk
+cTG
 aVe
 aVe
 rFJ
