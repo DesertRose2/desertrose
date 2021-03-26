@@ -413,12 +413,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood)
-"ayF" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "engine"
-	},
-/area/f13/brotherhood)
 "ayH" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -5606,13 +5600,6 @@
 /obj/structure/chalkboard,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
-"fQp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "engine"
-	},
-/area/f13/brotherhood)
 "fQG" = (
 /obj/structure/lattice/catwalk/clockwork,
 /turf/open/floor/bronze{
@@ -11358,7 +11345,6 @@
 	icon_state = "poster70";
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "engine"
 	},
@@ -85370,8 +85356,8 @@ kIJ
 gsT
 txh
 jZH
-fQp
-fQp
+lBg
+lBg
 muD
 muD
 nzb
@@ -86146,7 +86132,7 @@ jZH
 mRj
 mRj
 xnb
-ayF
+lBg
 nOZ
 jZH
 jZH
@@ -86400,7 +86386,7 @@ kWj
 jZH
 lHV
 men
-fQp
+lBg
 gdM
 nDK
 lBg
