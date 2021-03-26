@@ -21068,7 +21068,6 @@
 	icon_state = "generator_on";
 	name = "superheating forge"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -85815,7 +85814,7 @@ uvD
 uvD
 euI
 mRU
-uvD
+wQz
 jZH
 jZH
 jZH
