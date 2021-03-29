@@ -109,6 +109,12 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
+	name = "Patrol Duster"
+	desc = "(IV) What appears to be an NCR patrol ranger's armor under a green tinted duster. The armor itself looks much more well kept then the duster itself, said duster looking somewhat faded. On the back of the duster, is a symbol of a skull with an arrow piercing through the eye."
+	icon_state = "patrolduster"
+	item_state = "patrolduster"
+
 /obj/item/clothing/suit/armor/f13/exile/legexile
 	name = "modified Legion armor"
 	desc = "(IV) A modified detoriated armor kit consisting of Legion gear and scrap metal."
