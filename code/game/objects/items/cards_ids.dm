@@ -958,14 +958,9 @@
 	icon_state = "ncrdogtagcaptain"
 
 /obj/item/card/id/dogtag/ncrranger
-	name = "ranger badge"
-	desc = "A badge formed out of a Legion denarius that invokes fear in those who see it, belonging to someone with a big iron on their hip."
-	icon_state = "ranger"
-
-/obj/item/card/id/dogtag/ncrvetranger
-	name = "veteran ranger badge"
-	desc = "A badge formed out of a Legion aureus that is worn by the most feared men and women of the Republic."
-	icon_state = "vetranger"
+	name = "ranger tags"
+	desc = "A dog tag that invokes fear in those who see it, belonging to someone with a big iron on their hip."
+	icon_state = "ncrdogtagranger"
 
 /obj/item/card/id/dogtag/ncrcolonel
 	name = "colonel's tags"
@@ -982,49 +977,42 @@
 	name = "auxilia medallion"
 	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a respected auxilia of the Legion."
 	icon_state = "legionmedallionveteran"
-	item_state = "card-id_leg"
 	assignment = "auxilia medallion"
 
 /obj/item/card/id/dogtag/legrecruit
 	name = "recruit medallion"
 	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a recruit."
 	icon_state = "legionmedallionrecruit"
-	item_state = "card-id_leg"
 	assignment = "recruit medallion"
 
 /obj/item/card/id/dogtag/legprime
 	name = "prime medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a prime."
 	icon_state = "legionmedallionprime"
-	item_state = "card-id_leg"
 	assignment = "prime medallion"
 
 /obj/item/card/id/dogtag/legslavemaster
 	name = "slavemaster medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to the dreaded Slavemaster."
 	icon_state = "legionmedallionprime"
-	item_state = "card-id_leg"
 	assignment = "slavemaster medallion"
 
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
 	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran, and reeks of iron."
 	icon_state = "legionmedallionveteran"
-	item_state = "card-id_leg"
 	assignment = "veteran medallion"
 
 /obj/item/card/id/dogtag/legcenturion
 	name = "centurion medallion"
 	desc = "A golden disc awarded to the most fierce men in the whole legion. If you are close enough to read the insignia you won't be alive much longer."
 	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
 /obj/item/card/id/dogtag/legvenator
 	name = "venator medallion"
 	desc = "A golden disc awarded to the elite hunters of the legion. If you are close enough to read the insignia you won't be alive much longer."
 	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
 	assignment = "venator medallion"
 	assignment = "Venator"
 
@@ -1033,14 +1021,15 @@
 	name = "priestess medallion"
 	desc = "A golden disc awarded to the trusted spiritual guide to the nearby Legion."
 	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
+	item_state = "legionmedallioncent"
+	item_color = ""
 	assignment = "priestess medallion"
 
 /obj/item/card/id/dogtag/legorator
 	name = "orator medallion"
 	desc = "A golden disc awarded to the one who is a dedicated ambassador for Caesar's Legion."
 	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
+	item_state = "legionmedallioncent"
 	assignment = "orator medallion"
 
 //For PilotBland's frumentarii custom loadout
@@ -1048,7 +1037,7 @@
 	name = "Remus Amius' frumentarius medallion"
 	desc = "A golden disc with a string threaded through the top, displaying official markings confirming a frumentarius' status."
 	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
+	item_state = "legionmedallioncent"
 	assignment = "frumentarius medallion"
 
 /obj/item/card/id/legionbrand

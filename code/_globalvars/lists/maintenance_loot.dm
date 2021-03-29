@@ -537,10 +537,13 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/storage/fancy/ammobox/lethalshot,
 	/obj/item/gun/ballistic/revolver/m29,
 	/obj/item/ammo_box/m44,
+	/obj/item/gun/ballistic/shotgun/remington/scoped,
 	/obj/item/ammo_box/a308,
+	/obj/item/gun/ballistic/revolver/m29/scoped,
 	/obj/item/ammo_box/m44,
 	/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy,
 	/obj/item/ammo_box/a357,
+	/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped,
 	/obj/item/ammo_box/a357,
 	/obj/item/gun/ballistic/revolver/colt357,
 	/obj/item/ammo_box/a357,
@@ -560,7 +563,7 @@ GLOBAL_LIST_INIT(loot_t3_range, list(
 	/obj/item/gun/ballistic/automatic/mini_uzi,
 	/obj/item/ammo_box/magazine/uzim9mm,
 	/obj/item/gun/ballistic/automatic/smg10mm,
-	/obj/item/ammo_box/magazine/m10mm_adv/ext,
+	/obj/item/ammo_box/magazine/m10mm_auto,
 	/obj/item/gun/ballistic/automatic/greasegun,
 	/obj/item/ammo_box/magazine/greasegun,
 	/obj/item/gun/ballistic/shotgun/trench,
@@ -571,6 +574,7 @@ GLOBAL_LIST_INIT(loot_t3_range, list(
 	/obj/item/ammo_box/needle,
 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail,
 	/obj/item/ammo_box/tube/m44,
+	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped,
 	/obj/item/ammo_box/tube/m44,
 	/obj/item/gun/energy/laser/aer9,
 	/obj/item/stock_parts/cell/ammo/mfc
@@ -593,6 +597,7 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/ammo_box/magazine/m556/rifle,
 	/obj/item/gun/ballistic/shotgun/automatic/hunting/brush,
 	/obj/item/ammo_box/tube/c4570,
+	/obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped,
 	/obj/item/ammo_box/tube/c4570,
 	/obj/item/gun/ballistic/shotgun/antimateriel,
 	/obj/item/ammo_box/a50MG,
@@ -612,7 +617,7 @@ GLOBAL_LIST_INIT(loot_t5_range, list(
 	/obj/item/gun/ballistic/automatic/tommygun,
 	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/gun/energy/laser/scatter,
-	/obj/item/gun/ballistic/revolver/hunting,
+	/obj/item/gun/ballistic/revolver/sequoia/scoped,
 	/obj/item/gun/ballistic/automatic/bozar,
 	/obj/item/gun/energy/gammagun
 ))
@@ -620,7 +625,7 @@ GLOBAL_LIST_INIT(loot_t5_range, list(
 GLOBAL_LIST_INIT(loot_unique_range, list(
 	/obj/item/gun/ballistic/revolver/colt357/lucky,
 	/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
-	/obj/item/gun/ballistic/shotgun/remington/paciencia,
+	/obj/item/gun/ballistic/shotgun/remington/scoped/paciencia,
 	/obj/item/gun/energy/laser/solar,
 	/obj/item/gun/energy/laser/plasma/alien
 ))
@@ -657,7 +662,7 @@ GLOBAL_LIST_INIT(loot_t3_ammo, list(
 	/obj/item/ammo_box/needle,
 	/obj/item/ammo_box/magazine/tommygunm45,
 	/obj/item/ammo_box/tube/m44,
-	/obj/item/ammo_box/magazine/m10mm_adv/ext,
+	/obj/item/ammo_box/magazine/m10mm_auto,
 	/obj/item/stock_parts/cell/ammo/ec
 ))
 
@@ -909,8 +914,7 @@ GLOBAL_LIST_INIT(loot_attachment, list(
 	/obj/item/attachments/scope,
 	/obj/item/attachments/bullet_speed,
 	/obj/item/attachments/burst_improvement,
-	/obj/item/attachments/recoil_decrease,
-	/obj/item/attachments/auto_sear
+	/obj/item/attachments/recoil_decrease
 ))
 
 GLOBAL_LIST_INIT(loot_t1_blueprint, list(

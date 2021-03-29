@@ -43,17 +43,6 @@
 	..()
 	icon_state = "45-[ammo_count() ? "8" : "0"]"
 
-/obj/item/ammo_box/magazine/m45exp
-	name = "socom magazine (.45)"
-	icon_state = "45exp-12"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 12
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m45exp/empty
-	start_empty = 1
-
 /obj/item/ammo_box/magazine/m45/kitchengun
 	name = "handgun magazine (.45 cleaning)"
 	desc = "BANG! BANG! BANG!"
@@ -89,17 +78,6 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/m10mm_adv/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m10mm_adv/ext
-	name = "10mm pistol extended magazine (10mm)"
-	icon_state = "smg10mm"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	caliber = "10mm"
-	max_ammo = 24
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m10mm_adv/ext/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m9mm

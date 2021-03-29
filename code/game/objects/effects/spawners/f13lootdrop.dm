@@ -239,7 +239,6 @@
 				/obj/effect/spawner/bundle/f13/armor/badlands,
 				/obj/effect/spawner/bundle/f13/armor/psycho,
 				/obj/item/clothing/suit/f13/duster,
-				/obj/effect/spawner/bundle/f13/armor/combatduster,
 				/obj/item/clothing/suit/armor/f13/raider/iconoclast
 	)
 
@@ -276,13 +275,6 @@
 	items = list(
 				/obj/item/clothing/suit/armor/f13/raider/badlands,
 				/obj/item/clothing/head/helmet/f13/fiend
-				)
-
-/obj/effect/spawner/bundle/f13/armor/combatduster
-	name = "combat duster raider armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/raider/combatduster,
-				/obj/item/clothing/head/helmet/f13/raidercombathelmet
 				)
 
 /obj/effect/spawner/bundle/f13/armor/psycho
@@ -760,7 +752,7 @@
 	name = "Colt 6520 and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/colt6520,
-				/obj/item/ammo_box/l10mm
+				/obj/item/ammo_box/magazine/m10mm_adv
 				)
 
 /obj/effect/spawner/bundle/f13/varmint
@@ -803,16 +795,17 @@
 	loot = list(
 		/obj/effect/spawner/bundle/f13/huntingshotgun,
 		/obj/effect/spawner/bundle/f13/revolverm29,
-		/obj/effect/spawner/bundle/f13/remington,
+		/obj/effect/spawner/bundle/f13/remingtonscoped,
+		/obj/effect/spawner/bundle/f13/m29scoped,
 		/obj/effect/spawner/bundle/f13/cowboy,
+		/obj/effect/spawner/bundle/f13/cowboy/scoped,
 		/obj/effect/spawner/bundle/f13/colt357,
 		/obj/effect/spawner/bundle/f13/service,
 		/obj/effect/spawner/bundle/f13/miniuzi,
 		/obj/effect/spawner/bundle/f13/laserpistol,
 		/obj/effect/spawner/bundle/f13/m1carbine,
 		/obj/effect/spawner/bundle/f13/commando,
-		/obj/item/gun/ballistic/automatic/smg22,
-		/obj/effect/spawner/bundle/f13/mk23
+		/obj/item/gun/ballistic/automatic/smg22
 	)
 
 /obj/effect/spawner/bundle/f13/huntingshotgun
@@ -829,10 +822,31 @@
 				/obj/item/ammo_box/m44
 				)
 
+/obj/effect/spawner/bundle/f13/remingtonscoped
+	name = "scoped remington shotgun and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/shotgun/remington/scoped,
+				/obj/item/ammo_box/a308
+				)
+
+/obj/effect/spawner/bundle/f13/m29scoped
+	name = "scoped m29 revolver and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/revolver/m29/scoped,
+				/obj/item/ammo_box/m44
+				)
+
 /obj/effect/spawner/bundle/f13/cowboy
 	name = "cowboy repeater and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy,
+				/obj/item/ammo_box/a357
+				)
+
+/obj/effect/spawner/bundle/f13/cowboy/scoped
+	name = "scoped cowboy repeater and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped,
 				/obj/item/ammo_box/a357
 				)
 
@@ -878,13 +892,6 @@
 				/obj/item/ammo_box/magazine/m45
 	)
 
-/obj/effect/spawner/bundle/f13/mk23
-	name = "mk23 and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/pistol/mk23,
-				/obj/item/ammo_box/magazine/m45exp
-	)
-
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 //TIER 3 GUN
 	name = "tier 3 gun"
@@ -896,12 +903,12 @@
 				/obj/effect/spawner/bundle/f13/wattz,
 				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/trail,
+				/obj/effect/spawner/bundle/f13/trail/scoped,
 				/obj/effect/spawner/bundle/f13/revolver44,
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/beretta/select,
 				/obj/effect/spawner/bundle/f13/deagle,
-				/obj/effect/spawner/bundle/f13/neostead,
-				/obj/effect/spawner/bundle/f13/auto5
+				/obj/effect/spawner/bundle/f13/neostead
 				)
 
 /obj/effect/spawner/bundle/f13/miniuzi
@@ -915,7 +922,7 @@
 	name = "10mm SMG and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg10mm,
-				/obj/item/ammo_box/magazine/m10mm_adv/ext
+				/obj/item/ammo_box/magazine/m10mm_auto
 				)
 
 /obj/effect/spawner/bundle/f13/greasegun
@@ -954,6 +961,14 @@
 				/obj/item/ammo_box/tube/m44
 				)
 
+/obj/effect/spawner/bundle/f13/trail/scoped
+	name = "scoped trail carbine and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped,
+				/obj/item/ammo_box/tube/m44
+				)
+
+
 /obj/effect/spawner/bundle/f13/revolver44
 	name = ".44 revolver and ammo spawner"
 	items = list(
@@ -990,14 +1005,6 @@
 				/obj/item/storage/fancy/ammobox/slugshot
 	)
 
-/obj/effect/spawner/bundle/f13/auto5
-	name = "Auto 5 shotgun and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
-				/obj/item/storage/fancy/ammobox/lethalshot,
-				/obj/item/storage/fancy/ammobox/slugshot
-	)
-
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 //TIER 4 GUN
 	name = "tier 4 gun"
 	loot = list(
@@ -1008,6 +1015,7 @@
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/infiltrator,
 				/obj/effect/spawner/bundle/f13/brushgun,
+				/obj/effect/spawner/bundle/f13/brushgun/scoped,
 				/obj/effect/spawner/bundle/f13/ams,
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/riotshotgun,
@@ -1066,6 +1074,13 @@
 				/obj/item/ammo_box/tube/c4570
 				)
 
+/obj/effect/spawner/bundle/f13/brushgun/scoped
+	name = "scoped brush gun and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped,
+				/obj/item/ammo_box/tube/c4570
+				)
+
 /obj/effect/spawner/bundle/f13/ams
 	name = "anti-material shotgun and ammo spawner"
 	items = list(
@@ -1118,7 +1133,7 @@
 				/obj/item/gun/ballistic/automatic/tommygun,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller,
 				/obj/item/gun/energy/laser/scatter,
-				/obj/item/gun/ballistic/revolver/hunting,
+				/obj/item/gun/ballistic/revolver/sequoia/scoped,
 				/obj/item/gun/ballistic/automatic/bozar,
 				/obj/item/gun/energy/gammagun
 				)
@@ -1130,7 +1145,7 @@
 	loot = list(
 				/obj/item/gun/ballistic/revolver/colt357/lucky,
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
-				/obj/item/gun/ballistic/shotgun/remington/paciencia,
+				/obj/item/gun/ballistic/shotgun/remington/scoped/paciencia,
 				/obj/item/gun/energy/laser/solar,
 				/obj/item/gun/energy/laser/plasma/alien
 				)
@@ -1216,7 +1231,7 @@
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/tommygunm45,
 				/obj/item/ammo_box/tube/m44,
-				/obj/item/ammo_box/magazine/m10mm_adv/ext,
+				/obj/item/ammo_box/magazine/m10mm_auto,
 				/obj/item/stock_parts/cell/ammo/ec
 				)
 
@@ -1639,8 +1654,7 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/bullet_speed,
 		/obj/item/attachments/burst_improvement,
-		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/recoil_decrease
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintMid
@@ -1714,7 +1728,6 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/bullet_speed,
 		/obj/item/attachments/burst_improvement,
-		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/recoil_decrease
 	)
 

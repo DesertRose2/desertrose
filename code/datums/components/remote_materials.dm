@@ -15,15 +15,13 @@ handles linking back and forth.
 	var/category
 	var/allow_standalone
 	var/local_size = INFINITY
-	var/datum/callback/after_insert
 
-/datum/component/remote_materials/Initialize(category, mapload, allow_standalone = TRUE, force_connect = FALSE, _after_insert)
+/datum/component/remote_materials/Initialize(category, mapload, allow_standalone = TRUE, force_connect = FALSE)
 	if (!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 
 	src.category = category
 	src.allow_standalone = allow_standalone
-	after_insert = _after_insert
 
 	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, .proc/OnAttackBy)
 
@@ -69,7 +67,7 @@ handles linking back and forth.
 		/datum/material/plastic,
 		)
 
-	mat_container = parent.AddComponent(/datum/component/material_container, allowed_mats, local_size, allowed_types=/obj/item/stack, _after_insert = after_insert)
+	mat_container = parent.AddComponent(/datum/component/material_container, allowed_mats, local_size, allowed_types=/obj/item/stack)
 
 /datum/component/remote_materials/proc/set_local_size(size)
 	local_size = size
@@ -106,7 +104,7 @@ handles linking back and forth.
 			return COMPONENT_NO_AFTERATTACK
 
 	else if (silo && istype(I, /obj/item/stack))
-		if (silo.remote_attackby(parent, user, I, src))
+		if (silo.remote_attackby(parent, user, I))
 			return COMPONENT_NO_AFTERATTACK
 
 /datum/component/remote_materials/proc/on_hold()

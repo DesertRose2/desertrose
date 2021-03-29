@@ -1,14 +1,13 @@
 /obj/item/stack/sheet/animalhide
 	name = "hide"
-	desc = "skin from a beast."
+	desc = "Something went wrong."
 	icon_state = "sheet-hide"
 	item_state = "sheet-hide"
 	novariants = TRUE
 
 /obj/item/stack/sheet/animalhide/human
 	name = "human skin"
-	desc = "hopefully it was cut from a feral ghoul."
-	icon_state = "sheet-humhide"
+	desc = "The by-product of human farming."
 	singular_name = "human skin piece"
 	novariants = FALSE
 	merge_type = /obj/item/stack/sheet/animalhide/human
