@@ -17219,6 +17219,11 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/city)
+"mCS" = (
+/obj/machinery/mineral/wasteland_vendor/special,
+/obj/machinery/mineral/wasteland_vendor/medical,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/building)
 "mDf" = (
 /obj/structure/wreck/trash/machinepiletwo{
 	layer = 3
@@ -20893,6 +20898,11 @@
 	icon_state = "skin"
 	},
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"pts" = (
+/obj/machinery/mineral/wasteland_vendor/general,
+/obj/machinery/mineral/wasteland_vendor/clothing,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "ptP" = (
 /obj/structure/tires/two,
@@ -95375,11 +95385,11 @@ fyf
 fyf
 fyf
 fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+mrq
+pts
+nsE
+mCS
+mrq
 fyf
 fyf
 fyf
@@ -95632,11 +95642,11 @@ fyf
 fyf
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+mrq
+gEr
+sNz
+gEr
+mrq
 gcK
 fyf
 fyf
@@ -95889,11 +95899,11 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+mrq
+mrq
+mrq
+mrq
+mrq
 gcK
 gcK
 fyf
