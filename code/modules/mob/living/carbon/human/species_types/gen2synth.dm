@@ -2,9 +2,10 @@
 	name = "second generation synth"
 	id = "gen2synth"
 	say_mod = "says"
+	limbs_id = "gen2synth"
 	default_color = "F5F5DC"
 	blacklisted = 0
-	sexes = 0
+	sexes = 1
 	inherent_traits = list(TRAIT_EASYDISMEMBER,TRAIT_NO_PROCESS_FOOD,TRAIT_VIRUSIMMUNE,TRAIT_NOLIMBDISABLE,TRAIT_NOHUNGER,TRAIT_NOBREATH)
 	species_traits = list(NOEYES,NOTRANSSTING,HAS_FLESH,HAS_BONE,HAIR,ROBOTIC_LIMBS)
 	hair_alpha = 210

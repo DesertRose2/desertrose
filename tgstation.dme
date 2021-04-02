@@ -15,6 +15,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\shuttles\arrival_cog.dmm"
 #include "_maps\templates\dungeons\dungeons.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
@@ -2647,6 +2648,7 @@
 #include "code\modules\mob\living\carbon\human\species_types\podpeople.dm"
 #include "code\modules\mob\living\carbon\human\species_types\shadowpeople.dm"
 #include "code\modules\mob\living\carbon\human\species_types\skeletons.dm"
+#include "code\modules\mob\living\carbon\human\species_types\supermutant.dm"
 #include "code\modules\mob\living\carbon\human\species_types\synthliz.dm"
 #include "code\modules\mob\living\carbon\human\species_types\synths.dm"
 #include "code\modules\mob\living\carbon\human\species_types\vampire.dm"
