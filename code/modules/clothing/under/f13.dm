@@ -35,6 +35,13 @@
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
+/obj/item/clothing/under/f13/vaultmutie
+	name = "torn vault 113 jumpsuit"
+	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
+	icon_state = "mutie_vault_jumspuit"
+	item_state = "mutie_vault_jumspuit"
+
+
 //NCR
 
 /obj/item/clothing/under/f13/ncr
@@ -129,6 +136,18 @@
 	icon_state = "settler"
 	item_state = "settler"
 	item_color = "settler"
+
+/obj/item/clothing/under/f13/mutieshorts
+	name = "large torn shorts"
+	desc = "An incredibly damaged pair of shorts, large enough to fit a super mutant."
+	icon_state = "mutie_shorts"
+	item_state = "mutie_shorts"
+
+/obj/item/clothing/under/f13/mutiesanta
+	name = "red and white jumspuit"
+	desc = "A fairly damaged red and white shirt with matching shorts, large enough to fit a super mutant."
+	icon_state = "mutie_santa"
+	item_state = "mutie_santa"
 
 //The City
 

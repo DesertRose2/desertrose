@@ -758,3 +758,29 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "recon_armor"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
+
+//Super Mutant armours
+/obj/item/clothing/suit/armor/f13/mutieponcho
+	name = "super mutant poncho"
+	desc = "(III) A poncho sized roughly for a super mutant, paired with a pair of bracers. Is that a road sign?"
+	icon_state = "mutie_poncho"
+	item_state = "mutie_poncho"
+	armor = list("tier" = 3, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 0, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutiemetal
+	name = "super mutant armor"
+	desc = "(IV) A set of plates and leather straps formed together to form a crude set of armour."
+	icon_state = "mutie_metal_armour"
+	item_state = "mutie_metal_armour"
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 0, "fire" = 60, "acid" = 0)
+	slowdown = 0.25
+	strip_delay = 10
+
+/obj/item/clothing/suit/armor/f13/mutiemetal/reinforced
+	name = "reinforced super mutant armor"
+	desc = "(V) A boiler plate, and metal a series of metal plates and smaller leather straps formed together to form a rather crude armour set."
+	icon_state = "mutie_metal_armour_mk2"
+	item_state = "mutie_metal_armour_mk2"
+	armor = list("tier" = 5, "energy" = 50, "bomb" = 50, "bio" = 30, "rad" = 0, "fire" = 60, "acid" = 0)
+	slowdown = 0.25
+	strip_delay = 10

@@ -316,6 +316,12 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/ncrarmor/mutie
+	name = "super mutant patrol vest"
+	desc = "(IV) NCR Infantry body armour patched together to fit a super mutant paired with a bracer for protection in close quarters against melee targets."
+	icon_state = "mutie_ncr"
+	item_state = "mutie_ncr"
+
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	name = "NCR mantle vest"
 	desc = "(V) A standard issue NCR Infantry vest with a mantle on the shoulder."
