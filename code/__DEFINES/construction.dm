@@ -80,6 +80,7 @@
 #define CAT_PRIMAL  "Tribal"
 #define CAT_CLOTHING	"Clothing"
 #define CAT_FOOD	"Foods"
+#define CAT_WASTEFOOD	"Wasteland Foods"
 #define CAT_BREAD	"Breads"
 #define CAT_BURGER	"Burgers"
 #define CAT_CAKE	"Cakes"
