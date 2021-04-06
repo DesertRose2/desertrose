@@ -80,10 +80,10 @@
 /datum/crafting_recipe/food/squirrelstew
 	name = "Squirrel Stew"
 	reqs = list(
-    	/obj/item/reagent_containers/food/snacks/meat/steak/squirrel = 1,
-    	/obj/item/reagent_containers/food/snacks/grown/carrot = 1,
-    	/obj/item/reagent_containers/food/snacks/grown/potato = 1,
-    	/obj/item/reagent_containers/glass/bowl = 1
+		/obj/item/reagent_containers/food/snacks/meat/steak/squirrel = 1,
+		/obj/item/reagent_containers/food/snacks/grown/carrot = 1,
+		/obj/item/reagent_containers/food/snacks/grown/potato = 1,
+		/obj/item/reagent_containers/glass/bowl = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/squirrelstew
 	category = CAT_FOOD
