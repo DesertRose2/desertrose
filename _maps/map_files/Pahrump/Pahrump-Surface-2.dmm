@@ -3323,8 +3323,7 @@
 /area/f13/village)
 "cBh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/machinery/autolathe/ammo,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cBB" = (
@@ -6981,6 +6980,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/city)
+"frv" = (
+/obj/machinery/workbench/forge,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "frx" = (
 /obj/structure/fence{
 	dir = 4
@@ -16345,6 +16348,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"lTP" = (
+/mob/living/simple_animal/pet/cat/custom_cat{
+	desc = "Despite the name on the collar, it does not seem to be an ocelot.";
+	name = "Ocelot"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
 "lTT" = (
 /obj/structure/closet/crate/miningcar,
 /turf/open/indestructible/ground/outside/dirt{
@@ -84777,7 +84787,7 @@ gcK
 gcK
 mTd
 kxK
-kjR
+lTP
 ggK
 ggK
 sYX
@@ -89173,7 +89183,7 @@ aVg
 wkH
 vcM
 vcM
-rpu
+frv
 sYX
 ktB
 gcK
