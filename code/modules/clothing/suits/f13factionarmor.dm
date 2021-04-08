@@ -446,6 +446,7 @@
 	name = "ranger rig"
 	desc = "A handmade tactical rig, with a water flask and two ammo pouches. On the straps, you can see a knife and a radio. Its a light black, fiberous cloth, with a dusty belt at around the waist."
 	icon_state = "ranger_rig"
+	item_state = "ranger_rig"
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
