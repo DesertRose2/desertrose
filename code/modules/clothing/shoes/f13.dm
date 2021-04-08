@@ -153,3 +153,8 @@
 	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 0, acid = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+
+/obj/item/clothing/shoes/f13/erinboots
+	name = "Desert boots"
+	desc = "A pair of laced, heavy-duty leather boots designed for hard combat. This one has had some adjustments made to it, featuring padded insoles and a overall better fit."
+	icon_state = "r_desert_boots"

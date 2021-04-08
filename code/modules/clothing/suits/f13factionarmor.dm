@@ -442,6 +442,11 @@
 	icon_state = "thaxarmor"
 	item_state = "thaxarmor"
 
+/obj/item/clothing/suit/armor/f13/rangerrecon/erin
+	name = "ranger rig"
+	desc = "A handmade tactical rig, with a water flask and two ammo pouches. On the straps, you can see a knife and a radio. Its a light black, fiberous cloth, with a dusty belt at around the waist."
+	icon_state = "ranger_rig"
+
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
 	desc = "(VII) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."

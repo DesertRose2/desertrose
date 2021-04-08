@@ -197,6 +197,11 @@
 	item_state = "modif_ranger"
 	item_color = "modif_ranger"
 
+/obj/item/clothing/under/f13/ranger/erinunder
+	name = "heavy desert pants"
+	desc = "A pair of heavy, somewhat reinforced Pre-War desert BDUs. It seems to have had some modifications onto it, a brace on the right knee, most noticeably."
+	icon_state = "r_desert_pants"
+
 /obj/item/clothing/under/f13/rustic
 	name = "rustic outfit"
 	desc = "Simple rustic clothes for your day to day life in the wastes."
