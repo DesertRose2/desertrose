@@ -566,10 +566,28 @@
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault
 	name = "command coat"
-	desc = "(III) A heavy pre-war bomber coat, dyed blue with the number '113' embroidered on the back. Most often worn by leaders, such as the Overseer."
+	desc = "(III) A heavy pre-war bomber coat, dyed blue with embroiderey on the back. Most often worn by leaders."
 	icon_state = "vault_commandcoat"
 	item_state = "vault_commandcoat"
-	armor = list("tier" = 3)
+	armor = list("tier" = 3, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
+	name = "Overseer's command coat"
+	desc = "(III) A heavy pre-war bomber coat, dyed blue with the Vault-Tec embroidered on the back. Worn by the Overseer of the Vault-Tec City Coalition."
+	icon_state = "overseer_commandcoat"
+	item_state = "overseer_commandcoat"
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
+	name = "Marhsal's command coat"
+	desc = "(III) A heavy pre-war bomber coat, dyed blue with the Vault-Tec embroidered on the back. Worn by the Marshals of the Vault-Tec City Coalition."
+	icon_state = "marshal_commandcoat"
+	item_state = "marshal_commandcoat"
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
+	name = "Overseer's command coat"
+	icon_state = "armouredvault_commandcoat"
+	item_state = "armouredvault_commandcoat"
+	armor = list("tier" = 4, "energy" = 50, "bomb" = 50, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
