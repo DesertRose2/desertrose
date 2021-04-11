@@ -40,7 +40,7 @@
 	resistance_flags = FLAMMABLE
 	var/flavor_desc =	"A standard Nuka-Cola bottle cap featuring 21 crimps and ridges,\
 					A common unit of exchange, backed by water in the Hub."
-	Value = CASH_CAP
+	caps_value = CASH_CAP
 	var/flippable = TRUE
 	var/cooldown = 0
 	var/coinflip
@@ -80,7 +80,7 @@
 	desc = "It's worth [total_worth] [singular_name][ (latin) ? (( amount > 1 ) ? "i" : "us") : (( amount > 1 ) ? "s each" : "")].\n[flavor_desc]"
 */
 /obj/item/stack/f13Cash/get_item_credit_value()
-	return (amount*Value)
+	return (amount*caps_value)
 
 /obj/item/stack/f13Cash/merge(obj/item/stack/S)
 	. = ..()
@@ -149,7 +149,7 @@
 	flavor_desc =	"The inscriptions are in Latin,\n\
 		'Caesar Dictator' on the front and\n\
 		'Magnum Chasma' on the back."
-	Value = CASH_DEN * CASH_CAP
+	caps_value = CASH_DEN * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/denarius
 
 /obj/item/stack/f13Cash/random/denarius
@@ -188,7 +188,7 @@
 	flavor_desc = 	"The inscriptions are in Latin,\n\
 					'Aeternit Imperi' on the front and\n\
 					'Pax Per Bellum' on the back."
-	Value = CASH_AUR * CASH_CAP
+	caps_value = CASH_AUR * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/aureus
 
 /obj/item/stack/f13Cash/random/aureus
@@ -212,7 +212,7 @@
 	flavor_desc = "Paper money used by the NCR."
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "ncr" /* 10 points to whoever writes flavour text for each bill */
-	Value = CASH_NCR * CASH_CAP
+	caps_value = CASH_NCR * CASH_CAP
 	flippable = FALSE
 	merge_type = /obj/item/stack/f13Cash/ncr
 

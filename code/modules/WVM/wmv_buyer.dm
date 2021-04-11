@@ -24,20 +24,20 @@
 	if(istype(I, /obj/item/stack/f13Cash/caps))
 		to_chat(usr, "<span class='warning'>You can't sell caps for caps.</span>")
 		return
-	if(!I.Value)
+	if(!I.caps_value)
 		to_chat(usr, "<span class='warning'>[I] has no value.</span>")
 		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 0)
 		return
-	if(I.Value < 1)
+	if(I.caps_value < 1)
 		to_chat(usr, "<span class='warning'>The value of [I] is worth less than one cap. Aborting.</span>")
 		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 0)
 		return
 	var/M = 0
 	if(istype(I, /obj/item/stack))
 		var/obj/item/stack/S = I
-		M = round(S.amount * S.Value)
+		M = round(S.amount * S.caps_value)
 	else
-		M = I.Value
+		M = I.caps_value
 	to_chat(usr, "<span class='notice'>[I] was sold for; [M] caps.</span>")
 	playsound(src, 'sound/items/coinflip.ogg', 60, 1)
 	var/obj/item/stack/f13Cash/caps/C = new /obj/item/stack/f13Cash/caps (src.loc)

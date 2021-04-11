@@ -312,7 +312,7 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
-	Value = 15
+	caps_value = 15
 
 /obj/item/hypospray/mkii/Initialize()
 	. = ..()

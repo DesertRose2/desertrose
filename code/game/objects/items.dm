@@ -157,7 +157,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	var/canMouseDown = FALSE
 
-	var/Value = 0 //For purposes of selling things at the wasteland vendor
+	var/caps_value = 0 //For purposes of selling things at the wasteland vendor
 
 /obj/item/Initialize()
 
@@ -269,13 +269,13 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/datum/block_parry_data/data = return_block_parry_datum(block_parry_data)
 		. += "[src] has the capacity to be used to block and/or parry. <a href='?src=[REF(data)];name=[name];block=[item_flags & ITEM_CAN_BLOCK];parry=[item_flags & ITEM_CAN_PARRY];render=1'>\[Show Stats\]</a>"
 
-	if(Value)
+	if(caps_value)
 		if(istype(src, /obj/item/stack))
 			var/obj/item/stack/S = src
-			var/M = S.Value * S.amount
+			var/M = S.caps_value * S.amount
 			. += "<font color='blue'>Value: [M] caps total</font>"
 		else
-			. += "<font color='blue'>Value: [Value] caps</font>"
+			. += "<font color='blue'>Value: [caps_value] caps</font>"
 
 	if(!user.research_scanner)
 		return

@@ -49,7 +49,7 @@
 	desc = "A highly addictive meta-amphetamine that produces a fast-acting, intense euphoric high on the user."
 	list_reagents = list(/datum/reagent/drug/jet = 10)
 	icon_state = "bandaid_jet"
-	Value = 5
+	caps_value = 5
 
 /obj/item/reagent_containers/pill/patch/turbo
 	name = "Turbo"

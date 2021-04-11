@@ -20,7 +20,8 @@
 	icon = 'icons/fallout/objects/crafting.dmi'
 	item_state = "null"
 	w_class = WEIGHT_CLASS_TINY
-	Value = 10
+	caps_value = 10
+
 /obj/item/crafting/diode
 	name = "diode"
 	desc = "It looks like something I saw in that useless broken television set once.<br>That thing is probably used in some electronic devices."
@@ -109,7 +110,7 @@
 	name = "duct tape"
 	desc = "A pinnacle of engineering - it fixes everything!"
 	icon_state = "duct_tape"
-	Value = 30 //Jackpot
+	caps_value = 30 //Jackpot
 
 /obj/item/crafting/coffee_pot
 	name = "coffeepot"
@@ -139,14 +140,15 @@
 	name = "abraxo"
 	desc = "A pre-War cleaning agent produced by Abraxodyne Chemical."
 	icon_state = "abraxo"
-	Value = 8
+	caps_value = 8
 
 /obj/item/crafting/reloader
 	name = "makeshift reloader"
 	desc = "This device allows you to hand-craft your own gun rounds using certain raw materials."
 	icon_state = "reloader"
 	tool_behaviour = TOOL_MSRELOADER
-	Value = 20
+	caps_value = 20
+
 /obj/item/crafting/igniter
 	name = "igniter"
 	desc = "A small electronic device able to ignite combustable substances."

@@ -71,7 +71,7 @@
 	custom_materials = list(/datum/material/uranium=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/uranium
 	merge_type = /obj/item/stack/ore/uranium
-	Value = 15
+	caps_value = 15
 
 /obj/item/stack/ore/iron
 	name = "iron ore"
@@ -82,7 +82,7 @@
 	custom_materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/metal
 	merge_type = /obj/item/stack/ore/iron
-	Value = 1
+	caps_value = 1
 
 /obj/item/stack/ore/lead
 	name = "lead ore"
@@ -114,7 +114,7 @@
 	merge_type = /obj/item/stack/ore/blackpowder
 	custom_materials = list(/datum/material/blackpowder=MINERAL_MATERIAL_AMOUNT)
 	w_class = WEIGHT_CLASS_TINY
-	Value = 5
+	caps_value = 5
 
 /obj/item/stack/ore/blackpowder/fifty
 	amount = 50
@@ -193,7 +193,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/plasma=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/plasma
 	merge_type = /obj/item/stack/ore/plasma
-	Value = 3
+	caps_value = 3
 
 /obj/item/stack/ore/plasma/welder_act(mob/living/user, obj/item/I)
 	to_chat(user, "<span class='warning'>You can't hit a high enough temperature to smelt [src] properly!</span>")
@@ -208,7 +208,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/silver=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/silver
 	merge_type = /obj/item/stack/ore/silver
-	Value = 7
+	caps_value = 7
 
 /obj/item/stack/ore/gold
 	name = "gold ore"
@@ -219,7 +219,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/gold=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/gold
 	merge_type = /obj/item/stack/ore/gold
-	Value = 15
+	caps_value = 15
 
 /obj/item/stack/ore/diamond
 	name = "diamond ore"
@@ -230,7 +230,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/diamond=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/diamond
 	merge_type = /obj/item/stack/ore/diamond
-	Value = 20
+	caps_value = 20
 
 /obj/item/stack/ore/bananium
 	name = "bananium ore"
@@ -241,7 +241,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/bananium=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/bananium
 	merge_type = /obj/item/stack/ore/bananium
-	Value = 10
+	caps_value = 10
 
 /obj/item/stack/ore/titanium
 	name = "titanium ore"
@@ -252,7 +252,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/titanium=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/titanium
 	merge_type = /obj/item/stack/ore/titanium
-	Value = 10
+	caps_value = 10
 
 /obj/item/stack/ore/slag
 	name = "slag"
