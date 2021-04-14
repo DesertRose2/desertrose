@@ -269,12 +269,12 @@
 	locked = TRUE
 
 /datum/quirk/master_gunsmith
-	name = "Master Gunsmith"
-	desc = "You're a master gunsmith, able to make weapons of previously unseen power."
+	name = "Master Tinkerer"
+	desc = "You're a master tinkerer, able to tinker extensively with weapons and armor."
 	value = 3
 	mob_trait = TRAIT_MASTER_GUNSMITH
-	gain_text = "<span class='notice'>You realize how to make great weapons.</span>"
-	lose_text = "<span class='danger'>You forget how to make weapons.</span>"
+	gain_text = "<span class='notice'>You realize how to tinker with armor and weaponry.</span>"
+	lose_text = "<span class='danger'>You forget how to tinker.</span>"
 	locked = TRUE
 
 /datum/quirk/hard_yards
@@ -320,3 +320,30 @@
 	mob_trait = TRAIT_LIGHT_STEP
 	gain_text = "<span class='notice'>You walk with a little more litheness.</span>"
 	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
+
+/datum/quirk/surgerylow
+	name = "Minor Surgery"
+	desc = "You are a somewhat adequate medical practicioner, capable of performing minor surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_LOW
+	gain_text = "<span class='notice'>You feel yourself discovering the basics of the human body.</span>"
+	lose_text = "<span class='danger'>You forget how to perform even the simplest surgery.</span>"
+	locked = TRUE
+
+/datum/quirk/surgerymid
+	name = "Intermediate Surgery"
+	desc = "You are a skilled medical practicioner, capable of performing most surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_MID
+	gain_text = "<span class='notice'>You feel yourself discovering most of the details of the human body.</span>"
+	lose_text = "<span class='danger'>You forget how to perform surgery.</span>"
+	locked = TRUE
+
+/datum/quirk/surgeryhigh
+	name = "Complex Surgery"
+	desc = "You are an expert practicioner, capable of performing almost all surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_HIGH
+	gain_text = "<span class='notice'>You feel yourself discovering the most intricate secrets of the human body.</span>"
+	lose_text = "<span class='danger'>You forget your advanced surgical knowledge.</span>"
+	locked = TRUE
