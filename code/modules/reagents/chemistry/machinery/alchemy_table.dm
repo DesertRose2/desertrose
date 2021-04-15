@@ -1,5 +1,5 @@
 /obj/machinery/alchemy_table
-	name = "Alchemy table"
+	name = "alchemy table"
 	desc = "A wooden table with various bone mortars and pistles, as well as other tools."
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
