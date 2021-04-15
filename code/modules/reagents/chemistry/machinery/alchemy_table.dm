@@ -5,7 +5,7 @@
 	layer = BELOW_OBJ_LAYER
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "alchemy_table"
-	use_power = IDLE_POWER_USE
+	use_power = NO_POWER_USE
 	idle_power_usage = 5
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	
