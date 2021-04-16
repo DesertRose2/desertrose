@@ -55,17 +55,19 @@
 // 12.7mm
 /obj/item/projectile/bullet/a127mm
 	name = "12.7mm FMJ bullet"
-	damage = 55
-	armour_penetration = 0.35
+	damage = 30 //55
+	armour_penetration = 0.4 // 0.35
 	wound_bonus = 28
 	bare_wound_bonus = -28
-
+	pixels_per_second = TILES_TO_PIXELS(100)
+	
 /obj/item/projectile/bullet/a127mm/jhp
 	name = "12.7mm JHP bullet"
-	damage = 66
+	damage = 43 //66
 	armour_penetration = -1
 	wound_bonus = -56
 	bare_wound_bonus = 56
+	pixels_per_second = TILES_TO_PIXELS(100)
 
 // 22 long rifle (lmao)
 /obj/item/projectile/bullet/c22
