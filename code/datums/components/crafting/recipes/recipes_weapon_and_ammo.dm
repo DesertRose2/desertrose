@@ -899,7 +899,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	
-/ballistic/automatic/pistol/pistol127
+/datum/crafting_recipe/pistol127
 	reqs = list(/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/conductors  = 1,
 				/obj/item/advanced_crafting_components/flux = 1,
