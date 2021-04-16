@@ -605,6 +605,7 @@
 	icon_state = "gab4"
 	oneuse = TRUE
 	remarks = list("Always keep your gun well lubricated...", "Keep your barrel free of grime...", "Perfect fitment is the key to a good firearm...", "Maintain a proper trigger pull length...", "Keep your sights zeroed to proper range...")
+	crafting_recipe_types = list(/datum/crafting_recipe/pistol127, /datum/crafting_recipe/berettaauto, /datum/crafting_recipe/huntingrevolver)
 	//crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys)
 
 // New Blueprints, yay! -Superballs
@@ -871,7 +872,6 @@
 			if("Chemistry")
 				granted_trait = TRAIT_CHEMWHIZ
 				traitname = "chemistry"
-				crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
 			if("Salvager")
 				granted_trait = TRAIT_TECHNOPHREAK
 				traitname = "salvaging"
