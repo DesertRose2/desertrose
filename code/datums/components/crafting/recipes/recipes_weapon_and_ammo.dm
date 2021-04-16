@@ -900,6 +900,8 @@
 	subcategory = CAT_WEAPON
 	
 /datum/crafting_recipe/pistol127
+	name = "12.7mm pistol"
+	result = /obj/item/gun/ballistic/automatic/pistol/pistol127
 	reqs = list(/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/conductors  = 1,
 				/obj/item/advanced_crafting_components/flux = 1,
