@@ -239,6 +239,7 @@ Raider
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pistol127tackit)	
 
 	H.social_faction = "Raiders"
 	H.verbs |= /mob/living/proc/creategang
