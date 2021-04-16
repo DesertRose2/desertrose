@@ -898,6 +898,63 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
+	
+/ballistic/automatic/pistol/pistol127
+	reqs = list(/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/conductors  = 1,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/stack/f13Cash/caps = 400,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/electronicparts = 3,
+				/datum/reagent/blackpowder = 240)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//12.7 pistol tactical
+/datum/crafting_recipe/pistol127tackit
+	name = "12.7mm pistol tactical conversion"
+	result = /obj/item/gun/ballistic/automatic/pistol/pistol127/lildevil
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/datum/reagent/blackpowder = 60,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/gun/ballistic/automatic/pistol/pistol127)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//auto beretta
+/datum/crafting_recipe/berettaauto
+	name = "Automatic Beretta"
+	result = /obj/item/gun/ballistic/automatic/pistol/beretta/automatic
+	reqs = list(/obj/item/attachments/burst_improvement = 1,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
+				/obj/item/stack/f13Cash/caps = 200,
+				/obj/item/stack/crafting/metalparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//hunting revolver
+/datum/crafting_recipe/huntingrevolver
+	name = "Hunting Revolver"
+	result = /obj/item/gun/ballistic/revolver/hunting
+	reqs = list(/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/stack/crafting/metalparts = 10,
+				/datum/reagent/blackpowder = 180)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
 
 //////////////////////////////////
 ///GUN ATTACHMENT/PARTS CRAFTING//
