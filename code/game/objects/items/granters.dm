@@ -871,6 +871,7 @@
 				traitname = "intermediate surgery"
 			if("Chemistry")
 				granted_trait = TRAIT_CHEMWHIZ
+				crafting_recipe_types = list(crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
 				traitname = "chemistry"
 			if("Salvager")
 				granted_trait = TRAIT_TECHNOPHREAK
