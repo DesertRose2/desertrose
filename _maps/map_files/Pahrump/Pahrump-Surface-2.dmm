@@ -25504,6 +25504,10 @@
 	icon_state = "horizontalbottombordertop3"
 	},
 /area/f13/wasteland)
+"sRu" = (
+/obj/structure/anvil/obtainable/basic,
+/turf/open/indestructible/ground/inside/dirt,
+/area/f13/village)
 "sRD" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -43725,7 +43729,7 @@ vPY
 vPY
 vPY
 vPY
-vPY
+cWy
 vPY
 eST
 qFk
@@ -43984,7 +43988,7 @@ vPY
 vPY
 vPY
 vPY
-cWy
+sRu
 qFk
 gcK
 gcK
