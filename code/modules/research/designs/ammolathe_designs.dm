@@ -22,7 +22,7 @@
 	build_path = /obj/item/stack/ore/blackpowder
 	category = list("initial", "Materials")
 	maxstack = 50
-	
+
 /datum/design/ammolathe/titanium
 	name = "Titanium"
 	id = "titanium"
@@ -31,6 +31,13 @@
 	category = list("initial", "Materials")
 	maxstack = 50
 
+/datum/design/ammolathe/uranium
+	name = "Uranium"
+	id = "uranium"
+	materials = list(/datum/material/uranium = 2000)
+	build_path = /obj/item/stack/sheet/mineral/uranium
+	category = list("initial", "Materials")
+	maxstack = 50
 
 /* --Tier 1 Ammo and Magazines-- */
 //Tier 1 Magazines
@@ -332,6 +339,13 @@
 	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	category = list("initial", "Basic Ammo")
 
+/datum/design/ammolathe/ec
+	name = "energy cell"
+	id = "ec-full"
+	build_path = /obj/item/stock_parts/cell/ammo/ec
+	materials = list(/datum/material/iron = 10000, /datum/material/uranium = 1500)
+	category = list("initial", "Basic Ammo")
+
 /* --Tier 3 Ammo and Magazines -- */
 //Tier 3 Magazines
 
@@ -476,6 +490,13 @@
 	build_path = /obj/item/ammo_box/c45/op
 	category = list("initial", "Intermediate Ammo")
 
+/datum/design/ammolathe/mfc
+	name = "microfusion cell"
+	id = "mfc-full"
+	materials = list(/datum/material/iron = 15000, /datum/material/uranium = 3000)
+	build_path = /obj/item/stock_parts/cell/ammo/mfc
+	category = list("initial", "Intermediate Ammo")
+
 /* --Tier 4 Ammo and Magazines-- */
 //Tier 4 Magazines
 /datum/design/ammolathe/mg34mag
@@ -569,4 +590,11 @@
 	id = "a556match"
 	materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3500)
 	build_path = /obj/item/ammo_box/a556/match
+	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/ecp
+	name = "electron charge pack"
+	id = "icell"
+	materials = list(/datum/material/iron = 25000, /datum/material/uranium = 3500)
+	build_path = /obj/item/stock_parts/cell/ammo/ecp
 	category = list("initial", "Advanced Ammo")
