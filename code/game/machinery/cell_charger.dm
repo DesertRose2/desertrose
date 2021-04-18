@@ -33,7 +33,7 @@
 		. += "<span class='notice'>The status display reads: Charge rate at <b>[charge_rate]J</b> per cycle.</span>"
 
 /obj/machinery/cell_charger/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/stock_parts/cell) && !panel_open)
+	if(istype(W, /obj/item/stock_parts/cell) && !panel_open && !istype(W, /obj/item/stock_parts/cell/ammo))
 		if(stat & BROKEN)
 			to_chat(user, "<span class='warning'>[src] is broken!</span>")
 			return
