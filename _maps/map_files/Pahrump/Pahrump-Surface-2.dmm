@@ -25505,7 +25505,7 @@
 	},
 /area/f13/wasteland)
 "sRu" = (
-/obj/structure/anvil/obtainable/basic,
+/obj/structure/anvil,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "sRD" = (
