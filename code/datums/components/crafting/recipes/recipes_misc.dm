@@ -504,6 +504,15 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
+/datum/crafting_recipe/compressedpowder
+	name = "Compressed blackpowder"
+	result = /obj/item/stack/ore/blackpowder
+	time = 5
+	reqs = list(/obj/item/stack/sheet/cloth = 1,
+				/datum/reagent/blackpowder = 50)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
 /datum/crafting_recipe/gold_horn
 	name = "Golden Bike Horn"
 	result = /obj/item/bikehorn/golden
@@ -539,6 +548,24 @@
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/sheet/glass = 5)
 	tools = list(TOOL_SCREWDRIVER,TOOL_WORKBENCH)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
+/datum/crafting_recipe/experimental
+	name = "Tinker"
+	result = /obj/item/experimental
+	time = 30
+	reqs = list(/obj/item/crafting = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WORKBENCH)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
+/datum/crafting_recipe/experimentalinvent
+	name = "Invent"
+	result = /obj/item/invention
+	time = 30
+	reqs = list(/obj/item/crafting = 15)
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 

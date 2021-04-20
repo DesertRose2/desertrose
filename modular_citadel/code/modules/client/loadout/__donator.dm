@@ -59,6 +59,63 @@
 	path = /obj/item/storage/box/large/custom_kit/johnthaxton
 	ckeywhitelist = list("svenja")
 
+/datum/gear/donator/kits/piperrivera
+	name = "Piper Rivera's belongings"
+	path = /obj/item/storage/box/large/custom_kit/piperrivera
+	ckeywhitelist = list("purplepineapple")
+
+/*
+/datum/gear/donator/kits/digger
+	name = "Digger's belongings"
+	path = /obj/item/storage/box/large/custom_kit/digger
+	ckeywhitelist = list("entityatlas")
+*/
+
+/datum/gear/donator/kits/orvencross
+	name = "Orven Cross' belongings"
+	path = /obj/item/storage/box/large/custom_kit/orvencross
+	ckeywhitelist = list("covert0ddity")
+
+/datum/gear/donator/kits/samwebb
+	name ="Sam Webb's belongings"
+	path = /obj/item/storage/box/large/custom_kit/samwebb
+	ckeywhitelist = list("thegreatcoward")
+
+/datum/gear/donator/kits/wolfemerson
+	name = "Wolf Emerson's belonings"
+	path = /obj/item/storage/box/large/custom_kit/wolfemerson
+	ckeywhitelist = list("seabass390")
+
+/datum/gear/donator/kits/donnykennedey
+	name = "Donny Kennedey's belongings"
+	path = /obj/item/storage/box/large/custom_kit/donnykennedey
+	ckeywhitelist = list("panzer1944")
+
+/datum/gear/donator/kits/serisseshata
+	name = "Seris Seshata's belongings"
+	path = /obj/item/storage/box/large/custom_kit/serisseshata
+	ckeywhitelist = list("afroterk")
+
+/datum/gear/donator/kits/vess
+	name = "Vess' belongings"
+	path = /obj/item/modkit/patrolduster
+	ckeywhitelist = list("afroterk")
+
+/datum/gear/donator/kits/tychosiricus
+	name = "Tycho Siricus belongings"
+	path = /obj/item/storage/box/large/custom_kit/tychosiricus
+	ckeywhitelist = list("seabass390")
+
+/datum/gear/donator/kits/yahirpinney
+	name = "Yahir Pinney's belongings"
+	path = /obj/item/storage/box/large/custom_kit/yahirpinney
+	ckeywhitelist = list("murderfox")
+
+/datum/gear/donator/kits/katharinelamb
+	name = "Katharine Lamb's belongings"
+	path = /obj/item/storage/box/large/custom_kit/katharinelamb
+	ckeywhitelist = list("elizabethdame")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -72,6 +129,7 @@
 						"shoi87",
 						"svenja",
 						"panzer1944",
+						"purplepineapple",
 						"topbirb")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -81,7 +139,6 @@
 	path = /obj/item/storage/belt/holster/ranger44
 	ckeywhitelist = list("pilotbland",
 						"poots13",
-						"panzer1944",
 						"nbveh123",
 						"svenja",
 						"idiocityinc",
@@ -91,8 +148,10 @@
 						"usotsukihime",
 						"melarinn",
 						"jackofoak",
-						"purplepineapple",
-						"lynuahsororitas")
+						"muhsollini",
+						"lynuahsororitas",
+						"prawn04",
+						"nokele")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -103,6 +162,8 @@
 						"poots13",
 						"julwaters",
 						"asterixcodix",
+						"panzer1944",
+						"purplepineapple",
 						"edisnij")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -138,7 +199,17 @@
 						"shoi87",
 						"svenja",
 						"panzer1944",
+						"purplepineapple",
 						"topbirb")
+	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+
+/datum/gear/donator/rangersergeantpins
+	name = "Ranger-Sergeant Pins"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/ranger/SGT
+	ckeywhitelist = list("usotsukihime",
+						"seabass390",
+						"panzer1944")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -164,6 +235,7 @@
 						"edisnij",
 						"melarinn",
 						"someonewithapen",
+						"muhsollini",
 						"lynuahsororitas")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -173,7 +245,14 @@
 	path = /obj/item/clothing/under/f13/ncr_formal_uniform/majzirilli
 	ckeywhitelist = list("shoi87")
 	restricted_roles = list("NCR Off-Duty", "NCR Lieutenant", "NCR Colonel", "NCR Captain")
-		
+
+/datum/gear/donator/lacertarex
+	name = "galerum lacertarex"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/modkit/diohelmet
+	ckeywhitelist = list("dioclex")
+	restricted_roles = list("Legion Venator")
+
 ////////////////////////////
 ///Ranger items end here.///
 ////////////////////////////

@@ -50,9 +50,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Head Knight",
 
 	"Legion Centurion",
-	"Legion Orator",
 	"Legion Venator",
-	"Priestess of Mars",
 
 	"Overseer",
 	"Chief of Security",
@@ -87,19 +85,16 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "BoS Off-Duty",
 
 "Legion Centurion",
-"Legion Orator",
 "Legion Venator",
-"Priestess of Mars",
 "Legion Veteran Decanus",
 "Veteran Legionary",
 "Legion Prime Decanus",
 "Prime Legionary",
 "Legion Recruit Decanus",
-"Legion Vexillarius",
 "Legion Scout",
-"Legion Slavemaster",
 "Legion Explorer",
 "Auxilia",
+"Legion Slave",
 
 "Mayor",
 "Sheriff",
@@ -112,9 +107,12 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Chief",
 "Shaman",
 "Head Hunter",
+"Druid",
+"Hunter",
 
 "Followers Administrator",
 "Followers Doctor",
+"Followers Guard",
 
 "Cyborg",
 "Overseer",
@@ -126,8 +124,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
-"Star Paladin",
-"Paladin",
 "Star Knight",
 "Knight",
 "Proctor",
@@ -138,12 +134,11 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Veteran Legionary",
 "Legion Prime Decanus",
 "Prime Legionary",
-"Legion Vexillarius",
 "Legion Recruit Decanus",
 "Legion Scout",
-"Legion Slavemaster",
 "Legion Explorer",
 "Auxilia",
+"Legion Slave",
 
 "Deputy",
 "Shopkeeper",
@@ -151,7 +146,11 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Prospector",
 "Detective",
 
+"Druid",
+"Hunter",
+
 "Followers Doctor",
+"Followers Guard",
 
 "Cyborg",
 "Vault-tec Doctor",
@@ -165,6 +164,12 @@ GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 	"Raider",
 	"Outlaw",
 	"Great Khan" //DA KHANZ, BAY BEEEEEEE
+))
+
+GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(
+	"Head Paladin",
+	"Star Paladin",
+	"Paladin"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
@@ -204,9 +209,7 @@ GLOBAL_LIST_INIT(den_positions, list(
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legion Centurion",
-	"Legion Venator",
-	"Priestess of Mars",
-	"Legion Orator"
+	"Legion Venator"
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
@@ -216,9 +219,7 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Prime Legionary",
 	"Legion Recruit Decanus",
 	"Recruit Legionary",
-	"Legion Vexillarius",
 	"Legion Explorer",
-	"Legion Slavemaster",
 	"Auxilia",
 	"Camp Follower",
 	"Legion Slave"
@@ -226,25 +227,21 @@ GLOBAL_LIST_INIT(legion_positions, list(
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 	"NCR Veteran Ranger",
-	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 	"NCR Ranger",
-	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(ncr_upper_command_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
-	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(ncr_lower_command_positions, list(
 	"NCR Medical Officer",
 	"NCR Sergeant",
 	"NCR Corporal",
-	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(ncr_general_positions, list(
@@ -300,8 +297,10 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 	"Chief",
 	"Shaman",
 	"Head Hunter",
+	"Druid",
 	"Villager",
-	"Hunter"
+	"Hunter",
+	"Spirit-Pledged"
 ))
 
 GLOBAL_LIST_INIT(followers_command_positions, list(
@@ -340,7 +339,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR First Sergeant","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
 
 
 ))

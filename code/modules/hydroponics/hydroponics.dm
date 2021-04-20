@@ -9,7 +9,7 @@
 	idle_power_usage = 0
 	var/waterlevel = 100	//The amount of water in the tray (max 100)
 	var/maxwater = 100		//The maximum amount of water in the tray
-	var/nutridrain = 1      // How many units of nutrient will be drained in the tray
+	var/nutridrain = 0.3      // How many units of nutrient will be drained in the tray //test //lowering it even further
 	var/maxnutri = 10		//The maximum nutrient of water in the tray
 	var/pestlevel = 0		//The amount of pests in the tray (max 10)
 	var/weedlevel = 0		//The amount of weeds in the tray (max 10)
@@ -119,7 +119,7 @@
 			// Nutrients deplete at a constant rate, since new nutrients can boost stats far easier.
 			apply_chemicals(lastuser)
 			if(self_sustaining)
-				reagents.remove_any(min(0.5, nutridrain))
+				reagents.remove_any(min(0.3, nutridrain))
 			else
 				reagents.remove_any(nutridrain)
 
@@ -141,7 +141,7 @@
 
 //Water//////////////////////////////////////////////////////////////////
 			// Drink random amount of water
-			adjustWater(-rand(1,6) / rating)
+			adjustWater(-rand(1,3) / rating)//6
 
 			// If the plant is dry, it loses health pretty fast, unless mushroom
 			if(waterlevel <= 10 && !myseed.get_gene(/datum/plant_gene/trait/plant_type/fungal_metabolism))
@@ -154,7 +154,7 @@
 				adjustHealth(rand(1,2) / rating)
 				if(myseed && prob(myseed.weed_chance))
 					adjustWeeds(myseed.weed_rate)
-				else if(prob(5))  //5 percent chance the weed population will increase
+				else if(prob(2))  //5 percent chance the weed population will increase
 					adjustWeeds(1 / rating)
 
 //Toxins/////////////////////////////////////////////////////////////////
@@ -230,7 +230,7 @@
 			if(prob(5))  // On each tick, there's a 5 percent chance the pest population will increase
 				adjustPests(1 / rating)
 		else
-			if(waterlevel > 10 && reagents.total_volume > 0 && prob(10))  // If there's no plant, the percentage chance is 10%
+			if(waterlevel > 10 && reagents.total_volume > 0 && prob(3))  // If there's no plant, the percentage chance is 10% // Nerfing down to 3%
 				adjustWeeds(1 / rating)
 
 		// Weeeeeeeeeeeeeeedddssss
@@ -326,8 +326,95 @@
 		to_chat(user, "<span class='warning'>It's filled with tiny worms!</span>")
 	to_chat(user, "" )
 
-
-
+// Examining more a plant will yield a rough estimation of it's stats. 
+// Intended for use by Wayfarer's and Legion to allow their farmers to gauge roughly how it's going.
+/obj/machinery/hydroponics/examine_more(user)
+	if(myseed && (in_range(user, src) || isobserver(user)))
+		to_chat(user, "<span class=info>You examine the plant to get a better view of it's harvest...</span>")
+		switch(src.myseed.potency)	// Check potency
+			if(0 to 20)
+				to_chat(user, "<span class='warning'>The harvest's size is questioned, the fruits are small and insignificant.</span>")
+			if(21 to 40)
+				to_chat(user, "<span class='notice'>The harvest's size is moderate, small but capable of feeding a singular person.</span>")
+			if(41 to 60)
+				to_chat(user, "<span class='notice'>The harvest's size is good, well sized and fit for a family.</span>")
+			if(61 to 80)
+				to_chat(user, "<span class='notice'>The harvest's size is great! It's capable of providing a good feast!</span>")
+			if(81 to 100)
+				to_chat(user, "<span class='nicegreen'>The harvest's size is huge and unmistakable!</span>")
+		switch(src.myseed.yield) 	// Check yield
+			if(0 to 2)
+				to_chat(user, "<span class='warning'>The plant will bear but a few fruits, if any at that.</span>")
+			if(3 to 5)
+				to_chat(user, "<span class='notice'>The plant will bear a handful of fruit at most.</span>")
+			if(5 to 7)
+				to_chat(user, "<span class='notice'>The plant will yield an ample amount.</span>")
+			if(8 to 10)
+				to_chat(user, "<span class='nicegreen'>The plant is high yielding and fertile!</span>")
+		switch(src.myseed.production) // Check production speed
+			if(1 to 3)
+				to_chat(user, "<span class='nicegreen'>The plant'll be ready for harvest within a minute once it's matured!</span>")
+			if(4 to 7)
+				to_chat(user, "<span class='notice'>The plant'll be ready for harvest in around a few minutes after reaching maturation.</span>")
+			if(8 to 10)
+				to_chat(user, "<span class='warning'>The plant's harvest is going to take a while after it's matured.'</span>")
+		switch(src.myseed.endurance)	// Check endurance
+			if(10 to 30)
+				to_chat(user, "<span class='warning'>The plant's endurance is faltering, a breeze is capable of causing it to buckle.</span>")
+			if(31 to 50)
+				to_chat(user, "<span class='notice'>The plant is durable, capable of taking the rough environment for a while.</span>")
+			if(51 to 70)
+				to_chat(user, "<span class='notice'>The plant's fortitude is remarkable, it's able to withstand harsh toxins and stay alive.</span>")
+			if(71 to 90)
+				to_chat(user, "<span class='notice'>The plant's endurance is as solid as an oak!</span>")
+			if(90 to 100)
+				to_chat(user, "<span class='nicegreen'>The plant's endurance is herculean, capable of surviving far longer than any man!</span>")
+		switch(src.myseed.lifespan)		// Checks lifespan
+			if(10 to 30)
+				to_chat(user, "<span class='warning'>The plant's lifespan is counted in minutes, look away, and it will be nevermore.</span>")
+			if(31 to 50)
+				to_chat(user, "<span class='notice'>The plant's lifespan is counted in hours, do not let it go so simply.</span>")
+			if(51 to 70)
+				to_chat(user, "<span class='notice'>The plant's lifespan is counted in days.</span>")
+			if(71 to 90)
+				to_chat(user, "<span class='notice'>The plant's lifepsan is counted in weeks.</span>")
+			if(90 to 100)
+				to_chat(user, "<span class='nicegreen'>The plant's lifespan is forevermore. Treat it well, and it will not abandon you.</span>")
+		switch(src.myseed.instability)
+			if(0 to 20)
+				to_chat(user, "<span class='nicegreen'>The plant's stability is solid, the foundation secure.</span>")
+			if(21 to 40)
+				to_chat(user, "<span class='notice'>The plant's stability is shifting, the harvest uncertain.</span>")
+			if(41 to 60)
+				to_chat(user, "<span class='notice'>The plant's stability is loose, the harvest producing ancient relatives.</span>")
+			if(61 to 80)
+				to_chat(user, "<span class='notice'>The plant's unstable, it actively morphs and tries to push itself to something greater.</span>")
+			if(81 to 100)
+				to_chat(user, "<span class='warning'>The plant's unstable, the earth beneath moans and croaks, roots bend and insidious liquids seep from the skin.</span>")
+		switch(src.myseed.weed_rate)
+			if(0 to 2)
+				to_chat(user, "<span class='nicegreen'>The weed growth around the plant appear to be of a miniscule amount...</span>")
+			if(3 to 5)
+				to_chat(user, "<span class='notice'>The weed growth could overwhelm the plant in a matter of minutes...</span>")
+			if(5 to 7)
+				to_chat(user, "<span class='notice'>The weed growth would in but a few moments overwhelm the plant...</span>")
+			if(8 to 10)
+				to_chat(user, "<span class='warning'>The weed growth could instantly put down the plant..!</span>")
+		switch(src.myseed.weed_chance)
+			if(0 to 20)
+				to_chat(user, "<span class='nicegreen'>... and the chance of the weeds to grow are highly unlikely.</span>")
+			if(21 to 40)
+				to_chat(user, "<span class='notice'>... and there's a coinflip's chance for the weeds to come forth.</span>")
+			if(41 to 60)
+				to_chat(user, "<span class='notice'>... and the weeds are more likely to spew forth than not.</span>")
+			if(61 to 80)
+				to_chat(user, "<span class='notice'>... and the weeds are very likely to come!</span>")
+			if(81 to 100)
+				to_chat(user, "<span class='warning'>... and the weeds will bloom.</span>")
+	else if(!myseed)
+		to_chat(user, "<span class='notice'>... nothing seems to be growing there.</span>")
+	else
+		to_chat(user, "<span class='notice'>... You can't see anything in particular. Maybe you need to get closer to examine it closely?</span>")
 /obj/machinery/hydroponics/proc/weedinvasion() // If a weed growth is sufficient, this happens.
 	dead = 0
 	var/oldPlantName
@@ -697,7 +784,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 /obj/machinery/hydroponics/soil //Not actually hydroponics at all! Honk!
 	name = "soil"
-	desc = "A patch of dirt."
+	desc = "A patch of dirt. <b>Alt-Click</b> to empty the soil's nutrients."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "soil"
 	circuit = null
@@ -722,7 +809,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 /obj/machinery/hydroponics/soil //Not actually hydroponics at all! Honk!
 	name = "soil"
-	desc = "A patch of dirt."
+	desc = "A patch of dirt. <b>Alt-Click</b> to empty the soil's nutrients."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "soil"
 	circuit = null
@@ -747,3 +834,9 @@
 /obj/machinery/hydroponics/soil/crafted
 	waterlevel = 0
 //	nutrilevel = 0
+
+/obj/machinery/hydroponics/soil/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'><b>Alt-Click</b> to empty the tray's nutrients.</span>"
+	if(in_range(user, src) || isobserver(user))
+		. += "<span class='notice'>You might be able to discern a plant's harvest by examining it <b>closer</b>.</span>"

@@ -319,7 +319,7 @@
 	desc = "(VII) The once-marvelous helmet of the T-45d power armor set, repurposed by the Legion into a symbol of its might. It has a large plume of red horse hair across the top of it going horizontally, donoting the rank of Centurion."
 	icon_state = "palacent"
 	item_state = "palacent"
-	armor = list("tier" = 7, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 
 /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
@@ -434,14 +434,28 @@
 	item_state = "ncr_campaign"
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/head/beret/ncr_dresscap
+	name = "NCR peaked cap"
+	desc = "(II) A tan peaked cap with silver pin, designated for enlisted NCRA personnel."
+	icon_state = "ncr_dresscap"
+	item_state = "ncr_dresscap"
+	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_codresscap
+	name = "NCR peaked cap"
+	desc = "(II) A tan peaked cap with golden pin, designated for commissioned NCRA personnel."
+	icon_state = "ncr_codresscap"
+	item_state = "ncr_codresscap"
+	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 //NCR Ranger
 
 /obj/item/clothing/head/beret/ncr_recon_ranger
 	name = "NCR Ranger scout beret"
-	desc = "(III) A brown beret, issued to members of the NCR Recon Rangers."
+	desc = "(IV) A brown beret, issued to members of the NCR Recon Rangers."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
-	armor = list("tier" = 3, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/trailranger
 	name = "NCR trail ranger hat"
@@ -452,10 +466,10 @@
 
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
-	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."
+	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
 	item_state = "drill_hat"
-	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
@@ -522,7 +536,7 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	name = "brotherhood helmet"
-	desc = "(VI) An improved combat helmet, bearing the symbol of the Knights."
+	desc = "(VII) An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -552,6 +566,13 @@
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
+	name = "brotherhood helmet"
+	desc = "(VII) An improved combat helmet, bearing a series of red markings."
+	icon_state = "brotherhood_helmet_outcast"
+	item_state = "brotherhood_helmet_outcast"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/f13/boscap
 	name = "brotherhood formal cap"

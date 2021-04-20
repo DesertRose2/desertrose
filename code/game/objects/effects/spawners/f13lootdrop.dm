@@ -460,8 +460,8 @@
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 59,
 			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 30,
-			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 10,
-			/obj/item/traumapack = 1 //one ring to rule them all
+			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 10
+			///obj/item/traumapack = 1 //one ring to rule them all
 			)
 
 /*	------------------------------------------------
@@ -550,7 +550,8 @@
 				/obj/item/reagent_containers/pill/patch/turbo,
 				/obj/item/reagent_containers/pill/patch/healingpowder,
 				/obj/item/reagent_containers/pill/stimulant,
-				/obj/item/reagent_containers/syringe/medx
+				/obj/item/reagent_containers/syringe/medx,
+				/obj/item/storage/pill_bottle/chem_tin/buffout
 				)
 /*	------------------------------------------------
 	--------------WEAPON SPAWNERS-------------------
@@ -897,7 +898,6 @@
 				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/revolver44,
-				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/beretta/select,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/neostead,
@@ -961,13 +961,6 @@
 				/obj/item/ammo_box/m44
 				)
 
-/obj/effect/spawner/bundle/f13/mp5
-	name = "mp5 and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/mp5,
-				/obj/item/ammo_box/magazine/uzim9mm
-				)
-
 /obj/effect/spawner/bundle/f13/beretta/select
 	name = "select-fire beretta pistol and ammo spawner"
 	items = list(
@@ -1008,12 +1001,12 @@
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/infiltrator,
 				/obj/effect/spawner/bundle/f13/brushgun,
-				/obj/effect/spawner/bundle/f13/ams,
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/riotshotgun,
 				/obj/effect/spawner/bundle/f13/ionrifle,
 				/obj/effect/spawner/bundle/f13/plasmaglock,
 				/obj/item/gun/medbeam,
+				/obj/item/gun/ballistic/automatic/mp5,
 				/obj/effect/spawner/bundle/f13/wattz2k
 	)
 
@@ -1066,13 +1059,6 @@
 				/obj/item/ammo_box/tube/c4570
 				)
 
-/obj/effect/spawner/bundle/f13/ams
-	name = "anti-material shotgun and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/shotgun/antimateriel,
-				/obj/item/ammo_box/a50MG
-				)
-
 /obj/effect/spawner/bundle/f13/rangemaster
 	name = "rangemaster rifle and ammo spawner"
 	items = list(
@@ -1120,7 +1106,8 @@
 				/obj/item/gun/energy/laser/scatter,
 				/obj/item/gun/ballistic/revolver/hunting,
 				/obj/item/gun/ballistic/automatic/bozar,
-				/obj/item/gun/energy/gammagun
+				/obj/item/gun/ballistic/shotgun/antimateriel,
+				/obj/item/gun/energy/laser/aer14
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/unique //UNIQUE GUN
@@ -1128,7 +1115,6 @@
 	lootcount = 1
 
 	loot = list(
-				/obj/item/gun/ballistic/revolver/colt357/lucky,
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/shotgun/remington/paciencia,
 				/obj/item/gun/energy/laser/solar,
@@ -1616,7 +1602,8 @@
 /obj/effect/spawner/lootdrop/f13/traitbooks
 	name = "trait book spawner"
 	lootcount = 1
-	loot = list(/obj/item/book/granter/trait/chemistry = 10,
+	loot = list(/obj/item/book/granter/trait/lowsurgery = 10,
+				/obj/item/book/granter/trait/chemistry = 10,
 				/obj/item/book/granter/trait/trekking = 10,
 				/obj/item/book/granter/trait/pa_wear = 1,
 				/obj/item/book/granter/crafting_recipe/gunsmith_one = 50,
@@ -1718,3 +1705,12 @@
 		/obj/item/attachments/auto_sear
 	)
 
+/obj/effect/spawner/lootdrop/f13/npc_raider
+	name = "loot drop"
+	lootcount = 1
+	lootdoubles = FALSE
+	loot = list(
+		/obj/effect/spawner/bundle/f13/sig,
+		/obj/effect/spawner/bundle/f13/beretta,
+		/obj/effect/spawner/bundle/f13/ninemil
+	)

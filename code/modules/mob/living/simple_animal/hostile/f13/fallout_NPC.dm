@@ -582,9 +582,9 @@
 /obj/effect/mob_spawn/human/corpse/raider
 	name = "Raider"
 	uniform = /obj/item/clothing/under/f13/rag
-	suit = /obj/item/clothing/suit/armor/f13/tribal
-	shoes = /obj/item/clothing/shoes/f13/rag
-	//gloves = /obj/item/clothing/gloves/f13/ncr
+	suit = /obj/item/clothing/suit/armor/f13/raider/iconoclast
+	shoes = /obj/item/clothing/shoes/f13/explorer
+	gloves = /obj/item/clothing/gloves/f13/leather
 	//radio = /obj/item/device/radio/headset
 	//mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/f13/firefighter
@@ -604,7 +604,7 @@
 	minimum_distance = 0
 	melee_damage_lower = 50
 	melee_damage_upper = 50
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider, /obj/item/twohanded/fireaxe)
 	healable = 1
 	ranged = 0
 
@@ -617,18 +617,18 @@
 	minimum_distance = 0
 	melee_damage_lower = 40
 	melee_damage_upper = 40
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/tribal)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/tribal, /obj/item/twohanded/spear)
 	healable = 1
 	ranged = 0
 
 /obj/effect/mob_spawn/human/corpse/raider/tribal
-	uniform = /obj/item/clothing/under/f13/rag
-	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	suit = /obj/item/clothing/suit/armor/f13/tribal
 	shoes = /obj/item/clothing/shoes/f13/rag
 	//gloves = /obj/item/clothing/gloves/f13/doom
 	//radio = /obj/item/device/radio/headset
-	//mask = /obj/item/clothing/mask/gas
-	head = /obj/item/clothing/head/f13/headscarf
+	mask = /obj/item/clothing/mask/facewrap
+	head = /obj/item/clothing/head/helmet/f13/fiend
 	//back = /obj/item/weapon/storage/backpack
 
 /mob/living/simple_animal/hostile/raider/baseball
@@ -642,15 +642,15 @@
 	melee_damage_upper = 40
 	maxHealth = 200
 	health = 200
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/baseball)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/baseball, /obj/item/twohanded/baseball)
 	healable = 1
 	ranged = 0
 
 /obj/effect/mob_spawn/human/corpse/raider/baseball
-	uniform = /obj/item/clothing/under/f13/rag
+	uniform = /obj/item/clothing/under/f13/mechanic
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
-	shoes = /obj/item/clothing/shoes/f13/rag
-	//gloves = /obj/item/clothing/gloves/f13/doom
+	shoes = /obj/item/clothing/shoes/f13/explorer
+	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	//radio = /obj/item/device/radio/headset
 	//mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
@@ -667,22 +667,20 @@
 	melee_damage_upper = 20
 	maxHealth = 200
 	health = 200
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/biker)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/biker, /obj/item/gun/ballistic/revolver/thatgun)
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/bullet/m44/simple
+	projectiletype = /obj/item/projectile/bullet/a556/match
 	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
-	casingtype = /obj/item/ammo_casing/m44
+	casingtype = /obj/item/ammo_casing/a556
 
 /obj/effect/mob_spawn/human/corpse/raider/biker
-	uniform = /obj/item/clothing/under/f13/rag
-	suit = /obj/item/clothing/suit/armor/f13/slam
-	shoes = /obj/item/clothing/shoes/f13/rag
-	//gloves = /obj/item/clothing/gloves/f13/doom
-	//radio = /obj/item/device/radio/headset
-	//mask = /obj/item/clothing/mask/gas
-	head = /obj/item/clothing/head/helmet/f13/motorcycle
-	//back = /obj/item/weapon/storage/backpack
+	uniform = /obj/item/clothing/under/f13/ncrcf
+	suit = /obj/item/clothing/suit/armor/f13/combatrusted
+	shoes = /obj/item/clothing/shoes/f13/explorer
+	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
+	head = /obj/item/clothing/head/helmet/f13/raidercombathelmet
+	neck = /obj/item/clothing/neck/cloak
 
 /mob/living/simple_animal/hostile/abomination
 	name = "abomination"
@@ -752,3 +750,35 @@
 	speed = -0.5
 	var/static/list/abom_sounds
 	deathmessage = "wails as its form shudders and violently comes to a stop."
+
+/mob/living/simple_animal/hostile/abomhorror/nsb
+	maxHealth = 1000
+	health = 1000
+	desc = "A terrible fusion of man, animal, and something else entirely. It looks to be in great pain, constantly shuddering violently and seeming relatively docile to the robots and raiders of the bunker. Huh."
+	harm_intent_damage = 8
+	melee_damage_lower = 60
+	melee_damage_upper = 70
+	obj_damage = 300
+	faction = list("raider")
+	wound_bonus = 20
+	speed = -1
+	deathmessage = "wails as its form shudders and violently comes to a stop."
+
+/mob/living/simple_animal/hostile/abomhorror/nsb/Initialize()
+	. = ..()
+	abom_sounds = list('sound/voice/abomination1.ogg', 'sound/voice/abomscream.ogg', 'sound/voice/abommoan.ogg', 'sound/voice/abomscream2.ogg', 'sound/voice/abomscream3.ogg')
+
+/mob/living/simple_animal/hostile/abomhorror/nsb/say(message, datum/language/language = null, list/spans = list(), language, sanitize, ignore_spam, forced = null)
+	..()
+	if(stat)
+		return
+	var/chosen_sound = pick(abom_sounds)
+	playsound(src, chosen_sound, 50, TRUE)
+
+/mob/living/simple_animal/hostile/abomhorror/nsb/Life()
+	..()
+	if(stat)
+		return
+	if(prob(10))
+		var/chosen_sound = pick(abom_sounds)
+		playsound(src, chosen_sound, 70, TRUE)

@@ -221,14 +221,16 @@ GLOBAL_LIST_INIT(trash_craft, list(
 GLOBAL_LIST_INIT(trash_gun, list(
 	/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 	/obj/item/gun/ballistic/revolver/colt6520 = 1,
-	/obj/item/gun/ballistic/shotgun/boltaction = 1,
+	/obj/item/gun/ballistic/shotgun/mosin = 1,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 	/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 	/obj/item/gun/ballistic/revolver/widowmaker = 1
 ))
 
 GLOBAL_LIST_INIT(trash_money, list(
-	/obj/item/stack/f13Cash/random/low = 40
+	/obj/item/stack/f13Cash/random/low = 140,
+	/obj/item/stack/f13Cash/random/med = 80,
+	/obj/item/stack/f13Cash/random/high = 40
 ))
 
 GLOBAL_LIST_INIT(trash_tool, list(
@@ -512,7 +514,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/storage/fancy/ammobox/beanbag,
 	/obj/item/gun/ballistic/revolver/caravan_shotgun,
 	/obj/item/storage/fancy/ammobox/beanbag,
-	/obj/item/gun/ballistic/shotgun/boltaction,
+	/obj/item/gun/ballistic/shotgun/mosin,
 	/obj/item/ammo_box/a762,
 	/obj/item/gun/ballistic/revolver/zipgun,
 	/obj/item/gun/ballistic/revolver/pipe_rifle,

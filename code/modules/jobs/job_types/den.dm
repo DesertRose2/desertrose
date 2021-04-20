@@ -303,7 +303,11 @@ Mayor
 		/obj/item/storage/firstaid/regular,
 		/obj/item/clothing/accessory/armband/medblue  \
 		)
-
+/datum/outfit/job/den/f13dendoc/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 /*--------------------------------------------------------------*/
 
 /datum/job/den/f13preacher
@@ -331,6 +335,7 @@ Mayor
 
 	access = list(ACCESS_BAR)
 	minimal_access = list(ACCESS_BAR)
+
 
 /datum/outfit/loadout/atompreacher
 	name = "Atom's Devout"
@@ -620,6 +625,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/flashlight/flare
+	r_hand = /obj/item/book/granter/trait/selection
 	backpack_contents = list(
 			/obj/item/storage/bag/money/small/settler = 1, \
 			/obj/item/kitchen/knife/combat = 1, \
@@ -787,3 +793,10 @@ Mayor
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
+
+/datum/outfit/job/den/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/automatic_sear)
