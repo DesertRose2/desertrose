@@ -14577,6 +14577,21 @@
 "kzu" = (
 /obj/effect/turf_decal/stripes/white/box,
 /obj/structure/rack,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/radio/headset/headset_ncr,
+/obj/item/radio/headset/headset_ncr,
+/obj/item/radio/headset/headset_ncr,
+/obj/item/radio/headset/headset_ncr,
+/obj/item/radio/headset/headset_ncr,
+/obj/item/radio/headset/headset_ncr,
+/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/ncr_facewrap,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "kzB" = (
@@ -16323,11 +16338,8 @@
 	},
 /area/f13/building)
 "lMn" = (
-/obj/machinery/workbench,
+/obj/machinery/autolathe/ammo,
 /obj/effect/turf_decal/stripes/white/box,
-/obj/item/book/granter/crafting_recipe/blueprint/service,
-/obj/item/book/granter/crafting_recipe/blueprint/r82,
-/obj/item/book/granter/crafting_recipe/blueprint/r84,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "lMp" = (
@@ -16382,7 +16394,7 @@
 	},
 /area/f13/building)
 "lOY" = (
-/obj/machinery/workbench/forge,
+/obj/machinery/autolathe,
 /obj/effect/turf_decal/stripes/white/box,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
@@ -16422,7 +16434,11 @@
 	},
 /area/f13/wasteland)
 "lRd" = (
+/obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/box,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/glasses/welding,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "lRB" = (
@@ -16644,23 +16660,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "lZl" = (
+/obj/machinery/photocopier,
 /obj/effect/turf_decal/stripes/white/box,
-/obj/structure/rack,
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/item/radio/headset/headset_ncr,
-/obj/item/radio/headset/headset_ncr,
-/obj/item/radio/headset/headset_ncr,
-/obj/item/radio/headset/headset_ncr,
-/obj/item/radio/headset/headset_ncr,
-/obj/item/radio/headset/headset_ncr,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "lZw" = (
@@ -19318,12 +19319,9 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city)
 "odW" = (
-/obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/box,
 /obj/machinery/light,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/glasses/welding,
+/obj/machinery/workbench/forge,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "odZ" = (
@@ -19417,12 +19415,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "ohV" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/item/stamp/denied,
-/obj/item/stamp,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/obj/effect/turf_decal/stripes/white/box,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "oic" = (
 /obj/structure/kitchenspike,
@@ -19565,7 +19559,11 @@
 	},
 /area/f13/wasteland)
 "onx" = (
-/obj/structure/filingcabinet,
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/stamp,
+/obj/item/stamp/denied,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "onz" = (
@@ -24187,10 +24185,6 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/wasteland)
-"rLH" = (
-/obj/machinery/autolathe/ammo,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/ncr)
 "rLP" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/light/small{
@@ -24291,7 +24285,9 @@
 	},
 /area/f13/wasteland)
 "rPR" = (
-/obj/machinery/autolathe,
+/obj/structure/chair/wood{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "rQe" = (
@@ -24537,9 +24533,8 @@
 	},
 /area/f13/radiation)
 "rZK" = (
-/obj/effect/turf_decal/stripes/white/box,
-/obj/machinery/photocopier,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/filingcabinet,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "saf" = (
 /obj/structure/simple_door/wood,
@@ -32439,6 +32434,15 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"xwN" = (
+/obj/machinery/workbench,
+/obj/effect/turf_decal/stripes/white/box,
+/obj/item/book/granter/crafting_recipe/blueprint/service,
+/obj/item/book/granter/crafting_recipe/blueprint/r82,
+/obj/item/book/granter/crafting_recipe/blueprint/r84,
+/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "xwW" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife/cosmicdirty,
@@ -39076,7 +39080,7 @@ adq
 poS
 cpK
 cpK
-unI
+pBv
 hbW
 cdc
 snB
@@ -39333,7 +39337,7 @@ xsl
 ezX
 xmV
 cpK
-unI
+ajD
 hbW
 wGJ
 snB
@@ -39589,8 +39593,8 @@ sTa
 etV
 ybI
 ybI
-cpK
-unI
+sJw
+onk
 hbW
 wGJ
 apk
@@ -39846,9 +39850,9 @@ aJb
 tUb
 idu
 hOl
-cpK
-unI
-hbW
+idu
+idu
+erY
 erY
 ubg
 koD
@@ -40103,9 +40107,9 @@ sgz
 sgz
 kjQ
 ehN
-cpK
-unI
-hbW
+hOl
+ehN
+erY
 wGJ
 snB
 koD
@@ -40360,9 +40364,9 @@ dmL
 fvz
 kaM
 kaM
-cpK
-unI
-hbW
+kaM
+kaM
+erY
 wGJ
 snB
 koD
@@ -40617,8 +40621,8 @@ gQv
 jgx
 fsm
 fsm
-cpK
-unI
+fsm
+muk
 hbW
 cdc
 snB
@@ -40874,7 +40878,7 @@ ptf
 ptf
 ptf
 gNA
-cpK
+uCW
 unI
 hbW
 apk
@@ -41131,7 +41135,7 @@ fyf
 fyf
 fyf
 kGc
-cpK
+uCW
 unI
 hbW
 erY
@@ -41388,8 +41392,8 @@ fyf
 fyf
 fyf
 kGc
-cpK
-unI
+uCW
+ofX
 hbW
 ubg
 snB
@@ -41645,8 +41649,8 @@ fyf
 pis
 fyf
 kGc
-cpK
-unI
+uCW
+pBv
 hbW
 cdc
 hMQ
@@ -41902,8 +41906,8 @@ fyf
 fyf
 fyf
 kGc
-cpK
-unI
+uCW
+ajD
 hbW
 wGJ
 snB
@@ -42894,13 +42898,13 @@ qQf
 qQf
 qQf
 wVT
-wVT
+xwN
 wVT
 wVT
 oVQ
 wVT
 wVT
-nGs
+rPR
 ezX
 cpK
 dMW
@@ -43157,7 +43161,7 @@ odW
 ezX
 pRS
 wVT
-nGs
+rPR
 rhr
 cpK
 dMW
@@ -43408,13 +43412,13 @@ qQf
 qQf
 qQf
 wVT
-lRd
+wVT
 wVT
 ohV
 pfb
 wVT
 wVT
-nGs
+rPR
 ezX
 cpK
 dMW
@@ -43671,7 +43675,7 @@ dcj
 pfp
 wVT
 wVT
-rLH
+rPR
 rhr
 cpK
 jkJ
@@ -43920,7 +43924,7 @@ ezX
 qQf
 iGU
 qQf
-qQf
+lRd
 kzu
 lZl
 rZK
@@ -46785,8 +46789,8 @@ fyf
 fyf
 fyf
 kGc
-cpK
-pBv
+gdY
+unI
 box
 erY
 erY
@@ -47042,8 +47046,8 @@ fyf
 fyf
 fyf
 kGc
-cpK
-ajD
+uaf
+unI
 lSD
 erY
 erY
@@ -47299,8 +47303,8 @@ fyf
 fyf
 fyf
 kGc
-sJw
-onk
+cam
+unI
 hbW
 erY
 erY
@@ -47556,9 +47560,9 @@ fyf
 fyf
 fyf
 kGc
-idu
-idu
-ehN
+cpK
+unI
+dXy
 dFQ
 gmX
 geM
@@ -47813,9 +47817,9 @@ fyf
 fyf
 fyf
 kGc
-hOl
-ehN
-ehN
+cpK
+unI
+dXy
 cdc
 dFQ
 koD
@@ -48070,9 +48074,9 @@ fyf
 fyf
 fyf
 kGc
-kaM
-kaM
-ehN
+cpK
+unI
+dXy
 cdc
 snB
 koD
@@ -48327,8 +48331,8 @@ fyf
 fyf
 fyf
 kGc
-fsm
-muk
+cpK
+unI
 dXy
 cdc
 vnc
@@ -48584,7 +48588,7 @@ fyf
 fyf
 fyf
 kGc
-uCW
+cpK
 unI
 dXy
 cdc
@@ -48841,7 +48845,7 @@ fyf
 fyf
 fyf
 kGc
-uCW
+cpK
 unI
 rQh
 rbe
@@ -49098,8 +49102,8 @@ fyf
 fyf
 fyf
 kGc
-uCW
-ofX
+cpK
+unI
 hbW
 erY
 ubg
@@ -49355,8 +49359,8 @@ fyf
 fyf
 fyf
 kGc
-uCW
-pBv
+cpK
+unI
 hbW
 ubg
 snB
@@ -49612,8 +49616,8 @@ fyf
 fyf
 fyf
 kGc
-uCW
-ajD
+cpK
+unI
 hbW
 cdc
 uVo
