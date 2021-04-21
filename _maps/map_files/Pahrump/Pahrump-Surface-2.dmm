@@ -32439,13 +32439,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
-"xwN" = (
-/obj/machinery/mineral/wasteland_trader/general{
-	icon_state = "trade_idle"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/wood,
-/area/f13/brotherhood)
 "xwW" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife/cosmicdirty,
@@ -74244,7 +74237,7 @@ hhC
 mwt
 vSH
 hbm
-xwN
+iNp
 ioi
 mcp
 dsL
