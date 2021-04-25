@@ -967,7 +967,7 @@
 /obj/effect/spawner/bundle/f13/neostead
 	name = "Neostead 2000 shotgun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/shotgun/neostead,
+				/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
 				/obj/item/storage/fancy/ammobox/lethalshot,
 				/obj/item/storage/fancy/ammobox/slugshot
 	)
@@ -1102,7 +1102,8 @@
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/laserpistol,
 				/obj/effect/spawner/bundle/f13/m1carbine,
-				/obj/effect/spawner/bundle/f13/revolver44
+				/obj/effect/spawner/bundle/f13/revolver44,
+				/obj/effect/spawner/bundle/f13/smg10mm
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 
@@ -1255,13 +1256,13 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 50,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 30,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 6,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 3,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 1
-			///obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 1 //no more generic school locker bozar 4 u
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 20,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 20,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 9,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 1
 			)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high
@@ -1269,11 +1270,12 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 35,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 20,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 20,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 25,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 20,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 4,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 = 6,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 = 3,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/unique = 1
 			)
 
@@ -1296,7 +1298,7 @@
 				/obj/item/storage/fancy/ammobox,
 				/obj/item/storage/fancy/ammobox/beanbag,
 				/obj/item/ammo_box/c38,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle/small
 				)
 
@@ -1308,7 +1310,7 @@
 				/obj/item/ammo_box/magazine/m45,
 				/obj/item/ammo_box/a762,
 				/obj/item/ammo_box/a308,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle,
 				/obj/item/ammo_box/c38,
 				/obj/item/ammo_box/magazine/m9mm,
@@ -1329,7 +1331,7 @@
 	loot = list(
 				/obj/item/storage/fancy/ammobox/lethalshot,
 				/obj/item/ammo_box/magazine/uzim9mm,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/greasegun,
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/tommygunm45,
@@ -1542,6 +1544,7 @@
 	fan_out_items = TRUE
 
 	loot = list(
+				/obj/item/storage/crayons,
 				/obj/item/crafting/abraxo,
 				/obj/item/stack/crafting/metalparts/three,
 				/obj/item/stack/crafting/metalparts/five,

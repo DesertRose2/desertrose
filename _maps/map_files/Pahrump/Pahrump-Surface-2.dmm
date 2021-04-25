@@ -15705,7 +15705,7 @@
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/brotherhood)
 "lcx" = (
-/obj/machinery/alchemy_table,
+/obj/machinery/chem_master/primitive,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "lda" = (
@@ -19306,10 +19306,6 @@
 	pixel_y = 32
 	},
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
@@ -19318,6 +19314,9 @@
 	dir = 1
 	},
 /obj/item/gun/ballistic/revolver/shotgunrevolver,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "nGq" = (
@@ -20169,7 +20168,7 @@
 	},
 /area/f13/building)
 "onR" = (
-/obj/machinery/alchemy_table,
+/obj/machinery/chem_master/primitive,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "onU" = (
@@ -33194,7 +33193,7 @@
 	},
 /area/f13/ncr)
 "xnY" = (
-/obj/machinery/alchemy_table,
+/obj/machinery/chem_master/primitive,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "xnZ" = (
