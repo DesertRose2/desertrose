@@ -863,9 +863,6 @@
 /obj/structure/chair/stool/retro/backed{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_tiled,
 /area/f13/brotherhood/leisure)
@@ -1893,16 +1890,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/tunnel)
-"bMe" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/wood/wood_tiled,
-/area/f13/brotherhood/leisure)
 "bMq" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress3"
@@ -2137,10 +2124,6 @@
 /obj/structure/table/wood/bar,
 /obj/machinery/chem_dispenser/drinks{
 	pixel_y = 23
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_tiled,
@@ -4113,14 +4096,6 @@
 /obj/structure/chair/right{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/window/reinforced{
 	color = "#3e3d42";
@@ -4875,10 +4850,6 @@
 /obj/structure/chair/left{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/window/reinforced{
 	color = "#3e3d42";
@@ -4889,9 +4860,6 @@
 "exK" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
 	},
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
@@ -5960,16 +5928,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"fxc" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "fxi" = (
 /obj/effect/spawner/lootdrop/f13/cash_ncr_low,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6226,10 +6184,6 @@
 "fIN" = (
 /obj/structure/chair/middle{
 	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/window/reinforced{
@@ -7276,14 +7230,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"gPq" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/wood_tiled,
-/area/f13/brotherhood/leisure)
 "gPJ" = (
 /obj/structure/simple_door/bunker,
 /obj/structure/barricade/wooden,
@@ -10247,20 +10193,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
-"juq" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/wood/wood_tiled,
-/area/f13/brotherhood/leisure)
 "juP" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -10478,14 +10410,6 @@
 /obj/structure/closet/crate/bin{
 	anchorable = 0;
 	storage_capacity = 30
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_tiled,
@@ -12939,16 +12863,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
-"lXF" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/structure/table,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "lXT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc{
@@ -15479,16 +15393,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/followers)
-"orp" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "orM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
@@ -16247,21 +16151,6 @@
 /obj/machinery/workbench/forge,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"pdz" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/structure/chalkboard,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "pdH" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib6-old";
@@ -16553,20 +16442,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
-"psD" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "pti" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/down{
@@ -16705,16 +16580,6 @@
 /obj/structure/decoration/rads,
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/medical)
-"pym" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "pzu" = (
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
@@ -16960,20 +16825,6 @@
 	icon_state = "r_wall"
 	},
 /area/f13/brotherhood/offices2nd)
-"pLC" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "pMg" = (
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -17998,10 +17849,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
 /obj/structure/chalkboard,
 /turf/open/floor/carpet,
 /area/f13/ncr)
@@ -18525,17 +18372,6 @@
 /obj/machinery/telecomms/bus/preset_three,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
-"rgX" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/structure/table,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "rhP" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -18543,17 +18379,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"rhV" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/structure/table,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "riF" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -18954,10 +18779,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "rzi" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/fo13colored/Pink{
 	critical_machine = 1;
@@ -20228,13 +20049,6 @@
 	},
 /area/f13/brotherhood/operations)
 "sEK" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -20643,19 +20457,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood/reactor)
-"sXC" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/structure/chair/f13foldupchair{
-	dir = 1
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "sXP" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -20884,19 +20685,6 @@
 	dir = 9
 	},
 /area/f13/brotherhood/mining)
-"tht" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/structure/chair/f13foldupchair{
-	dir = 1
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "thH" = (
 /obj/structure/table/snooker{
 	dir = 9
@@ -21407,10 +21195,6 @@
 /obj/structure/table/wood/bar,
 /obj/machinery/chem_dispenser/drinks/beer{
 	pixel_y = 23
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
@@ -22747,13 +22531,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/structure/table,
 /turf/open/floor/carpet,
@@ -22761,9 +22538,6 @@
 "uCh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
 	},
 /obj/item/storage/box/cups,
 /obj/structure/table,
@@ -22782,13 +22556,6 @@
 "uEg" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
 	},
 /obj/structure/closet/crate/bin,
 /turf/open/floor/carpet,
@@ -24869,10 +24636,6 @@
 /area/f13/tunnel)
 "wkR" = (
 /obj/structure/table/wood,
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/decoration/clock/active{
 	pixel_x = -32;
@@ -25323,10 +25086,6 @@
 /obj/item/storage/box/drinkingglasses{
 	pixel_x = -16;
 	pixel_y = 2
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/shamblers_juice{
@@ -26166,10 +25925,6 @@
 /turf/open/water,
 /area/f13/brotherhood/rnd)
 "xGp" = (
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 1;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/fo13colored/Pink{
 	critical_machine = 1;
@@ -33738,13 +33493,13 @@ nhI
 oBJ
 nhI
 nhI
-psD
-rgX
-sXC
-sXC
-sXC
-sXC
-fxc
+qOD
+duI
+tep
+tep
+tep
+tep
+qOD
 uBO
 nhI
 bSs
@@ -33994,7 +33749,7 @@ nhI
 nhI
 oBJ
 nhI
-pdz
+qLo
 qOD
 rTI
 tep
@@ -34251,7 +34006,7 @@ nhI
 opt
 nuN
 nhI
-pym
+qOD
 qOD
 duI
 tep
@@ -34508,7 +34263,6 @@ nhI
 nhI
 oIJ
 nhI
-pym
 qOD
 qOD
 qOD
@@ -34516,7 +34270,8 @@ qOD
 qOD
 qOD
 qOD
-lXF
+qOD
+duI
 nhI
 bSs
 eLE
@@ -34773,7 +34528,7 @@ tep
 tep
 tep
 qOD
-lXF
+duI
 nhI
 bSs
 eLE
@@ -35022,7 +34777,7 @@ nhI
 nhI
 oRa
 nhI
-pLC
+qOD
 qOD
 rTI
 tep
@@ -35030,7 +34785,7 @@ tep
 tep
 tep
 qOD
-lXF
+duI
 nhI
 bSs
 eLE
@@ -35280,13 +35035,13 @@ nhI
 oBJ
 nhI
 nhI
-pLC
-rhV
-tht
-tht
-tht
-tht
-orp
+qOD
+duI
+tep
+tep
+tep
+tep
+qOD
 uEg
 nhI
 bSs
@@ -83044,7 +82799,7 @@ lsr
 nNF
 viv
 jFm
-gPq
+jdI
 rzi
 sEK
 nWg
@@ -84331,7 +84086,7 @@ iUq
 wkR
 eJh
 eJh
-bMe
+sEK
 nWg
 urc
 jZH
@@ -84588,7 +84343,7 @@ idU
 dSd
 fIN
 exH
-juq
+sEK
 nWg
 nWg
 lia
