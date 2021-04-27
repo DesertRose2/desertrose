@@ -11,6 +11,18 @@
 
 //Vault
 
+/obj/item/clothing/under/f13/housewifedress50s
+	name = "50s style dress"
+	desc = "Fancy checkered yellow dress with small shoulder puffs."
+	icon_state = "dress50s"
+	item_state = "dress50s"
+
+/obj/item/clothing/under/f13/picnicdress50s
+	name = "50s style dress"
+	desc = "Cheery polkadot casual dress."
+	icon_state = "dresspicnic50s"
+	item_state = "dresspicnic50s"
+
 /obj/item/clothing/under/f13/vault
 	name = "vault jumpsuit"
 	desc = "A blue jumpsuit with a yellow vault pattern printed on it."
@@ -35,6 +47,12 @@
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
+/obj/item/clothing/under/f13/vaultmutie
+	name = "torn vault 113 jumpsuit"
+	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
+	icon_state = "mutie_vault_jumspuit"
+	item_state = "mutie_vault_jumspuit"
+
 //NCR
 
 /obj/item/clothing/under/f13/ncr
@@ -45,6 +63,14 @@
 	item_state = "ncr_uniform"
 	item_color = "ncr_uniform"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+
+/obj/item/clothing/under/f13/ncr/ncr_officer
+	name = "NCR officer fatigues"
+	desc = "A standard service uniform for commissioned officers of the New California Republic."
+	can_adjust = TRUE
+	icon_state = "ncr_officer"
+	item_state = "ncr_officer"
+	item_color = "ncr_officer"
 
 /obj/item/clothing/under/f13/ncr/scout
 	name = "NCR scout fatigues"
@@ -61,12 +87,36 @@
 	item_state = "ncr_fatigue_pants"
 	item_color = "ncr_fatigue_pants"
 
+/obj/item/clothing/under/f13/ncr/ncr_shorts
+	name = "NCR fatigue shorts"
+	desc = "A set of uniform shorts and lightweight shirt for NCR troopers deployed in hot climates."
+	can_adjust = TRUE
+	icon_state = "ncr_shorts"
+	item_state = "ncr_shorts"
+	item_color = "ncr_shorts"
+
 /obj/item/clothing/under/f13/caravaneer
 	name = "caravaneer outfit"
 	desc = "A soft outfit used by NCR caravaneers."
 	icon_state = "caravaneer"
 	item_state = "caravaneer"
 	item_color = "caravaneer"
+
+/obj/item/clothing/under/f13/ncr/ncr_dress
+	name = "NCR dress uniform"
+	desc = "A crisp tan NCRA dress uniform, complete with tie."
+	can_adjust = TRUE
+	icon_state = "ncr_dress"
+	item_state = "ncr_dress"
+	item_color = "ncr_dress"
+
+/obj/item/clothing/under/f13/ncrcf
+	name = "caravaneer outfit"
+	desc = "A cheap blue shirt and slacks, the letters 'NCRCF' emblazened on the back. A meek reminder of who owns you."
+	can_adjust = TRUE
+	icon_state = "ncrcf"
+	item_state = "ncrcf"
+	item_color = "ncrcf"
 
 //Settlers
 
@@ -160,6 +210,12 @@
 	item_state = "thaxflannel"
 	item_color = "thaxflannel"
 
+/obj/item/clothing/under/f13/ranger/erin
+	name = "desert pants"
+	desc = "An old pair of beat up, Pre-War BDUs. These ones are emblazoned with desert patterns, and it has been reinforced around the left knee."
+	icon_state = "erin_pants"
+	item_state = "erin_pants"
+
 /obj/item/clothing/under/f13/ranger/blue
 	name = "blue ranger outfit"
 	desc = "Simple rustic clothes for a big iron packin' lawman. A blue collar shirt with tan slacks."
@@ -169,10 +225,17 @@
 
 /obj/item/clothing/under/f13/ncr_formal_uniform/majzirilli
 	name = "Major Zirilli's service uniform"
-	desc = "An immaculately maintained service uniform."
+	desc = "An immaculately maintained NCRA service uniform, weighted down with golden embellishments signifying their authority."
 	icon_state = "majzirilli"
 	item_state = "majzirilli"
 	item_color = "majzirilli"
+
+/obj/item/clothing/under/f13/ranger/modif_ranger
+	name = "green ranger outfit"
+	desc = "A ranger outfit with a green cotton longshirt and dark grey jeans along with a black bandana around the neck."
+	icon_state = "modif_ranger"
+	item_state = "modif_ranger"
+	item_color = "modif_ranger"
 
 /obj/item/clothing/under/f13/rustic
 	name = "rustic outfit"
@@ -224,7 +287,27 @@
 	item_color = "recon"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 80)
 
+/obj/item/clothing/under/f13/recon/outcast
+	name = "recon bodysuit"
+	desc = "A vacuum-sealed asbestos jumpsuit covering the entire body, dyed and painted black with red markings."
+	icon_state = "recon_outcast"
+	item_state = "recon_outcast"
+	item_color = "recon"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 80)
+
 //Legion
+
+/obj/item/clothing/under/f13/campfollowermale
+	name = "camp follower male robe"
+	desc = "Olive colored cloth with a red belt."
+	icon_state = "legcamp"
+	item_state = "brownjsuit"
+
+/obj/item/clothing/under/f13/campfollowerfemale
+	name = "camp follower female robe"
+	desc = "Olive colored cloth with a red sash."
+	icon_state = "legcamp_f"
+	item_state = "legcamp_f"
 
 /obj/item/clothing/under/f13/legskirt
 	name = "legionary fatigues"
@@ -495,75 +578,46 @@
 	desc = "Carefully hand wozen cloth robes with heavy turqoise jewelry drapped over top."
 	icon_state = "shamanrags"
 	item_state = "shamanrags"
-/obj/item/clothing/under/f13/wayfarer //female
+
+/obj/item/clothing/under/f13/wayfarer
 	name = "loincloth"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form, covering the groin and breasts. Well suited for a simpler life lived by the Wayfarer tribe."
+	desc = "Hand-woven cotton ornated with pieces of turquoise form covering the groin, which can also be adjusted to cover the breasts as well. Well suited for a simpler life lived by the Wayfarer tribe."
 	icon_state = "gatherer"
 	item_state = "gatherer"
 	item_color = "gatherer"
+	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/m //male
-	name = "loincloth"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form, covering the groin. Well suited for a simpler life lived by the Wayfarer tribe."
-	icon_state = "gatherer_d"
-	item_state = "gatherer_d"
-	item_color = "gatherer_d"
-
-/obj/item/clothing/under/f13/wayfarer/shamanbluef
+/obj/item/clothing/under/f13/wayfarer/shamanblue
 	name = "blue shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed blue with anil. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe."
+	desc = "Finely crafted cotton clothing, dyed blue with anil. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe. Can be adjusted to suit the wearer's preferences."
 	icon_state = "shamanblue"
 	item_state = "shamanblue"
 	item_color = "shamanblue"
+	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/shamanbluem
-	name = "blue shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed blue with anil. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe."
-	icon_state = "shamanblue_d"
-	item_state = "shamanblue_d"
-	item_color = "shamanblue_d"
-
-/obj/item/clothing/under/f13/wayfarer/shamanredf
+/obj/item/clothing/under/f13/wayfarer/shamanred
 	name = "red shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed red with madder root. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe."
+	desc = "Finely crafted cotton clothing, dyed red with madder root. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe. Can be adjusted to suit the wearer's preferences."
 	icon_state = "shamanred"
 	item_state = "shamanred"
 	item_color = "shamanred"
+	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/shamanredm
-	name = "red shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed red with madder root. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe."
-	icon_state = "shamanred_d"
-	item_state = "shamanred_d"
-	item_color = "shamanred_d"
-
-/obj/item/clothing/under/f13/wayfarer/acolytef
+/obj/item/clothing/under/f13/wayfarer/acolyte
 	name = "acolyte's garbs"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form little more than loincloth. Well suited for a simpler life lived by the Wayfarer tribe."
+	desc = "Hand-woven cotton ornated with pieces of turquoise form little more than loincloth, which can be adjusted depending on the wearer's preferences. Well suited for a simpler life lived by the Wayfarer tribe."
 	icon_state = "acolyte"
 	item_state = "acolyte"
 	item_color = "acolyte"
+	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/acolytem
-	name = "acolyte's garbs"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form little more than loincloth. Well suited for a simpler life lived by the Wayfarer tribe."
-	icon_state = "acolyte_d"
-	item_state = "acolyte_d"
-	item_color = "acolyte_d"
-
-/obj/item/clothing/under/f13/wayfarer/hunterf
+/obj/item/clothing/under/f13/wayfarer/hunter
 	name = "rugged loincloth"
-	desc = "Minimal yet hardy clothing, covering no more than it needs to. Ideal for those of the Wayfarer tribe who spend their time away from the tribe in pursuit of the hunt."
+	desc = "Minimal yet hardy clothing padded in places by leather which can be taken off if need be, covering no more than it needs to. Ideal for those of the Wayfarer tribe who spend their time away from the tribe in pursuit of the hunt."
 	icon_state = "hunter"
 	item_state = "hunter"
 	item_color = "hunter"
-
-/obj/item/clothing/under/f13/wayfarer/hunterm
-	name = "rugged loincloth"
-	desc = "Minimal yet hardy clothing padded in places by leather, covering no more than it needs to. Ideal for those of the Wayfarer tribe who spend their time away from the tribe in pursuit of the hunt."
-	icon_state = "hunter_d"
-	item_state = "hunter_d"
-	item_color = "hunter_d"
+	can_adjust = TRUE
 
 //OUTLAW DESERTERS
 /obj/item/clothing/under/f13/exile
@@ -950,6 +1004,17 @@
 	icon_state = "vault42"
 	item_color = "vault42"
 
+/obj/item/clothing/under/f13/vault/vcity
+	name = "VTCC jumpsuit"
+	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
+	icon_state = "vaultcity"
+	item_state = "vaultcity"
+
+/obj/item/clothing/under/f13/vault/vcity/skirt
+	name = "VTCC jumpskirt"
+	icon_state = "vaultcity_skirt"
+	item_state = "vaultcity_skirt"
+
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit"
 	desc = "A white shirt with a pair of dark brown cargo pants - an outfit commonly worn by Followers of the Apocalypse.<br><i>Nihil boni sine labore.</i>"
@@ -1268,3 +1333,17 @@
 	icon_state = "GunnerPlates"
 	item_state = "GunnerPlates"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+
+//Super Mutants
+
+/obj/item/clothing/under/f13/mutieshorts
+	name = "large torn shorts"
+	desc = "An incredibly damaged pair of shorts, large enough to fit a super mutant."
+	icon_state = "mutie_shorts"
+	item_state = "mutie_shorts"
+
+/obj/item/clothing/under/f13/mutiesanta
+	name = "red and white jumspuit"
+	desc = "A fairly damaged red and white shirt with matching shorts, large enough to fit a super mutant."
+	icon_state = "mutie_santa"
+	item_state = "mutie_santa"

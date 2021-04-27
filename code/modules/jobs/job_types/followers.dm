@@ -64,6 +64,7 @@ Administrator
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PRACTITIONER, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 /datum/outfit/job/followers/f13leadpractitioner
 	name = "Followers Administrator"
@@ -167,6 +168,7 @@ Practitioner
 	ADD_TRAIT(H, TRAIT_PRACTITIONER, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 	//the follower practitioner doesn't need access because it's already set in the /datum/job/follower
 	//personally, I don't think a practitioner should have more access than a volunteer.
@@ -322,7 +324,7 @@ Follower Guard
 	department_flag = FOLLOWERS
 	faction = "Followers"
 	total_positions = 2
-	spawn_positions = 2
+	spawn_positions = 3
 	supervisors = "Followers having no strict command structure, don't report to anyone- though they will look to the Administrator for guidance and the other Doctors as well."
 	description = "You are a Follower Guard. As a Guard for the Followers of Apocalypse, you are responsible for the safety and the maintenance of order in the hospital and among your peers. Your reason for being here is to make sure the other staff can provide education and medical services to those in need, furthering research in non-military matters, as well as helping their communities get access to basic necessities. "
 	forbids = "Causing harm to others except in times of self-defense or in defense of other followers."
@@ -357,7 +359,7 @@ Follower Guard
 	name = "Followers Ranged Guard"
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv=2
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2
 	)
 
 /datum/outfit/loadout/guard_close

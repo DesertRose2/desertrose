@@ -376,6 +376,48 @@
 		if(W.active)
 			sawoff(user)
 
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	name = "neostead 2000"
+	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
+	icon_state = "neostead"
+	fire_delay = 4
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	var/toggled = FALSE
+	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Alt-click to switch tubes.</span>"
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize()
+	. = ..()
+	if (!alternate_magazine)
+		alternate_magazine = new mag_type(src)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/attack_self(mob/living/user)
+	. = ..()
+	if(!magazine.contents.len)
+		toggle_tube(user)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/proc/toggle_tube(mob/living/user)
+	var/current_mag = magazine
+	var/alt_mag = alternate_magazine
+	magazine = alt_mag
+	alternate_magazine = current_mag
+	toggled = !toggled
+	if(toggled)
+		to_chat(user, "You switch to tube B.")
+	else
+		to_chat(user, "You switch to tube A.")
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/AltClick(mob/living/user)
+	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	toggle_tube(user)
+
+
 /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
 	name = "city-killer combat shotgun"
 	desc = "A semi automatic shotgun with black tactical furniture made by Winchester Arms. This particular model uses an internal feeding tube instead of a magazine."
@@ -439,51 +481,12 @@
 	item_state = "trenchgun"
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
+	extra_damage = 3
 	knife_x_offset = 23
 	knife_y_offset = 14
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-
-/obj/item/gun/ballistic/shotgun/neostead
-	name = "neostead 2000"
-	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
-	icon_state = "neostead"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	var/toggled = FALSE
-	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
-
-/obj/item/gun/ballistic/shotgun/neostead/examine(mob/user)
-	. = ..()
-	. += "<span class='notice'>Alt-click to switch tubes.</span>"
-
-/obj/item/gun/ballistic/shotgun/neostead/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new mag_type(src)
-
-/obj/item/gun/ballistic/shotgun/neostead/attack_self(mob/living/user)
-	. = ..()
-	if(!magazine.contents.len)
-		toggle_tube(user)
-
-/obj/item/gun/ballistic/shotgun/neostead/proc/toggle_tube(mob/living/user)
-	var/current_mag = magazine
-	var/alt_mag = alternate_magazine
-	magazine = alt_mag
-	alternate_magazine = current_mag
-	toggled = !toggled
-	if(toggled)
-		to_chat(user, "You switch to tube B.")
-	else
-		to_chat(user, "You switch to tube A.")
-
-/obj/item/gun/ballistic/shotgun/neostead/AltClick(mob/living/user)
-	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
-		return
-	toggle_tube(user)
 
 
 /obj/item/gun/ballistic/shotgun/remington
@@ -542,11 +545,12 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 4
+	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	extra_damage = 5
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	name = "trail carbine"
@@ -558,7 +562,7 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 4
+	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
@@ -574,7 +578,7 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 4
+	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
@@ -657,3 +661,56 @@
 	extra_damage = 5
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
+	suppressor_state = "rifle_suppressor"
+	can_suppress = TRUE
+	suppressor_x_offset = 25
+	suppressor_y_offset = 30
+
+/obj/item/gun/ballistic/shotgun/lasmusket
+	name = "Laser Musket"
+	desc = "In the wasteland, one must make do. And making do is what the creator of this weapon does. Made from metal scraps, electronic parts. an old rifle stock and a Nuka Cola bottle full of dreams, the Laser Musket is sure to stop anything in their tracks and make those raiders think twice."
+	icon_state = "las_musket"
+	item_state = "las_musket"
+	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/lasmusket
+	//nocase = TRUE
+	var/bolt_open = FALSE
+	can_bayonet = TRUE
+	fire_delay = 15
+	knife_x_offset = 23
+	knife_y_offset = 21
+	bayonet_state = "lasmusket"
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	isenergy = TRUE
+	can_scope = TRUE
+	scope_state = "lasmusket_scope"
+	scope_x_offset = 9
+	scope_y_offset = 20
+	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
+	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
+	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
+
+/obj/item/gun/ballistic/shotgun/plasmacaster
+	name = "Plasma Musket"
+	desc = "An experimental weapon..."
+	icon_state = "las_musket"
+	item_state = "las_musket"
+	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	mag_type = /obj/item/ammo_box/magazine/internal/plasmacaster
+	var/bolt_open = FALSE
+	can_bayonet = TRUE
+	fire_delay = 20
+	bayonet_state = "lasmusket"
+	knife_x_offset = 23
+	knife_y_offset = 21
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	isenergy = TRUE
+	can_scope = TRUE
+	scope_state = "lasmusket_scope"
+	scope_x_offset = 9
+	scope_y_offset = 20
+	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
+	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
+	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'

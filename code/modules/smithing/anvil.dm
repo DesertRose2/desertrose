@@ -69,7 +69,7 @@
 	RECIPE_PIKE = /obj/item/smithing/pikehead)
 
 /obj/structure/anvil/Initialize()
-	..()
+	. = ..()
 	currentquality = anvilquality
 
 /obj/structure/anvil/attackby(obj/item/I, mob/user)
@@ -83,7 +83,7 @@
 			workpiece_material = notsword.custom_materials
 			to_chat(user, "You place the [notsword] on the [src].")
 			currentquality = anvilquality
-			var/skillmod = 0
+			var/skillmod = 4
 			if(user.mind.skill_holder)
 				skillmod = user.mind.get_skill_level(/datum/skill/level/dwarfy/blacksmithing)/2
 			currentquality += skillmod
@@ -97,8 +97,12 @@
 		if(!(workpiece_state == WORKPIECE_PRESENT || workpiece_state == WORKPIECE_INPROGRESS))
 			to_chat(user, "You can't work an empty anvil!")
 			return FALSE
+		var/mob/living/carbon/human/F = user
 		if(busy)
 			to_chat(user, "This anvil is already being worked!")
+			return FALSE
+		if(F.busy)
+			to_chat(user, "You are already working another anvil!")
 			return FALSE
 		do_shaping(user, hammertime.qualitymod)
 		return
@@ -111,6 +115,8 @@
 
 
 /obj/structure/anvil/proc/do_shaping(mob/user, qualitychange)
+	var/mob/living/carbon/human/F = user
+	F.busy = TRUE
 	busy = TRUE
 	currentquality += qualitychange
 	var/list/shapingsteps = list("weak hit", "strong hit", "heavy hit", "fold", "draw", "shrink", "bend", "punch", "upset") //weak/strong/heavy hit affect strength. All the other steps shape.
@@ -123,6 +129,7 @@
 	playsound(src, 'sound/effects/clang2.ogg',40, 2)
 	if(!do_after(user, steptime, target = src))
 		busy = FALSE
+		F.busy = FALSE
 		return FALSE
 	switch(stepdone)
 		if("weak hit")
@@ -168,6 +175,7 @@
 	if(length(stepsdone) >= 3)
 		tryfinish(user)
 	busy = FALSE
+	F.busy = FALSE
 
 /obj/structure/anvil/proc/tryfinish(mob/user)
 	var/artifactchance = 0
@@ -223,7 +231,7 @@
 			outrightfailchance = 1
 			artifactrolled = FALSE
 			if(user.mind.skill_holder)
-				user.mind.auto_gain_experience(/datum/skill/level/dwarfy/blacksmithing, 50, 10000000, silent = FALSE)
+				user.mind.auto_gain_experience(/datum/skill/level/dwarfy/blacksmithing, 100, 10000000, silent = FALSE)
 			break
 
 /obj/structure/anvil/debugsuper
@@ -270,8 +278,8 @@
 	desc = "A big block of sandstone. Useable as an anvil."
 	custom_materials = list(/datum/material/sandstone=8000)
 	icon_state = "sandvil"
-	anvilquality = -1
-	itemqualitymax = 2
+	anvilquality = 1
+	itemqualitymax = 8
 
 /obj/structure/anvil/obtainable/basalt
 	name = "basalt brick anvil"

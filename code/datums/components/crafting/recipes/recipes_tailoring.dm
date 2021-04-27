@@ -424,26 +424,6 @@
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
-	
-/datum/crafting_recipe/backsheath
-	name = "back sheath"
-	result = /obj/item/storage/backpack/backsheath
-	reqs = list(/obj/item/stack/sheet/leather = 4,
-				/obj/item/stack/sheet/cloth = 3)
-	tools = list(TOOL_WORKBENCH)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_BELTS
-
-/datum/crafting_recipe/waistsheath
-	name = "waist sheath"
-	result = /obj/item/storage/belt/waistsheath
-	reqs = list(/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_WORKBENCH)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_BELTS
 
 /datum/crafting_recipe/settler
 	name = "settler outfit"
@@ -1165,6 +1145,7 @@
 /datum/crafting_recipe/ncrcombatarmormk2
 	name = "reinforced NCR combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1175,6 +1156,7 @@
 /datum/crafting_recipe/ncrcombathelmetmk2
 	name = "reinforced NCR combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1205,6 +1187,7 @@
 /datum/crafting_recipe/legioncombatarmormk2
 	name = "reinforced Legion combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/mk2/legion
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1215,6 +1198,7 @@
 /datum/crafting_recipe/legioncombathelmetmk2
 	name = "reinforced Legion combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/mk2/legion
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1245,6 +1229,7 @@
 /datum/crafting_recipe/boscombatarmormk2
 	name = "reinforced initiate armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1255,6 +1240,7 @@
 /datum/crafting_recipe/boscombathelmetmk2
 	name = "reinforced initiate helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30

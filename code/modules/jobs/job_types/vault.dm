@@ -68,7 +68,7 @@ Overseer
 		/obj/item/storage/box/ids = 1,
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/executive = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv = 3,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/crowbar = 1)
 
 /*
@@ -123,7 +123,7 @@ Head of Security
 	backpack_contents = list(
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/restraints/handcuffs = 2,
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/crowbar = 1)
 
 	implants = list(/obj/item/implant/mindshield)
@@ -174,6 +174,7 @@ Medical Doctor
 		return
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
 /*
 Scientist
@@ -210,6 +211,12 @@ Scientist
 	backpack = 		/obj/item/storage/backpack/science
 	satchel = 		/obj/item/storage/backpack/satchel/tox
 	backpack_contents = list(/obj/item/crowbar = 1)
+
+/datum/outfit/job/vault/f13vaultscientist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
 
 /*
 Security Officer
@@ -259,7 +266,7 @@ Security Officer
 	backpack_contents = list(
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/crowbar = 1)
 
 	implants = list(/obj/item/implant/mindshield)
