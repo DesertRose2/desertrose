@@ -133,7 +133,7 @@
 						"topbirb")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
-/datum/gear/donator/ranger4570
+/datum/gear/donator/ranger4570s
 	name = "45-70 Gov't Service Revolver"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570/bayonet
