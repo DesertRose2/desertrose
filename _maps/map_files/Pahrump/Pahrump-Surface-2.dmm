@@ -362,6 +362,7 @@
 /area/f13/wasteland)
 "alM" = (
 /obj/structure/table/optable,
+/obj/machinery/light,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -10184,6 +10185,7 @@
 	name = "Botany button";
 	pixel_y = -25
 	},
+/obj/machinery/vending/hydroseeds,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -33741,6 +33743,15 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ncr)
+"wIQ" = (
+/obj/structure/decoration/vent,
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/followers)
 "wJf" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/mountain,
@@ -57191,7 +57202,7 @@ rJU
 sQo
 xsD
 bqw
-bqw
+wIQ
 cmF
 unr
 gKG
