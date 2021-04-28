@@ -180,7 +180,7 @@
 
 /obj/machinery/rnd/server/followers/Initialize()
 	. = ..()
-	SSresearch.VAULTservers |= src
+	SSresearch.FOLLOWERSservers |= src
 	stored_research = SSresearch.followers_tech
 	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/rdserver(null)
 	B.apply_default_parts(src)
