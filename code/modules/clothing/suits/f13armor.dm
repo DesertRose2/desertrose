@@ -413,7 +413,6 @@
 	icon_state = "t51wintertesla"
 	item_state = "t51wintertesla"
 	slowdown = 0.15
-	
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
 	name = "Washington power armor"
