@@ -409,7 +409,7 @@
 	
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wintertesla
     name = "Winterized Tesla T-51b power armor"
-    desc = "A somewhat conserved suit of T-51b power armor fitted with a snow camouflage paint-job. Few blurred decals appear on the shoulder plates together with a serial number on the top left side of the chest plate and a pre-war flag on the back below the TX-28 fusion pack. This one suit in particular seems retrofitted with tesla attachments around its outer plates."
+    desc = "(X) A somewhat conserved suit of T-51b power armor fitted with a snow camouflage paint-job. Few blurred decals appear on the shoulder plates together with a serial number on the top left side of the chest plate and a pre-war flag on the back below the TX-28 fusion pack. This one suit in particular seems retrofitted with tesla attachments around its outer plates."
     icon_state = "t51wintertesla"
     item_state = "t51wintertesla"
     slowdown = 0.15
