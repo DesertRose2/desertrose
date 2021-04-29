@@ -417,6 +417,13 @@
 	icon_state = "t51wboshelmet"
 	item_state = "t51wboshelmet"
 	actions_types = list()
+	
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/wbos
+	name = "Winterized Tesla T-51b helmet"
+	desc = "(X) A T-51b helmet adorned by paint layers of snow camouflage patterns. A tesla attachment resides on top of it, can't get more reliable than that."
+	icon_state = "winterteslahelm"
+	item_state = "winterteslahelm"
+	actions_types = list()
 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/reforgedwbos
 	name = "reforged Washington power helmet"
