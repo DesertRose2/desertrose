@@ -418,14 +418,13 @@
 	item_state = "t51wboshelmet"
 	actions_types = list()
 	
-/obj/item/clothing/head/helmet/f13/power_armor/t51b/winterteslahelmet
-    name = "Winterized Tesla T-51b helmet"
-    desc = "(X) A T-51b helmet adorned by paint layers of snow camouflage patterns. A tesla attachment resides on top of it, can't get more reliable than that."
-    icon_state = "winterteslahelm"
-    item_state = "winterteslahelm"
-    actions_types = list()
-	
-
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/wintertesla
+    name = "Winterized Tesla T-51b power armor"
+	desc = "(X) A somewhat conserved suit of T-51b power armor fitted with a snow camouflage paint-job. Few blurred decals appear on the shoulder plates together with a serial number on the top left side of the chest plate and a pre-war flag on the back below the TX-28 fusion pack. This one suit in particular seems retrofitted with tesla attachments around its outer plates."
+	icon_state = "t51wintertesla"
+	item_state = "t51wintertesla"
+	slowdown = 0.15
+	 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/reforgedwbos
 	name = "reforged Washington power helmet"
 	desc = "(X) It's a reforged Washington Brotherhood power helmet, designed to induce fear in a target."
