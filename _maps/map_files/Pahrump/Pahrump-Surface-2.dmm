@@ -362,6 +362,9 @@
 /area/f13/wasteland)
 "alM" = (
 /obj/structure/table/optable,
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -3163,10 +3166,15 @@
 "cmF" = (
 /obj/structure/sink{
 	dir = 8;
-	pixel_x = -10
+	pixel_x = -12;
+	pixel_y = 5
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/f13{
-	icon_state = "freezerfloor"
+	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
 "cmI" = (
@@ -8398,6 +8406,24 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"fTY" = (
+/obj/structure/decoration/vent{
+	pixel_x = -7;
+	pixel_y = -3
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "fUb" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -17925,6 +17951,8 @@
 "lVa" = (
 /obj/structure/table,
 /obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -18620,9 +18648,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "mvC" = (
-/obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/machinery/vending/wardrobe/medi_wardrobe,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -21284,13 +21310,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "orB" = (
-/obj/structure/rack,
-/obj/item/seeds/xander,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/cotton,
-/obj/item/seeds/wheat,
-/obj/effect/spawner/lootdrop/f13/seedspawner,
-/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/machinery/vending/hydroseeds,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/followers)
 "orO" = (
@@ -57238,7 +57258,7 @@ rJU
 sQo
 xsD
 bqw
-bqw
+fTY
 cmF
 unr
 gKG
