@@ -28,6 +28,7 @@ SUBSYSTEM_DEF(research)
 	var/list/obj/machinery/rnd/server/servers = list()
 	var/list/obj/machinery/rnd/server/VAULTservers = list()
 	var/list/obj/machinery/rnd/server/BOSservers = list()
+	var/list/obj/machinery/rnd/server/FOLLOWERSservers = list()
 
 
 	var/list/techweb_nodes_starting = list()	//associative id = TRUE
@@ -300,6 +301,7 @@ SUBSYSTEM_DEF(research)
 	//----------------------------------------------
 	var/list/BOSsingle_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 7)	//citadel edit - techwebs nerf
 	var/list/VAULTsingle_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 35)
+	var/list/FOLLOWERSsingle_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 7)
 	var/multiserver_calculation = FALSE
 	var/last_income
 	//^^^^^^^^ ALL OF THESE ARE PER SECOND! ^^^^^^^^
@@ -350,6 +352,7 @@ SUBSYSTEM_DEF(research)
 	var/list/bitcoins = list()
 	var/list/BOSbitcoins = list()
 	var/list/VAULTbitcoins = list()
+	var/list/FOLLOWERSbitcoins = list()
 	if(multiserver_calculation)
 		var/eff = calculate_server_coefficient()
 		for(var/obj/machinery/rnd/server/miner in servers)
@@ -366,6 +369,10 @@ SUBSYSTEM_DEF(research)
 			if(miner.working)
 				VAULTbitcoins = VAULTsingle_server_income.Copy()
 				break	
+		for(var/obj/machinery/rnd/server/miner in FOLLOWERSservers)
+			if(miner.working)
+				FOLLOWERSbitcoins = FOLLOWERSsingle_server_income.Copy()
+				break
 	var/income_time_difference = world.time - last_income
 		
 	science_tech.last_bitcoins = VAULTbitcoins  // Doesn't take tick drift into account
@@ -379,11 +386,13 @@ SUBSYSTEM_DEF(research)
 		BOSbitcoins[i] *= income_time_difference / 10
 	for(var/i in VAULTbitcoins)
 		VAULTbitcoins[i] *= income_time_difference / 10
-
+	for(var/i in FOLLOWERSbitcoins)
+		FOLLOWERSbitcoins[i] *= income_time_difference / 10
+	
 	science_tech.add_point_list(VAULTbitcoins)
 	bos_tech.add_point_list(BOSbitcoins)
 	unknown_tech.add_point_list(bitcoins) //tbh these guys can get a fuckton of points, because it isn't even being used
-	followers_tech.add_point_list(bitcoins)
+	followers_tech.add_point_list(FOLLOWERSbitcoins)
 
 	last_income = world.time
 
