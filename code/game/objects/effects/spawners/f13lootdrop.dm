@@ -705,14 +705,14 @@
 	name = "single single-shot single shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/single_shotgun,
-				/obj/item/storage/fancy/ammobox/beanbag
+				/obj/item/ammo_box/shotgun/bean
 				)
 
 /obj/effect/spawner/bundle/f13/caravan_shotgun
 	name = "caravan shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/caravan_shotgun,
-				/obj/item/storage/fancy/ammobox/beanbag
+				/obj/item/ammo_box/shotgun/bean
 				)
 
 /obj/effect/spawner/bundle/f13/mosin
@@ -761,7 +761,7 @@
 	name = "varmint rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/varmint,
-				/obj/item/ammo_box/magazine/m556/rifle/small
+				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
 /obj/effect/spawner/bundle/f13/pistol22
@@ -807,7 +807,7 @@
 	name = "hunting shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/shotgun/hunting,
-				/obj/item/storage/fancy/ammobox/lethalshot
+				/obj/item/ammo_box/shotgun/buck
 				)
 
 /obj/effect/spawner/bundle/f13/revolverm29
@@ -838,7 +838,7 @@
 				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
-/obj/effect/spawner/bundle/f13/miniuzi
+/obj/effect/spawner/bundle/f13/police_pistol
 	name = "police revolver and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/police,
@@ -919,7 +919,7 @@
 	name = "trench shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/shotgun/trench,
-				/obj/item/storage/fancy/ammobox/lethalshot,
+				/obj/item/ammo_box/shotgun/buck,
 				)
 
 /obj/effect/spawner/bundle/f13/wattz
@@ -967,17 +967,17 @@
 /obj/effect/spawner/bundle/f13/neostead
 	name = "Neostead 2000 shotgun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/shotgun/neostead,
-				/obj/item/storage/fancy/ammobox/lethalshot,
-				/obj/item/storage/fancy/ammobox/slugshot
+				/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
+				/obj/item/ammo_box/shotgun/slug,
+				/obj/item/ammo_box/shotgun/buck
 	)
 
 /obj/effect/spawner/bundle/f13/auto5
 	name = "Auto 5 shotgun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
-				/obj/item/storage/fancy/ammobox/lethalshot,
-				/obj/item/storage/fancy/ammobox/slugshot
+				/obj/item/ammo_box/shotgun/buck,
+				/obj/item/ammo_box/shotgun/slug
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 //TIER 4 GUN
@@ -1089,7 +1089,8 @@
 				/obj/effect/spawner/bundle/f13/varmint,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/colt357,
-				/obj/effect/spawner/bundle/f13/wattz
+				/obj/effect/spawner/bundle/f13/wattz,
+				/obj/effect/spawner/bundle/f13/police_pistol
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 
@@ -1102,7 +1103,8 @@
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/laserpistol,
 				/obj/effect/spawner/bundle/f13/m1carbine,
-				/obj/effect/spawner/bundle/f13/revolver44
+				/obj/effect/spawner/bundle/f13/revolver44,
+				/obj/effect/spawner/bundle/f13/smg10mm
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 
@@ -1155,7 +1157,7 @@
 	name = "citykiller and ammo spawner"
 	items = list(
 		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller,
-		/obj/item/storage/fancy/ammobox/lethalshot
+		/obj/item/ammo_box/shotgun/buck
 	)
 /obj/effect/spawner/bundle/f13/thatgun
 	name = "556 pistol spawner"
@@ -1255,13 +1257,13 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 50,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 30,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 6,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 3,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 1
-			///obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 1 //no more generic school locker bozar 4 u
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 20,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 25,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 14,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 1
 			)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high
@@ -1269,11 +1271,12 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 35,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 20,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 20,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 20,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 4,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 25,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 35,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 = 6,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 = 3,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/unique = 1
 			)
 
@@ -1292,11 +1295,10 @@
 
 	loot = list(
 				/obj/item/ammo_box/magazine/m9mm,
-				/obj/item/storage/fancy/ammobox/lethalshot,
-				/obj/item/storage/fancy/ammobox,
-				/obj/item/storage/fancy/ammobox/beanbag,
+				/obj/item/ammo_box/shotgun/buck,
+				/obj/item/ammo_box/shotgun/slug,
 				/obj/item/ammo_box/c38,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle/small
 				)
 
@@ -1308,7 +1310,7 @@
 				/obj/item/ammo_box/magazine/m45,
 				/obj/item/ammo_box/a762,
 				/obj/item/ammo_box/a308,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle,
 				/obj/item/ammo_box/c38,
 				/obj/item/ammo_box/magazine/m9mm,
@@ -1327,9 +1329,9 @@
 	lootdoubles = TRUE
 
 	loot = list(
-				/obj/item/storage/fancy/ammobox/lethalshot,
+				/obj/item/ammo_box/shotgun/buck,
 				/obj/item/ammo_box/magazine/uzim9mm,
-				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/greasegun,
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/tommygunm45,
@@ -1504,7 +1506,7 @@
 				/obj/item/reagent_containers/food/snacks/f13/dandyapples,
 				/obj/item/reagent_containers/food/snacks/f13/blamco,
 				/obj/item/reagent_containers/food/snacks/f13/instamash ,
-				/obj/item/reagent_containers/food/snacks/f13/porknbeans,
+				/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
 				/obj/item/storage/box/ingredients/carnivore,
 				/obj/item/storage/box/ingredients/delights,
 				/obj/item/storage/box/ingredients/exotic,
@@ -1542,6 +1544,7 @@
 	fan_out_items = TRUE
 
 	loot = list(
+				/obj/item/storage/crayons,
 				/obj/item/crafting/abraxo,
 				/obj/item/stack/crafting/metalparts/three,
 				/obj/item/stack/crafting/metalparts/five,
@@ -1756,7 +1759,6 @@
 		/obj/item/advanced_crafting_components/assembly,
 		/obj/item/advanced_crafting_components/alloys,
 		/obj/item/attachments/scope,
-		/obj/item/attachments/bullet_speed,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
 		/obj/item/attachments/auto_sear
@@ -1831,7 +1833,6 @@
 	lootdoubles = FALSE
 	loot = list(
 		/obj/item/attachments/scope,
-		/obj/item/attachments/bullet_speed,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
 		/obj/item/attachments/auto_sear
@@ -1846,3 +1847,33 @@
 		/obj/effect/spawner/bundle/f13/beretta,
 		/obj/effect/spawner/bundle/f13/ninemil
 	)
+
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration
+	name = "c-ration spawner"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "c-ration"
+	lootcount = 1
+	loot = list(
+			/obj/item/storage/box/ration/menu_one,
+			/obj/item/storage/box/ration/menu_two,
+			/obj/item/storage/box/ration/menu_three,
+			/obj/item/storage/box/ration/menu_four,
+			/obj/item/storage/box/ration/menu_five,
+			/obj/item/storage/box/ration/menu_six,
+			/obj/item/storage/box/ration/menu_seven,
+			/obj/item/storage/box/ration/menu_eight,
+			/obj/item/storage/box/ration/menu_nine,
+			/obj/item/storage/box/ration/menu_ten,
+			/obj/item/storage/box/ration/menu_eleven,
+			)
+
+/obj/effect/spawner/lootdrop/f13/ncr_k_ration
+	name = "c-ration spawner"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "k-ration"
+	lootcount = 1
+	loot = list(
+			/obj/item/storage/box/ration/ranger_breakfast,
+			/obj/item/storage/box/ration/ranger_lunch,
+			/obj/item/storage/box/ration/ranger_dinner,
+			)

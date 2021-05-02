@@ -29,6 +29,7 @@
 	var/recent_bee_visit = FALSE //Have we been visited by a bee recently, so bees dont overpollinate one plant
 	var/mob/lastuser //Last user to add reagents to a tray. Mostly for logging.
 	var/self_sustaining = FALSE //If the tray generates nutrients and water on its own
+	var/self_sustainingprog = 0
 	// Here lies irrigation. You won't be missed, because you were never used.
 
 /obj/machinery/hydroponics/Initialize()
@@ -100,9 +101,9 @@
 		update_icon()
 
 	else if(self_sustaining)
-		adjustWater(rand(1,2))
-		adjustWeeds(-1)
-		adjustPests(-1)
+		adjustWater(5)
+		adjustWeeds(-5)
+		adjustPests(-5)
 
 	if(world.time > (lastcycle + cycledelay))
 		lastcycle = world.time
@@ -119,7 +120,7 @@
 			// Nutrients deplete at a constant rate, since new nutrients can boost stats far easier.
 			apply_chemicals(lastuser)
 			if(self_sustaining)
-				reagents.remove_any(min(0.3, nutridrain))
+				//reagents.remove_any(min(0.3, nutridrain))
 			else
 				reagents.remove_any(nutridrain)
 
@@ -537,6 +538,14 @@
 
 /obj/machinery/hydroponics/attackby(obj/item/O, mob/user, params)
 	//Called when mob user "attacks" it with object O
+	if(istype(O, /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia))
+		if(!self_sustaining)
+			adjustSelfSuff(1)
+			to_chat(user, "You spread the gaia through the soil. ([self_sustainingprog] out of 7)")
+			qdel(O)
+			return
+		else
+			. = ..()
 	if(istype(O, /obj/item/reagent_containers) )  // Syringe stuff (and other reagent containers now too)
 		var/obj/item/reagent_containers/reagent_source = O
 
@@ -775,6 +784,12 @@
 /obj/machinery/hydroponics/proc/adjustWeeds(adjustamt)
 	weedlevel = clamp(weedlevel + adjustamt, 0, 10)
 
+/obj/machinery/hydroponics/proc/adjustSelfSuff(adjustamt)
+	if(self_sustainingprog>=6)
+		become_self_sufficient()
+	else
+		self_sustainingprog += adjustamt
+
 /obj/machinery/hydroponics/proc/spawnplant() // why would you put strange reagent in a hydro tray you monster I bet you also feed them blood
 	var/list/livingplants = list(/mob/living/simple_animal/hostile/tree, /mob/living/simple_animal/hostile/killertomato)
 	var/chosen = pick(livingplants)
@@ -793,6 +808,11 @@
 	flags_1 = NODECONSTRUCT_1
 	unwrenchable = FALSE
 
+/obj/machinery/hydroponics/soil/pot //Not actually hydroponics at all! Honk!
+	name = "Growing pot"
+	desc = "A growing pot. <b>Alt-Click</b> to empty the pot's nutrients."
+	icon_state = "plantpot"
+
 /obj/machinery/hydroponics/soil/update_icon_lights()
 	return // Has no lights
 
@@ -809,7 +829,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 /obj/machinery/hydroponics/soil //Not actually hydroponics at all! Honk!
 	name = "soil"
-	desc = "A patch of dirt. <b>Alt-Click</b> to empty the soil's nutrients."
+	desc = "A patch of dirt."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "soil"
 	circuit = null
@@ -840,3 +860,8 @@
 	. += "<span class='notice'><b>Alt-Click</b> to empty the tray's nutrients.</span>"
 	if(in_range(user, src) || isobserver(user))
 		. += "<span class='notice'>You might be able to discern a plant's harvest by examining it <b>closer</b>.</span>"
+
+/obj/machinery/hydroponics/proc/become_self_sufficient() // Ambrosia Gaia effect
+	visible_message("<span class='boldnotice'>[src] begins to glow with a beautiful light!</span>")
+	self_sustaining = TRUE
+	update_icon()

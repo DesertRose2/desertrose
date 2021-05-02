@@ -509,7 +509,6 @@
 	burst_shot_delay = 3
 	can_suppress = FALSE
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	spread = 10
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -517,7 +516,6 @@
 	suppressor_y_offset = 19
 
 /obj/item/gun/ballistic/automatic/smg10mm
-	spawnwithmagazine = FALSE
 	name = "10mm submachine gun"
 	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
 	icon_state = "smg10mm"
@@ -533,7 +531,6 @@
 	burst_shot_delay = 2.5
 	can_suppress = FALSE //we dont have sprites therefore cease
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	spread = 18
 	can_suppress = TRUE
 	suppressor_state = "10mm_suppressor"
@@ -553,7 +550,6 @@
 	burst_shot_delay = 2
 	can_suppress = FALSE
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	extra_damage = -4
 	can_scope = TRUE
 	scope_state = "AEP7_scope"
@@ -574,7 +570,6 @@
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	can_scope = TRUE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
@@ -597,7 +592,6 @@
 	fire_delay = 4
 	burst_shot_delay = 3
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 23
@@ -619,6 +613,7 @@
 	can_unsuppress = FALSE
 	suppressed = 1
 	fire_delay = 3
+	burst_shot_delay = 2
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	can_bayonet = FALSE
 	force = 15
@@ -707,7 +702,6 @@
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4
 	can_attachments = TRUE
-	spawnwithmagazine = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 22
@@ -735,10 +729,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	extra_damage = 0
 	extra_penetration = 0
-	fire_delay = 5
+	fire_delay = 6
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	spawnwithmagazine = FALSE
 	can_bayonet = FALSE
 	can_suppress = TRUE
 	can_attachments = TRUE
@@ -807,7 +799,6 @@
 	can_scope = TRUE
 	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
-	spawnwithmagazine = FALSE
 	knife_x_offset = 24
 	knife_y_offset = 21
 	burst_size = 1
@@ -1038,47 +1029,6 @@
 	update_icon()
 	return
 
-/obj/item/gun/ballistic/automatic/shotgun/neostead
-	name = "neostead 2000"
-	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
-	icon_state = "neostead"
-	fire_delay = 4
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	var/toggled = FALSE
-	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
-
-/obj/item/gun/ballistic/automatic/shotgun/neostead/examine(mob/user)
-	. = ..()
-	. += "<span class='notice'>Alt-click to switch tubes.</span>"
-
-/obj/item/gun/ballistic/automatic/shotgun/neostead/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new mag_type(src)
-
-/obj/item/gun/ballistic/automatic/shotgun/neostead/attack_self(mob/living/user)
-	. = ..()
-	if(!magazine.contents.len)
-		toggle_tube(user)
-
-/obj/item/gun/ballistic/automatic/shotgun/neostead/proc/toggle_tube(mob/living/user)
-	var/current_mag = magazine
-	var/alt_mag = alternate_magazine
-	magazine = alt_mag
-	alternate_magazine = current_mag
-	toggled = !toggled
-	if(toggled)
-		to_chat(user, "You switch to tube B.")
-	else
-		to_chat(user, "You switch to tube A.")
-
-/obj/item/gun/ballistic/automatic/shotgun/neostead/AltClick(mob/living/user)
-	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
-		return
-	toggle_tube(user)
-
 /obj/item/gun/ballistic/automatic/shotgun/riot
 	name = "breacher shotgun" //name changed to distinguish from /obj/item/gun/ballistic/shotgun/riot
 	desc = "A compact riot shotgun designed to fight in close quarters."
@@ -1284,7 +1234,8 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	suppressed = 1
-	can_attachments = FALSE
+	can_attachments = TRUE
+	can_automatic = TRUE
 	burst_size = 1
 	automatic_burst_overlay = FALSE
 	//automatic = 0

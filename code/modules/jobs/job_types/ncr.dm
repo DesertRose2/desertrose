@@ -16,6 +16,7 @@
 	satchel = /obj/item/storage/backpack/satchel/trekker
 	ears = /obj/item/radio/headset/headset_ncr
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
+	l_pocket = /obj/item/book/manual/ncr/jobguide
 
 /datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -27,6 +28,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 
 /*
 Colonel
@@ -570,7 +572,7 @@ Rear Echelon
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/m1carbine=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv=3)
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=3)
 
 /*
 Trooper
@@ -778,7 +780,7 @@ Veteran Ranger
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 3,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/clothing/accessory/armband/med/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,

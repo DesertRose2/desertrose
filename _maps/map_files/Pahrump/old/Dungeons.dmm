@@ -10663,7 +10663,7 @@
 /area/f13/vault)
 "DN" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -13544,12 +13544,12 @@
 /area/f13/vault)
 "Lp" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
-/obj/item/reagent_containers/food/snacks/f13/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
@@ -14956,11 +14956,11 @@
 /area/f13/vault)
 "OI" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
-/obj/item/reagent_containers/food/snacks/f13/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
+/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
@@ -15400,8 +15400,8 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/restraints/handcuffs,
 /obj/item/gun/ballistic/automatic/pistol/n99,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
@@ -15423,8 +15423,8 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/restraints/handcuffs,
 /obj/item/gun/ballistic/automatic/pistol/n99,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
@@ -15442,8 +15442,8 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/restraints/handcuffs,
 /obj/item/gun/ballistic/automatic/pistol/n99,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
@@ -15468,8 +15468,8 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/restraints/handcuffs,
 /obj/item/gun/ballistic/automatic/pistol/n99,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
@@ -18414,12 +18414,12 @@
 /obj/item/ammo_box/c10mm/jhp,
 /obj/item/ammo_box/c10mm/jhp,
 /obj/item/ammo_box/c10mm/jhp,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
+/obj/item/ammo_box/magazine/m10mm_adv/simple,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 10
 	},

@@ -337,6 +337,7 @@
 	icon_state = "caravan_shotgun"
 	item_state = "dshotgun1"
 	force = 20
+	extra_damage = 3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	sawn_desc = "Omar's coming!"
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
@@ -375,6 +376,48 @@
 		var/obj/item/melee/transforming/energy/W = A
 		if(W.active)
 			sawoff(user)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	name = "neostead 2000"
+	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
+	icon_state = "neostead"
+	fire_delay = 4
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	var/toggled = FALSE
+	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Alt-click to switch tubes.</span>"
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize()
+	. = ..()
+	if (!alternate_magazine)
+		alternate_magazine = new mag_type(src)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/attack_self(mob/living/user)
+	. = ..()
+	if(!magazine.contents.len)
+		toggle_tube(user)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/proc/toggle_tube(mob/living/user)
+	var/current_mag = magazine
+	var/alt_mag = alternate_magazine
+	magazine = alt_mag
+	alternate_magazine = current_mag
+	toggled = !toggled
+	if(toggled)
+		to_chat(user, "You switch to tube B.")
+	else
+		to_chat(user, "You switch to tube A.")
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/AltClick(mob/living/user)
+	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	toggle_tube(user)
+
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
 	name = "city-killer combat shotgun"
@@ -439,7 +482,8 @@
 	item_state = "trenchgun"
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
-	extra_damage = 3
+	extra_damage = 6
+	bayonet_state = "trenchgun"
 	knife_x_offset = 23
 	knife_y_offset = 14
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench

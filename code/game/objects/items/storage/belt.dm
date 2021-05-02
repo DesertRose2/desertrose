@@ -741,6 +741,7 @@
 		/obj/item/ammo_box/a308,
 		/obj/item/ammo_box/c4570,
 		/obj/item/ammo_box/a50MG,
+		/obj/item/ammo_box/c45rev,
 		/obj/item/gun/energy/laser/solar,
 		/obj/item/gun/energy/laser/pistol,
 		/obj/item/gun/energy/laser/plasma/pistol,
@@ -777,6 +778,12 @@
 
 /obj/item/storage/belt/holster/ranger4570/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/sequoia(src)
+	new /obj/item/ammo_box/c4570(src)
+	new /obj/item/ammo_box/c4570(src)
+	new /obj/item/ammo_box/c4570(src)
+
+/obj/item/storage/belt/holster/ranger4570bayonet/PopulateContents()
+	new /obj/item/gun/ballistic/revolver/sequoia/bayonet(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)

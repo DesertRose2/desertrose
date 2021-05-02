@@ -26,9 +26,20 @@
 			salvage += M
 	if(LAZYLEN(salvage))
 		for(var/turf/open/indestructible/ground/outside/desert/M in salvage)
-			M.icon = 'icons/effects/landmarks_static.dmi'
-			M.icon_state = "scan"
+			var/obj/effect/temp_visual/detector_overlay/oldC = locate(/obj/effect/temp_visual/detector_overlay) in M
+			if(oldC)
+				qdel(oldC)
+			new /obj/effect/temp_visual/detector_overlay(M)
 
+/obj/effect/temp_visual/detector_overlay
+	plane = FULLSCREEN_PLANE
+	layer = FLASH_LAYER
+	icon = 'icons/effects/ore_visuals.dmi'
+	icon_state = "scan"
+	appearance_flags = 0 //to avoid having TILE_BOUND in the flags, so that the 480x480 icon states let you see it no matter where you are
+	duration = 35
+	pixel_x = -224
+	pixel_y = -224
 
 /obj/item/components
 	name = "crafting items"
@@ -900,11 +911,6 @@
 	desc = "Improves stability and recoil, attach to a compatible weapon. Cannot be removed."
 	icon_state = "recoilcomp"
 
-/obj/item/attachments/bullet_speed
-	name = "improved barrel"
-	desc = "Improves bullet speed, attach to a compatible weapon. Cannot be removed."
-	icon_state = "barrel"
-
 /obj/item/attachments/burst_improvement
 	name = "burst cam"
 	desc = "Increases burst size, attach to a compatible weapon. Cannot be removed."
@@ -934,7 +940,9 @@
 				/obj/item/stack/sheet/metal/ten,
 				/obj/item/stack/sheet/cloth/five,
 				/obj/item/stack/sheet/leather/five,
-				/obj/item/scrap/research
+				/obj/item/scrap/research,
+				/obj/item/stock_parts/cell/ammo/ec,
+				/obj/item/stack/crafting/goodparts
 				)
 
 /obj/item/salvage/crafting
@@ -968,15 +976,13 @@
 	name = "Advanced pre-war salvage"
 	desc = "Some advanced pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "goodsalvage"
-	Loot = list(/obj/item/stack/crafting/goodparts/five,
-				/obj/item/blueprint/research,
+	Loot = list(/obj/item/blueprint/research,
 				/obj/item/advanced_crafting_components/receiver,
 				/obj/item/advanced_crafting_components/assembly,
 				/obj/item/advanced_crafting_components/alloys,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
 				/obj/item/weldingtool/advanced,
 				/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/stock_parts/cell/ammo/ec,
 				/obj/item/stock_parts/cell/ammo/ecp,
 				/obj/item/megaphone)
 
@@ -1062,7 +1068,7 @@
 			prefix = "Legendary "
 	
 	B.extra_damage += (dmgmod)
-	B.extra_penetration += (penmod/30)
+	B.extra_penetration += (penmod/60)
 	B.fire_delay += (spdmod/5)
 	B.name = prefix + B.name
 	B.tinkered += 1
@@ -1110,7 +1116,7 @@
 			prefix = "Legendary "
 	
 	E.extra_damage += (dmgmod)
-	E.extra_penetration += (penmod/30)
+	E.extra_penetration += (penmod/60)
 	E.fire_delay += (spdmod/5)
 	//E.ammo_type[1].delay += spdmod
 	E.name = prefix + E.name
@@ -1154,10 +1160,10 @@
 		if(20 to 100)
 			prefix = "Legendary "
 
-	A.armor.linemelee += tiermod*2.5
-	A.armor.linebullet += tiermod*2.5
-	A.armor.linelaser += tiermod*2.5
-	A.slowdown += (spdmod/50)
+	A.armor.linemelee += tiermod*3
+	A.armor.linebullet += tiermod*3
+	A.armor.linelaser += tiermod*3
+	A.slowdown += (spdmod/75)
 	A.name = prefix + A.name
 	A.tinkered += 1
 	A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]; Speed: [A.slowdown]"
@@ -1199,10 +1205,10 @@
 		if(20 to 100)
 			prefix = "Legendary "
 
-	H.armor.linemelee += tiermod*2.5
-	H.armor.linebullet += tiermod*2.5
-	H.armor.linelaser += tiermod*2.5
-	H.slowdown += (spdmod/50)
+	H.armor.linemelee += tiermod*3
+	H.armor.linebullet += tiermod*3
+	H.armor.linelaser += tiermod*3
+	H.slowdown += (spdmod/75)
 	H.name = prefix + H.name
 	H.tinkered += 1
 	H.desc += " Armor: Melee: [H.armor.linemelee], Bullet: [H.armor.linebullet], Laser: [H.armor.linelaser]; Speed: [H.slowdown]"
@@ -1215,11 +1221,11 @@
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
 	if(prob(20))
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))//ups raider to salvaged
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b(user.loc)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
 			return
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/hotrod))//ups hotrod to salvaged
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b(user.loc)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
 			return
 		if(istype(A, /obj/item/clothing/suit/armor/f13/power_armor/t45b))
@@ -1238,11 +1244,11 @@
 	var/obj/item/clothing/head/helmet/f13/power_armor/H = W
 	if(prob(20))
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm))//ups raider to salvaged
-			new /obj/item/clothing/head/helmet/f13/power_armor/t45b(user.loc)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
 			return
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/hotrod))//ups hotrod to salvaged
-			new /obj/item/clothing/head/helmet/f13/power_armor/t45b(user.loc)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
 			return
 		if(istype(H, /obj/item/clothing/head/helmet/f13/power_armor/t45b))
@@ -1299,4 +1305,4 @@
 		item = pick(vhigh)
 		new item(user.loc)
 
-	to_chat(usr, "You tinker and manage to create [item.name].")
+	//to_chat(usr, "You tinker and manage to create [item.name].") wat
