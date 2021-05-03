@@ -343,7 +343,7 @@
 	name = "energy cell"
 	id = "ec-full"
 	build_path = /obj/item/stock_parts/cell/ammo/ec
-	materials = list(/datum/material/iron = 10000, /datum/material/uranium = 1500)
+	materials = list(/datum/material/iron = 10000, /datum/material/uranium = 300)
 	category = list("initial", "Basic Ammo")
 
 /* --Tier 3 Ammo and Magazines -- */
@@ -493,7 +493,7 @@
 /datum/design/ammolathe/mfc
 	name = "microfusion cell"
 	id = "mfc-full"
-	materials = list(/datum/material/iron = 15000, /datum/material/uranium = 3000)
+	materials = list(/datum/material/iron = 15000, /datum/material/uranium = 600)
 	build_path = /obj/item/stock_parts/cell/ammo/mfc
 	category = list("initial", "Intermediate Ammo")
 
@@ -595,6 +595,6 @@
 /datum/design/ammolathe/ecp
 	name = "electron charge pack"
 	id = "icell"
-	materials = list(/datum/material/iron = 25000, /datum/material/uranium = 3500)
+	materials = list(/datum/material/iron = 25000, /datum/material/uranium = 750)
 	build_path = /obj/item/stock_parts/cell/ammo/ecp
 	category = list("initial", "Advanced Ammo")
