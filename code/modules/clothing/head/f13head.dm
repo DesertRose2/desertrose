@@ -829,7 +829,7 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/f13/diohat
-	name = "gunfigher's ten gallon"
+	name = "gunfighter's ten gallon"
 	desc = "(V) A rigid white felt hat, with a flat wide brim and high crown. This hat's been through some shit, let alone the wearer."
 	icon_state = "diohat"
 	item_state = "diohat"

@@ -771,7 +771,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/diosuit
-	name = "gunfigher's overcoat"
+	name = "gunfighter's overcoat"
 	desc = "(IV) A thick double-breasted red leather overcoat. This piece has seen a lot of wear and tear, with stitching and repairs speckling it all over."
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	icon_state = "diosuit"
