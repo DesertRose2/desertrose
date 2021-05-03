@@ -1,5 +1,5 @@
 /datum/crafting_recipe/workbench
-	name = "workbench"
+	name = "Workbench"
 	result = /obj/machinery/workbench
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
 				/obj/item/lighter = 1,
@@ -14,7 +14,7 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/stove
-	name = "cook stove"
+	name = "Cook stove"
 	result = /obj/machinery/microwave/stove
 	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
 				/obj/item/stack/crafting/metalparts = 1,
@@ -28,7 +28,7 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/bellystove
-	name = "pot belly stove"
+	name = "Pot belly stove"
 	result = /obj/structure/campfire/stove
 	reqs = list(/obj/item/stack/crafting/metalparts = 3,
 				/obj/item/stack/crafting/goodparts = 2,
@@ -39,7 +39,7 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/trading_machine
-	name = "vending machine"
+	name = "Vending machine"
 	result = /obj/machinery/trading_machine
 	reqs = list(/obj/item/stack/sheet/metal = 20,
 				/obj/item/stack/crafting/metalparts = 10,
@@ -52,7 +52,7 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/shower
-	name = "shower"
+	name = "Shower"
 	result = /obj/machinery/shower
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 10)
@@ -62,7 +62,7 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/grill
-	name = "grill"
+	name = "Grill"
 	result = /obj/machinery/grill
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 10,
@@ -73,23 +73,13 @@
 	subcategory = CAT_TOOL
 
 /datum/crafting_recipe/barrelfire
-	name = "stoke barrel fire"
+	name = "Stoke barrel fire"
 	result = /obj/structure/campfire/barrel
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 15,
 				/obj/item/stack/sheet/metal = 10)
 	time = 80
 	category = CAT_MISC
 	subcategory = CAT_TOOL
-
-/datum/crafting_recipe/USAeyebot
-	name = "Propaganda eyebot"
-	result = /mob/living/simple_animal/pet/dog/eyebot
-	reqs = list(/obj/item/stack/crafting/electronicparts = 5,
-				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/crafting/goodparts = 2)
-	tools = list(TOOL_WORKBENCH)
-	time = 40
-	category = CAT_ROBOT
 
 /datum/crafting_recipe/showercurtain
 	name = "Shower Curtains"
@@ -179,3 +169,13 @@
 	time = 10
 	category = CAT_MISC
 	subcategory = CAT_TOOL
+
+/datum/crafting_recipe/USAeyebot
+	name = "Propaganda eyebot"
+	result = /mob/living/simple_animal/pet/dog/eyebot
+	reqs = list(/obj/item/stack/crafting/electronicparts = 5,
+				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/stack/crafting/goodparts = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 40
+	category = CAT_ROBOT

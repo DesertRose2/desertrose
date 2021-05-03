@@ -1,3 +1,7 @@
+////////////
+//Forging//
+////////////
+
 /datum/crafting_recipe/forge
 	name = "Forge"
 	result = /obj/machinery/workbench/forge
@@ -10,8 +14,96 @@
 				/obj/item/wirecutters = 1,
 				/obj/item/stack/sheet/metal = 50)
 	time = 400
-	category = CAT_MISC
-	subcategory = CAT_TOOL
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/stick
+	name = "Wooden Handle"
+	time = 30
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 1)
+	result = /obj/item/stick
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/swordhilt
+	name = "Sword Hilt"
+	time = 30
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 2)
+	result = /obj/item/swordhandle
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/toolboxhammer
+	name = "Toolbox Hammer"
+	result = /obj/item/melee/smith/hammer/toolbox
+	tools = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
+	reqs = list(/obj/item/storage/toolbox = 1,
+							/obj/item/stack/sheet/metal = 4,
+							/obj/item/stack/rods = 2)
+	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/tableanvil
+	name = "Table Anvil"
+	result = /obj/structure/anvil/obtainable/table
+	time = 300
+	reqs = list(/obj/item/stack/sheet/metal = 4,
+				/obj/item/stack/rods = 2)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/sandvil
+	name = "Sandstone Anvil"
+	result = /obj/structure/anvil/obtainable/sandstone
+	time = 300
+	reqs = list(/obj/item/stack/sheet/mineral/sandstone = 24)
+	tools = list(TOOL_CROWBAR)
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/basaltblock
+	name = "Sintered Basalt Block"
+	result = /obj/item/basaltblock
+	time = 200
+	reqs = list(/obj/item/stack/ore/glass/basalt = 50)
+	tools = list(TOOL_WELDER)
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/basaltanvil
+	name = "Basalt Anvil"
+	result = /obj/structure/anvil/obtainable/basalt
+	time = 200
+	reqs = list(/obj/item/basaltblock = 5)
+	tools = list(TOOL_CROWBAR)
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/furnace
+	name = "Sandstone Furnace"
+	result = /obj/structure/furnace
+	time = 300
+	reqs = list(/obj/item/stack/sheet/mineral/sandstone = 15,
+	/obj/item/stack/sheet/metal = 4,
+	/obj/item/stack/rods = 2)
+	tools = list(TOOL_CROWBAR)
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+/datum/crafting_recipe/barrelfire
+	name = "Stoke barrel fire"
+	result = /obj/structure/campfire/barrel
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 15,
+				/obj/item/stack/sheet/metal = 10)
+	time = 80
+	category = CAT_WEAPONRY
+	subcategory = CAT_MISCWEP
+
+//KNIVES//
 
 /datum/crafting_recipe/butchers
 	name = "Butchers Knife"
@@ -182,7 +274,6 @@
 	tools = list(TOOL_FORGE)
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
-
 
 //polearms
 
@@ -385,7 +476,7 @@
 	subcategory = CAT_MELEE
 
 /datum/crafting_recipe/cosmicknife
-	name = "cosmic knife"
+	name = "Cosmic Knife"
 	result = /obj/item/kitchen/knife/cosmic
 	reqs = list(/obj/item/kitchen/knife/cosmicdirty = 1,
 				/obj/item/crafting/abraxo = 1)
@@ -395,7 +486,7 @@
 	time = 30
 
 /datum/crafting_recipe/cosmicknifeheated
-	name = "superheated cosmic knife"
+	name = "Superheated Cosmic Knife"
 	result = /obj/item/kitchen/knife/cosmicheated
 	reqs = list(/obj/item/kitchen/knife/cosmic = 1,
 				/datum/reagent/fuel = 25)
@@ -403,131 +494,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 	time = 40
-
-//armorhelmets
-
-/datum/crafting_recipe/salvagePA
-	name = "Salvaged PA Helmet"
-	result = /obj/item/clothing/head/helmet/f13/tribal
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/sheet/cloth = 3)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/bighorn
-	name = "Bighorner Helmet"
-	result = /obj/item/clothing/head/helmet/f13/fiend_reinforced
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 1,
-				/obj/item/stack/sheet/cloth = 6)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/metalhelmet
-	name = "Metal Helmet"
-	result = /obj/item/clothing/head/helmet/knight/f13/metal/reinforced
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/swag
-	name = "Flame Metal Helmet"
-	result = /obj/item/clothing/head/helmet/knight/f13/rider
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/potonheaddamn
-	name = "Salvaged Metal Helmet"
-	result = /obj/item/clothing/head/f13/pot
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 1)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/salvageweld
-	name = "Salvaged Welding Mask"
-	result = /obj/item/clothing/head/welding/f13/fire
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/obj/item/stack/sheet/cloth = 1)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/*
-/datum/crafting_recipe/legionaire
-	name = "Legionaire Helmet"
-	result = /obj/item/clothing/head/helmet/roman/legionaire
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_FORGE
-	subcategory = CAT_FORGEARMOR
-*/
-
-/datum/crafting_recipe/glad
-	name = "Gladiator Helmet"
-	result = /obj/item/clothing/head/helmet/gladiator
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/salvecomb
-	name = "Salvaged Combat Helmet"
-	result = /obj/item/clothing/head/helmet/f13/raidercombathelmet
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 30,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/mmask
-	name = "Metal Mask"
-	result = /obj/item/clothing/head/helmet/f13/metalmask/mk2
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-//armors
-
-/datum/crafting_recipe/heavytribe
-	name = "Heavy Tribal Armor"
-	result = /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 20,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-/datum/crafting_recipe/lighttribe
-	name = "Light Tribal Armor"
-	result = /obj/item/clothing/suit/armor/f13/tribe_armor
-	time = 600
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
 
 /*
 /datum/crafting_recipe/plate
@@ -562,26 +528,4 @@
 	subcategory = CAT_FORGEARMOR
 */
 
-//shoe
 
-/datum/crafting_recipe/plateboot
-	name = "Plate Boots"
-	result = /obj/item/clothing/shoes/f13/military/plated
-	time = 100
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
-//glove
-
-/datum/crafting_recipe/plateglove
-	name = "Plate Gloves"
-	result = /obj/item/clothing/gloves/legion/plated
-	time = 100
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/sheet/cloth = 5)
-	tools = list(TOOL_FORGE)
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
