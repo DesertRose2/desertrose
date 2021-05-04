@@ -79,7 +79,8 @@ Elder
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1)
+		/obj/item/gun/ballistic/automatic/pistol/n99=1
+		)
 
 /*
 Head Paladin
@@ -100,8 +101,7 @@ Head Paladin
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentstand, //Tribeam laser and 10mm pistol
-	/datum/outfit/loadout/sentvet, //Pulse rifle and AEP7
-	/datum/outfit/loadout/sentheavy //Gatling laser
+	/datum/outfit/loadout/sentheavy //Gauss and 10mm pistol
 	)
 
 	outfit = /datum/outfit/job/bos/f13sentinel
@@ -123,7 +123,7 @@ Head Paladin
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-
+//reminder to add CQC, pain train
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
@@ -137,31 +137,29 @@ Head Paladin
 	id = 			/obj/item/card/id/dogtag
 	neck = /obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1)
-
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/melee/powerfist=1 \
+		)
+	
 /datum/outfit/loadout/sentstand
-	name = "Shock Head Paladin"
-	l_hand = /obj/item/gun/energy/laser/scatter
+	name = "Assault Head Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/scatter=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
-
-/datum/outfit/loadout/sentvet
-	name = "Veteran Head Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/ionrifle=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
+		/obj/item/grenade/clusterbuster/smoke=1
 		)
 
 /datum/outfit/loadout/sentheavy
 	name = "Heavy Head Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpack=1,
+		/obj/item/gun/ballistic/automatic/m72=1,
+		/obj/item/ammo_box/magazine/m2mm=3,
+		/obj/item/grenade/chem_grenade/teargas=1
 		)
-
 
 /*
 Head Scribe
@@ -181,8 +179,9 @@ Head Scribe
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/hsstand, //Pulse pistol, and medbeam
-	/datum/outfit/loadout/hspract //Needler and hypospray
+	/datum/outfit/loadout/hssword,
+	/datum/outfit/loadout/hsshield,
+	/datum/outfit/loadout/hsquill
 	)
 
 	outfit = /datum/outfit/job/bos/f13headscribe
@@ -211,24 +210,35 @@ Head Scribe
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/shield/energy=1, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=2, \
-		/obj/item/reagent_containers/dropper/SR/NotVault = 1
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1 \
 		)
 
-/datum/outfit/loadout/hsstand
-	name = "Medicinal Expert"
+/datum/outfit/loadout/hssword
+	name = "Sword Leader"
 	backpack_contents = list(
-		/obj/item/gun/energy/ionrifle/carbine=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/gun/medbeam=1
+		/obj/item/book/granter/crafting_recipe/blueprint/glock86=1,
+		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/advanced_crafting_components/flux = 1,
+		/obj/item/advanced_crafting_components/conductors = 1,
+		/obj/item/advanced_crafting_components/alloys = 1
 		)
 
-/datum/outfit/loadout/hspract
-	name = "Administrative Leader"
+/datum/outfit/loadout/hsshield
+	name = "Shield Leader"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/needler=1,
+		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/clothing/head/helmet/f13/power_armor/t45b=1,
+		/obj/item/clothing/suit/armor/f13/power_armor/t45b=1,
+		/obj/item/book/granter/trait/pa_wear=1
+		)
+
+/datum/outfit/loadout/hsquill
+	name = "Quill Leader"
+	backpack_contents = list(
+		/obj/item/clothing/glasses/hud/health/night=1,
+		/obj/item/defibrillator/compact=1,
 		/obj/item/ammo_box/needleap=2,
 		/obj/item/reagent_containers/hypospray/CMO=1
 		)
@@ -251,9 +261,8 @@ Head Knight
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/capstand, //AER9 and 10mm pistol
-	/datum/outfit/loadout/capsap, //glock86a and 2 blocks of c4
-	/datum/outfit/loadout/capalt //Riot shotgun
+	/datum/outfit/loadout/captech,
+	/datum/outfit/loadout/capscout
 	)
 
 	outfit = /datum/outfit/job/bos/f13knightcap
@@ -267,7 +276,6 @@ Head Knight
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/bos/f13knightcap
 	name = "Head Knight"
@@ -277,43 +285,39 @@ Head Knight
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	glasses =       /obj/item/clothing/glasses/night
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id = 			/obj/item/card/id/dogtag
-	backpack_contents = list(
+	backpack_contents = list(		
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
-/datum/outfit/loadout/capstand
-	name = "Standard"
+/datum/outfit/loadout/captech
+	name = "Technician Captain"
 	backpack_contents = list(
+		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/construction/rcd/industrial=1,		
 		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2
 		)
 
-/datum/outfit/loadout/capsap
-	name = "Close Support"
+/datum/outfit/loadout/capscout
+	name = "Scout Captain"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/ar=1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault=2,
-		/obj/item/gun/energy/laser/plasma/glock=1,
-		/obj/item/stock_parts/cell/ammo/ec=2
-		)
-
-/datum/outfit/loadout/capalt
-	name = "Warden-Defender"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/riot=1,
-		/obj/item/storage/fancy/ammobox/lethalshot=2,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/gun/energy/laser/pistol=1
-		)
+		/obj/item/clothing/glasses/night=1,
+		/obj/item/binoculars=1,
+		/obj/item/book/granter/trait/trekking=1,
+		/obj/item/gun/energy/laser/wattz2k=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3
+	)
 
 /*
 Star Paladin
@@ -362,27 +366,30 @@ Star Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
-	neck = /obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
+		/obj/item/stock_parts/cell/ammo/mfc=2, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
 /datum/outfit/loadout/spaladina
-	name = "Long-Range Support Star Paladin"
+	name = "Senior Vanguard"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/m72=1,
-		/obj/item/ammo_box/magazine/m2mm=3,
-		/obj/item/gun/energy/laser/plasma/glock=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/grenade/flashbang=2,
+		/obj/item/grenade/smokebomb=2
 		)
 
 /datum/outfit/loadout/spaladinc
-	name = "Mainline Star Paladin"
+	name = "Senior Sternguard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2
+		/obj/item/grenade/chem_grenade/teargas=2,
+		/obj/item/grenade/barrier=2
 		)
 
 /*
@@ -433,48 +440,47 @@ Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	neck = /obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/melee/powerfist=1, \
+		/obj/item/stock_parts/cell/ammo/mfc=2, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
 /datum/outfit/loadout/paladina
-	name = "Firesupport Junior Paladin"
+	name = "Junior Vanguard"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine=1,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/grenade/flashbang=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinb
-	name = "Frontline Junior Paladin"
+	name = "Junior Sternguard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/stock_parts/cell/ammo/ecp=2,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/grenade/chem_grenade/teargas=1,
+		/obj/item/grenade/barrier=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinc
-	name = "Firesupport Paladin"
+	name = "Vanguard"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine=1,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/grenade/flashbang=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
 /datum/outfit/loadout/paladind
-	name = "Frontline Paladin"
+	name = "Sternguard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/stock_parts/cell/ammo/ecp=2,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/grenade/chem_grenade/teargas=1,
+		/obj/item/grenade/barrier=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
@@ -495,6 +501,12 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
+
+	loadout_options = list(
+	/datum/outfit/loadout/proctorsw,
+	/datum/outfit/loadout/proctorsh,
+	/datum/outfit/loadout/proctorq
+	)
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
@@ -519,11 +531,35 @@ Proctor
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/pistol=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/reagent_containers/hypospray/CMO=1)
+		/obj/item/storage/survivalkit_aid_adv=1 \
+		)
+
+/datum/outfit/loadout/proctorsw
+	name = "Senior Sword Scribe"
+	backpack_contents = list(
+		/obj/item/book/granter/crafting_recipe/blueprint/aer9=1,
+		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/advanced_crafting_components/flux = 1,
+		/obj/item/advanced_crafting_components/conductors = 1
+		)
+
+/datum/outfit/loadout/proctorsh
+	name = "Senior Shield Scribe"
+	backpack_contents = list(
+		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/book/granter/trait/pa_wear=1
+		)
+
+/datum/outfit/loadout/proctorq
+	name = "Senior Quill Scribe"
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/CMO,
+		/obj/item/clothing/glasses/hud/health/night=1,
+		/obj/item/defibrillator/compact=1
+		)
 
 /*
 Scribe
@@ -542,8 +578,12 @@ Scribe
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-	/datum/outfit/loadout/scribea,
-	/datum/outfit/loadout/scribeb,
+	/datum/outfit/loadout/scribejsw,
+	/datum/outfit/loadout/scribesw,
+	/datum/outfit/loadout/scribejsh,
+	/datum/outfit/loadout/scribesh,
+	/datum/outfit/loadout/scribejq,
+	/datum/outfit/loadout/scribeq
 	)
 
 	outfit = /datum/outfit/job/bos/f13scribe
@@ -569,10 +609,12 @@ Scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec=2, \
 		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
 		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2)
+		/obj/item/stock_parts/cell/ammo/ec=2, \
+		/obj/item/storage/survivalkit_aid_adv=1 \
+	)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -580,16 +622,56 @@ Scribe
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
-/datum/outfit/loadout/scribea
-	name = "Junior Scribe"
+/datum/outfit/loadout/scribejsw
+	name = "Junior Sword Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+		/obj/item/advanced_crafting_components/flux = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1
 		)
 
-/datum/outfit/loadout/scribeb
-	name = "Scribe"
+/datum/outfit/loadout/scribesw
+	name = "Sword Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+		/obj/item/advanced_crafting_components/flux = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1
+		)
+
+/datum/outfit/loadout/scribejsh
+	name = "Junior Shield Scribe"
+	backpack_contents = list(
+		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/storage/belt/utility/full=1,
+		/obj/item/book/granter/trait/pa_wear=1
+		)
+
+/datum/outfit/loadout/scribesh
+	name = "Shield Scribe"
+	backpack_contents = list(
+		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/storage/belt/utility/full=1,
+		/obj/item/book/granter/trait/pa_wear=1
+		)
+
+/datum/outfit/loadout/scribejq
+	name = "Junior Quill Scribe"
+	backpack_contents = list(
+		/obj/item/clothing/glasses/hud/health=1,
+		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/defibrillator/compact=1
+		)
+
+
+/datum/outfit/loadout/scribeq
+	name = "Quill Scribe"
+	backpack_contents = list(
+		/obj/item/clothing/glasses/hud/health=1,
+		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/defibrillator/compact=1
 		)
 
 /*
@@ -609,14 +691,20 @@ datum/job/bos/f13seniorknight
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //AER9
-	/datum/outfit/loadout/sknightb, //lever shotgun and teleshield
+	/datum/outfit/loadout/sknighta, 
+	/datum/outfit/loadout/sknightb, 
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+/datum/outfit/job/bos/f13seniorknight/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13seniorknight
 	name = "Star Knight"
@@ -629,30 +717,35 @@ datum/job/bos/f13seniorknight
 	belt = 			/obj/item/storage/belt/military
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	id = 			/obj/item/card/id/dogtag
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma/glock=1, \
-		/obj/item/stock_parts/cell/ammo/ec=2)
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
+		/obj/item/stock_parts/cell/ammo/mfc=2, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		)
 
 /datum/outfit/loadout/sknighta
-	name = "Footknight"
+	name = "Engineer Senior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/stock_parts/cell/ammo/ecp=2,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/construction/rcd=1,
+		/obj/item/storage/belt/utility/full/engi=1,
+		/obj/item/grenade/plastic/x4=1
 		)
 
 /datum/outfit/loadout/sknightb
-	name = "Knight-Defender"
+	name = "Scout Senior"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/riot=1,
-		/obj/item/storage/fancy/ammobox/lethalshot=2,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/gun/energy/laser/pistol=1
+		/obj/item/clothing/glasses/night=1,
+		/obj/item/binoculars=1,
+		/obj/item/book/granter/trait/trekking=1
 		)
 
 /*
@@ -672,8 +765,8 @@ Knight
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-	/datum/outfit/loadout/knighta, //AER9
-	/datum/outfit/loadout/knightb, //lever shotgun and teleshield
+	/datum/outfit/loadout/knighta,
+	/datum/outfit/loadout/knightb,
 	/datum/outfit/loadout/knightc,
 	/datum/outfit/loadout/knightd
 	)
@@ -692,45 +785,51 @@ Knight
 	belt = 			/obj/item/storage/belt/military
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	id = 			/obj/item/card/id/dogtag
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/stock_parts/cell/ammo/ec=2)
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
+		/obj/item/stock_parts/cell/ammo/mfc=2, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		)
 
 /datum/outfit/loadout/knighta
-	name = "Junior Footknight"
+	name = "Engineer Junior"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2
+		/obj/item/grenade/plastic/c4=1,
+		/obj/item/storage/belt/utility/full=1,
+		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightb
-	name = "Junior Knight-Defender"
+	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/shotgun/trench=1,
-		/obj/item/storage/fancy/ammobox/lethalshot=2
+		/obj/item/clothing/glasses/night=1,
+		/obj/item/binoculars=1,
+		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightc
-	name = "Footknight"
+	name = "Engineer"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2
+		/obj/item/grenade/plastic/c4=1,
+		/obj/item/storage/belt/utility/full=1,
+		/obj/item/clothing/accessory/bos/knight=1
 		)
 
 /datum/outfit/loadout/knightd
-	name = "Knight-Defender"
+	name = "Scout"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/shotgun/trench=1,
-		/obj/item/storage/fancy/ammobox/lethalshot=2,
-		/obj/item/shield/riot/tele=1
+		/obj/item/clothing/glasses/night=1,
+		/obj/item/binoculars=1,
+		/obj/item/clothing/accessory/bos/knight=1
 		)
 /*
 Initiate
@@ -782,8 +881,9 @@ Initiate
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, 
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, 
 		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/clothing/accessory/bos/initiateK=1
@@ -796,7 +896,9 @@ Initiate
 	glasses =		/obj/item/clothing/glasses/science
 	gloves =		/obj/item/clothing/gloves/color/latex
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
+		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/clothing/accessory/bos/initiateS=1
 		)
@@ -841,17 +943,18 @@ Off-Duty
 	name = "BoS Off-Duty"
 	jobtype = /datum/job/bos/f13offdutybos
 	backpack = /obj/item/storage/backpack
-	ears = 			/obj/item/radio/headset
+	ears = 			/obj/item/radio/headset/headset_bos
 	uniform =		/obj/item/clothing/under/syndicate
 	belt = 			/obj/item/storage/belt/military/army
 	shoes = 		/obj/item/clothing/shoes/combat
 	gloves = 		/obj/item/clothing/gloves/combat
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
-		/obj/item/stack/medical/gauze=1,
-		/obj/item/encryptionkey/headset_bos=1,
-		/obj/item/kitchen/knife/combat=1
+		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/flashlight/seclite=1, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
 /datum/outfit/loadout/offa
@@ -873,7 +976,7 @@ Off-Duty
 		)
 
 /datum/outfit/loadout/offd
-	name = "Knight-Captain"
+	name = "Head Knight"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knightcaptain=1
 		)
@@ -921,7 +1024,7 @@ Off-Duty
 		)
 
 /datum/outfit/loadout/offl
-	name = "Sentinel"
+	name = "Head Paladin"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/sentinel=1
 		)

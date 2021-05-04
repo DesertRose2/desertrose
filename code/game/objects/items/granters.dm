@@ -774,6 +774,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/scoutcarbine)
 
+/obj/item/book/granter/crafting_recipe/blueprint/glock86
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/glock86)
+
 /obj/item/book/granter/trait/chemistry
 	name = "Chemistry for Wastelanders"
 	desc = "A useful book on chemistry."
