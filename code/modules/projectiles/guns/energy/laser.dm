@@ -380,6 +380,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
+/obj/item/gun/energy/laser/scatter/baby
+	name = "multilas carbine"
+	desc = "A cut down version of the tribeam laser rifle."
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/baby)
+
 /obj/item/gun/energy/laser/plasma
 	name ="plasma rifle"
 	item_state = "plasma"

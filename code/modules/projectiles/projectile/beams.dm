@@ -319,6 +319,11 @@
 	damage = 21
 	armour_penetration = 0.25
 
+/obj/item/projectile/beam/laser/tribeam/baby
+	name = "multilas laser"
+	damage = 9
+	armour_penetration = 0.25
+
 /obj/item/projectile/f13plasma //Plasma rifle
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
