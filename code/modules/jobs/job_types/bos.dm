@@ -363,6 +363,7 @@ Star Paladin
 	jobtype = /datum/job/bos/f13seniorpaladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
+	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -380,17 +381,22 @@ Star Paladin
 		)
 
 /datum/outfit/loadout/spaladina
-	name = "Senior Vanguard"
+	name = "Senior Assault Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/flashbang=2,
-		/obj/item/grenade/smokebomb=2
+		/obj/item/grenade/chem_grenade/teargas=2,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/classic_baton/telescopic=1
 		)
 
 /datum/outfit/loadout/spaladinc
-	name = "Senior Sternguard"
+	name = "Senior Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/grenade/barrier=2
+		/obj/item/grenade/smokebomb=2,
+		/obj/item/grenade/frag=2,
+		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1
 		)
 
 /*
@@ -410,8 +416,8 @@ Paladin
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladina, //Carbine and aep7
-	/datum/outfit/loadout/paladinb, //rcw and n99
+	/datum/outfit/loadout/paladina,
+	/datum/outfit/loadout/paladinb, 
 	/datum/outfit/loadout/paladinc,
 	/datum/outfit/loadout/paladind
 	)
@@ -438,11 +444,12 @@ Paladin
 	jobtype = /datum/job/bos/f13paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
+	glasses=		/obj/item/clothing/glasses/meson
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
-	suit_store =	/obj/item/gun/energy/laser/aer9
+	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/flashlight/seclite=1, \
@@ -454,34 +461,42 @@ Paladin
 		)
 
 /datum/outfit/loadout/paladina
-	name = "Junior Vanguard"
+	name = "Junior Assault Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/smokebomb=1,
+		/obj/item/grenade/chem_grenade/teargas=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/shield/riot/tele=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinb
-	name = "Junior Sternguard"
+	name = "Junior Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/grenade/barrier=1,
+		/obj/item/grenade/smokebomb=1,
+		/obj/item/grenade/frag=1,
+		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinc
-	name = "Vanguard"
+	name = "Assault Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/smokebomb=1,
+		/obj/item/grenade/chem_grenade/teargas=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/shield/riot/tele=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
 /datum/outfit/loadout/paladind
-	name = "Sternguard"
+	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/grenade/barrier=1,
+		/obj/item/grenade/smokebomb=1,
+		/obj/item/grenade/frag=1,
+		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
@@ -721,7 +736,6 @@ datum/job/bos/f13seniorknight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
-	glasses =       /obj/item/clothing/glasses/night
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
@@ -755,6 +769,7 @@ datum/job/bos/f13seniorknight
 	backpack_contents = list(
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1,
 		/obj/item/book/granter/trait/trekking=1
 		)
 
@@ -822,8 +837,9 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/clothing/glasses/night=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
@@ -838,8 +854,9 @@ Knight
 /datum/outfit/loadout/knightd
 	name = "Scout"
 	backpack_contents = list(
-		/obj/item/clothing/glasses/night=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/binoculars=1,
+		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 /*
