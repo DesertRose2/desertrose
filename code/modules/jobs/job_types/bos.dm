@@ -476,7 +476,7 @@ Paladin
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/grenade/frag=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1
+		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
@@ -496,7 +496,7 @@ Paladin
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/grenade/frag=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1
+		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
