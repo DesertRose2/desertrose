@@ -123,7 +123,7 @@ Head Paladin
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-//reminder to add CQC, pain train
+
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
@@ -209,6 +209,7 @@ Head Scribe
 	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	id = 			/obj/item/card/id/dogtag
+	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
@@ -238,8 +239,7 @@ Head Scribe
 	name = "Quill Leader"
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health/night=1,
-		/obj/item/defibrillator/compact=1,
-		/obj/item/ammo_box/needleap=2,
+		/obj/item/defibrillator/compact/combat=1,
 		/obj/item/reagent_containers/hypospray/CMO=1
 		)
 
@@ -291,6 +291,7 @@ Head Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id = 			/obj/item/card/id/dogtag
+	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(		
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
@@ -443,7 +444,7 @@ Paladin
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
 	suit_store =	/obj/item/gun/energy/laser/aer9
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
@@ -530,11 +531,11 @@ Proctor
 	suit = 			/obj/item/clothing/suit/f13/seniorscribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
+	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/storage/survivalkit_aid_adv=1 \
+		/obj/item/kitchen/knife/combat=1 \
 		)
 
 /datum/outfit/loadout/proctorsw
@@ -543,22 +544,25 @@ Proctor
 		/obj/item/book/granter/crafting_recipe/blueprint/aer9=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/flux = 1,
-		/obj/item/advanced_crafting_components/conductors = 1
+		/obj/item/advanced_crafting_components/conductors = 1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/proctorsh
 	name = "Senior Shield Scribe"
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/chief/full=1,
-		/obj/item/book/granter/trait/pa_wear=1
+		/obj/item/book/granter/trait/pa_wear=1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/proctorq
 	name = "Senior Quill Scribe"
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/CMO,
-		/obj/item/clothing/glasses/hud/health/night=1,
-		/obj/item/defibrillator/compact=1
+		/obj/item/reagent_containers/hypospray/CMO=1,
+		/obj/item/clothing/glasses/hud/health=1,
+		/obj/item/defibrillator/compact=1,
+		/obj/item/storage/survivalkit_aid_adv=1
 		)
 
 /*
@@ -608,12 +612,12 @@ Scribe
 	suit = 			/obj/item/clothing/suit/f13/scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
+	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
 		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/storage/survivalkit_aid_adv=1 \
+		/obj/item/stock_parts/cell/ammo/ec=2 \
 	)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -628,7 +632,8 @@ Scribe
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat,
 		/obj/item/advanced_crafting_components/flux = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/scribesw
@@ -637,16 +642,17 @@ Scribe
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat,
 		/obj/item/advanced_crafting_components/flux = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/scribejsh
 	name = "Junior Shield Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
-		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/storage/belt/utility/full=1,
-		/obj/item/book/granter/trait/pa_wear=1
+		/obj/item/book/granter/trait/pa_wear=1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/scribesh
@@ -654,7 +660,8 @@ Scribe
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/storage/belt/utility/full=1,
-		/obj/item/book/granter/trait/pa_wear=1
+		/obj/item/book/granter/trait/pa_wear=1,
+		/obj/item/storage/survivalkit_aid=1
 		)
 
 /datum/outfit/loadout/scribejq
@@ -662,7 +669,8 @@ Scribe
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
-		/obj/item/defibrillator/compact=1
+		/obj/item/defibrillator/compact=1,
+		/obj/item/storage/survivalkit_aid_adv=1
 		)
 
 
@@ -671,7 +679,8 @@ Scribe
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/scribe=1,
-		/obj/item/defibrillator/compact=1
+		/obj/item/defibrillator/compact=1,
+		/obj/item/storage/survivalkit_aid_adv=1 
 		)
 
 /*
@@ -718,6 +727,7 @@ datum/job/bos/f13seniorknight
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	id = 			/obj/item/card/id/dogtag
 	suit_store =	/obj/item/gun/energy/laser/aer9
+	neck = 			/obj/item/storage/belt/holster
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
@@ -756,8 +766,8 @@ Knight
 	title = "Knight"
 	flag = F13KNIGHT
 	faction = "BOS"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -786,12 +796,13 @@ Knight
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	id = 			/obj/item/card/id/dogtag
 	suit_store =	/obj/item/gun/energy/laser/aer9
+	neck = 			/obj/item/storage/belt/holster
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
@@ -881,11 +892,11 @@ Initiate
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/storage/survivalkit_aid=1,
 		/obj/item/gun/ballistic/automatic/pistol/n99=1, 
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, 
-		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
+		/obj/item/storage/toolbox/mechanical=1,
 		/obj/item/clothing/accessory/bos/initiateK=1
 		)
 
@@ -896,10 +907,11 @@ Initiate
 	glasses =		/obj/item/clothing/glasses/science
 	gloves =		/obj/item/clothing/gloves/color/latex
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/storage/survivalkit_aid=1,
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/book/granter/trait/lowsurgery=1,
 		/obj/item/clothing/accessory/bos/initiateS=1
 		)
 
@@ -950,7 +962,7 @@ Off-Duty
 	gloves = 		/obj/item/clothing/gloves/combat
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
