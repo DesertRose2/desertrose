@@ -7493,8 +7493,8 @@
 /area/f13/legion)
 "fph" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/tribalbow,
-/obj/item/gun/ballistic/automatic/tribalbow,
+/obj/item/bowquiver,
+/obj/item/bowquiver,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "fpl" = (

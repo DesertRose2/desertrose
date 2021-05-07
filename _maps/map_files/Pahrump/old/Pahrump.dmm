@@ -11159,9 +11159,9 @@
 /area/f13/village)
 "aJz" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/tribalbow,
-/obj/item/gun/ballistic/automatic/tribalbow,
-/obj/item/gun/ballistic/automatic/tribalbow,
+/obj/item/bowquiver,
+/obj/item/bowquiver,
+/obj/item/bowquiver,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "aJA" = (
@@ -36318,9 +36318,6 @@
 	},
 /turf/open/water,
 /area/f13/tunnel)
-"hhC" = (
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/village)
 "hhS" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/structure/spider/stickyweb,
@@ -59284,7 +59281,7 @@ aae
 aae
 aae
 aHF
-hhC
+aKC
 aKC
 aKC
 aJx
