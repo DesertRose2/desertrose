@@ -235,6 +235,16 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/datum/crafting_recipe/recharge_bow
+	name = "Recharge Quiver"
+	result = /obj/item/bowquiver
+	time = 80
+	reqs = list(/obj/item/bowquiver = 1,
+				/obj/item/stack/sheet/metal = 10)
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
 /datum/crafting_recipe/tribe_quiver
 	name = "Craft Quiver and Arrows"
 	result = /obj/item/bowquiver
