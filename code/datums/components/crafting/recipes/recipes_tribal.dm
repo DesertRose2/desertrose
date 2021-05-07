@@ -237,10 +237,10 @@
 
 /datum/crafting_recipe/tribe_quiver
 	name = "Craft Quiver and Arrows"
-	result = /obj/item/storage/belt/tribe_quiver
+	result = /obj/item/bowquiver
 	time = 80
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 8,
-				/obj/item/stack/sheet/metal = 4,
+	reqs = list(/obj/item/gun/ballistic/automatic/tribalbow = 1,
+				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/sheet/leather = 1)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY

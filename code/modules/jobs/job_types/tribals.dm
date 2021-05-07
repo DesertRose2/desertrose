@@ -352,7 +352,7 @@ Hunter
 /datum/outfit/loadout/ranged
 	name = "Ranged"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/tribalbow=1,
+		/obj/item/bowquiver=1,
 		/obj/item/storage/belt/tribe_quiver=1,
 		/obj/item/kitchen/knife/combat/bone=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=1

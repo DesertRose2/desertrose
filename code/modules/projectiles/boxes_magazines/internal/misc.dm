@@ -14,4 +14,4 @@
 	name = "bow internal magazine"
 	ammo_type = /obj/item/ammo_casing/caseless/arrow
 	caliber = "arrow"
-	max_ammo = 1
+	max_ammo = 21

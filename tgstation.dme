@@ -3721,4 +3721,5 @@
 #include "modular_citadel\code\modules\reagents\chemistry\recipes\fermi.dm"
 #include "modular_citadel\code\modules\reagents\objects\clothes.dm"
 #include "modular_citadel\code\modules\reagents\objects\items.dm"
+#include "code\modules\projectiles\guns\misc\bowquiver.dm"
 // END_INCLUDE

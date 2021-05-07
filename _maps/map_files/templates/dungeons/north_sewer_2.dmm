@@ -2652,7 +2652,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "Yk" = (
-/obj/item/gun/ballistic/automatic/tribalbow{
+/obj/item/bowquiver{
 	desc = "A simple wooden bow with small pieces of turquiose. This one looks particularly blood-covered. Who the fuck brings a /BOW/ to a /BUNKER/"
 	},
 /obj/effect/mob_spawn/human/corpse,
