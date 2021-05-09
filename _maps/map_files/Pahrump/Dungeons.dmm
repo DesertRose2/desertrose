@@ -265,6 +265,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/cell_charger,
 /obj/structure/table/wood,
+/obj/item/gun/ballistic/automatic/greasegun,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ayt" = (
@@ -3047,9 +3048,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "eDm" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "eDn" = (
@@ -3252,11 +3253,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
-"eRb" = (
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "rubblepillar"
-	},
-/area/f13/caves)
 "eRf" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -7446,7 +7442,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -8079,9 +8075,7 @@
 "mas" = (
 /obj/structure/timeddoor,
 /obj/machinery/light/fo13colored/Red,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "rubblepillar"
-	},
+/turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
 "mav" = (
 /obj/structure/table/wood,
@@ -8272,12 +8266,6 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland)
-"mmk" = (
-/obj/structure/timeddoor,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "rubblepillar"
-	},
-/area/f13/bunker)
 "mmy" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -8847,7 +8835,9 @@
 	desc = "A short drive back south to Miller in this rusty bucket of bolts, hopefully with gained supplies in tow";
 	height = 1;
 	id = "ncrmini";
-	name = "drive south"
+	layer = 5;
+	name = "drive south";
+	pixel_y = -20
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain1"
@@ -9258,11 +9248,11 @@
 	},
 /area/f13/bunker)
 "nFn" = (
-/mob/living/simple_animal/hostile/ghoul,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /obj/item/trash/waffles,
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "nFP" = (
@@ -10350,6 +10340,7 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "piW" = (
@@ -14233,11 +14224,9 @@
 /area/f13/vault)
 "vkU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/scorched/ranged{
-	faction = list("hostile")
-	},
 /obj/item/storage/trash_stack,
 /obj/effect/decal/waste,
+/mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "vlg" = (
@@ -15771,12 +15760,6 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"xph" = (
-/obj/structure/timeddoor,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "rubbleslab"
-	},
-/area/f13/bunker)
 "xpD" = (
 /turf/closed/wall/f13/tunnel,
 /area/f13/caves)
@@ -16228,13 +16211,6 @@
 "xXn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"xXB" = (
-/mob/living/simple_animal/hostile/ghoul/scorched/ranged{
-	faction = list("hostile")
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/f13/wood,
 /area/f13/bunker)
 "xXG" = (
 /obj/structure/table/wood,
@@ -46341,7 +46317,7 @@ bsh
 bsh
 bsh
 bsh
-mmk
+qYk
 aUx
 cIT
 cIT
@@ -46597,8 +46573,8 @@ bsh
 bsh
 bsh
 bsh
-eRb
-xph
+bsh
+qYk
 gwy
 fku
 qsb
@@ -46855,7 +46831,7 @@ byG
 bsh
 bsh
 bsh
-mmk
+qYk
 gwy
 qsb
 qsb
@@ -48397,7 +48373,7 @@ bsh
 bsh
 rog
 bsh
-xph
+qYk
 wvj
 vwf
 vId
@@ -49179,7 +49155,7 @@ cIT
 bQs
 gwy
 ibz
-vPZ
+uXT
 gwy
 laJ
 koh
@@ -63431,7 +63407,7 @@ gKr
 woQ
 cKh
 cfZ
-xXB
+euI
 vuq
 abc
 mqp
