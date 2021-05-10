@@ -12512,8 +12512,8 @@
 /turf/open/floor/plating/f13,
 /area/f13/vault)
 "rPC" = (
+/obj/structure/stone_tile/slab,
 /mob/living/simple_animal/hostile/gecko,
-/obj/structure/stone_tile/slab/cracked,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "rRE" = (
@@ -21330,7 +21330,7 @@ xJE
 jHu
 okW
 qdv
-cmd
+rPC
 xYc
 okW
 erI
@@ -21587,7 +21587,7 @@ iSQ
 mcE
 oJF
 qdv
-rPC
+gqg
 fax
 oJF
 okW
