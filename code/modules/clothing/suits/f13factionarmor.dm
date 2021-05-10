@@ -494,7 +494,7 @@
 
 
 /obj/item/clothing/suit/f13/scribe
-	name = "Brotherhood Scribe's robe"
+	name = "brotherhood Scribe's robe"
 	desc = "(III) A red cloth robe worn by the Brotherhood of Steel Scribes."
 	icon_state = "scribe"
 	item_state = "scribe"
@@ -521,13 +521,13 @@
 	name = "fieldscribe suit"
 	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/f13/elder
 	name = "brotherhood Elder's robe"
