@@ -2389,10 +2389,6 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/bunker)
-"dDh" = (
-/obj/structure/stone_tile/surrounding/cracked,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "dDm" = (
 /obj/structure/door_assembly/door_assembly_hatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -7913,10 +7909,6 @@
 /obj/item/flashlight/lamp/green,
 /turf/open/floor/carpet/black,
 /area/f13/vault)
-"lxg" = (
-/obj/structure/stone_tile/block/burnt,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "lxn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/debris/v3,
@@ -13574,10 +13566,6 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/bunker)
-"tKI" = (
-/obj/structure/stone_tile/slab/cracked,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "tLi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -22122,8 +22110,8 @@ rTu
 vHC
 oky
 qdv
-wBk
-wBk
+qdv
+qdv
 qdv
 qdv
 qdv
@@ -22379,8 +22367,8 @@ jcD
 tfZ
 omI
 qdv
-wBk
-wBk
+qdv
+qdv
 heT
 heT
 heT
@@ -22636,8 +22624,8 @@ jSV
 cmd
 gqg
 erI
-tKI
-wBk
+gqg
+qdv
 heT
 heT
 heT
@@ -22893,8 +22881,8 @@ cmd
 cmd
 lGr
 gdb
-lxg
-wBk
+fax
+qdv
 heT
 heT
 heT
@@ -23150,8 +23138,8 @@ gqg
 kqy
 fax
 kqy
-dDh
-wBk
+rUI
+qdv
 heT
 heT
 heT
@@ -23385,7 +23373,7 @@ heT
 qdv
 qdv
 qdv
-mZA
+qdv
 qdv
 oky
 qdv
@@ -23407,8 +23395,8 @@ vIo
 tkL
 omI
 qdv
-wBk
-wBk
+qdv
+qdv
 heT
 heT
 heT
@@ -23640,11 +23628,11 @@ bsh
 heT
 heT
 heT
-koh
-koh
-koh
-koh
-koh
+heT
+heT
+heT
+heT
+heT
 heT
 heT
 qdv
@@ -23897,11 +23885,11 @@ bsh
 heT
 heT
 heT
-koh
-koh
-koh
-koh
-koh
+heT
+heT
+heT
+heT
+heT
 heT
 heT
 oky
@@ -24154,11 +24142,11 @@ bsh
 heT
 heT
 heT
-koh
-koh
-koh
-koh
-koh
+heT
+heT
+heT
+heT
+heT
 heT
 heT
 qdv
@@ -24411,11 +24399,11 @@ bsh
 heT
 heT
 heT
-koh
-koh
-koh
-koh
-koh
+heT
+heT
+heT
+heT
+heT
 heT
 heT
 qdv
