@@ -19,7 +19,6 @@ Main doors: ACCESS_CAPTAIN 20
 	backpack = 	/obj/item/storage/backpack/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
 	ears = 		/obj/item/radio/headset/headset_bos
-	uniform =	/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 	/obj/item/clothing/shoes/combat/swat
 	gloves = 	/obj/item/clothing/gloves/combat
 	id = 		/obj/item/card/id/dogtag
@@ -71,11 +70,12 @@ Elder
 	name = "Elder"
 	jobtype = /datum/job/bos/f13elder
 	pa_wear = TRUE
+	uniform =		/obj/item/clothing/under/f13/bos/fatigues
 	suit = 			/obj/item/clothing/suit/f13/elder
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/laer
-	neck = /obj/item/clothing/neck/cloak/bos/right
+	neck =			/obj/item/clothing/neck/cloak/bos/right
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -100,8 +100,8 @@ Head Paladin
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sentstand, //Tribeam laser and 10mm pistol
-	/datum/outfit/loadout/sentheavy //Gauss and 10mm pistol
+	/datum/outfit/loadout/sentstand, //AER14
+	/datum/outfit/loadout/sentheavy  //Gauss
 	)
 
 	outfit = /datum/outfit/job/bos/f13sentinel
@@ -127,7 +127,7 @@ Head Paladin
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
-	uniform = 		/obj/item/clothing/under/f13/recon
+	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
@@ -135,7 +135,7 @@ Head Paladin
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck = /obj/item/clothing/neck/cloak/bos/paladin
+	neck =			/obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
@@ -148,9 +148,13 @@ Head Paladin
 /datum/outfit/loadout/sentstand
 	name = "Assault Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/grenade/clusterbuster/smoke=1
+		/obj/item/gun/energy/laser/aer14=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/grenade/flashbang=2,
+		/obj/item/grenade/chem_grenade/teargas=2,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/classic_baton/telescopic=1
 		)
 
 /datum/outfit/loadout/sentheavy
@@ -158,7 +162,9 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/m72=1,
 		/obj/item/ammo_box/magazine/m2mm=3,
-		/obj/item/grenade/chem_grenade/teargas=1
+		/obj/item/grenade/smokebomb=2,
+		/obj/item/grenade/barrier=2,
+		/obj/item/binoculars=1
 		)
 
 /*
@@ -203,7 +209,7 @@ Head Scribe
 	name = "Head Scribe"
 	jobtype = /datum/job/bos/f13headscribe
 	chemwhiz = TRUE
-	uniform = 		/obj/item/clothing/under/syndicate/brotherhood
+	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	accessory = 	/obj/item/clothing/accessory/bos/headscribe
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
@@ -262,7 +268,8 @@ Head Knight
 
 	loadout_options = list(
 	/datum/outfit/loadout/captech,
-	/datum/outfit/loadout/capscout
+	/datum/outfit/loadout/capscout,
+	/datum/outfit/loadout/capwarden
 	)
 
 	outfit = /datum/outfit/job/bos/f13knightcap
@@ -285,7 +292,7 @@ Head Knight
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -305,9 +312,9 @@ Head Knight
 	name = "Technician Captain"
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/chief/full=1,
-		/obj/item/construction/rcd/industrial=1,		
-		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/construction/rcd/industrial=1,
+		/obj/item/gun/energy/laser/scatter=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,
 		)
 
 /datum/outfit/loadout/capscout
@@ -318,6 +325,18 @@ Head Knight
 		/obj/item/book/granter/trait/trekking=1,
 		/obj/item/gun/energy/laser/wattz2k=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3
+	)
+
+/datum/outfit/loadout/capwarden
+	name = "Warden Captain"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/shotgun/riot=1,
+		/obj/item/ammo_box/magazine/d12g=3,
+		/obj/item/restraints/handcuffs=1,
+		/obj/item/assembly/flash/handheld=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/classic_baton/telescopic=1
 	)
 
 /*
@@ -337,8 +356,8 @@ Star Paladin
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-		/datum/outfit/loadout/spaladina, //M72 Gauss rifle and Glock
-		/datum/outfit/loadout/spaladinc, //AER14 and N99. No more gatling. Sorry gamers; will balance it further and make it obtainable through other means.
+		/datum/outfit/loadout/spaladina, //Upfront, rush focused paladin
+		/datum/outfit/loadout/spaladinc, //Area denial, range focused paladin
 		)
 
 	outfit = /datum/outfit/job/bos/f13seniorpaladin
@@ -365,7 +384,7 @@ Star Paladin
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
-	uniform = 		/obj/item/clothing/under/f13/recon
+	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
@@ -394,7 +413,7 @@ Star Paladin
 	name = "Senior Heavy Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/frag=2,
+		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1
 		)
@@ -445,7 +464,7 @@ Paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	glasses=		/obj/item/clothing/glasses/meson
-	uniform = 		/obj/item/clothing/under/f13/recon
+	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
@@ -474,7 +493,7 @@ Paladin
 	name = "Junior Heavy Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/frag=1,
+		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
@@ -494,7 +513,7 @@ Paladin
 	name = "Heavy Paladin"
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/frag=1,
+		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/paladin=1
@@ -539,7 +558,7 @@ Proctor
 	name = "Proctor"
 	jobtype = /datum/job/bos/f13seniorscribe
 	chemwhiz = TRUE
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	shoes = 		/obj/item/clothing/shoes/combat
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	accessory = 	/obj/item/clothing/accessory/bos/seniorscribe
@@ -621,7 +640,7 @@ Scribe
 	name = "Scribe"
 	jobtype = /datum/job/bos/f13scribe
 	chemwhiz = TRUE
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	shoes = 		/obj/item/clothing/shoes/combat
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	suit = 			/obj/item/clothing/suit/f13/scribe
@@ -716,7 +735,8 @@ datum/job/bos/f13seniorknight
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta, 
-	/datum/outfit/loadout/sknightb, 
+	/datum/outfit/loadout/sknightb,
+	/datum/outfit/loadout/sknightc 
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -735,7 +755,7 @@ datum/job/bos/f13seniorknight
 	jobtype = /datum/job/bos/f13seniorknight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
@@ -761,7 +781,7 @@ datum/job/bos/f13seniorknight
 	backpack_contents = list(
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
-		/obj/item/grenade/plastic/x4=1
+		/obj/item/grenade/plastic/c4=2
 		)
 
 /datum/outfit/loadout/sknightb
@@ -773,6 +793,14 @@ datum/job/bos/f13seniorknight
 		/obj/item/book/granter/trait/trekking=1
 		)
 
+/datum/outfit/loadout/sknightc 
+	name = "Security Senior"
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs=1,
+		/obj/item/assembly/flash/handheld=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/melee/classic_baton/telescopic=1
+		)
 /*
 Knight
 */
@@ -793,7 +821,9 @@ Knight
 	/datum/outfit/loadout/knighta,
 	/datum/outfit/loadout/knightb,
 	/datum/outfit/loadout/knightc,
-	/datum/outfit/loadout/knightd
+	/datum/outfit/loadout/knightd,
+	/datum/outfit/loadout/knighte,
+	/datum/outfit/loadout/knightf
 	)
 
 	outfit = /datum/outfit/job/bos/f13knight
@@ -805,7 +835,7 @@ Knight
 	name = "Knight"
 	jobtype = /datum/job/bos/f13knight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
@@ -837,13 +867,23 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/clothing/glasses/meson=1,
+		//obj/item/clothing/suit/armor/f13/combat/brotherhood/scout - soon:tm:
+		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightc
+	name = "Security Junior"
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/accessory/bos/juniorknight=1
+		)
+
+/datum/outfit/loadout/knightd
 	name = "Engineer"
 	backpack_contents = list(
 		/obj/item/grenade/plastic/c4=1,
@@ -851,14 +891,25 @@ Knight
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 
-/datum/outfit/loadout/knightd
+/datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
-		/obj/item/clothing/glasses/meson=1,
+		//obj/item/clothing/suit/armor/f13/combat/brotherhood/scout - soon:tm:
+		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
+
+/datum/outfit/loadout/knightf
+	name = "Security"
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs=1,
+		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/accessory/bos/knight=1
+		)
+
 /*
 Initiate
 */
@@ -892,7 +943,7 @@ Initiate
 	jobtype = /datum/job/bos/f13initiate
 	backpack = /obj/item/storage/backpack/explorer
 	ears = 			/obj/item/radio/headset/headset_bos
-	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	uniform =		/obj/item/clothing/under/f13/bos/bodysuit
 	shoes = 		/obj/item/clothing/shoes/combat/swat
 	gloves = 		/obj/item/clothing/gloves/combat
 
@@ -973,7 +1024,7 @@ Off-Duty
 	jobtype = /datum/job/bos/f13offdutybos
 	backpack = /obj/item/storage/backpack
 	ears = 			/obj/item/radio/headset/headset_bos
-	uniform =		/obj/item/clothing/under/syndicate
+	uniform =		/obj/item/clothing/under/f13/bos/fatigues
 	belt = 			/obj/item/storage/belt/military/army
 	shoes = 		/obj/item/clothing/shoes/combat
 	gloves = 		/obj/item/clothing/gloves/combat
