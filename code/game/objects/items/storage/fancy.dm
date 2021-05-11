@@ -134,6 +134,7 @@
 	icon_type = "b"
 	spawn_type = /obj/item/ammo_casing/shotgun/rubbershot
 	var/foldable = /obj/item/stack/sheet/cardboard
+	custom_materials = list(/datum/material/iron=4000)
 
 /obj/item/storage/fancy/ammobox/attack_self(mob/user)
 	. = ..()
@@ -386,6 +387,24 @@
 	desc = "Banned in over 36 galaxies."
 	icon_state = "shadyjim"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/mindbreaker
+
+/obj/item/storage/fancy/cigarettes/cigpack_bigboss
+	name = "\improper Big Boss Smokes"
+	desc = "For the big man, you need big boss smokes!."
+	icon_state = "bigboss"
+	spawn_type = /obj/item/clothing/mask/cigarette/bigboss
+
+/obj/item/storage/fancy/cigarettes/cigpack_pyramid
+	name = "\improper Pyramid Smokes"
+	desc = "For the fine mans Smoke."
+	icon_state = "pyramid"
+	spawn_type = /obj/item/clothing/mask/cigarette/pyramid
+
+/obj/item/storage/fancy/cigarettes/cigpack_greytort
+	name = "\improper Grey Tortoise Smokes"
+	desc = "Imported famous cigarettes from the East Coast."
+	icon_state = "greytort"
+	spawn_type = /obj/item/clothing/mask/cigarette/greytort
 
 /obj/item/storage/fancy/rollingpapers
 	name = "rolling paper pack"

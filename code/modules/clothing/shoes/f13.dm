@@ -83,6 +83,12 @@
 	icon_state = "ncr_boots"
 	item_state = "ncr"
 
+/obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	name = "officer boots"
+	desc = "A pair of well-polished brown leather calf boots fitted with straps."
+	icon_state = "ncr_officer_boots"
+	item_state = "ncr_officer_boots"
+
 /obj/item/clothing/shoes/f13/military/plated
 	name = "plated metal boots"
 	desc = "A pair of leather boots reinforced with metal toe caps and shin guards."
@@ -102,6 +108,12 @@
 	desc = "A pair of laced, heavy-duty leather boots designed for hard combat."
 	icon_state = "laced"
 	item_state = "laced"
+
+/obj/item/clothing/shoes/f13/military/desert
+	name = "desert combat boots"
+	desc = "An old pair of desert combat boots. This one seems to have a tighter fit, and a padded interior."
+	icon_state = "erin_boot"
+	item_state = "erin_boot"
 
 //Fluff
 
@@ -153,3 +165,29 @@
 	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 0, acid = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+
+/obj/item/clothing/shoes/f13/mutie
+	name = "super mutant sandals"
+	desc = "A pair of oversized sandals, likely designed for super mutants."
+	icon_state = "mutie_sandals"
+	icon_state = "mutie_sandals"
+
+/obj/item/clothing/shoes/f13/mutie/boots
+	name = "super mutant boots"
+	desc = "(III) A pair of oversized boots."
+	icon_state = "mutie_boots"
+	icon_state = "mutie_boots"
+	armor = list("tier" = 3, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+	cold_protection = FEET
+
+/obj/item/clothing/shoes/f13/mutie/boots/dark
+	icon_state = "mutie_boots_dark"
+	icon_state = "mutie_boots_dark"
+
+/obj/item/clothing/shoes/f13/mutie/boots/ncr
+	icon_state = "mutie_boots_ncr"
+	icon_state = "mutie_boots_ncr"
+
+/obj/item/clothing/shoes/f13/mutie/boots/ncr/ranger
+	icon_state = "mutie_boots_ranger"
+	icon_state = "mutie_boots_ranger"

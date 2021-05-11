@@ -71,7 +71,7 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-/obj/item/clothing/suit/armor/f13/raider/iconoclast/
+/obj/item/clothing/suit/armor/f13/raider/iconoclast
 	name = "iconoclast raider armor"
 	desc = "(IV) A rigid armor set that appears to be fashioned from a radiation suit, or a mining suit."
 	icon_state = "iconoclast"
@@ -83,9 +83,15 @@
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster
 	name = "combat duster"
-	desc = "An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
+	desc = "(IV) An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
 	icon_state = "combatduster"
 	item_state = "combatduster"
+
+/obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
+	name = "Patrol Duster"
+	desc = "(IV) What appears to be an NCR patrol ranger's armor under a green tinted duster. The armor itself looks much more well kept then the duster itself, said duster looking somewhat faded. On the back of the duster, is a symbol of a skull with an arrow piercing through the eye."
+	icon_state = "patrolduster"
+	item_state = "patrolduster"
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster/Initialize()
 	. = ..()
@@ -155,7 +161,7 @@
 
 /obj/item/clothing/suit/armor/f13/opifex
 	name = "opifex apron"
-	desc = "A heavy leather apron designed for protecting the user when metalforging. The bull insignia marks the wearer as a Opifex."
+	desc = "A heavy leather apron designed for protecting the user when metalforging. The bull insignia marks the wearer as an Opifex."
 	icon_state = "opifex_apron"
 	item_state = "opifex_apron"
 	blood_overlay_type = "armor"
@@ -170,7 +176,7 @@
 
 /obj/item/clothing/suit/armor/f13/slavelabor
 	name = "old leather strips"
-	desc = "worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
+	desc = "Worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
 	icon_state = "legslaveleather"
 	item_state = "legslaveleather"
 
@@ -191,7 +197,7 @@
 	lefthand_file = 'icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing_righthand.dmi'
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded)
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/recruit
@@ -266,7 +272,8 @@
 	name = "paladin-slayer centurion armor"
 	desc = "(VII) The armor of a Centurion who has bested one or more Brotherhood Paladins, adding pieces of his prizes to his own defense. The symbol of the Legion is crudely painted on this once-marvelous suit of armor."
 	icon_state = "palacent"
-	armor = list("tier" = 7, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	slowdown = -0.13
+	armor = list("tier" = 6, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
 	name = "Champion of Kanab's Armor"
@@ -346,6 +353,13 @@
 	item_state = "ncr_captain_armour"
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	name = "NCR officer vest"
+	desc = "(VII) A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
+	icon_state = "ncr_lt_armour"
+	item_state = "ncr_lt_armour"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	name = "NCR 3rd Scout combat armor"
 	desc = "(V) A specialized variant of combat armor issued to members of the 3rd Scout Battalion."
@@ -371,19 +385,53 @@
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
 
+/obj/item/clothing/suit/armor/f13/combat/ncr/mutant
+	name = "NCR mutant armor"
+	desc = "(V) Multiple sets of NCR patrol vests that have been fused, stitched and welded together in order to fit the frame of a Super Mutant."
+	icon_state = "mutie_ncr"
+	item_state = "mutie_ncr"
+
 /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	name = "reinforced NCR combat armor"
 	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor_mk2"
 	item_state = "ncr_armor_mk2"
 
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack
+	name = "NCR dress jacket"
+	desc = "(II) A brown dress uniform jacket intended for enlisted NCRA personnel."
+	icon_state = "ncr_dressjack"
+	item_state = "ncr_dressjack"
+	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack
+	name = "NCR dress jacket"
+	desc = "(II) A brown dress uniform jacket for commissioned NCRA personnel."
+	icon_state = "ncr_codressjack"
+	item_state = "ncr_codressjack"
+	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
+	name = "NCR officer vest"
+	desc = "(VII) A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
+	icon_state = "ncr_officer_coat"
+	item_state = "ncr_officer_coat"
+
 //NCR Ranger
 /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
 	name = "ranger recon duster"
-	desc = "(III) A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
+	desc = "(IV) A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
 	icon_state = "duster_recon"
 	item_state = "duster_recon"
-	armor = list("tier" = 3, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
+
+/obj/item/clothing/suit/armor/f13/rangerrig
+	name = "chest gear harness"
+	desc = "(IV) A handmade tactical rig. The actual rig is made of a black, fiberous cloth, being attached to a dusty desert-colored belt. A flask and two ammo pouches hang from the belt."
+	icon_state = "r_gear_rig"
+	item_state = "r_gear_rig"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/trailranger
@@ -394,18 +442,38 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.14
 
+/obj/item/clothing/suit/armor/f13/modif_r_vest
+	name = "subdued ranger vest"
+	desc = "(V) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
+	icon_state = "modif_r_vest"
+	item_state = "modif_r_vest"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutant
+	name = "mutant ranger armor"
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	icon_state = "mutie_ranger_armour"
+	item_state = "mutie_ranger_armour"
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
 	name = "modified patrol armor"
 	desc = "A customized and moderately-worn suit of patrol ranger armor. A sun-worn thick olive duster is worn over the armor."
 	icon_state = "thaxarmor"
 	item_state = "thaxarmor"
+
+/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
+	name = "ranger scout armor"
+	desc = "(V) A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
+	icon_state = "refurb_scout"
+	item_state = "refurb_scout"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
@@ -414,6 +482,13 @@
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/ncrcfjacket
+	name = "NCRCF jacket"
+	icon_state = "ncrcfjacket"
+	item_state = "ncrcfjacket"
+	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
+	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 //Brotherhood of Steel (PA in f13armor.dm)
 
@@ -483,6 +558,13 @@
 	item_state = "brotherhood_armor_mk2"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
+	name = "brotherhood armor"
+	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, bearing a series of red markings."
+	icon_state = "brotherhood_armor_outcast"
+	item_state = "brotherhood_armor_outcast"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
 //Oasis/Town
 /obj/item/clothing/suit/armor/f13/town
 	name = "town trenchcoat"
@@ -525,7 +607,8 @@
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear)
+	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
+)
 
 /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
 	name = "heavy tribal armor"
@@ -534,15 +617,19 @@
 	item_state = "heavy_tribal_armor"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 	flags_inv = HIDEJUMPSUIT
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear)
+	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
+)
 
 //Followers
 
 //Vault
 
-
-
-
+/obj/item/clothing/suit/armor/f13/riot/vault
+	name = "VTCC riot armour"
+	desc = "(VII) A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
+	icon_state = "vtcc_riot_gear"
+	item_state = "vtcc_riot_gear"
+	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 
 //THE GRAVEYARD
@@ -611,13 +698,6 @@
 	desc = "(VII) This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
-
-/obj/item/clothing/suit/armor/f13/ncrcfjacket
-	name = "NCRCF jacket"
-	icon_state = "ncrcfjacket"
-	item_state = "ncrcfjacket"
-	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/soldier
 	name = "standard issue trooper armor"

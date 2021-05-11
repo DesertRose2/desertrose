@@ -1,14 +1,15 @@
-/datum/species/gen2synth
-	name = "second generation synth"
-	id = "gen2synth"
-	say_mod = "says"
-	default_color = "F5F5DC"
+/datum/species/homunculi
+	name = "homunculi synth"
+	id = "homunculi"
+	say_mod = "states"
+	limbs_id = "homunculi"
+	default_color = "FFFFFF"
 	blacklisted = 0
-	sexes = 0
 	inherent_traits = list(TRAIT_EASYDISMEMBER,TRAIT_NO_PROCESS_FOOD,TRAIT_VIRUSIMMUNE,TRAIT_NOLIMBDISABLE,TRAIT_NOHUNGER,TRAIT_NOBREATH)
 	species_traits = list(NOEYES,NOTRANSSTING,HAS_FLESH,HAS_BONE,HAIR,ROBOTIC_LIMBS)
-	hair_alpha = 210
+	hair_alpha = 0
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
+	mutant_bodyparts = list("synth chest", "synth head")
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ipc
 	gib_types = list(/obj/effect/gibspawner/ipc, /obj/effect/gibspawner/ipc/bodypartless)
 
@@ -28,3 +29,30 @@
 	exotic_bloodtype = "HF"
 	exotic_blood_color = BLOOD_COLOR_OIL
 	species_type = "robotic"
+
+/datum/species/gen2synth/qualifies_for_rank(rank, list/features)
+	if(rank in GLOB.legion_positions) //Not sure on this one, are the Legion a fan of sentient robots?
+		return 0
+	if(rank in GLOB.brotherhood_positions) //Kill it with fire.
+		return 0
+	if(rank in GLOB.vault_positions) //How did they even get in??.
+		return 0
+	return ..()
+
+/obj/item/bodypart/chest/synth
+	name = "synthetic chest"
+	desc = "It's impolite to stare at a person's chest."
+	icon_state = "gen2synth_chest"
+	max_damage = 150
+	body_zone = BODY_ZONE_CHEST
+	body_part = CHEST
+	px_x = 0
+	px_y = 0
+
+/obj/item/bodypart/head/synth
+	name = "synthetic head"
+	desc = "Ooo, flashy."
+	icon_state = "gen2synth_head"
+	max_damage = 50
+	body_zone = BODY_ZONE_HEAD
+	body_part = HEAD

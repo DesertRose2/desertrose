@@ -384,7 +384,7 @@
 	name ="plasma rifle"
 	item_state = "plasma"
 	icon_state = "plasma"
-	fire_delay = 3.5
+	fire_delay = 4.5
 	desc = "A top of line miniaturized plasma caster built by REPCONN in the wake of the Z43-521P failure. It is supperior to all previous rifles to enter service in the USCC."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -571,6 +571,22 @@
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14)
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+
+/obj/item/gun/energy/laser/aer12
+	name = "\improper AER12 laser rifle"
+	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim"
+	icon_state = "aer12"
+	item_state = "laser-rifle9"
+	can_scope = TRUE
+	scope_state = "AEP7_scope"
+	scope_x_offset = 12
+	scope_y_offset = 20
+	fire_delay = 3.5
+	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY

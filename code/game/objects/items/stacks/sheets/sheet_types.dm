@@ -102,7 +102,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("extinguisher cabinet frame", /obj/item/wallframe/extinguisher_cabinet, 2), \
 	new/datum/stack_recipe("button frame", /obj/item/wallframe/button, 1), \
 	null, \
-	new/datum/stack_recipe("iron door", /obj/structure/simple_door/metal/store, 10, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("glass and metal door", /obj/structure/simple_door/metal/store, 10, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("lock", /obj/item/lock_construct, 1), \
 	new/datum/stack_recipe("key", /obj/item/key, 1), \
 	new/datum/stack_recipe("key chain", /obj/item/storage/keys_set, 1), \
@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new /datum/stack_recipe("Black King", /obj/structure/chess/blackking, 2, time = 10, one_per_turf = 1, on_floor = 1), \
 	)), \
 	null, \
-	new/datum/stack_recipe("metal door", /obj/structure/simple_door/metal/store, 20, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("iron door", /obj/structure/simple_door/metal/iron, 20, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("pestle", /obj/item/pestle, 1, time = 50), \
 	new/datum/stack_recipe("floodlight frame", /obj/structure/floodlight_frame, 5, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("iron ingot", /obj/item/ingot/iron, 6, time = 100), \
@@ -163,6 +163,34 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	amount = 10
 
 /obj/item/stack/sheet/metal/five
+	amount = 5
+
+/obj/item/stack/sheet/lead
+	name = "lead"
+	desc = "Sheets made out of lead."
+	singular_name = "lead sheet"
+	icon_state = "sheet-lead"
+	item_state = "sheet-lead"
+	custom_materials = list(/datum/material/lead=MINERAL_MATERIAL_AMOUNT)
+	throwforce = 10
+	flags_1 = CONDUCT_1
+	resistance_flags = FIRE_PROOF
+	merge_type = /obj/item/stack/sheet/lead
+	grind_results = list(/datum/reagent/lead = 20)
+	point_value = 2
+	//tableVariant = /obj/structure/table
+	material_type = /datum/material/lead
+
+/obj/item/stack/sheet/lead/fifty
+	amount = 50
+
+/obj/item/stack/sheet/lead/twenty
+	amount = 20
+
+/obj/item/stack/sheet/lead/ten
+	amount = 10
+
+/obj/item/stack/sheet/lead/five
 	amount = 5
 
 /obj/item/stack/sheet/metal/cyborg
@@ -255,6 +283,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 		)),
 	null, \
 	new/datum/stack_recipe("rolling pin", /obj/item/kitchen/rollingpin, 2, time = 30), \
+	new/datum/stack_recipe("chopping block", /obj/item/chopping_block, 2, time = 30), \
 	new/datum/stack_recipe("wooden bucket", /obj/item/reagent_containers/glass/bucket/wood, 2, time = 30), \
 	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 1, time = 10),\
 	new/datum/stack_recipe("wooden buckler", /obj/item/shield/riot/buckler, 20, time = 40), \
@@ -294,6 +323,8 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("seed extractor", /obj/structure/legion_extractor, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("compost bin", /obj/structure/reagent_dispensers/compostbin, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("seed bin", /obj/machinery/smartfridge/bottlerack/seedbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("grownbin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
 	))
 
 /obj/item/stack/sheet/mineral/wood
@@ -406,6 +437,7 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	new/datum/stack_recipe("mining satchel", /obj/item/storage/bag/ore, 4), \
 	new/datum/stack_recipe("medical bag", /obj/item/storage/bag/chemistry, 4), \
 	new/datum/stack_recipe("bio bag", /obj/item/storage/bag/bio, 4), \
+	new/datum/stack_recipe("casings bag", /obj/item/storage/bag/casings, 4), \
 	null, \
 	new/datum/stack_recipe("string", /obj/item/weaponcrafting/string, 1, time = 10), \
 	new/datum/stack_recipe("improvised gauze", /obj/item/stack/medical/gauze/improvised, 1, 2, 6), \
@@ -914,6 +946,7 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	loom_result = /obj/item/stack/sheet/durathread
 	grind_results = list(/datum/reagent/cellulose = 10)
 
+/*   Meat tables and Pizza toilets can go straight to hell
 /obj/item/stack/sheet/meat
 	name = "meat sheets"
 	desc = "Something's bloody meat compressed into a nice solid sheet"
@@ -948,6 +981,7 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	amount = 20
 /obj/item/stack/sheet/pizza/five
 	amount = 5
+*/
 
 /obj/item/stack/sheet/sandblock
 	name = "blocks of sand"

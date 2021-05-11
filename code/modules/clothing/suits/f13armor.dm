@@ -43,8 +43,8 @@
 	name = "combat body armor"
 	icon_state = "combat_coat"
 	item_state = "combat_coat"
-	desc = "(V) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("tier" = 5, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
+	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
 /obj/item/clothing/suit/armor/f13/kit
 	name = "armor kit"
@@ -164,10 +164,10 @@
 
 /obj/item/clothing/suit/armor/f13/combatrusted
 	name = "rusted combat armor"
-	desc = "(IV) An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
+	desc = "(V) An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
 	icon_state = "rusted_combat_armor"
 	item_state = "rusted_combat_armor"
-	armor = list("tier" = 4, "energy" = 38, "bomb" = 48, "bio" = 58, "rad" = 10, "fire" = 58, "acid" = 18)
+	armor = list("tier" = 5, "energy" = 38, "bomb" = 48, "bio" = 58, "rad" = 10, "fire" = 58, "acid" = 18)
 
 /obj/item/clothing/suit/armor/f13/combat/environmental
 	name = "environmental armor"
@@ -187,6 +187,12 @@
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
+/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+	name = "raider combat armor"
+	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
+	icon_state = "combat_armor_raider"
+	item_state = "combat_armor_raider"
+
 //Power armors, including salvaged and faction
 
 /obj/item/clothing/suit/armor/f13/power_armor
@@ -202,8 +208,15 @@
 	equip_delay_other = 60
 	strip_delay = 200
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	var/emped = 0
 	var/requires_training = TRUE
+	var/armor_block_chance = 0 //Chance for the power armor to block a low penetration projectile
+	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+	var/deflection_chance = 0 //Chance for the power armor to redirect a blocked projectile
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
 	var/mob/living/carbon/human/H = user
@@ -240,6 +253,19 @@
 				armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
 				emped = 0
 
+/obj/item/clothing/suit/armor/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+	if(check_armor_penetration(object) <= 0.15 && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
+		if(prob(armor_block_chance))
+			var/ratio = rand(0,100)
+			if(ratio <= deflection_chance)
+				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
+				return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
+			if(ismob(loc))
+				to_chat(loc, "<span class='warning'>Your power armor absorbs the projectile's impact!</span>")
+			block_return[BLOCK_RETURN_SET_DAMAGE_TO] = 0
+			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
+	return ..()
+
 /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	name = "salvaged T-45b power armor"
 	desc = "(VIII) It's a set of early-model T-45 power armor with a custom air conditioning module and stripped out servomotors. Bulky and slow, but almost as good as the real thing."
@@ -248,6 +274,17 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
+	armor_block_chance = 25
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
+	name = "restored T-45b power armor"
+	desc = "(VIII) It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
+	requires_training = TRUE
+	slowdown = 0.24
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
 	name = "salvaged NCR power armor"
@@ -257,6 +294,8 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
+	armor_block_chance = 25
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	name = "raider T-45b power armor"
@@ -266,6 +305,8 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	slowdown = 0.4
 	requires_training = FALSE
+	armor_block_chance = 20
+	deflection_chance = 5 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
 
 /obj/item/clothing/suit/armor/f13/power_armor/hotrod
 	name = "hotrod T-45b power armor"
@@ -275,14 +316,26 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	slowdown = 0.4
 	requires_training = FALSE
+	armor_block_chance = 20
+	deflection_chance = 5 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
 
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
-	name = "Vault-Tec technical power armour"
-	desc = "(VIII) ."
+	name = "Vault-Tec power armour"
+	desc = "(VIII)  A refined suit of power armour, purpose-built by the residents of Vault-115 in order to better keep the peace in their new settlement."
 	icon_state = "vaultpa"
-	item_state = "vault_pa"
+	item_state = "vaultpa"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0)
 	slowdown = 0
+	armor_block_chance = 40
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
+
+/obj/item/clothing/suit/armor/f13/power_armor/vaulttecta
+	name = "Vault-Tec technical armour"
+	desc = "(VIII)  A primative  suit of power armour, the first kind built by the residents of Vault-115 in order to fight off immediate threats."
+	icon_state = "vaulttecta"
+	item_state = "vaulttecta"
+	armor = list("tier" = 8, "energy" = 30, "bomb" = 38, "bio" = 40, "rad" = 20, "fire" = 100, "acid" = 0)
+	slowdown = 0.4
 
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
 	name = "excavator power armor"
@@ -291,6 +344,8 @@
 	item_state = "excavator"
 	slowdown = 0.5 //+0.1 from helmet
 	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0)
+	armor_block_chance = 40
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
@@ -299,6 +354,8 @@
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
 	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b"
@@ -329,13 +386,26 @@
 	item_state = "midwestgrey_pa"
 	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
 	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	armor_block_chance = 85
+	deflection_chance = 35 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
 	armor = list("tier" = 10, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/tesla
+	name = "T-51b tesla armor"
+	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer, with the added benefit of tesla coils."
+	icon_state = "t51tesla"
+	item_state = "t51tesla"
+	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
 	name = "Washington power armor"
@@ -364,6 +434,9 @@
 	slowdown = 0.16
 	armor = list("tier" = 11, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 
+	armor_block_chance = 90
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Same deflection as T-45 due to it having the same general shape.
+
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla
 	name = "T-60b tesla armor"
 	desc = "(X*) An experimental variant of T-60a power armor featuring an array of tesla coils. A small amount of protection has been sacrificed to give a chance to deflect energy projectiles."
@@ -372,7 +445,6 @@
 	slowdown = 0.15
 	armor = list("tier" = 10, "linelaser" = 25, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 	var/hit_reflect_chance = 20
-	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
@@ -387,6 +459,9 @@
 	icon_state = "advpowerarmor1"
 	item_state = "advpowerarmor1"
 	armor = list("linemelee" = 300, "linebullet" = 300, "linelaser" = 300, "energy" = 75, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0, "wound" = 90)
+
+	armor_block_chance = 100 //Enclave. 'nuff said
+	deflection_chance = 40 //40% chance to block damage from blockable bullets and redirect the bullet at a random angle. Your ride's over mutie, time to die.
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/mk2
 	name = "advanced power armor mark II"
@@ -408,7 +483,6 @@
 	item_state = "tesla"
 	armor = list("linemelee" = 200, "linebullet" = 200, "linelaser" = 300, "energy" = 95, "bomb" = 62, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0, "wound" = 80)
 	var/hit_reflect_chance = 35
-	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
@@ -510,6 +584,26 @@
 	icon_state = "vault_commandcoat"
 	item_state = "vault_commandcoat"
 	armor = list("tier" = 3)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
+	name = "Overseer's battlecoat"
+	desc = "(III) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec embroidered on the back. This one is worn by the Coalition's Overseer."
+	icon_state = "overseer_commandcoat"
+	item_state = "overseer_commandcoat"
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
+	name = "Marhsal's battlecoat"
+	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
+	icon_state = "marshal_commandcoat"
+	item_state = "marshal_commandcoat"
+	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
+	name = "armoured vault battlecoat"
+	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
+	icon_state = "armouredvault_commandcoat"
+	item_state = "armouredvault_commandcoat"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
@@ -649,14 +743,19 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "rigscustom_suit"
 	item_state = "rigscustom_suit"
 
-/obj/item/clothing/suit/toggle/armor/f13/cloakranger
+/obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
+	name = "spider riot gear"
+	desc = "A customised and faded suit of riot gear, reminiscient of that found near Hopeville in the Divide, with a pair of wrist mounted ammo pouches for easy access to spare munitions with a pair of stripes down the back made from a fire-proof material."
+	icon_state = "price_ranger"
+	item_state = "price_ranger"
+
+/obj/item/clothing/suit/toggle/armor/f13/cloakranger //Reskinned trail ranger gear
 	name = "ranger poncho"
 	desc = "(IV) A durable muslin poncho. Tough enough to bear the elements and serve as handy blanket."
 	icon_state = "ranger_cloak"
 	item_state = "ranger_cloak"
-	body_parts_covered = CHEST|GROIN|ARMS
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0) //Same armor as trail ranger gear
-	slowdown = -0.10 //Same speed boost as recon ranger gear. Lower than trail ranger speed to balance it protecting arms.
+	slowdown = -0.14 //Same speed buff as trail ranger gear
 
 /obj/item/clothing/suit/armor/f13/herbertranger //Armor wise, it's reskinned raider armor.
 	name = "weathered desert ranger armor"
@@ -668,6 +767,39 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
+	name = "Marlow gang overcoat"
+	desc = "(IV) A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	icon_state = "marlowsuit"
+	item_state = "marlowsuit"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
+	name = "gunfighter's overcoat"
+	desc = "(IV) A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
+	icon_state = "ikesuit"
+	item_state = "ikesuit"
+
+/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
+	name = "vagabond's vest"
+	desc = "(IV) A padded thick red leather vest, coated in stitched pockets and other mends."
+	icon_state = "masonsuit"
+	item_state = "masonsuit"
+
+/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -743,3 +875,26 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "recon_armor"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
+
+//Mutants
+
+/obj/item/clothing/suit/armor/f13/mutant/poncho
+	name = "mutant poncho"
+	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
+	icon_state = "mutie_poncho"
+	item_state = "mutie_poncho"
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal
+	name = "mutant armour"
+	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour"
+	item_state = "mutie_metal_armour"
+	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
+	name = "mutant armour"
+	desc = "(6) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour_mk2"
+	item_state = "mutie_metal_armour_mk2"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)

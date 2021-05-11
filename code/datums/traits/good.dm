@@ -86,6 +86,7 @@
 	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
 	medical_record_text = "Patient's dexterity belies a strong capacity for stealth."
 
+/*
 /datum/quirk/quick_step
 	name = "Quick Step"
 	desc = "You walk with determined strides, and out-pace most people when walking."
@@ -94,6 +95,7 @@
 	gain_text = "<span class='notice'>You feel determined. No time to lose.</span>"
 	lose_text = "<span class='danger'>You feel less determined. What's the rush, man?</span>"
 	medical_record_text = "Patient scored highly on racewalking tests."
+*/
 
 /datum/quirk/musician
 	name = "Musician"
@@ -178,12 +180,14 @@
 	lose_text = "<span class='danger'>You no longer feel HONGRY.</span>"
 	medical_record_text = "Patient demonstrates a disturbing capacity for eating."
 
+/* go fuck yourself idiots -superballs
 /datum/quirk/trandening
 	name = "High Luminosity Eyes"
 	desc = "When the next big fancy implant came out you had to buy one on impluse!"
 	value = 1
 	gain_text = "<span class='notice'>You have to keep up with the next big thing!.</span>"
 	lose_text = "<span class='danger'>High-tech gizmos are a scam...</span>"
+*/
 
 /datum/quirk/trandening/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -265,12 +269,12 @@
 	locked = TRUE
 
 /datum/quirk/master_gunsmith
-	name = "Master Gunsmith"
-	desc = "You're a master gunsmith, able to make weapons of previously unseen power."
+	name = "Master Tinkerer"
+	desc = "You're a master tinkerer, able to tinker extensively with weapons and armor."
 	value = 3
 	mob_trait = TRAIT_MASTER_GUNSMITH
-	gain_text = "<span class='notice'>You realize how to make great weapons.</span>"
-	lose_text = "<span class='danger'>You forget how to make weapons.</span>"
+	gain_text = "<span class='notice'>You realize how to tinker with armor and weaponry.</span>"
+	lose_text = "<span class='danger'>You forget how to tinker.</span>"
 	locked = TRUE
 
 /datum/quirk/hard_yards
@@ -316,3 +320,30 @@
 	mob_trait = TRAIT_LIGHT_STEP
 	gain_text = "<span class='notice'>You walk with a little more litheness.</span>"
 	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
+
+/datum/quirk/surgerylow
+	name = "Minor Surgery"
+	desc = "You are a somewhat adequate medical practicioner, capable of performing minor surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_LOW
+	gain_text = "<span class='notice'>You feel yourself discovering the basics of the human body.</span>"
+	lose_text = "<span class='danger'>You forget how to perform even the simplest surgery.</span>"
+	locked = TRUE
+
+/datum/quirk/surgerymid
+	name = "Intermediate Surgery"
+	desc = "You are a skilled medical practicioner, capable of performing most surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_MID
+	gain_text = "<span class='notice'>You feel yourself discovering most of the details of the human body.</span>"
+	lose_text = "<span class='danger'>You forget how to perform surgery.</span>"
+	locked = TRUE
+
+/datum/quirk/surgeryhigh
+	name = "Complex Surgery"
+	desc = "You are an expert practicioner, capable of performing almost all surgery."
+	value = 1
+	mob_trait = TRAIT_SURGERY_HIGH
+	gain_text = "<span class='notice'>You feel yourself discovering the most intricate secrets of the human body.</span>"
+	lose_text = "<span class='danger'>You forget your advanced surgical knowledge.</span>"
+	locked = TRUE
