@@ -22,7 +22,7 @@
 	build_path = /obj/item/stack/ore/blackpowder
 	category = list("initial", "Materials")
 	maxstack = 50
-	
+
 /datum/design/ammolathe/titanium
 	name = "Titanium"
 	id = "titanium"
@@ -45,7 +45,7 @@
 	name = "empty 10mm pistol magazine (10mm)"
 	id = "m10mm_adv"
 	materials = list(/datum/material/iron = 2000)
-	build_path = /obj/item/ammo_box/magazine/m10mm_adv/empty
+	build_path = /obj/item/ammo_box/magazine/m10mm_adv/simple/empty
 	category = list("initial", "Simple Magazines")
 
 /datum/design/ammolathe/m9mm
@@ -95,14 +95,14 @@
 	name = "beanbag shotgun box"
 	id = "beanbag"
 	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
-	build_path = /obj/item/storage/fancy/ammobox/beanbag
+	build_path = /obj/item/ammo_box/shotgun/bean
 	category = list("initial", "Simple Ammo")
 
 /datum/design/ammolathe/rubbershot
 	name = "rubbershot shotgun box"
 	id = "rubbershot"
 	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
-	build_path = /obj/item/storage/fancy/ammobox
+	build_path = /obj/item/ammo_box/shotgun/rubber
 	category = list("initial", "Simple Ammo")
 
 /datum/design/ammolathe/c10mm
@@ -116,7 +116,7 @@
 	name = "buckshot shotgun box"
 	id = "lethalshot"
 	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
-	build_path = /obj/item/storage/fancy/ammobox/lethalshot
+	build_path = /obj/item/ammo_box/shotgun/buck
 	category = list("initial", "Simple Ammo")
 
 /datum/design/ammolathe/a308
@@ -273,14 +273,14 @@
 	name = "magnum buckshot shotgun box"
 	id = "magnumshot"
 	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/storage/fancy/ammobox/magnumshot
+	build_path = /obj/item/ammo_box/shotgun/magnum
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/slugshot
 	name = "slug shotgun box"
 	id = "slugshot"
 	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/storage/fancy/ammobox/slugshot
+	build_path = /obj/item/ammo_box/shotgun/slug
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a556ap
@@ -469,12 +469,12 @@
 	build_path = /obj/item/ammo_box/a762box/ap
 	category = list("initial", "Intermediate Ammo")
 
-/datum/design/ammolathe/a45op
+/*/datum/design/ammolathe/a45op
 	name = ".45 ACP +P ammo box"
 	id = "a45op"
 	materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 2000)
 	build_path = /obj/item/ammo_box/c45/op
-	category = list("initial", "Intermediate Ammo")
+	category = list("initial", "Intermediate Ammo")*/
 
 /* --Tier 4 Ammo and Magazines-- */
 //Tier 4 Magazines
@@ -536,25 +536,18 @@
 	build_path = /obj/item/ammo_box/magazine/m2mm
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/a9mmop
+/*/datum/design/ammolathe/a9mmop
 	name = "9mm +P ammo box"
 	id = "a9mmop"
 	materials = list(/datum/material/iron = 19000, /datum/material/blackpowder = 3500)
 	build_path = /obj/item/ammo_box/c9mm/op
-	category = list("initial", "Advanced Ammo")
+	category = list("initial", "Advanced Ammo")*/
 
 /datum/design/ammolathe/a4570swc
 	name = ".45-70 SWC ammo box"
 	id = "a4570swc"
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 3500)
 	build_path = /obj/item/ammo_box/c4570box/swc
-	category = list("initial", "Advanced Ammo")
-
-/datum/design/ammolathe/a762jsp
-	name = "7.62mm JSP ammo box"
-	id = "a762jsp"
-	materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 3500)
-	build_path = /obj/item/ammo_box/a762box/jsp
 	category = list("initial", "Advanced Ammo")
 
 /datum/design/ammolathe/a762match

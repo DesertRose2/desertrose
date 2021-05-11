@@ -117,7 +117,7 @@ Centurion
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
 
 	loadout_options = list(
-	///datum/outfit/loadout/centheavy, //10mm SMG and powerfist
+	/datum/outfit/loadout/centheavy, //10mm SMG and powerfist
 	/datum/outfit/loadout/centassault, //9mm uzi and thermic lance
 	/datum/outfit/loadout/centbreacher //breacher shotgun and fire axe
 	)
@@ -263,6 +263,7 @@ Priestess of Mars
 	ADD_TRAIT(H, TRAIT_SPIRITUAL, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /* Decanus
 /datum/job/CaesarsLegion/Legionnaire/f13decan
@@ -740,7 +741,9 @@ Venator
 		/obj/item/ammo_box/magazine/w308=3,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legion=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1)
+		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/gun/ballistic/revolver/revolver45=1,
+		/obj/item/ammo_box/c45rev=3)
 
 /*
 Explorer
@@ -825,6 +828,7 @@ Auxilia
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /datum/outfit/loadout/auxengi
 	name = "Opifex (Blacksmith)"
@@ -912,8 +916,8 @@ Camp Follower
 
 /datum/outfit/loadout/campfollowermatron
 	name = "Mater (Matron)"
+	head = /obj/item/clothing/head/f13/legion/servant
 	suit = /obj/item/clothing/suit/apron/chef
-	mask = /obj/item/clothing/mask/bandana/auxilia
 	backpack_contents = list(
 		/obj/item/kitchen/knife/butcher=1,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus=1,
@@ -929,19 +933,19 @@ Camp Follower
 
 /datum/outfit/loadout/campfollowerhealer
 	name = "Medicus (Healer)"
+	head = /obj/item/clothing/head/f13/legion/servant
 	suit = /obj/item/clothing/suit/armor/f13/medicus
-	mask = /obj/item/clothing/mask/bandana/auxilia
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
 		/obj/item/smelling_salts/crafted=1,
-		/obj/item/clothing/under/f13/campfollowerfemale
+		/obj/item/clothing/under/f13/campfollowerfemale,
+		/obj/item/book/granter/trait/mars_teachings=1
 	)
 
 /datum/outfit/loadout/campfolloweroffduty
 	name = "Off-Duty Legionary"
 	uniform = /obj/item/clothing/under/f13/legskirt
-	shoes = /obj/item/clothing/shoes/f13/military/plated
 	mask = /obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
@@ -982,7 +986,6 @@ Slave
 
 /datum/outfit/loadout/slcook
 	name = "Servant"
-	head = /obj/item/clothing/head/f13/legion/servant
 	belt = /obj/item/kitchen/knife
 	backpack_contents = list(
 		/obj/item/radio=1,

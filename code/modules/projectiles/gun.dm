@@ -55,7 +55,6 @@
 	var/obj/item/attachments/scope
 	var/obj/item/attachments/recoil_decrease
 	var/obj/item/attachments/burst_improvement
-	var/obj/item/attachments/bullet_speed
 	var/obj/item/attachments/auto_sear
 
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
@@ -114,7 +113,7 @@
 
 	var/dualwield_spread_mult = 1		//dualwield spread multiplier
 
-	var/tinkered = 0
+	//var/tinkered = 0
 	/// Just 'slightly' snowflakey way to modify projectile damage for projectiles fired from this gun.
 //	var/projectile_damage_multiplier = 1
 
@@ -493,17 +492,7 @@
 			else
 				src.spread = 0
 			to_chat(user, "<span class='notice'>You attach \the [R] to \the [src].</span>")
-/*
-	else if(istype(I, /obj/item/attachments/bullet_speed))
-		var/obj/item/attachments/bullet_speed/B = I
-		if(!bullet_speed && can_attachments)
-			if(!user.transferItemToLoc(I, src))
-				return
-			bullet_speed = B
-			src.desc += " It has an improved barrel installed."
-			src.projectile_speed -= 0.15
-			to_chat(user, "<span class='notice'>You attach \the [B] to \the [src].</span>")
-*/
+
 	else if(istype(I, /obj/item/attachments/burst_improvement))
 		var/obj/item/attachments/burst_improvement/T = I
 		if(!burst_improvement && burst_size > 1 && can_attachments)
@@ -700,7 +689,8 @@
 
 /datum/action/item_action/toggle_scope_zoom/Trigger()
 	var/obj/item/gun/gun = target
-	gun.zoom(owner)
+	if(do_after(owner,10))
+		gun.zoom(owner)
 
 /datum/action/item_action/toggle_scope_zoom/IsAvailable(silent = FALSE)
 	. = ..()
@@ -724,7 +714,8 @@
 	else
 		zoomed = !zoomed
 
-	if(zoomed)
+	if(zoomed)//if we need to be zoomed in
+		user.add_movespeed_modifier(/datum/movespeed_modifier/scoped_in)
 		var/_x = 0
 		var/_y = 0
 		switch(user.dir)
@@ -744,6 +735,7 @@
 		RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, .proc/rotate)
 		user.visible_message("<span class='notice'>[user] looks down the scope of [src].</span>", "<span class='notice'>You look down the scope of [src].</span>")
 	else
+		user.remove_movespeed_modifier(/datum/movespeed_modifier/scoped_in)
 		user.client.change_view(CONFIG_GET(string/default_view))
 		user.client.pixel_x = 0
 		user.client.pixel_y = 0
@@ -752,7 +744,7 @@
 		user.visible_message("<span class='notice'>[user] looks up from the scope of [src].</span>", "<span class='notice'>You look up from the scope of [src].</span>")
 
 /obj/item/gun/proc/on_walk(mob/living/L)
-	zoom(L, FALSE)
+	//zoom(L, FALSE)
 
 /obj/item/gun/proc/rotate(mob/living/user, old_dir, direction = FALSE)
 	var/_x = 0

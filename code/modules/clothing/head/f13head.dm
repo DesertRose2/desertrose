@@ -269,7 +269,7 @@
 	var/mob/living/carbon/human/H = user
 	if(src == H.head) //Suit is already equipped
 		return ..()
-	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && !istype(src, /obj/item/clothing/head/helmet/f13/power_armor/t45b) && slot == SLOT_HEAD && requires_training)
+	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_HEAD && requires_training)
 		to_chat(user, "<span class='warning'>You don't have the proper training to operate the power armor!</span>")
 		return 0
 	if(slot == SLOT_HEAD)
@@ -357,6 +357,14 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
+
+/obj/item/clothing/head/helmet/f13/power_armor/vaulttecta
+	name = "Vault-Tec power helmet"
+	desc = "(VIII) A refined suit of power armour, purpose-built by the residents of Vault-115 in order to better keep the peace in their new settlement."
+	icon_state = "vaulttahelm"
+	item_state = "vaulttahelm"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	slowdown = 0.1
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"
@@ -509,7 +517,7 @@
 
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
-	
+
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"
 	desc = "(I) <font color='#157206'>Him haffi drop him fork and run,</font><br><font color='green'>Him can't stand up to Jah Jah son,</font><br><font color='#fd680e'>Him haffi lef' ya with him gun,</font><br><font color='red'>Dig off with him bomb.</font>"
@@ -739,6 +747,12 @@
 	item_state = "rigscustom_helmet"
 	icon = 'icons/fallout/clothing/hats.dmi'
 
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+	name = "spider riot helmet"
+	desc = "A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it."
+	icon_state = "price_ranger"
+	item_state = "price_ranger"
+
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
 	name = "reclaimed ranger-hunter combat helmet"
 	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
@@ -813,3 +827,15 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+
+/obj/item/clothing/head/helmet/f13/marlowhat
+	name = "boss of the plains hat"
+	desc = "(IV) A thick undyed felt cowboy hat, bleached from excessive sun exposure and creased from heavy usage."
+	icon_state = "marlowhat"
+	item_state = "marlowhat"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/head/helmet/f13/marlowhat/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)

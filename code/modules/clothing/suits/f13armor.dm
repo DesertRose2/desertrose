@@ -332,8 +332,8 @@
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttecta
 	name = "Vault-Tec technical armour"
 	desc = "(VIII)  A primative  suit of power armour, the first kind built by the residents of Vault-115 in order to fight off immediate threats."
-	icon_state = "vaultta"
-	item_state = "vaultta"
+	icon_state = "vaulttecta"
+	item_state = "vaulttecta"
 	armor = list("tier" = 8, "energy" = 30, "bomb" = 38, "bio" = 40, "rad" = 20, "fire" = 100, "acid" = 0)
 	slowdown = 0.4
 
@@ -593,10 +593,10 @@
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
 	name = "Marhsal's battlecoat"
-	desc = "(V) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
-	icon_state = "marhsal_commandcoat"
+	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
+	icon_state = "marshal_commandcoat"
 	item_state = "marshal_commandcoat"
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
 	name = "armoured vault battlecoat"
@@ -743,6 +743,12 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "rigscustom_suit"
 	item_state = "rigscustom_suit"
 
+/obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
+	name = "spider riot gear"
+	desc = "A customised and faded suit of riot gear, reminiscient of that found near Hopeville in the Divide, with a pair of wrist mounted ammo pouches for easy access to spare munitions with a pair of stripes down the back made from a fire-proof material."
+	icon_state = "price_ranger"
+	item_state = "price_ranger"
+
 /obj/item/clothing/suit/toggle/armor/f13/cloakranger //Reskinned trail ranger gear
 	name = "ranger poncho"
 	desc = "(IV) A durable muslin poncho. Tough enough to bear the elements and serve as handy blanket."
@@ -761,6 +767,39 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
+	name = "Marlow gang overcoat"
+	desc = "(IV) A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	icon_state = "marlowsuit"
+	item_state = "marlowsuit"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
+	name = "gunfighter's overcoat"
+	desc = "(IV) A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
+	icon_state = "ikesuit"
+	item_state = "ikesuit"
+
+/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
+	name = "vagabond's vest"
+	desc = "(IV) A padded thick red leather vest, coated in stitched pockets and other mends."
+	icon_state = "masonsuit"
+	item_state = "masonsuit"
+
+/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -836,3 +875,26 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "recon_armor"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
+
+//Mutants
+
+/obj/item/clothing/suit/armor/f13/mutant/poncho
+	name = "mutant poncho"
+	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
+	icon_state = "mutie_poncho"
+	item_state = "mutie_poncho"
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal
+	name = "mutant armour"
+	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour"
+	item_state = "mutie_metal_armour"
+	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
+	name = "mutant armour"
+	desc = "(6) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour_mk2"
+	item_state = "mutie_metal_armour_mk2"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)

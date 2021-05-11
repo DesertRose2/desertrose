@@ -1,6 +1,14 @@
 /////////////////
 //Large Objects//
 /////////////////
+/datum/crafting_recipe/plant
+	name = "Potted plant"
+	result = /obj/item/kirbyplants/random
+	reqs = list(/obj/item/stack/sheet/mineral/sandstone=5,
+				/obj/item/seeds=1)
+	time = 20
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
 
 /datum/crafting_recipe/rags
 	name = "Cut clothing into rags"
@@ -508,8 +516,7 @@
 	name = "Compressed blackpowder"
 	result = /obj/item/stack/ore/blackpowder
 	time = 5
-	reqs = list(/obj/item/stack/sheet/cloth = 1,
-				/datum/reagent/blackpowder = 50)
+	reqs = list(/datum/reagent/blackpowder = 50)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
@@ -564,7 +571,7 @@
 	name = "Invent"
 	result = /obj/item/invention
 	time = 30
-	reqs = list(/obj/item/crafting = 15)
+	reqs = list(/obj/item/crafting = 5)
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
