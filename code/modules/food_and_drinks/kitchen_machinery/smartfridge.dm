@@ -621,10 +621,23 @@
 	name = "seed bin"
 	desc = "Organised dumping ground for the starters of life."
 	icon_state = "seedbin"
-	max_n_of_items = 150
+	max_n_of_items = 400
 
 /obj/machinery/smartfridge/bottlerack/seedbin/accept_check(obj/item/O)
 	if(istype(O, /obj/item/seeds))
+		return TRUE
+	return FALSE
+//-------------------------
+// Foodbin
+//-------------------------
+/obj/machinery/smartfridge/bottlerack/grownbin
+	name = "grownbin"
+	desc = "A large box, to contain the harvest that the Earth has blessed upon you."
+	icon_state = "seedbin"
+	max_n_of_items = 1000
+
+/obj/machinery/smartfridge/bottlerack/grownbin/accept_check(obj/item/O)
+	if(istype(O, /obj/item/reagent_containers/food/snacks/grown))
 		return TRUE
 	return FALSE
 
@@ -668,9 +681,9 @@
 		/obj/item/reagent_containers/food/drinks/bottle/instatea = 4,
 		/obj/item/reagent_containers/food/drinks/bottle/instacocoa = 4,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cream = 3,
-		/obj/item/reagent_containers/food/snacks/f13/porknbeans = 3,
-		/obj/item/reagent_containers/food/snacks/f13/borscht = 1,
-		/obj/item/reagent_containers/food/snacks/f13/dog = 3,
+		/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans = 3,
+		/obj/item/reagent_containers/food/snacks/f13/canned/borscht = 1,
+		/obj/item/reagent_containers/food/snacks/f13/canned/dog = 3,
 		/obj/item/reagent_containers/food/snacks/beans = 3,)
 
 ///booze

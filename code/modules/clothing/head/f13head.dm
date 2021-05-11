@@ -358,6 +358,14 @@
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
+/obj/item/clothing/head/helmet/f13/power_armor/vaulttecta
+	name = "Vault-Tec power helmet"
+	desc = "(VIII) A refined suit of power armour, purpose-built by the residents of Vault-115 in order to better keep the peace in their new settlement."
+	icon_state = "vaulttahelm"
+	item_state = "vaulttahelm"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	slowdown = 0.1
+
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"
 	desc = "(IX) It's an old pre-War power armor helmet. It's pretty hot inside of it."
@@ -509,7 +517,7 @@
 
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
-	
+
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"
 	desc = "(I) <font color='#157206'>Him haffi drop him fork and run,</font><br><font color='green'>Him can't stand up to Jah Jah son,</font><br><font color='#fd680e'>Him haffi lef' ya with him gun,</font><br><font color='red'>Dig off with him bomb.</font>"
@@ -738,6 +746,12 @@
 	icon_state = "rigscustom_helmet"
 	item_state = "rigscustom_helmet"
 	icon = 'icons/fallout/clothing/hats.dmi'
+
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+	name = "spider riot helmet"
+	desc = "A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it."
+	icon_state = "price_ranger"
+	item_state = "price_ranger"
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
 	name = "reclaimed ranger-hunter combat helmet"
