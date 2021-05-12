@@ -615,14 +615,14 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	name = "brotherhood helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of the Knights."
+	desc = "(VI) An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood star knight helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of a Star Knight."
+	desc = "(VI) An improved combat helmet, bearing the symbol of a Star Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
 
@@ -631,6 +631,7 @@
 	desc = "(VII) An improved combat helmet, bearing the symbol of the Head Knight."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
@@ -645,6 +646,26 @@
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout
+	name = "brotherhood scout helmet"
+	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knights."
+	icon_state = "brotherhood_helmet_scout_knight"
+	item_state = "brotherhood_helmet_scout_knight"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior
+	name = "brotherhood star knight scout helmet"
+	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Star Knight."
+	icon_state = "brotherhood_helmet_scout_senior"
+	item_state = "brotherhood_helmet_scout_senior"
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
+	name = "brotherhood head knight scout helmet"
+	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Head Knight."
+	icon_state = "brotherhood_helmet_scout_captain"
+	item_state = "brotherhood_helmet_scout_captain"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"

@@ -544,15 +544,7 @@
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-/* No sprite right now - lamasmaster
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
-	name = "brotherhood scout armor"
-	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
-	icon_state = "brotherhood_armor_knight"
-	item_state = "brotherhood_armor_knight"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-	slowdown = -0.1
-*/
+
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood star knight armor"
 	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
@@ -579,6 +571,28 @@
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
+	name = "brotherhood scout armor"
+	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
+	icon_state = "brotherhood_scout_knight"
+	item_state = "brotherhood_scout_knight"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	slowdown = -0.1
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
+	name = "brotherhood star knight scout armor"
+	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
+	icon_state = "brotherhood_scout_senior"
+	item_state = "brotherhood_scout_senior"
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
+	name = "brotherhood head knight scout armor"
+	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
+	icon_state = "brotherhood_scout_captain"
+	item_state = "brotherhood_scout_captain"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
 	name = "brotherhood armor"

@@ -311,6 +311,8 @@ Head Knight
 /datum/outfit/loadout/captech
 	name = "Technician Captain"
 	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/power_armor/t45d=1,
+		/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain=1,
 		/obj/item/storage/belt/utility/chief/full=1,
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
@@ -320,6 +322,8 @@ Head Knight
 /datum/outfit/loadout/capscout
 	name = "Scout Captain"
 	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
@@ -787,6 +791,8 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightb
 	name = "Scout Senior"
 	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
@@ -867,7 +873,8 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		//obj/item/clothing/suit/armor/f13/combat/brotherhood/scout - soon:tm:
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
@@ -894,7 +901,8 @@ Knight
 /datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
-		//obj/item/clothing/suit/armor/f13/combat/brotherhood/scout - soon:tm:
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/attachments/scope=1,
