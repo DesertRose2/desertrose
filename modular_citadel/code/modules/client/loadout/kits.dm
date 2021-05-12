@@ -98,8 +98,8 @@
 
 //Alice Price - asterixcodix
 /obj/item/storage/box/large/custom_kit/aliceprice/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
-	new /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+	new /obj/item/modkit/riotgear/price(src)
+	new /obj/item/modkit/riotgear_helmet/price(src)
 
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()
@@ -119,4 +119,18 @@
 	new /obj/item/storage/backpack/explorer(src)
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/suit/armor/vest(src)
+
+//Erin Tisdale - prawn04
+/obj/item/storage/box/large/custom_kit/erintisdale/PopulateContents()
+	new /obj/item/clothing/under/f13/ranger/erin(src)
+	new /obj/item/modkit/erinarmor(src)
+	new /obj/item/clothing/shoes/f13/military/desert
+
+//Kainat Ali - muhsollini
+/obj/item/storage/box/large/custom_kit/kainatali/PopulateContents()
+	new /obj/item/clothing/under/f13/ncr/scout(src)
+	new /obj/item/clothing/gloves/patrol/burned(src)
+	new /obj/item/clothing/glasses/regular/protected(src)
+	new /obj/item/clothing/neck/cloak/ranger(src)
+	new /obj/item/modkit/kainatarmor(src)
 

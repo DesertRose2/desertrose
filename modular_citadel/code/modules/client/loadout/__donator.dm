@@ -121,6 +121,16 @@
 	path = /obj/item/storage/box/large/custom_kit/katharinelamb
 	ckeywhitelist = list("elizabethdame")
 
+/datum/gear/donator/kits/erintisdale
+	name = "Erin Tisdale's belongings"
+	path = /obj/item/storage/box/large/custom_kit/erintisdale
+	ckeywhitelist = list("prawn04")
+
+/datum/gear/donator/kits/kainatali
+	name = "Kainat Ali's belongings"
+	path = /obj/item/storage/box/large/custom_kit/kainatali
+	ckeywhitelist = list("muhsollini")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
