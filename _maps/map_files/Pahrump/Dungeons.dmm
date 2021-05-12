@@ -734,7 +734,7 @@
 "bfl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/chem_dispenser/drinks/beer,
-/obj/structure/table/reinforced,
+/obj/structure/table,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
 "bfI" = (
@@ -5047,7 +5047,7 @@
 /area/f13/vault)
 "hnU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "hov" = (
@@ -6066,11 +6066,11 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/vault)
 "iJV" = (
-/obj/structure/table/reinforced,
 /obj/machinery/light/floor,
 /obj/machinery/porta_turret/syndicate{
 	faction = list("raider")
 	},
+/obj/structure/table,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
 "iJW" = (
@@ -6865,9 +6865,9 @@
 /area/f13/bunker)
 "jUG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "jUJ" = (
@@ -7980,13 +7980,6 @@
 	icon_state = "stagestairs"
 	},
 /area/f13/bunker)
-"lDQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/girder/reinforced,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
-	},
-/area/f13/bunker)
 "lFA" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/gloves/f13/leather,
@@ -8118,8 +8111,8 @@
 "lPR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/microwave/stove,
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "lQa" = (
@@ -9036,7 +9029,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/vault)
 "mYL" = (
-/obj/structure/girder/reinforced,
+/obj/structure/girder,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -9403,8 +9396,8 @@
 /area/f13/bunker)
 "nBV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
+/obj/structure/table,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
 "nCC" = (
@@ -11707,7 +11700,7 @@
 	},
 /area/f13/vault)
 "qPJ" = (
-/obj/structure/table/reinforced,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "qQK" = (
@@ -12175,7 +12168,7 @@
 /area/f13/bunker)
 "rwc" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/indestructible/rock,
+/turf/closed/wall/rust,
 /area/f13/bunker)
 "rwv" = (
 /obj/structure/cable{
@@ -12221,8 +12214,8 @@
 /area/f13/vault)
 "ryR" = (
 /obj/machinery/microwave,
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "ryV" = (
@@ -14139,7 +14132,7 @@
 "uGH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/chem_dispenser/drinks,
-/obj/structure/table/reinforced,
+/obj/structure/table,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
 "uIR" = (
@@ -14235,10 +14228,10 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/bunker)
 "uNn" = (
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "uNs" = (
@@ -14947,8 +14940,8 @@
 /area/f13/underground/cave)
 "vNb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/attachments,
+/obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "vNk" = (
@@ -14992,11 +14985,6 @@
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/f13/wood,
 /area/f13/vault)
-"vPZ" = (
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "rubbleslab"
-	},
-/area/f13/bunker)
 "vQS" = (
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/vault)
@@ -16047,8 +16035,8 @@
 	},
 /area/f13/underground/cave)
 "xeO" = (
-/obj/structure/girder/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/girder,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -16805,8 +16793,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "yku" = (
-/obj/structure/girder/reinforced,
 /obj/structure/barricade/wooden/planks,
+/obj/structure/girder,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -46726,29 +46714,29 @@ heT
 heT
 heT
 heT
-hbR
-hbR
+bsh
+bsh
 bsh
 bsh
 bsh
 bsh
 bsh
 qYk
-aUx
-cIT
-cIT
-cIT
-koh
-koh
+gwy
 cIT
 cIT
 cIT
 cIT
 cIT
-aUx
 cIT
 cIT
-koh
+cIT
+cIT
+cIT
+gwy
+cIT
+cIT
+cIT
 heT
 heT
 heT
@@ -46983,7 +46971,7 @@ heT
 heT
 heT
 heT
-hbR
+bsh
 bsh
 bsh
 bsh
@@ -47005,7 +46993,7 @@ pbd
 gwy
 yfz
 cIT
-koh
+cIT
 heT
 heT
 heT
@@ -47262,7 +47250,7 @@ yku
 gwy
 qhp
 dQq
-koh
+cIT
 heT
 heT
 heT
@@ -47515,11 +47503,11 @@ xzS
 cIT
 gwy
 bjT
-lDQ
+xeO
 gwy
 ccI
 kRy
-aUx
+gwy
 heT
 heT
 heT
@@ -47776,7 +47764,7 @@ wFW
 gwy
 vhM
 iOE
-aUx
+gwy
 heT
 heT
 heT
@@ -48033,7 +48021,7 @@ uXT
 gwy
 vTt
 wRB
-aUx
+gwy
 heT
 heT
 heT
@@ -48268,7 +48256,7 @@ heT
 heT
 heT
 heT
-hbR
+bsh
 bsh
 pba
 jZk
@@ -48290,7 +48278,7 @@ ulM
 gwy
 gwy
 szh
-aUx
+gwy
 heT
 heT
 heT
@@ -48525,7 +48513,7 @@ heT
 heT
 heT
 heT
-hbR
+bsh
 bsh
 fud
 vlG
@@ -48782,7 +48770,7 @@ heT
 heT
 heT
 heT
-hbR
+bsh
 bsh
 bsh
 bsh
@@ -49039,8 +49027,8 @@ heT
 heT
 heT
 heT
-hbR
-hbR
+bsh
+bsh
 bsh
 bsh
 bsh
@@ -49061,7 +49049,7 @@ aBh
 gwy
 gwy
 tal
-aUx
+gwy
 heT
 heT
 heT
@@ -49298,7 +49286,7 @@ heT
 heT
 fud
 jxu
-hbR
+bsh
 rog
 bsh
 bsh
@@ -49308,7 +49296,7 @@ xeO
 lPR
 nSi
 uNn
-rwc
+nVS
 nVS
 cIT
 rag
@@ -49318,7 +49306,7 @@ fRE
 gwy
 bCR
 wey
-aUx
+gwy
 heT
 heT
 heT
@@ -49565,17 +49553,17 @@ mYL
 qPJ
 hnU
 jUG
-koh
+cIT
 cIT
 cIT
 bQs
 gwy
 ibz
-uXT
+cIT
 gwy
 laJ
-koh
-aUx
+cIT
+gwy
 heT
 heT
 heT
@@ -49810,7 +49798,7 @@ heT
 heT
 heT
 heT
-hbR
+bsh
 esm
 mif
 bsh
@@ -49818,21 +49806,21 @@ bsh
 bsh
 bsh
 fRP
-aUx
-aUx
-aUx
+gwy
+gwy
+gwy
+nVS
+cIT
+cIT
 rwc
-koh
-koh
-glR
-aUx
-aUx
-vPZ
-azq
-aUx
-aUx
-koh
-koh
+gwy
+gwy
+cIT
+cIT
+gwy
+gwy
+cIT
+cIT
 heT
 heT
 heT
