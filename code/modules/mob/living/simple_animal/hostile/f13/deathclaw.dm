@@ -27,6 +27,7 @@
 	maxHealth = 750
 	health = 750
 	obj_damage = 200
+	environment_smash = 2 //wall-busts
 	armour_penetration = 0.7
 	melee_damage_lower = 80
 	melee_damage_upper = 85
