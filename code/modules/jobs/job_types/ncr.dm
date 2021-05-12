@@ -2,12 +2,12 @@
 	department_flag = NCR
 	selection_color = "#ffeeaa"
 	faction = "NCR"
-
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
+	exp_type_department = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/
 	name = "NCRdatums"
@@ -476,8 +476,7 @@ Trooper
 	description = "You are considered the backbone and workforce strength of the NCR Army. You answer to everyone above you in the chain of command, taking orders from your Sergeant directly and obeying all commands given by the Lieutenant."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_NCR
+	exp_requirements = 2100
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
 	loadout_options = list(
@@ -538,8 +537,7 @@ Rear Echelon
 	description = "You are the support element sent to assist the Camp Miller garrison. You are essential specialized support staff assigned to help sustain the base via supply or your specialized skills. You are not allowed to leave base unless given an explicit order by the CO or the current acting CO."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_NCR
+	exp_requirements = 2100
 	display_order = JOB_DISPLAY_ORDER_REAR_ECHELON
 	outfit = /datum/outfit/job/ncr/f13rearechelon
 
@@ -595,7 +593,6 @@ Rear Echelon
 	supervisors = "Troopers and above"
 	selection_color = "#fff5cc"
 	exp_requirements = 12
-	exp_type = EXP_TYPE_NCR
 	display_order = JOB_DISPLAY_ORDER_NCR_RECRUIT
 	outfit = /datum/outfit/job/ncr/f13ncrrecruit
 
@@ -629,8 +626,7 @@ Off-Duty
 	description = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
 	supervisors = "All NCOs and COs"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_NCR
+	exp_requirements = 2100
 	display_order = JOB_DISPLAY_ORDER_NCR_OFF_DUTY
 	outfit = /datum/outfit/job/ncr/f13ncroffduty
 
