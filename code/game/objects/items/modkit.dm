@@ -127,4 +127,37 @@
 	target_item = /obj/item/clothing/suit/hooded/cloak/goliath
 	result_item = /obj/item/clothing/suit/hooded/cloak/birdarmor
 
+/obj/item/modkit/feuferarmor
+	name = "T-51b Reforged WBoS Body modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	result_item = /obj/item/clothing/suit/armor/f13/power_armor/t51b/reforgedwbos
 
+/obj/item/modkit/feuferhelmet
+	name = "T-51b Reforged WBoS Helmet modkit"
+	target_item = /obj/item/clothing/head/helmet/f13/power_armor/t51b
+	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t51b/reforgedwbos
+
+/obj/item/modkit/marlowhat
+	name = "Marlow Hat modkit"
+	target_item = /obj/item/clothing/head/helmet/f13/raider
+	result_item = /obj/item/clothing/head/helmet/f13/marlowhat
+
+/obj/item/modkit/marlowsuit_ike
+	name = "Gunfighters Overcoat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
+
+/obj/item/modkit/marlowsuit_mason
+	name = "Vagabond Vest modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
+
+/obj/item/modkit/marlowsuit
+	name = "Marlow Overcoat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit
+
+/obj/item/modkit/officercoat
+	name = "NCR Officer Coat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat

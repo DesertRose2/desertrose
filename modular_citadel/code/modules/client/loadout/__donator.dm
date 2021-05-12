@@ -141,6 +141,51 @@
 	path = /obj/item/storage/box/large/custom_kit/lizholder
 	ckeywhitelist = list("jaxterminator")
 
+/datum/gear/donator/kits/matthewfeufer
+	name = "Matthew Feufer's belongings"
+	path = /obj/item/storage/box/large/custom_kit/matthewfeufer
+	ckeywhitelist = list("asterixcodix")
+
+/datum/gear/donator/kits/dellcaster
+	name = "Dell Caster's belongings"
+	path = /obj/item/storage/box/large/custom_kit/dellcaster
+	ckeywhitelist = list("panzer1944")
+
+/datum/gear/donator/kits/ikemarlow
+	name = "Ike Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/ikemarlow
+	ckeywhitelist = list("dioclex")
+
+/datum/gear/donator/kits/isaiahmarlow
+	name = "Isaiah Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/isaiahmarlow
+	ckeywhitelist = list("purplepineapple")
+
+/datum/gear/donator/kits/masonmarlow
+	name = "Ishaq 'Mason' Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/masonmarlow
+	ckeywhitelist = list("arkadec")
+
+/datum/gear/donator/kits/gremlin
+	name = "Gremlin's belongings"
+	path = /obj/item/storage/box/large/custom_kit/gremlin
+	ckeywhitelist = list("panzer1944")
+
+/datum/gear/donator/kits/isabellemarlow
+	name = "Isabelle 'Izzy' Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/isabellemarlow
+	ckeywhitelist = list("djorgomush")
+
+/datum/gear/donator/kits/billy
+	name = "Billy's belongings"
+	path = /obj/item/storage/box/large/custom_kit/billy
+	ckeywhitelist = list("gurking")
+
+/datum/gear/donator/kits/natalie
+	name = "Natalie's belongings"
+	path = /obj/item/storage/box/large/custom_kit/natalie
+	ckeywhitelist = list("gurking")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -179,6 +224,7 @@
 						"thegreatcoward",
 						"usotsukihime",
 						"melarinn",
+						"gurking",
 						"jackofoak",
 						"muhsollini",
 						"lynuahsororitas",
@@ -258,6 +304,7 @@
 						"seabass390",
 						"julwaters",
 						"shoi87",
+						"gurking",
 						"idiocityinc",
 						"zeronetalpha",
 						"mrmatrixman",
