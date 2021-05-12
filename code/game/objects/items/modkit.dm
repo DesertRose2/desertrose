@@ -161,3 +161,8 @@
 	name = "NCR Officer Coat modkit"
 	target_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
+
+/obj/item/modkit/chinesecombat
+	name = "Chinese Combat Armour modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/combat/chinese

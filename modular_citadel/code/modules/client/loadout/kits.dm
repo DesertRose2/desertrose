@@ -152,12 +152,13 @@
 	new /obj/item/modkit/feuferhelmet(src)
 	new /obj/item/modkit/feuferarmor(src)
 
-//Dell Caster - panzer1944 (Readding from pre-rebase with permission from Superballs)
+//Dell Caster - panzer1944 (Readding from pre-rebase with permission from Superballs - Outlaw Loadout)
 /obj/item/storage/box/large/custom_kit/dellcaster/PopulateContents()
 	new /obj/item/clothing/head/f13/chinese_commander(src)
 	new /obj/item/clothing/glasses/welding(src)
 	new /obj/item/storage/belt/military/army(src)
 	new /obj/item/clothing/under/f13/chinese(src)
+	new /obj/item/modkit/chinesecombat(src)
 
 //Ike Marlow - dioclex
 /obj/item/storage/box/large/custom_kit/ikemarlow/PopulateContents()
