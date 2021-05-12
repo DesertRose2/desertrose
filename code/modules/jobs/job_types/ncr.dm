@@ -240,11 +240,11 @@ Medical Officer
 	mask 		= /obj/item/clothing/mask/surgical
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/ballistic/automatic/pistol/pistol127=1, \
+		/obj/item/gun/ballistic/revolver/thatgun=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/storage/survivalkit_aid=2, \
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/ammo_box/magazine/m127mm=3, \
+		/obj/item/ammo_box/a556/stripper=3, \
 		/obj/item/binoculars=1, \
 		/obj/item/storage/bag/money/small/ncr, \
 		/obj/item/storage/firstaid/regular=1)
