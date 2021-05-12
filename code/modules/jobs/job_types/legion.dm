@@ -103,7 +103,7 @@ Needs whitelist
 Centurion
 */
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	title = "Legion Centurion"
+	title = "Legion Optio Centuriae"
 	flag = F13CENTURION
 	faction = "Legion"
 	head_announce = list("Security")
@@ -417,16 +417,16 @@ Decanii
 	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_legion
-	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	suit_store =	/obj/item/gun/ballistic/revolver/shotgunrevolver
 	r_pocket =		/obj/item/flashlight/lantern
+	r_hand = 		/obj/item/nullrod/claymore/chainsaw_sword
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
-		/obj/item/ammo_box/tube/c4570=2,
-		/obj/item/gun/ballistic/revolver/colt357=1,
-		/obj/item/ammo_box/a357=2)
+		/obj/item/storage/fancy/ammobox/lethalshot = 2,
+		/obj/item/storage/fancy/ammobox/slugshot = 1)
 
 
 //Recruit Decanus
@@ -460,14 +460,15 @@ Decanii
 	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears = 			/obj/item/radio/headset/headset_legion
-	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = 	/obj/item/gun/ballistic/shotgun/lever
 	r_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/ammo_box/tube/m44=3)
+		/obj/item/storage/fancy/ammobox/lethalshot = 2,
+		/obj/item/storage/fancy/ammobox/slugshot = 1)
 
 
 /*
@@ -589,6 +590,11 @@ Veteran Legionary
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
+	loadout_options = list(
+		/datum/outfit/loadout/vetlight,
+		/datum/outfit/loadout/vetheavy
+	)
+
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -609,13 +615,25 @@ Veteran Legionary
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/ammo_box/tube/c4570=3,
 		/obj/item/claymore/machete/reinforced=1)
+
+/datum/outfit/loadout/vetlight
+	name = "Light"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/hunting,
+		/obj/item/storage/fancy/ammobox/lethalshot = 2,
+		/obj/item/storage/fancy/ammobox/slugshot = 1)
+
+/datum/outfit/loadout/vetheavy
+	name = "Heavy"
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/garand308=3)
 
 /*
 Prime Legionairy
@@ -631,6 +649,10 @@ Prime Legionairy
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+	loadout_options = list(
+		/datum/outfit/loadout/primelight,
+		/datum/outfit/loadout/primeheavy
+	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -652,13 +674,24 @@ Prime Legionairy
 	ears			= /obj/item/radio/headset/headset_legion
 	r_pocket		= /obj/item/restraints/handcuffs
 	l_pocket		= /obj/item/restraints/handcuffs
-	suit_store		= /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/claymore/machete/reinforced=1
 	)
+
+/datum/outfit/loadout/primelight
+	name = "Light"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/m44=3)
+
+/datum/outfit/loadout/primeheavy
+	name = "Heavy"
+	suit_store = /obj/item/gun/ballistic/automatic/commando
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/greasegun=3,
+		/obj/item/attachments/scope=1)
 
 /*
 Recruit Legionary
@@ -715,6 +748,38 @@ Venator
 	selection_color = "#ffdddd"
 	display_order = JOB_DISPLAY_ORDER_VENATOR
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
+	loadout_options = list(
+	/datum/outfit/loadout/venatorstandard,
+	/datum/outfit/loadout/venatorranged,
+	/datum/outfit/loadout/venatorcqb
+	)
+
+
+/datum/outfit/loadout/venatorstandard
+	name = "Standard"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/shotgunrevolver,
+		/obj/item/ammo_box/tube/c4570=3
+		)
+
+/datum/outfit/loadout/venatorranged
+	name = "Ranged"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/gun/ballistic/revolver/shotgunrevolver,
+		)
+
+/datum/outfit/loadout/venatorcqb
+	name = "Close Quarters"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/hunting,
+		/obj/item/storage/fancy/ammobox/lethalshot = 2,
+		/obj/item/storage/fancy/ammobox/slugshot = 1,
+		/obj/item/grenade/smokebomb
+	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -736,14 +801,12 @@ Venator
 	glasses 	= 	/obj/item/clothing/glasses/night
 	ears		=	/obj/item/radio/headset/headset_legion
 	r_pocket 	= 	/obj/item/binoculars
-	suit_store	= /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308=3,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legion=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
-		/obj/item/gun/ballistic/revolver/revolver45=1,
-		/obj/item/ammo_box/c45rev=3)
+		/obj/item/reagent_containers/pill/patch/healpoultice=1
+	)
 
 /*
 Explorer
