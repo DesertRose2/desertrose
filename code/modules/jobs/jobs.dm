@@ -245,6 +245,7 @@ GLOBAL_LIST_INIT(ncr_general_positions, list(
 	"NCR Combat Medic",
 	"NCR Combat Engineer",
 	"NCR Trooper",
+	"NCR Recruit"
 	"NCR Off-Duty"
 ))
 
