@@ -3108,6 +3108,15 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"cid" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "cio" = (
 /obj/structure/window/reinforced/spawner,
 /obj/machinery/light/small/broken{
@@ -14618,6 +14627,15 @@
 /obj/structure/rack,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"jEe" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/ncr)
 "jEp" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt{
@@ -31433,6 +31451,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"uII" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/ncr)
 "uIK" = (
 /obj/structure/table/wood,
 /obj/structure/barricade/wooden,
@@ -39003,7 +39030,7 @@ kzs
 kzs
 sNC
 kzs
-xGv
+jEe
 kzs
 sed
 sHu
@@ -39260,10 +39287,10 @@ jGz
 kzs
 dsn
 sHu
-kzs
-kzs
-kzs
-jGz
+cid
+cid
+cid
+uII
 kzs
 wSn
 siS
