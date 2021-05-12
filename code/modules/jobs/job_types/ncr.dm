@@ -186,7 +186,7 @@ Lieutenant
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
-	suit_store	= /obj/item/gun/ballistic/automatic/service
+	suit_store	= /obj/item/gun/ballistic/automatic/service/r82
 	belt		= /obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
