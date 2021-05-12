@@ -44,6 +44,14 @@
 	name = "11th armored calvary helmet modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/rigscustom
 
+/obj/item/modkit/riotgear/price
+	name = "spider riot gear modkit"
+	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
+
+/obj/item/modkit/riotgear_helmet/price
+	name = "spider riot helmet modkit"
+	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+
 /obj/item/modkit/thax_patrol
 	name = "modified patrol armor modkit"
 	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
@@ -103,3 +111,20 @@
 	name = "subdued ranger vest modkit"
 	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	result_item = /obj/item/clothing/suit/armor/f13/modif_r_vest
+
+/obj/item/modkit/erinarmor
+	name = "chest gear harness modkit"
+	target_item = /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
+	result_item = /obj/item/clothing/suit/armor/f13/rangerrig
+
+/obj/item/modkit/kainatarmor
+	name = "ranger scout armor modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
+	result_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
+
+/obj/item/modkit/birdarmor
+	name = "Salvaged claw cloak modkit"
+	target_item = /obj/item/clothing/suit/hooded/cloak/goliath
+	result_item = /obj/item/clothing/suit/hooded/cloak/birdarmor
+
+
