@@ -97,6 +97,10 @@
 	e_cost = 180 //11 shots
 	fire_sound = 'sound/f13weapons/tribeamfire.ogg'
 
+/obj/item/ammo_casing/energy/laser/scatter/baby
+	projectile_type = /obj/item/projectile/beam/laser/tribeam/baby
+	pellets = 6
+
 /obj/item/ammo_casing/energy/laser/pistol
 	projectile_type = /obj/item/projectile/beam/laser/pistol
 	e_cost = 80 //20 shots
