@@ -131,6 +131,16 @@
 	path = /obj/item/storage/box/large/custom_kit/kainatali
 	ckeywhitelist = list("muhsollini")
 
+/datum/gear/donator/kits/birdblackhawk
+	name = "Bird Blackhawk's belongings"
+	path = /obj/item/storage/box/large/custom_kit/birdblackhawk
+	ckeywhitelist = list("octus")
+
+/datum/gear/donator/kits/lizholder
+	name = "Liz Holder's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lizholder
+	ckeywhitelist = list("jaxterminator")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////

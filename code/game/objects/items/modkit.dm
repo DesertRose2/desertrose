@@ -122,4 +122,9 @@
 	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	result_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
 
+/obj/item/modkit/birdarmor
+	name = "Salvaged claw cloak modkit"
+	target_item = /obj/item/clothing/suit/hooded/cloak/goliath
+	result_item = /obj/item/clothing/suit/hooded/cloak/birdarmor
+
 

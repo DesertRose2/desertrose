@@ -134,3 +134,16 @@
 	new /obj/item/clothing/neck/cloak/ranger(src)
 	new /obj/item/modkit/kainatarmor(src)
 
+//Bird Blackhawk - octus
+/obj/item/storage/box/large/custom_kit/birdblackhawk/PopulateContents()
+	new /obj/item/modkit/birdarmor(src)
+	new /obj/item/clothing/mask/rat/raven(src)
+	new /obj/item/clothing/under/f13/wayfarer/hunter(src)
+	new /obj/item/clothing/shoes/f13/raidertreads(src)
+
+//Liz Holder - jaxterminator
+/obj/item/storage/box/large/custom_kit/lizholder/PopulateContents()
+	new /obj/item/clothing/suit/hooded/cloak/goliath/tatteredred(src)
+	new /obj/item/clothing/under/f13/female/mercadv(src)
+	new /obj/item/dildo/flared/huge(src)
+
