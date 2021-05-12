@@ -4403,7 +4403,11 @@
 /turf/closed/wall/rust,
 /area/f13/caves)
 "dfY" = (
-/obj/structure/simple_door/wood,
+/obj/machinery/door/unpowered/wooddoor{
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "131"
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "dgt" = (
@@ -10355,6 +10359,10 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
+"gZE" = (
+/obj/machinery/chem_master/primitive,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/village)
 "hab" = (
 /obj/structure/chair/left{
 	dir = 4
@@ -11242,6 +11250,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
+"hzx" = (
+/obj/machinery/chem_master/primitive,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "hzG" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -13432,9 +13444,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "iPB" = (
-/obj/structure/rack,
 /obj/item/reagent_containers/glass/bucket/wood,
 /obj/item/reagent_containers/glass/bucket/wood,
+/obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -18104,6 +18116,10 @@
 	icon_state = "verylittleshadowright"
 	},
 /area/f13/wasteland)
+"lQS" = (
+/obj/machinery/smartfridge/bottlerack/grownbin,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "lRd" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -21123,6 +21139,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"oau" = (
+/obj/machinery/smartfridge/bottlerack/grownbin,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "oav" = (
 /turf/closed/wall/f13/wood,
 /area/f13/bar)
@@ -25817,6 +25837,10 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"qYr" = (
+/obj/machinery/chem_master/primitive,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "qYD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -26539,10 +26563,7 @@
 	},
 /area/f13/tunnel)
 "rEk" = (
-/obj/structure/fermenting_barrel{
-	pixel_x = -5;
-	pixel_y = 7
-	},
+/obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "rEB" = (
@@ -31282,6 +31303,7 @@
 	light_color = "red"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/brotherhood)
 "uEK" = (
@@ -46005,7 +46027,7 @@ gke
 qFk
 otr
 otr
-otr
+gZE
 qFk
 gcK
 gcK
@@ -50379,7 +50401,7 @@ iRv
 otr
 otr
 qFk
-iWc
+lQS
 uRJ
 cqr
 uRJ
@@ -51667,7 +51689,7 @@ vsm
 uRJ
 wsq
 uRJ
-uRJ
+qYr
 iWc
 tBN
 mvv
@@ -54321,7 +54343,7 @@ bfu
 uCW
 ajD
 lPT
-gNB
+oau
 rjH
 mvv
 rjH
@@ -99053,7 +99075,7 @@ tZW
 tZW
 lez
 vHR
-xNm
+hzx
 udT
 fBx
 wPS
