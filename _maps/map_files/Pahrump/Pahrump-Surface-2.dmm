@@ -5753,7 +5753,8 @@
 /obj/machinery/button/door{
 	id = "ncr_gate";
 	name = "gate button";
-	pixel_y = -25
+	pixel_y = -25;
+	req_access_txt = "121"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -6345,7 +6346,8 @@
 /obj/machinery/button/door{
 	id = "ncr_gate";
 	name = "gate button";
-	pixel_y = 25
+	pixel_y = 25;
+	req_access_txt = "121"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
