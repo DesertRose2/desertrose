@@ -5749,6 +5749,16 @@
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
+"egG" = (
+/obj/machinery/button/door{
+	id = "ncr_gate";
+	name = "gate button";
+	pixel_y = -25
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/wasteland)
 "egK" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
@@ -6331,6 +6341,16 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
+"ezK" = (
+/obj/machinery/button/door{
+	id = "ncr_gate";
+	name = "gate button";
+	pixel_y = 25
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/wasteland)
 "ezX" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
@@ -44183,9 +44203,9 @@ xzM
 eXV
 ees
 gQv
-ees
+egG
 vUA
-gQv
+ezK
 gQv
 fsm
 fsm
