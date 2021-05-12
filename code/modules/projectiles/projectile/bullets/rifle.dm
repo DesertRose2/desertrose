@@ -33,7 +33,7 @@
 	armour_penetration = 0.45
 	wound_bonus = 20
 	bare_wound_bonus = -20
-	pixels_per_second = TILES_TO_PIXEL(20)
+	pixels_per_second = TILES_TO_PIXELS(20)
 
 /obj/item/projectile/bullet/a762/sport/simple //for simple mobs, separate to allow balancing
 	name = ".308 bullet"
@@ -66,7 +66,7 @@
 	armour_penetration = 0.35 //0.45
 	wound_bonus = 18
 	bare_wound_bonus = -18
-	pixels_per_second = TILES_TO_PIXEL(20)
+	pixels_per_second = TILES_TO_PIXELS(20)
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
