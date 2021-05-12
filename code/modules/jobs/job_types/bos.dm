@@ -225,7 +225,7 @@ Head Scribe
 /datum/outfit/loadout/hssword
 	name = "Sword Leader"
 	backpack_contents = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/glock86=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/tricarbine=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/flux = 1,
 		/obj/item/advanced_crafting_components/conductors = 1,
@@ -291,12 +291,10 @@ Head Knight
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
-	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(		
@@ -334,6 +332,8 @@ Head Knight
 /datum/outfit/loadout/capwarden
 	name = "Warden Captain"
 	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain=1,
 		/obj/item/gun/ballistic/automatic/shotgun/riot=1,
 		/obj/item/ammo_box/magazine/d12g=3,
 		/obj/item/restraints/handcuffs=1,
@@ -757,14 +757,11 @@ datum/job/bos/f13seniorknight
 /datum/outfit/job/bos/f13seniorknight
 	name = "Star Knight"
 	jobtype = /datum/job/bos/f13seniorknight
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	id = 			/obj/item/card/id/dogtag
-	suit_store =	/obj/item/gun/energy/laser/aer9
 	neck = 			/obj/item/storage/belt/holster
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -775,7 +772,6 @@ datum/job/bos/f13seniorknight
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
-		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
@@ -783,6 +779,10 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknighta
 	name = "Engineer Senior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
 		/obj/item/grenade/plastic/c4=2
@@ -791,6 +791,8 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightb
 	name = "Scout Senior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/glasses/night=1,
@@ -802,6 +804,10 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightc 
 	name = "Security Senior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -839,14 +845,11 @@ Knight
 
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
-	jobtype = /datum/job/bos/f13knight
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood
+	jobtype = /datum/job/bos/f13knight	
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	id = 			/obj/item/card/id/dogtag
-	suit_store =	/obj/item/gun/energy/laser/aer9
 	neck = 			/obj/item/storage/belt/holster
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -857,7 +860,6 @@ Knight
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
-		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
@@ -865,6 +867,10 @@ Knight
 /datum/outfit/loadout/knighta
 	name = "Engineer Junior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
@@ -873,6 +879,8 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -884,6 +892,10 @@ Knight
 /datum/outfit/loadout/knightc
 	name = "Security Junior"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
@@ -893,6 +905,10 @@ Knight
 /datum/outfit/loadout/knightd
 	name = "Engineer"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/knight=1
@@ -901,6 +917,8 @@ Knight
 /datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -912,6 +930,10 @@ Knight
 /datum/outfit/loadout/knightf
 	name = "Security"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,

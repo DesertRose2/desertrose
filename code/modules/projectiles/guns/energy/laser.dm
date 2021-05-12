@@ -381,8 +381,9 @@
 	weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/energy/laser/scatter/baby
-	name = "multilas carbine"
+	name = "tribeam laser carbine"
 	desc = "A cut down version of the tribeam laser rifle."
+	icon_state = "tricar"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/baby)
 
 /obj/item/gun/energy/laser/plasma
