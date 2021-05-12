@@ -596,11 +596,15 @@
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 	name = "desert ranger combat helmet"
-	desc = "(VII) An U.S Marine Corps helmet, used by the legendary Desert Rangers."
+	desc = "(VII) A U.S. Marine Corps riot helmet, used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
 
-
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/marine
+	name = "marine riot helmet"
+	desc = "(VII) A U.S. Marine Corps riot helmet in almost impeccable condition."
+	icon_state = "xray_riot"
+	item_state = "xray_riot"
 
 /obj/item/clothing/head/helmet/f13/rangercombat/eliteriot/reclaimed
 	name = "reclaimed desert ranger gear"
@@ -811,6 +815,12 @@
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
+
+/obj/item/clothing/head/f13/ncr/old
+	name = "NCR pith helmet"
+	desc = "(V) An obsolete issue of the NCR standard issue helmet."
+	icon_state = "ncr_infantry_helmet"
+	item_state = "ncr_infantry_helmet"
 
 /obj/item/clothing/head/f13/ncr/medic
 	name = "NCR medical helmet"
