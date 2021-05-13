@@ -2127,10 +2127,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
-"djp" = (
-/obj/item/candle/tribal_torch,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "djt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/syndi_cakes,
@@ -3994,7 +3990,7 @@
 /area/f13/vault)
 "fTD" = (
 /obj/structure/chair/bench,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "fTR" = (
 /obj/structure/chair/left{
@@ -6305,10 +6301,6 @@
 	},
 /turf/open/floor/wood,
 /area/f13/vault)
-"jcD" = (
-/obj/structure/stone_tile/center/burnt,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "jcY" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -6688,9 +6680,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"jHu" = (
-/turf/open/floor/plating/dirt/dark,
 /area/f13/bunker)
 "jHW" = (
 /turf/open/floor/plasteel/f13{
@@ -7146,7 +7135,7 @@
 "krP" = (
 /mob/living/simple_animal/hostile/cazador/young,
 /obj/structure/flora/junglebush/large,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "krQ" = (
 /obj/structure/musician/piano,
@@ -7586,10 +7575,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/vault)
-"kYg" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "kZg" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -8284,10 +8269,6 @@
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"mcE" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "mdv" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/reagent_dispensers/barrel/three,
@@ -8339,10 +8320,6 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/bunker)
-"mgL" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/floor/plating/dirt/dark,
 /area/f13/bunker)
 "mgN" = (
 /obj/machinery/door/airlock{
@@ -9454,10 +9431,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
-"nGF" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/underground/cave)
 "nIh" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -9973,7 +9946,7 @@
 /area/f13/bunker)
 "omI" = (
 /obj/structure/destructible/tribal_torch/lit,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "omR" = (
 /obj/structure/plasticflaps,
@@ -10167,10 +10140,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"oEf" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/underground/cave)
 "oFd" = (
 /mob/living/simple_animal/hostile/cazador,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -11003,10 +10972,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"pOV" = (
-/obj/item/candle/tribal_torch,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/underground/cave)
 "pPC" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -12095,10 +12060,6 @@
 	icon_state = "horizontalbottomborderbottom2left"
 	},
 /area/f13/wasteland)
-"rrQ" = (
-/obj/structure/stone_tile/surrounding/cracked,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "rrS" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
@@ -12658,10 +12619,6 @@
 /obj/item/crafting/diode,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"sjo" = (
-/mob/living/simple_animal/hostile/cazador,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "sjp" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
@@ -12705,10 +12662,6 @@
 	icon_state = "whitebluechess"
 	},
 /area/f13/vault)
-"son" = (
-/mob/living/simple_animal/hostile/gecko,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "soK" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
@@ -13185,10 +13138,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
-"tfZ" = (
-/obj/structure/stone_tile/slab/cracked,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "tgq" = (
 /obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/f13{
@@ -13208,17 +13157,13 @@
 "tiv" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/item/candle/tribal_torch,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "tkj" = (
 /obj/machinery/chem_master/advanced,
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/vault)
-"tkL" = (
-/obj/structure/stone_tile/block/burnt,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/bunker)
 "tkS" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/barricade/bars,
@@ -13604,7 +13549,7 @@
 "tNU" = (
 /obj/structure/stone_tile/block/burnt,
 /obj/item/candle/tribal_torch,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "tOo" = (
 /obj/effect/spawner/lootdrop/maintenance{
@@ -13702,10 +13647,6 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
-/area/f13/bunker)
-"tUW" = (
-/obj/structure/stone_tile/block,
-/turf/open/floor/plating/dirt/dark,
 /area/f13/bunker)
 "tVb" = (
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -14451,7 +14392,7 @@
 "vdZ" = (
 /obj/structure/stone_tile/slab,
 /obj/item/candle/tribal_torch,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "veb" = (
 /obj/structure/cable{
@@ -14867,10 +14808,6 @@
 "vId" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
-/area/f13/bunker)
-"vIo" = (
-/obj/structure/stone_tile/slab,
-/turf/open/floor/plating/dirt/dark,
 /area/f13/bunker)
 "vIW" = (
 /obj/effect/turf_decal/stripes/line{
@@ -16246,10 +16183,6 @@
 /obj/structure/closet,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/vault)
-"xvb" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/underground/cave)
 "xvC" = (
 /obj/structure/reagent_dispensers/barrel/two,
 /obj/effect/decal/cleanable/dirt,
@@ -17708,10 +17641,10 @@ qdv
 cWO
 rTu
 rTu
-mcE
-jHu
-mcE
-jHu
+oJF
+okW
+oJF
+okW
 mZA
 bEt
 okW
@@ -17964,7 +17897,7 @@ heT
 oky
 wqB
 rTu
-mcE
+oJF
 oky
 ccE
 okW
@@ -18220,7 +18153,7 @@ heT
 heT
 qdv
 rTu
-jHu
+okW
 bEt
 xYc
 okW
@@ -18476,7 +18409,7 @@ bsh
 heT
 heT
 qdv
-mcE
+oJF
 ccE
 okW
 okW
@@ -18513,7 +18446,7 @@ heT
 heT
 apt
 apt
-pOV
+sRg
 wmN
 gQx
 qOy
@@ -18770,11 +18703,11 @@ heT
 apt
 apt
 wSB
-nGF
+xTp
 bLi
 oyc
 xTp
-pOV
+sRg
 wSB
 toF
 apt
@@ -19027,11 +18960,11 @@ apt
 wBk
 apt
 wSB
-xvb
+oyc
 bLi
 bLi
 bLi
-nGF
+xTp
 dqq
 wSB
 toF
@@ -19282,8 +19215,8 @@ apt
 apt
 oyc
 wBk
-pOV
-xvb
+sRg
+oyc
 bLi
 bLi
 pis
@@ -19514,14 +19447,14 @@ pbx
 qdv
 okW
 oky
-mcE
-jHu
-jHu
-mcE
+oJF
+okW
+okW
+oJF
 oky
-djp
-mcE
-mcE
+xYc
+oJF
+oJF
 oky
 okW
 wgv
@@ -19545,7 +19478,7 @@ bLi
 bLi
 bLi
 bLi
-xvb
+oyc
 wSB
 wSB
 dqq
@@ -19770,7 +19703,7 @@ qdv
 oky
 qdv
 bEt
-mcE
+oJF
 wQH
 rTu
 rTu
@@ -19779,7 +19712,7 @@ rTu
 rTu
 rTu
 xJE
-mcE
+oJF
 okW
 vhQ
 cmd
@@ -19802,7 +19735,7 @@ xTp
 bLi
 bLi
 bLi
-oEf
+qOy
 afv
 afv
 apt
@@ -20027,7 +19960,7 @@ okW
 okW
 qdv
 okW
-djp
+xYc
 rTu
 bOt
 rTu
@@ -20275,7 +20208,7 @@ bsh
 heT
 qdv
 qdv
-mcE
+oJF
 okW
 okW
 okW
@@ -20284,16 +20217,16 @@ okW
 okW
 qdv
 okW
-sjo
+ccE
 rTu
 rTu
 oky
-mcE
-mcE
-sjo
-jHu
-jHu
-jHu
+oJF
+oJF
+ccE
+okW
+okW
+okW
 rrB
 caS
 bEt
@@ -20541,10 +20474,10 @@ oky
 oJF
 qdv
 okW
-jHu
+okW
 rTu
 rTu
-mcE
+oJF
 okW
 okW
 okW
@@ -20793,15 +20726,15 @@ rTu
 rTu
 sST
 nNk
-jHu
-jHu
-son
+okW
+okW
+wvA
 qdv
-mcE
+oJF
 oky
 rTu
 rTu
-djp
+xYc
 bEt
 okW
 qdv
@@ -21046,7 +20979,7 @@ bsh
 heT
 qdv
 qdv
-jHu
+okW
 xJE
 nCC
 sST
@@ -21058,7 +20991,7 @@ rTu
 vHC
 rTu
 rTu
-jHu
+okW
 rJO
 qdv
 oky
@@ -21070,7 +21003,7 @@ fax
 uYM
 oky
 krP
-mcE
+oJF
 qdv
 okW
 okW
@@ -21304,7 +21237,7 @@ heT
 heT
 qdv
 oJF
-son
+wvA
 oJF
 sST
 rTu
@@ -21315,7 +21248,7 @@ cWO
 iSQ
 bOt
 xJE
-jHu
+okW
 okW
 qdv
 rPC
@@ -21326,7 +21259,7 @@ kqy
 okW
 okW
 mZA
-mcE
+oJF
 lBd
 qdv
 okW
@@ -21564,15 +21497,15 @@ okW
 oky
 okW
 okW
-djp
+xYc
 oky
-mcE
+oJF
 qdv
-jHu
-mcE
+okW
+oJF
 rTu
 iSQ
-mcE
+oJF
 oJF
 qdv
 gqg
@@ -22349,10 +22282,10 @@ qdv
 qdv
 oky
 tNU
-rrQ
-tkL
-jcD
-tfZ
+rUI
+fax
+erI
+gqg
 omI
 qdv
 qdv
@@ -22589,8 +22522,8 @@ heT
 heT
 qdv
 euQ
-jHu
-djp
+okW
+xYc
 rTu
 wQH
 vHC
@@ -22847,11 +22780,11 @@ heT
 oky
 vHC
 rTu
-jHu
-kYg
+okW
+bEt
 rTu
 rTu
-jHu
+okW
 mZA
 gqg
 oJF
@@ -23104,11 +23037,11 @@ heT
 qdv
 dlP
 xJE
-mcE
-mgL
-jHu
-jHu
-mcE
+oJF
+sHh
+okW
+okW
+oJF
 qdv
 okW
 oJF
@@ -23377,10 +23310,10 @@ qdv
 qdv
 oky
 vdZ
-tfZ
-tUW
-vIo
-tkL
+gqg
+lGr
+cmd
+fax
 omI
 qdv
 qdv
@@ -23625,11 +23558,11 @@ heT
 heT
 qdv
 xYc
-jHu
+okW
 rTu
 rTu
 rTu
-djp
+xYc
 qdv
 heT
 qdv
@@ -23881,7 +23814,7 @@ heT
 heT
 heT
 oky
-mcE
+oJF
 vHC
 rTu
 rTu
