@@ -404,22 +404,3 @@
 	contains = list(/obj/item/stack/tile/noslip/thirty,
 					/obj/item/stack/tile/noslip/thirty)
 	crate_name = "high-traction floor tiles crate"
-
-//////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// Syndicate Packs /////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-
-//Generate assorted uplink items, taking into account the same surplus modifiers used for surplus crates
-//(this is exclusively used for the rare variant of the stray cargo event!)
-/datum/supply_pack/misc/syndicate/fill(obj/structure/closet/crate/C)
-	var/list/uplink_items = get_uplink_items(SSticker.mode)
-	while(crate_value)
-		var/category = pick(uplink_items)
-		var/item = pick(uplink_items[category])
-		var/datum/uplink_item/I = uplink_items[category][item]
-		if(!I.surplus || prob(100 - I.surplus))
-			continue
-		if(crate_value < I.cost)
-			continue
-		crate_value -= I.cost
-		new I.item(C)
