@@ -406,50 +406,6 @@
 	crate_name = "high-traction floor tiles crate"
 
 //////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// Lewd Supplies ///////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-
-/datum/supply_pack/misc/lewd
-	name = "Lewd Crate" // OwO
-	desc = "Pssst, want to have a good time with your sluts? Well I got what you want! Maid clothing, dildos, collars and more!"
-	cost = 5250
-	contraband = TRUE
-	contains = list(/obj/item/dildo/custom,
-					/obj/item/dildo/custom,
-					/obj/item/vending_refill/kink,
-					/obj/item/vending_refill/kink,
-					/obj/item/clothing/under/costume/maid,
-					/obj/item/clothing/under/costume/maid,
-					/obj/item/electropack/shockcollar,
-					/obj/item/electropack/shockcollar,
-					/obj/item/restraints/handcuffs/fake/kinky,
-					/obj/item/restraints/handcuffs/fake/kinky,
-					/obj/item/clothing/head/simplekitty, // Why its illegal
-					/obj/item/clothing/head/simplekitty,
-					/obj/item/storage/pill_bottle/penis_enlargement)
-	crate_name = "lewd kit"
-	crate_type = /obj/structure/closet/crate
-
-///Special supply crate that generates random syndicate gear up to a determined TC value
-
-/datum/supply_pack/misc/syndicate
-
-	name = "Assorted Syndicate Gear"
-
-	desc = "Contains a random assortment of syndicate gear."
-
-	special = TRUE ///Cannot be ordered via cargo
-
-	contains = list()
-
-	crate_name = "syndicate gear crate"
-
-	crate_type = /obj/structure/closet/crate
-
-	var/crate_value = 30 ///Total TC worth of contained uplink items
-
-
-//////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// Syndicate Packs /////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 

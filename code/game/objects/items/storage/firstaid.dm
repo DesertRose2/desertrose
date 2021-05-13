@@ -390,22 +390,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/pill/mutarad(src)
 
-/obj/item/storage/pill_bottle/penis_enlargement
-	name = "penis enlargement pills"
-	desc = "You want penis enlargement pills?"
-
-/obj/item/storage/pill_bottle/penis_enlargement/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/reagent_containers/pill/penis_enlargement(src)
-
-/obj/item/storage/pill_bottle/breast_enlargement
-	name = "breast enlargement pills"
-	desc = "Made by Fermichem - They have a woman with breasts larger than she is on them. The warming states not to take more than 10u at a time."
-
-/obj/item/storage/pill_bottle/breast_enlargement/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/reagent_containers/pill/breast_enlargement(src)
-
 /obj/item/storage/pill_bottle/neurine
 	name = "bottle of neurine pills"
 	desc = "Contains pills to treat non-severe mental traumas."
@@ -542,17 +526,6 @@
 	icon_state = "enlarge-mini"
 	item_state = "firstaid-brute"
 
-/obj/item/storage/hypospraykit/enlarge/PopulateContents()
-	if(empty)
-		return
-	new /obj/item/hypospray/mkii/enlarge(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/breastreduction(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/breastreduction(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/breastreduction(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/penisreduction(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/penisreduction(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/small/penisreduction(src)
-
 /obj/item/storage/hypospraykit/brute
 	name = "brute trauma hypospray kit"
 	icon_state = "brute-mini"
@@ -646,4 +619,3 @@
 /obj/item/storage/pill_bottle/chem_tin/buffout/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/buffout(src)
-	
