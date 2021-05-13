@@ -112,7 +112,7 @@
 
 /obj/item/clothing/head/helmet/f13/rangerbroken/fox
 	name = "broken reclaimed ranger-hunter helmet"
-	desc = "(VII) A riot helmet once cared and loved by it's owner, now an old combat relic. A large entry and exit hole is on the top of the helmet, 'DE OPPRESSO LIBER' is also stenciled on the front."
+	desc = "(VII) A riot helmet once cared and loved by it's owner, now an old combat relic. A large entry and exit hole is on the top of the helmet, 'DE OPPRESSO LIBER' is also stenciled on the top of the helmet, along with what seems to be faded whiskers painted on the front."
 	icon_state = "foxranger_broken"
 	item_state = "foxranger_broken"
 
@@ -768,7 +768,7 @@
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
 	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
+	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is also stenciled on the top of the helmet, along with what seems to be faded whiskers painted on the front."
 	icon_state = "foxranger"
 	item_state = "foxranger"
 	actions_types = list(/datum/action/item_action/toggle)
