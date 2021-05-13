@@ -1100,6 +1100,11 @@
 		/obj/item/stack/cable_coil = 5,
 		/obj/item/reagent_containers/glass/beaker = 6) //So it can hold lots of chems
 
+/obj/item/circuitboard/machine/kinkmate
+	name = "Kinkmate Vendor (Machine Board)"
+	build_path = /obj/machinery/vending/kink
+	req_components = list(/obj/item/vending_refill/kink = 1)
+
 /obj/item/circuitboard/machine/autolathe/toy
 	name = "Autoylathe (Machine Board)"
 	build_path = /obj/machinery/autolathe/toy
