@@ -619,4 +619,3 @@
 /obj/item/storage/pill_bottle/chem_tin/buffout/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/buffout(src)
-
