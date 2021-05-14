@@ -25,6 +25,7 @@
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
+	H.grant_language(/datum/language/wayfarer)
 
 /*
 Tribal Chief
