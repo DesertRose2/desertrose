@@ -328,7 +328,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	null, \
 	new/datum/stack_recipe_list("Storage (Harvest, Medicine, Bottles, Seeds)", list(
 		new /datum/stack_recipe("bottle rack", /obj/machinery/smartfridge/bottlerack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
-		new /datum/stack_recipe("grownbin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		new /datum/stack_recipe("harvest bin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("alchemy rack", /obj/machinery/smartfridge/bottlerack/alchemy_rack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("seed bin", /obj/machinery/smartfridge/bottlerack/seedbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		)),
