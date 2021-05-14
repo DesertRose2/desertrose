@@ -162,7 +162,12 @@
 	target_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
 
-/obj/item/modkit/chinesecombat
-	name = "Chinese Combat Armour modkit"
-	target_item = /obj/item/clothing/suit/armor/f13/raider
-	result_item = /obj/item/clothing/suit/armor/f13/combat/chinese
+/obj/item/modkit/modkhancombat
+	name = "Modified Khan Combat Armour modkit"
+	target_item = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	result_item = /obj/item/clothing/suit/toggle/labcoat/f13/chinese_khan
+
+/obj/item/modkit/modkhanjumpsuit
+	name = "Modified Khan Jumpsuit modkit"
+	target_item = /obj/item/clothing/under/f13/khan
+	result_item = /obj/item/clothing/under/f13/chinese_khan
