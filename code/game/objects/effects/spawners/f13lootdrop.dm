@@ -1147,6 +1147,12 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/r84
 	)
+/obj/effect/spawner/bundle/f13/garand
+	name = "garand spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/m1garand,
+				/obj/item/ammo_box/magazine/garand308
+	)
 /obj/effect/spawner/bundle/f13/mp5
 	name = "mp5 and ammo spawner"
 	items = list(
@@ -1798,6 +1804,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82,
+		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle
 	)
 
