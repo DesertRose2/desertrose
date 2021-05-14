@@ -152,6 +152,7 @@
 	resistance_flags = FLAMMABLE
 
 /obj/item/paper_bin/bundlenatural/on_attack_hand(mob/user)
+	. = ..()
 	if(total_paper < 1)
 		qdel(src)
 
