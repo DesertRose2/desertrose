@@ -1316,6 +1316,8 @@
 	zoom_out_amt = 13
 	can_attachments = TRUE
 	can_scope = FALSE
+	extra_damage = 1.2
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
 /obj/item/gun/ballistic/automatic/lsw
 	name = "light support weapon"

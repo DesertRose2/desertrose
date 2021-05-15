@@ -1073,6 +1073,12 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 
+/obj/item/clothing/under/f13/recon/marine
+	name = "marine wetsuit"
+	desc = "A skin-tight wetsuit designed to keep the user warm when submerged underwater. Designed to work in tandem with marine combat armor."
+	icon_state = "marinesuit"
+	item_state = "marinesuit"
+
 /obj/item/clothing/under/f13/chinese
 	name = "chinese jumpsuit"
 	desc = "An ancient Chinese combat uniform. In use before the war."
