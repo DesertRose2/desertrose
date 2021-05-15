@@ -699,6 +699,12 @@
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
 
+/obj/item/clothing/suit/armor/f13/rangercombat/marine
+	name = "marine riot gear"
+	desc = "(VII) A pre-war suit of U.S.M.C. issue riot gear. The armor looks to be in impeccable condition, the duster however is not."
+	icon_state = "usmc_riot_gear"
+	item_state = "usmc_riot_gear"
+
 /obj/item/clothing/suit/armor/f13/ncrarmor/soldier
 	name = "standard issue trooper armor"
 	desc = "A set of NCR armor that consists of an armored breastplate, metal pauldrons, and gauntlets, worn by NCR soldiers in combat environments.<br>This one has had its breastplate emblazoned with the emblem of the NCR, that has slightly faded over time."

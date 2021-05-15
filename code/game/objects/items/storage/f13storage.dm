@@ -372,6 +372,22 @@
 	new /obj/item/reagent_containers/food/condiment/pack/hotsauce(src)
 	new /obj/item/reagent_containers/food/condiment/pack/bbqsauce(src)
 
+
+/obj/item/storage/box/ration/menu_twelve
+	name = "c-ration box - 'Menu 12'"
+
+/obj/item/storage/box/ration/menu_eleven/PopulateContents()
+	. = ..()
+	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/pizza(src)
+	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/cranberry_cobbler(src)
+	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/crackers(src)
+	new /obj/item/reagent_containers/food/snacks/sosjerky/ration(src)
+	new /obj/item/reagent_containers/food/drinks/bottle/f13nukacola(src)
+	new /obj/item/storage/fancy/cigarettes/cigpack_pyramid(src)
+	new /obj/item/storage/box/matches(src)
+	new /obj/item/reagent_containers/food/condiment/pack/hotsauce(src)
+	new /obj/item/reagent_containers/food/condiment/pack/bbqsauce(src)
+
 /obj/item/storage/box/ration/ranger_breakfast
 	name = "k-ration breakfast"
 	icon_state = "k-ration"

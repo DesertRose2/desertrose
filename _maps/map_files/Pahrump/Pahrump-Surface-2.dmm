@@ -14786,6 +14786,20 @@
 /obj/structure/rack,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"jEe" = (
+/obj/structure/ladder/unbreakable{
+	desc = "All aboard boys and girls, express transport provided by the 20th Motorized!";
+	height = 2;
+	id = "thunderbolt";
+	layer = 4;
+	name = "drive to Operation Thunderbolt AO";
+	pixel_x = 1;
+	pixel_y = 18
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innershade"
+	},
+/area/f13/wasteland)
 "jEp" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt{
@@ -36895,6 +36909,12 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland)
+"xNd" = (
+/obj/structure/wreck/bus/orange,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/wasteland)
 "xNm" = (
 /turf/open/floor/f13/wood,
 /area/f13/legion)
@@ -42615,7 +42635,7 @@ mvv
 bpD
 kGc
 unI
-hbW
+xNd
 sgz
 hOl
 koD
@@ -43387,7 +43407,7 @@ mvv
 kGc
 unI
 hbW
-xzM
+jEe
 xzM
 koD
 xEc
