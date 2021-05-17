@@ -414,6 +414,7 @@
 	item_state = "chainswordon"
 	name = "ripper"
 	desc = "A miniature chainsaw, as amazing as it sounds."
+	w_class = WEIGHT_CLASS_BULKY
 	force = 45
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")

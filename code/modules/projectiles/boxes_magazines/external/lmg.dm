@@ -80,3 +80,17 @@
 /obj/item/ammo_box/magazine/mm762/update_icon()
 	..()
 	icon_state = "762belt-[round(ammo_count(),20)]"
+
+/obj/item/ammo_box/magazine/mm50
+	name = "ammo belt (.50MG)"
+	icon_state = "762belt"
+	ammo_type = /obj/item/ammo_casing/a50MG
+	max_ammo = 80
+	caliber = "a50MG"
+
+/obj/item/ammo_box/magazine/mm50/can_load()
+	return 0
+
+/obj/item/ammo_box/magazine/mm50/update_icon()
+	..()
+	icon_state = "762belt-[round(ammo_count(),20)]"

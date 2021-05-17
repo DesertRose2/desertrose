@@ -557,6 +557,13 @@
 	item_color = "chinese_khan"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
 
+/obj/item/clothing/under/f13/ahp_uniform
+	name = "highway patrol uniform"
+	desc = "An old tan police uniform with tight-fitting breeches and a gold badge with the logo of the 'Arizona State Troopers'."
+	icon_state = "ahp_uniform"
+	item_state = "ahp_uniform"
+	item_color = "ahp_uniform"
+
 //WAYFARER TRIBAL
 /obj/item/clothing/under/f13/tribe
 	name = "tribal rags"
@@ -1080,6 +1087,12 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 40)
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
+
+/obj/item/clothing/under/f13/recon/marine
+	name = "marine wetsuit"
+	desc = "A skin-tight wetsuit designed to keep the user warm when submerged underwater. Designed to work in tandem with marine combat armor."
+	icon_state = "marinesuit"
+	item_state = "marinesuit"
 
 /obj/item/clothing/under/f13/chinese
 	name = "chinese jumpsuit"
