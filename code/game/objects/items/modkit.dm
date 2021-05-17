@@ -44,6 +44,14 @@
 	name = "11th armored calvary helmet modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/rigscustom
 
+/obj/item/modkit/riotgear/price
+	name = "spider riot gear modkit"
+	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
+
+/obj/item/modkit/riotgear_helmet/price
+	name = "spider riot helmet modkit"
+	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+
 /obj/item/modkit/thax_patrol
 	name = "modified patrol armor modkit"
 	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
@@ -103,3 +111,63 @@
 	name = "subdued ranger vest modkit"
 	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	result_item = /obj/item/clothing/suit/armor/f13/modif_r_vest
+
+/obj/item/modkit/erinarmor
+	name = "chest gear harness modkit"
+	target_item = /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
+	result_item = /obj/item/clothing/suit/armor/f13/rangerrig
+
+/obj/item/modkit/kainatarmor
+	name = "ranger scout armor modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
+	result_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
+
+/obj/item/modkit/birdarmor
+	name = "Salvaged claw cloak modkit"
+	target_item = /obj/item/clothing/suit/hooded/cloak/goliath
+	result_item = /obj/item/clothing/suit/hooded/cloak/birdarmor
+
+/obj/item/modkit/feuferarmor
+	name = "T-51b Reforged WBoS Body modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	result_item = /obj/item/clothing/suit/armor/f13/power_armor/t51b/reforgedwbos
+
+/obj/item/modkit/feuferhelmet
+	name = "T-51b Reforged WBoS Helmet modkit"
+	target_item = /obj/item/clothing/head/helmet/f13/power_armor/t51b
+	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t51b/reforgedwbos
+
+/obj/item/modkit/marlowhat
+	name = "Marlow Hat modkit"
+	target_item = /obj/item/clothing/head/helmet/f13/raider
+	result_item = /obj/item/clothing/head/helmet/f13/marlowhat
+
+/obj/item/modkit/marlowsuit_ike
+	name = "Gunfighters Overcoat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
+
+/obj/item/modkit/marlowsuit_mason
+	name = "Vagabond Vest modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
+
+/obj/item/modkit/marlowsuit
+	name = "Marlow Overcoat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/raider
+	result_item = /obj/item/clothing/suit/armor/f13/marlowsuit
+
+/obj/item/modkit/officercoat
+	name = "NCR Officer Coat modkit"
+	target_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
+
+/obj/item/modkit/modkhancombat
+	name = "Modified Khan Combat Armour modkit"
+	target_item = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	result_item = /obj/item/clothing/suit/toggle/labcoat/f13/chinese_khan
+
+/obj/item/modkit/modkhanjumpsuit
+	name = "Modified Khan Jumpsuit modkit"
+	target_item = /obj/item/clothing/under/f13/khan
+	result_item = /obj/item/clothing/under/f13/chinese_khan

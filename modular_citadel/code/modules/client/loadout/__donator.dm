@@ -121,9 +121,81 @@
 	path = /obj/item/storage/box/large/custom_kit/katharinelamb
 	ckeywhitelist = list("elizabethdame")
 
+/datum/gear/donator/kits/erintisdale
+	name = "Erin Tisdale's belongings"
+	path = /obj/item/storage/box/large/custom_kit/erintisdale
+	ckeywhitelist = list("prawn04")
+
+/datum/gear/donator/kits/kainatali
+	name = "Kainat Ali's belongings"
+	path = /obj/item/storage/box/large/custom_kit/kainatali
+	ckeywhitelist = list("muhsollini")
+
+/datum/gear/donator/kits/birdblackhawk
+	name = "Bird Blackhawk's belongings"
+	path = /obj/item/storage/box/large/custom_kit/birdblackhawk
+	ckeywhitelist = list("octus")
+
+/datum/gear/donator/kits/lizholder
+	name = "Liz Holder's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lizholder
+	ckeywhitelist = list("jaxterminator")
+
+/datum/gear/donator/kits/matthewfeufer
+	name = "Matthew Feufer's belongings"
+	path = /obj/item/storage/box/large/custom_kit/matthewfeufer
+	ckeywhitelist = list("asterixcodix")
+
+/datum/gear/donator/kits/dellcaster
+	name = "Dell Caster's belongings"
+	path = /obj/item/storage/box/large/custom_kit/dellcaster
+	ckeywhitelist = list("panzer1944")
+
+/datum/gear/donator/kits/ikemarlow
+	name = "Ike Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/ikemarlow
+	ckeywhitelist = list("dioclex")
+
+/datum/gear/donator/kits/isaiahmarlow
+	name = "Isaiah Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/isaiahmarlow
+	ckeywhitelist = list("purplepineapple")
+
+/datum/gear/donator/kits/masonmarlow
+	name = "Ishaq 'Mason' Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/masonmarlow
+	ckeywhitelist = list("arkadec")
+
+/datum/gear/donator/kits/gremlin
+	name = "Gremlin's belongings"
+	path = /obj/item/storage/box/large/custom_kit/gremlin
+	ckeywhitelist = list("panzer1944")
+
+/datum/gear/donator/kits/isabellemarlow
+	name = "Isabelle 'Izzy' Marlow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/isabellemarlow
+	ckeywhitelist = list("djorgomush")
+
+/datum/gear/donator/kits/billy
+	name = "Billy's belongings"
+	path = /obj/item/storage/box/large/custom_kit/billy
+	ckeywhitelist = list("gurking")
+
+/datum/gear/donator/kits/natalie
+	name = "Natalie's belongings"
+	path = /obj/item/storage/box/large/custom_kit/natalie
+	ckeywhitelist = list("gurking")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
+
+/datum/gear/donator/ranger4570bayonet
+	name = "45-70 Gov't Service Revolver"
+	slot = SLOT_NECK
+	path = /obj/item/storage/belt/holster/ranger4570bayonet
+	ckeywhitelist = list("asterixcodix")
+	restricted_roles = list("NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger4570
 	name = "45-70 Gov't Service Revolver"
@@ -137,13 +209,6 @@
 						"purplepineapple",
 						"topbirb")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
-
-/datum/gear/donator/ranger4570bayonet
-	name = "45-70 Gov't Service Revolver"
-	slot = SLOT_NECK
-	path = /obj/item/storage/belt/holster/ranger4570bayonet
-	ckeywhitelist = list("asterixcodix")
-	restricted_roles = list("NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
 	name = ".44 Magnum Service Revolver"
@@ -159,6 +224,7 @@
 						"thegreatcoward",
 						"usotsukihime",
 						"melarinn",
+						"gurking",
 						"jackofoak",
 						"muhsollini",
 						"lynuahsororitas",
@@ -238,6 +304,7 @@
 						"seabass390",
 						"julwaters",
 						"shoi87",
+						"gurking",
 						"idiocityinc",
 						"zeronetalpha",
 						"mrmatrixman",

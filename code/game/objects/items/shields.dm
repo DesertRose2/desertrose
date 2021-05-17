@@ -522,3 +522,19 @@ obj/item/shield/riot/bullet_proof
 		playsound(user, 'sound/weapons/saberoff.ogg', 35, TRUE)
 		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
 	add_fingerprint(user)
+
+/obj/item/shield/riot/tribal
+	name = "tribal shield"
+	desc = "An oval shaped shield made of strong wood and brahmin skin."
+	icon_state = "btribal"
+	item_state = "btribal"
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+
+/obj/item/shield/riot/tribal/nightstalker
+	name = "nightstalker shield"
+	desc = "An oval shaped shield made of strong wood and nightstalker skin."
+	icon_state = "bnightstalker"
+	item_state = "bnightstalker"
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'

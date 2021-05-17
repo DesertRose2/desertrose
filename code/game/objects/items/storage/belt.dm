@@ -368,7 +368,7 @@
 
 /obj/item/storage/belt/military
 	name = "chest rig"
-	desc = "A set of tactical webbing worn by Syndicate boarding parties."
+	desc = "A tactical webbing vest to hold all your gear."
 	icon_state = "militarywebbing"
 	item_state = "militarywebbing"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
@@ -377,6 +377,12 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/belt/military/leather
+	name = "leather chest rig"
+	desc = "A tactical webbing vest made out of leather to hold all your gear."
+	icon_state = "explorer1"
+	item_state = "explorer1"
 
 /obj/item/storage/belt/military/snack
 	name = "tactical snack rig"

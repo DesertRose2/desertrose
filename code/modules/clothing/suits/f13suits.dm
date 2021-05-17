@@ -256,6 +256,13 @@
 	item_state = "jensencoat"
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
+/obj/item/clothing/suit/toggle/labcoat/f13/chinese_khan
+	name = "modified Great Khan combat armour"
+	desc = "(IV) A suit of simple yet uncommon chinese combat armour with an extra plate at the back and flame decals painted on the front, essentially some plates strapped together with a neck guard. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
+	icon_state = "chicom_armor_khan"
+	item_state = "chicom_armor_khan"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
 	name = "Great Khan armored jacket"
 	desc = "(V) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
@@ -415,3 +422,23 @@
 	icon_state = "jamrock_blazer"
 	item_state = "jamrock_blazer"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/hooded/cloak/birdarmor
+	name = "Salvaged claw cloak"
+	icon_state = "birdarmor"
+	item_state = "birdarmor"
+	desc = "(V) An old cloak of Razorclaw armour, modified with a NCR armguard and a heavy looking shoulder piece, it looks like it has alot of history."
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/birdhood
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/head/hooded/cloakhood/birdhood
+	name = "Salvaged claw hood"
+	icon_state = "birdhood"
+	item_state = "birdhood"
+	desc = "(V) A hood made of deathclaw skins, the leather is rather thick but looks tattered."
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	heat_protection = HEAD
+	resistance_flags = FIRE_PROOF | ACID_PROOF

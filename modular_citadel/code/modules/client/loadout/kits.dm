@@ -98,8 +98,8 @@
 
 //Alice Price - asterixcodix
 /obj/item/storage/box/large/custom_kit/aliceprice/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
-	new /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+	new /obj/item/modkit/riotgear/price(src)
+	new /obj/item/modkit/riotgear_helmet/price(src)
 
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()
@@ -120,3 +120,89 @@
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/suit/armor/vest(src)
 
+//Erin Tisdale - prawn04
+/obj/item/storage/box/large/custom_kit/erintisdale/PopulateContents()
+	new /obj/item/clothing/under/f13/ranger/erin(src)
+	new /obj/item/modkit/erinarmor(src)
+	new /obj/item/clothing/shoes/f13/military/desert
+
+//Kainat Ali - muhsollini
+/obj/item/storage/box/large/custom_kit/kainatali/PopulateContents()
+	new /obj/item/clothing/under/f13/ncr/scout(src)
+	new /obj/item/clothing/gloves/patrol/burned(src)
+	new /obj/item/clothing/glasses/regular/protected(src)
+	new /obj/item/clothing/neck/cloak/ranger(src)
+	new /obj/item/modkit/kainatarmor(src)
+
+//Bird Blackhawk - octus
+/obj/item/storage/box/large/custom_kit/birdblackhawk/PopulateContents()
+	new /obj/item/modkit/birdarmor(src)
+	new /obj/item/clothing/mask/rat/raven(src)
+	new /obj/item/clothing/under/f13/wayfarer/hunter(src)
+	new /obj/item/clothing/shoes/f13/raidertreads(src)
+
+//Liz Holder - jaxterminator
+/obj/item/storage/box/large/custom_kit/lizholder/PopulateContents()
+	new /obj/item/clothing/suit/hooded/cloak/goliath/tatteredred(src)
+	new /obj/item/clothing/under/f13/female/mercadv(src)
+	new /obj/item/dildo/flared/huge(src)
+
+//Matthew Feufer - asterixcodix
+/obj/item/storage/box/large/custom_kit/matthewfeufer/PopulateContents()
+	new /obj/item/modkit/feuferhelmet(src)
+	new /obj/item/modkit/feuferarmor(src)
+
+//Dell Caster - panzer1944 (Readding from pre-rebase with permission from Superballs - Outlaw Loadout)
+/obj/item/storage/box/large/custom_kit/dellcaster/PopulateContents()
+	new /obj/item/clothing/head/f13/chinese_commander(src)
+	new /obj/item/clothing/glasses/welding(src)
+	new /obj/item/storage/belt/military/army(src)
+	new /obj/item/modkit/modkhancombat(src)
+	new /obj/item/modkit/modkhanjumpsuit(src)
+
+//Ike Marlow - dioclex
+/obj/item/storage/box/large/custom_kit/ikemarlow/PopulateContents()
+	new /obj/item/modkit/marlowhat(src)
+	new /obj/item/clothing/under/f13/ikeduds(src)
+	new /obj/item/modkit/marlowsuit_ike(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Isaiah Marlow - purplepineapple
+/obj/item/storage/box/large/custom_kit/isaiahmarlow/PopulateContents()
+	new /obj/item/modkit/marlowhat(src)
+	new /obj/item/clothing/under/f13/marlowduds(src)
+	new /obj/item/modkit/marlowsuit(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Ishaq 'Mason' Marlow - arkadec
+/obj/item/storage/box/large/custom_kit/masonmarlow/PopulateContents()
+	new /obj/item/modkit/marlowhat(src)
+	new /obj/item/clothing/under/f13/masonduds(src)
+	new /obj/item/modkit/marlowsuit_mason(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Gremlin - panzer1944
+/obj/item/storage/box/large/custom_kit/gremlin/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/fiend(src)
+	new /obj/item/clothing/under/f13/marlowduds(src)
+	new /obj/item/modkit/marlowsuit(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Isabelle 'Izzy' Marlow - djorgomush
+/obj/item/storage/box/large/custom_kit/isabellemarlow/PopulateContents()
+	new /obj/item/modkit/marlowhat(src)
+	new /obj/item/clothing/under/f13/helenduds(src)
+	new /obj/item/modkit/marlowsuit(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Billy - gurking
+/obj/item/storage/box/large/custom_kit/billy/PopulateContents()
+	new /obj/item/modkit/marlowhat(src)
+	new /obj/item/clothing/under/f13/marlowduds(src)
+	new /obj/item/modkit/marlowsuit(src)
+	new /obj/item/clothing/shoes/f13/cowboy(src)
+
+//Natalie Van De Woestijn - gurking
+/obj/item/storage/box/large/custom_kit/natalie/PopulateContents()
+	new /obj/item/modkit/officercoat(src)
+	new /obj/item/lighter/fusion(src)
