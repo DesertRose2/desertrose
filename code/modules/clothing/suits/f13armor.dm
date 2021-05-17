@@ -200,6 +200,12 @@
 	item_state = "marinearmor"
 	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
+/obj/item/clothing/suit/armor/f13/combat/ahp_suit
+	name = "highway patrol jacket"
+	desc = "(V) An old police motorcycle jacket with internal padding and a gold badge with the logo of the 'Arizona State Troopers'."
+	icon_state = "ahp_suit"
+	item_state = "ahp_suit"
+
 //Power armors, including salvaged and faction
 
 /obj/item/clothing/suit/armor/f13/power_armor
