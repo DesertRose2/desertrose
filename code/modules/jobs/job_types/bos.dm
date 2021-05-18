@@ -392,7 +392,6 @@ Star Paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
-	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
@@ -406,6 +405,8 @@ Star Paladin
 /datum/outfit/loadout/spaladina
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,		
 		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -419,7 +420,8 @@ Star Paladin
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1
+		/obj/item/gun/energy/laser/wattz2k=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3
 		)
 
 /*
