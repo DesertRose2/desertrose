@@ -91,6 +91,13 @@
 	icon_state = "combat_helmet_raider"
 	item_state = "combat_helmet_raider"
 
+/obj/item/clothing/head/helmet/f13/combat/marine
+	name = "marine combat helmet"
+	desc = "(VIII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	icon_state = "marinehelmet"
+	item_state = "marinehelmet"
+	armor = list("tier" = 8, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+
 /obj/item/clothing/head/helmet/f13/rangerbroken
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
@@ -102,6 +109,12 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flash_protect = 1
+
+/obj/item/clothing/head/helmet/f13/rangerbroken/fox
+	name = "broken reclaimed ranger-hunter helmet"
+	desc = "(VII) A riot helmet once cared and loved by it's owner, now an old combat relic. A large entry and exit hole is on the top of the helmet, 'DE OPPRESSO LIBER' is also stenciled on the top of the helmet, along with what seems to be faded whiskers painted on the front."
+	icon_state = "foxranger_broken"
+	item_state = "foxranger_broken"
 
 /obj/item/clothing/head/helmet/f13/combat/swat
 	name = "SWAT combat helmet"
@@ -122,6 +135,12 @@
 /obj/item/clothing/head/helmet/f13/combat/environmental/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
+
+/obj/item/clothing/head/helmet/f13/combat/ahp_helmet
+	name = "highway patrol helmet"
+	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona State Troopers' emblazoned on the front."
+	icon_state = "ahp_helmet"
+	item_state = "ahp_helmet"
 
 //Sulphite Helm
 
@@ -755,7 +774,7 @@
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
 	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
+	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is also stenciled on the top of the helmet, along with what seems to be faded whiskers painted on the front."
 	icon_state = "foxranger"
 	item_state = "foxranger"
 	actions_types = list(/datum/action/item_action/toggle)

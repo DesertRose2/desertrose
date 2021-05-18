@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aav" = (
 /obj/item/clothing/head/cone,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aay" = (
 /obj/structure/flora/rock/jungle,
@@ -95,7 +95,7 @@
 /area/f13/village)
 "adQ" = (
 /obj/item/stack/f13Cash/random/aureus/low,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aeb" = (
 /obj/structure/table/wood/settler,
@@ -105,7 +105,7 @@
 /area/f13/wasteland)
 "aeg" = (
 /obj/structure/nest/mirelurk,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aep" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -3999,7 +3999,7 @@
 "cRM" = (
 /obj/structure/debris/v3,
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "cRX" = (
 /obj/structure/table/wood,
@@ -6455,7 +6455,7 @@
 "ezo" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/wreck/trash/machinepile,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ezp" = (
 /obj/machinery/light/lampost{
@@ -7790,7 +7790,7 @@
 /area/f13/building)
 "fnT" = (
 /obj/structure/simple_door/metal/ventilation,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "for" = (
 /obj/effect/decal/cleanable/dirt,
@@ -9739,7 +9739,7 @@
 /area/f13/village)
 "gAs" = (
 /obj/structure/barricade/wooden/strong,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "gAU" = (
 /obj/structure/rack,
@@ -9785,7 +9785,7 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "gCb" = (
 /obj/structure/closet/crate/miningcar,
@@ -9820,7 +9820,7 @@
 /area/f13/building)
 "gCL" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "gCN" = (
 /obj/structure/wreck/trash/halftire,
@@ -9957,7 +9957,6 @@
 	},
 /area/f13/village)
 "gGZ" = (
-/obj/effect/mob_spawn/human/skeleton/alive,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -10158,7 +10157,7 @@
 "gOD" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/simple_door/metal/ventilation,
-/turf/open/water,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "gOJ" = (
 /turf/open/indestructible/ground/outside/road{
@@ -10326,10 +10325,6 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland)
-"gSx" = (
-/mob/living/simple_animal/hostile/mirelurk/baby,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
 "gTz" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/combat,
@@ -14775,7 +14770,7 @@
 /area/f13/building)
 "jDk" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "jEb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14790,6 +14785,20 @@
 "jEd" = (
 /obj/structure/rack,
 /turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
+"jEe" = (
+/obj/structure/ladder/unbreakable{
+	desc = "All aboard boys and girls, express transport provided by the 20th Motorized!";
+	height = 2;
+	id = "thunderbolt";
+	layer = 4;
+	name = "drive to Operation Thunderbolt AO";
+	pixel_x = 1;
+	pixel_y = 18
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innershade"
+	},
 /area/f13/wasteland)
 "jEp" = (
 /obj/structure/chair/bench,
@@ -18656,7 +18665,7 @@
 /area/f13/city)
 "mco" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mcp" = (
 /obj/structure/wreck/trash/four_barrels,
@@ -19061,7 +19070,7 @@
 /area/f13/ncr)
 "mpQ" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mqp" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -21027,7 +21036,7 @@
 "nLL" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "nMd" = (
 /obj/structure/reagent_dispensers/cooking_oil,
@@ -21567,10 +21576,6 @@
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
-"oen" = (
-/obj/structure/mirelurkegg,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
 "oeL" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/f13/wood,
@@ -22542,7 +22547,7 @@
 "oMC" = (
 /obj/structure/simple_door/metal/ventilation,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "oMM" = (
 /mob/living/simple_animal/hostile/ghoul,
@@ -22675,10 +22680,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"oRE" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
 "oRM" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop0"
@@ -27744,7 +27745,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "skh" = (
 /obj/structure/rack,
@@ -28092,7 +28093,7 @@
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "suq" = (
 /obj/structure/fence{
@@ -29769,7 +29770,7 @@
 /area/f13/ncr)
 "ttn" = (
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ttq" = (
 /obj/structure/barricade/wooden,
@@ -31095,10 +31096,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"uhO" = (
-/obj/effect/mob_spawn/human/skeleton/alive,
-/turf/open/water,
-/area/f13/caves)
 "uhW" = (
 /obj/structure/fence,
 /turf/open/floor/f13{
@@ -31398,10 +31395,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"urK" = (
-/obj/effect/mob_spawn/human/skeleton/alive,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "urL" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
@@ -32522,7 +32515,7 @@
 /area/f13/brotherhood)
 "uZp" = (
 /obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "uZy" = (
 /obj/structure/bed/mattress,
@@ -32901,10 +32894,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/village)
-"vly" = (
-/obj/structure/debris/v3,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
 "vlz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -33411,7 +33400,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vDB" = (
 /obj/structure/barricade/wooden,
@@ -34206,7 +34195,7 @@
 /area/f13/wasteland)
 "whP" = (
 /obj/structure/wreck/trash/machinepile,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "whS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -34258,7 +34247,7 @@
 /area/f13/ncr)
 "wjI" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wjR" = (
 /turf/open/floor/f13{
@@ -34319,7 +34308,7 @@
 /area/f13/caves)
 "wne" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wnA" = (
 /obj/structure/barricade/wooden,
@@ -34329,7 +34318,7 @@
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
-/turf/open/floor/plating/dirt/dark,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wnT" = (
 /obj/structure/decoration/vent,
@@ -35716,9 +35705,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/ncr)
-"xdu" = (
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
 "xdA" = (
 /obj/structure/table,
 /obj/item/flashlight/lantern,
@@ -36921,6 +36907,12 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
 	icon_state = "outerpavementcorner"
+	},
+/area/f13/wasteland)
+"xNd" = (
+/obj/structure/wreck/bus/orange,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/wasteland)
 "xNm" = (
@@ -42643,7 +42635,7 @@ mvv
 bpD
 kGc
 unI
-hbW
+xNd
 sgz
 hOl
 koD
@@ -43415,7 +43407,7 @@ mvv
 kGc
 unI
 hbW
-xzM
+jEe
 xzM
 koD
 xEc
@@ -54045,7 +54037,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+ktB
 gcK
 gcK
 gcK
@@ -83493,8 +83485,8 @@ gcK
 gcK
 csk
 csk
-oRE
-oen
+asI
+gtn
 ktB
 ktB
 ktB
@@ -83752,7 +83744,7 @@ csk
 avl
 csk
 wjI
-xdu
+ggK
 asI
 gtn
 gcK
@@ -84008,7 +84000,7 @@ cfD
 csk
 csk
 csk
-xdu
+ggK
 aeg
 tmH
 gcK
@@ -84264,8 +84256,8 @@ qyJ
 fwu
 csk
 irI
-oRE
-xdu
+asI
+ggK
 asI
 ggK
 gcK
@@ -84519,10 +84511,10 @@ hBr
 fwu
 irI
 csk
-oRE
-xdu
-gSx
-xdu
+asI
+ggK
+jci
+ggK
 qIa
 gtn
 gcK
@@ -84775,10 +84767,10 @@ gcK
 hBr
 csk
 csk
-xdu
-xdu
-xdu
-xdu
+ggK
+ggK
+ggK
+ggK
 adQ
 gtn
 gcK
@@ -85031,11 +85023,11 @@ gcK
 hBr
 irI
 csk
-xdu
-xdu
-xdu
-oRE
-oen
+ggK
+ggK
+ggK
+asI
+gtn
 gcK
 gcK
 gcK
@@ -85289,7 +85281,7 @@ hBr
 cuW
 csk
 mpQ
-gSx
+jci
 gcK
 gcK
 gcK
@@ -85546,7 +85538,7 @@ gcK
 csk
 csk
 fwu
-xdu
+ggK
 gcK
 gcK
 gcK
@@ -85555,19 +85547,19 @@ gcK
 gcK
 ktB
 gcK
-oRE
-xdu
-oRE
-oRE
+asI
+ggK
+asI
+asI
 fwu
 gZi
 fwu
 hBr
 gcK
-oRE
+asI
 aav
 ggK
-urK
+ggK
 ggK
 ggK
 ggK
@@ -85800,7 +85792,7 @@ emz
 ktB
 gcK
 gcK
-oRE
+asI
 csk
 csk
 mpQ
@@ -85814,15 +85806,15 @@ ktB
 gcK
 gcK
 aeg
-xdu
-xdu
+ggK
+ggK
 fzl
 csk
 rxE
 hDC
-xdu
-xdu
-xdu
+ggK
+ggK
+ggK
 aav
 ggK
 gcK
@@ -86057,10 +86049,10 @@ emz
 ktB
 gcK
 gcK
-xdu
+ggK
 csk
 irI
-xdu
+ggK
 gcK
 gcK
 gcK
@@ -86071,14 +86063,14 @@ ktB
 ktB
 ktB
 gcK
-oRE
-xdu
+asI
+ggK
 fzl
 irI
 fzl
 gAs
-oRE
-oen
+asI
+gtn
 gcK
 gcK
 mTd
@@ -86313,7 +86305,7 @@ mGC
 (190,1,1) = {"
 ktB
 gcK
-oen
+gtn
 csk
 csk
 hBr
@@ -86329,7 +86321,7 @@ gcK
 gcK
 ktB
 gcK
-oRE
+asI
 fzl
 csk
 fzl
@@ -86570,7 +86562,7 @@ ktB
 (191,1,1) = {"
 ktB
 gcK
-oRE
+asI
 fwu
 csk
 hBr
@@ -86582,7 +86574,7 @@ ktB
 gcK
 jDk
 gcK
-oen
+gtn
 gcK
 ktB
 gcK
@@ -86827,19 +86819,19 @@ ktB
 (192,1,1) = {"
 ktB
 gcK
-xdu
+ggK
 irI
 csk
-xdu
+ggK
 gcK
 gcK
 gcK
 ktB
 gcK
 aeg
-oRE
-xdu
-oRE
+asI
+ggK
+asI
 gcK
 ktB
 gcK
@@ -87088,15 +87080,15 @@ gcK
 csk
 csk
 irI
-oen
+gtn
 gcK
 ktB
 gcK
-oen
+gtn
 nLL
-xdu
-xdu
-xdu
+ggK
+ggK
+ggK
 dfR
 hBr
 hBr
@@ -87345,14 +87337,14 @@ gcK
 irI
 csk
 lFM
-xdu
-oRE
+ggK
+asI
 gcK
 ktB
 gcK
-oen
-xdu
-xdu
+gtn
+ggK
+ggK
 lWA
 bxF
 hDC
@@ -87603,7 +87595,7 @@ csk
 csk
 csk
 irI
-xdu
+ggK
 gcK
 gcK
 ktB
@@ -87633,8 +87625,8 @@ aqI
 lWA
 pJY
 vDb
-oen
-xdu
+gtn
+ggK
 hBr
 gcK
 gcK
@@ -87856,7 +87848,7 @@ ktB
 ktB
 gcK
 gcK
-xdu
+ggK
 irI
 csk
 csk
@@ -87890,8 +87882,8 @@ iez
 lFm
 dDB
 eBM
-oRE
-oen
+asI
+gtn
 hBr
 gcK
 gcK
@@ -88112,9 +88104,9 @@ ktB
 (197,1,1) = {"
 ktB
 gcK
-xdu
-xdu
-xdu
+ggK
+ggK
+ggK
 gcK
 bOe
 bOe
@@ -88136,18 +88128,18 @@ hBr
 gcK
 hBr
 aeg
-xdu
+ggK
 fwu
 dfR
 pIO
 eBM
 hgE
-uhO
+csk
 xay
 eBM
 ezo
-xdu
-xdu
+ggK
+ggK
 cfD
 hBr
 gcK
@@ -88369,7 +88361,7 @@ ktB
 (198,1,1) = {"
 ktB
 gcK
-xdu
+ggK
 sjX
 gcK
 gcK
@@ -88378,7 +88370,7 @@ ggK
 irI
 aay
 csk
-oen
+gtn
 gcK
 gcK
 gcK
@@ -88404,8 +88396,8 @@ fwu
 oJp
 whP
 gCL
-xdu
-uhO
+ggK
+csk
 hBr
 gcK
 gcK
@@ -88646,7 +88638,7 @@ dfR
 fzl
 csk
 fzl
-oRE
+asI
 gcK
 dfR
 csk
@@ -88659,10 +88651,10 @@ csk
 csk
 csk
 lWA
-xdu
+ggK
 csk
 csk
-oen
+gtn
 hBr
 gcK
 gcK
@@ -88884,16 +88876,16 @@ ktB
 ktB
 hBr
 aeg
-oRE
+asI
 wnJ
-oen
+gtn
 hBr
 hBr
 hBr
 csk
 qyJ
 irI
-oRE
+asI
 gcK
 gcK
 gcK
@@ -88903,15 +88895,15 @@ oFp
 fzl
 csk
 fwu
-xdu
-oRE
+ggK
+asI
 dfR
 csk
 csk
 csk
 krk
 irI
-uhO
+csk
 csk
 fwu
 csk
@@ -89140,19 +89132,19 @@ ktB
 (201,1,1) = {"
 ktB
 hBr
-oRE
-xdu
-xdu
-gSx
+asI
+ggK
+ggK
+jci
 dfo
 qNa
 hUV
 mpo
 csk
 csk
-xdu
-xdu
-oen
+ggK
+ggK
+gtn
 gcK
 gcK
 gcK
@@ -89160,7 +89152,7 @@ hBr
 qyJ
 csk
 fzl
-xdu
+ggK
 aeg
 dfR
 irI
@@ -89174,8 +89166,8 @@ csk
 irI
 lWA
 lWA
-oen
-uhO
+gtn
+csk
 aay
 hBr
 gcK
@@ -89399,7 +89391,7 @@ ktB
 hBr
 gcK
 uZp
-xdu
+ggK
 lWA
 smi
 lWA
@@ -89418,7 +89410,7 @@ htN
 csk
 fzl
 dfR
-oen
+gtn
 dfR
 rtV
 csk
@@ -89433,7 +89425,7 @@ oJp
 nID
 mco
 mco
-oen
+gtn
 hBr
 gcK
 gcK
@@ -89665,7 +89657,7 @@ qQW
 csk
 qyJ
 csk
-xdu
+ggK
 ggK
 gcK
 gcK
@@ -89684,12 +89676,12 @@ dfR
 ezZ
 eBM
 stD
-uhO
+csk
 eBM
 lWA
 qTe
-oen
-oRE
+gtn
+asI
 fwu
 hBr
 gcK
@@ -89921,8 +89913,8 @@ hBr
 fzl
 csk
 csk
-xdu
-xdu
+ggK
+ggK
 ggK
 ggK
 gcK
@@ -89947,7 +89939,7 @@ oJp
 agU
 inl
 ttn
-oRE
+asI
 hBr
 gcK
 gcK
@@ -90178,11 +90170,11 @@ hBr
 csk
 irI
 csk
-oRE
+asI
 gcK
 gcK
-xdu
-oRE
+ggK
+asI
 gcK
 dfR
 fzl
@@ -90191,9 +90183,9 @@ fzl
 hBr
 gcK
 dfR
-oen
-oRE
-oRE
+gtn
+asI
+asI
 dfR
 tDH
 tDH
@@ -90203,8 +90195,8 @@ tLJ
 xay
 eBM
 kDQ
-xdu
-oen
+ggK
+gtn
 hBr
 gcK
 gcK
@@ -90438,8 +90430,8 @@ gcK
 hBr
 hBr
 hBr
-xdu
-gSx
+ggK
+jci
 hBr
 hUV
 fzl
@@ -90449,7 +90441,7 @@ hBr
 dfR
 dfR
 okS
-krk
+oMC
 blv
 hBr
 hBr
@@ -90709,9 +90701,9 @@ axA
 irI
 blS
 hBr
-vly
+nFA
 gpC
-xdu
+ggK
 gcK
 ktB
 gcK
@@ -90951,7 +90943,7 @@ gcK
 gcK
 cRM
 wne
-gsa
+fnT
 qyJ
 irI
 csk
@@ -90966,8 +90958,8 @@ irI
 aay
 fzl
 pye
-xdu
-vly
+ggK
+nFA
 gcK
 ktB
 gcK
@@ -91476,9 +91468,9 @@ hBr
 hBr
 hBr
 hBr
-oRE
-xdu
-oRE
+asI
+ggK
+asI
 hBr
 ktB
 ktB
@@ -91733,7 +91725,7 @@ gcK
 gcK
 ktB
 gcK
-xdu
+ggK
 aeg
 gcK
 ktB
@@ -91991,7 +91983,7 @@ gcK
 ktB
 gcK
 gcK
-oRE
+asI
 gcK
 ktB
 gcK
@@ -92229,7 +92221,7 @@ gcK
 gcK
 aay
 csk
-oRE
+asI
 hBr
 gcK
 gcK
@@ -92485,8 +92477,8 @@ gcK
 gcK
 hBr
 aay
-xdu
-oen
+ggK
+gtn
 hBr
 gcK
 gcK
@@ -92741,8 +92733,8 @@ gcK
 gcK
 hBr
 hBr
-oRE
-xdu
+asI
+ggK
 hBr
 hBr
 gcK
@@ -92997,10 +92989,10 @@ ktB
 gcK
 gcK
 aeg
-xdu
-xdu
+ggK
+ggK
 csk
-oRE
+asI
 hBr
 gcK
 gcK
@@ -93254,8 +93246,8 @@ ktB
 gcK
 gcK
 gcK
-oRE
-xdu
+asI
+ggK
 csk
 irI
 hBr
@@ -94285,9 +94277,9 @@ gcK
 gcK
 gcK
 hBr
-xdu
+ggK
 oMC
-xdu
+ggK
 csk
 csk
 hBr
@@ -94545,11 +94537,11 @@ gcK
 hBr
 hBr
 hBr
-oRE
+asI
 csk
 csk
 fwu
-xdu
+ggK
 ggK
 ggK
 ggK
@@ -94806,8 +94798,8 @@ hBr
 irI
 csk
 csk
-xdu
-xdu
+ggK
+ggK
 asI
 gcK
 gcK
