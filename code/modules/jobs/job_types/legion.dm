@@ -397,6 +397,12 @@ Decanii
 	supervisors = "the Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
+	loadout_options = list(
+	/datum/outfit/loadout/primedecline,
+	/datum/outfit/loadout/primedecshock,
+	/datum/outfit/loadout/primedecmelee
+	)
+
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -417,16 +423,43 @@ Decanii
 	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_legion
-	suit_store =	/obj/item/gun/ballistic/revolver/shotgunrevolver
 	r_pocket =		/obj/item/flashlight/lantern
-	r_hand = 		/obj/item/nullrod/claymore/chainsaw_sword
 	backpack_contents = list(
-		/obj/item/claymore/machete/gladius=1,
+		/obj/item/claymore/machete/spatha=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
-		/obj/item/storage/fancy/ammobox/lethalshot = 2,
-		/obj/item/storage/fancy/ammobox/slugshot = 1)
+		/obj/item/storage/bag/money/small/legofficers=1)
+
+/datum/outfit/loadout/primedecline
+	name = "Line Officer"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/m44=3,
+		/obj/item/gun/ballistic/revolver/revolver45=1,
+		/obj/item/ammo_box/c45rev=3
+	)
+
+/datum/outfit/loadout/primedecshock
+	name = "Shock Officer"
+	suit_store = /obj/item/gun/ballistic/shotgun/lever
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/slug=1,
+		/obj/item/shield/legion=1,
+		/obj/item/gun/ballistic/revolver/colt357=1,
+		/obj/item/ammo_box/a357=3
+	)
+
+/datum/outfit/loadout/primedecmelee
+	name = "Melee Officer"
+	suit_store = /obj/item/gun/ballistic/revolver/revolver44
+	backpack_contents = list(
+		/obj/item/twohanded/spear/lance=1,
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/shield/legion=1,
+		/obj/item/ammo_box/m44=3
+	)
 
 
 //Recruit Decanus
@@ -440,6 +473,11 @@ Decanii
 	supervisors = "the Prime Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
+	loadout_options = list(
+	/datum/outfit/loadout/recdecmelee,
+	/datum/outfit/loadout/recdecshock,
+	/datum/outfit/loadout/recdecline
+	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -460,15 +498,39 @@ Decanii
 	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears = 			/obj/item/radio/headset/headset_legion
-	suit_store = 	/obj/item/gun/ballistic/shotgun/lever
 	r_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/storage/fancy/ammobox/lethalshot = 2,
-		/obj/item/storage/fancy/ammobox/slugshot = 1)
+		/obj/item/storage/bag/money/small/legofficers=1)
+
+/datum/outfit/loadout/recdecmelee
+	name = "Phalanxi (Melee)"
+	suit_store = /obj/item/gun/ballistic/revolver/revolver45
+	backpack_contents = list(
+		/obj/item/twohanded/spear/lance=1,
+		/obj/item/shield/legion=1,
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/ammo_box/c45rev=1
+	)
+
+/datum/outfit/loadout/recdecshock
+	name = "Testudo (Shock)"
+	suit_store = /obj/item/gun/ballistic/shotgun/lever
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/slug=1,
+		/obj/item/shield/legion=1
+	)
+
+/datum/outfit/loadout/recdecline
+	name = "Libratus (Line)"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/m44=3
+	)
 
 
 /*
@@ -591,8 +653,10 @@ Veteran Legionary
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
 	loadout_options = list(
-		/datum/outfit/loadout/vetlight,
-		/datum/outfit/loadout/vetheavy
+		/datum/outfit/loadout/vetline,
+		/datum/outfit/loadout/vetscout,
+		/datum/outfit/loadout/vetshock,
+		/datum/outfit/loadout/vetmelee
 	)
 
 
@@ -619,21 +683,48 @@ Veteran Legionary
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/claymore/machete/reinforced=1)
+		/obj/item/claymore/machete/gladius=1,
+		/obj/item/binoculars=1,
+		/obj/item/storage/bag/money/small/legofficers=1)
 
-/datum/outfit/loadout/vetlight
-	name = "Light"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/hunting,
-		/obj/item/storage/fancy/ammobox/lethalshot = 2,
-		/obj/item/storage/fancy/ammobox/slugshot = 1)
-
-/datum/outfit/loadout/vetheavy
-	name = "Heavy"
+/datum/outfit/loadout/vetline
+	name = "Bellator (Line)"
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/garand308=3)
+		/obj/item/gun/ballistic/revolver/revolver45=1,
+		/obj/item/ammo_box/magazine/garand308=3,
+		/obj/item/attachments/scope=1,
+		/obj/item/ammo_box/c45rev=3)
+
+/datum/outfit/loadout/vetscout
+	name = "Assassin (Scout)"
+	suit_store = /obj/item/gun/ballistic/shotgun/kar98k
+	backpack_contents = list(
+		/obj/item/ammo_box/a762=3,
+		/obj/item/attachments/scope=1,
+		/obj/item/gun/ballistic/revolver/revolver45=1,
+		/obj/item/ammo_box/c45rev=3)
+	
+/datum/outfit/loadout/vetshock
+	name = "Cataegis (Shock)"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/slug=1,
+		/obj/item/gun/ballistic/revolver/m29=1,
+		/obj/item/ammo_box/m44=3,
+		/obj/item/attachments/scope=1
+	)
+
+/datum/outfit/loadout/vetmelee
+	name = "Triarius (Melee)"
+	suit_store = /obj/item/gun/ballistic/revolver/hunting
+	backpack_contents = list(
+		/obj/item/shield/legion=1,
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/twohanded/fireaxe/bmprsword=1,
+		/obj/item/ammo_box/c4570=1
+	)
 
 /*
 Prime Legionairy
@@ -650,8 +741,9 @@ Prime Legionairy
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 	loadout_options = list(
-		/datum/outfit/loadout/primelight,
-		/datum/outfit/loadout/primeheavy
+		/datum/outfit/loadout/primeline,
+		/datum/outfit/loadout/primeshock,
+		/datum/outfit/loadout/primemelee
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -677,21 +769,33 @@ Prime Legionairy
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/claymore/machete/reinforced=1
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/storage/bag/money/small/legofficers=1
 	)
 
-/datum/outfit/loadout/primelight
-	name = "Light"
+/datum/outfit/loadout/primeline
+	name = "Milites (Line)"
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3)
 
-/datum/outfit/loadout/primeheavy
-	name = "Heavy"
-	suit_store = /obj/item/gun/ballistic/automatic/commando
+/datum/outfit/loadout/primeshock
+	name = "Percutio (Shock)"
+	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=3,
-		/obj/item/attachments/scope=1)
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/slug=2,
+		/obj/item/kitchen/knife/combat/bayonet=1)
+
+/datum/outfit/loadout/primemelee
+	name = "Principes (Melee)"
+	suit_store = /obj/item/gun/ballistic/revolver/revolver44
+	backpack_contents = list(
+		/obj/item/twohanded/spear/lance=1,
+		/obj/item/shield/legion=1,
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/ammo_box/m44=3
+	)
 
 /*
 Recruit Legionary
@@ -710,6 +814,12 @@ Recruit Legionary
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
+	loadout_options = list(
+		/datum/outfit/loadout/recruitlegscout,
+		/datum/outfit/loadout/recruitlegmelee,
+		/datum/outfit/loadout/recruitlegline
+	)
+
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -723,17 +833,41 @@ Recruit Legionary
 	id = 			/obj/item/card/id/dogtag/legrecruit
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/recruit
-	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit
 	mask =			/obj/item/clothing/mask/bandana/legrecruit
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
 	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
-		/obj/item/ammo_box/tube/a357=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2)
+		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/storage/bag/money/small/legenlisted=1)
 
+/datum/outfit/loadout/recruitlegscout
+	name = "Scout"
+	head = 	/obj/item/clothing/head/helmet/f13/legion/recruit
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/a357=3,
+		/obj/item/binoculars=1
+	)
+
+/datum/outfit/loadout/recruitlegmelee
+	name = "Velites (Melee)"
+	head = /obj/item/clothing/head/helmet/f13/legion/recruit/velite
+	suit_store = /obj/item/gun/ballistic/revolver/colt357
+	backpack_contents = list(
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/ammo_box/a357=3,
+		/obj/item/shield/legion/buckler=1
+	)
+
+/datum/outfit/loadout/recruitlegline
+	name = "Hastati (Line)"
+	suit_store = /obj/item/gun/ballistic/shotgun/hunting
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck=2
+	)
 /*
 Venator
 */
