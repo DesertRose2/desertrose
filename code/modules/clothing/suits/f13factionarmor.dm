@@ -197,7 +197,7 @@
 	lefthand_file = 'icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing_righthand.dmi'
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/nullrod/claymore/chainsaw_sword)
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/recruit
@@ -699,6 +699,12 @@
 	desc = "(VII) This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
+
+/obj/item/clothing/suit/armor/f13/rangercombat/marine
+	name = "marine riot gear"
+	desc = "(VII) A pre-war suit of U.S.M.C. issue riot gear. The armor looks to be in impeccable condition, the duster however is not."
+	icon_state = "usmc_riot_gear"
+	item_state = "usmc_riot_gear"
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/soldier
 	name = "standard issue trooper armor"

@@ -53,18 +53,19 @@
 
 /datum/supply_pack/service/minerkit
 	name = "Shaft Miner Starter Kit"
-	desc = "All the miners died too fast? Assistant wants to get a taste of life off-station? Either way, this kit is the best way to turn a regular crewman into an ore-producing, monster-slaying machine. Contains meson goggles, a pickaxe, advanced mining scanner, cargo headset, ore bag, gasmask, and explorer suit. Requires QM access to open."
+	desc = "All the miners died too fast? Assistant wants to get a taste of life off-station? Either way, this kit is the best way to turn a regular crewman into an ore-producing, monster-slaying machine. Contains one mining conscription kit."
 	cost = 2500
-	access = ACCESS_QM
-	contains = list(/obj/item/pickaxe/mini,
-			/obj/item/clothing/glasses/meson,
-			/obj/item/t_scanner/adv_mining_scanner/lesser,
-			/obj/item/radio/headset/headset_cargo/mining,
-			/obj/item/storage/bag/ore,
-			/obj/item/clothing/suit/hooded/explorer,
-			/obj/item/clothing/mask/gas/explorer)
+	contains = list(/obj/item/storage/backpack/duffelbag/mining_conscript)
 	crate_name = "shaft miner starter kit"
-	crate_type = /obj/structure/closet/crate/secure
+	crate_type = /obj/structure/closet/crate
+
+/datum/supply_pack/service/suitvoucher
+	name = "Specialised Exploration Suit Voucher"
+	desc = "Crate with a single suit token, redeemable at your nearest mining equipment vendor for all your exploration needs."
+	cost = 4500
+	contains = list(/obj/item/suit_voucher)
+	crate_name = "suit voucher crate"
+	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/service/snowmobile
 	name = "Snowmobile kit"

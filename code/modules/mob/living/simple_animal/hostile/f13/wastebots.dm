@@ -349,6 +349,7 @@
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
+	environment_smash = 2 //wall-busts
 	del_on_death = FALSE
 	attack_verb_simple = "pulverizes"
 	attack_sound = 'sound/weapons/punch1.ogg'
@@ -376,7 +377,6 @@
 	aggrosound = null
 	idlesound = null
 	see_in_dark = 8
-	environment_smash = 2 //can smash walls
 	wander = 0
 	force_threshold = 15
 	anchored = FALSE
@@ -434,7 +434,6 @@
 	maxHealth = 1000 //CHONK
 	obj_damage = 300
 	retreat_distance = 0
-	environment_smash = 2 //wall-busts
 	color = "#75FFE2"
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.

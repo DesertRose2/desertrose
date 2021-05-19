@@ -33,10 +33,10 @@
 
 /obj/item/projectile/bullet/a357/jfp
 	name = ".357 JFP bullet"
-	damage = 42
+	damage = 40
 	armour_penetration = 0.35
-	wound_bonus = 14
-	bare_wound_bonus = 14
+	wound_bonus = 10
+	bare_wound_bonus = 10
 
 // .44 Magnum
 /obj/item/projectile/bullet/m44
@@ -55,10 +55,10 @@
 
 /obj/item/projectile/bullet/m44/swc
 	name = ".44 SWC bullet"
-	damage = 49
-	armour_penetration = 0.22
-	wound_bonus = 40
-	bare_wound_bonus = 40
+	damage = 40
+	armour_penetration = 0.20
+	wound_bonus = 20
+	bare_wound_bonus = 20
 
 /obj/item/projectile/bullet/m44/simple //for simple mobs, separate to allow balancing
 	name = ".44 bullet"
@@ -80,7 +80,7 @@
 
 /obj/item/projectile/bullet/c4570/swc
 	name = ".45-70 SWC bullet"
-	damage = 58 //60
-	armour_penetration = 0.18 //0.22
-	wound_bonus = 48
-	bare_wound_bonus = 48
+	damage = 45 //60
+	armour_penetration = 0.22 //0.22
+	wound_bonus = 30
+	bare_wound_bonus = 30

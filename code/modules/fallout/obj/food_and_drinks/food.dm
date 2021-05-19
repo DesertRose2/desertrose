@@ -581,6 +581,13 @@
 	foodtype = MEAT | VEGETABLES
 	cooked_type = /obj/item/reagent_containers/food/snacks/hotdog
 
+/obj/item/reagent_containers/food/snacks/f13/canned/ncr/pizza
+	name = "c-ration entree - 'Pepperoni Pizza'"
+	desc = "A canned food product containing the entree portion of a military combat ration."
+	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "delicious meat" = 2)
+	foodtype = MEAT | VEGETABLES
+	cooked_type = /obj/item/reagent_containers/food/snacks/pizzaslice/meat
+
 /obj/item/reagent_containers/food/snacks/f13/canned/ncr/crackers
 	name = "c-ration crackers"
 	desc = "A canned food product containing crackers as part of a military combat ration. Use a knife to get the crackers out."

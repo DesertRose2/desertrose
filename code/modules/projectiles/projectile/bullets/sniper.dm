@@ -51,6 +51,9 @@
 	armour_penetration = 0.85
 	pixels_per_second = TILES_TO_PIXELS(100)
 
+/obj/item/projectile/bullet/a50MG/npc //Used for NPCs as to not get insta-clapped. S.B.
+	pixels_per_second = TILES_TO_PIXELS(17.5)
+
 /obj/item/projectile/bullet/a50MG/incendiary
 	damage = 40
 	armour_penetration = 0.5
