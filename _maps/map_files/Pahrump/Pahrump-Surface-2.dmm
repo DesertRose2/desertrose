@@ -6961,6 +6961,15 @@
 	icon_state = "verticaloutermain1"
 	},
 /area/f13/wasteland)
+"eOx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/ncr)
 "eOK" = (
 /obj/structure/chair/wood/modern{
 	dir = 4;
@@ -7534,6 +7543,15 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
+"ffz" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "ffA" = (
 /obj/structure/lattice/catwalk,
 /turf/closed/mineral/random/low_chance,
@@ -12943,6 +12961,15 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/f13,
 /area/f13/building)
+"ixH" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/ncr)
 "ixI" = (
 /obj/structure/simple_door/metal/fence{
 	door_type = "fence_wood";
@@ -39573,7 +39600,7 @@ kzs
 kzs
 sNC
 kzs
-xGv
+ixH
 kzs
 sed
 sHu
@@ -39830,10 +39857,10 @@ jGz
 kzs
 dsn
 sHu
-kzs
-kzs
-kzs
-jGz
+ffz
+ffz
+ffz
+eOx
 kzs
 wSn
 siS

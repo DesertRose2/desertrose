@@ -548,8 +548,8 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/armband/engine/ncr
-	name = "engineering armband (E-5 Engineer)"
-	desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
+	name = "engineering armband"
+	desc = "An armband worn by NCR engineering personnel. This one is orange with a reflective strip!"
 
 /obj/item/clothing/accessory/ncr/CPL
 	name = "(E-4) Corporal rank pins"
