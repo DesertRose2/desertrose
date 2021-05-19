@@ -160,6 +160,14 @@
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
+/datum/design/toylathe_electronics
+	name = "Autoylathe Electronics"
+	id = "toylathe_electronics"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
+	build_path = /obj/item/circuitboard/machine/autolathe/toy
+	category = list("hacked", "Electronics")
+
 /datum/design/camera
 	name = "Camera"
 	id = "camera"

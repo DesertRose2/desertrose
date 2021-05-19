@@ -206,3 +206,10 @@
 	build_path = /obj/item/clothing/head/foilhat
 	category = list("hacked", "Misc")
 
+/datum/design/toylathe_electronics
+	name = "Autoylathe Electronics"
+	id = "toylathe_electronics"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	build_path = /obj/item/circuitboard/machine/autolathe/toy
+	category = list("hacked", "Electronics")
