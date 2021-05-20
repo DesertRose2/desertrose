@@ -946,10 +946,10 @@
 	new /obj/item/stack/cable_coil(src,30,pick("red","yellow","orange"))
 
 /obj/item/storage/belt/military/reconbandolier
-	name = "NCR recon ranger bandolier"
-	desc = "A belt with many pockets, now at an angle."
-	icon_state = "reconbandolier"
-	item_state = "reconbandolier"
+	name = "NCR recon bandolier"
+	desc = "A leather bandolier for specialized NCR units."
+	icon_state = "recon_bandolier"
+	item_state = "recon_bandolier"
 
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()

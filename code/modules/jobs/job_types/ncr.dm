@@ -493,8 +493,6 @@ Trooper
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
 	accessory =     /obj/item/clothing/accessory/ncr/TPR
 	head = 			/obj/item/clothing/head/f13/ncr
-	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	belt =          /obj/item/storage/belt/military/assault/ncr
 	glasses = 		/obj/item/clothing/glasses/f13/biker
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
@@ -505,6 +503,7 @@ Trooper
 /datum/outfit/loadout/troopreg
 	name = "Assault"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service=1,
 		/obj/item/ammo_box/magazine/m556/rifle=6)
@@ -513,6 +512,7 @@ Trooper
 /datum/outfit/loadout/trooplight
 	name = "Sharpshooter"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout
+	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service/carbine=1,
 		/obj/item/ammo_box/magazine/m556/rifle=3,
@@ -522,6 +522,7 @@ Trooper
 /datum/outfit/loadout/troopcqb
 	name = "Close Quarters"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
+	belt = /obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
 		/obj/item/ammo_box/shotgun/buck=2,
