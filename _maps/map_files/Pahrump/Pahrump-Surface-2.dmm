@@ -8811,12 +8811,9 @@
 	},
 /area/f13/city)
 "fxv" = (
-/obj/structure/displaycase/trophy{
-	start_showpiece_type = "/obj/item/relic";
-	start_showpieces = newlist()
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/accessory/medal/gold,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fxx" = (
@@ -15133,11 +15130,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jco" = (
-/obj/structure/displaycase/trophy{
-	start_showpiece_type = "/obj/item/relic";
-	start_showpieces = newlist()
-	},
 /obj/item/clothing/accessory/medal/plasma/nobel_science,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jcp" = (
@@ -15631,11 +15625,8 @@
 	},
 /area/f13/building)
 "jtP" = (
-/obj/structure/displaycase/trophy{
-	start_showpiece_type = "/obj/item/relic";
-	start_showpieces = newlist()
-	},
 /obj/item/clothing/accessory/medal/conduct,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "juc" = (
@@ -19213,9 +19204,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/shoes/jackboots,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -20659,11 +20647,8 @@
 	},
 /area/f13/wasteland)
 "msS" = (
-/obj/structure/displaycase/trophy{
-	start_showpiece_type = "/obj/item/relic";
-	start_showpieces = newlist()
-	},
 /obj/item/clothing/accessory/medal/gold/heroism,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "mtl" = (
@@ -21964,9 +21949,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/shield/riot,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -22093,9 +22075,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/f13/vault/v13,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -29689,9 +29668,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/pda,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -35544,9 +35520,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/energy/laser/wattz,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -36193,9 +36166,6 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3"
-	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
