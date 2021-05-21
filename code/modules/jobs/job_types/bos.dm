@@ -311,6 +311,7 @@ Head Knight
 	backpack_contents = list(
 		/obj/item/clothing/head/helmet/f13/power_armor/t45d=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain=1,
+		/obj/item/clothing/mask/gas/welding=1,
 		/obj/item/storage/belt/utility/chief/full=1,
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
@@ -787,6 +788,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
+		/obj/item/clothing/mask/gas/welding=1,
 		/obj/item/grenade/plastic/c4=2
 		)
 
@@ -799,8 +801,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
-		/obj/item/book/granter/trait/trekking=1
+		/obj/item/attachments/scope=1
 		)
 
 /datum/outfit/loadout/sknightc 
@@ -872,7 +873,8 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
+		/obj/item/clothing/mask/gas/welding=1,	
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
@@ -910,7 +912,8 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
+		/obj/item/clothing/mask/gas/welding=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/knight=1
