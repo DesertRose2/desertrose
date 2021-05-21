@@ -503,8 +503,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -1644,8 +1643,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -2182,8 +2180,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -3548,8 +3545,7 @@
 /obj/structure/railing,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus4";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -4069,8 +4065,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/f13Cash/random/low,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -4137,8 +4132,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -4793,8 +4787,7 @@
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -6692,8 +6685,7 @@
 "enJ" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirty"
@@ -8364,8 +8356,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -10850,11 +10841,6 @@
 	pixel_x = 7;
 	pixel_y = -30
 	},
-/obj/machinery/button/door{
-	id = "mus2";
-	pixel_x = -7;
-	pixel_y = -30
-	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -12610,8 +12596,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -16529,8 +16514,7 @@
 /obj/structure/railing/corner,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -18227,8 +18211,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/camera,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -19229,11 +19212,10 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/shoes/jackboots,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -20081,8 +20063,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/railing,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/building)
@@ -21515,8 +21496,7 @@
 "mVK" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus4";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/f13{
 	icon_state = "rampdowntop"
@@ -21983,11 +21963,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/shield/riot,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -22113,11 +22092,10 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/f13/vault/v13,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -22479,6 +22457,9 @@
 /obj/item/healthanalyzer/advanced,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -22802,8 +22783,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -26553,8 +26533,7 @@
 	dir = 4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -28266,8 +28245,7 @@
 "rbg" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -28465,8 +28443,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -29108,8 +29085,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -29287,8 +29263,7 @@
 	dir = 8
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = "mus4";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -29713,11 +29688,10 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/pda,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -30001,8 +29975,7 @@
 	dir = 1
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -31779,8 +31752,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus4";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -32101,8 +32073,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -32396,8 +32367,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/railing,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/building)
@@ -32700,8 +32670,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/railing,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus4";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -32734,8 +32703,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -32915,8 +32883,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/railing,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
+	id = "mus3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/building)
@@ -33424,8 +33391,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -33718,8 +33684,7 @@
 "ulc" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "rampdowntop"
@@ -34050,8 +34015,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/f13Cash/random/low,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -34235,8 +34199,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -35137,8 +35100,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -35581,11 +35543,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/energy/laser/wattz,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -36231,11 +36192,10 @@
 "vFI" = (
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/shutters{
-	id = "mus3";
-	name = "Museum shutters"
-	},
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -36512,6 +36472,9 @@
 /obj/structure/displaycase,
 /obj/item/clothing/glasses/hud/health/f13,
 /obj/machinery/light/floor,
+/obj/machinery/door/poddoor/shutters{
+	id = "mus3"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -36587,8 +36550,10 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/f13Cash/random/low,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -36836,8 +36801,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus1";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -36934,10 +36898,6 @@
 "wcg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood/fancy/black,
-/obj/machinery/button/door{
-	id = "mus4";
-	pixel_x = -3
-	},
 /obj/machinery/button/door{
 	id = "mus3";
 	pixel_x = -3;
@@ -37587,8 +37547,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "mus2";
-	name = "Museum shutters"
+	id = "mus1"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
