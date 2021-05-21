@@ -95,6 +95,16 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/syndicate
+	name = "black beret"
+	result = /obj/item/clothing/head/HoS/beret/syndicate
+	reqs = list(/obj/item/stack/sheet/leather = 2,
+				/obj/item/stack/sheet/cloth = 4
+				/obj/item/stack/crafting/metalparts = 2)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
 /*
 /datum/crafting_recipe/supaflyhelm_reinforced
 	name = "reinforced supafly helmet"

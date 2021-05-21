@@ -182,8 +182,12 @@
 
 /obj/item/clothing/head/HoS/beret/syndicate
 	name = "black beret"
-	desc = "A simple black cloth beret with no protective qualities whatsoever. Foolish to assume otherwise."
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 25, "bio" = 0, "rad" = 0)
+	desc = "A black cloth beret internally lined with leather and metal splints."
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/HoS/beret/syndicate/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/warden
 	name = "warden's police hat"
