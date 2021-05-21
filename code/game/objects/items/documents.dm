@@ -56,3 +56,11 @@
 			forgedseal = C.crayon_color
 			to_chat(user, "<span class='notice'>You forge the official seal with a [C.crayon_color] crayon. No one will notice... right?</span>")
 			update_icon()
+
+/obj/item/documents/xray
+	desc = "\"Top Secret\" X-Ray documents, filled with complex diagrams and lists of names, dates and coordinates of every faction operating in the area of Yuma, Arizona."
+	icon_state = "docs_verified"
+
+/obj/item/documents/xray/outpost
+	desc = "\"Top Secret\" X-Ray documents, these reports indicate the suspicion of infiltration by the NCR Rangers following a skirmish."
+	icon_state = "docs_red"

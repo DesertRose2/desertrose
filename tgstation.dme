@@ -15,6 +15,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\event\Interstate_8.dm"
 #include "_maps\templates\dungeons\dungeons.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
@@ -2819,6 +2820,7 @@
 #include "code\modules\mob\living\simple_animal\hostile\f13\wasteanimals.dm"
 #include "code\modules\mob\living\simple_animal\hostile\f13\wastebots.dm"
 #include "code\modules\mob\living\simple_animal\hostile\f13\wolf.dm"
+#include "code\modules\mob\living\simple_animal\hostile\f13\xray.dm"
 #include "code\modules\mob\living\simple_animal\hostile\gorilla\emotes.dm"
 #include "code\modules\mob\living\simple_animal\hostile\gorilla\gorilla.dm"
 #include "code\modules\mob\living\simple_animal\hostile\gorilla\visuals_icons.dm"
