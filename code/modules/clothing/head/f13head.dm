@@ -136,6 +136,12 @@
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
+/obj/item/clothing/head/helmet/f13/combat/ahp_helmet
+	name = "highway patrol helmet"
+	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona State Troopers' emblazoned on the front."
+	icon_state = "ahp_helmet"
+	item_state = "ahp_helmet"
+
 //Sulphite Helm
 
 /obj/item/clothing/head/helmet/f13/sulphitehelm
