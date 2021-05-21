@@ -881,10 +881,10 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	fire_delay = 10
 	burst_size = 1
-	//projectile_speed = 0
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
+	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
 
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
