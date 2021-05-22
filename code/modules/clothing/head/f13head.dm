@@ -138,10 +138,15 @@
 
 /obj/item/clothing/head/helmet/f13/ahp_helmet
 	name = "highway patrol helmet"
-	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona State Troopers' emblazoned on the front."
+	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
 	icon_state = "ahp_helmet"
 	item_state = "ahp_helmet"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	strip_delay = 40
+
+/obj/item/clothing/head/helmet/f13/ahp_helmet/Initialize() //HQ parts reinforcement
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Sulphite Helm
 
