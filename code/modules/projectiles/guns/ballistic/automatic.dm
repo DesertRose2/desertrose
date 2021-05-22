@@ -688,9 +688,13 @@
 	burst_shot_delay = 2.2 //Was 2 before.
 	can_suppress = TRUE
 	can_automatic = TRUE
+	can_scope = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 28
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 5
+	scope_y_offset = 13
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"

@@ -714,6 +714,12 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570=3)
 
+/datum/outfit/loadout/vrassault
+	name = "Assault Veteran Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
