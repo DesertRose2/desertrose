@@ -970,7 +970,7 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/bullet_speed
-	name = "Recoil Compensator"
+	name = "Improved Barrel"
 	result = /obj/item/attachments/bullet_speed
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
