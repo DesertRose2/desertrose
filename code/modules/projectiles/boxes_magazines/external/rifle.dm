@@ -115,3 +115,14 @@
 
 /obj/item/ammo_box/magazine/m473/empty
 	start_empty = 1
+
+/obj/item/ammo_box/magazine/m473_pistol
+	name = "pistol magazine (4.73mm)"
+	icon_state = "mag308"
+	caliber = "473mm"
+	ammo_type = /obj/item/ammo_casing/caseless/g11
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m473_pistol/empty
+	start_empty = 1
