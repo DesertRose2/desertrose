@@ -20,7 +20,7 @@
 					/obj/item/clothing/head/helmet/blueshirt = 1,
 					/obj/item/clothing/suit/armor/vest/blueshirt = 1,
 					/obj/item/clothing/under/rank/security/officer/blueshirt = 1,
-					/obj/item/clothing/gloves/tackler = 5,
+					/obj/item/clothing/gloves/combat = 5,
 					/obj/item/grenade/stingbang = 1,
 					/obj/item/ssword_kit = 1,
 					/obj/item/storage/bag/ammo = 3)

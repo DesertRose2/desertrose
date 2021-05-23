@@ -1,3 +1,9 @@
+/obj/item/storage/pouch
+	name = "leather pouch"
+	desc = "A robust leather pouch for easy storage management."
+	icon_state = "survivalkit"
+	w_class = WEIGHT_CLASS_SMALL
+
 /obj/item/storage/survivalkit
 	name = "survival kit"
 	desc = "A robust leather pouch containing the essentials for wasteland survival."

@@ -174,6 +174,7 @@ GLOBAL_LIST_INIT(leather_recipes, list ( \
 	new/datum/stack_recipe("leather jacket", /obj/item/clothing/suit/jacket/leather, 7), \
 	new/datum/stack_recipe("leather shoes", /obj/item/clothing/shoes/laceup, 2), \
 	new/datum/stack_recipe("leather overcoat", /obj/item/clothing/suit/jacket/leather/overcoat, 10), \
+	new/datum/stack_recipe("leather pouch", /obj/item/storage/pouch, 5), \
 ))
 
 /obj/item/stack/sheet/leather/get_main_recipes()

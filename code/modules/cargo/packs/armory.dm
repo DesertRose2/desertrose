@@ -39,25 +39,29 @@
 
 /datum/supply_pack/security/armory/ballistic
 	name = "Combat Shotguns Crate"
-	desc = "For when the enemy absolutely needs to be replaced with lead. Contains three Aussec-designed Combat Shotguns, with three Shotgun Bandoliers, as well as seven buchshot and 12g shotgun slugs. Requires Armory access to open."
+	desc = "For when the enemy absolutely needs to be replaced with lead. Contains three Truvelo-designed Combat Shotguns, with three Shotgun Bandoliers, as well as three 12g buckshot and shotgun slugs boxes. Requires Armory access to open."
 	cost = 8000
-	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat,
-					/obj/item/gun/ballistic/shotgun/automatic/combat,
-					/obj/item/gun/ballistic/shotgun/automatic/combat,
+	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
+					/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
+					/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
 					/obj/item/storage/belt/bandolier,
 					/obj/item/storage/belt/bandolier,
 					/obj/item/storage/belt/bandolier,
-					/obj/item/storage/fancy/ammobox/lethalshot,
-					/obj/item/storage/box/lethalslugs)
+					/obj/item/ammo_box/shotgun/buck,
+					/obj/item/ammo_box/shotgun/buck,
+					/obj/item/ammo_box/shotgun/buck,
+					/obj/item/ammo_box/shotgun/slug,
+					/obj/item/ammo_box/shotgun/slug,
+					/obj/item/ammo_box/shotgun/slug
 	crate_name = "combat shotguns crate"
 
-/datum/supply_pack/security/armory/dragnetgun
-	name = "DRAGnet gun Crate"
-	desc = "Contains two DRAGnet guns. A Dynamic Rapid-Apprehension of the Guilty net the revolution in law enforcement technology that YOU Want! Requires Armory access to open."
+/datum/supply_pack/security/armory/energysnare
+	name = "Energy Snare Launcher Crate"
+	desc = "Contains two energy snare guns. Requires Armory access to open."
 	cost = 3250
-	contains = list(/obj/item/gun/energy/e_gun/dragnet,
-					/obj/item/gun/energy/e_gun/dragnet)
-	crate_name = "anti riot net guns crate"
+	contains = list(/obj/item/gun/energy/e_gun/dragnet/snare,
+					/obj/item/gun/energy/e_gun/dragnet/snare)
+	crate_name = "anti riot trap guns crate"
 
 /datum/supply_pack/security/armory/energy
 	name = "Energy Guns Crate"
@@ -68,14 +72,14 @@
 					/obj/item/gun/energy/e_gun)
 	crate_name = "energy gun crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
-
+/*
 /datum/supply_pack/security/armory/exileimp // Theres boxes in 2 lockers as well as gateway never realy being used sad
 	name = "Exile Implants Crate"
 	desc = "Contains five Exile implants. Requires Armory access to open."
 	cost = 1050 //stops endless points
 	contains = list(/obj/item/storage/box/exileimp)
 	crate_name = "exile implant crate"
-
+*/
 /datum/supply_pack/security/armory/mindshield
 	name = "Mindshield Implants Crate"
 	desc = "Prevent against radical thoughts with three Mindshield implants. Requires Armory access to open."
@@ -92,7 +96,7 @@
 					/obj/item/ammo_box/c38/trac,
 					/obj/item/ammo_box/c38/trac)
 	crate_name = "tracking implant crate"
-
+/*
 /datum/supply_pack/security/armory/fire
 	name = "Incendiary Weapons Crate"
 	desc = "Burn, baby burn. Contains three incendiary grenades, seven incendiary slugs, three plasma canisters, and a flamethrower. Requires Brige access to open."
@@ -119,7 +123,7 @@
 					/obj/item/gun/energy/e_gun/mini)
 	crate_name = "personal energy guns crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
-
+*/
 /datum/supply_pack/security/armory/laserarmor
 	name = "Reflector Vest Crate"
 	desc = "Contains two vests of highly reflective material. Each armor piece diffuses a laser's energy by over half, as well as offering a good chance to reflect the laser entirely. Requires Armory access to open."
@@ -192,28 +196,36 @@
 					/obj/item/clothing/mask/gas/sechailer/swat,
 					/obj/item/storage/belt/military/assault,
 					/obj/item/storage/belt/military/assault,
-					/obj/item/clothing/gloves/tackler/combat/insulated,
-					/obj/item/clothing/gloves/tackler/combat/insulated)
+					/obj/item/clothing/gloves/combat,
+					/obj/item/clothing/gloves/combat)
 	crate_name = "swat crate"
 
-/datum/supply_pack/security/armory/wt550
-	name = "WT-550 Semi-Auto Rifle Crate"
-	desc = "Contains two high-powered, semiautomatic rifles chambered in 4.6x30mm. Requires Armory access to open."
+/datum/supply_pack/security/armory/556ar
+	name = "5.56mm Assault Rifle Crate"
+	desc = "Contains two 5.56 assault rifles. Requires Armory access to open."
+	cost = 6000
+	contains = list(/obj/item/gun/ballistic/automatic/ar,
+					/obj/item/gun/ballistic/automatic/ar)
+	crate_name = "assault rifle crate"
+
+/datum/supply_pack/security/armory/10mmsmg
+	name = "10mm Submachine Gun Crate"
+	desc = "Contains two medium-powered, burst-firing submachine guns chambered in 10mm. Requires Armory access to open."
 	cost = 2550
-	contains = list(/obj/item/gun/ballistic/automatic/wt550,
-					/obj/item/gun/ballistic/automatic/wt550)
+	contains = list(/obj/item/gun/ballistic/automatic/smg10mm,
+					/obj/item/gun/ballistic/automatic/smg10mm)
 	crate_name = "auto rifle crate"
 
-/datum/supply_pack/security/armory/wt550ammo
+/datum/supply_pack/security/armory/10mmammo
 	name = "WT-550 Semi-Auto SMG Ammo Crate"
-	desc = "Contains four 32-round magazines for the WT-550 Semi-Auto SMG. Each magazine is designed to facilitate rapid tactical reloads. Requires Armory access to open."
+	desc = "Contains four magazines for the 10mm SMG. Each magazine is designed to facilitate rapid tactical reloads. Requires Armory access to open."
 	cost = 1750
-	contains = list(/obj/item/ammo_box/magazine/wt550m9,
-					/obj/item/ammo_box/magazine/wt550m9,
-					/obj/item/ammo_box/magazine/wt550m9,
-					/obj/item/ammo_box/magazine/wt550m9)
+	contains = list(/obj/item/ammo_box/magazine/m10mm_adv/ext,
+					/obj/item/ammo_box/magazine/m10mm_adv/ext,
+					/obj/item/ammo_box/magazine/m10mm_adv/ext,
+					/obj/item/ammo_box/magazine/m10mm_adv/ext)
 	crate_name = "auto rifle ammo crate"
-
+/*
 /datum/supply_pack/security/armory/wt550ammo_nonlethal // Takes around 12 shots to stamcrit someone
 	name = "WT-550 Semi-Auto SMG Non-Lethal Ammo Crate"
 	desc = "Contains four 32-round magazines for the WT-550 Semi-Auto SMG. Each magazine is designed to facilitate rapid tactical reloads. Requires Armory access to open."
@@ -223,7 +235,7 @@
 					/obj/item/ammo_box/magazine/wt550m9/wtrubber,
 					/obj/item/ammo_box/magazine/wt550m9/wtrubber)
 	crate_name = "auto rifle ammo crate"
-
+*/
 /datum/supply_pack/security/armory/hell_single
 	name = "Hellgun Single-Pack"
 	crate_name = "hellgun crate"
