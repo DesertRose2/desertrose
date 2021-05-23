@@ -52,7 +52,7 @@
 					/obj/item/ammo_box/shotgun/buck,
 					/obj/item/ammo_box/shotgun/slug,
 					/obj/item/ammo_box/shotgun/slug,
-					/obj/item/ammo_box/shotgun/slug
+					/obj/item/ammo_box/shotgun/slug)
 	crate_name = "combat shotguns crate"
 
 /datum/supply_pack/security/armory/energysnare
@@ -200,7 +200,7 @@
 					/obj/item/clothing/gloves/combat)
 	crate_name = "swat crate"
 
-/datum/supply_pack/security/armory/556ar
+/datum/supply_pack/security/armory/rifle
 	name = "5.56mm Assault Rifle Crate"
 	desc = "Contains two 5.56 assault rifles with four additional magazines each. Requires Armory access to open."
 	cost = 10000
@@ -216,10 +216,10 @@
 					/obj/item/ammo_box/magazine/m556/rifle/assault)
 	crate_name = "assault rifle crate"
 
-/datum/supply_pack/security/armory/556ammo
+/datum/supply_pack/security/armory/rifleammo
 	name = "5.56mm Ammo Assortment Crate"
 	desc = "Contains an assortment of 5.56 caliber ammo boxes. Requires Armory access to open."
-	cost = 12000 //there's a FUCKLOAD of them
+	cost = 12000 //there's a FUCKLOAD of them and no I'm not biased or something
 	contains = list(/obj/item/ammo_box/a556,
 					/obj/item/ammo_box/a556,
 					/obj/item/ammo_box/a556,
@@ -227,9 +227,10 @@
 					/obj/item/ammo_box/a556/ap,
 					/obj/item/ammo_box/a556/match,
 					/obj/item/ammo_box/a556/sport)
+	crate_name = "assault rifle ammo crate"
 
 
-/datum/supply_pack/security/armory/10mmsmg
+/datum/supply_pack/security/armory/smg
 	name = "10mm Submachine Gun Crate"
 	desc = "Contains two medium-powered, burst-firing submachine guns chambered in 10mm. Requires Armory access to open."
 	cost = 4550
@@ -237,7 +238,7 @@
 					/obj/item/gun/ballistic/automatic/smg10mm)
 	crate_name = "smg crate"
 
-/datum/supply_pack/security/armory/10mmammo
+/datum/supply_pack/security/armory/smgammo
 	name = "10mm SMG Ammo Crate"
 	desc = "Contains four magazines for the 10mm SMG. Each magazine is designed to facilitate rapid tactical reloads. Requires Armory access to open."
 	cost = 2750

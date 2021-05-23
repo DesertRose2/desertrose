@@ -49,7 +49,7 @@ Contains:
 	desc = "A tactical space suit first developed in a joint effort by the defunct IS-ERI and Nanotrasen in 20XX for military space operations. A tried and true workhorse, it is very difficult to move in but offers robust protection against all threats!"
 	icon_state = "heavy"
 	item_state = "swat_suit"
-	armor = list("tier" = 5,"energy" = 30, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 100, "acid" = 100, "wound" = 25)
+	armor = list("tier" = 7,"energy" = 30, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 100, "acid" = 100, "wound" = 25)
 	strip_delay = 120
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	mutantrace_variation = STYLE_DIGITIGRADE
