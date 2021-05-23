@@ -202,29 +202,50 @@
 
 /datum/supply_pack/security/armory/556ar
 	name = "5.56mm Assault Rifle Crate"
-	desc = "Contains two 5.56 assault rifles. Requires Armory access to open."
-	cost = 6000
+	desc = "Contains two 5.56 assault rifles with four additional magazines each. Requires Armory access to open."
+	cost = 10000
 	contains = list(/obj/item/gun/ballistic/automatic/ar,
-					/obj/item/gun/ballistic/automatic/ar)
+					/obj/item/gun/ballistic/automatic/ar,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault,
+					/obj/item/ammo_box/magazine/m556/rifle/assault)
 	crate_name = "assault rifle crate"
+
+/datum/supply_pack/security/armory/556ammo
+	name = "5.56mm Ammo Assortment Crate"
+	desc = "Contains an assortment of 5.56 caliber ammo boxes. Requires Armory access to open."
+	cost = 12000 //there's a FUCKLOAD of them
+	contains = list(/obj/item/ammo_box/a556,
+					/obj/item/ammo_box/a556,
+					/obj/item/ammo_box/a556,
+					/obj/item/ammo_box/a556/jhp,
+					/obj/item/ammo_box/a556/ap,
+					/obj/item/ammo_box/a556/match,
+					/obj/item/ammo_box/a556/sport)
+
 
 /datum/supply_pack/security/armory/10mmsmg
 	name = "10mm Submachine Gun Crate"
 	desc = "Contains two medium-powered, burst-firing submachine guns chambered in 10mm. Requires Armory access to open."
-	cost = 2550
+	cost = 4550
 	contains = list(/obj/item/gun/ballistic/automatic/smg10mm,
 					/obj/item/gun/ballistic/automatic/smg10mm)
-	crate_name = "auto rifle crate"
+	crate_name = "smg crate"
 
 /datum/supply_pack/security/armory/10mmammo
-	name = "WT-550 Semi-Auto SMG Ammo Crate"
+	name = "10mm SMG Ammo Crate"
 	desc = "Contains four magazines for the 10mm SMG. Each magazine is designed to facilitate rapid tactical reloads. Requires Armory access to open."
-	cost = 1750
+	cost = 2750
 	contains = list(/obj/item/ammo_box/magazine/m10mm_adv/ext,
 					/obj/item/ammo_box/magazine/m10mm_adv/ext,
 					/obj/item/ammo_box/magazine/m10mm_adv/ext,
 					/obj/item/ammo_box/magazine/m10mm_adv/ext)
-	crate_name = "auto rifle ammo crate"
+	crate_name = "smg ammo crate"
 /*
 /datum/supply_pack/security/armory/wt550ammo_nonlethal // Takes around 12 shots to stamcrit someone
 	name = "WT-550 Semi-Auto SMG Non-Lethal Ammo Crate"
