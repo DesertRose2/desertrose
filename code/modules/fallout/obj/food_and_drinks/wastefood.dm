@@ -28,7 +28,13 @@
 	tastes = list("buttery flesh" = 1, "creamy soup" = 1)
 	foodtype = VEGETABLES
 
-
+//DRINK MIXING FALLOUT 13/////
+/datum/chemical_reaction/spiritcleanser
+	name = "Spirit Cleanser"
+	id = /datum/reagent/consumable/ethanol/spiritcleanser
+	results = list(/datum/reagent/consumable/ethanol/spiritcleanser = 2)
+	required_reagents = list(/datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/ethanol/daturatea = 1)
+	
 /////PLANTS Fallout 13///////
 
 /obj/item/seeds/buffalogourd
@@ -58,7 +64,7 @@
 	filling_color = "#008000"
 	bitesize_mod = 3
 	foodtype = FRUIT
-	distill_reagent = "buffalo"
+	distill_reagent = /datum/reagent/consumable/ethanol/buffalo
 
 /obj/item/seeds/coyotetobacco
 	name = "pack of coyote tobacco seeds"
