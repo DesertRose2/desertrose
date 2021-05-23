@@ -121,7 +121,7 @@
 
 /obj/item/clothing/head/helmet/swat
 	name = "\improper SWAT helmet"
-	desc = "(V) An extremely robust, space-worthy helmet in a nefarious red and black stripe pattern."
+	desc = "(VII) An extremely robust, space-worthy helmet in a nefarious red and black stripe pattern."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
 	armor = list("tier" = 7,"energy" = 30, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 50, "acid" = 50)
