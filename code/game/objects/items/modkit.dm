@@ -173,3 +173,7 @@
 	target_items = list(/obj/item/clothing/under/f13/khan)
 	result_item = /obj/item/clothing/under/f13/chinese_khan
 
+/obj/item/modkit/luger
+	name = "P08 luger modkit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
+	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
