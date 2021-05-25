@@ -219,6 +219,11 @@
 	suppressor_x_offset = 30
 	suppressor_y_offset = 19
 
+/obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+	name = "\improper P08 luger"
+	desc = "An early semi-automatic pistol, the first of it's kind chambered in 9mm Parabellum."
+	icon_state = "luger"
+
 /obj/item/gun/ballistic/automatic/pistol/beretta
 	name = "beretta M9FS"
 	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability, 15 round magazine and good looks."
