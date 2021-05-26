@@ -21,6 +21,12 @@ SUBSYSTEM_DEF(air)
 	var/thread_wait_ticks = 0
 	var/cur_thread_wait_ticks = 0
 
+	var/low_pressure_turfs = 0
+	var/high_pressure_turfs = 0
+
+	var/num_group_turfs_processed = 0
+	var/num_equalize_processed = 0
+
 	var/list/hotspots = list()
 	var/list/networks = list()
 	var/list/pipenets_needing_rebuilt = list()
@@ -48,7 +54,7 @@ SUBSYSTEM_DEF(air)
 	// Max number of turfs to look for a space turf, and max number of turfs that will be decompressed.
 	var/equalize_hard_turf_limit = 2000
 	// Whether equalization should be enabled at all.
-	var/equalize_enabled = TRUE
+	var/equalize_enabled = FALSE
 	// Whether turf-to-turf heat exchanging should be enabled.
 	var/heat_enabled = FALSE
 	// Max number of times process_turfs will share in a tick.
@@ -60,11 +66,6 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/stat_entry(msg)
 	msg += "C:{"
-	msg += "AT:[round(cost_turfs,1)]|"
-	msg += "TH:[round(turf_process_time(),1)],[thread_wait_ticks]|"
-	msg += "EG:[round(cost_groups,1)]|"
-	msg += "EQ:[round(cost_equalize,1)]|"
-	msg += "PO:[round(cost_post_process,1)]|"
 	msg += "HP:[round(cost_highpressure,1)]|"
 	msg += "HS:[round(cost_hotspots,1)]|"
 	msg += "HE:[round(heat_process_time(),1)]|"
@@ -72,12 +73,23 @@ SUBSYSTEM_DEF(air)
 	msg += "PN:[round(cost_pipenets,1)]|"
 	msg += "AM:[round(cost_atmos_machinery,1)]"
 	msg += "} "
+	msg += "TC:{"
+	msg += "AT:[round(cost_turfs,1)]|"
+	msg += "EG:[round(cost_groups,1)]|"
+	msg += "EQ:[round(cost_equalize,1)]|"
+	msg += "PO:[round(cost_post_process,1)]"
+	msg += "}"
+	msg += "TH:[round(thread_wait_ticks,1)]|"
 	msg += "HS:[hotspots.len]|"
 	msg += "PN:[networks.len]|"
 	msg += "HP:[high_pressure_delta.len]|"
+	msg += "HT:[high_pressure_turfs]|"
+	msg += "LT:[low_pressure_turfs]|"
+	msg += "ET:[num_equalize_processed]|"
+	msg += "GT:[num_group_turfs_processed]|"
 	msg += "DF:[max_deferred_airs]|"
 	msg += "GA:[get_amt_gas_mixes()]|"
-	msg += "MG:[get_max_gas_mixes()]|"
+	msg += "MG:[get_max_gas_mixes()]"
 	return ..()
 
 /datum/controller/subsystem/air/Initialize(timeofday)
@@ -187,36 +199,6 @@ SUBSYSTEM_DEF(air)
 		if(state != SS_RUNNING)
 			return
 		resumed = 0
-		currentpart = equalize_enabled ? SSAIR_EQUALIZE : SSAIR_EXCITEDGROUPS
-
-	// Monstermos and/or Putnamos--making large pressure deltas move faster
-	if(currentpart == SSAIR_EQUALIZE)
-		timer = TICK_USAGE_REAL
-		process_turf_equalize(resumed)
-		cost_equalize = MC_AVERAGE(cost_equalize, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
-		if(state != SS_RUNNING)
-			return
-		resumed = 0
-		currentpart = SSAIR_EXCITEDGROUPS
-
-	// Making small pressure deltas equalize immediately so they don't process anymore
-	if(currentpart == SSAIR_EXCITEDGROUPS)
-		timer = TICK_USAGE_REAL
-		process_excited_groups(resumed)
-		cost_groups = MC_AVERAGE(cost_groups, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
-		if(state != SS_RUNNING)
-			return
-		resumed = 0
-		currentpart = SSAIR_TURF_POST_PROCESS
-
-	// Quick multithreaded "should we display/react?" checks followed by finishing those up before the next step
-	if(currentpart == SSAIR_TURF_POST_PROCESS)
-		timer = TICK_USAGE_REAL
-		process_high_pressure_delta(resumed)
-		cost_highpressure = MC_AVERAGE(cost_highpressure, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
-		if(state != SS_RUNNING)
-			return
-		resumed = 0
 		currentpart = SSAIR_HOTSPOTS
 
 	if(currentpart == SSAIR_HOTSPOTS)
@@ -240,6 +222,8 @@ SUBSYSTEM_DEF(air)
 		currentpart = SSAIR_ACTIVETURFS
 
 	// This simply starts the turf thread. It runs in the background until the FINALIZE_TURFS step, at which point it's waited for.
+	// This also happens to do all the commented out stuff below, all in a single separate thread. This is mostly so that the
+	// waiting is consistent.
 	if(currentpart == SSAIR_ACTIVETURFS)
 		timer = TICK_USAGE_REAL
 		process_turfs(resumed)
@@ -247,6 +231,35 @@ SUBSYSTEM_DEF(air)
 		if(state != SS_RUNNING)
 			return
 		resumed = 0
+	/*
+	// Monstermos and/or Putnamos--making large pressure deltas move faster
+	if(currentpart == SSAIR_EQUALIZE)
+		timer = TICK_USAGE_REAL
+		process_turf_equalize(resumed)
+		cost_equalize = MC_AVERAGE(cost_equalize, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
+		if(state != SS_RUNNING)
+			return
+		resumed = 0
+		currentpart = SSAIR_EXCITEDGROUPS
+	// Making small pressure deltas equalize immediately so they don't process anymore
+	if(currentpart == SSAIR_EXCITEDGROUPS)
+		timer = TICK_USAGE_REAL
+		process_excited_groups(resumed)
+		cost_groups = MC_AVERAGE(cost_groups, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
+		if(state != SS_RUNNING)
+			return
+		resumed = 0
+		currentpart = SSAIR_TURF_POST_PROCESS
+	// Quick multithreaded "should we display/react?" checks followed by finishing those up before the next step
+	if(currentpart == SSAIR_TURF_POST_PROCESS)
+		timer = TICK_USAGE_REAL
+		post_process_turfs(resumed)
+		cost_post_process = MC_AVERAGE(cost_post_process, TICK_DELTA_TO_MS(TICK_USAGE_REAL - timer))
+		if(state != SS_RUNNING)
+			return
+		resumed = 0
+		currentpart = SSAIR_HOTSPOTS
+	*/
 	currentpart = SSAIR_REBUILD_PIPENETS
 
 
