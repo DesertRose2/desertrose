@@ -10803,6 +10803,8 @@
 /obj/structure/closet,
 /obj/item/storage/box/pillbottles,
 /obj/item/storage/box/beakers,
+/obj/item/fermichem/pHmeter,
+/obj/item/fermichem/pHmeter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/vault)
 "pxB" = (
@@ -15181,6 +15183,8 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/clothing/head/radiation,
+/obj/item/clothing/suit/radiation,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/vault)
 "whL" = (

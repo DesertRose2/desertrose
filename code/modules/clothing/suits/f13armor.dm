@@ -200,11 +200,18 @@
 	item_state = "marinearmor"
 	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
-/obj/item/clothing/suit/armor/f13/combat/ahp_suit
+/obj/item/clothing/suit/armor/f13/ahp_suit
 	name = "highway patrol jacket"
-	desc = "(V) An old police motorcycle jacket with internal padding and a gold badge with the logo of the 'Arizona State Troopers'."
+	desc = "(V) An old police motorcycle jacket a gold badge with the logo of the 'Arizona Department of Public Safety'."
 	icon_state = "ahp_suit"
 	item_state = "ahp_suit"
+	body_parts_covered = CHEST|ARMS
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/ahp_suit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Power armors, including salvaged and faction
 

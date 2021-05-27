@@ -206,3 +206,7 @@
 /obj/item/storage/box/large/custom_kit/natalie/PopulateContents()
 	new /obj/item/modkit/officercoat(src)
 	new /obj/item/lighter/fusion(src)
+
+//Arol Hendredge - sadokist
+/obj/item/storage/box/large/custom_kit/arolhendredge/PopulateContents()
+	new /obj/item/modkit/luger(src)

@@ -1455,5 +1455,5 @@
 /obj/item/clothing/under/f13/mutieranger
 	name = "mutant Ranger armour"
 	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
-	icon_state = "mutie_ranger_armour"
-	item_state = "mutie_ranger_armour"
+	icon_state = "mutie_ranger_under"
+	item_state = "mutie_ranger_under"

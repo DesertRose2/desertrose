@@ -201,6 +201,12 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 
+/obj/item/clothing/head/helmet/f13/legion/recruit/velite
+	name = "legion recruit velite houndcap"
+	desc = "(V) This helmet is decorated with the pelt of a wolf."
+	icon_state = "legvexil" //Placeholders, replace when new sprites are made.
+	item_state = "legvexil" //DUtto.
+
 /obj/item/clothing/head/helmet/f13/legion/recruit/scout
 	name = "legion scout hood"
 	desc = "(III) It's a leather hood worn by legion scouts."
