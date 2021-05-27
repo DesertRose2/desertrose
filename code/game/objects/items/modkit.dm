@@ -173,6 +173,11 @@
 	target_items = list(/obj/item/clothing/under/f13/khan)
 	result_item = /obj/item/clothing/under/f13/chinese_khan
 
+/obj/item/modkit/luger
+	name = "P08 luger modkit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
+	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm
 	name = "crusader pistol 10mm conversion kit"
@@ -218,4 +223,3 @@
 						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
 	)
 	result_item = /obj/item/gun/energy/plasma/crusader
-
