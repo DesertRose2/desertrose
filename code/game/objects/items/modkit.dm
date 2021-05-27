@@ -177,3 +177,49 @@
 	name = "P08 luger modkit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
 	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+
+//Crusader Pistol Modkits
+/obj/item/modkit/crusader_10mm
+	name = "crusader pistol 10mm conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/energy/laser/crusader,
+						/obj/item/gun/energy/plasma/crusader
+	)
+	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_pistol
+
+/obj/item/modkit/crusader_473
+	name = "crusader pistol 4.73mm conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
+						/obj/item/gun/energy/laser/crusader,
+						/obj/item/gun/energy/plasma/crusader
+	)
+	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+
+/obj/item/modkit/crusader_556
+	name = "crusader pistol 5.56mm conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
+						/obj/item/gun/energy/laser/crusader,
+						/obj/item/gun/energy/plasma/crusader
+	)
+	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+
+/obj/item/modkit/crusader_laser
+	name = "crusader pistol laser conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,
+						/obj/item/gun/energy/plasma/crusader
+	)
+	result_item = /obj/item/gun/energy/laser/crusader
+
+/obj/item/modkit/crusader_plasma
+	name = "crusader pistol plasma conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
+						/obj/item/gun/energy/laser/crusader,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+	)
+	result_item = /obj/item/gun/energy/plasma/crusader

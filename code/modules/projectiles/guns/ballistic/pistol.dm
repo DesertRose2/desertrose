@@ -344,3 +344,39 @@
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 28
 	suppressor_y_offset = 20
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_pistol
+	name = "crusader pistol (10mm)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 10mm."
+	icon_state = "crusader_pistol"
+	item_state = "crusader_pistol"
+	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+	name = "crusader pistol (4.73mm caseless)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 4.73mm caseless."
+	icon_state = "crusader_rifle"
+	item_state = "crusader_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m473_pistol
+	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr
+	name = "crusader pistol (5.56mm)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 5.56mm."
+	icon_state = "crusader_rifle"
+	icon_state = "crusader_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE

@@ -143,7 +143,7 @@
 	icon_living = "mmarauder_mg"
 	maxHealth = 1100
 	health = 1100
-	projectiletype = /obj/item/projectile/bullet/a50MG/npc
+	projectiletype = /obj/item/projectile/bullet/a50MG
 	extra_projectiles = 4
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/m2a1)
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
