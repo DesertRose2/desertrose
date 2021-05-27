@@ -634,12 +634,12 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
 /datum/design/crusader_rifle
-	name = "crusader pistol 4.73mm conversion kit"
+	name = "crusader pistol 5.56mm conversion kit"
 	desc = "A conversion kit for crusader pistols."
 	id = "crusader_rifle"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000, /datum/material/gold = 2500, /datum/material/silver = 2500)
-	build_path = /obj/item/modkit/crusader_473
+	build_path = /obj/item/modkit/crusader_556
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
