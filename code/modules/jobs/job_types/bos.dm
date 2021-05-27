@@ -140,7 +140,7 @@ Head Paladin
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
 		/obj/item/melee/powerfist=1 \
 		)
@@ -219,6 +219,8 @@ Head Scribe
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/flashlight/seclite=1, \
+		/obj/item/gun/energy/laser/pistol=1, \
+		/obj/item/stock_parts/cell/ammo/ec=2, \
 		/obj/item/kitchen/knife/combat=1 \
 		)
 
@@ -302,7 +304,7 @@ Head Knight
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
@@ -399,7 +401,7 @@ Star Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
@@ -482,7 +484,7 @@ Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
@@ -775,7 +777,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
@@ -863,7 +865,7 @@ Knight
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
@@ -996,7 +998,7 @@ Initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, 
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, 
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, 
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/storage/toolbox/mechanical=1,
@@ -1068,7 +1070,7 @@ Off-Duty
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1, \
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
 
