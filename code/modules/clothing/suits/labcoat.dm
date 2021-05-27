@@ -83,15 +83,3 @@
 	icon_state = "engi_dep_jacket"
 	item_state = "engi_dep_jacket"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 45)
-
-/obj/item/clothing/suit/toggle/labcoat/fieldscribe
-	name = "fieldscribe suit"
-	desc = "(II) A suit that protects against the weather, and looks stylish, but not much else."
-	icon_state = "fieldscribe"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-
-/obj/item/clothing/suit/toggle/labcoat/scribecoat
-	name = "fieldscribe coat"
-	desc = "(II) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
-	icon_state = "scribecoat"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)

@@ -136,11 +136,17 @@
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
-/obj/item/clothing/head/helmet/f13/combat/ahp_helmet
+/obj/item/clothing/head/helmet/f13/ahp_helmet
 	name = "highway patrol helmet"
-	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona State Troopers' emblazoned on the front."
+	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
 	icon_state = "ahp_helmet"
 	item_state = "ahp_helmet"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	strip_delay = 40
+
+/obj/item/clothing/head/helmet/f13/ahp_helmet/Initialize() //HQ parts reinforcement
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Sulphite Helm
 
@@ -387,11 +393,11 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"
-	desc = "(IX) It's an old pre-War power armor helmet. It's pretty hot inside of it."
+	desc = "(VIII) It's an old pre-War power armor helmet. It's pretty hot inside of it."
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
@@ -426,10 +432,10 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b
 	name = "T-51b power helmet"
-	desc = "(X) It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
+	desc = "(IX) It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
 	icon_state = "t51bhelmet0"
 	item_state = "t51bhelmet0"
-	armor = list("tier" = 10, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	armor = list("tier" = 9, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	armor_block_chance = 85
 	deflection_chance = 35 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
@@ -462,10 +468,10 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60
 	name = "T-60a power helmet"
-	desc = "(XI) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
+	desc = "(X) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
 	icon_state = "t60helmet0"
 	item_state = "t60helmet0"
-	armor = list("tier" = 11, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
+	armor = list("tier" = 10, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	armor_block_chance = 90
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Same deflection as T-45 due to it having the same general shape.
@@ -778,8 +784,8 @@
 	icon_state = "foxranger"
 	item_state = "foxranger"
 	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
+	toggle_message = "You take the sniper's veil off."
+	alt_toggle_message = "You put the sniper's veil on."
 	can_toggle = 1
 	toggle_cooldown = 0
 
@@ -858,3 +864,39 @@
 /obj/item/clothing/head/helmet/f13/marlowhat/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/head/helmet/f13/bride_veil
+	name = "bridal veil"
+	desc = "(I) A thin, white bridal veil. It seems to have been hand-made using remarkably well preserved and delicate pre-war fabric."
+	icon_state = "bride_veil"
+	item_state = "bride_veil"
+	armor = list("tier" = 1, "energy" = 0, "bomb" = 25, "bio" = 0, "rad" = 0)
+	alt_toggle_message = "You push the veil down "
+	can_toggle = 1
+	flags_inv = HIDEEARS
+	actions_types = list(/datum/action/item_action/toggle)
+	toggle_cooldown = 0
+	flags_cover = HEADCOVERSEYES
+	visor_flags_cover = HEADCOVERSEYES
+	dog_fashion = null
+
+/obj/item/clothing/head/helmet/f13/bride_veil/attack_self(mob/user)
+	if(can_toggle && !user.incapacitated())
+		if(world.time > cooldown + toggle_cooldown)
+			cooldown = world.time
+			up = !up
+			flags_1 ^= visor_flags
+			flags_inv ^= visor_flags_inv
+			flags_cover ^= visor_flags_cover
+			icon_state = "[initial(icon_state)][up ? "up" : ""]"
+			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
+
+			user.update_inv_head()
+			if(iscarbon(user))
+				var/mob/living/carbon/C = user
+				C.head_update(src, forced = 1)
+
+			if(active_sound)
+				while(up)
+					playsound(src.loc, "[active_sound]", 100, 0, 4)
+					sleep(15)

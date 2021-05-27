@@ -817,6 +817,23 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//tribeam carbine
+/datum/crafting_recipe/tricarbine
+	name = "Tribeam Laser Carbine"
+	result = /obj/item/gun/energy/laser/scatter/baby
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/advanced_crafting_components/conductors = 1,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/crafting/electronicparts = 3
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //AM rifle
 /datum/crafting_recipe/am_rifle
 	name = "AM Rifle"
@@ -958,6 +975,20 @@
 /datum/crafting_recipe/recoil_decrease
 	name = "Recoil Compensator"
 	result = /obj/item/attachments/recoil_decrease
+	reqs = list(
+				/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 30
+	category = CAT_WEAPONRY
+	subcategory = CAT_PARTS
+	always_availible = FALSE
+
+/datum/crafting_recipe/bullet_speed
+	name = "Improved Barrel"
+	result = /obj/item/attachments/bullet_speed
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/crafting/metalparts = 5,

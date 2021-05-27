@@ -602,6 +602,8 @@
 	weapon_weight = WEAPON_HEAVY
 	recoil = 1 //have fun
 	fire_delay = 6
+	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+	can_attachments = TRUE
 	//projectile_speed = 0
 
 /obj/item/gun/ballistic/shotgun/kar98k

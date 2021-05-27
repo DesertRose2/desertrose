@@ -186,6 +186,11 @@
 	path = /obj/item/storage/box/large/custom_kit/natalie
 	ckeywhitelist = list("gurking")
 
+/datum/gear/donator/kits/arolhendredge
+	name = "Arol Hendredge's belongings"
+	path = /obj/item/storage/box/large/custom_kit/arolhendredge
+	ckeywhitelist = list("sadokist")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////

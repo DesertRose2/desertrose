@@ -361,8 +361,8 @@
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout
-	name = "NCR 3rd Scout combat armor"
-	desc = "(V) A specialized variant of combat armor issued to members of the 3rd Scout Battalion."
+	name = "NCR light infantry armor"
+	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen."
 	icon_state = "scoutarmor"
 	item_state = "scoutarmor"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
@@ -420,18 +420,18 @@
 //NCR Ranger
 /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
 	name = "ranger recon duster"
-	desc = "(IV) A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
+	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
 	icon_state = "duster_recon"
 	item_state = "duster_recon"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/rangerrig
 	name = "chest gear harness"
-	desc = "(IV) A handmade tactical rig. The actual rig is made of a black, fiberous cloth, being attached to a dusty desert-colored belt. A flask and two ammo pouches hang from the belt."
+	desc = "(V) A handmade tactical rig. The actual rig is made of a black, fiberous cloth, being attached to a dusty desert-colored belt. A flask and two ammo pouches hang from the belt."
 	icon_state = "r_gear_rig"
 	item_state = "r_gear_rig"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/trailranger
@@ -451,10 +451,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
 	name = "mutant ranger armor"
@@ -470,10 +470,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
 	name = "ranger scout armor"
-	desc = "(V) A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
+	desc = "(VI) A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
 	icon_state = "refurb_scout"
 	item_state = "refurb_scout"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
@@ -482,6 +482,7 @@
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"
@@ -492,32 +493,45 @@
 
 //Brotherhood of Steel (PA in f13armor.dm)
 
-/obj/item/clothing/suit/armor/f13/headscribe
-	name = "brotherhood head scribe robe"
-	desc = "(II) A red cloth robe with gold trimmings, worn eclusively by the Head Scribe of a chapter."
-	icon_state = "headscribe"
-	item_state = "headscribe"
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/f13/scribe
-	name = "Brotherhood Scribe's robe"
-	desc = "(II) A red cloth robe worn by the Brotherhood of Steel Scribes."
+	name = "brotherhood Scribe's robe"
+	desc = "(III) A red cloth robe worn by the Brotherhood of Steel Scribes."
 	icon_state = "scribe"
 	item_state = "scribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/seniorscribe
-	name = "Brotherhood Proctor's robe"
-	desc = "(II) A red cloth robe with silver gildings worn by the Brotherhood of Steel Senior Scribes."
+	name = "brotherhood Proctor's robe"
+	desc = "(III) A red cloth robe with silver gildings worn by the Brotherhood of Steel Senior Scribes."
 	icon_state = "seniorscribe"
 	item_state = "seniorscribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/headscribe
+	name = "brotherhood head scribe robe"
+	desc = "(III) A red cloth robe with gold trimmings, worn eclusively by the Head Scribe of a chapter."
+	icon_state = "headscribe"
+	item_state = "headscribe"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+/obj/item/clothing/suit/toggle/labcoat/fieldscribe
+	name = "fieldscribe suit"
+	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
+	icon_state = "fieldscribe"
+	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+/obj/item/clothing/suit/toggle/labcoat/scribecoat
+	name = "fieldscribe coat"
+	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
+	icon_state = "scribecoat"
+	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/f13/elder
-	name = "Brotherhood Elder's robe"
+	name = "brotherhood Elder's robe"
 	desc = "(II) A blue cloth robe with some scarlet red parts, traditionally worn by the Brotherhood of Steel Elder."
 	icon_state = "elder"
 	item_state = "elder"
@@ -527,22 +541,23 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	name = "brotherhood armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
+	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood star knight armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
+	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood knight-captain armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
+	name = "brotherhood head knight armor"
+	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	name = "initiate armor"
@@ -557,6 +572,28 @@
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
+	name = "brotherhood scout armor"
+	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
+	icon_state = "brotherhood_scout_knight"
+	item_state = "brotherhood_scout_knight"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	slowdown = -0.1
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
+	name = "brotherhood star knight scout armor"
+	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
+	icon_state = "brotherhood_scout_senior"
+	item_state = "brotherhood_scout_senior"
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
+	name = "brotherhood head knight scout armor"
+	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
+	icon_state = "brotherhood_scout_captain"
+	item_state = "brotherhood_scout_captain"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
 	name = "brotherhood armor"
