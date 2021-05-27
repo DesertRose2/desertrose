@@ -969,6 +969,20 @@
 	subcategory = CAT_PARTS
 	always_availible = FALSE
 
+/datum/crafting_recipe/bullet_speed
+	name = "Improved Barrel"
+	result = /obj/item/attachments/bullet_speed
+	reqs = list(
+				/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 30
+	category = CAT_WEAPONRY
+	subcategory = CAT_PARTS
+	always_availible = FALSE
+
 /datum/crafting_recipe/automatic_sear
 	name = "Automatic Sear"
 	result = /obj/item/attachments/auto_sear

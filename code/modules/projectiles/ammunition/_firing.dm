@@ -1,7 +1,7 @@
-/obj/item/ammo_casing/proc/fire_casing(atom/target, mob/living/user, params, distro, quiet, zone_override, spread, extra_damage, extra_penetration, atom/fired_from)
+/obj/item/ammo_casing/proc/fire_casing(atom/target, mob/living/user, params, distro, quiet, zone_override, spread, extra_damage, extra_penetration, atom/fired_from, extra_speed)
 	distro += variance
 	var/targloc = get_turf(target)
-	ready_proj(target, user, quiet, zone_override, extra_damage, extra_penetration, fired_from)
+	ready_proj(target, user, quiet, zone_override, extra_damage, extra_penetration, fired_from, extra_speed)
 	if(pellets == 1)
 		if(distro) //We have to spread a pixel-precision bullet. throw_proj was called before so angles should exist by now...
 			if(randomspread)
@@ -21,7 +21,7 @@
 	update_icon()
 	return 1
 
-/obj/item/ammo_casing/proc/ready_proj(atom/target, mob/living/user, quiet, zone_override = "", extra_damage = 0, extra_penetration = 0, fired_from)
+/obj/item/ammo_casing/proc/ready_proj(atom/target, mob/living/user, quiet, zone_override = "", extra_damage = 0, extra_penetration = 0, fired_from, extra_speed = TILES_TO_PIXELS(0))
 	if (!BB)
 		return
 	BB.original = target
@@ -37,6 +37,7 @@
 		var/obj/item/gun/G = fired_from
 		BB.damage += G.extra_damage
 		BB.armour_penetration += G.extra_penetration
+		BB.pixels_per_second += G.extra_speed
 		if(HAS_TRAIT(user, TRAIT_INSANE_AIM))
 			BB.ricochets_max = max(BB.ricochets_max, 10) //bouncy!
 			BB.ricochet_chance = max(BB.ricochet_chance, 100) //it wont decay so we can leave it at 100 for always bouncing
