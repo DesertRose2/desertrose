@@ -178,3 +178,8 @@
 	projectile_type = /obj/item/projectile/beam/laser/musket
 	e_cost = 250
 	fire_sound = 'sound/f13weapons/aer9fire.ogg'
+
+/obj/item/ammo_casing/energy/laser/crusader
+	projectile_type = /obj/item/projectile/beam/laser/lasgun
+	e_cost = 200 //10 shots
+	fire_sound = 'sound/f13weapons/aer9fire.ogg'
