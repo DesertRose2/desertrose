@@ -385,7 +385,7 @@
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
 
-/obj/item/clothing/suit/armor/f13/combat/ncr/mutant
+/obj/item/clothing/suit/armor/f13/combat/ncr/mutie
 	name = "NCR mutant armor"
 	desc = "(V) Multiple sets of NCR patrol vests that have been fused, stitched and welded together in order to fit the frame of a Super Mutant."
 	icon_state = "mutie_ncr"
@@ -456,7 +456,7 @@
 	item_state = "ncr_patrol"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutant
+/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
 	name = "mutant ranger armor"
 	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "mutie_ranger_armour"

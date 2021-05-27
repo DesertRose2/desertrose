@@ -132,7 +132,7 @@
 	name = "black beret"
 	desc = "A black beret, perfect for war veterans and dark, brooding, anti-hero mimes."
 	icon_state = "beretblack"
-	
+
 /obj/item/clothing/head/beret/headband
 	name = "red headband"
 	desc = "A red headband fashioned out of some tattered sleeves. The fabric is soaked in sweat, dirt and blood."
@@ -181,8 +181,13 @@
 	icon_state = "beret_centcom_officer"
 
 /obj/item/clothing/head/HoS/beret/syndicate
-	name = "syndicate beret"
-	desc = "A black beret with thick armor padding inside. Stylish and robust."
+	name = "black beret"
+	desc = "A black cloth beret internally lined with leather and metal splints."
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/HoS/beret/syndicate/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/warden
 	name = "warden's police hat"
