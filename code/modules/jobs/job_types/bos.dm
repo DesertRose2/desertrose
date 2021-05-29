@@ -339,6 +339,7 @@ Head Knight
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
+		/obj/item/clothing/glasses/sunglasses/big=1,
 		/obj/item/melee/classic_baton/telescopic=1
 	)
 
@@ -806,6 +807,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/clothing/glasses/sunglasses/big=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
 /*
@@ -894,6 +896,7 @@ Knight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/glasses/sunglasses=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
@@ -933,6 +936,7 @@ Knight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/glasses/sunglasses=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 
