@@ -234,7 +234,7 @@ Head Scribe
 /datum/outfit/loadout/hsshield
 	name = "Shield Leader"
 	backpack_contents = list(
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t45b=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45b=1,
 		/obj/item/book/granter/trait/pa_wear=1
@@ -310,7 +310,7 @@ Head Knight
 		/obj/item/clothing/head/helmet/f13/power_armor/t45d=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
@@ -588,7 +588,7 @@ Proctor
 /datum/outfit/loadout/proctorsh
 	name = "Senior Shield Scribe"
 	backpack_contents = list(
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/book/granter/trait/pa_wear=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
