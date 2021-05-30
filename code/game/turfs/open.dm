@@ -200,7 +200,13 @@
 			playsound(L, 'sound/magic/exit_blood.ogg', 50, TRUE)
 			flash_color(L, flash_color = "#C80000", flash_time = 10)
 
-/turf/open/Initialize_Atmos(times_fired)
+/turf/open/Initalize_Atmos(times_fired)
+	if(!blocks_air)
+		if(!istype(air,/datum/gas_mixture/turf))
+			air = new(2500,src)
+		air.copy_from_turf(src)
+		update_air_ref(planetary_atmos ? 1 : 2)
+
 	update_visuals()
 	ImmediateCalculateAdjacentTurfs()
 
