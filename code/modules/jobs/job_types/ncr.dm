@@ -594,7 +594,6 @@ Rear Echelon
 	description = "You are a detachment of partially trained troops sent to bolster the Yuma Garrison. You have the same duties as a Trooper but act as a reserve force. Follow are legal and valid orders from everyone that outranks you."
 	supervisors = "Troopers and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
 	display_order = JOB_DISPLAY_ORDER_NCR_RECRUIT
 	outfit = /datum/outfit/job/ncr/f13ncrrecruit
 
