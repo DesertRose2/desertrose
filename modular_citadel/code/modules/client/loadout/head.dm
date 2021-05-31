@@ -98,8 +98,7 @@
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Recruit"
+							"NCR Off-Duty"
 						)
 
 /datum/gear/head/steelpot_goggles
@@ -116,8 +115,6 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
 						)
 
 /datum/gear/head/steelpot_gambler
@@ -134,8 +131,6 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
 						)
 
 datum/gear/head/steelpot_bandolier
@@ -152,8 +147,6 @@ datum/gear/head/steelpot_bandolier
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
 						)
 
 datum/gear/head/steelpot_patriot
@@ -170,8 +163,6 @@ datum/gear/head/steelpot_patriot
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
 						)
 
 /datum/gear/head/ncr_recon

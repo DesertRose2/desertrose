@@ -629,7 +629,7 @@
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
+	fire_delay = 4
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_bayonet = TRUE
@@ -655,7 +655,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 15
 	extra_damage = -4
-	fire_delay = 2
+	fire_delay = 4
 	suppressor_x_offset = 26
 	suppressor_y_offset = 28
 
@@ -681,20 +681,16 @@
 	item_state = "R84"
 	//automatic = 1
 	spread = 3
-	burst_size = 1
+	burst_size = 2
+	fire_delay = 3
 	automatic_burst_overlay = TRUE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-	semi_auto = TRUE
+	semi_auto = FALSE
 	burst_shot_delay = 2.2 //Was 2 before.
 	can_suppress = TRUE
-	can_automatic = TRUE
-	can_scope = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 28
-	scope_state = "smallrifle_scope"
-	scope_x_offset = 5
-	scope_y_offset = 13
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -704,7 +700,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 5
+	fire_delay = 4
 	can_attachments = TRUE
 	can_bayonet = TRUE
 	bayonet_state = "rifles"

@@ -44,8 +44,7 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger",
-							"NCR Recruit"
+							"NCR Ranger"
 						)
 
 /datum/gear/uniform/ncr_shorts
@@ -65,8 +64,7 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger",
-							"NCR Recruit"
+							"NCR Ranger"
 						)
 
 /datum/gear/uniform/ranger
