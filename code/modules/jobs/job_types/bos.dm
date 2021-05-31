@@ -130,7 +130,7 @@ Head Paladin
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
 	belt =			/obj/item/storage/belt/military/assault
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -384,7 +384,7 @@ Star Paladin
 /datum/outfit/job/bos/f13seniorpaladin
 	name = "Star Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
@@ -466,7 +466,7 @@ Paladin
 /datum/outfit/job/bos/f13paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	glasses=		/obj/item/clothing/glasses/meson
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin

@@ -204,7 +204,7 @@
 						/obj/item/gun/energy/laser/crusader,
 						/obj/item/gun/energy/plasma/crusader
 	)
-	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr
 
 /obj/item/modkit/crusader_laser
 	name = "crusader pistol laser conversion kit"
