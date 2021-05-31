@@ -376,7 +376,7 @@
 /obj/item/storage/box/ration/menu_twelve
 	name = "c-ration box - 'Menu 12'"
 
-/obj/item/storage/box/ration/menu_eleven/PopulateContents()
+/obj/item/storage/box/ration/menu_twelve/PopulateContents()
 	. = ..()
 	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/pizza(src)
 	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/cranberry_cobbler(src)
