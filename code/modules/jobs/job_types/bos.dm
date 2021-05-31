@@ -138,7 +138,6 @@ Head Paladin
 	neck =			/obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
@@ -213,13 +212,11 @@ Head Scribe
 	accessory = 	/obj/item/clothing/accessory/bos/headscribe
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
-	belt = 			/obj/item/storage/belt/utility/full/engi
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/flashlight/seclite=1, \
-		/obj/item/gun/energy/laser/pistol=1, \
+		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
 		/obj/item/kitchen/knife/combat=1 \
 		)
@@ -237,7 +234,7 @@ Head Scribe
 /datum/outfit/loadout/hsshield
 	name = "Shield Leader"
 	backpack_contents = list(
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t45b=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45b=1,
 		/obj/item/book/granter/trait/pa_wear=1
@@ -301,7 +298,6 @@ Head Knight
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(		
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
@@ -313,8 +309,8 @@ Head Knight
 	backpack_contents = list(
 		/obj/item/clothing/head/helmet/f13/power_armor/t45d=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain=1,
-		/obj/item/clothing/mask/gas/welding=1,
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/clothing/mask/gas/welding/bos=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
@@ -343,6 +339,7 @@ Head Knight
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
+		/obj/item/clothing/glasses/sunglasses/big=1,
 		/obj/item/melee/classic_baton/telescopic=1
 	)
 
@@ -397,7 +394,6 @@ Star Paladin
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
@@ -480,7 +476,6 @@ Paladin
 	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
@@ -569,14 +564,13 @@ Proctor
 	chemwhiz = TRUE
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	shoes = 		/obj/item/clothing/shoes/combat
-	belt = 			/obj/item/storage/belt/utility/full/engi
 	accessory = 	/obj/item/clothing/accessory/bos/seniorscribe
 	suit = 			/obj/item/clothing/suit/f13/seniorscribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1, \
+		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
 		/obj/item/kitchen/knife/combat=1 \
 		)
@@ -594,7 +588,7 @@ Proctor
 /datum/outfit/loadout/proctorsh
 	name = "Senior Shield Scribe"
 	backpack_contents = list(
-		/obj/item/storage/belt/utility/chief/full=1,
+		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/book/granter/trait/pa_wear=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
@@ -651,7 +645,6 @@ Scribe
 	chemwhiz = TRUE
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	shoes = 		/obj/item/clothing/shoes/combat
-	belt = 			/obj/item/storage/belt/utility/full/engi
 	suit = 			/obj/item/clothing/suit/f13/scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
@@ -659,7 +652,7 @@ Scribe
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/gun/energy/laser/pistol=1, \
+		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2 \
 	)
 
@@ -774,8 +767,6 @@ datum/job/bos/f13seniorknight
 	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/flashlight/seclite=1, \
-		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
@@ -790,7 +781,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
-		/obj/item/clothing/mask/gas/welding=1,
+		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=2
 		)
 
@@ -816,6 +807,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
+		/obj/item/clothing/glasses/sunglasses/big=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
 /*
@@ -862,7 +854,6 @@ Knight
 	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
@@ -876,7 +867,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
-		/obj/item/clothing/mask/gas/welding=1,	
+		/obj/item/clothing/mask/gas/welding/bos=1,	
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
@@ -905,6 +896,7 @@ Knight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/glasses/sunglasses=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
@@ -915,7 +907,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
-		/obj/item/clothing/mask/gas/welding=1,		
+		/obj/item/clothing/mask/gas/welding/bos=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/knight=1
@@ -944,6 +936,7 @@ Knight
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
+		/obj/item/clothing/glasses/sunglasses=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 
@@ -984,13 +977,6 @@ Initiate
 	shoes = 		/obj/item/clothing/shoes/combat/swat
 	gloves = 		/obj/item/clothing/gloves/combat
 
-/datum/outfit/job/bos/f13initiate/post_equip(mob/living/carbon/human/H, visualsOnly)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
-
-
 /datum/outfit/loadout/initiatek
 	name = "Knight-Aspirant"
 	belt = 			/obj/item/storage/belt/utility/full/engi
@@ -1013,7 +999,7 @@ Initiate
 	gloves =		/obj/item/clothing/gloves/color/latex
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/gun/energy/laser/crusader=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/lowsurgery=1,
@@ -1068,7 +1054,6 @@ Off-Duty
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/flashlight/seclite=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \

@@ -123,6 +123,13 @@
 	new /obj/item/multitool/advanced/brass(src)
 	new /obj/item/stack/cable_coil(src, 30, "yellow")
 
+/obj/item/storage/belt/utility/bos/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/experimental(src)
+	new /obj/item/stack/cable_coil(src, 30, "yellow")
+	new /obj/item/multitool/advanced/brass(src)
+
 /obj/item/storage/belt/medical
 	name = "medical belt"
 	desc = "Can hold various medical equipment."
@@ -750,7 +757,9 @@
 		/obj/item/ammo_box/c45rev,
 		/obj/item/gun/energy/laser/solar,
 		/obj/item/gun/energy/laser/pistol,
+		/obj/item/gun/energy/laser/crusader,
 		/obj/item/gun/energy/laser/plasma/pistol,
+		/obj/item/gun/energy/plasma/crusader,
 		/obj/item/gun/energy/laser/plasma/glock,
 		/obj/item/gun/energy/laser/plasma/glock/extended,
 		/obj/item/gun/energy/laser/wattz,

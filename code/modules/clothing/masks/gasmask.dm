@@ -45,6 +45,11 @@
 	..()
 	visor_toggling()
 
+// Brotherhood version
+/obj/item/clothing/mask/gas/welding/bos
+	name = "brotherhood of steel welding mask"
+	desc = "A gas mask with built-in welding goggles and a face shield. It bears color pattern of the brotherhood alongside polarizing glass."
+	icon_state = "weldingmaskbos"
 
 // ********************************************************************
 
