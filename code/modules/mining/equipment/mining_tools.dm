@@ -196,6 +196,7 @@
 /obj/item/shovel/trench
 	name = "p81 entrenching tool"
 	desc = "The 'Pattern 2281' Entrenching Tool is a new piece of infantry equipment given in limited quantity to infantry troops. An extremely robust shovel with a serrated edge for chopping wood."
+	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "entrenching_tool"
 	item_state = "trench"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'

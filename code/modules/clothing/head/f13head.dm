@@ -784,8 +784,8 @@
 	icon_state = "foxranger"
 	item_state = "foxranger"
 	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
+	toggle_message = "You take the sniper's veil off."
+	alt_toggle_message = "You put the sniper's veil on."
 	can_toggle = 1
 	toggle_cooldown = 0
 
