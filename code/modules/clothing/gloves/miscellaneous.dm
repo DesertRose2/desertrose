@@ -232,6 +232,11 @@
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 
+/obj/item/clothing/gloves/patrol/insulated
+	name = "insulated patrol ranger gloves"
+	desc = "A pair of ranger's gloves. This pair is protected against electrical shocks."
+	siemens_coefficient = 0
+
 /obj/item/clothing/gloves/modif_patrol
 	name = "modified patrol ranger gloves"
 	desc = "A pair of ranger's gloves. These ones have been enlongated, protecting the elbow as well."

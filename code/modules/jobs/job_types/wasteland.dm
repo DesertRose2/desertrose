@@ -208,7 +208,7 @@ Raider
 			/obj/item/clothing/mask/bandana/skull)
 	head = pick(
 		/obj/item/clothing/head/sombrero,\
-		/obj/item/clothing/head/helmet/f13/raider,\
+		/obj/item/clothing/head/helmet/f13/raider/supafly,\
 		/obj/item/clothing/head/helmet/f13/raider/eyebot,\
 		/obj/item/clothing/head/helmet/f13/raider/arclight,\
 		/obj/item/clothing/head/helmet/f13/raider/blastmaster,\
@@ -246,7 +246,7 @@ Raider
 /datum/outfit/loadout/raider_supafly
 	name = "Supa-fly"
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
-	head = /obj/item/clothing/head/helmet/f13/raider
+	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/mini_uzi=1,
 		/obj/item/ammo_box/magazine/uzim9mm=3,
@@ -383,12 +383,12 @@ Raider
 	access = list()		//we can expand on this and make alterations as people suggest different loadouts
 	minimal_access = list()
 	loadout_options = list(
-	/datum/outfit/loadout/vault_refugee, 
-	/datum/outfit/loadout/salvager, 
-	/datum/outfit/loadout/medic, 
-	/datum/outfit/loadout/merchant, 
-	/datum/outfit/loadout/scavenger, 
-	/datum/outfit/loadout/citizen, 
+	/datum/outfit/loadout/vault_refugee,
+	/datum/outfit/loadout/salvager,
+	/datum/outfit/loadout/medic,
+	/datum/outfit/loadout/merchant,
+	/datum/outfit/loadout/scavenger,
+	/datum/outfit/loadout/citizen,
 	/datum/outfit/loadout/slave)
 
 /datum/outfit/job/wasteland/f13wastelander

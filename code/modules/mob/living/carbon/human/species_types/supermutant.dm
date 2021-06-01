@@ -1,5 +1,6 @@
 /datum/species/smutant
 	name = "Super Mutant"
+	icon_limbs = 'icons/mob/mutie_parts.dmi'
 	id = "smutant"
 	say_mod = "yells"
 	limbs_id = "smutant"

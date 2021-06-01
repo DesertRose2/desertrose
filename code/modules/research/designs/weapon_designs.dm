@@ -622,3 +622,33 @@
 	build_path = /obj/item/advanced_crafting_components/alloys
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/crusader_pistol
+	name = "crusader pistol 10mm conversion kit"
+	desc = "A conversion kit for crusader pistols."
+	id = "crusader_pistol"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000)
+	build_path = /obj/item/modkit/crusader_10mm
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/crusader_rifle
+	name = "crusader pistol 5.56mm conversion kit"
+	desc = "A conversion kit for crusader pistols."
+	id = "crusader_rifle"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000, /datum/material/gold = 2500, /datum/material/silver = 2500)
+	build_path = /obj/item/modkit/crusader_556
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/crusader_laser
+	name = "crusader pistol laser conversion kit"
+	desc = "A conversion kit for crusader pistols."
+	id = "crusader_laser"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000, /datum/material/gold = 2500, /datum/material/silver = 2500)
+	build_path = /obj/item/modkit/crusader_laser
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

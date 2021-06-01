@@ -465,6 +465,17 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 
+/datum/crafting_recipe/syndicate
+	name = "black beret"
+	result = /obj/item/clothing/head/HoS/beret/syndicate
+	reqs = list(/obj/item/stack/sheet/leather = 2,
+				/obj/item/stack/sheet/cloth = 4,
+				/obj/item/stack/crafting/metalparts = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
 /datum/crafting_recipe/cowboyhatrustic
 	name = "rustic leather cowboy hat"
 	result = /obj/item/clothing/head/helmet/f13/brahmincowboyhat

@@ -916,6 +916,11 @@
 	desc = "Increases burst size, attach to a compatible weapon. Cannot be removed."
 	icon_state = "burstcam"
 
+/obj/item/attachments/bullet_speed
+	name = "extended barrel"
+	desc = "Improves bullet speed, attach to a compatible weapon. Cannot be removed."
+	icon_state = "barrel"
+
 /obj/item/attachments/auto_sear
 	name = "auto sear"
 	desc = "A rare gun part that allows certain weapons to have select fire capabilities. Cannot be removed."

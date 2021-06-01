@@ -233,21 +233,17 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 	"NCR Ranger",
 ))
 
-GLOBAL_LIST_INIT(ncr_upper_command_positions, list(
+GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
 ))
 
-GLOBAL_LIST_INIT(ncr_lower_command_positions, list(
+GLOBAL_LIST_INIT(ncr_general_positions, list(
 	"NCR Medical Officer",
 	"NCR Sergeant",
 	"NCR Corporal",
-))
-
-GLOBAL_LIST_INIT(ncr_general_positions, list(
 	"NCR Combat Medic",
 	"NCR Combat Engineer",
-	"NCR Trooper",
 	"NCR Off-Duty"
 ))
 
@@ -261,6 +257,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Combat Engineer",
 	"NCR Trooper",
 	"NCR Rear Echelon",
+	"NCR Recruit",
 	"NCR Off-Duty",
 	"NCR Veteran Ranger",
 	"NCR Ranger"

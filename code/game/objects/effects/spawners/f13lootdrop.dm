@@ -1777,7 +1777,8 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/auto_sear,
+		/obj/item/attachments/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintMid
@@ -1852,7 +1853,8 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/auto_sear,
+		/obj/item/attachments/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/npc_raider
@@ -1882,6 +1884,7 @@
 			/obj/item/storage/box/ration/menu_nine,
 			/obj/item/storage/box/ration/menu_ten,
 			/obj/item/storage/box/ration/menu_eleven,
+			/obj/item/storage/box/ration/menu_twelve
 			)
 
 /obj/effect/spawner/lootdrop/f13/ncr_k_ration
@@ -1892,5 +1895,5 @@
 	loot = list(
 			/obj/item/storage/box/ration/ranger_breakfast,
 			/obj/item/storage/box/ration/ranger_lunch,
-			/obj/item/storage/box/ration/ranger_dinner,
+			/obj/item/storage/box/ration/ranger_dinner
 			)

@@ -290,6 +290,103 @@
 	item_color = "recon"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 40, "fire" = 30, "acid" = 80)
 
+/obj/item/clothing/under/f13/bos/fatigues
+	name = "brotherhood fatigues"
+	desc = "A dry cleaned set of grey fatigues with a brown belt, commonly worn by the off-duty members of the Brotherhood of Steel."
+	icon_state = "bos_fatigues"
+	item_state = "bos_fatigues"
+
+/obj/item/clothing/under/f13/bos/bodysuit
+	name = "brotherhood bodysuit"
+	desc = "A bodysuit worn by members of the Brotherhood of steel."
+	icon_state = "bos_bodysuit"
+	item_state = "bos_bodysuit"
+
+/obj/item/clothing/under/f13/bos/f/bodysuit
+	name = "brotherhood bodysuit"
+	desc = "A bodysuit worn by members of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_f"
+	item_state = "bos_bodysuit_f"
+	body_parts_covered = CHEST
+
+/obj/item/clothing/under/f13/bos/bodysuit/knight
+	name = "brotherhood knight bodysuit"
+	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_navy"
+	item_state = "bos_bodysuit_navy"
+
+/obj/item/clothing/under/f13/bos/f/bodysuit/knight
+	name = "brotherhood knight bodysuit"
+	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_navy_f"
+	item_state = "bos_bodysuit_navy_f"
+
+/obj/item/clothing/under/f13/bos/bodysuit/scribe
+	name = "brotherhood scribe bodysuit"
+	desc = "A bodysuit worn by the Scribes of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_red"
+	item_state = "bos_bodysuit_red"
+
+/obj/item/clothing/under/f13/bos/f/bodysuit/scribe
+	name = "brotherhood scribe bodysuit"
+	desc = "A bodysuit worn by the Scribes of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_red_f"
+	item_state = "bos_bodysuit_red_f"
+
+/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	name = "brotherhood paladin bodysuit"
+	desc = "A bodysuit worn by the Paladins of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_grey"
+	item_state = "bos_bodysuit_grey"
+
+/obj/item/clothing/under/f13/bos/f/bodysuit/paladin
+	name = "brotherhood paladin bodysuit"
+	desc = "A bodysuit worn by the Paladins of the Brotherhood of steel."
+	icon_state = "bos_bodysuit_grey_f"
+	item_state = "bos_bodysuit_grey_f"
+
+/obj/item/clothing/under/f13/bosform_f
+	name = "female initiate service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one has no markings, and looks to be for a feminine person."
+	icon_state = "bosform_f"
+	item_state = "bosform_f"
+	item_color = "bosform_f"
+
+/obj/item/clothing/under/f13/bosform_m
+	name = "male initiate service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one has no markings, and looks to be for a masculine person."
+	icon_state = "bosform_m"
+	item_state = "bosform_m"
+	item_color = "bosform_m"
+
+/obj/item/clothing/under/f13/bosformsilver_f
+	name = "female brotherhood service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a silver chain, and looks to be for a feminine person."
+	icon_state = "bosformsilver_f"
+	item_state = "bosformsilver_f"
+	item_color = "bosformsilver_f"
+
+/obj/item/clothing/under/f13/bosformsilver_m
+	name = "male brotherhood service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a silver chain, and looks to be for a masculine person."
+	icon_state = "bosformsilver_m"
+	item_state = "bosformsilver_m"
+	item_color = "bosformsilver_m"
+
+/obj/item/clothing/under/f13/bosformgold_f
+	name = "female ranking service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a gold chain; denoting authority, and looks to be for a feminine person."
+	icon_state = "bosformgold_f"
+	item_state = "bosformgold_f"
+	item_color = "bosformgold_f"
+
+/obj/item/clothing/under/f13/bosformgold_m
+	name = "male ranking service uniform"
+	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a gold chain; denoting authority, and looks to be for a masculine person."
+	icon_state = "bosformgold_m"
+	item_state = "bosformgold_m"
+	item_color = "bosformgold_m"
+
 //Legion
 
 /obj/item/clothing/under/f13/campfollowermale
@@ -556,6 +653,13 @@
 	item_state = "bl_suit"
 	item_color = "chinese_khan"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
+
+/obj/item/clothing/under/f13/ahp_uniform
+	name = "highway patrol uniform"
+	desc = "An old tan police uniform with tight-fitting breeches and a gold badge with the logo of the 'Arizona State Troopers'."
+	icon_state = "ahp_uniform"
+	item_state = "ahp_uniform"
+	item_color = "ahp_uniform"
 
 //WAYFARER TRIBAL
 /obj/item/clothing/under/f13/tribe
@@ -1081,6 +1185,12 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 
+/obj/item/clothing/under/f13/recon/marine
+	name = "marine wetsuit"
+	desc = "A skin-tight wetsuit designed to keep the user warm when submerged underwater. Designed to work in tandem with marine combat armor."
+	icon_state = "marinesuit"
+	item_state = "marinesuit"
+
 /obj/item/clothing/under/f13/chinese
 	name = "chinese jumpsuit"
 	desc = "An ancient Chinese combat uniform. In use before the war."
@@ -1208,103 +1318,6 @@
 	item_color = "green"
 	resistance_flags = UNACIDABLE
 	body_parts_covered = LEGS
-
-/obj/item/clothing/under/f13/bos/fatigues
-	name = "Brotherhood fatigues"
-	desc = "A dry cleaned set of grey fatigues with a brown belt, commonly worn by the off-duty members of the Brotherhood of Steel."
-	icon_state = "bos_fatigues"
-	item_state = "bos_fatigues"
-
-/obj/item/clothing/under/f13/bos/bodysuit
-	name = "Brotherhood Knight fatigues"
-	desc = "A bodysuit worn by members of the Brotherhood of steel."
-	icon_state = "bos_bodysuit"
-	item_state = "bos_bodysuit"
-
-/obj/item/clothing/under/f13/bos/f/bodysuit
-	name = "Brotherhood bodysuit"
-	desc = "A bodysuit worn by members of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_f"
-	item_state = "bos_bodysuit_f"
-	body_parts_covered = CHEST
-
-/obj/item/clothing/under/f13/bos/bodysuit/knight
-	name = "Brotherhood Knight bodysuit"
-	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_navy"
-	item_state = "bos_bodysuit_navy"
-
-/obj/item/clothing/under/f13/bos/f/bodysuit/knight
-	name = "Brotherhood Knight bodysuit"
-	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_navy_f"
-	item_state = "bos_bodysuit_navy_f"
-
-/obj/item/clothing/under/f13/bos/bodysuit/scribe
-	name = "Brotherhood Scribe bodysuit"
-	desc = "A bodysuit worn by the Scribes of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_red"
-	item_state = "bos_bodysuit_red"
-
-/obj/item/clothing/under/f13/bos/f/bodysuit/scribe
-	name = "Brotherhood Scribe bodysuit"
-	desc = "A bodysuit worn by the Scribes of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_red_f"
-	item_state = "bos_bodysuit_red_f"
-
-/obj/item/clothing/under/f13/bos/bodysuit/paladin
-	name = "Brotherhood Paladin bodysuit"
-	desc = "A bodysuit worn by the Paladins of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_grey"
-	item_state = "bos_bodysuit_grey"
-
-/obj/item/clothing/under/f13/bos/f/bodysuit/paladin
-	name = "Brotherhood Scribe bodysuit"
-	desc = "A bodysuit worn by the Paladins of the Brotherhood of steel."
-	icon_state = "bos_bodysuit_grey_f"
-	item_state = "bos_bodysuit_grey_f"
-
-/obj/item/clothing/under/f13/bosform_f
-	name = "female initiate service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one has no markings, and looks to be for a feminine person."
-	icon_state = "bosform_f"
-	item_state = "bosform_f"
-	item_color = "bosform_f"
-
-/obj/item/clothing/under/f13/bosform_m
-	name = "male initiate service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one has no markings, and looks to be for a masculine person."
-	icon_state = "bosform_m"
-	item_state = "bosform_m"
-	item_color = "bosform_m"
-
-/obj/item/clothing/under/f13/bosformsilver_f
-	name = "female brotherhood service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a silver chain, and looks to be for a feminine person."
-	icon_state = "bosformsilver_f"
-	item_state = "bosformsilver_f"
-	item_color = "bosformsilver_f"
-
-/obj/item/clothing/under/f13/bosformsilver_m
-	name = "male brotherhood service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a silver chain, and looks to be for a masculine person."
-	icon_state = "bosformsilver_m"
-	item_state = "bosformsilver_m"
-	item_color = "bosformsilver_m"
-
-/obj/item/clothing/under/f13/bosformgold_f
-	name = "female ranking service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a gold chain; denoting authority, and looks to be for a feminine person."
-	icon_state = "bosformgold_f"
-	item_state = "bosformgold_f"
-	item_color = "bosformgold_f"
-
-/obj/item/clothing/under/f13/bosformgold_m
-	name = "male ranking service uniform"
-	desc = "A dry-cleaned and fitted formal uniform of the Brotherhood of Steel, for special occasions. This one bears a gold chain; denoting authority, and looks to be for a masculine person."
-	icon_state = "bosformgold_m"
-	item_state = "bosformgold_m"
-	item_color = "bosformgold_m"
 
 /obj/item/clothing/under/f13/atomfaithful
 	name = "faithful attire"
@@ -1442,5 +1455,5 @@
 /obj/item/clothing/under/f13/mutieranger
 	name = "mutant Ranger armour"
 	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
-	icon_state = "mutie_ranger_armour"
-	item_state = "mutie_ranger_armour"
+	icon_state = "mutie_ranger_under"
+	item_state = "mutie_ranger_under"

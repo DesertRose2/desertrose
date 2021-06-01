@@ -268,7 +268,7 @@
 
 /obj/item/toy/crayon/afterattack(atom/target, mob/user, proximity, params)
 	. = ..()
-	if(!proximity || !check_allowed_items(target))
+	if(!proximity || !check_allowed_items(target, target_self = TRUE))
 		return
 	draw_on(target, user, proximity, params)
 
@@ -643,7 +643,8 @@
 			playsound(user.loc, 'sound/effects/spray.ogg', 25, 1, 5)
 
 		var/mob/living/carbon/C = target
-		C.visible_message("<span class='danger'>[user] sprays [src] into the face of [C]!</span>", "<span class='userdanger'>[user] sprays [src] into your face!</span>")
+		if(C != user)
+			C.visible_message("<span class='danger'>[user] sprays [src] into the face of [C]!</span>", "<span class='userdanger'>[user] sprays [src] into your face!</span>")
 
 		if(C.client)
 			C.blur_eyes(3)

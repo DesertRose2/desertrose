@@ -381,8 +381,9 @@
 	weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/energy/laser/scatter/baby
-	name = "multilas carbine"
+	name = "tribeam laser carbine"
 	desc = "A cut down version of the tribeam laser rifle."
+	icon_state = "tricar"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/baby)
 
 /obj/item/gun/energy/laser/plasma
@@ -627,3 +628,33 @@
 	desc = "This Wattz 2000 laser rifle has had its recharging system upgraded and a special recycling chip installed that reduces the drain on the micro fusion cell by 50%."
 	icon_state = "wattz2k_ext"
 	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/extended)
+
+/obj/item/gun/energy/laser/crusader
+	name = "crusader pistol (laser)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently using microfusion cells to fire lasers."
+	icon_state = "crusader"
+	item_state = "crusader_energy"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/crusader)
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
+	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/gun/energy/laser/crusader/update_icon_state()
+	icon_state = "[initial(icon_state)][cell ? "" : "-e"]"
+
+/obj/item/gun/energy/plasma/crusader
+	name ="crusader pistol (plasma)"
+	item_state = "crusader"
+	icon_state = "crusader_energy"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently using microfusion cells to fire plasma."
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/crusader)
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
+	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/gun/energy/plasma/crusader/update_icon_state()
+	icon_state = "[initial(icon_state)][cell ? "" : "-e"]"
