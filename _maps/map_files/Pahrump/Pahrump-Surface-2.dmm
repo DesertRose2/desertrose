@@ -27797,6 +27797,13 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"skj" = (
+/obj/structure/dresser,
+/obj/item/warpaint_bowl{
+	pixel_y = 11
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/village)
 "skD" = (
 /obj/structure/decoration/rag,
 /obj/structure/decoration/rag{
@@ -47644,7 +47651,7 @@ ktB
 qFk
 dEB
 aep
-vYp
+skj
 qFk
 otr
 otr
