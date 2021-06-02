@@ -954,6 +954,12 @@
 	new /obj/item/multitool(src)
 	new /obj/item/stack/cable_coil(src,30,pick("red","yellow","orange"))
 
+/obj/item/storage/belt/military/assault/ncr/crossbelt
+	name = "NCR officer cross-belt"
+	desc = "A polished leather claw belt with cross-strap designed for officers."
+	icon_state = "crossbelt"
+	item_state = "crossbelt"
+
 /obj/item/storage/belt/military/reconbandolier
 	name = "NCR recon bandolier"
 	desc = "A leather bandolier for specialized NCR units."

@@ -62,7 +62,7 @@ Colonel
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr
 	head 		= /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
-	belt        = /obj/item/storage/belt/military/assault/ncr
+	belt        = /obj/item/storage/belt/military/assault/ncr/crossbelt
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	suit_store  = /obj/item/gun/ballistic/automatic/marksman
 	gloves      = /obj/item/clothing/gloves/f13/leather
@@ -130,7 +130,7 @@ Captain
 	head 		= /obj/item/clothing/head/beret/ncr
 	shoes 		= /obj/item/clothing/shoes/f13/military/leather
 	gloves 		= /obj/item/clothing/gloves/f13/leather
-	belt 		= /obj/item/storage/belt/military/assault/ncr
+	belt 		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/m556/rifle/assault=3,
@@ -151,7 +151,7 @@ Captain
 	name = "Pistoleer Officer"
 	head =		/obj/item/clothing/head/f13/ncr_cap
 	gloves =	/obj/item/clothing/gloves/f13/leather
-	belt = 		/obj/item/storage/belt/military/assault/ncr
+	belt = 		/obj/item/storage/belt/military/assault/ncr/crossbelt
 	l_hand =	/obj/item/gun/ballistic/automatic/greasegun
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/greasegun=3,
@@ -187,7 +187,7 @@ Lieutenant
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	suit_store	= /obj/item/gun/ballistic/automatic/service/r82
-	belt		= /obj/item/storage/belt/military/assault/ncr
+	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/ninemil=1, \
@@ -235,7 +235,7 @@ Medical Officer
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
-	belt		= /obj/item/storage/belt/military/assault/ncr
+	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	r_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
 	mask 		= /obj/item/clothing/mask/surgical
 	backpack_contents = list(
