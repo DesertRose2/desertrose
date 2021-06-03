@@ -178,7 +178,7 @@ Centurion
 	head = 			/obj/item/clothing/head/helmet/f13/legion/centurion
 	suit_store = /obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
-		/obj/item/ammo_box/a762/doublestacked=2,
+		/obj/item/ammo_box/magazine/m556/rifle/assault=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1)
 
 /*
@@ -826,7 +826,6 @@ Recruit Legionary
 	mask =			/obj/item/clothing/mask/bandana/legrecruit
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
 		/obj/item/flashlight/lantern=1,
@@ -926,7 +925,6 @@ Venator
 	ears		=	/obj/item/radio/headset/headset_legion
 	r_pocket 	= 	/obj/item/binoculars
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308=3,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legion=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1
