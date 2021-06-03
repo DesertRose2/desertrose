@@ -314,6 +314,7 @@ Head Knight
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/clothing/glasses/meson=1
 		)
 
 /datum/outfit/loadout/capscout
@@ -767,6 +768,7 @@ datum/job/bos/f13seniorknight
 	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
@@ -779,6 +781,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,
@@ -867,6 +870,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,	
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
@@ -907,6 +911,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
