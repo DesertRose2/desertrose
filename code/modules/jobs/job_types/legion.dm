@@ -3,6 +3,7 @@
 /datum/job/CaesarsLegion
 	department_flag = LEGION
 	selection_color = "#ffeeee"
+	faction = "Legion"
 
 	forbids = "The Legion forbids: Ghouls joining the Legion. Women in armed roles. Chems and drugs such as jet or alcohol. Reliance on technology. Lethally harming any servants of Caesar without proper reason."
 	enforces = "The Legion expects: Obeying orders of superiors. A roman style name. Wearing the uniform, unless acting as a nonlethal infiltrator."
@@ -105,7 +106,6 @@ Centurion
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	title = "Legion Optio Centuriae"
 	flag = F13CENTURION
-	faction = "Legion"
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
@@ -133,7 +133,7 @@ Centurion
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	name = "Legion Centurion"
+	name = "Legion Optio Centuriae"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
 	mask =			/obj/item/clothing/mask/bandana/legcenturion
@@ -178,7 +178,7 @@ Centurion
 	head = 			/obj/item/clothing/head/helmet/f13/legion/centurion
 	suit_store = /obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
-		/obj/item/ammo_box/a762/doublestacked=2,
+		/obj/item/ammo_box/magazine/m556/rifle/assault=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1)
 
 /*
@@ -188,7 +188,6 @@ Orator
 /datum/job/CaesarsLegion/Legionnaire/f13orator
 	title = "Legion Orator"
 	flag = F13ORATOR
-	faction = "Legion"
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are the the resonator of Caesar's better wills; a Legionnaire who has, perhaps through injury or advanced age, proven himself unable to fight effectively any longer. Instead of facing \"retirement\" in the Legion, one of your superiors took note of your studies and way with words, and you have been made the face and voice of the Conturbernae."
@@ -224,7 +223,6 @@ Priestess of Mars
 /datum/job/CaesarsLegion/f13priestess
 	title = "Priestess of Mars"
 	flag = F13PRIESTESS
-	faction = "Legion"
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
@@ -345,7 +343,6 @@ Decanii
 /datum/job/CaesarsLegion/Legionnaire/f13decanvet
 	title = "Legion Veteran Decanus"
 	flag = F13DECANVET
-	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Veteran Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
@@ -390,7 +387,6 @@ Decanii
 /datum/job/CaesarsLegion/Legionnaire/f13decan
 	title = "Legion Prime Decanus"
 	flag = F13DECAN
-	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Prime Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
@@ -466,7 +462,6 @@ Decanii
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
-	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Recruit Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
@@ -540,7 +535,6 @@ Vexillarius
 /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
-	faction = "Legion"
 	total_positions = 0
 	spawn_positions = 0
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
@@ -603,7 +597,6 @@ Slavemaster
 datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
-	faction = "Legion"
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
@@ -645,7 +638,6 @@ Veteran Legionary
 /datum/job/CaesarsLegion/Legionnaire/f13vetlegionary
 	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
-	faction = "Legion"
 	total_positions = 3
 	spawn_positions = 3
 	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are a hardened warrior, and have been waging war with the Legion for many years."
@@ -733,7 +725,6 @@ Prime Legionairy
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	title = "Prime Legionary"
 	flag = F13LEGIONARY
-	faction = "Legion"
 	total_positions = 3
 	spawn_positions = 3
 	description = "You answer to the Decani and the Centurion, as well as Veterans above you. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
@@ -804,7 +795,6 @@ Recruit Legionary
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
-	faction = "Legion"
 	total_positions = 3
 	spawn_positions = 3
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
@@ -836,7 +826,6 @@ Recruit Legionary
 	mask =			/obj/item/clothing/mask/bandana/legrecruit
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
 		/obj/item/flashlight/lantern=1,
@@ -874,12 +863,12 @@ Venator
 /datum/job/CaesarsLegion/Legionnaire/f13venator
 	title = "Legion Venator"
 	flag = F13VENATOR
-	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Venator -- the Hunter. With your powerful rifle and your many years of experience, you are a formidable killing machine, capable of taking down even the most formidable targets. Note that you are not a rank-and-file legionary, and you should not be operating as such -- your job is special operations, not fighting alongside the hordes of the Legion."
 	supervisors = "the Centurion"
 	selection_color = "#ffdddd"
+	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_VENATOR
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
 	loadout_options = list(
@@ -936,7 +925,6 @@ Venator
 	ears		=	/obj/item/radio/headset/headset_legion
 	r_pocket 	= 	/obj/item/binoculars
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308=3,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legion=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1
@@ -949,7 +937,6 @@ Explorer
 /datum/job/CaesarsLegion/Legionnaire/f13explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
-	faction = "Legion"
 	total_positions = 2
 	spawn_positions = 2
 	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
@@ -991,7 +978,6 @@ Auxilia
 /datum/job/CaesarsLegion/f13auxilia
 	title = "Auxilia"
 	flag = F13AUXILIA
-	faction = "Legion"
 	head_announce = list("Security")
 	total_positions = 3
 	spawn_positions = 3
@@ -1080,7 +1066,6 @@ Camp Follower
 /datum/job/CaesarsLegion/f13campfollower
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
-	faction = "Legion"
 	total_positions = 4
 	spawn_positions = 4
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
@@ -1156,7 +1141,6 @@ Slave
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	faction = "Legion"
 	total_positions = 2
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
