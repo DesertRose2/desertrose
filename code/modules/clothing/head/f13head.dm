@@ -138,7 +138,7 @@
 
 /obj/item/clothing/head/helmet/f13/ahp_helmet
 	name = "highway patrol helmet"
-	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
+	desc = "(IV) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
 	icon_state = "ahp_helmet"
 	item_state = "ahp_helmet"
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
