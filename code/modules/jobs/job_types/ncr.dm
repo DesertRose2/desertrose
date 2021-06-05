@@ -613,11 +613,20 @@ Rear Echelon
 	glasses = 		null
 	belt = 			/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
+<<<<<<< Updated upstream
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
 		/obj/item/ammo_box/magazine/m556/rifle=1
 		)
+=======
+		/obj/item/metaldetector 1, \
+		/obj/item/shovel/spade=1, \
+		/obj/item/gun/ballistic/shotgun/hunting=1, \
+		/obj/item/storage/fancy/ammobox/lethalshot=2, \
+		/obj/item/weldingtool/largetank)
+		
+>>>>>>> Stashed changes
 
 /*
 Off-Duty
