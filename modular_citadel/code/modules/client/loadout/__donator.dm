@@ -258,6 +258,7 @@
 	ckeywhitelist = list("shoi87",
 						"someonewithapen",
 						"asterixcodix",
+						"thegreatcoward",
 						"themojavewanderer")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
