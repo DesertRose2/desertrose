@@ -49,7 +49,10 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Head Paladin",
 	"Head Knight",
 
-	"Legion Centurion",
+	"NCR Lieutenant",
+	"NCR Sergeant First Class",
+
+	"Legion Optio Centuriae",
 	"Legion Venator",
 
 	"Overseer",
@@ -84,7 +87,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Scribe",
 "BoS Off-Duty",
 
-"Legion Centurion",
+"Legion Optio Centuriae",
 "Legion Venator",
 "Legion Veteran Decanus",
 "Veteran Legionary",
@@ -208,7 +211,7 @@ GLOBAL_LIST_INIT(den_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
-	"Legion Centurion",
+	"Legion Optio Centuriae",
 	"Legion Venator"
 ))
 
@@ -233,7 +236,7 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 	"NCR Ranger",
 ))
 
-GLOBAL_LIST_INIT(ncr_leadership_positions, list(
+GLOBAL_LIST_INIT(ncr_command_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
 ))
@@ -248,9 +251,7 @@ GLOBAL_LIST_INIT(ncr_general_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
-	"NCR Lieutenant",
 	"NCR Medical Officer",
-	"NCR Sergeant First Class",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
@@ -259,7 +260,6 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Rear Echelon",
 	"NCR Recruit",
 	"NCR Off-Duty",
-	"NCR Veteran Ranger",
 	"NCR Ranger"
 ))
 
@@ -336,8 +336,8 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
-
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Veteran Ranger")),
+	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Optio Centuriae","Legion Venator"))
 
 ))
 
