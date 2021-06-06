@@ -256,7 +256,8 @@
 	path = /obj/item/storage/belt/holster/ranger357
 	ckeywhitelist = list("shoi87",
 						"someonewithapen",
-						"asterixcodix")
+						"asterixcodix",
+						"themojavewanderer")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -322,7 +323,8 @@
 						"melarinn",
 						"someonewithapen",
 						"muhsollini",
-						"lynuahsororitas")
+						"lynuahsororitas",
+						"themojavewanderer")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
