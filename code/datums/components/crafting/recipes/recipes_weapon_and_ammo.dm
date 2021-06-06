@@ -216,8 +216,9 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
-/datum/crafting_recipe/plasmamusket //lasmusket ammo
-	name = "Plasma Musket"
+//Plasma musket
+/datum/crafting_recipe/plasmamusket
+	name = "Plasma musket"
 	result = /obj/item/gun/ballistic/shotgun/plasmacaster
 	reqs = list(/obj/item/gun/ballistic/shotgun/lasmusket = 1,
 				/obj/item/advanced_crafting_components/conductors = 1)
@@ -226,8 +227,8 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
-/datum/crafting_recipe/batteryboxplasma //lasmusket ammo
-	name = "Plasma Musket battery pack"
+/datum/crafting_recipe/batteryboxplasma //plasma musket ammo
+	name = "Plasma canister box (musket)"
 	result = /obj/item/ammo_box/plasmamusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
 				/obj/item/stack/sheet/glass = 6,
@@ -237,19 +238,9 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
-/datum/crafting_recipe/batterybox //lasmusket ammo
-	name = "Laser Musket battery pack"
-	result = /obj/item/ammo_box/lasmusket
-	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
-				/obj/item/stack/sheet/glass = 6,
-				/obj/item/stack/sheet/metal = 6)
-	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
-	time = 20
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-
+//Laser musket
 /datum/crafting_recipe/lasmusket
-	name = "Laser Musket"
+	name = "Laser musket"
 	result = /obj/item/gun/ballistic/shotgun/lasmusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
 	/obj/item/gun/ballistic/revolver/pipe_rifle = 1,
@@ -257,6 +248,17 @@
 	/obj/item/stack/cable_coil = 3)
 	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
 	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/batterybox //lasmusket ammo
+	name = "Laser musket battery pack"
+	result = /obj/item/ammo_box/lasmusket
+	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
+				/obj/item/stack/sheet/glass = 6,
+				/obj/item/stack/sheet/metal = 6)
+	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
+	time = 20
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
