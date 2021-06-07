@@ -49,17 +49,19 @@
 	projectile_type = /obj/item/projectile/bullet/F13/musketball
 
 /obj/item/ammo_casing/caseless/lasermusket
-	name = "Battery"
-	desc = "A single use battery for the lasmusket"
+	name = "Laser musket battery"
+	desc = "A single use battery for the laser musket"
 	caliber = "lasmusket"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "lasmusketbat"
 	projectile_type = /obj/item/projectile/beam/laser/musket
 	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/energy
 
 /obj/item/ammo_casing/caseless/plasmacaster
-	name = "Battery"
-	desc = "A single use battery for the plasma caster"
+	name = "Plasma canister"
+	desc = "A single use chemical canister for the plasma caster"
 	caliber = "plasmacaster"
-	icon_state = "lasmusketbat"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "plasmacan"
 	projectile_type = /obj/item/projectile/f13plasma/plasmacaster
 	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/energy
