@@ -882,7 +882,7 @@ Venator
 	name = "Standard"
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/shotgunrevolver,
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
 		/obj/item/ammo_box/tube/c4570=3
 		)
 
@@ -891,17 +891,17 @@ Venator
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
-		/obj/item/gun/ballistic/revolver/shotgunrevolver,
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
 		)
 
 /datum/outfit/loadout/venatorcqb
 	name = "Close Quarters"
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/hunting,
+		/obj/item/gun/ballistic/revolver/hunting=1,
 		/obj/item/storage/fancy/ammobox/lethalshot = 2,
 		/obj/item/storage/fancy/ammobox/slugshot = 1,
-		/obj/item/grenade/smokebomb
+		/obj/item/grenade/smokebomb=1
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1110,7 +1110,7 @@ Camp Follower
 		/obj/item/cultivator=1,
 		/obj/item/shovel/spade=1,
 		/obj/item/storage/fancy/egg_box=1,
-		/obj/item/clothing/under/f13/campfollowerfemale
+		/obj/item/clothing/under/f13/campfollowerfemale=1
 	)
 
 /datum/outfit/loadout/campfollowerhealer
@@ -1121,7 +1121,7 @@ Camp Follower
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
 		/obj/item/smelling_salts/crafted=1,
-		/obj/item/clothing/under/f13/campfollowerfemale,
+		/obj/item/clothing/under/f13/campfollowerfemale=1,
 		/obj/item/book/granter/trait/mars_teachings=1
 	)
 

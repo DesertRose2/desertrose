@@ -121,8 +121,8 @@ Captain
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/binoculars=1, \
-		/obj/item/storage/bag/money/small/ncr, \
-		/obj/item/clothing/mask/ncr_facewrap)
+		/obj/item/storage/bag/money/small/ncr=1, \
+		/obj/item/clothing/mask/ncr_facewrap=1)
 
 /datum/outfit/loadout/captline
 	name = "Line Officer"
@@ -196,7 +196,8 @@ Lieutenant
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/ammo_box/magazine/m9mm=3, \
 		/obj/item/binoculars=1, \
-		/obj/item/storage/bag/money/small/ncr, \
+		/obj/item/storage/bag/money/small/ncr=1, \
+		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -247,7 +248,7 @@ Medical Officer
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/ammo_box/a556/stripper=3, \
 		/obj/item/binoculars=1, \
-		/obj/item/storage/bag/money/small/ncr, \
+		/obj/item/storage/bag/money/small/ncr=1, \
 		/obj/item/storage/firstaid/regular=1)
 
 /datum/outfit/job/ncr/f13medicalofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -293,7 +294,7 @@ Sergeant First Class
 		/obj/item/gun/ballistic/automatic/pistol/ninemil=1, \
 		/obj/item/ammo_box/magazine/m9mm=3, \
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/storage/bag/money/small/ncr, \
+		/obj/item/storage/bag/money/small/ncr=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3, \
 		/obj/item/binoculars=1)
@@ -331,7 +332,7 @@ Sergeant
 		/obj/item/gun/ballistic/automatic/pistol/ninemil=1, \
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/ammo_box/magazine/m9mm=3, \
-		/obj/item/storage/bag/money/small/ncrofficers, \
+		/obj/item/storage/bag/money/small/ncrofficers=1, \
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3, \
 		/obj/item/binoculars=1)
 
@@ -500,7 +501,7 @@ Trooper
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/storage/bag/money/small/ncrenlisted)
+		/obj/item/storage/bag/money/small/ncrenlisted=1)
 
 //Supply and base management
 /datum/outfit/loadout/troopreg
@@ -509,7 +510,7 @@ Trooper
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service=1,
-		/obj/item/ammo_box/magazine/m556/rifle=6)
+		/obj/item/ammo_box/magazine/m556/rifle=3)
 
 //Scout successors
 /datum/outfit/loadout/trooplight
@@ -643,8 +644,8 @@ Off-Duty
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/storage/bag/money/small/ncrenlisted, \
-		/obj/item/clothing/mask/ncr_facewrap)
+		/obj/item/storage/bag/money/small/ncrenlisted=1, \
+		/obj/item/clothing/mask/ncr_facewrap=1)
 
 /*
 Veteran Ranger
@@ -697,7 +698,7 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/kitchen/knife/bowie=1, \
 		/obj/item/storage/survivalkit_aid_adv=1, \
-		/obj/item/storage/bag/money/small/ncr)
+		/obj/item/storage/bag/money/small/ncr=1)
 
 /datum/outfit/loadout/vrclassic
 	name = "Classic Veteran Ranger"
@@ -741,7 +742,8 @@ Veteran Ranger
 	/datum/outfit/loadout/rangertrail,
 	/datum/outfit/loadout/rangerpatrol,
 	/datum/outfit/loadout/rangerpatrolcqb,
-	/datum/outfit/loadout/rangermedic
+	/datum/outfit/loadout/rangermedic,
+	/datum/outfit/loadout/rangerengineer
 	)
 
 /datum/outfit/job/ncr/f13ranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

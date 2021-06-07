@@ -295,12 +295,14 @@
 	desc = "A dry cleaned set of grey fatigues with a brown belt, commonly worn by the off-duty members of the Brotherhood of Steel."
 	icon_state = "bos_fatigues"
 	item_state = "bos_fatigues"
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/bodysuit
 	name = "brotherhood bodysuit"
 	desc = "A bodysuit worn by members of the Brotherhood of steel."
 	icon_state = "bos_bodysuit"
 	item_state = "bos_bodysuit"
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/f/bodysuit
 	name = "brotherhood bodysuit"
@@ -308,13 +310,14 @@
 	icon_state = "bos_bodysuit_f"
 	item_state = "bos_bodysuit_f"
 	body_parts_covered = CHEST
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/bodysuit/knight
 	name = "brotherhood knight bodysuit"
 	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
 	icon_state = "bos_bodysuit_navy"
 	item_state = "bos_bodysuit_navy"
-
+	
 /obj/item/clothing/under/f13/bos/f/bodysuit/knight
 	name = "brotherhood knight bodysuit"
 	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
