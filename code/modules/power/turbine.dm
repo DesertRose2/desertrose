@@ -132,9 +132,7 @@
 
 	// It's a simplified version taking only 1/10 of the moles from the turf nearby. It should be later changed into a better version
 
-	var/transfer_moles = environment.total_moles()/10
-	var/datum/gas_mixture/removed = inturf.remove_air(transfer_moles)
-	gas_contained.merge(removed)
+	inturf.transfer_air_ratio(gas_contained, 0.1)
 
 // RPM function to include compression friction - be advised that too low/high of a compfriction value can make things screwy
 
@@ -221,8 +219,7 @@
 
 	if(compressor.gas_contained.total_moles()>0)
 		var/oamount = min(compressor.gas_contained.total_moles(), (compressor.rpm+100)/35000*compressor.capacity)
-		var/datum/gas_mixture/removed = compressor.gas_contained.remove(oamount)
-		outturf.assume_air(removed)
+		outturf.assume_air_moles(compressor.gas_contained, oamount)
 
 // If it works, put an overlay that it works!
 

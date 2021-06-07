@@ -150,32 +150,17 @@
 	var/datum/gas_mixture/environment = tile.return_air()
 	var/datum/gas_mixture/air_contents = airs[1]
 
-	if(air_contents.return_pressure() >= 50*ONE_ATMOSPHERE)
+	if(air_contents.return_pressure() >= 50*ONE_ATMOSPHERE || !islist(filter_types))
 		return FALSE
 
 	if(scrubbing & SCRUBBING)
-		var/transfer_moles = min(1, volume_rate/environment.return_volume())*environment.total_moles()
+		environment.scrub_into(air_contents, volume_rate/environment.return_volume(), filter_types)
 
-		//Take a gas sample
-		var/datum/gas_mixture/removed = tile.remove_air(transfer_moles)
-
-		//Nothing left to remove from the tile
-		if(isnull(removed))
-			return FALSE
-
-		removed.scrub_into(air_contents, filter_types)
-
-		//Remix the resulting gases
-		tile.assume_air(removed)
 		tile.air_update_turf()
 
 	else //Just siphoning all air
 
-		var/transfer_moles = environment.total_moles()*(volume_rate/environment.return_volume())
-
-		var/datum/gas_mixture/removed = tile.remove_air(transfer_moles)
-
-		air_contents.merge(removed)
+		environment.transfer_ratio_to(air_contents, volume_rate/environment.return_volume())
 		tile.air_update_turf()
 
 	update_parents()
