@@ -267,7 +267,8 @@
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger10mm
 	ckeywhitelist = list("hawkwestheimer",
-						 "theneworleans")
+						 "theneworleans",
+						 "ollieoxen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -329,7 +330,8 @@
 						"lynuahsororitas",
 						"themojavewanderer",
 						"leebic",
-						"theneworleans")
+						"theneworleans",
+						"ollieoxen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
