@@ -941,7 +941,6 @@
 	Loot = list(/obj/item/stack/crafting/metalparts/five,
 				/obj/item/stack/ore/blackpowder/two,
 				/obj/item/stack/crafting/electronicparts/three,
-				/obj/item/stack/ore/lead/,
 				/obj/item/stack/sheet/metal/ten,
 				/obj/item/stack/sheet/cloth/five,
 				/obj/item/stack/sheet/leather/five,
