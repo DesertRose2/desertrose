@@ -400,7 +400,7 @@
 	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	name = "Brotherhood T-45d power armor"
+	name = "brotherhood T-45d power armor"
 	desc = "(VIII) A set of T-45d power armor put into use by the Brotherhood of Steel."
 	icon_state = "t45dbos"
 	item_state = "t45dbos"
@@ -434,7 +434,7 @@
 	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
-	name = "Brotherhood T-51b power armor"
+	name = "brotherhood T-51b power armor"
 	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
 	icon_state = "t51bbos"
 	item_state = "t51bbos"
@@ -479,7 +479,7 @@
 	var/hit_reflect_chance = 20
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/bos
-	name = "Brotherhood T-60 power armor"
+	name = "brotherhood T-60 power armor"
 	desc = "(X) A set of T-60 power armor put into use by the Brotherhood of Steel."
 	icon_state = "t60bos"
 	item_state = "t60bos"

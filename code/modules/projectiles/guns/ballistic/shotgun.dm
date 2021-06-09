@@ -671,11 +671,13 @@
 	suppressor_y_offset = 30
 
 /obj/item/gun/ballistic/shotgun/lasmusket
-	name = "Laser Musket"
+	name = "Laser musket"
 	desc = "In the wasteland, one must make do. And making do is what the creator of this weapon does. Made from metal scraps, electronic parts. an old rifle stock and a Nuka Cola bottle full of dreams, the Laser Musket is sure to stop anything in their tracks and make those raiders think twice."
-	icon_state = "las_musket"
-	item_state = "las_musket"
-	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	icon_state = "lasmusket"
+	item_state = "lasmusket"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lasmusket
 	//nocase = TRUE
 	var/bolt_open = FALSE
@@ -696,11 +698,13 @@
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
 /obj/item/gun/ballistic/shotgun/plasmacaster
-	name = "Plasma Musket"
-	desc = "An experimental weapon..."
-	icon_state = "las_musket"
-	item_state = "las_musket"
-	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	name = "Plasma musket"
+	desc = "For those who like using scavenged high tech components duct-taped to old gun parts, complete with a recharge handle stolen from a coffee grinder."
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	icon_state = "plasmamusket"
+	item_state = "plasmamusket"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/plasmacaster
 	var/bolt_open = FALSE
 	can_bayonet = TRUE
@@ -708,13 +712,13 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 23
 	knife_y_offset = 21
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	isenergy = TRUE
 	can_scope = TRUE
 	scope_state = "lasmusket_scope"
 	scope_x_offset = 9
 	scope_y_offset = 20
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	isenergy = TRUE
 	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'

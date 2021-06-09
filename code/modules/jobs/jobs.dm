@@ -236,7 +236,7 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 	"NCR Ranger",
 ))
 
-GLOBAL_LIST_INIT(ncr_command_positions, list(
+GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
 ))

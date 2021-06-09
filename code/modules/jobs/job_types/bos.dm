@@ -39,6 +39,12 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmetmk2)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45b)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45d)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort51b)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort60)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
+
 /*
 Elder
 */
