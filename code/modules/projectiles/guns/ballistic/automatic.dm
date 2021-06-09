@@ -878,7 +878,7 @@
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_HEAVY
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
@@ -889,6 +889,12 @@
 	semi_auto = TRUE
 	can_automatic = FALSE
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+
+/obj/item/gun/ballistic/automatic/m1garand/ncr
+	name = "Pawolski's Retribution"
+	desc = "'I am your rifle, you are on guard duty.'"
+	icon_state = "pawolski"
+	extra_damage = 5
 
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
