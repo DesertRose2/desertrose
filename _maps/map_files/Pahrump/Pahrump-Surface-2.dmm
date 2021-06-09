@@ -11945,6 +11945,9 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"hRa" = (
+/turf/open/chasm,
+/area/f13/wasteland)
 "hRl" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13/wood,
@@ -57237,7 +57240,7 @@ ehN
 ehN
 jni
 ehN
-dmL
+hRa
 sgz
 sgz
 twq
