@@ -96,6 +96,7 @@
 #define CAT_SANDWICH	"Sandwiches"
 #define CAT_SOUP	"Soups"
 #define CAT_SPAGHETTI	"Spaghettis"
+#define CAT_WASTEFOOD "Wastefood"
 #define CAT_ICE	"Frozen"
 #define CAT_MEDICAL "Medical"
 #define CAT_BOTTLE "Bottling"
