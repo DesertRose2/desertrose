@@ -317,7 +317,7 @@
 	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
 	icon_state = "bos_bodysuit_navy"
 	item_state = "bos_bodysuit_navy"
-	
+
 /obj/item/clothing/under/f13/bos/f/bodysuit/knight
 	name = "brotherhood knight bodysuit"
 	desc = "A bodysuit worn by the Knights of the Brotherhood of steel."
@@ -1434,6 +1434,18 @@
 	desc = "A pair of worn buckskin trousers held up by a heavy pistol belt. The attire is synonymous with the colors of the criminal Marlow gang."
 	icon_state = "masonduds"
 	item_state = "masonduds"
+
+/obj/item/clothing/under/f13/masonduds
+	name = "vagabond's gang attire"
+	desc = "A pair of worn buckskin trousers held up by a heavy pistol belt. The attire is synonymous with the colors of the criminal Marlow gang."
+	icon_state = "masonduds"
+	item_state = "masonduds"
+
+/obj/item/clothing/under/f13/schlimmsuit
+	name = "foreign gentleman's attire"
+	desc = "A red paisley vest and silk cravat paired with beige slacks. These clothes are strangely antiquated for their time place."
+	icon_state = "schlimmsuit"
+	item_state = "schlimmsuit"
 
 //Super Mutants
 

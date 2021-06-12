@@ -869,6 +869,25 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/schlimmcoat
+	name = "foreign frock coat"
+	icon_state = "schlimmcoat"
+	item_state = "schlimmcoat"
+	desc = "(II) A fine-tailored crimson frock coat, reaching down to the knee. This antiquated attire is both strange and out of place."
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/talon
+	name = "talon company armour"
+	desc = "(IV) A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, with the right pauldron removed for ease with shouldering rifles."
+	icon_state = "talon"
+	item_state = "talon"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/talon/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
