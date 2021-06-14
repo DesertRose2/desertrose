@@ -14,7 +14,7 @@
 	var/expected_price = 0
 	var/list/prize_list = list()  //if you add something to this, please, for the love of god, sort it by price/type. use tabs and not spaces.
 
-	var/list/goods_list = list( /obj/item/stack/ore/diamond = 50,
+	var/list/goods_list = list( /obj/item/stack/ore/diamond = 25,
 								/obj/item/stack/ore/gold = 7,
 								/obj/item/stack/ore/silver = 2,
 								/obj/item/stack/ore/iron = 1,
@@ -54,7 +54,7 @@
 	dat += "Iron ore : 1.5 caps<br>"
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
-	dat += "Diamond : 50 caps<br>"
+	dat += "Diamond : 25 caps<br>"
 	dat += "Leather : 5 caps<br>"
 	dat += "Jet/Psycho/MedX : 5-15 caps<br>"
 	dat += "Inventions : 25 caps"
