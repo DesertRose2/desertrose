@@ -54,7 +54,7 @@
 	dat += "Iron ore : 1.5 caps<br>"
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
-	dat += "Diamond : 25 caps<br>"
+	dat += "Diamond : 50 caps<br>"
 	dat += "Leather : 5 caps<br>"
 	dat += "Jet/Psycho/MedX : 5-15 caps<br>"
 	dat += "Inventions : 25 caps"
