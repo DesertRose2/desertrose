@@ -368,15 +368,15 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
-	name = "NCR 3rd Scout veteran combat armor"
-	desc = "(VI) A specialized variant of combat armor issued to veteran members of the 3rd Scout Battalion."
+	name = "NCR light infantry veteran combat armor"
+	desc = "(VI) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer
-	name = "(VII) NCR 3rd Scout officer combat armor"
+	name = "(VII) NCR light infantry officer combat armor"
+	desc = "A specialized variant of the standard NCR armor given to light infantrymen officers."
 	icon_state = "scout_armor_lt"
 	item_state = "scout_armor_lt"
-	desc = "A specialized variant of combat armor issued to officers of the 3rd Scout Battalion."
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
