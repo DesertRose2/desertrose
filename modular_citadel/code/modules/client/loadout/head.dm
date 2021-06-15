@@ -30,10 +30,6 @@
 /datum/gear/head/ushanka
 	path = /obj/item/clothing/head/ushanka
 
-/datum/gear/head/slime
-	name = "Slime hat"
-	path = /obj/item/clothing/head/collectable/slime
-
 /datum/gear/head/fedora
 	name = "Fedora"
 	path = /obj/item/clothing/head/fedora
@@ -225,7 +221,3 @@ datum/gear/head/steelpot_patriot
 /datum/gear/head/widered
 	name = "Wide red hat"
 	path = /obj/item/clothing/head/widered
-
-/datum/gear/head/kabuto
-	name = "Kabuto helmet"
-	path = /obj/item/clothing/head/kabuto

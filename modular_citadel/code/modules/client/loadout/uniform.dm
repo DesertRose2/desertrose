@@ -218,10 +218,6 @@
 	name = "White suit"
 	path = /obj/item/clothing/under/suit/white
 
-/datum/gear/uniform/assistantformal
-	name = "Assistant's formal uniform"
-	path = /obj/item/clothing/under/misc/assistantformal
-
 /datum/gear/uniform/maidcostume
 	name = "Maid costume"
 	path = /obj/item/clothing/under/costume/maid
