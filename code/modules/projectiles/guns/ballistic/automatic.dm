@@ -479,7 +479,10 @@
 /obj/item/gun/ballistic/automatic/cg45
 	name = "carl gustaf 10mm"
 	desc = "Post-war submachine gun made in Flagstaff workshops based on a simple old design. Chambered in 10mm."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "cg45"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -629,7 +632,7 @@
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4
+	fire_delay = 2
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_bayonet = TRUE
@@ -655,7 +658,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 15
 	extra_damage = -4
-	fire_delay = 4
+	fire_delay = 2
 	suppressor_x_offset = 26
 	suppressor_y_offset = 28
 
@@ -681,16 +684,20 @@
 	item_state = "R84"
 	//automatic = 1
 	spread = 3
-	burst_size = 2
-	fire_delay = 3
+	burst_size = 1
 	automatic_burst_overlay = TRUE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-	semi_auto = FALSE
+	semi_auto = TRUE
 	burst_shot_delay = 2.2 //Was 2 before.
 	can_suppress = TRUE
+	can_automatic = TRUE
+	can_scope = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 28
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 5
+	scope_y_offset = 13
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -700,7 +707,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 4
+	fire_delay = 5
 	can_attachments = TRUE
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
@@ -881,10 +888,10 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	fire_delay = 10
 	burst_size = 1
-	//projectile_speed = 0
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
+	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
 
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
@@ -989,45 +996,32 @@
 	desc = "A DKS 501, chambered in .308 Winchester. This one has a gold trim and the words 'Old Cassius' engraved into the stock."
 	icon_state = "gold_sniper"
 	item_state = "gold_sniper"
+ 
 
-
-
+//Auto-pipe rifle. Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe
-	name = "\improper auto pipe rifle"
-	desc = "An improvised rifle improved with automatic capability, highly innacurate and slow to fire"
-	icon_state = "auto_pipe_rifle"
-	item_state = "improvshotgun"
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/autopipe
-	fire_sound = 'sound/weapons/Gunshot.ogg'
-	can_suppress = FALSE
+	name = "Auto pipe rifle (.357)"
+	desc = "Crude automatic weapon, no safety, overheats almost instantly, but what do you expect from pipes and duct tape?"
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon_state = "autopipe"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	item_state = "autopipe"
 	burst_size = 4
 	fire_delay = 30
 	burst_shot_delay = 3
-	sawn_desc = "An improvised rifle improved with automatic capability, highly innacurate and slow to fire. This one has been sawn off"
-	//automatic = 1
 	spread = 24
-
-/obj/item/gun/ballistic/automatic/autopipe/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			burst_size = 4
-			spread = 24
-			fire_delay = 25
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(1)
-			select = 0
-			burst_size = 1
-			spread = 5
-			fire_delay = 8
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	/*slot_flags = ITEM_SLOT_BACK   sprite won't show up for some reason */
+	mag_type = /obj/item/ammo_box/magazine/autopipe
+	fire_sound = 'sound/f13weapons/357magnum.ogg'
+	can_suppress = FALSE
+	can_bayonet = TRUE
+	bayonet_state = "lasmusket"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	semi_auto = FALSE
 
 /obj/item/gun/ballistic/automatic/shotgun/riot
 	name = "breacher shotgun" //name changed to distinguish from /obj/item/gun/ballistic/shotgun/riot
@@ -1316,6 +1310,8 @@
 	zoom_out_amt = 13
 	can_attachments = TRUE
 	can_scope = FALSE
+	extra_damage = 1.2
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
 /obj/item/gun/ballistic/automatic/lsw
 	name = "light support weapon"
@@ -1416,3 +1412,95 @@
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+
+/obj/item/gun/ballistic/automatic/m2a1
+	name = "Browning M2A1"
+	desc = "An old pre-war heavy machine gun used in service by the US Military around the time of the war."
+	icon_state = "M38"
+	item_state = "M38"
+	slot_flags = 0
+	//automatic = 1
+	mag_type = /obj/item/ammo_box/magazine/mm50
+	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
+	can_suppress = FALSE
+	burst_size = 1
+	fire_delay = 3
+	slowdown = 1
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	spread = 20
+	var/cover_open = FALSE
+
+/obj/item/gun/ballistic/automatic/m2a1/update_icon()
+	icon_state = "m2a1[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
+	item_state = "m2a1[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
+
+/obj/item/gun/ballistic/automatic/m2a1/examine(mob/user)
+	. = ..()
+	if(cover_open && magazine)
+		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
+
+/obj/item/gun/ballistic/automatic/m2a1/attack_self(mob/user)
+	cover_open = !cover_open
+	to_chat(user, "<span class='notice'>You [cover_open ? "open" : "close"] [src]'s cover.</span>")
+	if(cover_open)
+		playsound(user, 'sound/weapons/sawopen.ogg', 60, 1)
+	else
+		playsound(user, 'sound/weapons/sawclose.ogg', 60, 1)
+	update_icon()
+
+/obj/item/gun/ballistic/automatic/m2a1/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
+	if(cover_open)
+		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
+	else
+		. = ..()
+		update_icon()
+
+/obj/item/gun/ballistic/automatic/m2a1/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
+	if(loc != user)
+		..()
+		return	//let them pick it up
+	if(!cover_open || (cover_open && !magazine))
+		..()
+	else if(cover_open && magazine)
+		//drop the mag
+		magazine.update_icon()
+		magazine.forceMove(drop_location())
+		user.put_in_hands(magazine)
+		magazine = null
+		update_icon()
+		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
+		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
+
+/obj/item/gun/ballistic/automatic/m2a1/attackby(obj/item/A, mob/user, params)
+	if(!cover_open && istype(A, mag_type))
+		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
+		return
+	..()
+
+/obj/item/gun/ballistic/automatic/m2a1/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select += 1
+			burst_size = 2
+			spread = 30
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(1)
+			select += 1
+			burst_size = 3
+			spread = 40
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(2)
+			select += 1
+			burst_size = 4
+			spread = 50
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(3)
+			select = 0
+			burst_size = 1
+			spread = 20
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return

@@ -61,6 +61,12 @@
 	. = ..()
 	add_overlay("eyes-[initial(icon_state)]")
 
+/mob/living/simple_animal/hostile/handy/nsb //NSB + Raider Bunker specific
+	name = "mr.handy"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+
 /mob/living/simple_animal/hostile/handy/gutsy
 	name = "mr. gutsy"
 	desc = "A pre-war combat robot based off the Mr. Handy design, armed with plasma weaponry and a deadly close-range flamer."
@@ -110,6 +116,12 @@
 /mob/living/simple_animal/hostile/handy/gutsy/AttackingTarget()
 	. = ..()
 
+/mob/living/simple_animal/hostile/handy/gutsy/nsb //NSB + Raider Bunker specific
+	name = "mr. gutsy"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+
 /mob/living/simple_animal/hostile/handy/securitron
 	name = "Securitron"
 	desc = "A private security robot created and mass-produced by the H&H Tools Factory"
@@ -120,8 +132,8 @@
 	maxHealth = 250
 	melee_damage_lower = 40
 	melee_damage_upper = 50
-	attack_sound = 'sound/items/welder.ogg'
-	attack_verb_simple = "shoots a burst of flame at"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	attack_verb_simple = "violently punches"
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	projectiletype = /obj/item/projectile/bullet/a556/ap/simple
 	extra_projectiles = 3
@@ -139,6 +151,13 @@
 
 /mob/living/simple_animal/hostile/handy/securitron/AttackingTarget()
 	. = ..()
+
+/mob/living/simple_animal/hostile/handy/securitron/nsb //NSB + Raider Bunker specific
+	name = "Securitron"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+	retreat_distance = 0 //perish, mortal
 
 /mob/living/simple_animal/hostile/handy/liberator
 	name = "liberator"
@@ -228,6 +247,14 @@
 /mob/living/simple_animal/hostile/handy/robobrain/AttackingTarget()
 	. = ..()
 
+/mob/living/simple_animal/hostile/handy/robobrain/nsb //NSB + Raider Bunker specific
+	name = "robobrain"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+	health = 300
+	maxHealth = 300
+
 /mob/living/simple_animal/hostile/handy/protectron
 	name = "protectron"
 	desc = "A pre-war security robot armed with deadly lasers."
@@ -277,6 +304,12 @@
 	del_on_death = FALSE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 
+/mob/living/simple_animal/hostile/handy/protectron/nsb //NSB + Raider Bunker specific
+	name = "protectron"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+
 /mob/living/simple_animal/pet/dog/protectron //Not an actual dog
 	name = "Trading Protectron"
 	desc = "A standard RobCo RX2 V1.16.4 \"Trade-o-Vend\", loaded with Trade protocols.<br>Looks like it was kept operational for an indefinite period of time. Its body is covered in cracks and dents of various sizes.<br>As it has been repaired countless times, it's amazing the machine is still functioning at all."
@@ -316,6 +349,7 @@
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
+	environment_smash = 2 //wall-busts
 	del_on_death = FALSE
 	attack_verb_simple = "pulverizes"
 	attack_sound = 'sound/weapons/punch1.ogg'
@@ -343,7 +377,6 @@
 	aggrosound = null
 	idlesound = null
 	see_in_dark = 8
-	environment_smash = 2 //can smash walls
 	wander = 0
 	force_threshold = 15
 	anchored = FALSE
@@ -393,6 +426,30 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/playable/death()
 	return ..()
 
+/mob/living/simple_animal/hostile/handy/sentrybot/chew
+	name = "lil' chew-chew"
+	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick, oddly blue armor plating, the name Lil' Chew-Chew scratched onto it's front armour."
+	extra_projectiles = 6
+	health = 1000
+	maxHealth = 1000 //CHONK
+	obj_damage = 300
+	retreat_distance = 0
+	color = "#75FFE2"
+
+/mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
+	name = "sentry bot"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
+
+/mob/living/simple_animal/hostile/handy/sentrybot/nsb/riot //NSB + Raider Bunker specific.
+	name = "riot-control sentry bot"
+	desc = "A pre-war military robot armed with a modified breacher shotgun and covered in thick armor plating."
+	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
+	projectiletype = /obj/item/projectile/bullet/shotgun_beanbag
+	retreat_distance = 0
+	environment_smash = 2 //wall-busts
+
 /mob/living/simple_animal/hostile/handy/assaultron
 	name = "assaultron"
 	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis."
@@ -411,11 +468,17 @@
 	faction = list("wastebot")
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
 
-	emote_taunt_sound = FALSE
-	emote_taunt = FALSE
+	emote_taunt_sound = list('sound/f13npc/assaultron/taunt1.ogg', 'sound/f13npc/assaultron/taunt2.ogg', 'sound/f13npc/assaultron/taunt3.ogg', 'sound/f13npc/assaultron/taunt4.ogg', 'sound/f13npc/assaultron/taunt5.ogg')
+	emote_taunt = list("whirs")
 
-	aggrosound = FALSE
-	idlesound = FALSE
+	aggrosound = list('sound/f13npc/assaultron/aggro1.ogg', 'sound/f13npc/assaultron/aggro2.ogg', 'sound/f13npc/assaultron/aggro3.ogg', 'sound/f13npc/assaultron/aggro4.ogg', 'sound/f13npc/assaultron/aggro5.ogg')
+	idlesound = list('sound/f13npc/assaultron/idle1.ogg', 'sound/f13npc/assaultron/idle2.ogg', 'sound/f13npc/assaultron/idle3.ogg')
+
+/mob/living/simple_animal/hostile/handy/assaultron/nsb //NSB + Raider Bunker specific.
+	name = "assaultron"
+	aggro_vision_range = 15
+	faction = list("raider")
+	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/assaultron/playable
 	see_in_dark = 8

@@ -86,7 +86,7 @@
 	multiload = 1
 
 /obj/item/ammo_box/magazine/internal/shot/lasmusket
-	name = "lasmusket magazine"
+	name = "Laser musket magazine"
 	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/caseless/lasermusket
 	caliber = "lasmusket"
@@ -94,7 +94,7 @@
 	multiload = 1
 
 /obj/item/ammo_box/magazine/internal/plasmacaster
-	name = "plasmacaster magazine"
+	name = "Plasma musket magazine"
 	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/caseless/plasmacaster
 	caliber = "plasmacaster"

@@ -909,7 +909,8 @@ GLOBAL_LIST_INIT(loot_attachment, list(
 	/obj/item/attachments/scope,
 	/obj/item/attachments/burst_improvement,
 	/obj/item/attachments/recoil_decrease,
-	/obj/item/attachments/auto_sear
+	/obj/item/attachments/auto_sear,
+	/obj/item/attachments/bullet_speed
 ))
 
 GLOBAL_LIST_INIT(loot_t1_blueprint, list(

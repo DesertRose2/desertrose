@@ -25,6 +25,7 @@
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
+	H.grant_language(/datum/language/wayfarer)
 
 /*
 Tribal Chief
@@ -114,7 +115,8 @@ Tribal Shaman
 		/obj/item/reagent_containers/glass/mortar=1,
 		/obj/item/pestle=1,
 		/obj/item/reagent_containers/glass/primitive_chem_isolator=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/storage/bag/chemistry/tribal=1
 	)
 
 /datum/outfit/job/tribal/f13shaman/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -217,7 +219,8 @@ Druid
 		/obj/item/reagent_containers/glass/mortar=1,
 		/obj/item/pestle=1,
 		/obj/item/reagent_containers/glass/primitive_chem_isolator=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2)
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/storage/bag/chemistry/tribal=1)
 
 /*
 Villager

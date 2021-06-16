@@ -25,11 +25,17 @@
 */
 
 /obj/item/ammo_box/magazine/autopipe
-	name = "autopipe magazine (.357)"
-	icon_state = "autopipe_mag"
+	name = "Autopipe belt (.357)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "autopipe_belt"
 	caliber = "357"
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/a357
-	max_ammo = 24
+	max_ammo = 30
+
+/obj/item/ammo_box/magazine/autopipe/update_icon()
+	..()
+	icon_state = "autopipe_belt-[round(ammo_count(),15)]"
 
 /obj/item/ammo_box/magazine/autopipe/empty
 	start_empty = 1
@@ -114,4 +120,15 @@
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/m473/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/m473_pistol
+	name = "pistol magazine (4.73mm)"
+	icon_state = "mag308"
+	caliber = "473mm"
+	ammo_type = /obj/item/ammo_casing/caseless/g11
+	max_ammo = 10
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m473_pistol/empty
 	start_empty = 1

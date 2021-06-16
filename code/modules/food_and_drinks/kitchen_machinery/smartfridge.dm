@@ -588,6 +588,31 @@
 		return FALSE
 	if(istype(O, /obj/item/reagent_containers/glass) || istype(O, /obj/item/reagent_containers/food/drinks) || istype(O, /obj/item/reagent_containers/food/condiment))
 		return TRUE
+// --------------------------------------
+// Update Icons for Racks with 30 storage
+// --------------------------------------
+/obj/machinery/smartfridge/bottlerack/update_icon_state()
+	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
+	if(!stat)
+		SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
+		if(visible_contents)
+			switch(contents.len)
+				if(0)
+					icon_state = "[initial(icon_state)]"
+				if(1 to 8)
+					icon_state = "[initial(icon_state)]-1"
+				if(9 to 14)
+					icon_state = "[initial(icon_state)]-2"
+				if(15 to 20)
+					icon_state = "[initial(icon_state)]-3"
+				if(21 to 25)
+					icon_state = "[initial(icon_state)]-4"
+				if(26 to INFINITY)
+					icon_state = "[initial(icon_state)]-5"
+		else
+			icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-off"
 
 // -------------------------
 //  Gardentool Rack
@@ -627,19 +652,112 @@
 	if(istype(O, /obj/item/seeds))
 		return TRUE
 	return FALSE
+
+// ---------------------------------------
+// Update Icons for Seed Bin
+// ---------------------------------------
+/obj/machinery/smartfridge/bottlerack/seedbin/update_icon_state()
+	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
+	if(!stat)
+		SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
+		if(visible_contents)
+			switch(contents.len)
+				if(0)
+					icon_state = "[initial(icon_state)]"
+				if(1 to 50)
+					icon_state = "[initial(icon_state)]-1"
+				if(51 to 100)
+					icon_state = "[initial(icon_state)]-2"
+				if(101 to 150)
+					icon_state = "[initial(icon_state)]-3"
+				if(151 to 200)
+					icon_state = "[initial(icon_state)]-4"
+				if(201 to INFINITY)
+					icon_state = "[initial(icon_state)]-5"
+		else
+			icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-off"
+
 //-------------------------
-// Foodbin
+// grownbin
 //-------------------------
 /obj/machinery/smartfridge/bottlerack/grownbin
-	name = "grownbin"
+	name = "Harvest bin"
 	desc = "A large box, to contain the harvest that the Earth has blessed upon you."
-	icon_state = "seedbin"
+	icon_state = "grownbin"
 	max_n_of_items = 1000
 
 /obj/machinery/smartfridge/bottlerack/grownbin/accept_check(obj/item/O)
 	if(istype(O, /obj/item/reagent_containers/food/snacks/grown))
 		return TRUE
 	return FALSE
+
+// ---------------------------------------
+// Update Icons for grownbin
+// ---------------------------------------
+/obj/machinery/smartfridge/bottlerack/grownbin/update_icon_state()
+	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
+	if(!stat)
+		SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
+		if(visible_contents)
+			switch(contents.len)
+				if(0)
+					icon_state = "[initial(icon_state)]"
+				if(1 to 50)
+					icon_state = "[initial(icon_state)]-1"
+				if(51 to 100)
+					icon_state = "[initial(icon_state)]-2"
+				if(101 to 150)
+					icon_state = "[initial(icon_state)]-3"
+				if(151 to 200)
+					icon_state = "[initial(icon_state)]-4"
+				if(201 to INFINITY)
+					icon_state = "[initial(icon_state)]-5"
+		else
+			icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-off"
+
+//-------------------------
+// Alchemy Rack
+//-------------------------
+/obj/machinery/smartfridge/bottlerack/alchemy_rack
+	name = "alchemy rack"
+	desc = "A neatly organized cupboard for the storage of homemade remedies and flasks."
+	icon_state = "alchemyrack"
+	max_n_of_items = 100
+
+/obj/machinery/smartfridge/bottlerack/alchemy_rack/accept_check(obj/item/O)
+	if(istype(O, /obj/item/reagent_containers/pill/patch/healingpowder) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive) || istype(O, /obj/item/reagent_containers/pill/patch/healpoultice))
+		return TRUE
+	return FALSE
+
+// ---------------------------------------
+// Update Icons for Alchemy Rack
+// ---------------------------------------
+/obj/machinery/smartfridge/bottlerack/alchemy_rack/update_icon_state()
+	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
+	if(!stat)
+		SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
+		if(visible_contents)
+			switch(contents.len)
+				if(0)
+					icon_state = "[initial(icon_state)]"
+				if(1 to 20)
+					icon_state = "[initial(icon_state)]-1"
+				if(21 to 40)
+					icon_state = "[initial(icon_state)]-2"
+				if(41 to 60)
+					icon_state = "[initial(icon_state)]-3"
+				if(61 to 80)
+					icon_state = "[initial(icon_state)]-4"
+				if(81 to INFINITY)
+					icon_state = "[initial(icon_state)]-5"
+		else
+			icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-off"
 
 // -------------------------
 // LOOTABLE RACKS - PREWAR SHELVES ETC

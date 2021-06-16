@@ -56,6 +56,7 @@
 	var/obj/item/attachments/recoil_decrease
 	var/obj/item/attachments/burst_improvement
 	var/obj/item/attachments/auto_sear
+	var/obj/item/attachments/bullet_speed
 
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
@@ -103,6 +104,7 @@
 	var/isbow = null
 	var/extra_damage = 0				//Number to add to individual bullets.
 	var/extra_penetration = 0			//Number to add to armor penetration of individual bullets.
+	var/extra_speed = TILES_TO_PIXELS(0) //Additional speed to the projectile.
 
 	//Zooming
 	var/zoomable = FALSE //whether the gun generates a Zoom action on creation
@@ -383,7 +385,7 @@
 		if(chambered)
 			sprd = round((rand() - 0.5) * DUALWIELD_PENALTY_EXTRA_MULTIPLIER * (randomized_gun_spread + randomized_bonus_spread))
 			before_firing(target,user)
-			if(!chambered.fire_casing(target, user, params, , suppressed, zone_override, sprd, extra_damage, extra_penetration, src))
+			if(!chambered.fire_casing(target, user, params, , suppressed, zone_override, sprd, extra_damage, extra_penetration, src, extra_speed))
 				shoot_with_empty_chamber(user)
 				return
 			else
@@ -418,7 +420,7 @@
 		else //Smart spread
 			sprd = round((((rand_spr/burst_size) * iteration) - (0.5 + (rand_spr * 0.25))) * (randomized_gun_spread + randomized_bonus_spread), 1)
 		before_firing(target,user)
-		if(!chambered.fire_casing(target, user, params, , suppressed, zone_override, sprd, extra_damage, extra_penetration, src))
+		if(!chambered.fire_casing(target, user, params, , suppressed, zone_override, sprd, extra_damage, extra_penetration, src, extra_speed))
 			shoot_with_empty_chamber(user)
 			firing = FALSE
 			return FALSE
@@ -492,7 +494,15 @@
 			else
 				src.spread = 0
 			to_chat(user, "<span class='notice'>You attach \the [R] to \the [src].</span>")
-
+	else if(istype(I, /obj/item/attachments/bullet_speed))
+		var/obj/item/attachments/bullet_speed/B = I
+		if(!bullet_speed && can_attachments)
+			if(!user.transferItemToLoc(I, src))
+				return
+			bullet_speed = B
+			src.desc += " It has an improved barrel installed."
+			src.extra_speed += TILES_TO_PIXELS(15)
+			to_chat(user, "<span class='notice'>You attach \the [B] to \the [src].</span>")
 	else if(istype(I, /obj/item/attachments/burst_improvement))
 		var/obj/item/attachments/burst_improvement/T = I
 		if(!burst_improvement && burst_size > 1 && can_attachments)
@@ -689,7 +699,8 @@
 
 /datum/action/item_action/toggle_scope_zoom/Trigger()
 	var/obj/item/gun/gun = target
-	gun.zoom(owner)
+	if(do_after(owner,10))
+		gun.zoom(owner)
 
 /datum/action/item_action/toggle_scope_zoom/IsAvailable(silent = FALSE)
 	. = ..()
@@ -713,7 +724,8 @@
 	else
 		zoomed = !zoomed
 
-	if(zoomed)
+	if(zoomed)//if we need to be zoomed in
+		user.add_movespeed_modifier(/datum/movespeed_modifier/scoped_in)
 		var/_x = 0
 		var/_y = 0
 		switch(user.dir)
@@ -729,19 +741,23 @@
 		user.client.change_view(zoom_out_amt)
 		user.client.pixel_x = world.icon_size*_x
 		user.client.pixel_y = world.icon_size*_y
-		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/on_walk)
 		RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, .proc/rotate)
+		UnregisterSignal(user, COMSIG_MOVABLE_MOVED) //pls don't conflict with anything else using this signal
 		user.visible_message("<span class='notice'>[user] looks down the scope of [src].</span>", "<span class='notice'>You look down the scope of [src].</span>")
 	else
+		user.remove_movespeed_modifier(/datum/movespeed_modifier/scoped_in)
 		user.client.change_view(CONFIG_GET(string/default_view))
 		user.client.pixel_x = 0
 		user.client.pixel_y = 0
-		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
 		user.visible_message("<span class='notice'>[user] looks up from the scope of [src].</span>", "<span class='notice'>You look up from the scope of [src].</span>")
+		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/on_walk) //Extra proc to make sure your zoom resets for bug where you don't unzoom when toggling while moving
 
-/obj/item/gun/proc/on_walk(mob/living/L)
-	zoom(L, FALSE)
+/obj/item/gun/proc/on_walk(mob/living/user)
+	UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
+	user.client.change_view(CONFIG_GET(string/default_view))
+	user.client.pixel_x = 0
+	user.client.pixel_y = 0	
 
 /obj/item/gun/proc/rotate(mob/living/user, old_dir, direction = FALSE)
 	var/_x = 0

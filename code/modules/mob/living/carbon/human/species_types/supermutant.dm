@@ -1,5 +1,6 @@
 /datum/species/smutant
 	name = "Super Mutant"
+	icon_limbs = 'icons/mob/mutie_parts.dmi'
 	id = "smutant"
 	say_mod = "yells"
 	limbs_id = "smutant"
@@ -14,7 +15,7 @@
 /datum/species/smutant/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
-		b.max_damage += 30
+		b.max_damage += 50
 	C.faction |= "supermutant"
 /datum/species/smutant/on_species_loss(mob/living/carbon/C)
 	..()

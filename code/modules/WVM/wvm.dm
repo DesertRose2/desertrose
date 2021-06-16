@@ -702,11 +702,13 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Weapon Optics",				/obj/item/attachments/scope,									150),
 		new /datum/data/wasteland_equipment("Recoil Compensator",			/obj/item/attachments/recoil_decrease,							100),
+		new /datum/data/wasteland_equipment("Improved Barrel",				/obj/item/attachments/bullet_speed,								100),
 		new /datum/data/wasteland_equipment("Burst Cam",					/obj/item/attachments/burst_improvement,						200)
 		)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Weapon Optics",				/obj/item/attachments/scope,									150),
 		new /datum/data/wasteland_equipment("Recoil Compensator",			/obj/item/attachments/recoil_decrease,							100),
+		new /datum/data/wasteland_equipment("Improved Barrel",				/obj/item/attachments/bullet_speed,								100),
 		new /datum/data/wasteland_equipment("Burst Cam",					/obj/item/attachments/burst_improvement,						200)
 		)
 
