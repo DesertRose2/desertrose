@@ -1093,7 +1093,7 @@
 				/obj/effect/spawner/bundle/f13/police_pistol
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6
 	name = "tier 6 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/beretta/select,
 				/obj/effect/spawner/bundle/f13/m1911,
@@ -1107,7 +1107,7 @@
 				/obj/effect/spawner/bundle/f13/smg10mm
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7
 	name = "tier 7 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
@@ -1116,24 +1116,24 @@
 				/obj/effect/spawner/bundle/f13/plasmapistol,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/commando,
-				/obj/effect/spawner/bundle/f13/mk23
+				/obj/effect/spawner/bundle/f13/mk23,
+				/obj/effect/spawner/bundle/f13/revolverm29,
+				/obj/effect/spawner/bundle/f13/needler,
+				/obj/effect/spawner/bundle/f13/neostead
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8
 	name = "tier 8 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/r82,
 				/obj/effect/spawner/bundle/f13/r84,
 				/obj/effect/spawner/bundle/f13/assault_rifle,
 				/obj/effect/spawner/bundle/f13/marksman,
-				/obj/effect/spawner/bundle/f13/revolverm29,
-				/obj/effect/spawner/bundle/f13/neostead,
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/ionrifle,
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/citykiller,
-				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/brushgun,
-				/obj/effect/spawner/bundle/f13/thatgun
+				/obj/effect/spawner/bundle/f13/infiltrator
 				)
 
 /obj/effect/spawner/bundle/f13/r82
@@ -1147,6 +1147,12 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/r84
 	)
+/obj/effect/spawner/bundle/f13/garand
+	name = "garand spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/m1garand,
+				/obj/item/ammo_box/magazine/garand308
+	)
 /obj/effect/spawner/bundle/f13/mp5
 	name = "mp5 and ammo spawner"
 	items = list(
@@ -1159,20 +1165,16 @@
 		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller,
 		/obj/item/ammo_box/shotgun/buck
 	)
-/obj/effect/spawner/bundle/f13/thatgun
-	name = "556 pistol spawner"
-	items = list(
-				/obj/item/gun/ballistic/revolver/thatgun
-	)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9
 	name = "tier 9 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/infiltrator,
-				/obj/effect/spawner/bundle/f13/rangemaster,
+	loot = list(/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/wattz2k,
 				/obj/effect/spawner/bundle/f13/rcw,
 				/obj/effect/spawner/bundle/f13/breacher,
-				/obj/effect/spawner/bundle/f13/beam
+				/obj/effect/spawner/bundle/f13/beam,
+				/obj/effect/spawner/bundle/f13/aer12,
+				/obj/effect/spawner/bundle/f13/hunting
 				)
 
 /obj/effect/spawner/bundle/f13/beam
@@ -1181,11 +1183,25 @@
 				/obj/item/gun/medbeam
 	)
 
+/obj/effect/spawner/bundle/f13/hunting
+	name = "hunting revolver spawner"
+	items = list(
+				/obj/item/gun/ballistic/revolver/hunting,
+				/obj/item/ammo_box/tube/c4570
+	)
+
 /obj/effect/spawner/bundle/f13/breacher
 	name = "breacher and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/shotgun/riot,
 				/obj/item/ammo_box/magazine/d12g
+	)
+
+/obj/effect/spawner/bundle/f13/aer12
+	name = "aer12 and ammo spawner"
+	items = list(
+				/obj/item/gun/energy/laser/aer12,
+				/obj/item/stock_parts/cell/ammo/mfc
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier10
@@ -1761,7 +1777,8 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/auto_sear,
+		/obj/item/attachments/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintMid
@@ -1788,6 +1805,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82,
+		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle
 	)
 
@@ -1835,7 +1853,8 @@
 		/obj/item/attachments/scope,
 		/obj/item/attachments/burst_improvement,
 		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear
+		/obj/item/attachments/auto_sear,
+		/obj/item/attachments/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/npc_raider
@@ -1865,6 +1884,7 @@
 			/obj/item/storage/box/ration/menu_nine,
 			/obj/item/storage/box/ration/menu_ten,
 			/obj/item/storage/box/ration/menu_eleven,
+			/obj/item/storage/box/ration/menu_twelve
 			)
 
 /obj/effect/spawner/lootdrop/f13/ncr_k_ration
@@ -1875,5 +1895,5 @@
 	loot = list(
 			/obj/item/storage/box/ration/ranger_breakfast,
 			/obj/item/storage/box/ration/ranger_lunch,
-			/obj/item/storage/box/ration/ranger_dinner,
+			/obj/item/storage/box/ration/ranger_dinner
 			)

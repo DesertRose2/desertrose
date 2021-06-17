@@ -156,7 +156,7 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/chinese
-	name = "chinese combat armor"
+	name = "Chinese combat armor"
 	desc = "(IV) An uncommon suit of pre-war Chinese combat armor. It's a very basic and straightforward piece of armor that covers the front of the user."
 	icon_state = "chicom_armor"
 	item_state = "chicom_armor"
@@ -192,6 +192,26 @@
 	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
+
+/obj/item/clothing/suit/armor/f13/combat/marine
+	name = "marine combat armor"
+	desc = "(VIII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	icon_state = "marinearmor"
+	item_state = "marinearmor"
+	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+
+/obj/item/clothing/suit/armor/f13/ahp_suit
+	name = "highway patrol jacket"
+	desc = "(IV) An old police motorcycle jacket a gold badge with the logo of the 'Arizona Department of Public Safety'."
+	icon_state = "ahp_suit"
+	item_state = "ahp_suit"
+	body_parts_covered = CHEST|ARMS
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/ahp_suit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Power armors, including salvaged and faction
 
@@ -349,16 +369,16 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
-	desc = "(IX) Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
+	desc = "(VIII) Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
-	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
-	name = "Gunslinger T-51b"
+	name = "gunslinger T-51b"
 	desc = "(IX) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
 	icon_state = "t51bgs"
 	item_state = "t51bgs"
@@ -372,12 +392,18 @@
 	item_state = "sierra"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
-	name = "Knight-Captain's T-45d Power Armour"
-	desc = "(IX) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight Captain and your safety is his duty."
+	name = "head knight's T-45d Power Armour"
+	desc = "(IX) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
 	slowdown = 0.16
 	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
+	name = "brotherhood T-45d power armor"
+	desc = "(VIII) A set of T-45d power armor put into use by the Brotherhood of Steel."
+	icon_state = "t45dbos"
+	item_state = "t45dbos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/midwest
 	name = "midwestern power armor"
@@ -391,13 +417,13 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
-	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
+	desc = "(IX) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
 	armor_block_chance = 85
 	deflection_chance = 35 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
-	armor = list("tier" = 10, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	armor = list("tier" = 9, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/tesla
 	name = "T-51b tesla armor"
@@ -406,6 +432,12 @@
 	item_state = "t51tesla"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
 	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
+	name = "brotherhood T-51b power armor"
+	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
+	icon_state = "t51bbos"
+	item_state = "t51bbos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
 	name = "Washington power armor"
@@ -420,7 +452,7 @@
 	item_state = "t51matt"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/ultra
-	name = "Ultracite power armor"
+	name = "ultracite power armor"
 	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer. Now ultracite enhanced."
 	icon_state = "ultracitepa"
 	item_state = "ultracitepa"
@@ -428,11 +460,11 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60a power armor"
-	desc = "(XI) Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
+	desc = "(X) Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.16
-	armor = list("tier" = 11, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
+	armor = list("tier" = 10, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 
 	armor_block_chance = 90
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Same deflection as T-45 due to it having the same general shape.
@@ -445,6 +477,12 @@
 	slowdown = 0.15
 	armor = list("tier" = 10, "linelaser" = 25, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 	var/hit_reflect_chance = 20
+
+/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
+	name = "brotherhood T-60 power armor"
+	desc = "(X) A set of T-60 power armor put into use by the Brotherhood of Steel."
+	icon_state = "t60bos"
+	item_state = "t60bos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
@@ -654,7 +692,7 @@
 	desc = "This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities." // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 
 obj/item/clothing/suit/armor/f13/exile/cust0m
-	name = "Lorica Iudicis"
+	name = "lorica Iudicis"
 	desc = "A set of well maintained though still quite clearly worn armor consisting of a metal vest, a Centurion's shoulder pad, a pair of Centurion's arm guards and an incredibly large, perhaps even over-sized fur cloak. Upon basic examination, one can see that every piece of metal bar the buckles on the leather straps and whatever scratches and blemishes are yet to be retouched is masterfully decorated with silver, in complete contrast to the blackness of the cloak. Though only upon closer examination can the intricacies of the armor set be observed. The most obvious piece is the metal vest which has clearly been engraved, mostly decorationally besides the name 'Iudex Flammae' near the top. Though the engravings provide no tactical advantage whatsoever, the sharp geometric shapes accompanied by smooth, tastefully placed curves would catch the eye of even the most skeptical engraving enjoyer. As for the shoulder pad and arm guards, they hold the same engravings, and though they are recognizable as salvage, they still look incredibly beautiful yet simultaneously sturdy. Not much of the metal seems to exist on the back though that is only due to the fact that the incredibly thick, durable and flexible bear pelt that covers it would definitely provide ample protection. The pelt itself is absolutely covered in thick, almost jet black fur. One can tell from touch that the skin underneath is about as sturdy as skin gets. The pelt hangs across the wearer's back, held up by the neck and shoulders. This armor was competently made, and it shows."
 	icon_state = "exilecust0m"
 	item_state = "exilecust0m"
@@ -688,7 +726,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris
-	name = "Reptilia Tenebris"
+	name = "reptilia tenebris"
 	desc = "An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic. The color of this duster has been washed out time and time again, giving it a more faded look as if time gripped it heavily. Along with that, the duster has been dyed a deep shade of grey, and the body armor a darker shade of green."
 	icon_state = "reptiliatenebris"
 	item_state = "reptiliatenebris"
@@ -770,6 +808,86 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/diocoat
+	name = "NCR officer greatcoat"
+	desc = "(VII) A privately-purchased greatcoat made from stiff felt with patches and pins designating an officer of the NCRA."
+	icon_state = "diocoat"
+	item_state = "diocoat"
+
+/obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
+	name = "Marlow gang overcoat"
+	desc = "(IV) A heavy red leather overcoat littered with aged bullet holes and frays from regular wear-and-tear."
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	icon_state = "marlowsuit"
+	item_state = "marlowsuit"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
+	name = "gunfighter's overcoat"
+	desc = "(IV) A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
+	icon_state = "ikesuit"
+	item_state = "ikesuit"
+
+/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
+	name = "vagabond's vest"
+	desc = "(IV) A padded thick red leather vest, coated in stitched pockets and other mends."
+	icon_state = "masonsuit"
+	item_state = "masonsuit"
+
+/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marked_patrol
+	name = "ruined patrol armour"
+	desc = "(IV) A set of weathered Ranger Patrol gear that's definitely seen better days. Bits and pieces of it have been modified and replaced with license plates and scrap metal, as opposed to it's usual kevlar padding. The entire kit being caked with dust, bullet holes and stab marks, most definitely a reminder of the past rather than functioning armour."
+	icon_state = "marked_patrol"
+	item_state = "marked_patrol"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/marked_patrol/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/marked_patrol/marked_tribal
+	name = "marked tribal armour"
+	desc = "(IV) A set of oddly ornate ruined armour put together with scrap metal, license plates and pure anger. While ugly in look, it seems to have a nice amount of protection in it's plates, bearing a striking resemblance to the armour most commonly worn by a Legatus - although lacking it's golden beauty and flowing red cape."
+	icon_state = "marked_tribal"
+	item_state = "marked_tribal"
+
+/obj/item/clothing/suit/armor/f13/marked_tribal/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/schlimmcoat
+	name = "foreign frock coat"
+	icon_state = "schlimmcoat"
+	item_state = "schlimmcoat"
+	desc = "(II) A fine-tailored crimson frock coat, reaching down to the knee. This antiquated attire is both strange and out of place."
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/talon
+	name = "talon company armour"
+	desc = "(IV) A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, with the right pauldron removed for ease with shouldering rifles."
+	icon_state = "talon"
+	item_state = "talon"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/talon/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
@@ -842,3 +960,32 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "recon_armor"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
+
+//Mutants
+
+/obj/item/clothing/suit/armor/f13/mutant/poncho
+	name = "mutant poncho"
+	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
+	icon_state = "mutie_poncho"
+	item_state = "mutie_poncho"
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal
+	name = "mutant armour"
+	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour"
+	item_state = "mutie_metal_armour"
+	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
+	name = "mutant armour"
+	desc = "(6) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	icon_state = "mutie_metal_armour_mk2"
+	item_state = "mutie_metal_armour_mk2"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+
+/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
+	name = "Chicken Coop jacket"
+	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
+	icon_state = "drive_jacket"
+	item_state = "drive_jacket"

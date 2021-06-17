@@ -319,6 +319,11 @@
 	damage = 21
 	armour_penetration = 0.25
 
+/obj/item/projectile/beam/laser/tribeam/baby
+	name = "multilas laser"
+	damage = 9
+	armour_penetration = 0.25
+
 /obj/item/projectile/f13plasma //Plasma rifle
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
@@ -391,6 +396,14 @@
 	icon_state = "omnilaser"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_BLUE
+
+/obj/item/projectile/beam/laser/aer12 //AER12
+	name = "laser beam"
+	damage = 34
+	armour_penetration = 0.55
+	icon_state = "xray"
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
+	light_color = LIGHT_COLOR_GREEN
 
 /obj/item/projectile/beam/laser/wattz2k
 	name = "laser bolt"

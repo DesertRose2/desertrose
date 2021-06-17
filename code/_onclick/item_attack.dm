@@ -88,12 +88,12 @@
 		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
 		return
 
-	var/bigleagues = force*1.15+5
-	var/buffout = force*1.15+5
+	var/bigleagues = force+7.5
+	var/buffout = force+7.5
 
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BIG_LEAGUES))
 		force += bigleagues
-	
+
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 		force += buffout
 
@@ -113,7 +113,7 @@
 
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BIG_LEAGUES))
 		force -= bigleagues
-	
+
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 		force -= buffout
 

@@ -308,23 +308,31 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("ore box", /obj/structure/ore_box, 4, time = 50, one_per_turf = TRUE, on_floor = TRUE),\
 	new/datum/stack_recipe("wooden crate", /obj/structure/closet/crate/wooden, 6, time = 50, one_per_turf = TRUE, on_floor = TRUE),\
 	new/datum/stack_recipe("display case chassis", /obj/structure/displaycase_chassis, 5, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("loom", /obj/structure/loom, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 50),\
 	new/datum/stack_recipe("tiki mask", /obj/item/clothing/mask/gas/tiki_mask, 2), \
 	new/datum/stack_recipe("grave marker", /obj/structure/statue/wood/headstonewood, 3, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("bonfire", /obj/structure/bonfire, 30, time = 300, one_per_turf = TRUE),\
 	new/datum/stack_recipe("cross", /obj/structure/cross, 10, time = 10),\
 	new/datum/stack_recipe("gallow", /obj/structure/gallow, 10, time = 10),\
 	null, \
+	new/datum/stack_recipe_list("Farming Implements", list(
+		new /datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 50),\
+		new /datum/stack_recipe("loom", /obj/structure/loom, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
+		new /datum/stack_recipe("seed extractor", /obj/structure/legion_extractor, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		new /datum/stack_recipe("compost bin", /obj/structure/reagent_dispensers/compostbin, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		)),
+	null, \
 	new/datum/stack_recipe("picture frame", /obj/item/wallframe/picture, 1, time = 10),\
 	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 1, time = 10),\
 	new/datum/stack_recipe("mortar", /obj/item/reagent_containers/glass/mortar, 3), \
 	new/datum/stack_recipe("honey frame", /obj/item/honey_frame, 5, time = 10),\
 	null, \
-	new/datum/stack_recipe("seed extractor", /obj/structure/legion_extractor, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("compost bin", /obj/structure/reagent_dispensers/compostbin, 25, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("seed bin", /obj/machinery/smartfridge/bottlerack/seedbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("grownbin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe_list("Storage (Harvest, Medicine, Bottles, Seeds)", list(
+		new /datum/stack_recipe("bottle rack", /obj/machinery/smartfridge/bottlerack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		new /datum/stack_recipe("harvest bin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		new /datum/stack_recipe("alchemy rack", /obj/machinery/smartfridge/bottlerack/alchemy_rack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		new /datum/stack_recipe("seed bin", /obj/machinery/smartfridge/bottlerack/seedbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
+		)),
+	null, \
 	))
 
 /obj/item/stack/sheet/mineral/wood
@@ -438,6 +446,7 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	new/datum/stack_recipe("medical bag", /obj/item/storage/bag/chemistry, 4), \
 	new/datum/stack_recipe("bio bag", /obj/item/storage/bag/bio, 4), \
 	new/datum/stack_recipe("casings bag", /obj/item/storage/bag/casings, 4), \
+	new/datum/stack_recipe("tribal medbag", /obj/item/storage/bag/chemistry/tribal, 4), \
 	null, \
 	new/datum/stack_recipe("string", /obj/item/weaponcrafting/string, 1, time = 10), \
 	new/datum/stack_recipe("improvised gauze", /obj/item/stack/medical/gauze/improvised, 1, 2, 6), \
@@ -452,7 +461,6 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	new/datum/stack_recipe("black gloves", /obj/item/clothing/gloves/color/black, 3), \
 	new/datum/stack_recipe("softcap", /obj/item/clothing/head/soft/mime, 2), \
 	new/datum/stack_recipe("beanie", /obj/item/clothing/head/beanie, 2), \
-	new/datum/stack_recipe("black beret", /obj/item/clothing/head/HoS/beret/syndicate, 4), \
 	null, \
 	new/datum/stack_recipe("blindfold", /obj/item/clothing/glasses/sunglasses/blindfold, 2), \
 	new/datum/stack_recipe("muzzle", /obj/item/clothing/mask/muzzle, 2), \
@@ -946,6 +954,7 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	loom_result = /obj/item/stack/sheet/durathread
 	grind_results = list(/datum/reagent/cellulose = 10)
 
+/*   Meat tables and Pizza toilets can go straight to hell
 /obj/item/stack/sheet/meat
 	name = "meat sheets"
 	desc = "Something's bloody meat compressed into a nice solid sheet"
@@ -980,6 +989,7 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	amount = 20
 /obj/item/stack/sheet/pizza/five
 	amount = 5
+*/
 
 /obj/item/stack/sheet/sandblock
 	name = "blocks of sand"

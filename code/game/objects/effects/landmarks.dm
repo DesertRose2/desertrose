@@ -586,6 +586,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Rear Echelon"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrrecruit
+	name = "NCR Recruit"
+	icon_state = "NCR Trooper"
+
 /obj/effect/landmark/start/f13/ncroffduty
 	name = "NCR Off-Duty"
 	icon_state = "NCR Trooper"
@@ -597,7 +601,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Legate"
 
 /obj/effect/landmark/start/f13/centurion
-	name = "Legion Centurion"
+	name = "Legion Optio Centuriae"
 	icon_state = "Centurion"
 
 /obj/effect/landmark/start/f13/orator

@@ -201,6 +201,12 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 
+/obj/item/clothing/head/helmet/f13/legion/recruit/velite
+	name = "legion recruit velite houndcap"
+	desc = "(V) This helmet is decorated with the pelt of a wolf."
+	icon_state = "legvexil" //Placeholders, replace when new sprites are made.
+	item_state = "legvexil" //DUtto.
+
 /obj/item/clothing/head/helmet/f13/legion/recruit/scout
 	name = "legion scout hood"
 	desc = "(III) It's a leather hood worn by legion scouts."
@@ -596,11 +602,15 @@
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 	name = "desert ranger combat helmet"
-	desc = "(VII) An U.S Marine Corps helmet, used by the legendary Desert Rangers."
+	desc = "(VII) A U.S. Marine Corps riot helmet, used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
 
-
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/marine
+	name = "marine riot helmet"
+	desc = "(VII) A U.S. Marine Corps riot helmet in almost impeccable condition."
+	icon_state = "xray_riot"
+	item_state = "xray_riot"
 
 /obj/item/clothing/head/helmet/f13/rangercombat/eliteriot/reclaimed
 	name = "reclaimed desert ranger gear"
@@ -615,14 +625,14 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	name = "brotherhood helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of the Knights."
+	desc = "(VI) An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood star knight helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of a Star Knight."
+	desc = "(VI) An improved combat helmet, bearing the symbol of a Star Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
 
@@ -631,6 +641,7 @@
 	desc = "(VII) An improved combat helmet, bearing the symbol of the Head Knight."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
@@ -646,6 +657,26 @@
 	item_state = "brotherhood_helmet"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout
+	name = "brotherhood scout helmet"
+	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knights."
+	icon_state = "brotherhood_helmet_scout_knight"
+	item_state = "brotherhood_helmet_scout_knight"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior
+	name = "brotherhood star knight scout helmet"
+	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Star Knight."
+	icon_state = "brotherhood_helmet_scout_senior"
+	item_state = "brotherhood_helmet_scout_senior"
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
+	name = "brotherhood head knight scout helmet"
+	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Head Knight."
+	icon_state = "brotherhood_helmet_scout_captain"
+	item_state = "brotherhood_helmet_scout_captain"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
 	desc = "(VII) An improved combat helmet, bearing a series of red markings."
@@ -660,6 +691,12 @@
 	item_state = "boscap"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
 	strip_delay = 20
+
+/obj/item/clothing/head/f13/boscap/beret
+	name = "brotherhood beret"
+	desc = "(I) A beret typically worn with the standard fatigues of the local Brotherhood of Steel Chapter."
+	icon_state = "bos_beret"
+	item_state = "bos_beret"
 
 //Oasis/Town
 
@@ -805,6 +842,12 @@
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
+
+/obj/item/clothing/head/f13/ncr/old
+	name = "NCR pith helmet"
+	desc = "(V) An obsolete issue of the NCR standard issue helmet."
+	icon_state = "ncr_infantry_helmet"
+	item_state = "ncr_infantry_helmet"
 
 /obj/item/clothing/head/f13/ncr/medic
 	name = "NCR medical helmet"

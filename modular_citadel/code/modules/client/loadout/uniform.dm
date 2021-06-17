@@ -44,7 +44,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Ranger",
+							"NCR Recruit"
 						)
 
 /datum/gear/uniform/ncr_shorts
@@ -64,7 +65,8 @@
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Ranger",
+							"NCR Recruit"
 						)
 
 /datum/gear/uniform/ranger
@@ -84,6 +86,24 @@
 /datum/gear/uniform/ranger/vet
 	name = "ranger flannel outfit"
 	path = /obj/item/clothing/under/f13/ranger/vet
+
+/datum/gear/uniform/brotherhood
+	name = "brotherhood fatigues"
+	path = /obj/item/clothing/under/f13/bos/fatigues
+	restricted_desc = "BoS"
+	restricted_roles = list(
+							"Head Paladin",
+							"Head Knight",
+							"Head Scribe",
+							"Star Paladin",
+							"Star Knight",
+							"Proctor",
+							"Paladin",
+							"Knight",
+							"Scribe",
+							"Initiate",
+							"BoS Off-Duty"
+	)
 
 /datum/gear/uniform/rustic
 	name = "rustic outfit"
@@ -197,10 +217,6 @@
 /datum/gear/uniform/suit/white
 	name = "White suit"
 	path = /obj/item/clothing/under/suit/white
-
-/datum/gear/uniform/assistantformal
-	name = "Assistant's formal uniform"
-	path = /obj/item/clothing/under/misc/assistantformal
 
 /datum/gear/uniform/maidcostume
 	name = "Maid costume"

@@ -340,7 +340,11 @@
 		SSshuttle.emergencyLastCallLoc = null
 
 	if(!silent)
-		priority_announce("The train has been called. [redAlert ? "Red Alert state confirmed: Dispatching priority train. " : "" ]It will arrive in [timeLeft(600)] minutes.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nCall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
+		var/red_alert_msg = redAlert ? "Judging from the sounds, the train will arrive sooner than usual this week. " : ""
+		var/arrival_time_msg = "It will arrive in [timeLeft(600)] minutes."
+		var/trace_msg = SSshuttle.emergencyLastCallLoc ? "\n\nCall signal traced. Results can be viewed on any communications console." : ""
+		var/combined_train_text = "[red_alert_msg][arrival_time_msg][trace_msg]"
+		priority_announce(combined_train_text, null, 'sound/f13/quest.ogg', "Vault-Tec", "Sounds of a train echo throughout the valley...")
 
 /obj/docking_port/mobile/emergency/cancel(area/signalOrigin)
 	if(mode != SHUTTLE_CALL)
@@ -355,7 +359,7 @@
 		SSshuttle.emergencyLastCallLoc = signalOrigin
 	else
 		SSshuttle.emergencyLastCallLoc = null
-	priority_announce("The train has been recalled.[SSshuttle.emergencyLastCallLoc ? " Recall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
+	priority_announce("The train seems to have been diverted to another track away from the valley.[SSshuttle.emergencyLastCallLoc ? " Recall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec", "The approching train echos start to fade away...")
 
 /obj/docking_port/mobile/emergency/proc/is_hijacked()
 	return hijack_status == HIJACKED
@@ -400,7 +404,7 @@
 				mode = SHUTTLE_DOCKED
 				setTimer(SSshuttle.emergencyDockTime)
 				send2irc("Server", "The train has arrived at the station.")
-				priority_announce("The train has arrived the station. You have [timeLeft(600)] minutes to board the train.", null, 'sound/f13/quest.ogg', "Vault-Tec")
+				priority_announce("It sounds like the train has arrived at the station. You know from experience that the train will only stay for [timeLeft(600)] minutes.", null, 'sound/f13/quest.ogg', "Vault-Tec", "A loud train whistle echoes throughout the valley...")
 				ShuttleDBStuff()
 
 
@@ -451,7 +455,7 @@
 				mode = SHUTTLE_ESCAPE
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
-				priority_announce("The train has left the station. Estimate [timeLeft(600)] minutes until the train arrives to the target destination.", null, null, "Vault-Tec")
+				priority_announce("It seems like the train has left the station. You estimate [timeLeft(600)] minutes until the sounds of the train completely fades away.", null, null, "Vault-Tec", "Sounds of the train start to fade away...")
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()

@@ -97,6 +97,7 @@
 	name = "\improper Desert Eagle"
 	desc = "A robust .44 magnum semi-automatic handgun."
 	icon_state = "deagle"
+	w_class = WEIGHT_CLASS_NORMAL
 	force = 14
 	mag_type = /obj/item/ammo_box/magazine/m44
 	can_suppress = FALSE
@@ -219,6 +220,11 @@
 	suppressor_x_offset = 30
 	suppressor_y_offset = 19
 
+/obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+	name = "\improper P08 luger"
+	desc = "An early semi-automatic pistol, the first of it's kind chambered in 9mm Parabellum."
+	icon_state = "luger"
+
 /obj/item/gun/ballistic/automatic/pistol/beretta
 	name = "beretta M9FS"
 	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability, 15 round magazine and good looks."
@@ -339,3 +345,39 @@
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 28
 	suppressor_y_offset = 20
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_pistol
+	name = "crusader pistol (10mm)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 10mm."
+	icon_state = "crusader_pistol"
+	item_state = "crusader_pistol"
+	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+	name = "crusader pistol (4.73mm caseless)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 4.73mm caseless."
+	icon_state = "crusader_rifle"
+	item_state = "crusader_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m473_pistol
+	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr
+	name = "crusader pistol (5.56mm)"
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 5.56mm."
+	icon_state = "crusader_rifle"
+	icon_state = "crusader_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 2
+	can_suppress = FALSE

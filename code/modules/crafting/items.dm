@@ -916,6 +916,11 @@
 	desc = "Increases burst size, attach to a compatible weapon. Cannot be removed."
 	icon_state = "burstcam"
 
+/obj/item/attachments/bullet_speed
+	name = "extended barrel"
+	desc = "Improves bullet speed, attach to a compatible weapon. Cannot be removed."
+	icon_state = "barrel"
+
 /obj/item/attachments/auto_sear
 	name = "auto sear"
 	desc = "A rare gun part that allows certain weapons to have select fire capabilities. Cannot be removed."
@@ -936,11 +941,9 @@
 	Loot = list(/obj/item/stack/crafting/metalparts/five,
 				/obj/item/stack/ore/blackpowder/two,
 				/obj/item/stack/crafting/electronicparts/three,
-				/obj/item/stack/sheet/lead/five,
 				/obj/item/stack/sheet/metal/ten,
 				/obj/item/stack/sheet/cloth/five,
 				/obj/item/stack/sheet/leather/five,
-				/obj/item/scrap/research,
 				/obj/item/stock_parts/cell/ammo/ec,
 				/obj/item/stack/crafting/goodparts
 				)
@@ -980,11 +983,12 @@
 				/obj/item/advanced_crafting_components/receiver,
 				/obj/item/advanced_crafting_components/assembly,
 				/obj/item/advanced_crafting_components/alloys,
+				/obj/item/advanced_crafting_components/flux,
+				/obj/item/advanced_crafting_components/lenses,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
 				/obj/item/weldingtool/advanced,
 				/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/stock_parts/cell/ammo/ecp,
-				/obj/item/megaphone)
+				/obj/item/stock_parts/cell/ammo/ecp,)
 
 /obj/item/experimental
 	name = "Experimental component"
