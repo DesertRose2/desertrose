@@ -373,7 +373,7 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	name = "NCR storm steelpot helmet"
