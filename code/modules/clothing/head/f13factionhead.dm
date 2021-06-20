@@ -440,6 +440,12 @@
 	icon_state = "steelpot_patriot"
 	item_state = "steelpot_patriot"
 
+/obj/item/clothing/head/f13/ncr/steelpot_mitchell
+	name = "NCR Mitchell helmet"
+	desc = "(V) A standard issue NCR steel helmet. This one has a cover with a pre-war 'Mitchell' pattern design."
+	icon_state = "steelpot_mitchell"
+	item_state = "steelpot_mitchell"
+
 /obj/item/clothing/head/f13/ncr_flapcap
 	name = "NCR field cap"
 	desc = "(V) A special issue canvas NCR field cap with cotton neckflap, for sun protection in arid climates."
