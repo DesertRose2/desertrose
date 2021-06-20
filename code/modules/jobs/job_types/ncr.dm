@@ -960,6 +960,7 @@ Veteran Ranger
 	gloves = /obj/item/clothing/gloves/patrol/insulated
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/storage/survivalkit_aid = 1,
 		/obj/item/clothing/accessory/armband/engine/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/grenade/plastic=1,
