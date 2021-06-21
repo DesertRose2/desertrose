@@ -342,3 +342,4 @@
 	name = "Wayfarer Rose"
 	desc = "A beautiful blue flower the same shade as the turquoise gemstones commonly used by Wayfarers."
 	icon_state = "wayfarerrose"
+	slot_flags = ITEM_SLOT_HEAD
