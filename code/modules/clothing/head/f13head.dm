@@ -907,3 +907,12 @@
 	icon_state = "schlimmhat"
 	item_state = "schlimmhat"
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+
+/obj/item/clothing/head/helmet/f13/boonie_hat
+	name = "USMC boonie hat"
+	desc = "(II) An old USMC boonie hat with a pin in the center of its crown. Despite its age the hat is in remarkable condition."
+	icon_state = "boonie_hat"
+	item_state = "boonie_hat"
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+	flags_inv = HIDEEARS|HIDEHAIR
+
