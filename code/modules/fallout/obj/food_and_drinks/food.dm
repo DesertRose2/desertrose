@@ -636,3 +636,38 @@
 	tastes = list("beef luncheon loaf" = 3, "jalapeno peppers and spices" = 2)
 	trash = /obj/item/trash/f13/k_ration
 	foodtype = MEAT
+	
+/obj/item/reagent_containers/food/snacks/f13/broiled_death_claw
+	name = "Broiled Deathclaw"
+	desc = "All the flavor seared in for extra kick."
+	icon_state = "broiled_death_claw"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 10)
+	tastes = list("deathclaw meat" = 3, "butter" = 1)
+	foodtype = MEAT
+	
+/obj/item/reagent_containers/food/snacks/f13/fire_ant_fricassee
+	name = "Fire Ant Fricassee"
+	desc = "Breaded fire ant meat soaked in cram."
+	icon_state = "fire_ant_fricassee"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	tastes = list("Fire Ant Meat" = 2, "flour" = 1, "cram" = 1)
+	foodtype = MEAT | GRAIN 
+	
+/obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
+    name = "Brahmin cracklings"
+    desc = "Cracklings are the solid material which remains after rendering animal fat and skin to produce lard, tallow, or schmaltz. It is often eaten as a snack food or made into animal feed. It is also used in cooking."
+    icon_state = "fried_brahmin_skin"
+    filling_color = "#CD5C5C"
+    bonus_reagents = list("nutriment" = 1, "vitamin" = 1)
+    list_reagents = list("nutriment" = 6, "vitamin" = 1)
+    tastes = list("crispy skin" = 1)
+    foodtype = MEAT
+	
+/obj/item/reagent_containers/food/snacks/f13/molerat_manicotti
+	name = "Molerat Manicotti"
+	desc = "Molerat meat wrapped in a pasta tube."
+	icon_state = "molerat_manicotti"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	tastes = list("Molerat Meat" = 2, "dough" = 1)
+	foodtype = MEAT | GRAIN

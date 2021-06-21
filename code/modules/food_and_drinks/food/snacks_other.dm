@@ -757,3 +757,20 @@
 	name = "hot-cross bun"
 	desc = "The Cross represents the Assistants that died for your sins."
 	icon_state = "hotcrossbun"
+
+/obj/item/reagent_containers/food/snacks/poutine
+	name = "poutine"
+	desc = "Fries covered in cheese curds and gravy."
+	icon_state = "poutine"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/medicine/antihol = 4)
+	tastes = list("potato" = 3, "meatball" = 1, "squeaky cheese" = 1)
+	foodtype = VEGETABLES | GRAIN | FRIED
+	w_class = WEIGHT_CLASS_SMALL
+	
+/obj/item/reagent_containers/food/snacks/trailmix
+	name = "Trail Mix"
+	desc = "Seems popular among those with a certain drawl, or those who find that it's time to hit that dusty trail."
+	icon_state = "trail_mix"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
+	tastes = list("pinyon" = 3, "roasted peanuts" = 1, "berries" = 1, "sunflowers" = 1)
+	foodtype = GRAIN | FRUIT 

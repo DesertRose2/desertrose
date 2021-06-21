@@ -145,3 +145,43 @@
 	result = /obj/item/reagent_containers/food/snacks/f13/mirelurkcake
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/broiled_death_claw
+	name = "Broiled Deathclaw"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/steak/deathclaw = 1,
+		/obj/item/stack/sheet/mineral/wood = 1,
+		/obj/item/reagent_containers/food/snacks/butter = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/broiled_death_claw
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+	
+/datum/crafting_recipe/food/fire_ant_fricassee
+	name = "Fire Ant Fricassee"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/f13/cram = 1,
+		/datum/reagent/consumable/flour = 10,
+		/obj/item/reagent_containers/food/snacks/meat/steak/ant_meat = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/fire_ant_fricassee
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+	
+/datum/crafting_recipe/food/friedbrahminskin
+    name = "Fried brahmin skin"
+    reqs = list(
+        /obj/item/stack/sheet/animalhide/brahmin = 2,
+        /obj/item/reagent_containers/food/snacks/butter = 1
+    )
+    result = /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
+    subcategory = CAT_MEAT
+	
+/datum/crafting_recipe/food/molerat_manicotti
+    name = "Molerat Manicotti"
+    reqs = list(
+        /obj/item/reagent_containers/food/snacks/meat/steak/molerat = 1,
+        /obj/item/reagent_containers/food/snacks/dough = 1
+    )
+    result = /obj/item/reagent_containers/food/snacks/f13/molerat_manicotti
+    subcategory = CAT_MEAT
