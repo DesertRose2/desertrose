@@ -372,28 +372,28 @@
 	M.IgniteMob()
 	return ..()
 
- // /datum/reagent/toxin/chloralhydrate
-	// name = "Chloral Hydrate"
-	// description = "A powerful sedative that induces confusion and drowsiness before putting its target to sleep."
-	// reagent_state = SOLID
-	// color = "#000067" // rgb: 0, 0, 103
-	// toxpwr = 0
-	// metabolization_rate = 1.5 * REAGENTS_METABOLISM
-	// pH = 11
+ /* /datum/reagent/toxin/chloralhydrate
+	name = "Chloral Hydrate"
+	description = "A powerful sedative that induces confusion and drowsiness before putting its target to sleep."
+	reagent_state = SOLID
+	color = "#000067" // rgb: 0, 0, 103
+	toxpwr = 0
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM
+	pH = 11
 
-// /datum/reagent/toxin/chloralhydrate/on_mob_life(mob/living/carbon/M)
-	// switch(current_cycle)
-		// if(1 to 10)
-			// M.confused += 2
-			// M.drowsyness += 2
-		// if(10 to 50)
-			// M.Sleeping(40, 0)
-			// . = 1
-		// if(51 to INFINITY)
-			// M.Sleeping(40, 0)
-			// M.adjustToxLoss((current_cycle - 50)*REM, 0)
-			// . = 1
-	// ..()
+/datum/reagent/toxin/chloralhydrate/on_mob_life(mob/living/carbon/M)
+	switch(current_cycle)
+		if(1 to 10)
+			M.confused += 2
+			M.drowsyness += 2
+		if(10 to 50)
+			M.Sleeping(40, 0)
+			. = 1
+		if(51 to INFINITY)
+			M.Sleeping(40, 0)
+			M.adjustToxLoss((current_cycle - 50)*REM, 0)
+			. = 1
+	..()*/
 
 /datum/reagent/toxin/fakebeer	//disguised as normal beer for use by emagged brobots
 	name = "Beer"

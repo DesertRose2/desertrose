@@ -65,11 +65,11 @@
 	icon = 'icons/obj/chemical.dmi'
 	list_reagents = list(/datum/reagent/medicine/morphine = 30)
 
-// /obj/item/reagent_containers/glass/bottle/chloralhydrate
-	// name = "Chloral Hydrate Bottle"
-	// desc = "A small bottle of Choral Hydrate. Mickey's Favorite!"
-	// icon_state = "bottle20"
-	// list_reagents = list(/datum/reagent/toxin/chloralhydrate = 15)
+/* /obj/item/reagent_containers/glass/bottle/chloralhydrate
+	name = "Chloral Hydrate Bottle"
+	desc = "A small bottle of Choral Hydrate. Mickey's Favorite!"
+	icon_state = "bottle20"
+	list_reagents = list(/datum/reagent/toxin/chloralhydrate = 15)*/
 
 /obj/item/reagent_containers/glass/bottle/charcoal
 	name = "charcoal bottle"
