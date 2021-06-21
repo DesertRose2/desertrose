@@ -435,3 +435,21 @@
 	tools = list(TOOL_WIRECUTTER)
 	time = 20
 	always_availible = FALSE
+
+////////////
+//Armbands//
+////////////
+
+/datum/crafting_recipe/armband
+	name = "Red Armband"
+	result = /obj/item/clothing/accessory/armband
+	time = 10
+	reqs = list(/obj/item/stack/sheet/cloth = 1)
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+
+/datum/crafting_recipe/armband/med
+	name = "Medical Armband"
+	result = /obj/item/clothing/accessory/armband/med
+
+////////////

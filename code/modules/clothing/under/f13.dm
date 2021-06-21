@@ -295,12 +295,14 @@
 	desc = "A dry cleaned set of grey fatigues with a brown belt, commonly worn by the off-duty members of the Brotherhood of Steel."
 	icon_state = "bos_fatigues"
 	item_state = "bos_fatigues"
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/bodysuit
 	name = "brotherhood bodysuit"
 	desc = "A bodysuit worn by members of the Brotherhood of steel."
 	icon_state = "bos_bodysuit"
 	item_state = "bos_bodysuit"
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/f/bodysuit
 	name = "brotherhood bodysuit"
@@ -308,6 +310,7 @@
 	icon_state = "bos_bodysuit_f"
 	item_state = "bos_bodysuit_f"
 	body_parts_covered = CHEST
+	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/bos/bodysuit/knight
 	name = "brotherhood knight bodysuit"
@@ -1431,6 +1434,18 @@
 	desc = "A pair of worn buckskin trousers held up by a heavy pistol belt. The attire is synonymous with the colors of the criminal Marlow gang."
 	icon_state = "masonduds"
 	item_state = "masonduds"
+
+/obj/item/clothing/under/f13/masonduds
+	name = "vagabond's gang attire"
+	desc = "A pair of worn buckskin trousers held up by a heavy pistol belt. The attire is synonymous with the colors of the criminal Marlow gang."
+	icon_state = "masonduds"
+	item_state = "masonduds"
+
+/obj/item/clothing/under/f13/schlimmsuit
+	name = "foreign gentleman's attire"
+	desc = "A red paisley vest and silk cravat paired with beige slacks. These clothes are strangely antiquated for their time place."
+	icon_state = "schlimmsuit"
+	item_state = "schlimmsuit"
 
 //Super Mutants
 

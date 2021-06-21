@@ -373,7 +373,7 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	name = "NCR storm steelpot helmet"
@@ -439,6 +439,12 @@
 	desc = "(V) A standard issue NCR steel helmet. This one has been patriotically customised to feature the NCR's flag prominently across its front."
 	icon_state = "steelpot_patriot"
 	item_state = "steelpot_patriot"
+
+/obj/item/clothing/head/f13/ncr/steelpot_mitchell
+	name = "NCR Mitchell helmet"
+	desc = "(V) A standard issue NCR steel helmet. This one has a cover with a pre-war 'Mitchell' pattern design."
+	icon_state = "steelpot_mitchell"
+	item_state = "steelpot_mitchell"
 
 /obj/item/clothing/head/f13/ncr_flapcap
 	name = "NCR field cap"

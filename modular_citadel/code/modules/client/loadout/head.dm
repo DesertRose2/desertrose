@@ -30,10 +30,6 @@
 /datum/gear/head/ushanka
 	path = /obj/item/clothing/head/ushanka
 
-/datum/gear/head/slime
-	name = "Slime hat"
-	path = /obj/item/clothing/head/collectable/slime
-
 /datum/gear/head/fedora
 	name = "Fedora"
 	path = /obj/item/clothing/head/fedora
@@ -174,6 +170,24 @@ datum/gear/head/steelpot_patriot
 							"NCR Recruit"
 						)
 
+/datum/gear/head/steelpot_mitchell
+	name = "NCR mitchell helmet"
+	path = /obj/item/clothing/head/f13/ncr/steelpot_mitchell
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
+							"NCR Lieutenant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
+						)
+
 /datum/gear/head/ncr_recon
 	name = "NCR recon beret"
 	path = /obj/item/clothing/head/beret/ncr_recon
@@ -225,7 +239,3 @@ datum/gear/head/steelpot_patriot
 /datum/gear/head/widered
 	name = "Wide red hat"
 	path = /obj/item/clothing/head/widered
-
-/datum/gear/head/kabuto
-	name = "Kabuto helmet"
-	path = /obj/item/clothing/head/kabuto

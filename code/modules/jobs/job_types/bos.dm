@@ -39,6 +39,12 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmetmk2)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45b)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45d)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort51b)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort60)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
+
 /*
 Elder
 */
@@ -130,7 +136,7 @@ Head Paladin
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
 	belt =			/obj/item/storage/belt/military/assault
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -314,6 +320,7 @@ Head Knight
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/scatter=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/clothing/glasses/meson=1
 		)
 
 /datum/outfit/loadout/capscout
@@ -384,7 +391,7 @@ Star Paladin
 /datum/outfit/job/bos/f13seniorpaladin
 	name = "Star Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
@@ -466,7 +473,7 @@ Paladin
 /datum/outfit/job/bos/f13paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	glasses=		/obj/item/clothing/glasses/meson
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
@@ -767,6 +774,7 @@ datum/job/bos/f13seniorknight
 	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
+		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
@@ -779,6 +787,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,
@@ -867,6 +876,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,	
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
@@ -907,6 +917,7 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
+		/obj/item/clothing/glasses/meson=1,
 		/obj/item/clothing/mask/gas/welding/bos=1,		
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,

@@ -234,7 +234,8 @@
 						"muhsollini",
 						"lynuahsororitas",
 						"prawn04",
-						"nokele")
+						"nokele",
+						"leebic")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -256,14 +257,18 @@
 	path = /obj/item/storage/belt/holster/ranger357
 	ckeywhitelist = list("shoi87",
 						"someonewithapen",
-						"asterixcodix")
+						"asterixcodix",
+						"thegreatcoward",
+						"themojavewanderer")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
 	name = "10mm Service Revolver"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger10mm
-	ckeywhitelist = list("hawkwestheimer")
+	ckeywhitelist = list("hawkwestheimer",
+						 "theneworleans",
+						 "ollieoxen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -294,7 +299,8 @@
 	path = /obj/item/clothing/accessory/ranger/SGT
 	ckeywhitelist = list("usotsukihime",
 						"seabass390",
-						"panzer1944")
+						"panzer1944",
+						"purplepineapple")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -322,7 +328,11 @@
 						"melarinn",
 						"someonewithapen",
 						"muhsollini",
-						"lynuahsororitas")
+						"lynuahsororitas",
+						"themojavewanderer",
+						"leebic",
+						"theneworleans",
+						"ollieoxen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform

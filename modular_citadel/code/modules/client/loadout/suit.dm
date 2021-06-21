@@ -80,11 +80,6 @@
 	path = /obj/item/clothing/suit/jacket/letterman_red
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 
-/datum/gear/suit/jacketlettermanNT
-	name = "Nanotrasen letterman jacket"
-	path = /obj/item/clothing/suit/jacket/letterman_nanotrasen
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
-
 /datum/gear/suit/coat
 	name = "Winter coat"
 	path = /obj/item/clothing/suit/hooded/wintercoat
@@ -250,9 +245,6 @@
 	path = /obj/item/clothing/suit/hooded/wintercoat/christmascoatrg
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_COATS
 
-/datum/gear/suit/samurai
-	name = "Samurai outfit"
-	path = /obj/item/clothing/suit/samurai
 // BEGIN_INTERNALS
 // END_INTERNALS
 // BEGIN_FILE_DIR

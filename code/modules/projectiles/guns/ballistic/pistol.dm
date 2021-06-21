@@ -97,6 +97,7 @@
 	name = "\improper Desert Eagle"
 	desc = "A robust .44 magnum semi-automatic handgun."
 	icon_state = "deagle"
+	w_class = WEIGHT_CLASS_NORMAL
 	force = 14
 	mag_type = /obj/item/ammo_box/magazine/m44
 	can_suppress = FALSE

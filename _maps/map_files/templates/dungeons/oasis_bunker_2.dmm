@@ -1160,7 +1160,7 @@
 /area/f13/bunker)
 "vy" = (
 /obj/effect/decal/cleanable/blood,
-/turf/closed/indestructible/rock,
+/turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
 "vB" = (
 /obj/structure/chair/stool/retro,
@@ -1823,6 +1823,12 @@
 "FB" = (
 /obj/structure/wreck/trash/one_barrel,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
+"FK" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("supermutant")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "FM" = (
@@ -3721,7 +3727,7 @@ BD
 nN
 bY
 sG
-Fc
+FK
 rW
 Gq
 Bb
