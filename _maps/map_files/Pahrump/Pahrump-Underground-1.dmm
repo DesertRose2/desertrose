@@ -19060,6 +19060,12 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"tRl" = (
+/mob/living/simple_animal/hostile/radscorpion/black{
+	faction = list("gecko")
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "tRS" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -20110,6 +20116,12 @@
 /obj/machinery/mineral/ore_redemption,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/tunnel)
+"vfU" = (
+/mob/living/simple_animal/hostile/radscorpion{
+	faction = list("gecko")
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "vgo" = (
 /obj/effect/decal/cleanable/dirt,
@@ -29514,7 +29526,7 @@ uoO
 uoO
 uoO
 rzg
-voG
+lnr
 uoO
 uoO
 uoO
@@ -31809,7 +31821,7 @@ uoO
 uoO
 lnr
 lnr
-lnr
+sNX
 lnr
 uoO
 uoO
@@ -32834,7 +32846,7 @@ lnr
 rzg
 rzg
 uoO
-lnr
+sNX
 lnr
 lnr
 lnr
@@ -33084,7 +33096,7 @@ uoO
 uoO
 uoO
 uoO
-lnr
+vfU
 iWz
 gyS
 lnr
@@ -33341,7 +33353,7 @@ uoO
 uoO
 uoO
 uoO
-vWN
+lnr
 lnr
 lnr
 lnr
@@ -33617,7 +33629,7 @@ lnr
 lnr
 lnr
 lnr
-sNX
+lnr
 lnr
 uoO
 uoO
@@ -33859,7 +33871,7 @@ lnr
 rJA
 lnr
 ruX
-vWN
+vfU
 lnr
 uoO
 uoO
@@ -33871,7 +33883,7 @@ lnr
 lnr
 lnr
 lnr
-sNX
+lnr
 lnr
 lnr
 lnr
@@ -34112,7 +34124,7 @@ uoO
 uoO
 uoO
 uoO
-vWN
+vfU
 uoO
 uoO
 uoO
@@ -41264,7 +41276,7 @@ uoO
 lnr
 uoO
 lnr
-mLh
+tRl
 uoO
 eLE
 uoO
@@ -42033,7 +42045,7 @@ uoO
 uoO
 uoO
 lnr
-vWN
+vfU
 lnr
 lnr
 uoO
@@ -50848,7 +50860,7 @@ nBk
 nBk
 nBk
 nBk
-nBk
+mSD
 nBk
 nBk
 nBk
@@ -51117,7 +51129,7 @@ nBk
 nBk
 nBk
 nBk
-mSD
+nBk
 mRT
 nBk
 nBk

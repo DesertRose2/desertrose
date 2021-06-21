@@ -733,10 +733,6 @@
 /obj/item/stack/medical/mesh,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"pA" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/floor/grass,
-/area/f13/bunker)
 "pI" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
@@ -4608,7 +4604,7 @@ QJ
 Ed
 nu
 nu
-pA
+nu
 nu
 nu
 dj

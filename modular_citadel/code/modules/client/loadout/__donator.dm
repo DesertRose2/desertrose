@@ -299,7 +299,8 @@
 	path = /obj/item/clothing/accessory/ranger/SGT
 	ckeywhitelist = list("usotsukihime",
 						"seabass390",
-						"panzer1944")
+						"panzer1944",
+						"purplepineapple")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
