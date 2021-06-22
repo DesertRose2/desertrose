@@ -659,8 +659,8 @@
     desc = "Cracklings are the solid material which remains after rendering animal fat and skin to produce lard, tallow, or schmaltz. It is often eaten as a snack food or made into animal feed. It is also used in cooking."
     icon_state = "fried_brahmin_skin"
     filling_color = "#CD5C5C"
-    bonus_reagents = list("nutriment" = 1, "vitamin" = 1)
-    list_reagents = list("nutriment" = 6, "vitamin" = 1)
+    list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment = 1)
+    bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
     tastes = list("crispy skin" = 1)
     foodtype = MEAT
 	
