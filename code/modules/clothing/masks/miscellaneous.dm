@@ -237,7 +237,7 @@
 	item_state = "redding"
 
 /obj/item/clothing/mask/rat/flagstaff
-	name = "Legion banner flag"
+	name = "Legion banner mask"
 	desc = "A mask made of soft vinyl and latex. It has a ghastly expression and is marked with the banner of Caesar's Legion."
 	icon_state = "flagstaff"
 	item_state = "flagstaff"
