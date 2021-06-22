@@ -655,14 +655,14 @@
 	foodtype = MEAT | GRAIN 
 	
 /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
-    name = "Brahmin cracklings"
-    desc = "Cracklings are the solid material which remains after rendering animal fat and skin to produce lard, tallow, or schmaltz. It is often eaten as a snack food or made into animal feed. It is also used in cooking."
-    icon_state = "fried_brahmin_skin"
-    filling_color = "#CD5C5C"
-    list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment = 1)
-    bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
-    tastes = list("crispy skin" = 1)
-    foodtype = MEAT
+	name = "Brahmin cracklings"
+	desc = "Cracklings are the solid material which remains after rendering animal fat and skin to produce lard, tallow, or schmaltz. It is often eaten as a snack food or made into animal feed. It is also used in cooking."
+	icon_state = "fried_brahmin_skin"
+	filling_color = "#CD5C5C"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment = 1)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
+	tastes = list("crispy skin" = 1)
+	foodtype = MEAT
 	
 /obj/item/reagent_containers/food/snacks/f13/molerat_manicotti
 	name = "Molerat Manicotti"

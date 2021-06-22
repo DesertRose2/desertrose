@@ -169,19 +169,19 @@
 	subcategory = CAT_WASTEFOOD
 	
 /datum/crafting_recipe/food/friedbrahminskin
-    name = "Fried brahmin skin"
-    reqs = list(
-        /obj/item/stack/sheet/animalhide/brahmin = 2,
-        /obj/item/reagent_containers/food/snacks/butter = 1
-    )
-    result = /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
-    subcategory = CAT_MEAT
+	name = "Fried brahmin skin"
+	reqs = list(
+		/obj/item/stack/sheet/animalhide/brahmin = 2,
+		/obj/item/reagent_containers/food/snacks/butter = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
+	subcategory = CAT_MEAT
 	
 /datum/crafting_recipe/food/molerat_manicotti
-    name = "Molerat Manicotti"
-    reqs = list(
-        /obj/item/reagent_containers/food/snacks/meat/steak/molerat = 1,
-        /obj/item/reagent_containers/food/snacks/dough = 1
-    )
-    result = /obj/item/reagent_containers/food/snacks/f13/molerat_manicotti
-    subcategory = CAT_MEAT
+	name = "Molerat Manicotti"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/steak/molerat = 1,
+		/obj/item/reagent_containers/food/snacks/dough = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/molerat_manicotti
+	subcategory = CAT_MEAT
