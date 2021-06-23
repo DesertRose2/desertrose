@@ -372,7 +372,7 @@
 	M.IgniteMob()
 	return ..()
 
- /*/datum/reagent/toxin/chloralhydrate
+/*/datum/reagent/toxin/chloralhydrate
 	name = "Chloral Hydrate"
 	description = "A powerful sedative that induces confusion and drowsiness before putting its target to sleep."
 	reagent_state = SOLID
