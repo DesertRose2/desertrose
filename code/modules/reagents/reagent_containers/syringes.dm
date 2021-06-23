@@ -234,7 +234,7 @@
 	amount_per_transfer_from_this = 50
 	volume = 50
 
-/* /obj/item/reagent_containers/syringe/lethal/choral
+/*/obj/item/reagent_containers/syringe/lethal/choral
 	list_reagents = list(/datum/reagent/toxin/chloralhydrate = 50)*/
 
 /obj/item/reagent_containers/syringe/lethal/execution

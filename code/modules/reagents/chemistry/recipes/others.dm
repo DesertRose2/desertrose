@@ -708,7 +708,7 @@
 	for(var/i in 1 to multiplier)
 		new /obj/item/stack/sheet/plastic(location)
 
-/* /datum/chemical_reaction/pax
+/*/datum/chemical_reaction/pax
 	name = "pax"
 	id = /datum/reagent/pax
 	results = list(/datum/reagent/pax = 3)
