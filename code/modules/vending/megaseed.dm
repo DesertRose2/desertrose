@@ -35,6 +35,7 @@
 					/obj/item/seeds/pumpkin = 3,
 					/obj/item/seeds/rainbow_bunch = 3,
 					/obj/item/seeds/wheat/rice = 3,
+					/obj/item/seeds/rose = 3,
 					/obj/item/seeds/soya = 3,
 					/obj/item/seeds/sugarcane = 3,
 					/obj/item/seeds/sunflower = 3,
@@ -54,6 +55,7 @@
 					/obj/item/seeds/reishi = 2,
 					/obj/item/seeds/cannabis = 3,
 					/obj/item/seeds/starthistle = 2,
+					/obj/item/seeds/star_cactus = 2,
 					/obj/item/seeds/random = 2)
 	premium = list(/obj/item/reagent_containers/spray/waterflower = 1)
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)

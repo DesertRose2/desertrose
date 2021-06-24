@@ -77,3 +77,23 @@
 	qdel(src)
 	new /obj/effect/decal/cleanable/ash(drop_location())
 */
+
+/// Barrel melon Seeds
+/obj/item/seeds/watermelon/barrel
+	name = "pack of barrelmelon seeds"
+	desc = "These seeds grow into barrelmelon plants."
+	icon_state = "seed-barrelmelon"
+	species = "barrelmelon"
+	plantname = "Barrel Melon Vines"
+	product = /obj/item/reagent_containers/food/snacks/grown/barrelmelon
+	mutatelist = list()
+	reagents_add = list(/datum/reagent/consumable/ethanol/ale = 0.2, /datum/reagent/consumable/nutriment = 0.1)
+	rarity = 10
+
+/// Barrel melon Fruit
+/obj/item/reagent_containers/food/snacks/grown/barrelmelon
+	seed = /obj/item/seeds/watermelon/barrel
+	name = "barrelmelon"
+	desc = "The nutriments within this melon have been compressed and fermented into rich alcohol."
+	icon_state = "barrelmelon"
+	distill_reagent = /datum/reagent/medicine/antihol //You can call it a integer overflow.
