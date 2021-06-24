@@ -300,18 +300,16 @@
 /datum/crafting_recipe/mushroom_bowl
 	name = "Mushroom Bowl"
 	result = /obj/item/reagent_containers/glass/bowl/mushroom_bowl
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/ash_flora/shavings = 5)
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/fungus = 2)
 	time = 30
 	category = CAT_PRIMAL
 
 /obj/item/reagent_containers/food/snacks/customizable/salad/ashsalad
-	desc = "Very ashy."
 	trash = /obj/item/reagent_containers/glass/bowl/mushroom_bowl
 	icon = 'icons/obj/lavaland/ash_flora.dmi'
 	icon_state = "mushroom_bowl"
 
 /obj/item/reagent_containers/food/snacks/customizable/soup/ashsoup
-	desc = "A bowl with ash and... stuff in it."
 	trash = /obj/item/reagent_containers/glass/bowl/mushroom_bowl
 	icon = 'icons/obj/lavaland/ash_flora.dmi'
 	icon_state = "mushroom_soup"
