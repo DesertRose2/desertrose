@@ -257,10 +257,3 @@
 	item_state = "rangermask"
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
 	visor_flags_inv = 0
-
-/obj/item/clothing/mask/gas/prewar
-	name = "pre-war gas mask"
-	desc = "An old gas mask made before the war."
-	icon_state = "prewargasmask"
-	item_state = "prewargasmask"
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES
