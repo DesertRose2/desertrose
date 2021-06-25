@@ -257,3 +257,11 @@
 	item_state = "rangermask"
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
 	visor_flags_inv = 0
+
+/obj/item/clothing/mask/gas/prewar
+	name = "pre-war gas mask"
+	desc = "A pre-war gas mask used by old world armies.."
+	icon_state = "prewar"
+	item_state = "prewar"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES
