@@ -40,11 +40,13 @@
 	results = list(/datum/reagent/consumable/nukawild = 2)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/sunset = 1)
 
+/* Coded out until a better recipe can be thought up
 /datum/chemical_reaction/nukaice
 	name = "Iced Nuka"
 	id = "nukaice"
 	results = list(/datum/reagent/consumable/nukaice = 2)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/ice = 1)
+*/
 
 /datum/chemical_reaction/nukaquantum
 	name = "Nuka Quantum"
@@ -200,7 +202,7 @@
 	name = "Hard Lemonade"
 	id = "hardlemonade"
 	results = list(/datum/reagent/consumable/ethanol/hardlemonade = 3)
-	required_reagents = list("lemonade" = 1, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/radium  = 1)
+	required_reagents = list(/datum/reagent/consumable/lemonade = 1, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/radium  = 1)
 
 /datum/chemical_reaction/jakejuice
 	name = "Jake Juice"
@@ -218,13 +220,13 @@
 	name = "Nukashine"
 	id = "nukashine"
 	results = list(/datum/reagent/consumable/ethanol/nukashine = 10)
-	required_reagents = list("nutriment" = 5, /datum/reagent/consumable/nuka_cola = 5, /datum/reagent/water = 10)
+	required_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nuka_cola = 5, /datum/reagent/water = 10)
 
 /datum/chemical_reaction/olflakey
 	name = "Ol' Flakey"
 	id = "olflakey"
 	results = list(/datum/reagent/consumable/ethanol/olflakey = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/cream = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/ethanol/deathroach = 1)
 
 /datum/chemical_reaction/oldpossum
 	name = "Old Possum"
