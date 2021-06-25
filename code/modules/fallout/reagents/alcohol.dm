@@ -490,15 +490,13 @@
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(1,0))
-	M.adjustBruteLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustFireLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(2*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustBruteLoss(-0.2*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustFireLoss(-0.2*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustOxyLoss(0.2*REAGENTS_EFFECT_MULTIPLIER)
 	M.adjustStaminaLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustStun(-20, 0)
-	M.adjustToxLoss(-3, 0)
-	M.AdjustKnockdown(-20, 0)
-	M.AdjustUnconscious(-20, 0)
-	M.adjustStaminaLoss(-3, 0)
+	M.AdjustStun(-2, 0)
+	M.adjustToxLoss(-0.3, 0)
+	M.adjustStaminaLoss(-1, 0)
 	if(holder.has_reagent(/datum/reagent/consumable/frostoil))
 		holder.remove_reagent(/datum/reagent/consumable/frostoil, 5)
 	..()
@@ -598,7 +596,7 @@
 	glass_desc = "Underground river wine, stewed from logs and food poisoning."
 
 /datum/reagent/consumable/ethanol/bbrew2/on_mob_life(mob/living/carbon/M)
-	M.adjustOxyLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustOxyLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
 	..()
 
 /datum/reagent/consumable/ethanol/dwastelander
@@ -612,7 +610,7 @@
 	glass_desc = "A wastelanders second favourite."
 
 /datum/reagent/consumable/ethanol/dwastelander/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustBruteLoss(-0.3*REAGENTS_EFFECT_MULTIPLIER, 0)
 	..()
 
 /datum/reagent/consumable/ethanol/firebelly
@@ -665,8 +663,8 @@
 
 /datum/reagent/consumable/ethanol/firecracker/on_mob_life(mob/living/carbon/M)
 	if(prob(33))
-		M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
 		. = TRUE
 	..()
 
@@ -748,8 +746,9 @@
 	glass_desc = "So smooth its flakey, leaves your throat confused and your body numb."
 
 /datum/reagent/consumable/ethanol/olflakey/on_mob_life(mob/living/carbon/M)
-	M.emote("laugh")
-	M.emote("cough")
+	if(prob(10))
+		M.emote("laugh")
+		M.emote("cough")
 	..()
 
 /datum/reagent/consumable/ethanol/oldpossum
@@ -769,7 +768,7 @@
 	M.AdjustStun(-20, 0)
 	M.AdjustKnockdown(-20, 0)
 	M.AdjustUnconscious(-20, 0)
-	M.adjustStaminaLoss(-3, 0)
+	M.adjustStaminaLoss(-0.3, 0)
 	M.hallucination += 20
 	M.Jitter(2)
 	..()
@@ -786,9 +785,9 @@
 
 /datum/reagent/consumable/ethanol/sludge/on_mob_life(mob/living/carbon/M)
 	if(isghoul(M))
-		M.adjustFireLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustToxLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustFireLoss(-0.25*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustBruteLoss(-0.25*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(-0.25*REAGENTS_EFFECT_MULTIPLIER, 0)
 	else
 		if(ishuman(M))
 			if(prob(80))
@@ -808,9 +807,9 @@
 
 /datum/reagent/consumable/ethanol/strongsludge/on_mob_life(mob/living/carbon/M)
 	if(isghoul(M))
-		M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustToxLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
 	else
 		if(ishuman(M))
 			if(prob(98))
@@ -938,7 +937,7 @@
 
 /datum/reagent/consumable/ethanol/vaulttech/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
-	M.adjustToxLoss(-3, 0)
+	M.adjustToxLoss(-0.3, 0)
 	M.drowsyness = max(0,M.drowsyness-3)
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(25 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
@@ -952,7 +951,7 @@
 	description = "The beloved mascot of the Vault-Tech corporation in brew form!"
 	color = "#315585"
 	boozepwr = 40
-	taste_description = "your intelligience stat decreasing"
+	taste_description = "your intelligence stat decreasing"
 	overdose_threshold = 60
 	glass_icon_state = "vaultboyglass"
 	glass_name = "Vault Boy"
@@ -960,11 +959,10 @@
 
 /datum/reagent/consumable/ethanol/vaultboy/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
-	M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustToxLoss(-2, 0)
+	M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustToxLoss(-0.2, 0)
 	M.drowsyness = max(0,M.drowsyness-3)
-	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(25 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
 	if(holder.has_reagent(/datum/reagent/consumable/frostoil))
 		holder.remove_reagent(/datum/reagent/consumable/frostoil, 5)
@@ -995,18 +993,17 @@
 
 /datum/reagent/consumable/ethanol/vaultgirl/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
-	M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustToxLoss(-2, 0)
+	M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustToxLoss(-0.2, 0)
 	M.drowsyness = max(0,M.drowsyness-3)
-	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(25 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
 	if(holder.has_reagent(/datum/reagent/consumable/frostoil))
 		holder.remove_reagent(/datum/reagent/consumable/frostoil, 5)
 	..()
 	. = TRUE
 
-/datum/reagent/consumable/ethanol/vaultboy/overdose_process(mob/living/M)
+/datum/reagent/consumable/ethanol/vaultgirl/overdose_process(mob/living/M)
 	if(M && ishuman(M))
 		var/mob/living/carbon/human/H = M
 		H.hair_style = "Over Eye"
@@ -1080,10 +1077,11 @@
 	if(prob(50))
 		var/smoke_message = pick("You feel relaxed.", "You feel calmed.","You feel alert.","You feel rugged.")
 		to_chat(M, "<span class='notice'>[smoke_message]</span>")
-	M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	M.emote("sigh")
+	if(prob(10))
+		M.emote("sigh")
 	..()
 	. = TRUE
 
