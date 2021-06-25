@@ -552,6 +552,7 @@
 	production = 6
 	yield = 3
 	growthstages = 4
+	genes = list(/datum/plant_gene/trait/stinging)
 	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'
 	reagents_add = list(/datum/reagent/water = 0.08, /datum/reagent/consumable/nutriment = 0.05)
 
