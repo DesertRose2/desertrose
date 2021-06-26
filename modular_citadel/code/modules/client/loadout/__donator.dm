@@ -193,57 +193,57 @@
 
 /datum/gear/donator/kits/wolfgangschlimm
 	name = "Wolfgang Sclimms's belongings"
-	path = /obj/item/storage/box/large/custom_kit/wolfgangschlimm/
+	path = /obj/item/storage/box/large/custom_kit/wolfgangschlimm
 	ckeywhitelist = list("dioclex")
 	
 /datum/gear/donator/kits/crow
 	name = "Crow's belongings"
-	path = /obj/item/storage/box/large/custom_kit/crow/
+	path = /obj/item/storage/box/large/custom_kit/crow
 	ckeywhitelist = list("thefunnycheeseman")
 	
 /datum/gear/donator/kits/kc
 	name = "KC's belongings"
-	path = /obj/item/storage/box/large/custom_kit/kc/
+	path = /obj/item/storage/box/large/custom_kit/kc
 	ckeywhitelist = list("croike")
 	
 /datum/gear/donator/kits/tech
 	name = "Tech's belongings"
-	path = /obj/item/storage/box/large/custom_kit/tech/
+	path = /obj/item/storage/box/large/custom_kit/tech
 	ckeywhitelist = list("grongo")
 	
 /datum/gear/donator/kits/nova
 	name = "Nova's belongings"
-	path = /obj/item/storage/box/large/custom_kit/nova/
+	path = /obj/item/storage/box/large/custom_kit/nova
 	ckeywhitelist = list("novaskelly")
 	
 /datum/gear/donator/kits/smokes
 	name = "Smoke's belongings"
-	path = /obj/item/storage/box/large/custom_kit/smokes/
+	path = /obj/item/storage/box/large/custom_kit/smokes
 	ckeywhitelist = list("lordyanex")
 	
 /datum/gear/donator/kits/marcy
 	name = "Marcy's belongings"
-	path = /obj/item/storage/box/large/custom_kit/marcy/
+	path = /obj/item/storage/box/large/custom_kit/marcy
 	ckeywhitelist = list("landoorando")
 
 /datum/gear/donator/kits/jacktorres
 	name = "Jack Torres's belongings"
-	path = /obj/item/storage/box/large/custom_kit/jacktorres/
+	path = /obj/item/storage/box/large/custom_kit/jacktorres
 	ckeywhitelist = list("karlov")
 	
 /datum/gear/donator/kits/alicedakota
 	name = "Alice Dakota's belongings"
-	path = /obj/item/storage/box/large/custom_kit/alicedakota/
+	path = /obj/item/storage/box/large/custom_kit/alicedakota
 	ckeywhitelist = list("muhsollini")
 	
 /datum/gear/donator/kits/haideemurphy
 	name = "Haidee Murphy's belongings"
-	path = /obj/item/storage/box/large/custom_kit/haideemurphy/
+	path = /obj/item/storage/box/large/custom_kit/haideemurphy
 	ckeywhitelist = list("purplepineapple")
 	
 /datum/gear/donator/kits/aaroncooper
 	name = "Aaron Cooper's belongings"
-	path = /obj/item/storage/box/large/custom_kit/aaroncooper/
+	path = /obj/item/storage/box/large/custom_kit/aaroncooper
 	ckeywhitelist = list("wilsonmann55")
 
 //////////////////////////////
