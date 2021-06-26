@@ -232,7 +232,7 @@
 	ckeywhitelist = list("karlov")
 	
 /datum/gear/donator/kits/alicedakota
-	name = "Alcie Dakota's belongings"
+	name = "Alice Dakota's belongings"
 	path = /obj/item/storage/box/large/custom_kit/alicedakota/
 	ckeywhitelist = list("muhsollini")
 	
