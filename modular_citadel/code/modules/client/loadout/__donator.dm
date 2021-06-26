@@ -354,7 +354,6 @@
 						"pilotbland",
 						"usotsukihime",
 						"thegreatcoward")
-						
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
