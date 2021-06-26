@@ -135,7 +135,6 @@
 
 /datum/crafting_recipe/food/vanillacake
 	name = "Vanilla cake"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/store/cake/plain = 1,
 		/obj/item/reagent_containers/food/snacks/grown/vanillapod = 2
@@ -165,7 +164,6 @@
 
 /datum/crafting_recipe/food/clowncake
 	name = "Clown cake"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/store/cake/plain = 1,
 		/obj/item/reagent_containers/food/snacks/sundae = 2,

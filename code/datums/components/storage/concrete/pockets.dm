@@ -56,6 +56,7 @@
 		/obj/item/scalpel, /obj/item/reagent_containers/syringe, /obj/item/dnainjector,
 		/obj/item/reagent_containers/hypospray/medipen, /obj/item/reagent_containers/dropper,
 		/obj/item/implanter, /obj/item/screwdriver, /obj/item/weldingtool/mini,
+		/obj/item/clothing/mask/cigarette, /obj/item/storage/fancy/cigarettes,
 		/obj/item/firing_pin, /*/obj/item/throwing_star/throwingknife,*/ /obj/item/gun/ballistic/revolver/detective,
 		/obj/item/gun/ballistic/revolver/police, /obj/item/gun/ballistic/revolver/needler
 		))

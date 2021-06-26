@@ -349,6 +349,9 @@ Decanii
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
+	loadout_options = list(
+	/datum/outfit/loadout/vetdecan
+	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -366,22 +369,24 @@ Decanii
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/heavy
 	head = 			/obj/item/clothing/head/helmet/f13/legion/heavy
 	mask =			/obj/item/clothing/mask/bandana/legdecan
-	neck =			/obj/item/storage/belt/holster
+	neck =			/obj/item/storage/belt/holster/ranger45
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	ears = 			/obj/item/radio/headset/headset_legion
-	suit_store = 	/obj/item/gun/ballistic/shotgun/kar98k
 	r_pocket =		/obj/item/flashlight/lantern
 	l_pocket = 		/obj/item/attachments/scope
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/revolver45=1,
-		/obj/item/ammo_box/c45rev=2,
-		/obj/item/ammo_box/a762=3,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
-		/obj/item/claymore/machete/gladius=1,
+		/obj/item/claymore/machete/spatha=1,
 		/obj/item/storage/bag/money/small/legion=1)
 
+/datum/outfit/loadout/vetdecan
+	name = "Line Officer"
+	l_hand = /obj/item/gun/ballistic/shotgun/kar98k
+	backpack_contents = list(
+		/obj/item/ammo_box/a762=3
+	)
 
 //Prime Decanus
 /datum/job/CaesarsLegion/Legionnaire/f13decan
@@ -421,7 +426,7 @@ Decanii
 	ears = 			/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/claymore/machete/spatha=1,
+		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
