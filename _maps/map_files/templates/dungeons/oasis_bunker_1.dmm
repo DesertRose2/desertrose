@@ -598,7 +598,9 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sz" = (
-/obj/structure/nest/ghoul,
+/mob/living/simple_animal/hostile/ghoul/glowing{
+	faction = list("hostile")
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sI" = (
@@ -862,9 +864,11 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "AK" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/indestructible/ground/inside/mountain,
+/mob/living/simple_animal/hostile/radscorpion/black,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/bunker)
 "BS" = (
 /obj/structure/barricade/wooden,
@@ -892,7 +896,6 @@
 /obj/structure/sign/warning/radiation{
 	pixel_y = -30
 	},
-/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1013,9 +1016,14 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "HI" = (
-/obj/effect/spawner/lootdrop/trash,
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/ghoul/legendary,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/bunker)
 "HJ" = (
 /obj/machinery/autolathe,
@@ -1447,12 +1455,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "UM" = (
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
+/mob/living/simple_animal/hostile/ghoul/legendary,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "UW" = (
 /obj/machinery/light/small,
@@ -1511,14 +1515,6 @@
 "Yu" = (
 /obj/structure/rack,
 /obj/item/tank/internals/anesthetic,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"YN" = (
-/obj/machinery/light/small,
-/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1768,7 +1764,7 @@ pW
 pW
 NJ
 NJ
-Uq
+UM
 Qi
 Oh
 pf
@@ -1945,7 +1941,7 @@ Kz
 wR
 Xj
 Gw
-jc
+OZ
 Hu
 yC
 VE
@@ -2187,8 +2183,8 @@ pW
 pf
 pf
 pf
-au
-YN
+HI
+HQ
 pf
 Kz
 Kz
@@ -2248,7 +2244,7 @@ Kz
 Kz
 pf
 KA
-AK
+yQ
 pj
 pf
 Kz
@@ -2291,7 +2287,7 @@ Kz
 pW
 pT
 NJ
-HI
+KA
 pW
 Kz
 Kz
@@ -2692,7 +2688,7 @@ Kz
 Kz
 pf
 bp
-FQ
+bp
 pf
 Kz
 Kz
@@ -2710,13 +2706,13 @@ xN
 Ec
 wR
 jh
-UM
+bp
 NX
 mm
 xw
 hD
 bp
-gJ
+bp
 bp
 th
 oN
@@ -2934,17 +2930,17 @@ au
 fm
 bp
 bp
-gZ
+bp
 bp
 BX
 bp
 bp
 Uq
-FQ
+bp
 pW
 pW
 bp
-FQ
+bp
 pf
 Kz
 Kz
@@ -3015,8 +3011,8 @@ gJ
 bp
 BX
 bp
+AK
 bp
-gZ
 xv
 NX
 cW
@@ -3042,7 +3038,7 @@ Kz
 Kz
 bp
 gZ
-gZ
+bp
 bp
 BX
 bp
