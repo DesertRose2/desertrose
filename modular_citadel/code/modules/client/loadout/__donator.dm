@@ -191,6 +191,61 @@
 	path = /obj/item/storage/box/large/custom_kit/arolhendredge
 	ckeywhitelist = list("sadokist")
 
+/datum/gear/donator/kits/wolfgangschlimm
+	name = "Wolfgang Sclimms's belongings"
+	path = /obj/item/storage/box/large/custom_kit/wolfgangschlimm
+	ckeywhitelist = list("dioclex")
+	
+/datum/gear/donator/kits/crow
+	name = "Crow's belongings"
+	path = /obj/item/storage/box/large/custom_kit/crow
+	ckeywhitelist = list("thefunnycheeseman")
+	
+/datum/gear/donator/kits/kc
+	name = "KC's belongings"
+	path = /obj/item/storage/box/large/custom_kit/kc
+	ckeywhitelist = list("croike")
+	
+/datum/gear/donator/kits/tech
+	name = "Tech's belongings"
+	path = /obj/item/storage/box/large/custom_kit/tech
+	ckeywhitelist = list("grongo")
+	
+/datum/gear/donator/kits/nova
+	name = "Nova's belongings"
+	path = /obj/item/storage/box/large/custom_kit/nova
+	ckeywhitelist = list("novaskelly")
+	
+/datum/gear/donator/kits/smokes
+	name = "Smoke's belongings"
+	path = /obj/item/storage/box/large/custom_kit/smokes
+	ckeywhitelist = list("lordyanex")
+	
+/datum/gear/donator/kits/marcy
+	name = "Marcy's belongings"
+	path = /obj/item/storage/box/large/custom_kit/marcy
+	ckeywhitelist = list("landoorando")
+
+/datum/gear/donator/kits/jacktorres
+	name = "Jack Torres's belongings"
+	path = /obj/item/storage/box/large/custom_kit/jacktorres
+	ckeywhitelist = list("karlov")
+	
+/datum/gear/donator/kits/alicedakota
+	name = "Alice Dakota's belongings"
+	path = /obj/item/storage/box/large/custom_kit/alicedakota
+	ckeywhitelist = list("muhsollini")
+	
+/datum/gear/donator/kits/haideemurphy
+	name = "Haidee Murphy's belongings"
+	path = /obj/item/storage/box/large/custom_kit/haideemurphy
+	ckeywhitelist = list("purplepineapple")
+	
+/datum/gear/donator/kits/aaroncooper
+	name = "Aaron Cooper's belongings"
+	path = /obj/item/storage/box/large/custom_kit/aaroncooper
+	ckeywhitelist = list("wilsonmann55")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -212,7 +267,10 @@
 						"svenja",
 						"panzer1944",
 						"purplepineapple",
-						"topbirb")
+						"topbirb",
+						"usotsukihime",
+						"thegreatcoward",
+						"gurking")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -277,7 +335,9 @@
 	path = /obj/item/clothing/accessory/ranger/CPT
 	ckeywhitelist = list("superballs",
 						"shoi87",
-						"svenja")
+						"svenja",
+						"usotsukihime",
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerlieutenantpins
@@ -290,7 +350,10 @@
 						"panzer1944",
 						"purplepineapple",
 						"topbirb",
-						"asterixcodix")
+						"asterixcodix",
+						"pilotbland",
+						"usotsukihime",
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -300,7 +363,8 @@
 	ckeywhitelist = list("usotsukihime",
 						"seabass390",
 						"panzer1944",
-						"purplepineapple")
+						"purplepineapple",
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
