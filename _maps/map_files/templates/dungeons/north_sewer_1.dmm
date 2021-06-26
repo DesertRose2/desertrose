@@ -54,10 +54,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "dP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/floor/plating/tunnel,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/grimy,
 /area/f13/tunnel)
 "dY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -128,12 +128,11 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "gM" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/neutral,
 /area/f13/tunnel)
 "hx" = (
@@ -349,7 +348,6 @@
 	brightness = 3;
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/neutral,
 /area/f13/tunnel)
@@ -378,8 +376,8 @@
 	},
 /area/f13/tunnel)
 "pS" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/neutral/side{
 	dir = 8
 	},
@@ -556,21 +554,22 @@
 	},
 /area/f13/tunnel)
 "zs" = (
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/deathclaw/legendary{
+	bare_wound_bonus = 10;
+	health = 1250;
+	melee_damage_lower = 85;
+	melee_damage_upper = 90;
+	name = "Alpha Deathclaw";
+	speed = -1.25;
+	wound_bonus = 10
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "zE" = (
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/f13/tunnel)
-"zV" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
-/mob/living/simple_animal/hostile/centaur,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "Aw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1251,7 +1250,7 @@ Rj
 EK
 Qs
 LK
-zV
+nz
 Vv
 Zk
 iY
@@ -1741,7 +1740,7 @@ Rj
 SK
 Rj
 CJ
-EK
+Be
 Cf
 kz
 iY
@@ -1774,7 +1773,7 @@ AS
 Kr
 iY
 Rj
-Jh
+Rj
 Rj
 iY
 Qs
@@ -2077,7 +2076,7 @@ iY
 pi
 sw
 sw
-gM
+sw
 Or
 sw
 sw
@@ -2113,9 +2112,9 @@ kE
 QU
 iY
 pJ
-lm
-TD
 pS
+TD
+lm
 lm
 lm
 QF
@@ -2234,7 +2233,7 @@ IZ
 bS
 iY
 Qs
-Be
+Rj
 Qs
 Rj
 Rj
@@ -2302,7 +2301,7 @@ BH
 (32,1,1) = {"
 QU
 iY
-Fx
+dP
 Kr
 iY
 iY
@@ -2557,7 +2556,7 @@ Ev
 ZL
 Rj
 Rj
-dP
+Aw
 tO
 iY
 BH
@@ -2596,7 +2595,7 @@ ZL
 Rj
 lM
 Rj
-Rj
+zs
 BQ
 ZL
 BH
@@ -2852,7 +2851,7 @@ LU
 BH
 BH
 LU
-HI
+LU
 LU
 BH
 QU
@@ -2977,7 +2976,7 @@ qz
 LU
 LU
 qz
-zs
+qz
 BH
 BH
 QU

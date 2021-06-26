@@ -259,7 +259,8 @@
 	},
 /area/f13/bunker)
 "fy" = (
-/mob/living/simple_animal/hostile/cazador/young,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/fireant,
 /turf/open/floor/grass,
 /area/f13/bunker)
 "fB" = (
@@ -336,8 +337,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "gA" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/mob/living/simple_animal/hostile/cazador/young,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/giantant,
 /turf/open/floor/grass,
 /area/f13/bunker)
 "gB" = (
@@ -567,7 +568,6 @@
 	},
 /area/f13/bunker)
 "mc" = (
-/mob/living/simple_animal/hostile/poison/giant_spider,
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit,
@@ -628,16 +628,6 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/grass,
-/area/f13/bunker)
-"nm" = (
-/mob/living/simple_animal/hostile/handy{
-	faction = list("hostile","goodboy")
-	},
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
 /area/f13/bunker)
 "nr" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -1007,11 +997,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
-"wb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/fireant,
-/turf/open/floor/grass,
-/area/f13/bunker)
 "we" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/barber{
@@ -1219,14 +1204,6 @@
 /area/f13/bunker)
 "AE" = (
 /mob/living/simple_animal/hostile/poison/giant_spider/hunter,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"AF" = (
-/mob/living/simple_animal/hostile/poison/giant_spider,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1716,21 +1693,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
-"KK" = (
-/mob/living/simple_animal/hostile/radscorpion,
-/obj/structure/spider/stickyweb,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
 "KN" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/grass,
 /area/f13/bunker)
 "KO" = (
-/mob/living/simple_animal/hostile/alien,
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -2016,15 +1983,6 @@
 /obj/item/surgical_drapes,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
-/area/f13/bunker)
-"PH" = (
-/mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("hostile","goodboy")
-	},
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
 /area/f13/bunker)
 "PO" = (
 /obj/item/storage/trash_stack,
@@ -2476,7 +2434,6 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Zg" = (
-/mob/living/simple_animal/hostile/radscorpion/black,
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
@@ -3503,7 +3460,7 @@ ns
 XM
 XM
 XM
-PH
+XM
 yr
 kj
 BR
@@ -3539,7 +3496,7 @@ SP
 TU
 XM
 XM
-nm
+Bw
 XM
 XM
 XM
@@ -3566,7 +3523,7 @@ xG
 Zg
 xJ
 XN
-dD
+kj
 Ra
 kj
 XM
@@ -3638,9 +3595,9 @@ Rl
 Rl
 xG
 HC
-RB
 oj
-RB
+oj
+oj
 xG
 XM
 Bw
@@ -3792,7 +3749,7 @@ xG
 KO
 go
 go
-DM
+go
 xG
 OR
 cQ
@@ -3902,19 +3859,19 @@ Rl
 xG
 XM
 vH
-dD
+kj
 bB
 XM
 Sa
 XM
 fW
-fj
+XM
 XM
 XN
 pI
 XM
 xf
-KK
+XN
 yr
 Vf
 fj
@@ -4063,7 +4020,7 @@ xG
 nU
 Pp
 XM
-jX
+XM
 JN
 Fp
 xG
@@ -4339,7 +4296,7 @@ QE
 kj
 yS
 Bw
-AF
+Bw
 XM
 Ra
 LG
@@ -4408,7 +4365,7 @@ XM
 MJ
 kj
 ti
-fy
+nu
 nu
 nu
 nu
@@ -4510,7 +4467,7 @@ Rl
 Rl
 Rl
 xG
-ZP
+fy
 ey
 ZP
 FK
@@ -4587,8 +4544,8 @@ Rl
 Rl
 xG
 ZP
-wb
 ZP
+gA
 pR
 ZP
 fC
@@ -4599,7 +4556,7 @@ Ra
 Ra
 ti
 nu
-fy
+nu
 QJ
 Ed
 nu
@@ -4683,7 +4640,7 @@ nu
 nu
 Om
 ny
-gA
+Vx
 nu
 xG
 Rl
@@ -4950,7 +4907,7 @@ mC
 Px
 go
 go
-TH
+oj
 oj
 xG
 Rl
@@ -5043,7 +5000,7 @@ Rl
 Rl
 xG
 oj
-RB
+oj
 bP
 go
 iJ
@@ -5164,7 +5121,7 @@ XO
 RB
 oh
 oh
-RB
+oj
 oh
 XO
 Rl
