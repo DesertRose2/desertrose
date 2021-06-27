@@ -271,7 +271,7 @@
 	path = /obj/item/storage/box/large/custom_kit/citadel/
 	ckeywhitelist = list("arkadec")
 	
-/datum/gear/donator/kits/arolhendredge
+/datum/gear/donator/kits/bladetalon
 	name = "Blade's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bladetalon
 	ckeywhitelist = list("sadokist")
