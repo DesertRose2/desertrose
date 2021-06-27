@@ -261,8 +261,8 @@
 	
 //Tranio Occisor Luti - spaceanglo	
 /obj/item/storage/box/large/custom_kit/traniooccisorluti/PopulateContents()
-	new /obj/item/clothing/gloves/f13/blacksmith
-	new /obj/item/clothing/mask/bandana/skull
+	new /obj/item/clothing/gloves/f13/blacksmith(src)
+	new /obj/item/clothing/mask/bandana/skull(src)
 	
 //Graves - pisshole
 /obj/item/storage/box/large/custom_kit/gravestalon/PopulateContents()
@@ -278,7 +278,7 @@
 	
 //Citadel - arkadec
 /obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
-	new /obj/item/clothing/mask/rat/citadel
+	new /obj/item/clothing/mask/rat/citadel(src)
 
 //Blade - Sadokist
 /obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
@@ -288,3 +288,23 @@
 //Felina - Yurek
 /obj/item/storage/box/large/custom_kit/felina/PopulateContents()
 	new /obj/item/modkit/talon(src)	
+	
+//Lamb - yecrowbarman
+/obj/item/storage/box/large/custom_kit/lamb/PopulateContents()
+	new /obj/item/modkit/talon(src)	
+	
+//Pea-Shooter - elizabethdame
+/obj/item/storage/box/large/custom_kit/peashooter/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/brahmincowboyhat(src)
+	new /obj/item/clothing/shoes/workboots/mining(src)
+	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/mask/bandana/oldredbandana(src)
+	new /obj/item/clothing/glasses/legiongoggles(src)
+	new /obj/item/gun/ballistic/shotgun/bb(src)
+	
+//Spencer Hynes - leebic
+/obj/item/storage/box/large/custom_kit/spencerhynes/PopulateContents()
+	new /obj/item/clothing/under/rank/civilian/clown(src)
+	new /obj/item/clothing/shoes/clown_shoes(src)
+	new /obj/item/clothing/mask/gas/clown_hat(src)
+	

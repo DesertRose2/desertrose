@@ -280,6 +280,21 @@
 	name = "Felina's belongings"
 	path = /obj/item/storage/box/large/custom_kit/felina
 	ckeywhitelist = list("yurek1")
+	
+/datum/gear/donator/kits/lamb
+	name = "Lamb's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lamb/
+	ckeywhitelist = list("yecrowbarman")
+	
+/datum/gear/donator/kits/peashooter
+	name = "Pea Shooter's belongings"
+	path = /obj/item/storage/box/large/custom_kit/peashooter/
+	ckeywhitelist = list("elizabethdame")
+	
+/datum/gear/donator/kits/spencerhynes
+	name = "Spencer Hyne's belongings"
+	path = /obj/item/storage/box/large/custom_kit/spencerhynes/
+	ckeywhitelist = list("leebic")
 
 //////////////////////////////
 ///Ranger items start here.///
