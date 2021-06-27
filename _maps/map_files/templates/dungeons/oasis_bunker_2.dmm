@@ -1249,10 +1249,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"xs" = (
-/mob/living/simple_animal/hostile/handy/assaultron,
-/turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
 "xu" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/floor/plasteel/barber{
@@ -1626,11 +1622,6 @@
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
-/area/f13/bunker)
-"Dc" = (
-/mob/living/simple_animal/hostile/handy/assaultron,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "De" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
@@ -3095,7 +3086,7 @@ Zs
 rW
 fg
 fg
-Dc
+fg
 rW
 lN
 oF
@@ -3139,7 +3130,7 @@ WI
 fg
 PN
 rW
-xs
+oF
 fg
 rJ
 rW

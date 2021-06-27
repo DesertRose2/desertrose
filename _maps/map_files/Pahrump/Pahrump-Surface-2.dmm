@@ -12790,10 +12790,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
-"irF" = (
-/obj/structure/nest/mirelurk,
-/turf/open/water,
-/area/f13/caves)
 "irI" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water,
@@ -13625,7 +13621,6 @@
 /area/f13/village)
 "iOD" = (
 /obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/raider,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "iOF" = (
@@ -14149,11 +14144,6 @@
 /obj/structure/barricade/wooden/planks,
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/brotherhood)
-"jeV" = (
-/obj/structure/barricade/sandbags,
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "jeX" = (
 /obj/structure/chair/office,
 /turf/open/floor/f13/wood,
@@ -25840,11 +25830,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/building)
-"qOp" = (
-/mob/living/simple_animal/hostile/mirelurk/baby,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/caves)
 "qOA" = (
 /obj/structure/chair/booth{
 	dir = 8
@@ -26533,14 +26518,6 @@
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
-"rlX" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/raider/ranged,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/f13/caves)
 "rnc" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowdestroyed"
@@ -56141,7 +56118,7 @@ ssm
 fyf
 pcG
 hDQ
-hDQ
+uRJ
 uRJ
 uRJ
 uRJ
@@ -68134,7 +68111,7 @@ fyf
 fyf
 gcK
 oFp
-rlX
+qik
 vnj
 xgZ
 gpC
@@ -85397,7 +85374,7 @@ mTd
 iEp
 icW
 icW
-qOp
+icW
 icW
 iEp
 mTd
@@ -85912,7 +85889,7 @@ mTd
 vfU
 icW
 icW
-qOp
+icW
 iOM
 ggK
 gcK
@@ -86693,7 +86670,7 @@ ggK
 ggK
 mTd
 iOM
-jci
+ggK
 gcK
 gcK
 gcK
@@ -86913,7 +86890,7 @@ gcK
 gcK
 ktB
 gcK
-aeg
+ggK
 asI
 ggK
 asI
@@ -86944,7 +86921,7 @@ gcK
 gcK
 gcK
 mTd
-jci
+ggK
 ggK
 ggK
 ggK
@@ -88992,10 +88969,10 @@ csk
 csk
 fwu
 csk
-qyJ
 csk
 csk
-irF
+csk
+csk
 fwu
 hBr
 gcK
@@ -89238,7 +89215,7 @@ qyJ
 csk
 fzl
 ggK
-aeg
+ggK
 dfR
 irI
 irI
@@ -92497,7 +92474,7 @@ ees
 fsm
 ubd
 fyf
-jeV
+jxH
 jxH
 fyf
 fyf
@@ -93998,7 +93975,7 @@ fyf
 fyf
 fyf
 fyf
-nPu
+fyf
 fyf
 fyf
 fyf
