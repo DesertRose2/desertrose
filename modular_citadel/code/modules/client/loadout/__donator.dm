@@ -263,18 +263,23 @@
 	
 /datum/gear/donator/kits/stitch
 	name = "Stitch's belongings"
-	path = /obj/item/storage/box/large/custom_kit/stitch/
+	path = /obj/item/storage/box/large/custom_kit/stitch
 	ckeywhitelist = list("themojavewanderer")
 
 /datum/gear/donator/kits/citadel
 	name = "Citadel's belongings"
-	path = /obj/item/storage/box/large/custom_kit/citadel/
+	path = /obj/item/storage/box/large/custom_kit/citadel
 	ckeywhitelist = list("arkadec")
 	
 /datum/gear/donator/kits/bladetalon
 	name = "Blade's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bladetalon
 	ckeywhitelist = list("sadokist")
+	
+/datum/gear/donator/kits/felina
+	name = "Felina's belongings"
+	path = /obj/item/storage/box/large/custom_kit/felina
+	ckeywhitelist = list("yurek1")
 
 //////////////////////////////
 ///Ranger items start here.///

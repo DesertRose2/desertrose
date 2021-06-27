@@ -284,3 +284,7 @@
 /obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
 	new /obj/item/modkit/luger(src)
 	new /obj/item/modkit/talon(src)
+
+//Felina - Yurek
+/obj/item/storage/box/large/custom_kit/felina/PopulateContents()
+	new /obj/item/modkit/talon(src)	
