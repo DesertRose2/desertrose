@@ -279,3 +279,8 @@
 //Citadel - arkadec
 /obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
 	new /obj/item/clothing/mask/rat/citadel
+
+//Blade - Sadokist
+/obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
+	new /obj/item/modkit/luger(src)
+	new /obj/item/modkit/talon(src)

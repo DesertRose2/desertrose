@@ -270,6 +270,11 @@
 	name = "Citadel's belongings"
 	path = /obj/item/storage/box/large/custom_kit/citadel/
 	ckeywhitelist = list("arkadec")
+	
+/datum/gear/donator/kits/arolhendredge
+	name = "Blade's belongings"
+	path = /obj/item/storage/box/large/custom_kit/bladetalon
+	ckeywhitelist = list("sadokist")
 
 //////////////////////////////
 ///Ranger items start here.///
