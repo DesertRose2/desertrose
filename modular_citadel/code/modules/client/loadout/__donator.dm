@@ -245,6 +245,16 @@
 	name = "Aaron Cooper's belongings"
 	path = /obj/item/storage/box/large/custom_kit/aaroncooper
 	ckeywhitelist = list("wilsonmann55")
+	
+/datum/gear/donator/kits/traniooccisorluti
+	name = "Tranio Occisor Luti's belongings"
+	path = /obj/item/storage/box/large/custom_kit/traniooccisorluti
+	ckeywhitelist = list("spaceanglo")
+	
+/datum/gear/donator/kits/gravestalon
+	name = "Grave's belongings"
+	path = /obj/item/storage/box/large/custom_kit/gravestalon
+	ckeywhitelist = list("pisshole")
 
 //////////////////////////////
 ///Ranger items start here.///

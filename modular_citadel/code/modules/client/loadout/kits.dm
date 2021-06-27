@@ -224,24 +224,24 @@
 
 //KC - croike
 /obj/item/storage/box/large/custom_kit/kc/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/talon(src)
+	new /obj/item/modkit/talon(src)
 	
 //Tech - grongo
 /obj/item/storage/box/large/custom_kit/tech/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/talon(src)
+	new /obj/item/modkit/talon(src)
 	
 //Nova - novaskelly
 /obj/item/storage/box/large/custom_kit/nova/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/talon(src)
+	new /obj/item/modkit/talon(src)
 	new /obj/item/clothing/accessory/armband/med(src)
 
 //Smokes - lordyanex
 /obj/item/storage/box/large/custom_kit/smokes/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/talon(src)
+	new /obj/item/modkit/talon(src)
 	
 //Marcy - landoorando
 /obj/item/storage/box/large/custom_kit/marcy/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/marked_patrol(src)
+	new /obj/item/modkit/markedmen(src)
 	
 //Jack Torres - karlov
 /obj/item/storage/box/large/custom_kit/jacktorres/PopulateContents()
@@ -259,4 +259,11 @@
 /obj/item/storage/box/large/custom_kit/aaroncooper/PopulateContents()
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
 	
+//Tranio Occisor Luti - spaceanglo	
+/obj/item/storage/box/large/custom_kit/traniooccisorluti/PopulateContents()
+	new /obj/item/clothing/gloves/f13/blacksmith
+	new /obj/item/clothing/mask/bandana/skull
 	
+//Graves - pisshole
+/obj/item/storage/box/large/custom_kit/gravestalon/PopulateContents()
+	new /obj/item/modkit/talon(src)
