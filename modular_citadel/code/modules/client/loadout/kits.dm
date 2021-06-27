@@ -267,3 +267,20 @@
 //Graves - pisshole
 /obj/item/storage/box/large/custom_kit/gravestalon/PopulateContents()
 	new /obj/item/modkit/talon(src)
+	
+//Poet - schmeezi
+/obj/item/storage/box/large/custom_kit/poet/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Stitch - themojavewanderer
+/obj/item/storage/box/large/custom_kit/stitch/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Citadel - arkadec
+/obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
+	new /obj/item/clothing/mask/rat/citadel
+
+//Blade - Sadokist
+/obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
+	new /obj/item/modkit/luger(src)
+	new /obj/item/modkit/talon(src)
