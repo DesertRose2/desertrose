@@ -255,6 +255,21 @@
 	name = "Grave's belongings"
 	path = /obj/item/storage/box/large/custom_kit/gravestalon
 	ckeywhitelist = list("pisshole")
+	
+/datum/gear/donator/kits/poet
+	name = "Poet's belongings"
+	path = /obj/item/storage/box/large/custom_kit/poet
+	ckeywhitelist = list("schmeezi")
+	
+/datum/gear/donator/kits/stitch
+	name = "Stitch's belongings"
+	path = /obj/item/storage/box/large/custom_kit/stitch/
+	ckeywhitelist = list("themojavewanderer")
+
+/datum/gear/donator/kits/citadel
+	name = "Citadel's belongings"
+	path = /obj/item/storage/box/large/custom_kit/citadel/
+	ckeywhitelist = list("arkadec")
 
 //////////////////////////////
 ///Ranger items start here.///
