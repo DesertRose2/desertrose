@@ -83,6 +83,12 @@
 	icon_state = "ncr_boots"
 	item_state = "ncr"
 
+/obj/item/clothing/shoes/f13/military/oldcombat
+	name = "Old Combat Boots"
+	desc = "A pair of old, pre-war styled boots made for combat."
+	icon_state = "oldcombat"
+	item_state = "oldcombat"
+
 /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	name = "officer boots"
 	desc = "A pair of well-polished brown leather calf boots fitted with straps."

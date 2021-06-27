@@ -138,7 +138,7 @@
 
 /obj/item/clothing/head/helmet/f13/ahp_helmet
 	name = "highway patrol helmet"
-	desc = "(V) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
+	desc = "(IV) An old police motorcycle helmet with the logo of the 'Arizona Department of Public Safety' emblazoned on the front."
 	icon_state = "ahp_helmet"
 	item_state = "ahp_helmet"
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
@@ -637,7 +637,7 @@
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
-	desc = "(I) A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
+	desc = "(II) A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
 	icon_state = "bandit"
 	item_state = "fedora"
 	flags_inv = HIDEHAIR
@@ -900,3 +900,19 @@
 				while(up)
 					playsound(src.loc, "[active_sound]", 100, 0, 4)
 					sleep(15)
+
+/obj/item/clothing/head/f13/schlimmhat
+	name = "foreign Florentine hat"
+	desc = "(II) A simple stiff straw hat with a red ribbon tied around the crown. This example appears to be pre-war, yet emmaculately preserved."
+	icon_state = "schlimmhat"
+	item_state = "schlimmhat"
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+
+/obj/item/clothing/head/helmet/f13/boonie_hat
+	name = "USMC boonie hat"
+	desc = "(II) An old USMC boonie hat with a pin in the center of its crown. Despite its age the hat is in remarkable condition."
+	icon_state = "boonie_hat"
+	item_state = "boonie_hat"
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+	flags_inv = HIDEEARS|HIDEHAIR
+

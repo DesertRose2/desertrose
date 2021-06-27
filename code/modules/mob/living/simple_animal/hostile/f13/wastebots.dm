@@ -468,11 +468,11 @@
 	faction = list("wastebot")
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
 
-	emote_taunt_sound = FALSE
-	emote_taunt = FALSE
+	emote_taunt_sound = list('sound/f13npc/assaultron/taunt1.ogg', 'sound/f13npc/assaultron/taunt2.ogg', 'sound/f13npc/assaultron/taunt3.ogg', 'sound/f13npc/assaultron/taunt4.ogg', 'sound/f13npc/assaultron/taunt5.ogg')
+	emote_taunt = list("whirs")
 
-	aggrosound = FALSE
-	idlesound = FALSE
+	aggrosound = list('sound/f13npc/assaultron/aggro1.ogg', 'sound/f13npc/assaultron/aggro2.ogg', 'sound/f13npc/assaultron/aggro3.ogg', 'sound/f13npc/assaultron/aggro4.ogg', 'sound/f13npc/assaultron/aggro5.ogg')
+	idlesound = list('sound/f13npc/assaultron/idle1.ogg', 'sound/f13npc/assaultron/idle2.ogg', 'sound/f13npc/assaultron/idle3.ogg')
 
 /mob/living/simple_animal/hostile/handy/assaultron/nsb //NSB + Raider Bunker specific.
 	name = "assaultron"

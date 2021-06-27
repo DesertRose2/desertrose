@@ -1258,3 +1258,55 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+
+/datum/crafting_recipe/bospowerarmort45b
+	name = "brotherhood restored T45 power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
+	reqs = list (/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored = 1,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/crafting/electronicparts = 3,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE			
+
+/datum/crafting_recipe/bospowerarmort45d
+	name = "brotherhood T45d power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45d = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE			
+
+/datum/crafting_recipe/bospowerarmort51b
+	name = "brotherhood T51b power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t51b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE			
+
+/datum/crafting_recipe/bospowerarmort60
+	name = "brotherhood T60 power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t60/bos
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t60 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE			
+
+/datum/crafting_recipe/bosweldingmask
+	name = "brotherhood welding mask"
+	result = /obj/item/clothing/mask/gas/welding/bos
+	reqs = list(/obj/item/clothing/mask/gas/welding = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+	always_availible = FALSE			

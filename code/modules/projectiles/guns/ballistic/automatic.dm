@@ -479,7 +479,10 @@
 /obj/item/gun/ballistic/automatic/cg45
 	name = "carl gustaf 10mm"
 	desc = "Post-war submachine gun made in Flagstaff workshops based on a simple old design. Chambered in 10mm."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "cg45"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -878,7 +881,7 @@
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_HEAVY
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
@@ -889,6 +892,12 @@
 	semi_auto = TRUE
 	can_automatic = FALSE
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+
+/obj/item/gun/ballistic/automatic/m1garand/ncr
+	name = "Pawolski's Retribution"
+	desc = "'I am your rifle, you are on guard duty.'"
+	icon_state = "pawolski"
+	extra_damage = 5
 
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
@@ -993,45 +1002,32 @@
 	desc = "A DKS 501, chambered in .308 Winchester. This one has a gold trim and the words 'Old Cassius' engraved into the stock."
 	icon_state = "gold_sniper"
 	item_state = "gold_sniper"
+ 
 
-
-
+//Auto-pipe rifle. Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe
-	name = "\improper auto pipe rifle"
-	desc = "An improvised rifle improved with automatic capability, highly innacurate and slow to fire"
-	icon_state = "auto_pipe_rifle"
-	item_state = "improvshotgun"
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/autopipe
-	fire_sound = 'sound/weapons/Gunshot.ogg'
-	can_suppress = FALSE
+	name = "Auto pipe rifle (.357)"
+	desc = "Crude automatic weapon, no safety, overheats almost instantly, but what do you expect from pipes and duct tape?"
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon_state = "autopipe"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	item_state = "autopipe"
 	burst_size = 4
 	fire_delay = 30
 	burst_shot_delay = 3
-	sawn_desc = "An improvised rifle improved with automatic capability, highly innacurate and slow to fire. This one has been sawn off"
-	//automatic = 1
 	spread = 24
-
-/obj/item/gun/ballistic/automatic/autopipe/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			burst_size = 4
-			spread = 24
-			fire_delay = 25
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(1)
-			select = 0
-			burst_size = 1
-			spread = 5
-			fire_delay = 8
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	/*slot_flags = ITEM_SLOT_BACK   sprite won't show up for some reason */
+	mag_type = /obj/item/ammo_box/magazine/autopipe
+	fire_sound = 'sound/f13weapons/357magnum.ogg'
+	can_suppress = FALSE
+	can_bayonet = TRUE
+	bayonet_state = "lasmusket"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	semi_auto = FALSE
 
 /obj/item/gun/ballistic/automatic/shotgun/riot
 	name = "breacher shotgun" //name changed to distinguish from /obj/item/gun/ballistic/shotgun/riot

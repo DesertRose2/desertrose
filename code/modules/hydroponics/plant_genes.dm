@@ -389,8 +389,6 @@
 /datum/plant_gene/trait/repeated_harvest/can_add(obj/item/seeds/S)
 	if(!..())
 		return FALSE
-	if(istype(S, /obj/item/seeds/replicapod))
-		return FALSE
 	return TRUE
 
 /datum/plant_gene/trait/battery
@@ -496,3 +494,8 @@
 /datum/plant_gene/trait/plant_type/carnivory
 	name = "Obligate Carnivory"
 
+/datum/plant_gene/trait/brewing
+	name = "Auto-Distilling Composition"
+
+/datum/plant_gene/trait/juicing
+	name = "Auto-Juicing Composition"

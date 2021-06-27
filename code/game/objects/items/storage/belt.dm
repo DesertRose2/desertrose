@@ -123,6 +123,13 @@
 	new /obj/item/multitool/advanced/brass(src)
 	new /obj/item/stack/cable_coil(src, 30, "yellow")
 
+/obj/item/storage/belt/utility/bos/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/experimental(src)
+	new /obj/item/stack/cable_coil(src, 30, "yellow")
+	new /obj/item/multitool/advanced/brass(src)
+
 /obj/item/storage/belt/medical
 	name = "medical belt"
 	desc = "Can hold various medical equipment."
@@ -750,7 +757,9 @@
 		/obj/item/ammo_box/c45rev,
 		/obj/item/gun/energy/laser/solar,
 		/obj/item/gun/energy/laser/pistol,
+		/obj/item/gun/energy/laser/crusader,
 		/obj/item/gun/energy/laser/plasma/pistol,
+		/obj/item/gun/energy/plasma/crusader,
 		/obj/item/gun/energy/laser/plasma/glock,
 		/obj/item/gun/energy/laser/plasma/glock/extended,
 		/obj/item/gun/energy/laser/wattz,
@@ -908,7 +917,7 @@
 /obj/item/storage/belt/sabre/twin
 	name = "twin sheath"
 	desc = "Two sheaths. One is capable of holding a katana (or bokken) and the other a wakizashi. You could put two wakizashis in if you really wanted to. Now you can really roleplay as a samurai."
-	icon_state = "twinsheath"
+	icon_state = "2sheath"
 	item_state = "quiver" //this'll do.
 	w_class = WEIGHT_CLASS_BULKY
 	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken)
@@ -944,6 +953,12 @@
 	new /obj/item/wirecutters(src)
 	new /obj/item/multitool(src)
 	new /obj/item/stack/cable_coil(src,30,pick("red","yellow","orange"))
+
+/obj/item/storage/belt/military/assault/ncr/crossbelt
+	name = "NCR officer cross-belt"
+	desc = "A polished leather claw belt with cross-strap designed for officers."
+	icon_state = "crossbelt"
+	item_state = "crossbelt"
 
 /obj/item/storage/belt/military/reconbandolier
 	name = "NCR recon bandolier"

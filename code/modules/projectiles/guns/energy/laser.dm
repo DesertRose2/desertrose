@@ -638,7 +638,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/gun/energy/laser/crusader/update_icon_state()
@@ -653,7 +653,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
-	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/gun/energy/plasma/crusader/update_icon_state()

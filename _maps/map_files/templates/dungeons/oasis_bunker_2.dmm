@@ -1160,7 +1160,7 @@
 /area/f13/bunker)
 "vy" = (
 /obj/effect/decal/cleanable/blood,
-/turf/closed/indestructible/rock,
+/turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
 "vB" = (
 /obj/structure/chair/stool/retro,
@@ -1248,10 +1248,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
-/area/f13/bunker)
-"xs" = (
-/mob/living/simple_animal/hostile/handy/assaultron,
-/turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "xu" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
@@ -1627,11 +1623,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
-"Dc" = (
-/mob/living/simple_animal/hostile/handy/assaultron,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
 "De" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/plasteel/barber{
@@ -1823,6 +1814,12 @@
 "FB" = (
 /obj/structure/wreck/trash/one_barrel,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
+"FK" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("supermutant")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "FM" = (
@@ -3089,7 +3086,7 @@ Zs
 rW
 fg
 fg
-Dc
+fg
 rW
 lN
 oF
@@ -3133,7 +3130,7 @@ WI
 fg
 PN
 rW
-xs
+oF
 fg
 rJ
 rW
@@ -3721,7 +3718,7 @@ BD
 nN
 bY
 sG
-Fc
+FK
 rW
 Gq
 Bb

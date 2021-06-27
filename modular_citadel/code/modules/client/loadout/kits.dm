@@ -210,3 +210,81 @@
 //Arol Hendredge - sadokist
 /obj/item/storage/box/large/custom_kit/arolhendredge/PopulateContents()
 	new /obj/item/modkit/luger(src)
+	
+//Wolfgang Schlimm - dioclex
+/obj/item/storage/box/large/custom_kit/wolfgangschlimm/PopulateContents()
+	new /obj/item/clothing/head/f13/schlimmhat(src)
+	new /obj/item/clothing/suit/armor/f13/schlimmcoat(src)
+	new /obj/item/clothing/under/f13/schlimmsuit(src)
+	
+//Crow - thefunnycheeseman
+/obj/item/storage/box/large/custom_kit/crow/PopulateContents()
+	new /obj/item/card/id/rusted(src)
+	new /obj/item/clothing/mask/rat/raven(src)
+
+//KC - croike
+/obj/item/storage/box/large/custom_kit/kc/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Tech - grongo
+/obj/item/storage/box/large/custom_kit/tech/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Nova - novaskelly
+/obj/item/storage/box/large/custom_kit/nova/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	new /obj/item/clothing/accessory/armband/med(src)
+
+//Smokes - lordyanex
+/obj/item/storage/box/large/custom_kit/smokes/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Marcy - landoorando
+/obj/item/storage/box/large/custom_kit/marcy/PopulateContents()
+	new /obj/item/modkit/markedmen(src)
+	
+//Jack Torres - karlov
+/obj/item/storage/box/large/custom_kit/jacktorres/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/boonie_hat(src)
+	
+//Alice Dakota - muhsollini
+/obj/item/storage/box/large/custom_kit/alicedakota/PopulateContents()
+	new /obj/item/clothing/mask/rat/vaultboy(src)
+	
+//Haidee Murphy - purplepineapple
+/obj/item/storage/box/large/custom_kit/haideemurphy/PopulateContents()
+	new /obj/item/clothing/mask/rat/redding(src)
+	
+//Aaron Cooper - wilsonmann55
+/obj/item/storage/box/large/custom_kit/aaroncooper/PopulateContents()
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+	
+//Tranio Occisor Luti - spaceanglo	
+/obj/item/storage/box/large/custom_kit/traniooccisorluti/PopulateContents()
+	new /obj/item/clothing/gloves/f13/blacksmith
+	new /obj/item/clothing/mask/bandana/skull
+	
+//Graves - pisshole
+/obj/item/storage/box/large/custom_kit/gravestalon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Poet - schmeezi
+/obj/item/storage/box/large/custom_kit/poet/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Stitch - themojavewanderer
+/obj/item/storage/box/large/custom_kit/stitch/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	
+//Citadel - arkadec
+/obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
+	new /obj/item/clothing/mask/rat/citadel
+
+//Blade - Sadokist
+/obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
+	new /obj/item/modkit/luger(src)
+	new /obj/item/modkit/talon(src)
+
+//Felina - Yurek
+/obj/item/storage/box/large/custom_kit/felina/PopulateContents()
+	new /obj/item/modkit/talon(src)	

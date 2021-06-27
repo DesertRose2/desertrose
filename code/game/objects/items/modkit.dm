@@ -177,6 +177,16 @@
 	name = "P08 luger modkit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
 	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+	
+/obj/item/modkit/talon
+	name = "Talon armor modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/talon
+
+/obj/item/modkit/markedmen
+	name = "Marked patrol modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/marked_patrol
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm
@@ -204,7 +214,7 @@
 						/obj/item/gun/energy/laser/crusader,
 						/obj/item/gun/energy/plasma/crusader
 	)
-	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle
+	result_item = /obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr
 
 /obj/item/modkit/crusader_laser
 	name = "crusader pistol laser conversion kit"

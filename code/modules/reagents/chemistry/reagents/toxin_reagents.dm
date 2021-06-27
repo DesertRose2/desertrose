@@ -372,7 +372,7 @@
 	M.IgniteMob()
 	return ..()
 
-/datum/reagent/toxin/chloralhydrate
+/*/datum/reagent/toxin/chloralhydrate
 	name = "Chloral Hydrate"
 	description = "A powerful sedative that induces confusion and drowsiness before putting its target to sleep."
 	reagent_state = SOLID
@@ -393,7 +393,7 @@
 			M.Sleeping(40, 0)
 			M.adjustToxLoss((current_cycle - 50)*REM, 0)
 			. = 1
-	..()
+	..()*/
 
 /datum/reagent/toxin/fakebeer	//disguised as normal beer for use by emagged brobots
 	name = "Beer"
