@@ -6730,6 +6730,12 @@
 /obj/item/clothing/head/helmet/roman/fake,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"gNX" = (
+/mob/living/simple_animal/hostile/deathclaw/mother,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/clinic)
 "gNZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -7615,6 +7621,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
+"hJR" = (
+/mob/living/simple_animal/hostile/radroach,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "hJV" = (
 /obj/effect/decal/waste,
 /turf/open/indestructible/ground/inside/mountain,
@@ -18195,7 +18205,6 @@
 /area/f13/tunnel)
 "sIN" = (
 /obj/effect/decal/cleanable/cobweb,
-/mob/living/simple_animal/hostile/poison/giant_spider,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "sJm" = (
@@ -20442,7 +20451,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "vCk" = (
-/mob/living/simple_animal/hostile/deathclaw,
+/mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "vCF" = (
@@ -21508,7 +21517,6 @@
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibtorso"
 	},
-/mob/living/simple_animal/hostile/deathclaw,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xhd" = (
@@ -26662,7 +26670,7 @@ dJw
 nsw
 dOx
 xIF
-xVW
+xIF
 wvi
 xIF
 oEC
@@ -26921,7 +26929,7 @@ rMk
 xIF
 xIF
 rKy
-nsw
+xIF
 okO
 dZF
 eLE
@@ -28718,7 +28726,7 @@ ise
 iSA
 mxI
 ise
-hOT
+bcN
 lVt
 lVt
 bcN
@@ -28729,17 +28737,17 @@ hOT
 eUk
 bcN
 tRS
-hOT
+bcN
 eUk
 bcN
 tRS
 hOT
 oOE
 bcN
-hOT
 bcN
 bcN
-hOT
+bcN
+bcN
 siF
 bcN
 eUk
@@ -28994,7 +29002,7 @@ bcN
 bcN
 bcN
 bcN
-bcN
+gNX
 bcN
 bcN
 bcN
@@ -31842,7 +31850,7 @@ lnr
 lnr
 bAD
 lnr
-voG
+lnr
 lnr
 voG
 uoO
@@ -32349,7 +32357,7 @@ uoO
 uoO
 voG
 lnr
-voG
+lnr
 lnr
 lnr
 lnr
@@ -34651,7 +34659,7 @@ uoO
 uoO
 uoO
 iRU
-xMx
+rjz
 rjz
 ybf
 uoO
@@ -35409,7 +35417,7 @@ jfU
 jfU
 wtp
 jfU
-kNK
+jfU
 jfU
 jfU
 jfU
@@ -37460,7 +37468,7 @@ uoO
 uoO
 jfU
 jfU
-kNK
+jfU
 jfU
 jfU
 jfU
@@ -49810,7 +49818,7 @@ hkn
 hkn
 gzK
 gyl
-vCk
+hkn
 xCd
 mDq
 eLE
@@ -50067,7 +50075,7 @@ rkH
 mDq
 mDq
 xop
-hkn
+vCk
 oHE
 mDq
 eLE
@@ -58610,9 +58618,9 @@ nBk
 nBk
 nBk
 nBk
+hJR
 nBk
 nBk
-mSD
 nBk
 nBk
 nBk
@@ -58871,7 +58879,7 @@ nBk
 nBk
 nBk
 nBk
-nBk
+hJR
 nBk
 nBk
 nBk
@@ -59922,7 +59930,7 @@ nBk
 nBk
 nBk
 nBk
-mSD
+nBk
 tur
 tur
 tur
@@ -60586,7 +60594,7 @@ tur
 uoO
 uoO
 icd
-iOr
+lnr
 lnr
 qTb
 lnr
@@ -61882,7 +61890,7 @@ tur
 tur
 tur
 dxj
-yfe
+dxj
 dxj
 cxb
 dxj
@@ -62251,7 +62259,7 @@ aBb
 aBb
 kBo
 lnr
-pXa
+lnr
 aBb
 aBb
 aBb
@@ -63291,7 +63299,7 @@ aBb
 aBb
 lnr
 lnr
-pXa
+lnr
 aBb
 aBb
 aBb
@@ -64309,7 +64317,7 @@ aBb
 aBb
 aBb
 lnr
-pXa
+lnr
 lnr
 aBb
 lnr
@@ -64326,7 +64334,7 @@ aBb
 aBb
 lnr
 aBb
-pXa
+lnr
 lnr
 vCe
 lnr
@@ -65861,7 +65869,7 @@ lnr
 aBb
 uHU
 lnr
-pXa
+lnr
 aBb
 aBb
 aBb
@@ -66364,7 +66372,7 @@ aBb
 lnr
 aBb
 aBb
-pXa
+lnr
 lnr
 lnr
 ofm
@@ -67152,7 +67160,7 @@ aBb
 pXa
 lnr
 lnr
-pXa
+lnr
 aBb
 aBb
 uoO
@@ -67895,7 +67903,7 @@ uoO
 tur
 mRT
 nBk
-mSD
+nBk
 miI
 tur
 uoO
@@ -72767,7 +72775,7 @@ kFo
 wrJ
 cIi
 tnp
-tjI
+cvb
 cvb
 mFJ
 cvb
@@ -73536,7 +73544,7 @@ djc
 iwu
 wrJ
 iIu
-ubN
+wrJ
 tnp
 cvb
 cvb
@@ -74060,7 +74068,7 @@ coX
 wrJ
 kkq
 cAf
-ubN
+wrJ
 wrJ
 bjp
 tnp

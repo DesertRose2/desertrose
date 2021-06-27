@@ -106,6 +106,7 @@
 "cb" = (
 /obj/effect/decal/fakelattice,
 /obj/item/ammo_casing/shotgun/improvised,
+/mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -213,10 +214,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/radiation)
-"dx" = (
-/mob/living/simple_animal/hostile/handy/protectron/nsb,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "dL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/chem_master/advanced,
@@ -710,7 +707,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
 /obj/effect/decal/cleanable/generic,
-/mob/living/simple_animal/hostile/handy/gutsy/nsb,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "nC" = (
@@ -928,11 +924,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/radiation)
-"rE" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/assaultron/nsb,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "rM" = (
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -1046,14 +1037,6 @@
 	icon_state = "floor7-old"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"uw" = (
-/obj/effect/decal/fakelattice,
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/raider/tribal,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
 /area/f13/bunker)
 "uz" = (
 /obj/machinery/door/airlock/grunge,
@@ -1352,7 +1335,6 @@
 	},
 /area/f13/bunker)
 "yP" = (
-/mob/living/simple_animal/hostile/raider/firefighter,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old"
 	},
@@ -1785,11 +1767,6 @@
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"Hz" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/raider/baseball,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "HE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
@@ -2054,13 +2031,6 @@
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"LR" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/raider/tribal,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/bunker)
 "LZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
@@ -2193,11 +2163,6 @@
 "PI" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"Qd" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/water,
-/area/f13/caves)
 "Qh" = (
 /obj/effect/decal/fakelattice,
 /turf/open/indestructible/ground/inside/subway,
@@ -2478,7 +2443,6 @@
 /area/f13/tunnel)
 "Vd" = (
 /obj/item/fishingrod,
-/mob/living/simple_animal/hostile/raider/thief,
 /turf/open/water,
 /area/f13/tunnel)
 "Vp" = (
@@ -2539,10 +2503,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
-"Wj" = (
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/water,
-/area/f13/caves)
 "WG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
@@ -2568,10 +2528,6 @@
 /obj/structure/barricade/wooden/strong,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/water,
-/area/f13/tunnel)
-"Xi" = (
-/mob/living/simple_animal/hostile/raider/biker,
-/turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "Xn" = (
 /obj/structure/decoration/rag{
@@ -2749,8 +2705,6 @@
 /area/f13/radiation)
 "ZZ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/handy/assaultron/nsb,
-/mob/living/simple_animal/hostile/handy/assaultron/nsb,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 
@@ -3024,7 +2978,7 @@ qz
 QU
 mn
 QG
-wv
+ZN
 oq
 mn
 mn
@@ -3680,7 +3634,7 @@ Sx
 yP
 Tq
 Tq
-Xi
+kE
 kE
 wI
 wI
@@ -3867,7 +3821,7 @@ kI
 hc
 XE
 vS
-xJ
+PI
 sT
 Yn
 Yn
@@ -3902,7 +3856,7 @@ Tq
 If
 RZ
 Yn
-ee
+pC
 pC
 CN
 aK
@@ -3948,7 +3902,7 @@ PI
 Yn
 po
 WO
-LR
+vf
 mn
 QU
 BH
@@ -4064,7 +4018,7 @@ XJ
 ts
 kO
 bl
-uw
+vB
 Wi
 vc
 ki
@@ -4138,7 +4092,7 @@ DI
 PI
 Yn
 zz
-ee
+pC
 Et
 gM
 Yn
@@ -4204,7 +4158,7 @@ QU
 Xo
 QO
 he
-Ko
+Tq
 fV
 PI
 pC
@@ -4228,7 +4182,7 @@ Yn
 yI
 wx
 tG
-rE
+pC
 RU
 Ni
 Yn
@@ -4327,7 +4281,7 @@ PI
 pC
 dp
 vB
-Hz
+ZZ
 zo
 jr
 RK
@@ -4409,7 +4363,7 @@ dc
 YP
 Pr
 PI
-He
+PI
 sF
 LZ
 uO
@@ -4447,7 +4401,7 @@ ZB
 pC
 ck
 dc
-Pr
+PI
 PI
 RF
 PI
@@ -4473,10 +4427,10 @@ yk
 fG
 ld
 Sx
-QN
+Tq
 Sx
 Tq
-If
+Sx
 ik
 YP
 LG
@@ -4584,7 +4538,7 @@ BH
 Vw
 Jf
 vw
-dx
+SD
 gI
 vw
 vw
@@ -4823,7 +4777,7 @@ sR
 sR
 lP
 DD
-Wj
+DD
 DD
 DD
 DD
@@ -4869,7 +4823,7 @@ DD
 DD
 cA
 sR
-Qd
+lP
 DD
 sR
 sR
