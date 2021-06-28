@@ -300,7 +300,6 @@
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/mask/bandana/oldredbandana(src)
 	new /obj/item/clothing/glasses/legiongoggles(src)
-	new /obj/item/gun/ballistic/shotgun/bb(src)
 	
 //Spencer Hynes - leebic
 /obj/item/storage/box/large/custom_kit/spencerhynes/PopulateContents()

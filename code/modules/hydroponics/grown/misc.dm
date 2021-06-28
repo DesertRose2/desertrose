@@ -560,7 +560,7 @@
 /obj/item/reagent_containers/food/snacks/grown/star_cactus
 	seed = /obj/item/seeds/star_cactus
 	name = "star cacti"
-	desc = "A spikey, round cluster of prickly star cacti. And no, it's not called a star cactus because it's in space."
+	desc = "A small cluster of prickly star-shaped cacti."
 	icon_state = "starcactus"
 	filling_color = "#1c801c"
 	foodtype = VEGETABLES
