@@ -301,9 +301,3 @@
 	new /obj/item/clothing/mask/bandana/oldredbandana(src)
 	new /obj/item/clothing/glasses/legiongoggles(src)
 	
-//Spencer Hynes - leebic
-/obj/item/storage/box/large/custom_kit/spencerhynes/PopulateContents()
-	new /obj/item/clothing/under/rank/civilian/clown(src)
-	new /obj/item/clothing/shoes/clown_shoes(src)
-	new /obj/item/clothing/mask/gas/clown_hat(src)
-	
