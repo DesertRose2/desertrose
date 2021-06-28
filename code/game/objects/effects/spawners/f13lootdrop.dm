@@ -1174,7 +1174,8 @@
 				/obj/effect/spawner/bundle/f13/breacher,
 				/obj/effect/spawner/bundle/f13/beam,
 				/obj/effect/spawner/bundle/f13/aer12,
-				/obj/effect/spawner/bundle/f13/hunting
+				/obj/effect/spawner/bundle/f13/hunting,
+				/obj/item/gun/energy/laser/plasma/glock
 				)
 
 /obj/effect/spawner/bundle/f13/beam
