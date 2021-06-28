@@ -291,8 +291,8 @@
 /obj/structure/anvil/obtainable/basic
 	name = "anvil"
 	desc = "An anvil. It's got wheels bolted to the bottom."
-	anvilquality = 0
-	itemqualitymax = 6
+	anvilquality = 1
+	itemqualitymax = 8
 
 /obj/structure/anvil/obtainable/ratvar
 	name = "brass anvil"

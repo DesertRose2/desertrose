@@ -273,17 +273,14 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 
-/*
 /datum/crafting_recipe/warmace
 	name = "Carve Wooden Warmace"
 	result = /obj/item/twohanded/sledgehammer/warmace
 	time = 100
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 20,
 				/obj/item/stack/sheet/cloth = 3)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_PRIMAL
-	subcategory = CAT_TRIBAL_WEAPONS
-*/
 
 /datum/crafting_recipe/training_machete
 	name = "training machete"
