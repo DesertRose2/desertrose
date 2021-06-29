@@ -1019,7 +1019,7 @@
 	if(istype(W, /obj/item/clothing/head))
 		hat(W, user)
 		return
-	
+
 /obj/item
 	var/tinkered = 0
 
@@ -1035,7 +1035,10 @@
 	if(istype(W,/obj/item/gun/ballistic/automatic/shotgun))
 		to_chat(usr, "You can't improve [W.name]...")
 		return
-	var/obj/item/gun/ballistic/B = W 
+	if (istype(W,/obj/item/gun/ballistic/revolver/doublebarrel))
+		to_chat(usr, "You can't improve [W.name]...")
+		return
+	var/obj/item/gun/ballistic/B = W
 
 	var/dmgmod = rand(-10,10)
 	var/penmod = rand(-10,10)
@@ -1070,7 +1073,7 @@
 			prefix = "Superior "
 		if(30 to 100)
 			prefix = "Legendary "
-	
+
 	B.extra_damage += (dmgmod)
 	B.extra_penetration += (penmod/60)
 	B.fire_delay += (spdmod/5)
@@ -1096,7 +1099,7 @@
 		penmod += 4
 		spdmod += 4
 		overall = dmgmod+penmod-spdmod
-	
+
 	if(E.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
 		return
@@ -1118,7 +1121,7 @@
 			prefix = "Superior "
 		if(30 to 100)
 			prefix = "Legendary "
-	
+
 	E.extra_damage += (dmgmod)
 	E.extra_penetration += (penmod/60)
 	E.fire_delay += (spdmod/5)
@@ -1219,7 +1222,7 @@
 
 	to_chat(usr, "You tinker with the armor making [W.name]...")
 	qdel(src)
-			
+
 /obj/item/experimental/proc/parmor(obj/item/W, mob/user)
 	var/obj/item/clothing/suit/armor/f13/power_armor/A = W
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
@@ -1285,7 +1288,7 @@
 	var/list/vhigh = list(/obj/item/melee/powerfist, /obj/item/nullrod/claymore/chainsaw_sword)
 
 	var/list/high = list(/obj/item/shishkebabpack, /obj/item/gun/energy/gammagun, /obj/item/clothing/suit/armor/f13/sulphitearmor,
-	/obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/melee/powerfist/moleminer, /obj/item/circuitboard/machine/chem_master, 
+	/obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/melee/powerfist/moleminer, /obj/item/circuitboard/machine/chem_master,
 	/obj/item/circuitboard/machine/cell_charger)
 
 	var/list/mid = list(/obj/item/twohanded/fireaxe/bmprsword, /obj/item/twohanded/sledgehammer, /obj/item/shield/makeshift,/obj/item/gun/ballistic/automatic/autopipe,

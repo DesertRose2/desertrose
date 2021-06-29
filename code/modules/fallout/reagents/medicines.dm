@@ -207,22 +207,22 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	overdose_threshold = 16
+	overdose_threshold = 11
 	addiction_threshold = 6
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 75
-		M.health += 75
+		M.maxHealth += 25
+		M.health += 25
 		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 75
-		M.health -= 75
+		M.maxHealth -= 25
+		M.health -= 25
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	switch(current_cycle)
 		if(1 to 25)
@@ -233,7 +233,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
-//			M.adjust_eye_damage(6)
+			M.Unconscious (50)
 			M.set_disgust(12)
 			M.adjustStaminaLoss(30*REAGENTS_EFFECT_MULTIPLIER)
 			to_chat(M, "<span class='danger'>Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. </span>")
@@ -241,7 +241,6 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			M.confused +=40
 			M.blur_eyes(30)
 			M.losebreath += 10
-//			M.adjust_eye_damage(12)
 			M.set_disgust(25)
 			M.adjustStaminaLoss(40*REAGENTS_EFFECT_MULTIPLIER)
 			M.vomit(30, 1, 1, 5, 0, 0, 0, 60)
