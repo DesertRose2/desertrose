@@ -283,13 +283,23 @@
 	
 /datum/gear/donator/kits/lamb
 	name = "Lamb's belongings"
-	path = /obj/item/storage/box/large/custom_kit/lamb/
+	path = /obj/item/storage/box/large/custom_kit/lamb
 	ckeywhitelist = list("yecrowbarman")
 	
 /datum/gear/donator/kits/peashooter
 	name = "Pea Shooter's belongings"
-	path = /obj/item/storage/box/large/custom_kit/peashooter/
+	path = /obj/item/storage/box/large/custom_kit/peashooter
 	ckeywhitelist = list("elizabethdame")
+	
+/datum/gear/donator/kits/silvertalon
+	name = "Silver's belongings"
+	path = /obj/item/storage/box/large/custom_kit/silvertalon
+	ckeywhitelist = list("muhsollini")
+	
+/datum/gear/donator/kits/marinetalon
+	name = "Marine's belongings"
+	path = /obj/item/storage/box/large/custom_kit/marinetalon
+	ckeywhitelist = list("saintsfan3324")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -338,7 +348,10 @@
 						"lynuahsororitas",
 						"prawn04",
 						"nokele",
-						"leebic")
+						"leebic",
+						"akforeplay",
+						"kirshbia",
+						"arkadec")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -362,7 +375,9 @@
 						"someonewithapen",
 						"asterixcodix",
 						"thegreatcoward",
-						"themojavewanderer")
+						"themojavewanderer",
+						"muhsollini",
+						"rangerbust")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -398,7 +413,8 @@
 						"asterixcodix",
 						"pilotbland",
 						"usotsukihime",
-						"thegreatcoward")
+						"thegreatcoward",
+						"gurking")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -441,7 +457,11 @@
 						"themojavewanderer",
 						"leebic",
 						"theneworleans",
-						"ollieoxen")
+						"ollieoxen",
+						"akforeplay",
+						"rangerbust",
+						"kirshbia",
+						"arkadec")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform

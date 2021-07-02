@@ -187,6 +187,11 @@
 	name = "Marked patrol modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
 	result_item = /obj/item/clothing/suit/armor/f13/marked_patrol
+	
+/obj/item/modkit/ncr_trenchcloak
+	name = "Ranger trenchcloak modkit"
+	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	result_item = /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm

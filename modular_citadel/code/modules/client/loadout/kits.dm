@@ -301,3 +301,13 @@
 	new /obj/item/clothing/mask/bandana/oldredbandana(src)
 	new /obj/item/clothing/glasses/legiongoggles(src)
 	
+//Silver - muhsollini
+/obj/item/storage/box/large/custom_kit/silvertalon/PopulateContents()
+	new /obj/item/clothing/under/syndicate/skirt(src)
+	new /obj/item/modkit/talon(src)
+
+//Marine - saintsfan3324
+/obj/item/storage/box/large/custom_kit/marinetalon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+	
