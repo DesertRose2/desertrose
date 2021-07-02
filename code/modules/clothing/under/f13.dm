@@ -561,6 +561,12 @@
 	icon_state = "Biker"
 	item_state = "Biker"
 
+/obj/item/clothing/under/f13/vaq
+	name = "dark cowboy outfit"
+	desc = "A dark colored, multilayer outfit, featuring a dingy gold belt, black vest, white button up, and black slacks. It makes the wearer look like the shadow of death, though. Spooky."
+	icon_state = "vaq_vest"
+	item_state = "vaq_vest"
+
 /* //slave rags, crafted from 2 cloth- uncomment when sprites available
 /obj/item/clothing/under/f13/slaverags
 	name = "slave rags"

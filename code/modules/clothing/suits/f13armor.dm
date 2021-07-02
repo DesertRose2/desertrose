@@ -888,6 +888,17 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/vaq
+	name = "talon company armour"
+	desc = "(IV) A deep black coat, shiny and shockingly clean. Whoever keeps a hold of this must be some kind of clean freak. There's one patch on the right breast, a strange symbol featuring a flowering rose. Just under, the Talon Company symbol could be seen."
+	icon_state = "vaq_coat"
+	item_state = "vaq_coat"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/talon/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE

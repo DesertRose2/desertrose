@@ -21,6 +21,12 @@
 	icon_state = "legpolarizing"
 	item_state = "legpolarizing"
 
+/obj/item/clothing/glasses/vaq
+	name = "black mask"
+	desc = "A strange mask, hardly does any good hiding one's identity. Maybe that's the point?"
+	icon_state = "vaq_mask"
+	item_state = "vaq_mask"
+
 //Fallout 13 sunglasses
 
 /obj/item/clothing/glasses/sunglasses/f13

@@ -165,6 +165,13 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
+/obj/item/clothing/head/helmet/f13/raider/vaq
+	name = "black hat"
+	desc = "(IV) A black, wide brimmed hat. Presumeably it helps keep the sun out. Its quite heavy, though. Is that an armor plate underneath?"
+	icon_state = "vaq_hat"
+	item_state = "vaq_hat"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 //Legion
 /obj/item/clothing/head/f13/legion/servant
 	name = "servant headwear"
