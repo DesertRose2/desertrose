@@ -280,6 +280,26 @@
 	name = "Felina's belongings"
 	path = /obj/item/storage/box/large/custom_kit/felina
 	ckeywhitelist = list("yurek1")
+	
+/datum/gear/donator/kits/lamb
+	name = "Lamb's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lamb
+	ckeywhitelist = list("yecrowbarman")
+	
+/datum/gear/donator/kits/peashooter
+	name = "Pea Shooter's belongings"
+	path = /obj/item/storage/box/large/custom_kit/peashooter
+	ckeywhitelist = list("elizabethdame")
+	
+/datum/gear/donator/kits/silvertalon
+	name = "Silver's belongings"
+	path = /obj/item/storage/box/large/custom_kit/silvertalon
+	ckeywhitelist = list("muhsollini")
+	
+/datum/gear/donator/kits/marinetalon
+	name = "Marine's belongings"
+	path = /obj/item/storage/box/large/custom_kit/marinetalon
+	ckeywhitelist = list("saintsfan3324")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -328,7 +348,10 @@
 						"lynuahsororitas",
 						"prawn04",
 						"nokele",
-						"leebic")
+						"leebic",
+						"akforeplay",
+						"kirshbia",
+						"arkadec")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -341,7 +364,8 @@
 						"asterixcodix",
 						"panzer1944",
 						"purplepineapple",
-						"edisnij")
+						"edisnij",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -352,7 +376,9 @@
 						"someonewithapen",
 						"asterixcodix",
 						"thegreatcoward",
-						"themojavewanderer")
+						"themojavewanderer",
+						"muhsollini",
+						"rangerbust")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -388,7 +414,8 @@
 						"asterixcodix",
 						"pilotbland",
 						"usotsukihime",
-						"thegreatcoward")
+						"thegreatcoward",
+						"gurking")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -431,7 +458,12 @@
 						"themojavewanderer",
 						"leebic",
 						"theneworleans",
-						"ollieoxen")
+						"ollieoxen",
+						"akforeplay",
+						"rangerbust",
+						"kirshbia",
+						"arkadec",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
