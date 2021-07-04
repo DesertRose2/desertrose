@@ -443,6 +443,24 @@
 
 
 
+/obj/item/gun/energy/laser/plasma/p94
+	name = "p-94 plasma rifle"
+	item_state = "p94"
+	icon_state = "p94"
+	fire_delay = 5
+	extra_damage = 2
+	desc = "An old-school plasma rifle that was produced by Winchester and supplied to the army as an improvment on the large caster version before REPCON's more famous urban model replaced it."
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	can_scope = TRUE
+	scope_state = "plasma_scope"
+	scope_x_offset = 13
+	scope_y_offset = 16
+
+/obj/item/gun/energy/laser/plasma/p94/update_icon_state()
+	icon_state = "[initial(icon_state)][cell ? "" : "-e"]"
 
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "multiplas Rifle"
