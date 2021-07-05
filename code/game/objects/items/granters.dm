@@ -622,6 +622,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/R82)
 
+/obj/item/book/granter/crafting_recipe/blueprint/bastard
+	name = "bastard LMG blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list (/datum/crafting_recipe/bastard)
+
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	icon_state = "blueprint2"
@@ -723,6 +728,11 @@
 	name = "plasma rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/plasmarifle)
+
+/obj/item/book/granter/crafting_recipe/blueprint/p94
+	name = "p94 plasma rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/p94)
 
 /obj/item/book/granter/crafting_recipe/blueprint/tribeam
 	name = "tribeam laser rifle blueprint"
@@ -871,7 +881,7 @@
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer")
-	if(granted_trait == null)	
+	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
 			if(null)
@@ -898,9 +908,9 @@
 			if("Tinkerer")
 				granted_trait = TRAIT_MASTER_GUNSMITH
 				traitname = "tinkering"
-	else 
+	else
 		. = ..()
-		
+
 /obj/item/book/granter/trait/selection/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
