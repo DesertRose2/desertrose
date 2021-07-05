@@ -304,7 +304,7 @@
 /datum/gear/donator/kits/flagstaff
 	name = "Flagstaff's belongings"
 	path = /obj/item/storage/box/large/custom_kit/flagstaff
-	ckeywhitelist = list"("landoorando")
+	ckeywhitelist = list("landoorando")
 
 //////////////////////////////
 ///Ranger items start here.///
