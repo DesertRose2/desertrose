@@ -58,7 +58,7 @@
 	user.last_action = world.time
 	user.newtonian_move(get_dir(A, user))
 	var/turf/T = get_turf(src)
-	if(reagents.has_reagent(/datum/reagent/toxin/acid))		
+	if(reagents.has_reagent(/datum/reagent/toxin/acid))
 		log_game("[key_name(user)] fired sulphuric acid from \a [src] at [AREACOORD(T)].")
 	if(reagents.has_reagent(/datum/reagent/toxin/acid/fluacid))
 		log_game("[key_name(user)] fired Fluacid from \a [src] at [AREACOORD(T)].")
@@ -333,3 +333,12 @@
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	volume = 100
 	list_reagents = list(/datum/reagent/toxin/plantbgone = 100)
+
+//Chem/Drug
+/obj/item/reagent_containers/spray/hydra
+	name = "hydra bottle"
+	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "hydra"
+	volume = 15
+	list_reagents = list(/datum/reagent/medicine/hydra = 15)
