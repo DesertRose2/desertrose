@@ -312,4 +312,4 @@
 
 //Flagstaff - landoorando
 /obj/item/storage/box/large/custom_kit/flagstaff/PopulateContents()
-	new /obj/item/clothing/mask/rat/flagstaff()
+	new /obj/item/clothing/mask/rat/flagstaff(src)
