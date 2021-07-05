@@ -953,7 +953,7 @@
 	return
 
 /obj/item/gun/ballistic/automatic/bastard
-	name = "/'Bastard'/ LMG"
+	name = "'Bastard' LMG"
 	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
 	icon_state = "bastard"
 	item_state = "bastard"
