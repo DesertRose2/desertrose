@@ -554,7 +554,7 @@
 	can_suppress = FALSE
 	can_attachments = TRUE
 	extra_damage = -4
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
@@ -573,7 +573,7 @@
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
