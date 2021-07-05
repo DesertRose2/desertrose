@@ -121,6 +121,12 @@
 	icon_state = "erin_boot"
 	item_state = "erin_boot"
 
+/obj/item/clothing/shoes/f13/military/cowboy
+	name = "ranger cowboy boots"
+	desc = "A pair of cowhide boots with spurs, traced over with tan paint.<br>They have a Cuban heel, rounded to pointed toe, high shaft, and, traditionally, no lacing."
+	icon_state = "cowboy_ranger"
+	item_state = "cowboy_ranger"
+
 //Fluff
 
 /obj/item/clothing/shoes/f13/swimfins
