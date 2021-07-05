@@ -646,3 +646,12 @@
 /obj/item/storage/pill_bottle/chem_tin/buffout/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/buffout(src)
+
+/obj/item/storage/pill_bottle/chem_tin/cateye
+	name = "Cateye"
+	icon_state = "pill_canister_cateye"
+	desc = "Contains pills used to increase one's senses."
+
+/obj/item/storage/pill_bottle/chem_tin/cateye/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/cateye(src)
