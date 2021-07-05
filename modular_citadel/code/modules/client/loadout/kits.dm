@@ -310,4 +310,6 @@
 /obj/item/storage/box/large/custom_kit/marinetalon/PopulateContents()
 	new /obj/item/modkit/talon(src)
 
-	
+//Flagstaff - landoorando
+/obj/item/storage/box/large/custom_kit/flagstaff/PopulateContents()
+	new /obj/item/clothing/mask/rat/flagstaff()
