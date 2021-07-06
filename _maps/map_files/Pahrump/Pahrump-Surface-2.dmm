@@ -7158,7 +7158,7 @@
 /area/f13/brotherhood)
 "eUD" = (
 /obj/machinery/button/door{
-	id = Marshal's Office;
+	id = "Marshal's Office";
 	pixel_x = 32
 	},
 /turf/open/floor/f13{
@@ -12217,14 +12217,6 @@
 /obj/structure/bed/mattress,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
-"iaf" = (
-/obj/structure/ladder/unbreakable{
-	id = "VC5
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/city)
 "iap" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -50698,7 +50690,7 @@ prs
 sfB
 wOj
 kQb
-iaf
+xLh
 xLh
 pCM
 xLh
