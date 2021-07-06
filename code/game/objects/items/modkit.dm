@@ -192,6 +192,11 @@
 	name = "Ranger trenchcloak modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
 	result_item = /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
+	
+/obj/item/modkit/rangerjacket
+	name = "Ranger jacket modkit"
+	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	result_item = /obj/item/clothing/suit/armor/f13/rangerrecon_jacket
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm

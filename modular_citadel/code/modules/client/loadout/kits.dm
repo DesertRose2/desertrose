@@ -313,3 +313,14 @@
 //Flagstaff - landoorando
 /obj/item/storage/box/large/custom_kit/flagstaff/PopulateContents()
 	new /obj/item/clothing/mask/rat/flagstaff(src)
+
+//Emily Winona - muhsollini
+/obj/item/storage/box/large/custom_kit/emilywinona/PopulateContents()
+	new /obj/item/modkit/rangerjacket(src)
+	new /obj/item/clothing/under/f13/ranger/modif_ranger(src)
+	new /obj/item/clothing/shoes/f13/military/cowboy(src)
+	new /obj/item/clothing/mask/bandana/ranger(src)
+	new /obj/item/storage/belt/holster/hip(src)
+	new /obj/item/storage/belt/military/assault/ncr/crossbelt/reverse(src)
+	new /obj/item/clothing/accessory/waistcoat/cowboy(src)
+	
