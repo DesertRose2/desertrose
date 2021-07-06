@@ -251,7 +251,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion venator armor"
-	desc = "(VII) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
+	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
 	icon_state = "legvenator"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
@@ -286,7 +286,7 @@
 	desc = "(VI) A suit of armor collected over the years by the deaths of countless NCR rangers. It forfeits protection for added speed."
 	icon_state = "rangercent"
 	item_state = "rangercent"
-	slowdown = -0.21
+	slowdown = -0.20
 	armor = list("tier" = 6, "energy" = 25, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/legate
