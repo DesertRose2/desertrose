@@ -392,8 +392,7 @@
 	backpack_contents = list(
 	/obj/item/autosurgeon/toolset,
 	/obj/item/clothing/glasses/welding,
-	/obj/item/twohanded/fireaxe,
-	/datum/design/large_welding_tool
+	/obj/item/twohanded/fireaxe
 	)
 
 /datum/outfit/loadout/courier
@@ -633,7 +632,6 @@
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
 	backpack_contents = list(
-	/obj/item/clothing/glasses/sunglasses/f13,
 	/obj/item/gun/ballistic/shotgun/remington,
 	/obj/item/ammo_box/a308box,
 	/obj/item/kitchen/knife/combat,
@@ -827,7 +825,6 @@
 	/obj/item/twohanded/baseball/spiked,
 	/obj/item/clothing/under/pants/blackjeans,
 	/obj/item/clothing/shoes/f13/military/oldcombat,
-	/obj/item/clothing/glasses/sunglasses/f13,
 	/obj/item/clothing/mask/bandana/black
 	)
 
