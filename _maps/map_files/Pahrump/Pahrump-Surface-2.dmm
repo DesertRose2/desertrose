@@ -2506,7 +2506,7 @@
 /area/f13/building)
 "bHr" = (
 /obj/structure/ladder/unbreakable{
-	id = VC6
+	id = VC8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/old,

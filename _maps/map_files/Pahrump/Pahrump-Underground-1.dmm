@@ -9625,7 +9625,7 @@
 "jvg" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC6
+	id = VC8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
