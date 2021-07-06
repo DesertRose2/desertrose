@@ -645,7 +645,7 @@
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
 	name = "\improper Roadie's battlecoat"
-	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Roadies of the Coalition."
+	desc = "(IV) A heavy padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
 	icon_state = "roadie_battlecoat"
 	item_state = "roadie_battlecoat"
 
