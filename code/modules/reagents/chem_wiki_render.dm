@@ -138,9 +138,6 @@
 			else if(istype(R, /datum/reagent/colorful_reagent))
 				colours += generate_chemwiki_line(R, X, processCR)
 
-			else if(istype(R, /datum/reagent/mutationtoxin))
-				muta += generate_chemwiki_line(R, X, processCR)
-
 			else if(istype(R, /datum/reagent/fermi))
 				fermi += generate_chemwiki_line(R, X, processCR)
 
