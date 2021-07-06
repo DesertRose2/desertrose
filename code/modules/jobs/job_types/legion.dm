@@ -773,7 +773,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/primeline
 	name = "Milites (Line)"
-	suit_store = suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3)
 
@@ -998,7 +998,7 @@ Explorer
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store = 	suit_store = /obj/item/gun/ballistic/automatic/commando
+	suit_store = 	/obj/item/gun/ballistic/automatic/commando
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=1,
 		/obj/item/grenade/plastic=1,
