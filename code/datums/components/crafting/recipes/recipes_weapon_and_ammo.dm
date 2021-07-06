@@ -521,6 +521,21 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//bastard lmg
+/datum/crafting_recipe/bastard
+	name = "bastard LMG"
+	result = /obj/item/gun/ballistic/automatic/bastard
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/advanced_crafting_components/assembly = 1
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //service rifle
 /datum/crafting_recipe/servicerifle
 	name = "service rifle"
@@ -794,6 +809,23 @@
 				/obj/item/advanced_crafting_components/conductors = 2,
 				/obj/item/advanced_crafting_components/alloys = 1,
 				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/stack/crafting/electronicparts = 3
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//p94 plasma rifle
+/datum/crafting_recipe/p94
+	name = "p94 Plasma Rifle"
+	result = /obj/item/gun/.energy/laser/plasma/p94
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/advanced_crafting_components/conductors = 2,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/advanced_crafting_components/lenses = 1,
 				/obj/item/stack/crafting/electronicparts = 3
 				)
 	tools = list(TOOL_AWORKBENCH)

@@ -291,3 +291,9 @@
 	Side effects may include sore muscles and increased irritability."
 	icon_state = "buffoutpill"
 	list_reagents = list(/datum/reagent/drug/buffout = 10)
+
+/obj/item/reagent_containers/pill/cateye
+	name = "Cateye pill"
+	desc = "A pill that smells strongly of carrots.. or maybe its fertalizer. It's hard to tell actually."
+	icon_state = "pill18"
+	list_reagents = list(/datum/reagent/medicine/cateye = 10)

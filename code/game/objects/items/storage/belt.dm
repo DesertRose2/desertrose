@@ -809,6 +809,11 @@
 	new /obj/item/ammo_box/l10mm(src)
 	new /obj/item/ammo_box/l10mm(src)
 
+/obj/item/storage/belt/holster/hip
+	name = "hip holster"
+	desc = "A low hanging holster to carry a handgun and ammo."
+	icon_state = "cowboy"
+	item_state = "cowboy"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
@@ -959,6 +964,12 @@
 	desc = "A polished leather claw belt with cross-strap designed for officers."
 	icon_state = "crossbelt"
 	item_state = "crossbelt"
+
+/obj/item/storage/belt/military/assault/ncr/crossbelt/reverse
+	name = "NCR ranger cross-belt"
+	desc = "A polished leather belt with cross-strap."
+	icon_state = "crossbelt_reverse"
+	item_state = "crossbelt_reverse"
 
 /obj/item/storage/belt/military/reconbandolier
 	name = "NCR recon bandolier"

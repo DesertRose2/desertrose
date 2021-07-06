@@ -136,6 +136,28 @@
 	category = CAT_MEDICAL
 	always_availible = FALSE
 
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/spray/hydra
+	reqs = list(/datum/reagent/consumable/nuka_cola = 10,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 4,
+				/obj/item/reagent_containers/food/snacks/grown/broc = 3,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
+
+/datum/crafting_recipe/cateye
+	name = "Cateye"
+	result = /obj/item/storage/pill_bottle/chem_tin/cateye
+	reqs = list(/obj/item/storage/pill_bottle = 1,
+				/obj/item/reagent_containers/food/snacks/grown/carrot = 2,
+				/obj/item/reagent_containers/food/snacks/grown/agave = 2,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
+
 /datum/crafting_recipe/buffout
 	name = "Buffout"
 	result = /obj/item/storage/pill_bottle/chem_tin/buffout

@@ -524,6 +524,18 @@
 	visor_flags_inv = HIDEFACE
 	visor_flags_cover = MASKCOVERSMOUTH
 
+//Ranger bandana
+
+/obj/item/clothing/mask/bandana/ranger
+	name = "red ranger bandana"
+	desc = "An worn down, bright red bandana, looks like one a ranger would wear."
+	icon_state = "ranger"
+	flags_inv = HIDEFACE
+	visor_flags_inv = HIDEFACE
+	adjusted_flags = null
+	actions_types = list(/datum/action/item_action/adjust)
+
+
 //Society Mask
 
 /obj/item/clothing/mask/society
