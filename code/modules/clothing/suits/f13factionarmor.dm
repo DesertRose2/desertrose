@@ -442,6 +442,14 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.14
 
+/obj/item/clothing/suit/armor/f13/tina_jacket
+	name = "Trail Coat"
+	desc = "A dark red ranger's trenchcoat, replete with a belt and a trail ranger scarf dyed the color of harebells. It smells a little like flowers, lemon juice and gunpowder."
+	icon_state = "tina_jacket"
+	item_state = "tina_jacket"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.14
+
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
 	desc = "(V) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
