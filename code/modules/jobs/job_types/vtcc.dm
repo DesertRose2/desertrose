@@ -411,7 +411,7 @@
 	backpack_contents = list(
 	/obj/item/gun/ballistic/shotgun/lever,
 	/obj/item/ammo_box/shotgun/slug = 2,
-	/obj/item/claymore/machete/pipe/tireiron,
+	/obj/item/claymore/machete/pipe/tireiron
 	)
 
 /* Researcher */
@@ -600,15 +600,15 @@
 	outfit = /datum/outfit/job/vtcc/f13innerwall
 	loadout_options = list(
 		/datum/outfit/loadout/oldsport,
-		/datum/outfit/loadout/classyguy,
+		/datum/outfit/loadout/classy,
 		/datum/outfit/loadout/dancer,
-		/datum/outfit/loadout/fancygal,
-		/datum/outfit/loadout/seamstress,
+		//datum/outfit/loadout/fancygal,
+		//datum/outfit/loadout/seamstress,
 		/datum/outfit/loadout/tailor,
 		/datum/outfit/loadout/secretary,
-		/datum/outfit/loadout/cleaner,
+		//datum/outfit/loadout/cleaner,
 		/datum/outfit/loadout/detective,
-		/datum/outfit/loadout/dj
+		//datum/outfit/loadout/dj
 		)
 
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -642,12 +642,13 @@
 	/obj/item/clothing/head/f13/trilby
 	)
 
-/datum/outfit/loadout/classyguy
-	name = "Classy Guy"
+/datum/outfit/loadout/classy
+	name = "Classy"
 	backpack_contents = list(
 	/obj/item/clothing/under/f13/spring,
+	/obj/item/clothing/under/dress/skirt/swept,
 	/obj/item/stack/f13Cash/caps = 100,
-	/obj/item/clothing/shoes/f13/fancy,
+	/obj/item/clothing/shoes/laceup,
 	/obj/item/gun/ballistic/revolver/police
 	)
 
@@ -660,8 +661,7 @@
 	/obj/item/gun/ballistic/revolver/detective
 	)
 
-
-/datum/outfit/loadout/fancygal
+/*/datum/outfit/loadout/fancygal
 	name = "Fancy Gal"
 	backpack_contents = list(
 	/obj/item/clothing/under/dress/skirt/swept,
@@ -676,7 +676,7 @@
 	/obj/item/clothing/shoes/sneakers/red,
 	/obj/item/clothing/under/dress/westernbustle,
 	/obj/item/stack/f13Cash/caps = 100
-	)
+	)*/
 
 /datum/outfit/loadout/tailor
 	name = "Tailor"
@@ -684,6 +684,8 @@
 	/obj/item/stack/sheet/cloth = 10,
 	/obj/item/clothing/shoes/sneakers/black,
 	/obj/item/clothing/under/suit/burgundy,
+	/obj/item/clothing/shoes/sneakers/red,
+	/obj/item/clothing/under/dress/westernbustle,
 	/obj/item/stack/f13Cash/caps = 100
 	)
 
@@ -697,7 +699,7 @@
 	/obj/item/clothing/shoes/f13/fancy
 	)
 
-/datum/outfit/loadout/cleaner
+/*/datum/outfit/loadout/cleaner
 	name = "Cleaner"
 	backpack_contents = list(
 	/obj/item/clothing/shoes/galoshes,
@@ -705,7 +707,7 @@
 	/obj/item/mop,
 	/obj/item/reagent_containers/glass/bucket,
 	/obj/item/stack/f13Cash/caps = 200
-	)
+	)*/
 
 
 /datum/outfit/loadout/detective
@@ -716,14 +718,18 @@
 	/obj/item/tape,
 	/obj/item/clothing/under/f13/bodyguard,
 	/obj/item/clothing/shoes/winterboots,
-	/obj/item/gun/ballistic/revolver/detective
+	/obj/item/gun/ballistic/revolver/detective,
+	/obj/item/lighter,
+	/obj/item/storage/fancy/cigarettes/cigars/havana
 	)
 
-/datum/outfit/loadout/dj
+/*/datum/outfit/loadout/dj
 	name = "Professional Disc Jockey"
 	backpack_contents = list(
-
-	)
+	/obj/item/taperecorder,
+	/obj/item/tape = 3,
+	/obj/item/megaphone
+	)*/
 
 /* Outer Wall Citizen */
 
@@ -740,11 +746,10 @@
 		/datum/outfit/loadout/scavenger,
 		/datum/outfit/loadout/refugee,
 		/datum/outfit/loadout/addict,
-		/datum/outfit/loadout/freezer,
+		//datum/outfit/loadout/freezer,
 		/datum/outfit/loadout/punk,
-		/datum/outfit/loadout/goth,
 		/datum/outfit/loadout/hired,
-		/datum/outfit/loadout/prize
+		//datum/outfit/loadout/prize
 		)
 
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -760,6 +765,8 @@
 	name = "Outer Wall Citizen"
 	jobtype = /datum/job/vtcc/f13outerwall
 
+	uniform = /obj/item/clothing/under/f13/brahminm
+	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -768,54 +775,65 @@
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
 	backpack_contents = list(
-
+	/obj/item/clothing/suit/armor/f13/leather_jacket,
+	/obj/item/clothing/neck/cloak/grey,
+	/obj/item/gun/ballistic/automatic/pistol/n99,
+	/obj/item/ammo_box/magazine/m10mm,
+	/obj/item/clothing/glasses/welding,
+	/obj/item/twohanded/fireaxe,
+	/datum/design/large_welding_tool
 	)
 
 /datum/outfit/loadout/refugee
 	name = "Refugee"
 	backpack_contents = list(
-
+	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster,
+	/obj/item/claymore/machete/pipe/tireiron,
+	/obj/item/shield/riot/buckler,
+	/obj/item/gun/ballistic/automatic/pistol/m1911,
+	/obj/item/ammo_box/magazine/m45,
+	/obj/item/clothing/shoes/workboots/mining,
+	/obj/item/clothing/glasses/f13/biker,
+	/obj/item/clothing/mask/ncr_facewrap
 	)
 
 /datum/outfit/loadout/addict
 	name = "Addict"
 	backpack_contents = list(
-
+	/obj/item/reagent_containers/syringe/medx,
+	/obj/item/reagent_containers/pill/buffout = 2,
+	/obj/item/reagent_containers/pill/lsd = 2,
+	/obj/item/reagent_containers/pill/patch/jet = 2,
+	/obj/item/clothing/shoes/f13/raidertreads
 	)
 
-
-/datum/outfit/loadout/freezer
-	name = "Freezer"
-	backpack_contents = list(
-
-	)
 
 /datum/outfit/loadout/punk
 	name = "Punk"
 	backpack_contents = list(
-
-	)
-
-/datum/outfit/loadout/tailor
-	name = "Tailor"
-	backpack_contents = list(
-
-	)
-
-/datum/outfit/loadout/goth
-	name = "Goth"
-	backpack_contents = list(
-
+	/obj/item/storage/fancy/cigarettes/cigpack_midori,
+	/obj/item/clothing/under/pants/denimskirt,
+	/obj/item/clothing/under/pants/jeanripped,
+	/obj/item/lighter/greyscale,
+	/obj/item/clothing/shoes/f13/diesel,
+	/obj/item/clothing/shoes/f13/diesel/alt,
+	/obj/item/clothing/suit/vickyblack,
+	/obj/item/clothing/head/beanie/black
 	)
 
 /datum/outfit/loadout/hired
 	name = "Hired Muscle"
 	backpack_contents = list(
-
+	/obj/item/twohanded/baseball/spiked,
+	/obj/item/clothing/under/pants/blackjeans,
+	/obj/item/clothing/shoes/f13/military/oldcombat,
+	/obj/item/clothing/glasses/sunglasses/f13,
+	/obj/item/clothing/mask/bandana/black
 	)
 
-/datum/outfit/loadout/prize
+/*/datum/outfit/loadout/prize
 	name = "Prize Fighter"
 	backpack_contents = list(
 
 	)
+*/
