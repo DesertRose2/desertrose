@@ -7158,7 +7158,8 @@
 /area/f13/brotherhood)
 "eUD" = (
 /obj/machinery/button/door{
-	id = "Marshal's Office";
+	id = "Marshal's Office"
+	;
 	pixel_x = 32
 	},
 /turf/open/floor/f13{
@@ -23729,7 +23730,7 @@
 "pCM" = (
 /obj/machinery/door/airlock/command/glass,
 /obj/machinery/door/poddoor/shutters{
-	id = Marshal's Office
+	id = "Marshal's Office"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -27918,7 +27919,7 @@
 /obj/structure/window/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
-	id = Marshal's Office
+	id = "Marshal's Office"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
