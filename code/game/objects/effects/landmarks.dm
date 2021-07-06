@@ -869,3 +869,38 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/followersscientist
 	name = "Followers Scientist"
+
+/* VTCC */
+
+/obj/effect/landmark/start/f13/alderman
+	name = "Alderman"
+
+/obj/effect/landmark/start/f13/marshal
+	name = "Marshal"
+
+/obj/effect/landmark/start/f13/merchant
+	name = "Merchant"
+
+/obj/effect/landmark/start/f13/chiefresearcher
+	name = "Chief Researcher"
+
+/obj/effect/landmark/start/f13/researcher
+	name = "Researcher"
+
+/obj/effect/landmark/start/f13/townsec
+	name = "Town Security"
+
+/obj/effect/landmark/start/f13/roadie
+	name = "Roadie"
+
+/obj/effect/landmark/start/f13/innkeeper
+	name = "Innkeeper"
+
+/obj/effect/landmark/start/f13/hoistway
+	name = "Hoistway Preacher"
+
+/obj/effect/landmark/start/f13/innerwall
+	name = "Inner Wall Citizen"
+
+/obj/effect/landmark/start/f13/outerwall
+	name = "Outer Wall Citizen"

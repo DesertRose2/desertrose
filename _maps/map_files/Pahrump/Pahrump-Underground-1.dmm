@@ -562,6 +562,13 @@
 /obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/brotherhood/leisure)
+"aHw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/tunnel)
 "aHH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/decoration/vent{
@@ -4148,6 +4155,10 @@
 /obj/structure/timeddoor,
 /turf/closed/wall/r_wall/rust,
 /area/f13/clinic)
+"dZP" = (
+/obj/effect/landmark/start/f13/innerwall,
+/turf/open/floor/carpet/blue,
+/area/f13/tunnel)
 "dZR" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6562,6 +6573,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/leisure)
+"gqT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "gse" = (
 /obj/machinery/shower{
 	dir = 8
@@ -9064,6 +9080,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
+"iRb" = (
+/obj/effect/landmark/start/f13/roadie,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/tunnel)
 "iRc" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/f13{
@@ -9601,7 +9623,10 @@
 	},
 /area/f13/brotherhood/medical)
 "jvg" = (
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = VC6
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "jwm" = (
@@ -12042,6 +12067,10 @@
 	icon_state = "grass2"
 	},
 /area/f13/clinic)
+"mnw" = (
+/obj/effect/landmark/start/f13/roadie,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "mnB" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 4;
@@ -12973,6 +13002,13 @@
 	},
 /obj/structure/table/wood/settler,
 /turf/open/floor/wood/f13/old,
+/area/f13/tunnel)
+"nkK" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = VC7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "nld" = (
 /obj/structure/cable{
@@ -19016,6 +19052,10 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"thC" = (
+/obj/effect/landmark/start/f13/innerwall,
+/turf/open/floor/carpet/royalblue,
+/area/f13/tunnel)
 "tiS" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
@@ -22223,7 +22263,10 @@
 	},
 /area/f13/brotherhood/offices2nd)
 "xmS" = (
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = VC4
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
@@ -22281,6 +22324,13 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
+"xqU" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = VC5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "xrz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -29197,7 +29247,7 @@ uoO
 uoO
 jmN
 hBU
-lKT
+mnw
 mzn
 lOt
 ydV
@@ -30482,7 +30532,7 @@ uoO
 uoO
 jmN
 hMw
-kvS
+iRb
 lKT
 lOt
 ydV
@@ -32024,11 +32074,11 @@ uoO
 uoO
 jmN
 ioO
-lKT
+mnw
 wVl
 lOt
 ydV
-jvg
+xqU
 jmN
 xDr
 xDr
@@ -35924,11 +35974,11 @@ ezl
 ygC
 spi
 qZq
-qZq
+dZP
 kPp
 ygC
 uQe
-jwm
+thC
 jwm
 aNr
 ygC
@@ -39266,10 +39316,10 @@ ygC
 uQe
 jwm
 pMm
-jwm
+thC
 ygC
 qZq
-qZq
+dZP
 kPp
 qgP
 ygC
@@ -40266,7 +40316,7 @@ jeM
 uEu
 xLd
 xLd
-xLd
+gqT
 jmN
 xDr
 xDr
@@ -40505,7 +40555,7 @@ ygC
 ygC
 ygC
 ydV
-jvg
+nkK
 ydV
 ozm
 uif
@@ -40809,7 +40859,7 @@ uRL
 tgi
 ygC
 pMm
-jwm
+thC
 jwm
 ygC
 sgh
@@ -42064,7 +42114,7 @@ hgP
 sPK
 oUQ
 xLd
-xLd
+gqT
 iER
 jmN
 xDr
@@ -43863,7 +43913,7 @@ hgP
 dLJ
 oUQ
 xcp
-xLd
+gqT
 xLd
 jmN
 xDr
@@ -45662,7 +45712,7 @@ hgP
 dLJ
 xLd
 uEu
-oUQ
+aHw
 uEu
 jmN
 xDr
@@ -47200,7 +47250,7 @@ wWc
 vCM
 jmN
 hIl
-xLd
+gqT
 xLd
 ovY
 kTJ

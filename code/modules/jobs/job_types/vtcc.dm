@@ -22,7 +22,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Overseer"
-	description = "A subordinate of the Overseer of the Vaults and Cities, you are the primary face of the town. Handling the day to day dealings of the denizens of our fair city falls to you. Those wasters outside the walls are an unknown factor, so it falls to you to maintain relations with the Wastelands many players. Be wary of the Machine down below, as with the trades and treaties in place. Balance the budget, but don't step on the Merchant's toes. Organise defences, but do not encroach on the Marshall's office. Most of all: don't lose your head."
+	description = "A subordinate of the Overseer of the Vaults and Cities, you are the primary face of the town. Handling the day to day dealings of the denizens of our fair city falls to you. Those wasters outside the walls are an unknown factor, so it falls to you to maintain relations with the Wastelands many players. Be wary of the Machine down below, as with the trades and treaties in place. Balance the budget, but don't step on the Merchant's toes. Organise defences, but do not encroach on the Marshal's office. Most of all: don't lose your head."
 
 	outfit = /datum/outfit/job/vtcc/f13alderman
 	loadout_options = list(
