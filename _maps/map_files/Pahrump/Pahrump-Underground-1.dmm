@@ -20702,7 +20702,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "vgo" = (
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	id = "FOA1"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "reddirtyfull"
 	},

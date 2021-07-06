@@ -3775,6 +3775,13 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"cJv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ladder/unbreakable{
+	id = "VC5"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/city)
 "cJy" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -8087,7 +8094,7 @@
 	dir = 8
 	},
 /obj/structure/ladder/unbreakable{
-	id = "VC5
+	id = "VC5"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -12210,6 +12217,14 @@
 /obj/structure/bed/mattress,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"iaf" = (
+/obj/structure/ladder/unbreakable{
+	id = "VC5
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "iap" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -18709,7 +18724,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	id = "FOA1"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city)
 "mdv" = (
@@ -49633,7 +49650,7 @@ jTY
 xTB
 xTB
 xTB
-xTB
+cJv
 brH
 uKA
 qnE
@@ -50681,7 +50698,7 @@ prs
 sfB
 wOj
 kQb
-xLh
+iaf
 xLh
 pCM
 xLh
