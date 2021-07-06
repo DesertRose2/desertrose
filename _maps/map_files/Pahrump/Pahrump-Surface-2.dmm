@@ -2506,7 +2506,7 @@
 /area/f13/building)
 "bHr" = (
 /obj/structure/ladder/unbreakable{
-	id = VC8
+	id = "VC6"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/old,
@@ -8087,7 +8087,7 @@
 	dir = 8
 	},
 /obj/structure/ladder/unbreakable{
-	id = VC5
+	id = "VC5"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -9387,7 +9387,7 @@
 /area/f13/building)
 "gqf" = (
 /obj/structure/ladder/unbreakable{
-	id = VC7
+	id = "VC7"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/old,
@@ -9403,7 +9403,7 @@
 	desc = "An extremely sturdy metal ladder inside of a drained well.";
 	icon = 'icons/obj/Ritas.dmi';
 	icon_state = "wellwheel";
-	id = VC4;
+	id = "VC4";
 	name = "ladder well";
 	pixel_x = -15
 	},
@@ -14058,7 +14058,7 @@
 /area/f13/village)
 "jbR" = (
 /obj/structure/ladder/unbreakable{
-	id = VC3
+	id = "VC3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 6;
@@ -32215,7 +32215,7 @@
 /area/f13/wasteland)
 "uSo" = (
 /obj/structure/ladder/unbreakable{
-	id = VC2
+	id = "VC2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	icon_state = "neutralrusty"
@@ -37723,7 +37723,7 @@
 /area/f13/tunnel)
 "yip" = (
 /obj/structure/ladder/unbreakable{
-	id = VC1
+	id = "VC1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 10;

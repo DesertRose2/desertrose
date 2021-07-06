@@ -9625,7 +9625,7 @@
 "jvg" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC8
+	id = "VC6"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -13006,7 +13006,7 @@
 "nkK" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC7
+	id = "VC7"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -13187,7 +13187,7 @@
 "nts" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC1
+	id = "VC1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -16620,7 +16620,7 @@
 "qLa" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC2
+	id = "VC2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -22265,7 +22265,7 @@
 "xmS" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC4
+	id = "VC4"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
@@ -22328,7 +22328,7 @@
 "xqU" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC5
+	id = "VC5"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -22356,7 +22356,7 @@
 "xwT" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = VC3
+	id = "VC3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
