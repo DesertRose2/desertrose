@@ -162,6 +162,19 @@
 #define F13FOLLOWERVOLUNTEER	(1<<3)
 #define F13PROFESSOR	(1<<4)
 
+#define VTCC			(1<<12)
+
+#define F13ALDERMAN		(1<<1)
+#define F13MARSHAL		(1<<2)
+#define F13MERCHANT		(1<<3)
+#define F13CHRESEARCHER		(1<<4)
+#define F13TOWNSEC		(1<<5)
+#define F13ROADIE		(1<<6)
+#define F13RESEARCHER		(1<<7)
+#define F13HOISTWAY		(1<<8)
+#define F13INNKEEPER		(1<<9)
+#define F13INNERWALL		(1<<10)
+#define F13OUTERWALL		(1<<11)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1

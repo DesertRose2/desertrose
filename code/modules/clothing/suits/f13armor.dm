@@ -624,13 +624,13 @@
 	armor = list("tier" = 3)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
-	name = "Overseer's battlecoat"
+	name = "\improper Overseer's battlecoat"
 	desc = "(III) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec embroidered on the back. This one is worn by the Coalition's Overseer."
 	icon_state = "overseer_commandcoat"
 	item_state = "overseer_commandcoat"
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
-	name = "Marhsal's battlecoat"
+	name = "\improper Marhsal's battlecoat"
 	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
 	icon_state = "marshal_commandcoat"
 	item_state = "marshal_commandcoat"
@@ -638,10 +638,16 @@
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
 	name = "armoured vault battlecoat"
-	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
+	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the citizens of the Coalition."
 	icon_state = "armouredvault_commandcoat"
 	item_state = "armouredvault_commandcoat"
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
+	name = "\improper Roadie's battlecoat"
+	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Roadies of the Coalition."
+	icon_state = "roadie_battlecoat"
+	item_state = "roadie_battlecoat"
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
