@@ -15,24 +15,6 @@
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 
-/obj/item/melee/goliath //Workaround to the gas issue with the powerfist. No idea why it works.
-	name = "Goliath"
-	desc = "Armored gauntlet with a piston-powered ram, this one is a experimental one captured and named by the Legion."
-	icon_state = "goliath"
-	item_state = "goliath"
-	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	flags_1 = CONDUCT_1
-	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 40
-	armour_penetration = 0.95
-	throwforce = 20
-	throw_range = 7
-	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
-
-
 /*	var/fisto_setting = 1
 	var/gasperfist = 3
 	var/obj/item/tank/internals/tank = null //Tank used for the gauntlet's piston-ram.
