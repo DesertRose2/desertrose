@@ -8087,7 +8087,7 @@
 	dir = 8
 	},
 /obj/structure/ladder/unbreakable{
-	id = "VC5"
+	id = "VC5
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
