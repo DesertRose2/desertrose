@@ -54,9 +54,7 @@
 	},
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_x = 0;
-	step_y = 0
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -73,8 +71,7 @@
 	},
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_y = 0
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -89,8 +86,7 @@
 "aak" = (
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_y = 31
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -104,9 +100,7 @@
 "aam" = (
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_x = 0;
-	step_y = 0
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -118,9 +112,7 @@
 /obj/item/bikehorn/rubberducky,
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_x = 1;
-	step_y = 30
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -137,9 +129,7 @@
 "aap" = (
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_x = 0;
-	step_y = 31
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -150,9 +140,7 @@
 /obj/structure/curtain,
 /obj/structure/decoration/vent{
 	pixel_x = 15;
-	pixel_y = -17;
-	step_x = 1;
-	step_y = 0
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
@@ -164,7 +152,6 @@
 	pixel_y = 32
 	},
 /obj/machinery/pool/drain{
-	step_x = 31
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
