@@ -64,11 +64,11 @@
 	results = list(/datum/reagent/toxin/lexorin = 3)
 	required_reagents = list(/datum/reagent/toxin/plasma = 1, /datum/reagent/hydrogen = 1, /datum/reagent/oxygen = 1)
 
-/datum/chemical_reaction/chloralhydrate
+/*/datum/chemical_reaction/chloralhydrate
 	name = "Chloral Hydrate"
 	id = /datum/reagent/toxin/chloralhydrate
 	results = list(/datum/reagent/toxin/chloralhydrate = 1)
-	required_reagents = list(/datum/reagent/consumable/ethanol = 1, /datum/reagent/chlorine = 3, /datum/reagent/water = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol = 1, /datum/reagent/chlorine = 3, /datum/reagent/water = 1)*/
 
 /datum/chemical_reaction/mutetoxin //i'll just fit this in here snugly between other unfun chemicals :v
 	name = "Mute Toxin"

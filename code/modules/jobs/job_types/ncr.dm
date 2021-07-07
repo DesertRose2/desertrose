@@ -713,7 +713,7 @@ Rear Echelon
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/TPR
+	accessory =     /obj/item/clothing/accessory/ncr/REC
 	head = 			/obj/item/clothing/head/f13/ncr
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/automatic/varmint
@@ -960,6 +960,7 @@ Veteran Ranger
 	gloves = /obj/item/clothing/gloves/patrol/insulated
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/storage/survivalkit_aid = 1,
 		/obj/item/clothing/accessory/armband/engine/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/grenade/plastic=1,

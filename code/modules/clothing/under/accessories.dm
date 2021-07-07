@@ -92,6 +92,12 @@
 	icon_state = "sheepskin_vest"
 	item_state = "sheepskin_vest"
 
+/obj/item/clothing/accessory/waistcoat/cowboy
+	name = "ranger cowboy vest"
+	desc = "A thick, protective vest made out of leather with a badge tied to it."
+	icon_state = "cowboyrangervest"
+	item_state = "cowboyrangervest"
+
 /obj/item/clothing/accessory/maidapron
 	name = "maid apron"
 	desc = "The best part of a maid costume."

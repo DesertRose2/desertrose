@@ -1126,6 +1126,7 @@
 	name = "tier 8 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/r82,
 				/obj/effect/spawner/bundle/f13/r84,
+				/obj/effect/spawner/bundle/f13/bastard,
 				/obj/effect/spawner/bundle/f13/assault_rifle,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/aer9,
@@ -1146,6 +1147,11 @@
 	name = "r84 spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/r84
+	)
+/obj/effect/spawner/bundle/f13/bastard
+	name = "bastard spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/bastard
 	)
 /obj/effect/spawner/bundle/f13/garand
 	name = "garand spawner"
@@ -1174,7 +1180,8 @@
 				/obj/effect/spawner/bundle/f13/breacher,
 				/obj/effect/spawner/bundle/f13/beam,
 				/obj/effect/spawner/bundle/f13/aer12,
-				/obj/effect/spawner/bundle/f13/hunting
+				/obj/effect/spawner/bundle/f13/hunting,
+				/obj/item/gun/energy/laser/plasma/glock
 				)
 
 /obj/effect/spawner/bundle/f13/beam
@@ -1209,6 +1216,7 @@
 	loot = list(
 				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/plasmarifle,
+				/obj/effect/spawner/bundle/f13/p94,
 				/obj/effect/spawner/bundle/f13/tommygun,
 				/obj/effect/spawner/bundle/f13/aer14,
 				/obj/effect/spawner/bundle/f13/amr,
@@ -1226,6 +1234,13 @@
 	name = "plasma rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/energy/laser/plasma,
+				/obj/item/stock_parts/cell/ammo/mfc
+	)
+
+/obj/effect/spawner/bundle/f13/p94
+	name = "plasma rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/energy/laser/plasma/p94,
 				/obj/item/stock_parts/cell/ammo/mfc
 	)
 
@@ -1804,6 +1819,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/sniper,
 		/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
+		/obj/item/book/granter/crafting_recipe/blueprint/bastard,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle
@@ -1826,6 +1842,7 @@
 	lootcount = 1
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
+		/obj/item/book/granter/crafting_recipe/blueprint/p94,
 		/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
 		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,

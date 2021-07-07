@@ -177,6 +177,21 @@
 	name = "P08 luger modkit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
 	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
+	
+/obj/item/modkit/talon
+	name = "Talon armor modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/talon
+
+/obj/item/modkit/markedmen
+	name = "Marked patrol modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/marked_patrol
+	
+/obj/item/modkit/ncr_trenchcloak
+	name = "Ranger trenchcloak modkit"
+	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	result_item = /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm

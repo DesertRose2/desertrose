@@ -433,6 +433,22 @@
 	item_state = "r_gear_rig"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
+	
+/obj/item/clothing/suit/armor/f13/ncr_trenchcloak
+	name = "ranger trenchcloak"
+	desc = "(V) A cloak worn by Rangers of the New California Republic. Often seen on trail rangers or scouts, this cloak provides ample protection from the deserts harsh sunlight during the hours spent in the field and from the elements."
+	icon_state = "ncr_trenchcloak"
+	item_state = "ncr_trenchcloak"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
+
+/obj/item/clothing/suit/armor/f13/rangerrecon_jacket
+	name = "ranger jacket"
+	desc = "(V) A thick leather jacket, its colors already bleached from all the days it spent under the sun. It features a two headed standing bear on its back."
+	icon_state = "rangerjacket"
+	item_state = "rangerjacket"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/trailranger
 	name = "ranger vest"

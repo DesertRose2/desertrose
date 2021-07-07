@@ -83,6 +83,12 @@
 	icon_state = "ncr_boots"
 	item_state = "ncr"
 
+/obj/item/clothing/shoes/f13/military/oldcombat
+	name = "Old Combat Boots"
+	desc = "A pair of old, pre-war styled boots made for combat."
+	icon_state = "oldcombat"
+	item_state = "oldcombat"
+
 /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	name = "officer boots"
 	desc = "A pair of well-polished brown leather calf boots fitted with straps."
@@ -114,6 +120,12 @@
 	desc = "An old pair of desert combat boots. This one seems to have a tighter fit, and a padded interior."
 	icon_state = "erin_boot"
 	item_state = "erin_boot"
+
+/obj/item/clothing/shoes/f13/military/cowboy
+	name = "ranger cowboy boots"
+	desc = "A pair of cowhide boots with spurs, traced over with tan paint.<br>They have a Cuban heel, rounded to pointed toe, high shaft, and, traditionally, no lacing."
+	icon_state = "cowboy_ranger"
+	item_state = "cowboy_ranger"
 
 //Fluff
 

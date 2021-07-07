@@ -207,22 +207,22 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	overdose_threshold = 16
+	overdose_threshold = 11
 	addiction_threshold = 6
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 100
-		M.health += 100
+		M.maxHealth += 25
+		M.health += 25
 		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 100
-		M.health -= 100
+		M.maxHealth -= 25
+		M.health -= 25
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	switch(current_cycle)
 		if(1 to 25)
@@ -233,7 +233,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
-//			M.adjust_eye_damage(6)
+			M.Unconscious (50)
 			M.set_disgust(12)
 			M.adjustStaminaLoss(30*REAGENTS_EFFECT_MULTIPLIER)
 			to_chat(M, "<span class='danger'>Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. </span>")
@@ -241,7 +241,6 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			M.confused +=40
 			M.blur_eyes(30)
 			M.losebreath += 10
-//			M.adjust_eye_damage(12)
 			M.set_disgust(25)
 			M.adjustStaminaLoss(40*REAGENTS_EFFECT_MULTIPLIER)
 			M.vomit(30, 1, 1, 5, 0, 0, 0, 60)
@@ -312,31 +311,33 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		M.Jitter(5)
 	..()
 
-/datum/reagent/medicine/legionmedx
-	name = "natural painkiller"
+/datum/reagent/medicine/hydra
+	name = "Hydra"
 
-	description = "Med-X is a potent painkiller, allowing users to withstand high amounts of pain and continue functioning."
+	description = "Hydra is a blend of mostly naturally obtained elements combined into a strong stimulant."
 	reagent_state = LIQUID
 	color = "#6D6374"
-	metabolization_rate = 0.7 * REAGENTS_METABOLISM
+	metabolization_rate = 0.20 * REAGENTS_METABOLISM
 	overdose_threshold = 14
 	addiction_threshold = 50
 
-/datum/reagent/medicine/legionmedx/on_mob_add(mob/M)
+/datum/reagent/medicine/hydra/on_mob_add(mob/M)
 	..()
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_HEALTHY
 		ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
+		ADD_TRAIT(L, TRAIT_AUTO_CATCH_ITEM, "hydra")
 
-/datum/reagent/medicine/legionmedx/on_mob_delete(mob/M)
+/datum/reagent/medicine/hydra/on_mob_delete(mob/M)
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_NONE
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
+		REMOVE_TRAIT(L, TRAIT_AUTO_CATCH_ITEM, "hydra")
 	..()
 
-/datum/reagent/medicine/legionmedx/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -344,20 +345,20 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	..()
 	. = TRUE
 
-/datum/reagent/medicine/legionmedx/overdose_process(mob/living/M)
+/datum/reagent/medicine/hydra/overdose_process(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Dizzy(2)
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage1(mob/living/M)
+/datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage2(mob/living/M)
+/datum/reagent/medicine/hydra/addiction_act_stage2(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
@@ -366,7 +367,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		M.Jitter(3)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage3(mob/living/M)
+/datum/reagent/medicine/hydra/addiction_act_stage3(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
@@ -375,13 +376,74 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		M.Jitter(4)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage4(mob/living/M)
+/datum/reagent/medicine/hydra/addiction_act_stage4(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(3*REAGENTS_EFFECT_MULTIPLIER)
 		. = TRUE
 		M.Dizzy(5)
 		M.Jitter(5)
+	..()
+
+/datum/reagent/medicine/cateye
+	name = "Cateye"
+
+	description = "It's good for your eyes! Maybe.."
+	reagent_state = SOLID
+	color = "#6D6374"
+	metabolization_rate = 0.7 * REAGENTS_METABOLISM
+	overdose_threshold = 11
+	addiction_threshold = 100
+
+/datum/reagent/medicine/cateye/on_mob_add(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		to_chat(M, "<span class='notice'>You feel at ease as everything becomes clearer.</span>")
+		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
+		ADD_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
+
+/datum/reagent/medicine/cateye/on_mob_delete(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		to_chat(M, "<span class='notice'>Your eyes feel tired..</span>")
+		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
+		REMOVE_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
+
+/datum/reagent/medicine/cateye/overdose_process(mob/living/M)
+	if(prob(33))
+		to_chat(M, "<span class='danger'>Your vision blurs and doesn't appear to come back!</span>")
+		M.Dizzy(2)
+		M.set_blurriness(50)
+	..()
+
+/datum/reagent/medicine/cateye/addiction_act_stage1(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.blur_eyes(40)
+	..()
+
+/datum/reagent/medicine/cateye/addiction_act_stage2(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
+		. = TRUE
+		M.blur_eyes(40)
+	..()
+
+/datum/reagent/medicine/cateye/addiction_act_stage3(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
+		. = TRUE
+		M.blur_eyes(40)
+	..()
+
+/datum/reagent/medicine/cateye/addiction_act_stage4(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.adjustToxLoss(3*REAGENTS_EFFECT_MULTIPLIER)
+		. = TRUE
+		M.blur_eyes(40)
 	..()
 
 /datum/reagent/medicine/mentat

@@ -151,6 +151,11 @@
 	icon_state = "verticalleftborderright2bottom"
 	},
 /area/f13/wasteland)
+"agx" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "agF" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -7715,6 +7720,10 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/brotherhood)
+"fkH" = (
+/obj/structure/window/fulltile/ruins/broken,
+/turf/open/floor/f13/wood,
+/area/f13/radiation)
 "fkP" = (
 /obj/structure/sign/poster/ripped,
 /turf/closed/wall/f13/wood,
@@ -7735,9 +7744,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "fmm" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13/wood,
-/area/f13/radiation)
+/mob/living/simple_animal/hostile/mirelurk,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "fmn" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -10157,7 +10166,7 @@
 /area/f13/brotherhood)
 "gOf" = (
 /obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
 "gOs" = (
@@ -12778,12 +12787,9 @@
 "irk" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
-"irF" = (
-/obj/structure/nest/mirelurk,
-/turf/open/water,
-/area/f13/caves)
 "irI" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water,
@@ -13615,7 +13621,6 @@
 /area/f13/village)
 "iOD" = (
 /obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/raider,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "iOF" = (
@@ -14139,11 +14144,6 @@
 /obj/structure/barricade/wooden/planks,
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/brotherhood)
-"jeV" = (
-/obj/structure/barricade/sandbags,
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "jeX" = (
 /obj/structure/chair/office,
 /turf/open/floor/f13/wood,
@@ -14870,6 +14870,10 @@
 	icon_state = "wasteland33"
 	},
 /area/f13/wasteland)
+"jGv" = (
+/mob/living/simple_animal/hostile/supermutant,
+/turf/open/floor/f13/wood,
+/area/f13/radiation)
 "jGz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -20290,6 +20294,10 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/building)
+"ngZ" = (
+/mob/living/simple_animal/hostile/mirelurk,
+/turf/open/water,
+/area/f13/caves)
 "nhd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/personal{
@@ -23661,6 +23669,11 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"pwK" = (
+/obj/structure/flora/grass/jungle/b,
+/mob/living/simple_animal/hostile/mirelurk/hunter,
+/turf/open/water,
+/area/f13/caves)
 "pxd" = (
 /obj/structure/rack,
 /obj/item/storage/pill_bottle/chem_tin/radx,
@@ -25817,11 +25830,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/building)
-"qOp" = (
-/mob/living/simple_animal/hostile/mirelurk/baby,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/caves)
 "qOA" = (
 /obj/structure/chair/booth{
 	dir = 8
@@ -26217,6 +26225,10 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"raQ" = (
+/mob/living/simple_animal/hostile/mirelurk/hunter,
+/turf/open/water,
+/area/f13/caves)
 "raV" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Armory";
@@ -26506,14 +26518,6 @@
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
-"rlX" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/raider/ranged,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/f13/caves)
 "rnc" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowdestroyed"
@@ -29115,6 +29119,12 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"sYg" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/supermutant,
+/turf/open/floor/f13/wood,
+/area/f13/radiation)
 "sYk" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -33984,9 +33994,9 @@
 /turf/open/floor/carpet/black,
 /area/f13/legion)
 "vWE" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/mob/living/simple_animal/hostile/mirelurk/hunter,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "vWK" = (
 /obj/structure/table,
 /obj/item/storage/box/gloves,
@@ -56108,7 +56118,7 @@ ssm
 fyf
 pcG
 hDQ
-hDQ
+uRJ
 uRJ
 uRJ
 uRJ
@@ -64144,7 +64154,7 @@ fyf
 fyf
 fyf
 fyf
-nPu
+fyf
 fyf
 fyf
 fyf
@@ -64923,7 +64933,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+nPu
 fyf
 fyf
 fyf
@@ -68101,7 +68111,7 @@ fyf
 fyf
 gcK
 oFp
-rlX
+qik
 vnj
 xgZ
 gpC
@@ -85075,7 +85085,7 @@ gcK
 hBr
 irI
 csk
-ggK
+vWE
 ggK
 ggK
 asI
@@ -85364,7 +85374,7 @@ mTd
 iEp
 icW
 icW
-qOp
+icW
 icW
 iEp
 mTd
@@ -85600,7 +85610,7 @@ gcK
 ktB
 gcK
 asI
-ggK
+vWE
 asI
 asI
 fwu
@@ -85857,7 +85867,7 @@ gcK
 ktB
 gcK
 gcK
-aeg
+ggK
 ggK
 ggK
 fzl
@@ -85879,7 +85889,7 @@ mTd
 vfU
 icW
 icW
-qOp
+icW
 iOM
 ggK
 gcK
@@ -86243,7 +86253,7 @@ tXv
 tsT
 tsT
 tsT
-fmm
+tsT
 twI
 niH
 xed
@@ -86498,15 +86508,15 @@ jMj
 wdJ
 tsT
 tsT
-tsT
+jGv
 niH
 xed
-qwi
+fkH
 wdJ
 naZ
-jMj
+qwi
 fyf
-nPu
+fyf
 fyf
 fyf
 gbL
@@ -86660,7 +86670,7 @@ ggK
 ggK
 mTd
 iOM
-jci
+ggK
 gcK
 gcK
 gcK
@@ -86880,7 +86890,7 @@ gcK
 gcK
 ktB
 gcK
-aeg
+ggK
 asI
 ggK
 asI
@@ -86911,7 +86921,7 @@ gcK
 gcK
 gcK
 mTd
-jci
+ggK
 ggK
 ggK
 ggK
@@ -87009,11 +87019,11 @@ fyf
 thG
 fyf
 qwi
-hsh
-qwi
+sYg
 tsT
 tsT
-fmm
+tsT
+tsT
 wzw
 qwi
 qwi
@@ -87403,7 +87413,7 @@ hDC
 kUU
 hBr
 mpo
-csk
+ngZ
 fzl
 dfR
 gcK
@@ -88179,8 +88189,8 @@ qyJ
 hBr
 gcK
 hBr
-aeg
 ggK
+vWE
 fwu
 dfR
 pIO
@@ -88927,7 +88937,7 @@ ktB
 (200,1,1) = {"
 ktB
 hBr
-aeg
+ggK
 asI
 wnJ
 gtn
@@ -88959,10 +88969,10 @@ csk
 csk
 fwu
 csk
-qyJ
 csk
 csk
-irF
+csk
+csk
 fwu
 hBr
 gcK
@@ -89185,7 +89195,7 @@ ktB
 ktB
 hBr
 asI
-ggK
+fmm
 ggK
 jci
 dfo
@@ -89205,7 +89215,7 @@ qyJ
 csk
 fzl
 ggK
-aeg
+ggK
 dfR
 irI
 irI
@@ -89452,7 +89462,7 @@ fzl
 csk
 csk
 irI
-aeg
+ggK
 ggK
 asI
 gcK
@@ -90475,7 +90485,7 @@ gcK
 gcK
 gcK
 hBr
-csk
+raQ
 csk
 csk
 gcK
@@ -90487,7 +90497,7 @@ jci
 hBr
 hUV
 fzl
-csk
+raQ
 jSw
 hBr
 dfR
@@ -90750,7 +90760,7 @@ fzl
 fzl
 iTI
 axA
-irI
+pwK
 blS
 hBr
 nFA
@@ -91005,7 +91015,7 @@ csk
 csk
 csk
 csk
-csk
+ngZ
 irI
 aay
 fzl
@@ -91650,7 +91660,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+agx
 fyf
 fyf
 fyf
@@ -91778,7 +91788,7 @@ gcK
 ktB
 gcK
 ggK
-aeg
+vWE
 gcK
 ktB
 gcK
@@ -92464,7 +92474,7 @@ ees
 fsm
 ubd
 fyf
-jeV
+jxH
 jxH
 fyf
 fyf
@@ -92928,7 +92938,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+nPu
 fyf
 fyf
 fyf
@@ -93040,7 +93050,7 @@ ktB
 ktB
 gcK
 gcK
-aeg
+ggK
 ggK
 ggK
 csk
@@ -93198,7 +93208,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+tOH
 fyf
 fyf
 fyf
@@ -93300,7 +93310,7 @@ gcK
 gcK
 asI
 ggK
-csk
+raQ
 irI
 hBr
 gcK
@@ -94729,7 +94739,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+tOH
 fyf
 fyf
 trW
@@ -94990,7 +95000,7 @@ fyf
 fyf
 fyf
 fyf
-vWE
+fyf
 fyf
 fyf
 fyf

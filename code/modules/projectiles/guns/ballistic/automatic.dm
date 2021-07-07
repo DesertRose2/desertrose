@@ -554,7 +554,7 @@
 	can_suppress = FALSE
 	can_attachments = TRUE
 	extra_damage = -4
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
@@ -573,7 +573,7 @@
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
@@ -952,6 +952,26 @@
 	update_icon()
 	return
 
+/obj/item/gun/ballistic/automatic/bastard
+	name = "'Bastard' LMG"
+	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
+	icon_state = "bastard"
+	item_state = "bastard"
+	slot_flags = 0
+	mag_type = /obj/item/ammo_box/magazine/lmg
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	can_attachments = TRUE
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	burst_size = 2
+	fire_delay = 3
+	burst_shot_delay = 3
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	spread = 30
+	randomspread = 1
+	extra_damage = -2
+
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "A CAR-15 assault rifle, designated as the 'R8' in the U.S. Army. A variant of the R84 with increased rate of fire and a matte black exterior."
@@ -1002,7 +1022,7 @@
 	desc = "A DKS 501, chambered in .308 Winchester. This one has a gold trim and the words 'Old Cassius' engraved into the stock."
 	icon_state = "gold_sniper"
 	item_state = "gold_sniper"
- 
+
 
 //Auto-pipe rifle. Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe

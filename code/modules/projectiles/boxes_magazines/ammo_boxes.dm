@@ -759,7 +759,7 @@
 	name = "ammo box (.22lr)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	multiple_sprites = 2
-	icon_state = "9mmbox"
+	icon_state = "22box"
 	ammo_type = /obj/item/ammo_casing/a22
 	max_ammo = 40
 	w_class = WEIGHT_CLASS_SMALL

@@ -204,7 +204,7 @@
 	new /obj/item/reagent_containers/medspray/styptic(src)
 	new /obj/item/reagent_containers/medspray/silver_sulf(src)
 	new /obj/item/healthanalyzer/advanced(src)
-	new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
+	//new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
 	new /obj/item/clothing/glasses/hud/health/night/syndicate(src)
 
 /obj/item/storage/firstaid/tactical/nukeop
@@ -219,7 +219,7 @@
 	new /obj/item/reagent_containers/medspray/styptic(src)
 	new /obj/item/reagent_containers/medspray/silver_sulf(src)
 	new /obj/item/healthanalyzer/advanced(src)
-	new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
+	//new /obj/item/reagent_containers/syringe/lethal/choral(src) // what the fuck does anyone use this piece of shit for
 	new /obj/item/clothing/glasses/hud/health/night/syndicate(src)
 
 /*
@@ -646,4 +646,12 @@
 /obj/item/storage/pill_bottle/chem_tin/buffout/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/buffout(src)
-	
+
+/obj/item/storage/pill_bottle/chem_tin/cateye
+	name = "Cateye"
+	icon_state = "pill_canister_cateye"
+	desc = "Contains pills used to increase one's senses."
+
+/obj/item/storage/pill_bottle/chem_tin/cateye/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/cateye(src)

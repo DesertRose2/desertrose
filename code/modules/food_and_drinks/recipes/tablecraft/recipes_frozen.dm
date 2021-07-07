@@ -5,7 +5,6 @@
 
 /datum/crafting_recipe/food/banana_split
 	name = "Banana Split"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/icecream = 3,
 		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
@@ -17,7 +16,6 @@
 
 /datum/crafting_recipe/food/bluecharrie_float
 	name = "Blue Cherry Shake"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/icecream = 1,
 		/obj/item/reagent_containers/food/snacks/grown/bluecherries = 3,
@@ -28,7 +26,6 @@
 
 /datum/crafting_recipe/food/charrie_float
 	name = "Cherry Shake"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/icecream = 1,
 		/obj/item/reagent_containers/food/snacks/grown/cherries = 3,
@@ -39,7 +36,6 @@
 
 /datum/crafting_recipe/food/root_float
 	name = "Cola Float"
-	always_availible = FALSE
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/icecream = 1,
 		/obj/item/reagent_containers/food/snacks/grown/cherries = 1,

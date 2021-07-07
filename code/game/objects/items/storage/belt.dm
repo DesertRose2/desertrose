@@ -809,6 +809,11 @@
 	new /obj/item/ammo_box/l10mm(src)
 	new /obj/item/ammo_box/l10mm(src)
 
+/obj/item/storage/belt/holster/hip
+	name = "hip holster"
+	desc = "A low hanging holster to carry a handgun and ammo."
+	icon_state = "cowboy"
+	item_state = "cowboy"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
@@ -917,7 +922,7 @@
 /obj/item/storage/belt/sabre/twin
 	name = "twin sheath"
 	desc = "Two sheaths. One is capable of holding a katana (or bokken) and the other a wakizashi. You could put two wakizashis in if you really wanted to. Now you can really roleplay as a samurai."
-	icon_state = "twinsheath"
+	icon_state = "2sheath"
 	item_state = "quiver" //this'll do.
 	w_class = WEIGHT_CLASS_BULKY
 	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken)
@@ -959,6 +964,12 @@
 	desc = "A polished leather claw belt with cross-strap designed for officers."
 	icon_state = "crossbelt"
 	item_state = "crossbelt"
+
+/obj/item/storage/belt/military/assault/ncr/crossbelt/reverse
+	name = "NCR ranger cross-belt"
+	desc = "A polished leather belt with cross-strap."
+	icon_state = "crossbelt_reverse"
+	item_state = "crossbelt_reverse"
 
 /obj/item/storage/belt/military/reconbandolier
 	name = "NCR recon bandolier"

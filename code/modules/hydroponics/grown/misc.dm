@@ -537,3 +537,31 @@
 /obj/item/reagent_containers/food/snacks/grown/aloe/microwave_act(obj/machinery/microwave/M)
 	new /obj/item/stack/medical/aloe(drop_location(), 2)
 	qdel(src)
+
+///Star Cactus seeds, mutation of lavaland cactus.
+/obj/item/seeds/star_cactus
+	name = "pack of star cacti seeds"
+	desc = "These seeds grow into star cacti."
+	icon_state = "seed-starcactus"
+	species = "starcactus"
+	plantname = "Star Cactus Cluster"
+	product = /obj/item/reagent_containers/food/snacks/grown/star_cactus
+	lifespan = 60
+	endurance = 30
+	maturation = 7
+	production = 6
+	yield = 3
+	growthstages = 4
+	genes = list(/datum/plant_gene/trait/stinging)
+	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'
+	reagents_add = list(/datum/reagent/water = 0.08, /datum/reagent/consumable/nutriment = 0.05)
+
+///Star Cactus Plants.
+/obj/item/reagent_containers/food/snacks/grown/star_cactus
+	seed = /obj/item/seeds/star_cactus
+	name = "star cacti"
+	desc = "A small cluster of prickly star-shaped cacti."
+	icon_state = "starcactus"
+	filling_color = "#1c801c"
+	foodtype = VEGETABLES
+	distill_reagent = /datum/reagent/consumable/ethanol/tequila
