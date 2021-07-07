@@ -252,7 +252,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion venator armor"
-	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
+	desc = "(VII) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
 	icon_state = "legvenator"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
