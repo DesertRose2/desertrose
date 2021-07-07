@@ -12,6 +12,7 @@
 	throwforce = 10
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
+	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 
