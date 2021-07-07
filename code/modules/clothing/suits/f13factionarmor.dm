@@ -233,11 +233,11 @@
 
 /obj/item/clothing/suit/armor/f13/legion/heavy
 	name = "legion veteran decan armor"
-	desc = "(VII) Heavy metal armor worn by the Veteran Decanii retinue of the region."
+	desc = "(VI) Heavy metal armor worn by the Veteran Decanii retinue of the region."
 	icon_state = "legmetal"
 	item_state = "legmetal"
 	slowdown = -0.1
-	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	name = "legion explorer armor"
@@ -273,7 +273,7 @@
 	name = "paladin-slayer centurion armor"
 	desc = "(VIII) The armor of a Centurion who has bested one or more Brotherhood Paladins, adding pieces of his prizes to his own defense. The symbol of the Legion is crudely painted on this once-marvelous suit of armor."
 	icon_state = "palacent"
-	slowdown = -0.03
+	slowdown = 0
 	armor = list("tier" = 8, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 30, "fire" = 80, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
