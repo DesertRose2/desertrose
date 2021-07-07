@@ -226,7 +226,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/vet
 	name = "legion veteran armor"
-	desc = "(VI) Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
+	desc = "(V) Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
 	icon_state = "legvet"
 	slowdown = -0.1
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
