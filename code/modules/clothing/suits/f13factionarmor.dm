@@ -204,12 +204,13 @@
 	name = "legion recruit armor"
 	desc = "(IV) Legion recruit armor is a common light armor, supplied to recruit legionaries and to recruit decanus units. Like most Legion armor, it is made from repurposed sports equipment, consisting of a football player's protective shoulder and chest pads reinforced with additional leather padding and worn over a baseball catcher's vest."
 	icon_state = "legrecruit"
-	slowdown = -0.15
 
 /obj/item/clothing/suit/armor/f13/legion/recruit/scout
 	name = "legion scout armor"
-	desc = "(IV) A modified set of recruit armor with the chestplate removed to provide greater agility and reduce weight."
+	desc = "(III) A modified set of recruit armor with the chestplate removed to provide greater agility and reduce weight."
 	icon_state = "legscout"
+	slowdown = -0.15
+	armor = list("tier" = 3, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/prime
 	name = "legion prime armor"
@@ -456,7 +457,7 @@
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.14
+	slowdown = -0.2
 
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
