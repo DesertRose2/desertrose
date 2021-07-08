@@ -809,6 +809,18 @@
 	new /obj/item/ammo_box/l10mm(src)
 	new /obj/item/ammo_box/l10mm(src)
 
+/obj/item/storage/belt/holster/ncr/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/pistol/ninemil(src)
+	new /obj/item/ammo_box/magazine/m9mm(src)
+	new /obj/item/ammo_box/magazine/m9mm(src)
+	new /obj/item/ammo_box/magazine/m9mm(src)
+
+/obj/item/storage/belt/holster/med_lt/PopulateContents()
+	new /obj/item/gun/ballistic/revolver/thatgun(src)
+	new /obj/item/ammo_box/a556/stripper(src)
+	new /obj/item/ammo_box/a556/stripper(src)
+	new /obj/item/ammo_box/a556/stripper(src)
+
 /obj/item/storage/belt/holster/hip
 	name = "hip holster"
 	desc = "A low hanging holster to carry a handgun and ammo."
