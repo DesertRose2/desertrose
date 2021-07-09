@@ -1038,6 +1038,12 @@
 	if (istype(W,/obj/item/gun/ballistic/revolver/doublebarrel))
 		to_chat(usr, "You can't improve [W.name]...")
 		return
+	if (istype(W,/obj/item/gun/ballistic/revolver/shotgunrevolver))
+		to_chat(usr, "You can't improve [W.name]...")
+		return
+	if (istype(W,/obj/item/gun/ballistic/revolver/ballisticfist))
+		to_chat(usr, "You can't improve [W.name]...")
+		return
 	var/obj/item/gun/ballistic/B = W
 
 	var/dmgmod = rand(-10,10)
