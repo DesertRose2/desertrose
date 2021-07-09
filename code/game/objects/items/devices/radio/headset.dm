@@ -283,6 +283,18 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	desc = "A vault-tec radio.\nChannels are as follows: :v - vault."
 	keyslot = new /obj/item/encryptionkey/headset_vault
 
+/obj/item/radio/headset/headset_vault/cogcity
+	name = "\improper Cog City radio headset"
+
+/obj/item/radio/headset/headset_vault/cogcity/sci
+	keyslot = new /obj/item/encryptionkey/headset_sci
+
+/obj/item/radio/headset/headset_vault/cogcity/sec
+	keyslot = new /obj/item/encryptionkey/headset_vault_security
+
+/obj/item/radio/headset/headset_vault/cogcity/priest
+	keyslot = new /obj/item/encryptionkey/ai
+
 /obj/item/radio/headset/headset_vaultsec
 	name = "security radio headset"
 	desc = "This is used by your elite security force.\nTo access the security channel, use :s. To access the vault channel, use :v."

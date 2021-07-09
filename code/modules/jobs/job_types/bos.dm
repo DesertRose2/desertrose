@@ -149,7 +149,7 @@ Head Paladin
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
 		/obj/item/melee/powerfist=1 \
 		)
-	
+
 /datum/outfit/loadout/sentstand
 	name = "Assault Head Paladin"
 	backpack_contents = list(
@@ -302,7 +302,7 @@ Head Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
-	backpack_contents = list(		
+	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
@@ -412,7 +412,7 @@ Star Paladin
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer12=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,		
+		/obj/item/stock_parts/cell/ammo/mfc=3,
 		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -448,7 +448,7 @@ Paladin
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina,
-	/datum/outfit/loadout/paladinb, 
+	/datum/outfit/loadout/paladinb,
 	/datum/outfit/loadout/paladinc,
 	/datum/outfit/loadout/paladind
 	)
@@ -723,7 +723,7 @@ Scribe
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/defibrillator/compact=1,
-		/obj/item/storage/survivalkit_aid_adv=1 
+		/obj/item/storage/survivalkit_aid_adv=1
 		)
 
 /*
@@ -743,9 +743,9 @@ datum/job/bos/f13seniorknight
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, 
+	/datum/outfit/loadout/sknighta,
 	/datum/outfit/loadout/sknightb,
-	/datum/outfit/loadout/sknightc 
+	/datum/outfit/loadout/sknightc
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -806,7 +806,7 @@ datum/job/bos/f13seniorknight
 		/obj/item/attachments/scope=1
 		)
 
-/datum/outfit/loadout/sknightc 
+/datum/outfit/loadout/sknightc
 	name = "Security Senior"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9=1,
@@ -851,7 +851,7 @@ Knight
 
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
-	jobtype = /datum/job/bos/f13knight	
+	jobtype = /datum/job/bos/f13knight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
@@ -875,9 +875,9 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,	
+		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
@@ -902,7 +902,7 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
@@ -918,7 +918,7 @@ Knight
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,		
+		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/knight=1
@@ -943,7 +943,7 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
@@ -995,8 +995,8 @@ Initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, 
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, 
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/storage/toolbox/mechanical=1,
 		/obj/item/clothing/accessory/bos/initiateK=1

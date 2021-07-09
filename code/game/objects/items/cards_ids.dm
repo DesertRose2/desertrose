@@ -1157,3 +1157,6 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	uses_overlays = FALSE
+
+/obj/item/card/data/wpermit
+	name = "\improper VTCC weapons permit"
