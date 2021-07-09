@@ -360,6 +360,7 @@ Decanii
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
@@ -469,8 +470,8 @@ Decanii
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Recruit Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Prime Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
@@ -645,8 +646,8 @@ Veteran Legionary
 /datum/job/CaesarsLegion/Legionnaire/f13vetlegionary
 	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are a hardened warrior, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
@@ -732,8 +733,8 @@ Prime Legionairy
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	title = "Prime Legionary"
 	flag = F13LEGIONARY
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = "You answer to the Decani and the Centurion, as well as Veterans above you. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
@@ -802,8 +803,8 @@ Recruit Legionary
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 12
@@ -950,6 +951,15 @@ Explorer
 	supervisors = "the Venator and Centurion"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+	loadout_options = list(
+		/datum/outfit/loadout/excursor,
+		/datum/outfit/loadout/sapper)
+
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+	name = "Legion Explorer"
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
+	id = 		/obj/item/card/id/dogtag/legprime
+	ears	=	/obj/item/radio/headset/headset_legion
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -960,24 +970,44 @@ Explorer
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	name = "Legion Explorer"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
-	id = 		/obj/item/card/id/dogtag/legprime
-	suit = 		/obj/item/clothing/suit/armor/f13/legion/vet/explorer
-	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	neck = 		/obj/item/storage/belt/holster
-	glasses = 	/obj/item/clothing/glasses/legiongoggles
-	ears	=	/obj/item/radio/headset/headset_legion
-	r_pocket = /obj/item/binoculars
-	l_pocket = /obj/item/attachments/scope
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+/datum/outfit/loadout/excursor
+	name = "Excursor"
+	shoes =			/obj/item/clothing/shoes/roman
+	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/explorer
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	neck = 			/obj/item/storage/belt/holster
+	glasses = 		/obj/item/clothing/glasses/legiongoggles
+	ears	=		/obj/item/radio/headset/headset_legion
+	r_pocket = 		/obj/item/binoculars
+	l_pocket = 		/obj/item/attachments/scope
+	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legion=1)
+		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/restraints/handcuffs=2)
+
+/datum/outfit/loadout/sapper
+	name = "Sonspicio Munitor"
+	shoes =			/obj/item/clothing/shoes/roman
+	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/explorer
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	gloves = 		/obj/item/clothing/gloves/f13/blacksmith
+	neck = 			/obj/item/storage/belt/holster
+	belt = 			/obj/item/storage/belt/utility/full/engi
+	glasses = 		/obj/item/clothing/glasses/legiongoggles
+	ears	=		/obj/item/radio/headset/headset_legion
+	suit_store = 	/obj/item/gun/ballistic/automatic/commando
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/greasegun=1,
+		/obj/item/grenade/plastic=1,
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/flashlight/lantern=1,
+		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/restraints/handcuffs=1)
 
 /*
 Auxilia
