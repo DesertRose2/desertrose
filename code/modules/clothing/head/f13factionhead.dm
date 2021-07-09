@@ -504,6 +504,13 @@
 	item_state = "ncr_sof_beret"
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/head/beret/tina_beret
+	name = "Harebell Scout Beret"
+	desc = "A worn beret darkened by use, it appears to be the old symbol of Scout Corporals in the 1st Battalion, 3rd Infantry Regiment of the NCRA. The petals of a harebell appear to be threaded around the flash. Someone likes flowers."
+	icon_state = "tina_beret"
+	item_state = "tina_beret"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/head/f13/ncr_stetson
 	name = "NCR air cavalry stetson"
 	desc = "(VII) A black brahmin leather stetson, authorized for usage amongst all troopers assigned to Air Cavalry units."
