@@ -88,6 +88,16 @@
 	uses = 1
 	starting_organ = /obj/item/organ/eyes/robotic/glow
 
+/obj/item/autosurgeon/surgery
+	starting_organ = /obj/item/organ/cyberimp/arm/surgery
+	desc = "A single use autosurgeon that contains a surgery toolset augment. A screwdriver can be used to remove it, but implants can't be placed back in."
+	uses = 1
+
+/obj/item/autosurgeon/toolset
+	starting_organ = /obj/item/organ/cyberimp/arm/toolset
+	desc = "A single use autosurgeon that contains a toolset augment. A screwdriver can be used to remove it, but implants can't be placed back in."
+	uses = 1
+
 /obj/item/autosurgeon/thermal_eyes
 	starting_organ = /obj/item/organ/eyes/robotic/thermals
 

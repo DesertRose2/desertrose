@@ -202,7 +202,7 @@ Lieutenant
 		/obj/item/ammo_box/magazine/m9mm=3, \
 		/obj/item/binoculars=1, \
 		/obj/item/storage/bag/money/small/ncr=1, \
-		/obj/item/storage/survivalkit_aid_adv=1)	
+		/obj/item/storage/survivalkit_aid_adv=1)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -297,7 +297,7 @@ Sergeant First Class
 	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_FIRSTSERGEANT
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
-	
+
 	loadout_options = list(
 	/datum/outfit/loadout/sfcinfantry, //R82
 	/datum/outfit/loadout/sfcsniper, //Sniper Rifle
@@ -427,7 +427,7 @@ Corporal
 	/datum/outfit/loadout/corpreg,
 	/datum/outfit/loadout/corplight,
 	/datum/outfit/loadout/corpcqb
-	)	
+	)
 
 /datum/outfit/job/ncr/f13corporal
 	name = "NCR Corporal"
