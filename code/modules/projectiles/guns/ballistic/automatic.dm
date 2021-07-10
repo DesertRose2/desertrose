@@ -688,7 +688,7 @@
 	automatic_burst_overlay = TRUE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	semi_auto = TRUE
-	burst_shot_delay = 2.2 //Was 2 before.
+	burst_shot_delay = 3.0 //Was 2.2 before.
 	can_suppress = TRUE
 	can_automatic = TRUE
 	can_scope = TRUE

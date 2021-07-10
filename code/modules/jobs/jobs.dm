@@ -65,7 +65,12 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Shaman",
 	"Head Hunter",
 
-	"Followers Administrator"
+	"Followers Administrator",
+
+	"Alderman",
+	"Marshal",
+	"Merchant",
+	"Chief Researcher"
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -123,7 +128,16 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Vault-tec Doctor",
 "Vault-tec Scientist",
 "Vault-tec Security",
-"Vault-tec Engineer"
+"Vault-tec Engineer",
+
+"Alderman",
+"Marshal",
+"Merchant",
+"Chief Researcher",
+"Town Security",
+"Roadie",
+"Researcher",
+"Hoistway Preacher"
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
@@ -159,7 +173,12 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Vault-tec Doctor",
 "Vault-tec Scientist",
 "Vault-tec Security",
-"Vault-tec Engineer"
+"Vault-tec Engineer",
+
+"Town Security",
+"Roadie",
+"Researcher",
+"Hoistway Preacher"
 ))
 
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"antagonist"
@@ -309,8 +328,18 @@ GLOBAL_LIST_INIT(followers_positions, list(
 	"Followers Volunteer",
 	"Followers Scientist"
 ))
-
-
+GLOBAL_LIST_INIT(vtcc_command_positions, list(
+	"Alderman",
+	"Marshal",
+	"Merchant",
+	"Chief Researcher"
+))
+GLOBAL_LIST_INIT(vtcc_positions, list(
+	"Town Security",
+	"Roadie",
+	"Researcher",
+	"Hoistway Preacher"
+))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions

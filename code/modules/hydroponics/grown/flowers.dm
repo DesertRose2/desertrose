@@ -390,7 +390,7 @@
 	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
 	icon_grow = "carbonrose-grow"
 	icon_dead = "carbonrose-dead"
-	reagents_add = list(/datum/reagent/plastic_polymers = 0.05)
+	reagents_add = list(/datum/reagent/carbon = 0.05)
 	rarity = 10
 
 /obj/item/grown/carbon_rose
