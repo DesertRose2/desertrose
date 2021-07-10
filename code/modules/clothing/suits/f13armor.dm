@@ -804,7 +804,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "ranger_cloak"
 	item_state = "ranger_cloak"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0) //Same armor as trail ranger gear
-	slowdown = -0.14 //Same speed buff as trail ranger gear
+	slowdown = -0.2 //Same speed buff as trail ranger gear
 
 /obj/item/clothing/suit/armor/f13/herbertranger //Armor wise, it's reskinned raider armor.
 	name = "weathered desert ranger armor"
