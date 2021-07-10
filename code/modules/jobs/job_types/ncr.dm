@@ -829,7 +829,6 @@ Veteran Ranger
 	/datum/outfit/loadout/rangerrecon,
 	/datum/outfit/loadout/rangertrail,
 	/datum/outfit/loadout/rangerpatrol,
-	/datum/outfit/loadout/rangerpatrolcqb,
 	/datum/outfit/loadout/rangermedic,
 	/datum/outfit/loadout/rangerengineer
 	)
@@ -867,10 +866,9 @@ Veteran Ranger
 	suit =	/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
 	belt =	/obj/item/storage/belt/military/reconbandolier
 	head = /obj/item/clothing/head/helmet/f13/combat/swat
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/guncase = 1,
 		/obj/item/storage/survivalkit_aid=1
 	)
 
@@ -878,13 +876,11 @@ Veteran Ranger
 	name = "Trail Ranger"
 	suit =	/obj/item/clothing/suit/armor/f13/trailranger
 	belt =	/obj/item/storage/belt/military/NCR_Bandolier
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/garand308=3,
+		/obj/item/guncase = 1,
 		/obj/item/melee/classic_baton/telescopic=1,
-		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/attachments/scope=1
+		/obj/item/storage/survivalkit_aid=1
 	)
 
 /datum/outfit/loadout/rangerpatrol
@@ -893,25 +889,9 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/marksman
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
-		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/storage/survivalkit_aid = 1
-	)
-
-/datum/outfit/loadout/rangerpatrolcqb
-	name = "CQB Patrol Ranger"
-	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
-	head = /obj/item/clothing/head/f13/ranger
-	uniform = /obj/item/clothing/under/f13/ranger/patrol
-	belt =	/obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
-	gloves = /obj/item/clothing/gloves/patrol
-	backpack_contents = list(
-		/obj/item/storage/fancy/ammobox/lethalshot = 2,
-		/obj/item/storage/fancy/ammobox/slugshot = 1,
+		/obj/item/guncase = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/storage/survivalkit_aid = 1
 	)
