@@ -51,7 +51,7 @@
 		for(var/new_type in chosen)
 			var/atom/movable/gun = new new_type(get_turf(src))
 			if(istype(gun, /obj/item/gun/))
-				to_chat(user, "You take your [gun] out of the case.")
+				to_chat(user, "You take [gun] out of the case.")
 		qdel(src)
 
 /obj/item/storage/backpack/duffelbag/marksman
