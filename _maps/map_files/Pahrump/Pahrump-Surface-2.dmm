@@ -5109,7 +5109,9 @@
 /area/f13/wasteland)
 "dhB" = (
 /obj/machinery/mineral/wasteland_vendor/attachments,
-/turf/open/indestructible/ground/outside/sidewalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain1"
+	},
 /area/f13/city)
 "dhC" = (
 /turf/open/floor/f13{
@@ -16066,7 +16068,7 @@
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
 	max_integrity = 500;
-	name = "Store Backroom";
+	name = "store backroom";
 	req_one_access_txt = "34"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -20318,7 +20320,9 @@
 /area/f13/legion)
 "mDf" = (
 /obj/machinery/mineral/wasteland_vendor/pipboy,
-/turf/open/indestructible/ground/outside/sidewalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain1"
+	},
 /area/f13/city)
 "mDn" = (
 /obj/item/flag/bos,
@@ -22051,7 +22055,9 @@
 /area/f13/building)
 "nRu" = (
 /obj/machinery/mineral/wasteland_vendor/mining,
-/turf/open/indestructible/ground/outside/sidewalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain1"
+	},
 /area/f13/city)
 "nRz" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -22267,7 +22273,7 @@
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
 	max_integrity = 500;
-	name = "Store Backroom";
+	name = "store";
 	req_one_access_txt = "34"
 	},
 /obj/machinery/door/poddoor/shutters{
@@ -22936,7 +22942,9 @@
 /area/f13/brotherhood)
 "ovR" = (
 /obj/machinery/mineral/wasteland_vendor/crafting,
-/turf/open/indestructible/ground/outside/sidewalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain1"
+	},
 /area/f13/city)
 "owh" = (
 /obj/structure/rack,
@@ -24762,7 +24770,7 @@
 /area/f13/caves)
 "pCM" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Marshall's office"
+	name = "Marshal's office"
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "Marshal's Office"
@@ -27599,7 +27607,7 @@
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
 	max_integrity = 500;
-	name = "Store Backroom";
+	name = "store backroom";
 	req_one_access_txt = "34"
 	},
 /turf/open/floor/wood/f13,
@@ -32794,7 +32802,9 @@
 	},
 /area/f13/wasteland)
 "uCn" = (
-/obj/machinery/door/airlock/vault,
+/obj/machinery/door/airlock/vault{
+	name = "jail"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "uCO" = (
@@ -33597,7 +33607,7 @@
 /area/f13/city)
 "uYu" = (
 /obj/machinery/button/door{
-	id = "innercity";
+	id = "platform";
 	name = "gate shutters";
 	pixel_y = -25
 	},
@@ -35766,7 +35776,9 @@
 /area/f13/tunnel)
 "wuU" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/door/poddoor/shutters/old,
+/obj/machinery/door/poddoor/shutters/old{
+	id = "merchant"
+	},
 /turf/open/floor/bluespace,
 /area/f13/city)
 "wvf" = (
@@ -38803,9 +38815,19 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/f13/brotherhood)
+"yfs" = (
+/obj/machinery/button/door{
+	id = "merchant";
+	name = "shutters button";
+	pixel_y = 27
+	},
+/turf/open/floor/wood/wood_large,
+/area/f13/city)
 "yfI" = (
 /obj/structure/barricade/bars,
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters{
+	id = "platform"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "yga" = (
@@ -43113,7 +43135,7 @@ xyS
 xTO
 rbF
 ygM
-tvY
+yfs
 tvY
 tvY
 bJe
@@ -52077,7 +52099,7 @@ pYN
 pYN
 brH
 nRu
-cpK
+qnE
 cpK
 ofX
 uMZ
@@ -52334,7 +52356,7 @@ mfq
 pYN
 brH
 mDf
-cpK
+qnE
 cpK
 unI
 uMZ

@@ -3195,6 +3195,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/leisure)
+"dby" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "dbZ" = (
 /obj/structure/table/wood/settler,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -5604,6 +5612,13 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"fkK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "fkZ" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -6335,6 +6350,15 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/tunnel)
+"fUn" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "fUZ" = (
 /obj/effect/decal/cleanable/blood,
 /obj/structure/barricade/wooden/strong,
@@ -9321,6 +9345,13 @@
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"iRO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/fo13colored/Red{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "iRU" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -10013,6 +10044,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/reactor)
+"jHj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "jIm" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -10298,6 +10337,11 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood/operations)
+"jVU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/pickaxe,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "jWa" = (
 /obj/structure/chair{
 	dir = 1
@@ -10914,6 +10958,14 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/bunker)
+"kIV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "kIY" = (
 /obj/item/flashlight/flare/torch,
 /turf/open/floor/f13/wood{
@@ -11535,6 +11587,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/offices2nd)
+"loM" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/tunnel)
 "lpd" = (
 /obj/structure/handrail/g_central{
 	dir = 1;
@@ -12659,6 +12717,12 @@
 	icon_state = "housebase"
 	},
 /area/f13/tunnel)
+"mED" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "mEQ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -13407,6 +13471,10 @@
 	icon_state = "redmark"
 	},
 /area/f13/tunnel)
+"nsq" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "nsw" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/floor/f13{
@@ -15549,6 +15617,14 @@
 	pixel_y = 12
 	},
 /turf/open/floor/f13/wood,
+/area/f13/tunnel)
+"pwc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "pwi" = (
 /obj/structure/chair/comfy/brown{
@@ -33458,10 +33534,10 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-jmN
-xDr
+nsq
+kIV
+loM
+iRO
 xDr
 xDr
 mba
@@ -33715,10 +33791,10 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-jmN
-iPO
+kIV
+dby
+jHj
+jVU
 qJM
 xDr
 xDr
@@ -33971,10 +34047,10 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-jmN
+fUn
+dby
+dby
+jHj
 xDr
 xDr
 xDr
@@ -34228,10 +34304,10 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-jmN
+mED
+dby
+dby
+pwc
 xDr
 xDr
 xDr
@@ -34486,9 +34562,9 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-jmN
+fkK
+kIV
+loM
 xDr
 xDr
 xDr
