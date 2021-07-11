@@ -7877,7 +7877,7 @@
 /area/f13/caves)
 "eWj" = (
 /obj/machinery/door/airlock/freezer{
-	name = "Mayor's Office";
+	name = "Mayor's office";
 	req_one_access_txt = "62"
 	},
 /turf/open/floor/f13/wood,
@@ -8404,7 +8404,7 @@
 /area/f13/tunnel)
 "flu" = (
 /obj/machinery/door/airlock/freezer{
-	name = "Mayor's Office";
+	name = "Merchant's mansion";
 	req_one_access_txt = "62"
 	},
 /turf/open/floor/grass,
@@ -10127,7 +10127,7 @@
 /area/f13/tunnel)
 "gqE" = (
 /obj/structure/ladder/unbreakable{
-	desc = "A normal wasteland well with a ladder inside.;
+	desc = "A normal wasteland well with a ladder inside.";
 	icon = 'icons/obj/Ritas.dmi';
 	icon_state = "wellwheel";
 	id = "VC4";
@@ -24761,7 +24761,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pCM" = (
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	name = "Marshall's office"
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "Marshal's Office"
 	},
@@ -28494,15 +28496,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "scW" = (
-/obj/structure/closet{
-	pixel_x = -8;
-	pixel_y = 3
-	},
-/obj/structure/closet{
-	pixel_x = 7;
-	pixel_y = 3
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "scY" = (
@@ -31251,6 +31246,14 @@
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/caves)
+"tFK" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "armory"
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "tFM" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/structure/table/wood/fancy,
@@ -31836,9 +31839,7 @@
 /area/f13/building)
 "tWw" = (
 /obj/machinery/door/airlock/vault,
-/turf/closed/wall/r_wall/f13vault{
-	icon_state = "2-i"
-	},
+/turf/open/floor/plasteel/dark,
 /area/f13/city)
 "tXe" = (
 /obj/structure/weightmachine/stacklifter,
@@ -33589,7 +33590,9 @@
 	},
 /area/f13/village)
 "uYs" = (
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	name = "gatehouse"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "uYu" = (
@@ -40790,7 +40793,7 @@ wYM
 wYM
 wYM
 wYM
-wxw
+wYM
 tWw
 uQx
 xyS
@@ -41047,7 +41050,7 @@ wYM
 wYM
 wYM
 wYM
-wxw
+wYM
 tWw
 xsK
 xyS
@@ -53123,7 +53126,7 @@ wOj
 wOj
 wOj
 wOj
-mML
+tFK
 wOj
 wOj
 wOj
