@@ -147,29 +147,31 @@ Head Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
-		/obj/item/melee/powerfist=1 \
 		)
 
 /datum/outfit/loadout/sentstand
 	name = "Assault Head Paladin"
 	backpack_contents = list(
+		/obj/item/twohanded/sledgehammer/supersledge=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/gun/energy/laser/aer14=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
-		/obj/item/melee/classic_baton/telescopic=1
 		)
 
 /datum/outfit/loadout/sentheavy
 	name = "Heavy Head Paladin"
 	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
 		/obj/item/gun/ballistic/automatic/m72=1,
 		/obj/item/ammo_box/magazine/m2mm=3,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/grenade/barrier=2,
-		/obj/item/binoculars=1
+		/obj/item/binoculars=1,
+		/obj/item/melee/classic_baton/telescopic=1
 		)
 
 /*
@@ -411,8 +413,8 @@ Star Paladin
 /datum/outfit/loadout/spaladina
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -423,11 +425,12 @@ Star Paladin
 /datum/outfit/loadout/spaladinc
 	name = "Senior Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1,
-		/obj/item/gun/energy/laser/wattz2k=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3
 		)
 
 /*
@@ -480,12 +483,9 @@ Paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
-	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/melee/powerfist=1, \
-		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
@@ -493,6 +493,8 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Junior Assault Paladin"
 	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/grenade/flashbang=1,
 		/obj/item/grenade/chem_grenade/teargas=1,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -503,6 +505,8 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Junior Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
@@ -513,6 +517,8 @@ Paladin
 /datum/outfit/loadout/paladinc
 	name = "Assault Paladin"
 	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/grenade/flashbang=1,
 		/obj/item/grenade/chem_grenade/teargas=1,
 		/obj/item/reagent_containers/spray/pepper=1,
@@ -523,6 +529,8 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
