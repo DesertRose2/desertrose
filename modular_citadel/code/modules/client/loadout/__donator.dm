@@ -305,6 +305,11 @@
 	name = "Flagstaff's belongings"
 	path = /obj/item/storage/box/large/custom_kit/flagstaff
 	ckeywhitelist = list("landoorando")
+	
+/datum/gear/donator/kits/emilywinona
+	name = "Emily Winona's belongings"
+	path = /obj/item/storage/box/large/custom_kit/emilywinona/
+	ckeywhitelist = list("muhsollini")
 
 //////////////////////////////
 ///Ranger items start here.///

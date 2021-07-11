@@ -246,6 +246,12 @@
 	name = "nobel sciences award"
 	desc = "A plasma medal which represents significant contributions to the field of science or engineering."
 
+/obj/item/clothing/accessory/medal/californian_cross
+	name = "The Californian Cross"
+	desc = "This medal is given to those who have endured the hardships of captivity and all it entails, we honor their courage and resolve in those dark times and shall never forget what they gave."
+	icon_state = "californian_cross"
+	item_state = "californian_cross"
+
 ////////////
 //Armbands//
 ////////////

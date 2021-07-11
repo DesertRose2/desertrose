@@ -1,21 +1,22 @@
 /obj/item/melee/powerfist
-	name = "power-fist"
-	desc = "A metal gauntlet with a piston-powered ram ontop for that extra 'ompfh' in your punch."
+	name = "powerfist"
+	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
 	icon_state = "powerfist"
 	item_state = "powerfist"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
-	item_flags = NEEDS_PERMIT | NO_COMBAT_MODE_FORCE_MODIFIER //To avoid ambushing and oneshotting healthy crewmembers on force setting 3.
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 20
+	force = 50
+	armour_penetration = 0.8
 	throwforce = 10
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 	resistance_flags = FIRE_PROOF
-	attack_speed = CLICK_CD_MELEE * 1.5
-	var/fisto_setting = 1
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
+
+/*	var/fisto_setting = 1
 	var/gasperfist = 3
 	var/obj/item/tank/internals/tank = null //Tank used for the gauntlet's piston-ram.
 
@@ -112,4 +113,4 @@
 	var/weight = getweight(user, STAM_COST_ATTACK_MOB_MULT)
 	if(weight)
 		user.adjustStaminaLossBuffered(weight)
-	return TRUE
+	return TRUE*/
