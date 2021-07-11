@@ -368,9 +368,18 @@
 	item_state = "scoutarmor"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
-	name = "NCR light infantry veteran combat armor"
-	desc = "(VI) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
+	name = "NCR light infantry mantle armor"
+	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle"
+	item_state = "scoutarmor_mantle"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
+	name = "NCR light infantry reinforced mantle armor"
+	desc = "(VI) A specialized reinforced variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle_reinforced"
+	item_state = "scoutarmor_mantle_reinforced"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer
