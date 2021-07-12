@@ -287,13 +287,41 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "\improper Cog City radio headset"
 
 /obj/item/radio/headset/headset_vault/cogcity/sci
-	keyslot = new /obj/item/encryptionkey/headset_sci
+	name = "\improper Cog City science radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_science
 
 /obj/item/radio/headset/headset_vault/cogcity/sec
+	name = "\improper Cog City security radio headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_security
 
 /obj/item/radio/headset/headset_vault/cogcity/priest
-	keyslot = new /obj/item/encryptionkey/ai
+	name = "\improper Cog City preacher radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_preacher
+
+/obj/item/radio/headset/headset_vault/cogcity/merch
+	name = "\improper Cog City merchant radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_merchant
+
+/obj/item/radio/headset/headset_vault/cogcity/overseer
+	name = "\improper Cog City command radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault
+	keyslot2 = new /obj/item/encryptionkey/headset_overseer
+
+/obj/item/radio/headset/headset_vault/cogcity/sec_lead
+	name = "\improper Cog City security command radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_security
+	keyslot2 = new /obj/item/encryptionkey/headset_overseer
+
+/obj/item/radio/headset/headset_vault/cogcity/sci_lead
+	name = "\improper Cog City research command radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_science
+	keyslot2 = new /obj/item/encryptionkey/headset_overseer
+
+/obj/item/radio/headset/headset_vault/cogcity/merch_lead
+	name = "\improper Cog City merchant command radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault_merchant
+	keyslot2 = new /obj/item/encryptionkey/headset_overseer
+
 
 /obj/item/radio/headset/headset_vaultsec
 	name = "security radio headset"
