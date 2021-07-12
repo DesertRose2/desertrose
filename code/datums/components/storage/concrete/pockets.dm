@@ -15,6 +15,10 @@
 /datum/component/storage/concrete/pockets
 	max_w_class = WEIGHT_CLASS_NORMAL
 
+/datum/component/storage/concrete/pockets/pothead
+	max_items = 2
+	max_w_class = WEIGHT_CLASS_SMALL
+
 /datum/component/storage/concrete/pockets/small
 	max_items = 1
 	attack_hand_interact = FALSE

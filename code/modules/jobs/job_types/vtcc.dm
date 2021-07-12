@@ -2,6 +2,7 @@
 	department_flag = VTCC
 	selection_color = "#ADD8E6"
 	faction = "VTCC"
+	exp_type = EXP_TYPE_VTCC
 
 /datum/outfit/job/vtcc/
 	name = "VTCCdatums"
@@ -43,7 +44,7 @@
 /datum/outfit/job/vtcc/f13alderman
 	name = "Alderman"
 	jobtype = /datum/job/vtcc/f13alderman
-
+	ears = /obj/item/radio/headset/headset_vault/cogcity/overseer
 	id =            /obj/item/card/id/silver
 	r_pocket = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	belt = /obj/item/gun/ballistic/automatic/pistol/n99/executive
@@ -54,23 +55,23 @@
 /datum/outfit/loadout/treasurer
 	name = "Treasurer"
 	backpack_contents = list(
-	/obj/item/pen/fountain/captain,
-	/obj/item/paper_bin,
-	/obj/item/stack/f13Cash/caps/fivezerozero)
+	/obj/item/pen/fountain/captain=1,
+	/obj/item/paper_bin=1,
+	/obj/item/stack/f13Cash/caps/fivezerozero=1)
 
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/lasmusket,
-	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak,
+	/obj/item/gun/ballistic/shotgun/lasmusket=1,
+	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,
 	/obj/item/ammo_box/lasmusket = 2)
 
 /datum/outfit/loadout/eldervaultie
 	name = "Elder Vaultie"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/vest,
-	/obj/item/pda,
-	/obj/item/melee/baton)
+	/obj/item/clothing/suit/armor/vest=1,
+	/obj/item/pda=1,
+	/obj/item/melee/baton=1)
 
 /* Marshal */
 
@@ -106,6 +107,7 @@
 	ears = /obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id/silver
 	backpack = /obj/item/storage/backpack/satchel/explorer
+	ears = /obj/item/radio/headset/headset_vault/cogcity/sec_lead
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	belt = /obj/item/gun/ballistic/revolver/lucky37
@@ -114,30 +116,30 @@
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/ammo_box/a357/ap = 2,
-		/obj/item/pda/warden
+		/obj/item/pda/warden=1
 		)
 
 /datum/outfit/loadout/secchief
 	name = "Chief of Security"
 	backpack_contents = list(
-	/obj/item/clothing/under/rank/security/officer,
-	/obj/item/storage/belt/security/full,
-	/obj/item/stack/f13Cash/caps/fivezerozero)
+	/obj/item/clothing/under/rank/security/officer=1,
+	/obj/item/storage/belt/security/full=1,
+	/obj/item/stack/f13Cash/caps/fivezerozero=1)
 
 /datum/outfit/loadout/gunslinger
 	name = "Gunslinger"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/revolver/m29,
+	/obj/item/gun/ballistic/revolver/m29=1,
 	/obj/item/ammo_box/m44 = 2,
-	/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal,
-	/obj/item/clothing/head/f13/cowboy)
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal=1,
+	/obj/item/clothing/head/f13/cowboy=1)
 
 /datum/outfit/loadout/peacekeeper
 	name = "Peacekeeper"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec,
-	/obj/item/pda,
-	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec)
+	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
+	/obj/item/pda=1,
+	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1)
 
 /* Merchant */
 
@@ -168,7 +170,7 @@
 /datum/outfit/job/vtcc/f13merchant
 	name = "Merchant"
 	jobtype = /datum/job/vtcc/f13merchant
-
+	ears = /obj/item/radio/headset/headset_vault/cogcity/merch_lead
 	id =            /obj/item/card/id/silver
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
@@ -178,16 +180,16 @@
 	uniform = /obj/item/clothing/under/f13/cowboyg
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	backpack_contents = list(
-		/obj/item/stack/f13Cash/caps/fivezerozero
+		/obj/item/stack/f13Cash/caps/fivezerozero=1
 		)
 
 /datum/outfit/loadout/blacksmith
 	name = "Blacksmith"
 	backpack_contents = list(
-	/obj/item/clothing/gloves/f13/blacksmith,
-	/obj/item/melee/smith/hammer/toolbox,
+	/obj/item/clothing/gloves/f13/blacksmith=1,
+	/obj/item/melee/smith/hammer/toolbox=1,
 	/obj/item/stack/sheet/mineral/sandstone = 37,
-	/obj/item/stack/sheet/metal/twenty
+	/obj/item/stack/sheet/metal/twenty=1
 	)
 
 /datum/outfit/loadout/armsdealer
@@ -241,7 +243,7 @@
 	name = "Chief Researcher"
 	jobtype = /datum/job/vtcc/f13chresearcher
 
-	ears = /obj/item/radio/headset/headset_vault/cogcity/sci
+	ears = /obj/item/radio/headset/headset_vault/cogcity/sci_lead
 	glasses =		/obj/item/clothing/glasses/hud/health
 	id =            /obj/item/card/id/silver
 	backpack = /obj/item/storage/backpack/satchel/explorer
@@ -249,9 +251,9 @@
 	r_pocket = /obj/item/clipboard
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
-		/obj/item/pen/fountain,
-		/obj/item/paper_bin,
-		/obj/item/gun/ballistic/revolver/needler,
+		/obj/item/pen/fountain=1,
+		/obj/item/paper_bin=1,
+		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3
 		)
@@ -259,19 +261,19 @@
 /datum/outfit/loadout/qadmin
 	name = "Quarantine Admin"
 	backpack_contents = list(
-	/obj/item/clothing/head/bio_hood,
-	/obj/item/clothing/suit/bio_suit,
-	/obj/item/storage/briefcase/medical,
+	/obj/item/clothing/head/bio_hood=1,
+	/obj/item/clothing/suit/bio_suit=1,
+	/obj/item/storage/briefcase/medical=1,
 	/obj/item/ammo_box/needleap = 2
 	)
 
 /datum/outfit/loadout/neurosurgeon
 	name = "Neurosurgeon"
 	backpack_contents = list(
-	/obj/item/autosurgeon/surgery,
-	/obj/item/mmi,
-	/obj/item/storage/pill_bottle/mannitol,
-	/obj/item/storage/firstaid/brute
+	/obj/item/autosurgeon/surgery=1,
+	/obj/item/mmi=1,
+	/obj/item/storage/pill_bottle/mannitol=1,
+	/obj/item/storage/firstaid/brute=1
 	)
 
 /* Town Sec */
@@ -310,38 +312,38 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
 	shoes = 		/obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/
+	suit = /obj/item/clothing/suit/armor/vest
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/geiger_counter,
+		/obj/item/geiger_counter=1,
 		/obj/item/stock_parts/cell/ammo/ec = 1
 		)
 
 /datum/outfit/loadout/musketeer
 	name = "Musketeer"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/lasmusket,
-	/obj/item/clothing/head/f13/cowboy,
+	/obj/item/gun/ballistic/shotgun/lasmusket=1,
+	/obj/item/clothing/head/f13/cowboy=1,
 	/obj/item/ammo_box/lasmusket = 2,
-	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster
+	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1
 	)
 
 /datum/outfit/loadout/oldguard
 	name = "Old Guard"
 	backpack_contents = list(
-	/obj/item/clothing/under/f13/vault/vcity,
-	/obj/item/gun/ballistic/automatic/smg10mm,
-	/obj/item/pda/security,
+	/obj/item/clothing/under/f13/vault/vcity=1,
+	/obj/item/gun/ballistic/automatic/smg10mm=1,
+	/obj/item/pda/security=1,
 	/obj/item/ammo_box/magazine/m10mm_adv/ext = 2
 	)
 
 /datum/outfit/loadout/riotpolice
 	name = "Riot Cop"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
+	/obj/item/gun/ballistic/shotgun/automatic/combat/neostead=1,
 	/obj/item/ammo_box/shotgun/bean = 2,
 	/obj/item/ammo_box/shotgun/magnum = 2,
-	/obj/item/shield/riot/tele
+	/obj/item/shield/riot/tele=1
 	)
 
 /* Roadie */
@@ -376,7 +378,7 @@
 /datum/outfit/job/vtcc/f13roadie
 	name = "Roadie"
 	jobtype = /datum/job/vtcc/f13roadie
-
+	neck = /obj/item/radio/headset/headset_vault/cogcity/merch
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
@@ -390,27 +392,27 @@
 /datum/outfit/loadout/scavver
 	name = "Scavver"
 	backpack_contents = list(
-	/obj/item/autosurgeon/toolset,
-	/obj/item/clothing/glasses/welding,
-	/obj/item/twohanded/fireaxe
+	/obj/item/autosurgeon/toolset=1,
+	/obj/item/clothing/glasses/welding=1,
+	/obj/item/twohanded/fireaxe=1
 	)
 
 /datum/outfit/loadout/courier
 	name = "Courier"
 	backpack_contents = list(
-	/obj/item/clothing/glasses/f13/biker,
-	/obj/item/clothing/shoes/jackboots/fast,
-	/obj/item/gun/ballistic/automatic/commando,
-	/obj/item/stack/sheet/cardboard/twenty,
+	/obj/item/clothing/glasses/f13/biker=1,
+	/obj/item/clothing/shoes/jackboots/fast=1,
+	/obj/item/gun/ballistic/automatic/commando=1,
+	/obj/item/stack/sheet/cardboard/twenty=1,
 	/obj/item/ammo_box/magazine/greasegun = 2
 	)
 
 /datum/outfit/loadout/caravaner
 	name = "Caravan Guard"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/lever,
+	/obj/item/gun/ballistic/shotgun/lever=1,
 	/obj/item/ammo_box/shotgun/slug = 2,
-	/obj/item/claymore/machete/pipe/tireiron
+	/obj/item/claymore/machete/pipe/tireiron=1
 	)
 
 /* Researcher */
@@ -425,8 +427,8 @@
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
 	loadout_options = list(
-		/datum/outfit/loadout/qadmin,
-		/datum/outfit/loadout/neurosurgeon,
+		/datum/outfit/loadout/medprof,
+		/datum/outfit/loadout/robotocist,
 		)
 
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -451,26 +453,26 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/needler,
+		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 		)
 
-/datum/outfit/loadout/qadmin
+/datum/outfit/loadout/medprof
 	name = "Medical Professional"
 	backpack_contents = list(
-	/obj/item/autosurgeon/surgery,
-	/obj/item/clothing/suit/hooded/parka/medical,
-	/obj/item/storage/firstaid/brute,
+	/obj/item/autosurgeon/surgery=1,
+	/obj/item/clothing/suit/hooded/parka/medical=1,
+	/obj/item/storage/firstaid/brute=1,
 	/obj/item/ammo_box/needleap = 2
 	)
 
-/datum/outfit/loadout/neurosurgeon
+/datum/outfit/loadout/robotocist
 	name = "Roboticist"
 	backpack_contents = list(
-	/obj/item/autosurgeon/toolset,
-	/obj/item/clothing/glasses/hud/diagnostic,
-	/obj/item/clothing/under/f13/roboticistalt
+	/obj/item/autosurgeon/toolset=1,
+	/obj/item/clothing/glasses/hud/diagnostic=1,
+	/obj/item/clothing/under/f13/roboticistalt=1
 	)
 
 /* Hoistway Preacher */
@@ -509,23 +511,23 @@
 	r_pocket = /obj/item/lighter/fusion
 	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
 	backpack_contents = list(
-		/obj/item/book/manual/ripley_build_and_repair,
-		/obj/item/bodypart/l_arm/robot,
-		/obj/item/bodypart/r_arm/robot,
-		/obj/item/bodypart/l_leg/robot,
-		/obj/item/bodypart/r_leg/robot
+		/obj/item/book/manual/ripley_build_and_repair=1,
+		/obj/item/bodypart/l_arm/robot=1,
+		/obj/item/bodypart/r_arm/robot=1,
+		/obj/item/bodypart/l_leg/robot=1,
+		/obj/item/bodypart/r_leg/robot=1
 		)
 
 /datum/outfit/loadout/engineer
 	name = "Engineer"
 	backpack_contents = list(
-	/obj/item/autosurgeon/toolset
+	/obj/item/autosurgeon/toolset=1
 	)
 
 /datum/outfit/loadout/techwhisperer
 	name = "Tech Whisperer"
 	backpack_contents = list(
-	/obj/item/storage/fancy/candle_box
+	/obj/item/storage/fancy/candle_box=1
 	)
 
 /* Innkeeper */
@@ -557,33 +559,33 @@
 /datum/outfit/job/vtcc/f13innkeeper
 	name = "Innkeeper"
 	jobtype = /datum/job/vtcc/f13innkeeper
-
+	ears = /obj/item/radio/headset/headset_vault/cogcity/merch
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/pda/bar
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/bean,
-		/obj/item/gun/ballistic/revolver/widowmaker,
+		/obj/item/ammo_box/shotgun/bean=1,
+		/obj/item/gun/ballistic/revolver/widowmaker=1,
 
 		)
 
 /datum/outfit/loadout/receptionist
 	name = "Receptionist"
 	backpack_contents = list(
-	/obj/item/clipboard,
-	/obj/item/paper_bin,
-	/obj/item/clothing/under/suit/white_on_white/skirt,
-	/obj/item/clothing/under/suit/white_on_white,
-	/obj/item/clothing/shoes/f13/fancy
+	/obj/item/clipboard=1,
+	/obj/item/paper_bin=1,
+	/obj/item/clothing/under/suit/white_on_white/skirt=1,
+	/obj/item/clothing/under/suit/white_on_white=1,
+	/obj/item/clothing/shoes/f13/fancy=1
 	)
 
 /datum/outfit/loadout/bartender
 	name = "Bartender"
 	backpack_contents = list(
-	/obj/item/clothing/under/f13/bartenderalt,
-	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/gun/ballistic/revolver/widowmaker,
-	/obj/item/storage/box/drinkingglasses
+	/obj/item/clothing/under/f13/bartenderalt=1,
+	/obj/item/ammo_box/shotgun/bean=1,
+	/obj/item/gun/ballistic/revolver/widowmaker=1,
+	/obj/item/storage/box/drinkingglasses=1
 	)
 
 /* Inner Wall Citizen */
@@ -626,37 +628,35 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/card/data/wpermit
-	backpack_contents = list(
-		)
 
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/remington,
-	/obj/item/ammo_box/a308box,
-	/obj/item/kitchen/knife/combat,
-	/obj/item/clothing/under/f13/gentlesuit,
-	/obj/item/clothing/shoes/f13/fancy,
-	/obj/item/clothing/head/f13/trilby
+	/obj/item/gun/ballistic/shotgun/remington=1,
+	/obj/item/ammo_box/a308box=1,
+	/obj/item/kitchen/knife/combat=1,
+	/obj/item/clothing/under/f13/gentlesuit=1,
+	/obj/item/clothing/shoes/f13/fancy=1,
+	/obj/item/clothing/head/f13/trilby=1
 	)
 
 /datum/outfit/loadout/classy
 	name = "Classy"
 	backpack_contents = list(
-	/obj/item/clothing/under/f13/spring,
-	/obj/item/clothing/under/dress/skirt/swept,
+	/obj/item/clothing/under/f13/spring=1,
+	/obj/item/clothing/under/dress/skirt/swept=1,
 	/obj/item/stack/f13Cash/caps = 100,
-	/obj/item/clothing/shoes/laceup,
-	/obj/item/gun/ballistic/revolver/police
+	/obj/item/clothing/shoes/laceup=1,
+	/obj/item/gun/ballistic/revolver/police=1
 	)
 
 /datum/outfit/loadout/dancer
 	name = "Dancer"
 	backpack_contents = list(
 	/obj/item/stack/f13Cash/caps = 20,
-	/obj/item/clothing/under/singery,
-	/obj/item/clothing/shoes/singery,
-	/obj/item/gun/ballistic/revolver/detective
+	/obj/item/clothing/under/singery=1,
+	/obj/item/clothing/shoes/singery=1,
+	/obj/item/gun/ballistic/revolver/detective=1
 	)
 
 /*/datum/outfit/loadout/fancygal
@@ -680,21 +680,21 @@
 	name = "Tailor"
 	backpack_contents = list(
 	/obj/item/stack/sheet/cloth = 10,
-	/obj/item/clothing/shoes/sneakers/black,
-	/obj/item/clothing/under/suit/burgundy,
-	/obj/item/clothing/shoes/sneakers/red,
-	/obj/item/clothing/under/dress/westernbustle,
+	/obj/item/clothing/shoes/sneakers/black=1,
+	/obj/item/clothing/under/suit/burgundy=1,
+	/obj/item/clothing/shoes/sneakers/red=1,
+	/obj/item/clothing/under/dress/westernbustle=1,
 	/obj/item/stack/f13Cash/caps = 100
 	)
 
 /datum/outfit/loadout/secretary
 	name = "Secretary"
 	backpack_contents = list(
-	/obj/item/clipboard,
-	/obj/item/paper_bin,
-	/obj/item/pda,
-	/obj/item/clothing/under/suit/black,
-	/obj/item/clothing/shoes/f13/fancy
+	/obj/item/clipboard=1,
+	/obj/item/paper_bin=1,
+	/obj/item/pda=1,
+	/obj/item/clothing/under/suit/black=1,
+	/obj/item/clothing/shoes/f13/fancy=1
 	)
 
 /*/datum/outfit/loadout/cleaner
@@ -711,14 +711,14 @@
 /datum/outfit/loadout/detective
 	name = "Detective"
 	backpack_contents = list(
-	/obj/item/storage/briefcase,
-	/obj/item/taperecorder,
-	/obj/item/tape,
-	/obj/item/clothing/under/f13/bodyguard,
-	/obj/item/clothing/shoes/winterboots,
-	/obj/item/gun/ballistic/revolver/detective,
-	/obj/item/lighter,
-	/obj/item/storage/fancy/cigarettes/cigars/havana
+	/obj/item/storage/briefcase=1,
+	/obj/item/taperecorder=1,
+	/obj/item/tape=1,
+	/obj/item/clothing/under/f13/bodyguard=1,
+	/obj/item/clothing/shoes/winterboots=1,
+	/obj/item/gun/ballistic/revolver/detective=1,
+	/obj/item/lighter=1,
+	/obj/item/storage/fancy/cigarettes/cigars/havana=1
 	)
 
 /*/datum/outfit/loadout/dj
@@ -767,65 +767,63 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	backpack_contents = list(
-		)
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/leather_jacket,
-	/obj/item/clothing/neck/cloak/grey,
-	/obj/item/gun/ballistic/automatic/pistol/n99,
-	/obj/item/ammo_box/magazine/m10mm,
-	/obj/item/clothing/glasses/welding,
-	/obj/item/twohanded/fireaxe,
-	/datum/design/large_welding_tool
+	/obj/item/clothing/suit/armor/f13/leather_jacket=1,
+	/obj/item/clothing/neck/cloak/grey=1,
+	/obj/item/gun/ballistic/automatic/pistol/n99=1,
+	/obj/item/ammo_box/magazine/m10mm=1,
+	/obj/item/clothing/glasses/welding=1,
+	/obj/item/twohanded/fireaxe=1,
+	/obj/item/weldingtool/largetank=1
 	)
 
 /datum/outfit/loadout/refugee
 	name = "Refugee"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster,
-	/obj/item/claymore/machete/pipe/tireiron,
-	/obj/item/shield/riot/buckler,
-	/obj/item/gun/ballistic/automatic/pistol/m1911,
-	/obj/item/ammo_box/magazine/m45,
-	/obj/item/clothing/shoes/workboots/mining,
-	/obj/item/clothing/glasses/f13/biker,
-	/obj/item/clothing/mask/ncr_facewrap
+	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1,
+	/obj/item/claymore/machete/pipe/tireiron=1,
+	/obj/item/shield/riot/buckler=1,
+	/obj/item/gun/ballistic/automatic/pistol/m1911=1,
+	/obj/item/ammo_box/magazine/m45=1,
+	/obj/item/clothing/shoes/workboots/mining=1,
+	/obj/item/clothing/glasses/f13/biker=1,
+	/obj/item/clothing/mask/ncr_facewrap=1
 	)
 
 /datum/outfit/loadout/addict
 	name = "Addict"
 	backpack_contents = list(
-	/obj/item/reagent_containers/syringe/medx,
+	/obj/item/reagent_containers/syringe/medx=1,
 	/obj/item/reagent_containers/pill/buffout = 2,
 	/obj/item/reagent_containers/pill/lsd = 2,
 	/obj/item/reagent_containers/pill/patch/jet = 2,
-	/obj/item/clothing/shoes/f13/raidertreads
+	/obj/item/clothing/shoes/f13/raidertreads=1
 	)
 
 
 /datum/outfit/loadout/punk
 	name = "Punk"
 	backpack_contents = list(
-	/obj/item/storage/fancy/cigarettes/cigpack_midori,
-	/obj/item/clothing/under/pants/denimskirt,
-	/obj/item/clothing/under/pants/jeanripped,
-	/obj/item/lighter/greyscale,
-	/obj/item/clothing/shoes/f13/diesel,
-	/obj/item/clothing/shoes/f13/diesel/alt,
-	/obj/item/clothing/suit/vickyblack,
-	/obj/item/clothing/head/beanie/black
+	/obj/item/storage/fancy/cigarettes/cigpack_midori=1,
+	/obj/item/clothing/under/pants/denimskirt=1,
+	/obj/item/clothing/under/pants/jeanripped=1,
+	/obj/item/lighter/greyscale=1,
+	/obj/item/clothing/shoes/f13/diesel=1,
+	/obj/item/clothing/shoes/f13/diesel/alt=1,
+	/obj/item/clothing/suit/vickyblack=1,
+	/obj/item/clothing/head/beanie/black=1
 	)
 
 /datum/outfit/loadout/hired
 	name = "Hired Muscle"
 	backpack_contents = list(
-	/obj/item/twohanded/baseball/spiked,
-	/obj/item/clothing/under/pants/blackjeans,
-	/obj/item/clothing/shoes/f13/military/oldcombat,
-	/obj/item/clothing/mask/bandana/black
+	/obj/item/twohanded/baseball/spiked=1,
+	/obj/item/clothing/under/pants/blackjeans=1,
+	/obj/item/clothing/shoes/f13/military/oldcombat=1,
+	/obj/item/clothing/mask/bandana/black=1
 	)
 
 /*/datum/outfit/loadout/prize

@@ -68,6 +68,7 @@
 #define EXP_TYPE_ADMIN			"Admin"
 //f13 stuff
 #define EXP_TYPE_VAULT			"Vault"
+#define EXP_TYPE_VTCC			"Vault-Tec City Coalition"
 #define EXP_TYPE_BROTHERHOOD	"Brotherhood of Steel"
 #define EXP_TYPE_NCR			"New California Republic"
 #define EXP_TYPE_DEN			"Oasis"

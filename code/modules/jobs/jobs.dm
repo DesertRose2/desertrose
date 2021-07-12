@@ -134,7 +134,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Marshal",
 "Merchant",
 "Chief Researcher",
-"Town Security",
+"Town Security Officer",
 "Roadie",
 "Researcher",
 "Hoistway Preacher"
@@ -175,7 +175,7 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Vault-tec Security",
 "Vault-tec Engineer",
 
-"Town Security",
+"Town Security Officer",
 "Roadie",
 "Researcher",
 "Hoistway Preacher"
@@ -335,10 +335,13 @@ GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Chief Researcher"
 ))
 GLOBAL_LIST_INIT(vtcc_positions, list(
-	"Town Security",
+	"Town Security Officer",
 	"Roadie",
+	"Innkeeper",
 	"Researcher",
-	"Hoistway Preacher"
+	"Hoistway Preacher",
+	"Inner Wall Citizen",
+	"Outer Wall Citizen"
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -359,6 +362,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_WASTELAND     = list("titles" = wasteland_positions),
 	EXP_TYPE_TRIBAL        = list("titles" = tribal_positions),
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
+	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
 	EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
@@ -366,7 +370,8 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
 	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Veteran Ranger")),
-	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Optio Centuriae","Legion Venator"))
+	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Optio Centuriae","Legion Venator")),
+	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Marshal", "Merchant", "Chief Researcher"))
 
 ))
 
