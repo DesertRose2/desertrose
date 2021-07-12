@@ -3134,7 +3134,7 @@
 /area/f13/building)
 "bHr" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC6"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8808,7 +8808,7 @@
 	dir = 8
 	},
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC5"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -10116,7 +10116,7 @@
 /area/f13/building)
 "gqf" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC7"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10134,6 +10134,7 @@
 "gqE" = (
 /obj/structure/ladder/unbreakable{
 	desc = "A normal wasteland well with a ladder inside.";
+	height = 2;
 	icon = 'icons/obj/Ritas.dmi';
 	icon_state = "wellwheel";
 	id = "VC4";
@@ -14626,16 +14627,6 @@
 /obj/machinery/door/unpowered/wooddoor,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
-"iVE" = (
-/obj/structure/flora/grass/wasteland{
-	pixel_x = 9;
-	pixel_y = 14
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "iVW" = (
 /obj/structure/sink{
 	dir = 8
@@ -14823,7 +14814,7 @@
 /area/f13/village)
 "jbR" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -19520,7 +19511,6 @@
 	},
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "FOA1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -33113,7 +33103,7 @@
 /area/f13/wasteland)
 "uSo" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC2"
 	},
 /obj/machinery/light,
@@ -34707,7 +34697,7 @@
 /area/f13/wasteland)
 "vPQ" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC0"
 	},
 /turf/open/floor/wood/f13,
@@ -38612,7 +38602,7 @@
 /area/f13/tunnel)
 "yip" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
