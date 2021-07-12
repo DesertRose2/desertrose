@@ -154,12 +154,17 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/twohanded/sledgehammer/supersledge=1,
 		/obj/item/book/granter/trait/big_leagues=1,
+		/obj/item/melee/classic_baton/telescopic=1
+		)
+
+/datum/outfit/loadout/sentlead
+	name = "Fireteam-Lead Head Paladin"
+	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
 		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/grenade/flashbang=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/grenade/smokebomb=2,
+		/obj/item/binoculars=1
 		)
 
 /datum/outfit/loadout/sentheavy
@@ -169,9 +174,7 @@ Head Paladin
 		/obj/item/gun/ballistic/automatic/m72=1,
 		/obj/item/ammo_box/magazine/m2mm=3,
 		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/barrier=2,
-		/obj/item/binoculars=1,
-		/obj/item/melee/classic_baton/telescopic=1
+		/obj/item/binoculars=1
 		)
 
 /*
@@ -415,10 +418,6 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
 		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/grenade/flashbang=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
 
@@ -495,10 +494,6 @@ Paladin
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
 		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
@@ -508,9 +503,7 @@ Paladin
 		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
@@ -519,10 +512,6 @@ Paladin
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
 		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
@@ -532,9 +521,7 @@ Paladin
 		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
