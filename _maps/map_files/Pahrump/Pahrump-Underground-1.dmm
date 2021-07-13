@@ -9869,7 +9869,6 @@
 "jvg" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC6"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -13292,7 +13291,6 @@
 "nkK" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC7"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -13478,7 +13476,6 @@
 "nts" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -16349,7 +16346,6 @@
 "qhR" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC0"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -16948,7 +16944,6 @@
 "qLa" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -22666,7 +22661,6 @@
 "xmS" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC4"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -22730,7 +22724,6 @@
 "xqU" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC5"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -22759,7 +22752,6 @@
 "xwT" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	icon_state = "ladder10";
 	id = "VC3"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
