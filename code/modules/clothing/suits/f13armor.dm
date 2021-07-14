@@ -398,11 +398,11 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
 	name = "head knight's T-45d Power Armour"
-	desc = "(IX) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
+	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
 	slowdown = 0.16
-	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	name = "brotherhood T-45d power armor"
