@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/f13/tunnel)
 
 (1,1,1) = {"
 a
