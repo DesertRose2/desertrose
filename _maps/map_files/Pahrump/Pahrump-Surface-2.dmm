@@ -759,8 +759,8 @@
 	},
 /area/f13/caves)
 "agX" = (
-/obj/structure/cursed_slot_machine,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/slot_machine,
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
 "aha" = (
@@ -19125,6 +19125,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/ncr)
+"lPq" = (
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/inside/dirt,
+/area/f13/city)
 "lPu" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/road{
@@ -30410,7 +30414,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/legion)
 "tld" = (
-/obj/item/storage/trash_stack,
+/obj/effect/landmark/start/f13/outerwall,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/city)
 "tlj" = (
@@ -36803,10 +36807,9 @@
 	},
 /area/f13/caves)
 "xfI" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/outerwall,
-/turf/open/indestructible/ground/outside/wood,
-/area/f13/city)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "xfP" = (
 /obj/structure/bed/mattress/pregame,
 /obj/item/storage/backpack,
@@ -43826,11 +43829,11 @@ dIN
 dIN
 dIN
 dIN
-dIN
+lPq
 qxN
 fVn
 fZu
-xfI
+fZu
 dAt
 fVn
 bJB
@@ -45105,7 +45108,7 @@ fZu
 fZu
 fZu
 jME
-mvv
+xfI
 dGL
 mvv
 qqw
@@ -45359,7 +45362,7 @@ gcK
 bWF
 fZu
 fZu
-xfI
+fZu
 fZu
 fVn
 mvv
@@ -45369,10 +45372,10 @@ qqw
 qqw
 qqw
 mvv
-mvv
+xfI
 qUO
 fZu
-xfI
+fZu
 dAt
 fVn
 dFQ
@@ -46906,7 +46909,7 @@ fZu
 fZu
 fZu
 bzZ
-mvv
+xfI
 mvv
 nZw
 aBH
@@ -47158,7 +47161,7 @@ gcK
 gcK
 fVn
 fZu
-xfI
+fZu
 fZu
 fZu
 vgg
