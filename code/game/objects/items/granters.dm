@@ -874,6 +874,14 @@
 	remarks = list("Keep your fists up...", "Don't clench your thumb in your fist, or you might break it...", "Turn into your punch, and put your body weight behind it...", "Footwork is everything, make sure to step into your punches...", "Aim for their jaw for an easy K-O...")
 */
 
+/obj/item/book/granter/trait/big_leagues
+	name = "Swatters Guide to Hard-Hitting Homeruns"
+	desc = "A manual on how to maximize one's potential at scoring that well-needed homerun! Complete with 1950s styled baseball ads."
+	oneuse = TRUE
+	granted_trait = TRAIT_BIG_LEAGUES
+	traitname = "hitting things"
+	remarks = list("Line up your bat...", "Judge target travel speed...", "Buy a premium swatter to maximize ball hit rate - or to break skulls...", "Apply blunt object to head...")
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
