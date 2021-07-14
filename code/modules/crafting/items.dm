@@ -1049,14 +1049,14 @@
 	var/dmgmod = rand(-10,10)
 	var/penmod = rand(-10,10)
 	var/spdmod = rand(-10,10)
-	var/overall = dmgmod-penmod-spdmod
+	var/overall = dmgmod+penmod-spdmod
 	var/prefix
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		dmgmod += 2
 		penmod += 2
 		spdmod += 2
-		overall = dmgmod-penmod-spdmod
+		overall = dmgmod+penmod-spdmod
 
 	if(B.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
@@ -1080,8 +1080,8 @@
 		if(30 to 100)
 			prefix = "Legendary "
 
-	B.extra_damage += (dmgmod/3)
-	B.extra_penetration += (penmod/60)
+	B.extra_damage += (dmgmod/2.5)
+	B.extra_penetration += (penmod/70)
 	B.fire_delay += (spdmod/5)
 	B.name = prefix + B.name
 	B.tinkered += 1
