@@ -1049,14 +1049,14 @@
 	var/dmgmod = rand(-10,10)
 	var/penmod = rand(-10,10)
 	var/spdmod = rand(-10,10)
-	var/overall = dmgmod+penmod-spdmod
+	var/overall = dmgmod-penmod-spdmod
 	var/prefix
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 4
-		penmod += 4
-		spdmod += 4
-		overall = dmgmod+penmod-spdmod
+		dmgmod += 2
+		penmod += 2
+		spdmod += 2
+		overall = dmgmod-penmod-spdmod
 
 	if(B.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
@@ -1080,7 +1080,7 @@
 		if(30 to 100)
 			prefix = "Legendary "
 
-	B.extra_damage += (dmgmod)
+	B.extra_damage += (dmgmod/3)
 	B.extra_penetration += (penmod/60)
 	B.fire_delay += (spdmod/5)
 	B.name = prefix + B.name
@@ -1101,9 +1101,9 @@
 	var/prefix
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 4
-		penmod += 4
-		spdmod += 4
+		dmgmod += 2
+		penmod += 2
+		spdmod += 2
 		overall = dmgmod+penmod-spdmod
 
 	if(E.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
@@ -1128,7 +1128,7 @@
 		if(30 to 100)
 			prefix = "Legendary "
 
-	E.extra_damage += (dmgmod)
+	E.extra_damage += (dmgmod/4)
 	E.extra_penetration += (penmod/60)
 	E.fire_delay += (spdmod/5)
 	//E.ammo_type[1].delay += spdmod
@@ -1148,8 +1148,8 @@
 	var/overall = tiermod - spdmod
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 4
-		spdmod += -4
+		tiermod += 2
+		spdmod += -2
 
 	if(A.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
@@ -1193,8 +1193,8 @@
 	var/overall = tiermod - spdmod
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 4
-		spdmod += -4
+		tiermod += 2
+		spdmod += -2
 
 	if(H.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
