@@ -546,13 +546,6 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 		new /datum/stack_recipe("box (internals)", /obj/item/storage/box/otwo), 				\
 		null, 																					\
 		new /datum/stack_recipe("security-styled box", /obj/item/storage/box/seclooking), 		\
-		new /datum/stack_recipe("buckshot shell box", /obj/item/storage/fancy/ammobox/lethalshot),		\
-		new /datum/stack_recipe("rubber shot shell box", /obj/item/storage/fancy/ammobox),		\
-		new /datum/stack_recipe("beanbag shell box", /obj/item/storage/fancy/ammobox/beanbag),			\
-		new /datum/stack_recipe("slug shell box", /obj/item/storage/box/lethalslugs), 			\
-		new /datum/stack_recipe("stunslug shell box", /obj/item/storage/box/stunslug), 			\
-		new /datum/stack_recipe("tech shell box", /obj/item/storage/box/techsslug), 			\
-		new /datum/stack_recipe("incendiary ammo box", /obj/item/storage/box/fireshot), 		\
 		new /datum/stack_recipe("loose ammo box", /obj/item/storage/box/ammoshells), 			\
 		new /datum/stack_recipe("firing pins box", /obj/item/storage/box/firingpins), 			\
 		null,																					\

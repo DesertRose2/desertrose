@@ -330,8 +330,8 @@ Priestess of Mars
 	head = 			/obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = 	/obj/item/gun/ballistic/revolver/ballisticfist
 	backpack_contents = list(
-		/obj/item/storage/fancy/ammobox/lethalshot=1,
-		/obj/item/storage/fancy/ammobox/slugshot=1,
+		/obj/item/ammo_box/shotgun/buck=1,
+		/obj/item/ammo_box/shotgun/slug=1,
 		/obj/item/shield/riot/roman=1)
 
 */
@@ -907,8 +907,8 @@ Venator
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/hunting=1,
-		/obj/item/storage/fancy/ammobox/lethalshot = 2,
-		/obj/item/storage/fancy/ammobox/slugshot = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/shotgun/slug = 1,
 		/obj/item/grenade/smokebomb=1
 	)
 
