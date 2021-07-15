@@ -16123,7 +16123,7 @@
 /area/f13/building)
 "jIf" = (
 /obj/item/paper/crumpled{
-	desc = This old note reads - "GLOWY STUFF BAD. NO DRINK IT!" The note ends there...;
+	desc = "This old note reads - 'GLOWY STUFF BAD. NO DRINK IT!' The note ends there...";
 	name = "Jim's Old, Crumpled Note"
 	},
 /turf/open/indestructible/ground/inside/mountain,
