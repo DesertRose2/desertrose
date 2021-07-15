@@ -352,7 +352,6 @@ Head Knight
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
 		/obj/item/clothing/glasses/sunglasses/big=1,
-		/obj/item/melee/classic_baton/telescopic=1
 	)
 
 /*
