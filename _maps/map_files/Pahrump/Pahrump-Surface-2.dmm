@@ -137,10 +137,6 @@
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"aas" = (
-/obj/structure/chair/wood,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "aat" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -373,7 +369,7 @@
 /area/f13/legion)
 "aaX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/anvil,
+/obj/structure/anvil/obtainable/basic,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "aaY" = (
@@ -100924,7 +100920,7 @@ fyf
 fyf
 gcK
 gcK
-aas
+gcK
 gcK
 ktB
 gcK
