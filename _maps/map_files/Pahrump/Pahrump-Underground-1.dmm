@@ -967,50 +967,6 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 6
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 6
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 6
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 6
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 6
-	},
 /obj/item/clothing/mask/gas/explorer{
 	pixel_y = 11
 	},
@@ -1926,7 +1882,6 @@
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
-/obj/item/twohanded/sledgehammer/supersledge,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 5
 	},
