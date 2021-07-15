@@ -10066,7 +10066,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ghZ" = (
-/obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3
 	},
@@ -10075,6 +10074,7 @@
 	pixel_y = -2
 	},
 /obj/item/reagent_containers/food/snacks/burger/baseball,
+/obj/structure/table/wood/fancy/blue,
 /turf/open/floor/plasteel/blueyellow,
 /area/f13/city)
 "gin" = (
@@ -10740,12 +10740,6 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/caves)
-"gyO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
-/area/f13/city)
 "gzb" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -11865,15 +11859,6 @@
 /obj/structure/decoration/vent,
 /turf/closed/wall/f13/supermart,
 /area/f13/city)
-"hik" = (
-/obj/structure/fence{
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirtcorner"
-	},
-/area/f13/wasteland)
 "hio" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/balaclava,
@@ -13646,10 +13631,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
-"igL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1,
-/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
-/area/f13/city)
 "igU" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15416,11 +15397,11 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
 "jhc" = (
-/obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/food/condiment/ketchup{
 	pixel_x = 2;
 	pixel_y = 10
 	},
+/obj/structure/table/wood/fancy/blue,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 5
 	},
@@ -15771,8 +15752,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "juC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
-	dir = 8
+/obj/structure/decoration/vent{
+	pixel_x = -7;
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/city)
@@ -19529,7 +19511,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "lKf" = (
-/obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3
 	},
@@ -19537,6 +19518,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
+/obj/structure/table/wood/fancy/blue,
 /turf/open/floor/plasteel/blueyellow,
 /area/f13/city)
 "lKl" = (
@@ -19948,15 +19930,6 @@
 /obj/structure/flora/rock/pile/largejungle,
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
-"lZy" = (
-/obj/structure/fence{
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirt"
-	},
 /area/f13/wasteland)
 "lZP" = (
 /obj/structure/car,
@@ -26759,9 +26732,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "qvK" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
-	dir = 1
-	},
+/obj/structure/decoration/vent,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/city)
 "qvN" = (
@@ -31278,11 +31249,11 @@
 	},
 /area/f13/city)
 "tiO" = (
-/obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/food/condiment/ketchup{
 	pixel_x = 2;
 	pixel_y = 10
 	},
+/obj/structure/table/wood/fancy/blue,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 9
 	},
@@ -31607,12 +31578,6 @@
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"tsS" = (
-/obj/structure/fence/corner,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermainbottom"
-	},
-/area/f13/wasteland)
 "tsT" = (
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
@@ -60624,7 +60589,7 @@ fuV
 acF
 xnr
 xnr
-xnr
+qvK
 xWT
 yiF
 ydH
@@ -60881,7 +60846,7 @@ bat
 qPy
 xnr
 xnr
-igL
+xnr
 xWT
 xWT
 ydH
@@ -61640,16 +61605,16 @@ kVA
 wqs
 eFp
 rOM
+qvK
 xnr
 xnr
-gyO
 xnr
 hfD
 xnr
 xnr
-gyO
-edO
 xnr
+edO
+qvK
 hfD
 xnr
 xnr
@@ -62136,14 +62101,14 @@ rAt
 grp
 wKo
 erY
-tsS
-hik
-lZy
-lZy
-lZy
-lZy
-lZy
-lZy
+pMI
+pMI
+pMI
+pMI
+pMI
+pMI
+pMI
+pMI
 sfB
 yiF
 yiF
