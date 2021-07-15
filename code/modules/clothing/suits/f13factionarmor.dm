@@ -256,6 +256,12 @@
 	icon_state = "legvenator"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
+//Custom venator armor for Luti
+/obj/item/clothing/suit/armor/f13/legion/venator/ursus
+	name = "Ursus Homicida"
+	desc = "(VII) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
+	icon_state = "ursus_homicida"
+
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
 	name = "legion orator armor"
 	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
@@ -368,9 +374,18 @@
 	item_state = "scoutarmor"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
-	name = "NCR light infantry veteran combat armor"
-	desc = "(VI) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
+	name = "NCR light infantry mantle armor"
+	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle"
+	item_state = "scoutarmor_mantle"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
+	name = "NCR light infantry reinforced mantle armor"
+	desc = "(VI) A specialized reinforced variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle_reinforced"
+	item_state = "scoutarmor_mantle_reinforced"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer

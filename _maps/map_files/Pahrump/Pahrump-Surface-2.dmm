@@ -10141,6 +10141,7 @@
 	name = "ladder well";
 	pixel_x = -18
 	},
+/obj/effect/landmark/observer_start,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "grc" = (

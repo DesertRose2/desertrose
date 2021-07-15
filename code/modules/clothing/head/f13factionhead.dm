@@ -373,13 +373,14 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/pothead
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	name = "NCR storm steelpot helmet"
 	desc = "(V) A standard issue NCR steel helmet, issued with an additional pair of storm goggles for weather resistance."
 	icon_state = "steelpot_goggles"
 	item_state = "steelpot_goggles"
+	toggle_message = "You push the goggles up "
 	alt_toggle_message = "You push the goggles down "
 	can_toggle = 1
 	flags_inv = HIDEEARS
@@ -441,7 +442,7 @@
 	item_state = "steelpot_patriot"
 
 /obj/item/clothing/head/f13/ncr/steelpot_mitchell
-	name = "NCR Mitchell helmet"
+	name = "NCR mitchell helmet"
 	desc = "(V) A standard issue NCR steel helmet. This one has a cover with a pre-war 'Mitchell' pattern design."
 	icon_state = "steelpot_mitchell"
 	item_state = "steelpot_mitchell"
@@ -463,39 +464,67 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr
-	name = "NCR officer beret"
-	desc = "(VI) A green beret, standard issue for all commissioned NCR Officers."
-	icon_state = "ncr_officer_beret"
-	item_state = "ncr_officer_beret"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	name = "NCR infantry beret"
+	desc = "(V) A green beret, issued to members of NCR."
+	icon_state = "ncr_infantry_beret_enlisted"
+	item_state = "ncr_infantry_beret_enlisted"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_lt
+	name = "NCR infantry officer beret"
+	desc = "(VII) A green beret, standard issue for all commissioned NCR Officers."
+	icon_state = "ncr_infantry_beret_officer"
+	item_state = "ncr_infantry_beret_officer"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_recon
-	name = "NCR First Recon beret"
-	desc = "(VI) A red beret, issued to members of NCR First Recon."
-	icon_state = "ncr_recon_beret"
-	item_state = "ncr_recon_beret"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	name = "NCR first recon beret"
+	desc = "(V) A red beret, issued to members of NCR First Recon."
+	icon_state = "ncr_recon_beret_enlisted"
+	item_state = "ncr_recon_beret_enlisted"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_recon_lt
+	name = "NCR first recon officer beret"
+	desc = "(VII) A red beret, issued to officers of of NCR First Recon."
+	icon_state = "ncr_recon_beret_officer"
+	item_state = "ncr_recon_beret_officer"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_scout
-	name = "NCR Third Scout beret"
-	desc = "(VI) A brown beret, issued to members of the NCR Third Scout Battallion."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	name = "NCR light infantry beret"
+	desc = "(V) A brown beret, issued to members of the NCR."
+	icon_state = "ncr_scout_beret_enlisted"
+	item_state = "ncr_scout_beret_enlisted"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_scout_lt
-	name = "NCR Third Scout officer beret"
-	desc = "(VII) A brown beret, issued to officers of the NCR Third Scout Battallion."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
+	name = "NCR light infantry officer beret"
+	desc = "(VII) A brown beret, issued to officers of the NCR."
+	icon_state = "ncr_scout_beret_officer"
+	item_state = "ncr_scout_beret_officer"
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/head/beret/ncr_medic
+	name = "NCR combat medic beret"
+	desc = "(V) A light blue beret, issued to medical personel of the NCR."
+	icon_state = "ncr_medic_beret_enlisted"
+	item_state = "ncr_medic_beret_enlisted"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_medic_lt
+	name = "NCR medical officer beret"
+	desc = "(V) A white beret, issued to medical officers of the NCR."
+	icon_state = "ncr_medic_beret_officer"
+	item_state = "ncr_medic_beret_officer"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/head/beret/ncr_sapper
-	name = "NCR Sapper beret"
-	desc = "(VII) A grey beret, issued to troopers that have passed Sapper School."
+	name = "NCR sapper beret"
+	desc = "(V) A grey beret, issued to troopers that have passed Sapper School."
 	icon_state = "ncr_sapper_beret"
 	item_state = "ncr_sapper_beret"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_sof
 	name = "NCR SOF beret"
@@ -504,19 +533,12 @@
 	item_state = "ncr_sof_beret"
 	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/head/beret/tina_beret
-	name = "Harebell Scout Beret"
-	desc = "A worn beret darkened by use, it appears to be the old symbol of Scout Corporals in the 1st Battalion, 3rd Infantry Regiment of the NCRA. The petals of a harebell appear to be threaded around the flash. Someone likes flowers."
-	icon_state = "tina_beret"
-	item_state = "tina_beret"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
 /obj/item/clothing/head/f13/ncr_stetson
 	name = "NCR air cavalry stetson"
-	desc = "(VII) A black brahmin leather stetson, authorized for usage amongst all troopers assigned to Air Cavalry units."
+	desc = "(VI) A black brahmin leather stetson, authorized for usage amongst all troopers assigned to Air Cavalry units."
 	icon_state = "ncr_stetson"
 	item_state = "ncr_stetson"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr_cap
 	name = "NCR garrison cap"
@@ -527,10 +549,10 @@
 
 /obj/item/clothing/head/f13/ncr_campaign
 	name = "NCR campaign hat"
-	desc = "(VII) A khaki campaign hat, popularly used by senior NCOs in the NCRA."
+	desc = "(VI) A khaki campaign hat, popularly used by senior NCOs in the NCRA."
 	icon_state = "ncr_campaign"
 	item_state = "ncr_campaign"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_dresscap
 	name = "NCR peaked cap"
@@ -549,11 +571,18 @@
 //NCR Ranger
 
 /obj/item/clothing/head/beret/ncr_recon_ranger
-	name = "NCR Ranger scout beret"
-	desc = "(IV) A brown beret, issued to members of the NCR Recon Rangers."
+	name = "NCR Ranger recon beret"
+	desc = "(V) A brown beret, issued to members of the NCR Recon Rangers."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_scout_old
+	name = "NCR Third Scout beret"
+	desc = "(VI) A brown beret, issued to members of the NCR Third Scout Battallion."
+	icon_state = "scoutberet"
+	item_state = "scoutberet"
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/trailranger
 	name = "NCR trail ranger hat"
@@ -562,20 +591,28 @@
 	item_state = "cowboyrang"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
+/obj/item/clothing/head/beret/tina_beret
+	name = "Harebell Scout Beret"
+	desc = "(IV) A worn beret darkened by use, it appears to be the old symbol of Scout Corporals in the 1st Battalion, 3rd Infantry Regiment of the NCRA. The petals of a harebell appear to be threaded around the flash. Someone likes flowers."
+	icon_state = "tina_beret"
+	item_state = "tina_beret"
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
-	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
+	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
 	item_state = "drill_hat"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
-	desc = "(V) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
+	desc = "(VI) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = null
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr
 	name = "NCR combat helmet"

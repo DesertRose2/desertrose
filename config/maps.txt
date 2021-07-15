@@ -22,3 +22,6 @@ endmap
 map sunnyvale
 	disabled
 endmap
+map vaultvalley
+	disabled
+endmap

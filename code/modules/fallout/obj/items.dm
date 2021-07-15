@@ -30,3 +30,67 @@
 				M.adjustFireLoss(-2)
 				M.adjustToxLoss(-2)
 				M.adjustOxyLoss(-2)
+
+
+/obj/item/guncase
+	name = "firearm case"
+	desc = "A briefcase containing a Ranger's perferred firearm."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "secure"
+
+/obj/item/guncase/attack_self(mob/living/user)
+	var/list/weapons = list()
+	weapons["AR-15 Marksman Carbine"] = list(/obj/item/storage/backpack/duffelbag/marksman)
+	weapons["M1A1 Carbine"] = list(/obj/item/storage/backpack/duffelbag/m1a1)
+	weapons["M1 Garand Battle Rifle"] = list(/obj/item/storage/backpack/duffelbag/m1garand)
+	weapons["DKS Sniper Rifle"] = list(/obj/item/storage/backpack/duffelbag/sniper)
+	weapons["Browning Auto-5 Shotgun"] = list(/obj/item/storage/backpack/duffelbag/auto5)
+	var/choice = input(user,"Select your stored weapon.") as null|anything in weapons
+	if(src && choice)
+		var/list/chosen = weapons[choice]
+		for(var/new_type in chosen)
+			var/atom/movable/gun = new new_type(get_turf(src))
+			if(istype(gun, /obj/item/gun/))
+				to_chat(user, "You take [gun] out of the case.")
+		qdel(src)
+
+/obj/item/storage/backpack/duffelbag/marksman
+
+/obj/item/storage/backpack/duffelbag/marksman/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/marksman(src)
+	new /obj/item/ammo_box/magazine/m556/rifle/assault(src)
+	new /obj/item/ammo_box/magazine/m556/rifle/assault(src)
+	new /obj/item/ammo_box/magazine/m556/rifle/assault(src)
+
+/obj/item/storage/backpack/duffelbag/m1a1
+
+/obj/item/storage/backpack/duffelbag/m1a1/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/m1carbine/compact(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/simple(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/simple(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/simple(src)
+
+/obj/item/storage/backpack/duffelbag/m1garand
+
+/obj/item/storage/backpack/duffelbag/m1garand/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/m1garand(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/attachments/scope(src)
+
+/obj/item/storage/backpack/duffelbag/auto5
+
+/obj/item/storage/backpack/duffelbag/auto5/PopulateContents()
+	new /obj/item/gun/ballistic/shotgun/automatic/combat/auto5(src)
+	new /obj/item/storage/fancy/ammobox/lethalshot(src)
+	new /obj/item/storage/fancy/ammobox/lethalshot(src)
+	new /obj/item/storage/fancy/ammobox/slugshot(src)
+
+/obj/item/storage/backpack/duffelbag/sniper
+
+/obj/item/storage/backpack/duffelbag/sniper/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/marksman/sniper(src)
+	new /obj/item/ammo_box/magazine/w308(src)
+	new /obj/item/ammo_box/magazine/w308(src)
+	new /obj/item/ammo_box/magazine/w308(src)
