@@ -1,9 +1,10 @@
 {
-    "map_name": "Yuma",
-	"map_path": "map_files/Pahrump",
+    "map_name": "Palo Verde Valley",
+	"map_path": "map_files/VaultValley",
     "map_file": [
-		"Pahrump-Underground-1.dmm",
-		"Pahrump-Surface-2.dmm"
+		"vaultvalley-under-1.dmm",
+		"vaultvalley-surface-2.dmm",
+		"vaultvalley-sky-3.dmm"
 	],
 	"station_ruin_budget":0,
 	"space_ruin_levels":0,
@@ -15,12 +16,21 @@
 	},
 	"traits":[
 		{
+			"Up": 1,
 			"Gravity":true,
 			"Baseturf":"/turf/open/indestructible/ground/inside/mountain"
 		},
 		{
+			"Down": -1,
+			"Up": 1,
 			"Gravity":true,
 			"Station":1
+		},
+		{
+			"Down": -1,
+			"Gravity":true,
+			"Station":1,
+			"Baseturf":"/turf/open/transparent/openspace"
 		}
 	],
 	"minetype":"none"

@@ -433,6 +433,7 @@
 	gas_transfer_coefficient = 0.9
 	permeability_coefficient = 0.01
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
 /obj/item/clothing/mask/ncr_facewrap/attack_self(mob/user)
@@ -524,12 +525,24 @@
 	visor_flags_inv = HIDEFACE
 	visor_flags_cover = MASKCOVERSMOUTH
 
+/obj/item/clothing/mask/bandana/desert
+	name = "tarnished desert facewrap"
+	desc = "An worn down NCR facewrap, seemingly seared down judging by its colors."
+	icon_state = "ali_cloak"
+	item_state = "ali_cloak"
+	flags_inv = HIDEFACE
+	visor_flags_inv = HIDEFACE
+	adjusted_flags = null
+	actions_types = list(/datum/action/item_action/adjust)
+
+
 //Ranger bandana
 
 /obj/item/clothing/mask/bandana/ranger
 	name = "red ranger bandana"
 	desc = "An worn down, bright red bandana, looks like one a ranger would wear."
 	icon_state = "ranger"
+	item_state = "ranger"
 	flags_inv = HIDEFACE
 	visor_flags_inv = HIDEFACE
 	adjusted_flags = null
