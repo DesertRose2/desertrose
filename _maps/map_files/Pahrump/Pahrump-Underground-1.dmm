@@ -8018,6 +8018,12 @@
 /obj/item/trash/f13/cram_large,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"hHB" = (
+/obj/machinery/vending/wardrobe/medi_wardrobe,
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/followers)
 "hHI" = (
 /obj/structure/closet{
 	storage_capacity = 10
@@ -20529,7 +20535,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/brotherhood/leisure)
 "uwt" = (
-/obj/structure/rack,
+/obj/machinery/vending/wardrobe/chem_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "reddirtyfull"
 	},
@@ -24061,7 +24067,7 @@ uoO
 aHw
 uwt
 veq
-uwt
+hHB
 aHw
 uoO
 uoO
