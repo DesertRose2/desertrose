@@ -351,7 +351,7 @@ Head Knight
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
-		/obj/item/clothing/glasses/sunglasses/big=1,
+		/obj/item/clothing/glasses/sunglasses/big=1
 	)
 
 /*
