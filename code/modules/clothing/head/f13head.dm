@@ -407,7 +407,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	name = "Brotherhood T-45d helmet"
-	desc = "(VIII) A T-45D helmet put into use by the Brotherhood of Steel."
+	desc = "(VIII) A T-45d helmet put into use by the Brotherhood of Steel."
 	icon_state = "t45bos0"
 	item_state = "t45bos0"
 	actions_types = list()
