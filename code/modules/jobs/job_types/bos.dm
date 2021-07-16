@@ -153,8 +153,7 @@ Head Paladin
 	name = "Assault Head Paladin"
 	backpack_contents = list(
 		/obj/item/twohanded/sledgehammer/supersledge=1,
-		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/melee/classic_baton/telescopic=1
+		/obj/item/book/granter/trait/big_leagues=1
 		)
 
 /datum/outfit/loadout/sentlead
@@ -425,9 +424,7 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/grenade/flashbang=2,
 		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1,
 		)
 
