@@ -253,7 +253,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
-	force = 40
+	force = 30
 	armour_penetration = 0.5
 	throwforce = 10
 	throw_range = 7
