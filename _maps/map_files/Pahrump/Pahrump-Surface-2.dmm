@@ -2311,10 +2311,7 @@
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/city)
 "bgd" = (
-/obj/structure/barricade/wooden/strong{
-	obj_integrity = 500
-	},
-/obj/structure/table/wood/settler,
+/obj/structure/table/wood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "bgk" = (
@@ -6708,11 +6705,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "egU" = (
-/obj/structure/chair/wood{
-	dir = 4
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/village)
+/area/f13/wasteland)
 "ehx" = (
 /obj/effect/spawner/lootdrop/trash,
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -7398,6 +7395,12 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
+"eDL" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
 "eDT" = (
 /obj/structure/sign/poster/contraband/have_a_puff{
 	pixel_x = -31
@@ -13936,6 +13939,13 @@
 /obj/item/screwdriver/nuke,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"iqX" = (
+/obj/structure/table/wood,
+/obj/item/binoculars{
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
 "iqZ" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
@@ -17411,6 +17421,13 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"kwR" = (
+/obj/structure/table/wood/settler,
+/obj/structure/barricade/wooden/strong{
+	obj_integrity = 500
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
 "kwU" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/effect/decal/cleanable/dirt,
@@ -17823,11 +17840,8 @@
 	},
 /area/f13/village)
 "kHB" = (
-/obj/structure/table/wood,
-/obj/item/binoculars{
-	pixel_y = -2
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "kHU" = (
@@ -19926,6 +19940,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/ncr)
+"lZn" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
 "lZw" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/structure/flora/rock/jungle,
@@ -32320,9 +32338,8 @@
 	},
 /area/f13/wasteland)
 "tPA" = (
-/obj/structure/simple_door/bunker/glass,
-/turf/closed/wall/f13/store,
-/area/f13/followers)
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
 "tQk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/glass/bucket{
@@ -41538,7 +41555,7 @@ lhz
 lhz
 pVp
 kcQ
-tPA
+kfh
 vDd
 vDd
 vDd
@@ -52509,8 +52526,8 @@ vPY
 fsA
 qFk
 kHB
-egU
-egU
+otr
+otr
 qFk
 gcK
 gcK
@@ -52765,9 +52782,9 @@ qFk
 uuU
 qFk
 qFk
-qFk
 bgd
-bgd
+otr
+otr
 qFk
 gcK
 gcK
@@ -53020,12 +53037,12 @@ cos
 cos
 cos
 cos
-gcK
-gcK
-gcK
-fyf
-fyf
-gcK
+cos
+mTd
+mTd
+tPA
+tPA
+mTd
 gcK
 gcK
 gcK
@@ -53278,12 +53295,12 @@ bTx
 qnU
 kEA
 cos
+ktB
 gcK
+tPA
+tPA
 gcK
-fyf
-fyf
-gcK
-gcK
+ktB
 gcK
 gcK
 wpk
@@ -53535,12 +53552,12 @@ oZQ
 sQA
 hWm
 cos
+ktB
+hwC
+tPA
+tPA
 gcK
-fyf
-fyf
-fyf
-gcK
-gcK
+ktB
 gcK
 gcK
 ggK
@@ -53792,12 +53809,12 @@ aPm
 gyy
 kDf
 cos
+ktB
+hwC
+lZn
+tPA
 gcK
-fyf
-vAe
-fyf
-gcK
-gcK
+ktB
 gcK
 gcK
 gcK
@@ -54049,11 +54066,11 @@ sVl
 aPm
 gyy
 cos
-fyf
-fyf
-fyf
-sqA
-gcK
+lPT
+lPT
+tPA
+tPA
+mTd
 gcK
 gcK
 gcK
@@ -54306,11 +54323,11 @@ sVl
 ueT
 vhY
 cos
-nxY
-fyf
-fyf
-fyf
-gcK
+lPT
+egU
+tPA
+tPA
+mTd
 gcK
 gcK
 gcK
@@ -54563,11 +54580,11 @@ ueT
 azo
 dpA
 cos
-fyf
-fyf
-fyf
-uey
-fyf
+lPT
+tPA
+tPA
+tPA
+lPT
 gcK
 gcK
 gcK
@@ -54820,11 +54837,11 @@ mLo
 vhY
 aPm
 cos
-fyf
-fyf
-fyf
-fyf
-fyf
+lPT
+iqX
+eDL
+eDL
+lPT
 gcK
 gcK
 gcK
@@ -55077,11 +55094,11 @@ gXh
 xvM
 vhY
 cos
-fyf
-fyf
-fyf
-fyf
-fyf
+lPT
+lPT
+kwR
+kwR
+lPT
 gcK
 gcK
 gcK
@@ -55334,11 +55351,11 @@ gBZ
 sVl
 mUn
 cos
-fyf
 trW
 fyf
 fyf
-trW
+fyf
+fyf
 gcK
 gcK
 gcK
