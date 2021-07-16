@@ -406,8 +406,8 @@
 	item_state = "t45dhelmet[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
-	name = "Brotherhood T-45D helmet"
-	desc = "(VIII) A T-45D helmet put into use by the Brotherhood of Steel."
+	name = "Brotherhood T-45d helmet"
+	desc = "(VIII) A T-45d helmet put into use by the Brotherhood of Steel."
 	icon_state = "t45bos0"
 	item_state = "t45bos0"
 	actions_types = list()
@@ -936,4 +936,3 @@
 	item_state = "boonie_hat"
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
 	flags_inv = HIDEEARS|HIDEHAIR
-
