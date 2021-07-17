@@ -261,6 +261,7 @@
 	name = "Ursus Homicida"
 	desc = "(VII) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
 	icon_state = "ursus_homicida"
+	item_state = "ursus_homicida"
 
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
 	name = "legion orator armor"

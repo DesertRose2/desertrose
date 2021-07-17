@@ -10,6 +10,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
 	slowdown = 1
+	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/gun/ballistic/m2flamethrower/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0

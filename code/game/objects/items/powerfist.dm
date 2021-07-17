@@ -7,8 +7,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 50
-	armour_penetration = 0.8
+	force = 40
+	armour_penetration = 0.3
 	throwforce = 10
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
