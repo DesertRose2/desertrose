@@ -329,7 +329,7 @@
 //Luti - spaceanglo
 /obj/item/storage/box/large/custom_kit/luti/PopulateContents()
 	new /obj/item/modkit/ursuslegion(src)
-	
+
 //Valentina Vega - pisshole
 /obj/item/storage/box/large/custom_kit/valentinavega/PopulateContents()
 	new /obj/item/modkit/trailcoat(src)
@@ -345,11 +345,11 @@
 	new /obj/item/clothing/shoes/jackboots(src)
 	new /obj/item/clothing/under/f13/cowboyg(src)
 	new /obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris(src)
-	
+
 //Twenty-Twice - Gurking
 /obj/item/storage/box/large/custom_kit/twentytwice/PopulateContents()
 	new /obj/item/clothing/head/mikuhair(src)
-	
+
 //Lullaby Fuchs - ollieoxen
 /obj/item/storage/box/large/custom_kit/lullabyfuchs/PopulateContents()
 	new /obj/item/modkit/ncr_trenchcloak(src)

@@ -308,7 +308,7 @@
 
 /datum/gear/donator/kits/emilywinona
 	name = "Emily Winona's belongings"
-	path = /obj/item/storage/box/large/custom_kit/emilywinona/
+	path = /obj/item/storage/box/large/custom_kit/emilywinona
 	ckeywhitelist = list("muhsollini")
 
 /datum/gear/donator/kits/luti
@@ -318,7 +318,7 @@
 	
 /datum/gear/donator/kits/valentinavega
 	name = "Valentina vega's belongings"
-	path = /obj/item/storage/box/large/custom_kit/valentinavega/
+	path = /obj/item/storage/box/large/custom_kit/valentinavega
 	ckeywhitelist = ("pisshole")
 
 /datum/gear/donator/kits/bartholomewtheapostle
