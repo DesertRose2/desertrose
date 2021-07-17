@@ -308,13 +308,33 @@
 
 /datum/gear/donator/kits/emilywinona
 	name = "Emily Winona's belongings"
-	path = /obj/item/storage/box/large/custom_kit/emilywinona/
+	path = /obj/item/storage/box/large/custom_kit/emilywinona
 	ckeywhitelist = list("muhsollini")
 
 /datum/gear/donator/kits/luti
 	name = "Luti's belongings"
 	path = /obj/item/storage/box/large/custom_kit/luti
 	ckeywhitelist = list("spaceanglo")
+	
+/datum/gear/donator/kits/valentinavega
+	name = "Valentina Vega's belongings"
+	path = /obj/item/storage/box/large/custom_kit/valentinavega
+	ckeywhitelist = list("pisshole")
+
+/datum/gear/donator/kits/bartholomewtheapostle
+	name = "Bartholomew's belongings"
+	path = /obj/item/storage/box/large/custom_kit/bartholomewtheapostle
+	ckeywhitelist = list("pilotbland")
+	
+/datum/gear/donator/kits/twentytwice
+	name = "Twenty-Twice's belongings"
+	path = /obj/item/storage/box/large/custom_kit/twentytwice
+	ckeywhitelist = list("gurking")
+
+/datum/gear/donator/kits/lullabyfuchs
+	name = "Lullaby Fuch's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lullabyfuchs
+	ckeywhitelist = list("ollieoxen")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -340,7 +360,8 @@
 						"topbirb",
 						"usotsukihime",
 						"thegreatcoward",
-						"gurking")
+						"gurking",
+						"melodicdeity")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -430,7 +451,8 @@
 						"pilotbland",
 						"usotsukihime",
 						"thegreatcoward",
-						"gurking")
+						"gurking",
+						"melodicdeity")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
