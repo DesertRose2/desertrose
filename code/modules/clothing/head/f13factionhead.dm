@@ -598,6 +598,14 @@
 	item_state = "tina_beret"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
+/obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	name = "recon hood"
+	icon_state = "reconhood"
+	item_state = "reconhood"
+	desc = "(V) A thicker than average leather hood, seamlessly stitched to the jacket you're wearing."
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
 	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."

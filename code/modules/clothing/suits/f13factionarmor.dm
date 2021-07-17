@@ -483,6 +483,17 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
 
+/obj/item/clothing/suit/hooded/f13/hooded_recon
+	name = "hooded ranger jacket"
+	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	icon_state = "hooded_recon"
+	item_state = "hooded_recon"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS //Since this uses the hooded object, needs to be set to match armor/f13
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
 	desc = "(V) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
