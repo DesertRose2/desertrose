@@ -305,6 +305,8 @@
 /obj/item/storage/box/large/custom_kit/silvertalon/PopulateContents()
 	new /obj/item/clothing/under/syndicate/skirt(src)
 	new /obj/item/modkit/talon(src)
+	new /obj/item/clothing/glasses/legiongoggles(src)
+	new /obj/item/clothing/mask/bandana/auxilia(src)
 
 //Marine - saintsfan3324
 /obj/item/storage/box/large/custom_kit/marinetalon/PopulateContents()
@@ -324,7 +326,30 @@
 	new /obj/item/storage/belt/military/assault/ncr/crossbelt/reverse(src)
 	new /obj/item/clothing/accessory/waistcoat/cowboy(src)
 
-
 //Luti - spaceanglo
 /obj/item/storage/box/large/custom_kit/luti/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/legion/venator/ursus
+	new /obj/item/modkit/ursuslegion(src)
+	
+//Valentina Vega - pisshole
+/obj/item/storage/box/large/custom_kit/valentinavega/PopulateContents()
+	new /obj/item/modkit/trailcoat(src)
+	new /obj/item/modkit/harebellscout(src)
+	new /obj/item/clothing/glasses/sunglasses/big(src)
+	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/accessory/medal/californian_cross(src)
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+
+//Bartholomew The Apostle - pilotbland
+/obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()
+	new /obj/item/clothing/glasses/eyepatch(src)
+	new /obj/item/clothing/shoes/jackboots(src)
+	new /obj/item/clothing/under/f13/cowboyg(src)
+	new /obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris(src)
+	
+//Twenty-Twice - Gurking
+/obj/item/storage/box/large/custom_kit/twentytwice/PopulateContents()
+	new /obj/item/clothing/head/mikuhair(src)
+	
+//Lullaby Fuchs - ollieoxen
+/obj/item/storage/box/large/custom_kit/lullabyfuchs/PopulateContents()
+	new /obj/item/modkit/ncr_trenchcloak(src)
