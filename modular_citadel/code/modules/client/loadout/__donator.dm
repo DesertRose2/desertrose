@@ -322,7 +322,7 @@
 	ckeywhitelist = list("pisshole")
 
 /datum/gear/donator/kits/bartholomewtheapostle
-	name = "bartholomew's belongings"
+	name = "Bartholomew's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bartholomewtheapostle
 	ckeywhitelist = list("pilotbland")
 	
