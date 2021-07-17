@@ -76,7 +76,7 @@ SUBSYSTEM_DEF(nightcycle)
 //	for (var/z in SSmapping.levels_by_trait(ZTRAIT_STATION))
 	//HACK. Z level 2 is always surface and nobody sets their fucking traits correctly.
 	//This should be done with a ztrait for surface/subsurface
-	var/z = 2
+	var/z = 3
 	var/start_turf = locate(x,world.maxy,z)
 	var/end_turf = locate(x,1,z)
 
