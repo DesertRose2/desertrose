@@ -317,24 +317,24 @@
 	ckeywhitelist = list("spaceanglo")
 	
 /datum/gear/donator/kits/valentinavega
-	name = "Valentina vega's belongings"
+	name = "Valentina Vega's belongings"
 	path = /obj/item/storage/box/large/custom_kit/valentinavega
-	ckeywhitelist = ("pisshole")
+	ckeywhitelist = list("pisshole")
 
 /datum/gear/donator/kits/bartholomewtheapostle
 	name = "bartholomew's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bartholomewtheapostle
-	ckeywhitelist = ("pilotbland")
+	ckeywhitelist = list("pilotbland")
 	
 /datum/gear/donator/kits/twentytwice
 	name = "Twenty-Twice's belongings"
 	path = /obj/item/storage/box/large/custom_kit/twentytwice
-	ckeywhitelist = ("gurking")
+	ckeywhitelist = list("gurking")
 
 /datum/gear/donator/kits/lullabyfuchs
-	name = "Lullaby fuch's belongings"
+	name = "Lullaby Fuch's belongings"
 	path = /obj/item/storage/box/large/custom_kit/lullabyfuchs
-	ckeywhitelist = ("ollieoxen")
+	ckeywhitelist = list("ollieoxen")
 
 //////////////////////////////
 ///Ranger items start here.///
