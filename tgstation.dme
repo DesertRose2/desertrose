@@ -3706,6 +3706,7 @@
 #include "modular_citadel\code\modules\projectiles\bullets\bullets\smg.dm"
 #include "modular_citadel\code\modules\projectiles\guns\pumpenergy.dm"
 #include "modular_citadel\code\modules\projectiles\guns\toys.dm"
+#include "modular_citadel\code\modules\projectiles\guns\ballistic\flamethrower.dm"
 #include "modular_citadel\code\modules\projectiles\guns\ballistic\handguns.dm"
 #include "modular_citadel\code\modules\projectiles\guns\ballistic\rifles.dm"
 #include "modular_citadel\code\modules\projectiles\guns\ballistic\spinfusor.dm"

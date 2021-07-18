@@ -1269,7 +1269,7 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort45d
 	name = "brotherhood T45d power armor"
@@ -1279,7 +1279,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost45dhelm
+	name = "brotherhood T45 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort51b
 	name = "brotherhood T51b power armor"
@@ -1289,7 +1299,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost51bhelm
+	name = "brotherhood T51 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t51b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort60
 	name = "brotherhood T60 power armor"
@@ -1299,7 +1319,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost60ahelm
+	name = "brotherhood T60 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t60 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bosweldingmask
 	name = "brotherhood welding mask"
@@ -1309,4 +1339,4 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
-	always_availible = FALSE			
+	always_availible = FALSE

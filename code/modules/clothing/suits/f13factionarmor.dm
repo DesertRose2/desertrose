@@ -256,6 +256,13 @@
 	icon_state = "legvenator"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
+//Custom venator armor for Luti
+/obj/item/clothing/suit/armor/f13/legion/venator/ursus
+	name = "Ursus Homicida"
+	desc = "(VII) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
+	icon_state = "ursus_homicida"
+	item_state = "ursus_homicida"
+
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
 	name = "legion orator armor"
 	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
@@ -475,6 +482,17 @@
 	item_state = "tina_jacket"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
+
+/obj/item/clothing/suit/hooded/f13/hooded_recon
+	name = "hooded ranger jacket"
+	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	icon_state = "hooded_recon"
+	item_state = "hooded_recon"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS //Since this uses the hooded object, needs to be set to match armor/f13
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
