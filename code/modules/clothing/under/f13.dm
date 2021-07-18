@@ -1116,7 +1116,7 @@
 
 /obj/item/clothing/under/f13/vault/vcity
 	name = "VTCC jumpsuit"
-	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
 	icon_state = "vaultcity"
 	item_state = "vaultcity"
 
@@ -1124,6 +1124,17 @@
 	name = "VTCC jumpskirt"
 	icon_state = "vaultcity_skirt"
 	item_state = "vaultcity_skirt"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser
+	name = "VTCC greaser's jumpsuit"
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults, with an added black leather jacket over the top. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back, only it's just purple because you just have to stand out!"
+	icon_state = "vaultcity_greaser"
+	item_state = "vaultcity_greaser"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+	name = "VTCC greaser's jumpsuit"
+	icon_state = "vaultcity_greaser_skirt"
+	item_state = "vaultcity_greaser_skirt"
 
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit"
