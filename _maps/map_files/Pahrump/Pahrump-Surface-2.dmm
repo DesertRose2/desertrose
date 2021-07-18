@@ -371,7 +371,7 @@
 /area/f13/legion)
 "aaX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/anvil/obtainable/basic,
+/obj/structure/anvil,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "aaY" = (
@@ -1344,7 +1344,7 @@
 /area/f13/village)
 "azj" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "azk" = (
 /obj/structure/table/wood/settler,
@@ -9184,8 +9184,7 @@
 /obj/structure/table/snooker{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "fKN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -9372,8 +9371,7 @@
 "fQE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/snooker,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "fQW" = (
 /obj/item/folder/yellow,
@@ -9498,8 +9496,7 @@
 /obj/structure/table/snooker{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "fWj" = (
 /obj/item/ammo_casing/caseless{
@@ -9553,7 +9550,7 @@
 "fXY" = (
 /obj/structure/table/reinforced/brass,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "fYa" = (
 /obj/structure/reagent_dispensers/barrel/two,
@@ -9734,7 +9731,7 @@
 /obj/structure/fence/pole_t,
 /obj/structure/table/reinforced/brass,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "gfY" = (
 /obj/item/pickaxe,
@@ -10463,11 +10460,11 @@
 	},
 /area/f13/brotherhood)
 "gyO" = (
-/obj/structure/car/rubbish3{
-	pixel_y = 14
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
+	dir = 4
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
+/area/f13/city)
 "gzb" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -10959,8 +10956,7 @@
 /obj/structure/table/snooker{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "gQp" = (
 /obj/machinery/processor,
@@ -11160,8 +11156,7 @@
 /obj/structure/table/snooker{
 	dir = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "gXK" = (
 /obj/structure/rack,
@@ -11310,7 +11305,7 @@
 /obj/structure/fence/pole_b,
 /obj/structure/table/reinforced/brass,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "hbO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13248,12 +13243,9 @@
 	},
 /area/f13/wasteland)
 "igL" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/grass,
-/area/f13/wasteland)
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
+/area/f13/city)
 "igU" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15333,12 +15325,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "juC" = (
-/obj/structure/flora/ausbushes/grassybush,
-/obj/machinery/light/small{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
 	dir = 8
 	},
-/turf/open/floor/grass,
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
+/area/f13/city)
 "juD" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks,
@@ -18103,7 +18094,7 @@
 "lgI" = (
 /obj/structure/chair/booth,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "lgX" = (
 /obj/structure/table/reinforced,
@@ -18458,7 +18449,7 @@
 	},
 /area/f13/building)
 "ltZ" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -18714,7 +18705,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "lBy" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -19828,7 +19819,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "mnC" = (
 /obj/structure/flora/grass/wasteland{
@@ -22920,7 +22911,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "oyE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23027,7 +23018,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "oDC" = (
 /obj/structure/chair{
@@ -23185,8 +23176,7 @@
 /obj/structure/table/snooker{
 	dir = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "oIL" = (
 /obj/structure/flora/tree/wasteland,
@@ -23455,7 +23445,7 @@
 "oRz" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "oRM" = (
 /turf/open/indestructible/ground/outside/road{
@@ -24040,7 +24030,7 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "pjD" = (
 /obj/structure/table,
@@ -25996,6 +25986,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
+"qvK" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
+/area/f13/city)
 "qvN" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -29080,7 +29076,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "swi" = (
 /obj/structure/sink{
@@ -30169,7 +30165,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "tdx" = (
 /obj/structure/chair/sofa/corp/left{
@@ -32377,7 +32373,7 @@
 	},
 /area/f13/ncr)
 "uul" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "reddirtyfull"
 	},
@@ -35724,7 +35720,7 @@
 "wAm" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/carpet/red,
 /area/f13/city)
 "wAU" = (
 /obj/structure/rack,
@@ -40262,10 +40258,10 @@ ykp
 wYM
 ajy
 yiF
-hjO
+rbF
 koD
 unI
-lTx
+uQx
 ygM
 kSY
 tvY
@@ -41033,10 +41029,10 @@ dYi
 wYM
 ajy
 yiF
-igL
+xZu
 koD
 unI
-iaE
+ufP
 ygM
 bNb
 tdx
@@ -43354,9 +43350,9 @@ wuU
 wbg
 wbg
 wuU
-juC
+rHT
 idD
-juC
+rHT
 eoI
 yiF
 ydH
@@ -50810,7 +50806,7 @@ xZu
 ufP
 eoI
 rbF
-sgi
+eoI
 yiF
 ydH
 "}
@@ -52866,7 +52862,7 @@ ufP
 xZu
 rbF
 uQx
-pRk
+rbF
 yiF
 ydH
 "}
@@ -58766,7 +58762,7 @@ lXs
 xnr
 xnr
 xnr
-xnr
+juC
 xnr
 kmx
 fEg
@@ -59804,7 +59800,7 @@ bat
 qPy
 xnr
 xnr
-xnr
+igL
 xWT
 xWT
 ydH
@@ -60042,7 +60038,7 @@ uOF
 sfB
 yiF
 xWT
-xnr
+qvK
 xnr
 xnr
 xnr
@@ -60565,12 +60561,12 @@ eFp
 rOM
 xnr
 xnr
-xnr
+gyO
 xnr
 hfD
 xnr
 xnr
-xnr
+gyO
 edO
 xnr
 hfD
@@ -61575,7 +61571,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+dDC
 fyf
 uHT
 jJb
@@ -61833,7 +61829,7 @@ fyf
 fyf
 fyf
 fyf
-gyO
+fyf
 fyf
 fyf
 xjP
