@@ -19952,7 +19952,7 @@
 /area/f13/tunnel)
 "tQw" = (
 /obj/structure/table,
-/obj/item/storage/fancy/ammobox/slugshot,
+/obj/item/ammo_box/shotgun/slug,
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"

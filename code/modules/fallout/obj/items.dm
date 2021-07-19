@@ -83,9 +83,9 @@
 
 /obj/item/storage/backpack/duffelbag/auto5/PopulateContents()
 	new /obj/item/gun/ballistic/shotgun/automatic/combat/auto5(src)
-	new /obj/item/storage/fancy/ammobox/lethalshot(src)
-	new /obj/item/storage/fancy/ammobox/lethalshot(src)
-	new /obj/item/storage/fancy/ammobox/slugshot(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
+	new /obj/item/ammo_box/shotgun/slug(src)
 
 /obj/item/storage/backpack/duffelbag/sniper
 
