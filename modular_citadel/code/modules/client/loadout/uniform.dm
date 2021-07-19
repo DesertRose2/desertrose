@@ -109,6 +109,21 @@
 							"Initiate",
 							"BoS Off-Duty"
 	)
+
+/datum/gear/uniform/vault/greaser
+	name = "greaser's jumspuit"
+	path = /obj/item/clothing/under/f13/vault/vcity/greaser
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "VTCC"
+	restricted_roles = list("Inner Wall Citizen",
+							"Outer Wall Citizen",
+							"Roadie",
+							"Innkeeper")
+
+/datum/gear/uniform/vault/greaser/skirt
+	name = "greaser's jumpskirt"
+	path = /obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+
 //
 
 /datum/gear/uniform/rustic

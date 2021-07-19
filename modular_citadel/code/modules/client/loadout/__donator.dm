@@ -315,7 +315,7 @@
 	name = "Luti's belongings"
 	path = /obj/item/storage/box/large/custom_kit/luti
 	ckeywhitelist = list("spaceanglo")
-	
+
 /datum/gear/donator/kits/valentinavega
 	name = "Valentina Vega's belongings"
 	path = /obj/item/storage/box/large/custom_kit/valentinavega
@@ -325,7 +325,7 @@
 	name = "Bartholomew's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bartholomewtheapostle
 	ckeywhitelist = list("pilotbland")
-	
+
 /datum/gear/donator/kits/twentytwice
 	name = "Twenty-Twice's belongings"
 	path = /obj/item/storage/box/large/custom_kit/twentytwice
@@ -355,7 +355,7 @@
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
 	ckeywhitelist = list("asterixcodix")
-	restricted_roles = list("NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger4570
 	name = "45-70 Gov't Service Revolver"

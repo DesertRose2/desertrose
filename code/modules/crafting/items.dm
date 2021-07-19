@@ -1056,9 +1056,9 @@
 	var/prefix
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 4
-		penmod += 4
-		spdmod += 4
+		dmgmod += 2
+		penmod += 2
+		spdmod += 2
 		overall = dmgmod+penmod-spdmod
 
 	if(B.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
@@ -1083,8 +1083,8 @@
 		if(30 to 100)
 			prefix = "Legendary "
 
-	B.extra_damage += (dmgmod)
-	B.extra_penetration += (penmod/60)
+	B.extra_damage += (dmgmod/2.5)
+	B.extra_penetration += (penmod/70)
 	B.fire_delay += (spdmod/5)
 	B.name = prefix + B.name
 	B.tinkered += 1
@@ -1104,9 +1104,9 @@
 	var/prefix
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 4
-		penmod += 4
-		spdmod += 4
+		dmgmod += 2
+		penmod += 2
+		spdmod += 2
 		overall = dmgmod+penmod-spdmod
 
 	if(E.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
@@ -1131,7 +1131,7 @@
 		if(30 to 100)
 			prefix = "Legendary "
 
-	E.extra_damage += (dmgmod)
+	E.extra_damage += (dmgmod/2.5)
 	E.extra_penetration += (penmod/60)
 	E.fire_delay += (spdmod/5)
 	//E.ammo_type[1].delay += spdmod
@@ -1146,13 +1146,11 @@
 	var/obj/item/clothing/suit/armor/A = W
 
 	var/tiermod = rand(-10,10)
-	var/spdmod = rand(-10,10)
 	var/prefix
-	var/overall = tiermod - spdmod
+	var/overall = tiermod
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 4
-		spdmod += -4
+		tiermod += 2
 
 	if(A.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
@@ -1179,10 +1177,9 @@
 	A.armor.linemelee += tiermod*3
 	A.armor.linebullet += tiermod*3
 	A.armor.linelaser += tiermod*3
-	A.slowdown += (spdmod/75)
 	A.name = prefix + A.name
 	A.tinkered += 1
-	A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]; Speed: [A.slowdown]"
+	A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]"
 
 	to_chat(usr, "You tinker with the armor making [W.name]...")
 	qdel(src)
@@ -1191,13 +1188,11 @@
 	var/obj/item/clothing/head/H = W
 
 	var/tiermod = rand(-10,10)
-	var/spdmod = rand(-10,10)
 	var/prefix
-	var/overall = tiermod - spdmod
+	var/overall = tiermod
 
 	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 4
-		spdmod += -4
+		tiermod += 2
 
 	if(H.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
 		to_chat(usr, "You have already tinkered with this item.")
@@ -1224,10 +1219,9 @@
 	H.armor.linemelee += tiermod*3
 	H.armor.linebullet += tiermod*3
 	H.armor.linelaser += tiermod*3
-	H.slowdown += (spdmod/75)
 	H.name = prefix + H.name
 	H.tinkered += 1
-	H.desc += " Armor: Melee: [H.armor.linemelee], Bullet: [H.armor.linebullet], Laser: [H.armor.linelaser]; Speed: [H.slowdown]"
+	H.desc += " Armor: Melee: [H.armor.linemelee], Bullet: [H.armor.linebullet], Laser: [H.armor.linelaser]"
 
 	to_chat(usr, "You tinker with the armor making [W.name]...")
 	qdel(src)
