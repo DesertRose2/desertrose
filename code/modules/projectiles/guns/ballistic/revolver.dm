@@ -288,6 +288,7 @@
 	force = 10
 	flags_1 = CONDUCT_1
 	slot_flags = ITEM_SLOT_BACK
+	untinkerable = TRUE
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	sawn_desc = "Omar's coming!"
 	obj_flags = UNIQUE_RENAME
@@ -342,6 +343,7 @@
 	unique_reskin = null
 //	projectile_damage_multiplier = 0.9
 	var/slung = FALSE
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/revolver/doublebarrel/improvised/attackby(obj/item/A, mob/user, params)
 	..()
@@ -374,6 +376,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	sawn_off = TRUE
 	slot_flags = ITEM_SLOT_BELT
+	untinkerable = TRUE
 
 
 /obj/item/gun/ballistic/revolver/reverse //Fires directly at its user... unless the user is a clown, of course.
@@ -635,6 +638,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_LIGHT
 	spread = 40
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/revolver/needler
 	name = "needler pistol"
