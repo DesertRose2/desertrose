@@ -51,7 +51,7 @@
 //Pipera Rivera - purplepineapple
 /obj/item/storage/box/large/custom_kit/piperrivera/PopulateContents()
 	new /obj/item/modkit/piper_hat(src)
-	new /obj/item/modkit/piper_vest(src)
+	new /obj/item/modkit/hoodedrecon(src)
 	new /obj/item/clothing/accessory/waistcoat/sheepskin(src)
 	new /obj/item/clothing/under/f13/ranger/blue(src)
 	new /obj/item/clothing/shoes/f13/cowboy(src)
@@ -353,3 +353,12 @@
 //Lullaby Fuchs - ollieoxen
 /obj/item/storage/box/large/custom_kit/lullabyfuchs/PopulateContents()
 	new /obj/item/modkit/ncr_trenchcloak(src)
+	
+//Aphelion Roche - gurking
+/obj/item/storage/box/large/custom_kit/aphelionroche/PopulateContents()
+	new /obj/item/clothing/suit/toggle/labcoat/fieldscribe(src)
+	new /obj/item/storage/belt/military/alt(src)
+	
+//Matt Sharp - soldierboy2
+/obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
+	new /obj/item/clothing/mask/gas
