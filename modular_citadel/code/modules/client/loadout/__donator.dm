@@ -335,7 +335,17 @@
 	name = "Lullaby Fuch's belongings"
 	path = /obj/item/storage/box/large/custom_kit/lullabyfuchs
 	ckeywhitelist = list("ollieoxen")
-
+	
+/datum/gear/donator/kits/aphelionroche
+	name = "Aphelion Roche's belongings"
+	path = /obj/item/storage/box/large/custom_kit/aphelionroche
+	ckeywhitelist = list("gurking")
+	
+/datum/gear/donator/kits/mattsharp
+	name = "Matt Sharp's belongings"
+	path = /obj/item/storage/box/large/custom_kit/mattsharp
+	ckeywhitelist = list("soldierboy2")
+	
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
