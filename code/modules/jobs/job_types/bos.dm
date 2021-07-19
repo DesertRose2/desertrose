@@ -44,6 +44,9 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort51b)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort60)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost45dhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost51bhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost60ahelm)
 
 /*
 Elder
@@ -405,7 +408,6 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
