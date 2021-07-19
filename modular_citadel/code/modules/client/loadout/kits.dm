@@ -362,6 +362,3 @@
 //Matt Sharp - soldierboy2
 /obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
 	new /obj/item/clothing/mask/gas
-	
-
-
