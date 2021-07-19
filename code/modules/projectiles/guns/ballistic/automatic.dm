@@ -1188,7 +1188,7 @@
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 4
+	extra_damage = 2
 	extra_penetration = 0.08
 	automatic_burst_overlay = FALSE
 	//automatic = 1

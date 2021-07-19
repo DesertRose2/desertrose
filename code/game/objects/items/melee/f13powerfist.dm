@@ -59,6 +59,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	item_flags = NEEDS_PERMIT //doesn't slow you down
 	fire_delay = 3
+	untinkerable = TRUE
 //	distro = 1
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
