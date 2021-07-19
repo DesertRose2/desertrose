@@ -510,8 +510,8 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60/bos/update_icon_state()
-	icon_state = "t60helmet[on]"
-	item_state = "t60helmet[on]"
+	icon_state = "t60bos[on]"
+	item_state = "t60bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/excavator
 	name = "excavator power helmet"
