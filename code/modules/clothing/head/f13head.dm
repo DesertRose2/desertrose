@@ -410,7 +410,11 @@
 	desc = "(VIII) A T-45d helmet put into use by the Brotherhood of Steel."
 	icon_state = "t45bos0"
 	item_state = "t45bos0"
-	actions_types = list()
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos/update_icon_state()
+	icon_state = "t45bos[on]"
+	item_state = "t45bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b Helm"
@@ -456,7 +460,11 @@
 	desc = "(IX) A T-51b power helmet put into use by the Brotherhood of Steel."
 	icon_state = "t51bos0"
 	item_state = "t51bos0"
-	actions_types = list()
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/update_icon_state()
+	icon_state = "t51bos[on]"
+	item_state = "t51bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/wbos
 	name = "Washington power helmet"
@@ -499,7 +507,11 @@
 	desc = "(X) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
 	icon_state = "t60bos0"
 	item_state = "t60bos0"
-	actions_types = list()
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t60/bos/update_icon_state()
+	icon_state = "t60bos[on]"
+	item_state = "t60bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/excavator
 	name = "excavator power helmet"

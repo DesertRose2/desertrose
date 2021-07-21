@@ -1022,6 +1022,7 @@
 
 /obj/item
 	var/tinkered = 0
+	var/untinkerable = FALSE
 
 /obj/item/experimental/proc/reroll(obj/item/W, mob/user)
 	var/obj/item/item = W.type
@@ -1032,19 +1033,7 @@
 	to_chat(user,"You destroy the item in the process.")
 
 /obj/item/experimental/proc/gun(obj/item/W, mob/user)
-	if(istype(W,/obj/item/gun/ballistic/automatic/shotgun))
-		to_chat(usr, "You can't improve [W.name]...")
-		return
-	if (istype(W,/obj/item/gun/ballistic/revolver/doublebarrel))
-		to_chat(usr, "You can't improve [W.name]...")
-		return
-	if (istype(W,/obj/item/gun/ballistic/revolver/shotgunrevolver))
-		to_chat(usr, "You can't improve [W.name]...")
-		return
-	if (istype(W,/obj/item/gun/ballistic/revolver/ballisticfist))
-		to_chat(usr, "You can't improve [W.name]...")
-		return
-	if(istype(W,/obj/item/gun/ballistic/m2flamethrower))
+	if(W.untinkerable == TRUE)
 		to_chat(usr, "You can't improve [W.name]...")
 		return
 	var/obj/item/gun/ballistic/B = W

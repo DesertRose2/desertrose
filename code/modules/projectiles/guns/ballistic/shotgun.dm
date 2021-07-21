@@ -14,6 +14,7 @@
 	spawnwithmagazine = TRUE
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
+	untinkerable = TRUE //fuck you no tinkering shotguns, you dirty powergamer
 
 /obj/item/gun/ballistic/shotgun/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
@@ -507,6 +508,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 12
 	pump_sound = 'sound/weapons/boltpump.ogg'
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/remington/attackby(obj/item/A, mob/user, params)
 	..()
@@ -623,6 +625,7 @@
 	scope_x_offset = 12
 	scope_y_offset = 23
 	pump_sound = 'sound/weapons/boltpump.ogg'
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"
@@ -636,6 +639,7 @@
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 1
 	fire_sound = 'sound/f13weapons/max_sawn_off.ogg'
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/revolver/widowmaker/attackby(obj/item/A, mob/user, params)
 	..()
@@ -669,6 +673,7 @@
 	can_suppress = TRUE
 	suppressor_x_offset = 25
 	suppressor_y_offset = 30
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/lasmusket
 	name = "Laser musket"
@@ -696,6 +701,7 @@
 	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/plasmacaster
 	name = "Plasma musket"
@@ -722,3 +728,4 @@
 	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
+	untinkerable = FALSE
