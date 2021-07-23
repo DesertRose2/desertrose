@@ -536,6 +536,11 @@
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	slowdown = -0.1
 
+/obj/item/clothing/suit/armor/f13/rangercombat/mutant
+	name = "veteran mutant ranger combat armor"
+	icon_state = "mutie_vet_ranger"
+	item_state = "mutie_vet_ranger"
+
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"
 	icon_state = "ncrcfjacket"
