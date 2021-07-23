@@ -302,6 +302,7 @@
 	fire_sound = 'sound/weapons/gunshot.ogg'
 	automatic_burst_overlay = FALSE
 	can_suppress = FALSE
+	untinkerable = TRUE
 	burst_size = 1
 	semi_auto = TRUE
 	pin = /obj/item/firing_pin/implant/pindicate
@@ -1064,6 +1065,7 @@
 	automatic_burst_overlay = FALSE
 	//automatic = 0
 	semi_auto = TRUE
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/m1919
 	name = "Browning M1919"
@@ -1425,6 +1427,7 @@
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/shotgun/caws
 	name = "H&K CAWS"
@@ -1438,6 +1441,7 @@
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/m2a1
 	name = "Browning M2A1"
