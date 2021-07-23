@@ -118,7 +118,14 @@
 	restricted_roles = list("Inner Wall Citizen",
 							"Outer Wall Citizen",
 							"Roadie",
-							"Innkeeper")
+							"Innkeeper".
+							"Hoistway Preacher",
+							"Researcher",
+							"Town Security",
+							"Marshal",
+							"Alderman",
+							"Chief Researcher",
+							"Merchant")
 
 /datum/gear/uniform/vault/greaser/skirt
 	name = "greaser's jumpskirt"
