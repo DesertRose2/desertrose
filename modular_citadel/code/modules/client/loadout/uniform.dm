@@ -118,7 +118,7 @@
 	restricted_roles = list("Inner Wall Citizen",
 							"Outer Wall Citizen",
 							"Roadie",
-							"Innkeeper".
+							"Innkeeper",
 							"Hoistway Preacher",
 							"Researcher",
 							"Town Security",
