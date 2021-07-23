@@ -49,24 +49,24 @@
 	. = TRUE
 	if(replaced_by == /datum/surgery)
 		return FALSE
-		//	
-		
+		//
+
 	if(requires_trait>2)
 		if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
 			return TRUE
-		else 
+		else
 			return FALSE
 
 	if(requires_trait>1)
 		if(HAS_TRAIT(user,TRAIT_SURGERY_MID)||HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
 			return TRUE
-		else 
+		else
 			return FALSE
 
 	if(requires_trait>0)
 		if(HAS_TRAIT(user,TRAIT_SURGERY_LOW)||HAS_TRAIT(user,TRAIT_SURGERY_MID)||HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
 			return TRUE
-		else 
+		else
 			return FALSE
 		//
 	if(HAS_TRAIT(user, TRAIT_SURGEON) || HAS_TRAIT(user.mind, TRAIT_SURGEON))
@@ -176,12 +176,11 @@
 		if(initial(beep.requires_tech))
 			surgeries += beep
 
-/obj/item/disk/surgery/oasis 
+/obj/item/disk/surgery/oasis
 	name = "oasis surgery disk"
 	surgeries = list(	/datum/surgery/advanced/lobotomy,
 						/datum/surgery/advanced/pacify,
-						/datum/surgery/advanced/reconstruction,
-						/datum/surgery/advanced/brainwashing)
+						/datum/surgery/advanced/reconstruction)
 
 
 //INFO

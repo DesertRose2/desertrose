@@ -823,12 +823,12 @@
 	surgery = /datum/surgery/advanced/revival
 	research_icon_state = "surgery_head"
 
-/datum/design/surgery/brainwashing
+/*/datum/design/surgery/brainwashing
 	name = "Brainwashing"
 	desc = "A surgical procedure which directly implants a directive into the patient's brain, making it their absolute priority. It can be cleared using a mindshield implant."
 	id = "surgery_brainwashing"
 	surgery = /datum/surgery/advanced/brainwashing
-	research_icon_state = "surgery_head"
+	research_icon_state = "surgery_head"*/
 
 /datum/design/surgery/nerve_splicing
 	name = "Nerve Splicing"
