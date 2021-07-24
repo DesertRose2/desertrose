@@ -33,7 +33,7 @@
 
 /*
 Administrator
-*/
+
 /datum/job/followers/f13leadpractitioner
 	title = "Followers Administrator"
 	flag = F13LEADPRACTITIONER
@@ -89,7 +89,7 @@ Administrator
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/techno=1)
 
-/*
+
 Professor
 
 /datum/job/followers/f13Professor
@@ -316,7 +316,7 @@ Follower Volunteer
 
 /*
 Follower Guard
-*/
+
 
 /datum/job/followers/f13followerguard
 	title = "Followers Guard"
@@ -369,3 +369,4 @@ Follower Guard
 		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/ammo_box/shotgun/buck=1
 	)
+*/

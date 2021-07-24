@@ -7,6 +7,10 @@
 	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE,TRAIT_VIRUSIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
+	offset_features = list (
+		OFFSET_HEAD = list(0,10),
+		OFFSET_SUIT = list(0,0)
+		)
 	punchstunthreshold = 20
 	use_skintones = 0
 	sexes = 0
