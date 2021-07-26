@@ -324,9 +324,9 @@
 	return
 
 /obj/proc/check_skinnable(/mob/M)
-    if(current_skin && !always_reskinnable)
-        return FALSE
-    return TRUE
+	if(current_skin && !always_reskinnable)
+		return FALSE
+	return TRUE
 
 /obj/update_overlays()
 	. = ..()
