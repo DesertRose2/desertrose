@@ -286,6 +286,11 @@
 	path = /obj/item/storage/box/large/custom_kit/lamb
 	ckeywhitelist = list("yecrowbarman")
 
+/datum/gear/donator/kits/rhiannon
+	name = "Rhiannon's belongings"
+	path = /obj/item/storage/box/large/custom_kit/rhiannon
+	ckeywhitelist = list("asterixcodix")
+
 /datum/gear/donator/kits/peashooter
 	name = "Pea Shooter's belongings"
 	path = /obj/item/storage/box/large/custom_kit/peashooter
@@ -335,17 +340,17 @@
 	name = "Lullaby Fuch's belongings"
 	path = /obj/item/storage/box/large/custom_kit/lullabyfuchs
 	ckeywhitelist = list("ollieoxen")
-	
+
 /datum/gear/donator/kits/aphelionroche
 	name = "Aphelion Roche's belongings"
 	path = /obj/item/storage/box/large/custom_kit/aphelionroche
 	ckeywhitelist = list("gurking")
-	
+
 /datum/gear/donator/kits/mattsharp
 	name = "Matt Sharp's belongings"
 	path = /obj/item/storage/box/large/custom_kit/mattsharp
 	ckeywhitelist = list("soldierboy2")
-	
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
