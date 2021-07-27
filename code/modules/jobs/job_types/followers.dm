@@ -33,7 +33,7 @@
 
 /*
 Administrator
-*/
+
 /datum/job/followers/f13leadpractitioner
 	title = "Followers Administrator"
 	flag = F13LEADPRACTITIONER
@@ -89,7 +89,7 @@ Administrator
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/techno=1)
 
-/*
+
 Professor
 
 /datum/job/followers/f13Professor
@@ -316,7 +316,7 @@ Follower Volunteer
 
 /*
 Follower Guard
-*/
+
 
 /datum/job/followers/f13followerguard
 	title = "Followers Guard"
@@ -366,6 +366,7 @@ Follower Guard
 	name = "Followers Close Protection Guard"
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
 	backpack_contents = list(
-		/obj/item/storage/fancy/ammobox/beanbag=1,
-		/obj/item/storage/fancy/ammobox/lethalshot=1
+		/obj/item/ammo_box/shotgun/bean=1,
+		/obj/item/ammo_box/shotgun/buck=1
 	)
+*/

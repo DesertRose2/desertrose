@@ -379,12 +379,14 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 
 /obj/item/gun/energy/laser/scatter/baby
 	name = "tribeam laser carbine"
 	desc = "A cut down version of the tribeam laser rifle."
 	icon_state = "tricar"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/baby)
+	untinkerable = TRUE
 
 /obj/item/gun/energy/laser/plasma
 	name ="plasma rifle"

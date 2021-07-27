@@ -197,6 +197,26 @@
 	name = "Ranger jacket modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
 	result_item = /obj/item/clothing/suit/armor/f13/rangerrecon_jacket
+	
+/obj/item/modkit/ursuslegion
+	name = "Ursus Homicida modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/legion/venator)
+	result_item = /obj/item/clothing/suit/armor/f13/legion/venator/ursus
+
+/obj/item/modkit/harebellscout
+	name = "Harebell scout beret"
+	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout)
+	result_item = /obj/item/clothing/head/beret/tina_beret
+	
+/obj/item/modkit/trailcoat
+	name = "Trail coat modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/trailranger)
+	result_item = /obj/item/clothing/suit/armor/f13/tina_jacket
+	
+/obj/item/modkit/hoodedrecon
+	name = "Hooded recon modkit"
+	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	result_item = /obj/item/clothing/suit/hooded/f13/hooded_recon
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm

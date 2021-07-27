@@ -256,6 +256,13 @@
 	icon_state = "legvenator"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
+//Custom venator armor for Luti
+/obj/item/clothing/suit/armor/f13/legion/venator/ursus
+	name = "Ursus Homicida"
+	desc = "(VII) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
+	icon_state = "ursus_homicida"
+	item_state = "ursus_homicida"
+
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
 	name = "legion orator armor"
 	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
@@ -368,9 +375,18 @@
 	item_state = "scoutarmor"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
-	name = "NCR light infantry veteran combat armor"
-	desc = "(VI) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
+	name = "NCR light infantry mantle armor"
+	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle"
+	item_state = "scoutarmor_mantle"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
+	name = "NCR light infantry reinforced mantle armor"
+	desc = "(VI) A specialized reinforced variant of the standard NCR armor given to light infantrymen NCOs."
+	icon_state = "scoutarmor_mantle_reinforced"
+	item_state = "scoutarmor_mantle_reinforced"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer
@@ -460,12 +476,23 @@
 	slowdown = -0.2
 
 /obj/item/clothing/suit/armor/f13/tina_jacket
-	name = "Trail Coat"
+	name = "trail coat"
 	desc = "A dark red ranger's trenchcoat, replete with a belt and a trail ranger scarf dyed the color of harebells. It smells a little like flowers, lemon juice and gunpowder."
 	icon_state = "tina_jacket"
 	item_state = "tina_jacket"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.14
+	slowdown = -0.2
+
+/obj/item/clothing/suit/hooded/f13/hooded_recon
+	name = "hooded ranger jacket"
+	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	icon_state = "hooded_recon"
+	item_state = "hooded_recon"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.1
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS //Since this uses the hooded object, needs to be set to match armor/f13
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
@@ -508,6 +535,11 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	slowdown = -0.1
+
+/obj/item/clothing/suit/armor/f13/rangercombat/mutant
+	name = "veteran mutant ranger combat armor"
+	icon_state = "mutie_vet_ranger"
+	item_state = "mutie_vet_ranger"
 
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"

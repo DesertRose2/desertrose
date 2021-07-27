@@ -656,6 +656,10 @@
 	name = "Supernova"
 	icon_state = "hair_supernova"
 
+/datum/sprite_accessory/hair/sideshave
+	name = "Side Shave"
+	icon_state = "side_shave"
+
 /datum/sprite_accessory/hair/poofy
 	name = "Poofy"
 	icon_state = "hair_poofy"

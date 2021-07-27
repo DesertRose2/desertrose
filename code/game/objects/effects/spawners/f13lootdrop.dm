@@ -1211,6 +1211,12 @@
 				/obj/item/stock_parts/cell/ammo/mfc
 	)
 
+/obj/effect/spawner/bundle/f13/flamethrower
+	name = "flamethrower spawner"
+	items = list(
+				/obj/item/m2flamethrowertank,
+	)
+
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier10
 	name = "tier 10 gun"
 	loot = list(
@@ -1220,7 +1226,8 @@
 				/obj/effect/spawner/bundle/f13/tommygun,
 				/obj/effect/spawner/bundle/f13/aer14,
 				/obj/effect/spawner/bundle/f13/amr,
-				/obj/effect/spawner/bundle/f13/tribeam
+				/obj/effect/spawner/bundle/f13/tribeam,
+				/obj/effect/spawner/bundle/f13/flamethrower
 				)
 
 /obj/effect/spawner/bundle/f13/bozar

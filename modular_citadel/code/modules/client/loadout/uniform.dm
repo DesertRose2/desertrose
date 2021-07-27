@@ -27,8 +27,10 @@
 	name = "settler outfit"
 	path = /obj/item/clothing/under/f13/settler
 
+//Factions
 /datum/gear/uniform/ncr_fatigue_pants
 	name = "NCR fatigue pants"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/ncr/pants
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
@@ -50,6 +52,7 @@
 
 /datum/gear/uniform/ncr_shorts
 	name = "NCR fatigue shorts"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/ncr/ncr_shorts
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
@@ -71,6 +74,7 @@
 
 /datum/gear/uniform/ranger
 	name = "ranger outfit"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/ranger
 	restricted_desc = "Rangers"
 	restricted_roles = list("NCR Veteran Ranger", "NCR Ranger")
@@ -89,6 +93,7 @@
 
 /datum/gear/uniform/brotherhood
 	name = "brotherhood fatigues"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/bos/fatigues
 	restricted_desc = "BoS"
 	restricted_roles = list(
@@ -104,6 +109,29 @@
 							"Initiate",
 							"BoS Off-Duty"
 	)
+
+/datum/gear/uniform/vault/greaser
+	name = "greaser's jumspuit"
+	path = /obj/item/clothing/under/f13/vault/vcity/greaser
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "VTCC"
+	restricted_roles = list("Inner Wall Citizen",
+							"Outer Wall Citizen",
+							"Roadie",
+							"Innkeeper",
+							"Hoistway Preacher",
+							"Researcher",
+							"Town Security",
+							"Marshal",
+							"Alderman",
+							"Chief Researcher",
+							"Merchant")
+
+/datum/gear/uniform/vault/greaser/skirt
+	name = "greaser's jumpskirt"
+	path = /obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+
+//
 
 /datum/gear/uniform/rustic
 	name = "rustic outfit"
@@ -395,21 +423,6 @@
 	name = "Grey Turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/grey
 
-/datum/gear/uniform/detbrown
-	name = "Brown Worn Suit"
-	path = /obj/item/clothing/under/rank/security/detective/brown
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Detective"
-	restricted_roles = list("Detective")
-
-/datum/gear/uniform/detbrown/detbrown2
-	name = "Padded Worn Suit"
-	path = /obj/item/clothing/under/rank/security/detective/brown/brown2
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Detective"
-	restricted_roles = list("Detective")
-
-
 // Grey utility
 
 /datum/gear/uniform/grey
@@ -421,62 +434,6 @@
 	name = "Grey Utility Uniform"
 	path = /obj/item/clothing/under/rank/civilian/util
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
-
-/*
-/datum/gear/uniform/grey/sec
-	name = "Security Utility Uniform"
-	path = /obj/item/clothing/under/rank/security/officer/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Security"
-	restricted_roles = list("Detective", "Security Officer", "Warden", "Head of Security")
-
-/datum/gear/uniform/grey/sci
-	name = "Science Utility Uniform"
-	path = /obj/item/clothing/under/rank/rnd/scientist/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Science"
-	restricted_roles = list("Scientist", "Roboticist", "Research Director", "Geneticist")
-*/
-
-/datum/gear/uniform/grey/med
-	name = "Medical Utility Uniform"
-	path = /obj/item/clothing/under/rank/medical/doctor/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Medical"
-	restricted_roles = list("Medical Doctor", "Virologist", "Chemist", "Geneticist", "Paramedic")
-
-/datum/gear/uniform/grey/eng
-	name = "Engineering Utility Uniform"
-	path = /obj/item/clothing/under/rank/engineering/engineer/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Engineering"
-	restricted_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer")
-
-/*
-/datum/gear/uniform/grey/supply
-	name = "Supply Utility Uniform"
-	path = /obj/item/clothing/under/rank/cargo/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Supply"
-	restricted_roles = list("Shaft Miner", "Cargo Technician", "Quartermaster")
-
-/datum/gear/uniform/grey/com
-	name = "Command Utility Uniform"
-	path = /obj/item/clothing/under/rank/captain/util
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_desc = "Command"
-	restricted_roles = list("Quartermaster", "Research Director", "Chief Medical Officer", "Head Of Security", "Head Of Personnel", "Captain")
-*/
-
-/datum/gear/uniform/grey/eng/mech
-	name = "Mechanic's Uniform"
-	path = /obj/item/clothing/under/rank/engineering/engineer/mechanic
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-
-/datum/gear/unifrom/grey/med/red
-	name = "Red Paramedic's Uniform"
-	path = /obj/item/clothing/under/rank/medical/paramedic/red
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
 
 //Memes
 /datum/gear/uniform/gear_harnesses
@@ -584,9 +541,3 @@
 /datum/gear/uniform/kimono/sakura
 	name = "Sakura kimono"
 	path = /obj/item/clothing/under/costume/kimono/sakura
-
-/datum/gear/uniform/ctlong
-	name = "cargo tech's jumpsuit (long pants)"
-	path = /obj/item/clothing/under/rank/cargo/tech/long
-	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
-	restricted_roles = list("Cargo Technician")

@@ -98,6 +98,7 @@
 	var/list/leg = list()
 	var/list/ncr = list()
 	var/list/vault = list()
+	var/list/vtcc = list()
 	var/list/flw = list()
 	var/list/tribe = list()
 	var/list/khan = list()
@@ -151,6 +152,9 @@
 		if(rank in GLOB.vault_positions)
 			vault[name] = rank
 			department = 1
+		if(rank in GLOB.vtcc_positions)	
+			vtcc[name] = rank
+			department = 1
 		if(rank in GLOB.wasteland_positions)
 			was[name] = rank
 			department = 1
@@ -201,6 +205,11 @@
 		for(var/name in vault)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
 			even = !even
+	if(length(vtcc))
+		dat += "<tr><th colspan=3>Vault-Tec City Coalition</th></tr>"
+		for(var/name in vtcc)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vtcc[name]]</td></tr>"
+			even = !even			
 	if(length(was))
 		dat += "<tr><th colspan=3>Wasteland</th></tr>"
 		for(var/name in was)

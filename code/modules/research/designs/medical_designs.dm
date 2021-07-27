@@ -823,12 +823,12 @@
 	surgery = /datum/surgery/advanced/revival
 	research_icon_state = "surgery_head"
 
-/datum/design/surgery/brainwashing
+/*/datum/design/surgery/brainwashing
 	name = "Brainwashing"
 	desc = "A surgical procedure which directly implants a directive into the patient's brain, making it their absolute priority. It can be cleared using a mindshield implant."
 	id = "surgery_brainwashing"
 	surgery = /datum/surgery/advanced/brainwashing
-	research_icon_state = "surgery_head"
+	research_icon_state = "surgery_head"*/
 
 /datum/design/surgery/nerve_splicing
 	name = "Nerve Splicing"
@@ -873,13 +873,6 @@
 	id = "surgery_ligament_reinforcement"
 	surgery = /datum/surgery/advanced/bioware/ligament_reinforcement
 	research_icon_state = "surgery_chest"
-
-/datum/design/surgery/necrotic_revival
-	name = "Necrotic Revival"
-	desc = "An experimental surgical procedure that stimulates the growth of a Romerol tumor inside the patient's brain. Requires zombie powder or rezadone."
-	id = "surgery_zombie"
-	surgery = /datum/surgery/advanced/necrotic_revival
-	research_icon_state = "surgery_head"
 
 /////////////////////////////////////////
 ////////////Medical Prosthetics//////////
