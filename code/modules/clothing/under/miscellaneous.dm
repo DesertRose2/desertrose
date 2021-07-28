@@ -546,6 +546,15 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/redeveninggown
+	name = "Harebell dress"
+	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
+	icon_state = "harebell_dress"
+	item_state = "harebell_dress"
+	item_color = "harebell_dress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/janimaid
 	name = "maid uniform"
 	desc = "A simple maid uniform for housekeeping."

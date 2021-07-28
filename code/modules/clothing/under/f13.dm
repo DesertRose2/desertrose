@@ -90,6 +90,14 @@
 	item_state = "ncr_shorts"
 	item_color = "ncr_shorts"
 
+/obj/item/clothing/under/f13/ncr
+	name = "NCR sniper fatigues"
+	desc = "A set of fatigues with padded compression sleeves for long periods of getting on your hands and knees. The top is a little open to beat the heat. Warning: The NCR does not condone the use of Steady chems."
+	can_adjust = FALSE
+	icon_state = "ncr_snipermgs"
+	item_state = "ncr_snipermgs"
+	item_color = "ncr_snipermgs"
+
 /obj/item/clothing/under/f13/caravaneer
 	name = "caravaneer outfit"
 	desc = "A soft outfit used by NCR caravaneers."
