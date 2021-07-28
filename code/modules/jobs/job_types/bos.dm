@@ -804,8 +804,9 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightc
 	name = "Security Senior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/restraints/handcuffs=1,
