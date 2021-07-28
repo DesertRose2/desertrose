@@ -18,7 +18,7 @@
 		return TRUE
 	else
 		return ..()
-	
+
 /obj/item/modkit/riotgear
 	name = "desert ranger riot gear modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/rangercombat)
@@ -177,27 +177,31 @@
 	name = "P08 luger modkit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/ninemil)
 	result_item = /obj/item/gun/ballistic/automatic/pistol/ninemil/luger
-	
+
 /obj/item/modkit/talon
 	name = "Talon armor modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
 	result_item = /obj/item/clothing/suit/armor/f13/talon
 
+/obj/item/modkit/talon/duster
+	name = "Talon duster modkit"
+	result_item = /obj/item/clothing/suit/armor/f13/talon/duster
+
 /obj/item/modkit/markedmen
 	name = "Marked patrol modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
 	result_item = /obj/item/clothing/suit/armor/f13/marked_patrol
-	
+
 /obj/item/modkit/ncr_trenchcloak
 	name = "Ranger trenchcloak modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
 	result_item = /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
-	
+
 /obj/item/modkit/rangerjacket
 	name = "Ranger jacket modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
 	result_item = /obj/item/clothing/suit/armor/f13/rangerrecon_jacket
-	
+
 /obj/item/modkit/ursuslegion
 	name = "Ursus Homicida modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/legion/venator)
@@ -207,12 +211,12 @@
 	name = "Harebell scout beret"
 	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout)
 	result_item = /obj/item/clothing/head/beret/tina_beret
-	
+
 /obj/item/modkit/trailcoat
 	name = "Trail coat modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/trailranger)
 	result_item = /obj/item/clothing/suit/armor/f13/tina_jacket
-	
+
 /obj/item/modkit/hoodedrecon
 	name = "Hooded recon modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)

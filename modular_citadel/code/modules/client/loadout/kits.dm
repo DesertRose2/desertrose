@@ -100,6 +100,7 @@
 /obj/item/storage/box/large/custom_kit/aliceprice/PopulateContents()
 	new /obj/item/modkit/riotgear/price(src)
 	new /obj/item/modkit/riotgear_helmet/price(src)
+	new /obj/item/storage/belt/holster/ranger4570
 
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()
@@ -234,6 +235,7 @@
 /obj/item/storage/box/large/custom_kit/nova/PopulateContents()
 	new /obj/item/modkit/talon(src)
 	new /obj/item/clothing/accessory/armband/med(src)
+	new /obj/item/modkit/talon/duster(src)
 
 //Smokes - lordyanex
 /obj/item/storage/box/large/custom_kit/smokes/PopulateContents()
@@ -271,6 +273,7 @@
 //Poet - schmeezi
 /obj/item/storage/box/large/custom_kit/poet/PopulateContents()
 	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
 
 //Stitch - themojavewanderer
 /obj/item/storage/box/large/custom_kit/stitch/PopulateContents()
@@ -284,6 +287,7 @@
 /obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
 	new /obj/item/modkit/luger(src)
 	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
 
 //Felina - Yurek
 /obj/item/storage/box/large/custom_kit/felina/PopulateContents()
@@ -292,6 +296,11 @@
 //Lamb - yecrowbarman
 /obj/item/storage/box/large/custom_kit/lamb/PopulateContents()
 	new /obj/item/modkit/talon(src)
+
+//Rhiannon - asterixcodix
+/obj/item/storage/box/large/custom_kit/rhiannon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
 
 //Pea-Shooter - elizabethdame
 /obj/item/storage/box/large/custom_kit/peashooter/PopulateContents()
@@ -353,12 +362,12 @@
 //Lullaby Fuchs - ollieoxen
 /obj/item/storage/box/large/custom_kit/lullabyfuchs/PopulateContents()
 	new /obj/item/modkit/ncr_trenchcloak(src)
-	
+
 //Aphelion Roche - gurking
 /obj/item/storage/box/large/custom_kit/aphelionroche/PopulateContents()
 	new /obj/item/clothing/suit/toggle/labcoat/fieldscribe(src)
 	new /obj/item/storage/belt/military/alt(src)
-	
+
 //Matt Sharp - soldierboy2
 /obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
 	new /obj/item/clothing/mask/gas(src)

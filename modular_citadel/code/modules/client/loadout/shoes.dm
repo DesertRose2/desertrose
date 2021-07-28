@@ -82,3 +82,13 @@
 	name = "old combat boots"
 	path = /obj/item/clothing/shoes/f13/military/oldcombat
 	cost = 2
+
+/datum/gear/shoes/thighboot
+	name = "thigh high boots"
+	path = /obj/item/clothing/shoes/thighboot
+	cost = 1
+
+/datum/gear/shoes/thighboot/platform
+	name = "thigh high platforms"
+	path =/obj/item/clothing/shoes/thighboot/platform
+	cost = 1

@@ -7500,7 +7500,7 @@
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
-	req_one_access_txt = "34"
+	req_one_access_txt = "31"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city)
@@ -11239,7 +11239,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "gPQ" = (
-/obj/machinery/door/airlock/research,
+/obj/machinery/door/airlock/research{
+	req_one_access_txt = "6"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/city)
 "gPR" = (
@@ -16464,7 +16466,7 @@
 	autoclose = 1;
 	max_integrity = 500;
 	name = "store backroom";
-	req_one_access_txt = "34"
+	req_one_access_txt = "31"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -21047,7 +21049,9 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/village)
 "mML" = (
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	req_one_access_txt = "62"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -22792,7 +22796,7 @@
 	autoclose = 1;
 	max_integrity = 500;
 	name = "store";
-	req_one_access_txt = "34"
+	req_one_access_txt = "31"
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "storeshutters";
@@ -28309,7 +28313,7 @@
 	autoclose = 1;
 	max_integrity = 500;
 	name = "store backroom";
-	req_one_access_txt = "34"
+	req_one_access_txt = "31"
 	},
 /turf/open/floor/wood/f13,
 /area/f13/city)
@@ -31265,6 +31269,12 @@
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
+/area/f13/city)
+"tiG" = (
+/obj/machinery/door/airlock/research{
+	req_one_access_txt = "6"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/city)
 "tiO" = (
 /obj/item/reagent_containers/food/condiment/ketchup{
@@ -56493,7 +56503,7 @@ xWT
 gRf
 xWT
 xWT
-hft
+tiG
 hft
 xWT
 xWT
