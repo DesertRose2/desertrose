@@ -359,7 +359,7 @@
 	name = "45-70 Gov't Service Revolver"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
-	ckeywhitelist = list("asterixcodix")
+	ckeywhitelist = list()
 	restricted_roles = list("NCR Ranger", "Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger4570
@@ -412,7 +412,6 @@
 	ckeywhitelist = list("seabass390",
 						"poots13",
 						"julwaters",
-						"asterixcodix",
 						"panzer1944",
 						"purplepineapple",
 						"edisnij",
