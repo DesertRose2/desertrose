@@ -106,7 +106,7 @@ Needs whitelist
 Centurion
 */
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	title = "Legion Optio Centuriae"
+	title = "Legion Optio Centurion"
 	flag = F13CENTURION
 	head_announce = list("Security")
 	total_positions = 1
@@ -135,7 +135,7 @@ Centurion
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	name = "Legion Optio Centuriae"
+	name = "Legion Centurion"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
 	mask =			/obj/item/clothing/mask/bandana/legcenturion
@@ -1161,9 +1161,9 @@ Camp Follower
 		/obj/item/clothing/under/f13/campfollowerfemale=1,
 		/obj/item/book/granter/trait/mars_teachings=1
 	)
-/*
+
 /datum/outfit/loadout/campfolloweroffduty
-	name = "Off-Duty Legionary"
+	name = "Retired Legionary"
 	uniform = /obj/item/clothing/under/f13/legskirt
 	mask = /obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
@@ -1171,7 +1171,7 @@ Camp Follower
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
 		/obj/item/storage/bag/money/small/legion=1
 	)
-*/
+
 /*
 Slave
 */
@@ -1258,7 +1258,8 @@ Off-Duty Legionary
 	neck =	/obj/item/clothing/mask/bandana/legcenturion
 	belt =	/obj/item/claymore/machete/spatha
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=2
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/clothing/accessory/legion/cent=1
 		)
 
 /datum/outfit/loadout/offdecvet
@@ -1266,7 +1267,8 @@ Off-Duty Legionary
 	mask =	/obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1
+		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/clothing/accessory/legion/officer=1
 		)
 
 /datum/outfit/loadout/offprime
@@ -1274,13 +1276,15 @@ Off-Duty Legionary
 	mask =	/obj/item/clothing/mask/bandana/legdecan
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1
+		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/clothing/accessory/legion/prime=1
 		)
 
 /datum/outfit/loadout/offexpven
-	name =	"Explorer Core"
+	name =	"Explorer Corps"
 	neck =	/obj/item/clothing/neck/cloak/grey
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1
+		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/clothing/accessory/legion/explorer=1
 		)
