@@ -128,8 +128,8 @@
 /obj/item/clothing/suit/armor/f13/exile/bosexile
 	name = "modified Brotherhood armor"
 	desc = "(IV) A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal."
-	icon_state = "brotherhoodexile"
-	item_state = "brotherhoodexile"
+	icon_state = "brotherhood_armor_outcast"
+	item_state = "brotherhood_armor_outcast"
 
 /obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize()
 	. = ..()
