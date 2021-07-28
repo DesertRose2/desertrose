@@ -201,7 +201,7 @@ Lieutenant
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/binoculars=1
-		)	
+		)
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -460,7 +460,7 @@ Corporal
 //Assault
 /datum/outfit/loadout/corpcqb
 	name = "Assault"
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	l_hand = /obj/item/gun/ballistic/shotgun/lever
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
@@ -495,7 +495,7 @@ Combat Engineer
 	gloves			= /obj/item/clothing/gloves/color/latex/nitrile
 	accessory		= /obj/item/clothing/accessory/armband/med/ncr
 	suit_store		= /obj/item/gun/ballistic/automatic/service
-	l_hand			= /obj/item/storage/firstaid/regular	
+	l_hand			= /obj/item/storage/firstaid/regular
 	mask 			= /obj/item/clothing/mask/surgical
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
@@ -618,7 +618,7 @@ Trooper
 //Assault
 /datum/outfit/loadout/troopcqb
 	name = "Assault"
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	l_hand = /obj/item/gun/ballistic/shotgun/hunting
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
