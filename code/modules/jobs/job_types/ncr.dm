@@ -395,7 +395,7 @@ Sergeant
 //Assault
 /datum/outfit/loadout/sercqb
 	name = "Assault"
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	l_hand = /obj/item/gun/ballistic/shotgun/lever
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	belt = 	/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
@@ -460,7 +460,7 @@ Corporal
 //Assault
 /datum/outfit/loadout/corpcqb
 	name = "Assault"
-	l_hand = /obj/item/gun/ballistic/shotgun/lever
+	l_hand = /obj/item/gun/ballistic/shotgun/hunting
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
