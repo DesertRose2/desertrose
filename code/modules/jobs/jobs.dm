@@ -103,6 +103,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Explorer",
 "Auxilia",
 "Legion Slave",
+"Off-Duty Legionary",
 
 "Mayor",
 "Sheriff",

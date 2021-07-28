@@ -416,7 +416,9 @@
 						"panzer1944",
 						"purplepineapple",
 						"edisnij",
-						"pisshole")
+						"pisshole",
+						"psycoticone",
+						"ollieoxen")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -515,7 +517,8 @@
 						"rangerbust",
 						"kirshbia",
 						"arkadec",
-						"pisshole")
+						"pisshole",
+						"psycoticone")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
