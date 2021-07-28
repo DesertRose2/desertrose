@@ -338,7 +338,7 @@ Head Knight
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
-		/obj/item/ammo_casing/energy/wattz2k/extended=1,
+		/obj/item/gun/energy/laser/wattz2k/extended=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3
 	)
 
