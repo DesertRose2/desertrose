@@ -166,11 +166,11 @@
 
 /obj/item/ammo_casing/energy/wattz2k
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k
-	e_cost = 125
+	e_cost = 100 //20 shots
 
 /obj/item/ammo_casing/energy/wattz2k/extended
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k
-	e_cost = 62.5
+	e_cost = 80 //25 shots
 
 //musket
 

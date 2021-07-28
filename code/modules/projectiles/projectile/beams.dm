@@ -407,8 +407,8 @@
 
 /obj/item/projectile/beam/laser/wattz2k
 	name = "laser bolt"
-	damage = 35
-	armour_penetration = 0.5
+	damage = 36
+	armour_penetration = 0.45
 
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser bolt"

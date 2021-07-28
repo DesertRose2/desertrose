@@ -338,7 +338,7 @@ Head Knight
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
-		/obj/item/gun/energy/laser/wattz2k=1,
+		/obj/item/ammo_casing/energy/wattz2k/extended=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3
 	)
 
@@ -599,7 +599,8 @@ Proctor
 		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/defibrillator/compact=1,
-		/obj/item/storage/survivalkit_aid_adv=1
+		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/book/granter/trait/highsurgery=1
 		)
 
 /*
@@ -703,6 +704,7 @@ Scribe
 /datum/outfit/loadout/scribejq
 	name = "Junior Quill Scribe"
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/defibrillator/compact=1,
@@ -713,6 +715,7 @@ Scribe
 /datum/outfit/loadout/scribeq
 	name = "Quill Scribe"
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/defibrillator/compact=1,
@@ -790,13 +793,12 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightb
 	name = "Scout Senior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/gun/energy/laser/wattz2k=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/glasses/night=1,
-		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1
+		/obj/item/binoculars=1
 		)
 
 /datum/outfit/loadout/sknightc
