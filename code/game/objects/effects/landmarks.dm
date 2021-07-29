@@ -660,6 +660,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Slave"
 	icon_state = "Wastelander"
 
+/obj/effect/landmark/start/f13/legionoff
+	name = "Off-Duty Legionary"
+
 // Brotherhood of Steel
 
 /obj/effect/landmark/start/f13/elder

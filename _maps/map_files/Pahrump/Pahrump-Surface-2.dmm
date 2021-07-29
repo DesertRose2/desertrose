@@ -4610,6 +4610,10 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"cNe" = (
+/obj/effect/landmark/start/f13/legionoff,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "cOk" = (
 /obj/structure/car/rubbish1,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -35901,6 +35905,10 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/city)
+"vUU" = (
+/obj/effect/landmark/start/f13/legionoff,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/legion)
 "vVF" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -104785,11 +104793,11 @@ ydY
 xNm
 mCf
 ktB
-wPS
+cNe
+vUU
 syr
-syr
-wPS
-wPS
+cNe
+cNe
 ktB
 gcK
 gcK

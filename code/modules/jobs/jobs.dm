@@ -157,6 +157,7 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Legion Explorer",
 "Auxilia",
 "Legion Slave",
+"Off-Duty Legionary",
 
 "Deputy",
 "Shopkeeper",
@@ -245,7 +246,8 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Explorer",
 	"Auxilia",
 	"Camp Follower",
-	"Legion Slave"
+	"Legion Slave",
+	"Off-Duty Legionary"
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(

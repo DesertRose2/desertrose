@@ -106,7 +106,7 @@ Needs whitelist
 Centurion
 */
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	title = "Legion Optio Centurion"
+	title = "Legion Centurion"
 	flag = F13CENTURION
 	head_announce = list("Security")
 	total_positions = 1
@@ -1114,7 +1114,7 @@ Camp Follower
 	loadout_options = list(
 		/datum/outfit/loadout/campfollowermatron,
 		/datum/outfit/loadout/campfollowerhealer,
-		/*/datum/outfit/loadout/campfolloweroffduty*/
+		/datum/outfit/loadout/campfolloweroffduty
 	)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
