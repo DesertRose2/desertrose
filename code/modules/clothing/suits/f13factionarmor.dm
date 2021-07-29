@@ -579,12 +579,14 @@
 	name = "fieldscribe suit"
 	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
+	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
+	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/f13/elder
