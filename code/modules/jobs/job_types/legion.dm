@@ -1228,10 +1228,10 @@ Off-Duty Legionary
 	title = "Off-Duty Legionary"
 	flag = F13LEGIONOFFDUTY
 	total_positions = 8
-	spawn_positions = 8
+	spawn_positions = 4
 	description = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
 	supervisors = "Those who share your rank or higher that are on duty."
-	outfit = /datum/job/CaesarsLegion/Legionnaire/offduty
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/offduty
 
 	loadout_options = list(
 		/datum/outfit/loadout/offcent,
