@@ -651,7 +651,6 @@
 				/obj/item/kinetic_crusher,
 				/obj/item/nullrod/claymore/chainsaw_sword,
 				/obj/item/melee/powerfist,
-				/obj/item/melee/transforming/energy/axe,
 				/obj/item/gun/ballistic/revolver/ballisticfist,
 				/obj/item/twohanded/sledgehammer/supersledge,
 				/obj/item/shishkebabpack,
@@ -1829,7 +1828,8 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/bastard,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
-		/obj/item/book/granter/crafting_recipe/blueprint/deagle
+		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
+		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHigh
@@ -1840,7 +1840,8 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
-		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster
+		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
+		/obj/item/book/granter/crafting_recipe/blueprint/wattz2k
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics
