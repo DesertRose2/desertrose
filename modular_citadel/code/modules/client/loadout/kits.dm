@@ -100,7 +100,7 @@
 /obj/item/storage/box/large/custom_kit/aliceprice/PopulateContents()
 	new /obj/item/modkit/riotgear/price(src)
 	new /obj/item/modkit/riotgear_helmet/price(src)
-	new /obj/item/storage/belt/holster/ranger4570
+	new /obj/item/storage/belt/holster/ranger4570bayonet
 
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()

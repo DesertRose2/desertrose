@@ -504,7 +504,7 @@
 	item_color = "elder"
 	minimize_when_attached = TRUE
 
-//Ranks
+//NCRRanks
 
 /obj/item/clothing/accessory/ncr
 	name = "(O-6) Colonel rank pin"
@@ -610,8 +610,8 @@
 /obj/item/clothing/accessory/ranger/LT
 	name = "'Ranger-Lieutenant' rank pins"
 	desc = "A Ranger-Lieutenant should wear this."
-	icon_state = "lieutenantrank"
-	item_color = "lieutenantrank"
+	icon_state = "firstlieutenantrank"
+	item_color = "firstlieutenantrank"
 
 /obj/item/clothing/accessory/ranger/CPT
 	name = "'Ranger-Captain' rank pins"
@@ -636,3 +636,29 @@
 	desc = "A Chief Ranger should wear this."
 	icon_state = "colonelrank" //TO-DO: Add a new sprite
 	item_color = "colonelrank"
+
+//LegionRanks
+
+/obj/item/clothing/accessory/legion/cent
+	name = "Legion Centurion rank pins"
+	desc = "A pin for a Centurion."
+	icon_state = "off-duty-cent-pin"
+	item_color = "off-duty-cent-pin"
+
+/obj/item/clothing/accessory/legion/officer
+	name = "Legion Officer rank pins"
+	desc = "A pin for the Veterans and Decani within the Legion."
+	icon_state = "off-duty-officer-pin"
+	item_color = "off-duty-officer-pin"
+
+/obj/item/clothing/accessory/legion/prime
+	name = "Legion Prime  rank pins"
+	desc = "A pin for the Primes within the Legion."
+	icon_state = "off-duty-prime-pin"
+	item_color = "off-duty-prime-pin"
+
+/obj/item/clothing/accessory/legion/explorer
+	name = "Legion Explorer Corps pins"
+	desc = "A pin for the Veterans and Decani within the Legion."
+	icon_state = "off-duty-explorer-corps-pin"
+	item_color = "off-duty-explorer-corps-pin"

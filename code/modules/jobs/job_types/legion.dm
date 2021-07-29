@@ -106,7 +106,7 @@ Needs whitelist
 Centurion
 */
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	title = "Legion Optio Centuriae"
+	title = "Legion Optio Centurion"
 	flag = F13CENTURION
 	head_announce = list("Security")
 	total_positions = 1
@@ -135,7 +135,7 @@ Centurion
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	name = "Legion Optio Centuriae"
+	name = "Legion Centurion"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
 	mask =			/obj/item/clothing/mask/bandana/legcenturion
@@ -1114,7 +1114,7 @@ Camp Follower
 	loadout_options = list(
 		/datum/outfit/loadout/campfollowermatron,
 		/datum/outfit/loadout/campfollowerhealer,
-		/datum/outfit/loadout/campfolloweroffduty
+		/*/datum/outfit/loadout/campfolloweroffduty*/
 	)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
@@ -1163,7 +1163,7 @@ Camp Follower
 	)
 
 /datum/outfit/loadout/campfolloweroffduty
-	name = "Off-Duty Legionary"
+	name = "Retired Legionary"
 	uniform = /obj/item/clothing/under/f13/legskirt
 	mask = /obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
@@ -1220,3 +1220,71 @@ Slave
 		/obj/item/storage/bag/plants=1,
 		/obj/item/clothing/under/f13/legslavef=1,
 		/obj/item/radio=1)
+
+/*
+Off-Duty Legionary
+*/
+/datum/job/CaesarsLegion/Legionnaire/offduty
+	title = "Off-Duty Legionary"
+	flag = F13LEGIONOFFDUTY
+	total_positions = 8
+	spawn_positions = 8
+	description = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
+	supervisors = "Those who share your rank or higher that are on duty."
+	outfit = /datum/job/CaesarsLegion/Legionnaire/offduty
+
+	loadout_options = list(
+		/datum/outfit/loadout/offcent,
+		/datum/outfit/loadout/offdecvet,
+		/datum/outfit/loadout/offprime
+		//datum/outfit/loadout/offexpven
+		)
+
+/datum/outfit/job/CaesarsLegion/Legionnaire/offduty
+	name =	"Off-Duty Legionary"
+	jobtype =	"Off-Duty Legionary"
+	uniform =	/obj/item/clothing/under/f13/legskirt
+	ears =	/obj/item/radio/headset/headset_legion
+	id = 	/obj/item/card/id/dogtag/legrecruit
+	r_hand =	/obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/claymore/machete=1,
+		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/storage/bag/money/small/legion=1,
+		)
+
+/datum/outfit/loadout/offcent
+	name =	"Centurion"
+	neck =	/obj/item/clothing/mask/bandana/legcenturion
+	belt =	/obj/item/claymore/machete/spatha
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/clothing/accessory/legion/cent=1
+		)
+
+/datum/outfit/loadout/offdecvet
+	name = 	"Decani or Veteran"
+	mask =	/obj/item/clothing/mask/bandana/oldredbandana
+	backpack_contents = list(
+		/obj/item/claymore/machete/gladius=1,
+		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/clothing/accessory/legion/officer=1
+		)
+
+/datum/outfit/loadout/offprime
+	name =	"Prime"
+	mask =	/obj/item/clothing/mask/bandana/legdecan
+	backpack_contents = list(
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/clothing/accessory/legion/prime=1
+		)
+
+/datum/outfit/loadout/offexpven
+	name =	"Explorer Corps"
+	neck =	/obj/item/clothing/neck/cloak/grey
+	backpack_contents = list(
+		/obj/item/claymore/machete/gladius=1,
+		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/clothing/accessory/legion/explorer=1
+		)
