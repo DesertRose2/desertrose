@@ -789,6 +789,16 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/tricarbine)
 
+/obj/item/book/granter/crafting_recipe/blueprint/wattz2k
+	name = "wattz 2000 laser rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/wattz2k)
+
+/obj/item/book/granter/crafting_recipe/blueprint/commando
+	name = "commando carbine blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/commando)
+
 /obj/item/book/granter/trait/chemistry
 	name = "Chemistry for Wastelanders"
 	desc = "A useful book on chemistry."
@@ -813,6 +823,14 @@
 	granted_trait = TRAIT_SURGERY_MID
 	traitname = "intermediate surgery"
 	remarks = list("Don't forget your instruments inside patients...", "Be careful when cutting...", "Don't operate with dirty hands...")
+
+/obj/item/book/granter/trait/highsurgery
+	name = "Advanced Surgery Manual"
+	desc = "A very useful book on surgery."
+	oneuse = TRUE
+	granted_trait = TRAIT_SURGERY_HIGH
+	traitname = "advanced surgery"
+	remarks = list("Negligence lawsuits are bad for buisness...", "Chlorine gas is not a healthy sedative...", "Pharmacists are just drug dealers with a license...")
 
 /obj/item/book/granter/trait/tinkering
 	name = "Tinkering for Wastelander"

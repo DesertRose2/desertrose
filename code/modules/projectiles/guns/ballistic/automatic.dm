@@ -1210,6 +1210,14 @@
 	suppressor_x_offset = 26
 	suppressor_y_offset = 31
 
+/obj/item/gun/ballistic/automatic/m1carbine/ncr
+	name = "NCR m1 carbine"
+	desc = "The M1 Carbine is a renowned carbine that's been in service since WW2. This varient seems to sport a few modernizations alongside an NCR design in brahmin leather on its stock."
+	icon_state = "ncr-m1carbine"
+	can_automatic = FALSE
+	untinkerable = TRUE
+	extra_damage = 4
+
 /obj/item/gun/ballistic/automatic/m1carbine/compact
 	name = "m1a1 carbine"
 	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."

@@ -694,7 +694,8 @@
 	name = "10mm SMG"
 	result = /obj/item/gun/ballistic/automatic/smg10mm
 	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/advanced_crafting_components/receiver = 1
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/crafting/goodparts = 2
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
@@ -708,12 +709,23 @@
 	result = /obj/item/gun/ballistic/automatic/greasegun
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/crafting/metalparts = 3
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
+
+//commando carbine
+/datum/crafting_recipe/commando
+	name = "Commando Carbine"
+	result = /obj/item/gun/ballistic/automatic/commando
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/plastic = 1,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/crafting/metalparts = 3
+				)
 
 //brush gun
 /datum/crafting_recipe/brush
@@ -809,6 +821,19 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
+
+//wattz 2k
+/datum/crafting_recipe/wattz2k
+	name = "Wattz 2000 Rifle"
+	result = /obj/item/gun/energy/laser/wattz2k
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/advanced_crafting_components/conductors = 2,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/advanced_crafting_components/lenses = 1,
+				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/stack/crafting/electronicparts = 2
+				)
 
 //plasma rifle
 /datum/crafting_recipe/plasmarifle

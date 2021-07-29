@@ -128,8 +128,8 @@
 /obj/item/clothing/suit/armor/f13/exile/bosexile
 	name = "modified Brotherhood armor"
 	desc = "(IV) A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal."
-	icon_state = "brotherhoodexile"
-	item_state = "brotherhoodexile"
+	icon_state = "brotherhood_armor_outcast"
+	item_state = "brotherhood_armor_outcast"
 
 /obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize()
 	. = ..()
@@ -579,12 +579,14 @@
 	name = "fieldscribe suit"
 	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
+	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
+	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/f13/elder
