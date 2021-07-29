@@ -52,7 +52,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
 
-	"Legion Optio Centuriae",
+	"Legion Centurion",
 	"Legion Venator",
 
 	"Overseer",
@@ -232,7 +232,7 @@ GLOBAL_LIST_INIT(den_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
-	"Legion Optio Centuriae",
+	"Legion Centurion",
 	"Legion Venator"
 ))
 
