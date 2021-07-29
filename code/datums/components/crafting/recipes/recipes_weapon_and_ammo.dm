@@ -726,6 +726,11 @@
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 3
 				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
 
 //brush gun
 /datum/crafting_recipe/brush
@@ -834,6 +839,11 @@
 				/obj/item/stack/crafting/metalparts = 3,
 				/obj/item/stack/crafting/electronicparts = 2
 				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
 
 //plasma rifle
 /datum/crafting_recipe/plasmarifle
