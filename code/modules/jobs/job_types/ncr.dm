@@ -655,7 +655,7 @@ Rear Echelon
 	head = 			/obj/item/clothing/head/f13/ncr
 	neck = 			/obj/item/storage/belt/holster/ncr
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = 	/obj/item/gun/ballistic/automatic/m1carbine
+	suit_store = 	/obj/item/gun/ballistic/automatic/m1carbine/ncr
 	glasses = 		null
 	belt = 			/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
@@ -902,7 +902,7 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
@@ -919,7 +919,7 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	gloves = /obj/item/clothing/gloves/patrol/insulated
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
