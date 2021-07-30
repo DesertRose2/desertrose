@@ -859,7 +859,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 //Followers of the Apocalypse
 /obj/effect/landmark/start/f13/followersadministrator
-	name = "Followers Administrator"
+	name = "Followers Lead Practitioner"
 
 /obj/effect/landmark/start/f13/followersdoctor
 	name = "Followers Doctor"

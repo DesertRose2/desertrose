@@ -33,9 +33,10 @@
 
 /*
 Administrator
+*/
 
 /datum/job/followers/f13leadpractitioner
-	title = "Followers Administrator"
+	title = "Followers Lead Practitioner"
 	flag = F13LEADPRACTITIONER
 	department_flag = FOLLOWERS
 	head_announce = list("Security")
@@ -43,7 +44,7 @@ Administrator
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "No one."
-	description = "You are the Follower Administrator. You are the administrator for the on-site followers. While there is no tradtional chain of command that is used, you have been chosen to lead due to your expert knowledge in the field of medicine and other general knowledges. Make sure that the supplies donated are being put to use, help secure more donations, and fill in as needed whenever short staffed or if the clinic is busy."
+	description = "You are a Lead Practitioner of the Followers. You are the supervisor for the on-site followers. While there is no tradtional chain of command that is used, you have been chosen to lead due to your expert knowledge in the field of medicine and other general knowledges. Make sure that the supplies donated are being put to use, help secure more donations, and fill in as needed whenever short staffed or if the clinic is busy."
 	forbids = "Causing harm to others except in times of self-defense."
 	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. Legion is our mistake and its our job to correct the mistake by speaking of the truth, but recognize that the best way to fight the legion is to teach them and sometimes that can mean helping them.Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
 	selection_color = "#FF95FF"
@@ -89,7 +90,7 @@ Administrator
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/techno=1)
 
-
+/*
 Professor
 
 /datum/job/followers/f13Professor
