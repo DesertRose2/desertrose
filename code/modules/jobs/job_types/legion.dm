@@ -386,9 +386,9 @@ Decanii
 
 /datum/outfit/loadout/vetdecan
 	name = "Line Officer"
-	l_hand = /obj/item/gun/ballistic/shotgun/kar98k
+	l_hand = /obj/item/gun/ballistic/automatic/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3
+		/obj/item/ammo_box/magazine/greasegun=2
 	)
 
 //Prime Decanus
@@ -698,9 +698,9 @@ Veteran Legionary
 
 /datum/outfit/loadout/vetscout
 	name = "Assassin (Scout)"
-	suit_store = /obj/item/gun/ballistic/shotgun/kar98k
+	suit_store = /obj/item/gun/ballistic/automatic/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3,
+		/obj/item/ammo_box/magazine/greasegun=2,
 		/obj/item/attachments/scope=1,
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/c45rev=3)

@@ -549,6 +549,7 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = FALSE
 	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
@@ -566,6 +567,7 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = FALSE
 	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
@@ -582,6 +584,7 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = FALSE
 	fire_delay = 3
 	can_scope = TRUE
 	scope_state = "leveraction_scope"
