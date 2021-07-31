@@ -1280,7 +1280,7 @@
 	name = "commando battle rifle"
 	desc = "An integrally suppressed bolt action carbine. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy on a rifle firing .45 APC; specifically .45 stick-mags that are side-mounted.. for some reason."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_state = "destroyer-carbine"
+	icon_state = "destroyer_carbine"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	extra_damage = 4
