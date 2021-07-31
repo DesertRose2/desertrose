@@ -872,3 +872,10 @@
 	icon_state = "remnant"
 	item_state = "remnant"
 	armor = list("tier" = 6, "energy" = 75, "bomb" = 70, "bio" = 80, "rad" = 80, "fire" = 80, "acid" = 50)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/Ltcarrier
+	name = "Lieutenant Plate Carrier"
+	desc = "(VII) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
+	icon_state = "lt_pc"
+	item_state = "lt_pc"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
