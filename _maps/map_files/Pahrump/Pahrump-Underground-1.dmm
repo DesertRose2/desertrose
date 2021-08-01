@@ -15330,13 +15330,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood/operations)
-"oZl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/tunnel)
 "oZF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/one_barrel,
@@ -36223,8 +36216,8 @@ uoO
 uoO
 jmN
 lHS
-oZl
-oUQ
+mzn
+xcp
 xcp
 cFL
 xDr
@@ -36480,9 +36473,9 @@ uoO
 uoO
 jmN
 mqy
-yeg
-eXy
-eKZ
+uEu
+oUQ
+oUQ
 jmN
 vpz
 xDr
@@ -36736,10 +36729,10 @@ uoO
 uoO
 uoO
 jmN
-jmN
-jmN
-jmN
-jmN
+yeg
+mzn
+eXy
+eKZ
 jmN
 xDr
 xDr
@@ -36992,11 +36985,11 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-eLE
+hQE
+hQE
+hQE
+hQE
+hQE
 jmN
 qJM
 xDr
