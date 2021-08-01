@@ -145,6 +145,7 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
 	time = 40
 	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL
 	always_availible = FALSE
 
 /datum/crafting_recipe/cateye
@@ -156,6 +157,7 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
 	time = 20
 	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL
 	always_availible = FALSE
 
 /datum/crafting_recipe/buffout
