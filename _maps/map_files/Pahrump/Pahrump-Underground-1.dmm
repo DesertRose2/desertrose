@@ -15330,13 +15330,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood/operations)
-"oZl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/tunnel)
 "oZF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/one_barrel,
@@ -19567,9 +19560,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "tbE" = (
-/obj/structure/simple_door/bunker,
-/turf/open/space/basic,
-/area/f13/tunnel)
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/followers)
 "tcd" = (
 /obj/structure/chair/f13chair1,
 /obj/machinery/light/small{
@@ -25446,7 +25445,7 @@ sNA
 gYf
 cUS
 bOP
-hfS
+tbE
 ttF
 aHw
 uoO
@@ -36217,10 +36216,10 @@ uoO
 uoO
 jmN
 lHS
-oZl
-oUQ
+mzn
 xcp
-tbE
+xcp
+cFL
 xDr
 xDr
 xDr
@@ -36474,9 +36473,9 @@ uoO
 uoO
 jmN
 mqy
-yeg
-eXy
-eKZ
+uEu
+oUQ
+oUQ
 jmN
 vpz
 xDr
@@ -36730,10 +36729,10 @@ uoO
 uoO
 uoO
 jmN
-jmN
-jmN
-jmN
-jmN
+yeg
+mzn
+eXy
+eKZ
 jmN
 xDr
 xDr
@@ -36986,11 +36985,11 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-eLE
+hQE
+hQE
+hQE
+hQE
+hQE
 jmN
 qJM
 xDr

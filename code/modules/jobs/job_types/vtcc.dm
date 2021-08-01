@@ -3,8 +3,8 @@
 	selection_color = "#ADD8E6"
 	faction = "VTCC"
 	exp_type = EXP_TYPE_VTCC
-	access = list(ACCESS_BAR)
-	minimal_access = list(ACCESS_BAR)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY)
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY)
 
 /datum/outfit/job/vtcc/
 	name = "VTCCdatums"

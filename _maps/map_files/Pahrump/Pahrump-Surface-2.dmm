@@ -10420,11 +10420,12 @@
 "gqE" = (
 /obj/structure/ladder/unbreakable{
 	desc = "A normal wasteland well with a ladder inside.";
-	icon = 'icons/obj/Ritas.dmi';
-	icon_state = "wellwheel";
 	id = "VC4";
 	name = "ladder well";
 	pixel_x = -18
+	},
+/obj/structure/sink/well{
+	pixel_x = -15
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -41372,8 +41373,8 @@ lhz
 lhz
 lhz
 lhz
-whS
-whS
+uul
+uul
 vDd
 sfB
 yiF
