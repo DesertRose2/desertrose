@@ -19567,9 +19567,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "tbE" = (
-/obj/structure/simple_door/bunker,
-/turf/open/space/basic,
-/area/f13/tunnel)
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/followers)
 "tcd" = (
 /obj/structure/chair/f13chair1,
 /obj/machinery/light/small{
@@ -25446,7 +25452,7 @@ sNA
 gYf
 cUS
 bOP
-hfS
+tbE
 ttF
 aHw
 uoO
@@ -36220,7 +36226,7 @@ lHS
 oZl
 oUQ
 xcp
-tbE
+cFL
 xDr
 xDr
 xDr
