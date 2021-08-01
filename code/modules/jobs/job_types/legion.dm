@@ -22,8 +22,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
-/*	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)*/ //I have no clue how to fucking fix this, it keeps breaking legion crafting yet should code-wise works and compiles fine.
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
