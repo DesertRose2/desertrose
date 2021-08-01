@@ -1256,7 +1256,7 @@
 	icon_state = "delisle"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
-	extra_damage = 3
+	extra_damage = 2
 	extra_penetration = 0.06
 	fire_delay = 4.5
 	w_class = WEIGHT_CLASS_BULKY
@@ -1275,6 +1275,24 @@
 	scope_y_offset = 14
 	semi_auto = TRUE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/automatic/commando/dmr
+	name = "commando battle rifle"
+	desc = "An integrally suppressed bolt action carbine. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy on a rifle firing .45 APC; specifically .45 stick-mags that are side-mounted.. for some reason."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon_state = "destroyer_carbine"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/greasegun
+	extra_damage = 4
+	extra_penetration = 0.1
+	fire_delay = 6
+	burst_size = 1
+	can_automatic = FALSE
+	can_scope = TRUE
+	scope_state = "lasmusket_scope"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	semi_auto = TRUE
 
 /obj/item/gun/ballistic/automatic/mp5
 	name = "mp5sd"

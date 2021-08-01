@@ -386,9 +386,9 @@ Decanii
 
 /datum/outfit/loadout/vetdecan
 	name = "Line Officer"
-	l_hand = /obj/item/gun/ballistic/shotgun/kar98k
+	l_hand = /obj/item/gun/ballistic/automatic/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3
+		/obj/item/ammo_box/magazine/greasegun=2
 	)
 
 //Prime Decanus
@@ -698,12 +698,12 @@ Veteran Legionary
 
 /datum/outfit/loadout/vetscout
 	name = "Assassin (Scout)"
-	suit_store = /obj/item/gun/ballistic/shotgun/kar98k
+	suit_store = /obj/item/gun/ballistic/automatic/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3,
+		/obj/item/ammo_box/magazine/greasegun=2,
 		/obj/item/attachments/scope=1,
-		/obj/item/gun/ballistic/revolver/revolver45=1,
-		/obj/item/ammo_box/c45rev=3)
+		/obj/item/gun/ballistic/revolver/revolver44=1,
+		/obj/item/ammo_box/m44=2)
 
 /datum/outfit/loadout/vetshock
 	name = "Cataegis (Shock)"
@@ -980,9 +980,9 @@ Explorer
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket = 		/obj/item/binoculars
 	l_pocket = 		/obj/item/attachments/scope
-	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = 	/obj/item/gun/ballistic/automatic/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44=3,
+		/obj/item/ammo_box/magazine/greasegun=2,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
@@ -1004,7 +1004,7 @@ Explorer
 		/obj/item/ammo_box/magazine/greasegun=1,
 		/obj/item/grenade/plastic=1,
 		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
 		/obj/item/storage/bag/money/small/legion=1,
 		/obj/item/restraints/handcuffs=1)
