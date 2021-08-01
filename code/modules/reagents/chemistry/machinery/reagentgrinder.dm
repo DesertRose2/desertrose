@@ -18,6 +18,14 @@
 	var/limit = 10
 	var/speed = 1
 	var/list/holdingitems
+	var/blacklistchems = list(
+	/obj/item/reagent_containers/pill/patch/turbo,
+	/obj/item/reagent_containers/pill/patch/medx,
+	/obj/item/reagent_containers/pill/buffout,
+	/obj/item/reagent_containers/pill/cateye,
+	/obj/item/reagent_containers/pill/patch/jet,
+	/obj/item/reagent_containers/spray/hydra
+	)
 
 	var/static/radial_examine = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_examine")
 	var/static/radial_eject = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_eject")
@@ -97,6 +105,9 @@
 
 	if(panel_open) //Can't insert objects when its screwed open
 		return TRUE
+
+	if (is_type_in_list(I, blacklistchems))
+		return
 
 	if (istype(I, /obj/item/reagent_containers) && !(I.item_flags & ABSTRACT) && I.is_open_container())
 		var/obj/item/reagent_containers/B = I

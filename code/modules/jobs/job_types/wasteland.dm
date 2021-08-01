@@ -89,7 +89,7 @@ Great Khan
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs=1, \
 		/obj/item/reagent_containers/pill/patch/jet=2, \
-		/obj/item/reagent_containers/syringe/medx=1, \
+		/obj/item/reagent_containers/pill/patch/medx=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = pick(

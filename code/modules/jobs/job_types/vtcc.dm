@@ -791,7 +791,7 @@
 /datum/outfit/loadout/addict
 	name = "Addict"
 	backpack_contents = list(
-	/obj/item/reagent_containers/syringe/medx=1,
+	/obj/item/reagent_containers/pill/patch/medx=1,
 	/obj/item/reagent_containers/pill/buffout = 2,
 	/obj/item/reagent_containers/pill/lsd = 2,
 	/obj/item/reagent_containers/pill/patch/jet = 2,
