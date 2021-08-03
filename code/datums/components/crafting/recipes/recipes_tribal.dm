@@ -218,6 +218,7 @@
 
 /datum/crafting_recipe/warclub
 	name = "Carve Wooden Warclub"
+	always_availible = FALSE
 	result = /obj/item/claymore/machete/warclub
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
@@ -275,6 +276,7 @@
 
 /datum/crafting_recipe/warmace
 	name = "Carve Wooden Warmace"
+	always_availible = FALSE
 	result = /obj/item/twohanded/sledgehammer/warmace
 	time = 100
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 20,
@@ -303,6 +305,7 @@
 
 /datum/crafting_recipe/arrowap
 	name = "Sturdy Arrow"
+	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/ap
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -313,6 +316,7 @@
 
 /datum/crafting_recipe/arrowpoison
 	name = "Poison Arrow"
+	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/poison
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
@@ -323,6 +327,7 @@
 
 /datum/crafting_recipe/arrowburn
 	name = "Burn Posion Arrow"
+	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/burning
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
