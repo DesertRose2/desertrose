@@ -208,7 +208,7 @@
 	result_item = /obj/item/clothing/suit/armor/f13/legion/venator/ursus
 
 /obj/item/modkit/harebellscout
-	name = "Harebell scout beret"
+	name = "Harebell scout beret modkit"
 	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout)
 	result_item = /obj/item/clothing/head/beret/tina_beret
 
@@ -221,6 +221,11 @@
 	name = "Hooded recon modkit"
 	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
 	result_item = /obj/item/clothing/suit/hooded/f13/hooded_recon
+
+/obj/item/modkit/lieutenantplatecarrier
+	name = "Lieutenant platecarrier modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant)
+	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm
