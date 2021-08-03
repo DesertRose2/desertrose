@@ -523,13 +523,19 @@ obj/item/shield/riot/bullet_proof
 		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
 	add_fingerprint(user)
 
-/obj/item/shield/riot/tribal
+/obj/item/shield/tribal
 	name = "tribal shield"
 	desc = "An oval shaped shield made of strong wood and brahmin skin."
 	icon_state = "btribal"
 	item_state = "btribal"
+	force = 20
+	throwforce = 5
+	throw_speed = 2
+	throw_range = 3
+	block_chance = 40
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	w_class = WEIGHT_CLASS_BULKY
 
 /obj/item/shield/riot/tribal/nightstalker
 	name = "nightstalker shield"
