@@ -6214,11 +6214,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/f13/wood,
 /area/f13/building)
-"dLg" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/vending/kink,
-/turf/open/floor/wood/f13/old,
-/area/f13/city)
 "dLl" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/ground/outside/desert,
@@ -60883,7 +60878,7 @@ fyf
 diP
 fyf
 kEh
-dLg
+uSz
 eTJ
 ghE
 ahK
