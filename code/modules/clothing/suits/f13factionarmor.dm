@@ -124,7 +124,7 @@
 
 /obj/item/clothing/suit/armor/f13/raider/raider_duster
 	name = "raider desert combat armor"
-	desc = "(IV)An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
+	desc = "(IV) An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
 	icon_state = "reptiliatenebris"
 	item_state = "reptiliatenebris"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
@@ -135,7 +135,7 @@
 
 /obj/item/clothing/suit/armor/f13/raider/templar
 	name = "raider knight armor"
-	desc = "(IV)A set of old rusty armor with black and red tabard strapped to it."
+	desc = "(IV) A set of old rusty armor with black and red tabard strapped to it."
 	icon_state = "templar"
 	item_state = "templar"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
