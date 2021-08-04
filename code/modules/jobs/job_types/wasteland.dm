@@ -53,7 +53,7 @@ Great Khans
 	faction = "Wastelander"	
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you can be trusted. You can lead, you understand, you're not some run of the mill Khan.. You've earned your stripes. You put blood down for the khans. Your job is to keep your boys and girls safe, LEAD them and show them how khans roll."
+	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
 	supervisors = "Your pride"
 	selection_color = "#f86a29"
 
