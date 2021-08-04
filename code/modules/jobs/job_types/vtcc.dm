@@ -626,6 +626,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/card/data/wpermit
+	r_hand = /obj/item/book/granter/trait/selection
 
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
@@ -762,6 +763,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
+	r_hand = /obj/item/book/granter/trait/selection
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
