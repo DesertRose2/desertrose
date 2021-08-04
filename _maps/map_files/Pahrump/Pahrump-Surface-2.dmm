@@ -7068,8 +7068,8 @@
 /area/f13/wasteland)
 "esj" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/syringe/medx,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /obj/effect/spawner/lootdrop/clothing_middle,
@@ -11130,7 +11130,7 @@
 /obj/item/pen,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "gMZ" = (
@@ -19869,7 +19869,7 @@
 /area/f13/building)
 "lVa" = (
 /obj/structure/table,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -24698,7 +24698,7 @@
 /area/f13/village)
 "phz" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pig" = (
@@ -30307,7 +30307,7 @@
 	pixel_y = 15
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
@@ -31511,8 +31511,8 @@
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/medspray/synthflesh,
 /obj/item/reagent_containers/medspray/synthflesh,
-/obj/item/reagent_containers/syringe/medx,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -31787,7 +31787,7 @@
 /area/f13/village)
 "txO" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -33286,7 +33286,7 @@
 /area/f13/wasteland)
 "urt" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
 "uru" = (
@@ -36222,7 +36222,7 @@
 "wgv" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "wgO" = (
