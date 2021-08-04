@@ -76,3 +76,11 @@
 	list_reagents = null
 	icon_state = "bandaid_healingpowder"
 	self_delay = 0
+
+/obj/item/reagent_containers/pill/patch/medx
+	name = "syringe (med-x)"
+	desc = "Contains Med-X, a powerful analgesic drug that increases the user's damage resistance. Highly addictive, and prolonged presence in the body comes with severe side effects."
+	list_reagents = list(/datum/reagent/medicine/medx = 10)
+	icon = 'icons/obj/syringe.dmi'
+	icon_state = "medipen"
+	item_state = "medipen"
