@@ -15,6 +15,7 @@
 	id =		null
 	ears =		/obj/item/radio/headset/headset_med
 	uniform =	/datum/outfit/job/followers/f13followers
+	backpack_contents = /obj/item/encryptionkey/headset_vault
 
 /datum/outfit/job/followers/f13followers
 	name =		"Followers"
