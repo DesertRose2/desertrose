@@ -13,9 +13,8 @@
 	jobtype =	/datum/job/followers/
 	shoes =		/obj/item/clothing/shoes/sneakers/black
 	id =		null
-	ears =		/obj/item/radio/headset/headset_med
+	ears =		/obj/item/radio/headset/headset_vault/followers
 	uniform =	/datum/outfit/job/followers/f13followers
-	backpack_contents = /obj/item/encryptionkey/headset_vault
 
 /datum/outfit/job/followers/f13followers
 	name =		"Followers"
