@@ -5,14 +5,17 @@
 	pixel_x = -128
 	pixel_y = -64
 	layer = 4
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	anchored = TRUE
+	density = TRUE
 	var/engine = FALSE
-	var/locked = TRUE
+	var/locked = FALSE
 	var/inFly = FALSE
 	var/obj/machinery/camera/portable/builtInCamera
 
 /obj/vertibird/New()
 	var/obj/item/start = new /obj/landmark/vertibird()
-	start.name = "Poseidon Oil 057 - 'The Freezer'"
+	start.name = "Vertibird Initial Point"
 	start.loc = loc
 	vertibird = src
 
@@ -26,7 +29,7 @@
 
 	getIn(user)
 
-/obj/vertibird/proc/toggleLock(mob/user)
+/obj/vertibird/proc/toggleLock(var/mob/user)
 	if(locked)
 		locked = FALSE
 		to_chat(user, "You unlock the vertibird.")
@@ -68,8 +71,8 @@ obj/vertibird/proc/flew(targetX, targetY, targetZ)
 	y = targetY
 	z = targetZ
 
-	playsound(src, "sound/f13machines/vertibird_land.ogg", 100)
-	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_land.ogg", 50)
+	playsound(src, "sound/f13machines/vertibird_stop.ogg", 100)
+	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_stop.ogg", 50)
 
 	spawn(100)
 		inFly = FALSE
@@ -87,7 +90,7 @@ obj/vertibird/proc/beginFly()
 obj/vertibird/proc/flyGlobal()
 	to_chat(world, "<font size='3' color='orange'>The ever increasing roar of an aircraft tearing through the skies above enters your ears.</font>")
 	var/sound/global_sound
-	global_sound = sound("sound/f13machines/vertibird_global.ogg", repeat = 0, wait = 0, channel = 776)
+	global_sound = sound("sound/effects/flyby.ogg", repeat = 0, wait = 0, channel = 776)
 	global_sound.priority = 250
 	global_sound.status = SOUND_UPDATE|SOUND_STREAM
 
@@ -96,13 +99,13 @@ obj/vertibird/proc/fly(targetX, targetY, targetZ)
 	if(inFly)
 		return
 
-	playsound(src, "sound/f13machines/vertibird_takeoff.ogg", 100)
-	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_takeoff.ogg", 50)
+	playsound(src, "sound/f13machines/vertibird_start.ogg", 100)
+	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_start.ogg", 50)
 	inFly = TRUE
 	icon_state = "vb-fast"
 	spawn(60)
-		playsound(src, "sound/f13machines/vertibird_local.ogg", 100)
-		playsound(vertibirdEnterZone, "sound/f13machines/vertibird_local.ogg", 50)
+		playsound(src, "sound/effects/flyby.ogg", 100)
+		playsound(vertibirdEnterZone, "sound/effects/flyby.ogg", 50)
 
 		flyGlobal()
 
