@@ -32571,10 +32571,10 @@
 	color = "000000"
 	},
 /obj/structure/table,
-/obj/item/storage/box/ids/follower,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/storage/box/ids/followers,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "reddirtyfull"
 	},
