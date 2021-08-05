@@ -1287,4 +1287,4 @@ Off-Duty Legionary
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/clothing/accessory/legion/explorer=1
-		
+		)
