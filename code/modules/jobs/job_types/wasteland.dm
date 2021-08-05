@@ -43,8 +43,77 @@ Coven Stuff
 		/obj/item/reagent_containers/glass/bottle/FEV_solution=1
 		)
 /*
-Great Khan
+Great Khans
 */
+/datum/job/wasteland/f13genghis
+	title = "Genghis Khan"
+	flag = F13GENGHIS
+	department_head = list("Captain")
+	head_announce = list("Security")
+	faction = "Wastelander"	
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
+	supervisors = "Your pride"
+	selection_color = "#f86a29"
+
+	outfit = /datum/outfit/job/wasteland/f13genghis
+
+	access = list(ACCESS_KHAN)
+	minimal_access = list(ACCESS_KHAN)
+
+	loadout_options = list(
+	/datum/outfit/loadout/classic,
+	/datum/outfit/loadout/marksman
+	)
+
+/datum/outfit/job/wasteland/f13genghis
+	name = "Genghis Khan"
+	jobtype = /datum/job/wasteland/f13genghis
+	id = 		/obj/item/card/id/khantattoo
+	ears = 		/obj/item/radio/headset
+	belt = 		/obj/item/claymore/machete/reinforced
+	backpack =	/obj/item/storage/backpack/satchel/explorer
+	satchel = 	/obj/item/storage/backpack/satchel/explorer
+	uniform = /obj/item/clothing/under/f13/khan
+
+/datum/outfit/job/wasteland/f13genghis/pre_equip(mob/living/carbon/human/H)
+	..()
+	r_hand = /obj/item/book/granter/trait/selection
+	r_pocket = /obj/item/flashlight/flare
+	l_pocket = /obj/item/storage/bag/money/small/khan
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs=1, \
+		/obj/item/restraints/legcuffs/bola=1, \
+		/obj/item/reagent_containers/pill/patch/jet=2, \
+		/obj/item/reagent_containers/pill/patch/medx=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan/battlecoat
+	head = /obj/item/clothing/head/helmet/f13/khan/fullhelm
+	shoes = /obj/item/clothing/shoes/f13/military/plated
+
+/datum/outfit/job/wasteland/f13genghis/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	if(!H.gang)
+		var/datum/gang/greatkhans/GK = GLOB.greatkhans
+		GLOB.all_gangs |= GK
+		GK.add_member(H)
+		H.gang = GK
+
+/datum/outfit/loadout/classic
+	name = "Classic"
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol127
+	backpack_contents = list(
+		/obj/item/ammo_box/a556/stripper=2)
+
+/datum/outfit/loadout/marksman
+	name = "Marksman"
+	l_hand =	/obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308=2)
 
 /datum/job/wasteland/f13pusher
 	title = "Great Khan"
@@ -52,8 +121,8 @@ Great Khan
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = "Wastelander"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 5
+	spawn_positions = 5
 	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
 	supervisors = "your gang leadership"
 	selection_color = "#ff915e"
@@ -156,18 +225,21 @@ Raider
 	access = list()
 	minimal_access = list()
 	loadout_options = list(
-	/datum/outfit/loadout/raider_supafly,
-	/datum/outfit/loadout/raider_yankee,
-	/datum/outfit/loadout/raider_blast,
-	/datum/outfit/loadout/raider_sadist,
-	/datum/outfit/loadout/raider_painspike,
-	/datum/outfit/loadout/raider_badlands,
+	/datum/outfit/loadout/mercenary,
+	/datum/outfit/loadout/raider_boss,
+	/datum/outfit/loadout/conartist,
+	/datum/outfit/loadout/quack_doctor,
+	/datum/outfit/loadout/fiend,
+	/datum/outfit/loadout/highway,
+	/datum/outfit/loadout/desperado,
+	/datum/outfit/loadout/jabroni,
+	/datum/outfit/loadout/ronin,
+	/datum/outfit/loadout/knight,
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
-	/datum/outfit/loadout/raider_sheriff,
-	/datum/outfit/loadout/raider_vault,
-	/datum/outfit/loadout/raider_mafia)
+	/datum/outfit/loadout/raider_vault
+	)
 
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
@@ -243,131 +315,174 @@ Raider
 	H.social_faction = "Raiders"
 	H.verbs |= /mob/living/proc/creategang
 
-/datum/outfit/loadout/raider_supafly
-	name = "Supa-fly"
-	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
-	head = /obj/item/clothing/head/helmet/f13/raider/supafly
+/datum/outfit/loadout/mercenary
+	name = "Mercenary"
+	suit = /obj/item/clothing/suit/armor/f13/combat/swat
+	l_hand = /obj/item/gun/ballistic/automatic/mini_uzi
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/mini_uzi=1,
 		/obj/item/ammo_box/magazine/uzim9mm=3,
+		/obj/item/kitchen/knife/trench=1,
+		/obj/item/grenade/plastic=1
+		)
+
+/datum/outfit/loadout/raider_boss
+	name = "Raider Boss"
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
+	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm		
+	l_hand = /obj/item/gun/ballistic/revolver/thatgun
+	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault=2
+		)
+
+/datum/outfit/loadout/conartist
+	name = "Con Artist"
+	suit = /obj/item/clothing/under/f13/bennys
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/mk23
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45exp=3,
+		/obj/item/switchblade=1,
+		/obj/item/card/id/syndicate=1,
+		/obj/item/stack/f13Cash/caps/twofivezero=1,
+		/obj/item/stack/tile/carpet/black/fifty=1,
 		/obj/item/storage/box/dice=1,
-		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1)
+		/obj/item/storage/fancy/cigarettes/cigars=1,
+		/obj/item/toy/cards/deck=1,
+		/obj/item/lighter=1
+		)
 
-/datum/outfit/loadout/raider_yankee
-	name = "Yankee"
-	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
-	head = /obj/item/clothing/head/helmet/f13/raider/yankee
+/datum/outfit/loadout/quack_doctor
+	name = "Quack Doctor"
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
+	l_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
+	suit_store = /obj/item/gun/energy/laser/wattz
 	backpack_contents = list(
-		/obj/item/twohanded/baseball/spiked=1,
-		/obj/item/gun/ballistic/shotgun/remington=1,
-		/obj/item/ammo_box/a308=2,
-		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
-		/obj/item/megaphone=1)
+		/obj/item/stock_parts/cell/ammo/ec=3,
+		/obj/item/switchblade=1,
+		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4,
+		/obj/item/reagent_containers/medspray/synthflesh = 2
+		)
 
-/datum/outfit/loadout/raider_blast
-	name = "Blastmaster"
-	suit = /obj/item/clothing/suit/armor/f13/raider/blastmaster
-	head = /obj/item/clothing/head/helmet/f13/raider/blastmaster
-	backpack_contents = list(
-		/obj/item/twohanded/fireaxe=1,
-		/obj/item/gun/ballistic/revolver/colt6520=1,
-		/obj/item/grenade/iedcasing=2,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
-
-/datum/outfit/loadout/raider_sadist
-	name = "Sadist"
-	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
-	head = /obj/item/clothing/head/helmet/f13/raider/arclight
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 2,
-		/obj/item/clothing/mask/gas/explorer/folded=1,
-		/obj/item/storage/belt/tribe_quiver = 1,
-		/obj/item/twohanded/spear = 1)
-
-/datum/outfit/loadout/raider_badlands
-	name = "Badlands"
+/datum/outfit/loadout/fiend
+	name = "Fiend"
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
+	l_hand = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola/tactical=1,
-		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
-		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/claymore/machete/pipe/pan = 1,
+		/obj/item/ammo_box/tube/a357=3,
+		/obj/item/reagent_containers/pill/patch/jet=1,
 		/obj/item/reagent_containers/hypospray/medipen/psycho=1,
-		/obj/item/reagent_containers/pill/patch/turbo=1)
+		/obj/item/reagent_containers/pill/patch/turbo=1,
+		/obj/item/reagent_containers/pill/buffout=1
+		)
 
-/datum/outfit/loadout/raider_painspike
-	name = "Painspike"
+/datum/outfit/loadout/highway
+	name = "Highwayman"
 	suit = /obj/item/clothing/suit/armor/f13/raider/painspike
 	head = /obj/item/clothing/head/helmet/f13/raider/psychotic
+	l_hand = /obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/trench=1,
+		/obj/item/clothing/mask/gas=1,
+		/obj/item/twohanded/spear=1,
 		/obj/item/ammo_box/shotgun/buck=1,
-		/obj/item/ammo_box/shotgun/bean=1,
-		/obj/item/claymore/machete/pipe/tireiron=1,
-		/obj/item/claymore/machete/pipe/pan=1,
-		/obj/item/grenade/chem_grenade/cleaner=1)
+		/obj/item/ammo_box/shotgun/slug=1
+		)
+
+/datum/outfit/loadout/desperado
+	name = "Desperado"
+	suit = /obj/item/clothing/suit/armor/f13/raider/desperado
+	mask = /obj/item/clothing/mask/bandana/skull
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/revolver44=2,
+		/obj/item/ammo_box/m44=4,
+		/obj/item/kitchen/knife/bowie=1
+		)
+
+/datum/outfit/loadout/jabroni
+	name = "Jabroni"
+	suit = /obj/item/clothing/suit/armor/f13/raider/leather_jacket
+	head = /obj/item/clothing/head/helmet/skull
+	shoes = /obj/item/clothing/shoes/jackboots
+	uniform = /obj/item/clothing/under/jabroni
+	l_hand = /obj/item/gun/ballistic/automatic/greasegun
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/greasegun=3,
+		/obj/item/megaphone=1,
+		/obj/item/grenade/iedcasing=2,
+		/obj/item/kitchen/knife/combat/survival=1
+		)
+
+/datum/outfit/loadout/ronin
+	name = "Junkyard Ronin"
+	suit = /obj/item/clothing/suit/armor/f13/raider/raider_duster
+	l_hand = /obj/item/katana
+	backpack_contents = list(
+		/obj/item/throwing_star=3,
+		/obj/item/grenade/smokebomb=1
+		)
+
+/datum/outfit/loadout/knight
+	name = "Junkyard Knight"
+	suit = /obj/item/clothing/suit/armor/f13/raider/templar
+	head = /obj/item/clothing/head/helmet/f13/raider/templar
+	l_hand = /obj/item/claymore/machete/spatha/knight
+	backpack_contents = list(
+		/obj/item/shield/makeshift=1,
+		/obj/item/megaphone=1,
+		/obj/item/reagent_containers/pill/patch/healingpowder=3
+	)
 
 /datum/outfit/loadout/raider_bos
 	name = "Brotherhood Exile"
 	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
 	uniform = /obj/item/clothing/under/f13/bos/fatigues
+	l_hand = /obj/item/gun/energy/laser/aer9
 	id = /obj/item/card/id/rusted/brokenholodog
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2)
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/kitchen/knife/combat=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1
+		)
 
 /datum/outfit/loadout/raider_ncr
 	name = "NCR Deserter"
 	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
 	uniform = /obj/item/clothing/under/f13/exile
+	l_hand = /obj/item/gun/ballistic/automatic/service
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/service=1,
-		/obj/item/ammo_box/magazine/m556/rifle=3)
+		/obj/item/ammo_box/magazine/m556/rifle/assault=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/kitchen/knife/bowie=1
+		)
 
 /datum/outfit/loadout/raider_legion
-	name = "Punished Legionnaire"
+	name = "Disgraced Legionnaire"
 	suit = /obj/item/clothing/suit/armor/f13/exile/legexile
 	uniform = /obj/item/clothing/under/f13/exile/legion
+	belt = /obj/item/storage/backpack/spearquiver
+	l_hand = /obj/item/claymore/machete/spatha
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
-		/obj/item/claymore/machete/gladius=1,
 		/obj/item/restraints/legcuffs/bola=2,
-		/obj/item/storage/backpack/spearquiver=1)
-
-/datum/outfit/loadout/raider_sheriff
-	name = "Desperado"
-	suit = /obj/item/clothing/suit/armor/vest/leather
-	uniform = /obj/item/clothing/under/syndicate/tacticool
-	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/m29=1,
-		/obj/item/ammo_box/m44=2,
-		/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy=1,
-		/obj/item/ammo_box/tube/a357=2)
-
-/datum/outfit/loadout/raider_mafia
-	name = "Town Mafia"
-	suit = /obj/item/clothing/suit/armor/f13/leather_jacket
-	uniform = /obj/item/clothing/under/f13/bennys
-	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/ninemil=1,
-		/obj/item/ammo_box/magazine/m9mm=2,
-		/obj/item/card/id/dogtag/town/mafia=1,
-		/obj/item/toy/cards/deck=1)
+		/obj/item/reagent_containers/pill/patch/healingpowder=3
+		)
 
 /datum/outfit/loadout/raider_vault
-	name = "Vault Outcast"
-	suit = /obj/item/clothing/suit/armor/f13/leatherarmor
+	name = "Dishelved Vaultie"
+	suit = /obj/item/clothing/suit/armor/vest
 	uniform = /obj/item/clothing/under/f13/exile/vault
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/n99
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=4,
+		/obj/item/switchblade=1,
+		/obj/item/assembly/flash/handheld=1,
+		/obj/item/melee/classic_baton/telescopic=1
+		)
 
 /datum/job/wasteland/f13wastelander
 	title = "Wastelander"

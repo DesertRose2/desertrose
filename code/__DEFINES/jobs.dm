@@ -132,9 +132,10 @@
 #define F13WASTELANDER	(1<<1)
 #define F13RAIDER		(1<<2)
 #define F13PUSHER		(1<<3)
-#define F13PUNRAIDER	(1<<4)
-#define F13DETECTIVE	(1<<5)
-#define EVENTCOVEN		(1<<6)
+#define F13GENGHIS		(1<<4)
+#define F13PUNRAIDER	(1<<5)
+#define F13DETECTIVE	(1<<6)
+#define EVENTCOVEN		(1<<7)
 
 #define ENCLAVE			(1<<9)
 

@@ -165,6 +165,14 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
+/obj/item/clothing/head/helmet/f13/raider/templar
+	name = "raider knight helmet"
+	desc = "(IV) A horned helmet made out of what looks like hardened leather and scraps of metal."
+	icon_state = "templar"
+	item_state = "templar"
+	armor = list("tier" = 4, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
 //Legion
 /obj/item/clothing/head/f13/legion/servant
 	name = "servant headwear"

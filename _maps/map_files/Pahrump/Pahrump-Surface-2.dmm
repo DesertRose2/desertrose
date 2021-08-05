@@ -31462,6 +31462,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"tnI" = (
+/obj/effect/landmark/start/f13/genghis,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
 "tom" = (
 /obj/structure/toilet{
 	dir = 1
@@ -85449,7 +85453,7 @@ ggK
 ggK
 uAs
 ggK
-kjR
+tnI
 kjR
 kjR
 ggK
