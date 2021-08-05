@@ -38,7 +38,6 @@
 		cut_overlay(motorcycle)
 	return ..()
 
-
 /*
 /obj/vehicle/ridden/fuel/motorcycle/buckle_mob()
 	. = ..()
