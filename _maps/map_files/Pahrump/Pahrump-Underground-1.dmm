@@ -9463,8 +9463,8 @@
 /area/f13/ncr)
 "iSR" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -19175,7 +19175,7 @@
 /area/f13/sewer)
 "syv" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -21770,7 +21770,7 @@
 /area/f13/tunnel)
 "vEB" = (
 /obj/structure/table,
-/obj/item/reagent_containers/syringe/medx,
+/obj/item/reagent_containers/pill/patch/medx,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},

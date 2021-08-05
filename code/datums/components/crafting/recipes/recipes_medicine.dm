@@ -124,7 +124,7 @@
 
 /datum/crafting_recipe/medx
 	name = "Med-X"
-	result = /obj/item/reagent_containers/syringe/medx
+	result = /obj/item/reagent_containers/pill/patch/medx
 	reqs = list(/obj/item/reagent_containers/syringe = 1,
 				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2,
 				/obj/item/reagent_containers/food/snacks/grown/datura = 2,
