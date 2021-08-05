@@ -238,8 +238,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "aaH" = (
-/obj/structure/flora/wasteplant/wild_fungus,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "aaI" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -338,6 +342,7 @@
 /area/f13/legion)
 "aaT" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "aaU" = (
@@ -395,9 +400,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "abb" = (
-/obj/structure/chair/wood,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
+/obj/structure/bed,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
+	},
+/obj/item/bedsheet/blue,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "abc" = (
 /obj/structure/fence/wooden{
@@ -457,10 +466,8 @@
 /area/f13/legion)
 "abl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/auxilia,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/obj/structure/simple_door/wood,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "abm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1336,10 +1343,10 @@
 	},
 /area/f13/wasteland)
 "awT" = (
-/obj/effect/landmark/start/f13/auxilia,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
 	},
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "axA" = (
 /obj/structure/lattice/catwalk,
@@ -1573,14 +1580,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aGX" = (
-/obj/structure/bed/dogbed{
-	pixel_x = -10;
-	pixel_y = 13
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1
 	},
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
 	},
-/turf/open/floor/f13/wood,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "aHz" = (
 /obj/structure/fence{
@@ -2263,7 +2271,7 @@
 	icon_state = "tall_grass_3"
 	},
 /turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
+	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "bej" = (
@@ -2711,6 +2719,10 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"bqL" = (
+/obj/structure/simple_door/metal/fence,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "brE" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -2846,11 +2858,10 @@
 	},
 /area/f13/wasteland)
 "bwM" = (
-/obj/effect/landmark/start/f13/auxilia,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen/fountain,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "bwW" = (
 /obj/structure/table/wood/settler,
@@ -3849,6 +3860,12 @@
 /obj/structure/closet/crate/wicker,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/wasteland)
+"cld" = (
+/obj/structure/fence{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "clk" = (
 /obj/structure/table,
 /obj/machinery/light,
@@ -8868,10 +8885,7 @@
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/city)
 "frz" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/obj/structure/decoration/rag,
+/obj/structure/simple_door/wood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "frB" = (
@@ -9020,8 +9034,11 @@
 	},
 /area/f13/ncr)
 "fuN" = (
-/obj/structure/simple_door/metal/fence,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/bed/dogbed{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "fuU" = (
 /obj/effect/decal/remains{
@@ -9469,13 +9486,10 @@
 /turf/open/floor/carpet/red,
 /area/f13/city)
 "fKN" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/wolf/alpha{
-	desc = "Legion mongrels are dogs owned and bred by the Houndmasters of Caesar's Legion. Mongrels are mainly used in combat and scouting missions by the Legion.";
-	faction = list("neutral");
-	name = "Brutus"
+/obj/machinery/light/small{
+	dir = 1
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "fKP" = (
 /obj/effect/landmark/start/f13/followersvolunteer,
@@ -9493,16 +9507,11 @@
 	},
 /area/f13/wasteland)
 "fLB" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/wolf{
-	desc = "Legion mongrels are dogs owned and bred by the Houndmasters of Caesar's Legion. Mongrels are mainly used in combat and scouting missions by the Legion.";
-	faction = list("neutral");
-	health = 200;
-	maxHealth = 200;
-	name = "Lupa";
-	tame = 1
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old{
+	pixel_x = 12
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "fLC" = (
 /obj/structure/reagent_dispensers/barrel/three,
@@ -9865,7 +9874,7 @@
 /area/f13/village)
 "fYt" = (
 /obj/item/flashlight/lantern,
-/turf/open/indestructible/ground/inside/subway,
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "fYP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10642,9 +10651,8 @@
 /area/f13/caves)
 "gwm" = (
 /obj/structure/table/wood,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
-/turf/open/floor/f13/wood,
+/obj/item/candle/infinite,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "gwn" = (
 /obj/structure/ladder/unbreakable{
@@ -12819,11 +12827,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "hJf" = (
-/obj/structure/bed/dogbed{
-	pixel_x = -1;
-	pixel_y = 7
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1
 	},
-/turf/open/floor/f13/wood,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "hJg" = (
 /obj/structure/campfire/barrel,
@@ -13438,6 +13446,12 @@
 /obj/item/clothing/under/f13/mprostitute,
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
+"ibN" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ibZ" = (
 /mob/living/simple_animal/hostile/eyebot,
 /turf/open/indestructible/ground/outside/road{
@@ -13495,8 +13509,13 @@
 	},
 /area/f13/wasteland)
 "idC" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/destructible/tribal_torch/wall/lit,
+/obj/structure/rack,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "idD" = (
 /turf/open/floor/plating/ashplanet/rocky,
@@ -13830,7 +13849,13 @@
 /turf/closed/indestructible/f13/matrix,
 /area/f13/wasteland)
 "imv" = (
-/turf/closed/mineral/random/low_chance,
+/obj/structure/destructible/tribal_torch/wall/lit,
+/obj/structure/rack,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "imT" = (
 /obj/machinery/vending/cigarette,
@@ -15364,12 +15389,8 @@
 	},
 /area/f13/followers)
 "jfu" = (
-/obj/structure/rack,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/f13/wood,
+/obj/structure/table/wood,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "jfx" = (
 /obj/structure/car,
@@ -15857,13 +15878,9 @@
 	},
 /area/f13/ncr)
 "jwX" = (
-/obj/structure/flora/grass/wasteland{
-	pixel_x = -3
-	},
-/turf/closed/indestructible/riveted/boss{
-	name = "temple wall"
-	},
-/area/f13/caves)
+/obj/item/toy/cattoy,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "jxd" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
@@ -17469,14 +17486,11 @@
 	},
 /area/f13/wasteland)
 "kxq" = (
-/obj/item/pet_carrier{
-	pixel_x = 4;
-	pixel_y = 7
+/mob/living/simple_animal/hostile/wolf/playable/shepherd{
+	desc = "Legion mongrels are dogs owned and bred by the Houndmasters of Caesar's Legion. Mongrels are mainly used in combat and scouting missions by the Legion.";
+	faction = list("neutral");
+	name = "Lupa"
 	},
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "floor5-old"
-	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "kxv" = (
@@ -20106,11 +20120,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building)
-"mes" = (
-/obj/structure/decoration/rag,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/f13/wood,
-/area/f13/legion)
 "meL" = (
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -20873,7 +20882,7 @@
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
+/area/f13/legion)
 "mGx" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/decal/cleanable/dirt,
@@ -22023,9 +22032,11 @@
 	},
 /area/f13/brotherhood)
 "nvL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/closed/wall/f13/wood,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "nwp" = (
 /obj/machinery/light{
@@ -23732,9 +23743,11 @@
 	},
 /area/f13/wasteland)
 "oEF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/floor/f13/wood,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor5-old"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "oEU" = (
 /obj/structure/chair/wood{
@@ -25335,14 +25348,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
 "pBp" = (
-/mob/living/simple_animal/hostile/wolf{
-	aggro_vision_range = 0;
+/mob/living/simple_animal/hostile/wolf/playable/sheepdog{
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>This one seems to be a very good boy.";
 	faction = list("neutral");
-	health = 200;
-	maxHealth = 200;
-	name = "Sniffs-the-earth";
-	tame = 1
+	name = "Sniffs-The-Earth"
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
@@ -26906,8 +26915,9 @@
 	},
 /area/f13/tunnel)
 "qyj" = (
-/obj/item/toy/cattoy,
-/turf/open/floor/f13/wood,
+/obj/structure/bed,
+/obj/item/bedsheet/blue,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "qyz" = (
 /obj/structure/table/reinforced,
@@ -29828,8 +29838,8 @@
 	},
 /area/f13/building)
 "spC" = (
-/obj/structure/bed/dogbed,
-/turf/open/floor/f13/wood,
+/obj/effect/landmark/start/f13/auxilia,
+/turf/open/floor/carpet/red,
 /area/f13/legion)
 "spL" = (
 /obj/machinery/light/broken{
@@ -30287,6 +30297,12 @@
 /obj/structure/stacklifter,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"sDO" = (
+/obj/structure/fence/corner{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "sDV" = (
 /obj/structure/bed,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -31403,8 +31419,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "tlN" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/item/pet_carrier{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "tlR" = (
 /obj/item/storage/trash_stack,
@@ -31621,6 +31640,13 @@
 	icon_state = "housewood2"
 	},
 /area/f13/village)
+"tsn" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/obj/structure/simple_door/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "tsr" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/indestructible/ground/outside/dirt,
@@ -33096,7 +33122,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "ulU" = (
-/obj/effect/decal/remains/human,
+/obj/structure/fence{
+	dir = 1
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "umi" = (
@@ -36770,8 +36798,12 @@
 	},
 /area/f13/village)
 "wzm" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/f13/wood,
+/mob/living/simple_animal/hostile/wolf/playable/shepherd{
+	desc = "Legion mongrels are dogs owned and bred by the Houndmasters of Caesar's Legion. Mongrels are mainly used in combat and scouting missions by the Legion.";
+	faction = list("neutral");
+	name = "Brutus"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "wzn" = (
 /obj/machinery/hydroponics/soil,
@@ -39538,13 +39570,10 @@
 	},
 /area/f13/wasteland)
 "yci" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/playable/rottweiler{
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>This one looks mangy, with mud stuck to his hair and flies buzzing around him.";
 	faction = list("neutral");
-	health = 200;
-	maxHealth = 200;
-	name = "Guerrilla";
-	tame = 1
+	name = "Guerrilla"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -39568,6 +39597,10 @@
 /area/f13/city)
 "ydm" = (
 /obj/structure/bonfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
+"ydA" = (
+/obj/structure/flora/wasteplant/wild_fungus,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "ydH" = (
@@ -56702,7 +56735,7 @@ dXQ
 gBZ
 sVl
 kUs
-jwX
+cos
 fyf
 fyf
 fyf
@@ -88403,8 +88436,8 @@ fyf
 fyf
 fyf
 fyf
-hwC
-hwC
+gcK
+gcK
 fyf
 fyf
 fyf
@@ -88662,8 +88695,8 @@ fyf
 gcK
 gcK
 gcK
-hwC
-hwC
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -90715,14 +90748,14 @@ ktB
 ktB
 gcK
 gcK
-mTd
-mTd
-mTd
-mTd
-mTd
-mTd
-mTd
-mTd
+hom
+hom
+hom
+hom
+hom
+hom
+hom
+hom
 gcK
 gcK
 gcK
@@ -91745,7 +91778,7 @@ hbO
 hbO
 hom
 ftz
-abl
+qbe
 tLi
 uUZ
 uUZ
@@ -92781,7 +92814,7 @@ oMY
 rgS
 jEp
 mvv
-bpD
+doX
 pkf
 oMY
 edZ
@@ -93038,7 +93071,7 @@ xNm
 rgS
 jEp
 mvv
-bpD
+mvv
 dvo
 oMY
 xNm
@@ -93281,7 +93314,7 @@ xNm
 xNm
 oMY
 xNm
-tlN
+dvo
 xNm
 qot
 qCv
@@ -93295,7 +93328,7 @@ oMY
 rgS
 jEp
 mvv
-bpD
+aBH
 hom
 hom
 hom
@@ -93522,14 +93555,14 @@ fyf
 fyf
 vAe
 pea
-tBN
-mvv
-rbJ
+fyf
+fyf
+xTK
 fyf
 fyf
 bea
-cWG
-cWG
+mvv
+doX
 cWG
 tTV
 xDE
@@ -93779,9 +93812,9 @@ qOV
 cWG
 cWG
 gDn
-fbD
-mvv
-doX
+gZN
+cWG
+cWG
 cWG
 cWG
 daU
@@ -97147,10 +97180,10 @@ hom
 hom
 hom
 hom
-imv
-imv
-imv
-imv
+gcK
+gcK
+gcK
+gcK
 hom
 dHb
 xNm
@@ -100235,11 +100268,11 @@ qwS
 wPS
 wPS
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+hom
+hom
+hom
+hom
+hom
 gcK
 gcK
 gcK
@@ -100470,7 +100503,7 @@ hom
 hom
 pqs
 uFt
-awT
+xDE
 xNm
 rgS
 mvv
@@ -100492,11 +100525,11 @@ wPS
 wPS
 wPS
 wPS
-gcK
-wPS
+hom
+uFt
 vzG
 eMF
-gcK
+hom
 ggK
 wnA
 iIh
@@ -100716,11 +100749,11 @@ gcK
 gcK
 ktB
 gcK
-gcK
 ktB
-hom
-hom
-hom
+gcK
+gcK
+gcK
+gcK
 gcK
 hom
 oFC
@@ -100750,7 +100783,7 @@ ezG
 wPS
 wPS
 uNK
-dNW
+oMY
 vzG
 vzG
 mGt
@@ -100974,11 +101007,11 @@ gcK
 ktB
 gcK
 gcK
-ktB
 hom
-jfu
-xNm
-gcK
+hom
+hom
+hom
+hom
 hom
 nCl
 hbO
@@ -101006,11 +101039,11 @@ nvr
 eMV
 wPS
 wPS
-qwS
-vzG
-vzG
+tsn
+xNm
+xNm
 fYt
-gcK
+hom
 gcK
 gcK
 gcK
@@ -101231,11 +101264,11 @@ gcK
 gcK
 ktB
 gcK
-ktB
 hom
-kxq
-oMY
-wPS
+hJf
+jIn
+szJ
+gwm
 cRh
 hom
 hom
@@ -101263,11 +101296,11 @@ wPS
 lVe
 wPS
 wPS
-idC
-wPS
+uGF
+hom
 cRh
-gcK
-gcK
+hom
+hom
 gcK
 gcK
 gcK
@@ -101489,11 +101522,11 @@ ktB
 ktB
 gcK
 hom
-hom
-mes
-xNm
-idC
-hom
+abb
+spC
+jIn
+jIn
+xqQ
 hbO
 xfy
 hbO
@@ -101508,7 +101541,7 @@ syr
 wPS
 hom
 wFo
-bwM
+eQH
 oMY
 aWz
 wel
@@ -101747,9 +101780,9 @@ ktB
 gcK
 hom
 hJf
-wzm
-fKN
-wPS
+jIn
+jIn
+imv
 hom
 tZW
 tZW
@@ -101759,7 +101792,7 @@ hzx
 tHw
 fBx
 wPS
-wPS
+ydA
 syr
 syr
 wPS
@@ -102003,11 +102036,11 @@ gcK
 ktB
 ktB
 hom
-ime
-xNm
-wPS
-wPS
-gsV
+qyj
+spC
+jIn
+jfu
+hom
 cRh
 cRh
 hom
@@ -102261,11 +102294,11 @@ gcK
 gcK
 hom
 aGX
-ime
-fLB
+jIn
+jIn
 idC
-fuN
-wPS
+hom
+nvL
 wPS
 gcK
 gcK
@@ -102519,10 +102552,10 @@ gcK
 hom
 qyj
 spC
-wPS
-ulU
+awT
+jIn
 frz
-aaH
+wPS
 wPS
 wPS
 gcK
@@ -102777,9 +102810,9 @@ hom
 hom
 hom
 hom
+frz
 hom
-hom
-iyu
+nvL
 wPS
 wPS
 wPS
@@ -103029,13 +103062,13 @@ gcK
 gcK
 gcK
 hom
+hbO
+hbO
+abl
 cjV
 cjV
-aaQ
-oMY
-ime
-oMY
-dvo
+cjV
+hom
 wPS
 wPS
 wPS
@@ -103286,18 +103319,18 @@ ktB
 gcK
 gcK
 hom
-cjV
+aaH
 hbO
-nvL
-abb
-tHw
-oMY
-rgS
+uGF
+swQ
+bwM
+cjV
+hom
+hom
+ulU
+sDO
 wPS
-gcK
-gcK
-gcK
-gcK
+wPS
 gcK
 gcK
 wPS
@@ -103544,16 +103577,16 @@ ktB
 gcK
 hom
 aaT
+hbO
+hom
+pcn
+dMb
 cjV
 hom
-oMY
-gwm
 oEF
-hom
-gcK
-gcK
-gcK
-gcK
+wPS
+bqL
+wPS
 gcK
 gcK
 wPS
@@ -103807,9 +103840,9 @@ hom
 hom
 uGF
 hom
-gcK
-gcK
-gcK
+nvL
+wPS
+cld
 gcK
 gcK
 wPS
@@ -104060,13 +104093,13 @@ gcK
 ktB
 gcK
 gcK
-ktB
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+hom
+fuN
+kxq
+xNm
+wPS
+wPS
+cld
 gcK
 iyu
 wPS
@@ -104317,14 +104350,14 @@ ktB
 gcK
 gcK
 gcK
+hom
+fKN
+jwX
+xNm
+xNm
+wzm
+hom
 gcK
-gcK
-gcK
-gcK
-gcK
-gbL
-gcK
-wPS
 wPS
 wPS
 ktB
@@ -104574,12 +104607,12 @@ gcK
 gcK
 ktB
 ktB
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+hom
+fLB
+xNm
+hom
+xNm
+wPS
 hom
 hom
 bbV
@@ -104831,12 +104864,12 @@ gcK
 gcK
 gcK
 gcK
-gcK
-ktB
-gcK
-gcK
-gcK
-gbL
+hom
+xNm
+fuN
+hom
+tlN
+ibN
 kRD
 ydY
 xNm
@@ -105089,11 +105122,11 @@ gcK
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+hom
+hom
+hom
+hom
+hom
 hom
 hom
 hom
