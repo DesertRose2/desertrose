@@ -248,6 +248,7 @@
 //Jack Torres - karlov
 /obj/item/storage/box/large/custom_kit/jacktorres/PopulateContents()
 	new /obj/item/clothing/head/helmet/f13/boonie_hat(src)
+	new /obj/item/modkit/lieutenantplatecarrier(src)
 
 //Alice Dakota - muhsollini
 /obj/item/storage/box/large/custom_kit/alicedakota/PopulateContents()

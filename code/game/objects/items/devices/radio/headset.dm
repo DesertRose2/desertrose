@@ -322,6 +322,10 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot = new /obj/item/encryptionkey/headset_vault_merchant
 	keyslot2 = new /obj/item/encryptionkey/headset_overseer
 
+/obj/item/radio/headset/headset_vault/followers
+	name = "\improper Followers radio headset"
+	keyslot = new /obj/item/encryptionkey/headset_vault
+
 
 /obj/item/radio/headset/headset_vaultsec
 	name = "security radio headset"

@@ -626,6 +626,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/card/data/wpermit
+	r_hand = /obj/item/book/granter/trait/selection
 
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
@@ -762,6 +763,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
+	r_hand = /obj/item/book/granter/trait/selection
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
@@ -791,7 +793,7 @@
 /datum/outfit/loadout/addict
 	name = "Addict"
 	backpack_contents = list(
-	/obj/item/reagent_containers/syringe/medx=1,
+	/obj/item/reagent_containers/pill/patch/medx=1,
 	/obj/item/reagent_containers/pill/buffout = 2,
 	/obj/item/reagent_containers/pill/lsd = 2,
 	/obj/item/reagent_containers/pill/patch/jet = 2,
