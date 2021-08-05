@@ -12643,6 +12643,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/red/line,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -16142,10 +16146,6 @@
 /obj/structure/flora/rock/pile/largejungle,
 /turf/closed/indestructible/rock,
 /area/f13/tunnel)
-"pQq" = (
-/obj/item/pickaxe,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "pQx" = (
 /obj/item/flag/ncr,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -20504,7 +20504,6 @@
 /area/f13/tunnel)
 "uhE" = (
 /obj/item/storage/bag/ore,
-/obj/item/pickaxe,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "uhW" = (
@@ -78921,7 +78920,7 @@ uoO
 xVz
 xVz
 xVz
-pQq
+xVz
 uoO
 uoO
 uoO
