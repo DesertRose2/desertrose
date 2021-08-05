@@ -23,9 +23,21 @@
 	var/list/autogrant_actions_controller	//assoc list "[bitflag]" = list(typepaths)
 	var/list/mob/occupant_actions			//assoc list mob = list(type = action datum assigned to mob)
 	var/obj/vehicle/trailer
+	var/engine_on = 0
+	var/engine_on_sound = null
+	var/engine_loop_sound = null//not used.
+	var/datum/looping_sound/motorcycle/soundloop//Given we only use motorbikes, for now, we'll just use this.
+
+/obj/vehicle/New()
+	..()
+	if(engine_on)
+		src.verbs += /obj/vehicle/proc/StopEngine
+	else
+		src.verbs += /obj/vehicle/proc/StartEngine
 
 /obj/vehicle/Initialize(mapload)
 	. = ..()
+	soundloop = new(list(src))
 	occupants = list()
 	autogrant_actions_passenger = list()
 	autogrant_actions_controller = list()
@@ -173,3 +185,34 @@
 		occupants[1].bullet_act(Proj) // driver dinkage
 		return BULLET_ACT_HIT
 	. = ..()
+
+/////////
+// Waste Procs
+/////////
+/obj/vehicle/proc/StartEngine()
+	set name = "Start Engine"
+	set category = "Object"
+	set src in view(1)
+
+	start_engine()
+
+/obj/vehicle/proc/StopEngine()
+	set name = "Stop Engine"
+	set category = "Object"
+	set src in view(1)
+
+	stop_engine()
+
+/obj/vehicle/proc/stop_engine(mob/M)
+	src.verbs += /obj/vehicle/proc/StartEngine
+	src.verbs -= /obj/vehicle/proc/StopEngine
+	if(usr)
+		usr.visible_message("[usr] stop engine of [src].", "You stop engine.")
+
+	engine_on = FALSE
+
+	soundloop.stop()//Double take. Don't ask me why it's required, but it is.
+
+/obj/vehicle/proc/start_engine(mob/living/M)
+	src.verbs += /obj/vehicle/proc/StopEngine
+	src.verbs -= /obj/vehicle/proc/StartEngine
