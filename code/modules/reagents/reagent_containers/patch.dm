@@ -82,5 +82,5 @@
 	desc = "Contains Med-X, a powerful analgesic drug that increases the user's damage resistance. Highly addictive, and prolonged presence in the body comes with severe side effects."
 	list_reagents = list(/datum/reagent/medicine/medx = 10)
 	icon = 'icons/obj/syringe.dmi'
-	icon_state = "medipen"
-	item_state = "medipen"
+	icon_state = "med-x"
+	item_state = "med-x"

@@ -97,6 +97,53 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/raider/desperado
+	name = "desperado duster"
+	desc = "(IV) Lightly armored leather overcoat reeking of gunpowder and cigarretes."
+	icon_state = "leathercoat-sec"
+	item_state = "hostrench"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	cold_protection = CHEST|GROIN|LEGS|ARMS
+	heat_protection = CHEST|GROIN|LEGS|ARMS
+	dog_fashion = null
+
+/obj/item/clothing/suit/armor/f13/raider/desperado/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/leather_jacket
+	name = "raider combat leather jacket"
+	icon_state = "combat_jacket"
+	item_state = "combat_jacket"
+	desc = "(IV) This heavily padded leather jacket is unusual in that it has two sleeves. You'll definitely make a fashion statement whenever, and wherever, you rumble."
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/raider/leather_jacket/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/raider_duster
+	name = "raider desert combat armor"
+	desc = "(IV) An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
+	icon_state = "reptiliatenebris"
+	item_state = "reptiliatenebris"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/raider/raider_duster/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/templar
+	name = "raider knight armor"
+	desc = "(IV) A set of old rusty armor with black and red tabard strapped to it."
+	icon_state = "templar"
+	item_state = "templar"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/raider/templar/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/suit/armor/f13/exile
 	name = "base faction exile armor"
 	desc = "this is for testing."
