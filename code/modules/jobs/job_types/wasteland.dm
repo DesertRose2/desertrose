@@ -107,7 +107,7 @@ Great Khans
 	name = "Classic"
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol127
 	backpack_contents = list(
-		/obj/item/ammo_box/a556/stripper=2)
+		/obj/item/ammo_box/magazine/m127mm=2)
 
 /datum/outfit/loadout/marksman
 	name = "Marksman"

@@ -191,6 +191,11 @@ GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 	"Genghis Khan"
 ))
 
+GLOBAL_LIST_INIT(khan_positions, list(
+	"Genghis Khan",
+	"Great Khan"
+))
+
 GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(
 	"Head Paladin",
 	"Star Paladin",
