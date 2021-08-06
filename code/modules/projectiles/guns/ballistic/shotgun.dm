@@ -611,7 +611,7 @@
 	can_attachments = TRUE
 	//projectile_speed = 0
 
-/obj/item/gun/ballistic/shotgun/antimateriel/incinerator
+/*/obj/item/gun/ballistic/shotgun/antimateriel/incinerator
 	name = "incinerator"
 	desc = "A heavy cannon reminiscent of an old flamethrower, firing concentrated balls of fire over a single constant stream."
 	icon = 'icons/obj/items_and_weapons.dmi'
@@ -623,6 +623,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
 	slowdown = 1
 	casing_ejector = FALSE
+*/
 
 /obj/item/gun/ballistic/shotgun/kar98k
 	name = "\improper karabiner 98k"
