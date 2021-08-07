@@ -611,6 +611,20 @@
 	can_attachments = TRUE
 	//projectile_speed = 0
 
+/*/obj/item/gun/ballistic/shotgun/antimateriel/incinerator
+	name = "incinerator"
+	desc = "A heavy cannon reminiscent of an old flamethrower, firing concentrated balls of fire over a single constant stream."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	lefthand_file = 'icons/mob/inhands/64x64_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
+	icon_state = "incinerator"
+	item_state = "incinerator"
+	zoomable = FALSE
+	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
+	slowdown = 1
+	casing_ejector = FALSE
+*/
+
 /obj/item/gun/ballistic/shotgun/kar98k
 	name = "\improper karabiner 98k"
 	desc = "An old military service rifle from World War 2. This model was rechambered in .308."
