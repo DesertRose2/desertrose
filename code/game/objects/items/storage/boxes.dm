@@ -446,7 +446,7 @@ obj/item/storage/box/stingbangs
 /obj/item/storage/box/bowls/PopulateContents()
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/glass/bowl(src)
-	
+
 /obj/item/storage/box/donkpockets
 	name = "box of donk-pockets"
 	desc = "<B>Instructions:</B> <I>Heat in microwave. Product will cool if not eaten within seven minutes.</I>"
@@ -1403,14 +1403,22 @@ obj/item/storage/box/stingbangs
 	for(var/i in 1 to 5)
 		new /obj/item/seeds/random(src)
 
-/obj/item/storage/box/ids/follower
+/obj/item/storage/box/ids/legfollower
 	name = "box of spare medallions"
 	desc = "Medallions for issue to Camp Followers."
 	illustration = "legauxilia"
 
-/obj/item/storage/box/ids/follower/PopulateContents()
+/obj/item/storage/box/ids/legfollower/PopulateContents()
 	for(var/i in 1 to 7)
 		new /obj/item/card/id/dogtag/legfollower
+
+/obj/item/storage/box/ids/followers
+	name = "box of spare volunteer ids"
+	desc = "IDs for issue to new Volunteers"
+
+/obj/item/storage/box/ids/followers/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/card/id/silver
 
 /obj/item/storage/box/deputy_badges
 	name = "box of spare badges"
