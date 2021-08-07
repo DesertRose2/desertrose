@@ -4,7 +4,15 @@
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	possible_locs = list(BODY_ZONE_PRECISE_EYES)
 	requires_bodypart_type = BODYPART_ORGANIC
-	requires_trait = 3
+	requires_trait = 2
+
+/datum/surgery/eye_surgery/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	else
+		return FALSE
 
 //fix eyes
 /datum/surgery_step/fix_eyes
