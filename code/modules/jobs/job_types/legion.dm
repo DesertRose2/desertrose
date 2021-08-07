@@ -209,7 +209,7 @@ Orator
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/ammo_box/magazine/m9mm=3,
-		/obj/item/storage/box/ids/follower=1,
+		/obj/item/storage/box/ids/legfollower=1,
 		/obj/item/storage/bag/money/small/legion=1)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
