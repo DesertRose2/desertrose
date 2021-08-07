@@ -8,12 +8,6 @@
 	var/active = FALSE
 	var/mod_type = BIOWARE_GENERIC
 
-/datum/bioware/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
-	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
-		return TRUE
-	else
-		return FALSE
-
 /datum/bioware/New(mob/living/carbon/human/_owner)
 	owner = _owner
 	for(var/X in owner.bioware)
