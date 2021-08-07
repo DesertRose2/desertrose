@@ -188,7 +188,7 @@ Lieutenant
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT1
 	head 		= /obj/item/clothing/head/beret/ncr_lt
-	neck 		= /obj/item/storage/belt/holster/ncr
+	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	ears 		= /obj/item/radio/headset/headset_ncr_com
@@ -200,7 +200,7 @@ Lieutenant
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
-		/obj/item/binoculars=1
+		/obj/item/binoculars=1, \
 		)
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -309,7 +309,7 @@ Sergeant First Class
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
 	accessory 		= /obj/item/clothing/accessory/ncr/FSGT
 	glasses 		= /obj/item/clothing/glasses/sunglasses/big
-	neck 			= /obj/item/storage/belt/holster/ncr
+	neck 			= /obj/item/storage/belt/holster/ncr_officer
 	ears 			= /obj/item/radio/headset/headset_ncr_com
 	suit 			= /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	head 			= /obj/item/clothing/head/f13/ncr
