@@ -64,6 +64,7 @@ Colonel
 	head 		= /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
 	belt        = /obj/item/storage/belt/military/assault/ncr/crossbelt
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
+	neck		= /obj/item/storage/belt/holster/ncr_officer
 	suit_store  = /obj/item/gun/ballistic/automatic/marksman
 	gloves      = /obj/item/clothing/gloves/f13/leather
 	suit 		= /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
@@ -115,7 +116,7 @@ Captain
 	accessory 	= /obj/item/clothing/accessory/ncr/CPT
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/captain
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
-	neck 		= /obj/item/storage/belt/holster
+	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	ears = 		/obj/item/radio/headset/headset_ncr_com
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
@@ -200,7 +201,7 @@ Lieutenant
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
-		/obj/item/binoculars=1, \
+		/obj/item/binoculars=1
 		)
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

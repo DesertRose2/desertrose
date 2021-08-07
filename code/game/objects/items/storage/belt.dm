@@ -818,7 +818,6 @@
 /obj/item/storage/belt/holster/ncr_officer/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
 	new /obj/item/ammo_box/magazine/m45(src)
-	new /obj/item/ammo_box/magazine/m45(src)
 
 /obj/item/storage/belt/holster/med_lt/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/thatgun(src)
