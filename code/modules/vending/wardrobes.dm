@@ -542,7 +542,10 @@
 					/obj/item/clothing/suit/captunic = 1,
 					/obj/item/clothing/under/rank/captain/femformal = 1,
 					/obj/item/clothing/glasses/sunglasses/gar/supergar = 1,
-					/obj/item/clothing/gloves/color/captain = 1)
+					/obj/item/clothing/gloves/color/captain = 1,
+					/obj/item/clothing/suit/toggle/captains_parade = 1,
+					/obj/item/clothing/suit/toggle/armor/vest/centcom_formal = 1,
+					/obj/item/clothing/suit/toggle/armor/hos/hos_formal = 1)
 	refill_canister = /obj/item/vending_refill/wardrobe/cap_wardrobe
 	payment_department = ACCOUNT_CIV
 	default_price = PRICE_ALMOST_EXPENSIVE
