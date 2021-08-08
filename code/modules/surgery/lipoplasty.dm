@@ -4,6 +4,15 @@
 	possible_locs = list(BODY_ZONE_CHEST)
 	requires_bodypart_type = BODYPART_ORGANIC
 	requires_trait = 2
+
+/datum/surgery/lipoplasty/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
 /datum/surgery/lipoplasty/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
 	if(HAS_TRAIT(target, TRAIT_FAT))
 		return 1

@@ -917,7 +917,7 @@
 				traitname = "trekking"
 			if("Minor Surgery")
 				granted_trait = TRAIT_SURGERY_LOW
-				traitname = "intermediate surgery"
+				traitname = "minor surgery"
 			if("Chemistry")
 				granted_trait = TRAIT_CHEMWHIZ
 				traitname = "chemistry"

@@ -17,7 +17,7 @@
 			return
 	owner.bioware += src
 	on_gain()
-	
+
 /datum/bioware/Destroy()
 	owner = null
 	if(active)
