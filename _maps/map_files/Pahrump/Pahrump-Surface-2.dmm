@@ -10422,15 +10422,10 @@
 	},
 /area/f13/tunnel)
 "gqE" = (
-/obj/structure/ladder/unbreakable{
-	desc = "A ladder hidden inside a well.";
-	height = 2;
+/obj/structure/ladder/unbreakable/well{
 	id = "VC4";
-	name = "well ladder";
+	name = "ladder well";
 	pixel_x = -18
-	},
-/obj/structure/sink/well{
-	pixel_x = -15
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
