@@ -521,6 +521,7 @@
 	subcategory = CAT_ARMOR
 	always_availible = FALSE
 
+/*
 /datum/crafting_recipe/lighttribe
 	name = "Light Tribal Armor"
 	result = /obj/item/clothing/suit/armor/f13/tribe_armor
@@ -532,7 +533,6 @@
 	subcategory = CAT_ARMOR
 	always_availible = FALSE
 
-/*
 /datum/crafting_recipe/plate
 	name = "Plate Armor"
 	result = /obj/item/clothing/suit/armor/plate/crusader/plate
