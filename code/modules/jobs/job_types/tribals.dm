@@ -35,6 +35,9 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowap)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowpoison)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowburn)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
 
 /*
 Tribal Chief

@@ -338,6 +338,7 @@
 
 /datum/crafting_recipe/tribalwar/sturdybow
 	name = "Sturdy Bow"
+	always_availible = FALSE
 	result = /obj/item/gun/ballistic/automatic/sturdybow
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
@@ -348,6 +349,7 @@
 
 /datum/crafting_recipe/tribalwar/silverbow
 	name = "Silver Bow"
+	always_availible = FALSE
 	result = /obj/item/gun/ballistic/automatic/silverbow
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/silver = 10,
@@ -358,6 +360,7 @@
 
 /datum/crafting_recipe/tribalwar/bonebow
 	name = "Deathclaw Bow"
+	always_availible = FALSE
 	result = /obj/item/gun/ballistic/automatic/bonebow
 	time = 80
 	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
