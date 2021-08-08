@@ -261,10 +261,10 @@
 
 /obj/item/clothing/suit/armor/f13/legion/prime
 	name = "legion prime armor"
-	desc = "(V) It's a legion prime armor, supplied to recruits who have survived several skirmishes, and are more worthy of sturdier equipment."
+	desc = "(IV) It's a legion prime armor, supplied to recruits who have survived several skirmishes, and are more worthy of sturdier equipment."
 	icon_state = "legprime"
 	slowdown = -0.13
-	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
 	name = "slavemaster armor"
@@ -280,11 +280,11 @@
 
 /obj/item/clothing/suit/armor/f13/legion/heavy
 	name = "legion veteran decan armor"
-	desc = "(VI) Heavy metal armor worn by the Veteran Decanii retinue of the region."
+	desc = "(V) Heavy metal armor worn by the Veteran Decanii retinue of the region."
 	icon_state = "legmetal"
 	item_state = "legmetal"
 	slowdown = -0.1
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	name = "legion explorer armor"
@@ -299,14 +299,14 @@
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion venator armor"
-	desc = "(VII) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
+	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers and a chainmail skirt."
 	icon_state = "legvenator"
-	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 //Custom venator armor for Luti
 /obj/item/clothing/suit/armor/f13/legion/venator/ursus
 	name = "Ursus Homicida"
-	desc = "(VII) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
+	desc = "(VI) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
 	icon_state = "ursus_homicida"
 	item_state = "ursus_homicida"
 
@@ -314,7 +314,7 @@
 	name = "legion orator armor"
 	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legheavy"
-	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/centurion
 	name = "legion centurion armor"
@@ -342,7 +342,7 @@
 	icon_state = "rangercent"
 	item_state = "rangercent"
 	slowdown = -0.20
-	armor = list("tier" = 6, "energy" = 25, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 25, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/legate
 	name = "legion legate armor"
@@ -374,31 +374,31 @@
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	name = "NCR mantle vest"
-	desc = "(V) A standard issue NCR Infantry vest with a mantle on the shoulder."
+	desc = "(IV) A standard issue NCR Infantry vest with a mantle on the shoulder."
 	icon_state = "ncr_standard_mantle"
 	item_state = "ncr_standard_mantle"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	name = "NCR reinforced patrol vest"
-	desc = "(V) A standard issue NCR Infantry vest reinforced with a groinpad."
+	desc = "(IV) A standard issue NCR Infantry vest reinforced with a groinpad."
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	name = "NCR reinforced mantle vest"
-	desc = "(VI) A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
+	desc = "(V) A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
 	icon_state = "ncr_reinforced_mantle"
 	item_state = "ncr_reinforced_mantle"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	name = "NCR medical labcoat"
-	desc = "(V) An armored labcoat typically issued to NCR Medical Officers. It's a standard white labcoat with the Medical Officer's name stitched into the breast and a two headed bear sewn into the shoulder."
+	desc = "(IV) An armored labcoat typically issued to NCR Medical Officers. It's a standard white labcoat with the Medical Officer's name stitched into the breast and a two headed bear sewn into the shoulder."
 	icon_state = "ncr_labcoat"
 	item_state = "ncr_labcoat"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	allowed = list(/obj/item/gun, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/captain
@@ -410,45 +410,45 @@
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	name = "NCR officer vest"
-	desc = "(VII) A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
+	desc = "(VI) A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
 	name = "Lieutenant Plate Carrier"
-	desc = "(VII) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
+	desc = "(VI) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
 	icon_state = "lt_pc"
 	item_state = "lt_pc"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	name = "NCR light infantry armor"
-	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen."
+	desc = "(IV) A specialized variant of the standard NCR armor given to light infantrymen."
 	icon_state = "scoutarmor"
 	item_state = "scoutarmor"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
 	name = "NCR light infantry mantle armor"
-	desc = "(V) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
+	desc = "(IV) A specialized variant of the standard NCR armor given to light infantrymen NCOs."
 	icon_state = "scoutarmor_mantle"
 	item_state = "scoutarmor_mantle"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
 	name = "NCR light infantry reinforced mantle armor"
-	desc = "(VI) A specialized reinforced variant of the standard NCR armor given to light infantrymen NCOs."
+	desc = "(V) A specialized reinforced variant of the standard NCR armor given to light infantrymen NCOs."
 	icon_state = "scoutarmor_mantle_reinforced"
 	item_state = "scoutarmor_mantle_reinforced"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer
-	name = "(VII) NCR light infantry officer combat armor"
+	name = "(VI) NCR light infantry officer combat armor"
 	desc = "A specialized variant of the standard NCR armor given to light infantrymen officers."
 	icon_state = "scout_armor_lt"
 	item_state = "scout_armor_lt"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
 	name = "NCR combat armor"
@@ -484,7 +484,7 @@
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
 	name = "NCR officer vest"
-	desc = "(VII) A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
+	desc = "(VI) A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
 	icon_state = "ncr_officer_coat"
 	item_state = "ncr_officer_coat"
 
@@ -540,10 +540,10 @@
 
 /obj/item/clothing/suit/hooded/f13/hooded_recon
 	name = "hooded ranger jacket"
-	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	desc = "(IV) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
 	icon_state = "hooded_recon"
 	item_state = "hooded_recon"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS //Since this uses the hooded object, needs to be set to match armor/f13
@@ -551,17 +551,17 @@
 
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
-	desc = "(V) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
+	desc = "(IV) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
 	icon_state = "modif_r_vest"
 	item_state = "modif_r_vest"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
 	name = "mutant ranger armor"
@@ -655,14 +655,14 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	name = "brotherhood armor"
-	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
+	desc = "(V) A set of combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood star knight armor"
-	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
+	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 
@@ -675,21 +675,21 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	name = "initiate armor"
-	desc = "(V) An old military grade pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
+	desc = "(IV) An old military grade pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced initiate armor"
-	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
+	desc = "(V) A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
 	name = "brotherhood scout armor"
-	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
+	desc = "(IV) A half-suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
 	icon_state = "brotherhood_scout_knight"
 	item_state = "brotherhood_scout_knight"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -697,7 +697,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
 	name = "brotherhood star knight scout armor"
-	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
+	desc = "(V) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
 	icon_state = "brotherhood_scout_senior"
 	item_state = "brotherhood_scout_senior"
 
@@ -711,7 +711,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
 	name = "brotherhood armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, bearing a series of red markings."
+	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, bearing a series of red markings."
 	icon_state = "brotherhood_armor_outcast"
 	item_state = "brotherhood_armor_outcast"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -732,15 +732,15 @@
 
 /obj/item/clothing/suit/armor/f13/town/sheriff
 	name = "sheriff trenchcoat"
-	desc = "(VI) A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
+	desc = "(V) A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
-	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/town/deputy
 	name = "deputy trenchcoat"
-	desc = "(V) An armored trench coat with added shoulderpads, a chestplate, and legguards."
+	desc = "(4) An armored trench coat with added shoulderpads, a chestplate, and legguards."
 	icon_state = "towntrench_medium"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
 //Great Khan
 /obj/item/clothing/suit/armor/khan_jacket
@@ -753,20 +753,20 @@
 //Wayfarer
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
-	desc = "(IV) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
+	desc = "(III) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
+	armor = list("tier" = 3, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 
 /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
 	name = "heavy tribal armor"
-	desc = "(V) Heavy armor make of sturdy leather and pieces of bone. Worn by seasoned veterans within the Wayfinder tribe."
+	desc = "(IV) Heavy armor make of sturdy leather and pieces of bone. Worn by seasoned veterans within the Wayfinder tribe."
 	icon_state = "heavy_tribal_armor"
 	item_state = "heavy_tribal_armor"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 	flags_inv = HIDEJUMPSUIT
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
@@ -777,10 +777,10 @@
 
 /obj/item/clothing/suit/armor/f13/riot/vault
 	name = "VTCC riot armour"
-	desc = "(VII) A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
+	desc = "(V) A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
 	icon_state = "vtcc_riot_gear"
 	item_state = "vtcc_riot_gear"
-	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 
 //THE GRAVEYARD

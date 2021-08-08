@@ -444,7 +444,7 @@ Corporal
 /datum/outfit/loadout/corpreg
 	name = "Infantry"
 	l_hand = /obj/item/gun/ballistic/automatic/service
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	belt = /obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=3)
 
@@ -462,7 +462,7 @@ Corporal
 /datum/outfit/loadout/corpcqb
 	name = "Assault"
 	l_hand = /obj/item/gun/ballistic/shotgun/hunting
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
@@ -602,7 +602,7 @@ Trooper
 /datum/outfit/loadout/troopreg
 	name = "Infantry"
 	l_hand = /obj/item/gun/ballistic/automatic/service
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	belt = /obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle=3)
 
@@ -620,7 +620,7 @@ Trooper
 /datum/outfit/loadout/troopcqb
 	name = "Assault"
 	l_hand = /obj/item/gun/ballistic/shotgun/hunting
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
