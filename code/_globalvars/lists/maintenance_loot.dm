@@ -211,8 +211,6 @@ GLOBAL_LIST_INIT(trash_chem, list(
 GLOBAL_LIST_INIT(trash_craft, list(
 	/obj/item/crafting/duct_tape = 5,
 	/obj/item/crafting/abraxo = 5,
-	/obj/item/crafting/reloader = 5,
-	/obj/item/crafting/lunchbox = 5,
 	/obj/item/stack/crafting/metalparts/three = 5,
 	/obj/item/stack/crafting/electronicparts/three = 5,
 	/obj/item/stack/crafting/goodparts = 5
@@ -228,9 +226,18 @@ GLOBAL_LIST_INIT(trash_gun, list(
 ))
 
 GLOBAL_LIST_INIT(trash_money, list(
-	/obj/item/stack/f13Cash/random/low = 140,
-	/obj/item/stack/f13Cash/random/med = 80,
-	/obj/item/stack/f13Cash/random/high = 40
+	/obj/item/stack/f13Cash/random/low = 10,
+	/obj/item/stack/f13Cash/random/med = 20,
+	/obj/item/stack/f13Cash/random/high = 5,
+	/obj/item/stack/f13Cash/random/ncr/med = 10,
+	/obj/item/stack/f13Cash/random/ncr/med = 20,
+	/obj/item/stack/f13Cash/random/ncr/high = 5,
+	/obj/item/stack/f13Cash/random/denarius/low = 10,
+	/obj/item/stack/f13Cash/random/denarius/med = 20,
+	/obj/item/stack/f13Cash/random/denarius/high = 5,
+	/obj/item/stack/f13Cash/random/aureus/low = 5,
+	/obj/item/stack/f13Cash/random/aureus/med = 10,
+	/obj/item/stack/f13Cash/random/aureus/high = 5
 ))
 
 GLOBAL_LIST_INIT(trash_tool, list(
@@ -275,6 +282,8 @@ GLOBAL_LIST_INIT(trash_misc, list(
 	/obj/item/light/bulb = 5,
 	/obj/item/reagent_containers/syringe = 5,
 	/obj/item/restraints/handcuffs = 5,
+	/obj/item/crafting/reloader = 5,
+	/obj/item/crafting/lunchbox = 5,
 	/obj/item/kitchen/knife/butcher = 5,
 	/obj/item/toy/crayon/spraycan = 5
 ))

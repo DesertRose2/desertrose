@@ -189,12 +189,6 @@
 "anY" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/bot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/beanbag,
-/obj/item/storage/fancy/ammobox/beanbag,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 10
 	},
@@ -933,6 +927,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
+/obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/cave)
 "bwT" = (
@@ -9706,16 +9701,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
-"obO" = (
-/obj/structure/rack,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/obj/item/storage/fancy/ammobox/lethalshot,
-/turf/open/floor/f13{
-	icon_state = "darkdirty"
-	},
-/area/f13/bunker)
 "ocx" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/r_wall/rust,
@@ -14995,8 +14980,6 @@
 /obj/structure/table,
 /obj/item/stamp/hos,
 /obj/item/gun/ballistic/shotgun/trench,
-/obj/item/storage/fancy/ammobox/beanbag,
-/obj/item/storage/fancy/ammobox/beanbag,
 /turf/open/floor/carpet/black,
 /area/f13/vault)
 "wbe" = (
@@ -16274,7 +16257,6 @@
 /obj/item/clothing/gloves/color/captain,
 /obj/item/clothing/head/caphat/parade,
 /obj/item/clothing/neck/cloak/cap,
-/obj/item/clothing/suit/armor/vest/capcarapace/alt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -18452,7 +18434,7 @@ sBg
 jPK
 jPK
 jPK
-obO
+pIl
 wYe
 kRy
 wYe
