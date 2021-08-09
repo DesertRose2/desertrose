@@ -348,6 +348,7 @@
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+	new /obj/item/clothing/under/harebell_dress(src)
 
 //Bartholomew The Apostle - pilotbland
 /obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()

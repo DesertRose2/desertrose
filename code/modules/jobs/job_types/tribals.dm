@@ -27,7 +27,7 @@
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	H.grant_language(/datum/language/wayfarer)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lighttribe)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ritual)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warclub)
@@ -35,6 +35,9 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowap)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowpoison)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowburn)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
 
 /*
 Tribal Chief

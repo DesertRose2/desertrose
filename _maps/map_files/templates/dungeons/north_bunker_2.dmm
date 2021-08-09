@@ -2459,6 +2459,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"Zs" = (
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "Zu" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/cola_float,
@@ -2822,7 +2826,7 @@ Qe
 go
 xS
 nf
-oj
+Zs
 xG
 Rl
 Rl

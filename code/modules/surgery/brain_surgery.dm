@@ -12,7 +12,15 @@
 	possible_locs = list(BODY_ZONE_HEAD)
 	requires_bodypart_type = BODYPART_ORGANIC
 
-	requires_trait = 3
+	requires_trait = 2
+
+/datum/surgery/brain_surgery/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	else
+		return FALSE
 
 /datum/surgery_step/fix_brain
 	name = "fix brain"

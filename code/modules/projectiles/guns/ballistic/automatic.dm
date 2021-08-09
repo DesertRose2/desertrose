@@ -517,7 +517,7 @@
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
-	suppressor_y_offset = 19
+	suppressor_y_offset = 17
 
 /obj/item/gun/ballistic/automatic/smg10mm
 	name = "10mm submachine gun"
@@ -963,6 +963,8 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_attachments = TRUE
 	can_suppress = TRUE
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
 	suppressor_state = "suppressor"
 	burst_size = 2
 	fire_delay = 3

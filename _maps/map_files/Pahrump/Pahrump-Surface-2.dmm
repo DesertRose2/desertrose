@@ -3209,7 +3209,7 @@
 /area/f13/building)
 "bHr" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC6"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9100,7 +9100,7 @@
 	dir = 8
 	},
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC5"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -10406,7 +10406,7 @@
 /area/f13/building)
 "gqf" = (
 /obj/structure/ladder/unbreakable{
-	icon_state = "manhole_open";
+	height = 2;
 	id = "VC7"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10422,14 +10422,10 @@
 	},
 /area/f13/tunnel)
 "gqE" = (
-/obj/structure/ladder/unbreakable{
-	desc = "A normal wasteland well with a ladder inside.";
+/obj/structure/ladder/unbreakable/well{
 	id = "VC4";
 	name = "ladder well";
 	pixel_x = -18
-	},
-/obj/structure/sink/well{
-	pixel_x = -15
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -15274,6 +15270,7 @@
 /area/f13/village)
 "jbR" = (
 /obj/structure/ladder/unbreakable{
+	height = 2;
 	icon_state = "manhole_open";
 	id = "VC3"
 	},
@@ -23412,9 +23409,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "orB" = (
-/obj/machinery/mineral/wasteland_trader/general{
-	icon_state = "trade_idle"
-	},
+/obj/machinery/mineral/wasteland_vendor/clothing,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city)
 "orZ" = (
@@ -24503,13 +24498,6 @@
 /obj/structure/chair/wood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
-"pcA" = (
-/obj/effect/decal/cleanable/generic,
-/obj/machinery/mineral/wasteland_trader/general{
-	icon_state = "trade_idle"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "pcG" = (
 /turf/closed/wall/f13/store,
 /area/f13/village)
@@ -34180,6 +34168,7 @@
 /area/f13/wasteland)
 "uSo" = (
 /obj/structure/ladder/unbreakable{
+	height = 2;
 	icon_state = "manhole_open";
 	id = "VC2"
 	},
@@ -39760,6 +39749,7 @@
 /area/f13/tunnel)
 "yip" = (
 /obj/structure/ladder/unbreakable{
+	height = 2;
 	icon_state = "manhole_open";
 	id = "VC1"
 	},
@@ -85656,7 +85646,7 @@ ktB
 ktB
 ktB
 ktB
-gcK
+ktB
 gcK
 gcK
 gcK
@@ -93183,7 +93173,7 @@ lDS
 mjL
 pim
 hNc
-pcA
+tbw
 ggK
 pCy
 sYX

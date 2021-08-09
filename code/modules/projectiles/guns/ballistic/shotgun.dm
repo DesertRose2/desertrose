@@ -110,6 +110,7 @@
 	can_bayonet = TRUE
 	knife_x_offset = 27
 	knife_y_offset = 13
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/boltaction/improvised
 	name = "Makeshift 7.62mm Rifle"
@@ -556,6 +557,7 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 	extra_damage = 5
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	name = "trail carbine"
@@ -573,6 +575,7 @@
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	name = "brush gun"
@@ -590,6 +593,7 @@
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/antimateriel
 	name = "anti-materiel rifle"

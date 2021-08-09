@@ -64,6 +64,7 @@ Colonel
 	head 		= /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
 	belt        = /obj/item/storage/belt/military/assault/ncr/crossbelt
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
+	neck		= /obj/item/storage/belt/holster/ncr_officer
 	suit_store  = /obj/item/gun/ballistic/automatic/marksman
 	gloves      = /obj/item/clothing/gloves/f13/leather
 	suit 		= /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
@@ -115,7 +116,7 @@ Captain
 	accessory 	= /obj/item/clothing/accessory/ncr/CPT
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/captain
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
-	neck 		= /obj/item/storage/belt/holster
+	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	ears = 		/obj/item/radio/headset/headset_ncr_com
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
@@ -188,7 +189,7 @@ Lieutenant
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT1
 	head 		= /obj/item/clothing/head/beret/ncr_lt
-	neck 		= /obj/item/storage/belt/holster/ncr
+	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	ears 		= /obj/item/radio/headset/headset_ncr_com
@@ -309,7 +310,7 @@ Sergeant First Class
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
 	accessory 		= /obj/item/clothing/accessory/ncr/FSGT
 	glasses 		= /obj/item/clothing/glasses/sunglasses/big
-	neck 			= /obj/item/storage/belt/holster/ncr
+	neck 			= /obj/item/storage/belt/holster/ncr_officer
 	ears 			= /obj/item/radio/headset/headset_ncr_com
 	suit 			= /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	head 			= /obj/item/clothing/head/f13/ncr
