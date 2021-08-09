@@ -138,7 +138,7 @@
 
 /datum/crafting_recipe/hydra
 	name = "Hydra"
-	result = /obj/item/reagent_containers/spray/hydra
+	result = /obj/item/reagent_containers/pill/patch/hydra
 	reqs = list(/datum/reagent/consumable/nuka_cola = 10,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 4,
 				/obj/item/reagent_containers/food/snacks/grown/broc = 3,
