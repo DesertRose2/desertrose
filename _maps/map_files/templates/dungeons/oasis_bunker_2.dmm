@@ -2684,11 +2684,11 @@
 	},
 /area/f13/bunker)
 "Vt" = (
-/obj/structure/simple_door/bunker,
-/obj/machinery/door/poddoor{
-	id = 69
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
-/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Vu" = (
 /obj/structure/table,
@@ -2928,9 +2928,6 @@
 /area/f13/bunker)
 "Yp" = (
 /obj/structure/table,
-/obj/machinery/button/door{
-	id = 69
-	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -3652,7 +3649,7 @@ Hy
 kj
 kj
 kj
-kj
+Zs
 kj
 Zs
 rW
@@ -3694,7 +3691,7 @@ Hy
 kj
 kj
 kj
-kj
+Zs
 kj
 kj
 kj
@@ -4328,7 +4325,7 @@ Xu
 Xu
 Xu
 Xu
-SM
+Vt
 rW
 Zs
 Zs
@@ -4532,7 +4529,7 @@ rW
 rW
 oo
 Xu
-Vt
+oo
 oo
 Xu
 SD
@@ -4574,7 +4571,7 @@ rW
 Zs
 Zs
 Zs
-Xu
+oo
 Xu
 vy
 Xu

@@ -279,13 +279,10 @@
 	},
 /area/f13/radiation)
 "hD" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
+/obj/structure/spider/stickyweb,
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/floor/plating/tunnel,
+/area/f13/radiation)
 "iC" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
@@ -631,7 +628,6 @@
 /area/f13/bunker)
 "tx" = (
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/syringe/medx,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
@@ -1855,7 +1851,7 @@ pf
 "}
 (8,1,1) = {"
 wR
-Xj
+hD
 OZ
 jc
 iK
@@ -2710,7 +2706,7 @@ bp
 NX
 mm
 xw
-hD
+SS
 bp
 bp
 bp
