@@ -497,7 +497,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "Nuka Cola"
 	glass_icon_state = "whiskeycolaglass"
 	glass_name = "whiskey cola"
-	glass_desc = "An innocent-looking mixture of cola and Whiskey. Delicious."
+	glass_desc = "An innocent-looking mixture of Nuka and Whiskey. Delicious."
 
 /datum/reagent/consumable/ethanol/martini
 	name = "Classic Martini"
