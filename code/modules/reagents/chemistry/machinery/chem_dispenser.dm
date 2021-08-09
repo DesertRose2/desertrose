@@ -511,7 +511,8 @@
 		/datum/reagent/consumable/grapejuice,
 		/datum/reagent/consumable/tea/forest,
 		/datum/reagent/consumable/tea/red,
-		/datum/reagent/consumable/tea/green
+		/datum/reagent/consumable/tea/green,
+		/datum/reagent/consumable/cherryjelly
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
