@@ -507,7 +507,11 @@
 		/datum/reagent/consumable/lemonjuice,
 		/datum/reagent/consumable/menthol,
 		/datum/reagent/consumable/sunset,
-		/datum/reagent/consumable/nuka_cola
+		/datum/reagent/consumable/nuka_cola,
+		/datum/reagent/consumable/grapejuice,
+		/datum/reagent/consumable/tea/forest,
+		/datum/reagent/consumable/tea/red,
+		/datum/reagent/consumable/tea/green
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
@@ -523,6 +527,7 @@
 	upgrade_reagents3 = list(
 		/datum/reagent/drug/mushroomhallucinogen,
 		/datum/reagent/consumable/nothing,
+		/datum/reagent/consumable/laughter,
 		/datum/reagent/consumable/peachjuice
 	)
 	emagged_reagents = list(
@@ -557,8 +562,9 @@
 	icon_state = "booze_dispenser"
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer
 	dispensable_reagents = list(
-		/datum/reagent/consumable/ethanol/beer,
 		/datum/reagent/consumable/ethanol/kahlua,
+		/datum/reagent/consumable/ethanol/beer,
+		/datum/reagent/consumable/ethanol/beer/light,
 		/datum/reagent/consumable/ethanol/whiskey,
 		/datum/reagent/consumable/ethanol/wine,
 		/datum/reagent/consumable/ethanol/vodka,
@@ -575,21 +581,25 @@
 		/datum/reagent/consumable/ethanol/creme_de_coconut,
 		/datum/reagent/consumable/ethanol/triple_sec,
 		/datum/reagent/consumable/ethanol/sake,
-		/datum/reagent/consumable/ethanol/applejack
+		/datum/reagent/consumable/ethanol/applejack,
+		/datum/reagent/consumable/ethanol/champagne,
+		/datum/reagent/consumable/ethanol/fernet
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/ethanol,
-		/datum/reagent/consumable/ethanol/fernet
-	)
-	upgrade_reagents2 = null
-	upgrade_reagents3 = null
-	emagged_reagents = list(
-		/datum/reagent/consumable/ethanol/alexander,
-		/datum/reagent/consumable/clownstears,
-		/datum/reagent/toxin/minttoxin,
 		/datum/reagent/consumable/ethanol/atomicbomb,
 		/datum/reagent/consumable/ethanol/thirteenloko,
-		/datum/reagent/consumable/ethanol/changelingsting
+		/datum/reagent/consumable/ethanol/changelingsting,
+		/datum/reagent/consumable/ethanol/alexander,
+		/datum/reagent/consumable/clownstears,
+		/datum/reagent/consumable/ethanol/beer/green
+	)
+	upgrade_reagents2 = null
+	upgrade_reagents3 = list(
+		/datum/reagent/medicine/antihol
+	)
+	emagged_reagents = list(
+		/datum/reagent/toxin/minttoxin,
 	)
 
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //fully ugpraded stock parts, emagged
