@@ -668,6 +668,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"Fc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "Fx" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -2597,7 +2602,7 @@ lM
 Rj
 zs
 BQ
-ZL
+Fc
 BH
 BH
 QU
