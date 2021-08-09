@@ -333,12 +333,3 @@
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	volume = 100
 	list_reagents = list(/datum/reagent/toxin/plantbgone = 100)
-
-//Chem/Drug
-/obj/item/reagent_containers/spray/hydra
-	name = "hydra bottle"
-	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
-	icon = 'icons/obj/chemical.dmi'
-	icon_state = "hydra"
-	volume = 15
-	list_reagents = list(/datum/reagent/medicine/hydra = 15)

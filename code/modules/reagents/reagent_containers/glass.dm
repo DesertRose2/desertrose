@@ -434,7 +434,7 @@
 	/obj/item/reagent_containers/pill/buffout,
 	/obj/item/reagent_containers/pill/cateye,
 	/obj/item/reagent_containers/pill/patch/jet,
-	/obj/item/reagent_containers/spray/hydra
+	/obj/item/reagent_containers/pill/patch/hydra
 	)
 
 
