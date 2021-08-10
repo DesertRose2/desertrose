@@ -740,7 +740,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "bfN" = (
-/mob/living/simple_animal/hostile/raider/thief,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib3-old";
 	pixel_y = 12
@@ -5457,13 +5456,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/bunker)
-"hTO" = (
-/mob/living/simple_animal/hostile/raider,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
-	},
-/area/f13/bunker)
 "hUS" = (
 /obj/structure/urinal{
 	pixel_y = 32
@@ -9123,7 +9115,6 @@
 /area/f13/vault)
 "nqg" = (
 /obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/raider,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -11267,16 +11258,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
-"qof" = (
-/obj/machinery/shower{
-	dir = 8
-	},
-/mob/living/simple_animal/hostile/raider,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "qqg" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13{
@@ -11738,12 +11719,6 @@
 "qYk" = (
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance,
-/area/f13/bunker)
-"qYV" = (
-/mob/living/simple_animal/hostile/raider,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
-	},
 /area/f13/bunker)
 "rag" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13322,12 +13297,6 @@
 "txX" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
-"tyb" = (
-/mob/living/simple_animal/hostile/raider/ranged/legendary,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
-	},
-/area/f13/bunker)
 "tyy" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -13466,12 +13435,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/vault)
-"tMJ" = (
-/mob/living/simple_animal/hostile/raider/baseball,
-/turf/open/floor/plasteel/f13{
-	icon_state = "plating"
-	},
-/area/f13/bunker)
 "tMY" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -13576,12 +13539,6 @@
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
-	},
-/area/f13/bunker)
-"tVb" = (
-/mob/living/simple_animal/hostile/raider/ranged,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
 "tWv" = (
@@ -15017,11 +14974,6 @@
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
-"wew" = (
-/obj/structure/chair/wood,
-/mob/living/simple_animal/hostile/raider/firefighter,
-/turf/open/floor/f13/wood,
-/area/f13/bunker)
 "wey" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
@@ -15617,20 +15569,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/bunker)
-"wLf" = (
-/obj/structure/chair/wood{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/raider/ranged,
-/turf/open/floor/f13/wood,
-/area/f13/bunker)
-"wLC" = (
-/mob/living/simple_animal/hostile/raider/thief,
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/turf/open/floor/f13/wood,
-/area/f13/bunker)
 "wMC" = (
 /obj/structure/bookcase/manuals/research_and_development,
 /obj/structure/window/reinforced/tinted,
@@ -15668,11 +15606,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
-"wPp" = (
-/obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/raider/ranged,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "wPO" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/candle_box,
@@ -68724,10 +68657,10 @@ wbX
 krr
 wbX
 sWe
-trQ
+wbX
 xXn
 wbX
-rhx
+wbX
 aUx
 cPK
 wbX
@@ -68983,7 +68916,7 @@ aUx
 aUx
 aUx
 xLK
-osR
+wbX
 wbX
 aUx
 wbX
@@ -71546,7 +71479,7 @@ heT
 heT
 heT
 ocx
-wLC
+fds
 jsm
 sST
 ozr
@@ -71559,7 +71492,7 @@ ifu
 sST
 nCC
 oMS
-wLf
+oMS
 dVq
 nue
 yhv
@@ -72071,7 +72004,7 @@ xXn
 wbX
 ifu
 sST
-wew
+shQ
 kcU
 sST
 aUx
@@ -74119,7 +74052,7 @@ anf
 aWe
 jZx
 kML
-tMJ
+kML
 aWe
 wbX
 wbX
@@ -74380,13 +74313,13 @@ ocx
 tMY
 wbX
 wvo
-wPp
+wvo
 wvo
 rhx
 wbX
 dVq
 sgc
-ced
+wbX
 wbX
 wbX
 wbX
@@ -75686,7 +75619,7 @@ wbX
 xXn
 mZe
 wbX
-ckX
+wbX
 aUx
 heT
 heT
@@ -75919,7 +75852,7 @@ mZe
 dXo
 aUx
 dVq
-byR
+wbX
 wbX
 tXJ
 wvo
@@ -76444,7 +76377,7 @@ epm
 wmV
 qxW
 uUE
-ced
+wbX
 wTu
 aUx
 xXn
@@ -76712,7 +76645,7 @@ aUx
 nmg
 epm
 wbX
-ckX
+wbX
 wbX
 epm
 apt
@@ -76938,7 +76871,7 @@ sBO
 oAS
 iiK
 xXn
-osR
+wbX
 uUS
 aWe
 gpZ
@@ -77210,7 +77143,7 @@ wbX
 wbX
 wbX
 dVq
-tVb
+jHW
 iZA
 iZA
 iZA
@@ -77720,7 +77653,7 @@ aUx
 mQs
 aUx
 dVq
-rhx
+wbX
 wbX
 xXn
 lKA
@@ -77958,11 +77891,11 @@ heT
 heT
 heT
 aUx
-qof
+iPO
 iOa
 aUx
 gvJ
-ckX
+wbX
 wgN
 aWe
 wbX
@@ -78234,7 +78167,7 @@ ocx
 ppS
 mwa
 ocx
-ced
+wbX
 wbX
 wbX
 vbG
@@ -78509,7 +78442,7 @@ qOp
 iZA
 jHW
 ljl
-hTO
+iZA
 epm
 apt
 apt
@@ -79009,9 +78942,9 @@ aUx
 aUx
 aUx
 aUx
-qYV
+jHW
 iZA
-tyb
+jHW
 mxp
 nWy
 iZA
