@@ -745,6 +745,16 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+	
+/obj/item/clothing/suit/armor/f13/raider/weebcloak
+	name = "dark trenchcloak"
+	desc = "(IV) A dark leather coat, worn over your shoulders for maximum coolness."
+	icon_state = "weebcloak"
+	item_state = "weebcloak"
+
+/obj/item/clothing/suit/armor/f13/raider/weebcloak/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/shankduster
 	name = "follower's duster"
