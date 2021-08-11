@@ -7950,7 +7950,9 @@
 /area/f13/building)
 "eRU" = (
 /obj/structure/grille,
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters{
+	id = "office"
+	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
@@ -8614,10 +8616,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
 "fjC" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12
-	},
+/obj/machinery/chem_master/advanced,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -10546,7 +10545,9 @@
 	},
 /area/f13/village)
 "gtY" = (
-/obj/machinery/chem_heater,
+/obj/structure/table,
+/obj/item/reagent_containers/glass/beaker/large/styptic,
+/obj/item/reagent_containers/glass/beaker/large/styptic,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -11764,9 +11765,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/city)
 "hft" = (
-/obj/machinery/door/airlock/research,
-/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
-/area/f13/city)
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "hfz" = (
 /obj/machinery/computer/arcade,
 /obj/effect/decal/cleanable/dirt,
@@ -15058,13 +15064,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "iVE" = (
-/obj/structure/table,
-/obj/item/reagent_containers/glass/beaker/large/styptic,
-/obj/item/reagent_containers/glass/beaker/large/styptic,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "office"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/city)
 "iVW" = (
 /obj/structure/sink{
 	dir = 8
@@ -15744,7 +15750,7 @@
 	},
 /area/f13/wasteland)
 "jrX" = (
-/obj/machinery/chem_master,
+/obj/machinery/chem_heater,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -26789,6 +26795,7 @@
 	pixel_x = 30;
 	pixel_y = -3
 	},
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/followers)
 "qvH" = (
@@ -42142,7 +42149,7 @@ gcK
 bRq
 jeX
 cPZ
-cPZ
+hft
 fjC
 grj
 cPZ
@@ -42911,11 +42918,11 @@ gcK
 gcK
 gcK
 vDd
-jrX
 eUQ
-iVE
-fmX
 gtY
+cPZ
+fmX
+cPZ
 hxn
 jrX
 vDd
@@ -48089,7 +48096,7 @@ sfi
 sfi
 mgo
 agi
-eRU
+iVE
 ufP
 koD
 unI
@@ -48346,7 +48353,7 @@ owq
 owq
 mgo
 fdn
-eRU
+iVE
 xZu
 koD
 unI
@@ -56581,7 +56588,7 @@ gRf
 xWT
 xWT
 tiG
-hft
+tiG
 xWT
 xWT
 ydH

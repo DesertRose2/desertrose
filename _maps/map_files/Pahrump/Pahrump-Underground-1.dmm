@@ -2129,6 +2129,14 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/tunnel)
+"bZx" = (
+/obj/structure/chair/f13chair1{
+	dir = 1
+	},
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/f13/followers)
 "caQ" = (
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/dirt{
@@ -6324,17 +6332,6 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/brotherhood/offices1st)
-"fTt" = (
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/followers)
 "fUn" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -6823,6 +6820,9 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"gtR" = (
+/turf/closed/wall/f13/wood/interior,
+/area/f13/followers)
 "gtY" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/indestructible/ground/inside/mountain,
@@ -7027,6 +7027,14 @@
 	},
 /turf/closed/wall,
 /area/f13/tcoms)
+"gIh" = (
+/obj/structure/chair/comfy/black,
+/obj/effect/landmark/start/f13/followersadministrator,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/followers)
 "gIy" = (
 /obj/machinery/vending/cola,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -7308,12 +7316,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "reddirtyfull"
-	},
+/turf/closed/wall/f13/wood/interior,
 /area/f13/followers)
 "gWK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12627,6 +12630,13 @@
 	icon_state = "yellowrustysolid"
 	},
 /area/f13/brotherhood/rnd)
+"mxg" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/f13/followers)
 "mxh" = (
 /obj/structure/rack,
 /obj/item/clothing/under/f13/recon,
@@ -14869,6 +14879,11 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"ozT" = (
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/f13/followers)
 "oAt" = (
 /obj/structure/bed/mattress,
 /turf/open/floor/f13/wood,
@@ -14913,6 +14928,9 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"oDD" = (
+/turf/closed/indestructible/f13/matrix,
+/area/f13/followers)
 "oEt" = (
 /obj/structure/flora/junglebush/b,
 /obj/structure/spacevine{
@@ -16752,6 +16770,14 @@
 	icon_state = "casino"
 	},
 /area/f13/brotherhood/offices2nd)
+"qrh" = (
+/obj/structure/table,
+/obj/item/paper_bin/carbon,
+/obj/item/pen/fountain,
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/f13/followers)
 "qrJ" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -18802,6 +18828,12 @@
 "seP" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/f13/brotherhood/rnd)
+"seW" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/followers)
 "sfi" = (
 /obj/effect/landmark/start/f13/scribe,
 /obj/effect/decal/cleanable/dirt,
@@ -19220,11 +19252,10 @@
 	},
 /area/f13/brotherhood/leisure)
 "sCQ" = (
-/obj/structure/chair/comfy/black,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/effect/landmark/start/f13/followersadministrator,
+/obj/structure/chair/comfy/black,
 /turf/open/floor/wood,
 /area/f13/followers)
 "sDo" = (
@@ -20554,6 +20585,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "ulr" = (
@@ -24136,12 +24170,12 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+aHw
+aHw
+aHw
+aHw
+aHw
+aHw
 aHw
 aHw
 aHw
@@ -24393,12 +24427,12 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+aHw
+xOw
+mxg
+bZx
+ozT
+tFr
 aHw
 uwt
 veq
@@ -24650,12 +24684,12 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+aHw
+gIh
+qrh
+bZx
+ozT
+tFr
 aHw
 xCs
 vgo
@@ -24907,13 +24941,13 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
 aHw
+xOw
+ozT
+ozT
+ozT
+xOw
+seW
 dEy
 dEy
 aHw
@@ -25414,11 +25448,11 @@ aHw
 eom
 fmf
 fkv
-fTt
+gWc
 fbD
 fmf
 fkv
-fTt
+gWc
 epZ
 fmf
 fkv
@@ -25671,11 +25705,11 @@ aHw
 epH
 fbD
 fbD
-fTt
+gWc
 epH
 fbD
 fbD
-fTt
+gWc
 fNr
 fbD
 fbD
@@ -25928,11 +25962,11 @@ aHw
 epZ
 fbD
 fbD
-fTt
+gWc
 epZ
 fbD
 eom
-fTt
+gWc
 fbD
 fbD
 eom
@@ -26692,7 +26726,7 @@ uoO
 uoO
 uoO
 uoO
-aHw
+oDD
 dEy
 dEy
 dEy
@@ -27470,7 +27504,7 @@ aHw
 eom
 fbD
 epZ
-fTt
+gtR
 eom
 fbD
 epZ
@@ -27727,7 +27761,7 @@ aHw
 fbD
 fbD
 fNr
-fTt
+gWc
 fbD
 fbD
 fNr
@@ -27984,7 +28018,7 @@ aHw
 fkv
 fAs
 fbD
-fTt
+gWc
 fkv
 fAs
 fbD
