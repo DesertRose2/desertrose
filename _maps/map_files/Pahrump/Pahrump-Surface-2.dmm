@@ -17023,10 +17023,6 @@
 	},
 /turf/closed/wall/rust,
 /area/f13/caves)
-"kiF" = (
-/obj/machinery/ore_silo,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/city)
 "kiK" = (
 /obj/structure/decoration/sign{
 	desc = "It's a portrait of a person you don't know anything about.";
@@ -52471,7 +52467,7 @@ brH
 yas
 aVU
 hct
-kiF
+kNu
 kNu
 vWd
 brH

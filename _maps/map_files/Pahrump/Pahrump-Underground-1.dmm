@@ -16060,7 +16060,6 @@
 	},
 /area/f13/tunnel)
 "pLl" = (
-/obj/machinery/ore_silo,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
