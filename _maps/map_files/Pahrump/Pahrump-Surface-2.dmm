@@ -10423,6 +10423,7 @@
 /area/f13/tunnel)
 "gqE" = (
 /obj/structure/ladder/unbreakable/well{
+	height = 2;
 	id = "VC4";
 	name = "ladder well";
 	pixel_x = -18

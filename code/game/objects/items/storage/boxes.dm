@@ -1417,8 +1417,9 @@ obj/item/storage/box/stingbangs
 	desc = "IDs for issue to new Volunteers"
 
 /obj/item/storage/box/ids/followers/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/card/id/silver
+	var/static/items_inside = list(
+		/obj/item/card/id/silver=7
+		)
 
 /obj/item/storage/box/deputy_badges
 	name = "box of spare badges"

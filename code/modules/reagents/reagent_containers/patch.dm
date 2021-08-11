@@ -84,3 +84,11 @@
 	icon = 'icons/obj/syringe.dmi'
 	icon_state = "med-x"
 	item_state = "med-x"
+
+/obj/item/reagent_containers/pill/patch/hydra
+	name = "hydra bottle"
+	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "hydra"
+	self_delay = 10
+	list_reagents = list(/datum/reagent/medicine/hydra = 10)
