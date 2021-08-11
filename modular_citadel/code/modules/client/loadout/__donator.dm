@@ -519,7 +519,7 @@
 						"arkadec",
 						"pisshole",
 						"psycoticone",
-						"novaskelly)
+						"novaskelly")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
