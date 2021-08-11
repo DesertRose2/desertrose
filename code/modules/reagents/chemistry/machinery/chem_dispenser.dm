@@ -535,8 +535,7 @@
 		/datum/reagent/drug/mushroomhallucinogen,
 		/datum/reagent/consumable/nothing,
 		/datum/reagent/consumable/laughter,
-		/datum/reagent/consumable/peachjuice,
-		/datum/reagent/consumable/ethanol/hooch
+		/datum/reagent/consumable/peachjuice
 	)
 	emagged_reagents = list(
 		/datum/reagent/toxin/mindbreaker,
@@ -603,7 +602,8 @@
 		/datum/reagent/consumable/ethanol/beer/green
 	)
 	upgrade_reagents2 = list(
-		/datum/reagent/consumable/ethanol/moonshine
+		/datum/reagent/consumable/ethanol/moonshine,
+		/datum/reagent/consumable/ethanol/hooch
 	)
 	upgrade_reagents3 = list(
 		/datum/reagent/medicine/antihol
