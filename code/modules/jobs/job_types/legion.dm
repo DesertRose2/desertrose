@@ -9,6 +9,9 @@
 	enforces = "The Legion expects: Obeying orders of superiors. A roman style name. Wearing the uniform, unless acting as a nonlethal infiltrator."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Establish patrols and fortifications around the main road", "Leadership recommends the following goal for this week: Acquire and train slaves")
 
+	access = list(ACCESS_LEGION)
+	minimal_access = list(ACCESS_LEGION)
+
 /datum/outfit/job/CaesarsLegion
 	id = null
 	ears = null
@@ -22,8 +25,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
-/*	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)*/ //I have no clue how to fucking fix this, it keeps breaking legion crafting yet should code-wise works and compiles fine.
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
@@ -209,7 +212,7 @@ Orator
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/ammo_box/magazine/m9mm=3,
-		/obj/item/storage/box/ids/follower=1,
+		/obj/item/storage/box/ids/legfollower=1,
 		/obj/item/storage/bag/money/small/legion=1)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

@@ -248,6 +248,7 @@
 //Jack Torres - karlov
 /obj/item/storage/box/large/custom_kit/jacktorres/PopulateContents()
 	new /obj/item/clothing/head/helmet/f13/boonie_hat(src)
+	new /obj/item/modkit/lieutenantplatecarrier(src)
 
 //Alice Dakota - muhsollini
 /obj/item/storage/box/large/custom_kit/alicedakota/PopulateContents()
@@ -347,6 +348,7 @@
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+	new /obj/item/clothing/under/harebell_dress(src)
 
 //Bartholomew The Apostle - pilotbland
 /obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()

@@ -479,7 +479,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/whiskey_cola
 	name = "Whiskey Cola"
-	description = "Whiskey, mixed with cola. Surprisingly refreshing."
+	description = "Whiskey, mixed with Cola. Surprisingly refreshing."
 	color = "#3E1B00" // rgb: 62, 27, 0
 	boozepwr = 70
 	quality = DRINK_NICE
@@ -487,6 +487,17 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_icon_state = "whiskeycolaglass"
 	glass_name = "whiskey cola"
 	glass_desc = "An innocent-looking mixture of cola and Whiskey. Delicious."
+	
+/datum/reagent/consumable/ethanol/whiskey_nuka
+	name = "Whiskey Nuka"
+	description = "Whiskey, mixed with Nuka-Cola. Surprisingly refreshing."
+	color = "#3E1B00" // rgb: 62, 27, 0
+	boozepwr = 70
+	quality = DRINK_NICE
+	taste_description = "Nuka Cola"
+	glass_icon_state = "whiskeycolaglass"
+	glass_name = "whiskey cola"
+	glass_desc = "An innocent-looking mixture of Nuka and Whiskey. Delicious."
 
 /datum/reagent/consumable/ethanol/martini
 	name = "Classic Martini"

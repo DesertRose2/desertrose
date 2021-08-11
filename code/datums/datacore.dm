@@ -146,7 +146,7 @@
 		if(rank in GLOB.tribal_positions)
 			tribe[name] = rank
 			department = 1
-		if (rank == "Great Khan")
+		if (rank in GLOB.khan_positions)
 			khan[name] = rank
 			department = 1
 		if(rank in GLOB.vault_positions)

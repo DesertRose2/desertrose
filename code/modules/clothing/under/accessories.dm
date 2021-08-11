@@ -652,13 +652,13 @@
 	item_color = "off-duty-officer-pin"
 
 /obj/item/clothing/accessory/legion/prime
-	name = "Legion Prime  rank pins"
+	name = "Legion Prime rank pins"
 	desc = "A pin for the Primes within the Legion."
 	icon_state = "off-duty-prime-pin"
 	item_color = "off-duty-prime-pin"
 
 /obj/item/clothing/accessory/legion/explorer
-	name = "Legion Explorer Corps pins"
-	desc = "A pin for the Veterans and Decani within the Legion."
+	name = "Legion Explorer corps pins"
+	desc = "A pin for the Explorers and Venators within the Legion."
 	icon_state = "off-duty-explorer-corps-pin"
 	item_color = "off-duty-explorer-corps-pin"

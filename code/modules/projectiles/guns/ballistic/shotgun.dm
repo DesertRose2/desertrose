@@ -110,6 +110,7 @@
 	can_bayonet = TRUE
 	knife_x_offset = 27
 	knife_y_offset = 13
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/boltaction/improvised
 	name = "Makeshift 7.62mm Rifle"
@@ -556,6 +557,7 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 	extra_damage = 5
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	name = "trail carbine"
@@ -573,6 +575,7 @@
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	name = "brush gun"
@@ -590,6 +593,7 @@
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	untinkerable = FALSE
 
 /obj/item/gun/ballistic/shotgun/antimateriel
 	name = "anti-materiel rifle"
@@ -610,6 +614,20 @@
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
 	can_attachments = TRUE
 	//projectile_speed = 0
+
+/*/obj/item/gun/ballistic/shotgun/antimateriel/incinerator
+	name = "incinerator"
+	desc = "A heavy cannon reminiscent of an old flamethrower, firing concentrated balls of fire over a single constant stream."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	lefthand_file = 'icons/mob/inhands/64x64_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
+	icon_state = "incinerator"
+	item_state = "incinerator"
+	zoomable = FALSE
+	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
+	slowdown = 1
+	casing_ejector = FALSE
+*/
 
 /obj/item/gun/ballistic/shotgun/kar98k
 	name = "\improper karabiner 98k"

@@ -187,7 +187,13 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 	"Raider",
 	"Outlaw",
-	"Great Khan" //DA KHANZ, BAY BEEEEEEE
+	"Great Khan", //DA KHANZ, BAY BEEEEEEE
+	"Genghis Khan"
+))
+
+GLOBAL_LIST_INIT(khan_positions, list(
+	"Genghis Khan",
+	"Great Khan"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(

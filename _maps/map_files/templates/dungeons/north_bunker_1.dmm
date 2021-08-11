@@ -129,7 +129,6 @@
 /area/f13/bunker)
 "eI" = (
 /obj/structure/table,
-/obj/item/reagent_containers/syringe/medx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -514,6 +513,10 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/bunker)
+"qn" = (
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/bunker)
 "qu" = (
 /obj/effect/decal/waste,
@@ -2059,7 +2062,7 @@ Rl
 Rl
 Rl
 Eg
-tQ
+qn
 tQ
 tQ
 wD

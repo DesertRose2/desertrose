@@ -517,7 +517,7 @@
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
-	suppressor_y_offset = 19
+	suppressor_y_offset = 17
 
 /obj/item/gun/ballistic/automatic/smg10mm
 	name = "10mm submachine gun"
@@ -963,7 +963,9 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_attachments = TRUE
 	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+	suppressor_state = "suppressor"
 	burst_size = 2
 	fire_delay = 3
 	burst_shot_delay = 3
@@ -1279,8 +1281,7 @@
 /obj/item/gun/ballistic/automatic/commando/dmr
 	name = "commando battle rifle"
 	desc = "An integrally suppressed bolt action carbine. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy on a rifle firing .45 APC; specifically .45 stick-mags that are side-mounted.. for some reason."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_state = "destroyer_carbine"
+	icon_state = "destroyer"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	extra_damage = 4

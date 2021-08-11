@@ -82,5 +82,13 @@
 	desc = "Contains Med-X, a powerful analgesic drug that increases the user's damage resistance. Highly addictive, and prolonged presence in the body comes with severe side effects."
 	list_reagents = list(/datum/reagent/medicine/medx = 10)
 	icon = 'icons/obj/syringe.dmi'
-	icon_state = "medipen"
-	item_state = "medipen"
+	icon_state = "med-x"
+	item_state = "med-x"
+
+/obj/item/reagent_containers/pill/patch/hydra
+	name = "hydra bottle"
+	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "hydra"
+	self_delay = 10
+	list_reagents = list(/datum/reagent/medicine/hydra = 10)
