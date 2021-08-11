@@ -64,7 +64,7 @@
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/lasmusket=1,
+	/obj/item/gun/ballistic/rifle/lasmusket=1,
 	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,
 	/obj/item/ammo_box/lasmusket = 2)
 
@@ -326,7 +326,11 @@
 /datum/outfit/loadout/musketeer
 	name = "Musketeer"
 	backpack_contents = list(
+<<<<<<< Updated upstream
 	/obj/item/gun/energy/laser/aer9=1,
+=======
+	/obj/item/gun/ballistic/rifle/lasmusket=1,
+>>>>>>> Stashed changes
 	/obj/item/clothing/head/f13/cowboy=1,
 	/obj/item/stock_parts/cell/ammo/mfc=2,
 	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1
@@ -630,7 +634,7 @@
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/remington=1,
+	/obj/item/gun/ballistic/rifle/remington=1,
 	/obj/item/ammo_box/a308box=1,
 	/obj/item/kitchen/knife/combat=1,
 	/obj/item/clothing/under/f13/gentlesuit=1,

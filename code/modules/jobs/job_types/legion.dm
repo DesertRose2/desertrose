@@ -440,7 +440,7 @@ Decanii
 
 /datum/outfit/loadout/primedecline
 	name = "Line Officer"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/gun/ballistic/revolver/revolver45=1,
@@ -533,7 +533,7 @@ Decanii
 
 /datum/outfit/loadout/recdecline
 	name = "Libratus (Line)"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3
 	)
@@ -595,7 +595,7 @@ Vexillarius
 /datum/outfit/loadout/vexsupport
 	name = "Support Vexillarius"
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = 	/obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=1,
 		/obj/item/grenade/smokebomb=2,
@@ -777,7 +777,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/primeline
 	name = "Milites (Line)"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3)
 
@@ -846,7 +846,7 @@ Recruit Legionary
 /datum/outfit/loadout/recruitlegscout
 	name = "Scout"
 	head = 	/obj/item/clothing/head/helmet/f13/legion/recruit
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/a357=3,
 		/obj/item/binoculars=1
@@ -891,7 +891,7 @@ Venator
 
 /datum/outfit/loadout/venatorstandard
 	name = "Standard"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
 		/obj/item/ammo_box/tube/c4570=3

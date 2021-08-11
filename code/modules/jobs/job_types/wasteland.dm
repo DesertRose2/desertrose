@@ -162,7 +162,7 @@ Great Khans
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = pick(
-		/obj/item/gun/ballistic/shotgun/automatic/hunting/trail, \
+		/obj/item/gun/ballistic/rifle/automatic/hunting/trail, \
 		/obj/item/gun/ballistic/shotgun/hunting, \
 		/obj/item/gun/ballistic/revolver/m29, \
 		/obj/item/gun/ballistic/automatic/pistol/ninemil)
@@ -301,7 +301,7 @@ Raider
 
 	suit_store = pick(
 		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/shotgun/remington, \
+		/obj/item/gun/ballistic/rifle/remington, \
 		/obj/item/gun/ballistic/revolver/zipgun, \
 		/obj/item/gun/ballistic/revolver/pipe_rifle, \
 		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
@@ -331,6 +331,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm		
 	l_hand = /obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
+<<<<<<< Updated upstream
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault=2
 		)
@@ -339,6 +340,18 @@ Raider
 	name = "Con Artist"
 	suit = /obj/item/clothing/under/f13/bennys
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/mk23
+=======
+		/obj/item/twohanded/baseball/spiked=1,
+		/obj/item/gun/ballistic/rifle/remington=1,
+		/obj/item/ammo_box/a308=2,
+		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
+		/obj/item/megaphone=1)
+
+/datum/outfit/loadout/raider_blast
+	name = "Blastmaster"
+	suit = /obj/item/clothing/suit/armor/f13/raider/blastmaster
+	head = /obj/item/clothing/head/helmet/f13/raider/blastmaster
+>>>>>>> Stashed changes
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=3,
 		/obj/item/switchblade=1,
@@ -468,8 +481,35 @@ Raider
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=2,
+<<<<<<< Updated upstream
 		/obj/item/reagent_containers/pill/patch/healingpowder=3
 		)
+=======
+		/obj/item/storage/backpack/spearquiver=1)
+
+/datum/outfit/loadout/raider_sheriff
+	name = "Desperado"
+	suit = /obj/item/clothing/suit/armor/vest/leather
+	uniform = /obj/item/clothing/under/syndicate/tacticool
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/m29=1,
+		/obj/item/ammo_box/m44=2,
+		/obj/item/gun/ballistic/rifle/automatic/hunting/cowboy=1,
+		/obj/item/ammo_box/tube/a357=2)
+
+/datum/outfit/loadout/raider_mafia
+	name = "Town Mafia"
+	suit = /obj/item/clothing/suit/armor/f13/leather_jacket
+	uniform = /obj/item/clothing/under/f13/bennys
+	glasses = /obj/item/clothing/glasses/sunglasses
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/ninemil=1,
+		/obj/item/ammo_box/magazine/m9mm=2,
+		/obj/item/card/id/dogtag/town/mafia=1,
+		/obj/item/toy/cards/deck=1)
+>>>>>>> Stashed changes
 
 /datum/outfit/loadout/raider_vault
 	name = "Dishelved Vaultie"
@@ -541,7 +581,7 @@ Raider
 		/obj/item/kitchen/knife)
 	suit_store = pick(
 	/obj/item/gun/ballistic/revolver/detective, \
-	/obj/item/gun/ballistic/shotgun/remington, \
+	/obj/item/gun/ballistic/rifle/remington, \
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)
 
