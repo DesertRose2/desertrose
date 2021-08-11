@@ -401,8 +401,8 @@
 						"nokele",
 						"leebic",
 						"akforeplay",
-						"kirshbia",
-						"arkadec")
+						"arkadec",
+						"novaskelly")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -417,7 +417,8 @@
 						"edisnij",
 						"pisshole",
 						"psycoticone",
-						"ollieoxen")
+						"ollieoxen",
+						"kirshbia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -517,7 +518,8 @@
 						"kirshbia",
 						"arkadec",
 						"pisshole",
-						"psycoticone")
+						"psycoticone",
+						"novaskelly)
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
