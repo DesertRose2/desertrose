@@ -218,7 +218,6 @@
 
 /datum/crafting_recipe/warclub
 	name = "Carve Wooden Warclub"
-	always_availible = FALSE
 	result = /obj/item/claymore/machete/warclub
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
@@ -234,6 +233,49 @@
 				/obj/item/stack/sheet/sinew = 3)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_PRIMAL
+
+/datum/crafting_recipe/tribalwar/sturdybow
+	name = "Sturdy Bow"
+	result = /obj/item/gun/ballistic/automatic/sturdybow
+	time = 80
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/cloth = 5)
+	category = CAT_PRIMAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalwar/silverbow
+	name = "Silver Bow"
+	result = /obj/item/gun/ballistic/automatic/silverbow
+	time = 80
+	reqs = list(/obj/item/stack/sheet/mineral/silver = 10,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/crafting/metalparts = 5)
+	category = CAT_PRIMAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalwar/bonebow
+	name = "Deathclaw Bow"
+	result = /obj/item/gun/ballistic/automatic/bonebow
+	time = 80
+	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
+				/obj/item/stack/sheet/bone = 10,
+				/obj/item/stack/sheet/sinew = 5)
+	category = CAT_PRIMAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalwar/crossbow
+	name = "CrossBow"
+	result = /obj/item/gun/ballistic/automatic/crossbow
+	time = 180
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/stack/sheet/glass = 4)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
 
 /datum/crafting_recipe/tribe_quiver
 	name = "Craft Quiver and Arrows"
@@ -275,7 +317,6 @@
 
 /datum/crafting_recipe/warmace
 	name = "Carve Wooden Warmace"
-	always_availible = FALSE
 	result = /obj/item/twohanded/sledgehammer/warmace
 	time = 100
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 20,
@@ -304,7 +345,6 @@
 
 /datum/crafting_recipe/arrowap
 	name = "Sturdy Arrow"
-	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/ap
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -315,7 +355,6 @@
 
 /datum/crafting_recipe/arrowpoison
 	name = "Poison Arrow"
-	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/poison
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
@@ -326,7 +365,6 @@
 
 /datum/crafting_recipe/arrowburn
 	name = "Burn Posion Arrow"
-	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/burning
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
@@ -335,52 +373,6 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
-
-/datum/crafting_recipe/tribalwar/sturdybow
-	name = "Sturdy Bow"
-	always_availible = FALSE
-	result = /obj/item/gun/ballistic/automatic/sturdybow
-	time = 80
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
-				/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/cloth = 5)
-	category = CAT_PRIMAL
-	tools = list(TOOL_WORKBENCH)
-
-/datum/crafting_recipe/tribalwar/silverbow
-	name = "Silver Bow"
-	always_availible = FALSE
-	result = /obj/item/gun/ballistic/automatic/silverbow
-	time = 80
-	reqs = list(/obj/item/stack/sheet/mineral/silver = 10,
-				/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/crafting/metalparts = 5)
-	category = CAT_PRIMAL
-	tools = list(TOOL_WORKBENCH)
-
-/datum/crafting_recipe/tribalwar/bonebow
-	name = "Deathclaw Bow"
-	always_availible = FALSE
-	result = /obj/item/gun/ballistic/automatic/bonebow
-	time = 80
-	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
-				/obj/item/stack/sheet/bone = 10,
-				/obj/item/stack/sheet/sinew = 5)
-	category = CAT_PRIMAL
-	tools = list(TOOL_WORKBENCH)
-
-/datum/crafting_recipe/tribalwar/crossbow
-	name = "Scrap Crossbow"
-	result = /obj/item/gun/ballistic/automatic/crossbow
-	time = 180
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/alloys = 1,
-				/obj/item/stack/sheet/glass = 4)
-	category = CAT_WEAPONRY
-	category = CAT_WEAPON
-	tools = list(TOOL_WORKBENCH)
 
 /*
 /datum/crafting_recipe/voodoo

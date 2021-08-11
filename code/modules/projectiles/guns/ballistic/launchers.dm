@@ -166,8 +166,8 @@
 		return OXYLOSS
 
 /obj/item/gun/ballistic/automatic/tribalbow
-	name = "Wayfarer's bow"
-	desc = "A simple wooden short bow with small pieces of turquiose."
+	name = "Wayfarer bow"
+	desc = "A simple wooden short bow with small pieces of turquiose and etched with symbols of the Wayfarer tribe."
 	icon_state = "tribalbow"
 	item_state = "tribalbow"
 	w_class = WEIGHT_CLASS_NORMAL
