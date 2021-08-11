@@ -32,7 +32,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warclub)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warmace)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowap)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowpoison)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowburn)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)

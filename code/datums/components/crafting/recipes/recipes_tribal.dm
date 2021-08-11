@@ -304,7 +304,6 @@
 
 /datum/crafting_recipe/arrowap
 	name = "Sturdy Arrow"
-	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/ap
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
