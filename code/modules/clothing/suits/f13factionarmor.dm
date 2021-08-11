@@ -753,22 +753,11 @@
 //Wayfarer
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
-	desc = "(III) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
+	desc = "(IV) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list("tier" = 3, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
-)
-
-/obj/item/clothing/suit/armor/f13/tribe_bone_armor
-	name = "tribal bone armor"
-	desc = "(IV) A traditional armor made most of animal bones and reinforced leather binding them together."
-	icon_state = "bone_tribal_armor"
-	item_state = "bone_tribal_armor"
-	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 65, "rad" = 45, "fire" = 70, "acid" = 65)
-	flags_inv = HIDEJUMPSUIT
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 
