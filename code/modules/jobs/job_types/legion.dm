@@ -403,6 +403,8 @@ Decanii
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Prime Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECAN
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_DECANUS
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	loadout_options = list(
 	/datum/outfit/loadout/primedecline,
@@ -741,6 +743,7 @@ Prime Legionairy
 	description = "You answer to the Decani and the Centurion, as well as Veterans above you. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
+	exp_requirements = 600
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 	loadout_options = list(
 		/datum/outfit/loadout/primeline,
@@ -953,6 +956,7 @@ Explorer
 	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
 	supervisors = "the Venator and Centurion"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
+	exp_requirements = 900
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	loadout_options = list(
 		/datum/outfit/loadout/excursor,
@@ -1024,6 +1028,7 @@ Auxilia
 	description = "You are a respected and valued noncombatant for the Legion, commanding the slaves and Camp Followers and providing important surgical or engineering expertise. Though you hold more authority than the Legionaries in camp, you are not a warrior, and should not act as such unless absolutely necessary."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
+	exp_requirements = 1200
 	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
 
 	loadout_options = list(

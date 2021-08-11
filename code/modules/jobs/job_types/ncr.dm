@@ -351,7 +351,8 @@ Sergeant
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
-
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_NCRNCO
 	loadout_options = list(
 	/datum/outfit/loadout/serreg,
 	/datum/outfit/loadout/serlight,
@@ -525,6 +526,7 @@ Combat Engineer
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
+
 	outfit = /datum/outfit/job/ncr/f13combatengineer
 
 /datum/outfit/job/ncr/f13combatengineer
@@ -574,6 +576,7 @@ Trooper
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	exp_requirements = 1200
+
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
 	loadout_options = list(

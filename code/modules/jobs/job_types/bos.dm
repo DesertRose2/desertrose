@@ -540,7 +540,8 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
-
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_SCRIBE
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
 	/datum/outfit/loadout/proctorsh,
@@ -618,7 +619,8 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Proctor, or Head Scribe"
 	selection_color = "#95a5a6"
-
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 	loadout_options = list(
 	/datum/outfit/loadout/scribejsw,
 	/datum/outfit/loadout/scribesw,
@@ -737,7 +739,8 @@ datum/job/bos/f13seniorknight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Knight"
 	selection_color = "#95a5a6"
-
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_KNIGHT
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta,
 	/datum/outfit/loadout/sknightb,
@@ -830,7 +833,8 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Star Knight, or Head Knight"
 	selection_color = "#95a5a6"
-
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 	loadout_options = list(
 	/datum/outfit/loadout/knighta,
 	/datum/outfit/loadout/knightb,

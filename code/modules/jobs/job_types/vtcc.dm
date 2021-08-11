@@ -152,7 +152,8 @@
 	spawn_positions = 1
 	supervisors = "the Alderman and the Overseer"
 	description = "Trade deals fall upon your shoulders to negotiate with those around the town, so ensure you never give more than you've got. Of course, selling the town is the worst thing you could do, so it should go without saying that you can't do that. Negotiate with the traders of the wastes, extort them for the shirt on their back, or set them up for life, it's up to you to decide. Just don't lose your head."
-
+	exp_requirements = 1500
+	exp_type = EXP_TYPE_OUTER
 	outfit = /datum/outfit/job/vtcc/f13merchant
 	loadout_options = list(
 		/datum/outfit/loadout/blacksmith,
@@ -289,7 +290,8 @@
 	spawn_positions = 1
 	supervisors = "the Alderman and Marshal."
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it with them, inside the outer ring. There, you dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
-
+	exp_requirements = 1500
+	exp_type = EXP_TYPE_INNER
 	outfit = /datum/outfit/job/vtcc/f13townsec
 	loadout_options = list(
 		/datum/outfit/loadout/musketeer,
@@ -308,7 +310,6 @@
 /datum/outfit/job/vtcc/f13townsec
 	name = "Town Security Officer"
 	jobtype = /datum/job/vtcc/f13townsec
-
 	ears = /obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
 	backpack = /obj/item/storage/backpack/satchel/explorer
@@ -359,7 +360,8 @@
 	spawn_positions = 1
 	supervisors = "the Merchant."
 	description = "Operate the shop when the Merchant's asleep or just isn't there, push and pull those crates to and fro like your life depends on it (and when your paycheck is based on performance, well, it certainly does). If there are no crates to pick up, head out into the wastes and start scavenging for anything you could sell at an extortionate price."
-
+	exp_requirements = 900
+	exp_type = EXP_TYPE_INNER
 	outfit = /datum/outfit/job/vtcc/f13roadie
 	loadout_options = list(
 		/datum/outfit/loadout/scavver,
@@ -428,7 +430,8 @@
 	spawn_positions = 1
 	supervisors = "the Alderman and the Overseer"
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
-
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_INNER
 	outfit = /datum/outfit/job/vtcc/f13researcher
 	loadout_options = list(
 		/datum/outfit/loadout/medprof,
@@ -488,7 +491,8 @@
 	spawn_positions = 1
 	supervisors = "the Alderman and the Deus Ex Machina."
 	description = "You hear It's myriad demands and must work to fulfil them, by any means necessary. The more you convert to join the Hoistway, the more who serve Its divine will, the easier these tasks will be. The spiritual health of man, mutant and machine is your priority, for those healthy in mind are those who can greatly serve their betters. And the only one better is It."
-
+	exp_requirements = 1500
+	exp_type = EXP_TYPE_INNER
 	outfit = /datum/outfit/job/vtcc/f13hoistway
 	loadout_options = list(
 		/datum/outfit/loadout/techwhisperer,
@@ -505,7 +509,6 @@
 /datum/outfit/job/vtcc/f13hoistway
 	name = "Hoistway Preacher"
 	jobtype = /datum/job/vtcc/f13hoistway
-
 	ears = /obj/item/radio/headset/headset_vault/cogcity/priest
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
