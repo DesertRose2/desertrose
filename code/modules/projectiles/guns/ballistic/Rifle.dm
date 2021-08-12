@@ -228,6 +228,7 @@
 	fire_delay = 5
 	extra_damage = 20 //60 damage- hits as hard as an AMR!
 	extra_penetration = 0.2
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/rifle/remington/paciencia/attackby(obj/item/A, mob/user, params) //no sawing off this one
 	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))
@@ -313,6 +314,7 @@
 	fire_delay = 6
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
 	can_attachments = TRUE
+	untinkerable = TRUE
 	//projectile_speed = 0
 
 /obj/item/gun/ballistic/rifle/kar98k
