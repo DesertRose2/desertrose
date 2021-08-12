@@ -39,7 +39,8 @@
 	scars_covered_by_clothes = FALSE
 
 /obj/item/bodypart/head/can_dismember(obj/item/I)
-	if(owner && !((owner.stat == DEAD) || owner.InFullCritical()))
+	// Can't decap people alive or with some kind of headgear less headaches for staff.
+	if(owner && (owner.stat != DEAD || owner.head))
 		return FALSE
 	return ..()
 
