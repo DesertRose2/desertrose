@@ -550,11 +550,11 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 15
 	burst_size = 3
-	fire_delay = 6
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = FALSE
 	can_attachments = TRUE
-	extra_damage = -4
+	extra_damage = -2
 	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
@@ -570,7 +570,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	burst_size = 2
-	fire_delay = 5
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
@@ -1336,9 +1336,11 @@
 	fire_sound = 'sound/f13weapons/american180.ogg'
 	can_suppress = FALSE
 	can_unsuppress = FALSE
-	burst_size = 2
-	burst_shot_delay = 1
+	burst_size = 4
+	burst_shot_delay = 2
+	fire_delay = 3
 	suppressed = 1
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/xl70e3
 	name = "xl70e3"

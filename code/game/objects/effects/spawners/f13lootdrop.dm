@@ -717,14 +717,14 @@
 /obj/effect/spawner/bundle/f13/mosin
 	name = "mosin nagant and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/mosin,
+				/obj/item/gun/ballistic/rifle/mosin,
 				/obj/item/ammo_box/a762
 				)
 
 /obj/effect/spawner/bundle/f13/remington
 	name = "remington rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/remington,
+				/obj/item/gun/ballistic/rifle/remington,
 				/obj/item/ammo_box/a308
 				)
 
@@ -819,7 +819,7 @@
 /obj/effect/spawner/bundle/f13/cowboy
 	name = "cowboy repeater and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy,
+				/obj/item/gun/ballistic/rifle/automatic/hunting/cowboy,
 				/obj/item/ammo_box/a357
 				)
 
@@ -938,7 +938,7 @@
 /obj/effect/spawner/bundle/f13/trail
 	name = "trail carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/automatic/hunting/trail,
+				/obj/item/gun/ballistic/rifle/automatic/hunting/trail,
 				/obj/item/ammo_box/tube/m44
 				)
 
@@ -1038,7 +1038,7 @@
 /obj/effect/spawner/bundle/f13/brushgun
 	name = "brush gun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/automatic/hunting/brush,
+				/obj/item/gun/ballistic/rifle/automatic/hunting/brush,
 				/obj/item/ammo_box/tube/c4570
 				)
 
@@ -1267,7 +1267,7 @@
 /obj/effect/spawner/bundle/f13/amr
 	name = "amr and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/shotgun/antimateriel,
+				/obj/item/gun/ballistic/rifle/antimateriel,
 				/obj/item/ammo_box/a50MG/incendiary
 	)
 
@@ -1284,7 +1284,7 @@
 
 	loot = list(
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
-				/obj/item/gun/ballistic/shotgun/remington/paciencia,
+				/obj/item/gun/ballistic/rifle/remington/paciencia,
 				/obj/item/gun/energy/laser/solar,
 				/obj/item/gun/energy/laser/plasma/alien
 				)

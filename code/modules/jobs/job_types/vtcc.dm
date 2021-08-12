@@ -64,7 +64,7 @@
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/lasmusket=1,
+	/obj/item/gun/ballistic/rifle/lasmusket=1,
 	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,
 	/obj/item/ammo_box/lasmusket = 2)
 
@@ -630,7 +630,7 @@
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/remington=1,
+	/obj/item/gun/ballistic/rifle/remington=1,
 	/obj/item/ammo_box/a308box=1,
 	/obj/item/kitchen/knife/combat=1,
 	/obj/item/clothing/under/f13/gentlesuit=1,

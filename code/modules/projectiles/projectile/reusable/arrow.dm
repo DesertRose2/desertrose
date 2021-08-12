@@ -16,8 +16,8 @@
 /obj/item/projectile/bullet/reusable/arrow/bone //AP for ashwalkers
 	name = "bone arrow"
 	desc = "Arrow made of bone and sinew."
-	damage = 35
-	armour_penetration = 0.75
+	damage = 30
+	armour_penetration = 0.35
 	ammo_type = /obj/item/ammo_casing/caseless/arrow/bone
 
 /obj/item/projectile/bullet/reusable/arrow/bronze //Just some AP shots
