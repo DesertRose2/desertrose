@@ -27,7 +27,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 
 /*
@@ -216,7 +215,7 @@ Lieutenant
 
 /datum/outfit/loadout/ltline
 	name = "Line Officer"
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
+	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/m556/rifle/assault=3)
 
@@ -324,7 +323,7 @@ Sergeant First Class
 
 /datum/outfit/loadout/sfcinfantry
 	name = "Infantry"
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
+	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=3)
 
 /datum/outfit/loadout/sfcsniper
@@ -555,9 +554,8 @@ Combat Engineer
 	..()
 	if(visualsOnly)
 		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R82)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lmg)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R82/ncr)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
 	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
