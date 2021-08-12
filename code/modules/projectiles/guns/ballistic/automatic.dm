@@ -550,11 +550,11 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 15
 	burst_size = 3
-	fire_delay = 6
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = FALSE
 	can_attachments = TRUE
-	extra_damage = -4
+	extra_damage = -2
 	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
@@ -570,7 +570,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	burst_size = 2
-	fire_delay = 5
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
@@ -676,7 +676,7 @@
 
 /obj/item/gun/ballistic/automatic/service/r82
 	name = "R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
 	fire_delay = 1 //faster ROF, superior to regular service rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -699,6 +699,44 @@
 	scope_state = "smallrifle_scope"
 	scope_x_offset = 5
 	scope_y_offset = 13
+
+/obj/item/gun/ballistic/automatic/service/r82/ncr
+	name = "NCR R82 heavy service rifle"
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	fire_delay = 1 //faster ROF, superior to regular service rifle
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	icon_state = "R82_ncr"
+	item_state = "R84"
+	//automatic = 1
+	spread = 3
+	burst_size = 1
+	semi_auto = TRUE
+	burst_shot_delay = 3.0 //Was 2.2 before.
+	can_automatic = FALSE
+	untinkerable = TRUE
+	can_suppress = TRUE
+	can_scope = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 5
+	scope_y_offset = 13
+
+/obj/item/gun/ballistic/automatic/service/r82/legion
+	name = "'Pilum' rifle"
+	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture."
+	icon_state = "pilum"
+	item_state = "fnfal"
+	can_automatic = FALSE
+	untinkerable = TRUE
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_delay = 3
+	burst_shot_delay = 2
+	force = 30
+	spread = 1
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -1336,9 +1374,11 @@
 	fire_sound = 'sound/f13weapons/american180.ogg'
 	can_suppress = FALSE
 	can_unsuppress = FALSE
-	burst_size = 2
-	burst_shot_delay = 1
+	burst_size = 4
+	burst_shot_delay = 2
+	fire_delay = 3
 	suppressed = 1
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/xl70e3
 	name = "xl70e3"

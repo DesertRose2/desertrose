@@ -154,7 +154,7 @@ Centurion
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/electropack/shockcollar=1,
 		/obj/item/electropack/shockcollar/explosive=2,
-		/obj/item/storage/bag/money/small/legofficers=1)
+		/obj/item/storage/bag/money/small/legion=1)
 
 
 /datum/outfit/loadout/centheavy
@@ -440,7 +440,7 @@ Decanii
 
 /datum/outfit/loadout/primedecline
 	name = "Line Officer"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/gun/ballistic/revolver/revolver45=1,
@@ -533,7 +533,7 @@ Decanii
 
 /datum/outfit/loadout/recdecline
 	name = "Libratus (Line)"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3
 	)
@@ -595,7 +595,7 @@ Vexillarius
 /datum/outfit/loadout/vexsupport
 	name = "Support Vexillarius"
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = 	/obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=1,
 		/obj/item/grenade/smokebomb=2,
@@ -777,7 +777,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/primeline
 	name = "Milites (Line)"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3)
 
@@ -846,7 +846,7 @@ Recruit Legionary
 /datum/outfit/loadout/recruitlegscout
 	name = "Scout"
 	head = 	/obj/item/clothing/head/helmet/f13/legion/recruit
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/a357=3,
 		/obj/item/binoculars=1
@@ -891,7 +891,7 @@ Venator
 
 /datum/outfit/loadout/venatorstandard
 	name = "Standard"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
 		/obj/item/ammo_box/tube/c4570=3
@@ -937,7 +937,7 @@ Venator
 	r_pocket 	= 	/obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legofficers=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1
 	)
 
@@ -989,7 +989,7 @@ Explorer
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=2)
 
 /datum/outfit/loadout/sapper
@@ -1009,7 +1009,7 @@ Explorer
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=1)
 
 /*

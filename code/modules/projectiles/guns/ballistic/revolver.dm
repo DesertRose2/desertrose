@@ -597,6 +597,7 @@
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
+	extra_damage = 5
 	fire_delay = 4
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 

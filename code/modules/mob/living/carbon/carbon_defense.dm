@@ -44,9 +44,16 @@
 		return TRUE
 
 /mob/living/carbon/check_projectile_dismemberment(obj/item/projectile/P, def_zone)
+	switch(def_zone)
+		if(BODY_ZONE_CHEST)
+			return // removes bullet disemboweling
+		if(BODY_ZONE_HEAD)
+			if(head) // No decap unless head is slot is empty
+				return
 	var/obj/item/bodypart/affecting = get_bodypart(def_zone)
-	if(affecting && affecting.dismemberable && affecting.get_damage() >= (affecting.max_damage - P.dismemberment))
-		affecting.dismember(P.damtype)
+	if(!affecting?.dismemberable || affecting.get_damage() < (affecting.max_damage - P.dismemberment))
+		return
+	affecting.dismember(P.damtype)
 
 /mob/living/carbon/catch_item(obj/item/I, skip_throw_mode_check = FALSE)
 	. = ..()

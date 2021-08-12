@@ -508,16 +508,22 @@
 		/datum/reagent/consumable/menthol,
 		/datum/reagent/consumable/sunset,
 		/datum/reagent/consumable/nuka_cola,
+		/datum/reagent/consumable/nukafree,
 		/datum/reagent/consumable/grapejuice,
 		/datum/reagent/consumable/tea/forest,
 		/datum/reagent/consumable/tea/red,
 		/datum/reagent/consumable/tea/green,
-		/datum/reagent/consumable/cherryjelly
+		/datum/reagent/consumable/cherryjelly,
+		/datum/reagent/consumable/sol_dry,
+		/datum/reagent/consumable/bawls,
+		/datum/reagent/consumable/vim
+
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
 		/datum/reagent/consumable/berryjuice,
-		/datum/reagent/consumable/strawberryjuice
+		/datum/reagent/consumable/strawberryjuice,
+		/datum/reagent/consumable/bluecherryjelly
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/applejuice,
@@ -595,7 +601,10 @@
 		/datum/reagent/consumable/clownstears,
 		/datum/reagent/consumable/ethanol/beer/green
 	)
-	upgrade_reagents2 = null
+	upgrade_reagents2 = list(
+		/datum/reagent/consumable/ethanol/moonshine,
+		/datum/reagent/consumable/ethanol/hooch
+	)
 	upgrade_reagents3 = list(
 		/datum/reagent/medicine/antihol
 	)

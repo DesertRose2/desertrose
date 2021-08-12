@@ -50,7 +50,7 @@ Great Khans
 	flag = F13GENGHIS
 	department_head = list("Captain")
 	head_announce = list("Security")
-	faction = "Wastelander"	
+	faction = "Wastelander"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
@@ -162,7 +162,7 @@ Great Khans
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = pick(
-		/obj/item/gun/ballistic/shotgun/automatic/hunting/trail, \
+		/obj/item/gun/ballistic/rifle/automatic/hunting/trail, \
 		/obj/item/gun/ballistic/shotgun/hunting, \
 		/obj/item/gun/ballistic/revolver/m29, \
 		/obj/item/gun/ballistic/automatic/pistol/ninemil)
@@ -301,7 +301,7 @@ Raider
 
 	suit_store = pick(
 		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/shotgun/remington, \
+		/obj/item/gun/ballistic/rifle/remington, \
 		/obj/item/gun/ballistic/revolver/zipgun, \
 		/obj/item/gun/ballistic/revolver/pipe_rifle, \
 		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
@@ -328,7 +328,7 @@ Raider
 /datum/outfit/loadout/raider_boss
 	name = "Raider Boss"
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
-	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm		
+	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	l_hand = /obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1,
@@ -368,7 +368,7 @@ Raider
 	name = "Fiend"
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
+	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/claymore/machete/pipe/pan = 1,
@@ -468,8 +468,7 @@ Raider
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=2,
-		/obj/item/reagent_containers/pill/patch/healingpowder=3
-		)
+		/obj/item/reagent_containers/pill/patch/healingpowder=3)
 
 /datum/outfit/loadout/raider_vault
 	name = "Dishelved Vaultie"
@@ -541,7 +540,7 @@ Raider
 		/obj/item/kitchen/knife)
 	suit_store = pick(
 	/obj/item/gun/ballistic/revolver/detective, \
-	/obj/item/gun/ballistic/shotgun/remington, \
+	/obj/item/gun/ballistic/rifle/remington, \
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)
 
