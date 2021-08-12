@@ -154,7 +154,7 @@ Centurion
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/electropack/shockcollar=1,
 		/obj/item/electropack/shockcollar/explosive=2,
-		/obj/item/storage/bag/money/small/legofficers=1)
+		/obj/item/storage/bag/money/small/legion=1)
 
 
 /datum/outfit/loadout/centheavy
@@ -937,7 +937,7 @@ Venator
 	r_pocket 	= 	/obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legofficers=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1
 	)
 
@@ -989,7 +989,7 @@ Explorer
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=2)
 
 /datum/outfit/loadout/sapper
@@ -1009,7 +1009,7 @@ Explorer
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legion=1,
+		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=1)
 
 /*
