@@ -326,11 +326,7 @@
 /datum/outfit/loadout/musketeer
 	name = "Musketeer"
 	backpack_contents = list(
-<<<<<<< Updated upstream
 	/obj/item/gun/energy/laser/aer9=1,
-=======
-	/obj/item/gun/ballistic/rifle/lasmusket=1,
->>>>>>> Stashed changes
 	/obj/item/clothing/head/f13/cowboy=1,
 	/obj/item/stock_parts/cell/ammo/mfc=2,
 	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1

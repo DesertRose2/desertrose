@@ -1337,7 +1337,8 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	burst_size = 4
-	burst_shot_delay = 1
+	burst_shot_delay = 2
+	fire_delay = 3
 	suppressed = 1
 	untinkerable = TRUE
 

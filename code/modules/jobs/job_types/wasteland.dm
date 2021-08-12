@@ -50,7 +50,7 @@ Great Khans
 	flag = F13GENGHIS
 	department_head = list("Captain")
 	head_announce = list("Security")
-	faction = "Wastelander"	
+	faction = "Wastelander"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
@@ -328,10 +328,9 @@ Raider
 /datum/outfit/loadout/raider_boss
 	name = "Raider Boss"
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
-	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm		
+	head = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	l_hand = /obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
-<<<<<<< Updated upstream
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault=2
 		)
@@ -340,7 +339,7 @@ Raider
 	name = "Con Artist"
 	suit = /obj/item/clothing/under/f13/bennys
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/mk23
-=======
+	backpack_contents = list(
 		/obj/item/twohanded/baseball/spiked=1,
 		/obj/item/gun/ballistic/rifle/remington=1,
 		/obj/item/ammo_box/a308=2,
@@ -351,7 +350,6 @@ Raider
 	name = "Blastmaster"
 	suit = /obj/item/clothing/suit/armor/f13/raider/blastmaster
 	head = /obj/item/clothing/head/helmet/f13/raider/blastmaster
->>>>>>> Stashed changes
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=3,
 		/obj/item/switchblade=1,
@@ -381,7 +379,7 @@ Raider
 	name = "Fiend"
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
+	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/claymore/machete/pipe/pan = 1,
@@ -481,10 +479,7 @@ Raider
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=2,
-<<<<<<< Updated upstream
-		/obj/item/reagent_containers/pill/patch/healingpowder=3
-		)
-=======
+		/obj/item/reagent_containers/pill/patch/healingpowder=3,
 		/obj/item/storage/backpack/spearquiver=1)
 
 /datum/outfit/loadout/raider_sheriff
@@ -509,7 +504,6 @@ Raider
 		/obj/item/ammo_box/magazine/m9mm=2,
 		/obj/item/card/id/dogtag/town/mafia=1,
 		/obj/item/toy/cards/deck=1)
->>>>>>> Stashed changes
 
 /datum/outfit/loadout/raider_vault
 	name = "Dishelved Vaultie"

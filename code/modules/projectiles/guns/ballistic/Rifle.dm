@@ -239,6 +239,10 @@
 	else
 		..()
 
+/obj/item/gun/ballistic/rifle/automatic/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
+	..()
+	src.pump(user)
+
 /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	name = "cowboy repeater"
 	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of whiskey and cigarettes."
