@@ -259,7 +259,6 @@
 	},
 /area/f13/bunker)
 "fy" = (
-/obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/fireant,
 /turf/open/floor/grass,
 /area/f13/bunker)
@@ -338,8 +337,8 @@
 /area/f13/bunker)
 "gA" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/floor/grass,
+/mob/living/simple_animal/hostile/alien,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "gB" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -1427,7 +1426,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/bunker)
 "Eo" = (
-/mob/living/simple_animal/hostile/deathclaw,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Et" = (
@@ -1573,6 +1572,7 @@
 "HC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
+/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "HO" = (
@@ -1787,10 +1787,6 @@
 /obj/effect/decal/cleanable/blood/gibs/human,
 /turf/open/floor/grass,
 /area/f13/bunker)
-"Mf" = (
-/obj/structure/nest/wanamingo,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "Mj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/splats,
@@ -1962,20 +1958,6 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
-/area/f13/bunker)
-"Px" = (
-/mob/living/simple_animal/hostile/molerat{
-	desc = "An extra-large mutated rat-mole hybrid that finds its way everywhere. Common in caves and underground areas. This one is specifically large and older than the others";
-	health = 100;
-	melee_damage_lower = 20;
-	melee_damage_upper = 20;
-	mob_size = 3;
-	name = "The giant molerat";
-	obj_damage = 30;
-	resize = 2
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "PF" = (
 /obj/structure/table_frame,
@@ -2170,7 +2152,16 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "TH" = (
-/obj/structure/nest/molerat,
+/mob/living/simple_animal/hostile/molerat{
+	desc = "An extra-large mutated rat-mole hybrid that finds its way everywhere. Common in caves and underground areas. This one is specifically large and older than the others";
+	health = 100;
+	melee_damage_lower = 20;
+	melee_damage_upper = 20;
+	mob_size = 3;
+	name = "The giant molerat";
+	obj_damage = 30;
+	resize = 2
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "TU" = (
@@ -2902,7 +2893,7 @@ XZ
 Dv
 YR
 go
-Eo
+oj
 xG
 Rl
 Rl
@@ -3089,7 +3080,7 @@ nu
 nu
 xG
 oj
-Eo
+oj
 oj
 oj
 oj
@@ -3636,7 +3627,7 @@ Rl
 Rl
 Rl
 xG
-Mf
+oj
 oj
 kq
 oj
@@ -3714,7 +3705,7 @@ Rl
 xG
 oj
 go
-go
+gA
 oj
 Pp
 kj
@@ -4549,7 +4540,7 @@ Rl
 xG
 ZP
 ZP
-gA
+ZP
 pR
 ZP
 fC
@@ -4829,7 +4820,7 @@ Rl
 xG
 gk
 YR
-oj
+Eo
 SD
 oj
 Ub
@@ -4871,7 +4862,7 @@ oj
 go
 oj
 oj
-oj
+TH
 Qe
 vg
 YR
@@ -4908,7 +4899,7 @@ go
 Qe
 Tm
 mC
-Px
+go
 go
 go
 oj
@@ -4948,7 +4939,7 @@ go
 gR
 oj
 Rl
-oj
+TH
 YR
 oh
 xG
@@ -4981,7 +4972,7 @@ Rl
 xG
 oj
 TH
-oj
+Eo
 go
 oh
 Rl
