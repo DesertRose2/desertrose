@@ -630,7 +630,7 @@
 /obj/item/book/granter/crafting_recipe/blueprint/r82/legion
 	name = "pilum rifle blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
+	crafting_recipe_types = list(/datum/crafting_recipe/R82/legion)
 
 /obj/item/book/granter/crafting_recipe/blueprint/bastard
 	name = "bastard LMG blueprint"

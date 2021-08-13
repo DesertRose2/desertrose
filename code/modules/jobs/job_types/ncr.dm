@@ -808,7 +808,7 @@ Veteran Ranger
 
 /datum/outfit/loadout/vrassault
 	name = "Assault Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3)
 
