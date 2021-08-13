@@ -690,7 +690,7 @@
 /obj/item/clothing/suit/armor/f13/combat/mk2,
 /obj/item/clothing/head/helmet/f13/combat/mk2,
 /obj/item/clothing/mask/gas/syndicate,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "aJC" = (
@@ -731,11 +731,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "aLt" = (
-/mob/living/simple_animal/hostile/alien{
-	color = "grey";
-	health = 550;
-	name = "wanamingo alpha"
-	},
+/mob/living/simple_animal/hostile/eyebot,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "aLA" = (
@@ -7614,6 +7610,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
+"hmk" = (
+/mob/living/simple_animal/hostile/alien,
+/turf/open/floor/f13{
+	icon_state = "dark"
+	},
+/area/f13/bunker)
 "hmr" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -9065,8 +9067,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side,
 /area/f13/tunnel)
 "ixX" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -9369,6 +9371,12 @@
 /obj/machinery/defibrillator_mount/loaded,
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/medical)
+"iPH" = (
+/mob/living/simple_animal/hostile/raider/ranged,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/bunker)
 "iPO" = (
 /obj/machinery/mineral/equipment_vendor,
 /turf/open/floor/f13/wood{
@@ -12342,6 +12350,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
+"mdD" = (
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/sewer)
 "mej" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
@@ -15547,6 +15561,7 @@
 /area/f13/brotherhood/mining)
 "pkL" = (
 /obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -16441,6 +16456,12 @@
 	icon_state = "neutralrusty"
 	},
 /area/f13/tunnel)
+"qeH" = (
+/obj/effect/mine/stun,
+/turf/open/floor/f13{
+	icon_state = "dark"
+	},
+/area/f13/bunker)
 "qfa" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -18571,6 +18592,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
+"rQA" = (
+/mob/living/simple_animal/hostile/handy,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/clinic)
 "rQP" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1"
@@ -18717,7 +18744,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rZF" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "rZI" = (
@@ -18818,6 +18845,7 @@
 /obj/machinery/shower{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -24212,7 +24240,7 @@ hDw
 hDw
 hDw
 hDw
-mrp
+hDw
 hDw
 hDw
 hDw
@@ -24742,10 +24770,10 @@ kxd
 kxd
 kxd
 kxd
-kxd
-kxd
-kxd
-kxd
+aoj
+aoj
+aoj
+aoj
 kxd
 kxd
 kxd
@@ -24998,12 +25026,12 @@ hDw
 hDw
 hDw
 hDw
-hDw
-hDw
-hDw
-hDw
-hDw
-hDw
+kxd
+aoj
+aoj
+uoO
+aoj
+kxd
 hDw
 hDw
 hDw
@@ -25255,14 +25283,14 @@ hDw
 hDw
 hDw
 hDw
+kxd
+uoO
+aoj
+aoj
+aoj
+kxd
 hDw
-hDw
-hDw
-hDw
-hDw
-hDw
-hDw
-hDw
+mrp
 hDw
 hDw
 hDw
@@ -25490,7 +25518,7 @@ hDw
 hDw
 adO
 hDw
-aLt
+mrp
 kxd
 uoO
 uoO
@@ -25513,9 +25541,9 @@ kxd
 hDw
 hDw
 kxd
-kxd
-kxd
-kxd
+uoO
+uoO
+aoj
 kxd
 kxd
 cFL
@@ -26297,7 +26325,7 @@ uoO
 kxd
 hDw
 hDw
-hDw
+mrp
 kxd
 uoO
 uoO
@@ -27410,7 +27438,7 @@ lnr
 uoO
 eLE
 aqn
-dRM
+hmk
 lIx
 dRM
 dRM
@@ -27419,7 +27447,7 @@ eAg
 ndp
 tYd
 dRM
-dRM
+cFF
 tZg
 ndp
 exq
@@ -27679,9 +27707,9 @@ dRM
 dRM
 dRM
 lIx
+qeH
 dRM
 dRM
-cFF
 ndp
 aCo
 aqn
@@ -30231,7 +30259,7 @@ bcN
 eUk
 bcN
 bcN
-bcN
+wbp
 bcN
 dZF
 eLE
@@ -30487,7 +30515,7 @@ bcN
 oOE
 eUk
 bcN
-bcN
+rQA
 bcN
 bcN
 dZF
@@ -30638,7 +30666,7 @@ cFL
 hDw
 hDw
 hDw
-hDw
+aLt
 hDw
 hDw
 hDw
@@ -31409,7 +31437,7 @@ uoO
 uoO
 uoO
 kxd
-hDw
+aLt
 hDw
 kxd
 kxd
@@ -31675,7 +31703,7 @@ hDw
 hDw
 hDw
 hDw
-hDw
+aLt
 hDw
 cFL
 hDw
@@ -31929,7 +31957,7 @@ cFL
 hDw
 hDw
 hDw
-hDw
+aLt
 hDw
 hDw
 hDw
@@ -33307,7 +33335,7 @@ uoO
 uoO
 lnr
 lnr
-lnr
+sNX
 lnr
 uoO
 uoO
@@ -34332,7 +34360,7 @@ lnr
 rzg
 rzg
 uoO
-lnr
+sNX
 lnr
 lnr
 lnr
@@ -35108,7 +35136,7 @@ uoO
 uoO
 uoO
 lnr
-lnr
+sNX
 lnr
 lnr
 lnr
@@ -35357,7 +35385,7 @@ lnr
 rJA
 lnr
 ruX
-lnr
+vfU
 lnr
 uoO
 uoO
@@ -35554,9 +35582,9 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
+uoO
+uoO
+uoO
 uoO
 uoO
 uoO
@@ -35812,9 +35840,9 @@ uoO
 uoO
 uoO
 uoO
+eLE
 uoO
-uoO
-uoO
+eLE
 uoO
 eLE
 eLE
@@ -36074,7 +36102,7 @@ aoj
 uoO
 aoj
 aoj
-uoO
+aoj
 aoj
 aoj
 uoO
@@ -36330,15 +36358,15 @@ uoO
 aoj
 aoj
 aoj
-uoO
-uoO
+aoj
+aoj
+aoj
 aoj
 uoO
 uoO
 uoO
-uoO
 aoj
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -36586,7 +36614,7 @@ uoO
 uoO
 aoj
 aoj
-uoO
+aoj
 aoj
 aoj
 aoj
@@ -36841,17 +36869,17 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+aoj
+aoj
+aoj
+aoj
+aoj
+aoj
+aoj
 uoO
 uoO
 uoO
 aoj
-aoj
-uoO
-uoO
-uoO
-uoO
 aoj
 uoO
 uoO
@@ -37108,7 +37136,7 @@ uoO
 aoj
 aoj
 aoj
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -37614,15 +37642,15 @@ uoO
 uoO
 uoO
 uoO
-aoj
+uoO
+uoO
+uoO
+uoO
 uoO
 aoj
 aoj
 aoj
 aoj
-aoj
-aoj
-uoO
 uoO
 uoO
 uoO
@@ -37856,7 +37884,7 @@ eLE
 uoO
 lnr
 lnr
-lnr
+rKx
 lnr
 uoO
 eLE
@@ -37870,15 +37898,15 @@ uoO
 uoO
 uoO
 uoO
-aoj
-aoj
-aoj
-aoj
+uoO
+uoO
+uoO
+uoO
 uoO
 uoO
 aoj
 aoj
-uoO
+aoj
 aoj
 uoO
 uoO
@@ -38126,7 +38154,8 @@ uoO
 uoO
 uoO
 uoO
-aoj
+uoO
+uoO
 uoO
 uoO
 aoj
@@ -38134,7 +38163,6 @@ aoj
 aoj
 aoj
 aoj
-uoO
 aoj
 aoj
 uoO
@@ -38385,8 +38413,8 @@ uoO
 uoO
 uoO
 uoO
-aoj
-aoj
+uoO
+uoO
 aoj
 aoj
 aoj
@@ -38641,8 +38669,8 @@ uoO
 uoO
 uoO
 uoO
-aoj
-aoj
+uoO
+uoO
 uoO
 aoj
 aoj
@@ -38650,7 +38678,7 @@ aoj
 aoj
 aoj
 aoj
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -38898,16 +38926,16 @@ uoO
 uoO
 uoO
 uoO
-aoj
-uoO
-uoO
-aoj
-aoj
-aoj
-aoj
 uoO
 uoO
 uoO
+aoj
+aoj
+aoj
+aoj
+aoj
+aoj
+aoj
 uoO
 uoO
 uoO
@@ -39154,15 +39182,15 @@ uoO
 uoO
 uoO
 uoO
-aoj
 uoO
 uoO
 uoO
 uoO
 aoj
-uoO
-uoO
-uoO
+aoj
+aoj
+aoj
+aoj
 aoj
 aoj
 uoO
@@ -39411,13 +39439,13 @@ uoO
 uoO
 uoO
 uoO
+uoO
+uoO
+uoO
+uoO
 aoj
-uoO
-uoO
-uoO
 aoj
-uoO
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -43075,7 +43103,7 @@ uoO
 lnr
 lnr
 lnr
-lnr
+sNX
 lnr
 uoO
 uoO
@@ -44872,7 +44900,7 @@ uoO
 uoO
 uoO
 lnr
-lnr
+sNX
 uoO
 uoO
 uoO
@@ -64507,7 +64535,7 @@ aBb
 aBb
 aBb
 aBb
-lnr
+pXa
 lnr
 gtY
 aBb
@@ -65284,7 +65312,7 @@ uHU
 lfw
 aBb
 aBb
-lnr
+pXa
 lnr
 aBb
 lnr
@@ -66581,7 +66609,7 @@ lnr
 lnr
 lnr
 vZR
-lnr
+pXa
 lnr
 aBb
 aBb
@@ -67590,7 +67618,7 @@ uoO
 uoO
 aBb
 aBb
-lnr
+pXa
 lnr
 lnr
 lnr
@@ -67856,7 +67884,7 @@ lnr
 ofm
 aBb
 aBb
-lnr
+pXa
 lnr
 aBb
 aBb
@@ -68038,7 +68066,7 @@ gyf
 gyf
 xSY
 fLU
-eBg
+sgd
 tfw
 cfP
 uLn
@@ -69324,7 +69352,7 @@ fLU
 kDS
 fLU
 wiz
-eBg
+iPH
 eBg
 eBg
 pYd
@@ -76058,7 +76086,7 @@ cvb
 cvb
 tnp
 tnp
-iIu
+mdD
 oPR
 vEd
 jkp
