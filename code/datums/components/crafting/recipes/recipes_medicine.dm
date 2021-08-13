@@ -39,6 +39,16 @@
 				/datum/reagent/medicine/silver_sulfadiazine = 10)
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/bitter
+	name = "Bitter Drink"
+	result = /datum/reagent/medicine/bitter_drink
+	time = 30
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/sunset = 1
+				)
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/healpowder
 	name = "Healing powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
@@ -181,3 +191,12 @@
 	time = 20
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MEDICAL
+
+/datum/crafting_recipe/radshroom
+	name = "Mushroom Extract"
+	result = /obj/item/reagent_containers/glass/bottle/radshroom
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
+				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 1)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL				
