@@ -7284,9 +7284,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "gUl" = (
-/obj/structure/bed/pod,
-/obj/item/bedsheet/black,
-/turf/open/floor/carpet/royalblack,
+/obj/effect/landmark/start/f13/townsecscout,
+/turf/open/floor/plasteel/f13,
 /area/f13/tunnel)
 "gUm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -34233,10 +34232,10 @@ ygC
 ygC
 ygC
 ygC
-gUl
+uBh
 uBh
 wHB
-wpJ
+gUl
 wpJ
 wpJ
 hnu
