@@ -192,7 +192,7 @@
 		user.dropItemToGround(src, TRUE)
 	discard_gun(user)
 
-	/obj/item/gun/ballistic/rifle/remington
+/obj/item/gun/ballistic/rifle/remington
 	name = "hunting rifle"
 	desc = "A sturdy hunting rifle, chambered in .308. and in use before the war."
 	icon_state = "308"
