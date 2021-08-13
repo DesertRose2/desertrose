@@ -59,6 +59,8 @@
 /area/f13/bunker)
 "aU" = (
 /obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/structure/spider/stickyweb,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "aX" = (
@@ -406,9 +408,11 @@
 	},
 /area/f13/bunker)
 "gR" = (
-/mob/living/simple_animal/hostile/supermutant,
+/obj/machinery/light/floor,
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
+	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
 "gW" = (
@@ -468,13 +472,14 @@
 /area/f13/bunker)
 "hT" = (
 /obj/structure/wreck/trash/one_barrel,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
 "hZ" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/sentrybot,
+/obj/effect/decal/cleanable/blood/gibs/slime,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -738,6 +743,14 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"ni" = (
+/obj/structure/chair/stool/retro,
+/mob/living/simple_animal/hostile/gecko,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/bunker)
 "nj" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -874,6 +887,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"pM" = (
+/mob/living/simple_animal/hostile/poison/giant_spider,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/bunker)
 "pZ" = (
 /obj/structure/wreck/trash/one_barrel,
 /obj/effect/decal/cleanable/dirt,
@@ -978,6 +997,10 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/bunker)
+"si" = (
+/mob/living/simple_animal/hostile/stalker,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sl" = (
 /obj/structure/showcase/horrific_experiment{
@@ -1517,6 +1540,12 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"Cb" = (
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/bunker)
 "Cd" = (
 /obj/item/mop,
 /obj/structure/janitorialcart,
@@ -1787,6 +1816,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"FK" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("supermutant")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
 "FM" = (
 /obj/effect/decal/waste{
 	icon_state = "goo5"
@@ -1804,6 +1839,13 @@
 "FY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
+/area/f13/bunker)
+"Gl" = (
+/mob/living/simple_animal/hostile/poison/giant_spider,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
 /area/f13/bunker)
 "Gq" = (
 /obj/machinery/light{
@@ -1839,7 +1881,6 @@
 /obj/structure/camera_assembly,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/assaultron,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -1870,8 +1911,8 @@
 	},
 /area/f13/radiation)
 "Ho" = (
+/mob/living/simple_animal/hostile/gecko,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1952,7 +1993,15 @@
 "JI" = (
 /obj/item/reagent_containers/rag/towel/random,
 /obj/structure/table,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
+/area/f13/bunker)
+"JM" = (
+/mob/living/simple_animal/hostile/supermutant,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/bunker)
 "JP" = (
 /obj/structure/chair/stool/retro{
@@ -2032,6 +2081,14 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"Ls" = (
+/mob/living/simple_animal/hostile/handy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/bunker)
 "LC" = (
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gibtorso"
@@ -2088,6 +2145,12 @@
 /mob/living/simple_animal/hostile/abomhorror,
 /turf/open/floor/engine,
 /area/f13/radiation)
+"MJ" = (
+/mob/living/simple_animal/hostile/stalker,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/bunker)
 "MO" = (
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -2285,7 +2348,9 @@
 	},
 /area/f13/bunker)
 "Qn" = (
+/mob/living/simple_animal/hostile/poison/giant_spider/hunter/ice,
 /obj/effect/decal/cleanable/cobweb,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Qu" = (
@@ -2393,6 +2458,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"Sv" = (
+/mob/living/simple_animal/hostile/handy/sentrybot,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
 "SC" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -2430,13 +2500,13 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
 "Ta" = (
 /obj/structure/grille/broken,
+/mob/living/simple_animal/hostile/stalker,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -2447,6 +2517,13 @@
 /obj/structure/bed,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
+"To" = (
+/mob/living/simple_animal/hostile/stalkeryoung,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
 /area/f13/bunker)
 "Ts" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -2484,6 +2561,7 @@
 /obj/structure/sink{
 	pixel_y = 24
 	},
+/mob/living/simple_animal/hostile/stalkeryoung,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
@@ -2842,6 +2920,11 @@
 "XX" = (
 /mob/living/simple_animal/hostile/handy/assaultron,
 /turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
+"Ym" = (
+/mob/living/simple_animal/hostile/supermutant,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
 /area/f13/bunker)
 "Yp" = (
 /obj/structure/table,
@@ -3316,7 +3399,7 @@ MB
 Js
 rW
 Qn
-Qh
+MB
 Cw
 ya
 CZ
@@ -3349,7 +3432,7 @@ uf
 rW
 LR
 uf
-uf
+Sv
 Kg
 Ma
 aq
@@ -3358,7 +3441,7 @@ YH
 MB
 Vi
 Qh
-SD
+ya
 rj
 gG
 PS
@@ -3370,7 +3453,7 @@ Zs
 "}
 (12,1,1) = {"
 qG
-gR
+tY
 cw
 BJ
 rW
@@ -3400,9 +3483,9 @@ MB
 Qh
 Vi
 aU
-SD
+ya
 Ez
-el
+gR
 SD
 Qu
 rW
@@ -3414,7 +3497,7 @@ Zs
 rW
 AH
 Xa
-SD
+To
 rW
 gh
 uf
@@ -3431,7 +3514,7 @@ nJ
 rW
 nJ
 rW
-Ev
+XX
 Ow
 iR
 jq
@@ -3439,14 +3522,14 @@ Ma
 rW
 aj
 gG
-Qh
+pM
 rW
 GR
 SD
-hZ
 SD
-SD
-Qh
+Gl
+ya
+Cb
 DM
 rW
 Zs
@@ -3454,7 +3537,7 @@ Zs
 "}
 (14,1,1) = {"
 rW
-Qh
+MJ
 EW
 sV
 rW
@@ -3487,8 +3570,8 @@ rW
 rW
 rW
 EG
-Qh
-Lk
+MB
+hZ
 ya
 rW
 Zs
@@ -3632,7 +3715,7 @@ BD
 nN
 bY
 sG
-Ev
+FK
 rW
 Gq
 Bb
@@ -3709,7 +3792,7 @@ rW
 Ro
 VA
 jj
-SG
+si
 rW
 Jw
 BD
@@ -3919,7 +4002,7 @@ rW
 bZ
 nE
 RC
-FY
+Ym
 rW
 BD
 lp
@@ -4043,7 +4126,7 @@ Zs
 (28,1,1) = {"
 rW
 qA
-Ho
+lp
 EP
 oV
 rW
@@ -4086,7 +4169,7 @@ Zs
 rW
 ky
 vB
-cT
+ni
 BD
 rW
 lp
@@ -4126,7 +4209,7 @@ Zs
 "}
 (30,1,1) = {"
 rW
-cT
+ni
 pH
 pH
 TZ
@@ -4394,7 +4477,7 @@ mh
 KU
 rW
 NF
-lp
+Ls
 nb
 BD
 Up
@@ -4483,7 +4566,7 @@ lp
 Mf
 bn
 rW
-BD
+JM
 rW
 Zs
 Zs

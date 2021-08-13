@@ -895,7 +895,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Researcher"
 
 /obj/effect/landmark/start/f13/townsec
-	name = "Town Security Officer"
+	name = "City Security Officer"
+
+/obj/effect/landmark/start/f13/townsecscout
+	name = "City Security Scout"
 
 /obj/effect/landmark/start/f13/roadie
 	name = "Roadie"
