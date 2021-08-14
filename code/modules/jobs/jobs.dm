@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Marshal",
 "Merchant",
 "Chief Researcher",
-"Town Security Officer",
+"City Security Officer",
 "Roadie",
 "Researcher",
 "Hoistway Preacher"
@@ -177,7 +177,7 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Vault-tec Security",
 "Vault-tec Engineer",
 
-"Town Security Officer",
+"City Security Officer",
 "Roadie",
 "Researcher",
 "Hoistway Preacher"
@@ -344,7 +344,8 @@ GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Chief Researcher"
 ))
 GLOBAL_LIST_INIT(vtcc_positions, list(
-	"Town Security Officer",
+	"City Security Officer",
+	"City Secutiry Scout",
 	"Roadie",
 	"Innkeeper",
 	"Researcher",

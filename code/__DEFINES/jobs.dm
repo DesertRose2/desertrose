@@ -170,13 +170,14 @@
 #define F13MARSHAL		(1<<2)
 #define F13MERCHANT		(1<<3)
 #define F13CHRESEARCHER		(1<<4)
-#define F13TOWNSEC		(1<<5)
-#define F13ROADIE		(1<<6)
-#define F13RESEARCHER		(1<<7)
-#define F13HOISTWAY		(1<<8)
-#define F13INNKEEPER		(1<<9)
-#define F13INNERWALL		(1<<10)
-#define F13OUTERWALL		(1<<11)
+#define F13CITYSEC		(1<<5)
+#define F13CITYSECSCOUT	(1<<6)
+#define F13ROADIE		(1<<7)
+#define F13RESEARCHER		(1<<8)
+#define F13HOISTWAY		(1<<9)
+#define F13INNKEEPER		(1<<10)
+#define F13INNERWALL		(1<<11)
+#define F13OUTERWALL		(1<<12)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
