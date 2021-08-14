@@ -39,7 +39,7 @@
 	scars_covered_by_clothes = FALSE
 
 /obj/item/bodypart/head/can_dismember(obj/item/I)
-	// Can't decap at all anymore because even accidental decaps can get you noted. So remove the mechanic.
+	// Can't decap at all anymore because even accidental decaps can get you noted. So remove the mechanic entirely.
 	return FALSE
 	return ..()
 
