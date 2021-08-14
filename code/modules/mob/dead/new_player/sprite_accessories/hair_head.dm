@@ -704,6 +704,10 @@
 	name = "Scully"
 	icon_state = "hair_scully"
 
+/datum/sprite_accessory/hair/shannon
+	name = "Shannon"
+	icon_state = "hair_shan"
+
 /datum/sprite_accessory/hair/shaggy
 	name = "Shaggy"
 	icon_state = "hair_shaggy"

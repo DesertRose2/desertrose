@@ -371,7 +371,6 @@
 "kl" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "kz" = (
@@ -525,19 +524,10 @@
 /area/f13/bunker)
 "pT" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
-/mob/living/simple_animal/hostile/radscorpion,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "pW" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/bunker)
-"qn" = (
-/obj/effect/decal/cleanable/blood/old,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
 /area/f13/bunker)
 "qy" = (
 /obj/structure/simple_door/metal/barred,
@@ -751,11 +741,6 @@
 /obj/effect/landmark/poster_spawner/prewar,
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/bunker)
-"xM" = (
-/obj/effect/decal/waste,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "xN" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -819,6 +804,7 @@
 /area/f13/bunker)
 "zH" = (
 /obj/structure/bed/mattress/pregame,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -899,7 +885,6 @@
 /area/f13/bunker)
 "CY" = (
 /obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Do" = (
@@ -1003,10 +988,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/radiation)
-"Hj" = (
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "Hu" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -1271,7 +1252,7 @@
 /obj/item/paper,
 /obj/item/trash/coal,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -1337,7 +1318,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "PF" = (
-/mob/living/simple_animal/hostile/supermutant,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -1870,7 +1851,7 @@ Kz
 Kz
 NJ
 dI
-oE
+NJ
 KA
 NJ
 oP
@@ -2215,7 +2196,7 @@ pf
 Kz
 pW
 Ok
-Hj
+Zr
 zH
 pW
 pW
@@ -2504,7 +2485,7 @@ oP
 Fy
 NM
 BX
-Hj
+NJ
 pW
 Kz
 pW
@@ -2867,7 +2848,7 @@ Kz
 zP
 Uq
 Uq
-xM
+xN
 wR
 wG
 tk
@@ -2875,7 +2856,7 @@ xv
 bp
 BX
 FZ
-gJ
+bp
 fm
 MM
 mh
@@ -3033,7 +3014,7 @@ Kz
 Kz
 Kz
 bp
-gZ
+bp
 bp
 bp
 BX
@@ -3087,7 +3068,7 @@ BX
 bp
 bp
 xv
-qn
+NX
 bp
 BX
 NX
@@ -3133,11 +3114,11 @@ bp
 bp
 wR
 bp
-gZ
 bp
 bp
 bp
-gZ
+bp
+bp
 wR
 Kz
 Kz
