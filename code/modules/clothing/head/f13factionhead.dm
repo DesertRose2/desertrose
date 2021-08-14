@@ -233,6 +233,7 @@
 	desc = "(IV) The unique helmet used by the disciplinary corps of the Legion."
 	icon_state = "legslavemaster"
 	item_state = "legslavemaster"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	dog_fashion = null
