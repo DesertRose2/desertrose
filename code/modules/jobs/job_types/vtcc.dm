@@ -143,6 +143,13 @@
 	/obj/item/pda=1,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1)
 
+/datum/outfit/job/vtcc/f13marshal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
+
 /* Merchant */
 
 /datum/job/vtcc/f13merchant
@@ -348,6 +355,13 @@
 	/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 	/obj/item/shield/riot/tele=1
 	)
+
+/datum/outfit/job/vtcc/f13citysec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
 /* City Sec Socut */
 
