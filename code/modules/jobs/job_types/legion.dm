@@ -609,9 +609,9 @@ Slavemaster
 datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken. You are not allowed to leave base unless given an explicit order by the Legate"
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
@@ -630,6 +630,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	id =			/obj/item/card/id/dogtag/legslavemaster
 	head = 			/obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
+	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears =			/obj/item/radio/headset/headset_legion
 	r_pocket =		 /obj/item/restraints/handcuffs
@@ -638,8 +639,11 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
 		/obj/item/flashlight/lantern=1,
 		/obj/item/melee/curator_whip=1,
+		/obj/item/ammo_box/shotgun/rubber=1,
+		/obj/item/storage/box/handcuffs=1,
 		/obj/item/razor=1,
-		/obj/item/restraints/legcuffs/bola=1,
+		/obj/item/binoculars=1,
+		/obj/item/restraints/legcuffs/bola=2,
 		/obj/item/stack/medical/gauze/improvised = 1)
 
 
@@ -1107,8 +1111,8 @@ Camp Follower
 /datum/job/CaesarsLegion/f13campfollower
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
 	exp_requirements = 300
