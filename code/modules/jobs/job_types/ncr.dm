@@ -766,8 +766,8 @@ Veteran Ranger
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	var/datum/martial_art/rangertakedown/RT = new
-	RT.teach(H)
+	//var/datum/martial_art/rangertakedown/RT = new
+	//RT.teach(H)
 
 /datum/outfit/job/ncr/f13vetranger
 	name = "NCR Veteran Ranger"
@@ -840,8 +840,8 @@ Veteran Ranger
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	var/datum/martial_art/rangertakedown/RT = new
-	RT.teach(H)
+	//var/datum/martial_art/rangertakedown/RT = new
+	//RT.teach(H)
 
 /datum/outfit/job/ncr/f13ranger
 	name = "NCR Ranger"

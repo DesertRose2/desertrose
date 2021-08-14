@@ -49,7 +49,7 @@
 			return // removes bullet disemboweling
 		if(BODY_ZONE_HEAD)
 			return // removed any chance of decap from bullets.
-				return
+
 	var/obj/item/bodypart/affecting = get_bodypart(def_zone)
 	if(!affecting?.dismemberable || affecting.get_damage() < (affecting.max_damage - P.dismemberment))
 		return
