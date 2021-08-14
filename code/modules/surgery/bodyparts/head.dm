@@ -40,7 +40,6 @@
 
 /obj/item/bodypart/head/can_dismember(obj/item/I)
 	// Can't decap at all anymore because even accidental decaps can get you noted. So remove the mechanic entirely.
-	return FALSE
 	return ..()
 
 /obj/item/bodypart/head/drop_organs(mob/user)
