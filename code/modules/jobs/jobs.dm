@@ -267,10 +267,10 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
+	"NCR Medical Officer",
 ))
 
 GLOBAL_LIST_INIT(ncr_general_positions, list(
-	"NCR Medical Officer",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
@@ -279,7 +279,6 @@ GLOBAL_LIST_INIT(ncr_general_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
-	"NCR Medical Officer",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
@@ -340,13 +339,13 @@ GLOBAL_LIST_INIT(followers_positions, list(
 GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Alderman",
 	"Marshal",
-	"Merchant",
 	"Chief Researcher"
 ))
 GLOBAL_LIST_INIT(vtcc_positions, list(
 	"City Security Officer",
-	"City Secutiry Scout",
+	"City Security Scout",
 	"Roadie",
+	"Merchant",
 	"Innkeeper",
 	"Researcher",
 	"Hoistway Preacher",
@@ -368,20 +367,27 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_DEN           = list("titles" = den_positions ),
 	EXP_TYPE_LEGION        = list("titles" = legion_positions),
 	EXP_TYPE_NCR           = list("titles" = ncr_positions),
+	EXP_TYPE_NCRNCO        = list("titles" = list("NCR Corporal")),
+	EXP_TYPE_NCRTPR        = list("titles" = list("NCR Trooper")),
 	EXP_TYPE_VAULT         = list("titles" = vault_positions),
 	EXP_TYPE_WASTELAND     = list("titles" = wasteland_positions),
 	EXP_TYPE_TRIBAL        = list("titles" = tribal_positions),
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
+	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
+	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Scout","City Security Officer")),
 	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
-	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
-	EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
+	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
+	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
+	EXP_TYPE_DECANUS       = list("titles" = list("Legion Recruit Decanus")),
+	EXP_TYPE_PRIME         = list("titles" = list("Prime Legionary")),
+	EXP_TYPE_CAMP          = list("titles" = list("Legion Slave","Camp Follower")),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Veteran Ranger")),
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Veteran Ranger","NCR Medical Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
-	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Marshal", "Merchant", "Chief Researcher"))
+	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Marshal", "Chief Researcher"))
 
 ))
 

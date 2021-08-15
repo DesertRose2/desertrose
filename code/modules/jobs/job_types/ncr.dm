@@ -2,12 +2,14 @@
 	department_flag = NCR
 	selection_color = "#ffeeaa"
 	faction = "NCR"
+	exp_type = EXP_TYPE_NCR
+
+
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
-	exp_type = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/
 	name = "NCRdatums"
@@ -350,6 +352,8 @@ Sergeant
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_NCRNCO
 
 	loadout_options = list(
 	/datum/outfit/loadout/serreg,
@@ -415,6 +419,8 @@ Corporal
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
 	outfit = /datum/outfit/job/ncr/f13corporal
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_NCRTPR
 
 	loadout_options = list(
 	/datum/outfit/loadout/corpreg,
@@ -481,6 +487,8 @@ Combat Engineer
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
 	outfit = /datum/outfit/job/ncr/f13combatmedic
+	exp_requirements = 900
+	exp_type = EXP_TYPE_NCRTPR
 
 /datum/outfit/job/ncr/f13combatmedic
 	name = "NCR Combat Medic"
@@ -525,6 +533,8 @@ Combat Engineer
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
 	outfit = /datum/outfit/job/ncr/f13combatengineer
+	exp_requirements = 900
+	exp_type = EXP_TYPE_NCRTPR
 
 /datum/outfit/job/ncr/f13combatengineer
 	name = "NCR Combat Engineer"
@@ -572,9 +582,10 @@ Trooper
 	description = "You are considered the backbone and workforce strength of the NCR Army. You answer to everyone above you in the chain of command, taking orders from your Sergeant directly and obeying all commands given by the Lieutenant."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 1200
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
+	exp_requirements = 600
+
 	loadout_options = list(
 	/datum/outfit/loadout/troopreg,
 	/datum/outfit/loadout/trooplight,
@@ -636,9 +647,10 @@ Mp
 	description = "You are the disciplining arm of the NCRA, You protect peoples' lives and property at NCR installations by enforcing military laws and regulations. You are not allowed to leave base unless given an explicit order by High Command"
 	supervisors = "Lieutenants and the Sergeant First Class"
 	selection_color = "#fff5cc"
-	exp_requirements = 1200
 	display_order = JOB_DISPLAY_ORDER_MILITARY_POLICE
 	outfit = /datum/outfit/job/ncr/f13militarypolice
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_NCRNCO
 
 /datum/outfit/job/ncr/f13militarypolice
 	name = "NCR Military Police"
@@ -709,7 +721,7 @@ Off-Duty
 	description = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
 	supervisors = "All NCOs and COs"
 	selection_color = "#fff5cc"
-	exp_requirements = 2100
+	exp_requirements = 600
 	display_order = JOB_DISPLAY_ORDER_NCR_OFF_DUTY
 	outfit = /datum/outfit/job/ncr/f13ncroffduty
 

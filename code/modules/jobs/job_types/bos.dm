@@ -10,6 +10,7 @@ Main doors: ACCESS_CAPTAIN 20
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	outfit = /datum/outfit/job/bos/
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
 
@@ -540,6 +541,8 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_SCRIBE
 
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
@@ -618,6 +621,8 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Proctor, or Head Scribe"
 	selection_color = "#95a5a6"
+	exp_requirements = 600
+
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribejsw,
@@ -737,6 +742,8 @@ datum/job/bos/f13seniorknight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Knight"
 	selection_color = "#95a5a6"
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta,
@@ -830,6 +837,7 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Star Knight, or Head Knight"
 	selection_color = "#95a5a6"
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta,
@@ -962,8 +970,6 @@ Initiate
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the scribes, knights, or Paladins"
 	selection_color = "#95a5a6"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_CREW
 
 	loadout_options = list(
 	/datum/outfit/loadout/initiatek, //AEP7 and Engibelt with combat armor, no helmet
@@ -1028,6 +1034,7 @@ Off-Duty
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/offa, //Junior Knight
