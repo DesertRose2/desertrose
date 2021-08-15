@@ -16841,7 +16841,7 @@
 /area/f13/caves)
 "keK" = (
 /obj/machinery/door/poddoor/shutters{
-	id = "bosverti";
+	id = "bosverti1";
 	name = "Vertibird Hangar Door"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -24076,6 +24076,17 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/wood,
 /area/f13/village)
+"oQF" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "bosverti";
+	name = "Vertibird Hangar Door"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "bosverti1";
+	name = "Vertibird Hangar Door"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood)
 "oQM" = (
 /obj/structure/table/booth,
 /turf/open/floor/carpet/black,
@@ -25691,7 +25702,7 @@
 /area/f13/clinic)
 "pOC" = (
 /obj/machinery/button{
-	id = "bosverti";
+	id = "bosverti1";
 	name = "Hangar Door button";
 	pixel_x = -23;
 	pixel_y = 3;
@@ -36075,7 +36086,7 @@
 /area/f13/city)
 "wbU" = (
 /obj/machinery/button{
-	id = "bosverti";
+	id = "bosverti1";
 	name = "Hangar Door button";
 	pixel_x = 23;
 	pixel_y = 3;
@@ -77886,7 +77897,7 @@ keK
 keK
 keK
 keK
-keK
+oQF
 keK
 keK
 jem
