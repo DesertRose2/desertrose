@@ -9,6 +9,8 @@
 	enforces = "The Legion expects: Obeying orders of superiors. A roman style name. Wearing the uniform, unless acting as a nonlethal infiltrator."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Establish patrols and fortifications around the main road", "Leadership recommends the following goal for this week: Acquire and train slaves")
 
+	exp_type = EXP_TYPE_LEGION
+
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
 
@@ -405,6 +407,9 @@ Decanii
 	supervisors = "the Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_DECANUS
+
 	loadout_options = list(
 	/datum/outfit/loadout/primedecline,
 	/datum/outfit/loadout/primedecshock,
@@ -480,6 +485,9 @@ Decanii
 	supervisors = "the Prime Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_PRIME
+
 	loadout_options = list(
 	/datum/outfit/loadout/recdecmelee,
 	/datum/outfit/loadout/recdecshock,
@@ -611,10 +619,12 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	flag = F13SLAVEMASTER
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken. You are not allowed to leave base unless given an explicit order by the Legate"
-	supervisors = "the Decani and Centurion"
+	description = "You are the feared and respected disciplinary corps of the Legion. You are in charge of Capture, Slaves, keeping the peace between your brothers and upholding Legion standards. You are not allowed to leave base unless given an explicit order by the Legate"
+	supervisors = "The Veteran Decanus, Venator and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_PRIME
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -747,6 +757,8 @@ Prime Legionairy
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+	exp_requirements = 600
+
 	loadout_options = list(
 		/datum/outfit/loadout/primeline,
 		/datum/outfit/loadout/primeshock,
@@ -815,8 +827,6 @@ Recruit Legionary
 	spawn_positions = 4
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_LEGION
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
@@ -959,6 +969,9 @@ Explorer
 	supervisors = "the Venator and Centurion"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+	exp_requirements = 900
+	exp_type = EXP_TYPE_PRIME
+
 	loadout_options = list(
 		/datum/outfit/loadout/excursor,
 		/datum/outfit/loadout/sapper)
@@ -1030,6 +1043,8 @@ Auxilia
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_CAMP
 
 	loadout_options = list(
 	/datum/outfit/loadout/auxengi,
@@ -1115,7 +1130,6 @@ Camp Follower
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
-	exp_requirements = 300
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 
@@ -1190,8 +1204,6 @@ Slave
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion, but mostly the Slavemaster"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_CREW
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	outfit = /datum/outfit/job/CaesarsLegion/slave
 
@@ -1240,6 +1252,7 @@ Off-Duty Legionary
 	description = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
 	supervisors = "Those who share your rank or higher that are on duty."
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/offduty
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/offcent,
