@@ -237,7 +237,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
 	name = "legion prefect helmet"
-	desc = "(IV) The unique helmet used by the disciplinary corps of the Legion."
+	desc = "(IV) An unique helmet used by the disciplinary corps of the Legion. It has a metal mask to help protect its user."
 	icon_state = "legslavemaster"
 	item_state = "legslavemaster"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)

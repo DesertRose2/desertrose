@@ -275,7 +275,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
 	name = "legion prefect armor"
-	desc = "(IV) Issued to slave masters to keep them cool during long hours of watching the slaves work in the sun."
+	desc = "(IV) A light armor issued to disciplinary corps of the Caesar's Legion."
 	icon_state = "legslavemaster"
 	slowdown = -0.13
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
