@@ -613,7 +613,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Orator"
 
 /obj/effect/landmark/start/f13/slavemaster
-	name = "Legion Slavemaster"
+	name = " Camp Prefect"
 
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"

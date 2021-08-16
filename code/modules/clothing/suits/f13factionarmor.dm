@@ -266,8 +266,15 @@
 	slowdown = -0.13
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/legion/prime/explorer
+	name = "legion explorer armor"
+	desc = "(IV) A modified set of prime armor with much of the metal replaced by layered strips of laminated linen and leather."
+	icon_state = "legexplorer"
+	slowdown = -0.13
+	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
-	name = "slavemaster armor"
+	name = "legion prefect armor"
 	desc = "(IV) Issued to slave masters to keep them cool during long hours of watching the slaves work in the sun."
 	icon_state = "legslavemaster"
 	slowdown = -0.13
@@ -287,11 +294,6 @@
 	item_state = "legmetal"
 	slowdown = -0.1
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/legion/vet/explorer
-	name = "legion explorer armor"
-	desc = "(V) A modified set of veteran armor with much of the metal replaced by layered strips of laminated linen and leather."
-	icon_state = "legexplorer"
 
 /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	name = "legion vexillarius armor"

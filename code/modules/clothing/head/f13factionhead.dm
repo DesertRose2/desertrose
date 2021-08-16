@@ -228,8 +228,15 @@
 	icon_state = "legprime"
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/head/helmet/f13/legion/prime/explorer
+	name = "legion explorer hood"
+	desc = "(IV) It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
+	icon_state = "legexplorer"
+	item_state = "legexplorer"
+	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
-	name = "slave master helmet"
+	name = "legion prefect helmet"
 	desc = "(IV) The unique helmet used by the disciplinary corps of the Legion."
 	icon_state = "legslavemaster"
 	item_state = "legslavemaster"
@@ -258,12 +265,6 @@
 	icon_state = "legheavyup"
 	item_state = "legheavyup"
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
-
-/obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	name = "legion explorer hood"
-	desc = "(V) It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
-	icon_state = "legexplorer"
-	item_state = "legexplorer"
 
 /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	name = "legion fox vexillarius helmet"

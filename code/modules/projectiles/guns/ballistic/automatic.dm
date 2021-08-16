@@ -727,7 +727,7 @@
 
 /obj/item/gun/ballistic/automatic/service/r82/legion
 	name = "'Pilum' rifle"
-	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture."
+	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture. It features a mark of bull on it and feels heavier than usual."
 	icon_state = "pilum"
 	item_state = "fnfal"
 	can_automatic = FALSE
@@ -735,7 +735,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3
 	burst_shot_delay = 2
-	force = 30
+	force = 20
 	spread = 1
 
 /obj/item/gun/ballistic/automatic/marksman
@@ -942,6 +942,18 @@
 	name = "Republic's Pride"
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Proudly issued to Scout Captains and packs a mean punch. Chambered in 7.62x51."
 	icon_state = "republics_pride"
+	item_state = "scoped308"
+	extra_damage = 8
+	extra_penetration = 0.1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_scope = FALSE
+
+/obj/item/gun/ballistic/automatic/m1garand/republicsdemise
+	name = "Republic's Demise"
+	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. This one seems to be looted from a dead NCR Lieutenant and the flag replaced with a bull. Chambered in 7.62x51."
+	icon_state = "republics_demise"
 	item_state = "scoped308"
 	extra_damage = 8
 	extra_penetration = 0.1
