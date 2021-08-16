@@ -2094,6 +2094,12 @@
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aXH" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 10;
+	icon_state = "dirt"
+	},
+/area/f13/tunnel)
 "aXL" = (
 /obj/structure/closet/crate/trashcart,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -3226,6 +3232,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
+"bIf" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "bIh" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/clinic)
@@ -3584,9 +3594,6 @@
 	icon_state = "bar"
 	},
 /area/f13/bar)
-"bXi" = (
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "bXl" = (
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -5496,6 +5503,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"dor" = (
+/obj/structure/table/wood,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/tunnel)
 "doB" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood{
@@ -7594,6 +7605,12 @@
 	icon_state = "horizontalbottombordertopleft"
 	},
 /area/f13/wasteland)
+"eHF" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
+/area/f13/tunnel)
 "eHW" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/item/storage/box/cups,
@@ -9271,10 +9288,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"fBt" = (
-/obj/structure/table/wood,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "fBx" = (
 /obj/structure/decoration/rag,
 /obj/structure/barricade/wooden,
@@ -13567,6 +13580,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"iey" = (
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/tunnel)
 "iez" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /obj/effect/decal/cleanable/oil{
@@ -14039,7 +14057,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "isV" = (
 /obj/machinery/light/small{
 	brightness = 3;
@@ -14678,7 +14696,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "iMV" = (
 /obj/effect/turf_decal{
 	dir = 1
@@ -16055,7 +16073,7 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "jCC" = (
 /obj/structure/musician/piano,
 /turf/open/floor/f13{
@@ -16857,7 +16875,7 @@
 /area/f13/caves)
 "keK" = (
 /obj/machinery/door/poddoor/shutters{
-	id = "bosverti1";
+	id = "boshanger";
 	name = "Vertibird Hangar Door"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -17624,6 +17642,12 @@
 "kBU" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/bar)
+"kCe" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "kCs" = (
 /obj/item/ammo_casing/a50MG,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -18903,7 +18927,7 @@
 	dir = 6;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "lsg" = (
 /obj/structure/chair/booth{
 	dir = 8
@@ -19136,6 +19160,12 @@
 /obj/structure/sink/well,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"lyE" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/tunnel)
 "lyG" = (
 /obj/structure/simple_door/house,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -20928,7 +20958,7 @@
 	pixel_y = -2
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/f13/tunnel)
 "mKp" = (
 /obj/structure/curtain{
 	color = "#845f58"
@@ -22803,6 +22833,10 @@
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"obl" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "obr" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -23038,6 +23072,10 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ncr)
+"ojn" = (
+/obj/item/flag/bos,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/tunnel)
 "ojU" = (
 /obj/structure/chair/stool{
 	dir = 8;
@@ -24092,17 +24130,6 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/wood,
 /area/f13/village)
-"oQF" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "bosverti";
-	name = "Vertibird Hangar Door"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "bosverti1";
-	name = "Vertibird Hangar Door"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood)
 "oQM" = (
 /obj/structure/table/booth,
 /turf/open/floor/carpet/black,
@@ -25631,7 +25658,7 @@
 	dir = 8;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "pMh" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
@@ -25718,7 +25745,7 @@
 /area/f13/clinic)
 "pOC" = (
 /obj/machinery/button{
-	id = "bosverti1";
+	id = "boshanger";
 	name = "Hangar Door button";
 	pixel_x = -23;
 	pixel_y = 3;
@@ -29554,7 +29581,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "slT" = (
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
 /obj/item/clothing/suit/armor/f13/rustedcowboy,
@@ -31023,7 +31050,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "tcX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -31326,7 +31353,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "tlD" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -33104,6 +33131,12 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/grass,
 /area/f13/wasteland)
+"umW" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirtcorner"
+	},
+/area/f13/tunnel)
 "unp" = (
 /obj/structure/destructible/tribal_torch,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -35506,7 +35539,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "vIr" = (
 /obj/structure/chair/stool,
 /turf/open/indestructible/ground/outside/dirt,
@@ -35575,7 +35608,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/tunnel)
 "vJb" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
@@ -35966,6 +35999,10 @@
 /obj/machinery/mineral/equipment_vendor,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
+"vWp" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/tunnel)
 "vWq" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8
@@ -36103,7 +36140,7 @@
 /area/f13/city)
 "wbU" = (
 /obj/machinery/button{
-	id = "bosverti1";
+	id = "boshanger";
 	name = "Hangar Door button";
 	pixel_x = 23;
 	pixel_y = 3;
@@ -77914,7 +77951,7 @@ keK
 keK
 keK
 keK
-oQF
+keK
 keK
 keK
 jem
@@ -79444,11 +79481,11 @@ anb
 pMI
 pWx
 fyf
-mcN
+vaA
 mGC
 mGC
 mGC
-mcN
+vaA
 jWO
 fyf
 fyf
@@ -79701,11 +79738,11 @@ xOt
 pMI
 esD
 fyf
-mcN
+vaA
 ktB
 gcK
 gcK
-mcN
+vaA
 fyf
 fyf
 fyf
@@ -79958,7 +79995,7 @@ fyf
 fyf
 fyf
 fyf
-hwC
+gcK
 gcK
 gcK
 ktB
@@ -80215,7 +80252,7 @@ fyf
 fyf
 fyf
 fyf
-hwC
+gcK
 ktB
 gcK
 ktB
@@ -80472,7 +80509,7 @@ ioi
 pMI
 jgY
 fyf
-hwC
+gcK
 ktB
 gcK
 gcK
@@ -81763,7 +81800,7 @@ tGY
 hbm
 nxY
 tzy
-bXi
+fyf
 gcK
 gcK
 qfo
@@ -82021,8 +82058,8 @@ hbm
 xSV
 fyf
 fyf
-bXi
-bXi
+fyf
+fyf
 qzC
 rRT
 rRT
@@ -82279,7 +82316,7 @@ fyf
 fyf
 fyf
 fyf
-bXi
+fyf
 jem
 sfc
 rRJ
@@ -82794,16 +82831,16 @@ cWG
 cWG
 cWG
 cWG
-cWG
-cWG
+hwJ
+hwJ
 tly
-cWG
+hwJ
 isO
-cWG
-cWG
-cWG
-cWG
-cWG
+hwJ
+hwJ
+hwJ
+hwJ
+hwJ
 lrT
 gwk
 mvv
@@ -83051,17 +83088,17 @@ mvv
 mvv
 mvv
 mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
+bwq
 mvv
 mvv
 mvv
@@ -83310,15 +83347,15 @@ mfD
 mfD
 vIl
 slG
-mfD
+kXK
 slG
-mfD
-mfD
-mfD
-xGH
-uRa
-mvv
-aBH
+kXK
+kXK
+kXK
+aXH
+obl
+bwq
+eHF
 mfD
 mfD
 mfD
@@ -83570,11 +83607,11 @@ jem
 jem
 jem
 jem
-xSV
-fyf
-tBN
-mvv
-mvv
+ojn
+nHL
+iey
+bwq
+bwq
 tcu
 fyf
 fyf
@@ -83827,11 +83864,11 @@ irQ
 tGx
 rem
 xwl
-fyf
-fyf
-tBN
-wsC
-mvv
+nHL
+nHL
+iey
+bIf
+bwq
 vIT
 fyf
 fyf
@@ -84084,11 +84121,11 @@ irQ
 rRT
 rem
 xwl
-fyf
-fyf
-tBN
-mvv
-mvv
+nHL
+nHL
+iey
+bwq
+bwq
 iMF
 fyf
 fyf
@@ -84335,18 +84372,18 @@ lFD
 lFD
 hbm
 fyf
-bXi
+fyf
 rrC
 rRT
 rRT
 rRT
 jem
-xSV
-jcp
-tBN
-oaw
-mvv
-bpD
+ojn
+vWp
+iey
+kCe
+bwq
+lyE
 fyf
 fyf
 fyf
@@ -84592,18 +84629,18 @@ jeO
 hbm
 hbm
 fyf
-bXi
+fyf
 rrC
 rRT
 rRT
 rRT
 jem
-fyf
+nHL
 mKm
-tBN
-mvv
-mvv
-bpD
+iey
+bwq
+bwq
+lyE
 fyf
 fyf
 fyf
@@ -84849,18 +84886,18 @@ mnC
 fyf
 fyf
 fyf
-bXi
+fyf
 jem
 jem
 tSA
 jem
 jem
-fBt
-dLl
+dor
+dor
 pLJ
-mfD
-mfD
-hCg
+kXK
+kXK
+umW
 fyf
 fyf
 fyf
@@ -85117,7 +85154,7 @@ vaA
 vaA
 vaA
 vaA
-fyf
+nHL
 fyf
 fyf
 sqA
