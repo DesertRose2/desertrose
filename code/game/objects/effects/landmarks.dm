@@ -594,6 +594,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Off-Duty"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrmilitarypolice
+	name = "NCR Military Police"
+	icon_state = "NCR Sergeant"
+
+
 // Legion
 
 /obj/effect/landmark/start/f13/legate

@@ -207,6 +207,8 @@ Druid
 	forbids = "Abusing technology and using Pre-War weapons."
 	description = "You are a Druid in the tribe; you perform rituals, and bless pre-war relics and other artifacts for the tribe to use. You also are the spiritual guides of the tribe, and work with the Shaman during rituals or other spiritual matters."
 	selection_color = "#006666"
+	exp_requirements = 600
+	exp_type = EXP_TYPE_TRIBAL
 
 	outfit = /datum/outfit/job/tribal/f13druid
 	access = list(ACCESS_TRIBE)
@@ -248,9 +250,6 @@ Villager
 	supervisors = "Tribal Chief, Shaman and Headhunter"
 	description = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe."
 	selection_color = "#006666"
-
-	exp_requirements = 12
-	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/tribal/f13villager
 
@@ -331,8 +330,8 @@ Hunter
 	description = "You are a Hunter for the tribe; you bring back food and relics, anything that may house a machine spirit that can be purified by the shaman. You also are the protectors of the tribe, and work with the Head Hunter during Great Hunts or times of War."
 	selection_color = "#006666"
 
-	exp_requirements = 12
-	exp_type = EXP_TYPE_CREW
+	exp_requirements = 600
+	exp_type = EXP_TYPE_TRIBAL
 
 	outfit = /datum/outfit/job/tribal/f13hunter
 
