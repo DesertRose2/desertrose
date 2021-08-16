@@ -264,3 +264,16 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/melee/powerfist/moleminer/goliath
+	name = "Goliath"
+	desc = "Armored gauntlet with a piston-powered ram, this one is a experimental one captured and named by the Legion."
+	icon_state = "goliath"
+	item_state = "goliath"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	flags_1 = CONDUCT_1
+	force = 35
+	armour_penetration = 0.6
+	throwforce = 20
+	throw_range = 7
