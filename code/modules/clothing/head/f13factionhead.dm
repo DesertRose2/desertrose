@@ -233,6 +233,7 @@
 	desc = "(IV) The unique helmet used by the disciplinary corps of the Legion."
 	icon_state = "legslavemaster"
 	item_state = "legslavemaster"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	dog_fashion = null
@@ -898,18 +899,25 @@
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc
 	name = "vtcc riot helmet"
-	desc = "(VI) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
+	desc = "(V) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
 	icon_state = "vtcc_riot_helmet"
 	item_state = "vtcc_riot_helmet"
-	armor = list("tier" = 6, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 	can_toggle = null
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
 	name = "vtcc scout helmet"
-	desc = "(V) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
+	desc = "(IV) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
 	icon_state = "vtcc_riot_helmet"
 	item_state = "vtcc_riot_helmet"
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 25, "bio" = 40, "rad" = 10, "fire" = 40, "acid" = 10)
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 10, "fire" = 40, "acid" = 10)
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/heavy
+	name = "vtcc heavy riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, painted black."
+	icon_state = "vtcc_heavy_riot_helmet"
+	item_state = "vtcc_heavy_riot_helmet"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 30)
 
 
 //THE GRAVEYARD

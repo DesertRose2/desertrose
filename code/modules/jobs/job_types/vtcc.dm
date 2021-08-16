@@ -143,6 +143,13 @@
 	/obj/item/pda=1,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1)
 
+/datum/outfit/job/vtcc/f13marshal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
+
 /* Merchant */
 
 /datum/job/vtcc/f13merchant
@@ -154,6 +161,9 @@
 	description = "Trade deals fall upon your shoulders to negotiate with those around the town, so ensure you never give more than you've got. Of course, selling the town is the worst thing you could do, so it should go without saying that you can't do that. Negotiate with the traders of the wastes, extort them for the shirt on their back, or set them up for life, it's up to you to decide. Just don't lose your head."
 
 	outfit = /datum/outfit/job/vtcc/f13merchant
+	exp_requirements = 600
+	exp_type = EXP_TYPE_ROADIE
+
 	loadout_options = list(
 		/datum/outfit/loadout/blacksmith,
 		/datum/outfit/loadout/armsdealer,
@@ -291,6 +301,9 @@
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it in with them, inside the outer ring. There, you dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
 
 	outfit = /datum/outfit/job/vtcc/f13citysec
+	exp_requirements = 1500
+	exp_type = EXP_TYPE_VTCCSEC
+
 	loadout_options = list(
 		/datum/outfit/loadout/musketeer,
 		/datum/outfit/loadout/oldguard,
@@ -349,7 +362,14 @@
 	/obj/item/shield/riot/tele=1
 	)
 
-/* City Sec Socut */
+/datum/outfit/job/vtcc/f13citysec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
+
+/* City Sec Scout */
 
 /datum/job/vtcc/f13citysecscout
 	title = "City Security Scout"
@@ -360,6 +380,9 @@
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it in with them, inside the outer ring. It's there that you will learn to dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
 
 	outfit = /datum/outfit/job/vtcc/f13citysecscout
+	exp_requirements = 600
+	exp_type = EXP_TYPE_VTCC
+
 	loadout_options = list(
 		/datum/outfit/loadout/easyroad,
 		/datum/outfit/loadout/newblood,
@@ -428,6 +451,9 @@
 	description = "Operate the shop when the Merchant's asleep or just isn't there, push and pull those crates to and fro like your life depends on it (and when your paycheck is based on performance, well, it certainly does). If there are no crates to pick up, head out into the wastes and start scavenging for anything you could sell at an extortionate price."
 
 	outfit = /datum/outfit/job/vtcc/f13roadie
+	exp_requirements = 600
+	exp_type = EXP_TYPE_VTCC
+
 	loadout_options = list(
 		/datum/outfit/loadout/scavver,
 		/datum/outfit/loadout/courier,
@@ -497,6 +523,9 @@
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_VTCC
+
 	loadout_options = list(
 		/datum/outfit/loadout/medprof,
 		/datum/outfit/loadout/robotocist,
@@ -557,6 +586,9 @@
 	description = "You hear It's myriad demands and must work to fulfil them, by any means necessary. The more you convert to join the Hoistway, the more who serve Its divine will, the easier these tasks will be. The spiritual health of man, mutant and machine is your priority, for those healthy in mind are those who can greatly serve their betters. And the only one better is It."
 
 	outfit = /datum/outfit/job/vtcc/f13hoistway
+	exp_requirements = 900
+	exp_type = EXP_TYPE_VTCC
+
 	loadout_options = list(
 		/datum/outfit/loadout/techwhisperer,
 		/datum/outfit/loadout/engineer

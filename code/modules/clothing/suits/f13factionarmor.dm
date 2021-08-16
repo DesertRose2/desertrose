@@ -270,6 +270,8 @@
 	name = "slavemaster armor"
 	desc = "(IV) Issued to slave masters to keep them cool during long hours of watching the slaves work in the sun."
 	icon_state = "legslavemaster"
+	slowdown = -0.13
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet
 	name = "legion veteran armor"
@@ -778,18 +780,25 @@
 
 /obj/item/clothing/suit/armor/f13/riot/vault
 	name = "VTCC riot armour"
-	desc = "(VI) A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
+	desc = "(V) A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
 	icon_state = "vtcc_riot_gear"
 	item_state = "vtcc_riot_gear"
-	armor = list("tier" = 6, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/riot/vault/scout
 	name = "VTCC scout armour"
-	desc = "(V) A suit of stripped back riot armour, adapted from the pre-war U.S.M.C armours and stripped back."
+	desc = "(IV) A suit of stripped back riot armour, adapted from the pre-war U.S.M.C armours and stripped back."
 	icon_state = "vtcc_scout_gear"
 	item_state = "vtcc_scout_gear"
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 25, "bio" = 30, "rad" = 10, "fire" = 50, "acid" = 10)
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 30, "rad" = 10, "fire" = 50, "acid" = 10)
+	slowdown = -0.1
 
+/obj/item/clothing/suit/armor/f13/riot/vault/heavy
+	name = "VTCC riot supression armor"
+	desc = "(VI) A suit of heavy riot armour adapted from the design of the pre-war U.S.M.C. armour, this model appears to have bits of combat armor strapped to it to reinforce it."
+	icon_state = "vtcc_heavy_riot_gear"
+	item_state = "vtcc_heavy_riot_gear"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 15, "fire" = 65, "acid" = 30)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING

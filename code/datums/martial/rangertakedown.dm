@@ -1,4 +1,4 @@
-/datum/martial_art/rangertakedown
+/*/datum/martial_art/rangertakedown
 	name = "Ranger Takedown"
 	id = MARTIALART_RANGERTAKEDOWN
 	var/datum/action/ranger_takedown/rangertakedown = new/datum/action/ranger_takedown()
@@ -69,3 +69,4 @@
 	D.DefaultCombatKnockdown(rand(10,30)) //Due to the defensive nature of the move, it shouldn't be longer than putting on a pair of cuffs. (30)
 	log_combat(A, D, "sweeped (Ranger Takedown)")
 	return TRUE
+*/
