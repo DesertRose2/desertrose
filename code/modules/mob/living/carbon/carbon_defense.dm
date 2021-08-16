@@ -50,6 +50,7 @@
 		if(BODY_ZONE_HEAD)
 			if(head) // No decap unless head is slot is empty
 				return
+
 	var/obj/item/bodypart/affecting = get_bodypart(def_zone)
 	if(!affecting?.dismemberable || affecting.get_damage() < (affecting.max_damage - P.dismemberment))
 		return

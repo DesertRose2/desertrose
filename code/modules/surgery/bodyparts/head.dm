@@ -42,7 +42,6 @@
 	// Can't decap people alive or with some kind of headgear less headaches for staff.
 	if(owner && (owner.stat != DEAD || owner.head))
 		return FALSE
-	return ..()
 
 /obj/item/bodypart/head/drop_organs(mob/user)
 	var/turf/T = get_turf(src)
