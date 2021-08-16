@@ -641,7 +641,7 @@ Mp
 
 /datum/job/ncr/f13militarypolice
 	title = "NCR Military Police"
-	flag = F13REARECHELON
+	flag = F13MILITARYPOLICE
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are the disciplining arm of the NCRA, You protect peoples' lives and property at NCR installations by enforcing military laws and regulations. You are not allowed to leave base unless given an explicit order by High Command"

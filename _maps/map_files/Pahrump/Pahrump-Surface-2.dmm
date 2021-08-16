@@ -3411,6 +3411,11 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"bQc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/ncrmilitarypolice,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "bQh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -5304,6 +5309,12 @@
 /obj/item/shard,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"diT" = (
+/obj/effect/landmark/start/f13/townsecscout,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "diU" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/grown/corn,
@@ -6047,6 +6058,10 @@
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"dDH" = (
+/obj/effect/landmark/start/f13/slavemaster,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "dDK" = (
 /obj/structure/legion_extractor,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10421,6 +10436,7 @@
 	name = "ladder well";
 	pixel_x = -18
 	},
+/obj/effect/landmark/observer_start,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "grc" = (
@@ -33292,6 +33308,7 @@
 /turf/open/floor/wood,
 /area/f13/village)
 "urN" = (
+/obj/effect/landmark/start/f13/ncrmilitarypolice,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "urW" = (
@@ -54447,10 +54464,10 @@ sfB
 wOj
 umk
 xLh
+tHn
 xLh
 xLh
-xLh
-xLh
+diT
 xLh
 iyo
 wOj
@@ -54704,10 +54721,10 @@ sfB
 wOj
 pdy
 xLh
-xLh
+tHn
 oep
 uYH
-xLh
+diT
 xLh
 tiy
 wOj
@@ -54964,7 +54981,7 @@ xLh
 tHn
 fKq
 qGv
-xLh
+diT
 xLh
 wnv
 wOj
@@ -55221,7 +55238,7 @@ xLh
 tHn
 qAL
 dfx
-xLh
+diT
 xLh
 iBT
 wOj
@@ -57322,7 +57339,7 @@ gcK
 gcK
 ezX
 jgx
-fFC
+bQc
 wWI
 sWC
 jcB
@@ -85579,11 +85596,11 @@ csk
 csk
 asI
 gtn
-ktB
-ktB
-ktB
-ktB
 gcK
+ktB
+ktB
+ktB
+ktB
 gcK
 gcK
 gcK
@@ -102483,7 +102500,7 @@ awT
 jIn
 frz
 wPS
-wPS
+dDH
 wPS
 gcK
 gcK
@@ -102997,7 +103014,7 @@ cjV
 cjV
 hom
 wPS
-wPS
+dDH
 wPS
 wPS
 wPS

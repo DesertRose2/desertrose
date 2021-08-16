@@ -62,6 +62,7 @@
 #define F13NCROFFDUTY    (1<<12)
 #define F13VETRANGER	 (1<<13)
 #define F13RANGER	 	 (1<<14)
+#define F13MILITARYPOLICE (1<<15)
 
 #define LEGION			(1<<4)
 
