@@ -376,7 +376,8 @@
 						"usotsukihime",
 						"thegreatcoward",
 						"gurking",
-						"melodicdeity")
+						"melodicdeity",
+						"cythisia"l)
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -440,7 +441,8 @@
 	path = /obj/item/storage/belt/holster/ranger10mm
 	ckeywhitelist = list("hawkwestheimer",
 						 "theneworleans",
-						 "ollieoxen")
+						 "ollieoxen",
+						 "cythisia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -469,7 +471,8 @@
 						"usotsukihime",
 						"thegreatcoward",
 						"gurking",
-						"melodicdeity")
+						"melodicdeity",
+						"cythisia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -480,7 +483,8 @@
 						"seabass390",
 						"panzer1944",
 						"purplepineapple",
-						"thegreatcoward")
+						"thegreatcoward",
+						"kirshbia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -519,7 +523,8 @@
 						"arkadec",
 						"pisshole",
 						"psycoticone",
-						"novaskelly")
+						"novaskelly",
+						"cythisia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
