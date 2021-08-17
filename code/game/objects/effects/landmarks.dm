@@ -794,6 +794,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Wastelander"
 	icon_state = "Wastelander"
 
+/obj/effect/landmark/start/f13/bandit
+	name = "Bandit"
+	icon_state = "Raider"
+
 /obj/effect/landmark/start/f13/raider
 	name = "Outlaw"
 	icon_state = "Raider"
