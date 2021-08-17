@@ -564,6 +564,11 @@
 	ammo_type = /obj/item/ammo_casing/a556/match
 	custom_materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3500)
 
+/obj/item/ammo_box/a556/rubber
+	name = "ammo box (5.56 rubber)"
+	ammo_type = /obj/item/ammo_casing/a556/rubber
+	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1500)
+
 /obj/item/ammo_box/a556/sport
 	name = "ammo box (.223)"
 	ammo_type = /obj/item/ammo_casing/a556/sport
