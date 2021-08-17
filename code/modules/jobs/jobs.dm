@@ -187,7 +187,6 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 	"Raider",
 	"Outlaw",
-	"Great Khan", //DA KHANZ, BAY BEEEEEEE
 	"Genghis Khan"
 ))
 
@@ -270,10 +269,10 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 	"NCR Ranger",
 ))
 
-GLOBAL_LIST_INIT(ncr_leadership_positions, list(
+GLOBAL_LIST_INIT(ncr_command_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
-	"NCR Medical Officer",
+	"NCR Medical Officer"
 ))
 /*
 GLOBAL_LIST_INIT(ncr_general_positions, list(
