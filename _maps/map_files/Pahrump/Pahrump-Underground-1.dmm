@@ -6068,6 +6068,12 @@
 /obj/structure/chair/sofa/corp,
 /turf/open/floor/carpet/purple,
 /area/f13/brotherhood/rnd)
+"ftr" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/tunnel)
 "ftO" = (
 /obj/structure/barricade/bars,
 /obj/effect/decal/cleanable/dirt{
@@ -15539,6 +15545,12 @@
 	dir = 10
 	},
 /area/f13/tunnel)
+"oag" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/tunnel)
 "oak" = (
 /obj/machinery/vending/wardrobe/chef_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -18682,6 +18694,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"qEn" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/tunnel)
 "qEO" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress1"
@@ -21765,6 +21783,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
+"thb" = (
+/obj/structure/handrail/g_central{
+	dir = 1;
+	pixel_y = 23
+	},
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/tunnel)
 "thp" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/bomb_suit/security,
@@ -61288,7 +61316,7 @@ tur
 boG
 tur
 tur
-mzn
+oag
 uEu
 tur
 gGa
@@ -61545,7 +61573,7 @@ uMO
 xcp
 fJw
 tur
-mzn
+oag
 lvT
 aoC
 omL
@@ -61802,7 +61830,7 @@ tFF
 xcp
 ksg
 tur
-kvS
+ftr
 mzn
 lnL
 aoC
@@ -62331,7 +62359,7 @@ wmT
 miI
 wWF
 rOq
-miI
+qEn
 miI
 iSe
 wWF
@@ -69780,7 +69808,7 @@ tur
 wIM
 weW
 weW
-miI
+qEn
 tur
 aoj
 aoj
@@ -70805,7 +70833,7 @@ uoO
 uoO
 uoO
 tur
-miI
+qEn
 weW
 weW
 wmT
@@ -72350,7 +72378,7 @@ tur
 wIM
 weW
 weW
-wmT
+thb
 tur
 uoO
 uoO
@@ -75431,7 +75459,7 @@ uoO
 uoO
 uoO
 tur
-miI
+qEn
 weW
 weW
 tur

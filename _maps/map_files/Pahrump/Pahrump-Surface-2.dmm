@@ -5748,6 +5748,7 @@
 /area/f13/wasteland)
 "dvl" = (
 /obj/structure/chair/stool/bar,
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dvo" = (
@@ -33055,6 +33056,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "ulU" = (
@@ -33290,6 +33292,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "urF" = (
@@ -35427,11 +35430,6 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland)
-"vGS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/raider,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "vHb" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/f13/brahmin,
@@ -35914,6 +35912,7 @@
 /area/f13/wasteland)
 "vUF" = (
 /obj/structure/chair/wood,
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "vUO" = (
@@ -36810,6 +36809,7 @@
 /obj/structure/chair/wood{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "wAk" = (
@@ -38114,6 +38114,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xlE" = (
@@ -96227,7 +96228,7 @@ rpu
 rpu
 rpu
 bMZ
-rpu
+bMZ
 sYX
 qTz
 nWj
@@ -96744,7 +96745,7 @@ sew
 rpu
 mlQ
 guh
-vGS
+vcM
 sKH
 diB
 sYX
