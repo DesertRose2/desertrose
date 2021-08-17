@@ -269,6 +269,13 @@
 	build_path = /obj/item/ammo_box/a556/jhp
 	category = list("initial", "Basic Ammo")
 
+/datum/design/ammolathe/a556rubber
+	name = "5.56 rubber ammo box"
+	id = "a556rubber"
+	materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1500)
+	build_path = /obj/item/ammo_box/a556/rubber
+	category = list("initial", "Basic Ammo")
+
 /datum/design/ammolathe/magnumshot
 	name = "magnum buckshot shotgun box"
 	id = "magnumshot"
