@@ -86,24 +86,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Star Paladin",
 "Paladin",
-"Star Knight",
-"Knight",
-"Proctor",
-"Scribe",
-"BoS Off-Duty",
 
 "Legion Centurion",
 "Legion Venator",
 "Legion Veteran Decanus",
 "Veteran Legionary",
-"Legion Prime Decanus",
-"Prime Legionary",
-"Legion Recruit Decanus",
-"Legion Scout",
-"Legion Explorer",
-"Auxilia",
-"Legion Slave",
-"Off-Duty Legionary",
 
 "Mayor",
 "Sheriff",
@@ -116,11 +103,8 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Chief",
 "Shaman",
 "Head Hunter",
-"Druid",
-"Hunter",
 
 "Followers Lead Practitioner",
-"Followers Doctor",
 "Followers Guard",
 
 "Cyborg",
@@ -133,12 +117,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 "Alderman",
 "Marshal",
-"Merchant",
 "Chief Researcher",
-"City Security Officer",
-"Roadie",
-"Researcher",
-"Hoistway Preacher"
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
@@ -185,9 +164,7 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"antagonist"
 GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
-	"Raider",
 	"Outlaw",
-	"Great Khan", //DA KHANZ, BAY BEEEEEEE
 	"Genghis Khan"
 ))
 
@@ -312,6 +289,7 @@ GLOBAL_LIST_INIT(vault_positions, list(
 ))
 
 GLOBAL_LIST_INIT(wasteland_positions, list(
+	"Bandit",
 	"Outlaw",
 	"Faithful",
 	"Wastelander"

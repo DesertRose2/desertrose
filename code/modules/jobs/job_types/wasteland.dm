@@ -202,9 +202,109 @@ Great Khans
 	backpack_contents = list(
 		/obj/item/twohanded/baseball/spiked=1, \
 		/obj/item/reagent_containers/pill/patch/healpoultice=2)
+/*
+Bandit
+*/
+
+/datum/job/wasteland/f13bandit
+	title = "Bandit"
+	flag = F13BANDIT
+	department_head = list("Captain")
+	head_announce = list("Security")
+	faction = "Wastelander"
+	social_faction = "Raiders"
+	total_positions = 15
+	spawn_positions = 15
+	description = "You are a low-level delinquent with a proclivity for malice, scrounging by for more caps, food and other necessities in the cruel wasteland.  You haven’t quite gained the reputation, contacts and skills to call yourself an Outlaw, so it would be in your best interest to follow their lead to create a superior force – there is a reason they made it so far, and they can help you move up the food chain. You are responsible for causing conflict and strife, you are a simple criminal who engages in nefarious shenanigans which make the wasteland more dangerous; however, you still have a responsibility to make your time here interesting, fun, and engaging for others - this means that whatever path you pursue should be more nuanced and flavorful than simple killing for the sake of it. You are expected to have a high level of roleplay, be OK with losing, and to not take things personally or you may lose the privilege to play this occupation. Treat this role as a first stepping stone to Antagonism, don’t be afraid to try things out, as long as you try to generate fun conflict while minding the rules you are doing everything right. Performing well as a Bandit is a great way to show you're capable of stepping up to the next level... And remember, losing is fun!"
+	supervisors = "Your desire to make things interesting and fun"
+	selection_color = "#ff4747"
+	exp_requirements = 1800
+	exp_type = EXP_TYPE_WASTELAND
+
+	outfit = /datum/outfit/job/wasteland/f13bandit
+
+	access = list()
+	minimal_access = list()
+
+	loadout_options = list(
+	/datum/outfit/loadout/banfiend,
+	/datum/outfit/loadout/bansadist,
+	/datum/outfit/loadout/bansupafly,
+	/datum/outfit/loadout/banblastmaster,
+	/datum/outfit/loadout/banyankee
+	)
+
+/datum/outfit/job/wasteland/f13bandit
+	name = "Bandit"
+	jobtype = /datum/job/wasteland/f13bandit
+
+	id = /obj/item/card/id/bandittattoo
+	ears = null
+	belt = null
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	r_hand = null
+
+/datum/outfit/job/wasteland/f13bandit/pre_equip(mob/living/carbon/human/H)
+	..()
+	uniform = pick(
+		/obj/item/clothing/under/f13/merca, \
+		/obj/item/clothing/under/f13/mercc, \
+		/obj/item/clothing/under/f13/cowboyb, \
+		/obj/item/clothing/under/f13/cowboyg, \
+		/obj/item/clothing/under/f13/raider_leather, \
+		/obj/item/clothing/under/f13/raiderrags, \
+		/obj/item/clothing/under/pants/f13/ghoul, \
+		/obj/item/clothing/under/jabroni)
+	r_pocket = /obj/item/flashlight/flare
+	shoes = pick(
+			/obj/item/clothing/shoes/jackboots,\
+			/obj/item/clothing/shoes/f13/raidertreads)
+	gloves = /obj/item/clothing/gloves/f13/handwraps
+	backpack_contents = list(
+		/obj/item/claymore/machete/pipe=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/reagent_containers/pill/patch/healingpowder=1, \
+		/obj/item/storage/bag/money/small/raider=1, \
+		/obj/item/ammo_box/magazine/m9mm = 2
+		)
+	suit_store = pick(/obj/item/gun/ballistic/automatic/pistol/ninemil)
+
+/datum/outfit/job/wasteland/f13bandit/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	H.social_faction = "Raiders"
+	H.verbs |= /mob/living/proc/creategang
+
+/datum/outfit/loadout/banfiend
+	name = "Fiend"
+	head = /obj/item/clothing/head/helmet/f13/fiend
+	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
+
+/datum/outfit/loadout/bansadist
+	name = "Sadist"
+	head = /obj/item/clothing/head/helmet/f13/raider/arclight
+	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
+
+/datum/outfit/loadout/bansupafly
+	name = "Supafly"
+	head = /obj/item/clothing/head/helmet/f13/raider/supafly
+	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
+
+/datum/outfit/loadout/banblastmaster
+	name = "Blastmaster"
+	head = /obj/item/clothing/head/helmet/f13/raider/blastmaster
+	suit = /obj/item/clothing/suit/armor/f13/raider/blastmaster
+
+/datum/outfit/loadout/banyankee
+	name = "Yankee"
+	head = /obj/item/clothing/head/helmet/f13/raider/yankee
+	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 
 /*
-Raider
+Outlaw
 */
 
 /datum/job/wasteland/f13raider
