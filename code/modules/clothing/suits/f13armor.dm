@@ -745,7 +745,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
-	
+
 /obj/item/clothing/suit/armor/f13/raider/weebcloak
 	name = "dark trenchcloak"
 	desc = "(IV) A dark leather coat, worn over your shoulders for maximum coolness."
@@ -1016,3 +1016,14 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
 	icon_state = "drive_jacket"
 	item_state = "drive_jacket"
+
+/obj/item/clothing/suit/armor/f13/power_armor/legion
+	name = "salvaged Legion power armor"
+	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has a legion aquila engraved into the chestplate."
+	icon_state = "libritor"
+	item_state = "libritor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	requires_training = FALSE
+	slowdown = 1.40
+	armor_block_chance = 25
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
