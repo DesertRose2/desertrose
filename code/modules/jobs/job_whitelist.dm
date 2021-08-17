@@ -91,10 +91,10 @@
 	if(whitelists["antagonists"])
 		for(var/rtypeWL in GLOB.antagonist_whitelist_positions)
 
-	prefs.job_whitelists = play_records
+
 //
 
-	/*
+/*
 	if(!whitelists["leadership_bos"])					// if they do not have leadership_bos whitelist, remove leadership_bos whitelist positions
 		for(var/rtypeWL in GLOB.brotherhood_command_positions)
 			play_records[rtypeWL] = 0
@@ -134,9 +134,7 @@
 	if(!whitelists["faction_vault"])					// if they do not have faction_vault whitelist, remove faction_vault whitelist positions
 		for(var/rtypeWL in GLOB.vault_positions)
 			play_records[rtypeWL] = 0
-	*/
 
-/*
 	if(whitelists["ncrgeneral"])
 		for(var/rtypeWL in GLOB.ncr_general_positions)
 			play_records[rtypeWL] = rtypeWL
@@ -144,23 +142,23 @@
 	if(whitelists["ncrleadership"])
 		for(var/rtypeWL in GLOB.ncr_leadership_positions)
 			play_records[rtypeWL] = rtypeWL		
-*/
-/*
+
 	if(whitelists["faction"])
 		for(var/rtypeWL in GLOB.faction_whitelist_positions)
 			play_records[rtypeWL] = rtypeWL
-*/
-/*
+
+
 	if(!whitelists["faction"])							// if they do not have faction whitelist, remove faction whitelist positions This whitelist is for all roles.
 		for(var/rtypeWL in GLOB.faction_whitelist_positions)
 			play_records[rtypeWL] = 0
 
-/*
+
 	if(!whitelists["ncrgeneral"])
 		for(var/rtypeWL in GLOB.ncr_general_positions)		// if they do not have an NCR general whitelist, remove NCR general whitelist positions
 			play_records[rtypeWL] = 0
 	if(!whitelists["ncrleadership"])
 		for(var/rtypeWL in GLOB.ncr_leadership_positions)	//if they do not have an NCR upper command whitelist, remove NCR leadership whitelist positions
 			play_records[rtypeWL] = 0
-
 */
+
+prefs.job_whitelists = play_records
