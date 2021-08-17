@@ -91,8 +91,6 @@
 	if(whitelists["antagonists"])
 		for(var/rtypeWL in GLOB.antagonist_whitelist_positions)
 
-
-	prefs.job_whitelists = play_records
 //
 
 /* Graveyard of WLs that we really don't need or use anymore
@@ -160,4 +158,5 @@
 	if(!whitelists["ncrleadership"])
 		for(var/rtypeWL in GLOB.ncr_leadership_positions)	//if they do not have an NCR upper command whitelist, remove NCR leadership whitelist positions
 			play_records[rtypeWL] = 0
-*/
+*/ 
+	prefs.job_whitelists = play_records 
