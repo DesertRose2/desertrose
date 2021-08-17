@@ -72,6 +72,28 @@
 							"NCR Recruit"
 						)
 
+/datum/gear/uniform/ncr_snipermgs
+	name = "NCR sniper fatigues"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	path = /obj/item/clothing/under/f13/ncr_sniper
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR Medical Officer",
+							"NCR Veteran Ranger",
+							"NCR Lieutenant",
+							"NCR Sergeant First Class",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger",
+							"NCR Recruit"
+						)
+
 /datum/gear/uniform/ranger
 	name = "ranger outfit"
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
