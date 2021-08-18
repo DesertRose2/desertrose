@@ -38,9 +38,11 @@
 		for(var/rtypeWL in GLOB.faction_whitelist_positions)
 			play_records[rtypeWL] = 0
 */
+/*
 	if(!whitelists["standard"])							// if they do not have standard whitelist, remove standard whitelist positions. This whitelist is for all faction non-leadership roles.
 		for(var/rtypeWL in GLOB.faction_player_positions)
 			play_records[rtypeWL] = 0
+*/
 
 	if(!whitelists["leadership"])					// if they do not have leadership whitelist, remove leadership whitelist positions
 		for(var/rtypeWL in GLOB.command_positions)
@@ -65,6 +67,11 @@
 	if(!whitelists["paladin"])
 		for(var/rtypeWL in GLOB.brotherhood_paladin_positions)
 			play_records[rtypeWL] = 0							//if they do not have a BOS Paladin whitelist, remove BOS Paladin whitelist positions
+
+	if(!whitelists["legionvet"])
+		for(var/rtypeWL in GLOB.legion_veteran_positions)
+			play_records[rtypeWL] = 0							//if they do not have a Legion Veteran whitelist, remove Legion Veteran whitelist positions
+
 
 	/*
 	if(!whitelists["leadership_bos"])					// if they do not have leadership_bos whitelist, remove leadership_bos whitelist positions
@@ -130,7 +137,7 @@
 */
 	if(whitelists["ncrleadership"])
 		for(var/rtypeWL in GLOB.ncr_leadership_positions)
-			play_records[rtypeWL] = rtypeWL		
+			play_records[rtypeWL] = rtypeWL
 
 	if(whitelists["ranger"])
 		for(var/rtypeWL in GLOB.ncr_ranger_positions)
@@ -139,7 +146,7 @@
 	if(whitelists["vetranger"])
 		for(var/rtypeWL in GLOB.ncr_rangervet_positions)
 			play_records[rtypeWL] = rtypeWL
-	
+
 	if(whitelists["paladin"])
 		for(var/rtypeWL in GLOB.brotherhood_paladin_positions)
 			play_records[rtypeWL] = rtypeWL
