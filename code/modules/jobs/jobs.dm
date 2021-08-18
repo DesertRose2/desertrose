@@ -51,6 +51,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
+	"NCR Medical Officer",
 
 	"Legion Centurion",
 	"Legion Venator",
