@@ -6071,7 +6071,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "dDH" = (
-/obj/effect/landmark/start/f13/slavemaster,
+/obj/effect/landmark/start/f13/campprefect,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "dDK" = (
@@ -102538,7 +102538,7 @@ awT
 jIn
 frz
 wPS
-dDH
+wPS
 wPS
 gcK
 gcK
@@ -102797,7 +102797,7 @@ hom
 nvL
 wPS
 wPS
-wPS
+dDH
 wPS
 wPS
 wPS
@@ -103052,7 +103052,7 @@ cjV
 cjV
 hom
 wPS
-dDH
+wPS
 wPS
 wPS
 wPS
@@ -103311,7 +103311,7 @@ hom
 hom
 ulU
 sDO
-wPS
+dDH
 wPS
 gcK
 gcK

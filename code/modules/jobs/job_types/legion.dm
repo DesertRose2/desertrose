@@ -638,22 +638,22 @@ Vexillarius
 		/obj/item/grenade/plastic/c4=1
 		)
 /*
-Slavemaster
+Camp Prefect (formerly slave master)
 */
 
-datum/job/CaesarsLegion/Legionnaire/f13slavemaster
+datum/job/CaesarsLegion/Legionnaire/f13campprefect
 	title = "Camp Prefect"
-	flag = F13SLAVEMASTER
+	flag = F13CAMPPREFECT
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are a Praefectus, a member of the feared and respected disciplinary corp of the Legion. Acting as both the master of the slave-pens and the executor of the Centurion's iron will within his ranks, you are a man that understands the absolute necessity of discipline and cohesion within the camp. By means both subtle and bloody, you are to maintain order in the castrorum and make examples of those whom would defy the will of your Centurion and Mars. Act always to ensure cooperation and discipline within the ranks to ensure the camp is not bogged down by internal strife. Additionally your duties include managing camp defenses and resources as both castellan and master of the armory so the legionaries are able to pursue their tasks with more focus. You are not to leave your faction base unless given an explicit order from the office of the Legatus"
 	supervisors = "The Veteran Decanus, Venator and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campprefect
 	exp_requirements = 1200
 	exp_type = EXP_TYPE_PRIME
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campprefect/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -661,9 +661,9 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campprefect
 	name = "Camp Prefect"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13campprefect
 	id =			/obj/item/card/id/dogtag/legslavemaster
 	head = 			/obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
