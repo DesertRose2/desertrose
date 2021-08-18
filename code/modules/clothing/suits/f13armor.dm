@@ -354,7 +354,7 @@
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
-/obj/item/clothing/suit/armor/f13/power_armor/vaulttecta
+/obj/item/clothing/suit/armor/f13/power_armor/vaulttec/ta
 	name = "Vault-Tec technical armour"
 	desc = "(VIII)  A primative  suit of power armour, the first kind built by the residents of Vault-115 in order to fight off immediate threats."
 	icon_state = "vaulttecta"
@@ -696,10 +696,10 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
-/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	name = "hardened midwestern power armor" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	icon_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	item_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
+/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced
+	name = "hardened midwestern power armor"
+	icon_state = "midwestpa"
+	item_state = "midwestpa"
 	desc = "This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities." // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 
 obj/item/clothing/suit/armor/f13/exile/cust0m
