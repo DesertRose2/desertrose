@@ -801,8 +801,8 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_damage = 0
-	extra_penetration = 0
+	extra_damage = 6
+	extra_penetration = 0.3
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
