@@ -684,7 +684,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/stack/medical/gauze/improvised = 1)
 
 /*
-Libritor
+Libritor - Legion HT
 */
 /datum/job/CaesarsLegion/Legionnaire/f13libritor
 	title = "Legion Libritor"
