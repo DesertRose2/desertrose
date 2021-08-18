@@ -570,6 +570,14 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Combat Medic"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrmilitarypolice
+	name = "NCR Military Police"
+	icon_state = "NCR Sergeant"
+
+/obj/effect/landmark/start/f13/ncrheavytrooper
+	name = "NCR Heavy Trooper"
+	icon_state = "NCR Trooper"
+
 /obj/effect/landmark/start/f13/ncrtrooper
 	name = "NCR Trooper"
 	icon_state = "NCR Trooper"
@@ -593,11 +601,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/ncroffduty
 	name = "NCR Off-Duty"
 	icon_state = "NCR Trooper"
-
-/obj/effect/landmark/start/f13/ncrmilitarypolice
-	name = "NCR Military Police"
-	icon_state = "NCR Sergeant"
-
 
 // Legion
 
@@ -634,6 +637,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Prime Decanus"
 	icon_state = "Decanus"
 
+/obj/effect/landmark/start/f13/libritor
+	name = "Legion Libritor"
+	icon_state = "Veteran Legionnaire"
+
 /obj/effect/landmark/start/f13/legionary
 	name = "Prime Legionary"
 	icon_state = "Veteran Legionnaire"
@@ -660,6 +667,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/campfollower
 	name = "Camp Follower"
+	icon_state = "Wastelander"
 
 /obj/effect/landmark/start/f13/slave
 	name = "Legion Slave"
