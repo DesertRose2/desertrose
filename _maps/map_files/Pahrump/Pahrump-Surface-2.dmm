@@ -4990,6 +4990,15 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/building)
+"cZQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "cZW" = (
 /obj/machinery/vending/cola/random,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7202,6 +7211,15 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/caves)
+"eva" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/ncr)
 "evs" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -39856,6 +39874,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"ylJ" = (
+/obj/effect/landmark/start/f13/libritor,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ylP" = (
 /obj/structure/fence{
 	dir = 1
@@ -43005,9 +43027,9 @@ kzs
 xGv
 dsn
 wSn
-sed
+eva
 tXt
-kzs
+cZQ
 wSn
 jGz
 wSn
@@ -96142,7 +96164,7 @@ hom
 gMi
 dUv
 sEC
-xNm
+ylJ
 hom
 dJE
 mQz
@@ -96656,7 +96678,7 @@ rgS
 sge
 dUv
 sEC
-xNm
+ylJ
 hom
 hom
 apu
