@@ -84,6 +84,7 @@
 #define F13SLAVEMASTER	(1<<15)
 #define F13CAMPFOLLOWER (1<<16)
 #define F13LEGIONOFFDUTY	(1<<17)
+#define F13CAMPPREFECT	(1<<18)
 
 #define BOS				(1<<5)
 
