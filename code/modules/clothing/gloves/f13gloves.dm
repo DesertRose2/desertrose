@@ -106,20 +106,20 @@
 	siemens_coefficient = 0.5
 	permeability_coefficient = 0.1
 
-/obj/item/clothing/gloves/f13/mutant
+/obj/item/clothing/gloves/f13/mutie
 	name = "mutant bracers"
 	desc = "(IV) A pair of metal tubes with rope on the inside."
 	icon_state = "mutie_bracer"
 	item_state = "mutie_bracer"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/gloves/f13/mutant/mk2
+/obj/item/clothing/gloves/f13/mutie/mk2
 	name = "mutant bracers"
 	desc = "(IV) A pair of giant metal tubes with rope on the inside."
 	icon_state = "mutie_bracer_mk2"
 	item_state = "mutie_bracer_mk2"
 
-/obj/item/clothing/gloves/f13/mutant/sign
+/obj/item/clothing/gloves/f13/mutie/sign
 	name = "mutant sign bracers"
 	desc = "(IV) See this sign? It's a sign to move on."
 	icon_state = "mutie_bracer_sign"

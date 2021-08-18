@@ -354,7 +354,7 @@
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
-/obj/item/clothing/suit/armor/f13/power_armor/vaulttecta
+/obj/item/clothing/suit/armor/f13/power_armor/vaulttec/ta
 	name = "Vault-Tec technical armour"
 	desc = "(VIII)  A primative  suit of power armour, the first kind built by the residents of Vault-115 in order to fight off immediate threats."
 	icon_state = "vaulttecta"
@@ -696,10 +696,10 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
-/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	name = "hardened midwestern power armor" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	icon_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	item_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
+/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced
+	name = "hardened midwestern power armor"
+	icon_state = "midwestpa"
+	item_state = "midwestpa"
 	desc = "This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities." // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 
 obj/item/clothing/suit/armor/f13/exile/cust0m
@@ -990,23 +990,23 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 
 //Mutants
 
-/obj/item/clothing/suit/armor/f13/mutant/poncho
+/obj/item/clothing/suit/armor/f13/mutie/poncho
 	name = "mutant poncho"
 	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
 	icon_state = "mutie_poncho"
 	item_state = "mutie_poncho"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal
+/obj/item/clothing/suit/armor/f13/mutie/metal
 	name = "mutant armour"
 	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
+/obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
 	name = "mutant armour"
-	desc = "(6) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
