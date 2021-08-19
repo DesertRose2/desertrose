@@ -20,3 +20,4 @@
 	"yor", "yar", "da", "do", "de", "di", "du", "dr",
 	"tos", "tis", "kos", "kis", "bos", "bis", "wos", "wis", "gos", "gis"
 )
+	icon_state = "wayfarer"
