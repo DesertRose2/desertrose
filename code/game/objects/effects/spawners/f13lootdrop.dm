@@ -638,7 +638,10 @@
 				/obj/item/melee/unarmed/lacerator,
 				/obj/item/melee/unarmed/maceglove,
 				/obj/item/melee/unarmed/punchdagger,
-				/obj/item/shield/riot
+				/obj/item/shield/riot,
+				/obj/item/melee/powerfist/moleminer,
+				/obj/item/shishkebabpack,
+				/obj/item/claymore/machete/spatha/knight
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 //TIER 5 MELEE WEAPON
@@ -648,14 +651,12 @@
 	loot = list(
 				/obj/item/twohanded/thermic_lance,
 				/obj/item/twohanded/chainsaw,
-				/obj/item/kinetic_crusher,
 				/obj/item/nullrod/claymore/chainsaw_sword,
 				/obj/item/melee/powerfist,
 				/obj/item/gun/ballistic/revolver/ballisticfist,
 				/obj/item/twohanded/sledgehammer/supersledge,
-				/obj/item/shishkebabpack,
 				/obj/item/melee/unarmed/deathclawgauntlet,
-				/obj/item/melee/powerfist/moleminer
+				/obj/item/katana
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random
