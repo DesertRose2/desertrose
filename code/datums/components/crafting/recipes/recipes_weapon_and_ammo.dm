@@ -762,6 +762,22 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//type93 assault rifle
+/datum/crafting_recipe/type93
+	name = "Type 93 Assault Rifle"
+	result = /obj/item/gun/ballistic/automatic/type93
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/plastic = 2,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/crafting/metalparts = 2
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //brush gun
 /datum/crafting_recipe/brush
 	name = "Brush gun"
