@@ -98,6 +98,8 @@
 	item_state = "marinehelmet"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
 	flash_protect = 1
+	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	darkness_view = 24
 
 /obj/item/clothing/head/helmet/f13/rangerbroken
 	name = "broken riot helmet"
@@ -344,8 +346,8 @@
 	item_state = "t45bhelmet"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
@@ -854,12 +856,18 @@
 
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"
-	desc = "(II) The headwear of the true faith."
+	desc = "(IV) The headwear of the true faith."
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+
+/obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+
 
 /obj/item/clothing/head/f13/flatranger
 	name = "NCR gambler ranger hat"
@@ -957,6 +965,6 @@
 	item_state = "libritor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE

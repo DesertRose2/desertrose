@@ -41,8 +41,8 @@
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
 	name = "combat body armor"
-	icon_state = "combat_coat"
-	item_state = "combat_coat"
+	icon_state = "combatbodyarmor"
+	item_state = "combatbodyarmor"
 	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
@@ -307,8 +307,8 @@
 	desc = "(VIII) It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
 	requires_training = TRUE
 	slowdown = 0.24
-	armor_block_chance = 80
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+	armor_block_chance = 25
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
@@ -319,8 +319,8 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	name = "raider T-45b power armor"
@@ -915,6 +915,28 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "talon_duster"
 	item_state = "talon_duster"
 
+/obj/item/clothing/suit/armor/f13/atomzealot
+	name = "zealot armor"
+	desc = "(IV) The armor of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/atomwitch
+	name = "atomic seer robes"
+	desc = "(IV) The robes worn by female seers of the Division."
+	icon_state = "atomwitch"
+	item_state = "atomwitch"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
@@ -924,20 +946,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "The symbol of the greatest gangers."
 	icon_state = "warriors"
 	item_state = "warriors"
-
-/obj/item/clothing/suit/armor/f13/atomzealot
-	name = "zealot armor"
-	desc = "(IV) The armor of those true to the Division."
-	icon_state = "atomzealot"
-	item_state = "atomzealot"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/atomwitch
-	name = "atomic seer robes"
-	desc = "(II) The robes worn by female seers of the Division."
-	icon_state = "atomwitch"
-	item_state = "atomwitch"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/harbingermantle
 	name = "Harbinger's Mantle"
@@ -1025,5 +1033,5 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
