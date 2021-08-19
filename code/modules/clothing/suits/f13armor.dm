@@ -41,8 +41,8 @@
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
 	name = "combat body armor"
-	icon_state = "combat_coat"
-	item_state = "combat_coat"
+	icon_state = "combatbodyarmor"
+	item_state = "combatbodyarmor"
 	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
@@ -914,7 +914,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "(IV) A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, the left pauldron stitched into a dark grey duster."
 	icon_state = "talon_duster"
 	item_state = "talon_duster"
-	
+
 /obj/item/clothing/suit/armor/f13/atomzealot
 	name = "zealot armor"
 	desc = "(IV) The armor of those true to the Division."
@@ -922,7 +922,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "atomzealot"
 	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
-	
+
 /obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
@@ -935,7 +935,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "atomwitch"
 	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
-	
+
 /obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
