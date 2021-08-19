@@ -195,10 +195,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
-	desc = "(VIII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
 	icon_state = "marinearmor"
 	item_state = "marinearmor"
-	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
 /obj/item/clothing/suit/armor/f13/ahp_suit
 	name = "highway patrol jacket"
@@ -914,6 +914,31 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "(IV) A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, the left pauldron stitched into a dark grey duster."
 	icon_state = "talon_duster"
 	item_state = "talon_duster"
+	
+/obj/item/clothing/suit/armor/f13/atomzealot
+	name = "zealot armor"
+	desc = "(IV) The armor of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+	
+/obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/atomwitch
+	name = "atomic seer robes"
+	desc = "(II) The robes worn by female seers of the Division."
+	desc = "(IV) The robes worn by female seers of the Division."
+	icon_state = "atomwitch"
+	item_state = "atomwitch"
+	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+	
+/obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
@@ -924,20 +949,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "The symbol of the greatest gangers."
 	icon_state = "warriors"
 	item_state = "warriors"
-
-/obj/item/clothing/suit/armor/f13/atomzealot
-	name = "zealot armor"
-	desc = "(IV) The armor of those true to the Division."
-	icon_state = "atomzealot"
-	item_state = "atomzealot"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/atomwitch
-	name = "atomic seer robes"
-	desc = "(II) The robes worn by female seers of the Division."
-	icon_state = "atomwitch"
-	item_state = "atomwitch"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/harbingermantle
 	name = "Harbinger's Mantle"

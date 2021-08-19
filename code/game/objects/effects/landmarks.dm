@@ -613,7 +613,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Orator"
 
 /obj/effect/landmark/start/f13/slavemaster
-	name = " Camp Prefect"
+	name = "Legion Slavemaster"
 
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"
@@ -667,6 +667,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/legionoff
 	name = "Off-Duty Legionary"
+
+/obj/effect/landmark/start/f13/campprefect
+	name = "Camp Prefect"
+	icon_state = "Decanus"
 
 // Brotherhood of Steel
 
