@@ -683,6 +683,47 @@ datum/job/CaesarsLegion/Legionnaire/f13campprefect
 		/obj/item/restraints/legcuffs/bola=2,
 		/obj/item/stack/medical/gauze/improvised = 1)
 
+/*
+Libritor
+*/
+
+/datum/job/CaesarsLegion/Legionnaire/f13libritor
+	title = "Legion Libritor"
+	flag = F13LIBRITOR
+	total_positions = 1
+	spawn_positions = 1
+	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are entrusted with suit of power armor and heavy weapons, and have been waging war with the Legion for many years."
+	supervisors = "the Decani and Centurion"
+	display_order = JOB_DISPLAY_ORDER_LIBRITOR
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_PRIME
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
+
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
+	name = "Legion Libritor"
+	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/f13libritor
+	id =			/obj/item/card/id/dogtag/leglibritor
+	head =			/obj/item/clothing/head/helmet/f13/power_armor/legion
+	suit =			/obj/item/clothing/suit/armor/f13/power_armor/legion
+	suit_store = 	/obj/item/gun/ballistic/automatic/bastard
+	neck			= /obj/item/storage/belt/holster
+	glasses			= /obj/item/clothing/glasses/legiongoggles
+	ears			= /obj/item/radio/headset/headset_legion
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/flashlight/lantern=1,
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/ammo_box/magazine/lmg=2,
+		/obj/item/storage/bag/money/small/legofficers=1
+	)
 
 /*
 Veteran Legionary
@@ -1279,6 +1320,7 @@ Off-Duty Legionary
 	spawn_positions = 4
 	description = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
 	supervisors = "Those who share your rank or higher that are on duty."
+	display_order = JOB_DISPLAY_ORDER_LEGION_OFF_DUTY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/offduty
 	exp_requirements = 600
 

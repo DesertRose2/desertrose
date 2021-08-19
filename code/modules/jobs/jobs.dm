@@ -228,6 +228,7 @@ GLOBAL_LIST_INIT(legion_veteran_positions, list(
 GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Veteran Decanus",
 	"Veteran Legionary",
+	"Legion Libritor"
 	"Legion Prime Decanus",
 	"Prime Legionary",
 	"Legion Recruit Decanus",
@@ -251,7 +252,7 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Lieutenant",
 	"NCR Sergeant First Class",
-	"NCR Medical Officer",
+	"NCR Medical Officer"
 ))
 /*
 GLOBAL_LIST_INIT(ncr_general_positions, list(
@@ -267,8 +268,9 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Corporal",
 	"NCR Combat Medic",
 	"NCR Combat Engineer",
-	"NCR Trooper",
+	"NCR Heavy Trooper",
 	"NCR Military Police",
+	"NCR Trooper",
 	"NCR Rear Echelon",
 	"NCR Recruit",
 	"NCR Off-Duty",
