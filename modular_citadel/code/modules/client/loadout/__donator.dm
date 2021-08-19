@@ -378,7 +378,8 @@
 						"thegreatcoward",
 						"gurking",
 						"melodicdeity",
-						"cythisia"l)
+						"cythisia",
+						"rangerbust")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -474,7 +475,8 @@
 						"thegreatcoward",
 						"gurking",
 						"melodicdeity",
-						"cythisia")
+						"cythisia",
+						"rangerbust")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins

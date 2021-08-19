@@ -854,11 +854,18 @@
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"
 	desc = "(II) The headwear of the true faith."
+	desc = "(IV) The headwear of the true faith."
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
 	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	
+/obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 
 /obj/item/clothing/head/f13/flatranger
 	name = "NCR gambler ranger hat"
