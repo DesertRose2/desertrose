@@ -128,8 +128,6 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Scribe",
 "BoS Off-Duty",
 
-"Legion Veteran Decanus",
-"Veteran Legionary",
 "Legion Prime Decanus",
 "Prime Legionary",
 "Legion Recruit Decanus",
