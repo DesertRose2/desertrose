@@ -121,7 +121,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	force = 23
-	armor_pen
+	armour_penetration = 0.1
 
 /obj/item/melee/unarmed/sappers
 	name = "sappers"
@@ -145,6 +145,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 25
 	throwforce = 10
+	armour_penetration = 0.2
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_POINTY
@@ -161,6 +162,7 @@
 	flags_1 = CONDUCT_1
 	force = 27
 	throwforce = 10
+	armour_penetration = 0.3
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
@@ -177,6 +179,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 28
 	throwforce = 20
+	armour_penetration = 0.2
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
@@ -193,6 +196,7 @@
 	flags_1 = CONDUCT_1
 	force = 30
 	throwforce = 30
+	armour_penetration = 0.3
 	sharpness = SHARP_NONE
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_BULKY
@@ -207,6 +211,7 @@
 	flags_1 = CONDUCT_1
 	force = 32
 	throwforce = 10
+	armour_penetration = 0.3
 	attack_verb = list("stabbed", "sliced", "pierced", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_POINTY
