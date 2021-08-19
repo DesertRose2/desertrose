@@ -21,7 +21,7 @@
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION
 
-	immunity_type = "lava"
+	immunity_type = "water"
 
 	barometer_predictable = TRUE
 
@@ -51,5 +51,3 @@
 	sound_wo.stop()
 	sound_wi.stop()
 
-/datum/weather/heat_wave/weather_act(mob/living/L)
-	L.adjust_bodytemperature(rand(1, 5))
