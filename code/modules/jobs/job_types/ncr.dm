@@ -571,6 +571,47 @@ Combat Engineer
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /*
+Heavy Trooper
+*/
+/datum/job/ncr/f13heavytrooper
+	title = "NCR Heavy Trooper"
+	flag = F13HEAVYTROOPER
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are a veteran enlisted with power armor training. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
+	supervisors = "Corporals and above"
+	selection_color = "#fff5cc"
+	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_NCRTPR
+	outfit = /datum/outfit/job/ncr/f13heavytrooper
+
+/datum/outfit/job/ncr/f13heavytrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+/datum/outfit/job/ncr/f13trooper
+	name = "NCR Heavy Trooper"
+	jobtype = /datum/job/ncr/f13trooper
+	id = 			/obj/item/card/id/dogtag/ncrtrooper
+	uniform =  		/obj/item/clothing/under/f13/ncr
+	suit =			/obj/item/clothing/suit/armor/f13/power_armor/ncr
+	suit_store =	/obj/item/gun/ballistic/automatic/r84
+	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
+	accessory =     /obj/item/clothing/accessory/ncr/SPC
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45b
+	neck 			= /obj/item/storage/belt/holster/ncr
+	glasses = 		/obj/item/clothing/glasses/f13/biker
+	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid=1, \
+		/obj/item/ammo_box/magazine/lmg=2, \
+		/obj/item/storage/bag/money/small/ncrenlisted=1, \
+		/obj/item/kitchen/knife/combat=1
+		)
+
+/*
 Trooper
 */
 
