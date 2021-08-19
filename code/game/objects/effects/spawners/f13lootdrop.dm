@@ -449,7 +449,6 @@
 				/obj/item/clothing/head/helmet/f13/combat/marine
 				)
 
-
 /obj/effect/spawner/lootdrop/f13/armor/random
 	name = "random armor loot"
 	lootcount = 1
