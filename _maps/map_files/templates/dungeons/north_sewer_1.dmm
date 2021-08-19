@@ -130,11 +130,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"gM" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plasteel/neutral,
-/area/f13/tunnel)
 "hx" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
@@ -814,6 +809,7 @@
 "LK" = (
 /obj/effect/decal/waste,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "LU" = (
@@ -1370,7 +1366,7 @@ lw
 Rj
 Rj
 Qs
-EK
+Rj
 lW
 iY
 QU
@@ -1402,7 +1398,7 @@ BH
 BH
 QU
 iY
-CJ
+Qs
 Rj
 Dy
 VK
@@ -2085,7 +2081,7 @@ sw
 Or
 sw
 sw
-gM
+sw
 FL
 Or
 sw

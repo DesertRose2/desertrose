@@ -229,8 +229,8 @@
 //Plasma musket
 /datum/crafting_recipe/plasmamusket
 	name = "Plasma musket"
-	result = /obj/item/gun/ballistic/shotgun/plasmacaster
-	reqs = list(/obj/item/gun/ballistic/shotgun/lasmusket = 1,
+	result = /obj/item/gun/ballistic/rifle/plasmacaster
+	reqs = list(/obj/item/gun/ballistic/rifle/lasmusket = 1,
 				/obj/item/advanced_crafting_components/conductors = 1)
 	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
 	time = 20
@@ -251,7 +251,7 @@
 //Laser musket
 /datum/crafting_recipe/lasmusket
 	name = "Laser musket"
-	result = /obj/item/gun/ballistic/shotgun/lasmusket
+	result = /obj/item/gun/ballistic/rifle/lasmusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
 	/obj/item/gun/ballistic/revolver/pipe_rifle = 1,
 	/obj/item/reagent_containers/food/drinks/bottle/f13nukacola = 1,
@@ -339,7 +339,7 @@
 //hunting rifle
 /datum/crafting_recipe/huntingrifle
 	name = "hunting rifle"
-	result = /obj/item/gun/ballistic/shotgun/remington
+	result = /obj/item/gun/ballistic/rifle/remington
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
 				/obj/item/stack/crafting/metalparts = 4,
 				/datum/reagent/blackpowder = 20,
@@ -502,6 +502,36 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+/datum/crafting_recipe/R82/ncr
+	name = "ncr r82 heavy service rifle"
+	result = /obj/item/gun/ballistic/automatic/service/r82/ncr
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+/datum/crafting_recipe/R82/legion
+	name = "pilum rifle"
+	result = /obj/item/gun/ballistic/automatic/service/r82/legion
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //marksman carbine
 /datum/crafting_recipe/marksmancarbine
 	name = "marksman carbine"
@@ -608,7 +638,7 @@
 //trail carbine
 /datum/crafting_recipe/trail_carbine
 	name = "trail carbine"
-	result = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	result = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 3,
@@ -735,7 +765,7 @@
 //brush gun
 /datum/crafting_recipe/brush
 	name = "Brush gun"
-	result = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	result = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/datum/reagent/blackpowder = 30,
@@ -916,7 +946,7 @@
 //AM rifle
 /datum/crafting_recipe/am_rifle
 	name = "AM Rifle"
-	result = /obj/item/gun/ballistic/shotgun/antimateriel
+	result = /obj/item/gun/ballistic/rifle/antimateriel
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/alloys = 1,

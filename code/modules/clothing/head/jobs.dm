@@ -183,7 +183,7 @@
 /obj/item/clothing/head/HoS/beret/syndicate
 	name = "black beret"
 	desc = "A black cloth beret internally lined with leather and metal splints."
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("tier" = 2, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/head/HoS/beret/syndicate/Initialize()
 	. = ..()

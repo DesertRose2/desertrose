@@ -948,3 +948,14 @@
 	item_state = "boonie_hat"
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
 	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/head/helmet/f13/power_armor/legion
+	name = "Salvaged Legion T-45b helmet"
+	desc = "(VIII) It's a salvaged T-45b power armor helmet, retrofitted in Dog City for the legion's front line."
+	icon_state = "libritor"
+	item_state = "libritor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+//	darkness_view = 0
+	armor_block_chance = 25
+	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	requires_training = FALSE

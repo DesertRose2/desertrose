@@ -62,6 +62,7 @@
 #define F13NCROFFDUTY    (1<<12)
 #define F13VETRANGER	 (1<<13)
 #define F13RANGER	 	 (1<<14)
+#define F13MILITARYPOLICE (1<<15)
 
 #define LEGION			(1<<4)
 
@@ -83,6 +84,7 @@
 #define F13SLAVEMASTER	(1<<15)
 #define F13CAMPFOLLOWER (1<<16)
 #define F13LEGIONOFFDUTY	(1<<17)
+#define F13CAMPPREFECT	(1<<18)
 
 #define BOS				(1<<5)
 
@@ -130,12 +132,13 @@
 
 #define F13CULTLEADER	(1<<0)
 #define F13WASTELANDER	(1<<1)
-#define F13RAIDER		(1<<2)
-#define F13PUSHER		(1<<3)
-#define F13GENGHIS		(1<<4)
-#define F13PUNRAIDER	(1<<5)
-#define F13DETECTIVE	(1<<6)
-#define EVENTCOVEN		(1<<7)
+#define F13BANDIT		(1<<2)
+#define F13RAIDER		(1<<3)
+#define F13PUSHER		(1<<4)
+#define F13GENGHIS		(1<<5)
+#define F13PUNRAIDER	(1<<6)
+#define F13DETECTIVE	(1<<7)
+#define EVENTCOVEN		(1<<8)
 
 #define ENCLAVE			(1<<9)
 
@@ -170,13 +173,14 @@
 #define F13MARSHAL		(1<<2)
 #define F13MERCHANT		(1<<3)
 #define F13CHRESEARCHER		(1<<4)
-#define F13TOWNSEC		(1<<5)
-#define F13ROADIE		(1<<6)
-#define F13RESEARCHER		(1<<7)
-#define F13HOISTWAY		(1<<8)
-#define F13INNKEEPER		(1<<9)
-#define F13INNERWALL		(1<<10)
-#define F13OUTERWALL		(1<<11)
+#define F13CITYSEC		(1<<5)
+#define F13CITYSECSCOUT	(1<<6)
+#define F13ROADIE		(1<<7)
+#define F13RESEARCHER		(1<<8)
+#define F13HOISTWAY		(1<<9)
+#define F13INNKEEPER		(1<<10)
+#define F13INNERWALL		(1<<11)
+#define F13OUTERWALL		(1<<12)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
@@ -235,7 +239,7 @@
 #define JOB_DISPLAY_ORDER_NCR_RECRUIT 40
 #define JOB_DISPLAY_ORDER_COMBATMEDIC 41
 #define JOB_DISPLAY_ORDER_COMBATENGINEER 42
-#define JOB_DISPLAY_ORDER_REAR_ECHELON 43
+#define JOB_DISPLAY_ORDER_MILITARY_POLICE 43
 #define JOB_DISPLAY_ORDER_VETRANGE 44
 #define JOB_DISPLAY_ORDER_RANGER 45
 #define JOB_DISPLAY_ORDER_NCR_OFF_DUTY 46

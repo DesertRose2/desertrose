@@ -45,6 +45,10 @@
 		. = TRUE
 	..()
 
+/datum/reagent/medicine/stimpak/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>Your chest gets heavier as your heart starts racing for its very life.</span>")
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/M)
 	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER)
 	M.adjustOxyLoss(8*REAGENTS_EFFECT_MULTIPLIER)
@@ -102,9 +106,9 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	description = "An herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys."
 	reagent_state = LIQUID
 	color ="#A9FBFB"
-	taste_description = "bitterness"
-	metabolization_rate = 0.4 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
-	overdose_threshold = 30
+	taste_description = "bitterness and liquid pain"
+	metabolization_rate = 0.7 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
+	overdose_threshold = 11
 
 datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
@@ -112,13 +116,18 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) //should prevent stacking with healing powder and stimpaks
 		M.adjustFireLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-		M.hallucination = max(M.hallucination, 5)
+		M.Dizzy(5)
+		M.set_disgust(10)
 		. = TRUE
 	..()
 
+/datum/reagent/medicine/bitter_drink/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>You feel your stomach rejecting the disgusting concoction.</span>")
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+
 /datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
-	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
+	M.set_disgust(60)
+	M.Dizzy(10)
 	..()
 	. = TRUE
 
@@ -154,7 +163,14 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
+/datum/reagent/medicine/healing_powder/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>You notice its harder to breathe and your senses becoming more dull.</span>")
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+
 /datum/reagent/medicine/healing_powder/overdose_process(mob/living/M)
+	M.confused +=20
+	M.blur_eyes(30)
+	M.losebreath += 4
 	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
 	..()
@@ -168,9 +184,44 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	heal_factor = -2
 	heal_factor_perk = -4
 
+/datum/reagent/medicine/healing_powder/poultice_zombie
+	name = "'Vita' poultice"
+	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
+	color = "#a64adb"
+	metabolization_rate = 0.2 * REAGENTS_METABOLISM
+	overdose_threshold = 11
+	heal_factor = 0
+	heal_factor_perk = -5
+
+/datum/reagent/medicine/healing_powder/poultice_zombie/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>You feel your brain flicking off as the powder slowly puts you into coma!</span>")
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+
+/datum/reagent/medicine/healing_powder/poultice_zombie/overdose_process(mob/living/M)
+	if(prob(50))
+		M.emote(pick("twitch", "shiver"))
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
+	M.Unconscious(300)
+	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
+	..()
+	. = TRUE
+
+/datum/reagent/medicine/radshroom
+	name = "Mushroom extract"
+	description = "A combination of punga and cave fungus to help dealing with radiation."
+	reagent_state = LIQUID
+	color = "#533404c5"
+	metabolization_rate = 1.2 * REAGENTS_METABOLISM
+
+/datum/reagent/radshroom/radx/on_mob_life(mob/living/carbon/M)
+	if(M.radiation > 0)
+		M.radiation -= min(M.radiation, 12)
+	. = TRUE
+	..()
+
 /datum/reagent/medicine/radx
 	name = "Rad-X"
-
 	description = "Reduces massive amounts of radiation and some toxin damage."
 	reagent_state = LIQUID
 	color = "#ff6100"

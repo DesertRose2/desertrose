@@ -1561,13 +1561,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/f13/bunker)
-"Zc" = (
-/mob/living/simple_animal/hostile/handy,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
 "Zg" = (
 /obj/machinery/door/window{
 	dir = 4
@@ -2163,7 +2156,7 @@ oy
 xG
 gv
 XM
-Zc
+XM
 XM
 dE
 xG
@@ -2197,7 +2190,7 @@ Wr
 pd
 xG
 KA
-QJ
+XM
 xG
 XM
 Bp
@@ -2315,7 +2308,7 @@ XM
 xG
 gv
 lS
-Zc
+QJ
 XM
 dE
 xG
@@ -3011,7 +3004,7 @@ Rl
 (38,1,1) = {"
 Rl
 Rl
-xG
+XY
 XY
 XY
 XY
@@ -3049,7 +3042,7 @@ Rl
 (39,1,1) = {"
 Rl
 Rl
-xG
+XY
 XY
 XY
 XY
@@ -3087,8 +3080,8 @@ Rl
 (40,1,1) = {"
 Rl
 Rl
-xG
-xG
+XY
+XY
 xG
 xG
 xG
@@ -4021,7 +4014,7 @@ Rl
 Rl
 xG
 xG
-Ff
+eK
 xG
 xG
 xG

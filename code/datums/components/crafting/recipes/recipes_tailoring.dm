@@ -1340,3 +1340,24 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 	always_availible = FALSE
+
+/datum/crafting_recipe/vaultheavyarmor
+	name = "VTCC riot supression armor"
+	result = /obj/item/clothing/suit/armor/f13/riot/vault/heavy
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/vaultheavyhelm
+	name = "VTCC riot supression helmet"
+	result = /obj/item/clothing/head/helmet/riot/vaultsec/vc/heavy
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
+	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE

@@ -594,6 +594,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Off-Duty"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrmilitarypolice
+	name = "NCR Military Police"
+	icon_state = "NCR Sergeant"
+
+
 // Legion
 
 /obj/effect/landmark/start/f13/legate
@@ -662,6 +667,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/legionoff
 	name = "Off-Duty Legionary"
+
+/obj/effect/landmark/start/f13/campprefect
+	name = "Camp Prefect"
+	icon_state = "Decanus"
 
 // Brotherhood of Steel
 
@@ -789,6 +798,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Wastelander"
 	icon_state = "Wastelander"
 
+/obj/effect/landmark/start/f13/bandit
+	name = "Bandit"
+	icon_state = "Raider"
+
 /obj/effect/landmark/start/f13/raider
 	name = "Outlaw"
 	icon_state = "Raider"
@@ -895,7 +908,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Researcher"
 
 /obj/effect/landmark/start/f13/townsec
-	name = "Town Security Officer"
+	name = "City Security Officer"
+
+/obj/effect/landmark/start/f13/townsecscout
+	name = "City Security Scout"
 
 /obj/effect/landmark/start/f13/roadie
 	name = "Roadie"
