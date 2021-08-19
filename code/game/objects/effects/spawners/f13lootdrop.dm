@@ -370,20 +370,19 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
 	name = "tier 4 armor"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/excavator,
+				/obj/effect/spawner/bundle/f13/armor/t45b,
 				/obj/effect/spawner/bundle/f13/armor/riot,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark,
 				/obj/effect/spawner/bundle/f13/armor/raiderpa,
-				/obj/effect/spawner/bundle/f13/armor/hotrodpa
+				/obj/effect/spawner/bundle/f13/armor/hotrodpa,
 				)
 
-/obj/effect/spawner/bundle/f13/armor/excavator
-	name = "excavator power armor spawner"
+/obj/effect/spawner/bundle/f13/armor/t45b
+	name = "t45b power armor spawner"
 	items = list(
-				/obj/item/clothing/head/helmet/f13/power_armor/excavator,
-				/obj/item/clothing/suit/armor/f13/power_armor/excavator
-				)
+				/obj/item/clothing/head/helmet/f13/power_armor/t45b,
+				/obj/item/clothing/suit/armor/f13/power_armor/t45b)
 
 /obj/effect/spawner/bundle/f13/armor/riot
 	name = "riot armor spawner"
@@ -425,7 +424,15 @@
 	name = "tier 5 armor"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/t45d,
-				/obj/effect/spawner/bundle/f13/armor/marine,
+				/obj/effect/spawner/bundle/f13/armor/excavator,
+				/obj/effect/spawner/bundle/f13/armor/marine
+				)
+
+/obj/effect/spawner/bundle/f13/armor/excavator
+	name = "excavator power armor spawner"
+	items = list(
+				/obj/item/clothing/head/helmet/f13/power_armor/excavator,
+				/obj/item/clothing/suit/armor/f13/power_armor/excavator
 				)
 
 /obj/effect/spawner/bundle/f13/armor/t45d

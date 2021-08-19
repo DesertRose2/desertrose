@@ -195,10 +195,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
-	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	desc = "(VIII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
 	icon_state = "marinearmor"
 	item_state = "marinearmor"
-	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
 /obj/item/clothing/suit/armor/f13/ahp_suit
 	name = "highway patrol jacket"
