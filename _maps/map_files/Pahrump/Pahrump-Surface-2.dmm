@@ -20414,19 +20414,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"moA" = (
-/obj/structure/chair{
-	dir = 8;
-	icon_state = "chair"
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/simple_door/bunker,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/brotherhood)
 "moD" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -37896,8 +37883,6 @@
 	},
 /area/f13/city)
 "xeo" = (
-/obj/structure/table/optable,
-/obj/structure/table/optable,
 /obj/structure/table/optable,
 /obj/machinery/iv_drip{
 	pixel_x = -7;
@@ -73838,7 +73823,7 @@ xwk
 bXl
 bXl
 bXl
-moA
+jWe
 los
 los
 los
