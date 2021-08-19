@@ -343,8 +343,8 @@
 	item_state = "t45bhelmet"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
@@ -861,7 +861,7 @@
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	
+
 /obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
@@ -963,6 +963,6 @@
 	item_state = "libritor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
