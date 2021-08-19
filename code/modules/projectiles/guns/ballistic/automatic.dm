@@ -801,8 +801,8 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_damage = 0
-	extra_penetration = 0
+	extra_damage = 6
+	extra_penetration = 0.3
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -856,7 +856,7 @@
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
-	suppressor_y_offset = 27
+	suppressor_y_offset = 16
 	//automatic = 0
 
 /obj/item/gun/ballistic/automatic/type93
@@ -864,6 +864,7 @@
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
+	icon = 'icons/obj/guns/ballistic/type93.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_suppress = TRUE
@@ -873,9 +874,9 @@
 	fire_delay = 3
 	spread = 10
 	extra_damage = 2
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 27
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 40
+	suppressor_y_offset = 18
 
 /obj/item/gun/ballistic/automatic/m1garand
 	name = "battle rifle"
