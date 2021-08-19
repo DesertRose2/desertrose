@@ -592,7 +592,7 @@ Heavy Trooper
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/ncr/f13trooper
+/datum/outfit/job/ncr/f13heavytrooper
 	name = "NCR Heavy Trooper"
 	jobtype = /datum/job/ncr/f13trooper
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
