@@ -274,7 +274,7 @@
 */
 
 /datum/crafting_recipe/raiderpaconversion
-	name = "salvaged power armor to raider power armor conversion"
+	name = "T45b salvaged pa to raider pa conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -285,7 +285,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/raiderpahelmconversion
-	name = "salvaged power armor helmet to raider power armor helmet conversion"
+	name = "T45b salvaged pa helmet to raider pa helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -295,8 +295,30 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/raiderpatot45b
+	name = "raider pa to T45b salvaged pa conversion"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/raiderpa  = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/raiderpahelmtot45bhelm
+	name = "Raider pa helmet to T45b salvaged pa helmet conversion"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 /datum/crafting_recipe/hotrodpaconversion
-	name = "salvaged power armor to hot rod power armor conversion"
+	name = "T45b salvaged pa to hot rod pa conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -307,7 +329,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/hotrodpahelmconversion
-	name = "salvaged power armor helmet to hot rod power armor helmet conversion"
+	name = "T45b pa helmet to hot rod pa helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -316,6 +338,29 @@
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/Hotrodtot45bconversion
+	name = "hot rod pa to T45b salvaged pa conversion"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/hotrod  = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/hotrodpahelmtoT45bhelm
+	name = "hot rod pa helmet to T45b salvaged pa helmet conversion"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/hotrod = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 
 /datum/crafting_recipe/armorkit
 	name = "armor kit"
@@ -1127,6 +1172,26 @@
 	name = "Salvaged NCR Power Armor"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/ncr
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/legionsalvagedarmorconversion
+	name = "Salvaged Legion power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/legion
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/Legionhelmsalvagedarmorconversion
+	name = "Salvaged Legion power armor Helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/legion
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING

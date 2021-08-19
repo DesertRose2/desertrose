@@ -29,6 +29,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionhelmsalvagedarmorconversion)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
