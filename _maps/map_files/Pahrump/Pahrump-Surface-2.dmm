@@ -4990,6 +4990,15 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/building)
+"cZQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "cZW" = (
 /obj/machinery/vending/cola/random,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7202,6 +7211,15 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/caves)
+"eva" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/ncr)
 "evs" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -20396,19 +20414,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"moA" = (
-/obj/structure/chair{
-	dir = 8;
-	icon_state = "chair"
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/simple_door/bunker,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/brotherhood)
 "moD" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -37879,8 +37884,6 @@
 /area/f13/city)
 "xeo" = (
 /obj/structure/table/optable,
-/obj/structure/table/optable,
-/obj/structure/table/optable,
 /obj/machinery/iv_drip{
 	pixel_x = -7;
 	pixel_y = 16
@@ -39856,6 +39859,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"ylJ" = (
+/obj/effect/landmark/start/f13/libritor,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ylP" = (
 /obj/structure/fence{
 	dir = 1
@@ -43005,9 +43012,9 @@ kzs
 xGv
 dsn
 wSn
-sed
+eva
 tXt
-kzs
+cZQ
 wSn
 jGz
 wSn
@@ -73816,7 +73823,7 @@ xwk
 bXl
 bXl
 bXl
-moA
+jWe
 los
 los
 los
@@ -96142,7 +96149,7 @@ hom
 gMi
 dUv
 sEC
-xNm
+ylJ
 hom
 dJE
 mQz
@@ -96656,7 +96663,7 @@ rgS
 sge
 dUv
 sEC
-xNm
+ylJ
 hom
 hom
 apu
@@ -102538,7 +102545,7 @@ awT
 jIn
 frz
 wPS
-wPS
+dDH
 wPS
 gcK
 gcK
@@ -102797,7 +102804,7 @@ hom
 nvL
 wPS
 wPS
-dDH
+wPS
 wPS
 wPS
 wPS
@@ -103052,7 +103059,7 @@ cjV
 cjV
 hom
 wPS
-wPS
+dDH
 wPS
 wPS
 wPS
@@ -103311,7 +103318,7 @@ hom
 hom
 ulU
 sDO
-dDH
+wPS
 wPS
 gcK
 gcK

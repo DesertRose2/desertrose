@@ -240,7 +240,6 @@ Bandit
 
 	id = /obj/item/card/id/bandittattoo
 	ears = null
-	belt = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_hand = null
@@ -268,7 +267,7 @@ Bandit
 		/obj/item/storage/bag/money/small/raider=1, \
 		/obj/item/ammo_box/magazine/m9mm = 2
 		)
-	suit_store = pick(/obj/item/gun/ballistic/automatic/pistol/ninemil)
+	belt = pick(/obj/item/gun/ballistic/automatic/pistol/ninemil)
 
 /datum/outfit/job/wasteland/f13bandit/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
