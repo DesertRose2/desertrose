@@ -1,4 +1,4 @@
-/obj/item/melee/powerfist
+/*/obj/item/melee/powerfist
 	name = "powerfist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
 	icon_state = "powerfist"
@@ -16,32 +16,13 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 
-//obj/item/melee/powerfist/goliath
-//	name = "\improper Goliath" //the Goliath
-//	desc = "A metal gauntlet with a piston-powered ram on top. This one has been painted in the colors of Caesar's Legion, and features a brutal metal spike to increase penetration and damage."
-//	icon_state = "goliath"
-//	force = 40 //you are Strongly Encouraged not to get hit by this.
-//	armour_penetration = 0.95 //what is armor?
-//	throwforce = 20
-
-/obj/item/melee/goliath //Workaround to the gas issue with the powerfist. No idea why it works.
-	name = "Goliath"
-	desc = "Armored gauntlet with a piston-powered ram, this one is a experimental one captured and named by the Legion."
+/obj/item/melee/powerfist/goliath
+	name = "\improper Goliath" //the Goliath
+	desc = "A metal gauntlet with a piston-powered ram on top. This one has been painted in the colors of Caesar's Legion, and features a brutal metal spike to increase penetration and damage."
 	icon_state = "goliath"
-	item_state = "goliath"
-	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	flags_1 = CONDUCT_1
-	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 40
-	armour_penetration = 0.95
-	throwforce = 20
-	throw_range = 7
-	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
-	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
-
+	force = 40 //you are Strongly Encouraged not to get hit by this.
+	armour_penetration = 0.95 //what is armor?
+	throwforce = 20*/
 
 /obj/item/gun/ballistic/revolver/ballisticfist //it's a double-barrel shotgun disguised as a fist shhh
 	name = "ballistic fist"
@@ -140,6 +121,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	force = 23
+	armour_penetration = 0.1
 
 /obj/item/melee/unarmed/sappers
 	name = "sappers"
@@ -163,6 +145,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 25
 	throwforce = 10
+	armour_penetration = 0.2
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_POINTY
@@ -179,6 +162,7 @@
 	flags_1 = CONDUCT_1
 	force = 27
 	throwforce = 10
+	armour_penetration = 0.3
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
@@ -195,6 +179,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 28
 	throwforce = 20
+	armour_penetration = 0.2
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
@@ -211,6 +196,7 @@
 	flags_1 = CONDUCT_1
 	force = 30
 	throwforce = 30
+	armour_penetration = 0.3
 	sharpness = SHARP_NONE
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_BULKY
@@ -225,6 +211,7 @@
 	flags_1 = CONDUCT_1
 	force = 32
 	throwforce = 10
+	armour_penetration = 0.3
 	attack_verb = list("stabbed", "sliced", "pierced", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_POINTY
@@ -239,7 +226,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 30
-	armour_penetration = 1 //there is no such thing as armor to the claws of death
+	armour_penetration = 0.7 //there is no such thing as armor to the claws of death - full 1 was stupid, lowered but still high pen.
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
@@ -255,7 +242,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	force = 30
-	armour_penetration = 0.5
+	armour_penetration = 0.6
 	throwforce = 10
 	throw_range = 7
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")

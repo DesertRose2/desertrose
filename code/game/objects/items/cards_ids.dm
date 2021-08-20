@@ -1000,11 +1000,18 @@
 	assignment = "prime medallion"
 
 /obj/item/card/id/dogtag/legslavemaster
-	name = "slavemaster medallion"
+	name = "prefect medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to the dreaded Slavemaster."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
 	assignment = "slavemaster medallion"
+
+/obj/item/card/id/dogtag/leglibritor
+	name = "libritor medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a libritor."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "libritor medallion"
 
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
