@@ -178,6 +178,8 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 
+// Super Mutants
+
 /obj/item/clothing/shoes/f13/mutie
 	name = "super mutant sandals"
 	desc = "A pair of oversized sandals, likely designed for super mutants."

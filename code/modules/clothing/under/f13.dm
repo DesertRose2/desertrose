@@ -1486,8 +1486,8 @@
 	icon_state = "mutie_vault_jumspuit"
 	item_state = "mutie_vault_jumspuit"
 
-/obj/item/clothing/under/f13/mutieranger
-	name = "mutant Ranger armour"
-	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
+/obj/item/clothing/under/f13/ncrmutie
+	name = "\improper NCR mutant uniform"
+	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"

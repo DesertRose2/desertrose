@@ -60,6 +60,14 @@
 //donator items
 #define LOADOUT_CATEGORY_DONATOR	"Special"
 
+//supermutant items
+#define LOADOUT_CATEGORY_SMUTANT	"Super Mutants"
+#define LOADOUT_SUBCATEGORY_SMUTANT_GENERAL	"General"
+#define LOADOUT_SUBCATEGORY_SMUTANT_SHOES	"Shoes"
+#define LOADOUT_SUBCATEGORY_SMUTANT_UNIFORM	"Uniform"
+#define LOADOUT_SUBCATEGORY_SMUTANT_GLOVES	"Gloves"
+#define LOADOUT_SUBCATEGORY_SMUTANT_SUIT	"Suit"
+
 //how many prosthetics can we have
 #define MAXIMUM_LOADOUT_PROSTHETICS	2
 

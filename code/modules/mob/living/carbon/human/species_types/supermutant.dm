@@ -7,8 +7,14 @@
 	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
+	whitelisted = 1
+	whitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
+					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
+					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
+					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking"
+					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
-		OFFSET_HEAD = list(0,10),
+		OFFSET_HEAD = list(0,5),
 		OFFSET_SUIT = list(0,0)
 		)
 	punchstunthreshold = 20
