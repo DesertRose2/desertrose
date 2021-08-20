@@ -14,8 +14,9 @@
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking"
 					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
-		OFFSET_HEAD = list(0,5),
-		OFFSET_SUIT = list(0,0)
+		OFFSET_HEAD = list(1,5),
+		OFFSET_SUIT = list(0,0),
+		OFFSET_BELT = list(5,0)
 		)
 	punchstunthreshold = 20
 	use_skintones = 0
