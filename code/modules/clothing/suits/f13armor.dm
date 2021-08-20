@@ -188,7 +188,7 @@
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	name = "raider combat armor"
+	name = "reinforced raider combat armor"
 	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
@@ -1034,7 +1034,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
-	name = "mutant armour"
+	name = "reinforced mutant armour"
 	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"

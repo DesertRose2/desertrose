@@ -284,12 +284,12 @@
 	item_state = "labcoat"
 	armor = list("tier" = 2, "energy" = 10, "bomb" = 0, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 
-/obj/item/clothing/suit/armor/f13/generaluniform
-	name = "Yuma 1st Irregular General Uniform"
-	desc = "(III) A uniform created by Kaleb alongside the laser muskets. On the breast is a patch of the Yuma 1st Irregulars, a sun over a wasteland desert, a cactus standing lonely in the middle. It denotes him as the Leader of the militia company."
+/obj/item/clothing/suit/armor/f13/militia
+	name = "militia uniform"
+	desc = "(III) On the breast is a patch of a disorganised militia, a sun over a wasteland desert, a cactus standing lonely in the middle."
 	icon_state = "gen_uniform"
 	item_state = "gen_uniform"
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0) //change those values
+	armor = list("tier" = 3, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/hooded/cloak/desert
 	name = "desert cloak"
@@ -298,7 +298,6 @@
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/desert
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-
 
 /obj/item/clothing/head/hooded/cloakhood/desert
 	name = "desert cloak hood"
