@@ -920,7 +920,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "(IV) The armor of those true to the Division."
 	icon_state = "atomzealot"
 	item_state = "atomzealot"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
@@ -929,11 +928,9 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 
 /obj/item/clothing/suit/armor/f13/atomwitch
 	name = "atomic seer robes"
-	desc = "(II) The robes worn by female seers of the Division."
 	desc = "(IV) The robes worn by female seers of the Division."
 	icon_state = "atomwitch"
 	item_state = "atomwitch"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
