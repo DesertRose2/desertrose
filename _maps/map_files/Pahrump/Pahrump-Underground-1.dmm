@@ -1317,6 +1317,13 @@
 /obj/item/papercutter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/offices1st)
+"biP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/brotherhood/mining)
 "bje" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -2827,6 +2834,10 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood/reactor)
+"cyX" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "cza" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -8199,6 +8210,7 @@
 	dir = 1;
 	name = "shower drain"
 	},
+/obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whiterustysolid"
 	},
@@ -8595,9 +8607,6 @@
 /area/f13/brotherhood/offices1st)
 "hCG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
 /obj/machinery/light/fo13colored/Aqua{
 	critical_machine = 1;
 	dir = 8;
@@ -10567,6 +10576,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"jtq" = (
+/obj/structure/nest/mirelurk,
+/turf/open/water,
+/area/f13/caves)
 "jtD" = (
 /obj/machinery/vending/wallmed{
 	pixel_y = 30;
@@ -12286,14 +12299,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "kXA" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
+/obj/structure/reagent_dispensers/watertank,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/brotherhood/operations)
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/brotherhood/leisure)
 "kZo" = (
 /obj/item/trash/tray,
 /obj/item/trash/f13/dog,
@@ -13410,11 +13419,15 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/rnd)
 "mhc" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
+	pixel_x = -10
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/operations)
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/brotherhood/leisure)
 "mhD" = (
 /obj/structure/toilet{
 	dir = 8
@@ -14939,10 +14952,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nCP" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
+/obj/machinery/light/small{
+	dir = 8
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "nCY" = (
 /obj/structure/table/reinforced,
@@ -15319,6 +15332,7 @@
 	dir = 1;
 	name = "shower drain"
 	},
+/obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whiterustysolid"
 	},
@@ -15406,6 +15420,7 @@
 	dir = 1;
 	name = "shower drain"
 	},
+/obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whiterustysolid"
 	},
@@ -15668,9 +15683,11 @@
 /turf/closed/wall,
 /area/f13/tunnel)
 "oef" = (
-/obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/brotherhood/leisure)
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/operations)
 "oeS" = (
 /obj/machinery/vending/cola,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -17491,10 +17508,13 @@
 /turf/open/floor/plating/rust,
 /area/f13/tunnel)
 "pDU" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/clothing/under/misc/bathrobe,
 /obj/item/clothing/under/misc/bathrobe,
-/turf/closed/wall/r_wall,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whiterustysolid"
+	},
 /area/f13/brotherhood/offices2nd)
 "pDW" = (
 /obj/structure/rack,
@@ -20577,7 +20597,7 @@
 	},
 /area/f13/tunnel)
 "rZw" = (
-/mob/living/simple_animal/hostile/radroach,
+/obj/structure/spider/stickyweb,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rZF" = (
@@ -23023,6 +23043,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
+"uhu" = (
+/turf/open/water,
+/area/f13/caves)
 "uhw" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light/small,
@@ -25399,15 +25422,9 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/leisure)
 "wiT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	pixel_x = -10
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/brotherhood/leisure)
+/mob/living/simple_animal/hostile/poison/giant_spider,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wiX" = (
 /obj/structure/sign/poster/prewar/poster73,
 /turf/closed/wall/r_wall,
@@ -26132,6 +26149,10 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/rnd)
+"wVW" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wWc" = (
 /obj/structure/sink{
 	dir = 4;
@@ -73606,7 +73627,7 @@ uoO
 uoO
 uoO
 aoj
-xVz
+rZw
 xVz
 xVz
 uoO
@@ -73863,9 +73884,9 @@ uoO
 uoO
 uoO
 aoj
+rZw
 xVz
-xVz
-xVz
+rZw
 aoj
 aoj
 uoO
@@ -74122,7 +74143,7 @@ uoO
 aoj
 aoj
 aoj
-xVz
+rZw
 aoj
 aoj
 uoO
@@ -74891,8 +74912,8 @@ uoO
 uoO
 uoO
 aoj
+wiT
 xVz
-uiV
 aoj
 uoO
 uoO
@@ -75148,9 +75169,9 @@ uoO
 uoO
 uoO
 aoj
-xVz
-xVz
 rZw
+xVz
+xVz
 uoO
 uoO
 uoO
@@ -75405,8 +75426,8 @@ uoO
 uoO
 uoO
 uoO
-rZw
 xVz
+rZw
 xVz
 uoO
 uoO
@@ -76435,8 +76456,8 @@ uoO
 aoj
 aoj
 aoj
-xVz
-xVz
+wiT
+rZw
 uoO
 uoO
 uoO
@@ -76692,7 +76713,7 @@ uoO
 uoO
 uoO
 uoO
-xVz
+rZw
 xVz
 uoO
 uoO
@@ -76949,8 +76970,8 @@ uoO
 uoO
 uoO
 uoO
-xVz
-xVz
+rZw
+rZw
 aoj
 aoj
 uoO
@@ -81523,8 +81544,8 @@ saw
 saw
 saw
 saw
-kOv
-wiT
+saw
+saw
 jZH
 rjJ
 gUJ
@@ -81780,8 +81801,8 @@ saw
 saw
 khW
 jZH
-cLD
-cLD
+kOv
+mhc
 jZH
 kgu
 gUJ
@@ -82294,8 +82315,8 @@ saw
 saw
 eez
 jZH
-ouk
-ouk
+cLD
+cLD
 jZH
 kGH
 gUJ
@@ -82551,8 +82572,8 @@ saw
 saw
 muV
 jZH
-oef
-saw
+ouk
+ouk
 jZH
 wwy
 gUJ
@@ -82808,7 +82829,7 @@ saw
 saw
 khW
 jZH
-saw
+kXA
 saw
 jZH
 jCM
@@ -83359,8 +83380,8 @@ wac
 wac
 vYw
 oHY
+gul
 pDU
-tca
 tca
 tca
 xNs
@@ -83898,12 +83919,12 @@ xhA
 sll
 xhA
 xmk
-hZE
+twE
 twE
 ogl
 ogl
 ogl
-cyU
+twE
 xmk
 qkC
 aNY
@@ -84155,12 +84176,12 @@ xhA
 sll
 xhA
 xmk
-twE
+hZE
 twE
 ogl
 ogl
 ogl
-twE
+cyU
 xmk
 dNP
 gpq
@@ -84412,7 +84433,7 @@ xhA
 nkS
 xhA
 xmk
-xmk
+twE
 twE
 ogl
 ogl
@@ -84668,8 +84689,8 @@ rUF
 xhA
 vcT
 xhA
-xhA
 xmk
+twE
 twE
 bES
 twE
@@ -84912,7 +84933,7 @@ qCm
 xhA
 xhA
 xhA
-xhA
+pqC
 qWx
 qWx
 vni
@@ -84925,7 +84946,7 @@ xhA
 xhA
 sll
 xhA
-xhA
+xmk
 xmk
 pYq
 xmk
@@ -85918,7 +85939,7 @@ vYw
 vYw
 vYw
 vYw
-kXA
+jWb
 xSi
 xSi
 usN
@@ -86175,8 +86196,8 @@ gEZ
 gEZ
 gEZ
 gEZ
-nCP
 gEZ
+jlu
 gEZ
 gEZ
 gEZ
@@ -86432,7 +86453,7 @@ tlG
 uET
 uQm
 gEZ
-mrV
+nCP
 cOE
 mTF
 xYu
@@ -87460,8 +87481,8 @@ gHh
 gHh
 ckK
 gEZ
+oef
 mrV
-mhc
 mTF
 xYu
 xYu
@@ -87777,7 +87798,7 @@ aoj
 aoj
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 aoj
@@ -89572,16 +89593,16 @@ uAc
 uAc
 xVz
 xVz
-xVz
-xVz
+vOo
+cyX
 uoO
 uoO
 uoO
 aoj
 aoj
+mED
 uoO
-uoO
-uoO
+wVW
 uoO
 aoj
 aoj
@@ -89829,16 +89850,16 @@ uAc
 uAc
 xVz
 xVz
-xVz
-xVz
-xVz
+uhu
+uhu
+wVW
+mED
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+mED
+uhu
+uhu
+vOo
+cyX
 uoO
 uoO
 uoO
@@ -90087,15 +90108,15 @@ uAc
 xVz
 xVz
 xVz
-xVz
-xVz
-aoj
-aoj
-uoO
-uoO
-uoO
-uoO
-uoO
+uhu
+uhu
+uhu
+uhu
+uhu
+uhu
+uhu
+jtq
+mED
 uoO
 uoO
 uoO
@@ -90344,14 +90365,14 @@ uAc
 vOo
 xVz
 xVz
-xVz
-aoj
-aoj
-uoO
-uoO
-uoO
-uoO
-uoO
+uhu
+uhu
+uhu
+uhu
+uhu
+uhu
+rEl
+mED
 uoO
 uoO
 uoO
@@ -90602,9 +90623,17 @@ xVz
 xVz
 xVz
 xVz
+vOo
+uhu
+uhu
+vOo
+wVW
+uoO
+uoO
+uoO
+uoO
 aoj
 aoj
-aoj
 uoO
 uoO
 uoO
@@ -90613,14 +90642,6 @@ uoO
 uoO
 aoj
 aoj
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
 uoO
 uoO
 uoO
@@ -90859,23 +90880,23 @@ xVz
 xVz
 xVz
 xVz
-uoO
-aoj
-aoj
-aoj
-uoO
-uoO
-uoO
-aoj
-aoj
-aoj
+xVz
+xVz
+mED
 aoj
 uoO
 uoO
 uoO
+aoj
+aoj
+aoj
+aoj
 uoO
 uoO
 uoO
+uoO
+uoO
+aoj
 uoO
 uoO
 uoO
@@ -91116,23 +91137,23 @@ xVz
 xVz
 xVz
 xVz
-uoO
-aoj
-aoj
-aoj
-uoO
-uoO
-uoO
-aoj
-aoj
-aoj
-aoj
-uoO
-uoO
+xVz
 uoO
 uoO
 aoj
 uoO
+uoO
+uoO
+aoj
+aoj
+aoj
+aoj
+uoO
+uoO
+uoO
+uoO
+aoj
+aoj
 uoO
 uoO
 uoO
@@ -91875,7 +91896,7 @@ otj
 gFU
 qQq
 aXF
-qQq
+biP
 jpl
 mAv
 eXD
@@ -91899,7 +91920,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -92156,7 +92177,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -92413,8 +92434,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+aoj
+aoj
 uoO
 uoO
 uoO
@@ -92669,7 +92690,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 uoO
