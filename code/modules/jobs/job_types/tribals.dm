@@ -69,11 +69,11 @@ Tribal Chief
 	name = "Chief"
 	jobtype = /datum/job/tribal/f13chief
 	head = 			/obj/item/clothing/head/helmet/f13/wayfarer/chief/green
-	uniform = 		/obj/item/clothing/under/f13/tribe_chief
+	uniform = 		/obj/item/clothing/under/f13/wayfarer/hunter
 	belt = 			/obj/item/storage/backpack/spearquiver
 	neck =			/obj/item/clothing/neck/cloak/chiefcloak
 	id = 			/obj/item/card/id/tribetattoo
-	suit =			/obj/item/clothing/suit/armor/f13/tribe_armor
+	suit =			/obj/item/clothing/suit/hooded/cloak/hhunter
 	suit_store =	/obj/item/twohanded/spear/bonespear/deathclaw
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
@@ -402,5 +402,5 @@ Spirit-Pledged
 /datum/outfit/job/tribal/f13spiritpledged
 	name = "Spirit-Pledged"
 	jobtype = /datum/job/tribal/f13spiritpledged
-	uniform =	/obj/item/clothing/under/f13/tribe
+	uniform =	/obj/item/clothing/under/f13/wayfarer
 	id = 		/obj/item/card/id/tribetattoo

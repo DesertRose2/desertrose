@@ -1118,7 +1118,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vj" = (
-/mob/living/simple_animal/hostile/raider/thief,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor5-old"
 	},
@@ -1197,10 +1196,9 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "vS" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/legendary,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
+/area/f13/tunnel)
 "wm" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13{
@@ -1357,9 +1355,14 @@
 	},
 /area/f13/radiation)
 "yW" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/assaultron/nsb,
-/turf/open/indestructible/ground/inside/mountain,
+/mob/living/simple_animal/hostile/handy/sentrybot{
+	color = "#FFFF00";
+	harm_intent_damage = 10;
+	health = 400;
+	name = "legendary sentry bot";
+	obj_damage = 100
+	},
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "yY" = (
 /obj/item/storage/trash_stack,
@@ -1790,11 +1793,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
-"If" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/firefighter,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/tunnel)
 "Ik" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/paper/crumpled,
@@ -1810,7 +1808,6 @@
 /area/f13/bunker)
 "IL" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/abomhorror/nsb,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -2268,13 +2265,9 @@
 /area/f13/bunker)
 "Ry" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/thief,
+/mob/living/simple_animal/hostile/raider/ranged/legendary,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
-"RF" = (
-/mob/living/simple_animal/hostile/handy/sentrybot/nsb,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "RH" = (
 /obj/item/paper,
 /obj/item/paper/crumpled,
@@ -2517,10 +2510,6 @@
 	},
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
-"WY" = (
-/obj/structure/nest/deathclaw,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "Xa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/destructible/tribal_torch/lit,
@@ -2672,11 +2661,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"ZB" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/sentrybot/nsb,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "ZF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -3824,7 +3808,7 @@ Tq
 kI
 hc
 XE
-vS
+pC
 PI
 sT
 Yn
@@ -3857,7 +3841,7 @@ QU
 Xo
 Xo
 Tq
-If
+Sx
 RZ
 Yn
 pC
@@ -4129,7 +4113,7 @@ PI
 pC
 BW
 Et
-ee
+pC
 lZ
 Xa
 Gs
@@ -4393,21 +4377,21 @@ wI
 zi
 mi
 Tq
-cW
+Sx
 Gp
-Gx
+Sx
 Tq
 oO
 Nf
 pC
 pC
-ZB
+pC
 pC
 ck
 dc
 PI
 PI
-RF
+PI
 PI
 PI
 KA
@@ -4433,7 +4417,7 @@ ld
 Sx
 Tq
 Sx
-Tq
+vS
 Sx
 ik
 YP
@@ -4442,7 +4426,7 @@ Jx
 pC
 ny
 dk
-Vw
+yW
 pC
 ka
 YG
@@ -4516,11 +4500,11 @@ WG
 Ed
 ck
 Jf
-yW
+WG
 WG
 ck
 en
-Ee
+ck
 vw
 KQ
 BH
@@ -4872,7 +4856,7 @@ BH
 cA
 ZF
 cA
-WY
+sR
 BH
 QU
 BH

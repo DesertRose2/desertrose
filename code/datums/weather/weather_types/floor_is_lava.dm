@@ -2,7 +2,7 @@
 /datum/weather/floor_is_lava
 	name = "the floor is lava"
 	desc = "The ground turns into surprisingly cool lava, lightly damaging anything on the floor."
-
+	probability = 0
 	telegraph_message = "<span class='warning'>You feel the ground beneath you getting hot. Waves of heat distort the air.</span>"
 	telegraph_duration = 150
 
