@@ -274,7 +274,7 @@
 */
 
 /datum/crafting_recipe/raiderpaconversion
-	name = "T45b salvaged pa to raider pa conversion"
+	name = "Raider PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -285,7 +285,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/raiderpahelmconversion
-	name = "T45b salvaged pa helmet to raider pa helmet conversion"
+	name = "Raider PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -296,7 +296,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/raiderpatot45b
-	name = "raider pa to T45b salvaged pa conversion"
+	name = "T45b Salvaged PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/raiderpa  = 1,
 				/obj/item/stack/crafting/goodparts = 15,
@@ -307,7 +307,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/raiderpahelmtot45bhelm
-	name = "Raider pa helmet to T45b salvaged pa helmet conversion"
+	name = "T45b Salvaged PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm = 1,
 				/obj/item/stack/crafting/goodparts = 15,
@@ -318,7 +318,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/hotrodpaconversion
-	name = "T45b salvaged pa to hot rod pa conversion"
+	name = "Hot Rod PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -329,7 +329,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/hotrodpahelmconversion
-	name = "T45b pa helmet to hot rod pa helmet conversion"
+	name = "Hot Rod PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -340,7 +340,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/Hotrodtot45bconversion
-	name = "hot rod pa to T45b salvaged pa conversion"
+	name = "T45b Salvaged PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/hotrod  = 1,
 				/obj/item/stack/crafting/goodparts = 15,
@@ -351,7 +351,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/hotrodpahelmtoT45bhelm
-	name = "hot rod pa helmet to T45b salvaged pa helmet conversion"
+	name = "T45b Salvaged PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/hotrod = 1,
 				/obj/item/stack/crafting/goodparts = 15,
@@ -1336,10 +1336,10 @@
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
-/datum/crafting_recipe/bospowerarmort45b
+/datum/crafting_recipe/bospowerarmort45b/helmet
 	name = "brotherhood restored T45 power armor helmet"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
-	reqs = list (/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored = 1,
+	reqs = list (/obj/item/clothing/head/helmet/f13/power_armor/t45b/restored = 1,
 				/obj/item/stack/crafting/goodparts = 1,
 				/obj/item/stack/crafting/electronicparts = 2,
 				/obj/item/toy/crayon/spraycan)

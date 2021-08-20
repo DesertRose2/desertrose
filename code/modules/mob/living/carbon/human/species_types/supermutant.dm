@@ -5,15 +5,24 @@
 	say_mod = "yells"
 	limbs_id = "smutant"
 	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
-	inherent_traits = list(TRAIT_RADIMMUNE,TRAIT_VIRUSIMMUNE)
+	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
+	whitelisted = 1
+	whitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
+					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
+					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
+					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking"
+					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
-		OFFSET_HEAD = list(0,10),
-		OFFSET_SUIT = list(0,0)
+		OFFSET_HEAD = list(1,5),
+		OFFSET_SUIT = list(0,0),
+		OFFSET_BELT = list(5,0)
 		)
 	punchstunthreshold = 20
 	use_skintones = 0
 	sexes = 0
+	armor = 10
+	speedmod = 0.5
 	liked_food = JUNKFOOD | FRIED | RAW
 
 /datum/species/smutant/on_species_gain(mob/living/carbon/C, datum/species/old_species)
