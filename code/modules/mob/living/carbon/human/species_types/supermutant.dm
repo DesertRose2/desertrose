@@ -5,7 +5,7 @@
 	say_mod = "yells"
 	limbs_id = "smutant"
 	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
-	inherent_traits = list(TRAIT_RADIMMUNE,TRAIT_VIRUSIMMUNE)
+	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
 	offset_features = list (
 		OFFSET_HEAD = list(0,10),
