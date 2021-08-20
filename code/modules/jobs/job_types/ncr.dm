@@ -594,7 +594,7 @@ Heavy Trooper
 
 /datum/outfit/job/ncr/f13heavytrooper
 	name = "NCR Heavy Trooper"
-	jobtype = /datum/job/ncr/f13trooper
+	jobtype = /datum/job/ncr/f13heavytrooper
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/ncr
