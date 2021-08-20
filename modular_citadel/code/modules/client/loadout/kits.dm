@@ -1,4 +1,4 @@
-///Item boxes for custom loadouts transferred from Legacy.
+///Item boxes for custom loadouts transferred from Legacy and asorted custom items.
 
 /obj/item/storage/box/large/custom_kit
 	name = "Custom Loadout"
