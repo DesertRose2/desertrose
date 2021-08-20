@@ -21,6 +21,8 @@
 	punchstunthreshold = 20
 	use_skintones = 0
 	sexes = 0
+	armor = 10
+	speedmod = 0.5
 	liked_food = JUNKFOOD | FRIED | RAW
 
 /datum/species/smutant/on_species_gain(mob/living/carbon/C, datum/species/old_species)
