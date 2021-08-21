@@ -373,3 +373,8 @@
 //Matt Sharp - soldierboy2
 /obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
 	new /obj/item/clothing/mask/gas(src)
+
+//Mariya Sankinova - Rebel0
+/obj/item/storage/box/large/custom_kit/mariya/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/power_armor/t45d/mari(src)
+	new /obj/item/clothing/head/helmet/f13/power_armor/t45d/mari(src)
