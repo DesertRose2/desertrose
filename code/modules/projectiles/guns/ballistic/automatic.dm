@@ -737,6 +737,16 @@
 	burst_shot_delay = 2
 	force = 20
 	spread = 1
+	suppressor_state = "suppressor"
+	can_scope = TRUE
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	suppressor_x_offset = 31
+	suppressor_y_offset = 15
+	bayonet_state = "rifles"
+	knife_x_offset = 22
+	knife_y_offset = 12
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"

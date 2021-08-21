@@ -286,6 +286,12 @@
 	icon_state = "legvet"
 	slowdown = -0.1
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+//Custom veteran armor, could be used for crafting too don't really care - Lamasmaster
+/obj/item/clothing/suit/armor/f13/legion/vet/pal
+	name = "legion veteran paladin-hunter armor"
+	desc = "(V)  A custom made repurposed suit of T45d, seemingly very damaged before any work has even been done to it. It has few pieces of regular veteran armor added to it with bull crest on its chest."
+	icon_state = "legvetpal"
+	item_state = "legvetpal"
 
 /obj/item/clothing/suit/armor/f13/legion/heavy
 	name = "legion veteran decan armor"

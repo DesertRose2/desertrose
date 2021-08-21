@@ -251,6 +251,12 @@
 	icon_state = "legvet"
 	item_state = "legvet"
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+//Custom veteran armor, could be used for crafting too don't really care - Lamasmaster
+/obj/item/clothing/head/helmet/f13/legion/vet/pal
+	name = "legion veteran paladin-hunter helmet"
+	desc = "(V) A reforged T45d power armor helmet. It had its plating around mouth removed as well as its light from top of it. Sports a red vertical plume to denote a veteran."
+	icon_state = "legvetpal"
+	item_state = "legvetpal"
 
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "legion veteran decan helmet"
@@ -313,7 +319,6 @@
 	item_state = "legdecanvet"
 	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
-
 /obj/item/clothing/head/helmet/f13/legion/centurion
 	name = "legion centurion helmet"
 	desc = "(VI) A sturdy helmet from steel and brass with a red horizontal plume."
@@ -321,6 +326,12 @@
 	item_state = "legcenturion"
 	armor = list("tier" = 6, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
+//Custom centurion helmet for Cato
+/obj/item/clothing/head/helmet/f13/legion/centurion/mohawk
+	name = "legion centurion mohawk helmet"
+	desc = "(VI) A sturdy helmet from steel and brass with a red vertical plume."
+	icon_state = "legcenturion_mohawk"
+	item_state = "legcenturion_mohawk"
 
 /obj/item/clothing/head/helmet/f13/legion/rangercent
 	name = "ranger-hunter centurion helmet"
