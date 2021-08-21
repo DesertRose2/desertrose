@@ -227,6 +227,18 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant)
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
 
+/obj/item/modkit/mariarmor
+	name = "Modified Wid-west BoS Body modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/power_armor/t45d,
+						/obj/item/clothing/suit/armor/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/suit/armor/f13/power_armor/t45d/mari
+
+/obj/item/modkit/marihelmet
+	name = "Modified Wid-west BOS Helmet modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+						/obj/item/clothing/head/helmet/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t45d/mari
+
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm
 	name = "crusader pistol 10mm conversion kit"
