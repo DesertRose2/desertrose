@@ -590,7 +590,7 @@
 	icon_state = "shrub"
 	
 /obj/item/grown/shrub/attack_self(mob/user)
-	var/turf/player_turf = get_turf(user)
+//	var/turf/player_turf = get_turf(user)
 //	if(player_turf?.is_blocked_turf(TRUE))
 //		return FALSE
 	user.visible_message("<span class='danger'>[user] begins to plant \the [src]…</span>")
