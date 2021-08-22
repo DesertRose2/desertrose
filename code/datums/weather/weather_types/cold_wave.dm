@@ -1,7 +1,7 @@
 /datum/weather/cold_wave
 	name = "cold wave"
 	desc = "Harsh cold wave will grip an entire area."
-	probability = 7
+	probability = 0 
 
 	telegraph_message = "<span class='userdanger'><i>A cold snap is coming to the area, freezing the air around those outside.</i></span>"
 	telegraph_duration = 300

@@ -188,7 +188,7 @@
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	name = "raider combat armor"
+	name = "reinforced raider combat armor"
 	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
@@ -921,7 +921,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "(IV) The armor of those true to the Division."
 	icon_state = "atomzealot"
 	item_state = "atomzealot"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
@@ -930,11 +929,9 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 
 /obj/item/clothing/suit/armor/f13/atomwitch
 	name = "atomic seer robes"
-	desc = "(II) The robes worn by female seers of the Division."
 	desc = "(IV) The robes worn by female seers of the Division."
 	icon_state = "atomwitch"
 	item_state = "atomwitch"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
@@ -1000,6 +997,24 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
 
+/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
+	name = "Chicken Coop jacket"
+	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
+	icon_state = "drive_jacket"
+	item_state = "drive_jacket"
+
+/obj/item/clothing/suit/armor/f13/power_armor/legion
+	name = "salvaged Legion power armor"
+	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has a legion aquila engraved into the chestplate."
+	icon_state = "libritor"
+	item_state = "libritor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	requires_training = FALSE
+	slowdown = 1.40
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+
+
 //Mutants
 
 /obj/item/clothing/suit/armor/f13/mutie/poncho
@@ -1017,25 +1032,8 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
-	name = "mutant armour"
+	name = "reinforced mutant armour"
 	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
-	name = "Chicken Coop jacket"
-	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
-	icon_state = "drive_jacket"
-	item_state = "drive_jacket"
-
-/obj/item/clothing/suit/armor/f13/power_armor/legion
-	name = "salvaged Legion power armor"
-	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has a legion aquila engraved into the chestplate."
-	icon_state = "libritor"
-	item_state = "libritor"
-	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	requires_training = FALSE
-	slowdown = 1.40
-	armor_block_chance = 80
-	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor

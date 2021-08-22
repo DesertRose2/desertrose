@@ -466,6 +466,17 @@
 	icon_state = "mutie_ncr"
 	item_state = "mutie_ncr"
 
+/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
+	name = "mutant ranger armor"
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor, only redesigned to fit a super mutant."
+	icon_state = "mutie_ranger_armour"
+	item_state = "mutie_ranger_armour"
+
+/obj/item/clothing/suit/armor/f13/rangercombat/mutie
+	name = "veteran mutant ranger combat armor"
+	icon_state = "mutie_vet_ranger"
+	item_state = "mutie_vet_ranger"
+
 /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	name = "reinforced NCR combat armor"
 	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
@@ -567,12 +578,6 @@
 	item_state = "ncr_patrol"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
-	name = "mutant ranger armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
-	icon_state = "mutie_ranger_armour"
-	item_state = "mutie_ranger_armour"
-
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
 	name = "modified patrol armor"
 	desc = "A customized and moderately-worn suit of patrol ranger armor. A sun-worn thick olive duster is worn over the armor."
@@ -594,11 +599,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/rangercombat/mutant
-	name = "veteran mutant ranger combat armor"
-	icon_state = "mutie_vet_ranger"
-	item_state = "mutie_vet_ranger"
 
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"
