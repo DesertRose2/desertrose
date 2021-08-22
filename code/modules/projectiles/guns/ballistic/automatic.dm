@@ -1471,6 +1471,9 @@
 	burst_size = 1
 	can_automatic = TRUE
 	semi_auto = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/g11/upgraded
 	name = "g11e"
@@ -1481,6 +1484,9 @@
 	burst_shot_delay = 1
 	can_suppress = FALSE
 	spread = 5
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1495,6 +1501,8 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 10
 	fire_delay = 3
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"
@@ -1509,6 +1517,9 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/caws
 	name = "H&K CAWS"
@@ -1523,6 +1534,9 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/m2a1
 	name = "Browning M2A1"
