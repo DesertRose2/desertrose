@@ -351,6 +351,11 @@
 	path = /obj/item/storage/box/large/custom_kit/mattsharp
 	ckeywhitelist = list("soldierboy2")
 
+/datum/gear/donator/kits/mariyasankinova
+	name = "Mariya Sankinova's belongings"
+	path = /obj/item/storage/box/large/custom_kit/mariya
+	ckeywhitelist = list("rebel0")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
