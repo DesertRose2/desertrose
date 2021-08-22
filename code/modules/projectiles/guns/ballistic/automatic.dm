@@ -872,6 +872,9 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	burst_size = 2
 	fire_delay = 3
+	can_attachments = TRUE
+	can_scope = FALSE
+	can_bayonet = FALSE
 	spread = 10
 	extra_damage = 2
 	suppressor_state = "suppressor"
