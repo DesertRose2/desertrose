@@ -1459,7 +1459,6 @@
 	burst_size = 2
 	fire_delay = 2
 	burst_shot_delay = 2
-	extra_damage = -15
 	can_suppress = FALSE
 	can_attachments = TRUE
 	//automatic = 1
@@ -1480,7 +1479,6 @@
 	burst_size = 2
 	fire_delay = 1
 	burst_shot_delay = 1
-	extra_damage = -25
 	can_suppress = FALSE
 	spread = 5
 
@@ -1490,7 +1488,6 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	burst_size = 2
-	extra_damage = -30
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m762
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
@@ -1506,9 +1503,8 @@
 	item_state = "cshotgun1"
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g
-	burst_size = 3 //Who keeps nerfing this? S.B. I do, Cyth
-	fire_delay = 10
-	extra_damage = -25
+	burst_size = 3
+	fire_delay = 4
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1522,8 +1518,7 @@
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	burst_size = 2
-	fire_delay = 7
-	extra_damage = -15
+	fire_delay = 4
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY

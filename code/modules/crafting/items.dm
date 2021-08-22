@@ -987,6 +987,7 @@
 				/obj/item/advanced_crafting_components/lenses,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
 				/obj/item/weldingtool/advanced,
+				/obj/item/advanced_crafting_components/conductors,
 				/obj/item/stock_parts/cell/ammo/mfc,
 				/obj/item/stock_parts/cell/ammo/ecp,)
 
