@@ -68,6 +68,8 @@
 #define EXP_TYPE_ADMIN			"Admin"
 //f13 stuff
 #define EXP_TYPE_VAULT			"Vault"
+#define EXP_TYPE_VTCCSEC			"Vault-Tec City Security"
+#define EXP_TYPE_VTCC			"Vault-Tec City Coalition"
 #define EXP_TYPE_BROTHERHOOD	"Brotherhood of Steel"
 #define EXP_TYPE_NCR			"New California Republic"
 #define EXP_TYPE_DEN			"Oasis"
@@ -76,10 +78,16 @@
 #define EXP_TYPE_ENCLAVE		"Enclave"
 #define EXP_TYPE_NCRCOMMAND     "NCR Command"
 #define EXP_TYPE_RANGER         "Ranger"
+#define EXP_TYPE_NCRNCO			"NCR NCO"
+#define EXP_TYPE_NCRTPR			"NCR TROOPER"
+#define EXP_TYPE_KNIGHT			"Knight"
 #define EXP_TYPE_SCRIBE         "Scribe"
 #define EXP_TYPE_DECANUS        "Decanus"
+#define EXP_TYPE_PRIME			"Prime"
+#define EXP_TYPE_CAMP			"Camp Follower"
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_FOLLOWERS		"FoA"
+#define EXP_TYPE_ROADIE		"Roadie"
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

@@ -15,6 +15,13 @@
 	possible_locs = list(BODY_ZONE_CHEST)
 	requires_bodypart_type = 0
 	requires_trait = 3
+
+/datum/surgery/advanced/toxichealing/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
 /datum/surgery_step/toxichealing
 	name = "rejuvenate body"
 	implements = list(TOOL_HEMOSTAT  = 100, TOOL_SCREWDRIVER = 35, /obj/item/pen = 15)

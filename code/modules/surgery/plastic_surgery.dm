@@ -4,6 +4,15 @@
 	possible_locs = list(BODY_ZONE_HEAD)
 	requires_bodypart_type = BODYPART_ORGANIC
 	requires_trait = 2
+
+/datum/surgery/plastic_surgery/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
 //reshape_face
 /datum/surgery_step/reshape_face
 	name = "reshape face"

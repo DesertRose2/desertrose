@@ -373,24 +373,27 @@
 	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. It is usually only given to high-ranking soldiers within the Brotherhood, due to its level of technology, as well as its reputation of friendly fire."
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
-	fire_delay = 3
+	fire_delay = 7
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 
 /obj/item/gun/energy/laser/scatter/baby
 	name = "tribeam laser carbine"
 	desc = "A cut down version of the tribeam laser rifle."
 	icon_state = "tricar"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/baby)
+	untinkerable = TRUE
 
 /obj/item/gun/energy/laser/plasma
 	name ="plasma rifle"
 	item_state = "plasma"
 	icon_state = "plasma"
 	fire_delay = 4.5
+	extra_damage = -15
 	desc = "A top of line miniaturized plasma caster built by REPCONN in the wake of the Z43-521P failure. It is supperior to all previous rifles to enter service in the USCC."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -406,6 +409,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	burst_size = 2
+	extra_damage = -25
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	w_class = WEIGHT_CLASS_BULKY
@@ -443,12 +447,31 @@
 
 
 
+/obj/item/gun/energy/laser/plasma/p94
+	name = "p-94 plasma rifle"
+	item_state = "p94"
+	icon_state = "p94"
+	fire_delay = 5
+	extra_damage = -15
+	desc = "An old-school plasma rifle that was produced by Winchester and supplied to the army as an improvment on the large caster version before REPCON's more famous urban model replaced it."
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	can_scope = TRUE
+	scope_state = "plasma_scope"
+	scope_x_offset = 13
+	scope_y_offset = 16
+
+/obj/item/gun/energy/laser/plasma/p94/update_icon_state()
+	icon_state = "[initial(icon_state)][cell ? "" : "-e"]"
 
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "multiplas Rifle"
 	item_state = "multiplas"
 	icon_state = "multiplas"
-	fire_delay = 3
+	fire_delay = 7
+	extra_damage = -30
 	desc = "A modified A3-20 plasma caster built by REPCONN equipped with a multicasting kit that creates multiple weaker clots."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/scatter)

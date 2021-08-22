@@ -11,6 +11,16 @@
 	targetable_wound = /datum/wound/burn
 	requires_trait = 1
 
+/datum/surgery/debride/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_LOW))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
 /datum/surgery/debride/can_start(mob/living/user, mob/living/carbon/target)
 	if(..())
 		var/obj/item/bodypart/targeted_bodypart = target.get_bodypart(user.zone_selected)

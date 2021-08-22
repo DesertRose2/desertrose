@@ -34,6 +34,10 @@
 	name = "white shoes"
 	path = /obj/item/clothing/shoes/sneakers/white
 
+/datum/gear/shoes/swagshoes
+	name = "Swag shoes"
+	path = /obj/item/clothing/shoes/swagshoes
+
 /datum/gear/shoes/footcloths
 	name = "footcloths"
 	path = /obj/item/clothing/shoes/f13/rag
@@ -73,3 +77,18 @@
 	name = "leather combat boots"
 	path = /obj/item/clothing/shoes/f13/military/leather
 	cost = 2
+
+/datum/gear/shoes/oldcombat
+	name = "old combat boots"
+	path = /obj/item/clothing/shoes/f13/military/oldcombat
+	cost = 2
+
+/datum/gear/shoes/thighboot
+	name = "thigh high boots"
+	path = /obj/item/clothing/shoes/thighboot
+	cost = 1
+
+/datum/gear/shoes/thighboot/platform
+	name = "thigh high platforms"
+	path =/obj/item/clothing/shoes/thighboot/platform
+	cost = 1

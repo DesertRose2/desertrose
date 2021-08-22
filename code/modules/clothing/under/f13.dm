@@ -90,6 +90,14 @@
 	item_state = "ncr_shorts"
 	item_color = "ncr_shorts"
 
+/obj/item/clothing/under/f13/ncr_sniper
+	name = "NCR sniper fatigues"
+	desc = "A set of fatigues with padded compression sleeves for long periods of getting on your hands and knees. The top is a little open to beat the heat. Warning: The NCR does not condone the use of Steady chems."
+	can_adjust = FALSE
+	icon_state = "ncr_snipermgs"
+	item_state = "ncr_snipermgs"
+	item_color = "ncr_snipermgs"
+
 /obj/item/clothing/under/f13/caravaneer
 	name = "caravaneer outfit"
 	desc = "A soft outfit used by NCR caravaneers."
@@ -1116,7 +1124,7 @@
 
 /obj/item/clothing/under/f13/vault/vcity
 	name = "VTCC jumpsuit"
-	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
 	icon_state = "vaultcity"
 	item_state = "vaultcity"
 
@@ -1124,6 +1132,17 @@
 	name = "VTCC jumpskirt"
 	icon_state = "vaultcity_skirt"
 	item_state = "vaultcity_skirt"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser
+	name = "VTCC greaser's jumpsuit"
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults, with an added black leather jacket over the top. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back, only it's just purple because you just have to stand out!"
+	icon_state = "vaultcity_greaser"
+	item_state = "vaultcity_greaser"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+	name = "VTCC greaser's jumpsuit"
+	icon_state = "vaultcity_greaser_skirt"
+	item_state = "vaultcity_greaser_skirt"
 
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit"
@@ -1467,8 +1486,8 @@
 	icon_state = "mutie_vault_jumspuit"
 	item_state = "mutie_vault_jumspuit"
 
-/obj/item/clothing/under/f13/mutieranger
-	name = "mutant Ranger armour"
-	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
+/obj/item/clothing/under/f13/ncrmutie
+	name = "\improper NCR mutant uniform"
+	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"

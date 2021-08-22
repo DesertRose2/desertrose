@@ -17,8 +17,8 @@
 		if(!affecting)
 			to_chat(user, "<span class='warning'>The limb is missing!</span>")
 			return
-		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
-			return
+		//if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
+		//	return
 		if(affecting.status != BODYPART_ORGANIC)
 			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
 			return
@@ -57,17 +57,31 @@
 	icon_state = "bandaid_turbo"
 
 /obj/item/reagent_containers/pill/patch/healingpowder
-	name = "Healing Powder"
+	name = "healing powder"
 	desc = "A powder used to heal physical wounds derived from ground broc flowers and xander roots, commonly used by tribals."
 	list_reagents = list(/datum/reagent/medicine/healing_powder = 10)
 	icon_state = "bandaid_healingpowder"
 	self_delay = 0
 
 /obj/item/reagent_containers/pill/patch/healpoultice
-	name = "Healing poultice"
-	desc = "A concoction of broc flower, cave fungus, agrave fruit and xander root."
+	name = "healing poultice"
+	desc = "A concoction of broc flower, cave fungus, agave fruit and xander root."
 	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice = 10)
 	icon_state = "bandaid_healingpoultice"
+	self_delay = 0
+
+/obj/item/reagent_containers/pill/patch/poultice_zombie
+	name = "'Vita' poultice"
+	desc = "A well refined powder, mostly in use by Caesar's Legion for its side effects which it causes in first time users."
+	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice_zombie = 10)
+	icon_state = "bandaid_healingpoulticezombie"
+	self_delay = 40
+
+/obj/item/reagent_containers/pill/patch/bitterdrink
+	name = "bitter drink"
+	desc = "A disgusting drink favored by legion during their long marches. It leaves disgusting aftertaste."
+	list_reagents = list(/datum/reagent/medicine/bitter_drink = 10)
+	icon_state = "bitter"
 	self_delay = 0
 
 /obj/item/reagent_containers/pill/patch/healingpowder/custom
@@ -76,3 +90,19 @@
 	list_reagents = null
 	icon_state = "bandaid_healingpowder"
 	self_delay = 0
+
+/obj/item/reagent_containers/pill/patch/medx
+	name = "syringe (med-x)"
+	desc = "Contains Med-X, a powerful analgesic drug that increases the user's damage resistance. Highly addictive, and prolonged presence in the body comes with severe side effects."
+	list_reagents = list(/datum/reagent/medicine/medx = 10)
+	icon = 'icons/obj/syringe.dmi'
+	icon_state = "med-x"
+	item_state = "med-x"
+
+/obj/item/reagent_containers/pill/patch/hydra
+	name = "hydra"
+	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "hydra"
+	self_delay = 10
+	list_reagents = list(/datum/reagent/medicine/hydra = 10)

@@ -564,6 +564,11 @@
 	ammo_type = /obj/item/ammo_casing/a556/match
 	custom_materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3500)
 
+/obj/item/ammo_box/a556/rubber
+	name = "ammo box (5.56 rubber)"
+	ammo_type = /obj/item/ammo_casing/a556/rubber
+	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1500)
+
 /obj/item/ammo_box/a556/sport
 	name = "ammo box (.223)"
 	ammo_type = /obj/item/ammo_casing/a556/sport
@@ -755,11 +760,21 @@
 /obj/item/ammo_box/c45rev/empty
 	start_empty = 1
 
+/obj/item/ammo_box/jerrycan
+	name = "jerry can"
+	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "jerrycan"
+	caliber = "fuel"
+	unloadable = TRUE
+	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
+	max_ammo = 6 // 3 bursts, you need 2 cans
+
 /obj/item/ammo_box/m22
 	name = "ammo box (.22lr)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	multiple_sprites = 2
-	icon_state = "9mmbox"
+	icon_state = "22box"
 	ammo_type = /obj/item/ammo_casing/a22
 	max_ammo = 40
 	w_class = WEIGHT_CLASS_SMALL

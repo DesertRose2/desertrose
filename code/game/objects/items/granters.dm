@@ -622,6 +622,21 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/R82)
 
+/obj/item/book/granter/crafting_recipe/blueprint/r82/ncr
+	name = "ncr r82 heavy service rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
+
+/obj/item/book/granter/crafting_recipe/blueprint/r82/legion
+	name = "pilum rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/R82/legion)
+
+/obj/item/book/granter/crafting_recipe/blueprint/bastard
+	name = "bastard LMG blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list (/datum/crafting_recipe/bastard)
+
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	icon_state = "blueprint2"
@@ -724,6 +739,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/plasmarifle)
 
+/obj/item/book/granter/crafting_recipe/blueprint/p94
+	name = "p94 plasma rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/p94)
+
 /obj/item/book/granter/crafting_recipe/blueprint/tribeam
 	name = "tribeam laser rifle blueprint"
 	icon_state = "blueprint2"
@@ -779,6 +799,21 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/tricarbine)
 
+/obj/item/book/granter/crafting_recipe/blueprint/wattz2k
+	name = "wattz 2000 laser rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/wattz2k)
+
+/obj/item/book/granter/crafting_recipe/blueprint/commando
+	name = "commando carbine blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/commando)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type93
+	name = "type93 assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/type93)
+
 /obj/item/book/granter/trait/chemistry
 	name = "Chemistry for Wastelanders"
 	desc = "A useful book on chemistry."
@@ -803,6 +838,14 @@
 	granted_trait = TRAIT_SURGERY_MID
 	traitname = "intermediate surgery"
 	remarks = list("Don't forget your instruments inside patients...", "Be careful when cutting...", "Don't operate with dirty hands...")
+
+/obj/item/book/granter/trait/highsurgery
+	name = "Advanced Surgery Manual"
+	desc = "A very useful book on surgery."
+	oneuse = TRUE
+	granted_trait = TRAIT_SURGERY_HIGH
+	traitname = "advanced surgery"
+	remarks = list("Negligence lawsuits are bad for buisness...", "Chlorine gas is not a healthy sedative...", "Pharmacists are just drug dealers with a license...")
 
 /obj/item/book/granter/trait/tinkering
 	name = "Tinkering for Wastelander"
@@ -864,6 +907,14 @@
 	remarks = list("Keep your fists up...", "Don't clench your thumb in your fist, or you might break it...", "Turn into your punch, and put your body weight behind it...", "Footwork is everything, make sure to step into your punches...", "Aim for their jaw for an easy K-O...")
 */
 
+/obj/item/book/granter/trait/big_leagues
+	name = "Swatters Guide to Hard-Hitting Homeruns"
+	desc = "A manual on how to maximize one's potential at scoring that well-needed homerun! Complete with 1950s styled baseball ads."
+	oneuse = TRUE
+	granted_trait = TRAIT_BIG_LEAGUES
+	traitname = "hitting things"
+	remarks = list("Line up your bat...", "Judge target travel speed...", "Buy a premium swatter to maximize ball hit rate - or to break skulls...", "Apply blunt object to head...")
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
@@ -871,7 +922,7 @@
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer")
-	if(granted_trait == null)	
+	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
 			if(null)
@@ -881,7 +932,7 @@
 				traitname = "trekking"
 			if("Minor Surgery")
 				granted_trait = TRAIT_SURGERY_LOW
-				traitname = "intermediate surgery"
+				traitname = "minor surgery"
 			if("Chemistry")
 				granted_trait = TRAIT_CHEMWHIZ
 				traitname = "chemistry"
@@ -898,9 +949,9 @@
 			if("Tinkerer")
 				granted_trait = TRAIT_MASTER_GUNSMITH
 				traitname = "tinkering"
-	else 
+	else
 		. = ..()
-		
+
 /obj/item/book/granter/trait/selection/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)

@@ -238,3 +238,9 @@
 /obj/structure/ladder/unbreakable/binary/unlinked //Crew gets to complete one
 	id = "unlinked_binary"
 	area_to_place = null
+
+/obj/structure/ladder/unbreakable/well
+	name = "ladder"
+	desc = "A dried up well with a sturdy metal ladder heading down."
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "wellwheel"

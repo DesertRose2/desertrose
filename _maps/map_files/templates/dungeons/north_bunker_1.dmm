@@ -66,7 +66,6 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
-/mob/living/simple_animal/hostile/handy,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -130,7 +129,6 @@
 /area/f13/bunker)
 "eI" = (
 /obj/structure/table,
-/obj/item/reagent_containers/syringe/medx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -141,12 +139,6 @@
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"eN" = (
-/mob/living/simple_animal/hostile/centaur,
-/turf/open/floor/plasteel/barber{
-	icon_state = "platingdmg2"
 	},
 /area/f13/bunker)
 "fe" = (
@@ -522,6 +514,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"qn" = (
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/bunker)
 "qu" = (
 /obj/effect/decal/waste,
 /obj/effect/spawner/lootdrop/trash,
@@ -539,8 +535,8 @@
 	},
 /area/f13/bunker)
 "qA" = (
-/obj/structure/chair,
 /obj/effect/decal/remains/human,
+/obj/structure/chair/office/light,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -598,12 +594,6 @@
 /mob/living/simple_animal/hostile/centaur,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
-	},
-/area/f13/bunker)
-"tJ" = (
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/floor/plasteel/barber{
-	icon_state = "platingdmg3"
 	},
 /area/f13/bunker)
 "tM" = (
@@ -734,7 +724,7 @@
 	},
 /area/f13/bunker)
 "wU" = (
-/obj/structure/chair{
+/obj/structure/chair/office/light{
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
@@ -811,10 +801,6 @@
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg1"
 	},
-/area/f13/bunker)
-"zw" = (
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plating,
 /area/f13/bunker)
 "zJ" = (
 /obj/structure/closet,
@@ -1125,7 +1111,6 @@
 "IT" = (
 /obj/effect/decal/remains/human,
 /obj/item/flashlight/flare/torch,
-/mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2"
 	},
@@ -1160,12 +1145,6 @@
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"JF" = (
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/floor/plasteel/barber{
-	icon_state = "plating"
 	},
 /area/f13/bunker)
 "Kk" = (
@@ -1580,13 +1559,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg3"
-	},
-/area/f13/bunker)
-"Zc" = (
-/mob/living/simple_animal/hostile/handy,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "Zg" = (
@@ -2068,7 +2040,7 @@ Rl
 xG
 En
 vO
-zw
+vO
 Kk
 xG
 Rl
@@ -2083,7 +2055,7 @@ Rl
 Rl
 Rl
 Eg
-nW
+qn
 tQ
 tQ
 wD
@@ -2127,7 +2099,7 @@ tQ
 mb
 tQ
 tQ
-nW
+tQ
 tQ
 tQ
 tQ
@@ -2184,7 +2156,7 @@ oy
 xG
 gv
 XM
-Zc
+XM
 XM
 dE
 xG
@@ -2218,7 +2190,7 @@ Wr
 pd
 xG
 KA
-QJ
+XM
 xG
 XM
 Bp
@@ -2332,11 +2304,11 @@ nV
 RD
 xG
 fe
-QJ
+XM
 xG
 gv
 lS
-Zc
+QJ
 XM
 dE
 xG
@@ -2393,7 +2365,7 @@ Rl
 Rl
 Eg
 PH
-PH
+XM
 Eg
 xG
 xG
@@ -2658,7 +2630,7 @@ Rl
 xG
 Zg
 DZ
-QJ
+XM
 XM
 Jv
 xG
@@ -2702,10 +2674,10 @@ wU
 xG
 op
 lS
-pz
+XM
 xG
 FR
-XM
+QJ
 dE
 xG
 Rl
@@ -2738,12 +2710,12 @@ XM
 Bw
 XM
 qJ
-pz
+XM
 XM
 Bw
 qJ
 XM
-pz
+XM
 XM
 xG
 Rl
@@ -2847,7 +2819,7 @@ rr
 XM
 xG
 gv
-QJ
+XM
 sy
 Wj
 qN
@@ -2855,7 +2827,7 @@ Zp
 op
 XM
 pq
-XM
+QJ
 XM
 fH
 Bw
@@ -2885,14 +2857,14 @@ oP
 XM
 qJ
 XM
-QJ
 XM
+TZ
 XM
 DA
 uu
 sy
 Bw
-pz
+XM
 XM
 XM
 XM
@@ -3032,7 +3004,7 @@ Rl
 (38,1,1) = {"
 Rl
 Rl
-xG
+XY
 XY
 XY
 XY
@@ -3070,7 +3042,7 @@ Rl
 (39,1,1) = {"
 Rl
 Rl
-xG
+XY
 XY
 XY
 XY
@@ -3108,8 +3080,8 @@ Rl
 (40,1,1) = {"
 Rl
 Rl
-xG
-xG
+XY
+XY
 xG
 xG
 xG
@@ -3162,7 +3134,7 @@ pQ
 xG
 XM
 XM
-pz
+XM
 Od
 PW
 PW
@@ -3269,7 +3241,7 @@ lH
 lU
 By
 oh
-oh
+Bo
 gA
 EG
 oh
@@ -3303,7 +3275,7 @@ Rl
 Xc
 xG
 gA
-eN
+dV
 oh
 Pw
 rG
@@ -3385,7 +3357,7 @@ lU
 oh
 tM
 gA
-JF
+oh
 ud
 jf
 qu
@@ -3504,7 +3476,7 @@ ti
 xG
 ZV
 gA
-tJ
+lU
 xG
 xG
 xG
@@ -3779,9 +3751,9 @@ oh
 gA
 xG
 pS
-Bo
 oh
-Bo
+oh
+oh
 vt
 xG
 Rl
@@ -3852,7 +3824,7 @@ Rl
 xG
 pP
 oh
-oh
+tx
 xG
 dj
 tx
@@ -3930,9 +3902,9 @@ HB
 wh
 lU
 xG
-gl
-dV
 oh
+dV
+tx
 Rl
 Rl
 xG
@@ -4042,7 +4014,7 @@ Rl
 Rl
 xG
 xG
-Ff
+eK
 xG
 xG
 xG

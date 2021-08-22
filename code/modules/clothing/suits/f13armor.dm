@@ -41,8 +41,8 @@
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
 	name = "combat body armor"
-	icon_state = "combat_coat"
-	item_state = "combat_coat"
+	icon_state = "combatbodyarmor"
+	item_state = "combatbodyarmor"
 	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
@@ -188,17 +188,17 @@
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	name = "raider combat armor"
+	name = "reinforced raider combat armor"
 	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
-	desc = "(VIII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
 	icon_state = "marinearmor"
 	item_state = "marinearmor"
-	armor = list("tier" = 8,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
 /obj/item/clothing/suit/armor/f13/ahp_suit
 	name = "highway patrol jacket"
@@ -263,15 +263,20 @@
 		return
 	if(emped == 0)
 		if(ismob(loc))
+			var/mob/living/L = loc
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 			slowdown += 30
 			armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
 			emped = 1
+			if(istype(L))
+				L.update_equipment_speed_mods()
 			spawn(50) //5 seconds of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 30
 				armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
 				emped = 0
+				if(istype(L))
+					L.update_equipment_speed_mods()
 
 /obj/item/clothing/suit/armor/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(check_armor_penetration(object) <= 0.15 && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
@@ -294,8 +299,8 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
 	name = "restored T-45b power armor"
@@ -314,8 +319,8 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	slowdown = 1.40
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	name = "raider T-45b power armor"
@@ -349,7 +354,7 @@
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
-/obj/item/clothing/suit/armor/f13/power_armor/vaulttecta
+/obj/item/clothing/suit/armor/f13/power_armor/vaulttec/ta
 	name = "Vault-Tec technical armour"
 	desc = "(VIII)  A primative  suit of power armour, the first kind built by the residents of Vault-115 in order to fight off immediate threats."
 	icon_state = "vaulttecta"
@@ -393,11 +398,11 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
 	name = "head knight's T-45d Power Armour"
-	desc = "(IX) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
+	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
 	slowdown = 0.16
-	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	name = "brotherhood T-45d power armor"
@@ -624,13 +629,13 @@
 	armor = list("tier" = 3)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
-	name = "Overseer's battlecoat"
+	name = "\improper Overseer's battlecoat"
 	desc = "(III) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec embroidered on the back. This one is worn by the Coalition's Overseer."
 	icon_state = "overseer_commandcoat"
 	item_state = "overseer_commandcoat"
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
-	name = "Marhsal's battlecoat"
+	name = "\improper Marhsal's battlecoat"
 	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
 	icon_state = "marshal_commandcoat"
 	item_state = "marshal_commandcoat"
@@ -638,10 +643,16 @@
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
 	name = "armoured vault battlecoat"
-	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
+	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the citizens of the Coalition."
 	icon_state = "armouredvault_commandcoat"
 	item_state = "armouredvault_commandcoat"
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
+	name = "\improper Roadie's battlecoat"
+	desc = "(IV) A heavy padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
+	icon_state = "roadie_battlecoat"
+	item_state = "roadie_battlecoat"
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
@@ -685,10 +696,10 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
-/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	name = "hardened midwestern power armor" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	icon_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
-	item_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
+/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced
+	name = "hardened midwestern power armor"
+	icon_state = "midwestpa"
+	item_state = "midwestpa"
 	desc = "This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities." // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 
 obj/item/clothing/suit/armor/f13/exile/cust0m
@@ -732,6 +743,16 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "reptiliatenebris"
 
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/weebcloak
+	name = "dark trenchcloak"
+	desc = "(IV) A dark leather coat, worn over your shoulders for maximum coolness."
+	icon_state = "weebcloak"
+	item_state = "weebcloak"
+
+/obj/item/clothing/suit/armor/f13/raider/weebcloak/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -793,7 +814,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "ranger_cloak"
 	item_state = "ranger_cloak"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0) //Same armor as trail ranger gear
-	slowdown = -0.14 //Same speed buff as trail ranger gear
+	slowdown = -0.2 //Same speed buff as trail ranger gear
 
 /obj/item/clothing/suit/armor/f13/herbertranger //Armor wise, it's reskinned raider armor.
 	name = "weathered desert ranger armor"
@@ -888,6 +909,34 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/talon/duster
+	name = "talon company duster"
+	desc = "(IV) A set of weathered combat armour spray-painted black, with the Talon Company symbol grafted onto the chest. This set has been stripped down to just the chespiece and kneepads, the left pauldron stitched into a dark grey duster."
+	icon_state = "talon_duster"
+	item_state = "talon_duster"
+
+/obj/item/clothing/suit/armor/f13/atomzealot
+	name = "zealot armor"
+	desc = "(IV) The armor of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/atomwitch
+	name = "atomic seer robes"
+	desc = "(IV) The robes worn by female seers of the Division."
+	icon_state = "atomwitch"
+	item_state = "atomwitch"
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 100,"fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/atomwitch/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
@@ -897,20 +946,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "The symbol of the greatest gangers."
 	icon_state = "warriors"
 	item_state = "warriors"
-
-/obj/item/clothing/suit/armor/f13/atomzealot
-	name = "zealot armor"
-	desc = "(IV) The armor of those true to the Division."
-	icon_state = "atomzealot"
-	item_state = "atomzealot"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/atomwitch
-	name = "atomic seer robes"
-	desc = "(II) The robes worn by female seers of the Division."
-	icon_state = "atomwitch"
-	item_state = "atomwitch"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/harbingermantle
 	name = "Harbinger's Mantle"
@@ -961,31 +996,43 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
 
+/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
+	name = "Chicken Coop jacket"
+	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
+	icon_state = "drive_jacket"
+	item_state = "drive_jacket"
+
+/obj/item/clothing/suit/armor/f13/power_armor/legion
+	name = "salvaged Legion power armor"
+	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has a legion aquila engraved into the chestplate."
+	icon_state = "libritor"
+	item_state = "libritor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	requires_training = FALSE
+	slowdown = 1.40
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+
+
 //Mutants
 
-/obj/item/clothing/suit/armor/f13/mutant/poncho
+/obj/item/clothing/suit/armor/f13/mutie/poncho
 	name = "mutant poncho"
 	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
 	icon_state = "mutie_poncho"
 	item_state = "mutie_poncho"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal
+/obj/item/clothing/suit/armor/f13/mutie/metal
 	name = "mutant armour"
 	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
-	name = "mutant armour"
-	desc = "(6) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+/obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
+	name = "reinforced mutant armour"
+	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
-	name = "Chicken Coop jacket"
-	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
-	icon_state = "drive_jacket"
-	item_state = "drive_jacket"

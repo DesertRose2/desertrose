@@ -6,6 +6,15 @@
 	requires_bodypart = FALSE //need a missing limb
 	requires_bodypart_type = 0
 	requires_trait = 2
+
+/datum/surgery/prosthetic_replacement/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
 /datum/surgery/prosthetic_replacement/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
 	if(!iscarbon(target))
 		return 0

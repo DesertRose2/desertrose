@@ -2,6 +2,7 @@
 /datum/weather/acid_rain
 	name = "acid rain"
 	desc = "The planet's thunderstorms are by nature acidic, and will incinerate anyone standing beneath them without protection."
+	probability = 0
 
 	telegraph_duration = 400
 	telegraph_message = "<span class='boldwarning'>Thunder rumbles far above. You hear droplets drumming against the canopy. Seek shelter.</span>"
