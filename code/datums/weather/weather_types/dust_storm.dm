@@ -10,7 +10,7 @@
 
 	weather_message = "<span class='userdanger'><i>Thick rolling clouds of sand billow down around you!</i></span>"
 	weather_duration_lower = 600
-	weather_duration_upper = 1200
+	weather_duration_upper = 3000
 	weather_overlay = "ash_storm"
 
 	end_message = "<span class='boldannounce'>The shrieking wind whips away the last of the sand and falls to its usual murmur.</span>"
