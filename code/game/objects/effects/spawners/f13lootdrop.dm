@@ -1899,7 +1899,6 @@
 	icon_state = "blueprint_loot"
 	lootcount = 1
 	loot = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
 		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
@@ -1911,8 +1910,6 @@
 	icon_state = "blueprint_loot"
 	lootcount = 1
 	loot = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
-		/obj/item/book/granter/crafting_recipe/blueprint/p94,
 		/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
 		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
@@ -1929,7 +1926,7 @@
 		/obj/item/advanced_crafting_components/conductors,
 		/obj/item/advanced_crafting_components/receiver,
 		/obj/item/advanced_crafting_components/assembly,
-		/obj/item/advanced_crafting_components/alloys,
+		/obj/item/advanced_crafting_components/alloys
 	)
 
 /obj/effect/spawner/lootdrop/f13/attachments
