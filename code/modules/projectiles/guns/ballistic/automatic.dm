@@ -1218,7 +1218,7 @@
 	icon_state = "p90"
 	item_state = "m90"
 	burst_size = 3
-	fire_delay = 1
+	fire_delay = 2.5
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
