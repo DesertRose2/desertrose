@@ -716,7 +716,7 @@ SUBSYSTEM_DEF(ticker)
 		'sound/f13roundend/these_days.ogg',
 		'sound/f13roundend/democracy.ogg',
 		'sound/f13roundend/power_armor.ogg',
-		'sound/f13roundend/deathclaws_can_speak_and_theyre_lizard_people.ogg'
+		'sound/f13roundend/deathclaws_can_speak_and_theyre_lizard_people.ogg',
 		'sound/f13roundend/three_dog_awooo.ogg',
 		'sound/f13roundend/fallout_dodgeball_truncated.ogg',
 		'sound/f13roundend/fuck_me_sideways.ogg',
