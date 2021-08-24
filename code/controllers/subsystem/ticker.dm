@@ -716,7 +716,26 @@ SUBSYSTEM_DEF(ticker)
 		'sound/f13roundend/these_days.ogg',
 		'sound/f13roundend/democracy.ogg',
 		'sound/f13roundend/power_armor.ogg',
-		'sound/f13roundend/war.ogg',\
+		'sound/f13roundend/deathclaws_can_speak_and_theyre_lizard_people.ogg'
+		'sound/f13roundend/three_dog_awooo.ogg',
+		'sound/f13roundend/fallout_dodgeball_truncated.ogg',
+		'sound/f13roundend/fuck_me_sideways.ogg',
+		'sound/f13roundend/i_prefer_the_term_autocrat.ogg',
+		'sound/f13roundend/i_should_kick_your_fucking_ass.ogg',
+		'sound/f13roundend/im_turning_into_a_ghoul.ogg',
+		'sound/f13roundend/lupa_is_still_a_tough_old_bitch.ogg',
+		'sound/f13roundend/sulik_suggests_a_hole.ogg',
+		'sound/f13roundend/sulik_suggests_soap.ogg',
+		'sound/f13roundend/centurion_armor_unspattered.ogg',
+		'sound/f13roundend/legions_view_on_slavery.ogg',
+		'sound/f13roundend/we_gone_get_along_just_fine.ogg',
+		'sound/f13roundend/this_one_bad_trip_friend.ogg',
+		'sound/f13roundend/silk_sheets.ogg',
+		'sound/f13roundend/war_never_changes_3.ogg',
+		'sound/f13roundend/we_can_go_another_round.ogg',
+		'sound/f13roundend/wham_bam_oh_god_my_brains.ogg',
+		'sound/f13roundend/mr_new_vegas_says_i_love_you.ogg',
+		'sound/f13roundend/youve_gotten_a_lot_farther_than_you_should_have.ogg'	,\
 		)
 
 	SEND_SOUND(world, sound(round_end_sound))
