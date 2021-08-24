@@ -872,6 +872,9 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	burst_size = 2
 	fire_delay = 3
+	can_attachments = TRUE
+	can_scope = FALSE
+	can_bayonet = FALSE
 	spread = 10
 	extra_damage = 2
 	suppressor_state = "suppressor"
@@ -1218,7 +1221,7 @@
 	icon_state = "p90"
 	item_state = "m90"
 	burst_size = 3
-	fire_delay = 1
+	fire_delay = 2.5
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -1459,7 +1462,6 @@
 	burst_size = 2
 	fire_delay = 2
 	burst_shot_delay = 2
-	extra_damage = -15
 	can_suppress = FALSE
 	can_attachments = TRUE
 	//automatic = 1
@@ -1472,6 +1474,9 @@
 	burst_size = 1
 	can_automatic = TRUE
 	semi_auto = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/g11/upgraded
 	name = "g11e"
@@ -1480,9 +1485,11 @@
 	burst_size = 2
 	fire_delay = 1
 	burst_shot_delay = 1
-	extra_damage = -25
 	can_suppress = FALSE
 	spread = 5
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1490,7 +1497,6 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	burst_size = 2
-	extra_damage = -30
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m762
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
@@ -1498,6 +1504,8 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 10
 	fire_delay = 3
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"
@@ -1506,13 +1514,15 @@
 	item_state = "cshotgun1"
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g
-	burst_size = 3 //Who keeps nerfing this? S.B. I do, Cyth
-	fire_delay = 10
-	extra_damage = -25
+	burst_size = 3
+	fire_delay = 4
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/caws
 	name = "H&K CAWS"
@@ -1522,12 +1532,14 @@
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	burst_size = 2
-	fire_delay = 7
-	extra_damage = -15
+	fire_delay = 4
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/m2a1
 	name = "Browning M2A1"

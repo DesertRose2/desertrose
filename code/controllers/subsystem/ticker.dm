@@ -706,17 +706,17 @@ SUBSYSTEM_DEF(ticker)
 	update_everything_flag_in_db()
 	if(!round_end_sound)
 		round_end_sound = pick(\
-		'sound/roundend/newroundsexy.ogg',
-		'sound/roundend/apcdestroyed.ogg',
-		'sound/roundend/seeyoulaterokay.ogg',
-		'sound/roundend/bangindonk.ogg',
-		'sound/roundend/leavingtg.ogg',
-		'sound/roundend/its_only_game.ogg',
-		'sound/roundend/yeehaw.ogg',
-		'sound/roundend/disappointed.ogg',
-		'sound/roundend/gondolabridge.ogg',
-		'sound/roundend/haveabeautifultime.ogg',
-		'sound/roundend/CitadelStationHasSeenBetterDays.ogg'\
+		'sound/f13roundend/jean_baptist.ogg',
+		'sound/f13roundend/master_continue.ogg',
+		'sound/f13roundend/nuclear_backyard.ogg',
+		'sound/f13roundend/patrolling.ogg',
+		'sound/f13roundend/real_tunnel_snake.ogg',
+		'sound/f13roundend/smoothskin.ogg',
+		'sound/f13roundend/tunnel_snakes_rule.ogg',
+		'sound/f13roundend/these_days.ogg',
+		'sound/f13roundend/democracy.ogg',
+		'sound/f13roundend/power_armor.ogg',
+		'sound/f13roundend/war.ogg',\
 		)
 
 	SEND_SOUND(world, sound(round_end_sound))
