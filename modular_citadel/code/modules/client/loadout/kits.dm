@@ -392,4 +392,4 @@
 
 //Jay-Oh - Conormackgegore
 /obj/item/storage/box/large/custom_kit/jayoh/PopulateContents()
-	new /obj/item/clothing/under/f13/dbdu
+	new /obj/item/clothing/under/f13/dbdu(src) 

@@ -370,7 +370,6 @@
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
 
-
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
