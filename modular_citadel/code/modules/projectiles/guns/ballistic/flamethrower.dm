@@ -149,3 +149,14 @@
 /obj/item/gun/ballistic/m2flamethrower/dropped(mob/living/user)
 	. = ..()
 	ammo_pack.attach_gun(user)
+
+//Incinerators
+
+/obj/item/gun/ballistic/rifle/antimateriel/incinerator
+	name = "incinerator"
+	desc = "This weapon launches balls of fire that ignite foes from a distance."
+	icon_state = "incinerator"
+	item_state = "incinerator"
+	icon ='icons/obj/items_and_weapons.dmi'
+	lefthand_file = 'icons/mob/inhands/64x64_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
