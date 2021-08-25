@@ -170,8 +170,8 @@
 		/datum/outfit/loadout/sommelier,
 		)
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
 
 /datum/outfit/job/vtcc/f13merchant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
