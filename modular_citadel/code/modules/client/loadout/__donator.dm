@@ -369,6 +369,7 @@
 /datum/gear/donator/kits/jayoh
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
+	ckeywhitelist = list("Conormackgegore")
 
 //////////////////////////////
 ///Ranger items start here.///
