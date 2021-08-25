@@ -609,7 +609,8 @@
 		/datum/reagent/consumable/ethanol/changelingsting,
 		/datum/reagent/consumable/ethanol/alexander,
 		/datum/reagent/consumable/clownstears,
-		/datum/reagent/consumable/ethanol/beer/green
+		/datum/reagent/consumable/ethanol/beer/green,
+		/datum/reagent/consumable/ethanol/mead
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/ethanol/moonshine,
