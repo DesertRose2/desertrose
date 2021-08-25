@@ -239,6 +239,15 @@
 						/obj/item/clothing/head/helmet/f13/power_armor/t51b)
 	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t45d/mari
 
+/obj/item/modkit/riotgear/mutievet
+	name = "Mutant Veteran Ranger Armour modkit"
+	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/mutie
+
+/obj/item/modkit/riotgear_helmet/mutievet
+	name = "Mutant Veteran Ranger Armour modkit"
+	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
+
+
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm
 	name = "crusader pistol 10mm conversion kit"

@@ -94,7 +94,8 @@
 							)
 
 /datum/gear/supermutant/suit/armour/ncr/ranger/vet
-	path = /obj/item/clothing/suit/armor/f13/rangercombat/mutie
+	name = "Veteran Ranger Armour"
+	path = /obj/item/modkit/riotgear/mutievet
 	restricted_desc = "Veteran Ranger"
 	restricted_roles = "NCR Veteran Ranger"
 	cost = 8
@@ -150,13 +151,13 @@
 
 // Generally iconic items
 
-/*datum/gear/supermutant/weapon
+datum/gear/supermutant/weapon
 	name = "Sledgehammer"
 	path = /obj/item/twohanded/sledgehammer
 	cost = 4
+	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_GENERAL
 
 /datum/gear/supermutant/weapon/ranged
 	name = "Hunting Rifle"
 	path = /obj/item/gun/ballistic/rifle/remington
 
-*/
