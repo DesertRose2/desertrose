@@ -2,6 +2,22 @@
 "dx" = (
 /turf/open/transparent/openspace,
 /area/f13/building)
+"dC" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"ex" = (
+/obj/structure/table,
+/obj/item/crafting/coffee_pot,
+/obj/structure/sign/poster/prewar/protectron{
+	pixel_y = 32
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "fz" = (
 /obj/structure/simple_door/house,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -9,6 +25,22 @@
 /area/f13/building)
 "fJ" = (
 /turf/closed/wall/f13/ruins,
+/area/f13/building)
+"gc" = (
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"gw" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant"
+	},
+/obj/machinery/light/broken,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/building)
 "gM" = (
 /turf/open/indestructible/ground/outside/dirt,
@@ -19,14 +51,45 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"ir" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1;
+	termtag = "Business"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "iG" = (
 /obj/structure/closet/cabinet/anchored,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"jp" = (
+/obj/structure/table/reinforced,
+/obj/item/folder/yellow,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"jt" = (
+/obj/structure/chair/office/dark,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "jN" = (
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"kp" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/building)
 "kr" = (
 /obj/machinery/chem_dispenser,
@@ -39,6 +102,13 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"lf" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/ammo/shotgun,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
 "ls" = (
@@ -58,6 +128,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"mu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "mO" = (
 /obj/structure/table,
 /turf/open/floor/f13{
@@ -72,12 +149,44 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"nz" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "nU" = (
 /turf/closed/wall/f13/store,
+/area/f13/building)
+"nW" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/building)
 "nX" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
+	},
+/area/f13/building)
+"og" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1;
+	termtag = "Business"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"ou" = (
+/obj/structure/simple_door/room,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
 "pk" = (
@@ -88,9 +197,37 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"pI" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "qS" = (
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"rS" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/ammo/shotgun,
+/obj/item/reagent_containers/food/condiment/pack/coffee,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"rY" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
 "sq" = (
@@ -98,7 +235,29 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
+"sz" = (
+/obj/structure/chair/comfy/beige,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"sO" = (
+/obj/structure/table,
+/obj/item/folder/red,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "tS" = (
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"ud" = (
+/obj/effect/spawner/lootdrop/druggie_pill/no_turf,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -125,6 +284,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"vW" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "we" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
@@ -145,11 +311,20 @@
 "xW" = (
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
+"zg" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "zi" = (
 /obj/structure/chalkboard,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
+/area/f13/building)
+"zx" = (
+/turf/closed/wall/f13/wood/interior,
 /area/f13/building)
 "zK" = (
 /obj/machinery/chem_heater,
@@ -160,12 +335,38 @@
 "AM" = (
 /turf/closed/wall/f13/ruins,
 /area/f13/wasteland)
+"Cc" = (
+/obj/structure/chair/office/dark,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"DO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "EU" = (
 /obj/structure/chair/office{
 	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"Fn" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant"
+	},
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
 "GD" = (
@@ -204,6 +405,14 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Mt" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/cigars_cases,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Nz" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
@@ -227,6 +436,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Or" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Ot" = (
 /obj/structure/rack,
 /obj/item/cane,
@@ -243,10 +459,28 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Qr" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "QA" = (
 /obj/structure/closet/crate/freezer/blood/anchored,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"QE" = (
+/obj/machinery/photocopier,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
 "QT" = (
@@ -254,6 +488,29 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/wasteland)
+"QW" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"Rl" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/armor/costumes,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"RD" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 1;
+	termtag = "Business"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "RF" = (
 /turf/closed/wall/f13/store{
 	desc = "A pre-War wall made of solid concrete.";
@@ -271,10 +528,36 @@
 "Sk" = (
 /turf/open/transparent/openspace,
 /area/f13/legion)
+"SQ" = (
+/obj/structure/table,
+/obj/structure/fluff/paper/stack,
+/obj/effect/spawner/lootdrop/cig_packs,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"Ua" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"VC" = (
+/obj/structure/table,
+/obj/item/pen/fourcolor,
+/obj/item/pen,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Wj" = (
 /obj/structure/simple_door/interior,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"Wv" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/wood/interior,
 /area/f13/building)
 "Xs" = (
 /obj/structure/safe,
@@ -282,9 +565,29 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"XR" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "XZ" = (
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
+"YC" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"YJ" = (
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Zb" = (
 /obj/machinery/door/airlock/silver,
 /turf/open/floor/f13{
@@ -28989,11 +29292,11 @@ ls
 RF
 RF
 dx
+dC
 tS
-tS
-tS
-tS
-tS
+zx
+rY
+SQ
 RF
 ls
 ls
@@ -29246,11 +29549,11 @@ ls
 RF
 RF
 dx
-tS
-tS
-tS
-tS
-tS
+dC
+dC
+dC
+QW
+og
 RF
 ls
 ls
@@ -29503,11 +29806,11 @@ ls
 RF
 RF
 RF
-tS
-tS
-tS
-tS
-tS
+DO
+dC
+Wv
+YC
+sO
 RF
 ls
 ls
@@ -29758,13 +30061,13 @@ ls
 ls
 ls
 RF
-tS
-tS
-tS
-tS
-tS
-tS
-tS
+VC
+QE
+dC
+gw
+zx
+zx
+zx
 RF
 ls
 ls
@@ -30015,13 +30318,13 @@ ls
 ls
 ls
 RF
+gc
+dC
+mu
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+zx
+rY
+gc
 RF
 ls
 ls
@@ -30272,13 +30575,13 @@ ls
 ls
 ls
 RF
-tS
-tS
-tS
-tS
-tS
-tS
-tS
+rS
+dC
+dC
+dC
+dC
+jt
+ir
 RF
 ls
 ls
@@ -30529,13 +30832,13 @@ ls
 ls
 ls
 RF
+ex
+DO
+dC
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+zx
+YC
+Rl
 RF
 ls
 ls
@@ -30786,13 +31089,13 @@ ls
 ls
 ls
 RF
-tS
-tS
-tS
-tS
-tS
-tS
-tS
+zg
+dC
+dC
+Fn
+zx
+zx
+zx
 RF
 ls
 ls
@@ -31043,13 +31346,13 @@ ls
 ls
 ls
 RF
+zx
+Wv
+dC
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+zx
+rY
+lf
 RF
 ls
 ls
@@ -31300,13 +31603,13 @@ ls
 ls
 ls
 RF
+nz
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+dC
+mu
+dC
+Cc
+ir
 RF
 ls
 ls
@@ -31557,13 +31860,13 @@ ls
 ls
 ls
 RF
-tS
-tS
-tS
-tS
-tS
-tS
-tS
+Ua
+XR
+Ua
+DO
+zx
+YC
+vW
 RF
 ls
 ls
@@ -31814,13 +32117,13 @@ ls
 ls
 ls
 RF
-tS
-tS
-tS
-tS
-tS
-tS
-tS
+jp
+sz
+RD
+Or
+zx
+zx
+zx
 RF
 ls
 ls
@@ -32071,13 +32374,13 @@ ls
 ls
 ls
 RF
+Mt
+ud
+dC
+dC
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+ou
+Qr
 RF
 ls
 ls
@@ -32328,13 +32631,13 @@ ls
 ls
 ls
 RF
+nW
+kp
 tS
-tS
-tS
-tS
-tS
-tS
-tS
+YJ
+nW
+zx
+pI
 RF
 ls
 ls
