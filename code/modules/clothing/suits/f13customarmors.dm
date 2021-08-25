@@ -5,6 +5,10 @@
 	icon_state = "mariarmor"
 	item_state = "mariarmor"
 
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/mari/update_icon_state()
+	icon_state = "marihelm[on]"
+	item_state = "marihelm[on]"
+
 //Custom item - svenja / John Thaxton
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
 	name = "modified patrol armor"
