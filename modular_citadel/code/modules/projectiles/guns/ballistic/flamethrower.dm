@@ -162,7 +162,7 @@
 	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
-	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
+	mag_type = /obj/item/ammo_box/magazine/internal/incinerator
 	zoomable = FALSE
 	can_attachments = FALSE
 	casing_ejector = TRUE
