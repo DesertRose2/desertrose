@@ -144,7 +144,7 @@
 	name = "Mutant Bracer"
 	path = /obj/item/clothing/gloves/f13/mutie
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_GLOVES
-	cost = 2
+	cost = 1
 
 /datum/gear/supermutant/gloves/mk2
 	name = "Reinforced Mutant Bracers"
