@@ -20,6 +20,7 @@
 	path = /obj/item/clothing/shoes/f13/mutie/boots
 
 /datum/gear/supermutant/shoes/boots/dark
+	name = "Dark Boots"
 	path = /obj/item/clothing/shoes/f13/mutie/boots/dark
 
 /datum/gear/supermutant/shoes/ncr
@@ -42,6 +43,7 @@
 						)
 
 /datum/gear/supermutant/shoes/ncr/ranger
+	name = "Ranger Boots"
 	path = /obj/item/clothing/shoes/f13/mutie/boots/ncr/ranger
 	restricted_desc = "Rangers"
 	restricted_roles = list(
@@ -63,6 +65,7 @@
 	cost = 5
 
 /datum/gear/supermutant/suit/armour/reinforced
+	name = "Reinforced Armour"
 	path = /obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
 	cost = 7
 
@@ -144,9 +147,11 @@
 	cost = 2
 
 /datum/gear/supermutant/gloves/mk2
+	name = "Reinforced Mutant Bracers"
 	path = /obj/item/clothing/gloves/f13/mutie/mk2
 
 /datum/gear/supermutant/gloves/sign
+	name = "Mutant Signs"
 	path = /obj/item/clothing/gloves/f13/mutie/sign
 
 // Generally iconic items
