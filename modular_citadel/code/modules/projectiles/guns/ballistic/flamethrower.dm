@@ -165,3 +165,4 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
 	zoomable = FALSE
 	can_attachments = FALSE
+	casing_ejector = TRUE
