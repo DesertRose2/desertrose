@@ -2,11 +2,11 @@
 	category = LOADOUT_CATEGORY_SMUTANT
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_GENERAL
 	slot = SLOT_IN_BACKPACK
-	/*ckeywhitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
+	ckeywhitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04"
-					)*/
+					)
 
 // Shoes
 
