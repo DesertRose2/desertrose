@@ -530,12 +530,12 @@
 		/datum/reagent/consumable/tea/arnold_palmer,
 		/datum/reagent/consumable/peachjuice,
 		/datum/reagent/consumable/parsnipjuice,
+		/datum/reagent/consumable/watermelonjuice
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/applejuice,
 		/datum/reagent/consumable/carrotjuice,
 		/datum/reagent/consumable/pumpkinjuice,
-		/datum/reagent/consumable/watermelonjuice,
 		/datum/reagent/consumable/bungojuice,
 		/datum/reagent/consumable/aloejuice
 	)
