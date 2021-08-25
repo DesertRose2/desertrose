@@ -26,7 +26,7 @@
 	name = "incinerator fuel tank"
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower/incinerator
 	caliber = "fuel"
-	max_ammo = 12
+	max_ammo = 8
 
 //Deathclaw Bow Ammo
 /obj/item/ammo_box/magazine/internal/bonebow

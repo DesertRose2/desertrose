@@ -98,10 +98,16 @@
 
 /datum/gear/supermutant/suit/armour/ncr/ranger/vet
 	name = "Veteran Ranger Armour"
-	path = /obj/item/modkit/riotgear/mutievet
+	path = /obj/item/storage/box/large/custom_kit/mutievet
 	restricted_desc = "Veteran Ranger"
 	restricted_roles = "NCR Veteran Ranger"
 	cost = 8
+
+//Mutant Veteran Ranger kit
+/obj/item/storage/box/large/custom_kit/mutievet/PopulateContents()
+	new /obj/item/modkit/riotgear/mutievet
+	new /obj/item/modkit/riotgear_helmet/mutievet
+
 
 // Uniforms
 

@@ -166,3 +166,4 @@
 	zoomable = FALSE
 	can_attachments = FALSE
 	casing_ejector = TRUE
+	fire_delay = 7
