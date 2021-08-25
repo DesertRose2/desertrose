@@ -24,7 +24,7 @@
 
 /obj/item/ammo_box/magazine/internal/incinerator
 	name = "incinerator fuel tank"
-	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
+	ammo_type = /obj/item/ammo_casing/caseless/flamethrower/incinerator
 	caliber = "fuel"
 	max_ammo = 12
 
