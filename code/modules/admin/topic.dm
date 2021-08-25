@@ -2947,72 +2947,60 @@
 	usr << browse(dat, "window=f_secret")
 
 /datum/admins/proc/makeMentor(ckey)
-	if(!usr.client)
-		return
-	if (!check_rights(0))
-		return
-	if(!ckey)
-		return
-	var/client/C = GLOB.directory[ckey]
-	if(C)
-		if(check_rights_for(C, R_ADMIN,0))
-			to_chat(usr, "<span class='danger'>The client chosen is an admin! Cannot mentorize.</span>")
-			return
-	if(SSdbcore.Connect())
-		var/datum/DBQuery/query_get_mentor = SSdbcore.NewQuery(
-			"SELECT id FROM [format_table_name("mentor")] WHERE ckey = :ckey",
-			list("ckey" = ckey)
-		)
-		if(!query_get_mentor.warn_execute())
-			qdel(query_get_mentor)
-			return
-		if(query_get_mentor.NextRow())
-			to_chat(usr, "<span class='danger'>[ckey] is already a mentor.</span>")
-			qdel(query_get_mentor)
-			return
-		qdel(query_get_mentor)
-		var/datum/DBQuery/query_add_mentor = SSdbcore.NewQuery("INSERT INTO `[format_table_name("mentor")]` (`id`, `ckey`) VALUES (null, :ckey)", list("ckey" = ckey))
-		if(!query_add_mentor.warn_execute())
-			return
-		var/datum/DBQuery/query_add_admin_log = SSdbcore.NewQuery({"
-			INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime`, `round_id` ,`adminckey` ,`adminip` ,`log`, `target`)
-			VALUES (NULL , NOW( ), :round_id, :adminckey, :addr, CONCAT('Added new mentor ', :mentorkey));"},
-			list("adminckey" = usr.ckey, "addr" = usr.client.address, "round_id" = GLOB.round_id, "mentorkey" = ckey)
-		)
-		if(!query_add_admin_log.warn_execute())
-			qdel(query_add_admin_log)
-			return
-		qdel(query_add_admin_log)
-	else
-		to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
-	new /datum/mentors(ckey)
-	to_chat(usr, "<span class='adminnotice'>New mentor added.</span>")
+    if(!usr.client)
+        return
+    if (!check_rights(0))
+        return
+    if(!ckey)
+        return
+    var/client/C = GLOB.directory[ckey]
+    if(C)
+        if(check_rights_for(C, R_ADMIN,0))
+            to_chat(usr, "<span class='danger'>The client chosen is an admin! Cannot mentorize.</span>")
+            return
+    if(SSdbcore.Connect())
+        var/datum/db_query/query_get_mentor = SSdbcore.NewQuery(
+            "SELECT id FROM [format_table_name("mentor")] WHERE ckey = :ckey",
+            list("ckey" = ckey)
+        )
+        if(!query_get_mentor.warn_execute())
+            return
+        if(query_get_mentor.NextRow())
+            to_chat(usr, "<span class='danger'>[ckey] is already a mentor.</span>")
+            return
+        var/datum/db_query/query_add_mentor = SSdbcore.NewQuery("INSERT INTO `[format_table_name("mentor")]` (`id`, `ckey`) VALUES (null, '[ckey]')")
+        if(!query_add_mentor.warn_execute())
+            return
+        var/datum/db_query/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Added new mentor [ckey]');")
+        if(!query_add_admin_log.warn_execute())
+            return
+    else
+        to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
+    new /datum/mentors(ckey)
+    to_chat(usr, "<span class='adminnotice'>New mentor added.</span>")
 
 /datum/admins/proc/removeMentor(ckey)
-	if(!usr.client)
-		return
-	if (!check_rights(0))
-		return
-	if(!ckey)
-		return
-	var/client/C = GLOB.directory[ckey]
-	if(C)
-		if(check_rights_for(C, R_ADMIN,0))
-			to_chat(usr, "<span class='danger'>The client chosen is an admin, not a mentor! Cannot de-mentorize.</span>")
-			return
-		C.remove_mentor_verbs()
-		C.mentor_datum = null
-		GLOB.mentors -= C
-	if(SSdbcore.Connect())
-		var/datum/DBQuery/query_remove_mentor = SSdbcore.NewQuery(
-			"DELETE FROM [format_table_name("mentor")] WHERE ckey = :ckey",
-			list("ckey" = ckey)
-		)
-		if(!query_remove_mentor.warn_execute())
-			return
-		var/datum/DBQuery/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Removed mentor [ckey]');")
-		if(!query_add_admin_log.warn_execute())
-			return
-	else
-		to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
-	to_chat(usr, "<span class='adminnotice'>Mentor removed.</span>")
+    if(!usr.client)
+        return
+    if (!check_rights(0))
+        return
+    if(!ckey)
+        return
+    var/client/C = GLOB.directory[ckey]
+    if(C)
+        if(check_rights_for(C, R_ADMIN,0))
+            to_chat(usr, "<span class='danger'>The client chosen is an admin, not a mentor! Cannot de-mentorize.</span>")
+            return
+        C.remove_mentor_verbs()
+        C.mentor_datum = null
+        GLOB.mentors -= C
+    if(SSdbcore.Connect())
+        var/datum/db_query/query_remove_mentor = SSdbcore.NewQuery("DELETE FROM [format_table_name("mentor")] WHERE ckey = '[ckey]'")
+        if(!query_remove_mentor.warn_execute())
+            return
+        var/datum/db_query/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Removed mentor [ckey]');")
+        if(!query_add_admin_log.warn_execute())
+            return
+    else
+        to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
+    to_chat(usr, "<span class='adminnotice'>Mentor removed.</span>")
