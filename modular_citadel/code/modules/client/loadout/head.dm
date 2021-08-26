@@ -85,6 +85,11 @@
 	name = "Wide red hat"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/widered
+	
+/datum/gear/head/bowlerhat
+	name = "Bowler hat"
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
+	path = /obj/item/clothing/head/bowler
 
 /datum/gear/head/ncr_cap
 	name = "NCR garrison cap"
