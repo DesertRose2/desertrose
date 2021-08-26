@@ -516,26 +516,36 @@
 		/datum/reagent/consumable/cherryjelly,
 		/datum/reagent/consumable/sol_dry,
 		/datum/reagent/consumable/bawls,
-		/datum/reagent/consumable/vim
-
+		/datum/reagent/consumable/vim,
+		/datum/reagent/consumable/buzz_fuzz
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
 		/datum/reagent/consumable/berryjuice,
 		/datum/reagent/consumable/strawberryjuice,
-		/datum/reagent/consumable/bluecherryjelly
+		/datum/reagent/consumable/bluecherryjelly,
+		/datum/reagent/consumable/grey_bull,
+		/datum/reagent/consumable/monkey_energy,
+		/datum/reagent/consumable/lemonade,
+		/datum/reagent/consumable/tea/arnold_palmer,
+		/datum/reagent/consumable/peachjuice,
+		/datum/reagent/consumable/parsnipjuice,
+		/datum/reagent/consumable/watermelonjuice
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/applejuice,
 		/datum/reagent/consumable/carrotjuice,
 		/datum/reagent/consumable/pumpkinjuice,
-		/datum/reagent/consumable/watermelonjuice
+		/datum/reagent/consumable/bungojuice,
+		/datum/reagent/consumable/aloejuice
 	)
 	upgrade_reagents3 = list(
 		/datum/reagent/drug/mushroomhallucinogen,
 		/datum/reagent/consumable/nothing,
 		/datum/reagent/consumable/laughter,
-		/datum/reagent/consumable/peachjuice
+		/datum/reagent/consumable/blumpkinjuice
+		
+
 	)
 	emagged_reagents = list(
 		/datum/reagent/toxin/mindbreaker,
@@ -599,7 +609,8 @@
 		/datum/reagent/consumable/ethanol/changelingsting,
 		/datum/reagent/consumable/ethanol/alexander,
 		/datum/reagent/consumable/clownstears,
-		/datum/reagent/consumable/ethanol/beer/green
+		/datum/reagent/consumable/ethanol/beer/green,
+		/datum/reagent/consumable/ethanol/mead
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/ethanol/moonshine,
