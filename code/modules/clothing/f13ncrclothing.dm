@@ -478,6 +478,12 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
 
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
+	name = "mutant ranger combat helmet"
+	icon_state = "mutie_vet_ranger"
+	item_state = "mutie_vet_ranger"
+
+
 //Armours
 
 /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
@@ -519,7 +525,7 @@
 	item_state = "mutie_ranger_armour"
 
 /obj/item/clothing/suit/armor/f13/rangercombat/mutie
-	name = "veteran mutant ranger combat armor"
+	name = "mutant ranger combat armor"
 	icon_state = "mutie_vet_ranger"
 	item_state = "mutie_vet_ranger"
 

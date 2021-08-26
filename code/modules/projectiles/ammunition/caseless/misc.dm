@@ -30,3 +30,8 @@
 	projectile_type = /obj/item/projectile/incendiary/flamethrower
 	pellets = 3
 	variance = 20
+
+/obj/item/ammo_casing/caseless/flamethrower/incinerator
+	projectile_type = /obj/item/projectile/incendiary/flamethrower/incinerator
+	pellets = 1
+	variance = 5
