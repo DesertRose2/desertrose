@@ -62,6 +62,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
+"acy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/structure/window/reinforced/tinted,
+/turf/open/floor/plating/f13,
+/area/f13/bunker)
 "acL" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor5-old"
@@ -87,10 +92,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "aer" = (
-/mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/venus_human_trap{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "aeH" = (
@@ -124,16 +130,20 @@
 /area/f13/bunker)
 "agM" = (
 /obj/structure/bed/oldalt,
-/mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/venus_human_trap{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "ahh" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/mob/living/simple_animal/hostile/jungle/mega_arachnid,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/jungle/mega_arachnid{
+	health = 450;
+	maxHealth = 450
+	},
 /turf/open/water,
 /area/f13/bunker)
 "aim" = (
@@ -163,16 +173,18 @@
 "akt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/door_assembly/door_assembly_wood{
-	anchored = 1
+	anchored = 1;
+	max_integrity = 10
 	},
 /turf/open/water,
 /area/f13/bunker)
 "akw" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/venus_human_trap{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "akF" = (
@@ -262,7 +274,8 @@
 "atS" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
+	health = 150;
+	maxHealth = 150
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
@@ -411,8 +424,8 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "aIu" = (
-/obj/machinery/vending/robotics,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "aIS" = (
@@ -462,8 +475,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "aLh" = (
-/mob/living/simple_animal/hostile/jungle/mega_arachnid,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/jungle/mega_arachnid{
+	health = 450;
+	maxHealth = 450
+	},
 /turf/open/water,
 /area/f13/bunker)
 "aLQ" = (
@@ -502,10 +518,11 @@
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/venus_human_trap{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "aTC" = (
@@ -696,20 +713,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "big" = (
-/obj/structure/door_assembly/door_assembly_wood{
-	anchored = 1
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/door_assembly/door_assembly_wood{
+	anchored = 1;
+	max_integrity = 10
+	},
 /turf/open/water,
 /area/f13/bunker)
 "bje" = (
-/obj/machinery/door/airlock/wood{
-	name = "Bathrooms"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/wood,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "bjy" = (
@@ -791,7 +807,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "bqE" = (
-/mob/living/simple_animal/hostile/jungle/leaper,
+/mob/living/simple_animal/hostile/jungle/leaper{
+	desc = "A massive beast that spits out highly pressurized bubbles containing a unique toxin, knocking down its prey and then crushing it with its girth.";
+	health = 500;
+	maxHealth = 500
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
@@ -1033,14 +1053,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "bKE" = (
-/obj/machinery/door/airlock{
-	name = "Hydroponics";
-	req_one_access_txt = "31"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "bLi" = (
@@ -1055,7 +1074,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/securitron,
+/mob/living/simple_animal/hostile/handy/securitron/nsb,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "bMR" = (
@@ -1684,11 +1703,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "deZ" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Generator Room";
-	req_access_txt = "31"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/engineering{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "dfc" = (
@@ -1918,17 +1936,6 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
-"dwP" = (
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "1"
-	},
-/obj/structure/spacevine{
-	name = "vines"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
-/area/f13/bunker)
 "dxB" = (
 /obj/structure/decoration/hatch{
 	dir = 8
@@ -2020,7 +2027,6 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/circuitboard/machine/mechfab,
 /obj/item/stack/crafting/electronicparts/three,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
@@ -2710,7 +2716,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/f13/vault,
-/obj/item/clothing/shoes/jackboots,
 /turf/open/water,
 /area/f13/bunker)
 "eVd" = (
@@ -2817,7 +2822,10 @@
 /area/f13/bunker)
 "fdN" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jungle/seedling,
+/mob/living/simple_animal/hostile/jungle/seedling{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "fdZ" = (
@@ -2875,11 +2883,11 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/vaultdoor{
 	icon_state = "open";
 	name = "busted vault door"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "fiJ" = (
@@ -2934,14 +2942,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "fkA" = (
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "1"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "fnD" = (
@@ -3102,20 +3107,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
-/turf/open/floor/plating,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "fAA" = (
 /obj/structure/reagent_dispensers/barrel,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"fBl" = (
-/obj/machinery/door/airlock/security{
-	name = "Barracks";
-	req_access_txt = "1"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "fBy" = (
 /obj/machinery/shower{
@@ -3155,11 +3152,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
 "fGA" = (
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "1"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "fHR" = (
@@ -3496,14 +3490,11 @@
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "gkv" = (
-/obj/machinery/door/airlock/security{
-	name = "Barracks";
-	req_access_txt = "1"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "glo" = (
@@ -3597,8 +3588,10 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/sentrybot{
 	color = "#FFFF00";
+	faction = list("raider");
 	harm_intent_damage = 10;
 	health = 400;
+	maxHealth = 400;
 	name = "legendary sentry bot";
 	obj_damage = 100
 	},
@@ -3684,11 +3677,11 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "gzk" = (
-/obj/machinery/door/airlock,
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "gzu" = (
@@ -3980,6 +3973,7 @@
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
 /turf/open/floor/wood,
 /area/f13/bunker)
 "gVC" = (
@@ -4016,13 +4010,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
-/area/f13/bunker)
-"gYg" = (
-/obj/machinery/vending/wallmed,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/f13vault{
-	icon_state = "2-i"
-	},
 /area/f13/bunker)
 "gYy" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -4318,7 +4305,8 @@
 /area/f13/caves)
 "hxx" = (
 /mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
+	health = 150;
+	maxHealth = 150
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -4386,7 +4374,10 @@
 "hBD" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/jungle/seedling,
+/mob/living/simple_animal/hostile/jungle/seedling{
+	health = 150;
+	maxHealth = 150
+	},
 /turf/open/water,
 /area/f13/bunker)
 "hBG" = (
@@ -4598,11 +4589,8 @@
 	},
 /area/f13/bunker)
 "hWj" = (
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "1"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "hXU" = (
@@ -5155,18 +5143,6 @@
 	name = "temple wall"
 	},
 /area/f13/bunker)
-"iJa" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/radiation,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/turf/open/floor/plasteel/caution{
-	dir = 1
-	},
-/area/f13/radiation)
 "iJz" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -5298,17 +5274,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
-"iTR" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/radiation,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/turf/open/floor/plasteel/caution{
-	dir = 1
-	},
-/area/f13/radiation)
 "iUl" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -5379,6 +5344,7 @@
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/small/table,
+/obj/effect/spawner/lootdrop/f13/attachments,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "iYZ" = (
@@ -5408,9 +5374,12 @@
 	},
 /area/f13/bunker)
 "jaY" = (
-/obj/machinery/smartfridge/food,
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cafeteria,
+/obj/item/clothing/shoes/jackboots,
+/turf/open/water,
 /area/f13/bunker)
 "jcY" = (
 /obj/structure/barricade/wooden/strong,
@@ -5901,15 +5870,16 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/sentrybot{
 	color = "#FFFF00";
 	faction = list("raider");
 	harm_intent_damage = 10;
 	health = 400;
+	maxHealth = 400;
 	name = "legendary sentry bot";
 	obj_damage = 100
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "jZk" = (
@@ -6079,7 +6049,7 @@
 /area/f13/bunker)
 "kol" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/structure/window/reinforced/tinted,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "kot" = (
@@ -6102,9 +6072,6 @@
 	name = "overseer button"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/spacevine{
-	name = "vines"
-	},
 /turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
 "kqy" = (
@@ -6246,10 +6213,6 @@
 /area/f13/bunker)
 "kEr" = (
 /obj/structure/table,
-/obj/item/soap{
-	pixel_x = -1;
-	pixel_y = 4
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/defibrillator/compact/combat,
 /obj/item/stock_parts/cell/high,
@@ -6274,12 +6237,8 @@
 	},
 /area/f13/bunker)
 "kFE" = (
-/obj/machinery/door/airlock/command{
-	locked = 1;
-	name = "Chief of Security's Quarters";
-	req_access_txt = "19"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command/glass,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "kFL" = (
@@ -6326,7 +6285,7 @@
 "kMC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/structure/window/reinforced/tinted,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "kML" = (
@@ -6881,7 +6840,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/door_assembly/door_assembly_wood{
-	anchored = 1
+	anchored = 1;
+	max_integrity = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
@@ -7052,13 +7012,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/bunker)
 "mlI" = (
-/obj/machinery/door/airlock{
-	name = "Gym"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "mlO" = (
@@ -7847,6 +7805,10 @@
 /area/f13/bunker)
 "nDK" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/structure/closet/crate/radiation,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/plasteel/caution{
 	dir = 9
 	},
@@ -7914,6 +7876,11 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/radiation,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/structure/closet/crate/radiation,
+/obj/structure/closet/crate/radiation,
 /turf/open/floor/plasteel/caution{
 	dir = 1
 	},
@@ -8216,8 +8183,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /obj/item/clothing/under/f13/vault,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/reagent_containers/food/drinks/flask/survival,
 /turf/open/water,
 /area/f13/bunker)
 "ogr" = (
@@ -8876,8 +8841,8 @@
 /area/f13/bunker)
 "ppu" = (
 /obj/structure/wreck/trash/machinepile,
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "ppF" = (
@@ -9662,11 +9627,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "qCP" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Chief of Security";
-	req_access_txt = "19"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command/glass,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "qCV" = (
@@ -9799,9 +9761,8 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/machinery/door/airlock/medical,
-/obj/machinery/door/airlock/medical,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/medical,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
 "qOp" = (
@@ -10069,6 +10030,11 @@
 "rog" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"roO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/drinks/flask/survival,
+/turf/open/water,
+/area/f13/bunker)
 "rpl" = (
 /obj/structure/sign/poster/prewar/protectron,
 /obj/effect/decal/cleanable/dirt,
@@ -10187,12 +10153,13 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "ryV" = (
-/obj/structure/door_assembly/door_assembly_wood{
-	anchored = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spacevine{
 	name = "vines"
+	},
+/obj/structure/door_assembly/door_assembly_wood{
+	anchored = 1;
+	max_integrity = 10
 	},
 /turf/open/water,
 /area/f13/bunker)
@@ -10808,8 +10775,11 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/mob/living/simple_animal/hostile/jungle/mega_arachnid,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/jungle/mega_arachnid{
+	health = 450;
+	maxHealth = 450
+	},
 /turf/open/water,
 /area/f13/bunker)
 "sDY" = (
@@ -11390,11 +11360,8 @@
 /turf/open/water,
 /area/f13/bunker)
 "tLS" = (
-/obj/machinery/door/airlock/command{
-	name = "Overseer Office";
-	req_access_txt = "19"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command/glass,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "tMh" = (
@@ -11535,11 +11502,10 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/machinery/door/airlock/engineering{
-	name = "Generator Room";
-	req_access_txt = "31"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/engineering{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "udY" = (
@@ -11935,11 +11901,8 @@
 	},
 /area/f13/bunker)
 "uRn" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Overseer Office";
-	req_access_txt = "19"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command/glass,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "uRv" = (
@@ -12119,9 +12082,9 @@
 	},
 /area/f13/bunker)
 "viF" = (
-/obj/structure/table/reinforced,
 /obj/structure/wreck/trash/machinepiletwo,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "viI" = (
@@ -12206,11 +12169,8 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "voz" = (
-/obj/machinery/door/airlock/security/glass{
-	name = "Armory";
-	req_access_txt = "19"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "vpi" = (
@@ -12316,7 +12276,8 @@
 	pixel_y = 3
 	},
 /mob/living/simple_animal/hostile/venus_human_trap{
-	health = 150
+	health = 150;
+	maxHealth = 150
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -12400,7 +12361,6 @@
 /obj/structure/table,
 /obj/item/clothing/head/soft/black,
 /obj/item/clothing/under/color/black,
-/obj/item/clothing/shoes/wheelys,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
@@ -12946,6 +12906,7 @@
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "wxJ" = (
@@ -13006,6 +12967,10 @@
 	},
 /obj/machinery/light/broken,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/soap{
+	pixel_x = -1;
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "wBk" = (
@@ -13187,7 +13152,10 @@
 /area/f13/bunker)
 "wQi" = (
 /obj/structure/flora/rock/pile/largejungle,
-/mob/living/simple_animal/hostile/jungle/mega_arachnid,
+/mob/living/simple_animal/hostile/jungle/mega_arachnid{
+	health = 450;
+	maxHealth = 450
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
@@ -13280,7 +13248,6 @@
 "wWE" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/decal/cleanable/dirt,
@@ -13629,8 +13596,7 @@
 /area/f13/bunker)
 "xzA" = (
 /obj/machinery/door/airlock/command{
-	name = "Overseer's Quarters";
-	req_access_txt = "19"
+	locked = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
@@ -21070,7 +21036,7 @@ xsH
 xsH
 xsH
 xRz
-mtC
+jaY
 aer
 swU
 xRz
@@ -21337,7 +21303,7 @@ owz
 xRz
 pBf
 yaI
-yaI
+roO
 akP
 vpQ
 mei
@@ -21585,7 +21551,7 @@ xsH
 xsH
 xRz
 xRz
-akt
+big
 kMR
 xRz
 xRz
@@ -25944,7 +25910,7 @@ iKK
 lgm
 aGx
 aCL
-jaY
+xsH
 vId
 aWc
 mWs
@@ -26238,7 +26204,7 @@ vSG
 fPP
 xWE
 pnh
-ieI
+sbZ
 vAC
 umk
 vvf
@@ -26486,7 +26452,7 @@ pYa
 sWC
 sDf
 psY
-tLS
+uRn
 sLM
 sbZ
 sbZ
@@ -27012,7 +26978,7 @@ xRz
 rKn
 xRz
 xRz
-xyt
+acy
 dAl
 yfl
 ifg
@@ -28799,7 +28765,7 @@ nUO
 lyO
 nug
 xRz
-gYg
+xRz
 tiR
 gIc
 vAC
@@ -31115,7 +31081,7 @@ ncy
 wHl
 nKy
 nKy
-dwP
+gkv
 oTJ
 hiL
 xRz
@@ -32121,7 +32087,7 @@ xsH
 xsH
 xsH
 xsH
-iTR
+gAW
 hhp
 iDQ
 oZQ
@@ -32635,7 +32601,7 @@ xsH
 xsH
 xsH
 xsH
-iJa
+gAW
 hCt
 iSb
 hhp
@@ -32911,7 +32877,7 @@ hWj
 nKy
 dOD
 nKy
-dwP
+gkv
 nKy
 yjg
 fkA
@@ -33164,7 +33130,7 @@ xsH
 vAC
 vAC
 vAC
-dwP
+gkv
 yjg
 mRj
 yjg
@@ -34455,7 +34421,7 @@ xsH
 xsH
 xsH
 gkv
-fBl
+hWj
 xsH
 xsH
 xsH
