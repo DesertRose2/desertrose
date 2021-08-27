@@ -170,14 +170,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
-"akt" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/door_assembly/door_assembly_wood{
-	anchored = 1;
-	max_integrity = 10
-	},
-/turf/open/water,
-/area/f13/bunker)
 "akw" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/decal/cleanable/dirt,
@@ -7593,9 +7585,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "nll" = (
-/obj/machinery/door/airlock/public/glass{
-	req_access_txt = "31"
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -7605,6 +7594,7 @@
 	name = "Vault Blastdoor 1"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/public/glass,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "nlG" = (
@@ -7621,10 +7611,8 @@
 	},
 /area/f13/bunker)
 "nms" = (
-/obj/machinery/door/airlock{
-	name = "Bar Backroom"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock,
 /turf/open/floor/wood,
 /area/f13/bunker)
 "noS" = (
@@ -7959,10 +7947,8 @@
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
 "nQe" = (
-/obj/machinery/door/airlock{
-	name = "Custodial Closet"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/bunker)
 "nRS" = (
@@ -10107,7 +10093,8 @@
 /area/f13/bunker)
 "rvm" = (
 /mob/living/simple_animal/hostile/handy/sentrybot/chew/strong{
-	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser and covered in thick, vault blue armor plating, the name OVERseer scratched onto its front armor crudely, highlighted by small bits of gold paint. There seems to be an odd pack on the monstrosity of a sentry�s back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!";
+	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser and covered in thick, vault blue armor plating, the name OVERseer scratched onto its front armor crudely, highlighted by small bits of gold paint. There seems to be an odd pack on the monstrosity of a sentry's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!";
+	faction = list("raider","supermutant","jungle");
 	name = "OVERseer"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -10554,10 +10541,8 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "smD" = (
-/obj/machinery/door/airlock/command{
-	name = "Bathroom"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/command/glass,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -11358,11 +11343,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
-/area/f13/bunker)
-"tLS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/command/glass,
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "tMh" = (
 /obj/structure/window/reinforced{
