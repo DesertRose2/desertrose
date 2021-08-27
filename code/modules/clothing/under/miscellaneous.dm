@@ -555,6 +555,15 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/flowerdress
+	name = "Flower Dress"
+	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."
+	icon_state = "flowerdress"
+	item_state = "flowerdress"
+	item_color = "flowerdress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/janimaid
 	name = "maid uniform"
 	desc = "A simple maid uniform for housekeeping."

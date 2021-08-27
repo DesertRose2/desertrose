@@ -355,6 +355,21 @@
 	name = "Mariya Sankinova's belongings"
 	path = /obj/item/storage/box/large/custom_kit/mariya
 	ckeywhitelist = list("rebel0")
+	
+/datum/gear/donator/kits/katiemorgan/
+	name = "Katie Morgan's belongings"
+	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
+	ckeywhitelist = list("idiocityInc")
+	
+/datum/gear/donator/kits/bryanmonroe
+	name = "Bryan ''Aranesp'' Monroe's belongings"
+	path = /obj/item/storage/box/large/custom_kit/bryanmonroe
+	ckeywhitelist = list("elizabethdame")
+	
+/datum/gear/donator/kits/jayoh
+	name = "Jay-Oh's belongings"
+	path = /obj/item/storage/box/large/custom_kit/jayoh/
+	ckeywhitelist = list("Conormackgegore")
 
 //////////////////////////////
 ///Ranger items start here.///

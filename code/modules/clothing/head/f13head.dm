@@ -860,14 +860,21 @@
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+	
+/obj/item/clothing/head/helmet/f13/atomzealot
+	name = "zealot helmet"
+	desc = "(IV) The helmet of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
 
-
+/obj/item/clothing/head/helmet/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/flatranger
 	name = "NCR gambler ranger hat"
