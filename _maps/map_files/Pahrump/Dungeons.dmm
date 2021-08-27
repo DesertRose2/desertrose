@@ -518,10 +518,11 @@
 /turf/open/water,
 /area/f13/bunker)
 "aTC" = (
-/obj/structure/door_assembly/door_assembly_mai{
-	anchored = 1
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/door_assembly/door_assembly_mai{
+	anchored = 1;
+	max_integrity = 10
+	},
 /turf/open/water,
 /area/f13/bunker)
 "aTJ" = (
@@ -1406,11 +1407,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "crx" = (
-/obj/structure/door_assembly/door_assembly_mai{
-	anchored = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/timeddoor/sixtyminute,
+/obj/structure/door_assembly/door_assembly_mai{
+	anchored = 1;
+	max_integrity = 10
+	},
 /turf/open/water,
 /area/f13/bunker)
 "crK" = (
@@ -8395,7 +8397,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/door_assembly/door_assembly_mai{
-	anchored = 1
+	anchored = 1;
+	max_integrity = 10
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -9980,7 +9983,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/door_assembly/door_assembly_mai{
-	anchored = 1
+	anchored = 1;
+	max_integrity = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
@@ -12137,6 +12141,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/vault{
+	locked = 1;
 	req_access_txt = "1"
 	},
 /turf/open/floor/plating/tunnel,
