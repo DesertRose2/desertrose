@@ -15239,6 +15239,11 @@
 	icon_state = "horizontalbottombordertopleft"
 	},
 /area/f13/wasteland)
+"qEk" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "qED" = (
 /obj/item/clothing/suit/armor/f13/brahmin_leather_duster,
 /obj/item/clothing/head/helmet/f13/brahmincowboyhat,
@@ -20112,6 +20117,15 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland)
+"wgU" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "whZ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
@@ -25078,7 +25092,7 @@ efl
 aol
 nZp
 eEo
-rjM
+wgU
 iBA
 iBA
 iBA
@@ -25335,7 +25349,7 @@ efl
 aol
 aPJ
 kmQ
-rjM
+wgU
 iBA
 iBA
 iBA
@@ -25592,7 +25606,7 @@ efl
 qyB
 hPz
 hPz
-rjM
+wgU
 iBA
 iBA
 iBA
@@ -25844,7 +25858,7 @@ nYj
 wsz
 wsz
 ezu
-wsz
+qEk
 mce
 aol
 aol
