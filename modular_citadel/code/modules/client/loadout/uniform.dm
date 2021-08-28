@@ -156,6 +156,18 @@
 	name = "greaser's jumpskirt"
 	path = /obj/item/clothing/under/f13/vault/vcity/greaser/skirt
 
+/datum/gear/uniform/khans
+	name = "Great Khan shorts"
+	path = /obj/item/clothing/under/f13/khan/shorts
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "Great Khans"
+	restricted_roles = list("Great Khan",
+							"Genghis Khan")
+
+/datum/gear/uniform/khans/short
+	name = "Great Khan short shorts"
+	path = /obj/item/clothing/under/f13/khan/shorts/booty
+
 //
 
 /datum/gear/uniform/rustic
