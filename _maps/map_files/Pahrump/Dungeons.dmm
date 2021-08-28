@@ -7183,11 +7183,6 @@
 /obj/item/chair,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
-"mzt" = (
-/obj/machinery/vending/wardrobe/science_wardrobe,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/bunker)
 "mzE" = (
 /obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks,
@@ -22080,7 +22075,7 @@ vSG
 xRz
 tSZ
 akP
-mzt
+aIu
 fWM
 raC
 dre
@@ -24398,10 +24393,10 @@ vQx
 xRz
 pxB
 qHi
-xRz
-akP
-akP
-xRz
+xsH
+ayT
+ayT
+xsH
 hqp
 voz
 voz
@@ -24658,7 +24653,7 @@ dog
 xRz
 lId
 vAC
-akP
+ayT
 gWz
 nKy
 jAl
@@ -25172,7 +25167,7 @@ xEJ
 akP
 vAC
 imP
-xRz
+xsH
 xsH
 xsH
 xsH
@@ -25948,7 +25943,7 @@ xRz
 vKC
 vKC
 vKC
-xsH
+xRz
 duV
 xsH
 xsH
