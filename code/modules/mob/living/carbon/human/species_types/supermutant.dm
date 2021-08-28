@@ -4,7 +4,7 @@
 	id = "smutant"
 	say_mod = "yells"
 	limbs_id = "smutant"
-	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
+	species_traits = list(NOTRANSSTING, NOGENITALS, NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
 	whitelisted = 1
@@ -17,7 +17,8 @@
 	offset_features = list (
 		OFFSET_HEAD = list(1,5),
 		OFFSET_SUIT = list(0,0),
-		OFFSET_BELT = list(5,0)
+		OFFSET_BELT = list(5,0),
+		OFFSET_EYES = list(1,6)
 		)
 	punchstunthreshold = 20
 	use_skintones = 0
