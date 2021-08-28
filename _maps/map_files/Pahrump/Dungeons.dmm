@@ -1990,7 +1990,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "dDP" = (
-/obj/machinery/door/airlock/maintenance/abandoned,
+/obj/machinery/door/airlock/maintenance/abandoned{
+	locked = 1
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -3334,6 +3336,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"fZG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/radroach,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/bunker)
 "gab" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit/old,
@@ -4180,6 +4188,16 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"hoL" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/machinery/door/airlock/science{
+	locked = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/bunker)
 "hpf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/fo13colored/Red{
@@ -5394,6 +5412,12 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland)
+"jft" = (
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "jgI" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/f13/wood{
@@ -6149,9 +6173,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "kyi" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/water,
 /area/f13/bunker)
 "kBU" = (
@@ -6616,6 +6639,12 @@
 "lsO" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/f13/wood,
+/area/f13/bunker)
+"lth" = (
+/obj/structure/glowshroom/single,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/water,
 /area/f13/bunker)
 "luk" = (
 /turf/closed/mineral/random/high_chance,
@@ -7571,9 +7600,9 @@
 /turf/open/floor/plasteel,
 /area/f13/radiation)
 "nkt" = (
-/obj/effect/decal/cleanable/insectguts,
-/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/water,
 /area/f13/bunker)
 "nkM" = (
@@ -10541,7 +10570,9 @@
 /area/f13/bunker)
 "smD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -12292,6 +12323,11 @@
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
+/area/f13/bunker)
+"vye" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "vzk" = (
 /obj/structure/wreck/trash/machinepile,
@@ -21303,7 +21339,7 @@ suc
 xRz
 gLi
 tSZ
-mnN
+hoL
 fWM
 uCM
 gia
@@ -22575,9 +22611,9 @@ wwK
 vpQ
 aTC
 yaI
-nkt
-wBX
-kyi
+wrr
+yaI
+tLR
 jQj
 vwi
 xRz
@@ -22587,7 +22623,7 @@ xRz
 xRz
 xRz
 xRz
-tSZ
+vye
 akP
 qXt
 jlj
@@ -22816,10 +22852,10 @@ xsH
 xsH
 xRz
 xRz
-wBX
-wBX
+yaI
+yaI
 tLR
-wBX
+yaI
 vwi
 akP
 akP
@@ -22837,14 +22873,14 @@ akP
 akP
 xRz
 aLh
-yaI
-fPP
+kyi
+jft
 hvE
 tSZ
 tSZ
 oXi
 xRz
-tSZ
+vye
 akP
 aIu
 fWM
@@ -23073,8 +23109,8 @@ xsH
 xsH
 xxD
 yaI
-wBX
-wBX
+yaI
+yaI
 tLR
 xRz
 akP
@@ -23098,7 +23134,7 @@ xRz
 xRz
 xRz
 uNg
-tSZ
+vye
 rLZ
 xRz
 tSZ
@@ -23355,7 +23391,7 @@ akP
 akP
 xRz
 sjh
-tSZ
+vye
 ayN
 xRz
 tSZ
@@ -23585,8 +23621,8 @@ xsH
 xsH
 xsH
 xsH
-yaI
-jQj
+kyi
+lth
 xRz
 akP
 xxh
@@ -23615,7 +23651,7 @@ xRz
 dfS
 xRz
 xRz
-gTD
+fZG
 akP
 mEC
 gNy
@@ -23842,8 +23878,8 @@ xsH
 xsH
 xsH
 xsH
-tLR
-yaI
+nkt
+kyi
 akP
 kbR
 fPP
@@ -23869,9 +23905,9 @@ vpQ
 fPP
 sVf
 xRz
-tSZ
-tSZ
-tSZ
+vye
+vye
+vye
 tSZ
 akP
 fIu
@@ -24099,7 +24135,7 @@ mbg
 bRz
 wIv
 xsH
-tLR
+nkt
 xRz
 akP
 fPP
@@ -24128,7 +24164,7 @@ fPP
 xRz
 xRz
 tSZ
-ipc
+tSZ
 xRz
 ocL
 gXN
