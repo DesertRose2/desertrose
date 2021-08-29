@@ -42,7 +42,7 @@
 	visible_message("<span class='danger'>[L] [spawn_text] [src].</span>")
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
-	if(user.a_intent == INTENT_HARM)	
+	if(user.a_intent == INTENT_HARM)
 		to_chat(user, "<span class='warning'>You feel it is impossible to hit a hole!</span>")
 		return
 
@@ -61,11 +61,14 @@
 			to_chat(user, "<span class='warning'>You must stand still to build the cover!</span>")
 			return
 		R.use(4)
+
+		if(!covered)
+			new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
+			to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
+
 		covered = TRUE
 		covertype = /obj/item/stack/rods
 
-		new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
-		to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
 
 		var/image/rod_image = image(icon, icon_state = "rods")
 		add_overlay(rod_image)
@@ -86,14 +89,17 @@
 			to_chat(user, "<span class='warning'>You must stand still to build the cover!</span>")
 			return
 		W.use(4)
+
+		if(!covered)
+			new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
+			to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
+
 		covered = TRUE
 		covertype = /obj/item/stack/sheet/mineral/wood
 		var/image/plank_image = image(icon, icon_state = "planks")
 		add_overlay(plank_image)
 
-		new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
-		to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
-		
+
 		return
 
 	/*if(istype(I, /obj/item/crowbar))
@@ -115,15 +121,15 @@
 /obj/structure/nest/ghoul
 	name = "ghoul nest"
 	max_mobs = 2
-	mob_types = list(/mob/living/simple_animal/hostile/ghoul = 5, 
-					/mob/living/simple_animal/hostile/ghoul/reaver = 3, 
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul = 5,
+					/mob/living/simple_animal/hostile/ghoul/reaver = 3,
 					/mob/living/simple_animal/hostile/ghoul/glowing = 1)
 
 /obj/structure/nest/deathclaw
 	name = "deathclaw nest"
 	max_mobs = 1
 	spawn_time = 50 SECONDS
-	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 19, 
+	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 19,
 					/mob/living/simple_animal/hostile/deathclaw/mother = 1)
 
 /obj/structure/nest/scorpion
