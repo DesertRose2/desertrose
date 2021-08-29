@@ -355,17 +355,17 @@
 	name = "Mariya Sankinova's belongings"
 	path = /obj/item/storage/box/large/custom_kit/mariya
 	ckeywhitelist = list("rebel0")
-	
+
 /datum/gear/donator/kits/katiemorgan/
 	name = "Katie Morgan's belongings"
 	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
 	ckeywhitelist = list("idiocityInc")
-	
+
 /datum/gear/donator/kits/bryanmonroe
 	name = "Bryan ''Aranesp'' Monroe's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bryanmonroe
 	ckeywhitelist = list("elizabethdame")
-	
+
 /datum/gear/donator/kits/jayoh
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
@@ -376,7 +376,7 @@
 //////////////////////////////
 
 /datum/gear/donator/ranger4570bayonet
-	name = "45-70 Gov't Service Revolver"
+	name = "45-70 Gov't Service Revolver with fixed bayonet"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
 	ckeywhitelist = list("cythisisa",

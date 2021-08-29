@@ -553,6 +553,16 @@
 	item_color = "khan"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
 
+/obj/item/clothing/under/f13/khan/shorts
+	icon_state = "khan_short"
+	item_state = "khan_short"
+	item_color = "khan_short"
+
+/obj/item/clothing/under/f13/khan/shorts/booty
+	icon_state = "khan_booty"
+	item_state = "khan_booty"
+	item_color = "khan_booty"
+
 /obj/item/clothing/under/f13/chinese_khan
 	name = "modified great khan jumpsuit"
 	desc = "An ancient Chinese combat uniform, in use before the war, modified with parts of the uniform of the Great Khans - the flag of China is replaced by a small flame, stitched in with great care, with a much larger flame commonly seen on the front of Khan jackets being visible on the back of the jumpsuit"
