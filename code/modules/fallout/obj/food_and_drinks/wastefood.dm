@@ -34,7 +34,7 @@
 	id = /datum/reagent/consumable/ethanol/spiritcleanser
 	results = list(/datum/reagent/consumable/ethanol/spiritcleanser = 2)
 	required_reagents = list(/datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/ethanol/daturatea = 1)
-	
+
 /////PLANTS Fallout 13///////
 
 /obj/item/seeds/buffalogourd
@@ -380,7 +380,7 @@
 	icon_dead = "punga-dead"
 	icon_harvest = "punga-harvest"
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism, /datum/plant_gene/trait/repeated_harvest)
-	reagents_add = list(/datum/reagent/medicine/charcoal = 0.1, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/medicine/radaway = 0.05)
+	reagents_add = list(/datum/reagent/medicine/charcoal = 0.1, /datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/pungafruit
 	seed = /obj/item/seeds/punga
@@ -586,7 +586,7 @@
 	yield = 6
 	potency = 20
 	growthstages = 2
-	reagents_add = list(/datum/reagent/medicine/charcoal = 0.05, /datum/reagent/medicine/mutadone = 0.05)
+	reagents_add = list(/datum/reagent/medicine/radaway = 0.10, /datum/reagent/medicine/mutadone = 0.05)
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 
 /obj/item/reagent_containers/food/snacks/grown/fungus

@@ -560,8 +560,41 @@
 /obj/item/reagent_containers/food/snacks/grown/star_cactus
 	seed = /obj/item/seeds/star_cactus
 	name = "star cacti"
-	desc = "A spikey, round cluster of prickly star cacti. And no, it's not called a star cactus because it's in space."
+	desc = "A small cluster of prickly star-shaped cacti."
 	icon_state = "starcactus"
 	filling_color = "#1c801c"
 	foodtype = VEGETABLES
 	distill_reagent = /datum/reagent/consumable/ethanol/tequila
+	
+///Shrubs
+/obj/item/seeds/shrub
+	name = "pack of shrub seeds"
+	desc = "These seeds grow into hedge shrubs."
+	icon_state = "seed-shrub"
+	species = "shrub"
+	plantname = "Shrubbery"
+	product = /obj/item/grown/shrub
+	lifespan = 40
+	endurance = 30
+	maturation = 4
+	production = 6
+	yield = 2
+	instability = 10
+	growthstages = 3
+	reagents_add = list()
+	
+/obj/item/grown/shrub
+	seed = /obj/item/seeds/shrub
+	name = "shrub"
+	desc = "A shrubbery, it looks nice and it was only a few credits too. Plant it on the ground to grow a hedge, shrubbing skills not required."
+	icon_state = "shrub"
+	
+/obj/item/grown/shrub/attack_self(mob/user)
+//	var/turf/player_turf = get_turf(user)
+//	if(player_turf?.is_blocked_turf(TRUE))
+//		return FALSE
+	user.visible_message("<span class='danger'>[user] begins to plant \the [src]…</span>")
+	if(do_after(user, 8 SECONDS, target = user.drop_location(), progress = TRUE))
+		new /obj/structure/fluff/hedge/opaque(user.drop_location())
+		to_chat(user, "<span class='notice'>You plant \the [src].</span>")
+		qdel(src)

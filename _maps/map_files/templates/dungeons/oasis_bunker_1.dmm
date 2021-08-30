@@ -279,13 +279,10 @@
 	},
 /area/f13/radiation)
 "hD" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/syringe/medx,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
+/obj/structure/spider/stickyweb,
+/obj/effect/spawner/lootdrop/crate_spawner,
+/turf/open/floor/plating/tunnel,
+/area/f13/radiation)
 "iC" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
@@ -374,7 +371,6 @@
 "kl" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "kz" = (
@@ -528,19 +524,10 @@
 /area/f13/bunker)
 "pT" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
-/mob/living/simple_animal/hostile/radscorpion,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "pW" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/bunker)
-"qn" = (
-/obj/effect/decal/cleanable/blood/old,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
 /area/f13/bunker)
 "qy" = (
 /obj/structure/simple_door/metal/barred,
@@ -598,7 +585,9 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sz" = (
-/obj/structure/nest/ghoul,
+/mob/living/simple_animal/hostile/ghoul/glowing{
+	faction = list("hostile")
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sI" = (
@@ -629,7 +618,6 @@
 /area/f13/bunker)
 "tx" = (
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/syringe/medx,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
@@ -753,11 +741,6 @@
 /obj/effect/landmark/poster_spawner/prewar,
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/bunker)
-"xM" = (
-/obj/effect/decal/waste,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "xN" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -821,6 +804,7 @@
 /area/f13/bunker)
 "zH" = (
 /obj/structure/bed/mattress/pregame,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -862,9 +846,11 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "AK" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/indestructible/ground/inside/mountain,
+/mob/living/simple_animal/hostile/radscorpion/black,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/bunker)
 "BS" = (
 /obj/structure/barricade/wooden,
@@ -892,7 +878,6 @@
 /obj/structure/sign/warning/radiation{
 	pixel_y = -30
 	},
-/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -900,7 +885,6 @@
 /area/f13/bunker)
 "CY" = (
 /obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Do" = (
@@ -1004,18 +988,19 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/radiation)
-"Hj" = (
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "Hu" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "HI" = (
-/obj/effect/spawner/lootdrop/trash,
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/ghoul/legendary,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/bunker)
 "HJ" = (
 /obj/machinery/autolathe,
@@ -1267,7 +1252,7 @@
 /obj/item/paper,
 /obj/item/trash/coal,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -1333,7 +1318,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "PF" = (
-/mob/living/simple_animal/hostile/supermutant,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -1447,12 +1432,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "UM" = (
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/supermutant,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
+/mob/living/simple_animal/hostile/ghoul/legendary,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "UW" = (
 /obj/machinery/light/small,
@@ -1511,14 +1492,6 @@
 "Yu" = (
 /obj/structure/rack,
 /obj/item/tank/internals/anesthetic,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"YN" = (
-/obj/machinery/light/small,
-/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1768,7 +1741,7 @@ pW
 pW
 NJ
 NJ
-Uq
+UM
 Qi
 Oh
 pf
@@ -1859,7 +1832,7 @@ pf
 "}
 (8,1,1) = {"
 wR
-Xj
+hD
 OZ
 jc
 iK
@@ -1878,7 +1851,7 @@ Kz
 Kz
 NJ
 dI
-oE
+NJ
 KA
 NJ
 oP
@@ -1945,7 +1918,7 @@ Kz
 wR
 Xj
 Gw
-jc
+OZ
 Hu
 yC
 VE
@@ -2187,8 +2160,8 @@ pW
 pf
 pf
 pf
-au
-YN
+HI
+HQ
 pf
 Kz
 Kz
@@ -2223,7 +2196,7 @@ pf
 Kz
 pW
 Ok
-Hj
+Zr
 zH
 pW
 pW
@@ -2248,7 +2221,7 @@ Kz
 Kz
 pf
 KA
-AK
+yQ
 pj
 pf
 Kz
@@ -2291,7 +2264,7 @@ Kz
 pW
 pT
 NJ
-HI
+KA
 pW
 Kz
 Kz
@@ -2512,7 +2485,7 @@ oP
 Fy
 NM
 BX
-Hj
+NJ
 pW
 Kz
 pW
@@ -2692,7 +2665,7 @@ Kz
 Kz
 pf
 bp
-FQ
+bp
 pf
 Kz
 Kz
@@ -2710,13 +2683,13 @@ xN
 Ec
 wR
 jh
-UM
+bp
 NX
 mm
 xw
-hD
+SS
 bp
-gJ
+bp
 bp
 th
 oN
@@ -2875,7 +2848,7 @@ Kz
 zP
 Uq
 Uq
-xM
+xN
 wR
 wG
 tk
@@ -2883,7 +2856,7 @@ xv
 bp
 BX
 FZ
-gJ
+bp
 fm
 MM
 mh
@@ -2934,17 +2907,17 @@ au
 fm
 bp
 bp
-gZ
+bp
 bp
 BX
 bp
 bp
 Uq
-FQ
+bp
 pW
 pW
 bp
-FQ
+bp
 pf
 Kz
 Kz
@@ -3015,8 +2988,8 @@ gJ
 bp
 BX
 bp
+AK
 bp
-gZ
 xv
 NX
 cW
@@ -3041,8 +3014,8 @@ Kz
 Kz
 Kz
 bp
-gZ
-gZ
+bp
+bp
 bp
 BX
 bp
@@ -3095,7 +3068,7 @@ BX
 bp
 bp
 xv
-qn
+NX
 bp
 BX
 NX
@@ -3141,11 +3114,11 @@ bp
 bp
 wR
 bp
-gZ
 bp
 bp
 bp
-gZ
+bp
+bp
 wR
 Kz
 Kz

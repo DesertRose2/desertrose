@@ -1,6 +1,6 @@
 /obj/machinery/mecha_part_fabricator
 	icon = 'icons/obj/robotics.dmi'
-	icon_state = "fab-idle"
+	icon_state = "robot-fab-inactive"
 	name = "exosuit fabricator"
 	desc = "Nothing is being built."
 	density = TRUE
@@ -220,7 +220,7 @@
  * Adds the overlay to show the fab working and sets active power usage settings.
  */
 /obj/machinery/mecha_part_fabricator/proc/on_start_printing()
-	add_overlay("fab-active")
+	add_overlay("robot-fab-active")
 	use_power = ACTIVE_POWER_USE
 
 /**
@@ -229,7 +229,7 @@
  * Removes the overlay to show the fab working and sets idle power usage settings. Additionally resets the description and turns off queue processing.
  */
 /obj/machinery/mecha_part_fabricator/proc/on_finish_printing()
-	cut_overlay("fab-active")
+	cut_overlay("robot-fab-active")
 	use_power = IDLE_POWER_USE
 	desc = initial(desc)
 	process_queue = FALSE
@@ -642,7 +642,7 @@
 
 /obj/machinery/mecha_part_fabricator/proc/AfterMaterialInsert(item_inserted, id_inserted, amount_inserted)
 	var/datum/material/M = id_inserted
-	add_overlay("fab-load-[M.name]")
+	add_overlay("robot-fab-[M.name]-load")
 	addtimer(CALLBACK(src, /atom/proc/cut_overlay, "fab-load-[M.name]"), 10)
 
 /obj/machinery/mecha_part_fabricator/screwdriver_act(mob/living/user, obj/item/I)

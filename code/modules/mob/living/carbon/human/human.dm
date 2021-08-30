@@ -1269,3 +1269,6 @@
 
 /mob/living/carbon/human/species/ghoul
 	race = /datum/species/ghoul
+
+/mob/living/carbon/human/species/smutant
+	race = /datum/species/smutant

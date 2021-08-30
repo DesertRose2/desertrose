@@ -274,7 +274,7 @@
 */
 
 /datum/crafting_recipe/raiderpaconversion
-	name = "salvaged power armor to raider power armor conversion"
+	name = "Raider PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -285,7 +285,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/raiderpahelmconversion
-	name = "salvaged power armor helmet to raider power armor helmet conversion"
+	name = "Raider PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -295,8 +295,30 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/raiderpatot45b
+	name = "T45b Salvaged PA conversion"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/raiderpa  = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/raiderpahelmtot45bhelm
+	name = "T45b Salvaged PA helmet conversion"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 /datum/crafting_recipe/hotrodpaconversion
-	name = "salvaged power armor to hot rod power armor conversion"
+	name = "Hot Rod PA conversion"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -307,7 +329,7 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/hotrodpahelmconversion
-	name = "salvaged power armor helmet to hot rod power armor helmet conversion"
+	name = "Hot Rod PA helmet conversion"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/hotrod
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
@@ -316,6 +338,29 @@
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/Hotrodtot45bconversion
+	name = "T45b Salvaged PA conversion"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/hotrod  = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/hotrodpahelmtoT45bhelm
+	name = "T45b Salvaged PA helmet conversion"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/hotrod = 1,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/stack/crafting/electronicparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 
 /datum/crafting_recipe/armorkit
 	name = "armor kit"
@@ -1133,6 +1178,26 @@
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
+/datum/crafting_recipe/legionsalvagedarmorconversion
+	name = "Salvaged Legion power armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/legion
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/Legionhelmsalvagedarmorconversion
+	name = "Salvaged Legion power armor Helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/legion
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
 /datum/crafting_recipe/ncrcombatarmor
 	name = "NCR combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/ncr
@@ -1269,7 +1334,19 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bospowerarmort45b/helmet
+	name = "brotherhood restored T45 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
+	reqs = list (/obj/item/clothing/head/helmet/f13/power_armor/t45b/restored = 1,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort45d
 	name = "brotherhood T45d power armor"
@@ -1279,7 +1356,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost45dhelm
+	name = "brotherhood T45 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort51b
 	name = "brotherhood T51b power armor"
@@ -1289,7 +1376,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost51bhelm
+	name = "brotherhood T51 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t51b = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bospowerarmort60
 	name = "brotherhood T60 power armor"
@@ -1299,7 +1396,17 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/bost60ahelm
+	name = "brotherhood T60 power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t60 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
 
 /datum/crafting_recipe/bosweldingmask
 	name = "brotherhood welding mask"
@@ -1309,4 +1416,25 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
-	always_availible = FALSE			
+	always_availible = FALSE
+
+/datum/crafting_recipe/vaultheavyarmor
+	name = "VTCC riot supression armor"
+	result = /obj/item/clothing/suit/armor/f13/riot/vault/heavy
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/vaultheavyhelm
+	name = "VTCC riot supression helmet"
+	result = /obj/item/clothing/head/helmet/riot/vaultsec/vc/heavy
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
+	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE

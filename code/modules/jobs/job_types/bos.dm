@@ -10,6 +10,7 @@ Main doors: ACCESS_CAPTAIN 20
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	outfit = /datum/outfit/job/bos/
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
 
@@ -44,6 +45,9 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort51b)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort60)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost45dhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost51bhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost60ahelm)
 
 /*
 Elder
@@ -63,7 +67,7 @@ Elder
 
 	outfit = /datum/outfit/job/bos/f13elder
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13elder/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -112,7 +116,7 @@ Head Paladin
 
 	outfit = /datum/outfit/job/bos/f13sentinel
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13sentinel/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -147,28 +151,32 @@ Head Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
-		/obj/item/melee/powerfist=1 \
 		)
-	
+
 /datum/outfit/loadout/sentstand
 	name = "Assault Head Paladin"
 	backpack_contents = list(
+		/obj/item/twohanded/sledgehammer/supersledge=1,
+		/obj/item/book/granter/trait/big_leagues=1
+		)
+
+/datum/outfit/loadout/sentlead
+	name = "Fireteam-Lead Head Paladin"
+	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
 		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/grenade/flashbang=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
-		/obj/item/melee/classic_baton/telescopic=1
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/grenade/smokebomb=2,
+		/obj/item/binoculars=1
 		)
 
 /datum/outfit/loadout/sentheavy
 	name = "Heavy Head Paladin"
 	backpack_contents = list(
+		/obj/item/melee/powerfist=1,
 		/obj/item/gun/ballistic/automatic/m72=1,
 		/obj/item/ammo_box/magazine/m2mm=3,
 		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1
 		)
 
@@ -197,7 +205,7 @@ Head Scribe
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13headscribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -279,7 +287,7 @@ Head Knight
 
 	outfit = /datum/outfit/job/bos/f13knightcap
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_ARMORY, ACCESS_BRIG)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_ARMORY, ACCESS_BRIG)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_ARMORY, ACCESS_BRIG)
 
 /datum/outfit/job/bos/f13knightcap/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -302,7 +310,7 @@ Head Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
-	backpack_contents = list(		
+	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
@@ -331,7 +339,7 @@ Head Knight
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
-		/obj/item/gun/energy/laser/wattz2k=1,
+		/obj/item/gun/energy/laser/wattz2k/extended=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3
 	)
 
@@ -346,8 +354,7 @@ Head Knight
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
-		/obj/item/clothing/glasses/sunglasses/big=1,
-		/obj/item/melee/classic_baton/telescopic=1
+		/obj/item/clothing/glasses/sunglasses/big=1
 	)
 
 /*
@@ -373,7 +380,7 @@ Star Paladin
 
 	outfit = /datum/outfit/job/bos/f13seniorpaladin
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13seniorpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -402,7 +409,6 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/melee/powerfist=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
@@ -411,23 +417,18 @@ Star Paladin
 /datum/outfit/loadout/spaladina
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,		
-		/obj/item/grenade/flashbang=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
 
 /datum/outfit/loadout/spaladinc
 	name = "Senior Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,
 		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/barrier=2,
 		/obj/item/binoculars=1,
-		/obj/item/gun/energy/laser/wattz2k=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3
 		)
 
 /*
@@ -448,14 +449,14 @@ Paladin
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina,
-	/datum/outfit/loadout/paladinb, 
+	/datum/outfit/loadout/paladinb,
 	/datum/outfit/loadout/paladinc,
 	/datum/outfit/loadout/paladind
 	)
 
 	outfit = /datum/outfit/job/bos/f13paladin
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13paladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -480,12 +481,9 @@ Paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
-	suit_store =	/obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/melee/powerfist=1, \
-		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
 		)
@@ -493,40 +491,36 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Junior Assault Paladin"
 	backpack_contents = list(
-		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinb
 	name = "Junior Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinc
 	name = "Assault Paladin"
 	backpack_contents = list(
-		/obj/item/grenade/flashbang=1,
-		/obj/item/grenade/chem_grenade/teargas=1,
-		/obj/item/reagent_containers/spray/pepper=1,
-		/obj/item/shield/riot/tele=1,
+		/obj/item/melee/powerfist=1,
+		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
 /datum/outfit/loadout/paladind
 	name = "Heavy Paladin"
 	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/grenade/barrier=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
@@ -547,6 +541,8 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_SCRIBE
 
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
@@ -554,7 +550,7 @@ Proctor
 	/datum/outfit/loadout/proctorq
 	)
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13seniorscribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -606,7 +602,8 @@ Proctor
 		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/defibrillator/compact=1,
-		/obj/item/storage/survivalkit_aid_adv=1
+		/obj/item/storage/survivalkit_aid_adv=1,
+		/obj/item/book/granter/trait/highsurgery=1
 		)
 
 /*
@@ -624,6 +621,8 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Proctor, or Head Scribe"
 	selection_color = "#95a5a6"
+	exp_requirements = 600
+
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribejsw,
@@ -636,7 +635,7 @@ Scribe
 
 	outfit = /datum/outfit/job/bos/f13scribe
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -710,6 +709,7 @@ Scribe
 /datum/outfit/loadout/scribejq
 	name = "Junior Quill Scribe"
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/defibrillator/compact=1,
@@ -720,10 +720,11 @@ Scribe
 /datum/outfit/loadout/scribeq
 	name = "Quill Scribe"
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/defibrillator/compact=1,
-		/obj/item/storage/survivalkit_aid_adv=1 
+		/obj/item/storage/survivalkit_aid_adv=1
 		)
 
 /*
@@ -741,16 +742,18 @@ datum/job/bos/f13seniorknight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Knight"
 	selection_color = "#95a5a6"
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, 
+	/datum/outfit/loadout/sknighta,
 	/datum/outfit/loadout/sknightb,
-	/datum/outfit/loadout/sknightc 
+	/datum/outfit/loadout/sknightc
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13seniorknight/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -797,20 +800,20 @@ datum/job/bos/f13seniorknight
 /datum/outfit/loadout/sknightb
 	name = "Scout Senior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/gun/energy/laser/wattz2k=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior=1,
 		/obj/item/clothing/glasses/night=1,
-		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1
+		/obj/item/binoculars=1
 		)
 
-/datum/outfit/loadout/sknightc 
+/datum/outfit/loadout/sknightc
 	name = "Security Senior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior=1,
 		/obj/item/restraints/handcuffs=1,
@@ -834,6 +837,7 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Star Knight, or Head Knight"
 	selection_color = "#95a5a6"
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta,
@@ -846,12 +850,12 @@ Knight
 
 	outfit = /datum/outfit/job/bos/f13knight
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
-	jobtype = /datum/job/bos/f13knight	
+	jobtype = /datum/job/bos/f13knight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
@@ -875,9 +879,9 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,	
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,	
+		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
@@ -902,7 +906,7 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
@@ -918,7 +922,7 @@ Knight
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,		
+		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/bos/knight=1
@@ -943,7 +947,7 @@ Knight
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,		
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
@@ -966,8 +970,6 @@ Initiate
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the scribes, knights, or Paladins"
 	selection_color = "#95a5a6"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_CREW
 
 	loadout_options = list(
 	/datum/outfit/loadout/initiatek, //AEP7 and Engibelt with combat armor, no helmet
@@ -976,7 +978,7 @@ Initiate
 
 	outfit = /datum/outfit/job/bos/f13initiate
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13initiate
@@ -995,8 +997,8 @@ Initiate
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, 
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, 
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/storage/toolbox/mechanical=1,
 		/obj/item/clothing/accessory/bos/initiateK=1
@@ -1032,6 +1034,7 @@ Off-Duty
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/offa, //Junior Knight
@@ -1050,7 +1053,7 @@ Off-Duty
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
 /datum/outfit/job/bos/f13offdutybos

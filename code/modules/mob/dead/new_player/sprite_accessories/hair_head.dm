@@ -656,6 +656,10 @@
 	name = "Supernova"
 	icon_state = "hair_supernova"
 
+/datum/sprite_accessory/hair/sideshave
+	name = "Side Shave"
+	icon_state = "side_shave"
+
 /datum/sprite_accessory/hair/poofy
 	name = "Poofy"
 	icon_state = "hair_poofy"
@@ -699,6 +703,10 @@
 /datum/sprite_accessory/hair/scully
 	name = "Scully"
 	icon_state = "hair_scully"
+
+/datum/sprite_accessory/hair/shannon
+	name = "Shannon"
+	icon_state = "hair_shan"
 
 /datum/sprite_accessory/hair/shaggy
 	name = "Shaggy"

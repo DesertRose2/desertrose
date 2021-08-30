@@ -217,10 +217,16 @@
 	required_reagents = list(/datum/reagent/consumable/ethanol/longislandicedtea = 10, /datum/reagent/uranium = 1)
 
 /datum/chemical_reaction/whiskeysoda
-	name = "Whiskey Soda"
+	name = "Whiskey Cola"
 	id = /datum/reagent/consumable/ethanol/whiskeysoda
 	results = list(/datum/reagent/consumable/ethanol/whiskeysoda = 3)
 	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 2, /datum/reagent/consumable/sodawater = 1)
+
+/datum/chemical_reaction/whiskeynuka
+	name = "Whiskey Nuka"
+	id = /datum/reagent/consumable/ethanol/whiskeysoda
+	results = list(/datum/reagent/consumable/ethanol/whiskey_nuka = 3)
+	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 2, /datum/reagent/consumable/nuka_cola = 1)
 
 /datum/chemical_reaction/black_russian
 	name = "Black Russian"

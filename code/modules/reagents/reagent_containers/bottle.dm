@@ -451,6 +451,12 @@
 	volume = 60
 	list_reagents = list(/datum/reagent/medicine/gaia = 60)
 
+/obj/item/reagent_containers/glass/bottle/radshroom
+	name = "mushroom extract bottle"
+	desc = "A small flask containing mixed punga and mushrooms. Very good idea to drink this if you are growing third arm."
+	volume = 30
+	list_reagents = list(/datum/reagent/medicine/radshroom = 30)
+
 /obj/item/reagent_containers/glass/bottle/primitive
 	icon_state = "Voodoo"
 	possible_transfer_amounts = list(5,10,15,20,30,60)

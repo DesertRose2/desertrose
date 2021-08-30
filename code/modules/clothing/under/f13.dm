@@ -47,72 +47,6 @@
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
-
-//NCR
-
-/obj/item/clothing/under/f13/ncr
-	name = "NCR desert fatigues"
-	desc = "A set of standard issue New California Republic trooper fatigues."
-	icon_state = "ncr_uniform"
-	can_adjust = TRUE
-	item_state = "ncr_uniform"
-	item_color = "ncr_uniform"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
-
-/obj/item/clothing/under/f13/ncr/ncr_officer
-	name = "NCR officer fatigues"
-	desc = "A standard service uniform for commissioned officers of the New California Republic."
-	can_adjust = TRUE
-	icon_state = "ncr_officer"
-	item_state = "ncr_officer"
-	item_color = "ncr_officer"
-
-/obj/item/clothing/under/f13/ncr/scout
-	name = "NCR scout fatigues"
-	desc = "A standard duty uniform for scouts of the New California Republic."
-	icon_state = "scoutclothes"
-	item_state = "scoutclothes"
-	item_color = "scoutclothes"
-
-/obj/item/clothing/under/f13/ncr/pants
-	name = "NCR fatigue pants"
-	desc = "A set of standard issue fatigue pants without the upper overcoat. For when you really need to show off your guns."
-	can_adjust = FALSE
-	icon_state = "ncr_fatigue_pants"
-	item_state = "ncr_fatigue_pants"
-	item_color = "ncr_fatigue_pants"
-
-/obj/item/clothing/under/f13/ncr/ncr_shorts
-	name = "NCR fatigue shorts"
-	desc = "A set of uniform shorts and lightweight shirt for NCR troopers deployed in hot climates."
-	can_adjust = TRUE
-	icon_state = "ncr_shorts"
-	item_state = "ncr_shorts"
-	item_color = "ncr_shorts"
-
-/obj/item/clothing/under/f13/caravaneer
-	name = "caravaneer outfit"
-	desc = "A soft outfit used by NCR caravaneers."
-	icon_state = "caravaneer"
-	item_state = "caravaneer"
-	item_color = "caravaneer"
-
-/obj/item/clothing/under/f13/ncr/ncr_dress
-	name = "NCR dress uniform"
-	desc = "A crisp tan NCRA dress uniform, complete with tie."
-	can_adjust = TRUE
-	icon_state = "ncr_dress"
-	item_state = "ncr_dress"
-	item_color = "ncr_dress"
-
-/obj/item/clothing/under/f13/ncrcf
-	name = "caravaneer outfit"
-	desc = "A cheap blue shirt and slacks, the letters 'NCRCF' emblazened on the back. A meek reminder of who owns you."
-	can_adjust = TRUE
-	icon_state = "ncrcf"
-	item_state = "ncrcf"
-	item_color = "ncrcf"
-
 //Settlers
 
 /obj/item/clothing/under/f13/brahminm
@@ -159,37 +93,7 @@
 	item_state = "settler"
 	item_color = "settler"
 
-//The City
-
 //Ranger
-/obj/item/clothing/under/f13/ranger
-	name = "ranger outfit"
-	desc = "Simple rustic clothes for a big iron packin' lawman."
-	icon_state = "ranger"
-	item_state = "ranger"
-	item_color = "ranger"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
-
-/obj/item/clothing/under/f13/ranger/trail
-	name = "ranger outfit"
-	desc = "Simple rustic clothes for a big iron packin' lawman. Worn often by NCR rangers."
-	icon_state = "cowboyrang"
-	item_state = "cowboyrang"
-	item_color = "cowboyrang"
-
-/obj/item/clothing/under/f13/ranger/patrol
-	name = "patrol ranger outfit"
-	desc = "A pair of brown slacks and a breathable shirt, meant to be worn under NCR patrol ranger armour."
-	icon_state = "patrolranger"
-	item_state = "patrolranger"
-	item_color = "patrolranger"
-
-/obj/item/clothing/under/f13/ranger/vet
-	name = "ranger flannel outfit"
-	desc = "Simple rustic clothes for any big iron packin' ranger."
-	icon_state = "vetranger"
-	item_state = "vetranger"
-	item_color = "vetranger"
 
 /obj/item/clothing/under/f13/ranger/vet/foxflannel
 	name = "black ranger flannel outfit"
@@ -648,6 +552,16 @@
 	item_state = "khan"
 	item_color = "khan"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
+
+/obj/item/clothing/under/f13/khan/shorts
+	icon_state = "khan_short"
+	item_state = "khan_short"
+	item_color = "khan_short"
+
+/obj/item/clothing/under/f13/khan/shorts/booty
+	icon_state = "khan_booty"
+	item_state = "khan_booty"
+	item_color = "khan_booty"
 
 /obj/item/clothing/under/f13/chinese_khan
 	name = "modified great khan jumpsuit"
@@ -1116,7 +1030,7 @@
 
 /obj/item/clothing/under/f13/vault/vcity
 	name = "VTCC jumpsuit"
-	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
 	icon_state = "vaultcity"
 	item_state = "vaultcity"
 
@@ -1124,6 +1038,17 @@
 	name = "VTCC jumpskirt"
 	icon_state = "vaultcity_skirt"
 	item_state = "vaultcity_skirt"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser
+	name = "VTCC greaser's jumpsuit"
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults, with an added black leather jacket over the top. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back, only it's just purple because you just have to stand out!"
+	icon_state = "vaultcity_greaser"
+	item_state = "vaultcity_greaser"
+
+/obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+	name = "VTCC greaser's jumpsuit"
+	icon_state = "vaultcity_greaser_skirt"
+	item_state = "vaultcity_greaser_skirt"
 
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit"
@@ -1467,8 +1392,8 @@
 	icon_state = "mutie_vault_jumspuit"
 	item_state = "mutie_vault_jumspuit"
 
-/obj/item/clothing/under/f13/mutieranger
-	name = "mutant Ranger armour"
-	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
+/obj/item/clothing/under/f13/ncrmutie
+	name = "\improper NCR mutant uniform"
+	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"

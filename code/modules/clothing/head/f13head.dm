@@ -93,10 +93,13 @@
 
 /obj/item/clothing/head/helmet/f13/combat/marine
 	name = "marine combat helmet"
-	desc = "(VIII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
+	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
 	icon_state = "marinehelmet"
 	item_state = "marinehelmet"
-	armor = list("tier" = 8, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+	flash_protect = 1
+	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	darkness_view = 24
 
 /obj/item/clothing/head/helmet/f13/rangerbroken
 	name = "broken riot helmet"
@@ -343,8 +346,8 @@
 	item_state = "t45bhelmet"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
-	armor_block_chance = 25
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
@@ -405,6 +408,17 @@
 	icon_state = "t45dhelmet[on]"
 	item_state = "t45dhelmet[on]"
 
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
+	name = "Brotherhood T-45d helmet"
+	desc = "(VIII) A T-45d helmet put into use by the Brotherhood of Steel."
+	icon_state = "t45bos0"
+	item_state = "t45bos0"
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos/update_icon_state()
+	icon_state = "t45bos[on]"
+	item_state = "t45bos[on]"
+
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b Helm"
 	desc = "(IX) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
@@ -444,6 +458,17 @@
 	icon_state = "t51bhelmet[on]"
 	item_state = "t51bhelmet[on]"
 
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
+	name = "Brotherhood T-51b power helmet"
+	desc = "(IX) A T-51b power helmet put into use by the Brotherhood of Steel."
+	icon_state = "t51bos0"
+	item_state = "t51bos0"
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/update_icon_state()
+	icon_state = "t51bos[on]"
+	item_state = "t51bos[on]"
+
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/wbos
 	name = "Washington power helmet"
 	desc = "(X) It's a Washington Brotherhood power helmet. It looks somewhat terrifying."
@@ -479,6 +504,17 @@
 /obj/item/clothing/head/helmet/f13/power_armor/t60/update_icon_state()
 	icon_state = "t60helmet[on]"
 	item_state = "t60helmet[on]"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	name = "Brotherhood T-60a power helmet"
+	desc = "(X) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
+	icon_state = "t60bos0"
+	item_state = "t60bos0"
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t60/bos/update_icon_state()
+	icon_state = "t60bos[on]"
+	item_state = "t60bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/excavator
 	name = "excavator power helmet"
@@ -820,12 +856,25 @@
 
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"
-	desc = "(II) The headwear of the true faith."
+	desc = "(IV) The headwear of the true faith."
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
-	armor = list("tier" = 2, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
+
+/obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+	
+/obj/item/clothing/head/helmet/f13/atomzealot
+	name = "zealot helmet"
+	desc = "(IV) The helmet of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
+
+/obj/item/clothing/head/helmet/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/flatranger
 	name = "NCR gambler ranger hat"
@@ -916,3 +965,13 @@
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
 	flags_inv = HIDEEARS|HIDEHAIR
 
+/obj/item/clothing/head/helmet/f13/power_armor/legion
+	name = "Salvaged Legion T-45b helmet"
+	desc = "(VIII) It's a salvaged T-45b power armor helmet, retrofitted in Dog City for the legion's front line."
+	icon_state = "libritor"
+	item_state = "libritor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+//	darkness_view = 0
+	armor_block_chance = 80
+	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+	requires_training = FALSE

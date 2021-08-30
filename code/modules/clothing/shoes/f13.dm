@@ -77,12 +77,6 @@
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 
-/obj/item/clothing/shoes/f13/military/ncr
-	name = "patrol boots"
-	desc = "A pair of standard issue brown boots, with a puttee."
-	icon_state = "ncr_boots"
-	item_state = "ncr"
-
 /obj/item/clothing/shoes/f13/military/oldcombat
 	name = "Old Combat Boots"
 	desc = "A pair of old, pre-war styled boots made for combat."
@@ -120,6 +114,12 @@
 	desc = "An old pair of desert combat boots. This one seems to have a tighter fit, and a padded interior."
 	icon_state = "erin_boot"
 	item_state = "erin_boot"
+
+/obj/item/clothing/shoes/f13/military/cowboy
+	name = "ranger cowboy boots"
+	desc = "A pair of cowhide boots with spurs, traced over with tan paint.<br>They have a Cuban heel, rounded to pointed toe, high shaft, and, traditionally, no lacing."
+	icon_state = "cowboy_ranger"
+	item_state = "cowboy_ranger"
 
 //Fluff
 
@@ -172,6 +172,8 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 
+// Super Mutants
+
 /obj/item/clothing/shoes/f13/mutie
 	name = "super mutant sandals"
 	desc = "A pair of oversized sandals, likely designed for super mutants."
@@ -189,11 +191,3 @@
 /obj/item/clothing/shoes/f13/mutie/boots/dark
 	icon_state = "mutie_boots_dark"
 	icon_state = "mutie_boots_dark"
-
-/obj/item/clothing/shoes/f13/mutie/boots/ncr
-	icon_state = "mutie_boots_ncr"
-	icon_state = "mutie_boots_ncr"
-
-/obj/item/clothing/shoes/f13/mutie/boots/ncr/ranger
-	icon_state = "mutie_boots_ranger"
-	icon_state = "mutie_boots_ranger"

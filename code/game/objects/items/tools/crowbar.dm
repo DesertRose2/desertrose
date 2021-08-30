@@ -11,6 +11,13 @@
 	force = 5
 	throwforce = 7
 	w_class = WEIGHT_CLASS_SMALL
+	unique_reskin = list("Brass" = "crowbar_clock",
+					"Bronze" = "crowbar_brass",
+					"Caravan" = "crowbar_caravan",
+					"Powergame" = "crowbar_powergame",
+					"Red" = "crowbar_red",
+					"Large" = "crowbar_large"
+					)
 	custom_materials = list(/datum/material/iron=50)
 
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")

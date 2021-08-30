@@ -206,13 +206,7 @@
 	icon_state = "pill22"
 	roundstart = TRUE
 
-///////////////////////////////////////// this pill is used only in a legion mob drop
-/obj/item/reagent_containers/pill/shadowtoxin
-	name = "black pill"
-	desc = "I wouldn't eat this if I were you."
-	icon_state = "pill9"
-	color = "#454545"
-	list_reagents = list(/datum/reagent/mutationtoxin/shadow = 1)
+
 //////////////////////////////////////// drugs
 /obj/item/reagent_containers/pill/zoom
 	name = "zoom pill"
@@ -291,3 +285,9 @@
 	Side effects may include sore muscles and increased irritability."
 	icon_state = "buffoutpill"
 	list_reagents = list(/datum/reagent/drug/buffout = 10)
+
+/obj/item/reagent_containers/pill/cateye
+	name = "Cateye pill"
+	desc = "A pill that smells strongly of carrots.. or maybe its fertalizer. It's hard to tell actually."
+	icon_state = "pill18"
+	list_reagents = list(/datum/reagent/medicine/cateye = 10)

@@ -570,6 +570,14 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Combat Medic"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrmilitarypolice
+	name = "NCR Military Police"
+	icon_state = "NCR Sergeant"
+
+/obj/effect/landmark/start/f13/ncrheavytrooper
+	name = "NCR Heavy Trooper"
+	icon_state = "NCR Trooper"
+
 /obj/effect/landmark/start/f13/ncrtrooper
 	name = "NCR Trooper"
 	icon_state = "NCR Trooper"
@@ -594,6 +602,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Off-Duty"
 	icon_state = "NCR Trooper"
 
+
 // Legion
 
 /obj/effect/landmark/start/f13/legate
@@ -601,14 +610,18 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Legate"
 
 /obj/effect/landmark/start/f13/centurion
-	name = "Legion Optio Centuriae"
+	name = "Legion Centurion"
 	icon_state = "Centurion"
 
 /obj/effect/landmark/start/f13/orator
 	name = "Legion Orator"
-
+//Pretend this doesn't exist
 /obj/effect/landmark/start/f13/slavemaster
 	name = "Legion Slavemaster"
+//Because these two are exact same thing but still
+/obj/effect/landmark/start/f13/campprefect
+	name = "Camp Prefect"
+	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"
@@ -620,6 +633,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/vexillarius
 	name = "Legion Vexillarius"
 	icon_state = "Vexillarius"
+
+/obj/effect/landmark/start/f13/libritor
+	name = "Legion Libritor"
+	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/vetlegionary
 	name = "Veteran Legionary"
@@ -659,6 +676,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/slave
 	name = "Legion Slave"
 	icon_state = "Wastelander"
+
+/obj/effect/landmark/start/f13/legionoff
+	name = "Off-Duty Legionary"
 
 // Brotherhood of Steel
 
@@ -786,12 +806,20 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Wastelander"
 	icon_state = "Wastelander"
 
+/obj/effect/landmark/start/f13/bandit
+	name = "Bandit"
+	icon_state = "Raider"
+
 /obj/effect/landmark/start/f13/raider
 	name = "Outlaw"
 	icon_state = "Raider"
 
 /obj/effect/landmark/start/f13/pusher
 	name = "Great Khan"
+	icon_state = "Pusher"
+
+/obj/effect/landmark/start/f13/genghis
+	name = "Genghis Khan"
 	icon_state = "Pusher"
 
 /obj/effect/landmark/start/f13/preacher
@@ -856,7 +884,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 //Followers of the Apocalypse
 /obj/effect/landmark/start/f13/followersadministrator
-	name = "Followers Administrator"
+	name = "Followers Lead Practitioner"
 
 /obj/effect/landmark/start/f13/followersdoctor
 	name = "Followers Doctor"
@@ -869,3 +897,41 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/followersscientist
 	name = "Followers Scientist"
+
+/* VTCC */
+
+/obj/effect/landmark/start/f13/alderman
+	name = "Alderman"
+
+/obj/effect/landmark/start/f13/marshal
+	name = "Marshal"
+
+/obj/effect/landmark/start/f13/merchant
+	name = "Merchant"
+
+/obj/effect/landmark/start/f13/chiefresearcher
+	name = "Chief Researcher"
+
+/obj/effect/landmark/start/f13/researcher
+	name = "Researcher"
+
+/obj/effect/landmark/start/f13/townsec
+	name = "City Security Officer"
+
+/obj/effect/landmark/start/f13/townsecscout
+	name = "City Security Scout"
+
+/obj/effect/landmark/start/f13/roadie
+	name = "Roadie"
+
+/obj/effect/landmark/start/f13/innkeeper
+	name = "Innkeeper"
+
+/obj/effect/landmark/start/f13/hoistway
+	name = "Hoistway Preacher"
+
+/obj/effect/landmark/start/f13/innerwall
+	name = "Inner Wall Citizen"
+
+/obj/effect/landmark/start/f13/outerwall
+	name = "Outer Wall Citizen"

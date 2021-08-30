@@ -115,8 +115,13 @@
 	throwforce = 25
 	block_chance = 15
 
-/obj/item/claymore/machete/spatha/kalebman
-	desc = "Light touches this dark, curved blade like the glimmer of the evening sun on a calm lake. Longer than your usual Spatha, it is made from steel alloys that are seldom utilized by Caesar's Legion due to their rarity. The hilt is made of thick Deathclaw bone, with carved knots along the edge and golden rings lining it for grip enhancement. Along the blade's curved flat on each side are large solid golden bulls, in the shape that mimicks Caesar's flag, each bull standing atop a gilded 'C' which represents the Century, one hundred. At the far end of the blade, near the tip, a recent addition has been made; a crude engraving. It reads; 'XCIX'"
+/obj/item/claymore/machete/spatha/knight
+	name = "holy claymore"
+	desc = "A weapon fit for a crusade!"
+	icon_state = "claymore"
+	item_state = "claymore"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 
 /obj/item/claymore/machete/pipe
 	name = "pipe"

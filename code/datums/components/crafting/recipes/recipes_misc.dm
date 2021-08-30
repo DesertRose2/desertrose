@@ -633,7 +633,7 @@
 				/obj/item/clothing/under/rank/security/officer = 1)
 	subcategory = CAT_FURNITURE
 	category = CAT_MISC
-	
+
 /datum/crafting_recipe/mixedbouquet
 	name = "Mixed bouquet"
 	result = /obj/item/bouquet
@@ -660,6 +660,6 @@
 /datum/crafting_recipe/rosebouquet
 	name = "Rose bouquet"
 	result = /obj/item/bouquet/rose
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/rose = 6)
+	reqs = list(/obj/item/grown/rose = 6)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC

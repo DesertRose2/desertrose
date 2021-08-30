@@ -339,7 +339,7 @@
 
 /obj/item/grown/wayfarer_rose
 	seed = /obj/item/seeds/wayfarer_rose
-	name = "Wayfarer Rose"
+	name = "wayfarer rose"
 	desc = "A beautiful blue flower the same shade as the turquoise gemstones commonly used by Wayfarers."
 	icon_state = "wayfarerrose"
 	slot_flags = ITEM_SLOT_HEAD
@@ -351,7 +351,7 @@
 	icon_state = "seed-rose"
 	species = "rose"
 	plantname = "Rose Bush"
-	product = /obj/item/reagent_containers/food/snacks/grown/rose
+	product = /obj/item/grown/rose
 	endurance = 12
 	yield = 6
 	potency = 15
@@ -365,7 +365,7 @@
 	//Roses are commonly used as herbal medicines (diarrhodons) and for their 'rose oil'.
 	reagents_add = list(/datum/reagent/consumable/nutriment = 0.05)
 
-/obj/item/reagent_containers/food/snacks/grown/rose
+/obj/item/grown/rose
 	seed = /obj/item/seeds/rose
 	name = "\improper rose"
 	desc = "The classic fleur d'amour - flower of love. Watch for its thorns!"
@@ -373,8 +373,6 @@
 	lefthand_file = 'icons/mob/inhands/misc/food_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/food_righthand.dmi'
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
-	bitesize_mod = 2
-	foodtype = VEGETABLES | GROSS
 
 // Carbon Rose
 /obj/item/seeds/carbon_rose
@@ -392,7 +390,7 @@
 	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
 	icon_grow = "carbonrose-grow"
 	icon_dead = "carbonrose-dead"
-	reagents_add = list(/datum/reagent/plastic_polymers = 0.05)
+	reagents_add = list(/datum/reagent/carbon = 0.05)
 	rarity = 10
 
 /obj/item/grown/carbon_rose

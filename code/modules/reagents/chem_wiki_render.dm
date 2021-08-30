@@ -35,7 +35,7 @@
 	to_chat(usr, "Generating big list")
 	message_admins("Someone pressed the lag button. (Generate Wikichems)")
 	///datum/reagent/medicine, /datum/reagent/toxin, /datum/reagent/consumable, /datum/reagent/plantnutriment, /datum/reagent/uranium,
-	///datum/reagent/colorful_reagent, /datum/reagent/mutationtoxin, /datum/reagent/fermi, /datum/reagent/drug, /datum/reagent/impure
+	///datum/reagent/colorful_reagent, , /datum/reagent/fermi, /datum/reagent/drug, /datum/reagent/impure
 
 	//Probably not the most eligant of solutions.
 	to_chat(usr, "Attempting reagent scan. Length of list [LAZYLEN(GLOB.chemical_reagents_list)*2]")
@@ -137,9 +137,6 @@
 
 			else if(istype(R, /datum/reagent/colorful_reagent))
 				colours += generate_chemwiki_line(R, X, processCR)
-
-			else if(istype(R, /datum/reagent/mutationtoxin))
-				muta += generate_chemwiki_line(R, X, processCR)
 
 			else if(istype(R, /datum/reagent/fermi))
 				fermi += generate_chemwiki_line(R, X, processCR)

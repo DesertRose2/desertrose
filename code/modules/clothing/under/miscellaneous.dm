@@ -546,6 +546,24 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/harebell_dress
+	name = "Harebell dress"
+	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
+	icon_state = "harebell_dress"
+	item_state = "harebell_dress"
+	item_color = "harebell_dress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
+/obj/item/clothing/under/flowerdress
+	name = "Flower Dress"
+	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."
+	icon_state = "flowerdress"
+	item_state = "flowerdress"
+	item_color = "flowerdress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/janimaid
 	name = "maid uniform"
 	desc = "A simple maid uniform for housekeeping."
