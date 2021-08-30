@@ -828,7 +828,7 @@
 	/obj/item/ammo_box/magazine/m10mm=1,
 	/obj/item/clothing/glasses/welding=1,
 	/obj/item/twohanded/fireaxe=1,
-	/obj/item/weldingtool/largetank=1
+	/obj/item/weldingtool/largetank=1,
 	/obj/item/book/granter/trait/techno=1
 	)
 
