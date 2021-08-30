@@ -46,3 +46,5 @@
 	if(rank in GLOB.vault_positions) //How did they even get in??.
 		return 0
 	return ..()
+
+/datum/species/smutant/get_racelist(mob/user)
