@@ -622,10 +622,17 @@
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
 	name = "vtcc scout helmet"
-	desc = "(IV) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
+	desc = "(V) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
 	icon_state = "vtcc_riot_helmet"
 	item_state = "vtcc_riot_helmet"
-	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 10, "fire" = 40, "acid" = 10)
+	armor = list("tier" = 5, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 10, "fire" = 40, "acid" = 10)
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal
+	name = "vtcc marshal cap"
+	desc = "(VII) A peaked dark blue cap, probably worn by someone important."
+	icon_state = "hopcap"
+	item_state = "hopcap"
+	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc/heavy
 	name = "vtcc heavy riot helmet"

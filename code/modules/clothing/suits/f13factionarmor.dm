@@ -602,14 +602,15 @@
 	icon_state = "vtcc_riot_gear"
 	item_state = "vtcc_riot_gear"
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/riot/vault/scout
 	name = "VTCC scout armour"
-	desc = "(IV) A suit of stripped back riot armour, adapted from the pre-war U.S.M.C armours and stripped back."
+	desc = "(V) A suit of stripped back riot armour, adapted from the pre-war U.S.M.C armours and stripped back."
 	icon_state = "vtcc_scout_gear"
 	item_state = "vtcc_scout_gear"
-	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 30, "rad" = 10, "fire" = 50, "acid" = 10)
-	slowdown = -0.1
+	armor = list("tier" = 5, "energy" = 30, "bomb" = 25, "bio" = 30, "rad" = 10, "fire" = 50, "acid" = 10)
+	
 
 /obj/item/clothing/suit/armor/f13/riot/vault/heavy
 	name = "VTCC riot supression armor"

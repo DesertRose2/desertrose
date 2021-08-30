@@ -88,60 +88,59 @@
 	outfit = /datum/outfit/job/vtcc/f13marshal
 	loadout_options = list(
 		/datum/outfit/loadout/secchief,
-		/datum/outfit/loadout/gunslinger,
 		/datum/outfit/loadout/peacekeeper
 		)
 
-	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 
 /datum/outfit/job/vtcc/f13marshal/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)	
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13marshal
 	name = "Marshal"
-	jobtype = /datum/job/vtcc/f13marshal
-
-	ears = /obj/item/radio/headset/headset_vault/cogcity/sec
+	jobtype = 		/datum/job/vtcc/f13marshal
 	id =            /obj/item/card/id/silver
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	ears = /obj/item/radio/headset/headset_vault/cogcity/sec_lead
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	r_pocket = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	belt = /obj/item/gun/ballistic/revolver/lucky37
-	suit = /obj/item/clothing/suit/armor/f13/riot/vault
-	head = /obj/item/clothing/head/helmet/riot/vaultsec/vc
+	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
+	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	glasses = 		/obj/item/clothing/glasses/sunglasses/big
+	belt = 			/obj/item/storage/belt/military/assault
+	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/ammo_box/a357/ap = 2,
+		/obj/item/restraints/handcuffs=1, 
+		/obj/item/melee/classic_baton=1, 
+		/obj/item/kitchen/knife/combat=1,
 		/obj/item/pda/warden=1
 		)
 
 /datum/outfit/loadout/secchief
-	name = "Chief of Security"
+	name = "Commisioner"
+	suit_store = /obj/item/gun/energy/laser/scatter
 	backpack_contents = list(
-	/obj/item/clothing/under/rank/security/officer=1,
-	/obj/item/storage/belt/security/full=1,
-	/obj/item/stack/f13Cash/caps/fivezerozero=1)
-
-/datum/outfit/loadout/gunslinger
-	name = "Gunslinger"
-	backpack_contents = list(
-	/obj/item/gun/ballistic/revolver/m29=1,
-	/obj/item/ammo_box/m44 = 2,
-	/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal=1,
-	/obj/item/clothing/head/f13/cowboy=1)
+	/obj/item/stock_parts/cell/ammo/mfc=3,	
+	/obj/item/gun/ballistic/automatic/pistol/beretta=1,
+	/obj/item/ammo_box/magazine/m9mmds = 3,
+	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
+	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1
+	)
 
 /datum/outfit/loadout/peacekeeper
-	name = "Peacekeeper"
+	name = "Sheriff"
+	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
-	/obj/item/pda=1,
-	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1)
+	/obj/item/ammo_box/tube/c4570=3,	
+	/obj/item/gun/ballistic/revolver/m29/peacekeeper=1,
+	/obj/item/ammo_box/m44=3,
+	/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal=1,
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal=1
+	)
 
 /datum/outfit/job/vtcc/f13marshal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -166,8 +165,7 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/blacksmith,
-		/datum/outfit/loadout/armsdealer,
-		/datum/outfit/loadout/sommelier,
+		/datum/outfit/loadout/armsdealer
 		)
 
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
@@ -177,20 +175,21 @@
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)	
+	ADD_TRAIT(H, TRAIT_TRAPPER, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13merchant
 	name = "Merchant"
-	jobtype = /datum/job/vtcc/f13merchant
-	ears = /obj/item/radio/headset/headset_vault/cogcity/merch_lead
+	jobtype = 		/datum/job/vtcc/f13merchant
+	ears = 			/obj/item/radio/headset/headset_vault/cogcity/merch_lead
 	id =            /obj/item/card/id/silver
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket = /obj/item/storage/bag/money/small/settler
-	r_pocket = /obj/item/pda/quartermaster
+	l_pocket =		 /obj/item/storage/bag/money/small/settler
+	r_pocket = 		/obj/item/pda/quartermaster
 	shoes = 		/obj/item/clothing/shoes/f13/fancy
-	uniform = /obj/item/clothing/under/f13/cowboyg
-	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
+	uniform = 		/obj/item/clothing/under/f13/cowboyg
+	gloves = 		/obj/item/clothing/gloves/f13/leather/fingerless
 	backpack_contents = list(
 		/obj/item/stack/f13Cash/caps/fivezerozero=1
 		)
@@ -210,17 +209,6 @@
 	/obj/item/gun/ballistic/automatic/pistol/ninemil = 7,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 4,
 	/obj/item/gun/ballistic/revolver/police =4
-	)
-
-/datum/outfit/loadout/sommelier
-	name = "Sommelier"
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/drinks/bottle/wine = 2,
-	/obj/item/reagent_containers/food/drinks/bottle/lizardwine = 2,
-	/obj/item/export/bottle/wine = 5,
-	/obj/item/export/bottle/blooddrop = 2,
-	/obj/item/reagent_containers/food/drinks/bottle/champagne = 2,
-	/obj/item/reagent_containers/food/drinks/bottle/trappist = 2
 	)
 
 /* Chief Researcher */
@@ -305,12 +293,11 @@
 	exp_type = EXP_TYPE_VTCCSEC
 
 	loadout_options = list(
-		/datum/outfit/loadout/musketeer,
 		/datum/outfit/loadout/oldguard,
 		/datum/outfit/loadout/riotpolice
 		)
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13 )
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
 
 /datum/outfit/job/vtcc/f13citysec/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -320,36 +307,25 @@
 
 /datum/outfit/job/vtcc/f13citysec
 	name = "City Security Officer"
-	jobtype = /datum/job/vtcc/f13citysec
-
-	ears = /obj/item/radio/headset/headset_vault/cogcity/sec
+	jobtype = 		/datum/job/vtcc/f13citysec
+	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
+	glasses = 		/obj/item/clothing/glasses/sunglasses/big
+	belt = 			/obj/item/storage/belt/military/assault
+	neck = 			/obj/item/storage/belt/holster
 	shoes = 		/obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/f13/riot/vault
-	head = /obj/item/clothing/head/helmet/riot/vaultsec/vc
+	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc
+	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/geiger_counter=1,
-		/obj/item/stock_parts/cell/ammo/ec = 1
+		/obj/item/kitchen/knife/combat=1,
+		/obj/item/pda/security=1
 		)
 
-/datum/outfit/loadout/musketeer
-	name = "Musketeer"
-	backpack_contents = list(
-	/obj/item/gun/energy/laser/aer9=1,
-	/obj/item/clothing/head/f13/cowboy=1,
-	/obj/item/stock_parts/cell/ammo/mfc=2,
-	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1
-	)
-
 /datum/outfit/loadout/oldguard
-	name = "Old Guard"
+	name = "Officer First Class"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/shotgun/automatic/combat/neostead=1,
-	/obj/item/ammo_box/shotgun/bean = 2,
 	/obj/item/ammo_box/shotgun/magnum = 2
 	)
 
@@ -357,8 +333,7 @@
 	name = "Riot Cop"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/automatic/smg10mm=1,
-	/obj/item/pda/security=1,
-	/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+	/obj/item/ammo_box/magazine/m10mm_adv/ext = 3,
 	/obj/item/shield/riot/tele=1
 	)
 
@@ -384,12 +359,11 @@
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
-		/datum/outfit/loadout/easyroad,
 		/datum/outfit/loadout/newblood,
 		/datum/outfit/loadout/deepend
 		)
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
 
 /datum/outfit/job/vtcc/f13citysecscout/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -400,43 +374,31 @@
 /datum/outfit/job/vtcc/f13citysecscout
 	name = "City Security Scout"
 	jobtype = /datum/job/vtcc/f13citysecscout
-
-	ears = /obj/item/radio/headset/headset_vault/cogcity/sec
+	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
 	shoes = 		/obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/f13/riot/vault/scout
-	head = /obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
+	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
+	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault/scout
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/geiger_counter=1,
-		/obj/item/stock_parts/cell/ammo/ec = 1
+		/obj/item/kitchen/knife/combat=1,
+		/obj/item/pda/security=1
 		)
 
-/datum/outfit/loadout/easyroad
-	name = "The Easy Road"
-	backpack_contents = list(
-	/obj/item/gun/energy/laser/pistol=1,
-	/obj/item/clothing/head/f13/cowboy=1,
-	/obj/item/stock_parts/cell/ammo/ec=2,
-	/obj/item/clothing/suit/armor/f13/brahmin_leather_duster=1
-	)
-
 /datum/outfit/loadout/newblood
-	name = "The New Bloods"
+	name = "Officer"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/shotgun/trench=1,
-	/obj/item/ammo_box/shotgun/bean = 2,
-	/obj/item/ammo_box/shotgun/magnum = 2
+	/obj/item/ammo_box/shotgun/magnum = 2,
+	/obj/item/gun/energy/laser/pistol=1,
+	/obj/item/stock_parts/cell/ammo/ec=3
 	)
 
 /datum/outfit/loadout/deepend
-	name = "The Deep End"
+	name = "Riot Cadet"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/automatic/pistol/n99=1,
-	/obj/item/pda/security=1,
-	/obj/item/ammo_box/magazine/m10mm_adv = 2,
+	/obj/item/ammo_box/magazine/m10mm_adv = 3,
 	/obj/item/shield/riot/tele=1
 	)
 
@@ -468,23 +430,16 @@
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13roadie
 	name = "Roadie"
-	jobtype = /datum/job/vtcc/f13roadie
-	neck = /obj/item/radio/headset/headset_vault/cogcity/merch
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
-	shoes = 		/obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/f13/merca
-	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m9mmds = 2
-		)
+	jobtype = 	/datum/job/vtcc/f13roadie
+	neck = 		/obj/item/radio/headset/headset_vault/cogcity/merch
+	shoes = 	/obj/item/clothing/shoes/jackboots
+	uniform = 	/obj/item/clothing/under/f13/merca
+	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
 
 /datum/outfit/loadout/scavver
 	name = "Scavver"
@@ -861,7 +816,6 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	r_hand = /obj/item/book/granter/trait/selection
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
