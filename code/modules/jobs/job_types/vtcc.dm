@@ -199,16 +199,18 @@
 	backpack_contents = list(
 	/obj/item/clothing/gloves/f13/blacksmith=1,
 	/obj/item/melee/smith/hammer/toolbox=1,
-	/obj/item/stack/sheet/mineral/sandstone = 37,
-	/obj/item/stack/sheet/metal/twenty=1
+	/obj/item/stack/sheet/mineral/sandstone = 50,
+	/obj/item/stack/sheet/metal/fifty=2
 	)
 
 /datum/outfit/loadout/armsdealer
 	name = "Arms Dealer"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/automatic/pistol/ninemil = 7,
-	/obj/item/gun/ballistic/automatic/pistol/n99 = 4,
-	/obj/item/gun/ballistic/revolver/police =4
+	/obj/item/attachments/auto_sear=2,
+	/obj/item/attachments/burst_improvement=2,
+	/obj/item/attachments/bullet_speed=2,
+	/obj/item/attachments/recoil_decrease=2,
+	/obj/item/attachments/scope=2
 	)
 
 /* Chief Researcher */
@@ -827,6 +829,7 @@
 	/obj/item/clothing/glasses/welding=1,
 	/obj/item/twohanded/fireaxe=1,
 	/obj/item/weldingtool/largetank=1
+	/obj/item/book/granter/trait/techno=1
 	)
 
 /datum/outfit/loadout/refugee

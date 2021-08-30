@@ -7012,6 +7012,13 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/city)
+"edR" = (
+/obj/machinery/cell_charger,
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "edZ" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -29875,6 +29882,7 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /obj/effect/turf_decal/bot,
+/obj/item/stack/ore/blackpowder/five,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -32221,6 +32229,16 @@
 /obj/item/picket_sign,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"sZx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "sZA" = (
 /obj/structure/tires/half,
 /turf/open/indestructible/ground/outside/desert,
@@ -37086,6 +37104,9 @@
 "vIE" = (
 /obj/machinery/autolathe/ammo,
 /obj/effect/turf_decal/bot,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -56404,7 +56425,7 @@ xLh
 oep
 xLh
 xLh
-xLh
+sZx
 xLh
 cCE
 wOj
@@ -56661,7 +56682,7 @@ tHn
 qAL
 qGv
 xLh
-xLh
+edR
 xLh
 oyS
 wOj
