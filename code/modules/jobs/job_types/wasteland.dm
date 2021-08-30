@@ -458,7 +458,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec=3,
 		/obj/item/switchblade=1,
-		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/book/granter/trait/midsurgery=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4,
 		/obj/item/reagent_containers/medspray/synthflesh = 2
 		)
