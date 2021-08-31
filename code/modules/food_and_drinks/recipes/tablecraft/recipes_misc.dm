@@ -241,7 +241,7 @@
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/grown/pinyon = 3,
 		/obj/item/reagent_containers/food/snacks/grown/apple = 1,
-		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1,
+		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/trailmix
 	subcategory = CAT_MISCFOOD

@@ -267,6 +267,7 @@
 		/obj/item/clothing/head/f13/stalkerpelt = 1,
 		/obj/item/stack/sheet/mineral/wood = 1,
 		/obj/item/reagent_containers/food/snacks/butter = 1
-
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/baked_nightstalker_tail
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
