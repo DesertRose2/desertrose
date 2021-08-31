@@ -4,19 +4,21 @@
 	id = "smutant"
 	say_mod = "yells"
 	limbs_id = "smutant"
-	species_traits = list(NOTRANSSTING,NOGENITALS,NOAROUSAL)
+	species_traits = list(NOTRANSSTING, NOGENITALS, NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
 	whitelisted = 1
 	whitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
-					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04"
+					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04",
+					"yecrowbarman"
 					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
 		OFFSET_HEAD = list(1,5),
 		OFFSET_SUIT = list(0,0),
-		OFFSET_BELT = list(5,0)
+		OFFSET_BELT = list(5,0),
+		OFFSET_EYES = list(1,6)
 		)
 	punchstunthreshold = 20
 	use_skintones = 0
@@ -44,3 +46,5 @@
 	if(rank in GLOB.vault_positions) //How did they even get in??.
 		return 0
 	return ..()
+
+/datum/species/smutant/get_racelist(mob/user)
