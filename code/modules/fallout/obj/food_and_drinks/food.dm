@@ -328,6 +328,7 @@
 	name = "Deathclaw Omelette"
 	desc = "A delicious omelette made from one big deathclaw egg. Hope you're not allergic."
 	icon_state = "deathclawomlette"
+	bitesize = 10
 	bonus_reagents = list (/datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/dexalin = 10)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 60)
 	filling_color = "B#22222"
@@ -641,7 +642,7 @@
 	name = "broiled deathclaw"
 	desc = "All the flavor seared in for extra kick."
 	icon_state = "broiled_death_claw"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/medicine/omnizine = 5)
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("deathclaw meat" = 3, "butter" = 1)
 	foodtype = MEAT
@@ -650,7 +651,8 @@
 	name = "fire ant fricassee"
 	desc = "Breaded fire ant meat soaked in cram."
 	icon_state = "fire_ant_fricassee"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12)
 	tastes = list("Fire Ant Meat" = 2, "flour" = 1, "cram" = 1)
 	foodtype = MEAT | GRAIN 
 	
@@ -659,7 +661,7 @@
 	desc = "Cracklings are the solid material which remains after rendering animal fat and skin to produce lard, tallow, or schmaltz. It is often eaten as a snack food or made into animal feed. It is also used in cooking."
 	icon_state = "fried_brahmin_skin"
 	filling_color = "#CD5C5C"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("crispy skin" = 1)
 	foodtype = MEAT
@@ -668,7 +670,7 @@
 	name = "molerat manicotti"
 	desc = "Molerat meat wrapped in a pasta tube."
 	icon_state = "molerat_manicotti"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12) 
 	tastes = list("molerat Meat" = 2, "dough" = 1)
 	foodtype = MEAT | GRAIN
 	
@@ -676,7 +678,8 @@
 	name = "chitlins con carne"
 	desc = "Uses EVERY part of the cazador!"
 	icon_state = "chitlins_con_carne"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 20) // needs more rebalanced as the price is high
 	tastes = list("cazador meat" = 2, "dough" = 1)
 	foodtype = MEAT | GRAIN
 	
@@ -684,15 +687,17 @@
 	name = "fried molerat lung"
 	desc = "Halfway to molerat haggis."
 	icon_state = "fried_molerat_lung"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("molerat mung" = 2)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12) // needs more rebalanced as the price is high
+	tastes = list("molerat lung" = 2)
 	foodtype = MEAT 
 	
 /obj/item/reagent_containers/food/snacks/f13/tato_surpise
 	name = "tato suprise"
 	desc = "The surprise is Tato."
 	icon_state = "tato_surpise"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	bonus_reagents = list(/datum/reagent/medicine/antitoxin = 0.01, /datum/reagent/medicine/salglu_solution = 0.01, /datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 3) // rebalanced
 	tastes = list("tato" = 2, "xander" = 1)
 	foodtype = MEAT 
 	
@@ -700,7 +705,8 @@
 	name = "radscorpion en croute"
 	desc = "Radscorpion meat pie, no stingers included."
 	icon_state = "radscorpion_en_croute"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 3)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("cooked insect guts" = 2, "pastry dough" = 1)
 	foodtype = MEAT | GRAIN
 	
@@ -708,7 +714,7 @@
 	name = "deathclaw egg omelette"
 	desc = "An omelette made from a pristine deathclaw eggs."
 	icon_state = "deathclaw_egg_omelette"
-	bonus_reagents = list (/datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/dexalin = 10)
+	bonus_reagents = list (/datum/reagent/consumable/nutriment/vitamin = 12, /datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/dexalin = 10) // needs more rebalanced as the price is high
 	list_reagents = list(/datum/reagent/consumable/nutriment = 60)
 	tastes = list("deathclaw eggs" = 2, "deathclaw Meat" = 2, "cheese" = 1)
 	foodtype = MEAT | DAIRY
@@ -717,7 +723,7 @@
 	name = "baked nightstalker tail"
 	desc = "Shake it to hear it rattle!"
 	icon_state = "baked_nightstalker_tail"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
 	foodtype = MEAT
 	
 /obj/item/reagent_containers/food/snacks/f13/gecko_kebab
