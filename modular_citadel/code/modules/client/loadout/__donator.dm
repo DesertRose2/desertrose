@@ -359,7 +359,7 @@
 /datum/gear/donator/kits/katiemorgan/
 	name = "Katie Morgan's belongings"
 	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
-	ckeywhitelist = list("idiocityInc")
+	ckeywhitelist = list("idiocityinc")
 
 /datum/gear/donator/kits/bryanmonroe
 	name = "Bryan ''Aranesp'' Monroe's belongings"
@@ -369,7 +369,7 @@
 /datum/gear/donator/kits/jayoh
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
-	ckeywhitelist = list("Conormackgegore")
+	ckeywhitelist = list("conormackgegore")
 
 //////////////////////////////
 ///Ranger items start here.///
