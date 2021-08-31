@@ -474,7 +474,7 @@ Corporal
 		/obj/item/ammo_box/shotgun/slug=1)
 
 /*
-Combat Engineer
+Combat Medic
 */
 
 /datum/job/ncr/f13combatmedic
