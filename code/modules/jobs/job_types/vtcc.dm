@@ -45,14 +45,15 @@
 
 /datum/outfit/job/vtcc/f13alderman
 	name = "Alderman"
-	jobtype = /datum/job/vtcc/f13alderman
-	ears = /obj/item/radio/headset/headset_vault/cogcity/overseer
+	jobtype =		/datum/job/vtcc/f13alderman
+	ears = 			/obj/item/radio/headset/headset_vault/cogcity/overseer
+	neck = 			/obj/item/storage/belt/holster
 	id =            /obj/item/card/id/silver
-	r_pocket = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	belt = /obj/item/gun/ballistic/automatic/pistol/n99/executive
+	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	belt = 			/obj/item/gun/ballistic/automatic/pistol/n99/executive
 	backpack_contents = list(
 		/obj/item/storage/box/citizenship_permits = 1, \
-		/obj/item/ammo_box/magazine/m10mm/ap = 2)
+		/obj/item/ammo_box/magazine/m10mm_adv = 3 )
 
 /datum/outfit/loadout/treasurer
 	name = "Treasurer"
@@ -328,7 +329,9 @@
 	name = "Officer First Class"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/shotgun/automatic/combat/neostead=1,
-	/obj/item/ammo_box/shotgun/magnum = 2
+	/obj/item/ammo_box/shotgun/magnum = 2,
+	/obj/item/gun/energy/laser/pistol=1,
+	/obj/item/stock_parts/cell/ammo/ec=3
 	)
 
 /datum/outfit/loadout/riotpolice

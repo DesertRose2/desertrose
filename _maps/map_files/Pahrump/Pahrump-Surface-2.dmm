@@ -5129,6 +5129,25 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"cWW" = (
+/obj/effect/turf_decal/bot,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/structure/closet/crate/secure/weapon{
+	anchored = 1
+	},
+/obj/item/ammo_box/tube/c4570,
+/obj/item/ammo_box/tube/c4570,
+/obj/item/ammo_box/tube/c4570,
+/obj/item/ammo_box/tube/c4570,
+/obj/item/ammo_box/tube/c4570,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "cXh" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/radio/intercom{
@@ -5419,17 +5438,19 @@
 /obj/structure/closet/crate/secure/weapon{
 	anchored = 1
 	},
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
-/obj/item/stock_parts/cell/ammo/mfc,
 /obj/effect/turf_decal/bot,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
+/obj/item/ammo_box/magazine/m10mm_adv/ext,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -55907,7 +55928,7 @@ sfB
 wOj
 umk
 xLh
-xIP
+cWW
 qAL
 mBC
 xLh
