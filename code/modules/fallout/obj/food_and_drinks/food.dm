@@ -679,7 +679,7 @@
 	desc = "Uses EVERY part of the cazador!"
 	icon_state = "chitlins_con_carne"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 20) // needs more rebalanced as the price is high
+	list_reagents = list(/datum/reagent/consumable/nutriment = 20) 
 	tastes = list("cazador meat" = 2, "dough" = 1)
 	foodtype = MEAT | GRAIN
 	
@@ -688,7 +688,7 @@
 	desc = "Halfway to molerat haggis."
 	icon_state = "fried_molerat_lung"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 12) // needs more rebalanced as the price is high
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12) 
 	tastes = list("molerat lung" = 2)
 	foodtype = MEAT 
 	
@@ -697,7 +697,7 @@
 	desc = "The surprise is Tato."
 	icon_state = "tato_surpise"
 	bonus_reagents = list(/datum/reagent/medicine/antitoxin = 0.01, /datum/reagent/medicine/salglu_solution = 0.01, /datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 3) // rebalanced
+	list_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 3) 
 	tastes = list("tato" = 2, "xander" = 1)
 	foodtype = MEAT 
 	
@@ -714,8 +714,8 @@
 	name = "deathclaw egg omelette"
 	desc = "An omelette made from a pristine deathclaw eggs."
 	icon_state = "deathclaw_egg_omelette"
-	bonus_reagents = list (/datum/reagent/consumable/nutriment/vitamin = 12, /datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/dexalin = 10) // needs more rebalanced as the price is high
-	list_reagents = list(/datum/reagent/consumable/nutriment = 60)
+	bonus_reagents = list (/datum/reagent/consumable/nutriment/vitamin = 12, /datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/dexalin = 10) 
+	list_reagents = list(/datum/reagent/consumable/nutriment = 80)
 	tastes = list("deathclaw eggs" = 2, "deathclaw Meat" = 2, "cheese" = 1)
 	foodtype = MEAT | DAIRY
 	
