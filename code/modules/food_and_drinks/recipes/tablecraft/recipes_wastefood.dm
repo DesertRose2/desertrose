@@ -206,7 +206,6 @@
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/meat/steak/molerat = 1,
 		/datum/reagent/consumable/flour = 5,
-		/datum/reagent/consumable/cooking_oil = 10,
 		/datum/reagent/consumable/sodiumchloride = 1,
 		/datum/reagent/consumable/blackpepper = 1
 	)
@@ -259,5 +258,16 @@
 		/obj/item/stack/rods = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/gecko_kebab
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+	
+/datum/crafting_recipe/food/baked_nightstalker_tail
+	name = "Baked Nightstalker tail"
+	reqs = list(
+		/obj/item/clothing/head/f13/stalkerpelt = 1,
+		/obj/item/stack/sheet/mineral/wood = 1,
+		/obj/item/reagent_containers/food/snacks/butter = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/baked_nightstalker_tail
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD

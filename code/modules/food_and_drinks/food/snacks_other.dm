@@ -771,6 +771,7 @@
 	name = "Trail Mix"
 	desc = "Seems popular among those with a certain drawl, or those who find that it's time to hit that dusty trail."
 	icon_state = "trail_mix"
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 3)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
-	tastes = list("pinyon" = 3, "roasted peanuts" = 1, "berries" = 1, "sunflowers" = 1)
+	tastes = list("pinyon" = 3, "mutfruit" = 1, "apples" = 1)
 	foodtype = GRAIN | FRUIT 
