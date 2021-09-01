@@ -5,6 +5,14 @@
 "ao" = (
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
+"aI" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "bq" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -12,7 +20,10 @@
 /area/f13/ncr)
 "cb" = (
 /obj/machinery/workbench/advanced,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "cP" = (
 /turf/open/floor/carpet,
@@ -53,7 +64,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "fz" = (
 /obj/structure/simple_door/house,
@@ -79,6 +93,19 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"gh" = (
+/obj/structure/fence/handrail{
+	dir = 1;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "gw" = (
 /obj/item/kirbyplants/dead{
 	desc = "It doesn't look very healthy...";
@@ -89,6 +116,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"gK" = (
+/obj/structure/chair/stool/f13stool,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "gM" = (
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
@@ -119,6 +150,19 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"hq" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"hv" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/kirbyplants/random,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "il" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -132,7 +176,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "ir" = (
 /obj/structure/table,
@@ -176,6 +223,15 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"jD" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"jH" = (
+/turf/open/floor/f13,
+/area/f13/wasteland)
 "jN" = (
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -184,11 +240,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland)
-"jQ" = (
-/obj/structure/stairs/east,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 9;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "kp" = (
 /obj/structure/wreck/trash/machinepile,
@@ -239,6 +294,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"li" = (
+/obj/structure/chair/stool/retro,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "ls" = (
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
@@ -272,7 +331,10 @@
 /area/f13/wasteland)
 "lO" = (
 /obj/machinery/workbench/forge,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "md" = (
 /obj/structure/table/reinforced,
@@ -289,12 +351,21 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"mH" = (
+/obj/structure/chair/stool/bar,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "mO" = (
 /obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"ne" = (
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "nw" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -365,6 +436,20 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"oV" = (
+/obj/structure/fence/handrail{
+	dir = 1;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "pk" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
@@ -382,6 +467,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"pR" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen/fountain,
+/obj/item/pda,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "qS" = (
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -392,15 +484,6 @@
 	icon_state = "2-i"
 	},
 /area/f13/wasteland)
-"rK" = (
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/obj/structure/window/fulltile/ruins,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "rS" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/ammo/shotgun,
@@ -409,6 +492,21 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"rW" = (
+/obj/structure/table/wood,
+/obj/item/storage/fancy/cigarettes/cigars/cohiba,
+/obj/item/lighter/gold,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"rX" = (
+/obj/structure/fence/handrail{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "rY" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -471,6 +569,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"tT" = (
+/obj/machinery/door/unpowered/wooddoor{
+	name = "Veteran Ranger"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "tZ" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -516,18 +620,17 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
-"uI" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/closed/wall/f13/store,
-/area/f13/wasteland)
 "vr" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
 /obj/effect/spawner/lootdrop/f13/armor/random,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
+"vx" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/ncr)
 "vI" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -559,9 +662,20 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"wa" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/closed/wall/r_wall,
+/area/f13/ncr)
 "we" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
+"ww" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "wE" = (
 /obj/machinery/door/airlock/highsecurity,
 /turf/open/floor/f13{
@@ -602,6 +716,13 @@
 "xr" = (
 /turf/open/transparent/openspace,
 /area/f13/caves)
+"xE" = (
+/obj/structure/chair/wood/modern{
+	dir = 4;
+	icon_state = "wooden_chair_new"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "xW" = (
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
@@ -609,15 +730,6 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/red,
 /area/f13/wasteland)
-"yS" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/structure/stairs/west,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "yT" = (
 /obj/machinery/door/unpowered/wooddoor{
 	name = "Sergeant"
@@ -630,11 +742,7 @@
 	},
 /area/f13/ncr)
 "zb" = (
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/obj/structure/barricade/bars,
-/obj/structure/window/fulltile/ruins,
+/obj/structure/simple_door/interior,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -651,6 +759,10 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"zt" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "zv" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -668,6 +780,9 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Ab" = (
+/turf/closed/wall/r_wall,
+/area/f13/ncr)
 "Al" = (
 /obj/machinery/door/unpowered/wooddoor{
 	name = "Recruits"
@@ -688,6 +803,20 @@
 "AM" = (
 /turf/closed/wall/f13/ruins,
 /area/f13/wasteland)
+"BP" = (
+/obj/structure/fence/handrail{
+	dir = 1;
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "Cc" = (
 /obj/structure/chair/office/dark,
 /obj/effect/decal/cleanable/dirt,
@@ -701,6 +830,9 @@
 /obj/item/stack/sheet/cloth/thirty,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
+"Cm" = (
+/turf/open/transparent/openspace,
+/area/f13/ncr)
 "CF" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -748,7 +880,10 @@
 /area/f13/building)
 "DP" = (
 /obj/machinery/autolathe,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "Ej" = (
 /obj/structure/bed,
@@ -765,7 +900,27 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier5,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
+/area/f13/wasteland)
+"EN" = (
+/obj/structure/fence/handrail{
+	dir = 8;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/fence/handrail_end{
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/f13/wasteland)
 "EU" = (
 /obj/structure/chair/office{
@@ -803,6 +958,12 @@
 /obj/structure/sign/poster/ncr/keep_to_myself,
 /turf/closed/wall/f13/wood/interior,
 /area/f13/ncr)
+"Gm" = (
+/obj/machinery/door/unpowered/wooddoor{
+	name = "Rangers"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "GD" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -824,9 +985,28 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"HZ" = (
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"Id" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "ID" = (
 /obj/structure/closet/cabinet/anchored,
 /turf/open/floor/carpet/red,
+/area/f13/wasteland)
+"IG" = (
+/obj/structure/chair/wood/fancy,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"IH" = (
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "IN" = (
 /obj/structure/window/fulltile/house{
@@ -909,6 +1089,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"MG" = (
+/turf/open/floor/f13{
+	dir = 5;
+	icon_state = "yellowsiding"
+	},
+/area/f13/wasteland)
 "Nz" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
@@ -932,6 +1118,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"NG" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "NK" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -949,6 +1141,24 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Od" = (
+/obj/structure/window/fulltile/house,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
+"Oj" = (
+/obj/structure/fence/handrail_corner{
+	dir = 4;
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "Or" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken,
@@ -990,6 +1200,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Ql" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "Qr" = (
 /obj/structure/sink{
 	dir = 8;
@@ -1002,6 +1218,14 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Qz" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "QA" = (
 /obj/structure/closet/crate/freezer/blood/anchored,
 /turf/open/floor/f13{
@@ -1027,7 +1251,7 @@
 /area/f13/building)
 "Rj" = (
 /obj/structure/rack,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13,
 /area/f13/wasteland)
 "Rl" = (
 /obj/structure/table,
@@ -1052,20 +1276,14 @@
 	name = "concrete wall"
 	},
 /area/f13/building)
-"RO" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/structure/simple_door/interior,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/ncr)
 "RY" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
 "Sb" = (
 /obj/machinery/computer/operating{
@@ -1100,10 +1318,19 @@
 /obj/machinery/light{
 	light_color = "#e8eaff"
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"Te" = (
+/obj/structure/chair/sofa/corp{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "Ua" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/f13{
@@ -1145,6 +1372,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood/interior,
 /area/f13/building)
+"WP" = (
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
+	},
+/area/f13/wasteland)
+"WY" = (
+/obj/machinery/door/unpowered/wooddoor,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "Xo" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -1182,6 +1418,27 @@
 "XZ" = (
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
+"Yn" = (
+/obj/structure/window/fulltile/house,
+/turf/closed/wall/r_wall,
+/area/f13/ncr)
+"Yz" = (
+/obj/structure/fence/handrail{
+	dir = 8;
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/fence/handrail_end{
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "YC" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/f13{
@@ -1194,6 +1451,20 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"YO" = (
+/obj/structure/fence/handrail_corner{
+	dir = 8;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "Zb" = (
 /obj/machinery/door/airlock/silver,
 /turf/open/floor/f13{
@@ -1209,8 +1480,20 @@
 /area/f13/building)
 "ZE" = (
 /obj/machinery/autolathe/ammo/unlocked,
-/turf/open/floor/f13/wood,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
 /area/f13/wasteland)
+"ZT" = (
+/obj/structure/bed{
+	pixel_y = 16
+	},
+/obj/item/bedsheet/black{
+	pixel_y = 16
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 
 (1,1,1) = {"
 we
@@ -1961,8 +2244,8 @@ ls
 ls
 ls
 ls
-ls
-ls
+Sj
+Sj
 Sj
 Sj
 Sj
@@ -2218,11 +2501,11 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
-yS
-rK
+xg
+xg
+xg
+xi
 gT
 xg
 VV
@@ -2475,11 +2758,11 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
 xg
-rK
+Cm
+Cm
+xi
 Xo
 xg
 Xo
@@ -2732,11 +3015,11 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
-vI
-RO
+xg
+JY
+JY
+xi
 xg
 xg
 xg
@@ -2989,9 +3272,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 zb
 HV
@@ -3246,9 +3529,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 wT
 Aw
@@ -3503,9 +3786,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 SW
 xi
 JY
@@ -3760,9 +4043,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 Al
 Ej
@@ -4017,9 +4300,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+nJ
 nJ
 OE
 zv
@@ -4274,9 +4557,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 OE
 Ej
@@ -4531,9 +4814,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 xi
 xi
@@ -4788,9 +5071,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+zv
 zv
 xi
 FQ
@@ -5045,9 +5328,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 FR
 la
@@ -5302,9 +5585,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+xg
 xg
 xi
 il
@@ -5559,9 +5842,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+xg
+vI
 vI
 xi
 yT
@@ -5816,9 +6099,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+hv
+xg
 xg
 nJ
 xg
@@ -6073,9 +6356,9 @@ ls
 ls
 ls
 ls
-ls
-ls
 Sj
+Sj
+Po
 Po
 Sj
 Sj
@@ -10169,22 +10452,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+YO
+EN
+Ab
+Od
+vx
+vx
+Yn
+Ab
+vx
+Yn
+Ab
+vx
+vx
+vx
+vx
+Ab
 ls
 ls
 ls
@@ -10426,22 +10709,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+oV
+Te
+vx
+ww
+HZ
+vx
+ww
+HZ
+vx
+ww
+HZ
+vx
+jD
+HZ
+HZ
+Ab
 ls
 ls
 ls
@@ -10683,22 +10966,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+gh
+aI
+vx
+hq
+HZ
+vx
+hq
+HZ
+vx
+hq
+HZ
+vx
+pR
+rW
+HZ
+Od
 ls
 ls
 ls
@@ -10940,22 +11223,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+vx
+vx
+WY
+vx
+vx
+WY
+vx
+vx
+WY
+vx
+NG
+Id
+HZ
+Od
 ls
 ls
 ls
@@ -11197,22 +11480,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+Gm
+HZ
+HZ
+HZ
+HZ
+HZ
+HZ
+HZ
+HZ
+tT
+HZ
+HZ
+HZ
+Ab
 ls
 ls
 ls
@@ -11454,22 +11737,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+vx
+vx
+WY
+vx
+IG
+xE
+HZ
+vx
+Ab
+wa
+Ab
+hq
+HZ
+wa
 ls
 ls
 ls
@@ -11711,22 +11994,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+gh
+Qz
+vx
+hq
+HZ
+vx
+mH
+zt
+HZ
+Gm
+Ql
+Cm
+Ab
+HZ
+HZ
+wa
 ls
 ls
 ls
@@ -11968,22 +12251,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+BP
+Te
+vx
+ww
+HZ
+vx
+li
+gK
+HZ
+Ab
+HZ
+Cm
+Ab
+ww
+ZT
+wa
 ls
 ls
 ls
@@ -12225,22 +12508,22 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Oj
+Yz
+vx
+Od
+Ab
+vx
+Ab
+Ab
+wa
+wa
+Ab
+vx
+vx
+vx
+vx
+vx
 ls
 ls
 ls
@@ -24409,7 +24692,7 @@ NL
 NL
 NL
 NL
-ls
+NL
 ls
 ls
 ls
@@ -24665,8 +24948,8 @@ ao
 Ml
 ao
 ao
+ao
 NL
-ls
 ls
 ls
 ls
@@ -24904,9 +25187,9 @@ ls
 ls
 ls
 NL
-ao
-ao
-ao
+IH
+jH
+WP
 ao
 sj
 ao
@@ -24922,8 +25205,8 @@ ao
 ao
 ao
 ao
+ao
 NL
-ls
 ls
 ls
 ls
@@ -25179,8 +25462,8 @@ ao
 ao
 ao
 ao
+ao
 NL
-ls
 ls
 ls
 ls
@@ -25419,25 +25702,25 @@ ls
 ls
 NL
 RY
-ao
-ao
-ao
-LS
-LS
-LS
-LS
-LS
-LS
-LS
+jH
+WP
 ao
 LS
 LS
 LS
 LS
-NA
-NA
+LS
+LS
+LS
+ao
+LS
+LS
+LS
+LS
+ao
+ao
+ao
 NL
-ls
 ls
 ls
 ls
@@ -25676,8 +25959,8 @@ ls
 ls
 NL
 DP
-ao
-ao
+jH
+WP
 ao
 LS
 dY
@@ -25691,10 +25974,10 @@ LS
 lI
 ID
 LS
-ao
-ao
+NA
 NL
-ls
+NL
+NL
 ls
 ls
 ls
@@ -25933,8 +26216,8 @@ ls
 ls
 NL
 lO
-ao
-ao
+jH
+WP
 ao
 LS
 xl
@@ -25947,11 +26230,11 @@ ao
 LS
 yt
 xl
-uI
+LS
 ao
-ao
-NL
 ls
+NL
+NL
 ls
 ls
 ls
@@ -26189,7 +26472,7 @@ ls
 ls
 ls
 NL
-ao
+MG
 ZE
 cb
 ao
@@ -26205,10 +26488,10 @@ SM
 xl
 xl
 NL
-jQ
-jQ
-NL
+lD
 ls
+NL
+NL
 ls
 ls
 ls
@@ -26465,7 +26748,7 @@ NL
 NL
 NL
 NL
-ls
+NL
 ls
 ls
 ls
@@ -26714,7 +26997,7 @@ LS
 Je
 CF
 LS
-ao
+lD
 LS
 Je
 CF
