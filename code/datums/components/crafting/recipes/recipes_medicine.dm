@@ -41,7 +41,7 @@
 
 /datum/crafting_recipe/bitter
 	name = "Bitter Drink"
-	result = /datum/reagent/medicine/bitter_drink
+	result = /obj/item/reagent_containers/pill/patch/bitterdrink
 	time = 30
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
