@@ -328,8 +328,8 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 55
-	armour_penetration = 0.55
+	damage = 45
+	armour_penetration = 0.5
 	flag = "laser" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = TRUE
@@ -339,7 +339,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 45
+	damage = 40
 	armour_penetration = 0.35
 	flag = "laser" //checks vs. energy protection
 	eyeblur = 0
@@ -356,12 +356,12 @@
 	is_reflectable = FALSE
 
 /obj/item/projectile/f13plasma/pistol //Plasma pistol
-	damage = 53
+	damage = 50
 	armour_penetration = 0.35
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 45
-	armour_penetration = 0.5
+	damage = 40
+	armour_penetration = 0.45
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
 	damage = 31
@@ -370,8 +370,8 @@
 /obj/item/projectile/beam/laser/rcw //RCW
 	name = "rapidfire beam"
 	icon_state = "xray"
-	damage = 35
-	armour_penetration = 0.40
+	damage = 36
+	armour_penetration = 0.5
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	light_color = LIGHT_COLOR_GREEN
 
@@ -407,8 +407,8 @@
 
 /obj/item/projectile/beam/laser/wattz2k
 	name = "laser bolt"
-	damage = 35
-	armour_penetration = 0.5
+	damage = 36
+	armour_penetration = 0.45
 
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser bolt"

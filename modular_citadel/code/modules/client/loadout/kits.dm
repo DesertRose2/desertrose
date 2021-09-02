@@ -1,4 +1,4 @@
-///Item boxes for custom loadouts transferred from Legacy.
+///Item boxes for custom loadouts transferred from Legacy and asorted custom items.
 
 /obj/item/storage/box/large/custom_kit
 	name = "Custom Loadout"
@@ -51,7 +51,7 @@
 //Pipera Rivera - purplepineapple
 /obj/item/storage/box/large/custom_kit/piperrivera/PopulateContents()
 	new /obj/item/modkit/piper_hat(src)
-	new /obj/item/modkit/piper_vest(src)
+	new /obj/item/modkit/hoodedrecon(src)
 	new /obj/item/clothing/accessory/waistcoat/sheepskin(src)
 	new /obj/item/clothing/under/f13/ranger/blue(src)
 	new /obj/item/clothing/shoes/f13/cowboy(src)
@@ -100,6 +100,7 @@
 /obj/item/storage/box/large/custom_kit/aliceprice/PopulateContents()
 	new /obj/item/modkit/riotgear/price(src)
 	new /obj/item/modkit/riotgear_helmet/price(src)
+	new /obj/item/storage/belt/holster/ranger4570bayonet
 
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()
@@ -210,3 +211,186 @@
 //Arol Hendredge - sadokist
 /obj/item/storage/box/large/custom_kit/arolhendredge/PopulateContents()
 	new /obj/item/modkit/luger(src)
+
+//Wolfgang Schlimm - dioclex
+/obj/item/storage/box/large/custom_kit/wolfgangschlimm/PopulateContents()
+	new /obj/item/clothing/head/f13/schlimmhat(src)
+	new /obj/item/clothing/suit/armor/f13/schlimmcoat(src)
+	new /obj/item/clothing/under/f13/schlimmsuit(src)
+
+//Crow - thefunnycheeseman
+/obj/item/storage/box/large/custom_kit/crow/PopulateContents()
+	new /obj/item/card/id/rusted(src)
+	new /obj/item/clothing/mask/rat/raven(src)
+
+//KC - croike
+/obj/item/storage/box/large/custom_kit/kc/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Tech - grongo
+/obj/item/storage/box/large/custom_kit/tech/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Nova - novaskelly
+/obj/item/storage/box/large/custom_kit/nova/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	new /obj/item/clothing/accessory/armband/med(src)
+	new /obj/item/modkit/talon/duster(src)
+
+//Smokes - lordyanex
+/obj/item/storage/box/large/custom_kit/smokes/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Marcy - landoorando
+/obj/item/storage/box/large/custom_kit/marcy/PopulateContents()
+	new /obj/item/modkit/markedmen(src)
+
+//Jack Torres - karlov
+/obj/item/storage/box/large/custom_kit/jacktorres/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/boonie_hat(src)
+	new /obj/item/modkit/lieutenantplatecarrier(src)
+
+//Alice Dakota - muhsollini
+/obj/item/storage/box/large/custom_kit/alicedakota/PopulateContents()
+	new /obj/item/clothing/mask/rat/vaultboy(src)
+
+//Haidee Murphy - purplepineapple
+/obj/item/storage/box/large/custom_kit/haideemurphy/PopulateContents()
+	new /obj/item/clothing/mask/rat/redding(src)
+
+//Aaron Cooper - wilsonmann55
+/obj/item/storage/box/large/custom_kit/aaroncooper/PopulateContents()
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+
+//Tranio Occisor Luti - spaceanglo
+/obj/item/storage/box/large/custom_kit/traniooccisorluti/PopulateContents()
+	new /obj/item/clothing/gloves/f13/blacksmith(src)
+	new /obj/item/clothing/mask/bandana/skull(src)
+
+//Graves - pisshole
+/obj/item/storage/box/large/custom_kit/gravestalon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Poet - schmeezi
+/obj/item/storage/box/large/custom_kit/poet/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
+
+//Stitch - themojavewanderer
+/obj/item/storage/box/large/custom_kit/stitch/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Citadel - arkadec
+/obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
+	new /obj/item/clothing/mask/rat/citadel(src)
+
+//Blade - Sadokist
+/obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
+	new /obj/item/modkit/luger(src)
+	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
+
+//Felina - Yurek
+/obj/item/storage/box/large/custom_kit/felina/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Lamb - yecrowbarman
+/obj/item/storage/box/large/custom_kit/lamb/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Rhiannon - asterixcodix
+/obj/item/storage/box/large/custom_kit/rhiannon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+	new /obj/item/modkit/talon/duster(src)
+
+//Pea-Shooter - elizabethdame
+/obj/item/storage/box/large/custom_kit/peashooter/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/brahmincowboyhat(src)
+	new /obj/item/clothing/shoes/workboots/mining(src)
+	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/mask/bandana/oldredbandana(src)
+	new /obj/item/clothing/glasses/legiongoggles(src)
+
+//Silver - muhsollini
+/obj/item/storage/box/large/custom_kit/silvertalon/PopulateContents()
+	new /obj/item/clothing/under/syndicate/skirt(src)
+	new /obj/item/modkit/talon(src)
+	new /obj/item/clothing/glasses/legiongoggles(src)
+	new /obj/item/clothing/mask/bandana/auxilia(src)
+
+//Marine - saintsfan3324
+/obj/item/storage/box/large/custom_kit/marinetalon/PopulateContents()
+	new /obj/item/modkit/talon(src)
+
+//Flagstaff - landoorando
+/obj/item/storage/box/large/custom_kit/flagstaff/PopulateContents()
+	new /obj/item/clothing/mask/rat/flagstaff(src)
+
+//Emily Winona - muhsollini
+/obj/item/storage/box/large/custom_kit/emilywinona/PopulateContents()
+	new /obj/item/modkit/rangerjacket(src)
+	new /obj/item/clothing/under/f13/ranger/modif_ranger(src)
+	new /obj/item/clothing/shoes/f13/military/cowboy(src)
+	new /obj/item/clothing/mask/bandana/ranger(src)
+	new /obj/item/storage/belt/holster/hip(src)
+	new /obj/item/storage/belt/military/assault/ncr/crossbelt/reverse(src)
+	new /obj/item/clothing/accessory/waistcoat/cowboy(src)
+
+//Luti - spaceanglo
+/obj/item/storage/box/large/custom_kit/luti/PopulateContents()
+	new /obj/item/modkit/ursuslegion(src)
+
+//Valentina Vega - pisshole
+/obj/item/storage/box/large/custom_kit/valentinavega/PopulateContents()
+	new /obj/item/modkit/trailcoat(src)
+	new /obj/item/modkit/harebellscout(src)
+	new /obj/item/clothing/glasses/sunglasses/big(src)
+	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/accessory/medal/californian_cross(src)
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+	new /obj/item/clothing/under/harebell_dress(src)
+	new /obj/item/clothing/under/flowerdress(src)
+
+//Bartholomew The Apostle - pilotbland
+/obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()
+	new /obj/item/clothing/glasses/eyepatch(src)
+	new /obj/item/clothing/shoes/jackboots(src)
+	new /obj/item/clothing/under/f13/cowboyg(src)
+	new /obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris(src)
+
+//Twenty-Twice - Gurking
+/obj/item/storage/box/large/custom_kit/twentytwice/PopulateContents()
+	new /obj/item/clothing/head/mikuhair(src)
+
+//Lullaby Fuchs - ollieoxen
+/obj/item/storage/box/large/custom_kit/lullabyfuchs/PopulateContents()
+	new /obj/item/modkit/ncr_trenchcloak(src)
+
+//Aphelion Roche - gurking
+/obj/item/storage/box/large/custom_kit/aphelionroche/PopulateContents()
+	new /obj/item/clothing/suit/toggle/labcoat/fieldscribe(src)
+	new /obj/item/storage/belt/military/alt(src)
+
+//Matt Sharp - soldierboy2
+/obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
+	new /obj/item/clothing/mask/gas(src)
+
+//Mariya Sankinova - Rebel0
+/obj/item/storage/box/large/custom_kit/mariya/PopulateContents()
+	new /obj/item/modkit/mariarmor(src)
+	new /obj/item/modkit/marihelmet(src)
+	
+//Katie Morgan - IdiocityInc
+/obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
+	new /obj/item/clothing/head/beret/ncr_scout_old(src)
+	
+//Bryan ''Aranesp'' Monroe - ElizabethDame
+/obj/item/storage/box/large/custom_kit/bryanmonroe/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
+	new /obj/item/clothing/neck/stethoscope(src)
+	new /obj/item/clothing/shoes/f13/military/leather(src) 
+
+//Jay-Oh - Conormackgegore
+/obj/item/storage/box/large/custom_kit/jayoh/PopulateContents()
+	new /obj/item/clothing/under/f13/dbdu(src) 

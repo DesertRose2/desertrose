@@ -165,6 +165,14 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
+/obj/item/clothing/head/helmet/f13/raider/templar
+	name = "raider knight helmet"
+	desc = "(IV) A horned helmet made out of what looks like hardened leather and scraps of metal."
+	icon_state = "templar"
+	item_state = "templar"
+	armor = list("tier" = 4, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
 //Legion
 /obj/item/clothing/head/f13/legion/servant
 	name = "servant headwear"
@@ -220,11 +228,19 @@
 	icon_state = "legprime"
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/head/helmet/f13/legion/prime/explorer
+	name = "legion explorer hood"
+	desc = "(IV) It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
+	icon_state = "legexplorer"
+	item_state = "legexplorer"
+	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
-	name = "slave master helmet"
-	desc = "(IV) The unique helmet used by the disciplinary corps of the Legion."
+	name = "legion prefect helmet"
+	desc = "(IV) An unique helmet used by the disciplinary corps of the Legion. It has a metal mask to help protect its user."
 	icon_state = "legslavemaster"
 	item_state = "legslavemaster"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	dog_fashion = null
@@ -238,23 +254,17 @@
 
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "legion veteran decan helmet"
-	desc = "(VI) A metal helmet with ballistic visor and a plume, denoting veteran Decanus status."
+	desc = "(V) A metal helmet with ballistic visor and a plume, denoting veteran Decanus status."
 	icon_state = "legheavy"
 	item_state = "legheavy"
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 75, "acid" = 10)
+	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 75, "acid" = 10)
 	actions_types = list(/datum/action/item_action/toggle)
 
 /obj/item/clothing/head/helmet/f13/legion/heavy/attack_self(mob/user)
 	weldingvisortoggle(user)
 	icon_state = "legheavyup"
 	item_state = "legheavyup"
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
-
-/obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	name = "legion explorer hood"
-	desc = "(V) It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
-	icon_state = "legexplorer"
-	item_state = "legexplorer"
+	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	name = "legion fox vexillarius helmet"
@@ -284,14 +294,14 @@
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	name = "legion recruit decanus helmet"
-	desc = "(VI) This reinforced leather helmet has a plume of black and dark red feathers."
+	desc = "(V) This reinforced leather helmet has a plume of black and dark red feathers."
 	icon_state = "legdecan"
 	item_state = "legdecan"
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	name = "legion prime decanus helmet"
-	desc = "(VI) This reinforced leather helmet with a red peak has a plume of black feathers."
+	desc = "(V) This reinforced leather helmet with a red peak has a plume of black feathers."
 	item_state = "legdecanprim"
 	icon_state = "legdecanprim"
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
@@ -325,7 +335,7 @@
 	desc = "(VII) The once-marvelous helmet of the T-45d power armor set, repurposed by the Legion into a symbol of its might. It has a large plume of red horse hair across the top of it going horizontally, donoting the rank of Centurion."
 	icon_state = "palacent"
 	item_state = "palacent"
-	armor = list("tier" = 6, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 7, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 
 /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
@@ -365,240 +375,12 @@
 
 //NCR
 
-/obj/item/clothing/head/f13/ncr
-	name = "NCR steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet. Looks like you can write on it and strap a few items on the helmet band."
-	icon_state = "ncr_steelpot"
-	item_state = "ncr_steelpot"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	strip_delay = 50
-	obj_flags = UNIQUE_RENAME
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets
-
-/obj/item/clothing/head/f13/ncr/steelpot_goggles
-	name = "NCR storm steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet, issued with an additional pair of storm goggles for weather resistance."
-	icon_state = "steelpot_goggles"
-	item_state = "steelpot_goggles"
-	alt_toggle_message = "You push the goggles down "
-	can_toggle = 1
-	flags_inv = HIDEEARS
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_cooldown = 0
-	flags_cover = HEADCOVERSEYES
-	visor_flags_cover = HEADCOVERSEYES
-	dog_fashion = null
-
-/obj/item/clothing/head/f13/ncr/steelpot_goggles/attack_self(mob/user)
-	if(can_toggle && !user.incapacitated())
-		if(world.time > cooldown + toggle_cooldown)
-			cooldown = world.time
-			up = !up
-			flags_1 ^= visor_flags
-			flags_inv ^= visor_flags_inv
-			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
-
-			user.update_inv_head()
-			if(iscarbon(user))
-				var/mob/living/carbon/C = user
-				C.head_update(src, forced = 1)
-
-			if(active_sound)
-				while(up)
-					playsound(src.loc, "[active_sound]", 100, 0, 4)
-					sleep(15)
-
-/obj/item/clothing/head/f13/ncr/steelpot_med
-	name = "NCR medic steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet with the addition of decalling signifying a medic."
-	icon_state = "steelpot_med"
-	item_state = "steelpot_med"
-
-/obj/item/clothing/head/f13/ncr/steelpot_mp
-	name = "NCR military police steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet emblazoned with the initials of the military police."
-	icon_state = "steelpot_mp"
-	item_state = "steelpot_mp"
-
-/obj/item/clothing/head/f13/ncr/steelpot_gambler
-	name = "NCR gambler steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet. Stashed in the strap are decks of cards, dominoes and cigarettes for personal use."
-	icon_state = "steelpot_gambler"
-	item_state = "steelpot_gambler"
-
-/obj/item/clothing/head/f13/ncr/steelpot_bandolier
-	name = "NCR bandolier steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet. This one has clearly seen heavy use, as well as having additional bullets tucked into the strap."
-	icon_state = "steelpot_bandolier"
-	item_state = "steelpot_bandolier"
-
-/obj/item/clothing/head/f13/ncr/steelpot_patriot
-	name = "NCR patriot steelpot helmet"
-	desc = "(V) A standard issue NCR steel helmet. This one has been patriotically customised to feature the NCR's flag prominently across its front."
-	icon_state = "steelpot_patriot"
-	item_state = "steelpot_patriot"
-
-/obj/item/clothing/head/f13/ncr_flapcap
-	name = "NCR field cap"
-	desc = "(V) A special issue canvas NCR field cap with cotton neckflap, for sun protection in arid climates."
-	icon_state = "ncr_flapcap"
-	item_state = "ncr_flapcap"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	icon_state = "ncr_flapcap"
-	item_state = "ncr_flapcap"
-
-/obj/item/clothing/head/f13/ncr_slouch
-	name = "NCR slouch hat"
-	desc = "(V) An irregular issue NCR sun hat, the left side of the brim is pinned to the crown for ease with shouldering rifles."
-	icon_state = "ncr_slouch"
-	item_state = "ncr_slouch"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr
-	name = "NCR officer beret"
-	desc = "(VI) A green beret, standard issue for all commissioned NCR Officers."
-	icon_state = "ncr_officer_beret"
-	item_state = "ncr_officer_beret"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_recon
-	name = "NCR First Recon beret"
-	desc = "(VI) A red beret, issued to members of NCR First Recon."
-	icon_state = "ncr_recon_beret"
-	item_state = "ncr_recon_beret"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_scout
-	name = "NCR Third Scout beret"
-	desc = "(VI) A brown beret, issued to members of the NCR Third Scout Battallion."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_scout_lt
-	name = "NCR Third Scout officer beret"
-	desc = "(VII) A brown beret, issued to officers of the NCR Third Scout Battallion."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_sapper
-	name = "NCR Sapper beret"
-	desc = "(VII) A grey beret, issued to troopers that have passed Sapper School."
-	icon_state = "ncr_sapper_beret"
-	item_state = "ncr_sapper_beret"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_sof
-	name = "NCR SOF beret"
-	desc = "(VII) A tan beret, issued members of the New California Republic Special Operations Command."
-	icon_state = "ncr_sof_beret"
-	item_state = "ncr_sof_beret"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/f13/ncr_stetson
-	name = "NCR air cavalry stetson"
-	desc = "(VII) A black brahmin leather stetson, authorized for usage amongst all troopers assigned to Air Cavalry units."
-	icon_state = "ncr_stetson"
-	item_state = "ncr_stetson"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/f13/ncr_cap
-	name = "NCR garrison cap"
-	desc = "(I) A simple cloth garrison cap to be worn when a helmet isn't necessary."
-	icon_state = "ncr_cap"
-	item_state = "ncr_cap"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/head/f13/ncr_campaign
-	name = "NCR campaign hat"
-	desc = "(VII) A khaki campaign hat, popularly used by senior NCOs in the NCRA."
-	icon_state = "ncr_campaign"
-	item_state = "ncr_campaign"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_dresscap
-	name = "NCR peaked cap"
-	desc = "(II) A tan peaked cap with silver pin, designated for enlisted NCRA personnel."
-	icon_state = "ncr_dresscap"
-	item_state = "ncr_dresscap"
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_codresscap
-	name = "NCR peaked cap"
-	desc = "(II) A tan peaked cap with golden pin, designated for commissioned NCRA personnel."
-	icon_state = "ncr_codresscap"
-	item_state = "ncr_codresscap"
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-//NCR Ranger
-
-/obj/item/clothing/head/beret/ncr_recon_ranger
-	name = "NCR Ranger scout beret"
-	desc = "(IV) A brown beret, issued to members of the NCR Recon Rangers."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/f13/trailranger
-	name = "NCR trail ranger hat"
-	desc = "(IV) A rustic, homely style cowboy hat worn by NCR trail rangers. Yeehaw!"
-	icon_state = "cowboyrang"
-	item_state = "cowboyrang"
-	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
-
-/obj/item/clothing/head/f13/ranger
-	name = "NCR ranger campaign hat"
-	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
-	icon_state = "drillhat"
-	item_state = "drill_hat"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
-
-/obj/item/clothing/head/helmet/f13/combat/ncr_patrol
-	name = "NCR patrol helmet"
-	desc = "(V) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
-	icon_state = "ncr_patrol_helmet"
-	item_state = "ncr_patrol_helmet"
-	flags_inv = HIDEEARS|HIDEHAIR
-	flags_cover = null
-
-/obj/item/clothing/head/helmet/f13/combat/ncr
-	name = "NCR combat helmet"
-	desc = "(V) An old military grade pre-war combat helmet, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_helmet"
-	item_state = "ncr_helmet"
-
-/obj/item/clothing/head/helmet/f13/combat/mk2/ncr
-	name = "reinforced NCR combat helmet"
-	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_helmet"
-	item_state = "ncr_helmet"
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat
-	name = "ranger combat helmet"
-	desc = "(VII) An old combat helmet, out of use around the time of the war."
-	icon_state = "ranger"
-	item_state = "ranger"
-	armor = list("tier" = 7, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-	flash_protect = 1
-	glass_colour_type = /datum/client_colour/glass_colour/red
-	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
-	darkness_view = 24
-
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/eliteriot
 	name = "elite riot gear helmet"
-	desc = "(VIII) An old combat helmet seen in the divide, repurposed for higher ranking Rangers."
+	desc = "(VII) An old combat helmet seen in the divide, repurposed for higher ranking Rangers."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
-	armor = list("tier" = 8, "energy" = 60, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 40, "acid" = 0)
-
+	armor = list("tier" = 7, "energy" = 60, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 40, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 	name = "desert ranger combat helmet"
@@ -625,10 +407,10 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	name = "brotherhood helmet"
-	desc = "(VI) An improved combat helmet, bearing the symbol of the Knights."
+	desc = "(V) An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood star knight helmet"
@@ -645,17 +427,17 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
-	desc = "(V) An old military grade pre-war combat helmet, repainted to the colour scheme of the Brotherhood of Steel."
+	desc = "(IV) An old military grade pre-war combat helmet, repainted to the colour scheme of the Brotherhood of Steel. It seems to be a surplus model."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced initiate helmet"
-	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
+	desc = "(V) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout
 	name = "brotherhood scout helmet"
@@ -679,10 +461,10 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
-	desc = "(VII) An improved combat helmet, bearing a series of red markings."
+	desc = "(VI) An improved combat helmet, bearing a series of red markings."
 	icon_state = "brotherhood_helmet_outcast"
 	item_state = "brotherhood_helmet_outcast"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/f13/boscap
 	name = "brotherhood formal cap"
@@ -831,12 +613,33 @@
 	armor = list("tier" = 5, "energy" = 5, "bomb" = 5, "bio" = 2, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc
-	name = "vtcc riot helmet"
-	desc = "(VII) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
+	name = "VTCC riot helmet"
+	desc = "(V) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
 	icon_state = "vtcc_riot_helmet"
 	item_state = "vtcc_riot_helmet"
+	armor = list("tier" = 5, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	can_toggle = null
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
+	name = "VTCC scout helmet"
+	desc = "(IV) A riot helmet adapted from the design of most pre-war riot helmets, painted blue."
+	icon_state = "vtcc_riot_helmet"
+	item_state = "vtcc_riot_helmet"
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 10, "fire" = 40, "acid" = 10)
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal
+	name = "VTCC marshal cap"
+	desc = "(VII) A peaked dark blue cap, probably worn by someone important."
+	icon_state = "hopcap"
+	item_state = "hopcap"
 	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/heavy
+	name = "VTCC heavy riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, painted black."
+	icon_state = "vtcc_heavy_riot_helmet"
+	item_state = "vtcc_heavy_riot_helmet"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 30)
 
 
 //THE GRAVEYARD

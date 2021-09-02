@@ -302,6 +302,7 @@
 	fire_sound = 'sound/weapons/gunshot.ogg'
 	automatic_burst_overlay = FALSE
 	can_suppress = FALSE
+	untinkerable = TRUE
 	burst_size = 1
 	semi_auto = TRUE
 	pin = /obj/item/firing_pin/implant/pindicate
@@ -516,7 +517,7 @@
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
-	suppressor_y_offset = 19
+	suppressor_y_offset = 17
 
 /obj/item/gun/ballistic/automatic/smg10mm
 	name = "10mm submachine gun"
@@ -549,12 +550,12 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 15
 	burst_size = 3
-	fire_delay = 6
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = FALSE
 	can_attachments = TRUE
-	extra_damage = -4
-	can_scope = TRUE
+	extra_damage = -2
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
@@ -569,11 +570,11 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	burst_size = 2
-	fire_delay = 5
+	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = TRUE
 	can_attachments = TRUE
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
@@ -675,7 +676,7 @@
 
 /obj/item/gun/ballistic/automatic/service/r82
 	name = "R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
 	fire_delay = 1 //faster ROF, superior to regular service rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -688,7 +689,7 @@
 	automatic_burst_overlay = TRUE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	semi_auto = TRUE
-	burst_shot_delay = 2.2 //Was 2 before.
+	burst_shot_delay = 3.0 //Was 2.2 before.
 	can_suppress = TRUE
 	can_automatic = TRUE
 	can_scope = TRUE
@@ -698,6 +699,54 @@
 	scope_state = "smallrifle_scope"
 	scope_x_offset = 5
 	scope_y_offset = 13
+
+/obj/item/gun/ballistic/automatic/service/r82/ncr
+	name = "NCR R82 heavy service rifle"
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	fire_delay = 1 //faster ROF, superior to regular service rifle
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	icon_state = "R82_ncr"
+	item_state = "R84"
+	//automatic = 1
+	spread = 3
+	burst_size = 1
+	semi_auto = TRUE
+	burst_shot_delay = 3.0 //Was 2.2 before.
+	can_automatic = FALSE
+	untinkerable = TRUE
+	can_suppress = TRUE
+	can_scope = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 5
+	scope_y_offset = 13
+
+/obj/item/gun/ballistic/automatic/service/r82/legion
+	name = "'Pilum' rifle"
+	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture. It features a mark of bull on it and feels heavier than usual."
+	icon_state = "pilum"
+	item_state = "fnfal"
+	can_automatic = FALSE
+	untinkerable = TRUE
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_delay = 3
+	burst_shot_delay = 2
+	force = 20
+	spread = 1
+	suppressor_state = "suppressor"
+	can_scope = TRUE
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	suppressor_x_offset = 31
+	suppressor_y_offset = 15
+	bayonet_state = "rifles"
+	knife_x_offset = 22
+	knife_y_offset = 12
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -762,8 +811,8 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_damage = 0
-	extra_penetration = 0
+	extra_damage = 6
+	extra_penetration = 0.3
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -817,7 +866,7 @@
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
-	suppressor_y_offset = 27
+	suppressor_y_offset = 16
 	//automatic = 0
 
 /obj/item/gun/ballistic/automatic/type93
@@ -825,6 +874,7 @@
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
+	icon = 'icons/obj/guns/ballistic/type93.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_suppress = TRUE
@@ -832,11 +882,14 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	burst_size = 2
 	fire_delay = 3
+	can_attachments = TRUE
+	can_scope = FALSE
+	can_bayonet = FALSE
 	spread = 10
 	extra_damage = 2
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 27
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 40
+	suppressor_y_offset = 18
 
 /obj/item/gun/ballistic/automatic/m1garand
 	name = "battle rifle"
@@ -881,7 +934,7 @@
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_HEAVY
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
@@ -893,10 +946,28 @@
 	can_automatic = FALSE
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
 
+/obj/item/gun/ballistic/automatic/m1garand/ncr
+	name = "Pawolski's Retribution"
+	desc = "'I am your rifle, you are on guard duty.'"
+	icon_state = "pawolski"
+	extra_damage = 5
+
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Proudly issued to Scout Captains and packs a mean punch. Chambered in 7.62x51."
 	icon_state = "republics_pride"
+	item_state = "scoped308"
+	extra_damage = 8
+	extra_penetration = 0.1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_scope = FALSE
+
+/obj/item/gun/ballistic/automatic/m1garand/republicsdemise
+	name = "Republic's Demise"
+	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. This one seems to be looted from a dead NCR Lieutenant and the flag replaced with a bull. Chambered in 7.62x51."
+	icon_state = "republics_demise"
 	item_state = "scoped308"
 	extra_damage = 8
 	extra_penetration = 0.1
@@ -945,6 +1016,28 @@
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
+
+/obj/item/gun/ballistic/automatic/bastard
+	name = "'Bastard' LMG"
+	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
+	icon_state = "bastard"
+	item_state = "bastard"
+	slot_flags = 0
+	mag_type = /obj/item/ammo_box/magazine/lmg
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	can_attachments = TRUE
+	can_suppress = TRUE
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+	suppressor_state = "suppressor"
+	burst_size = 2
+	fire_delay = 3
+	burst_shot_delay = 3
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	spread = 30
+	randomspread = 1
+	extra_damage = -2
 
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
@@ -996,7 +1089,7 @@
 	desc = "A DKS 501, chambered in .308 Winchester. This one has a gold trim and the words 'Old Cassius' engraved into the stock."
 	icon_state = "gold_sniper"
 	item_state = "gold_sniper"
- 
+
 
 //Auto-pipe rifle. Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe
@@ -1034,10 +1127,11 @@
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	force = 40
+	force = 20
 	automatic_burst_overlay = FALSE
 	//automatic = 0
 	semi_auto = TRUE
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/m1919
 	name = "Browning M1919"
@@ -1137,7 +1231,7 @@
 	icon_state = "p90"
 	item_state = "m90"
 	burst_size = 3
-	fire_delay = 1
+	fire_delay = 2.5
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -1162,7 +1256,7 @@
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 4
+	extra_damage = 2
 	extra_penetration = 0.08
 	automatic_burst_overlay = FALSE
 	//automatic = 1
@@ -1181,6 +1275,14 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 26
 	suppressor_y_offset = 31
+
+/obj/item/gun/ballistic/automatic/m1carbine/ncr
+	name = "NCR m1 carbine"
+	desc = "The M1 Carbine is a renowned carbine that's been in service since WW2. This varient seems to sport a few modernizations alongside an NCR design in brahmin leather on its stock."
+	icon_state = "ncr-m1carbine"
+	can_automatic = FALSE
+	untinkerable = TRUE
+	extra_damage = 4
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact
 	name = "m1a1 carbine"
@@ -1220,7 +1322,7 @@
 	icon_state = "delisle"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
-	extra_damage = 3
+	extra_damage = 2
 	extra_penetration = 0.06
 	fire_delay = 4.5
 	w_class = WEIGHT_CLASS_BULKY
@@ -1239,6 +1341,23 @@
 	scope_y_offset = 14
 	semi_auto = TRUE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/automatic/commando/dmr
+	name = "commando battle rifle"
+	desc = "An integrally suppressed bolt action carbine. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy on a rifle firing .45 APC; specifically .45 stick-mags that are side-mounted.. for some reason."
+	icon_state = "destroyer"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/greasegun
+	extra_damage = 4
+	extra_penetration = 0.1
+	fire_delay = 6
+	burst_size = 1
+	can_automatic = FALSE
+	can_scope = TRUE
+	scope_state = "lasmusket_scope"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	semi_auto = TRUE
 
 /obj/item/gun/ballistic/automatic/mp5
 	name = "mp5sd"
@@ -1281,9 +1400,11 @@
 	fire_sound = 'sound/f13weapons/american180.ogg'
 	can_suppress = FALSE
 	can_unsuppress = FALSE
-	burst_size = 2
-	burst_shot_delay = 1
+	burst_size = 4
+	burst_shot_delay = 2
+	fire_delay = 3
 	suppressed = 1
+	untinkerable = TRUE
 
 /obj/item/gun/ballistic/automatic/xl70e3
 	name = "xl70e3"
@@ -1363,6 +1484,9 @@
 	burst_size = 1
 	can_automatic = TRUE
 	semi_auto = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/g11/upgraded
 	name = "g11e"
@@ -1373,6 +1497,9 @@
 	burst_shot_delay = 1
 	can_suppress = FALSE
 	spread = 5
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1387,6 +1514,8 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 10
 	fire_delay = 3
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"
@@ -1395,10 +1524,15 @@
 	item_state = "cshotgun1"
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g
-	burst_size = 3 //Who keeps nerfing this? S.B.
+	burst_size = 3
+	fire_delay = 4
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/shotgun/caws
 	name = "H&K CAWS"
@@ -1412,6 +1546,10 @@
 	//automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
+	pin = null
+	extra_damage = 0
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/m2a1
 	name = "Browning M2A1"

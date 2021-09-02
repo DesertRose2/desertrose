@@ -225,3 +225,23 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/royalcheese
 	subcategory = CAT_MISCFOOD
+	
+/datum/crafting_recipe/food/poutine
+	name = "Poutine"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/fries = 1,
+		/obj/item/reagent_containers/food/snacks/cheesewedge = 1,
+		/obj/item/reagent_containers/food/snacks/meatball = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/poutine
+	subcategory = CAT_MISCFOOD
+	
+/datum/crafting_recipe/food/trailmix
+	name = "Trail Mix"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/grown/pinyon = 3,
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1,
+		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/trailmix
+	subcategory = CAT_MISCFOOD

@@ -48,38 +48,8 @@
 		new /obj/item/reagent_containers/food/snacks/cube/monkey(get_turf(holder.my_atom))
 	..()
 
-//Green
-/datum/chemical_reaction/slime/slimemutate
-	name = "Mutation Toxin"
-	id = /datum/reagent/slime_toxin
-	results = list(/datum/reagent/slime_toxin = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/slimehuman
-	name = "Human Mutation Toxin"
-	id = /datum/reagent/mutationtoxin
-	results = list(/datum/reagent/mutationtoxin = 1)
-	required_reagents = list(/datum/reagent/blood = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/slimelizard
-	name = "Lizard Mutation Toxin"
-	id = /datum/reagent/mutationtoxin/lizard
-	results = list(/datum/reagent/mutationtoxin/lizard = 1)
-	required_reagents = list(/datum/reagent/radium = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/slimemammal
-	name = "Mammal Mutation Toxin"
-	id = /datum/reagent/mutationtoxin/mammal
-	results = list(/datum/reagent/mutationtoxin/mammal = 1)
-	required_reagents = list(/datum/reagent/water = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
+//Green 
+//Muta only so currently only for crossbreeding
 
 //Metal
 /datum/chemical_reaction/slime/slimemetal
@@ -423,13 +393,7 @@
 	..()
 
 //Black
-/datum/chemical_reaction/slime/slimemutate2
-	name = "Advanced Mutation Toxin"
-	id = /datum/reagent/aslimetoxin
-	results = list(/datum/reagent/aslimetoxin = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/black
+//muta removed
 
 //Oil
 /datum/chemical_reaction/slime/slimeexplosion
@@ -680,15 +644,4 @@
 
 /datum/chemical_reaction/slime/slime_transfer/on_reaction(datum/reagents/holder)
 	new /obj/item/slimepotion/transference(get_turf(holder.my_atom))
-	..()
-
-/datum/chemical_reaction/slime/flight_potion
-	name = "Flight Potion"
-	id = "flightpotion"
-	required_reagents = list(/datum/reagent/water/holywater = 5, /datum/reagent/uranium = 5)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/rainbow
-
-/datum/chemical_reaction/slime/flight_potion/on_reaction(datum/reagents/holder)
-	new /obj/item/reagent_containers/glass/bottle/potion/flight(get_turf(holder.my_atom))
 	..()

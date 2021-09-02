@@ -39,30 +39,40 @@
 				/datum/reagent/medicine/silver_sulfadiazine = 10)
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/bitter
+	name = "Bitter Drink"
+	result = /obj/item/reagent_containers/pill/patch/bitterdrink
+	time = 30
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
+				/obj/item/reagent_containers/food/drinks/bottle/sunset = 1
+				)
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/healpowder
 	name = "Healing powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 3,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 3)
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 2)
 	time = 35
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/healpoultice
 	name = "Healing poultice"
 	result = /obj/item/reagent_containers/pill/patch/healpoultice
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 2,
-				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
-				/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
-				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2)
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 1,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 1,
+				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 1)
 	time = 45
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 4,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 4,
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 2,
 				/obj/item/reagent_containers/syringe = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 45
@@ -124,7 +134,7 @@
 
 /datum/crafting_recipe/medx
 	name = "Med-X"
-	result = /obj/item/reagent_containers/syringe/medx
+	result = /obj/item/reagent_containers/pill/patch/medx
 	reqs = list(/obj/item/reagent_containers/syringe = 1,
 				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2,
 				/obj/item/reagent_containers/food/snacks/grown/datura = 2,
@@ -133,6 +143,30 @@
 				/obj/item/reagent_containers/food/snacks/grown/broc = 2)
 	time = 35
 	tools = list(TOOL_WORKBENCH, TOOL_WELDER)
+	category = CAT_MEDICAL
+	always_availible = FALSE
+
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/pill/patch/hydra
+	reqs = list(/datum/reagent/consumable/nuka_cola = 10,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 4,
+				/obj/item/reagent_containers/food/snacks/grown/broc = 3,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL
+	always_availible = FALSE
+
+/datum/crafting_recipe/cateye
+	name = "Cateye"
+	result = /obj/item/storage/pill_bottle/chem_tin/cateye
+	reqs = list(/obj/item/storage/pill_bottle = 1,
+				/obj/item/reagent_containers/food/snacks/grown/carrot = 2,
+				/obj/item/reagent_containers/food/snacks/grown/agave = 2,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
 	category = CAT_MEDICAL
 	always_availible = FALSE
 
@@ -157,3 +191,12 @@
 	time = 20
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MEDICAL
+
+/datum/crafting_recipe/radshroom
+	name = "Mushroom Extract"
+	result = /obj/item/reagent_containers/glass/bottle/radshroom
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
+				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 1)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL				

@@ -64,6 +64,7 @@
 	tools = list(TOOL_FORGE)
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
+	always_availible = FALSE
 
 /datum/crafting_recipe/survival
 	name = "Survival Knife"
@@ -518,7 +519,9 @@
 	tools = list(TOOL_FORGE)
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
+	always_availible = FALSE
 
+/*
 /datum/crafting_recipe/lighttribe
 	name = "Light Tribal Armor"
 	result = /obj/item/clothing/suit/armor/f13/tribe_armor
@@ -528,8 +531,8 @@
 	tools = list(TOOL_FORGE)
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
+	always_availible = FALSE
 
-/*
 /datum/crafting_recipe/plate
 	name = "Plate Armor"
 	result = /obj/item/clothing/suit/armor/plate/crusader/plate

@@ -15,6 +15,10 @@
 /datum/component/storage/concrete/pockets
 	max_w_class = WEIGHT_CLASS_NORMAL
 
+/datum/component/storage/concrete/pockets/pothead
+	max_items = 2
+	max_w_class = WEIGHT_CLASS_SMALL
+
 /datum/component/storage/concrete/pockets/small
 	max_items = 1
 	attack_hand_interact = FALSE
@@ -56,6 +60,7 @@
 		/obj/item/scalpel, /obj/item/reagent_containers/syringe, /obj/item/dnainjector,
 		/obj/item/reagent_containers/hypospray/medipen, /obj/item/reagent_containers/dropper,
 		/obj/item/implanter, /obj/item/screwdriver, /obj/item/weldingtool/mini,
+		/obj/item/clothing/mask/cigarette, /obj/item/storage/fancy/cigarettes,
 		/obj/item/firing_pin, /*/obj/item/throwing_star/throwingknife,*/ /obj/item/gun/ballistic/revolver/detective,
 		/obj/item/gun/ballistic/revolver/police, /obj/item/gun/ballistic/revolver/needler
 		))

@@ -461,6 +461,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	force = 25
+	armour_penetration = 0.1
 	icon_prefix = "supersledge"
 
 obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()

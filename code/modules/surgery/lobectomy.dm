@@ -10,8 +10,8 @@
 	if(L)
 		if(L.damage > 60 && !L.operated)
 			return TRUE
-	return FALSE
-
+	else
+		return FALSE
 
 //lobectomy, removes the most damaged lung lobe with a 95% base success chance
 /datum/surgery_step/lobectomy

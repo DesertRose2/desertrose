@@ -189,15 +189,7 @@
 	results = list(/datum/reagent/nitrous_oxide = 5)
 	required_reagents = list(/datum/reagent/ammonia = 2, /datum/reagent/nitrogen = 1, /datum/reagent/oxygen = 2)
 	required_temp = 525
-
-//Technically a mutation toxin
-/datum/chemical_reaction/mulligan
-	name = "Mulligan"
-	id = "mulligan"
-	results = list(/datum/reagent/mulligan = 1)
-	required_reagents = list(/datum/reagent/slime_toxin = 1, /datum/reagent/toxin/mutagen = 1)
-
-
+	
 /datum/chemical_reaction/fermis_plush
 	name = "Fermis plush"
 	id = "fermis_plush"
@@ -708,12 +700,12 @@
 	for(var/i in 1 to multiplier)
 		new /obj/item/stack/sheet/plastic(location)
 
-/datum/chemical_reaction/pax
+/*/datum/chemical_reaction/pax
 	name = "pax"
 	id = /datum/reagent/pax
 	results = list(/datum/reagent/pax = 3)
 	required_reagents  = list(/datum/reagent/toxin/mindbreaker = 1, /datum/reagent/medicine/synaptizine = 1, /datum/reagent/water = 1)
-
+*/
 // TODO: Add some kind of ghoulification mutation toxin? Iunno.
 
 // Liquid Carpets

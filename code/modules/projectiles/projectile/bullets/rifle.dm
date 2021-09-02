@@ -68,6 +68,11 @@
 	bare_wound_bonus = -18
 	pixels_per_second = TILES_TO_PIXELS(20)
 
+/obj/item/projectile/bullet/a556/rubber
+	name = "5.56 rubber bullet"
+	damage = 5
+	stamina = 38
+
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
 	damage = 28

@@ -614,6 +614,7 @@
 	icon_state = "hair_ponytail6"
 
 /datum/sprite_accessory/hair/ponytail7
+	name = "Ponytail 7"
 	icon_state = "hair_ponytail7"
 
 /datum/sprite_accessory/hair/ponytail8
@@ -655,6 +656,10 @@
 /datum/sprite_accessory/hair/supernova
 	name = "Supernova"
 	icon_state = "hair_supernova"
+
+/datum/sprite_accessory/hair/sideshave
+	name = "Side Shave"
+	icon_state = "side_shave"
 
 /datum/sprite_accessory/hair/poofy
 	name = "Poofy"
@@ -699,6 +704,10 @@
 /datum/sprite_accessory/hair/scully
 	name = "Scully"
 	icon_state = "hair_scully"
+
+/datum/sprite_accessory/hair/shannon
+	name = "Shannon"
+	icon_state = "hair_shan"
 
 /datum/sprite_accessory/hair/shaggy
 	name = "Shaggy"

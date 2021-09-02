@@ -12,7 +12,7 @@
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
 	icon_dead = "watermelon-dead"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/watermelon/holy)
+	mutatelist = list(/obj/item/seeds/watermelon/holy, /obj/item/seeds/watermelon/barrel)
 	reagents_add = list(/datum/reagent/water = 0.2, /datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.2)
 
 /obj/item/seeds/watermelon/suicide_act(mob/user)
@@ -77,3 +77,24 @@
 	qdel(src)
 	new /obj/effect/decal/cleanable/ash(drop_location())
 */
+
+/// Barrel melon Seeds
+/obj/item/seeds/watermelon/barrel
+	name = "pack of barrelmelon seeds"
+	desc = "These seeds grow into barrelmelon plants."
+	icon_state = "seed-barrelmelon"
+	species = "barrelmelon"
+	plantname = "Barrel Melon Vines"
+	product = /obj/item/reagent_containers/food/snacks/grown/barrelmelon
+	genes = list(/datum/plant_gene/trait/brewing)
+	mutatelist = list()
+	reagents_add = list(/datum/reagent/consumable/ethanol/ale = 0.2, /datum/reagent/consumable/nutriment = 0.1)
+	rarity = 10
+
+/// Barrel melon Fruit
+/obj/item/reagent_containers/food/snacks/grown/barrelmelon
+	seed = /obj/item/seeds/watermelon/barrel
+	name = "barrelmelon"
+	desc = "The nutriments within this melon have been compressed and fermented into rich alcohol."
+	icon_state = "barrelmelon"
+	distill_reagent = /datum/reagent/medicine/antihol //You can call it a integer overflow.

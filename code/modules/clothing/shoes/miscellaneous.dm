@@ -137,7 +137,7 @@
 	lace_time = 12 SECONDS
 
 /obj/item/clothing/shoes/jackboots/fast
-	slowdown = -1
+	slowdown = -0.5
 
 /obj/item/clothing/shoes/winterboots
 	name = "winter boots"
@@ -338,6 +338,19 @@
 	QDEL_NULL(W)
 	. = ..()
 
+/obj/item/clothing/shoes/thighboot
+	name = "thigh high boots"
+	desc = "A pair of black and blue boots that reach up to a person's thigh."
+	icon_state = "thigh_high"
+	item_state = "thigh_high"
+
+/obj/item/clothing/shoes/thighboot/platform
+	name = "thigh high platform"
+	desc = "A pair of chunky platform heels that reach up to a person's thigh."
+	icon_state = "thigh_high_heel"
+	item_state = "thigh_high_heel"
+	offset = 2
+
 /obj/item/clothing/shoes/kindleKicks
 	name = "Kindle Kicks"
 	desc = "They'll sure kindle something in you, and it's not childhood nostalgia..."
@@ -500,3 +513,8 @@
 	to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
 	B.use(10)
 	icon_state = initial(icon_state)
+	
+/obj/item/clothing/shoes/swagshoes
+	name = "swag shoes"
+	desc = "They got me for my foams!"
+	icon_state = "SwagShoes"

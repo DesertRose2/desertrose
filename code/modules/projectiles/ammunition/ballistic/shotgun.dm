@@ -149,7 +149,7 @@ obj/item/ammo_casing/shotgun/executioner
 /obj/item/ammo_casing/shotgun/dart/bioterror/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/toxin/amanitin, 12) //for a nasty surprise after you get shot and somehow escape and don't think to quickly purge, and even shock those who are loaded up on purging agents
-	reagents.add_reagent(/datum/reagent/toxin/chloralhydrate, 6)
+	//reagents.add_reagent(/datum/reagent/toxin/chloralhydrate, 6)
 	reagents.add_reagent(/datum/reagent/toxin/mutetoxin, 6) //;HELPIES OPS IN MAINT
 	reagents.add_reagent(/datum/reagent/impedrezene, 6)
 	reagents.add_reagent(/datum/reagent/toxin/acid/fluacid, 5) //this and the acid equal about 25ish burn, not counting the minute toxin damage dealt by their metabolism, this makes each dart about as lethal as a stechkin shot in upfront damage

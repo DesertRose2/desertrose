@@ -7,6 +7,14 @@
 	requires_trait = 2
 
 /datum/surgery/coronary_bypass/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
+	if(HAS_TRAIT(user,TRAIT_SURGERY_MID))
+		return TRUE
+	if(HAS_TRAIT(user,TRAIT_SURGERY_HIGH))
+		return TRUE
+	else
+		return FALSE
+
+/datum/surgery/coronary_bypass/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
 	var/obj/item/organ/heart/H = target.getorganslot(ORGAN_SLOT_HEART)
 	if(H)
 		if(H.damage > 60 && !H.operated)

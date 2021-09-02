@@ -1000,11 +1000,18 @@
 	assignment = "prime medallion"
 
 /obj/item/card/id/dogtag/legslavemaster
-	name = "slavemaster medallion"
+	name = "prefect medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to the dreaded Slavemaster."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
 	assignment = "slavemaster medallion"
+
+/obj/item/card/id/dogtag/leglibritor
+	name = "libritor medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a libritor."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "libritor medallion"
 
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
@@ -1107,6 +1114,17 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
+/obj/item/card/id/bandittattoo
+	name = "Bandit tattoo"
+	desc = "A tattoo of the symbol of the bandits."
+	icon_state = "skin"
+	item_state = "skin"
+	assignment = "gang tattoo"
+	uses_overlays = FALSE
+
+/obj/item/card/id/bandittattoo/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 /* Tribal Tags
 */
 
@@ -1157,3 +1175,6 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	uses_overlays = FALSE
+
+/obj/item/card/data/wpermit
+	name = "\improper VTCC weapons permit"
