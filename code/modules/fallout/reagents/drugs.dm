@@ -88,8 +88,8 @@
 	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
-	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
-	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
+	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)

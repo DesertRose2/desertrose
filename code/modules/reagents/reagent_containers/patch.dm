@@ -69,14 +69,14 @@
 	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice = 10)
 	icon_state = "bandaid_healingpoultice"
 	self_delay = 0
-
+/* Unused for now
 /obj/item/reagent_containers/pill/patch/poultice_zombie
 	name = "'Vita' poultice"
 	desc = "A well refined powder, mostly in use by Caesar's Legion for its side effects which it causes in first time users."
 	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice_zombie = 10)
 	icon_state = "bandaid_healingpoulticezombie"
 	self_delay = 40
-
+*/
 /obj/item/reagent_containers/pill/patch/bitterdrink
 	name = "bitter drink"
 	desc = "A disgusting drink favored by legion during their long marches. It leaves disgusting aftertaste."

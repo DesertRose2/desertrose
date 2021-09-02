@@ -101,7 +101,7 @@
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)	
+	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
@@ -115,8 +115,8 @@
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
-		/obj/item/restraints/handcuffs=1, 
-		/obj/item/melee/classic_baton=1, 
+		/obj/item/restraints/handcuffs=1,
+		/obj/item/melee/classic_baton=1,
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/pda/warden=1
 		)
@@ -125,7 +125,7 @@
 	name = "Commisioner"
 	suit_store = /obj/item/gun/energy/laser/scatter
 	backpack_contents = list(
-	/obj/item/stock_parts/cell/ammo/mfc=3,	
+	/obj/item/stock_parts/cell/ammo/mfc=3,
 	/obj/item/gun/ballistic/automatic/pistol/beretta=1,
 	/obj/item/ammo_box/magazine/m9mmds = 3,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
@@ -136,7 +136,7 @@
 	name = "Sheriff"
 	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
-	/obj/item/ammo_box/tube/c4570=3,	
+	/obj/item/ammo_box/tube/c4570=3,
 	/obj/item/gun/ballistic/revolver/m29/peacekeeper=1,
 	/obj/item/ammo_box/m44=3,
 	/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal=1,
@@ -176,7 +176,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)	
+	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
@@ -352,7 +352,7 @@
 /* City Sec Scout */
 
 /datum/job/vtcc/f13citysecscout
-	title = "City Security Scout"
+	title = "City Security Cadet"
 	flag = F13CITYSECSCOUT
 	total_positions = 3
 	spawn_positions = 1
@@ -377,7 +377,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13citysecscout
-	name = "City Security Scout"
+	name = "City Security Cadet"
 	jobtype = /datum/job/vtcc/f13citysecscout
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
@@ -445,6 +445,12 @@
 	shoes = 	/obj/item/clothing/shoes/jackboots
 	uniform = 	/obj/item/clothing/under/f13/merca
 	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
+	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
+	r_pocket = /obj/item/card/data/wpermit
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m9mmds = 2
+		)
+
 
 /datum/outfit/loadout/scavver
 	name = "Scavver"
