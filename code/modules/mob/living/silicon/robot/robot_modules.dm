@@ -896,7 +896,7 @@
 	var/mob/living/silicon/robot/assault = loc
 	assault.faction += "wastebots" //So other assaultrons don't gank you for existing.
 
-obj/item/robot_module/syndicate/remove_module(obj/item/I, delete_after)
+obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
 	..()
 	var/mob/living/silicon/robot/Syndi = loc
 	Syndi.faction -= "wastebots" //Removes the faction if the module is removed.
