@@ -919,7 +919,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "City Security Officer"
 
 /obj/effect/landmark/start/f13/townsecscout
-	name = "City Security Scout"
+	name = "City Security Cadet"
 
 /obj/effect/landmark/start/f13/roadie
 	name = "Roadie"

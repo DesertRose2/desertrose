@@ -50,6 +50,7 @@
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
 	damage = 15
+	range = 8
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	. = ..()
