@@ -542,9 +542,9 @@
 /obj/item/clothing/under/f13/ranger/trail
 	name = "ranger outfit"
 	desc = "Simple rustic clothes for a big iron packin' lawman. Worn often by NCR rangers."
-	icon_state = "cowboyrang"
-	item_state = "cowboyrang"
-	item_color = "cowboyrang"
+	icon_state = "trailranger"
+	item_state = "trailranger"
+	item_color = "trailranger"
 
 /obj/item/clothing/under/f13/ranger/patrol
 	name = "patrol ranger outfit"

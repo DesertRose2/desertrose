@@ -21,3 +21,9 @@
 	item_state = "tina_beret"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
+//Custom item - Muhsollini / Viatoris
+/obj/item/clothing/head/helmet/f13/legion/vet/pal
+	name = "legion veteran paladin-hunter helmet"
+	desc = "(V) A reforged T45d power armor helmet. It had its plating around mouth removed as well as its light from top of it. Sports a red vertical plume to denote a veteran."
+	icon_state = "legvetpal"
+	item_state = "legvetpal"
