@@ -898,7 +898,7 @@
 
 obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
 	..()
-	var/mob/living/silicon/robot/Syndi = loc
+	var/mob/living/silicon/robot/assault = loc
 	assault.faction -= "wastebots" //Removes the faction if the module is removed.
 
 /obj/item/robot_module/assaultron/medical
