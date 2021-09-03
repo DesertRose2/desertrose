@@ -871,6 +871,71 @@
 			return FALSE
 	return ..()
 
+/obj/item/robot_module/assaultron
+	name = "Assaultron"
+	basic_modules = list( //Security borg
+		/obj/item/assembly/flash/cyborg,
+		/obj/item/extinguisher/mini,
+		/obj/item/crowbar/cyborg,
+		/obj/item/restraints/handcuffs/cable/zipties,
+		/obj/item/melee/unarmed/punchdagger/cyborg,
+		/obj/item/gun/energy/laser/pistol/cyborg,
+		/obj/item/clothing/mask/gas/sechailer/cyborg,
+		/obj/item/pinpointer/crew)
+	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
+	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
+		/obj/item/clockwork/weapon/ratvarian_spear)
+	hat_offset = 3 //what
+	borghealth = 450 //Assaultron health
+	cyborg_base_icon = "assaultron"
+	moduleselect_icon = "security"
+	hat_offset = 3
+
+/obj/item/robot_module/assaultron/rebuild_modules()
+	..()
+	var/mob/living/silicon/robot/assault = loc
+	assault.faction += "wastebots" //So other assaultrons don't gank you for existing.
+
+obj/item/robot_module/syndicate/remove_module(obj/item/I, delete_after)
+	..()
+	var/mob/living/silicon/robot/Syndi = loc
+	Syndi.faction -= "wastebots" //Removes the faction if the module is removed.
+
+/obj/item/robot_module/assaultron/medical
+	name = "Medical Assaultron"
+	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
+		/obj/item/extinguisher/mini,
+		/obj/item/crowbar/cyborg,
+		/obj/item/healthanalyzer,
+		/obj/item/reagent_containers/borghypo,
+		/obj/item/weapon/gripper/medical,
+		/obj/item/reagent_containers/dropper,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/surgical_drapes,
+		/obj/item/retractor,
+		/obj/item/hemostat,
+		/obj/item/cautery,
+		/obj/item/surgicaldrill,
+		/obj/item/scalpel,
+		/obj/item/circular_saw,
+		/obj/item/bonesetter,
+		/obj/item/roller/robo,
+		/obj/item/borg/cyborghug/medical,
+		/obj/item/stack/medical/gauze/cyborg,
+		/obj/item/stack/medical/bone_gel/cyborg,
+		/obj/item/organ_storage,
+		/obj/item/borg/lollipop,
+		/obj/item/sensor_device,
+		/obj/item/shockpaddles/cyborg,
+		/obj/item/melee/unarmed/punchdagger/cyborg
+		)
+	emag_modules = list(/obj/item/reagent_containers/borghypo/hacked)
+	ratvar_modules = list(
+		/obj/item/clockwork/slab/cyborg/medical,
+		/obj/item/clockwork/weapon/ratvarian_spear)
+	cyborg_base_icon = "assaultron_sase"
+
 /obj/item/robot_module/syndicate
 	name = "Syndicate Assault"
 	basic_modules = list(
