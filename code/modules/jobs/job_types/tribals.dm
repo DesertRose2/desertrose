@@ -38,6 +38,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /*
 Tribal Chief

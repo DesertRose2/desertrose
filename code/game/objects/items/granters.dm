@@ -915,13 +915,21 @@
 	traitname = "hitting things"
 	remarks = list("Line up your bat...", "Judge target travel speed...", "Buy a premium swatter to maximize ball hit rate - or to break skulls...", "Apply blunt object to head...")
 
+/obj/item/book/granter/trait/chem_user
+	name = "Cook-Cook's guide to enjoying your cook-up"
+	desc = "A manual on how to take chems and not suffer too many adverse effects."
+	oneuse = TRUE
+	granted_trait = TRAIT_CHEM_USER
+	traitname = "chem use"
+	remarks = list("Clean your needles...", "Ensure you have quality product...", "Don't mix drugs...", "Only buy from trusted dealers...")
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
 	granted_trait = null
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
-	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer")
+	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -949,9 +957,45 @@
 			if("Tinkerer")
 				granted_trait = TRAIT_MASTER_GUNSMITH
 				traitname = "tinkering"
+			if("Iron Fist")
+				granted_trait = TRAIT_IRONFIST
+				traitname = "punching"	
 	else
 		. = ..()
 
 /obj/item/book/granter/trait/selection/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+
+/obj/item/book/granter/trait/selection/waster
+
+/obj/item/book/granter/trait/selection/waster/attack_self(mob/user)
+	var/list/choices = list("Minor Surgery","Chemistry","Salvager", "Tinkerer", "Chem User")
+	if(granted_trait == null)
+		var/choice = input("Choose a trait:") in choices
+		switch(choice)
+			if(null)
+				return 0
+			if("Minor Surgery")
+				granted_trait = TRAIT_SURGERY_LOW
+				traitname = "minor surgery"
+			if("Chemistry")
+				granted_trait = TRAIT_CHEMWHIZ
+				traitname = "chemistry"
+				crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+			if("Salvager")
+				granted_trait = TRAIT_TECHNOPHREAK
+				traitname = "salvaging"
+			if("Tinkerer")
+				granted_trait = TRAIT_MASTER_GUNSMITH
+				traitname = "tinkering"
+			if("Chem User")
+				granted_trait = TRAIT_CHEM_USER
+				traitname = "chem use"	
+	else
+		. = ..()
+
+/obj/item/book/granter/trait/selection/waster/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
