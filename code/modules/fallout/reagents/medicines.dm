@@ -310,6 +310,14 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	..()
 
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.set_disgust(100)
+		M.Dizzy(50)
 	M.AdjustStun(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)

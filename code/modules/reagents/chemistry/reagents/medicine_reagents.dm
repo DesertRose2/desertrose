@@ -1071,15 +1071,21 @@
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
 	..()
-	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 	ADD_TRAIT(L, TRAIT_TASED_RESISTANCE, type)
 
 /datum/reagent/medicine/stimulants/on_mob_end_metabolize(mob/living/L)
-	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 	REMOVE_TRAIT(L, TRAIT_TASED_RESISTANCE, type)
 	..()
 
 /datum/reagent/medicine/stimulants/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.set_disgust(100)
+		M.Dizzy(50)
 	if(M.health < 50 && M.health > 0)
 		M.adjustOxyLoss(-1*REM, FALSE)
 		M.adjustToxLoss(-1*REM, FALSE)
