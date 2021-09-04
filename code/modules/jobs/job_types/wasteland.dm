@@ -636,7 +636,8 @@ Outlaw
 	/datum/outfit/loadout/exmil,
 	/datum/outfit/loadout/eidolon,
 	/datum/outfit/loadout/aviator,
-	/datum/outfit/loadout/trapper)
+	/datum/outfit/loadout/trapper,
+	/datum/outfit/loadout/trouper)
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -733,14 +734,15 @@ Outlaw
 	name = "Legion Citizen"
 	suit = /obj/item/clothing/suit/curator
 	uniform = /obj/item/clothing/under/f13/brahmin
-	shoes = /obj/item/clothing/shoes/f13/fancy
+	shoes = /obj/item/clothing/shoes/roman
 	head = /obj/item/clothing/head/scarecrow_hat
-	gloves = /obj/item/clothing/gloves/color/black
+	gloves = /obj/item/clothing/gloves/legion
 	l_hand = /obj/item/claymore/machete/gladius
 	backpack_contents = list(
 		/obj/item/shield/legion/buckler=1,
 		/obj/item/shovel/spade=1,
 		/obj/item/cultivator=1,
+		/obj/item/storage/bag/plants=1,
 		/obj/item/flashlight/lantern=1,
 		/obj/item/reagent_containers/glass/bucket/wood=1)
 
@@ -767,6 +769,7 @@ Outlaw
 		/obj/item/coin/gold=1,
 		/obj/item/lighter/gold=1,
 		/obj/item/toy/cards/deck=1,
+		/obj/item/storage/box/dice=1,
 		/obj/item/stack/tile/carpet/blackred/fifty=1,
 		/obj/item/ammo_box/m44=1)
 
@@ -799,7 +802,8 @@ Outlaw
 		/obj/item/storage/bag/plants=1,
 		/obj/item/seeds/corn=1,
 		/obj/item/seeds/tomato=1,
-		/obj/item/seeds/wheat=1)
+		/obj/item/seeds/wheat=1,
+		/obj/item/pitchfork=1)
 
 /datum/outfit/loadout/hobo
 	name = "Hobo"
@@ -894,3 +898,21 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/throwing_star/spear=3,
 		/obj/item/storage/box/mousetraps=1)
+
+/datum/outfit/loadout/trouper
+	name = "Trouper"
+	suit = /obj/item/clothing/suit/poncho/red
+	uniform = /obj/item/clothing/under/redeveninggown
+	shoes = /obj/item/clothing/shoes/laceup 
+	head = /obj/item/clothing/head/widered
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol22
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m22=1,
+		/obj/item/reagent_containers/food/drinks/shaker=1,
+		/obj/item/restraints/handcuffs/fake/kinky=1,
+		/obj/item/melee/curator_whip=1,
+		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
+		/obj/item/reagent_containers/food/drinks/bottle/trappist=1,
+		/obj/item/reagent_containers/food/drinks/bottle/applejack=1,
+		/obj/item/reagent_containers/food/drinks/bottle/goldschlager=1,
+		/obj/item/clothing/accessory/pocketprotector/cosmetology=1)
