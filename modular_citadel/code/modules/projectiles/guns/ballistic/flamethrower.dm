@@ -167,3 +167,4 @@
 	can_attachments = FALSE
 	casing_ejector = TRUE
 	fire_delay = 7
+	extra_speed = 0
