@@ -1071,9 +1071,11 @@
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
 	..()
+	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 	ADD_TRAIT(L, TRAIT_TASED_RESISTANCE, type)
 
 /datum/reagent/medicine/stimulants/on_mob_end_metabolize(mob/living/L)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 	REMOVE_TRAIT(L, TRAIT_TASED_RESISTANCE, type)
 	..()
 
