@@ -47,6 +47,10 @@
 
 /datum/surgery/proc/can_start(mob/user, mob/living/patient, obj/item/tool) //FALSE to not show in list
 	. = TRUE
+
+	if(issilicon(user) && requires_trait<3)
+		return TRUE //Simple solution to cyborgs not being able to regular surgery. Still blocks out the extreme stuff.
+
 	if(replaced_by == /datum/surgery)
 		return FALSE
 		//

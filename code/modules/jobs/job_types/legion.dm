@@ -28,7 +28,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionhelmsalvagedarmorconversion)
 
