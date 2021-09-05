@@ -1,3 +1,4 @@
 sound/f13music/hanging_me.ogg
 sound/f13music/praise_the_lord.ogg
 sound/f13music/ragtime_cowboyjoe.ogg
+sound/f13music/Lazy_Day_Blues.ogg

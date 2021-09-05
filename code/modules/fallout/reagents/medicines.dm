@@ -128,6 +128,8 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 /datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
 	M.set_disgust(60)
 	M.Dizzy(10)
+	M.adjustFireLoss(3*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustBruteLoss(3*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
 
@@ -183,7 +185,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 20
 	heal_factor = -2
 	heal_factor_perk = -4
-
+/* For now unused
 /datum/reagent/medicine/healing_powder/poultice_zombie
 	name = "'Vita' poultice"
 	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
@@ -192,6 +194,19 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 11
 	heal_factor = 0
 	heal_factor_perk = -5
+
+/datum/reagent/medicine/healing_powder/poultice_zombie/on_mob_life(mob/living/carbon/M)
+	var/is_technophobe = FALSE
+	if(HAS_TRAIT(M, TRAIT_TECHNOPHOBE))
+		is_technophobe = TRUE
+	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
+		metabolization_rate = 0.8 * REAGENTS_METABOLISM //Allows you to preheal but it will process much faster to prevent abuse
+	var/heal_rate = (is_technophobe ? heal_factor_perk : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+	M.adjustFireLoss(heal_rate)
+	M.adjustBruteLoss(heal_rate)
+	M.hallucination = max(M.hallucination, is_technophobe ? 5 : 40)
+	. = TRUE
+	..()
 
 /datum/reagent/medicine/healing_powder/poultice_zombie/overdose_start(mob/living/M)
 	to_chat(M, "<span class='userdanger'>You feel your brain flicking off as the powder slowly puts you into coma!</span>")
@@ -206,7 +221,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
-
+*/
 /datum/reagent/medicine/radshroom
 	name = "Mushroom extract"
 	description = "A combination of punga and cave fungus to help dealing with radiation."
@@ -309,7 +324,25 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			*/
 	..()
 
+/datum/reagent/medicine/medx/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
+	..()
+
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	M.AdjustStun(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
