@@ -151,6 +151,7 @@ Head Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/sentstand
@@ -232,7 +233,8 @@ Head Scribe
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1 \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/hssword
@@ -315,7 +317,8 @@ Head Knight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/captech
@@ -411,7 +414,8 @@ Star Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/spaladina
@@ -485,7 +489,8 @@ Paladin
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/paladina
@@ -780,7 +785,8 @@ datum/job/bos/f13seniorknight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/sknighta
@@ -870,7 +876,8 @@ Knight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/knighta
