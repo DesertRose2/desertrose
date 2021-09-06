@@ -470,7 +470,6 @@
 	armour_penetration = 0.5
 	movement_type = FLYING | UNSTOPPABLE
 	pixels_per_second = TILES_TO_PIXELS(15)
-	aggro_vision_range = 15
 	range = 18
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
