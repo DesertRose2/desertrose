@@ -446,6 +446,7 @@
 	retreat_distance = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS //wall-obliterator. perish.
 	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak/strong
+	speed = 3
 	rapid_melee = 3
 	color = "#75FFE2"
 	aggro_vision_range = 15
