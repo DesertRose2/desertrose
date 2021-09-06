@@ -218,6 +218,13 @@
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_SMALL
 
+obj/item/melee/unarmed/punchdagger/cyborg
+	name = "assaultron claws"
+	desc = "Razor sharp blades embedded into the grippers of an assaultron. Sharp."
+	icon_state = "tiger_claw"
+	item_state = "powerfist"
+	force = 40 //Assaultron, so, makes sense.
+
 /obj/item/melee/unarmed/deathclawgauntlet
 	name = "deathclaw gauntlet"
 	desc = "The severed hand of a mighty Deathclaw, cured, hollowed out, and given a harness to turn it into the deadliest gauntlet the wastes have ever seen."

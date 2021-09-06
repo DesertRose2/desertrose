@@ -3538,8 +3538,7 @@
 	move_me = 1
 	},
 /obj/effect/turf_decal/stripes/red/line{
-	dir = 9;
-	icon_state = "warningline_red"
+	dir = 9
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
@@ -5237,8 +5236,7 @@
 	move_me = 1
 	},
 /obj/effect/turf_decal/stripes/red/line{
-	dir = 10;
-	icon_state = "warningline_red"
+	dir = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
@@ -13599,6 +13597,10 @@
 /obj/item/reagent_containers/blood/radaway,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"hOT" = (
+/obj/machinery/rnd/server/vault,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
+/area/f13/city)
 "hPA" = (
 /obj/structure/stacklifter,
 /turf/open/floor/f13,
@@ -14698,8 +14700,7 @@
 /area/f13/city)
 "iul" = (
 /obj/structure/chair/comfy/black{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
@@ -18689,7 +18690,6 @@
 "kMu" = (
 /obj/structure/fermenting_barrel,
 /obj/effect/decal/fakelattice{
-	density = 0;
 	pixel_x = 17
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -19101,7 +19101,6 @@
 	pixel_x = -3
 	},
 /obj/effect/decal/fakelattice{
-	density = 0;
 	pixel_x = 17
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -26331,8 +26330,7 @@
 	move_me = 1
 	},
 /obj/effect/turf_decal/stripes/red/line{
-	dir = 5;
-	icon_state = "warningline_red"
+	dir = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
@@ -26563,7 +26561,6 @@
 "pEJ" = (
 /obj/structure/closet/crate/large,
 /obj/effect/decal/fakelattice{
-	density = 0;
 	pixel_x = 17
 	},
 /turf/open/floor/f13/wood,
@@ -31655,7 +31652,6 @@
 /area/f13/caves)
 "sIN" = (
 /obj/effect/decal/fakelattice{
-	density = 0;
 	pixel_x = 17
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -37416,8 +37412,7 @@
 	move_me = 1
 	},
 /obj/effect/turf_decal/stripes/red/line{
-	dir = 6;
-	icon_state = "warningline_red"
+	dir = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
@@ -38044,8 +38039,7 @@
 /area/f13/wasteland)
 "wpd" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "bosgarage";
-	name = "shutters"
+	id = "bosgarage"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
@@ -59525,7 +59519,7 @@ sAL
 sfB
 yiF
 xWT
-xnr
+hOT
 xnr
 xnr
 xnr

@@ -874,7 +874,8 @@
 		/obj/item/reagent_containers/food/condiment/yeast = 1,
 		/obj/item/reagent_containers/food/condiment/saltshaker = 1,
 		/obj/item/reagent_containers/food/condiment/peppermill = 1,
-		/obj/item/reagent_containers/food/condiment/soysauce = 1)
+		/obj/item/reagent_containers/food/condiment/soysauce = 1,
+		/obj/item/reagent_containers/food/condiment/bbqsauce = 1)
 
 /obj/machinery/smartfridge/bottlerack/lootshelf/books
 	desc = "A rusted pre-war shelf, this one has a faded label about magazines. "
@@ -886,4 +887,4 @@
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_one = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two = 1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_three = 1,)
+		/obj/item/book/granter/crafting_recipe/gunsmith_three = 1)
