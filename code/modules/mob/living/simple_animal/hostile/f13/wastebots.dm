@@ -464,12 +464,12 @@
 		return FALSE
 
 /obj/item/projectile/beam/laser/pistol/ultraweak/strong
-	damage = 15
+	damage = 14
 	icon_state = "gaussstrong"
 	armour_penetration = 0.5
 	movement_type = FLYING | UNSTOPPABLE
-	pixels_per_second = TILES_TO_PIXELS(33.33)
-	range = 16
+	pixels_per_second = TILES_TO_PIXELS(15)
+	range = 18
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
 	name = "sentry bot"
