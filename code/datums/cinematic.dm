@@ -93,7 +93,7 @@
 		toggle_ooc(TRUE)
 
 /datum/cinematic/proc/show_to(mob/M, client/C)
-	SIGNAL_HANDLER //must not wait.
+	//SIGNAL_HANDLER //must not wait.
 
 	if(!M.mob_transforming)
 		locked += M
