@@ -1329,7 +1329,7 @@ Off-Duty Legionary
 	loadout_options = list(
 		/datum/outfit/loadout/offcent,
 		/datum/outfit/loadout/offdecvet,
-		/datum/outfit/loadout/offprime
+		/datum/outfit/loadout/offprime,
 		/datum/outfit/loadout/offexpven
 		)
 
