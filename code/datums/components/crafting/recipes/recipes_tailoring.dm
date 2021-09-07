@@ -1283,8 +1283,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombatarmor
-	name = "initiate armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
+	name = "knight armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1293,8 +1293,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombathelmet
-	name = "initiate helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
+	name = "knight helmet"
+	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1303,8 +1303,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombatarmormk2
-	name = "reinforced initiate armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+	name = "reinforced knight armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/mk2
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -1314,8 +1314,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombathelmetmk2
-	name = "reinforced initiate helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+	name = "reinforced knight helmet"
+	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/mk2
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
