@@ -723,7 +723,8 @@ Libritor
 		/obj/item/flashlight/lantern=1,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/ammo_box/magazine/lmg=2,
-		/obj/item/storage/bag/money/small/legofficers=1
+		/obj/item/storage/bag/money/small/legofficers=1,
+		/obj/item/clothing/accessory/legion/prime=1
 	)
 
 /*
@@ -1196,7 +1197,7 @@ Camp Follower
 /datum/job/CaesarsLegion/f13campfollower
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
-	total_positions = 2
+	total_positions = 4
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
@@ -1270,7 +1271,7 @@ Slave
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion, but mostly the Slavemaster"
@@ -1329,7 +1330,7 @@ Off-Duty Legionary
 		/datum/outfit/loadout/offcent,
 		/datum/outfit/loadout/offdecvet,
 		/datum/outfit/loadout/offprime
-		//datum/outfit/loadout/offexpven
+		/datum/outfit/loadout/offexpven
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/offduty
