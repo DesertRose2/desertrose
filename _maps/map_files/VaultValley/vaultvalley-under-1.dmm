@@ -100,6 +100,10 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"pt" = (
+/obj/structure/stairs,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
 "rN" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/effect/turf_decal/stripes/white/line{
@@ -165,6 +169,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"Af" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/tunnel)
 "DN" = (
 /obj/structure/bed,
 /obj/item/bedsheet/cmo,
@@ -20292,8 +20299,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+ZU
 gD
 gD
 gD
@@ -20549,8 +20556,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+pt
 gD
 gD
 gD
@@ -20806,8 +20813,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+pt
 gD
 gD
 gD
@@ -21063,8 +21070,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+ZU
 gD
 gD
 gD
@@ -21318,8 +21325,8 @@ vP
 vP
 vP
 vP
-PC
-ZU
+Af
+gD
 gD
 gD
 gD
@@ -21575,8 +21582,8 @@ vP
 vP
 vP
 vP
-PC
-ZU
+Af
+gD
 gD
 gD
 gD
@@ -21832,8 +21839,8 @@ vP
 vP
 vP
 vP
-PC
-ZU
+Af
+gD
 gD
 gD
 gD
@@ -22091,8 +22098,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+ZU
 gD
 gD
 gD
@@ -22348,8 +22355,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+pt
 gD
 gD
 gD
@@ -22605,8 +22612,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+pt
 gD
 gD
 gD
@@ -22862,8 +22869,8 @@ vP
 vP
 PC
 ZU
-gD
-gD
+ZU
+ZU
 gD
 gD
 gD
