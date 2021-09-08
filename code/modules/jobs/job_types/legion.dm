@@ -786,9 +786,9 @@ Veteran Legionary
 
 /datum/outfit/loadout/vetscout
 	name = "Assassin (Scout)"
-	suit_store = /obj/item/gun/ballistic/automatic/commando/dmr
+	suit_store = /obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=2,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		/obj/item/attachments/scope=1,
 		/obj/item/gun/ballistic/revolver/revolver44=1,
 		/obj/item/ammo_box/m44=2)
@@ -1072,9 +1072,9 @@ Explorer
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket = 		/obj/item/binoculars
 	l_pocket = 		/obj/item/attachments/scope
-	suit_store = 	/obj/item/gun/ballistic/automatic/commando/dmr
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=2,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
@@ -1091,9 +1091,9 @@ Explorer
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store = 	/obj/item/gun/ballistic/automatic/commando
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=1,
+		/obj/item/ammo_box/magazine/m45exp=1,
 		/obj/item/grenade/plastic=1,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,

@@ -369,7 +369,7 @@
 //varmint rifle
 /datum/crafting_recipe/varmintrifle
 	name = "varmint rifle"
-	result = /obj/item/gun/ballistic/automatic/varmint
+	result = /obj/item/gun/ballistic/rifle/mag/varmint
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
 				/obj/item/stack/crafting/metalparts = 4,
 				/obj/item/stack/sheet/metal = 1)
@@ -750,7 +750,7 @@
 //commando carbine
 /datum/crafting_recipe/commando
 	name = "Commando Carbine"
-	result = /obj/item/gun/ballistic/automatic/commando
+	result = /obj/item/gun/ballistic/rifle/mag/commando
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/sheet/plastic = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,

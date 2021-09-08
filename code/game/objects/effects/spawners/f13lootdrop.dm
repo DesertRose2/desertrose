@@ -762,7 +762,7 @@
 /obj/effect/spawner/bundle/f13/varmint
 	name = "varmint rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/varmint,
+				/obj/item/gun/ballistic/rifle/mag/varmint,
 				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
@@ -865,7 +865,7 @@
 /obj/effect/spawner/bundle/f13/commando
 	name = "commando carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/commando,
+				/obj/item/gun/ballistic/rifle/mag/commando,
 				/obj/item/ammo_box/magazine/greasegun
 	)
 
@@ -1346,7 +1346,7 @@
 				/obj/item/gun/ballistic/rifle/remington/paciencia,
 				/obj/item/gun/energy/laser/solar,
 				/obj/item/gun/energy/laser/plasma/alien,
-				/obj/item/gun/ballistic/automatic/varmint/ratslayer,
+				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory
 				)
 

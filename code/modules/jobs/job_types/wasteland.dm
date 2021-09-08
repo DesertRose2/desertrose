@@ -251,6 +251,7 @@ Bandit
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
 /datum/outfit/job/wasteland/f13bandit
 	name = "Bandit"
@@ -363,6 +364,7 @@ Outlaw
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
@@ -753,7 +755,7 @@ Outlaw
 	head = /obj/item/clothing/head/f13/cowboy
 	gloves = /obj/item/clothing/gloves/color/brown
 	glasses = /obj/item/clothing/glasses/orange
-	l_hand = /obj/item/gun/ballistic/automatic/varmint
+	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=1,
 		/obj/item/flashlight=1)
@@ -776,7 +778,7 @@ Outlaw
 /datum/outfit/loadout/vaquero
 	name = "Vaquero"
 	suit = /obj/item/clothing/suit/armor/f13/vaquero
-	uniform = /obj/item/clothing/under/f13/petrochico 
+	uniform = /obj/item/clothing/under/f13/petrochico
 	shoes = /obj/item/clothing/shoes/f13/fancy
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	head = /obj/item/clothing/head/helmet/f13/vaquerohat
@@ -812,7 +814,7 @@ Outlaw
 	shoes = /obj/item/clothing/shoes/sandal
 	mask = /obj/item/clothing/mask/facewrap
 	head = /obj/item/clothing/head/rice_hat
-	gloves = /obj/item/clothing/gloves/f13/handwraps 
+	gloves = /obj/item/clothing/gloves/f13/handwraps
 	l_hand = /obj/item/claymore/machete/pipe/pan
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/drinks/bottle/whiskey=1,
@@ -890,7 +892,7 @@ Outlaw
 	name = "Trapper"
 	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster
 	uniform = /obj/item/clothing/under/f13/worn
-	shoes = /obj/item/clothing/shoes/f13/military/leather 
+	shoes = /obj/item/clothing/shoes/f13/military/leather
 	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	glasses = /obj/item/clothing/glasses/orange
@@ -903,7 +905,7 @@ Outlaw
 	name = "Trouper"
 	suit = /obj/item/clothing/suit/poncho/red
 	uniform = /obj/item/clothing/under/redeveninggown
-	shoes = /obj/item/clothing/shoes/laceup 
+	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/widered
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol22
 	backpack_contents = list(

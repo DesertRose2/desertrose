@@ -741,7 +741,7 @@ Mp
 	accessory =     /obj/item/clothing/accessory/ncr/REC
 	head = 			/obj/item/clothing/head/f13/ncr
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = 	/obj/item/gun/ballistic/automatic/varmint
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/varmint
 	glasses = 		null
 	belt = 			/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(

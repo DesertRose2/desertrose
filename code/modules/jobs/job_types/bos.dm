@@ -129,7 +129,6 @@ Head Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
@@ -142,7 +141,7 @@ Head Paladin
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
 	belt =			/obj/item/storage/belt/military/assault
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck =			/obj/item/clothing/neck/cloak/bos/paladin
@@ -296,11 +295,10 @@ Head Knight
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Head Knight"
+	name = "Knight Captain"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -361,11 +359,11 @@ Head Knight
 	)
 
 /*
-Star Paladin
+Senior Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Star Paladin"
+	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
 	total_positions = 2
@@ -399,10 +397,10 @@ Star Paladin
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/bos/f13seniorpaladin
-	name = "Star Paladin"
+	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
@@ -479,7 +477,7 @@ Paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	glasses=		/obj/item/clothing/glasses/meson
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -733,11 +731,11 @@ Scribe
 		)
 
 /*
-Star Knight
+Senior Knight
 */
 
 datum/job/bos/f13seniorknight
-	title = "Star Knight"
+	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	faction = "BOS"
 	total_positions = 2
@@ -768,7 +766,7 @@ datum/job/bos/f13seniorknight
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13seniorknight
-	name = "Star Knight"
+	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
