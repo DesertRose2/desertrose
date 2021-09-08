@@ -400,7 +400,6 @@
 		var/mob/living/L = user
 		L.Knockdown(200)
 		L.Paralyze(200)
-		L.SetUnconscious(200)
 		playsound(L, 'sound/f13effects/surrender1.ogg', 80, 1)
 
 /datum/emote/living/sway

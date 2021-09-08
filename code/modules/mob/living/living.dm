@@ -497,7 +497,6 @@
 
 		Knockdown(200)
 		Paralyze(200)
-		SetUnconscious(200)
 		visible_message("<span class='big bold'>[src] surrenders!</span>")
 		playsound(loc, 'sound/f13effects/surrender1.ogg', 80, 1)
 
