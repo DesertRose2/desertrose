@@ -399,7 +399,9 @@
 						"gurking",
 						"melodicdeity",
 						"cythisia",
-						"rangerbust")
+						"rangerbust",
+						"kirshbia",
+						"jackmcintyre")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -425,7 +427,9 @@
 						"leebic",
 						"akforeplay",
 						"arkadec",
-						"novaskelly")
+						"novaskelly",
+						"alasania",
+						"jackmcintyre")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -442,7 +446,11 @@
 						"psycoticone",
 						"ollieoxen",
 						"kirshbia",
-						"asterixcodix")
+						"asterixcodix",
+						"frekingyou",
+						"yecrowbarman",
+						"jackmcintyre",
+						"totallyinnocent")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -496,7 +504,9 @@
 						"gurking",
 						"melodicdeity",
 						"cythisia",
-						"rangerbust")
+						"rangerbust",
+						"jackmcintyre",
+						"kirshbia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -548,7 +558,11 @@
 						"pisshole",
 						"psycoticone",
 						"novaskelly",
-						"cythisia")
+						"cythisia",
+						"jackmcintyre",
+						"frekingyou",
+						"yecrowbarman",
+						"totallyinnocent")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform

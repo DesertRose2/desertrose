@@ -432,8 +432,8 @@
 	item_state = "brotherhood_helmet"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
-	name = "reinforced initiate helmet"
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/mk2
+	name = "reinforced knight helmet"
 	desc = "(V) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"

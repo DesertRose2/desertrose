@@ -1244,7 +1244,7 @@
 				/obj/effect/spawner/bundle/f13/wattz,
 				/obj/effect/spawner/bundle/f13/smg22
 	)
-	
+
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 //TIER 4 GUN
 	name = "tier 4 gun"
@@ -1716,7 +1716,8 @@
 				/obj/item/stack/f13Cash/random/low = 50,
 				/obj/item/stack/f13Cash/random/ncr/low = 30,
 				/obj/item/stack/f13Cash/random/denarius/low = 30,
-				/obj/item/stack/f13Cash/random/aureus/low = 10
+				/obj/item/stack/f13Cash/random/aureus/low = 10,
+				/obj/item/stack/f13Cash/random/bawls/low = 20,
 				)
 
 /obj/effect/spawner/lootdrop/f13/cash_random_med
@@ -1725,10 +1726,12 @@
 
 	loot = list(
 				/obj/item/stack/f13Cash/random/med = 50,
+				/obj/item/stack/f13Cash/random/bawls/med = 20,
 				/obj/item/stack/f13Cash/random/ncr/med = 30,
 				/obj/item/stack/f13Cash/random/denarius/med = 30,
 				/obj/item/stack/f13Cash/random/aureus/med = 10,
 				/obj/item/stack/f13Cash/random/low = 25,
+				/obj/item/stack/f13Cash/random/bawls/low = 10,
 				/obj/item/stack/f13Cash/random/ncr/low = 15,
 				/obj/item/stack/f13Cash/random/denarius/low = 15,
 				/obj/item/stack/f13Cash/random/aureus/low = 5,
@@ -1744,14 +1747,17 @@
 
 	loot = list(
 				/obj/item/stack/f13Cash/random/high = 50,
+				/obj/item/stack/f13Cash/random/bawls/high = 20,
 				/obj/item/stack/f13Cash/random/ncr/high = 30,
 				/obj/item/stack/f13Cash/random/denarius/high = 30,
 				/obj/item/stack/f13Cash/random/aureus/high = 10,
 				/obj/item/stack/f13Cash/random/med = 25,
+				/obj/item/stack/f13Cash/random/bawls/med = 10,
 				/obj/item/stack/f13Cash/random/ncr/med = 15,
 				/obj/item/stack/f13Cash/random/denarius/med = 15,
 				/obj/item/stack/f13Cash/random/aureus/med = 5,
 				/obj/item/stack/f13Cash/random/low = 10,
+				/obj/item/stack/f13Cash/random/bawls/low = 5,
 				/obj/item/stack/f13Cash/random/ncr/low = 5,
 				/obj/item/stack/f13Cash/random/denarius/low = 5,
 				/obj/item/stack/f13Cash/random/aureus/low = 1,
@@ -1824,6 +1830,36 @@
 			/obj/item/stack/f13Cash/random/ncr/high = 50,
 			/obj/item/stack/f13Cash/random/high = 10,
 			/obj/item/stack/f13Cash/random/ncr/med = 25,
+			/obj/item/stack/f13Cash/random/med = 5,
+			)
+
+/obj/effect/spawner/lootdrop/f13/cash_bawls_low
+	name = "low value bawls cash spawner"
+	lootcount = 1
+	loot = list(
+		/obj/item/stack/f13Cash/random/bawls/low = 50,
+		/obj/item/stack/f13Cash/random/low = 10,
+		/obj/item/stack/f13Cash/random/bawls/med = 25,
+		/obj/item/stack/f13Cash/random/low = 5,
+		)
+
+/obj/effect/spawner/lootdrop/f13/cash_bawls_med
+	name = "medium value bawls cash spawner"
+	lootcount = 1
+	loot = list(
+			/obj/item/stack/f13Cash/random/bawls/med = 50,
+			/obj/item/stack/f13Cash/random/med = 10,
+			/obj/item/stack/f13Cash/random/bawls/high = 25,
+			/obj/item/stack/f13Cash/random/high = 5,
+			)
+
+/obj/effect/spawner/lootdrop/f13/cash_bawls_high
+	name = "high value bawls cash spawner"
+	lootcount = 1
+	loot = list(
+			/obj/item/stack/f13Cash/random/bawls/high = 50,
+			/obj/item/stack/f13Cash/random/high = 10,
+			/obj/item/stack/f13Cash/random/bawls/med = 25,
 			/obj/item/stack/f13Cash/random/med = 5,
 			)
 
