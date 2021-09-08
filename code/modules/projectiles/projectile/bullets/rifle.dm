@@ -112,6 +112,35 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 	name = "5.56 bullet"
 
 
+/////////
+// .50 //
+/////////			-Very heavy rifle round.
+
+/obj/item/projectile/bullet/a50MG
+	damage = 53
+	armour_penetration = 0.8
+	pixels_per_second = TILES_TO_PIXELS(33.33)
+
+/obj/item/projectile/bullet/a50MG/incendiary
+	damage = 40
+	armour_penetration = 0.5
+	var/fire_stacks = 4
+
+/obj/item/projectile/bullet/a50MG/incendiary/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(fire_stacks)
+		M.IgniteMob()
+
+/obj/item/projectile/bullet/a50MG/explosive
+	damage = 30
+	armour_penetration = 0.6
+
+/obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
+	..()
+	explosion(target, 0, 1, 1, 1)
+
 //////////////////////
 // 4.73 MM CASELESS //
 //////////////////////			-Small rifle bullet
@@ -122,6 +151,15 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 	armour_penetration = 0.2
 	wound_bonus = 20
 	bare_wound_bonus = -20
+
+
+//////////////////////////
+// 5 MM minigun special //
+//////////////////////////
+
+/obj/item/projectile/bullet/c5mm
+	damage = 19
+	armour_penetration = 0.5
 
 
 /////////////////////////

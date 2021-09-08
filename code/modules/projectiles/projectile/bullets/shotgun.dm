@@ -1,10 +1,30 @@
+//In this document: Shotgun shell values for damage and penetration. Don't need this exactly but, fuck it, I've added it.
+
+//////////////////////
+// AMMUNITION TYPES //
+//////////////////////
+/*
+Buckshot (Multiple projectiles)					=	Baseline
+Magnum Buckshot (Cringe nay-nay ammo)			=	+5 damage buckshot and some extra pen. Why? Don't know.
+Slug (Single projectile)						=	Bonus damage, bonus AP - it's a single round compared to a wall of rounds.
+Beanbag (Non-lethal)							=	Inferior stun shots. Higher damage than rubber or stun, lower stam damage.
+Stunslug (Non-lethal / Stun)					=	Superior stun shots. Low physical damage due to taser effect.
+Frag (Explosive)								=	BOOM
+Rubber (Non-lethal)								=	extra speed 200. AP +10%. Wound bonus -10%
+Snowflake Rounds (Fire, meteor,etc)				=	-10% damage. AP reduced by 50%
+*/
+
+// Explanation: Two major ammo stats, AP and Damage. Pretty unorganized because I am lazy. Slugs get more damage and AP due to being a single projectile, buck gets less..
+// Balance between classes mostly done on the gun end, bigger rounds typically fire slower and have more recoil. They are not supposed to be totally equal either.
+
 /obj/item/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
-	damage = 60
+	damage = 48
 	sharpness = SHARP_POINTY
-	armour_penetration = 0.33
+	armour_penetration = 0.2
 	wound_bonus = 26
 	bare_wound_bonus = -26
+	spread = 2
 
 /obj/item/projectile/bullet/shotgun_slug/executioner
 	name = "executioner slug" // admin only, can dismember limbs
@@ -19,8 +39,8 @@
 /obj/item/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
 	damage = 10
-	stamina = 40
-	wound_bonus = 20
+	stamina = 60
+	wound_bonus = 22
 	sharpness = SHARP_NONE
 	embedding = null
 
@@ -129,6 +149,7 @@
 	name = "rubbershot pellet"
 	damage = 2
 	stamina = 10
+	wound_bonus = 5
 	sharpness = SHARP_NONE
 	embedding = null
 
