@@ -438,13 +438,16 @@
 
 /mob/living/simple_animal/hostile/handy/sentrybot/chew/strong
 	name = "big chew-chew"
-	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser and covered in thick, oddly blue armor plating, the name Big Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
+	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser firing high-penetration experimental lasers and covered in thick, oddly blue armor plating, the name Big Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
 	extra_projectiles = 6
 	health = 1000
 	maxHealth = 1000 //CHONK
 	obj_damage = 300
 	retreat_distance = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS //wall-obliterator. perish.
+	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak/strong
+	speed = 3
+	rapid_melee = 3
 	color = "#75FFE2"
 	aggro_vision_range = 15
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1 //cannot self-harm with it's explosion spam
@@ -460,6 +463,14 @@
 	else
 		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
 		return FALSE
+
+/obj/item/projectile/beam/laser/pistol/ultraweak/strong
+	damage = 14
+	icon_state = "gaussstrong"
+	armour_penetration = 0.5
+	movement_type = FLYING | UNSTOPPABLE
+	pixels_per_second = TILES_TO_PIXELS(15)
+	range = 18
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
 	name = "sentry bot"

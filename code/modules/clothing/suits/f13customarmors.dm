@@ -33,4 +33,9 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
 
-
+//Custom item - Muhsollini / Viatoris
+/obj/item/clothing/suit/armor/f13/legion/vet/pal
+	name = "legion veteran paladin-hunter armor"
+	desc = "(V)  A custom made repurposed suit of T45d, seemingly very damaged before any work has even been done to it. It has few pieces of regular veteran armor added to it with bull crest on its chest."
+	icon_state = "legvetpal"
+	item_state = "legvetpal"
