@@ -574,7 +574,7 @@
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ncr/CPT
 	ckeywhitelist = list("gurking",
-						"totallyinnocent"
+						"totallyinnocent",
 						"thegreatcoward",
 						"usotsukihime")
 	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
