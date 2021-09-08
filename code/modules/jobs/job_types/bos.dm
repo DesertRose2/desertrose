@@ -129,7 +129,6 @@ Head Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
@@ -296,7 +295,6 @@ Head Knight
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13knightcap
