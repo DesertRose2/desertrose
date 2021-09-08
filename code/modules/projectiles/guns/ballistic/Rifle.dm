@@ -296,27 +296,6 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 
-/obj/item/gun/ballistic/rifle/antimateriel
-	name = "anti-materiel rifle"
-	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition, custom-made for use by the New California Republic Rangers. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
-	icon_state = "sniper-mag"
-	item_state = "sniper"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/antimateriel
-	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
-	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	force = 25
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	recoil = 1 //have fun
-	fire_delay = 6
-	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
-	can_attachments = TRUE
-	untinkerable = TRUE
-	//projectile_speed = 0
-
 /obj/item/gun/ballistic/rifle/kar98k
 	name = "\improper karabiner 98k"
 	desc = "An old military service rifle from World War 2. This model was rechambered in .308."
@@ -415,3 +394,126 @@
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	untinkerable = FALSE
+
+
+/////////////////////////////////////
+// MAGAZINE FED BOLT-ACTION RIFLES //
+/////////////////////////////////////
+
+/obj/item/gun/ballistic/rifle/mag
+	name = "magazine fed bolt-action rifle template"
+	desc = "should not exist."
+	extra_speed = 800
+
+/obj/item/gun/ballistic/rifle/mag/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Alt-click to remove the magazine.</span>"
+
+/obj/item/gun/ballistic/rifle/mag/AltClick(mob/living/user)
+	var/obj/item/ammo_casing/AC = chambered //Find chambered round
+	if(magazine)
+		magazine.forceMove(drop_location())
+		user.put_in_hands(magazine)
+		magazine.update_icon()
+		if(magazine.ammo_count())
+			playsound(src, 'sound/weapons/gun_magazine_remove_full.ogg', 70, 1)
+		else
+			playsound(src, "gun_remove_empty_magazine", 70, 1)
+		magazine = null
+		to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
+	else if(chambered)
+		AC.forceMove(drop_location())
+		AC.bounce_away()
+		chambered = null
+		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
+		playsound(src, "gun_slide_lock", 70, 1)
+	else
+		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
+	update_icon()
+	return
+
+/obj/item/gun/ballistic/rifle/mag/update_icon_state()
+	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
+
+/obj/item/gun/ballistic/rifle/mag/varmint
+	name = "varmint rifle"
+	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
+	icon_state = "varmint"
+	item_state = "varmintrifle"
+	force = 18
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	fire_delay = 6
+	spread = 0
+	extra_damage = 6
+	can_bayonet = FALSE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 12
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 31
+	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/commando
+	name = "commando carbine"
+	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Uses .45 socom magazines."
+	icon_state = "commando"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
+	extra_damage = 5
+	fire_delay = 6
+	spread = 1
+	can_unsuppress = FALSE
+	suppressed = 1
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/commando/dmr
+	name = "commando carbine"
+	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
+	icon_state = "commando"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
+	extra_damage = 8
+	fire_delay = 7
+	spread = 0
+	can_unsuppress = FALSE
+	suppressed = 1
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
+	name = "Ratslayer"
+	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
+	icon_state = "ratslayer"
+	item_state = "ratslayer"
+	extra_damage = 7
+	extra_penetration = 0.2
+	suppressed = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_scope = FALSE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/antimateriel
+	name = "anti-materiel rifle"
+	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
+	icon_state = "amr"
+	item_state = "amr"
+	mag_type = /obj/item/ammo_box/magazine/amr
+	fire_delay = 10
+	recoil = 1
+	spread = 0
+	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
+	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'

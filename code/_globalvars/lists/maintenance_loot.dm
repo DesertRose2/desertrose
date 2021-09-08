@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/gun/ballistic/revolver/colt6520,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/varmint,
+	/obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/ammo_box/magazine/m556/rifle/small
 ))
 
@@ -561,7 +561,7 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/stock_parts/cell/ammo/ec,
 	/obj/item/gun/ballistic/automatic/m1carbine,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/commando,
+	/obj/item/gun/ballistic/rifle/mag/commando,
 	/obj/item/ammo_box/magazine/m45
 ))
 
@@ -603,7 +603,7 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/gun/ballistic/rifle/automatic/hunting/brush,
 	/obj/item/ammo_box/tube/c4570,
 	/obj/item/ammo_box/tube/c4570,
-	/obj/item/gun/ballistic/rifle/antimateriel,
+	/obj/item/gun/ballistic/rifle/mag/antimateriel,
 	/obj/item/ammo_box/a50MG,
 	/obj/item/gun/ballistic/automatic/rangemaster,
 	/obj/item/ammo_box/magazine/m762,
