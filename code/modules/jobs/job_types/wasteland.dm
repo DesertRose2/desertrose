@@ -251,6 +251,7 @@ Bandit
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
 /datum/outfit/job/wasteland/f13bandit
 	name = "Bandit"
@@ -363,6 +364,7 @@ Outlaw
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
