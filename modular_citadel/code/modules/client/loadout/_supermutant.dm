@@ -29,7 +29,7 @@
 	path = /obj/item/clothing/shoes/f13/mutie/boots/ncr
 	restricted_desc = "NCR"
 	restricted_roles = list(
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
@@ -75,7 +75,7 @@
 	path = /obj/item/clothing/suit/armor/f13/combat/ncr/mutie
 	restricted_desc = "NCR"
 	restricted_roles = list(
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
@@ -131,7 +131,7 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Veteran Ranger",
 							"NCR Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
