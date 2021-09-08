@@ -496,8 +496,10 @@
 			lay_down()
 
 		Knockdown(200)
+		Paralyze(200)
+		SetUnconscious(200)
 		visible_message("<span class='big bold'>[src] surrenders!</span>")
-		playsound(loc, 'sound/f13effects/surrender1.ogg', 60, 1)
+		playsound(loc, 'sound/f13effects/surrender1.ogg', 80, 1)
 
 //Recursive function to find everything a mob is holding. Really shitty proc tbh.
 /mob/living/get_contents()

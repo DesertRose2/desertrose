@@ -95,20 +95,6 @@
 	if(. && isalienadult(user))
 		playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
 
-/datum/emote/living/surrender
-	key = "surrender"
-	key_third_person = "surrenders"
-	message = "puts their hands on their head and falls to the ground, they surrender!"
-	emote_type = EMOTE_AUDIBLE
-	stat_allowed = UNCONSCIOUS
-	restraint_check = FALSE
-
-/datum/emote/living/surrender/run_emote(mob/user, params)
-	. = ..()
-	if(. && isliving(user))
-		var/mob/living/L = user
-		L.Knockdown(200)
-
 /datum/emote/living/drool
 	key = "drool"
 	key_third_person = "drools"
@@ -405,12 +391,17 @@
 	key_third_person = "surrenders"
 	message = "puts their hands on their head and falls to the ground, they surrender!"
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = UNCONSCIOUS
+	restraint_check = FALSE
 
 /datum/emote/living/surrender/run_emote(mob/user, params)
 	. = ..()
 	if(. && isliving(user))
 		var/mob/living/L = user
-		L.DefaultCombatKnockdown(200)
+		L.Knockdown(200)
+		L.Paralyze(200)
+		L.SetUnconscious(200)
+		playsound(L, 'sound/f13effects/surrender1.ogg', 80, 1)
 
 /datum/emote/living/sway
 	key = "sway"
