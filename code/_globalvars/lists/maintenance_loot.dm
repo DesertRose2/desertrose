@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/gun/ballistic/revolver/colt6520,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/varmint,
+	/obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/ammo_box/magazine/m556/rifle/small
 ))
 
@@ -561,7 +561,7 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/stock_parts/cell/ammo/ec,
 	/obj/item/gun/ballistic/automatic/m1carbine,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/commando,
+	/obj/item/gun/ballistic/rifle/mag/commando,
 	/obj/item/ammo_box/magazine/m45
 ))
 
@@ -603,7 +603,7 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/gun/ballistic/rifle/automatic/hunting/brush,
 	/obj/item/ammo_box/tube/c4570,
 	/obj/item/ammo_box/tube/c4570,
-	/obj/item/gun/ballistic/rifle/antimateriel,
+	/obj/item/gun/ballistic/rifle/mag/antimateriel,
 	/obj/item/ammo_box/a50MG,
 	/obj/item/gun/ballistic/automatic/rangemaster,
 	/obj/item/ammo_box/magazine/m762,
@@ -877,21 +877,24 @@ GLOBAL_LIST_INIT(loot_t1_money, list(
 	/obj/item/stack/f13Cash/random/low,
 	/obj/item/stack/f13Cash/random/ncr/low,
 	/obj/item/stack/f13Cash/random/denarius/low,
-	/obj/item/stack/f13Cash/random/aureus/low
+	/obj/item/stack/f13Cash/random/aureus/low,
+	/obj/item/stack/f13Cash/random/bawls/low
 ))
 
 GLOBAL_LIST_INIT(loot_t2_money, list(
 	/obj/item/stack/f13Cash/random/med,
 	/obj/item/stack/f13Cash/random/ncr/med,
 	/obj/item/stack/f13Cash/random/denarius/med,
-	/obj/item/stack/f13Cash/random/aureus/med
+	/obj/item/stack/f13Cash/random/aureus/med,
+	/obj/item/stack/f13Cash/random/bawls/med
 ))
 
 GLOBAL_LIST_INIT(loot_t3_money, list(
 	/obj/item/stack/f13Cash/random/high,
 	/obj/item/stack/f13Cash/random/ncr/high,
 	/obj/item/stack/f13Cash/random/denarius/high,
-	/obj/item/stack/f13Cash/random/aureus/high
+	/obj/item/stack/f13Cash/random/aureus/high,
+	/obj/item/stack/f13Cash/random/bawls/high
 ))
 
 GLOBAL_LIST_INIT(loot_skillbook, list(

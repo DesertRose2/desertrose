@@ -5,6 +5,7 @@
 #define CASH_AUR 100 /* 100 caps to 1 AUR */
 #define CASH_DEN 4 /* 4 caps to 1 DEN */
 #define CASH_NCR 0.4 /* $100 to 40 caps */
+#define CASH_BOS 2 /* 2 caps to 1 BAWLS */
 
 /* value of coins to spawn, use as-is for caps */
 /* LOW_MIN / AUR = amount in AUR */
@@ -268,11 +269,37 @@
 	min_qty = HIGH_MIN / CASH_NCR
 	max_qty = HIGH_MAX / CASH_NCR
 
+/obj/item/stack/f13Cash/bawls
+	name = "BAWLS cap"
+	singular_name = "BAWLS cap"
+	icon = 'icons/obj/economy.dmi'
+	icon_state = "bawls_cap"
+	flavor_desc =	"A standard BAWLS Guarana bottle cap featuring printed twist-line instructions along the edges,\
+					A rare unit of exhcnage commonly used out East such as in the lands of Texas. Or in strange Brotherhood chapters."
+	value = CASH_BOS * CASH_CAP
+	merge_type = /obj/item/stack/f13Cash/bawls
+
+/obj/item/stack/f13Cash/random/bawls
+	money_type = /obj/item/stack/f13Cash/denarius
+
+/obj/item/stack/f13Cash/random/bawls/low
+	min_qty = LOW_MIN / CASH_BOS
+	max_qty = LOW_MAX / CASH_BOS
+
+/obj/item/stack/f13Cash/random/bawls/med
+	min_qty = MED_MIN / CASH_BOS
+	max_qty = MED_MAX / CASH_BOS
+
+/obj/item/stack/f13Cash/random/bawls/high
+	min_qty = HIGH_MIN / CASH_BOS
+	max_qty = HIGH_MAX / CASH_BOS
+
 #undef maxCoinIcon
 #undef CASH_CAP
 #undef CASH_AUR
 #undef CASH_DEN
 #undef CASH_NCR
+#undef CASH_BOS
 #undef LOW_MIN
 #undef LOW_MAX
 #undef MED_MIN

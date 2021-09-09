@@ -341,7 +341,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	description = "<span class='warning'>Sometimes eye contact makes me so nervous...</span>\n"
 	mood_change = -5
 	timeout = 3 MINUTES
-
+/* Bad
 /datum/quirk/phobia
 	name = "Phobia"
 	desc = "You've had a traumatic past, one that has scarred you for life, and cripples you when dealing with your greatest fears."
@@ -359,7 +359,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/phobia/remove()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(phobia, TRAUMA_RESILIENCE_ABSOLUTE)
-
+*/
 /datum/quirk/mute
 	name = "Mute"
 	desc = "Due to some accident, medical condition, or simply by choice, you are completely unable to speak."
