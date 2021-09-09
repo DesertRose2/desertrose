@@ -469,7 +469,12 @@
 					/obj/item/reagent_containers/glass/beaker,
 					/obj/item/reagent_containers/spray,
 					// /obj/item/reagent_containers/medigel,
-					/obj/item/reagent_containers/chem_pack
+					/obj/item/reagent_containers/chem_pack,
+					/obj/item/reagent_containers/hypospray/medipen,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	))
 
 	if(istype(O, /obj/item/storage/pill_bottle))
