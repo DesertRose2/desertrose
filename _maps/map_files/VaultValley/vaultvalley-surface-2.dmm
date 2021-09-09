@@ -3203,6 +3203,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"dBX" = (
+/mob/living/simple_animal/hostile/raider/junker,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "dCc" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -10731,13 +10735,6 @@
 "lZM" = (
 /obj/structure/easel,
 /turf/open/floor/wood/f13,
-/area/f13/building)
-"maQ" = (
-/mob/living/simple_animal/hostile/raider/firefighter{
-	faction = list("raider", "junker");
-	name = "Junker"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "mbn" = (
 /obj/machinery/light_switch,
@@ -64024,7 +64021,7 @@ iBA
 koV
 umL
 nUE
-tbm
+dBX
 tbm
 umL
 qAx
@@ -64282,7 +64279,7 @@ dJw
 umL
 enL
 tbm
-maQ
+tbm
 umL
 tbm
 tbm

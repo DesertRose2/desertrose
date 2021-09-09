@@ -18,13 +18,6 @@
 /obj/structure/window/fulltile/wood_window,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
-"cj" = (
-/mob/living/simple_animal/hostile/raider/baseball{
-	faction = list("raider", "junker");
-	name = "Junker"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/building)
 "cC" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -388,7 +381,8 @@
 /area/f13/ncr)
 "BC" = (
 /obj/machinery/mecha_part_fabricator{
-	req_one_access_txt = "010"
+	circuit = null;
+	req_one_access_txt = 01001110 01101111
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
@@ -633,6 +627,10 @@
 "RB" = (
 /turf/closed/indestructible/riveted,
 /area/f13/tunnel)
+"RO" = (
+/mob/living/simple_animal/hostile/raider/junker,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "RV" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/line{
@@ -696,13 +694,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
-"Tz" = (
-/mob/living/simple_animal/hostile/raider/biker{
-	faction = list("raider", "faction");
-	name = "Junker"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/building)
 "Vh" = (
 /obj/structure/stairs,
 /turf/open/floor/f13{
@@ -42330,7 +42321,7 @@ vP
 vP
 Vq
 uI
-cj
+uI
 uI
 uI
 Kc
@@ -42588,7 +42579,7 @@ vP
 Vq
 uI
 uI
-uI
+RO
 uI
 Kc
 iS
@@ -43104,7 +43095,7 @@ uI
 uI
 uI
 uI
-Tz
+uI
 uI
 uI
 Vq
@@ -44129,7 +44120,7 @@ vP
 vP
 Vq
 DD
-uI
+RO
 Vq
 uI
 Vq
@@ -45161,7 +45152,7 @@ ls
 Vq
 uI
 Vq
-Tz
+uI
 uI
 Vq
 vP
@@ -45927,7 +45918,7 @@ vP
 vP
 vP
 Vq
-Tz
+uI
 uI
 uI
 uI

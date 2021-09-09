@@ -20,6 +20,14 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"aS" = (
+/obj/structure/bed,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"bJ" = (
+/mob/living/simple_animal/hostile/raider/junker/scrapper,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "cj" = (
 /obj/machinery/conveyor,
 /obj/item/bodypart/l_arm/robot{
@@ -34,6 +42,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"ck" = (
+/mob/living/simple_animal/hostile/raider/junker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"cn" = (
+/mob/living/simple_animal/hostile/handy/liberator{
+	faction = list("wastebot", "junker")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "cK" = (
 /obj/item/stack/conveyor,
 /turf/open/floor/plasteel/barber{
@@ -45,12 +63,9 @@
 /obj/structure/decoration/smokeold,
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
-"dY" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	obj_integrity = 800
-	},
-/turf/closed/wall/r_wall/rust,
+"eI" = (
+/obj/machinery/microwave/stove,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "fn" = (
 /obj/structure/table/wood/poker,
@@ -93,10 +108,35 @@
 /obj/item/stack/f13Cash/caps/fivezerozero,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"gT" = (
+/mob/living/simple_animal/hostile/handy/sentrybot/nsb/riot{
+	faction = list("raider", "junker")
+	},
+/turf/open/floor/engine,
+/area/f13/bunker)
+"hF" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("wastebot", "junker")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"hP" = (
+/mob/living/simple_animal/hostile/handy{
+	faction = list("wastebot", "junker")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "ia" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"ip" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "iu" = (
@@ -122,6 +162,13 @@
 "jd" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
+	},
+/mob/living/simple_animal/hostile/raider/junker/hijacker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"je" = (
+/mob/living/simple_animal/hostile/handy/securitron{
+	faction = list("wastebot", "junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -152,11 +199,24 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"kB" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "lL" = (
-/obj/structure/bed/roller,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/gibs/human/body,
+/obj/structure/bed/mattress{
+	icon_state = "mattress6"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"mT" = (
+/obj/structure/decoration/rag{
+	icon_state = "skulls"
+	},
+/turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "mX" = (
 /obj/effect/gibspawner/human,
@@ -164,9 +224,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "ne" = (
-/obj/structure/bed/roller,
 /obj/effect/decal/remains/human,
+/obj/structure/bed/mattress{
+	icon_state = "mattress2"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"nZ" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical/old,
+/turf/open/floor/engine,
 /area/f13/bunker)
 "oc" = (
 /obj/structure/barricade/bars{
@@ -196,10 +263,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "pV" = (
-/obj/structure/bed/roller,
 /obj/effect/decal/remains/human,
-/obj/effect/gibspawner/human,
 /obj/effect/decal/cleanable/blood/gibs/up,
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "ql" = (
@@ -227,6 +295,7 @@
 /obj/structure/chair/wood/modern{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "sh" = (
@@ -238,6 +307,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"sk" = (
+/obj/effect/decal/cleanable/blood/gibs/human/up,
+/mob/living/simple_animal/hostile/raider/junker/hijacker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "sU" = (
 /obj/structure/junk/machinery,
 /turf/open/floor/plasteel/barber{
@@ -263,6 +337,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"tM" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("wastebot", "junker")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "uq" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood/gibs/human,
@@ -270,6 +352,7 @@
 /area/f13/bunker)
 "uM" = (
 /obj/structure/chair/stool/retro,
+/mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "uW" = (
@@ -313,9 +396,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "xe" = (
-/obj/structure/bed/roller,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/gibs/human/limb,
+/obj/structure/bed/mattress{
+	icon_state = "mattress4"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "xU" = (
@@ -342,8 +427,20 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"AW" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	obj_integrity = 800
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Bc" = (
 /obj/item/bodypart/head,
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("wastebot", "junker")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "BI" = (
@@ -363,12 +460,32 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"Cm" = (
+/obj/structure/closet/fridge/meat,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Cq" = (
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skulls"
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
 "CQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
 /obj/structure/decoration/rag{
 	icon_state = "skin"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"CZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("wastebot", "junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -385,12 +502,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"Du" = (
+/mob/living/simple_animal/hostile/raider/junker/boss,
+/turf/open/floor/engine,
+/area/f13/bunker)
 "DG" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	obj_integrity = 800
 	},
 /obj/structure/decoration/rag,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "DJ" = (
@@ -405,11 +527,34 @@
 /area/f13/caves)
 "DL" = (
 /obj/structure/chair/wood/fancy,
+/mob/living/simple_animal/hostile/raider/junker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"DO" = (
+/obj/structure/simple_door/metal/barred,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "DY" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/box/dice,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Eg" = (
+/obj/structure/table/wood/fancy,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"EK" = (
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	obj_integrity = 800
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "EX" = (
@@ -423,7 +568,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"Fl" = (
+/mob/living/simple_animal/hostile/handy/sentrybot/nsb{
+	faction = list("raider", "junker")
+	},
+/turf/open/floor/engine,
+/area/f13/bunker)
 "FG" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"FJ" = (
+/obj/structure/table/wood/fancy,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Gg" = (
@@ -436,6 +594,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Gj" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("wastebot", "junker")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Go" = (
 /obj/machinery/conveyor/auto{
 	dir = 8
@@ -445,6 +609,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Gy" = (
+/obj/effect/decal/remains/human,
+/obj/structure/bed/mattress,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "GJ" = (
 /obj/machinery/conveyor,
 /obj/structure/railing{
@@ -459,6 +628,13 @@
 /obj/machinery/conveyor,
 /turf/open/space/basic,
 /area/f13/bunker)
+"Hi" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Hq" = (
 /obj/docking_port/stationary{
 	dir = 2;
@@ -469,6 +645,12 @@
 	width = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
+/area/f13/bunker)
+"HK" = (
+/obj/structure/closet,
+/obj/effect/spawner/bundle/f13/armor/marine,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
+/turf/open/floor/engine,
 /area/f13/bunker)
 "Ir" = (
 /obj/structure/simple_door/metal/barred,
@@ -486,6 +668,13 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"IF" = (
+/obj/structure/table/wood/fancy,
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "IL" = (
 /obj/structure/bed/roller,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -496,6 +685,10 @@
 	obj_integrity = 800
 	},
 /obj/effect/decal/cleanable/blood/gibs/human/limb,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"JX" = (
+/obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Ky" = (
@@ -540,6 +733,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"KM" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Le" = (
 /obj/effect/gibspawner/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -555,6 +753,19 @@
 /area/f13/caves)
 "LB" = (
 /turf/open/floor/plasteel/elevatorshaft,
+/area/f13/bunker)
+"MN" = (
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
+"Oq" = (
+/obj/structure/decoration/rag,
+/obj/structure/decoration/rag{
+	icon_state = "skulls"
+	},
+/turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "Ow" = (
 /obj/machinery/conveyor,
@@ -573,9 +784,38 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"ON" = (
+/obj/structure/decoration/rag{
+	icon_state = "blood_pic_5";
+	name = "a bloody message"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
 "Ph" = (
 /obj/structure/chair/stool/f13stool,
 /obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"PH" = (
+/obj/structure/decoration/rag{
+	icon_state = "skulls"
+	},
+/obj/structure/decoration/rag,
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
+"PU" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Qc" = (
@@ -585,6 +825,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Qd" = (
+/obj/structure/table/reinforced,
+/obj/item/ammo_box/jerrycan,
+/turf/open/floor/engine,
+/area/f13/bunker)
 "Qf" = (
 /obj/structure/chair/stool/f13stool,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -596,6 +841,43 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Rf" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/obj/structure/decoration/rag{
+	icon_state = "skulls"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Ri" = (
+/obj/structure/table/wood/fancy,
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = -6;
+	pixel_y = -1
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/obj/item/storage/box/drinkingglasses,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Rp" = (
+/obj/machinery/conveyor/auto{
+	dir = 8
+	},
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/handy/liberator{
+	faction = list("wastebot", "junker")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "RF" = (
 /obj/effect/landmark/shuttle_arena_entrance,
 /turf/open/floor/plasteel/barber{
@@ -614,6 +896,14 @@
 	dir = 4
 	},
 /obj/structure/railing,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"RN" = (
+/obj/structure/closet,
+/obj/item/clothing/under/f13/female/mercadv,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/bundle/f13/ionrifle,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "RV" = (
@@ -662,10 +952,53 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Tf" = (
+/obj/structure/bed,
+/turf/open/floor/engine,
+/area/f13/bunker)
+"TG" = (
+/mob/living/simple_animal/hostile/raider/junker/hijacker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"TR" = (
+/obj/machinery/door/airlock/security,
+/turf/open/floor/engine,
+/area/f13/bunker)
+"TX" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("wastebot", "junker")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Um" = (
 /obj/effect/decal/cleanable/blood/gibs/human,
 /obj/effect/gibspawner/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Un" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"UB" = (
+/mob/living/simple_animal/hostile/raider/junker/hijacker,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"UI" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry{
+	pixel_x = 5;
+	pixel_y = -10
+	},
+/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron,
+/obj/item/clothing/head/helmet/f13/raider/eyebot{
+	pixel_x = -5
+	},
+/turf/open/floor/engine,
 /area/f13/bunker)
 "UJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -678,6 +1011,18 @@
 /obj/effect/decal/cleanable/blood/gibs/human/limb,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"VD" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbear1"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"VO" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress6"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "VS" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/barber{
@@ -685,8 +1030,25 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Wh" = (
+/obj/structure/closet/crate/hydroponics{
+	name = "storage crate"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Wi" = (
+/mob/living/simple_animal/hostile/raider/junker/hijacker,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Wn" = (
 /turf/open/floor/engine,
+/area/f13/bunker)
+"Wr" = (
+/obj/structure/bed/mattress,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "WX" = (
 /obj/structure/chair/office{
@@ -698,8 +1060,8 @@
 	},
 /area/f13/caves)
 "Xf" = (
-/obj/machinery/door/airlock/security{
-	req_one_access_txt = 01001110 01101111
+/obj/machinery/door/airlock/maintenance_hatch{
+	req_one_access_txt = "01001110 01101111"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -726,6 +1088,12 @@
 /obj/item/toy/cards/singlecard,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"XR" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "XZ" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
@@ -733,6 +1101,20 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"Ya" = (
+/obj/structure/closet,
+/obj/item/clothing/under/f13/female/mercadv,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/bundle/f13/wattz2k,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"ZF" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 
 (1,1,1) = {"
 Lj
@@ -56734,19 +57116,19 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+Xl
+Xl
+Xl
+Xl
 Lj
 Lj
 Lj
 Lj
 Xl
 ne
-Le
-Ir
+FG
+DO
 FG
 Xl
 Lj
@@ -56980,22 +57362,22 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
 Xl
 Xl
 Xl
 Xl
 Xl
 Xl
+Xl
+Xl
+Xl
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+aS
+FG
+aS
+Xl
 Lj
 Lj
 Lj
@@ -57237,22 +57619,22 @@ Lj
 Lj
 Lj
 Lj
-Lj
+Xl
+HK
+Wn
+Xl
+Du
+Fl
+Wn
+Wn
+Xl
 Lj
 Lj
 Xl
-Wn
-Wn
-Wn
-Wn
+FG
+FG
+FG
 Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
 Lj
 Lj
 Lj
@@ -57260,7 +57642,7 @@ Lj
 du
 lL
 iu
-Ir
+DO
 FG
 Xl
 Lj
@@ -57494,22 +57876,22 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
 Xl
 Wn
 Wn
+TR
+Wn
+Wn
 Wn
 Wn
 Xl
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+FG
+FG
+FG
+Xl
 Lj
 Lj
 Lj
@@ -57751,22 +58133,22 @@ Lj
 Lj
 Lj
 Lj
-Lj
+Xl
+Tf
+Wn
+Xl
+nZ
+Qd
+UI
+Wn
+Xl
 Lj
 Lj
 Xl
-Wn
-Wn
-Wn
-Wn
+Ya
+FG
+RN
 Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
 Lj
 Lj
 Lj
@@ -57774,8 +58156,8 @@ Lj
 Xl
 pV
 mX
-Ir
-FG
+DO
+ql
 Xl
 Lj
 Lj
@@ -58008,9 +58390,9 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
+Xl
+Xl
+Xl
 Xl
 Wn
 Wn
@@ -58021,7 +58403,7 @@ Xl
 Xl
 Xl
 Xl
-Xl
+Xo
 Xl
 Xl
 Lj
@@ -58031,8 +58413,8 @@ Lj
 Xl
 oc
 JT
-oc
-FG
+EK
+ql
 Xl
 Lj
 Lj
@@ -58269,16 +58651,16 @@ Lj
 Lj
 Lj
 Xl
+gT
 Wn
 Wn
 Wn
-Wn
-Xo
+Rf
 FG
 FG
-FG
-FG
-FG
+bJ
+tG
+tG
 FG
 Xl
 Xl
@@ -58286,10 +58668,10 @@ Xl
 Xl
 Xl
 Xl
-ne
+Gy
 Vv
-Ir
-FG
+DO
+TG
 Xl
 Lj
 Lj
@@ -58535,8 +58917,8 @@ Xl
 Xl
 Xl
 Xl
-FG
-FG
+TX
+tG
 FG
 FG
 Xo
@@ -58546,7 +58928,7 @@ Xl
 JT
 wg
 oc
-FG
+tG
 Xl
 Lj
 Lj
@@ -58798,12 +59180,12 @@ Xl
 Xl
 Xl
 FG
-FG
+Un
 Xl
 xe
 FG
-Ir
-FG
+DO
+tG
 Xl
 Lj
 Lj
@@ -59041,8 +59423,8 @@ Lj
 Lj
 Lj
 Xl
-FG
-FG
+JX
+JX
 Xl
 Lj
 Lj
@@ -59054,13 +59436,13 @@ Lj
 Lj
 Lj
 Xl
-FG
-FG
+Wi
+tG
 Xl
 oc
 oc
 oc
-FG
+VD
 Xl
 Lj
 Lj
@@ -59291,28 +59673,28 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
 Xl
 Xl
-FG
-FG
 Xl
 Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+Xl
 Xl
 FG
-FG
+ck
+Xl
+Xl
+Lj
+Lj
+Lj
+Lj
+Lj
+Lj
+Lj
+Lj
+Xl
+tG
+tG
 Xo
 FG
 FG
@@ -59548,32 +59930,32 @@ Lj
 Lj
 Lj
 Lj
+Xl
+PU
+VO
+PU
+PU
+Xl
+ck
+FG
+FG
+IF
+Xl
 Lj
 Lj
 Lj
 Lj
 Lj
+Lj
+Lj
+Lj
+ON
+ip
+tG
 Xl
 FG
 FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
-Xl
-FG
-FG
-FG
+je
 FG
 Xl
 Lj
@@ -59805,28 +60187,28 @@ Lj
 Lj
 Lj
 Lj
+Xl
+FG
+TG
+FG
+FG
+Xl
+eI
+FG
+FG
+Ri
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
 Lj
 Lj
 Xl
-FG
-FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
+tG
+tG
 Xl
 Xl
 Xl
@@ -60062,28 +60444,28 @@ Lj
 Lj
 Lj
 Lj
+Xl
+PU
+FG
+FG
+PU
+Xl
+FG
+bJ
+FG
+Eg
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
 Lj
 Lj
 Xl
-FG
-FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
+TX
+kB
 Xl
 Lj
 Lj
@@ -60319,28 +60701,28 @@ Lj
 Lj
 Lj
 Lj
+Xl
+PU
+PU
+FG
+FG
+Xo
+FG
+je
+FG
+Eg
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
 Lj
 Lj
 Xl
-FG
-FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
+kB
+UB
 Xl
 Lj
 Lj
@@ -60576,28 +60958,28 @@ Lj
 Lj
 Lj
 Lj
+Xl
+FG
+FG
+FG
+PU
+Xl
+Cm
+FG
+FG
+Eg
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
 Lj
 Lj
 Xl
-FG
-FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
+ql
+ql
 Xl
 Lj
 Lj
@@ -60833,28 +61215,28 @@ Lj
 Lj
 Lj
 Lj
+Xl
+VO
+FG
+FG
+XR
+Xl
+Cm
+FG
+FG
+Ri
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
 Lj
 Lj
 Xl
-FG
-FG
-FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-FG
+tG
+ql
 Xl
 Lj
 Lj
@@ -61090,16 +61472,16 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
 Xl
+PU
 FG
+PU
+PU
+Xl
+Cm
 FG
-FG
-FG
+TG
+FJ
 Xl
 Lj
 Lj
@@ -61109,11 +61491,9 @@ Lj
 Lj
 Lj
 Lj
-Xl
-FG
-FG
-Xl
-Xl
+Oq
+tG
+tM
 Xl
 Xl
 Xl
@@ -61121,6 +61501,8 @@ Xl
 Xl
 Xl
 Xl
+Xl
+PH
 Xl
 Xl
 Xl
@@ -61347,11 +61729,11 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+FG
+TG
+FG
+Xl
 Xl
 Xl
 Xo
@@ -61366,10 +61748,10 @@ Lj
 Lj
 Lj
 Lj
-Xl
+Cq
 FG
-FG
-FG
+tG
+VD
 FG
 Xl
 FG
@@ -61604,11 +61986,11 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+PU
+FG
+PU
+Xl
 Lj
 Xl
 FG
@@ -61623,11 +62005,11 @@ Lj
 Lj
 Lj
 Lj
-Xl
+Oq
 FG
 FG
 FG
-FG
+tG
 Xo
 FG
 FG
@@ -61636,7 +62018,7 @@ FG
 FG
 FG
 FG
-FG
+hF
 FG
 RV
 FG
@@ -61861,15 +62243,15 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Xl
+Wh
+FG
+Wh
+Xl
 Lj
 Xl
 FG
-FG
+Gj
 Xl
 Lj
 Lj
@@ -61896,7 +62278,7 @@ Aj
 EX
 Sp
 pF
-RV
+sk
 Xl
 Lj
 "}
@@ -62118,6 +62500,19 @@ Lj
 Lj
 Lj
 Lj
+Xl
+Wr
+XR
+PU
+Xl
+Lj
+Xl
+cn
+cn
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
@@ -62126,20 +62521,7 @@ Lj
 Lj
 Xl
 FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-BQ
+Rp
 FG
 FG
 Xl
@@ -62148,7 +62530,7 @@ FG
 op
 FG
 FG
-FG
+TG
 Le
 FG
 jb
@@ -62375,6 +62757,19 @@ Lj
 Lj
 Lj
 Lj
+Xl
+Xl
+Xl
+Xl
+Xl
+Lj
+Xl
+cn
+cn
+Xl
+Lj
+Lj
+Lj
 Lj
 Lj
 Lj
@@ -62383,27 +62778,14 @@ Lj
 Lj
 Xl
 FG
-FG
-Xl
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Xl
-FG
-BQ
+Rp
 FG
 FG
 Xl
 FG
 FG
 FG
-FG
+hP
 FG
 xU
 FG
@@ -62640,7 +63022,7 @@ Lj
 Lj
 Xl
 FG
-FG
+TG
 Xl
 Lj
 Lj
@@ -62653,7 +63035,7 @@ Lj
 Lj
 Xl
 FG
-BQ
+Rp
 FG
 FG
 Xl
@@ -63155,8 +63537,8 @@ Lj
 Xl
 FG
 Xl
-FG
-FG
+ZF
+AW
 FG
 Lj
 Lj
@@ -63412,9 +63794,9 @@ Lj
 Xl
 FG
 Xl
-FG
-FG
-FG
+ck
+AW
+je
 Lj
 Lj
 Lj
@@ -63670,7 +64052,7 @@ Xl
 FG
 Xo
 FG
-FG
+AW
 FG
 FG
 FG
@@ -63927,9 +64309,9 @@ Xl
 FG
 Xl
 FG
+AW
 FG
-FG
-FG
+TG
 FG
 FG
 FG
@@ -63947,7 +64329,7 @@ LB
 FG
 FG
 FG
-Xl
+MN
 FG
 FG
 tG
@@ -64183,9 +64565,9 @@ Lj
 Xl
 FG
 Xl
-FG
-FG
-FG
+ck
+AW
+je
 FG
 FG
 FG
@@ -64453,7 +64835,7 @@ Xl
 Xl
 FG
 BQ
-FG
+ck
 FG
 Xl
 uW
@@ -64466,7 +64848,7 @@ FG
 FG
 ql
 ql
-tG
+CZ
 Xl
 Lj
 "}
@@ -64711,11 +65093,11 @@ Xl
 FG
 fz
 FG
-FG
+Un
 Xl
 jt
 tG
-Ir
+Hi
 FG
 FG
 FG
@@ -64966,7 +65348,7 @@ Lj
 Lj
 Xl
 BI
-FG
+Un
 FG
 FG
 Xl
@@ -64981,7 +65363,7 @@ DY
 Ph
 tG
 tG
-Xl
+MN
 Lj
 "}
 (251,1,1) = {"
@@ -65224,7 +65606,7 @@ Lj
 Xl
 FG
 FG
-FG
+je
 FG
 Xf
 FG
@@ -65238,7 +65620,7 @@ XL
 rF
 tG
 FG
-Xl
+MN
 Lj
 "}
 (252,1,1) = {"
@@ -65482,7 +65864,7 @@ Xl
 BI
 FG
 FG
-FG
+TG
 Xl
 FG
 FG
@@ -65743,8 +66125,8 @@ Xl
 Xl
 Xl
 Xl
-dY
-FG
+Xl
+KM
 FG
 FG
 jd
@@ -66001,8 +66383,8 @@ Lj
 Lj
 Lj
 Xl
-Xl
-Xl
+mT
+Cq
 Xl
 Xl
 Xl

@@ -200,8 +200,8 @@
 /obj/item/clothing/suit/armor/f13/raider/junker
 	name = "Junker body armor"
 	desc = "(IV) A heavier armor consisting purely of ramshackle plating clearly made from old robots tack welded together."
-	icon_state = "junker_armour"
-	item_state = "junker_armour"
+	icon_state = "junker_armor"
+	item_state = "junker_armor"
 	slowdown = 0.2
 	resistance_flags = FIRE_PROOF
 
