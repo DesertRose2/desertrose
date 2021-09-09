@@ -75,13 +75,13 @@
 	cost = 2
 
 /datum/gear/backpack/captainpen
-	name = "A captains pen"
-	name = /obj/item/pen/fountain/captain
-	cost = 2
+	name = "A captain pen"
+	path = /obj/item/pen/fountain/captain
+	cost = 3
 	
 /datum/gear/backpack/survivalpen
 	name = "A survival pen"
-	name = /obj/item/pen/survival
+	path = /obj/item/pen/survival
 	cost = 3
 
 /datum/gear/backpack/ringbox_gold
