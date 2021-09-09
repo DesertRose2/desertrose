@@ -838,7 +838,7 @@
 	icon_living	=	"junker_boss"
 	icon_dead	=	"junker_boss"
 	icon_gib	=	"junker_boss"
-	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town..."
+	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town...")
 	maxHealth = 700
 	health = 700
 	retreat_distance = 8
