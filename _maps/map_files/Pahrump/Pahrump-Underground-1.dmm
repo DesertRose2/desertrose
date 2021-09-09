@@ -12232,6 +12232,9 @@
 	dir = 4
 	},
 /obj/machinery/seed_extractor,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "laf" = (
@@ -15213,7 +15216,7 @@
 	color = "000000"
 	},
 /obj/machinery/hydroponics/constructable,
-/turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
+/turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "nPH" = (
 /obj/machinery/light/sign{
@@ -19526,16 +19529,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
 "rnY" = (
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/xander,
-/obj/item/seeds/cotton,
-/obj/item/seeds/wheat,
-/obj/item/hatchet,
-/obj/structure/rack,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/smartfridge/food,
+/turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "roc" = (
 /obj/machinery/chem_dispenser/drinks,
@@ -23772,11 +23773,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "uTI" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/light/small,
-/obj/machinery/smartfridge/food,
+/obj/structure/rack,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "uUk" = (
@@ -25201,6 +25200,18 @@
 "weW" = (
 /turf/open/water,
 /area/f13/tunnel)
+"wfs" = (
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/xander,
+/obj/item/seeds/cotton,
+/obj/item/seeds/wheat,
+/obj/item/hatchet,
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/followers)
 "wfu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spider/spiderling{
@@ -27121,9 +27132,10 @@
 	},
 /area/f13/tunnel)
 "ybS" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/glass/bucket,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/vending/hydroseeds,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "ycc" = (
@@ -27346,7 +27358,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/vending/hydroseeds,
+/obj/structure/rack,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/followers)
 "ylR" = (
@@ -29375,7 +29391,7 @@ pnL
 pnL
 pnL
 fbD
-fHC
+rnY
 ige
 ige
 syn
@@ -31434,7 +31450,7 @@ aHw
 nPb
 ige
 ige
-hfS
+ybS
 aHw
 uoO
 uoO
@@ -31688,7 +31704,7 @@ wmz
 qow
 dSm
 aHw
-ige
+nPb
 ige
 ige
 uTI
@@ -31945,10 +31961,10 @@ qow
 qow
 tFr
 aHw
+nPb
 ige
 ige
-ige
-hfS
+wfs
 aHw
 uoO
 uoO
@@ -32203,8 +32219,8 @@ fxe
 tFr
 aHw
 kZu
-rnY
-ybS
+hfS
+hfS
 ylj
 aHw
 uoO
