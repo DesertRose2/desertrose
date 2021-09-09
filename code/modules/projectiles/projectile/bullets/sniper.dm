@@ -1,5 +1,8 @@
 // .50 (Sniper)
 
+//Old .50 ammo - here for legacy looking. New ones are in the rifle.dm
+
+/*
 /obj/item/projectile/bullet/p50
 	name =".50 bullet"
 	pixels_per_second = TILES_TO_PIXELS(25)
@@ -46,9 +49,7 @@
 	pixels_per_second = TILES_TO_PIXELS(33.33)
 	range = 16
 
-//Old .50 ammo - here for legacy looking. New ones are in the rifle.dm
-
-/*/obj/item/projectile/bullet/a50MG
+/obj/item/projectile/bullet/a50MG
 	damage = 55
 	armour_penetration = 0.85
 

@@ -51,7 +51,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762/sport //.308 Winchester
 	name = ".308 bullet"
-	damage = 37
+	damage = 35
 	armour_penetration = 0.1
 	wound_bonus = 10
 	bare_wound_bonus = -10

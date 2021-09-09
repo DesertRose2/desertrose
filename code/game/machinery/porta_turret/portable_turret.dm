@@ -755,7 +755,7 @@
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 
 /obj/machinery/porta_turret/syndicate/energy/raven
-	stun_projectile =  /obj/item/projectile/beam/laser
+	stun_projectile =  /obj/item/projectile/beam/laser-
 	stun_projectile_sound = 'sound/weapons/laser.ogg'
 	faction = list("neutral","silicon","turret")
 
@@ -764,7 +764,7 @@
 	max_integrity = 40
 	stun_projectile = /obj/item/projectile/bullet/syndicate_turret
 	lethal_projectile = /obj/item/projectile/bullet/syndicate_turret
-
+/*
 /obj/machinery/porta_turret/syndicate/shuttle
 	scan_range = 9
 	shot_delay = 3
@@ -782,7 +782,7 @@
 		addtimer(CALLBACK(src, .proc/shootAt, target), 10)
 		addtimer(CALLBACK(src, .proc/shootAt, target), 15)
 		return TRUE
-
+*/
 /obj/machinery/porta_turret/ai
 	faction = list("silicon")
 	nonlethal_projectile = /obj/item/projectile/beam/disabler

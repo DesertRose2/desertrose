@@ -21,9 +21,9 @@ Snowflake Rounds (Fire, meteor,etc)				=	-10% damage. AP reduced by 50%
 	name = "12g shotgun slug"
 	damage = 48
 	sharpness = SHARP_POINTY
-	armour_penetration = 0.2
-	wound_bonus = 26
-	bare_wound_bonus = -26
+	armour_penetration = 0.3
+	wound_bonus = 30
+	bare_wound_bonus = -30
 	spread = 2
 
 /obj/item/projectile/bullet/shotgun_slug/executioner
