@@ -197,6 +197,21 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	resistance_flags = FIRE_PROOF
 
+/obj/item/clothing/suit/armor/f13/raider/junker
+	name = "Junker body armor"
+	desc = "(IV) A heavier armor consisting purely of ramshackle plating clearly made from old robots tack welded together."
+	icon_state = "junker_armour"
+	item_state = "junker_armour"
+	slowdown = 0.2
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/armor/f13/raider/junker/boss
+	desc = "(VII) A heavy armor of pre-war riot gear reinforced with ramshackle plating."
+	icon_state = "junker_duster"
+	item_state = "junker_duster"
+	slowdown = 0.3
+	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+
 //Legion
 
 /obj/item/clothing/suit/armor/f13/medicus
