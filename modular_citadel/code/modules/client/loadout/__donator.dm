@@ -593,4 +593,17 @@
 	ckeywhitelist = list("dioclex")
 	restricted_roles = list("Legion Venator")
 
-
+/datum/gear/donator/wayfarerrose
+	name = "Wayfarer rose"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/grown/wayfarer_rose
+	ckeywhitelist = list("ollieoxen",
+						"andrej99",
+						"novaskelly",
+						"loadedgun",
+						"weeps",
+						"landoorando",
+						"usotsukihime",
+						"karlov",
+						"hallow96",
+						"SM45HB0T")
