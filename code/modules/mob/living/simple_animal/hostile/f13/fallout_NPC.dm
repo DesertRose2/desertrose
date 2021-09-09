@@ -821,7 +821,7 @@
 	icon_gib	=	"junker_scrapper"
 	projectiletype = /obj/item/projectile/ion/weak
 	projectilesound = 'sound/f13weapons/shotgun.ogg'
-	loot = list(/obj/effect/mow_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/ballisticfist)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/ballisticfist)
 
 /mob/living/simple_animal/hostile/raider/junker/boss
 	name = "Junker Boss"
