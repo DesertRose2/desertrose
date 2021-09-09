@@ -438,7 +438,7 @@
 /obj/item/gun/ballistic/rifle/mag/varmint
 	name = "varmint rifle"
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
-	icon_state = "varmint"
+	icon_state = "varmint_rifle"
 	item_state = "varmintrifle"
 	force = 18
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
