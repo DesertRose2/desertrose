@@ -605,5 +605,5 @@
 						"landoorando",
 						"usotsukihime",
 						"karlov",
-						"odysiahallow",
+						"hallow96",
 						"SM45HB0T")
