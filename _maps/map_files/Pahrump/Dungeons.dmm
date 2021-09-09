@@ -4070,13 +4070,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "gRF" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
 	id = vaultshutters;
 	max_integrity = 999999999999;
-	resistance_flags = INDESTRUCTIBLE
+	resistance_flags = 242
 	},
-/obj/structure/barricade/wooden,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "gRX" = (
@@ -9896,7 +9896,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = overseerexit;
 	max_integrity = 999999999999;
-	resistance_flags = INDESTRUCTIBLE
+	resistance_flags = 242
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/security{
