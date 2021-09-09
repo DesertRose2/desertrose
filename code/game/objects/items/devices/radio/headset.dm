@@ -285,40 +285,51 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_vault/cogcity
 	name = "\improper Cog City radio headset"
+	bowman = TRUE
 
 /obj/item/radio/headset/headset_vault/cogcity/sci
 	name = "\improper Cog City science radio headset"
+	icon_state = "sci_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_science
 
 /obj/item/radio/headset/headset_vault/cogcity/sec
 	name = "\improper Cog City security radio headset"
+	icon_state = "sec_headset_alt"
+	item_state = "sec_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_vault_security
 
 /obj/item/radio/headset/headset_vault/cogcity/priest
 	name = "\improper Cog City preacher radio headset"
+	icon_state = "srv_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_preacher
 
 /obj/item/radio/headset/headset_vault/cogcity/merch
 	name = "\improper Cog City merchant radio headset"
+	icon_state = "cargo_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_merchant
 
 /obj/item/radio/headset/headset_vault/cogcity/overseer
 	name = "\improper Cog City command radio headset"
+	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault
 	keyslot2 = new /obj/item/encryptionkey/headset_overseer
 
 /obj/item/radio/headset/headset_vault/cogcity/sec_lead
 	name = "\improper Cog City security command radio headset"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_vault_security
 	keyslot2 = new /obj/item/encryptionkey/headset_overseer
 
 /obj/item/radio/headset/headset_vault/cogcity/sci_lead
 	name = "\improper Cog City research command radio headset"
+	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_science
 	keyslot2 = new /obj/item/encryptionkey/headset_overseer
 
 /obj/item/radio/headset/headset_vault/cogcity/merch_lead
 	name = "\improper Cog City merchant command radio headset"
+	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_merchant
 	keyslot2 = new /obj/item/encryptionkey/headset_overseer
 

@@ -419,6 +419,17 @@
 	icon_state = "t45bos[on]"
 	item_state = "t45bos[on]"
 
+//Custom item - Rebel0 / Mariya Sankinova - won't work in the custom armor folder due to the helmet on and off ):
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/mari
+	name = "modified midwestern power helmet"
+	desc = "(VIII) This helmet once belonged to the Midwestern branch of the Brotherhood of Steel. Though it appears to sport a new paintjob now as well as a few modifications to its helmet; specified to fit the wearer."
+	icon_state = "marihelm"
+	item_state = "marihelm"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/mari/update_icon_state()
+	icon_state = "marihelm[on]"
+	item_state = "marihelm[on]"
+
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b Helm"
 	desc = "(IX) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
@@ -860,14 +871,21 @@
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/f13/atombeliever/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/head/helmet/f13/atomzealot
+	name = "zealot helmet"
+	desc = "(IV) The helmet of those true to the Division."
+	icon_state = "atomzealot"
+	item_state = "atomzealot"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 100, "fire" = 50, "acid" = 20)
 
+/obj/item/clothing/head/helmet/f13/atomzealot/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/flatranger
 	name = "NCR gambler ranger hat"

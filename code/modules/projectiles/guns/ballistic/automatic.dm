@@ -737,6 +737,16 @@
 	burst_shot_delay = 2
 	force = 20
 	spread = 1
+	suppressor_state = "suppressor"
+	can_scope = TRUE
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	suppressor_x_offset = 31
+	suppressor_y_offset = 15
+	bayonet_state = "rifles"
+	knife_x_offset = 22
+	knife_y_offset = 12
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -766,50 +776,6 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
-
-/obj/item/gun/ballistic/automatic/varmint
-	name = "varmint rifle"
-	desc = "A low powered 5.56, easy to use rifle."
-	icon_state = "varmint_rifle"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = 0
-	extra_penetration = 0
-	fire_delay = 6
-	w_class = WEIGHT_CLASS_BULKY
-	can_bayonet = FALSE
-	can_suppress = TRUE
-	can_attachments = TRUE
-	burst_size = 1
-	automatic_burst_overlay = FALSE
-	//automatic = 0
-	can_scope = TRUE
-	scope_state = "rifle_scope"
-	scope_x_offset = 4
-	scope_y_offset = 12
-	semi_auto = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 31
-
-/obj/item/gun/ballistic/automatic/varmint/ratslayer
-	name = "Ratslayer"
-	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
-	icon_state = "rat_slayer"
-	item_state = "ratslayer"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_damage = 6
-	extra_penetration = 0.3
-	suppressed = 1
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_scope = FALSE
-	suppressed = 1
-	can_suppress = FALSE
 
 /obj/item/gun/ballistic/automatic/bozar
 	name = "Bozar"
@@ -872,6 +838,9 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	burst_size = 2
 	fire_delay = 3
+	can_attachments = TRUE
+	can_scope = FALSE
+	can_bayonet = FALSE
 	spread = 10
 	extra_damage = 2
 	suppressor_state = "suppressor"
@@ -1218,7 +1187,7 @@
 	icon_state = "p90"
 	item_state = "m90"
 	burst_size = 3
-	fire_delay = 1
+	fire_delay = 2.5
 	//automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -1302,49 +1271,6 @@
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
-
-/obj/item/gun/ballistic/automatic/commando
-	name = "commando carbine"
-	desc = "An integrally suppressed bolt action carbine, perfect for quiet varmint hunting. Uses .45 pistol magazines."
-	icon_state = "delisle"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
-	extra_damage = 2
-	extra_penetration = 0.06
-	fire_delay = 4.5
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	can_suppress = FALSE
-	can_unsuppress = FALSE
-	suppressed = 1
-	can_attachments = TRUE
-	can_automatic = TRUE
-	burst_size = 1
-	automatic_burst_overlay = FALSE
-	//automatic = 0
-	can_scope = TRUE
-	scope_state = "lasmusket_scope"
-	scope_x_offset = 6
-	scope_y_offset = 14
-	semi_auto = TRUE
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
-/obj/item/gun/ballistic/automatic/commando/dmr
-	name = "commando battle rifle"
-	desc = "An integrally suppressed bolt action carbine. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy on a rifle firing .45 APC; specifically .45 stick-mags that are side-mounted.. for some reason."
-	icon_state = "destroyer"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
-	extra_damage = 4
-	extra_penetration = 0.1
-	fire_delay = 6
-	burst_size = 1
-	can_automatic = FALSE
-	can_scope = TRUE
-	scope_state = "lasmusket_scope"
-	scope_x_offset = 6
-	scope_y_offset = 14
-	semi_auto = TRUE
 
 /obj/item/gun/ballistic/automatic/mp5
 	name = "mp5sd"

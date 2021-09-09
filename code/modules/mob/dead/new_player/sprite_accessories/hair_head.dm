@@ -365,7 +365,7 @@
 	name = "Gentle"
 	icon_state = "hair_gentle"
 
-/datum/sprite_accessory/hair/gentle
+/datum/sprite_accessory/hair/gentle2
 	name = "Gentle (Alt)"
 	icon_state = "gentle21"
 
@@ -614,6 +614,7 @@
 	icon_state = "hair_ponytail6"
 
 /datum/sprite_accessory/hair/ponytail7
+	name = "Ponytail 7"
 	icon_state = "hair_ponytail7"
 
 /datum/sprite_accessory/hair/ponytail8

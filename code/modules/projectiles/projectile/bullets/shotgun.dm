@@ -42,6 +42,16 @@
 	damage = 10 //slight damage on impact
 	range = 4
 
+/obj/item/projectile/incendiary/flamethrower/incinerator
+	name = "Fire!"
+	icon = 'icons/effects/fire.dmi'
+	icon_state = "3"
+	light_range = LIGHT_RANGE_FIRE
+	light_color = LIGHT_COLOR_FIRE
+	damage_type = BURN
+	damage = 15
+	range = 8
+
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	. = ..()
 	if(iscarbon(target))

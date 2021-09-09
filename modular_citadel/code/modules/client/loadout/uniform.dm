@@ -34,15 +34,16 @@
 	path = /obj/item/clothing/under/f13/ncr/pants
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Heavy Trooper",
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
@@ -56,15 +57,16 @@
 	path = /obj/item/clothing/under/f13/ncr/ncr_shorts
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Heavy Trooper",
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
@@ -78,15 +80,16 @@
 	path = /obj/item/clothing/under/f13/ncr_sniper
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Heavy Trooper",
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
@@ -152,6 +155,18 @@
 /datum/gear/uniform/vault/greaser/skirt
 	name = "greaser's jumpskirt"
 	path = /obj/item/clothing/under/f13/vault/vcity/greaser/skirt
+
+/datum/gear/uniform/khans
+	name = "Great Khan shorts"
+	path = /obj/item/clothing/under/f13/khan/shorts
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "Great Khans"
+	restricted_roles = list("Great Khan",
+							"Genghis Khan")
+
+/datum/gear/uniform/khans/short
+	name = "Great Khan short shorts"
+	path = /obj/item/clothing/under/f13/khan/shorts/booty
 
 //
 

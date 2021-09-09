@@ -28,7 +28,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionhelmsalvagedarmorconversion)
 
@@ -724,7 +723,8 @@ Libritor
 		/obj/item/flashlight/lantern=1,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/ammo_box/magazine/lmg=2,
-		/obj/item/storage/bag/money/small/legofficers=1
+		/obj/item/storage/bag/money/small/legofficers=1,
+		/obj/item/clothing/accessory/legion/prime=1
 	)
 
 /*
@@ -786,9 +786,9 @@ Veteran Legionary
 
 /datum/outfit/loadout/vetscout
 	name = "Assassin (Scout)"
-	suit_store = /obj/item/gun/ballistic/automatic/commando/dmr
+	suit_store = /obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=2,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		/obj/item/attachments/scope=1,
 		/obj/item/gun/ballistic/revolver/revolver44=1,
 		/obj/item/ammo_box/m44=2)
@@ -1072,9 +1072,9 @@ Explorer
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket = 		/obj/item/binoculars
 	l_pocket = 		/obj/item/attachments/scope
-	suit_store = 	/obj/item/gun/ballistic/automatic/commando/dmr
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=2,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/flashlight/lantern=1,
@@ -1091,9 +1091,9 @@ Explorer
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
-	suit_store = 	/obj/item/gun/ballistic/automatic/commando
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun=1,
+		/obj/item/ammo_box/magazine/m45exp=1,
 		/obj/item/grenade/plastic=1,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
@@ -1197,7 +1197,7 @@ Camp Follower
 /datum/job/CaesarsLegion/f13campfollower
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
-	total_positions = 2
+	total_positions = 4
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
@@ -1271,7 +1271,7 @@ Slave
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion, but mostly the Slavemaster"
@@ -1329,8 +1329,8 @@ Off-Duty Legionary
 	loadout_options = list(
 		/datum/outfit/loadout/offcent,
 		/datum/outfit/loadout/offdecvet,
-		/datum/outfit/loadout/offprime
-		//datum/outfit/loadout/offexpven
+		/datum/outfit/loadout/offprime,
+		/datum/outfit/loadout/offexpven
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/offduty

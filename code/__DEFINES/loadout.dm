@@ -60,8 +60,8 @@
 //donator items
 #define LOADOUT_CATEGORY_DONATOR	"Special"
 
-//supermutant items
-#define LOADOUT_CATEGORY_SMUTANT	"Super Mutants"
+//supermutants
+#define LOADOUT_CATEGORY_SMUTANT	"Muties"
 #define LOADOUT_SUBCATEGORY_SMUTANT_GENERAL	"General"
 #define LOADOUT_SUBCATEGORY_SMUTANT_SHOES	"Shoes"
 #define LOADOUT_SUBCATEGORY_SMUTANT_UNIFORM	"Uniform"

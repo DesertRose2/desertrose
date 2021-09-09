@@ -356,12 +356,27 @@
 	path = /obj/item/storage/box/large/custom_kit/mariya
 	ckeywhitelist = list("rebel0")
 
+/datum/gear/donator/kits/katiemorgan/
+	name = "Katie Morgan's belongings"
+	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
+	ckeywhitelist = list("idiocityinc")
+
+/datum/gear/donator/kits/bryanmonroe
+	name = "Bryan ''Aranesp'' Monroe's belongings"
+	path = /obj/item/storage/box/large/custom_kit/bryanmonroe
+	ckeywhitelist = list("elizabethdame")
+
+/datum/gear/donator/kits/jayoh
+	name = "Jay-Oh's belongings"
+	path = /obj/item/storage/box/large/custom_kit/jayoh/
+	ckeywhitelist = list("conormackgegore")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
 
 /datum/gear/donator/ranger4570bayonet
-	name = "45-70 Gov't Service Revolver"
+	name = "45-70 Gov't Service Revolver with fixed bayonet"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
 	ckeywhitelist = list("cythisisa",
@@ -384,7 +399,9 @@
 						"gurking",
 						"melodicdeity",
 						"cythisia",
-						"rangerbust")
+						"rangerbust",
+						"kirshbia",
+						"jackmcintyre")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -410,7 +427,9 @@
 						"leebic",
 						"akforeplay",
 						"arkadec",
-						"novaskelly")
+						"novaskelly",
+						"alasania",
+						"jackmcintyre")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -427,7 +446,11 @@
 						"psycoticone",
 						"ollieoxen",
 						"kirshbia",
-						"asterixcodix")
+						"asterixcodix",
+						"frekingyou",
+						"yecrowbarman",
+						"jackmcintyre",
+						"totallyinnocent")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -481,7 +504,9 @@
 						"gurking",
 						"melodicdeity",
 						"cythisia",
-						"rangerbust")
+						"rangerbust",
+						"jackmcintyre",
+						"kirshbia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -533,15 +558,33 @@
 						"pisshole",
 						"psycoticone",
 						"novaskelly",
-						"cythisia")
+						"cythisia",
+						"jackmcintyre",
+						"frekingyou",
+						"yecrowbarman",
+						"totallyinnocent")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+
+////////////////////////////
+///Ranger items end here.///
+////////////////////////////
+
+/datum/gear/donator/captainpins
+	name = "NCR Captain Pins"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/ncr/CPT
+	ckeywhitelist = list("gurking",
+						"totallyinnocent",
+						"thegreatcoward",
+						"usotsukihime")
+	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
 
 /datum/gear/donator/zirilliuniform
 	name = "Major Zirilli's service uniform"
 	slot = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/f13/ncr_formal_uniform/majzirilli
 	ckeywhitelist = list("shoi87")
-	restricted_roles = list("NCR Off-Duty", "NCR Lieutenant", "NCR Colonel", "NCR Captain")
+	restricted_roles = list("NCR Off-Duty", "NCR Commanding Officer", "NCR Colonel", "NCR Captain")
 
 /datum/gear/donator/lacertarex
 	name = "galerum lacertarex"
@@ -550,6 +593,4 @@
 	ckeywhitelist = list("dioclex")
 	restricted_roles = list("Legion Venator")
 
-////////////////////////////
-///Ranger items end here.///
-////////////////////////////
+

@@ -160,17 +160,17 @@ Captain
 	/obj/item/ammo_box/magazine/m44=2
 	)
 /*
-Lieutenant
+Commanding Officer (Ranges from Lieutenant to Captain)
 */
 
-/datum/job/ncr/f13lieutenant
-	title = "NCR Lieutenant"
+/datum/job/ncr/f13lieutenant //Keeping the same path because I'm not breaking whitelists for a name change.
+	title = "NCR Commanding Officer"
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = 1
 	description = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
-	supervisors = "Captain and above"
+	supervisors = "High Command"
 	selection_color = "#ffeeaa"
 	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
@@ -183,7 +183,7 @@ Lieutenant
 	)
 
 /datum/outfit/job/ncr/f13lieutenant
-	name = "NCR Lieutenant"
+	name = "NCR Commanding Officer"
 	jobtype	= /datum/job/ncr/f13lieutenant
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -474,7 +474,7 @@ Corporal
 		/obj/item/ammo_box/shotgun/slug=1)
 
 /*
-Combat Engineer
+Combat Medic
 */
 
 /datum/job/ncr/f13combatmedic
@@ -741,7 +741,7 @@ Mp
 	accessory =     /obj/item/clothing/accessory/ncr/REC
 	head = 			/obj/item/clothing/head/f13/ncr
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = 	/obj/item/gun/ballistic/automatic/varmint
+	suit_store = 	/obj/item/gun/ballistic/rifle/mag/varmint
 	glasses = 		null
 	belt = 			/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
@@ -833,9 +833,9 @@ Veteran Ranger
 
 /datum/outfit/loadout/vrclassic
 	name = "Classic Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/rifle/antimateriel
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/a50MG=3)
+		/obj/item/ammo_box/magazine/amr=2)
 
 /datum/outfit/loadout/vrlite
 	name = "Light Veteran Ranger"

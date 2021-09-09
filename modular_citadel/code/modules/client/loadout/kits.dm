@@ -1,4 +1,4 @@
-///Item boxes for custom loadouts transferred from Legacy.
+///Item boxes for custom loadouts transferred from Legacy and asorted custom items.
 
 /obj/item/storage/box/large/custom_kit
 	name = "Custom Loadout"
@@ -349,6 +349,7 @@
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
 	new /obj/item/clothing/under/harebell_dress(src)
+	new /obj/item/clothing/under/flowerdress(src)
 
 //Bartholomew The Apostle - pilotbland
 /obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()
@@ -378,3 +379,18 @@
 /obj/item/storage/box/large/custom_kit/mariya/PopulateContents()
 	new /obj/item/modkit/mariarmor(src)
 	new /obj/item/modkit/marihelmet(src)
+	
+//Katie Morgan - IdiocityInc
+/obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
+	new /obj/item/clothing/head/beret/ncr_scout_old(src)
+	
+//Bryan ''Aranesp'' Monroe - ElizabethDame
+/obj/item/storage/box/large/custom_kit/bryanmonroe/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
+	new /obj/item/clothing/neck/stethoscope(src)
+	new /obj/item/clothing/shoes/f13/military/leather(src) 
+
+//Jay-Oh - Conormackgegore
+/obj/item/storage/box/large/custom_kit/jayoh/PopulateContents()
+	new /obj/item/clothing/under/f13/dbdu(src) 
