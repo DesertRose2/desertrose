@@ -2233,7 +2233,9 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
 "cym" = (
-/mob/living/simple_animal/hostile/handy/protectron,
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("wastebot", "junker")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "cyq" = (
@@ -10729,6 +10731,13 @@
 "lZM" = (
 /obj/structure/easel,
 /turf/open/floor/wood/f13,
+/area/f13/building)
+"maQ" = (
+/mob/living/simple_animal/hostile/raider/firefighter{
+	faction = list("raider", "junker");
+	name = "Junker"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "mbn" = (
 /obj/machinery/light_switch,
@@ -20113,7 +20122,7 @@
 "wHZ" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/item/gun/ballistic/revolver/widowmaker,
-/obj/item/gun/ballistic/automatic/varmint,
+/obj/item/gun/ballistic/rifle/mag/varmint,
 /obj/item/ammo_box/magazine/m556/rifle/small,
 /obj/item/clothing/under/overalls,
 /obj/item/clothing/shoes/workboots,
@@ -21164,7 +21173,9 @@
 	},
 /area/f13/wasteland)
 "xSi" = (
-/mob/living/simple_animal/hostile/handy/gutsy,
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("wastebot", "junker")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "xSl" = (
@@ -64271,7 +64282,7 @@ dJw
 umL
 enL
 tbm
-tbm
+maQ
 umL
 tbm
 tbm
@@ -66069,7 +66080,7 @@ lTM
 pJj
 umL
 tbm
-tbm
+cym
 tbm
 tbm
 tbm

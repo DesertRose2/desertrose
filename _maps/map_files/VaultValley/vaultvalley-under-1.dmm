@@ -14,6 +14,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"bq" = (
+/obj/structure/window/fulltile/wood_window,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
+"cj" = (
+/mob/living/simple_animal/hostile/raider/baseball{
+	faction = list("raider", "junker");
+	name = "Junker"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "cC" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -37,6 +48,9 @@
 /obj/structure/stairs/west,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"eq" = (
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building)
 "fM" = (
 /obj/machinery/autolathe/ammo,
 /obj/effect/turf_decal/stripes/white/line{
@@ -78,6 +92,10 @@
 /obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"hX" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "ix" = (
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -112,6 +130,17 @@
 "kK" = (
 /obj/structure/closet/crate/freezer/blood/anchored,
 /turf/closed/mineral/random/low_chance,
+/area/f13/tunnel)
+"lc" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/tunnel)
+"ls" = (
+/obj/structure/rack,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
+"lB" = (
+/turf/open/indestructible,
 /area/f13/tunnel)
 "nG" = (
 /turf/closed/mineral/random/low_chance,
@@ -247,6 +276,11 @@
 /obj/item/storage/box/beakers,
 /turf/open/floor/plating/rust,
 /area/f13/ncr)
+"vI" = (
+/obj/structure/timeddoor,
+/obj/structure/timeddoor,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "vP" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -267,6 +301,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"wB" = (
+/obj/structure/timeddoor,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "xb" = (
 /turf/closed/indestructible/rock,
 /area/f13/tunnel)
@@ -330,6 +368,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"Bb" = (
+/obj/machinery/door/airlock/public,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "Bj" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -344,6 +386,19 @@
 	},
 /turf/open/floor/plating/rust,
 /area/f13/ncr)
+"BC" = (
+/obj/machinery/mecha_part_fabricator{
+	req_one_access_txt = "010"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
+"DD" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("wastebot", "junker");
+	name = "Junker Protectron"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "DN" = (
 /obj/structure/bed,
 /obj/item/bedsheet/cmo,
@@ -429,6 +484,13 @@
 /obj/item/storage/toolbox/drone,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"Ip" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("wastebot", "junker");
+	name = "Junker Mr. Gutsy"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "Kc" = (
 /obj/structure/stairs,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -551,6 +613,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"Pb" = (
+/obj/structure/timeddoor,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "Pc" = (
 /obj/machinery/light{
 	dir = 1
@@ -559,6 +625,13 @@
 /area/f13/ncr)
 "PC" = (
 /turf/closed/wall/r_wall/rust,
+/area/f13/tunnel)
+"QQ" = (
+/obj/machinery/door/airlock/security,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
+"RB" = (
+/turf/closed/indestructible/riveted,
 /area/f13/tunnel)
 "RV" = (
 /obj/structure/rack,
@@ -586,6 +659,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"St" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "SL" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -617,6 +696,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"Tz" = (
+/mob/living/simple_animal/hostile/raider/biker{
+	faction = list("raider", "faction");
+	name = "Junker"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "Vh" = (
 /obj/structure/stairs,
 /turf/open/floor/f13{
@@ -629,6 +715,17 @@
 "Vt" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/tunnel)
+"VL" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 1;
+	height = 3;
+	id = "junker_bunker_elevator";
+	name = "Level 1";
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building)
 "WW" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -1197,15 +1294,15 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+xb
+RB
+RB
+RB
+RB
+RB
 xb
 "}
 (3,1,1) = {"
@@ -1455,14 +1552,14 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+RB
+lB
+lB
+lB
+RB
 xb
 "}
 (4,1,1) = {"
@@ -1712,14 +1809,14 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+RB
+lB
+lc
+lB
+RB
 xb
 "}
 (5,1,1) = {"
@@ -1970,13 +2067,13 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+RB
+lB
+lB
+lB
+RB
 xb
 "}
 (6,1,1) = {"
@@ -2228,12 +2325,12 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+RB
+RB
+RB
+RB
+RB
 xb
 "}
 (7,1,1) = {"
@@ -2485,12 +2582,12 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+xb
+xb
+xb
 xb
 "}
 (8,1,1) = {"
@@ -2742,12 +2839,12 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+xb
+xb
+xb
 xb
 "}
 (9,1,1) = {"
@@ -3001,10 +3098,10 @@ nG
 nG
 nG
 nG
-nG
-nG
-nG
-nG
+xb
+xb
+xb
+xb
 xb
 "}
 (10,1,1) = {"
@@ -3260,8 +3357,8 @@ nG
 nG
 nG
 nG
-nG
-nG
+xb
+xb
 xb
 "}
 (11,1,1) = {"
@@ -3518,7 +3615,7 @@ nG
 nG
 nG
 nG
-nG
+xb
 xb
 "}
 (12,1,1) = {"
@@ -3775,7 +3872,7 @@ nG
 nG
 nG
 nG
-nG
+xb
 xb
 "}
 (13,1,1) = {"
@@ -41459,17 +41556,17 @@ iS
 PC
 vP
 vP
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
 vP
 vP
 vP
@@ -41716,7 +41813,7 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 Vq
 Vq
@@ -41726,7 +41823,7 @@ Vq
 Vq
 Vq
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -41973,17 +42070,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
+hX
 uI
 uI
 uI
-uI
 Vq
 Vq
 Vq
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -42230,17 +42327,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
-uI
+cj
 uI
 uI
 Kc
 iS
 iS
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -42487,7 +42584,7 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
 uI
@@ -42497,7 +42594,7 @@ Kc
 iS
 iS
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -42744,17 +42841,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
+DD
 uI
 uI
-uI
 Vq
 Vq
 Vq
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -43001,17 +43098,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
 uI
 uI
 uI
-uI
+Tz
 uI
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -43258,17 +43355,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+Vq
+Vq
 Vq
 uI
-uI
-uI
-uI
-uI
-uI
-uI
 Vq
-PC
+Vq
+Vq
+Vq
+vP
 vP
 vP
 vP
@@ -43515,17 +43612,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
-uI
-uI
-uI
-uI
-uI
-uI
-uI
+St
+ls
 Vq
-PC
+DD
+Vq
+ls
+St
+Vq
+vP
 vP
 vP
 vP
@@ -43772,17 +43869,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
 uI
+QQ
 uI
-uI
-uI
+QQ
 uI
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -44029,17 +44126,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+DD
+uI
+Vq
+uI
 Vq
 uI
 uI
-uI
-uI
-uI
-uI
-uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -44286,17 +44383,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+Vq
+Vq
 Vq
 uI
-uI
-uI
-uI
-uI
-uI
-uI
 Vq
-PC
+Vq
+Vq
+Vq
+vP
 vP
 vP
 vP
@@ -44543,17 +44640,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+ls
+St
 Vq
 uI
-uI
-uI
-uI
-uI
-uI
+Vq
+BC
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -44800,17 +44897,17 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
 uI
+QQ
 uI
+QQ
 uI
-uI
-uI
-uI
+Ip
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -45057,17 +45154,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+St
+ls
 Vq
 uI
-uI
-uI
-uI
-uI
-uI
+Vq
+Tz
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -45314,17 +45411,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Vq
+Vq
+Vq
 Vq
 uI
-uI
-uI
-uI
-uI
-uI
-uI
 Vq
-PC
+Vq
+Vq
+Vq
+vP
 vP
 vP
 vP
@@ -45571,7 +45668,7 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
 uI
 uI
@@ -45581,7 +45678,7 @@ uI
 uI
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -45828,9 +45925,9 @@ iS
 PC
 vP
 vP
-PC
+vP
 Vq
-uI
+Tz
 uI
 uI
 uI
@@ -45838,7 +45935,7 @@ uI
 uI
 uI
 Vq
-PC
+vP
 vP
 vP
 vP
@@ -46085,17 +46182,17 @@ iS
 PC
 vP
 vP
-PC
-Vq
-uI
-uI
-uI
-uI
-uI
-uI
-uI
-Vq
-PC
+vP
+vI
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+Pb
+vP
 vP
 vP
 vP
@@ -46342,17 +46439,17 @@ iS
 PC
 vP
 vP
-PC
+vP
+Pb
+uI
+uI
+uI
+uI
+bq
 Vq
-uI
-uI
-uI
-uI
-uI
-uI
-uI
 Vq
-PC
+Pb
+vP
 vP
 vP
 vP
@@ -46599,17 +46696,17 @@ iS
 PC
 vP
 vP
-PC
-Vq
+vP
+Pb
 uI
 uI
 uI
 uI
-uI
-uI
-uI
-Vq
-PC
+bq
+eq
+eq
+Pb
+vP
 vP
 vP
 vP
@@ -46856,17 +46953,17 @@ iS
 PC
 vP
 vP
-PC
-Vq
+vP
+Pb
 uI
 uI
 uI
 uI
-uI
-uI
-uI
-Vq
-PC
+Bb
+VL
+eq
+Pb
+vP
 vP
 vP
 vP
@@ -47113,17 +47210,17 @@ iS
 PC
 vP
 vP
-PC
-Vq
+vP
+Pb
 uI
 uI
 uI
 uI
-uI
-uI
-uI
-Vq
-PC
+bq
+eq
+eq
+Pb
+vP
 vP
 vP
 vP
@@ -47370,17 +47467,17 @@ iS
 PC
 vP
 vP
-PC
-Vq
-Vq
-Vq
-Vq
-Vq
-Vq
-Vq
-Vq
-Vq
-PC
+vP
+vI
+Pb
+Pb
+Pb
+Pb
+Pb
+Pb
+Pb
+vI
+vP
 vP
 vP
 vP
@@ -47627,17 +47724,17 @@ iS
 PC
 vP
 vP
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
-PC
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+vP
 vP
 vP
 vP
