@@ -438,7 +438,7 @@
 /obj/item/gun/ballistic/rifle/mag/varmint
 	name = "varmint rifle"
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
-	icon_state = "varmint"
+	icon_state = "varmint_rifle"
 	item_state = "varmintrifle"
 	force = 18
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
@@ -473,9 +473,9 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 /obj/item/gun/ballistic/rifle/mag/commando/dmr
-	name = "commando carbine"
+	name = "destroyer carbine"
 	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
-	icon_state = "commando"
+	icon_state = "destroyer"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 8

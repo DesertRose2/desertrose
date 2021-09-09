@@ -136,7 +136,7 @@ Head Paladin
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
@@ -403,7 +403,7 @@ Senior Paladin
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
@@ -479,7 +479,7 @@ Paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	glasses=		/obj/item/clothing/glasses/meson
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
