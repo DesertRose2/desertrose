@@ -306,6 +306,20 @@
 "gM" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"gP" = (
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/obj/structure/fence/handrail{
+	dir = 1;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "gR" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -499,6 +513,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"kL" = (
+/obj/item/storage/box/drinkingglasses,
+/obj/item/storage/box/drinkingglasses,
+/obj/structure/closet,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "kU" = (
 /obj/structure/fence{
 	dir = 4;
@@ -526,10 +546,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
-"li" = (
-/obj/structure/chair/stool/retro,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "lk" = (
 /obj/structure/fence{
 	dir = 1;
@@ -771,20 +787,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"oV" = (
-/obj/structure/fence/handrail{
-	dir = 1;
-	pixel_x = -16;
-	pixel_y = 16
-	},
-/obj/structure/table/wood/poker{
-	layer = 4;
-	name = "felt table"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/wasteland)
 "oX" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -816,13 +818,6 @@
 /obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"pR" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
-/obj/item/pda,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "pV" = (
 /obj/structure/closet/crate/grave{
 	desc = "An marked patch of soil, showing signs of an ancestrial burial long ago. You wouldn't disturb a grave... right?";
@@ -834,6 +829,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"qe" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/carpet/red,
+/area/f13/ncr)
 "qk" = (
 /obj/structure/closet/crate/grave{
 	desc = "An marked patch of soil, showing signs of an ancestrial burial long ago. You wouldn't disturb a grave... right?";
@@ -1017,6 +1016,11 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/city)
+"tB" = (
+/obj/structure/table/wood/fancy,
+/obj/item/pda,
+/turf/open/floor/carpet/red,
+/area/f13/ncr)
 "tN" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
@@ -1074,6 +1078,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"uf" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/turf/open/floor/carpet/red,
+/area/f13/ncr)
 "ur" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -1092,6 +1101,21 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"uw" = (
+/obj/structure/fence/handrail_corner{
+	dir = 4;
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "uA" = (
 /obj/structure/bookcase/manuals,
 /turf/open/floor/f13{
@@ -1461,10 +1485,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
-"zt" = (
-/obj/structure/table/wood,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "zv" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1664,6 +1684,11 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland)
+"DE" = (
+/obj/item/bedsheet/black,
+/obj/structure/bed,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "DO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/trash,
@@ -1784,6 +1809,9 @@
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"Fj" = (
+/turf/open/space/basic,
+/area/space)
 "Fn" = (
 /obj/item/kirbyplants/dead{
 	desc = "It doesn't look very healthy...";
@@ -2169,6 +2197,21 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"Nl" = (
+/obj/structure/fence/handrail_corner{
+	dir = 8;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/table/wood/poker{
+	layer = 4;
+	name = "felt table"
+	},
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
 "Nv" = (
 /obj/structure/curtain{
 	color = "#450159"
@@ -2231,20 +2274,6 @@
 /obj/structure/window/fulltile/house,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"Oj" = (
-/obj/structure/fence/handrail_corner{
-	dir = 4;
-	pixel_x = 16;
-	pixel_y = 16
-	},
-/obj/structure/table/wood/poker{
-	layer = 4;
-	name = "felt table"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/wasteland)
 "Or" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken,
@@ -2271,6 +2300,11 @@
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
+/area/f13/ncr)
+"OG" = (
+/obj/structure/table/wood,
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/open/floor/f13/wood,
 /area/f13/ncr)
 "OO" = (
 /obj/structure/chair/comfy/plywood{
@@ -2514,6 +2548,12 @@
 "Sk" = (
 /turf/open/transparent/openspace,
 /area/f13/legion)
+"Sv" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen/fountain,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "Sw" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/indestructible/ground/outside/dirt,
@@ -2884,20 +2924,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
-"YO" = (
-/obj/structure/fence/handrail_corner{
-	dir = 8;
-	pixel_x = -16;
-	pixel_y = 16
-	},
-/obj/structure/table/wood/poker{
-	layer = 4;
-	name = "felt table"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/wasteland)
 "YP" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt{
@@ -2915,6 +2941,9 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Zc" = (
+/turf/open/floor/carpet/red,
+/area/f13/ncr)
 "Zj" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille,
@@ -2939,15 +2968,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"ZT" = (
-/obj/structure/bed{
-	pixel_y = 16
-	},
-/obj/item/bedsheet/black{
-	pixel_y = 16
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "ZV" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
@@ -11910,22 +11930,22 @@ ls
 ls
 ls
 ls
-YO
-EN
-Ab
-Od
-vx
-vx
-Yn
-Ab
-vx
-Yn
-Ab
-vx
-vx
-vx
-vx
-Ab
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -12167,22 +12187,22 @@ ls
 ls
 ls
 ls
-oV
-Te
-vx
-ww
-HZ
-vx
-ww
-HZ
-vx
-ww
-HZ
-vx
-jD
-HZ
-HZ
-Ab
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -12424,22 +12444,22 @@ ls
 ls
 ls
 ls
-gh
-aI
-vx
-hq
-HZ
-vx
-hq
-HZ
-vx
-hq
-HZ
-vx
-pR
-rW
-HZ
-Od
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -12681,22 +12701,22 @@ ls
 ls
 ls
 ls
-rX
-ne
-vx
-vx
-WY
-vx
-vx
-WY
-vx
-vx
-WY
-vx
-NG
-Id
-HZ
-Od
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -12938,22 +12958,22 @@ ls
 ls
 ls
 ls
-rX
-ne
-Gm
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-tT
-HZ
-HZ
-HZ
-Ab
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -13195,22 +13215,22 @@ ls
 ls
 ls
 ls
-rX
-ne
-vx
-vx
-WY
-vx
-IG
-xE
-HZ
-vx
-Ab
-wa
-Ab
-hq
-HZ
-wa
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -13452,22 +13472,22 @@ ls
 ls
 ls
 ls
-gh
-Qz
-vx
-hq
-HZ
-vx
-mH
-zt
-HZ
-Gm
-Ql
-Cm
-Ab
-HZ
-HZ
-wa
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -13709,22 +13729,22 @@ ls
 ls
 ls
 ls
-BP
-Te
-vx
-ww
-HZ
-vx
-li
-gK
-HZ
-Ab
-HZ
-Cm
-Ab
-ww
-ZT
-wa
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -13966,22 +13986,22 @@ ls
 ls
 ls
 ls
-Oj
-Yz
-vx
-Od
-Ab
-vx
-Ab
-Ab
-wa
-wa
-Ab
-vx
-vx
-vx
-vx
-vx
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
+Fj
 ls
 ls
 ls
@@ -26451,21 +26471,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Nl
+EN
+Ab
+Od
+vx
+Ab
+Yn
+Ab
+vx
+Yn
+Ab
+vx
+vx
+vx
+Ab
 ls
 ls
 ls
@@ -26708,21 +26728,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+gP
+Te
+vx
+ww
+HZ
+DE
+vx
+uf
+Zc
+Zc
+WY
+HZ
+HZ
+jD
+Ab
 ls
 ls
 ls
@@ -26965,21 +26985,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+gh
+aI
+vx
+hq
+HZ
+hq
+vx
+qe
+Zc
+tB
+vx
+HZ
+Sv
+rW
+Od
 ls
 ls
 ls
@@ -27222,21 +27242,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+vx
+vx
+WY
+vx
+vx
+vx
+vx
+vx
+vx
+HZ
+NG
+Id
+Od
 ls
 ls
 ls
@@ -27479,21 +27499,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+Gm
+HZ
+HZ
+HZ
+HZ
+HZ
+HZ
+HZ
+tT
+HZ
+HZ
+HZ
+Ab
 ls
 ls
 ls
@@ -27736,21 +27756,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+rX
+ne
+vx
+vx
+WY
+vx
+vx
+IG
+xE
+HZ
+vx
+Ab
+wa
+Ab
+wa
 ls
 ls
 ls
@@ -27993,21 +28013,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+gh
+Qz
+vx
+hq
+HZ
+hq
+vx
+mH
+OG
+HZ
+Gm
+Ql
+Cm
+Ab
+wa
 ls
 ls
 ls
@@ -28250,21 +28270,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+BP
+Te
+vx
+ww
+HZ
+ww
+vx
+kL
+gK
+HZ
+Ab
+HZ
+Cm
+Ab
+wa
 ls
 ls
 ls
@@ -28507,21 +28527,21 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+uw
+Yz
+vx
+Od
+Ab
+Ab
+Ab
+vx
+wa
+wa
+Ab
+vx
+vx
+vx
+vx
 ls
 ls
 ls
