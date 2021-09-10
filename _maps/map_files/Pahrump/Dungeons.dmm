@@ -730,7 +730,6 @@
 /area/f13/underground/cave)
 "bjK" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/stamp/captain{
 	name = "overseer's rubber stamp";
 	pixel_x = -4;
@@ -1071,6 +1070,7 @@
 /obj/machinery/door/airlock{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "bLi" = (
@@ -1207,6 +1207,17 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
+/area/f13/bunker)
+"bWm" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security{
+	locked = 1
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "bWq" = (
 /obj/structure/necropolis_gate{
@@ -1543,8 +1554,7 @@
 /area/f13/bunker)
 "cEU" = (
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
@@ -1778,6 +1788,7 @@
 /obj/machinery/door/airlock/engineering{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "dfc" = (
@@ -2787,8 +2798,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced/spawner/north{
-	dir = 2;
-	icon_state = "rwindow"
+	dir = 2
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -3017,8 +3027,7 @@
 "fjH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
@@ -4621,11 +4630,12 @@
 	},
 /area/f13/wasteland)
 "hGk" = (
-/obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security{
+	locked = 1
 	},
-/turf/open/floor/f13/wood,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "hGS" = (
 /obj/effect/decal/remains/human,
@@ -4737,7 +4747,6 @@
 /obj/structure/ladder/unbreakable{
 	desc = "An extremely sturdy metal ladder, leading deep into the vault. You feel like you should really prepare yourself before daring to venture down the ladder.";
 	height = 2;
-	icon_state = "manhole_open";
 	id = "overseerboss"
 	},
 /turf/open/floor/carpet/black,
@@ -6015,8 +6024,7 @@
 "jPN" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
@@ -6207,8 +6215,7 @@
 "keC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "rampdowntop"
@@ -7809,8 +7816,7 @@
 /area/f13/wasteland)
 "mYh" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -8176,7 +8182,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "overseerloot"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -8238,8 +8243,6 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/structure/closet/crate/radiation,
-/obj/structure/closet/crate/radiation,
 /turf/open/floor/plasteel/caution{
 	dir = 1
 	},
@@ -8255,14 +8258,14 @@
 	},
 /area/f13/bunker)
 "nLZ" = (
-/obj/machinery/door/airlock/public/glass{
-	locked = 1;
-	name = "Diner"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/public/glass{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "nMP" = (
@@ -10062,7 +10065,10 @@
 /area/f13/bunker)
 "qCP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	locked = 1
+	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "qCV" = (
@@ -10134,8 +10140,7 @@
 /area/f13/underground/cave)
 "qKk" = (
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -11032,6 +11037,7 @@
 /obj/machinery/door/airlock/command/glass{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -12055,6 +12061,7 @@
 /obj/machinery/door/airlock/engineering{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "udY" = (
@@ -12358,7 +12365,7 @@
 /area/f13/radiation)
 "uBh" = (
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	id = "overseerboss"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -12760,6 +12767,7 @@
 	locked = 1;
 	req_access_txt = "1"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "vnr" = (
@@ -12941,7 +12949,7 @@
 "vBl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	id = "overseerloot"
 	},
 /obj/machinery/light{
@@ -13207,8 +13215,7 @@
 "vYa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
@@ -14131,7 +14138,7 @@
 /obj/structure/sign/departments/botany,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/structure/window/reinforced/tinted,
-/turf/closed/indestructible/vaultdoor,
+/turf/open/space/basic,
 /area/f13/bunker)
 "xrR" = (
 /obj/structure/table,
@@ -14228,8 +14235,7 @@
 "xxh" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
@@ -14258,6 +14264,7 @@
 	locked = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "xzE" = (
@@ -14342,8 +14349,7 @@
 /area/f13/bunker)
 "xIJ" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -33547,7 +33553,7 @@ xsH
 vvf
 vAC
 fWM
-hWj
+hGk
 nKy
 dOD
 nKy
@@ -33804,7 +33810,7 @@ xsH
 vAC
 vAC
 vAC
-gkv
+bWm
 yjg
 mRj
 yjg
@@ -69872,7 +69878,7 @@ heT
 heT
 efT
 aUx
-hGk
+oMS
 mYh
 sST
 nNk
