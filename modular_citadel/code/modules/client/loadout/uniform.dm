@@ -34,10 +34,10 @@
 	path = /obj/item/clothing/under/f13/ncr/pants
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -57,10 +57,10 @@
 	path = /obj/item/clothing/under/f13/ncr/ncr_shorts
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -80,10 +80,10 @@
 	path = /obj/item/clothing/under/f13/ncr_sniper
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",

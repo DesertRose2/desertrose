@@ -117,6 +117,27 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron
+	name = "assaultron helmet"
+	desc = "(V) This is a dismantled Assaultron head, the central plates pulled apart and all internals ripped out."
+	icon_state = "assaultron_helmet"
+	item_state = "assaultron_helmet"
+	armor = list("tier" = 5, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry
+	name = "sentry bot helmet"
+	desc = "(VI) This is a dismantled Sentry Bot head, the internals ripped out and the optic sensors stripped out, replaced with a torch."
+	icon_state = "sentry_helmet"
+	item_state = "sentry_helmet"
+	armor = list("tier" = 6, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry/attack_self(mob/user)
+	weldingvisortoggle(user)
+
 /obj/item/clothing/head/helmet/f13/raider/psychotic
 	name = "psycho-tic raider helmet"
 	desc = "(IV) A leather skullcap with tufts of hair sticking from each side."
@@ -432,8 +453,8 @@
 	item_state = "brotherhood_helmet"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
-	name = "reinforced initiate helmet"
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/mk2
+	name = "reinforced knight helmet"
 	desc = "(V) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"

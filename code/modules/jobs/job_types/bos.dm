@@ -129,7 +129,6 @@ Head Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
@@ -137,12 +136,12 @@ Head Paladin
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
 	belt =			/obj/item/storage/belt/military/assault
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck =			/obj/item/clothing/neck/cloak/bos/paladin
@@ -151,6 +150,7 @@ Head Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/sentstand
@@ -232,7 +232,8 @@ Head Scribe
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1 \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/hssword
@@ -294,11 +295,10 @@ Head Knight
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Head Knight"
+	name = "Knight Captain"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -315,7 +315,8 @@ Head Knight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/captech
@@ -358,11 +359,11 @@ Head Knight
 	)
 
 /*
-Star Paladin
+Senior Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Star Paladin"
+	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
 	total_positions = 2
@@ -396,13 +397,13 @@ Star Paladin
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/bos/f13seniorpaladin
-	name = "Star Paladin"
+	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
@@ -411,7 +412,8 @@ Star Paladin
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/spaladina
@@ -475,9 +477,9 @@ Paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	glasses=		/obj/item/clothing/glasses/meson
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
@@ -485,7 +487,8 @@ Paladin
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/paladina
@@ -728,11 +731,11 @@ Scribe
 		)
 
 /*
-Star Knight
+Senior Knight
 */
 
 datum/job/bos/f13seniorknight
-	title = "Star Knight"
+	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	faction = "BOS"
 	total_positions = 2
@@ -763,7 +766,7 @@ datum/job/bos/f13seniorknight
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13seniorknight
-	name = "Star Knight"
+	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
@@ -780,7 +783,8 @@ datum/job/bos/f13seniorknight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/sknighta
@@ -870,7 +874,8 @@ Knight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/knighta

@@ -197,6 +197,21 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	resistance_flags = FIRE_PROOF
 
+/obj/item/clothing/suit/armor/f13/raider/junker
+	name = "Junker body armor"
+	desc = "(IV) A heavier armor consisting purely of ramshackle plating clearly made from old robots tack welded together."
+	icon_state = "junker_armor"
+	item_state = "junker_armor"
+	slowdown = 0.2
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/armor/f13/raider/junker/boss
+	desc = "(VII) A heavy armor of pre-war riot gear reinforced with ramshackle plating."
+	icon_state = "junker_duster"
+	item_state = "junker_duster"
+	slowdown = 0.3
+	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+
 //Legion
 
 /obj/item/clothing/suit/armor/f13/medicus
@@ -500,12 +515,12 @@
 	item_state = "brotherhood_armor"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
-	name = "reinforced initiate armor"
-	desc = "(V) A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/mk2
+	name = "reinforced knight armor"
+	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
 	name = "brotherhood scout armor"

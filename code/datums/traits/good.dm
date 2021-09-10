@@ -65,6 +65,37 @@
 	mood_quirk = TRUE
 	medical_record_text = "Patient demonstrates low-inhibitions for physical contact and well-developed arms. Requesting another doctor take over this case."
 
+/datum/quirk/light_step
+	name = "Light Step"
+	desc = "You walk with a gentle step; stepping on sharp objects is quieter, less painful and you won't leave footprints behind you."
+	value = 1
+	mob_trait = TRAIT_LIGHT_STEP
+	gain_text = "<span class='notice'>You walk with a little more litheness.</span>"
+	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
+	medical_record_text = "Patient's dexterity belies a strong capacity for stealth."
+
+/datum/quirk/horrifying_tastes
+	name = "Horrifying Tastes"
+	desc = "You enjoy a fine sort of meal not often appreciated by your peers. To serve man, in all it's forms is your life's work. Put bluntly - you are a cannibal. Consuming human flesh doesn't bother you, and dishes such as longpork stew will heal you."
+	mob_trait = TRAIT_LONGPORKLOVER
+	value = 2
+	gain_text = "<span class='notice'>You have an insatiable hunger for the flesh of your fellow man.</span>"
+	lose_text = "<span class='notice'>The terrible hunger fades - you feel peace at last.</span>"
+	medical_record_text = "Patient refuses to comment on their dietary preferences."
+
+/datum/quirk/horrifying_tastes/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.liked_food |= LONGPORK
+	species.disliked_food &= ~LONGPORK
+
+/datum/quirk/horrifying_tastes/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(H)
+		var/datum/species/species = H.dna.species
+		species.liked_food &= ~LONGPORK
+		species.disliked_food |= LONGPORK
+
 /datum/quirk/jolly
 	name = "Jolly"
 	desc = "You sometimes just feel happy, for no reason at all."
@@ -76,26 +107,6 @@
 /datum/quirk/jolly/on_process()
 	if(prob(0.05))
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "jolly", /datum/mood_event/jolly)
-
-/datum/quirk/light_step
-	name = "Light Step"
-	desc = "You walk with a gentle step; stepping on sharp objects is quieter, less painful and you won't leave footprints behind you."
-	value = 1
-	mob_trait = TRAIT_LIGHT_STEP
-	gain_text = "<span class='notice'>You walk with a little more litheness.</span>"
-	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
-	medical_record_text = "Patient's dexterity belies a strong capacity for stealth."
-
-/*
-/datum/quirk/quick_step
-	name = "Quick Step"
-	desc = "You walk with determined strides, and out-pace most people when walking."
-	value = 2
-	mob_trait = TRAIT_SPEEDY_STEP
-	gain_text = "<span class='notice'>You feel determined. No time to lose.</span>"
-	lose_text = "<span class='danger'>You feel less determined. What's the rush, man?</span>"
-	medical_record_text = "Patient scored highly on racewalking tests."
-*/
 
 /datum/quirk/musician
 	name = "Musician"
@@ -171,6 +182,14 @@
 	H.equip_to_slot(spraycan, SLOT_IN_BACKPACK)
 	H.regenerate_icons()
 
+/datum/quirk/trapper
+	name = "Trapper"
+	desc = "As an experienced hunter and trapper you know your way around butchering animals for their products, and are able to get twice the usable materials by eliminating waste."
+	value = 2
+	mob_trait = TRAIT_TRAPPER
+	gain_text = "<span class='notice'>You learn the secrets of butchering!</span>"
+	lose_text = "<span class='danger'>You forget how to slaughter animals.</span>"
+
 /datum/quirk/voracious
 	name = "Voracious"
 	desc = "Nothing gets between you and your food. You eat twice as fast as everyone else!"
@@ -179,15 +198,6 @@
 	gain_text = "<span class='notice'>You feel HONGRY.</span>"
 	lose_text = "<span class='danger'>You no longer feel HONGRY.</span>"
 	medical_record_text = "Patient demonstrates a disturbing capacity for eating."
-
-/* go fuck yourself idiots -superballs
-/datum/quirk/trandening
-	name = "High Luminosity Eyes"
-	desc = "When the next big fancy implant came out you had to buy one on impluse!"
-	value = 1
-	gain_text = "<span class='notice'>You have to keep up with the next big thing!.</span>"
-	lose_text = "<span class='danger'>High-tech gizmos are a scam...</span>"
-*/
 
 /datum/quirk/trandening/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -212,39 +222,12 @@
 	if(quirk_holder)
 		quirk_holder.blood_ratio = 1
 
-/datum/quirk/machine_spirits
-	name = "Spirit Blessed"
-	desc = "You respect the teachings of the Machine Spirits."
-	value = 3
-	mob_trait = TRAIT_MACHINE_SPIRITS
-	gain_text = "<span class='notice'>You have recieved the blessing of the Machine Spirits.</span>"
-	lose_text = "<span class='danger'>You've lost the  blessing of the Machine Spirits.</span>"
-	locked = TRUE
 
-/datum/quirk/night_vision
-	name = "Night Vision"
-	desc = "You can see slightly more clearly in full darkness than most people."
-	value = 1
-	mob_trait = TRAIT_NIGHT_VISION
-	gain_text = "<span class='notice'>The shadows seem a little less dark.</span>"
-	lose_text = "<span class='danger'>Everything seems a little darker.</span>"
-
-/datum/quirk/night_vision/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	H.update_sight()
-
-/datum/quirk/trapper
-	name = "Trapper"
-	desc = "As an experienced hunter and trapper you know your way around butchering animals for their products, and are able to get twice the usable materials by eliminating waste."
-	value = 2
-	mob_trait = TRAIT_TRAPPER
-	gain_text = "<span class='notice'>You learn the secrets of butchering!</span>"
-	lose_text = "<span class='danger'>You forget how to slaughter animals.</span>"
-
+//F13 Quirks
 /datum/quirk/bigleagues
 	name = "Big Leagues"
 	desc = "Swing for the fences! You deal additional damage with melee weapons."
-	value = 2
+	value = 3
 	mob_trait = TRAIT_BIG_LEAGUES
 	gain_text = "<span class='notice'>You feel like swinging for the fences!</span>"
 	lose_text = "<span class='danger'>You feel like bunting.</span>"
@@ -253,7 +236,7 @@
 /datum/quirk/chemwhiz
 	name = "Chem Whiz"
 	desc = "You've been playing around with chemicals all your life. You know how to use chemistry machinery."
-	value = 2
+	value = 3
 	mob_trait = TRAIT_CHEMWHIZ
 	gain_text = "<span class='notice'>The mysteries of chemistry are revealed to you.</span>"
 	lose_text = "<span class='danger'>You forget how the periodic table works.</span>"
@@ -293,16 +276,17 @@
 	mob_trait = TRAIT_LIFEGIVER
 	gain_text = "<span class='notice'>You feel more healthy than usual.</span>"
 	lose_text = "<span class='danger'>You feel less healthy than usual.</span>"
+	locked = TRUE
 
 /datum/quirk/lifegiver/on_spawn()
 	var/mob/living/carbon/human/mob_tar = quirk_holder
-	mob_tar.maxHealth += 10
-	mob_tar.health += 10
+	mob_tar.maxHealth += 15
+	mob_tar.health += 15
 
 /datum/quirk/iron_fist
 	name = "Iron Fist"
 	desc = "You have fists of kung-fury! Increases unarmed damage."
-	value = 2
+	value = 3
 	mob_trait = TRAIT_IRONFIST
 	gain_text = "<span class='notice'>Your fists feel furious!</span>"
 	lose_text = "<span class='danger'>Your fists feel calm again.</span>"
@@ -313,14 +297,30 @@
 	mob_tar.dna.species.punchdamagelow = 4
 	mob_tar.dna.species.punchdamagehigh = 11
 
-/datum/quirk/light_step
-	name = "Light Step"
-	desc = "You walk with a gentle step, making stepping on sharp objects quieter and less painful."
-	value = 1
-	mob_trait = TRAIT_LIGHT_STEP
-	gain_text = "<span class='notice'>You walk with a little more litheness.</span>"
-	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
+/datum/quirk/machine_spirits
+	name = "Spirit Blessed"
+	desc = "You respect the teachings of the Machine Spirits."
+	value = 3
+	mob_trait = TRAIT_MACHINE_SPIRITS
+	gain_text = "<span class='notice'>You have recieved the blessing of the Machine Spirits.</span>"
+	lose_text = "<span class='danger'>You've lost the  blessing of the Machine Spirits.</span>"
+	locked = TRUE
 
+//Cateye
+/datum/quirk/cateye_night_vision
+	name = "Cateye Night Vision"
+	desc = "You can see slightly more clearly in full darkness than most people."
+	value = 1
+	mob_trait = TRAIT_CATEYE_NIGHT_VISION
+	gain_text = "<span class='notice'>The shadows seem a little less dark.</span>"
+	lose_text = "<span class='danger'>Everything seems a little darker.</span>"
+	locked = TRUE
+
+/datum/quirk/cateye_night_vision/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.update_sight()
+
+//Surgeries
 /datum/quirk/surgerylow
 	name = "Minor Surgery"
 	desc = "You are a somewhat adequate medical practicioner, capable of performing minor surgery."
@@ -347,3 +347,39 @@
 	gain_text = "<span class='notice'>You feel yourself discovering the most intricate secrets of the human body.</span>"
 	lose_text = "<span class='danger'>You forget your advanced surgical knowledge.</span>"
 	locked = TRUE
+
+//Unused
+
+/*
+/datum/quirk/quick_step
+	name = "Quick Step"
+	desc = "You walk with determined strides, and out-pace most people when walking."
+	value = 2
+	mob_trait = TRAIT_SPEEDY_STEP
+	gain_text = "<span class='notice'>You feel determined. No time to lose.</span>"
+	lose_text = "<span class='danger'>You feel less determined. What's the rush, man?</span>"
+	medical_record_text = "Patient scored highly on racewalking tests."
+*/
+
+/* go fuck yourself idiots -superballs
+/datum/quirk/trandening
+	name = "High Luminosity Eyes"
+	desc = "When the next big fancy implant came out you had to buy one on impluse!"
+	value = 1
+	gain_text = "<span class='notice'>You have to keep up with the next big thing!.</span>"
+	lose_text = "<span class='danger'>High-tech gizmos are a scam...</span>"
+*/
+
+/* bad - lamasmaster
+/datum/quirk/night_vision
+	name = "Night Vision"
+	desc = "You can see slightly more clearly in full darkness than most people."
+	value = 1
+	mob_trait = TRAIT_NIGHT_VISION
+	gain_text = "<span class='notice'>The shadows seem a little less dark.</span>"
+	lose_text = "<span class='danger'>Everything seems a little darker.</span>"
+
+/datum/quirk/night_vision/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.update_sight()
+*/
