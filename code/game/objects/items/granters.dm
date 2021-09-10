@@ -779,16 +779,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
-/obj/item/book/granter/crafting_recipe/blueprint/fnfal
-	name = "fn fal blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/fnfal)
-
-/obj/item/book/granter/crafting_recipe/blueprint/caws
-	name = "h&k caws blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/caws)
-
 /obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine
 	name = "scout carbine blueprint"
 	icon_state = "blueprint2"
@@ -959,7 +949,7 @@
 				traitname = "tinkering"
 			if("Iron Fist")
 				granted_trait = TRAIT_IRONFIST
-				traitname = "punching"	
+				traitname = "punching"
 	else
 		. = ..()
 
@@ -992,7 +982,7 @@
 				traitname = "tinkering"
 			if("Chem User")
 				granted_trait = TRAIT_CHEM_USER
-				traitname = "chem use"	
+				traitname = "chem use"
 	else
 		. = ..()
 

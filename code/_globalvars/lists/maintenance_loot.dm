@@ -607,7 +607,6 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/ammo_box/a50MG,
 	/obj/item/gun/ballistic/automatic/rangemaster,
 	/obj/item/ammo_box/magazine/m762,
-	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/ammo_box/magazine/d12g,
 	/obj/item/gun/energy/ionrifle,
 	/obj/item/stock_parts/cell/ammo/mfc,
@@ -618,7 +617,7 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 
 GLOBAL_LIST_INIT(loot_t5_range, list(
 	/obj/item/gun/energy/laser/plasma,
-	/obj/item/gun/ballistic/automatic/tommygun,
+	/obj/item/gun/ballistic/automatic/smg/tommygun,
 	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/gun/energy/laser/scatter,
 	/obj/item/gun/ballistic/revolver/hunting,

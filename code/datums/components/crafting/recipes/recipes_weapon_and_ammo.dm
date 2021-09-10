@@ -429,21 +429,6 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//fn fal
-/datum/crafting_recipe/fnfal
-	name = "fn fal"
-	result = /obj/item/gun/ballistic/automatic/fnfal
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/crafting/metalparts = 2,
-				/obj/item/stack/sheet/metal = 3,
-				/obj/item/stack/sheet/mineral/titanium = 2,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
 //widowmaker
 /datum/crafting_recipe/widowmaker
 	name = "winchester widowmaker double barrel"
@@ -466,21 +451,6 @@
 				/obj/item/stack/sheet/metal = 3,
 				/datum/reagent/blackpowder = 15)
 	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
-//h&k caws
-/datum/crafting_recipe/caws
-	name = "h&k caws"
-	result = /obj/item/gun/ballistic/automatic/shotgun/caws
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/sheet/mineral/titanium = 2,
-				/obj/item/stack/sheet/metal = 2,
-				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/crafting/goodparts = 3)
-	tools = list(TOOL_AWORKBENCH)
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON

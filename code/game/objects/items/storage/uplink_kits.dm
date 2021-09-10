@@ -125,7 +125,7 @@
 			new /obj/item/book/granter/spell/summonitem(src)
 
 		if("sniper") //This shit is unique so can't really balance it around tc, also no silencer because getting killed without ANY indicator on what killed you sucks
-			new /obj/item/gun/ballistic/automatic/sniper_rifle(src) // 12 tc
+			new /obj/item/gun/ballistic/rifle(src) // 12 tc
 			new /obj/item/ammo_box/magazine/sniper_rounds/penetrator(src)
 			new /obj/item/clothing/glasses/thermal/syndi(src)
 			new /obj/item/clothing/gloves/color/latex/nitrile(src)
@@ -134,7 +134,7 @@
 
 		if("metaops") // 30 tc
 			new /obj/item/clothing/suit/space/hardsuit/syndi(src) // 8 tc
-			new /obj/item/gun/ballistic/automatic/shotgun/bulldog/unrestricted(src) // 8 tc
+			new /obj/item/gun/ballistic/automatic/shotgun(src) // 8 tc
 			new /obj/item/implanter/explosive(src) // 2 tc
 			new /obj/item/ammo_box/magazine/m12g(src) // 2 tc
 			new /obj/item/ammo_box/magazine/m12g(src) // 2 tc
@@ -388,15 +388,6 @@
 	new /obj/item/reagent_containers/food/drinks/mug/coco(src)
 	new /obj/item/toy/plush/carpplushie(src)
 	new /obj/item/bedsheet/syndie(src)
-
-/obj/item/storage/box/syndie_kit/kitchen_gun
-	name = "Kitchen Gun (TM) package"
-
-/obj/item/storage/box/syndie_kit/kitchen_gun/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/m1911/kitchengun(src)
-	new /obj/item/ammo_box/magazine/m45/kitchengun(src)
-	new /obj/item/ammo_box/magazine/m45/kitchengun(src)
-
 
 /obj/item/storage/box/strange_seeds_10pack
 

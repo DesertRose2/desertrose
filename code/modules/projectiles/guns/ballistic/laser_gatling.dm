@@ -14,7 +14,7 @@
 	var/obj/item/gun/ballistic/minigun/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 40
+	var/overheat_max = 30
 	var/heat_diffusion = 1
 
 /obj/item/minigunpack/Initialize()
@@ -103,7 +103,8 @@
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
-	burst_size = 3
+	burst_size = 5
+	burst_shot_delay = 1
 	//automatic = 0
 	fire_delay = 1
 	weapon_weight = WEAPON_HEAVY

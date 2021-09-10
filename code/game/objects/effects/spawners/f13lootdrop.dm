@@ -978,7 +978,7 @@
 /obj/effect/spawner/bundle/f13/smg22
 	name = "american 180 spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/smg22
+				/obj/item/gun/ballistic/automatic/smg/smg22
 				)
 
 /obj/effect/spawner/bundle/f13/assault_rifle
@@ -1090,7 +1090,7 @@
 /obj/effect/spawner/bundle/f13/mp5
 	name = "mp5 and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/mp5,
+				/obj/item/gun/ballistic/automatic/smg/mp5,
 				/obj/item/ammo_box/magazine/uzim9mm
 	)
 /obj/effect/spawner/bundle/f13/citykiller
@@ -1157,7 +1157,7 @@
 /obj/effect/spawner/bundle/f13/tommygun
 	name = "tommygun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/tommygun,
+				/obj/item/gun/ballistic/automatic/smg/tommygun,
 				/obj/item/ammo_box/magazine/tommygunm45
 	)
 
@@ -1198,7 +1198,7 @@
 /obj/effect/spawner/bundle/f13/p90
 	name = "p90 and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/automatic/p90,
+		/obj/item/gun/ballistic/automatic/smg/p90,
 		/obj/item/ammo_box/magazine/m10mm_p90
 	)
 

@@ -33,7 +33,7 @@
 	surplus = 30
 	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/dangerous/antitank
+/*/datum/uplink_item/dangerous/antitank
 	name = "Anti Tank Pistol"
 	desc = "Essentially amounting to a sniper rifle with no stock and barrel (or indeed, any rifling at all), \
 			this extremely dubious pistol is guaranteed to dislocate your wrists and hit the broad side of a barn! \
@@ -42,7 +42,7 @@
 	item = /obj/item/gun/ballistic/automatic/pistol/antitank/syndicate
 	cost = 14
 	surplus = 25
-	include_modes = list(/datum/game_mode/nuclear)
+	include_modes = list(/datum/game_mode/nuclear)*/
 
 /datum/uplink_item/dangerous/pie_cannon
 	name = "Banana Cream Pie Cannon"
@@ -88,14 +88,14 @@
 	item = /obj/item/storage/box/syndie_kit/throwing_weapons
 	cost = 3
 
-/datum/uplink_item/dangerous/shotgun
+/*/datum/uplink_item/dangerous/shotgun
 	name = "Bulldog Shotgun"
 	desc = "A fully-loaded semi-automatic drum-fed shotgun. Compatible with all 12g rounds. Designed for close \
 			quarter anti-personnel engagements."
 	item = /obj/item/gun/ballistic/automatic/shotgun/bulldog
 	cost = 8
 	surplus = 40
-	include_modes = list(/datum/game_mode/nuclear)
+	include_modes = list(/datum/game_mode/nuclear)*/
 
 /datum/uplink_item/dangerous/smg
 	name = "C-20r Submachine Gun"
@@ -207,14 +207,14 @@
 	surplus = 0
 	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/dangerous/carbine
+/*/datum/uplink_item/dangerous/carbine
 	name = "M-90gl Carbine"
 	desc = "A fully-loaded, specialized three-round burst carbine that fires 5.56mm ammunition from a 30 round magazine \
 			with a toggleable 40mm underbarrel grenade launcher."
 	item = /obj/item/gun/ballistic/automatic/m90
 	cost = 18
 	surplus = 50
-	include_modes = list(/datum/game_mode/nuclear)
+	include_modes = list(/datum/game_mode/nuclear)*/
 
 /datum/uplink_item/dangerous/powerfist
 	name = "Power Fist"
@@ -226,13 +226,13 @@
 	cost = 8
 	exclude_modes = list(/datum/game_mode/traitor/internal_affairs)
 
-/datum/uplink_item/dangerous/sniper
+/*/datum/uplink_item/dangerous/sniper
 	name = "Sniper Rifle"
 	desc = "Ranged fury, Syndicate style. Guaranteed to cause shock and awe or your TC back!"
 	item = /obj/item/gun/ballistic/automatic/sniper_rifle/syndicate
 	cost = 16
 	surplus = 25
-	include_modes = list(/datum/game_mode/nuclear)
+	include_modes = list(/datum/game_mode/nuclear)*/
 
 /datum/uplink_item/dangerous/bolt_action
 	name = "Surplus Rifle"

@@ -69,7 +69,7 @@
 
 /mob/living/simple_animal/hostile/xray/ranged/rifle/burst
 	extra_projectiles = 3
-	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/service/automatic)
+	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/assault_carbine)
 
 /mob/living/simple_animal/hostile/xray/ranged/shotgun
 	icon_state = "deserter_shotgun"
