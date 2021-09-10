@@ -224,6 +224,10 @@
 /obj/structure/rack,
 /obj/item/binoculars,
 /obj/item/binoculars,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "aaH" = (
@@ -3817,6 +3821,8 @@
 "cds" = (
 /obj/structure/table,
 /obj/machinery/light/floor,
+/obj/item/storage/bag/plants/portaseeder,
+/obj/item/storage/bag/plants/portaseeder,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "cdt" = (
@@ -4885,7 +4891,7 @@
 /area/f13/caves)
 "cQU" = (
 /obj/machinery/light/small,
-/obj/machinery/vending/hydroseeds,
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "cRh" = (
@@ -5018,6 +5024,9 @@
 /obj/item/clothing/neck/cloak/treasurer,
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "cWm" = (
@@ -10008,7 +10017,8 @@
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
 	name = "Farm";
-	req_one_access_txt = "25,126,124"
+	req_one_access = list("25","126","124",);
+	req_one_access_txt = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
@@ -10506,7 +10516,7 @@
 	},
 /area/f13/brotherhood)
 "fZm" = (
-/obj/machinery/vending/hydroseeds,
+/obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "fZo" = (
@@ -12159,17 +12169,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"gVE" = (
-/obj/structure/rack,
-/obj/item/shovel/spade,
-/obj/item/shovel,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/cultivator,
-/obj/item/clothing/gloves/botanic_leather,
-/obj/item/clothing/gloves/botanic_leather,
-/obj/machinery/light/small,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/city)
 "gWo" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
@@ -16407,7 +16406,8 @@
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
 	name = "Farm";
-	req_one_access_txt = "25,126,124"
+	req_one_access = list("25","126","124",);
+	req_one_access_txt = null
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermainbottom"
@@ -17184,6 +17184,7 @@
 /obj/item/storage/bag/trash,
 /obj/item/storage/bag/trash,
 /obj/item/storage/box/bodybags,
+/obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "jQs" = (
@@ -19944,6 +19945,7 @@
 /obj/structure/table,
 /obj/item/pda/botanist,
 /obj/machinery/light/floor,
+/obj/item/pda/botanist,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "luc" = (
@@ -21521,7 +21523,9 @@
 /area/f13/ncr)
 "mrL" = (
 /obj/effect/turf_decal,
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	req_access_txt = "126"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "mrY" = (
@@ -21867,9 +21871,9 @@
 	},
 /area/f13/city)
 "mDr" = (
-/mob/living/simple_animal/cow/brahmin/sgtsillyhorn,
+/mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/legion)
+/area/f13/ncr)
 "mDs" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -32726,6 +32730,12 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/ncr)
+"sYR" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/legion)
 "sYV" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -35802,6 +35812,14 @@
 	icon_state = "floordirty"
 	},
 /area/f13/building)
+"uGT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "uGX" = (
 /obj/structure/chair,
 /obj/effect/decal/remains/human,
@@ -35881,15 +35899,7 @@
 	},
 /area/f13/building)
 "uKb" = (
-/obj/structure/rack,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/xander,
-/obj/item/seeds/xander,
-/obj/item/storage/bag/plants,
-/obj/item/reagent_containers/spray/plantbgone,
-/obj/item/reagent_containers/spray/plantbgone,
-/obj/machinery/light/floor,
+/obj/machinery/vending/hydroseeds,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "uKq" = (
@@ -36708,6 +36718,12 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/closed/wall/f13/wood,
 /area/f13/building)
+"vfD" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "vfG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/legionary,
@@ -38091,6 +38107,10 @@
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
 /turf/open/floor/carpet,
 /area/f13/legion)
 "vWC" = (
@@ -38471,6 +38491,15 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"wkB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/legion)
 "wkH" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -41374,8 +41403,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "xSm" = (
-/obj/structure/table,
-/obj/item/pda/botanist,
+/obj/structure/rack,
+/obj/item/shovel/spade,
+/obj/item/shovel,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/cultivator,
+/obj/item/clothing/gloves/botanic_leather,
+/obj/item/clothing/gloves/botanic_leather,
+/obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "xSC" = (
@@ -41468,9 +41503,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xUW" = (
-/obj/structure/table,
-/obj/item/storage/bag/plants/portaseeder,
-/obj/item/storage/bag/plants/portaseeder,
+/obj/structure/rack,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/xander,
+/obj/item/seeds/xander,
+/obj/item/storage/bag/plants,
+/obj/item/reagent_containers/spray/plantbgone,
+/obj/item/reagent_containers/spray/plantbgone,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "xVc" = (
@@ -41962,9 +42003,11 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet,
-/area/f13/legion)
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 8;
+	icon_state = "outerpavement"
+	},
+/area/f13/wasteland)
 "yiF" = (
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
@@ -56522,7 +56565,7 @@ fyf
 ioP
 ezb
 eQc
-ezb
+mDr
 ezb
 bqt
 diw
@@ -56778,7 +56821,7 @@ fyf
 fyf
 ioP
 ezb
-jIJ
+ezb
 jIJ
 ezb
 fWD
@@ -57981,7 +58024,7 @@ ubg
 erY
 sBk
 sfB
-gVE
+uKb
 prs
 wFf
 wFf
@@ -93680,7 +93723,7 @@ ptf
 ptf
 ptf
 ptf
-ptf
+yir
 ptf
 ptf
 ptf
@@ -93699,7 +93742,7 @@ wVg
 wVg
 hom
 xox
-vMi
+wkB
 cHp
 hom
 sVl
@@ -94720,7 +94763,7 @@ oMY
 nnW
 oMY
 eLb
-oMY
+pcn
 uGF
 eQH
 oMY
@@ -94728,7 +94771,7 @@ oMY
 eLb
 hom
 oMY
-oMY
+pcn
 hom
 wOP
 wOP
@@ -95222,7 +95265,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+vfD
 fyf
 fyf
 pyZ
@@ -96009,10 +96052,10 @@ mvv
 doX
 hom
 vWC
-yir
+wVg
 mcW
 hom
-oMY
+uGT
 rEd
 aaQ
 sVl
@@ -96527,7 +96570,7 @@ hbO
 xFo
 xNm
 pBM
-xDE
+sYR
 hom
 sVl
 sVl
@@ -101397,7 +101440,7 @@ gcK
 gcK
 gbL
 pIz
-mDr
+sUl
 sUl
 pIz
 iLQ
