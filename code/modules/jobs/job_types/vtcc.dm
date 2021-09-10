@@ -441,7 +441,7 @@
 /datum/outfit/job/vtcc/f13roadie
 	name = "Roadie"
 	jobtype = 	/datum/job/vtcc/f13roadie
-	neck = 		/obj/item/radio/headset/headset_vault/cogcity/merch
+	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
 	shoes = 	/obj/item/clothing/shoes/jackboots
 	uniform = 	/obj/item/clothing/under/f13/merca
 	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
