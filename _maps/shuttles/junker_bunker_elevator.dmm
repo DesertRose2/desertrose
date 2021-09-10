@@ -1,0 +1,38 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/engine,
+/area/space)
+"d" = (
+/obj/structure/chair/f13chair2,
+/turf/open/floor/engine,
+/area/space)
+"x" = (
+/obj/docking_port/mobile/elevator{
+	dwidth = 1;
+	height = 3;
+	id = "junker_bunker_elevator";
+	name = "bunker elevator";
+	width = 4
+	},
+/turf/open/floor/engine,
+/area/space)
+"y" = (
+/obj/machinery/computer/shuttle/bunkerelevator{
+	dir = 8;
+	shuttleId = "junker_bunker_elevator"
+	},
+/turf/open/floor/engine,
+/area/space)
+
+(1,1,1) = {"
+d
+a
+"}
+(2,1,1) = {"
+d
+x
+"}
+(3,1,1) = {"
+d
+y
+"}
