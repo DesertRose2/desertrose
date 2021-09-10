@@ -1171,7 +1171,7 @@
 /obj/effect/spawner/bundle/f13/amr
 	name = "amr and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/rifle/antimateriel,
+				/obj/item/gun/ballistic/rifle/mag/antimateriel,
 				/obj/item/ammo_box/a50MG/incendiary
 	)
 

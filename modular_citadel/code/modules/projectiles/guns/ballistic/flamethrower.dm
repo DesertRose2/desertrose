@@ -152,7 +152,7 @@
 
 //Incinerators
 
-/obj/item/gun/ballistic/rifle/antimateriel/incinerator
+/obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator
 	name = "incinerator"
 	desc = "This weapon launches balls of fire that ignite foes from a distance."
 	icon_state = "incinerator"
@@ -168,3 +168,4 @@
 	casing_ejector = TRUE
 	fire_delay = 7
 	extra_speed = 0
+	slowdown = 0.3

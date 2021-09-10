@@ -782,3 +782,81 @@
 	if(prob(10))
 		var/chosen_sound = pick(abom_sounds)
 		playsound(src, chosen_sound, 70, TRUE)
+
+/mob/living/simple_animal/hostile/raider/junker
+	name = "Junker"
+	desc = "One of the Junkers, raiders who build, rebuild and reprogram robots to suit their own needs."
+	icon_state = "junker"
+	icon_living = "junker"
+	icon_dead = "junker"
+	icon_gib = "junker"
+	speak = list("Gotta find me some jet...", "I'M GONNA SCRAP YOU FOR PARTS!", "This isn't anything like training... Shooting at plywood? How's that supposed to get me ready for this hell!")
+	speak_chance = 10
+	retreat_distance = 5
+	minimum_distance = 4
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	maxHealth = 200
+	health = 200
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/m29/coltwalker)
+	healable = 1
+	ranged = 1
+	projectiletype = /obj/item/projectile/bullet/m44/swc
+	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
+	casingtype = /obj/item/ammo_casing/m44/swc
+	faction = list("raider", "junker")
+
+/mob/living/simple_animal/hostile/raider/junker/hijacker
+	name = "Junker Hijacker"
+	icon_state	=	"junker_hijacker"
+	icon_living	=	"junker_hijacker"
+	icon_dead	=	"junker_hijacker"
+	icon_gib	=	"junker_hijacker"
+	ranged = 0
+	melee_damage_lower = 30
+	melee_damage_upper = 60
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/cautery, /obj/item/bodypart/r_arm/robot, /obj/item/hatchet)
+
+/mob/living/simple_animal/hostile/raider/junker/scrapper
+	name = "Junker Scrapper"
+	icon_state	=	"junker_scrapper"
+	icon_living	=	"junker_scrapper"
+	icon_dead	=	"junker_scrapper"
+	icon_gib	=	"junker_scrapper"
+	projectiletype = /obj/item/projectile/ion/weak
+	projectilesound = 'sound/f13weapons/shotgun.ogg'
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker, /obj/item/gun/ballistic/revolver/ballisticfist)
+	maxHealth = 350
+	health = 350
+	robust_searching = 1
+	melee_damage_lower = 50
+	melee_damage_upper = 60
+
+/mob/living/simple_animal/hostile/raider/junker/boss
+	name = "Junker Boss"
+	icon_state	=	"junker_boss"
+	icon_living	=	"junker_boss"
+	icon_dead	=	"junker_boss"
+	icon_gib	=	"junker_boss"
+	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town...")
+	maxHealth = 700
+	health = 700
+	retreat_distance = 8
+	minimum_distance = 6
+	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator)
+	projectiletype = /obj/item/projectile/incendiary/flamethrower/incinerator
+	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
+
+/obj/effect/mob_spawn/human/corpse/raider/junker
+	uniform = /obj/item/clothing/under/f13/machinist
+	suit = /obj/item/clothing/suit/armor/f13/raider/junker
+	shoes = /obj/item/clothing/shoes/f13/military/plated
+	gloves = /obj/item/clothing/gloves/f13/handwraps
+	head = /obj/item/clothing/head/helmet/f13/raider/eyebot
+
+/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker
+	head = /obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron
+
+/obj/effect/mob_spawn/human/corpse/raider/junker/boss
+	suit = /obj/item/clothing/suit/armor/f13/raider/junker/boss
+	head = /obj/item/clothing/head/helmet/f13/raider/eyebot/sentry

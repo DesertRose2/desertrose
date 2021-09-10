@@ -932,7 +932,7 @@
 //AM rifle
 /datum/crafting_recipe/am_rifle
 	name = "AM Rifle"
-	result = /obj/item/gun/ballistic/rifle/antimateriel
+	result = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/alloys = 1,

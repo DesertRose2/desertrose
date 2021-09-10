@@ -13,7 +13,12 @@
 	empulse_using_range(target, emp_radius)
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/ion/weak
+/obj/item/projectile/ion/mid
 	emp_radius = 1
 	damage = 25
 	armour_penetration = 0.5
+
+/obj/item/projectile/ion/weak
+	emp_radius = 1
+	damage = 12.5
+	armour_penetration = 0.25
