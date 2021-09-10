@@ -343,11 +343,15 @@
 
 /datum/gear/uniform/dress/green
 	name = "Green Dress"
-	path = /obj/item/clothing/under/dress/green
+	path = /obj/item/clothing/under/f13/greendress
 
 /datum/gear/uniform/dress/pink
 	name = "Pink Dress"
-	path = /obj/item/clothing/under/dress/pink
+	path = /obj/item/clothing/under/f13/pinkdress
+	
+/datum/gear/uniform/dress/blue
+	name = "Blue Dress"
+	path = /obj/item/clothing/under/f13/bluedress
 
 /datum/gear/uniform/dress/orange
 	name = "Flower Dress"

@@ -707,7 +707,7 @@
 	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/pinkdress
-	name = "green dress"
+	name = "pink dress"
 	result = /obj/item/clothing/under/f13/pinkdress
 	reqs = list(/obj/item/stack/sheet/cloth = 3)
 	tools = list(TOOL_WORKBENCH)
