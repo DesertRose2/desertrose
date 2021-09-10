@@ -2697,10 +2697,6 @@
 /area/f13/underground/cave)
 "eQq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/vault_door/old{
-	density = 0;
-	icon_state = "oldopen"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "eRf" = (
@@ -2878,6 +2874,17 @@
 /obj/machinery/vending/boozeomat,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
+/area/f13/bunker)
+"fhA" = (
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/vaultdoor{
+	icon_state = "open";
+	name = "busted vault door"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "fiJ" = (
 /obj/machinery/button/door{
@@ -13481,7 +13488,7 @@
 /obj/structure/sign/departments/botany,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/structure/window/reinforced/tinted,
-/turf/open/space/basic,
+/turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
 "xrR" = (
 /obj/structure/table,
@@ -26232,7 +26239,7 @@ gmz
 vYa
 pQJ
 xsH
-vRu
+fhA
 eWF
 fjH
 suv
