@@ -476,8 +476,51 @@
 
 // Fallout 13 //
 
+///////////////////
+//SUBMACHINE GUNS//
+///////////////////
+
+
+//SMG TEMPLATE
+/obj/item/gun/ballistic/automatic/smg/
+	name = "SMG TEMPLATE"
+	desc = "should not exist"
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
+	slowdown = 0.2
+	fire_delay = 3.75
+	burst_shot_delay = 3
+	spread = 10
+	force = 12
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+
+//PPSH-41			Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
+/obj/item/gun/ballistic/automatic/pps
+	name = "ppsh-41"
+	desc = "An extremely fast firing, inaccurate submachine gun from World War 2. Low muzzle velocity. Uses 9mm rounds."
+	icon_state = "pps"
+	mag_type = /obj/item/ammo_box/magazine/pps9mm
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_HEAVY
+	force = 15
+	burst_size = 3
+	fire_delay = 4.5
+	burst_shot_delay = 2
+	can_suppress = FALSE
+	can_attachments = TRUE
+	extra_damage = -2
+	can_scope = FALSE
+	scope_state = "AEP7_scope"
+	scope_x_offset = 9
+	scope_y_offset = 21
+	spread = 20
+
+//Carl Gustaf			Keywords: 10mm, Automatic, 12/24 round mags.
 //Was intended for Legion replacement to Uzis/10mm SMGs. No current implementation.
-/obj/item/gun/ballistic/automatic/cg45
+/obj/item/gun/ballistic/automatic/smg/cg45
 	name = "carl gustaf 10mm"
 	desc = "Post-war submachine gun made in Flagstaff workshops based on a simple old design. Chambered in 10mm."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
@@ -498,7 +541,8 @@
 	can_attachments = TRUE
 	spread = 9
 
-/obj/item/gun/ballistic/automatic/greasegun
+//Greasegun				Keywords: .45 APC, Automatic, 30 round mags. Notes: Should be slow-firing due to simple design and the punch it packs.
+/obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "m3a1 grease gun"
 	desc = "An inexpensive submachine gun chambered in .45 ACP. Slow fire rate allows the operator to conserve ammunition in controllable bursts."
 	icon_state = "grease_gun"
@@ -519,6 +563,7 @@
 	suppressor_x_offset = 26
 	suppressor_y_offset = 17
 
+//10mm SMG				Keywords: 10mm, Automatic, 12/24 round mags. Notes: Should be faster-firing than the Grease due to smaller rounds and complex design.
 /obj/item/gun/ballistic/automatic/smg10mm
 	name = "10mm submachine gun"
 	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
@@ -540,26 +585,6 @@
 	suppressor_state = "10mm_suppressor"
 	suppressor_x_offset = 30
 	suppressor_y_offset = 16
-
-/obj/item/gun/ballistic/automatic/pps
-	name = "ppsh-41"
-	desc = "An extremely fast firing, inaccurate submachine gun from World War 2. Low muzzle velocity. Uses 9mm rounds."
-	icon_state = "pps"
-	mag_type = /obj/item/ammo_box/magazine/pps9mm
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_HEAVY
-	force = 15
-	burst_size = 3
-	fire_delay = 4.5
-	burst_shot_delay = 2
-	can_suppress = FALSE
-	can_attachments = TRUE
-	extra_damage = -2
-	can_scope = FALSE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 9
-	scope_y_offset = 21
-	spread = 20
 
 /obj/item/gun/ballistic/automatic/mini_uzi
 	name = "uzi"
