@@ -1172,7 +1172,7 @@
 	name = "amr and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/rifle/mag/antimateriel,
-				/obj/item/ammo_box/a50MG/incendiary
+				/obj/item/ammo_box/magazine/amr/incindiary
 	)
 
 /obj/effect/spawner/bundle/f13/tribeam
