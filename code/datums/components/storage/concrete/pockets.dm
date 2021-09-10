@@ -183,7 +183,7 @@
 GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
 	/obj/item/stack/f13Cash,
 	/obj/item/key,
-	/obj/item/melee/onehanded/knife,
+	/obj/item/kitchen/knife,
 	/obj/item/paper,
 	)))
 
@@ -243,7 +243,7 @@ GLOBAL_LIST_INIT(storage_shoes_can_hold, typecacheof(list(
 	/obj/item/pen, 
 	/obj/item/gun/ballistic/revolver/detective,
 //	/obj/item/gun/ballistic/revolver/hobo/knifegun,
-//	/obj/item/melee/onehanded/knife,
+	/obj/item/kitchen/knife,
 	/obj/item/scalpel,
 	)))
 

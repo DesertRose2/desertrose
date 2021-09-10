@@ -70,13 +70,6 @@
 	desc = "A finely woven and blue dyed mantle, with the emblem of a bird on its back."
 	icon_state = "jaymantle"
 
-/obj/item/clothing/neck/mantle/green
-	name = "green decorated mantle"
-	desc = "A mantle with festive green decorative patterns."
-	icon = 'icons/fallout/clothing/custom/custom.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/custom/custom.dmi'
-	icon_state = "mantle_wintergreen"
-	item_state = "mantle_wintergreen"
 
 /obj/item/clothing/neck/mantle/commander
 	name = "commanders mantle"
@@ -90,8 +83,8 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 
 /obj/item/clothing/neck/mantle/peltfur
-	name = "fur pelt"
-	desc = "A pelt made from longhorner fur."
+	name = "warm fur pelt"
+	desc = "A pelt made from bighorner fur."
 	icon_state = "peltfur"
 	cold_protection = CHEST|GROIN|ARMS
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
