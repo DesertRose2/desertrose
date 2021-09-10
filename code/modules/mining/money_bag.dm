@@ -116,3 +116,16 @@
 	// ~12 worth of caps
 	new /obj/item/stack/f13Cash/random/low(src)
 
+// BOS knights. Spawns with Knight caste members.
+/obj/item/storage/bag/money/small/bosknight/PopulateContents()
+	new /obj/item/stack/f13Cash/random/bawls/low(src)
+
+// BOS paladins. Spawns with Paladin caste members.
+/obj/item/storage/bag/money/small/bospaladin/PopulateContents()
+	new /obj/item/stack/f13Cash/random/bawls/med(src)
+	new /obj/item/stack/f13Cash/random/low(src)
+
+// BOS heads. Spawns with heads of caste; scribe, knight and paladin
+/obj/item/storage/bag/money/small/bos/PopulateContents()
+	new /obj/item/stack/f13Cash/random/bawls/high(src)
+	new /obj/item/stack/f13Cash/random/bawls/med(src)
