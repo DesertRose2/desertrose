@@ -412,6 +412,13 @@
 	build_path = /obj/item/ammo_box/magazine/garand308/empty
 	category = list("initial", "Intermediate Magazines")
 
+/datum/design/ammolathe/amr50
+	name = "empty anti-materiel rifle magazine (.50MG)"
+	id = "amr50"
+	materials = list(/datum/material/iron = 10000)
+	build_path = /obj/item/ammo_box/magazine/amr/empty
+	category = list("initial", "Intermediate Magazines")
+
 //Tier 3 Ammo
 /datum/design/ammolathe/c4570
 	name = ".45-70 FMJ ammo box"

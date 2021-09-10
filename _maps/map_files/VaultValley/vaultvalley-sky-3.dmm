@@ -346,6 +346,10 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"hy" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/caves)
 "hz" = (
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
@@ -949,6 +953,9 @@
 "sA" = (
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"sL" = (
+/turf/closed/indestructible/riveted,
+/area/f13/caves)
 "sO" = (
 /obj/structure/table,
 /obj/item/folder/red,
@@ -2252,6 +2259,9 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Ow" = (
+/turf/open/indestructible,
+/area/f13/caves)
 "OE" = (
 /obj/structure/curtain{
 	color = "#845f58"
@@ -65652,8 +65662,8 @@ ls
 ls
 "}
 (245,1,1) = {"
-Kr
-Kr
+we
+we
 Kr
 Kr
 Kr
@@ -65909,9 +65919,9 @@ ls
 ls
 "}
 (246,1,1) = {"
-Kr
-Kr
-Kr
+we
+we
+we
 Kr
 Kr
 Kr
@@ -66166,10 +66176,10 @@ ls
 ls
 "}
 (247,1,1) = {"
-Kr
-Kr
-Kr
-Kr
+we
+we
+we
+we
 Kr
 Kr
 Kr
@@ -66423,12 +66433,12 @@ ls
 ls
 "}
 (248,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+we
+we
+we
+we
+we
 Kr
 Kr
 Kr
@@ -66680,13 +66690,13 @@ ls
 ls
 "}
 (249,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+we
+we
+we
+we
+we
+we
 Kr
 Kr
 Kr
@@ -66937,13 +66947,13 @@ ls
 ls
 "}
 (250,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+sL
+sL
+sL
+sL
+sL
+we
 Kr
 Kr
 Kr
@@ -67194,13 +67204,13 @@ ls
 ls
 "}
 (251,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+sL
+Ow
+Ow
+Ow
+sL
+we
 Kr
 Kr
 Kr
@@ -67451,14 +67461,14 @@ ls
 ls
 "}
 (252,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+sL
+Ow
+hy
+Ow
+sL
+we
+we
 Kr
 Kr
 Kr
@@ -67708,15 +67718,15 @@ ls
 ls
 "}
 (253,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+sL
+Ow
+Ow
+Ow
+sL
+we
+we
+we
 Kr
 Kr
 Kr
@@ -67965,15 +67975,15 @@ ls
 ls
 "}
 (254,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+sL
+sL
+sL
+sL
+sL
+we
+we
+we
 Kr
 Kr
 Kr
@@ -68222,16 +68232,16 @@ ls
 ls
 "}
 (255,1,1) = {"
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 Kr
 Kr
 Kr
