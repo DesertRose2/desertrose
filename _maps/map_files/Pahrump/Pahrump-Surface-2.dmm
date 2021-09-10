@@ -375,13 +375,6 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
-"aba" = (
-/obj/structure/flora/grass/wasteland{
-	pixel_x = 9;
-	pixel_y = 14
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "abc" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -14006,7 +13999,7 @@
 	pixel_y = 18
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/area/f13/wasteland)
 "hYJ" = (
 /obj/structure/car,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -17334,7 +17327,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/legion)
+/area/f13/wasteland)
 "jTX" = (
 /obj/structure/spider/stickyweb,
 /obj/machinery/button{
@@ -17990,7 +17983,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/legion)
+/area/f13/wasteland)
 "kmn" = (
 /obj/item/book/granter/crafting_recipe/gunsmith_three,
 /obj/machinery/autolathe/ammo/unlocked,
@@ -21815,10 +21808,6 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"mBb" = (
-/obj/structure/flora/grass/wasteland,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "mBh" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -23410,13 +23399,6 @@
 	icon_state = "shadowleft"
 	},
 /area/f13/wasteland)
-"nFX" = (
-/obj/structure/flora/grass/wasteland{
-	pixel_x = 9;
-	pixel_y = 14
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/legion)
 "nGc" = (
 /obj/structure/simple_door/fakeglass,
 /turf/open/floor/f13{
@@ -26702,9 +26684,6 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
-"pyZ" = (
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "pzJ" = (
 /obj/structure/rack,
 /obj/item/clothing/under/f13/relaxedwear,
@@ -28800,13 +28779,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
-"qKN" = (
-/obj/structure/fence/wooden{
-	dir = 4;
-	icon_state = "post_wood"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/legion)
 "qLa" = (
 /obj/structure/wreck/trash/halftire,
 /turf/open/indestructible/ground/outside/desert,
@@ -31378,13 +31350,6 @@
 	icon_state = "verticalinnermaintop"
 	},
 /area/f13/wasteland)
-"sni" = (
-/obj/structure/flora/grass/wasteland{
-	icon_state = "tall_grass_4";
-	layer = 6
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "snj" = (
 /obj/structure/table/wood{
 	name = "CQ Desk"
@@ -92460,7 +92425,7 @@ xMN
 jKM
 gts
 gcK
-sVl
+uXj
 gcK
 gbL
 gcK
@@ -92717,8 +92682,8 @@ gCU
 fjm
 gts
 gcK
-sVl
-sVl
+uXj
+uXj
 ktB
 gcK
 gbL
@@ -92974,8 +92939,8 @@ gts
 gts
 gts
 ktB
-sVl
-sVl
+uXj
+uXj
 ktB
 hom
 hom
@@ -93231,8 +93196,8 @@ gcK
 gcK
 gcK
 jeB
-sVl
-sVl
+uXj
+uXj
 isZ
 hom
 uUZ
@@ -93488,9 +93453,9 @@ hom
 hom
 hom
 hom
-sVl
-sVl
-aba
+uXj
+uXj
+sJM
 tja
 xqY
 uOr
@@ -93745,9 +93710,9 @@ xox
 wkB
 cHp
 hom
-sVl
-sVl
-sni
+uXj
+uXj
+gCh
 tja
 iNI
 qbe
@@ -94002,9 +93967,9 @@ upj
 mZM
 fIe
 aaQ
-sVl
-sVl
-mBb
+uXj
+uXj
+jcp
 tja
 ftz
 qbe
@@ -94259,9 +94224,9 @@ aqb
 oMY
 aaP
 hom
-sVl
-sVl
-pyZ
+uXj
+uXj
+fyf
 hom
 bRF
 qbe
@@ -94516,9 +94481,9 @@ hom
 dvo
 hom
 hom
-sVl
-sVl
-pyZ
+uXj
+uXj
+fyf
 hom
 hom
 nmc
@@ -95268,7 +95233,7 @@ fyf
 vfD
 fyf
 fyf
-pyZ
+fyf
 uNK
 aaw
 aaA
@@ -95544,9 +95509,9 @@ hom
 oMY
 oMY
 hom
-sVl
-sVl
-pyZ
+uXj
+uXj
+fyf
 scj
 vbk
 dgS
@@ -95801,9 +95766,9 @@ hom
 vMi
 rEd
 aaQ
-sVl
-sVl
-nFX
+uXj
+uXj
+sJM
 tja
 oXi
 tQV
@@ -96058,9 +96023,9 @@ hom
 uGT
 rEd
 aaQ
-sVl
-sVl
-sni
+uXj
+uXj
+gCh
 hom
 oMY
 oMY
@@ -96315,8 +96280,8 @@ hom
 hom
 dvo
 hom
-sVl
-sVl
+uXj
+uXj
 hYF
 tja
 bla
@@ -96572,9 +96537,9 @@ xNm
 pBM
 sYR
 hom
-sVl
-sVl
-pyZ
+uXj
+uXj
+fyf
 tja
 kkP
 xkK
@@ -96829,9 +96794,9 @@ xNm
 aCU
 xNm
 hom
-sVl
-sVl
-pyZ
+uXj
+uXj
+fyf
 hom
 qms
 tQV
@@ -97087,7 +97052,7 @@ nNa
 uIV
 hom
 syr
-sVl
+uXj
 klR
 hom
 hom
@@ -97345,7 +97310,7 @@ xDE
 hom
 syr
 syr
-qKN
+buG
 xYS
 cWG
 wDc
@@ -97602,7 +97567,7 @@ xNm
 hom
 syr
 syr
-qKN
+buG
 jEp
 nZV
 xkl
@@ -97859,7 +97824,7 @@ xNm
 hom
 syr
 syr
-qKN
+buG
 jEp
 nZV
 xkl
@@ -98116,7 +98081,7 @@ jWx
 hom
 syr
 syr
-qKN
+buG
 jEp
 nZV
 xkl
@@ -98373,7 +98338,7 @@ xqQ
 hom
 syr
 syr
-qKN
+buG
 hAX
 mvv
 bpD
@@ -98628,8 +98593,8 @@ cWG
 tUc
 daU
 hZw
-wOP
-wOP
+sZQ
+sZQ
 jTJ
 daU
 mvv
