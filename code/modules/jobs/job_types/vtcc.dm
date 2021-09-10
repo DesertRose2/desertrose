@@ -832,7 +832,7 @@
 	name = "Scavenger"
 	backpack_contents = list(
 	/obj/item/clothing/suit/armor/f13/leather_jacket=1,
-	/obj/item/clothing/neck/cloak/grey=1,
+	/obj/item/clothing/neck/mantle/gray=1,
 	/obj/item/gun/ballistic/automatic/pistol/n99=1,
 	/obj/item/ammo_box/magazine/m10mm=1,
 	/obj/item/clothing/glasses/welding=1,
