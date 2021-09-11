@@ -125,7 +125,7 @@
 							"Head Paladin",
 							"Head Knight",
 							"Head Scribe",
-							"Star Paladin",
+							"Senior Paladin",
 							"Star Knight",
 							"Proctor",
 							"Paladin",
@@ -343,15 +343,11 @@
 
 /datum/gear/uniform/dress/green
 	name = "Green Dress"
-	path = /obj/item/clothing/under/f13/greendress
+	path = /obj/item/clothing/under/dress/green
 
 /datum/gear/uniform/dress/pink
 	name = "Pink Dress"
-	path = /obj/item/clothing/under/f13/pinkdress
-	
-/datum/gear/uniform/dress/blue
-	name = "Blue Dress"
-	path = /obj/item/clothing/under/f13/bluedress
+	path = /obj/item/clothing/under/dress/pink
 
 /datum/gear/uniform/dress/orange
 	name = "Flower Dress"

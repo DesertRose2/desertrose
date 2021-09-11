@@ -247,7 +247,7 @@
 							"Head Paladin",
 							"Head Knight",
 							"Head Scribe",
-							"Star Paladin",
+							"Senior Paladin",
 							"Star Knight",
 							"Proctor",
 							"Paladin",
