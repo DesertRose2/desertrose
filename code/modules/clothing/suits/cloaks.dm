@@ -25,25 +25,41 @@
 	name = "head of security's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist."
 	icon_state = "hoscloak"
+	unique_reskin = list("cloak" = "hoscloak",
+						"alternative" = "hoscloak2"
+						)
 
 /obj/item/clothing/neck/cloak/qm
 	name = "quartermaster's cloak"
 	desc = "Worn by Cargonia, supplying the station with the necessary tools for survival."
+	icon_state = "qmcloak"
+	unique_reskin = list("Coat" = "qmcloak",
+						"alternative" = "qmcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/cmo
 	name = "chief medical officer's cloak"
 	desc = "Worn by Meditopia, the valiant men and women keeping pestilence at bay."
 	icon_state = "cmocloak"
+	unique_reskin = list("cloak" = "cmocloak",
+						"alternative" = "cmocloak2"
+						)
 
 /obj/item/clothing/neck/cloak/ce
 	name = "chief engineer's cloak"
 	desc = "Worn by Engitopia, wielders of an unlimited power."
 	icon_state = "cecloak"
+	unique_reskin = list("cloak" = "cecloak",
+						"alternative" = "cecloak2"
+						)
 
 /obj/item/clothing/neck/cloak/rd
 	name = "research director's cloak"
 	desc = "Worn by Sciencia, thaumaturges and researchers of the universe."
 	icon_state = "rdcloak"
+	unique_reskin = list("cloak" = "rdcloak",
+						"alternative " = "rdcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/overseer
 	name = "vault-tec overseer's cloak"
@@ -86,6 +102,9 @@
 	name = "captain's cloak"
 	desc = "Worn by the commander of Space Station 13."
 	icon_state = "capcloak"
+	unique_reskin = list("cloak" = "capcloak",
+						"alternative " = "capcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/hop
 	name = "head of personnel's cloak"
@@ -128,3 +147,4 @@
 	item_state = "cloakgrey"
 	w_class = WEIGHT_CLASS_SMALL
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	

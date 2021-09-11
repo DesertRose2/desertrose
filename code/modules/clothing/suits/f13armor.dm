@@ -123,7 +123,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/dark
 	name = "combat armor"
-	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
+	desc = "(V) An old military grade pre war combat armor. Now in dark, and extra-crispy!"
 	color = "#514E4E"
 
 /obj/item/clothing/suit/armor/f13/combat/Initialize()
@@ -145,7 +145,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
-	desc = "A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
+	desc = "(VI) A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
 	color = "#302E2E"
 
 /obj/item/clothing/suit/armor/f13/combat/swat

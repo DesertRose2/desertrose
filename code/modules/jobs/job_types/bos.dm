@@ -85,7 +85,7 @@ Elder
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/laer
-	neck =			/obj/item/clothing/neck/cloak/bos/right
+	neck =			/obj/item/clothing/neck/mantle/bos/right
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -144,7 +144,7 @@ Head Paladin
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck =			/obj/item/clothing/neck/cloak/bos/paladin
+	neck =			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -406,7 +406,7 @@ Senior Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -482,7 +482,7 @@ Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \

@@ -491,7 +491,7 @@
 /obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
 	name = "Ratslayer"
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
-	icon_state = "ratslayer"
+	icon_state = "rat_slayer"
 	item_state = "ratslayer"
 	extra_damage = 7
 	extra_penetration = 0.2
@@ -506,7 +506,7 @@
 	name = "anti-materiel rifle"
 	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
 	icon_state = "amr"
-	item_state = "amr"
+	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 10
 	recoil = 1

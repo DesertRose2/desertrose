@@ -5,6 +5,34 @@
  *		Radiation protection
  */
 
+/obj/item/clothing/suit/hooded/surgical
+	name = "surgical scrubs"
+	desc = "A bundle with all the sterile clothing needed to perform safe surgery accoring to the standards set in the Followers' pamphlet on safe surgery. The shoe covers have grip surfaces to prevent slipping in the blood."
+	icon = 'icons/obj/clothing/scrubs.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/scrub.dmi'
+	icon_state = "surgical_scrubs"
+	w_class = WEIGHT_CLASS_BULKY
+	strip_delay = 60
+	equip_delay_other = 60
+	hoodtype = /obj/item/clothing/head/hooded/surgical
+	clothing_flags = NOSLIP
+	permeability_coefficient = 0.6
+	body_parts_covered = CHEST|GROIN|LEGS|FEET
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
+	armor = list("tier" = 0, "energy" = 0, "bomb" = 0, "bio" = 40, "rad" = 10, "fire" = 0, "acid" = 10)
+
+/obj/item/clothing/head/hooded/surgical
+	name = "hair net"
+	desc = "It's not a good idea to risk hair falling into open wounds."
+	icon = 'icons/obj/clothing/scrubs.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/scrub.dmi'
+	icon_state = "hood_surgical_scrubs"
+	item_state = "hood_surgical_scrubs"
+	flags_inv = HIDEHAIR
+	armor = list("tier" = 0, "energy" = 0, "bomb" = 0, "bio" = 40, "rad" = 10, "fire" = 0, "acid" = 10)
+
+
+
 /*
  * Fire protection
  */
