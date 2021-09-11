@@ -8117,7 +8117,7 @@
 /area/f13/bunker)
 "nBk" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
@@ -13567,7 +13567,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/apron/surgical{
+/obj/item/clothing/suit/hooded/surgical{
 	pixel_x = 9;
 	pixel_y = 7
 	},

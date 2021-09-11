@@ -112,13 +112,6 @@
 	icon_state = "overalls"
 	item_state = "overalls"
 
-/obj/item/clothing/suit/apron/purple_bartender
-	name = "purple bartender apron"
-	desc = "(I) A fancy purple apron for a stylish person."
-	icon_state = "purplebartenderapron"
-	item_state = "purplebartenderapron"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
 /obj/item/clothing/suit/syndicatefake
 	name = "black and red space suit replica"
 	icon_state = "syndicate-black-red"
@@ -221,12 +214,6 @@
 	icon_state = "classicponcho"
 	item_state = "classicponcho"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/suit/poncho/green
-	name = "green poncho"
-	desc = "(I) Your classic, non-racist poncho. This one is green."
-	icon_state = "greenponcho"
-	item_state = "greenponcho"
 
 /obj/item/clothing/suit/poncho/red
 	name = "red poncho"

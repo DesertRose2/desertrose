@@ -61,42 +61,12 @@
 						"alternative " = "rdcloak2"
 						)
 
-/obj/item/clothing/neck/cloak/overseer
-	name = "vault-tec overseer's cloak"
-	desc = "This is the overseers cloak.  Issued by the Vault-tec corporation to easily identify the overseer. This cloak has been passed down from overseer to overseer"
-	icon_state = "overseercloak"
-
-/obj/item/clothin/neck/cloak/bos
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/cloak/bos/left
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/cloak/bos/right
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_r"
-
-/obj/item/clothing/neck/cloak/bos/paladin
-	name = "Paladin cape"
-	desc = "This stylish deep crimson cape is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
-	icon_state = "BoScape"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
-
 /obj/item/clothing/neck/cloak/ranger
 	name = "NCR ranger cape"
 	desc = "Ranger cape made from what looks like old poncho fitted with star, stripes and a bear. Most likely has a holster hidden underneath."
 	icon_state = "ncrr_cape"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
-/obj/item/clothing/neck/cloak/chiefcloak
-	name = "wayfarer cloak"
-	desc = "A symbol of the authority of the Wayfarer Chief."
-	icon_state = "chiefcloak"
 
 /obj/item/clothing/neck/cloak/cap
 	name = "captain's cloak"
@@ -138,13 +108,3 @@
 /obj/item/clothing/neck/cloak/alt/polychromic/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, poly_colors, 3)
-
-/obj/item/clothing/neck/cloak/grey
-	name = "grey cloak"
-	desc = "It's a grey cape that can be worn around your neck."
-	icon = 'icons/obj/clothing/cloaks.dmi'
-	icon_state = "cloakgrey"
-	item_state = "cloakgrey"
-	w_class = WEIGHT_CLASS_SMALL
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	

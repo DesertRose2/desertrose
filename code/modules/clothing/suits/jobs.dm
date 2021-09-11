@@ -75,15 +75,6 @@
 	togglename = "sleeves"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
-//Cook
-/obj/item/clothing/suit/apron/chef
-	name = "cook's apron"
-	desc = "A basic, dull, white chef's apron."
-	icon_state = "apronchef"
-	item_state = "apronchef"
-	blood_overlay_type = "armor"
-	allowed = list(/obj/item/kitchen)
-
 //Detective
 /obj/item/clothing/suit/det_suit
 	name = "trenchcoat"
@@ -174,7 +165,7 @@
 	body_parts_covered = NONE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
-//Surgeon
+//Surgeon OBSOLETE
 /obj/item/clothing/suit/apron/surgical
 	name = "surgical apron"
 	desc = "A sterile blue surgical apron."
