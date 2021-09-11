@@ -4105,6 +4105,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
+"gTx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/bunker)
 "gTD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4499,7 +4506,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -6644,10 +6651,10 @@
 /area/f13/tunnel)
 "kVk" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
+/obj/structure/lattice,
+/obj/machinery/light/broken{
 	dir = 1
 	},
-/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "kWq" = (
@@ -7263,7 +7270,7 @@
 "mfQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
-/obj/machinery/light,
+/obj/machinery/light/broken,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "mfU" = (
@@ -10403,10 +10410,10 @@
 "rjq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
-/obj/machinery/light{
+/obj/structure/lattice,
+/obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "rjv" = (
@@ -11513,7 +11520,7 @@
 "sYA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/five_tires,
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -12944,7 +12951,7 @@
 	height = 2;
 	id = "overseerloot"
 	},
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -36100,7 +36107,7 @@ vAC
 sxn
 vAC
 vAC
-jmv
+gTx
 aIu
 rEO
 heT
@@ -38677,7 +38684,7 @@ nKy
 nKy
 rEO
 rEO
-rEO
+ryc
 gNn
 sDI
 pPT
@@ -39439,7 +39446,7 @@ vAC
 vAC
 piv
 vAC
-jmv
+gTx
 vAC
 vAC
 vAC
@@ -40457,10 +40464,10 @@ heT
 heT
 heT
 rEO
-rEO
+ryc
 swN
-rEO
-rEO
+ryc
+ryc
 ryc
 hBO
 kEu
@@ -40717,7 +40724,7 @@ rEO
 iVn
 utf
 xDn
-rEO
+ryc
 hpq
 sxn
 vBQ
@@ -41231,7 +41238,7 @@ heT
 bjy
 vwg
 oBU
-rEO
+ryc
 hcG
 vAC
 vAC
