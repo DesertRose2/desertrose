@@ -443,10 +443,10 @@ Paladin
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Star Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
+	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Paladin, or Head Paladin"
+	supervisors = "the Senior Paladin, or Head Paladin"
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
@@ -1052,7 +1052,7 @@ Off-Duty
 	/datum/outfit/loadout/offh, //Head Scribe
 	/datum/outfit/loadout/offi, //Junior Paladin
 	/datum/outfit/loadout/offj, //Paladin
-	/datum/outfit/loadout/offk, //Star Paladin
+	/datum/outfit/loadout/offk, //Senior Paladin
 	/datum/outfit/loadout/offl, //Head Paladin
 	)
 
