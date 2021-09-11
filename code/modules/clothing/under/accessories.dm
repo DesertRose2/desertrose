@@ -435,8 +435,8 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/knightcaptain
-	name = "Head Knight pins"
-	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on blue-cloth. Worn by the Head Knight."
+	name = "Knight-Captain pins"
+	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on blue-cloth. Worn by the Knight-Captain."
 	icon_state = "knight-captain"
 	item_color = "knight-captain"
 	minimize_when_attached = TRUE
@@ -456,15 +456,15 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/seniorpaladin
-	name = "Star Paladin pins"
-	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Star Paladin."
+	name = "Senior Paladin pins"
+	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Senior Paladin."
 	icon_state = "seniorpaladin"
 	item_color = "seniorpaladin"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/seniorknight
-	name = "Star Knight pins"
-	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Star Knight."
+	name = "Senior Knight pins"
+	desc = "A silver pin with one device gilded in gold, little notches at the top end, and a golden sword in the center of purple cloth; worn by the high-ranking Senior Knight."
 	icon_state = "seniorknight"
 	item_color = "seniorknight"
 	minimize_when_attached = TRUE
