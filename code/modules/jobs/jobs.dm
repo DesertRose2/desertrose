@@ -47,7 +47,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
 	"Head Scribe",
 	"Head Paladin",
-	"Head Knight",
+	"Knight-Captain",
 
 	"NCR Commanding Officer",
 	"NCR Sergeant First Class",
@@ -77,13 +77,12 @@ GLOBAL_LIST_INIT(command_positions, list(
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 "Mr. Handy"))
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"faction"
-//NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Elder",
 "Head Paladin",
-"Head Knight",
+"Knight-Captain",
 "Head Scribe",
 "Senior Paladin",
 "Paladin",
@@ -181,7 +180,7 @@ GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
 	"Head Paladin",
-	"Head Knight",
+	"Knight-Captain",
 	"Head Scribe"
 ))
 
