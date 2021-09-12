@@ -107,7 +107,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 
 /obj/item/clothing/neck/mantle/poncho/red
- 	icon_state = "redponcho"
+	icon_state = "redponcho"
 
 
 
