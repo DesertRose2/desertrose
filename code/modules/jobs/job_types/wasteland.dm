@@ -536,7 +536,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,
-		/obj/item/grenade/iedcasing=2,
+		/obj/item/grenade/homemade/firebomb=2,
 		/obj/item/kitchen/knife/combat/survival=1
 		)
 
