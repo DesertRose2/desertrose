@@ -86,6 +86,8 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Senior Paladin",
 "Paladin",
+"Senior Lancer",
+"Lancer",
 
 "Legion Centurion",
 "Legion Venator",
@@ -187,6 +189,8 @@ GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"Senior Paladin",
 	"Paladin",
+	"Senior Lancer",
+	"Lancer",
 	"Senior Knight",
 	"Knight",
 	"Proctor",
