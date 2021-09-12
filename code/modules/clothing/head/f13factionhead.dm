@@ -117,6 +117,27 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron
+	name = "assaultron helmet"
+	desc = "(V) This is a dismantled Assaultron head, the central plates pulled apart and all internals ripped out."
+	icon_state = "assaultron_helmet"
+	item_state = "assaultron_helmet"
+	armor = list("tier" = 5, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry
+	name = "sentry bot helmet"
+	desc = "(VI) This is a dismantled Sentry Bot head, the internals ripped out and the optic sensors stripped out, replaced with a torch."
+	icon_state = "sentry_helmet"
+	item_state = "sentry_helmet"
+	armor = list("tier" = 6, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry/attack_self(mob/user)
+	weldingvisortoggle(user)
+
 /obj/item/clothing/head/helmet/f13/raider/psychotic
 	name = "psycho-tic raider helmet"
 	desc = "(IV) A leather skullcap with tufts of hair sticking from each side."
@@ -413,14 +434,14 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
-	name = "brotherhood star knight helmet"
-	desc = "(VI) An improved combat helmet, bearing the symbol of a Star Knight."
+	name = "brotherhood senior knight helmet"
+	desc = "(VI) An improved combat helmet, bearing the symbol of a Senior Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
-	name = "brotherhood head knight helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of the Head Knight."
+	name = "brotherhood knight-captain helmet"
+	desc = "(VII) An improved combat helmet, bearing the symbol of the Knight-Captain."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -447,14 +468,14 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior
-	name = "brotherhood star knight scout helmet"
-	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Star Knight."
+	name = "brotherhood senior knight scout helmet"
+	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Senior Knight."
 	icon_state = "brotherhood_helmet_scout_senior"
 	item_state = "brotherhood_helmet_scout_senior"
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
-	name = "brotherhood head knight scout helmet"
-	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Head Knight."
+	name = "brotherhood knight-Captain scout helmet"
+	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knight-Captain."
 	icon_state = "brotherhood_helmet_scout_captain"
 	item_state = "brotherhood_helmet_scout_captain"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)

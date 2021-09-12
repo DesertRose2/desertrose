@@ -192,7 +192,7 @@ Practitioner
 	gloves = 	/obj/item/clothing/gloves/color/latex/nitrile
 	glasses = 	/obj/item/clothing/glasses/hud/health
 	backpack_contents = list(
-		/obj/item/clothing/suit/apron/surgical=1,
+		/obj/item/clothing/suit/hooded/surgical=1,
 		/obj/item/reagent_containers/medspray/synthflesh=1,
 		/obj/item/healthanalyzer/advanced=1,)
 
@@ -282,7 +282,7 @@ Follower Volunteer
 
 /datum/outfit/loadout/volunteer_mechanic
 	name = "Mechanic"
-	suit = 		/obj/item/clothing/suit/apron
+	neck = 		/obj/item/clothing/neck/apron/labor
 	head = 		/obj/item/clothing/head/hardhat/orange
 	belt = 		/obj/item/storage/belt/utility/full
 	gloves = 	/obj/item/clothing/gloves/color/yellow
@@ -294,7 +294,7 @@ Follower Volunteer
 /datum/outfit/loadout/volunteer_farmer
 	name = "Farmer"
 	head = /obj/item/clothing/head/helmet/f13/vaquerohat
-	suit = /obj/item/clothing/suit/apron/overalls
+	neck = /obj/item/clothing/neck/apron/labor
 	belt = /obj/item/storage/bag/plants/portaseeder
 	backpack_contents = list(
 		/obj/item/hatchet=1,

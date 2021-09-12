@@ -1149,7 +1149,7 @@ Auxilia
 	head = /obj/item/clothing/head/f13/legion/auxilia
 	glasses = /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/utility/full/engi
-	suit = /obj/item/clothing/suit/armor/f13/opifex
+	neck = /obj/item/clothing/neck/apron/labor/forge
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_hand = /obj/item/clothing/under/f13/legauxilia
 	backpack_contents = list(
@@ -1162,7 +1162,7 @@ Auxilia
 /datum/outfit/loadout/auxassist
 	name = "Arcarius (Treasurer)"
 	head = /obj/item/clothing/head/f13/legion/auxilia
-	neck = /obj/item/clothing/neck/cloak/treasurer
+	neck = /obj/item/clothing/neck/mantle/treasurer
 	r_hand = /obj/item/clothing/under/f13/legauxilia
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
@@ -1175,7 +1175,7 @@ Auxilia
 /datum/outfit/loadout/auxacolyte
 	name = "Sacerdos (Acolyte)"
 	head = /obj/item/clothing/head/f13/legion/auxilia
-	suit = /obj/item/clothing/suit/armor/f13/medicus
+	neck = /obj/item/clothing/neck/apron/medicus
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	backpack_contents = list(
 		/obj/item/storage/firstaid/ancient=1,
@@ -1229,7 +1229,7 @@ Camp Follower
 /datum/outfit/loadout/campfollowermatron
 	name = "Mater (Matron)"
 	head = /obj/item/clothing/head/f13/legion/servant
-	suit = /obj/item/clothing/suit/apron/chef
+	neck = /obj/item/clothing/neck/apron/chef
 	backpack_contents = list(
 		/obj/item/kitchen/knife/butcher=1,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus=1,
@@ -1246,7 +1246,7 @@ Camp Follower
 /datum/outfit/loadout/campfollowerhealer
 	name = "Medicus (Healer)"
 	head = /obj/item/clothing/head/f13/legion/servant
-	suit = /obj/item/clothing/suit/armor/f13/medicus
+	neck = /obj/item/clothing/neck/apron/medicus
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
@@ -1375,7 +1375,7 @@ Off-Duty Legionary
 
 /datum/outfit/loadout/offexpven
 	name =	"Explorer Corps"
-	neck =	/obj/item/clothing/neck/cloak/grey
+	neck =	/obj/item/clothing/neck/mantle/gray
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,

@@ -98,7 +98,7 @@
 					/obj/item/clothing/glasses/regular = 2,
 					/obj/item/clothing/glasses/regular/jamjar = 2,
 					/obj/item/clothing/head/sombrero = 3,
-					/obj/item/clothing/suit/poncho = 3,
+					/obj/item/clothing/neck/mantle/poncho = 3,
 					/obj/item/clothing/suit/ianshirt = 3,
 					/obj/item/clothing/shoes/laceup = 5,
 					/obj/item/clothing/shoes/sneakers/black = 6,
@@ -130,7 +130,7 @@
 					/obj/item/clothing/head/beanie/stripedgreen = 3,
 					/obj/item/clothing/suit/jacket/letterman_red = 3,
 					/obj/item/clothing/ears/headphones = 10,
-					/obj/item/clothing/suit/apron/purple_bartender = 4,
+					/obj/item/clothing/neck/apron/bartender = 4,
 					/obj/item/clothing/under/rank/civilian/bartender/purple = 4,
 					/* Commenting out until next Christmas or made automatic
 					/obj/item/clothing/under/costume/christmas = 3,
@@ -203,7 +203,7 @@
 /obj/machinery/vending/clothing/bos
 	name = "Civilian ClothesMate"
 	desc = "A vending machine for civilian and waster disguises."
-	products = list(/obj/item/clothing/suit/poncho = 5,
+	products = list(/obj/item/clothing/neck/mantle/poncho = 5,
 					/obj/item/clothing/under/f13/brahminf = 2,
 					/obj/item/clothing/under/f13/brahminm = 2,
 					/obj/item/clothing/under/f13/caravan = 2,

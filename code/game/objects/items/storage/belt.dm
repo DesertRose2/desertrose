@@ -937,11 +937,11 @@
 
 /obj/item/storage/belt/sabre/twin
 	name = "twin sheath"
-	desc = "Two sheaths. One is capable of holding a katana (or bokken) and the other a wakizashi. You could put two wakizashis in if you really wanted to. Now you can really roleplay as a samurai."
+	desc = "Two sheaths. One is capable of holding everything and the other one is two."
 	icon_state = "2sheath"
 	item_state = "quiver" //this'll do.
 	w_class = WEIGHT_CLASS_BULKY
-	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken)
+	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	starting_sword = null
 
 /obj/item/storage/belt/sabre/twin/ComponentInitialize()

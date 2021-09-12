@@ -25,51 +25,41 @@
 	name = "head of security's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist."
 	icon_state = "hoscloak"
+	unique_reskin = list("cloak" = "hoscloak",
+						"alternative" = "hoscloak2"
+						)
 
 /obj/item/clothing/neck/cloak/qm
 	name = "quartermaster's cloak"
 	desc = "Worn by Cargonia, supplying the station with the necessary tools for survival."
+	icon_state = "qmcloak"
+	unique_reskin = list("Coat" = "qmcloak",
+						"alternative" = "qmcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/cmo
 	name = "chief medical officer's cloak"
 	desc = "Worn by Meditopia, the valiant men and women keeping pestilence at bay."
 	icon_state = "cmocloak"
+	unique_reskin = list("cloak" = "cmocloak",
+						"alternative" = "cmocloak2"
+						)
 
 /obj/item/clothing/neck/cloak/ce
 	name = "chief engineer's cloak"
 	desc = "Worn by Engitopia, wielders of an unlimited power."
 	icon_state = "cecloak"
+	unique_reskin = list("cloak" = "cecloak",
+						"alternative" = "cecloak2"
+						)
 
 /obj/item/clothing/neck/cloak/rd
 	name = "research director's cloak"
 	desc = "Worn by Sciencia, thaumaturges and researchers of the universe."
 	icon_state = "rdcloak"
-
-/obj/item/clothing/neck/cloak/overseer
-	name = "vault-tec overseer's cloak"
-	desc = "This is the overseers cloak.  Issued by the Vault-tec corporation to easily identify the overseer. This cloak has been passed down from overseer to overseer"
-	icon_state = "overseercloak"
-
-/obj/item/clothin/neck/cloak/bos
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/cloak/bos/left
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/cloak/bos/right
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_r"
-
-/obj/item/clothing/neck/cloak/bos/paladin
-	name = "Paladin cape"
-	desc = "This stylish deep crimson cape is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
-	icon_state = "BoScape"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
+	unique_reskin = list("cloak" = "rdcloak",
+						"alternative " = "rdcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/ranger
 	name = "NCR ranger cape"
@@ -77,15 +67,14 @@
 	icon_state = "ncrr_cape"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
-/obj/item/clothing/neck/cloak/chiefcloak
-	name = "wayfarer cloak"
-	desc = "A symbol of the authority of the Wayfarer Chief."
-	icon_state = "chiefcloak"
 
 /obj/item/clothing/neck/cloak/cap
 	name = "captain's cloak"
 	desc = "Worn by the commander of Space Station 13."
 	icon_state = "capcloak"
+	unique_reskin = list("cloak" = "capcloak",
+						"alternative " = "capcloak2"
+						)
 
 /obj/item/clothing/neck/cloak/hop
 	name = "head of personnel's cloak"
@@ -119,12 +108,3 @@
 /obj/item/clothing/neck/cloak/alt/polychromic/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, poly_colors, 3)
-
-/obj/item/clothing/neck/cloak/grey
-	name = "grey cloak"
-	desc = "It's a grey cape that can be worn around your neck."
-	icon = 'icons/obj/clothing/cloaks.dmi'
-	icon_state = "cloakgrey"
-	item_state = "cloakgrey"
-	w_class = WEIGHT_CLASS_SMALL
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS

@@ -123,7 +123,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/dark
 	name = "combat armor"
-	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
+	desc = "(V) An old military grade pre war combat armor. Now in dark, and extra-crispy!"
 	color = "#514E4E"
 
 /obj/item/clothing/suit/armor/f13/combat/Initialize()
@@ -145,7 +145,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
-	desc = "A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
+	desc = "(VI) A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
 	color = "#302E2E"
 
 /obj/item/clothing/suit/armor/f13/combat/swat
@@ -397,8 +397,8 @@
 	item_state = "sierra"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
-	name = "head knight's T-45d Power Armour"
-	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
+	name = "knight-captain's T-45d Power Armour"
+	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight-Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight-Captain and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
 	slowdown = 0.16

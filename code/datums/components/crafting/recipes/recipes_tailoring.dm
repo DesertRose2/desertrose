@@ -553,7 +553,7 @@
 
 /datum/crafting_recipe/poncho
 	name = "poncho"
-	result = /obj/item/clothing/suit/poncho
+	result = /obj/item/clothing/neck/mantle/poncho
 	reqs = list(/obj/item/stack/sheet/cloth = 3,
 				/obj/item/stack/sheet/hay = 2)
 	tools = list(TOOL_WORKBENCH)
@@ -707,7 +707,7 @@
 	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/pinkdress
-	name = "green dress"
+	name = "pink dress"
 	result = /obj/item/clothing/under/f13/pinkdress
 	reqs = list(/obj/item/stack/sheet/cloth = 3)
 	tools = list(TOOL_WORKBENCH)

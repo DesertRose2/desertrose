@@ -197,6 +197,21 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	resistance_flags = FIRE_PROOF
 
+/obj/item/clothing/suit/armor/f13/raider/junker
+	name = "Junker body armor"
+	desc = "(IV) A heavier armor consisting purely of ramshackle plating clearly made from old robots tack welded together."
+	icon_state = "junker_armor"
+	item_state = "junker_armor"
+	slowdown = 0.2
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/armor/f13/raider/junker/boss
+	desc = "(VII) A heavy armor of pre-war riot gear reinforced with ramshackle plating."
+	icon_state = "junker_duster"
+	item_state = "junker_duster"
+	slowdown = 0.3
+	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+
 //Legion
 
 /obj/item/clothing/suit/armor/f13/medicus
@@ -481,14 +496,14 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
-	name = "brotherhood star knight armor"
-	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
+	name = "brotherhood senior knight armor"
+	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood head knight armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
+	name = "brotherhood knight-captain armor"
+	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -516,13 +531,13 @@
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
-	name = "brotherhood star knight scout armor"
+	name = "brotherhood senior knight scout armor"
 	desc = "(V) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
 	icon_state = "brotherhood_scout_senior"
 	item_state = "brotherhood_scout_senior"
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
-	name = "brotherhood head knight scout armor"
+	name = "brotherhood knight-captain scout armor"
 	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
 	icon_state = "brotherhood_scout_captain"
 	item_state = "brotherhood_scout_captain"

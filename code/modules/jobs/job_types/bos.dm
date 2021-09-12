@@ -85,7 +85,7 @@ Elder
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/laer
-	neck =			/obj/item/clothing/neck/cloak/bos/right
+	neck =			/obj/item/clothing/neck/mantle/bos/right
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -144,7 +144,7 @@ Head Paladin
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck =			/obj/item/clothing/neck/cloak/bos/paladin
+	neck =			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -264,17 +264,17 @@ Head Scribe
 		)
 
 /*
-Head Knight
+Knight-Captain
 */
 
 /datum/job/bos/f13knightcap
-	title = "Head Knight"
+	title = "Knight-Captain"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
+	description = "You are the Knight-Captain, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Sentinel"
@@ -406,7 +406,7 @@ Senior Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -443,10 +443,10 @@ Paladin
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Star Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
+	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Paladin, or Head Paladin"
+	supervisors = "the Senior Paladin, or Head Paladin"
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
@@ -482,7 +482,7 @@ Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -740,10 +740,10 @@ datum/job/bos/f13seniorknight
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You report directly to the Head Knight. You are the Brotherhood Star Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
+	description = "You report directly to the Knight-Captain. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Head Knight"
+	supervisors = "the Knight-Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 3000
 	exp_type = EXP_TYPE_KNIGHT
@@ -839,7 +839,7 @@ Knight
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Knight, or Head Knight"
+	supervisors = "the Senior Knight, or Knight-Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
 
@@ -1044,15 +1044,15 @@ Off-Duty
 	loadout_options = list(
 	/datum/outfit/loadout/offa, //Junior Knight
 	/datum/outfit/loadout/offb, //Knight
-	/datum/outfit/loadout/offc, //Star Knight
-	/datum/outfit/loadout/offd, //Head Knight
+	/datum/outfit/loadout/offc, //Senior Knight
+	/datum/outfit/loadout/offd, //Knight-Captain
 	/datum/outfit/loadout/offe, //Junior Scribe
 	/datum/outfit/loadout/offf, //Scribe
 	/datum/outfit/loadout/offg, //Senior Scribe
 	/datum/outfit/loadout/offh, //Head Scribe
 	/datum/outfit/loadout/offi, //Junior Paladin
 	/datum/outfit/loadout/offj, //Paladin
-	/datum/outfit/loadout/offk, //Star Paladin
+	/datum/outfit/loadout/offk, //Senior Paladin
 	/datum/outfit/loadout/offl, //Head Paladin
 	)
 
@@ -1097,7 +1097,7 @@ Off-Duty
 		)
 
 /datum/outfit/loadout/offd
-	name = "Head Knight"
+	name = "Knight-Captain"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knightcaptain=1
 		)
