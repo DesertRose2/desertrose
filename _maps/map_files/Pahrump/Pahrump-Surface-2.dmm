@@ -10016,8 +10016,7 @@
 	},
 /area/f13/building)
 "fID" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
+/obj/machinery/door/airlock/glass{
 	name = "Farm";
 	req_one_access_txt = "25; 124; 126"
 	},
@@ -16398,8 +16397,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
 "jmw" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
+/obj/machinery/door/airlock/glass{
 	name = "Farm";
 	req_one_access_txt = "25; 124; 126"
 	},
