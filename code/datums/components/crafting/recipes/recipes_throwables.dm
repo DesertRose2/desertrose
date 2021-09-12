@@ -118,7 +118,7 @@ datum/crafting_recipe/tomahawk
 	result = /obj/item/grenade/homemade/pipebomb
 	reqs = list(/datum/reagent/blackpowder = 80,
 				/obj/item/stack/sheet/metal = 15,
- 				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/crafting/goodparts = 3,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/stack/sheet/cloth = 1)
 	time = 30
