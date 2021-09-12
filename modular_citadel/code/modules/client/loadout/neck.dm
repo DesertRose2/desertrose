@@ -3,6 +3,10 @@
 	subcategory = LOADOUT_SUBCATEGORY_NECK_GENERAL
 	slot = SLOT_NECK
 
+/datum/gear/neck/poncho
+	name = "Poncho"
+	path = /obj/item/clothing/neck/mantle/poncho
+
 /datum/gear/neck/bluetie
 	name = "Blue tie"
 	subcategory = LOADOUT_SUBCATEGORY_NECK_TIE

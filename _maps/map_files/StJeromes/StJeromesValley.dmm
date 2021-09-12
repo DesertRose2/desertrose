@@ -242,9 +242,7 @@
 /area/f13/brotherhood)
 "aaD" = (
 /obj/structure/closet,
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /obj/item/clothing/suit/hooded/cloak/goliath{
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 15);
 	name = "red cloak"
@@ -1107,7 +1105,7 @@
 /area/f13/vault)
 "adb" = (
 /obj/structure/table,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -27711,7 +27709,7 @@
 /area/f13/klamat)
 "bFa" = (
 /obj/structure/table/wood/settler,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/klamat)
 "bFb" = (
@@ -27774,7 +27772,7 @@
 /area/f13/klamat)
 "bFk" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/f13{
@@ -37607,7 +37605,7 @@
 /obj/item/cautery,
 /obj/item/clothing/neck/stethoscope,
 /obj/item/retractor,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/wood,
 /obj/item/circular_saw,

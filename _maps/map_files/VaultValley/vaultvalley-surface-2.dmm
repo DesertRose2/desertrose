@@ -6641,7 +6641,7 @@
 /area/f13/building)
 "hNa" = (
 /obj/structure/table,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -15787,7 +15787,7 @@
 /area/f13/ncr)
 "tqe" = (
 /obj/structure/table,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tqB" = (
