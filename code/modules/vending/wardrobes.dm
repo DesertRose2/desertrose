@@ -264,7 +264,7 @@
 					/obj/item/storage/backpack/satchel/hyd = 3,
 					/obj/item/clothing/suit/hooded/wintercoat/hydro = 2,
 					/obj/item/clothing/neck/apron/labor = 3,
-					/obj/item/clothing/suit/apron/overalls = 5,
+					/obj/item/clothing/suit/overalls = 2,
 					/obj/item/clothing/under/rank/civilian/hydroponics = 5,
 					/obj/item/clothing/under/rank/civilian/hydroponics/skirt = 5,
 					/obj/item/clothing/mask/bandana = 4)
@@ -529,7 +529,7 @@
 					/obj/item/storage/backpack/captain = 1,
 					/obj/item/storage/backpack/satchel/cap = 1,
 					/obj/item/storage/backpack/duffelbag/captain = 1,
-					/obj/item/clothing/neck/cloak/cap = 1,
+					/obj/item/clothing/neck/mantle/cap = 1,
 					/obj/item/clothing/shoes/sneakers/brown = 2,
 					/obj/item/clothing/under/rank/captain = 1,
 					/obj/item/clothing/under/rank/captain/util = 1,

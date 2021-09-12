@@ -70,7 +70,6 @@
 	desc = "A finely woven and blue dyed mantle, with the emblem of a bird on its back."
 	icon_state = "jaymantle"
 
-
 /obj/item/clothing/neck/mantle/commander
 	name = "commanders mantle"
 	desc = "A fine mantle marking the wearer as a Commander of some long lost nation."
@@ -106,3 +105,97 @@
 	desc = "Plain and rugged piece of clothing, put it over your suit and make sure your gear don't get soaked through when it rains."
 	icon_state = "poncho"
 	body_parts_covered = CHEST|GROIN|ARMS
+
+
+//SS13 Cloaks
+/obj/item/clothing/neck/mantle/hos
+	name = "head of security's mantle"
+	desc = "Worn by Securistan, ruling the station with an iron fist."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "hoscloak"
+	unique_reskin = list("cloak" = "hoscloak",
+						"alternative" = "hoscloak2"
+						)
+
+/obj/item/clothing/neck/mantle/qm
+	name = "quartermaster's cloak"
+	desc = "Worn by Cargonia, supplying the station with the necessary tools for survival."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "qmcloak"
+	unique_reskin = list("Coat" = "qmcloak",
+						"alternative" = "qmcloak2"
+						)
+
+/obj/item/clothing/neck/mantle/cmo
+	name = "chief medical officer's cloak"
+	desc = "Worn by Meditopia, the valiant men and women keeping pestilence at bay."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "cmocloak"
+	unique_reskin = list("cloak" = "cmocloak",
+						"alternative" = "cmocloak2"
+						)
+
+/obj/item/clothing/neck/mantle/ce
+	name = "chief engineer's cloak"
+	desc = "Worn by Engitopia, wielders of an unlimited power."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "cecloak"
+	unique_reskin = list("cloak" = "cecloak",
+						"alternative" = "cecloak2"
+						)
+	
+/obj/item/clothing/neck/mantle/rd
+	name = "research director's cloak"
+	desc = "Worn by Sciencia, thaumaturges and researchers of the universe."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "rdcloak"
+	unique_reskin = list("cloak" = "rdcloak",
+						"alternative " = "rdcloak2"
+						)
+
+/obj/item/clothing/neck/mantle/cap
+	name = "captain's cloak"
+	desc = "Worn by the commander of Space Station 13."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "capcloak"
+	unique_reskin = list("cloak" = "capcloak",
+						"alternative " = "capcloak2"
+						)
+
+/obj/item/clothing/neck/mantle/hop
+	name = "head of personnel's cloak"
+	desc = "Worn by the Head of Personnel. It smells faintly of bureaucracy."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "hopcloak"
+
+/obj/item/clothing/neck/mantle/polychromic
+	name = "polychromic cloak"
+	desc = "For when you want to show off your horrible colour coordination skills."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "polyce"
+	item_state = "qmcloak"
+	var/list/poly_colors = list("#FFFFFF", "#FFFFFF", "#808080")
+
+/obj/item/clothing/neck/mantle/polychromic/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, poly_colors, 3)
+
+
+/obj/item/clothing/neck/mantle/alt
+	name = "cloak"
+	desc = "A ragged up white cloak. It reminds you of a place not far from here."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "cloakc"
+	item_state = "cloakc"
+
+/obj/item/clothing/neck/mantle/alt/polychromic
+	name = "polychromic cloak"
+	desc = "A ragged up cloak. It reminds you of a place not far from here."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "cloakc"
+	item_state = "cloakc"
+	var/list/poly_colors = list("#FFFFFF", "#676767", "#4C4C4C")
+
+/obj/item/clothing/neck/mantle/alt/polychromic/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, poly_colors, 3)

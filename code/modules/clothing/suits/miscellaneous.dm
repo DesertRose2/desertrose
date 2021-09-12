@@ -106,7 +106,7 @@
 	icon_state = "vickyred"
 	item_state = "vickyred"
 
-/obj/item/clothing/suit/apron/overalls
+/obj/item/clothing/suit/overalls
 	name = "coveralls"
 	desc = "(I) A set of denim overalls."
 	icon_state = "overalls"

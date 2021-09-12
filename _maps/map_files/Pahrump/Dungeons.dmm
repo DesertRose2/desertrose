@@ -6108,7 +6108,7 @@
 /turf/open/water,
 /area/f13/bunker)
 "jWr" = (
-/obj/item/clothing/neck/cloak/hop,
+/obj/item/clothing/neck/mantle/hop,
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -6459,7 +6459,7 @@
 "kCB" = (
 /obj/item/detective_scanner,
 /obj/structure/closet,
-/obj/item/clothing/neck/cloak/hos,
+/obj/item/clothing/neck/mantle/hos,
 /obj/item/clothing/under/hosparademale,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
 /obj/effect/decal/cleanable/dirt,
