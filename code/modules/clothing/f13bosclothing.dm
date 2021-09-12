@@ -13,10 +13,11 @@
 	desc = "(VI) An improved combat helmet, bearing the symbol of a Senior Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
-	name = "brotherhood knight-captain helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of the Knight-Captain."
+	name = "brotherhood knight captain helmet"
+	desc = "(VII) An improved combat helmet, bearing the symbol of the Knight Captain."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -30,27 +31,28 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/mk2
 	name = "reinforced knight helmet"
-	desc = "(V) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
+	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout
 	name = "brotherhood scout helmet"
-	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knights."
+	desc = "(IV) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_scout_knight"
 	item_state = "brotherhood_helmet_scout_knight"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior
 	name = "brotherhood senior knight scout helmet"
 	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Senior Knight."
 	icon_state = "brotherhood_helmet_scout_senior"
 	item_state = "brotherhood_helmet_scout_senior"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
-	name = "brotherhood knight-Captain scout helmet"
-	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knight-Captain."
+	name = "brotherhood Knight Captain scout helmet"
+	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knight Captain."
 	icon_state = "brotherhood_helmet_scout_captain"
 	item_state = "brotherhood_helmet_scout_captain"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -162,10 +164,11 @@
 	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood knight-captain armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
+	name = "brotherhood Knight Captain armor"
+	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight Captains. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -189,7 +192,7 @@
 	desc = "(IV) A half-suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
 	icon_state = "brotherhood_scout_knight"
 	item_state = "brotherhood_scout_knight"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
@@ -197,9 +200,10 @@
 	desc = "(V) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
 	icon_state = "brotherhood_scout_senior"
 	item_state = "brotherhood_scout_senior"
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
-	name = "brotherhood knight-captain scout armor"
+	name = "brotherhood Knight Captain scout armor"
 	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
 	icon_state = "brotherhood_scout_captain"
 	item_state = "brotherhood_scout_captain"
