@@ -1025,6 +1025,38 @@ Initiate
 		)
 
 /*
+Lancer
+*/
+
+/datum/job/bos/f13lancer
+	title = "Lancer"
+	flag = F13LANCER
+	faction = "BOS"
+	total_positions = 0
+	spawn_positions = 1
+	description = "You are a Lancer, one of the esteemed and few pilots within the Brotherhood. Whether flying a vertibird or performing maintenance on them, you know everything there is to know about these VTOL aircraft. If it involves flying, it's your responsibilty. The only thing you lack, is experience."
+	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	supervisors = "the Senior Lancers and the Knight-Captain"
+	selection_color = "#95a5a6"
+	outfit = /datum/outfit/job/bos/f13lancer
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+
+/datum/outfit/job/bos/f13lancer
+	head = /obj/item/clothing/head/f13/boscap/lancer
+	suit = /obj/item/clothing/suit/f13/lancer
+	uniform = /obj/item/clothing/under/f13/bos/bodysuit/lancer
+	ears = /obj/item/radio/headset/headset_bos
+	backpack_contents = list(/obj/item/kitchen/knife/combat=1,
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/storage/bag/money/small/bos=1,
+		/obj/item/clothing/head/f13/boscap/lancer/helmet
+		)
+
+
+/*
 Off-Duty
 */
 
