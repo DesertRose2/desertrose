@@ -7,6 +7,10 @@
 	name = "Poncho"
 	path = /obj/item/clothing/neck/mantle/poncho
 
+/datum/gear/neck/ponchored
+	name = "Red poncho"
+	path = /obj/item/clothing/neck/mantle/poncho/red
+
 /datum/gear/neck/houseapron
 	name = "Housewife apron"
 	path = /obj/item/clothing/neck/apron/housewife

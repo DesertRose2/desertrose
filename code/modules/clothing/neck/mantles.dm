@@ -106,6 +106,10 @@
 	icon_state = "poncho"
 	body_parts_covered = CHEST|GROIN|ARMS
 
+/obj/item/clothing/neck/mantle/poncho/red
+ 	icon_state = "redponcho"
+
+
 
 //SS13 Cloaks
 /obj/item/clothing/neck/mantle/hos
