@@ -47,7 +47,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
 	"Head Scribe",
 	"Head Paladin",
-	"Knight-Captain",
+	"Knight Captain",
 
 	"NCR Commanding Officer",
 	"NCR Sergeant First Class",
@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Elder",
 "Head Paladin",
-"Knight-Captain",
+"Knight Captain",
 "Head Scribe",
 "Senior Paladin",
 "Paladin",
@@ -182,7 +182,7 @@ GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
 	"Head Paladin",
-	"Knight-Captain",
+	"Knight Captain",
 	"Head Scribe"
 ))
 
