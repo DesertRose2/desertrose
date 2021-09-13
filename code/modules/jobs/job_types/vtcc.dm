@@ -464,7 +464,7 @@
 	name = "Courier"
 	backpack_contents = list(
 	/obj/item/clothing/glasses/f13/biker=1,
-	/obj/item/clothing/shoes/jackboots/fast=1,
+	/obj/item/clothing/shoes/jackboots=1,
 	/obj/item/gun/ballistic/rifle/mag/commando=1,
 	/obj/item/stack/sheet/cardboard/twenty=1,
 	/obj/item/ammo_box/magazine/m45exp = 2
