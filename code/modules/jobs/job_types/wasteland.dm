@@ -903,7 +903,7 @@ Outlaw
 
 /datum/outfit/loadout/trouper
 	name = "Trouper"
-	suit = /obj/item/clothing/suit/poncho/red
+	neck = /obj/item/clothing/neck/mantle/poncho/red
 	uniform = /obj/item/clothing/under/redeveninggown
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/widered

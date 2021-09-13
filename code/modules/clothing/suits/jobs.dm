@@ -2,15 +2,6 @@
  * Job related
  */
 
-//Botanist
-/obj/item/clothing/suit/apron
-	name = "apron"
-	desc = "A basic blue apron."
-	icon_state = "apron"
-	item_state = "apron"
-	blood_overlay_type = "armor"
-	allowed = list(/obj/item/reagent_containers/spray/plantbgone, /obj/item/plant_analyzer, /obj/item/seeds, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/cultivator, /obj/item/reagent_containers/spray/pestspray, /obj/item/hatchet, /obj/item/storage/bag/plants)
-
 //Captain
 /obj/item/clothing/suit/captunic
 	name = "captain's parade tunic"
@@ -164,13 +155,6 @@
 	blood_overlay_type = "armor" //it's the less thing that I can put here
 	body_parts_covered = NONE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-//Surgeon OBSOLETE
-/obj/item/clothing/suit/apron/surgical
-	name = "surgical apron"
-	desc = "A sterile blue surgical apron."
-	icon_state = "surgical"
-	allowed = list(/obj/item/scalpel, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
 
 //Curator
 /obj/item/clothing/suit/curator
