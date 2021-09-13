@@ -264,17 +264,17 @@ Head Scribe
 		)
 
 /*
-Knight-Captain
+Knight Captain
 */
 
 /datum/job/bos/f13knightcap
-	title = "Knight-Captain"
+	title = "Knight Captain"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Knight-Captain, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
+	description = "You are the Knight Captain, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Sentinel"
@@ -740,10 +740,10 @@ datum/job/bos/f13seniorknight
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You report directly to the Knight-Captain. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
+	description = "You report directly to the Knight Captain. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Knight-Captain"
+	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 3000
 	exp_type = EXP_TYPE_KNIGHT
@@ -839,7 +839,7 @@ Knight
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Senior Knight, or Knight-Captain"
+	supervisors = "the Senior Knight, or Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
 
@@ -1036,7 +1036,7 @@ Lancer
 	spawn_positions = 1
 	description = "You are a Lancer, one of the esteemed and few pilots within the Brotherhood. Whether flying a vertibird or performing maintenance on them, you know everything there is to know about these VTOL aircraft. If it involves flying, it's your responsibilty. The only thing you lack, is experience."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Senior Lancers and the Knight-Captain"
+	supervisors = "the Senior Lancers and the Knight Captain"
 	selection_color = "#95a5a6"
 	outfit = /datum/outfit/job/bos/f13lancer
 	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
@@ -1077,7 +1077,7 @@ Off-Duty
 	/datum/outfit/loadout/offa, //Junior Knight
 	/datum/outfit/loadout/offb, //Knight
 	/datum/outfit/loadout/offc, //Senior Knight
-	/datum/outfit/loadout/offd, //Knight-Captain
+	/datum/outfit/loadout/offd, //Knight Captain
 	/datum/outfit/loadout/offe, //Junior Scribe
 	/datum/outfit/loadout/offf, //Scribe
 	/datum/outfit/loadout/offg, //Senior Scribe
@@ -1129,7 +1129,7 @@ Off-Duty
 		)
 
 /datum/outfit/loadout/offd
-	name = "Knight-Captain"
+	name = "Knight Captain"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knightcaptain=1
 		)
