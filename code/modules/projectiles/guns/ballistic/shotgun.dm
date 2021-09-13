@@ -32,6 +32,7 @@
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
 
+
 /obj/item/gun/ballistic/shotgun/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
 
@@ -89,7 +90,6 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 
 
-
 ////////////////////////////////////////
 //DOUBLE BARREL & PUMP ACTION SHOTGUNS//
 ////////////////////////////////////////
@@ -117,6 +117,15 @@
 		if(W.active)
 			sawoff(user)
 
+/obj/item/gun/ballistic/revolver/single_shotgun/update_icon_state()
+	if(sawn_off)
+		icon_state = "[initial(icon_state)]-sawn"
+	else if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
+
+
 //Caravan shotgun							Keywords: Shotgun, Double barrel, saw-off, extra damage +3
 /obj/item/gun/ballistic/revolver/caravan_shotgun
 	name = "caravan shotgun"
@@ -134,12 +143,21 @@
 
 /obj/item/gun/ballistic/revolver/caravan_shotgun/attackby(obj/item/A, mob/user, params)
 	..()
-	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))
+	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter) | istype(A, /obj/item/twohanded/chainsaw))
 		sawoff(user)
 	if(istype(A, /obj/item/melee/transforming/energy))
 		var/obj/item/melee/transforming/energy/W = A
 		if(W.active)
 			sawoff(user)
+
+/obj/item/gun/ballistic/revolver/caravan_shotgun/update_icon_state()
+	if(sawn_off)
+		icon_state = "[initial(icon_state)]-sawn"
+	else if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
+
 
 //Widowmaker					Keywords: Shotgun, Double barrel, saw-off
 /obj/item/gun/ballistic/revolver/widowmaker
@@ -165,6 +183,14 @@
 		if(W.active)
 			sawoff(user)
 
+/obj/item/gun/ballistic/revolver/widowmaker/update_icon_state()
+	if(sawn_off)
+		icon_state = "[initial(icon_state)]-sawn"
+	else if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
+
 //Hunting shotgun					Keywords: Shotgun, Pump-action, 4 rounds, saw-off
 /obj/item/gun/ballistic/shotgun/hunting
 	name = "hunting shotgun"
@@ -184,6 +210,15 @@
 		var/obj/item/melee/transforming/energy/W = A
 		if(W.active)
 			sawoff(user)
+
+/obj/item/gun/ballistic/shotgun/hunting/update_icon_state()
+	if(sawn_off)
+		icon_state = "[initial(icon_state)]-sawn"
+	else if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
+
 
 //Trench shotgun					Keywords: Shotgun, Pump-action, 5 rounds, Bayonet, Extra firemode, Extra damage +2
 /obj/item/gun/ballistic/shotgun/trench
