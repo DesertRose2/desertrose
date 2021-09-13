@@ -37,6 +37,12 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"aN" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/f13/brotherhood)
 "aV" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
@@ -965,6 +971,9 @@
 /obj/effect/landmark/start/f13/shaman,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"uH" = (
+/turf/open/transparent/openspace,
+/area/f13/brotherhood)
 "vf" = (
 /obj/structure/table/wood/settler,
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -992,6 +1001,12 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/city)
+"vt" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/f13/brotherhood)
 "vx" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
@@ -1682,6 +1697,12 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"Ix" = (
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
+	},
+/area/f13/brotherhood)
 "IB" = (
 /obj/structure/barricade/wooden/strong{
 	obj_integrity = 500
@@ -2317,6 +2338,9 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"UJ" = (
+/turf/open/floor/engine,
+/area/f13/brotherhood)
 "US" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/tribalbow,
@@ -2357,6 +2381,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
+"VO" = (
+/obj/structure/railing,
+/turf/open/transparent/openspace,
+/area/f13/brotherhood)
 "VX" = (
 /obj/structure/fence/corner/wooden{
 	dir = 4
@@ -2561,6 +2589,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Zq" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/transparent/openspace,
+/area/f13/brotherhood)
 "Zx" = (
 /obj/structure/chair/wood/wings,
 /turf/open/floor/f13/wood,
@@ -8190,11 +8224,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+Ix
+aN
+aN
+aN
+Ix
 ls
 ls
 ls
@@ -8447,11 +8481,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+VO
+UJ
+UJ
+UJ
+Zq
 ls
 ls
 ls
@@ -8704,11 +8738,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+VO
+UJ
+uH
+UJ
+Zq
 ls
 ls
 ls
@@ -8961,11 +8995,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+VO
+UJ
+UJ
+UJ
+Zq
 ls
 ls
 ls
@@ -9218,11 +9252,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+Ix
+vt
+vt
+vt
+Ix
 ls
 ls
 ls
