@@ -543,7 +543,7 @@
 
 /datum/crafting_recipe/mantle
 	name = "hide mantle"
-	result = /obj/item/clothing/suit/f13/mantle_liz
+	result = /obj/item/clothing/neck/mantle/ragged
 	reqs = list(/obj/item/stack/sheet/leather = 3,
 				/obj/item/stack/sheet/hay = 2)
 	tools = list(TOOL_WORKBENCH)
@@ -588,7 +588,7 @@
 	subcategory = CAT_WASTELAND
 
 /datum/crafting_recipe/cloak
-	name = "brown cloak"
+	name = "desert cloak"
 	result = /obj/item/clothing/suit/hooded/cloak/desert
 	reqs = list(/obj/item/stack/sheet/leather = 3)
 	tools = list(TOOL_WORKBENCH)

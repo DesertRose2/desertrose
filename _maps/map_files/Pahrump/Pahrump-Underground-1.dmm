@@ -15365,7 +15365,7 @@
 /obj/structure/table{
 	layer = 2.9
 	},
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/surgical_drapes,

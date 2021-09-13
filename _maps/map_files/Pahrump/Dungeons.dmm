@@ -6108,7 +6108,7 @@
 /turf/open/water,
 /area/f13/bunker)
 "jWr" = (
-/obj/item/clothing/neck/cloak/hop,
+/obj/item/clothing/neck/mantle/hop,
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -6459,7 +6459,7 @@
 "kCB" = (
 /obj/item/detective_scanner,
 /obj/structure/closet,
-/obj/item/clothing/neck/cloak/hos,
+/obj/item/clothing/neck/mantle/hos,
 /obj/item/clothing/under/hosparademale,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
 /obj/effect/decal/cleanable/dirt,
@@ -8117,7 +8117,7 @@
 /area/f13/bunker)
 "nBk" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
@@ -13567,7 +13567,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/apron/surgical{
+/obj/item/clothing/suit/hooded/surgical{
 	pixel_x = 9;
 	pixel_y = 7
 	},

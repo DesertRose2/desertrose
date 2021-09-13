@@ -748,7 +748,7 @@
 /area/f13/vault)
 "bAG" = (
 /obj/structure/closet/wardrobe/cargotech,
-/obj/item/clothing/neck/cloak/qm,
+/obj/item/clothing/neck/mantle/qm,
 /obj/item/pda/quartermaster,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 10
@@ -5489,8 +5489,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/vault)
 "jWr" = (
-/obj/item/clothing/neck/cloak/hop,
-/obj/item/clothing/neck/cloak/cmo,
+/obj/item/clothing/neck/mantle/hop,
+/obj/item/clothing/neck/mantle/cmo,
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/reagent_containers/food/drinks/flask/gold{
@@ -5786,7 +5786,7 @@
 "kCB" = (
 /obj/item/detective_scanner,
 /obj/structure/closet,
-/obj/item/clothing/neck/cloak/hos,
+/obj/item/clothing/neck/mantle/hos,
 /obj/item/clothing/under/hosparademale,
 /obj/item/gun/ballistic/shotgun/automatic/combat/compact,
 /turf/open/floor/carpet/black,
@@ -7375,7 +7375,7 @@
 /area/f13/vault)
 "nBk" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/cafeteria,
@@ -12317,10 +12317,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/apron/surgical{
-	pixel_x = 9;
-	pixel_y = 7
-	},
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/clothing/mask/surgical{
 	pixel_y = -4
 	},

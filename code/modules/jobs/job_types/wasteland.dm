@@ -536,7 +536,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,
-		/obj/item/grenade/iedcasing=2,
+		/obj/item/grenade/homemade/firebomb=2,
 		/obj/item/kitchen/knife/combat/survival=1
 		)
 
@@ -903,7 +903,7 @@ Outlaw
 
 /datum/outfit/loadout/trouper
 	name = "Trouper"
-	suit = /obj/item/clothing/suit/poncho/red
+	neck = /obj/item/clothing/neck/mantle/poncho/red
 	uniform = /obj/item/clothing/under/redeveninggown
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/widered
