@@ -15684,7 +15684,7 @@
 /area/f13/ncr)
 "tqe" = (
 /obj/structure/table,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tqB" = (

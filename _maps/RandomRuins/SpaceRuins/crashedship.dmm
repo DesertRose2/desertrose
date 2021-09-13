@@ -2270,7 +2270,7 @@
 "gP" = (
 /obj/structure/closet,
 /obj/item/clothing/under/rank/civilian/lawyer/bluesuit,
-/obj/item/clothing/suit/apron,
+/obj/item/clothing/neck/apron/labor,
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "gQ" = (

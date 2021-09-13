@@ -65,7 +65,7 @@
 				)
 
 /obj/effect/spawner/bundle/f13/puffer
-	name = "puffer vest, jeans, and grey cloak"
+	name = "puffer vest, jeans, and grey mantle"
 	items = list(
 				/obj/item/clothing/suit/jacket/puffer/vest,
 				/obj/item/clothing/under/pants/jeans,
@@ -87,7 +87,7 @@
 				)
 
 /obj/effect/spawner/bundle/f13/burgundysuit
-	name = "burgundy suit, shoes, and cloak"
+	name = "burgundy suit, shoes, and mantle"
 	items = list(
 				/obj/item/clothing/under/suit_jacket/burgundy,
 				/obj/item/clothing/shoes/laceup,
