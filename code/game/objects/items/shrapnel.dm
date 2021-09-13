@@ -32,7 +32,7 @@
 	name = "flying shrapnel shard"
 	damage = 14
 	range = 20
-	armour_penetration = -1
+	armour_penetration = 0.3
 	dismemberment = 5
 	ricochets_max = 2
 	ricochet_chance = 70
@@ -40,6 +40,19 @@
 	ricochet_incidence_leeway = 60
 	sharpness = SHARP_EDGED
 	wound_bonus = 40
+
+/obj/item/projectile/bullet/shrapnel/nail
+	name = "flying nail"
+	damage = 8
+	range = 15
+	armour_penetration = 0.1
+	dismemberment = 5
+	ricochets_max = 1
+	ricochet_chance = 70
+	shrapnel_type = /obj/item/shrapnel
+	ricochet_incidence_leeway = 60
+	sharpness = SHARP_EDGED
+	wound_bonus = 30
 
 /obj/item/projectile/bullet/shrapnel/mega
 	name = "flying shrapnel hunk"
@@ -53,7 +66,7 @@
 /obj/item/projectile/bullet/pellet/stingball
 	name = "stingball pellet"
 	damage = 3
-	stamina = 8
+	stamina = 15
 	ricochets_max = 4
 	ricochet_chance = 66
 	ricochet_decay_chance = 1
@@ -79,3 +92,21 @@
 	damage = 10
 	wound_bonus = 30
 	sharpness = SHARP_EDGED
+
+/obj/item/projectile/bullet/shrapnel/plasma // plasma grenades
+	name = "plasma split"
+	embedding = list(embed_chance=0, ignore_throwspeed_threshold=FALSE, fall_chance=0, embed_chance_turf_mod=0)
+	custom_materials = list(/datum/material/iron=50)
+	damage = 35
+	armour_penetration = 0.8
+	range = 30
+	dismemberment = 0
+	ricochets_max = 0
+	ricochet_chance = 0
+	shrapnel_type = /obj/item/shrapnel
+	ricochet_incidence_leeway = 0
+	sharpness = SHARP_EDGED
+	wound_bonus = 0
+	icon = 'icons/obj/projectiles.dmi'
+	icon_state = "plasma1"
+	sharpness = SHARP_NONE

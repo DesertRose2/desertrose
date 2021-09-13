@@ -293,15 +293,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
-/datum/crafting_recipe/spearquiver
-	name = "Spear Quiver"
-	result = /obj/item/storage/backpack/spearquiver
-	time = 60
-	reqs = list(/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/sheet/metal = 1)
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
 /datum/crafting_recipe/arrowap
 	name = "Sturdy Arrow"
 	result = /obj/item/ammo_casing/caseless/arrow/ap
