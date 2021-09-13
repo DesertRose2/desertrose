@@ -6492,7 +6492,7 @@
 "auV" = (
 /obj/structure/rack,
 /obj/item/clothing/head/sombrero,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -23341,9 +23341,7 @@
 	},
 /area/f13/brotherhood)
 "bDc" = (
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /obj/item/clothing/suit/hooded/cloak/goliath{
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 15);
 	name = "red cloak"
@@ -30548,7 +30546,7 @@
 /area/f13/brotherhood)
 "chq" = (
 /obj/structure/table,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -36826,7 +36824,7 @@
 "hVN" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife/butcher,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/f13{
@@ -41806,7 +41804,6 @@
 /obj/item/clothing/glasses/sunglasses/big,
 /obj/item/clothing/under/f13/gentlesuit,
 /obj/item/clothing/shoes/f13/fancy,
-/obj/item/clothing/suit/poncho/green,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)

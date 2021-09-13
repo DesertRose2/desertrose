@@ -20,6 +20,10 @@
 					CAT_AMMO,
 					CAT_MISCWEP
 				),
+				CAT_THROWABLE = list(
+					CAT_REGULAR,
+					CAT_EXPLOSIVE,
+				),
 				CAT_ROBOT = CAT_NONE,
 				CAT_MISC = list(
 					CAT_MISCELLANEOUS,

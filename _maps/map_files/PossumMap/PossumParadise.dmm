@@ -6461,9 +6461,7 @@
 /area/f13/wasteland)
 "atx" = (
 /obj/structure/closet,
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
-/obj/item/clothing/suit/poncho,
+/obj/item/clothing/neck/mantle/poncho,
 /obj/item/clothing/suit/hooded/cloak/goliath{
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 15);
 	name = "red cloak"
@@ -6903,7 +6901,7 @@
 /area/f13/brotherhood)
 "auL" = (
 /obj/structure/table,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -8281,7 +8279,7 @@
 /area/f13/klamat)
 "azi" = (
 /obj/structure/table/wood/settler,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "azj" = (
@@ -20112,7 +20110,7 @@
 /obj/item/cautery,
 /obj/item/clothing/neck/stethoscope,
 /obj/item/retractor,
-/obj/item/clothing/suit/apron/surgical,
+/obj/item/clothing/suit/hooded/surgical,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13{

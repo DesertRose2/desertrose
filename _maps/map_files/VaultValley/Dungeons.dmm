@@ -650,6 +650,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/bundle/f13/armor/marine,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
+/obj/effect/spawner/lootdrop/f13/armor/tier5,
 /turf/open/floor/engine,
 /area/f13/bunker)
 "Ir" = (
@@ -58406,10 +58407,10 @@ Xl
 Xo
 Xl
 Xl
-Lj
-Lj
-Lj
-Lj
+Xl
+Xl
+Xl
+Xl
 Xl
 oc
 JT
@@ -58662,11 +58663,11 @@ bJ
 tG
 tG
 FG
-Xl
-Xl
-Xl
-Xl
-Xl
+FG
+FG
+Xo
+FG
+FG
 Xl
 Gy
 Vv
@@ -58913,10 +58914,10 @@ Wn
 Wn
 Wn
 Xl
-Xl
-Xl
-Xl
-Xl
+FG
+FG
+FG
+FG
 TX
 tG
 FG
@@ -59170,9 +59171,9 @@ FG
 FG
 Xl
 Xl
-Lj
-Lj
-Lj
+Xl
+Xl
+Xl
 Xl
 Xl
 Xl

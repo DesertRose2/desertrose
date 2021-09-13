@@ -65,11 +65,11 @@
 				)
 
 /obj/effect/spawner/bundle/f13/puffer
-	name = "puffer vest, jeans, and grey cloak"
+	name = "puffer vest, jeans, and grey mantle"
 	items = list(
 				/obj/item/clothing/suit/jacket/puffer/vest,
 				/obj/item/clothing/under/pants/jeans,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/that
@@ -87,11 +87,11 @@
 				)
 
 /obj/effect/spawner/bundle/f13/burgundysuit
-	name = "burgundy suit, shoes, and cloak"
+	name = "burgundy suit, shoes, and mantle"
 	items = list(
 				/obj/item/clothing/under/suit_jacket/burgundy,
 				/obj/item/clothing/shoes/laceup,
-				/obj/item/clothing/neck/cloak
+				/obj/item/clothing/neck/mantle/brown
 				)
 
 /obj/effect/spawner/bundle/f13/scratch
@@ -111,7 +111,7 @@
 /obj/effect/spawner/bundle/f13/bartender_purple
 	name = "purple bartender's outfit spawner"
 	items = list(
-				/obj/item/clothing/suit/apron/purple_bartender,
+				/obj/item/clothing/neck/apron/bartender,
 				/obj/item/clothing/under/rank/bartender/purple
 				)
 
@@ -167,7 +167,7 @@
 	items = list(
 				/obj/item/clothing/head/ushanka,
 				/obj/item/clothing/under/soviet,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/geisha
@@ -181,7 +181,7 @@
 	name = "sombrero and poncho"
 	items = list(
 				/obj/item/clothing/head/sombrero,
-				/obj/item/clothing/suit/poncho
+				/obj/item/clothing/neck/mantle/poncho
 				)
 
 /obj/effect/spawner/lootdrop/f13/schoolgirl
@@ -216,7 +216,7 @@
 	name = "vampire outfit spawner"
 	items = list(
 				/obj/item/clothing/under/draculass,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/pirate
@@ -488,7 +488,7 @@
 				/obj/item/retractor,
 				/obj/item/cautery,
 				/obj/item/scalpel,
-				/obj/item/clothing/suit/apron/surgical,
+				/obj/item/clothing/suit/hooded/surgical,
 				/obj/item/clothing/gloves/color/latex,
 				/obj/item/clothing/mask/surgical,
 				/obj/item/surgical_drapes,

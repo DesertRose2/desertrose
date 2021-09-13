@@ -6765,7 +6765,7 @@
 /area/f13/building)
 "Xd" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"

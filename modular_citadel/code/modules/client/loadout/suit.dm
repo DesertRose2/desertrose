@@ -3,18 +3,6 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
 	slot = SLOT_WEAR_SUIT
 
-/datum/gear/suit/poncho
-	name = "Poncho"
-	path = /obj/item/clothing/suit/poncho
-
-/datum/gear/suit/ponchogreen
-	name = "Green poncho"
-	path = /obj/item/clothing/suit/poncho/green
-
-/datum/gear/suit/ponchored
-	name = "Red poncho"
-	path = /obj/item/clothing/suit/poncho/red
-
 /datum/gear/suit/redhood
 	name = "Red cloak"
 	path = /obj/item/clothing/suit/hooded/cloak/david

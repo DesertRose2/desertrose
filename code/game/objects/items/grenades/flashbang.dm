@@ -1,5 +1,6 @@
 /obj/item/grenade/flashbang
 	name = "flashbang"
+	desc = "A prewar police riot supression device, this one delivers a powerful flash and deafening boom."
 	icon_state = "flashbang"
 	item_state = "flashbang"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'

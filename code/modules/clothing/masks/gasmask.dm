@@ -45,12 +45,6 @@
 	..()
 	visor_toggling()
 
-// Brotherhood version
-/obj/item/clothing/mask/gas/welding/bos
-	name = "brotherhood welding mask"
-	desc = "A gas mask with built-in welding goggles and a face shield. It bears color pattern of the brotherhood alongside polarizing glass."
-	icon_state = "weldingmaskbos"
-
 // ********************************************************************
 
 //Plague Dr suit can be found in clothing/suits/bio.dm
