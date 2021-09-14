@@ -437,7 +437,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	name = "Amaretto"
 	description = "A gentle drink that carries a sweet aroma."
 	color = "#E17600"
-	boozepwr = 26
+	boozepwr = 25
 	taste_description = "fruity and nutty sweetness"
 	glass_icon_state = "amarettoglass"
 	glass_name = "glass of amaretto"
