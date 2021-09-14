@@ -105,6 +105,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"bW" = (
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "bY" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/security/wooden_tv,
@@ -355,6 +359,7 @@
 "fP" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "fQ" = (
@@ -810,6 +815,7 @@
 /obj/structure/closet/crate/secure/weapon,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier10,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -1812,6 +1818,10 @@
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
+/area/f13/bunker)
+"Fa" = (
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/padded,
 /area/f13/bunker)
 "Fc" = (
 /mob/living/simple_animal/hostile/handy/protectron,
@@ -4414,7 +4424,7 @@ BD
 DJ
 En
 pb
-vS
+Fa
 mF
 WR
 rW
@@ -4725,7 +4735,7 @@ Zs
 Zs
 rW
 Ym
-SG
+bW
 NM
 rW
 Zs
