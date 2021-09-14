@@ -587,7 +587,7 @@
 	list_reagents = null
 	
 
-
+/*
 ////////////////////////// MOLOTOV ///////////////////////
 /obj/item/reagent_containers/food/drinks/bottle/molotov
 	name = "molotov cocktail"
@@ -654,6 +654,7 @@
 		to_chat(user, "<span class='info'>You snuff out the flame on [src].</span>")
 		cut_overlay(GLOB.fire_overlay)
 		active = 0
+*/
 
 /obj/item/export/bottle/attack_self(mob/user)
 	to_chat(user, "<span class='danger'>The seal seems fine. Best to not open it.</span>")
