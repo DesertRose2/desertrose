@@ -1,20 +1,32 @@
+//IN THIS DOCUMENT: Rifle template, Lever-action rifles, Bolt-action rifles, Magazine-fed bolt-action rifles
+
+////////////////////
+// RIFLE TEMPLATE //
+////////////////////
+
 /obj/item/gun/ballistic/rifle
-	name = "rifle"
-	desc = "A traditional shotgun with wood furniture and a four-shell capacity underneath."
+
+	name = "rifle template"
+	desc = "Should not exist"
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 10
-	flags_1 =  CONDUCT_1
+	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/internal/shot
+	can_automatic = FALSE
+	slowdown = 0.5
+	fire_delay = 6
+	spread = 0
+	force = 15 //Decent clubs generally speaking
+	flags_1 =  CONDUCT_1
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
-	weapon_weight = WEAPON_HEAVY
 	spawnwithmagazine = TRUE
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
-
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
@@ -360,7 +372,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	fire_delay = 6
 	spread = 0
-	extra_damage = 6
+	extra_damage = 8
 	can_bayonet = FALSE
 	scope_state = "scope_short"
 	scope_x_offset = 4
@@ -377,11 +389,13 @@
 	icon_state = "commando"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
-	extra_damage = 5
+	extra_damage = 8
+	extra_penetration = 0.2
 	fire_delay = 6
 	spread = 1
 	can_unsuppress = FALSE
 	suppressed = 1
+	can_scope = TRUE
 	scope_state = "scope_medium"
 	scope_x_offset = 6
 	scope_y_offset = 14
@@ -393,11 +407,13 @@
 	icon_state = "destroyer"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
-	extra_damage = 8
+	extra_damage = 10
+	extra_penetration = 0.3
 	fire_delay = 7
 	spread = 0
 	can_unsuppress = FALSE
 	suppressed = 1
+	can_scope = TRUE
 	scope_state = "scope_medium"
 	scope_x_offset = 6
 	scope_y_offset = 14
@@ -423,6 +439,7 @@
 	icon_state = "amr"
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
+	extra_damage = 10
 	fire_delay = 10
 	recoil = 1
 	spread = 0

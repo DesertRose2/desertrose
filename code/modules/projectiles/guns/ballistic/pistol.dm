@@ -12,9 +12,9 @@
 	slowdown = 0.1
 	name = "pistol template"
 	desc = "should not be here. Bugreport."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	item_state = "gun"
 	w_class = WEIGHT_CLASS_NORMAL //How much space it takes in a bag
 	weapon_weight = WEAPON_LIGHT //Nakes dual wield possible

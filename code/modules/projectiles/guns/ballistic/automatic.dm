@@ -155,11 +155,12 @@
 /obj/item/gun/ballistic/automatic/smg/
 	name = "SMG TEMPLATE"
 	desc = "should not exist"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
+	automatic_burst_overlay = TRUE
 	slowdown = 0.2
 	fire_delay = 3.75
 	burst_shot_delay = 3
@@ -297,7 +298,6 @@
 /obj/item/gun/ballistic/automatic/smg/cg45
 	name = "Carl Gustaf 10mm"
 	desc = "Post-war submachine gun made in Flagstaff workshops based on a simple old design. Chambered in 10mm."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "cg45"
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
@@ -775,16 +775,16 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			burst_size = 2
-			spread = 12
+			spread += 10
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			spread = 2
+			spread = 0
 			fire_delay = 4
 			recoil= 0.1
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
@@ -821,7 +821,7 @@
 /obj/item/gun/ballistic/automatic/service/r82
 	name = "R82 Heavy Service Rifle"
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
-	fire_delay = 4
+	fire_delay = 5
 	extra_damage = 1
 	spread = 4
 	semi_auto = FALSE
@@ -889,7 +889,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	suppressed = 1
-	fire_delay = 3.5
+	fire_delay = 4
 	burst_shot_delay = 3.6
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	can_bayonet = FALSE
