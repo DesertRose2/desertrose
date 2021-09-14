@@ -585,7 +585,6 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/grenadine/empty
 	list_reagents = null
-	
 
 /*
 ////////////////////////// MOLOTOV ///////////////////////
