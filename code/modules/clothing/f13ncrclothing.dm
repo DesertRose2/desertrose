@@ -512,7 +512,6 @@
 						"Alterntive" = "ncr_patrol_alternative"
 						)
 	
-	
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
 	desc = "(VII) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
