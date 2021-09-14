@@ -67,8 +67,7 @@ datum/crafting_recipe/tomahawk
 	name = "Molotov Cocktail"
 	result = /obj/item/reagent_containers/food/drinks/bottle/molotov
 	reqs = list(/obj/item/reagent_containers/rag = 1,
-		/obj/item/reagent_containers/food/drinks/bottle = 1,
-		)
+				/obj/item/reagent_containers/food/drinks/bottle = 1)
 	time = 2 SECONDS
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
@@ -80,7 +79,8 @@ datum/crafting_recipe/tomahawk
 	reqs = list(/datum/reagent/fuel = 50,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/reagent_containers/food/drinks/flask = 1)
+				/obj/item/stack/sheet/metal = 5,
+				/obj/item/reagent_containers/food/drinks/bottle = 1)
 	time = 30
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
