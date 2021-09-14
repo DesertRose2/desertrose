@@ -1006,12 +1006,13 @@ Venator
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
 	name = "Legion Venator"
-	jobtype 	= /datum/job/CaesarsLegion/Legionnaire/f13explorer
+	jobtype 	= 	/datum/job/CaesarsLegion/Legionnaire/f13venator
 	id 			= 	/obj/item/card/id/dogtag/legvenator
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/venator
 	head 		= 	/obj/item/clothing/head/helmet/f13/legion/venator
@@ -1048,10 +1049,10 @@ Explorer
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	name = "Legion Explorer"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
-	id = 		/obj/item/card/id/dogtag/legprime
-	ears	=	/obj/item/radio/headset/headset_legion
-	mask		= /obj/item/clothing/mask/bandana/legprime
+	jobtype 	= 	/datum/job/CaesarsLegion/Legionnaire/f13explorer
+	id			= 	/obj/item/card/id/dogtag/legexplorer
+	ears		=	/obj/item/radio/headset/headset_legion
+	mask		= 	/obj/item/clothing/mask/bandana/legprime
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
