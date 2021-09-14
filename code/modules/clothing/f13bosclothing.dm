@@ -17,7 +17,7 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	name = "brotherhood knight captain helmet"
-	desc = "(VII) An improved combat helmet, bearing the symbol of the Knight Captain."
+	desc = "(VII) An improved combat helmet, bearing the symbol of the knight captain."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -51,8 +51,8 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
-	name = "brotherhood Knight Captain scout helmet"
-	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Knight Captain."
+	name = "brotherhood knight captain scout helmet"
+	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the knight captain."
 	icon_state = "brotherhood_helmet_scout_captain"
 	item_state = "brotherhood_helmet_scout_captain"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -167,8 +167,8 @@
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood Knight Captain armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight Captains. It bears golden embroidery."
+	name = "brotherhood knight captain armor"
+	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all knight captains. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -203,7 +203,7 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
-	name = "brotherhood Knight Captain scout armor"
+	name = "brotherhood knight captain scout armor"
 	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
 	icon_state = "brotherhood_scout_captain"
 	item_state = "brotherhood_scout_captain"
