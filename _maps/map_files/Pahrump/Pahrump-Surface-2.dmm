@@ -524,7 +524,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
 /obj/item/book/granter/crafting_recipe/blueprint/greasegun,
-/obj/item/book/granter/crafting_recipe/blueprint/r82/legion,
+/obj/item/book/granter/crafting_recipe/blueprint/r91/legion,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "abv" = (
@@ -13719,9 +13719,9 @@
 /area/f13/city)
 "hQh" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/shotgun/riot,
-/obj/item/gun/ballistic/shotgun/riot,
-/obj/item/gun/ballistic/shotgun/riot,
+/obj/item/gun/ballistic/automatic/shotgun/riot,
+/obj/item/gun/ballistic/automatic/shotgun/riot,
+/obj/item/gun/ballistic/automatic/shotgun/riot,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -16783,7 +16783,7 @@
 /area/f13/wasteland)
 "jyI" = (
 /obj/structure/displaycase,
-/obj/item/gun/ballistic/revolver/lucky37{
+/obj/item/gun/ballistic/revolver/colt357/lucky{
 	pixel_x = 3
 	},
 /turf/open/floor/f13{
