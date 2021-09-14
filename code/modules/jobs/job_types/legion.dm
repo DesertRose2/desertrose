@@ -408,12 +408,10 @@ Decanii
 
 /datum/outfit/loadout/vetdecanshock
 	name = "Assassin (Scout) Officer"
-	suit_store = /obj/item/gun/ballistic/rifle/kar98k
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/a762/doublestacked=2,
-		/obj/item/attachments/scope=1,
-		/obj/item/gun/ballistic/revolver/revolver44=1,
-		/obj/item/ammo_box/m44=2)
+		/obj/item/ammo_box/magazine/m556/rifle/assault=2,
+		/obj/item/attachments/scope=1)
 
 /datum/outfit/loadout/vetdecanmelee
 	name = "Triarius (Melee) Officer"
@@ -422,8 +420,7 @@ Decanii
 		/obj/item/shield/legion=1,
 		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
-		/obj/item/ammo_box/c4570=1
-	)
+		/obj/item/ammo_box/c4570=1)
 
 //Prime Decanus
 /datum/job/CaesarsLegion/Legionnaire/f13decan
@@ -483,7 +480,7 @@ Decanii
 
 /datum/outfit/loadout/primedecshock
 	name = "Testudo (Shock) Officer"
-	suit_store = /obj/item/gun/ballistic/shotgun/lever
+	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
@@ -625,16 +622,17 @@ Vexillarius
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	suit_store = 	/obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
-		/obj/item/ammo_box/m44=1,
-		/obj/item/nullrod/claymore/chainsaw_sword=1
+		/obj/item/ammo_box/m44=2,
+		/obj/item/nullrod/claymore/chainsaw_sword=1,
+		/obj/item/shield/legion=1
 		)
 
 /datum/outfit/loadout/vexsupport
 	name = "Support Vexillarius"
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = 	/obj/item/gun/ballistic/rifle/automatic/hunting/trail
+	suit_store = 	/obj/item/gun/ballistic/automatic/assault_rifle/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44=1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault=2,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/grenade/plastic/c4=1
 		)
@@ -870,7 +868,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/primeshock
 	name = "Percutio (Shock)"
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
+	suit_store = /obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=2,
