@@ -424,7 +424,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/amaretto/empty
 	list_reagents = null
 
-
 //////////////////////////JUICES AND STUFF ///////////////////////
 
 /obj/item/reagent_containers/food/drinks/bottle/orangejuice
