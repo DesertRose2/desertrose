@@ -14,7 +14,7 @@
 	var/obj/item/gun/ballistic/minigun/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 30
+	var/overheat_max = 25
 	var/heat_diffusion = 1
 
 /obj/item/minigunpack/Initialize()
@@ -104,9 +104,8 @@
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
 	burst_size = 5
-	burst_shot_delay = 1
-	//automatic = 0
-	fire_delay = 1
+	burst_shot_delay = 1.5
+	fire_delay = 2
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/laser.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/minigun

@@ -18,6 +18,7 @@
 	force = 15
 	burst_size = 2
 	burst_shot_delay = 3
+	actions_types = list(/datum/action/item_action/toggle_firemode)
 	var/automatic_burst_overlay = TRUE
 	var/semi_auto = FALSE
 	var/auto_eject = 0
@@ -197,30 +198,30 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 15
 	burst_size = 2
-	fire_delay = 4.5
+	fire_delay = 3.5
 	burst_shot_delay = 1
 	can_suppress = FALSE
 	can_attachments = TRUE
 	can_scope = FALSE
-	spread = 11
+	spread = 2
 
 /obj/item/gun/ballistic/automatic/smg/pps/burst_select()
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 0
-			burst_size = 2
-			spread = 11
-			fire_delay = 4
+			select = 0
+			burst_size += 1
+			spread += 11
+			fire_delay += 1
 			recoil = 0.1
 			extra_damage = -1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select += 1
-			burst_size = 4
-			spread = 22
-			fire_delay = 5
+			select = 1
+			burst_size += 3
+			spread += 22
+			fire_delay += 2
 			recoil = 0.25
 			extra_damage = -2
 			weapon_weight = WEAPON_HEAVY
@@ -238,7 +239,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
-	burst_size = 2
+	burst_size = 1
 	fire_delay = 4.5
 	burst_shot_delay = 2
 	can_suppress = TRUE
@@ -256,9 +257,9 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 2
-			spread = 11
+			select = 1
+			burst_size += 1
+			spread += 11
 			fire_delay = 3
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
@@ -267,7 +268,7 @@
 			select = 0
 			burst_size = 1
 			fire_delay = 3
-			spread = 3
+			spread += 3
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -321,12 +322,12 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM //You should be able to dual-wield these.
 	force = 15
-	burst_size = 2
-	fire_delay = 5
+	burst_size = 1
+	fire_delay = 2
 	burst_shot_delay = 2.5
 	can_suppress = FALSE //we dont have sprites therefore cease
 	can_attachments = TRUE
-	spread = 18
+	spread = 12
 	can_suppress = TRUE
 	suppressor_state = "10mm_suppressor"
 	suppressor_x_offset = 30
@@ -336,17 +337,17 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 2
-			spread = 9
-			fire_delay = 3.75
+			select = 1
+			burst_size += 1
+			spread += 2
+			fire_delay += 3.75
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay = 3.5
+			fire_delay += 3.5
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
@@ -363,8 +364,9 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	burst_size = 3
+	burst_size = 1
 	fire_delay = 3
+	spread = 3
 	extra_penetration = 0.05
 	can_suppress = TRUE
 	suppressor_state = "pistol_suppressor"
@@ -375,9 +377,9 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 3
-			spread = 7
+			select = 1
+			burst_size += 2
+			spread += 7
 			recoil = 0.25
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
@@ -408,7 +410,7 @@
 	burst_shot_delay = 3
 	can_suppress = FALSE
 	can_attachments = TRUE
-	spread = 10
+	spread = 2
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
@@ -418,17 +420,17 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 2
-			spread = 8
-			fire_delay =3.5
+			select = 1
+			burst_size += 1
+			spread += 8
+			fire_delay += 1
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay = 3.25
+			fire_delay = 2
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
@@ -450,23 +452,25 @@
 	burst_shot_delay = 2.5
 	fire_delay = 2.5
 	slowdown = 0.25
+	spread = 2
+	can_attachments = FALSE
 
 /obj/item/gun/ballistic/automatic/smg/tommygun/burst_select()
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			burst_size = 4
-			spread = 16
+			spread += 12
 			fire_delay = 4.5
 			recoil = 0.5
 			extra_damage = 0
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire in long bursts..</span>")
 		if(1)
-			select += 1
+			select = 1
 			burst_size = 2
-			spread = 8
+			spread += 8
 			fire_delay = 3.5
 			recoil = 0.3
 			extra_damage = 2
@@ -475,7 +479,7 @@
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 2
+			spread += 2
 			fire_delay = 2.5
 			recoil = 0.1
 			extra_damage = 4
@@ -648,7 +652,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 4
+	extra_damage = 7
 	burst_size = 1
 	fire_delay = 5
 	spread = 1
@@ -677,6 +681,7 @@
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/garand308
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	extra_damage = 5
 	fire_delay = 4
 	burst_size = 1
 	en_bloc = 1
@@ -742,56 +747,6 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	can_scope = FALSE
-
-//M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
-/obj/item/gun/ballistic/automatic/m14
-	name = "M14 battle rifle"
-	desc = "A prestine M-14 battle rifle, likely from a National Guard reserve armory. This rifle struggled to find its niche, outshadowed by more reliable rifles in 5.56 and a high recoil for a 7.62. Its saving grace is its burst fire capability."
-	icon_state = "m14"
-	item_state = "308"
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	mag_type = /obj/item/ammo_box/magazine/m762
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	burst_size = 1
-	fire_delay = 4
-	spread = 2
-	burst_size = 1
-	can_attachments = FALSE
-	can_bayonet = TRUE
-	bayonet_state = "lasmusket"
-	knife_x_offset = 24
-	knife_y_offset = 21
-	can_scope = TRUE
-	scope_state = "rifle_scope"
-	scope_x_offset = 4
-	scope_y_offset = 11
-	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 16
-
-/obj/item/gun/ballistic/automatic/m14/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size = 2
-			spread += 10
-			fire_delay = 5
-			recoil = 0.2
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
-		if(1)
-			select = 0
-			burst_size = 1
-			spread = 0
-			fire_delay = 4
-			recoil= 0.1
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
 
 //DKS 501 sniper rifle		Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed.
 /obj/item/gun/ballistic/automatic/marksman/sniper
@@ -1012,6 +967,55 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
+//M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
+/obj/item/gun/ballistic/automatic/m14
+	name = "M14 battle rifle"
+	desc = "A prestine M-14 battle rifle, likely from a National Guard reserve armory. This rifle struggled to find its niche, outshadowed by more reliable rifles in 5.56 and a high recoil for a 7.62. Its saving grace is its burst fire capability."
+	icon_state = "m14"
+	item_state = "308"
+	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m762
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	burst_size = 1
+	fire_delay = 4
+	spread = 2
+	burst_size = 1
+	can_attachments = FALSE
+	can_bayonet = TRUE
+	bayonet_state = "lasmusket"
+	knife_x_offset = 24
+	knife_y_offset = 21
+	can_scope = TRUE
+	scope_state = "rifle_scope"
+	scope_x_offset = 4
+	scope_y_offset = 11
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 16
+
+/obj/item/gun/ballistic/automatic/m14/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 1
+			burst_size = 2
+			spread += 10
+			fire_delay = 5
+			recoil = 0.2
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
+		if(1)
+			select = 0
+			burst_size = 1
+			spread = 0
+			fire_delay = 4
+			recoil= 0.1
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
+
 ////////////////
 //MACHINE-GUNS//
 ////////////////
@@ -1038,19 +1042,19 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			burst_size = 2
-			spread = 35
+			spread = 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select += 1
+			select = 1
 			burst_size = 3
-			spread = 45
+			spread = 30
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 25
+			spread = 2
 			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -1080,19 +1084,19 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 2
-			spread = 50
+			select = 1
+			burst_size += 1
+			spread = 30
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select += 1
-			burst_size = 3
-			spread = 60
+			select = 1
+			burst_size += 2
+			spread = 40
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 40
+			spread = 8
 			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -1124,15 +1128,15 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
-			burst_size = 2
+			select = 1
+			burst_size += 1
 			spread = 15
 			extra_damage = -1
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
-			burst_size = 4
+			burst_size += 2
 			spread = 20
 			extra_damage = -2
 			recoil = 0.5
@@ -1212,7 +1216,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			burst_size = 2
 			spread = 12
 			extra_damage = -2
@@ -1299,19 +1303,19 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			burst_size = 2
 			spread = 40
 			extra_damage = -2
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select += 1
+			select = 1
 			burst_size = 3
 			spread = 50
 			extra_damage = -4
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
-			select += 1
+			select = 1
 			burst_size = 4
 			spread = 60
 			extra_damage = -6

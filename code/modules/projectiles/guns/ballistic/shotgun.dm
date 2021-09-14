@@ -252,7 +252,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select += 1
+			select = 1
 			spread = 12
 			burst_size = 1
 			fire_delay = 5
@@ -310,7 +310,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
-	fire_delay = 9
+	fire_delay = 5
 	recoil = 0.5
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK

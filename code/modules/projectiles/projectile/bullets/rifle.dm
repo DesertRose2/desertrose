@@ -22,28 +22,28 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 37
+	damage = 38
 	armour_penetration = 0.22
 	wound_bonus = 20
 	bare_wound_bonus = -20
 
 /obj/item/projectile/bullet/a762/ap
 	name = "7.62 AP bullet"
-	damage = 31
+	damage = 32
 	armour_penetration = 0.4
 	wound_bonus = 10
 	bare_wound_bonus = -10
 
 /obj/item/projectile/bullet/a762/jhp
 	name = "7.62 JHP bullet"
-	damage = 45
+	damage = 46
 	armour_penetration = 0.1
 	wound_bonus = -30
 	bare_wound_bonus = 30
 
 /obj/item/projectile/bullet/a762/match
 	name = "7.62 match bullet"
-	damage = 39
+	damage = 40
 	armour_penetration = 0.2
 	wound_bonus = 20
 	bare_wound_bonus = -20
@@ -51,7 +51,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762/sport //.308 Winchester
 	name = ".308 bullet"
-	damage = 35
+	damage = 36
 	armour_penetration = 0.1
 	wound_bonus = 10
 	bare_wound_bonus = -10

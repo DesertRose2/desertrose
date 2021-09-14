@@ -300,7 +300,7 @@
 /obj/item/projectile/beam/laser/gatling //Gatling Laser Projectile
 	name = "rapid-fire laser beam"
 	damage = 12
-	armour_penetration = 0.7
+	armour_penetration = 0.3
 
 /obj/item/projectile/beam/laser/pistol/wattz //Wattz pistol
 	damage = 31
