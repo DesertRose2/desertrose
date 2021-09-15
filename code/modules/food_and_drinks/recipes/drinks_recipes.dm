@@ -897,6 +897,18 @@
 	required_reagents = list(/datum/reagent/consumable/ethanol/alliescocktail = 50, /datum/reagent/consumable/ethanol/champagne = 20, /datum/reagent/consumable/doctor_delight = 10, /datum/reagent/consumable/ethanol/quintuple_sec = 10, /datum/reagent/consumable/ethanol/screwdrivercocktail = 10)
 	mix_message = "When your powers combine, I am Captain Pl-..."
 
+/datum/chemical_reaction/amaretto_alexander
+	name = "Ameretto Alexander"
+	id = /datum/reagent/consumable/ethanol/amaretto_alexander
+	results = list(/datum/reagent/consumable/ethanol/amaretto_alexander = 3)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/ethanol/creme_de_cacao = 1, /datum/reagent/consumable/cream = 1)
+
+/datum/chemical_reaction/ginger_amaretto
+	name = "Ginger Amaretto"
+	id = /datum/reagent/consumable/ethanol/ginger_amaretto
+	results = list(/datum/reagent/consumable/ethanol/ginger_amaretto = 4)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/sol_dry = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/lemonjuice = 1)
+
 ////////////////////////////////////////// Tea  Base Drinks //////////////////////////////////////
 
 /datum/chemical_reaction/mush
@@ -965,9 +977,6 @@
 	id = /datum/reagent/consumable/catnip_tea
 	results = list(/datum/reagent/consumable/catnip_tea = 3)
 	required_reagents = list(/datum/reagent/consumable/tea = 5, /datum/reagent/pax/catnip = 2)
-
-
-////////////////////////////////////////// Race Base Drinks //////////////////////////////////////
 
 /datum/chemical_reaction/coldscales
 	name = "Cold Scales"
@@ -1043,3 +1052,5 @@
 	results = list(/datum/reagent/consumable/ethanol/laval_spit = 20) //Limited use
 	required_reagents = list(/datum/reagent/iron = 5,  /datum/reagent/consumable/ethanol/mauna_loa = 10, /datum/reagent/sulfur = 5)
 	required_temp = 900 // (626.85'C)
+
+////////////////////////////////////////// Race Base Drinks //////////////////////////////////////
