@@ -444,7 +444,6 @@
 	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
 	shoes = 	/obj/item/clothing/shoes/jackboots
 	uniform = 	/obj/item/clothing/under/f13/merca
-	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
 	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
 	r_pocket = /obj/item/card/data/wpermit
 	backpack_contents = list(
@@ -455,6 +454,7 @@
 /datum/outfit/loadout/scavver
 	name = "Scavver"
 	backpack_contents = list(
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,	
 	/obj/item/autosurgeon/toolset=1,
 	/obj/item/clothing/glasses/welding=1,
 	/obj/item/twohanded/fireaxe=1
@@ -464,6 +464,7 @@
 	name = "Courier"
 	backpack_contents = list(
 	/obj/item/clothing/glasses/f13/biker=1,
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast=1,
 	/obj/item/clothing/shoes/jackboots=1,
 	/obj/item/gun/ballistic/rifle/mag/commando=1,
 	/obj/item/stack/sheet/cardboard/twenty=1,
@@ -473,6 +474,7 @@
 /datum/outfit/loadout/caravaner
 	name = "Caravan Guard"
 	backpack_contents = list(
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,	
 	/obj/item/gun/ballistic/shotgun/lever=1,
 	/obj/item/ammo_box/shotgun/slug = 2,
 	/obj/item/claymore/machete/pipe/tireiron=1
