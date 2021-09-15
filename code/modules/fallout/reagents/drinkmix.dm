@@ -13,7 +13,7 @@
 /datum/chemical_reaction/nukadark
 	name = "Nuka Dark"
 	id = "nukadark"
-	results = list("nukadark" = 2)
+	results = list(/datum/reagent/consumable/ethanol/nukadark = 2)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/ethanol/buffalo = 1)
 
 /datum/chemical_reaction/nukaorange
@@ -31,7 +31,7 @@
 /datum/chemical_reaction/nukavictory
 	name = "Nuka Victory"
 	id = "nukavictory"
-	results = list("nukavictory" = 2)
+	results = list(/datum/reagent/consumable/ethanol/nukavictory = 2)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/ethanol/alliescocktail = 1)
 
 /datum/chemical_reaction/nukawild
@@ -51,7 +51,7 @@
 /datum/chemical_reaction/nukaquantum
 	name = "Nuka Quantum"
 	id = "nukaquantum"
-	results = list("nukaquantum" = 3)
+	results = list(/datum/reagent/consumable/ethanol/nukaquantum = 3)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/ethanol/spiritcleanser = 1, /datum/reagent/bluespace = 1)
 
 //nuka mixes
@@ -255,7 +255,7 @@
 /datum/chemical_reaction/xbeer
 	name = "XXXXXXBeer"
 	id = "xbeer"
-	results = list("xbeer" = 2)
+	results = list(/datum/reagent/consumable/ethanol/xbeer = 2)
 	required_reagents = list(/datum/reagent/consumable/ethanol/beer = 1, /datum/reagent/consumable/ethanol = 1)
 
 //fallout cocktails - not canon, from the mind o scar
@@ -357,3 +357,4 @@
 	id = "yuccashake"
 	results = list(/datum/reagent/consumable/yuccashake = 3)
 	required_reagents = list(/datum/reagent/consumable/yuccajuice = 1, /datum/reagent/consumable/milk = 1, /datum/reagent/consumable/cream = 1)
+

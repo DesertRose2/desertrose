@@ -611,4 +611,4 @@
 						"usotsukihime",
 						"karlov",
 						"hallow96",
-						"SM45HB0T")
+						"sm45hb0t")
