@@ -85,6 +85,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor5-old"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -324,6 +325,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -623,6 +625,11 @@
 	},
 /obj/item/conveyor_switch_construct,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
+"Cr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "Cx" = (
@@ -1214,7 +1221,7 @@ Rj
 Uj
 Ca
 Vv
-Rj
+Cr
 Vl
 iY
 QU

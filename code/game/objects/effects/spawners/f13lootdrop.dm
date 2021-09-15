@@ -1914,6 +1914,7 @@
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 10,
 				/obj/item/book/granter/trait/chemistry = 10,
 				/obj/item/book/granter/trait/trekking = 10,
+				/obj/item/book/granter/trait/demolitions = 5,
 				/obj/item/book/granter/trait/pa_wear = 1,
 				/obj/item/book/granter/crafting_recipe/gunsmith_one = 50,
 				/obj/item/book/granter/crafting_recipe/gunsmith_two = 20,
@@ -2056,4 +2057,47 @@
 			/obj/item/storage/box/ration/ranger_breakfast,
 			/obj/item/storage/box/ration/ranger_lunch,
 			/obj/item/storage/box/ration/ranger_dinner
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosiveslow
+	name = "explosives low spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/reagent_containers/food/drinks/bottle/molotov = 50,
+			/obj/item/grenade/homemade/coffeepotbomb = 20,
+			/obj/item/grenade/homemade/firebomb = 30
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivesmed
+	name = "explosives medium spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/homemade/dynamite = 45,
+			/obj/item/grenade/homemade/pipebomb = 40,
+			/obj/item/grenade/f13/stinger = 30,
+			/obj/item/grenade/smokebomb = 20
+			
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivehigh
+	name = "explosives high spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/f13/frag = 60,
+			/obj/item/grenade/f13/incendinary = 20,
+			/obj/item/grenade/flashbang = 35,
+			/obj/item/grenade/chem_grenade/teargas = 25
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivevhigh
+	name = "explosives very high spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/f13/plasma = 40,
+			/obj/item/grenade/empgrenade = 60,
+			/obj/item/grenade/plastic/c4 = 10
 			)

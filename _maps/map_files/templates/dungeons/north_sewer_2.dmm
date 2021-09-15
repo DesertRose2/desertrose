@@ -670,6 +670,12 @@
 /obj/effect/mob_spawn/human/corpse/raider/tribal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"mU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/bunker)
 "nc" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/f13/yumyum,
@@ -1515,6 +1521,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "Cs" = (
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -2435,6 +2442,13 @@
 /obj/machinery/recharger,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"UY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/radiation)
 "Va" = (
 /turf/open/water,
 /area/f13/tunnel)
@@ -2776,7 +2790,7 @@ BH
 QU
 mn
 df
-ZN
+UY
 jM
 mn
 QU
@@ -4505,7 +4519,7 @@ WG
 ck
 en
 ck
-vw
+mU
 KQ
 BH
 BH

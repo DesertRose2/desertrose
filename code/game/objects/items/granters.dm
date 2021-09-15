@@ -928,7 +928,7 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
-	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist")
+	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)

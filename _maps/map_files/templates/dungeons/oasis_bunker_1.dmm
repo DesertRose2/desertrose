@@ -399,6 +399,7 @@
 "lI" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "mf" = (
@@ -639,7 +640,7 @@
 /area/f13/bunker)
 "tG" = (
 /obj/structure/rack,
-/obj/item/grenade/syndieminibomb/concussion/frag,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -1224,6 +1225,13 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"NE" = (
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/bunker)
 "NJ" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -1362,7 +1370,7 @@
 /area/f13/bunker)
 "QV" = (
 /obj/structure/rack,
-/obj/item/grenade/empgrenade,
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "Rl" = (
@@ -3013,7 +3021,7 @@ Kz
 Kz
 Kz
 Kz
-bp
+NE
 bp
 bp
 bp

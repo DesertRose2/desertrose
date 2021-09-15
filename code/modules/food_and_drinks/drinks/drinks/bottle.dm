@@ -405,6 +405,24 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/trappist/empty
 	list_reagents = null
+	
+/obj/item/reagent_containers/food/drinks/bottle/hooch
+	name = "hooch bottle"
+	desc = "A bottle of rotgut. Its owner has applied some street wisdom to cleverly disguise it as a brown paper bag."
+	icon_state = "hoochbottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/hooch = 100)
+	
+/obj/item/reagent_containers/food/drinks/bottle/hooch/empty
+	list_reagents = null
+	
+/obj/item/reagent_containers/food/drinks/bottle/amaretto
+	name = "Luini Amaretto"
+	desc = "A gentle and syrup like drink, tastes of almonds and apricots"
+	icon_state = "disaronno"
+	list_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 100)
+	
+/obj/item/reagent_containers/food/drinks/bottle/amaretto/empty
+	list_reagents = null
 
 //////////////////////////JUICES AND STUFF ///////////////////////
 
@@ -567,6 +585,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/grenadine/empty
 	list_reagents = null
+
 /*
 ////////////////////////// MOLOTOV ///////////////////////
 /obj/item/reagent_containers/food/drinks/bottle/molotov
@@ -635,6 +654,7 @@
 		cut_overlay(GLOB.fire_overlay)
 		active = 0
 */
+
 /obj/item/export/bottle/attack_self(mob/user)
 	to_chat(user, "<span class='danger'>The seal seems fine. Best to not open it.</span>")
 	return
