@@ -191,8 +191,8 @@
 */
 
 /datum/crafting_recipe/cloakbrown
-	name = "Cloak"
-	result = /obj/item/clothing/neck/cloak
+	name = "Brown mantle"
+	result = /obj/item/clothing/neck/mantle/brown
 	time = 50
 	reqs = list(/obj/item/stack/sheet/cloth = 2,
 				/obj/item/stack/sheet/leather = 2)
@@ -200,8 +200,8 @@
 	subcategory = CAT_WASTELAND
 
 /datum/crafting_recipe/cloakdark
-	name = "Dark Cloak"
-	result = /obj/item/clothing/neck/cloak/grey
+	name = "Gray mantle"
+	result = /obj/item/clothing/neck/mantle/gray
 	time = 50
 	reqs = list(/obj/item/stack/sheet/cloth = 2,
 				/obj/item/stack/sheet/leather = 2)
@@ -292,15 +292,6 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
-
-/datum/crafting_recipe/spearquiver
-	name = "Spear Quiver"
-	result = /obj/item/storage/backpack/spearquiver
-	time = 60
-	reqs = list(/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/sheet/metal = 1)
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/arrowap
 	name = "Sturdy Arrow"

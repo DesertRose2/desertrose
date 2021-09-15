@@ -536,7 +536,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,
-		/obj/item/grenade/iedcasing=2,
+		/obj/item/grenade/homemade/firebomb=2,
 		/obj/item/kitchen/knife/combat/survival=1
 		)
 
@@ -693,7 +693,7 @@ Outlaw
 
 /datum/outfit/loadout/scav
 	name = "Scav"
-	suit = /obj/item/clothing/suit/apron
+	neck = /obj/item/clothing/neck/apron/labor
 	shoes = /obj/item/clothing/shoes/workboots
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	head = /obj/item/clothing/head/hardhat/dblue
@@ -725,7 +725,7 @@ Outlaw
 	shoes = /obj/item/clothing/shoes/f13/brownie
 	head = /obj/item/clothing/head/f13/stormchaser
 	gloves = /obj/item/clothing/gloves/color/brown
-	neck = /obj/item/clothing/neck/cloak
+	neck = /obj/item/clothing/neck/mantle/brown
 	glasses = /obj/item/clothing/glasses/f13/biker
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/m1911/compact
 	backpack_contents =  list(
@@ -792,7 +792,7 @@ Outlaw
 
 /datum/outfit/loadout/fieldhand
 	name = "Field Hand"
-	suit = /obj/item/clothing/suit/apron/overalls
+	neck = /obj/item/clothing/neck/apron/labor
 	uniform = /obj/item/clothing/under/f13/brahmin
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	mask = /obj/item/clothing/mask/bandana
@@ -809,7 +809,7 @@ Outlaw
 
 /datum/outfit/loadout/hobo
 	name = "Hobo"
-	suit = /obj/item/clothing/suit/poncho
+	neck = /obj/item/clothing/neck/mantle/poncho
 	uniform = /obj/item/clothing/under/pants/f13/ghoul
 	shoes = /obj/item/clothing/shoes/sandal
 	mask = /obj/item/clothing/mask/facewrap
@@ -868,7 +868,7 @@ Outlaw
 	head = /obj/item/clothing/head/beret/black
 	gloves = /obj/item/clothing/gloves/f13/military
 	glasses = /obj/item/clothing/glasses/orange
-	neck = /obj/item/clothing/neck/cloak/grey
+	neck = /obj/item/clothing/neck/mantle/gray
 	mask = /obj/item/clothing/mask/balaclava
 	l_hand = /obj/item/gun/ballistic/revolver/doublebarrel
 	backpack_contents = list(
@@ -903,7 +903,7 @@ Outlaw
 
 /datum/outfit/loadout/trouper
 	name = "Trouper"
-	suit = /obj/item/clothing/suit/poncho/red
+	neck = /obj/item/clothing/neck/mantle/poncho/red
 	uniform = /obj/item/clothing/under/redeveninggown
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/widered

@@ -923,13 +923,22 @@
 	traitname = "chem use"
 	remarks = list("Clean your needles...", "Ensure you have quality product...", "Don't mix drugs...", "Only buy from trusted dealers...")
 
+/obj/item/book/granter/trait/demolitions
+	name = "Anarchist's Cookbook"
+	desc = "A manual on how to construct homemade explosives without losing your fingers, now with pictures."
+	oneuse = TRUE
+	granted_trait = TRAIT_DEMOLITION_EXPERT
+	traitname = "explosives"
+	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
+	crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
 	granted_trait = null
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
-	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist")
+	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -960,6 +969,10 @@
 			if("Iron Fist")
 				granted_trait = TRAIT_IRONFIST
 				traitname = "punching"	
+			if("Explosive Expert")
+				granted_trait = TRAIT_DEMOLITION_EXPERT
+				traitname = "explosives"
+				crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
 	else
 		. = ..()
 

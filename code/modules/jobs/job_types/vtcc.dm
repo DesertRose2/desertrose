@@ -441,7 +441,7 @@
 /datum/outfit/job/vtcc/f13roadie
 	name = "Roadie"
 	jobtype = 	/datum/job/vtcc/f13roadie
-	neck = 		/obj/item/radio/headset/headset_vault/cogcity/merch
+	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
 	shoes = 	/obj/item/clothing/shoes/jackboots
 	uniform = 	/obj/item/clothing/under/f13/merca
 	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
@@ -464,7 +464,7 @@
 	name = "Courier"
 	backpack_contents = list(
 	/obj/item/clothing/glasses/f13/biker=1,
-	/obj/item/clothing/shoes/jackboots/fast=1,
+	/obj/item/clothing/shoes/jackboots=1,
 	/obj/item/gun/ballistic/rifle/mag/commando=1,
 	/obj/item/stack/sheet/cardboard/twenty=1,
 	/obj/item/ammo_box/magazine/m45exp = 2
@@ -832,7 +832,7 @@
 	name = "Scavenger"
 	backpack_contents = list(
 	/obj/item/clothing/suit/armor/f13/leather_jacket=1,
-	/obj/item/clothing/neck/cloak/grey=1,
+	/obj/item/clothing/neck/mantle/gray=1,
 	/obj/item/gun/ballistic/automatic/pistol/n99=1,
 	/obj/item/ammo_box/magazine/m10mm=1,
 	/obj/item/clothing/glasses/welding=1,

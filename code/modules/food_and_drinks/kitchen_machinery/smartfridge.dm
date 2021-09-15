@@ -469,7 +469,12 @@
 					/obj/item/reagent_containers/glass/beaker,
 					/obj/item/reagent_containers/spray,
 					// /obj/item/reagent_containers/medigel,
-					/obj/item/reagent_containers/chem_pack
+					/obj/item/reagent_containers/chem_pack,
+					/obj/item/reagent_containers/hypospray/medipen,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	))
 
 	if(istype(O, /obj/item/storage/pill_bottle))
@@ -823,7 +828,9 @@
 		/obj/item/reagent_containers/food/drinks/bottle/hcider = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/grappa = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/sake = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/fernet = 1,)
+		/obj/item/reagent_containers/food/drinks/bottle/fernet = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/amaretto = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/hooch = 1,)
 
 //diy
 

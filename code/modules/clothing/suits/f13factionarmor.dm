@@ -197,44 +197,27 @@
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	resistance_flags = FIRE_PROOF
 
+/obj/item/clothing/suit/armor/f13/raider/junker
+	name = "Junker body armor"
+	desc = "(IV) A heavier armor consisting purely of ramshackle plating clearly made from old robots tack welded together."
+	icon_state = "junker_armor"
+	item_state = "junker_armor"
+	slowdown = 0.2
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/armor/f13/raider/junker/boss
+	desc = "(VII) A heavy armor of pre-war riot gear reinforced with ramshackle plating."
+	icon_state = "junker_duster"
+	item_state = "junker_duster"
+	slowdown = 0.3
+	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+
 //Legion
-
-/obj/item/clothing/suit/armor/f13/medicus
-	name = "medicus apron"
-	desc = "The waxed cotton apron of a Medicus, marked with a red bull insignia."
-	icon_state = "legmedicus"
-	armor = list("energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0)
-	allowed = list(/obj/item/scalpel, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
-
-/obj/item/clothing/suit/armor/f13/opifex
-	name = "opifex apron"
-	desc = "A heavy leather apron designed for protecting the user when metalforging. The bull insignia marks the wearer as an Opifex."
-	icon_state = "opifex_apron"
-	item_state = "opifex_apron"
-	blood_overlay_type = "armor"
-	armor = list("melee" = 5,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 5)
-	allowed = list(/obj/item/crowbar,
-		/obj/item/screwdriver,
-		/obj/item/weldingtool,
-		/obj/item/wirecutters,
-		/obj/item/wrench,
-		/obj/item/stack/cable_coil,
-		/obj/item/clothing/gloves)
-
 /obj/item/clothing/suit/armor/f13/slavelabor
 	name = "old leather strips"
 	desc = "Worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
 	icon_state = "legslaveleather"
 	item_state = "legslaveleather"
-
-/obj/item/clothing/neck/cloak/treasurer
-	name = "treasurers cloak"
-	desc = "The grey and black cloak with gold thread trimming shows the wearer is entrusted with matters of money and records."
-	icon = 'icons/obj/clothing/cloaks.dmi'
-	icon_state = "legtrescloak"
-	item_state = "legtrescloak"
-	w_class = WEIGHT_CLASS_SMALL
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 
 /obj/item/clothing/suit/armor/f13/legion
 	name = "legion armor"
@@ -423,119 +406,6 @@
 	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
-//Brotherhood of Steel (PA in f13armor.dm)
-
-
-/obj/item/clothing/suit/f13/scribe
-	name = "brotherhood Scribe's robe"
-	desc = "(III) A red cloth robe worn by the Brotherhood of Steel Scribes."
-	icon_state = "scribe"
-	item_state = "scribe"
-	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/f13/seniorscribe
-	name = "brotherhood Proctor's robe"
-	desc = "(III) A red cloth robe with silver gildings worn by the Brotherhood of Steel Senior Scribes."
-	icon_state = "seniorscribe"
-	item_state = "seniorscribe"
-	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/headscribe
-	name = "brotherhood head scribe robe"
-	desc = "(III) A red cloth robe with gold trimmings, worn eclusively by the Head Scribe of a chapter."
-	icon_state = "headscribe"
-	item_state = "headscribe"
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-
-/obj/item/clothing/suit/toggle/labcoat/fieldscribe
-	name = "fieldscribe suit"
-	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
-	icon_state = "fieldscribe"
-	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-
-/obj/item/clothing/suit/toggle/labcoat/scribecoat
-	name = "fieldscribe coat"
-	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
-	icon_state = "scribecoat"
-	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-
-/obj/item/clothing/suit/f13/elder
-	name = "brotherhood Elder's robe"
-	desc = "(II) A blue cloth robe with some scarlet red parts, traditionally worn by the Brotherhood of Steel Elder."
-	icon_state = "elder"
-	item_state = "elder"
-	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	allowed = list(/obj/item/gun)
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood
-	name = "brotherhood armor"
-	desc = "(V) A set of combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
-	icon_state = "brotherhood_armor_knight"
-	item_state = "brotherhood_armor_knight"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
-	name = "brotherhood star knight armor"
-	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Star Knights. It bears a silver stripe."
-	icon_state = "brotherhood_armor_senior"
-	item_state = "brotherhood_armor_senior"
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood head knight armor"
-	desc = "(VII) A superior combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
-	icon_state = "brotherhood_armor_captain"
-	item_state = "brotherhood_armor_captain"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
-	name = "initiate armor"
-	desc = "(IV) An old military grade pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
-	icon_state = "brotherhood_armor"
-	item_state = "brotherhood_armor"
-	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/mk2
-	name = "reinforced knight armor"
-	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
-	icon_state = "brotherhood_armor_mk2"
-	item_state = "brotherhood_armor_mk2"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout
-	name = "brotherhood scout armor"
-	desc = "(IV) A half-suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a red stripe."
-	icon_state = "brotherhood_scout_knight"
-	item_state = "brotherhood_scout_knight"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
-	name = "brotherhood star knight scout armor"
-	desc = "(V) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
-	icon_state = "brotherhood_scout_senior"
-	item_state = "brotherhood_scout_senior"
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
-	name = "brotherhood head knight scout armor"
-	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
-	icon_state = "brotherhood_scout_captain"
-	item_state = "brotherhood_scout_captain"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
-	name = "brotherhood armor"
-	desc = "(V) A superior combat armor set made by the Brotherhood of Steel, bearing a series of red markings."
-	icon_state = "brotherhood_armor_outcast"
-	item_state = "brotherhood_armor_outcast"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
 //Oasis/Town
 /obj/item/clothing/suit/armor/f13/town
 	name = "town trenchcoat"
@@ -648,13 +518,7 @@
 	item_state = "towntrench_special"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/combatbosrein
-	name = "reinforced brotherhood combat armor"
-	desc = "(VII) A heavily-reinforced combat suit of prewar design, but postwar influence. It's marked in deep black with the insignia of the Brotherhood of Steel."
-	icon_state = "combat_armor_reinforced_bos"
-	item_state = "combat_armor_reinforced_bos"
-	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
-	icon = 'icons/fallout/clothing/suits.dmi'
+
 
 /obj/item/clothing/suit/armor/f13/rangercombat/old
 	name = "worn veteran ranger combat armor"

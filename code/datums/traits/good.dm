@@ -320,6 +320,16 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.update_sight()
 
+//Explosives
+/datum/quirk/demolitions
+	name = "Demolition Expert"
+	desc = "You have deep knowledge of bomb making and their defusal, you can construct a high yield explosives with only basic materials."
+	value = 1
+	mob_trait = TRAIT_DEMOLITION_EXPERT
+	gain_text = "<span class='notice'>You suddenly feel like you could turn a clock into a bomb.</span>"
+	lose_text = "<span class='danger'>You suddenly feel like screwing around with clocks might be a bad idea.</span>"
+	locked = TRUE
+
 //Surgeries
 /datum/quirk/surgerylow
 	name = "Minor Surgery"

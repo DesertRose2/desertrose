@@ -44,12 +44,6 @@
 */
 
 //Fallout 50s
-/obj/item/clothing/suit/f13/apron50shousewife
-	name = "housewife apron"
-	desc = "Cutesy pink checkered apron."
-	icon_state = "apron50s"
-	item_state = "brownjsuit"
-
 /obj/item/clothing/suit/f13/vest
 	name = "tan vest"
 	desc = "(I) It's a vest made of tanned leather."
@@ -105,13 +99,6 @@
 	desc = "(I) Only a monk would find this robe nice and comfortable."
 	icon_state = "robe_liz"
 	item_state = "brownjsuit"
-	armor = list("tier" = 1)
-
-/obj/item/clothing/suit/f13/mantle_liz
-	name = "hide mantle"
-	desc = "(I) A rather grisly selection of cured hides and skin, sewn together to form a ragged mantle."
-	icon_state = "mantle_liz"
-	item_state = "det_suit"
 	armor = list("tier" = 1)
 
 /obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
@@ -186,30 +173,6 @@
 	icon_state = "sexymaid_s"
 	item_state = "sexymaid_s"
 	body_parts_covered = CHEST
-
-/obj/item/clothing/suit/f13/blacksmith_apron
-	name = "blacksmith apron"
-	desc = "A heavy leather apron designed for protecting the user when metalforging."
-	icon_state = "opifex_apron"
-	item_state = "opifex_apron"
-	blood_overlay_type = "armor"
-	allowed = list(/obj/item/crowbar,
-		/obj/item/screwdriver,
-		/obj/item/weldingtool,
-		/obj/item/wirecutters,
-		/obj/item/wrench,
-		/obj/item/multitool,
-		/obj/item/flashlight,
-		/obj/item/stack/cable_coil,
-		/obj/item/t_scanner,
-		/obj/item/analyzer,
-		/obj/item/geiger_counter,
-		/obj/item/extinguisher/mini,
-		/obj/item/radio,
-		/obj/item/clothing/gloves,
-		/obj/item/holosign_creator,
-		/obj/item/assembly/signaler
-	) //robust storage options!! -superballs
 
 //Special Biosuit
 

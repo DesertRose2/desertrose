@@ -730,7 +730,6 @@
 /area/f13/underground/cave)
 "bjK" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/stamp/captain{
 	name = "overseer's rubber stamp";
 	pixel_x = -4;
@@ -1071,6 +1070,7 @@
 /obj/machinery/door/airlock{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "bLi" = (
@@ -1207,6 +1207,17 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
+/area/f13/bunker)
+"bWm" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security{
+	locked = 1
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "bWq" = (
 /obj/structure/necropolis_gate{
@@ -1543,8 +1554,7 @@
 /area/f13/bunker)
 "cEU" = (
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
@@ -1778,6 +1788,7 @@
 /obj/machinery/door/airlock/engineering{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "dfc" = (
@@ -1898,6 +1909,7 @@
 /area/f13/bunker)
 "doK" = (
 /obj/structure/closet/radiation,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -2059,6 +2071,7 @@
 	network = list("Vault")
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plasteel/darkred/side,
 /area/f13/bunker)
 "dDm" = (
@@ -2787,8 +2800,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced/spawner/north{
-	dir = 2;
-	icon_state = "rwindow"
+	dir = 2
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -3017,8 +3029,7 @@
 "fjH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
@@ -3779,6 +3790,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
 "gvJ" = (
@@ -4628,11 +4640,12 @@
 	},
 /area/f13/wasteland)
 "hGk" = (
-/obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/security{
+	locked = 1
 	},
-/turf/open/floor/f13/wood,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "hGS" = (
 /obj/effect/decal/remains/human,
@@ -4696,6 +4709,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "hJD" = (
@@ -4744,7 +4758,6 @@
 /obj/structure/ladder/unbreakable{
 	desc = "An extremely sturdy metal ladder, leading deep into the vault. You feel like you should really prepare yourself before daring to venture down the ladder.";
 	height = 2;
-	icon_state = "manhole_open";
 	id = "overseerboss"
 	},
 /turf/open/floor/carpet/black,
@@ -6022,8 +6035,7 @@
 "jPN" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
@@ -6107,7 +6119,7 @@
 /turf/open/water,
 /area/f13/bunker)
 "jWr" = (
-/obj/item/clothing/neck/cloak/hop,
+/obj/item/clothing/neck/mantle/hop,
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -6214,8 +6226,7 @@
 "keC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "rampdowntop"
@@ -6225,6 +6236,11 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/bunker)
+"kfu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "kgh" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -6459,7 +6475,7 @@
 "kCB" = (
 /obj/item/detective_scanner,
 /obj/structure/closet,
-/obj/item/clothing/neck/cloak/hos,
+/obj/item/clothing/neck/mantle/hos,
 /obj/item/clothing/under/hosparademale,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
 /obj/effect/decal/cleanable/dirt,
@@ -6702,6 +6718,8 @@
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -7392,6 +7410,11 @@
 	},
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"mqP" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "msH" = (
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
@@ -7816,8 +7839,7 @@
 /area/f13/wasteland)
 "mYh" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -8118,7 +8140,7 @@
 /area/f13/bunker)
 "nBk" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
@@ -8183,7 +8205,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "overseerloot"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -8245,8 +8266,6 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/structure/closet/crate/radiation,
-/obj/structure/closet/crate/radiation,
 /turf/open/floor/plasteel/caution{
 	dir = 1
 	},
@@ -8262,14 +8281,14 @@
 	},
 /area/f13/bunker)
 "nLZ" = (
-/obj/machinery/door/airlock/public/glass{
-	locked = 1;
-	name = "Diner"
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/public/glass{
+	locked = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "nMP" = (
@@ -8381,6 +8400,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo10"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
@@ -8959,6 +8979,7 @@
 "oUH" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
 "oWN" = (
@@ -9034,6 +9055,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
@@ -9958,6 +9980,13 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"qsy" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/bunker)
 "qsL" = (
 /obj/machinery/button/door{
 	id = "trap";
@@ -10069,7 +10098,10 @@
 /area/f13/bunker)
 "qCP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	locked = 1
+	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "qCV" = (
@@ -10141,8 +10173,7 @@
 /area/f13/underground/cave)
 "qKk" = (
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -11039,6 +11070,7 @@
 /obj/machinery/door/airlock/command/glass{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -11614,6 +11646,7 @@
 "tmY" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
 "toF" = (
@@ -12062,6 +12095,7 @@
 /obj/machinery/door/airlock/engineering{
 	locked = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "udY" = (
@@ -12365,7 +12399,7 @@
 /area/f13/radiation)
 "uBh" = (
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	id = "overseerboss"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -12767,6 +12801,7 @@
 	locked = 1;
 	req_access_txt = "1"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "vnr" = (
@@ -12842,6 +12877,11 @@
 /obj/structure/flora/junglebush/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
+/area/f13/bunker)
+"vtG" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "vtH" = (
 /obj/structure/spacevine{
@@ -12948,7 +12988,7 @@
 "vBl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	id = "overseerloot"
 	},
 /obj/machinery/light/broken{
@@ -13214,8 +13254,7 @@
 "vYa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
@@ -13567,7 +13606,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/apron/surgical{
+/obj/item/clothing/suit/hooded/surgical{
 	pixel_x = 9;
 	pixel_y = 7
 	},
@@ -14138,7 +14177,7 @@
 /obj/structure/sign/departments/botany,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/structure/window/reinforced/tinted,
-/turf/closed/indestructible/vaultdoor,
+/turf/open/space/basic,
 /area/f13/bunker)
 "xrR" = (
 /obj/structure/table,
@@ -14235,8 +14274,7 @@
 "xxh" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
@@ -14265,6 +14303,7 @@
 	locked = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "xzE" = (
@@ -14349,8 +14388,7 @@
 /area/f13/bunker)
 "xIJ" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -14402,6 +14440,7 @@
 	layer = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -33554,7 +33593,7 @@ xsH
 vvf
 vAC
 fWM
-hWj
+hGk
 nKy
 dOD
 nKy
@@ -33811,7 +33850,7 @@ xsH
 vAC
 vAC
 vAC
-gkv
+bWm
 yjg
 mRj
 yjg
@@ -35110,7 +35149,7 @@ xsH
 xsH
 xsH
 dfc
-dfc
+kfu
 dfc
 mcE
 rEO
@@ -45419,7 +45458,7 @@ bjT
 xzS
 cIT
 gwy
-bjT
+vtG
 xeO
 gwy
 ccI
@@ -69879,7 +69918,7 @@ heT
 heT
 efT
 aUx
-hGk
+oMS
 mYh
 sST
 nNk
@@ -72476,7 +72515,7 @@ aUx
 aUx
 fFm
 gpZ
-qxW
+mqP
 aUx
 aUx
 heT
@@ -76584,7 +76623,7 @@ aWe
 qOp
 iZA
 jHW
-ljl
+qsy
 iZA
 epm
 apt

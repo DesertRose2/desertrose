@@ -815,7 +815,7 @@
 /area/f13/wasteland)
 "jj" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/clothing/head/chefhat,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/f13,
@@ -4955,7 +4955,7 @@
 /area/f13/building)
 "Xe" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
