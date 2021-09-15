@@ -1039,8 +1039,13 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "venator medallion"
-	assignment = "Venator"
 
+/obj/item/card/id/dogtag/legexplorer
+	name = "explorer medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to an explorer."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "explorer medallion"
 
 /obj/item/card/id/dogtag/legpriest
 	name = "priestess medallion"

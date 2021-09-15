@@ -654,6 +654,22 @@
 	icon_state = "roadie_battlecoat"
 	item_state = "roadie_battlecoat"
 
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast
+	name = "\improper Roadie's light battlecoat"
+	desc = "(III) A padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
+	icon_state = "roadie_battlecoat"
+	item_state = "roadie_battlecoat"
+	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	slowdown = -0.10
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
 	desc = "(III) A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future. This one's colors have faded somewhat."

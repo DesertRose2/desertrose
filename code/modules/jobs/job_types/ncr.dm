@@ -305,7 +305,7 @@ Sergeant First Class
 
 /datum/outfit/job/ncr/f13firstsergeant
 	name = "NCR Sergeant First Class"
-	jobtype = /datum/job/ncr/f13firstsergeant
+	jobtype			= /datum/job/ncr/f13firstsergeant
 	id 				= /obj/item/card/id/dogtag/ncrsergeant
 	uniform		 	= /obj/item/clothing/under/f13/ncr
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
