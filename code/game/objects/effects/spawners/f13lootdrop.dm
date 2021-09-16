@@ -65,11 +65,11 @@
 				)
 
 /obj/effect/spawner/bundle/f13/puffer
-	name = "puffer vest, jeans, and grey cloak"
+	name = "puffer vest, jeans, and grey mantle"
 	items = list(
 				/obj/item/clothing/suit/jacket/puffer/vest,
 				/obj/item/clothing/under/pants/jeans,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/that
@@ -87,11 +87,11 @@
 				)
 
 /obj/effect/spawner/bundle/f13/burgundysuit
-	name = "burgundy suit, shoes, and cloak"
+	name = "burgundy suit, shoes, and mantle"
 	items = list(
 				/obj/item/clothing/under/suit_jacket/burgundy,
 				/obj/item/clothing/shoes/laceup,
-				/obj/item/clothing/neck/cloak
+				/obj/item/clothing/neck/mantle/brown
 				)
 
 /obj/effect/spawner/bundle/f13/scratch
@@ -111,7 +111,7 @@
 /obj/effect/spawner/bundle/f13/bartender_purple
 	name = "purple bartender's outfit spawner"
 	items = list(
-				/obj/item/clothing/suit/apron/purple_bartender,
+				/obj/item/clothing/neck/apron/bartender,
 				/obj/item/clothing/under/rank/bartender/purple
 				)
 
@@ -167,7 +167,7 @@
 	items = list(
 				/obj/item/clothing/head/ushanka,
 				/obj/item/clothing/under/soviet,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/geisha
@@ -181,7 +181,7 @@
 	name = "sombrero and poncho"
 	items = list(
 				/obj/item/clothing/head/sombrero,
-				/obj/item/clothing/suit/poncho
+				/obj/item/clothing/neck/mantle/poncho
 				)
 
 /obj/effect/spawner/lootdrop/f13/schoolgirl
@@ -216,7 +216,7 @@
 	name = "vampire outfit spawner"
 	items = list(
 				/obj/item/clothing/under/draculass,
-				/obj/item/clothing/neck/cloak/grey
+				/obj/item/clothing/neck/mantle/gray
 				)
 
 /obj/effect/spawner/bundle/f13/pirate
@@ -488,7 +488,7 @@
 				/obj/item/retractor,
 				/obj/item/cautery,
 				/obj/item/scalpel,
-				/obj/item/clothing/suit/apron/surgical,
+				/obj/item/clothing/suit/hooded/surgical,
 				/obj/item/clothing/gloves/color/latex,
 				/obj/item/clothing/mask/surgical,
 				/obj/item/surgical_drapes,
@@ -1874,6 +1874,7 @@
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 10,
 				/obj/item/book/granter/trait/chemistry = 10,
 				/obj/item/book/granter/trait/trekking = 10,
+				/obj/item/book/granter/trait/demolitions = 5,
 				/obj/item/book/granter/trait/pa_wear = 1,
 				/obj/item/book/granter/crafting_recipe/gunsmith_one = 50,
 				/obj/item/book/granter/crafting_recipe/gunsmith_two = 20,
@@ -2016,4 +2017,47 @@
 			/obj/item/storage/box/ration/ranger_breakfast,
 			/obj/item/storage/box/ration/ranger_lunch,
 			/obj/item/storage/box/ration/ranger_dinner
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosiveslow
+	name = "explosives low spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/reagent_containers/food/drinks/bottle/molotov = 50,
+			/obj/item/grenade/homemade/coffeepotbomb = 20,
+			/obj/item/grenade/homemade/firebomb = 30
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivesmed
+	name = "explosives medium spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/homemade/dynamite = 45,
+			/obj/item/grenade/homemade/pipebomb = 40,
+			/obj/item/grenade/f13/stinger = 30,
+			/obj/item/grenade/smokebomb = 20
+			
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivehigh
+	name = "explosives high spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/f13/frag = 60,
+			/obj/item/grenade/f13/incendinary = 20,
+			/obj/item/grenade/flashbang = 35,
+			/obj/item/grenade/chem_grenade/teargas = 25
+			)
+
+/obj/effect/spawner/lootdrop/f13/explosivevhigh
+	name = "explosives very high spawner"
+	icon_state = "explosive_loot"
+	lootcount = 1
+	loot = list(
+			/obj/item/grenade/f13/plasma = 40,
+			/obj/item/grenade/empgrenade = 60,
+			/obj/item/grenade/plastic/c4 = 10
 			)

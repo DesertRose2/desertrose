@@ -508,7 +508,10 @@
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
+	unique_reskin = list("Old School" = "ncr_patrol",
+						"Alterntive" = "ncr_patrol_alternative"
+						)
+	
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
 	desc = "(VII) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."

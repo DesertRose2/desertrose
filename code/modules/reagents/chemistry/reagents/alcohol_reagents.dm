@@ -432,6 +432,17 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	shot_glass_icon_state = "shotglassclear"
 	pH = 4.5
 	value = REAGENT_VALUE_COMMON
+	
+/datum/reagent/consumable/ethanol/amaretto
+	name = "Amaretto"
+	description = "A gentle drink that carries a sweet aroma."
+	color = "#E17600"
+	boozepwr = 25
+	taste_description = "fruity and nutty sweetness"
+	glass_icon_state = "amarettoglass"
+	glass_name = "glass of amaretto"
+	glass_desc = "A sweet and syrupy looking drink."
+	shot_glass_icon_state = "shotglassgold"
 
 /datum/reagent/consumable/ethanol/gintonic
 	name = "Gin and Tonic"
@@ -2402,6 +2413,28 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_icon_state = "laval_spit"
 	glass_name = "glass of Laval Spit"
 	glass_desc = "Piping hot drink for those who can stomach the heat of lava."
+	
+/datum/reagent/consumable/ethanol/amaretto_alexander
+	name = "Amaretto Alexander"
+	description = "A weaker version of the Alexander, what it lacks in strength it makes up for in flavor."
+	color = "#DBD5AE"
+	boozepwr = 35
+	quality = DRINK_VERYGOOD
+	taste_description = "sweet, creamy cacao"
+	glass_icon_state = "alexanderam"
+	glass_name = "Amaretto Alexander"
+	glass_desc = "A creamy, indulgent delight that is in fact as gentle as it seems."
+	
+/datum/reagent/consumable/ethanol/ginger_amaretto
+	name = "Ginger Amaretto"
+	description = "A delightfully simple cocktail that pleases the senses."
+	boozepwr = 30
+	color = "#EFB42A"
+	quality = DRINK_GOOD
+	taste_description = "sweetness followed by a soft sourness and warmth"
+	glass_icon_state = "gingeramaretto"
+	glass_name = "Ginger Amaretto"
+	glass_desc = "The sprig of rosemary adds a nice aroma to the drink, and isn't just to be pretentious afterall!"
 
 ////////////////////
 //Race-Base-Drinks//

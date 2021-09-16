@@ -123,7 +123,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/dark
 	name = "combat armor"
-	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
+	desc = "(V) An old military grade pre war combat armor. Now in dark, and extra-crispy!"
 	color = "#514E4E"
 
 /obj/item/clothing/suit/armor/f13/combat/Initialize()
@@ -145,7 +145,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
-	desc = "A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
+	desc = "(VI) A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
 	color = "#302E2E"
 
 /obj/item/clothing/suit/armor/f13/combat/swat
@@ -397,8 +397,8 @@
 	item_state = "sierra"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
-	name = "head knight's T-45d Power Armour"
-	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Head Knight and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Head Knight and your safety is his duty."
+	name = "knight captain's T-45d Power Armour"
+	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight Captain and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
 	slowdown = 0.16
@@ -653,6 +653,22 @@
 	desc = "(IV) A heavy padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
 	icon_state = "roadie_battlecoat"
 	item_state = "roadie_battlecoat"
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast
+	name = "\improper Roadie's light battlecoat"
+	desc = "(III) A padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
+	icon_state = "roadie_battlecoat"
+	item_state = "roadie_battlecoat"
+	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	slowdown = -0.10
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"

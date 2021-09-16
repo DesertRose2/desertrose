@@ -3,6 +3,34 @@
 	subcategory = LOADOUT_SUBCATEGORY_NECK_GENERAL
 	slot = SLOT_NECK
 
+/datum/gear/neck/poncho
+	name = "Poncho"
+	path = /obj/item/clothing/neck/mantle/poncho
+
+/datum/gear/neck/ponchored
+	name = "Red poncho"
+	path = /obj/item/clothing/neck/mantle/poncho/red
+
+/datum/gear/neck/houseapron
+	name = "Housewife apron"
+	path = /obj/item/clothing/neck/apron/housewife
+
+/datum/gear/neck/commandercape
+	name = "Commanders cape"
+	path = /obj/item/clothing/neck/mantle/commander
+
+/datum/gear/neck/peltmountain
+	name = "Bear mantle"
+	path = /obj/item/clothing/neck/mantle/peltmountain
+
+/datum/gear/neck/peltfur
+	name = "Fur mantle"
+	path = /obj/item/clothing/neck/mantle/peltfur
+
+/datum/gear/neck/geckomantle
+	name = "Gecko mantle"
+	path = /obj/item/clothing/neck/mantle/gecko
+
 /datum/gear/neck/bluetie
 	name = "Blue tie"
 	subcategory = LOADOUT_SUBCATEGORY_NECK_TIE
@@ -88,9 +116,9 @@
 	path = /obj/item/clothing/ears/headphones
 
 /datum/gear/neck/polycloak
-	name = "Polychromatic Cloak"
-	path = /obj/item/clothing/neck/cloak/polychromic
+	name = "Polychromatic mantle"
+	path = /obj/item/clothing/neck/mantle/polychromic
 
 /datum/gear/neck/altpolycloak
-	name = "Alternate Cloak"
-	path = /obj/item/clothing/neck/cloak/alt/polychromic
+	name = "Alternate mantle"
+	path = /obj/item/clothing/neck/mantle/alt/polychromic

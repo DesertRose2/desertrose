@@ -8,21 +8,21 @@
 	design_ids = list("paicard", "drone_shell")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 
-/datum/techweb_node/mmi
+/*/datum/techweb_node/mmi
 	id = "mmi"
-	starting_node = TRUE
+	starting_node = FALSE
 	display_name = "Man Machine Interface"
 	description = "A slightly Frankensteinian device that allows human brains to interface natively with software APIs."
 	design_ids = list("mmi")
+*/
 
-/*
 /datum/techweb_node/cyborg
 	id = "cyborg"
-	starting_node = TRUE
 	display_name = "Cyborg Construction"
 	description = "Sapient robots with preloaded tool modules and programmable laws."
 	design_ids = list("robocontrol", "sflash", "borg_suit", "borg_head", "borg_chest", "borg_r_arm", "borg_l_arm", "borg_r_leg", "borg_l_leg", "borgupload",
 	"cyborgrecharger", "borg_upgrade_restart", "borg_upgrade_rename")
+	starting_node = TRUE
 
 /datum/techweb_node/adv_robotics
 	id = "adv_robotics"
@@ -31,7 +31,7 @@
 	prereq_ids = list("robotics")
 	design_ids = list("borg_upgrade_diamonddrill", "borg_upgrade_advancedmop", "borg_upgrade_advcutter")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-*/
+
 
 /datum/techweb_node/neural_programming
 	id = "neural_programming"
@@ -48,13 +48,13 @@
 	design_ids = list("mmi_posi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/*
+
 /datum/techweb_node/cyborg_upg_util
 	id = "cyborg_upg_util"
 	display_name = "Cyborg Upgrades: Utility"
 	description = "Utility upgrades for cyborgs."
 	prereq_ids = list("engineering", "robotics")
-	design_ids = list("borg_upgrade_lavaproof", "borg_upgrade_thrusters", "borg_upgrade_selfrepair", "borg_upgrade_expand", "borg_upgrade_rped")
+	design_ids = list(/*"borg_upgrade_lavaproof", "borg_upgrade_thrusters", */"borg_upgrade_selfrepair", "borg_upgrade_expand", "borg_upgrade_rped")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 
 /datum/techweb_node/cyborg_upg_med
@@ -72,7 +72,7 @@
 	prereq_ids = list("adv_robotics", "adv_engi" , "weaponry")
 	design_ids = list("borg_upgrade_vtec", "borg_upgrade_disablercooler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
+/*
 /datum/techweb_node/ai
 	id = "ai"
 	display_name = "Artificial Intelligence"

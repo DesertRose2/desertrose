@@ -413,6 +413,12 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
+/obj/item/card/id/silver/followers
+	name = "spare volunteer ID"
+	desc = "A silver ID card that gives access to the Followers clinic"
+	access = list(ACCESS_FOLLOWER)
+	assignment = "Followers Volunteer"
+
 /obj/item/card/id/silver/reaper
 	name = "Thirteen's ID Card (Reaper)"
 	access = list(ACCESS_MAINT_TUNNELS)
@@ -1033,8 +1039,13 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "venator medallion"
-	assignment = "Venator"
 
+/obj/item/card/id/dogtag/legexplorer
+	name = "explorer medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to an explorer."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "explorer medallion"
 
 /obj/item/card/id/dogtag/legpriest
 	name = "priestess medallion"

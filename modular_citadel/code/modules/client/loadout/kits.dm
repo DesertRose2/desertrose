@@ -132,7 +132,7 @@
 	new /obj/item/clothing/under/f13/ncr/scout(src)
 	new /obj/item/clothing/gloves/patrol/burned(src)
 	new /obj/item/clothing/glasses/regular/protected(src)
-	new /obj/item/clothing/neck/cloak/ranger(src)
+	new /obj/item/clothing/neck/mantle/ranger(src)
 	new /obj/item/modkit/kainatarmor(src)
 
 //Bird Blackhawk - octus

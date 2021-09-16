@@ -1006,12 +1006,13 @@ Venator
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
 	name = "Legion Venator"
-	jobtype 	= /datum/job/CaesarsLegion/Legionnaire/f13explorer
+	jobtype 	= 	/datum/job/CaesarsLegion/Legionnaire/f13venator
 	id 			= 	/obj/item/card/id/dogtag/legvenator
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/venator
 	head 		= 	/obj/item/clothing/head/helmet/f13/legion/venator
@@ -1048,10 +1049,23 @@ Explorer
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	name = "Legion Explorer"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
-	id = 		/obj/item/card/id/dogtag/legprime
-	ears	=	/obj/item/radio/headset/headset_legion
-	mask		= /obj/item/clothing/mask/bandana/legprime
+	jobtype 	= 	/datum/job/CaesarsLegion/Legionnaire/f13explorer
+	id			= 	/obj/item/card/id/dogtag/legexplorer
+	head		= 	/obj/item/clothing/head/helmet/f13/legion/prime/explorer
+	glasses		= 	/obj/item/clothing/glasses/legiongoggles
+	mask		= 	/obj/item/clothing/mask/bandana/legprime
+	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/prime/explorer
+	neck 		= 	/obj/item/storage/belt/holster
+	ears		=	/obj/item/radio/headset/headset_legion
+	l_pocket	=	/obj/item/flashlight/lantern
+	r_pocket = 		/obj/item/binoculars
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/storage/bag/money/small/legenlisted=1,
+		/obj/item/restraints/handcuffs=2,
+		/obj/item/claymore/machete/reinforced=1
+		)
+
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1063,43 +1077,20 @@ Explorer
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/loadout/excursor
-	name = "Excursor"
-	shoes =			/obj/item/clothing/shoes/roman
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime/explorer
-	head = 			/obj/item/clothing/head/helmet/f13/legion/prime/explorer
-	neck = 			/obj/item/storage/belt/holster
-	glasses = 		/obj/item/clothing/glasses/legiongoggles
-	ears	=		/obj/item/radio/headset/headset_legion
-	r_pocket = 		/obj/item/binoculars
-	l_pocket = 		/obj/item/attachments/scope
+	name = "Excursor"	
 	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=2,
-		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legenlisted=1,
-		/obj/item/restraints/handcuffs=2)
+		/obj/item/attachments/scope=1)
 
 /datum/outfit/loadout/sapper
 	name = "Sonspicio Munitor"
-	shoes =			/obj/item/clothing/shoes/roman
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime/explorer
-	head = 			/obj/item/clothing/head/helmet/f13/legion/prime/explorer
 	gloves = 		/obj/item/clothing/gloves/f13/blacksmith
-	neck = 			/obj/item/storage/belt/holster
 	belt = 			/obj/item/storage/belt/utility/full/engi
-	glasses = 		/obj/item/clothing/glasses/legiongoggles
-	ears	=		/obj/item/radio/headset/headset_legion
 	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=1,
-		/obj/item/grenade/plastic=1,
-		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/bag/money/small/legenlisted=1,
-		/obj/item/restraints/handcuffs=1)
+		/obj/item/grenade/plastic=1)
 
 /*
 Auxilia
@@ -1149,7 +1140,7 @@ Auxilia
 	head = /obj/item/clothing/head/f13/legion/auxilia
 	glasses = /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/utility/full/engi
-	suit = /obj/item/clothing/suit/armor/f13/opifex
+	neck = /obj/item/clothing/neck/apron/labor/forge
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_hand = /obj/item/clothing/under/f13/legauxilia
 	backpack_contents = list(
@@ -1162,7 +1153,7 @@ Auxilia
 /datum/outfit/loadout/auxassist
 	name = "Arcarius (Treasurer)"
 	head = /obj/item/clothing/head/f13/legion/auxilia
-	neck = /obj/item/clothing/neck/cloak/treasurer
+	neck = /obj/item/clothing/neck/mantle/treasurer
 	r_hand = /obj/item/clothing/under/f13/legauxilia
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
@@ -1175,7 +1166,7 @@ Auxilia
 /datum/outfit/loadout/auxacolyte
 	name = "Sacerdos (Acolyte)"
 	head = /obj/item/clothing/head/f13/legion/auxilia
-	suit = /obj/item/clothing/suit/armor/f13/medicus
+	neck = /obj/item/clothing/neck/apron/medicus
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	backpack_contents = list(
 		/obj/item/storage/firstaid/ancient=1,
@@ -1229,7 +1220,7 @@ Camp Follower
 /datum/outfit/loadout/campfollowermatron
 	name = "Mater (Matron)"
 	head = /obj/item/clothing/head/f13/legion/servant
-	suit = /obj/item/clothing/suit/apron/chef
+	neck = /obj/item/clothing/neck/apron/chef
 	backpack_contents = list(
 		/obj/item/kitchen/knife/butcher=1,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus=1,
@@ -1246,7 +1237,7 @@ Camp Follower
 /datum/outfit/loadout/campfollowerhealer
 	name = "Medicus (Healer)"
 	head = /obj/item/clothing/head/f13/legion/servant
-	suit = /obj/item/clothing/suit/armor/f13/medicus
+	neck = /obj/item/clothing/neck/apron/medicus
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
@@ -1375,7 +1366,7 @@ Off-Duty Legionary
 
 /datum/outfit/loadout/offexpven
 	name =	"Explorer Corps"
-	neck =	/obj/item/clothing/neck/cloak/grey
+	neck =	/obj/item/clothing/neck/mantle/gray
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,

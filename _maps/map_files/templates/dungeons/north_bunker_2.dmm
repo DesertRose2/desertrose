@@ -94,6 +94,7 @@
 "cq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/weather/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/grass,
 /area/f13/bunker)
 "cv" = (
@@ -769,6 +770,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"qF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "qJ" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/grass,
@@ -912,8 +918,7 @@
 /area/f13/bunker)
 "tD" = (
 /obj/structure/toilet/secret/high_loot,
-/obj/item/grenade/flashbang,
-/obj/item/grenade/frag,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -2814,7 +2819,7 @@ Rl
 Rl
 xG
 Qe
-go
+qF
 xS
 nf
 Zs

@@ -100,8 +100,10 @@
 #define F13HEADSCRIBE	(1<<7)
 #define F13SENIORSCRIBE (1<<8)
 #define F13SCRIBE		(1<<9)
-#define F13INITIATE		(1<<10)
-#define F13OFFDUTYBOS	(1<<11)
+#define F13SENIORLANCER	(1<<10)
+#define F13LANCER		(1<<11)
+#define F13INITIATE		(1<<12)
+#define F13OFFDUTYBOS	(1<<13)
 
 #define DEN				(1<<6)
 

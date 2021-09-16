@@ -429,7 +429,8 @@
 						"arkadec",
 						"novaskelly",
 						"alasania",
-						"jackmcintyre")
+						"jackmcintyre",
+						"deathlysoul")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -450,7 +451,8 @@
 						"frekingyou",
 						"yecrowbarman",
 						"jackmcintyre",
-						"totallyinnocent")
+						"totallyinnocent",
+						"cythisia")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -463,7 +465,8 @@
 						"thegreatcoward",
 						"themojavewanderer",
 						"muhsollini",
-						"rangerbust")
+						"rangerbust",
+						"kayzach")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -562,7 +565,9 @@
 						"jackmcintyre",
 						"frekingyou",
 						"yecrowbarman",
-						"totallyinnocent")
+						"totallyinnocent",
+						"deathlysoul",
+						"kayzach")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
@@ -606,4 +611,4 @@
 						"usotsukihime",
 						"karlov",
 						"hallow96",
-						"SM45HB0T")
+						"sm45hb0t")

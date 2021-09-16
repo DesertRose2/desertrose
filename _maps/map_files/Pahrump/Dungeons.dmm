@@ -1909,6 +1909,7 @@
 /area/f13/bunker)
 "doK" = (
 /obj/structure/closet/radiation,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -2070,6 +2071,7 @@
 	network = list("Vault")
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plasteel/darkred/side,
 /area/f13/bunker)
 "dDm" = (
@@ -3788,6 +3790,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
 "gvJ" = (
@@ -4113,6 +4116,13 @@
 /obj/machinery/vending/wardrobe/chem_wardrobe,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/bunker)
+"gTx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "gTD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4508,7 +4518,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -4699,6 +4709,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "hJD" = (
@@ -6108,7 +6119,7 @@
 /turf/open/water,
 /area/f13/bunker)
 "jWr" = (
-/obj/item/clothing/neck/cloak/hop,
+/obj/item/clothing/neck/mantle/hop,
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -6225,6 +6236,11 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/bunker)
+"kfu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "kgh" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -6459,7 +6475,7 @@
 "kCB" = (
 /obj/item/detective_scanner,
 /obj/structure/closet,
-/obj/item/clothing/neck/cloak/hos,
+/obj/item/clothing/neck/mantle/hos,
 /obj/item/clothing/under/hosparademale,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
 /obj/effect/decal/cleanable/dirt,
@@ -6651,10 +6667,10 @@
 /area/f13/tunnel)
 "kVk" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
+/obj/structure/lattice,
+/obj/machinery/light/broken{
 	dir = 1
 	},
-/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "kWq" = (
@@ -6702,6 +6718,8 @@
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -7270,7 +7288,7 @@
 "mfQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
-/obj/machinery/light,
+/obj/machinery/light/broken,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "mfU" = (
@@ -7392,6 +7410,11 @@
 	},
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"mqP" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "msH" = (
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
@@ -8117,7 +8140,7 @@
 /area/f13/bunker)
 "nBk" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /obj/item/kitchen/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
@@ -8377,6 +8400,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo10"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
@@ -8955,6 +8979,7 @@
 "oUH" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
 "oWN" = (
@@ -9030,6 +9055,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
@@ -9954,6 +9980,13 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"qsy" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/explosivehigh,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/bunker)
 "qsL" = (
 /obj/machinery/button/door{
 	id = "trap";
@@ -10408,10 +10441,10 @@
 "rjq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
-/obj/machinery/light{
+/obj/structure/lattice,
+/obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "rjv" = (
@@ -11519,7 +11552,7 @@
 "sYA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/five_tires,
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -11613,6 +11646,7 @@
 "tmY" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivesmed,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
 "toF" = (
@@ -12844,6 +12878,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"vtG" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/explosiveslow,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "vtH" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -12952,7 +12991,7 @@
 	height = 1;
 	id = "overseerloot"
 	},
-/obj/machinery/light{
+/obj/machinery/light/broken{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -13567,7 +13606,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/apron/surgical{
+/obj/item/clothing/suit/hooded/surgical{
 	pixel_x = 9;
 	pixel_y = 7
 	},
@@ -14401,6 +14440,7 @@
 	layer = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/explosivevhigh,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -35109,7 +35149,7 @@ xsH
 xsH
 xsH
 dfc
-dfc
+kfu
 dfc
 mcE
 rEO
@@ -36106,7 +36146,7 @@ vAC
 sxn
 vAC
 vAC
-jmv
+gTx
 aIu
 rEO
 heT
@@ -38683,7 +38723,7 @@ nKy
 nKy
 rEO
 rEO
-rEO
+ryc
 gNn
 sDI
 pPT
@@ -39445,7 +39485,7 @@ vAC
 vAC
 piv
 vAC
-jmv
+gTx
 vAC
 vAC
 vAC
@@ -40463,10 +40503,10 @@ heT
 heT
 heT
 rEO
-rEO
+ryc
 swN
-rEO
-rEO
+ryc
+ryc
 ryc
 hBO
 kEu
@@ -40723,7 +40763,7 @@ rEO
 iVn
 utf
 xDn
-rEO
+ryc
 hpq
 sxn
 vBQ
@@ -41237,7 +41277,7 @@ heT
 bjy
 vwg
 oBU
-rEO
+ryc
 hcG
 vAC
 vAC
@@ -45418,7 +45458,7 @@ bjT
 xzS
 cIT
 gwy
-bjT
+vtG
 xeO
 gwy
 ccI
@@ -72475,7 +72515,7 @@ aUx
 aUx
 fFm
 gpZ
-qxW
+mqP
 aUx
 aUx
 heT
@@ -76583,7 +76623,7 @@ aWe
 qOp
 iZA
 jHW
-ljl
+qsy
 iZA
 epm
 apt
