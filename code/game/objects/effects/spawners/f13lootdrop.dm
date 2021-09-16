@@ -853,7 +853,7 @@
 	name = "AK-112 assault rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/ak112,
-				mag_type = /obj/item/ammo_box/magazine/c5mm
+				/mag_type = /obj/item/ammo_box/magazine/c5mm
 				)
 
 /obj/effect/spawner/bundle/f13/police_pistol
