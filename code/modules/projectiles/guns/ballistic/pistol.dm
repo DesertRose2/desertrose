@@ -263,7 +263,7 @@
 /obj/item/gun/ballistic/automatic/pistol/m1911/no_mag
 	spawnwithmagazine = FALSE
 
-//Mk. 23								Keywords: 45 ACP, Semi-Auto, 'Long barrel' (lasersight), 12 round magazine
+//Mk. 23						Keywords: 45 ACP, Semi-Auto, 'Long barrel' (lasersight), 12 round magazine
 /obj/item/gun/ballistic/automatic/pistol/mk23
 	name = "MK23"
 	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs."
@@ -279,7 +279,7 @@
 	suppressor_x_offset = 28
 	suppressor_y_offset = 20
 
-//12.7mm Pistol		Keywords: 12.7mm, Semi-Auto, 7 round mags
+//12.7mm Pistol					Keywords: 12.7mm, Semi-Auto, 7 round mags
 /obj/item/gun/ballistic/automatic/pistol/pistol127
 	name = "12.7mm pistol"
 	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting."
@@ -293,7 +293,7 @@
 	suppressor_y_offset = 19
 	suppressor_state = "n99_suppressor"
 
-//12.7mm Pistol		Keywords: 12.7mm, Semi-Auto, 7 round mags, Small pocket edition(tm)
+//12.7mm Compact Pistol			Keywords: 12.7mm, Semi-Auto, 7 round mags, Small pocket edition(tm)
 /obj/item/gun/ballistic/automatic/pistol/pistol127/compact
 	name = "Compact 12.7mm pistol"
 	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting. This one is a compact model for concealed carry."

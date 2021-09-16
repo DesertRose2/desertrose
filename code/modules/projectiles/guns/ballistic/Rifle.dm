@@ -441,7 +441,7 @@
 	icon_state = "amr"
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	extra_damage = 10
+	extra_damage = 20
 	fire_delay = 10
 	recoil = 1
 	spread = 0
