@@ -1111,11 +1111,10 @@
 				/obj/item/gun/ballistic/automatic/bastard
 	)
 
-/obj/effect/spanwer/bundle/f13/assault_carbine
+/obj/effect/spawner/bundle/f13/assault_carbine
 	name = "assault carbine spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/assault_carbine,
-				/obj/item/ammo_box/magazine/m556/rifle
+				/obj/item/gun/ballistic/automatic/assault_carbine
 	)
 
 /obj/effect/spawner/bundle/f13/garand
@@ -1124,12 +1123,14 @@
 				/obj/item/gun/ballistic/automatic/m1garand,
 				/obj/item/ammo_box/magazine/garand308
 	)
+
 /obj/effect/spawner/bundle/f13/mp5
 	name = "mp5 and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/mp5,
 				/obj/item/ammo_box/magazine/uzim9mm
 	)
+
 /obj/effect/spawner/bundle/f13/citykiller
 	name = "citykiller and ammo spawner"
 	items = list(
@@ -1339,7 +1340,7 @@
 				/obj/effect/spawner/bundle/f13/garand,
 				/obj/effect/spawner/bundle/f13/hunting,
 				/obj/effect/spawner/bundle/f13/mp5,
-				/obj/effect/spanwer/bundle/f13/assault_carbine,
+				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/citykiller,
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/wattz2k,
@@ -2078,7 +2079,7 @@
 			/obj/item/grenade/homemade/pipebomb = 40,
 			/obj/item/grenade/f13/stinger = 30,
 			/obj/item/grenade/smokebomb = 20
-			
+
 			)
 
 /obj/effect/spawner/lootdrop/f13/explosivehigh

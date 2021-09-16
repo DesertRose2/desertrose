@@ -483,6 +483,20 @@
 	build_path = /obj/item/ammo_box/a762box/ap
 	category = list("initial", "Intermediate Ammo")
 
+/datum/design/ammolathe/c5mm
+	name = "5mm ammo box"
+	id = "c5mm"
+	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 2000)
+	build_path = /obj/item/ammo_box/c5mm
+	category = list("initial", "Intermediate Ammo")
+
+/datum/design/ammolathe/c5mmag
+	name = "empty AK gun magazine (5mm)"
+	id = "c5mm"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/c5mm/empty
+	category = list("initial", "Intermediate Magazines")
+
 /*/datum/design/ammolathe/a45op
 	name = ".45 ACP +P ammo box"
 	id = "a45op"
@@ -577,3 +591,10 @@
 	materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3500)
 	build_path = /obj/item/ammo_box/a556/match
 	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/c5mmag/extended
+	name = "empty extended AK gun magazine (5mm)"
+	id = "c5mm"
+	materials = list(/datum/material/iron = 8000)
+	build_path = /obj/item/ammo_box/magazine/c5mm/extended/empty
+	category = list("initial", "Advanced Magazines")

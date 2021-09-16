@@ -932,6 +932,7 @@
 	item_state = "assault_carbine"
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	burst_size = 2
 	fire_delay = 4.5
 	burst_shot_delay = 2.5
 	spread = 8
@@ -976,8 +977,19 @@
 	icon_state = "ak112"
 	item_state = "fnfal"
 	icon = 'icons/obj/guns/ballistic/ak112.dmi'
-	mag_type = /obj/item/ammo_box/magazine/
-
+	mag_type = /obj/item/ammo_box/magazine/c5mm
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	force = 20
+	burst_size = 5
+	fire_delay = 4
+	burst_shot_delay = 2
+	spread = 10
+	can_attachments = TRUE
+	can_suppress = FALSE
+	can_scope = FALSE
+	can_bayonet = FALSE
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
 //M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
 /obj/item/gun/ballistic/automatic/m14
@@ -985,7 +997,7 @@
 	desc = "A prestine M-14 battle rifle, likely from a National Guard reserve armory. This rifle struggled to find its niche, outshadowed by more reliable rifles in 5.56 and a high recoil for a 7.62. Its saving grace is its burst fire capability."
 	icon_state = "m14"
 	item_state = "308"
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY

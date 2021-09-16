@@ -815,3 +815,5 @@
 	max_ammo = 6
 	custom_materials = list(MAT_METAL = 1000)
 	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/ammo_box/c5mm
