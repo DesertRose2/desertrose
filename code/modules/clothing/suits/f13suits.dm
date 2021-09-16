@@ -353,24 +353,6 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/suit/hooded/cloak/hhunter
-	name = "Razorclaw armour"
-	icon_state = "rcarmour"
-	desc = "(VI) A suit of armour fashioned out of the remains of a legendary deathclaw."
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/hhunter
-	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-
-/obj/item/clothing/head/hooded/cloakhood/hhunter
-	name = "Razorclaw helm"
-	icon_state = "rchelmet"
-	desc = "(VI) The skull of a legendary deathclaw."
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	heat_protection = HEAD
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-
 /obj/item/clothing/suit/f13/jamrock
 	name = "disco-ass blazer"
 	desc = "(I) Looks like someone skinned this blazer off some long extinct disco-animal. It has an enigmatic white rectangle on the back and the right sleeve."

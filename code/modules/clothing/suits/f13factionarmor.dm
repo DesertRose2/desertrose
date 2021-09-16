@@ -462,6 +462,31 @@
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 
+/obj/item/clothing/suit/hooded/cloak/hhunter
+	name = "Razorclaw armour"
+	icon_state = "rcarmour"
+	desc = "(VI) A suit of armour fashioned out of the remains of a legendary deathclaw."
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/hhunter
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/head/hooded/cloakhood/hhunter
+	name = "Razorclaw helm"
+	icon_state = "rchelmet"
+	desc = "(VI) The skull of a legendary deathclaw."
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	heat_protection = HEAD
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
+/obj/item/clothing/suit/armor/f13/nightstalkerheavy
+	name = "Nightstalker Heavy Armor"
+	icon_state = "nightstalker_tribal_armor"
+	desc = "(VI) A heavily repurposed set of combat armor now intermixed with both scavenged metal-lined pauldrons and stripped Nightstalker skin draped beneath. This armor smells slightly like rainwater."
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+
 //Followers
 
 //Vault
