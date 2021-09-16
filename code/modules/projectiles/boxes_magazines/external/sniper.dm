@@ -5,7 +5,7 @@
 	max_ammo = 8
 	ammo_type = /obj/item/ammo_casing/a50MG
 	caliber = "a50MG"
-	multiple_sprites = 1
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/amr/empty
 	start_empty = TRUE
