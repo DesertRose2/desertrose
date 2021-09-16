@@ -184,6 +184,7 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = TRUE
+	extra_damage = 2
 	fire_delay = 2
 	can_suppress = TRUE
 	can_automatic = TRUE
@@ -198,6 +199,7 @@
 	icon_state = "executive"
 	can_suppress = TRUE
 	burst_size = 2
+	extra_damage = 2
 	can_automatic = FALSE
 	extra_penetration = 0.2 //2x 35 damage, 10 AP- hits like a 2rd burst 5.56, but more accurate
 	semi_auto = FALSE

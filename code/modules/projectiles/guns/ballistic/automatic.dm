@@ -507,7 +507,7 @@
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
 	fire_delay = 3.5
-	extra_damage = 2
+	extra_damage = 4
 	automatic_burst_overlay = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
@@ -532,7 +532,7 @@
 	icon_state = "ncr-m1carbine"
 	can_automatic = FALSE
 	untinkerable = TRUE
-	extra_damage = 4
+	extra_damage = 6
 
 //Compact M1A1 Carbine		Keywords: 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', Folding stock / Compact.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
@@ -973,7 +973,7 @@
 //AK-112			Keywords: 5mm, Automatic, 24/100 mags
 /obj/item/gun/ballistic/automatic/ak112
 	name = "AK-112"
-	desc = ""
+	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
 	icon_state = "ak112"
 	item_state = "fnfal"
 	icon = 'icons/obj/guns/ballistic/ak112.dmi'

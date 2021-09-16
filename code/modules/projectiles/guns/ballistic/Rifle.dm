@@ -374,6 +374,7 @@
 	spread = 0
 	extra_damage = 8
 	can_bayonet = FALSE
+	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 12
@@ -394,6 +395,7 @@
 	fire_delay = 6
 	spread = 1
 	can_unsuppress = FALSE
+	can_scope = TRUE
 	suppressed = 1
 	can_scope = TRUE
 	scope_state = "scope_medium"

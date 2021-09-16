@@ -849,6 +849,13 @@
 				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
+/obj/effect/spawner/bundle/f13/ak112
+	name = "AK-112 assault rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/ak112,
+				mag_type = /obj/item/ammo_box/magazine/c5mm
+				)
+
 /obj/effect/spawner/bundle/f13/police_pistol
 	name = "police revolver and ammo spawner"
 	items = list(
@@ -1327,6 +1334,7 @@
 	loot = list(/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/r84,
+				/obj/effect/spawner/bundle/f13/ak112,
 				/obj/effect/spawner/bundle/f13/bastard,
 				/obj/effect/spawner/bundle/f13/assault_rifle,
 				/obj/effect/spawner/bundle/f13/aer9,
