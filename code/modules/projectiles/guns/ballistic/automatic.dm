@@ -575,6 +575,7 @@
 /obj/item/gun/ballistic/automatic/service
 	name = "Service Rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	icon = 'icons/obj/guns/ballistic/service_rifle.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
@@ -776,6 +777,7 @@
 /obj/item/gun/ballistic/automatic/service/r82
 	name = "R82 Heavy Service Rifle"
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
+	icon = 'icons/obj/guns/ballistic/r82.dmi'
 	fire_delay = 5
 	extra_damage = 1
 	spread = 4
@@ -967,6 +969,16 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
+//AK-112			Keywords: 5mm, Automatic, 24/100 mags
+/obj/item/gun/ballistic/automatic/ak112
+	name = "AK-112"
+	desc = ""
+	icon_state = "ak112"
+	item_state = "fnfal"
+	icon = 'icons/obj/guns/ballistic/ak112.dmi'
+	mag_type = /obj/item/ammo_box/magazine/
+
+
 //M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
 /obj/item/gun/ballistic/automatic/m14
 	name = "M14 battle rifle"
@@ -1106,6 +1118,7 @@
 /obj/item/gun/ballistic/automatic/lsw
 	name = "Light Support Weapon"
 	desc = "This squad-level support weapon has a bullpup design. The bullpup design makes it difficult to use while lying down. Because of this it was remanded to National Guard units. It, however, earned a reputation as a reliable weapon that packs a lot of punch for its size."
+	icon = 'icons/obj/guns/ballistic/lsw.dmi'
 	icon_state = "lsw"
 	item_state = "lsw"
 	slowdown = 1
