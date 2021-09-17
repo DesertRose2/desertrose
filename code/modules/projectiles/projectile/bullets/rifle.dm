@@ -143,7 +143,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 //////////////////////
 // 4.73 MM CASELESS //
-//////////////////////			-Small rifle bullet
+//////////////////////				-Small rifle bullet
 
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
@@ -155,7 +155,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 //////////////////////////
 // 5 MM minigun special //
-//////////////////////////
+//////////////////////////			-Small round, big AP, low payload.
 
 /obj/item/projectile/bullet/c5mm
 	damage = 20
