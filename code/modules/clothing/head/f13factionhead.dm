@@ -547,9 +547,9 @@
 	item_state = "chiefgreen"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	
-/obj/item/clothing/head/helmet/f13/nightstalkerheavy
+/obj/item/clothing/head/helmet/f13/nightstalkerheavyhelmet
 	name = "Nightstalker Heavy Helmet"
-	icon_state = "nightstalker_tribal_armor"
+	icon_state = "nightstalker_tribal_helmet"
 	desc = "(VI) A heavily repurposed set of combat armor now intermixed with both scavenged metal-lined pauldrons and stripped Nightstalker skin draped beneath. This helmet seems to have a bit of a plume of feathers on the armor."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
