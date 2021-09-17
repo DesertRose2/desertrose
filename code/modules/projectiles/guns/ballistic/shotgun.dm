@@ -320,7 +320,7 @@
 	knife_x_offset = 23
 	knife_y_offset = 23
 
-//Neostead 2000							Keywords: BOS, Shotgun, Semi-auto, 12 rounds internal
+//Neostead 2000							Keywords: Shotgun, Semi-auto, 12 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
 	name = "neostead 2000"
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."

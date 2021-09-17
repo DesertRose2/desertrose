@@ -497,7 +497,7 @@
 
 //M1 Carbine			Keywords: 10mm, Semi-auto, 12/24 rounds, 'Long barrel'. Notes: Can be made semi-auto. I guess it's realistic in a way due to prototype M1 Carbine models irl.
 /obj/item/gun/ballistic/automatic/m1carbine
-	name = "M1 Carbine"
+	name = "M1 carbine"
 	desc = "The M1 Carbine is a renowned carbine that has been in service since WW2. Recently retired, these guns were transferred to National Guard Armouries and rechambered to 10mm."
 	icon_state = "m1carbine"
 	item_state = "rifle"
@@ -527,7 +527,7 @@
 
 //M1/NCR Carbine			Keywords: NCR, 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', No Autosear (!)
 /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	name = "M1/N Carbine"
+	name = "M1/N carbine"
 	desc = "The M1 Carbine is a renowned carbine that's been in service since WW2. This varient seems to sport a few modernizations alongside an NCR design in brahmin leather on its stock."
 	icon_state = "ncr-m1carbine"
 	can_automatic = FALSE
@@ -536,7 +536,7 @@
 
 //Compact M1A1 Carbine		Keywords: 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', Folding stock / Compact.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
-	name = "M1A1 Carbine"
+	name = "M1A1 carbine"
 	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."
 	icon_state = "m1a1carbine"
 	var/stock = FALSE
@@ -573,7 +573,7 @@
 
 //Service Rifle 		Keywords: 5.56, Semi-Automatic, 20 (10-50) round mags, No Autosear (!)
 /obj/item/gun/ballistic/automatic/service
-	name = "Service Rifle"
+	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
 	icon = 'icons/obj/guns/ballistic/service_rifle.dmi'
 	icon_state = "service_rifle"
@@ -589,33 +589,65 @@
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
 	can_attachments = TRUE
-	bayonet_state = "lasmusket"
+	bayonet_state = "bayonet"
 	can_bayonet = TRUE
-	knife_x_offset = 22
-	knife_y_offset = 21
+	knife_x_offset = 36
+	knife_y_offset = 17
 	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 28
-	suppressor_y_offset = 30
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 38
+	suppressor_y_offset = 18
 
-//Scout Carbine		Keywords: 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
+//Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
-	name = "Scout Carbine"
+	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
 	can_scope = TRUE
-	scope_state = "smallrifle_scope"
-	scope_x_offset = 4
-	scope_y_offset = 15
+	can_bayonet = FALSE
+	scope_state = "revolver_scope"
+	scope_x_offset = 15
+	scope_y_offset = 24
 	extra_damage = 2
 	fire_delay = 3.5
 	spread = 1
-	suppressor_x_offset = 26
-	suppressor_y_offset = 28
+	suppressor_x_offset = 38
+	suppressor_y_offset = 18
+
+
+//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
+/obj/item/gun/ballistic/automatic/service/maxson
+	name = "'Maxson' carbine"
+	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
+	icon_state = "maxson"
+	fire_delay = 3.5
+	spread = 2
+	can_attachments = FALSE
+	bayonet_state = "bayonet"
+	can_bayonet = TRUE
+	knife_x_offset = 34
+	knife_y_offset = 17
+	can_suppress = TRUE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 37
+	suppressor_y_offset = 18
+
+//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 20 (10-50) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
+/obj/item/gun/ballistic/automatic/service/maxson/c5mm
+	name = "'Maxson' assault carbine"
+	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
+	icon_state = "maxson5"
+	mag_type = /obj/item/ammo_box/magazine/c5mm
+	burst_size = 2
+	burst_shot_delay = 1.3
+	fire_delay = 4
+	spread = 10
+	extra_damage = 0
+
 
 //Marksman Carbine		Keywords: 5.56,Semi-Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/marksman
-	name = "Marksman Carbine"
+	name = "marksman carbine"
 	desc = "A marksman carbine built off the AR platform chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This particular model is a civilian version and is semi-auto only."
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
@@ -645,7 +677,7 @@
 
 //Colt Rangemaster		Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
 /obj/item/gun/ballistic/automatic/rangemaster
-	name = "Colt Rangemaster"
+	name = "colt rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
 	icon_state = "rangemaster"
 	item_state = "308"
@@ -676,7 +708,7 @@
 
 //M1 Garand			Keywords: .308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear
 /obj/item/gun/ballistic/automatic/m1garand
-	name = "Battle Rifle"
+	name = "battle rifle"
 	desc = "The WWII American Classic, the M1 Garand. Still has that satisfiying ping. Don't stick your thumb in it.."
 	icon_state = "m1garand"
 	item_state = "rifle"
@@ -751,7 +783,7 @@
 
 //DKS 501 sniper rifle		Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed.
 /obj/item/gun/ballistic/automatic/marksman/sniper
-	name = "Sniper Rifle"
+	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -775,7 +807,7 @@
 
 //R82 Heavy Rifle		Keywords: 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
 /obj/item/gun/ballistic/automatic/service/r82
-	name = "R82 Heavy Service Rifle"
+	name = "R82 heavy service rifle"
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
 	icon = 'icons/obj/guns/ballistic/r82.dmi'
 	fire_delay = 5
@@ -814,7 +846,7 @@
 
 //R91 Assault Rifle		Keywords: 5.56, Automatic, 20 (10-50) round mags.
 /obj/item/gun/ballistic/automatic/assault_rifle
-	name = "R91 Assault Rifle"
+	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
 	icon_state = "assault_rifle"
 	item_state = "fnfal"
@@ -881,7 +913,7 @@
 
 //Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
-	name = "Type 93 Assault Rifle"
+	name = "Type 93 assault rifle"
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
@@ -926,7 +958,7 @@
 
 //Assault Carbine	Keywords: 5.56, Automatic, 20 (10-50) round mags.
 /obj/item/gun/ballistic/automatic/assault_carbine
-	name = "Assault carbine"
+	name = "assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
 	icon_state = "assault_carbine"
 	item_state = "assault_carbine"
@@ -981,7 +1013,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	force = 20
-	burst_size = 5
+	burst_size = 4
 	fire_delay = 4
 	burst_shot_delay = 2
 	spread = 10
@@ -1128,7 +1160,7 @@
 
 //LSW Squad Support Weapon		Keywords: 5.56,20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/lsw
-	name = "Light Support Weapon"
+	name = "light support weapon"
 	desc = "This squad-level support weapon has a bullpup design. The bullpup design makes it difficult to use while lying down. Because of this it was remanded to National Guard units. It, however, earned a reputation as a reliable weapon that packs a lot of punch for its size."
 	icon = 'icons/obj/guns/ballistic/lsw.dmi'
 	icon_state = "lsw"
@@ -1260,7 +1292,7 @@
 
 //M2A1 HMG			Keywords: .50 Cal, Automatic, ??? .50 belts. Notes: Holy shit a .50 machine gun. Don't use this often; admin spawn only for the love of god.
 /obj/item/gun/ballistic/automatic/m2a1
-	name = "Browning M2A1"
+	name = "'Moses' Browning M2A1"
 	desc = "An old pre-war heavy machine gun used in service by the US Military around the time of the war."
 	icon_state = "M38"
 	item_state = "M38"
@@ -1362,7 +1394,7 @@
 
 //M72 Gauss Rifle		Keywords: 2mm cartriage, 8 round capacity, scoped, ballistic-'energy' sniper.
 /obj/item/gun/ballistic/automatic/m72
-	name = "M72 Gauss Rifle"
+	name = "M72 gauss rifle"
 	desc = "The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed... and pierce almost any obstacle. Its range, accuracy and stopping power is almost unparalleled."
 	icon_state = "m72"
 	item_state = "shotgun"

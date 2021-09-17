@@ -627,6 +627,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
 
+/obj/item/book/granter/crafting_recipe/blueprint/maxson
+	name = "maxson carbine blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/maxson)
+
 /obj/item/book/granter/crafting_recipe/blueprint/bastard
 	name = "bastard LMG blueprint"
 	icon_state = "blueprint2"

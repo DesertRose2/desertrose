@@ -443,6 +443,17 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//maxson carbine
+/datum/crafting_recipe/maxson
+	name = "maxson carbine"
+	result = /obj/item/gun/ballistic/automatic/service/maxson
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/sheet/plastic = 4,
+				/obj/item/advanced_crafting_components/receiver = 1
+				)
+
 //bastard lmg
 /datum/crafting_recipe/bastard
 	name = "bastard LMG"

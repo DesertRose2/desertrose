@@ -158,7 +158,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 //////////////////////////
 
 /obj/item/projectile/bullet/c5mm
-	damage = 19
+	damage = 15
 	armour_penetration = 0.5
 
 
