@@ -817,3 +817,12 @@
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/c5mm
+	name = "ammo box (5mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	multiple_sprites = 2
+	icon_state = "5mmbox"
+	caliber = "5mm"
+	ammo_type = /obj/item/ammo_casing/c5mm
+	max_ammo = 100
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 25000, /datum/material/blackpowder = 3000)
