@@ -480,7 +480,7 @@
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	
-/obj/item/clothing/suit/armor/f13/nightstalkerheavy
+/obj/item/clothing/suit/armor/f13/nightstalkerheavyarmor
 	name = "Nightstalker Heavy Armor"
 	icon_state = "nightstalker_tribal_armor"
 	desc = "(VI) A heavily repurposed set of combat armor now intermixed with both scavenged metal-lined pauldrons and stripped Nightstalker skin draped beneath. This armor smells slightly like rainwater."
