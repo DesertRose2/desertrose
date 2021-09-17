@@ -668,7 +668,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 
@@ -678,7 +678,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=4,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 

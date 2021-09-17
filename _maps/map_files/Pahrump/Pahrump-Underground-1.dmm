@@ -16118,7 +16118,6 @@
 	},
 /obj/structure/rack,
 /obj/item/book/granter/crafting_recipe/blueprint/aep7,
-/obj/item/book/granter/crafting_recipe/blueprint/maxson,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},

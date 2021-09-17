@@ -565,8 +565,8 @@ Combat Engineer
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R82/ncr)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
