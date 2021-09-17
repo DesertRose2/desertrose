@@ -620,6 +620,7 @@
 	name = "'Maxson' carbine"
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
 	icon_state = "maxson"
+	item_state = "assault_carbine"
 	fire_delay = 3.5
 	spread = 2
 	can_attachments = FALSE
@@ -637,6 +638,7 @@
 	name = "'Maxson' assault carbine"
 	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
 	icon_state = "maxson5"
+	item_state = "assault_carbine"
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	burst_size = 2
 	burst_shot_delay = 1.3
@@ -1007,7 +1009,7 @@
 	name = "AK-112"
 	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
 	icon_state = "ak112"
-	item_state = "fnfal"
+	item_state = "handmade_rifle"
 	icon = 'icons/obj/guns/ballistic/ak112.dmi'
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	w_class = WEIGHT_CLASS_BULKY
@@ -1016,7 +1018,7 @@
 	burst_size = 4
 	fire_delay = 4
 	burst_shot_delay = 2
-	spread = 10
+	spread = 20
 	can_attachments = TRUE
 	can_suppress = FALSE
 	can_scope = FALSE
