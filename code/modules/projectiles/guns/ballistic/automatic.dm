@@ -1017,7 +1017,7 @@
 	force = 20
 	burst_size = 4
 	fire_delay = 4
-	burst_shot_delay = 2
+	burst_shot_delay = 1.6
 	spread = 20
 	can_attachments = TRUE
 	can_suppress = FALSE
