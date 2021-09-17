@@ -415,6 +415,22 @@
 	name = "Jean Shorts"
 	path = /obj/item/clothing/under/pants/jeanshort
 
+/datum/gear/uniform/shorts/jeanbshorts
+	name = "minijorts"
+	path = /obj/item/clothing/under/pants/jeanbshorts
+
+/datum/gear/uniform/shorts/darkbshorts
+	name = "dark minijorts"
+	path = /obj/item/clothing/under/pants/darkbshorts
+
+/datum/gear/uniform/shorts/blackbshorts
+	name = "black denim minishorts"
+	path = /obj/item/clothing/under/pants/blackbshorts
+
+/datum/gear/uniform/shorts/brownbshorts
+	name = "brown minishorts"
+	path = /obj/item/clothing/under/pants/brownbshorts
+
 /datum/gear/uniform/skirt/denim
 	name = "Denim Skirt"
 	path = /obj/item/clothing/under/pants/denimskirt
