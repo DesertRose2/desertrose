@@ -449,7 +449,6 @@
 	result = /obj/item/gun/ballistic/automatic/service/maxson
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 5,
-				/obj/item/stack/crafting/goodparts = 3,
 				/obj/item/stack/sheet/plastic = 4,
 				/obj/item/advanced_crafting_components/receiver = 1
 				)

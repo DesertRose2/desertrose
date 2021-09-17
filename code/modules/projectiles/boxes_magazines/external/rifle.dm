@@ -134,7 +134,7 @@
 	name = "AK magazine (5mm)"
 	icon_state = "r20"
 	caliber = "5mm"
-	ammo_type = /obj/item/ammo_casing/caseless/g11
+	ammo_type = /obj/item/ammo_casing/c5mm
 	max_ammo = 24
 	multiple_sprites = 2
 

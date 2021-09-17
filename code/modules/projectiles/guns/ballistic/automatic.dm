@@ -641,7 +641,7 @@
 	burst_size = 2
 	burst_shot_delay = 1.3
 	fire_delay = 4
-	spread = 10
+	spread = 15
 	extra_damage = 0
 
 
