@@ -161,22 +161,6 @@
 	limited_stock = 2 //you can't use more than two!
 	restricted_roles = list("Shaft Miner")
 
-/datum/uplink_item/role_restricted/kitchen_gun
-	name = "Kitchen Gun (TM)"
-	desc = "A revolutionary .45 caliber cleaning solution! Say goodbye to daily stains and dirty surfaces with Kitchen Gun (TM)! \
-	Just three shots from Kitchen Gun (TM), and it'll sparkle like new! Includes two extra ammunition clips!"
-	cost = 10
-	surplus = 40
-	restricted_roles = list("Cook", "Janitor")
-	item = /obj/item/storage/box/syndie_kit/kitchen_gun
-
-/datum/uplink_item/role_restricted/kitchen_gun_ammo
-	name = "Kitchen Gun (TM) .45 Magazine"
-	desc = "An extra eight bullets for an extra eight uses of Kitchen Gun (TM)!"
-	cost = 1
-	restricted_roles = list("Cook", "Janitor")
-	item = /obj/item/ammo_box/magazine/m45/kitchengun
-
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"
 	desc = "A single-use autoinjector which contains an experimental serum that causes rapid muscular growth in Hominidae. \

@@ -627,10 +627,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82/legion
-	name = "pilum rifle blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/maxson
+	name = "maxson carbine blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82/legion)
+	crafting_recipe_types = list(/datum/crafting_recipe/maxson)
 
 /obj/item/book/granter/crafting_recipe/blueprint/bastard
 	name = "bastard LMG blueprint"
@@ -714,6 +714,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r91)
 
+/obj/item/book/granter/crafting_recipe/blueprint/r91/legion
+	name = "pilum rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/r91/legion)
+
 /obj/item/book/granter/crafting_recipe/blueprint/breacher
 	name = "breacher shotgun blueprint"
 	icon_state = "blueprint2"
@@ -778,16 +783,6 @@
 	name = "infiltrator blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
-
-/obj/item/book/granter/crafting_recipe/blueprint/fnfal
-	name = "fn fal blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/fnfal)
-
-/obj/item/book/granter/crafting_recipe/blueprint/caws
-	name = "h&k caws blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/caws)
 
 /obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine
 	name = "scout carbine blueprint"
@@ -923,6 +918,11 @@
 	traitname = "chem use"
 	remarks = list("Clean your needles...", "Ensure you have quality product...", "Don't mix drugs...", "Only buy from trusted dealers...")
 
+/obj/item/book/granter/trait/selection
+	name = "Private Diary"
+	desc = "Your private diary, reminding you of the knowledge you previously had."
+	granted_trait = null
+
 /obj/item/book/granter/trait/demolitions
 	name = "Anarchist's Cookbook"
 	desc = "A manual on how to construct homemade explosives without losing your fingers, now with pictures."
@@ -931,11 +931,6 @@
 	traitname = "explosives"
 	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
 	crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
-
-/obj/item/book/granter/trait/selection
-	name = "Private Diary"
-	desc = "Your private diary, reminding you of the knowledge you previously had."
-	granted_trait = null
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
@@ -968,7 +963,7 @@
 				traitname = "tinkering"
 			if("Iron Fist")
 				granted_trait = TRAIT_IRONFIST
-				traitname = "punching"	
+				traitname = "punching"
 			if("Explosive Expert")
 				granted_trait = TRAIT_DEMOLITION_EXPERT
 				traitname = "explosives"
@@ -1005,7 +1000,7 @@
 				traitname = "tinkering"
 			if("Chem User")
 				granted_trait = TRAIT_CHEM_USER
-				traitname = "chem use"	
+				traitname = "chem use"
 	else
 		. = ..()
 

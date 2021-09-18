@@ -355,21 +355,6 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//fn fal
-/datum/crafting_recipe/fnfal
-	name = "fn fal"
-	result = /obj/item/gun/ballistic/automatic/fnfal
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/crafting/metalparts = 2,
-				/obj/item/stack/sheet/metal = 3,
-				/obj/item/stack/sheet/mineral/titanium = 2,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
 //widowmaker
 /datum/crafting_recipe/widowmaker
 	name = "winchester widowmaker double barrel"
@@ -397,21 +382,6 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//h&k caws
-/datum/crafting_recipe/caws
-	name = "h&k caws"
-	result = /obj/item/gun/ballistic/automatic/shotgun/caws
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/sheet/mineral/titanium = 2,
-				/obj/item/stack/sheet/metal = 2,
-				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/crafting/goodparts = 3)
-	tools = list(TOOL_AWORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
 //R82 heavy service rifle
 /datum/crafting_recipe/R82
 	name = "r82 heavy service rifle"
@@ -428,24 +398,10 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//R82/N NCR
 /datum/crafting_recipe/R82/ncr
 	name = "ncr r82 heavy service rifle"
 	result = /obj/item/gun/ballistic/automatic/service/r82/ncr
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/sheet/mineral/wood = 5,
-				/obj/item/stack/crafting/goodparts = 5
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
-/datum/crafting_recipe/R82/legion
-	name = "pilum rifle"
-	result = /obj/item/gun/ballistic/automatic/service/r82/legion
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,
@@ -486,6 +442,16 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
+
+//maxson carbine
+/datum/crafting_recipe/maxson
+	name = "maxson carbine"
+	result = /obj/item/gun/ballistic/automatic/service/maxson
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/sheet/plastic = 4,
+				/obj/item/advanced_crafting_components/receiver = 1
+				)
 
 //bastard lmg
 /datum/crafting_recipe/bastard
@@ -723,6 +689,22 @@
 /datum/crafting_recipe/r91
 	name = "R91 assault rifle"
 	result = /obj/item/gun/ballistic/automatic/assault_rifle
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//R-91 "Pilum" Legion
+/datum/crafting_recipe/r91/legion
+	name = "pilum rifle"
+	result = /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,

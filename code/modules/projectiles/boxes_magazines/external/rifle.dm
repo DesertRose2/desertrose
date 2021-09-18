@@ -130,5 +130,22 @@
 	max_ammo = 10
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m473_pistol/empty
+/obj/item/ammo_box/magazine/c5mm
+	name = "AK magazine (5mm)"
+	icon_state = "r20"
+	caliber = "5mm"
+	ammo_type = /obj/item/ammo_casing/c5mm
+	max_ammo = 24
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/c5mm/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/c5mm/extended
+	name = "extended AK magazine (5mm)"
+	icon_state = "r30"
+	max_ammo = 48
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/c5mm/extended/empty
 	start_empty = 1

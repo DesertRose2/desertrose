@@ -652,3 +652,23 @@
 	build_path = /obj/item/modkit/crusader_laser
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/maxson
+	name = "maxson carbine 5.56mm conversion kit"
+	desc = "A conversion kit for maxson carbines."
+	id = "maxson"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000, /datum/material/plastic = 10000, /datum/material/glass = 10000, /datum/material/titanium = 5000)
+	build_path = /obj/item/modkit/maxson
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/maxson/c5mm
+	name = "maxson carbine 5mm conversion kit"
+	desc = "A conversion kit for maxson carbines."
+	id = "maxson_5mm"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000, /datum/material/plastic = 10000, /datum/material/glass = 10000, /datum/material/titanium = 15000)
+	build_path = /obj/item/modkit/maxson
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
