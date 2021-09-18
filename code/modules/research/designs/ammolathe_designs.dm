@@ -499,7 +499,7 @@
 
 /datum/design/ammolathe/m473box
 	name = "ammo box (4.73mm)"
-	id = "4.73mm_mag"
+	id = "4.73mm_box"
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2500)
 	build_path = /obj/item/ammo_box/m473_box
 	category = list("initial", "Intermediate Ammo")
