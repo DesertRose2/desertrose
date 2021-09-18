@@ -486,12 +486,26 @@
 /datum/design/ammolathe/c5mm
 	name = "5mm ammo box"
 	id = "c5mm_box"
-	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 2000)
+	materials = list(/datum/material/iron = 25000, /datum/material/blackpowder = 3000)
 	build_path = /obj/item/ammo_box/c5mm
 	category = list("initial", "Intermediate Ammo")
 
+/datum/design/ammolathe/m473
+	name = "g11 magazine (4.73mm)"
+	id = "4.73mm_mag"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/m473
+	category = list("initial", "Intermediate Magazines")
+
+/datum/design/ammolathe/m473box
+	name = "ammo box (4.73mm)"
+	id = "4.73mm_box"
+	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2500)
+	build_path = /obj/item/ammo_box/m473_box
+	category = list("initial", "Intermediate Ammo")
+
 /datum/design/ammolathe/c5mmag
-	name = "empty AK gun magazine (5mm)"
+	name = "empty 5mm gun magazine"
 	id = "c5mm_mag"
 	materials = list(/datum/material/iron = 6000)
 	build_path = /obj/item/ammo_box/magazine/c5mm/empty
