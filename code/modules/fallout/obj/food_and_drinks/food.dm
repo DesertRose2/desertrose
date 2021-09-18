@@ -736,7 +736,7 @@
 /obj/item/reagent_containers/food/snacks/soup/longpork_stew
 	name = "longpork stew"
 	desc = "A thick, oily stew that tastes and smells weird. Has small pieces of raw, chewy meat."
-	icon_state = "molerat_stew"
+	icon_state = "moleratstew"
 	bitesize = 4
 	volume = 30
 	list_reagents = list(/datum/reagent/medicine/longpork_stew = 30)
