@@ -392,7 +392,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 8
 	extra_penetration = 0.2
-	fire_delay = 6
+	fire_delay = 5
 	spread = 1
 	can_unsuppress = FALSE
 	can_scope = TRUE
@@ -411,7 +411,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 10
 	extra_penetration = 0.3
-	fire_delay = 7
+	fire_delay = 6
 	spread = 0
 	can_unsuppress = FALSE
 	suppressed = 1
@@ -441,7 +441,7 @@
 	icon_state = "amr"
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	extra_damage = 20
+	extra_damage = 10
 	fire_delay = 10
 	recoil = 1
 	spread = 0

@@ -580,6 +580,7 @@
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	untinkerable = TRUE
 	burst_size = 1
 	fire_delay = 4
 	extra_damage = 4
@@ -748,6 +749,7 @@
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
 	icon_state = "oldglory"
+	untinkerable = TRUE
 	extra_damage = 10
 
 //Pawolskis Retribution		Keywords: UNIQUE, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Some exta damage.
@@ -755,6 +757,7 @@
 	name = "Pawolski's Retribution"
 	desc = "'I am your rifle, you are on guard duty.'"
 	icon_state = "pawolski"
+	untinkerable = TRUE
 	extra_damage = 5
 
 //Republics Pride			Keywords: UNIQUE, NCR, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Normal extra damage.
@@ -763,6 +766,7 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Proudly issued to Scout Captains and packs a mean punch. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
+	untinkerable = TRUE
 	extra_damage = 8
 	extra_penetration = 0.1
 	zoomable = TRUE
@@ -776,6 +780,7 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. This one seems to be looted from a dead NCR Lieutenant and the flag replaced with a bull. Chambered in 7.62x51."
 	icon_state = "republics_demise"
 	item_state = "scoped308"
+	untinkerable = TRUE
 	extra_damage = 8
 	extra_penetration = 0.1
 	zoomable = TRUE
@@ -944,6 +949,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	untinkerable = TRUE
 	burst_size = 3
 	burst_shot_delay = 1.5
 	fire_delay = 3.5
@@ -964,6 +970,7 @@
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
 	icon_state = "assault_carbine"
 	item_state = "assault_carbine"
+	untinkerable = TRUE
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	burst_size = 2
@@ -1014,6 +1021,7 @@
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 	force = 20
 	burst_size = 4
 	fire_delay = 4
@@ -1035,6 +1043,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 2
 	burst_size = 1
 	fire_delay = 4
 	spread = 2
@@ -1171,6 +1180,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	untinkerable = TRUE
 	force = 25
 	fire_delay = 4.5
 	burst_shot_delay = 2.25
@@ -1214,11 +1224,12 @@
 	slowdown = 1.25
 	mag_type = /obj/item/ammo_box/magazine/mm762
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	untinkerable = TRUE
 	can_suppress = FALSE
 	can_attachments = FALSE
 	burst_size = 1
 	burst_shot_delay = 1.5
-	fire_delay = 4
+	fire_delay = 6
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	spread = 12
@@ -1285,7 +1296,7 @@
 			select = 0
 			burst_size = 4
 			spread = 22
-			extra_damage = -4
+			extra_damage = -6
 			recoil = 1
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1301,10 +1312,11 @@
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/mm50
 	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
+	untinkerable = TRUE
 	can_suppress = FALSE
 	can_attachments = FALSE
 	burst_size = 1
-	fire_delay = 5.5
+	fire_delay = 8
 	slowdown = 1.5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1362,7 +1374,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select = 0
 			burst_size = 2
 			spread = 40
 			extra_damage = -2
@@ -1379,12 +1391,6 @@
 			spread = 60
 			extra_damage = -6
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(3)
-			select = 0
-			burst_size = 1
-			spread = 20
-			extra_damage = 0
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
