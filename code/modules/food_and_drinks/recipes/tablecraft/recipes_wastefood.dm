@@ -51,6 +51,7 @@
 				/datum/reagent/water = 10
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/longpork_stew
+	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD
 
 /datum/crafting_recipe/food/moleratstew
