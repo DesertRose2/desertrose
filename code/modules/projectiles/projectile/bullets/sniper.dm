@@ -1,5 +1,8 @@
 // .50 (Sniper)
 
+//Old .50 ammo - here for legacy looking. New ones are in the rifle.dm
+
+/*
 /obj/item/projectile/bullet/p50
 	name =".50 bullet"
 	pixels_per_second = TILES_TO_PIXELS(25)
@@ -62,10 +65,10 @@
 		M.adjust_fire_stacks(fire_stacks)
 		M.IgniteMob()
 
-/*
+
 	/obj/item/projectile/bullet/a50MG/AP
 	damage = 35
-	armour_penetration = 65 will punch through anything short of Enclave power armor*/
+	armour_penetration = 65 will punch through anything short of Enclave power armor
 
 /obj/item/projectile/bullet/a50MG/explosive
 	damage = 30
@@ -74,3 +77,4 @@
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, 0, 1, 1, 1)
+*/

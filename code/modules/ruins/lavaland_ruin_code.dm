@@ -135,10 +135,10 @@
 /obj/effect/mob_spawn/human/lavaland_syndicate/special(mob/living/new_spawn)
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
-/datum/outfit/lavaland_syndicate
+/*/datum/outfit/lavaland_syndicate
 	name = "Lavaland Syndicate Agent"
 	name = "Off-station Syndicate Agent"
-	r_hand = /obj/item/gun/ballistic/automatic/sniper_rifle
+	r_hand = /obj/item/gun/ballistic/rifle/mag/amr
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/combat
@@ -147,7 +147,7 @@
 	back = /obj/item/storage/backpack
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol
 	id = /obj/item/card/id/syndicate/anyone
-	implants = list(/obj/item/implant/weapons_auth)
+	implants = list(/obj/item/implant/weapons_auth)*/
 
 /datum/outfit/lavaland_syndicate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	H.faction |= ROLE_SYNDICATE

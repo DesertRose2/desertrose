@@ -293,3 +293,19 @@
 						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
 	)
 	result_item = /obj/item/gun/energy/plasma/crusader
+
+//Maxson Carbine
+
+/obj/item/modkit/maxson
+	name = "maxson carbine 5.56 conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/service/maxson,
+						/obj/item/gun/ballistic/automatic/service/maxson/c5mm
+	)
+	result_item = /obj/item/gun/ballistic/automatic/service/maxson
+
+/obj/item/modkit/maxson/c5mm
+	name = "maxson carbine 5mm conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/service/maxson,
+						/obj/item/gun/ballistic/automatic/service/maxson/c5mm
+	)
+	result_item = /obj/item/gun/ballistic/automatic/service/maxson/c5mm

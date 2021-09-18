@@ -110,7 +110,7 @@ Head Paladin
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sentstand, //AER14
+	/datum/outfit/loadout/sentlead, //Gatling
 	/datum/outfit/loadout/sentheavy  //Gauss
 	)
 
@@ -153,19 +153,12 @@ Head Paladin
 		/obj/item/storage/bag/money/small/bos=1
 		)
 
-/datum/outfit/loadout/sentstand
-	name = "Assault Head Paladin"
-	backpack_contents = list(
-		/obj/item/twohanded/sledgehammer/supersledge=1,
-		/obj/item/book/granter/trait/big_leagues=1
-		)
-
 /datum/outfit/loadout/sentlead
 	name = "Fireteam-Lead Head Paladin"
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
-		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/gun/ballistic/automatic/m72=1,
+		/obj/item/ammo_box/magazine/m2mm=3,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/binoculars=1
 		)
@@ -173,10 +166,8 @@ Head Paladin
 /datum/outfit/loadout/sentheavy
 	name = "Heavy Head Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist=1,
-		/obj/item/gun/ballistic/automatic/m72=1,
-		/obj/item/ammo_box/magazine/m2mm=3,
-		/obj/item/grenade/smokebomb=2,
+		/obj/item/minigunpack=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1
 		)
 
@@ -419,7 +410,7 @@ Senior Paladin
 /datum/outfit/loadout/spaladina
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist=1,
+		/obj/item/twohanded/sledgehammer/supersledge=1,
 		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
@@ -502,7 +493,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Junior Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
@@ -520,7 +511,7 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
@@ -677,7 +668,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 
@@ -687,7 +678,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=4,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 
@@ -881,8 +872,8 @@ Knight
 /datum/outfit/loadout/knighta
 	name = "Engineer Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
@@ -895,8 +886,8 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -908,8 +899,9 @@ Knight
 /datum/outfit/loadout/knightc
 	name = "Security Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/hunting=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
@@ -922,8 +914,8 @@ Knight
 /datum/outfit/loadout/knightd
 	name = "Engineer"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
@@ -936,8 +928,8 @@ Knight
 /datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -949,8 +941,9 @@ Knight
 /datum/outfit/loadout/knightf
 	name = "Security"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/hunting=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,

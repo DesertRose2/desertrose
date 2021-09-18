@@ -65,7 +65,7 @@
 	item_state = "knight_winged"
 // CITADEL CHANGES ENDS HERE
 
-/obj/item/clothing/suit/armor/riot/chaplain
+/*/obj/item/clothing/suit/armor/riot/chaplain
 	name = "crusader armour"
 	desc = "God wills it!"
 	icon_state = "knight_templar"
@@ -86,7 +86,7 @@
 	icon_state = "knight_hospitaller"
 	item_state = "knight_hospitaller"
 // CITADEL CHANGES ENDS HERE
-
+*/
 /obj/item/choice_beacon/holy
 	name = "armaments beacon"
 	desc = "Contains a set of armaments for the chaplain."
@@ -124,7 +124,7 @@
 /obj/item/storage/box/holy/PopulateContents()
 	new /obj/item/clothing/head/helmet/chaplain(src)
 	new /obj/item/clothing/suit/armor/riot/chaplain(src)
-
+/*
 // CITADEL CHANGES: More Variants
 /obj/item/storage/box/holy/teutonic
 	name = "Teutonic Kit"
@@ -140,7 +140,7 @@
 	new /obj/item/clothing/head/helmet/chaplain/bland(src)
 	new /obj/item/clothing/suit/armor/riot/chaplain/hospitaller(src)
 // CITADEL CHANGES ENDS HERE
-
+*/
 /obj/item/storage/box/holy/student
 	name = "Profane Scholar Kit"
 
@@ -216,7 +216,7 @@
 	new /obj/item/clothing/suit/hooded/chaplain_hoodie(src)
 	new /obj/item/clothing/suit/hooded/chaplain_hoodie(src)
 
-/obj/item/clothing/suit/hooded/chaplain_hoodie
+/*/obj/item/clothing/suit/hooded/chaplain_hoodie
 	name = "follower hoodie"
 	desc = "Hoodie made for acolytes of the chaplain."
 	icon_state = "chaplain_hoodie"
@@ -224,7 +224,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	allowed = list(/obj/item/storage/book/bible, HOLY_WEAPONS, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
 	hoodtype = /obj/item/clothing/head/hooded/chaplain_hood
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON*/
 
 /obj/item/clothing/head/hooded/chaplain_hood
 	name = "follower hood"
