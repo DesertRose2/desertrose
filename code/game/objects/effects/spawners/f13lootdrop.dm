@@ -907,21 +907,21 @@
 /obj/effect/spawner/bundle/f13/miniuzi
 	name = "mini uzi and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/mini_uzi,
+				/obj/item/gun/ballistic/automatic/smg/mini_uzi,
 				/obj/item/ammo_box/magazine/uzim9mm,
 				)
 
 /obj/effect/spawner/bundle/f13/smg10mm
 	name = "10mm SMG and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/smg10mm,
+				/obj/item/gun/ballistic/automatic/smg/smg10mm,
 				/obj/item/ammo_box/magazine/m10mm_adv/ext
 				)
 
 /obj/effect/spawner/bundle/f13/greasegun
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/greasegun,
+				/obj/item/gun/ballistic/automatic/smg/greasegun,
 				/obj/item/ammo_box/magazine/greasegun
 				)
 
@@ -1334,7 +1334,7 @@
 	loot = list(/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/r84,
-				/obj/effect/spawner/bundle/f13/ak112,
+				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/bastard,
 				/obj/effect/spawner/bundle/f13/assault_rifle,
 				/obj/effect/spawner/bundle/f13/aer9,
@@ -1347,7 +1347,7 @@
 				/obj/effect/spawner/bundle/f13/chinese,
 				/obj/effect/spawner/bundle/f13/garand,
 				/obj/effect/spawner/bundle/f13/hunting,
-				/obj/effect/spawner/bundle/f13/mp5,
+				/obj/effect/spawner/bundle/f13/ak112,
 				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/citykiller,
 				/obj/effect/spawner/bundle/f13/brushgun,
@@ -1418,13 +1418,13 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 13,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 15,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 25,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 35,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 15,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 = 6,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 = 3,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/unique = 3
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/unique = 1
 			)
 
 /*	------------------------------------------------

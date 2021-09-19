@@ -452,6 +452,11 @@
 				/obj/item/stack/sheet/plastic = 4,
 				/obj/item/advanced_crafting_components/receiver = 1
 				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
 
 //bastard lmg
 /datum/crafting_recipe/bastard
