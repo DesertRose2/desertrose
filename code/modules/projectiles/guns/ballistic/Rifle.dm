@@ -373,6 +373,7 @@
 	fire_delay = 6
 	spread = 0
 	extra_damage = 8
+	extra_penetration = 0.1
 	can_bayonet = FALSE
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -391,7 +392,7 @@
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 8
-	extra_penetration = 0.2
+	extra_penetration = 0.1
 	fire_delay = 5
 	spread = 1
 	can_unsuppress = FALSE
@@ -410,7 +411,7 @@
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 10
-	extra_penetration = 0.3
+	extra_penetration = 0.15
 	fire_delay = 6
 	spread = 0
 	can_unsuppress = FALSE
