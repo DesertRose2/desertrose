@@ -865,19 +865,22 @@ Veteran Ranger
 	name = "Light Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
+		/obj/item/attachments/scope=1,
 		/obj/item/ammo_box/magazine/m762/ext=2)
 
 /datum/outfit/loadout/vrbrush
 	name = "Brush Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
+		/obj/item/attachments/scope=1,
 		/obj/item/ammo_box/tube/c4570=3)
 
 /datum/outfit/loadout/vrassault
 	name = "Assault Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/service/r82/ncr
+	suit_store = /obj/item/gun/ballistic/automatic/m14
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/ammo_box/magazine/m762=3,
+		/obj/item/attachments/scope=1,
 		/obj/item/kitchen/knife/combat/bayonet=1
 		)
 
