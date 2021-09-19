@@ -907,21 +907,21 @@
 /obj/effect/spawner/bundle/f13/miniuzi
 	name = "mini uzi and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/mini_uzi,
+				/obj/item/gun/ballistic/automatic/smg/mini_uzi,
 				/obj/item/ammo_box/magazine/uzim9mm,
 				)
 
 /obj/effect/spawner/bundle/f13/smg10mm
 	name = "10mm SMG and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/smg10mm,
+				/obj/item/gun/ballistic/automatic/smg/smg10mm,
 				/obj/item/ammo_box/magazine/m10mm_adv/ext
 				)
 
 /obj/effect/spawner/bundle/f13/greasegun
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/greasegun,
+				/obj/item/gun/ballistic/automatic/smg/greasegun,
 				/obj/item/ammo_box/magazine/greasegun
 				)
 

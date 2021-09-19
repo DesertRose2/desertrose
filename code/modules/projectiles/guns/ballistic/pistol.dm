@@ -219,14 +219,6 @@
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 
-/obj/item/gun/ballistic/automatic/pistol/deagle/update_overlays()
-	. = ..()
-	if(magazine)
-		. += "deagle_magazine"
-
-/obj/item/gun/ballistic/automatic/pistol/deagle/update_icon_state()
-	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
-
 //Colt M1911						Keywords: 45 APC, Semi-auto, 8 round mags.
 /obj/item/gun/ballistic/automatic/pistol/m1911
 	name = "M1911"
