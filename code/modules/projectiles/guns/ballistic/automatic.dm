@@ -799,7 +799,7 @@
 	mag_type = /obj/item/ammo_box/magazine/w308
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	fire_delay = 10
-	burst_size = 2
+	burst_size = 1
 	extra_penetration = 0.2
 	extra_damage = 8
 	can_bayonet = FALSE
@@ -1023,11 +1023,11 @@
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
 	force = 20
-	burst_size = 4
+	burst_size = 3
 	fire_delay = 4
 	burst_shot_delay = 1.6
 	spread = 20
-	can_attachments = TRUE
+	can_attachments = FALSE
 	can_suppress = FALSE
 	can_scope = FALSE
 	can_bayonet = FALSE
@@ -1043,7 +1043,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 2
+	extra_damage = 3
 	burst_size = 1
 	fire_delay = 4
 	spread = 2
@@ -1068,6 +1068,7 @@
 		if(0)
 			select = 1
 			burst_size = 2
+			extra_damage = -3
 			spread += 10
 			fire_delay = 5
 			recoil = 0.2
@@ -1177,6 +1178,7 @@
 	icon_state = "lsw"
 	item_state = "lsw"
 	slowdown = 1
+	spread = 6
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1371,26 +1373,22 @@
 	..()
 
 /obj/item/gun/ballistic/automatic/m2a1/burst_select()
-	var/mob/living/carbon/human/user = usr
+		var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
 			select = 0
 			burst_size = 2
 			spread = 40
-			extra_damage = -2
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+			extra_damage = -5
+			recoil = 0.5
+			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
-			select = 1
-			burst_size = 3
-			spread = 50
-			extra_damage = -4
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(2)
 			select = 1
 			burst_size = 4
 			spread = 60
-			extra_damage = -6
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+			extra_damage = -10
+			recoil = 1
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
