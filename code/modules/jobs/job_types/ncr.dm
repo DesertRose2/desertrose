@@ -217,21 +217,21 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 
 /datum/outfit/loadout/ltline
 	name = "Line Officer"
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
+	l_hand =	 /obj/item/gun/ballistic/automatic/service/r82/ncr
 	backpack_contents = list(
-	/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+	)
 
 /datum/outfit/loadout/ltscout
 	name = "Light Infantry Officer"
 	l_hand = 	/obj/item/gun/ballistic/automatic/m1garand/republicspride
-	backpack_contents = list(
-	/obj/item/ammo_box/magazine/garand308=3)
+	backpack_contents = list(/obj/item/ammo_box/magazine/garand308=3)
 
 /datum/outfit/loadout/ltpistol
 	name = "Pistoleer Officer"
-	backpack_contents =list(
-	/obj/item/ammo_box/magazine/m44=4,
-	/obj/item/gun/ballistic/automatic/pistol/deagle=2)
+	l_hand =	 /obj/item/gun/ballistic/revolver/thatgun
+	backpack_contents =list(/obj/item/ammo_box/magazine/m556/rifle/assault=1)
 
 /*
 Medical Officer
@@ -242,7 +242,7 @@ Medical Officer
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
-	supervisors = "Captain and above"
+	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
@@ -326,7 +326,10 @@ Sergeant First Class
 /datum/outfit/loadout/sfcinfantry
 	name = "Infantry"
 	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
-	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+	)
 
 /datum/outfit/loadout/sfcsniper
 	name = "Sharpshooter"
@@ -336,8 +339,19 @@ Sergeant First Class
 /datum/outfit/loadout/sfcgarand
 	name = "Assault"
 	l_hand = 	/obj/item/gun/ballistic/automatic/m1garand/ncr
-	backpack_contents = list(/obj/item/ammo_box/magazine/garand308=3)
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/garand308=3,
+		/obj/item/attachments/scope=1,
+		/obj/item/kitchen/knife/combat/bayonet=1
+		)
 
+/datum/outfit/job/ncr/f13firstsergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 /*
 Sergeant
 */
@@ -383,7 +397,10 @@ Sergeant
 	l_hand = /obj/item/gun/ballistic/automatic/service
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	belt = /obj/item/storage/belt/military/assault/ncr
-	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+		)
 
 //Scout successors
 /datum/outfit/loadout/serlight
@@ -451,7 +468,10 @@ Corporal
 	l_hand = /obj/item/gun/ballistic/automatic/service
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	belt = /obj/item/storage/belt/military/assault/ncr
-	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+		)
 
 //Scout successors
 /datum/outfit/loadout/corplight
@@ -557,7 +577,8 @@ Combat Engineer
 		/obj/item/ammo_box/magazine/m556/rifle=3, \
 		/obj/item/grenade/plastic=1, \
 		/obj/item/stack/sheet/metal/fifty=1, \
-		/obj/item/stack/sheet/glass/fifty=1
+		/obj/item/stack/sheet/glass/fifty=1, \
+		/obj/item/kitchen/knife/combat/bayonet=1
 		)
 
 /datum/outfit/job/ncr/f13combatengineer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -655,7 +676,10 @@ Trooper
 	l_hand = /obj/item/gun/ballistic/automatic/service
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	belt = /obj/item/storage/belt/military/assault/ncr
-	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle=3)
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+		)
 
 //Scout successors
 /datum/outfit/loadout/trooplight
@@ -853,7 +877,9 @@ Veteran Ranger
 	name = "Assault Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/automatic/service/r82/ncr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=3)
+		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/kitchen/knife/combat/bayonet=1
+		)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
