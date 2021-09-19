@@ -303,7 +303,7 @@
 	)
 	result_item = /obj/item/gun/ballistic/automatic/service/maxson
 
-/obj/item/modkit/maxson/c5mm
+/obj/item/modkit/maxson_c5mm
 	name = "maxson carbine 5mm conversion kit"
 	target_items = list(/obj/item/gun/ballistic/automatic/service/maxson,
 						/obj/item/gun/ballistic/automatic/service/maxson/c5mm
