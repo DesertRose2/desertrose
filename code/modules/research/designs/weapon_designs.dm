@@ -663,7 +663,7 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
-/datum/design/maxson/c5mm
+/datum/design/maxson_c5mm
 	name = "maxson carbine 5mm conversion kit"
 	desc = "A conversion kit for maxson carbines."
 	id = "maxson_5mm"
