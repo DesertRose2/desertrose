@@ -38636,9 +38636,9 @@
 "rnP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/mini_uzi,
 /obj/item/ammo_box/magazine/uzim9mm,
 /obj/item/ammo_box/magazine/uzim9mm,
+/obj/item/gun/ballistic/automatic/smg/mini_uzi,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "rof" = (
@@ -46195,9 +46195,9 @@
 /area/f13/building)
 "uwb" = (
 /obj/structure/closet/crate,
-/obj/item/gun/ballistic/automatic/greasegun,
 /obj/item/ammo_box/magazine/greasegun,
 /obj/item/ammo_box/magazine/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "uwh" = (
@@ -93588,7 +93588,7 @@ ktB
 ktB
 gcK
 fyf
-uHT
+fyf
 gcK
 uUG
 uUG
