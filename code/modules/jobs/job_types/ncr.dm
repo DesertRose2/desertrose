@@ -153,7 +153,7 @@ Captain
 	head =		/obj/item/clothing/head/f13/ncr_cap
 	gloves =	/obj/item/clothing/gloves/f13/leather
 	belt = 		/obj/item/storage/belt/military/assault/ncr/crossbelt
-	l_hand =	/obj/item/gun/ballistic/automatic/greasegun
+	l_hand =	/obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/greasegun=3,
 	/obj/item/gun/ballistic/automatic/pistol/deagle=1,

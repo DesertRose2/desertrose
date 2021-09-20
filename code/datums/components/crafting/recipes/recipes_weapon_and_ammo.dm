@@ -633,7 +633,7 @@
 //grease gun
 /datum/crafting_recipe/grease_gun
 	name = "Grease gun"
-	result = /obj/item/gun/ballistic/automatic/greasegun
+	result = /obj/item/gun/ballistic/automatic/smg/greasegun
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 3
