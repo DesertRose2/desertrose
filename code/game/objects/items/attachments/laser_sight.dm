@@ -4,13 +4,8 @@
 	icon_state = "laserpointer"
 	slot = ATTACHMENT_SLOT_RAIL
 
-/obj/item/attachment/laser_sight/Toggle(obj/item/gun/gun, mob/user)
+/obj/item/attachment/laser_sight/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
-
-	playsound(user, toggled ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
-
-	if(toggled)
-		gun.spread *= 0.4
-		return
-
+	gun.spread *= 0.4
 	gun.spread = initial(gun.spread)
+	return

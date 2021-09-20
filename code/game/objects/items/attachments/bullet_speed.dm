@@ -4,14 +4,13 @@
 	icon_state = "barrel"
 	slot = ATTACHMENT_SLOT_BARREL
 
-/obj/item/attachment/bullet_speed/Toggle(obj/item/gun/gun, mob/user)
-	. = ..()
-
-	playsound(user, toggled ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
-
 //How does this work? I have no clue, it compiles though!!! (:
-	if(toggled)
-		gun.extra_speed *= 1.25
-		return
+/obj/item/attachment/bullet_speed/Attach(obj/item/gun/gun, mob/user)
+	. = ..()
+	gun.spread *= 1.25
+	gun.extra_speed *= 1.25
 
-	gun.spread = initial(gun.spread)
+/obj/item/attachment/bullet_speed/Detach(obj/item/gun/gun, mob/user)
+	. = ..()
+	gun.spread /= 1.25
+	gun.extra_speed /= 1.25
