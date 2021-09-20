@@ -1109,7 +1109,7 @@
 			spread = 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 2
 			burst_size = 3
 			spread = 30
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
