@@ -454,7 +454,7 @@
 /datum/outfit/loadout/scavver
 	name = "Scavver"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,	
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,
 	/obj/item/autosurgeon/toolset=1,
 	/obj/item/clothing/glasses/welding=1,
 	/obj/item/twohanded/fireaxe=1
@@ -474,7 +474,7 @@
 /datum/outfit/loadout/caravaner
 	name = "Caravan Guard"
 	backpack_contents = list(
-	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,	
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,
 	/obj/item/gun/ballistic/shotgun/lever=1,
 	/obj/item/ammo_box/shotgun/slug = 2,
 	/obj/item/claymore/machete/pipe/tireiron=1
@@ -523,7 +523,8 @@
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/pda=1
 		)
 
 /datum/outfit/loadout/medprof
