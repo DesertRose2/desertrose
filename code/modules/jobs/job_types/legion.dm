@@ -188,7 +188,7 @@ Centurion
 	name = "Standard Centurion"
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/centurion
 	head = 			/obj/item/clothing/head/helmet/f13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/revolver/thatgun
+	suit_store = 	/obj/item/gun/ballistic/revolver/thatgun
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1
@@ -916,7 +916,6 @@ Recruit Legionary
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	id = 			/obj/item/card/id/dogtag/legrecruit
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/recruit
 	mask =			/obj/item/clothing/mask/bandana/legrecruit
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
@@ -928,7 +927,8 @@ Recruit Legionary
 
 /datum/outfit/loadout/recruitlegscout
 	name = "Scout"
-	head = 	/obj/item/clothing/head/helmet/f13/legion/recruit
+	head =		/obj/item/clothing/head/helmet/f13/legion/recruit/scout
+	suit =		/obj/item/clothing/suit/armor/f13/legion/recruit/scout
 	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/a357=3,
@@ -937,7 +937,8 @@ Recruit Legionary
 
 /datum/outfit/loadout/recruitlegmelee
 	name = "Velites (Melee)"
-	head = /obj/item/clothing/head/helmet/f13/legion/recruit/velite
+	head = 		/obj/item/clothing/head/helmet/f13/legion/recruit/velite
+	suit = 		/obj/item/clothing/suit/armor/f13/legion/recruit
 	suit_store = /obj/item/gun/ballistic/revolver/colt357
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver=1,
@@ -947,6 +948,8 @@ Recruit Legionary
 
 /datum/outfit/loadout/recruitlegline
 	name = "Hastati (Line)"
+	head = 		/obj/item/clothing/head/helmet/f13/legion/recruit
+	suit = 		/obj/item/clothing/suit/armor/f13/legion/recruit
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2
@@ -1051,7 +1054,7 @@ Explorer
 	id			= 	/obj/item/card/id/dogtag/legexplorer
 	head		= 	/obj/item/clothing/head/helmet/f13/legion/prime/explorer
 	glasses		= 	/obj/item/clothing/glasses/legiongoggles
-	mask		= 	/obj/item/clothing/mask/bandana/legprime
+	mask		= 	/obj/item/clothing/mask/bandana/legexplorer
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/prime/explorer
 	neck 		= 	/obj/item/storage/belt/holster
 	ears		=	/obj/item/radio/headset/headset_legion
