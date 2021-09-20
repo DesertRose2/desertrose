@@ -210,9 +210,6 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 
 
 /datum/outfit/loadout/ltline
@@ -349,9 +346,8 @@ Sergeant First Class
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 /*
 Sergeant
 */
@@ -423,6 +419,13 @@ Sergeant
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
 
+/datum/outfit/job/ncr/f13sergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+
 /*
 Corporal
 */
@@ -491,6 +494,13 @@ Corporal
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
+
+/datum/outfit/job/ncr/f13corporal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /*
 Combat Medic
@@ -699,6 +709,13 @@ Trooper
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
+
+/datum/outfit/job/ncr/f13trooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 /*
 Mp
 */
@@ -744,6 +761,16 @@ Mp
 		/obj/item/razor=1
 		)
 
+/datum/outfit/job/ncr/f13militarypolice/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+
+/*
+Recruit
+*/
 /datum/job/ncr/f13ncrrecruit
 	title = "NCR Recruit"
 	flag = F13NCRRECRUIT
@@ -828,9 +855,6 @@ Veteran Ranger
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	//var/datum/martial_art/rangertakedown/RT = new
 	//RT.teach(H)
@@ -908,7 +932,6 @@ Veteran Ranger
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	//var/datum/martial_art/rangertakedown/RT = new
 	//RT.teach(H)
@@ -995,7 +1018,7 @@ Veteran Ranger
 		/obj/item/storage/survivalkit_aid = 1,
 		/obj/item/clothing/accessory/armband/engine/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/grenade/plastic=1,
 		/obj/item/stack/sheet/metal/fifty=1,
-		/obj/item/stack/sheet/glass/fifty=1
+		/obj/item/stack/sheet/glass/fifty=1,
+		/obj/item/book/granter/trait/tinkering=1
 	)
