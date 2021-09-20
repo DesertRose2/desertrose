@@ -124,8 +124,6 @@
 
 
 
-
-
 /obj/item/gun/Initialize()
 	. = ..()
 	if(no_pin_required)
@@ -470,7 +468,7 @@
 	if(bayonet)
 		if(bayonet.icon_state in icon_states('icons/obj/guns/attachments.dmi'))		//Snowflake state?
 			knife_overlay = bayonet.icon_state
-		var/icon/bayonet_icons = 'icons/obj/guns/bayonets.dmi'
+		var/icon/bayonet_icons = 'icons/obj/guns/attachments.dmi'
 		knife_overlay = mutable_appearance(bayonet_icons, bayonet_state)
 		knife_overlay.pixel_x = knife_x_offset
 		knife_overlay.pixel_y = knife_y_offset
