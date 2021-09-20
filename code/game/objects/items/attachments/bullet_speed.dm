@@ -11,7 +11,7 @@
 	playsound(user, toggled ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
 
 	if(toggled)
-		pixels_per_second = 4000
+		var/pixels_per_second = TILES_TO_PIXELS(17.5)
 		return
 
 	gun.spread = initial(gun.spread)
