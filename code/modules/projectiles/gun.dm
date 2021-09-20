@@ -64,18 +64,11 @@
 	var/obj/item/firing_pin/pin = /obj/item/firing_pin //standard firing pin for most guns
 	var/no_pin_required = FALSE //whether the gun can be fired without a pin
 
-	var/obj/item/flashlight/gun_light
-	var/can_flashlight = FALSE
-	var/gunlight_state = "flight"
-
 	var/obj/item/kitchen/knife/bayonet
 	var/mutable_appearance/knife_overlay
-	var/can_bayonet = FALSE
-	var/bayonet_state = "bayonet"
 
 	var/mutable_appearance/scope_overlay
 	var/can_scope = FALSE
-	var/scope_state = "scope"
 
 	var/datum/action/item_action/toggle_gunlight/alight
 	var/mutable_appearance/flashlight_overlay
@@ -88,12 +81,12 @@
 	var/can_suppress = FALSE
 	var/can_unsuppress = TRUE
 
-	var/ammo_x_offset = 0 //used for positioning ammo count overlay on sprite
-	var/ammo_y_offset = 0
-	var/flight_x_offset = 0
-	var/flight_y_offset = 0
+	var/scope_state = "scope"
+	var/bayonet_state = "bayonet"
 	var/knife_x_offset = 0
 	var/knife_y_offset = 0
+	var/ammo_x_offset = 0 //used for positioning ammo count overlay on sprite
+	var/ammo_y_offset = 0
 	var/scope_x_offset = 0
 	var/scope_y_offset = 0
 	var/suppressor_x_offset = 0
@@ -115,13 +108,23 @@
 
 	var/dualwield_spread_mult = 1		//dualwield spread multiplier
 
-	//var/tinkered = 0
-	/// Just 'slightly' snowflakey way to modify projectile damage for projectiles fired from this gun.
-//	var/projectile_damage_multiplier = 1
 
-/*
-	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds 
-*/ //Disabled because automatic fire is buggy and a bit OP.
+
+	// ATTACHMENT STUFF RIGHT HERE //
+	/// The types of attachments allowed, a list of types. SUBTYPES OF AN ALLOWED TYPE ARE ALSO ALLOWED
+	var/list/valid_attachments = list()
+	/// Reference to our attachment holder to prevent subtypes having to call GetComponent
+	var/datum/component/attachment_holder/attachment_holder
+	/// Maximum number of attachments allowed
+	var/attachment_max = 0
+	/// Number of attachments that can fit on a given slot
+	var/list/slot_available = ATTACHMENT_DEFAULT_SLOT_AVAILABLE
+	/// Offsets for the slots on this gun. should be indexed by SLOT and then by X/Y
+	var/list/slot_offsets = list()
+
+
+
+
 
 /obj/item/gun/Initialize()
 	. = ..()
@@ -129,17 +132,12 @@
 		pin = null
 	else if(pin)
 		pin = new pin(src)
-	if(gun_light)
-		alight = new (src)
 	build_zooming()
+	attachment_holder = AddComponent(/datum/component/attachment_holder, attachment_max, slot_available, valid_attachments, slot_offsets)
 
 /obj/item/gun/Destroy()
 	if(pin)
 		QDEL_NULL(pin)
-	if(gun_light)
-		QDEL_NULL(gun_light)
-	if(bayonet)
-		QDEL_NULL(bayonet)
 	if(chambered)
 		QDEL_NULL(chambered)
 	return ..()
@@ -439,136 +437,11 @@
 	update_icon()
 	return TRUE
 
-/obj/item/gun/attackby(obj/item/I, mob/user, params)
-	if(user.a_intent == INTENT_HARM)
-		return ..()
-	else if(istype(I, /obj/item/flashlight/seclite))
-		if(!can_flashlight)
-			return ..()
-		var/obj/item/flashlight/seclite/S = I
-		if(!gun_light)
-			if(!user.transferItemToLoc(I, src))
-				return
-			to_chat(user, "<span class='notice'>You click \the [S] into place on \the [src].</span>")
-			if(S.on)
-				set_light(0)
-			gun_light = S
-			update_gunlight(user)
-			alight = new /datum/action/item_action/toggle_gunlight(src)
-			if(loc == user)
-				alight.Grant(user)
-	else if(istype(I, /obj/item/kitchen/knife))
-		var/obj/item/kitchen/knife/K = I
-		if(!can_bayonet || !K.bayonet || bayonet) //ensure the gun has an attachment point available, and that the knife is compatible with it.
-			return ..()
-		if(!user.transferItemToLoc(I, src))
-			return
-		to_chat(user, "<span class='notice'>You attach \the [K] to the front of \the [src].</span>")
-		bayonet = K
-		update_icon()
-		update_overlays()
-	else if(istype(I, /obj/item/attachments/scope))
-		if(!can_scope)
-			return ..()
-		var/obj/item/attachments/scope/C = I
-		if(!scope)
-			if(!user.transferItemToLoc(I, src))
-				return
-			to_chat(user, "<span class='notice'>You attach \the [C] to the top of \the [src].</span>")
-			scope = C
-			src.zoomable = TRUE
-			src.zoom_amt = 10
-			src.zoom_out_amt = 13
-			src.build_zooming()
-			update_overlays()
-			update_icon()
-	else if(istype(I, /obj/item/attachments/recoil_decrease))
-		var/obj/item/attachments/recoil_decrease/R = I
-		if(!recoil_decrease && can_attachments)
-			if(!user.transferItemToLoc(I, src))
-				return
-			recoil_decrease = R
-			src.desc += " It has a recoil compensator installed."
-			if (src.spread > 8)
-				src.spread -= 8
-			else
-				src.spread = 0
-			to_chat(user, "<span class='notice'>You attach \the [R] to \the [src].</span>")
-	else if(istype(I, /obj/item/attachments/bullet_speed))
-		var/obj/item/attachments/bullet_speed/B = I
-		if(!bullet_speed && can_attachments)
-			if(!user.transferItemToLoc(I, src))
-				return
-			bullet_speed = B
-			src.desc += " It has an improved barrel installed."
-			src.extra_speed += TILES_TO_PIXELS(15)
-			to_chat(user, "<span class='notice'>You attach \the [B] to \the [src].</span>")
-	else if(istype(I, /obj/item/attachments/burst_improvement))
-		var/obj/item/attachments/burst_improvement/T = I
-		if(!burst_improvement && burst_size > 1 && can_attachments)
-			if(!user.transferItemToLoc(I, src))
-				return
-			burst_improvement = T
-			src.desc += " It has a modified burst cam installed."
-			src.burst_size += 1
-			to_chat(user, "<span class='notice'>You attach \the [T] to \the [src].</span>")
-			update_icon()
-	else if(istype(I, /obj/item/screwdriver))
-		if(gun_light)
-			var/obj/item/flashlight/seclite/S = gun_light
-			to_chat(user, "<span class='notice'>You unscrew the seclite from \the [src].</span>")
-			gun_light = null
-			S.forceMove(get_turf(user))
-			update_gunlight(user)
-			S.update_brightness(user)
-			QDEL_NULL(alight)
-		if(bayonet)
-			to_chat(user, "<span class='notice'>You unscrew the bayonet from \the [src].</span>")
-			var/obj/item/kitchen/knife/K = bayonet
-			K.forceMove(get_turf(user))
-			bayonet = null
-			update_icon()
-		if(scope)
-			to_chat(user, "<span class='notice'>You unscrew the scope from \the [src].</span>")
-			var/obj/item/attachments/scope/C = scope
-			C.forceMove(get_turf(user))
-			src.zoomable = FALSE
-			azoom.Remove(user)
-			scope = null
-			update_icon()
-	else
-		return ..()
-
 /obj/item/gun/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_scope_zoom))
 		zoom(user)
-	else if(istype(action, alight))
-		toggle_gunlight()
-
-/obj/item/gun/proc/toggle_gunlight()
-	if(!gun_light)
-		return
-
-	var/mob/living/carbon/human/user = usr
-	gun_light.on = !gun_light.on
-	to_chat(user, "<span class='notice'>You toggle the gunlight [gun_light.on ? "on":"off"].</span>")
-
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_gunlight(user)
-	return
-
-/obj/item/gun/proc/update_gunlight(mob/user = null)
-	if(gun_light)
-		if(gun_light.on)
-			set_light(gun_light.brightness_on, gun_light.flashlight_power, gun_light.light_color)
-		else
-			set_light(0)
 	else
-		set_light(0)
-	update_icon()
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.UpdateButtonIcon()
+		return
 
 /obj/item/gun/pickup(mob/user)
 	..()
@@ -594,20 +467,8 @@
 		alight.Remove(user)
 
 /obj/item/gun/update_overlays()
-	. = ..()
-	if(gun_light)
-		var/state = "[gunlight_state][gun_light.on? "_on":""]"	//Generic state.
-		if(gun_light.icon_state in icon_states('icons/obj/guns/flashlights.dmi'))	//Snowflake state?
-			state = gun_light.icon_state
-		flashlight_overlay = mutable_appearance('icons/obj/guns/flashlights.dmi', state)
-		flashlight_overlay.pixel_x = flight_x_offset
-		flashlight_overlay.pixel_y = flight_y_offset
-		. += flashlight_overlay
-	else
-		flashlight_overlay = null
-
 	if(bayonet)
-		if(bayonet.icon_state in icon_states('icons/obj/guns/bayonets.dmi'))		//Snowflake state?
+		if(bayonet.icon_state in icon_states('icons/obj/guns/attachments.dmi'))		//Snowflake state?
 			knife_overlay = bayonet.icon_state
 		var/icon/bayonet_icons = 'icons/obj/guns/bayonets.dmi'
 		knife_overlay = mutable_appearance(bayonet_icons, bayonet_state)
@@ -616,9 +477,9 @@
 		. += knife_overlay
 	else
 		knife_overlay = null
-	
+
 	if(scope)
-		if(scope.icon_state in icon_states('icons/obj/guns/scopes.dmi'))
+		if(scope.icon_state in icon_states('icons/obj/guns/attachments.dmi'))
 			scope_overlay = scope.icon_state
 		var/icon/scope_icons = 'icons/obj/guns/scopes.dmi'
 		scope_overlay = mutable_appearance(scope_icons, scope_state)
@@ -629,7 +490,7 @@
 		scope_overlay = null
 
 	if(suppressed)
-		var/icon/suppressor_icons = 'icons/obj/guns/suppressors.dmi'
+		var/icon/suppressor_icons = 'icons/obj/guns/attachments.dmi'
 		suppressor_overlay = mutable_appearance(suppressor_icons, suppressor_state)
 		suppressor_overlay.pixel_x = suppressor_x_offset
 		suppressor_overlay.pixel_y = suppressor_y_offset
@@ -757,7 +618,7 @@
 	UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 	user.client.change_view(CONFIG_GET(string/default_view))
 	user.client.pixel_x = 0
-	user.client.pixel_y = 0	
+	user.client.pixel_y = 0
 
 /obj/item/gun/proc/rotate(mob/living/user, old_dir, direction = FALSE)
 	var/_x = 0
@@ -774,7 +635,7 @@
 	user.client.change_view(zoom_out_amt)
 	user.client.pixel_x = world.icon_size*_x
 	user.client.pixel_y = world.icon_size*_y
-		
+
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
 /obj/item/gun/proc/build_zooming()
 	if(azoom)

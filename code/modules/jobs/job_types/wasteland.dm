@@ -33,7 +33,6 @@ Coven Stuff
 	gloves = 		/obj/item/clothing/gloves/plate/red
 	id = 			/obj/item/card/id/syndicate/anyone
 	l_hand =		/obj/item/nullrod/claymore/darkblade
-	suit_store =  	/obj/item/gun/ballistic/automatic/pistol/suppressed
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,

@@ -126,7 +126,7 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 	name = "Suppressor"
 	desc = "This suppressor will silence the shots of the weapon it is attached to for increased stealth and superior ambushing capability. \
 			It is compatible with many small ballistic guns including the Stechkin and C-20r, but not revolvers or energy guns."
-	item = /obj/item/suppressor
+	item = /obj/item/attachment/silencer
 	cost = 1
 	surplus = 10
 

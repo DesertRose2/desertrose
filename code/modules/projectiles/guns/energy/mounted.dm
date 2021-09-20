@@ -6,7 +6,6 @@
 	item_state = "armcannonstun4"
 	force = 5
 	selfcharge = EGUN_SELFCHARGE
-	can_flashlight = 0
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL // Has no trigger at all, uses neural signals instead
 
 /obj/item/gun/energy/laser/mounted

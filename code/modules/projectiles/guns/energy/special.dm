@@ -3,14 +3,11 @@
 	desc = "The YK42B rifle is an electrical pulse weapon that was developed by the Yuma Flats Energy Consortium. It excels in damage against heavily armored opponents, especially power armor."
 	icon_state = "ionrifle"
 	item_state = null	//so the human update icon uses the icon_state instead.
-	can_flashlight = 1
 	w_class = WEIGHT_CLASS_BULKY
 	flags_1 =  CONDUCT_1
 	slot_flags = ITEM_SLOT_BACK
 	ammo_type = list(/obj/item/ammo_casing/energy/ion)
 	ammo_x_offset = 3
-	flight_x_offset = 17
-	flight_y_offset = 9
 
 /obj/item/gun/energy/ionrifle/emp_act(severity)
 	return
@@ -23,8 +20,6 @@
 	slot_flags = ITEM_SLOT_BELT
 	pin = null
 	ammo_x_offset = 2
-	flight_x_offset = 18
-	flight_y_offset = 11
 
 /obj/item/gun/energy/decloner
 	name = "biological demolecularisor"
@@ -94,7 +89,6 @@
 	overheat_time = 20
 	holds_charge = TRUE
 	unique_frequency = TRUE
-	can_flashlight = 0
 	max_mod_capacity = 0
 
 /obj/item/gun/energy/kinetic_accelerator/crossbow/halloween

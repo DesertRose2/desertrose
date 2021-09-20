@@ -27,6 +27,18 @@
 	var/select = 1
 	can_suppress = FALSE
 	equipsound = 'sound/f13weapons/equipsounds/riflequip.ogg'
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 18,
+			"y" = 15,
+		),
+		ATTACHMENT_SLOT_MUZZLE = list(
+			"x" = 31,
+			"y" = 19,
+		)
+	)
 
 /obj/item/gun/ballistic/automatic/attackby(obj/item/I, mob/user, params)
 	if(user.a_intent == INTENT_HARM)
@@ -509,7 +521,6 @@
 	fire_delay = 3.5
 	extra_damage = 4
 	automatic_burst_overlay = FALSE
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
@@ -591,7 +602,6 @@
 	semi_auto = TRUE
 	can_attachments = TRUE
 	bayonet_state = "bayonet"
-	can_bayonet = TRUE
 	knife_x_offset = 36
 	knife_y_offset = 17
 	can_suppress = TRUE
@@ -605,7 +615,6 @@
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
 	can_scope = TRUE
-	can_bayonet = FALSE
 	scope_state = "revolver_scope"
 	scope_x_offset = 15
 	scope_y_offset = 24
@@ -626,7 +635,6 @@
 	spread = 2
 	can_attachments = FALSE
 	bayonet_state = "bayonet"
-	can_bayonet = TRUE
 	knife_x_offset = 34
 	knife_y_offset = 17
 	can_suppress = TRUE
@@ -662,7 +670,6 @@
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
-	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 22
 	knife_y_offset = 12
@@ -696,7 +703,6 @@
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
 	can_attachments = TRUE
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 24
 	knife_y_offset = 21
@@ -723,7 +729,6 @@
 	en_bloc = 1
 	auto_eject = 1
 	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
@@ -802,7 +807,6 @@
 	burst_size = 2
 	extra_penetration = 0.2
 	extra_damage = 8
-	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
@@ -865,7 +869,6 @@
 	fire_delay = 4
 	burst_shot_delay = 3
 	can_attachments = TRUE
-	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 23
 	knife_y_offset = 11
@@ -888,7 +891,6 @@
 	fire_delay = 4
 	burst_shot_delay = 3.6
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	can_bayonet = FALSE
 	force = 15
 	zoomable = TRUE
 	zoom_amt = 10
@@ -913,7 +915,6 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
-	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 22
 	knife_y_offset = 12
@@ -935,7 +936,6 @@
 	spread = 10
 	extra_damage = 1
 	can_scope = FALSE
-	can_bayonet = FALSE
 	can_suppress = TRUE
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 40
@@ -1030,7 +1030,6 @@
 	can_attachments = TRUE
 	can_suppress = FALSE
 	can_scope = FALSE
-	can_bayonet = FALSE
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
 //M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
@@ -1049,7 +1048,6 @@
 	spread = 2
 	burst_size = 1
 	can_attachments = FALSE
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 24
 	knife_y_offset = 21
@@ -1186,7 +1184,6 @@
 	burst_shot_delay = 2.25
 	can_suppress = FALSE
 	spawnwithmagazine = TRUE
-	can_bayonet = FALSE
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1455,7 +1452,6 @@
 	mag_type = /obj/item/ammo_box/magazine/autopipe
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 	can_suppress = FALSE
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21

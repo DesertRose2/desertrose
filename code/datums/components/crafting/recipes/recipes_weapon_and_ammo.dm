@@ -346,7 +346,7 @@
 	reqs = list(/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 				/obj/item/stack/sheet/glass = 2,
 				/obj/item/stack/crafting/goodparts = 1,
-				/obj/item/suppressor = 1,
+				/obj/item/attachment/silencer = 1,
 				/obj/item/stack/sheet/plastic = 3,
 				/datum/reagent/blackpowder = 30)
 	tools = list(TOOL_AWORKBENCH)
@@ -983,7 +983,7 @@
 
 /datum/crafting_recipe/suppressor
 	name = "suppressor"
-	result = /obj/item/suppressor
+	result = /obj/item/attachment/silencer
 	reqs = list(
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/plastic = 2,

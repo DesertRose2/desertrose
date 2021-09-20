@@ -97,7 +97,6 @@
 	inaccuracy_modifier = 0.5
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	knife_x_offset = 27
 	knife_y_offset = 13
 
@@ -254,7 +253,6 @@
 	scope_state = "mosin_scope"
 	scope_x_offset = 3
 	scope_y_offset = 13
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
@@ -276,9 +274,7 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lasmusket
-	//nocase = TRUE
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	fire_delay = 15
 	knife_x_offset = 23
 	knife_y_offset = 21
@@ -305,7 +301,6 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/plasmacaster
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	fire_delay = 20
 	bayonet_state = "lasmusket"
 	knife_x_offset = 23
@@ -374,7 +369,6 @@
 	spread = 0
 	extra_damage = 8
 	extra_penetration = 0.1
-	can_bayonet = FALSE
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4

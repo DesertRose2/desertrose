@@ -87,44 +87,7 @@
 				return
 		else if (magazine)
 			to_chat(user, "<span class='notice'>There's already a magazine in \the [src].</span>")
-	if(istype(A, /obj/item/suppressor))
-		var/obj/item/suppressor/S = A
-		if(!can_suppress)
-			to_chat(user, "<span class='warning'>You can't seem to figure out how to fit [S] on [src]!</span>")
-			return
-		if(!user.is_holding(src))
-			to_chat(user, "<span class='notice'>You need be holding [src] to fit [S] to it!</span>")
-			return
-		if(suppressed)
-			to_chat(user, "<span class='warning'>[src] already has a suppressor!</span>")
-			return
-		if(user.transferItemToLoc(A, src))
-			to_chat(user, "<span class='notice'>You screw [S] onto [src].</span>")
-			install_suppressor(A)
-			update_overlays()
-			return
 	return 0
-
-/obj/item/gun/ballistic/proc/install_suppressor(obj/item/suppressor/S)
-	// this proc assumes that the suppressor is already inside src
-	suppressed = S
-	S.oldsound = fire_sound
-	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
-	update_icon()
-
-/obj/item/gun/ballistic/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(loc == user)
-		if(suppressed && can_unsuppress)
-			var/obj/item/suppressor/S = suppressed
-			if(!user.is_holding(src))
-				return ..()
-			to_chat(user, "<span class='notice'>You unscrew [suppressed] from [src].</span>")
-			user.put_in_hands(suppressed)
-			fire_sound = S.oldsound
-			suppressed = null
-			update_icon()
-			return
-	return ..()
 
 /obj/item/gun/ballistic/attack_self(mob/living/user)
 	var/obj/item/ammo_casing/AC = chambered //Find chambered round
@@ -234,17 +197,3 @@
 		if(AC.BB)
 			process_fire(user, user, FALSE)
 			. = 1
-
-
-/obj/item/suppressor
-	name = "suppressor"
-	desc = "A syndicate small-arms suppressor for maximum espionage."
-	icon = 'icons/obj/guns/projectile.dmi'
-	icon_state = "suppressor"
-	w_class = WEIGHT_CLASS_TINY
-	var/oldsound = null
-
-
-/obj/item/suppressor/specialoffer
-	name = "cheap suppressor"
-	desc = "A foreign knock-off suppressor, it feels flimsy, cheap, and brittle. Still fits some weapons."

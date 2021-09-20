@@ -37,11 +37,6 @@
 /obj/item/gun/ballistic/automatic/pistol/update_icon_state()
 	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
 
-/obj/item/gun/ballistic/automatic/pistol/suppressed/Initialize(mapload)
-	. = ..()
-	var/obj/item/suppressor/S = new(src)
-	install_suppressor(S)
-
 
 //Reskin Template Example for Weapons!!!!!!
 /obj/item/gun/ballistic/automatic/pistol/modular

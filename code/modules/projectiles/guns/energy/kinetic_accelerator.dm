@@ -8,15 +8,11 @@
 	item_flags = NONE
 	obj_flags = UNIQUE_RENAME
 	weapon_weight = WEAPON_LIGHT
-	can_flashlight = 1
-	flight_x_offset = 15
-	flight_y_offset = 9
 	automatic_charge_overlays = FALSE
 	var/overheat_time = 16
 	var/holds_charge = FALSE
 	var/unique_frequency = FALSE // modified by KA modkits
 	var/overheat = FALSE
-	can_bayonet = TRUE
 	knife_x_offset = 20
 	knife_y_offset = 12
 

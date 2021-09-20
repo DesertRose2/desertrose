@@ -226,7 +226,6 @@
 	desc = "A military shotgun designed for close-quarters sweeping. A relic of WW2, equipped with a bayonet lug for closer quarters combat."
 	icon_state = "trench"
 	item_state = "trenchgun"
-	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	extra_damage = 2
 	bayonet_state = "trenchgun"
@@ -315,7 +314,6 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
-	can_bayonet = TRUE
 	bayonet_state = "bayonet"
 	knife_x_offset = 23
 	knife_y_offset = 23

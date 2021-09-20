@@ -10,8 +10,6 @@ obj/item/gun/energy/e_gun/cx
 	lefthand_file = 'modular_citadel/icons/mob/citadel/guns_lefthand.dmi'
 	righthand_file = 'modular_citadel/icons/mob/citadel/guns_righthand.dmi'
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
-	flight_x_offset = 15
-	flight_y_offset = 10
 	var/body_color = "#252528"
 
 obj/item/gun/energy/e_gun/cx/ComponentInitialize()
