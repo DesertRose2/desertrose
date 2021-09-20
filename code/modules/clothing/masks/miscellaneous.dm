@@ -504,6 +504,15 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
+/obj/item/clothing/mask/bandana/legexplorer
+	name = "explorer facewrap"
+	desc = "A robust red explorer facewrap."
+	icon_state = "legexp"
+	flags_inv = HIDEFACE|HIDEHAIR
+	visor_flags_inv = HIDEFACE
+	adjusted_flags = null
+	actions_types = list(/datum/action/item_action/adjust)
+
 /obj/item/clothing/mask/bandana/momentobandana
 	name = "momento bandana"
 	desc = "A bandana that serves the user as a reminder of the past."

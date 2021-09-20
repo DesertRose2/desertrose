@@ -156,19 +156,6 @@
 							"NCR Off-Duty"
 						)
 
-/datum/gear/head/ncr_recon
-	name = "NCR recon beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_recon
-	restricted_desc = "NCR"
-	restricted_roles = list(
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
 /datum/gear/head/ncr_recon_officer
 	name = "NCR recon officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
