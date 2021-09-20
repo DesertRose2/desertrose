@@ -210,22 +210,28 @@
 	switch(select)
 		if(0)
 			select = 0
-			burst_size += 1
+			burst_size = 2
 			spread += 11
 			fire_delay += 1
 			recoil = 0.1
 			extra_damage = -1
-			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 1
-			burst_size += 3
-			spread += 22
-			fire_delay += 2
+			burst_size = 4
+			spread += 11
+			fire_delay += 1
 			recoil = 0.25
 			extra_damage = -2
-			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(2)
+			select = 0
+			burst_size = 1
+			spread -= 22
+			fire_delay -= 2
+			recoil = 0
+			extra_damage = 0
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -260,15 +266,13 @@
 			select = 1
 			burst_size += 1
 			spread += 11
-			fire_delay = 3
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay = 3
-			spread += 3
+			spread -= 11
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -338,7 +342,7 @@
 	switch(select)
 		if(0)
 			select = 1
-			burst_size += 1
+			burst_size = 2
 			spread += 2
 			fire_delay += 3.75
 			recoil = 0.1
@@ -347,7 +351,7 @@
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay += 3.5
+			fire_delay -= 3.75
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
@@ -431,7 +435,7 @@
 			select = 0
 			burst_size = 1
 			fire_delay = 2
-			spread = 2
+			spread -= 8
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -479,7 +483,7 @@
 		if(2)
 			select = 0
 			burst_size = 1
-			spread += 2
+			spread -= 20
 			fire_delay = 2.5
 			recoil = 0.1
 			extra_damage = 4
@@ -1148,17 +1152,17 @@
 		if(0)
 			select = 1
 			burst_size += 1
-			spread = 30
+			spread += 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 2
 			burst_size += 2
-			spread = 40
+			spread += 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 8
+			spread -= 40 //Written this way so that it does not overwrite a recoil compensator.
 			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -1200,12 +1204,19 @@
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
-			select = 0
+			select = 2
 			burst_size += 2
 			spread = 20
 			extra_damage = -2
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
+		if(2)
+			select = 0
+			burst_size = 1
+			spread = 6
+			extra_damage = 0
+			recoil = 0
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
