@@ -74,6 +74,7 @@
 	var/mutable_appearance/flashlight_overlay
 	var/can_attachments = FALSE
 	var/can_automatic = FALSE
+	var/can_bayonet = TRUE
 
 	var/mutable_appearance/suppressor_overlay
 	var/suppressor_state = null
@@ -479,7 +480,7 @@
 	if(scope)
 		if(scope.icon_state in icon_states('icons/obj/guns/attachments.dmi'))
 			scope_overlay = scope.icon_state
-		var/icon/scope_icons = 'icons/obj/guns/scopes.dmi'
+		var/icon/scope_icons = 'icons/obj/guns/attachments.dmi'
 		scope_overlay = mutable_appearance(scope_icons, scope_state)
 		scope_overlay.pixel_x = scope_x_offset
 		scope_overlay.pixel_y = scope_y_offset

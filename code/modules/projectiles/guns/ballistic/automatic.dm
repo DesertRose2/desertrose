@@ -29,16 +29,6 @@
 	equipsound = 'sound/f13weapons/equipsounds/riflequip.ogg'
 	attachment_max = 2
 	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
-	slot_offsets = list(
-		ATTACHMENT_SLOT_RAIL = list(
-			"x" = 18,
-			"y" = 15,
-		),
-		ATTACHMENT_SLOT_MUZZLE = list(
-			"x" = 31,
-			"y" = 19,
-		)
-	)
 
 /obj/item/gun/ballistic/automatic/attackby(obj/item/I, mob/user, params)
 	if(user.a_intent == INTENT_HARM)
@@ -180,6 +170,8 @@
 	spread = 10
 	force = 12
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
+	can_bayonet = FALSE
 
 //American 180
 /obj/item/gun/ballistic/automatic/smg/smg22
@@ -199,6 +191,7 @@
 	fire_delay = 3
 	suppressed = 1
 	untinkerable = TRUE
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 
 //PPSH-41			Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
 /obj/item/gun/ballistic/automatic/smg/pps
@@ -216,6 +209,7 @@
 	can_attachments = TRUE
 	can_scope = FALSE
 	spread = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 
 /obj/item/gun/ballistic/automatic/smg/pps/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -261,6 +255,8 @@
 	scope_x_offset = 9
 	scope_y_offset = 21
 	spread = 10
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 16
@@ -305,6 +301,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 
 //Carl Gustaf			Keywords: 10mm, Automatic, 12/24 round mags.
 //Was intended for Legion replacement to Uzis/10mm SMGs. No current implementation.
@@ -321,6 +318,7 @@
 	spread = 8
 	recoil = 0.1
 	can_attachments = TRUE
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 
 //10mm SMG				Keywords: 10mm, Automatic, 12/24 round mags. Notes: Should be faster-firing than the Grease due to smaller rounds and complex design.
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -337,13 +335,14 @@
 	burst_size = 1
 	fire_delay = 2
 	burst_shot_delay = 2.5
-	can_suppress = FALSE //we dont have sprites therefore cease
 	can_attachments = TRUE
 	spread = 12
 	can_suppress = TRUE
 	suppressor_state = "10mm_suppressor"
 	suppressor_x_offset = 30
 	suppressor_y_offset = 16
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 
 /obj/item/gun/ballistic/automatic/smg/smg10mm/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -381,6 +380,8 @@
 	spread = 3
 	extra_penetration = 0.05
 	can_suppress = TRUE
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 16
@@ -424,6 +425,8 @@
 	can_attachments = TRUE
 	spread = 2
 	can_suppress = TRUE
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
 	suppressor_y_offset = 17
@@ -466,6 +469,7 @@
 	slowdown = 0.25
 	spread = 2
 	can_attachments = FALSE
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 
 /obj/item/gun/ballistic/automatic/smg/tommygun/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -524,7 +528,6 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	can_scope = TRUE
 	scope_state = "lasmusket_scope"
 	scope_x_offset = 5
 	scope_y_offset = 14
@@ -535,6 +538,7 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 26
 	suppressor_y_offset = 31
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_SCOPE = 1)
 
 //M1/NCR Carbine			Keywords: NCR, 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', No Autosear (!)
 /obj/item/gun/ballistic/automatic/m1carbine/ncr
@@ -608,6 +612,7 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 38
 	suppressor_y_offset = 18
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 
 //Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
@@ -623,6 +628,8 @@
 	spread = 1
 	suppressor_x_offset = 38
 	suppressor_y_offset = 18
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_SCOPE = 1)
+	can_bayonet = FALSE
 
 
 //'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
@@ -641,6 +648,7 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 37
 	suppressor_y_offset = 18
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 
 //'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 20 (10-50) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
 /obj/item/gun/ballistic/automatic/service/maxson/c5mm
@@ -684,6 +692,7 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //Colt Rangemaster		Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
 /obj/item/gun/ballistic/automatic/rangemaster
@@ -714,6 +723,7 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 16
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 
 //M1 Garand			Keywords: .308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear
 /obj/item/gun/ballistic/automatic/m1garand
@@ -739,6 +749,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	semi_auto = TRUE
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 
 /obj/item/gun/ballistic/automatic/m1garand/update_icon()
 	..()
@@ -810,6 +821,7 @@
 	semi_auto = TRUE
 	can_automatic = FALSE
 	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1)
 
 
 //////////////////
@@ -838,6 +850,8 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 28
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 
 //R82/N Heavy Rifle		Keywords: NCR, 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
 /obj/item/gun/ballistic/automatic/service/r82/ncr
@@ -851,6 +865,7 @@
 	spread = 3
 	untinkerable = TRUE
 	can_suppress = TRUE
+	slot_available = list(ATTACHMENT_SLOT_MUZZLE = 1)
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 28
@@ -877,6 +892,7 @@
 	suppressor_x_offset = 32
 	suppressor_y_offset = 15
 	suppressor_state = "ar_suppressor"
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //R91 "Infiltrator"		Keywords: 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
@@ -896,6 +912,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	spread = 1
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //R91 "Pilum"			Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No Stock.
 /obj/item/gun/ballistic/automatic/assault_rifle/legion
@@ -918,6 +935,7 @@
 	bayonet_state = "rifles"
 	knife_x_offset = 22
 	knife_y_offset = 12
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
@@ -940,6 +958,8 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 40
 	suppressor_y_offset = 18
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
+	can_bayonet = FALSE
 
 //Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/bozar
@@ -963,6 +983,7 @@
 	can_scope = FALSE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //Assault Carbine	Keywords: 5.56, Automatic, 20 (10-50) round mags.
 /obj/item/gun/ballistic/automatic/assault_carbine
@@ -988,6 +1009,8 @@
 	suppressor_y_offset = 28
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
+	can_bayonet = FALSE
 
 //H&K G11			Keywords: 4.73mm, Automatic, 50 round mags.
 /obj/item/gun/ballistic/automatic/g11
@@ -1010,6 +1033,7 @@
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 //AK-112			Keywords: 5mm, Automatic, 24/100 mags
 /obj/item/gun/ballistic/automatic/ak112
@@ -1023,7 +1047,7 @@
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
 	force = 20
-	burst_size = 4
+	burst_size = 3
 	fire_delay = 4
 	burst_shot_delay = 1.6
 	spread = 20
@@ -1031,6 +1055,7 @@
 	can_suppress = FALSE
 	can_scope = FALSE
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	slot_available = list(ATTACHMENT_SLOT_GRIP = 1)
 
 //M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
 /obj/item/gun/ballistic/automatic/m14
@@ -1059,6 +1084,7 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 16
+	slot_available = list(ATTACHMENT_SLOT_MUZZLE = 1)
 
 /obj/item/gun/ballistic/automatic/m14/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -1102,6 +1128,7 @@
 	burst_shot_delay = 2.5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	slot_available = FALSE
 
 /obj/item/gun/ballistic/automatic/r84/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -1144,6 +1171,7 @@
 	burst_shot_delay = 3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_GRIP = 1)
 
 /obj/item/gun/ballistic/automatic/bastard/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -1189,6 +1217,7 @@
 	zoom_out_amt = 13
 	can_attachments = TRUE
 	can_scope = FALSE
+	slot_available = FALSE
 
 /obj/item/gun/ballistic/automatic/lsw/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -1231,6 +1260,7 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 12
 	var/cover_open = FALSE
+	slot_available = FALSE
 
 /obj/item/gun/ballistic/automatic/m1919/update_icon()
 	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
@@ -1319,6 +1349,7 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 30
 	var/cover_open = FALSE
+	slot_available = FALSE
 
 /obj/item/gun/ballistic/automatic/m2a1/update_icon()
 	icon_state = "m2a1[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
@@ -1415,6 +1446,7 @@
 	weapon_weight = WEAPON_HEAVY
 	recoil = 2
 	semi_auto = TRUE
+	slot_available = FALSE
 
 //X170E3				Keywords: UNIQUE, 20 (10-50) mag size, Scoped. Note: Use this in events, not normally.
 /obj/item/gun/ballistic/automatic/xl70e3
@@ -1432,6 +1464,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	can_scope = FALSE
+	slot_available = FALSE
 
 //Auto-pipe rifle		Keywords: .357, 30 round belts, improvised.
 //Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
@@ -1456,3 +1489,4 @@
 	knife_x_offset = 22
 	knife_y_offset = 21
 	semi_auto = FALSE
+	slot_available = FALSE

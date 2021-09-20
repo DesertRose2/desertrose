@@ -13,6 +13,8 @@
 	#define ATTACHMENT_SLOT_BARREL "attach-slot-barrel"
 	#define ATTACHMENT_SLOT_RAIL "attach-slot-rail"
 	#define ATTACHMENT_SLOT_GRIP "attach-slot-grip"
+	#define ATTACHMENT_SLOT_LASER_RECEIVER "attach-slot-receiver"
+	#define ATTACHMENT_SLOT_LASER_LENS "attach-slot-lens"
 
 /proc/attachment_slot_to_bflag(slot)
 	switch(slot)
@@ -26,6 +28,10 @@
 			return (1<<3)
 		if(ATTACHMENT_SLOT_GRIP)
 			return (1<<4)
+		if(ATTACHMENT_SLOT_LASER_RECEIVER)
+			return (1<<5)
+		if(ATTACHMENT_SLOT_LASER_LENS)
+			return (1<<6)
 
 /proc/attachment_slot_from_bflag(slot)
 	switch(slot)
@@ -39,6 +45,10 @@
 			return ATTACHMENT_SLOT_RAIL
 		if(1<<4)
 			return ATTACHMENT_SLOT_GRIP
+		if(1<<5)
+			return ATTACHMENT_SLOT_LASER_RECEIVER
+		if(1<<6)
+			return ATTACHMENT_SLOT_LASER_LENS
 
 #define COMSIG_ATTACHMENT_TOGGLE "attach-toggle"
 
