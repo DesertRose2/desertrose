@@ -1373,7 +1373,7 @@
 	..()
 
 /obj/item/gun/ballistic/automatic/m2a1/burst_select()
-		var/mob/living/carbon/human/user = usr
+	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
 			select = 0
