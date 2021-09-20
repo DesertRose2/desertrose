@@ -34,7 +34,7 @@
 /// Checks if a user should be allowed to attach this attachment to the given parent
 /obj/item/attachment/proc/Attach(obj/item/gun/gun, mob/user)
 	SHOULD_CALL_PARENT(TRUE)
-
+	to_chat(user, "<span class='notice'>You attach \the [src] to \the [gun].</span>")
 	if(toggled)
 		to_chat(user, "<span class='warning'>You cannot attach [src] while it is active!</span>")
 		return FALSE
@@ -43,7 +43,7 @@
 
 /obj/item/attachment/proc/Detach(obj/item/gun/gun, mob/user)
 	SHOULD_CALL_PARENT(TRUE)
-
+	to_chat(user, "<span class='notice'>You unscrew the [src] from \the [gun].</span>")
 	if(toggled)
 		Toggle(gun, user)
 	return TRUE

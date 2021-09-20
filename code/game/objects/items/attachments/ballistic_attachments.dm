@@ -22,7 +22,6 @@
 	gun.spread += 6
 	gun.recoil += 0.1
 	gun.spread = initial(gun.spread)
-	return
 
 /obj/item/attachment/auto_sear/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -30,7 +29,6 @@
 	gun.spread -= 6
 	gun.recoil -= 0.1
 	gun.spread = initial(gun.spread)
-	return
 
 
 
@@ -99,7 +97,7 @@
 /obj/item/attachment/recoil_decrease
 	name = "recoil compensator"
 	desc = "This laser sight is designed to be rail-mounted on a compatible firearm to provide increased accuracy."
-	icon_state = "laserpointer"
+	icon_state = "recoilcomp"
 	slot = ATTACHMENT_SLOT_GRIP
 
 /obj/item/attachment/recoil_decrease/Attach(obj/item/gun/gun, mob/user)
