@@ -405,11 +405,11 @@ Sergeant
 //Scout successors
 /datum/outfit/loadout/serlight
 	name = "Sharpshooter"
-	l_hand = /obj/item/gun/ballistic/automatic/service/carbine
+	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/attachments/scope=1
 	)
 
@@ -455,7 +455,6 @@ Corporal
 	accessory 		= /obj/item/clothing/accessory/ncr/CPL
 	head 			= /obj/item/clothing/head/f13/ncr
 	glasses			= /obj/item/clothing/glasses/sunglasses
-	suit_store		= /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
@@ -476,11 +475,11 @@ Corporal
 //Scout successors
 /datum/outfit/loadout/corplight
 	name = "Sharpshooter"
-	l_hand = /obj/item/gun/ballistic/automatic/service/carbine
+	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/attachments/scope=1)
 
 //Assault
@@ -684,11 +683,11 @@ Trooper
 //Scout successors
 /datum/outfit/loadout/trooplight
 	name = "Sharpshooter"
-	l_hand = /obj/item/gun/ballistic/automatic/service/carbine
+	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=3,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=3,
 		/obj/item/attachments/scope=1)
 
 //Assault

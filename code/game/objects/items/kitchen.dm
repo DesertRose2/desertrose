@@ -169,8 +169,9 @@
 	icon_state = "knife_bayonet"
 	item_state = "knife"
 	desc = "This weapon is made for stabbing, not much use for other things."
-	throwforce = 15
-	armour_penetration = 0.1
+	force = 10
+	throwforce = 5
+	armour_penetration = 0.2
 	bayonet = TRUE
 
 /obj/item/kitchen/knife/bowie
