@@ -420,7 +420,7 @@ Senior Paladin
 /datum/outfit/loadout/spaladinc
 	name = "Senior Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14=1,
+		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/binoculars=1,
