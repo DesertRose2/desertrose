@@ -42,6 +42,16 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
+/datum/crafting_recipe/buckler
+	name = "Wooden Buckler"
+	result = /obj/item/shield/riot/buckler
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 15,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_SCREWDRIVER)
+	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+
 /datum/crafting_recipe/twohanded/spear
 	name = "Spear"
 	result = /obj/item/twohanded/spear
