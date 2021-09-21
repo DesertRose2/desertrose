@@ -210,22 +210,28 @@
 	switch(select)
 		if(0)
 			select = 0
-			burst_size += 1
+			burst_size = 2
 			spread += 11
 			fire_delay += 1
 			recoil = 0.1
 			extra_damage = -1
-			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 1
-			burst_size += 3
-			spread += 22
-			fire_delay += 2
+			burst_size = 4
+			spread += 11
+			fire_delay += 1
 			recoil = 0.25
 			extra_damage = -2
-			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(2)
+			select = 0
+			burst_size = 1
+			spread -= 22
+			fire_delay -= 2
+			recoil = 0
+			extra_damage = 0
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -260,15 +266,13 @@
 			select = 1
 			burst_size += 1
 			spread += 11
-			fire_delay = 3
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay = 3
-			spread += 3
+			spread -= 11
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -338,7 +342,7 @@
 	switch(select)
 		if(0)
 			select = 1
-			burst_size += 1
+			burst_size = 2
 			spread += 2
 			fire_delay += 3.75
 			recoil = 0.1
@@ -347,7 +351,7 @@
 		if(1)
 			select = 0
 			burst_size = 1
-			fire_delay += 3.5
+			fire_delay -= 3.75
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
@@ -431,7 +435,7 @@
 			select = 0
 			burst_size = 1
 			fire_delay = 2
-			spread = 2
+			spread -= 8
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -479,7 +483,7 @@
 		if(2)
 			select = 0
 			burst_size = 1
-			spread += 2
+			spread -= 20
 			fire_delay = 2.5
 			recoil = 0.1
 			extra_damage = 4
@@ -592,12 +596,12 @@
 	can_attachments = TRUE
 	bayonet_state = "bayonet"
 	can_bayonet = TRUE
-	knife_x_offset = 36
-	knife_y_offset = 17
+	knife_x_offset = 32
+	knife_y_offset = 13
 	can_suppress = TRUE
 	suppressor_state = "suppressor"
-	suppressor_x_offset = 38
-	suppressor_y_offset = 18
+	suppressor_x_offset = 37
+	suppressor_y_offset = 16
 
 //Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
@@ -606,14 +610,14 @@
 	icon_state = "scout_carbine"
 	can_scope = TRUE
 	can_bayonet = FALSE
-	scope_state = "revolver_scope"
-	scope_x_offset = 15
-	scope_y_offset = 24
+	scope_state = "kar_scope"
+	scope_x_offset = 10
+	scope_y_offset = 23
 	extra_damage = 2
 	fire_delay = 3.5
 	spread = 1
-	suppressor_x_offset = 38
-	suppressor_y_offset = 18
+	suppressor_x_offset = 37
+	suppressor_y_offset = 16
 
 
 //'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
@@ -799,7 +803,7 @@
 	mag_type = /obj/item/ammo_box/magazine/w308
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	fire_delay = 10
-	burst_size = 2
+	burst_size = 1
 	extra_penetration = 0.2
 	extra_damage = 8
 	can_bayonet = FALSE
@@ -831,9 +835,12 @@
 	burst_size = 2
 	burst_shot_delay = 2.2
 	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 28
+	bayonet_state = "bayonet"
+	knife_x_offset = 32
+	knife_y_offset = 14
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 16
 
 //R82/N Heavy Rifle		Keywords: NCR, 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
 /obj/item/gun/ballistic/automatic/service/r82/ncr
@@ -847,15 +854,13 @@
 	spread = 3
 	untinkerable = TRUE
 	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 28
 
 //R91 Assault Rifle		Keywords: 5.56, Automatic, 20 (10-50) round mags.
 /obj/item/gun/ballistic/automatic/assault_rifle
 	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
-	icon_state = "assault_rifle"
+	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon_state = "r91"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
@@ -866,14 +871,14 @@
 	burst_shot_delay = 3
 	can_attachments = TRUE
 	can_bayonet = TRUE
-	bayonet_state = "rifles"
-	knife_x_offset = 23
+	bayonet_state = "bayonet"
+	knife_x_offset = 24
 	knife_y_offset = 11
 	spread = 8
 	can_suppress = TRUE
 	suppressor_x_offset = 32
-	suppressor_y_offset = 15
-	suppressor_state = "ar_suppressor"
+	suppressor_y_offset = 14
+	suppressor_state = "suppressor"
 
 //R91 "Infiltrator"		Keywords: 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
@@ -905,18 +910,11 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3.5
 	force = 20
-	can_scope = TRUE
-	scope_state = "smallrifle_scope"
-	scope_x_offset = 4
-	scope_y_offset = 15
-	can_suppress = TRUE
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 31
-	suppressor_y_offset = 15
 	can_bayonet = TRUE
-	bayonet_state = "rifles"
+	bayonet_state = "bayonet"
 	knife_x_offset = 22
-	knife_y_offset = 12
+	knife_y_offset = 7
+	can_suppress = TRUE
 
 //Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
@@ -938,8 +936,8 @@
 	can_bayonet = FALSE
 	can_suppress = TRUE
 	suppressor_state = "suppressor"
-	suppressor_x_offset = 40
-	suppressor_y_offset = 18
+	suppressor_x_offset = 36
+	suppressor_y_offset = 15
 
 //Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/bozar
@@ -1023,11 +1021,11 @@
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
 	force = 20
-	burst_size = 4
+	burst_size = 3
 	fire_delay = 4
 	burst_shot_delay = 1.6
 	spread = 20
-	can_attachments = TRUE
+	can_attachments = FALSE
 	can_suppress = FALSE
 	can_scope = FALSE
 	can_bayonet = FALSE
@@ -1043,7 +1041,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 2
+	extra_damage = 3
 	burst_size = 1
 	fire_delay = 4
 	spread = 2
@@ -1068,6 +1066,7 @@
 		if(0)
 			select = 1
 			burst_size = 2
+			extra_damage = -3
 			spread += 10
 			fire_delay = 5
 			recoil = 0.2
@@ -1114,7 +1113,7 @@
 			spread = 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 2
 			burst_size = 3
 			spread = 30
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
@@ -1153,17 +1152,17 @@
 		if(0)
 			select = 1
 			burst_size += 1
-			spread = 30
+			spread += 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 2
 			burst_size += 2
-			spread = 40
+			spread += 20
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 8
+			spread -= 40 //Written this way so that it does not overwrite a recoil compensator.
 			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -1177,6 +1176,7 @@
 	icon_state = "lsw"
 	item_state = "lsw"
 	slowdown = 1
+	spread = 6
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1204,12 +1204,19 @@
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
-			select = 0
+			select = 2
 			burst_size += 2
 			spread = 20
 			extra_damage = -2
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
+		if(2)
+			select = 0
+			burst_size = 1
+			spread = 6
+			extra_damage = 0
+			recoil = 0
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -1377,20 +1384,16 @@
 			select = 0
 			burst_size = 2
 			spread = 40
-			extra_damage = -2
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+			extra_damage = -5
+			recoil = 0.5
+			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
-			select = 1
-			burst_size = 3
-			spread = 50
-			extra_damage = -4
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(2)
 			select = 1
 			burst_size = 4
 			spread = 60
-			extra_damage = -6
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+			extra_damage = -10
+			recoil = 1
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return

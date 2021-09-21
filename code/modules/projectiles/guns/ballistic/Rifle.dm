@@ -127,7 +127,8 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 3
+	extra_damage = 8
+	fire_delay = 5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_scope = TRUE
@@ -258,7 +259,7 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	extra_damage = 5
+	extra_damage = 6
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 	suppressor_state = "rifle_suppressor"

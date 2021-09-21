@@ -232,7 +232,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/velite
 	name = "legion recruit velite houndcap"
-	desc = "(V) This helmet is decorated with the pelt of a wolf."
+	desc = "(III) This helmet is decorated with the pelt of a wolf."
 	icon_state = "legvexil" //Placeholders, replace when new sprites are made.
 	item_state = "legvexil" //DUtto.
 

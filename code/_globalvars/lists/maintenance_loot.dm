@@ -570,7 +570,7 @@ GLOBAL_LIST_INIT(loot_t3_range, list(
 	/obj/item/ammo_box/magazine/uzim9mm,
 	/obj/item/gun/ballistic/automatic/smg10mm,
 	/obj/item/ammo_box/magazine/m10mm_adv/ext,
-	/obj/item/gun/ballistic/automatic/greasegun,
+	/obj/item/gun/ballistic/automatic/smg/greasegun,
 	/obj/item/ammo_box/magazine/greasegun,
 	/obj/item/gun/ballistic/shotgun/trench,
 	/obj/item/ammo_box/shotgun/buck,
