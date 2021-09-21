@@ -92,13 +92,21 @@
 
 /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	name = "legion fox vexillarius helmet"
-	desc = "(V) This helmet is decorated with the pelt of a desert fox."
+	desc = "(VI) This helmet is decorated with the pelt of a desert fox."
 	icon_state = "legvexil"
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	name = "legion bear vexillarius helmet"
-	desc = "(V) This helmet is decorated with the pelt of a ashland bear."
-	icon_state = "legvexil_alt"
+	desc = "(VI) This helmet is decorated with the pelt of a ashland bear."
+	icon_state = "legvexil_bear"
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/legion/vet/nightvexil
+	name = "legion nightstalker vexillarius helmet"
+	desc = "(VI) This helmet is decorated with the pelt of a nightstalker."
+	icon_state = "legvexil_night"
+	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/venator
 	name = "legion venator hood"

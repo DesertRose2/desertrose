@@ -55,9 +55,6 @@
 	if(H.real_name == ("Biggus Dickus" || "Bigus Dickus"))
 		H.real_name = "Minimae Coles"
 		H.name = "Minimae Coles"
-//		H.lust_tolerance = 0
-//		H.sexual_potency = 0
-//		H.lust = 0
 
 //LM/LC Only Roles/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
@@ -285,8 +282,9 @@ Vexillarius
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	loadout_options = list(
-		/datum/outfit/loadout/vexassault, //ripper, m29scoped
-		/datum/outfit/loadout/vexsupport //trail carbine, smoke bombs
+		/datum/outfit/loadout/vexvulp, //Marksman Carbine, Shotgun Revolver, Fox Helmet
+		/datum/outfit/loadout/vexursa, //Hunting Revolver, Shield, Ripper, Bear Helmet
+		/datum/outfit/loadout/vexcanis //Brush Gun, Shotgun Revolver, Dog (Nightstalker) Helmet
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -302,7 +300,6 @@ Vexillarius
 	name = "Legion Vexillarius"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	id = 			/obj/item/card/id/dogtag/legveteran
-	mask =			/obj/item/clothing/mask/bandana/legvet
 	neck =			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	glasses = 		/obj/item/clothing/glasses/legionpolarizing
@@ -310,29 +307,38 @@ Vexillarius
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/claymore/machete/gladius=1,
+		/obj/item/claymore/machete/spatha=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
 		/obj/item/megaphone/cornu=1)
 
-/datum/outfit/loadout/vexassault
-	name = "Assault Vexillarius"
-	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
-	l_hand = 		/obj/item/gun/ballistic/revolver/m29
+/datum/outfit/loadout/vexvulp
+	name = "Vulpes (Fox)"
+	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/vexil
+	l_hand =	/obj/item/gun/ballistic/automatic/marksman
 	backpack_contents = list(
-		/obj/item/ammo_box/m44=2,
-		/obj/item/nullrod/claymore/chainsaw_sword=1,
-		/obj/item/shield/legion=1
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault=2
 		)
 
-/datum/outfit/loadout/vexsupport
-	name = "Support Vexillarius"
-	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	l_hand =  		/obj/item/gun/ballistic/automatic/assault_rifle/legion
+/datum/outfit/loadout/vexursa
+	name = "Ursa (Bear)"
+	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
+	l_hand = 	/obj/item/gun/ballistic/revolver/hunting
+	r_hand =	/obj/item/shield/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=2,
-		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/plastic/c4=1
+		/obj/item/ammo_box/c4570=3,
+		/obj/item/nullrod/claymore/chainsaw_sword=1
 		)
+
+/datum/outfit/loadout/vexcanis
+	name = "Canis (Dog)"
+	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/nightvexil
+	l_hand =  	/obj/item/gun/ballistic/rifle/automatic/hunting/brush
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/c4570=3,
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
+		)
+
 /*
 Decanii
 */
@@ -349,9 +355,9 @@ Decanii
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	loadout_options = list(
-	/datum/outfit/loadout/vetdecanline,
-	/datum/outfit/loadout/vetdecanshock,
-	/datum/outfit/loadout/vetdecanmelee
+	/datum/outfit/loadout/vetdecanline,		//Garand, .45 Revolver
+	/datum/outfit/loadout/vetdecanshock,	//Pilum
+	/datum/outfit/loadout/vetdecanmelee		//Hunting Revolver, Shield, Ripper, Spear Quiver
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -418,9 +424,9 @@ Decanii
 	exp_type = EXP_TYPE_DECANUS
 
 	loadout_options = list(
-	/datum/outfit/loadout/primedecline,
-	/datum/outfit/loadout/primedecshock,
-	/datum/outfit/loadout/primedecmelee
+	/datum/outfit/loadout/primedecline,		//Trail Carbine, .45 Revolver
+	/datum/outfit/loadout/primedecshock,	//Trench Shotgun, Shield, .357 Revolver
+	/datum/outfit/loadout/primedecmelee		//Legion Lance, .44 Revolver, Shield, Spear Quiver
 	)
 
 
@@ -496,9 +502,9 @@ Decanii
 	exp_type = EXP_TYPE_PRIME
 
 	loadout_options = list(
-	/datum/outfit/loadout/recdecmelee,
-	/datum/outfit/loadout/recdecshock,
-	/datum/outfit/loadout/recdecline
+	/datum/outfit/loadout/recdecline,	//Trail Carbine
+	/datum/outfit/loadout/recdecshock,	//Lever Shotgun, Shield
+	/datum/outfit/loadout/recdecmelee	//Legion Lance, .45 Revolver, Shield, Spear Quiver
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -529,14 +535,12 @@ Decanii
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legofficers=1)
 
-/datum/outfit/loadout/recdecmelee
-	name = "Phalanxi (Melee) Officer"
-	l_hand =	/obj/item/gun/ballistic/revolver/revolver45
-	r_hand =	/obj/item/shield/legion
+
+/datum/outfit/loadout/recdecline
+	name = "Libratus (Line) Officer"
+	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance=1,
-		/obj/item/storage/backpack/spearquiver=1,
-		/obj/item/ammo_box/c45rev=1
+		/obj/item/ammo_box/tube/m44=3
 	)
 
 /datum/outfit/loadout/recdecshock
@@ -548,11 +552,14 @@ Decanii
 		/obj/item/ammo_box/shotgun/slug=1
 	)
 
-/datum/outfit/loadout/recdecline
-	name = "Libratus (Line) Officer"
-	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
+/datum/outfit/loadout/recdecmelee
+	name = "Phalanxi (Melee) Officer"
+	l_hand =	/obj/item/gun/ballistic/revolver/revolver45
+	r_hand =	/obj/item/shield/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44=3
+		/obj/item/twohanded/spear/lance=1,
+		/obj/item/storage/backpack/spearquiver=1,
+		/obj/item/ammo_box/c45rev=1
 	)
 
 /*
@@ -660,10 +667,10 @@ Veteran Legionary
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
 	loadout_options = list(
-		/datum/outfit/loadout/vetline,
-		/datum/outfit/loadout/vetscout,
-		/datum/outfit/loadout/vetshock,
-		/datum/outfit/loadout/vetmelee
+		/datum/outfit/loadout/vetline,	//Garand, .45 Revolver
+		/datum/outfit/loadout/vetscout,	//Commando DMR, .44 Single Action Revolver
+		/datum/outfit/loadout/vetshock,	//Browning Auto-5, .44 Revolver
+		/datum/outfit/loadout/vetmelee	//Hunting Revolver, Shield, Bumper Sword, Spear Quiver
 	)
 
 
@@ -750,9 +757,9 @@ Prime Legionairy
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/primeline,
-		/datum/outfit/loadout/primeshock,
-		/datum/outfit/loadout/primemelee
+		/datum/outfit/loadout/primeline,	//Trail Carbine
+		/datum/outfit/loadout/primeshock,	//Lever Shotgun
+		/datum/outfit/loadout/primemelee	//Legion Lance, .44 Revolver, Shield, Spear Quiver
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -820,9 +827,9 @@ Recruit Legionary
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
 	loadout_options = list(
-		/datum/outfit/loadout/recruitlegline,
-		/datum/outfit/loadout/recruitlegscout,
-		/datum/outfit/loadout/recruitlegmelee
+		/datum/outfit/loadout/recruitlegline,	//Cowboy Repeater, base tier 3 armor
+		/datum/outfit/loadout/recruitlegscout,	//Hunting Shotgun, alt tier 2 speed boost armor
+		/datum/outfit/loadout/recruitlegmelee	//.357 Revolver, Buckler, Spear Quiver
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -891,37 +898,11 @@ Venator
 	display_order = JOB_DISPLAY_ORDER_VENATOR
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
 	loadout_options = list(
-	/datum/outfit/loadout/venatorstandard,
-	/datum/outfit/loadout/venatorranged,
-	/datum/outfit/loadout/venatorcqb
+		/datum/outfit/loadout/venatorstandard,	//Brush Gun, Shotgun Revolver
+		/datum/outfit/loadout/venatorranged,	//Sniper Rifle, Shotgun Revolver
+		/datum/outfit/loadout/venatorcqb		//Citykiller, Shotgun Revolver, Smokebomb
 	)
 
-
-/datum/outfit/loadout/venatorstandard
-	name = "Vexillum (Standard)"
-	l_hand =	/obj/item/gun/ballistic/rifle/automatic/hunting/brush
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
-		/obj/item/ammo_box/tube/c4570=3
-		)
-
-/datum/outfit/loadout/venatorranged
-	name = "Interfector (Ranged)"
-	l_hand =	/obj/item/gun/ballistic/automatic/marksman/sniper
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
-		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
-		)
-
-/datum/outfit/loadout/venatorcqb
-	name = "Comminus Proelium (Close Quarters)"
-	l_hand =	/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/hunting=1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/grenade/smokebomb=1
-	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -951,6 +932,32 @@ Venator
 		/obj/item/reagent_containers/pill/patch/healpoultice=1
 	)
 
+/datum/outfit/loadout/venatorstandard
+	name = "Vexillum (Standard)"
+	l_hand =	/obj/item/gun/ballistic/rifle/automatic/hunting/brush
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
+		/obj/item/ammo_box/tube/c4570=3
+		)
+
+/datum/outfit/loadout/venatorranged
+	name = "Interfector (Ranged)"
+	l_hand =	/obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
+		)
+
+/datum/outfit/loadout/venatorcqb
+	name = "Comminus Proelium (Close Quarters)"
+	l_hand =	/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/hunting=1,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/grenade/smokebomb=1
+	)
+
 /*
 Explorer
 */
@@ -968,8 +975,9 @@ Explorer
 	exp_type = EXP_TYPE_PRIME
 
 	loadout_options = list(
-		/datum/outfit/loadout/excursor,
-		/datum/outfit/loadout/sapper)
+		/datum/outfit/loadout/excursor,	//Commando DMR
+		/datum/outfit/loadout/sapper	//Commando Carbine, C4
+		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	name = "Legion Explorer"
