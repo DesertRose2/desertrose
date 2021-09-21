@@ -267,6 +267,7 @@ obj/item/shield/riot/bullet_proof
 	armor = list("linemelee" = 80, "linebullet" = 400, "laser" = 0, "energy" = 0, "bomb" = -40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
 	icon_state = "riot_laser"
 	item_state = "riot_laser"
+	shield_flags = SHIELD_FLAGS_DEFAULT
 	max_integrity = 300
 
 //Telescopic Riot Shield				- Printed at protolathes. Keep weak due to its compact nature.
@@ -387,6 +388,7 @@ obj/item/shield/riot/bullet_proof
 	max_integrity = 250 //Made of metal welded together its strong but not unkillable
 	force = 10
 	throwforce = 7
+	w_class = WEIGHT_CLASS_BULKY
 
 //Tribal shield							- It's literally a scrap stopsign. Weak, but funny and setting appropriate.
 /obj/item/shield/tribal
@@ -402,7 +404,7 @@ obj/item/shield/riot/bullet_proof
 	max_integrity = 200
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	w_class = WEIGHT_CLASS_BULKY
+	w_class = WEIGHT_CLASS_NORMAL
 
 //Tribal nightmare stalker lined siheld
 /obj/item/shield/riot/tribal/nightstalker
