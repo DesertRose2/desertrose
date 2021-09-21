@@ -265,8 +265,8 @@ obj/item/shield/riot/bullet_proof
 	name = "bullet resistant shield"
 	desc = "A far more frail shield made of resistant plastics and kevlar meant to block ballistics."
 	armor = list("linemelee" = 80, "linebullet" = 400, "laser" = 0, "energy" = 0, "bomb" = -40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
-	icon_state = "riot_laser"
-	item_state = "riot_laser"
+	icon_state = "riot_bulletproof"
+	item_state = "riot_bulletproof"
 	shield_flags = SHIELD_FLAGS_DEFAULT
 	max_integrity = 300
 
