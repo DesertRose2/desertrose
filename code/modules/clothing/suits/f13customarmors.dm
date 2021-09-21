@@ -39,3 +39,10 @@
 	desc = "(V)  A custom made repurposed suit of T45d, seemingly very damaged before any work has even been done to it. It has few pieces of regular veteran armor added to it with bull crest on its chest."
 	icon_state = "legvetpal"
 	item_state = "legvetpal"
+
+//Custom venator armor for Spaceanglo / Luti
+/obj/item/clothing/suit/armor/f13/legion/venator/ursus
+	name = "Ursus Homicida"
+	desc = "(VI) A set of modified veteran armor complete with multiple parts of weathered NCR ranger gear. Reinforced with ceramic carriers and knee protection the armor appears to have been recycled, engrabed with a small golden bull and the initials 'F.L' engrabed in a gold inlay."
+	icon_state = "ursus_homicida"
+	item_state = "ursus_homicida"

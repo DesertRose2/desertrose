@@ -40,7 +40,6 @@ Colonel
 	faction = "NCR"
 	head_announce = list("Security")
 	supervisors = "the general"
-	req_admin_notify = 1
 
 	total_positions = 0
 	spawn_positions = 0
@@ -89,7 +88,6 @@ Captain
 	spawn_positions = 0
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	req_admin_notify = 1
 	outfit = /datum/outfit/job/ncr/f13captain
 
 	loadout_options = list(
@@ -168,7 +166,6 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
-	req_admin_notify = 1
 	description = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "High Command"
 	selection_color = "#ffeeaa"
@@ -286,7 +283,6 @@ Sergeant First Class
 	flag = F13FIRSTSERGEANT
 	total_positions = 1
 	spawn_positions = 1
-	req_admin_notify = 1
 	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Lieutenant as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"

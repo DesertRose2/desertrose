@@ -1918,6 +1918,7 @@
 #include "code\modules\clothing\chameleon.dm"
 #include "code\modules\clothing\clothing.dm"
 #include "code\modules\clothing\f13bosclothing.dm"
+#include "code\modules\clothing\f13legionclothing.dm"
 #include "code\modules\clothing\f13ncrclothing.dm"
 #include "code\modules\clothing\ears\_ears.dm"
 #include "code\modules\clothing\glasses\_glasses.dm"

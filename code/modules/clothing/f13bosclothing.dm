@@ -257,6 +257,13 @@
 	item_state = "bos_fatigues"
 	can_adjust = TRUE
 
+/obj/item/clothing/under/f13/legskirt/tac //whoaaa mama humina humina
+	name = "\improper ''tactical'' combat skirt"
+	desc = "A leathery skirt below a thick, black, long-sleeve cotton shirt. Perfect for operatives favoring wardrobe malfunctions."
+	icon_state = "tacskirt"
+	item_state = "tacskirt"
+	item_color = "tacskirt"
+
 /obj/item/clothing/under/f13/bos/bodysuit
 	name = "brotherhood bodysuit"
 	desc = "A skin-tight bodysuit worn by members of the Brotherhood of Steel."
