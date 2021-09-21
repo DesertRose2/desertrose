@@ -27,7 +27,7 @@
 /obj/item/gun/ballistic/revolver/ballisticfist //it's a double-barrel shotgun disguised as a fist shhh
 	name = "ballistic fist"
 	desc = "This powerfist has been modified to have two shotgun barrels welded to it, with the trigger integrated into the knuckle guard. For those times when you want to punch someone and shoot them in the face at the same time."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "ballisticfist"
 	item_state = "powerfist"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -98,7 +98,7 @@
 /obj/item/melee/unarmed/brass
 	name = "brass knuckles"
 	desc = "Hardened knuckle grip that is actually made out of steel. They protect your hand, and do more damage, in unarmed combat."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "brass"
 	item_state = "brass"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
