@@ -328,8 +328,9 @@
 	breakouttime = 20 // Cyborgs shouldn't have a strong restraint
 
 /obj/item/restraints/legcuffs/bola
-	name = "bola_r"
+	name = "bola"
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "bola"
 	breakouttime = 35//easy to apply, easy to break out of
 	gender = NEUTER
@@ -366,12 +367,14 @@
 /obj/item/restraints/legcuffs/bola/tactical//traitor variant
 	name = "reinforced bola"
 	desc = "A strong bola, made with a long steel chain. It looks heavy, enough so that it could trip somebody."
+	icon_state = "bola"
 	breakouttime = 70
 	knockdown = 20
 
 /obj/item/restraints/legcuffs/bola/energy //For Security
 	name = "energy bola"
 	desc = "A specialized hard-light bola designed to ensnare fleeing criminals and aid in arrests."
+	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ebola"
 	hitsound = 'sound/weapons/taserhit.ogg'
 	w_class = WEIGHT_CLASS_SMALL
