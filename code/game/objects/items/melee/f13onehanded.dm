@@ -563,7 +563,7 @@
 	sharpness = SHARP_NONE
 	hitsound = "swing_hit"
 	attack_verb = list("smashed", "slammed", "whacked", "thwacked")
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "bostaff0"
 	item_state = "bostaff0"
 	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
