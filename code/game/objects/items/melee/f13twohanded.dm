@@ -7,6 +7,7 @@
 /obj/item/twohanded
 	var/icon_prefix = null
 	var/wielded = FALSE
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 
 /obj/item/twohanded/Initialize()
 	. = ..()
