@@ -25,6 +25,7 @@
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	H.grant_language(/datum/language/wayfarer)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)
@@ -112,7 +113,6 @@ Tribal Shaman
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SPIRITUAL, src)
 
 /datum/outfit/job/tribal/f13shaman
@@ -176,7 +176,6 @@ Tribal Head Hunter
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
 /datum/outfit/job/tribal/f13Hhunter
@@ -348,7 +347,7 @@ Hunter
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
 /datum/outfit/job/tribal/f13hunter
 	name = "Hunter"
