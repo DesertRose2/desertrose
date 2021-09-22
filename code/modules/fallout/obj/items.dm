@@ -41,7 +41,7 @@
 /obj/item/guncase/attack_self(mob/living/user)
 	var/list/weapons = list()
 	weapons["M4 Scout Carbine"] = list(/obj/item/storage/backpack/duffelbag/scoutcarbine)
-	weapons["M1 Carbine"]=(/obj/item/storage/backpack/dufflebag/m1carbine)
+	weapons["M1 Carbine"]=(/obj/item/storage/backpack/duffelbag/m1carbine)
 	weapons["M1 Garand Battle Rifle"] = list(/obj/item/storage/backpack/duffelbag/m1garand)
 	weapons["DKS Sniper Rifle"] = list(/obj/item/storage/backpack/duffelbag/sniper)
 	weapons["Browning Auto-5 Shotgun"] = list(/obj/item/storage/backpack/duffelbag/auto5)

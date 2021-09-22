@@ -917,14 +917,14 @@ Veteran Ranger
 	supervisors = "Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
-	outfit = /datum/outfit/job/ncr/f13ranger
+	outfit = /datum/outfit/job/ncr/f13ranger//Gun Case = Scout Carbine, M1 Carbine, M1 Garand, DKS Sniper Rifle, Browning Auto5
 
 	loadout_options = list(
 	/datum/outfit/loadout/rangerrecon,		//Fast Armor
 	/datum/outfit/loadout/rangertrail,		//Fastest Armor
 	/datum/outfit/loadout/rangerpatrol,		//Heavy Armor
-	/datum/outfit/loadout/rangermedic,		//M1 Patrol Armor with Chemistry
-	/datum/outfit/loadout/rangerengineer	//M1 Patrol Armor with Tinkerer
+	/datum/outfit/loadout/rangermedic,		//M1A1 Patrol Armor with Chemistry
+	/datum/outfit/loadout/rangerengineer	//M1A1 Patrol Armor with Tinkerer
 	)
 
 /datum/outfit/job/ncr/f13ranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
