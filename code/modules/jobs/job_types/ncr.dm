@@ -31,6 +31,9 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//LM and LC Only Roles
+
 /*
 Colonel
 */
@@ -157,6 +160,8 @@ Captain
 	/obj/item/gun/ballistic/automatic/pistol/deagle=1,
 	/obj/item/ammo_box/magazine/m44=2
 	)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
 Commanding Officer (Ranges from Lieutenant to Captain)
 */
@@ -174,9 +179,9 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
 	loadout_options = list(
-	/datum/outfit/loadout/ltline, //R82
-	/datum/outfit/loadout/ltscout, //Republic's Pride
-	/datum/outfit/loadout/ltpistol //Double Deagle
+	/datum/outfit/loadout/ltline,	//R82
+	/datum/outfit/loadout/ltscout,	//Republic's Pride
+	/datum/outfit/loadout/ltpistol	//.223 Pistol
 	)
 
 /datum/outfit/job/ncr/f13lieutenant
@@ -291,9 +296,9 @@ Sergeant First Class
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
 
 	loadout_options = list(
-	/datum/outfit/loadout/sfcinfantry, //R82
-	/datum/outfit/loadout/sfcsniper, //Sniper Rifle
-	/datum/outfit/loadout/sfcgarand //Old Glory
+	/datum/outfit/loadout/sfcinfantry, 	//R82
+	/datum/outfit/loadout/sfcsniper,	//Sniper Rifle
+	/datum/outfit/loadout/sfcgarand 	//Old Glory
 	)
 
 /datum/outfit/job/ncr/f13firstsergeant
@@ -362,9 +367,9 @@ Sergeant
 	exp_type = EXP_TYPE_NCRNCO
 
 	loadout_options = list(
-	/datum/outfit/loadout/serreg,
-	/datum/outfit/loadout/serlight,
-	/datum/outfit/loadout/sercqb
+	/datum/outfit/loadout/serreg,	//Service
+	/datum/outfit/loadout/serlight,	//M1 Carbine
+	/datum/outfit/loadout/sercqb	//Lever
 	)
 
 /datum/outfit/job/ncr/f13sergeant
@@ -439,9 +444,9 @@ Corporal
 	exp_type = EXP_TYPE_NCRTPR
 
 	loadout_options = list(
-	/datum/outfit/loadout/corpreg,
-	/datum/outfit/loadout/corplight,
-	/datum/outfit/loadout/corpcqb
+	/datum/outfit/loadout/corpreg,		//Service
+	/datum/outfit/loadout/corplight,	//M1 Carbine
+	/datum/outfit/loadout/corpcqb		//Hunting Shotgun
 	)
 
 /datum/outfit/job/ncr/f13corporal
@@ -654,9 +659,9 @@ Trooper
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/troopreg,
-	/datum/outfit/loadout/trooplight,
-	/datum/outfit/loadout/troopcqb
+	/datum/outfit/loadout/troopreg,		//Service
+	/datum/outfit/loadout/trooplight,	//M1 Carbine
+	/datum/outfit/loadout/troopcqb		//Hunting Shotgun
 	)
 
 /datum/outfit/job/ncr/f13trooper
@@ -840,10 +845,10 @@ Veteran Ranger
 	outfit = /datum/outfit/job/ncr/f13vetranger
 
 	loadout_options = list(
-	/datum/outfit/loadout/vrclassic, //AMR and Sequoia,
-	/datum/outfit/loadout/vrlite, //Rangemaster and Sequoia,
-	/datum/outfit/loadout/vrbrush, //Scoped Brushgun and Sequoia
-	/datum/outfit/loadout/vrassault
+	/datum/outfit/loadout/vrclassic,	//AMR
+	/datum/outfit/loadout/vrlite, 		//Rangemaster
+	/datum/outfit/loadout/vrbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/vrassault		//Scoped M14
 	)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -900,8 +905,7 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m762=3,
 		/obj/item/attachments/scope=1,
-		/obj/item/kitchen/knife/combat/bayonet=1
-		)
+		/obj/item/kitchen/knife/combat/bayonet=1)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
@@ -916,11 +920,11 @@ Veteran Ranger
 	outfit = /datum/outfit/job/ncr/f13ranger
 
 	loadout_options = list(
-	/datum/outfit/loadout/rangerrecon,
-	/datum/outfit/loadout/rangertrail,
-	/datum/outfit/loadout/rangerpatrol,
-	/datum/outfit/loadout/rangermedic,
-	/datum/outfit/loadout/rangerengineer
+	/datum/outfit/loadout/rangerrecon,		//Fast Armor
+	/datum/outfit/loadout/rangertrail,		//Fastest Armor
+	/datum/outfit/loadout/rangerpatrol,		//Heavy Armor
+	/datum/outfit/loadout/rangermedic,		//M1 Patrol Armor with Chemistry
+	/datum/outfit/loadout/rangerengineer	//M1 Patrol Armor with Tinkerer
 	)
 
 /datum/outfit/job/ncr/f13ranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -942,7 +946,6 @@ Veteran Ranger
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_ranger
 	r_pocket = 		/obj/item/binoculars
-	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1, \
 		/obj/item/restraints/handcuffs=1, \

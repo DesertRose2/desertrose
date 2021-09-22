@@ -277,13 +277,6 @@
 	item_state = "ncr_lt_armour"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
-	name = "Lieutenant Plate Carrier"
-	desc = "(VI) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
-	icon_state = "lt_pc"
-	item_state = "lt_pc"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	name = "NCR light infantry armor"
 	desc = "(IV) A specialized variant of the standard NCR armor given to light infantrymen."
@@ -448,19 +441,19 @@
 
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
-	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
+	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
 	item_state = "drill_hat"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
-	desc = "(V) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
+	desc = "(VI) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = null
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	name = "ranger combat helmet"
@@ -504,14 +497,14 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 	unique_reskin = list("Old School" = "ncr_patrol",
 						"Alterntive" = "ncr_patrol_alternative"
 						)
-	
+
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
 	desc = "(VII) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
@@ -531,6 +524,13 @@
 	name = "mutant ranger combat armor"
 	icon_state = "mutie_vet_ranger"
 	item_state = "mutie_vet_ranger"
+
+/obj/item/clothing/suit/armor/f13/ncrcfjacket
+	name = "NCRCF jacket"
+	icon_state = "ncrcfjacket"
+	item_state = "ncrcfjacket"
+	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
+	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 //Uniforms and Undersuits
 

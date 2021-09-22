@@ -212,62 +212,6 @@
 	slowdown = 0.3
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
-//NCR
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_coat
-	name = "NCR officer vest"
-	desc = "(VI) A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
-	icon_state = "ncr_officer_coat"
-	item_state = "ncr_officer_coat"
-
-
-//NCR Ranger
-
-/obj/item/clothing/suit/armor/f13/rangerrig
-	name = "chest gear harness"
-	desc = "(V) A handmade tactical rig. The actual rig is made of a black, fiberous cloth, being attached to a dusty desert-colored belt. A flask and two ammo pouches hang from the belt."
-	icon_state = "r_gear_rig"
-	item_state = "r_gear_rig"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/ncr_trenchcloak
-	name = "ranger trenchcloak"
-	desc = "(V) A cloak worn by Rangers of the New California Republic. Often seen on trail rangers or scouts, this cloak provides ample protection from the deserts harsh sunlight during the hours spent in the field and from the elements."
-	icon_state = "ncr_trenchcloak"
-	item_state = "ncr_trenchcloak"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/rangerrecon_jacket
-	name = "ranger jacket"
-	desc = "(V) A thick leather jacket, its colors already bleached from all the days it spent under the sun. It features a two headed standing bear on its back."
-	icon_state = "rangerjacket"
-	item_state = "rangerjacket"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/modif_r_vest
-	name = "subdued ranger vest"
-	desc = "(IV) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
-	icon_state = "modif_r_vest"
-	item_state = "modif_r_vest"
-	armor = list("tier" = 4, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
-	name = "ranger scout armor"
-	desc = "(VI) A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
-	icon_state = "refurb_scout"
-	item_state = "refurb_scout"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/ncrcfjacket
-	name = "NCRCF jacket"
-	icon_state = "ncrcfjacket"
-	item_state = "ncrcfjacket"
-	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
 //Oasis/Town
 /obj/item/clothing/suit/armor/f13/town
 	name = "town trenchcoat"
