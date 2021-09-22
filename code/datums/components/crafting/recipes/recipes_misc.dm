@@ -551,7 +551,7 @@
 	category = CAT_MISC
 
 /datum/crafting_recipe/experimental
-	name = "Tinker"
+	name = "Servo repair kit"
 	result = /obj/item/experimental
 	time = 30
 	reqs = list(/obj/item/crafting = 5)
