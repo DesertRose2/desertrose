@@ -907,14 +907,56 @@ Veteran Ranger
 		/obj/item/attachments/scope=1,
 		/obj/item/kitchen/knife/combat/bayonet=1)
 
+//NCR Ranger-Sergeant
+/datum/job/ncr/f13rangersergeant
+	title = "NCR Ranger Sergeant"
+	flag = F13RANGER_SARGE
+	total_positions = 1
+	spawn_positions = 1
+	description = "As an NCR Ranger Sergeant, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
+	supervisors = "Veteran Ranger"
+	selection_color = "#fff5cc"
+	display_order = JOB_DISPLAY_ORDER_RANGER_SERGEANT
+	outfit = /datum/outfit/job/ncr/f13rangersergeant
+
+/datum/outfit/job/ncr/f13rangersergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	//var/datum/martial_art/rangertakedown/RT = new
+	//RT.teach(H)
+
+/datum/outfit/job/ncr/f13rangersergeant
+	name = "NCR Ranger Sergeant"
+	jobtype = /datum/job/ncr/f13rangersergeant
+	id = 			/obj/item/card/id/dogtag/ncrranger
+	uniform = 		/obj/item/clothing/under/f13/ranger/trail
+	head =			/obj/item/clothing/head/helmet/f13/ncr/rangercombat/sergeant
+	suit =			/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
+	shoes =			/obj/item/clothing/shoes/f13/military/leather
+	glasses = 		/obj/item/clothing/glasses/sunglasses
+	belt =			/obj/item/storage/belt/military/reconbandolier
+	gloves =		/obj/item/clothing/gloves/patrol
+	ears = 			/obj/item/radio/headset/headset_ranger
+	r_pocket = 		/obj/item/binoculars
+	l_hand =		/obj/item/guncase
+	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid=1, \
+		/obj/item/storage/bag/money/small/ncr = 1, \
+		/obj/item/restraints/handcuffs=1, \
+		/obj/item/kitchen/knife/bowie=1, \
+		/obj/item/clothing/mask/gas/ranger = 1)
+
 //NCR Ranger
 /datum/job/ncr/f13ranger
 	title = "NCR Ranger"
 	flag = F13RANGER
-	total_positions = 4
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
-	supervisors = "Veteran Ranger"
+	supervisors = "Ranger Sergeant and Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
 	outfit = /datum/outfit/job/ncr/f13ranger//Gun Case = Scout Carbine, M1 Carbine, M1 Garand, DKS Sniper Rifle, Browning Auto5

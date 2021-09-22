@@ -12350,6 +12350,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrrangersergeant,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ldH" = (
