@@ -993,7 +993,7 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
@@ -1010,7 +1010,7 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol/insulated
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
