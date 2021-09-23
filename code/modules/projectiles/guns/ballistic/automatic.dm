@@ -19,6 +19,8 @@
 	burst_size = 2
 	burst_shot_delay = 3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	var/automatic_burst_overlay = TRUE
 	var/semi_auto = FALSE
 	var/auto_eject = 0
@@ -162,6 +164,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
 	automatic_burst_overlay = TRUE
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	slowdown = 0.2
 	fire_delay = 3.75
 	burst_shot_delay = 3
@@ -177,6 +181,8 @@
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m22smg
 	fire_sound = 'sound/f13weapons/american180.ogg'
@@ -196,6 +202,8 @@
 	mag_type = /obj/item/ammo_box/magazine/pps9mm
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	force = 15
 	burst_size = 2
 	fire_delay = 3.5
@@ -244,6 +252,9 @@
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_MUZZLE = 1)
+	can_bayonet = FALSE
 	force = 15
 	burst_size = 1
 	fire_delay = 4.5
@@ -286,6 +297,8 @@
 	icon_state = "mp5"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1)
 	burst_size = 2
 	burst_shot_delay = 1.5
 	w_class = WEIGHT_CLASS_BULKY
@@ -306,6 +319,8 @@
 	icon_state = "cg45"
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -325,6 +340,8 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM //You should be able to dual-wield these.
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1)
 	force = 15
 	burst_size = 1
 	fire_delay = 2
@@ -368,6 +385,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	burst_size = 1
 	fire_delay = 3
 	spread = 3
@@ -408,6 +427,8 @@
 	fire_sound = 'sound/f13weapons/greasegun.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHEMNT_SLOT_GRIP = 1)
 	force = 15
 	burst_size = 2
 	fire_delay = 2.5
@@ -449,6 +470,8 @@
 	icon_state = "tommygun"
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
@@ -507,6 +530,8 @@
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	attachment_max = 5
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
@@ -584,6 +609,8 @@
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	untinkerable = TRUE
 	burst_size = 1
 	fire_delay = 4
@@ -608,6 +635,8 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	can_scope = TRUE
 	can_bayonet = FALSE
 	scope_state = "kar_scope"
@@ -626,6 +655,8 @@
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
 	icon_state = "maxson"
 	item_state = "assault_carbine"
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	fire_delay = 3.5
 	spread = 2
 	can_attachments = FALSE
@@ -659,6 +690,8 @@
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4.5
@@ -690,6 +723,8 @@
 	item_state = "308"
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762
+	attachment_max = 5
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1, ATTACHMENT_SLOT_SCOPE = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	extra_damage = 7
@@ -720,6 +755,8 @@
 	icon_state = "m1garand"
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/garand308
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1, ATTACHMENT_SLOT_SCOPE = 1)
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	extra_damage = 5
 	fire_delay = 4
@@ -821,6 +858,8 @@
 	name = "R82 heavy service rifle"
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
 	icon = 'icons/obj/guns/ballistic/r82.dmi'
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	fire_delay = 5
 	extra_damage = 1
 	spread = 4
@@ -860,6 +899,8 @@
 	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
 	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	icon_state = "r91"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
@@ -887,6 +928,8 @@
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	suppressed = 1
@@ -923,6 +966,8 @@
 	icon_state = "type93"
 	item_state = "handmade_rifle"
 	icon = 'icons/obj/guns/ballistic/type93.dmi'
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_suppress = TRUE
@@ -947,6 +992,8 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	untinkerable = TRUE
 	burst_size = 3
 	burst_shot_delay = 1.5
@@ -971,6 +1018,8 @@
 	untinkerable = TRUE
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	burst_size = 2
 	fire_delay = 4.5
 	burst_shot_delay = 2.5
@@ -994,6 +1043,8 @@
 	icon_state = "g11"
 	item_state = "g11"
 	mag_type = /obj/item/ammo_box/magazine/m473
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	force = 25
@@ -1017,6 +1068,8 @@
 	item_state = "handmade_rifle"
 	icon = 'icons/obj/guns/ballistic/ak112.dmi'
 	mag_type = /obj/item/ammo_box/magazine/c5mm
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
@@ -1039,6 +1092,8 @@
 	item_state = "308"
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_SCOPE = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	extra_damage = 3
@@ -1094,6 +1149,8 @@
 	item_state = "R84"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/lmg
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_suppress = FALSE
@@ -1133,6 +1190,8 @@
 	icon_state = "bastard"
 	item_state = "bastard"
 	slowdown = 1
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	mag_type = /obj/item/ammo_box/magazine/lmg
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_attachments = TRUE
@@ -1178,6 +1237,8 @@
 	slowdown = 1
 	spread = 6
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
@@ -1230,6 +1291,8 @@
 	slot_flags = 0
 	slowdown = 1.25
 	mag_type = /obj/item/ammo_box/magazine/mm762
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	untinkerable = TRUE
 	can_suppress = FALSE
@@ -1318,6 +1381,8 @@
 	item_state = "M38"
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/mm50
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
 	untinkerable = TRUE
 	can_suppress = FALSE
@@ -1411,6 +1476,8 @@
 	item_state = "shotgun"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_sound = 'sound/f13weapons/gauss_rifle.ogg'
 	burst_size = 1
 	fire_delay = 12

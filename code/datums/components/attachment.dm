@@ -8,13 +8,13 @@
 
 //Basically the parts of guns where shit attaches to.
 #define COMSIG_ATTACHMENT_GET_SLOT "attach-slot-who"
-	#define ATTACHMENT_SLOT_MUZZLE "attach-slot-muzzle"
-	#define ATTACHMENT_SLOT_SCOPE "attach-slot-scope"
-	#define ATTACHMENT_SLOT_BARREL "attach-slot-barrel"
-	#define ATTACHMENT_SLOT_RAIL "attach-slot-rail"
-	#define ATTACHMENT_SLOT_GRIP "attach-slot-grip"
-	#define ATTACHMENT_SLOT_LASER_RECEIVER "attach-slot-receiver"
-	#define ATTACHMENT_SLOT_LASER_LENS "attach-slot-lens"
+#define ATTACHMENT_SLOT_MUZZLE "attach-slot-muzzle"
+#define ATTACHMENT_SLOT_SCOPE "attach-slot-scope"
+#define ATTACHMENT_SLOT_BARREL "attach-slot-barrel"
+#define ATTACHMENT_SLOT_RAIL "attach-slot-rail"
+#define ATTACHMENT_SLOT_GRIP "attach-slot-grip"
+#define ATTACHMENT_SLOT_LASER_RECEIVER "attach-slot-receiver"
+#define ATTACHMENT_SLOT_LASER_LENS "attach-slot-lens"
 
 /proc/attachment_slot_to_bflag(slot)
 	switch(slot)
