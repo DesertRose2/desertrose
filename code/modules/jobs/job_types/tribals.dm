@@ -16,6 +16,7 @@
 	box = /obj/item/storage/survivalkit_tribal
 	ears = null
 
+//Note: Tribals get a bunch of traits and unique crafting since they are limited lore-wise by their inability to use modern items. Don't balance factions around the tribal faction.
 /datum/outfit/job/tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -39,6 +40,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/nightshield)
 
 /*
 Tribal Chief

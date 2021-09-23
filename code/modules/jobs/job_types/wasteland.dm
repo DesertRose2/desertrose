@@ -531,7 +531,7 @@ Outlaw
 	head = /obj/item/clothing/head/helmet/skull
 	shoes = /obj/item/clothing/shoes/jackboots
 	uniform = /obj/item/clothing/under/jabroni
-	l_hand = /obj/item/gun/ballistic/automatic/greasegun
+	l_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,

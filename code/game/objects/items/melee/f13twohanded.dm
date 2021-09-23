@@ -7,6 +7,7 @@
 /obj/item/twohanded
 	var/icon_prefix = null
 	var/wielded = FALSE
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 
 /obj/item/twohanded/Initialize()
 	. = ..()
@@ -403,7 +404,7 @@
 /obj/item/twohanded/baseball
 	name = "baseball bat"
 	desc = "There ain't a skull in the league that can withstand a swatter."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "baseball0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -422,7 +423,7 @@
 /obj/item/twohanded/baseball/spiked
 	name = "spiked baseball bat"
 	desc = "There ain't a skull in the league that can withstand a swatter, especially with large nails drilled through the top of it."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "baseballspike0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -437,7 +438,7 @@
 /obj/item/twohanded/sledgehammer
 	name = "sledgehammer"
 	desc = "A heavy sledgehammer that lost most of its use besides caving in heads."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "sledgehammer0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -471,7 +472,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 /obj/item/twohanded/sledgehammer/atomsjudgement
 	name = "atom's judgement"
 	desc = "A heavy sledgehammer manufacted from ultra-dense materials. The head of this hammer seems to of been replaced with four fusion cores, shorted to discharge its fissle material."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "atom_hammer0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -491,7 +492,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 /obj/item/twohanded/sledgehammer/warmace
 	name = "war mace"
 	desc = "A heavy wooden club with a turquoise head."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "warmace0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -512,7 +513,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 /obj/item/twohanded/sledgehammer/shamanstaff
 	name = "shaman staff"
 	desc = "An intricate staff, carried for centuries by the shaman class of the Wayfayer Tribe."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "shamanstaff0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
@@ -530,7 +531,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 /obj/item/twohanded/sledgehammer/marsstaff
 	name = "Staff of Mars"
 	desc = "A staff crafted by the guidance of Mars."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "mars_staff0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'

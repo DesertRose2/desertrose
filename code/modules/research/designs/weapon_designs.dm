@@ -669,6 +669,6 @@
 	id = "maxson_5mm"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 20000, /datum/material/plastic = 10000, /datum/material/glass = 10000, /datum/material/titanium = 15000)
-	build_path = /obj/item/modkit/maxson
+	build_path = /obj/item/modkit/maxson_c5mm
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

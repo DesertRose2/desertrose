@@ -1413,8 +1413,8 @@ obj/item/storage/box/stingbangs
 		new /obj/item/card/id/dogtag/legfollower(src)
 
 /obj/item/storage/box/ids/followers
-	name = "box of spare volunteer ids"
-	desc = "IDs for issue to new Volunteers"
+	name = "box of assistant ids"
+	desc = "IDs for issue to weekly assistants"
 
 /obj/item/storage/box/ids/followers/PopulateContents()
 	for(var/i in 1 to 7)

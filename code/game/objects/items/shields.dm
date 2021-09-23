@@ -1,6 +1,8 @@
+//In this document: Shield template, riot shield, bulletproof shield, buckler, legion shield, scrap shield, energy shield.
+
 /obj/item/shield
-	name = "shield"
-	icon = 'icons/obj/shields.dmi'
+	name = "shield template"
+	icon = 'icons/fallout/objects/melee/shields.dmi'
 	item_flags = ITEM_CAN_BLOCK
 	block_parry_data = /datum/block_parry_data/shield
 	armor = list("linemelee" = 150, "linebullet" = 150, "linelaser" = 150, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70)
@@ -183,6 +185,7 @@
 /obj/item/shield/on_active_block(mob/living/owner, atom/object, damage, damage_blocked, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return, override_direction)
 	on_shield_block(owner, object, damage, attack_text, attack_type, armour_penetration, attacker, def_zone, final_block_chance)
 
+//Basic riotshield, meant to protect from melee and thrown weapons.
 /obj/item/shield/riot
 	name = "riot shield"
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
@@ -245,6 +248,7 @@
 	take_damage(damage)
 	return ..()
 
+//Laserproof riot shield 				- Basically unused. Maybe one day or for events. Has a decent sprite too.
 /obj/item/shield/riot/laser_proof
 	name = "laser resistant shield"
 	desc = "A far more frail shield made of dark glass meant to block lasers but suffers from being being weak to ballistic projectiles."
@@ -256,62 +260,30 @@
 	shield_flags = SHIELD_FLAGS_DEFAULT
 	max_integrity = 300
 
+//Bulletproof riot shield
 obj/item/shield/riot/bullet_proof
 	name = "bullet resistant shield"
 	desc = "A far more frail shield made of resistant plastics and kevlar meant to block ballistics."
 	armor = list("linemelee" = 80, "linebullet" = 400, "laser" = 0, "energy" = 0, "bomb" = -40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
+	icon_state = "riot_bulletproof"
+	item_state = "riot_bulletproof"
+	shield_flags = SHIELD_FLAGS_DEFAULT
 	max_integrity = 300
 
-/obj/item/shield/riot/roman
-	name = "\improper Roman shield"
-	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>."
-	icon_state = "roman_shield"
-	item_state = "roman_shield"
-	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	repair_material = /obj/item/stack/sheet/mineral/wood
-	shield_flags = SHIELD_FLAGS_DEFAULT
-	max_integrity = 250
-
-/obj/item/shield/riot/roman/fake
-	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
-	block_chance = 0
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	max_integrity = 40
-
-/obj/item/shield/riot/roman/shatter(mob/living/carbon/human/owner)
-	playsound(owner, 'sound/effects/grillehit.ogg', 100)
-	new /obj/item/stack/sheet/metal(get_turf(src))
-
-/obj/item/shield/riot/buckler
-	name = "wooden buckler"
-	desc = "A medieval wooden buckler."
-	icon_state = "buckler"
-	item_state = "buckler"
-	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 10)
-	resistance_flags = FLAMMABLE
-	repair_material = /obj/item/stack/sheet/mineral/wood
-	block_chance = 30
-	shield_flags = SHIELD_FLAGS_DEFAULT
-	max_integrity = 150
-
-/obj/item/shield/riot/buckler/shatter(mob/living/carbon/human/owner)
-	playsound(owner, 'sound/effects/bang.ogg', 50)
-	new /obj/item/stack/sheet/mineral/wood(get_turf(src))
-
+//Telescopic Riot Shield				- Printed at protolathes. Keep weak due to its compact nature.
 /obj/item/shield/riot/tele
 	name = "telescopic shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."
 	icon_state = "teleriot0"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	armor = list("linemelee" = 60, "linebullet" = -40, "laser" = 200, "energy" = 40, "bomb" = -60, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
 	slot_flags = null
 	force = 3
 	throwforce = 3
 	throw_speed = 3
 	throw_range = 4
+	max_integrity = 270
 	w_class = WEIGHT_CLASS_NORMAL
 	var/active = FALSE
 
@@ -344,111 +316,27 @@ obj/item/shield/riot/bullet_proof
 		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
 	add_fingerprint(user)
 
-/obj/item/shield/makeshift
-	name = "metal shield"
-	desc = "A large shield made of wired and welded sheets of metal. The handle is made of cloth and leather making it unwieldy."
-	armor = list("linemelee" = 70, "linebullet" = 70, "linelaser" = 70, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 80)
-	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	item_state = "metal"
-	icon_state = "makeshift_shield"
-	custom_materials = list(/datum/material/iron = 18000)
-	slot_flags = null
-	max_integrity = 300 //Made of metal welded together its strong but not unkillable
-	force = 10
-	throwforce = 7
-
-/obj/item/shield/riot/tower
-	name = "tower shield"
-	desc = "A massive shield that can block a lot of attacks, can take a lot of abuse before braking."
-	armor = list("linemelee" = 900, "linebullet" = 900, "linelaser" = 300, "energy" = 60, "bomb" = 90, "bio" = 90, "rad" = 0, "fire" = 90, "acid" = 10) //Armor for the item, dosnt transfer to user
-	item_state = "metal"
-	icon_state = "metal"
-	force = 16
-	slowdown = 2
-	throwforce = 15 //Massive pice of metal
-	w_class = WEIGHT_CLASS_HUGE
-	item_flags = SLOWS_WHILE_IN_HAND
-	shield_flags = SHIELD_FLAGS_DEFAULT
-
-/obj/item/shield/riot/tower/swat
-	name = "swat shield"
-	desc = "A massive, heavy shield that can block a lot of attacks, can take a lot of abuse before breaking."
-	max_integrity = 250
-
-/obj/item/shield/riot/implant
-	name = "telescoping shield implant"
-	desc = "A compact, arm-mounted telescopic shield. While nigh-indestructible when powered by a host user, it will eventually overload from damage. Recharges while inside its implant."
-	item_state = "metal"
-	icon_state = "metal"
-	slowdown = 1
-	shield_flags = SHIELD_FLAGS_DEFAULT
-	max_integrity = 100
-	obj_integrity = 100
-	can_shatter = FALSE
-	item_flags = SLOWS_WHILE_IN_HAND | ITEM_CAN_BLOCK
-	var/recharge_timerid
-	var/recharge_delay = 15 SECONDS
-
-/// Entirely overriden take_damage. This shouldn't exist outside of an implant (other than maybe christmas).
-/obj/item/shield/riot/implant/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir, armour_penetration = 0)
-	obj_integrity -= damage_amount
-	if(obj_integrity < 0)
-		obj_integrity = 0
-	if(obj_integrity == 0)
-		if(ismob(loc))
-			var/mob/living/L = loc
-			playsound(src, 'sound/effects/glassbr3.ogg', 100)
-			L.visible_message("<span class='boldwarning'>[src] overloads from the damage sustained!</span>")
-			L.dropItemToGround(src)			//implant component catch hook will grab it.
-
-/obj/item/shield/riot/implant/Moved()
-	. = ..()
-	if(istype(loc, /obj/item/organ/cyberimp/arm/shield))
-		recharge_timerid = addtimer(CALLBACK(src, .proc/recharge), recharge_delay, flags = TIMER_STOPPABLE)
-	else		//extending
-		if(recharge_timerid)
-			deltimer(recharge_timerid)
-			recharge_timerid = null
-
-/obj/item/shield/riot/implant/proc/recharge()
-	if(obj_integrity == max_integrity)
-		return
-	obj_integrity = max_integrity
-	if(ismob(loc.loc))		//cyberimplant.user
-		to_chat(loc, "<span class='notice'>[src] has recharged its reinforcement matrix and is ready for use!</span>")
-
-/obj/item/shield/legion
-	name = "legion shield"
-	desc = "A well balanced hard wood shield, fashioned together with long iron bands. It has a legion emblem charred into the inside."
-	icon_state = "roman_shield"
-	item_state = "roman_shield"
+//Legion shield					- Superior version of the Legion shield.
+/obj/item/shield/riot/legion
+	name = "Legion shield"
+	desc = "Heavy shield with metal pieces bolted to a wood backing, with a painted yellow bull insignia in the centre. Bears an inscription on the inside: <i>\"Legio, Aeterna! Aeterna, Victrix! \"</i>."
+	icon_state = "legion_shield"
+	item_state = "legion_shield"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
-	force = 20
-	throwforce = 5
-	throw_speed = 2
-	throw_range = 3
-	block_chance = 40
+	force = 13
+	max_integrity = 300
+	custom_materials = list(/datum/material/wood = 16000, /datum/material/iron= 16000)
+	repair_material = /obj/item/stack/sheet/mineral/wood
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb = list("shoved", "bashed")
-	var/cooldown = 0 //shield bash cooldown. based on world.time
 
-/obj/item/shield/legion/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item))
-		if(cooldown < world.time - 25)
-			user.visible_message("<span class='warning'>[user] bashes [src] with [W]!</span>")
-			playsound(user.loc, 'sound/effects/shieldbash.ogg', 50, 1)
-			cooldown = world.time
-	else
-		return ..()
+/obj/item/shield/riot/legion/shatter(mob/living/carbon/human/owner)
+	playsound(owner, 'sound/effects/grillehit.ogg', 100)
+	new /obj/item/stack/sheet/metal(get_turf(src))
 
-/obj/item/shield/riot/roman/fake
-	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
-	block_chance = 0
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
+//Legion buckler shield			- Inferior version of the Legion shield.
 /obj/item/shield/legion/buckler
 	name = "legion buckler"
 	desc = "A lightweight well balanced shield made out of a hard oak and lashed together with solid iron bands. It has a legion emblem charred onto the inside."
@@ -458,6 +346,7 @@ obj/item/shield/riot/bullet_proof
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	custom_materials = list()
 	resistance_flags = FLAMMABLE
+	max_integrity = 200
 	force = 15
 	throwforce = 15
 	throw_speed = 4
@@ -465,6 +354,74 @@ obj/item/shield/riot/bullet_proof
 	block_chance = 25
 	armor = list("linemelee" = 80, "linebullet" = 80, "linelaser" = 80, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 70)
 
+
+//Buckler Wooden Shield			- Cheapest, shittiest shield there is. Found on raider corpses from time to time as well as trash.
+/obj/item/shield/riot/buckler
+	name = "wooden buckler"
+	desc = "A medieval wooden buckler."
+	icon_state = "buckler"
+	item_state = "buckler"
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 10)
+	resistance_flags = FLAMMABLE
+	repair_material = /obj/item/stack/sheet/mineral/wood
+	block_chance = 30
+	shield_flags = SHIELD_FLAGS_DEFAULT
+	max_integrity = 150
+
+/obj/item/shield/riot/buckler/shatter(mob/living/carbon/human/owner)
+	playsound(owner, 'sound/effects/bang.ogg', 50)
+	new /obj/item/stack/sheet/mineral/wood(get_turf(src))
+
+//Improvised metal shield				- Not exactly a bad shield but it's made of literal scrap.
+/obj/item/shield/makeshift
+	name = "scrap shield"
+	desc = "A shield made of welded, riveted and glued metal sheets. Crude yet reliant for its cost, having cloth protecting the user from the sharp edges and a leather strap for the wearer to grip it by."
+	armor = list("linemelee" = 70, "linebullet" = 70, "linelaser" = 70, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 80)
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	item_state = "metal"
+	icon_state = "makeshift_shield"
+	custom_materials = list(/datum/material/iron = 18000)
+	slot_flags = null
+	max_integrity = 250 //Made of metal welded together its strong but not unkillable
+	force = 10
+	throwforce = 7
+	w_class = WEIGHT_CLASS_BULKY
+
+//Tribal shield							- It's literally a scrap stopsign. Weak, but funny and setting appropriate.
+/obj/item/shield/tribal
+	name = "tribal shield"
+	desc = "A hexagonal based shield that bears some strange words of the Old World on it. Or maybe it just says 'stop'.. either-or."
+	icon_state = "shield_tribal"
+	item_state = "shield_tribal"
+	force = 20
+	throwforce = 5
+	throw_speed = 2
+	throw_range = 3
+	block_chance = 40
+	max_integrity = 200
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	w_class = WEIGHT_CLASS_NORMAL
+
+//Tribal nightmare stalker lined siheld
+/obj/item/shield/riot/tribal/nightstalker
+	name = "nightstalker shield"
+	desc = "An oval shaped shield made of strong wood and nightstalker skin."
+	icon_state = "bnightstalker"
+	item_state = "bnightstalker"
+	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
+	max_integrity = 300
+
+
+
+
+
+
+//Old legacy snowflake shield for admin events or maybe Enclave garbage. Should possibly be removed but it holds potential for usage.
 
 /obj/item/shield/energy
 	name = "energy combat shield"
@@ -522,25 +479,3 @@ obj/item/shield/riot/bullet_proof
 		playsound(user, 'sound/weapons/saberoff.ogg', 35, TRUE)
 		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
 	add_fingerprint(user)
-
-/obj/item/shield/tribal
-	name = "tribal shield"
-	desc = "An oval shaped shield made of strong wood and brahmin skin."
-	icon_state = "btribal"
-	item_state = "btribal"
-	force = 20
-	throwforce = 5
-	throw_speed = 2
-	throw_range = 3
-	block_chance = 40
-	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	w_class = WEIGHT_CLASS_BULKY
-
-/obj/item/shield/riot/tribal/nightstalker
-	name = "nightstalker shield"
-	desc = "An oval shaped shield made of strong wood and nightstalker skin."
-	icon_state = "bnightstalker"
-	item_state = "bnightstalker"
-	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'

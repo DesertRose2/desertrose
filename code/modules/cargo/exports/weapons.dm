@@ -6,12 +6,12 @@
 /datum/export/weapon/makeshift_shield
 	cost = 30
 	unit_name = "nonstandard shield"
-	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/roman, /obj/item/shield/riot/buckler, /obj/item/shield/makeshift)
+	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/buckler, /obj/item/shield/makeshift)
 
 /datum/export/weapon/riot_shield
 	cost = 50
 	unit_name = "riot shield"
-	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/tower)
+	export_types = list(/obj/item/shield/riot)
 
 /datum/export/weapon/riot_shield
 	cost = 70
