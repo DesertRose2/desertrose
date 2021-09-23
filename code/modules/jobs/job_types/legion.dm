@@ -277,6 +277,7 @@ Vexillarius
 	flag = F13VEXILLARIUS
 	total_positions = 1
 	spawn_positions = 1
+	selection_color = "#ffdddd"
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
@@ -324,7 +325,7 @@ Vexillarius
 	name = "Ursa (Bear)"
 	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	l_hand = 	/obj/item/gun/ballistic/revolver/hunting
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570=3,
 		/obj/item/nullrod/claymore/chainsaw_sword=1
@@ -404,7 +405,7 @@ Decanii
 /datum/outfit/loadout/vetdecanmelee
 	name = "Triarius (Melee) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/hunting
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
@@ -472,7 +473,7 @@ Decanii
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
-		/obj/item/shield/legion=1,
+		/obj/item/shield/riot/legion=1,
 		/obj/item/gun/ballistic/revolver/colt357=1,
 		/obj/item/ammo_box/a357=3
 	)
@@ -480,7 +481,7 @@ Decanii
 /datum/outfit/loadout/primedecmelee
 	name = "Triarius (Melee) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/revolver44
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance=1,
 		/obj/item/storage/backpack/spearquiver=1,
@@ -546,7 +547,7 @@ Decanii
 /datum/outfit/loadout/recdecshock
 	name = "Testudo (Shock) Officer"
 	l_hand =	/obj/item/gun/ballistic/shotgun/lever
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1
@@ -555,7 +556,7 @@ Decanii
 /datum/outfit/loadout/recdecmelee
 	name = "Phalanxi (Melee) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/revolver45
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance=1,
 		/obj/item/storage/backpack/spearquiver=1,
@@ -734,7 +735,7 @@ Veteran Legionary
 /datum/outfit/loadout/vetmelee
 	name = "Triarius (Melee)"
 	l_hand = 	/obj/item/gun/ballistic/revolver/hunting
-	r_hand = 	/obj/item/shield/legion
+	r_hand = 	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/twohanded/fireaxe/bmprsword=1,
@@ -805,7 +806,7 @@ Prime Legionairy
 /datum/outfit/loadout/primemelee
 	name = "Principes (Melee)"
 	l_hand =	/obj/item/gun/ballistic/revolver/revolver44
-	r_hand =	/obj/item/shield/legion
+	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance=1,
 		/obj/item/storage/backpack/spearquiver=1,

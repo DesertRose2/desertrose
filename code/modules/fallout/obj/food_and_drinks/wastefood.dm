@@ -545,7 +545,7 @@
 
 /obj/item/seeds/lavaland/inocybe
 	name = "pack of inocybe mycelium"
-	desc = "This mycelium grows into an inocybe mushroom, a species of Lavaland origin with hallucinatory and toxic effects."
+	desc = "This mycelium grows into an inocybe mushroom, a species of Wayfarer origin, found on the peaks of Winterhome, these Mushrooms are used by Shamans to reach a heighten sense of reality in order to reach the spirit world."
 	icon_state = "mycelium-inocybe"
 	species = "inocybe"
 	plantname = "Inocybe Mushrooms"

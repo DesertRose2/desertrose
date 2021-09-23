@@ -278,14 +278,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/head/hooded/cloakhood/hhunter
-	name = "Razorclaw helm"
-	icon_state = "rchelmet"
-	desc = "(VI) The skull of a legendary deathclaw."
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	heat_protection = HEAD
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	
 /obj/item/clothing/suit/armor/f13/nightstalkerheavyarmor
 	name = "Nightstalker Heavy Armor"
 	icon_state = "nightstalker_tribal_armor"

@@ -612,8 +612,8 @@
 		//datum/outfit/loadout/chef
 		)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN)
-	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_KITCHEN, ACCESS_VAULT_F13)
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_KITCHEN, ACCESS_VAULT_F13)
 
 /datum/outfit/job/vtcc/f13innkeeper/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
