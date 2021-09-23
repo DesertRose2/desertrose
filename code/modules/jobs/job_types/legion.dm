@@ -1078,7 +1078,7 @@ Explorer
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/loadout/excursor
-	name = "Excursor"	
+	name = "Excursor"
 	suit_store = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=2,
@@ -1133,7 +1133,6 @@ Auxilia
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /datum/outfit/loadout/auxengi
