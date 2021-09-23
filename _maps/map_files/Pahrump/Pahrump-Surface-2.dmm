@@ -6889,6 +6889,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"ddq" = (
+/obj/machinery/workbench/pa,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "ddv" = (
 /obj/effect/decal/cleanable/generic,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -35638,6 +35644,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -37109,6 +37116,7 @@
 	pixel_y = 12
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/workbench/pa,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -44216,6 +44224,15 @@
 /obj/structure/tires/two,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"tDx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "tDH" = (
 /obj/structure/debris/v4,
 /obj/effect/decal/cleanable/dirt,
@@ -57035,7 +57052,7 @@ kzs
 sNC
 kzs
 ixH
-kzs
+tDx
 sed
 sHu
 xEc
@@ -69816,7 +69833,7 @@ sfB
 wOj
 iBT
 xLh
-xLh
+ddq
 qAL
 rrx
 xLh

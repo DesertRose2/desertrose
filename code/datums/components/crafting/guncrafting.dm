@@ -117,6 +117,13 @@
 	desc = "An assembly bench, useful for assembling complex parts into semi-finished products."
 	machine_tool_behaviour = list(TOOL_ASSWORKBENCH)
 
+/obj/machinery/workbench/pa
+	name = "power armour work station"
+	icon_state = "pa_station"
+	desc = "A fairly large frame used for the maintenance and modification of power armour."
+	machine_tool_behaviour = list(TOOL_PASTATION)
+	density = FALSE
+
 /obj/machinery/workbench/fbench
 	var/obj/item/prefabs/mould
 	name = "moulding workbench"
