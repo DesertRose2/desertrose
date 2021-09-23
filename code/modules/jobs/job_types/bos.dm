@@ -139,9 +139,9 @@ Head Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
 	belt =			/obj/item/storage/belt/military/assault
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck =			/obj/item/clothing/neck/mantle/bos/paladin
@@ -207,7 +207,6 @@ Head Scribe
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
@@ -300,7 +299,6 @@ Knight Captain
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -318,9 +316,10 @@ Knight Captain
 		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/construction/rcd/industrial=1,
-		/obj/item/gun/energy/laser/scatter=1,
+		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/clothing/glasses/meson=1
+		/obj/item/clothing/glasses/meson=1,
+		/obj/item/storage/belt/holster=1,
 		)
 
 /datum/outfit/loadout/capscout
@@ -332,7 +331,8 @@ Knight Captain
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
 		/obj/item/gun/energy/laser/wattz2k/extended=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/clothing/neck/mantle/bos/knight=1
 	)
 
 /datum/outfit/loadout/capwarden
@@ -346,7 +346,8 @@ Knight Captain
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
-		/obj/item/clothing/glasses/sunglasses/big=1
+		/obj/item/clothing/glasses/sunglasses/big=1,
+		/obj/item/clothing/neck/mantle/bos/knight=1
 	)
 
 /*
@@ -391,7 +392,7 @@ Senior Paladin
 	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform = 		/obj/item/clothing/under/f13/recon
@@ -468,7 +469,7 @@ Paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	glasses=		/obj/item/clothing/glasses/meson
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -553,7 +554,6 @@ Proctor
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13seniorscribe
 	name = "Proctor"
@@ -637,7 +637,6 @@ Scribe
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13scribe
 	name = "Scribe"
@@ -764,7 +763,7 @@ datum/job/bos/f13seniorknight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
+	neck = 			/obj/item/clothing/neck/mantle/bos/knight
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
@@ -855,7 +854,7 @@ Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
+	neck = 			/obj/item/clothing/neck/mantle/bos/knight
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE

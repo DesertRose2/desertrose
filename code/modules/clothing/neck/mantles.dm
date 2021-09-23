@@ -49,9 +49,16 @@
 	icon_state = "bosshouldercape_r"
 
 /obj/item/clothing/neck/mantle/bos/paladin
-	name = "Paladin cape"
-	desc = "This stylish deep crimson cape is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
+	name = "Paladin cloak"
+	desc = "This stylish dark navy cloak that is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
 	icon_state = "paladin"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
+	alternate_worn_layer = UNDER_HAIR_LAYER
+
+/obj/item/clothing/neck/mantle/bos/knight
+	name = "Knight mantle"
+	desc = "A Navy blue shoulder covering worn by Brotherhood Knights, a shoulder holster is added for utility."
+	icon_state = "knight"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
 /obj/item/clothing/neck/mantle/ranger
@@ -147,7 +154,7 @@
 	unique_reskin = list("cloak" = "cecloak",
 						"alternative" = "cecloak2"
 						)
-	
+
 /obj/item/clothing/neck/mantle/rd
 	name = "research director's cloak"
 	desc = "Worn by Sciencia, thaumaturges and researchers of the universe."

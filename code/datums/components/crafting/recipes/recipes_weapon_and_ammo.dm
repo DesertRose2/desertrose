@@ -42,6 +42,16 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
+/datum/crafting_recipe/buckler
+	name = "Wooden Buckler"
+	result = /obj/item/shield/riot/buckler
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 15,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_SCREWDRIVER)
+	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+
 /datum/crafting_recipe/twohanded/spear
 	name = "Spear"
 	result = /obj/item/twohanded/spear
@@ -633,7 +643,7 @@
 //grease gun
 /datum/crafting_recipe/grease_gun
 	name = "Grease gun"
-	result = /obj/item/gun/ballistic/automatic/greasegun
+	result = /obj/item/gun/ballistic/automatic/smg/greasegun
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 3

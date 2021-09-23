@@ -414,10 +414,21 @@
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
 /obj/item/card/id/silver/followers
-	name = "spare volunteer ID"
+	name = "Followers Assistant ID"
 	desc = "A silver ID card that gives access to the Followers clinic"
 	access = list(ACCESS_FOLLOWER)
-	assignment = "Followers Volunteer"
+	assignment = "Followers Assistant"
+
+/obj/item/card/id/silver/followers/attack_self(mob/user)
+	if(isliving(user))
+		var/mob/living/living_user = user
+		if(alert(user, "Action", "Volunteer Card", "Show", "Write Name") == "Write Name")
+			registered_name = living_user.real_name
+			update_label()
+			to_chat(user, "<span class='notice'>You successfully write your name on the ID card.</span>")
+			return
+	..()
+
 
 /obj/item/card/id/silver/reaper
 	name = "Thirteen's ID Card (Reaper)"

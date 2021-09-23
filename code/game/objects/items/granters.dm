@@ -842,14 +842,6 @@
 	traitname = "advanced surgery"
 	remarks = list("Negligence lawsuits are bad for buisness...", "Chlorine gas is not a healthy sedative...", "Pharmacists are just drug dealers with a license...")
 
-/obj/item/book/granter/trait/tinkering
-	name = "Tinkering for Wastelander"
-	desc = "A useful book on tinkering."
-	oneuse = TRUE
-	granted_trait = TRAIT_MASTER_GUNSMITH
-	traitname = "tinkering"
-	remarks = list("Experiment!", "You can always try 3 times...", "Be careful with loaded guns...")
-
 /obj/item/book/granter/trait/spirit_teachings
 	name = "Teachings of the Machine Spirits"
 	desc = "A book all about tribal life among the Machine Spirits."
@@ -958,9 +950,6 @@
 			if("Power Armor")
 				granted_trait = TRAIT_PA_WEAR
 				traitname = "advanced armor"
-			if("Tinkerer")
-				granted_trait = TRAIT_MASTER_GUNSMITH
-				traitname = "tinkering"
 			if("Iron Fist")
 				granted_trait = TRAIT_IRONFIST
 				traitname = "punching"
@@ -995,9 +984,6 @@
 			if("Salvager")
 				granted_trait = TRAIT_TECHNOPHREAK
 				traitname = "salvaging"
-			if("Tinkerer")
-				granted_trait = TRAIT_MASTER_GUNSMITH
-				traitname = "tinkering"
 			if("Chem User")
 				granted_trait = TRAIT_CHEM_USER
 				traitname = "chem use"
