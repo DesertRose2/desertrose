@@ -992,8 +992,8 @@
 				/obj/item/stock_parts/cell/ammo/ecp,)
 
 /obj/item/experimental
-	name = "Experimental component"
-	desc = "What could this do..."
+	name = "Servo repair kit"
+	desc = "These appear to be used for repairing powerarmor sets..."
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "radio-multitool"
 
@@ -1003,10 +1003,10 @@
 		to_chat(usr, "You can't improve [W.name]...")
 		return
 	if(istype(W, /obj/item/gun/ballistic))
-		gun(W, user)
+		to_chat(usr, "You can't improve [W.name]...")
 		return
 	if(istype(W, /obj/item/gun/energy))
-		egun(W, user)
+		to_chat(usr, "You can't improve [W.name]...")
 		return
 	if(istype(W, /obj/item/clothing/suit/armor/f13/power_armor))
 		parmor(W, user)
@@ -1015,10 +1015,7 @@
 		pahat(W, user)
 		return
 	if(istype(W, /obj/item/clothing/suit/armor))
-		armor(W, user)
-		return
-	if(istype(W, /obj/item/clothing/head))
-		hat(W, user)
+		to_chat(usr, "You can't improve [W.name]...")
 		return
 
 /obj/item
@@ -1032,189 +1029,6 @@
 		new item(user.loc)
 		return
 	to_chat(user,"You destroy the item in the process.")
-
-/obj/item/experimental/proc/gun(obj/item/W, mob/user)
-	if(W.untinkerable == TRUE)
-		to_chat(usr, "You can't improve [W.name]...")
-		return
-	var/obj/item/gun/ballistic/B = W
-
-	var/dmgmod = rand(-10,10)
-	var/penmod = rand(-10,10)
-	var/spdmod = rand(-10,10)
-	var/overall = dmgmod+penmod-spdmod
-	var/prefix
-
-	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 2
-		penmod += 2
-		spdmod += 2
-		overall = dmgmod+penmod-spdmod
-
-	if(B.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item.")
-		return
-	if(B.tinkered == 1)
-		reroll(B,user)
-		return
-	if(B.tinkered > 1 && HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item too much.")
-		return
-
-	switch(overall)
-		if(-30 to -15)
-			prefix = "Ruined "
-		if(-15 to 0)
-			prefix = "Inferior "
-		if(0 to 15)
-			prefix = "Improved "
-		if(15 to 30)
-			prefix = "Superior "
-		if(30 to 100)
-			prefix = "Legendary "
-
-	B.extra_damage += (dmgmod/2.5)
-	B.extra_penetration += (penmod/70)
-	B.fire_delay += (spdmod/5)
-	B.name = prefix + B.name
-	B.tinkered += 1
-	B.desc += " Extra damage: [B.extra_damage]; Extra penetration: [B.extra_penetration]; Fire delay: [B.fire_delay]"
-
-	to_chat(usr, "You tinker with the gun making [W.name]...")
-	qdel(src)
-
-
-/obj/item/experimental/proc/egun(obj/item/W, mob/user)
-	var/obj/item/gun/energy/E = W
-
-	var/dmgmod = rand(-10,10)
-	var/penmod = rand(-10,10)
-	var/spdmod = rand(-10,10)
-	var/overall = dmgmod+penmod-spdmod
-	var/prefix
-
-	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		dmgmod += 2
-		penmod += 2
-		spdmod += 2
-		overall = dmgmod+penmod-spdmod
-
-	if(E.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item.")
-		return
-	if(E.tinkered == 1)
-		reroll(E,user)
-		return
-	if(E.tinkered > 1 && HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item too much.")
-		return
-
-	switch(overall)
-		if(-30 to -15)
-			prefix = "Ruined "
-		if(-15 to 0)
-			prefix = "Inferior "
-		if(0 to 15)
-			prefix = "Improved "
-		if(15 to 30)
-			prefix = "Superior "
-		if(30 to 100)
-			prefix = "Legendary "
-
-	E.extra_damage += (dmgmod/2.5)
-	E.extra_penetration += (penmod/60)
-	E.fire_delay += (spdmod/5)
-	//E.ammo_type[1].delay += spdmod
-	E.name = prefix + E.name
-	E.tinkered += 1
-	E.desc += " Extra damage: [E.extra_damage]; Extra penetration: [E.extra_penetration]; Fire delay: [E.fire_delay]"
-
-	to_chat(usr, "You tinker with the energy gun making [W.name]...")
-	qdel(src)
-
-/obj/item/experimental/proc/armor(obj/item/W, mob/user)
-	var/obj/item/clothing/suit/armor/A = W
-
-	var/tiermod = rand(-10,10)
-	var/prefix
-	var/overall = tiermod
-
-	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 2
-
-	if(A.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item.")
-		return
-	if(A.tinkered == 1)
-		reroll(A,user)
-		return
-	if(A.tinkered > 1 && HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item too much.")
-		return
-
-	switch(overall)
-		if(-20 to -10)
-			prefix = "Ruined "
-		if(-10 to 0)
-			prefix = "Inferior "
-		if(0 to 10)
-			prefix = "Improved "
-		if(10 to 20)
-			prefix = "Superior "
-		if(20 to 100)
-			prefix = "Legendary "
-
-	A.armor.linemelee += tiermod*3
-	A.armor.linebullet += tiermod*3
-	A.armor.linelaser += tiermod*3
-	A.name = prefix + A.name
-	A.tinkered += 1
-	A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]"
-
-	to_chat(usr, "You tinker with the armor making [W.name]...")
-	qdel(src)
-
-/obj/item/experimental/proc/hat(obj/item/W, mob/user)
-	var/obj/item/clothing/head/H = W
-
-	var/tiermod = rand(-10,10)
-	var/prefix
-	var/overall = tiermod
-
-	if(HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		tiermod += 2
-
-	if(H.tinkered > 0 && !HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item.")
-		return
-	if(H.tinkered == 1)
-		reroll(H,user)
-		return
-	if(H.tinkered > 1 && HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
-		to_chat(usr, "You have already tinkered with this item too much.")
-		return
-
-	switch(overall)
-		if(-20 to -10)
-			prefix = "Ruined "
-		if(-10 to 0)
-			prefix = "Inferior "
-		if(0 to 10)
-			prefix = "Improved "
-		if(10 to 20)
-			prefix = "Superior "
-		if(20 to 100)
-			prefix = "Legendary "
-
-	H.armor.linemelee += tiermod*3
-	H.armor.linebullet += tiermod*3
-	H.armor.linelaser += tiermod*3
-	H.name = prefix + H.name
-	H.tinkered += 1
-	H.desc += " Armor: Melee: [H.armor.linemelee], Bullet: [H.armor.linebullet], Laser: [H.armor.linelaser]"
-
-	to_chat(usr, "You tinker with the armor making [W.name]...")
-	qdel(src)
 
 /obj/item/experimental/proc/parmor(obj/item/W, mob/user)
 	var/obj/item/clothing/suit/armor/f13/power_armor/A = W
@@ -1232,10 +1046,10 @@
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
 			return
-	if(prob(10)&&!HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(10))
 		qdel(A)
 		to_chat(user,"You ruin the armor completely, destroying it in the process...")
-	if(prob(5)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(5))
 		qdel(A)
 		to_chat(user,"You ruin the armor completely, destroying it in the process...")
 	qdel(src)
@@ -1255,10 +1069,10 @@
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
 			return
-	if(prob(10)&&!HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(10))
 		qdel(H)
 		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
-	if(prob(5)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(5))
 		qdel(H)
 		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
 	qdel(src)
@@ -1292,16 +1106,16 @@
 	/obj/item/clothing/suit/armor/f13/slam, /obj/item/clothing/suit/armor/f13/raider/raidermetal,/obj/item/clothing/head/helmet/f13/raidermetal,
 	/obj/item/clothing/head/helmet/knight/f13/metal, /obj/item/melee/unarmed/punchdagger)
 
-	if(prob(60)||prob(30)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(60))
 		item = pick(low)
 		new item(user.loc)
-	if(prob(30)||prob(15)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(30))
 		item = pick(mid)
 		new item(user.loc)
-	if(prob(9)||prob(4.5)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(9))
 		item = pick(high)
 		new item(user.loc)
-	if(prob(1)||prob(0.5)&&HAS_TRAIT(user,TRAIT_MASTER_GUNSMITH))
+	if(prob(1))
 		item = pick(vhigh)
 		new item(user.loc)
 
