@@ -1060,5 +1060,5 @@ Veteran Ranger
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/stack/sheet/metal/fifty=1,
 		/obj/item/stack/sheet/glass/fifty=1,
-		/obj/item/book/granter/trait/tinkering=1
+		/obj/item/book/granter/trait/techno=1
 	)

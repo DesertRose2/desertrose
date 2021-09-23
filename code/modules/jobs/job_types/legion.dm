@@ -1064,7 +1064,6 @@ Auxilia
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /datum/outfit/loadout/auxengi
