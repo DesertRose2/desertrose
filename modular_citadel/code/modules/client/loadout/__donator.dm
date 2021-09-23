@@ -370,6 +370,16 @@
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
 	ckeywhitelist = list("conormackgegore")
+	
+/datum/gear/donator/kits/viatoris
+	name = "Viatoris's belongings"
+	path = /obj/item/storage/box/large/custom_kit/viatoris/
+	ckeywhitelist = list("muhsollini")
+	
+/datum/gear/donator/kits/thebatsman
+	name = "The batsman's belongings"
+	path = /obj/item/storage/box/large/custom_kit/thebatsman
+	ckeywhitelist = list("elizabethdame")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -611,4 +621,5 @@
 						"usotsukihime",
 						"karlov",
 						"hallow96",
-						"sm45hb0t")
+						"sm45hb0t",
+						"crailek")

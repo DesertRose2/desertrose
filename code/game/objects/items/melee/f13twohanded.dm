@@ -457,7 +457,7 @@
 /obj/item/twohanded/sledgehammer/supersledge
 	name = "super sledge"
 	desc = "A heavy sledgehammer manufacted from ultra-dense materials, developed by the Brotherhood of Steel. It looks like it could crush someone's skull with ease."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "supersledge0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'

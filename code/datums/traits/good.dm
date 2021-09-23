@@ -251,15 +251,6 @@
 	lose_text = "<span class='danger'>You forget how Power Armor works.</span>"
 	locked = TRUE
 
-/datum/quirk/master_gunsmith
-	name = "Master Tinkerer"
-	desc = "You're a master tinkerer, able to tinker extensively with weapons and armor."
-	value = 3
-	mob_trait = TRAIT_MASTER_GUNSMITH
-	gain_text = "<span class='notice'>You realize how to tinker with armor and weaponry.</span>"
-	lose_text = "<span class='danger'>You forget how to tinker.</span>"
-	locked = TRUE
-
 /datum/quirk/hard_yards
 	name = "Hard Yards"
 	desc = "You've put them in, now reap the rewards."
