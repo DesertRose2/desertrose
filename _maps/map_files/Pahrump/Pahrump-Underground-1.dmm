@@ -3542,6 +3542,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"dlE" = (
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "dlG" = (
 /obj/structure/noticeboard,
 /turf/closed/wall/r_wall,
@@ -20560,6 +20564,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
+"rWD" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "rWY" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
@@ -20866,6 +20877,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
 	},
+/area/f13/tunnel)
+"sjf" = (
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
 "sjr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -45351,7 +45370,7 @@ nBk
 eoy
 uoO
 eoy
-pSv
+sjf
 dxj
 gSF
 eoy
@@ -62320,7 +62339,7 @@ uoO
 uoO
 uoO
 eoy
-pQF
+rWD
 dxj
 dxj
 dxj
@@ -63729,7 +63748,7 @@ uoO
 uoO
 uoO
 tur
-dxj
+dlE
 dxj
 dxj
 fOZ
@@ -70570,7 +70589,7 @@ uoO
 uoO
 uoO
 tur
-dxj
+dlE
 dxj
 rOM
 bpj
