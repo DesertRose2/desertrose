@@ -10738,7 +10738,7 @@
 /area/f13/tunnel)
 "jyZ" = (
 /obj/machinery/door/unpowered/wooddoor,
-/turf/closed/wall/f13/supermart,
+/turf/open/floor/f13/wood,
 /area/f13/ncr)
 "jzf" = (
 /obj/effect/decal/cleanable/dirt,
