@@ -52,8 +52,8 @@
 
 /obj/item/attachment/bayonet
 	name = "bayonet"
-	desc = "Stabby-Stabby"
-	icon_state = "bayonet"
+	desc = "A bayonet. Think about what you're doing. You're making your gun - into a /spear/. Stone-age."
+	icon_state = "attach_bayonet"
 	force = 20
 	slot = ATTACHMENT_SLOT_MUZZLE
 

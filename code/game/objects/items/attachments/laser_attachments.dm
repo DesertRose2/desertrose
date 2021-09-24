@@ -30,6 +30,7 @@
 	name = "splitter laser lens"
 	desc = "A lens with precise cuts made into the focused lens. While crudely done it appears to have a level of craft to it; allowing beams to be shot with a spread akin to a shotgun."
 	icon_state = "splitter lens"
+	slot = ATTACHMENT_SLOT_LASER_LENS
 
 /obj/item/attachment/splitter_lens/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
