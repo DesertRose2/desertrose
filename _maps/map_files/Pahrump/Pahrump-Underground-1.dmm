@@ -9201,8 +9201,13 @@
 	},
 /area/f13/tunnel)
 "igL" = (
-/obj/structure/mirror,
-/turf/closed/wall/f13/supermart,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ihg" = (
 /obj/machinery/microwave,
@@ -9864,7 +9869,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "iOK" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_y = 3
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -10436,9 +10445,13 @@
 	},
 /area/f13/brotherhood/mining)
 "jpg" = (
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/machinery/light{
+	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/carpet/black,
 /area/f13/ncr)
 "jpl" = (
 /obj/structure/grille,
@@ -10472,12 +10485,9 @@
 	},
 /area/f13/tunnel)
 "jrk" = (
-/obj/structure/sink{
-	pixel_y = 22
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/obj/item/flashlight/lamp/green,
+/obj/structure/table/wood,
+/turf/open/floor/f13/wood,
 /area/f13/ncr)
 "jrm" = (
 /obj/structure/sign/poster/official/twelve_gauge{
@@ -10669,7 +10679,12 @@
 	},
 /area/f13/tunnel)
 "jyZ" = (
-/obj/structure/dresser,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "jzf" = (
@@ -11457,7 +11472,7 @@
 /area/f13/brotherhood/rnd)
 "klj" = (
 /obj/structure/closet/cabinet,
-/turf/open/floor/f13/wood,
+/turf/open/floor/carpet/black,
 /area/f13/ncr)
 "klw" = (
 /obj/structure/rack,
@@ -11781,9 +11796,15 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/structure/table/wood,
+/obj/item/folder{
+	pixel_x = -4
 	},
+/obj/item/folder/blue,
+/obj/item/folder/red{
+	pixel_x = 4
+	},
+/turf/open/floor/f13/wood,
 /area/f13/ncr)
 "kCz" = (
 /obj/structure/lattice{
@@ -12178,16 +12199,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/rust,
 /area/f13/tunnel)
-"kTO" = (
-/obj/machinery/shower{
-	dir = 8
-	},
-/obj/structure/decoration/vent,
-/obj/structure/curtain,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/ncr)
 "kUN" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowbroken"
@@ -12346,11 +12357,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "ldn" = (
-/obj/structure/chair/wood,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
 /obj/effect/landmark/start/f13/ncrrangersergeant,
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ldH" = (
@@ -13122,14 +13132,6 @@
 "lPQ" = (
 /turf/closed/indestructible/rock,
 /area/f13/tunnel)
-"lPY" = (
-/obj/structure/toilet{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/ncr)
 "lQi" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood/gibs{
@@ -13241,9 +13243,10 @@
 /area/f13/brotherhood/operations)
 "lXF" = (
 /obj/structure/table/wood,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/pen,
+/obj/item/pda,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "lXP" = (
@@ -13325,15 +13328,6 @@
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/f13,
 /area/f13/tunnel)
-"mdv" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "mdD" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood{
@@ -13395,14 +13389,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/brotherhood/leisure)
-"mhD" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "miI" = (
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -30936,9 +30922,9 @@ gFP
 bNv
 bNv
 ide
-jpg
+bNv
 kCo
-jpg
+dcB
 cLN
 mCt
 mCt
@@ -31190,12 +31176,12 @@ eew
 eWN
 cLN
 gLS
-bNv
-bNv
 igL
-jrk
-kTO
-lPY
+bNv
+cLN
+bNv
+bNv
+bNv
 cLN
 mCt
 mCt
@@ -31450,9 +31436,9 @@ cLN
 cLN
 bNv
 cYU
-cLN
-cLN
-cLN
+bNv
+iOK
+jrk
 cLN
 myP
 mCt
@@ -31963,10 +31949,10 @@ bNv
 bNv
 hpc
 bNv
-iOK
-bNv
-bNv
-mdv
+cYU
+iue
+iue
+iue
 cLN
 mCt
 mCt
@@ -32222,8 +32208,8 @@ cLN
 fYX
 cYU
 klj
-fYX
-mhD
+jpg
+dqs
 cLN
 mCt
 mCt
