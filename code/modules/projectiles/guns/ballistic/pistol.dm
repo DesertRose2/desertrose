@@ -19,6 +19,8 @@
 	w_class = WEIGHT_CLASS_NORMAL //How much space it takes in a bag
 	weapon_weight = WEAPON_LIGHT //Nakes dual wield possible
 	slot_flags = ITEM_SLOT_BELT
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	force = 12 //Pistol whip
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	spread = 2
@@ -118,6 +120,8 @@
 	name = "Beretta M9FS"
 	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability, 15 round magazine and good looks."
 	icon_state = "beretta"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 3
@@ -147,6 +151,8 @@
 	name = "Sig P220"
 	desc = "The P220 Sig Sauer. A Swiss designed pistol, the Sig Sauer benefits from compact and lightweight construction."
 	icon_state = "sig"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 1
@@ -175,6 +181,8 @@
 	name = "N99 pistol"
 	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol."
 	icon_state = "n99"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 2)
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -203,6 +211,8 @@
 /obj/item/gun/ballistic/automatic/pistol/deagle
 	name = "Desert Eagle"
 	desc = "A robust .44 magnum semi-automatic handgun."
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	icon_state = "deagle"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m44
@@ -254,6 +264,8 @@
 /obj/item/gun/ballistic/automatic/pistol/mk23
 	name = "MK23"
 	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs."
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 2)
 	icon_state = "mk23"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45exp
@@ -302,6 +314,8 @@
 	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 10mm."
 	icon_state = "crusader_pistol"
 	item_state = "crusader_pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -314,6 +328,8 @@
 	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 4.73mm caseless."
 	icon_state = "crusader_rifle"
 	item_state = "crusader_rifle"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m473_pistol
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -326,6 +342,8 @@
 	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 5.56mm."
 	icon_state = "crusader_rifle"
 	icon_state = "crusader_rifle"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL

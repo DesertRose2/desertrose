@@ -360,7 +360,7 @@
 		else
 			to_chat(user, "<span class='notice'>There's no cell in \the [src].</span>")
 		return
-	else 
+	else
 		return
 
 /obj/item/gun/energy/attack_self(mob/living/user)

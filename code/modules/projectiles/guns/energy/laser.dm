@@ -134,6 +134,8 @@
 	desc = "Should not exists. Bugreport."
 	icon_state = "laser"
 	item_state = "laser"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	slowdown = 0.3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -197,6 +199,8 @@
 	desc = "A Wattz 1000 Laser Pistol. Civilian model, so the wattage is lower than military or police versions. Uses small energy cells."
 	icon_state = "wattz1000"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -210,6 +214,8 @@
 	desc = "This Wattz 1000 laser pistol has been upgraded with a magnetic field targeting system that tightens the laser emission, giving this pistol extra penetrating power."
 	icon_state = "magnetowattz"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -222,13 +228,12 @@
 	desc = "A basic energy-based laser gun that fires concentrated beams of light."
 	icon_state = "AEP7"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 7
-	scope_y_offset = 22
+	can_scope = FALSE
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
@@ -309,12 +314,9 @@
 	desc = "A sturdy and advanced military grade pre-war service laser rifle"
 	icon_state = "laser"
 	item_state = "laser-rifle9"
-	attachment_max = 4
-	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
+	can_scope = FALSE
 	fire_delay = 3
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
@@ -372,7 +374,6 @@
 	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 3
 	burst_size = 2
-
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
@@ -398,11 +399,8 @@
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
 	attachment_max = 4
-	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
+	can_scope = FALSE
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12)
@@ -417,11 +415,8 @@
 	icon_state = "aer14"
 	item_state = "laser-rifle9"
 	attachment_max = 3
-	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_LASER_LENS = 1)
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1)
+	can_scope = FALSE
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14)
@@ -516,8 +511,8 @@
 	fire_delay = 6
 	extra_damage = 2
 	desc = "An old-school plasma rifle that was produced by Winchester and supplied to the army as an improvment on the large caster version before REPCON's more famous urban model replaced it."
-	attachment_max = 0
-	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	w_class = WEIGHT_CLASS_BULKY

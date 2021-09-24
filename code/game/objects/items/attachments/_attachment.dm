@@ -1,4 +1,5 @@
-//This is a master-file for attachments and their code. Don't screw with this or you may break all the attachments.
+//This is a master-file for attachments and their code. Don't screw with this or you may break all the attachments. Due to the lack of modern tgui - detaching attachments will be bootleged.
+//All the code for the attachment defines, attachment procs and this file were done by ZephrTFA over on Shiptest. Really nice code.
 
 /obj/item/attachment
 	name = "broken attachment"

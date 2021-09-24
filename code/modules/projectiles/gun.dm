@@ -71,7 +71,6 @@
 	var/can_scope = FALSE
 
 	var/datum/action/item_action/toggle_gunlight/alight
-	var/mutable_appearance/flashlight_overlay
 	var/can_attachments = FALSE
 	var/can_automatic = FALSE
 	var/can_bayonet = TRUE

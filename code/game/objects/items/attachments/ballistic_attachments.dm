@@ -21,7 +21,7 @@
 	gun.burst_size +=1
 	gun.spread += 6
 	gun.recoil += 0.1
-	gun.spread = initial(gun.spread)
+	update_icon()
 
 /obj/item/attachment/auto_sear/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -29,11 +29,12 @@
 	gun.spread -= 6
 	gun.recoil -= 0.1
 	gun.spread = initial(gun.spread)
+	update_icon()
 
 
 
 /obj/item/attachment/bullet_speed
-	name = "extended barrel"
+	name = "foraged barrel"
 	desc = "A foraged barrel intended to be used on long rifles and carbines to increase a bullets accruacy and travel-speed."
 	icon_state = "barrel"
 	slot = ATTACHMENT_SLOT_BARREL
@@ -71,9 +72,9 @@
 
 /obj/item/attachment/burst_improvement
 	name = "burst cam"
-	desc = "A mechanism allowing for certain automatic rifles to fire faster via manipulation of the gun's bolt. For more dakka."		//Why is this a barrel attachment? Because I can't figure out where else to put it.
+	desc = "A mechanism allowing the user to "
 	icon_state = "burstcam"
-	slot = ATTACHMENT_SLOT_BARREL
+	slot = ATTACHMENT_SLOT_GRIP //Yeah, it's a grip for balance reasons. Honestly should be a stock. Muh bumpfire.
 
 /obj/item/attachment/burst_improvement/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -96,9 +97,9 @@
 
 /obj/item/attachment/recoil_decrease
 	name = "recoil compensator"
-	desc = "This laser sight is designed to be rail-mounted on a compatible firearm to provide increased accuracy."
+	desc = "This attachment mounts to the barrel of a gun, allowing for better control of the weapon through the addition of a better gas operating system. Caution: Keep hand off; hot!"
 	icon_state = "recoilcomp"
-	slot = ATTACHMENT_SLOT_GRIP
+	slot = ATTACHMENT_SLOT_BARREL
 
 /obj/item/attachment/recoil_decrease/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -203,6 +204,8 @@
 	var/light_beam_distance = 4
 	var/light_object_range = 1
 	var/light_object_power = 2
+	var/mutable_appearance/flashlight_overlay
+	var/datum/action/item_action/toggle_gunlight/alight
 
 /obj/item/attachment/rail_light/proc/activate(silent = FALSE)
 	active = TRUE

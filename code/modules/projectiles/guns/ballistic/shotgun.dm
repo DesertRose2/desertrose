@@ -16,6 +16,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 0)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
@@ -101,6 +103,8 @@
 	desc = "A dirt cheap single shot shotgun."
 	icon_state = "single_shotgun"
 	item_state = "singleshot"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/improvised
 	sawn_desc = "At this point, you're basically holding an individual shotgun shell as it goes off."
@@ -134,6 +138,8 @@
 	item_state = "dshotgun1"
 	force = 20
 	extra_damage = 3
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	sawn_desc = "Omar's coming!"
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
@@ -165,6 +171,8 @@
 	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
 	icon_state = "widowmaker"
 	item_state = "dshotgun1"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	sawn_desc = "Someone took the time to chop the last few inches off the barrel and stock of this shotgun. Now, the wide spread of this hand-cannon's short-barreled shots makes it perfect for short-range crowd control."
@@ -197,6 +205,8 @@
 	desc = "A traditional hunting shotgun with wood furniture and a four-shell capacity underneath."
 	icon_state = "hunting"
 	item_state = "huntingshotgun"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -227,6 +237,8 @@
 	icon_state = "trench"
 	item_state = "trenchgun"
 	bayonet_state = "rifles"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	extra_damage = 2
 	bayonet_state = "trenchgun"
 	knife_x_offset = 23
@@ -294,6 +306,8 @@
 	fire_delay = 7
 	icon_state = "auto5"
 	item_state = "huntingshotgun"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -305,6 +319,8 @@
 	desc = "A lever action hunting shotgun with a five-shell capacity underneath plus one in chamber."
 	icon_state = "lever"
 	item_state = "trenchgun"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -323,6 +339,8 @@
 	name = "neostead 2000"
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
 	icon_state = "neostead"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 5
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
 	w_class = WEIGHT_CLASS_BULKY
@@ -367,6 +385,8 @@
 	desc = "A semi automatic shotgun with black tactical furniture made by Winchester Arms. This particular model uses an internal feeding tube instead of a magazine."
 	icon_state = "citykiller"
 	item_state = "cshotgun1"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/citykiller
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -378,6 +398,8 @@
 	icon_state = "riot_shotgun"
 	item_state = "huntingshotgun"
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1)
 	burst_size = 1
 	fire_delay = 4
 	mag_type = /obj/item/ammo_box/magazine/d12g
