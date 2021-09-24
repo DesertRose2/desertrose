@@ -24,36 +24,17 @@
 	desc = "(IV) A standard issue NCR steel helmet, issued with an additional pair of storm goggles for weather resistance."
 	icon_state = "steelpot_goggles"
 	item_state = "steelpot_goggles"
-	toggle_message = "You push the goggles up "
-	alt_toggle_message = "You push the goggles down "
-	can_toggle = 1
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
-	toggle_cooldown = 0
 	flags_cover = HEADCOVERSEYES
 	visor_flags_cover = HEADCOVERSEYES
 	dog_fashion = null
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles/attack_self(mob/user)
-	if(can_toggle && !user.incapacitated())
-		if(world.time > cooldown + toggle_cooldown)
-			cooldown = world.time
-			up = !up
-			flags_1 ^= visor_flags
-			flags_inv ^= visor_flags_inv
-			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
-
-			user.update_inv_head()
-			if(iscarbon(user))
-				var/mob/living/carbon/C = user
-				C.head_update(src, forced = 1)
-
-			if(active_sound)
-				while(up)
-					playsound(src.loc, "[active_sound]", 100, 0, 4)
-					sleep(15)
+	weldingvisortoggle(user)
+	icon_state = "steelpot_goggles_up"
+	item_state = "steelpot_goggles_up"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
 	name = "NCR medic steelpot helmet"
@@ -455,6 +436,20 @@
 	flags_cover = null
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
+/obj/item/clothing/head/f13/ranger/sergeant
+	name = "ranger sergeant combat helmet"
+	desc = "(VI) An old combat helmet, out of use around the time of the war."
+	icon_state = "recon_helmet"
+	item_state = "recon_helmet"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/head/f13/ranger/sergeant/attack_self(mob/user)
+	weldingvisortoggle(user)
+	icon_state = "recon_helmetup"
+	item_state = "recon_helmetup"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	name = "ranger combat helmet"
 	desc = "(VII) An old combat helmet, out of use around the time of the war."
@@ -470,12 +465,6 @@
 	glass_colour_type = /datum/client_colour/glass_colour/red
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/sergeant
-	name = "ranger sergeant combat helmet"
-	desc = "(VI) An old combat helmet, out of use around the time of the war."
-	icon_state = "ranger"
-	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
 	name = "mutant ranger combat helmet"
@@ -523,7 +512,7 @@
 /obj/item/clothing/suit/armor/f13/rangercombat/sergeant
 	name = "sergeant ranger combat armor"
 	desc = "(VI) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
-	icon_state = "ranger"
+	icon_state = "rangersergeant"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie

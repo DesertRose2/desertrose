@@ -932,7 +932,8 @@ Veteran Ranger
 	jobtype = /datum/job/ncr/f13rangersergeant
 	id = 			/obj/item/card/id/dogtag/ncrranger
 	uniform = 		/obj/item/clothing/under/f13/ranger/trail
-	head =			/obj/item/clothing/head/helmet/f13/ncr/rangercombat/sergeant
+	head =			/obj/item/clothing/head/f13/ranger/sergeant
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	suit =			/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
@@ -945,8 +946,8 @@ Veteran Ranger
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncr = 1, \
 		/obj/item/restraints/handcuffs=1, \
-		/obj/item/kitchen/knife/bowie=1, \
-		/obj/item/clothing/mask/gas/ranger = 1)
+		/obj/item/kitchen/knife/bowie=1
+		)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
