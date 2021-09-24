@@ -4488,11 +4488,6 @@
 /area/f13/ncr)
 "bRF" = (
 /obj/machinery/microwave/stove,
-/obj/item/trash/f13{
-	desc = "A kettle, what did you think it was for?";
-	name = "Kettle";
-	pixel_y = 11
-	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -15651,8 +15646,8 @@
 	},
 /area/f13/bunker)
 "gTA" = (
-/obj/structure/closet/crate/grave/lead_researcher,
 /obj/item/bouquet/sunflower,
+/obj/structure/closet/crate/grave,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "gTD" = (
@@ -50121,11 +50116,6 @@
 /area/f13/building)
 "wfJ" = (
 /obj/machinery/microwave/stove,
-/obj/item/trash/f13{
-	desc = "A kettle, what did you think it was for?";
-	name = "Kettle";
-	pixel_y = 11
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/city)
 "wgf" = (
