@@ -15,14 +15,12 @@
 	gun.extra_damage += 8
 	gun.fire_delay += 1.5
 	gun.recoil += 0.1
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/focused_lens/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.extra_damage -= 8
 	gun.fire_delay -= 1.5
 	gun.recoil -= 0.1
-	gun.spread = initial(gun.spread)
 
 
 
@@ -38,7 +36,6 @@
 	gun.extra_damage -= 6
 	gun.fire_delay += 1
 	gun.spread += 12
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/splitter_lens/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -46,7 +43,6 @@
 	gun.extra_damage += 6
 	gun.fire_delay -= 1
 	gun.spread -= 12
-	gun.spread = initial(gun.spread)
 
 
 
@@ -64,14 +60,12 @@
 	gun.burst_size +=1
 	gun.spread += 6
 	gun.recoil += 0.1
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/automatic_receiver/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.burst_size -=1
 	gun.spread -= 6
 	gun.recoil -= 0.1
-	gun.spread = initial(gun.spread)
 
 
 

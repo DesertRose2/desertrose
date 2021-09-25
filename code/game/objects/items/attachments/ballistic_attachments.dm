@@ -28,7 +28,6 @@
 	gun.burst_size -=1
 	gun.spread -= 6
 	gun.recoil -= 0.1
-	gun.spread = initial(gun.spread)
 	update_icon()
 
 
@@ -78,20 +77,18 @@
 
 /obj/item/attachment/burst_improvement/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
-	if(!gun.burst_size == 1)
+	if(!gun.burst_size > 1)
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
 	gun.burst_size +=1
 	gun.spread += 4
 	gun.recoil += 0.15
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/burst_improvement/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.burst_size -=1
 	gun.spread -= 4
 	gun.recoil -= 0.15
-	gun.spread = initial(gun.spread)
 
 
 
@@ -105,13 +102,11 @@
 	. = ..()
 	gun.spread *= 0.25
 	gun.fire_delay += 0.5
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/recoil_decrease/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.spread /= 0.25
 	gun.fire_delay -= 0.5
-	gun.spread = initial(gun.spread)
 
 
 
@@ -159,12 +154,10 @@
 /obj/item/attachment/laser_sight/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.spread *= 0.4
-	gun.spread = initial(gun.spread)
 
 /obj/item/attachment/laser_sight/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.spread /= 0.4
-	gun.spread = initial(gun.spread)
 
 
 
