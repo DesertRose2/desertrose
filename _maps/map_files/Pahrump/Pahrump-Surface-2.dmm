@@ -13783,15 +13783,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
-"ggt" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
-	},
-/obj/machinery/workbench/pa,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "ggK" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -35645,7 +35636,6 @@
 	color = "000000"
 	},
 /obj/effect/landmark/start/f13/ncrheavytrooper,
-/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -117598,7 +117588,7 @@ wPS
 wPS
 hom
 hom
-ggt
+vKl
 oMY
 oMY
 abm
