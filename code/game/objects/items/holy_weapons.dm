@@ -410,6 +410,7 @@
 	hitsound = 'sound/hallucinations/growl1.ogg'
 
 /obj/item/nullrod/claymore/chainsaw_sword
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "chainswordon"
 	item_state = "chainswordon"
 	name = "ripper"

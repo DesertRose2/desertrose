@@ -3550,6 +3550,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"dlE" = (
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "dlG" = (
 /obj/structure/noticeboard,
 /turf/closed/wall/r_wall,
@@ -8324,10 +8328,7 @@
 	},
 /area/f13/brotherhood/rnd)
 "hnZ" = (
-/obj/structure/kitchenspike_frame{
-	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
-	name = "Power Armor Frame"
-	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -13854,10 +13855,7 @@
 /area/f13/brotherhood/operations)
 "mAX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/kitchenspike_frame{
-	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
-	name = "Power Armor Frame"
-	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -14919,10 +14917,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "nuP" = (
-/obj/structure/kitchenspike_frame{
-	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
-	name = "Power Armor Frame"
-	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -16401,13 +16396,10 @@
 	},
 /area/f13/bunker)
 "oFT" = (
-/obj/structure/kitchenspike_frame{
-	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
-	name = "Power Armor Frame"
-	},
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor5"
 	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -17777,11 +17769,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood/reactor)
 "pPa" = (
-/obj/structure/kitchenspike_frame{
-	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
-	name = "Power Armor Frame"
-	},
 /obj/effect/decal/cleanable/oil,
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -20666,6 +20655,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
+"rWD" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "rWY" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
@@ -20972,6 +20968,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
 	},
+/area/f13/tunnel)
+"sjf" = (
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/obj/machinery/workbench/pa,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
 "sjr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -45491,7 +45495,7 @@ nBk
 eoy
 uoO
 eoy
-pSv
+sjf
 dxj
 gSF
 eoy
@@ -62460,7 +62464,7 @@ uoO
 uoO
 uoO
 eoy
-pQF
+rWD
 dxj
 dxj
 dxj
@@ -63869,7 +63873,7 @@ uoO
 uoO
 uoO
 tur
-dxj
+dlE
 dxj
 dxj
 fOZ
@@ -70710,7 +70714,7 @@ uoO
 uoO
 uoO
 tur
-dxj
+dlE
 dxj
 rOM
 bpj

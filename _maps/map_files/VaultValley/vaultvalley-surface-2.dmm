@@ -2212,6 +2212,15 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/building)
+"cAD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table{
+	layer = 2.9
+	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "cAZ" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
@@ -3094,6 +3103,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"dBK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "dBQ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4614,6 +4627,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"fhH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "fhR" = (
 /obj/machinery/workbench,
 /turf/open/floor/f13/wood,
@@ -5133,6 +5153,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/building)
+"fQI" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "fQQ" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/road{
@@ -5350,6 +5374,15 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/brotherhood)
+"gek" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/ammobench{
+	desc = "A high quality armour plating press from before the war. In theory, it's capable of producing armour plating for all manner of robots. If it works, that is.";
+	name = "pre-war armour press";
+	req_access_txt = "999999"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "geo" = (
 /obj/item/pet_carrier,
 /obj/effect/decal/cleanable/dirt,
@@ -5414,6 +5447,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 6
 	},
+/obj/item/stack/cable_coil/random/five,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "ggJ" = (
@@ -6566,6 +6600,15 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"hvj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/workbench/forge{
+	desc = "A reactor-heated megafurnace used for forging metal items such as swords, spears and shields and more.";
+	icon_state = "generator_on";
+	name = "superheating forge"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "hvK" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -7694,14 +7737,13 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/rack,
-/obj/item/stack/cable_coil/random/five,
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
 	},
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 6
 	},
+/obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "iPn" = (
@@ -9190,6 +9232,15 @@
 	icon_state = "housewood3"
 	},
 /area/f13/brotherhood)
+"kNL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/workbench/pa,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
+/area/f13/brotherhood)
 "kOn" = (
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontalcorroded"
@@ -9680,6 +9731,14 @@
 	icon_state = "horizontaloutermain2"
 	},
 /area/f13/wasteland)
+"lqr" = (
+/obj/machinery/ammobench{
+	desc = "A high quality armour plating press from before the war. In theory, it's capable of producing armour plating for all manner of robots. If it works, that is.";
+	name = "pre-war armour press";
+	req_access_txt = "999999"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "lqG" = (
 /obj/structure/table,
 /obj/item/melee/curator_whip{
@@ -10112,6 +10171,16 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/city)
+"lSV" = (
+/obj/structure/table{
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/terminal{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "lTl" = (
 /obj/structure/sign/poster/prewar/poster81,
 /turf/closed/wall/f13/ruins,
@@ -10505,6 +10574,11 @@
 "mqu" = (
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"mqM" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "mqZ" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/f13{
@@ -12516,6 +12590,16 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"oOe" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor{
+	dir = 9
+	},
+/obj/machinery/conveyor{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "oOH" = (
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
@@ -14159,6 +14243,11 @@
 /obj/structure/closet/fridge/standard,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"qIs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/comfy,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "qJc" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -14791,6 +14880,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/followers)
+"rAY" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Paladins";
+	req_one_access_txt = "120"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "rBj" = (
 /obj/structure/chair/f13chair2,
 /obj/machinery/light{
@@ -14895,6 +14991,10 @@
 /obj/structure/chair/bench,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"rIH" = (
+/obj/structure/chair/comfy,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "rJn" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -15350,6 +15450,9 @@
 	icon_state = "verticaloutermaintop"
 	},
 /area/f13/wasteland)
+"sqE" = (
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "sru" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -15496,6 +15599,16 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"szO" = (
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/brotherhood)
 "sAh" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -15535,6 +15648,14 @@
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/wasteland)
+"sDj" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowtop";
+	name = "office window"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "sDB" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
@@ -15602,6 +15723,19 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"sHd" = (
+/obj/item/clothing/under/f13/bosformsilver_m,
+/obj/item/clothing/shoes/laceup,
+/obj/item/clothing/gloves/color/white/bos,
+/obj/item/clothing/under/f13/bosformsilver_f,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/head/f13/boscap,
+/obj/structure/closet/cabinet{
+	anchored = 1;
+	name = "formal attire cabinet"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "sHh" = (
 /obj/item/mop,
 /obj/structure/mopbucket,
@@ -16537,6 +16671,13 @@
 	icon_state = "whitebluerustychess"
 	},
 /area/f13/building)
+"tMl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/brotherhood)
 "tMu" = (
 /turf/open/floor/plating/f13/outside/road{
 	dir = 8;
@@ -16759,6 +16900,14 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building)
+"tXN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/workbench/pa,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
+/area/f13/brotherhood)
 "tYm" = (
 /obj/structure/sign/poster/prewar/poster69{
 	pixel_x = -32
@@ -22259,7 +22408,7 @@ iBA
 nkY
 cqd
 mSf
-bxt
+tMl
 iRb
 lzQ
 qhy
@@ -22270,24 +22419,24 @@ aks
 uKc
 bxt
 nkY
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+nkY
+mqM
+mqM
+mqM
+nkY
+sqE
+rIH
+lSV
 nkY
 iBA
 iBA
@@ -22527,24 +22676,24 @@ bxt
 bxt
 bxt
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+nkY
+dBK
+sqE
+sqE
+nkY
+sqE
+sqE
+cAD
 nkY
 iBA
 iBA
@@ -22783,25 +22932,25 @@ bxt
 bxt
 bxt
 bxt
+nkY
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+ihz
+sqE
+sqE
+nkY
+sqE
+dBK
+dBK
 hVp
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+qIs
+lSV
 nkY
 iBA
 iBA
@@ -23040,25 +23189,25 @@ bxt
 bxt
 bxt
 bxt
+hVp
+sqE
+sqE
+sqE
+ihz
+ihz
+sqE
+sqE
+sqE
+sqE
+sqE
 nkY
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sHd
+sHd
+sHd
+nkY
+sqE
+sqE
+cAD
 nkY
 iBA
 iBA
@@ -23287,7 +23436,7 @@ iBA
 nkY
 pdk
 cNc
-pdk
+szO
 cDB
 swP
 mGF
@@ -23298,24 +23447,24 @@ gLr
 lqW
 bxt
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+nkY
+nkY
+nkY
+nkY
+nkY
+dBK
+qIs
+lSV
 nkY
 iBA
 iBA
@@ -23555,24 +23704,24 @@ bxt
 bxt
 bxt
 nkY
+sqE
+sqE
+sqE
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+gek
+sqE
+lqr
+sqE
+sqE
+sqE
+sqE
+sqE
+nkY
+dBK
+sqE
+cAD
 nkY
 iBA
 iBA
@@ -23818,18 +23967,18 @@ gVb
 ihz
 gVb
 ihz
-ihz
-ihz
+sqE
+sqE
 ihz
 gVb
 ihz
 ihz
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
+nkY
+rAY
+sDj
+xah
 nkY
 iBA
 iBA
@@ -24075,18 +24224,18 @@ feS
 gVb
 jjV
 jjV
+oOe
 jjV
-jjV
-jjV
+oOe
 gVb
 gVb
 gVb
 ihz
-gVb
 ihz
+sqE
+sqE
 ihz
-ihz
-ihz
+sqE
 nkY
 iBA
 iBA
@@ -24326,24 +24475,24 @@ nVu
 bxt
 uXn
 nkY
-ihz
+sqE
 ihz
 gVb
 ihz
 ihz
 tBu
-ihz
+fhH
 tBu
-ihz
-ihz
+fhH
+sqE
 gVb
 gVb
-gVb
-gVb
 ihz
 ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
 nkY
 iBA
 iBA
@@ -24583,24 +24732,24 @@ kPQ
 bxt
 bxt
 nkY
+sqE
+sqE
 ihz
 ihz
 ihz
 ihz
+fhH
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+fhH
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 nkY
 iBA
 iBA
@@ -24840,23 +24989,23 @@ mXl
 nkY
 nkY
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
+fhH
 ihz
+fhH
 ihz
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
 ihz
 nkY
 iBA
@@ -25097,23 +25246,23 @@ ccs
 ccs
 ene
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
+hvj
+fhH
 ihz
+fhH
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 nkY
 iBA
@@ -25341,7 +25490,7 @@ iBA
 iBA
 iBA
 nkY
-beZ
+tXN
 ihz
 ihz
 jEC
@@ -25354,22 +25503,22 @@ ihz
 ihz
 jEC
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
+ihz
+tBu
+ihz
+tBu
+sqE
+sqE
+sqE
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
 ihz
 ihz
 nkY
@@ -25611,22 +25760,22 @@ ihz
 ihz
 jEC
 hVp
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 ihz
 nkY
@@ -25869,23 +26018,23 @@ eQX
 jEC
 hVp
 ihz
+sqE
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 nkY
 iBA
 iBA
@@ -26112,7 +26261,7 @@ iBA
 iBA
 iBA
 nkY
-sxJ
+kNL
 mAv
 mAv
 hbI
@@ -26125,24 +26274,24 @@ mAv
 mAv
 hbI
 nkY
+sqE
+sqE
 ihz
 ihz
 ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
 nkY
 iBA
 iBA
@@ -26382,24 +26531,24 @@ gni
 gni
 aDS
 nkY
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 ihz
 ihz
 ihz
+sqE
+sqE
 ihz
+sqE
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
 nkY
 iBA
 iBA
@@ -26913,7 +27062,7 @@ ihz
 ihz
 ihz
 ihz
-ihz
+sqE
 nkY
 iBA
 iBA
@@ -27164,12 +27313,12 @@ ihz
 ihz
 ihz
 ppb
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 nkY
 iBA
@@ -27420,13 +27569,13 @@ ppb
 sFe
 ihz
 sFe
-ppb
+fQI
+sqE
+sqE
+sqE
 ihz
 ihz
-ihz
-ihz
-ihz
-ihz
+sqE
 ihz
 nkY
 iBA
@@ -27679,11 +27828,11 @@ ppb
 kni
 ppb
 ihz
-ihz
+sqE
 uYq
 vbn
 fBr
-ihz
+sqE
 ihz
 nkY
 iBA
@@ -27931,16 +28080,16 @@ pJj
 mYi
 nkY
 ihz
+sqE
 ihz
 ihz
 ihz
-ihz
-ihz
+sqE
 ihz
 ihz
 ihz
 vbn
-ihz
+sqE
 ihz
 nkY
 iBA
@@ -28187,17 +28336,17 @@ opl
 pJj
 mYi
 nkY
+sqE
+sqE
+sqE
+sqE
 ihz
+sqE
 ihz
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
 ihz
 nkY
 iBA
@@ -28444,17 +28593,17 @@ opl
 pJj
 cpb
 nkY
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 ihz
 nkY
 iBA
@@ -28701,18 +28850,18 @@ xSl
 pJj
 bdz
 hVp
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
+sqE
 bEg
 bEg
 dID
-ihz
-ihz
+sqE
+sqE
 nkY
 iBA
 iBA
@@ -28958,18 +29107,18 @@ pEU
 xyU
 bdz
 hVp
+sqE
+sqE
+sqE
 ihz
-ihz
-ihz
-ihz
-ihz
-ihz
+sqE
+sqE
 ihz
 bcs
 bqV
 cRk
 ihz
-ihz
+sqE
 nkY
 iBA
 iBA
@@ -29217,8 +29366,8 @@ cVJ
 nkY
 ihz
 ihz
-ihz
-ihz
+sqE
+sqE
 ihz
 ihz
 ihz
@@ -29226,7 +29375,7 @@ bcs
 bqV
 cRk
 ihz
-ihz
+sqE
 nkY
 iBA
 iBA
