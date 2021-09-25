@@ -4488,11 +4488,6 @@
 /area/f13/ncr)
 "bRF" = (
 /obj/machinery/microwave/stove,
-/obj/item/trash/f13{
-	desc = "A kettle, what did you think it was for?";
-	name = "Kettle";
-	pixel_y = 11
-	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -6838,6 +6833,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrcombatengineer,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -6889,12 +6885,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"ddq" = (
-/obj/machinery/workbench/pa,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/city)
 "ddv" = (
 /obj/effect/decal/cleanable/generic,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -10200,12 +10190,12 @@
 	},
 /area/f13/caves)
 "eEM" = (
-/obj/effect/landmark/start/f13/ncrcorporal,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrcorporal,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood2"
+	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
 "eEN" = (
@@ -10684,9 +10674,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/landmark/start/f13/ncrrecruit,
+/obj/effect/landmark/start/f13/ncrcorporal,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood3-broken"
+	icon_state = "housewood2"
 	},
 /area/f13/ncr)
 "eOK" = (
@@ -12820,6 +12810,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -13792,6 +13783,15 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
+"ggt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
+	},
+/obj/machinery/workbench/pa,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ggK" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -15655,8 +15655,8 @@
 	},
 /area/f13/bunker)
 "gTA" = (
-/obj/structure/closet/crate/grave/lead_researcher,
 /obj/item/bouquet/sunflower,
+/obj/structure/closet/crate/grave,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "gTD" = (
@@ -15672,12 +15672,12 @@
 	},
 /area/f13/village)
 "gTR" = (
-/obj/effect/landmark/start/f13/ncrtrooper,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood2"
+	icon_state = "housewood3-broken"
 	},
 /area/f13/ncr)
 "gUq" = (
@@ -19458,9 +19458,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/landmark/start/f13/ncrrecruit,
+/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
+	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
 "ixI" = (
@@ -35644,6 +35644,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
 /obj/machinery/workbench/pa,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -37116,7 +37117,6 @@
 	pixel_y = 12
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/workbench/pa,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -40661,6 +40661,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -44224,15 +44225,6 @@
 /obj/structure/tires/two,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"tDx" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/landmark/start/f13/ncrheavytrooper,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "tDH" = (
 /obj/structure/debris/v4,
 /obj/effect/decal/cleanable/dirt,
@@ -45075,7 +45067,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/ncrcombatengineer,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -46140,14 +46131,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "uqF" = (
-/obj/effect/landmark/start/f13/ncrcombatengineer,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/vexillarius,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "urg" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -49617,15 +49604,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
-"vQE" = (
-/obj/effect/landmark/start/f13/ncrrearechelon,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "vQF" = (
 /obj/structure/table,
 /obj/structure/barricade/bars,
@@ -50148,11 +50126,6 @@
 /area/f13/building)
 "wfJ" = (
 /obj/machinery/microwave/stove,
-/obj/item/trash/f13{
-	desc = "A kettle, what did you think it was for?";
-	name = "Kettle";
-	pixel_y = 11
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/city)
 "wgf" = (
@@ -56796,7 +56769,7 @@ dsn
 uzU
 kzs
 tUk
-uqF
+kzs
 kzs
 vcY
 xbV
@@ -57051,8 +57024,8 @@ kzs
 kzs
 sNC
 kzs
-ixH
-tDx
+xGv
+kzs
 sed
 sHu
 xEc
@@ -57309,14 +57282,14 @@ kzs
 dsn
 sHu
 ffz
-ffz
-ffz
-eOx
+kzs
+kzs
+jGz
 kzs
 wSn
 siS
 wSn
-jGz
+gTR
 wSn
 xEc
 unI
@@ -57565,15 +57538,15 @@ kzs
 kzs
 dsn
 jQt
-gTR
-gTR
-gTR
-eEM
+ffz
+kzs
+kzs
+kzs
 kzs
 gjs
-vQE
+kzs
 gjs
-vQE
+kzs
 gjs
 fju
 pXU
@@ -57822,10 +57795,10 @@ kzs
 sVj
 xeK
 uru
-gTR
-gTR
-gTR
-eEM
+ffz
+kzs
+kzs
+kzs
 kzs
 sed
 kzs
@@ -58085,9 +58058,9 @@ kzs
 gjs
 kzs
 gjs
-vQE
+kzs
 gjs
-vQE
+kzs
 gjs
 fju
 unI
@@ -58336,15 +58309,15 @@ kzs
 xGv
 dsn
 wSn
-sed
+eEM
 tXt
-kzs
+eOx
 wSn
-jGz
+gTR
 wSn
 fIF
 wSn
-sed
+ixH
 wSn
 xEc
 unI
@@ -69833,7 +69806,7 @@ sfB
 wOj
 iBT
 xLh
-ddq
+xLh
 qAL
 rrx
 xLh
@@ -110961,7 +110934,7 @@ oMY
 eLb
 aaz
 eLb
-oMY
+uqF
 oMY
 pQL
 oMY
@@ -117625,7 +117598,7 @@ wPS
 wPS
 hom
 hom
-vKl
+ggt
 oMY
 oMY
 abm
