@@ -222,6 +222,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_veteran_positions, list(
+	"Legion Vexillarius",
 	"Legion Veteran Decanus",
 	"Veteran Legionary"
 ))
@@ -247,6 +248,7 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
+	"NCR Ranger Sergeant",
 	"NCR Ranger",
 ))
 

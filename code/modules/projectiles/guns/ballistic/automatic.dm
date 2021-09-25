@@ -614,7 +614,7 @@
 	scope_x_offset = 10
 	scope_y_offset = 23
 	extra_damage = 2
-	fire_delay = 3.5
+	fire_delay = 3
 	spread = 1
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
