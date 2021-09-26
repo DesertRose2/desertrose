@@ -305,47 +305,6 @@
 		return
 
 /obj/item/reagent_containers/food/snacks/grown/coconut/attackby(obj/item/W, mob/user, params)
-	//DEFUSING NADE LOGIC
-	if (W.tool_behaviour == TOOL_WIRECUTTER && fused)
-		user.show_message("<span class='notice'>You cut the fuse!</span>", MSG_VISUAL)
-		playsound(user, W.hitsound, 50, 1, -1)
-		icon_state = "coconut_carved"
-		desc = "A coconut. This one's got a hole in it."
-		name = "coconut"
-		defused = TRUE
-		fused = FALSE
-		fusedactive = FALSE
-		if(!seed.get_gene(/datum/plant_gene/trait/glow))
-			set_light(0, 0.0)
-		return
-	//IGNITING NADE LOGIC
-	if(!fusedactive && fused)
-		var/lighting_text = W.ignition_effect(src, user)
-		if(lighting_text)
-			user.visible_message("<span class='warning'>[user] ignites [src]'s fuse!</span>", "<span class='userdanger'>You ignite the [src]'s fuse!</span>")
-			fusedactive = TRUE
-			defused = FALSE
-			playsound(src, 'sound/effects/fuse.ogg', 100, 0)
-			message_admins("[ADMIN_LOOKUPFLW(user)] ignited a coconut bomb for detonation at [ADMIN_VERBOSEJMP(user)] [pretty_string_from_reagent_list(reagents.reagent_list)]")
-			log_game("[key_name(user)] primed a coconut grenade for detonation at [AREACOORD(user)].")
-			addtimer(CALLBACK(src, .proc/prime), 5 SECONDS)
-			icon_state = "coconut_grenade_active"
-			desc = "RUN!"
-			if(!seed.get_gene(/datum/plant_gene/trait/glow))
-				light_color = "#FFCC66" //for the fuse
-				set_light(3, 0.8)
-			return
-
-	//ADDING A FUSE, NADE LOGIC
-	if (istype(W,/obj/item/stack/sheet/cloth) || istype(W,/obj/item/stack/sheet/durathread))
-		if (carved && !straw && !fused)
-			user.show_message("<span class='notice'>You add a fuse to the coconut!</span>", 1)
-			W.use(1)
-			fused = TRUE
-			icon_state = "coconut_grenade"
-			desc = "A makeshift bomb made out of a coconut. You estimate the fuse is long enough for 5 seconds."
-			name = "coconut bomb"
-			return
 	//ADDING STRAW LOGIC
 	if (istype(W,/obj/item/stack/sheet/mineral/bamboo) && opened && !straw && fused)
 		user.show_message("<span class='notice'>You add a bamboo straw to the coconut!</span>", 1)
@@ -489,23 +448,8 @@
 	. = ..()
 	transform *= TRANSFORM_USING_VARIABLE(40, 100) + 0.5 //temporary fix for size?
 
-/obj/item/reagent_containers/food/snacks/grown/coconut/proc/prime()
-	if (defused)
-		return
-	var/turf/T = get_turf(src)
-	reagents.chem_temp = 1000
-	reagents.handle_reactions()
-	log_game("Coconut bomb detonation at [AREACOORD(T)], location [loc]")
-	qdel(src)
-
 /obj/item/reagent_containers/food/snacks/grown/coconut/ex_act(severity)
 	qdel(src)
-
-/obj/item/reagent_containers/food/snacks/grown/coconut/deconstruct(disassembled = TRUE)
-	if(!disassembled && fused)
-		prime()
-	if(!QDELETED(src))
-		qdel(src)
 
 /obj/item/seeds/aloe
 	name = "pack of aloe seeds"

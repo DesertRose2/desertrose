@@ -222,6 +222,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_veteran_positions, list(
+	"Legion Vexillarius",
 	"Legion Veteran Decanus",
 	"Veteran Legionary"
 ))
@@ -247,6 +248,7 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
+	"NCR Ranger Sergeant",
 	"NCR Ranger",
 ))
 
@@ -275,6 +277,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Rear Echelon",
 	"NCR Recruit",
 	"NCR Off-Duty",
+	"NCR Ranger Sergeant",
 	"NCR Ranger"
 ))
 
@@ -365,7 +368,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
 	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet","City Security Officer")),
-	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
+	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger", "NCR Ranger Sergeant","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
 	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
 	EXP_TYPE_DECANUS       = list("titles" = list("Legion Recruit Decanus")),

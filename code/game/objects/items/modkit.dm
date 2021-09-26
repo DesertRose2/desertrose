@@ -247,6 +247,16 @@
 	name = "Mutant Veteran Ranger Armour modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
 
+/obj/item/modkit/legionvetpalhunter
+	name = "Veteran Paladin Hunter Modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/legion/vet)
+	result_item = /obj/item/clothing/suit/armor/f13/legion/vet/pal
+
+/obj/item/modkit/legionvetpalhunterhelm
+	name = "Veteran Paladin Hunter Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/legion/vet)
+	result_item = /obj/item/clothing/head/helmet/f13/legion/vet/pal
+
 
 //Crusader Pistol Modkits
 /obj/item/modkit/crusader_10mm

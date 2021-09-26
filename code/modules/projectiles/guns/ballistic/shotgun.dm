@@ -323,11 +323,10 @@
 	slot_available = list(ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_MEDIUM
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	fire_delay = 5
 	recoil = 0.5
-	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
 	bayonet_state = "bayonet"

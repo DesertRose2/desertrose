@@ -4,7 +4,7 @@
 	icon_state = "reconhood"
 	item_state = "reconhood"
 	desc = "(V) A thicker than average leather hood, seamlessly stitched to the jacket you're wearing."
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 
 //Custom items - Pisshole / Valentina Vega

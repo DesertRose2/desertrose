@@ -359,6 +359,7 @@
 
 /obj/item/switchblade
 	name = "switchblade"
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "switchblade"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'

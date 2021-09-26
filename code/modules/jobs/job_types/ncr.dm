@@ -31,6 +31,9 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//LM and LC Only Roles
+
 /*
 Colonel
 */
@@ -40,7 +43,6 @@ Colonel
 	faction = "NCR"
 	head_announce = list("Security")
 	supervisors = "the general"
-	req_admin_notify = 1
 
 	total_positions = 0
 	spawn_positions = 0
@@ -89,7 +91,6 @@ Captain
 	spawn_positions = 0
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	req_admin_notify = 1
 	outfit = /datum/outfit/job/ncr/f13captain
 
 	loadout_options = list(
@@ -159,6 +160,8 @@ Captain
 	/obj/item/gun/ballistic/automatic/pistol/deagle=1,
 	/obj/item/ammo_box/magazine/m44=2
 	)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
 Commanding Officer (Ranges from Lieutenant to Captain)
 */
@@ -168,7 +171,6 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
-	req_admin_notify = 1
 	description = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "High Command"
 	selection_color = "#ffeeaa"
@@ -177,9 +179,9 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
 	loadout_options = list(
-	/datum/outfit/loadout/ltline, //R82
-	/datum/outfit/loadout/ltscout, //Republic's Pride
-	/datum/outfit/loadout/ltpistol //Double Deagle
+	/datum/outfit/loadout/ltline,	//R82
+	/datum/outfit/loadout/ltscout,	//Republic's Pride
+	/datum/outfit/loadout/ltpistol	//.223 Pistol
 	)
 
 /datum/outfit/job/ncr/f13lieutenant
@@ -210,9 +212,6 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 
 
 /datum/outfit/loadout/ltline
@@ -289,7 +288,6 @@ Sergeant First Class
 	flag = F13FIRSTSERGEANT
 	total_positions = 1
 	spawn_positions = 1
-	req_admin_notify = 1
 	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Lieutenant as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
@@ -298,9 +296,9 @@ Sergeant First Class
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
 
 	loadout_options = list(
-	/datum/outfit/loadout/sfcinfantry, //R82
-	/datum/outfit/loadout/sfcsniper, //Sniper Rifle
-	/datum/outfit/loadout/sfcgarand //Old Glory
+	/datum/outfit/loadout/sfcinfantry, 	//R82
+	/datum/outfit/loadout/sfcsniper,	//Sniper Rifle
+	/datum/outfit/loadout/sfcgarand 	//Old Glory
 	)
 
 /datum/outfit/job/ncr/f13firstsergeant
@@ -349,9 +347,8 @@ Sergeant First Class
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 /*
 Sergeant
 */
@@ -370,9 +367,9 @@ Sergeant
 	exp_type = EXP_TYPE_NCRNCO
 
 	loadout_options = list(
-	/datum/outfit/loadout/serreg,
-	/datum/outfit/loadout/serlight,
-	/datum/outfit/loadout/sercqb
+	/datum/outfit/loadout/serreg,	//Service
+	/datum/outfit/loadout/serlight,	//M1 Carbine
+	/datum/outfit/loadout/sercqb	//Lever
 	)
 
 /datum/outfit/job/ncr/f13sergeant
@@ -423,6 +420,13 @@ Sergeant
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
 
+/datum/outfit/job/ncr/f13sergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+
 /*
 Corporal
 */
@@ -440,9 +444,9 @@ Corporal
 	exp_type = EXP_TYPE_NCRTPR
 
 	loadout_options = list(
-	/datum/outfit/loadout/corpreg,
-	/datum/outfit/loadout/corplight,
-	/datum/outfit/loadout/corpcqb
+	/datum/outfit/loadout/corpreg,		//Service
+	/datum/outfit/loadout/corplight,	//M1 Carbine
+	/datum/outfit/loadout/corpcqb		//Hunting Shotgun
 	)
 
 /datum/outfit/job/ncr/f13corporal
@@ -491,6 +495,13 @@ Corporal
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
+
+/datum/outfit/job/ncr/f13corporal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /*
 Combat Medic
@@ -647,9 +658,9 @@ Trooper
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/troopreg,
-	/datum/outfit/loadout/trooplight,
-	/datum/outfit/loadout/troopcqb
+	/datum/outfit/loadout/troopreg,		//Service
+	/datum/outfit/loadout/trooplight,	//M1 Carbine
+	/datum/outfit/loadout/troopcqb		//Hunting Shotgun
 	)
 
 /datum/outfit/job/ncr/f13trooper
@@ -698,6 +709,13 @@ Trooper
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
+
+/datum/outfit/job/ncr/f13trooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 /*
 Mp
 */
@@ -743,6 +761,16 @@ Mp
 		/obj/item/razor=1
 		)
 
+/datum/outfit/job/ncr/f13militarypolice/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+
+/*
+Recruit
+*/
 /datum/job/ncr/f13ncrrecruit
 	title = "NCR Recruit"
 	flag = F13NCRRECRUIT
@@ -816,10 +844,10 @@ Veteran Ranger
 	outfit = /datum/outfit/job/ncr/f13vetranger
 
 	loadout_options = list(
-	/datum/outfit/loadout/vrclassic, //AMR and Sequoia,
-	/datum/outfit/loadout/vrlite, //Rangemaster and Sequoia,
-	/datum/outfit/loadout/vrbrush, //Scoped Brushgun and Sequoia
-	/datum/outfit/loadout/vrassault
+	/datum/outfit/loadout/vrclassic,	//AMR
+	/datum/outfit/loadout/vrlite, 		//Rangemaster
+	/datum/outfit/loadout/vrbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/vrassault		//Scoped M14
 	)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -827,9 +855,6 @@ Veteran Ranger
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	//var/datum/martial_art/rangertakedown/RT = new
 	//RT.teach(H)
@@ -879,27 +904,69 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m762=3,
 		/obj/item/attachments/scope=1,
-		/obj/item/kitchen/knife/combat/bayonet=1
+		/obj/item/kitchen/knife/combat/bayonet=1)
+
+//NCR Ranger-Sergeant
+/datum/job/ncr/f13rangersergeant
+	title = "NCR Ranger Sergeant"
+	flag = F13RANGER_SARGE
+	total_positions = 1
+	spawn_positions = 1
+	description = "As an NCR Ranger Sergeant, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
+	supervisors = "Veteran Ranger"
+	selection_color = "#fff5cc"
+	display_order = JOB_DISPLAY_ORDER_RANGER_SERGEANT
+	outfit = /datum/outfit/job/ncr/f13rangersergeant
+
+/datum/outfit/job/ncr/f13rangersergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	//var/datum/martial_art/rangertakedown/RT = new
+	//RT.teach(H)
+
+/datum/outfit/job/ncr/f13rangersergeant
+	name = "NCR Ranger Sergeant"
+	jobtype = /datum/job/ncr/f13rangersergeant
+	id = 			/obj/item/card/id/dogtag/ncrranger
+	uniform = 		/obj/item/clothing/under/f13/ranger/trail
+	head =			/obj/item/clothing/head/f13/ranger/sergeant
+	mask =			/obj/item/clothing/mask/gas/sechailer
+	suit =			/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
+	shoes =			/obj/item/clothing/shoes/f13/military/leather
+	glasses = 		/obj/item/clothing/glasses/sunglasses
+	belt =			/obj/item/storage/belt/military/reconbandolier
+	gloves =		/obj/item/clothing/gloves/patrol
+	ears = 			/obj/item/radio/headset/headset_ranger
+	r_pocket = 		/obj/item/binoculars
+	l_hand =		/obj/item/guncase
+	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid=1, \
+		/obj/item/storage/bag/money/small/ncr = 1, \
+		/obj/item/restraints/handcuffs=1, \
+		/obj/item/kitchen/knife/bowie=1
 		)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
 	title = "NCR Ranger"
 	flag = F13RANGER
-	total_positions = 4
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
-	supervisors = "Veteran Ranger"
+	supervisors = "Ranger Sergeant and Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
-	outfit = /datum/outfit/job/ncr/f13ranger
+	outfit = /datum/outfit/job/ncr/f13ranger//Gun Case = Scout Carbine, M1 Carbine, M1 Garand, DKS Sniper Rifle, Browning Auto5
 
 	loadout_options = list(
-	/datum/outfit/loadout/rangerrecon,
-	/datum/outfit/loadout/rangertrail,
-	/datum/outfit/loadout/rangerpatrol,
-	/datum/outfit/loadout/rangermedic,
-	/datum/outfit/loadout/rangerengineer
+	/datum/outfit/loadout/rangerrecon,		//Fast Armor
+	/datum/outfit/loadout/rangertrail,		//Fastest Armor
+	/datum/outfit/loadout/rangerpatrol,		//Heavy Armor
+	/datum/outfit/loadout/rangermedic,		//M1A1 Patrol Armor with Chemistry
+	/datum/outfit/loadout/rangerengineer	//M1A1 Patrol Armor with Tinkerer
 	)
 
 /datum/outfit/job/ncr/f13ranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -907,7 +974,6 @@ Veteran Ranger
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	//var/datum/martial_art/rangertakedown/RT = new
 	//RT.teach(H)
@@ -922,7 +988,6 @@ Veteran Ranger
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_ranger
 	r_pocket = 		/obj/item/binoculars
-	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1, \
 		/obj/item/restraints/handcuffs=1, \
@@ -961,6 +1026,7 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/guncase = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/storage/survivalkit_aid = 1
 	)
 
@@ -970,13 +1036,14 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/clothing/accessory/armband/med/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/book/granter/trait/chemistry = 1
 	)
@@ -987,14 +1054,15 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/ncr
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol/insulated
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/storage/survivalkit_aid = 1,
 		/obj/item/clothing/accessory/armband/engine/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/grenade/plastic=1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/stack/sheet/metal/fifty=1,
-		/obj/item/stack/sheet/glass/fifty=1
+		/obj/item/stack/sheet/glass/fifty=1,
+		/obj/item/book/granter/trait/techno=1
 	)

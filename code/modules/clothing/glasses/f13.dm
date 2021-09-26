@@ -9,18 +9,6 @@
 	icon_state = "biker"
 	item_state = "biker"
 
-/obj/item/clothing/glasses/legiongoggles
-	name = "sandstorm goggles"
-	desc = "Post-war makeshift protective goggles made by legion artisans."
-	icon_state = "legion"
-	item_state = "legion"
-
-/obj/item/clothing/glasses/legionpolarizing
-	name = "polarizing goggles"
-	desc = "Fancy goggles with rare polarizing glass, usually reserved for commanders due to rarity."
-	icon_state = "legpolarizing"
-	item_state = "legpolarizing"
-
 //Fallout 13 sunglasses
 
 /obj/item/clothing/glasses/sunglasses/f13

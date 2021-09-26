@@ -99,10 +99,6 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13marshal
@@ -129,7 +125,8 @@
 	/obj/item/gun/ballistic/automatic/pistol/beretta=1,
 	/obj/item/ammo_box/magazine/m9mmds = 3,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
-	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1
+	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
+	/obj/item/book/granter/trait/pa_wear=1
 	)
 
 /datum/outfit/loadout/peacekeeper
@@ -615,8 +612,8 @@
 		//datum/outfit/loadout/chef
 		)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN)
-	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN)
+	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_KITCHEN, ACCESS_VAULT_F13)
+	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_KITCHEN, ACCESS_VAULT_F13)
 
 /datum/outfit/job/vtcc/f13innkeeper/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

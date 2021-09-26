@@ -44,7 +44,7 @@
 
 /datum/gear/shoes/raidertreads
 	name = "raider treads"
-	path = /obj/item/clothing/shoes/f13/rag
+	path = /obj/item/clothing/shoes/f13/raidertreads
 
 /datum/gear/shoes/wornboots
 	name = "worn boots"
@@ -76,6 +76,11 @@
 /datum/gear/shoes/military_leather
 	name = "leather combat boots"
 	path = /obj/item/clothing/shoes/f13/military/leather
+	cost = 2
+
+/datum/gear/shoes/duty
+	name = "duty boots"
+	path = /obj/item/clothing/shoes/f13/military/duty
 	cost = 2
 
 /datum/gear/shoes/oldcombat

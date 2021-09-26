@@ -572,7 +572,7 @@
 //pps
 /datum/crafting_recipe/pps
 	name = "ppsh41"
-	result = /obj/item/gun/ballistic/automatic/pps
+	result = /obj/item/gun/ballistic/automatic/smg/pps
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 2
@@ -616,7 +616,7 @@
 //uzi
 /datum/crafting_recipe/uzi
 	name = "mini uzi"
-	result = /obj/item/gun/ballistic/automatic/mini_uzi
+	result = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1
 				)
@@ -629,7 +629,7 @@
 //10mm smg
 /datum/crafting_recipe/smg10mm
 	name = "10mm SMG"
-	result = /obj/item/gun/ballistic/automatic/smg10mm
+	result = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/goodparts = 2
