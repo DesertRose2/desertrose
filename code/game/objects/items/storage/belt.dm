@@ -723,12 +723,18 @@
 	..()
 
 /obj/item/storage/belt/holster
-	name = "shoulder holster"
-	desc = "A holster to carry a handgun and ammo. WARNING: Badasses only."
+	name = "holster"
+	desc = "A holster to carry a handgun and ammo."
 	icon_state = "holster"
 	item_state = "holster"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"Shoulder" = "holster",
+						"Thigh" = "holster_leg",
+						"Hip" = "holster_hip"
+						)
 
 /obj/item/storage/belt/holster/ComponentInitialize()
 	. = ..()
@@ -830,8 +836,8 @@
 /obj/item/storage/belt/holster/hip
 	name = "hip holster"
 	desc = "A low hanging holster to carry a handgun and ammo."
-	icon_state = "cowboy"
-	item_state = "cowboy"
+	icon_state = "holster_hip"
+	item_state = "holster_hip"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"

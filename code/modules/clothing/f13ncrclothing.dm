@@ -424,8 +424,13 @@
 	name = "NCR ranger campaign hat"
 	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
-	item_state = "drill_hat"
+	item_state = "drillhat"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"New" = "drillhat",
+						"Old-School" = "drillhat_alternative"
+						)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
@@ -495,10 +500,18 @@
 	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-	unique_reskin = list("Old School" = "ncr_patrol",
-						"Alterntive" = "ncr_patrol_alternative"
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"New" = "ncr_patrol",
+						"Old-School" = "ncr_patrol_alternative"
 						)
+
+/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
+	name = "sergeant ranger combat armor"
+	desc = "(VI) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	icon_state = "rangersergeant"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
@@ -508,12 +521,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
-	name = "sergeant ranger combat armor"
-	desc = "(VI) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
-	icon_state = "rangersergeant"
-	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
 	name = "mutant ranger armor"
@@ -544,7 +551,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
 /obj/item/clothing/under/f13/ranger/trail
-	name = "ranger outfit"
+	name = "trail ranger outfit"
 	desc = "Simple rustic clothes for a big iron packin' lawman. Worn often by NCR rangers."
 	icon_state = "trailranger"
 	item_state = "trailranger"
@@ -575,6 +582,12 @@
 	visor_flags_inv = 0
 
 //Boots
+
+/obj/item/clothing/shoes/f13/military/leather/patrol
+	name = "patrol ranger leather combat boots"
+	desc = "A pair of hardened leather boots made for combat, in use by the NCR Patrol Rangers."
+	icon_state = "patrol"
+	item_state = "patrol"
 
 /obj/item/clothing/shoes/f13/mutie/boots/ncr/ranger
 	icon_state = "mutie_boots_ranger"
