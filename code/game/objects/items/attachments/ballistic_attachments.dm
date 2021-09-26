@@ -68,7 +68,8 @@
 	. = ..()
 	gun.force -=20
 
-
+//Burst cam won't work and it just acts like the damn autosear anyway due to the code change. So screw it. For now it's removed till I can figure out how to make it ONLY fit on guns that already have a burst size of +2
+/*
 /obj/item/attachment/burst_improvement
 	name = "burst cam"
 	desc = "A mechanism allowing the user to "
@@ -77,7 +78,7 @@
 
 /obj/item/attachment/burst_improvement/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
-	if(!gun.burst_size > 1)
+	if(!gun.burst_size == 1)
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
 	gun.burst_size +=1
@@ -89,7 +90,7 @@
 	gun.burst_size -=1
 	gun.spread -= 4
 	gun.recoil -= 0.15
-
+*/
 
 
 /obj/item/attachment/recoil_decrease
