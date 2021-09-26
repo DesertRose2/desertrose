@@ -228,6 +228,7 @@ GLOBAL_LIST_INIT(legion_veteran_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
+	"Legion Vexillarius",
 	"Legion Veteran Decanus",
 	"Veteran Legionary",
 	"Legion Libritor",
