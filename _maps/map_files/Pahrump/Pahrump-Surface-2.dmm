@@ -8639,11 +8639,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "dSd" = (
-/obj/machinery/door/poddoor/gate/preopen{
-	id = "exteriorgate"
-	},
 /obj/effect/turf_decal{
 	dir = 1
+	},
+/obj/machinery/door/poddoor/gate{
+	id = "exteriorgate"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
@@ -29951,7 +29951,7 @@
 /area/f13/building)
 "nlD" = (
 /obj/effect/turf_decal,
-/obj/machinery/door/poddoor/gate/preopen{
+/obj/machinery/door/poddoor/gate{
 	id = "interiorgate"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
