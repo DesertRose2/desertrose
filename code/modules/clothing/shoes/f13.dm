@@ -121,6 +121,17 @@
 	icon_state = "cowboy_ranger"
 	item_state = "cowboy_ranger"
 
+/obj/item/clothing/shoes/f13/military/duty
+	name = "duty boots"
+	desc = "A pair of laced old combat boots used by pre-war riot police. These have a very shining front as if they were made from rubber."
+	icon_state = "duty"
+	item_state = "duty"
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"Standard" = "duty",
+						"Alternative" = "duty_alt",
+						"Tall" = "duty_long"
+						)
 //Fluff
 
 /obj/item/clothing/shoes/f13/swimfins

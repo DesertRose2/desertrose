@@ -461,7 +461,7 @@
 	subcategory = CAT_BELTS
 
 /datum/crafting_recipe/shoulderholster
-	name = "shoulder holster"
+	name = "holster"
 	result = /obj/item/storage/belt/holster
 	reqs = list(/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/hay = 3)

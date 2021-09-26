@@ -1026,6 +1026,7 @@ Veteran Ranger
 	backpack_contents = list(
 		/obj/item/guncase = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/storage/survivalkit_aid = 1
 	)
 
@@ -1042,6 +1043,7 @@ Veteran Ranger
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/clothing/accessory/armband/med/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/book/granter/trait/chemistry = 1
 	)
@@ -1059,6 +1061,7 @@ Veteran Ranger
 		/obj/item/storage/survivalkit_aid = 1,
 		/obj/item/clothing/accessory/armband/engine/ncr = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
+		/obj/item/clothing/shoes/f13/military/leather/patrol=1,
 		/obj/item/stack/sheet/metal/fifty=1,
 		/obj/item/stack/sheet/glass/fifty=1,
 		/obj/item/book/granter/trait/techno=1
