@@ -164,8 +164,8 @@
 		/datum/outfit/loadout/armsdealer
 		)
 
-	access = list(ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
-	minimal_access = list(ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13merchant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -558,6 +558,9 @@
 		/datum/outfit/loadout/techwhisperer,
 		/datum/outfit/loadout/engineer
 		)
+
+	access = list(ACCESS_VTCC)
+	minimal_access = list(ACCESS_VTCC)
 
 /datum/outfit/job/vtcc/f13hoistway/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

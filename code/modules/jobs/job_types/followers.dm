@@ -51,8 +51,8 @@ Administrator
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
-	access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
 
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -160,8 +160,8 @@ Practitioner
 	/datum/outfit/loadout/medical_researcher
 	)
 
-	access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
 
 /datum/outfit/job/followers/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -259,8 +259,8 @@ Follower Volunteer
 	/datum/outfit/loadout/volunteer_student
 	)
 
-	access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_VTCC)
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
 
 /datum/outfit/job/followers/f13followervolunteer
 	name = "Followers Volunteer"
