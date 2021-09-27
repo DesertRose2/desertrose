@@ -78,7 +78,7 @@
 
 /obj/item/attachment/burst_improvement/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
-	if(!gun.burst_size == 1)
+	if(!gun.can_attachments)
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
 	gun.burst_size +=1
