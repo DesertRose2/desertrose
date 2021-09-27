@@ -441,7 +441,7 @@
 						"alasania",
 						"jackmcintyre",
 						"deathlysoul")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
 	name = ".45 ACP Service Revolver"
@@ -463,7 +463,7 @@
 						"jackmcintyre",
 						"totallyinnocent",
 						"cythisia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
 	name = ".357 Magnum Service Revolver"
@@ -477,7 +477,7 @@
 						"muhsollini",
 						"rangerbust",
 						"kayzach")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
 	name = "10mm Service Revolver"
@@ -487,7 +487,7 @@
 						 "theneworleans",
 						 "ollieoxen",
 						 "cythisia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
 	name = "Ranger-Captain Pins"
@@ -531,8 +531,9 @@
 						"panzer1944",
 						"purplepineapple",
 						"thegreatcoward",
-						"kirshbia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						"kirshbia",
+						"deathlysoul")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
 	name = "Ranger Pins"

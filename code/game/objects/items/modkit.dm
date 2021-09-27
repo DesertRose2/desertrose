@@ -219,7 +219,7 @@
 
 /obj/item/modkit/hoodedrecon
 	name = "Hooded recon modkit"
-	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	target_items = list(/obj/item/clothing/suit/armor/f13/rangercombat/sergeant)
 	result_item = /obj/item/clothing/suit/hooded/f13/hooded_recon
 
 /obj/item/modkit/lieutenantplatecarrier
