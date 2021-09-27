@@ -17,8 +17,8 @@
 	move_to_delay = 5
 	stat_attack = 1
 	robust_searching = 1
-	maxHealth = 300
-	health = 300
+	maxHealth = 250
+	health = 250
 	del_on_death = 1
 	healable = 0
 	faction = list("wastebot")

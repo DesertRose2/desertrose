@@ -73,8 +73,8 @@
 	icon_state = "gutsy"
 	icon_living = "gutsy"
 	icon_dead = "gib7"
-	health = 200
-	maxHealth = 200
+	health = 150
+	maxHealth = 150
 	melee_damage_lower = 72
 	melee_damage_upper = 72
 	attack_sound = 'sound/items/welder.ogg'
@@ -493,9 +493,9 @@
 	icon_living = "assaultron"
 	gender = FEMALE //Pffffffffffffffffffffff
 	icon_dead = "gib7"
-	health = 450
+	health = 400
 	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
-	maxHealth = 450
+	maxHealth = 400
 	speed = 0
 	melee_damage_lower = 55
 	melee_damage_upper = 60

@@ -11,8 +11,8 @@
 	speak_emote = list("growls")
 	emote_see = list("screeches")
 	a_intent = INTENT_HARM
-	maxHealth = 80
-	health = 80
+	maxHealth = 50
+	health = 50
 	speed = 3
 	harm_intent_damage = 8
 	melee_damage_lower = 15
@@ -46,11 +46,11 @@
 	icon_living = "ghoulreaver"
 	icon_dead = "ghoulreaver_dead"
 	speed = 2
-	maxHealth = 150
-	health = 150
+	maxHealth = 115
+	health = 115
 	harm_intent_damage = 8
-	melee_damage_lower = 25
-	melee_damage_upper = 25
+	melee_damage_lower = 20
+	melee_damage_upper = 20
 
 /mob/living/simple_animal/hostile/ghoul/reaver/Initialize()
 	. = ..()
@@ -67,8 +67,8 @@
 	icon_living = "cold_feral"
 	icon_dead = "cold_feral_dead"
 	speed = 1.5
-	maxHealth = 200
-	health = 200
+	maxHealth = 125
+	health = 125
 	harm_intent_damage = 8
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -81,8 +81,8 @@
 	icon_living = "frozen_reaver"
 	icon_dead = "frozen_reaver_dead"
 	speed = 1.5
-	maxHealth = 200
-	health = 200
+	maxHealth = 175
+	health = 175
 	harm_intent_damage = 8
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -94,8 +94,8 @@
 	icon_living = "glowinghoul"
 	icon_dead = "glowinghoul_dead"
 	color = "#FFFF00"
-	maxHealth = 600
-	health = 600
+	maxHealth = 500
+	health = 500
 	speed = 2.5
 	harm_intent_damage = 8
 	melee_damage_lower = 30
@@ -111,8 +111,8 @@
 	icon_state = "glowinghoul"
 	icon_living = "glowinghoul"
 	icon_dead = "glowinghoul_dead"
-	maxHealth = 160
-	health = 160
+	maxHealth = 130
+	health = 130
 	speed = 2
 	harm_intent_damage = 8
 	melee_damage_lower = 25
@@ -121,11 +121,6 @@
 /mob/living/simple_animal/hostile/ghoul/glowing/Initialize()
 	. = ..()
 	set_light(2)
-	// we only heal BRUTELOSS because each type directly heals a simplemob's health
-	// therefore setting it to BRUTELOSS | FIRELOSS | TOXLOSS | OXYLOSS would mean healing 4x as much
-	// aka 40% of max life every tick, which is basically unkillable
-	// TODO: refactor this if simple_animals ever get damage types
-	AddComponent(/datum/component/glow_heal, chosen_targets = /mob/living/simple_animal/hostile/ghoul, allow_revival = FALSE, restrict_faction = null, type_healing = BRUTELOSS)
 
 /mob/living/simple_animal/hostile/ghoul/glowing/Aggro()
 	..()
