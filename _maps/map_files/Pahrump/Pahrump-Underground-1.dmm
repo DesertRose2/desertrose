@@ -2610,7 +2610,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "cqz" = (
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	req_one_access_txt = "137"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -3189,7 +3191,7 @@
 	},
 /area/f13/tunnel)
 "cSf" = (
-/obj/machinery/door/airlock/public,
+/obj/machinery/door/airlock/public/glass,
 /turf/open/floor/carpet/royalblue,
 /area/f13/tunnel)
 "cSg" = (
@@ -13398,7 +13400,9 @@
 	},
 /area/f13/tunnel)
 "mdp" = (
-/obj/machinery/door/airlock/public,
+/obj/machinery/door/airlock/public/glass{
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13,
 /area/f13/tunnel)
 "mdD" = (
@@ -14429,7 +14433,9 @@
 	},
 /area/f13/tunnel)
 "mZY" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 8;
 	icon_state = "neutraldirty"
@@ -21944,10 +21950,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/ncr)
-"thC" = (
-/obj/machinery/door/airlock/freezer,
-/turf/open/floor/plasteel/f13,
-/area/f13/tunnel)
 "tiS" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
@@ -22354,7 +22356,10 @@
 /turf/closed/wall/rust,
 /area/f13/tunnel)
 "tzO" = (
-/obj/machinery/door/airlock/freezer,
+/obj/machinery/door/airlock/freezer{
+	name = "bathroom";
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
 "tzU" = (
@@ -22951,7 +22956,9 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "tYt" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side,
 /area/f13/tunnel)
 "tYw" = (
@@ -24997,6 +25004,13 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/brotherhood/operations)
+"vKK" = (
+/obj/machinery/door/airlock/freezer{
+	name = "bathroom";
+	req_one_access_txt = "135"
+	},
+/turf/open/floor/plasteel/f13,
+/area/f13/tunnel)
 "vKP" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
@@ -25129,7 +25143,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
 "vSz" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 1
 	},
@@ -26881,7 +26897,9 @@
 /turf/open/floor/carpet/purple,
 /area/f13/brotherhood/rnd)
 "xpj" = (
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	req_one_access_txt = "137"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "xpu" = (
@@ -27101,7 +27119,9 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "xDt" = (
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	req_one_access_txt = "135"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 4;
 	icon_state = "neutraldirty"
@@ -34352,7 +34372,7 @@ wpJ
 wpJ
 wpJ
 wpJ
-acP
+mdp
 qtd
 qtd
 qtd
@@ -36915,7 +36935,7 @@ ygC
 ygC
 ygC
 vSz
-acP
+mdp
 tYt
 ygC
 ygC
@@ -37692,7 +37712,7 @@ eCE
 vUW
 wpJ
 wpJ
-thC
+tzO
 aak
 vSu
 ygC
@@ -40011,7 +40031,7 @@ ygC
 ygC
 ygC
 ygC
-thC
+tzO
 ygC
 ygC
 ygC
@@ -40019,7 +40039,7 @@ ygC
 ygC
 ygC
 ygC
-thC
+tzO
 ygC
 eLE
 "}
@@ -44894,7 +44914,7 @@ wHB
 wpJ
 iwv
 ygC
-mdp
+tzO
 ygC
 ygC
 ygC
@@ -44902,7 +44922,7 @@ ygC
 ygC
 ygC
 ygC
-mdp
+tzO
 ygC
 eLE
 "}
@@ -45657,7 +45677,7 @@ eLE
 ygC
 vLb
 aak
-thC
+tzO
 wpJ
 wpJ
 mdp
@@ -46442,7 +46462,7 @@ wpJ
 wpJ
 wpJ
 wpJ
-mdp
+tzO
 uRL
 uRL
 ygC
@@ -47456,7 +47476,7 @@ eLE
 ygC
 vLb
 aak
-thC
+tzO
 wpJ
 wpJ
 mdp
@@ -48241,7 +48261,7 @@ wpJ
 wpJ
 wpJ
 wpJ
-thC
+tzO
 aak
 uRL
 ygC
@@ -49785,7 +49805,7 @@ ygC
 ygC
 ygC
 ygC
-thC
+vKK
 ygC
 eLE
 "}
@@ -50026,7 +50046,7 @@ eLE
 ygC
 aai
 uRL
-thC
+tzO
 wpJ
 wpJ
 eCE
