@@ -717,6 +717,6 @@
 	name = "Plushie Choice Box"
 	id = "plushie_choice"
 	build_type = TOYLATHE
-	materials = list(/datum/material/cloth = 200, /datum/material/plastic = 20)
+	materials = list(/datum/material/plastic = 200)
 	build_path = /obj/item/choice_beacon/box/plushie
 	category = list("initial", "Toys")

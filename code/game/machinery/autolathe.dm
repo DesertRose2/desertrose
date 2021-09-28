@@ -458,8 +458,7 @@
 	allowed_materials = list(
 		/datum/material/iron,
 		/datum/material/glass,
-		/datum/material/plastic,
-		/datum/material/cloth
+		/datum/material/plastic
 		)
 
 /obj/machinery/autolathe/toy/hacked/Initialize()
