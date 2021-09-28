@@ -686,6 +686,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"aQV" = (
+/obj/machinery/door/unpowered/wooddoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "131"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "aRQ" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/followers)
@@ -3180,6 +3189,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"dHb" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "dHi" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -4251,6 +4266,10 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
+"eMe" = (
+/obj/structure/chair/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "eMt" = (
 /obj/structure/table,
 /obj/item/storage/backpack,
@@ -4342,6 +4361,13 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+"ePO" = (
+/obj/structure/table/wood,
+/obj/item/binoculars{
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ePW" = (
 /obj/structure/chair/pew/left,
 /turf/open/floor/wood/f13/old,
@@ -4672,6 +4698,11 @@
 /obj/structure/chair/stool/retro/black,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"fnc" = (
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/caves)
 "fnU" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
@@ -4725,6 +4756,10 @@
 	icon_state = "2-i"
 	},
 /area/f13/city)
+"fry" = (
+/obj/structure/stone_tile/slab/burnt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "frZ" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -5244,6 +5279,14 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"fWr" = (
+/obj/structure/necropolis_gate{
+	desc = "A massive stone gateway with a very heavy stone door.";
+	name = "village gate"
+	},
+/obj/structure/stone_tile/slab/cracked,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "fWX" = (
 /obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -5990,6 +6033,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/building)
+"gKe" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "gKp" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/cooking,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -6832,6 +6879,13 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/building)
+"hML" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "hMQ" = (
 /obj/item/storage/box/donkpockets,
 /obj/structure/table,
@@ -9066,6 +9120,11 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"kAx" = (
+/obj/structure/destructible/tribal_torch/lit,
+/obj/structure/stone_tile/slab/cracked,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "kBM" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood{
@@ -11522,6 +11581,13 @@
 /obj/structure/fence/handrail,
 /turf/open/floor/carpet/black,
 /area/f13/building)
+"nuT" = (
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/obj/structure/stone_tile/block,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "nuX" = (
 /obj/effect/spawner/lootdrop/healing_kits,
 /turf/open/floor/f13/wood,
@@ -12770,6 +12836,14 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/brotherhood)
+"pdF" = (
+/obj/structure/table/wood/settler,
+/obj/structure/barricade/wooden/strong{
+	obj_integrity = 500
+	},
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "pdK" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/item/clothing/mask/gas,
@@ -12804,6 +12878,12 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"pfr" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "pgI" = (
 /turf/open/floor/wood/f13/old/ruinedcornerendtr,
 /area/f13/wasteland)
@@ -12856,6 +12936,16 @@
 /obj/item/clothing/suit/hooded/chaplain_hoodie,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"piR" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "pjD" = (
 /obj/structure/toilet{
 	dir = 4
@@ -13753,6 +13843,10 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
+"qhd" = (
+/obj/structure/stone_tile/slab/cracked,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "qhm" = (
 /obj/structure/grille/broken,
 /turf/open/floor/wood/f13/old/ruinedstraightsouth,
@@ -17326,6 +17420,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
+"uxT" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "uyd" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/floor/f13{
@@ -18260,6 +18358,16 @@
 /obj/structure/fence{
 	dir = 4
 	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vCv" = (
+/obj/machinery/door/unpowered/wooddoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "131"
+	},
+/obj/structure/decoration/rag,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vCI" = (
@@ -21712,6 +21820,9 @@ uJh
 yaf
 yaf
 yaf
+fnc
+fnc
+fnc
 yaf
 yaf
 yaf
@@ -21724,14 +21835,11 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+fnc
+fnc
+fnc
+fnc
 yaf
 yaf
 yaf
@@ -21968,28 +22076,28 @@ uJh
 uJh
 yaf
 yaf
-yaf
+fnc
+gKe
 diq
 diq
-diq
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
+fnc
 pPJ
 pPJ
 pPJ
 pPJ
 udx
-yaf
+fnc
 yaf
 yaf
 yaf
@@ -22224,7 +22332,7 @@ uJh
 uJh
 uJh
 uJh
-yaf
+fnc
 gnq
 diq
 diq
@@ -22235,7 +22343,7 @@ pPJ
 pPJ
 pPJ
 pPJ
-pPJ
+gqS
 pPJ
 pPJ
 pPJ
@@ -22245,9 +22353,9 @@ pPJ
 duE
 eph
 kqQ
+gqS
 pPJ
-pPJ
-yaf
+fnc
 yaf
 yaf
 yaf
@@ -22505,7 +22613,7 @@ oSn
 kqQ
 udx
 pPJ
-yaf
+fnc
 yaf
 yaf
 yaf
@@ -22762,7 +22870,7 @@ oSn
 oSn
 kqQ
 pPJ
-yaf
+fnc
 yaf
 yaf
 yaf
@@ -23019,7 +23127,7 @@ oSn
 oSn
 hdS
 pPJ
-pPJ
+fnc
 yaf
 yaf
 yaf
@@ -23264,7 +23372,7 @@ inZ
 inZ
 inZ
 inZ
-inZ
+oSn
 inZ
 inZ
 inZ
@@ -23277,7 +23385,7 @@ oSn
 doK
 pPJ
 pPJ
-pPJ
+fnc
 yaf
 yaf
 yaf
@@ -23521,8 +23629,8 @@ diq
 udx
 pPJ
 pPJ
-pPJ
-pPJ
+hML
+gqS
 pPJ
 pPJ
 sAh
@@ -23535,7 +23643,7 @@ pPJ
 pPJ
 pPJ
 pPJ
-yaf
+fnc
 yaf
 yaf
 uJh
@@ -23763,7 +23871,7 @@ yaf
 uJh
 uJh
 yaf
-pPJ
+fnc
 uJh
 uJh
 drg
@@ -23778,9 +23886,9 @@ pPJ
 pPJ
 pPJ
 pPJ
-yaf
-yaf
-yaf
+hML
+fnc
+fnc
 pPJ
 pPJ
 pPJ
@@ -23792,7 +23900,7 @@ pPJ
 pPJ
 pPJ
 pPJ
-pPJ
+fnc
 yaf
 uJh
 uJh
@@ -24020,36 +24128,36 @@ yaf
 uJh
 yaf
 yaf
-pPJ
+fnc
 uJh
 drg
 mus
 drg
 drg
-mus
+drg
 drg
 pPJ
 pPJ
 pPJ
 pPJ
 pPJ
+pPJ
+pPJ
+hML
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+fnc
 pPJ
 pPJ
 pPJ
 pPJ
+gqS
 pPJ
 pPJ
 pPJ
 pPJ
-pPJ
-pPJ
+fnc
 uJh
 uJh
 yaf
@@ -24278,34 +24386,34 @@ uJh
 yaf
 yaf
 pPJ
-pPJ
+fnc
 drg
 drg
 drg
 drg
 drg
+gqS
 pPJ
 pPJ
 pPJ
 pPJ
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
 pPJ
 pPJ
 pPJ
+hML
+gqS
+yaf
+yaf
+yaf
+fnc
+fnc
+fnc
+fnc
+fnc
 pPJ
+pPJ
+pPJ
+fnc
 uJh
 uJh
 yaf
@@ -24536,32 +24644,32 @@ yaf
 yaf
 pPJ
 pPJ
-pPJ
+fnc
 drg
 drg
 drg
 pPJ
 pPJ
 pPJ
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
 pPJ
 pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pfr
+kqQ
+pPJ
+yaf
+yaf
+yaf
+yaf
+yaf
+yaf
+yaf
+fnc
+pPJ
+fnc
 uJh
 uJh
 yaf
@@ -24793,12 +24901,23 @@ yaf
 yaf
 pPJ
 pPJ
+fnc
+aQV
+fnc
 pPJ
 pPJ
 pPJ
 pPJ
 pPJ
 pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pfr
+oSn
+kqQ
+pPJ
 yaf
 yaf
 yaf
@@ -24806,18 +24925,7 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
 uJh
 uJh
 yaf
@@ -25053,20 +25161,20 @@ pPJ
 pPJ
 pPJ
 pPJ
+fnc
+fnc
 pPJ
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+sAh
+oSn
+hdS
+pPJ
 yaf
 yaf
 yaf
@@ -25311,19 +25419,19 @@ pPJ
 pPJ
 pPJ
 yaf
+uJh
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+sAh
+hdS
+pPJ
 yaf
 yaf
 yaf
@@ -25569,21 +25677,21 @@ pPJ
 pPJ
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
 uJh
+yaf
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
+piR
+pPJ
+yaf
+yaf
+yaf
 uJh
 uJh
 uJh
@@ -25827,20 +25935,20 @@ pPJ
 yaf
 yaf
 yaf
+uJh
+yaf
+pPJ
+pPJ
+gqS
+pPJ
+pPJ
+pPJ
+pPJ
+pPJ
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+uJh
 yaf
 yaf
 uJh
@@ -26085,6 +26193,7 @@ pPJ
 yaf
 yaf
 yaf
+uJh
 yaf
 yaf
 yaf
@@ -26094,9 +26203,8 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
+uJh
+uJh
 yaf
 yaf
 yaf
@@ -26343,15 +26451,15 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
 yaf
 yaf
 yaf
@@ -27871,9 +27979,9 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
+fnc
+fnc
+fnc
 yaf
 pPJ
 pPJ
@@ -28127,11 +28235,11 @@ uJh
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
+fnc
 uJh
-pPJ
+uJh
+uJh
+fnc
 pPJ
 pPJ
 pPJ
@@ -28384,11 +28492,11 @@ uJh
 uJh
 yaf
 yaf
-yaf
-yaf
+fnc
 uJh
 uJh
-pPJ
+yaf
+fnc
 pPJ
 pPJ
 pPJ
@@ -28641,11 +28749,11 @@ yaf
 uJh
 yaf
 yaf
+fnc
+uJh
 yaf
-uJh
-uJh
-gqS
-pPJ
+kAx
+fnc
 pPJ
 pPJ
 pPJ
@@ -28898,11 +29006,11 @@ yaf
 uJh
 uJh
 yaf
+fnc
 yaf
-uJh
 diq
-pPJ
-pPJ
+uxT
+fnc
 pPJ
 pPJ
 pPJ
@@ -29155,11 +29263,11 @@ yaf
 yaf
 uJh
 uJh
-uJh
-uJh
+fnc
+yaf
 diq
-pPJ
-pPJ
+nuT
+fWr
 pPJ
 pPJ
 pPJ
@@ -29412,11 +29520,11 @@ yaf
 yaf
 yaf
 yaf
+fnc
 yaf
-uJh
 diq
-pPJ
-pPJ
+qhd
+fnc
 pPJ
 pPJ
 pPJ
@@ -29669,11 +29777,11 @@ yaf
 yaf
 yaf
 yaf
+fnc
+uJh
 yaf
-uJh
-uJh
-gqS
-pPJ
+uxT
+fnc
 pPJ
 pPJ
 pPJ
@@ -29926,11 +30034,11 @@ pPJ
 yaf
 yaf
 yaf
+fnc
+uJh
 yaf
-uJh
-uJh
-uJh
-pPJ
+fry
+fnc
 pPJ
 pPJ
 pPJ
@@ -30184,11 +30292,11 @@ pPJ
 pPJ
 yaf
 uJh
-uJh
-yaf
-uJh
-pPJ
-pPJ
+fnc
+fnc
+vCv
+fnc
+fnc
 pPJ
 pPJ
 pPJ
@@ -30441,11 +30549,11 @@ yaf
 yaf
 yaf
 uJh
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+dHb
+pPJ
+pPJ
+fnc
 pPJ
 pPJ
 pPJ
@@ -30698,11 +30806,11 @@ yaf
 yaf
 uJh
 uJh
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+pPJ
+pPJ
+eMe
+pdF
 pPJ
 pPJ
 pPJ
@@ -30955,12 +31063,12 @@ yaf
 yaf
 uJh
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
+fnc
+pPJ
+pPJ
+ePO
+fnc
+pPJ
 pPJ
 pPJ
 pPJ
@@ -31213,12 +31321,12 @@ yaf
 uJh
 yaf
 yaf
+fnc
+fnc
+fnc
 yaf
 yaf
-yaf
-yaf
-yaf
-yaf
+pPJ
 pPJ
 pPJ
 pPJ
@@ -31476,7 +31584,7 @@ yaf
 yaf
 yaf
 yaf
-yaf
+pPJ
 pPJ
 pPJ
 pPJ
@@ -31734,7 +31842,7 @@ yaf
 yaf
 yaf
 yaf
-yaf
+pPJ
 pPJ
 pPJ
 hRW
