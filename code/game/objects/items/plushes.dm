@@ -701,8 +701,9 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	squeak_override = list('modular_citadel/sound/voice/hiss.ogg' = 1)
 
 /obj/item/toy/plush/mammal
-	name = "mammal plushie"
-	desc = "An adorable stuffed toy resembling some sort of crew member."
+	name = "spacecat plushie"
+	desc = "An adorable stuffed toy resembling a cat ready for take-off."
+	icon_state = "spacecat_sit"
 	can_random_spawn = FALSE
 
 /obj/item/toy/plush/catgirl/fermis
@@ -723,6 +724,7 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 /obj/item/toy/plush/bird
 	name = "bloatfly plushie"
 	desc = "A disgusting stuffed plushie that resembles a bloatfly."
+	icon_state = "bloatfly"
 	attack_verb = list("peeped", "beeped", "poofed")
 	squeak_override = list('sound/creatures/cazador_buzz.ogg' = 1)
 	can_random_spawn = FALSE
