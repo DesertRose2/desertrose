@@ -712,3 +712,11 @@
 	build_path = /obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted
 	category = list("hacked", "Rifles")
 	build_type = TOYLATHE | NO_PUBLIC_LATHE
+
+/datum/design/plushie_choice
+	name = "Plushie Choice Box"
+	id = "plushie_choice"
+	build_type = TOYLATHE
+	materials = list(/datum/material/cloth = 200, /datum/material/plastic = 20)
+	build_path = /obj/item/choice_beacon/box/plushie
+	category = list("initial", "Toys")
