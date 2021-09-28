@@ -621,10 +621,10 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	squeak_override = list('modular_citadel/sound/voice/scream_moth.ogg' = 1)
 
 /obj/item/toy/plush/mothplushie
-	name = "insect plushie"
-	desc = "An adorable stuffed toy that resembles some kind of insect."
-	icon_state = "bumble"
-	item_state = "bumble"
+	name = "gecko plushie"
+	desc = "An adorable stuffed toy that resembles a gecko."
+	icon_state = "gecko"
+	item_state = "gecko"
 	squeak_override = list('modular_citadel/sound/voice/mothsqueak.ogg' = 1)
 	can_random_spawn = FALSE
 
@@ -681,10 +681,10 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	item_state = "scrubpuppy"
 
 /obj/item/toy/plush/aiplush
-	name = "AI plushie"
-	desc = "A little stuffed toy AI core... it appears to be malfunctioning."
-	icon_state = "exo"
-	item_state = "exo"
+	name = "medhound plushie"
+	desc = "An adorable stuffed toy of a medical robot."
+	icon_state = "medihound"
+	item_state = "medihound"
 	attack_verb = list("hacked", "detonated", "overloaded")
 	squeak_override = list('sound/machines/beep.ogg' = 9, 'sound/machines/buzz-two.ogg' = 1)
 
@@ -714,21 +714,23 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	squeak_override = list('modular_citadel/sound/voice/merowr.ogg' = 1)
 
 /obj/item/toy/plush/xeno
-	name = "xenohybrid plushie"
-	desc = "An adorable stuffed toy that resmembles a xenomorphic crewmember."
+	name = "slimepup plushie"
+	desc = "An adorable stuffed toy that resmembles an abomination of science."
+	icon_state = "pink_pup"
 	squeak_override = list('sound/voice/hiss2.ogg' = 1)
 	can_random_spawn = FALSE
 
 /obj/item/toy/plush/bird
-	name = "bird plushie"
-	desc = "An adorable stuffed plushie that resembles an avian."
+	name = "bloatfly plushie"
+	desc = "A disgusting stuffed plushie that resembles a bloatfly."
 	attack_verb = list("peeped", "beeped", "poofed")
-	squeak_override = list('modular_citadel/sound/voice/peep.ogg' = 1)
+	squeak_override = list('sound/creatures/cazador_buzz.ogg' = 1)
 	can_random_spawn = FALSE
 
 /obj/item/toy/plush/sergal
-	name = "sergal plushie"
-	desc = "An adorable stuffed plushie that resembles a sagaru."
+	name = "wolf plushie"
+	desc = "An adorable stuffed plushie that resembles a sleeping wolf."
+	icon_state = "wolf_sleep"
 	squeak_override = list('modular_citadel/sound/voice/merp.ogg' = 1)
 	can_random_spawn = FALSE
 
@@ -741,8 +743,9 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	)
 
 /obj/item/toy/plush/catgirl
-	name = "feline plushie"
-	desc = "An adorable stuffed toy that resembles a feline."
+	name = "fox plushie"
+	desc = "An adorable stuffed toy that resembles a prewar fox."
+	icon_state = "fox"
 	attack_verb = list("headbutt", "scritched", "bit")
 	squeak_override = list('modular_citadel/sound/voice/nya.ogg' = 1)
 	can_random_spawn = FALSE
