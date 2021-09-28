@@ -22,6 +22,7 @@
 	gun.spread += 6
 	gun.recoil += 0.1
 	update_icon()
+	gun.desc += " It has an auto sear installed."
 
 /obj/item/attachment/auto_sear/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -29,7 +30,7 @@
 	gun.spread -= 6
 	gun.recoil -= 0.1
 	update_icon()
-
+	gun.desc = initial(gun.desc)
 
 
 /obj/item/attachment/bullet_speed
@@ -42,6 +43,7 @@
 	. = ..()
 	gun.spread *= 1.25
 	gun.extra_speed *= 1.25
+	gun.desc += " It has an foraged barrel installed."
 
 /obj/item/attachment/bullet_speed/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -63,16 +65,17 @@
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
 	gun.force +=20
+	gun.desc += " It has an bayonet attached to its muzzle."
 
 /obj/item/attachment/bayonet/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.force -=20
 
 //Burst cam won't work and it just acts like the damn autosear anyway due to the code change. So screw it. For now it's removed till I can figure out how to make it ONLY fit on guns that already have a burst size of +2
-/*
+
 /obj/item/attachment/burst_improvement
 	name = "burst cam"
-	desc = "A mechanism allowing the user to "
+	desc = "A mechanism allowing the user to fire in more controlled bursts."
 	icon_state = "burstcam"
 	slot = ATTACHMENT_SLOT_GRIP //Yeah, it's a grip for balance reasons. Honestly should be a stock. Muh bumpfire.
 
@@ -84,17 +87,17 @@
 	gun.burst_size +=1
 	gun.spread += 4
 	gun.recoil += 0.15
+	gun.desc += " It has a burst cam attached to its grip."
 
 /obj/item/attachment/burst_improvement/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.burst_size -=1
 	gun.spread -= 4
 	gun.recoil -= 0.15
-*/
 
 
 /obj/item/attachment/recoil_decrease
-	name = "recoil compensator"
+	name = "improved gas system kit"
 	desc = "This attachment mounts to the barrel of a gun, allowing for better control of the weapon through the addition of a better gas operating system. Caution: Keep hand off; hot!"
 	icon_state = "recoilcomp"
 	slot = ATTACHMENT_SLOT_BARREL
@@ -103,6 +106,7 @@
 	. = ..()
 	gun.spread *= 0.25
 	gun.fire_delay += 0.5
+	gun.desc += " It has an improved gas system installed."
 
 /obj/item/attachment/recoil_decrease/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -123,6 +127,7 @@
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
 	gun.suppressed = TRUE
+	gun.desc += " It has a silencer screwed onto its barrel."
 
 /obj/item/attachment/silencer/Toggle(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -155,6 +160,7 @@
 /obj/item/attachment/laser_sight/Attach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.spread *= 0.4
+	gun.desc += " It has an laser sight mounted on its rail."
 
 /obj/item/attachment/laser_sight/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
@@ -176,14 +182,13 @@
 	gun.build_zooming()
 	update_overlays()
 	update_icon()
-	return
+	gun.desc += " It has an scope mounted on top of it."
 
 /obj/item/attachment/scope/Detach(obj/item/gun/gun, mob/user)
 	. = ..()
 	gun.zoomable = FALSE
 	update_overlays()
 	update_icon()
-	return
 
 
 
@@ -206,6 +211,7 @@
 	if(!silent)
 		to_chat("<span class='warning'>Your [src] clicks on before shooting out a beam of light.</span>")
 	update_icon()
+	src.desc += " It has an light mounted on its rail."
 
 /obj/item/attachment/rail_light/proc/deactivate(silent = FALSE)
 	active = FALSE

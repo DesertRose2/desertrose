@@ -52,20 +52,19 @@
 	var/randomspread = 1				//Set to 0 for shotguns. This is used for weapons that don't fire all their bullets at once.
 	var/inaccuracy_modifier = 1
 
-	var/obj/item/attachments/scope
-	var/obj/item/attachments/recoil_decrease
-	var/obj/item/attachments/burst_improvement
-	var/obj/item/attachments/auto_sear
-	var/obj/item/attachments/bullet_speed
+	var/obj/item/attachment/scope
+	var/obj/item/attachment/recoil_decrease
+	var/obj/item/attachment/burst_improvement
+	var/obj/item/attachment/auto_sear
+	var/obj/item/attachment/bullet_speed
+	var/obj/item/attachment/bayonet
+	var/mutable_appearance/knife_overlay
 
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 
 	var/obj/item/firing_pin/pin = /obj/item/firing_pin //standard firing pin for most guns
 	var/no_pin_required = FALSE //whether the gun can be fired without a pin
-
-	var/obj/item/kitchen/knife/bayonet
-	var/mutable_appearance/knife_overlay
 
 	var/mutable_appearance/scope_overlay
 	var/can_scope = FALSE

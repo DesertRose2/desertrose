@@ -33,6 +33,19 @@
 /obj/item/gun/ballistic/automatic/attackby(obj/item/I, mob/user, params)
 	if(user.a_intent == INTENT_HARM)
 		return ..()
+	else if(istype(I, /obj/item/attachment/auto_sear))
+		var/obj/item/attachment/auto_sear/A = I
+		if(!auto_sear && can_automatic && semi_auto)
+			if(!user.transferItemToLoc(I, src))
+				return
+			auto_sear = A
+			src.desc += " It has an automatic sear installed."
+			src.automatic_burst_overlay = TRUE
+			src.semi_auto = FALSE
+			to_chat(user, "<span class='notice'>You attach \the [A] to \the [src].</span>")
+			update_icon()
+	else
+		return ..()
 
 /obj/item/gun/ballistic/automatic/update_overlays()
 	. = ..()
