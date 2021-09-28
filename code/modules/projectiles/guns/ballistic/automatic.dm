@@ -27,7 +27,7 @@
 	var/auto_eject_sound = null
 	var/alarmed = 0
 	var/select = 1
-	can_attachments = FALSE
+	can_attachments = FALSE		//Note: For now, 'can_attachments' is ONLY for the burst cam right now. Current work around for burst cams fitting on non-automatic weapons. All semi-autos should be set to FALSE.
 	can_suppress = FALSE
 	equipsound = 'sound/f13weapons/equipsounds/riflequip.ogg'
 
