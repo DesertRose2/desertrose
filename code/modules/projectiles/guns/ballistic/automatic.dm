@@ -27,6 +27,7 @@
 	var/auto_eject_sound = null
 	var/alarmed = 0
 	var/select = 1
+	can_attachments = FALSE
 	can_suppress = FALSE
 	equipsound = 'sound/f13weapons/equipsounds/riflequip.ogg'
 
@@ -597,7 +598,7 @@
 //SEMI-AUTO RIFLES//
 ////////////////////
 
-//Service Rifle 		Keywords: 5.56, Semi-Automatic, 20 (10-50) round mags, No Autosear (!)
+//Service Rifle 			Keywords: 5.56, Semi-Automatic, 20 (10-50) round mags, No Autosear (!)
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
@@ -617,7 +618,7 @@
 	weapon_weight = WEAPON_HEAVY
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
-	can_attachments = TRUE
+	can_attachments = FALSE
 	bayonet_state = "bayonet"
 	can_bayonet = TRUE
 	knife_x_offset = 32
@@ -627,7 +628,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
+//Scout Carbine			Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
@@ -695,7 +696,7 @@
 	extra_damage = 4
 	burst_size = 1
 	spread = 1
-	can_attachments = TRUE
+	can_attachments = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 22
@@ -731,7 +732,6 @@
 	burst_size = 1
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
-	can_attachments = TRUE
 	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 24
@@ -930,7 +930,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	suppressed = 1
-	fire_delay = 4
+	fire_delay = 3
 	burst_shot_delay = 3.6
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	can_bayonet = FALSE
@@ -967,6 +967,7 @@
 	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_GRIP = 1)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	can_attachments = TRUE
 	can_suppress = TRUE
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'

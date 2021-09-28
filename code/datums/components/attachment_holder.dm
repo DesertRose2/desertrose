@@ -121,7 +121,7 @@
 	var/list/list = list()
 	for(var/obj/item/attach as anything in attachments)
 		list[attach.name] = attach
-	var/selected = tgui_input_list(user, "Select Attachment", "Detach", list)
+	var/selected = tgui_input_list(user, "Choose an attachment", "Choose attachment")
 	if(!parent.Adjacent(user) || !selected || !tool || !tool.use_tool(parent, user, 2 SECONDS * tool.toolspeed))
 		return
 	do_detach(list[selected], user)

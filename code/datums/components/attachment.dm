@@ -1,5 +1,8 @@
 #define COMSIG_ATTACHMENT_ATTACH "attach-attach"
 #define COMSIG_ATTACHMENT_DETACH "attach-detach"
+#define ATTACH_DELAY "attach_delay"
+#define DETACH_DELAY "detach_delay"
+#define OVERLAY_ICON "overlay_icon"
 #define COMSIG_ATTACHMENT_EXAMINE "attach-examine"
 #define COMSIG_ATTACHMENT_EXAMINE_MORE "attach-examine-more"
 #define COMSIG_ATTACHMENT_PRE_ATTACK "attach-pre-attack"
