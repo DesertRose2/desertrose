@@ -84,6 +84,8 @@ obj/dugpit/New(lnk)
 			pitcontents-=I
 
 /turf/open/indestructible/ground/outside/desert/proc/finishBury(mob/user)
+	if(!(gravebody in src.loc))
+		gravebody = null
 	user.show_message("<span class='notice'>You cover the hole with dirt.</span>", 1)
 	dug = 0
 	if((storedindex >= 4) || ((gravebody || gravecoffin) != null))
@@ -122,7 +124,7 @@ obj/dugpit/New(lnk)
 		if (pit_sand < 1)
 			usr.show_message("<span class='notice'>You need to fill the hole with sand!</span>", 1)
 			return
-		var/turf/T = user.loc
+		var/turf/T = get_turf(src)
 		if (!istype(T, /turf))
 			return
 		if (dug)
@@ -135,7 +137,7 @@ obj/dugpit/New(lnk)
 					gravecoffin = curcoffin
 					break
 			playsound(src, 'sound/effects/shovel_dig.ogg', 50, 1)
-			if(!(gravebody in loc)) // prevents burying yourself while not on the tile
+			if(!(gravebody in T)) // prevents burying yourself while not on the tile
 				gravebody = null
 			if(!(gravecoffin in loc)) // just sanity checking
 				gravecoffin = null

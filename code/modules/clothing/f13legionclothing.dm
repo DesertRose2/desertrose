@@ -81,7 +81,7 @@
 /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	name = "legion prime decanus helmet"
 	desc = "(IV) This reinforced leather helmet with a red peak has a plume of black feathers."
-	item_state = "legdecanprim"
+	icon_state = "legdecanprime"
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/decan
