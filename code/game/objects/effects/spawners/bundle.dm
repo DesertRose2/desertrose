@@ -108,7 +108,7 @@
 	items = list(
 		/obj/item/clothing/under/suit/waiter,
 		/obj/effect/spawner/lootdrop/minor/kittyears_or_rabbitears,
-		/obj/item/clothing/suit/apron)
+		/obj/item/clothing/neck/apron/labor)
 
 /obj/effect/spawner/bundle/costume/pirate
 	name = "pirate costume spawner"
@@ -187,11 +187,4 @@
 	items = list(
 		/obj/item/gun/ballistic/rifle/mosin,
 		/obj/item/ammo_box/a762
-	)
-
-/obj/effect/spawner/bundle/crate/surplusrifle
-	name = "surplus rifle spawner"
-	items = list(
-		/obj/item/gun/ballistic/automatic/surplus,
-		/obj/item/ammo_box/magazine/m10mm/rifle
 	)

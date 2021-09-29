@@ -545,7 +545,7 @@
 	unique_reskin = list("Goodboye" = "fritz", "Badboye" = "fritz_bad")
 	mutantrace_variation = NONE
 
-/obj/item/clothing/neck/cloak/polychromic/polyce
+/obj/item/clothing/neck/mantle/polychromic/polyce
 	name = "polychromic embroidered cloak"
 	desc = "A fancy cloak embroidered with polychromatic thread in a pattern that reminds one of the wielders of unlimited power."
 	icon_state = "polyce"

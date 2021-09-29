@@ -48,6 +48,7 @@
 
 /////BARRICADE TYPES AND TENTS///////
 //Yeah the new tents go here. Sue me. Use cloth for more posh places like NCR, brahmin skin for tribals/legion//
+//You'll find train turfs here too. Sue me.
 
 /obj/structure/barricade/tentleathercorner
 	name = "brahmin skin tent"
@@ -76,6 +77,13 @@
 	icon_state = "woodenbarricade"
 	bar_material = WOOD
 	var/drop_amount = 3
+
+/obj/structure/barricade/train
+	name = "train siding"
+	desc = "The side of an ancient train, the vehicles that tamed the West. Now, it's little more than an armoured coffin wall."
+	icon = 'icons/turf/walls/f13composite.dmi'
+	icon_state = "trainwall"
+	icon_type_smooth = "trainwall"
 
 /obj/structure/barricade/wooden/attackby(obj/item/I, mob/user)
 	if(istype(I,/obj/item/stack/sheet/mineral/wood))

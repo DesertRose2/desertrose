@@ -67,6 +67,12 @@ Great Khans
 	/datum/outfit/loadout/marksman
 	)
 
+/datum/outfit/job/wasteland/f13genghis/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+
 /datum/outfit/job/wasteland/f13genghis
 	name = "Genghis Khan"
 	jobtype = /datum/job/wasteland/f13genghis
@@ -138,6 +144,12 @@ Great Khans
 	///datum/outfit/loadout/pusher,
 	/datum/outfit/loadout/enforcer,
 	/datum/outfit/loadout/brawler)
+
+/datum/outfit/job/wasteland/f13pusher/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
 
 /datum/outfit/job/wasteland/f13pusher
 	name = "Great Khan"
@@ -233,6 +245,13 @@ Bandit
 	/datum/outfit/loadout/banblastmaster,
 	/datum/outfit/loadout/banyankee
 	)
+
+/datum/outfit/job/wasteland/f13bandit/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
 /datum/outfit/job/wasteland/f13bandit
 	name = "Bandit"
@@ -340,6 +359,13 @@ Outlaw
 	/datum/outfit/loadout/raider_vault
 	)
 
+/datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
+
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
 	jobtype = /datum/job/wasteland/f13raider
@@ -417,7 +443,7 @@ Outlaw
 /datum/outfit/loadout/mercenary
 	name = "Mercenary"
 	suit = /obj/item/clothing/suit/armor/f13/combat/swat
-	l_hand = /obj/item/gun/ballistic/automatic/mini_uzi
+	l_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm=3,
 		/obj/item/kitchen/knife/trench=1,
@@ -506,11 +532,11 @@ Outlaw
 	head = /obj/item/clothing/head/helmet/skull
 	shoes = /obj/item/clothing/shoes/jackboots
 	uniform = /obj/item/clothing/under/jabroni
-	l_hand = /obj/item/gun/ballistic/automatic/greasegun
+	l_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,
-		/obj/item/grenade/iedcasing=2,
+		/obj/item/grenade/homemade/firebomb=2,
 		/obj/item/kitchen/knife/combat/survival=1
 		)
 
@@ -588,7 +614,7 @@ Outlaw
 	faction = "Wastelander"
 	total_positions = -1
 	spawn_positions = -1
-	description = "You travelled far to arrive at the ruined town of Pahrump, a bleak paradise far from the troubles of the Mojave Conflict - protected by Red Rock Canyon to the east, free of the many factions vying for control over Nevada. Here in Pahrump, your story and fate is your own."
+	description = "You may have come from near or far to reach the Arizona border region once known as Yuma, and the Sonoran Desert may have burnt your skin. With Cog City to the southeast in between the NCR and Legion border, and Brotherhood and raider presence, your trials may be many more still. Though your past might be set in stone, the future is in your hands."
 	supervisors = "no one"
 	selection_color = "#dddddd"
 
@@ -597,13 +623,23 @@ Outlaw
 	access = list()		//we can expand on this and make alterations as people suggest different loadouts
 	minimal_access = list()
 	loadout_options = list(
-	/datum/outfit/loadout/vault_refugee,
-	/datum/outfit/loadout/salvager,
-	/datum/outfit/loadout/medic,
-	/datum/outfit/loadout/merchant,
-	/datum/outfit/loadout/scavenger,
-	/datum/outfit/loadout/citizen,
-	/datum/outfit/loadout/slave)
+	/datum/outfit/loadout/vaultie,
+	/datum/outfit/loadout/scav,
+	/datum/outfit/loadout/sawbones,
+	/datum/outfit/loadout/trader,
+	/datum/outfit/loadout/legcit,
+	/datum/outfit/loadout/ncrcit,
+	/datum/outfit/loadout/gambler,
+	/datum/outfit/loadout/vaquero,
+	/datum/outfit/loadout/fieldhand,
+	/datum/outfit/loadout/hobo,
+	/datum/outfit/loadout/hombre,
+	/datum/outfit/loadout/tribal,
+	/datum/outfit/loadout/exmil,
+	/datum/outfit/loadout/eidolon,
+	/datum/outfit/loadout/aviator,
+	/datum/outfit/loadout/trapper,
+	/datum/outfit/loadout/trouper)
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -617,7 +653,7 @@ Outlaw
 
 /datum/outfit/job/wasteland/f13wastelander/pre_equip(mob/living/carbon/human/H)
 	..()
-	r_hand = /obj/item/book/granter/trait/selection
+	r_hand = /obj/item/book/granter/trait/selection/waster
 	uniform = pick(
 		/obj/item/clothing/under/f13/settler, \
 		/obj/item/clothing/under/f13/brahminm, \
@@ -643,91 +679,242 @@ Outlaw
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)
 
-/datum/outfit/loadout/salvager
-	name = "Salvager"
-	suit = /obj/item/clothing/suit/apron
-	shoes = /obj/item/clothing/shoes/f13/explorer
+/datum/outfit/loadout/vaultie
+	name = "Vaultie"
+	uniform = /obj/item/clothing/under/f13/vault
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/fingerless
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/n99
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/card/id/selfassign=1,
+		/obj/item/pda=1,
+		/obj/item/flashlight/seclite=1)
+
+/datum/outfit/loadout/scav
+	name = "Scav"
+	neck = /obj/item/clothing/neck/apron/labor
+	shoes = /obj/item/clothing/shoes/workboots
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
-	head = /obj/item/clothing/head/welding
-	r_hand = /obj/item/weldingtool/largetank
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
+	head = /obj/item/clothing/head/hardhat/dblue
+	belt = /obj/item/storage/belt/utility/full/engi
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m9mm=1,
+		/obj/item/clothing/head/welding/weldingfire=1,
+		/obj/item/mining_scanner=1,
+		/obj/item/pickaxe/mini)
 
-/datum/outfit/loadout/scavenger
-	name = "Scavenger"
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	r_hand = /obj/item/storage/backpack/duffelbag/scavengers
-	l_hand = /obj/item/pickaxe/drill
-	belt = /obj/item/storage/belt/utility
-	backpack_contents = list(/obj/item/mining_scanner=1,
-							/obj/item/metaldetector=1,
-							/obj/item/shovel=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
-
-/datum/outfit/loadout/medic
-	name = "Wasteland Doctor"
-	uniform = /obj/item/clothing/under/f13/follower
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
+/datum/outfit/loadout/sawbones
+	name = "Sawbones"
+	uniform = /obj/item/clothing/under/f13/doctor
+	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	gloves = /obj/item/clothing/gloves/color/latex
-	neck = /obj/item/bedsheet/medical
-	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh=2,
-							/obj/item/stack/medical/suture/emergency/fifteen=1,
-							/obj/item/stack/medical/ointment/twelve=1,
-							/obj/item/smelling_salts/crafted=1,
-							/obj/item/healthanalyzer=1,
-							/obj/item/stack/sheet/mineral/silver=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1,
-							/obj/item/lighter=1,
-							/obj/item/screwdriver=1,
-							/obj/item/wirecutters=1,
-							/obj/item/hatchet=1
-		)
+	head = /obj/item/clothing/head/fedora/curator
+	l_hand = /obj/item/gun/ballistic/revolver/colt6520
+	backpack_contents =  list(
+		/obj/item/ammo_box/l10mm=1,
+		/obj/item/healthanalyzer=1,
+		/obj/item/reagent_containers/glass/beaker/plastic=1,
+		/obj/item/storage/medical/ancientfirstaid=1)
 
-/datum/outfit/loadout/merchant
-	name = "Roving Trader"
+/datum/outfit/loadout/trader
+	name = "Trader"
 	uniform = /obj/item/clothing/under/f13/merchant
-	suit = /obj/item/clothing/neck/cloak
 	shoes = /obj/item/clothing/shoes/f13/brownie
 	head = /obj/item/clothing/head/f13/stormchaser
 	gloves = /obj/item/clothing/gloves/color/brown
+	neck = /obj/item/clothing/neck/mantle/brown
 	glasses = /obj/item/clothing/glasses/f13/biker
-	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
-	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
-							/obj/item/stack/f13Cash/caps/threefivezero=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/m1911/compact
+	backpack_contents =  list(
+		/obj/item/storage/box/vendingmachine=1,
+		/obj/item/stack/f13Cash/caps/threefivezero=1)
 
-//end new
-
-/datum/outfit/loadout/vault_refugee
-	name = "Vaultie"
-	uniform = /obj/item/clothing/under/f13/vault
-	gloves = /obj/item/pda
-	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = /obj/item/clothing/gloves/fingerless
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
-
-/datum/outfit/loadout/citizen
+/datum/outfit/loadout/legcit
 	name = "Legion Citizen"
-	uniform = /obj/item/clothing/under/f13/doctor
-	shoes = /obj/item/clothing/shoes/f13/fancy
 	suit = /obj/item/clothing/suit/curator
+	uniform = /obj/item/clothing/under/f13/brahmin
+	shoes = /obj/item/clothing/shoes/roman
 	head = /obj/item/clothing/head/scarecrow_hat
-	gloves = /obj/item/clothing/gloves/color/black
-	glasses = /obj/item/clothing/glasses/welding
-	l_hand = /obj/item/shield/legion/buckler
+	gloves = /obj/item/clothing/gloves/legion
+	l_hand = /obj/item/claymore/machete/gladius
 	backpack_contents = list(
-		/obj/item/claymore/machete/spatha=1)
+		/obj/item/shield/legion/buckler=1,
+		/obj/item/shovel/spade=1,
+		/obj/item/cultivator=1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/flashlight/lantern=1,
+		/obj/item/reagent_containers/glass/bucket/wood=1)
 
-/datum/outfit/loadout/slave
+/datum/outfit/loadout/ncrcit
 	name = "NCR Citizen"
 	uniform = /obj/item/clothing/under/f13/caravaneer
 	shoes = /obj/item/clothing/shoes/f13/tan
 	head = /obj/item/clothing/head/f13/cowboy
 	gloves = /obj/item/clothing/gloves/color/brown
 	glasses = /obj/item/clothing/glasses/orange
-	l_hand = /obj/item/gun/ballistic/automatic/varmint
+	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=2)
+		/obj/item/ammo_box/magazine/m556/rifle=1,
+		/obj/item/flashlight=1)
 
+/datum/outfit/loadout/gambler
+	name = "Gambler"
+	uniform = /obj/item/clothing/under/f13/bennys
+	shoes = /obj/item/clothing/shoes/lucky
+	head = /obj/item/clothing/head/fedora
+	l_hand = /obj/item/gun/ballistic/revolver/m29/snub
+	backpack_contents = list(
+		/obj/item/storage/fancy/cigarettes/cigars/cohiba=1,
+		/obj/item/coin/gold=1,
+		/obj/item/lighter/gold=1,
+		/obj/item/toy/cards/deck=1,
+		/obj/item/storage/box/dice=1,
+		/obj/item/stack/tile/carpet/blackred/fifty=1,
+		/obj/item/ammo_box/m44=1)
+
+/datum/outfit/loadout/vaquero
+	name = "Vaquero"
+	suit = /obj/item/clothing/suit/armor/f13/vaquero
+	uniform = /obj/item/clothing/under/f13/petrochico
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
+	head = /obj/item/clothing/head/helmet/f13/vaquerohat
+	l_hand = /obj/item/ammo_box/a357
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/colt357=1,
+		/obj/item/claymore/machete/pipe/tireiron=1,
+		/obj/item/storage/wallet=1,
+		/obj/item/reagent_containers/food/snacks/grown/cannabis=1,
+		/obj/item/clothing/mask/cigarette/pipe/cobpipe=1)
+
+/datum/outfit/loadout/fieldhand
+	name = "Field Hand"
+	neck = /obj/item/clothing/neck/apron/labor
+	uniform = /obj/item/clothing/under/f13/brahmin
+	gloves = /obj/item/clothing/gloves/botanic_leather
+	mask = /obj/item/clothing/mask/bandana
+	l_hand = /obj/item/claymore/machete
+	backpack_contents = list(
+		/obj/item/reagent_containers/glass/bucket/wood=1,
+		/obj/item/shovel=1,
+		/obj/item/cultivator=1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/seeds/corn=1,
+		/obj/item/seeds/tomato=1,
+		/obj/item/seeds/wheat=1,
+		/obj/item/pitchfork=1)
+
+/datum/outfit/loadout/hobo
+	name = "Hobo"
+	neck = /obj/item/clothing/neck/mantle/poncho
+	uniform = /obj/item/clothing/under/pants/f13/ghoul
+	shoes = /obj/item/clothing/shoes/sandal
+	mask = /obj/item/clothing/mask/facewrap
+	head = /obj/item/clothing/head/rice_hat
+	gloves = /obj/item/clothing/gloves/f13/handwraps
+	l_hand = /obj/item/claymore/machete/pipe/pan
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/drinks/bottle/whiskey=1,
+		/obj/item/storage/bag/trash=1,
+		/obj/item/picket_sign=1)
+
+/datum/outfit/loadout/hombre
+	name = "Hombre"
+	suit = /obj/item/clothing/suit/f13/vest
+	uniform = /obj/item/clothing/under/f13/cowboyb
+	gloves = /obj/item/clothing/gloves/f13/leather
+	l_hand = /obj/item/gun/ballistic/revolver/revolver44
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat=1,
+		/obj/item/lighter=1,
+		/obj/item/storage/fancy/rollingpapers=1,
+		/obj/item/ammo_box/m44=1)
+
+/datum/outfit/loadout/tribal
+	name = "Tribal"
+	suit = /obj/item/clothing/suit/hooded/cloak/desert
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	shoes = /obj/item/clothing/shoes/f13/rag
+	head = /obj/item/clothing/head/f13/cowboy
+	gloves = /obj/item/clothing/gloves/bracer
+	belt = /obj/item/storage/belt/tribe_quiver
+	l_hand = /obj/item/gun/ballistic/bow
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat/bone=1,
+		/obj/item/flashlight=1)
+
+/datum/outfit/loadout/exmil
+	name = "Ex-Military"
+	suit = /obj/item/clothing/suit/flakjack
+	uniform = /obj/item/clothing/under/f13/bdu
+	shoes = /obj/item/clothing/shoes/f13/military/oldcombat
+	head = /obj/item/clothing/head/flakhelm
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	gloves = /obj/item/clothing/gloves/combat
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m9mm=1,
+		/obj/item/storage/fancy/cigarettes/dromedaryco=1,
+		/obj/item/kitchen/knife/combat/survival =1)
+
+/datum/outfit/loadout/eidolon
+	name = "Eidolon"
+	suit = /obj/item/clothing/suit/hooded/wintercoat
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/combat
+	head = /obj/item/clothing/head/beret/black
+	gloves = /obj/item/clothing/gloves/f13/military
+	glasses = /obj/item/clothing/glasses/orange
+	neck = /obj/item/clothing/neck/mantle/gray
+	mask = /obj/item/clothing/mask/balaclava
+	l_hand = /obj/item/gun/ballistic/revolver/doublebarrel
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/slug=1,
+		/obj/item/reagent_containers/food/drinks/flask/russian=1,
+		/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka=1)
+
+/datum/outfit/loadout/aviator
+	name = "Aviator"
+	suit = /obj/item/clothing/suit/bomber
+	uniform = /obj/item/clothing/under/color/grey/glorf
+	shoes = /obj/item/clothing/shoes/f13/tan
+	head = /obj/item/clothing/head/flight
+	neck = /obj/item/storage/belt/holster/full
+	gloves = /obj/item/clothing/gloves/rifleman
+	backpack_contents = list(
+		/obj/item/lighter/fusion=1,
+		/obj/item/storage/fancy/cigarettes/cigpack_carp=1)
+
+/datum/outfit/loadout/trapper
+	name = "Trapper"
+	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster
+	uniform = /obj/item/clothing/under/f13/worn
+	shoes = /obj/item/clothing/shoes/f13/military/leather
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
+	glasses = /obj/item/clothing/glasses/orange
+	l_hand = /obj/item/shovel/trench
+	backpack_contents = list(
+		/obj/item/throwing_star/spear=3,
+		/obj/item/storage/box/mousetraps=1)
+
+/datum/outfit/loadout/trouper
+	name = "Trouper"
+	neck = /obj/item/clothing/neck/mantle/poncho/red
+	uniform = /obj/item/clothing/under/redeveninggown
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/widered
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol22
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m22=1,
+		/obj/item/reagent_containers/food/drinks/shaker=1,
+		/obj/item/restraints/handcuffs/fake/kinky=1,
+		/obj/item/melee/curator_whip=1,
+		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
+		/obj/item/reagent_containers/food/drinks/bottle/trappist=1,
+		/obj/item/reagent_containers/food/drinks/bottle/applejack=1,
+		/obj/item/reagent_containers/food/drinks/bottle/goldschlager=1,
+		/obj/item/clothing/accessory/pocketprotector/cosmetology=1)

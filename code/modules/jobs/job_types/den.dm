@@ -27,8 +27,8 @@ Mayor
 	selection_color = "#d7b088"
 
 	outfit = /datum/outfit/job/den/f13mayor
-	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 
 /datum/outfit/job/den/f13mayor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -75,7 +75,7 @@ Mayor
 	outfit = /datum/outfit/job/den/f13sheriff
 
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 
 /datum/outfit/job/den/f13sheriff
 	name = "Sheriff"
@@ -281,8 +281,8 @@ Mayor
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/den/f13dendoc
-	access = list(ACCESS_BAR, ACCESS_CLINIC, ACCESS_CLONING)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLINIC, ACCESS_CLONING)
+	access = list(ACCESS_BAR, ACCESS_CLONING)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLONING)
 
 /datum/outfit/job/den/f13dendoc
 	name = "Doctor"
@@ -541,7 +541,7 @@ Mayor
 	head = /obj/item/clothing/head/soft/mime
 	glasses = /obj/item/clothing/glasses/orange
 	uniform = /obj/item/clothing/under/f13/brahminf
-	suit = /obj/item/clothing/suit/apron/chef
+	neck = /obj/item/clothing/neck/apron/chef
 	gloves = /obj/item/clothing/gloves/color/white
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 
@@ -583,7 +583,7 @@ Mayor
 /datum/outfit/loadout/bum
 	name = "Bum"
 	mask = /obj/item/clothing/mask/facewrap
-	suit = /obj/item/clothing/suit/poncho
+	neck = /obj/item/clothing/neck/mantle/poncho
 	uniform = /obj/item/clothing/under/f13/rag
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	shoes = /obj/item/clothing/shoes/f13/rag
@@ -793,7 +793,6 @@ Mayor
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/den/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

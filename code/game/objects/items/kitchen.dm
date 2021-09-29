@@ -61,7 +61,7 @@
 	throwforce = 15
 	throw_speed = 4
 	throw_range = 6
-	embedding = list("pain_mult" = 2, "embed_chance" = 100, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
+	embedding = list("pain_mult" = 2, "embed_chance" = 80, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
 	sharpness = SHARP_EDGED
 
 /obj/item/kitchen/knife
@@ -153,7 +153,7 @@
 	force = 30
 	throwforce = 25
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
-	bayonet = TRUE
+	bayonet = FALSE
 
 /obj/item/kitchen/knife/combat/survival
 	name = "survival knife"
@@ -163,15 +163,16 @@
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
 	force = 25
 	throwforce = 25
-	bayonet = TRUE
 
 /obj/item/kitchen/knife/combat/bayonet
 	name = "bayonet knife"
 	icon_state = "knife_bayonet"
 	item_state = "knife"
 	desc = "This weapon is made for stabbing, not much use for other things."
-	throwforce = 15
-	armour_penetration = 0.1
+	force = 10
+	throwforce = 5
+	armour_penetration = 0.2
+	bayonet = TRUE
 
 /obj/item/kitchen/knife/bowie
 	name = "bowie knife"

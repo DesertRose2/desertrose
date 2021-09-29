@@ -85,7 +85,7 @@ Elder
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/laer
-	neck =			/obj/item/clothing/neck/cloak/bos/right
+	neck =			/obj/item/clothing/neck/mantle/bos/right
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -110,7 +110,7 @@ Head Paladin
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sentstand, //AER14
+	/datum/outfit/loadout/sentlead, //Gatling
 	/datum/outfit/loadout/sentheavy  //Gauss
 	)
 
@@ -129,43 +129,34 @@ Head Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
 /datum/outfit/job/bos/f13sentinel
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
 	belt =			/obj/item/storage/belt/military/assault
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck =			/obj/item/clothing/neck/cloak/bos/paladin
+	neck =			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
-		)
-
-/datum/outfit/loadout/sentstand
-	name = "Assault Head Paladin"
-	backpack_contents = list(
-		/obj/item/twohanded/sledgehammer/supersledge=1,
-		/obj/item/book/granter/trait/big_leagues=1
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/sentlead
 	name = "Fireteam-Lead Head Paladin"
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
-		/obj/item/gun/energy/laser/aer14=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/gun/ballistic/automatic/m72=1,
+		/obj/item/ammo_box/magazine/m2mm=3,
 		/obj/item/grenade/smokebomb=2,
 		/obj/item/binoculars=1
 		)
@@ -173,10 +164,8 @@ Head Paladin
 /datum/outfit/loadout/sentheavy
 	name = "Heavy Head Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist=1,
-		/obj/item/gun/ballistic/automatic/m72=1,
-		/obj/item/ammo_box/magazine/m2mm=3,
-		/obj/item/grenade/smokebomb=2,
+		/obj/item/minigunpack=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1
 		)
 
@@ -216,7 +205,6 @@ Head Scribe
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
@@ -232,7 +220,8 @@ Head Scribe
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1 \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/hssword
@@ -263,17 +252,17 @@ Head Scribe
 		)
 
 /*
-Head Knight
+Knight Captain
 */
 
 /datum/job/bos/f13knightcap
-	title = "Head Knight"
+	title = "Knight Captain"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
+	description = "You are the Knight Captain, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Sentinel"
@@ -294,11 +283,10 @@ Head Knight
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Head Knight"
+	name = "Knight Captain"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -309,13 +297,13 @@ Head Knight
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bos=1
 		)
 
 /datum/outfit/loadout/captech
@@ -326,9 +314,10 @@ Head Knight
 		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/construction/rcd/industrial=1,
-		/obj/item/gun/energy/laser/scatter=1,
+		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/clothing/glasses/meson=1
+		/obj/item/clothing/glasses/meson=1,
+		/obj/item/storage/belt/holster=1,
 		)
 
 /datum/outfit/loadout/capscout
@@ -340,7 +329,8 @@ Head Knight
 		/obj/item/binoculars=1,
 		/obj/item/book/granter/trait/trekking=1,
 		/obj/item/gun/energy/laser/wattz2k/extended=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/clothing/neck/mantle/bos/knight=1
 	)
 
 /datum/outfit/loadout/capwarden
@@ -354,15 +344,16 @@ Head Knight
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/shield/riot/tele=1,
-		/obj/item/clothing/glasses/sunglasses/big=1
+		/obj/item/clothing/glasses/sunglasses/big=1,
+		/obj/item/clothing/neck/mantle/bos/knight=1
 	)
 
 /*
-Star Paladin
+Senior Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Star Paladin"
+	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
 	total_positions = 2
@@ -396,28 +387,29 @@ Star Paladin
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/bos/f13seniorpaladin
-	name = "Star Paladin"
+	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/spaladina
 	name = "Senior Assault Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist=1,
+		/obj/item/twohanded/sledgehammer/supersledge=1,
 		/obj/item/book/granter/trait/big_leagues=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
@@ -441,10 +433,10 @@ Paladin
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Star Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
+	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Paladin, or Head Paladin"
+	supervisors = "the Senior Paladin, or Head Paladin"
 	selection_color = "#95a5a6"
 
 	loadout_options = list(
@@ -477,15 +469,16 @@ Paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	glasses=		/obj/item/clothing/glasses/meson
-	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/paladin
+	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
-	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
+	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bospaladin=1
 		)
 
 /datum/outfit/loadout/paladina
@@ -499,7 +492,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Junior Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
@@ -517,7 +510,7 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12=1,
+		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
@@ -559,7 +552,6 @@ Proctor
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13seniorscribe
 	name = "Proctor"
@@ -643,7 +635,6 @@ Scribe
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 
 /datum/outfit/job/bos/f13scribe
 	name = "Scribe"
@@ -674,7 +665,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/juniorscribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 
@@ -684,7 +675,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/scribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=4,
 		/obj/item/advanced_crafting_components/lenses = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
 		)
 
@@ -728,19 +719,19 @@ Scribe
 		)
 
 /*
-Star Knight
+Senior Knight
 */
 
 datum/job/bos/f13seniorknight
-	title = "Star Knight"
+	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You report directly to the Head Knight. You are the Brotherhood Star Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
+	description = "You report directly to the Knight Captain. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Head Knight"
+	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 3000
 	exp_type = EXP_TYPE_KNIGHT
@@ -756,21 +747,15 @@ datum/job/bos/f13seniorknight
 	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
-/datum/outfit/job/bos/f13seniorknight/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-
 /datum/outfit/job/bos/f13seniorknight
-	name = "Star Knight"
+	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
+	neck = 			/obj/item/clothing/neck/mantle/bos/knight
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
@@ -780,7 +765,8 @@ datum/job/bos/f13seniorknight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/sknighta
@@ -835,7 +821,7 @@ Knight
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Knight, or Head Knight"
+	supervisors = "the Senior Knight, or Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
 
@@ -860,7 +846,7 @@ Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/storage/belt/holster
+	neck = 			/obj/item/clothing/neck/mantle/bos/knight
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
@@ -870,14 +856,15 @@ Knight
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2 \
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
+		/obj/item/storage/bag/money/small/bosknight=1
 		)
 
 /datum/outfit/loadout/knighta
 	name = "Engineer Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
@@ -890,8 +877,8 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -903,8 +890,9 @@ Knight
 /datum/outfit/loadout/knightc
 	name = "Security Junior"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/hunting=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
@@ -917,8 +905,8 @@ Knight
 /datum/outfit/loadout/knightd
 	name = "Engineer"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
@@ -931,8 +919,8 @@ Knight
 /datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/service/maxson=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -944,8 +932,9 @@ Knight
 /datum/outfit/loadout/knightf
 	name = "Security"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/shotgun/hunting=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/ammo_box/shotgun/bean=1,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/restraints/handcuffs=1,
@@ -1020,6 +1009,38 @@ Initiate
 		)
 
 /*
+Lancer
+*/
+
+/datum/job/bos/f13lancer
+	title = "Lancer"
+	flag = F13LANCER
+	faction = "BOS"
+	total_positions = 0
+	spawn_positions = 1
+	description = "You are a Lancer, one of the esteemed and few pilots within the Brotherhood. Whether flying a vertibird or performing maintenance on them, you know everything there is to know about these VTOL aircraft. If it involves flying, it's your responsibilty. The only thing you lack, is experience."
+	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	supervisors = "the Senior Lancers and the Knight Captain"
+	selection_color = "#95a5a6"
+	outfit = /datum/outfit/job/bos/f13lancer
+	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+
+/datum/outfit/job/bos/f13lancer
+	head = /obj/item/clothing/head/f13/boscap/lancer
+	suit = /obj/item/clothing/suit/f13/lancer
+	uniform = /obj/item/clothing/under/f13/bos/bodysuit/lancer
+	ears = /obj/item/radio/headset/headset_bos
+	backpack_contents = list(/obj/item/kitchen/knife/combat=1,
+		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/storage/bag/money/small/bos=1,
+		/obj/item/clothing/head/f13/boscap/lancer/helmet
+		)
+
+
+/*
 Off-Duty
 */
 
@@ -1039,15 +1060,15 @@ Off-Duty
 	loadout_options = list(
 	/datum/outfit/loadout/offa, //Junior Knight
 	/datum/outfit/loadout/offb, //Knight
-	/datum/outfit/loadout/offc, //Star Knight
-	/datum/outfit/loadout/offd, //Head Knight
+	/datum/outfit/loadout/offc, //Senior Knight
+	/datum/outfit/loadout/offd, //Knight Captain
 	/datum/outfit/loadout/offe, //Junior Scribe
 	/datum/outfit/loadout/offf, //Scribe
 	/datum/outfit/loadout/offg, //Senior Scribe
 	/datum/outfit/loadout/offh, //Head Scribe
 	/datum/outfit/loadout/offi, //Junior Paladin
 	/datum/outfit/loadout/offj, //Paladin
-	/datum/outfit/loadout/offk, //Star Paladin
+	/datum/outfit/loadout/offk, //Senior Paladin
 	/datum/outfit/loadout/offl, //Head Paladin
 	)
 
@@ -1092,7 +1113,7 @@ Off-Duty
 		)
 
 /datum/outfit/loadout/offd
-	name = "Head Knight"
+	name = "Knight Captain"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knightcaptain=1
 		)

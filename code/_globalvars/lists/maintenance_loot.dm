@@ -300,18 +300,18 @@ GLOBAL_LIST_INIT(loot_prewar_clothing, list(
 	/obj/item/clothing/gloves/fingerless,
 	/obj/item/clothing/suit/jacket/puffer/vest,
 	/obj/item/clothing/under/pants/jeans,
-	/obj/item/clothing/neck/cloak/grey,
+	/obj/item/clothing/neck/mantle/gray,
 	/obj/item/clothing/under/suit_jacket/charcoal,
 	/obj/item/clothing/head/that,
 	/obj/item/clothing/under/suit_jacket/checkered,
 	/obj/item/clothing/under/suit_jacket/burgundy,
-	/obj/item/clothing/neck/cloak,
+	/obj/item/clothing/neck/mantle/brown,
 	/obj/item/clothing/under/scratch,
 	/obj/item/clothing/shoes/sneakers/white,
 	/obj/item/clothing/head/beanie/black,
 	/obj/item/clothing/suit/hooded/chaplain_hoodie,
 	/obj/item/clothing/under/pants/camo,
-	/obj/item/clothing/suit/apron/purple_bartender,
+	/obj/item/clothing/neck/apron/bartender,
 	/obj/item/clothing/under/rank/bartender/purple,
 	/obj/item/clothing/under/plaid_skirt/blue,
 	/obj/item/clothing/under/plaid_skirt,
@@ -324,13 +324,13 @@ GLOBAL_LIST_INIT(loot_prewar_clothing, list(
 GLOBAL_LIST_INIT(loot_prewar_costume, list(
 	/obj/item/clothing/head/ushanka,
 	/obj/item/clothing/under/soviet,
-	/obj/item/clothing/neck/cloak/grey,
+	/obj/item/clothing/neck/mantle/gray,
 	/obj/item/clothing/under/geisha,
 	/obj/item/clothing/shoes/sandal,
 	/obj/item/clothing/under/blacktango,
 	/obj/item/clothing/under/redeveninggown,
 	/obj/item/clothing/head/sombrero,
-	/obj/item/clothing/suit/poncho,
+	/obj/item/clothing/neck/mantle/poncho,
 	/obj/item/clothing/under/sailor,
 	/obj/item/clothing/under/schoolgirl/red,
 	/obj/item/clothing/under/schoolgirl,
@@ -342,7 +342,7 @@ GLOBAL_LIST_INIT(loot_prewar_costume, list(
 	/obj/item/clothing/shoes/roman,
 	/obj/item/clothing/under/maid,
 	/obj/item/clothing/under/draculass,
-	/obj/item/clothing/neck/cloak/grey,
+	/obj/item/clothing/neck/mantle/gray,
 	/obj/item/clothing/under/kilt,
 	/obj/item/clothing/under/pirate,
 	/obj/item/clothing/suit/pirate
@@ -422,7 +422,7 @@ GLOBAL_LIST_INIT(loot_medical_tool, list(
 	/obj/item/retractor,
 	/obj/item/cautery,
 	/obj/item/scalpel,
-	/obj/item/clothing/suit/apron/surgical,
+	/obj/item/clothing/suit/hooded/surgical,
 	/obj/item/clothing/gloves/color/latex,
 	/obj/item/clothing/mask/surgical,
 	/obj/item/surgical_drapes,
@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/gun/ballistic/revolver/colt6520,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/varmint,
+	/obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/ammo_box/magazine/m556/rifle/small
 ))
 
@@ -561,7 +561,7 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/stock_parts/cell/ammo/ec,
 	/obj/item/gun/ballistic/automatic/m1carbine,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
-	/obj/item/gun/ballistic/automatic/commando,
+	/obj/item/gun/ballistic/rifle/mag/commando,
 	/obj/item/ammo_box/magazine/m45
 ))
 
@@ -570,7 +570,7 @@ GLOBAL_LIST_INIT(loot_t3_range, list(
 	/obj/item/ammo_box/magazine/uzim9mm,
 	/obj/item/gun/ballistic/automatic/smg10mm,
 	/obj/item/ammo_box/magazine/m10mm_adv/ext,
-	/obj/item/gun/ballistic/automatic/greasegun,
+	/obj/item/gun/ballistic/automatic/smg/greasegun,
 	/obj/item/ammo_box/magazine/greasegun,
 	/obj/item/gun/ballistic/shotgun/trench,
 	/obj/item/ammo_box/shotgun/buck,
@@ -603,11 +603,10 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/gun/ballistic/rifle/automatic/hunting/brush,
 	/obj/item/ammo_box/tube/c4570,
 	/obj/item/ammo_box/tube/c4570,
-	/obj/item/gun/ballistic/rifle/antimateriel,
+	/obj/item/gun/ballistic/rifle/mag/antimateriel,
 	/obj/item/ammo_box/a50MG,
 	/obj/item/gun/ballistic/automatic/rangemaster,
 	/obj/item/ammo_box/magazine/m762,
-	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/ammo_box/magazine/d12g,
 	/obj/item/gun/energy/ionrifle,
 	/obj/item/stock_parts/cell/ammo/mfc,
@@ -618,7 +617,7 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 
 GLOBAL_LIST_INIT(loot_t5_range, list(
 	/obj/item/gun/energy/laser/plasma,
-	/obj/item/gun/ballistic/automatic/tommygun,
+	/obj/item/gun/ballistic/automatic/smg/tommygun,
 	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/gun/energy/laser/scatter,
 	/obj/item/gun/ballistic/revolver/hunting,
@@ -877,21 +876,24 @@ GLOBAL_LIST_INIT(loot_t1_money, list(
 	/obj/item/stack/f13Cash/random/low,
 	/obj/item/stack/f13Cash/random/ncr/low,
 	/obj/item/stack/f13Cash/random/denarius/low,
-	/obj/item/stack/f13Cash/random/aureus/low
+	/obj/item/stack/f13Cash/random/aureus/low,
+	/obj/item/stack/f13Cash/random/bawls/low
 ))
 
 GLOBAL_LIST_INIT(loot_t2_money, list(
 	/obj/item/stack/f13Cash/random/med,
 	/obj/item/stack/f13Cash/random/ncr/med,
 	/obj/item/stack/f13Cash/random/denarius/med,
-	/obj/item/stack/f13Cash/random/aureus/med
+	/obj/item/stack/f13Cash/random/aureus/med,
+	/obj/item/stack/f13Cash/random/bawls/med
 ))
 
 GLOBAL_LIST_INIT(loot_t3_money, list(
 	/obj/item/stack/f13Cash/random/high,
 	/obj/item/stack/f13Cash/random/ncr/high,
 	/obj/item/stack/f13Cash/random/denarius/high,
-	/obj/item/stack/f13Cash/random/aureus/high
+	/obj/item/stack/f13Cash/random/aureus/high,
+	/obj/item/stack/f13Cash/random/bawls/high
 ))
 
 GLOBAL_LIST_INIT(loot_skillbook, list(

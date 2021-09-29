@@ -73,8 +73,8 @@
 	icon_state = "gutsy"
 	icon_living = "gutsy"
 	icon_dead = "gib7"
-	health = 200
-	maxHealth = 200
+	health = 150
+	maxHealth = 150
 	melee_damage_lower = 72
 	melee_damage_upper = 72
 	attack_sound = 'sound/items/welder.ogg'
@@ -438,13 +438,16 @@
 
 /mob/living/simple_animal/hostile/handy/sentrybot/chew/strong
 	name = "big chew-chew"
-	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser and covered in thick, oddly blue armor plating, the name Big Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
-	extra_projectiles = 6
+	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser firing high-penetration experimental lasers and covered in thick, oddly blue armor plating, the name Big Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
+	extra_projectiles = 4
 	health = 1000
 	maxHealth = 1000 //CHONK
 	obj_damage = 300
 	retreat_distance = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS //wall-obliterator. perish.
+	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak/strong
+	speed = 3
+	rapid_melee = 3
 	color = "#75FFE2"
 	aggro_vision_range = 15
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1 //cannot self-harm with it's explosion spam
@@ -460,6 +463,14 @@
 	else
 		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
 		return FALSE
+
+/obj/item/projectile/beam/laser/pistol/ultraweak/strong
+	damage = 14
+	icon_state = "gaussstrong"
+	armour_penetration = 0.5
+	movement_type = FLYING | UNSTOPPABLE
+	pixels_per_second = TILES_TO_PIXELS(15)
+	range = 18
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
 	name = "sentry bot"
@@ -482,9 +493,9 @@
 	icon_living = "assaultron"
 	gender = FEMALE //Pffffffffffffffffffffff
 	icon_dead = "gib7"
-	health = 450
+	health = 400
 	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
-	maxHealth = 450
+	maxHealth = 400
 	speed = 0
 	melee_damage_lower = 55
 	melee_damage_upper = 60
@@ -511,5 +522,12 @@
 	wander = 0
 	anchored = FALSE
 	del_on_death = FALSE
-	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
+	possible_a_intents = list(INTENT_HELP, INTENT_HARM, INTENT_GRAB, INTENT_DISARM)
 	dextrous = TRUE
+	deathmessage = "abruptly shuts down, falling to the ground!"
+
+/mob/living/simple_animal/hostile/handy/assaultron/playable/medical
+	name = "SA-S-E"
+	desc = "An Assaultron modified for the Medical field, SA-S-E forgoes the weaponry and deadliness of her military countarparts to save lives. Painted white with blue highlights, and a blue cross on the front of her visor, this robot comes equipped with what looks like modified medical gear. Her head has no eye-laser, instead a gently pulsing blue eye that scans people the analyze their health, a defibrilator on her back, and articulated hands to be able to use the myriad medical tools strapped to parts of her body under protective cases all show this model is meant to save lives. She's stockier than other Assaultrons due to all the added gear, and her legs seem much thicker than normal due to reinforced servos and gears."
+	icon_state = "assaultron_sase"
+	icon_dead = "assaultron_sase_dead"

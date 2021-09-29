@@ -5,7 +5,7 @@
 
 /obj/structure/closet/secure_closet/quartermaster/PopulateContents()
 	..()
-	new /obj/item/clothing/neck/cloak/qm(src)
+	new /obj/item/clothing/neck/mantle/qm(src)
 	new /obj/item/clothing/head/beret/qm(src)
 	new /obj/item/storage/lockbox/medal/cargo(src)
 	new /obj/item/clothing/suit/toggle/labcoat/depjacket/sup/qm(src)

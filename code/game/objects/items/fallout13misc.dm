@@ -200,7 +200,7 @@
 	faction = "Locust"
 
 /obj/item/flag/vtcc
-	name = "Vault-Tec Cityscape Coalition flag"
+	name = "Vault-Tec City Coalition flag"
 	desc = "A flag reminiscent of that from old America. The symbol of Vault-Tec appropriated in place of the old stars sharing their colour, with 4 stripes in 2 colours."
 	icon_state = "vtccflag"
 	item_state = "vtccflag"
@@ -208,7 +208,15 @@
 
 /obj/item/flag/vtcc/highvhills
 	name = "High Valley Hills flag"
+	icon_state = "hvhflag"
+	item_state = "hvhflag"
 	desc = "A flag with two white stripes, blue border and a red centre with a white Vault-Tec logo, turned on its side and stretched out."
+
+/obj/item/flag/vtcc/whitepeak
+	name = "White Peak flag"
+	icon_state = "whitepeakflag"
+	item_state = "whitepeakflag"
+	desc = "A flag that depicts a mountain peak backed by a clear blue sky, a red Vault-Tec logo hanging in place of the sun."
 
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")

@@ -194,6 +194,7 @@
 #define TRAIT_EMPATH			"empath"
 #define TRAIT_FRIENDLY			"friendly"
 #define TRAIT_BIG_LEAGUES		"big_leagues"
+#define TRAIT_DEMOLITION_EXPERT	"explosives"
 #define TRAIT_TRAPPER			"trapper"
 #define TRAIT_IRONFIST			"iron_fist"
 #define TRAIT_SNOB				"snob"
@@ -213,6 +214,7 @@
 #define TRAIT_PERFECT_ATTACKER	"perfect_attacker"
 #define TRAIT_BUFFOUT_BUFF		"buffout_buff"
 #define TRAIT_UNARMED_WEAPON	"unarmed_weapon"
+#define TRAIT_CHEM_USER 		"chem_user" //average chem enjoyer vs chad ace outlaw
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)
@@ -248,6 +250,8 @@
 #define TRAIT_HARD_YARDS        "hard_yards"
 #define	TRAIT_LIFEGIVER			"lifegiver"
 #define TRAIT_MARS_TEACH		"mars_teachings" //for legion unique functions
+#define TRAIT_CATEYE_NIGHT_VISION "cateye_night_vision"
+#define TRAIT_LONGPORKLOVER		"cannibal"
 
 #define TRAIT_SURGERY_LOW		"lowsurgery"
 #define TRAIT_SURGERY_MID		"midsurgery"
@@ -258,7 +262,6 @@
 #define TRAIT_GUNSMITH_TWO      "gunsmith_two"
 #define TRAIT_GUNSMITH_THREE    "gunsmith_three"
 #define TRAIT_GUNSMITH_FOUR     "gunsmith_four"
-#define TRAIT_MASTER_GUNSMITH   "master_gunsmith"
 
 
 //non-mob traits

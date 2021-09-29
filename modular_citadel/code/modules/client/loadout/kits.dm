@@ -132,7 +132,7 @@
 	new /obj/item/clothing/under/f13/ncr/scout(src)
 	new /obj/item/clothing/gloves/patrol/burned(src)
 	new /obj/item/clothing/glasses/regular/protected(src)
-	new /obj/item/clothing/neck/cloak/ranger(src)
+	new /obj/item/clothing/neck/mantle/ranger(src)
 	new /obj/item/modkit/kainatarmor(src)
 
 //Bird Blackhawk - octus
@@ -349,6 +349,7 @@
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
 	new /obj/item/clothing/under/harebell_dress(src)
+	new /obj/item/clothing/under/flowerdress(src)
 
 //Bartholomew The Apostle - pilotbland
 /obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()
@@ -393,3 +394,18 @@
 //Jay-Oh - Conormackgegore
 /obj/item/storage/box/large/custom_kit/jayoh/PopulateContents()
 	new /obj/item/clothing/under/f13/dbdu(src) 
+
+//Muhsollini - Viatoris
+/obj/item/storage/box/large/custom_kit/viatoris/PopulateContents()
+	new /obj/item/modkit/legionvetpalhunter(src)
+	new /obj/item/modkit/legionvetpalhunterhelm(src)
+	
+//The Batsman - ElizabethDame
+/obj/item/storage/box/large/custom_kit/thebatsman/PopulateContents()
+	new /obj/item/clothing/under/f13/batter(src)
+	new /obj/item/clothing/gloves/f13/leather/fingerless(src)
+	new /obj/item/storage/backpack/satchel/explorer(src)
+	new /obj/item/clothing/shoes/jackboots(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
+	new /obj/item/clothing/head/soft/grey(src)
+	new /obj/item/storage/backpack/satchel/explorer(src)

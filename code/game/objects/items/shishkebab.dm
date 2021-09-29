@@ -1,7 +1,7 @@
 /obj/item/shishkebabpack
 	name = "shishkebab backpack"
 	desc = "A backpack containing a large quantity of fuel and a pipe attaching it to a long, deadly blade. You ever wanted to set fire to people with a sword?"
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "shishkebabpack"
 	item_state = "shishkebabpack"
 	w_class = WEIGHT_CLASS_BULKY
@@ -93,7 +93,7 @@
 /obj/item/weapon/melee/shishkebab //This should never exist without the backpack.
 	name = "shishkebab"
 	desc = "A deadly flaming sword covered in fuel. You're not sure this is entirely safe."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "shishkebab"
 	item_state = "shishkebab"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'

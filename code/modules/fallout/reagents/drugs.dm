@@ -10,6 +10,15 @@
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
 
+/datum/reagent/drug/jet/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
+	..()
+
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
@@ -19,6 +28,15 @@
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
 		step(M, pick(GLOB.cardinals))
 	if(prob(12))
@@ -88,12 +106,30 @@
 	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
-	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
-	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
+	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
+	..()
+
+/datum/reagent/drug/turbo/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	if(prob(5))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
 	M.Jitter(2)
@@ -163,6 +199,15 @@
 
 /datum/reagent/drug/psycho/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("<br><font color='#FF0000'><b>FUCKING KILL!</b></font>", "<br><font color='#FF0000'><b>RAAAAR!</b></font>", "<br><font color='#FF0000'><b>BRING IT!</b></font>")
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	if(prob(20))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
 	M.AdjustStun(-25, 0)
@@ -185,6 +230,15 @@
 	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
 	if(rage)
 		QDEL_NULL(rage)
+	..()
+
+/datum/reagent/drug/psycho/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
 	..()
 
 /datum/reagent/drug/psycho/overdose_process(mob/living/carbon/human/M)
@@ -272,7 +326,25 @@
 		M.maxHealth -= 25
 		M.health -= 25
 
+/datum/reagent/drug/buffout/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
+	..()
+
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	..()

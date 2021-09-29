@@ -499,7 +499,7 @@
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
 			var/vol = reac_volume + M.reagents.get_reagent_amount(/datum/reagent/medicine/synthflesh)
 			//Has to be at less than THRESHOLD_UNHUSK burn damage and have 100 synthflesh before unhusking. Corpses dont metabolize.
-			if(HAS_TRAIT_FROM(M, TRAIT_HUSK, "burn") && M.getFireLoss() < THRESHOLD_UNHUSK && (vol > 100))
+			if(HAS_TRAIT_FROM(M, TRAIT_HUSK, "burn") && M.getFireLoss() < THRESHOLD_UNHUSK && (vol > 99))
 				M.cure_husk("burn")
 				M.visible_message("<span class='nicegreen'>Most of [M]'s burnt off or charred flesh has been restored.")
 	..()
@@ -1079,7 +1079,25 @@
 	REMOVE_TRAIT(L, TRAIT_TASED_RESISTANCE, type)
 	..()
 
+/datum/reagent/medicine/stimulants/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
+	..()
+
 /datum/reagent/medicine/stimulants/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	if(M.health < 50 && M.health > 0)
 		M.adjustOxyLoss(-1*REM, FALSE)
 		M.adjustToxLoss(-1*REM, FALSE)

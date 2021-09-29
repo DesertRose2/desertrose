@@ -128,6 +128,8 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 /datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
 	M.set_disgust(60)
 	M.Dizzy(10)
+	M.adjustFireLoss(3*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustBruteLoss(3*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
 
@@ -183,7 +185,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 20
 	heal_factor = -2
 	heal_factor_perk = -4
-
+/* For now unused
 /datum/reagent/medicine/healing_powder/poultice_zombie
 	name = "'Vita' poultice"
 	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
@@ -192,6 +194,19 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 11
 	heal_factor = 0
 	heal_factor_perk = -5
+
+/datum/reagent/medicine/healing_powder/poultice_zombie/on_mob_life(mob/living/carbon/M)
+	var/is_technophobe = FALSE
+	if(HAS_TRAIT(M, TRAIT_TECHNOPHOBE))
+		is_technophobe = TRUE
+	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
+		metabolization_rate = 0.8 * REAGENTS_METABOLISM //Allows you to preheal but it will process much faster to prevent abuse
+	var/heal_rate = (is_technophobe ? heal_factor_perk : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+	M.adjustFireLoss(heal_rate)
+	M.adjustBruteLoss(heal_rate)
+	M.hallucination = max(M.hallucination, is_technophobe ? 5 : 40)
+	. = TRUE
+	..()
 
 /datum/reagent/medicine/healing_powder/poultice_zombie/overdose_start(mob/living/M)
 	to_chat(M, "<span class='userdanger'>You feel your brain flicking off as the powder slowly puts you into coma!</span>")
@@ -206,7 +221,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
-
+*/
 /datum/reagent/medicine/radshroom
 	name = "Mushroom extract"
 	description = "A combination of punga and cave fungus to help dealing with radiation."
@@ -309,7 +324,25 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 			*/
 	..()
 
+/datum/reagent/medicine/medx/on_mob_delete(mob/living/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE && isliving(M))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		M.confused = 0
+	..()
+
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
+	var/is_druggie = FALSE
+	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
+		is_druggie = TRUE
+	if(is_druggie == FALSE)
+		to_chat(M, "<span class='userdanger'>I don't feel like I should be taking this!</span>")
+		M.blur_eyes(50)
+		M.Jitter(50)
+		M.Dizzy(50)
+		M.confused += 25
 	M.AdjustStun(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -452,6 +485,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		to_chat(M, "<span class='notice'>You feel at ease as everything becomes clearer.</span>")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		ADD_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
+		ADD_TRAIT(M, TRAIT_CATEYE_NIGHT_VISION, "cateye")
 
 /datum/reagent/medicine/cateye/on_mob_delete(mob/living/carbon/human/M)
 	..()
@@ -459,6 +493,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		to_chat(M, "<span class='notice'>Your eyes feel tired..</span>")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		REMOVE_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
+		REMOVE_TRAIT(M, TRAIT_CATEYE_NIGHT_VISION, "cateye")
 
 /datum/reagent/medicine/cateye/overdose_process(mob/living/M)
 	if(prob(33))
@@ -614,3 +649,33 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 /datum/reagent/medicine/gaia/overdose_start(mob/living/M)
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
+
+/datum/reagent/medicine/longpork_stew
+	name = "longpork stew"
+	description = "A dish sworn by some to have unusual healing properties. To most it just tastes disgusting. What even is longpork anyways?..."
+	reagent_state = LIQUID
+	color =  "#915818"
+	taste_description = "oily water, with bits of raw-tasting tender meat."
+	metabolization_rate = 0.15 * REAGENTS_METABOLISM //slow, weak heal that lasts a while. Metabolizies much faster if you are not hurt.
+	overdose_threshold = 50 //If you eat too much you get poisoned from all the human flesh you're eating
+	var/longpork_hurting = 0
+	var/longpork_lover_healing = -2
+
+/datum/reagent/medicine/longpork_stew/on_mob_life(mob/living/carbon/M)
+	var/is_longporklover = FALSE
+	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER))
+		is_longporklover = TRUE
+	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
+		metabolization_rate = 3 * REAGENTS_METABOLISM //metabolizes much quicker if not injured
+	var/longpork_heal_rate = (is_longporklover ? longpork_lover_healing : longpork_hurting) * REAGENTS_EFFECT_MULTIPLIER
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
+		M.adjustFireLoss(longpork_heal_rate)
+		M.adjustBruteLoss(longpork_heal_rate)
+		M.adjustToxLoss(is_longporklover ? 0 : 3)
+		. = TRUE
+		..()
+
+/datum/reagent/medicine/longpork_stew/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
+	..()
+	. = TRUE

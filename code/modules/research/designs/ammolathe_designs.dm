@@ -412,6 +412,13 @@
 	build_path = /obj/item/ammo_box/magazine/garand308/empty
 	category = list("initial", "Intermediate Magazines")
 
+/datum/design/ammolathe/amr50
+	name = "empty anti-materiel rifle magazine (.50MG)"
+	id = "amr50"
+	materials = list(/datum/material/iron = 10000)
+	build_path = /obj/item/ammo_box/magazine/amr/empty
+	category = list("initial", "Intermediate Magazines")
+
 //Tier 3 Ammo
 /datum/design/ammolathe/c4570
 	name = ".45-70 FMJ ammo box"
@@ -475,6 +482,34 @@
 	materials = list(/datum/material/iron = 20000, /datum/material/titanium = 5000, /datum/material/blackpowder = 2000)
 	build_path = /obj/item/ammo_box/a762box/ap
 	category = list("initial", "Intermediate Ammo")
+
+/datum/design/ammolathe/c5mm
+	name = "5mm ammo box"
+	id = "c5mm_box"
+	materials = list(/datum/material/iron = 25000, /datum/material/blackpowder = 3000)
+	build_path = /obj/item/ammo_box/c5mm
+	category = list("initial", "Intermediate Ammo")
+
+/datum/design/ammolathe/m473
+	name = "g11 magazine (4.73mm)"
+	id = "4.73mm_mag"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/m473
+	category = list("initial", "Intermediate Magazines")
+
+/datum/design/ammolathe/m473box
+	name = "ammo box (4.73mm)"
+	id = "4.73mm_box"
+	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2500)
+	build_path = /obj/item/ammo_box/m473_box
+	category = list("initial", "Intermediate Ammo")
+
+/datum/design/ammolathe/c5mmag
+	name = "empty 5mm gun magazine"
+	id = "c5mm_mag"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/c5mm/empty
+	category = list("initial", "Intermediate Magazines")
 
 /*/datum/design/ammolathe/a45op
 	name = ".45 ACP +P ammo box"
@@ -570,3 +605,10 @@
 	materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3500)
 	build_path = /obj/item/ammo_box/a556/match
 	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/c5mmag/extended
+	name = "empty extended 5mm gun magazine (5mm)"
+	id = "c5mm_extended"
+	materials = list(/datum/material/iron = 8000)
+	build_path = /obj/item/ammo_box/magazine/c5mm/extended/empty
+	category = list("initial", "Advanced Magazines")

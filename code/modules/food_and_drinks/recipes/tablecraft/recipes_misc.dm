@@ -240,9 +240,8 @@
 	name = "Trail Mix"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/grown/pinyon = 3,
-		/obj/item/reagent_containers/food/snacks/roasted_peanuts = 1,
-		/obj/item/reagent_containers/food/snacks/grown/berries = 1,
-		/obj/item/seeds/sunflower = 1
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1,
+		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/trailmix
 	subcategory = CAT_MISCFOOD

@@ -160,7 +160,7 @@
 		if(1) //station general
 			return list(ACCESS_KITCHEN,ACCESS_BAR, ACCESS_HYDROPONICS, ACCESS_JANITOR, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_LIBRARY, ACCESS_THEATRE, ACCESS_LAWYER)
 		if(2) //security
-			return list(ACCESS_SEC_DOORS, ACCESS_WEAPONS, ACCESS_SECURITY, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_FORENSICS_LOCKERS, ACCESS_COURT, ACCESS_LEGION, ACCESS_HOS, ACCESS_NCR, ACCESS_BOS)
+			return list(ACCESS_SEC_DOORS, ACCESS_WEAPONS, ACCESS_SECURITY, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_FORENSICS_LOCKERS, ACCESS_COURT, ACCESS_LEGION, ACCESS_HOS, ACCESS_NCR, ACCESS_BOS, ACCESS_VTCC)
 		if(3) //medbay
 			return list(ACCESS_MEDICAL, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MORGUE, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_SURGERY, ACCESS_CMO, ACCESS_FOLLOWER)
 		if(4) //research
@@ -335,8 +335,8 @@
 			return "Legion Access"
 		if(ACCESS_NCR)
 			return "NCR Access"
-		if(ACCESS_NCROFFDUTY)
-			return "NCR Off-Duty Access"
+		if(ACCESS_VTCC)
+			return "Vault-Tec City Cooperation Access"
 		if(ACCESS_FOLLOWER)
 			return "Follower Access"
 
@@ -363,9 +363,9 @@
 
 /proc/get_all_jobs()
 	return list("Centurion", "NCR Captain", "Overseer", "Sheriff",
-				"Sentinel", "Senior Paladin", "Paladin", "Knight-Captain", "Senior Knight", "Knight", "Head Scribe", "Senior Scribe", "Scribe", "Initiate",
+				"Sentinel", "Senior Paladin", "Paladin", "Knight Captain", "Senior Knight", "Knight", "Head Scribe", "Senior Scribe", "Scribe", "Initiate",
 				"Veteran Decanus", "Vexillarius", "Decanus", "Veteran Legionnaire", "Prime Legionary",
-				"NCR Lieutenant", "NCR Medical Officer", "NCR Sergeant First Class", "NCR Sergeant", ,"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Trooper",
+				"NCR Commanding Officer", "NCR Medical Officer", "NCR Sergeant First Class", "NCR Sergeant", ,"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Trooper",
 				"NCR Veteran Ranger", "NCR Patrol Ranger", "NCR Recon Ranger",
 				"NCR Scout", "NCR Scout Sergeant", "NCR Scout Lieutenant",
 				"Chief of Security", "Vault-tec Doctor", "Vault-tec Scientist",

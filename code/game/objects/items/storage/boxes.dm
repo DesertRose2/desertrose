@@ -1410,16 +1410,15 @@ obj/item/storage/box/stingbangs
 
 /obj/item/storage/box/ids/legfollower/PopulateContents()
 	for(var/i in 1 to 7)
-		new /obj/item/card/id/dogtag/legfollower
+		new /obj/item/card/id/dogtag/legfollower(src)
 
 /obj/item/storage/box/ids/followers
-	name = "box of spare volunteer ids"
-	desc = "IDs for issue to new Volunteers"
+	name = "box of assistant ids"
+	desc = "IDs for issue to weekly assistants"
 
 /obj/item/storage/box/ids/followers/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/card/id/silver=7
-		)
+	for(var/i in 1 to 7)
+		new /obj/item/card/id/silver/followers(src)
 
 /obj/item/storage/box/deputy_badges
 	name = "box of spare badges"

@@ -47,9 +47,9 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
 	"Head Scribe",
 	"Head Paladin",
-	"Head Knight",
+	"Knight Captain",
 
-	"NCR Lieutenant",
+	"NCR Commanding Officer",
 	"NCR Sergeant First Class",
 	"NCR Medical Officer",
 
@@ -77,16 +77,17 @@ GLOBAL_LIST_INIT(command_positions, list(
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 "Mr. Handy"))
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"faction"
-//NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Elder",
 "Head Paladin",
-"Head Knight",
+"Knight Captain",
 "Head Scribe",
-"Star Paladin",
+"Senior Paladin",
 "Paladin",
+"Senior Lancer",
+"Lancer",
 
 "Legion Centurion",
 "Legion Venator",
@@ -122,7 +123,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
-"Star Knight",
+"Senior Knight",
 "Knight",
 "Proctor",
 "Scribe",
@@ -174,21 +175,23 @@ GLOBAL_LIST_INIT(khan_positions, list(
 
 GLOBAL_LIST_INIT(brotherhood_paladin_positions, list(
 	"Head Paladin",
-	"Star Paladin",
+	"Senior Paladin",
 	"Paladin"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
 	"Head Paladin",
-	"Head Knight",
+	"Knight Captain",
 	"Head Scribe"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Star Paladin",
+	"Senior Paladin",
 	"Paladin",
-	"Star Knight",
+	"Senior Lancer",
+	"Lancer",
+	"Senior Knight",
 	"Knight",
 	"Proctor",
 	"Scribe",
@@ -219,11 +222,13 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_veteran_positions, list(
+	"Legion Vexillarius",
 	"Legion Veteran Decanus",
 	"Veteran Legionary"
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
+	"Legion Vexillarius",
 	"Legion Veteran Decanus",
 	"Veteran Legionary",
 	"Legion Libritor",
@@ -244,11 +249,12 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
+	"NCR Ranger Sergeant",
 	"NCR Ranger",
 ))
 
 GLOBAL_LIST_INIT(ncr_leadership_positions, list(
-	"NCR Lieutenant",
+	"NCR Commanding Officer",
 	"NCR Sergeant First Class",
 	"NCR Medical Officer"
 ))
@@ -272,6 +278,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Rear Echelon",
 	"NCR Recruit",
 	"NCR Off-Duty",
+	"NCR Ranger Sergeant",
 	"NCR Ranger"
 ))
 
@@ -329,7 +336,7 @@ GLOBAL_LIST_INIT(vtcc_command_positions, list(
 ))
 GLOBAL_LIST_INIT(vtcc_positions, list(
 	"City Security Officer",
-	"City Security Scout",
+	"City Security Cadet",
 	"Roadie",
 	"Merchant",
 	"Innkeeper",
@@ -361,8 +368,8 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
-	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Scout","City Security Officer")),
-	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
+	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet","City Security Officer")),
+	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger", "NCR Ranger Sergeant","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
 	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
 	EXP_TYPE_DECANUS       = list("titles" = list("Legion Recruit Decanus")),
@@ -371,7 +378,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Veteran Ranger","NCR Medical Officer")),
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR Sergeant First Class","NCR Veteran Ranger","NCR Medical Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
 	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Marshal", "Chief Researcher"))
 

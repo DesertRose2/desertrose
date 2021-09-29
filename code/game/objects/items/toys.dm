@@ -637,6 +637,21 @@
 	desc = "Mini-Mecha action figure! Collect them all! 12/12."
 	icon_state = "reticenceprize"
 	quiet = 1
+	
+/obj/item/toy/prize/darkgygax
+	name = "toy Dark Gygax"
+	desc = "Mini-Mecha action figure! Unreleased edition!"
+	icon_state = "darkgygaxtoy"
+	
+/obj/item/toy/prize/clarke
+	name = "toy Clarke"
+	desc = "Mini-Mecha action figure! Unreleased edition!"
+	icon_state = "clarketoy"
+	
+/obj/item/toy/prize/savannahivanov
+	name = "toy Savannah-Ivanov"
+	desc = "Mini-Mecha action figure! Unreleased edition!"
+	icon_state = "savannahivanovtoy"
 
 
 /obj/item/toy/talking
@@ -1104,7 +1119,7 @@
 
 /obj/item/toy/cards/deck/syndicate
 	name = "suspicious looking deck of cards"
-	desc = "A deck of space-grade playing cards. They seem unusually rigid."
+	desc = "A deck of high quality playing cards. They seem unusually rigid."
 	icon_state = "deck_syndicate_full"
 	deckstyle = "syndicate"
 	card_hitsound = 'sound/weapons/bladeslice.ogg'

@@ -627,10 +627,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82/legion
-	name = "pilum rifle blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/maxson
+	name = "maxson carbine blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82/legion)
+	crafting_recipe_types = list(/datum/crafting_recipe/maxson)
 
 /obj/item/book/granter/crafting_recipe/blueprint/bastard
 	name = "bastard LMG blueprint"
@@ -714,6 +714,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r91)
 
+/obj/item/book/granter/crafting_recipe/blueprint/r91/legion
+	name = "pilum rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/r91/legion)
+
 /obj/item/book/granter/crafting_recipe/blueprint/breacher
 	name = "breacher shotgun blueprint"
 	icon_state = "blueprint2"
@@ -779,16 +784,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
-/obj/item/book/granter/crafting_recipe/blueprint/fnfal
-	name = "fn fal blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/fnfal)
-
-/obj/item/book/granter/crafting_recipe/blueprint/caws
-	name = "h&k caws blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/caws)
-
 /obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine
 	name = "scout carbine blueprint"
 	icon_state = "blueprint2"
@@ -846,14 +841,6 @@
 	granted_trait = TRAIT_SURGERY_HIGH
 	traitname = "advanced surgery"
 	remarks = list("Negligence lawsuits are bad for buisness...", "Chlorine gas is not a healthy sedative...", "Pharmacists are just drug dealers with a license...")
-
-/obj/item/book/granter/trait/tinkering
-	name = "Tinkering for Wastelander"
-	desc = "A useful book on tinkering."
-	oneuse = TRUE
-	granted_trait = TRAIT_MASTER_GUNSMITH
-	traitname = "tinkering"
-	remarks = list("Experiment!", "You can always try 3 times...", "Be careful with loaded guns...")
 
 /obj/item/book/granter/trait/spirit_teachings
 	name = "Teachings of the Machine Spirits"
@@ -915,13 +902,30 @@
 	traitname = "hitting things"
 	remarks = list("Line up your bat...", "Judge target travel speed...", "Buy a premium swatter to maximize ball hit rate - or to break skulls...", "Apply blunt object to head...")
 
+/obj/item/book/granter/trait/chem_user
+	name = "Cook-Cook's guide to enjoying your cook-up"
+	desc = "A manual on how to take chems and not suffer too many adverse effects."
+	oneuse = TRUE
+	granted_trait = TRAIT_CHEM_USER
+	traitname = "chem use"
+	remarks = list("Clean your needles...", "Ensure you have quality product...", "Don't mix drugs...", "Only buy from trusted dealers...")
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
 	granted_trait = null
 
+/obj/item/book/granter/trait/demolitions
+	name = "Anarchist's Cookbook"
+	desc = "A manual on how to construct homemade explosives without losing your fingers, now with pictures."
+	oneuse = TRUE
+	granted_trait = TRAIT_DEMOLITION_EXPERT
+	traitname = "explosives"
+	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
+	crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
+
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
-	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer")
+	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -946,12 +950,46 @@
 			if("Power Armor")
 				granted_trait = TRAIT_PA_WEAR
 				traitname = "advanced armor"
-			if("Tinkerer")
-				granted_trait = TRAIT_MASTER_GUNSMITH
-				traitname = "tinkering"
+			if("Iron Fist")
+				granted_trait = TRAIT_IRONFIST
+				traitname = "punching"
+			if("Explosive Expert")
+				granted_trait = TRAIT_DEMOLITION_EXPERT
+				traitname = "explosives"
+				crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
 	else
 		. = ..()
 
 /obj/item/book/granter/trait/selection/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+
+/obj/item/book/granter/trait/selection/waster
+
+/obj/item/book/granter/trait/selection/waster/attack_self(mob/user)
+	var/list/choices = list("Minor Surgery","Chemistry","Salvager", "Tinkerer", "Chem User")
+	if(granted_trait == null)
+		var/choice = input("Choose a trait:") in choices
+		switch(choice)
+			if(null)
+				return 0
+			if("Minor Surgery")
+				granted_trait = TRAIT_SURGERY_LOW
+				traitname = "minor surgery"
+			if("Chemistry")
+				granted_trait = TRAIT_CHEMWHIZ
+				traitname = "chemistry"
+				crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+			if("Salvager")
+				granted_trait = TRAIT_TECHNOPHREAK
+				traitname = "salvaging"
+			if("Chem User")
+				granted_trait = TRAIT_CHEM_USER
+				traitname = "chem use"
+	else
+		. = ..()
+
+/obj/item/book/granter/trait/selection/waster/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)

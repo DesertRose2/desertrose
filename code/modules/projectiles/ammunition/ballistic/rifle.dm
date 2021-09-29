@@ -65,3 +65,11 @@
 	desc = "A 2mm gauss projectile casing."
 	caliber = "2mm"
 	projectile_type = /obj/item/projectile/bullet/c2mm
+
+// 5mm
+
+/obj/item/ammo_casing/c5mm
+	name = "5mm bullet casing"
+	desc = "A 5mm bullet casing."
+	caliber = "5mm"
+	projectile_type = /obj/item/projectile/bullet/c5mm

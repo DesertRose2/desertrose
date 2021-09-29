@@ -1,20 +1,32 @@
+//IN THIS DOCUMENT: Rifle template, Lever-action rifles, Bolt-action rifles, Magazine-fed bolt-action rifles
+
+////////////////////
+// RIFLE TEMPLATE //
+////////////////////
+
 /obj/item/gun/ballistic/rifle
-	name = "rifle"
-	desc = "A traditional shotgun with wood furniture and a four-shell capacity underneath."
+
+	name = "rifle template"
+	desc = "Should not exist"
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 10
-	flags_1 =  CONDUCT_1
+	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/internal/shot
+	can_automatic = FALSE
+	slowdown = 0.5
+	fire_delay = 6
+	spread = 0
+	force = 15 //Decent clubs generally speaking
+	flags_1 =  CONDUCT_1
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
-	weapon_weight = WEAPON_HEAVY
 	spawnwithmagazine = TRUE
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
-
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
@@ -77,7 +89,7 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/rifle/boltaction
-	name = "\improper Mosin Nagant"
+	name = "Mosin Nagant"
 	desc = "This piece of junk looks like something that could have been used 700 years ago. It feels slightly moist."
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
@@ -89,25 +101,6 @@
 	knife_x_offset = 27
 	knife_y_offset = 13
 
-/obj/item/gun/ballistic/rifle/boltaction/improvised
-	name = "Makeshift 7.62mm Rifle"
-	icon_state = "ishotgun"
-	icon_state = "irifle"
-	item_state = "shotgun"
-	desc = "A bolt-action breechloaded rifle that takes 7.62mm bullets."
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/improvised
-	can_bayonet = FALSE
-	var/slung = FALSE
-
-/*/obj/item/gun/ballistic/shotgun/boltaction/pump(mob/M)
-	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
-	if(bolt_open)
-		pump_reload(M)
-	else
-		pump_unload(M)
-	bolt_open = !bolt_open
-	update_icon()	//I.E. fix the desc
-	return 1*/
 /obj/item/gun/ballistic/rifle/boltaction/pump(mob/M)
 	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
 	pump_unload(M)
@@ -125,82 +118,17 @@
 	. = ..()
 	. += "The bolt is [bolt_open ? "open" : "closed"]."
 
-/obj/item/gun/ballistic/rifle/boltaction/improvised/attackby(obj/item/A, mob/user, params)
-	..()
-	if(istype(A, /obj/item/stack/cable_coil) && !sawn_off)
-		if(A.use_tool(src, user, 0, 10, skill_gain_mult = EASY_USE_TOOL_MULT))
-			slot_flags = ITEM_SLOT_BACK
-			to_chat(user, "<span class='notice'>You tie the lengths of cable to the rifle, making a sling.</span>")
-			slung = TRUE
-			update_icon()
-		else
-			to_chat(user, "<span class='warning'>You need at least ten lengths of cable if you want to make a sling!</span>")
-
-/obj/item/gun/ballistic/rifle/boltaction/improvised/update_overlays()
-	. = ..()
-	if(slung)
-		. += "[icon_state]sling"
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted
-	name = "enchanted bolt action rifle"
-	desc = "Careful not to lose your head."
-	var/guns_left = 30
-	var/gun_type
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enchanted
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/arcane_barrage
-	name = "arcane barrage"
-	desc = "Pew Pew Pew."
-	fire_sound = 'sound/weapons/emitter.ogg'
-	pin = /obj/item/firing_pin/magic
-	icon_state = "arcane_barrage"
-	item_state = "arcane_barrage"
-	can_bayonet = FALSE
-	item_flags = NEEDS_PERMIT | DROPDEL
-	flags_1 = NONE
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enchanted/arcane_barrage
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/Initialize()
-	. = ..()
-	bolt_open = TRUE
-	pump()
-	gun_type = type
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/dropped(mob/user)
-	..()
-	guns_left = 0
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/proc/discard_gun(mob/user)
-	throw_at(pick(oview(7,get_turf(user))),1,1)
-	user.visible_message("<span class='warning'>[user] tosses aside the spent rifle!</span>")
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/arcane_barrage/discard_gun(mob/user)
-	return
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/attack_self()
-	return
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
-	..()
-	if(guns_left)
-		var/obj/item/gun/ballistic/rifle/boltaction/enchanted/GUN = new gun_type
-		GUN.guns_left = guns_left - 1
-		user.dropItemToGround(src, TRUE)
-		user.swap_hand()
-		user.put_in_hands(GUN)
-	else
-		user.dropItemToGround(src, TRUE)
-	discard_gun(user)
 
 /obj/item/gun/ballistic/rifle/remington
-	name = "hunting rifle"
+	name = "Hunting rifle"
 	desc = "A sturdy hunting rifle, chambered in .308. and in use before the war."
 	icon_state = "308"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 3
+	extra_damage = 8
+	fire_delay = 5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_scope = TRUE
@@ -245,7 +173,7 @@
 	src.pump(user)
 
 /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
-	name = "cowboy repeater"
+	name = "Cowboy repeater"
 	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of whiskey and cigarettes."
 	icon_state = "cowboyrepeater"
 	item_state = "cowboyrepeater"
@@ -263,7 +191,7 @@
 	extra_damage = 5
 
 /obj/item/gun/ballistic/rifle/automatic/hunting/trail
-	name = "trail carbine"
+	name = "Trail carbine"
 	desc = "A lever action rifle chambered in .44 Magnum."
 	icon_state = "trailcarbine"
 	item_state = "trailcarbine"
@@ -280,7 +208,7 @@
 	scope_y_offset = 21
 
 /obj/item/gun/ballistic/rifle/automatic/hunting/brush
-	name = "brush gun"
+	name = "Brush gun"
 	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
 	icon_state = "brushgun"
 	item_state = "brushgun"
@@ -296,29 +224,8 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 
-/obj/item/gun/ballistic/rifle/antimateriel
-	name = "anti-materiel rifle"
-	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition, custom-made for use by the New California Republic Rangers. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
-	icon_state = "sniper-mag"
-	item_state = "sniper"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/antimateriel
-	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
-	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	force = 25
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	recoil = 1 //have fun
-	fire_delay = 6
-	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
-	can_attachments = TRUE
-	untinkerable = TRUE
-	//projectile_speed = 0
-
 /obj/item/gun/ballistic/rifle/kar98k
-	name = "\improper karabiner 98k"
+	name = "Karabiner 98K"
 	desc = "An old military service rifle from World War 2. This model was rechambered in .308."
 	icon_state = "kar98"
 	item_state = "308"
@@ -337,7 +244,7 @@
 	untinkerable = FALSE
 
 /obj/item/gun/ballistic/rifle/mosin
-	name = "mosin nagant m38"
+	name = "Mosin Nagant M38"
 	desc = "A classic Russian bolt action chambered in 7.62. Now all you need is some vodka."
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
@@ -352,7 +259,7 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	extra_damage = 5
+	extra_damage = 6
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 	suppressor_state = "rifle_suppressor"
@@ -415,3 +322,135 @@
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	untinkerable = FALSE
+
+
+/////////////////////////////////////
+// MAGAZINE FED BOLT-ACTION RIFLES //
+/////////////////////////////////////
+
+/obj/item/gun/ballistic/rifle/mag
+	name = "magazine fed bolt-action rifle template"
+	desc = "should not exist."
+	extra_speed = 800
+
+/obj/item/gun/ballistic/rifle/mag/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Alt-click to remove the magazine.</span>"
+
+/obj/item/gun/ballistic/rifle/mag/AltClick(mob/living/user)
+	var/obj/item/ammo_casing/AC = chambered //Find chambered round
+	if(magazine)
+		magazine.forceMove(drop_location())
+		user.put_in_hands(magazine)
+		magazine.update_icon()
+		if(magazine.ammo_count())
+			playsound(src, 'sound/weapons/gun_magazine_remove_full.ogg', 70, 1)
+		else
+			playsound(src, "gun_remove_empty_magazine", 70, 1)
+		magazine = null
+		to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
+	else if(chambered)
+		AC.forceMove(drop_location())
+		AC.bounce_away()
+		chambered = null
+		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
+		playsound(src, "gun_slide_lock", 70, 1)
+	else
+		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
+	update_icon()
+	return
+
+/obj/item/gun/ballistic/rifle/mag/update_icon_state()
+	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
+
+/obj/item/gun/ballistic/rifle/mag/varmint
+	name = "varmint rifle"
+	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
+	icon_state = "varmint_rifle"
+	item_state = "varmintrifle"
+	force = 18
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	fire_delay = 6
+	spread = 0
+	extra_damage = 8
+	extra_penetration = 0.1
+	can_bayonet = FALSE
+	can_scope = TRUE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 12
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 31
+	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/commando
+	name = "Commando Carbine"
+	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Uses .45 socom magazines."
+	icon_state = "commando"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
+	extra_damage = 8
+	extra_penetration = 0.1
+	fire_delay = 5
+	spread = 1
+	can_unsuppress = FALSE
+	can_scope = TRUE
+	suppressed = 1
+	can_scope = TRUE
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/commando/dmr
+	name = "Destroyer Carbine"
+	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
+	icon_state = "destroyer"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
+	extra_damage = 10
+	extra_penetration = 0.15
+	fire_delay = 6
+	spread = 0
+	can_unsuppress = FALSE
+	suppressed = 1
+	can_scope = TRUE
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
+	name = "Ratslayer"
+	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
+	icon_state = "rat_slayer"
+	item_state = "ratslayer"
+	extra_damage = 7
+	extra_penetration = 0.2
+	suppressed = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_scope = FALSE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+/obj/item/gun/ballistic/rifle/mag/antimateriel
+	name = "anti-materiel rifle"
+	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
+	icon_state = "amr"
+	item_state = "sniper"
+	mag_type = /obj/item/ammo_box/magazine/amr
+	untinkerable = TRUE
+	extra_damage = 10
+	fire_delay = 10
+	recoil = 1
+	spread = 0
+	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	fire_sound = 'sound/f13weapons/antimaterielfire.ogg'
+	pump_sound = 'sound/f13weapons/antimaterielreload.ogg'

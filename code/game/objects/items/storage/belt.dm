@@ -723,12 +723,18 @@
 	..()
 
 /obj/item/storage/belt/holster
-	name = "shoulder holster"
-	desc = "A holster to carry a handgun and ammo. WARNING: Badasses only."
+	name = "holster"
+	desc = "A holster to carry a handgun and ammo."
 	icon_state = "holster"
 	item_state = "holster"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"Shoulder" = "holster",
+						"Thigh" = "holster_leg",
+						"Hip" = "holster_hip"
+						)
 
 /obj/item/storage/belt/holster/ComponentInitialize()
 	. = ..()
@@ -818,6 +824,8 @@
 /obj/item/storage/belt/holster/ncr_officer/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
 	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
 
 /obj/item/storage/belt/holster/med_lt/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/thatgun(src)
@@ -828,8 +836,8 @@
 /obj/item/storage/belt/holster/hip
 	name = "hip holster"
 	desc = "A low hanging holster to carry a handgun and ammo."
-	icon_state = "cowboy"
-	item_state = "cowboy"
+	icon_state = "holster_hip"
+	item_state = "holster_hip"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
@@ -937,11 +945,11 @@
 
 /obj/item/storage/belt/sabre/twin
 	name = "twin sheath"
-	desc = "Two sheaths. One is capable of holding a katana (or bokken) and the other a wakizashi. You could put two wakizashis in if you really wanted to. Now you can really roleplay as a samurai."
+	desc = "Two sheaths. One is capable of holding everything and the other one is two."
 	icon_state = "2sheath"
 	item_state = "quiver" //this'll do.
 	w_class = WEIGHT_CLASS_BULKY
-	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken)
+	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	starting_sword = null
 
 /obj/item/storage/belt/sabre/twin/ComponentInitialize()

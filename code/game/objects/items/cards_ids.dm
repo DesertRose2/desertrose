@@ -413,6 +413,23 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
+/obj/item/card/id/silver/followers
+	name = "Followers Assistant ID"
+	desc = "A silver ID card that gives access to the Followers clinic"
+	access = list(ACCESS_FOLLOWER)
+	assignment = "Followers Assistant"
+
+/obj/item/card/id/silver/followers/attack_self(mob/user)
+	if(isliving(user))
+		var/mob/living/living_user = user
+		if(alert(user, "Action", "Volunteer Card", "Show", "Write Name") == "Write Name")
+			registered_name = living_user.real_name
+			update_label()
+			to_chat(user, "<span class='notice'>You successfully write your name on the ID card.</span>")
+			return
+	..()
+
+
 /obj/item/card/id/silver/reaper
 	name = "Thirteen's ID Card (Reaper)"
 	access = list(ACCESS_MAINT_TUNNELS)
@@ -948,8 +965,8 @@
 	icon_state = "ncrdogtagsergeant"
 
 /obj/item/card/id/dogtag/ncrlieutenant
-	name = "lieutenant's tags"
-	desc = "A silver bar dog tag that denotes a member of the NCR military with a lieutenant commission."
+	name = "commanding officer's tags"
+	desc = "A silver bar dog tag that denotes a member of the NCR military with an officer's commission."
 	icon_state = "ncrdogtagofficer"
 
 /obj/item/card/id/dogtag/ncrcaptain
@@ -1033,8 +1050,13 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "venator medallion"
-	assignment = "Venator"
 
+/obj/item/card/id/dogtag/legexplorer
+	name = "explorer medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to an explorer."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "explorer medallion"
 
 /obj/item/card/id/dogtag/legpriest
 	name = "priestess medallion"

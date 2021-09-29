@@ -34,10 +34,10 @@
 	path = /obj/item/clothing/under/f13/ncr/pants
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -57,10 +57,10 @@
 	path = /obj/item/clothing/under/f13/ncr/ncr_shorts
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -80,10 +80,10 @@
 	path = /obj/item/clothing/under/f13/ncr_sniper
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Commanding Officer",
 							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -123,10 +123,10 @@
 	restricted_desc = "BoS"
 	restricted_roles = list(
 							"Head Paladin",
-							"Head Knight",
+							"Knight Captain",
 							"Head Scribe",
-							"Star Paladin",
-							"Star Knight",
+							"Senior Paladin",
+							"Senior Knight",
 							"Proctor",
 							"Paladin",
 							"Knight",
@@ -414,6 +414,22 @@
 /datum/gear/uniform/shorts/jean
 	name = "Jean Shorts"
 	path = /obj/item/clothing/under/pants/jeanshort
+
+/datum/gear/uniform/shorts/jeanbshorts
+	name = "minijorts"
+	path = /obj/item/clothing/under/pants/jeanbshorts
+
+/datum/gear/uniform/shorts/darkbshorts
+	name = "dark minijorts"
+	path = /obj/item/clothing/under/pants/darkbshorts
+
+/datum/gear/uniform/shorts/blackbshorts
+	name = "black denim minishorts"
+	path = /obj/item/clothing/under/pants/blackbshorts
+
+/datum/gear/uniform/shorts/brownbshorts
+	name = "brown minishorts"
+	path = /obj/item/clothing/under/pants/brownbshorts
 
 /datum/gear/uniform/skirt/denim
 	name = "Denim Skirt"

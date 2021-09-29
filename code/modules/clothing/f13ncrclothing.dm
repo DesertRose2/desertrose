@@ -24,36 +24,17 @@
 	desc = "(IV) A standard issue NCR steel helmet, issued with an additional pair of storm goggles for weather resistance."
 	icon_state = "steelpot_goggles"
 	item_state = "steelpot_goggles"
-	toggle_message = "You push the goggles up "
-	alt_toggle_message = "You push the goggles down "
-	can_toggle = 1
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
-	toggle_cooldown = 0
 	flags_cover = HEADCOVERSEYES
 	visor_flags_cover = HEADCOVERSEYES
 	dog_fashion = null
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles/attack_self(mob/user)
-	if(can_toggle && !user.incapacitated())
-		if(world.time > cooldown + toggle_cooldown)
-			cooldown = world.time
-			up = !up
-			flags_1 ^= visor_flags
-			flags_inv ^= visor_flags_inv
-			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
-
-			user.update_inv_head()
-			if(iscarbon(user))
-				var/mob/living/carbon/C = user
-				C.head_update(src, forced = 1)
-
-			if(active_sound)
-				while(up)
-					playsound(src.loc, "[active_sound]", 100, 0, 4)
-					sleep(15)
+	weldingvisortoggle(user)
+	icon_state = "steelpot_goggles_up"
+	item_state = "steelpot_goggles_up"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
 	name = "NCR medic steelpot helmet"
@@ -277,13 +258,6 @@
 	item_state = "ncr_lt_armour"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
-	name = "Lieutenant Plate Carrier"
-	desc = "(VI) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
-	icon_state = "lt_pc"
-	item_state = "lt_pc"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	name = "NCR light infantry armor"
 	desc = "(IV) A specialized variant of the standard NCR armor given to light infantrymen."
@@ -448,26 +422,45 @@
 
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
-	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
+	desc = "(VI) An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
-	item_state = "drill_hat"
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	item_state = "drillhat"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"New" = "drillhat",
+						"Old-School" = "drillhat_alternative"
+						)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
-	desc = "(V) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
+	desc = "(VI) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = null
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+
+/obj/item/clothing/head/f13/ranger/sergeant
+	name = "ranger sergeant combat helmet"
+	desc = "(VI) An old combat helmet, out of use around the time of the war."
+	icon_state = "recon_helmet"
+	item_state = "recon_helmet"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/head/f13/ranger/sergeant/attack_self(mob/user)
+	weldingvisortoggle(user)
+	icon_state = "recon_helmetup"
+	item_state = "recon_helmetup"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	name = "ranger combat helmet"
-	desc = "(VI) An old combat helmet, out of use around the time of the war."
+	desc = "(VII) An old combat helmet, out of use around the time of the war."
 	icon_state = "ranger"
 	item_state = "ranger"
-	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+	armor = list("tier" = 7, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
@@ -504,10 +497,21 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"New" = "ncr_patrol",
+						"Old-School" = "ncr_patrol_alternative"
+						)
+
+/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
+	name = "sergeant ranger combat armor"
+	desc = "(VI) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	icon_state = "rangersergeant"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
@@ -529,6 +533,13 @@
 	icon_state = "mutie_vet_ranger"
 	item_state = "mutie_vet_ranger"
 
+/obj/item/clothing/suit/armor/f13/ncrcfjacket
+	name = "NCRCF jacket"
+	icon_state = "ncrcfjacket"
+	item_state = "ncrcfjacket"
+	desc = "(I) A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
+	armor = list("tier" = 1, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
 //Uniforms and Undersuits
 
 /obj/item/clothing/under/f13/ranger
@@ -540,11 +551,11 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
 /obj/item/clothing/under/f13/ranger/trail
-	name = "ranger outfit"
+	name = "trail ranger outfit"
 	desc = "Simple rustic clothes for a big iron packin' lawman. Worn often by NCR rangers."
-	icon_state = "cowboyrang"
-	item_state = "cowboyrang"
-	item_color = "cowboyrang"
+	icon_state = "trailranger"
+	item_state = "trailranger"
+	item_color = "trailranger"
 
 /obj/item/clothing/under/f13/ranger/patrol
 	name = "patrol ranger outfit"
@@ -571,6 +582,12 @@
 	visor_flags_inv = 0
 
 //Boots
+
+/obj/item/clothing/shoes/f13/military/leather/patrol
+	name = "patrol ranger leather combat boots"
+	desc = "A pair of hardened leather boots made for combat, in use by the NCR Patrol Rangers."
+	icon_state = "patrol"
+	item_state = "patrol"
 
 /obj/item/clothing/shoes/f13/mutie/boots/ncr/ranger
 	icon_state = "mutie_boots_ranger"

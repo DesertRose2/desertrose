@@ -817,7 +817,6 @@
 	name = "blood bolt barrage"
 	desc = "Blood for blood."
 	color = "#ff0000"
-	guns_left = 24
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enchanted/arcane_barrage/blood
 	fire_sound = 'sound/magic/wand_teleport.ogg'
 	item_flags = NEEDS_PERMIT | NOBLUDGEON | DROPDEL

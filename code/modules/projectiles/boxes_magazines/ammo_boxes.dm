@@ -815,3 +815,25 @@
 	max_ammo = 6
 	custom_materials = list(MAT_METAL = 1000)
 	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/ammo_box/m473_box
+	name = "ammo box (4.73mm caseless)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	multiple_sprites = 2
+	icon_state = "5mmbox"
+	caliber = "473mm"
+	ammo_type = /obj/item/ammo_casing/caseless/g11
+	max_ammo = 50
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2500)
+
+/obj/item/ammo_box/c5mm
+	name = "ammo box (5mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	multiple_sprites = 2
+	icon_state = "5mmbox"
+	caliber = "5mm"
+	ammo_type = /obj/item/ammo_casing/c5mm
+	max_ammo = 100
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 25000, /datum/material/blackpowder = 3000)

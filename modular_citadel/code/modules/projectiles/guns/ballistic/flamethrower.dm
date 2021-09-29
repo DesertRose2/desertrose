@@ -9,7 +9,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
-	slowdown = 1
+	slowdown = 0.5
 	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/gun/ballistic/m2flamethrower/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
@@ -99,13 +99,12 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 1
+	slowdown = 0.5
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
 	burst_size = 2
 	burst_shot_delay = 1
-	//automatic = 0
 	fire_delay = 10
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/flamethrower.ogg'
@@ -152,7 +151,7 @@
 
 //Incinerators
 
-/obj/item/gun/ballistic/rifle/antimateriel/incinerator
+/obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator
 	name = "incinerator"
 	desc = "This weapon launches balls of fire that ignite foes from a distance."
 	icon_state = "incinerator"
@@ -167,3 +166,5 @@
 	can_attachments = FALSE
 	casing_ejector = TRUE
 	fire_delay = 7
+	extra_speed = 0
+	slowdown = 0.3

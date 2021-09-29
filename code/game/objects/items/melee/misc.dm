@@ -561,8 +561,9 @@
 	return FALSE
 
 /obj/item/melee/curator_whip
-	name = "curator's whip"
+	name = "whip"
 	desc = "Somewhat eccentric and outdated, it still stings like hell to be hit by."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "whip"
 	item_state = "chain"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'

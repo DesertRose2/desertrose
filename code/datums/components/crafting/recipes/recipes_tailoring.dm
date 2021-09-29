@@ -279,7 +279,7 @@
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -290,7 +290,7 @@
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -301,7 +301,7 @@
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/raiderpa  = 1,
 				/obj/item/stack/crafting/goodparts = 15,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -312,7 +312,7 @@
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm = 1,
 				/obj/item/stack/crafting/goodparts = 15,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -323,7 +323,7 @@
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t45b  = 1,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -334,7 +334,7 @@
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -345,7 +345,7 @@
 	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/hotrod  = 1,
 				/obj/item/stack/crafting/goodparts = 15,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -356,7 +356,7 @@
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/hotrod = 1,
 				/obj/item/stack/crafting/goodparts = 15,
 				/obj/item/stack/crafting/electronicparts = 5)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -368,7 +368,7 @@
 	reqs = list(/obj/item/stack/sheet/leather = 3,
 				/obj/item/stack/sheet/durathread = 1,
 				/obj/item/stack/crafting/metalparts = 1)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_PASTATION)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -461,7 +461,7 @@
 	subcategory = CAT_BELTS
 
 /datum/crafting_recipe/shoulderholster
-	name = "shoulder holster"
+	name = "holster"
 	result = /obj/item/storage/belt/holster
 	reqs = list(/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/hay = 3)
@@ -543,7 +543,7 @@
 
 /datum/crafting_recipe/mantle
 	name = "hide mantle"
-	result = /obj/item/clothing/suit/f13/mantle_liz
+	result = /obj/item/clothing/neck/mantle/ragged
 	reqs = list(/obj/item/stack/sheet/leather = 3,
 				/obj/item/stack/sheet/hay = 2)
 	tools = list(TOOL_WORKBENCH)
@@ -553,7 +553,7 @@
 
 /datum/crafting_recipe/poncho
 	name = "poncho"
-	result = /obj/item/clothing/suit/poncho
+	result = /obj/item/clothing/neck/mantle/poncho
 	reqs = list(/obj/item/stack/sheet/cloth = 3,
 				/obj/item/stack/sheet/hay = 2)
 	tools = list(TOOL_WORKBENCH)
@@ -588,7 +588,7 @@
 	subcategory = CAT_WASTELAND
 
 /datum/crafting_recipe/cloak
-	name = "brown cloak"
+	name = "desert cloak"
 	result = /obj/item/clothing/suit/hooded/cloak/desert
 	reqs = list(/obj/item/stack/sheet/leather = 3)
 	tools = list(TOOL_WORKBENCH)
@@ -707,7 +707,7 @@
 	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/pinkdress
-	name = "green dress"
+	name = "pink dress"
 	result = /obj/item/clothing/under/f13/pinkdress
 	reqs = list(/obj/item/stack/sheet/cloth = 3)
 	tools = list(TOOL_WORKBENCH)
@@ -1177,6 +1177,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/legionsalvagedarmorconversion
 	name = "Salvaged Legion power armor"
@@ -1187,6 +1188,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/Legionhelmsalvagedarmorconversion
 	name = "Salvaged Legion power armor Helmet"
@@ -1197,6 +1199,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/ncrcombatarmor
 	name = "NCR combat armor"
@@ -1283,8 +1286,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombatarmor
-	name = "initiate armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
+	name = "knight armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1293,8 +1296,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombathelmet
-	name = "initiate helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
+	name = "knight helmet"
+	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1303,8 +1306,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombatarmormk2
-	name = "reinforced initiate armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+	name = "reinforced knight armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/mk2
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -1314,8 +1317,8 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/boscombathelmetmk2
-	name = "reinforced initiate helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+	name = "reinforced knight helmet"
+	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/mk2
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -1335,6 +1338,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bospowerarmort45b/helmet
 	name = "brotherhood restored T45 power armor helmet"
@@ -1347,6 +1351,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bospowerarmort45d
 	name = "brotherhood T45d power armor"
@@ -1357,6 +1362,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bost45dhelm
 	name = "brotherhood T45 power armor helmet"
@@ -1367,6 +1373,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bospowerarmort51b
 	name = "brotherhood T51b power armor"
@@ -1377,6 +1384,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bost51bhelm
 	name = "brotherhood T51 power armor helmet"
@@ -1387,6 +1395,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bospowerarmort60
 	name = "brotherhood T60 power armor"
@@ -1397,6 +1406,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bost60ahelm
 	name = "brotherhood T60 power armor helmet"
@@ -1407,6 +1417,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/bosweldingmask
 	name = "brotherhood welding mask"

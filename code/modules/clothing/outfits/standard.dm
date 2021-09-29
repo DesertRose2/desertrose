@@ -145,7 +145,7 @@
 	head = /obj/item/clothing/head/welding
 	ears = /obj/item/radio/headset
 	glasses = /obj/item/clothing/glasses/thermal/monocle
-	suit = /obj/item/clothing/suit/apron
+	neck = /obj/item/clothing/neck/apron/labor
 	l_pocket = /obj/item/kitchen/knife
 	r_pocket = /obj/item/scalpel
 	r_hand = /obj/item/twohanded/fireaxe
@@ -346,7 +346,7 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	ears = /obj/item/radio/headset
 	glasses = /obj/item/clothing/glasses/sunglasses
-	r_hand = /obj/item/gun/ballistic/automatic/tommygun
+	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
 	id = /obj/item/card/id
 
 /datum/outfit/mobster/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)

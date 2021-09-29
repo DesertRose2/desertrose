@@ -2,8 +2,6 @@
 	department_flag = FOLLOWERS
 	selection_color = "#ffeeaa"
 	exp_type = EXP_TYPE_FOLLOWERS
-	access = list(ACCESS_FOLLOWER)
-	minimal_access = list(ACCESS_FOLLOWER)
 	forbids = "Aligning oneself with a faction exclusively. Acting in an aggressive and violent way on the offensive, not in defense. Abandoning your facility, peers, and community."
 	enforces = "Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish medical outposts throughout the wasteland","Leadership recommends the following goal for this week: Experiment with and improve medical techniques and equipment", "Leadership recommends the following goal for this week: Replenish the operation's funds through donations and sales.")
@@ -53,8 +51,8 @@ Administrator
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
-	access = list(ACCESS_FOLLOWER, ACCESS_COMMAND, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_COMMAND, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
 
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -162,6 +160,9 @@ Practitioner
 	/datum/outfit/loadout/medical_researcher
 	)
 
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
+
 /datum/outfit/job/followers/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -192,7 +193,7 @@ Practitioner
 	gloves = 	/obj/item/clothing/gloves/color/latex/nitrile
 	glasses = 	/obj/item/clothing/glasses/hud/health
 	backpack_contents = list(
-		/obj/item/clothing/suit/apron/surgical=1,
+		/obj/item/clothing/suit/hooded/surgical=1,
 		/obj/item/reagent_containers/medspray/synthflesh=1,
 		/obj/item/healthanalyzer/advanced=1,)
 
@@ -258,7 +259,8 @@ Follower Volunteer
 	/datum/outfit/loadout/volunteer_student
 	)
 
-	//the follower volunteer doesn't need more access as it is already stored in the /datum/job/followers
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
 
 /datum/outfit/job/followers/f13followervolunteer
 	name = "Followers Volunteer"
@@ -282,7 +284,7 @@ Follower Volunteer
 
 /datum/outfit/loadout/volunteer_mechanic
 	name = "Mechanic"
-	suit = 		/obj/item/clothing/suit/apron
+	neck = 		/obj/item/clothing/neck/apron/labor
 	head = 		/obj/item/clothing/head/hardhat/orange
 	belt = 		/obj/item/storage/belt/utility/full
 	gloves = 	/obj/item/clothing/gloves/color/yellow
@@ -294,7 +296,7 @@ Follower Volunteer
 /datum/outfit/loadout/volunteer_farmer
 	name = "Farmer"
 	head = /obj/item/clothing/head/helmet/f13/vaquerohat
-	suit = /obj/item/clothing/suit/apron/overalls
+	neck = /obj/item/clothing/neck/apron/labor
 	belt = /obj/item/storage/bag/plants/portaseeder
 	backpack_contents = list(
 		/obj/item/hatchet=1,
