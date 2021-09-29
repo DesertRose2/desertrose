@@ -464,6 +464,7 @@
 		alight.Remove(user)
 
 /obj/item/gun/update_overlays()
+	..()
 	if(bayonet)
 		if(bayonet.icon_state in icon_states('icons/obj/guns/attachments.dmi'))		//Snowflake state?
 			knife_overlay = bayonet.icon_state
@@ -472,6 +473,7 @@
 		knife_overlay.pixel_x = knife_x_offset
 		knife_overlay.pixel_y = knife_y_offset
 		. += knife_overlay
+		..()
 	else
 		knife_overlay = null
 
@@ -483,6 +485,7 @@
 		scope_overlay.pixel_x = scope_x_offset
 		scope_overlay.pixel_y = scope_y_offset
 		. += scope_overlay
+		..()
 	else
 		scope_overlay = null
 
@@ -492,6 +495,7 @@
 		suppressor_overlay.pixel_x = suppressor_x_offset
 		suppressor_overlay.pixel_y = suppressor_y_offset
 		. += suppressor_overlay
+		..()
 	else
 		suppressor_overlay = null
 
