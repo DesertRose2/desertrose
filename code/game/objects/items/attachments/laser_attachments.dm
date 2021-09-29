@@ -7,6 +7,7 @@
 /obj/item/attachment/focused_lens
 	name = "focused laser lens"
 	desc = "A lens for the end of a laser gun that increases the intensity of the outgoing beam!"
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "focused lens"
 	slot = ATTACHMENT_SLOT_LASER_LENS
 
@@ -27,6 +28,7 @@
 /obj/item/attachment/splitter_lens
 	name = "splitter laser lens"
 	desc = "A lens with precise cuts made into the focused lens. While crudely done it appears to have a level of craft to it; allowing beams to be shot with a spread akin to a shotgun."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "splitter lens"
 	slot = ATTACHMENT_SLOT_LASER_LENS
 
@@ -49,6 +51,7 @@
 /obj/item/attachment/automatic_receiver
 	name = "automatic laser receiver"
 	desc = "A custom-made laser receiver with a two-part spinning laser lens."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "laser auto"
 	slot = ATTACHMENT_SLOT_LASER_RECEIVER
 
@@ -72,6 +75,7 @@
 /obj/item/attachment/focused_receiver
 	name = "focused laser receiver"
 	desc = "A bulky laser receiver that uses one projector. However it seems to amplify its intensity before leaving the gun itself."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "laser focus"
 	slot = ATTACHMENT_SLOT_LASER_RECEIVER
 

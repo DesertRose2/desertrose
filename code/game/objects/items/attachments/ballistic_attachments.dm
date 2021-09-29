@@ -10,6 +10,7 @@
 /obj/item/attachment/auto_sear
 	name = "auto sear"
 	desc = "A receiver modification able to fit onto certain compatible trigger mechanisms. Allows for burst-fire on otherwise civilian-grade rifles; frowned upon by the old American Goverment."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "auto_sear"
 	slot = ATTACHMENT_SLOT_GRIP
 
@@ -36,6 +37,7 @@
 /obj/item/attachment/bullet_speed
 	name = "foraged barrel"
 	desc = "A foraged barrel intended to be used on long rifles and carbines to increase a bullets accruacy and travel-speed."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "barrel"
 	slot = ATTACHMENT_SLOT_BARREL
 
@@ -55,6 +57,7 @@
 /obj/item/attachment/bayonet
 	name = "bayonet"
 	desc = "A bayonet. Think about what you're doing. You're making your gun - into a /spear/. Stone-age."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "attach_bayonet"
 	force = 20
 	slot = ATTACHMENT_SLOT_MUZZLE
@@ -76,6 +79,7 @@
 /obj/item/attachment/burst_improvement
 	name = "burst cam"
 	desc = "A mechanism allowing the user to fire in more controlled bursts."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "burstcam"
 	slot = ATTACHMENT_SLOT_GRIP //Yeah, it's a grip for balance reasons. Honestly should be a stock. Muh bumpfire.
 
@@ -99,6 +103,7 @@
 /obj/item/attachment/recoil_decrease
 	name = "improved gas system kit"
 	desc = "This attachment mounts to the barrel of a gun, allowing for better control of the weapon through the addition of a better gas operating system. Caution: Keep hand off; hot!"
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "recoilcomp"
 	slot = ATTACHMENT_SLOT_BARREL
 
@@ -118,6 +123,7 @@
 /obj/item/attachment/silencer
 	name = "silencer"
 	desc = "For when you need to kill someone but not be seen killing someone!"
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "silencer"
 	slot = ATTACHMENT_SLOT_MUZZLE
 
@@ -154,6 +160,7 @@
 /obj/item/attachment/laser_sight
 	name = "laser sight"
 	desc = "This laser sight is designed to be rail-mounted on a compatible firearm to provide increased accuracy."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "laserpointer"
 	slot = ATTACHMENT_SLOT_RAIL
 
@@ -171,6 +178,7 @@
 /obj/item/attachment/scope
 	name = "scope"
 	desc = "A scope designed mostly from old-war materials and pieces of magnifine glasses."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "scope"
 	slot = ATTACHMENT_SLOT_SCOPE
 
@@ -195,6 +203,7 @@
 /obj/item/attachment/rail_light
 	name = "rail light"
 	desc = "Rail mounted gun light for better visibility down range."
+	icon = 'icons/obj/attachments.dmi'
 	icon_state = "raillight"
 	slot = ATTACHMENT_SLOT_RAIL
 
