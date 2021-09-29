@@ -18,7 +18,7 @@
 	if(!gun.can_automatic)
 		to_chat(user, "<span class='warning'>You cannot attach [src] to [gun]!</span>")
 		return FALSE
-	gun.burst_size +=1
+	gun.burst_size += 1
 	gun.spread += 6
 	gun.recoil += 0.1
 	update_icon()

@@ -41,9 +41,6 @@
 				return
 			auto_sear = A
 			src.desc += " It has an automatic sear installed."
-			src.burst_size += 1
-			src.spread += 6
-			src.recoil += 0.1
 			src.automatic_burst_overlay = TRUE
 			src.semi_auto = FALSE
 			to_chat(user, "<span class='notice'>You attach \the [A] to \the [src].</span>")
