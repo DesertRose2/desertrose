@@ -1,8 +1,5 @@
 #define COMSIG_ATTACHMENT_ATTACH "attach-attach"
 #define COMSIG_ATTACHMENT_DETACH "attach-detach"
-#define ATTACH_DELAY "attach_delay"
-#define DETACH_DELAY "detach_delay"
-#define OVERLAY_ICON "overlay_icon"
 #define COMSIG_ATTACHMENT_EXAMINE "attach-examine"
 #define COMSIG_ATTACHMENT_EXAMINE_MORE "attach-examine-more"
 #define COMSIG_ATTACHMENT_PRE_ATTACK "attach-pre-attack"
@@ -132,33 +129,35 @@
 /datum/component/attachment/proc/update_overlays(obj/item/parent, list/overlays, list/offset)
 	overlays += mutable_appearance(parent.icon, "[parent.icon_state]-attached")
 
-/datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user)
-	SIGNAL_HANDLER
+/datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
 
-	if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
-		return FALSE
+    SIGNAL_HANDLER
 
-	if(on_attach && !on_attach.Invoke(holder, user))
-		return FALSE
+    if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
+        return FALSE
 
-	parent.forceMove(holder)
-	return TRUE
+    if(on_attach && !on_attach.Invoke(holder, user))
+        return FALSE
 
-/datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user)
-	SIGNAL_HANDLER
+    parent.forceMove(holder)
+    return TRUE
 
-	if(!parent.Adjacent(user) || (valid_parent_types && (holder.type in valid_parent_types)))
-		return FALSE
+/datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
 
-	if(on_attach && !on_detach.Invoke(holder, user))
-		return FALSE
+    SIGNAL_HANDLER
 
-	if(user.can_put_in_hand(parent))
-		user.put_in_hand(parent)
-		return TRUE
+    if(!parent.Adjacent(user) || (valid_parent_types && (holder.type in valid_parent_types)))
+        return FALSE
 
-	parent.forceMove(holder.drop_location())
-	return TRUE
+    if(on_attach && !on_detach.Invoke(holder, user))
+        return FALSE
+
+    if(user.can_put_in_hand(parent))
+        user.put_in_hand(parent)
+        return TRUE
+
+    parent.forceMove(holder.drop_location())
+    return TRUE
 
 /datum/component/attachment/proc/relay_pre_attack(obj/item/parent, obj/item/gun, atom/target_atom, mob/user, params)
 
