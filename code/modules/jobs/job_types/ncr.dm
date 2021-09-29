@@ -339,7 +339,7 @@ Sergeant First Class
 	l_hand = 	/obj/item/gun/ballistic/automatic/m1garand/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308=3,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/kitchen/knife/combat/bayonet=1
 		)
 
@@ -407,7 +407,7 @@ Sergeant
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
-		/obj/item/attachments/scope=1
+		/obj/item/attachment/scope=1
 	)
 
 //Assault
@@ -484,7 +484,7 @@ Corporal
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
-		/obj/item/attachments/scope=1)
+		/obj/item/attachment/scope=1)
 
 //Assault
 /datum/outfit/loadout/corpcqb
@@ -698,7 +698,7 @@ Trooper
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=3,
-		/obj/item/attachments/scope=1)
+		/obj/item/attachment/scope=1)
 
 //Assault
 /datum/outfit/loadout/troopcqb
@@ -888,14 +888,14 @@ Veteran Ranger
 	name = "Light Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/ammo_box/magazine/m762/ext=2)
 
 /datum/outfit/loadout/vrbrush
 	name = "Brush Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/rifle/automatic/hunting/brush
 	backpack_contents = list(
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/ammo_box/tube/c4570=3)
 
 /datum/outfit/loadout/vrassault
@@ -903,7 +903,7 @@ Veteran Ranger
 	suit_store = /obj/item/gun/ballistic/automatic/m14
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m762=3,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/kitchen/knife/combat/bayonet=1)
 
 //NCR Ranger-Sergeant

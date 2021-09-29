@@ -883,7 +883,7 @@ Knight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
@@ -925,7 +925,7 @@ Knight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 

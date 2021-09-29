@@ -394,7 +394,7 @@ Decanii
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/magazine/garand308=3,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/ammo_box/c45rev=3)
 
 /datum/outfit/loadout/vetdecanshock
@@ -709,7 +709,7 @@ Veteran Legionary
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/magazine/garand308=3,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/ammo_box/c45rev=3)
 
 /datum/outfit/loadout/vetscout
@@ -717,7 +717,7 @@ Veteran Legionary
 	l_hand = /obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=2,
-		/obj/item/attachments/scope=1,
+		/obj/item/attachment/scope=1,
 		/obj/item/gun/ballistic/revolver/revolver44=1,
 		/obj/item/ammo_box/m44=2)
 
@@ -729,7 +729,7 @@ Veteran Legionary
 		/obj/item/ammo_box/shotgun/slug=1,
 		/obj/item/gun/ballistic/revolver/m29=1,
 		/obj/item/ammo_box/m44=3,
-		/obj/item/attachments/scope=1
+		/obj/item/attachment/scope=1
 	)
 
 /datum/outfit/loadout/vetmelee
@@ -1010,11 +1010,11 @@ Explorer
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/loadout/excursor
-	name = "Excursor (Runner)"	
+	name = "Excursor (Runner)"
 	l_hand = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp=2,
-		/obj/item/attachments/scope=1)
+		/obj/item/attachment/scope=1)
 
 /datum/outfit/loadout/sapper
 	name = "Sonspicio Munitor (Saboteur)"
