@@ -493,3 +493,19 @@ obj/item/storage/bag/chemistry/tribal
 	STR.max_items = 2
 	STR.display_numerical_stacking = TRUE
 	STR.can_hold = typecacheof(list(/obj/item/rcd_ammo, /obj/item/stack/sheet))
+
+/obj/item/storage/bag/plushie
+	name = "Plushie Satchel"
+	desc = "An ugly yet adorable handmade satchel that seems to only serve the purpose of storing plushies. It is entirely made of a plush fabric and has absolutely no structure."
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "plushbag"
+	w_class = WEIGHT_CLASS_TINY
+	resistance_flags = FLAMMABLE
+
+/obj/item/storage/bag/plushie/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	STR.max_combined_w_class = 100
+	STR.max_items = 100
+	STR.can_hold = typecacheof(list(/obj/item/toy/plush,/obj/item/choice_beacon/box/plushie))
