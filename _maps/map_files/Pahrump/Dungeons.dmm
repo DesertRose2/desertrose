@@ -1413,6 +1413,7 @@
 	},
 /obj/item/clothing/head/kitty/genuine{
 	desc = "Smells like fur and fills you with dread.";
+	max_integrity = 10000;
 	name = "horrific experiment"
 	},
 /turf/open/floor/plating/tunnel,
@@ -4117,13 +4118,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
-"gTx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/bunker)
 "gTD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6658,11 +6652,11 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/bunker)
 "kUP" = (
-/obj/structure/barricade/wooden/strong,
 /obj/structure/barricade/wooden/planks,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/tunnel)
 "kVk" = (
@@ -7622,14 +7616,6 @@
 /turf/open/floor/plasteel/darkpurple/side{
 	dir = 1
 	},
-/area/f13/bunker)
-"mEZ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/spacevine{
-	name = "vines"
-	},
-/obj/structure/barricade/wooden,
-/turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
 "mFa" = (
 /obj/item/storage/trash_stack,
@@ -13581,18 +13567,6 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"wxF" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/spacevine{
-	name = "vines"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden,
-/turf/closed/indestructible/vaultdoor,
-/area/f13/bunker)
 "wxJ" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
@@ -14177,7 +14151,7 @@
 /obj/structure/sign/departments/botany,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/structure/window/reinforced/tinted,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "xrR" = (
 /obj/structure/table,
@@ -25393,7 +25367,7 @@ dog
 xRz
 lId
 vAC
-mEZ
+xsH
 gWz
 nKy
 jAl
@@ -25650,7 +25624,7 @@ nRS
 xRz
 qBP
 fWM
-wxF
+rEO
 nGF
 nKy
 nKy
@@ -36146,7 +36120,7 @@ vAC
 sxn
 vAC
 vAC
-gTx
+vYa
 aIu
 rEO
 heT
@@ -39485,7 +39459,7 @@ vAC
 vAC
 piv
 vAC
-gTx
+vYa
 vAC
 vAC
 vAC
