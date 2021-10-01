@@ -343,6 +343,9 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"fb" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
 "fe" = (
 /obj/effect/landmark/start/f13/hunter,
 /turf/open/indestructible/ground/inside/mountain,
@@ -446,6 +449,10 @@
 "gM" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"gN" = (
+/obj/structure/railing/corner,
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "gP" = (
 /obj/structure/table/wood/poker{
 	layer = 4;
@@ -459,6 +466,12 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
+/area/f13/wasteland)
+"gU" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
 /area/f13/wasteland)
 "hd" = (
 /obj/structure/rack,
@@ -966,6 +979,10 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"pm" = (
+/obj/structure/railing,
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "pq" = (
 /obj/structure/chair/stool/bar,
 /turf/open/floor/wood/f13/carpet,
@@ -1330,6 +1347,12 @@
 	pixel_y = 13
 	},
 /turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"tX" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
 /area/f13/wasteland)
 "tY" = (
 /obj/effect/landmark/start/f13/villager,
@@ -2784,6 +2807,12 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood)
+"NQ" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "NT" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 10;
@@ -32523,11 +32552,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+gN
+zB
+zB
+zB
+fO
 ls
 ls
 ls
@@ -32780,11 +32809,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+pm
+fb
+fb
+fb
+Yh
 ls
 ls
 ls
@@ -33037,11 +33066,11 @@ ls
 ls
 ls
 ls
+pm
+fb
 ls
-ls
-ls
-ls
-ls
+fb
+Yh
 ls
 ls
 ls
@@ -33294,11 +33323,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+pm
+fb
+fb
+fb
+Yh
 ls
 ls
 ls
@@ -33551,11 +33580,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+gU
+tX
+tX
+tX
+NQ
 ls
 ls
 ls
@@ -41270,11 +41299,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+gN
+zB
+zB
+zB
+fO
 ls
 ls
 ls
@@ -41527,11 +41556,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+pm
+fb
+fb
+fb
+Yh
 ls
 ls
 ls
@@ -41784,11 +41813,11 @@ ls
 ls
 ls
 ls
+pm
+fb
 ls
-ls
-ls
-ls
-ls
+fb
+Yh
 ls
 ls
 ls
@@ -42041,11 +42070,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+pm
+fb
+fb
+fb
+Yh
 ls
 ls
 ls
@@ -42298,11 +42327,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+gU
+tX
+tX
+tX
+NQ
 ls
 ls
 ls
