@@ -18118,6 +18118,10 @@
 	icon_state = "redmark"
 	},
 /area/f13/followers)
+"qcz" = (
+/obj/machinery/telecomms/server/presets/khans,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "qcL" = (
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder,
@@ -89886,7 +89890,7 @@ qzI
 cZA
 tNq
 pHv
-qLD
+qcz
 qLD
 eQC
 fZG
