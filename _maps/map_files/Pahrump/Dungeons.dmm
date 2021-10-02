@@ -290,7 +290,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/cell_charger,
 /obj/structure/table/wood,
-/obj/item/gun/ballistic/automatic/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/ammo_box/magazine/greasegun,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ayF" = (
@@ -368,6 +369,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"aFD" = (
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "aFT" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -662,6 +669,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
+"beb" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "bew" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -1634,6 +1649,13 @@
 /obj/item/clothing/suit/f13/mfp/raider,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"cPS" = (
+/obj/structure/table/optable/abductor,
+/obj/effect/mob_spawn/human/corpse,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "cQc" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13{
@@ -3301,6 +3323,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"fGP" = (
+/obj/item/suppressor,
+/obj/structure/table/abductor,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "fHR" = (
 /obj/structure/table/wood,
 /obj/machinery/light/broken{
@@ -4118,6 +4147,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
+<<<<<<< Updated upstream
+=======
+"gTx" = (
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/underground/cave)
+>>>>>>> Stashed changes
 "gTD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5685,6 +5720,16 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/bunker)
+"jjx" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "bosmini";
+	name = "To the Main Bunker"
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "jjM" = (
 /obj/structure/decoration/rag,
 /obj/structure/girder/reinforced,
@@ -5896,6 +5941,15 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"jDX" = (
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/structure/table/abductor,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "jEL" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -6383,6 +6437,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
+"ktT" = (
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "ktW" = (
 /obj/item/stack/crafting/electronicparts/five,
 /obj/effect/decal/cleanable/dirt,
@@ -6424,6 +6484,12 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/water,
 /area/f13/bunker)
+"kzG" = (
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "kBU" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -6736,6 +6802,12 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/bunker)
+"lbB" = (
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "lbV" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/plating/tunnel{
@@ -7189,6 +7261,16 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/bunker)
+"lXS" = (
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/obj/structure/table,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "lYw" = (
 /obj/machinery/light,
 /obj/machinery/power/port_gen/pacman/super{
@@ -8019,6 +8101,14 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"nsk" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "nsv" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor6-old";
@@ -9690,6 +9780,16 @@
 /obj/structure/junk/small/table,
 /turf/open/water,
 /area/f13/bunker)
+"pXw" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "pYa" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
@@ -11158,6 +11258,15 @@
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"swf" = (
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red"
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "swg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/snowed,
@@ -11902,6 +12011,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"tJD" = (
+/obj/item/blueprint/research,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "tKL" = (
 /obj/structure/debris/v3{
 	pixel_x = -15;
@@ -12108,6 +12223,14 @@
 /obj/item/reagent_containers/glass/beaker/waterbottle,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"ugC" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/obj/structure/table/abductor,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "uiV" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/spider/stickyweb,
@@ -12462,6 +12585,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"uMT" = (
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "uNg" = (
 /obj/structure/table,
 /obj/item/crafting/board,
@@ -13026,6 +13154,12 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"vFt" = (
+/mob/living/simple_animal/hostile/handy/securitron,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "vGi" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/box,
@@ -13273,6 +13407,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"wbT" = (
+/mob/living/simple_animal/hostile/handy,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "wbX" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -13686,6 +13826,14 @@
 	icon_state = "horizontaltopbordertop2"
 	},
 /area/f13/wasteland)
+"wEw" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "wFR" = (
 /obj/effect/spawner/lootdrop/glowstick/no_turf,
 /obj/effect/decal/cleanable/dirt,
@@ -14419,6 +14567,12 @@
 	dir = 4
 	},
 /area/f13/bunker)
+"xNc" = (
+/obj/structure/nest/ghoul,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/underground/cave)
 "xNg" = (
 /obj/machinery/door/airlock/hatch,
 /obj/structure/decoration/rag,
@@ -67904,29 +68058,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+apt
+apt
+apt
+apt
+gTx
+gTx
+gTx
+gTx
+gTx
 heT
 "}
 (208,1,1) = {"
@@ -68161,29 +68315,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+cPS
+vFt
+uMT
+uMT
+jDX
+jzn
+uMT
+uMT
+uMT
+uMT
+kzG
+xNc
+pXw
+apt
+apt
+apt
+apt
+jzn
+uMT
+uMT
+uMT
+gTx
 heT
 "}
 (209,1,1) = {"
@@ -68418,29 +68572,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+ugC
+uMT
+uMT
+uMT
+fGP
+jzn
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+tJD
+apt
+apt
+apt
+apt
+jzn
+uMT
+jjx
+uMT
+gTx
 heT
 "}
 (210,1,1) = {"
@@ -68675,29 +68829,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+nsk
+uMT
+uMT
+uMT
+wbT
+jzn
+ktT
+uMT
+uMT
+uMT
+uMT
+kzG
+uMT
+apt
+apt
+apt
+apt
+jzn
+uMT
+uMT
+uMT
+gTx
 heT
 "}
 (211,1,1) = {"
@@ -68932,29 +69086,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+uMT
+uMT
+uMT
+uMT
+uMT
+jzn
+nsk
+uMT
+uMT
+uMT
+uMT
+uMT
+apt
+apt
+apt
+apt
+apt
+jzn
+nsk
+uMT
+uMT
+gTx
 heT
 "}
 (212,1,1) = {"
@@ -69189,29 +69343,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+jzn
+jzn
+aFD
+jzn
+jzn
+jzn
+uMT
+uMT
+uMT
+uMT
+apt
+apt
+apt
+apt
+apt
+apt
+apt
+jzn
+uMT
+uMT
+uMT
+gTx
 heT
 "}
 (213,1,1) = {"
@@ -69446,29 +69600,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+apt
+apt
+apt
+apt
+apt
+apt
+jzn
+jzn
+aFD
+jzn
+gTx
 heT
 "}
 (214,1,1) = {"
@@ -69703,29 +69857,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+apt
+apt
+apt
+apt
+apt
+jzn
+uMT
+uMT
+uMT
+gTx
 heT
 "}
 (215,1,1) = {"
@@ -69960,29 +70114,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+apt
+uMT
+apt
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+jzn
+jzn
+jzn
+jzn
+jzn
+jzn
+jzn
+jzn
+jzn
+uMT
+uMT
+wbT
+gTx
 heT
 "}
 (216,1,1) = {"
@@ -70217,29 +70371,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+apt
+apt
+apt
+apt
+uMT
+uMT
+uMT
+uMT
+uMT
+jzn
+beb
+uMT
+uMT
+uMT
+wEw
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+gTx
 heT
 "}
 (217,1,1) = {"
@@ -70474,29 +70628,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+apt
+apt
+apt
+apt
+apt
+uMT
+uMT
+uMT
+uMT
+aFD
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+lbB
+uMT
+lbB
+uMT
+uMT
+gTx
 heT
 "}
 (218,1,1) = {"
@@ -70731,29 +70885,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+apt
+apt
+apt
+apt
+apt
+uMT
+uMT
+uMT
+uMT
+jzn
+lXS
+uMT
+uMT
+wbT
+uMT
+uMT
+uMT
+uMT
+uMT
+uMT
+swf
+gTx
 heT
 "}
 (219,1,1) = {"
@@ -70988,29 +71142,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
+gTx
 heT
 "}
 (220,1,1) = {"
