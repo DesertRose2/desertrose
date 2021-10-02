@@ -224,8 +224,8 @@
 		/datum/outfit/loadout/neurosurgeon,
 		)
 
-	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
 
 
 /datum/outfit/job/vtcc/f13chresearcher/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -495,8 +495,8 @@
 		/datum/outfit/loadout/robotocist,
 		)
 
-	access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
 
 /datum/outfit/job/vtcc/f13researcher/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
