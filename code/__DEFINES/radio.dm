@@ -73,9 +73,9 @@
 #define RADIO_KEY_LEGION "l"
 #define RADIO_TOKEN_LEGION ":l"
 
-#define RADIO_CHANNEL_KHANS "Khans"
-#define RADIO_KEY_KHANS "k"
-#define RADIO_TOKEN_KHANS ":k"
+#define RADIO_CHANNEL_KHANS "Khans" //This is shitcode, the :k prefix doesn't work, we just tell players to use the general :h prefix. Someone smarts will have to fix this.
+#define RADIO_KEY_KHANS "j"
+#define RADIO_TOKEN_KHANS ":j"
 
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
