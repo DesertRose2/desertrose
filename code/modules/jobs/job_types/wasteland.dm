@@ -217,7 +217,7 @@ Great Khans
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
 		/obj/item/restraints/legcuffs/bola/tactical=1,
-		/obj/item/book/granter/trait/big_leagues)
+		/obj/item/book/granter/trait/big_leagues=1)
 /*
 Bandit
 */
