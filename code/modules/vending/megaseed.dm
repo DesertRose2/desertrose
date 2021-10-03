@@ -50,6 +50,7 @@
 	contraband = list(/obj/item/seeds/amanita = 2,
 					/obj/item/seeds/glowshroom = 2,
 					/obj/item/seeds/liberty = 2,
+					/obj/item/seeds/poppy/lily = 2,
 					/obj/item/seeds/kudzu = 2,
 					/obj/item/seeds/nettle = 2,
 					/obj/item/seeds/plump = 2,

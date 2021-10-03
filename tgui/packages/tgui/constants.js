@@ -150,6 +150,11 @@ export const RADIO_CHANNELS = [
     freq: 1371,
     color: '#c24d44',
   },
+  {
+    name: 'Khans',
+    freq: 1375,
+    color: '#f0420d',
+  },
 ];
 
 const GASES = [

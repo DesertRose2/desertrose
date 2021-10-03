@@ -2282,8 +2282,8 @@
 "Op" = (
 /mob/living/simple_animal/hostile/handy/sentrybot{
 	color = "#FFFF00";
-	harm_intent_damage = 10;
-	health = 400;
+	harm_intent_damage = 15;
+	health = 500;
 	name = "legendary sentry bot";
 	obj_damage = 100
 	},
@@ -2842,8 +2842,8 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/sentrybot{
 	color = "#FFFF00";
-	harm_intent_damage = 10;
-	health = 400;
+	harm_intent_damage = 15;
+	health = 500;
 	name = "legendary sentry bot";
 	obj_damage = 100
 	},
@@ -3848,7 +3848,7 @@ AN
 PH
 PH
 Hy
-aJ
+Hy
 kj
 kj
 kj
@@ -3890,7 +3890,7 @@ nS
 ME
 SN
 Hy
-aJ
+Hy
 kj
 kj
 kj
@@ -4016,7 +4016,7 @@ AN
 PH
 oG
 ek
-aJ
+Hy
 kj
 Zs
 rW
