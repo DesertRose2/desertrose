@@ -25422,6 +25422,9 @@
 	name = "Engine Access";
 	req_access_txt = "120"
 	},
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "bosengineaccess"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood/reactor)
 "waz" = (
@@ -25822,6 +25825,9 @@
 "wzV" = (
 /obj/structure/grille,
 /obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "bosengineaccess"
+	},
 /turf/open/space/basic,
 /area/f13/brotherhood/reactor)
 "wAe" = (
@@ -25972,7 +25978,13 @@
 /area/f13/clinic)
 "wGi" = (
 /obj/machinery/power/am_control_unit,
-/turf/open/space/basic,
+/obj/structure/window/plasma/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "bosengineaccess"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "wHr" = (
 /turf/open/floor/carpet/purple,

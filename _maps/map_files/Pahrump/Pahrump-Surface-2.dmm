@@ -3715,7 +3715,7 @@
 	height = 4;
 	id = "bos_surface";
 	name = "Surface";
-	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
+	roundstart_template = null;
 	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
