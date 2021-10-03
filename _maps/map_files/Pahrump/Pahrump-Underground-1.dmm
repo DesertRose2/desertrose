@@ -4626,8 +4626,8 @@
 	pixel_y = 23
 	},
 /obj/structure/curtain,
-/obj/machinery/pool/drain,
 /obj/item/soap/homemade,
+/obj/structure/decoration/vent,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -5734,7 +5734,7 @@
 	pixel_y = 23
 	},
 /obj/structure/curtain,
-/obj/machinery/pool/drain,
+/obj/structure/decoration/vent,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -11598,7 +11598,7 @@
 	dir = 1
 	},
 /obj/structure/curtain,
-/obj/machinery/pool/drain,
+/obj/structure/decoration/vent,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -16698,6 +16698,11 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/tunnel)
+"oWf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/pool/drain,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/brotherhood/leisure)
 "oWl" = (
 /obj/machinery/computer/telecomms/monitor{
 	dir = 4;
@@ -22552,7 +22557,7 @@
 	dir = 1
 	},
 /obj/structure/curtain,
-/obj/machinery/pool/drain,
+/obj/structure/decoration/vent,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -83008,7 +83013,7 @@ jZH
 jZH
 jZH
 rsn
-gUJ
+oWf
 gUJ
 jZH
 iZB
