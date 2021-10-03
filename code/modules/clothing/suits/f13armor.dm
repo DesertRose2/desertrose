@@ -193,6 +193,18 @@
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
+/obj/item/clothing/suit/armor/f13/combat/khan
+	name = "khanbat armor"
+	desc = "(V) An old set of combat armor, repainted in the blue color of the Khans."
+	icon_state = "combat_armor_khan"
+	item_state = "combat_armor_khan"
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/khan
+	name = "reinforced khanbat armor"
+	desc = "(VI) An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
+	icon_state = "combat_armor_khan_mk2"
+	item_state = "combat_armor_khan_mk2"
+
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
@@ -708,8 +720,17 @@
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
 	blood_overlay_type = "armor"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	always_reskinnable = TRUE
+	unique_reskin = list("Old School" = "bonearmor",
+						"New School" = "bonearmoralt",
+						"Alternative New" = "hbonearmor"
+						)
+
+/obj/item/clothing/suit/armor/bone/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
 /obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced
