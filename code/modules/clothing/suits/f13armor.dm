@@ -193,6 +193,18 @@
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
+/obj/item/clothing/suit/armor/f13/combat/khan
+	name = "khanbat armor"
+	desc = "(V) An old set of combat armor, repainted in the blue color of the Khans."
+	icon_state = "combat_armor_khan"
+	item_state = "combat_armor_khan"
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/khan
+	name = "reinforced khanbat armor"
+	desc = "(VI) An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
+	icon_state = "combat_armor_khan_mk2"
+	item_state = "combat_armor_khan_mk2"
+
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
