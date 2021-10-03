@@ -79,7 +79,7 @@ Great Khans
 	name = "Genghis Khan"
 	jobtype = /datum/job/wasteland/f13genghis
 	id = 		/obj/item/card/id/khantattoo
-	ears = 		/obj/item/radio/headset
+	ears = 		/obj/item/radio/headset/headset_khans
 	belt = 		/obj/item/claymore/machete/reinforced
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
@@ -165,7 +165,7 @@ Great Khans
 	name = "Great Khan"
 	jobtype = /datum/job/wasteland/f13pusher
 	id = 		/obj/item/card/id/khantattoo
-	ears = 		/obj/item/radio/headset
+	ears = 		/obj/item/radio/headset/headset_khans
 	belt = 		/obj/item/claymore/machete
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
