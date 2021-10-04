@@ -347,7 +347,7 @@
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
-	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)https://github.com/DesertRose2/desertrose/pulls
 	new /obj/item/clothing/under/harebell_dress(src)
 	new /obj/item/clothing/under/flowerdress(src)
 
@@ -409,3 +409,11 @@
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/head/soft/grey(src)
 	new /obj/item/storage/backpack/satchel/explorer(src)
+
+//Parker Wright - KayZach
+/obj/item/storage/box/large/custom_kit/parkerwright/PopulateContents()
+	new /obj/item/clothing/head/beret/ncr_recon(src)
+	
+//Asher Griffin - Metriusthehot
+/obj/item/storage/box/large/custom_kit/ashergriffin/PopulateContents()
+	new /obj/item/storage/bag/plushie(src)
