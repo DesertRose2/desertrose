@@ -347,7 +347,7 @@
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
 	new /obj/item/clothing/accessory/medal/californian_cross(src)
-	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)https://github.com/DesertRose2/desertrose/pulls
+	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
 	new /obj/item/clothing/under/harebell_dress(src)
 	new /obj/item/clothing/under/flowerdress(src)
 
