@@ -405,6 +405,10 @@
 	name = "BoS Elevator Control (Computer board)"
 	build_path = /obj/machinery/computer/shuttle/boselevator
 
+/obj/item/circuitboard/computer/bos_entry_control
+	name = "BoS Entry Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/bosentryelevator
+
 /obj/item/circuitboard/computer/vault_control
 	name = "Vault Elevator Control (Computer board)"
 	build_path = /obj/machinery/computer/shuttle/vaultelevator
