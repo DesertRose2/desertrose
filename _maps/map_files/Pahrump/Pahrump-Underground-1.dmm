@@ -2013,6 +2013,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/glass/ten,
+/obj/item/stack/sheet/glass/ten,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "bFV" = (
@@ -6293,6 +6297,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "eWN" = (
@@ -27292,6 +27297,11 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/tunnel)
+"uYX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/workbench,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/operations)
 "uZy" = (
 /obj/machinery/microwave/stove,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -88513,7 +88523,7 @@ gEZ
 ybb
 gXi
 eVF
-cOE
+uYX
 bFS
 mrV
 enH
