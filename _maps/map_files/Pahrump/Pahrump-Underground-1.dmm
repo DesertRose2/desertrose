@@ -2300,6 +2300,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/tunnel)
+"bQw" = (
+/obj/structure/closet,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/tunnel)
 "bRf" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -2418,7 +2425,9 @@
 /area/f13/brotherhood/medical)
 "bWl" = (
 /obj/structure/simple_door/fakeglass,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "bWO" = (
 /obj/structure/table/reinforced,
@@ -3718,6 +3727,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"cSC" = (
+/obj/structure/bodycontainer/crematorium,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/tunnel)
 "cSG" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a very futuristic vouge feel.";
@@ -4163,8 +4176,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "dpt" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plating/tunnel,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/simple_door/fakeglass,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "dpz" = (
 /turf/open/floor/f13/wood{
@@ -5618,6 +5634,10 @@
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
 	},
+/area/f13/tunnel)
+"eso" = (
+/obj/machinery/door/airlock/freezer,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/tunnel)
 "esG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7472,7 +7492,9 @@
 /area/f13/tunnel)
 "fNd" = (
 /obj/structure/simple_door/dirtyglass,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "fNr" = (
 /obj/structure/chair/wood/worn{
@@ -9808,7 +9830,10 @@
 /area/f13/tunnel)
 "hGm" = (
 /obj/structure/simple_door/wood,
-/turf/open/floor/f13/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "hGF" = (
 /obj/structure/table{
@@ -17672,7 +17697,10 @@
 "nRK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/simple_door/fakeglass,
-/turf/open/floor/f13/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "nSa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18488,13 +18516,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ozN" = (
-/obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/spacevine{
-	name = "vines"
+/obj/structure/simple_door/fakeglass,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
 	},
-/turf/open/floor/plating/tunnel,
-/area/f13/caves)
+/area/f13/tunnel)
 "ozT" = (
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
@@ -18648,6 +18675,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/wrench/power,
 /obj/structure/table,
+/obj/structure/simple_door/fakeglass,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowdirtyfull"
 	},
@@ -19561,6 +19589,13 @@
 	},
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/rnd)
+"pjh" = (
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/tunnel)
 "pjs" = (
 /obj/machinery/computer/libraryconsole,
 /turf/open/floor/wood/f13/stage_br,
@@ -21699,6 +21734,10 @@
 /obj/structure/table,
 /turf/open/floor/wood,
 /area/f13/followers)
+"qLG" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/tunnel)
 "qMi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/mattress{
@@ -23782,9 +23821,11 @@
 	},
 /area/f13/tunnel)
 "sfI" = (
-/obj/structure/simple_door/metal/iron,
 /obj/structure/simple_door/brokenglass,
-/turf/open/floor/f13/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "sfS" = (
 /obj/effect/spawner/lootdrop/clothing_high,
@@ -27066,7 +27107,10 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/turf/open/floor/f13/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "uyT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -27713,7 +27757,10 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/turf/open/floor/f13/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/tunnel)
 "uVe" = (
 /obj/effect/decal/cleanable/dirt,
@@ -41177,11 +41224,11 @@ xzh
 hMQ
 hMQ
 lPQ
-eLE
-eLE
 ygC
 ygC
 ygC
+ygC
+eso
 ygC
 vSz
 mdp
@@ -41434,11 +41481,11 @@ xzh
 xzh
 hMQ
 jmN
-eLE
-eLE
-eLE
-eLE
-eLE
+ygC
+bQw
+pjh
+yeu
+ouv
 ygC
 wHB
 wpJ
@@ -41691,11 +41738,11 @@ kSa
 xDr
 tTR
 jmN
-hQE
-hQE
-eLE
-eLE
-eLE
+ygC
+cSC
+ouv
+yeu
+ouv
 ygC
 wHB
 wpJ
@@ -41947,12 +41994,12 @@ xDr
 xDr
 xDr
 xDr
-xzh
-ozN
-gza
-eLE
-eLE
-eLE
+rjq
+ygC
+bQw
+ouv
+ouv
+qLG
 ygC
 wHB
 wpJ
@@ -42204,12 +42251,12 @@ xDr
 xDr
 xmS
 xDr
-xzh
-gza
-gza
-eLE
-eLE
-eLE
+rjq
+ygC
+ygC
+ygC
+ygC
+ygC
 ygC
 lTR
 wpJ
@@ -42461,9 +42508,9 @@ xDr
 xDr
 xDr
 xDr
-xzh
-gza
-gza
+rjq
+eLE
+eLE
 eLE
 eLE
 eLE
@@ -42719,8 +42766,8 @@ xDr
 xDr
 xDr
 jmN
-hQE
-hQE
+eLE
+eLE
 eLE
 eLE
 eLE
@@ -44499,7 +44546,7 @@ xDr
 xDr
 jmN
 oyr
-aoC
+ozN
 rrm
 rXS
 siK

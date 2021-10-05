@@ -3967,6 +3967,12 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/wasteland)
+"byR" = (
+/obj/structure/flora/tree/jungle/small{
+	pixel_y = -10
+	},
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "byT" = (
 /obj/machinery/computer/slot_machine,
 /turf/open/floor/f13/wood{
@@ -12530,9 +12536,7 @@
 	},
 /area/f13/followers)
 "fnl" = (
-/obj/structure/bodycontainer/crematorium{
-	dir = 1
-	},
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
 "fnx" = (
@@ -31573,6 +31577,13 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/city)
+"ngh" = (
+/obj/item/trash/energybar,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "ngV" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/f13/wood{
@@ -31986,6 +31997,11 @@
 "nqH" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/tree/jungle/small,
+/turf/open/floor/grass,
+/area/f13/wasteland)
+"nqI" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/tree/jungle,
 /turf/open/floor/grass,
 /area/f13/wasteland)
 "nqT" = (
@@ -32848,6 +32864,11 @@
 /obj/item/clothing/mask/bandana/skull,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"nKV" = (
+/obj/structure/bed/dogbed,
+/mob/living/simple_animal/opossum/poppy,
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "nKX" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -34533,6 +34554,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"ovo" = (
+/obj/item/trash/chips,
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "ovr" = (
 /obj/structure/table,
 /obj/item/kitchen/fork,
@@ -42019,6 +42044,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"rMf" = (
+/obj/structure/flora/ausbushes/brflowers,
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "rMq" = (
 /obj/structure/fence/corner/wooden{
 	dir = 1
@@ -44848,6 +44880,15 @@
 "sTG" = (
 /turf/open/floor/wood/f13/stage_br,
 /area/f13/city)
+"sTH" = (
+/obj/item/storage/trash_stack{
+	icon_state = "trash_3"
+	},
+/obj/item/storage/trash_stack{
+	icon_state = "trash_3"
+	},
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "sTK" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt,
@@ -44915,6 +44956,11 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"sUR" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/simple_door/metal/fence,
+/turf/open/floor/grass,
+/area/f13/wasteland)
 "sUT" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -46384,6 +46430,15 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"twH" = (
+/obj/item/storage/trash_stack{
+	icon_state = "trash_2"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "horizontaloutermain1"
+	},
+/area/f13/wasteland)
 "twI" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
@@ -48403,8 +48458,7 @@
 	},
 /area/f13/building)
 "umA" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/structure/flora/tree/jungle,
+/obj/item/trash/boritos,
 /turf/open/floor/grass,
 /area/f13/wasteland)
 "umD" = (
@@ -56036,8 +56090,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "xsX" = (
-/obj/structure/bed/dogbed,
-/mob/living/simple_animal/opossum/poppy,
+/obj/item/storage/trash_stack{
+	icon_state = "trash_3"
+	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain1"
 	},
@@ -61961,7 +62016,7 @@ cdc
 vDB
 mzs
 ilx
-sAB
+twH
 sfB
 yiF
 rbF
@@ -65579,11 +65634,11 @@ xZu
 khZ
 eoI
 uQx
-eoI
-ufP
-rbF
+nqI
+rMf
+nKV
 umA
-uQx
+sTH
 yiF
 ydH
 "}
@@ -65837,10 +65892,10 @@ eoI
 rbF
 xZu
 eoI
-rbF
-ufP
-xZu
-eoI
+sUR
+ovo
+ngh
+byR
 yiF
 ydH
 "}
