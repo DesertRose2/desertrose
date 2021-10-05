@@ -536,17 +536,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
-"atD" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/grille,
-/obj/structure/curtain{
-	color = "black"
-	},
-/obj/structure/curtain{
-	color = "black"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral,
-/area/f13/tunnel)
 "atO" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -41833,7 +41822,7 @@ ygC
 wHB
 wpJ
 ezl
-atD
+eCE
 vUW
 xIu
 rDM
