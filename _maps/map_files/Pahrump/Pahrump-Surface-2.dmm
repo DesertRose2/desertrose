@@ -2940,7 +2940,8 @@
 "bcR" = (
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood/house/broken,
+/obj/structure/window/fulltile/house,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "bdl" = (
 /obj/effect/decal/cleanable/generic,
@@ -15368,7 +15369,9 @@
 "gyX" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/building)
 "gzb" = (
 /obj/structure/table/glass,
@@ -20916,9 +20919,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "iNp" = (
-/obj/structure/simple_door/bunker/glass,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood)
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/window/fulltile/house,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "iNx" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -22745,7 +22749,9 @@
 	name = "vines"
 	},
 /obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/building)
 "jAZ" = (
 /obj/structure/closet/crate/bin,
@@ -23965,11 +23971,12 @@
 	},
 /area/f13/wasteland)
 "kex" = (
-/obj/structure/simple_door/bunker/glass{
-	req_access_txt = "120"
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/window/fulltile/house{
+	icon_state = "housewindowvertical"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood)
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "keK" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/clothing_low,
@@ -26553,7 +26560,9 @@
 "lhA" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/closed/wall/f13/wood,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/building)
 "lhN" = (
 /obj/structure/table,
@@ -27900,10 +27909,6 @@
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"lNn" = (
-/obj/structure/window/fulltile/wood,
-/turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "lNw" = (
 /obj/effect/decal/cleanable/dirt{
@@ -29629,7 +29634,9 @@
 /area/f13/legion)
 "mBh" = (
 /obj/structure/window/fulltile/wood,
-/turf/closed/wall/f13/wood,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/building)
 "mBC" = (
 /obj/machinery/light{
@@ -29743,7 +29750,7 @@
 /area/f13/building)
 "mFf" = (
 /obj/structure/simple_door/bunker/glass,
-/turf/closed/wall/f13/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/tunnel)
 "mFh" = (
 /obj/structure/table/wood/poker,
@@ -37789,8 +37796,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "qgO" = (
-/obj/structure/simple_door/dirtyglass,
-/turf/open/indestructible/ground/outside/desert,
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "housewindowvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "qgY" = (
 /obj/structure/barricade/wooden,
@@ -39611,7 +39621,8 @@
 /area/f13/wasteland)
 "qUL" = (
 /obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood/house/broken,
+/obj/structure/window/fulltile/house,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "qUO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -56261,7 +56272,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "xRz" = (
-/obj/machinery/vending/cola/random,
+/obj/machinery/vending/cola/starkist,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2left"
 	},
@@ -90889,8 +90900,8 @@ fGa
 fGa
 fTM
 dHK
-kex
-kex
+daH
+daH
 dHK
 dHK
 dHK
@@ -91659,7 +91670,7 @@ dOl
 bQI
 fbv
 bQI
-kex
+daH
 bPk
 bQI
 iYw
@@ -93452,7 +93463,7 @@ aya
 xXZ
 dHK
 dHK
-iNp
+daH
 dHK
 dHK
 daH
@@ -96028,9 +96039,9 @@ sYX
 aOc
 sYX
 sYX
-tKZ
-tKZ
-sdP
+xIq
+xIq
+kex
 sYX
 sYX
 fyf
@@ -96296,9 +96307,9 @@ sYX
 sYX
 sYX
 sYX
-tKZ
+qgO
 laZ
-tKZ
+qgO
 sYX
 fyf
 fyf
@@ -96536,7 +96547,7 @@ fyf
 fyf
 dRo
 hiT
-sdP
+iNp
 rkZ
 rpu
 rpu
@@ -96803,7 +96814,7 @@ hWd
 rkZ
 pIY
 vtC
-tKZ
+cuv
 fyf
 oaD
 khn
@@ -100392,7 +100403,7 @@ mBh
 bwq
 sYV
 sYV
-qgO
+jQy
 ccz
 sYV
 sYV
@@ -101420,7 +101431,7 @@ ccz
 ccz
 sYV
 sYV
-qgO
+jQy
 sYV
 sYV
 fOf
@@ -101936,8 +101947,8 @@ mBh
 uqa
 uqa
 uqa
-lNn
-lNn
+mBh
+mBh
 uqa
 uqa
 fyf

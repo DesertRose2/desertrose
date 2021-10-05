@@ -17843,12 +17843,6 @@
 /obj/effect/spawner/lootdrop/clothing_middle,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"nXG" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/brotherhood/reactor)
 "nXN" = (
 /obj/structure/simple_door/bunker,
 /obj/structure/timeddoor,
@@ -29934,13 +29928,7 @@
 /area/f13/clinic)
 "wGi" = (
 /obj/machinery/power/am_control_unit,
-/obj/structure/window/plasma/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/poddoor/shutters/radiation{
-	id = "bosengineaccess"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/turf/open/floor/plating,
 /area/f13/brotherhood/reactor)
 "wGj" = (
 /obj/structure/fireplace{
@@ -88158,7 +88146,7 @@ ogl
 ogl
 cyU
 wGi
-nXG
+qkC
 fjt
 uUU
 rPL
