@@ -483,7 +483,7 @@
 		if(2)
 			select = 0
 			burst_size = 1
-			spread -= 20
+			spread = 2
 			fire_delay = 2.5
 			recoil = 0.1
 			extra_damage = 4
