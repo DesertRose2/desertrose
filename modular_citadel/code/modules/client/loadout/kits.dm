@@ -409,3 +409,11 @@
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/head/soft/grey(src)
 	new /obj/item/storage/backpack/satchel/explorer(src)
+
+//Parker Wright - KayZach
+/obj/item/storage/box/large/custom_kit/parkerwright/PopulateContents()
+	new /obj/item/clothing/head/beret/ncr_recon(src)
+	
+//Asher Griffin - Metriusthehot
+/obj/item/storage/box/large/custom_kit/ashergriffin/PopulateContents()
+	new /obj/item/storage/bag/plushie(src)
