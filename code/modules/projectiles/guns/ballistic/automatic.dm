@@ -209,7 +209,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select = 2
 			burst_size = 2
 			spread += 11
 			fire_delay += 1
@@ -463,7 +463,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select = 2
 			burst_size = 4
 			spread += 12
 			fire_delay = 4.5
