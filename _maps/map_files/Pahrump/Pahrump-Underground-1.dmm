@@ -5982,6 +5982,16 @@
 /obj/effect/landmark/start/f13/ncrveteranranger,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"eMl" = (
+/obj/structure/fluff/railing,
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 8
+	},
+/turf/open/water,
+/area/f13/brotherhood/reactor)
 "eMA" = (
 /mob/living/simple_animal/hostile/centaur,
 /turf/open/floor/plasteel/f13/vault_floor/red{
@@ -6564,6 +6574,9 @@
 /area/f13/brotherhood/leisure)
 "fjt" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "fjD" = (
@@ -12203,9 +12216,14 @@
 /area/f13/brotherhood/medical)
 "jHR" = (
 /obj/machinery/light/small,
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing{
 	dir = 4
+	},
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 8
 	},
 /turf/open/water,
 /area/f13/brotherhood/reactor)
@@ -15321,6 +15339,20 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"mpJ" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowtop"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "bosengineaccess";
+	name = "Engine Access Shutters"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/brotherhood/reactor)
 "mql" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -17491,6 +17523,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "nXN" = (
@@ -18261,6 +18296,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
@@ -23329,9 +23367,10 @@
 	},
 /area/f13/brotherhood/offices2nd)
 "sef" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing/corner,
+/obj/structure/fluff/railing{
+	dir = 9
+	},
 /turf/open/water,
 /area/f13/brotherhood/reactor)
 "sek" = (
@@ -23540,8 +23579,13 @@
 /turf/closed/indestructible/rock,
 /area/f13/caves)
 "skp" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing,
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 4
+	},
 /turf/open/water,
 /area/f13/brotherhood/reactor)
 "sku" = (
@@ -25165,10 +25209,11 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/tunnel)
 "tzU" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing/corner{
 	dir = 8
+	},
+/obj/structure/fluff/railing{
+	dir = 5
 	},
 /turf/open/water,
 /area/f13/brotherhood/reactor)
@@ -26795,10 +26840,13 @@
 	},
 /area/f13/tunnel)
 "uHS" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing{
 	dir = 4
 	},
+/obj/structure/fluff/railing{
+	dir = 8
+	},
+/obj/structure/fluff/railing,
 /turf/open/water,
 /area/f13/brotherhood/reactor)
 "uHU" = (
@@ -27690,10 +27738,13 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "vpK" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing{
 	dir = 8
 	},
+/obj/structure/fluff/railing{
+	dir = 4
+	},
+/obj/structure/fluff/railing,
 /turf/open/water,
 /area/f13/brotherhood/reactor)
 "vqb" = (
@@ -27889,6 +27940,12 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/fluff/railing{
 	dir = 8
+	},
+/obj/structure/fluff/railing{
+	dir = 4
+	},
+/obj/structure/fluff/railing{
+	dir = 1
 	},
 /turf/open/water,
 /area/f13/brotherhood/reactor)
@@ -29307,6 +29364,9 @@
 /obj/machinery/door/poddoor/shutters/radiation{
 	id = "bosengineaccess"
 	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "wGj" = (
@@ -29775,6 +29835,12 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
@@ -30963,6 +31029,12 @@
 "xVz" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"xVG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/brotherhood/reactor)
 "xVW" = (
 /mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/f13{
@@ -86976,7 +87048,7 @@ sJS
 jHR
 xmk
 uIh
-wIq
+mpJ
 wIq
 vtC
 xmk
@@ -87233,7 +87305,7 @@ ogl
 cyU
 wzV
 dXx
-qkC
+xVG
 qkC
 qOm
 xmk
@@ -87741,7 +87813,7 @@ tCG
 pXq
 xmk
 qth
-skp
+eMl
 ogl
 ogl
 cyU
