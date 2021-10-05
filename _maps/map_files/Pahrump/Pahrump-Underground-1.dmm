@@ -8208,16 +8208,6 @@
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"gyp" = (
-/obj/structure/simple_door/blast{
-	max_integrity = 10000;
-	name = "bunker entry";
-	req_access_txt = "120"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/brotherhood/operations)
 "gyB" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
@@ -11833,13 +11823,9 @@
 	},
 /area/f13/tunnel)
 "jrn" = (
-/obj/structure/simple_door/blast{
-	max_integrity = 10000;
-	name = "bunker entry";
+/obj/machinery/door/airlock/hatch{
+	name = "Bunker Entrence";
 	req_access_txt = "120"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -92117,7 +92103,7 @@ xYu
 xYu
 yiM
 ddQ
-gyp
+jrn
 gWK
 faR
 jJM
