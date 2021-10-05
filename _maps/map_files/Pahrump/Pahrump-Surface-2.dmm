@@ -734,7 +734,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern/jade{
+	color = null;
+	light_color = "#E4D0A1";
+	name = "Lit Lantern"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
@@ -5638,12 +5642,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"crt" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "cru" = (
 /obj/structure/table/wood,
 /obj/item/clothing/head/fluff/bandit,
@@ -7172,11 +7170,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"dcH" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "dcJ" = (
 /obj/structure/decoration/rag{
 	layer = 2.5;
@@ -11670,7 +11663,11 @@
 "eXx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern/jade{
+	color = null;
+	light_color = "#E4D0A1";
+	name = "Lit Lantern"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -13485,13 +13482,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fIe" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/wooden{
+	pixel_y = 11
+	},
 /obj/structure/bed/wooden,
-/obj/structure/curtain{
-	color = "#845f58";
-	pixel_y = -32
+/obj/item/bedsheet/brown{
+	pixel_y = 12
 	},
 /obj/item/bedsheet/brown,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "fIn" = (
@@ -15490,14 +15489,6 @@
 /obj/item/reagent_containers/pill/patch/healpoultice,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
-"gxD" = (
-/obj/structure/bed,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/item/bedsheet/brown,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "gxO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -29012,7 +29003,11 @@
 "mbx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern/jade{
+	color = null;
+	light_color = "#E4D0A1";
+	name = "Lit Lantern"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "mbz" = (
@@ -31089,11 +31084,6 @@
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"mVx" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "mVE" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
@@ -39572,7 +39562,11 @@
 "qFc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern/jade{
+	color = null;
+	light_color = "#E4D0A1";
+	name = "Lit Lantern"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -52544,9 +52538,20 @@
 	},
 /area/f13/wasteland)
 "vVR" = (
-/obj/item/bedsheet/hos,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/wooden{
+	pixel_y = 11
+	},
 /obj/structure/bed/wooden,
-/obj/effect/decal/cleanable/dirt,
+/obj/item/bedsheet/hos{
+	desc = "A comfortable red bedsheet.";
+	name = "Comfy Red Bedsheet";
+	pixel_y = 12
+	},
+/obj/item/bedsheet/hos{
+	desc = "A comfortable red bedsheet.";
+	name = "Comfy Red Bedsheet"
+	},
 /turf/open/floor/carpet,
 /area/f13/legion)
 "vVU" = (
@@ -53028,6 +53033,12 @@
 "wiL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
+/obj/item/flashlight/lantern/jade{
+	color = null;
+	light_color = "#E4D0A1";
+	name = "Lit Lantern";
+	pixel_y = 12
+	},
 /obj/item/toy/figure/secofficer{
 	pixel_x = -5
 	},
@@ -56024,12 +56035,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xrP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/old,
-/obj/item/bedsheet/brown,
-/obj/machinery/light/small{
-	dir = 4
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/wooden{
+	pixel_y = 11
 	},
+/obj/structure/bed/wooden,
+/obj/item/bedsheet/brown{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/brown,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "xrX" = (
@@ -84105,17 +84119,17 @@ bFJ
 sYX
 nNM
 uCO
-gxD
+nrr
 vJb
 sYX
 nNM
 uCO
-gxD
+nrr
 vJb
 sYX
 nNM
 uCO
-gxD
+nrr
 vJb
 sYX
 unI
@@ -87958,11 +87972,11 @@ gts
 gts
 dzf
 sYX
-mVx
+nrr
 vJb
 omR
 sYX
-mVx
+nrr
 vJb
 omR
 sYX
@@ -110340,15 +110354,15 @@ tBN
 mvv
 bpD
 hom
-crt
+fIe
 oMY
 oMY
 hom
-dcH
+fIe
 oMY
 oMY
 hom
-dcH
+fIe
 oMY
 oMY
 hom
