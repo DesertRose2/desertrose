@@ -110,8 +110,8 @@ Head Paladin
 	selection_color = "#7f8c8d"
 
 	loadout_options = list(
-	/datum/outfit/loadout/sentlead, //Gatling
-	/datum/outfit/loadout/sentheavy  //Gauss
+	/datum/outfit/loadout/sentlead, //Gatling for suppressive fire but holds a cooldown after roughly 30~ rounds fired. Low power, low damage, high rate of fire. Infinate ammo.
+	/datum/outfit/loadout/sentheavy  //Gauss for long-range engagements. Powerfist too to make it viable verses gatling which technically has infinate ammo.
 	)
 
 	outfit = /datum/outfit/job/bos/f13sentinel
@@ -137,9 +137,9 @@ Head Paladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	belt =			/obj/item/storage/belt/military/assault
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t60
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
 	neck =			/obj/item/clothing/neck/mantle/bos/paladin
@@ -356,8 +356,8 @@ Senior Paladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Now you have your trusty powerfist, and were recently given a suit of T-51b power armor. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -883,7 +883,7 @@ Knight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/clothing/accessory/bos/juniorknight=1
 		)
 
@@ -925,7 +925,7 @@ Knight
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
-		/obj/item/attachments/scope=1,
+		/obj/item/grenade/smokebomb=1,
 		/obj/item/clothing/accessory/bos/knight=1
 		)
 
@@ -952,8 +952,8 @@ Initiate
 	title = "Initiate"
 	flag = F13INITIATE
 	faction = "BOS"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. You are NEVER allowed to leave the bunker without the direct supervision of a superior; doing so may result in exile or transferrence back the Valley."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
