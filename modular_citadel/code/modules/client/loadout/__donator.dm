@@ -380,6 +380,16 @@
 	name = "The batsman's belongings"
 	path = /obj/item/storage/box/large/custom_kit/thebatsman
 	ckeywhitelist = list("elizabethdame")
+	
+/datum/gear/donator/kits/parkerwright
+	name = "Parker Wright's belongings"
+	path = /obj/item/storage/box/large/custom_kit/parkerwright
+	ckeywhitelist = list("kayzach")
+	
+/datum/gear/donator/kits/ashergriffin
+	name = "Asher Griffin's belongings"
+	path = /obj/item/storage/box/large/custom_kit/ashergriffin
+	ckeywhitelist = list("metriusthehot")
 
 //////////////////////////////
 ///Ranger items start here.///
