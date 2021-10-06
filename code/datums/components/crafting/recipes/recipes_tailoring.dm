@@ -1449,3 +1449,24 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
+
+/datum/crafting_recipe/khanbatarmor
+	name = "khanbat armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/khan
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/reinforcedkhanbatarmor
+	name = "reinforced khanbat armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/khan
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
