@@ -4902,7 +4902,9 @@
 /obj/structure/closet/radiation{
 	anchored = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/corner{
+	dir = 8
+	},
 /area/f13/brotherhood/reactor)
 "dOk" = (
 /obj/structure/closet,
@@ -6720,7 +6722,11 @@
 /area/f13/brotherhood/leisure)
 "fjt" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/obj/item/am_shielding_container,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
 /area/f13/brotherhood/reactor)
 "fjD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13701,7 +13707,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
 /area/f13/brotherhood/reactor)
 "kGx" = (
 /obj/structure/sign/poster/prewar/poster89,
@@ -23397,6 +23405,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "rPM" = (
@@ -27788,6 +27799,9 @@
 	pixel_y = -4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "uVc" = (
@@ -29928,6 +29942,12 @@
 /area/f13/clinic)
 "wGi" = (
 /obj/machinery/power/am_control_unit,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "bosengineaccess"
+	},
 /turf/open/floor/plating,
 /area/f13/brotherhood/reactor)
 "wGj" = (
@@ -31472,6 +31492,12 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/tunnel)
+"xNT" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/brotherhood/reactor)
 "xNV" = (
 /obj/structure/rack,
 /obj/item/clothing/under/misc/bathrobe,
@@ -88144,10 +88170,10 @@ twE
 sJS
 ogl
 ogl
-cyU
-wGi
-qkC
 fjt
+wGi
+xNT
+wDb
 uUU
 rPL
 xmk
