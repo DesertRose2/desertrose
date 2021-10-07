@@ -3769,8 +3769,7 @@
 "cZy" = (
 /obj/item/paper/crumpled,
 /obj/structure/closet/crate/bin{
-	anchorable = 0;
-	storage_capacity = 30
+	anchorable = 0
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/tunnel)
@@ -5718,8 +5717,7 @@
 /area/f13/building)
 "eBM" = (
 /obj/structure/closet/crate/bin{
-	anchorable = 0;
-	storage_capacity = 30
+	anchorable = 0
 	},
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/vaporwave,
@@ -9200,7 +9198,6 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/paladin,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -10047,8 +10044,7 @@
 /area/f13/bunker)
 "hXr" = (
 /obj/structure/closet/crate/bin{
-	anchorable = 0;
-	storage_capacity = 30
+	anchorable = 0
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/tunnel)
@@ -13955,12 +13951,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side,
 /area/f13/tunnel)
 "ldH" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/paladin,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "darkyellowfull"
 	},
-/area/f13/brotherhood/operations)
+/area/f13/brotherhood/offices1st)
 "ldK" = (
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/indestructible/ground/inside/mountain,
@@ -20532,7 +20527,6 @@
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a very futuristic vouge feel.";
 	dir = 1;
-	icon_state = "shuttle_chair";
 	name = "prewar lounge chair"
 	},
 /turf/open/floor/wood/f13/oak,
@@ -21998,8 +21992,7 @@
 /area/f13/ncr)
 "rin" = (
 /obj/structure/closet/crate/bin{
-	anchorable = 0;
-	storage_capacity = 30
+	anchorable = 0
 	},
 /obj/item/paper/crumpled,
 /turf/open/floor/carpet/black,
@@ -24750,7 +24743,6 @@
 	pixel_y = 12
 	},
 /obj/item/bedsheet/captain{
-	pixel_x = 0;
 	pixel_y = -3
 	},
 /turf/open/floor/carpet/royalblue,
@@ -25587,6 +25579,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/seniorpaladin,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -30721,7 +30714,6 @@
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a very futuristic vouge feel.";
 	dir = 1;
-	icon_state = "shuttle_chair";
 	name = "prewar lounge chair"
 	},
 /turf/open/floor/carpet/blue{
@@ -88222,7 +88214,7 @@ mrV
 scA
 qIO
 vNF
-vNF
+ldH
 oaW
 tMs
 oGc
@@ -88736,7 +88728,7 @@ mrV
 mrV
 vYw
 vNF
-vNF
+ldH
 vNF
 vNF
 vNF
@@ -95391,9 +95383,9 @@ hcx
 jJc
 xxn
 xxn
-ldH
+xxn
 hcx
-ldH
+xxn
 xxn
 hcx
 hlS
