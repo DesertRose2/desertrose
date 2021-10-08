@@ -1286,16 +1286,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "apw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/door{
-	id = "ncr_gate";
-	name = "gate button";
-	pixel_x = 25
+/obj/structure/simple_door/metal/fence,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2"
 	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/ncr)
+/area/f13/wasteland)
 "apL" = (
 /turf/open/floor/plasteel/stairs/medium,
 /area/f13/city)
@@ -8369,16 +8364,14 @@
 	},
 /area/f13/building)
 "dAW" = (
-/obj/machinery/button/door{
-	id = "ncr_gate";
-	name = "gate button";
-	pixel_x = -25
+/obj/structure/fence{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft1"
 	},
-/area/f13/ncr)
+/area/f13/wasteland)
 "dBa" = (
 /obj/structure/window/fulltile/house{
 	dir = 2
@@ -9645,14 +9638,12 @@
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
 "egG" = (
-/obj/machinery/button/door{
-	id = "ncr_gate";
-	name = "gate button";
-	pixel_y = -25;
-	req_access_txt = "121"
+/obj/structure/fence{
+	dir = 4
 	},
+/obj/structure/decoration/rag,
 /turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
+	icon_state = "verticalrightborderright2"
 	},
 /area/f13/wasteland)
 "egK" = (
@@ -10418,17 +10409,6 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
-"ezK" = (
-/obj/machinery/button/door{
-	id = "ncr_gate";
-	name = "gate button";
-	pixel_y = 25;
-	req_access_txt = "121"
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright2"
-	},
-/area/f13/wasteland)
 "ezX" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
@@ -11696,13 +11676,6 @@
 /obj/item/picket_sign,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"eXV" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "outerborder"
-	},
-/area/f13/wasteland)
 "eYj" = (
 /obj/machinery/light{
 	dir = 4
@@ -13897,10 +13870,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/building)
 "fSq" = (
-/obj/machinery/door/poddoor/gate{
-	id = "ncr_gate";
-	name = "gate"
+/obj/structure/fence{
+	dir = 4
 	},
+/obj/structure/decoration/rag,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright2top"
 	},
@@ -19456,6 +19429,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/item/storage/box/emptysandbags,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "idL" = (
@@ -31454,10 +31428,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "nfk" = (
-/obj/structure/noticeboard{
-	name = "bounty board"
+/obj/structure/fence{
+	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft2"
+	},
 /area/f13/wasteland)
 "nfp" = (
 /obj/machinery/microwave/stove,
@@ -36341,12 +36318,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/city)
-"poo" = (
-/obj/structure/chair/wood,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "innershade"
-	},
-/area/f13/wasteland)
 "pop" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -39374,12 +39345,6 @@
 /obj/structure/bonfire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
-	},
-/area/f13/wasteland)
-"qEd" = (
-/obj/structure/table/wood,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "innershade"
 	},
 /area/f13/wasteland)
 "qEj" = (
@@ -45075,12 +45040,6 @@
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
-	},
-/area/f13/wasteland)
-"tak" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "innershade"
 	},
 /area/f13/wasteland)
 "taz" = (
@@ -63461,7 +63420,7 @@ koD
 cpK
 rhr
 mUk
-apw
+lel
 mUk
 mUk
 poS
@@ -63971,7 +63930,7 @@ qTK
 hbW
 xzM
 xzM
-qgZ
+fLc
 ybI
 sTa
 sTa
@@ -64227,8 +64186,8 @@ hOl
 hOl
 hOl
 xzM
-qEd
-mLr
+xzM
+idu
 idu
 aJb
 idu
@@ -64484,12 +64443,12 @@ sgz
 hOl
 xzM
 xzM
-poo
-tak
+xzM
+xzM
 xzM
 dmL
 hOl
-sgz
+apw
 sgz
 sgz
 kjQ
@@ -64741,12 +64700,12 @@ xzM
 xzM
 xzM
 xzM
-qEd
-wWA
+xzM
+kaM
 kaM
 btW
 kaM
-qoS
+dAW
 dmL
 fvz
 kaM
@@ -64999,12 +64958,12 @@ eIC
 hbW
 xzM
 xzM
-eXV
+geM
 ees
 gQv
+ees
 egG
-vUA
-ezK
+gQv
 gQv
 fsm
 fsm
@@ -65517,7 +65476,7 @@ koD
 cpK
 rhr
 iEX
-dAW
+lel
 mUk
 dBM
 otJ
