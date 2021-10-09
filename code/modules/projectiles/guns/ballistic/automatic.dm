@@ -209,7 +209,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 2
+			select = 0
 			burst_size = 2
 			spread += 11
 			fire_delay += 1
@@ -463,7 +463,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 2
+			select = 1
 			burst_size = 4
 			spread += 12
 			fire_delay = 4.5
@@ -483,7 +483,7 @@
 		if(2)
 			select = 0
 			burst_size = 1
-			spread = 2
+			spread -= 20
 			fire_delay = 2.5
 			recoil = 0.1
 			extra_damage = 4
