@@ -228,6 +228,7 @@ obj/item/melee/unarmed/punchdagger/cyborg
 /obj/item/melee/unarmed/deathclawgauntlet
 	name = "deathclaw gauntlet"
 	desc = "The severed hand of a mighty Deathclaw, cured, hollowed out, and given a harness to turn it into the deadliest gauntlet the wastes have ever seen."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "deathclaw_g"
 	item_state = "deathclaw_g"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'

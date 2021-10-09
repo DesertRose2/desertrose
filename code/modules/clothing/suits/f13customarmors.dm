@@ -15,7 +15,7 @@
 //Custom item - PurplePineapple / Piper Rivera
 /obj/item/clothing/suit/hooded/f13/hooded_recon
 	name = "hooded ranger jacket"
-	desc = "(IV) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	desc = "(VI) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
 	icon_state = "hooded_recon"
 	item_state = "hooded_recon"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
