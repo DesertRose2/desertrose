@@ -131,16 +131,16 @@
 
 /datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
 
-    SIGNAL_HANDLER
+	SIGNAL_HANDLER
 
-    if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
-        return FALSE
+	if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
+		return FALSE
 
-    if(on_attach && !on_attach.Invoke(holder, user))
-        return FALSE
+	if(on_attach && !on_attach.Invoke(holder, user))
+		return FALSE
 
-    parent.forceMove(holder)
-    return TRUE
+	parent.forceMove(holder)
+	return TRUE
 
 /datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
 
