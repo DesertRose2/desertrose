@@ -144,20 +144,20 @@
 
 /datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
 
-    SIGNAL_HANDLER
+	SIGNAL_HANDLER
 
-    if(!parent.Adjacent(user) || (valid_parent_types && (holder.type in valid_parent_types)))
-        return FALSE
+	if(!parent.Adjacent(user) || (valid_parent_types && (holder.type in valid_parent_types)))
+		return FALSE
 
-    if(on_attach && !on_detach.Invoke(holder, user))
-        return FALSE
+	if(on_attach && !on_detach.Invoke(holder, user))
+		return FALSE
 
-    if(user.can_put_in_hand(parent))
-        user.put_in_hand(parent)
-        return TRUE
+	if(user.can_put_in_hand(parent))
+		user.put_in_hand(parent)
+		return TRUE
 
-    parent.forceMove(holder.drop_location())
-    return TRUE
+	parent.forceMove(holder.drop_location())
+	return TRUE
 
 /datum/component/attachment/proc/relay_pre_attack(obj/item/parent, obj/item/gun, atom/target_atom, mob/user, params)
 
