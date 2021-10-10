@@ -56,7 +56,7 @@
 	icon = 'icons/obj/machines/reloadingbench.dmi'
 	icon_state = "standard_bench"
 	desc = "A basic workbench for simple to intermediate projects."
-	resistance_flags = INDESTRUCTIBLE
+	max_integrity = 500 //Why people just have to cheese
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
