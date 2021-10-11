@@ -11,6 +11,12 @@
 	pass_flags = PASSTABLE
 	var/obj/item/stock_parts/cell/charging = null
 	var/charge_rate = 500
+	var/blacklistcells = list(
+		/obj/item/stock_parts/cell/ammo/ec,
+		/obj/item/stock_parts/cell/ammo/mfc,
+		/obj/item/stock_parts/cell/ammo/ecp
+	)
+
 
 /obj/machinery/cell_charger/update_overlays()
 	. += ..()
@@ -43,6 +49,9 @@
 		if(charging)
 			to_chat(user, "<span class='warning'>There is already a cell in the charger!</span>")
 			return
+		if (is_type_in_list(W, blacklistcells))
+			to_chat(user, "<span class='warning'>You cannot fit that there!</span>")
+			return	
 		else
 			var/area/a = loc.loc // Gets our locations location, like a dream within a dream
 			if(!isarea(a))

@@ -1,3 +1,28 @@
+//PARTS
+/datum/crafting_recipe/compressedpowder
+	name = "Compressed blackpowder"
+	result = /obj/item/stack/ore/blackpowder
+	time = 5
+	reqs = list(/datum/reagent/blackpowder = 50)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+
+/datum/crafting_recipe/fuze
+	name = "Fuze"
+	result = /obj/item/crafting/fuze
+	time = 5
+	reqs = list(/obj/item/stack/sheet/cloth = 5)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+
+/datum/crafting_recipe/metaltube
+	name = "Metal Tube"
+	result = /obj/item/crafting/tube
+	time = 5
+	reqs = list(/obj/item/stack/crafting/goodparts = 5)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+
 //REGULAR THROWABLES
 /datum/crafting_recipe/throwing_knife
 	name = "Throwing Knife"
@@ -52,26 +77,17 @@ datum/crafting_recipe/tomahawk
 	category =  CAT_THROWABLE
 	subcategory = CAT_REGULAR
 
-//GUNPOWDER
-/datum/crafting_recipe/compressedpowder
-	name = "Compressed blackpowder"
-	result = /obj/item/stack/ore/blackpowder
-	time = 5
-	reqs = list(/datum/reagent/blackpowder = 50)
-	category = CAT_THROWABLE
-	subcategory = CAT_EXPLOSIVE
-
 //GHETTO
 
+// Can acquire without book
 /datum/crafting_recipe/explosive/molotov
 	name = "Molotov Cocktail"
 	result = /obj/item/reagent_containers/food/drinks/bottle/molotov
 	reqs = list(/obj/item/reagent_containers/rag = 1,
 				/obj/item/reagent_containers/food/drinks/bottle = 1)
-	time = 2 SECONDS
+	time = 5 SECONDS
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
-	always_availible = FALSE
 
 /datum/crafting_recipe/explosive/firebomb
 	name = "Firebomb"
@@ -81,11 +97,10 @@ datum/crafting_recipe/tomahawk
 				/obj/item/assembly/igniter = 1,
 				/obj/item/stack/sheet/metal = 5,
 				/obj/item/reagent_containers/food/drinks/bottle = 1)
-	time = 30
+	time = 10 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
-	always_availible = FALSE
 
 /datum/crafting_recipe/explosive/coffeepotbomb
 	name = "Coffeepot Bomb"
@@ -94,11 +109,25 @@ datum/crafting_recipe/tomahawk
 				/obj/item/crafting/coffee_pot = 1,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/timer = 1,)
-	time = 30
+	time = 15 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
-	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/pipebomb
+	name = "Pipebomb"
+	result = /obj/item/grenade/homemade/pipebomb
+	reqs = list(/datum/reagent/blackpowder = 40,
+				/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/crafting/tube = 1,
+				/obj/item/crafting/fuze = 1)
+	time = 20 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+
+// Require book
 
 /datum/crafting_recipe/explosive/dynamite
 	name = "Dynamite Stick"
@@ -106,23 +135,106 @@ datum/crafting_recipe/tomahawk
 	reqs = list(/datum/reagent/blackpowder = 70,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/cable_coil = 1,
-				/obj/item/stack/sheet/cloth = 1)
-	time = 30
+				/obj/item/crafting/tube = 1,
+				/obj/item/crafting/fuze = 1)
+	time = 20 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
 	always_availible = FALSE
 
-/datum/crafting_recipe/explosive/pipebomb
-	name = "Pipebomb"
-	result = /obj/item/grenade/homemade/pipebomb
-	reqs = list(/datum/reagent/blackpowder = 80,
-				/obj/item/stack/sheet/metal = 15,
+/datum/crafting_recipe/explosive/frag
+	name = "Fragmentation Grenade"
+	result = /obj/item/grenade/f13/frag
+	reqs = list(/datum/reagent/blackpowder = 50,
+				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/goodparts = 3,
 				/obj/item/stack/cable_coil = 1,
-				/obj/item/stack/sheet/cloth = 1)
-	time = 30
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
 	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/explosive
+	name = "High-Explosive Grenade (Gunpowder)"
+	result = /obj/item/grenade/f13/explosive
+	reqs = list(/datum/reagent/blackpowder = 160,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/nitro
+	name = "High-Explosive Grenade (Nitroglyceryn)"
+	result = /obj/item/grenade/f13/explosive
+	reqs = list(/datum/reagent/nitroglycerin = 80,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/flashbang
+	name = "Flashbang"
+	result = /obj/item/grenade/flashbang
+	reqs = list(/datum/reagent/flash_powder = 60,
+				/datum/reagent/sonic_powder = 60,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/emp
+	name = "Pulse Grenade"
+	result = /obj/item/grenade/empgrenade
+	reqs = list(/datum/reagent/teslium = 120,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/c4
+	name = "Plastic Explosive"
+	result = /obj/item/grenade/plastic/c4
+	reqs = list(/datum/reagent/blackpowder = 90,
+				/datum/reagent/nitroglycerin = 30,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/stack/sheet/plastic = 5,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/crafting/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+//
