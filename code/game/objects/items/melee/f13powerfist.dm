@@ -115,6 +115,7 @@
 /obj/item/melee/unarmed/brass/spiked
 	name = "spiked knuckes"
 	desc = "Unlike normal brass knuckles, these have a metal plate across the knuckles with four spikes on, one for each knuckle. So not only does the victim feel the force of the punch, but also the devastating effects of spikes being driven in."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "spiked"
 	item_state = "spiked"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -126,6 +127,7 @@
 /obj/item/melee/unarmed/sappers
 	name = "sappers"
 	desc = "Lead filled gloves which are ideal for beating the crap out of opponents."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "sapper"
 	item_state = "sapper"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -139,6 +141,7 @@
 /obj/item/melee/unarmed/tigerclaw
 	name = "tiger claws"
 	desc = "Gloves with short claws built into the palms."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "tiger_claw"
 	item_state = "tiger_claw"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -155,6 +158,7 @@
 /obj/item/melee/unarmed/bladed
 	name = "bladed gauntlet"
 	desc = "A weapon composed of a thick, reinforced leather armband with three crude, jagged blades made from scrap metal bound to it with leather straps."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "bladed_g"
 	item_state = "bladed_g"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -173,6 +177,7 @@
 /obj/item/melee/unarmed/lacerator
 	name = "lacerator"
 	desc = "Leather gloves with razor blades built into the back of the hand."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "lacerator"
 	item_state = "lacerator"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -189,6 +194,7 @@
 /obj/item/melee/unarmed/maceglove
 	name = "mace glove"
 	desc = "Weighted metal gloves that are covered in spikes.  Don't expect to grab things with this."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "mace_glove"
 	item_state = "mace_glove"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -204,6 +210,7 @@
 /obj/item/melee/unarmed/punchdagger
 	name = "punch dagger"
 	desc = "A dagger designed to be gripped in the user�s fist with the blade protruding between the middle and ring fingers, to increase the penetration of a punch."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "punch_dagger"
 	item_state = "punch_dagger"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -244,6 +251,7 @@ obj/item/melee/unarmed/punchdagger/cyborg
 /obj/item/melee/powerfist/moleminer
 	name = "mole miner gauntlet"
 	desc = "A hand-held mining and cutting implement, repurposed into a deadly melee weapon.  Its name origins are a mystery..."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "mole_miner_g"
 	item_state = "mole_miner_g"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -263,6 +271,7 @@ obj/item/melee/unarmed/punchdagger/cyborg
 /obj/item/melee/powerfist/moleminer/goliath
 	name = "Goliath"
 	desc = "Armored gauntlet with a piston-powered ram, this one is a experimental one captured and named by the Legion."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
