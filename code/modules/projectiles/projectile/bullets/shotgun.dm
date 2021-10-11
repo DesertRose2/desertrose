@@ -192,7 +192,7 @@ Snowflake Rounds (Fire, meteor,etc)				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/pellet/magnum_buckshot
 	name = "magnum buckshot pellet"
-	damage = 13
-	armour_penetration = 0.17
+	damage = 11
+	armour_penetration = 0.1
 	wound_bonus = 10
 	bare_wound_bonus = 10
