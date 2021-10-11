@@ -106,7 +106,7 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MISC
 	subcategory = CAT_TOOL
-
+/* Not used
 /datum/crafting_recipe/lockpick_basic
 	name = "Beginner Lockpick Set"
 	result = /obj/item/lockpick_set
@@ -134,3 +134,4 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MISC
 	subcategory = CAT_TOOL
+*/
