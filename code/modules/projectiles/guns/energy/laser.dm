@@ -361,6 +361,7 @@
 	icon_state = "lasercw"
 	item_state = "rcw"
 	fire_delay = 3
+	burst_shot_delay = 2
 	burst_size = 2
 
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
