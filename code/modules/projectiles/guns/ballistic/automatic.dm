@@ -51,8 +51,8 @@
 /obj/item/gun/ballistic/automatic/update_overlays()
 	. = ..()
 	if(automatic_burst_overlay)
-	if(!select)
-		. += "[initial(icon_state)]semi"
+		if(!select)
+			. += "[initial(icon_state)]semi"
 		if(!select == 1)
 			. += "[initial(icon_state)]burst"
 
