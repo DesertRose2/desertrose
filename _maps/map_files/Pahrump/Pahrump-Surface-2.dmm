@@ -497,17 +497,10 @@
 /area/f13/legion)
 "abr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/wooden,
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
 	},
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
-/obj/item/clothing/under/f13/legskirt,
+/obj/machinery/vending/faction/leg,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "abs" = (
@@ -4307,6 +4300,15 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"bFs" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/vending/faction/ncr,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "bFA" = (
 /obj/structure/rack,
 /obj/item/storage/bag/plants,
@@ -19867,6 +19869,12 @@
 "imv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/f13/wood,
+/area/f13/city)
+"imI" = (
+/obj/machinery/vending/faction/vtcc,
+/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
+	dir = 9
+	},
 /area/f13/city)
 "imT" = (
 /obj/machinery/vending/cigarette,
@@ -59492,7 +59500,7 @@ yiF
 yiF
 yiF
 yiF
-ykp
+imI
 lUt
 nun
 nun
@@ -60073,7 +60081,7 @@ kzs
 jGz
 kzs
 dsn
-sHu
+bFs
 ffz
 kzs
 kzs
