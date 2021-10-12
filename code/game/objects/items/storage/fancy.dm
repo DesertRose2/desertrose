@@ -130,7 +130,7 @@
 	name = "\improper Clipper Ship packet"
 	desc = "The most popular brand of cigarettes, sponsors of the Olympics."
 	icon = 'icons/obj/cigarettes.dmi'
-	icon_state = "cig"
+	icon_state = "clippership"
 	item_state = "clippership"
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
