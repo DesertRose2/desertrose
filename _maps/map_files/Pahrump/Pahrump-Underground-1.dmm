@@ -6871,19 +6871,11 @@
 /area/f13/tunnel)
 "fuc" = (
 /obj/structure/rack,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 6
 	},
+/obj/item/clothing/suit/bomb_suit/security,
+/obj/item/clothing/head/bomb_hood/security,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -24663,13 +24655,11 @@
 	},
 /area/f13/tunnel)
 "thp" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/bomb_suit/security,
-/obj/item/clothing/head/bomb_hood/security,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/faction/bos,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},

@@ -1,5 +1,5 @@
 /obj/machinery/vending/wallmed
-	name = "\improper NanoMed"
+	name = "\improper Arktos Pharma Company Vendor"
 	desc = "Wall-mounted Medical Equipment dispenser."
 	icon_state = "wallmed"
 	icon_deny = "wallmed-deny"
@@ -27,7 +27,7 @@
 	tiltable = FALSE
 
 /obj/item/vending_refill/wallmed
-	machine_name = "NanoMed"
+	machine_name = "Arktos Pharma Company Vendor"
 	icon_state = "refill_medical"
 
 /obj/machinery/vending/wallmed/pubby
