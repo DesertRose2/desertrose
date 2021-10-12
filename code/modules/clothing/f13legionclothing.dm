@@ -166,6 +166,13 @@
 	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of Caesar's Legion."
 	icon_state = "legion_helmet"
 
+//LM/LC
+/obj/item/clothing/head/hooded/cloakhood/f13/acolyte
+	name = "acolyte hood"
+	desc = "(I) The hood of the Acolyte, pulled over the wearer's head to shroud the Alcolyte in Mars' will and path so they may see it.."
+	icon_state = "acolyte"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+
 //Why are these a thing
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "legion veteran decan helmet"
@@ -322,6 +329,23 @@
 	name = "reinforced Legion combat armor"
 	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of Caesar's Legion."
 	icon_state = "legion_armor_mk2"
+
+//LM/LC
+/obj/item/clothing/suit/hooded/f13/acolyte
+	name = "acolyte robe"
+	desc = "(I) Those who wear the garmets have been chosen by a Priestess of Mars to work under them. Made of fine cloth and stitched carefully, this shows everyone that you are on the Mars' path."
+	icon_state = "acolyte"
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/acolyte
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+
+/obj/item/clothing/suit/f13/legion/praetorian
+	name = "legion praetorian armor"
+	desc = "(VIII) The armor worn by Praetorian Guards of the Legion. Hand-picked by the highest officials to wear this."
+	icon_state = "legprae"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list("tier" = 8, "energy" = 40, "bomb" = 45, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+
 //Why does this exiiiiiiiiiiiiist
 /obj/item/clothing/suit/armor/f13/legion/heavy
 	name = "legion veteran decan armor"
