@@ -934,20 +934,6 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	var/list/Loot = list() //List of items
 
-/obj/item/salvage/low
-	name = "Pre-war salvage"
-	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
-	icon_state = "salvage"
-	Loot = list(/obj/item/stack/crafting/metalparts/five,
-				/obj/item/stack/ore/blackpowder/two,
-				/obj/item/stack/crafting/electronicparts/three,
-				/obj/item/stack/sheet/metal/ten,
-				/obj/item/stack/sheet/cloth/five,
-				/obj/item/stack/sheet/leather/five,
-				/obj/item/stock_parts/cell/ammo/ec,
-				/obj/item/stack/crafting/goodparts
-				)
-
 /obj/item/salvage/crafting
 	name = "salvaged components"
 	desc = "Some salvaged components, it could contain some useful materials if dissasembled using a workbench..."
@@ -958,9 +944,7 @@
 				/obj/item/crafting/fuse,
 				/obj/item/crafting/resistor,
 				/obj/item/crafting/switch_crafting,
-				/obj/item/crafting/bulb,
 				/obj/item/crafting/board,
-				/obj/item/crafting/buzzer,
 				/obj/item/crafting/frame,
 				/obj/item/crafting/small_gear,
 				/obj/item/crafting/large_gear,
@@ -969,11 +953,22 @@
 				/obj/item/crafting/wonderglue,
 				/obj/item/crafting/turpentine,
 				/obj/item/crafting/abraxo,
-				/obj/item/crafting/igniter,
-				/obj/item/crafting/timer,
-				/obj/item/crafting/sensor,
-				/obj/item/crafting/lunchbox)
+				/obj/item/crafting/lunchbox
+				)
 
+/obj/item/salvage/low
+	name = "Pre-war salvage"
+	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
+	icon_state = "salvage"
+	Loot = list(/obj/item/stack/sheet/metal/ten,			
+				/obj/item/stack/sheet/cloth/five,
+				/obj/item/stack/sheet/leather/five,
+				/obj/item/stack/ore/blackpowder/two,
+				/obj/item/stack/crafting/metalparts/five,
+				/obj/item/stack/crafting/goodparts,
+				/obj/item/stack/crafting/electronicparts/three,
+				/obj/item/crafting/tube
+				)
 
 /obj/item/salvage/high
 	name = "Advanced pre-war salvage"
@@ -985,11 +980,11 @@
 				/obj/item/advanced_crafting_components/alloys,
 				/obj/item/advanced_crafting_components/flux,
 				/obj/item/advanced_crafting_components/lenses,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/weldingtool/advanced,
 				/obj/item/advanced_crafting_components/conductors,
-				/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/stock_parts/cell/ammo/ecp,)
+				/obj/item/crafting/grenade_casing,
+				/obj/item/crafting/servo,
+				/obj/item/weldingtool/advanced
+				)
 
 /obj/item/experimental
 	name = "Servo repair kit"
@@ -1092,19 +1087,19 @@
 
 	var/obj/item/item
 
-	var/list/vhigh = list(/obj/item/melee/powerfist, /obj/item/nullrod/claymore/chainsaw_sword)
+	var/list/vhigh = list(/obj/item/melee/powerfist, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/twohanded/thermic_lance)
 
 	var/list/high = list(/obj/item/shishkebabpack, /obj/item/gun/energy/gammagun, /obj/item/clothing/suit/armor/f13/sulphitearmor,
 	/obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/melee/powerfist/moleminer, /obj/item/circuitboard/machine/chem_master,
 	/obj/item/circuitboard/machine/cell_charger)
 
 	var/list/mid = list(/obj/item/twohanded/fireaxe/bmprsword, /obj/item/twohanded/sledgehammer, /obj/item/shield/makeshift,/obj/item/gun/ballistic/automatic/autopipe,
-	/obj/item/gun/ballistic/rifle/lasmusket, /obj/item/gun/ballistic/rifle/plasmacaster, /obj/item/clothing/suit/armor/f13/metalarmor,
+	/obj/item/grenade/homemade/dynamite, /obj/item/clothing/suit/armor/f13/metalarmor, /obj/item/gun/ballistic/rifle/mosin, /obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/clothing/head/helmet/f13/raider/eyebot, /obj/item/clothing/head/helmet/knight/f13/metal/reinforced)
 
-	var/list/low = list(/obj/item/gun/ballistic/revolver/zipgun,/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
+	var/list/low = list(/obj/item/gun/ballistic/rifle/lasmusket,/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
 	/obj/item/clothing/suit/armor/f13/slam, /obj/item/clothing/suit/armor/f13/raider/raidermetal,/obj/item/clothing/head/helmet/f13/raidermetal,
-	/obj/item/clothing/head/helmet/knight/f13/metal, /obj/item/melee/unarmed/punchdagger)
+	/obj/item/clothing/head/helmet/knight/f13/metal, /obj/item/gun/ballistic/rifle/plasmacaster)
 
 	if(prob(60))
 		item = pick(low)

@@ -107,6 +107,7 @@
 		return TRUE
 
 	if (is_type_in_list(I, blacklistchems))
+		to_chat(user, "<span class='warning'>You cannot fit that there!</span>")
 		return
 
 	if (istype(I, /obj/item/reagent_containers) && !(I.item_flags & ABSTRACT) && I.is_open_container())

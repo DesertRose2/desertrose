@@ -373,6 +373,7 @@
 	attachment_max = 1
 	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 3
+	burst_shot_delay = 2
 	burst_size = 2
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)

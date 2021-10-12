@@ -486,7 +486,7 @@
 		if(0)
 			select = 2
 			burst_size = 4
-			spread += 12
+			spread = 12
 			fire_delay = 4.5
 			recoil = 0.5
 			extra_damage = 0
@@ -495,7 +495,7 @@
 		if(1)
 			select = 1
 			burst_size = 2
-			spread += 8
+			spread = 8
 			fire_delay = 3.5
 			recoil = 0.3
 			extra_damage = 2
@@ -1120,7 +1120,7 @@
 			select = 1
 			burst_size = 2
 			extra_damage = -3
-			spread += 10
+			spread += 5
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
