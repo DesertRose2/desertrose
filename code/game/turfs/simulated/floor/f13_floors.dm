@@ -108,6 +108,43 @@
 	icon = 'icons/turf/f13road.dmi'
 	icon_state = "outermiddle"
 
+// Rooftops, enjoy
+
+/turf/open/floor/plating/f13/outside/roof
+	name = "\proper rooftop"
+	desc = "It's a roof. What more do you want?"
+	icon = 'icons/turf/f13rooftop.dmi'
+	icon_state = "brick_1"
+
+/turf/open/floor/plating/f13/outside/roof/red
+	icon_state = "brick_r"
+
+/turf/open/floor/plating/f13/outside/roof/blue
+	icon_state = "brick_b"
+
+/turf/open/floor/plating/f13/outside/roof/metal
+	name = "\proper metal roof"
+	icon_state = "rust_1"
+
+/turf/open/floor/plating/f13/outside/roof/metal/verdigris
+	icon_state = "rust_c"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated
+	icon_state = "shingles_1"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated/red
+	icon_state = "shingles_r"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated/green
+	icon_state = "shingles_g"
+
+/turf/open/floot/plating/f13/outside/roof/wood
+	name = "\proper wooden roof"
+	icon_state = "wood_1"
+
+/turf/open/floot/plating/f13/outside/roof/wood/old
+	icon_state = "wood_2"
+
 //New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
 
 /turf/open/floor/wood/f13
@@ -219,7 +256,7 @@
 	icon_state = "graveledge"
 
 /turf/open/floor/plating/f13/inside/gravel/corner
-	icon_state = "gravelcorner"	
+	icon_state = "gravelcorner"
 
 #define SHROOM_SPAWN	1
 
