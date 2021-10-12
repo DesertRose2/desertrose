@@ -138,11 +138,11 @@
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/green
 	icon_state = "shingles_g"
 
-/turf/open/floot/plating/f13/outside/roof/wood
+/turf/open/floor/plating/f13/outside/roof/wood
 	name = "\proper wooden roof"
 	icon_state = "wood_1"
 
-/turf/open/floot/plating/f13/outside/roof/wood/old
+/turf/open/floor/plating/f13/outside/roof/wood/old
 	icon_state = "wood_2"
 
 //New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
