@@ -2292,6 +2292,13 @@
 			return
 
 		show_individual_logging_panel(M, href_list["log_src"], href_list["log_type"])
+
+	else if(href_list["adminrecall"])
+		if(!check_rights(R_ADMIN))
+			return
+			
+		SSshuttle.emergency.cancel()
+
 	else if(href_list["languagemenu"])
 		if(!check_rights(R_ADMIN))
 			return
