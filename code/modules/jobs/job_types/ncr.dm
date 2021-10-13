@@ -141,7 +141,6 @@ Captain
 
 /datum/outfit/loadout/captscout
 	name = "Scout Officer"
-	head = 		/obj/item/clothing/head/beret/ncr_scout
 	belt = 		/obj/item/storage/belt/military/NCR_Bandolier
 	l_hand = 	/obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
@@ -403,7 +402,6 @@ Sergeant
 /datum/outfit/loadout/serlight
 	name = "Sharpshooter"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle/reinforced
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
@@ -480,7 +478,6 @@ Corporal
 /datum/outfit/loadout/corplight
 	name = "Sharpshooter"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout/mantle
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
@@ -694,7 +691,6 @@ Trooper
 /datum/outfit/loadout/trooplight
 	name = "Sharpshooter"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout
 	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=3,
@@ -931,7 +927,7 @@ Veteran Ranger
 	name = "NCR Ranger Sergeant"
 	jobtype = /datum/job/ncr/f13rangersergeant
 	id = 			/obj/item/card/id/dogtag/ncrranger
-	uniform = 		/obj/item/clothing/under/f13/ranger/trail
+	uniform = 		/obj/item/clothing/under/f13/ranger
 	head =			/obj/item/clothing/head/f13/ranger/sergeant
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	suit =			/obj/item/clothing/suit/armor/f13/rangercombat/sergeant
@@ -982,7 +978,7 @@ Veteran Ranger
 	name = "NCR Ranger"
 	jobtype = /datum/job/ncr/f13ranger
 	id = 			/obj/item/card/id/dogtag/ncrranger
-	uniform = 		/obj/item/clothing/under/f13/ranger/trail
+	uniform = 		/obj/item/clothing/under/f13/ranger
 	head =			/obj/item/clothing/head/f13/trailranger
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
@@ -1020,7 +1016,6 @@ Veteran Ranger
 	name = "Patrol Ranger"
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	head = /obj/item/clothing/head/f13/ranger
-	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	gloves = /obj/item/clothing/gloves/patrol
 	backpack_contents = list(
@@ -1034,7 +1029,6 @@ Veteran Ranger
 	name = "Medic Ranger"
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	head = /obj/item/clothing/head/f13/ranger
-	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol
@@ -1052,7 +1046,6 @@ Veteran Ranger
 	name = "Engineer Ranger"
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	head = /obj/item/clothing/head/f13/ranger
-	uniform = /obj/item/clothing/under/f13/ranger/patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr/engineer
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	gloves = /obj/item/clothing/gloves/patrol/insulated
