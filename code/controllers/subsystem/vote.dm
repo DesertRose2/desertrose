@@ -378,16 +378,8 @@ SUBSYSTEM_DEF(vote)
 					if(C)
 						C.post_status("shuttle") // austation end
 	if(restart)
-		var/active_admins = 0
-		for(var/client/C in GLOB.admins)
-			if(!C.is_afk() && check_rights_for(C, R_ADMIN))
-				active_admins = 1
-				break
-		if(!active_admins)
-			SSshuttle.emergency.request()
-		else
-			to_chat(world, "<span style='boldannounce'>Notice:Restart vote will not restart the server automatically because there are active admins on.</span>")
-			message_admins("A restart vote has passed, but there are active admins on with +admin, so it has been canceled. If you wish, you may restart the server.")
+		SSshuttle.emergency.request()
+		message_admins("A restart vote has passed and the train has been automatically called. [ADMIN_RECALL(src)]")
 
 	return .
 
