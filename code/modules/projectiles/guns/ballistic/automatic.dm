@@ -192,6 +192,29 @@
 	suppressed = 1
 	untinkerable = TRUE
 
+/obj/item/gun/ballistic/automatic/smg/smg22/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 0
+			burst_size = 2
+			spread = 6
+			fire_delay += 1
+			recoil = 0.1
+			extra_damage = -1
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(1)
+			select = 1
+			burst_size = 4
+			spread += 6
+			fire_delay += 1
+			recoil = 0.25
+			extra_damage = -2
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
+
 //PPSH-41			Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
 /obj/item/gun/ballistic/automatic/smg/pps
 	name = "PPSH-41"
@@ -215,9 +238,9 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 2
+			select = 0
 			burst_size = 2
-			spread += 11
+			spread = 8
 			fire_delay += 1
 			recoil = 0.1
 			extra_damage = -1
@@ -225,19 +248,11 @@
 		if(1)
 			select = 1
 			burst_size = 4
-			spread += 11
+			spread += 10
 			fire_delay += 1
 			recoil = 0.25
 			extra_damage = -2
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(2)
-			select = 0
-			burst_size = 1
-			spread -= 22
-			fire_delay -= 2
-			recoil = 0
-			extra_damage = 0
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -274,14 +289,14 @@
 		if(0)
 			select = 1
 			burst_size += 1
-			spread += 11
+			spread += 10
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
-			spread -= 11
+			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -308,6 +323,29 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
+
+/obj/item/gun/ballistic/automatic/smg/pps/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 0
+			burst_size = 1
+			spread = 0
+			fire_delay = 2.5
+			recoil = 0.1
+			extra_damage = 0
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(1)
+			select = 1
+			burst_size = 3
+			spread += 8
+			fire_delay += 1
+			recoil = 0.25
+			extra_damage = -1
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
 
 //Carl Gustaf			Keywords: 10mm, Automatic, 12/24 round mags.
 //Was intended for Legion replacement to Uzis/10mm SMGs. No current implementation.
@@ -486,7 +524,7 @@
 		if(0)
 			select = 2
 			burst_size = 4
-			spread = 12
+			spread += 12
 			fire_delay = 4.5
 			recoil = 0.5
 			extra_damage = 0
@@ -495,7 +533,7 @@
 		if(1)
 			select = 1
 			burst_size = 2
-			spread = 8
+			spread += 8
 			fire_delay = 3.5
 			recoil = 0.3
 			extra_damage = 2
@@ -1120,7 +1158,7 @@
 			select = 1
 			burst_size = 2
 			extra_damage = -3
-			spread += 5
+			spread += 10
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
