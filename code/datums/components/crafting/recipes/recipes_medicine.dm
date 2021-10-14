@@ -45,7 +45,7 @@
 	time = 30
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
-				/obj/item/reagent_containers/food/drinks/bottle/sunset = 1
+				/obj/item/reagent_containers/food/drinks/bottle = 1
 				)
 	category = CAT_MEDICAL
 
@@ -67,6 +67,21 @@
 				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 1)
 	time = 45
 	category = CAT_MEDICAL
+
+/datum/crafting_recipe/zombiepoultice
+	name = "Zombie poultice"
+	result = /obj/item/reagent_containers/pill/patch/poultice_zombie
+	reqs = list(/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+				/datum/reagent/medicine/bicaridine = 20,
+				/datum/reagent/medicine/salglu_solution = 15,
+				/obj/item/stack/medical/bone_gel/hydra = 2)
+	time = 45
+	category = CAT_MEDICAL
+	always_availible = FALSE
+	blacklist = list(
+					/obj/item/reagent_containers/pill/patch/healingpowder,
+					/obj/item/reagent_containers/pill/patch/poultice_zombie
+					)
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
@@ -148,7 +163,7 @@
 
 /datum/crafting_recipe/hydra
 	name = "Hydra"
-	result = /obj/item/reagent_containers/pill/patch/hydra
+	result = /obj/item/stack/medical/bone_gel/hydra
 	reqs = list(/datum/reagent/consumable/nuka_cola = 10,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 4,
 				/obj/item/reagent_containers/food/snacks/grown/broc = 3,

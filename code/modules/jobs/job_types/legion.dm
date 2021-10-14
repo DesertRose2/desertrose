@@ -27,9 +27,12 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionhelmsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/dynamite)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/zombiepoultice)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
@@ -1109,7 +1112,7 @@ Auxilia
 		/obj/item/cautery=1,
 		/obj/item/surgical_drapes=1,
 		/obj/item/stack/sticky_tape/surgical=2,
-		/obj/item/stack/medical/bone_gel=2,
+		/obj/item/stack/medical/bone_gel/hydra=2,
 		/obj/item/bonesetter=1
 	)
 

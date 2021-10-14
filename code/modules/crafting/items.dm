@@ -1028,7 +1028,7 @@
 /obj/item/experimental/proc/parmor(obj/item/W, mob/user)
 	var/obj/item/clothing/suit/armor/f13/power_armor/A = W
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
-	if(prob(20))
+	if(prob(35))
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))//ups raider to salvaged
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
@@ -1041,17 +1041,11 @@
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
 			return
-	if(prob(10))
-		qdel(A)
-		to_chat(user,"You ruin the armor completely, destroying it in the process...")
-	if(prob(5))
-		qdel(A)
-		to_chat(user,"You ruin the armor completely, destroying it in the process...")
 	qdel(src)
 
 /obj/item/experimental/proc/pahat(obj/item/W, mob/user)
 	var/obj/item/clothing/head/helmet/f13/power_armor/H = W
-	if(prob(20))
+	if(prob(30))
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm))//ups raider to salvaged
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
@@ -1064,12 +1058,6 @@
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
 			return
-	if(prob(10))
-		qdel(H)
-		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
-	if(prob(5))
-		qdel(H)
-		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
 	qdel(src)
 
 /obj/item/invention

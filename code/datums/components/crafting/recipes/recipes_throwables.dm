@@ -23,6 +23,24 @@
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
 
+/datum/crafting_recipe/grenadebeaker
+	name = "Grenade Beaker"
+	result = /obj/item/reagent_containers/glass/beaker/bomb
+	time = 5
+	reqs = list(/obj/item/reagent_containers/glass/beaker = 2,
+				/obj/item/stack/cable_coil = 2
+				)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	blacklist = list(
+					/obj/item/reagent_containers/glass/beaker/bomb,
+					/obj/item/reagent_containers/glass/beaker/large,
+					/obj/item/reagent_containers/glass/beaker/plastic,
+					/obj/item/reagent_containers/glass/beaker/meta,
+					/obj/item/reagent_containers/glass/beaker/noreact,
+					/obj/item/reagent_containers/glass/beaker/bluespace
+					)
+
 //REGULAR THROWABLES
 /datum/crafting_recipe/throwing_knife
 	name = "Throwing Knife"
@@ -108,7 +126,7 @@ datum/crafting_recipe/tomahawk
 	reqs = list(/datum/reagent/blackpowder = 50,
 				/obj/item/crafting/coffee_pot = 1,
 				/obj/item/stack/cable_coil = 1,
-				/obj/item/crafting/timer = 1,)
+				/obj/item/assembly/timer = 1,)
 	time = 15 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -143,6 +161,19 @@ datum/crafting_recipe/tomahawk
 	subcategory = CAT_EXPLOSIVE
 	always_availible = FALSE
 
+/datum/crafting_recipe/explosive/chemical
+	name = "Chemical Grenade"
+	result = /obj/item/grenade/chem_grenade
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/crafting/goodparts = 6,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/crafting/abraxo = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
 /datum/crafting_recipe/explosive/frag
 	name = "Fragmentation Grenade"
 	result = /obj/item/grenade/f13/frag
@@ -152,7 +183,7 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -167,7 +198,7 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -182,7 +213,7 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -198,7 +229,22 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
+
+/datum/crafting_recipe/explosive/smoke
+	name = "Smoke Grenade"
+	result = /obj/item/grenade/smokebomb
+	reqs = list(/datum/reagent/smoke_powder = 100,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -213,7 +259,7 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -230,11 +276,24 @@ datum/crafting_recipe/tomahawk
 				/obj/item/stack/sheet/plastic = 5,
 				/obj/item/crafting/grenade_casing = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/crafting/timer = 1)
+				/obj/item/assembly/timer = 1)
 	time = 30 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
 	always_availible = FALSE
 
+/datum/crafting_recipe/explosive/c4chem
+	name = "Plastic Explosive (Chemical Payload)"
+	result = /obj/item/bombcore/chemical
+	reqs = list(/obj/item/grenade/plastic/c4 = 1,
+				/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/glass = 5,
+				/obj/item/crafting/tube = 2,
+				/obj/item/crafting/grenade_casing = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_THROWABLE
+	subcategory = CAT_EXPLOSIVE
+	always_availible = FALSE
 //
