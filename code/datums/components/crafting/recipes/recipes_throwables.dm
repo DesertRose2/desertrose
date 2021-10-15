@@ -126,8 +126,7 @@ datum/crafting_recipe/tomahawk
 				/obj/item/crafting/coffee_pot = 1,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/timer = 1)
-
-  time = 15 SECONDS
+	time = 15 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
 	subcategory = CAT_EXPLOSIVE
