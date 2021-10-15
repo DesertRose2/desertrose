@@ -450,7 +450,8 @@
 						"novaskelly",
 						"alasania",
 						"jackmcintyre",
-						"deathlysoul")
+						"deathlysoul",
+						"brainbodger")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -496,7 +497,8 @@
 	ckeywhitelist = list("hawkwestheimer",
 						 "theneworleans",
 						 "ollieoxen",
-						 "cythisia")
+						 "cythisia",
+						 "landoorando")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -588,7 +590,9 @@
 						"yecrowbarman",
 						"totallyinnocent",
 						"deathlysoul",
-						"kayzach")
+						"kayzach",
+						"brainbodger",
+						"landoorando")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
