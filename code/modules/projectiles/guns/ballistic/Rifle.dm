@@ -89,8 +89,8 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/rifle/boltaction
-	name = "Mosin Nagant"
-	desc = "This piece of junk looks like something that could have been used 700 years ago. It feels slightly moist."
+	name = "bolt action template"
+	desc = "If you see this - cry to a coder. Something's wrong."
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
 	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
@@ -171,6 +171,8 @@
 /obj/item/gun/ballistic/rifle/automatic/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
 	..()
 	src.pump(user)
+
+
 
 /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
 	name = "Cowboy repeater"
