@@ -302,6 +302,17 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
+	
+/datum/crafting_recipe/bone_arrow
+	name = "Jagged Barbed Bone Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/bone
+	time = 40
+	reqs = list(/obj/item/stack/sheet/bone = 1,
+				/obj/item/stack/sheet/sinew = 1,
+				/obj/item/stack/sheet/mineral/wood = 1)
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/arrowpoison
 	name = "Poison Arrow"
