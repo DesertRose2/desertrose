@@ -938,22 +938,22 @@
 	name = "salvaged components"
 	desc = "Some salvaged components, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "salvagecomponents"
-	Loot = list(/obj/item/crafting/diode,
-				/obj/item/crafting/transistor,
-				/obj/item/crafting/capacitor,
-				/obj/item/crafting/fuse,
-				/obj/item/crafting/resistor,
-				/obj/item/crafting/switch_crafting,
-				/obj/item/crafting/board,
-				/obj/item/crafting/frame,
-				/obj/item/crafting/small_gear,
-				/obj/item/crafting/large_gear,
-				/obj/item/crafting/duct_tape,
-				/obj/item/crafting/coffee_pot,
-				/obj/item/crafting/wonderglue,
-				/obj/item/crafting/turpentine,
-				/obj/item/crafting/abraxo,
-				/obj/item/crafting/lunchbox
+	Loot = list(/obj/item/crafting/diode = 5,
+				/obj/item/crafting/transistor = 5,
+				/obj/item/crafting/capacitor = 5,
+				/obj/item/crafting/fuse = 5,
+				/obj/item/crafting/resistor = 3,
+				/obj/item/crafting/switch_crafting = 3,
+				/obj/item/crafting/board = 5,
+				/obj/item/crafting/frame = 5,
+				/obj/item/crafting/small_gear = 1,
+				/obj/item/crafting/large_gear = 1,
+				/obj/item/crafting/duct_tape = 3,
+				/obj/item/crafting/coffee_pot = 3,
+				/obj/item/crafting/wonderglue = 1,
+				/obj/item/crafting/turpentine = 1,
+				/obj/item/crafting/abraxo = 3,
+				/obj/item/crafting/lunchbox = 1
 				)
 
 /obj/item/salvage/low
@@ -974,16 +974,16 @@
 	name = "Advanced pre-war salvage"
 	desc = "Some advanced pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "goodsalvage"
-	Loot = list(/obj/item/blueprint/research,
-				/obj/item/advanced_crafting_components/receiver,
-				/obj/item/advanced_crafting_components/assembly,
-				/obj/item/advanced_crafting_components/alloys,
-				/obj/item/advanced_crafting_components/flux,
-				/obj/item/advanced_crafting_components/lenses,
-				/obj/item/advanced_crafting_components/conductors,
-				/obj/item/crafting/grenade_casing,
-				/obj/item/crafting/servo,
-				/obj/item/weldingtool/advanced
+	Loot = list(/obj/item/blueprint/research = 5,
+				/obj/item/advanced_crafting_components/receiver = 2,
+				/obj/item/advanced_crafting_components/assembly = 2,
+				/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/advanced_crafting_components/lenses = 1,
+				/obj/item/advanced_crafting_components/conductors = 1,
+				/obj/item/crafting/grenade_casing = 3,
+				/obj/item/crafting/servo = 5 ,
+				/obj/item/weldingtool/advanced = 5
 				)
 
 /obj/item/experimental
@@ -1028,7 +1028,7 @@
 /obj/item/experimental/proc/parmor(obj/item/W, mob/user)
 	var/obj/item/clothing/suit/armor/f13/power_armor/A = W
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
-	if(prob(35))
+	if(prob(40))
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))//ups raider to salvaged
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
@@ -1045,7 +1045,7 @@
 
 /obj/item/experimental/proc/pahat(obj/item/W, mob/user)
 	var/obj/item/clothing/head/helmet/f13/power_armor/H = W
-	if(prob(30))
+	if(prob(50))
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm))//ups raider to salvaged
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)

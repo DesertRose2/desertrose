@@ -1,3 +1,11 @@
+/datum/crafting_recipe/salvage_stimpak
+	name = "Salvage injector"
+	result = /obj/item/reagent_containers/syringe
+	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 1)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/upgraded_gauze
 	name = "Improved Gauze"
 	result = /obj/item/stack/medical/gauze/adv/one
@@ -39,6 +47,7 @@
 				/datum/reagent/medicine/silver_sulfadiazine = 10)
 	category = CAT_MEDICAL
 
+//Powders/Stimpaks
 /datum/crafting_recipe/bitter
 	name = "Bitter Drink"
 	result = /obj/item/reagent_containers/pill/patch/bitterdrink
@@ -54,7 +63,23 @@
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 2)
-	time = 35
+	time = 25
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/healpowder5
+	name = "Healing powder x5"
+	result = /obj/item/storage/box/medicine/powder5
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 10,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 10)
+	time = 50
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/healpowder10
+	name = "Healing powder x10"
+	result = /obj/item/storage/box/medicine/powder10
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 20,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 20)
+	time = 50
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/healpoultice
@@ -65,7 +90,29 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 1,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 1,
 				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 1)
-	time = 45
+	time = 40
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/healpoultice5
+	name = "Healing poultice x5"
+	result = /obj/item/storage/box/medicine/poultice5
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 5,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 5,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 5,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 5,
+				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 5)
+	time = 60
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/healpoultice10
+	name = "Healing poultice x10"
+	result = /obj/item/storage/box/medicine/poultice10
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 10,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 10,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 10,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 10,
+				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 10)
+	time = 60
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/zombiepoultice
@@ -75,11 +122,12 @@
 				/datum/reagent/medicine/bicaridine = 20,
 				/datum/reagent/medicine/salglu_solution = 15,
 				/obj/item/stack/medical/bone_gel/hydra = 2)
-	time = 45
+	time = 50
 	category = CAT_MEDICAL
 	always_availible = FALSE
 	blacklist = list(
 					/obj/item/reagent_containers/pill/patch/healingpowder,
+					/obj/item/reagent_containers/pill/patch/healingpowder/custom,
 					/obj/item/reagent_containers/pill/patch/poultice_zombie
 					)
 
@@ -88,9 +136,32 @@
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 2,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 2,
 				/obj/item/reagent_containers/syringe = 1)
 	tools = list(TOOL_WORKBENCH)
-	time = 45
+	time = 40
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/stimpak5
+	name = "Stimpak x5"
+	result = /obj/item/storage/box/medicine/stimpak5
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 10,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 10,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10,
+				/obj/item/reagent_containers/syringe = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 40
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/stimpak10
+	name = "Stimpak x10"
+	result = /obj/item/storage/box/medicine/stimpak10
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 20,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 20,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 20,
+				/obj/item/reagent_containers/syringe = 10)
+	tools = list(TOOL_WORKBENCH)
+	time = 40
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/superstimpak
@@ -105,15 +176,31 @@
 	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
 
-/datum/crafting_recipe/salvage_stimpak
-	name = "Salvage injector"
-	result = /obj/item/reagent_containers/syringe
-	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 1)
-	time = 20
+/datum/crafting_recipe/superstimpak5
+	name = "Super Stimpak x5"
+	result = /obj/item/storage/box/medicine/superstimpak5
+	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 5,
+				/obj/item/stack/sheet/leather = 10,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
 	tools = list(TOOL_WORKBENCH)
+	time = 50
 	category = CAT_MEDICAL
+	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
 
+/datum/crafting_recipe/superstimpak10
+	name = "Super Stimpak x10"
+	result = /obj/item/storage/box/medicine/superstimpak10
+	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,
+				/obj/item/stack/sheet/leather = 20,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 20)
+	tools = list(TOOL_WORKBENCH)
+	time = 50
+	category = CAT_MEDICAL
+	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
 
+//Drugs
 /datum/crafting_recipe/jet
 	name = "Jet"
 	result = /obj/item/reagent_containers/pill/patch/jet
@@ -197,7 +284,7 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MEDICAL
 	always_availible = FALSE
-
+//
 /datum/crafting_recipe/extract_gaia
 	name = "Extract gaia"
 	result = /obj/item/reagent_containers/glass/bottle/gaia
