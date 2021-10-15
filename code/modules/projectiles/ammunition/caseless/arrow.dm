@@ -27,6 +27,12 @@
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/burning
 	icon_state = "arrow_burning"
 
+/obj/item/ammo_casing/caseless/arrow/bone
+	name = "jagged barbed bone arrow"
+	desc = "An arrow made of both bone and wood. This one has had its arrowhead of bone shaped into a three-pronged broadhead."
+	icon_state = "bonearrow"
+	projectile_type = /obj/item/projectile/bullet/reusable/arrow/bone
+
 //CIT ARROWS
 /obj/item/ammo_casing/caseless/arrow/wood
 	name = "wooden arrow"
@@ -37,12 +43,6 @@
 	desc = "An arrow made of wood, hardened by fire."
 	icon_state = "ashenarrow"
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow/ash
-
-/obj/item/ammo_casing/caseless/arrow/bone
-	name = "bone arrow"
-	desc = "An arrow made of bone and sinew. The tip is sharp enough to pierce through a goliath plate."
-	icon_state = "bonearrow"
-	projectile_type = /obj/item/projectile/bullet/reusable/arrow/bone
 
 /obj/item/ammo_casing/caseless/arrow/bronze
 	name = "bronze arrow"
