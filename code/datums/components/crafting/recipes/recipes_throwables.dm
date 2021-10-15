@@ -95,8 +95,7 @@ datum/crafting_recipe/tomahawk
 	reqs = list(/datum/reagent/fuel = 50,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/igniter = 1,
-				/obj/item/stack/sheet/metal = 5,
-				/obj/item/reagent_containers/food/drinks/bottle = 1)
+				/obj/item/reagent_containers/food/drinks/flask = 1)
 	time = 10 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
@@ -108,7 +107,7 @@ datum/crafting_recipe/tomahawk
 	reqs = list(/datum/reagent/blackpowder = 50,
 				/obj/item/crafting/coffee_pot = 1,
 				/obj/item/stack/cable_coil = 1,
-				/obj/item/crafting/timer = 1,)
+				/obj/item/crafting/timer = 1)
 	time = 15 SECONDS
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_THROWABLE
