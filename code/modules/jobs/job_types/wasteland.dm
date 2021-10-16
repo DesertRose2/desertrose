@@ -467,9 +467,9 @@ Outlaw
 /datum/outfit/loadout/conartist
 	name = "Con Artist"
 	suit = /obj/item/clothing/under/f13/bennys
-	l_hand = /obj/item/gun/ballistic/revolver/thatgun
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/autoloader
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
+		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/switchblade=1,
 		/obj/item/card/id/syndicate=1,
 		/obj/item/stack/f13Cash/caps/twofivezero=1,
