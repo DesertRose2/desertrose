@@ -128,6 +128,8 @@
 	icon_state = "colt6520"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6520
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	extra_damage = 3
+	fire_delay = 4
 
 //Zhurong										Keywords: UNIQUE, 10mm, Double action, 12 round cylinder
 /obj/item/gun/ballistic/revolver/zhurong
@@ -189,7 +191,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_SMALL
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
-	fire_delay = 4
+	fire_delay = 5
 
 //357 Magnum					Keywords: .357, Double action, 6 rounds cylinder
 /obj/item/gun/ballistic/revolver/colt357
@@ -198,7 +200,7 @@
 	item_state = "357colt"
 	icon_state = "357colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
-	fire_delay = 5
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 
 //Lucky							Keywords: UNIQUE, .357, Double action, 6 rounds cylinder, Block chance,
