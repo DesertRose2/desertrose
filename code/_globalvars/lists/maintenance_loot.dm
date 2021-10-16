@@ -916,11 +916,11 @@ GLOBAL_LIST_INIT(loot_craft_advanced, list(
 ))
 
 GLOBAL_LIST_INIT(loot_attachment, list(
-	/obj/item/attachments/scope,
-	/obj/item/attachments/burst_improvement,
-	/obj/item/attachments/recoil_decrease,
-	/obj/item/attachments/auto_sear,
-	/obj/item/attachments/bullet_speed
+	/obj/item/attachment/scope,
+	/obj/item/attachment/burst_improvement,
+	/obj/item/attachment/recoil_decrease,
+	/obj/item/attachment/auto_sear,
+	/obj/item/attachment/bullet_speed
 ))
 
 GLOBAL_LIST_INIT(loot_t1_blueprint, list(

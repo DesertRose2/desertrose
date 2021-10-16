@@ -25,7 +25,7 @@
 			new /obj/item/clothing/glasses/thermal/syndi(src)
 
 		if("bond") // 29 tc
-			new /obj/item/gun/ballistic/automatic/pistol/suppressed(src)
+			new /obj/item/gun/ballistic/automatic/pistol(src)
 			new /obj/item/ammo_box/magazine/m10mm(src)
 			new /obj/item/ammo_box/magazine/m10mm(src)
 			new /obj/item/clothing/under/chameleon(src)

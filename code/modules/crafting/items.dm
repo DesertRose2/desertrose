@@ -895,33 +895,33 @@
 	desc = "A general crafting part, a craftsman might want to have this."
 	icon_state = "alloys"
 
-/obj/item/attachments
+/obj/item/attachment
 	name = "attachment"
 	icon = 'icons/fallout/objects/crafting.dmi'
 	icon_state = "alloys"
 	w_class = WEIGHT_CLASS_TINY
 
-/obj/item/attachments/scope
+/obj/item/attachment/scope
 	name = "weapon optics"
 	desc = "A long-range scope, attach to a compatible weapon. Remove with a screwdriver. Makes the weapon slightly slower to fire."
 	icon_state = "scope"
 
-/obj/item/attachments/recoil_decrease
+/obj/item/attachment/recoil_decrease
 	name = "recoil compensator"
 	desc = "Improves stability and recoil, attach to a compatible weapon. Cannot be removed."
 	icon_state = "recoilcomp"
 
-/obj/item/attachments/burst_improvement
+/obj/item/attachment/burst_improvement
 	name = "burst cam"
 	desc = "Increases burst size, attach to a compatible weapon. Cannot be removed."
 	icon_state = "burstcam"
 
-/obj/item/attachments/bullet_speed
+/obj/item/attachment/bullet_speed
 	name = "extended barrel"
 	desc = "Improves bullet speed, attach to a compatible weapon. Cannot be removed."
 	icon_state = "barrel"
 
-/obj/item/attachments/auto_sear
+/obj/item/attachment/auto_sear
 	name = "auto sear"
 	desc = "A rare gun part that allows certain weapons to have select fire capabilities. Cannot be removed."
 	icon_state = "auto_sear"

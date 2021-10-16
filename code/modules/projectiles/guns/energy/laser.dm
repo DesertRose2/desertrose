@@ -134,9 +134,13 @@
 	desc = "Should not exists. Bugreport."
 	icon_state = "laser"
 	item_state = "laser"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	slowdown = 0.3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	custom_materials = list(/datum/material/iron=2000)
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun)
 	ammo_x_offset = 1
@@ -195,6 +199,8 @@
 	desc = "A Wattz 1000 Laser Pistol. Civilian model, so the wattage is lower than military or police versions. Uses small energy cells."
 	icon_state = "wattz1000"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -208,6 +214,8 @@
 	desc = "This Wattz 1000 laser pistol has been upgraded with a magnetic field targeting system that tightens the laser emission, giving this pistol extra penetrating power."
 	icon_state = "magnetowattz"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -220,13 +228,12 @@
 	desc = "A basic energy-based laser gun that fires concentrated beams of light."
 	icon_state = "AEP7"
 	item_state = "laser-pistol"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 7
-	scope_y_offset = 22
+	can_scope = FALSE
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
@@ -282,6 +289,8 @@
 	desc = "Wattz 2000 Laser Rifle. Uses micro fusion cells for more powerful lasers, and an extended barrel for additional range."
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k)
@@ -305,10 +314,9 @@
 	desc = "A sturdy and advanced military grade pre-war service laser rifle"
 	icon_state = "laser"
 	item_state = "laser-rifle9"
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
+	can_scope = FALSE
 	fire_delay = 3
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
@@ -338,6 +346,8 @@
 	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. It is usually only given to high-ranking soldiers within the Brotherhood, due to its level of technology, as well as its reputation of friendly fire."
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 3
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter)
@@ -360,10 +370,11 @@
 	desc = "A rapid-fire laser rifle modeled after the familiar \"Thompson\" SMG. It features high-accuracy burst fire that will whittle down targets in a matter of seconds."
 	icon_state = "lasercw"
 	item_state = "rcw"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	fire_delay = 3
 	burst_shot_delay = 2
 	burst_size = 2
-
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
@@ -388,10 +399,9 @@
 	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim"
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1, ATTACHMENT_SLOT_LASER_RECEIVER = 1)
+	can_scope = FALSE
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12)
@@ -405,10 +415,9 @@
 	desc = "The AER14, a successor to the AER9 and AER12, was a prototype in development before the Great War. It features an orange trim and higher firepower at the cost of slower firing rate."
 	icon_state = "aer14"
 	item_state = "laser-rifle9"
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_LASER_LENS = 1)
+	can_scope = FALSE
 	fire_delay = 3.5
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14)
@@ -422,6 +431,8 @@
 	desc = "The Laser Assister Energy Rifle is a powerful pre-war weapon developed just before the turn of the Great War. Due to its incredible rarity and unprecedented firepower, the weapon is coveted and nearly solely possesed by the Brotherhood of Steel; typically held by an Elder as a status symbol."
 	icon_state = "laer"
 	item_state = "laer"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	fire_delay = 3
 	burst_size = 1
 	equipsound = 'sound/f13weapons/equipsounds/laerequip.ogg'
@@ -440,6 +451,8 @@
 	item_state = "plasma-pistol"
 	icon_state = "plasma-pistol"
 	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires heavy low penetration plasma clots."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -453,6 +466,8 @@
 	item_state = "plasma-pistol"
 	icon_state = "glock86"
 	desc = "Glock 86 Plasma Pistol. Designed by the Gaston Glock artificial intelligence. Shoots a small bolt of superheated plasma. Powered by a small energy cell."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/glock)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -466,6 +481,8 @@
 	item_state = "plasma-pistol"
 	icon_state = "glock86a"
 	desc = "This Glock 86 plasma pistol has had its magnetic housing chamber realigned to reduce the drain on its energy cell. Its efficiency has doubled, allowing it to fire more shots before the battery is expended."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/glock/extended)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -479,6 +496,8 @@
 	icon_state = "plasma"
 	fire_delay = 4.5
 	desc = "A top of line miniaturized plasma caster built by REPCONN in the wake of the Z43-521P failure. It is supperior to all previous rifles to enter service in the USCC."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
@@ -493,6 +512,8 @@
 	fire_delay = 6
 	extra_damage = 2
 	desc = "An old-school plasma rifle that was produced by Winchester and supplied to the army as an improvment on the large caster version before REPCON's more famous urban model replaced it."
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	w_class = WEIGHT_CLASS_BULKY
@@ -511,6 +532,8 @@
 	item_state = "plasma"
 	icon_state = "plasmacarbine"
 	desc = ""
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	burst_size = 2
@@ -535,6 +558,8 @@
 	name = "Multiplas Rifle"
 	item_state = "multiplas"
 	icon_state = "multiplas"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	fire_delay = 3
 	desc = "A modified A3-20 plasma caster built by REPCONN equipped with a multicasting kit that creates multiple weaker clots."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
@@ -548,6 +573,8 @@
 	item_state = "alienblaster"
 	icon_state = "alienblaster"
 	desc = "This weapon is unlike any other you've ever seen before, and appears to be made out of metals not usually found on Earth. It certainly packs a punch, though."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/alien)
 	cell_type = /obj/item/stock_parts/cell/ammo/alien //unchargeable, but removable
 	w_class = WEIGHT_CLASS_NORMAL
@@ -559,6 +586,8 @@
 	desc = "A very crude weapon overall and appears to have been built from scavenged junk found throughout the wasteland."
 	icon_state = "gammagun"
 	item_state = "gammagun"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	ammo_type = list(/obj/item/ammo_casing/energy/gammagun)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	ammo_x_offset = 3
@@ -575,6 +604,8 @@
 	desc = "A modular pistol of native Brotherhood of Steel design. Currently using microfusion cells to fire lasers."
 	icon_state = "crusader"
 	item_state = "crusader_energy"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/crusader)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
@@ -590,6 +621,8 @@
 	item_state = "crusader"
 	icon_state = "crusader_energy"
 	desc = "A modular pistol of native Brotherhood of Steel design. Currently using microfusion cells to fire plasma."
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/crusader)
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT

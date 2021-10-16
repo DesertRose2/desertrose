@@ -307,7 +307,7 @@
 	reqs = list(/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 				/obj/item/stack/sheet/glass = 2,
 				/obj/item/stack/crafting/goodparts = 1,
-				/obj/item/suppressor = 1,
+				/obj/item/attachment/silencer = 1,
 				/obj/item/stack/sheet/plastic = 3,
 				/datum/reagent/blackpowder = 30)
 	tools = list(TOOL_AWORKBENCH)
@@ -914,7 +914,7 @@
 //////////////////////////////////
 /datum/crafting_recipe/scope
 	name = "Weapon Optics"
-	result = /obj/item/attachments/scope
+	result = /obj/item/attachment/scope
 	reqs = list(
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/glass = 3,
@@ -929,7 +929,7 @@
 
 /datum/crafting_recipe/suppressor
 	name = "suppressor"
-	result = /obj/item/suppressor
+	result = /obj/item/attachment/silencer
 	reqs = list(
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/plastic = 2,
@@ -944,7 +944,7 @@
 
 /datum/crafting_recipe/burst_improvement
 	name = "Burst Cam"
-	result = /obj/item/attachments/burst_improvement
+	result = /obj/item/attachment/burst_improvement
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/crafting/metalparts = 5,
@@ -958,7 +958,7 @@
 
 /datum/crafting_recipe/recoil_decrease
 	name = "Recoil Compensator"
-	result = /obj/item/attachments/recoil_decrease
+	result = /obj/item/attachment/recoil_decrease
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/crafting/metalparts = 5,
@@ -972,7 +972,7 @@
 
 /datum/crafting_recipe/bullet_speed
 	name = "Improved Barrel"
-	result = /obj/item/attachments/bullet_speed
+	result = /obj/item/attachment/bullet_speed
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/crafting/metalparts = 5,
@@ -986,7 +986,7 @@
 
 /datum/crafting_recipe/automatic_sear
 	name = "Automatic Sear"
-	result = /obj/item/attachments/auto_sear
+	result = /obj/item/attachment/auto_sear
 	reqs = list(
 				/obj/item/stack/sheet/metal = 8,
 				/obj/item/stack/crafting/metalparts = 8,

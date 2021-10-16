@@ -7,6 +7,8 @@
 	desc = "should not exist."
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	fire_delay = 5
 	spread = 1
 	force = 12 // Pistol whip
@@ -165,6 +167,8 @@
 	name = "Colt 6520"
 	desc = "The Colt 6520 10mm double action revolver is a highly durable weapon developed by Colt Firearms prior to the Great War. It proved to be resistant to the desert-like conditions of the post-nuclear wasteland and is a fine example of workmanship and quality construction."
 	icon_state = "colt6520"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6520
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 
@@ -200,6 +204,8 @@
 	desc = "A Colt Single Action Army retooled to accept .45 ACP catridges. A classic piece of Americana."
 	item_state = "45revolver"
 	icon_state = "45revolver"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
 	extra_damage = 5
 	fire_delay = 4
@@ -260,6 +266,8 @@
 	desc = "Being that this is the most powerful handgun in the world, and can blow your head clean-off, you've got to ask yourself one question. Do I feel lucky? Well, do ya punk? "
 	item_state = "model29"
 	icon_state = "m29"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	recoil = 0.1
@@ -376,6 +384,8 @@
 	name = "hunting revolver"
 	desc = "A scoped double action revolver chambered in 45-70."
 	icon_state = "hunting_revolver"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 	weapon_weight = WEAPON_MEDIUM
@@ -409,6 +419,8 @@
 	desc = "A large revolver that fires shotgun shells."
 	icon_state = "judge"
 	item_state = "gun"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/shotgunrevolver
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	fire_delay = 3.5

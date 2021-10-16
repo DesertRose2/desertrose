@@ -34,7 +34,7 @@
 		FlushCurrentAction()
 	else
 		DiscardCurrentAction()
-	
+
 /*
 	Standard mob ClickOn()
 	Handles exceptions: Buildmode, middle click, modified clicks, mech actions
@@ -366,7 +366,7 @@
 	return
 
 /atom/proc/CtrlShiftClick(mob/user)
-	SEND_SIGNAL(src, COMSIG_CLICK_CTRL_SHIFT)
+	SEND_SIGNAL(src, COMSIG_CLICK_CTRL_SHIFT, user)
 	return
 
 /*

@@ -511,7 +511,7 @@
 		/obj/effect/spawner/lootdrop/space_cash/no_turf = 5,
 		/obj/effect/spawner/lootdrop/druggie_pill/no_turf = 5,
 		/obj/item/storage/fancy/cigarettes/cigpack_syndicate = 5,
-		/obj/item/suppressor = 5,
+		/obj/item/attachment/silencer = 5,
 		/obj/item/toy/cards/deck/syndicate = 5,
 		/obj/item/clothing/under/syndicate = 5,
 		/obj/item/clothing/mask/gas/syndicate = 5,

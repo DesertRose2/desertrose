@@ -13,6 +13,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
@@ -94,10 +96,11 @@
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
 	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	inaccuracy_modifier = 0.5
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	knife_x_offset = 27
 	knife_y_offset = 13
 
@@ -124,6 +127,8 @@
 	desc = "A sturdy hunting rifle, chambered in .308. and in use before the war."
 	icon_state = "308"
 	item_state = "308"
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
@@ -212,6 +217,8 @@
 	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
 	icon_state = "brushgun"
 	item_state = "brushgun"
+	attachment_max = 1
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
@@ -249,13 +256,14 @@
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
 	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	attachment_max = 4
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_BARREL = 1, ATTACHMENT_SLOT_MUZZLE = 1)
 	inaccuracy_modifier = 0.5
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	can_scope = TRUE
 	scope_state = "mosin_scope"
 	scope_x_offset = 3
 	scope_y_offset = 13
-	can_bayonet = TRUE
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
@@ -274,12 +282,12 @@
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "lasmusket"
 	item_state = "lasmusket"
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_LENS = 1)
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lasmusket
-	//nocase = TRUE
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	fire_delay = 15
 	knife_x_offset = 23
 	knife_y_offset = 21
@@ -302,11 +310,12 @@
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "plasmamusket"
 	item_state = "plasmamusket"
+	attachment_max = 3
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_LENS = 1)
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/plasmacaster
 	var/bolt_open = FALSE
-	can_bayonet = TRUE
 	fire_delay = 20
 	bayonet_state = "lasmusket"
 	knife_x_offset = 23
@@ -331,6 +340,8 @@
 /obj/item/gun/ballistic/rifle/mag
 	name = "magazine fed bolt-action rifle template"
 	desc = "should not exist."
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_RAIL = 0)
 	extra_speed = 800
 
 /obj/item/gun/ballistic/rifle/mag/examine(mob/user)
@@ -368,6 +379,8 @@
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
 	icon_state = "varmint_rifle"
 	item_state = "varmintrifle"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_BARREL = 1)
 	force = 18
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
@@ -375,7 +388,6 @@
 	spread = 0
 	extra_damage = 8
 	extra_penetration = 0.1
-	can_bayonet = FALSE
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
@@ -391,6 +403,8 @@
 	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Uses .45 socom magazines."
 	icon_state = "commando"
 	item_state = "varmintrifle"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_RAIL = 1, ATTACHMENT_SLOT_BARREL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 8
 	extra_penetration = 0.1
@@ -410,6 +424,8 @@
 	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
 	icon_state = "destroyer"
 	item_state = "varmintrifle"
+	attachment_max = 2
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_RAIL = 1)
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 10
 	extra_penetration = 0.15
@@ -428,6 +444,8 @@
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
 	icon_state = "rat_slayer"
 	item_state = "ratslayer"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 0)
 	extra_damage = 7
 	extra_penetration = 0.2
 	suppressed = 1
@@ -442,6 +460,8 @@
 	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
 	icon_state = "amr"
 	item_state = "sniper"
+	attachment_max = 0
+	slot_available = list(ATTACHMENT_SLOT_SCOPE = 0)
 	mag_type = /obj/item/ammo_box/magazine/amr
 	untinkerable = TRUE
 	extra_damage = 10

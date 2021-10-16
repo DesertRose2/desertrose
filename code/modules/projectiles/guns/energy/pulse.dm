@@ -43,9 +43,6 @@
 	icon_state = "pulse_carbine"
 	item_state = null
 	cell_type = "/obj/item/stock_parts/cell/pulse/carbine"
-	can_flashlight = 1
-	flight_x_offset = 18
-	flight_y_offset = 12
 
 /obj/item/gun/energy/pulse/carbine/loyalpin
 	pin = /obj/item/firing_pin/implant/mindshield

@@ -12,7 +12,6 @@
 	icon_state = "tesla"
 	item_state = "tesla"
 	ammo_type = list(/obj/item/ammo_casing/energy/tesla_revolver)
-	can_flashlight = 0
 	pin = null
 	shaded_charge = 1
 
@@ -41,7 +40,6 @@
 	desc = "An integrated hybrid taser that draws directly from a cyborg's power cell. The one contains a limiter to prevent the cyborg's power cell from overheating."
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "taser"
-	can_flashlight = FALSE
 	can_charge = FALSE
 	selfcharge = EGUN_SELFCHARGE_BORG
 	cell_type = /obj/item/stock_parts/cell/secborg

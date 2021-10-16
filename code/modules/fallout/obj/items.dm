@@ -77,7 +77,7 @@
 	new /obj/item/ammo_box/magazine/garand308(src)
 	new /obj/item/ammo_box/magazine/garand308(src)
 	new /obj/item/ammo_box/magazine/garand308(src)
-	new /obj/item/attachments/scope(src)
+	new /obj/item/attachment/scope(src)
 
 /obj/item/storage/backpack/duffelbag/auto5
 

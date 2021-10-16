@@ -201,11 +201,11 @@
 /datum/outfit/loadout/armsdealer
 	name = "Arms Dealer"
 	backpack_contents = list(
-	/obj/item/attachments/auto_sear=2,
-	/obj/item/attachments/burst_improvement=2,
-	/obj/item/attachments/bullet_speed=2,
-	/obj/item/attachments/recoil_decrease=2,
-	/obj/item/attachments/scope=2
+	/obj/item/attachment/auto_sear=1,
+	/obj/item/attachment/burst_improvement=2,
+	/obj/item/attachment/bullet_speed=2,
+	/obj/item/attachment/recoil_decrease=2,
+	/obj/item/attachment/scope=2
 	)
 
 /* Chief Researcher */

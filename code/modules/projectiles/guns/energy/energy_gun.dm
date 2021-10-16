@@ -5,10 +5,7 @@
 	item_state = null	//so the human update icon uses the icon_state instead.
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
 	modifystate = 1
-	can_flashlight = 1
 	ammo_x_offset = 3
-	flight_x_offset = 15
-	flight_y_offset = 10
 
 /obj/item/gun/energy/e_gun/mini
 	name = "miniature energy gun"
@@ -19,12 +16,6 @@
 	cell_type = /obj/item/stock_parts/cell{charge = 600; maxcharge = 600}
 	ammo_x_offset = 2
 	charge_sections = 3
-	gunlight_state = "mini-light"
-	can_flashlight = 0 // Can't attach or detach the flashlight, and override it's icon update
-
-/obj/item/gun/energy/e_gun/mini/Initialize()
-	gun_light = new /obj/item/flashlight/seclite(src)
-	return ..()
 
 /obj/item/gun/energy/e_gun/stun
 	name = "tactical energy gun"
@@ -66,7 +57,6 @@
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	ammo_type = list(/obj/item/ammo_casing/energy/net, /obj/item/ammo_casing/energy/trap)
-	can_flashlight = 0
 	ammo_x_offset = 1
 
 /obj/item/gun/energy/e_gun/dragnet/snare
@@ -83,7 +73,6 @@
 	w_class = WEIGHT_CLASS_HUGE
 	ammo_type = list(/obj/item/ammo_casing/energy/electrode, /obj/item/ammo_casing/energy/laser)
 	weapon_weight = WEAPON_HEAVY
-	can_flashlight = 0
 	trigger_guard = TRIGGER_GUARD_NONE
 	ammo_x_offset = 2
 

@@ -85,7 +85,7 @@
 	new /obj/item/clothing/under/syndicate/sniper(src)
 	new /obj/item/ammo_box/magazine/sniper_rounds/soporific(src)
 	new /obj/item/ammo_box/magazine/sniper_rounds/soporific(src)
-	new /obj/item/suppressor/specialoffer(src)
+	new /obj/item/attachment/silencer(src)
 
 
 /obj/item/storage/briefcase/modularbundle
@@ -94,7 +94,7 @@
 
 /obj/item/storage/briefcase/modularbundle/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/pistol/modular(src)
-	new /obj/item/suppressor(src)
+	new /obj/item/attachment/silencer(src)
 	new /obj/item/ammo_box/magazine/m10mm(src)
 	new /obj/item/ammo_box/magazine/m10mm/soporific(src)
 	new /obj/item/ammo_box/c10mm/soporific(src)

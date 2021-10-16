@@ -1942,11 +1942,11 @@
 		/obj/item/advanced_crafting_components/receiver,
 		/obj/item/advanced_crafting_components/assembly,
 		/obj/item/advanced_crafting_components/alloys,
-		/obj/item/attachments/scope,
-		/obj/item/attachments/burst_improvement,
-		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear,
-		/obj/item/attachments/bullet_speed
+		/obj/item/attachment/scope,
+		//obj/item/attachment/burst_improvement,
+		/obj/item/attachment/recoil_decrease,
+		/obj/item/attachment/auto_sear,
+		/obj/item/attachment/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintMid
@@ -2020,11 +2020,11 @@
 	lootcount = 1
 	lootdoubles = FALSE
 	loot = list(
-		/obj/item/attachments/scope,
-		/obj/item/attachments/burst_improvement,
-		/obj/item/attachments/recoil_decrease,
-		/obj/item/attachments/auto_sear,
-		/obj/item/attachments/bullet_speed
+		/obj/item/attachment/scope,
+		/obj/item/attachment/burst_improvement,
+		/obj/item/attachment/recoil_decrease,
+		/obj/item/attachment/auto_sear,
+		/obj/item/attachment/bullet_speed
 	)
 
 /obj/effect/spawner/lootdrop/f13/npc_raider
