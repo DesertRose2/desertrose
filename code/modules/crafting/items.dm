@@ -960,7 +960,7 @@
 	name = "Pre-war salvage"
 	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "salvage"
-	Loot = list(/obj/item/stack/sheet/metal/ten,			
+	Loot = list(/obj/item/stack/sheet/metal/ten,
 				/obj/item/stack/sheet/cloth/five,
 				/obj/item/stack/sheet/leather/five,
 				/obj/item/stack/ore/blackpowder/two,
@@ -1094,12 +1094,12 @@
 	/obj/item/circuitboard/machine/cell_charger)
 
 	var/list/mid = list(/obj/item/twohanded/fireaxe/bmprsword, /obj/item/twohanded/sledgehammer, /obj/item/shield/makeshift,/obj/item/gun/ballistic/automatic/autopipe,
-	/obj/item/grenade/homemade/dynamite, /obj/item/clothing/suit/armor/f13/metalarmor, /obj/item/gun/ballistic/rifle/mosin, /obj/item/gun/ballistic/rifle/mag/varmint,
+	/obj/item/grenade/homemade/dynamite, /obj/item/clothing/suit/armor/f13/metalarmor, /obj/item/gun/ballistic/rifle/enfield, /obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/clothing/head/helmet/f13/raider/eyebot, /obj/item/clothing/head/helmet/knight/f13/metal/reinforced)
 
-	var/list/low = list(/obj/item/gun/ballistic/rifle/lasmusket,/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
+	var/list/low = list(/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
 	/obj/item/clothing/suit/armor/f13/slam, /obj/item/clothing/suit/armor/f13/raider/raidermetal,/obj/item/clothing/head/helmet/f13/raidermetal,
-	/obj/item/clothing/head/helmet/knight/f13/metal, /obj/item/gun/ballistic/rifle/plasmacaster)
+	/obj/item/clothing/head/helmet/knight/f13/metal)
 
 	if(prob(60))
 		item = pick(low)

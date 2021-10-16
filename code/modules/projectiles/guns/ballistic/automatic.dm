@@ -295,24 +295,7 @@
 	recoil = 0.1
 	can_attachments = TRUE
 	can_suppress = FALSE
-	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
-
-//Carl Gustaf			Keywords: 10mm, Automatic, 12/24 round mags.
-//Was intended for Legion replacement to Uzis/10mm SMGs. No current implementation.
-/obj/item/gun/ballistic/automatic/smg/cg45
-	name = "Carl Gustaf 10mm"
-	desc = "Post-war submachine gun made in Flagstaff workshops based on a simple old design. Chambered in 10mm."
-	icon_state = "cg45"
-	item_state = "cg45"
-	mag_type = /obj/item/ammo_box/magazine/cg45
-	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	fire_delay = 3.5
-	spread = 8
-	recoil = 0.1
-	can_attachments = TRUE
 
 //10mm SMG				Keywords: 10mm, Automatic, 12/24 round mags. Notes: Should be faster-firing than the Grease due to smaller rounds and complex design.
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -619,7 +602,6 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-
 //'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
@@ -816,128 +798,70 @@
 //ASSAULT RIFLES//
 //////////////////
 
-//R82 Heavy Rifle		Keywords: 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
-/obj/item/gun/ballistic/automatic/service/r82
-	name = "R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
-	icon = 'icons/obj/guns/ballistic/r82.dmi'
-	fire_delay = 5
-	extra_damage = 1
-	spread = 4
-	semi_auto = FALSE
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
+//Assault Carbine			Keywords: 5.56, Automatic, 20 (10-50) round mags, No bayonet.
+/obj/item/gun/ballistic/automatic/assault_carbine
+	name = "assault carbine"
+	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
+	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon_state = "assault_carbine"
+	item_state = "assault_carbine"
+	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	icon_state = "R82"
-	item_state = "R84"
-	automatic_burst_overlay = TRUE
-	actions_types = list(/datum/action/item_action/toggle_firemode)
 	burst_size = 2
-	burst_shot_delay = 2.2
+	fire_delay = 4.5
+	burst_shot_delay = 2.5
+	spread = 8
+	can_attachments = TRUE
+	can_scope = TRUE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	can_bayonet = FALSE
 	can_suppress = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 32
-	knife_y_offset = 14
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 36
 	suppressor_y_offset = 16
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	unique_reskin = list("Carbine" = "assault_carbine",
+						"R91" = "r91",
+						"Makeshift" = "makeshift",
+						"Classic" = "assault_carbine_old"
+						)
 
-//R82/N Heavy Rifle		Keywords: NCR, 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
-/obj/item/gun/ballistic/automatic/service/r82/ncr
-	name = "NCR R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	icon_state = "R82_ncr"
-	item_state = "R84"
-	spread = 3
-	untinkerable = TRUE
-	can_suppress = TRUE
+//NCR Assault Rifle			Keywords: NCR, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, No bayonet.
+/obj/item/gun/ballistic/automatic/assault_carbine/ncr
+	name = "NCR assault carbine"
+	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
+	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon_state = "assault_carbine_ncr"
+	fire_delay = 5
+	burst_shot_delay = 2.2
+	spread = 2
+	can_scope = FALSE
+	can_attachments = FALSE
+	unique_reskin = list("NCR Tactical Carbine" = "assault_carbine_ncr",
+						"NCR Homemade Special" = "R82_ncr"
+						)
 
-//R91 Assault Rifle		Keywords: 5.56, Automatic, 20 (10-50) round mags.
-/obj/item/gun/ballistic/automatic/assault_rifle
-	name = "R91 assault rifle"
-	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
-	icon = 'icons/obj/guns/ballistic/r91.dmi'
-	icon_state = "r91"
-	item_state = "fnfal"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	force = 25
-	burst_size = 2
-	fire_delay = 4
-	burst_shot_delay = 3
-	can_attachments = TRUE
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 24
-	knife_y_offset = 11
-	spread = 8
-	can_suppress = TRUE
-	suppressor_x_offset = 32
-	suppressor_y_offset = 14
-	suppressor_state = "suppressor"
-
-//R91 "Infiltrator"		Keywords: 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
-/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
-	name = "Infiltrator"
-	desc = "A customized R91 assault rifle, with an integrated suppressor, cut down stock and polymer furniture."
-	icon_state = "infiltrator"
-	item_state = "fnfal"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	can_suppress = FALSE
-	can_unsuppress = FALSE
-	suppressed = 1
-	fire_delay = 4
-	burst_shot_delay = 3.6
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	can_bayonet = FALSE
-	force = 15
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	spread = 1
-
-//R91 "Pilum"			Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No Stock.
-/obj/item/gun/ballistic/automatic/assault_rifle/legion
-	name = "'Pilum' rifle"
-	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture. It features a mark of bull on it and feels heavier than usual."
-	icon_state = "pilum"
-	item_state = "fnfal"
-	untinkerable = TRUE
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+//"Pilum" Assault Rifle		Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+/obj/item/gun/ballistic/automatic/assault_carbine/legion
+	name = "'Pilum' assault rifle"
+	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
+	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon_state = "assault_carbine_legion"
+	spread = 6
 	fire_delay = 3.5
 	force = 20
+	can_scope = FALSE
+	can_attachments = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 7
-	can_suppress = TRUE
-
-//Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
-/obj/item/gun/ballistic/automatic/type93
-	name = "Type 93 assault rifle"
-	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
-	icon_state = "type93"
-	item_state = "handmade_rifle"
-	icon = 'icons/obj/guns/ballistic/type93.dmi'
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	can_suppress = TRUE
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	burst_size = 2
-	fire_delay = 3
-	spread = 10
-	extra_damage = 1
-	can_scope = FALSE
-	can_bayonet = FALSE
-	can_suppress = TRUE
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 36
-	suppressor_y_offset = 15
+	unique_reskin = list("Carbine Pilum" = "assault_carbine_legion",
+						"R-91 Pilum" = "pilum"
+						)
 
 //Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/bozar
@@ -962,30 +886,60 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
-//Assault Carbine	Keywords: 5.56, Automatic, 20 (10-50) round mags.
-/obj/item/gun/ballistic/automatic/assault_carbine
-	name = "assault carbine"
-	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
-	icon_state = "assault_carbine"
-	item_state = "assault_carbine"
-	untinkerable = TRUE
-	slot_flags = 0
+//R91 "Infiltrator"		Keywords: UNIQUE, 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
+/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
+	name = "Infiltrator"
+	desc = "An incredibly rare and customized R91 assault rifle, with an integrated suppressor, cut down stock and polymer furniture. Built for the perfect assassination machine!"
+	icon = 'icons/obj/guns/ballistic/infl.dmi'
+	icon_state = "infiltrator"
+	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	burst_size = 2
-	fire_delay = 4.5
-	burst_shot_delay = 2.5
-	spread = 8
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	can_suppress = FALSE
+	can_unsuppress = FALSE
 	can_attachments = TRUE
-	can_scope = TRUE
-	scope_state = "scope_short"
-	scope_x_offset = 4
-	scope_y_offset = 15
+	suppressed = 1
+	burst_size = 2
+	fire_delay = 3
+	burst_shot_delay = 3.5
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	can_bayonet = FALSE
+	force = 15
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	spread = 1
+	unique_reskin = list("Stockless" = "infiltrator_old",
+						"Wirestock" = "infiltrator"
+						)
+
+//Type 93			Keywords: UNIQUE, 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
+/obj/item/gun/ballistic/automatic/type93
+	name = "Type 93 assault rifle"
+	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
+	icon_state = "type93"
+	item_state = "handmade_rifle"
+	icon = 'icons/obj/guns/ballistic/type93.dmi'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
 	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 26
-	suppressor_y_offset = 28
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	burst_size = 3
+	fire_delay = 3
+	burst_shot_delay = 2
+	spread = 8
+	extra_damage = 2
+	can_scope = FALSE
+	can_bayonet = FALSE
+	can_suppress = TRUE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 15
+	unique_reskin = list("Type 93" = "type93",
+						"Homemade Rifle" = "homemade"
+						)
 
 //H&K G11			Keywords: 4.73mm, Automatic, 50 round mags.
 /obj/item/gun/ballistic/automatic/g11
@@ -1009,7 +963,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
-//AK-112			Keywords: 5mm, Automatic, 24/100 mags
+//AK-112					Keywords: 5mm, Automatic, 24/48 mags
 /obj/item/gun/ballistic/automatic/ak112
 	name = "AK-112"
 	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
@@ -1037,7 +991,7 @@
 	desc = "A prestine M-14 battle rifle, likely from a National Guard reserve armory. This rifle struggled to find its niche, outshadowed by more reliable rifles in 5.56 and a high recoil for a 7.62. Its saving grace is its burst fire capability."
 	icon_state = "m14"
 	item_state = "308"
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/m14.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1126,48 +1080,6 @@
 	update_icon()
 	return
 
-//Bastard Gun		Keywords: 5.56, 60 round mags. Notes: Snowflake gun based on the Metro bastard gun. More spread, lower damage; inferior R-84.
-/obj/item/gun/ballistic/automatic/bastard
-	name = "'Bastard' LMG"
-	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
-	icon_state = "bastard"
-	item_state = "bastard"
-	slowdown = 1
-	mag_type = /obj/item/ammo_box/magazine/lmg
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	can_attachments = TRUE
-	can_suppress = TRUE
-	suppressor_x_offset = 27
-	suppressor_y_offset = 28
-	suppressor_state = "suppressor"
-	burst_size = 1
-	fire_delay = 5
-	burst_shot_delay = 3
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-
-/obj/item/gun/ballistic/automatic/bastard/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size += 1
-			spread += 20
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(1)
-			select = 2
-			burst_size += 2
-			spread += 20
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(2)
-			select = 0
-			burst_size = 1
-			spread -= 40 //Written this way so that it does not overwrite a recoil compensator.
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
 //LSW Squad Support Weapon		Keywords: 5.56,20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/lsw
 	name = "light support weapon"
@@ -1197,118 +1109,63 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
-			burst_size += 1
+			select = 0
+			burst_size = 2
 			spread = 15
 			extra_damage = -1
 			recoil = 0.25
-			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
+			to_chat(user, "<span class='notice'>You switch to firing in small bursts.</span>")
 		if(1)
 			select = 2
-			burst_size += 2
+			burst_size = 3
 			spread = 20
 			extra_damage = -2
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
-		if(2)
-			select = 0
-			burst_size = 1
-			spread = 6
-			extra_damage = 0
-			recoil = 0
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
 
-//M1919 Machinegun		Keywords: .308/7.62, Automatic, 80 round belt. Notes: DAKA DAKA DAKA - Careful with these. High damage.
-/obj/item/gun/ballistic/automatic/m1919
-	name = "Browning M1919"
-	desc = "An old pre-war machine gun used in service by the US Military around the time of the war. Rechambered in 7.62x51."
-	icon_state = "M38"
-	item_state = "M38"
-	slot_flags = 0
-	slowdown = 1.25
-	mag_type = /obj/item/ammo_box/magazine/mm762
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	untinkerable = TRUE
+//BAR 1918			Keywords: 7.62, Automatic, 10-20 round mags, High damage - yet low fire rate and capacity. Larger burst is more spread.
+/obj/item/gun/ballistic/automatic/bar
+	name = "BAR 1918"
+	desc = "A relatively dated yet reliable machine gun chambered in 7.62; a rare find! These can be found in musuems and national guard stockpiles as an old squad support training weapon."
+	icon = 'icons/obj/guns/ballistic/bar.dmi'
+	icon_state = "BAR"
+	item_state = "BAR"
+	slowdown = 1
+	mag_type = /obj/item/ammo_box/magazine/m762
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/m1918a2.ogg'
 	can_suppress = FALSE
 	can_attachments = FALSE
-	burst_size = 1
-	burst_shot_delay = 1.5
+	burst_size = 2
 	fire_delay = 6
+	burst_shot_delay = 2.5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	spread = 12
-	var/cover_open = FALSE
 
-/obj/item/gun/ballistic/automatic/m1919/update_icon()
-	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
-	item_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
-
-/obj/item/gun/ballistic/automatic/m1919/examine(mob/user)
-	. = ..()
-	if(cover_open && magazine)
-		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
-
-/obj/item/gun/ballistic/automatic/m1919/attack_self(mob/user)
-	cover_open = !cover_open
-	to_chat(user, "<span class='notice'>You [cover_open ? "open" : "close"] [src]'s cover.</span>")
-	if(cover_open)
-		playsound(user, 'sound/weapons/sawopen.ogg', 60, 1)
-	else
-		playsound(user, 'sound/weapons/sawclose.ogg', 60, 1)
-	update_icon()
-
-/obj/item/gun/ballistic/automatic/m1919/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
-	if(cover_open)
-		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
-	else
-		. = ..()
-		update_icon()
-
-/obj/item/gun/ballistic/automatic/m1919/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(loc != user)
-		..()
-		return	//let them pick it up
-	if(!cover_open || (cover_open && !magazine))
-		..()
-	else if(cover_open && magazine)
-		//drop the mag
-		magazine.update_icon()
-		magazine.forceMove(drop_location())
-		user.put_in_hands(magazine)
-		magazine = null
-		update_icon()
-		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
-		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
-
-/obj/item/gun/ballistic/automatic/m1919/attackby(obj/item/A, mob/user, params)
-	if(!cover_open && istype(A, mag_type))
-		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
-		return
-	..()
-
-/obj/item/gun/ballistic/automatic/m1919/burst_select()
+/obj/item/gun/ballistic/automatic/bar/burst_select()
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
-			burst_size = 2
-			spread = 12
-			extra_damage = -2
-			recoil = 0.25
-			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
-		if(1)
 			select = 0
-			burst_size = 4
-			spread = 22
-			extra_damage = -6
-			recoil = 1
+			burst_size = 2
+			spread = 10
+			extra_damage = 0
+			recoil = 0.25
+			to_chat(user, "<span class='notice'>You switch to firing in small-bursts.</span>")
+		if(1)
+			select = 1
+			burst_size = 3
+			spread = 20
+			extra_damage = -2
+			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
+
 
 //M2A1 HMG			Keywords: .50 Cal, Automatic, ??? .50 belts. Notes: Holy shit a .50 machine gun. Don't use this often; admin spawn only for the love of god.
 /obj/item/gun/ballistic/automatic/m2a1
@@ -1422,23 +1279,6 @@
 	recoil = 2
 	semi_auto = TRUE
 
-//X170E3				Keywords: UNIQUE, 20 (10-50) mag size, Scoped. Note: Use this in events, not normally.
-/obj/item/gun/ballistic/automatic/xl70e3
-	name = "xl70e3"
-	desc = "This was an experimental weapon at the time of the war. Manufactured, primarily, from high-strength polymers, the weapon is almost indestructible. It's light, fast firing, accurate, and can be broken down without the use of any tools. Chamebered in 5.56mm."
-	icon_state = "xl70e3"
-	item_state = "xl70e3"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
-	burst_shot_delay = 2
-	spawnwithmagazine = TRUE
-	spread = 4
-	can_attachments = TRUE
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_scope = FALSE
-
 //Auto-pipe rifle		Keywords: .357, 30 round belts, improvised.
 //Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe
@@ -1463,3 +1303,194 @@
 	knife_x_offset = 22
 	knife_y_offset = 21
 	semi_auto = FALSE
+
+
+//Temporary Graveyard Area - Removed weapons from the 'weapon rework' done. Temporarily set aside just incase someone needs access to what we had previously.
+
+/*
+//R82 Heavy Rifle		Keywords: 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
+/obj/item/gun/ballistic/automatic/service/r82
+	name = "R82 heavy service rifle"
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
+	icon = 'icons/obj/guns/ballistic/r82.dmi'
+	fire_delay = 5
+	extra_damage = 1
+	spread = 4
+	semi_auto = FALSE
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	icon_state = "R82"
+	item_state = "R84"
+	automatic_burst_overlay = TRUE
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	burst_size = 2
+	burst_shot_delay = 2.2
+	can_suppress = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 32
+	knife_y_offset = 14
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 16
+
+//R82/N Heavy Rifle		Keywords: NCR, 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
+/obj/item/gun/ballistic/automatic/service/r82/ncr
+	name = "NCR R82 heavy service rifle"
+	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	icon_state = "R82_ncr"
+	item_state = "R84"
+	spread = 3
+	untinkerable = TRUE
+	can_suppress = TRUE
+
+//R91 "Pilum"			Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No Stock.
+/obj/item/gun/ballistic/automatic/assault_rifle/legion
+	name = "'Pilum' rifle"
+	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture. It features a mark of bull on it and feels heavier than usual."
+	icon_state = "pilum"
+	item_state = "fnfal"
+	untinkerable = TRUE
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_delay = 3.5
+	force = 20
+	can_bayonet = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 22
+	knife_y_offset = 7
+	can_suppress = TRUE
+
+//Bastard Gun		Keywords: 5.56, 60 round mags. Notes: Snowflake gun based on the Metro bastard gun. More spread, lower damage; inferior R-84.
+/obj/item/gun/ballistic/automatic/bastard
+	name = "'Bastard' LMG"
+	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
+	icon_state = "bastard"
+	item_state = "bastard"
+	slowdown = 1
+	mag_type = /obj/item/ammo_box/magazine/lmg
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	can_attachments = TRUE
+	can_suppress = TRUE
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+	suppressor_state = "suppressor"
+	burst_size = 1
+	fire_delay = 5
+	burst_shot_delay = 3
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+
+/obj/item/gun/ballistic/automatic/bastard/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 1
+			burst_size += 1
+			spread += 20
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(1)
+			select = 2
+			burst_size += 2
+			spread += 20
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		if(2)
+			select = 0
+			burst_size = 1
+			spread -= 40 //Written this way so that it does not overwrite a recoil compensator.
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
+
+//M1919 Machinegun		Keywords: .308/7.62, Automatic, 80 round belt. Notes: DAKA DAKA DAKA - Careful with these. High damage.
+/obj/item/gun/ballistic/automatic/m1919
+	name = "Browning M1919"
+	desc = "An old pre-war machine gun used in service by the US Military around the time of the war. Rechambered in 7.62x51."
+	icon_state = "M38"
+	item_state = "M38"
+	slot_flags = 0
+	slowdown = 1.25
+	mag_type = /obj/item/ammo_box/magazine/mm762
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	untinkerable = TRUE
+	can_suppress = FALSE
+	can_attachments = FALSE
+	burst_size = 1
+	burst_shot_delay = 1.5
+	fire_delay = 6
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	spread = 12
+	var/cover_open = FALSE
+
+/obj/item/gun/ballistic/automatic/m1919/update_icon()
+	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
+	item_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
+
+/obj/item/gun/ballistic/automatic/m1919/examine(mob/user)
+	. = ..()
+	if(cover_open && magazine)
+		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
+
+/obj/item/gun/ballistic/automatic/m1919/attack_self(mob/user)
+	cover_open = !cover_open
+	to_chat(user, "<span class='notice'>You [cover_open ? "open" : "close"] [src]'s cover.</span>")
+	if(cover_open)
+		playsound(user, 'sound/weapons/sawopen.ogg', 60, 1)
+	else
+		playsound(user, 'sound/weapons/sawclose.ogg', 60, 1)
+	update_icon()
+
+/obj/item/gun/ballistic/automatic/m1919/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
+	if(cover_open)
+		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
+	else
+		. = ..()
+		update_icon()
+
+/obj/item/gun/ballistic/automatic/m1919/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
+	if(loc != user)
+		..()
+		return	//let them pick it up
+	if(!cover_open || (cover_open && !magazine))
+		..()
+	else if(cover_open && magazine)
+		//drop the mag
+		magazine.update_icon()
+		magazine.forceMove(drop_location())
+		user.put_in_hands(magazine)
+		magazine = null
+		update_icon()
+		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
+		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
+
+/obj/item/gun/ballistic/automatic/m1919/attackby(obj/item/A, mob/user, params)
+	if(!cover_open && istype(A, mag_type))
+		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
+		return
+	..()
+
+/obj/item/gun/ballistic/automatic/m1919/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select = 1
+			burst_size = 2
+			spread = 12
+			extra_damage = -2
+			recoil = 0.25
+			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
+		if(1)
+			select = 0
+			burst_size = 4
+			spread = 22
+			extra_damage = -6
+			recoil = 1
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
+*/

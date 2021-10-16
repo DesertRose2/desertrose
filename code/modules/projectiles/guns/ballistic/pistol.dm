@@ -235,9 +235,9 @@
 /obj/item/gun/ballistic/automatic/pistol/autoloader
 	name = ".45 Autoloader"
 	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs. Don't let the slide catch your finger though."
-	icon_state = "mk23"
+	icon_state = "autoloader"
 	w_class = WEIGHT_CLASS_NORMAL
-	mag_type = /obj/item/ammo_box/magazine/m45exp
+	mag_type = /obj/item/ammo_box/magazine/m45
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 	fire_delay = 3.5
 	extra_damage = 4

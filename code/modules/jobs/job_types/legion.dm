@@ -399,7 +399,7 @@ Decanii
 
 /datum/outfit/loadout/vetdecanshock
 	name = "Assassin (Scout) Officer"
-	l_hand =  /obj/item/gun/ballistic/automatic/assault_rifle/legion
+	l_hand =  /obj/item/gun/ballistic/automatic/assault_carbine/legion
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=2)
 
 /datum/outfit/loadout/vetdecanmelee
@@ -640,7 +640,7 @@ Libritor
 	id =			/obj/item/card/id/dogtag/leglibritor
 	head =			/obj/item/clothing/head/helmet/f13/power_armor/legion
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/legion
-	suit_store = 	/obj/item/gun/ballistic/automatic/bastard
+	suit_store = 	/obj/item/gun/ballistic/automatic/bar
 	neck			= /obj/item/storage/belt/holster
 	glasses			= /obj/item/clothing/glasses/legiongoggles
 	ears			= /obj/item/radio/headset/headset_legion
@@ -649,7 +649,7 @@ Libritor
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/ammo_box/magazine/lmg=2,
+		/obj/item/ammo_box/magazine/m762=2,
 		/obj/item/storage/bag/money/small/legofficers=1,
 		/obj/item/clothing/accessory/legion/prime=1
 	)
@@ -716,7 +716,7 @@ Veteran Legionary
 	name = "Assassin (Scout)"
 	l_hand = /obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/attachments/scope=1,
 		/obj/item/gun/ballistic/revolver/revolver44=1,
 		/obj/item/ammo_box/m44=2)
@@ -1010,10 +1010,10 @@ Explorer
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/loadout/excursor
-	name = "Excursor (Runner)"	
+	name = "Excursor (Runner)"
 	l_hand = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/attachments/scope=1)
 
 /datum/outfit/loadout/sapper
@@ -1022,7 +1022,7 @@ Explorer
 	belt = 		/obj/item/storage/belt/utility/full/engi
 	l_hand =	/obj/item/gun/ballistic/rifle/mag/commando
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp=1,
+		/obj/item/ammo_box/magazine/m45/extended=1,
 		/obj/item/grenade/plastic=1)
 
 /*
