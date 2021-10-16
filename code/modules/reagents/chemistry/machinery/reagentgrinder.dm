@@ -23,8 +23,7 @@
 	/obj/item/reagent_containers/pill/patch/medx,
 	/obj/item/reagent_containers/pill/buffout,
 	/obj/item/reagent_containers/pill/cateye,
-	/obj/item/reagent_containers/pill/patch/jet,
-	/obj/item/reagent_containers/pill/patch/hydra
+	/obj/item/reagent_containers/pill/patch/jet
 	)
 
 	var/static/radial_examine = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_examine")
