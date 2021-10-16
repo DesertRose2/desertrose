@@ -143,9 +143,10 @@
 	parent.forceMove(holder)
 	return TRUE
 
-/datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
-
+/datum/component/attachment/proc/try_detach(obj/item/parent, obj/item/holder, mob/user)
 	SIGNAL_HANDLER
+
+	INVOKE_ASYNC(src, .proc/do_toggle, parent, holder, user)
 
 	if(!parent.Adjacent(user) || (valid_parent_types && (holder.type in valid_parent_types)))
 		return FALSE
