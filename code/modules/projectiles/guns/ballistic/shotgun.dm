@@ -299,6 +299,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/auto5.ogg'
+	always_reskinnable = TRUE
 	unique_reskin = list("Browning Auto" = "auto5",
 						"Pre-War Police" = "shotgunpolice"
 						)

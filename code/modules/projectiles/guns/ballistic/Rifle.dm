@@ -123,7 +123,7 @@
 /obj/item/gun/ballistic/rifle/enfield
 	name = "Lee-Enfield Mk III"
 	desc = "An ancient rifle from the olden days of trench warfare and world wars. This rifle fell out of service centuries ago but became a sought after gun for hunters and renactors alike."
-	icon_state = "kar98"
+	icon_state = "moistnugget"
 	item_state = "moistnugget"
 	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction

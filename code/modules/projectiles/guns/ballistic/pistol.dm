@@ -217,6 +217,7 @@
 	icon_state = "m1911"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
+	always_reskinnable = TRUE
 	unique_reskin = list("Default" = "m1911",
 						"Custom" = "m1911_custom"
 						)

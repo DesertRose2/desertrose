@@ -186,6 +186,7 @@
 	burst_shot_delay = 2
 	fire_delay = 3
 	suppressed = 1
+	always_reskinnable = TRUE
 	unique_reskin = list("American 180" = "smg22",
 						"Rockwell 'Special'" = "rockwell"
 						)
@@ -496,6 +497,7 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 26
 	suppressor_y_offset = 31
+	always_reskinnable = TRUE
 	unique_reskin = list("M1A2" = "m1carbine",
 						"M1A1 - Para" = "m1a1carbine"
 						)
@@ -811,6 +813,7 @@
 	suppressor_y_offset = 16
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	always_reskinnable = TRUE
 	unique_reskin = list("Carbine" = "assault_carbine",
 						"R91" = "r91",
 						"Makeshift" = "makeshift",
@@ -828,6 +831,7 @@
 	spread = 2
 	can_scope = FALSE
 	can_attachments = FALSE
+	always_reskinnable = TRUE
 	unique_reskin = list("NCR Tactical Carbine" = "assault_carbine_ncr",
 						"NCR Homemade Special" = "R82_ncr"
 						)
@@ -847,6 +851,7 @@
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 7
+	always_reskinnable = TRUE
 	unique_reskin = list("Carbine Pilum" = "assault_carbine_legion",
 						"R-91 Pilum" = "pilum"
 						)
@@ -898,6 +903,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	spread = 1
+	always_reskinnable = TRUE
 	unique_reskin = list("Stockless" = "infiltrator_old",
 						"Wirestock" = "infiltrator"
 						)
@@ -925,6 +931,7 @@
 	suppressor_state = "suppressor"
 	suppressor_x_offset = 36
 	suppressor_y_offset = 15
+	always_reskinnable = TRUE
 	unique_reskin = list("Type 93" = "type93",
 						"Homemade Rifle" = "homemade"
 						)
@@ -1116,8 +1123,8 @@
 	name = "BAR 1918"
 	desc = "A relatively dated yet reliable machine gun chambered in 7.62; a rare find! These can be found in musuems and national guard stockpiles as an old squad support training weapon."
 	icon = 'icons/obj/guns/ballistic/bar.dmi'
-	icon_state = "BAR"
-	item_state = "BAR"
+	icon_state = "bar"
+	item_state = "bar"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/m762
 	actions_types = list(/datum/action/item_action/toggle_firemode)
