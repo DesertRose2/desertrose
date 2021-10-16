@@ -960,7 +960,7 @@
 	item_state = "assault_carbine"
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/c5mm
-	burst_size = 2
+	burst_size = 3
 	fire_delay = 4
 	burst_shot_delay = 2
 	spread = 4
@@ -994,8 +994,8 @@
 	weapon_weight = WEAPON_HEAVY
 	untinkerable = TRUE
 	force = 20
-	burst_size = 3
-	fire_delay = 5
+	burst_size = 2
+	fire_delay = 4
 	burst_shot_delay = 2.2
 	spread = 20
 	can_attachments = FALSE

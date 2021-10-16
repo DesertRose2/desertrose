@@ -1152,8 +1152,6 @@
 				/obj/item/m2flamethrowertank,
 	)
 
-
-
 /obj/effect/spawner/bundle/f13/chinese
 	name = "type 93 spawner"
 	items = list(
