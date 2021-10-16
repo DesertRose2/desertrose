@@ -175,10 +175,9 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = TRUE
-	extra_damage = 2
 	fire_delay = 2
 	can_suppress = TRUE
-	can_automatic = TRUE
+	can_automatic = FALSE
 	suppressor_state = "n99_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 15
