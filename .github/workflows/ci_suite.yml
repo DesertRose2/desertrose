@@ -114,16 +114,6 @@ jobs:
           sudo apt install libssl1.1:i386
           bash tools/ci/install_rust_g.sh
 
-      - name: Download auxtools_tg library
-        uses: actions/download-artifact@v2
-        with:
-          name: libauxtools_tg
-
-      - name: Download libauxmos library
-        uses: actions/download-artifact@v2
-        with:
-          name: libauxmos
-
       - name: Compile and run tests
         run: |
           bash tools/ci/install_byond.sh

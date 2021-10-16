@@ -201,6 +201,10 @@ Head Scribe
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/explosive)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/nitro)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)	
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
@@ -550,6 +554,10 @@ Proctor
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/explosive)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/nitro)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)	
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
@@ -657,6 +665,10 @@ Scribe
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/explosive)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/nitro)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 /datum/outfit/loadout/scribejsw

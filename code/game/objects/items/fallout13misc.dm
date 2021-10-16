@@ -224,8 +224,14 @@
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/flag = alert(user, "Please choose which faction flag you wish to create.", "NCR", "Legion", "Oasis", "BOS",)
+				var/flag = alert(user, "Please choose which faction flag you wish to create.","Blank", "NCR", "Legion", "BOS")
 				switch(flag)
+					if("Blank") //I swear to god why is this so buggy
+						name = "Locust flag"
+						desc = "A flag with a skull, the symbol of Locusts."
+						icon_state = "locustflag"
+						item_state = "locustflag"
+						faction = "Locust"
 					if("NCR")
 						name = "NCR flag"
 						desc = "A flag with a two headed bear, the symbol of the New California Republic."
@@ -238,15 +244,9 @@
 						icon_state = "legionflag"
 						item_state = "legionflag"
 						faction = "Legion"
-					if("Oasis")
-						name = "Oasis flag"
-						desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
-						icon_state = "oasisflag"
-						item_state = "oasisflag"
-						faction = "Oasis"
 					if("BOS")
 						name = "BOS flag"
-						desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold."
+						desc = "A blue and black flag with a sword surrounded in gears and wings, in a dazzling gold."
 						icon_state = "bosflag"
 						item_state = "bosflag"
 						faction = "BOS"
@@ -276,6 +276,7 @@
 
 /obj/item/flag/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first)
 	dropped(thrower)
+
 ////////Viper stuff////// subject to change, but this way was simple
 /obj/item/viper_venom
 	name = "Viper venom"

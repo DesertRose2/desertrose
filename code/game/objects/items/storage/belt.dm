@@ -822,7 +822,7 @@
 	new /obj/item/ammo_box/magazine/m9mm(src)
 
 /obj/item/storage/belt/holster/ncr_officer/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
+	new /obj/item/gun/ballistic/automatic/pistol/m1911(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)
