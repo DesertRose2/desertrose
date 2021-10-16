@@ -129,8 +129,10 @@
 /datum/component/attachment/proc/update_overlays(obj/item/parent, list/overlays, list/offset)
 	overlays += mutable_appearance(parent.icon, "[parent.icon_state]-attached")
 
-/datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
+/datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user)
 	SIGNAL_HANDLER
+
+	INVOKE_ASYNC(src, .proc/do_toggle, parent, holder, user)
 
 	if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
 		return FALSE
