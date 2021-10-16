@@ -112,6 +112,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/*
 //Plasma musket
 /datum/crafting_recipe/plasmamusket
 	name = "Plasma musket"
@@ -147,17 +148,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
-/datum/crafting_recipe/batterybox //lasmusket ammo
-	name = "Laser musket battery pack"
-	result = /obj/item/ammo_box/lasmusket
-	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
-				/obj/item/stack/sheet/glass = 6,
-				/obj/item/stack/sheet/metal = 6)
-	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
-	time = 20
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
+*/
 
 /datum/crafting_recipe/autopiperifle
 	name = "auto pipe rifle"
@@ -343,26 +334,10 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//R82 heavy service rifle
-/datum/crafting_recipe/R82
-	name = "r82 heavy service rifle"
-	result = /obj/item/gun/ballistic/automatic/service/r82
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/sheet/mineral/wood = 5,
-				/obj/item/stack/crafting/goodparts = 5
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-
-//R82/N NCR
+//NCR Assault Carbine
 /datum/crafting_recipe/R82/ncr
-	name = "ncr r82 heavy service rifle"
-	result = /obj/item/gun/ballistic/automatic/service/r82/ncr
+	name = "ncr assault carbine"
+	result = /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,
@@ -419,10 +394,10 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//bastard lmg
+//BAR 1917
 /datum/crafting_recipe/bastard
-	name = "bastard LMG"
-	result = /obj/item/gun/ballistic/automatic/bastard
+	name = "BAR 1918"
+	result = /obj/item/gun/ballistic/automatic/bar
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/goodparts = 3,
 				/obj/item/stack/sheet/mineral/wood = 5,

@@ -63,9 +63,7 @@
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/rifle/lasmusket=1,
-	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,
-	/obj/item/ammo_box/lasmusket = 2)
+	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,)
 
 /datum/outfit/loadout/eldervaultie
 	name = "Elder Vaultie"
@@ -464,7 +462,7 @@
 	/obj/item/clothing/shoes/jackboots=1,
 	/obj/item/gun/ballistic/rifle/mag/commando=1,
 	/obj/item/stack/sheet/cardboard/twenty=1,
-	/obj/item/ammo_box/magazine/m45exp = 2
+	/obj/item/ammo_box/magazine/m45/extended = 2
 	)
 
 /datum/outfit/loadout/caravaner

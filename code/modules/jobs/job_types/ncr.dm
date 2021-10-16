@@ -134,7 +134,7 @@ Captain
 	shoes 		= /obj/item/clothing/shoes/f13/military/leather
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	belt 		= /obj/item/storage/belt/military/assault/ncr/crossbelt
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
+	l_hand 		= /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 	/obj/item/gun/ballistic/revolver/m29=1,
@@ -215,7 +215,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 
 /datum/outfit/loadout/ltline
 	name = "Line Officer"
-	l_hand =	 /obj/item/gun/ballistic/automatic/service/r82/ncr
+	l_hand = /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 		/obj/item/kitchen/knife/combat/bayonet=1)
@@ -321,7 +321,7 @@ Sergeant First Class
 
 /datum/outfit/loadout/sfcinfantry
 	name = "Infantry"
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
+	l_hand 		= /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 		/obj/item/kitchen/knife/combat/bayonet=1)

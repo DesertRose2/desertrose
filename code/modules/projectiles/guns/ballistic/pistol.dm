@@ -118,34 +118,24 @@
 	extra_damage = 8
 	extra_penetration = 0.3
 
-//Beretta M9FS							Keywords: 9mm, Semi-auto, 15 round magazine.
+//Beretta M93R							Keywords: 9mm, Automatic, 15 round magazine
 /obj/item/gun/ballistic/automatic/pistol/beretta
-	name = "Beretta M9FS"
-	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability, 15 round magazine and good looks."
-	icon_state = "beretta"
+	name = "Beretta M92FS"
+	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability. 15 round magazine and good looks; it'll get you far!"
+	icon_state = "m93r"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 3
-	extra_damage = 2
-	spread = 1
-	can_suppress = FALSE
-	fire_sound = 'sound/f13weapons/9mm.ogg'
-	can_attachments = TRUE
-	can_suppress = "pistol_suppressor"
-	suppressor_x_offset = 30
-	suppressor_y_offset = 20
-
-//Beretta M93R							Keywords: 9mm, Automatic, 15 round magazine
-/obj/item/gun/ballistic/automatic/pistol/beretta/automatic
-	name = "Beretta M93R"
-	desc = "A rare select fire variant of the M93R."
-	icon_state = "m93r"
 	burst_size = 3
-	spread = 2
+	spread = 3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	automatic_burst_overlay = TRUE
 	can_attachments = FALSE
 	semi_auto = FALSE
+	can_suppress = FALSE
+	fire_sound = 'sound/f13weapons/9mm.ogg'
+	can_suppress = "pistol_suppressor"
+	suppressor_x_offset = 30
+	suppressor_y_offset = 20
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
 /obj/item/gun/ballistic/automatic/pistol/sig
@@ -165,10 +155,11 @@
 
 //Type 17								Keywords: 9mm, Semi-auto, 10 round magazine. Special modifiers: damage +2, spread +3
 /obj/item/gun/ballistic/automatic/pistol/type17
-	name = "Type 17"
+	name = "Type 17 Mauser"
 	desc = "A reproduction of the WW2 weapon and issued to the Chinese military at the time of the Great War. Most samples seen are surplus finds from the time of the Great War. Chambered in 9mm."
 	icon_state = "c96"
 	mag_type = /obj/item/ammo_box/magazine/m9mm
+	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 2
 	spread = 3
 	fire_delay = 1
@@ -184,10 +175,9 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = TRUE
-	extra_damage = 2
 	fire_delay = 2
 	can_suppress = TRUE
-	can_automatic = TRUE
+	can_automatic = FALSE
 	suppressor_state = "n99_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 15
@@ -226,6 +216,10 @@
 	icon_state = "m1911"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
+	always_reskinnable = TRUE
+	unique_reskin = list("Default" = "m1911",
+						"Custom" = "m1911_custom"
+						)
 	can_suppress = TRUE
 	extra_damage = 2
 	fire_delay = 2
@@ -234,38 +228,20 @@
 	suppressor_x_offset = 30
 	suppressor_y_offset = 21
 
-//Colt M1911 - Custom				Keywords: NCR, 45 APC, Semi-Auto, 8 round mags.
-/obj/item/gun/ballistic/automatic/pistol/m1911/custom
-	name = "M1911 Custom"
-	desc = "A well-maintained stainless-steel frame 1911, with genuine wooden grips."
-	icon_state = "m1911_custom"
-	fire_delay = 1
-	extra_damage = 3
-
-//Colt M1911 - Compact				Keywords: 45 APC, Semi-Auto, 8 round mags. Note: Small, fits in pocket. Stoopid.
-/obj/item/gun/ballistic/automatic/pistol/m1911/compact
-	name = "M1911 compact"
-	desc = "The compact version of the classic .45 handgun."
-	icon_state = "c1911"
-	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = 2
-	suppressor_x_offset = 29
-	suppressor_y_offset = 21
-
 /obj/item/gun/ballistic/automatic/pistol/m1911/no_mag
 	spawnwithmagazine = FALSE
 
-//Mk. 23						Keywords: 45 ACP, Semi-Auto, 'Long barrel' (lasersight), 12 round magazine
-/obj/item/gun/ballistic/automatic/pistol/mk23
-	name = "MK23"
-	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs."
-	icon_state = "mk23"
+//.45 Autoloader						Keywords: 45 ACP, Semi-Auto, 12 round magazine
+/obj/item/gun/ballistic/automatic/pistol/autoloader
+	name = ".45 Autoloader"
+	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs. Don't let the slide catch your finger though."
+	icon_state = "autoloader"
 	w_class = WEIGHT_CLASS_NORMAL
-	mag_type = /obj/item/ammo_box/magazine/m45exp
+	mag_type = /obj/item/ammo_box/magazine/m45
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 	fire_delay = 3.5
 	extra_damage = 4
-	extra_penetration = 0.2
+	extra_penetration = 0.1
 	can_suppress = TRUE
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 28
@@ -284,18 +260,6 @@
 	suppressor_x_offset = 30
 	suppressor_y_offset = 19
 	suppressor_state = "n99_suppressor"
-
-//12.7mm Compact Pistol			Keywords: 12.7mm, Semi-Auto, 7 round mags, Small pocket edition(tm)
-/obj/item/gun/ballistic/automatic/pistol/pistol127/compact
-	name = "Compact 12.7mm pistol"
-	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting. This one is a compact model for concealed carry."
-	icon_state = "pistol127_compact"
-	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = -3 //Smaller barrel, smaller bullet velocity
-	extra_penetration = -0.06 //See above
-	spread = 3
-	suppressor_x_offset = 28
-	suppressor_y_offset = 19
 
 
 //////////////////
