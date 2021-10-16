@@ -53,8 +53,8 @@
 	if(automatic_burst_overlay)
 		if(!select)
 			. += ("[initial(icon_state)]semi")
-		if(select == 1)
-			. += "[initial(icon_state)]burst"
+		if(!select == 1)
+			. += ("[initial(icon_state)]burst")
 
 /obj/item/gun/ballistic/automatic/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"

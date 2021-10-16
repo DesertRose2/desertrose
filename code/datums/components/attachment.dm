@@ -130,7 +130,6 @@
 	overlays += mutable_appearance(parent.icon, "[parent.icon_state]-attached")
 
 /datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user, proc/InvokeAsync())
-
 	SIGNAL_HANDLER
 
 	if(!parent.Adjacent(user) || (length(valid_parent_types) && (holder.type in valid_parent_types)))
