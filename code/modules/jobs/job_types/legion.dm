@@ -399,7 +399,7 @@ Decanii
 
 /datum/outfit/loadout/vetdecanshock
 	name = "Assassin (Scout) Officer"
-	l_hand =  /obj/item/gun/ballistic/automatic/assault_carbine/legion
+	l_hand =  /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=2)
 
 /datum/outfit/loadout/vetdecanmelee

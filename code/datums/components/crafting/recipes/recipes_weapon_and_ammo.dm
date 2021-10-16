@@ -337,7 +337,7 @@
 //NCR Assault Carbine
 /datum/crafting_recipe/R82/ncr
 	name = "ncr assault carbine"
-	result = /obj/item/gun/ballistic/automatic/assault_carbine/ncr
+	result = /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,
@@ -630,7 +630,7 @@
 //R-91 "Pilum" Legion
 /datum/crafting_recipe/r91/legion
 	name = "pilum rifle"
-	result = /obj/item/gun/ballistic/automatic/assault_carbine/legion
+	result = /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,

@@ -788,96 +788,30 @@
 //ASSAULT RIFLES//
 //////////////////
 
-//Assault Carbine			Keywords: 5.56, Automatic, 20 (10-50) round mags, No bayonet.
-/obj/item/gun/ballistic/automatic/assault_carbine
-	name = "assault carbine"
-	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
-	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
-	icon_state = "assault_carbine"
-	item_state = "assault_carbine"
-	slot_flags = 0
+//R91 Assault Rifle		Keywords: 5.56, Automatic, 20 (10-50) round mags.
+/obj/item/gun/ballistic/automatic/assault_rifle
+	name = "R91 assault rifle"
+	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
+	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon_state = "r91"
+	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	force = 25
 	burst_size = 2
-	fire_delay = 4.5
-	burst_shot_delay = 2.5
-	spread = 8
+	fire_delay = 4
+	burst_shot_delay = 3
 	can_attachments = TRUE
-	can_scope = TRUE
-	scope_state = "scope_short"
-	scope_x_offset = 4
-	scope_y_offset = 15
-	can_bayonet = FALSE
-	can_suppress = TRUE
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 36
-	suppressor_y_offset = 16
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
-	always_reskinnable = TRUE
-	unique_reskin = list("Carbine" = "assault_carbine",
-						"R91" = "r91",
-						"Makeshift" = "makeshift",
-						"Classic" = "assault_carbine_old"
-						)
-
-//NCR Assault Rifle			Keywords: NCR, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, No bayonet.
-/obj/item/gun/ballistic/automatic/assault_carbine/ncr
-	name = "NCR assault carbine"
-	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
-	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
-	icon_state = "assault_carbine_ncr"
-	fire_delay = 5
-	burst_shot_delay = 2.2
-	spread = 2
-	can_scope = FALSE
-	can_attachments = FALSE
-	always_reskinnable = TRUE
-	unique_reskin = list("NCR Tactical Carbine" = "assault_carbine_ncr",
-						"NCR Homemade Special" = "R82_ncr"
-						)
-
-//"Pilum" Assault Rifle		Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
-/obj/item/gun/ballistic/automatic/assault_carbine/legion
-	name = "'Pilum' assault rifle"
-	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
-	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
-	icon_state = "assault_carbine_legion"
-	spread = 6
-	fire_delay = 3.5
-	force = 20
-	can_scope = FALSE
-	can_attachments = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 7
-	always_reskinnable = TRUE
-	unique_reskin = list("Carbine Pilum" = "assault_carbine_legion",
-						"R-91 Pilum" = "pilum"
-						)
-
-//Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
-/obj/item/gun/ballistic/automatic/bozar
-	name = "Bozar"
-	desc = "The ultimate refinement of the sniper's art, the Bozar is a scoped, accurate, light machine gun that will make nice big holes in your enemy. Uses 5.56."
-	icon_state = "bozar"
-	item_state = "sniper"
-	slot_flags = SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	untinkerable = TRUE
-	burst_size = 3
-	burst_shot_delay = 1.5
-	fire_delay = 3.5
-	spread = 4
+	knife_x_offset = 24
+	knife_y_offset = 11
+	spread = 8
+	can_suppress = TRUE
+	suppressor_x_offset = 32
+	suppressor_y_offset = 14
+	suppressor_state = "suppressor"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_attachments = FALSE
-	can_scope = FALSE
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
 //R91 "Infiltrator"		Keywords: UNIQUE, 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
@@ -906,6 +840,96 @@
 	always_reskinnable = TRUE
 	unique_reskin = list("Stockless" = "infiltrator_old",
 						"Wirestock" = "infiltrator"
+						)
+
+//NCR Assault Rifle			Keywords: NCR, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, No bayonet.
+/obj/item/gun/ballistic/automatic/assault_rifle/ncr
+	name = "NCR assault carbine"
+	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
+	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon_state = "assault_carbine_ncr"
+	fire_delay = 5
+	burst_shot_delay = 2.2
+	spread = 2
+	force = 15
+	can_scope = FALSE
+	can_attachments = FALSE
+	can_bayonet = FALSE
+	always_reskinnable = TRUE
+	unique_reskin = list("NCR Tactical" = "assault_carbine_ncr",
+						"NCR Homemade Special" = "R82_ncr"
+						)
+
+//"Pilum" Assault Rifle		Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+/obj/item/gun/ballistic/automatic/assault_rifle/legion
+	name = "'Pilum' assault rifle"
+	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
+	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon_state = "assault_carbine_legion"
+	spread = 6
+	fire_delay = 3.5
+	can_scope = FALSE
+	can_attachments = FALSE
+	bayonet_state = "bayonet"
+	knife_x_offset = 22
+	knife_y_offset = 7
+	always_reskinnable = TRUE
+	unique_reskin = list("Carbine Pilum" = "assault_carbine_legion",
+						"Makeshift Pilum" = "pilum"
+						)
+
+//Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
+/obj/item/gun/ballistic/automatic/bozar
+	name = "Bozar"
+	desc = "The ultimate refinement of the sniper's art, the Bozar is a scoped, accurate, light machine gun that will make nice big holes in your enemy. Uses 5.56."
+	icon_state = "bozar"
+	item_state = "sniper"
+	slot_flags = SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	untinkerable = TRUE
+	burst_size = 3
+	burst_shot_delay = 1.5
+	fire_delay = 3.5
+	spread = 4
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_attachments = FALSE
+	can_scope = FALSE
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
+
+//Assault Carbine			Keywords: 5.56, Automatic, 20 (10-50) round mags, No bayonet.
+/obj/item/gun/ballistic/automatic/assault_carbine
+	name = "assault carbine"
+	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
+	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon_state = "assault_carbine"
+	item_state = "assault_carbine"
+	slot_flags = 0
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	burst_size = 2
+	fire_delay = 4.5
+	burst_shot_delay = 2.5
+	spread = 8
+	can_attachments = TRUE
+	can_scope = TRUE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	can_bayonet = FALSE
+	can_suppress = TRUE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 16
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	always_reskinnable = TRUE
+	unique_reskin = list("Carbine" = "assault_carbine",
+						"Makeshift" = "makeshift",
+						"Classic" = "assault_carbine_old"
 						)
 
 //Type 93			Keywords: UNIQUE, 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
