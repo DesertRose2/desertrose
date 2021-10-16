@@ -1321,6 +1321,7 @@
 	name = "tier 8 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/garand,
 				/obj/effect/spawner/bundle/f13/hunting,
+				/obj/effect/spawner/bundle/f13/chinese,
 				/obj/effect/spawner/bundle/f13/citykiller,
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/wattz2k,
@@ -1338,6 +1339,7 @@
 				/obj/effect/spawner/bundle/f13/beam,
 				/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/plasmarifle,
+				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/ionrifle,
 				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/plasmaglock
@@ -1346,7 +1348,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 //TIER 10 GUN
 	name = "tier 10 gun"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/p94,
 				/obj/effect/spawner/bundle/f13/aer14,
 				/obj/effect/spawner/bundle/f13/amr,
