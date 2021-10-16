@@ -63,7 +63,7 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
 
-//Custom item - OllieOxen / Lina Fuchs
+//Custom item - OllieOxen / Lullaby Fuchs
 /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
 	name = "ranger trenchcloak"
 	desc = "(V) A cloak worn by Rangers of the New California Republic. Often seen on trail rangers or scouts, this cloak provides ample protection from the deserts harsh sunlight during the hours spent in the field and from the elements."
@@ -104,3 +104,10 @@
 	icon_state = "lt_pc"
 	item_state = "lt_pc"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	
+//Custom item - Lando / Griffith 'Grif' Clydesdale
+/obj/item/clothing/suit/armor/f13/trailranger/clyde
+	name = "Trail Ranger Poncho"
+	desc = "(IV) A Slimmed down tan poncho with a little bit of overhang on the shoulders, the waist of it is bound by a dark brown belt. The entire thing reeks of cigarette smoke."
+	icon_state = "ncr_clyde"
+	item_state = "ncr_clyde"

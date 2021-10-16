@@ -63,56 +63,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
-/*
-/datum/crafting_recipe/stunprod
-	name = "Stunprod"
-	result = /obj/item/melee/baton/cattleprod
-	reqs = list(/obj/item/restraints/handcuffs/cable = 1,
-				/obj/item/stack/rods = 1,
-				/obj/item/assembly/igniter = 1)
-	time = 40
-	category = CAT_WEAPONRY
-	subcategory = CAT_MELEE
-
-/datum/crafting_recipe/teleprod
-	name = "Teleprod"
-	result = /obj/item/melee/baton/cattleprod/teleprod
-	reqs = list(/obj/item/restraints/handcuffs/cable = 1,
-				/obj/item/stack/rods = 1,
-				/obj/item/assembly/igniter = 1,
-				/obj/item/stack/ore/bluespace_crystal = 1)
-	time = 40
-	category = CAT_WEAPONRY
-	subcategory = CAT_MELEE
-*/
-
-/datum/crafting_recipe/tailclub
-	name = "Tail Club"
-	result = /obj/item/tailclub
-	reqs = list(/obj/item/organ/tail/lizard = 1,
-				/obj/item/stack/sheet/metal = 1)
-	time = 40
-	category = CAT_WEAPONRY
-	subcategory = CAT_MELEE
-
-/datum/crafting_recipe/tailwhip
-	name = "Liz O' Nine Tails"
-	result = /obj/item/melee/chainofcommand/tailwhip
-	reqs = list(/obj/item/organ/tail/lizard = 1,
-				/obj/item/stack/cable_coil = 1)
-	time = 40
-	category = CAT_WEAPONRY
-	subcategory = CAT_MELEE
-
-/datum/crafting_recipe/catwhip
-	name = "Cat O' Nine Tails"
-	result = /obj/item/melee/chainofcommand/tailwhip/kitty
-	reqs = list(/obj/item/organ/tail/cat = 1,
-				/obj/item/stack/cable_coil = 1)
-	time = 40
-	category = CAT_WEAPONRY
-	subcategory = CAT_MELEE
-
 /datum/crafting_recipe/chainsaw
 	name = "Chainsaw"
 	result = /obj/item/twohanded/chainsaw
@@ -190,9 +140,10 @@
 	name = "Laser musket"
 	result = /obj/item/gun/ballistic/rifle/lasmusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
-	/obj/item/gun/ballistic/revolver/pipe_rifle = 1,
-	/obj/item/reagent_containers/food/drinks/bottle/f13nukacola = 1,
-	/obj/item/stack/cable_coil = 3)
+		/obj/item/gun/ballistic/revolver/pipe_rifle = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/f13nukacola = 1,
+		/obj/item/stack/cable_coil = 1,
+		/obj/item/trash/f13/electronic/toaster = 1,)
 	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
 	time = 120
 	category = CAT_WEAPONRY
@@ -558,21 +509,6 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//mg34
-/*
-/datum/crafting_recipe/mg34
-	name = "Maschinengewehr 34"
-	result = /obj/item/gun/ballistic/automatic/mg34
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/flux = 1,
-				/obj/item/stack/crafting/metalparts = 3
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_availible = FALSE
-*/
 //plasma pistol
 /datum/crafting_recipe/plasmapistol
 	name = "plasma pistol"
