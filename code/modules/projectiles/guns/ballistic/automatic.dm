@@ -878,6 +878,34 @@
 						"Makeshift Pilum" = "pilum"
 						)
 
+//Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
+/obj/item/gun/ballistic/automatic/type93
+	name = "Type 93 assault rifle"
+	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
+	icon_state = "type93"
+	item_state = "handmade_rifle"
+	icon = 'icons/obj/guns/ballistic/type93.dmi'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	can_suppress = TRUE
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	burst_size = 2
+	fire_delay = 3.5
+	burst_shot_delay = 2
+	spread = 6
+	extra_damage = 2
+	can_scope = FALSE
+	can_bayonet = FALSE
+	can_suppress = TRUE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 15
+	always_reskinnable = TRUE
+	unique_reskin = list("Type 93" = "type93",
+						"Homemade Rifle" = "homemade"
+						)
+
 //Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/bozar
 	name = "Bozar"
@@ -901,65 +929,6 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
-//Assault Carbine			Keywords: 5.56, Automatic, 20 (10-50) round mags, No bayonet.
-/obj/item/gun/ballistic/automatic/assault_carbine
-	name = "assault carbine"
-	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
-	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
-	icon_state = "assault_carbine"
-	item_state = "assault_carbine"
-	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	burst_size = 2
-	fire_delay = 4.5
-	burst_shot_delay = 2.5
-	spread = 8
-	can_attachments = TRUE
-	can_scope = TRUE
-	scope_state = "scope_short"
-	scope_x_offset = 4
-	scope_y_offset = 15
-	can_bayonet = FALSE
-	can_suppress = TRUE
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 36
-	suppressor_y_offset = 16
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
-	always_reskinnable = TRUE
-	unique_reskin = list("Carbine" = "assault_carbine",
-						"Makeshift" = "makeshift",
-						"Classic" = "assault_carbine_old"
-						)
-
-//Type 93			Keywords: UNIQUE, 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
-/obj/item/gun/ballistic/automatic/type93
-	name = "Type 93 assault rifle"
-	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
-	icon_state = "type93"
-	item_state = "handmade_rifle"
-	icon = 'icons/obj/guns/ballistic/type93.dmi'
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	can_suppress = TRUE
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	burst_size = 3
-	fire_delay = 3
-	burst_shot_delay = 2
-	spread = 8
-	extra_damage = 2
-	can_scope = FALSE
-	can_bayonet = FALSE
-	can_suppress = TRUE
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 36
-	suppressor_y_offset = 15
-	always_reskinnable = TRUE
-	unique_reskin = list("Type 93" = "type93",
-						"Homemade Rifle" = "homemade"
-						)
-
 //H&K G11			Keywords: 4.73mm, Automatic, 50 round mags.
 /obj/item/gun/ballistic/automatic/g11
 	name = "G11"
@@ -982,6 +951,37 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
+//Assault Carbine			Keywords: 5mm, Automatic, 20 (10-50) round mags, No bayonet.
+/obj/item/gun/ballistic/automatic/assault_carbine
+	name = "assault carbine"
+	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
+	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon_state = "assault_carbine"
+	item_state = "assault_carbine"
+	slot_flags = 0
+	mag_type = /obj/item/ammo_box/magazine/c5mm
+	burst_size = 2
+	fire_delay = 4
+	burst_shot_delay = 2
+	spread = 4
+	can_attachments = FALSE
+	can_scope = TRUE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 15
+	can_bayonet = FALSE
+	can_suppress = TRUE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 36
+	suppressor_y_offset = 16
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	always_reskinnable = TRUE
+	unique_reskin = list("Carbine" = "assault_carbine",
+						"Makeshift" = "makeshift",
+						"Classic" = "assault_carbine_old"
+						)
+
 //AK-112					Keywords: 5mm, Automatic, 24/48 mags
 /obj/item/gun/ballistic/automatic/ak112
 	name = "AK-112"
@@ -995,8 +995,8 @@
 	untinkerable = TRUE
 	force = 20
 	burst_size = 3
-	fire_delay = 4
-	burst_shot_delay = 1.6
+	fire_delay = 5
+	burst_shot_delay = 2.2
 	spread = 20
 	can_attachments = FALSE
 	can_suppress = FALSE

@@ -1072,6 +1072,13 @@
 				/obj/item/gun/ballistic/automatic/r84
 	)
 
+/obj/effect/spawner/bundle/f13/r91
+	name = "r91 spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_rifle,
+				/obj/item/ammo_box/magazine/m556/rifle/extended
+	)
+
 /obj/effect/spawner/bundle/f13/bar
 	name = "bar spawner"
 	items = list(
@@ -1143,6 +1150,15 @@
 	name = "flamethrower spawner"
 	items = list(
 				/obj/item/m2flamethrowertank,
+	)
+
+
+
+/obj/effect/spawner/bundle/f13/chinese
+	name = "type 93 spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/type93,
+				/obj/item/ammo_box/magazine/m556/rifle/extended
 	)
 
 /obj/effect/spawner/bundle/f13/bozar
@@ -1293,12 +1309,13 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 //TIER 7 GUN
 	name = "tier 7 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/needler,
+				/obj/effect/spawner/bundle/f13/tommygun,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/r84,
-				/obj/effect/spawner/bundle/f13/assault_carbine,
+				/obj/effect/spawner/bundle/f13/r91,
 				/obj/effect/spawner/bundle/f13/mp5,
-				/obj/effect/spawner/bundle/f13/bar,
 				/obj/effect/spawner/bundle/f13/aer9,
+				/obj/effect/spawner/bundle/f13/ak112,
 				/obj/effect/spawner/bundle/f13/neostead
 	)
 
@@ -1306,12 +1323,12 @@
 	name = "tier 8 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/garand,
 				/obj/effect/spawner/bundle/f13/hunting,
-				/obj/effect/spawner/bundle/f13/ak112,
 				/obj/effect/spawner/bundle/f13/citykiller,
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/wattz2k,
 				/obj/effect/spawner/bundle/f13/plasmapistol,
 				/obj/effect/spawner/bundle/f13/rcw,
+				/obj/effect/spawner/bundle/f13/bar,
 				/obj/effect/spawner/bundle/f13/flamethrower
 	)
 
@@ -1319,13 +1336,12 @@
 	name = "tier 9 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/m14,
-				/obj/effect/spawner/bundle/f13/infiltrator,
 				/obj/effect/spawner/bundle/f13/breacher,
 				/obj/effect/spawner/bundle/f13/beam,
 				/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/plasmarifle,
 				/obj/effect/spawner/bundle/f13/ionrifle,
-				/obj/effect/spawner/bundle/f13/tommygun,
+				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/plasmaglock
 	)
 
@@ -1354,7 +1370,6 @@
 				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 				/obj/item/gun/ballistic/automatic/m2a1,
-				/obj/item/gun/ballistic/automatic/type93,
 				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
 				)
 
