@@ -1302,12 +1302,12 @@
 				/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/revolverm29,
+				/obj/effect/spawner/bundle/f13/tommygun,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 //TIER 7 GUN
 	name = "tier 7 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/needler,
-				/obj/effect/spawner/bundle/f13/tommygun,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/r84,
 				/obj/effect/spawner/bundle/f13/r91,
