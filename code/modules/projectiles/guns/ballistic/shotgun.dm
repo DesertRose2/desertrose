@@ -299,6 +299,9 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/auto5.ogg'
+	unique_reskin = list("Browning Auto" = "auto5",
+						"Pre-War Police" = "shotgunpolice"
+						)
 
 //Lever action shotgun		Keywords: Shotgun, lever-action, 5 round internal mag.
 /obj/item/gun/ballistic/shotgun/lever

@@ -186,7 +186,9 @@
 	burst_shot_delay = 2
 	fire_delay = 3
 	suppressed = 1
-	untinkerable = TRUE
+	unique_reskin = list("American 180" = "smg22",
+						"Rockwell 'Special'" = "rockwell"
+						)
 
 //PPSH-41			Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
 /obj/item/gun/ballistic/automatic/smg/pps
@@ -494,6 +496,9 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 26
 	suppressor_y_offset = 31
+	unique_reskin = list("M1A2" = "m1carbine",
+						"M1A1 - Para" = "m1a1carbine"
+						)
 
 //M1/NCR Carbine			Keywords: NCR, 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', No Autosear (!)
 /obj/item/gun/ballistic/automatic/m1carbine/ncr
