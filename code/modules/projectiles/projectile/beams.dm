@@ -282,7 +282,7 @@
 
 /obj/item/projectile/beam/laser/pistol //AEP7
 	name = "laser beam"
-	damage = 35
+	damage = 30
 	armour_penetration = 0.25
 
 /obj/item/projectile/beam/laser/ultra_pistol
