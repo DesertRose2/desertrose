@@ -107,7 +107,7 @@
 		if(88)
 			new /obj/item/organ/brain(src)
 		if(89)
-			new /obj/item/gun/ballistic/automatic/pistol/mk23 (src)
+			new /obj/item/gun/ballistic/automatic/pistol/m1911 (src)
 		if(90)
 			new /obj/item/organ/heart(src)
 		if(91)

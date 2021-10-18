@@ -250,7 +250,6 @@
 #define TRAIT_HARD_YARDS        "hard_yards"
 #define	TRAIT_LIFEGIVER			"lifegiver"
 #define TRAIT_MARS_TEACH		"mars_teachings" //for legion unique functions
-#define TRAIT_CATEYE_NIGHT_VISION "cateye_night_vision"
 #define TRAIT_LONGPORKLOVER		"cannibal"
 
 #define TRAIT_SURGERY_LOW		"lowsurgery"

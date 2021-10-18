@@ -182,9 +182,9 @@
 				new path(LC)
 	return INITIALIZE_HINT_QDEL
 
-/obj/effect/spawner/bundle/crate/mosin
-	name = "Mosin-Nagant spawner"
+/obj/effect/spawner/bundle/crate/enfield
+	name = "Lee-Enfield spawner"
 	items = list(
-		/obj/item/gun/ballistic/rifle/mosin,
+		/obj/item/gun/ballistic/rifle/enfield,
 		/obj/item/ammo_box/a762
 	)

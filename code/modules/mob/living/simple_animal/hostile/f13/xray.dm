@@ -153,7 +153,7 @@
 	icon_living = "mmarauder_rifle"
 	projectiletype = /obj/item/projectile/bullet/a556/match
 	extra_projectiles = 3
-	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/xl70e3)
+	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/lsw)
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
 
 /obj/effect/mob_spawn/human/corpse/xray_marauder_boss

@@ -104,7 +104,7 @@
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
 	icon_state = "metal_raider"
 	icon_living = "metal_raider"
-	loot = list(/obj/effect/mob_spawn/human/corpse/raiderrangedsulphite, /obj/item/gun/ballistic/automatic/pistol/m1911/custom)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raiderrangedsulphite, /obj/item/gun/ballistic/automatic/pistol/m1911)
 	ranged = 1
 	maxHealth = 180
 	health = 180

@@ -118,16 +118,3 @@
 /////////
 //Items
 /////////
-
-/datum/quirk/cateye_night_vision
-	name = "Cateye Night Vision"
-	desc = "You can see slightly more clearly in full darkness than most people."
-	value = null
-	mob_trait = TRAIT_CATEYE_NIGHT_VISION
-	gain_text = "<span class='notice'>The shadows seem a little less dark.</span>"
-	lose_text = "<span class='danger'>Everything seems a little darker.</span>"
-	locked = TRUE
-
-/datum/quirk/cateye_night_vision/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	H.update_sight()

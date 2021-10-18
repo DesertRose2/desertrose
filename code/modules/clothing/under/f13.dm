@@ -135,6 +135,13 @@
 	icon_state = "modif_ranger"
 	item_state = "modif_ranger"
 	item_color = "modif_ranger"
+	
+/obj/item/clothing/under/f13/ranger/clyde
+	name = "Ranger Chaps"
+	desc = "A desert colored short-sleeved jumpsuit with protective khaki chaps at the legs up to the thighs."
+	icon_state = "ncr_clyde"
+	item_state = "ncr_clyde"
+	item_color = "ncr_clyde"
 
 /obj/item/clothing/under/f13/rustic
 	name = "rustic outfit"

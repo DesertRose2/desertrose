@@ -468,6 +468,21 @@
 			C.visible_message("<span class='suicide'>[C] screws up like an idiot and still dies anyway!</span>")
 			return (BRUTELOSS)
 
+/obj/item/stack/medical/bone_gel/hydra
+	name = "hydra"
+	singular_name = "hydra"
+	desc = "A large bottle with a hose at the end meant to help deal with fractures in natural way."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "hydra"
+	self_delay = 10
+
+	amount = 3
+	self_delay = 10
+
+/obj/item/stack/medical/bone_gel/hydra/attack(mob/living/M, mob/user)
+	to_chat(user, "<span class='warning'>Hydra can only be used on fractured limbs while aggressively holding someone!</span>")
+	return
+
 /obj/item/stack/medical/bone_gel/cyborg
 	custom_materials = null
 	is_cyborg = 1

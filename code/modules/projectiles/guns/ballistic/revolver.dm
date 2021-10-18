@@ -85,10 +85,6 @@
 	. = ..()
 	. += "[get_ammo(0,0)] of those are live rounds."
 
-/obj/item/gun/ballistic/revolver/detective/Initialize()
-	. = ..()
-	safe_calibers = magazine.caliber
-
 /obj/item/gun/ballistic/revolver/detective/screwdriver_act(mob/living/user, obj/item/I)
 	if(..())
 		return TRUE
@@ -121,41 +117,6 @@
 	return TRUE
 
 
-///////////////////
-// .38 REVOLVERS //
-///////////////////
-
-// .38 Detective					Keywords: .38, Double action, 6 rounds cylinder, Short barrel, Bootgun
-/obj/item/gun/ballistic/revolver/detective
-	name = ".38 Detective Special"
-	desc = "A small revolver thats easily concealable."
-	icon_state = "detective"
-	w_class = WEIGHT_CLASS_SMALL
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
-	force = 10
-	extra_damage = -2
-	spread = 4
-	obj_flags = UNIQUE_RENAME
-	var/list/safe_calibers
-
-	obj_flags = UNIQUE_RENAME
-	unique_reskin = list("Default" = "detective",
-						"Leopard Spots" = "detective_leopard",
-						"Black Panther" = "detective_panther",
-						"Gold Trim" = "detective_gold",
-						"The Peacemaker" = "detective_peacemaker"
-						)
-
-//Police revolver					Keywords: .38, Double action, 6 rounds cylinder
-/obj/item/gun/ballistic/revolver/police
-	name = ".38 police revolver"
-	desc = "Pre-war double action police revolver in .38 calibre."
-	icon_state = "police"
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
-	w_class = WEIGHT_CLASS_SMALL
-	fire_sound = 'sound/f13weapons/policepistol.ogg'
-
-
 /////////////////////
 // 10 MM REVOLVERS //
 /////////////////////
@@ -167,8 +128,10 @@
 	icon_state = "colt6520"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6520
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	extra_damage = 3
+	fire_delay = 4
 
-//Zhurong										Keywords: 10mm, Double action, 12 round cylinder
+//Zhurong										Keywords: UNIQUE, 10mm, Double action, 12 round cylinder
 /obj/item/gun/ballistic/revolver/zhurong
 	name = "Zhu-Rong v417"
 	desc = "The earlier model of the Chinese pistol found in the East Coast, which was known to be the model before all the simplifications of the design, making it smoother, packing a harderer punch. Chambered in 10mm."
@@ -196,8 +159,8 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/revolver/revolver45
-	name = ".S&W .45 ACP revolver"
-	desc = "A Colt Single Action Army retooled to accept .45 ACP catridges. A classic piece of Americana."
+	name = "Casull Cowboy .45"
+	desc = "A Casull revolver; where its name came from though is a msytery as its origins have been lost to the mists of time."
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
@@ -220,6 +183,16 @@
 // .357 REVOLVERS //
 ////////////////////
 
+//Police revolver					Keywords: .38, Double action, 6 rounds cylinder
+/obj/item/gun/ballistic/revolver/police
+	name = ".38 police revolver"
+	desc = "Pre-war double action police revolver in .357 calibre."
+	icon_state = "police"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
+	w_class = WEIGHT_CLASS_SMALL
+	fire_sound = 'sound/f13weapons/policepistol.ogg'
+	fire_delay = 5
+
 //357 Magnum					Keywords: .357, Double action, 6 rounds cylinder
 /obj/item/gun/ballistic/revolver/colt357
 	name = ".357 magnum revolver"
@@ -227,7 +200,7 @@
 	item_state = "357colt"
 	icon_state = "357colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
-	fire_delay = 5
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 
 //Lucky							Keywords: UNIQUE, .357, Double action, 6 rounds cylinder, Block chance,
@@ -325,17 +298,6 @@
 	weapon_weight = WEAPON_LIGHT
 	extra_damage = -2 //Smaller barrel thus lower bullet velocity
 	spread = 3
-
-//.44 single action		 			Keywords: .44, Single action, 6 rounds cylinder, Long barrel
-/obj/item/gun/ballistic/revolver/revolver44
-	name = ".44 magnum single-action revolver"
-	desc = "I hadn't noticed, but there on his hip, was a short-barreled bad .44..."
-	item_state = "44colt"
-	icon_state = "44colt"
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	fire_delay = 5
-	extra_damage = 2
-	fire_sound = 'sound/f13weapons/44revolver.ogg'
 
 //.44 Ranger Revolver
 /obj/item/gun/ballistic/revolver/revolver44/ranger
