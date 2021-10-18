@@ -1148,7 +1148,7 @@
 	desc = "A relatively dated yet reliable machine gun chambered in 7.62; a rare find! These can be found in musuems and national guard stockpiles as an old squad support training weapon."
 	icon = 'icons/obj/guns/ballistic/bar.dmi'
 	icon_state = "bar"
-	item_state = "bar"
+	item_state = "R84"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/m762
 	actions_types = list(/datum/action/item_action/toggle_firemode)
