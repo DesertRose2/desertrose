@@ -21,3 +21,10 @@
 	desc = "(V) A reforged T45d power armor helmet. It had its plating around mouth removed as well as its light from top of it. Sports a red vertical plume to denote a veteran."
 	icon_state = "legvetpal"
 	item_state = "legvetpal"
+
+//Custom item - KayZach
+/obj/item/clothing/head/helmet/f13/legion/recruit/decan/houndmaster
+	name = "Houndmasters Headdress"
+	desc = "(III) A small hand crafted headdress made from the head of a dog that is caked with some sort of blood in certain places."
+	icon_state = "houndmaster"
+	item_state = "houndmaster"
