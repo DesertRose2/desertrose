@@ -569,16 +569,15 @@
 /datum/crafting_recipe/commando
 	name = "Commando Carbine"
 	result = /obj/item/gun/ballistic/rifle/mag/commando
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/plastic = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/crafting/metalparts = 3
+	reqs = list(/obj/item/suppressor = 1,
+				/obj/item/gun/ballistic/rifle/enfield = 1,
+				/obj/item/stack/crafting/metalparts = 5
 				)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_WELDER, TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-	always_availible = FALSE
+	always_availible = TRUE
 
 //type93 assault rifle
 /datum/crafting_recipe/type93
