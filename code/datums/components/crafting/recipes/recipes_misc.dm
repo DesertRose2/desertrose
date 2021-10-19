@@ -544,9 +544,10 @@
 	name = "Binoculars"
 	result = /obj/item/binoculars
 	time = 60
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/glass = 5)
-	tools = list(TOOL_SCREWDRIVER,TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/glass = 5,
+				/obj/item/crafting/duct_tape = 1)
+	tools = list(TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
@@ -554,7 +555,12 @@
 	name = "Servo repair kit"
 	result = /obj/item/experimental
 	time = 30
-	reqs = list(/obj/item/crafting = 5)
+	reqs = list(/obj/item/crafting/frame = 1,
+				/obj/item/crafting/board = 1,
+				/obj/item/crafting/capacitor = 1,
+				/obj/item/crafting/transistor = 1,
+				/obj/item/crafting/servo = 1
+				)
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC

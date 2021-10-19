@@ -206,10 +206,10 @@
 	category = list("initial", "Basic Magazines")
 
 /datum/design/ammolathe/m45expmagazine
-	name = "empty socom magazine (.45)"
+	name = "empty extended pistol magazine (.45)"
 	id = "m45expmagazine"
 	materials = list(/datum/material/iron = 4000)
-	build_path = /obj/item/ammo_box/magazine/m45exp/empty
+	build_path = /obj/item/ammo_box/magazine/m45/extended/empty
 	category = list("initial", "Basic Magazines")
 
 //Tier 2 Ammo

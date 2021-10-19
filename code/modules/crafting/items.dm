@@ -934,62 +934,57 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	var/list/Loot = list() //List of items
 
-/obj/item/salvage/low
-	name = "Pre-war salvage"
-	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
-	icon_state = "salvage"
-	Loot = list(/obj/item/stack/crafting/metalparts/five,
-				/obj/item/stack/ore/blackpowder/two,
-				/obj/item/stack/crafting/electronicparts/three,
-				/obj/item/stack/sheet/metal/ten,
-				/obj/item/stack/sheet/cloth/five,
-				/obj/item/stack/sheet/leather/five,
-				/obj/item/stock_parts/cell/ammo/ec,
-				/obj/item/stack/crafting/goodparts
-				)
-
 /obj/item/salvage/crafting
 	name = "salvaged components"
 	desc = "Some salvaged components, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "salvagecomponents"
-	Loot = list(/obj/item/crafting/diode,
-				/obj/item/crafting/transistor,
-				/obj/item/crafting/capacitor,
-				/obj/item/crafting/fuse,
-				/obj/item/crafting/resistor,
-				/obj/item/crafting/switch_crafting,
-				/obj/item/crafting/bulb,
-				/obj/item/crafting/board,
-				/obj/item/crafting/buzzer,
-				/obj/item/crafting/frame,
-				/obj/item/crafting/small_gear,
-				/obj/item/crafting/large_gear,
-				/obj/item/crafting/duct_tape,
-				/obj/item/crafting/coffee_pot,
-				/obj/item/crafting/wonderglue,
-				/obj/item/crafting/turpentine,
-				/obj/item/crafting/abraxo,
-				/obj/item/crafting/igniter,
-				/obj/item/crafting/timer,
-				/obj/item/crafting/sensor,
-				/obj/item/crafting/lunchbox)
+	Loot = list(/obj/item/crafting/diode = 5,
+				/obj/item/crafting/transistor = 5,
+				/obj/item/crafting/capacitor = 5,
+				/obj/item/crafting/fuse = 5,
+				/obj/item/crafting/resistor = 3,
+				/obj/item/crafting/switch_crafting = 3,
+				/obj/item/crafting/board = 5,
+				/obj/item/crafting/frame = 5,
+				/obj/item/crafting/small_gear = 1,
+				/obj/item/crafting/large_gear = 1,
+				/obj/item/crafting/duct_tape = 3,
+				/obj/item/crafting/coffee_pot = 3,
+				/obj/item/crafting/wonderglue = 1,
+				/obj/item/crafting/turpentine = 1,
+				/obj/item/crafting/abraxo = 3,
+				/obj/item/crafting/lunchbox = 1
+				)
 
+/obj/item/salvage/low
+	name = "Pre-war salvage"
+	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
+	icon_state = "salvage"
+	Loot = list(/obj/item/stack/sheet/metal/ten,
+				/obj/item/stack/sheet/cloth/five,
+				/obj/item/stack/sheet/leather/five,
+				/obj/item/stack/ore/blackpowder/two,
+				/obj/item/stack/crafting/metalparts/five,
+				/obj/item/stack/crafting/goodparts,
+				/obj/item/stack/crafting/electronicparts/three,
+				/obj/item/crafting/tube
+				)
 
 /obj/item/salvage/high
 	name = "Advanced pre-war salvage"
 	desc = "Some advanced pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "goodsalvage"
-	Loot = list(/obj/item/blueprint/research,
-				/obj/item/advanced_crafting_components/receiver,
-				/obj/item/advanced_crafting_components/assembly,
-				/obj/item/advanced_crafting_components/alloys,
-				/obj/item/advanced_crafting_components/flux,
-				/obj/item/advanced_crafting_components/lenses,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/weldingtool/advanced,
-				/obj/item/advanced_crafting_components/conductors,
-				/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/stock_parts/cell/ammo/ecp,)
+	Loot = list(/obj/item/blueprint/research = 5,
+				/obj/item/advanced_crafting_components/receiver = 2,
+				/obj/item/advanced_crafting_components/assembly = 2,
+				/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/advanced_crafting_components/lenses = 1,
+				/obj/item/advanced_crafting_components/conductors = 1,
+				/obj/item/crafting/grenade_casing = 3,
+				/obj/item/crafting/servo = 5 ,
+				/obj/item/weldingtool/advanced = 5
+				)
 
 /obj/item/experimental
 	name = "Servo repair kit"
@@ -1033,7 +1028,7 @@
 /obj/item/experimental/proc/parmor(obj/item/W, mob/user)
 	var/obj/item/clothing/suit/armor/f13/power_armor/A = W
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
-	if(prob(20))
+	if(prob(40))
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))//ups raider to salvaged
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
@@ -1046,17 +1041,11 @@
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)
 			return
-	if(prob(10))
-		qdel(A)
-		to_chat(user,"You ruin the armor completely, destroying it in the process...")
-	if(prob(5))
-		qdel(A)
-		to_chat(user,"You ruin the armor completely, destroying it in the process...")
 	qdel(src)
 
 /obj/item/experimental/proc/pahat(obj/item/W, mob/user)
 	var/obj/item/clothing/head/helmet/f13/power_armor/H = W
-	if(prob(20))
+	if(prob(50))
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm))//ups raider to salvaged
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
@@ -1069,12 +1058,6 @@
 			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
 			qdel(H)
 			return
-	if(prob(10))
-		qdel(H)
-		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
-	if(prob(5))
-		qdel(H)
-		to_chat(user,"You ruin the helmet completely, destroying it in the process...")
 	qdel(src)
 
 /obj/item/invention
@@ -1092,19 +1075,19 @@
 
 	var/obj/item/item
 
-	var/list/vhigh = list(/obj/item/melee/powerfist, /obj/item/nullrod/claymore/chainsaw_sword)
+	var/list/vhigh = list(/obj/item/melee/powerfist, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/twohanded/thermic_lance)
 
 	var/list/high = list(/obj/item/shishkebabpack, /obj/item/gun/energy/gammagun, /obj/item/clothing/suit/armor/f13/sulphitearmor,
 	/obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/melee/powerfist/moleminer, /obj/item/circuitboard/machine/chem_master,
 	/obj/item/circuitboard/machine/cell_charger)
 
 	var/list/mid = list(/obj/item/twohanded/fireaxe/bmprsword, /obj/item/twohanded/sledgehammer, /obj/item/shield/makeshift,/obj/item/gun/ballistic/automatic/autopipe,
-	/obj/item/gun/ballistic/rifle/lasmusket, /obj/item/gun/ballistic/rifle/plasmacaster, /obj/item/clothing/suit/armor/f13/metalarmor,
+	/obj/item/grenade/homemade/dynamite, /obj/item/clothing/suit/armor/f13/metalarmor, /obj/item/gun/ballistic/rifle/enfield, /obj/item/gun/ballistic/rifle/mag/varmint,
 	/obj/item/clothing/head/helmet/f13/raider/eyebot, /obj/item/clothing/head/helmet/knight/f13/metal/reinforced)
 
-	var/list/low = list(/obj/item/gun/ballistic/revolver/zipgun,/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
+	var/list/low = list(/obj/item/gun/ballistic/revolver/pipe_rifle,/obj/item/fishingrod,/obj/item/grenade/homemade/firebomb,
 	/obj/item/clothing/suit/armor/f13/slam, /obj/item/clothing/suit/armor/f13/raider/raidermetal,/obj/item/clothing/head/helmet/f13/raidermetal,
-	/obj/item/clothing/head/helmet/knight/f13/metal, /obj/item/melee/unarmed/punchdagger)
+	/obj/item/clothing/head/helmet/knight/f13/metal)
 
 	if(prob(60))
 		item = pick(low)

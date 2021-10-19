@@ -133,7 +133,7 @@ Tribal Shaman
 /datum/outfit/job/tribal/f13shaman
 	name = "Shaman"
 	jobtype = /datum/job/tribal/f13shaman
-	uniform = 	null
+	uniform = 	/obj/item/clothing/under/f13/tribe_shaman
 	gloves = 	/obj/item/clothing/gloves/f13/handwraps
 	shoes = 	/obj/item/clothing/shoes/sandal
 	r_hand = 	/obj/item/twohanded/sledgehammer/shamanstaff

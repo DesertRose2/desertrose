@@ -370,22 +370,27 @@
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
 	ckeywhitelist = list("conormackgegore")
-	
+
 /datum/gear/donator/kits/viatoris
 	name = "Viatoris's belongings"
 	path = /obj/item/storage/box/large/custom_kit/viatoris/
 	ckeywhitelist = list("muhsollini")
-	
+
 /datum/gear/donator/kits/thebatsman
 	name = "The batsman's belongings"
 	path = /obj/item/storage/box/large/custom_kit/thebatsman
 	ckeywhitelist = list("elizabethdame")
-	
+
 /datum/gear/donator/kits/parkerwright
 	name = "Parker Wright's belongings"
 	path = /obj/item/storage/box/large/custom_kit/parkerwright
 	ckeywhitelist = list("kayzach")
-	
+
+/datum/gear/donator/kits/houndmaster
+	name = "Canis' belongings"
+	path = /obj/item/storage/box/large/custom_kit/houndmaster
+	ckeywhitelist = list("kayzach")
+
 /datum/gear/donator/kits/ashergriffin
 	name = "Asher Griffin's belongings"
 	path = /obj/item/storage/box/large/custom_kit/ashergriffin
@@ -450,7 +455,8 @@
 						"novaskelly",
 						"alasania",
 						"jackmcintyre",
-						"deathlysoul")
+						"deathlysoul",
+						"brainbodger")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -496,7 +502,8 @@
 	ckeywhitelist = list("hawkwestheimer",
 						 "theneworleans",
 						 "ollieoxen",
-						 "cythisia")
+						 "cythisia",
+						 "landoorando")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -588,7 +595,9 @@
 						"yecrowbarman",
 						"totallyinnocent",
 						"deathlysoul",
-						"kayzach")
+						"kayzach",
+						"brainbodger",
+						"landoorando")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////

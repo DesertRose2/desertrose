@@ -219,7 +219,7 @@ GLOBAL_LIST_INIT(trash_craft, list(
 GLOBAL_LIST_INIT(trash_gun, list(
 	/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 	/obj/item/gun/ballistic/revolver/colt6520 = 1,
-	/obj/item/gun/ballistic/rifle/mosin = 1,
+	/obj/item/gun/ballistic/rifle/enfield = 1,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 	/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 	/obj/item/gun/ballistic/revolver/widowmaker = 1
@@ -523,7 +523,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/shotgun/bean,
 	/obj/item/gun/ballistic/revolver/caravan_shotgun,
 	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/gun/ballistic/rifle/mosin,
+	/obj/item/gun/ballistic/rifle/enfield,
 	/obj/item/ammo_box/a762,
 	/obj/item/gun/ballistic/revolver/zipgun,
 	/obj/item/gun/ballistic/revolver/pipe_rifle,

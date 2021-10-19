@@ -922,7 +922,7 @@
 	granted_trait = TRAIT_DEMOLITION_EXPERT
 	traitname = "explosives"
 	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
-	crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
+	crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
@@ -956,7 +956,7 @@
 			if("Explosive Expert")
 				granted_trait = TRAIT_DEMOLITION_EXPERT
 				traitname = "explosives"
-				crafting_recipe_types = list(/datum/crafting_recipe/explosive/molotov, /datum/crafting_recipe/explosive/firebomb, /datum/crafting_recipe/explosive/coffeepotbomb, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/pipebomb)
+				crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
 	else
 		. = ..()
 

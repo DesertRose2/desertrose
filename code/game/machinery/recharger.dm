@@ -13,7 +13,6 @@
 	var/using_power = FALSE //Did we put power into "charging" last process()?
 
 	var/static/list/allowed_devices = typecacheof(list(
-		/obj/item/gun/energy,
 		/obj/item/melee/baton,
 		/obj/item/ammo_box/magazine/recharge,
 		/obj/item/modular_computer,
@@ -21,7 +20,7 @@
 		/obj/item/ammo_box/magazine/mws_mag,
 		/obj/item/electrostaff,
 		/obj/item/gun/ballistic/automatic/magrifle))
-
+//Maybe if you just kept your mouth shut
 /obj/machinery/recharger/RefreshParts()
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		recharge_coeff = C.rating

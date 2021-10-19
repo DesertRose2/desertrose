@@ -1,5 +1,5 @@
 /obj/machinery/vending/medical
-	name = "\improper NanoMed Plus"
+	name = "\improper Arktos Pharma Company Deluxe Vendor"
 	desc = "Medical drug dispenser."
 	icon_state = "med"
 	icon_deny = "med-deny"
@@ -27,7 +27,6 @@
 					/obj/item/storage/hypospraykit/toxin = 2,
 					/obj/item/storage/hypospraykit/o2 = 2,
 					/obj/item/storage/hypospraykit/brute = 2,
-					/obj/item/storage/hypospraykit/enlarge = 2,
 					/obj/item/reagent_containers/glass/bottle/vial/small = 5,
 					/obj/item/storage/briefcase/medical = 2,
 					/obj/item/stack/sticky_tape/surgical = 3,
@@ -44,8 +43,6 @@
 					/obj/item/reagent_containers/hypospray/medipen = 3,
 					/obj/item/storage/belt/medical = 3,
 					/obj/item/wrench/medical = 1,
-					/obj/item/storage/belt/medolier/full = 2,
-					///obj/item/gun/syringe/dart = 2,
 					/obj/item/storage/briefcase/medical = 2,
 					/obj/item/plunger/reinforced = 2)
 
@@ -58,7 +55,7 @@
 	cost_multiplier_per_dept = list(ACCOUNT_MED = 0)
 
 /obj/item/vending_refill/medical
-	machine_name = "NanoMed Plus"
+	machine_name = "Arktos Pharma Company Deluxe Vendor"
 	icon_state = "refill_medical"
 
 /obj/machinery/vending/medical/syndicate_access

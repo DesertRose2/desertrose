@@ -13,13 +13,6 @@
 	damage = 0.5
 	ammo_type = /obj/item/ammo_casing/caseless/arrow/ash
 
-/obj/item/projectile/bullet/reusable/arrow/bone //AP for ashwalkers
-	name = "bone arrow"
-	desc = "Arrow made of bone and sinew."
-	damage = 30
-	armour_penetration = 0.35
-	ammo_type = /obj/item/ammo_casing/caseless/arrow/bone
-
 /obj/item/projectile/bullet/reusable/arrow/bronze //Just some AP shots
 	name = "bronze arrow"
 	desc = "Bronze tipped arrow."
@@ -63,3 +56,10 @@
 		var/mob/living/carbon/human/targetHuman = target
 		targetHuman.adjust_fire_stacks(5)
 		targetHuman.IgniteMob() //you just got burned!
+
+/obj/item/projectile/bullet/reusable/arrow/bone //JHP for arrows
+	name = "jagged barbed bone arrow"
+	desc = "Arrow made of bone and sinew."
+	damage = 45
+	armour_penetration = 0.1
+	ammo_type = /obj/item/ammo_casing/caseless/arrow/bone

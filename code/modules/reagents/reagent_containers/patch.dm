@@ -69,14 +69,14 @@
 	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice = 10)
 	icon_state = "bandaid_healingpoultice"
 	self_delay = 0
-/* Unused for now
+
 /obj/item/reagent_containers/pill/patch/poultice_zombie
-	name = "'Vita' poultice"
+	name = "zombie poultice"
 	desc = "A well refined powder, mostly in use by Caesar's Legion for its side effects which it causes in first time users."
-	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice_zombie = 10)
+	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice_zombie = 10, /datum/reagent/medicine/coagulant = 10)
 	icon_state = "bandaid_healingpoulticezombie"
-	self_delay = 40
-*/
+	self_delay = 50
+
 /obj/item/reagent_containers/pill/patch/bitterdrink
 	name = "bitter drink"
 	desc = "A disgusting drink favored by legion during their long marches. It leaves disgusting aftertaste."
@@ -98,11 +98,3 @@
 	icon = 'icons/obj/syringe.dmi'
 	icon_state = "med-x"
 	item_state = "med-x"
-
-/obj/item/reagent_containers/pill/patch/hydra
-	name = "hydra"
-	desc = "A large bottle containing a blend of incredients; an incredible stimulant."
-	icon = 'icons/obj/chemical.dmi'
-	icon_state = "hydra"
-	self_delay = 10
-	list_reagents = list(/datum/reagent/medicine/hydra = 10)
