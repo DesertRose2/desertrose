@@ -1,4 +1,4 @@
-// .357 
+// .357
 /obj/item/ammo_casing/a357
 	name = ".357 FMJ bullet casing"
 	desc = "A .357 FMJ bullet casing."
@@ -12,13 +12,6 @@
 /obj/item/ammo_casing/a357/jfp
 	name = ".357 JFP bullet casing"
 	desc = "A .357 JFP bullet casing."
-
-// .38 special
-/obj/item/ammo_casing/c38
-	name = ".38 special bullet casing"
-	desc = "A .38 special bullet casing."
-	caliber = "38"
-	projectile_type = /obj/item/projectile/bullet/c38
 
 // .44 magnum
 /obj/item/ammo_casing/m44

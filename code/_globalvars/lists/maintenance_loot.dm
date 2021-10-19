@@ -637,7 +637,6 @@ GLOBAL_LIST_INIT(loot_t1_ammo, list(
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/ammo_box/shotgun/buck,
 	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
 	/obj/item/ammo_box/magazine/m556/rifle/small
 ))
@@ -648,7 +647,6 @@ GLOBAL_LIST_INIT(loot_t2_ammo, list(
 	/obj/item/ammo_box/a308,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
 	/obj/item/ammo_box/magazine/m556/rifle,
-	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/ammo_box/m44,
 	/obj/item/ammo_box/tube/a357,

@@ -135,7 +135,7 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	extra_damage = 6
+	extra_damage = 4
 	fire_delay = 3.5
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
@@ -151,7 +151,8 @@
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	extra_damage = 8
-	fire_delay = 5
+	fire_delay = 4
+	extra_penetration = 0.1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_scope = TRUE

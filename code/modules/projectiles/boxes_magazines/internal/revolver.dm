@@ -1,9 +1,3 @@
-/obj/item/ammo_box/magazine/internal/cylinder/rev38
-	name = "detective revolver cylinder"
-	ammo_type = /obj/item/ammo_casing/c38
-	caliber = "38"
-	max_ammo = 6
-
 /obj/item/ammo_box/magazine/internal/cylinder/rev762
 	name = "\improper Nagant revolver cylinder"
 	caliber = "n762"
