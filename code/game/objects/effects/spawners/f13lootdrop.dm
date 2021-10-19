@@ -1365,11 +1365,11 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/rifle/remington/paciencia,
 				/obj/item/gun/energy/laser/solar,
-				/obj/item/gun/energy/laser/plasma/alien,
 				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 				/obj/item/gun/ballistic/automatic/m2a1,
-				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
+				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+				/obj/item/gun/ballistic/automatic/pistol/pistol127/lildevil
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random
