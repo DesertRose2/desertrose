@@ -102,15 +102,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/ranger
 	restricted_desc = "Rangers"
-	restricted_roles = list("NCR Veteran Ranger", "NCR Ranger")
-
-/datum/gear/uniform/ranger/trail
-	name = "trail ranger outfit"
-	path = /obj/item/clothing/under/f13/ranger/trail
-
-/datum/gear/uniform/ranger/patrol
-	name = "patrol ranger outfit"
-	path = /obj/item/clothing/under/f13/ranger/patrol
+	restricted_roles = list("NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Ranger")
 
 /datum/gear/uniform/ranger/vet
 	name = "ranger flannel outfit"
@@ -414,6 +406,22 @@
 /datum/gear/uniform/shorts/jean
 	name = "Jean Shorts"
 	path = /obj/item/clothing/under/pants/jeanshort
+
+/datum/gear/uniform/shorts/jeanbshorts
+	name = "minijorts"
+	path = /obj/item/clothing/under/pants/jeanbshorts
+
+/datum/gear/uniform/shorts/darkbshorts
+	name = "dark minijorts"
+	path = /obj/item/clothing/under/pants/darkbshorts
+
+/datum/gear/uniform/shorts/blackbshorts
+	name = "black denim minishorts"
+	path = /obj/item/clothing/under/pants/blackbshorts
+
+/datum/gear/uniform/shorts/brownbshorts
+	name = "brown minishorts"
+	path = /obj/item/clothing/under/pants/brownbshorts
 
 /datum/gear/uniform/skirt/denim
 	name = "Denim Skirt"

@@ -6,12 +6,12 @@
 /datum/export/weapon/makeshift_shield
 	cost = 30
 	unit_name = "nonstandard shield"
-	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/roman, /obj/item/shield/riot/buckler, /obj/item/shield/makeshift)
+	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/buckler, /obj/item/shield/makeshift)
 
 /datum/export/weapon/riot_shield
 	cost = 50
 	unit_name = "riot shield"
-	export_types = list(/obj/item/shield/riot, /obj/item/shield/riot/tower)
+	export_types = list(/obj/item/shield/riot)
 
 /datum/export/weapon/riot_shield
 	cost = 70
@@ -55,10 +55,10 @@
 	unit_name = "energy gun"
 	export_types = list(/obj/item/gun/energy/e_gun)
 
-/datum/export/weapon/wt550
+/*/datum/export/weapon/wt550
 	cost = 130
 	unit_name = "WT-550 automatic rifle"
-	export_types = list(/obj/item/gun/ballistic/automatic/wt550)
+	export_types = list(/obj/item/gun/ballistic/automatic/wt550)*/
 
 /datum/export/weapon/shotgun
 	cost = 200
@@ -91,11 +91,11 @@
 //RND Guns////
 //////////////
 
-/datum/export/weapon/lasercarbine
+/*/datum/export/weapon/lasercarbine
 	cost = 120
 	unit_name = "laser carbine"
 	export_types = list(/obj/item/gun/energy/laser/carbine)
-	include_subtypes = TRUE
+	include_subtypes = TRUE*/
 
 /datum/export/weapon/teslagun
 	cost = 130
@@ -138,7 +138,7 @@
 	export_types = list(/obj/item/gun/energy/xray)
 
 /datum/export/weapon/ioncarbine
-	cost = 200 
+	cost = 200
 	unit_name = "ion carbine"
 	export_types = list(/obj/item/gun/energy/ionrifle/carbine)
 
@@ -242,20 +242,20 @@
 	unit_name = "PML-9 rocket-propelled grenade launcher"
 	export_types = list(/obj/item/gun/ballistic/rocketlauncher)
 
-/datum/export/weapon/antitank
+/*/datum/export/weapon/antitank
 	cost = 300
 	unit_name = "anti-tank pistol"
-	export_types = list(/obj/item/gun/ballistic/automatic/pistol/antitank/syndicate)
+	export_types = list(/obj/item/gun/ballistic/automatic/pistol/antitank/syndicate)*/
 
 /datum/export/weapon/clownstuff
 	cost = 500
 	unit_name = "clown combat equipment"
 	export_types = list(/obj/item/pneumatic_cannon/pie/selfcharge, /obj/item/shield/energy/bananium, /obj/item/melee/transforming/energy/sword/bananium)
-
+/*
 /datum/export/weapon/bulldog
 	cost = 400
 	unit_name = "drum-fed compact combat shotgun"
-	export_types = list(/obj/item/gun/ballistic/automatic/shotgun/bulldog)
+	export_types = list(/obj/item/gun/ballistic/automatic/shotgun/bulldog)*/
 
 /datum/export/weapon/smg
 	cost = 350
@@ -292,20 +292,20 @@
 	unit_name = "Aussec Armory L6 SAW"
 	export_types = list(/obj/item/gun/ballistic/automatic/l6_saw)
 
-/datum/export/weapon/m90
+/*/datum/export/weapon/m90
 	cost = 400
 	unit_name = "M90-gl carbine"
-	export_types = list(/obj/item/gun/ballistic/automatic/m90)
+	export_types = list(/obj/item/gun/ballistic/automatic/m90)*/
 
 /datum/export/weapon/powerglove
 	cost = 100
 	unit_name = "pneumatic gauntlet"
 	export_types = list(/obj/item/melee/powerfist)
 
-/datum/export/weapon/sniper
+/*/datum/export/weapon/sniper
 	cost = 750
 	unit_name = "anti-materiel rifle"
-	export_types = list(/obj/item/gun/ballistic/automatic/sniper_rifle/syndicate)
+	export_types = list(/obj/item/gun/ballistic/automatic/sniper_rifle/syndicate)*/
 
 /datum/export/weapon/ebow
 	cost = 600

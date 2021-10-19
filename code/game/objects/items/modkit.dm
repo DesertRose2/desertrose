@@ -209,7 +209,7 @@
 
 /obj/item/modkit/harebellscout
 	name = "Harebell scout beret modkit"
-	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout)
+	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout_old)
 	result_item = /obj/item/clothing/head/beret/tina_beret
 
 /obj/item/modkit/trailcoat
@@ -219,7 +219,7 @@
 
 /obj/item/modkit/hoodedrecon
 	name = "Hooded recon modkit"
-	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	target_items = list(/obj/item/clothing/suit/armor/f13/rangercombat/sergeant)
 	result_item = /obj/item/clothing/suit/hooded/f13/hooded_recon
 
 /obj/item/modkit/lieutenantplatecarrier
@@ -247,8 +247,28 @@
 	name = "Mutant Veteran Ranger Armour modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
 
+/obj/item/modkit/legionvetpalhunter
+	name = "Veteran Paladin Hunter Modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/legion/vet)
+	result_item = /obj/item/clothing/suit/armor/f13/legion/vet/pal
+
+/obj/item/modkit/legionvetpalhunterhelm
+	name = "Veteran Paladin Hunter Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/legion/vet)
+	result_item = /obj/item/clothing/head/helmet/f13/legion/vet/pal
+
+/obj/item/modkit/houndmasterhelm
+	name = "Houndmaster Decon Modkit"
+	target_items = list (/obj/item/clothing/head/helmet/f13/legion/recruit/decan, /obj/item/clothing/head/helmet/f13/legion/prime)
+	result_item = /obj/item/clothing/head/helmet/f13/legion/recruit/decan/houndmaster
+
+
+
+
+
 
 //Crusader Pistol Modkits
+
 /obj/item/modkit/crusader_10mm
 	name = "crusader pistol 10mm conversion kit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,
@@ -293,3 +313,19 @@
 						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
 	)
 	result_item = /obj/item/gun/energy/plasma/crusader
+
+//Maxson Carbine
+
+/obj/item/modkit/maxson
+	name = "maxson carbine 5.56 conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/service/maxson,
+						/obj/item/gun/ballistic/automatic/service/maxson/c5mm
+	)
+	result_item = /obj/item/gun/ballistic/automatic/service/maxson
+
+/obj/item/modkit/maxson_c5mm
+	name = "maxson carbine 5mm conversion kit"
+	target_items = list(/obj/item/gun/ballistic/automatic/service/maxson,
+						/obj/item/gun/ballistic/automatic/service/maxson/c5mm
+	)
+	result_item = /obj/item/gun/ballistic/automatic/service/maxson/c5mm

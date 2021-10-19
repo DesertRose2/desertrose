@@ -72,12 +72,14 @@ Great Khans
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
 
 /datum/outfit/job/wasteland/f13genghis
 	name = "Genghis Khan"
 	jobtype = /datum/job/wasteland/f13genghis
 	id = 		/obj/item/card/id/khantattoo
-	ears = 		/obj/item/radio/headset
+	ears = 		/obj/item/radio/headset/headset_khans
 	belt = 		/obj/item/claymore/machete/reinforced
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
@@ -150,12 +152,20 @@ Great Khans
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
+
+	if(!H.gang)
+		var/datum/gang/greatkhans/GK = GLOB.greatkhans
+		GLOB.all_gangs |= GK
+		GK.add_member(H)
+		H.gang = GK
 
 /datum/outfit/job/wasteland/f13pusher
 	name = "Great Khan"
 	jobtype = /datum/job/wasteland/f13pusher
 	id = 		/obj/item/card/id/khantattoo
-	ears = 		/obj/item/radio/headset
+	ears = 		/obj/item/radio/headset/headset_khans
 	belt = 		/obj/item/claymore/machete
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
@@ -182,38 +192,32 @@ Great Khans
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 
 
-/datum/outfit/job/wasteland/f13pusher/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
 
-	if(!H.gang)
-		var/datum/gang/greatkhans/GK = GLOB.greatkhans
-		GLOB.all_gangs |= GK
-		GK.add_member(H)
-		H.gang = GK
-/*
 /datum/outfit/loadout/pusher
 	name = "Chemist"
 	backpack_contents = list(
-		/obj/item/reagent_containers/glass/beaker/large=2, \
-		/obj/item/book/granter/trait/chemistry=1)
-*/
+		/obj/item/reagent_containers/glass/beaker/plastic=2,
+		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/clothing/mask/gas/glass=1)
+
 /datum/outfit/loadout/enforcer
 	name = "Enforcer"
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
+	l_hand = /obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck=1, \
-		/obj/item/ammo_box/shotgun/bean=1, \
-		/obj/item/restraints/legcuffs/bola/tactical=1, \
-		/obj/item/restraints/handcuffs=2)
+		/obj/item/ammo_box/shotgun/buck=1,
+		/obj/item/ammo_box/shotgun/slug=1,
+		/obj/item/restraints/handcuffs=2,
+		/obj/item/restraints/legcuffs/bola=2)
 
 /datum/outfit/loadout/brawler
 	name = "Brawler"
-	gloves =	/obj/item/melee/unarmed/brass/spiked
+	l_hand = /obj/item/twohanded/baseball/spiked
 	backpack_contents = list(
-		/obj/item/twohanded/baseball/spiked=1, \
-		/obj/item/reagent_containers/pill/patch/healpoultice=2)
+		/obj/item/melee/unarmed/brass/spiked=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
+		/obj/item/restraints/legcuffs/bola/tactical=1,
+		/obj/item/book/granter/trait/big_leagues=1)
 /*
 Bandit
 */
@@ -443,7 +447,7 @@ Outlaw
 /datum/outfit/loadout/mercenary
 	name = "Mercenary"
 	suit = /obj/item/clothing/suit/armor/f13/combat/swat
-	l_hand = /obj/item/gun/ballistic/automatic/mini_uzi
+	l_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm=3,
 		/obj/item/kitchen/knife/trench=1,
@@ -463,9 +467,9 @@ Outlaw
 /datum/outfit/loadout/conartist
 	name = "Con Artist"
 	suit = /obj/item/clothing/under/f13/bennys
-	l_hand = /obj/item/gun/ballistic/automatic/pistol/mk23
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/autoloader
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp=3,
+		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/switchblade=1,
 		/obj/item/card/id/syndicate=1,
 		/obj/item/stack/f13Cash/caps/twofivezero=1,
@@ -532,7 +536,7 @@ Outlaw
 	head = /obj/item/clothing/head/helmet/skull
 	shoes = /obj/item/clothing/shoes/jackboots
 	uniform = /obj/item/clothing/under/jabroni
-	l_hand = /obj/item/gun/ballistic/automatic/greasegun
+	l_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
 		/obj/item/megaphone=1,
@@ -727,7 +731,7 @@ Outlaw
 	gloves = /obj/item/clothing/gloves/color/brown
 	neck = /obj/item/clothing/neck/mantle/brown
 	glasses = /obj/item/clothing/glasses/f13/biker
-	l_hand = /obj/item/gun/ballistic/automatic/pistol/m1911/compact
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/m1911
 	backpack_contents =  list(
 		/obj/item/storage/box/vendingmachine=1,
 		/obj/item/stack/f13Cash/caps/threefivezero=1)

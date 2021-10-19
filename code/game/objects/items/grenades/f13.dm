@@ -25,7 +25,7 @@
 	ex_light = 0
 	ex_flame = 0
 	shrapnel_type = /obj/item/projectile/bullet/pellet/stingball
-	shrapnel_radius = 8
+	shrapnel_radius = 6
 
 /obj/item/grenade/f13/frag
 	name = "frag grenade"
@@ -38,7 +38,18 @@
 	ex_light = 2
 	ex_flame = 0
 	shrapnel_type = /obj/item/projectile/bullet/shrapnel
-	shrapnel_radius = 6
+	shrapnel_radius = 8
+
+/obj/item/grenade/f13/explosive
+	name = "high-explosive grenade"
+	desc = "A prewar military-grade explosive grenade with short fuse, remember to unpin and throw."
+	icon_state = "he"
+	throw_speed = 4
+	throw_range = 7
+	ex_dev = 0
+	ex_heavy = 3
+	ex_light = 5
+	ex_flame = 0
 
 /obj/item/grenade/f13/plasma
 	name = "plasma grenade"
@@ -61,7 +72,7 @@
 	throw_range = 7
 	ex_dev = 0
 	ex_heavy = 0
-	ex_light = 0
+	ex_light = 1
 	ex_flame = 5
 
 //Fortune
@@ -87,7 +98,6 @@
 	det_time = text2num(pickweight(times))
 	if(det_time < 0) //checking for 'duds'
 		range = 1
-		det_time = rand(30,80)
 	else
 		range = pick(2,2,2,3,3,3,4)
 
@@ -238,7 +248,7 @@
 	name = "dynamite stick"
 	desc = "A stick of industrial-grade mining dynamite, it's brand is withered away from the time spent in the desert."
 	throw_speed = 2
-	throw_range = 6
+	throw_range = 5
 	display_timer = 0
 	det_time = 30
 	icon_state = "dynamite"
@@ -265,8 +275,8 @@
 	name = "pipebomb"
 	desc = "A makeshift tube filled with gunpowder and nails, perfect gift throught mail."
 	icon_state = "pipebomb"
-	throw_speed = 3
-	throw_range = 4
+	throw_speed = 4
+	throw_range = 5
 	display_timer = 0
 	det_time = 60
 	shrapnel_type = /obj/item/projectile/bullet/shrapnel/nail

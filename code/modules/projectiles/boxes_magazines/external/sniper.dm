@@ -1,7 +1,7 @@
 /obj/item/ammo_box/magazine/amr
-	name = "Anti-materiel rifle magazine (.50)"
+	name = "anti-materiel rifle magazine (.50MG)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = ".50mag"
+	icon_state = "50mag"
 	max_ammo = 8
 	ammo_type = /obj/item/ammo_casing/a50MG
 	caliber = "a50MG"
@@ -11,7 +11,7 @@
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/amr/incindiary
-	name = "Anti-materiel magazine (Incindiary)"
+	name = "anti-materiel magazine (.50MG incendiary)"
 	ammo_type = /obj/item/ammo_casing/a50MG/incendiary
 
 

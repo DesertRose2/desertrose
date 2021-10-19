@@ -1,20 +1,32 @@
+//IN THIS DOCUMENT: Rifle template, Lever-action rifles, Bolt-action rifles, Magazine-fed bolt-action rifles
+
+////////////////////
+// RIFLE TEMPLATE //
+////////////////////
+
 /obj/item/gun/ballistic/rifle
-	name = "rifle"
-	desc = "A traditional shotgun with wood furniture and a four-shell capacity underneath."
+
+	name = "rifle template"
+	desc = "Should not exist"
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 10
-	flags_1 =  CONDUCT_1
+	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/internal/shot
+	can_automatic = FALSE
+	slowdown = 0.5
+	fire_delay = 6
+	spread = 0
+	force = 15 //Decent clubs generally speaking
+	flags_1 =  CONDUCT_1
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
-	weapon_weight = WEAPON_HEAVY
 	spawnwithmagazine = TRUE
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
-
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
@@ -76,9 +88,10 @@
 // BOLT ACTION RIFLE //
 ///////////////////////
 
+//Template for bolt-action rifles. Avoid changing this unless needed as it can cause issues with the other bolt action rifles.
 /obj/item/gun/ballistic/rifle/boltaction
-	name = "\improper Mosin Nagant"
-	desc = "This piece of junk looks like something that could have been used 700 years ago. It feels slightly moist."
+	name = "bolt action template"
+	desc = "If you see this - cry to a coder. Something's wrong."
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
 	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
@@ -89,25 +102,6 @@
 	knife_x_offset = 27
 	knife_y_offset = 13
 
-/obj/item/gun/ballistic/rifle/boltaction/improvised
-	name = "Makeshift 7.62mm Rifle"
-	icon_state = "ishotgun"
-	icon_state = "irifle"
-	item_state = "shotgun"
-	desc = "A bolt-action breechloaded rifle that takes 7.62mm bullets."
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/improvised
-	can_bayonet = FALSE
-	var/slung = FALSE
-
-/*/obj/item/gun/ballistic/shotgun/boltaction/pump(mob/M)
-	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
-	if(bolt_open)
-		pump_reload(M)
-	else
-		pump_unload(M)
-	bolt_open = !bolt_open
-	update_icon()	//I.E. fix the desc
-	return 1*/
 /obj/item/gun/ballistic/rifle/boltaction/pump(mob/M)
 	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
 	pump_unload(M)
@@ -125,82 +119,39 @@
 	. = ..()
 	. += "The bolt is [bolt_open ? "open" : "closed"]."
 
-/obj/item/gun/ballistic/rifle/boltaction/improvised/attackby(obj/item/A, mob/user, params)
-	..()
-	if(istype(A, /obj/item/stack/cable_coil) && !sawn_off)
-		if(A.use_tool(src, user, 0, 10, skill_gain_mult = EASY_USE_TOOL_MULT))
-			slot_flags = ITEM_SLOT_BACK
-			to_chat(user, "<span class='notice'>You tie the lengths of cable to the rifle, making a sling.</span>")
-			slung = TRUE
-			update_icon()
-		else
-			to_chat(user, "<span class='warning'>You need at least ten lengths of cable if you want to make a sling!</span>")
+//Lee-Enfield Mk III			Keywords: .308, Low-tier loot. 			Note: Canon? No. But it's purpose is for the Commando Carbine. Fills a needed niche of low-tier but still hard-ish hitting rifle. Plus makes more sense than a KAR or Mosin; may swap to a Springfield.
+/obj/item/gun/ballistic/rifle/enfield
+	name = "Lee-Enfield Mk III"
+	desc = "An ancient rifle from the olden days of trench warfare and world wars. This rifle fell out of service centuries ago but became a sought after gun for hunters and renactors alike."
+	icon_state = "moistnugget"
+	item_state = "moistnugget"
+	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
+	can_scope = TRUE
+	scope_state = "mosin_scope"
+	scope_x_offset = 3
+	scope_y_offset = 13
+	can_bayonet = TRUE
+	bayonet_state = "lasmusket"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	extra_damage = 6
+	fire_delay = 3.5
+	pump_sound = 'sound/weapons/boltpump.ogg'
+	fire_sound = 'sound/f13weapons/boltfire.ogg'
+	can_suppress = FALSE
 
-/obj/item/gun/ballistic/rifle/boltaction/improvised/update_overlays()
-	. = ..()
-	if(slung)
-		. += "[icon_state]sling"
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted
-	name = "enchanted bolt action rifle"
-	desc = "Careful not to lose your head."
-	var/guns_left = 30
-	var/gun_type
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enchanted
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/arcane_barrage
-	name = "arcane barrage"
-	desc = "Pew Pew Pew."
-	fire_sound = 'sound/weapons/emitter.ogg'
-	pin = /obj/item/firing_pin/magic
-	icon_state = "arcane_barrage"
-	item_state = "arcane_barrage"
-	can_bayonet = FALSE
-	item_flags = NEEDS_PERMIT | DROPDEL
-	flags_1 = NONE
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/enchanted/arcane_barrage
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/Initialize()
-	. = ..()
-	bolt_open = TRUE
-	pump()
-	gun_type = type
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/dropped(mob/user)
-	..()
-	guns_left = 0
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/proc/discard_gun(mob/user)
-	throw_at(pick(oview(7,get_turf(user))),1,1)
-	user.visible_message("<span class='warning'>[user] tosses aside the spent rifle!</span>")
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/arcane_barrage/discard_gun(mob/user)
-	return
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/attack_self()
-	return
-
-/obj/item/gun/ballistic/rifle/boltaction/enchanted/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
-	..()
-	if(guns_left)
-		var/obj/item/gun/ballistic/rifle/boltaction/enchanted/GUN = new gun_type
-		GUN.guns_left = guns_left - 1
-		user.dropItemToGround(src, TRUE)
-		user.swap_hand()
-		user.put_in_hands(GUN)
-	else
-		user.dropItemToGround(src, TRUE)
-	discard_gun(user)
-
+//Hunting Rifle					Keywords: .308, High damage, Slow firing.
 /obj/item/gun/ballistic/rifle/remington
-	name = "hunting rifle"
+	name = "Hunting rifle"
 	desc = "A sturdy hunting rifle, chambered in .308. and in use before the war."
 	icon_state = "308"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 3
+	extra_damage = 8
+	fire_delay = 5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_scope = TRUE
@@ -219,6 +170,7 @@
 		if(W.active)
 			sawoff(user)
 
+//"Paciencia"					Kewords: UNIQUE, .308, Huge damage boost.
 /obj/item/gun/ballistic/rifle/remington/paciencia
 	name = "Paciencia"
 	desc = "A modified .308 hunting rifle with a reduced magazine but an augmented receiver. A Mexican flag is wrapped around the stock. You only have three shots- make them count."
@@ -244,8 +196,10 @@
 	..()
 	src.pump(user)
 
+
+//Cowboy Repeater				Keywords: .357 Magnum, Repeater rifle, auto-cycles
 /obj/item/gun/ballistic/rifle/automatic/hunting/cowboy
-	name = "cowboy repeater"
+	name = "Cowboy repeater"
 	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of whiskey and cigarettes."
 	icon_state = "cowboyrepeater"
 	item_state = "cowboyrepeater"
@@ -262,8 +216,9 @@
 	scope_y_offset = 21
 	extra_damage = 5
 
+//Trail Carbine				Keywords: .44 Magnum, Repeater rifle, auto-cycles
 /obj/item/gun/ballistic/rifle/automatic/hunting/trail
-	name = "trail carbine"
+	name = "Trail carbine"
 	desc = "A lever action rifle chambered in .44 Magnum."
 	icon_state = "trailcarbine"
 	item_state = "trailcarbine"
@@ -279,8 +234,9 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 
+//Brush Gun				Keywords: .45-70, Repeater rifle, auto-cycles
 /obj/item/gun/ballistic/rifle/automatic/hunting/brush
-	name = "brush gun"
+	name = "Brush gun"
 	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
 	icon_state = "brushgun"
 	item_state = "brushgun"
@@ -296,50 +252,14 @@
 	scope_x_offset = 11
 	scope_y_offset = 21
 
-/obj/item/gun/ballistic/rifle/kar98k
-	name = "\improper karabiner 98k"
-	desc = "An old military service rifle from World War 2. This model was rechambered in .308."
-	icon_state = "kar98"
-	item_state = "308"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/kar98
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-	fire_delay = 5
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	can_scope = TRUE
-	extra_damage = 10
-	extra_penetration = 0.2
-	scope_state = "kar_scope"
-	scope_x_offset = 11
-	scope_y_offset = 21
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	untinkerable = FALSE
+//////////////////////////////
+// LASER AND PLASMA MUSKETS //
+//////////////////////////////
 
-/obj/item/gun/ballistic/rifle/mosin
-	name = "mosin nagant m38"
-	desc = "A classic Russian bolt action chambered in 7.62. Now all you need is some vodka."
-	icon_state = "moistnugget"
-	item_state = "moistnugget"
-	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
-	inaccuracy_modifier = 0.5
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	can_scope = TRUE
-	scope_state = "mosin_scope"
-	scope_x_offset = 3
-	scope_y_offset = 13
-	can_bayonet = TRUE
-	bayonet_state = "lasmusket"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	extra_damage = 5
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-	suppressor_state = "rifle_suppressor"
-	can_suppress = TRUE
-	suppressor_x_offset = 25
-	suppressor_y_offset = 30
-	untinkerable = FALSE
+//These are commented out as they have the following issues: 1. Balance wise, they don't work well. 2. They fill no niche nor are worth the cost of the ammo used in them. 3. Players get upset when they get one of these instead of a bolt action due to ammo costs.
+//Maybe these can be overhauled at some point to not be as bad; but for now they're disabled. Keeping the code though since it has potential.
 
+/*
 /obj/item/gun/ballistic/rifle/lasmusket
 	name = "Laser musket"
 	desc = "In the wasteland, one must make do. And making do is what the creator of this weapon does. Made from metal scraps, electronic parts. an old rifle stock and a Nuka Cola bottle full of dreams, the Laser Musket is sure to stop anything in their tracks and make those raiders think twice."
@@ -394,12 +314,13 @@
 	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	untinkerable = FALSE
-
+*/
 
 /////////////////////////////////////
 // MAGAZINE FED BOLT-ACTION RIFLES //
 /////////////////////////////////////
 
+//Template for magazine-fed bolt actions as opposed to internal magazine ones.
 /obj/item/gun/ballistic/rifle/mag
 	name = "magazine fed bolt-action rifle template"
 	desc = "should not exist."
@@ -435,6 +356,7 @@
 /obj/item/gun/ballistic/rifle/mag/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
 
+//Varmint Rifle					Keywords: 5.56, Low-tier loot, Med-damage, Decent fire rate
 /obj/item/gun/ballistic/rifle/mag/varmint
 	name = "varmint rifle"
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
@@ -443,10 +365,12 @@
 	force = 18
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	fire_delay = 6
+	fire_delay = 3
 	spread = 0
-	extra_damage = 6
+	extra_damage = 8
+	extra_penetration = 0.1
 	can_bayonet = FALSE
+	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 12
@@ -456,38 +380,7 @@
 	suppressor_y_offset = 31
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
-/obj/item/gun/ballistic/rifle/mag/commando
-	name = "commando carbine"
-	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Uses .45 socom magazines."
-	icon_state = "commando"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m45exp
-	extra_damage = 5
-	fire_delay = 6
-	spread = 1
-	can_unsuppress = FALSE
-	suppressed = 1
-	scope_state = "scope_medium"
-	scope_x_offset = 6
-	scope_y_offset = 14
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
-/obj/item/gun/ballistic/rifle/mag/commando/dmr
-	name = "destroyer carbine"
-	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun outside of military tesitng grounds and musuems. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
-	icon_state = "destroyer"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m45exp
-	extra_damage = 8
-	fire_delay = 7
-	spread = 0
-	can_unsuppress = FALSE
-	suppressed = 1
-	scope_state = "scope_medium"
-	scope_x_offset = 6
-	scope_y_offset = 14
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
+//"Ratslayer"					Keywords: UNIQUE, 5.56, High pen
 /obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
 	name = "Ratslayer"
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
@@ -502,12 +395,54 @@
 	can_scope = FALSE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
+//Commando Carbine				Keywords: .45 ACP, Mid-tier loot, High damage			Note: Canon? No. But fills a balance niche and has an interesting sprite. Basically a modified Lee-Enflield Mk III.
+/obj/item/gun/ballistic/rifle/mag/commando
+	name = "commando carbine"
+	desc = "A integrally suppressed bolt action carbine, it appears to use some ancinet bolt-action rifle design but modified to take a lower-caliber round. Uses .45 socom magazines."
+	icon_state = "commando"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45
+	extra_damage = 8
+	extra_penetration = 0.1
+	fire_delay = 5
+	spread = 1
+	can_unsuppress = FALSE
+	can_scope = TRUE
+	suppressed = 1
+	can_scope = TRUE
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+//Commando Carbine				Keywords: LEGION, .45 ACP, Very high damage				Note: Canon? No. But fills a balance niche and has an interesting sprite. Basically a modified Lee-Enflield Mk III but now on steroids.
+/obj/item/gun/ballistic/rifle/mag/commando/dmr
+	name = "destroyer carbine"
+	desc = "A integrally suppressed bolt action carbine, it appears to use some ancinet bolt-action rifle design but modified to take a lower-caliber round. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."
+	icon_state = "destroyer"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m45
+	extra_damage = 10
+	extra_penetration = 0.15
+	fire_delay = 6
+	spread = 0
+	can_unsuppress = FALSE
+	suppressed = 1
+	can_scope = TRUE
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+//.50 BMG AMR					Keywords: .50, Very high damage, Very high AP, Big-Fuckin'-Gun
 /obj/item/gun/ballistic/rifle/mag/antimateriel
 	name = "anti-materiel rifle"
 	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
 	icon_state = "amr"
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
+	untinkerable = TRUE
+	extra_damage = 10
 	fire_delay = 10
 	recoil = 1
 	spread = 0

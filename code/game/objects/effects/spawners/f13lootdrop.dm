@@ -717,10 +717,10 @@
 				/obj/item/ammo_box/shotgun/bean
 				)
 
-/obj/effect/spawner/bundle/f13/mosin
-	name = "mosin nagant and ammo spawner"
+/obj/effect/spawner/bundle/f13/enfield
+	name = "Lee-Enfield and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/rifle/mosin,
+				/obj/item/gun/ballistic/rifle/enfield,
 				/obj/item/ammo_box/a762
 				)
 
@@ -743,6 +743,13 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/m1911,
 				/obj/item/ammo_box/magazine/m45
+				)
+
+/obj/effect/spawner/bundle/f13/autoloader
+	name = "autoloader and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/pistol/autoloader,
+				/obj/item/ammo_box/magazine/m45/extended
 				)
 
 /obj/effect/spawner/bundle/f13/ninemil
@@ -773,13 +780,6 @@
 				/obj/item/ammo_box/magazine/m22
 				)
 
-/obj/effect/spawner/bundle/f13/m1911c
-	name = "compact m1911 and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/pistol/m1911/compact,
-				/obj/item/ammo_box/magazine/m45
-				)
-
 /obj/effect/spawner/bundle/f13/beretta
 	name = "beretta pistol and ammo spawner"
 	items = list(
@@ -799,6 +799,14 @@
 	items = list(
 				/obj/item/gun/ballistic/revolver/pipe_rifle
 				)
+
+/obj/effect/spawner/bundle/f13/type17
+	name = "type17 spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/pistol/type17,
+				/obj/item/ammo_box/magazine/m9mm
+				)
+
 /obj/effect/spawner/bundle/f13/huntingshotgun
 	name = "hunting shotgun and ammo spawner"
 	items = list(
@@ -834,11 +842,11 @@
 				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
-/obj/effect/spawner/bundle/f13/chinese
-	name = "chinese assault rifle and ammo spawner"
+/obj/effect/spawner/bundle/f13/ak112
+	name = "AK-112 assault rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/type93,
-				/obj/item/ammo_box/magazine/m556/rifle
+				/obj/item/gun/ballistic/automatic/ak112,
+				/obj/item/ammo_box/magazine/c5mm
 				)
 
 /obj/effect/spawner/bundle/f13/police_pistol
@@ -869,13 +877,6 @@
 				/obj/item/ammo_box/magazine/greasegun
 	)
 
-/obj/effect/spawner/bundle/f13/mk23
-	name = "mk23 and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/pistol/mk23,
-				/obj/item/ammo_box/magazine/m45exp
-				)
-
 /obj/effect/spawner/bundle/f13/widowmaker
 	name = "widowmaker spawner"
 	items = list(
@@ -892,21 +893,21 @@
 /obj/effect/spawner/bundle/f13/miniuzi
 	name = "mini uzi and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/mini_uzi,
+				/obj/item/gun/ballistic/automatic/smg/mini_uzi,
 				/obj/item/ammo_box/magazine/uzim9mm,
 				)
 
 /obj/effect/spawner/bundle/f13/smg10mm
 	name = "10mm SMG and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/smg10mm,
+				/obj/item/gun/ballistic/automatic/smg/smg10mm,
 				/obj/item/ammo_box/magazine/m10mm_adv/ext
 				)
 
 /obj/effect/spawner/bundle/f13/greasegun
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/greasegun,
+				/obj/item/gun/ballistic/automatic/smg/greasegun,
 				/obj/item/ammo_box/magazine/greasegun
 				)
 
@@ -948,7 +949,7 @@
 /obj/effect/spawner/bundle/f13/beretta/select
 	name = "select-fire beretta pistol and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/pistol/beretta/automatic,
+				/obj/item/gun/ballistic/automatic/pistol/beretta,
 				/obj/item/ammo_box/magazine/m9mmds
 				)
 
@@ -978,14 +979,7 @@
 /obj/effect/spawner/bundle/f13/smg22
 	name = "american 180 spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/smg22
-				)
-
-/obj/effect/spawner/bundle/f13/assault_rifle
-	name = "assault rifle and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/assault_rifle,
-				/obj/item/ammo_box/magazine/m556/rifle/assault
+				/obj/item/gun/ballistic/automatic/smg/smg22
 				)
 
 /obj/effect/spawner/bundle/f13/marksman
@@ -1037,6 +1031,13 @@
 				/obj/item/ammo_box/magazine/m762
 				)
 
+/obj/effect/spawner/bundle/f13/m14
+	name = "m14 rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/m14,
+				/obj/item/ammo_box/magazine/m762
+				)
+
 /obj/effect/spawner/bundle/f13/riotshotgun
 	name = "riot shotgun and ammo spawner"
 	items = list(
@@ -1065,34 +1066,52 @@
 				/obj/item/stock_parts/cell/ammo/mfc
 	)
 
-/obj/effect/spawner/bundle/f13/r82
-	name = "r82 and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/service/r82,
-				/obj/item/ammo_box/magazine/m556/rifle
-	)
 /obj/effect/spawner/bundle/f13/r84
 	name = "r84 spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/r84
 	)
-/obj/effect/spawner/bundle/f13/bastard
-	name = "bastard spawner"
+
+/obj/effect/spawner/bundle/f13/r91
+	name = "r91 spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/bastard
+				/obj/item/gun/ballistic/automatic/assault_rifle,
+				/obj/item/ammo_box/magazine/m556/rifle/extended
 	)
+
+/obj/effect/spawner/bundle/f13/bar
+	name = "bar spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/bar
+	)
+
+/obj/effect/spawner/bundle/f13/bastard
+	name = "g11 spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/g11,
+				/obj/item/ammo_box/magazine/m473
+	)
+
+/obj/effect/spawner/bundle/f13/assault_carbine
+	name = "assault carbine spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_carbine
+	)
+
 /obj/effect/spawner/bundle/f13/garand
 	name = "garand spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/m1garand,
 				/obj/item/ammo_box/magazine/garand308
 	)
+
 /obj/effect/spawner/bundle/f13/mp5
 	name = "mp5 and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/mp5,
+				/obj/item/gun/ballistic/automatic/smg/mp5,
 				/obj/item/ammo_box/magazine/uzim9mm
 	)
+
 /obj/effect/spawner/bundle/f13/citykiller
 	name = "citykiller and ammo spawner"
 	items = list(
@@ -1133,6 +1152,13 @@
 				/obj/item/m2flamethrowertank,
 	)
 
+/obj/effect/spawner/bundle/f13/chinese
+	name = "type 93 spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/type93,
+				/obj/item/ammo_box/magazine/m556/rifle/extended
+	)
+
 /obj/effect/spawner/bundle/f13/bozar
 	name = "bozar and ammo spawner"
 	items = list(
@@ -1157,7 +1183,7 @@
 /obj/effect/spawner/bundle/f13/tommygun
 	name = "tommygun and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/tommygun,
+				/obj/item/gun/ballistic/automatic/smg/tommygun,
 				/obj/item/ammo_box/magazine/tommygunm45
 	)
 
@@ -1189,16 +1215,10 @@
 		/obj/item/ammo_box/shotgun/slug
 	)
 
-/obj/effect/spawner/bundle/f13/kar98k
-	name = "Kar-98k and ammo spawner"
-	items = list(
-		/obj/item/gun/ballistic/rifle/kar98k,
-		/obj/item/ammo_box/a308
-	)
 /obj/effect/spawner/bundle/f13/p90
 	name = "p90 and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/automatic/p90,
+		/obj/item/gun/ballistic/automatic/smg/p90,
 		/obj/item/ammo_box/magazine/m10mm_p90
 	)
 
@@ -1223,25 +1243,27 @@
 	loot = list(/obj/effect/spawner/bundle/f13/single_shotgun,
 				/obj/effect/spawner/bundle/f13/pistol22,
 				/obj/effect/spawner/bundle/f13/zipgun,
-				/obj/effect/spawner/bundle/f13/caravan_shotgun,
 				/obj/effect/spawner/bundle/f13/piperifle
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 //TIER 2 GUN
 	name = "tier 2 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/mosin,
+	loot = list(/obj/effect/spawner/bundle/f13/enfield,
 				/obj/effect/spawner/bundle/f13/widowmaker,
+				/obj/effect/spawner/bundle/f13/caravan_shotgun,
 				/obj/effect/spawner/bundle/f13/autopipe,
-				/obj/effect/spawner/bundle/f13/remington
+				/obj/effect/spawner/bundle/f13/police_pistol,
+				/obj/effect/spawner/bundle/f13/ninemil
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 //TIER 3 GUN
 	name = "tier 3 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/colt6520,
-				/obj/effect/spawner/bundle/f13/ninemil,
-				/obj/effect/spawner/bundle/f13/police_pistol,
+	loot = list(/obj/effect/spawner/bundle/f13/varmint,
+				/obj/effect/spawner/bundle/f13/colt6520,
+				/obj/effect/spawner/bundle/f13/type17,
 				/obj/effect/spawner/bundle/f13/colt357,
 				/obj/effect/spawner/bundle/f13/wattz,
+				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/smg22
 	)
 
@@ -1251,10 +1273,9 @@
 	loot = list(/obj/effect/spawner/bundle/f13/beretta,
 				/obj/effect/spawner/bundle/f13/sig,
 				/obj/effect/spawner/bundle/f13/n99,
-				/obj/effect/spawner/bundle/f13/varmint,
 				/obj/effect/spawner/bundle/f13/m1911,
-				/obj/effect/spawner/bundle/f13/m1911c,
-				/obj/effect/spawner/bundle/f13/huntingshotgun
+				/obj/effect/spawner/bundle/f13/remington,
+				/obj/effect/spawner/bundle/f13/leveraction
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5  //TIER 5 GUN
@@ -1262,78 +1283,77 @@
 	lootcount = 1
 
 	loot = list(/obj/effect/spawner/bundle/f13/beretta/select,
+				/obj/effect/spawner/bundle/f13/autoloader,
 				/obj/effect/spawner/bundle/f13/miniuzi,
 				/obj/effect/spawner/bundle/f13/greasegun,
 				/obj/effect/spawner/bundle/f13/cowboy,
-				/obj/effect/spawner/bundle/f13/laserpistol,
-				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
-				/obj/effect/spawner/bundle/f13/smg10mm
+				/obj/effect/spawner/bundle/f13/smg10mm,
+				/obj/effect/spawner/bundle/f13/auto5,
+				/obj/effect/spawner/bundle/f13/commando
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 //TIER 6 GUN
 	name = "tier 6 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/revolver44,
+	loot = list(/obj/effect/spawner/bundle/f13/laserpistol,
+				/obj/effect/spawner/bundle/f13/m1carbine,
+				/obj/effect/spawner/bundle/f13/revolver44,
 				/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/deagle,
-				/obj/effect/spawner/bundle/f13/commando,
-				/obj/effect/spawner/bundle/f13/mk23,
 				/obj/effect/spawner/bundle/f13/revolverm29,
-				/obj/effect/spawner/bundle/f13/leveraction,
-				/obj/effect/spawner/bundle/f13/neostead
+				/obj/effect/spawner/bundle/f13/tommygun,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 //TIER 7 GUN
 	name = "tier 7 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/auto5,
-				/obj/effect/spawner/bundle/f13/plasmapistol,
-				/obj/effect/spawner/bundle/f13/needler,
+	loot = list(/obj/effect/spawner/bundle/f13/needler,
+				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/r84,
-				/obj/effect/spawner/bundle/f13/bastard,
-				/obj/effect/spawner/bundle/f13/assault_rifle,
-				/obj/effect/spawner/bundle/f13/chinese,
+				/obj/effect/spawner/bundle/f13/r91,
+				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/aer9,
-				/obj/effect/spawner/bundle/f13/garand
+				/obj/effect/spawner/bundle/f13/ak112,
+				/obj/effect/spawner/bundle/f13/neostead
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 //TIER 8 GUN
 	name = "tier 8 gun"
-	loot = list(/obj/effect/spawner/bundle/f13/r82,
-				/obj/effect/spawner/bundle/f13/marksman,
+	loot = list(/obj/effect/spawner/bundle/f13/garand,
 				/obj/effect/spawner/bundle/f13/hunting,
-				/obj/effect/spawner/bundle/f13/mp5,
+				/obj/effect/spawner/bundle/f13/chinese,
 				/obj/effect/spawner/bundle/f13/citykiller,
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/wattz2k,
+				/obj/effect/spawner/bundle/f13/plasmapistol,
 				/obj/effect/spawner/bundle/f13/rcw,
-				/obj/effect/spawner/bundle/f13/kar98k,
-				/obj/effect/spawner/bundle/f13/infiltrator
+				/obj/effect/spawner/bundle/f13/bar,
+				/obj/effect/spawner/bundle/f13/flamethrower
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 //TIER 9 GUN
 	name = "tier 9 gun"
 	loot = list(/obj/effect/spawner/bundle/f13/rangemaster,
+				/obj/effect/spawner/bundle/f13/m14,
 				/obj/effect/spawner/bundle/f13/breacher,
 				/obj/effect/spawner/bundle/f13/beam,
 				/obj/effect/spawner/bundle/f13/aer12,
+				/obj/effect/spawner/bundle/f13/plasmarifle,
+				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/ionrifle,
-				/obj/effect/spawner/bundle/f13/tommygun,
-				/obj/effect/spawner/bundle/f13/flamethrower,
-				/obj/effect/spawner/bundle/f13/pistol127mm,
+				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/plasmaglock
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 //TIER 10 GUN
 	name = "tier 10 gun"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/bozar,
-				/obj/effect/spawner/bundle/f13/plasmarifle,
 				/obj/effect/spawner/bundle/f13/p94,
 				/obj/effect/spawner/bundle/f13/aer14,
 				/obj/effect/spawner/bundle/f13/amr,
 				/obj/effect/spawner/bundle/f13/tribeam,
 				/obj/effect/spawner/bundle/f13/gauss,
+				/obj/effect/spawner/bundle/f13/pistol127mm,
 				/obj/effect/spawner/bundle/f13/p90
 	)
 
@@ -1347,7 +1367,9 @@
 				/obj/item/gun/energy/laser/solar,
 				/obj/item/gun/energy/laser/plasma/alien,
 				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
-				/obj/item/gun/ballistic/automatic/m1garand/oldglory
+				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
+				/obj/item/gun/ballistic/automatic/m2a1,
+				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random
@@ -1355,13 +1377,13 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 5,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 1,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 3,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 20,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 25,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 30,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 14,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 1
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 16,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 5
 			)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high
@@ -1369,12 +1391,12 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 13,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 25,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 35,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 = 6,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 = 3,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 18,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 20,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 = 14,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10 = 5,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/unique = 3
 			)
 
@@ -2038,7 +2060,7 @@
 			/obj/item/grenade/homemade/pipebomb = 40,
 			/obj/item/grenade/f13/stinger = 30,
 			/obj/item/grenade/smokebomb = 20
-			
+
 			)
 
 /obj/effect/spawner/lootdrop/f13/explosivehigh

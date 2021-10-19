@@ -41,3 +41,18 @@
 /datum/gear/glasses/prescription
 	name = "Prescription glasses"
 	path = /obj/item/clothing/glasses/regular
+	
+/datum/gear/glasses/geist_gazers
+	name = "Geist Gazers Glasses"
+	path = /obj/item/clothing/glasses/geist_gazers
+	
+/datum/gear/glasses/psychglasses
+	name = "Psych Glasses"
+	path = /obj/item/clothing/glasses/psych
+	
+/datum/gear/glasses/circleglasses
+	name = "Circle Glasses"
+	path = /obj/item/clothing/glasses/regular/circle
+
+
+

@@ -302,6 +302,17 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
+	
+/datum/crafting_recipe/bone_arrow
+	name = "Jagged Barbed Bone Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/bone
+	time = 40
+	reqs = list(/obj/item/stack/sheet/bone = 1,
+				/obj/item/stack/sheet/sinew = 1,
+				/obj/item/stack/sheet/mineral/wood = 1)
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/arrowpoison
 	name = "Poison Arrow"
@@ -371,7 +382,7 @@
 	category = CAT_WEAPONRY
 	category = CAT_WEAPON
 	tools = list(TOOL_WORKBENCH)
-	
+
 /datum/crafting_recipe/deathclawspear
 	name = "Deathclaw Spear"
 	always_availible = FALSE
@@ -380,6 +391,26 @@
 	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 4,
 				/obj/item/stack/sheet/bone = 10,
 				/obj/item/stack/sheet/sinew = 5)
+	category = CAT_PRIMAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalshield
+	name = "tribal stop-sign shield"
+	always_availible = FALSE
+	result = /obj/item/shield/tribal
+	time = 60
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/leather = 2,
+				/obj/item/toy/crayon/spraycan)
+	category = CAT_PRIMAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/nightshield
+	name = "nightstalker tribal shield"
+	always_availible = FALSE
+	result = /obj/item/shield/riot/tribal/nightstalker
+	reqs = list(/obj/item/shield/tribal = 1,
+				/obj/item/clothing/head/f13/stalkerpelt = 1)
 	category = CAT_PRIMAL
 	tools = list(TOOL_WORKBENCH)
 

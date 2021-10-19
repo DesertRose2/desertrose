@@ -5,7 +5,7 @@
 	display_name = "Weapon Development Technology"
 	description = "Our researchers have found new to weaponize just about everything now."
 	prereq_ids = list("engineering")
-	design_ids = list("pin_testing", "tele_shield", "mfc", "ec", "crusader_pistol")
+	design_ids = list("pin_testing", "tele_shield", "mfc", "ec", "crusader_pistol", "maxson")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 
 /datum/techweb_node/adv_weaponry
@@ -13,7 +13,7 @@
 	display_name = "Advanced Weapon Development Technology"
 	description = "Our weapons are breaking the rules of reality by now."
 	prereq_ids = list("adv_engi", "weaponry")
-	design_ids = list("pin_loyalty", "bullet_shield", "ecp", "fluxcap", "focusedlenses", "superconductor", "advreceiver", "preassembly", "superalloys", "crusader_rifle", "crusader_laser")
+	design_ids = list("bullet_shield", "ecp", "fluxcap", "focusedlenses", "superconductor", "advreceiver", "preassembly", "superalloys", "crusader_rifle", "crusader_laser", "maxson_5mm")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 
 /datum/techweb_node/electric_weapons
@@ -67,7 +67,7 @@
 	design_ids = list("beamrifle")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3250) // Sniper
 */
-
+/*
 /datum/techweb_node/explosive_weapons
 	id = "explosive_weapons"
 	display_name = "Explosive & Pyrotechnical Weaponry"
@@ -75,7 +75,7 @@
 	prereq_ids = list("adv_weaponry")
 	design_ids = list("large_Grenade", "pyro_Grenade", "adv_Grenade")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2750)
-
+*/
 /*
 /datum/techweb_node/ballistic_weapons
 	id = "ballistic_weapons"

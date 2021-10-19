@@ -135,7 +135,7 @@
 	path = /obj/item/clothing/head/beret/black
 
 /datum/gear/head/ncr_infantry
-	name = "NCR infantry beret"
+	name = "NCR enlisted beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
 	path = /obj/item/clothing/head/beret/ncr
 	restricted_desc = "NCR"
@@ -147,55 +147,10 @@
 						)
 
 /datum/gear/head/ncr_infantry_officer
-	name = "NCR infantry officer beret"
+	name = "NCR officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
 	path = /obj/item/clothing/head/beret/ncr_lt
 	restricted_desc = "NCR"
-	restricted_roles = list(
-							"NCR Commanding Officer",
-							"NCR Off-Duty"
-						)
-
-/datum/gear/head/ncr_recon
-	name = "NCR recon beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_recon
-	restricted_desc = "NCR"
-	restricted_roles = list(
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-/datum/gear/head/ncr_recon_officer
-	name = "NCR recon officer beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_recon_lt
-	restricted_desc = "NCR Officers"
-	restricted_roles = list(
-							"NCR Commanding Officer",
-							"NCR Off-Duty"
-						)
-
-/datum/gear/head/ncr_scout
-	name = "NCR light infantry beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_scout
-	restricted_desc = "NCR"
-	restricted_roles = list(
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Off-Duty"
-						)
-
-/datum/gear/head/ncr_scout_officer
-	name = "NCR light infantry officer beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_scout_lt
-	restricted_desc = "NCR Officers"
 	restricted_roles = list(
 							"NCR Commanding Officer",
 							"NCR Off-Duty"
@@ -258,6 +213,24 @@
 	)
 
 //Helmets
+/datum/gear/head/ncr_helmet
+	name = "NCR helmet"
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
+	path = /obj/item/clothing/head/f13/ncr
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Commanding Officer",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
+						)
+
 /datum/gear/head/steelpot_goggles
 	name = "NCR storm helmet"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
@@ -275,76 +248,3 @@
 							"NCR Rear Echelon",
 							"NCR Recruit"
 						)
-
-/datum/gear/head/steelpot_gambler
-	name = "NCR gambler helmet"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
-	path = /obj/item/clothing/head/f13/ncr/steelpot_gambler
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
-						)
-
-datum/gear/head/steelpot_bandolier
-	name = "NCR bandolier helmet"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
-	path = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
-						)
-
-datum/gear/head/steelpot_patriot
-	name = "NCR patriot helmet"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
-	path = /obj/item/clothing/head/f13/ncr/steelpot_patriot
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
-						)
-
-/datum/gear/head/steelpot_mitchell
-	name = "NCR mitchell helmet"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMET
-	path = /obj/item/clothing/head/f13/ncr/steelpot_mitchell
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Recruit"
-						)
-

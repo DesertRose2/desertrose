@@ -438,8 +438,90 @@
 	new /obj/item/storage/box/matches(src)
 	new /obj/item/clothing/mask/cigarette/cigar/ncr(src)
 	
-	
+//	
+//Healing Items
+/obj/item/storage/box/medicine
+	name = "box of medication"
+	desc = "A box full of medication. Base item so you shouldn't be seeing this."
+	icon_state = "secbox"
+	illustration = "syringe_f13"
 
-	
-	
-	
+/obj/item/storage/box/medicine/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/reagent_containers/syringe(src)
+
+/obj/item/storage/box/medicine/update_icon_state()
+	if(contents.len == 0)
+		qdel(src)
+
+//Powders
+/obj/item/storage/box/medicine/powder5
+	name = "box of five powders"
+	desc = "A box full of powders."
+
+/obj/item/storage/box/medicine/powder5/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+
+/obj/item/storage/box/medicine/powder10
+	name = "box of ten powders"
+	desc = "A box full of powders."
+
+/obj/item/storage/box/medicine/powder10/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+//		
+
+//Poultices
+/obj/item/storage/box/medicine/poultice5
+	name = "box of five poultices"
+	desc = "A box full of poultices."
+
+/obj/item/storage/box/medicine/poultice5/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+
+/obj/item/storage/box/medicine/poultice10
+	name = "box of ten poultices"
+	desc = "A box full of poultices."
+
+/obj/item/storage/box/medicine/poultice10/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+//
+
+//Regular Stimpak
+/obj/item/storage/box/medicine/stimpak5
+	name = "box of five stimpaks"
+	desc = "A box full of regular stimpaks."
+
+/obj/item/storage/box/medicine/stimpak5/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+
+/obj/item/storage/box/medicine/stimpak10
+	name = "box of ten stimpaks"
+	desc = "A box full of regular stimpaks."
+
+/obj/item/storage/box/medicine/stimpak10/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+//
+
+//Super Stimpaks
+/obj/item/storage/box/medicine/superstimpak5
+	name = "box of five super stimpaks"
+	desc = "A box full of regular stimpaks."
+
+/obj/item/storage/box/medicine/superstimpak5/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+
+/obj/item/storage/box/medicine/superstimpak10
+	name = "box of ten super stimpaks"
+	desc = "A box full of regular stimpaks."
+
+/obj/item/storage/box/medicine/superstimpak10/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+//		

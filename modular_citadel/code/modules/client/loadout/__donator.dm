@@ -371,6 +371,31 @@
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
 	ckeywhitelist = list("conormackgegore")
 
+/datum/gear/donator/kits/viatoris
+	name = "Viatoris's belongings"
+	path = /obj/item/storage/box/large/custom_kit/viatoris/
+	ckeywhitelist = list("muhsollini")
+
+/datum/gear/donator/kits/thebatsman
+	name = "The batsman's belongings"
+	path = /obj/item/storage/box/large/custom_kit/thebatsman
+	ckeywhitelist = list("elizabethdame")
+
+/datum/gear/donator/kits/parkerwright
+	name = "Parker Wright's belongings"
+	path = /obj/item/storage/box/large/custom_kit/parkerwright
+	ckeywhitelist = list("kayzach")
+
+/datum/gear/donator/kits/houndmaster
+	name = "Canis' belongings"
+	path = /obj/item/storage/box/large/custom_kit/houndmaster
+	ckeywhitelist = list("kayzach")
+
+/datum/gear/donator/kits/ashergriffin
+	name = "Asher Griffin's belongings"
+	path = /obj/item/storage/box/large/custom_kit/ashergriffin
+	ckeywhitelist = list("metriusthehot")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -430,8 +455,9 @@
 						"novaskelly",
 						"alasania",
 						"jackmcintyre",
-						"deathlysoul")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						"deathlysoul",
+						"brainbodger")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
 	name = ".45 ACP Service Revolver"
@@ -453,7 +479,7 @@
 						"jackmcintyre",
 						"totallyinnocent",
 						"cythisia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
 	name = ".357 Magnum Service Revolver"
@@ -467,7 +493,7 @@
 						"muhsollini",
 						"rangerbust",
 						"kayzach")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
 	name = "10mm Service Revolver"
@@ -476,8 +502,9 @@
 	ckeywhitelist = list("hawkwestheimer",
 						 "theneworleans",
 						 "ollieoxen",
-						 "cythisia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						 "cythisia",
+						 "landoorando")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
 	name = "Ranger-Captain Pins"
@@ -521,8 +548,9 @@
 						"panzer1944",
 						"purplepineapple",
 						"thegreatcoward",
-						"kirshbia")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						"kirshbia",
+						"deathlysoul")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
 	name = "Ranger Pins"
@@ -567,7 +595,9 @@
 						"yecrowbarman",
 						"totallyinnocent",
 						"deathlysoul",
-						"kayzach")
+						"kayzach",
+						"brainbodger",
+						"landoorando")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
@@ -611,4 +641,5 @@
 						"usotsukihime",
 						"karlov",
 						"hallow96",
-						"SM45HB0T")
+						"sm45hb0t",
+						"crailek")

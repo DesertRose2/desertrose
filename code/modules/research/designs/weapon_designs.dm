@@ -229,7 +229,7 @@
 	build_path = /obj/item/firing_pin/test_range
 	category = list("Firing Pins")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_SCIENCE
-
+/*
 /datum/design/pin_mindshield
 	name = "Mindshield Firing Pin"
 	desc = "This is a security firing pin which only authorizes users who are mindshield-implanted."
@@ -239,7 +239,7 @@
 	build_path = /obj/item/firing_pin/implant/mindshield
 	category = list("Firing Pins")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
+*/
 /datum/design/pin_explorer
 	name = "Outback Firing Pin"
 	desc = "This firing pin only shoots while ya ain't on station, fair dinkum!"
@@ -415,7 +415,7 @@
 ///////////
 //Grenades/
 ///////////
-
+/*
 /datum/design/large_grenade
 	name = "Large Grenade"
 	desc = "A grenade that affects a larger area and use larger containers."
@@ -455,7 +455,7 @@
 	build_path = /obj/item/grenade/chem_grenade/adv_release
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
-
+*/
 ///////////
 //Shields//
 ///////////
@@ -524,7 +524,7 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 */
-
+/*
 /datum/design/mindshield
 	name = "Mindshield Implant"
 	desc = "A mindshield implant."
@@ -534,7 +534,7 @@
 	build_path = /obj/item/implantcase/mindshield
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
+*/
 /datum/design/mfc
 	name = "Microfusion Cell"
 	id = "mfc"
@@ -650,5 +650,25 @@
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000, /datum/material/gold = 2500, /datum/material/silver = 2500)
 	build_path = /obj/item/modkit/crusader_laser
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/maxson
+	name = "maxson carbine 5.56mm conversion kit"
+	desc = "A conversion kit for maxson carbines."
+	id = "maxson"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000, /datum/material/plastic = 10000, /datum/material/glass = 10000, /datum/material/titanium = 5000)
+	build_path = /obj/item/modkit/maxson
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/maxson_c5mm
+	name = "maxson carbine 5mm conversion kit"
+	desc = "A conversion kit for maxson carbines."
+	id = "maxson_5mm"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000, /datum/material/plastic = 10000, /datum/material/glass = 10000, /datum/material/titanium = 15000)
+	build_path = /obj/item/modkit/maxson_c5mm
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

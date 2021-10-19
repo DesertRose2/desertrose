@@ -269,10 +269,10 @@
 	desc = "An illegal and highly dangerous cybernetic implant that can project a deadly blade of concentrated energy."
 	contents = newlist(/obj/item/melee/transforming/energy/blade/hardlight)
 
-/obj/item/organ/cyberimp/arm/shield
+/*/obj/item/organ/cyberimp/arm/shield
 	name = "arm-mounted riot shield"
 	desc = "A deployable riot shield to help deal with civil unrest."
-	contents = newlist(/obj/item/shield/riot/implant)
+	contents = newlist(/obj/item/shield/riot/implant)*/
 
 /obj/item/organ/cyberimp/arm/shield/Extend(obj/item/I, silent = FALSE)
 	if(I.obj_integrity == 0)				//that's how the shield recharge works

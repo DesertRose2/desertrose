@@ -22,13 +22,13 @@
 	max_integrity = 300
 
 /obj/item/storage/backpack/ComponentInitialize()
-	. = ..()	
+	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	//STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
 	STR.max_combined_w_class = 21
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_items = 21
-	
+
 
 /*
  * Backpack Types
@@ -635,7 +635,7 @@
 
 /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle/PopulateContents()
 	new /obj/item/ammo_box/magazine/m12g(src)
-	new /obj/item/gun/ballistic/automatic/shotgun/bulldog(src)
+	new /obj/item/gun/ballistic/automatic/shotgun(src)
 	new /obj/item/ammo_box/magazine/m12g/stun(src)
 	new /obj/item/clothing/glasses/thermal/syndi(src)
 
@@ -677,7 +677,7 @@
 	new /obj/item/clothing/under/syndicate/soviet(src)
 	new /obj/item/watertank/op(src)
 	new /obj/item/clothing/suit/space/hardsuit/syndi/elite(src)
-	new /obj/item/gun/ballistic/automatic/pistol/APS(src)
+	new /obj/item/gun/ballistic/automatic/pistol/type17(src)
 	new /obj/item/ammo_box/magazine/pistolm9mm(src)
 	new /obj/item/ammo_box/magazine/pistolm9mm(src)
 	new /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka(src)

@@ -3,8 +3,6 @@
 	selection_color = "#ADD8E6"
 	faction = "VTCC"
 	exp_type = EXP_TYPE_VTCC
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13)
 
 /datum/outfit/job/vtcc/
 	name = "VTCCdatums"
@@ -34,8 +32,8 @@
 		/datum/outfit/loadout/eldervaultie
 		)
 
-	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_VAULT_F13, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
 
 /datum/outfit/job/vtcc/f13alderman/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -65,9 +63,7 @@
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/rifle/lasmusket=1,
-	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,
-	/obj/item/ammo_box/lasmusket = 2)
+	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,)
 
 /datum/outfit/loadout/eldervaultie
 	name = "Elder Vaultie"
@@ -92,17 +88,13 @@
 		/datum/outfit/loadout/peacekeeper
 		)
 
-	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
 
 /datum/outfit/job/vtcc/f13marshal/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13marshal
@@ -129,7 +121,8 @@
 	/obj/item/gun/ballistic/automatic/pistol/beretta=1,
 	/obj/item/ammo_box/magazine/m9mmds = 3,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
-	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1
+	/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
+	/obj/item/book/granter/trait/pa_wear=1
 	)
 
 /datum/outfit/loadout/peacekeeper
@@ -169,14 +162,13 @@
 		/datum/outfit/loadout/armsdealer
 		)
 
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_VAULT_F13)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13merchant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MASTER_GUNSMITH, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
@@ -230,8 +222,8 @@
 		/datum/outfit/loadout/neurosurgeon,
 		)
 
-	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_VAULT_F13, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_MINERAL_STOREROOM, ACCESS_ROBOTICS, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_VAULT_F13, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_MINERAL_STOREROOM, ACCESS_ROBOTICS, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
 
 
 /datum/outfit/job/vtcc/f13chresearcher/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -299,8 +291,9 @@
 		/datum/outfit/loadout/oldguard,
 		/datum/outfit/loadout/riotpolice
 		)
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13 )
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
+
+	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
 
 /datum/outfit/job/vtcc/f13citysec/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -367,8 +360,9 @@
 		/datum/outfit/loadout/newblood,
 		/datum/outfit/loadout/deepend
 		)
-	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_VAULT_F13, ACCESS_VAULT_SECURITY_F13)
+
+	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
 
 /datum/outfit/job/vtcc/f13citysecscout/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -427,8 +421,8 @@
 		/datum/outfit/loadout/caravaner
 		)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_VAULT_F13, ACCESS_CARGO)
-	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_VAULT_F13, ACCESS_CARGO, ACCESS_MINING)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_SHOP)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13roadie/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -444,7 +438,6 @@
 	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
 	shoes = 	/obj/item/clothing/shoes/jackboots
 	uniform = 	/obj/item/clothing/under/f13/merca
-	suit = 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
 	l_hand =	/obj/item/gun/ballistic/automatic/pistol/beretta
 	r_pocket = /obj/item/card/data/wpermit
 	backpack_contents = list(
@@ -455,6 +448,7 @@
 /datum/outfit/loadout/scavver
 	name = "Scavver"
 	backpack_contents = list(
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,
 	/obj/item/autosurgeon/toolset=1,
 	/obj/item/clothing/glasses/welding=1,
 	/obj/item/twohanded/fireaxe=1
@@ -464,15 +458,17 @@
 	name = "Courier"
 	backpack_contents = list(
 	/obj/item/clothing/glasses/f13/biker=1,
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast=1,
 	/obj/item/clothing/shoes/jackboots=1,
 	/obj/item/gun/ballistic/rifle/mag/commando=1,
 	/obj/item/stack/sheet/cardboard/twenty=1,
-	/obj/item/ammo_box/magazine/m45exp = 2
+	/obj/item/ammo_box/magazine/m45/extended = 2
 	)
 
 /datum/outfit/loadout/caravaner
 	name = "Caravan Guard"
 	backpack_contents = list(
+	/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie=1,
 	/obj/item/gun/ballistic/shotgun/lever=1,
 	/obj/item/ammo_box/shotgun/slug = 2,
 	/obj/item/claymore/machete/pipe/tireiron=1
@@ -497,8 +493,8 @@
 		/datum/outfit/loadout/robotocist,
 		)
 
-	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_VAULT_F13, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_MINERAL_STOREROOM, ACCESS_ROBOTICS, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_VAULT_F13, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_MINERAL_STOREROOM, ACCESS_ROBOTICS, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
 
 /datum/outfit/job/vtcc/f13researcher/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -521,7 +517,8 @@
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/pda=1
 		)
 
 /datum/outfit/loadout/medprof
@@ -559,6 +556,9 @@
 		/datum/outfit/loadout/techwhisperer,
 		/datum/outfit/loadout/engineer
 		)
+
+	access = list(ACCESS_VTCC)
+	minimal_access = list(ACCESS_VTCC)
 
 /datum/outfit/job/vtcc/f13hoistway/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -613,8 +613,8 @@
 		//datum/outfit/loadout/chef
 		)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN)
-	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_BAR)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_BAR)
 
 /datum/outfit/job/vtcc/f13innkeeper/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -677,6 +677,9 @@
 		/datum/outfit/loadout/detective,
 		//datum/outfit/loadout/dj
 		)
+
+	access = list(ACCESS_VTCC)
+	minimal_access = list(ACCESS_VTCC)
 
 /datum/outfit/job/vtcc/f13innerwall/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -812,6 +815,9 @@
 		/datum/outfit/loadout/hired,
 		//datum/outfit/loadout/prize
 		)
+
+	access = list(ACCESS_VTCC)
+	minimal_access = list(ACCESS_VTCC)
 
 /datum/outfit/job/vtcc/f13outerwall/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

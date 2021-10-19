@@ -257,6 +257,13 @@
 	item_state = "bos_fatigues"
 	can_adjust = TRUE
 
+/obj/item/clothing/under/f13/legskirt/tac //whoaaa mama humina humina
+	name = "\improper ''tactical'' combat skirt"
+	desc = "A leathery skirt below a thick, black, long-sleeve cotton shirt. Perfect for operatives favoring wardrobe malfunctions."
+	icon_state = "tacskirt"
+	item_state = "tacskirt"
+	item_color = "tacskirt"
+
 /obj/item/clothing/under/f13/bos/bodysuit
 	name = "brotherhood bodysuit"
 	desc = "A skin-tight bodysuit worn by members of the Brotherhood of Steel."
@@ -390,8 +397,14 @@
 	icon_state = "bosshouldercape_r"
 
 /obj/item/clothing/neck/mantle/bos/paladin
-	name = "Paladin cape"
-	desc = "This stylish deep crimson cape is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
+	name = "Paladin cloak"
+	desc = "This stylish dark navy cloak that is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
 	icon_state = "paladin"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
+	alternate_worn_layer = UNDER_HAIR_LAYER
 
+/obj/item/clothing/neck/mantle/bos/knight
+	name = "Knight mantle"
+	desc = "A Navy blue shoulder covering worn by Brotherhood Knights, a shoulder holster is added for utility."
+	icon_state = "knight"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
