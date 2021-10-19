@@ -380,6 +380,10 @@
 	new /obj/item/modkit/mariarmor(src)
 	new /obj/item/modkit/marihelmet(src)
 
+//Hazard - Rebel0
+/obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
+	new /obj/item/clothing/head/mets
+
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_scout_old(src)

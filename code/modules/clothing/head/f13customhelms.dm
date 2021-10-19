@@ -28,3 +28,11 @@
 	desc = "(III) A small hand crafted headdress made from the head of a dog that is caked with some sort of blood in certain places."
 	icon_state = "houndmaster"
 	item_state = "houndmaster"
+
+//Custom item - Rebel0 / Hazard
+/obj/item/clothing/head/mets
+	mame = "Swatters Hat"
+	desc = "A strange swatters hat with an interconnecting orange 'N' and 'Y' on the front. Someone's reinforced the inside by the looks of it based on the non-maluable brim. The left side appears to have some worn logo on it.."
+	icon_state = "mets"
+	item_state = "mets"
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
