@@ -356,6 +356,11 @@
 	path = /obj/item/storage/box/large/custom_kit/mariya
 	ckeywhitelist = list("rebel0")
 
+/datum/gear/donator/kits/hazard
+	name = "Hazard's belongings"
+	path = /obj/item/storage/box/large/custom_kit/hazard
+	ckeywhitelist = list("rebel0")
+
 /datum/gear/donator/kits/katiemorgan/
 	name = "Katie Morgan's belongings"
 	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
