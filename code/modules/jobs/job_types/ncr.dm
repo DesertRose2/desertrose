@@ -95,7 +95,7 @@ Captain
 	outfit = /datum/outfit/job/ncr/f13captain
 
 	loadout_options = list(
-	/datum/outfit/loadout/captline, //R82, M29
+	/datum/outfit/loadout/captline, //NCR R91
 	/datum/outfit/loadout/captscout, //Republic's Pride, M29
 	/datum/outfit/loadout/captpistol //Grease Gun, Deagle
 	)
@@ -178,7 +178,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
 	loadout_options = list(
-	/datum/outfit/loadout/ltline,	//R82
+	/datum/outfit/loadout/ltline,	//NCR R91
 	/datum/outfit/loadout/ltscout,	//Republic's Pride
 	/datum/outfit/loadout/ltpistol	//.223 Pistol
 	)
@@ -294,7 +294,7 @@ Sergeant First Class
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
 
 	loadout_options = list(
-	/datum/outfit/loadout/sfcinfantry, 	//R82
+	/datum/outfit/loadout/sfcinfantry, 	//NCR R91
 	/datum/outfit/loadout/sfcsniper,	//Sniper Rifle
 	/datum/outfit/loadout/sfcgarand 	//Old Glory
 	)

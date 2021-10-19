@@ -1944,8 +1944,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/type93,
-		/obj/item/book/granter/crafting_recipe/blueprint/bastard,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82,
+		/obj/item/book/granter/crafting_recipe/blueprint/bar,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm
