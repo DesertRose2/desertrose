@@ -331,7 +331,8 @@
 /area/f13/wasteland)
 "aaS" = (
 /obj/structure/table,
-/obj/item/storage/crayons,
+/obj/item/storage/box/ingredients/fiesta,
+/obj/item/storage/box/ingredients/fiesta,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -3224,6 +3225,14 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
+"biz" = (
+/obj/structure/table,
+/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/vegetarian,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ncr)
 "biN" = (
 /obj/structure/kitchenspike,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -12547,13 +12556,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -22001,6 +22003,14 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/building)
+"iRJ" = (
+/obj/structure/table,
+/obj/item/storage/box/ingredients/grains,
+/obj/item/storage/box/ingredients/grains,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ncr)
 "iRT" = (
 /obj/structure/sink/puddle,
 /turf/open/indestructible/ground/inside/mountain,
@@ -22328,14 +22338,6 @@
 /obj/structure/table,
 /obj/item/storage/box/ingredients/carnivore,
 /obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/fiesta,
-/obj/item/storage/box/ingredients/fiesta,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/grains,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -25184,15 +25186,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/city)
-"klp" = (
-/obj/structure/closet/fridge/standard,
-/obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/fiesta,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/ncr)
 "klA" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
@@ -26433,9 +26426,10 @@
 /area/f13/village)
 "kKl" = (
 /obj/structure/closet/fridge/standard,
-/obj/item/storage/box/ingredients/italian,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/carnivore,
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -36709,14 +36703,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "pjs" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
 	},
 /area/f13/ncr)
 "pjC" = (
@@ -54770,6 +54760,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"wCQ" = (
+/obj/structure/table,
+/obj/item/storage/box/ingredients/american,
+/obj/item/storage/box/ingredients/american,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ncr)
 "wDc" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
@@ -59871,7 +59869,7 @@ aPY
 aPY
 iNb
 jGV
-klp
+kKl
 kKl
 xEc
 mGx
@@ -60899,7 +60897,7 @@ gkh
 xnt
 iNe
 aba
-pjs
+wCQ
 xnt
 pOM
 nss
@@ -61411,9 +61409,9 @@ koD
 xEc
 gHI
 xnt
-pOM
+iRJ
 aaS
-pjs
+biz
 xnt
 pOM
 nss
@@ -68375,7 +68373,7 @@ cOC
 xZh
 wXw
 tkO
-rhr
+pjs
 unI
 rQh
 apk
@@ -68632,7 +68630,7 @@ aLu
 xZh
 wXw
 tkO
-rhr
+pjs
 unI
 hbW
 xzM
@@ -68889,7 +68887,7 @@ cOC
 xZh
 wXw
 cXH
-rhr
+pjs
 unI
 hbW
 xzM
