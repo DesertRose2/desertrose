@@ -260,7 +260,18 @@
 	suppressor_x_offset = 30
 	suppressor_y_offset = 19
 	suppressor_state = "n99_suppressor"
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_HEAVY
 
+//'Lil' Devil' 12.7mm Pistol 	Keywords: UNIQUE, 12.7mm, Semi-Auto, 7 round mags
+/obj/item/gun/ballistic/automatic/pistol/pistol127/lildevil
+	name = "Lil' Devil 12.7mm pistol"
+	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting. A finely tuned firearm from the Gunrunners."
+	icon_state = "lildev"
+	force = 18
+	fire_delay = 3
+	extra_damage = 4
+	weapon_weight = WEAPON_LIGHT
 
 //////////////////
 //BOS SNOWFLAKE //
