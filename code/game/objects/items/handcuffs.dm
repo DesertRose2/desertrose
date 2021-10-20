@@ -332,7 +332,8 @@
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
 	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "bola"
-	breakouttime = 35//easy to apply, easy to break out of
+	breakouttime = 15//easy to apply, easy to break out of
+	slowdown = 4
 	gender = NEUTER
 	var/knockdown = 0
 
@@ -368,8 +369,8 @@
 	name = "reinforced bola"
 	desc = "A strong bola, made with a long steel chain. It looks heavy, enough so that it could trip somebody."
 	icon_state = "bola"
-	breakouttime = 70
-	knockdown = 20
+	breakouttime = 35
+	slowdown = 7
 
 /obj/item/restraints/legcuffs/bola/energy //For Security
 	name = "energy bola"
