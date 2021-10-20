@@ -382,7 +382,7 @@
 
 //Hazard - Rebel0
 /obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
-	new /obj/item/clothing/head/mets
+	new /obj/item/clothing/head/beret/mets(src)
 
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()

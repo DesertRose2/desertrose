@@ -30,8 +30,8 @@
 	item_state = "houndmaster"
 
 //Custom item - Rebel0 / Hazard
-/obj/item/clothing/head/mets
-	mame = "Swatters Hat"
+/obj/item/clothing/head/beret/mets
+	name = "Genuine Blue Swatters Cap"
 	desc = "A strange swatters hat with an interconnecting orange 'N' and 'Y' on the front. Someone's reinforced the inside by the looks of it based on the non-maluable brim. The left side appears to have some worn logo on it.."
 	icon_state = "mets"
 	item_state = "mets"
