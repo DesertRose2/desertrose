@@ -22513,7 +22513,7 @@
 /area/f13/caves)
 "jdp" = (
 /obj/structure/sign/departments/medbay,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "jdE" = (
 /obj/machinery/light{
@@ -36579,6 +36579,9 @@
 /obj/structure/closet/crate/freezer/blood{
 	anchored = 1
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "phu" = (
@@ -49905,6 +49908,7 @@
 /turf/open/water,
 /area/f13/city)
 "uDc" = (
+/obj/structure/window/spawner,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -55459,6 +55463,13 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
+/area/f13/ncr)
+"wSo" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "wSv" = (
 /obj/structure/table,
@@ -68590,12 +68601,12 @@ rhr
 rhr
 xpD
 xTq
-uDc
+xTq
 xTq
 beF
 xTq
 xTq
-xTq
+wSo
 rhr
 unI
 hbW
@@ -68849,7 +68860,7 @@ rMa
 xTq
 xTq
 xTq
-tdg
+uDc
 xTq
 xTq
 xTq
