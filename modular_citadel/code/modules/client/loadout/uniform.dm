@@ -97,6 +97,17 @@
 							"NCR Recruit"
 						)
 
+/datum/gear/uniform/ncr_skirt
+	name = "NCR skirt"
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	path = /obj/item/clothing/under/f13/ncr/ncr_dress/skirt
+	restricted_desc = "NCR"
+	restricted_roles = list(
+							"NCR Captain",
+							"NCR Commanding Officer",
+							"NCR Medical Officer"
+							)
+
 /datum/gear/uniform/ranger
 	name = "ranger outfit"
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS

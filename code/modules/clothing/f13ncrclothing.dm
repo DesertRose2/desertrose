@@ -377,6 +377,22 @@
 	item_state = "ncrcf"
 	item_color = "ncrcf"
 
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt
+	name = "NCR skirt"
+	desc = "A crisp tan NCRA dress miniskirt uniform, complete with tie."
+	can_adjust = FALSE
+	icon_state = "ncr_skirt"
+	item_state = "ncr_skirt"
+	item_color = "ncr_skirt"
+
+/obj/item/clothing/under/f13/ncr/shi
+	name = "NCR shi fatigues"
+	desc = "A pair of tan capri pants tied together with a chinese blue shirt."
+	can_adjust = FALSE
+	icon_state = "shi"
+	item_state = "shi"
+	item_color = "shi"
+
 //Die in a pit of fire
 /obj/item/clothing/under/f13/ncr/scout
 	name = "NCR scout fatigues"

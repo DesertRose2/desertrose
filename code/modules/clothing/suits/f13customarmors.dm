@@ -111,3 +111,10 @@
 	desc = "(IV) A Slimmed down tan poncho with a little bit of overhang on the shoulders, the waist of it is bound by a dark brown belt. The entire thing reeks of cigarette smoke."
 	icon_state = "ncr_clyde"
 	item_state = "ncr_clyde"
+
+//Custom item - Muhsollini / Daiyu Liu
+/obj/item/clothing/suit/armor/f13/ncrarmor/mantle/shi
+	name = "NCR chinese trenchcoat"
+	desc = "(IV) A freshly made tan 'labcoat' made after old chinese remnant officer coat. It has a very bulky chest and is kept together by two belts."
+	icon_state = "shi_winter"
+	item_state = "shi_winter"

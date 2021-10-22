@@ -36,3 +36,10 @@
 	icon_state = "mets"
 	item_state = "mets"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+
+//Custom item - Muhsollini / Daiyu Liu
+/obj/item/clothing/head/beret/ncr_medic/shi
+	name = "NCR chinese peaked cap"
+	desc = "(IV) A tan repurposed old chinese remnant officer peaked cap. It still features a bright red star in the middle."
+	icon_state = "shi"
+	item_state = "shi"
