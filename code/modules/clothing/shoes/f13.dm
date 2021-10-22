@@ -132,6 +132,13 @@
 						"Alternative" = "duty_alt",
 						"Tall" = "duty_long"
 						)
+
+/obj/item/clothing/shoes/f13/military/shi
+	name = "black sneakers"
+	desc = "A pair of fancy black sneakers."
+	icon_state = "shi"
+	item_state = "shi"
+
 //Fluff
 
 /obj/item/clothing/shoes/f13/swimfins
