@@ -120,8 +120,9 @@
 
 //Beretta M93R							Keywords: 9mm, Automatic, 15 round magazine
 /obj/item/gun/ballistic/automatic/pistol/beretta
-	name = "Beretta M92FS"
-	desc = "One of the more common 9mm pistols, the Beretta is popular due to its reliability. 15 round magazine and good looks; it'll get you far!"
+	name = "Beretta M93R"
+	desc = "One of the surviving Beretta model firearms. With a 15 round magazine and burst fire capability, this Italian handgun is competitive even at 9mm.
+"
 	icon_state = "m93r"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	w_class = WEIGHT_CLASS_NORMAL
