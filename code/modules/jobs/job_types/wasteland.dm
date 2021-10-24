@@ -429,12 +429,10 @@ Outlaw
 		/obj/item/storage/bag/money/small/raider=1)
 
 	suit_store = pick(
-		/obj/item/gun/ballistic/revolver/detective, \
+		/obj/item/gun/ballistic/revolver/colt357, \
 		/obj/item/gun/ballistic/rifle/remington, \
-		/obj/item/gun/ballistic/revolver/zipgun, \
 		/obj/item/gun/ballistic/revolver/pipe_rifle, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
-		/obj/item/gun/ballistic/revolver/single_shotgun)
+		/obj/item/gun/ballistic/revolver/caravan_shotgun)
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -525,7 +523,7 @@ Outlaw
 	suit = /obj/item/clothing/suit/armor/f13/raider/desperado
 	mask = /obj/item/clothing/mask/bandana/skull
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/revolver44=2,
+		/obj/item/gun/ballistic/revolver/m29=2,
 		/obj/item/ammo_box/m44=4,
 		/obj/item/kitchen/knife/bowie=1
 		)
@@ -678,7 +676,6 @@ Outlaw
 		/obj/item/storage/bag/money/small/wastelander, \
 		/obj/item/kitchen/knife)
 	suit_store = pick(
-	/obj/item/gun/ballistic/revolver/detective, \
 	/obj/item/gun/ballistic/rifle/remington, \
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)
@@ -830,7 +827,7 @@ Outlaw
 	suit = /obj/item/clothing/suit/f13/vest
 	uniform = /obj/item/clothing/under/f13/cowboyb
 	gloves = /obj/item/clothing/gloves/f13/leather
-	l_hand = /obj/item/gun/ballistic/revolver/revolver44
+	l_hand = /obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/lighter=1,

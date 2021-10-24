@@ -847,7 +847,7 @@
 	name = "NCR assault carbine"
 	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
 	icon = 'icons/obj/guns/ballistic/r91.dmi'
-	icon_state = "assault_carbine_ncr"
+	icon_state = "r91_ncr"
 	fire_delay = 5
 	burst_shot_delay = 2.2
 	spread = 2
@@ -865,7 +865,7 @@
 	name = "'Pilum' assault rifle"
 	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
 	icon = 'icons/obj/guns/ballistic/r91.dmi'
-	icon_state = "assault_carbine_legion"
+	icon_state = "r91_legion"
 	spread = 6
 	fire_delay = 3.5
 	can_scope = FALSE
