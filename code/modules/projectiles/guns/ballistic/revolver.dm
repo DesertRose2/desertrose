@@ -183,7 +183,7 @@
 // .357 REVOLVERS //
 ////////////////////
 
-//Police revolver					Keywords: .38, Double action, 6 rounds cylinder
+//Police revolver					Keywords: .357, Double action, 6 rounds cylinder
 /obj/item/gun/ballistic/revolver/police
 	name = ".38 police revolver"
 	desc = "Pre-war double action police revolver in .357 calibre."
@@ -231,7 +231,7 @@
 /obj/item/gun/ballistic/revolver/m29
 	name = ".44 magnum revolver"
 	desc = "Being that this is the most powerful handgun in the world, and can blow your head clean-off, you've got to ask yourself one question. Do I feel lucky? Well, do ya punk? "
-	item_state = "model29"
+	item_state = "44colt"
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	fire_sound = 'sound/f13weapons/44mag.ogg'

@@ -483,7 +483,7 @@ Decanii
 
 /datum/outfit/loadout/primedecmelee
 	name = "Triarius (Melee) Officer"
-	l_hand =	/obj/item/gun/ballistic/revolver/revolver44
+	l_hand =	/obj/item/gun/ballistic/revolver/m29
 	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance=1,
@@ -721,7 +721,7 @@ Veteran Legionary
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/attachments/scope=1,
-		/obj/item/gun/ballistic/revolver/revolver44=1,
+		/obj/item/gun/ballistic/revolver/m29=1,
 		/obj/item/ammo_box/m44=2)
 
 /datum/outfit/loadout/vetshock
@@ -808,7 +808,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/primemelee
 	name = "Principes (Melee)"
-	l_hand =	/obj/item/gun/ballistic/revolver/revolver44
+	l_hand =	/obj/item/gun/ballistic/revolver/m29
 	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance=1,

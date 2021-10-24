@@ -722,7 +722,7 @@
 	/obj/item/stack/f13Cash/caps = 20,
 	/obj/item/clothing/under/singery=1,
 	/obj/item/clothing/shoes/singery=1,
-	/obj/item/gun/ballistic/revolver/detective=1
+	/obj/item/gun/ballistic/revolver/colt6520=1
 	)
 
 /*/datum/outfit/loadout/fancygal
@@ -782,7 +782,7 @@
 	/obj/item/tape=1,
 	/obj/item/clothing/under/f13/bodyguard=1,
 	/obj/item/clothing/shoes/winterboots=1,
-	/obj/item/gun/ballistic/revolver/detective=1,
+	/obj/item/gun/ballistic/revolver/colt6520=1,
 	/obj/item/lighter=1,
 	/obj/item/storage/fancy/cigarettes/cigars/havana=1
 	)
