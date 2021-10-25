@@ -98,6 +98,13 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland)
+"bQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/corp/corner{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "bR" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -183,6 +190,12 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"cV" = (
+/obj/structure/simple_door/room,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "cX" = (
 /turf/open/floor/plasteel/red,
 /area/f13/building)
@@ -213,6 +226,14 @@
 /obj/item/kitchen/knife/combat/bone,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"dv" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "dx" = (
 /turf/open/transparent/openspace,
 /area/f13/building)
@@ -244,6 +265,13 @@
 	icon_state = "post_wood"
 	},
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
+"dV" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/wasteland)
 "dX" = (
 /obj/structure/chair/bench,
@@ -306,6 +334,17 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/wasteland)
+"eL" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "eO" = (
 /obj/structure/chair/right,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -362,6 +401,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"fy" = (
+/obj/effect/decal/fakelattice,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "fz" = (
 /obj/structure/simple_door/house,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -373,6 +418,12 @@
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/f13/carpet,
+/area/f13/wasteland)
+"fH" = (
+/obj/machinery/door/airlock/glass,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/wasteland)
 "fJ" = (
 /turf/closed/wall/f13/ruins,
@@ -438,6 +489,18 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"gD" = (
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"gE" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "gF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -484,6 +547,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"hi" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "hq" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
@@ -495,11 +564,26 @@
 "hz" = (
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
+"hE" = (
+/obj/structure/table_frame/wood,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "hN" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/toggle/labcoat/scribecoat,
 /turf/open/floor/carpet/red,
 /area/f13/brotherhood)
+"hU" = (
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "ia" = (
 /obj/structure/toilet{
 	pixel_y = 10
@@ -509,6 +593,13 @@
 	pixel_x = -10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/brotherhood)
+"ib" = (
+/obj/structure/curtain{
+	color = "#c40e0e";
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "io" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -529,6 +620,13 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/city)
+"iq" = (
+/obj/effect/decal/cleanable/generic,
+/obj/structure/window/fulltile/house/broken,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "ir" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -562,10 +660,26 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"jb" = (
+/obj/machinery/workbench/advanced,
+/obj/effect/spawner/bundle/f13/gauss,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "je" = (
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"jh" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/cash_random_med,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/obj/effect/spawner/lootdrop/f13/cash_bawls_med,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "jp" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/yellow,
@@ -607,12 +721,28 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/city)
+"jX" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1;
+	termtag = "Business"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "kc" = (
 /obj/structure/barricade/wooden/strong{
 	obj_integrity = 500
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"kk" = (
+/obj/structure/filingcabinet/filingcabinet,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "kn" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -629,12 +759,29 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"kq" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Elder";
+	req_one_access_txt = "120"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "kr" = (
 /obj/machinery/chem_dispenser,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"kt" = (
+/obj/effect/decal/fakelattice,
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
+"kx" = (
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "kz" = (
 /obj/structure/bed,
 /obj/item/bedsheet/purple{
@@ -643,6 +790,15 @@
 /obj/effect/landmark/start/f13/druid,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"kA" = (
+/obj/structure/chair/comfy/shuttle{
+	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
+	layer = 2.7;
+	name = "prewar lounge chair"
+	},
+/obj/effect/landmark/start/f13/elder,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "kJ" = (
 /obj/structure/fence{
 	dir = 1;
@@ -670,12 +826,34 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/wasteland)
+"kQ" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"kS" = (
+/obj/machinery/door/airlock/glass,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "kU" = (
 /obj/structure/fence{
 	dir = 4;
 	icon_state = "post_wood"
 	},
 /turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"kW" = (
+/obj/structure/mirror{
+	pixel_y = 30
+	},
+/obj/structure/sink{
+	pixel_y = 15
+	},
+/turf/open/floor/plasteel/white,
 /area/f13/wasteland)
 "kZ" = (
 /obj/structure/closet/cabinet,
@@ -705,6 +883,12 @@
 /obj/item/stack/rods/ten,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"lo" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "ls" = (
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
@@ -828,6 +1012,15 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"mI" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "mN" = (
 /obj/structure/table/wood,
 /obj/item/smelling_salts/wayfarer,
@@ -842,6 +1035,10 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"mT" = (
+/obj/machinery/light/small,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "mV" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -852,6 +1049,13 @@
 "ne" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
+	},
+/area/f13/wasteland)
+"nq" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/ammo/fiftypercent,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/wasteland)
 "nw" = (
@@ -885,6 +1089,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"nL" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "nM" = (
 /obj/machinery/smartfridge/bottlerack/alchemy_rack,
 /turf/open/floor/f13/wood,
@@ -1005,6 +1215,9 @@
 /obj/structure/railing,
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
+"pp" = (
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "pq" = (
 /obj/structure/chair/stool/bar,
 /turf/open/floor/wood/f13/carpet,
@@ -1089,6 +1302,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"qc" = (
+/obj/structure/chair/office/dark,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "qe" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/carpet/red,
@@ -1115,6 +1335,12 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"qx" = (
+/obj/structure/fluff/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/area/f13/wasteland)
 "qS" = (
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -1276,6 +1502,22 @@
 "sA" = (
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"sI" = (
+/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/obj/machinery/workbench/pa,
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"sK" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "sL" = (
 /turf/closed/indestructible/riveted,
 /area/f13/caves)
@@ -1357,12 +1599,24 @@
 /obj/item/pda,
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
+"tF" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "tN" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
 "tO" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"tP" = (
+/obj/structure/filingcabinet/employment,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "tS" = (
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
@@ -1467,6 +1721,9 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/wasteland)
+"uX" = (
+/turf/open/floor/plasteel/white,
+/area/f13/wasteland)
 "uZ" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/black,
@@ -1517,6 +1774,12 @@
 "vx" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
+"vz" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "vA" = (
 /obj/effect/landmark/start/f13/seniorscribe,
 /turf/open/floor/carpet/red,
@@ -1548,6 +1811,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"vT" = (
+/obj/structure/fluff/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/area/f13/wasteland)
 "vU" = (
 /obj/item/chair,
 /turf/open/floor/f13{
@@ -1879,6 +2148,12 @@
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"zQ" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "zX" = (
 /obj/structure/fluff/railing{
 	dir = 9
@@ -1892,6 +2167,9 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/village)
+"Aa" = (
+/turf/open/floor/plating/f13/outside/roof/metal/verdigris,
+/area/f13/wasteland)
 "Ab" = (
 /turf/closed/wall/r_wall,
 /area/f13/ncr)
@@ -1905,6 +2183,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"Al" = (
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Ao" = (
 /obj/machinery/computer/arcade,
 /turf/open/floor/wood/f13/carpet,
@@ -1944,8 +2228,34 @@
 	},
 /obj/item/clothing/under/f13/bosformgold_f,
 /obj/item/clothing/under/f13/bosformgold_m,
+/obj/item/clothing/shoes/laceup,
+/obj/item/clothing/head/f13/boscap,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"AS" = (
+/obj/machinery/vending/cola/starkist,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"AY" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/wasteland)
+"AZ" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"Bd" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "Bh" = (
 /obj/structure/chair/left{
 	dir = 8
@@ -1955,6 +2265,12 @@
 "Bl" = (
 /obj/structure/pondlily_big,
 /turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland)
+"Bm" = (
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/wasteland)
 "Bn" = (
 /obj/structure/sink/well{
@@ -2038,6 +2354,12 @@
 /obj/item/stack/ore/blackpowder/fifty,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"Ch" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Cj" = (
 /turf/open/floor/plating/f13/outside/roof/wood,
 /area/f13/wasteland)
@@ -2057,6 +2379,16 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/city)
+"Dc" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant{
+	color = "#FFFF00";
+	health = 950;
+	name = "legendary nightkin"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Df" = (
 /obj/structure/rack,
 /obj/item/plant_analyzer,
@@ -2235,6 +2567,18 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"EJ" = (
+/obj/item/paper_bin{
+	pixel_x = 16;
+	pixel_y = 5
+	},
+/obj/item/pen/fountain{
+	pixel_x = 15;
+	pixel_y = 5
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "EN" = (
 /obj/structure/fence/handrail{
 	dir = 8;
@@ -2319,6 +2663,16 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"FD" = (
+/obj/machinery/computer/terminal{
+	dir = 1;
+	pixel_x = 16;
+	pixel_y = 8;
+	termtag = "Business"
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "FM" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/indestructible/ground/outside/dirt,
@@ -2371,6 +2725,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"Gw" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Gx" = (
 /obj/structure/fluff/railing,
 /turf/open/floor/f13{
@@ -2481,6 +2841,14 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"Iu" = (
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "Ix" = (
 /turf/open/transparent/openspace,
 /area/f13/brotherhood)
@@ -2650,6 +3018,10 @@
 	},
 /turf/open/floor/plating/f13/outside/road,
 /area/f13/brotherhood)
+"KL" = (
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/r_wall/rust,
+/area/f13/wasteland)
 "KM" = (
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/black,
@@ -2683,12 +3055,43 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland)
+"Lm" = (
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Lt" = (
 /obj/machinery/chem_master/advanced,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Lv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/hatch{
+	req_one_access_txt = "120"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/brotherhood)
+"Lz" = (
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/door/airlock/glass,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"LF" = (
+/obj/structure/filingcabinet/security,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"LK" = (
+/obj/structure/chair/sofa/corp/corner{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "LS" = (
 /turf/closed/wall/f13/store,
 /area/f13/city)
@@ -2713,6 +3116,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"Mf" = (
+/obj/structure/filingcabinet/medical,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "Mg" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt{
@@ -2799,6 +3208,12 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"MX" = (
+/obj/machinery/workbench/pa,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Na" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 4
@@ -2879,6 +3294,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"NI" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "NL" = (
 /turf/closed/wall/f13/store{
 	desc = "A pre-War wall made of solid concrete.";
@@ -2910,6 +3329,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"NW" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "NY" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 8
@@ -3179,6 +3604,14 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"Rf" = (
+/obj/structure/curtain{
+	color = "#c40e0e";
+	pixel_x = -32
+	},
+/obj/machinery/light/small,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Rj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/blueprintVHigh,
@@ -3416,6 +3849,12 @@
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"TV" = (
+/obj/item/storage/box/cups,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Ua" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/f13{
@@ -3432,6 +3871,12 @@
 /obj/effect/landmark/start/f13/scribe,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"Un" = (
+/obj/machinery/vending/cola/red,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Uo" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13{
@@ -3463,6 +3908,12 @@
 /obj/item/gun/ballistic/automatic/tribalbow,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"UT" = (
+/obj/structure/chair/sofa/corp{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Va" = (
 /obj/structure/barricade/wooden/strong{
 	obj_integrity = 500
@@ -3541,6 +3992,12 @@
 /obj/item/storage/backpack/spearquiver,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"Wq" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "Wu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
@@ -3616,6 +4073,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"WU" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "WV" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -3637,6 +4100,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"Xc" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Xg" = (
 /obj/structure/table{
 	layer = 2.9
@@ -3658,6 +4127,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Xu" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "XC" = (
 /obj/effect/landmark/start/f13/chief,
 /turf/open/floor/f13/wood,
@@ -3729,6 +4204,17 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/wasteland)
+"Yy" = (
+/obj/structure/closet/cabinet{
+	anchored = 1;
+	name = "formal attire cabinet"
+	},
+/obj/item/clothing/under/f13/bosformgold_f,
+/obj/item/clothing/under/f13/bosformgold_m,
+/obj/item/clothing/head/f13/boscap,
+/obj/item/clothing/shoes/laceup,
+/turf/open/floor/carpet/black,
+/area/f13/brotherhood)
 "Yz" = (
 /obj/structure/fence/handrail{
 	dir = 8;
@@ -3772,6 +4258,12 @@
 "YQ" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/wasteland)
+"YS" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
 /area/f13/wasteland)
 "Zb" = (
 /obj/machinery/door/airlock/silver,
@@ -9979,8 +10471,8 @@ EQ
 EQ
 EQ
 EQ
-EQ
 Wu
+EQ
 EQ
 EQ
 EQ
@@ -10231,13 +10723,13 @@ Zq
 Zq
 Zq
 Zq
-Wu
-EQ
-EQ
-Wu
-EQ
-EQ
-EQ
+zw
+zw
+zw
+kq
+pj
+xs
+zw
 EQ
 EQ
 EQ
@@ -10488,13 +10980,13 @@ ls
 ls
 ls
 Zq
-Wu
-Wu
-Wu
-EQ
-EQ
-EQ
-EQ
+pp
+sK
+pp
+pp
+ib
+Rf
+zw
 EQ
 EQ
 EQ
@@ -10745,13 +11237,13 @@ ls
 ls
 ls
 Zq
-Wu
-Wu
-EQ
-EQ
-EQ
-Wu
-EQ
+pp
+NI
+NI
+pp
+Gw
+bQ
+zw
 EQ
 EQ
 EQ
@@ -11002,13 +11494,13 @@ ls
 ls
 ls
 Zq
-EQ
-EQ
-Wu
-EQ
-EQ
-EQ
-EQ
+pp
+pp
+EJ
+pp
+pp
+UT
+zw
 EQ
 EQ
 EQ
@@ -11122,17 +11614,17 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -11259,13 +11751,13 @@ ls
 ls
 ls
 Zq
-EQ
-EQ
-EQ
-EQ
-EQ
-EQ
-EQ
+pp
+kA
+FD
+pp
+pp
+UT
+zw
 EQ
 EQ
 EQ
@@ -11379,6 +11871,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -11427,24 +11930,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zX
+DA
+DA
+DA
+DA
+DA
+st
 ls
 ls
 ls
@@ -11516,13 +12008,13 @@ ls
 ls
 ls
 Zq
-Wu
-EQ
-EQ
-EQ
-EQ
-EQ
-EQ
+pp
+pp
+NI
+pp
+pp
+UT
+zw
 EQ
 EQ
 EQ
@@ -11636,6 +12128,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -11684,24 +12187,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -11773,13 +12265,13 @@ ls
 ls
 ls
 Zq
-Wu
-EQ
-EQ
-EQ
-EQ
-EQ
-EQ
+pp
+NI
+NI
+pp
+Xc
+LK
+zw
 EQ
 EQ
 EQ
@@ -11893,6 +12385,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -11941,24 +12444,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -12030,13 +12522,13 @@ ls
 ls
 ls
 Zq
-Wu
-EQ
-EQ
-EQ
-EQ
-EQ
-EQ
+pp
+Xu
+pp
+pp
+pp
+mT
+zw
 Wu
 Wu
 EQ
@@ -12150,6 +12642,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -12198,24 +12701,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -12287,13 +12779,13 @@ ls
 ls
 ls
 Zq
-Wu
-EQ
-EQ
-Wu
-EQ
-EQ
-EQ
+zw
+zw
+zw
+zw
+Gi
+zw
+zw
 Oo
 mV
 EQ
@@ -12407,6 +12899,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -12455,24 +12958,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -12544,13 +13036,13 @@ ls
 ls
 ls
 Zq
-EQ
-EQ
-EQ
-EQ
-EQ
-Wu
-EQ
+ia
+ZT
+Lv
+dg
+Bo
+Bo
+zw
 fX
 Tz
 Wu
@@ -12664,6 +13156,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -12712,24 +13215,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -12801,13 +13293,13 @@ ls
 ls
 ls
 Zq
-EQ
-Wu
-Wu
-Wu
-Wu
-Wu
-EQ
+HR
+ZT
+zw
+Yy
+DQ
+Bo
+zw
 fX
 Tz
 EQ
@@ -12921,6 +13413,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -12969,24 +13472,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -13178,6 +13670,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -13226,24 +13729,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -13435,6 +13927,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -13482,25 +13985,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zX
+vT
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -13692,6 +14184,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -13739,25 +14242,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -13949,6 +14441,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -13996,25 +14499,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -14206,6 +14698,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -14253,25 +14756,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -14463,6 +14955,17 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -14510,25 +15013,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -14778,14 +15270,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Ez
+qx
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -15036,13 +15528,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -15293,13 +15785,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+bv
+mF
+mF
+mF
+mF
+mF
+Cw
 ls
 ls
 ls
@@ -15550,13 +16042,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Ez
+sV
+sV
+sV
+sV
+mF
+iE
 ls
 ls
 ls
@@ -17114,7 +17606,7 @@ ls
 ls
 ls
 ls
-zo
+ls
 ls
 ls
 ls
@@ -17305,11 +17797,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -17333,11 +17825,11 @@ ls
 ls
 ls
 RF
+Wq
 qS
 qS
 qS
-qS
-qS
+Mf
 RF
 qS
 qS
@@ -17562,10 +18054,10 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -17590,11 +18082,11 @@ ls
 ls
 ls
 RF
+NW
 qS
 qS
 qS
-qS
-qS
+tP
 RF
 qS
 qS
@@ -17819,11 +18311,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -17847,11 +18339,11 @@ ls
 ls
 ls
 RF
+LF
 qS
 qS
 qS
-qS
-qS
+kk
 RF
 qS
 qS
@@ -18076,14 +18568,14 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
 ls
 ls
 ls
@@ -18333,14 +18825,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -18398,7 +18890,7 @@ zo
 zo
 ls
 ls
-zo
+ls
 ls
 ls
 ls
@@ -18590,14 +19082,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -18847,14 +19339,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -19104,14 +19596,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -19132,11 +19624,11 @@ ls
 ls
 ls
 RF
+AZ
+Iu
 qS
-qS
-qS
-qS
-qS
+lo
+mI
 RF
 qS
 qS
@@ -19361,14 +19853,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -19389,11 +19881,11 @@ ls
 ls
 ls
 RF
+AZ
+Iu
 qS
-qS
-qS
-qS
-qS
+lo
+mI
 RF
 qS
 qS
@@ -19646,11 +20138,11 @@ ls
 ls
 ls
 RF
+AZ
+Iu
 qS
-qS
-qS
-qS
-qS
+lo
+mI
 RF
 qS
 qS
@@ -19665,7 +20157,7 @@ kr
 Lt
 RF
 dx
-qS
+Bd
 RF
 qS
 RF
@@ -44818,14 +45310,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -44862,34 +45354,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+AY
+AY
+iq
+iq
+AY
+AY
+AY
+iq
+iq
+AY
+AY
+AY
+AY
 ls
 ls
 ls
@@ -45075,14 +45567,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -45119,34 +45611,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+hE
+TV
+Lm
+Lm
+eL
+jh
+Lm
+eL
+nq
+Lm
+eL
+nq
+AY
 ls
 ls
 ls
@@ -45332,14 +45824,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -45376,34 +45868,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+nL
+AS
+Un
+Lm
+hi
+jX
+Lm
+hi
+jX
+gD
+qc
+jX
+AY
 ls
 ls
 ls
@@ -45589,14 +46081,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -45633,34 +46125,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+AY
+AY
+AY
+kQ
+Lm
+Lm
+Lm
+Ch
+Lm
+Lm
+Lm
+dV
+AY
 ls
 ls
 ls
@@ -45846,14 +46338,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -45890,34 +46382,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+gD
+Lm
+kS
+Lm
+Lm
+Lm
+vz
+Lm
+Lm
+Lm
+zQ
+Lm
+AY
 ls
 ls
 ls
@@ -46103,14 +46595,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -46147,34 +46639,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+Lm
+Al
+AY
+AY
+AY
+AY
+AY
+AY
+fH
+AY
+AY
+AY
+AY
 ls
 ls
 ls
@@ -46360,14 +46852,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -46404,34 +46896,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+Lm
+Dc
+AY
+WU
+Lm
+Bm
+dv
+Lm
+Lm
+Lm
+Lm
+MX
+AY
 ls
 ls
 ls
@@ -46617,14 +47109,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -46661,34 +47153,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+sI
+jb
+AY
+gE
+gD
+Lm
+Lm
+Bm
+Lm
+Lm
+Lm
+MX
+AY
 ls
 ls
 ls
@@ -46874,14 +47366,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
+Cj
 ls
 ls
 ls
@@ -46918,34 +47410,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+AY
+AY
+KL
+Lm
+Lm
+Lm
+vz
+Lm
+AY
+AY
+cV
+AY
+AY
 ls
 ls
 ls
@@ -47175,34 +47667,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
+AY
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Lm
+kS
+Lm
+Bm
+Lm
+Lm
+kx
+AY
+kW
+uX
+YS
+AY
 ls
 ls
 ls
@@ -47390,13 +47882,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -47432,34 +47924,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+AY
+AY
+AY
+AY
+AY
+AY
+Lz
+AY
+AY
+AY
+AY
+AY
+AY
 ls
 ls
 ls
@@ -47647,13 +48139,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -47689,34 +48181,34 @@ ls
 ls
 ls
 ls
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
-zo
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+AY
+tF
+Lm
+dv
+Lm
+Lm
+dv
+vz
+Lm
+Lm
+dv
+kx
+vz
+AY
 ls
 ls
 ls
@@ -47904,13 +48396,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -47960,20 +48452,20 @@ ls
 ls
 ls
 ls
+AY
+kx
+Lm
+Lm
+Lm
+Lm
+fy
+kt
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+kt
+Lm
+Ch
+vz
+AY
 ls
 ls
 ls
@@ -48161,13 +48653,13 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -48217,20 +48709,20 @@ ls
 ls
 ls
 ls
+AY
+hU
+Lm
+Lm
+kQ
+kt
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+kt
+Lm
+fy
+AY
 ls
 ls
 ls
@@ -48415,16 +48907,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -48474,10 +48966,10 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
+AY
+Lm
+Lm
+kt
 ls
 ls
 ls
@@ -48672,16 +49164,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -48731,8 +49223,8 @@ ls
 ls
 ls
 ls
-ls
-ls
+AY
+Lm
 ls
 ls
 ls
@@ -48929,16 +49421,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -49186,16 +49678,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -49443,16 +49935,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -49700,16 +50192,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -49957,16 +50449,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -50214,16 +50706,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -50471,16 +50963,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
+Jy
 ls
 ls
 ls
@@ -50685,44 +51177,44 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -50942,44 +51434,44 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -51199,44 +51691,44 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -51456,44 +51948,44 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -51713,6 +52205,26 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -51721,36 +52233,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -51970,6 +52462,26 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -51978,36 +52490,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -52228,6 +52720,25 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -52236,35 +52747,16 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -52485,6 +52977,25 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -52496,6 +53007,13 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -52505,38 +53023,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+Cj
+Cj
+Cj
+pS
 ls
 ls
 ls
@@ -52742,6 +53234,25 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -52753,6 +53264,13 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
 ls
 ls
 ls
@@ -52762,38 +53280,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+pS
+pS
+pS
+pS
+Cj
 ls
 ls
 ls
@@ -52999,6 +53491,25 @@ ls
 ls
 ls
 ls
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+ls
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
+Aa
 ls
 ls
 ls
@@ -53026,31 +53537,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+pS
+pS
+Cj
+Cj
+pS
 ls
 ls
 ls
@@ -53302,12 +53794,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+pS
+Cj
+Cj
+pS
+pS
 ls
 ls
 ls
@@ -53559,12 +54051,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
+Cj
+Cj
+pS
+pS
+pS
+pS
 ls
 ls
 ls
