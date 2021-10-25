@@ -3710,6 +3710,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
+"edx" = (
+/obj/structure/fluff/railing{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "eet" = (
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -10898,6 +10906,10 @@
 /obj/structure/simple_door/interior,
 /turf/open/floor/plasteel/neutral,
 /area/f13/building)
+"mrj" = (
+/obj/structure/chair/sofa/corp/corner,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "mrx" = (
 /obj/structure/table,
 /obj/item/poster/random_official,
@@ -11064,6 +11076,12 @@
 	name = "concrete wall"
 	},
 /area/f13/building)
+"mCQ" = (
+/obj/structure/chair/sofa/corp/corner{
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "mCW" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -11115,6 +11133,14 @@
 "mFK" = (
 /obj/item/chair/wood,
 /turf/open/floor/wood/f13/old,
+/area/f13/building)
+"mGk" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/building)
 "mGn" = (
 /obj/structure/fence,
@@ -14650,6 +14676,14 @@
 	icon_state = "outerturn"
 	},
 /area/f13/wasteland)
+"qDq" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "qDP" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plating/f13/outside/road{
@@ -16794,6 +16828,15 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"tkr" = (
+/obj/structure/car/rubbish2{
+	desc = "A rusty pre-war automobile - this one however was clearly designed to be a luxury car, presumably one of the best if it's dilapidated leather seats and sleek look has anything to say about it.";
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "technical_pile1";
+	name = "Pre-war supercar"
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "tkV" = (
 /obj/structure/table,
 /obj/item/clothing/head/cowboyhat/black,
@@ -18662,6 +18705,11 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"viV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/sofa/corp,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "vju" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/closed/wall/f13/supermart,
@@ -19563,6 +19611,14 @@
 /obj/structure/bed,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"wmi" = (
+/obj/structure/fluff/railing{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "wmy" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft2"
@@ -25342,7 +25398,7 @@ gpp
 fhH
 tBu
 fhH
-sqE
+tkr
 rCn
 ihz
 sqE
@@ -25599,7 +25655,7 @@ ihz
 gVb
 ihz
 fhH
-sqE
+mCQ
 sqE
 sqE
 sqE
@@ -25856,7 +25912,7 @@ ihz
 fhH
 ihz
 gVb
-ihz
+viV
 sqE
 sqE
 sqE
@@ -26113,7 +26169,7 @@ tIh
 fhH
 ihz
 fhH
-ihz
+viV
 sqE
 sqE
 sqE
@@ -26370,7 +26426,7 @@ ihz
 kAD
 ihz
 dAU
-sqE
+mrj
 sqE
 sqE
 sqE
@@ -50693,8 +50749,8 @@ ycW
 ycW
 ycW
 ycW
-ycW
-ycW
+edx
+qDq
 ycW
 ycW
 mCp
@@ -50950,8 +51006,8 @@ ycW
 ycW
 ycW
 ycW
-ycW
-ycW
+oeF
+mCp
 ycW
 ycW
 mCp
@@ -51207,8 +51263,8 @@ ycW
 ycW
 ycW
 ycW
-ycW
-ycW
+oeF
+mCp
 ycW
 ycW
 mCp
@@ -51464,8 +51520,8 @@ ycW
 ycW
 ycW
 ycW
-ycW
-ycW
+wmi
+mGk
 ycW
 ycW
 mCp
