@@ -1039,6 +1039,12 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "drive_jacket"
 	item_state = "drive_jacket"
 
+/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/croppeddenim
+	name = "cropped denim jacket"
+	desc = "A denim jacket. Cropped, for your pleasure."
+	icon_state = "croppeddenim"
+	item_state = "croppeddenim"
+
 /obj/item/clothing/suit/armor/f13/power_armor/legion
 	name = "salvaged Legion power armor"
 	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has a legion aquila engraved into the chestplate."

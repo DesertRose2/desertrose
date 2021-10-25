@@ -147,7 +147,6 @@
 /obj/item/gun/ballistic/revolver/colt6520/ranger
 	name = "10mm 'Hard-Boiled' Special"
 	desc = "A shiny big iron that was popular among tax collectors and insurance investigators before the war. While technically based on a law-enforcement variant of the 6520, it is outfitted uniquely with modifications including a larger trigger guard and heavier weight to counterbalance its fire rate."
-	item_state = "ranger6520"
 	icon_state = "ranger6520"
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("Classic" = "colt6520",
@@ -172,7 +171,6 @@
 /obj/item/gun/ballistic/revolver/revolver45/ranger
 	name = "Casull Cowboy .45"
 	desc = "A rare .454 Casull revolver in incredibly well-maintained condition, polished to a mirror sheen. It's been rechambered to fit .45 ACP for some reason. Most of these have been lost to the mists of time."
-	item_state = "ranger45"
 	icon_state = "ranger45"
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("Classic" = "45revolver",
@@ -216,7 +214,6 @@
 /obj/item/gun/ballistic/revolver/colt357/ranger
 	name = "Lawman Autorevolver"
 	desc = "A pre-war conceptualized .357 never manufactured due to niche design, it's become a semi-common sight among NCR ranger big-irons. Its weight is a little more than it looks - and it already looks a bit oversized. Even so, the most interesting thing about it (aside from the golden bear design imprinted upon an embedded medallion in the grip) is that it is break-open style."
-	item_state = "ranger357"
 	icon_state = "ranger357"
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("Classic" = "357colt",
@@ -231,7 +228,7 @@
 /obj/item/gun/ballistic/revolver/m29
 	name = ".44 magnum revolver"
 	desc = "Being that this is the most powerful handgun in the world, and can blow your head clean-off, you've got to ask yourself one question. Do I feel lucky? Well, do ya punk? "
-	item_state = "model29"
+	item_state = "colt44"
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	fire_sound = 'sound/f13weapons/44mag.ogg'
@@ -303,7 +300,6 @@
 /obj/item/gun/ballistic/revolver/revolver44/ranger
 	name = "Shorty .44"
 	desc = "Noticing a short-barreled .44 on a ranger's hip might mean death will come 10 seconds more. A quality revolver like this makes up for its difference in size."
-	item_state = "ranger44_alt"
 	icon_state = "ranger44_alt"
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("Classic" = "44colt",

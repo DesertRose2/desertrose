@@ -257,8 +257,18 @@
 	target_items = list(/obj/item/clothing/head/helmet/f13/legion/vet)
 	result_item = /obj/item/clothing/head/helmet/f13/legion/vet/pal
 
+/obj/item/modkit/houndmasterhelm
+	name = "Houndmaster Decon Modkit"
+	target_items = list (/obj/item/clothing/head/helmet/f13/legion/recruit/decan, /obj/item/clothing/head/helmet/f13/legion/prime)
+	result_item = /obj/item/clothing/head/helmet/f13/legion/recruit/decan/houndmaster
+
+
+
+
+
 
 //Crusader Pistol Modkits
+
 /obj/item/modkit/crusader_10mm
 	name = "crusader pistol 10mm conversion kit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,

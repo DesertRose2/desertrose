@@ -212,7 +212,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select += 1
 			burst_size = 2
 			spread = 11
 			fire_delay += 1
@@ -220,7 +220,7 @@
 			extra_damage = -1
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 0
 			burst_size = 4
 			spread += 11
 			fire_delay += 1
@@ -258,7 +258,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select += 1
 			burst_size += 1
 			spread += 11
 			recoil = 0.1
@@ -319,7 +319,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select += 1
 			burst_size = 2
 			spread += 2
 			fire_delay += 3.75
@@ -359,7 +359,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select += 1
 			burst_size += 2
 			spread += 7
 			recoil = 0.25
@@ -441,7 +441,7 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select += 1
 			burst_size = 2
 			spread = 8
 			fire_delay = 3.5
@@ -450,7 +450,7 @@
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire in short bursts.</span>")
 		if(1)
-			select = 1
+			select = 0
 			burst_size = 4
 			spread = 12
 			fire_delay = 4.5
@@ -847,7 +847,7 @@
 	name = "NCR assault carbine"
 	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
 	icon = 'icons/obj/guns/ballistic/r91.dmi'
-	icon_state = "assault_carbine_ncr"
+	icon_state = "r91_ncr"
 	fire_delay = 5
 	burst_shot_delay = 2.2
 	spread = 2
@@ -865,7 +865,7 @@
 	name = "'Pilum' assault rifle"
 	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
 	icon = 'icons/obj/guns/ballistic/r91.dmi'
-	icon_state = "assault_carbine_legion"
+	icon_state = "r91_legion"
 	spread = 6
 	fire_delay = 3.5
 	can_scope = FALSE
@@ -995,7 +995,7 @@
 	untinkerable = TRUE
 	force = 20
 	burst_size = 2
-	fire_delay = 4
+	fire_delay = 3
 	burst_shot_delay = 2.2
 	spread = 20
 	can_attachments = FALSE
@@ -1037,10 +1037,10 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 1
+			select += 1
 			burst_size = 2
 			extra_damage = -3
-			spread += 5
+			spread = 5
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
@@ -1081,13 +1081,13 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select += 1
 			burst_size = 3
 			spread = 20
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
-			select = 1
+			select = 0
 			burst_size = 4
 			spread = 34
 			recoil = 0.5
@@ -1125,14 +1125,14 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select += 1
 			burst_size = 2
 			spread = 15
 			extra_damage = -1
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to firing in small bursts.</span>")
 		if(1)
-			select = 2
+			select = 0
 			burst_size = 3
 			spread = 20
 			extra_damage = -2
@@ -1148,7 +1148,7 @@
 	desc = "A relatively dated yet reliable machine gun chambered in 7.62; a rare find! These can be found in musuems and national guard stockpiles as an old squad support training weapon."
 	icon = 'icons/obj/guns/ballistic/bar.dmi'
 	icon_state = "bar"
-	item_state = "bar"
+	item_state = "R84"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/m762
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -1172,7 +1172,7 @@
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to firing in small-bursts.</span>")
 		if(1)
-			select = 1
+			select += 1
 			burst_size = 3
 			spread = 20
 			extra_damage = -2
@@ -1254,14 +1254,14 @@
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
-			select = 0
+			select += 1
 			burst_size = 2
 			spread = 40
 			extra_damage = -5
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
-			select = 1
+			select = 0
 			burst_size = 4
 			spread = 60
 			extra_damage = -10
@@ -1319,194 +1319,3 @@
 	knife_x_offset = 22
 	knife_y_offset = 21
 	semi_auto = FALSE
-
-
-//Temporary Graveyard Area - Removed weapons from the 'weapon rework' done. Temporarily set aside just incase someone needs access to what we had previously.
-
-/*
-//R82 Heavy Rifle		Keywords: 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
-/obj/item/gun/ballistic/automatic/service/r82
-	name = "R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Chambered in 5.56."
-	icon = 'icons/obj/guns/ballistic/r82.dmi'
-	fire_delay = 5
-	extra_damage = 1
-	spread = 4
-	semi_auto = FALSE
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	icon_state = "R82"
-	item_state = "R84"
-	automatic_burst_overlay = TRUE
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	burst_size = 2
-	burst_shot_delay = 2.2
-	can_suppress = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 32
-	knife_y_offset = 14
-	suppressor_state = "suppressor"
-	suppressor_x_offset = 36
-	suppressor_y_offset = 16
-
-//R82/N Heavy Rifle		Keywords: NCR, 5.56mm, Semi-Auto, 20 (10-50) round mags. Notes: Snowflake non-canon rifle.
-/obj/item/gun/ballistic/automatic/service/r82/ncr
-	name = "NCR R82 heavy service rifle"
-	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	icon_state = "R82_ncr"
-	item_state = "R84"
-	spread = 3
-	untinkerable = TRUE
-	can_suppress = TRUE
-
-//R91 "Pilum"			Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No Stock.
-/obj/item/gun/ballistic/automatic/assault_rifle/legion
-	name = "'Pilum' rifle"
-	desc = "An old unmantained R91 with cut down stock and refurbished wooden furniture. It features a mark of bull on it and feels heavier than usual."
-	icon_state = "pilum"
-	item_state = "fnfal"
-	untinkerable = TRUE
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3.5
-	force = 20
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 7
-	can_suppress = TRUE
-
-//Bastard Gun		Keywords: 5.56, 60 round mags. Notes: Snowflake gun based on the Metro bastard gun. More spread, lower damage; inferior R-84.
-/obj/item/gun/ballistic/automatic/bastard
-	name = "'Bastard' LMG"
-	desc = "A post-war design made of various gun parts from various models, ranging from R-91 parts to even parts from the R84, CAR-15 or the Type 93. Some gun gun-nut really got this abomination to work.."
-	icon_state = "bastard"
-	item_state = "bastard"
-	slowdown = 1
-	mag_type = /obj/item/ammo_box/magazine/lmg
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	can_attachments = TRUE
-	can_suppress = TRUE
-	suppressor_x_offset = 27
-	suppressor_y_offset = 28
-	suppressor_state = "suppressor"
-	burst_size = 1
-	fire_delay = 5
-	burst_shot_delay = 3
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-
-/obj/item/gun/ballistic/automatic/bastard/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size += 1
-			spread += 20
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(1)
-			select = 2
-			burst_size += 2
-			spread += 20
-			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
-		if(2)
-			select = 0
-			burst_size = 1
-			spread -= 40 //Written this way so that it does not overwrite a recoil compensator.
-			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
-//M1919 Machinegun		Keywords: .308/7.62, Automatic, 80 round belt. Notes: DAKA DAKA DAKA - Careful with these. High damage.
-/obj/item/gun/ballistic/automatic/m1919
-	name = "Browning M1919"
-	desc = "An old pre-war machine gun used in service by the US Military around the time of the war. Rechambered in 7.62x51."
-	icon_state = "M38"
-	item_state = "M38"
-	slot_flags = 0
-	slowdown = 1.25
-	mag_type = /obj/item/ammo_box/magazine/mm762
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	untinkerable = TRUE
-	can_suppress = FALSE
-	can_attachments = FALSE
-	burst_size = 1
-	burst_shot_delay = 1.5
-	fire_delay = 6
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	spread = 12
-	var/cover_open = FALSE
-
-/obj/item/gun/ballistic/automatic/m1919/update_icon()
-	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
-	item_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
-
-/obj/item/gun/ballistic/automatic/m1919/examine(mob/user)
-	. = ..()
-	if(cover_open && magazine)
-		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
-
-/obj/item/gun/ballistic/automatic/m1919/attack_self(mob/user)
-	cover_open = !cover_open
-	to_chat(user, "<span class='notice'>You [cover_open ? "open" : "close"] [src]'s cover.</span>")
-	if(cover_open)
-		playsound(user, 'sound/weapons/sawopen.ogg', 60, 1)
-	else
-		playsound(user, 'sound/weapons/sawclose.ogg', 60, 1)
-	update_icon()
-
-/obj/item/gun/ballistic/automatic/m1919/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
-	if(cover_open)
-		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
-	else
-		. = ..()
-		update_icon()
-
-/obj/item/gun/ballistic/automatic/m1919/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(loc != user)
-		..()
-		return	//let them pick it up
-	if(!cover_open || (cover_open && !magazine))
-		..()
-	else if(cover_open && magazine)
-		//drop the mag
-		magazine.update_icon()
-		magazine.forceMove(drop_location())
-		user.put_in_hands(magazine)
-		magazine = null
-		update_icon()
-		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
-		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
-
-/obj/item/gun/ballistic/automatic/m1919/attackby(obj/item/A, mob/user, params)
-	if(!cover_open && istype(A, mag_type))
-		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
-		return
-	..()
-
-/obj/item/gun/ballistic/automatic/m1919/burst_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select = 1
-			burst_size = 2
-			spread = 12
-			extra_damage = -2
-			recoil = 0.25
-			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
-		if(1)
-			select = 0
-			burst_size = 4
-			spread = 22
-			extra_damage = -6
-			recoil = 1
-			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-*/

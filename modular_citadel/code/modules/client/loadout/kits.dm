@@ -379,27 +379,31 @@
 /obj/item/storage/box/large/custom_kit/mariya/PopulateContents()
 	new /obj/item/modkit/mariarmor(src)
 	new /obj/item/modkit/marihelmet(src)
-	
+
+//Hazard - Rebel0
+/obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
+	new /obj/item/clothing/head/beret/mets(src)
+
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_scout_old(src)
-	
+
 //Bryan ''Aranesp'' Monroe - ElizabethDame
 /obj/item/storage/box/large/custom_kit/bryanmonroe/PopulateContents()
 	new /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/clothing/neck/stethoscope(src)
-	new /obj/item/clothing/shoes/f13/military/leather(src) 
+	new /obj/item/clothing/shoes/f13/military/leather(src)
 
 //Jay-Oh - Conormackgegore
 /obj/item/storage/box/large/custom_kit/jayoh/PopulateContents()
-	new /obj/item/clothing/under/f13/dbdu(src) 
+	new /obj/item/clothing/under/f13/dbdu(src)
 
 //Muhsollini - Viatoris
 /obj/item/storage/box/large/custom_kit/viatoris/PopulateContents()
 	new /obj/item/modkit/legionvetpalhunter(src)
 	new /obj/item/modkit/legionvetpalhunterhelm(src)
-	
+
 //The Batsman - ElizabethDame
 /obj/item/storage/box/large/custom_kit/thebatsman/PopulateContents()
 	new /obj/item/clothing/under/f13/batter(src)
@@ -413,7 +417,11 @@
 //Parker Wright - KayZach
 /obj/item/storage/box/large/custom_kit/parkerwright/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_recon(src)
-	
+
+//Canis - KayZach
+/obj/item/storage/box/large/custom_kit/houndmaster/PopulateContents()
+	new /obj/item/modkit/houndmasterhelm(src)
+
 //Asher Griffin - Metriusthehot
 /obj/item/storage/box/large/custom_kit/ashergriffin/PopulateContents()
 	new /obj/item/storage/bag/plushie(src)

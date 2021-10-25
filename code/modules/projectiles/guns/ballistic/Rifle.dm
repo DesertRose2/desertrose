@@ -135,7 +135,7 @@
 	bayonet_state = "lasmusket"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	extra_damage = 6
+	extra_damage = 4
 	fire_delay = 3.5
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
@@ -151,7 +151,8 @@
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	extra_damage = 8
-	fire_delay = 5
+	fire_delay = 4
+	extra_penetration = 0.1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_scope = TRUE
@@ -402,7 +403,7 @@
 	icon_state = "commando"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45
-	extra_damage = 8
+	extra_damage = 6
 	extra_penetration = 0.1
 	fire_delay = 5
 	spread = 1
@@ -415,7 +416,7 @@
 	scope_y_offset = 14
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
-//Commando Carbine				Keywords: LEGION, .45 ACP, Very high damage				Note: Canon? No. But fills a balance niche and has an interesting sprite. Basically a modified Lee-Enflield Mk III but now on steroids.
+//Commando DMR				Keywords: LEGION, .45 ACP, Very high damage				Note: Canon? No. But fills a balance niche and has an interesting sprite. Basically a modified Lee-Enflield Mk III but now on steroids.
 /obj/item/gun/ballistic/rifle/mag/commando/dmr
 	name = "destroyer carbine"
 	desc = "A integrally suppressed bolt action carbine, it appears to use some ancinet bolt-action rifle design but modified to take a lower-caliber round. Someone took a perfectly good rifle and mangled it into this amazing nightmare with a longer barrel for precision accuracy. Uses .45 socom magazines."

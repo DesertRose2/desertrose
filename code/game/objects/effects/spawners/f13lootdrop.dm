@@ -1365,11 +1365,11 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/rifle/remington/paciencia,
 				/obj/item/gun/energy/laser/solar,
-				/obj/item/gun/energy/laser/plasma/alien,
 				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 				/obj/item/gun/ballistic/automatic/m2a1,
-				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
+				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+				/obj/item/gun/ballistic/automatic/pistol/pistol127/lildevil
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random
@@ -1417,7 +1417,6 @@
 				/obj/item/ammo_box/magazine/m9mm,
 				/obj/item/ammo_box/shotgun/buck,
 				/obj/item/ammo_box/shotgun/slug,
-				/obj/item/ammo_box/c38,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle/small
 				)
@@ -1432,7 +1431,6 @@
 				/obj/item/ammo_box/a308,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/m556/rifle,
-				/obj/item/ammo_box/c38,
 				/obj/item/ammo_box/magazine/m9mm,
 				/obj/item/ammo_box/m44,
 				/obj/item/ammo_box/tube/a357,
@@ -1946,8 +1944,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/type93,
-		/obj/item/book/granter/crafting_recipe/blueprint/bastard,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82,
+		/obj/item/book/granter/crafting_recipe/blueprint/bar,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1garand,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm
