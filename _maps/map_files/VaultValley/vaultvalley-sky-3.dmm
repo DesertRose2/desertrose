@@ -99,10 +99,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland)
 "bQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/sofa/corp/corner{
-	dir = 1
-	},
+/obj/machinery/light/small,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "bR" = (
@@ -791,12 +788,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "kA" = (
+/obj/effect/landmark/start/f13/elder,
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
 	layer = 2.7;
 	name = "prewar lounge chair"
 	},
-/obj/effect/landmark/start/f13/elder,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "kJ" = (
@@ -1035,10 +1032,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
-"mT" = (
-/obj/machinery/light/small,
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
 "mV" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -1513,9 +1506,7 @@
 	},
 /area/f13/wasteland)
 "sK" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
+/obj/structure/bookcase/random,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "sL" = (
@@ -2568,15 +2559,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "EJ" = (
-/obj/item/paper_bin{
-	pixel_x = 16;
-	pixel_y = 5
+/obj/structure/table/abductor{
+	desc = "The Brotherhood has released the latest iteration of their advanced table. Designed by Head Knight Envy Sin";
+	name = "Table 3"
 	},
-/obj/item/pen/fountain{
-	pixel_x = 15;
-	pixel_y = 5
-	},
-/obj/structure/table/reinforced,
+/obj/item/documents/syndicate/blue,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "EN" = (
@@ -2663,16 +2650,6 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
-"FD" = (
-/obj/machinery/computer/terminal{
-	dir = 1;
-	pixel_x = 16;
-	pixel_y = 8;
-	termtag = "Business"
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
 "FM" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/indestructible/ground/outside/dirt,
@@ -2726,8 +2703,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "Gw" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 4
+/obj/structure/bookcase/random,
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
@@ -3066,6 +3044,18 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Lu" = (
+/obj/structure/closet/cabinet{
+	anchored = 1;
+	name = "formal attire cabinet"
+	},
+/obj/item/clothing/accessory/bos/elder,
+/obj/item/clothing/suit/f13/elder,
+/obj/item/pda/heads/hop{
+	name = "Elder's PDA"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Lv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/hatch{
@@ -3087,9 +3077,8 @@
 	},
 /area/f13/building)
 "LK" = (
-/obj/structure/chair/sofa/corp/corner{
-	dir = 8
-	},
+/obj/machinery/light/small,
+/obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "LS" = (
@@ -3295,7 +3284,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "NI" = (
-/obj/structure/table/reinforced,
+/obj/structure/table/abductor{
+	desc = "The Brotherhood has released the latest iteration of their advanced table. Designed by Head Knight Envy Sin";
+	name = "Table 3"
+	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "NL" = (
@@ -3605,11 +3597,7 @@
 	},
 /area/f13/wasteland)
 "Rf" = (
-/obj/structure/curtain{
-	color = "#c40e0e";
-	pixel_x = -32
-	},
-/obj/machinery/light/small,
+/obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "Rj" = (
@@ -3909,9 +3897,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "UT" = (
-/obj/structure/chair/sofa/corp{
-	dir = 1
-	},
+/obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "Va" = (
@@ -4101,8 +4087,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Xc" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
+/obj/structure/table/abductor{
+	desc = "The Brotherhood has released the latest iteration of their advanced table. Designed by Head Knight Envy Sin";
+	name = "Table 3"
+	},
+/obj/item/pen/fountain/captain{
+	name = "elder's fountain pen"
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
@@ -4128,8 +4118,8 @@
 	},
 /area/f13/building)
 "Xu" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/chair/f13chair1{
+	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
@@ -10724,8 +10714,8 @@ Zq
 Zq
 Zq
 zw
-zw
-zw
+pj
+xs
 kq
 pj
 xs
@@ -10980,12 +10970,12 @@ ls
 ls
 ls
 Zq
-pp
 sK
 pp
 pp
+pp
 ib
-Rf
+ib
 zw
 EQ
 EQ
@@ -11237,11 +11227,11 @@ ls
 ls
 ls
 Zq
-pp
-NI
-NI
-pp
 Gw
+pp
+NI
+pp
+pp
 bQ
 zw
 EQ
@@ -11494,12 +11484,12 @@ ls
 ls
 ls
 Zq
-pp
+sK
 pp
 EJ
+Xu
 pp
 pp
-UT
 zw
 EQ
 EQ
@@ -11751,10 +11741,10 @@ ls
 ls
 ls
 Zq
-pp
+Rf
 kA
-FD
-pp
+NI
+Xu
 pp
 UT
 zw
@@ -12008,10 +11998,10 @@ ls
 ls
 ls
 Zq
+sK
 pp
-pp
-NI
-pp
+Xc
+Xu
 pp
 UT
 zw
@@ -12265,11 +12255,11 @@ ls
 ls
 ls
 Zq
+Gw
 pp
 NI
-NI
 pp
-Xc
+pp
 LK
 zw
 EQ
@@ -12522,12 +12512,12 @@ ls
 ls
 ls
 Zq
-pp
-Xu
-pp
+sK
 pp
 pp
-mT
+pp
+pp
+UT
 zw
 Wu
 Wu
@@ -13298,7 +13288,7 @@ ZT
 zw
 Yy
 DQ
-Bo
+Lu
 zw
 fX
 Tz

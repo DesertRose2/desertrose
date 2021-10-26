@@ -13625,12 +13625,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
-"pdz" = (
-/obj/machinery/door/airlock/research,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/building)
 "pdF" = (
 /obj/structure/table/wood/settler,
 /obj/structure/barricade/wooden/strong{
@@ -20462,10 +20456,6 @@
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"wwJ" = (
-/obj/structure/timeddoor,
-/turf/open/transparent/openspace,
 /area/f13/building)
 "wxh" = (
 /obj/structure/fence{
@@ -64659,12 +64649,12 @@ umL
 umL
 umL
 umL
-umL
-umL
-umL
-umL
-umL
 lbF
+umL
+umL
+umL
+umL
+umL
 umL
 umL
 umL
@@ -64912,14 +64902,14 @@ lTM
 lTM
 pJj
 umL
-wwJ
-wjp
-pdz
 wjp
 wjp
+stH
 wjp
 wjp
-grd
+wjp
+wjp
+wjp
 wjp
 wjp
 wjp
@@ -65174,7 +65164,7 @@ umL
 rxg
 wjp
 wjp
-wjp
+grd
 hHW
 wjp
 umL
