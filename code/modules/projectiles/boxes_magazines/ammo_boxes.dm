@@ -33,40 +33,6 @@
 /obj/item/ammo_box/tube/a357/empty
 	start_empty = 1
 
-/obj/item/ammo_box/c38
-	name = "speed loader (.38 special)"
-	desc = "Designed to quickly reload revolvers."
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "38"
-	caliber = "38"
-	ammo_type = /obj/item/ammo_casing/c38
-	max_ammo = 6
-	multiple_sprites = 1
-	custom_materials = list(/datum/material/iron = 20000)
-
-/obj/item/ammo_box/c38/lethal //not needed
-	name = "speed loader (.38)"
-
-/obj/item/ammo_box/c38/trac
-	name = "speed loader (.38 TRAC)"
-	desc = "Designed to quickly reload revolvers. TRAC bullets embed a tracking implant within the target's body."
-
-/obj/item/ammo_box/c38/hotshot
-	name = "speed loader (.38 Hot Shot)"
-	desc = "Designed to quickly reload revolvers. Hot Shot bullets contain an incendiary payload."
-
-/obj/item/ammo_box/c38/iceblox
-	name = "speed loader (.38 Iceblox)"
-	desc = "Designed to quickly reload revolvers. Iceblox bullets contain a cryogenic payload."
-
-/obj/item/ammo_box/c38/dumdum
-	name = "speed loader (.38 DumDum)"
-	desc = "Designed to quickly reload revolvers. These rounds expand on impact, allowing them to shred the target and cause massive bleeding. Very weak against armor and distant targets."
-
-/obj/item/ammo_box/c38/match
-	name = "speed loader (.38 Match)"
-	desc = "Designed to quickly reload revolvers. These rounds are manufactured within extremely tight tolerances, making them easy to show off trickshots with."
-
 /obj/item/ammo_box/a357box
 	name = "ammo box (.357 Magnum FMJ)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
@@ -87,16 +53,6 @@
 	name = "ammo box (.357 Magnum JFP)"
 	ammo_type = /obj/item/ammo_casing/a357/jfp
 	custom_materials = list(/datum/material/iron = 19000, /datum/material/blackpowder = 2000)
-
-/obj/item/ammo_box/box38
-	name = "ammo box (.38 Spl)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	multiple_sprites = 2
-	icon_state = "38box"
-	ammo_type = /obj/item/ammo_casing/c38
-	max_ammo = 30
-	custom_materials = list(/datum/material/iron = 40000)
-	w_class = WEIGHT_CLASS_NORMAL
 
 
 //9mm
@@ -796,16 +752,7 @@
 	ammo_type = /obj/item/ammo_casing/caseless/g11
 	max_ammo = 50
 
-/obj/item/ammo_box/lasmusket
-	name = "Battery box (Laser musket)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "lasmusketbox"
-	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/lasermusket
-	max_ammo = 18
-	custom_materials = list(MAT_METAL = 1000)
-	w_class = WEIGHT_CLASS_NORMAL
-
+/*
 /obj/item/ammo_box/plasmamusket
 	name = "Plasma canister box"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
@@ -815,6 +762,7 @@
 	max_ammo = 6
 	custom_materials = list(MAT_METAL = 1000)
 	w_class = WEIGHT_CLASS_NORMAL
+*/
 
 /obj/item/ammo_box/m473_box
 	name = "ammo box (4.73mm caseless)"

@@ -770,6 +770,7 @@
 	icon_state = "kittyb"
 	color = "#999999"
 	armor = list("tier" = 0)
+	dynamic_hair_suffix = ""
 
 //Soft caps
 /obj/item/clothing/head/soft/f13

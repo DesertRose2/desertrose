@@ -30,6 +30,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/smoke)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //LM and LC Only Roles
@@ -94,7 +95,7 @@ Captain
 	outfit = /datum/outfit/job/ncr/f13captain
 
 	loadout_options = list(
-	/datum/outfit/loadout/captline, //R82, M29
+	/datum/outfit/loadout/captline, //NCR R91
 	/datum/outfit/loadout/captscout, //Republic's Pride, M29
 	/datum/outfit/loadout/captpistol //Grease Gun, Deagle
 	)
@@ -133,7 +134,7 @@ Captain
 	shoes 		= /obj/item/clothing/shoes/f13/military/leather
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	belt 		= /obj/item/storage/belt/military/assault/ncr/crossbelt
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
+	l_hand 		= /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 	/obj/item/gun/ballistic/revolver/m29=1,
@@ -177,7 +178,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
 	loadout_options = list(
-	/datum/outfit/loadout/ltline,	//R82
+	/datum/outfit/loadout/ltline,	//NCR R91
 	/datum/outfit/loadout/ltscout,	//Republic's Pride
 	/datum/outfit/loadout/ltpistol	//.223 Pistol
 	)
@@ -214,7 +215,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 
 /datum/outfit/loadout/ltline
 	name = "Line Officer"
-	l_hand =	 /obj/item/gun/ballistic/automatic/service/r82/ncr
+	l_hand = /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 		/obj/item/kitchen/knife/combat/bayonet=1)
@@ -293,7 +294,7 @@ Sergeant First Class
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
 
 	loadout_options = list(
-	/datum/outfit/loadout/sfcinfantry, 	//R82
+	/datum/outfit/loadout/sfcinfantry, 	//NCR R91
 	/datum/outfit/loadout/sfcsniper,	//Sniper Rifle
 	/datum/outfit/loadout/sfcgarand 	//Old Glory
 	)
@@ -320,7 +321,7 @@ Sergeant First Class
 
 /datum/outfit/loadout/sfcinfantry
 	name = "Infantry"
-	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82/ncr
+	l_hand 		= /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault=3,
 		/obj/item/kitchen/knife/combat/bayonet=1)
@@ -588,6 +589,7 @@ Combat Engineer
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /*

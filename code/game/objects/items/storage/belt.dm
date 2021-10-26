@@ -747,7 +747,6 @@
 		/obj/item/ammo_box/magazine,
 		/obj/item/ammo_box/tube,
 		/obj/item/ammo_box/a357,
-		/obj/item/ammo_box/c38,
 		/obj/item/ammo_box/l10mm,
 		/obj/item/ammo_box/a762,
 		/obj/item/ammo_box/shotgun,
@@ -775,9 +774,7 @@
 		))
 
 /obj/item/storage/belt/holster/full/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/detective(src)
-	new /obj/item/ammo_box/c38(src)
-	new /obj/item/ammo_box/c38(src)
+	new /obj/item/gun/ballistic/revolver/police(src)
 
 /obj/item/storage/belt/holster/ranger44/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/revolver44/ranger(src)
@@ -822,7 +819,7 @@
 	new /obj/item/ammo_box/magazine/m9mm(src)
 
 /obj/item/storage/belt/holster/ncr_officer/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
+	new /obj/item/gun/ballistic/automatic/pistol/m1911(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)

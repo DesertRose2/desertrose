@@ -356,6 +356,11 @@
 	path = /obj/item/storage/box/large/custom_kit/mariya
 	ckeywhitelist = list("rebel0")
 
+/datum/gear/donator/kits/hazard
+	name = "Hazard's belongings"
+	path = /obj/item/storage/box/large/custom_kit/hazard
+	ckeywhitelist = list("rebel0")
+
 /datum/gear/donator/kits/katiemorgan/
 	name = "Katie Morgan's belongings"
 	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
@@ -370,22 +375,27 @@
 	name = "Jay-Oh's belongings"
 	path = /obj/item/storage/box/large/custom_kit/jayoh/
 	ckeywhitelist = list("conormackgegore")
-	
+
 /datum/gear/donator/kits/viatoris
 	name = "Viatoris's belongings"
 	path = /obj/item/storage/box/large/custom_kit/viatoris/
 	ckeywhitelist = list("muhsollini")
-	
+
 /datum/gear/donator/kits/thebatsman
 	name = "The batsman's belongings"
 	path = /obj/item/storage/box/large/custom_kit/thebatsman
 	ckeywhitelist = list("elizabethdame")
-	
+
 /datum/gear/donator/kits/parkerwright
 	name = "Parker Wright's belongings"
 	path = /obj/item/storage/box/large/custom_kit/parkerwright
 	ckeywhitelist = list("kayzach")
-	
+
+/datum/gear/donator/kits/houndmaster
+	name = "Canis' belongings"
+	path = /obj/item/storage/box/large/custom_kit/houndmaster
+	ckeywhitelist = list("kayzach")
+
 /datum/gear/donator/kits/ashergriffin
 	name = "Asher Griffin's belongings"
 	path = /obj/item/storage/box/large/custom_kit/ashergriffin

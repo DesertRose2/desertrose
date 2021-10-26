@@ -617,25 +617,15 @@
 	oneuse = TRUE
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/r91/ncr
+	name = "ncr assault rifle blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
-
-/obj/item/book/granter/crafting_recipe/blueprint/r82/ncr
-	name = "ncr r82 heavy service rifle blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
+	crafting_recipe_types = list(/datum/crafting_recipe/r91/ncr)
 
 /obj/item/book/granter/crafting_recipe/blueprint/maxson
 	name = "maxson carbine blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/maxson)
-
-/obj/item/book/granter/crafting_recipe/blueprint/bastard
-	name = "bastard LMG blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list (/datum/crafting_recipe/bastard)
 
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
@@ -799,15 +789,15 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/wattz2k)
 
-/obj/item/book/granter/crafting_recipe/blueprint/commando
-	name = "commando carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/commando)
-
 /obj/item/book/granter/crafting_recipe/blueprint/type93
 	name = "type93 assault rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/type93)
+
+/obj/item/book/granter/crafting_recipe/blueprint/bar
+	name = "bar 1918 blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/bar)
 
 /obj/item/book/granter/trait/chemistry
 	name = "Chemistry for Wastelanders"
@@ -922,7 +912,7 @@
 	granted_trait = TRAIT_DEMOLITION_EXPERT
 	traitname = "explosives"
 	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
-	crafting_recipe_types = list(/datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4)
+	crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")
@@ -956,7 +946,7 @@
 			if("Explosive Expert")
 				granted_trait = TRAIT_DEMOLITION_EXPERT
 				traitname = "explosives"
-				crafting_recipe_types = list(/datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4)
+				crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
 	else
 		. = ..()
 

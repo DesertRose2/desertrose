@@ -135,6 +135,7 @@
 	icon_state = "laser"
 	item_state = "laser"
 	slowdown = 0.3
+	slot_flags = 0
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	custom_materials = list(/datum/material/iron=2000)
@@ -222,6 +223,7 @@
 	item_state = "laser-pistol"
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 2
 	can_scope = TRUE
 	scope_state = "AEP7_scope"
@@ -256,21 +258,6 @@
 	selfcharge = 1
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
-//Ultracite Laser Pistol
-/obj/item/gun/energy/laser/ultra_pistol
-	name = "Ultracite laser pistol"
-	desc = "An ultracite enhanced energy-based laser gun that fires concentrated beams of light."
-	icon_state = "ultra_pistol"
-	item_state = "laser-pistol"
-	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 2
-	scope_x_offset = 7
-	scope_y_offset = 22
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultra_pistol)
-	cell_type = /obj/item/stock_parts/cell/ammo/ec
-	slot_flags = ITEM_SLOT_BELT
-
 
 ////////////////
 //LASER RIFLES//
@@ -282,7 +269,7 @@
 	desc = "Wattz 2000 Laser Rifle. Uses micro fusion cells for more powerful lasers, and an extended barrel for additional range."
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
-	fire_delay = 3.5
+	fire_delay = 4
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -313,22 +300,6 @@
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-
-//Ultracite Laser Rifle
-/obj/item/gun/energy/laser/ultra_rifle
-	name = "Ultracite laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite"
-	icon_state = "ultra_rifle"
-	item_state = "laser-rifle9"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	fire_delay = 3
-	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
-	cell_type = /obj/item/stock_parts/cell/ammo/ultracite
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
@@ -505,31 +476,6 @@
 /obj/item/gun/energy/laser/plasma/p94/update_icon_state()
 	icon_state = "[initial(icon_state)][cell ? "" : "-e"]"
 
-//Plasma Carbine
-/obj/item/gun/energy/laser/plasma/carbine
-	name ="plasma carbine"
-	item_state = "plasma"
-	icon_state = "plasmacarbine"
-	desc = ""
-	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
-	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	burst_size = 2
-	burst_shot_delay = 1.5
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	can_scope = TRUE
-	scope_state = "plasma_scope"
-	scope_x_offset = 13
-	scope_y_offset = 16
-	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
-
-/obj/item/gun/energy/laser/plasma/carbine/enable_burst()
-	. = ..()
-	spread = 15
-
-/obj/item/gun/energy/laser/plasma/carbine/disable_burst()
-	. = ..()
-	spread = 0
-
 //Multi-Plas Rifle
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "Multiplas Rifle"
@@ -564,6 +510,41 @@
 	ammo_x_offset = 3
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
+
+/////////////////////
+//ULTRACITE LASERS //
+/////////////////////
+
+//Ultracite Laser Pistol
+/obj/item/gun/energy/laser/ultra_pistol
+	name = "Ultracite laser pistol"
+	desc = "An ultracite enhanced energy-based laser gun that fires concentrated beams of light."
+	icon_state = "ultra_pistol"
+	item_state = "laser-pistol"
+	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	fire_delay = 2
+	scope_x_offset = 7
+	scope_y_offset = 22
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultra_pistol)
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
+	slot_flags = ITEM_SLOT_BELT
+
+//Ultracite Laser Rifle
+/obj/item/gun/energy/laser/ultra_rifle
+	name = "Ultracite laser rifle"
+	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite"
+	icon_state = "ultra_rifle"
+	item_state = "laser-rifle9"
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	fire_delay = 3
+	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
+	cell_type = /obj/item/stock_parts/cell/ammo/ultracite
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
 
 
 //////////////////

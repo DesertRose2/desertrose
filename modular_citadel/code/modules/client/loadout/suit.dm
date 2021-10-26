@@ -105,6 +105,11 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
+/datum/gear/suit/croppeddenim
+	name = "cropped denim jacket"
+	path = /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/croppeddenim
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
 /datum/gear/suit/christmascoatr
 	name = "Red Christmas Coat"
 	path = /obj/item/clothing/suit/hooded/wintercoat/christmascoatr

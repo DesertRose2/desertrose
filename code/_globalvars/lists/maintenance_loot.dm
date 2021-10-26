@@ -219,7 +219,7 @@ GLOBAL_LIST_INIT(trash_craft, list(
 GLOBAL_LIST_INIT(trash_gun, list(
 	/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 	/obj/item/gun/ballistic/revolver/colt6520 = 1,
-	/obj/item/gun/ballistic/rifle/mosin = 1,
+	/obj/item/gun/ballistic/rifle/enfield = 1,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 	/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 	/obj/item/gun/ballistic/revolver/widowmaker = 1
@@ -523,7 +523,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/shotgun/bean,
 	/obj/item/gun/ballistic/revolver/caravan_shotgun,
 	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/gun/ballistic/rifle/mosin,
+	/obj/item/gun/ballistic/rifle/enfield,
 	/obj/item/ammo_box/a762,
 	/obj/item/gun/ballistic/revolver/zipgun,
 	/obj/item/gun/ballistic/revolver/pipe_rifle,
@@ -637,7 +637,6 @@ GLOBAL_LIST_INIT(loot_t1_ammo, list(
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/ammo_box/shotgun/buck,
 	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
 	/obj/item/ammo_box/magazine/m556/rifle/small
 ))
@@ -648,7 +647,6 @@ GLOBAL_LIST_INIT(loot_t2_ammo, list(
 	/obj/item/ammo_box/a308,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
 	/obj/item/ammo_box/magazine/m556/rifle,
-	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/magazine/m9mm,
 	/obj/item/ammo_box/m44,
 	/obj/item/ammo_box/tube/a357,
@@ -937,7 +935,8 @@ GLOBAL_LIST_INIT(loot_t2_blueprint, list(
 	/obj/item/book/granter/crafting_recipe/blueprint/sniper,
 	/obj/item/book/granter/crafting_recipe/blueprint/breacher,
 	/obj/item/book/granter/crafting_recipe/blueprint/r84,
-	/obj/item/book/granter/crafting_recipe/blueprint/r82,
+	/obj/item/book/granter/crafting_recipe/blueprint/type93,
+	/obj/item/book/granter/crafting_recipe/blueprint/bar,
 	/obj/item/book/granter/crafting_recipe/blueprint/deagle
 ))
 
