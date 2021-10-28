@@ -401,6 +401,16 @@
 	path = /obj/item/storage/box/large/custom_kit/ashergriffin
 	ckeywhitelist = list("metriusthehot")
 
+/datum/gear/donator/kits/holhorse
+	name = "Griffith Clydesdale's belongings"
+	path = /obj/item/storage/box/large/custom_kit/holhorse
+	ckeywhitelist = list("landoorando")
+
+/datum/gear/donator/kits/shi
+	name = "Daiyu Liu's belongings"
+	path = /obj/item/storage/box/large/custom_kit/shi
+	ckeywhitelist = list("muhsollini")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
