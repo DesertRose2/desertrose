@@ -401,6 +401,16 @@
 	path = /obj/item/storage/box/large/custom_kit/ashergriffin
 	ckeywhitelist = list("metriusthehot")
 
+/datum/gear/donator/kits/holhorse
+	name = "Griffith Clydesdale's belongings"
+	path = /obj/item/storage/box/large/custom_kit/holhorse
+	ckeywhitelist = list("landoorando")
+
+/datum/gear/donator/kits/shi
+	name = "Daiyu Liu's belongings"
+	path = /obj/item/storage/box/large/custom_kit/shi
+	ckeywhitelist = list("muhsollini")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -483,7 +493,8 @@
 						"yecrowbarman",
 						"jackmcintyre",
 						"totallyinnocent",
-						"cythisia")
+						"cythisia",
+						"honto335")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -602,7 +613,8 @@
 						"deathlysoul",
 						"kayzach",
 						"brainbodger",
-						"landoorando")
+						"landoorando",
+						"honto335")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////

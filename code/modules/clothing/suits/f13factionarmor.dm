@@ -248,23 +248,27 @@
 
 //Wayfarer
 /obj/item/clothing/suit/armor/f13/tribe_armor
-	name = "light tribal armor"
-	desc = "(IV) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
+	name = "salvaged tribal armor"
+	desc = "(IV) A set of scrap and banded metal armor forged by the Wayfarer tribe, due to it's lightweight and unrestrictive nature,  it's used by scouts and agile hunters. A torn cloak hangs around its neck, protecting the user from the harsh desert sands."
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	armor = list("tier" = 4, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
+	always_reskinnable = TRUE
+	unique_reskin = list("Old School" = "tribal_armor",
+						"New School" = "tribal_armor_old"
+						)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
+
 
 /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
 	name = "heavy tribal armor"
 	desc = "(V) A Suit of armor crafted by Tribals using pieces of scrap metals and the armor of fallen foes, a bighorner's skull sits on the right pauldron along with bighorner fur lining the collar of the leather bound chest. Along the leather straps adoring it are multiple bone charms with odd markings on them."
 	icon_state = "heavy_tribal_armor"
 	item_state = "heavy_tribal_armor"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-	flags_inv = HIDEJUMPSUIT
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 

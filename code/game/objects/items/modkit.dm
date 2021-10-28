@@ -262,10 +262,15 @@
 	target_items = list (/obj/item/clothing/head/helmet/f13/legion/recruit/decan, /obj/item/clothing/head/helmet/f13/legion/prime)
 	result_item = /obj/item/clothing/head/helmet/f13/legion/recruit/decan/houndmaster
 
+/obj/item/modkit/trailponcho
+	name = "Trail Ranger Poncho Modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/trailranger)
+	result_item = /obj/item/clothing/suit/armor/f13/trailranger/clyde
 
-
-
-
+/obj/item/modkit/shicoat
+	name = "Chinese Trenchcoat Modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/mantle)
+	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/shi
 
 //Crusader Pistol Modkits
 

@@ -206,7 +206,7 @@
 	can_suppress = FALSE
 	can_attachments = TRUE
 	can_scope = FALSE
-	spread = 2
+	spread = 11
 
 /obj/item/gun/ballistic/automatic/smg/pps/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -392,7 +392,7 @@
 	burst_shot_delay = 3
 	can_suppress = FALSE
 	can_attachments = TRUE
-	spread = 2
+	spread = 8
 	can_suppress = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
@@ -413,7 +413,7 @@
 			select = 0
 			burst_size = 1
 			fire_delay = 2
-			spread -= 8
+			spread = 0
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -434,7 +434,7 @@
 	burst_shot_delay = 2.5
 	fire_delay = 2.5
 	slowdown = 0.25
-	spread = 2
+	spread = 14
 	can_attachments = FALSE
 
 /obj/item/gun/ballistic/automatic/smg/tommygun/burst_select()
@@ -452,7 +452,7 @@
 		if(1)
 			select = 0
 			burst_size = 4
-			spread = 12
+			spread = 14
 			fire_delay = 4.5
 			recoil = 0.5
 			extra_damage = 0
