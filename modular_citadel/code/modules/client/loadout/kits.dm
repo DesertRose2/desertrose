@@ -425,3 +425,16 @@
 //Asher Griffin - Metriusthehot
 /obj/item/storage/box/large/custom_kit/ashergriffin/PopulateContents()
 	new /obj/item/storage/bag/plushie(src)
+
+//Griffith Clydesdale - Lando_o_Rando
+/obj/item/storage/box/large/custom_kit/holhorse/PopulateContents()
+	new /obj/item/clothing/under/f13/ranger/clyde(src)
+	new /obj/item/clothing/suit/armor/f13/trailranger/clyde(src)
+
+//Daiyu Liu - Muhsollini
+/obj/item/storage/box/large/custom_kit/shi/PopulateContents()
+	new /obj/item/clothing/accessory/ncr/SGT(src)
+	new /obj/item/clothing/under/f13/ncr/shi(src)
+	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
+	new /obj/item/modkit/shicoat(src)
+	new /obj/item/clothing/shoes/f13/military/shi(src)
