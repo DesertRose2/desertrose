@@ -391,6 +391,13 @@
 /obj/effect/landmark/start/f13/hunter,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"fg" = (
+/obj/structure/wreck/trash/machinepile,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "fu" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -400,6 +407,7 @@
 /area/f13/village)
 "fy" = (
 /obj/effect/decal/fakelattice,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -576,7 +584,6 @@
 /obj/machinery/light/broken{
 	dir = 1
 	},
-/obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -649,6 +656,18 @@
 "iJ" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"iO" = (
+/obj/structure/closet/cabinet{
+	anchored = 1;
+	name = "formal attire cabinet"
+	},
+/obj/item/clothing/accessory/bos/elder,
+/obj/item/clothing/suit/f13/elder,
+/obj/item/pda/heads/hop{
+	name = "Elder's PDA"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "iR" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -824,7 +843,8 @@
 	},
 /area/f13/wasteland)
 "kQ" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
+/obj/structure/wreck/trash/autoshaft,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -868,6 +888,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"li" = (
+/obj/structure/chair/f13chair1{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "lk" = (
 /obj/structure/fence{
 	dir = 1;
@@ -1462,6 +1488,16 @@
 /obj/structure/table,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"sh" = (
+/obj/structure/table/abductor{
+	desc = "The Brotherhood has released the latest iteration of their advanced table. Designed by Head Knight Envy Sin";
+	name = "Table 3"
+	},
+/obj/item/pen/fountain/captain{
+	name = "elder's fountain pen"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "sj" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/plasteel/fifty,
@@ -1506,9 +1542,12 @@
 	},
 /area/f13/wasteland)
 "sK" = (
-/obj/structure/bookcase/random,
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
+/obj/structure/wreck/trash/machinepiletwo,
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "sL" = (
 /turf/closed/indestructible/riveted,
 /area/f13/caves)
@@ -1775,6 +1814,12 @@
 /obj/effect/landmark/start/f13/seniorscribe,
 /turf/open/floor/carpet/red,
 /area/f13/brotherhood)
+"vJ" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "vM" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -1835,6 +1880,13 @@
 "we" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
+"wf" = (
+/obj/structure/wreck/trash/autoshaft,
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "wg" = (
 /obj/structure/table/wood,
 /obj/machinery/processor/chopping_block,
@@ -2029,6 +2081,15 @@
 /obj/item/seeds/cherry,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"yi" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "ym" = (
 /mob/living/simple_animal/hostile/raider/ranged,
 /obj/effect/decal/cleanable/glass,
@@ -2272,6 +2333,11 @@
 "Bo" = (
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"Bp" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/barricade/wooden/strong,
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "Bt" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -2703,12 +2769,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "Gw" = (
-/obj/structure/bookcase/random,
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/wreck/trash/machinepile,
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
+/area/f13/wasteland)
 "Gx" = (
 /obj/structure/fluff/railing,
 /turf/open/floor/f13{
@@ -2793,6 +2859,13 @@
 	pixel_y = -6
 	},
 /turf/open/floor/plating/f13/outside/roof,
+/area/f13/wasteland)
+"HX" = (
+/obj/structure/wreck/trash/machinepile,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/wasteland)
 "HZ" = (
 /turf/open/floor/f13/wood,
@@ -2885,6 +2958,10 @@
 "IP" = (
 /turf/open/floor/carpet/black,
 /area/f13/building)
+"IS" = (
+/obj/item/kirbyplants/photosynthetic,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Ja" = (
 /obj/structure/bonfire,
 /turf/open/floor/f13/wood,
@@ -3044,18 +3121,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
-"Lu" = (
-/obj/structure/closet/cabinet{
-	anchored = 1;
-	name = "formal attire cabinet"
-	},
-/obj/item/clothing/accessory/bos/elder,
-/obj/item/clothing/suit/f13/elder,
-/obj/item/pda/heads/hop{
-	name = "Elder's PDA"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
 "Lv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/hatch{
@@ -3597,9 +3662,21 @@
 	},
 /area/f13/wasteland)
 "Rf" = (
-/obj/item/kirbyplants/photosynthetic,
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
+/obj/structure/wreck/trash/machinepile,
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
+"Ri" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/wreck/trash/machinepile,
+/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/wasteland)
 "Rj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/blueprintVHigh,
@@ -3852,6 +3929,13 @@
 "Uf" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"Ui" = (
+/obj/structure/bookcase/random,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "Uj" = (
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
@@ -4087,21 +4171,21 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Xc" = (
-/obj/structure/table/abductor{
-	desc = "The Brotherhood has released the latest iteration of their advanced table. Designed by Head Knight Envy Sin";
-	name = "Table 3"
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
-/obj/item/pen/fountain/captain{
-	name = "elder's fountain pen"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
+/area/f13/wasteland)
 "Xg" = (
 /obj/structure/table{
 	layer = 2.9
 	},
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /turf/open/floor/carpet/black,
+/area/f13/brotherhood)
+"Xj" = (
+/obj/structure/bookcase/random,
+/turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
 "Xp" = (
 /obj/structure/table/wood/fancy/black,
@@ -4118,11 +4202,12 @@
 	},
 /area/f13/building)
 "Xu" = (
-/obj/structure/chair/f13chair1{
-	dir = 1
+/obj/structure/chair/office/dark,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
-/turf/open/floor/carpet/royalblack,
-/area/f13/brotherhood)
+/area/f13/wasteland)
 "XC" = (
 /obj/effect/landmark/start/f13/chief,
 /turf/open/floor/f13/wood,
@@ -10970,7 +11055,7 @@ ls
 ls
 ls
 Zq
-sK
+Xj
 pp
 pp
 pp
@@ -11227,7 +11312,7 @@ ls
 ls
 ls
 Zq
-Gw
+Ui
 pp
 NI
 pp
@@ -11484,10 +11569,10 @@ ls
 ls
 ls
 Zq
-sK
+Xj
 pp
 EJ
-Xu
+li
 pp
 pp
 zw
@@ -11741,10 +11826,10 @@ ls
 ls
 ls
 Zq
-Rf
+IS
 kA
 NI
-Xu
+li
 pp
 UT
 zw
@@ -11998,10 +12083,10 @@ ls
 ls
 ls
 Zq
-sK
+Xj
 pp
-Xc
-Xu
+sh
+li
 pp
 UT
 zw
@@ -12255,7 +12340,7 @@ ls
 ls
 ls
 Zq
-Gw
+Ui
 pp
 NI
 pp
@@ -12512,7 +12597,7 @@ ls
 ls
 ls
 Zq
-sK
+Xj
 pp
 pp
 pp
@@ -13288,7 +13373,7 @@ ZT
 zw
 Yy
 DQ
-Lu
+iO
 zw
 fX
 Tz
@@ -45877,7 +45962,7 @@ nL
 AS
 Un
 Lm
-hi
+Xu
 jX
 Lm
 hi
@@ -46133,8 +46218,8 @@ AY
 AY
 AY
 AY
-kQ
 Lm
+vJ
 Lm
 Lm
 Ch
@@ -46906,7 +46991,7 @@ Dc
 AY
 WU
 Lm
-Bm
+Lm
 dv
 Lm
 Lm
@@ -48195,7 +48280,7 @@ dv
 vz
 Lm
 Lm
-dv
+yi
 kx
 vz
 AY
@@ -48443,17 +48528,17 @@ ls
 ls
 ls
 AY
-kx
 Lm
 Lm
 Lm
-Lm
+Xc
+wf
 fy
-kt
-ls
-kt
+Ri
+HX
+fy
+fg
 Lm
-Ch
 vz
 AY
 ls
@@ -48702,15 +48787,15 @@ ls
 AY
 hU
 Lm
-Lm
+Rf
 kQ
 kt
 ls
 ls
 ls
 ls
-kt
-Lm
+Bp
+gE
 fy
 AY
 ls
@@ -48958,7 +49043,7 @@ ls
 ls
 AY
 Lm
-Lm
+Gw
 kt
 ls
 ls
@@ -49214,7 +49299,7 @@ ls
 ls
 ls
 AY
-Lm
+sK
 ls
 ls
 ls

@@ -710,7 +710,8 @@
 "GL" = (
 /obj/machinery/computer/shuttle{
 	dir = 8;
-	name = "elevator console"
+	name = "elevator console";
+	possible_destinations = "junker_entrance;junker_bunker"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -726,8 +727,8 @@
 	dir = 2;
 	dwidth = 1;
 	height = 3;
-	id = "junker_bunker_elevator";
-	name = "Level 1";
+	id = "junker_bunker";
+	name = "Basement Level 1";
 	width = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,

@@ -3926,6 +3926,12 @@
 /obj/machinery/smartfridge/bottlerack/lootshelf/brews,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"ekh" = (
+/obj/structure/car/rubbish3{
+	layer = 2.9
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/building)
 "ekp" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/desert,
@@ -4946,6 +4952,12 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"fsf" = (
+/obj/structure/door_assembly,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/building)
 "fsN" = (
@@ -10039,10 +10051,8 @@
 	},
 /area/f13/wasteland)
 "lbF" = (
-/obj/structure/door_assembly,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
+/obj/structure/timeddoor,
+/turf/open/transparent/openspace,
 /area/f13/building)
 "lcv" = (
 /obj/machinery/light/small/broken{
@@ -13624,6 +13634,10 @@
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
+/area/f13/building)
+"pdz" = (
+/obj/structure/debris/v4,
+/turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "pdF" = (
 /obj/structure/table/wood/settler,
@@ -20456,6 +20470,12 @@
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"wwJ" = (
+/obj/structure/debris/v3,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
 /area/f13/building)
 "wxh" = (
 /obj/structure/fence{
@@ -59214,7 +59234,7 @@ nnh
 nnh
 mCp
 mCp
-eTF
+lbF
 nnh
 mCp
 nnh
@@ -64644,12 +64664,12 @@ lTM
 lTM
 lTM
 pJj
+pdz
 umL
 umL
 umL
 umL
-umL
-lbF
+fsf
 umL
 umL
 umL
@@ -64901,8 +64921,8 @@ lTM
 lTM
 lTM
 pJj
-umL
-wjp
+ekh
+wwJ
 wjp
 stH
 wjp
@@ -65158,7 +65178,7 @@ lTM
 lTM
 lTM
 pJj
-umL
+wCS
 umL
 umL
 rxg
