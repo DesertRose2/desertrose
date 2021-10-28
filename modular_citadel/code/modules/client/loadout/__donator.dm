@@ -493,7 +493,8 @@
 						"yecrowbarman",
 						"jackmcintyre",
 						"totallyinnocent",
-						"cythisia")
+						"cythisia",
+						"honto335")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -612,7 +613,8 @@
 						"deathlysoul",
 						"kayzach",
 						"brainbodger",
-						"landoorando")
+						"landoorando",
+						"honto335")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
