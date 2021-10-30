@@ -346,6 +346,12 @@
 /obj/item/bedsheet/black,
 /turf/open/floor/f13,
 /area/f13/caves)
+"eD" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/tunnel)
 "eF" = (
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gibup1"
@@ -953,6 +959,14 @@
 "kK" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
+"kO" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/tunnel)
 "kR" = (
 /obj/structure/bed/mattress,
 /obj/structure/sign/poster/prewar/poster92{
@@ -3108,6 +3122,14 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"ET" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/tunnel)
 "Fe" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/f13{
@@ -4430,6 +4452,12 @@
 /obj/structure/table/snooker,
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
+"Rd" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/tunnel)
 "Re" = (
 /obj/machinery/computer/shuttle{
 	name = "train console";
@@ -20228,7 +20256,7 @@ fc
 sX
 vH
 vH
-vH
+Jp
 vH
 vH
 vH
@@ -20999,7 +21027,7 @@ fc
 sX
 vH
 vH
-vH
+Jp
 vH
 vH
 vH
@@ -21255,11 +21283,11 @@ fc
 fc
 sX
 vH
+Jp
+vH
+Jp
 vH
 vH
-Jp
-Jp
-Jp
 vH
 vH
 sX
@@ -21515,10 +21543,10 @@ vH
 vH
 vH
 vH
-vH
-vH
-vH
-vH
+PC
+PC
+PC
+PC
 sX
 vP
 vP
@@ -21772,10 +21800,10 @@ vH
 vH
 vH
 Jp
-Jp
-vH
-vH
-vH
+PC
+kO
+kO
+kO
 sX
 vP
 vP
@@ -22029,10 +22057,10 @@ vH
 vH
 vH
 vH
-vH
-vH
-vH
-vH
+PC
+je
+je
+eD
 sX
 vP
 vP
@@ -22286,11 +22314,11 @@ vH
 vH
 vH
 Jp
-Jp
-vH
-vH
-vH
-sX
+PC
+ET
+je
+je
+tR
 vP
 vP
 vT
@@ -22543,10 +22571,10 @@ vH
 vH
 vH
 Jp
-Jp
-vH
-vH
-vH
+PC
+je
+je
+eD
 sX
 vP
 vP
@@ -22800,10 +22828,10 @@ vH
 vH
 vH
 Jp
-Jp
-vH
-vH
-vH
+PC
+ks
+ks
+ks
 sX
 vP
 vP
@@ -23057,10 +23085,10 @@ vH
 vH
 vH
 vH
-Jp
-vH
-vH
-vH
+PC
+PC
+Rd
+Rd
 sX
 vP
 vP
