@@ -483,3 +483,23 @@
 	icon_state = "societymask"
 	item_state = "societymask"
 	flags_inv = HIDEFACE
+
+//Sancti Vindictam
+
+/obj/item/clothing/mask/aculeo
+	name = "sancti vindictam"
+	desc = "A fearsome, archaic mold of a cruel, sneering face shaped in iron and gilded in the colors of the Legion. Prayers to Mars are carved jaggedly along the interior. It is thick, heavy metal reinforcing some mechanical trophy beneath- the gas mask of a ranger that has been crudely refitted to serve new purpose."
+	icon_state = "sancti_vindictam"
+	item_state = "sancti_vindictam"
+		clothing_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
+	flags_inv = HIDEFACIALHAIR|HIDEFACE
+	w_class = WEIGHT_CLASS_SMALL
+	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
+	visor_flags_inv = HIDEFACE
+	flags_cover = MASKCOVERSMOUTH
+	visor_flags_cover = MASKCOVERSMOUTH
+	var/aggressiveness = 2
+	var/cooldown_special
+	var/recent_uses = 0
+	var/broken_hailer = 0
+	var/safety = TRUE
