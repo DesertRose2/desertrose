@@ -728,7 +728,7 @@
 	dwidth = 1;
 	height = 3;
 	id = "junker_bunker";
-	name = "Basement Level 1";
+	name = "Basement Level 2";
 	width = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
