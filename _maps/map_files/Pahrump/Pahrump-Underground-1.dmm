@@ -9849,14 +9849,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/tunnel)
 "hlm" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /obj/structure/ladder/unbreakable{
 	height = 1;
 	icon_state = "ladder10";
-	id = "East_Lockers";
-	name = "The Field"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+	id = "Flooded_Room_Right";
+	name = "Entryway"
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -30246,8 +30246,8 @@
 /obj/structure/ladder/unbreakable{
 	height = 1;
 	icon_state = "ladder10";
-	id = "East_Lockers";
-	name = "The Field"
+	id = "Flooded_Room_Left";
+	name = "Entryway"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
