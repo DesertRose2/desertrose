@@ -131,7 +131,7 @@
 	name = "caravan shotgun"
 	desc = "An common over-under double barreled shotgun."
 	icon_state = "caravan_shotgun"
-	item_state = "dshotgun1"
+	item_state = "shotgundouble"
 	force = 20
 	extra_damage = 3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
@@ -164,7 +164,7 @@
 	name = "winchester widowmaker"
 	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
 	icon_state = "widowmaker"
-	item_state = "dshotgun1"
+	item_state = "shotgundouble"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	sawn_desc = "Someone took the time to chop the last few inches off the barrel and stock of this shotgun. Now, the wide spread of this hand-cannon's short-barreled shots makes it perfect for short-range crowd control."
@@ -196,7 +196,7 @@
 	name = "hunting shotgun"
 	desc = "A traditional hunting shotgun with wood furniture and a four-shell capacity underneath."
 	icon_state = "hunting"
-	item_state = "huntingshotgun"
+	item_state = "shotgunpump"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -225,7 +225,7 @@
 	name = "trench shotgun"
 	desc = "A military shotgun designed for close-quarters sweeping. A relic of WW2, equipped with a bayonet lug for closer quarters combat."
 	icon_state = "trench"
-	item_state = "trenchgun"
+	item_state = "shotguntrench"
 	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	extra_damage = 2
@@ -294,7 +294,7 @@
 	desc = "A semi automatic shotgun with a four round tube."
 	fire_delay = 7
 	icon_state = "auto5"
-	item_state = "huntingshotgun"
+	item_state = "shotgunauto5"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -309,7 +309,7 @@
 	name = "lever action shotgun"
 	desc = "A lever action hunting shotgun with a five-shell capacity underneath plus one in chamber."
 	icon_state = "lever"
-	item_state = "trenchgun"
+	item_state = "shotgunlever"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -328,6 +328,7 @@
 	name = "neostead 2000"
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
 	icon_state = "neostead"
+	item_state = "shotguncity"
 	fire_delay = 5
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
 	w_class = WEIGHT_CLASS_BULKY
@@ -371,7 +372,7 @@
 	name = "City-Killer Shotgun"
 	desc = "A semi automatic shotgun with black tactical furniture made by Winchester Arms. This particular model uses an internal feeding tube instead of a magazine."
 	icon_state = "citykiller"
-	item_state = "cshotgun1"
+	item_state = "shotguncity"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/citykiller
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -381,7 +382,7 @@
 	name = "Riot Shotgun"
 	desc = "A compact riot shotgun designed to fight in close quarters."
 	icon_state = "riot_shotgun"
-	item_state = "huntingshotgun"
+	item_state = "shotgunriot"
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
 	burst_size = 1
 	fire_delay = 4
