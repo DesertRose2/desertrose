@@ -174,7 +174,7 @@
 	name = "American 180"
 	desc = "An integrally suppressed submachinegun chambered in the common .22 long rifle."
 	icon_state = "smg22"
-	item_state = "shotgun"
+	item_state = "american"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = 0
@@ -196,6 +196,7 @@
 	name = "PPSH-41"
 	desc = "An extremely fast firing, inaccurate submachine gun from World War 2. Low muzzle velocity. Uses 9mm rounds."
 	icon_state = "pps"
+	item_state = "pps"
 	mag_type = /obj/item/ammo_box/magazine/pps9mm
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY
@@ -236,6 +237,7 @@
 	name = "Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "mini-uzi"
+	item_state = "uzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -279,7 +281,7 @@
 	name = "MP-5 SD"
 	desc = "An integrally suppressed sub machine chambered in 9mm. A classic."
 	icon_state = "mp5"
-	item_state = "fnfal"
+	item_state = "american"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	burst_size = 2
 	burst_shot_delay = 1.5
@@ -425,7 +427,7 @@
 	name = "Thompson SMG"
 	desc = "Known colloquially as the 'Chicago Typewriter' the Thompson sub-machine gun is a relatively ancient yet famous weapon of the past. It's amazing it survived the war in such a good condition!"
 	icon_state = "tommygun"
-	item_state = "shotgun"
+	item_state = "pps"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
@@ -1145,7 +1147,7 @@
 //BAR 1918			Keywords: 7.62, Automatic, 10-20 round mags, High damage - yet low fire rate and capacity. Larger burst is more spread.
 /obj/item/gun/ballistic/automatic/bar
 	name = "BAR 1918"
-	desc = "A relatively dated yet reliable machine gun chambered in 7.62; a rare find! These can be found in musuems and national guard stockpiles as an old squad support training weapon."
+	desc = "Old but still reliable machine gun chambered in 7.62; a rare find! These can be found in museums and national guard stockpiles as an old squad support training weapon."
 	icon = 'icons/obj/guns/ballistic/bar.dmi'
 	icon_state = "bar"
 	item_state = "R84"
