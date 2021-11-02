@@ -1352,15 +1352,15 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/ncr)
 "auQ" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/smartfridge/bottlerack/lootshelf/cooking,
+/obj/machinery/light/broken{
+	dir = 1
 	},
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
 	},
-/area/f13/wasteland)
+/area/f13/building)
 "auU" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/f13{
@@ -1860,15 +1860,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aEv" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
 	},
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "aEG" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
@@ -2330,15 +2328,11 @@
 	},
 /area/f13/wasteland)
 "aNR" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
+/obj/effect/decal/fakelattice,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light,
+/turf/open/floor/plating/rust,
+/area/f13/building)
 "aNX" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -10835,10 +10829,8 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
+/turf/open/indestructible/ground/outside/dirt{
+	color = "#9c9c9c"
 	},
 /area/f13/wasteland)
 "egK" = (
@@ -12803,14 +12795,6 @@
 /obj/item/clothing/suit/armor/f13/kit,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"eSP" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
 "eSX" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -24432,6 +24416,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
+/obj/machinery/light/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "jdg" = (
@@ -25320,6 +25305,9 @@
 "jvW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/f13/fancylads,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -37083,6 +37071,9 @@
 "ofi" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/f13/borscht,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -38383,8 +38374,8 @@
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	icon_state = "manhole_open";
-	id = "West_Dugout";
-	name = "West Dugout"
+	id = "West_Lockers";
+	name = "West Lockers"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
@@ -41606,10 +41597,8 @@
 	dir = 4
 	},
 /obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
+/turf/open/indestructible/ground/outside/dirt{
+	color = "#9c9c9c"
 	},
 /area/f13/wasteland)
 "pOD" = (
@@ -42527,6 +42516,9 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/drinks/mug/coco,
+/obj/machinery/light/broken{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "qiI" = (
@@ -42649,13 +42641,6 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"qkD" = (
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
 "qkE" = (
 /obj/item/trash/f13/k_ration,
 /turf/open/indestructible/ground/outside/road{
@@ -46179,11 +46164,11 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/machinery/hydroponics/soil,
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
+/obj/machinery/hydroponics/soil{
+	color = "#9c9c9c"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	color = "#9c9c9c"
 	},
 /area/f13/wasteland)
 "rFk" = (
@@ -48353,6 +48338,9 @@
 "svR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/cigarette,
+/obj/machinery/light/broken{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "swc" = (
@@ -49357,8 +49345,8 @@
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	icon_state = "manhole_open";
-	id = "East_Dugout";
-	name = "East Dugout"
+	id = "East_Lockers";
+	name = "East Lockers"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
@@ -52235,16 +52223,6 @@
 /obj/effect/landmark/start/f13/druid,
 /turf/open/floor/wood/f13/old,
 /area/f13/tribe)
-"tPE" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
 "tPV" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -56184,6 +56162,7 @@
 	},
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light,
 /turf/open/floor/plating/rust,
 /area/f13/building)
 "vjd" = (
@@ -60197,6 +60176,7 @@
 "wJL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/cola/red,
+/obj/machinery/light/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "wJO" = (
@@ -63555,14 +63535,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
-"xRb" = (
-/obj/machinery/hydroponics/soil,
-/turf/open/indestructible/ground/inside/dirt{
-	barefootstep = "sand";
-	clawfootstep = "sand";
-	footstep = "sand"
-	},
-/area/f13/wasteland)
 "xRk" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -108874,7 +108846,7 @@ mwp
 gcK
 gbL
 gts
-qxu
+auQ
 dNY
 qQq
 aVs
@@ -109142,7 +109114,7 @@ wLd
 nXk
 wDA
 gts
-yhv
+aNR
 gts
 gts
 gts
@@ -110679,7 +110651,7 @@ xkY
 qiD
 yhv
 yhv
-xkY
+aEv
 jMb
 xkY
 fyA
@@ -121484,8 +121456,8 @@ lnG
 xkK
 oEt
 nza
-aEv
-xRb
+vaZ
+rxs
 rxs
 rxs
 rxs
@@ -121742,7 +121714,7 @@ xkK
 rZx
 nza
 rFd
-qkD
+btk
 btk
 btk
 btk
@@ -121999,7 +121971,7 @@ yef
 yef
 dAs
 egB
-xRb
+rxs
 rxs
 rxs
 rxs
@@ -122256,7 +122228,7 @@ vuC
 niV
 dAs
 rFd
-qkD
+btk
 xmn
 xmn
 xmn
@@ -122513,7 +122485,7 @@ vuC
 yef
 hdQ
 egB
-eSP
+vDy
 swO
 xOW
 fQX
@@ -122770,7 +122742,7 @@ xvj
 iqr
 nza
 rFd
-eSP
+vDy
 nIw
 tgi
 bfC
@@ -123027,7 +122999,7 @@ vuC
 yef
 hdQ
 egB
-eSP
+vDy
 mUB
 qmJ
 wWj
@@ -123284,10 +123256,10 @@ pTo
 niV
 dAs
 rFd
-qkD
-auQ
-auQ
-auQ
+btk
+qlT
+qlT
+qlT
 xDp
 haw
 vuC
@@ -123541,10 +123513,10 @@ yef
 yef
 dAs
 egB
-xRb
-xRb
-xRb
-xRb
+rxs
+rxs
+rxs
+rxs
 xDp
 cJX
 vuC
@@ -123798,10 +123770,10 @@ aZr
 swO
 nza
 rFd
-qkD
-qkD
-qkD
-qkD
+btk
+btk
+btk
+btk
 xDp
 uXk
 xvj
@@ -124054,11 +124026,11 @@ wPS
 twD
 nIw
 nza
-tPE
-xRb
-xRb
-xRb
-xRb
+tRS
+rxs
+rxs
+rxs
+rxs
 xDp
 cDV
 vuC
@@ -124312,9 +124284,9 @@ cRI
 nIw
 pBp
 tia
-tPE
-aNR
-aNR
+tRS
+xmn
+xmn
 pOx
 oPC
 xXr
