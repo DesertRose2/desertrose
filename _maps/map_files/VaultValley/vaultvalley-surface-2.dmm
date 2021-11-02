@@ -119,6 +119,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/wasteland)
+"ahZ" = (
+/obj/machinery/workbench,
+/turf/open/floor/plasteel/f13{
+	icon_state = "whitebluerustychess"
+	},
+/area/f13/building)
 "aif" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
@@ -5783,6 +5789,13 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building)
+"ggO" = (
+/obj/machinery/light/small,
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/building)
 "ghg" = (
 /obj/machinery/light{
 	dir = 8
@@ -8231,6 +8244,15 @@
 /obj/structure/bed/roller,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/wood/f13,
+/area/f13/building)
+"iKx" = (
+/obj/structure/window/fulltile/wood_window,
+/obj/structure/timeddoor,
+/obj/structure/window/fulltile/house/broken,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
 /area/f13/building)
 "iKW" = (
 /obj/structure/simple_door/tent,
@@ -10718,6 +10740,13 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+"lFz" = (
+/obj/machinery/light/small,
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/building)
 "lFM" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
@@ -12222,6 +12251,15 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
+	},
+/area/f13/building)
+"nnP" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
 	},
 /area/f13/building)
 "nnX" = (
@@ -18145,6 +18183,12 @@
 /obj/item/stack/tile/wood,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/building)
+"tPa" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/building)
 "tPF" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -19848,6 +19892,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"vCe" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/building)
 "vCv" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -40463,8 +40513,8 @@ mCp
 xWX
 xWX
 gfJ
-xWX
-xWX
+vCe
+vCe
 gfJ
 xWX
 gRD
@@ -40720,8 +40770,8 @@ mCp
 njL
 blR
 qNu
-xWX
-xWX
+vCe
+vCe
 qNu
 blR
 njL
@@ -40977,8 +41027,8 @@ mCp
 qNu
 mCp
 vNQ
-hqW
-dSM
+nnP
+ggO
 qNu
 qNu
 qNu
@@ -41234,8 +41284,8 @@ mCp
 jmD
 xWX
 gfJ
-xWX
-xWX
+vCe
+vCe
 gfJ
 xWX
 qNQ
@@ -41491,8 +41541,8 @@ mCp
 njL
 blR
 qNu
-xWX
-xWX
+vCe
+vCe
 qNu
 blR
 njL
@@ -41748,8 +41798,8 @@ mCp
 qNu
 qNu
 qNu
-hqW
-dSM
+nnP
+ggO
 qNu
 qNu
 qNu
@@ -42005,8 +42055,8 @@ mCp
 xWX
 xWX
 xWX
-xWX
-xWX
+vCe
+vCe
 gfJ
 xWX
 gRD
@@ -42255,7 +42305,7 @@ pJj
 mCp
 mCp
 mCp
-aAg
+eKb
 mCp
 mCp
 mCp
@@ -42263,7 +42313,7 @@ hqW
 xWX
 xWX
 xWX
-xWX
+vCe
 qNu
 blR
 njL
@@ -43023,7 +43073,7 @@ lTM
 lTM
 lTM
 pJj
-noE
+iKx
 rnl
 rnl
 rnl
@@ -43798,12 +43848,12 @@ mCp
 rnl
 moP
 rnl
-aAg
+eKb
 xWX
 xWX
-xWX
-xWX
-xWX
+tPa
+tPa
+tPa
 mCp
 mCp
 mCp
@@ -44058,9 +44108,9 @@ mCp
 mCp
 hqW
 xWX
-xWX
-xWX
-dSM
+tPa
+tPa
+lFz
 mCp
 vFH
 rnl
@@ -44315,9 +44365,9 @@ qJu
 mCp
 xWX
 xWX
-xWX
-xWX
-xWX
+tPa
+tPa
+tPa
 eKb
 rnl
 xSP
@@ -44572,9 +44622,9 @@ xWX
 gfJ
 xWX
 xWX
-xWX
-xWX
-xWX
+tPa
+tPa
+tPa
 mCp
 rnl
 rnl
@@ -44829,9 +44879,9 @@ blR
 mCp
 xWX
 xWX
-dHP
-dHP
-dHP
+tPa
+tPa
+tPa
 mCp
 vFH
 rnl
@@ -45342,11 +45392,11 @@ xWX
 gpF
 bLT
 dHP
-xWX
+dHP
 xWX
 uiQ
 mCp
-rnl
+ahZ
 rnl
 pQT
 rnl
@@ -47401,7 +47451,7 @@ gpF
 xWX
 xWX
 xWX
-dHP
+xWX
 gfJ
 xWX
 xWX
