@@ -45,8 +45,17 @@
 /obj/structure/decoration/smokeold,
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
+"dM" = (
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "eI" = (
 /obj/machinery/microwave/stove,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "fn" = (
@@ -97,6 +106,13 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb/riot{
 	faction = list("raider", "junker")
 	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/f13/bunker)
+"hj" = (
+/obj/machinery/light,
 /turf/open/floor/engine,
 /area/f13/bunker)
 "hF" = (
@@ -117,6 +133,10 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"il" = (
+/obj/structure/bonfire/prelit,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "ip" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1"
@@ -135,6 +155,12 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/bunker)
+"iH" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "jb" = (
 /obj/machinery/workbench/forge,
@@ -161,6 +187,9 @@
 "jt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/toy/plush/mr_buckety,
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "jA" = (
@@ -190,11 +219,21 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"kM" = (
+/mob/living/simple_animal/hostile/raider/junker/scrapper,
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "lL" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/gibs/human/body,
 /obj/structure/bed/mattress{
 	icon_state = "mattress6"
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -214,6 +253,12 @@
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"ny" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "nZ" = (
@@ -241,8 +286,21 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"pt" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "pF" = (
 /obj/structure/table/optable,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"pT" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "pV" = (
@@ -299,12 +357,35 @@
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"ss" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"sx" = (
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	obj_integrity = 800
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "sU" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/bunker)
+"tp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "tr" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -337,6 +418,10 @@
 /obj/effect/decal/cleanable/blood/gibs/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"uF" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "uM" = (
 /obj/structure/chair/stool/retro,
 /mob/living/simple_animal/hostile/raider/junker,
@@ -346,6 +431,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/junk/small/bed,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"uX" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/engine,
 /area/f13/bunker)
 "vh" = (
 /obj/structure/table,
@@ -368,6 +459,16 @@
 	},
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"wo" = (
+/obj/machinery/mecha_part_fabricator{
+	circuit = null;
+	req_one_access_txt = 01001110 01101111
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -610,8 +711,7 @@
 /obj/machinery/computer/shuttle{
 	dir = 8;
 	name = "elevator console";
-	req_access_txt = "0";
-	req_one_access_txt = "0"
+	possible_destinations = "junker_entrance;junker_bunker"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -627,8 +727,8 @@
 	dir = 2;
 	dwidth = 1;
 	height = 3;
-	id = "junker_bunker_elevator";
-	name = "Level 1";
+	id = "junker_bunker";
+	name = "Basement Level 2";
 	width = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
@@ -676,7 +776,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "JX" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 5
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Ky" = (
@@ -923,6 +1029,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"SI" = (
+/obj/structure/closet/fridge/meat,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "SQ" = (
 /obj/structure/table,
 /obj/structure/frame/computer{
@@ -933,6 +1046,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"SU" = (
+/obj/machinery/light/small/broken,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Tc" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/barber{
@@ -942,6 +1059,7 @@
 /area/f13/bunker)
 "Tf" = (
 /obj/structure/bed,
+/obj/item/bedsheet/black,
 /turf/open/floor/engine,
 /area/f13/bunker)
 "TG" = (
@@ -974,6 +1092,7 @@
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "UI" = (
@@ -1017,6 +1136,12 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/bunker)
+"We" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Wh" = (
 /obj/structure/closet/crate/hydroponics{
@@ -57362,7 +57487,7 @@ Lj
 Lj
 Xl
 aS
-FG
+pT
 aS
 Xl
 Lj
@@ -57864,13 +57989,13 @@ Lj
 Lj
 Lj
 Xl
-Wn
+uX
 Wn
 TR
 Wn
 Wn
 Wn
-Wn
+hj
 Xl
 Lj
 Lj
@@ -58401,7 +58526,7 @@ Xl
 oc
 JT
 EK
-ql
+ny
 Xl
 Lj
 Lj
@@ -58645,7 +58770,7 @@ Wn
 Rf
 FG
 FG
-bJ
+kM
 tG
 tG
 FG
@@ -58905,7 +59030,7 @@ FG
 FG
 FG
 TX
-tG
+tp
 FG
 FG
 Xo
@@ -59153,8 +59278,8 @@ Lj
 Lj
 Xl
 Xl
-FG
-FG
+uF
+uF
 Xl
 Xl
 Xl
@@ -59166,7 +59291,7 @@ Xl
 Xl
 Xl
 Xl
-FG
+iH
 Un
 Xl
 xe
@@ -59410,8 +59535,8 @@ Lj
 Lj
 Lj
 Xl
-JX
-JX
+FG
+FG
 Xl
 Lj
 Lj
@@ -59426,7 +59551,7 @@ Xl
 Wi
 tG
 Xl
-oc
+sx
 oc
 oc
 VD
@@ -60432,7 +60557,7 @@ Lj
 Lj
 Lj
 Xl
-PU
+JX
 FG
 FG
 PU
@@ -61206,9 +61331,9 @@ Xl
 VO
 FG
 FG
-XR
+pt
 Xl
-Cm
+SI
 FG
 FG
 Ri
@@ -61974,7 +62099,7 @@ Lj
 Lj
 Lj
 Xl
-PU
+JX
 FG
 PU
 Xl
@@ -62250,7 +62375,7 @@ Lj
 Lj
 Lj
 Xl
-FG
+iH
 KC
 Ow
 Ow
@@ -63791,10 +63916,10 @@ Lj
 Lj
 FG
 FG
-Xl
+Xo
 FG
 BQ
-FG
+SU
 Xl
 Xl
 LB
@@ -63805,7 +63930,7 @@ Xl
 Xl
 Sh
 FG
-FG
+dM
 FG
 kn
 Xl
@@ -64550,17 +64675,17 @@ Lj
 Lj
 Lj
 Xl
-FG
+We
 Xl
 ck
 AW
 je
+ss
 FG
 FG
 FG
 FG
-FG
-FG
+ss
 FG
 Xl
 FG
@@ -65334,7 +65459,7 @@ Lj
 Lj
 Lj
 Xl
-BI
+wo
 Un
 FG
 FG
@@ -65602,7 +65727,7 @@ FG
 FG
 xb
 gQ
-FG
+il
 XL
 rF
 tG

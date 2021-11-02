@@ -380,6 +380,10 @@
 	new /obj/item/modkit/mariarmor(src)
 	new /obj/item/modkit/marihelmet(src)
 
+//Hazard - Rebel0
+/obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
+	new /obj/item/clothing/head/beret/mets(src)
+
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_scout_old(src)
@@ -421,3 +425,16 @@
 //Asher Griffin - Metriusthehot
 /obj/item/storage/box/large/custom_kit/ashergriffin/PopulateContents()
 	new /obj/item/storage/bag/plushie(src)
+
+//Griffith Clydesdale - Lando_o_Rando
+/obj/item/storage/box/large/custom_kit/holhorse/PopulateContents()
+	new /obj/item/clothing/under/f13/ranger/clyde(src)
+	new /obj/item/clothing/suit/armor/f13/trailranger/clyde(src)
+
+//Daiyu Liu - Muhsollini
+/obj/item/storage/box/large/custom_kit/shi/PopulateContents()
+	new /obj/item/clothing/accessory/ncr/SGT(src)
+	new /obj/item/clothing/under/f13/ncr/shi(src)
+	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
+	new /obj/item/modkit/shicoat(src)
+	new /obj/item/clothing/shoes/f13/military/shi(src)

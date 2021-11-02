@@ -429,11 +429,10 @@ Outlaw
 		/obj/item/storage/bag/money/small/raider=1)
 
 	suit_store = pick(
-		/obj/item/gun/ballistic/revolver/police, \
+		/obj/item/gun/ballistic/revolver/colt357, \
 		/obj/item/gun/ballistic/rifle/remington, \
 		/obj/item/gun/ballistic/revolver/pipe_rifle, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
-		/obj/item/gun/ballistic/revolver/single_shotgun)
+		/obj/item/gun/ballistic/revolver/caravan_shotgun)
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -677,7 +676,6 @@ Outlaw
 		/obj/item/storage/bag/money/small/wastelander, \
 		/obj/item/kitchen/knife)
 	suit_store = pick(
-	/obj/item/gun/ballistic/revolver/detective, \
 	/obj/item/gun/ballistic/rifle/remington, \
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)

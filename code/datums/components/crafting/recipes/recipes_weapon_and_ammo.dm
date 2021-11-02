@@ -334,9 +334,9 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
-//NCR Assault Carbine
-/datum/crafting_recipe/R82/ncr
-	name = "ncr assault carbine"
+//NCR Assault Rifle
+/datum/crafting_recipe/r91/ncr
+	name = "ncr assault rifle"
 	result = /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
@@ -379,6 +379,21 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//bar 1918
+/datum/crafting_recipe/bar
+	name = "bar 1918"
+	result = /obj/item/gun/ballistic/automatic/bar
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/stack/crafting/metalparts = 10
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //maxson carbine
 /datum/crafting_recipe/maxson
 	name = "maxson carbine"
@@ -395,7 +410,7 @@
 	always_availible = FALSE
 
 //BAR 1917
-/datum/crafting_recipe/bastard
+/datum/crafting_recipe/bar
 	name = "BAR 1918"
 	result = /obj/item/gun/ballistic/automatic/bar
 	reqs = list(/obj/item/stack/sheet/metal = 10,
@@ -569,16 +584,15 @@
 /datum/crafting_recipe/commando
 	name = "Commando Carbine"
 	result = /obj/item/gun/ballistic/rifle/mag/commando
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/plastic = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/crafting/metalparts = 3
+	reqs = list(/obj/item/suppressor = 1,
+				/obj/item/gun/ballistic/rifle/enfield = 1,
+				/obj/item/stack/crafting/metalparts = 5
 				)
-	tools = list(TOOL_WORKBENCH)
+	tools = list(TOOL_WELDER, TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-	always_availible = FALSE
+	always_availible = TRUE
 
 //type93 assault rifle
 /datum/crafting_recipe/type93

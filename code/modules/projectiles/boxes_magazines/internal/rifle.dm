@@ -3,7 +3,7 @@
 	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/a762
 	caliber = "a762"
-	max_ammo = 5
+	max_ammo = 9
 	multiload = 1
 
 /obj/item/ammo_box/magazine/internal/boltaction/improvised

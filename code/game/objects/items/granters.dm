@@ -617,25 +617,15 @@
 	oneuse = TRUE
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/r91/ncr
+	name = "ncr assault rifle blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
-
-/obj/item/book/granter/crafting_recipe/blueprint/r82/ncr
-	name = "ncr r82 heavy service rifle blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82/ncr)
+	crafting_recipe_types = list(/datum/crafting_recipe/r91/ncr)
 
 /obj/item/book/granter/crafting_recipe/blueprint/maxson
 	name = "maxson carbine blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/maxson)
-
-/obj/item/book/granter/crafting_recipe/blueprint/bastard
-	name = "bastard LMG blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list (/datum/crafting_recipe/bastard)
 
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
@@ -799,15 +789,15 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/wattz2k)
 
-/obj/item/book/granter/crafting_recipe/blueprint/commando
-	name = "commando carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/commando)
-
 /obj/item/book/granter/crafting_recipe/blueprint/type93
 	name = "type93 assault rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/type93)
+
+/obj/item/book/granter/crafting_recipe/blueprint/bar
+	name = "bar 1918 blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/bar)
 
 /obj/item/book/granter/trait/chemistry
 	name = "Chemistry for Wastelanders"
