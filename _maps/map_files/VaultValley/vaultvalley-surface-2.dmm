@@ -191,6 +191,12 @@
 /obj/effect/landmark/start/f13/ncroffduty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"akC" = (
+/obj/structure/barricade/wooden/strong,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "alh" = (
 /turf/open/floor/plating/f13/outside/road{
 	dir = 1;
@@ -561,6 +567,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/wasteland)
+"aHk" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/city)
 "aHF" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -991,11 +1005,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "bmF" = (
-/obj/structure/decoration/vent{
-	layer = 2.8
-	},
-/obj/machinery/shower{
-	dir = 1
+/obj/structure/toilet{
+	dir = 4;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/city)
@@ -1555,7 +1567,7 @@
 /area/f13/caves)
 "bOI" = (
 /obj/structure/simple_door/metal/store{
-	req_one_access_txt = "62"
+	req_one_access_txt = "135"
 	},
 /obj/structure/simple_door/tentflap_cloth,
 /turf/open/floor/f13/wood,
@@ -2189,9 +2201,8 @@
 	},
 /area/f13/wasteland)
 "cuA" = (
-/obj/structure/window/fulltile/house,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/turf/closed/wall/f13/wood/house/clean,
+/area/f13/city)
 "cuC" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/f13{
@@ -2825,6 +2836,15 @@
 /obj/structure/bonfire/prelit,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"dbI" = (
+/obj/structure/decoration/vent{
+	layer = 2.8
+	},
+/obj/machinery/shower{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
+/area/f13/city)
 "dbR" = (
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/building)
@@ -3067,6 +3087,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"doJ" = (
+/obj/effect/decal/marking{
+	icon_state = "doubleverticalcorroded"
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/city)
 "doK" = (
 /obj/structure/flora/rock/jungle,
 /obj/effect/turf_decal/weather/dirt{
@@ -6900,6 +6926,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
+"hmb" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/city)
 "hmu" = (
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "horizontaloutermain0"
@@ -7803,7 +7834,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/building)
 "ipl" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/right{
 	dir = 8;
 	pixel_x = 8
 	},
@@ -12689,6 +12720,15 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/tunnel)
+"nKw" = (
+/obj/structure/decoration/vent{
+	layer = 2.8
+	},
+/obj/machinery/shower{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
+/area/f13/city)
 "nKD" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/peppermill,
@@ -14202,7 +14242,7 @@
 	layer = 2.8
 	},
 /obj/machinery/shower{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/city)
@@ -14292,7 +14332,7 @@
 /area/f13/building)
 "pAl" = (
 /obj/structure/simple_door/metal{
-	req_one_access_txt = "31"
+	req_one_access_txt = "139"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -16008,9 +16048,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "rrH" = (
-/obj/structure/chair/sofa/right{
-	dir = 8;
-	pixel_x = 8
+/obj/structure/chair/office{
+	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -17883,7 +17922,9 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "tAe" = (
-/turf/closed/indestructible/rock,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
 /area/f13/city)
 "tAC" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -18681,7 +18722,7 @@
 /area/f13/wasteland)
 "uoe" = (
 /obj/structure/simple_door/metal/store{
-	req_one_access_txt = "62"
+	req_one_access_txt = "135"
 	},
 /obj/structure/simple_door/tent,
 /turf/open/floor/f13/wood,
@@ -19031,11 +19072,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "uIU" = (
-/obj/structure/toilet{
-	dir = 4;
-	pixel_y = -1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
+/turf/open/space/basic,
 /area/f13/city)
 "uJh" = (
 /turf/closed/indestructible/rock,
@@ -20934,6 +20971,14 @@
 /obj/item/chair,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"wJQ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/city)
 "wJX" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor5"
@@ -45746,7 +45791,7 @@ nyI
 sEz
 sEz
 sEz
-vod
+cuA
 vod
 vod
 vod
@@ -46003,7 +46048,7 @@ nyI
 fcj
 fcj
 fcj
-vod
+cuA
 xnS
 xxN
 vod
@@ -46260,7 +46305,7 @@ nyI
 fcj
 fcj
 fcj
-vod
+cuA
 hkc
 wtu
 vod
@@ -48314,7 +48359,7 @@ fcj
 fcj
 fcj
 fcj
-vod
+cuA
 vod
 vod
 vod
@@ -48571,7 +48616,7 @@ fcj
 fcj
 fcj
 fcj
-vod
+cuA
 gFn
 rDq
 rDq
@@ -48828,7 +48873,7 @@ flV
 fcj
 fcj
 fcj
-vod
+cuA
 hkc
 hkc
 hkc
@@ -50117,9 +50162,9 @@ flV
 fcj
 fcj
 vod
-vod
-vod
-vod
+cuA
+cuA
+cuA
 vod
 eFs
 bNq
@@ -50882,15 +50927,15 @@ fcj
 fcj
 fcj
 fcj
+fcj
+cuA
+cuA
 vod
 vod
+cuA
 vod
 vod
-vod
-vod
-vod
-vod
-vod
+cuA
 vod
 eFs
 bNq
@@ -51139,14 +51184,14 @@ fcj
 fcj
 fcj
 fcj
-vod
-vgI
-vgI
+fcj
+cuA
+wMU
 vgI
 uOQ
 wtu
 xxN
-vod
+uOQ
 pxf
 vod
 eFs
@@ -51396,14 +51441,14 @@ fcj
 fcj
 fcj
 fcj
+fcj
 bOI
-hkc
 hkc
 hkc
 fjW
 hkc
 hkc
-vod
+uOQ
 ucG
 vod
 eFs
@@ -51653,8 +51698,8 @@ fcj
 fcj
 fcj
 fcj
+fcj
 vod
-rrH
 ipl
 xVx
 uOQ
@@ -51910,7 +51955,7 @@ fcj
 fcj
 fcj
 fcj
-vod
+cuA
 vod
 vod
 vod
@@ -52108,8 +52153,8 @@ yaf
 yaf
 yaf
 uJh
-tAe
-tAe
+uJh
+uJh
 nyV
 npQ
 uDz
@@ -52169,10 +52214,10 @@ fcj
 fcj
 bOI
 hkc
-hkc
+rrH
 hkc
 uOQ
-hkc
+wtu
 hkc
 fjW
 tzp
@@ -52365,8 +52410,8 @@ yaf
 yaf
 uJh
 uJh
-tAe
-tAe
+uJh
+uJh
 nyV
 nyV
 nyV
@@ -52425,14 +52470,14 @@ fcj
 fcj
 fcj
 vod
-wMU
-vgI
+hkc
+hkc
 hkc
 fjW
 hkc
-xFj
-vod
-pxf
+hkc
+uOQ
+ucG
 vod
 eFs
 bNq
@@ -52682,14 +52727,14 @@ fcj
 fcj
 fcj
 vod
-vod
-vod
-vod
-vod
-vod
-vod
-vod
-vod
+wMU
+vgI
+hkc
+uOQ
+xxN
+xFj
+uOQ
+nKw
 vod
 eFs
 bNq
@@ -52938,15 +52983,15 @@ fcj
 fcj
 fcj
 fcj
-bOI
-hkc
-hkc
-hkc
-fjW
-hkc
-hkc
 vod
-uIU
+vod
+vod
+vod
+vod
+vod
+vod
+vod
+vod
 vod
 eFs
 bNq
@@ -53196,13 +53241,13 @@ fcj
 fcj
 fcj
 vod
-rrH
-ipl
-xVx
-uOQ
-xFj
 hkc
-fjW
+hkc
+hkc
+uOQ
+xxN
+wtu
+uOQ
 bmF
 vod
 eFs
@@ -53452,15 +53497,15 @@ fcj
 fcj
 fcj
 fcj
-vod
-vod
-vod
-vod
-vod
-vod
-vod
-vod
-vod
+bOI
+hkc
+hkc
+hkc
+fjW
+hkc
+hkc
+fjW
+ucG
 vod
 eFs
 bNq
@@ -53709,16 +53754,16 @@ fcj
 fcj
 fcj
 fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-sEz
+vod
+wMU
+ipl
+xVx
+uOQ
+xFj
+hkc
+uIU
+dbI
+vod
 eFs
 bNq
 plF
@@ -53966,16 +54011,16 @@ fcj
 fcj
 fcj
 fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-sEz
+vod
+vod
+vod
+vod
+vod
+vod
+vod
+vod
+vod
+vod
 eFs
 bNq
 plF
@@ -54421,8 +54466,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 uJh
 uJh
@@ -54678,8 +54723,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 frt
@@ -54717,12 +54762,12 @@ aUO
 aUO
 aUO
 eFs
-dRt
-dRt
-dRt
-wnQ
-dRt
-dRt
+tAe
+tAe
+tAe
+wJQ
+tAe
+tAe
 ofz
 lTM
 lTM
@@ -54935,8 +54980,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -54974,12 +55019,12 @@ aUO
 aUO
 aUO
 eFs
-lTM
-lTM
-lTM
-lTM
-lTM
-lTM
+oLe
+oLe
+oLe
+oLe
+oLe
+oLe
 lTM
 lTM
 lTM
@@ -55192,8 +55237,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -55231,12 +55276,12 @@ aUO
 aUO
 aUO
 rXJ
-lTM
-lTM
-lTM
-lTM
-lTM
-lTM
+oLe
+oLe
+oLe
+oLe
+oLe
+oLe
 lTM
 lTM
 lTM
@@ -55449,8 +55494,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -55488,12 +55533,12 @@ aUO
 aUO
 aUO
 oLe
-lTM
-lTM
-lTM
-lTM
-fHl
-fHl
+oLe
+oLe
+oLe
+oLe
+doJ
+doJ
 lTM
 lTM
 lTM
@@ -55706,8 +55751,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -55745,12 +55790,12 @@ aUO
 aUO
 aUO
 oLe
-lTM
-lTM
-lTM
-lTM
-lTM
-lTM
+oLe
+oLe
+oLe
+oLe
+oLe
+oLe
 lTM
 lTM
 lTM
@@ -55963,8 +56008,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -56002,12 +56047,12 @@ aUO
 aUO
 aUO
 eFs
-lTM
-lTM
-lTM
-lTM
-lTM
-lTM
+oLe
+oLe
+oLe
+oLe
+oLe
+oLe
 lTM
 lTM
 lTM
@@ -56220,8 +56265,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -56259,12 +56304,12 @@ aUO
 aUO
 aUO
 eFs
-pEU
-pEU
-pEU
-kAA
-pEU
-pEU
+hmb
+hmb
+hmb
+aHk
+hmb
+hmb
 pEU
 pEU
 pEU
@@ -56477,8 +56522,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -56734,8 +56779,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -56991,8 +57036,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -57248,8 +57293,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -59047,8 +59092,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -59304,8 +59349,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -59561,8 +59606,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -59818,8 +59863,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -60075,8 +60120,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -60332,8 +60377,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -60589,8 +60634,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -60846,8 +60891,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -61103,8 +61148,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -61360,8 +61405,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -61617,8 +61662,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -61874,8 +61919,8 @@ yaf
 yaf
 yaf
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -62131,8 +62176,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -62388,8 +62433,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -62645,8 +62690,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -62902,8 +62947,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -63159,8 +63204,8 @@ yaf
 yaf
 uJh
 uJh
-bNq
-eFs
+uJh
+uJh
 uJh
 frt
 fMq
@@ -64529,7 +64574,7 @@ iBA
 iBA
 xpN
 kMT
-dsg
+mCp
 mCp
 mCp
 mCp
@@ -64785,7 +64830,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 mCp
 kgD
 oaN
@@ -65042,7 +65087,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 oaN
 tLs
 tSx
@@ -65215,8 +65260,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 uJh
 uJh
@@ -65299,7 +65344,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 oaN
 tLs
 tLs
@@ -65472,8 +65517,8 @@ yaf
 yaf
 yaf
 yaf
-bNq
-eFs
+uJh
+uJh
 uJh
 uJh
 uJh
@@ -65556,7 +65601,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 mkX
 mkX
 iZn
@@ -65729,9 +65774,9 @@ yaf
 yaf
 yaf
 yaf
-nrj
-nrj
-nrj
+uJh
+uJh
+uJh
 uJh
 uJh
 uJh
@@ -65776,7 +65821,7 @@ lTM
 lTM
 lTM
 pJj
-lGB
+akC
 vod
 vod
 vod
@@ -65813,7 +65858,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 dfH
 oaN
 tLs
@@ -65986,37 +66031,37 @@ yaf
 yaf
 yaf
 yaf
-nrj
-frt
-nrj
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
-eFs
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
 eFs
 eFs
 eFs
@@ -66070,7 +66115,7 @@ iBA
 iBA
 iBA
 xpN
-cuA
+jnX
 oaN
 tLs
 mRE
@@ -66243,37 +66288,37 @@ yaf
 yaf
 yaf
 yaf
-nrj
-nrj
-nrj
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
+uJh
 bNq
 bNq
 bNq
@@ -66327,7 +66372,7 @@ iBA
 iBA
 iBA
 xpN
-cuA
+jnX
 oaN
 tLs
 oaN
@@ -66584,7 +66629,7 @@ iBA
 iBA
 iBA
 xpN
-cuA
+jnX
 oaN
 tLs
 tLs
@@ -66841,7 +66886,7 @@ iBA
 iBA
 iBA
 xpN
-cuA
+jnX
 oaN
 oaN
 tLs
@@ -67098,7 +67143,7 @@ iBA
 iBA
 iBA
 xpN
-cuA
+jnX
 oaN
 mRE
 tLs
@@ -67355,7 +67400,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 djk
 oaN
 oaN
@@ -67612,7 +67657,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 mkX
 mkX
 mkX
@@ -67869,7 +67914,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 eQj
 nDT
 iZn
@@ -68126,7 +68171,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 giS
 kZo
 mkX
@@ -68383,7 +68428,7 @@ iBA
 iBA
 iBA
 xpN
-dsg
+mCp
 mCp
 wWC
 mkX
@@ -68641,7 +68686,7 @@ iBA
 iBA
 xpN
 kMT
-dsg
+mCp
 mCp
 mCp
 mCp

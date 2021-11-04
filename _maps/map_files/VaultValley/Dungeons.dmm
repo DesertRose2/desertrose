@@ -463,12 +463,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "wo" = (
-/obj/machinery/mecha_part_fabricator{
-	circuit = null;
-	req_one_access_txt = 01001110 01101111
-	},
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/structure/wreck/trash/engine{
+	icon = 'icons/obj/robotics.dmi';
+	icon_state = "robot-fab-inactive";
+	name = "broken robot workbench"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -530,9 +531,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "BI" = (
-/obj/machinery/mecha_part_fabricator{
-	circuit = null;
-	req_one_access_txt = 01001110 01101111
+/obj/structure/wreck/trash/engine{
+	icon = 'icons/obj/robotics.dmi';
+	icon_state = "robot-fab-inactive";
+	name = "broken robot workbench"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -711,7 +713,8 @@
 /obj/machinery/computer/shuttle{
 	dir = 8;
 	name = "elevator console";
-	possible_destinations = "junker_entrance;junker_bunker"
+	possible_destinations = "junker_entrance;junker_bunker";
+	shuttleId = "junker_bunker_elevator"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
