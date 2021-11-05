@@ -47,7 +47,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 /obj/machinery/computer/shuttle/bunkerelevator/junker
-	shuttleId = "bunker_elevator"
+	shuttleId = "junker_bunker_elevator"
 	possible_destinations = "junker_entrance;junker_bunker"
 
 /obj/machinery/computer/shuttle/northbunkerelevator
