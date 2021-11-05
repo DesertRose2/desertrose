@@ -3088,11 +3088,8 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/computer/shuttle{
-	dir = 8;
-	name = "elevator console";
-	possible_destinations = "junker_entrance;junker_bunker";
-	shuttleId = "junker_bunker_elevator"
+/obj/machinery/computer/shuttle/bunkerelevator/junker{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
