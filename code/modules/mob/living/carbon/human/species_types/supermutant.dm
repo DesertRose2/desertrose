@@ -38,4 +38,9 @@
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
 
-/datum/species/smutant/get_racelist(mob/user)
+//datum/species/smutant/get_racelist(mob/user)
+
+/datum/species/smutant/nightkin
+	name = "nightkin"
+	id = "nightkin"
+	limbs_id = "nightkin"
