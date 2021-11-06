@@ -318,7 +318,7 @@
 		/obj/item/stock_parts/capacitor = 5)
 
 /obj/item/circuitboard/machine/mechfab
-	name = "Exosuit Fabricator (Machine Board)"
+	name = "Robot Workbench (Machine Board)"
 	build_path = /obj/machinery/mecha_part_fabricator
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 2,

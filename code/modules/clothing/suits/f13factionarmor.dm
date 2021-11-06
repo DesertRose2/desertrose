@@ -206,6 +206,7 @@
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/suit/armor/f13/raider/junker/boss
+	name = "heavy Junker body armor"
 	desc = "(VII) A heavy armor of pre-war riot gear reinforced with ramshackle plating."
 	icon_state = "junker_duster"
 	item_state = "junker_duster"
