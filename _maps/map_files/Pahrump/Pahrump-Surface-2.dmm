@@ -486,7 +486,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "agi" = (
@@ -1819,7 +1819,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aCn" = (
@@ -1838,7 +1838,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aCN" = (
@@ -1951,7 +1951,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aFq" = (
@@ -2194,10 +2194,6 @@
 	},
 /area/f13/wasteland)
 "aKm" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
@@ -2253,16 +2249,13 @@
 /obj/item/storage/medical/ancientfirstaid{
 	pixel_y = 15
 	},
-/obj/item/storage/medical/ancientfirstaid{
-	pixel_y = 15
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aLq" = (
@@ -2662,7 +2655,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aRW" = (
@@ -2899,7 +2892,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "aWP" = (
@@ -4103,23 +4096,20 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "brS" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
-/obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
+/obj/item/storage/box/beakers/variety,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "dirty floor"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "bsb" = (
 /obj/structure/simple_door/metal/iron,
 /turf/open/floor/f13/wood,
@@ -4436,7 +4426,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "byv" = (
@@ -5355,6 +5345,10 @@
 /obj/structure/chair/bench{
 	icon_state = "church vertical";
 	pixel_x = 10
+	},
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
@@ -6535,7 +6529,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "cuv" = (
@@ -6792,7 +6786,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "cAs" = (
@@ -6982,7 +6976,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "cFg" = (
@@ -7655,7 +7649,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "cTA" = (
@@ -9206,7 +9200,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "dwR" = (
@@ -9380,7 +9374,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "dzE" = (
@@ -10993,7 +10987,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "eiB" = (
@@ -11357,7 +11351,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "erx" = (
@@ -11506,7 +11500,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "euI" = (
@@ -11969,7 +11963,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "eDT" = (
@@ -12262,10 +12256,6 @@
 	},
 /area/f13/legion)
 "eId" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "eIe" = (
@@ -12558,7 +12548,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "eLo" = (
@@ -14923,7 +14913,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "fCJ" = (
@@ -15784,7 +15774,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "fVn" = (
@@ -16203,7 +16193,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "gdL" = (
@@ -16620,7 +16610,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "gkT" = (
@@ -17613,7 +17603,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "gCL" = (
@@ -19308,7 +19298,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "hlF" = (
@@ -20930,7 +20920,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "hQb" = (
@@ -21036,7 +21026,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland{
 	dynamic_lighting = 1
@@ -22006,7 +21996,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iiH" = (
@@ -22099,6 +22089,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "ncrshutwest"
 	},
+/obj/structure/barricade/bars,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -22548,7 +22539,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "ish" = (
@@ -22694,7 +22685,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iul" = (
@@ -22847,7 +22838,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "ixP" = (
@@ -22953,7 +22944,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iyT" = (
@@ -23891,7 +23882,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "iOB" = (
@@ -24323,7 +24314,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iVW" = (
@@ -24387,7 +24378,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iXz" = (
@@ -24477,7 +24468,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "iZq" = (
@@ -24828,7 +24819,7 @@
 	},
 /obj/effect/decal/fakelattice,
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -24911,7 +24902,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "jgq" = (
@@ -25580,7 +25571,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "jrX" = (
@@ -27546,7 +27537,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "khn" = (
@@ -27713,7 +27704,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "kkr" = (
@@ -27771,7 +27762,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "kkQ" = (
@@ -28546,7 +28537,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "kxH" = (
@@ -28825,7 +28816,7 @@
 	color = "#363636"
 	},
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -29291,7 +29282,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "kKL" = (
@@ -30055,9 +30046,6 @@
 	icon_state = "outermaincornerinner"
 	},
 /area/f13/wasteland)
-"lam" = (
-/turf/open/space/basic,
-/area/f13/village)
 "lav" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
@@ -30580,7 +30568,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "llR" = (
@@ -31508,7 +31496,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "lCD" = (
@@ -31539,7 +31527,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "lCM" = (
@@ -31638,10 +31626,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bar)
 "lEn" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
@@ -32169,10 +32153,6 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/village)
 "lPQ" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
@@ -32309,7 +32289,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "lSD" = (
@@ -32429,7 +32409,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "lUa" = (
@@ -32476,7 +32456,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "lUo" = (
@@ -32823,6 +32803,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/item/smelling_salts{
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "mdx" = (
@@ -32957,7 +32940,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "mfD" = (
@@ -33092,6 +33075,9 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 23
+	},
+/obj/item/smelling_salts{
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
@@ -33298,7 +33284,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "mmt" = (
@@ -35014,7 +35000,7 @@
 	pixel_y = -5
 	},
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -35594,7 +35580,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "ngV" = (
@@ -35899,7 +35885,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "nnn" = (
@@ -36082,7 +36068,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "nrq" = (
@@ -36771,7 +36757,7 @@
 	},
 /obj/effect/decal/fakelattice,
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -37538,7 +37524,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "nWz" = (
@@ -37648,12 +37634,6 @@
 "oab" = (
 /obj/structure/table/wood{
 	pixel_y = 10
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_y = 15
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_y = 15
 	},
 /obj/item/reagent_containers/glass/bottle/epinephrine{
 	pixel_y = 15
@@ -38154,7 +38134,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "okb" = (
@@ -38411,7 +38391,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "onU" = (
@@ -38811,7 +38791,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "ouz" = (
@@ -39000,7 +38980,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oxT" = (
@@ -39103,7 +39083,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oAe" = (
@@ -39128,19 +39108,13 @@
 /obj/item/smelling_salts{
 	pixel_y = 10
 	},
-/obj/item/smelling_salts{
-	pixel_y = 10
-	},
-/obj/item/smelling_salts{
-	pixel_y = 10
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oAy" = (
@@ -39460,7 +39434,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oIm" = (
@@ -39571,7 +39545,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oKR" = (
@@ -40044,7 +40018,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "oVT" = (
@@ -40838,8 +40812,6 @@
 /obj/item/reagent_containers/food/snacks/grown/pungafruit,
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/suture,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/food/snacks/grown/pungafruit,
 /obj/item/stack/medical/ointment/twelve,
 /obj/item/stack/medical/ointment/twelve,
@@ -40855,7 +40827,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "pjC" = (
@@ -41287,12 +41259,6 @@
 /obj/item/reagent_containers/glass/bottle/charcoal{
 	pixel_y = 15
 	},
-/obj/item/reagent_containers/glass/bottle/charcoal{
-	pixel_y = 15
-	},
-/obj/item/reagent_containers/glass/bottle/charcoal{
-	pixel_y = 15
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -41480,9 +41446,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/closet/crate/freezer/blood{
-	pixel_y = 10
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -41492,7 +41455,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "pwc" = (
@@ -41916,7 +41879,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "pEs" = (
@@ -42869,7 +42832,7 @@
 /area/f13/building)
 "pWz" = (
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -43737,7 +43700,7 @@
 	icon_state = "skulls"
 	},
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -43774,16 +43737,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"qoo" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "floor_dirty"
-	},
-/area/f13/legion)
 "qop" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -43815,7 +43768,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "qoz" = (
@@ -44285,7 +44238,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "qxO" = (
@@ -44721,10 +44674,14 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/item/reagent_containers/glass/bottle/charcoal,
+/obj/item/reagent_containers/glass/bottle/charcoal,
+/obj/item/reagent_containers/glass/bottle/epinephrine,
+/obj/item/reagent_containers/glass/bottle/epinephrine,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "qHG" = (
@@ -44817,21 +44774,6 @@
 	icon_state = "outermaincornerinner"
 	},
 /area/f13/wasteland)
-"qJc" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
-/obj/effect/decal/fakelattice,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
-	},
-/area/f13/wasteland)
 "qJq" = (
 /obj/structure/table/wood/bar,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -44869,7 +44811,7 @@
 	icon_state = "skulls"
 	},
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -44947,7 +44889,7 @@
 	color = "#363636"
 	},
 /turf/closed/wall/f13/store{
-	color = "#897f7b";
+	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
 	},
@@ -45913,18 +45855,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"rhE" = (
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 8
-	},
-/obj/effect/decal/fakelattice,
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
-	},
-/area/f13/wasteland)
 "rhI" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -46017,7 +45947,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "rjD" = (
@@ -46073,7 +46003,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "rkn" = (
@@ -46914,7 +46844,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "rDz" = (
@@ -47828,7 +47758,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "rWn" = (
@@ -49056,7 +48986,7 @@
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sth" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -49113,7 +49043,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sud" = (
 /obj/effect/decal/marking,
 /turf/open/indestructible/ground/outside/road{
@@ -49326,7 +49256,7 @@
 /obj/structure/table/wood,
 /obj/machinery/processor/chopping_block,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sxT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -49416,7 +49346,7 @@
 /obj/structure/table/wood,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "szO" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -49447,7 +49377,7 @@
 /obj/item/kitchen/knife,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sAd" = (
 /mob/living/simple_animal/hostile/retaliate/goat/bighorn,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -49458,7 +49388,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sAf" = (
 /obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
@@ -49584,7 +49514,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "sCf" = (
@@ -49806,14 +49736,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
-"sEY" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/window/fulltile/house{
-	icon_state = "housewindowvertical"
-	},
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland)
 "sFf" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 4;
@@ -49847,7 +49769,7 @@
 "sFI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sFO" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -49890,7 +49812,7 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "sGo" = (
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road{
@@ -50088,7 +50010,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/house,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "sJO" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -50592,7 +50514,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sUq" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor5"
@@ -50610,7 +50532,7 @@
 /obj/structure/table/wood,
 /obj/item/kitchen/fork,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sUP" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/light{
@@ -50696,7 +50618,7 @@
 	icon_state = "remains"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sWb" = (
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -50792,7 +50714,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sXe" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/clothing_low,
@@ -50865,7 +50787,7 @@
 /obj/item/kitchen/knife,
 /obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "sYw" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -50887,7 +50809,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "sYV" = (
@@ -50988,7 +50910,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "taV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/rock/jungle,
@@ -51100,7 +51022,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/smartfridge/bottlerack,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "tcU" = (
 /obj/structure/window/fulltile/house{
 	dir = 2
@@ -51498,7 +51420,7 @@
 "tkI" = (
 /obj/structure/mirror,
 /turf/closed/wall/f13/wood/interior,
-/area/f13/wasteland)
+/area/f13/village)
 "tkO" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -51606,9 +51528,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/building)
-"tmv" = (
-/turf/closed/wall/f13/wood/interior,
-/area/f13/wasteland)
 "tmH" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/indestructible/ground/inside/mountain,
@@ -51675,7 +51594,7 @@
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "tox" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -51756,23 +51675,14 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/closet/crate/freezer/blood{
-	anchored = 1;
-	pixel_y = 20
-	},
-/obj/machinery/iv_drip{
-	pixel_x = 5
-	},
-/obj/machinery/iv_drip{
-	pixel_x = -5
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "tpD" = (
@@ -53097,7 +53007,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "tOF" = (
@@ -53900,7 +53810,7 @@
 	pixel_y = 15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "ucw" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -53931,12 +53841,6 @@
 /obj/item/reagent_containers/pill/patch/healpoultice,
 /obj/item/reagent_containers/pill/patch/healpoultice,
 /obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -53959,7 +53863,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "ucQ" = (
 /obj/machinery/shower{
 	dir = 8
@@ -54090,7 +53994,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "uff" = (
@@ -54205,7 +54109,7 @@
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/medical/surgical,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "uhg" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -54714,7 +54618,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "upG" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/dirt{
@@ -54802,7 +54706,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "urt" = (
@@ -54911,7 +54815,7 @@
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "usr" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -55432,7 +55336,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "uDt" = (
@@ -55729,7 +55633,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "uJB" = (
 /obj/structure/closet/cardboard/metal,
 /turf/open/floor/f13{
@@ -55830,7 +55734,7 @@
 	},
 /obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/wasteland)
+/area/f13/village)
 "uMm" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -56058,18 +55962,17 @@
 	color = "#363636"
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/bottle/charcoal,
-/obj/item/reagent_containers/glass/bottle/charcoal,
-/obj/item/reagent_containers/glass/bottle/charcoal,
-/obj/item/reagent_containers/glass/bottle/charcoal,
-/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/item/reagent_containers/glass/bottle/salglu_solution,
+/obj/item/reagent_containers/glass/bottle/salglu_solution,
+/obj/item/reagent_containers/glass/bottle/salglu_solution,
+/obj/item/reagent_containers/glass/bottle/salglu_solution,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "uRJ" = (
@@ -56160,7 +56063,7 @@
 /obj/structure/bookcase/random,
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "uTq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood/house,
@@ -56182,11 +56085,6 @@
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
-/area/f13/wasteland)
-"uTQ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/bookcase/random,
-/turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "uTS" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -56456,7 +56354,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "uYs" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Gatehouse";
@@ -57348,7 +57246,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vnJ" = (
@@ -57628,13 +57526,10 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/reagent_dispensers/barrel/dangerous{
-	anchored = 1
-	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vtB" = (
@@ -57999,7 +57894,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vAa" = (
@@ -58877,7 +58772,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vPz" = (
@@ -59045,7 +58940,7 @@
 	pixel_y = 15
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "vSv" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars,
@@ -59067,7 +58962,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vSP" = (
@@ -59140,7 +59035,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "vTP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -59241,7 +59136,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "vWd" = (
@@ -59330,7 +59225,7 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
-/area/f13/wasteland)
+/area/f13/village)
 "vXz" = (
 /obj/machinery/autolathe/ammo,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -60489,7 +60384,7 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/wasteland)
+/area/f13/village)
 "wvP" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -60998,7 +60893,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "wEF" = (
@@ -61707,6 +61602,10 @@
 	icon_state = "church vertical";
 	pixel_x = 10
 	},
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
 	},
@@ -62167,7 +62066,7 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/wasteland)
+/area/f13/village)
 "wXT" = (
 /obj/machinery/microwave/stove,
 /obj/effect/decal/cleanable/dirt{
@@ -62978,7 +62877,7 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "xnl" = (
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -63056,7 +62955,7 @@
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "xoF" = (
 /obj/structure/barricade/bars,
 /obj/structure/window/fulltile/wood{
@@ -63123,7 +63022,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "xpM" = (
@@ -63188,7 +63087,7 @@
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/wasteland)
 "xrh" = (
@@ -63267,7 +63166,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "xsl" = (
@@ -63295,7 +63194,7 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/wasteland)
+/area/f13/village)
 "xsE" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -63470,7 +63369,7 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "xvI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/window/fulltile/house{
@@ -63552,7 +63451,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/black,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland)
+/area/f13/village)
 "xxa" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -63872,7 +63771,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "xFt" = (
@@ -65440,11 +65339,6 @@
 	color = "#363636"
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -65452,7 +65346,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "yhn" = (
@@ -65492,7 +65386,7 @@
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
-	name = "floor_dirty"
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "yic" = (
@@ -85909,7 +85803,7 @@ goZ
 goZ
 goZ
 goZ
-lam
+jnX
 goZ
 aom
 gjP
@@ -93646,22 +93540,22 @@ sWb
 rRG
 psU
 fyf
-jzN
-jzN
-sEY
+gjP
+gjP
+sdG
 sGm
-jzN
-jzN
-jzN
-jzN
+gjP
+gjP
+gjP
+gjP
 sGm
-jzN
-jzN
-jzN
-jzN
-jzN
-jzN
-jzN
+gjP
+gjP
+gjP
+gjP
+gjP
+gjP
+gjP
 fyf
 tCW
 xXM
@@ -93903,7 +93797,7 @@ rNi
 rVu
 psU
 fyf
-jzN
+gjP
 stg
 sFI
 sFI
@@ -93913,12 +93807,12 @@ tkI
 ucs
 sFI
 uJd
-tmv
+cbk
 vSn
 wvq
-aMw
+goZ
 wXR
-jzN
+gjP
 fyf
 tCW
 yaz
@@ -94160,22 +94054,22 @@ goZ
 rRG
 psU
 fyf
-jzN
+gjP
 stK
 sFI
 sFI
 sUv
 sYr
-tmv
+cbk
 ucM
 sFI
 uMb
-tmv
+cbk
 vTz
-aMw
-cGc
+goZ
+rNi
 xnh
-jzN
+gjP
 fyf
 gjP
 yaE
@@ -94417,22 +94311,22 @@ kRt
 qqv
 jnX
 fyf
-jzN
+gjP
 sxP
 sFI
 sFI
 sVO
 taS
-tmv
-tmv
+cbk
+cbk
 upF
-tmv
-tmv
+cbk
+cbk
 vXv
-aMw
-aMw
+goZ
+goZ
 xow
-jzN
+gjP
 fyf
 gjP
 gjP
@@ -94674,22 +94568,22 @@ khy
 rqD
 gjP
 fyf
-jzN
+gjP
 szM
 sFI
 sFI
 sFI
 sFI
-gwJ
-aMw
-aMw
-fph
+dnZ
+goZ
+goZ
+vNS
 uYp
-aMw
-aMw
-aMw
+goZ
+goZ
+goZ
 xsz
-jzN
+gjP
 fyf
 rHE
 lRX
@@ -94931,22 +94825,22 @@ rGl
 rDK
 gjP
 fyf
-jzN
+gjP
 szV
 sFI
 sFI
 sFI
 sFI
-aMw
-cGc
-aMw
+goZ
+rNi
+goZ
 uTh
-tmv
+cbk
 vTz
-fph
-aMw
+vNS
+goZ
 xvH
-jzN
+gjP
 fyf
 rHE
 fbq
@@ -95188,7 +95082,7 @@ jvM
 pOk
 gjP
 fyf
-jzN
+gjP
 sAe
 sFI
 sFI
@@ -95197,13 +95091,13 @@ tcM
 too
 ugS
 usn
-uTQ
-tmv
+uWs
+cbk
 vSn
-aMw
-cGc
+goZ
+rNi
 xwW
-jzN
+gjP
 fyf
 rHE
 lRX
@@ -95445,22 +95339,22 @@ ijg
 gjP
 gjP
 fyf
-jzN
-jzN
-jzN
+gjP
+gjP
+gjP
 sJN
-jzN
-jzN
+gjP
+gjP
 sGm
-sEY
+sdG
 sGm
-jzN
-jzN
-jzN
-sEY
+gjP
+gjP
+gjP
+sdG
 sGm
-jzN
-jzN
+gjP
+gjP
 fyf
 xHc
 ydK
@@ -117117,7 +117011,7 @@ pWz
 vny
 vny
 vny
-vny
+brS
 pWz
 bjt
 sza
@@ -117394,9 +117288,9 @@ lHo
 bjt
 qnI
 aGM
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
 iZg
 pWz
 pWz
@@ -117651,9 +117545,9 @@ ufI
 bjt
 pWz
 cmf
-qoo
+vtm
 fVf
-qoo
+vtm
 pEi
 pWz
 aNn
@@ -117907,11 +117801,11 @@ sWQ
 sWQ
 xrg
 kxA
-qoo
-qoo
+vtm
+vtm
 gkB
-qoo
-qoo
+vtm
+vtm
 xpG
 jrV
 pWz
@@ -118165,9 +118059,9 @@ sWQ
 gVE
 pWz
 fVf
-qoo
+vtm
 fVf
-qoo
+vtm
 khi
 pWz
 pWz
@@ -118422,9 +118316,9 @@ aNQ
 isW
 pWz
 oKN
-qoo
+vtm
 fVf
-qoo
+vtm
 lUm
 iEB
 ajj
@@ -118679,10 +118573,10 @@ ggH
 btk
 nnj
 aWO
-qoo
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
+vtm
 nKj
 nKj
 lyu
@@ -118938,10 +118832,10 @@ btk
 nnj
 onR
 eDM
-qoo
+vtm
 ous
-qoo
-qoo
+vtm
+vtm
 nKj
 pWz
 gcK
@@ -119681,7 +119575,7 @@ eyH
 pWz
 mdr
 uDZ
-rdL
+haw
 xkK
 cbQ
 xkK
@@ -122503,7 +122397,7 @@ tNE
 pWz
 qJx
 lWs
-qoo
+vtm
 qLx
 pWz
 mGp
@@ -123531,8 +123425,8 @@ tNE
 pWz
 kKF
 ozY
-qoo
-qoo
+vtm
+vtm
 lCw
 xrg
 xrg
@@ -123787,9 +123681,9 @@ tPy
 koD
 kkq
 ozY
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
 lOi
 blZ
 blZ
@@ -124044,8 +123938,8 @@ wGJ
 tNE
 pWz
 lnn
-qoo
-qoo
+vtm
+vtm
 ozY
 lCw
 xrg
@@ -124814,7 +124708,7 @@ erY
 erY
 dCh
 nnj
-qoo
+vtm
 qxD
 nFW
 nFW
@@ -128702,12 +128596,12 @@ fyf
 uPr
 rtR
 jZJ
-qoo
-qoo
+vtm
+vtm
 icl
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
 iuj
 pWz
 gcK
@@ -128933,7 +128827,7 @@ ptf
 ptf
 pWz
 xFo
-qoo
+vtm
 pWz
 pWz
 oAP
@@ -128959,11 +128853,11 @@ fyf
 lRT
 xkK
 qow
-qoo
-qoo
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
+vtm
+vtm
 qCh
 mms
 pWz
@@ -129190,7 +129084,7 @@ gcK
 gcK
 pWz
 vzY
-qoo
+vtm
 eiz
 pWz
 pWz
@@ -129217,10 +129111,10 @@ ylb
 xkK
 isf
 icl
-qoo
+vtm
 nrb
 nrb
-qoo
+vtm
 qCh
 iiG
 pWz
@@ -129447,8 +129341,8 @@ gcK
 gcK
 pWz
 pWz
-qoo
-qoo
+vtm
+vtm
 ueX
 pWz
 pWz
@@ -129473,11 +129367,11 @@ xrg
 xrg
 lUd
 icl
-qoo
-qoo
+vtm
+vtm
 nrb
 iAY
-qoo
+vtm
 qCh
 hPP
 pWz
@@ -129706,7 +129600,7 @@ gcK
 pWz
 dwP
 iyS
-qoo
+vtm
 eiz
 pWz
 olr
@@ -129730,11 +129624,11 @@ xrg
 sWQ
 pWz
 dzs
-qoo
-qoo
+vtm
+vtm
 nrb
 xlR
-qoo
+vtm
 aCL
 pWz
 gcK
@@ -129963,8 +129857,8 @@ gcK
 pWz
 pWz
 lSx
-qoo
-qoo
+vtm
+vtm
 vtm
 ydA
 ydA
@@ -129986,12 +129880,12 @@ rDy
 xrg
 gbu
 pWz
-qoo
-qoo
-qoo
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
+vtm
+vtm
+vtm
 cub
 pWz
 gcK
@@ -130221,10 +130115,10 @@ gcK
 pWz
 pWz
 urh
-qoo
-qoo
-qoo
-qoo
+vtm
+vtm
+vtm
+vtm
 set
 gbu
 xRw
@@ -130244,7 +130138,7 @@ mLT
 gbu
 pWz
 rWc
-qoo
+vtm
 ino
 ino
 ufM
@@ -130500,9 +130394,9 @@ wRw
 wRw
 gbu
 pWz
-qoo
+vtm
 sYz
-qoo
+vtm
 jfR
 pWz
 pWz
@@ -130749,9 +130643,9 @@ lEn
 aKm
 eId
 eId
-rhE
-brS
-qJc
+ecX
+xuH
+sWQ
 eId
 lEn
 eId
