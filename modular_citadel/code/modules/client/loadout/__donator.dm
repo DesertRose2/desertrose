@@ -632,6 +632,15 @@
 						"thegreatcoward",
 						"usotsukihime")
 	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
+	
+/datum/gear/donator/ncrasgtpins
+	name = "NCR Sgt Pins"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/ncr/SGT
+	ckeywhitelist = list("muhsollini",
+						"weaselburg",
+						"ollieoxen")
+	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer")
 
 /datum/gear/donator/zirilliuniform
 	name = "Major Zirilli's service uniform"

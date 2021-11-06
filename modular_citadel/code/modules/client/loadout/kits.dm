@@ -433,7 +433,6 @@
 
 //Daiyu Liu - Muhsollini
 /obj/item/storage/box/large/custom_kit/shi/PopulateContents()
-	new /obj/item/clothing/accessory/ncr/SGT(src)
 	new /obj/item/clothing/under/f13/ncr/shi(src)
 	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
 	new /obj/item/modkit/shicoat(src)
