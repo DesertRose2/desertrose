@@ -2822,9 +2822,10 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
 "BC" = (
-/obj/machinery/mecha_part_fabricator{
-	circuit = null;
-	req_one_access_txt = 01001110 01101111
+/obj/structure/wreck/trash/engine{
+	icon = 'icons/obj/robotics.dmi';
+	icon_state = "robot-fab-inactive";
+	name = "broken robot workbench"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
@@ -3087,12 +3088,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/computer/shuttle{
-	dir = 8;
-	name = "elevator console";
-	possible_destinations = "junker_entrance;junker_bunker"
+/obj/machinery/computer/shuttle/bunkerelevator/junker{
+	dir = 8
 	},
-/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "Ex" = (
@@ -49237,7 +49235,7 @@ St
 Vq
 Jx
 Vq
-BC
+uI
 uI
 Vq
 vH
@@ -49751,7 +49749,7 @@ ls
 Vq
 uI
 Vq
-uI
+BC
 uI
 Vq
 vH
@@ -50002,15 +50000,15 @@ Vq
 kK
 vH
 vH
-Vq
-Vq
-Vq
-Vq
-uI
-Vq
-Vq
-Vq
-Vq
+Pb
+Pb
+Pb
+Pb
+pq
+Pb
+Pb
+Pb
+Pb
 Jp
 Jp
 Jp
@@ -50259,7 +50257,7 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
@@ -50267,7 +50265,7 @@ uI
 uI
 uI
 uI
-Vq
+Pb
 Jp
 Jp
 vH
@@ -50516,7 +50514,7 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
@@ -50524,7 +50522,7 @@ uI
 uI
 uI
 uI
-Vq
+Pb
 Jp
 sX
 sX
@@ -50773,7 +50771,7 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
@@ -50781,7 +50779,7 @@ uI
 uI
 uI
 uI
-Vq
+Pb
 vH
 sX
 Nm
@@ -51030,14 +51028,14 @@ Vq
 kK
 vH
 vH
+Pb
+uI
+uI
+uI
+uI
 Vq
-uI
-uI
-uI
-pq
-Pb
-Pb
-Pb
+Vq
+Vq
 Pb
 vH
 sX
@@ -51287,11 +51285,11 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
-pq
+uI
 bq
 eq
 eq
@@ -51544,11 +51542,11 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
-pq
+uI
 Bb
 VL
 eq
@@ -51801,7 +51799,7 @@ Vq
 kK
 vH
 vH
-Vq
+Pb
 uI
 uI
 uI
@@ -52058,10 +52056,10 @@ Vq
 kK
 vH
 vH
-Vq
-Vq
-Vq
-Vq
+Pb
+Pb
+Pb
+Pb
 Pb
 Pb
 Pb
