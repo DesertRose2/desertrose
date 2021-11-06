@@ -638,8 +638,7 @@
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ncr/SGT
 	ckeywhitelist = list("muhsollini",
-						"weaselburg",
-						"ollieoxen")
+						"weaselburg")
 	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer")
 
 /datum/gear/donator/zirilliuniform
