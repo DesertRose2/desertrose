@@ -101,7 +101,7 @@
 	name = "NCR skirt"
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	path = /obj/item/clothing/under/f13/ncr/ncr_dress/skirt
-	restricted_desc = "NCR"
+	restricted_desc = "NCR Officers"
 	restricted_roles = list(
 							"NCR Captain",
 							"NCR Commanding Officer",
