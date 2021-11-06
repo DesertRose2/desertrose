@@ -101,6 +101,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
+"afj" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "afn" = (
 /obj/structure/chair/wood,
 /mob/living/simple_animal/hostile/raider/legendary,
@@ -147,6 +153,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"ajB" = (
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/tribe)
 "akl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/mineral/random/high_chance,
@@ -496,6 +507,12 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"aPB" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "aRD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -598,6 +615,12 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"aXg" = (
+/obj/structure/closet/cabinet/anchored{
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "aXL" = (
 /obj/effect/decal/remains/human,
 /turf/closed/mineral/random/low_chance,
@@ -802,6 +825,15 @@
 /obj/item/soap/deluxe,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"bpS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "bqE" = (
 /mob/living/simple_animal/hostile/jungle/leaper{
 	desc = "A massive beast that spits out highly pressurized bubbles containing a unique toxin, knocking down its prey and then crushing it with its girth.";
@@ -1190,6 +1222,28 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/bunker)
+"bVy" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"bVJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "bWm" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -1420,6 +1474,20 @@
 	dir = 8
 	},
 /area/f13/bunker)
+"cow" = (
+/obj/structure/stone_tile/surrounding/burnt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	icon_state = "ladder10";
+	id = "Abandoned_Mine_Left";
+	name = "Camp"
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "cpp" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
@@ -1438,6 +1506,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"cqV" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "crj" = (
 /obj/structure/table/wood/poker,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
@@ -1497,6 +1579,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"cBg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "cBA" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/effect/decal/cleanable/dirt,
@@ -1522,6 +1619,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/f13/bunker)
+"cEd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "cEk" = (
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/cleanable/dirt,
@@ -1702,6 +1814,12 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/bunker)
+"cXd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "cYq" = (
 /obj/machinery/light/broken{
 	dir = 4
@@ -1807,6 +1925,20 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/water,
 /area/f13/bunker)
+"dhc" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "dhl" = (
 /obj/effect/spawner/lootdrop/costume,
 /obj/effect/decal/cleanable/dirt,
@@ -1900,6 +2032,13 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"dpW" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "dqe" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/clothing_middle,
@@ -2279,6 +2418,13 @@
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"dUV" = (
+/obj/structure/pondlily_small,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "dVq" = (
 /obj/structure/decoration/rag{
 	icon_state = "skin"
@@ -2415,6 +2561,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"egO" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/curtain{
+	color = "#401d3a"
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "ehx" = (
 /obj/machinery/vending/wardrobe/hydro_wardrobe,
 /obj/effect/decal/cleanable/dirt,
@@ -2585,6 +2738,17 @@
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"eso" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "euI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/ghoul/glowing,
@@ -2932,6 +3096,18 @@
 /obj/structure/stone_tile/surrounding/cracked,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"feB" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "feS" = (
 /obj/structure/chair/middle{
 	dir = 1
@@ -2973,6 +3149,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/f13/bunker)
+"fhd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "fhA" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -3067,6 +3249,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"fpQ" = (
+/obj/structure/chair/wood/wings{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "ftf" = (
 /mob/living/simple_animal/hostile/raider/ranged,
 /obj/effect/decal/cleanable/dirt,
@@ -3081,6 +3269,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"fuj" = (
+/obj/structure/bookcase/random,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "ful" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/wreck/trash/machinepiletwo,
@@ -3275,6 +3467,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"fHi" = (
+/obj/structure/stone_tile/slab,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "fHR" = (
 /obj/structure/table/wood,
 /obj/machinery/light/broken{
@@ -3413,6 +3609,12 @@
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
+"fTM" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "fTR" = (
 /obj/structure/chair/left{
 	dir = 1
@@ -3420,6 +3622,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"fVg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "fWv" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
@@ -3786,6 +4003,21 @@
 "gwy" = (
 /turf/closed/wall/rust,
 /area/f13/bunker)
+"gxf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/wooden{
+	pixel_y = 15
+	},
+/obj/structure/bed/wooden,
+/obj/item/bedsheet/purple{
+	color = "#401d3a";
+	pixel_y = 15
+	},
+/obj/item/bedsheet/purple{
+	color = "#401d3a"
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "gyP" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -3898,6 +4130,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"gIy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/leafybush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
+"gJI" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "gKr" = (
 /turf/closed/wall/f13/supermart,
 /area/f13/bunker)
@@ -3915,6 +4168,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"gLj" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "gLD" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -3963,6 +4223,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"gNB" = (
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = 18
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "gOQ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
@@ -4139,6 +4406,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"gZt" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "gZO" = (
 /mob/living/simple_animal/hostile/handy/gutsy/nsb,
 /obj/effect/decal/cleanable/dirt,
@@ -4217,8 +4490,22 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"heS" = (
+/turf/open/floor/wood/f13/old,
+/area/f13/underground/cave)
 "heT" = (
 /turf/closed/indestructible/rock,
+/area/f13/underground/cave)
+"heZ" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
 /area/f13/underground/cave)
 "hfk" = (
 /obj/effect/decal/cleanable/blood,
@@ -4496,6 +4783,11 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/bunker)
+"hAi" = (
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/plating/dirt,
+/area/f13/tribe)
 "hAC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/metal/ten,
@@ -4506,6 +4798,15 @@
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"hBt" = (
+/obj/structure/stone_tile/slab,
+/obj/structure/stone_tile/surrounding/burnt,
+/obj/structure/stone_tile/center,
+/obj/structure/chair/bench{
+	pixel_y = 10
+	},
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "hBD" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/effect/decal/cleanable/dirt,
@@ -4536,6 +4837,22 @@
 /obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"hCc" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "hCj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -4761,6 +5078,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
+"hYt" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "hYv" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plasteel/f13{
@@ -4863,6 +5184,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
+"idl" = (
+/obj/structure/closet/cabinet/anchored{
+	pixel_y = 10
+	},
+/obj/item/clothing/under/f13/wayfarer/shamanred,
+/obj/item/clothing/under/f13/wayfarer/shamanblue,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "idv" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress6"
@@ -4904,6 +5233,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"igI" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "igT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5387,6 +5727,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/radiation)
+"iSr" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/ausbushes/brflowers,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "iSx" = (
 /obj/effect/decal/cleanable/robot_debris/limb,
 /obj/effect/decal/cleanable/dirt,
@@ -5486,6 +5839,17 @@
 /obj/effect/spawner/lootdrop/f13/attachments,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"iYz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "iYZ" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -5502,6 +5866,18 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"jag" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/brflowers,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "jaG" = (
 /obj/machinery/iv_drip,
 /obj/effect/decal/cleanable/cobweb{
@@ -5540,18 +5916,46 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland)
+"jeN" = (
+/obj/structure/pondlily_small,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jft" = (
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"jgk" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/mob/living/simple_animal/butterfly,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "jgI" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
 /area/f13/bunker)
+"jgS" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/dirt,
+/area/f13/tribe)
 "jhi" = (
 /obj/structure/debris/v3,
 /turf/open/floor/plasteel/f13{
@@ -5581,6 +5985,12 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/bunker)
+"jjx" = (
+/obj/structure/dresser{
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "jjM" = (
 /obj/structure/decoration/rag,
 /obj/structure/girder/reinforced,
@@ -5641,6 +6051,13 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/bunker)
+"jrq" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jru" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -5694,6 +6111,23 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"jwq" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"jwG" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/ausbushes/leafybush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jwQ" = (
 /obj/effect/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
@@ -5710,8 +6144,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"jxO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jzn" = (
 /turf/closed/wall/r_wall/rust,
+/area/f13/underground/cave)
+"jzA" = (
+/obj/structure/stone_tile/block/cracked,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/plating/dirt,
 /area/f13/underground/cave)
 "jAa" = (
 /obj/structure/spacevine{
@@ -5752,6 +6199,10 @@
 /obj/machinery/smartfridge/bottlerack/lootshelf/brews,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"jCj" = (
+/obj/structure/pondlily_big,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jCP" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -5779,6 +6230,13 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"jEA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "jEL" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -5944,6 +6402,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"jSt" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "jSV" = (
 /obj/structure/stone_tile/slab/burnt,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6208,6 +6681,11 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"kpK" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/plating/dirt,
+/area/f13/tribe)
 "kqn" = (
 /obj/machinery/button/door{
 	id = vaultshutters;
@@ -6231,6 +6709,22 @@
 /obj/structure/flora/junglebush/large,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"ksA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "ktB" = (
 /obj/effect/decal/waste{
 	icon_state = "goo5"
@@ -6349,6 +6843,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
+"kEk" = (
+/obj/effect/landmark/start/f13/shaman,
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "kEr" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -6395,6 +6893,17 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"kFZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "kHJ" = (
 /obj/structure/wreck/trash/machinepile,
 /obj/effect/decal/cleanable/cobweb{
@@ -6447,6 +6956,19 @@
 	icon_state = "2-i"
 	},
 /area/f13/bunker)
+"kND" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "kNH" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
@@ -6479,6 +7001,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"kPT" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/mob/living/simple_animal/butterfly,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "kQO" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -6521,6 +7055,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"kTd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "kTA" = (
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/indestructible/ground/outside/water,
@@ -6574,6 +7120,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"lac" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "lah" = (
 /obj/effect/decal/waste,
 /obj/effect/decal/cleanable/dirt,
@@ -6863,6 +7415,18 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"lzl" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "lzE" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
@@ -6888,6 +7452,11 @@
 /mob/living/simple_animal/hostile/cazador/young,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/bunker)
+"lCf" = (
+/obj/structure/stone_tile/surrounding/cracked,
+/obj/structure/stone_tile/surrounding_tile,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "lEp" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
@@ -6980,6 +7549,18 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"lOv" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "lPy" = (
 /obj/machinery/power/terminal,
 /obj/effect/decal/cleanable/dirt,
@@ -7217,6 +7798,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/bunker)
+"mlg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "mlI" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -7257,6 +7845,17 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"mpo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "mpT" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
@@ -7369,11 +7968,25 @@
 /obj/item/chair,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"mzw" = (
+/obj/structure/table/wood,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "mzE" = (
 /obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
+"mzG" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
+/obj/item/kirbyplants{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "mzX" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -7429,6 +8042,14 @@
 	icon_state = "housebase"
 	},
 /area/f13/bunker)
+"mDS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/fernybush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "mEB" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -7564,6 +8185,18 @@
 /obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"mMp" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "mNt" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -7616,6 +8249,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"mRy" = (
+/obj/structure/simple_door/wood,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "mRR" = (
 /obj/machinery/button{
 	id = 666;
@@ -7728,6 +8365,21 @@
 /obj/item/trash/f13/steak,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"nfb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/wooden{
+	pixel_y = 15
+	},
+/obj/structure/bed/wooden,
+/obj/item/bedsheet/purple{
+	color = "#401d3a";
+	pixel_y = 15
+	},
+/obj/item/bedsheet/purple{
+	color = "#401d3a"
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "nfV" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -7815,6 +8467,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
+"npR" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nqg" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
@@ -7828,6 +8495,21 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/bunker)
+"nqB" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "nqM" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /obj/effect/decal/cleanable/dirt,
@@ -7935,6 +8617,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/f13/bunker)
+"nvQ" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nwq" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -7943,6 +8636,18 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/bunker)
+"nwF" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nyL" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -7953,6 +8658,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"nAQ" = (
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = -19
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "nBk" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/neck/apron/chef,
@@ -7966,6 +8678,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"nBt" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nBH" = (
 /obj/structure/toilet{
 	dir = 4
@@ -7979,11 +8704,30 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
+"nCw" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nCC" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
 /area/f13/bunker)
+"nDc" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "nDF" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -8008,6 +8752,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"nET" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = -19
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "nFn" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -8024,6 +8778,21 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"nHI" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nIh" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -8193,6 +8962,21 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/bunker)
+"nTA" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/brflowers,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "nTV" = (
 /obj/structure/flora/ausbushes/sparsegrass{
 	pixel_x = 6;
@@ -8268,6 +9052,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"nYL" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "nYW" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "99";
@@ -8301,6 +9092,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/bunker)
+"oaX" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "obv" = (
 /obj/effect/decal/remains/human,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
@@ -8385,6 +9187,15 @@
 /obj/item/clothing/under/f13/vault,
 /turf/open/water,
 /area/f13/bunker)
+"ogm" = (
+/obj/structure/chair/wood/wings{
+	dir = 8
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "ogr" = (
 /obj/structure/barricade/wooden/strong,
 /obj/machinery/door/poddoor/shutters{
@@ -8627,6 +9438,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"oBy" = (
+/obj/item/kirbyplants{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "oBU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -8666,6 +9483,28 @@
 "oFH" = (
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
+"oFW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"oGo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "oHc" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -8796,6 +9635,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/bunker)
+"oWR" = (
+/obj/structure/curtain{
+	color = "#401d3a"
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "oXi" = (
 /obj/item/storage/wallet/random,
 /obj/structure/table,
@@ -8827,11 +9672,26 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"oZp" = (
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "oZQ" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/radiation)
+"paZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "pba" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack,
@@ -8955,6 +9815,21 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"piU" = (
+/obj/structure/flora/ausbushes/sunnybush,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "piW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/trash_stack,
@@ -9296,12 +10171,23 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"pEk" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "pEA" = (
 /obj/structure/glowshroom/single,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"pFk" = (
+/obj/structure/chair/wood/wings{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "pFN" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -9330,11 +10216,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
+"pIx" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "pIX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"pJw" = (
+/obj/structure/pondlily_small,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "pJH" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13{
@@ -9468,6 +10370,13 @@
 /obj/structure/junk/small/table,
 /turf/open/water,
 /area/f13/bunker)
+"pXp" = (
+/obj/structure/stone_tile/block/cracked,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "pYa" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
@@ -9648,6 +10557,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/f13/radiation)
+"qmL" = (
+/obj/structure/table/wood,
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "qnc" = (
 /obj/item/flashlight/lantern,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9723,6 +10636,21 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"qty" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "quA" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt,
@@ -9867,11 +10795,34 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"qGU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "qHi" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
+"qHT" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/brflowers,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "qIF" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib5-old"
@@ -9984,6 +10935,12 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
+"qQd" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/plating/dirt,
+/area/f13/tribe)
 "qSn" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/poddoor/shutters{
@@ -10065,6 +11022,20 @@
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
+"qYH" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
+"qZf" = (
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 9
+	},
+/obj/structure/stone_tile/center,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "rag" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/waste{
@@ -10230,6 +11201,13 @@
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"rnb" = (
+/obj/structure/chair/wood/wings{
+	dir = 4
+	},
+/obj/effect/landmark/start/f13/chief,
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "rnE" = (
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13{
@@ -10490,6 +11468,20 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"rIJ" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "rIR" = (
 /obj/structure/bed,
 /obj/item/bedsheet/red,
@@ -10573,6 +11565,16 @@
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"rQy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = 18
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "rRE" = (
 /obj/machinery/autolathe/ammo,
 /turf/open/floor/plasteel/f13{
@@ -10648,6 +11650,20 @@
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"rZJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "saW" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -10674,6 +11690,17 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"sbV" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "sbZ" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -10694,6 +11721,42 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/bunker)
+"sdJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"seU" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/palebush,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"sfo" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "sga" = (
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13{
@@ -10707,6 +11770,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"shw" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/plating/dirt,
+/area/f13/tribe)
 "shO" = (
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/plating/f13/inside/mountain{
@@ -10767,6 +11835,21 @@
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/cave)
+"sjF" = (
+/obj/structure/stone_tile/slab/cracked,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
+"sjQ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "skQ" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/robot_debris/down,
@@ -10816,6 +11899,19 @@
 /obj/structure/stone_tile/cracked,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"spx" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "spJ" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -10971,6 +12067,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"sAT" = (
+/obj/structure/table/wood{
+	pixel_y = -5
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "sBl" = (
 /obj/machinery/door/window/northleft,
 /obj/structure/reagent_dispensers/barrel/dangerous,
@@ -11334,6 +12436,16 @@
 /obj/item/candle/tribal_torch,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"tiP" = (
+/obj/structure/pondlily_big,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "tiR" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
@@ -11364,6 +12476,18 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"tlF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "tmY" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -11776,6 +12900,21 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"ubn" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "ubU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack,
@@ -11816,6 +12955,10 @@
 /obj/item/reagent_containers/glass/beaker/waterbottle,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"uhr" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "uiV" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/spider/stickyweb,
@@ -11923,6 +13066,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
+"unC" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "uos" = (
 /obj/structure/janitorialcart,
 /obj/item/mop,
@@ -11967,6 +13124,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"uuM" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "uuQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb,
@@ -12163,6 +13333,25 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"uLd" = (
+/obj/structure/flora/tree/jungle{
+	color = "#800080";
+	desc = "A tree that has been turned a strange colour, bark and leaves both. Though the branches seem to move oddly in the wind if you pay them specific attention, looking at this tree too long makes you start to feel ill...";
+	name = "Noqtis's Touch";
+	pixel_x = -65
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/pointybush,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "uLr" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
@@ -12257,6 +13446,12 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"uUq" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "uUE" = (
 /obj/structure/easel,
 /obj/item/paper/pamphlet/ruin/originalcontent/yelling,
@@ -12516,6 +13711,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
+"vpr" = (
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "vpw" = (
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/plasteel/f13{
@@ -12540,6 +13738,13 @@
 	icon_state = "whitebluechess"
 	},
 /area/f13/bunker)
+"vrW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "vsf" = (
 /obj/machinery/shower{
 	dir = 8
@@ -12584,6 +13789,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"vtN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "vuq" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -12721,6 +13936,12 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"vFt" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/floor/plating/dirt,
+/area/f13/underground/cave)
 "vGi" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/box,
@@ -12777,6 +13998,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"vLh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "vLm" = (
 /obj/structure/barricade/wooden/strong,
 /obj/effect/decal/cleanable/oil/slippery,
@@ -12842,6 +14069,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"vQC" = (
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = -14
+	},
+/obj/structure/fence/wooden{
+	dir = 1;
+	pixel_x = 13
+	},
+/obj/structure/fence/wooden{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/structure/decoration/rag,
+/turf/open/water,
+/area/f13/underground/cave)
 "vQS" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -13039,6 +14282,27 @@
 /obj/structure/campfire/barrel,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"whk" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "whq" = (
 /obj/structure/table/optable,
 /obj/effect/gibspawner/human,
@@ -13499,6 +14763,35 @@
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"wOA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
+"wOH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/tribe)
 "wPe" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -13563,6 +14856,18 @@
 /obj/machinery/workbench/advanced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"wSs" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "wSB" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/underground/cave)
@@ -13658,6 +14963,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
+"wZO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/underground/cave)
 "wZR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/tree/tall,
@@ -13767,6 +15078,18 @@
 /obj/effect/decal/cleanable/blood/gibs/human/core,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
+"xjU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "xkX" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 9
@@ -13891,6 +15214,10 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"xtV" = (
+/obj/item/kirbyplants,
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
 "xuc" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
@@ -13996,6 +15323,9 @@
 	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
+"xAc" = (
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 "xBO" = (
 /obj/machinery/chem_heater,
 /obj/effect/decal/cleanable/dirt,
@@ -14033,6 +15363,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
+"xFm" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "xGl" = (
 /mob/living/simple_animal/hostile/handy/assaultron/nsb,
 /turf/open/floor/plasteel/f13{
@@ -14075,6 +15417,22 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/bunker)
+"xJy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "xJE" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/outside/water,
@@ -14151,12 +15509,33 @@
 	},
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
+"xQw" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "xRz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
 	},
 /area/f13/bunker)
+"xSq" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/palebush,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/underground/cave)
 "xSr" = (
 /obj/machinery/workbench/advanced,
 /obj/effect/decal/cleanable/dirt,
@@ -14369,6 +15748,39 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"ygt" = (
+/obj/structure/necropolis_gate{
+	desc = "A massive stone gateway with a very heavy stone door.";
+	name = "village gate"
+	},
+/obj/structure/stone_tile/block/cracked,
+/obj/structure/stone_tile/surrounding_tile{
+	pixel_y = -15
+	},
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 8;
+	pixel_y = -15
+	},
+/obj/structure/stone_tile/center{
+	pixel_y = -15
+	},
+/turf/open/floor/plasteel/cult,
+/area/f13/tribe)
+"ygT" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/mob/living/simple_animal/butterfly,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/grass{
+	color = "#a7bdb0";
+	desc = "Cool moss that adds a nice fuzzy texture to everything.";
+	name = "moss patch"
+	},
+/area/f13/underground/cave)
 "yhp" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -14421,6 +15833,10 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/bunker)
+"ykG" = (
+/obj/structure/chair/wood/wings,
+/turf/open/floor/carpet/purple,
+/area/f13/tribe)
 
 (1,1,1) = {"
 heT
@@ -21775,19 +23191,19 @@ heT
 heT
 heT
 heT
+apt
+apt
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-efT
 heT
 heT
 heT
@@ -22032,14 +23448,14 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+ajB
+dpW
+ajB
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -22287,20 +23703,20 @@ heT
 heT
 heT
 heT
+apt
+apt
+apt
+ajB
+shw
+hAi
+whk
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-efT
 heT
 heT
 heT
@@ -22543,19 +23959,19 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+ajB
+cBg
+wOH
+hAi
+ajB
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -22800,20 +24216,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+ajB
+ajB
+egO
+egO
+egO
+ajB
+ajB
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -23057,20 +24473,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+jjx
+oZp
+ykG
+qmL
+pFk
+oZp
+xtV
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -23314,20 +24730,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+mzG
+oZp
+xAc
+xAc
+xAc
+oZp
+uhr
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -23571,20 +24987,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+aXg
+oZp
+oZp
+oZp
+oZp
+sAT
+nfb
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -23828,20 +25244,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+ajB
+ajB
+ajB
+mRy
+ajB
+ajB
+ajB
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -24085,20 +25501,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+ajB
+oZp
+gZt
+oZp
+oZp
+oZp
+gZt
+oZp
+ajB
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -24342,20 +25758,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+fuj
+oZp
+qmL
+xAc
+xAc
+xAc
+qmL
+oZp
+fuj
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -24599,20 +26015,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+fuj
+oZp
+qmL
+qmL
+rnb
+qmL
+qmL
+oZp
+fuj
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -24856,20 +26272,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+fuj
+oZp
+xAc
+qmL
+qmL
+qmL
+xAc
+oZp
+fuj
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -25113,20 +26529,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+fuj
+oZp
+xAc
+afj
+afj
+afj
+xAc
+oZp
+fuj
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -25370,20 +26786,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+ajB
+oBy
+nDc
+oZp
+oZp
+oZp
+nDc
+xtV
+ajB
+ajB
+apt
+apt
 heT
 heT
 heT
@@ -25627,20 +27043,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+ajB
+ajB
+ajB
+oWR
+ajB
+ajB
+ajB
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -25883,22 +27299,22 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+wOA
+rZJ
+qty
+vpr
+fVg
+cEd
+lOv
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -26139,25 +27555,25 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+sjQ
+kFZ
+vpr
+vpr
+vpr
+vpr
+vpr
+sdJ
+nBt
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -26396,26 +27812,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+mpo
+xQw
+vpr
+vpr
+vpr
+vpr
+vpr
+vpr
+vpr
+wSs
+nHI
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -26652,28 +28068,28 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+npR
+vpr
+qGU
+kPT
+jSt
+rZJ
+piU
+jag
+fTM
+vpr
+vpr
+vpr
+xSq
+uUq
+oGo
+apt
+apt
+apt
 heT
 heT
 heT
@@ -26908,29 +28324,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+vpr
+vpr
+iYz
+qHT
+aPB
+uUq
+vLh
+unC
+heZ
+vpr
+vpr
+jrq
+wSB
+wSB
+wSB
+mlg
+apt
+apt
 heT
 heT
 heT
@@ -27165,29 +28581,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+vpr
+vpr
+spx
+aPB
+jCj
+wSB
+wSB
+bpS
+uuM
+vpr
+vpr
+gIy
+wSB
+jCj
+wSB
+pEk
+apt
+apt
 heT
 heT
 heT
@@ -27422,29 +28838,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+ajB
+ajB
+ajB
+vpr
+vpr
+cqV
+lac
+wSB
+wSB
+dUV
+ygT
+bVy
+vpr
+vpr
+rQy
+gNB
+wSB
+wSB
+hYt
+apt
+apt
 heT
 heT
 heT
@@ -27679,29 +29095,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+sjF
+fHi
+ajB
+vpr
+vpr
+sbV
+sfo
+cXd
+hYt
+seU
+eso
+hBt
+pXp
+vpr
+wZO
+heS
+vQC
+wSB
+hYt
+apt
+apt
 heT
 heT
 heT
@@ -27936,29 +29352,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+cow
+qZf
+ygt
+vpr
+vpr
+feB
+vtN
+cXd
+hYt
+uLd
+eso
+hBt
+jzA
+vpr
+wZO
+heS
+vQC
+wSB
+hYt
+apt
+apt
 heT
 heT
 heT
@@ -28193,29 +29609,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+lCf
+fHi
+ajB
+vpr
+vpr
+lzl
+aPB
+wSB
+wSB
+vLh
+nCw
+nwF
+vpr
+vpr
+nET
+nAQ
+wSB
+wSB
+hYt
+apt
+apt
 heT
 heT
 heT
@@ -28450,29 +29866,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+ajB
+ajB
+ajB
+ajB
+vpr
+vpr
+nTA
+jeN
+wSB
+wSB
+wSB
+tiP
+kND
+vpr
+vpr
+vrW
+wSB
+wSB
+pJw
+jwG
+apt
+apt
 heT
 heT
 heT
@@ -28707,29 +30123,29 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+vpr
+vpr
+vpr
+gJI
+lac
+fhd
+jxO
+iSr
+bVy
+vpr
+vpr
+gLj
+wSB
+wSB
+wSB
+nYL
+apt
+apt
 heT
 heT
 heT
@@ -28964,28 +30380,28 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+hCc
+vpr
+vFt
+nvQ
+jgk
+oFW
+rIJ
+pIx
+vpr
+vpr
+vpr
+vpr
+jEA
+fhd
+mDS
+apt
+apt
 heT
 heT
 heT
@@ -29222,27 +30638,27 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+igI
+kTd
+vpr
+vpr
+vpr
+vpr
+vpr
+vpr
+vpr
+oaX
+nHI
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -29479,26 +30895,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+bVJ
+jwq
+vpr
+vpr
+vpr
+vpr
+vpr
+mMp
+paZ
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -29737,23 +31153,23 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+xjU
+oFW
+xJy
+vpr
+dhc
+ksA
+xFm
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -29994,22 +31410,22 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+ajB
+ajB
+ajB
+ajB
+mRy
+ajB
+ajB
+ajB
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -30252,21 +31668,21 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+ajB
+idl
+oZp
+oZp
+oZp
+oZp
+fpQ
+fuj
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -30509,21 +31925,21 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+ajB
+oBy
+oZp
+xAc
+kEk
+xAc
+mzw
+fuj
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -30767,20 +32183,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+jjx
+nDc
+qmL
+gxf
+xAc
+ogm
+fuj
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -31024,20 +32440,20 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+ajB
+ajB
+ajB
+egO
+egO
+egO
+ajB
+ajB
+ajB
+apt
+apt
+apt
 heT
 heT
 heT
@@ -31282,19 +32698,19 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+ajB
+nqB
+qQd
+jgS
+ajB
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -31539,19 +32955,19 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+ajB
+tlF
+ubn
+kpK
+ajB
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -31796,18 +33212,18 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+ajB
+ajB
+qYH
+ajB
+ajB
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -32054,16 +33470,16 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
@@ -32312,13 +33728,13 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+apt
+apt
+apt
+apt
+apt
+apt
+apt
 heT
 heT
 heT
