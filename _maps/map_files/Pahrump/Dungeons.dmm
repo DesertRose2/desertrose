@@ -1481,10 +1481,10 @@
 	pixel_y = 23
 	},
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	icon_state = "ladder10";
-	id = "Abandoned_Mine_Left";
-	name = "Camp"
+	id = "Noqtis'_Haven";
+	name = "Village"
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/tribe)
