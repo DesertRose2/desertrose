@@ -36,8 +36,8 @@
 	icon_state = "fireaxe0"
 	lefthand_file = 'icons/mob/inhands/weapons/axes_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/axes_righthand.dmi'
-	name = "woodaxe"
-	desc = "The axe forgets what the tree remembers."
+	name = "fireaxe"
+	desc = "Pre-war top quality steel axe head, handle probably new."
 	force = 25
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
