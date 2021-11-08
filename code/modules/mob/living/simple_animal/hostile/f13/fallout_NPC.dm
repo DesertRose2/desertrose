@@ -608,6 +608,21 @@
 	healable = 1
 	ranged = 0
 
+/mob/living/simple_animal/hostile/raider/sulphite/boss
+	name = "Sulphite Boss"
+	desc = "A raider with modified power armour and an incinerator"
+	icon_state = "boss_mob"
+	icon_living = "boss_mob"
+	ranged = 1
+	stat_attack = 1
+	robust_searching = 1
+	maxHealth = 400
+	health = 400
+	retreat_distance = 1
+	loot = list(/obj/effect/mob_spawn/human/corpse/raidersulphiteboss, /obj/item/locked_box/misc/money/all/low, /obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator)
+	projectiletype = /obj/item/projectile/incendiary/flamethrower/incinerator
+	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
+
 /mob/living/simple_animal/hostile/raider/tribal
 	icon_state = "tribal_raider"
 	icon_living = "tribal_raider"
