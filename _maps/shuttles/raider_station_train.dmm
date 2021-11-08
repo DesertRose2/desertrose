@@ -4,101 +4,102 @@
 	dir = 10
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "c" = (
 /obj/structure/barricade/train{
 	dir = 9
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "d" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
 	name = "driver's seat"
 	},
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "k" = (
 /obj/machinery/computer/shuttle{
 	name = "train console";
 	req_one_access_txt = "012990"
 	},
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "l" = (
 /obj/structure/barricade/train,
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "n" = (
 /obj/structure/chair/booth{
 	dir = 1
 	},
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "o" = (
 /obj/structure/table/booth,
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "t" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "u" = (
 /obj/structure/barricade/train{
 	dir = 5
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "w" = (
 /obj/structure/barricade/train{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "A" = (
 /obj/structure/barricade/train{
 	dir = 6
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "F" = (
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "K" = (
 /obj/structure/window/fulltile/store{
 	name = "train cabin window"
 	},
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "L" = (
 /obj/machinery/door/airlock/grunge,
 /obj/docking_port/mobile/elevator{
+	callTime = 600;
 	dwidth = 1;
 	height = 3;
-	id = "dungeon_train";
+	id = "raider_station_train";
 	name = "bunker elevator";
 	width = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "N" = (
 /obj/structure/barricade/train,
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "P" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 "U" = (
 /obj/structure/barricade/train{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
-/area/space)
+/area/shuttle/bunker_elevator)
 "Z" = (
 /obj/structure/chair/booth,
 /turf/open/floor/f13,
-/area/space)
+/area/shuttle/bunker_elevator)
 
 (1,1,1) = {"
 u

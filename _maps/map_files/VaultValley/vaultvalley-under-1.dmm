@@ -149,8 +149,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "cs" = (
-/obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/caps/twofivezero,
+/mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -183,6 +182,20 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"cN" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/singlecard{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/toy/cards/singlecard{
+	pixel_x = 6;
+	pixel_y = -4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "cV" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -290,16 +303,15 @@
 	},
 /area/f13/ncr)
 "eg" = (
-/obj/structure/chair/stool,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
+/obj/structure/chair/sofa/corp/corner{
+	dir = 4
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
 "eh" = (
-/obj/structure/chair/wood/modern{
-	dir = 1
-	},
+/obj/structure/chair/sofa/corp,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -373,10 +385,7 @@
 /turf/open/floor/f13,
 /area/f13/caves)
 "eR" = (
-/obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair"
-	},
+/obj/structure/chair/sofa/corp/left,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -469,7 +478,7 @@
 "gj" = (
 /obj/machinery/computer/shuttle{
 	name = "departure schedule";
-	possible_destinations = "dungeon_station;metro_dungeon"
+	possible_destinations = "raider_train;raider_station"
 	},
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -893,6 +902,15 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/ncr)
+"jI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "jQ" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/f13,
@@ -944,6 +962,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
+"kz" = (
+/obj/structure/chair/stool,
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "kA" = (
 /obj/structure/timeddoor,
 /turf/closed/mineral/iron,
@@ -1067,6 +1092,14 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/caves)
+"lK" = (
+/obj/structure/chair/wood/worn{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "lS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/window/fulltile/house{
@@ -1299,6 +1332,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
+"pg" = (
+/obj/structure/weightlifter,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "pj" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -1632,10 +1671,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "rc" = (
-/obj/structure/chair/wood/modern{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+/obj/item/radio/intercom{
+	pixel_y = 32
 	},
+/obj/structure/table/wood/fancy/black,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -1820,10 +1861,8 @@
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "sP" = (
-/obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/bawls{
-	pixel_x = 13
-	},
+/obj/structure/table/wood/fancy/black,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -1910,9 +1949,9 @@
 	},
 /area/f13/caves)
 "tr" = (
-/obj/structure/chair/wood/modern{
-	dir = 8
-	},
+/obj/item/clothing/mask/rat/bat,
+/obj/item/melee/baseball_bat/chaplain,
+/obj/structure/rack,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2078,8 +2117,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "vl" = (
-/obj/structure/chair/comfy/green,
-/mob/living/simple_animal/hostile/raider/sulphite,
+/obj/structure/chair/sofa/corp{
+	dir = 4
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2164,15 +2204,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "vV" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/singlecard{
-	pixel_x = 6;
-	pixel_y = -1
-	},
-/obj/item/toy/cards/singlecard{
-	pixel_x = 6;
-	pixel_y = -4
-	},
+/mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2268,17 +2300,8 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/ncr)
 "wA" = (
-/obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/bawls{
-	pixel_y = -6
-	},
-/obj/item/stack/f13Cash/caps/fivezerozero{
-	pixel_x = 6
-	},
-/obj/item/toy/cards/singlecard,
-/obj/item/toy/cards/singlecard{
-	pixel_x = 5
-	},
+/obj/structure/chair/stool/f13stool,
+/mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2380,9 +2403,8 @@
 	},
 /area/f13/tunnel)
 "xr" = (
-/obj/structure/chair/comfy{
-	dir = 1
-	},
+/obj/item/radio,
+/obj/structure/table/wood/fancy/black,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2463,11 +2485,9 @@
 	},
 /area/f13/tunnel)
 "yJ" = (
-/obj/structure/chair/wood/modern{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
 	},
-/mob/living/simple_animal/hostile/raider/ranged/legendary,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2497,6 +2517,14 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"yZ" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "ze" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -2538,8 +2566,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "zA" = (
-/obj/structure/chair/stool/f13stool,
-/mob/living/simple_animal/hostile/raider/ranged/boss,
+/mob/living/simple_animal/hostile/raider/baseball,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2685,9 +2712,14 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "AA" = (
-/obj/structure/chair/stool/f13stool,
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/raider/junker/scrapper,
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/singlecard{
+	pixel_y = 1
+	},
+/obj/item/toy/cards/singlecard{
+	pixel_x = 6;
+	pixel_y = -4
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2865,9 +2897,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "CE" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/wood/modern{
-	dir = 1
+	dir = 8;
+	icon_state = "wooden_chair_settler"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -2906,6 +2938,7 @@
 /obj/item/clothing/suit/armor/f13/raider/raidercombat,
 /obj/item/clothing/head/helmet/f13/raidercombathelmet,
 /obj/item/clothing/head/helmet/f13/raidercombathelmet,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -3099,15 +3132,10 @@
 /area/f13/tunnel)
 "ED" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/f13/mutie/metal/reinforced,
-/obj/item/clothing/suit/armor/f13/mutie/metal/reinforced,
-/obj/item/clothing/suit/armor/f13/mutie/metal/reinforced,
-/obj/item/clothing/shoes/f13/mutie/boots/dark,
-/obj/item/clothing/shoes/f13/mutie/boots/dark,
-/obj/item/clothing/shoes/f13/mutie/boots/dark,
 /obj/item/twohanded/fireaxe/bmprsword,
 /obj/item/twohanded/fireaxe/bmprsword,
 /obj/item/twohanded/fireaxe/bmprsword,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -3335,7 +3363,16 @@
 /area/f13/ncr)
 "Hi" = (
 /obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/aureus,
+/obj/item/stack/f13Cash/bawls{
+	pixel_y = -6
+	},
+/obj/item/stack/f13Cash/caps/fivezerozero{
+	pixel_x = 6
+	},
+/obj/item/toy/cards/singlecard,
+/obj/item/toy/cards/singlecard{
+	pixel_x = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3374,6 +3411,13 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"HO" = (
+/mob/living/simple_animal/hostile/raider/ranged/boss,
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "HQ" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -3623,6 +3667,14 @@
 	pixel_x = 13;
 	pixel_y = 11
 	},
+/obj/item/stack/f13Cash/aureus,
+/obj/item/stack/f13Cash/caps/twofivezero{
+	pixel_x = -7;
+	pixel_y = 11
+	},
+/obj/item/stack/f13Cash/bawls{
+	pixel_x = 13
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3781,7 +3833,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "LN" = (
-/obj/structure/chair/stool,
+/obj/structure/chair/comfy/green,
+/mob/living/simple_animal/hostile/raider/sulphite,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3792,12 +3845,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "LT" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/singlecard,
-/obj/item/toy/cards/singlecard{
-	pixel_x = 6;
-	pixel_y = -4
+/obj/structure/chair/wood/worn{
+	dir = 4
 	},
+/mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3906,7 +3957,7 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 3;
-	id = "dungeon_station";
+	id = "raider_station";
 	name = "Station";
 	width = 4
 	},
@@ -4266,8 +4317,11 @@
 /area/f13/tunnel)
 "PH" = (
 /obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/random/denarius/med{
-	pixel_x = -6;
+/obj/item/toy/cards/singlecard{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/toy/cards/singlecard{
 	pixel_y = 1
 	},
 /turf/open/floor/f13{
@@ -4299,10 +4353,9 @@
 /turf/closed/wall/f13/tunnel,
 /area/f13/caves)
 "PT" = (
-/obj/structure/table/wood/poker,
-/obj/item/stack/f13Cash/caps/twofivezero{
-	pixel_x = -7;
-	pixel_y = 11
+/obj/structure/chair/wood/normal{
+	dir = 4;
+	icon_state = "wooden_chair"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -4377,12 +4430,6 @@
 /area/f13/tunnel)
 "Qn" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/f13/mutie/metal,
-/obj/item/clothing/suit/armor/f13/mutie/metal,
-/obj/item/clothing/suit/armor/f13/mutie/metal,
-/obj/item/clothing/shoes/f13/mutie,
-/obj/item/clothing/shoes/f13/mutie,
-/obj/item/clothing/shoes/f13/mutie,
 /obj/item/gun/ballistic/rifle/automatic/hunting/trail,
 /obj/item/gun/ballistic/rifle/automatic/hunting/trail,
 /obj/item/gun/ballistic/rifle/automatic/hunting/trail,
@@ -4391,8 +4438,8 @@
 	},
 /area/f13/caves)
 "Qq" = (
-/obj/structure/chair/wood/worn{
-	dir = 4
+/obj/structure/chair/wood/modern{
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -4641,10 +4688,15 @@
 	},
 /area/f13/tunnel)
 "SV" = (
-/obj/structure/chair/wood/worn{
-	dir = 4
+/obj/structure/stacklifter,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
-/mob/living/simple_animal/hostile/raider/junker,
+/area/f13/building)
+"SW" = (
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -4792,6 +4844,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/mining)
+"Um" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Uo" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -4877,25 +4935,24 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "VK" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/singlecard{
-	pixel_x = 6;
-	pixel_y = -1
+/obj/structure/chair/wood/modern{
+	dir = 8;
+	icon_state = "wooden_chair_settler"
 	},
-/obj/item/toy/cards/singlecard{
-	pixel_y = 1
-	},
+/mob/living/simple_animal/hostile/raider/ranged/legendary,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
 "VL" = (
 /obj/docking_port/stationary{
+	area_type = /area/f13;
 	dir = 2;
 	dwidth = 1;
 	height = 3;
-	id = "junker_entrance";
+	id = "junker_bunker";
 	name = "Basement Level 1";
+	roundstart_template = /datum/map_template/shuttle/junkerbunker;
 	width = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
@@ -5004,6 +5061,17 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"WE" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/singlecard,
+/obj/item/toy/cards/singlecard{
+	pixel_x = 6;
+	pixel_y = -4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "WF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small{
@@ -5142,14 +5210,9 @@
 	},
 /area/f13/ncr)
 "Yh" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/singlecard{
-	pixel_y = 1
-	},
-/obj/item/toy/cards/singlecard{
-	pixel_x = 6;
-	pixel_y = -4
-	},
+/obj/structure/chair/stool/f13stool,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/raider/junker/scrapper,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -5288,13 +5351,6 @@
 /area/f13/ncr)
 "Zw" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/f13/mutie/poncho,
-/obj/item/clothing/suit/armor/f13/mutie/poncho,
-/obj/item/clothing/suit/armor/f13/mutie/poncho,
-/obj/item/clothing/shoes/f13/mutie/boots,
-/obj/item/clothing/shoes/f13/mutie/boots,
-/obj/item/clothing/shoes/f13/mutie/boots,
-/obj/item/picket_sign,
 /obj/item/picket_sign,
 /obj/item/picket_sign,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -41256,7 +41312,7 @@ WW
 WW
 Vq
 WW
-WW
+cs
 WW
 Gg
 WW
@@ -41264,11 +41320,11 @@ WW
 Vq
 WW
 WW
-LN
-eR
-SV
-eR
-Qq
+WW
+WW
+WW
+WW
+WW
 WW
 WW
 Vq
@@ -41513,20 +41569,20 @@ WW
 WW
 Vq
 WW
-WW
+cs
 NQ
 Vq
 WW
 WW
 Vq
 WW
-vl
-Yh
-zY
+WW
+Pe
+PT
 LT
-zY
-zY
-LN
+lK
+WW
+WW
 WW
 Vq
 kK
@@ -41778,12 +41834,12 @@ iS
 iS
 sJ
 LN
+AA
 zY
-cs
+WE
 zY
-sP
-zY
-eh
+SW
+WW
 WW
 Vq
 kK
@@ -42038,9 +42094,9 @@ Pe
 TY
 zY
 or
-zY
-Yh
 AA
+Yh
+WW
 WW
 Vq
 kK
@@ -42295,9 +42351,9 @@ WW
 WW
 Qd
 Kh
-PT
 zY
-eh
+SW
+WW
 WW
 Vq
 kK
@@ -42554,7 +42610,7 @@ zY
 RT
 Hi
 wA
-zA
+WW
 WW
 Vq
 kK
@@ -42806,12 +42862,12 @@ iS
 iS
 sJ
 KG
-TY
-cs
+zY
+zY
 PH
-zY
-zY
-CE
+cN
+jI
+WW
 WW
 Vq
 kK
@@ -43057,18 +43113,18 @@ WW
 WW
 WW
 Vq
-WW
-WW
-WW
+eg
+vl
+yJ
 Vq
 WW
-LN
-zY
-zY
+WW
+CE
+Qq
 VK
-zY
-vV
-xr
+kz
+WW
+WW
 WW
 Vq
 kK
@@ -43314,17 +43370,17 @@ WW
 WW
 WW
 Vq
-WW
-WW
+eh
+vV
 WW
 Vq
 WW
 WW
-rc
-tr
-yJ
-tr
-eg
+WW
+WW
+WW
+WW
+WW
 WW
 WW
 Vq
@@ -43571,9 +43627,9 @@ WW
 WW
 WW
 Vq
+eR
 WW
-WW
-WW
+zA
 Vq
 WW
 WW
@@ -43828,7 +43884,7 @@ WW
 WW
 WW
 Vq
-WW
+rc
 WW
 WW
 Vq
@@ -44085,17 +44141,17 @@ WW
 WW
 WW
 Vq
+sP
+xr
+zA
 WW
-WW
-WW
-Gg
 WW
 WW
 Vq
-WW
-WW
-WW
-WW
+SV
+yZ
+SV
+zA
 WW
 WW
 Vq
@@ -44342,15 +44398,15 @@ WW
 WW
 WW
 Vq
-Vq
-Vq
-Vq
-Vq
+WW
+WW
+WW
+WW
 WW
 WW
 Vq
-WW
-WW
+yZ
+zA
 WW
 WW
 WW
@@ -44603,15 +44659,15 @@ WW
 WW
 WW
 WW
-WW
+zA
 WW
 Vq
+pg
 WW
+pg
 WW
-WW
-WW
-WW
-WW
+Um
+Um
 Vq
 kK
 vH
@@ -44856,7 +44912,7 @@ WW
 WW
 WW
 Vq
-WW
+tr
 WW
 WW
 WW
@@ -44868,7 +44924,7 @@ WW
 WW
 WW
 WW
-WW
+HO
 Vq
 kK
 vH
@@ -46650,7 +46706,7 @@ Vq
 Vq
 Vq
 Vq
-WW
+Gg
 Vq
 Vq
 Vq
@@ -52715,7 +52771,7 @@ vP
 vP
 vP
 vP
-uQ
+vP
 vP
 vP
 vP

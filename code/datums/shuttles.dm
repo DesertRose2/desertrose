@@ -204,6 +204,16 @@
 	port_id = "bunker"
 	can_be_bought = FALSE
 
+/datum/map_template/shuttle/junkerbunker
+	port_id = "junker_bunker"
+	can_be_bought = FALSE
+	suffix = "elevator"
+
+/datum/map_template/shuttle/metrobunker
+	port_id = "raider_station"
+	can_be_bought = FALSE
+	suffix = "train"
+
 /datum/map_template/shuttle/northbunker
 	port_id = "northbunker"
 	can_be_bought = FALSE
