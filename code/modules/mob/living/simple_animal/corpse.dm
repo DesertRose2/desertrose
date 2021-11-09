@@ -253,6 +253,16 @@ obj/effect/mob_spawn/human/corpse/raidermelee
 	hair_style = "Bald"
 	facial_hair_style = "Shaved"
 
+/obj/effect/mob_spawn/human/corpse/raidersulphiteboss
+	name = "Sulphite Raider Boss Corpse"
+	uniform = /obj/item/clothing/under/f13/raiderharness
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/hotrod
+	shoes = /obj/item/clothing/shoes/f13/explorer
+	head = /obj/item/clothing/head/helmet/f13/power_armor/hotrod
+	mask = /obj/item/clothing/mask/gas/sechailer
+	hair_style = "Bald"
+	facial_hair_style = "Shaved"
+
 /obj/effect/mob_spawn/human/corpse/raiderboss
 	name = "Raider Boss"
 	uniform = /obj/item/clothing/under/f13/ravenharness

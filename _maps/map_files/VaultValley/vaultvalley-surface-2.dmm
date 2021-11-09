@@ -8852,6 +8852,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/followers)
+"jtv" = (
+/obj/effect/landmark/start/f13/sentinel,
+/turf/open/floor/carpet/black,
+/area/f13/brotherhood)
 "jtL" = (
 /obj/structure/fence{
 	dir = 4
@@ -15697,6 +15701,10 @@
 "qUD" = (
 /turf/open/floor/wood/f13/old/ruinedstraightsouth,
 /area/f13/building)
+"qUL" = (
+/obj/effect/landmark/start/f13/seniorpaladin,
+/turf/open/floor/carpet/royalblack,
+/area/f13/brotherhood)
 "qVq" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1"
@@ -15905,6 +15913,10 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
+"ris" = (
+/obj/effect/landmark/start/f13/paladin,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "rix" = (
 /obj/structure/debris/v1,
 /turf/open/indestructible/ground/outside/ruins{
@@ -24117,7 +24129,7 @@ sOo
 pKz
 nkY
 wKI
-uMv
+qUL
 oCl
 fFs
 sqE
@@ -24125,7 +24137,7 @@ jib
 gVX
 fFs
 uRj
-sqE
+ris
 cAD
 nkY
 iBA
@@ -25145,7 +25157,7 @@ sqE
 sqE
 nkY
 wKI
-uMv
+qUL
 oCl
 fFs
 sqE
@@ -25153,7 +25165,7 @@ sHd
 ygc
 fFs
 uRj
-sqE
+ris
 cAD
 nkY
 iBA
@@ -26694,7 +26706,7 @@ hMG
 sqE
 sqE
 nkY
-sDj
+jtv
 iES
 sDj
 nkY
@@ -45443,7 +45455,7 @@ uiQ
 mCp
 ahZ
 rnl
-pQT
+rnl
 rnl
 rnl
 mCp
