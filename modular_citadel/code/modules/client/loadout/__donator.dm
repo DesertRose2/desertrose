@@ -421,7 +421,7 @@
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
 	ckeywhitelist = list("cythisisa",
 						"asterixcodix")
-	restricted_roles = list("NCR Ranger", "Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger4570
 	name = "45-70 Gov't Service Revolver"
