@@ -2227,6 +2227,12 @@
 /obj/structure/barricade/tentclothedge,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"CJ" = (
+/obj/structure/table,
+/obj/machinery/light/broken,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "CP" = (
 /obj/structure/table/reinforced,
 /obj/item/surgical_drapes,
@@ -3765,6 +3771,14 @@
 	},
 /turf/open/floor/f13,
 /area/f13/bunker)
+"Uw" = (
+/obj/structure/table,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Uy" = (
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
@@ -4147,6 +4161,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "Zy" = (
@@ -20998,9 +21013,9 @@ ek
 EZ
 Rp
 bw
-vS
+Uw
 ek
-DA
+CJ
 IJ
 Wa
 Lj
@@ -23570,7 +23585,7 @@ IJ
 bw
 Zn
 ek
-DA
+CJ
 IJ
 Wa
 Lj
@@ -24853,9 +24868,9 @@ ek
 EZ
 Rp
 bw
-vS
+Uw
 ek
-DA
+CJ
 IJ
 Wa
 Lj
