@@ -574,10 +574,6 @@
 	faction = list("raiders")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
-	del_on_death = 1
-	speak = "Yes!"
-	speak_emote = list("rushes")
-	speak_chance = 2
 
 /obj/effect/mob_spawn/human/corpse/raider
 	name = "Raider"

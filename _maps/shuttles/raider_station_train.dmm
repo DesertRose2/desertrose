@@ -7,73 +7,38 @@
 /area/shuttle/bunker_elevator)
 "c" = (
 /obj/structure/barricade/train{
-	dir = 9
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/shuttle/bunker_elevator)
-"d" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1;
-	name = "driver's seat"
-	},
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"k" = (
-/obj/machinery/computer/shuttle{
-	name = "train console";
-	req_one_access_txt = "012990"
-	},
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"l" = (
-/obj/structure/barricade/train,
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"n" = (
-/obj/structure/chair/booth{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"o" = (
-/obj/structure/table/booth,
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"t" = (
-/obj/machinery/door/airlock/grunge,
-/turf/open/indestructible/ground/inside/subway,
-/area/shuttle/bunker_elevator)
-"u" = (
-/obj/structure/barricade/train{
 	dir = 5
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
-"w" = (
+"d" = (
 /obj/structure/barricade/train{
-	dir = 4
+	dir = 9
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
-"A" = (
-/obj/structure/barricade/train{
-	dir = 6
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/shuttle/bunker_elevator)
-"F" = (
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"K" = (
-/obj/structure/window/fulltile/store{
-	name = "train cabin window"
+"h" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowbottom";
+	name = "train cabin"
 	},
 /turf/open/floor/f13,
 /area/shuttle/bunker_elevator)
-"L" = (
+"k" = (
+/obj/structure/table/booth,
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"l" = (
+/obj/structure/chair/booth{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"r" = (
 /obj/machinery/door/airlock/grunge,
 /obj/docking_port/mobile/elevator{
 	callTime = 600;
+	dir = 4;
 	dwidth = 1;
 	height = 3;
 	id = "raider_station_train";
@@ -82,13 +47,70 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
+"t" = (
+/obj/structure/barricade/train{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/shuttle/bunker_elevator)
+"u" = (
+/obj/structure/barricade/train{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"w" = (
+/obj/structure/chair/booth{
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"A" = (
+/obj/machinery/door/airlock/grunge,
+/turf/open/indestructible/ground/inside/subway,
+/area/shuttle/bunker_elevator)
+"F" = (
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"K" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "driver's seat"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"L" = (
+/obj/machinery/computer/shuttle{
+	dir = 8;
+	name = "train controls";
+	possible_destinations = "raider_train;raider_station"
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
 "N" = (
 /obj/structure/barricade/train,
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
 "P" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowtop";
+	name = "train cabin"
+	},
+/turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"S" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/f13,
+/area/shuttle/bunker_elevator)
+"T" = (
+/obj/structure/barricade/train{
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
 "U" = (
 /obj/structure/barricade/train{
@@ -97,67 +119,89 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
 "Z" = (
-/obj/structure/chair/booth,
+/obj/structure/chair/booth{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/f13,
 /area/shuttle/bunker_elevator)
 
 (1,1,1) = {"
-u
+c
 U
-U
-U
-U
-U
-U
-U
+r
 U
 a
 "}
 (2,1,1) = {"
-K
-k
-d
-l
+t
 Z
-o
+F
 Z
-o
-n
 N
 "}
 (3,1,1) = {"
-P
+t
+k
 F
-F
-P
-F
-F
-F
-F
-F
-L
+k
+N
 "}
 (4,1,1) = {"
-K
-k
-d
+t
 l
 F
-F
-Z
-o
-n
+l
 N
 "}
 (5,1,1) = {"
-c
-w
-w
-w
-t
 t
 w
-w
-w
+F
+F
 A
+"}
+(6,1,1) = {"
+t
+k
+F
+F
+A
+"}
+(7,1,1) = {"
+t
+l
+F
+F
+N
+"}
+(8,1,1) = {"
+t
+u
+S
+u
+N
+"}
+(9,1,1) = {"
+t
+K
+F
+K
+N
+"}
+(10,1,1) = {"
+t
+L
+F
+L
+N
+"}
+(11,1,1) = {"
+d
+P
+S
+h
+T
 "}
