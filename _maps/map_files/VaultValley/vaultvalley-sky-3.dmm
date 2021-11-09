@@ -148,6 +148,16 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"cl" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "cr" = (
 /obj/structure/bonfire/prelit,
 /turf/open/floor/f13/wood,
@@ -298,6 +308,16 @@
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/carpet/red,
 /area/f13/city)
+"ea" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "housewindowbroken"
+	},
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "eg" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 9;
@@ -620,6 +640,12 @@
 /obj/item/clothing/suit/toggle/labcoat/scribecoat,
 /turf/open/floor/carpet/red,
 /area/f13/brotherhood)
+"hO" = (
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "hU" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -661,6 +687,13 @@
 	icon_state = "housebase"
 	},
 /area/f13/wasteland)
+"im" = (
+/obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/f13/armor/costumes,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "io" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -718,6 +751,16 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
+"iQ" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "iR" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -1187,7 +1230,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "nU" = (
-/turf/closed/wall/f13/store,
+/obj/structure/window/fulltile/house,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/f13/building)
 "nW" = (
 /obj/structure/filingcabinet,
@@ -1313,6 +1360,12 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"pC" = (
+/obj/structure/bookcase,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/f13/building)
 "pF" = (
@@ -1448,6 +1501,13 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/village)
+"rn" = (
+/obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "rv" = (
 /obj/structure/table/booth,
 /obj/item/toy/figure/bartender{
@@ -2405,6 +2465,12 @@
 /obj/item/clothing/head/f13/boscap,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"AQ" = (
+/obj/structure/bed/oldalt,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "AS" = (
 /obj/machinery/vending/cola/starkist,
 /turf/open/floor/f13{
@@ -2570,6 +2636,20 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/city)
+"CO" = (
+/obj/structure/bed/mattress,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
+"CY" = (
+/obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "CZ" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -2878,6 +2958,18 @@
 /obj/machinery/workbench,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"FV" = (
+/mob/living/simple_animal/hostile/raider,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
+"FW" = (
+/obj/machinery/door/unpowered/wooddoor,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Ge" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/inside/mountain,
@@ -3477,6 +3569,15 @@
 /obj/structure/toilet,
 /turf/open/floor/plasteel/red,
 /area/f13/building)
+"Nj" = (
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Nl" = (
 /obj/structure/fence/handrail_corner{
 	dir = 8;
@@ -3688,6 +3789,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"OZ" = (
+/obj/structure/bed/old,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Pb" = (
 /obj/structure/table/wood/fancy/purple,
 /turf/open/floor/f13/wood,
@@ -3706,6 +3813,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"Pn" = (
+/obj/structure/window/fulltile/house,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Po" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowright"
@@ -3869,6 +3982,13 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
+"QV" = (
+/obj/machinery/door/unpowered/wooddoor,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "QW" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/f13{
@@ -3959,6 +4079,12 @@
 "Rx" = (
 /turf/open/floor/plating/f13/outside/roof/red,
 /area/f13/wasteland)
+"RA" = (
+/obj/structure/dresser,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "RD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -4355,6 +4481,13 @@
 /obj/structure/decoration/rag,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"WG" = (
+/obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/f13/armor/clothes,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "WH" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/desert,
@@ -17906,15 +18039,15 @@ ls
 ls
 ls
 ls
+RF
+RF
 nU
-nU
-nU
-nU
-nU
-nU
-nU
-nU
-nU
+ea
+RF
+RF
+RF
+RF
+RF
 ls
 ls
 ls
@@ -18163,15 +18296,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+OZ
 wY
 wY
-wY
-wY
-nU
+RA
+RF
 dx
 wY
-nU
+RF
 ls
 ls
 ls
@@ -18420,15 +18553,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+WG
 wY
+iQ
 wY
-wY
-wY
-nU
+RF
 dx
 wY
-nU
+RF
 ls
 ls
 ls
@@ -18677,15 +18810,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+RF
+RF
+RF
+FW
+RF
+RF
 wY
-wY
-wY
-wY
-nU
-nU
-wY
-nU
+RF
 ls
 ls
 ls
@@ -18934,15 +19067,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+im
+cl
+RF
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -19192,14 +19325,14 @@ ls
 ls
 ls
 nU
+hO
+wY
+RF
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -19451,12 +19584,12 @@ ls
 nU
 wY
 wY
+FW
 wY
 wY
 wY
 wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -19705,15 +19838,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+OZ
+RA
+RF
 wY
 wY
+hO
 wY
-wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -19962,15 +20095,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+RF
+RF
+RF
 wY
 wY
+hO
 wY
-wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -20219,15 +20352,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+rn
+wY
+RF
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -20476,15 +20609,15 @@ ls
 ls
 ls
 ls
-nU
+ea
+hO
+wY
+RF
+wY
+hO
 wY
 wY
-wY
-wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -20733,15 +20866,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+Nj
+wY
+FW
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -20990,15 +21123,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+OZ
+RA
+RF
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -21247,15 +21380,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+RF
+RF
+RF
 wY
 wY
 wY
 wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -21504,15 +21637,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+CO
+cl
+RF
 wY
 wY
+hO
 wY
-wY
-wY
-wY
-wY
-nU
+RF
 ls
 ls
 ls
@@ -21761,15 +21894,15 @@ ls
 ls
 ls
 ls
-nU
+ea
+RA
+FV
+RF
 wY
 wY
 wY
-wY
-wY
-wY
-wY
-nU
+pC
+RF
 ls
 ls
 ls
@@ -22018,15 +22151,15 @@ ls
 ls
 ls
 ls
-nU
+Pn
+FV
+wY
+QV
 wY
 wY
 wY
-wY
-wY
-wY
-wY
-nU
+pC
+RF
 ls
 ls
 ls
@@ -22275,15 +22408,15 @@ ls
 ls
 ls
 ls
-nU
+RF
+AQ
+CY
+RF
 wY
 wY
 wY
-wY
-wY
-wY
-wY
-nU
+pC
+RF
 ls
 ls
 ls
@@ -22532,15 +22665,15 @@ ls
 ls
 ls
 ls
+RF
+RF
+RF
+RF
+ea
+ea
 nU
-nU
-nU
-nU
-nU
-nU
-nU
-nU
-nU
+RF
+RF
 ls
 ls
 ls
@@ -34579,12 +34712,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -34836,12 +34969,12 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -35093,15 +35226,15 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -35346,19 +35479,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -35603,19 +35736,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -35860,19 +35993,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -36117,19 +36250,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -36374,19 +36507,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -36631,19 +36764,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
@@ -36888,19 +37021,19 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
+Rx
 ls
 ls
 ls
