@@ -5,6 +5,13 @@
 	icon_state = "mariarmor"
 	item_state = "mariarmor"
 
+//Custom item - Deathslayer /
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/deth
+	name = "modified midwestern power armor"
+	desc = "(VIII) A set of custom-tooled power armor belonging to the Midwestern Brotherhood of Steel. It has been repainted in the local chapter’s colors. The armor appears to be very well taken care of, despite how isolated it is from its home."
+	icon_state = "mariarmor"
+	item_state = "mariarmor"
+
 //Custom item - svenja / John Thaxton
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
 	name = "modified patrol armor"
@@ -104,7 +111,7 @@
 	icon_state = "lt_pc"
 	item_state = "lt_pc"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	
+
 //Custom item - Lando / Griffith 'Grif' Clydesdale
 /obj/item/clothing/suit/armor/f13/trailranger/clyde
 	name = "Trail Ranger Poncho"
