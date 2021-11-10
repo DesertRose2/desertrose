@@ -248,3 +248,42 @@
 							"NCR Rear Echelon",
 							"NCR Recruit"
 						)
+
+/datum/gear/head/ncr_flapcap
+	name = "NCR field cap"
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
+	path = /obj/item/clothing/head/f13/ncr_flapcap
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Commanding Officer",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
+						)
+
+/datum/gear/head/ncr_slouch
+	name = "NCR slouch hat"
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
+	path = /obj/item/clothing/head/f13/ncr_slouch
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Commanding Officer",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit",
+							"NCR Veteran Ranger",
+							"NCR Ranger Sergeant",
+							"NCR Ranger"
+						)
