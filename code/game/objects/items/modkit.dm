@@ -272,6 +272,16 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/mantle)
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/shi
 
+/obj/item/modkit/montanahelmet
+	name = "Reclaimed Ranger Sergeant Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/f13/ranger/sergeant)
+	result_item = /obj/item/clothing/head/f13/ranger/montana
+
+/obj/item/modkit/montanascarf
+	name = "Worn scout scarf modkit"
+	target_items = list(/obj/item/clothing/mask/gas/sechailer)
+	result_item = /obj/item/clothing/mask/gas/montana
+
 //Crusader Pistol Modkits
 
 /obj/item/modkit/crusader_10mm

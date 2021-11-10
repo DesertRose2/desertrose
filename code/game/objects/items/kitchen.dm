@@ -177,7 +177,7 @@
 /obj/item/kitchen/knife/bowie
 	name = "bowie knife"
 	icon_state = "knife_bowie"
-	item_state = "knife"
+	item_state = "knife_bowie"
 	desc = "A large clip point fighting knife."
 	force = 33
 	throwforce = 25
@@ -186,7 +186,7 @@
 /obj/item/kitchen/knife/trench
 	name = "trench knife"
 	icon_state = "knife_trench"
-	item_state = "knife"
+	item_state = "knife_trench"
 	desc = "This blade is designed for brutal close quarters combat."
 	force = 37
 	throwforce = 25
@@ -195,9 +195,7 @@
 /obj/item/kitchen/knife/combat/bone
 	name = "bone dagger"
 	item_state = "bone_dagger"
-	icon_state = "bone_dagger"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	icon_state = "knife_bone"
 	desc = "A sharpened bone. The bare minimum in survival."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
 	force = 20
@@ -289,7 +287,7 @@
 	name = "ritual dagger"
 	desc = "An ancient blade used to carry out the spiritual rituals of the Wayfarer people."
 	icon_state = "ritualdagger"
-	item_state = "crysknife"
+	item_state = "knife_ritual"
 	force = 25
 	throwforce = 20
 	armour_penetration = 0.2
