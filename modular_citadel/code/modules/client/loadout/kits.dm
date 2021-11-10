@@ -437,3 +437,14 @@
 	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
 	new /obj/item/modkit/shicoat(src)
 	new /obj/item/clothing/shoes/f13/military/shi(src)
+	
+//Montana - Pisshole
+/obj/item/storage/box/large/custom_kit/montana/PopulateContents()
+	new /obj/item/modkit/montanahelmet(src)
+	new /obj/item/modkit/montanascarf(src)
+	new /obj/item/clothing/glasses/sunglasses/big(src)
+	new /obj/item/storage/belt/military/alt(src)
+	
+//Katie Leon - tybug0rz
+/obj/item/storage/box/large/custom_kit/katieleon/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/battlecoat(src)
