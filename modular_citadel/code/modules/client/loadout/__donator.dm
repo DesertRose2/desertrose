@@ -451,7 +451,8 @@
 						"cythisia",
 						"rangerbust",
 						"kirshbia",
-						"jackmcintyre")
+						"jackmcintyre",
+						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
