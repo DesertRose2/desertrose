@@ -4214,20 +4214,30 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "brS" = (
+/obj/structure/table,
+/obj/structure/window/spawner,
 /obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+	color = "000000"
 	},
-/obj/structure/table/wood,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
 	},
-/obj/item/storage/box/beakers/variety,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
+	icon_state = "bluedirtychess2"
 	},
-/area/f13/legion)
+/area/f13/ncr)
 "bsb" = (
 /obj/structure/simple_door/metal/iron,
 /turf/open/floor/f13/wood,
@@ -27194,6 +27204,15 @@
 "jGV" = (
 /obj/structure/table,
 /obj/item/kitchen/knife/butcher,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -29519,6 +29538,21 @@
 "kvT" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/bowls,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
 /turf/open/floor/wood/f13/old,
 /area/f13/tribe)
 "kwe" = (
@@ -32256,6 +32290,7 @@
 /obj/item/reagent_containers/glass/beaker/large/styptic,
 /obj/item/reagent_containers/glass/beaker/large/styptic,
 /obj/machinery/light,
+/obj/item/reagent_containers/glass/beaker/large/styptic,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -34472,7 +34507,21 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/reagent_containers/glass/beaker/large/styptic,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -43673,6 +43722,21 @@
 /obj/structure/destructible/tribal_torch/wall/lit,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -61309,6 +61373,15 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
+"vQe" = (
+/obj/structure/rack,
+/obj/item/restraints/legcuffs/bola,
+/obj/item/restraints/legcuffs/bola,
+/obj/item/restraints/legcuffs/bola,
+/obj/item/restraints/legcuffs/bola,
+/obj/item/restraints/legcuffs/bola,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/legion)
 "vQj" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -66828,6 +66901,35 @@
 /obj/structure/closet/crate/wicker,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"xLt" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/legion)
 "xLw" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -75386,7 +75488,7 @@ bnt
 thW
 drU
 qaB
-bpM
+brS
 rlr
 rlr
 rlr
@@ -119799,7 +119901,7 @@ pWz
 vny
 vny
 vny
-brS
+vny
 pWz
 bjt
 sza
@@ -120827,7 +120929,7 @@ xkK
 lTX
 ozY
 ozY
-vny
+xLt
 xkK
 ejJ
 sWQ
@@ -129592,7 +129694,7 @@ mef
 haw
 fam
 haw
-anG
+vQe
 pWz
 ktB
 "}
