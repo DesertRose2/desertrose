@@ -384,6 +384,11 @@
 /obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
 	new /obj/item/clothing/head/beret/mets(src)
 
+//Chyou Schultz - Deathslayer2481
+/obj/item/storage/box/large/custom_kit/deth/PopulateContents()
+	new /obj/item/modkit/deth(src)
+	new /obj/item/modkit/dethelm(src)
+
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_scout_old(src)
