@@ -113,6 +113,7 @@
 	name = "Maria"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with pearl grips and a polished nickel finish. The firing mechanism has been upgraded, so for anyone on the receiving end, it must seem like an eighteen-karat run of bad luck."
 	icon_state = "maria"
+	item_state = "pistolchrome"
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 0
 	extra_damage = 8
@@ -214,6 +215,7 @@
 	name = "M1911"
 	desc = "A classic .45 handgun with a small magazine capacity."
 	icon_state = "m1911"
+	item_state = "pistolchrome"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
 	always_reskinnable = TRUE

@@ -38,6 +38,7 @@
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Heavy Trooper",
+							"NCR Military Police",
 							"NCR Rear Echelon",
 							"NCR Recruit",
 							"NCR Off-Duty"
@@ -84,6 +85,7 @@
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Heavy Trooper",
+							"NCR Military Police",
 							"NCR Rear Echelon",
 							"NCR Recruit",
 							"NCR Off-Duty"
@@ -117,6 +119,22 @@
 	path = /obj/item/clothing/under/f13/mutieshorts
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_UNIFORM
 
+/datum/gear/supermutant/uniform/suit
+	name = "Suit"
+	path = /obj/item/clothing/under/suit/mutie
+
+/datum/gear/supermutant/uniform/suit/purple
+	name = "Purple Suit"
+	path = /obj/item/clothing/under/suit/mutie/purple
+
+/datum/gear/supermutant/uniform/suit/pinstripe
+	name = "Pinstripe Purple Suit"
+	path = /obj/item/clothing/under/suit/mutie/purple/pinstripe
+
+/datum/gear/supermutant/uniform/suit/burgundy
+	name = "Burgundy Suit"
+	path = /obj/item/clothing/under/suit/mutie/burgundy
+
 /datum/gear/supermutant/uniform/santa
 	name = "Santa Suit"
 	path = /obj/item/clothing/under/f13/mutiesanta
@@ -137,6 +155,7 @@
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
+							"NCR Military Police",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Heavy Trooper",
