@@ -5,7 +5,7 @@
 	icon_state = "mariarmor"
 	item_state = "mariarmor"
 
-//Custom item - Deathslayer /
+//Custom item - Deathslayer2481 / Chyou Schultz
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/deth
 	name = "modified midwestern power armor"
 	desc = "(VIII) A set of custom-tooled power armor belonging to the Midwestern Brotherhood of Steel. It has been repainted in the local chapter’s colors. The armor appears to be very well taken care of, despite how isolated it is from its home."

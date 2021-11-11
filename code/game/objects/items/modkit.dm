@@ -272,6 +272,18 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/mantle)
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/shi
 
+/obj/item/modkit/deth
+	name = "Midwestern BOS Modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+						/obj/item/clothing/head/helmet/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/suit/armor/f13/power_armor/t45d/deth
+
+/obj/item/modkit/dethelm
+	name = "Midwestern BOS Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+						/obj/item/clothing/head/helmet/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t45d/deth
+
 //Crusader Pistol Modkits
 
 /obj/item/modkit/crusader_10mm
