@@ -5014,6 +5014,17 @@
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"dJs" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/landmark/start/f13/explorer,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "dJw" = (
 /obj/structure/showcase/horrific_experiment{
 	icon_state = "pod_0"
@@ -6567,6 +6578,18 @@
 	},
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/operations)
+"eEO" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/fakelattice,
+/obj/effect/landmark/start/f13/libritor,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	color = "#645546";
+	footstep = "plating";
+	icon_state = "darkrusty"
+	},
+/area/f13/legion)
 "eEY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/corner,
@@ -11106,6 +11129,17 @@
 	color = "#a9a1a1";
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
+	},
+/area/f13/legion)
+"hJM" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/landmark/start/f13/libritor,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
 	},
 /area/f13/legion)
 "hJR" = (
@@ -18409,6 +18443,18 @@
 	icon_state = "neutraldirty"
 	},
 /area/f13/tunnel)
+"mQJ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/fakelattice,
+/obj/effect/landmark/start/f13/explorer,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	color = "#645546";
+	footstep = "plating";
+	icon_state = "darkrusty"
+	},
+/area/f13/legion)
 "mQV" = (
 /obj/structure/chair/left{
 	dir = 4
@@ -34168,6 +34214,21 @@
 /obj/item/storage/box/gloves,
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/medical)
@@ -97632,10 +97693,10 @@ uoO
 mlv
 uWI
 fyv
-qtR
-qtR
-qBC
-qBC
+eEO
+mQJ
+dJs
+dJs
 evO
 qtR
 qtR
@@ -98403,10 +98464,10 @@ uoO
 mlv
 uWI
 qBC
-qBC
-qBC
-qBC
-qBC
+hJM
+hJM
+hJM
+hJM
 mlv
 qBC
 qtR
@@ -98917,10 +98978,10 @@ qBC
 kBS
 qBC
 qtR
-qtR
-qBC
-qBC
-qBC
+eEO
+dJs
+dJs
+dJs
 plG
 qBC
 plG
