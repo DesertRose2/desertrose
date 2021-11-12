@@ -59,12 +59,6 @@
 	},
 /turf/open/floor/f13,
 /area/shuttle/bunker_elevator)
-"w" = (
-/obj/structure/chair/booth{
-	dir = 4
-	},
-/turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
 "A" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/indestructible/ground/inside/subway,
@@ -157,25 +151,25 @@ l
 N
 "}
 (5,1,1) = {"
-t
-w
+A
+F
 F
 F
 A
 "}
 (6,1,1) = {"
 t
-k
 F
-F
-A
-"}
-(7,1,1) = {"
-t
-l
 F
 F
 N
+"}
+(7,1,1) = {"
+A
+F
+F
+F
+A
 "}
 (8,1,1) = {"
 t
