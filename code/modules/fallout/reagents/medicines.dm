@@ -183,7 +183,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	description = "Restores limb condition and heals rapidly."
 	color = "#C8A5DC"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 21
+	overdose_threshold = 30
 	heal_factor = -2
 	heal_factor_perk = -4
 
