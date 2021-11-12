@@ -384,6 +384,11 @@
 /obj/item/storage/box/large/custom_kit/hazard/PopulateContents()
 	new /obj/item/clothing/head/beret/mets(src)
 
+//Chyou Schultz - Deathslayer2481
+/obj/item/storage/box/large/custom_kit/deth/PopulateContents()
+	new /obj/item/modkit/deth(src)
+	new /obj/item/modkit/dethelm(src)
+
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr_scout_old(src)
@@ -437,3 +442,14 @@
 	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
 	new /obj/item/modkit/shicoat(src)
 	new /obj/item/clothing/shoes/f13/military/shi(src)
+	
+//Montana - Pisshole
+/obj/item/storage/box/large/custom_kit/montana/PopulateContents()
+	new /obj/item/modkit/montanahelmet(src)
+	new /obj/item/modkit/montanascarf(src)
+	new /obj/item/clothing/glasses/sunglasses/big(src)
+	new /obj/item/storage/belt/military/alt(src)
+	
+//Katie Leon - tybug0rz
+/obj/item/storage/box/large/custom_kit/katieleon/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/battlecoat(src)
