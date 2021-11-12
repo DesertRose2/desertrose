@@ -3345,7 +3345,7 @@
 /obj/structure/fluff/rails,
 /obj/docking_port/stationary{
 	dir = 4;
-	id = "raider_station";
+	id = "raider_metro";
 	name = "Station";
 	roundstart_template = /datum/map_template/shuttle/metrobunker
 	},
