@@ -437,7 +437,7 @@
 	icon_state = "dethelm"
 	item_state = "dethelm"
 
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/mari/update_icon_state()
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/deth/update_icon_state()
 	icon_state = "dethelm[on]"
 	item_state = "dethelm[on]"
 
