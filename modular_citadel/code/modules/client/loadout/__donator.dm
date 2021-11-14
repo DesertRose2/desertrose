@@ -415,12 +415,12 @@
 	name = "Daiyu Liu's belongings"
 	path = /obj/item/storage/box/large/custom_kit/shi
 	ckeywhitelist = list("muhsollini")
-	
+
 /datum/gear/donator/kits/montana
 	name = "Montana's belongings"
 	path = /obj/item/storage/box/large/custom_kit/montana
 	ckeywhitelist = list("pisshole")
-	
+
 /datum/gear/donator/kits/katieleon
 	name = "Katie Leon's belongings"
 	path = /obj/item/storage/box/large/custom_kit/katieleon
@@ -651,9 +651,10 @@
 	ckeywhitelist = list("gurking",
 						"totallyinnocent",
 						"thegreatcoward",
-						"usotsukihime")
+						"usotsukihime",
+						"asterixcodix")
 	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
-	
+
 /datum/gear/donator/ncrasgtpins
 	name = "NCR Sgt Pins"
 	slot = SLOT_IN_BACKPACK

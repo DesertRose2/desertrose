@@ -3345,9 +3345,10 @@
 /obj/structure/fluff/rails,
 /obj/docking_port/stationary{
 	dir = 4;
-	id = "raider_metro";
+	id = "raider_station";
 	name = "Station";
-	roundstart_template = /datum/map_template/shuttle/metrobunker
+	roundstart_template = /datum/map_template/shuttle/metrobunker;
+	width = 11
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
