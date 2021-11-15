@@ -9163,16 +9163,6 @@
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
-"dpD" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "clinicbackdoor";
-	name = "Clinic shutters"
-	},
-/obj/machinery/door/airlock/public/glass{
-	req_access_txt = "124"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
 "dpG" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/box,
@@ -11269,11 +11259,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 9
 	},
-/area/f13/followers)
-"ehV" = (
-/obj/structure/window/fulltile,
-/obj/structure/grille,
-/turf/open/floor/plasteel/dark,
 /area/f13/followers)
 "eip" = (
 /obj/structure/closet/cabinet,
@@ -15907,12 +15892,13 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/building)
 "fOe" = (
-/obj/machinery/door/airlock/public/glass{
-	req_access_txt = "124"
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "clinicbackdoor";
 	name = "Clinic shutters"
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "clinic";
+	req_access_txt = "124"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/followers)
@@ -25774,6 +25760,7 @@
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/storage/box/syringes,
 /obj/item/reagent_containers/spray/cleaner,
+/obj/item/storage/box/pillbottles,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -35036,7 +35023,8 @@
 "muF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	dir = 4;
+	color = "#f7e8e1";
+	dir = 8;
 	icon_state = "rampdowntop"
 	},
 /area/f13/followers)
@@ -36511,6 +36499,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/machinery/defibrillator_mount/loaded,
 /turf/closed/wall/f13/supermart,
 /area/f13/followers)
 "mVG" = (
@@ -46597,9 +46586,7 @@
 	},
 /area/f13/city)
 "qGx" = (
-/obj/machinery/door/airlock/public/glass{
-	req_access_txt = "124"
-	},
+/obj/machinery/door/airlock/public/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -48529,8 +48516,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	dir = 1;
-	icon_state = "rampdowntop"
+	icon_state = "stagestairs"
 	},
 /area/f13/followers)
 "rwv" = (
@@ -48717,8 +48703,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	dir = 1;
-	icon_state = "rampdowntop"
+	icon_state = "stagestairs"
 	},
 /area/f13/followers)
 "rzq" = (
@@ -62841,8 +62826,7 @@
 "wte" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	dir = 1;
-	icon_state = "rampdowntop"
+	icon_state = "stagestairs"
 	},
 /area/f13/followers)
 "wti" = (
@@ -62972,9 +62956,7 @@
 /area/f13/village)
 "wvz" = (
 /obj/structure/table,
-/obj/item/flashlight{
-	icon_state = "seclite"
-	},
+/obj/item/flashlight,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plasteel/f13/vault_floor/purple/side,
 /area/f13/followers)
@@ -70265,7 +70247,7 @@ vDd
 vDd
 vDd
 vDd
-ehV
+vDd
 vDd
 vDd
 wmg
@@ -71798,7 +71780,7 @@ vDd
 vDd
 vDd
 fOe
-dpD
+fOe
 vDd
 nJM
 qcT
