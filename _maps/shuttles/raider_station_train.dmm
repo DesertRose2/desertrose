@@ -42,7 +42,7 @@
 	dwidth = 1;
 	height = 3;
 	id = "raider_station_train";
-	name = "bunker elevator";
+	name = "raider train";
 	width = 4
 	},
 /turf/open/indestructible/ground/inside/subway,

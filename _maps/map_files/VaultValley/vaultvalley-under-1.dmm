@@ -2399,7 +2399,8 @@
 /obj/docking_port/stationary{
 	dir = 4;
 	id = "raider_subway";
-	name = "Station"
+	name = "Station";
+	width = 11
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)

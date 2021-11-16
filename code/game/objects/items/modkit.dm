@@ -272,6 +272,28 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/ncrarmor/mantle)
 	result_item = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/shi
 
+/obj/item/modkit/deth
+	name = "Midwestern BOS Modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/power_armor/t45d,
+						/obj/item/clothing/suit/armor/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/suit/armor/f13/power_armor/t45d/deth
+
+/obj/item/modkit/dethelm
+	name = "Midwestern BOS Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+						/obj/item/clothing/head/helmet/f13/power_armor/t51b)
+	result_item = /obj/item/clothing/head/helmet/f13/power_armor/t45d/deth
+
+/obj/item/modkit/montanahelmet
+	name = "Reclaimed Ranger Sergeant Helmet Modkit"
+	target_items = list(/obj/item/clothing/head/f13/ranger/sergeant)
+	result_item = /obj/item/clothing/head/f13/ranger/montana
+
+/obj/item/modkit/montanascarf
+	name = "Worn scout scarf modkit"
+	target_items = list(/obj/item/clothing/mask/gas/sechailer)
+	result_item = /obj/item/clothing/mask/gas/montana
+
 //Crusader Pistol Modkits
 
 /obj/item/modkit/crusader_10mm
