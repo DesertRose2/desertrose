@@ -193,6 +193,18 @@
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
+/obj/item/clothing/suit/armor/f13/combat/khan
+	name = "khanbat armor"
+	desc = "(V) An old set of combat armor, repainted in the blue color of the Khans."
+	icon_state = "combat_armor_khan"
+	item_state = "combat_armor_khan"
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/khan
+	name = "reinforced khanbat armor"
+	desc = "(VI) An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
+	icon_state = "combat_armor_khan_mk2"
+	item_state = "combat_armor_khan_mk2"
+
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
@@ -654,6 +666,22 @@
 	icon_state = "roadie_battlecoat"
 	item_state = "roadie_battlecoat"
 
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast
+	name = "\improper Roadie's light battlecoat"
+	desc = "(III) A padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
+	icon_state = "roadie_battlecoat"
+	item_state = "roadie_battlecoat"
+	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	slowdown = -0.10
+
+/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
 	desc = "(III) A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future. This one's colors have faded somewhat."
@@ -692,8 +720,17 @@
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
 	blood_overlay_type = "armor"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	always_reskinnable = TRUE
+	unique_reskin = list("Old School" = "bonearmor",
+						"New School" = "bonearmoralt",
+						"Alternative New" = "hbonearmor"
+						)
+
+/obj/item/clothing/suit/armor/bone/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
 /obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced
@@ -1001,6 +1038,12 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
 	icon_state = "drive_jacket"
 	item_state = "drive_jacket"
+
+/obj/item/clothing/suit/toggle/labcoat/f13/wanderer/croppeddenim
+	name = "cropped denim jacket"
+	desc = "A denim jacket. Cropped, for your pleasure."
+	icon_state = "croppeddenim"
+	item_state = "croppeddenim"
 
 /obj/item/clothing/suit/armor/f13/power_armor/legion
 	name = "salvaged Legion power armor"

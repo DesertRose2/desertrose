@@ -195,9 +195,24 @@
 	port_id = "bos"
 	can_be_bought = FALSE
 
+/datum/map_template/shuttle/entrance_elevator
+	suffix = "elevator"
+	name = "cargo lift elevator"
+	port_id = "entrance"
+
 /datum/map_template/shuttle/bunker
 	port_id = "bunker"
 	can_be_bought = FALSE
+
+/datum/map_template/shuttle/junkerbunker
+	port_id = "junker_bunker"
+	can_be_bought = FALSE
+	suffix = "elevator"
+
+/datum/map_template/shuttle/metrobunker
+	port_id = "raider_station"
+	can_be_bought = FALSE
+	suffix = "train"
 
 /datum/map_template/shuttle/northbunker
 	port_id = "northbunker"

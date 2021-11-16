@@ -41,16 +41,16 @@
 
 /obj/item/projectile/bullet/shrapnel //Frag
 	name = "flying shrapnel shard"
-	damage = 14
+	damage = 20
 	range = 20
-	armour_penetration = 0.3
+	armour_penetration = 0.5
 	dismemberment = 5
-	ricochets_max = 2
+	ricochets_max = 3
 	ricochet_chance = 70
 	shrapnel_type = /obj/item/shrapnel
 	ricochet_incidence_leeway = 60
 	sharpness = SHARP_EDGED
-	wound_bonus = 40
+	wound_bonus = 60
 
 /obj/item/projectile/bullet/shrapnel/nail //Pipebomb
 	name = "flying nail"
@@ -63,7 +63,7 @@
 	shrapnel_type = /obj/item/shrapnel/nail
 	ricochet_incidence_leeway = 20
 	sharpness = SHARP_EDGED
-	wound_bonus = 60
+	wound_bonus = 80
 
 /obj/item/projectile/bullet/shrapnel/mega
 	name = "flying shrapnel hunk"
@@ -77,7 +77,7 @@
 /obj/item/projectile/bullet/pellet/stingball //Stinger
 	name = "stingball pellet"
 	damage = 3
-	stamina = 15
+	stamina = 30
 	ricochets_max = 4
 	ricochet_chance = 66
 	ricochet_decay_chance = 1

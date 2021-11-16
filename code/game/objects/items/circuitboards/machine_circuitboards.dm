@@ -259,8 +259,8 @@
 		/obj/machinery/vending/games = "\improper Good Clean Fun",
 		/obj/machinery/vending/autodrobe = "AutoDrobe",
 		/obj/machinery/vending/assist = "\improper Vendomat",
-		/obj/machinery/vending/engivend = "\improper Engi-Vend",
-		/obj/machinery/vending/tool = "\improper YouTool",
+		/obj/machinery/vending/engivend = "\improper Dent & Sons Construction Vendor",
+		/obj/machinery/vending/tool = "\improper Acme Vendor",
 		/obj/machinery/vending/sustenance = "\improper Sustenance Vendor",
 		/obj/machinery/vending/dinnerware = "\improper Plasteel Chef's Dinnerware Vendor",
 		/obj/machinery/vending/cart = "\improper PTech",
@@ -284,8 +284,8 @@
 		/obj/machinery/vending/wardrobe/gene_wardrobe = "GeneDrobe",
 		/obj/machinery/vending/wardrobe/viro_wardrobe = "ViroDrobe",
 		/obj/machinery/vending/clothing = "ClothesMate",
-		/obj/machinery/vending/medical = "NanoMed Plus",
-		/obj/machinery/vending/wallmed = "NanoMed",
+		/obj/machinery/vending/medical = "Arktos Pharma Company Deluxe Vendor",
+		/obj/machinery/vending/wallmed = "Arktos Pharma Company Vendor",
 		/obj/machinery/vending/custom = "Custom Vendor")
 
 /obj/item/circuitboard/machine/vendor/attackby(obj/item/I, mob/user, params)
@@ -318,7 +318,7 @@
 		/obj/item/stock_parts/capacitor = 5)
 
 /obj/item/circuitboard/machine/mechfab
-	name = "Exosuit Fabricator (Machine Board)"
+	name = "Robot Workbench (Machine Board)"
 	build_path = /obj/machinery/mecha_part_fabricator
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 2,

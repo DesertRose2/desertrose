@@ -87,10 +87,7 @@
 	name = "Tracking Implants Crate"
 	desc = "Contains four tracking implants and three tracking speedloaders of tracing .38 ammo. Requires Armory access to open."
 	cost = 1100
-	contains = list(/obj/item/storage/box/trackimp,
-					/obj/item/ammo_box/c38/trac,
-					/obj/item/ammo_box/c38/trac,
-					/obj/item/ammo_box/c38/trac)
+	contains = list(/obj/item/storage/box/trackimp)
 	crate_name = "tracking implant crate"
 
 /datum/supply_pack/security/armory/fire
@@ -195,7 +192,7 @@
 					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/gloves/tackler/combat/insulated)
 	crate_name = "swat crate"
-
+/*
 /datum/supply_pack/security/armory/wt550
 	name = "WT-550 Semi-Auto Rifle Crate"
 	desc = "Contains two high-powered, semiautomatic rifles chambered in 4.6x30mm. Requires Armory access to open."
@@ -229,4 +226,4 @@
 	crate_name = "hellgun crate"
 	desc = "Contains one hellgun, an old pattern of laser gun infamous for its ability to horribly disfigure targets with burns. Technically violates the Geneva Convention when used on humanoids."
 	cost = 1500
-	contains = list(/obj/item/gun/energy/laser/hellgun)
+	contains = list(/obj/item/gun/energy/laser/hellgun)*/

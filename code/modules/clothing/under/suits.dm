@@ -132,3 +132,24 @@
 	icon_state = "greyturtle"
 	item_state = "greyturtle"
 	can_adjust = FALSE
+
+/obj/item/clothing/under/suit/mutie
+	name = "oversized suit"
+	desc = "A decidedly oversized suit, one fit for a big green bastard."
+	icon_state = "mutie_suit"
+	item_state = "mutie_suit"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/suit/mutie/burgundy
+	icon_state = "mutie_burgundy_suit"
+	item_state = "mutie_burgundy_suit"
+
+/obj/item/clothing/under/suit/mutie/purple
+	icon_state = "mutie_purple_suit"
+	item_state = "mutie_purple_suit"
+
+/obj/item/clothing/under/suit/mutie/purple/pinstripe
+	desc = "A decidedly oversized suit, one fit for a big green bastard. This one has a tag that says 'Made in Texas'."
+	icon_state = "mutie_purple_suit"
+	item_state = "mutie_purple_suit"
+	can_adjust = TRUE

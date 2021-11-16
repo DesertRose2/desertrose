@@ -430,6 +430,17 @@
 	icon_state = "marihelm[on]"
 	item_state = "marihelm[on]"
 
+//Custom item - Deathslayer / Whatever Paladin - Same issue, PA helmets won't work in their own folder for whatever reason.
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/deth
+	name = "modified midwestern power helmet"
+	desc = "(VIII) A custom-tooled power helmet belonging to the Midwestern Brotherhood of Steel. Its eyes appear to have been modified to emit an icy-blue glow, and it has been repainted in the local chapter’s colors. The helmet appears to be very well taken care of, despite how isolated it is from its home."
+	icon_state = "dethelm"
+	item_state = "dethelm"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/deth/update_icon_state()
+	icon_state = "dethelm[on]"
+	item_state = "dethelm[on]"
+
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b Helm"
 	desc = "(IX) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
@@ -770,6 +781,7 @@
 	icon_state = "kittyb"
 	color = "#999999"
 	armor = list("tier" = 0)
+	dynamic_hair_suffix = ""
 
 //Soft caps
 /obj/item/clothing/head/soft/f13

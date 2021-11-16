@@ -439,80 +439,6 @@
 /obj/item/clothing/mask/ncr_facewrap/attack_self(mob/user)
 	adjustmask(user)
 
-//Legion Bandanas - We make these as much like normal bandanas as possible without repathing them.
-
-/obj/item/clothing/mask/bandana/auxilia
-	name = "auxilia bandana"
-	desc = "Simple black cloth intended for auxilia."
-	icon_state = "legaux"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/legrecruit
-	name = "recruit bandana"
-	desc = "A fine recruit bandana."
-	icon_state = "legrecruit"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/legdecan
-	name = "decan bandana"
-	desc = "A fine decan bandana."
-	icon_state = "legdecan"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/oldredbandana
-	name = "old bandana"
-	desc = "A fine bandana."
-	icon_state = "legdecan"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/legcenturion
-	name = "centurion bandana"
-	desc = "A fine centurion bandana."
-	icon_state = "legcenturion"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/legvet
-	name = "veteran bandana"
-	desc = "A fine veteran bandana."
-	icon_state = "legvet"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/legprime
-	name = "prime bandana"
-	desc = "A fine prime bandana"
-	icon_state = "legdecan"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/bandana/momentobandana
-	name = "momento bandana"
-	desc = "A bandana that serves the user as a reminder of the past."
-	icon_state = "momento"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
 //Desert facewrap
 
 /obj/item/clothing/mask/facewrap
@@ -557,3 +483,23 @@
 	icon_state = "societymask"
 	item_state = "societymask"
 	flags_inv = HIDEFACE
+
+//Sancti Vindictam
+
+/obj/item/clothing/mask/aculeo
+	name = "sancti vindictam"
+	desc = "A fearsome, archaic mold of a cruel, sneering face shaped in iron and gilded in the colors of the Legion. Prayers to Mars are carved jaggedly along the interior. It is thick, heavy metal reinforcing some mechanical trophy beneath- the gas mask of a ranger that has been crudely refitted to serve new purpose."
+	icon_state = "sancti_vindictam"
+	item_state = "sancti_vindictam"
+	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
+	flags_inv = HIDEFACIALHAIR|HIDEFACE
+	w_class = WEIGHT_CLASS_SMALL
+	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
+	visor_flags_inv = HIDEFACE
+	flags_cover = MASKCOVERSMOUTH
+	visor_flags_cover = MASKCOVERSMOUTH
+	var/aggressiveness = 2
+	var/cooldown_special
+	var/recent_uses = 0
+	var/broken_hailer = 0
+	var/safety = TRUE

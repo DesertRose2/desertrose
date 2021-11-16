@@ -33,7 +33,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
-/*
+
 /datum/crafting_recipe/combatbayonet
 	name = "Bayonet Knife"
 	result = /obj/item/kitchen/knife/combat/bayonet
@@ -41,9 +41,9 @@
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/sheet/cloth = 2)
 	tools = list(TOOL_FORGE)
-	category = CAT_FORGE
-	subcategory = CAT_FORGEWEAPON
-*/
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+
 
 /datum/crafting_recipe/kitchen
 	name = "Kitchen Knife"

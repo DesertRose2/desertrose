@@ -31,7 +31,7 @@
 
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"
-	icon_state = "45-8"
+	icon_state = "45"
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 8
@@ -40,19 +40,15 @@
 /obj/item/ammo_box/magazine/m45/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m45/update_icon()
-	..()
-	icon_state = "45-[ammo_count() ? "8" : "0"]"
-
-/obj/item/ammo_box/magazine/m45exp
-	name = "socom magazine (.45)"
+/obj/item/ammo_box/magazine/m45/extended
+	name = "extended handgun magazine (.45)"
 	icon_state = "45exp-12"
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 12
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m45exp/empty
+/obj/item/ammo_box/magazine/m45/extended/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m45/kitchengun

@@ -56,7 +56,7 @@
 	icon = 'icons/obj/machines/reloadingbench.dmi'
 	icon_state = "standard_bench"
 	desc = "A basic workbench for simple to intermediate projects."
-	resistance_flags = INDESTRUCTIBLE
+	max_integrity = 500 //Why people just have to cheese
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
@@ -83,7 +83,7 @@
 		return ..()
 	if(istype(W,/obj/item/salvage))
 		var/obj/item/salvage/S = W
-		if(do_after(user,25,target = src))		
+		if(do_after(user,5,target = src))
 			if(HAS_TRAIT(user, TRAIT_TECHNOPHREAK))
 				var/obj/I = pick(S.Loot)
 				new I (src.loc)
@@ -117,6 +117,13 @@
 	desc = "An assembly bench, useful for assembling complex parts into semi-finished products."
 	machine_tool_behaviour = list(TOOL_ASSWORKBENCH)
 
+/obj/machinery/workbench/pa
+	name = "power armour work station"
+	icon_state = "pa_station"
+	desc = "A fairly large frame used for the maintenance and modification of power armour."
+	machine_tool_behaviour = list(TOOL_PASTATION)
+	density = FALSE
+
 /obj/machinery/workbench/fbench
 	var/obj/item/prefabs/mould
 	name = "moulding workbench"
@@ -127,7 +134,7 @@
 
 /obj/machinery/workbench/fbench/attackby(obj/item/W, mob/user, params)//todo me
 //	var/mob/living/carbon/human/H = usr
-	if (istype(W, /obj/item/stack/sheet/prewar) && !HAS_TRAIT(usr, TRAIT_MASTER_GUNSMITH))
+	if (istype(W, /obj/item/stack/sheet/prewar))
 		to_chat(usr,"You have no clue as to how to work this material.")
 		return
 	else if(istype(W, /obj/item/screwdriver) && mould)

@@ -170,3 +170,23 @@
 	name = "campfire kit"
 	desc = "A small box filled with an assortment of wood and tender. Useful for quickly making a fire."
 	icon_state = "lunchbox"
+
+/obj/item/crafting/fuze
+	name = "fuze"
+	desc = "A long cloth cord for ignition."
+	icon_state = "fuze"
+
+/obj/item/crafting/tube
+	name = "metal tube"
+	desc = "A rusty metal tube with a flat bottom."
+	icon_state = "tube"
+
+/obj/item/crafting/grenade_casing
+	name = "old grenade casing"
+	desc = "A small industrial casing meant to be fillable with high grade explosives."
+	icon_state = "chemg"
+
+/obj/item/crafting/servo
+	name = "servo"
+	desc = "A servo most likely belonging to some machinery at some point."
+	icon_state = "servo"

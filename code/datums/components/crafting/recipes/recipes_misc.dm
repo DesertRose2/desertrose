@@ -544,17 +544,23 @@
 	name = "Binoculars"
 	result = /obj/item/binoculars
 	time = 60
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/sheet/glass = 5)
-	tools = list(TOOL_SCREWDRIVER,TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/glass = 5,
+				/obj/item/crafting/duct_tape = 1)
+	tools = list(TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /datum/crafting_recipe/experimental
-	name = "Tinker"
+	name = "Servo repair kit"
 	result = /obj/item/experimental
 	time = 30
-	reqs = list(/obj/item/crafting = 5)
+	reqs = list(/obj/item/crafting/frame = 1,
+				/obj/item/crafting/board = 1,
+				/obj/item/crafting/capacitor = 1,
+				/obj/item/crafting/transistor = 1,
+				/obj/item/crafting/servo = 1
+				)
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WORKBENCH)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
@@ -626,6 +632,10 @@
 	subcategory = CAT_FURNITURE
 	category = CAT_MISC
 
+//////////////
+//Flowers/////
+//////////////
+
 /datum/crafting_recipe/mixedbouquet
 	name = "Mixed bouquet"
 	result = /obj/item/bouquet
@@ -655,3 +665,40 @@
 	reqs = list(/obj/item/grown/rose = 6)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
+
+/datum/crafting_recipe/rainbowbunchcrown
+	name = "Rainbow Flower Crown"
+	result = /obj/item/clothing/head/rainbowbunchcrown/
+	time = 20
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/rainbow_flower = 5,
+				/obj/item/stack/cable_coil = 3)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/sunflowercrown
+	name = "Sunflower Crown"
+	result = /obj/item/clothing/head/sunflowercrown/
+	time = 20
+	reqs = list(/obj/item/grown/sunflower = 5,
+				/obj/item/stack/cable_coil = 3)
+	subcategory = CAT_MISCELLANEOUS	
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/poppycrown
+	name = "Poppy Crown"
+	result = /obj/item/clothing/head/poppycrown/
+	time = 20
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy = 5,
+				/obj/item/stack/cable_coil = 3)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/lilycrown
+	name = "Lily Crown"
+	result = /obj/item/clothing/head/lilycrown/
+	time = 20
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy/lily = 3,
+				/obj/item/stack/cable_coil = 3)
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_CLOTHING
+	

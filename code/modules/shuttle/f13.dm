@@ -46,6 +46,10 @@
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
+/obj/machinery/computer/shuttle/bunkerelevator/junker
+	shuttleId = "junker_bunker_elevator"
+	possible_destinations = "junker_entrance;junker_bunker"
+
 /obj/machinery/computer/shuttle/northbunkerelevator
 	name = "elevator controls"
 	desc = "Controls the elevator."
@@ -79,5 +83,17 @@
 	circuit = /obj/item/circuitboard/computer/vault113_control
 	shuttleId = "vault113_elevator"
 	possible_destinations = "Vault113_Ground;Vault113_Level_1"
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/machinery/computer/shuttle/bosentryelevator
+	name = "elevator controls"
+	desc = "Controls the elevator."
+	icon_screen = "shuttle"
+	icon_keyboard = "tech_key"
+	light_color = LIGHT_COLOR_CYAN
+	circuit = /obj/item/circuitboard/computer/bos_entry_control
+	shuttleId = "entrance_elevator"
+	possible_destinations = "bos_entryway;bos_surface;"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF

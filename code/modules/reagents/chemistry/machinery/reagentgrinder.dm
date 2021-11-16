@@ -23,8 +23,7 @@
 	/obj/item/reagent_containers/pill/patch/medx,
 	/obj/item/reagent_containers/pill/buffout,
 	/obj/item/reagent_containers/pill/cateye,
-	/obj/item/reagent_containers/pill/patch/jet,
-	/obj/item/reagent_containers/pill/patch/hydra
+	/obj/item/reagent_containers/pill/patch/jet
 	)
 
 	var/static/radial_examine = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_examine")
@@ -107,6 +106,7 @@
 		return TRUE
 
 	if (is_type_in_list(I, blacklistchems))
+		to_chat(user, "<span class='warning'>You cannot fit that there!</span>")
 		return
 
 	if (istype(I, /obj/item/reagent_containers) && !(I.item_flags & ABSTRACT) && I.is_open_container())

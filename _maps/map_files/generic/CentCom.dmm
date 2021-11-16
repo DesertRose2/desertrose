@@ -3226,7 +3226,7 @@
 /area/centcom/evac)
 "jH" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/flashlight/seclite,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3410,7 +3410,7 @@
 "kd" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/item/gun/ballistic/automatic/ar,
+/obj/item/gun/ballistic/automatic/ak112,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -4250,7 +4250,7 @@
 "mm" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/item/gun/ballistic/automatic/ar,
+/obj/item/gun/ballistic/automatic/ak112,
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
@@ -5417,12 +5417,6 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/centcom/evac)
-"pg" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "ph" = (
 /obj/structure/chair/office/dark{
@@ -7389,7 +7383,7 @@
 "uI" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -7490,7 +7484,7 @@
 "uT" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -7500,7 +7494,7 @@
 /area/centcom/evac)
 "uU" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/flashlight/seclite,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -7518,7 +7512,7 @@
 /area/centcom/evac)
 "uW" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/flashlight/seclite,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -8093,7 +8087,7 @@
 "ww" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/darkred/corner{
@@ -8103,7 +8097,7 @@
 "wx" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/darkred/corner{
@@ -8123,7 +8117,7 @@
 "wz" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/dark,
@@ -9721,10 +9715,6 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/xeno,
 /turf/open/floor/grass,
 /area/wizard_station)
-"Bj" = (
-//obj/vehicle/ridden/scooter/skateboard,
-/turf/open/floor/plasteel/darkred/side,
-/area/centcom/evac)
 "Bk" = (
 /obj/vehicle/ridden/space/speedbike,
 /obj/machinery/light,
@@ -10637,9 +10627,6 @@
 /turf/open/floor/plasteel,
 /area/wizard_station)
 "Ej" = (
-//obj/vehicle/ridden/scooter/skateboard{
-//	dir = 4
-//	},
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
@@ -27117,7 +27104,7 @@ km
 jU
 jU
 DA
-pg
+ph
 pz
 Dh
 jU
@@ -32790,7 +32777,7 @@ zY
 wa
 qC
 AM
-Bj
+AN
 jU
 qo
 aa

@@ -13,8 +13,8 @@
 	response_disarm_simple = "shoves"
 	response_harm_simple = "hits"
 	speed = 1
-	maxHealth = 140
-	health = 140
+	maxHealth = 100
+	health = 100
 	harm_intent_damage = 8
 	melee_damage_lower = 25
 	melee_damage_upper = 50
@@ -65,8 +65,8 @@
 	icon_living = "raiderranged"
 	loot = list(/obj/effect/mob_spawn/human/corpse/raiderranged, /obj/effect/spawner/lootdrop/f13/npc_raider)
 	ranged = 1
-	maxHealth = 115
-	health = 115
+	maxHealth = 100
+	health = 100
 	retreat_distance = 4
 	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/c9mm/op
@@ -77,8 +77,8 @@
 	name = "Legendary Raider"
 	desc = "Another murderer churned out by the wastes - this one seems a bit faster than the average..."
 	color = "#FFFF00"
-	maxHealth = 450
-	health = 450
+	maxHealth = 350
+	health = 350
 	speed = 1.2
 	obj_damage = 300
 	aggro_vision_range = 15
@@ -91,8 +91,8 @@
 	icon_living = "raiderranged"
 	loot = list(/obj/effect/mob_spawn/human/corpse/raiderranged, /obj/item/gun/ballistic/revolver/m29)
 	ranged = 1
-	maxHealth = 600
-	health = 600
+	maxHealth = 500
+	health = 500
 	retreat_distance = 1
 	minimum_distance = 2
 	projectiletype = /obj/item/projectile/bullet/m44
@@ -104,7 +104,7 @@
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
 	icon_state = "metal_raider"
 	icon_living = "metal_raider"
-	loot = list(/obj/effect/mob_spawn/human/corpse/raiderrangedsulphite, /obj/item/gun/ballistic/automatic/pistol/m1911/custom)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raiderrangedsulphite, /obj/item/gun/ballistic/automatic/pistol/m1911)
 	ranged = 1
 	maxHealth = 180
 	health = 180
@@ -115,11 +115,11 @@
 	name = "Raider Boss"
 	icon_state = "raiderboss"
 	icon_living = "raiderboss"
-	maxHealth = 170
-	health = 170
+	maxHealth = 150
+	health = 150
 	extra_projectiles = 3
 	projectiletype = /obj/item/projectile/bullet/c45/op
-	loot = list(/obj/effect/mob_spawn/human/corpse/raiderboss, /obj/item/gun/ballistic/automatic/greasegun)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raiderboss, /obj/item/gun/ballistic/automatic/smg/greasegun)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()

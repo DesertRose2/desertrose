@@ -127,11 +127,11 @@
 //CIG PACK//
 ////////////
 /obj/item/storage/fancy/cigarettes
-	name = "\improper Space Cigarettes packet"
-	desc = "The most popular brand of cigarettes, sponsors of the Space Olympics."
+	name = "\improper Clipper Ship packet"
+	desc = "The most popular brand of cigarettes, sponsors of the Olympics."
 	icon = 'icons/obj/cigarettes.dmi'
-	icon_state = "cig"
-	item_state = "cigpacket"
+	icon_state = "clippership"
+	item_state = "clippership"
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
 	slot_flags = ITEM_SLOT_BELT

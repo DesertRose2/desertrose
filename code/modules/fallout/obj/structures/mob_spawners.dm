@@ -17,6 +17,7 @@
 	var/spawn_text = "emerges from"
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
+	var/infinite = FALSE
 
 /obj/structure/nest/Initialize()
 	. = ..()
@@ -53,6 +54,9 @@
 		if(covered)
 			to_chat(user, "<span class='warning'>The hole is already covered!</span>")
 			return
+		if(!infinite)
+			if(spawned_mobs.len >= max_mobs)
+				Destroy()		
 		var/obj/item/stack/rods/R = I
 		if(R.amount < 4)
 			to_chat(user, "<span class='warning'>You need four rods in order to cover the hole!</span>")

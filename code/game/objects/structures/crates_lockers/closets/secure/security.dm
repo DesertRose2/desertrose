@@ -109,7 +109,6 @@
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/gloves/krav_maga/sec(src)
 	new /obj/item/door_remote/head_of_security(src)
-	new /obj/item/gun/ballistic/shotgun/automatic/combat/compact(src)
 	new /obj/item/clothing/head/beret/sec/corporatewarden(src)
 /obj/structure/closet/secure_closet/security
 	name = "security officer's locker"
@@ -235,7 +234,7 @@
 	for(var/i in 1 to 3)
 		new /obj/item/ammo_box/shotgun/buck(src)
 	for(var/i in 1 to 3)
-		new /obj/item/gun/ballistic/shotgun/riot(src)
+		new /obj/item/gun/ballistic/shotgun(src)
 /obj/structure/closet/secure_closet/armory3
 	name = "armory energy gun locker"
 	req_access = list(ACCESS_ARMORY)
@@ -254,7 +253,7 @@
 	icon_state = "tac"
 /obj/structure/closet/secure_closet/tac/PopulateContents()
 	..()
-	new /obj/item/gun/ballistic/automatic/wt550(src)
+	new /obj/item/gun/ballistic/automatic/smg(src)
 	new /obj/item/clothing/head/helmet/alt(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/clothing/suit/armor/bulletproof(src)

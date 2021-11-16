@@ -139,8 +139,8 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	reagent_state = SOLID
 	color = "#A9FBFB"
 	taste_description = "bitterness"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 30
+	metabolization_rate = 0.6 * REAGENTS_METABOLISM
+	overdose_threshold = 31
 	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
 	var/heal_factor_perk = -3 //Multiplier if you have the right perk.
 
@@ -182,12 +182,13 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	name = "healing poultice"
 	description = "Restores limb condition and heals rapidly."
 	color = "#C8A5DC"
-	overdose_threshold = 20
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 30
 	heal_factor = -2
 	heal_factor_perk = -4
-/* For now unused
+
 /datum/reagent/medicine/healing_powder/poultice_zombie
-	name = "'Vita' poultice"
+	name = "zombie poultice"
 	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
 	color = "#a64adb"
 	metabolization_rate = 0.2 * REAGENTS_METABOLISM
@@ -221,7 +222,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
-*/
+
 /datum/reagent/medicine/radshroom
 	name = "Mushroom extract"
 	description = "A combination of punga and cave fungus to help dealing with radiation."
@@ -395,80 +396,6 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		M.Jitter(5)
 	..()
 
-/datum/reagent/medicine/hydra
-	name = "Hydra"
-
-	description = "Hydra is a blend of mostly naturally obtained elements combined into a strong stimulant."
-	reagent_state = LIQUID
-	color = "#6D6374"
-	metabolization_rate = 0.20 * REAGENTS_METABOLISM
-	overdose_threshold = 14
-	addiction_threshold = 50
-
-/datum/reagent/medicine/hydra/on_mob_add(mob/M)
-	..()
-	if(isliving(M))
-		var/mob/living/carbon/L = M
-		L.hal_screwyhud = SCREWYHUD_HEALTHY
-		ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
-		ADD_TRAIT(L, TRAIT_AUTO_CATCH_ITEM, "hydra")
-
-/datum/reagent/medicine/hydra/on_mob_delete(mob/M)
-	if(isliving(M))
-		var/mob/living/carbon/L = M
-		L.hal_screwyhud = SCREWYHUD_NONE
-		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
-		REMOVE_TRAIT(L, TRAIT_AUTO_CATCH_ITEM, "hydra")
-	..()
-
-/datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
-	M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustStaminaLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-	..()
-	. = TRUE
-
-/datum/reagent/medicine/hydra/overdose_process(mob/living/M)
-	if(prob(33))
-		M.drop_all_held_items()
-		M.Dizzy(2)
-		M.Jitter(2)
-	..()
-
-/datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/M)
-	if(prob(33))
-		M.drop_all_held_items()
-		M.Jitter(2)
-	..()
-
-/datum/reagent/medicine/hydra/addiction_act_stage2(mob/living/M)
-	if(prob(33))
-		M.drop_all_held_items()
-		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
-		. = TRUE
-		M.Dizzy(3)
-		M.Jitter(3)
-	..()
-
-/datum/reagent/medicine/hydra/addiction_act_stage3(mob/living/M)
-	if(prob(33))
-		M.drop_all_held_items()
-		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
-		. = TRUE
-		M.Dizzy(4)
-		M.Jitter(4)
-	..()
-
-/datum/reagent/medicine/hydra/addiction_act_stage4(mob/living/M)
-	if(prob(33))
-		M.drop_all_held_items()
-		M.adjustToxLoss(3*REAGENTS_EFFECT_MULTIPLIER)
-		. = TRUE
-		M.Dizzy(5)
-		M.Jitter(5)
-	..()
-
 /datum/reagent/medicine/cateye
 	name = "Cateye"
 
@@ -485,7 +412,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		to_chat(M, "<span class='notice'>You feel at ease as everything becomes clearer.</span>")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		ADD_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
-		ADD_TRAIT(M, TRAIT_CATEYE_NIGHT_VISION, "cateye")
+		ADD_TRAIT(M, TRAIT_NIGHT_VISION, "cateye")
 
 /datum/reagent/medicine/cateye/on_mob_delete(mob/living/carbon/human/M)
 	..()
@@ -493,7 +420,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 		to_chat(M, "<span class='notice'>Your eyes feel tired..</span>")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		REMOVE_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
-		REMOVE_TRAIT(M, TRAIT_CATEYE_NIGHT_VISION, "cateye")
+		REMOVE_TRAIT(M, TRAIT_NIGHT_VISION, "cateye")
 
 /datum/reagent/medicine/cateye/overdose_process(mob/living/M)
 	if(prob(33))

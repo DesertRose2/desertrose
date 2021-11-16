@@ -1119,7 +1119,7 @@
 
 /obj/item/toy/cards/deck/syndicate
 	name = "suspicious looking deck of cards"
-	desc = "A deck of space-grade playing cards. They seem unusually rigid."
+	desc = "A deck of high quality playing cards. They seem unusually rigid."
 	icon_state = "deck_syndicate_full"
 	deckstyle = "syndicate"
 	card_hitsound = 'sound/weapons/bladeslice.ogg'

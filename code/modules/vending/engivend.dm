@@ -1,5 +1,5 @@
 /obj/machinery/vending/engivend
-	name = "\improper Engi-Vend"
+	name = "\improper Dent & Sons Construction Vendor"
 	desc = "Spare tool vending. What? Did you expect some witty description?"
 	icon_state = "engivend"
 	icon_deny = "engivend-deny"

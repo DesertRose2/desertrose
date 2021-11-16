@@ -558,7 +558,6 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("10mm pistol magazine (10mm)",	/obj/item/ammo_box/magazine/m10mm_adv/simple,								60),
 		new /datum/data/wasteland_equipment("Speed strip (.357)",			/obj/item/ammo_box/a357,											70),
 		new /datum/data/wasteland_equipment("Speed loader (.44)",			/obj/item/ammo_box/m44,												70),
-		new /datum/data/wasteland_equipment("Speed loader (.38)",			/obj/item/ammo_box/c38,												70),
 		new /datum/data/wasteland_equipment("small rifle magazine (5.56mm)",/obj/item/ammo_box/magazine/m556/rifle/small,						100),
 		new /datum/data/wasteland_equipment("Blackpowder",					/obj/item/reagent_containers/glass/bottle/blackpowder,				65)
 		)
@@ -593,8 +592,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Explorer satchel",				/obj/item/storage/backpack/satchel/explorer,						25),
 		new /datum/data/wasteland_equipment("Spray bottle",					/obj/item/reagent_containers/spray,									35),
 		new /datum/data/wasteland_equipment("Bottle of E-Z-Nutrient",		/obj/item/reagent_containers/glass/bottle/nutrient/ez,				40),
-		new /datum/data/wasteland_equipment("Craftsmanship Monthly",		/obj/item/book/granter/trait/techno,								600),
-		new /datum/data/wasteland_equipment("Tinkering for Wastelanders",	/obj/item/book/granter/trait/tinkering,								600)
+		new /datum/data/wasteland_equipment("Craftsmanship Monthly",		/obj/item/book/granter/trait/techno,								600)
 		)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Drinking glass",				/obj/item/reagent_containers/food/drinks/drinkingglass,				5),
@@ -602,8 +600,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Explorer satchel",				/obj/item/storage/backpack/satchel/explorer,						25),
 		new /datum/data/wasteland_equipment("Spray bottle",					/obj/item/reagent_containers/spray,									35),
 		new /datum/data/wasteland_equipment("Bottle of E-Z-Nutrient",		/obj/item/reagent_containers/glass/bottle/nutrient/ez,				40),
-		new /datum/data/wasteland_equipment("Craftsmanship Monthly",		/obj/item/book/granter/trait/techno,								600),
-		new /datum/data/wasteland_equipment("Tinkering for Wastelanders",	/obj/item/book/granter/trait/tinkering,								600)
+		new /datum/data/wasteland_equipment("Craftsmanship Monthly",		/obj/item/book/granter/trait/techno,								600)
 		)
 
 /obj/machinery/mineral/wasteland_vendor/camp
@@ -666,14 +663,14 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							600),
-		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,									600)
+		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Random manual",					/obj/item/book/manual/random,									40),
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							600),
-		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,									600)
+		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 
 /obj/machinery/mineral/wasteland_vendor/advcomponents

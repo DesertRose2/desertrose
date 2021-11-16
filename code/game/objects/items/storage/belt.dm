@@ -723,12 +723,18 @@
 	..()
 
 /obj/item/storage/belt/holster
-	name = "shoulder holster"
-	desc = "A holster to carry a handgun and ammo. WARNING: Badasses only."
+	name = "holster"
+	desc = "A holster to carry a handgun and ammo."
 	icon_state = "holster"
 	item_state = "holster"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"Shoulder" = "holster",
+						"Thigh" = "holster_leg",
+						"Hip" = "holster_hip"
+						)
 
 /obj/item/storage/belt/holster/ComponentInitialize()
 	. = ..()
@@ -741,7 +747,6 @@
 		/obj/item/ammo_box/magazine,
 		/obj/item/ammo_box/tube,
 		/obj/item/ammo_box/a357,
-		/obj/item/ammo_box/c38,
 		/obj/item/ammo_box/l10mm,
 		/obj/item/ammo_box/a762,
 		/obj/item/ammo_box/shotgun,
@@ -769,24 +774,22 @@
 		))
 
 /obj/item/storage/belt/holster/full/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/detective(src)
-	new /obj/item/ammo_box/c38(src)
-	new /obj/item/ammo_box/c38(src)
+	new /obj/item/gun/ballistic/revolver/police(src)
 
 /obj/item/storage/belt/holster/ranger44/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver44(src)
+	new /obj/item/gun/ballistic/revolver/revolver44/ranger(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 
 /obj/item/storage/belt/holster/ranger357/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/colt357(src)
+	new /obj/item/gun/ballistic/revolver/colt357/ranger(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 
 /obj/item/storage/belt/holster/ranger45/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver45(src)
+	new /obj/item/gun/ballistic/revolver/revolver45/ranger(src)
 	new /obj/item/ammo_box/c45rev(src)
 	new /obj/item/ammo_box/c45rev(src)
 	new /obj/item/ammo_box/c45rev(src)
@@ -804,7 +807,7 @@
 	new /obj/item/ammo_box/c4570(src)
 
 /obj/item/storage/belt/holster/ranger10mm/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/colt6520(src)
+	new /obj/item/gun/ballistic/revolver/colt6520/ranger(src)
 	new /obj/item/ammo_box/l10mm(src)
 	new /obj/item/ammo_box/l10mm(src)
 	new /obj/item/ammo_box/l10mm(src)
@@ -816,7 +819,9 @@
 	new /obj/item/ammo_box/magazine/m9mm(src)
 
 /obj/item/storage/belt/holster/ncr_officer/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
+	new /obj/item/gun/ballistic/automatic/pistol/m1911(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 
 /obj/item/storage/belt/holster/med_lt/PopulateContents()
@@ -828,8 +833,8 @@
 /obj/item/storage/belt/holster/hip
 	name = "hip holster"
 	desc = "A low hanging holster to carry a handgun and ammo."
-	icon_state = "cowboy"
-	item_state = "cowboy"
+	icon_state = "holster_hip"
+	item_state = "holster_hip"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
