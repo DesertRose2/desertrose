@@ -14083,7 +14083,6 @@
 /area/f13/underground/cave)
 "vLm" = (
 /obj/structure/barricade/wooden/strong,
-/obj/effect/decal/cleanable/oil/slippery,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
