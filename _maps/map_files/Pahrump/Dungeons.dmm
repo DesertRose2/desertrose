@@ -5331,10 +5331,6 @@
 	},
 /turf/closed/mineral/random/low_chance,
 /area/f13/underground/cave)
-"ijm" = (
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "ijS" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/deathclaw{
@@ -62381,7 +62377,7 @@ aCV
 shO
 jrk
 sJx
-ijm
+kRy
 dIR
 iOE
 iyq
