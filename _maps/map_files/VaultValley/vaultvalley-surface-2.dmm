@@ -2370,9 +2370,9 @@
 /turf/open/floor/carpet/black,
 /area/f13/building)
 "cAu" = (
-/obj/machinery/trading_machine/ammo,
-/turf/open/floor/f13/wood,
-/area/f13/city)
+/obj/machinery/mineral/wasteland_vendor/camp,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "cAB" = (
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/f13/wood{
@@ -2660,9 +2660,9 @@
 	},
 /area/f13/wasteland)
 "cPi" = (
-/obj/machinery/trading_machine,
-/turf/open/floor/f13/wood,
-/area/f13/city)
+/obj/machinery/mineral/wasteland_vendor/advcomponents,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "cPu" = (
 /turf/open/floor/wood{
 	icon_state = "housewood3"
@@ -7536,6 +7536,11 @@
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/wasteland)
+"hNp" = (
+/obj/structure/chair/bench,
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "hOa" = (
 /turf/open/floor/wood/f13/old/ruinedstraightnorth,
 /area/f13/building)
@@ -7976,12 +7981,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "ipN" = (
-/obj/machinery/trading_machine/armor,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
+/obj/machinery/trading_machine/weapon,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "ipT" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
@@ -13143,9 +13145,9 @@
 	},
 /area/f13/building)
 "nWc" = (
-/obj/machinery/trading_machine/weapon,
-/turf/open/floor/f13/wood,
-/area/f13/city)
+/obj/machinery/trading_machine/ammo,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "nWl" = (
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/structure/bedsheetbin,
@@ -13352,6 +13354,12 @@
 /obj/structure/flora/wasteplant/wild_mutfruit,
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland32"
+	},
+/area/f13/wasteland)
+"ogH" = (
+/obj/machinery/mineral/wasteland_vendor/weapons,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain0"
 	},
 /area/f13/wasteland)
 "ohf" = (
@@ -18186,6 +18194,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"tvj" = (
+/obj/machinery/mineral/wasteland_vendor/pipboy,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "tvr" = (
 /obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
@@ -19411,8 +19423,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "uIU" = (
-/turf/open/space/basic,
-/area/f13/city)
+/obj/machinery/trading_machine/armor,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "uJh" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
@@ -20839,6 +20852,15 @@
 	},
 /turf/open/floor/plating/wooden,
 /area/f13/building)
+"wil" = (
+/obj/machinery/mineral/wasteland_vendor/crafting{
+	icon_state = "parts_idle"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "wiy" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/books,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -21005,6 +21027,12 @@
 "wrr" = (
 /turf/open/floor/f13{
 	icon_state = "floordirty"
+	},
+/area/f13/wasteland)
+"wrs" = (
+/obj/machinery/mineral/wasteland_vendor/medical,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain0"
 	},
 /area/f13/wasteland)
 "wsp" = (
@@ -21182,6 +21210,12 @@
 /mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/floor/carpet/black,
 /area/f13/building)
+"wBf" = (
+/obj/machinery/mineral/wasteland_vendor/special,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain0"
+	},
+/area/f13/wasteland)
 "wBj" = (
 /obj/structure/barricade/wooden,
 /obj/structure/wreck/trash/two_tire,
@@ -22082,6 +22116,8 @@
 /area/f13/wasteland)
 "xxN" = (
 /obj/structure/closet/cabinet/anchored,
+/obj/item/lock_construct,
+/obj/item/key,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "xxW" = (
@@ -48509,10 +48545,10 @@ fcj
 fcj
 fcj
 eml
-cPi
-nWc
-cAu
-ipN
+hkc
+hkc
+hkc
+gnp
 jiS
 hkc
 hkc
@@ -48522,8 +48558,8 @@ mtj
 mtj
 oNp
 eml
-fcj
-fcj
+tvj
+tvj
 fcj
 fcj
 fcj
@@ -49022,12 +49058,12 @@ fcj
 fcj
 fcj
 fcj
-fcj
-fcj
-fcj
-fcj
-fcj
-plF
+cAu
+cPi
+ipN
+nWc
+uIU
+wil
 xpN
 mYi
 lGB
@@ -49292,7 +49328,7 @@ fcj
 fcj
 fcj
 fcj
-flV
+hNp
 wFC
 flV
 fcj
@@ -49551,7 +49587,7 @@ fcj
 fcj
 flV
 wFC
-flV
+hNp
 fcj
 fcj
 fcj
@@ -49806,7 +49842,7 @@ fcj
 fcj
 fcj
 fcj
-flV
+hNp
 wFC
 flV
 fcj
@@ -50322,7 +50358,7 @@ lGB
 fcj
 flV
 wFC
-flV
+hNp
 fcj
 flV
 wFC
@@ -50577,7 +50613,7 @@ loE
 mYi
 lGB
 fcj
-flV
+hNp
 wFC
 flV
 fcj
@@ -50836,7 +50872,7 @@ lGB
 fcj
 flV
 wFC
-flV
+hNp
 fcj
 flV
 wFC
@@ -51953,7 +51989,7 @@ nfD
 oOJ
 gsk
 mCp
-bdz
+ogH
 sdJ
 lTM
 lTM
@@ -52210,7 +52246,7 @@ ycW
 ycW
 iSX
 mCp
-bdz
+wBf
 sdJ
 lTM
 lTM
@@ -52467,7 +52503,7 @@ ldl
 ycW
 xXv
 mCp
-bdz
+wrs
 sdJ
 lTM
 lTM
@@ -54186,7 +54222,7 @@ xVx
 uOQ
 xFj
 hkc
-uIU
+uOQ
 dbI
 vod
 eFs
