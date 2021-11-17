@@ -48,6 +48,7 @@
 	neck = 			/obj/item/storage/belt/holster
 	id =            /obj/item/card/id/silver
 	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	belt = 			/obj/item/gun/ballistic/automatic/pistol/n99/executive
 	backpack_contents = list(
 		/obj/item/storage/box/citizenship_permits = 1, \
@@ -103,6 +104,7 @@
 	id =            /obj/item/card/id/silver
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
 	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/storage/belt/holster
@@ -178,7 +180,7 @@
 	jobtype = 		/datum/job/vtcc/f13merchant
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/merch_lead
 	id =            /obj/item/card/id/silver
-	l_pocket =		 /obj/item/storage/bag/money/small/settler
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	r_pocket = 		/obj/item/pda/quartermaster
 	shoes = 		/obj/item/clothing/shoes/f13/fancy
 	uniform = 		/obj/item/clothing/under/f13/cowboyg
@@ -245,6 +247,7 @@
 	id =            /obj/item/card/id/silver
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	r_pocket = /obj/item/clipboard
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
@@ -312,6 +315,7 @@
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc
 	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/kitchen/knife/combat=1,
@@ -378,6 +382,7 @@
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
 	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault/scout
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/kitchen/knife/combat=1,
@@ -513,6 +518,7 @@
 	id =            /obj/item/card/id
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/needler=1,
@@ -576,6 +582,7 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/lighter/fusion
 	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
+	l_pocket =		/obj/item/storage/bag/money/medium/settler
 	backpack_contents = list(
 		/obj/item/book/manual/ripley_build_and_repair=1,
 		/obj/item/bodypart/l_arm/robot=1,
@@ -659,7 +666,7 @@
 /datum/job/vtcc/f13innerwall
 	title = "Inner Wall Citizen"
 	flag = F13INNERWALL
-	total_positions = 5
+	total_positions = 6
 	spawn_positions = 3
 	supervisors = "the Alderman."
 	description = "You may lead any one of many different lifestyles, each one vastly different to the last. As such, you're on the payroll of anyone who hires you. Or, you're striking out on your own in our concrete jungle, making a name for yourself and your business within our walls. Perhaps you're a refugee from some faraway location, on the run from a threat unknown, or a settler from some far off town, setting out for a fresh start."
@@ -694,6 +701,10 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/card/data/wpermit
+	l_pocket = /obj/item/storage/bag/money/medium/settler
+	backpack_contents = list(
+		/obj/item/pda=1
+		)
 
 /datum/outfit/loadout/oldsport
 	name = "Old Sport"
@@ -763,7 +774,7 @@
 	/obj/item/clothing/shoes/f13/fancy=1
 	)
 
-/*/datum/outfit/loadout/cleaner
+/datum/outfit/loadout/cleaner
 	name = "Cleaner"
 	backpack_contents = list(
 	/obj/item/clothing/shoes/galoshes,
@@ -771,7 +782,7 @@
 	/obj/item/mop,
 	/obj/item/reagent_containers/glass/bucket,
 	/obj/item/stack/f13Cash/caps = 200
-	)*/
+	)
 
 
 /datum/outfit/loadout/detective
@@ -787,20 +798,20 @@
 	/obj/item/storage/fancy/cigarettes/cigars/havana=1
 	)
 
-/*/datum/outfit/loadout/dj
+/datum/outfit/loadout/dj
 	name = "Professional Disc Jockey"
 	backpack_contents = list(
 	/obj/item/taperecorder,
 	/obj/item/tape = 3,
 	/obj/item/megaphone
-	)*/
+	)
 
 /* Outer Wall Citizen */
 
 /datum/job/vtcc/f13outerwall
 	title = "Outer Wall Citizen"
 	flag = F13OUTERWALL
-	total_positions = 5
+	total_positions = 8
 	spawn_positions = 3
 	supervisors = "the Alderman."
 	description = "You may lead any one of many different lifestyles, each one vastly different to the last. As such, you're on the payroll of anyone who hires you. Or, you're striking out on your own in our concrete jungle, making a name for yourself and your business within our walls. Perhaps you're a refugee from some faraway location, on the run from a threat unknown, or a settler from some far off town, setting out for a fresh start."
@@ -833,6 +844,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
+	r_hand = /obj/item/book/granter/trait/selection/waster
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
