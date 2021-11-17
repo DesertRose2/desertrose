@@ -172,7 +172,7 @@
 	icon_state = "legcombatbodyhelmet"
 	item_state = "legcombatbodyhelmet"
 
-/obj/item/clothing/head/helmet/f13/combat/marine
+/obj/item/clothing/head/helmet/f13/combat/marine/legion
 	name = "Legion marine helmet"
 	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports an approximation of red facepaint and lacks the usual lenses over the eyes."
 	icon_state = "legmarinehelmet"
