@@ -257,7 +257,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "asU" = (
 /obj/item/storage/fancy/rollingpapers,
 /obj/effect/decal/cleanable/dirt,
@@ -369,7 +369,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "aDS" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -624,7 +624,7 @@
 "aXL" = (
 /obj/effect/decal/remains/human,
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "aYy" = (
 /obj/effect/decal/waste{
 	icon_state = "goo8"
@@ -898,7 +898,7 @@
 	},
 /obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "bwJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/ghoul/legendary,
@@ -1544,12 +1544,8 @@
 /turf/open/water,
 /area/f13/bunker)
 "crK" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowrustyfull"
-	},
+/obj/structure/timeddoor,
+/turf/closed/indestructible/rock,
 /area/f13/bunker)
 "csC" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -2105,11 +2101,12 @@
 	},
 /area/f13/bunker)
 "dsg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowrustyfull"
+/obj/effect/decal/remains/human,
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/effect/decal/waste{
+	icon_state = "goo8"
 	},
+/turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
 "dtD" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -2363,7 +2360,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "dRe" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -2532,7 +2529,7 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/spawner/lootdrop/f13/armor/tier5,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "eeG" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
@@ -2689,7 +2686,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "epm" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel{
@@ -2986,6 +2983,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"eQd" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
 "eQq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3465,6 +3466,14 @@
 "fFm" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"fFV" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowrustyfull"
+	},
 /area/f13/bunker)
 "fGb" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -4543,7 +4552,7 @@
 /obj/effect/decal/remains/human,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "hhp" = (
 /obj/effect/decal/cleanable/molten_object,
 /obj/effect/decal/cleanable/dirt,
@@ -5330,7 +5339,14 @@
 	icon_state = "skin"
 	},
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
+"ijm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/bunker)
 "ijS" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/deathclaw{
@@ -5470,7 +5486,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "ivy" = (
 /obj/machinery/vending/clothing,
 /obj/structure/lattice,
@@ -6184,9 +6200,6 @@
 	dir = 6
 	},
 /turf/open/indestructible/ground/outside/water,
-/area/f13/underground/cave)
-"jzn" = (
-/turf/closed/wall/r_wall/rust,
 /area/f13/underground/cave)
 "jzA" = (
 /obj/structure/stone_tile/block/cracked,
@@ -7220,7 +7233,7 @@
 "ldS" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "led" = (
 /obj/structure/chair/comfy/beige{
 	dir = 1
@@ -7406,7 +7419,7 @@
 /area/f13/bunker)
 "luk" = (
 /turf/closed/mineral/random/high_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "luv" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom2left"
@@ -7444,7 +7457,7 @@
 "lyB" = (
 /mob/living/simple_animal/hostile/deathclaw/legendary,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "lyO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9065,7 +9078,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "nVp" = (
 /obj/structure/stacklifter,
 /obj/effect/decal/cleanable/dirt,
@@ -9514,7 +9527,7 @@
 "oCJ" = (
 /obj/structure/timeddoor,
 /obj/structure/debris/v3,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/rock,
 /area/f13/bunker)
 "oCN" = (
 /turf/open/indestructible/ground/outside/road{
@@ -10378,7 +10391,7 @@
 "pRB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "pSb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/four_barrels,
@@ -10899,7 +10912,7 @@
 "qKi" = (
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "qKk" = (
 /obj/machinery/light/broken{
 	dir = 8
@@ -11080,10 +11093,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
-"qXx" = (
-/obj/structure/barricade/wooden/strong,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "qYk" = (
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance,
@@ -11156,7 +11165,7 @@
 "rfb" = (
 /obj/structure/debris/v3,
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "rfn" = (
 /mob/living/simple_animal/hostile/centaur,
 /obj/effect/decal/cleanable/dirt,
@@ -11556,7 +11565,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "rJC" = (
 /obj/machinery/chem_dispenser,
 /obj/effect/decal/cleanable/dirt,
@@ -11850,7 +11859,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "shQ" = (
 /obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
@@ -11904,7 +11913,7 @@
 	},
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "sjF" = (
 /obj/structure/stone_tile/slab/cracked,
 /turf/open/floor/plasteel/cult,
@@ -12074,7 +12083,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "szh" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plating/tunnel{
@@ -12628,7 +12637,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "ttv" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -12698,7 +12707,7 @@
 	icon_state = "gib4-old"
 	},
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "txu" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -13250,7 +13259,7 @@
 "uwE" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "uwM" = (
 /obj/machinery/shower{
 	dir = 1
@@ -13644,7 +13653,7 @@
 /area/f13/bunker)
 "veO" = (
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "veS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/machinepile,
@@ -13841,7 +13850,7 @@
 	},
 /obj/effect/decal/remains/human,
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "vts" = (
 /obj/structure/sign/departments/engineering,
 /obj/effect/decal/cleanable/dirt,
@@ -14098,7 +14107,7 @@
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "vNb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/attachments,
@@ -15044,7 +15053,7 @@
 "xaj" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "xan" = (
 /obj/structure/glowshroom/single,
 /mob/living/simple_animal/hostile/jungle/mega_arachnid,
@@ -15079,7 +15088,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "xeO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/girder,
@@ -15738,7 +15747,7 @@
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
-/area/f13/underground/cave)
+/area/f13/bunker)
 "ybl" = (
 /obj/effect/turf_decal/weather/dirt,
 /mob/living/simple_animal/butterfly{
@@ -61078,9 +61087,9 @@ heT
 eef
 xea
 nUV
-apt
-apt
-apt
+cIT
+cIT
+cIT
 qKi
 heT
 heT
@@ -61333,10 +61342,10 @@ heT
 heT
 luk
 luk
-iGQ
+dsg
 rIW
 dRb
-apt
+cIT
 hhj
 veO
 sjq
@@ -61590,7 +61599,7 @@ heT
 heT
 luk
 luk
-tPz
+eQd
 enG
 enG
 pRB
@@ -61856,8 +61865,8 @@ tst
 ivt
 enG
 vMw
-apt
-apt
+cIT
+cIT
 heT
 heT
 aUx
@@ -62114,9 +62123,9 @@ rIW
 veO
 pRB
 yaY
-apt
-apt
-apt
+cIT
+cIT
+cIT
 aUx
 nsz
 kOH
@@ -62364,12 +62373,12 @@ heT
 heT
 luk
 luk
-heT
+koh
 bvn
 veO
 veO
 veO
-apt
+cIT
 arp
 enG
 aCV
@@ -62625,11 +62634,11 @@ heT
 heT
 tPz
 iGQ
-apt
-apt
-apt
-apt
-apt
+cIT
+cIT
+cIT
+cIT
+cIT
 heT
 aUx
 sWT
@@ -62882,10 +62891,10 @@ heT
 heT
 heT
 heT
-apt
-apt
-apt
-apt
+cIT
+cIT
+cIT
+cIT
 heT
 heT
 aUx
@@ -63140,7 +63149,7 @@ heT
 heT
 heT
 heT
-apt
+cIT
 heT
 heT
 heT
@@ -63411,7 +63420,7 @@ koh
 cIT
 cIT
 cIT
-apt
+cIT
 heT
 heT
 heT
@@ -63914,7 +63923,7 @@ heT
 heT
 aUx
 lXR
-crK
+fFV
 vlg
 cIT
 qza
@@ -64939,8 +64948,8 @@ heT
 heT
 heT
 heT
-apt
-apt
+cIT
+cIT
 kRy
 kRy
 rdj
@@ -64951,7 +64960,7 @@ jVl
 szo
 jOQ
 faV
-dsg
+ijm
 bMR
 oXq
 rwX
@@ -65196,8 +65205,8 @@ heT
 heT
 heT
 heT
-apt
-apt
+cIT
+cIT
 uXT
 nmg
 nmg
@@ -65454,8 +65463,8 @@ heT
 heT
 heT
 heT
-apt
-apt
+cIT
+cIT
 qlq
 qlq
 qlq
@@ -65708,20 +65717,20 @@ aWe
 aWe
 aWe
 aUx
-apt
+cIT
 heT
 heT
 heT
 aUx
 epm
 aUx
-apt
+cIT
 heT
 aUx
 aUx
 cQg
 brq
-jzn
+aUx
 heT
 heT
 heT
@@ -65965,8 +65974,8 @@ ims
 boa
 iHP
 dXo
-apt
-apt
+cIT
+cIT
 heT
 aUx
 gvl
@@ -65976,7 +65985,7 @@ cpA
 heT
 heT
 heT
-jzn
+aUx
 heT
 heT
 heT
@@ -66223,7 +66232,7 @@ vjN
 xXn
 dRi
 wbX
-apt
+cIT
 heT
 aUx
 eVd
@@ -66232,18 +66241,18 @@ nmg
 xPY
 nmg
 nmg
-apt
+cIT
 heT
 heT
-apt
-apt
-apt
-apt
+cIT
+cIT
+cIT
+cIT
 iEb
 heT
-apt
-apt
-apt
+cIT
+cIT
+cIT
 aUx
 heT
 heT
@@ -66480,7 +66489,7 @@ cRZ
 eeG
 qIF
 uUS
-apt
+cIT
 heT
 aUx
 hVx
@@ -66499,7 +66508,7 @@ iAJ
 iEb
 nSw
 dqK
-apt
+cIT
 ekr
 aUx
 heT
@@ -66738,12 +66747,12 @@ uUS
 mZO
 wbX
 twy
-apt
+cIT
 heT
 nLs
-apt
-apt
-apt
+cIT
+cIT
+cIT
 nmg
 nmg
 nmg
@@ -66995,14 +67004,14 @@ wbX
 rVR
 dfG
 dyw
-apt
+cIT
 heT
 heT
 heT
 heT
 heT
-apt
-apt
+cIT
+cIT
 ulM
 kRy
 nmg
@@ -67253,13 +67262,13 @@ aWe
 pdp
 aWe
 aWe
-apt
-apt
-apt
-apt
+cIT
+cIT
+cIT
+cIT
 heT
 heT
-apt
+cIT
 ulM
 nmg
 tqo
@@ -67512,11 +67521,11 @@ xXn
 gpZ
 aUx
 gpZ
-apt
-apt
-apt
+cIT
+cIT
+cIT
 heT
-apt
+cIT
 cuh
 nmg
 heT
@@ -67771,12 +67780,12 @@ wxh
 wbX
 wbX
 wfT
-apt
+cIT
 heT
-apt
+cIT
 vsn
 qsL
-apt
+cIT
 heT
 xGl
 nsv
@@ -68029,7 +68038,7 @@ cPK
 wbX
 trQ
 haZ
-apt
+cIT
 heT
 rfb
 rfb
@@ -78814,7 +78823,7 @@ gEI
 gEI
 gEI
 okW
-jzn
+aUx
 heT
 heT
 heT
@@ -79072,7 +79081,7 @@ aUx
 jwQ
 rik
 ldS
-apt
+cIT
 heT
 heT
 ocx
@@ -79326,11 +79335,11 @@ heT
 heT
 heT
 heT
-jzn
-apt
+aUx
+cIT
 ldS
-xTp
-apt
+bEt
+cIT
 heT
 aUx
 aUx
@@ -79584,11 +79593,11 @@ heT
 heT
 heT
 heT
-apt
-bLi
-bLi
-apt
-apt
+cIT
+okW
+okW
+cIT
+cIT
 heT
 heT
 aWe
@@ -79842,12 +79851,12 @@ heT
 heT
 heT
 heT
-apt
-bLi
-bLi
-xTp
-apt
-apt
+cIT
+okW
+okW
+bEt
+cIT
+cIT
 hGX
 hpU
 aUn
@@ -80100,11 +80109,11 @@ heT
 heT
 heT
 heT
-apt
-apt
-bLi
+cIT
+cIT
+okW
 ldS
-bLi
+okW
 okW
 hGX
 aUx
@@ -80359,12 +80368,12 @@ heT
 heT
 heT
 heT
-apt
-apt
-apt
-bLi
-qXx
-apt
+cIT
+cIT
+cIT
+okW
+hGX
+cIT
 heT
 heT
 heT
@@ -80599,7 +80608,7 @@ aWe
 xXn
 lPJ
 glR
-slE
+crK
 heT
 heT
 heT
@@ -80619,8 +80628,8 @@ heT
 heT
 heT
 heT
-apt
-apt
+cIT
+cIT
 heT
 heT
 heT
@@ -80856,7 +80865,7 @@ slE
 slE
 slE
 slE
-slE
+crK
 heT
 heT
 heT
@@ -81113,7 +81122,7 @@ heT
 heT
 heT
 heT
-jzn
+heT
 heT
 heT
 heT
