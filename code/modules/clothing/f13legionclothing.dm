@@ -166,6 +166,18 @@
 	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of Caesar's Legion."
 	icon_state = "legion_helmet"
 
+/obj/item/clothing/head/helmet/f13/rangerbroken/legion
+	name = "Legion riot helmet"
+	desc = "(VII) A modified riot police helmet, in use around the time of the Great War."
+	icon_state = "legcombatbodyhelmet"
+	item_state = "legcombatbodyhelmet"
+
+/obj/item/clothing/head/helmet/f13/combat/marine
+	name = "Legion marine helmet"
+	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports an approximation of red facepaint and lacks the usual lenses over the eyes."
+	icon_state = "legmarinehelmet"
+	item_state = "legmarinehelmet"
+
 //LM/LC
 /obj/item/clothing/head/hooded/cloakhood/f13/acolyte
 	name = "acolyte hood"
@@ -329,6 +341,18 @@
 	name = "reinforced Legion combat armor"
 	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of Caesar's Legion."
 	icon_state = "legion_armor_mk2"
+
+/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice/legion
+	name = "Legion combat body armour"
+	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded sleeveless duster with metal pauldrons bolted into the shoulders."
+	icon_state = "legcombatbodyarmor"
+	item_state = "legcombatbodyarmor"
+
+/obj/item/clothing/suit/armor/f13/combat/marine/legion
+	name = "Legion marine combat armor"
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull and a red tabard."
+	icon_state = "legmarinearmor"
+	item_state = "legmarinearmor"
 
 //LM/LC
 /obj/item/clothing/suit/hooded/f13/acolyte
