@@ -1544,8 +1544,9 @@
 /turf/open/water,
 /area/f13/bunker)
 "crK" = (
-/obj/machinery/light,
-/obj/effect/decal/remains/human,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -2012,7 +2013,6 @@
 	},
 /area/f13/bunker)
 "dnG" = (
-/obj/effect/decal/cleanable/oil/slippery,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -2060,7 +2060,7 @@
 /area/f13/underground/cave)
 "dqu" = (
 /obj/effect/decal/cleanable/cobweb,
-/turf/closed/mineral/random/low_chance,
+/turf/closed/indestructible/rock,
 /area/f13/bunker)
 "dqw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2105,10 +2105,11 @@
 	},
 /area/f13/bunker)
 "dsg" = (
-/obj/machinery/light/broken{
-	dir = 8
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowrustyfull"
 	},
-/turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
 "dtD" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -2986,10 +2987,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"eQd" = (
-/obj/machinery/light/broken,
-/turf/closed/indestructible/rock,
-/area/f13/underground/cave)
 "eQq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -3468,12 +3465,6 @@
 "fFm" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"fFV" = (
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
 /area/f13/bunker)
 "fGb" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -5593,7 +5584,7 @@
 "iEb" = (
 /obj/structure/timeddoor/sixtyminute,
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/bunker)
 "iEF" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/spacevine{
@@ -7369,9 +7360,6 @@
 /area/f13/bunker)
 "lqH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken{
-	dir = 8
-	},
 /turf/closed/indestructible/rock,
 /area/f13/bunker)
 "lrj" = (
@@ -10103,13 +10091,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
-"pvc" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowrustyfull"
-	},
-/area/f13/bunker)
 "pvh" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/bot,
@@ -10685,12 +10666,6 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/bunker)
-"qrt" = (
-/obj/machinery/light/broken{
-	dir = 4
-	},
-/turf/closed/mineral/random/low_chance,
 /area/f13/bunker)
 "qrI" = (
 /mob/living/simple_animal/hostile/supermutant/playable,
@@ -11481,7 +11456,6 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib5-old"
 	},
-/obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -12024,12 +11998,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
-"sqC" = (
-/obj/machinery/light/broken{
-	dir = 8
-	},
-/turf/closed/indestructible/rock,
-/area/f13/underground/cave)
 "srt" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plating/tunnel{
@@ -13049,7 +13017,6 @@
 	pixel_x = -4;
 	pixel_y = -7
 	},
-/obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "uga" = (
@@ -14715,15 +14682,6 @@
 	name = "temple wall"
 	},
 /area/f13/underground/cave)
-"wBs" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/bunker)
 "wBx" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -62941,7 +62899,7 @@ vSE
 elw
 qSn
 aUx
-qrt
+cIT
 cIT
 heT
 heT
@@ -63193,8 +63151,8 @@ heT
 heT
 heT
 koh
-koh
-koh
+aUx
+aUx
 oKE
 vLm
 cIT
@@ -63455,7 +63413,7 @@ lqH
 koh
 uRl
 koh
-dsg
+cIT
 cIT
 cIT
 apt
@@ -63961,7 +63919,7 @@ heT
 heT
 aUx
 lXR
-rdj
+crK
 vlg
 cIT
 qza
@@ -64733,7 +64691,7 @@ heT
 aUx
 oXq
 nwq
-pvc
+brq
 brq
 brq
 mDr
@@ -64741,7 +64699,7 @@ xoU
 xSA
 dwn
 iRk
-crK
+mJQ
 brq
 rdj
 rdj
@@ -64998,7 +64956,7 @@ jVl
 szo
 jOQ
 faV
-brq
+dsg
 bMR
 oXq
 rwX
@@ -65247,7 +65205,7 @@ apt
 apt
 uXT
 nmg
-fFV
+nmg
 nmg
 jpX
 brq
@@ -65764,11 +65722,11 @@ epm
 aUx
 apt
 heT
-apt
-apt
+aUx
+aUx
 cQg
 brq
-heT
+jzn
 heT
 heT
 heT
@@ -66023,7 +65981,7 @@ cpA
 heT
 heT
 heT
-heT
+jzn
 heT
 heT
 heT
@@ -66280,7 +66238,7 @@ xPY
 nmg
 nmg
 apt
-sqC
+heT
 heT
 apt
 apt
@@ -67052,7 +67010,7 @@ apt
 apt
 ulM
 kRy
-fFV
+nmg
 lGo
 sur
 rnG
@@ -67819,7 +67777,7 @@ wbX
 wbX
 wfT
 apt
-eQd
+heT
 apt
 vsn
 qsL
@@ -68855,7 +68813,7 @@ uXT
 bjT
 uXT
 kRy
-fFV
+nmg
 kRy
 uXT
 bjT
@@ -69365,7 +69323,7 @@ tfI
 iGq
 ulM
 gQm
-ijm
+kRy
 xoz
 kRy
 uXT
@@ -72456,7 +72414,7 @@ nmg
 nmg
 nmg
 gQm
-wBs
+mQs
 aUx
 heT
 heT
