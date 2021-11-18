@@ -132,7 +132,7 @@
 	name = "sentry bot helmet"
 	desc = "(VI) This is a dismantled Sentry Bot head, the internals ripped out and the optic sensors stripped out, replaced with a torch."
 	icon_state = "sentry_helmet"
-	item_state = "sentry_helmet"
+	item_state = "sentryhelmet"
 	armor = list("tier" = 6, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/raider/eyebot/sentry/attack_self(mob/user)
@@ -305,7 +305,7 @@
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	
+
 /obj/item/clothing/head/helmet/f13/wayfarer/antler
 	name = "antler skullcap"
 	desc = "(III) An antler skull headdress traditionally worn by the spiritually inclined."
@@ -356,7 +356,7 @@
 	icon_state = "chiefgreen"
 	item_state = "chiefgreen"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
-	
+
 /obj/item/clothing/head/helmet/f13/nightstalkerheavyhelmet
 	name = "Nightstalker Heavy Helmet"
 	icon_state = "nightstalker_tribal_helmet"
