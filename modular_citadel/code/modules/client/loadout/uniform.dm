@@ -479,6 +479,22 @@
 	name = "Grey Turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/grey
 
+/datum/gear/uniform/turtleskirt
+	name = "Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt
+
+/datum/gear/uniform/turtleskirt/grey
+	path = /obj/item/clothing/under/suit/turtle/skirt/grey
+
+/datum/gear/uniform/turtleskirt/pink
+	path = /obj/item/clothing/under/suit/turtle/skirt/pink
+
+/datum/gear/uniform/turtleskirt/pink/stripe
+	path = /obj/item/clothing/under/suit/turtle/skirt/pink/stripe
+
+/datum/gear/uniform/turtleskirt/pencil
+	path = /obj/item/clothing/under/suit/turtle/skirt/pencil
+
 // Grey utility
 
 /datum/gear/uniform/grey

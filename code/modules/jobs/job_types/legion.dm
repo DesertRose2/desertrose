@@ -27,7 +27,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriotarmour)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriotarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmarinearmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmarinehelmet)
