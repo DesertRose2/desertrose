@@ -107,7 +107,7 @@
 	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
 //Larger Settler money bag. Not too wealthy, but enough to basically buy a loadout.
-/obj/item/storage/bag/money/medium/settler/PopulateContents()
+/obj/item/storage/bag/money/small/vaultcity/PopulateContents()
 	new /obj/item/stack/f13Cash/random/med(src)
 	new /obj/item/stack/f13Cash/random/med(src)
 	new /obj/item/stack/f13Cash/random/ncr/low(src)
