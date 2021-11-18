@@ -426,6 +426,11 @@
 	path = /obj/item/storage/box/large/custom_kit/katieleon
 	ckeywhitelist = list("tybug0rz")
 
+/datum/gear/donator/kits/nikos
+	name = "Caroline Nikos' belongings"
+	path = /obj/item/storage/box/large/custom_kit/nikos
+	ckeywhitelist = list("panzer1944")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
