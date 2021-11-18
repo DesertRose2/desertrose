@@ -41,6 +41,11 @@
 /datum/gear/hands/zippolighter
 	name = "Zippo Lighter"
 	path = /obj/item/lighter
+
+/datum/gear/hands/militaryzippo
+	name = "Military Zippo Lighter"
+	path = /obj/item/lighter/military
+
 /datum/gear/hands/cigar
 	name = "Cigar"
 	path = /obj/item/clothing/mask/cigarette/cigar
