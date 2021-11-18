@@ -1305,7 +1305,7 @@
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
-/datum/crafting_recipe/legionriotarmor
+/datum/crafting_recipe/legionmarinearmor
 	name = "Legion marine armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/marine/legion
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/marine,
@@ -1315,7 +1315,7 @@
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
-/datum/crafting_recipe/legionriothelmet
+/datum/crafting_recipe/legionmarinehelmet
 	name = "Legion marine helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/marine/legion
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/marine,
