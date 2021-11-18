@@ -21592,7 +21592,8 @@
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "clinicfront";
 	name = "clinic";
-	req_access = "124"
+	req_access = "124";
+	req_access_txt = "124"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	dir = 8
@@ -41025,7 +41026,8 @@
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "clinicfront";
 	name = "clinic";
-	req_access = "124"
+	req_access = "124";
+	req_access_txt = "124"
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "clinicdoorshutters";
@@ -58378,7 +58380,9 @@
 /area/f13/city)
 "uRP" = (
 /obj/structure/simple_door/bunker/glass,
-/turf/open/floor/plasteel/f13/vault_floor/white,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	dir = 5
+	},
 /area/f13/followers)
 "uRU" = (
 /obj/structure/table/wood/poker,
@@ -61603,9 +61607,9 @@
 	},
 /area/f13/ncr)
 "vUz" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
-	dir = 5
+	dir = 6
 	},
 /area/f13/followers)
 "vUF" = (
@@ -62435,10 +62439,10 @@
 	},
 /area/f13/village)
 "wmg" = (
-/obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	dir = 1
 	},
@@ -71792,8 +71796,8 @@ vDd
 wrG
 vDd
 vDd
-vUz
-eCk
+itH
+rfM
 fBS
 oqE
 vDd
@@ -72050,7 +72054,7 @@ pfP
 vDd
 psR
 uRP
-uRP
+vUz
 vDd
 vDd
 vDd
