@@ -45,6 +45,7 @@
 /datum/gear/hands/militaryzippo
 	name = "Military Zippo Lighter"
 	path = /obj/item/lighter/military
+	cost = 2
 
 /datum/gear/hands/cigar
 	name = "Cigar"
