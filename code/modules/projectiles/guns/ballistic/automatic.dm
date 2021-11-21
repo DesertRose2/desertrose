@@ -1041,14 +1041,15 @@
 		if(0)
 			select += 1
 			burst_size = 2
-			extra_damage = -3
-			spread = 5
+			extra_damage = 0
+			spread = 4
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
+			extra_damage = 3
 			spread = 0
 			fire_delay = 4
 			recoil= 0.1
@@ -1075,7 +1076,7 @@
 	can_attachments = FALSE
 	burst_size = 1
 	fire_delay = 6
-	burst_shot_delay = 2.5
+	burst_shot_delay = 2
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
@@ -1159,6 +1160,7 @@
 	can_attachments = FALSE
 	burst_size = 2
 	fire_delay = 6
+	spread = 6
 	burst_shot_delay = 2.5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1169,15 +1171,15 @@
 		if(0)
 			select = 0
 			burst_size = 2
-			spread = 10
+			spread = 6
 			extra_damage = 0
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to firing in small-bursts.</span>")
 		if(1)
 			select += 1
 			burst_size = 3
-			spread = 20
-			extra_damage = -2
+			spread = 10
+			extra_damage = -1
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1200,9 +1202,10 @@
 	burst_size = 1
 	fire_delay = 8
 	slowdown = 1.5
+	spread = 40
+	extra_damage = -5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	spread = 30
 	var/cover_open = FALSE
 
 /obj/item/gun/ballistic/automatic/m2a1/update_icon()
