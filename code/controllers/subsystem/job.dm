@@ -495,6 +495,22 @@ SUBSYSTEM_DEF(job)
 			else
 				handle_auto_deadmin_roles(M.client, rank) */
 
+	if (!job.objectives)//if objectives aren't set yet
+		if(LAZYLEN(job.objectivesList))
+			job.objectives = pick(job.objectivesList)
+		if (job.department_flag == LEGION)
+			job.objectives = job.objectivesList[rand(0,2)]//get a random one from the faction.dm objetives list
+		if (job.department_flag == NCR)
+			job.objectives = job.objectivesList[rand(0,2)]
+		if (job.department_flag == BOS)
+			job.objectives = job.objectivesList[rand(0,2)]
+		if (job.department_flag == VTCC)
+			job.objectives = job.objectivesList[rand(0,2)]
+		if (job.department_flag == TRIBAL)
+			job.objectives = job.objectivesList[rand(0,2)]
+		if (job.department_flag == FOLLOWERS)
+			job.objectives = job.objectivesList[rand(0,2)]
+
 	to_chat(M, "<b>You are the [rank].</b>")
 	if(job)
 		to_chat(M, "<b>As the [rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
@@ -502,6 +518,7 @@ SUBSYSTEM_DEF(job)
 		to_chat(M, "<FONT color='blue'><B>[job.description]</b>")
 		to_chat(M, "<FONT color='red'><b>[job.forbids]</b>")
 		to_chat(M, "<FONT color='green'><b>[job.enforces]</b>")
+		to_chat(M, "<FONT color='black'><b>[job.objectives]</b>")
 		if(job.req_admin_notify)
 			to_chat(M, "<b>You are playing a job that is important for Game Progression. If you have to disconnect immediately, please notify the admins via adminhelp. Otherwise put your locker gear back into the locker and cryo out.</b>")
 		if(job.custom_spawn_text)
