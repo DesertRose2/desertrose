@@ -156,7 +156,6 @@
 	desc = "This weapon launches balls of fire that ignite foes from a distance."
 	icon_state = "incinerator"
 	item_state = "incinerator"
-	icon ='icons/fallout/objects/melee/weapons.dmi'
 	lefthand_file = 'icons/mob/inhands/64x64_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
 	inhand_x_dimension = 64

@@ -706,6 +706,15 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	light_color = LIGHT_COLOR_CYAN
 	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5, /datum/reagent/radium = 5)
 
+/obj/item/lighter/military
+	name = "Pre-War Military Lighter"
+	icon_state = "lighter_overlay_plain"
+	desc = "That's one fancy Zippo!"
+	heat = 2500
+	light_power = 5
+	light_range = 3
+	color = "#3e4821"
+
 ///////////
 //ROLLING//
 ///////////

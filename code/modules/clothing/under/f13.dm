@@ -135,7 +135,7 @@
 	icon_state = "modif_ranger"
 	item_state = "modif_ranger"
 	item_color = "modif_ranger"
-	
+
 /obj/item/clothing/under/f13/ranger/clyde
 	name = "Ranger Chaps"
 	desc = "A desert colored short-sleeved jumpsuit with protective khaki chaps at the legs up to the thighs."
@@ -948,6 +948,7 @@
 	icon_state = "psychturtle"
 	item_state = "b_suit"
 	item_color = "psychturtle"
+
 /obj/item/clothing/under/f13/villain //Doubles as Gang Leader primary uniform for extra villainy
 	name = "green and black suit"
 	desc = "There is something evil in this suit, only a villain would wear something like that."

@@ -1288,7 +1288,7 @@
 /datum/crafting_recipe/legionriotarmor
 	name = "Legion riot armor"
 	result = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice/legion
-	reqs = list(/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice,
+	reqs = list(/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice=1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
@@ -1298,27 +1298,27 @@
 /datum/crafting_recipe/legionriothelmet
 	name = "Legion riot helmet"
 	result = /obj/item/clothing/head/helmet/f13/rangerbroken/legion
-	reqs = list(/obj/item/clothing/head/helmet/f13/rangerbroken,
+	reqs = list(/obj/item/clothing/head/helmet/f13/rangerbroken=1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
-/datum/crafting_recipe/legionriotarmor
+/datum/crafting_recipe/legionmarinearmor
 	name = "Legion marine armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/marine/legion
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat/marine,
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat/marine=1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_availible = FALSE
 
-/datum/crafting_recipe/legionriothelmet
+/datum/crafting_recipe/legionmarinehelmet
 	name = "Legion marine helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/marine/legion
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat/marine,
+	reqs = list(/obj/item/clothing/head/helmet/f13/combat/marine=1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING

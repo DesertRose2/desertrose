@@ -48,7 +48,7 @@
 	neck = 			/obj/item/storage/belt/holster
 	id =            /obj/item/card/id/silver
 	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	belt = 			/obj/item/gun/ballistic/automatic/pistol/n99/executive
 	backpack_contents = list(
 		/obj/item/storage/box/citizenship_permits = 1, \
@@ -104,7 +104,7 @@
 	id =            /obj/item/card/id/silver
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
 	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	belt = 			/obj/item/storage/belt/military/assault
 	neck = 			/obj/item/storage/belt/holster
@@ -180,7 +180,7 @@
 	jobtype = 		/datum/job/vtcc/f13merchant
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/merch_lead
 	id =            /obj/item/card/id/silver
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	r_pocket = 		/obj/item/pda/quartermaster
 	shoes = 		/obj/item/clothing/shoes/f13/fancy
 	uniform = 		/obj/item/clothing/under/f13/cowboyg
@@ -247,7 +247,7 @@
 	id =            /obj/item/card/id/silver
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	r_pocket = /obj/item/clipboard
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
@@ -315,7 +315,7 @@
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc
 	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/kitchen/knife/combat=1,
@@ -382,7 +382,7 @@
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	head = 			/obj/item/clothing/head/helmet/riot/vaultsec/vc/scout
 	suit = 			/obj/item/clothing/suit/armor/f13/riot/vault/scout
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/kitchen/knife/combat=1,
@@ -518,7 +518,7 @@
 	id =            /obj/item/card/id
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/needler=1,
@@ -582,7 +582,7 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/lighter/fusion
 	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
-	l_pocket =		/obj/item/storage/bag/money/medium/settler
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	backpack_contents = list(
 		/obj/item/book/manual/ripley_build_and_repair=1,
 		/obj/item/bodypart/l_arm/robot=1,
@@ -701,7 +701,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/card/data/wpermit
-	l_pocket = /obj/item/storage/bag/money/medium/settler
+	l_pocket = /obj/item/storage/bag/money/small/vaultcity
 	backpack_contents = list(
 		/obj/item/pda=1
 		)
