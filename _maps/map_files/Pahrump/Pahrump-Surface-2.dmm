@@ -21584,16 +21584,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "hOk" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "clinicdoorshutters";
-	name = "Clinic shutters"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "clinicfront";
 	name = "clinic";
-	req_access = "124";
 	req_access_txt = "124"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "clinicdoorshutters";
+	name = "Clinic shutters"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	dir = 8
@@ -41023,15 +41022,14 @@
 /area/f13/village)
 "oEB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/medical/glass{
-	id_tag = "clinicfront";
-	name = "clinic";
-	req_access = "124";
-	req_access_txt = "124"
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "clinicdoorshutters";
 	name = "Clinic shutters"
+	},
+/obj/machinery/door/airlock/medical/glass{
+	id_tag = "clinicfront";
+	name = "clinic";
+	req_access_txt = "124"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	dir = 4
