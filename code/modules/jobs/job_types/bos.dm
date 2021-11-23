@@ -12,7 +12,7 @@ Main doors: ACCESS_CAPTAIN 20
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_BROTHERHOOD
 
-	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
+	objectivesList = list("The Elders recommend the following goal for this week: Establish an outpost at the radio tower and monitor frequencies."," The Elders recommend the following goal for this week: Study technology that can benefit our cause","The Elders recommend the following goal for this week: Acquire or confiscate dangerous technology, adhering to the codex","The Elders recommend the following goal for this week: Open a village topside where wasters can learn of our rightful mission")
 
 /datum/outfit/job/bos
 	name = "bosdatums"
@@ -108,6 +108,7 @@ Head Paladin
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentlead, //Gatling for suppressive fire but holds a cooldown after roughly 30~ rounds fired. Low power, low damage, high rate of fire. Infinate ammo.
@@ -185,6 +186,7 @@ Head Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/hssword,
@@ -271,6 +273,7 @@ Knight Captain
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Sentinel"
 	selection_color = "#7f8c8d"
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/captech,
