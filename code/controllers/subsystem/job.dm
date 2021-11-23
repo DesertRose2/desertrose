@@ -501,9 +501,9 @@ SUBSYSTEM_DEF(job)
 		if (job.department_flag == LEGION)
 			job.objectives = job.objectivesList[rand(0,2)]//get a random one from the faction.dm objetives list
 		if (job.department_flag == NCR)
-			job.objectives = job.objectivesList[rand(0,2)]
+			job.objectives = job.objectivesList[rand(0,3)]
 		if (job.department_flag == BOS)
-			job.objectives = job.objectivesList[rand(0,2)]
+			job.objectives = job.objectivesList[rand(0,3)]
 		if (job.department_flag == VTCC)
 			job.objectives = job.objectivesList[rand(0,2)]
 		if (job.department_flag == TRIBAL)
