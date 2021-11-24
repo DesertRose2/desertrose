@@ -1316,8 +1316,6 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
-/obj/item/gun/energy/laser/aer9,
-/obj/item/gun/energy/laser/aer9,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -3720,14 +3718,10 @@
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/rnd)
 "cFd" = (
-/obj/machinery/light/fo13colored/Aqua{
-	dir = 4;
-	name = "light fixture"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "redrustyfull"
-	},
+/obj/machinery/light/small,
+/obj/structure/table,
+/obj/item/clothing/glasses/sunglasses/blindfold,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "cFE" = (
 /obj/structure/table/optable/abductor,
@@ -14965,9 +14959,10 @@
 	},
 /area/f13/brotherhood/leisure)
 "kur" = (
-/obj/machinery/light/small,
-/obj/structure/table,
-/obj/item/clothing/glasses/sunglasses/blindfold,
+/obj/structure/chair/f13chair2{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "kve" = (
@@ -15649,10 +15644,7 @@
 	},
 /area/f13/bunker)
 "kRD" = (
-/obj/structure/chair/f13chair2{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "kRE" = (
@@ -18119,11 +18111,17 @@
 /turf/open/floor/wood,
 /area/f13/tunnel)
 "mGo" = (
-/obj/effect/decal/cleanable/blood/drip,
-/obj/machinery/button/crematorium{
-	pixel_y = -32
+/obj/structure/target_stake{
+	anchored = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/obj/machinery/light/fo13colored/Aqua{
+	dir = 8;
+	name = "light fixture"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "redrustyfull"
+	},
 /area/f13/brotherhood/operations)
 "mGH" = (
 /obj/structure/dresser,
@@ -19177,11 +19175,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "nuc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bodycontainer/crematorium{
-	dir = 8
+/obj/machinery/light/fo13colored/Aqua{
+	dir = 4;
+	name = "light fixture"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "redrustyfull"
+	},
 /area/f13/brotherhood/operations)
 "nuh" = (
 /obj/structure/sign/poster/prewar/poster90,
@@ -23935,10 +23936,6 @@
 /obj/structure/target_stake{
 	anchored = 1
 	},
-/obj/machinery/light/fo13colored/Aqua{
-	dir = 8;
-	name = "light fixture"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -28382,15 +28379,6 @@
 /obj/item/toy/prize/reticence,
 /turf/open/floor/wood/f13/oak,
 /area/f13/tunnel)
-"tnh" = (
-/obj/structure/target_stake{
-	anchored = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "redrustyfull"
-	},
-/area/f13/brotherhood/operations)
 "tnp" = (
 /turf/closed/wall/f13/wood,
 /area/f13/sewer)
@@ -99638,7 +99626,7 @@ gEZ
 xAa
 jWb
 gEZ
-gEZ
+hcx
 xxn
 gEZ
 pNS
@@ -100141,10 +100129,10 @@ gEZ
 gEZ
 gEZ
 swZ
-gHh
-kur
+cFd
 gEZ
-qvo
+mGo
+bDG
 bDG
 bDG
 gcI
@@ -100398,9 +100386,9 @@ bdP
 czn
 dJD
 uET
-uET
-kRD
+kur
 gEZ
+bDG
 bDG
 bDG
 bDG
@@ -100655,11 +100643,11 @@ gHh
 gHh
 bRX
 gHh
-gHh
-mGo
+kRD
 gEZ
 bDG
-tnh
+qvo
+bDG
 bDG
 gcI
 vof
@@ -100913,9 +100901,9 @@ cCg
 dJM
 fRF
 hWJ
-nuc
 gEZ
-cFd
+nuc
+bDG
 bDG
 bDG
 bDG
