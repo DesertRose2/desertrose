@@ -9,7 +9,7 @@
 	minimal_access = list(ACCESS_NCR)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
-	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
+	objectivesList = list("High command recommends the following goal for this week: Establish an outpost at the radio tower","High command recommends the following goal for this week: Scout the region for raider activity and detain any individuals breaking NCR law in our territory","High command recommends the following goal for this week: Establish good relations with unaligned individuals and improve the diplomatic standing of the NCR","High command recommends the following goal for this week: Gather funds from the wasteland by providing a service and taxing people")
 
 /datum/outfit/job/ncr/
 	name = "NCRdatums"
@@ -176,6 +176,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/ltline,	//NCR R91
@@ -292,6 +293,7 @@ Sergeant First Class
 	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_FIRSTSERGEANT
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/sfcinfantry, 	//NCR R91
@@ -828,6 +830,7 @@ Veteran Ranger
 	selection_color = "#ffeeaa"
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
 	outfit = /datum/outfit/job/ncr/f13vetranger
+	req_admin_notify = 1
 
 	loadout_options = list(
 	/datum/outfit/loadout/vrclassic,	//AMR
