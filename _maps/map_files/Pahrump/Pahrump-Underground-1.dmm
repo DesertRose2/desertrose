@@ -33686,7 +33686,9 @@
 	},
 /area/f13/clinic)
 "wGi" = (
-/obj/machinery/power/am_control_unit,
+/obj/machinery/power/am_control_unit{
+	anchored = 1
+	},
 /obj/machinery/door/poddoor/shutters/radiation{
 	id = "bosengineaccess"
 	},
