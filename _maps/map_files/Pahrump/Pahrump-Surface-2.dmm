@@ -9797,6 +9797,7 @@
 /area/f13/building)
 "dtS" = (
 /obj/structure/rack,
+/obj/item/clothing/head/welding/weldingfire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -32785,7 +32786,7 @@
 /area/f13/wasteland)
 "kWX" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/item/clothing/head/welding/weldingfire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain0"
 	},
@@ -46421,12 +46422,6 @@
 "pHL" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
-	},
-/obj/item/clothing/head/helmet/f13/raider/eyebot/sentry{
-	pixel_y = 4
-	},
-/obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron{
-	pixel_y = -10
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -61155,6 +61150,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
+/obj/item/clothing/head/welding/weldingjapan,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
