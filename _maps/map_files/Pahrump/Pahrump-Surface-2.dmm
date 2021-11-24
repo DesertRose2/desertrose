@@ -1634,6 +1634,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera{
+	dir = 4;
+	network = list("BoS")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "axf" = (
@@ -29400,6 +29404,13 @@
 "jWO" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
+"jWP" = (
+/obj/machinery/camera{
+	dir = 4;
+	network = list("BoS")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood)
 "jWR" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -69265,6 +69276,15 @@
 	icon_state = "verticaloutermain0"
 	},
 /area/f13/wasteland)
+"xuR" = (
+/obj/machinery/camera{
+	dir = 4;
+	network = list("BoS")
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood)
 "xvj" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -105805,7 +105825,7 @@ bQI
 dAo
 bQI
 bQI
-bQI
+jWP
 dHK
 bQI
 bQI
@@ -108372,7 +108392,7 @@ dHK
 hcL
 bQI
 dHK
-tBN
+xuR
 ijj
 iHR
 dHK
