@@ -15863,6 +15863,7 @@
 	pixel_y = -15
 	},
 /obj/machinery/door/unpowered/wooddoor{
+	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
 	req_access_txt = "131"

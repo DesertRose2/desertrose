@@ -7229,10 +7229,6 @@
 	},
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/tunnel)
-"fcw" = (
-/obj/structure/sign/poster/prewar/poster75,
-/turf/closed/wall/r_wall,
-/area/f13/brotherhood/offices1st)
 "fcA" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -17533,7 +17529,7 @@
 	pixel_y = 30
 	},
 /mob/living/simple_animal/hostile/retaliate/frog{
-	name = "Gerro";
+	name = "Gearo";
 	pixel_y = 10
 	},
 /obj/structure/pondlily_big,
@@ -18525,10 +18521,6 @@
 	color = "#c5bab2"
 	},
 /area/f13/legion)
-"mWM" = (
-/obj/structure/sign/poster/prewar/poster75,
-/turf/closed/wall/r_wall,
-/area/f13/brotherhood/medical)
 "mXW" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/f13{
@@ -92228,7 +92220,7 @@ ayq
 rLE
 mrV
 mrV
-fcw
+vYw
 vYw
 vYw
 bIA
@@ -96853,7 +96845,7 @@ pew
 eRw
 oMK
 hPn
-mWM
+hPn
 wuG
 nBh
 osk
