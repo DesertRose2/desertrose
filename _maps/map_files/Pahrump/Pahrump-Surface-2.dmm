@@ -36389,6 +36389,9 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
 	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
 /turf/open/floor/plating/f13/inside/gravel{
 	barefootstep = "sand";
 	clawfootstep = "sand";
@@ -36802,6 +36805,9 @@
 /area/f13/legion)
 "mmt" = (
 /obj/structure/stone_tile/block/burnt{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/plating/f13/inside/gravel{
@@ -37527,6 +37533,9 @@
 	dir = 1;
 	pixel_x = 15
 	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
 /turf/open/floor/plating/f13/inside/gravel{
 	barefootstep = "sand";
 	clawfootstep = "sand";
@@ -37792,6 +37801,9 @@
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4;
 	pixel_x = -15
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
 	},
 /turf/open/floor/plating/f13/inside/gravel{
 	barefootstep = "sand";
