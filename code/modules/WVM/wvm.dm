@@ -12,6 +12,7 @@
 #define CASH_AUR_VENDOR 100 /* 100 caps to 1 AUR */
 #define CASH_DEN_VENDOR 4 /* 4 caps to 1 DEN */
 #define CASH_NCR_VENDOR 0.4 /* $100 to 40 caps */
+#define CASH_BOS_VENDOR 2 /* 2 caps to 1 BAWLS */
 
 // Total number of caps value spent in the Trading Protectrons Vendors
 GLOBAL_VAR_INIT(vendor_cash, 0)
@@ -776,6 +777,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	dat += "1 NCR dollar = [CASH_NCR_VENDOR] bottle caps value <br>"
 	dat += "1 Denarius = [CASH_DEN_VENDOR] bottle caps value <br>"
 	dat += "1 Aureus = [CASH_AUR_VENDOR] bottle caps value <br>"
+	dat += "1 BAWLS cap = [CASH_BOS_VENDOR] bottle caps value <br>"
 	dat += "</div>"
 	dat += "<br>"
 	dat +="<div class='statusDisplay'>"
@@ -863,6 +865,14 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	else if(istype(I, /obj/item/stack/f13Cash/aureus))
 		var/obj/item/stack/f13Cash/aureus/currency = I
 		var/inserted_value = FLOOR(currency.amount * 100, 1)
+		stored_caps += inserted_value
+		I.use(currency.amount)
+		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+		to_chat(usr, "You put [inserted_value] bottle caps value to a vending machine.")
+		src.ui_interact(usr)
+	else if(istype(I, /obj/item/stack/f13Cash/bawls))
+		var/obj/item/stack/f13Cash/bawls/currency = I
+		var/inserted_value = FLOOR(currency.amount * 2, 1)
 		stored_caps += inserted_value
 		I.use(currency.amount)
 		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
