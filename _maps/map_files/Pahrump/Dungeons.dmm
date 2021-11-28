@@ -8775,6 +8775,9 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
+/obj/structure/destructible/tribal_torch/lit{
+	pixel_y = 10
+	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
 	desc = "Cool moss that adds a nice fuzzy texture to everything.";
@@ -15876,6 +15879,9 @@
 	light_color = "#800080";
 	light_range = 2;
 	light_sources = 1
+	},
+/obj/structure/destructible/tribal_torch/lit{
+	pixel_y = 10
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
