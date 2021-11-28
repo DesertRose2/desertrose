@@ -206,7 +206,7 @@ Head Scribe
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/explosive)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/nitro)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)	
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
@@ -438,8 +438,8 @@ Paladin
 	title = "Paladin"
 	flag = F13PALADIN
 	faction = "BOS"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -560,7 +560,7 @@ Proctor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/explosive)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/nitro)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)	
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/flashbang)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
