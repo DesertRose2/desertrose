@@ -8775,6 +8775,9 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
+/obj/structure/destructible/tribal_torch/lit{
+	pixel_y = 10
+	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
 	desc = "Cool moss that adds a nice fuzzy texture to everything.";
@@ -15862,11 +15865,6 @@
 /obj/structure/stone_tile/center{
 	pixel_y = -15
 	},
-/obj/machinery/door/unpowered/wooddoor{
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "131"
-	},
 /turf/open/floor/plasteel/cult,
 /area/f13/tribe)
 "ygT" = (
@@ -15881,6 +15879,9 @@
 	light_color = "#800080";
 	light_range = 2;
 	light_sources = 1
+	},
+/obj/structure/destructible/tribal_torch/lit{
+	pixel_y = 10
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";

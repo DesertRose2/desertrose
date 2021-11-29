@@ -158,7 +158,7 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/revolver/revolver45
-	name = "Casull Cowboy .45"
+	name = "Casull .45"
 	desc = "A Casull revolver; where its name came from though is a msytery as its origins have been lost to the mists of time."
 	item_state = "45revolver"
 	icon_state = "45revolver"
