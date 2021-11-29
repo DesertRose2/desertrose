@@ -27,6 +27,7 @@
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three)
 	taunt_chance = 30
 	blood_volume = 0
+	var/heavy_emp_damage = 25
 
 	emote_taunt_sound = list('sound/f13npc/handy/taunt1.ogg', 'sound/f13npc/handy/taunt2.ogg')
 	emote_taunt = list("raises a saw")

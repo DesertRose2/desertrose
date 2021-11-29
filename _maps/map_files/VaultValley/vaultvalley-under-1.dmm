@@ -810,6 +810,16 @@
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"is" = (
+/obj/structure/ladder/unbreakable{
+	down = metrodungeon;
+	id = metrodungeonentrance;
+	up = null
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/tunnel)
 "ix" = (
 /obj/structure/toilet{
 	pixel_y = 13
@@ -2394,16 +2404,6 @@
 "vH" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
-"vI" = (
-/obj/structure/fluff/rails,
-/obj/docking_port/stationary{
-	dir = 4;
-	id = "raider_subway";
-	name = "Station";
-	width = 11
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "vP" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -3531,6 +3531,14 @@
 /obj/item/gun/energy/gammagun,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"Gk" = (
+/obj/structure/fluff/rails,
+/obj/docking_port/stationary{
+	dir = 4;
+	id = "raider_subway"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "Gx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -52914,7 +52922,7 @@ PC
 sX
 vP
 vP
-vI
+Gk
 vP
 vP
 vP
@@ -53422,7 +53430,7 @@ vH
 vH
 vH
 PC
-je
+is
 je
 je
 vw
@@ -53679,7 +53687,7 @@ PC
 PC
 PC
 PC
-je
+is
 je
 je
 vw
