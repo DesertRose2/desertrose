@@ -636,7 +636,7 @@
 
 	/obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
 	name = "Ptolemaic combat armor"
-	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull and a red tabard. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude red paint in the stylized Legion symbols of Painted Rock, and a ludicrous, gilded codpiece."
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, ztylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
 	icon_state = "ptolemaic_armor"
 	item_state = "ptolemaic_armor"
 
