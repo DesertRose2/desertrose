@@ -318,7 +318,8 @@ Vexillarius
 	backpack_contents = list(
 		/obj/item/claymore/machete/spatha=1,
 		/obj/item/reagent_containers/pill/patch/healingpowder=1,
-		/obj/item/megaphone/cornu=1)
+		/obj/item/megaphone/cornu=1,
+		/obj/item/storage/bag/money/small/legofficers=1)
 
 /datum/outfit/loadout/vexvulp
 	name = "Vulpes (Fox)"
