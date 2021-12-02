@@ -394,14 +394,6 @@
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/ncr
-	name = "NCR T-45d power armor"
-	desc = "(VIII) A set of T-45d power armor put into use by the special forces of the New California Republic."
-	icon_state = "ncr45powerarmor"
-	item_state = "ncr45powerarmor"
-	slowdown = 0.24
-	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
-
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
 	name = "gunslinger T-51b"
 	desc = "(IX) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
@@ -1087,3 +1079,10 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+
+	/obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
+	name = "Ptolemaic combat armor"
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, stylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
+	icon_state = "ptolemaic_armor"
+	item_state = "ptolemaic_armor"
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
