@@ -43,6 +43,7 @@
 	projectiletype = /obj/item/projectile/beam
 	projectilesound = 'sound/weapons/resonator_fire.ogg'
 	blood_volume = 0
+	var/heavy_emp_damage = 25
 
 /mob/living/simple_animal/hostile/securitron/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
