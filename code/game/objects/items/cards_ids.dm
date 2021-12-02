@@ -1200,3 +1200,11 @@
 
 /obj/item/card/data/wpermit
 	name = "\improper VTCC weapons permit"
+
+//rebound
+/obj/item/card/id/rusted/rebound
+	name = "rebound medalion"
+	desc = "An unfamiliar rectangular medalion made out of steel. It has a dogtag tied to it with 'Bakersfield' stamped on it."
+	icon_state = "rebound"
+	item_state = "rustedncrtag"
+	uses_overlays = FALSE

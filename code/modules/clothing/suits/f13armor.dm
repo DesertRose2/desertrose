@@ -394,6 +394,14 @@
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/ncr
+	name = "NCR T-45d power armor"
+	desc = "(VIII) A set of T-45d power armor put into use by the special forces of the New California Republic."
+	icon_state = "ncr45powerarmor"
+	item_state = "ncr45powerarmor"
+	slowdown = 0.24
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
 	name = "gunslinger T-51b"
 	desc = "(IX) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
