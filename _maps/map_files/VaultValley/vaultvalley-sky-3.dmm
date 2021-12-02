@@ -1532,6 +1532,12 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"nY" = (
+/obj/machinery/door/airlock/highsecurity{
+	req_access_txt = 137
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "oa" = (
 /obj/machinery/computer/arcade,
 /turf/open/floor/wood/f13/carpet,
@@ -38199,8 +38205,8 @@ El
 El
 El
 El
-El
-El
+nY
+nY
 El
 El
 El
@@ -38456,8 +38462,8 @@ RO
 RO
 RO
 RO
-RO
-RO
+hY
+hY
 RO
 RO
 El
@@ -41014,11 +41020,11 @@ hY
 hY
 hY
 hY
-hY
-hY
-hY
-hY
-hY
+El
+El
+El
+El
+El
 hY
 hY
 hY
@@ -41274,8 +41280,8 @@ hY
 hY
 hY
 hY
-hY
-hY
+yD
+El
 hY
 hY
 hY
@@ -41531,8 +41537,8 @@ hY
 hY
 hY
 hY
-hY
-hY
+yD
+El
 hY
 hY
 hY
@@ -41788,8 +41794,8 @@ hY
 hY
 hY
 hY
-hY
-hY
+yD
+El
 hY
 hY
 hY
@@ -42042,11 +42048,11 @@ hY
 hY
 hY
 hY
-hY
-hY
-hY
-hY
-hY
+El
+El
+El
+El
+El
 hY
 hY
 hY
@@ -45154,8 +45160,8 @@ hY
 hY
 hY
 hY
-RO
-El
+hY
+nY
 gU
 gU
 gU
@@ -45411,8 +45417,8 @@ hY
 hY
 hY
 hY
-RO
-El
+hY
+nY
 gU
 gU
 gU
