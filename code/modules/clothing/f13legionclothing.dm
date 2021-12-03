@@ -634,7 +634,7 @@
 	transfer_prints = FALSE
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 35, "energy" = 20, "bomb" = 35, "bio" = 35, "rad" = 35, "fire" = 0, "acid" = 0)
 
-	/obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
+	/obj/item/clothing/suit/armor/f13/combat/marine/centurion
 	name = "Ptolemaic combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, stylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
 	icon_state = "ptolemaic_armor"
