@@ -784,7 +784,7 @@
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
-	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+	extra_speed = TILES_TO_PIXELS(70) //Hitscan with an improved barrel installed. //Reduced by 15 because otherwise it is indeed a hitscan
 
 
 //////////////////
