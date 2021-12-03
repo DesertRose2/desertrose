@@ -83,3 +83,9 @@
 	icon_state = "engi_dep_jacket"
 	item_state = "engi_dep_jacket"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 45)
+
+/obj/item/clothing/suit/toggle/labcoat/rosa
+	name = "Rosa's Labcoat"
+	desc = "(I) A normal labcoat dyed a soft pink. On the chest pocket there's a small patch of a strawberry."
+	icon_state = "rosa_labcoat_closed"
+	item_state = "rosa_labcoat_closed"

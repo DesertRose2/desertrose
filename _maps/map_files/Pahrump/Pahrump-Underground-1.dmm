@@ -10583,6 +10583,7 @@
 /obj/structure/closet/cabinet/anchored{
 	pixel_y = 10
 	},
+/obj/item/clothing/suit/hooded/f13/acolytej,
 /turf/open/floor/carpet/red,
 /area/f13/legion)
 "hrv" = (
@@ -13806,6 +13807,8 @@
 /obj/item/clothing/under/f13/campfollowermale,
 /obj/item/clothing/under/f13/campfollowermale,
 /obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/neck/apron/labor,
+/obj/item/clothing/neck/apron/labor,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -15484,6 +15487,8 @@
 /obj/item/clothing/under/f13/legauxilia,
 /obj/item/clothing/under/f13/legauxiliaf,
 /obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/neck/mantle/treasurer,
+/obj/item/clothing/neck/mantle/treasurer,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2";
 	icon_state = "housewood2-broken"
@@ -21098,6 +21103,24 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/water,
 /area/f13/brotherhood/leisure)
+"oGZ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/closet/cabinet/anchored{
+	pixel_y = 10
+	},
+/obj/item/clothing/suit/hooded/f13/acolyte,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/neck/apron/labor/forge,
+/obj/item/clothing/neck/apron/labor/forge,
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "oHu" = (
 /obj/structure/fence/handrail{
 	density = 0;
@@ -26648,6 +26671,8 @@
 /obj/item/clothing/under/f13/legauxilia,
 /obj/item/clothing/under/f13/legauxiliaf,
 /obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/neck/apron/medicus,
+/obj/item/clothing/neck/apron/medicus,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -26738,6 +26763,8 @@
 /obj/item/clothing/under/f13/campfollowerfemale,
 /obj/item/clothing/under/f13/campfollowerfemale,
 /obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/neck/apron/chef,
+/obj/item/clothing/neck/apron/chef,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -97767,7 +97794,7 @@ uoO
 uoO
 uoO
 mlv
-sfc
+oGZ
 qny
 kmm
 rZb

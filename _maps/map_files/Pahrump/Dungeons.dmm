@@ -290,6 +290,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"avr" = (
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ayp" = (
 /obj/effect/decal/cleanable/cobweb,
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
@@ -922,6 +929,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/f13/bunker)
+"bxF" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	dir = 4;
+	pixel_x = -12
+	},
+/obj/structure/fence/handrail{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "byG" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/radroach,
@@ -1375,6 +1393,15 @@
 /obj/structure/sign/poster/prewar/poster61,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"ceb" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/machinery/light/floor{
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ced" = (
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -2191,6 +2218,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"dCk" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "dCI" = (
 /obj/structure/table,
 /obj/effect/turf_decal/stripes/line{
@@ -3025,6 +3058,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"eVQ" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	pixel_y = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "eWr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -3046,6 +3088,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"eYw" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "eZw" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/effect/decal/cleanable/dirt,
@@ -3266,12 +3316,21 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"foJ" = (
+/turf/closed/wall/f13/supermart,
+/area/f13/wasteland)
 "fpn" = (
 /obj/structure/wreck/trash/brokenvendor,
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"fpP" = (
+/obj/structure/fence/handrail{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "fpQ" = (
 /obj/structure/chair/wood/wings{
 	dir = 4
@@ -3881,6 +3940,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"gnz" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "gnH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4184,6 +4249,9 @@
 "gKr" = (
 /turf/closed/wall/f13/supermart,
 /area/f13/bunker)
+"gKz" = (
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "gKO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash/large,
@@ -4302,6 +4370,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"gPW" = (
+/obj/machinery/door/airlock/freezer{
+	name = "door";
+	req_access_txt = "136; 140"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
+/area/f13/wasteland)
 "gQm" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/tunnel{
@@ -4901,6 +4976,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/radiation)
+"hEa" = (
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "hFs" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -5860,6 +5941,11 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/bunker)
+"iXE" = (
+/obj/effect/turf_decal/stripes,
+/obj/effect/turf_decal/caution/stand_clear,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "iXL" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain1"
@@ -7334,6 +7420,13 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"ljD" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "lkw" = (
 /obj/structure/wreck/trash/three_barrels,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -7871,6 +7964,17 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"mmx" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/fence/handrail{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "mmy" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -8411,6 +8515,18 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
+"ncD" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	pixel_y = 16
+	},
+/obj/structure/fence/handrail{
+	density = 0;
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ndi" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -9695,6 +9811,13 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
+"oRT" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "oTJ" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -10146,6 +10269,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
+"pxo" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	color = "#fffa00"
+	},
+/area/f13/wasteland)
 "pxp" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -11234,6 +11362,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"rjx" = (
+/obj/structure/fence/handrail{
+	density = 0;
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "rkE" = (
 /obj/structure/table/reinforced,
 /obj/item/trash/f13/electronic/toaster{
@@ -11709,6 +11845,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"rWY" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "rYg" = (
 /obj/effect/decal/cleanable/robot_debris/limb,
 /obj/effect/decal/cleanable/glass,
@@ -11857,6 +12000,16 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/dirt,
 /area/f13/tribe)
+"shG" = (
+/obj/structure/ladder/unbreakable{
+	id = "rvertipad";
+	name = "Lab"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
+/area/f13/wasteland)
 "shO" = (
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/plating/f13/inside/mountain{
@@ -12081,6 +12234,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
+"syn" = (
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "syz" = (
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
 /turf/open/floor/plating/f13/inside/mountain{
@@ -12386,6 +12546,13 @@
 	dir = 8
 	},
 /area/f13/radiation)
+"sSN" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "sST" = (
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
@@ -12478,6 +12645,13 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/bunker)
+"tcI" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "tes" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib3-old";
@@ -12809,11 +12983,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"tHY" = (
+/turf/closed/wall/f13/store,
+/area/f13/wasteland)
 "tIj" = (
 /mob/living/simple_animal/hostile/mirelurk/baby,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"tJx" = (
+/obj/effect/turf_decal/stripes,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "tJz" = (
 /mob/living/simple_animal/hostile/radroach,
 /obj/effect/decal/cleanable/dirt,
@@ -12864,6 +13045,15 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"tNG" = (
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/obj/machinery/light/floor{
+	pixel_y = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "tNU" = (
 /obj/structure/stone_tile/block/burnt,
 /obj/item/candle/tribal_torch,
@@ -14871,6 +15061,9 @@
 	name = "moss patch"
 	},
 /area/f13/tribe)
+"wOU" = (
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
+/area/f13/wasteland)
 "wPe" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -15220,6 +15413,9 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/bunker)
+"xoD" = (
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "xoU" = (
 /obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/f13{
@@ -15381,6 +15577,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"xzj" = (
+/obj/effect/turf_decal/stripes,
+/obj/machinery/light/floor,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "xzA" = (
 /obj/machinery/door/airlock/command{
 	locked = 1
@@ -15815,6 +16016,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"ydP" = (
+/obj/effect/turf_decal/stripes,
+/obj/machinery/light/floor{
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "yeh" = (
 /mob/living/simple_animal/hostile/raider/baseball,
 /turf/open/indestructible/ground/inside/mountain,
@@ -16438,26 +16646,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
 heT
 "}
 (3,1,1) = {"
@@ -16695,26 +16903,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ncD
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+rjx
+bxF
+tHY
 heT
 "}
 (4,1,1) = {"
@@ -16952,26 +17160,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+fpP
+tHY
 heT
 "}
 (5,1,1) = {"
@@ -17209,26 +17417,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+xoD
+hEa
+avr
+hEa
+syn
+hEa
+tNG
+syn
+hEa
+avr
+hEa
+xoD
+fpP
+tHY
 heT
 "}
 (6,1,1) = {"
@@ -17466,26 +17674,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+tJx
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+dCk
+fpP
+tHY
 heT
 "}
 (7,1,1) = {"
@@ -17723,26 +17931,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+xzj
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+sSN
+fpP
+tHY
 heT
 "}
 (8,1,1) = {"
@@ -17980,26 +18188,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+tJx
+gKz
+pxo
+pxo
+pxo
+pxo
+gKz
+gKz
+gKz
+gKz
+gKz
+dCk
+fpP
+tHY
 heT
 "}
 (9,1,1) = {"
@@ -18237,26 +18445,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+iXE
+gKz
+gKz
+gKz
+gKz
+gKz
+pxo
+pxo
+pxo
+gKz
+gKz
+oRT
+fpP
+tHY
 heT
 "}
 (10,1,1) = {"
@@ -18494,26 +18702,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+ydP
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+pxo
+gKz
+ceb
+fpP
+tHY
 heT
 "}
 (11,1,1) = {"
@@ -18751,26 +18959,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+tJx
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+pxo
+gKz
+dCk
+fpP
+tHY
 heT
 "}
 (12,1,1) = {"
@@ -19008,26 +19216,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+iXE
+gKz
+gKz
+gKz
+gKz
+gKz
+pxo
+pxo
+pxo
+gKz
+gKz
+oRT
+fpP
+tHY
 heT
 "}
 (13,1,1) = {"
@@ -19265,26 +19473,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+tJx
+gKz
+pxo
+pxo
+pxo
+pxo
+gKz
+gKz
+gKz
+gKz
+gKz
+dCk
+fpP
+tHY
 heT
 "}
 (14,1,1) = {"
@@ -19522,26 +19730,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+xzj
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+sSN
+fpP
+tHY
 heT
 "}
 (15,1,1) = {"
@@ -19779,26 +19987,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+tHY
+ljD
+xoD
+xoD
+xoD
+xoD
+tJx
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+gKz
+dCk
+fpP
+tHY
 heT
 "}
 (16,1,1) = {"
@@ -20036,26 +20244,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+foJ
+foJ
+gPW
+foJ
+foJ
+xoD
+xoD
+gnz
+rWY
+gnz
+tcI
+gnz
+eVQ
+tcI
+gnz
+rWY
+gnz
+xoD
+fpP
+tHY
 heT
 "}
 (17,1,1) = {"
@@ -20293,26 +20501,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+foJ
+wOU
+wOU
+wOU
+foJ
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+xoD
+fpP
+tHY
 heT
 "}
 (18,1,1) = {"
@@ -20550,26 +20758,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+foJ
+wOU
+shG
+wOU
+foJ
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+eYw
+mmx
+tHY
 heT
 "}
 (19,1,1) = {"
@@ -20807,26 +21015,26 @@ heT
 heT
 heT
 heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
-heT
+foJ
+foJ
+foJ
+foJ
+foJ
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
+tHY
 heT
 "}
 (20,1,1) = {"

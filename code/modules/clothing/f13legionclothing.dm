@@ -185,6 +185,13 @@
 	icon_state = "acolyte"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 
+/obj/item/clothing/head/hooded/cloakhood/f13/acolytej
+	name = "acolyte hood"
+	desc = "(I) The hood of the Acolyte, pulled over the wearer's head to shroud the Alcolyte in Mars' will and path so they may see it.."
+	icon_state = "acolytej"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+
+
 //Why are these a thing
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "legion veteran decan helmet"
@@ -359,9 +366,20 @@
 	name = "acolyte robe"
 	desc = "(I) Those who wear the garmets have been chosen by a Priestess of Mars to work under them. Made of fine cloth and stitched carefully, this shows everyone that you are on the Mars' path."
 	icon_state = "acolyte"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/acolyte
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+
+//Julia custom item
+/obj/item/clothing/suit/hooded/f13/acolytej
+	name = "acolyte robe"
+	desc = "(I) Those who wear the garmets have been chosen by a Priestess of Mars to work under them. Made of fine cloth and stitched carefully, this shows everyone that you are on the Mars' path."
+	icon_state = "acolytej"
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/acolytej
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+
 
 /obj/item/clothing/suit/f13/legion/praetorian
 	name = "legion praetorian armor"
@@ -434,6 +452,7 @@
 	desc = "Thin cotton robe for males, short sleeved with a leather belt, ends just above the knees."
 	icon_state = "legaux"
 	item_state = "legaux"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/crafter
 	item_color = "legskirt"
 	lefthand_file = 'icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing_righthand.dmi'
@@ -443,6 +462,7 @@
 	desc = "Thin cotton robe for females, kneelength and held together by a black sash."
 	icon_state = "legauxf"
 	item_state = "legauxf"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/crafter
 	item_color = "legskirt"
 	lefthand_file = 'icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing_righthand.dmi'
