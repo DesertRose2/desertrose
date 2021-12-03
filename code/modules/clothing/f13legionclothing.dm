@@ -640,7 +640,7 @@
 	icon_state = "ptolemaic_armor"
 	item_state = "ptolemaic_armor"
 
-	/obj/item/clothing/head/helmet/f13/combat/marine/legion/centurion
+	/obj/item/clothing/head/helmet/f13/combat/marine/centurion
 	name = "Ptolemaic combat helm"
 	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
 	icon_state = "ptolemaic_helm"
