@@ -407,7 +407,7 @@
 	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/self_destruct()
-	explosion(src,1,2,4,4)
+	explosion(src,0,3,5,5)
 	qdel(src)
 
 /mob/living/simple_animal/hostile/handy/sentrybot/Life()
