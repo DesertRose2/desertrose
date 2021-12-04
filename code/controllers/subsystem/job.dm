@@ -499,17 +499,17 @@ SUBSYSTEM_DEF(job)
 		if(LAZYLEN(job.objectivesList))
 			job.objectives = pick(job.objectivesList)
 		if (job.department_flag == LEGION)
-			job.objectives = job.objectivesList[rand(0,2)]//get a random one from the faction.dm objetives list
+			job.objectives = pick(job.objectivesList)//get a random one from the faction.dm objetives list
 		if (job.department_flag == NCR)
-			job.objectives = job.objectivesList[rand(0,3)]
+			job.objectives = pick(job.objectivesList)
 		if (job.department_flag == BOS)
-			job.objectives = job.objectivesList[rand(0,3)]
+			job.objectives = pick(job.objectivesList)
 		if (job.department_flag == VTCC)
-			job.objectives = job.objectivesList[rand(0,2)]
+			job.objectives = pick(job.objectivesList)
 		if (job.department_flag == TRIBAL)
-			job.objectives = job.objectivesList[rand(0,2)]
+			job.objectives = pick(job.objectivesList)
 		if (job.department_flag == FOLLOWERS)
-			job.objectives = job.objectivesList[rand(0,2)]
+			job.objectives = pick(job.objectivesList)
 
 	to_chat(M, "<b>You are the [rank].</b>")
 	if(job)
