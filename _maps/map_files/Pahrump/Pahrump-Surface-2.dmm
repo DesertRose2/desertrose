@@ -40786,7 +40786,7 @@
 	normaldoorcontrol = 2;
 	pixel_x = -26;
 	pixel_y = 5;
-	req_access = 124
+	req_access_txt = "124"
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/followers)
@@ -54621,7 +54621,7 @@
 /obj/machinery/button/door{
 	id = "office";
 	pixel_y = -32;
-	req_one_access = "!36; 137"
+	req_one_access_txt = "136; 137"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
@@ -58662,14 +58662,14 @@
 	normaldoorcontrol = 2;
 	pixel_x = 26;
 	pixel_y = 5;
-	req_access = 124
+	req_access_txt = "124"
 	},
 /obj/machinery/button/door{
 	id = "clinicdoorshutters";
 	name = "Door shutters";
 	pixel_x = 26;
 	pixel_y = -5;
-	req_access = 124
+	req_access_txt = "124"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
@@ -67949,7 +67949,7 @@
 	id = "clinicbackdoor";
 	name = "Back door shutters";
 	pixel_y = 31;
-	req_access = 124
+	req_access_txt = "124"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	dir = 5
