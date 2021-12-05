@@ -456,3 +456,9 @@
 	item_state = "remnant"
 	armor = list("tier" = 6, "energy" = 75, "bomb" = 70, "bio" = 80, "rad" = 80, "fire" = 80, "acid" = 50)
 
+/obj/item/clothing/suit/armor/f13/combat/marine/centurion
+	name = "Ptolemaic combat armor"
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull and a red tabard. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude red paint in the stylized Legion symbols of Painted Rock, and a ludicrous, gilded codpiece."
+	icon_state = "ptolemaic_armor"
+	item_state = "ptolemaic_armor"
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
