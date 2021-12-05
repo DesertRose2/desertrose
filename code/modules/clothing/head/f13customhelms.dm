@@ -43,3 +43,10 @@
 	desc = "(IV) A tan repurposed old chinese remnant officer peaked cap. It still features a bright red star in the middle."
 	icon_state = "shi"
 	item_state = "shi"
+
+//Custom item - annoyingincantation / Ptolemos Gloriosus
+/obj/item/clothing/head/helmet/f13/legion/rangercent/ptolemy
+	name = "Ptolemaic combat helm"
+	desc = "(V) A salvaged helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
+	icon_state = "ptolemaic_helm"
+	item_state = "ptolemaic_helm"
