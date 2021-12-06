@@ -10,6 +10,12 @@
 	var/minimize_when_attached = TRUE // TRUE if shown as a small icon in corner, FALSE if overlayed
 	var/datum/component/storage/detached_pockets
 
+/obj/item/clothing/armoraccessory/reset_transform()
+	..()
+	if(!minimize_when_attached || !istype(/obj/item/clothing/suit, loc))
+		return
+	transform *= 0.5
+
 /obj/item/clothing/armoraccessory/proc/attach(obj/item/clothing/suit/U, user)
 	var/datum/component/storage/storage = GetComponent(/datum/component/storage)
 	if(storage)
@@ -21,8 +27,8 @@
 	forceMove(U)
 	layer = FLOAT_LAYER
 	plane = FLOAT_PLANE
+	reset_transform()
 	if(minimize_when_attached)
-		transform *= 0.5	//halve the size so it doesn't overpower the under
 		pixel_x += 8
 		pixel_y -= 8
 	U.add_overlay(src)
@@ -50,9 +56,9 @@
 		on_suit_dropped(U, user)
 
 	if(minimize_when_attached)
-		transform *= 2
 		pixel_x -= 8
 		pixel_y += 8
+	reset_transform()
 	layer = initial(layer)
 	plane = initial(plane)
 	U.cut_overlays()
