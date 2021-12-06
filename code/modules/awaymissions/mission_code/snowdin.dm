@@ -507,7 +507,6 @@
 				/obj/item/organ/heart/cursed = 7,
 				/obj/item/book/granter/spell/forcewall = 17,
 				/obj/item/gun/magic/wand/fireball/inert = 3,
-				/obj/item/pickaxe/drill/jackhammer = 30,
 				/obj/item/borg/upgrade/selfrepair = 17)
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonmisc
