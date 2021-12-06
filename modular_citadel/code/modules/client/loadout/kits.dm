@@ -461,3 +461,7 @@
 	new /obj/item/storage/belt/military/assault(src)
 	new /obj/item/reagent_containers/glass/maunamug(src)
 	new /obj/item/clothing/suit/armor/f13/battlecoat(src)
+
+//Rachel Hinterland - yecrowbarman
+/obj/item/storage/box/large/custom_kit/rhinterland/PopulateContents()
+	new /obj/item/clothing/under/f13/vault13(src)
