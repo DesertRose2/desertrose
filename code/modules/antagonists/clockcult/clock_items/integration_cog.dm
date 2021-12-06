@@ -14,6 +14,10 @@
 
 /obj/item/clockwork/integration_cog/Initialize()
 	. = ..()
+	reset_transform()
+
+/obj/item/clockwork/integration_cog/reset_transform()
+	..()
 	transform *= 0.5 //little cog!
 
 /obj/item/clockwork/integration_cog/Destroy()

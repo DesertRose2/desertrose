@@ -44,10 +44,14 @@
 		for(var/datum/plant_gene/trait/T in seed.genes)
 			T.on_new(src, loc)
 		seed.prepare_result(src)
-		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.4 //Makes the resulting produce's sprite larger or smaller based on potency!
 		add_juice()
+	
+	reset_transform()
 
-
+/obj/item/reagent_containers/food/snacks/grown/reset_transform()
+	..()
+	if(seed)
+		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.5 //Makes the resulting produce's sprite larger or smaller based on potency!
 
 /obj/item/reagent_containers/food/snacks/grown/proc/add_juice()
 	if(reagents)
