@@ -159,6 +159,8 @@
 	desc = "A cybernetic implant that allows the user to project a healing beam from their hand."
 	contents = newlist(/obj/item/gun/medbeam)
 
+
+
 ///////////////
 //Tools  Arms//
 ///////////////
@@ -269,10 +271,10 @@
 	desc = "An illegal and highly dangerous cybernetic implant that can project a deadly blade of concentrated energy."
 	contents = newlist(/obj/item/melee/transforming/energy/blade/hardlight)
 
-/*/obj/item/organ/cyberimp/arm/shield
+/obj/item/organ/cyberimp/arm/shield
 	name = "arm-mounted riot shield"
 	desc = "A deployable riot shield to help deal with civil unrest."
-	contents = newlist(/obj/item/shield/riot/implant)*/
+	contents = newlist(/obj/item/shield/riot/implant)
 
 /obj/item/organ/cyberimp/arm/shield/Extend(obj/item/I, silent = FALSE)
 	if(I.obj_integrity == 0)				//that's how the shield recharge works
@@ -306,6 +308,24 @@
 	var/obj/item/assembly/flash/armimplant/F = new(src)
 	items_list += F
 	F.I = src
+
+/obj/item/shield/riot/implant/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir, armour_penetration = 0)
+	obj_integrity -= damage_amount
+	if(obj_integrity < 0)
+		obj_integrity = 0
+	if(obj_integrity == 0)
+		if(ismob(loc))
+			var/mob/living/L = loc
+			playsound(src, 'sound/effects/glassbr3.ogg', 100)
+			L.visible_message("<span class='boldwarning'>[src] overloads from the damage sustained!</span>")
+			L.dropItemToGround(src)			//implant component catch hook will grab it.
+
+/obj/item/shield/riot/implant/proc/recharge()
+	if(obj_integrity == max_integrity)
+		return
+	obj_integrity = max_integrity
+	if(ismob(loc.loc))		//cyberimplant.user
+		to_chat(loc, "<span class='notice'>[src] has recharged its reinforcement matrix and is ready for use!</span>")
 
 /////////////////
 

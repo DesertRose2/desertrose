@@ -175,7 +175,7 @@
 #define VTCC			(1<<12)
 
 #define F13ALDERMAN		(1<<1)
-#define F13MARSHAL		(1<<2)
+#define F13PROVOSTMARSHAL		(1<<2)
 #define F13MERCHANT		(1<<3)
 #define F13CHRESEARCHER		(1<<4)
 #define F13CITYSEC		(1<<5)
@@ -186,6 +186,8 @@
 #define F13INNKEEPER		(1<<10)
 #define F13INNERWALL		(1<<11)
 #define F13OUTERWALL		(1<<12)
+#define	F13PROVOSTSGT	(1<<13)
+#define	F13PROVOST		(1<<14)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1

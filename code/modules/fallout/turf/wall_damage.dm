@@ -36,7 +36,7 @@
 
 /turf/closed/wall/attackby(obj/item/W, mob/user, params)
 	. = ..()
-	if(!.)
+	if(!. && istype(src))
 		user.do_attack_animation(src)
 		if(W.force > hardness/3 && !unbreakable)
 			take_damage(W.force/10)
