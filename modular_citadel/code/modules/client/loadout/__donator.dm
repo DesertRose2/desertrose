@@ -430,6 +430,11 @@
 	name = "Caroline Nikos' belongings"
 	path = /obj/item/storage/box/large/custom_kit/nikos
 	ckeywhitelist = list("panzer1944")
+	
+/datum/gear/donator/kits/rhinterland
+	name = "Rachel Hinterland's belongings"
+	path = /obj/item/storage/box/large/custom_kit/rhinterland
+	ckeywhitelist = list("yecrowbarman")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -492,7 +497,8 @@
 						"alasania",
 						"jackmcintyre",
 						"deathlysoul",
-						"brainbodger")
+						"brainbodger",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger45
@@ -516,7 +522,8 @@
 						"totallyinnocent",
 						"cythisia",
 						"honto335",
-						"lunaticluna")
+						"lunaticluna",
+						"neilzthegamer")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -530,7 +537,8 @@
 						"themojavewanderer",
 						"muhsollini",
 						"rangerbust",
-						"kayzach")
+						"kayzach",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -542,7 +550,8 @@
 						 "ollieoxen",
 						 "cythisia",
 						 "landoorando",
-						 "luke313")
+						 "luke313",
+						 "pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -591,7 +600,8 @@
 						"kirshbia",
 						"deathlysoul",
 						"lunaticluna",
-						"pisshole")
+						"pisshole",
+						"akforeplay")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -642,7 +652,8 @@
 						"landoorando",
 						"honto335",
 						"luke313",
-						"lunaticluna")
+						"lunaticluna",
+						"neilzthegamer")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////

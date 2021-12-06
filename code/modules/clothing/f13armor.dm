@@ -633,55 +633,6 @@
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/suits.dmi'
 
-/obj/item/clothing/suit/armor/f13/battlecoat/vault
-	name = "command coat"
-	desc = "(III) A heavy pre-war bomber coat, dyed blue with the number '113' embroidered on the back. Most often worn by leaders, such as the Overseer."
-	icon_state = "vault_commandcoat"
-	item_state = "vault_commandcoat"
-	armor = list("tier" = 3)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
-	name = "\improper Overseer's battlecoat"
-	desc = "(III) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec embroidered on the back. This one is worn by the Coalition's Overseer."
-	icon_state = "overseer_commandcoat"
-	item_state = "overseer_commandcoat"
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
-	name = "\improper Marhsal's battlecoat"
-	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
-	icon_state = "marshal_commandcoat"
-	item_state = "marshal_commandcoat"
-	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
-	name = "armoured vault battlecoat"
-	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the citizens of the Coalition."
-	icon_state = "armouredvault_commandcoat"
-	item_state = "armouredvault_commandcoat"
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
-	name = "\improper Roadie's battlecoat"
-	desc = "(IV) A heavy padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
-	icon_state = "roadie_battlecoat"
-	item_state = "roadie_battlecoat"
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast
-	name = "\improper Roadie's light battlecoat"
-	desc = "(III) A padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
-	icon_state = "roadie_battlecoat"
-	item_state = "roadie_battlecoat"
-	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-	slowdown = -0.10
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
 	desc = "(III) A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future. This one's colors have faded somewhat."

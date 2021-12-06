@@ -2536,8 +2536,8 @@
 /obj/structure/fluff/rails,
 /obj/docking_port/stationary{
 	dir = 4;
-	id = "raider_metro";
-	roundstart_template = /datum/map_template/shuttle/raider_station_train
+	id = "raider_station";
+	roundstart_template = /datum/map_template/shuttle/metrobunker
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -3259,9 +3259,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"OZ" = (
+/mob/living/simple_animal/hostile/centaur,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Pb" = (
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
+"Pc" = (
+/obj/structure/chair/right{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/centaur,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Ph" = (
 /obj/structure/chair/stool/f13stool,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -20763,7 +20774,7 @@ wV
 IJ
 bw
 TC
-ek
+OZ
 ro
 IJ
 Wa
@@ -23333,7 +23344,7 @@ ro
 IJ
 bw
 TC
-ek
+OZ
 ro
 IJ
 Wa
@@ -24361,7 +24372,7 @@ ZQ
 IJ
 bw
 TC
-ek
+OZ
 ro
 IJ
 Wa
@@ -27703,7 +27714,7 @@ Lj
 Lj
 Gk
 ek
-ZQ
+Pc
 IJ
 Wa
 Lj

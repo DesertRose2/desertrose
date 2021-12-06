@@ -158,8 +158,8 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/revolver/revolver45
-	name = "Casull .45"
-	desc = "A Casull revolver; where its name came from though is a msytery as its origins have been lost to the mists of time."
+	name = "Colt .45"
+	desc = "An old Single Action Army retooled for .45 ACP. Classic Americana, its wooden grip is worn and the steel dark from many years of use, though it is in relatively good condition."
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
