@@ -261,14 +261,12 @@ Difficulty: Extremely Hard
 	if(health > 0)
 		return
 	var/turf/T = get_turf(src)
-	var/loot = rand(1, 3)
+	var/loot = rand(1, 2)
 	switch(loot)
 		if(1)
 			new /obj/item/resurrection_crystal(T)
 		if(2)
 			new /obj/item/clothing/shoes/winterboots/ice_boots/speedy(T)
-		if(3)
-			new /obj/item/pickaxe/drill/jackhammer/demonic(T)
 	return ..()
 
 /obj/item/resurrection_crystal
@@ -307,16 +305,6 @@ Difficulty: Extremely Hard
 /obj/item/clothing/shoes/winterboots/ice_boots/speedy/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-
-/obj/item/pickaxe/drill/jackhammer/demonic
-	name = "demonic jackhammer"
-	desc = "Cracks rocks at an inhuman speed, as well as being enhanced for combat purposes."
-	toolspeed = 0
-
-/obj/item/pickaxe/drill/jackhammer/demonic/Initialize()
-	. = ..()
-	AddComponent(/datum/component/knockback, 4, FALSE, TRUE)
-	AddComponent(/datum/component/lifesteal, 5)
 
 /obj/item/crusher_trophy/ice_block_talisman
 	name = "ice block talisman"
