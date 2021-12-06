@@ -27,6 +27,7 @@
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three)
 	taunt_chance = 30
 	blood_volume = 0
+	var/heavy_emp_damage = 25
 
 	emote_taunt_sound = list('sound/f13npc/handy/taunt1.ogg', 'sound/f13npc/handy/taunt2.ogg')
 	emote_taunt = list("raises a saw")
@@ -406,7 +407,7 @@
 	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/self_destruct()
-	explosion(src,1,2,4,4)
+	explosion(src,0,3,5,5)
 	qdel(src)
 
 /mob/living/simple_animal/hostile/handy/sentrybot/Life()

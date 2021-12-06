@@ -201,6 +201,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY
 	force = 15
+	spread = 11
 	burst_size = 2
 	fire_delay = 3.5
 	burst_shot_delay = 1
@@ -251,7 +252,7 @@
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
-	spread = 10
+	spread = 11
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 16
@@ -269,7 +270,7 @@
 		if(1)
 			select = 0
 			burst_size = 1
-			spread -= 11
+			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
