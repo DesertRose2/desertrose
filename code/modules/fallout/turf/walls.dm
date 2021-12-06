@@ -60,12 +60,13 @@
 	if(istype(W, /obj/item/stack/sheet/mineral/wood))
 		var/obj/item/stack/sheet/mineral/wood/I = W
 		if(I.amount < 2)
-			return
+			return TRUE
 		if(!do_after(user, 5 SECONDS, FALSE, src))
 			to_chat(user, "<span class='warning'>You must stand still to fix the wall!</span>")
-			return
+			return TRUE
 		W.use(2)
 		ChangeTurf(/turf/closed/wall/f13/wood/house)
+		return TRUE
 	. = ..()
 
 

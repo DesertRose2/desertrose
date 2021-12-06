@@ -839,7 +839,6 @@
 "aBq" = (
 /obj/structure/simple_door/bunker{
 	name = "Head Knight's Office";
-	req_access = 120;
 	req_access_txt = "120"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2637,7 +2636,6 @@
 /obj/machinery/door/poddoor/gate/preopen{
 	id = "boscheckpoint";
 	name = "Checkpoint";
-	req_one_access = "120";
 	req_one_access_txt = "120"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -12760,7 +12758,6 @@
 "iQj" = (
 /obj/structure/simple_door/bunker{
 	name = "Head Paladin's Office";
-	req_access = 120;
 	req_access_txt = "120"
 	},
 /obj/structure/cable{
@@ -20508,7 +20505,6 @@
 "okh" = (
 /obj/structure/simple_door/bunker{
 	name = "Star Knight Office";
-	req_access = 120;
 	req_access_txt = "120"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -21006,7 +21002,6 @@
 "oCA" = (
 /obj/structure/simple_door/bunker{
 	name = "Head Knight's Office";
-	req_access = 120;
 	req_access_txt = "120"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -24426,7 +24421,6 @@
 "qJx" = (
 /obj/structure/simple_door/bunker{
 	name = "Paladin Halls";
-	req_access = 120;
 	req_access_txt = "120"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
@@ -32004,7 +31998,6 @@
 /obj/machinery/door/poddoor/gate/preopen{
 	id = "boscheckpoint";
 	name = "Checkpoint";
-	req_one_access = "120";
 	req_one_access_txt = "120"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,

@@ -78,7 +78,7 @@
 
 /turf/closed/wall/mineral/uranium/attackby(obj/item/W, mob/user, params)
 	radiate()
-	..()
+	. = ..()
 
 /turf/closed/wall/mineral/uranium/Bumped(atom/movable/AM)
 	radiate()
@@ -98,7 +98,7 @@
 		message_admins("Plasma wall ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(src)]")
 		log_game("Plasma wall ignited by [key_name(user)] in [AREACOORD(src)]")
 		ignite(W.get_temperature())
-		return
+		return TRUE
 	..()
 
 /turf/closed/wall/mineral/plasma/proc/PlasmaBurn(temperature)
@@ -141,7 +141,7 @@
 		var/src_type = type
 		if(do_after(user, duration*10, target=src) && type == src_type) //Into deciseconds.
 			dismantle_wall(FALSE,FALSE)
-			return
+			return TRUE
 	return ..()
 
 /turf/closed/wall/mineral/wood/nonmetal
