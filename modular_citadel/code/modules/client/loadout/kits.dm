@@ -391,7 +391,7 @@
 
 //Katie Morgan - IdiocityInc
 /obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
-	new /obj/item/clothing/head/beret/ncr_scout_old(src)
+	new /obj/item/clothing/head/beret/ncr_scout(src)
 
 //Bryan ''Aranesp'' Monroe - ElizabethDame
 /obj/item/storage/box/large/custom_kit/bryanmonroe/PopulateContents()
