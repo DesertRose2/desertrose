@@ -149,8 +149,11 @@
 							"Innkeeper",
 							"Hoistway Preacher",
 							"Researcher",
-							"Town Security",
-							"Marshal",
+							"City Security Cadet",
+							"City Security Officer",
+							"Provost",
+							"Provost Sergeant",
+							"Provost Marshal",
 							"Alderman",
 							"Chief Researcher",
 							"Merchant")

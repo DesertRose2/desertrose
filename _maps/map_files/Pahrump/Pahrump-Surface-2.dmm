@@ -2171,8 +2171,7 @@
 	dir = 6
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/grass{
@@ -2705,8 +2704,7 @@
 	dir = 10
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -4269,8 +4267,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/tribe)
@@ -12965,8 +12962,7 @@
 	dir = 8
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/tribe)
@@ -15060,8 +15056,7 @@
 "fjs" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
@@ -15794,6 +15789,12 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland)
+"fwk" = (
+/obj/effect/landmark/start/f13/provostsgt,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "fws" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sink{
@@ -15924,8 +15925,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/tribe)
@@ -19022,7 +19022,6 @@
 "gyy" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/stone_tile/block/cracked{
@@ -23822,8 +23821,7 @@
 	dir = 9
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plating/f13/inside/gravel{
 	barefootstep = "sand";
@@ -32859,8 +32857,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plating/f13/inside/gravel{
 	barefootstep = "sand";
@@ -33415,6 +33412,12 @@
 	footstep = "sand"
 	},
 /area/f13/wasteland)
+"lfl" = (
+/obj/effect/landmark/start/f13/provost,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/city)
 "lfx" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4"
@@ -36373,7 +36376,6 @@
 	},
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /turf/open/floor/plating/f13/inside/gravel{
@@ -37900,7 +37902,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/marshal,
+/obj/effect/landmark/start/f13/provostmarshal,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -38532,7 +38534,6 @@
 	},
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/destructible/tribal_torch/lit{
@@ -39786,7 +39787,6 @@
 	},
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /turf/open/floor/plating/f13/inside/gravel{
@@ -46600,7 +46600,6 @@
 "pEB" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/stone_tile/block{
@@ -47029,7 +47028,6 @@
 "pMr" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/stone_tile/surrounding_tile{
@@ -49433,7 +49431,6 @@
 "qCP" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/stone_tile{
@@ -52102,7 +52099,6 @@
 	},
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/stone_tile/surrounding_tile{
@@ -69709,8 +69705,7 @@
 /area/f13/wasteland)
 "xKi" = (
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
@@ -86124,9 +86119,9 @@ xLh
 xLh
 qAL
 rrx
-xLh
-xLh
-xLh
+lfl
+lfl
+lfl
 dZl
 wOj
 bSi
@@ -86896,7 +86891,7 @@ pCM
 qAL
 dfx
 xLh
-xLh
+fwk
 xLh
 mIz
 wOj
