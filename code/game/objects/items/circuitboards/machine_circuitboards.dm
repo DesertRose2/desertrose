@@ -795,6 +795,8 @@
 	name = "CondiMaster 3000 (Machine Board)"
 	build_path = /obj/machinery/chem_master/condimaster
 
+/obj/item/circuitboard/machine/chem_master/advanced
+
 /obj/item/circuitboard/machine/circuit_imprinter
 	name = "Circuit Imprinter (Machine Board)"
 	build_path = /obj/machinery/rnd/production/circuit_imprinter

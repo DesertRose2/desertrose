@@ -58,6 +58,12 @@
 	build_path = /obj/item/circuitboard/machine/chem_master
 	category = list ("Medical Machinery")
 
+/datum/design/board/chem_master/advanced
+	name = "Machine Design (Old-World Refinery Board)"
+	desc = "The circuit board for an Old-World Refinery."
+	id = "chem_master_advanced"
+	build_path = /obj/item/circuitboard/machine/chem_master/advanced
+
 /datum/design/board/chem_heater
 	name = "Machine Design (Chemical Heater Board)"
 	desc = "The circuit board for a chemical heater."

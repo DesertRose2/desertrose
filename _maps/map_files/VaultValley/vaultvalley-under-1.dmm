@@ -55,6 +55,13 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"bc" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/hydroponics/soil/pot,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "bf" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -540,7 +547,7 @@
 	},
 /area/f13/tunnel)
 "fY" = (
-/obj/machinery/light/small/broken{
+/obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -554,13 +561,19 @@
 "gj" = (
 /obj/machinery/computer/shuttle{
 	name = "departure schedule";
-	possible_destinations = "raider_subway;raider_metro"
+	possible_destinations = "raider_subway;raider_station"
 	},
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"gm" = (
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "gv" = (
 /obj/structure/table/wood/fancy/black,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
@@ -809,6 +822,16 @@
 	name = "train cabin window"
 	},
 /turf/open/floor/f13,
+/area/f13/tunnel)
+"is" = (
+/obj/structure/ladder/unbreakable{
+	down = metrodungeon;
+	id = metrodungeonentrance;
+	up = null
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/tunnel)
 "ix" = (
 /obj/structure/toilet{
@@ -1064,6 +1087,13 @@
 /mob/living/simple_animal/hostile/raider/sulphite,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
+	},
+/area/f13/building)
+"kj" = (
+/obj/structure/simple_door/metal/barred,
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/f13/building)
 "kl" = (
@@ -1360,6 +1390,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"nr" = (
+/obj/machinery/seed_extractor,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "nC" = (
 /obj/structure/barricade/tentclothedge{
 	dir = 1
@@ -1476,6 +1510,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"oS" = (
+/obj/structure/rack,
+/obj/item/shovel/spade,
+/obj/item/cultivator,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "oX" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -1502,6 +1542,18 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"pe" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "pg" = (
 /obj/structure/weightlifter,
 /turf/open/floor/f13{
@@ -1704,7 +1756,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "qC" = (
-/obj/machinery/light/small/broken{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -2051,6 +2103,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"sH" = (
+/obj/machinery/light,
+/obj/machinery/hydroponics/soil/pot,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "sJ" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -2185,6 +2242,14 @@
 "tH" = (
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
+/area/f13/ncr)
+"tL" = (
+/obj/structure/rack,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
+/turf/open/floor/f13,
 /area/f13/ncr)
 "tO" = (
 /obj/structure/barricade/bars,
@@ -2394,16 +2459,6 @@
 "vH" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
-"vI" = (
-/obj/structure/fluff/rails,
-/obj/docking_port/stationary{
-	dir = 4;
-	id = "raider_subway";
-	name = "Station";
-	width = 11
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "vP" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -2418,6 +2473,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"vX" = (
+/obj/machinery/hydroponics/soil/pot,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "vY" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -2612,6 +2671,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"xs" = (
+/obj/machinery/smartfridge/bottlerack/grownbin,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "xy" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/carpet,
@@ -3089,6 +3152,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"BF" = (
+/obj/structure/stacklifter,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "BN" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13{
@@ -3531,6 +3603,14 @@
 /obj/item/gun/energy/gammagun,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"Gk" = (
+/obj/structure/fluff/rails,
+/obj/docking_port/stationary{
+	dir = 4;
+	id = "raider_subway"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "Gx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4638,6 +4718,14 @@
 /obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"Qc" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "Qd" = (
 /obj/structure/chair/e_chair,
 /mob/living/simple_animal/hostile/raider/tribal,
@@ -5063,6 +5151,15 @@
 "Tw" = (
 /obj/structure/table,
 /obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
+"TC" = (
+/mob/living/simple_animal/hostile/raider/baseball,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -27218,9 +27315,9 @@ tH
 Af
 Af
 nm
-GL
+vX
 re
-Dc
+vX
 mi
 Uo
 Dy
@@ -27475,9 +27572,9 @@ tH
 Af
 Af
 nm
-GL
+vX
 re
-Dc
+vX
 mi
 Dy
 Uo
@@ -27732,9 +27829,9 @@ tH
 Af
 Af
 nm
-GL
+vX
 re
-Dc
+vX
 mi
 Dy
 Uo
@@ -27989,9 +28086,9 @@ tH
 Af
 Af
 nm
-HQ
+bc
 re
-Lo
+sH
 mi
 Dy
 Uo
@@ -28246,9 +28343,9 @@ tH
 Af
 Af
 nm
-CV
+vX
 re
-rw
+vX
 mi
 Dy
 Uo
@@ -28503,9 +28600,9 @@ tH
 Af
 Af
 nm
-CV
+vX
 re
-rw
+vX
 mi
 Dy
 Uo
@@ -28760,9 +28857,9 @@ tH
 Af
 Af
 nm
-GL
+vX
 re
-Dc
+vX
 mi
 Dy
 Uo
@@ -29017,9 +29114,9 @@ tH
 Af
 Af
 nm
-GL
+vX
 re
-Dc
+vX
 mi
 Dy
 Uo
@@ -29274,9 +29371,9 @@ tH
 Af
 Af
 nm
-HQ
+bc
 re
-Lo
+sH
 mi
 Dy
 Uo
@@ -29531,9 +29628,9 @@ tH
 Af
 Af
 nm
-CV
+vX
 re
-rw
+vX
 mi
 Dy
 Uo
@@ -29788,9 +29885,9 @@ tH
 Af
 Af
 nm
-CV
+nr
 re
-rw
+xs
 mi
 Dy
 Uo
@@ -30045,9 +30142,9 @@ tH
 Af
 Af
 nm
-CV
+tL
 re
-rw
+oS
 mi
 Uo
 Dy
@@ -40126,7 +40223,7 @@ WW
 WW
 WW
 WW
-zA
+TC
 WW
 WW
 WW
@@ -40399,7 +40496,7 @@ WW
 WW
 WW
 WW
-WW
+gm
 Vq
 kK
 vH
@@ -40909,7 +41006,7 @@ WW
 WW
 WW
 WW
-WW
+qC
 WW
 WW
 WW
@@ -43461,7 +43558,7 @@ vH
 vH
 kK
 Vq
-qX
+pe
 WW
 de
 WW
@@ -43469,7 +43566,7 @@ WQ
 WW
 Tw
 Tw
-de
+kj
 Vq
 Vq
 vl
@@ -44502,13 +44599,13 @@ Tw
 Vq
 xr
 zA
-WW
+fY
 WW
 WW
 Vq
 SV
 yZ
-SV
+BF
 zA
 WW
 WW
@@ -46031,7 +46128,7 @@ vH
 vH
 kK
 Vq
-WW
+Qc
 sP
 OI
 sP
@@ -46040,7 +46137,7 @@ ki
 sP
 Zv
 WW
-WW
+gm
 Vq
 kK
 vH
@@ -47577,7 +47674,7 @@ WW
 Ef
 Ef
 Ef
-WW
+fY
 WW
 WW
 Ef
@@ -51831,7 +51928,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 Jp
 vH
 vH
@@ -52088,7 +52185,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 vH
 vH
 vH
@@ -52340,7 +52437,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 vH
 vH
 vH
@@ -52597,7 +52694,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 vH
 vH
 vH
@@ -52854,11 +52951,11 @@ vH
 vH
 vH
 Jp
-Jp
+vH
 vH
 Jp
-Jp
-Jp
+vH
+vH
 Jp
 vH
 Jp
@@ -52914,7 +53011,7 @@ PC
 sX
 vP
 vP
-vI
+Gk
 vP
 vP
 vP
@@ -53110,17 +53207,17 @@ Jp
 Jp
 vH
 vH
+vH
 Jp
-Jp
+vH
+vH
+vH
 vH
 Jp
 Jp
 vH
-Jp
-Jp
-Jp
-Jp
-Jp
+vH
+vH
 vH
 vH
 vH
@@ -53367,16 +53464,16 @@ vH
 vH
 vH
 vH
-Jp
-Jp
+vH
+vH
+vH
+vH
 vH
 Jp
 vH
 Jp
 vH
-Jp
 vH
-Jp
 Jp
 vH
 vH
@@ -53422,7 +53519,7 @@ vH
 vH
 vH
 PC
-je
+is
 je
 je
 vw
@@ -53623,16 +53720,16 @@ vH
 vH
 vH
 vH
+vH
 Jp
+vH
 Jp
 vH
 Jp
 Jp
 Jp
-Jp
-Jp
-Jp
-Jp
+vH
+vH
 vH
 vH
 vH
@@ -53679,7 +53776,7 @@ PC
 PC
 PC
 PC
-je
+is
 je
 je
 vw
@@ -53881,15 +53978,15 @@ vH
 vH
 vH
 Jp
-Jp
+vH
+vH
+vH
 vH
 Jp
 Jp
-Jp
-Jp
-Jp
-Jp
-Jp
+vH
+vH
+vH
 Jp
 vH
 vH
@@ -54146,8 +54243,8 @@ vH
 vH
 vH
 Jp
-Jp
-Jp
+vH
+vH
 Jp
 vH
 vH
@@ -54402,10 +54499,10 @@ vH
 vH
 Jp
 Jp
+vH
+vH
 Jp
-Jp
-Jp
-Jp
+vH
 vH
 vH
 Jp
@@ -54658,11 +54755,11 @@ vH
 vH
 vH
 Jp
-Jp
 vH
-Jp
-Jp
-Jp
+vH
+vH
+vH
+vH
 Jp
 vH
 vH
@@ -54914,12 +55011,12 @@ Jp
 Jp
 vH
 vH
+vH
+vH
+vH
 Jp
 Jp
-Jp
-Jp
-Jp
-Jp
+vH
 vH
 Jp
 Jp
@@ -55175,7 +55272,7 @@ Jp
 Jp
 Jp
 vH
-Jp
+vH
 Jp
 vH
 vH
@@ -55430,10 +55527,10 @@ vH
 vH
 Jp
 Jp
+vH
 Jp
-Jp
-Jp
-Jp
+vH
+vH
 vH
 vH
 vH
@@ -55681,9 +55778,9 @@ Jp
 vH
 Jp
 Jp
-Jp
-Jp
-Jp
+vH
+vH
+vH
 Jp
 Jp
 Jp
@@ -55938,13 +56035,13 @@ vH
 vH
 vH
 vH
+vH
+vH
 Jp
 vH
 Jp
-Jp
-Jp
 vH
-Jp
+vH
 vH
 vH
 Jp
@@ -56192,10 +56289,10 @@ vH
 vH
 vH
 Jp
-Jp
-Jp
-Jp
-Jp
+vH
+vH
+vH
+vH
 vH
 Jp
 vH
@@ -56450,13 +56547,13 @@ vH
 Jp
 Jp
 Jp
+vH
 Jp
-Jp
-Jp
+vH
 Jp
 vH
 vH
-Jp
+vH
 vH
 vH
 vH
@@ -56705,12 +56802,12 @@ vH
 vH
 Jp
 vH
+vH
+vH
+vH
 Jp
 Jp
-Jp
-Jp
-Jp
-Jp
+vH
 vH
 Jp
 Jp
@@ -57221,7 +57318,7 @@ vH
 Jp
 vH
 vH
-Jp
+vH
 vH
 Jp
 Jp
@@ -57476,8 +57573,8 @@ vH
 vH
 Jp
 Jp
-Jp
-Jp
+vH
+vH
 Jp
 Jp
 vH
@@ -58244,7 +58341,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 vH
 Jp
 vH
@@ -58499,9 +58596,9 @@ vH
 Jp
 vH
 Jp
-Jp
 vH
-Jp
+vH
+vH
 vH
 Jp
 vH
@@ -58757,7 +58854,7 @@ vH
 Jp
 vH
 vH
-Jp
+vH
 Jp
 vH
 Jp
@@ -59012,7 +59109,7 @@ vH
 vH
 Jp
 Jp
-Jp
+vH
 Jp
 Jp
 vH
@@ -60549,7 +60646,7 @@ Jp
 vH
 vH
 vH
-Jp
+vH
 vH
 vH
 vH
@@ -60805,7 +60902,7 @@ vH
 vH
 vH
 vH
-Jp
+vH
 vH
 Jp
 vH

@@ -201,6 +201,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY
 	force = 15
+	spread = 11
 	burst_size = 2
 	fire_delay = 3.5
 	burst_shot_delay = 1
@@ -251,7 +252,7 @@
 	scope_state = "AEP7_scope"
 	scope_x_offset = 9
 	scope_y_offset = 21
-	spread = 10
+	spread = 11
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 16
@@ -269,7 +270,7 @@
 		if(1)
 			select = 0
 			burst_size = 1
-			spread -= 11
+			spread = 2
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -783,7 +784,7 @@
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
-	extra_speed = TILES_TO_PIXELS(85) //Hitscan with an improved barrel installed.
+	extra_speed = TILES_TO_PIXELS(70) //Hitscan with an improved barrel installed. //Reduced by 15 because otherwise it is indeed a hitscan
 
 
 //////////////////
@@ -1041,14 +1042,15 @@
 		if(0)
 			select += 1
 			burst_size = 2
-			extra_damage = -3
-			spread = 5
+			extra_damage = 0
+			spread = 4
 			fire_delay = 5
 			recoil = 0.2
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
+			extra_damage = 3
 			spread = 0
 			fire_delay = 4
 			recoil= 0.1
@@ -1075,7 +1077,7 @@
 	can_attachments = FALSE
 	burst_size = 1
 	fire_delay = 6
-	burst_shot_delay = 2.5
+	burst_shot_delay = 2
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
@@ -1159,6 +1161,7 @@
 	can_attachments = FALSE
 	burst_size = 2
 	fire_delay = 6
+	spread = 6
 	burst_shot_delay = 2.5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1169,15 +1172,15 @@
 		if(0)
 			select = 0
 			burst_size = 2
-			spread = 10
+			spread = 6
 			extra_damage = 0
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to firing in small-bursts.</span>")
 		if(1)
 			select += 1
 			burst_size = 3
-			spread = 20
-			extra_damage = -2
+			spread = 10
+			extra_damage = -1
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1200,9 +1203,10 @@
 	burst_size = 1
 	fire_delay = 8
 	slowdown = 1.5
+	spread = 40
+	extra_damage = -5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	spread = 30
 	var/cover_open = FALSE
 
 /obj/item/gun/ballistic/automatic/m2a1/update_icon()

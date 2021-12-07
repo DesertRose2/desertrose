@@ -394,14 +394,6 @@
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/ncr
-	name = "NCR T-45d power armor"
-	desc = "(VIII) A set of T-45d power armor put into use by the special forces of the New California Republic."
-	icon_state = "ncr45powerarmor"
-	item_state = "ncr45powerarmor"
-	slowdown = 0.24
-	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
-
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
 	name = "gunslinger T-51b"
 	desc = "(IX) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
@@ -640,55 +632,6 @@
 	armor = list("tier" = 3, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30)
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/suits.dmi'
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault
-	name = "command coat"
-	desc = "(III) A heavy pre-war bomber coat, dyed blue with the number '113' embroidered on the back. Most often worn by leaders, such as the Overseer."
-	icon_state = "vault_commandcoat"
-	item_state = "vault_commandcoat"
-	armor = list("tier" = 3)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer
-	name = "\improper Overseer's battlecoat"
-	desc = "(III) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec embroidered on the back. This one is worn by the Coalition's Overseer."
-	icon_state = "overseer_commandcoat"
-	item_state = "overseer_commandcoat"
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/marshal
-	name = "\improper Marhsal's battlecoat"
-	desc = "(VII) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the Marshals of the Coalition."
-	icon_state = "marshal_commandcoat"
-	item_state = "marshal_commandcoat"
-	armor = list("tier" = 7, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
-	name = "armoured vault battlecoat"
-	desc = "(IV) A heavy pre-war bomber coat, dyed blue with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is worn by the citizens of the Coalition."
-	icon_state = "armouredvault_commandcoat"
-	item_state = "armouredvault_commandcoat"
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie
-	name = "\improper Roadie's battlecoat"
-	desc = "(IV) A heavy padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
-	icon_state = "roadie_battlecoat"
-	item_state = "roadie_battlecoat"
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast
-	name = "\improper Roadie's light battlecoat"
-	desc = "(III) A padded duster with the insignia of the Vault-Tec City Coalition embroidered on the back. This one is often worn by the various employed Roadies in the cities."
-	icon_state = "roadie_battlecoat"
-	item_state = "roadie_battlecoat"
-	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-	slowdown = -0.10
-
-/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/battlecoat/tan
 	name = "tan battlecoat"
@@ -1087,3 +1030,10 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+
+	/obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
+	name = "Ptolemaic combat armor"
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, stylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
+	icon_state = "ptolemaic_armor"
+	item_state = "ptolemaic_armor"
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)

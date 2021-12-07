@@ -132,7 +132,7 @@
 	name = "sentry bot helmet"
 	desc = "(VI) This is a dismantled Sentry Bot head, the internals ripped out and the optic sensors stripped out, replaced with a torch."
 	icon_state = "sentry_helmet"
-	item_state = "sentry_helmet"
+	item_state = "sentryhelmet"
 	armor = list("tier" = 6, "energy" = 55, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/raider/eyebot/sentry/attack_self(mob/user)
@@ -305,7 +305,7 @@
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	
+
 /obj/item/clothing/head/helmet/f13/wayfarer/antler
 	name = "antler skullcap"
 	desc = "(III) An antler skull headdress traditionally worn by the spiritually inclined."
@@ -356,7 +356,7 @@
 	icon_state = "chiefgreen"
 	item_state = "chiefgreen"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
-	
+
 /obj/item/clothing/head/helmet/f13/nightstalkerheavyhelmet
 	name = "Nightstalker Heavy Helmet"
 	icon_state = "nightstalker_tribal_helmet"
@@ -402,6 +402,21 @@
 	item_state = "vtcc_heavy_riot_helmet"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 30)
 
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/provost
+	name = "VTCC Provost riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, with a black visor."
+	icon_state = "vtcc_provost_riot_helmet"
+	item_state = "vtcc_provost_riot_helmet"
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 40, "bio" = 30, "rad" = 10, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal/provost
+	name = "VTCC Provost Marshal cap"
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal/provost/helmet
+	name = "VTCC Marshal riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, with a black visor and a yellow stripe."
+	icon_state = "vtcc_marshal_riot_helmet"
+	item_state = "vtcc_marshal_riot_helmet"
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
@@ -513,3 +528,13 @@
 	desc = "(I) A standard-issue Enclave officer's cap."
 	icon_state = "enclave"
 	item_color = "enclave"
+
+/obj/item/clothing/head/helmet/f13/combat/marinecenturion
+	name = "marine combat helmet"
+	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
+	icon_state = "ptolemaic_helm"
+	item_state = "ptolemaic_helm"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+	flash_protect = 1
+	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	darkness_view = 24

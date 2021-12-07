@@ -149,8 +149,11 @@
 							"Innkeeper",
 							"Hoistway Preacher",
 							"Researcher",
-							"Town Security",
-							"Marshal",
+							"City Security Cadet",
+							"City Security Officer",
+							"Provost",
+							"Provost Sergeant",
+							"Provost Marshal",
 							"Alderman",
 							"Chief Researcher",
 							"Merchant")
@@ -478,6 +481,26 @@
 /datum/gear/uniform/greyturtle
 	name = "Grey Turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/grey
+
+/datum/gear/uniform/turtleskirt
+	name = "Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt
+
+/datum/gear/uniform/turtleskirt/grey
+	name = "Grey Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt/grey
+
+/datum/gear/uniform/turtleskirt/pink
+	name = "Pink Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt/pink
+
+/datum/gear/uniform/turtleskirt/pink/stripe
+	name = "Pink Striped Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt/pink/stripe
+
+/datum/gear/uniform/turtleskirt/pencil
+	name = "Pencil Turtleneck Skirt"
+	path = /obj/item/clothing/under/suit/turtle/skirt/pencil
 
 // Grey utility
 

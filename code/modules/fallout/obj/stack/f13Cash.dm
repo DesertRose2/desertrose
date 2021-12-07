@@ -216,7 +216,7 @@
 	max_qty = 5 //uses flat values because aurei are worth so much
 
 /obj/item/stack/f13Cash/ncr
-	name = "NCR Dollar"
+	name = "NCR Dollars"
 	singular_name = "NCR Dollar"  /* same for denarius, we can pretend the legion can't latin properly */
 	flavor_desc = "Paper money used by the NCR."
 	icon = 'icons/obj/economy.dmi'
@@ -270,7 +270,7 @@
 	max_qty = HIGH_MAX / CASH_NCR
 
 /obj/item/stack/f13Cash/bawls
-	name = "BAWLS cap"
+	name = "BAWLS caps"
 	singular_name = "BAWLS cap"
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "bawls_cap"
@@ -280,7 +280,7 @@
 	merge_type = /obj/item/stack/f13Cash/bawls
 
 /obj/item/stack/f13Cash/random/bawls
-	money_type = /obj/item/stack/f13Cash/denarius
+	money_type = /obj/item/stack/f13Cash/bawls
 
 /obj/item/stack/f13Cash/random/bawls/low
 	min_qty = LOW_MIN / CASH_BOS

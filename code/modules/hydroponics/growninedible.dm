@@ -29,9 +29,14 @@
 
 		if(istype(src, seed.product)) // no adding reagents if it is just a trash item
 			seed.prepare_result(src)
-		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.5
 		add_juice()
+	
+	reset_transform()
 
+/obj/item/grown/reset_transform()
+	..()
+	if(seed)
+		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.5
 
 /obj/item/grown/attackby(obj/item/O, mob/user, params)
 	..()

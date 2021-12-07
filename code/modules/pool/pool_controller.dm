@@ -75,6 +75,7 @@
 
 /obj/machinery/pool/controller/Destroy()
 	STOP_PROCESSING(SSprocessing, src)
+	linked_drain.controller = null
 	linked_drain = null
 	linked_filter = null
 	linked_turfs.Cut()

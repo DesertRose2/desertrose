@@ -416,3 +416,11 @@
 	name = "laser bolt"
 	damage = 40
 	armour_penetration = 0.6
+
+/obj/item/projectile/beam/laser/oldpulse //F2 Pulse Rifle Stuff
+	name = "pulse rifle beam"
+	icon_state = "stunjectile"
+	damage = 56
+	armour_penetration = 0.8
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/yellow_laser
+	light_color = LIGHT_COLOR_YELLOW

@@ -39,11 +39,9 @@
 /obj/docking_port/mobile/elevator{
 	callTime = 600;
 	dir = 4;
-	dwidth = 1;
 	height = 3;
 	id = "raider_station_train";
-	name = "raider train";
-	width = 4
+	name = "raider train"
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)

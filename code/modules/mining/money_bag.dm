@@ -106,6 +106,13 @@
 	new /obj/item/stack/f13Cash/random/med(src)
 	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
+//Larger Settler money bag. Not too wealthy, but enough to basically buy a loadout.
+/obj/item/storage/bag/money/small/vaultcity/PopulateContents()
+	new /obj/item/stack/f13Cash/random/med(src)
+	new /obj/item/stack/f13Cash/random/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/low(src)
+	new /obj/item/stack/f13Cash/random/aureus/low(src)
+
 // Standard Banker money bag. They are insanely wealthy, Caps only and only for RP purposes.
 /obj/item/storage/bag/money/small/banker/PopulateContents()
 	// ~162 worth of non legion money

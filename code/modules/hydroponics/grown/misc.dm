@@ -284,8 +284,6 @@
 	reagents.maximum_volume = newvolume
 	reagents.update_total()
 
-	transform *= TRANSFORM_USING_VARIABLE(40, 100) + 0.5 //temporary fix for size?
-
 /obj/item/reagent_containers/food/snacks/grown/coconut/attack_self(mob/user)
 	if (!opened)
 		return
@@ -443,10 +441,6 @@
 								"<span class='notice'>You splash the contents of [src] onto [target].</span>")
 			reagents.reaction(target, TOUCH)
 			reagents.clear_reagents()
-
-/obj/item/reagent_containers/food/snacks/grown/coconut/dropped(mob/user)
-	. = ..()
-	transform *= TRANSFORM_USING_VARIABLE(40, 100) + 0.5 //temporary fix for size?
 
 /obj/item/reagent_containers/food/snacks/grown/coconut/ex_act(severity)
 	qdel(src)

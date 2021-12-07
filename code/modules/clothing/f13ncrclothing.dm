@@ -5,77 +5,49 @@
 /obj/item/clothing/head/f13/ncr
 	name = "NCR helmet"
 	desc = "(IV) A standard issue NCR helmet. Looks like you can write on it and strap a few items on the helmet band."
-	icon_state = "ncr_steelpot"
-	item_state = "ncr_steelpot"
+	icon_state = "ncr_infantry_helmet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/pothead
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Steelpot" = "ncr_steelpot",
-						"Pith" = "ncr_infantry_helmet",
-						"Gambler" = "steelpot_gambler",
-						"Bandolier" = "steelpot_bandolier",
-						"Patriot" = "steelpot_patriot",
-						"Mitchell" = "steelpot_mitchell"
-						)
 
-/obj/item/clothing/head/f13/ncr/steelpot_goggles
+/obj/item/clothing/head/f13/ncr/goggles
 	name = "NCR storm helmet"
 	desc = "(IV) A standard issue NCR helmet, issued with an additional pair of storm goggles for weather resistance."
-	icon_state = "steelpot_goggles"
-	item_state = "steelpot_goggles"
+	icon_state = "ncr_goggles_helmet"
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
 	flags_cover = HEADCOVERSEYES
 	visor_flags_cover = HEADCOVERSEYES
 	dog_fashion = null
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Steelpot" = "steelpot_goggles",
-						"Pith" = "ncr_goggles_helmet"
-						)
 
-/obj/item/clothing/head/f13/ncr/steelpot_goggles/attack_self(mob/user)
+/obj/item/clothing/head/f13/ncr/goggles/attack_self(mob/user)
 	weldingvisortoggle(user)
-	icon_state = "steelpot_gogglesup"
-	item_state = "steelpot_gogglesup"
+	icon_state = "ncr_goggles_helmetup"
+	item_state = "ncr_goggles_helmetup"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
 	name = "NCR medic helmet"
 	desc = "(IV) A standard issue NCR helmet with the addition of decalling signifying a medic."
-	icon_state = "steelpot_med"
-	item_state = "steelpot_med"
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Steelpot" = "steelpot_med",
-						"Pith" = "ncr_medical_helmet"
-						)
+	icon_state = "ncr_medical_helmet"
 
 /obj/item/clothing/head/f13/ncr/steelpot_mp
 	name = "NCR military police helmet"
 	desc = "(IV) A standard issue NCR helmet emblazoned with the initials of the military police."
-	icon_state = "steelpot_mp"
-	item_state = "steelpot_mp"
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Steelpot" = "steelpot_mp",
-						"Pith" = "ncr_MP"
-						)
+	icon_state = "ncr_MP"
 
 /obj/item/clothing/head/helmet/f13/combat/ncr
 	name = "NCR combat helmet"
-	desc = "(V) An old military grade pre-war combat helmet, repainted to the colour scheme of the New California Republic."
+	desc = "(V) An old military grade pre-war combat helmet with broken visor, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_helmet"
 	item_state = "ncr_helmet"
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
 	name = "reinforced NCR combat helmet"
 	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_helmet"
-	item_state = "ncr_helmet"
+	icon_state = "ncr_helmet_mk2"
+	item_state = "ncr_helmet_mk2"
 
 //Hats
 /obj/item/clothing/head/f13/ncr_cap
@@ -86,16 +58,11 @@
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr
-	name = "NCR enlisted beret"
+	name = "NCR infantry beret"
 	desc = "(IV) A beret, issued to members of NCR."
 	icon_state = "ncr_infantry_beret_enlisted"
 	item_state = "ncr_infantry_beret_enlisted"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Infantry" = "ncr_infantry_beret_enlisted",
-						"Light Infantry" = "ncr_scout_beret_enlisted"
-						)
 
 /obj/item/clothing/head/beret/ncr_lt
 	name = "NCR officer beret"
@@ -103,12 +70,6 @@
 	icon_state = "ncr_infantry_beret_officer"
 	item_state = "ncr_infantry_beret_officer"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Infantry" = "ncr_infantry_beret_officer",
-						"Light Infantry" = "ncr_scout_beret_officer",
-						"First Recon" = "ncr_recon_beret_officer"
-						)
 
 /obj/item/clothing/head/beret/ncr_medic
 	name = "NCR combat medic beret"
@@ -156,17 +117,17 @@
 
 /obj/item/clothing/head/beret/ncr_recon
 	name = "NCR first recon beret"
-	desc = "(V) A red beret, issued to members of NCR First Recon."
+	desc = "(IV) A red beret, issued to members of the NCR 1st Reconnaissance Battalion often shortened to First Recon."
 	icon_state = "ncr_recon_beret_enlisted"
 	item_state = "ncr_recon_beret_enlisted"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/head/beret/ncr_scout_old
-	name = "NCR Third Scout beret"
-	desc = "(V) A brown beret, issued to members of the NCR Third Scout Battallion."
+/obj/item/clothing/head/beret/ncr_scout
+	name = "NCR third scout beret"
+	desc = "(IV) A brown beret, issued to members of the NCR 1st Reconnaissance Battalion, 3rd Scout Regiment."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_sof
 	name = "NCR SOF beret"
@@ -214,11 +175,6 @@
 	icon_state = "ncr_standard_mantle"
 	item_state = "ncr_standard_mantle"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Infantry" = "ncr_standard_mantle",
-						"Light Infantry" = "scoutarmor_mantle"
-						)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	name = "NCR reinforced patrol vest"
@@ -226,11 +182,6 @@
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Infantry" = "ncr_reinforced_vest",
-						"Light Infantry" = "scoutarmor"
-						)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	name = "NCR reinforced mantle vest"
@@ -238,11 +189,6 @@
 	icon_state = "ncr_reinforced_mantle"
 	item_state = "ncr_reinforced_mantle"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	always_reskinnable = TRUE
-	unique_reskin = list(
-						"Infantry" = "ncr_reinforced_mantle",
-						"Light Infantry" = "scoutarmor_mantle_reinforced"
-						)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	name = "NCR medical labcoat"
@@ -261,13 +207,13 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
 	name = "NCR combat armor"
-	desc = "(V) An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
+	desc = "(V) An old military grade pre war combat armor repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	name = "reinforced NCR combat armor"
-	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
+	desc = "(VI) A reinforced set of bracers and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor_mk2"
 	item_state = "ncr_armor_mk2"
 

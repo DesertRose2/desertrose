@@ -495,6 +495,9 @@ SUBSYSTEM_DEF(job)
 			else
 				handle_auto_deadmin_roles(M.client, rank) */
 
+	if (!job.objectives && LAZYLEN(job.objectivesList)) //if objectives aren't set yet and we have options
+		job.objectives = pick(job.objectivesList)
+
 	to_chat(M, "<b>You are the [rank].</b>")
 	if(job)
 		to_chat(M, "<b>As the [rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
@@ -502,6 +505,7 @@ SUBSYSTEM_DEF(job)
 		to_chat(M, "<FONT color='blue'><B>[job.description]</b>")
 		to_chat(M, "<FONT color='red'><b>[job.forbids]</b>")
 		to_chat(M, "<FONT color='green'><b>[job.enforces]</b>")
+		to_chat(M, "<FONT color='black'><b>[job.objectives]</b>")
 		if(job.req_admin_notify)
 			to_chat(M, "<b>You are playing a job that is important for Game Progression. If you have to disconnect immediately, please notify the admins via adminhelp. Otherwise put your locker gear back into the locker and cryo out.</b>")
 		if(job.custom_spawn_text)

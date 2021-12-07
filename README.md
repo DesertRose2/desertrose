@@ -10,7 +10,7 @@ Based and maintained from Citadel Station.
 **Desert Rose Information**  
 * **Website:** <http://desertrosefallout13.boards.net/>
 * **Code:** <https://github.com/DesertRose2/desertrose>
-* **Prerebase Code:** <https://github.com/judgex/desertrose>
+* **Prerebase Code:** <https://github.com/judgex/desertrose-old>
 * **Wiki:** <https://desert-rose-fallout-13.fandom.com/wiki/Desert_Rose_-_Fallout_13_Wiki>
 * **Discord:** <https://discord.gg/ag9nmm5H6S>
 
