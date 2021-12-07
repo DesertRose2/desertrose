@@ -3943,6 +3943,9 @@
 /obj/structure/chair/left,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "cNd" = (
@@ -12818,11 +12821,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "iRb" = (
-/obj/effect/landmark/start/f13/roadie,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
 	},
-/area/f13/tunnel)
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/brotherhood/operations)
 "iRc" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/f13{
@@ -17616,7 +17622,7 @@
 /area/f13/clinic)
 "mnw" = (
 /obj/effect/landmark/start/f13/roadie,
-/turf/open/floor/f13/wood,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "mnB" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -42568,10 +42574,10 @@ uoO
 uoO
 jmN
 hBU
-mnw
+lKT
 mzn
 lOt
-ydV
+mnw
 ydV
 jmN
 qXr
@@ -43853,10 +43859,10 @@ uoO
 uoO
 jmN
 hMw
-iRb
+kvS
 lKT
 lOt
-ydV
+mnw
 ydV
 jmN
 rbt
@@ -45395,10 +45401,10 @@ uoO
 uoO
 jmN
 ioO
-mnw
+lKT
 wVl
 lOt
-ydV
+mnw
 xqU
 jmN
 xDr
@@ -94567,7 +94573,7 @@ nCP
 mrV
 mrV
 jJM
-bOf
+iRb
 kxR
 cOE
 qrJ
