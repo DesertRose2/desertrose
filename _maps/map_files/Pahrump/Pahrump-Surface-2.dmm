@@ -7861,11 +7861,11 @@
 /turf/open/floor/carpet/blue,
 /area/f13/city)
 "cJX" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/rack,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
 	},
-/obj/structure/table/wood,
-/obj/item/candle/infinite,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -11865,14 +11865,12 @@
 	},
 /area/f13/building)
 "eiQ" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/chocolatebar{
-	name = "Mars Bar"
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
 	},
-/turf/open/floor/f13/wood{
-	color = "#c5bab2"
-	},
-/area/f13/legion)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "eiY" = (
 /obj/structure/fluff/railing,
 /obj/structure/destructible/tribal_torch/lit,
@@ -11917,10 +11915,6 @@
 /obj/structure/reagent_dispensers/barrel,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
-"ejF" = (
-/obj/structure/table/wood,
-/turf/open/space/basic,
-/area/f13/legion)
 "ejJ" = (
 /obj/structure/fluff/railing{
 	color = "#968d87";
@@ -14582,7 +14576,6 @@
 /turf/open/water,
 /area/f13/wasteland)
 "fcq" = (
-/obj/structure/closet/crate/large,
 /obj/structure/closet/crate/large,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -20865,6 +20858,7 @@
 "hih" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/candle_box,
+/obj/item/storage/box/matches,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -30660,9 +30654,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/rack{
-	pixel_y = 10
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -33242,6 +33233,7 @@
 	pixel_x = 12
 	},
 /obj/item/claymore/machete/training,
+/obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/indestructible/ground/outside/dirt{
 	color = "#9c9c9c"
 	},
@@ -35851,22 +35843,6 @@
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/f13/wasteland)
-"lTX" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/rack{
-	pixel_y = 10
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/legion)
 "lUa" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/workboots/mining,
@@ -67305,6 +67281,9 @@
 /obj/structure/table/wood,
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/chocolatebar{
+	name = "Mars Bar"
 	},
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
@@ -123134,7 +123113,7 @@ pWz
 pWz
 vPq
 xkK
-ozY
+hPP
 ozY
 ozY
 ozY
@@ -123391,7 +123370,7 @@ pWz
 pjz
 ozY
 xkK
-ozY
+hPP
 ozY
 ozY
 ozY
@@ -123648,7 +123627,7 @@ pWz
 qHB
 oxS
 xkK
-lTX
+hPP
 ozY
 ozY
 xLt
@@ -124958,7 +124937,7 @@ btk
 btk
 ulk
 yef
-ejF
+sKx
 vuC
 xzq
 dYw
@@ -128300,7 +128279,7 @@ btk
 btk
 btk
 xDp
-eiQ
+sKx
 xzq
 vuC
 rPz
@@ -128545,11 +128524,11 @@ btk
 btk
 btk
 btk
-btk
+pOx
 okh
 okh
 okh
-mvv
+eiQ
 hdQ
 btk
 rxs
@@ -128557,7 +128536,7 @@ rxs
 rxs
 rxs
 xDp
-cJX
+twQ
 xzq
 vuC
 dYw
@@ -130091,7 +130070,7 @@ lbo
 okh
 okh
 okh
-mvv
+eiQ
 hdQ
 btk
 rxs
@@ -130099,7 +130078,7 @@ rxs
 rxs
 rxs
 xDp
-cJX
+twQ
 vuC
 xzq
 dYw
@@ -131353,7 +131332,7 @@ ybI
 nkp
 hBe
 pWz
-iIN
+cJX
 xzq
 vuC
 wzo
