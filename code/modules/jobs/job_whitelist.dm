@@ -155,4 +155,8 @@
 		for(var/rtypeWL in GLOB.legion_veteran_positions)
 			play_records[rtypeWL] = rtypeWL
 
+	if(whitelists["provost"])
+		for(var/rtypeWL in GLOB.vtcc_provost_positions)
+			play_records[rtypeWL] = rtypeWL
+
 	prefs.job_whitelists = play_records
