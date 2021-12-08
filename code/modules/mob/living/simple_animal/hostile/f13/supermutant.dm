@@ -283,3 +283,30 @@
 /mob/living/simple_animal/hostile/supermutant/suicider/proc/self_destruct()
 	explosion(src,1,1,8,8)
 	qdel(src)
+
+/mob/living/simple_animal/hostile/supermutant/rangedmutant/enclave
+	name = "enclave super mutant"
+	desc = "A huge and ugly mutant humanoid.  This one is armed with a laser gatling and suited up in T-51b."
+	icon_state = "hulk_enclave"
+	icon_living = "hulk_enclave"
+	icon_dead = "hulk_enclave_dead"
+	ranged = 1
+	maxHealth = 2500
+	health = 2500
+	speed = 1.4
+	retreat_distance = 2
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/beam/mutant
+	projectilesound = 'sound/weapons/laser.ogg'
+	extra_projectiles = 8
+	ranged_cooldown_time = 20
+	loot = list()
+	taunt_chance = 0
+	idlesound = list()
+	death_sound = list('sound/f13npc/supermutant/death1.ogg', 'sound/f13npc/supermutant/death2.ogg')
+	aggrosound = list('sound/f13npc/supermutant/alert1.ogg', 'sound/f13npc/supermutant/alert2.ogg', 'sound/f13npc/supermutant/alert3.ogg', 'sound/f13npc/supermutant/alert4.ogg')
+
+/mob/living/simple_animal/hostile/supermutant/rangedmutant/enclave/minigun
+	desc = "A huge and ugly mutant humanoid.  This one is armed with a minigun and suited up in T-51b."
+	projectiletype = /obj/item/projectile/bullet/c5mm
+	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
