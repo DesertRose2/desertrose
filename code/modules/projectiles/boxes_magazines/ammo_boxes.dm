@@ -26,7 +26,7 @@
 	icon_state = "357tube"
 	caliber = "357"
 	ammo_type = /obj/item/ammo_casing/a357
-	max_ammo = 7
+	max_ammo = 12
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 40000)
 
@@ -275,7 +275,7 @@
 	icon_state = "44tube"
 	caliber = "44"
 	ammo_type = /obj/item/ammo_casing/m44
-	max_ammo = 8
+	max_ammo = 12
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 40000)
 
@@ -628,7 +628,7 @@
 	icon_state = "44tube"
 	caliber = "4570"
 	ammo_type = /obj/item/ammo_casing/c4570
-	max_ammo = 8
+	max_ammo = 10
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 40000)
 

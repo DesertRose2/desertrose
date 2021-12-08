@@ -370,8 +370,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/shotgunrevolver
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	fire_delay = 3.5
-	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_MEDIUM
 	spread = 40
 	untinkerable = TRUE
 
