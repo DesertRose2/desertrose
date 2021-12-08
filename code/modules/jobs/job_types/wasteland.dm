@@ -213,7 +213,7 @@ Great Khans
 
 /datum/outfit/loadout/brawler
 	name = "Brawler"
-	l_hand = /obj/item/twohanded/baseball/spiked
+	l_hand = /obj/item/claymore/machete/reinforced
 	backpack_contents = list(
 		/obj/item/melee/unarmed/brass/spiked=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,
