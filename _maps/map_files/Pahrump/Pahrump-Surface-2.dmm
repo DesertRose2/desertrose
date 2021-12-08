@@ -9368,9 +9368,6 @@
 	},
 /area/f13/building)
 "dlA" = (
-/obj/structure/closet/crate/silvercrate{
-	pixel_y = 10
-	},
 /obj/item/clothing/shoes/f13/raidertreads,
 /turf/open/floor/plating/dirt,
 /area/f13/legion)
@@ -38032,9 +38029,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "mJp" = (
-/obj/structure/closet/crate/silvercrate{
-	pixel_y = 10
-	},
 /obj/item/clothing/neck/mantle/ragged,
 /turf/open/floor/plating/dirt,
 /area/f13/legion)
@@ -42425,8 +42419,11 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "omr" = (
-/obj/structure/closet/crate/silvercrate,
 /obj/item/clothing/gloves/f13/handwraps,
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
 /turf/open/floor/plating/dirt,
 /area/f13/legion)
 "omu" = (
@@ -56694,6 +56691,14 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"tmU" = (
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1;
+	pixel_y = -25
+	},
+/turf/closed/wall/f13/tentwall,
+/area/f13/legion)
 "tmX" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -61005,7 +61010,10 @@
 	},
 /area/f13/wasteland)
 "uPS" = (
-/obj/structure/closet/crate/silvercrate,
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
 /turf/open/floor/plating/dirt,
 /area/f13/legion)
 "uPU" = (
@@ -131638,7 +131646,7 @@ sTc
 yef
 hSK
 vbG
-ayd
+tmU
 dlA
 eDA
 uPS
@@ -132152,7 +132160,7 @@ iIN
 yef
 xrg
 vbG
-ayd
+tmU
 mJp
 eDA
 omr
