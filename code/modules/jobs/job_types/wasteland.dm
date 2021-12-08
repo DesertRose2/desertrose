@@ -73,6 +73,7 @@ Great Khans
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
 
@@ -212,7 +213,7 @@ Great Khans
 
 /datum/outfit/loadout/brawler
 	name = "Brawler"
-	l_hand = /obj/item/twohanded/baseball/spiked
+	l_hand = /obj/item/claymore/machete/reinforced
 	backpack_contents = list(
 		/obj/item/melee/unarmed/brass/spiked=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,

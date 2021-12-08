@@ -2081,13 +2081,6 @@
 		to_chat(M, "You should sit down and take a rest...")
 	..()
 
-/datum/reagent/moonsugar
-	name = "Moonsugar"
-	description = "The primary precursor for an ancient feline delicacy known as skooma. While it has no notable effects on it's own, mixing it with morphine in a chilled container may yield interesting results."
-	color = "#FAEAFF"
-	taste_description = "synthetic catnip"
-	value = REAGENT_VALUE_UNCOMMON
-
 /datum/reagent/changeling_string
 	name = "UNKNOWN"
 	description = "404: Chemical not found."
