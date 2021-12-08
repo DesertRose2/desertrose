@@ -73,6 +73,7 @@ Great Khans
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
 
