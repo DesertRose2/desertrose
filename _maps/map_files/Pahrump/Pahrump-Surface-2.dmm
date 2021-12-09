@@ -18076,20 +18076,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/ncr)
-"gkB" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
-/obj/machinery/processor/chopping_block,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/legion)
 "gkT" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -26908,7 +26894,10 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/storage/box/bowls,
+/obj/item/storage/box/bowls{
+	pixel_x = 20
+	},
+/obj/machinery/reagentgrinder,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -40305,6 +40294,7 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
+/obj/machinery/processor/chopping_block,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -60544,9 +60534,6 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
-	},
-/obj/machinery/reagentgrinder{
-	pixel_y = 8
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -123445,7 +123432,7 @@ xrg
 kxA
 vtm
 vtm
-gkB
+uEB
 vtm
 vtm
 xpG
