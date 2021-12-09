@@ -98,6 +98,11 @@
 	desc = "A single use autosurgeon that contains a toolset augment. A screwdriver can be used to remove it, but implants can't be placed back in."
 	uses = 1
 
+/obj/item/autosurgeon/riotshield
+	starting_organ = /obj/item/shield/riot/implant
+	desc = "A single use autosurgeon that contains a riot shield augment. A screwdriver can be used to remove it, but implants can't be placed back in."
+	uses = 1
+
 /obj/item/autosurgeon/thermal_eyes
 	starting_organ = /obj/item/organ/eyes/robotic/thermals
 

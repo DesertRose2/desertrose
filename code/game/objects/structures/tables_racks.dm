@@ -142,8 +142,11 @@
 	SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "table", /datum/mood_event/table)
 
 /obj/structure/table/proc/tablelimbsmash(mob/living/user, mob/living/pushed_mob)
-	pushed_mob.Knockdown(30)
 	var/obj/item/bodypart/banged_limb = pushed_mob.get_bodypart(user.zone_selected) || pushed_mob.get_bodypart(BODY_ZONE_HEAD)
+	if(!banged_limb)
+		to_chat(user, "<span class='danger'>You can't find a limb to smash!</span>")
+		return
+	pushed_mob.Knockdown(30)
 	var/extra_wound = 0
 	if(HAS_TRAIT(user, TRAIT_HULK))
 		extra_wound = 20

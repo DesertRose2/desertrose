@@ -73,6 +73,7 @@ Great Khans
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
 
@@ -115,14 +116,24 @@ Great Khans
 /datum/outfit/loadout/classic
 	name = "Classic"
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol127
+	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m127mm=2)
+		/obj/item/ammo_box/magazine/m127mm=2,
+		/obj/item/ammo_box/magazine/greasegun = 1)
 
 /datum/outfit/loadout/marksman
 	name = "Marksman"
 	l_hand =	/obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308=2)
+		/obj/item/ammo_box/magazine/w308=2,
+		/obj/item/gun/ballistic/automatic/pistol/n99=1,)
+
+/datum/outfit/loadout/runner
+	name = "Runner"
+	l_hand =	/obj/item/gun/ballistic/automatic/type93
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=2,
+		)
 
 /datum/job/wasteland/f13pusher
 	title = "Great Khan"
@@ -184,11 +195,6 @@ Great Khans
 		/obj/item/reagent_containers/pill/patch/medx=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
-	suit_store = pick(
-		/obj/item/gun/ballistic/rifle/automatic/hunting/trail, \
-		/obj/item/gun/ballistic/shotgun/hunting, \
-		/obj/item/gun/ballistic/revolver/m29, \
-		/obj/item/gun/ballistic/automatic/pistol/ninemil)
 	head = /obj/item/clothing/head/helmet/f13/khan
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 
@@ -199,24 +205,26 @@ Great Khans
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/beaker/plastic=2,
 		/obj/item/book/granter/trait/chemistry=1,
-		/obj/item/clothing/mask/gas/glass=1)
+		/obj/item/clothing/mask/gas/glass=1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv = 1)
 
 /datum/outfit/loadout/enforcer
 	name = "Enforcer"
 	l_hand = /obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck=1,
+		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/restraints/legcuffs/bola=2)
 
 /datum/outfit/loadout/brawler
 	name = "Brawler"
-	l_hand = /obj/item/twohanded/baseball/spiked
+	l_hand = /obj/item/claymore/machete/reinforced
 	backpack_contents = list(
-		/obj/item/melee/unarmed/brass/spiked=1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
+		/obj/item/gun/ballistic/automatic/pistol/autoloader = 1,
+		/obj/item/ammo_box/magazine/m45 = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/book/granter/trait/big_leagues=1)
 /*

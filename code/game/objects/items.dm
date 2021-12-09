@@ -444,13 +444,17 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	item_flags &= ~IN_INVENTORY
 	if(SEND_SIGNAL(src, COMSIG_ITEM_DROPPED,user) & COMPONENT_DROPPED_RELOCATION)
 		. = ITEM_RELOCATED_BY_DROPPED
-	user.update_equipment_speed_mods()
+	user?.update_equipment_speed_mods()
 
 // called just as an item is picked up (loc is not yet changed)
 /obj/item/proc/pickup(mob/user)
 	SHOULD_CALL_PARENT(TRUE)
 	SEND_SIGNAL(src, COMSIG_ITEM_PICKUP, user)
 	item_flags |= IN_INVENTORY
+
+/// called to reset an item's transform to default; typically initial, but can be overridden
+/obj/item/proc/reset_transform()
+	transform = initial(transform)
 
 // called when "found" in pockets and storage items. Returns 1 if the search should end.
 /obj/item/proc/on_found(mob/finder)

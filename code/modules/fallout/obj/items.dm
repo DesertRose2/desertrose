@@ -42,8 +42,6 @@
 	var/list/weapons = list()
 	weapons["M4 Scout Carbine"] = list(/obj/item/storage/backpack/duffelbag/scoutcarbine)
 	weapons["M1 Carbine"]=	list(/obj/item/storage/backpack/duffelbag/m1carbine)
-	weapons["M1 Garand Battle Rifle"] = list(/obj/item/storage/backpack/duffelbag/m1garand)
-	weapons["DKS Sniper Rifle"] = list(/obj/item/storage/backpack/duffelbag/sniper)
 	weapons["Browning Auto-5 Shotgun"] = list(/obj/item/storage/backpack/duffelbag/auto5)
 	var/choice = input(user,"Select your stored weapon.") as null|anything in weapons
 	if(src && choice)
@@ -70,15 +68,6 @@
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 
-/obj/item/storage/backpack/duffelbag/m1garand
-
-/obj/item/storage/backpack/duffelbag/m1garand/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/m1garand(src)
-	new /obj/item/ammo_box/magazine/garand308(src)
-	new /obj/item/ammo_box/magazine/garand308(src)
-	new /obj/item/ammo_box/magazine/garand308(src)
-	new /obj/item/attachments/scope(src)
-
 /obj/item/storage/backpack/duffelbag/auto5
 
 /obj/item/storage/backpack/duffelbag/auto5/PopulateContents()
@@ -86,11 +75,3 @@
 	new /obj/item/ammo_box/shotgun/buck(src)
 	new /obj/item/ammo_box/shotgun/buck(src)
 	new /obj/item/ammo_box/shotgun/slug(src)
-
-/obj/item/storage/backpack/duffelbag/sniper
-
-/obj/item/storage/backpack/duffelbag/sniper/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/marksman/sniper(src)
-	new /obj/item/ammo_box/magazine/w308(src)
-	new /obj/item/ammo_box/magazine/w308(src)
-	new /obj/item/ammo_box/magazine/w308(src)

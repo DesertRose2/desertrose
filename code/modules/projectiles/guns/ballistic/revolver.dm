@@ -158,8 +158,8 @@
 ///////////////////////
 
 /obj/item/gun/ballistic/revolver/revolver45
-	name = "Casull .45"
-	desc = "A Casull revolver; where its name came from though is a msytery as its origins have been lost to the mists of time."
+	name = "Colt .45"
+	desc = "An old Single Action Army retooled for .45 ACP. Classic Americana, its wooden grip is worn and the steel dark from many years of use, though it is in relatively good condition."
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
@@ -370,8 +370,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/shotgunrevolver
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	fire_delay = 3.5
-	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_MEDIUM
 	spread = 40
 	untinkerable = TRUE
 

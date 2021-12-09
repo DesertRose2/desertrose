@@ -82,7 +82,7 @@
 /datum/export/tool/advdmining
 	cost = 150
 	unit_name = "advanced mining tool"
-	export_types = list(/obj/item/pickaxe/diamond, /obj/item/pickaxe/drill/diamonddrill, /obj/item/pickaxe/drill/jackhammer, /obj/item/gun/energy/plasmacutter/adv)
+	export_types = list(/obj/item/pickaxe/diamond, /obj/item/pickaxe/drill/diamonddrill, /obj/item/gun/energy/plasmacutter/adv)
 	include_subtypes = FALSE
 
 /datum/export/tool/screwdriver

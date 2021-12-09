@@ -402,6 +402,21 @@
 	item_state = "vtcc_heavy_riot_helmet"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 30)
 
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/provost
+	name = "VTCC Provost riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, with a black visor."
+	icon_state = "vtcc_provost_riot_helmet"
+	item_state = "vtcc_provost_riot_helmet"
+	armor = list("tier" = 6, "energy" = 20, "bomb" = 40, "bio" = 30, "rad" = 10, "fire" = 60, "acid" = 30)
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal/provost
+	name = "VTCC Provost Marshal cap"
+
+/obj/item/clothing/head/helmet/riot/vaultsec/vc/marshal/provost/helmet
+	name = "VTCC Marshal riot helmet"
+	desc = "(VI) A heavy riot helmet adapted from the design of most pre-war riot helmets, with a black visor and a yellow stripe."
+	icon_state = "vtcc_marshal_riot_helmet"
+	item_state = "vtcc_marshal_riot_helmet"
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
@@ -474,10 +489,10 @@
 
 /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	name = "Great Khan full helmet"
-	desc = "(IV) A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."
+	desc = "(V) A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."
 	icon_state = "khanhelmet"
 	item_state = "khanhelmet"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 15, "bio" = 0, "rad" = 10, "fire" = 20, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
@@ -513,7 +528,7 @@
 	desc = "(I) A standard-issue Enclave officer's cap."
 	icon_state = "enclave"
 	item_color = "enclave"
-	
+
 /obj/item/clothing/head/helmet/f13/combat/marinecenturion
 	name = "marine combat helmet"
 	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."

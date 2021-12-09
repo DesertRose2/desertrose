@@ -56,6 +56,10 @@
 /obj/item/projectile/beam/weak/penetrator
 	armour_penetration = 0.8
 
+/obj/item/projectile/beam/mutant
+	damage = 25
+	armour_penetration = 0.8
+
 /obj/item/projectile/beam/practice
 	name = "practice laser"
 	damage = 0

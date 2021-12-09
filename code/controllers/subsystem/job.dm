@@ -495,21 +495,8 @@ SUBSYSTEM_DEF(job)
 			else
 				handle_auto_deadmin_roles(M.client, rank) */
 
-	if (!job.objectives)//if objectives aren't set yet
-		if(LAZYLEN(job.objectivesList))
-			job.objectives = pick(job.objectivesList)
-		if (job.department_flag == LEGION)
-			job.objectives = pick(job.objectivesList)//get a random one from the faction.dm objetives list
-		if (job.department_flag == NCR)
-			job.objectives = pick(job.objectivesList)
-		if (job.department_flag == BOS)
-			job.objectives = pick(job.objectivesList)
-		if (job.department_flag == VTCC)
-			job.objectives = pick(job.objectivesList)
-		if (job.department_flag == TRIBAL)
-			job.objectives = pick(job.objectivesList)
-		if (job.department_flag == FOLLOWERS)
-			job.objectives = pick(job.objectivesList)
+	if (!job.objectives && LAZYLEN(job.objectivesList)) //if objectives aren't set yet and we have options
+		job.objectives = pick(job.objectivesList)
 
 	to_chat(M, "<b>You are the [rank].</b>")
 	if(job)

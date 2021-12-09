@@ -124,17 +124,6 @@
 	toolspeed = 0.4
 	digrange = 2
 
-/obj/item/pickaxe/drill/jackhammer
-	name = "sonic jackhammer"
-	icon_state = "jackhammer"
-	item_state = "jackhammer"
-	w_class = WEIGHT_CLASS_HUGE
-	toolspeed = 0.2 //the epitome of powertools. extremely fast mining, laughs at puny walls
-	usesound = 'sound/weapons/sonic_jackhammer.ogg'
-	hitsound = 'sound/weapons/sonic_jackhammer.ogg'
-	desc = "Cracks rocks with sonic blasts, and doubles as a demolition power tool for smashing walls."
-	digrange = 2
-
 /obj/item/shovel
 	name = "shovel"
 	desc = "A large tool for digging and moving dirt."

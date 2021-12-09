@@ -907,8 +907,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/alderman
 	name = "Alderman"
 
-/obj/effect/landmark/start/f13/marshal
-	name = "Marshal"
+/obj/effect/landmark/start/f13/provostmarshal
+	name = "Provost Marshal"
 
 /obj/effect/landmark/start/f13/merchant
 	name = "Merchant"
@@ -918,6 +918,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/researcher
 	name = "Researcher"
+
+/obj/effect/landmark/start/f13/provostsgt
+	name = "Provost Sergeant"
+
+/obj/effect/landmark/start/f13/provost
+	name = "Provost"
 
 /obj/effect/landmark/start/f13/townsec
 	name = "City Security Officer"

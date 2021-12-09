@@ -45,67 +45,73 @@
 
 // This should probably start using move force sometime in the future but I'm lazy.
 /obj/machinery/pool/drain/process()
+	if(!controller)
+		return PROCESS_KILL
+	
 	if(!filling)
 		for(var/obj/item/I in range(min(item_suction_range, 10), src))
 			if(!I.anchored && (I.w_class <= WEIGHT_CLASS_SMALL))
 				step_towards(I, src)
 				if((I.w_class <= WEIGHT_CLASS_TINY) && (get_dist(I, src) == 0))
 					I.forceMove(controller.linked_filter)
-	if(active)
-		if(filling)
-			if(cycles_left-- > 0)
-				playsound(src, 'sound/effects/fillingwatter.ogg', 100, TRUE)
-				for(var/obj/O in orange(min(fill_push_range, 10), src))
-					if(!O.anchored && is_in_our_pool(O))
-						step_away(O, src)
-				for(var/mob/M in orange(min(fill_push_range, 10), src))		//compiler fastpath apparently?
-					if(!M.anchored && isliving(M) && is_in_our_pool(M))
-						step_away(M, src)
-			else
-				for(var/turf/open/pool/P in controller.linked_turfs)
-					P.filled = TRUE
-					P.update_icon()
-				for(var/obj/effect/waterspout/S in range(1, src))
-					qdel(S)
-				controller.drained = FALSE
-				if(controller.bloody < 1000)
-					controller.bloody /= 2
-				else
-					controller.bloody /= 4
-				controller.update_color()
-				filling = FALSE
-				active = FALSE
+	
+	if(!active)
+		return
+	
+	if(filling)
+		if(cycles_left-- > 0)
+			playsound(src, 'sound/effects/fillingwatter.ogg', 100, TRUE)
+			for(var/obj/O in orange(min(fill_push_range, 10), src))
+				if(!O.anchored && is_in_our_pool(O))
+					step_away(O, src)
+			for(var/mob/M in orange(min(fill_push_range, 10), src))		//compiler fastpath apparently?
+				if(!M.anchored && isliving(M) && is_in_our_pool(M))
+					step_away(M, src)
 		else
-			if(cycles_left-- > 0)
-				playsound(src, 'sound/effects/pooldrain.ogg', 100, TRUE)
-				playsound(src, "water_wade", 60, TRUE)
-				for(var/obj/O in orange(min(drain_suck_range, 10), src))
-					if(!O.anchored && is_in_our_pool(O))
-						step_towards(O, src)
-				for(var/mob/M in orange(min(drain_suck_range, 10), src))
-					if(isliving(M) && !M.anchored && is_in_our_pool(M))
-						if(!(cycles_left % suck_in_once_per))
-							step_towards(M, src)
-						whirl_mob(M)
-						if(ishuman(M) && (get_dist(M, src) <= 1))
-							var/mob/living/carbon/human/H = M
-							playsound(src, pick('sound/misc/crack.ogg','sound/misc/crunch.ogg'), 50, TRUE)
-							if(H.lying)			//down for any reason
-								H.adjustBruteLoss(2)
-								to_chat(H, "<span class='danger'>You're caught in the drain!</span>")
-							else
-								H.apply_damage(2.5, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)) //drain should only target the legs
-								to_chat(H, "<span class='danger'>Your legs are caught in the drain!</span>")
+			for(var/turf/open/pool/P in controller.linked_turfs)
+				P.filled = TRUE
+				P.update_icon()
+			for(var/obj/effect/waterspout/S in range(1, src))
+				qdel(S)
+			controller.drained = FALSE
+			if(controller.bloody < 1000)
+				controller.bloody /= 2
 			else
-				for(var/turf/open/pool/P in controller.linked_turfs)
-					P.filled = FALSE
-					P.update_icon()
-				for(var/obj/effect/whirlpool/W in range(1, src))
-					qdel(W)
-				controller.drained = TRUE
-				controller.mist_off()
-				active = FALSE
-				filling = TRUE
+				controller.bloody /= 4
+			controller.update_color()
+			filling = FALSE
+			active = FALSE
+	else
+		if(cycles_left-- > 0)
+			playsound(src, 'sound/effects/pooldrain.ogg', 100, TRUE)
+			playsound(src, "water_wade", 60, TRUE)
+			for(var/obj/O in orange(min(drain_suck_range, 10), src))
+				if(!O.anchored && is_in_our_pool(O))
+					step_towards(O, src)
+			for(var/mob/M in orange(min(drain_suck_range, 10), src))
+				if(isliving(M) && !M.anchored && is_in_our_pool(M))
+					if(!(cycles_left % suck_in_once_per))
+						step_towards(M, src)
+					whirl_mob(M)
+					if(ishuman(M) && (get_dist(M, src) <= 1))
+						var/mob/living/carbon/human/H = M
+						playsound(src, pick('sound/misc/crack.ogg','sound/misc/crunch.ogg'), 50, TRUE)
+						if(H.lying)			//down for any reason
+							H.adjustBruteLoss(2)
+							to_chat(H, "<span class='danger'>You're caught in the drain!</span>")
+						else
+							H.apply_damage(2.5, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)) //drain should only target the legs
+							to_chat(H, "<span class='danger'>Your legs are caught in the drain!</span>")
+		else
+			for(var/turf/open/pool/P in controller.linked_turfs)
+				P.filled = FALSE
+				P.update_icon()
+			for(var/obj/effect/whirlpool/W in range(1, src))
+				qdel(W)
+			controller.drained = TRUE
+			controller.mist_off()
+			active = FALSE
+			filling = TRUE
 
 /// dangerous proc don't fuck with, admins
 /obj/machinery/pool/drain/proc/whirl_mob(mob/living/L, duration = 8, delay = 1)

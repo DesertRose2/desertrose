@@ -216,6 +216,7 @@
 	icon_state = "mercenary_ghoul"
 	icon_living = "mercenary_ghoul"
 	icon_dead = "mercenary_ghoul_dead"
+	stat_attack = UNCONSCIOUS
 	maxHealth = 260
 	health = 260
 	ranged_cooldown_time = 30
@@ -236,19 +237,25 @@
 	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds a riot shotgun."
 	icon_state = "mercenary_ghoul_c"
 	icon_living = "mercenary_ghoul_c"
-	ranged_cooldown_time = 40
+	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
-	extra_projectiles = 4
+	extra_projectiles = 2
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/amr
 	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an anti-materiel rifle."
 	icon_state = "mercenary_ghoul_d"
-	icon_living = "fmercenary_ghoul_d"
-	ranged_cooldown_time = 35
+	icon_living = "mercenary_ghoul_d"
+	aggro_vision_range = 15
+	retreat_distance = 2
+	minimum_distance = 10	
+	ranged_cooldown_time = 15
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
 	extra_projectiles = 0
+
+/mob/living/simple_animal/hostile/ghoul/ranged/mercenary/amr/explosive
+	projectiletype = /obj/item/projectile/bullet/a50MG/explosive
 
 /mob/living/simple_animal/hostile/ghoul/soldier
 	name = "ghoul soldier"
@@ -448,8 +455,9 @@
 	desc = "A ghoul serving under the banner of the Rebound. They hold a tinkered sniper rifle and are clad in a duster with a gasmask."
 	icon_state = "rebound_initiate_c"
 	icon_living = "rebound_initiate_c"
+	aggro_vision_range = 15
 	retreat_distance = 3
-	minimum_distance = 6
+	minimum_distance = 10
 	ranged_cooldown_time = 60
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
@@ -508,7 +516,7 @@
 	desc = "A heavy ghoul serving under the banner of the Rebound. They weild a citykiller and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_b"
 	icon_living = "rebound_reaver_b"
-	ranged_cooldown_time = 30
+	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
 	extra_projectiles = 2
@@ -620,7 +628,7 @@
 	taunt_chance = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/death()
-	visible_message("The ghoul kneels down, rigging his fusion core to explode, manicially laughing.")
+	visible_message("The ghoul kneels down, rigging his fusion core to explode.")
 	do_sparks(2, TRUE, src)
 	for(var/i in 1 to 3)
 		addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
