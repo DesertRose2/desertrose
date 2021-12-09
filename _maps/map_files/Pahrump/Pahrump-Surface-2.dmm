@@ -7505,6 +7505,15 @@
 "cDV" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
+"cEc" = (
+/obj/structure/destructible/tribal_torch/lit{
+	pixel_y = 20
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "cEF" = (
 /obj/structure/simple_door/metal/dirtystore,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -12573,7 +12582,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "exI" = (
-/obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -12581,10 +12589,13 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
+/obj/structure/sink/greyscale{
+	pixel_y = 20
+	},
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "dirty floor"
 	},
 /area/f13/legion)
 "exJ" = (
@@ -19005,7 +19016,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "gzq" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -19702,8 +19713,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/sink/greyscale{
-	pixel_y = 20
+/obj/structure/closet/crate/bin{
+	pixel_y = 10
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -22461,7 +22472,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "hJF" = (
 /obj/structure/decoration/vent,
 /obj/machinery/shower{
@@ -24421,7 +24432,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "ipy" = (
 /obj/item/trash/cheesie,
 /turf/open/floor/f13/wood{
@@ -24997,10 +25008,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	color = "#645546";
+	footstep = "plating";
+	icon_state = "darkrusty"
 	},
 /area/f13/legion)
 "ixP" = (
@@ -30210,7 +30222,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "kdS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/chapel{
@@ -32744,9 +32756,7 @@
 	color = "#363636"
 	},
 /obj/effect/decal/fakelattice,
-/obj/structure/closet/crate/bin{
-	pixel_y = 10
-	},
+/obj/structure/fermenting_barrel,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	color = "#645546";
 	footstep = "plating";
@@ -33820,10 +33830,11 @@
 /obj/item/reagent_containers/food/snacks/tuna,
 /obj/item/reagent_containers/food/snacks/tuna,
 /obj/item/reagent_containers/food/snacks/tuna,
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	color = "#645546";
+	footstep = "plating";
+	icon_state = "darkrusty"
 	},
 /area/f13/legion)
 "llR" = (
@@ -36019,11 +36030,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/city)
-"lXt" = (
-/turf/open/floor/f13/wood{
-	color = "#c5bab2"
-	},
-/area/f13/wasteland)
 "lXx" = (
 /obj/structure/sign/directions/medical{
 	pixel_y = 8
@@ -37791,14 +37797,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"mEJ" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13/wood{
-	color = "#c5bab2"
-	},
-/area/f13/wasteland)
 "mEL" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -39488,6 +39486,7 @@
 /obj/structure/bonfire/prelit{
 	pixel_y = 5
 	},
+/obj/item/stack/rods,
 /turf/open/indestructible/ground/outside/dirt{
 	color = "#9c9c9c"
 	},
@@ -40197,7 +40196,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "nyl" = (
 /mob/living/simple_animal/hostile/retaliate/goat/bighorn/calf,
 /turf/open/indestructible/ground/outside/ruins{
@@ -42254,11 +42253,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
-"okh" = (
-/turf/closed/wall/f13/wood{
-	color = "#cababa"
-	},
-/area/f13/wasteland)
 "okr" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -59000,17 +58994,6 @@
 /obj/structure/sign/poster/prewar/poster92,
 /turf/closed/wall/f13/supermart,
 /area/f13/city)
-"ucs" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/fermenting_barrel,
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/legion)
 "ucw" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -62940,7 +62923,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "vxS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -68676,7 +68659,7 @@
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
-/area/f13/wasteland)
+/area/f13/legion)
 "xuq" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/dirt{
@@ -122917,7 +122900,7 @@ lHo
 bjt
 pWz
 exI
-vtm
+lnn
 vtm
 vtm
 iZg
@@ -124202,7 +124185,7 @@ ggH
 btk
 pWz
 pWz
-vtm
+lnn
 vtm
 vtm
 vtm
@@ -124460,7 +124443,7 @@ btk
 btk
 pWz
 qLx
-ucs
+lnn
 vtm
 ous
 vtm
@@ -124707,7 +124690,7 @@ bpD
 fyf
 qTY
 fyf
-tBN
+hAX
 mvv
 hdQ
 wOK
@@ -124960,7 +124943,7 @@ vSe
 qib
 mvv
 mvv
-bpD
+mLN
 fyf
 fyf
 nxY
@@ -126244,7 +126227,7 @@ vcL
 bMn
 xjc
 mvv
-bpD
+mLN
 fyf
 fyf
 anP
@@ -126508,7 +126491,7 @@ fyf
 fyf
 fyf
 fyf
-tBN
+hAX
 mvv
 mvv
 hdQ
@@ -127528,7 +127511,7 @@ yiU
 xjc
 mvv
 mvv
-bpD
+mLN
 fyf
 pis
 fyf
@@ -128563,9 +128546,9 @@ btk
 btk
 btk
 pOx
-okh
-okh
-okh
+yef
+yef
+yef
 eiQ
 hdQ
 btk
@@ -128820,7 +128803,7 @@ btk
 btk
 btk
 btk
-okh
+yef
 ipw
 vxJ
 mvv
@@ -129077,9 +129060,9 @@ btk
 btk
 btk
 btk
-okh
+yef
 hJE
-mEJ
+vuC
 mvv
 hdQ
 btk
@@ -129334,9 +129317,9 @@ btk
 btk
 btk
 btk
-okh
+yef
 gzf
-lXt
+xzq
 mvv
 hdQ
 rxs
@@ -129591,9 +129574,9 @@ btk
 btk
 btk
 btk
-okh
+yef
 xue
-mEJ
+vuC
 mvv
 hdQ
 btk
@@ -129848,7 +129831,7 @@ btk
 btk
 btk
 btk
-okh
+yef
 nyb
 kdR
 mvv
@@ -130105,9 +130088,9 @@ btk
 btk
 btk
 lbo
-okh
-okh
-okh
+yef
+yef
+yef
 eiQ
 hdQ
 btk
@@ -131385,7 +131368,7 @@ tdL
 xjc
 mvv
 mvv
-bpD
+mLN
 fyf
 fyf
 fyf
@@ -131648,7 +131631,7 @@ nxY
 fyf
 aEG
 fyf
-tBN
+hAX
 mvv
 mvv
 mvv
@@ -132417,7 +132400,7 @@ mvv
 mvv
 doX
 cWG
-cWG
+cEc
 daU
 mvv
 mvv
