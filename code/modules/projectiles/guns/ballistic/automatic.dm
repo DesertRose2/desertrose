@@ -829,6 +829,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	can_attachments = TRUE
+	extra_damage = 4
 	suppressed = 1
 	burst_size = 2
 	fire_delay = 3
@@ -944,7 +945,7 @@
 	force = 25
 	burst_size = 2
 	fire_delay = 2.5
-	burst_shot_delay = 1.5
+	burst_shot_delay = 2
 	spread = 10
 	can_suppress = FALSE
 	can_attachments = TRUE

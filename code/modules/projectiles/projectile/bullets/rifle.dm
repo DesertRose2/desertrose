@@ -37,13 +37,13 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/a762/jhp
 	name = "7.62 JHP bullet"
 	damage = 46
-	armour_penetration = 0.1
+	armour_penetration = 0
 	wound_bonus = -30
 	bare_wound_bonus = 30
 
 /obj/item/projectile/bullet/a762/match
 	name = "7.62 match bullet"
-	damage = 40
+	damage = 36
 	armour_penetration = 0.2
 	wound_bonus = 20
 	bare_wound_bonus = -20
@@ -87,8 +87,8 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
-	damage = 33
-	armour_penetration = 0.21
+	damage = 29
+	armour_penetration = 0.18
 	wound_bonus = 16
 	bare_wound_bonus = -16
 	pixels_per_second = TILES_TO_PIXELS(20)
@@ -160,8 +160,8 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/c5mm
 	damage = 20
 	armour_penetration = 0.5
-	wound_bonus = -5
-	bare_wound_bonus = 5
+	wound_bonus = 10
+	bare_wound_bonus = -10
 
 
 /////////////////////////

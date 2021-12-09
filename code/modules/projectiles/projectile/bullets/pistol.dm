@@ -143,24 +143,24 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/a357
 	name = ".357 FMJ bullet"
-	damage = 35
-	armour_penetration = 0.15
+	damage = 37
+	armour_penetration = 0.18
 	wound_bonus = 14
 	bare_wound_bonus = -14
 
 /obj/item/projectile/bullet/a357/jhp
 	name = ".357 JHP bullet"
-	damage = 41
+	damage = 43
 	armour_penetration = 0
 	wound_bonus = -21
 	bare_wound_bonus = 21
 
 /obj/item/projectile/bullet/a357/jfp
 	name = ".357 JFP bullet"
-	damage = 38
-	armour_penetration = 0.1
-	wound_bonus = 18
-	bare_wound_bonus = 18
+	damage = 40
+	armour_penetration = 0.14
+	wound_bonus = 20
+	bare_wound_bonus = 20
 
 
 ////////////////
@@ -233,14 +233,14 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/a127mm
 	name = "12.7mm FMJ bullet"
-	damage = 60
+	damage = 52
 	armour_penetration = 0.25
-	wound_bonus = 28
-	bare_wound_bonus = -28
+	wound_bonus = 30
+	bare_wound_bonus = -30
 
 /obj/item/projectile/bullet/a127mm/jhp
 	name = "12.7mm JHP bullet"
-	damage = 70
+	damage = 62
 	armour_penetration = 0
 	wound_bonus = -56
 	bare_wound_bonus = 56
