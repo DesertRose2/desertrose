@@ -1085,7 +1085,7 @@
 				/obj/item/gun/ballistic/automatic/bar
 	)
 
-/obj/effect/spawner/bundle/f13/bastard
+/obj/effect/spawner/bundle/f13/g11
 	name = "g11 spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/g11,
@@ -1314,7 +1314,8 @@
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/ak112,
-				/obj/effect/spawner/bundle/f13/neostead
+				/obj/effect/spawner/bundle/f13/neostead,
+				/obj/effect/spawner/bundle/f13/flamethrower
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8 //TIER 8 GUN
@@ -1326,9 +1327,9 @@
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/wattz2k,
 				/obj/effect/spawner/bundle/f13/plasmapistol,
-				/obj/effect/spawner/bundle/f13/rcw,
+				/obj/effect/spawner/bundle/f13/p90,
 				/obj/effect/spawner/bundle/f13/bar,
-				/obj/effect/spawner/bundle/f13/flamethrower
+				/obj/effect/spawner/bundle/f13/g11
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier9 //TIER 9 GUN
@@ -1354,7 +1355,7 @@
 				/obj/effect/spawner/bundle/f13/tribeam,
 				/obj/effect/spawner/bundle/f13/gauss,
 				/obj/effect/spawner/bundle/f13/pistol127mm,
-				/obj/effect/spawner/bundle/f13/p90
+				/obj/effect/spawner/bundle/f13/rcw
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/unique //UNIQUE GUN
