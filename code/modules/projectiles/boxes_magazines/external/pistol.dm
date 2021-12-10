@@ -161,7 +161,7 @@
 
 /obj/item/ammo_box/magazine/m473_pistol
 	name = "pistol magazine (4.73mm)"
-	icon_state = "mag308"
+	icon_state = "45exp"
 	caliber = "473mm"
 	ammo_type = /obj/item/ammo_casing/caseless/g11
 	max_ammo = 12
