@@ -500,7 +500,7 @@
 /datum/design/ammolathe/
 	name = "empty caseless pistol mag (4.73mm)"
 	id = "4.73mm_pistolmag"
-	materials = list(datum/material/iron = 3000)
+	materials = list(/datum/material/iron = 3000)
 	build_path = /obj/item/ammo_box/magazine/m473_pistol/empty
 	category = list("initial", "Intermediate Magazines")
 
