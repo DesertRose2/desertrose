@@ -643,6 +643,16 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/design/crusader_caseless
+	name = "crusader pistol 4.73mm conversion kit"
+	desc = "A conversion kit for crusader pistols."
+	id = "crusader_caseless"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000, /datum/material/gold = 2500, /datum/material/silver = 2500)
+	build_path = /obj/item/modkit/crusader_473
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/design/crusader_laser
 	name = "crusader pistol laser conversion kit"
 	desc = "A conversion kit for crusader pistols."
