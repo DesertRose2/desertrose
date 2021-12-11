@@ -748,7 +748,7 @@
 
 /obj/item/ammo_box/m473
 	name = "ammo box (4.73mm caseless)"
-	icon_state = "5mmbox" //i cannot be fucked to make a new sprite for it rn so - someone else can eventually(tm, rights reserved)
+	icon_state = "5mmbox" //i cannot be fucked to make a new sprite for it rn so - someone else can eventually(tm, rights reserved exdee)
 	ammo_type = /obj/item/ammo_casing/caseless/g11
 	max_ammo = 100
 
