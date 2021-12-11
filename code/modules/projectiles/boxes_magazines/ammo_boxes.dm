@@ -437,6 +437,7 @@
 	name = "Slug shotgun ammo box"
 	desc = "A box full of shotgun shells."
 	max_ammo = 12
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun
 	icon_state = "lbox"
 	start_empty = FALSE
@@ -445,6 +446,7 @@
 	name = "Buckshot shotgun ammo box"
 	desc = "A box full of shotgun shells."
 	max_ammo = 12
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	icon_state = "gbox"
 	start_empty = FALSE
@@ -453,6 +455,7 @@
 	name = "Magnum buckshot shotgun ammo box"
 	desc = "A box full of shotgun shells."
 	max_ammo = 12
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
 	icon_state = "gbox"
 	start_empty = FALSE
@@ -461,6 +464,7 @@
 	name = "Beanbag shotgun ammo box"
 	desc = "A box full of shotgun shells."
 	max_ammo = 12
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	icon_state = "stunbox"
 	start_empty = FALSE
@@ -469,6 +473,7 @@
 	name = "Rubbershot shotgun ammo box"
 	desc = "A box full of shotgun shells."
 	max_ammo = 12
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
 	icon_state = "stunbox"
 	start_empty = FALSE
@@ -748,9 +753,9 @@
 
 /obj/item/ammo_box/m473
 	name = "ammo box (4.73mm caseless)"
-	icon_state = "38box" //temporary until new sprite comes along
+	icon_state = "5mmbox" //i cannot be fucked to make a new sprite for it rn so - someone else can eventually(tm, rights reserved exdee)
 	ammo_type = /obj/item/ammo_casing/caseless/g11
-	max_ammo = 50
+	max_ammo = 100
 
 /*
 /obj/item/ammo_box/plasmamusket
