@@ -120,7 +120,7 @@
 //	var/projectile_damage_multiplier = 1
 
 /*
-	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds 
+	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds
 */ //Disabled because automatic fire is buggy and a bit OP.
 
 /obj/item/gun/Initialize()
@@ -616,7 +616,7 @@
 		. += knife_overlay
 	else
 		knife_overlay = null
-	
+
 	if(scope)
 		if(scope.icon_state in icon_states('icons/obj/guns/scopes.dmi'))
 			scope_overlay = scope.icon_state
@@ -699,7 +699,7 @@
 
 /datum/action/item_action/toggle_scope_zoom/Trigger()
 	var/obj/item/gun/gun = target
-	if(do_after(owner,10))
+	if(do_after(owner,1))
 		gun.zoom(owner)
 
 /datum/action/item_action/toggle_scope_zoom/IsAvailable(silent = FALSE)
@@ -757,7 +757,7 @@
 	UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 	user.client.change_view(CONFIG_GET(string/default_view))
 	user.client.pixel_x = 0
-	user.client.pixel_y = 0	
+	user.client.pixel_y = 0
 
 /obj/item/gun/proc/rotate(mob/living/user, old_dir, direction = FALSE)
 	var/_x = 0
@@ -774,7 +774,7 @@
 	user.client.change_view(zoom_out_amt)
 	user.client.pixel_x = world.icon_size*_x
 	user.client.pixel_y = world.icon_size*_y
-		
+
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
 /obj/item/gun/proc/build_zooming()
 	if(azoom)
