@@ -119,6 +119,10 @@
 	path = /obj/item/clothing/under/f13/mutieshorts
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_UNIFORM
 
+/datum/gear/supermutant/uniform/loincloth
+	name = "Loincloth"
+	path = /obj/item/clothing/under/f13/mutieloincloth
+
 /datum/gear/supermutant/uniform/suit
 	name = "Suit"
 	path = /obj/item/clothing/under/suit/mutie
@@ -163,6 +167,13 @@
 							"NCR Recruit",
 							"NCR Off-Duty"
 						)
+
+// Headwear
+/datum/gear/supermutant/headwear
+	name = "Mutant Bladed Helmet"
+	path = /obj/item/clothing/head/helmet/f13/mutie
+	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_HATS
+	cost = 1
 
 // Gloves and Bracers
 
