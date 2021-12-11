@@ -1,7 +1,7 @@
 /proc/job_is_whitelist_locked(jobtitle)
-	if(!CONFIG_GET(flag/use_role_whitelist) && (jobtitle in (GLOB.antagonist_whitelist_positions | GLOB.command_positions | GLOB.ncr_leadership_positions | GLOB.ncr_ranger_positions | GLOB.ncr_rangervet_positions | GLOB.brotherhood_paladin_positions | GLOB.legion_veteran_positions | list("AI"))))
+	if(!CONFIG_GET(flag/use_role_whitelist) && (jobtitle in (GLOB.antagonist_whitelist_positions | GLOB.command_positions | GLOB.ncr_leadership_positions | GLOB.ncr_ranger_positions | GLOB.ncr_rangervet_positions | GLOB.brotherhood_paladin_positions | GLOB.legion_veteran_positions | GLOB.vtcc_provost_positions | list("AI"))))
 		return FALSE
-	if(!CONFIG_GET(flag/use_role_whitelist) && !(jobtitle in (GLOB.antagonist_whitelist_positions | GLOB.command_positions | GLOB.ncr_leadership_positions | GLOB.ncr_ranger_positions | GLOB.ncr_rangervet_positions | GLOB.brotherhood_paladin_positions | GLOB.legion_veteran_positions | list("AI"))))
+	if(!CONFIG_GET(flag/use_role_whitelist) && !(jobtitle in (GLOB.antagonist_whitelist_positions | GLOB.command_positions | GLOB.ncr_leadership_positions | GLOB.ncr_ranger_positions | GLOB.ncr_rangervet_positions | GLOB.brotherhood_paladin_positions | GLOB.legion_veteran_positions | GLOB.vtcc_provost_positions | list("AI"))))
 		return FALSE
 	return TRUE
 

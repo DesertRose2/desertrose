@@ -944,12 +944,11 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 25
 	burst_size = 2
-	fire_delay = 2.5
+	fire_delay = 4
 	burst_shot_delay = 2
 	spread = 10
 	can_suppress = FALSE
 	can_attachments = TRUE
-	can_automatic = TRUE
 	can_scope = FALSE
 	zoomable = TRUE
 	zoom_amt = 10

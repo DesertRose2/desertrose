@@ -317,6 +317,7 @@
 /obj/item/modkit/crusader_556
 	name = "crusader pistol 5.56mm conversion kit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,
 						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
 						/obj/item/gun/energy/laser/crusader,
 						/obj/item/gun/energy/plasma/crusader
@@ -335,6 +336,7 @@
 /obj/item/modkit/crusader_plasma
 	name = "crusader pistol plasma conversion kit"
 	target_items = list(/obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr,
+						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle,
 						/obj/item/gun/ballistic/automatic/pistol/crusader_pistol,
 						/obj/item/gun/energy/laser/crusader,
 						/obj/item/gun/ballistic/automatic/pistol/crusader_rifle
