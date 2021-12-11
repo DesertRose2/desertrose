@@ -228,6 +228,7 @@
 //Power armors, including salvaged and faction
 
 /obj/item/clothing/suit/armor/f13/power_armor
+	name = "power armor"
 	w_class = WEIGHT_CLASS_HUGE
 	slowdown = 0.4 //+0.1 from helmet = total 0.5
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -404,7 +405,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
 	name = "gunslinger T-51b"
-	desc = "(IX) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
+	desc = "(VIII) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
 	icon_state = "t51bgs"
 	item_state = "t51bgs"
 	slowdown = 0
@@ -412,7 +413,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
 	name = "sierra power armor"
-	desc = "(IX) A captured set of T-45d power armor put into use by the NCR, it's been heavily modified and decorated with the head of a bear and intricate gold trimming. A two headed bear is scorched into the breastplate."
+	desc = "(VIII) A captured set of T-45d power armor put into use by the NCR, it's been heavily modified and decorated with the head of a bear and intricate gold trimming. A two headed bear is scorched into the breastplate."
 	icon_state = "sierra"
 	item_state = "sierra"
 
@@ -553,6 +554,18 @@
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
+
+/obj/item/clothing/suit/armor/f13/power_armor/mutie
+	name = "large damaged power armor"
+	desc = "(VIII) It's unclear just want kind of power armour this once was. Was it T-51? Was it APA? Maybe it was just a suit of excavator armor? There's no way of knowing. What is clear though, is that the suit cannot be repaired or restored, and it's far too large for a normal human to wear."
+	icon_state = "mutie_power_armor"
+	item_state = "mutie_power_armor"
+	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0, "wound" = 40)
+	slowdown = 0.4
+	requires_training = FALSE
+	armor_block_chance = 65
+	deflection_chance = 40
+
 
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 /obj/item/clothing/suit/armor/f13/tribal

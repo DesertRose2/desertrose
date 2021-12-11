@@ -238,7 +238,8 @@
 
 //Power Armor
 
-/obj/item/clothing/head/helmet/f13/power_armor/
+/obj/item/clothing/head/helmet/f13/power_armor
+	name = "power armor helmet"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -443,7 +444,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
 	name = "Gunslinger T-51b Helm"
-	desc = "(IX) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
+	desc = "(VIII) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
 	icon_state = "t51bgs"
 	item_state = "t51bgs"
 	slowdown = 0
@@ -452,7 +453,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
 	name = "sierra power helmet"
-	desc = "(IX) A pre-war power armor helmet, issued to special NCR officers.."
+	desc = "(VIII) A pre-war power armor helmet, issued to special NCR officers.."
 	icon_state = "sierra"
 	item_state = "sierra"
 	actions_types = list()
@@ -583,6 +584,16 @@
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
+
+/obj/item/clothing/head/helmet/f13/power_armor/mutie
+	name = "large damaged power armor helmet"
+	desc = "(VIII) It's unclear just want power armour helmet this once was. Did it belong to a set of T-51? Was it once APA? Maybe it was just excavator power armor? There's no way of knowing. What is clear though, is that this helmet cannot be repaired or restored, and it's far too large for a normal human to wear."
+	icon_state = "mutie_power_armor_helmet"
+	item_state = "mutie_power_armor_helmet"
+	armor = list("tier" = 8, "energy" = 60, "bomb" = 50, "bio" = 30, "rad" = 0, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+
 
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 

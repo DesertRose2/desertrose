@@ -32,11 +32,15 @@
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage += 50
 	C.faction |= "supermutant"
+	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
+	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
+
 /datum/species/smutant/on_species_loss(mob/living/carbon/C)
 	..()
 	C.faction -= "supermutant"
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
+
 
 //datum/species/smutant/get_racelist(mob/user)
 
