@@ -440,6 +440,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun
 	icon_state = "lbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/buck
 	name = "Buckshot shotgun ammo box"
@@ -448,6 +449,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	icon_state = "gbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/magnum
 	name = "Magnum buckshot shotgun ammo box"
@@ -456,6 +458,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
 	icon_state = "gbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/bean
 	name = "Beanbag shotgun ammo box"
@@ -464,6 +467,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	icon_state = "stunbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/rubber
 	name = "Rubbershot shotgun ammo box"
@@ -472,6 +476,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
 	icon_state = "stunbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/a762/doublestacked
 	name = "double stack stripper clip (.308)"
