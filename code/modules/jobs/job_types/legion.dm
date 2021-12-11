@@ -249,7 +249,7 @@ Centurion
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/centurion
 	head = 			/obj/item/clothing/head/helmet/f13/legion/centurion
 	l_hand = 		/obj/item/gun/ballistic/revolver/thatgun
-	r_hand =		/obj/item/nullrod/claymore/chainsaw_sword
+	r_hand =		/obj/item/twohanded/sledgehammer/supersledge
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=1)
 
 /datum/outfit/loadout/centpaladin
@@ -324,7 +324,7 @@ Vexillarius
 /datum/outfit/loadout/vexvulp
 	name = "Vulpes (Fox)"
 	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	l_hand =	/obj/item/gun/ballistic/automatic/marksman
+	l_hand =	/obj/item/gun/ballistic/automatic/type93
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/shotgunrevolver=1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault=2
@@ -333,11 +333,10 @@ Vexillarius
 /datum/outfit/loadout/vexursa
 	name = "Ursa (Bear)"
 	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
-	l_hand = 	/obj/item/gun/ballistic/revolver/hunting
+	l_hand = 	/obj/item/gun/ballistic/automatic/shotgun/riot
 	r_hand =	/obj/item/shield/riot/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/c4570=3,
-		/obj/item/nullrod/claymore/chainsaw_sword=1
+		/obj/item/ammo_box/magazine/d12g=2
 		)
 
 /datum/outfit/loadout/vexcanis

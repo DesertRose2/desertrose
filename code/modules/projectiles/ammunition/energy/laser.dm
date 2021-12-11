@@ -179,6 +179,8 @@
 	e_cost = 250
 	fire_sound = 'sound/f13weapons/aer9fire.ogg'
 
+//Crusader - funny pocket AER-9
+
 /obj/item/ammo_casing/energy/laser/crusader
 	projectile_type = /obj/item/projectile/beam/laser/lasgun
 	e_cost = 200 //10 shots

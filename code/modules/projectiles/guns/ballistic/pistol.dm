@@ -281,19 +281,19 @@
 
 /obj/item/gun/ballistic/automatic/pistol/crusader_pistol
 	name = "Crusader pistol (10mm)"
-	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 10mm."
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 10mm. Complete with a threaded barrel to allow for attachments."
 	icon_state = "crusader_pistol"
 	item_state = "crusader_pistol"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	can_attachments = FALSE
+	can_attachments = TRUE
 	fire_delay = 2
 	can_suppress = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/crusader_rifle
 	name = "Crusader pistol (4.73mm caseless)"
-	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 4.73mm caseless."
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 4.73mm caseless. Perfect for a stealthy operator with style."
 	icon_state = "crusader_rifle"
 	item_state = "crusader_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m473_pistol
@@ -305,12 +305,13 @@
 
 /obj/item/gun/ballistic/automatic/pistol/crusader_rifle_ncr
 	name = "Crusader pistol (5.56mm)"
-	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 5.56mm."
+	desc = "A modular pistol of native Brotherhood of Steel design. Currently chambered in 5.56mm. A pocket-rifle! Well.. if you excuse it only taking 10 round magazines."
 	icon_state = "crusader_rifle"
 	icon_state = "crusader_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = FALSE
+	can_automatic = FALSE
 	fire_delay = 2
 	can_suppress = FALSE
