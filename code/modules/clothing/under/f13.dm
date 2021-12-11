@@ -1187,6 +1187,12 @@
 	icon_state = "mutie_shorts"
 	item_state = "mutie_shorts"
 
+/obj/item/clothing/under/f13/mutieloincloth
+	name = "large loincloth"
+	desc = "An incredibly large loincloth that's closer in appearance to a skirt than anything else."
+	icon_state = "mutie_loincloth"
+	item_state = "mutie_loincloth"
+
 /obj/item/clothing/under/f13/mutiesanta
 	name = "red and white jumspuit"
 	desc = "A fairly damaged red and white shirt with matching shorts, large enough to fit a super mutant."
