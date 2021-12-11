@@ -20,31 +20,12 @@
 	required_reagents = list(/datum/reagent/oil = 1, /datum/reagent/ammonia = 1, /datum/reagent/oxygen = 1)
 	required_temp = 380
 
-/datum/chemical_reaction/itching_powder
-	name = "Itching Powder"
-	id = /datum/reagent/toxin/itching_powder
-	results = list(/datum/reagent/toxin/itching_powder = 3)
-	required_reagents = list(/datum/reagent/fuel = 1, /datum/reagent/ammonia = 1, /datum/reagent/medicine/charcoal = 1)
-
 /datum/chemical_reaction/facid
 	name = "Fluorosulfuric acid"
 	id = /datum/reagent/toxin/acid/fluacid
 	results = list(/datum/reagent/toxin/acid/fluacid = 4)
 	required_reagents = list(/datum/reagent/toxin/acid = 1, /datum/reagent/fluorine = 1, /datum/reagent/hydrogen = 1, /datum/reagent/potassium = 1)
 	required_temp = 380
-
-/datum/chemical_reaction/fantiacid
-	name = "Fluoroantimonic acid"
-	id = /datum/reagent/toxin/acid/fantiacid
-	results = list(/datum/reagent/toxin/acid/fantiacid = 1)
-	required_reagents = list(/datum/reagent/toxin/acid/fluacid = 30, /datum/reagent/fluorine = 30, /datum/reagent/hydrogen = 30)
-	required_temp = 580
-
-/datum/chemical_reaction/sulfonal
-	name = "sulfonal"
-	id = /datum/reagent/toxin/sulfonal
-	results = list(/datum/reagent/toxin/sulfonal = 3)
-	required_reagents = list(/datum/reagent/acetone = 1, /datum/reagent/diethylamine = 1, /datum/reagent/sulfur = 1)
 
 /datum/chemical_reaction/lipolicide
 	name = "lipolicide"
@@ -58,68 +39,11 @@
 	results = list(/datum/reagent/toxin/mutagen = 3)
 	required_reagents = list(/datum/reagent/radium = 1, /datum/reagent/phosphorus = 1, /datum/reagent/chlorine = 1)
 
-/datum/chemical_reaction/lexorin
-	name = "Lexorin"
-	id = /datum/reagent/toxin/lexorin
-	results = list(/datum/reagent/toxin/lexorin = 3)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1, /datum/reagent/hydrogen = 1, /datum/reagent/oxygen = 1)
-
-/*/datum/chemical_reaction/chloralhydrate
-	name = "Chloral Hydrate"
-	id = /datum/reagent/toxin/chloralhydrate
-	results = list(/datum/reagent/toxin/chloralhydrate = 1)
-	required_reagents = list(/datum/reagent/consumable/ethanol = 1, /datum/reagent/chlorine = 3, /datum/reagent/water = 1)*/
-
-/datum/chemical_reaction/mutetoxin //i'll just fit this in here snugly between other unfun chemicals :v
-	name = "Mute Toxin"
-	id = /datum/reagent/toxin/mutetoxin
-	results = list(/datum/reagent/toxin/mutetoxin = 2)
-	required_reagents = list(/datum/reagent/uranium = 2, /datum/reagent/water = 1, /datum/reagent/carbon = 1)
-
-/datum/chemical_reaction/zombiepowder
-	name = "Zombie Powder"
-	id = /datum/reagent/toxin/zombiepowder
-	results = list(/datum/reagent/toxin/zombiepowder = 2)
-	required_reagents = list(/datum/reagent/toxin/carpotoxin = 5, /datum/reagent/medicine/morphine = 5, /datum/reagent/copper = 5)
-
-/datum/chemical_reaction/ghoulpowder
-	name = "Ghoul Powder"
-	id = /datum/reagent/toxin/ghoulpowder
-	results = list(/datum/reagent/toxin/ghoulpowder = 2)
-	required_reagents = list(/datum/reagent/toxin/zombiepowder = 1, /datum/reagent/medicine/epinephrine = 1)
-
 /datum/chemical_reaction/mindbreaker
 	name = "Mindbreaker Toxin"
 	id = /datum/reagent/toxin/mindbreaker
 	results = list(/datum/reagent/toxin/mindbreaker = 5)
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/hydrogen = 1, /datum/reagent/medicine/charcoal = 1)
-
-/datum/chemical_reaction/heparin
-	name = "Heparin"
-	id = /datum/reagent/toxin/heparin
-	results = list(/datum/reagent/toxin/heparin = 4)
-	required_reagents = list(/datum/reagent/toxin/formaldehyde = 1, /datum/reagent/sodium = 1, /datum/reagent/chlorine = 1, /datum/reagent/lithium = 1)
-	mix_message = "<span class='danger'>The mixture thins and loses all color.</span>"
-
-/datum/chemical_reaction/rotatium
-	name = "Rotatium"
-	id = /datum/reagent/toxin/rotatium
-	results = list(/datum/reagent/toxin/rotatium = 3)
-	required_reagents = list(/datum/reagent/toxin/mindbreaker = 1, /datum/reagent/teslium = 1, /datum/reagent/toxin/fentanyl = 1)
-	mix_message = "<span class='danger'>After sparks, fire, and the smell of mindbreaker, the mix is constantly spinning with no stop in sight.</span>"
-
-/datum/chemical_reaction/skewium
-	name = "Skewium"
-	id = /datum/reagent/toxin/skewium
-	results = list(/datum/reagent/toxin/skewium = 5)
-	required_reagents = list(/datum/reagent/toxin/rotatium = 2, /datum/reagent/toxin/plasma = 2, /datum/reagent/toxin/acid = 1)
-	mix_message = "<span class='danger'>Wow! it turns out if you mix rotatium with some plasma and sulphuric acid, it gets even worse!</span>"
-
-/datum/chemical_reaction/anacea
-	name = "Anacea"
-	id = /datum/reagent/toxin/anacea
-	results = list(/datum/reagent/toxin/anacea = 3)
-	required_reagents = list(/datum/reagent/medicine/haloperidol = 1, /datum/reagent/impedrezene = 1, /datum/reagent/radium = 1)
 
 /datum/chemical_reaction/mimesbane
 	name = "Mime's Bane"
