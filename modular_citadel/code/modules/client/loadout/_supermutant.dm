@@ -164,6 +164,13 @@
 							"NCR Off-Duty"
 						)
 
+// Headwear
+/datum/gear/supermutant/headwear
+	name = "Mutant Bladed Helmet"
+	path = /obj/item/clothing/head/helmet/f13/mutie
+	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_HATS
+	cost = 1
+
 // Gloves and Bracers
 
 /datum/gear/supermutant/gloves
