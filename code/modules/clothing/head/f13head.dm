@@ -1009,3 +1009,10 @@
 	armor_block_chance = 80
 	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
+
+/obj/item/clothing/head/helmet/f13/mutie
+	name = "oversized bladed helmet"
+	desc = "(IV) An oversized helmet with a large blade on the top, probably meant for some big green bastard."
+	icon_state = "mutie_bladed_helmet"
+	item_state = "mutie_bladed_helmet"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 28, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
