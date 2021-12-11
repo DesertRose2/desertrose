@@ -362,15 +362,17 @@
 		 /obj/item/gun/ballistic/automatic/r84=1,
 		 /obj/item/ammo_box/magazine/lmg=2,
 		/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
-		/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1
+		/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
+		/obj/item/gun/ballistic/automatic/pistol/autoloader=1,
+		/obj/item/ammo_box/magazine/m45=2
 	)
 
 /datum/outfit/loadout/riotsup
 	name = "Riot Suppression"
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/gun/ballistic/automatic/shotgun/riot=1,
-		/obj/item/ammo_box/magazine/d12g=3,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller=1,
+		/obj/item/ammo_box/shotgun/buck=3,
 		/obj/item/clothing/suit/armor/f13/riot/vault/provost/sgt=1,
 		/obj/item/clothing/head/helmet/riot/vaultsec/vc/provost=1,
 		/obj/item/grenade/smokebomb=2,
@@ -434,18 +436,8 @@
 		/obj/item/clothing/mask/gas/sechailer=1
 	)
 
-/datum/outfit/loadout/specops
-	name = "Spec Ops"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle=1,
-		/obj/item/ammo_box/magazine/m556/rifle=3,
-		/obj/item/suppressor = 1,
-		/obj/item/storage/bag/ammo=1,
-		/obj/item/attachments/burst_improvement=1
-	)
-
 /datum/outfit/loadout/espionage
-	name = "Espionage"
+	name = "Spec Ops"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm=1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
@@ -458,8 +450,8 @@
 	name = "Enforcer"
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead=1,
-		/obj/item/ammo_box/shotgun/magnum=3,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
 		/obj/item/book/granter/trait/trekking=1
 	)
