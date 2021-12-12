@@ -7,6 +7,7 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 35
 	addiction_threshold = 25
+	can_synth = FALSE
 	value = REAGENT_VALUE_COMMON
 
 /datum/reagent/medicine/stimpak/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
@@ -59,7 +60,7 @@
 
 /datum/reagent/medicine/super_stimpak
 	name = "super stim chemicals"
-
+	can_synth = FALSE
 	description = "Chemicals found in pre-war stimpaks."
 	reagent_state = LIQUID
 	color = "#e50d0d"
@@ -108,7 +109,8 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	color ="#A9FBFB"
 	taste_description = "bitterness and liquid pain"
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
-	overdose_threshold = 11
+	overdose_threshold = 20
+	can_synth = FALSE
 
 datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
@@ -141,6 +143,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	taste_description = "bitterness"
 	metabolization_rate = 0.6 * REAGENTS_METABOLISM
 	overdose_threshold = 31
+	can_synth = FALSE
 	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
 	var/heal_factor_perk = -3 //Multiplier if you have the right perk.
 
@@ -184,6 +187,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	color = "#C8A5DC"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30
+	can_synth = FALSE
 	heal_factor = -2
 	heal_factor_perk = -4
 
@@ -191,6 +195,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	name = "zombie poultice"
 	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
 	color = "#a64adb"
+	can_synth = FALSE
 	metabolization_rate = 0.2 * REAGENTS_METABOLISM
 	overdose_threshold = 11
 	heal_factor = 0
@@ -355,12 +360,9 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	M.set_blurriness(30)
 	M.Unconscious(400)
 	M.Jitter(1000)
-	M.set_heartattack(TRUE)
-	M.drop_all_held_items()
 	M.Dizzy(2)
-	M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
-	if(prob(10))
-		to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+	M.visible_message("<span class='userdanger'>[M] collapses, frothing at the mouth!</span>")
+	to_chat(M, "<span class='danger'>Oh shit. Oh fuck. That's not good. Oh fuck.</span>")
 	..()
 
 /datum/reagent/medicine/medx/addiction_act_stage1(mob/living/M)

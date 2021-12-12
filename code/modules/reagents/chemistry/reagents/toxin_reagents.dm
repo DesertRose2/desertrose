@@ -39,57 +39,7 @@
 	toxpwr = 5
 	taste_description = "slime"
 	taste_mult = 0.9
-
-/datum/reagent/toxin/FEV_solution/reaction_mob(mob/living/carbon/M, method=TOUCH, reac_volume)
-	if(!..())
-		return
-	if(!M.has_dna())
-		return  //No robots, AIs, aliens, Ians or other mobs should be affected by this.
-	if((method==VAPOR && prob(min(25, reac_volume))) || method==INGEST || method==PATCH || method==INJECT)
-//		M.randmutb()
-		M.updateappearance()
-		M.domutcheck()
-	..()
-
-/datum/reagent/toxin/FEV_solution/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(30,EFFECT_IRRADIATE,0)
-	C.adjustCloneLoss(30,0)
-	return ..()
-
-
-/datum/reagent/toxin/mutagen
-	name = "Unstable mutagen"
-	description = "Might cause unpredictable mutations. Keep away from children."
-	color = "#00FF00"
-	toxpwr = 0
-	taste_description = "slime"
-	taste_mult = 0.9
-	value = REAGENT_VALUE_VERY_COMMON
-	pH = 2.3
-
-/datum/reagent/toxin/mutagen/reaction_mob(mob/living/carbon/M, method=TOUCH, reac_volume)
-	if(!..())
-		return
-	if(!M.has_dna())
-		return  //No robots, AIs, aliens, Ians or other mobs should be affected by this.
-	if((method==VAPOR && prob(min(33, reac_volume))) || method==INGEST || method==PATCH || method==INJECT)
-		M.randmuti()
-		if(prob(98))
-			M.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
-		else
-			M.easy_randmut(POSITIVE)
-		M.updateappearance()
-		M.domutcheck()
-	..()
-
-/datum/reagent/toxin/mutagen/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(5,EFFECT_IRRADIATE,0)
-	return ..()
-
-/datum/reagent/toxin/mutagen/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
-	mytray.mutation_roll(user)
-	if(chems.has_reagent(type, 1))
-		mytray.adjustToxic(1.5) //It is still toxic, mind you, but not to the same degree.
+	can_synth = FALSE
 
 /datum/reagent/toxin/plasma
 	name = "Plasma"
@@ -135,19 +85,6 @@
 	taste_description = "acid"
 	pH = 1.2
 	value = REAGENT_VALUE_RARE
-
-/datum/reagent/toxin/lexorin/on_mob_life(mob/living/carbon/C)
-	. = TRUE
-
-	if(HAS_TRAIT(C, TRAIT_NOBREATH))
-		. = FALSE
-
-	if(.)
-		C.adjustOxyLoss(5, 0)
-		C.losebreath += 2
-		if(prob(20))
-			C.emote("gasp")
-	..()
 
 /datum/reagent/toxin/slimejelly
 	name = "Slime Jelly"
@@ -197,68 +134,6 @@
 	for(var/i in M.all_scars)
 		qdel(i)
 
-/datum/reagent/toxin/zombiepowder
-	name = "Zombie Powder"
-	description = "A strong neurotoxin that puts the subject into a death-like state."
-	reagent_state = SOLID
-	color = "#669900" // rgb: 102, 153, 0
-	toxpwr = 0.5
-	taste_description = "death"
-	var/fakedeath_active = FALSE
-	pH = 13
-	value = REAGENT_VALUE_EXCEPTIONAL
-
-/datum/reagent/toxin/zombiepowder/on_mob_metabolize(mob/living/L)
-	..()
-	ADD_TRAIT(L, TRAIT_FAKEDEATH, type)
-
-/datum/reagent/toxin/zombiepowder/on_mob_end_metabolize(mob/living/L)
-	L.cure_fakedeath(type)
-	..()
-
-/datum/reagent/toxin/zombiepowder/reaction_mob(mob/living/L, method=TOUCH, reac_volume)
-	L.adjustOxyLoss(0.5*REM, 0)
-	if(method == INGEST)
-		fakedeath_active = TRUE
-		L.fakedeath(type)
-
-/datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/M)
-	..()
-	if(fakedeath_active)
-		return TRUE
-	switch(current_cycle)
-		if(1 to 5)
-			M.confused += 1
-			M.drowsyness += 1
-			M.slurring += 3
-		if(5 to 8)
-			M.adjustStaminaLoss(40, 0)
-		if(9 to INFINITY)
-			fakedeath_active = TRUE
-			M.fakedeath(type)
-
-/datum/reagent/toxin/ghoulpowder
-	name = "Ghoul Powder"
-	description = "A strong neurotoxin that slows metabolism to a death-like state, while keeping the patient fully active. Causes toxin buildup if used too long."
-	reagent_state = SOLID
-	color = "#664700" // rgb: 102, 71, 0
-	toxpwr = 0.8
-	taste_description = "death"
-	pH = 14.5
-	value = REAGENT_VALUE_EXCEPTIONAL
-
-/datum/reagent/toxin/ghoulpowder/on_mob_metabolize(mob/living/L)
-	..()
-	ADD_TRAIT(L, TRAIT_FAKEDEATH, type)
-
-/datum/reagent/toxin/ghoulpowder/on_mob_end_metabolize(mob/living/L)
-	REMOVE_TRAIT(L, TRAIT_FAKEDEATH, type)
-	..()
-
-/datum/reagent/toxin/ghoulpowder/on_mob_life(mob/living/carbon/M)
-	M.adjustOxyLoss(1*REM, 0)
-	..()
-	. = 1
 
 /datum/reagent/toxin/mindbreaker
 	name = "Mindbreaker Toxin"
@@ -406,6 +281,7 @@
 	glass_desc = "A freezing pint of beer."
 	pH = 2
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/fakebeer/on_mob_life(mob/living/carbon/M)
 	switch(current_cycle)
@@ -461,6 +337,7 @@
 	data = 15
 	toxpwr = 0
 	value = REAGENT_VALUE_UNCOMMON
+	can_synth = FALSE
 
 /datum/reagent/toxin/staminatoxin/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(REM * data, 0)
@@ -476,6 +353,7 @@
 	metabolization_rate = 0.125 * REAGENTS_METABOLISM
 	toxpwr = 0
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/polonium/on_mob_life(mob/living/carbon/M)
 	M.radiation += 4
@@ -538,6 +416,7 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	toxpwr = 0
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/venom/on_mob_life(mob/living/carbon/M)
 	toxpwr = 0.2*volume
@@ -601,6 +480,7 @@
 	color = "#C8C8C8"
 	metabolization_rate = 0.4 * REAGENTS_METABOLISM
 	toxpwr = 0
+	can_synth = FALSE
 
 /datum/reagent/toxin/itching_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if((method == TOUCH || method == VAPOR) && M.reagents)
@@ -633,6 +513,7 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	toxpwr = 2.5
 	value = REAGENT_VALUE_EXCEPTIONAL
+	can_synth = FALSE
 
 /datum/reagent/toxin/initropidril/on_mob_life(mob/living/carbon/C)
 	if(prob(25))
@@ -665,6 +546,7 @@
 	toxpwr = 0
 	taste_mult = 0 // undetectable, I guess?
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/pancuronium/on_mob_life(mob/living/carbon/M)
 	if(current_cycle >= 10)
@@ -682,6 +564,7 @@
 	metabolization_rate = 0.75 * REAGENTS_METABOLISM
 	toxpwr = 0
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/sodium_thiopental/on_mob_life(mob/living/carbon/M)
 	if(current_cycle >= 10)
@@ -697,6 +580,7 @@
 	color = "#7DC3A0"
 	metabolization_rate = 0.125 * REAGENTS_METABOLISM
 	toxpwr = 0.5
+	can_synth = FALSE
 
 /datum/reagent/toxin/sulfonal/on_mob_life(mob/living/carbon/M)
 	if(current_cycle >= 22)
@@ -705,18 +589,12 @@
 
 /datum/reagent/toxin/amanitin
 	name = "Amanitin"
-	description = "A very powerful delayed toxin. Upon full metabolization, a massive amount of toxin damage will be dealt depending on how long it has been in the victim's bloodstream."
+	description = "It's just a mushroom toxin."
 	reagent_state = LIQUID
 	color = "#FFFFFF"
-	toxpwr = 0
+	toxpwr = 1
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_RARE
-
-/datum/reagent/toxin/amanitin/on_mob_end_metabolize(mob/living/M)
-	var/toxdamage = current_cycle*3*REM
-	M.log_message("has taken [toxdamage] toxin damage from amanitin toxin", LOG_ATTACK)
-	M.adjustToxLoss(toxdamage)
-	..()
 
 /datum/reagent/toxin/lipolicide
 	name = "Lipolicide"
@@ -742,10 +620,7 @@
 	metabolization_rate = 0.06 * REAGENTS_METABOLISM
 	toxpwr = 1.75
 	value = REAGENT_VALUE_EXCEPTIONAL
-
-/datum/reagent/toxin/coniine/on_mob_life(mob/living/carbon/M)
-	M.losebreath += 5
-	return ..()
+	can_synth = FALSE
 
 /datum/reagent/toxin/spewium
 	name = "Spewium"
@@ -757,6 +632,7 @@
 	toxpwr = 0
 	taste_description = "vomit"
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/spewium/on_mob_life(mob/living/carbon/C)
 	.=..()
@@ -781,6 +657,7 @@
 	metabolization_rate = 0.125 * REAGENTS_METABOLISM
 	toxpwr = 1
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/curare/on_mob_life(mob/living/carbon/M)
 	if(current_cycle >= 11)
@@ -807,25 +684,7 @@
 	toxpwr = 0.5
 	taste_description = "spinning"
 	value = REAGENT_VALUE_VERY_RARE
-
-/datum/reagent/toxin/rotatium/on_mob_life(mob/living/carbon/M)
-	if(M.hud_used)
-		if(current_cycle >= 20 && current_cycle%20 == 0)
-			var/list/screens = list(M.hud_used.plane_masters["[FLOOR_PLANE]"], M.hud_used.plane_masters["[GAME_PLANE]"],
-									M.hud_used.plane_masters["[LIGHTING_PLANE]"], M.hud_used.plane_masters["[WALL_PLANE]"],
-									M.hud_used.plane_masters["[ABOVE_WALL_PLANE]"])
-			var/rotation = min(round(current_cycle/20), 89) // By this point the player is probably puking and quitting anyway
-			for(var/whole_screen in screens)
-				animate(whole_screen, transform = matrix(rotation, MATRIX_ROTATE), time = 5, easing = QUAD_EASING, loop = -1)
-				animate(transform = matrix(-rotation, MATRIX_ROTATE), time = 5, easing = QUAD_EASING)
-	return ..()
-
-/datum/reagent/toxin/rotatium/on_mob_end_metabolize(mob/living/M)
-	if(M && M.hud_used)
-		var/list/screens = list(M.hud_used.plane_masters["[FLOOR_PLANE]"], M.hud_used.plane_masters["[GAME_PLANE]"], M.hud_used.plane_masters["[LIGHTING_PLANE]"])
-		for(var/whole_screen in screens)
-			animate(whole_screen, transform = matrix(), time = 5, easing = QUAD_EASING)
-	..()
+	can_synth = FALSE
 
 /datum/reagent/toxin/skewium
 	name = "Skewium"
@@ -875,6 +734,7 @@
 	metabolization_rate = 0.08 * REAGENTS_METABOLISM
 	toxpwr = 0.15
 	value = REAGENT_VALUE_VERY_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/anacea/on_mob_life(mob/living/carbon/M)
 	var/remove_amt = 5
@@ -945,6 +805,7 @@
 	toxpwr = 2
 	acidpwr = 150.0
 	value = REAGENT_VALUE_COMMON
+	can_synth = FALSE
 
 // ACID II: UNHEEDED WARNINGS
 /datum/reagent/toxin/acid/fluacid/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -974,6 +835,7 @@
 	value = REAGENT_VALUE_VERY_RARE
 	var/actual_toxpwr = 5
 	var/delay = 30
+	can_synth = FALSE
 
 /datum/reagent/toxin/delayed/on_mob_life(mob/living/carbon/M)
 	if(current_cycle > delay)
@@ -1066,6 +928,7 @@
 	taste_description = "brain hurting"
 	metabolization_rate = 5
 	value = REAGENT_VALUE_EXCEPTIONAL
+	can_synth = FALSE
 
 /datum/reagent/toxin/brainhurtingjuice/on_mob_life(mob/living/carbon/M)
 	if(prob(50))
@@ -1085,6 +948,7 @@
 	toxpwr = 0
 	taste_description = "tannin"
 	value = REAGENT_VALUE_RARE
+	can_synth = FALSE
 
 /datum/reagent/toxin/bungotoxin/on_mob_life(mob/living/carbon/M)
 	M.adjustOrganLoss(ORGAN_SLOT_HEART, 3)
@@ -1103,6 +967,7 @@
 	toxpwr = 0.5
 	taste_mult = 1.3
 	taste_description = "sugary sweetness"
+	can_synth = FALSE
 
 /datum/reagent/toxin/leadacetate/on_mob_life(mob/living/carbon/M)
 	M.adjustOrganLoss(ORGAN_SLOT_EARS,1)
