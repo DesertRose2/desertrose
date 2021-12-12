@@ -9,7 +9,7 @@
 	icon = 'icons/fallout/turfs/floors.dmi'
 
 /turf/open/floor/f13/ReplaceWithLattice()
-	ChangeTurf(baseturfs)
+	ScrapeAway()
 
 /turf/open/floor/f13/wood
 	icon_state = "housewood1"
