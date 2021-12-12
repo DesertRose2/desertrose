@@ -71,7 +71,7 @@
 		chambered = null
 
 /obj/item/gun/ballistic/rifle/proc/pump_reload(mob/M)
-	if(!magazine.ammo_count())
+	if(!magazine || !magazine.ammo_count())
 		return 0
 	var/obj/item/ammo_casing/AC = magazine.get_round() //load next casing.
 	chambered = AC

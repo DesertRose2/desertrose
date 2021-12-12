@@ -33,8 +33,8 @@
 
 	var/allow_items = TRUE
 
-/obj/machinery/computer/cryopod/attack_ai()
-	attack_hand()
+/obj/machinery/computer/cryopod/attack_ai(user)
+	attack_hand(user)
 
 /obj/machinery/computer/cryopod/ui_interact(mob/user = usr)
 	if(!is_operational())

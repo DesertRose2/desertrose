@@ -17,7 +17,7 @@
 	return TRUE
 
 /obj/item/onetankbomb/examine(mob/user)
-	bombtank.examine(user)
+	return bombtank.examine(user)
 
 /obj/item/onetankbomb/update_icon_state()
 	if(bombtank)
@@ -91,12 +91,12 @@
 	if(bombassembly)
 		bombassembly.on_found(finder)
 
-/obj/item/onetankbomb/on_attack_hand() //also for mousetraps
+/obj/item/onetankbomb/on_attack_hand(user, act_intent) //also for mousetraps
 	. = ..()
 	if(.)
 		return
 	if(bombassembly)
-		bombassembly.attack_hand()
+		bombassembly.attack_hand(user, act_intent)
 
 /obj/item/onetankbomb/Move()
 	. = ..()

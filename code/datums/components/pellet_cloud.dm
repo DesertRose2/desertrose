@@ -216,7 +216,7 @@
 				wound_info_by_part[hit_part][CLOUD_POSITION_BW_BONUS] += P.bare_wound_bonus
 				P.wound_bonus = CANT_WOUND // actual wounding will be handled aggregate
 
-	targets_hit[target]++
+	LAZYSET(targets_hit, target, LAZYACCESS(targets_hit, target) + 1)
 	if(targets_hit[target] == 1)
 		RegisterSignal(target, COMSIG_PARENT_QDELETING, .proc/on_target_qdel, override=TRUE)
 	UnregisterSignal(P, list(COMSIG_PARENT_QDELETING, COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PROJECTILE_SELF_ON_HIT))
