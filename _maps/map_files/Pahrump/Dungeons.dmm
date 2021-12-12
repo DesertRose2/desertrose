@@ -1519,8 +1519,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -2814,7 +2813,6 @@
 	color = "#800080";
 	light_color = "#800080";
 	light_range = 1.4;
-	light_sources = 1;
 	name = "Noqtis' Butterfly"
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -3654,8 +3652,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -6158,8 +6155,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -6244,8 +6240,7 @@
 "jCj" = (
 /obj/structure/pondlily_big{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/underground/cave)
@@ -7107,8 +7102,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -8736,8 +8730,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/grass{
@@ -8869,7 +8862,6 @@
 	color = "#800080";
 	light_color = "#800080";
 	light_range = 1.4;
-	light_sources = 1;
 	name = "Noqtis' Butterfly"
 	},
 /turf/open/floor/plating/dirt,
@@ -10286,8 +10278,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -10711,8 +10702,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -11805,8 +11795,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -12505,8 +12494,7 @@
 "tiP" = (
 /obj/structure/pondlily_big{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -13144,8 +13132,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -15433,8 +15420,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -15584,8 +15570,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /turf/open/floor/grass{
 	color = "#a7bdb0";
@@ -15739,7 +15724,6 @@
 	color = "#800080";
 	light_color = "#800080";
 	light_range = 1.4;
-	light_sources = 1;
 	name = "Noqtis' Butterfly"
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -15857,8 +15841,7 @@
 	},
 /obj/structure/flora/ausbushes/ppflowers{
 	light_color = "#800080";
-	light_range = 2;
-	light_sources = 1
+	light_range = 2
 	},
 /obj/structure/destructible/tribal_torch/lit{
 	pixel_y = 10
