@@ -399,7 +399,7 @@
 	outfit = /datum/outfit/job/vtcc/f13provost
 
 	loadout_options = list(
-		/datum/outfit/loadout/specops
+		// /datum/outfit/loadout/specops, // TODO: Readd when implemented
 		/datum/outfit/loadout/espionage,
 		/datum/outfit/loadout/enforcer
 	)
