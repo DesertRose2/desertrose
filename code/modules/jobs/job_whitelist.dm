@@ -72,6 +72,10 @@
 		for(var/rtypeWL in GLOB.legion_veteran_positions)
 			play_records[rtypeWL] = 0							//if they do not have a Legion Veteran whitelist, remove Legion Veteran whitelist positions
 
+	if(!whitelists["provost"])
+		for(var/rtypeWL in GLOB.vtcc_provost_positions)
+			play_records[rtypeWL] = 0							//if they do not have a Legion Veteran whitelist, remove Legion Veteran whitelist positions
+
 
 	/*
 	if(!whitelists["leadership_bos"])					// if they do not have leadership_bos whitelist, remove leadership_bos whitelist positions

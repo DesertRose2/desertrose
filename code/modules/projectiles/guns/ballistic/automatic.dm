@@ -882,6 +882,24 @@
 						"Makeshift Pilum" = "pilum"
 						)
 
+//VTCC Supression Rifle		Keywords: VTCC 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+/obj/item/gun/ballistic/automatic/assault_rifle/vtcc
+	name = "supression rifle"
+	desc = "A humble assault rifle, based off the out-dated R91 assault rifle. Primarily seen in use by the armed forces of the VTCC."
+	icon_state = "r91_vtcc"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	burst_size = 2
+	fire_delay = 3.5
+	burst_shot_delay = 3.5
+	can_attachments = FALSE
+	can_bayonet = TRUE
+	can_scope = FALSE
+	bayonet_state = "bayonet"
+	knife_x_offset = 24
+	knife_y_offset = 11
+	spread = 5
+	can_suppress = TRUE
+
 //Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
 	name = "Type 93 assault rifle"
