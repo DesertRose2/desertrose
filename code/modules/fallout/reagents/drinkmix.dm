@@ -67,7 +67,7 @@
 	id = "nukaberry"
 	results = list(/datum/reagent/consumable/nukaberry = 3)
 	required_reagents = list(/datum/reagent/consumable/nukacherry = 1, /datum/reagent/consumable/nukagrape = 1, /datum/reagent/consumable/ice = 1)
-/*
+
 /datum/chemical_reaction/nukabomb
 	name = "Nuka Bombdrop"
 	id = "nukabomb"
@@ -357,4 +357,4 @@
 	id = "yuccashake"
 	results = list(/datum/reagent/consumable/yuccashake = 3)
 	required_reagents = list(/datum/reagent/consumable/yuccajuice = 1, /datum/reagent/consumable/milk = 1, /datum/reagent/consumable/cream = 1)
-*/
+

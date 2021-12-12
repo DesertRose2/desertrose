@@ -556,7 +556,6 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "wet and cheap noodles on fire"
-	can_synth = FALSE
 
 /datum/reagent/consumable/hell_ramen/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(10 * TEMPERATURE_DAMAGE_COEFFICIENT)
@@ -725,7 +724,6 @@
 	taste_description = "bitter mushroom"
 	pH = 12
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/consumable/entpoly/on_mob_life(mob/living/carbon/M)
 	if(current_cycle >= 10)
@@ -762,7 +760,6 @@
 	taste_description = "fruity mushroom"
 	pH = 10.4
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/consumable/vitfro/on_mob_life(mob/living/carbon/M)
 	if(prob(80))

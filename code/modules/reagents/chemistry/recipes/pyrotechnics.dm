@@ -119,6 +119,30 @@
 	empulse(location, multiplier)
 	holder.clear_reagents()
 
+/datum/chemical_reaction/beesplosion
+	name = "Bee Explosion"
+	id = "beesplosion"
+	required_reagents = list(/datum/reagent/consumable/honey = 1, /datum/reagent/medicine/strange_reagent = 1, /datum/reagent/radium = 1)
+
+/datum/chemical_reaction/beesplosion/on_reaction(datum/reagents/holder, multiplier)
+	var/location = holder.my_atom.drop_location()
+	if(multiplier < 5)
+		playsound(location,'sound/effects/sparks1.ogg', 100, TRUE)
+	else
+		playsound(location,'sound/creatures/bee.ogg', 100, TRUE)
+		var/list/beeagents = list()
+		for(var/X in holder.reagent_list)
+			var/datum/reagent/R = X
+			if(required_reagents[R.type])
+				continue
+			beeagents += R
+		var/bee_amount = round(multiplier * 0.2)
+		for(var/i in 1 to bee_amount)
+			var/mob/living/simple_animal/hostile/poison/bees/short/new_bee = new(location)
+			if(LAZYLEN(beeagents))
+				new_bee.assign_reagent(pick(beeagents))
+
+
 /datum/chemical_reaction/stabilizing_agent
 	name = "stabilizing_agent"
 	id = /datum/reagent/stabilizing_agent
@@ -395,6 +419,43 @@
 	results = list(/datum/reagent/teslium/energized_jelly = 2)
 	required_reagents = list(/datum/reagent/toxin/slimejelly = 1, /datum/reagent/teslium = 1)
 	mix_message = "<span class='danger'>The slime jelly starts glowing intermittently.</span>"
+
+/datum/chemical_reaction/reagent_explosion/teslium_lightning
+	name = "Teslium Destabilization"
+	id = "teslium_lightning"
+	required_reagents = list(/datum/reagent/teslium = 1, /datum/reagent/water = 1)
+	strengthdiv = 100
+	modifier = -100
+	noexplosion = TRUE
+	mix_message = "<span class='boldannounce'>The teslium starts to spark as electricity arcs away from it!</span>"
+	mix_sound = 'sound/machines/defib_zap.ogg'
+	var/zap_flags = ZAP_MOB_DAMAGE | ZAP_OBJ_DAMAGE | ZAP_MOB_STUN
+
+/datum/chemical_reaction/reagent_explosion/teslium_lightning/on_reaction(datum/reagents/holder, created_volume)
+	var/T1 = created_volume * 20		//100 units : Zap 3 times, with powers 2000/5000/12000. Tesla revolvers have a power of 10000 for comparison.
+	var/T2 = created_volume * 50
+	var/T3 = created_volume * 120
+	var/added_delay = 0.5 SECONDS
+	if(created_volume >= 75)
+		addtimer(CALLBACK(src, .proc/zappy_zappy, holder, T1), added_delay)
+		added_delay += 1.5 SECONDS
+	if(created_volume >= 40)
+		addtimer(CALLBACK(src, .proc/zappy_zappy, holder, T2), added_delay)
+		added_delay += 1.5 SECONDS
+	if(created_volume >= 10)			//10 units minimum for lightning, 40 units for secondary blast, 75 units for tertiary blast.
+		addtimer(CALLBACK(src, .proc/zappy_zappy, holder, T3), added_delay)
+	..()
+
+/datum/chemical_reaction/reagent_explosion/teslium_lightning/proc/zappy_zappy(datum/reagents/holder, power)
+	if(QDELETED(holder.my_atom))
+		return
+	tesla_zap(holder.my_atom, 7, power, zap_flags)
+	playsound(holder.my_atom, 'sound/machines/defib_zap.ogg', 50, TRUE)
+
+/datum/chemical_reaction/reagent_explosion/teslium_lightning/heat
+	id = "teslium_lightning2"
+	required_temp = 474
+	required_reagents = list(/datum/reagent/teslium = 1)
 
 /datum/chemical_reaction/reagent_explosion/nitrous_oxide
 	name = "N2O explosion"

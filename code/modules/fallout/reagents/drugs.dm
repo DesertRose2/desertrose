@@ -51,7 +51,7 @@
 	if(M.hallucination < volume && prob(20))
 		M.hallucination += 10
 		M.adjustToxLoss(10, 0)
-		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 60)
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
@@ -71,7 +71,7 @@
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
 	M.adjustToxLoss(3, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 3)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
 	M.set_disgust(60)
 	M.Dizzy(10)
 	if(prob(40))
@@ -83,7 +83,7 @@
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
 	M.adjustToxLoss(5, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
 	M.set_disgust(100)
 	M.Dizzy(15)
 	if(prob(50))
@@ -249,6 +249,10 @@
 	if(prob(20))
 		M.emote(pick("twitch","scream","laugh"))
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
+	M.set_heartattack(TRUE)
+	M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
+	to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+	..()
 	return TRUE
 
 /datum/reagent/drug/psycho/addiction_act_stage1(mob/living/M)
@@ -275,7 +279,7 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(15)
 	M.Dizzy(15)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 3)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
 	if(prob(40))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -288,7 +292,7 @@
 	M.Jitter(50)
 	M.Dizzy(50)
 	M.adjustToxLoss(5)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 4)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 15)
 	if(prob(50))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -380,6 +384,8 @@
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
 	M.adjustBruteLoss(7.5)
+	M.maxHealth -= 1.5
+	M.health -= 1.5
 	if(prob(50))
 		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding. You're not even sure if you can control your arms!</span>")
 		M.drop_all_held_items()
@@ -389,7 +395,9 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage4(mob/living/M)
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
-	M.adjustBruteLoss(5)
+	M.adjustBruteLoss(12.5)
+	M.maxHealth -= 5
+	M.health -= 5
 	if(prob(90))
 		to_chat(M, "<span class='danger'>You can't even keep control of your muscles anymore!</span>")
 		M.drop_all_held_items()

@@ -435,7 +435,6 @@
 	metabolization_rate = 0.4 * REAGENTS_METABOLISM
 	pH = 2.6
 	value = REAGENT_VALUE_COMMON
-	can_synth = FALSE
 
 /datum/reagent/medicine/mine_salve/on_mob_life(mob/living/carbon/C)
 	C.hal_screwyhud = SCREWYHUD_HEALTHY
@@ -1069,7 +1068,6 @@
 	overdose_threshold = 60
 	pH = 8.7
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
 	..()
@@ -1274,7 +1272,6 @@
 	color = "#555555"
 	pH = 11
 	value = REAGENT_VALUE_EXCEPTIONAL
-	can_synth = FALSE
 
 /datum/reagent/medicine/syndicate_nanites/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-5*REM, FALSE) //A ton of healing - this is a 50 telecrystal investment.
@@ -1296,7 +1293,6 @@
 	color = "#555555"
 	pH = 11
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/medicine/lesser_syndicate_nanites/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-2*REM, FALSE)
@@ -1321,7 +1317,6 @@
 	taste_description = "jelly"
 	pH = 11.8
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 /datum/reagent/medicine/neo_jelly/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-1.5*REM, FALSE)
@@ -1431,7 +1426,6 @@
 	color = "#918e53"
 	overdose_threshold = 30
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/medicine/changelingadrenaline/on_mob_metabolize(mob/living/L)
 	..()
@@ -1460,7 +1454,6 @@
 	color = "#669153"
 	metabolization_rate = 1
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/medicine/changelinghaste/on_mob_metabolize(mob/living/L)
 	..()

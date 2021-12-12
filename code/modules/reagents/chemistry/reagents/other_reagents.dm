@@ -331,7 +331,6 @@
 	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen, but it looks kinda hollow."
 	color = "#88878777"
 	taste_description = "emptyiness"
-	can_synth = FALSE
 
 
 /datum/reagent/water/holywater
@@ -474,7 +473,6 @@
 	description = "YOUR FLESH! IT BURNS!"
 	taste_description = "burning"
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/hellwater/on_mob_life(mob/living/carbon/M)
 	M.fire_stacks = min(5,M.fire_stacks + 3)
@@ -490,7 +488,6 @@
 	description = "Oil blessed by a greater being."
 	taste_description = "metallic oil"
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/fuel/holyoil/on_mob_life(mob/living/carbon/M)
 	if(is_servant_of_ratvar(M))
@@ -549,7 +546,6 @@
 	name = "Super Duper Lube"
 	description = "This \[REDACTED\] has been outlawed after the incident on \[DATA EXPUNGED\]."
 	lube_kind = TURF_WET_SUPERLUBE
-	can_synth = FALSE
 
 /datum/reagent/spraytan
 	name = "Spray Tan"
@@ -659,7 +655,6 @@
 	color = "#13BC5E" // rgb: 19, 188, 94
 	taste_description = "slime"
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/aslimetoxin/reaction_mob(mob/living/L, method=TOUCH, reac_volume)
 	if(method != TOUCH)
@@ -1165,7 +1160,6 @@
 	taste_description = "acid"
 	pH = 2
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/space_cleaner/ez_clean/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(3.33)
@@ -1334,7 +1328,6 @@
 	color = "#808080"
 	taste_description = "sweetness"
 	pH = 5.8
-	can_synth = FALSE
 
 /datum/reagent/nitrous_oxide/reaction_obj(obj/O, reac_volume)
 	if((!O) || (!reac_volume))
@@ -1369,7 +1362,6 @@
 	color = "E1A116"
 	taste_description = "sourness"
 	value = REAGENT_VALUE_EXCEPTIONAL
-	can_synth = FALSE
 
 /datum/reagent/stimulum/on_mob_metabolize(mob/living/L)
 	..()
@@ -1396,7 +1388,6 @@
 	taste_description = "burning"
 	pH = 2
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/nitryl/on_mob_metabolize(mob/living/L)
 	..()
@@ -1860,51 +1851,43 @@
 	name = "mutagenic agar"
 	color = "#A3C00F" // rgb: 163,192,15
 	taste_description = "sourness"
-	can_synth = FALSE
 
 /datum/reagent/toxin/mutagen/mutagenvirusfood/sugar
 	name = "sucrose agar"
 	color = "#41B0C0" // rgb: 65,176,192
 	taste_description = "sweetness"
-	can_synth = FALSE
 
 /datum/reagent/medicine/synaptizine/synaptizinevirusfood
 	name = "virus rations"
 	color = "#D18AA5" // rgb: 209,138,165
 	taste_description = "bitterness"
-	can_synth = FALSE
 
 /datum/reagent/toxin/plasma/plasmavirusfood
 	name = "virus plasma"
 	color = "#A69DA9" // rgb: 166,157,169
 	taste_description = "bitterness"
 	taste_mult = 1.5
-	can_synth = FALSE
 
 /datum/reagent/toxin/plasma/plasmavirusfood/weak
 	name = "weakened virus plasma"
 	color = "#CEC3C6" // rgb: 206,195,198
 	taste_description = "bitterness"
 	taste_mult = 1.5
-	can_synth = FALSE
 
 /datum/reagent/uranium/uraniumvirusfood
 	name = "decaying uranium gel"
 	color = "#67ADBA" // rgb: 103,173,186
 	taste_description = "the inside of a reactor"
-	can_synth = FALSE
 
 /datum/reagent/uranium/uraniumvirusfood/unstable
 	name = "unstable uranium gel"
 	color = "#2FF2CB" // rgb: 47,242,203
 	taste_description = "the inside of a reactor"
-	can_synth = FALSE
 
 /datum/reagent/uranium/uraniumvirusfood/stable
 	name = "stable uranium gel"
 	color = "#04506C" // rgb: 4,80,108
 	taste_description = "the inside of a reactor"
-	can_synth = FALSE
 
 // Bee chemicals
 
@@ -1915,7 +1898,6 @@
 	taste_description = "strange honey"
 	pH = 3
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 /datum/reagent/royal_bee_jelly/on_mob_life(mob/living/carbon/M)
 	if(prob(2))
@@ -1952,7 +1934,6 @@
 	reagent_state = LIQUID
 	color = "#00f041"
 	value = REAGENT_VALUE_EXCEPTIONAL
-	can_synth = FALSE
 
 /datum/reagent/magillitis/on_mob_life(mob/living/carbon/M)
 	..()
@@ -1966,7 +1947,6 @@
 	var/current_size = RESIZE_DEFAULT_SIZE
 	value = REAGENT_VALUE_COMMON
 	taste_description = "bitterness" // apparently what viagra tastes like
-	can_synth = FALSE
 
 /datum/reagent/growthserum/on_mob_life(mob/living/carbon/H)
 	var/newsize = current_size
@@ -2032,7 +2012,6 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_RARE
 	pH = 15
-	can_synth = FALSE
 
 /datum/reagent/pax/on_mob_metabolize(mob/living/L)
 	..()
@@ -2049,7 +2028,6 @@
 	taste_description = "acrid cinnamon"
 	metabolization_rate = 0.2 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 /datum/reagent/bz_metabolites/on_mob_metabolize(mob/living/L)
 	..()
@@ -2071,7 +2049,6 @@
 	description = "A colorless liquid that suppresses violence on the subjects. Cheaper to synthetize, but wears out faster than normal Pax."
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_COMMON
-	can_synth = FALSE
 
 /datum/reagent/peaceborg_confuse
 	name = "Dizzying Solution"
@@ -2079,7 +2056,6 @@
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
 	taste_description = "dizziness"
 	value = REAGENT_VALUE_COMMON
-	can_synth = FALSE
 
 /datum/reagent/peaceborg_confuse/on_mob_life(mob/living/carbon/M)
 	if(M.confused < 6)
@@ -2096,7 +2072,6 @@
 	metabolization_rate = 1.5 * REAGENTS_METABOLISM
 	taste_description = "tiredness"
 	value = REAGENT_VALUE_COMMON
-	can_synth = FALSE
 
 /datum/reagent/peaceborg_tire/on_mob_life(mob/living/carbon/M)
 	var/healthcomp = (100 - M.health)	//DOES NOT ACCOUNT FOR ADMINBUS THINGS THAT MAKE YOU HAVE MORE THAN 200/210 HEALTH, OR SOMETHING OTHER THAN A HUMAN PROCESSING THIS.
@@ -2166,7 +2141,6 @@
 	description = "An extremely rare metallic-white substance only found on demon-class planets."
 	color = "#FFFFFF" // rgb: 255, 255, 255
 	taste_mult = 0 // oderless and tasteless
-	can_synth = FALSE
 
 /datum/reagent/metalgen
 	name = "Metalgen"
@@ -2176,7 +2150,6 @@
 	taste_mult = 0 // oderless and tasteless
 	var/applied_material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	var/minumum_material_amount = 100
-	can_synth = FALSE
 
 /datum/reagent/metalgen/reaction_obj(obj/O, volume)
 	metal_morph(O)
@@ -2324,7 +2297,6 @@ datum/reagent/eldritch
 	description = "Strange liquid that defies the laws of physics"
 	taste_description = "Ag'hsj'saje'sh"
 	color = "#1f8016"
-	can_synth = FALSE
 
 /datum/reagent/eldritch/on_mob_life(mob/living/carbon/M)
 	if(IS_HERETIC(M))
