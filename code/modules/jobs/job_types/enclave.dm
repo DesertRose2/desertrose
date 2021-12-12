@@ -1,4 +1,4 @@
-/*/datum/outfit/job/enclave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -146,8 +146,8 @@ Colonist
 	flag = F13USCOLONIST
 	department_flag = ENCLAVE
 	//
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the commander"
 	selection_color = "#ccccff"
 
