@@ -278,7 +278,7 @@
 		// transfer the swap-body ui if it's open
 		var/datum/action/innate/swap_body/this_swap = origin_datum.swap_body
 		var/datum/action/innate/swap_body/other_swap = spare_datum.swap_body
-		var/datum/tgui/ui = SStgui.get_open_ui(H, this_swap, "main") || SStgui.get_open_ui(spare, this_swap, "main")
+		var/datum/tgui/ui = SStgui.get_open_ui(H, this_swap) || SStgui.get_open_ui(spare, this_swap)
 		if(ui)
 			SStgui.on_close(ui) // basically removes it from lists is all this proc does.
 			ui.user = spare
@@ -435,7 +435,7 @@
 		var/datum/action/innate/swap_body/other_swap = other_spec.swap_body
 		// theoretically the transfer_to proc is supposed to transfer the ui from the mob.
 		// so I try to get the UI from one of the two mobs and schlump it over to the new action button
-		var/datum/tgui/ui = SStgui.get_open_ui(old, src, "main") || SStgui.get_open_ui(dupe, src, "main")
+		var/datum/tgui/ui = SStgui.get_open_ui(old, src) || SStgui.get_open_ui(dupe, src)
 		if(ui)
 			// transfer the UI over. This code is slightly hacky but it fixes the problem
 			// I'd use SStgui.on_transfer but that doesn't let you transfer the src_object as well s
