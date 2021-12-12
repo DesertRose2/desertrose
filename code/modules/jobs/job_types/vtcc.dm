@@ -436,8 +436,18 @@
 		/obj/item/clothing/mask/gas/sechailer=1
 	)
 
-/datum/outfit/loadout/espionage
+/datum/outfit/loadout/specops
 	name = "Spec Ops"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/assault_rifle/vtcc=1,
+		/obj/item/ammo_box/magazine/m556/rifle=3,
+		/obj/item/suppressor = 1,
+		/obj/item/storage/bag/ammo=1,
+		/obj/item/attachments/burst_improvement=1
+	)
+
+/datum/outfit/loadout/espionage
+	name = "Espionage"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm=1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
