@@ -2,16 +2,16 @@
 
 /datum/reagent/consumable/tea/agavetea
 	name = "Agave Tea"
-	description = "A soothing herbal rememedy steeped from the Agave Plant. Induces increased healing of burns and sores."
+	description = "A soothing herbal rememedy steeped from the Agave Plant. Inhibits increased healing of burns and sores."
 	color = "#FFFF91"
 	nutriment_factor = 0
 	taste_description = "bitterness"
 	glass_icon_state = "tea"
 	glass_name = "Agave Tea"
-	glass_desc = "A soothing herbal rememedy steeped from the Agave Plant. Induces increased healing of burns and sores."
+	glass_desc = "A soothing herbal rememedy steeped from the Agave Plant. Inhibits increased healing of burns and sores."
 
 /datum/reagent/consumable/tea/agavetea/on_mob_life(mob/living/carbon/M)
-	M.adjustFireLoss(-1.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustFireLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.nutrition = max(M.nutrition - 3, 0)
 	M.dizziness = max(0,M.dizziness-2)
 	M.drowsyness = max(0,M.drowsyness-1)

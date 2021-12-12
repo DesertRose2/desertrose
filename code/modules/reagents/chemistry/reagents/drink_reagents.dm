@@ -179,7 +179,6 @@
 	color = "#FF4DD2"
 	taste_description = "laughter"
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/consumable/superlaughter/on_mob_life(mob/living/carbon/M)
 	if(prob(30))
@@ -995,7 +994,7 @@
 /datum/reagent/consumable/sol_dry/on_mob_life(mob/living/carbon/M)
 	M.adjust_disgust(-5)
 	..()
-/*
+
 /datum/reagent/consumable/red_queen
 	name = "Red Queen"
 	description = "DRINK ME."
@@ -1007,7 +1006,6 @@
 	glass_desc = "DRINK ME."
 	value = REAGENT_VALUE_COMMON //growth serum.
 	var/current_size = RESIZE_DEFAULT_SIZE
-	can_synth = FALSE
 
 /datum/reagent/consumable/red_queen/on_mob_life(mob/living/carbon/H)
 	if(prob(75))
@@ -1026,7 +1024,7 @@
 	current_size = RESIZE_DEFAULT_SIZE
 	M.update_transform()
 	..()
-*/
+
 /datum/reagent/consumable/pinkmilk
 	name = "Strawberry Milk"
 	description = "A drink of a bygone era of milk and artificial sweetener back on a rock."

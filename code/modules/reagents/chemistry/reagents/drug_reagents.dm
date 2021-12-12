@@ -9,7 +9,7 @@
 		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[type]_high")
 
 /datum/reagent/drug/space_drugs
-	name = "Generic drugs"
+	name = "Space drugs"
 	value = REAGENT_VALUE_VERY_COMMON
 	description = "An illegal chemical compound used as drug."
 	color = "#60A584" // rgb: 96, 165, 132
@@ -65,7 +65,6 @@
 	addiction_threshold = 10
 	pH = 10
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 /datum/reagent/drug/crank/on_mob_life(mob/living/carbon/M)
 	if(prob(5))
@@ -113,7 +112,6 @@
 	addiction_threshold = 15
 	pH = 9
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 
 /datum/reagent/drug/krokodil/on_mob_life(mob/living/carbon/M)
@@ -166,7 +164,6 @@
 	addiction_threshold = 20
 	pH = 9
 	value = REAGENT_VALUE_UNCOMMON
-	can_synth = FALSE
 
 
 /datum/reagent/drug/heroin/on_mob_life(mob/living/carbon/M)
@@ -298,7 +295,6 @@
 	overdose_threshold = 35
 	jitter = FALSE
 	brain_damage = FALSE
-	can_synth = FALSE
 	value = REAGENT_VALUE_RARE
 
 /datum/reagent/drug/bath_salts
@@ -312,7 +308,6 @@
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	pH = 8.2
 	value = REAGENT_VALUE_RARE
-	can_synth = FALSE
 
 /datum/reagent/drug/bath_salts/on_mob_metabolize(mob/living/L)
 	..()
@@ -507,7 +502,6 @@
 	color = "#E62111"
 	overdose_threshold = 6
 	value = REAGENT_VALUE_VERY_RARE
-	can_synth = FALSE
 
 /datum/reagent/syndicateadrenals/on_mob_life(mob/living/M)
 	M.adjustStaminaLoss(-5*REM)
