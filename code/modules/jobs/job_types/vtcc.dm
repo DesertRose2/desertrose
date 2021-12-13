@@ -391,8 +391,8 @@
 /datum/job/vtcc/f13provost
 	title = "Provost"
 	flag = F13PROVOST
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Aldermen and the Provost Sergeant."
 	description = "Participating in strike squads against raider encampments and performing surgical strikes against enemies of the Coalition, you and the rest of the elite Provosts don't so much as charge into battle as you do prevent the battle from happening; enforcing the law is still the order of the day, but destabilising real threats and taking out bands of raiders is a priority."
 
@@ -425,13 +425,10 @@
 	neck = 			/obj/item/storage/belt/holster
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
-	r_hand =		/obj/item/gun/ballistic/automatic/pistol/n99
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/pda/security=1,
-		/obj/item/ammo_box/magazine/m10mm_adv=3,
-		/obj/item/autosurgeon/riotshield=1,
 		/obj/item/storage/survivalkit_aid=1,
 		/obj/item/clothing/mask/gas/sechailer=1
 	)
@@ -443,7 +440,8 @@
 		/obj/item/ammo_box/magazine/m556/rifle=3,
 		/obj/item/suppressor = 1,
 		/obj/item/storage/bag/ammo=1,
-		/obj/item/attachments/burst_improvement=1
+		/obj/item/gun/ballistic/automatic/pistol/n99=1,
+		/obj/item/ammo_box/magazine/m10mm_adv=2
 	)
 
 /datum/outfit/loadout/espionage
@@ -453,17 +451,20 @@
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/suppressor = 1,
 		/obj/item/camera=1,
-		/obj/item/book/granter/trait/demolitions=1
+		/obj/item/book/granter/trait/demolitions=1,
+		/obj/item/gun/ballistic/automatic/pistol/n99=1,
+		/obj/item/ammo_box/magazine/m10mm_adv=2
 	)
 
 /datum/outfit/loadout/enforcer
 	name = "Enforcer"
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
-		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/gun/energy/laser/aer9=1,
+		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/book/granter/trait/trekking=1
 	)
 
 /datum/outfit/job/vtcc/f13provostsgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -492,8 +493,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/oldguard,
 		/datum/outfit/loadout/riotpolice,
-		/datum/outfit/loadout/vccmedic,
-		/datum/outfit/loadout/firesup
+		/datum/outfit/loadout/vccmedic
 		)
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
@@ -528,18 +528,18 @@
 /datum/outfit/loadout/oldguard
 	name = "Shock Trooper"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/automatic/m1carbine/compact=1,
-	/obj/item/ammo_box/magazine/m10mm_adv=3
+	/obj/item/gun/ballistic/automatic/m1carbine=1,
+	/obj/item/ammo_box/magazine/m10mm_adv=2
 	)
 
 /datum/outfit/loadout/riotpolice
 	name = "Riot Cop"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/trench=1,
-	/obj/item/ammo_box/shotgun/magnum=3,
-	/obj/item/shield/riot/tele=1,
-	/obj/item/clothing/mask/gas/sechailer=1,
-	/obj/item/grenade/smokebomb=2
+		/obj/item/clothing/glasses/hud/health=1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/grenade/chem_grenade/teargas=2,
+		/obj/item/book/granter/trait/trekking=1
 	)
 
 /datum/outfit/loadout/vccmedic
@@ -549,16 +549,8 @@
 	/obj/item/book/granter/trait/lowsurgery=1,
 	/obj/item/book/granter/trait/chemistry=1,
 	/obj/item/storage/box/medicine/stimpak10=1,
-	/obj/item/defibrillator/compact/combat=1,
+	/obj/item/defibrillator/compact/loaded=1,
 	/obj/item/clothing/glasses/hud/health=1
-	)
-
-/datum/outfit/loadout/firesup
-	name = "Fire Support"
-	backpack_contents = list(
-	/obj/item/clothing/mask/gas/sechailer=1,
-	/obj/item/gun/energy/laser/aer9=1,
-	/obj/item/stock_parts/cell/ammo/mfc=3
 	)
 
 /datum/outfit/job/vtcc/f13citysec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -585,8 +577,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/newblood,
 		/datum/outfit/loadout/deepend,
-		/datum/outfit/loadout/vcfmedic,
-		/datum/outfit/loadout/backsup
+		/datum/outfit/loadout/vcfmedic
 		)
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
@@ -616,8 +607,9 @@
 /datum/outfit/loadout/newblood
 	name = "Shock Cadet"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/trench=1,
-	/obj/item/ammo_box/shotgun/magnum = 3
+	/obj/item/gun/ballistic/shotgun/hunting = 1,
+	/obj/item/ammo_box/shotgun/buck = 2,
+	/obj/item/ammo_box/shotgun/slug=1
 	)
 
 /datum/outfit/loadout/deepend
@@ -634,18 +626,10 @@
 	name = "Field Medic"
 	backpack_contents = list(
 	/obj/item/storage/bag/chemistry=1,
-	/obj/item/storage/survivalkit_aid=3,
-	/obj/item/storage/box/medicine/stimpak5=1,
-	/obj/item/defibrillator/compact/combat=1,
+	/obj/item/storage/survivalkit_aid=1,
+	/obj/item/storage/box/medicine/stimpak5=3,
+	/obj/item/defibrillator/compact/loaded=1,
 	/obj/item/clothing/glasses/hud/health=1
-	)
-
-/datum/outfit/loadout/backsup
-	name = "Backline Support"
-	backpack_contents = list(
-	/obj/item/gun/energy/laser/pistol=1,
-	/obj/item/stock_parts/cell/ammo/ec=3,
-	/obj/item/clothing/mask/gas/sechailer=1
 	)
 
 /datum/outfit/job/vtcc/f13citycadet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

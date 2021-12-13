@@ -942,7 +942,7 @@
 /obj/effect/spawner/bundle/f13/revolver44
 	name = ".44 revolver and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/revolver/revolver44,
+				/obj/item/gun/ballistic/revolver/m29,
 				/obj/item/ammo_box/m44
 				)
 
