@@ -590,6 +590,7 @@
 	desc = "(VIII) It's unclear just want power armour helmet this once was. Did it belong to a set of T-51? Was it once APA? Maybe it was just excavator power armor? There's no way of knowing. What is clear though, is that this helmet cannot be repaired or restored, and it's far too large for a normal human to wear."
 	icon_state = "mutie_power_armor_helmet"
 	item_state = "mutie_power_armor_helmet"
+	requires_training = FALSE
 	armor = list("tier" = 8, "energy" = 60, "bomb" = 50, "bio" = 30, "rad" = 0, "fire" = 90, "acid" = 0, "wound" = 60)
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
