@@ -619,3 +619,10 @@
 	materials = list(/datum/material/iron = 8000)
 	build_path = /obj/item/ammo_box/magazine/c5mm/extended/empty
 	category = list("initial", "Advanced Magazines")
+
+/datum/design/ammolathe/needler
+	name = "needler stripper clip"
+	id = "needler"
+	materials = list(/datum/material/iron = 8000, /datum/material/titanium = 10000)
+	build_path = /obj/item/ammo_box/needle
+	category = list("initial", "Advanced Ammo")
