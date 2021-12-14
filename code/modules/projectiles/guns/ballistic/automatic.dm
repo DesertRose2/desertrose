@@ -595,7 +595,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
+//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
@@ -603,7 +603,6 @@
 	item_state = "assault_carbine"
 	fire_delay = 3.5
 	spread = 2
-	can_attachments = FALSE
 	bayonet_state = "bayonet"
 	can_bayonet = TRUE
 	knife_x_offset = 34
@@ -613,7 +612,22 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 18
 
-//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 20 (10-50) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
+//'Maxson' Scout Carbine		Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR.
+/obj/item/gun/ballistic/automatic/service/maxson/caseless
+	name = "'Maxson' scout carbine"
+	desc = "A 4.73 semi-automatic service rifle manufactured post-war by the Senora Brotherhood chapter. This once fine AR-platform gun has been mangled into a strange firearm made for stealth due to its caseless ammunition and odd choice in round."
+	icon_state = "maxson_case"
+	item_state = "assault_carbine"
+	mag_type = /obj/item/ammo_box/magazine/m473_pistol
+	can_bayonet = FALSE
+	fire_delay = 4
+	spread = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	extra_damage = 2
+
+//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
 /obj/item/gun/ballistic/automatic/service/maxson/c5mm
 	name = "'Maxson' assault carbine"
 	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
@@ -625,6 +639,7 @@
 	fire_delay = 4
 	spread = 15
 	extra_damage = 0
+	can_attachments = FALSE
 
 
 //Marksman Carbine		Keywords: 5.56,Semi-Autoamtic, 20 (10-50) round mags, Scoped.
