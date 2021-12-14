@@ -467,7 +467,8 @@
 						"rangerbust",
 						"kirshbia",
 						"jackmcintyre",
-						"lunaticluna")
+						"lunaticluna",
+						"muhsollini")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -585,7 +586,8 @@
 						"rangerbust",
 						"jackmcintyre",
 						"kirshbia",
-						"lunaticluna")
+						"lunaticluna",
+						"muhsollini")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
