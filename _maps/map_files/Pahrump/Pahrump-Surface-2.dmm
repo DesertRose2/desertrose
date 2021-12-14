@@ -22803,19 +22803,6 @@
 	name = "moss patch"
 	},
 /area/f13/wasteland)
-"hSK" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 23
-	},
-/turf/open/floor/f13{
-	color = "#a6968e";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/wasteland{
-	dynamic_lighting = 1
-	})
 "hSN" = (
 /obj/machinery/button/door{
 	id = "pegaragedoors";
@@ -131423,7 +131410,7 @@ els
 vuC
 sTc
 yef
-hSK
+gdA
 vbG
 tmU
 dlA
