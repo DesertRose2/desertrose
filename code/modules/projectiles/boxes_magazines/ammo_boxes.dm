@@ -715,7 +715,7 @@
 /obj/item/ammo_box/c45rev
 	name = "speed loader (.45 ACP)"
 	desc = "Designed to quickly reload revolvers."
-	icon_state = "38"
+	icon_state = "10mm"
 	caliber = ".45"
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 6
