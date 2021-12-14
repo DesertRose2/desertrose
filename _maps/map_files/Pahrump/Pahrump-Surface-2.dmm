@@ -2983,7 +2983,6 @@
 /area/f13/building)
 "aVn" = (
 /obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/molerat,
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibmid3"
 	},
@@ -47371,11 +47370,15 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "pYS" = (
-/mob/living/simple_animal/hostile/retaliate/goat/bighorn,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "outerborder"
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
 	},
-/area/f13/wasteland)
+/obj/structure/dresser{
+	pixel_y = 10
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/tribe)
 "pYW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -49163,11 +49166,19 @@
 /turf/open/floor/wood,
 /area/f13/bar)
 "qDF" = (
-/mob/living/simple_animal/hostile/retaliate/goat/bighorn,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright2"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/wasteland)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/cross,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/legion)
 "qDH" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/wood/f13/oak,
@@ -53629,7 +53640,11 @@
 /area/f13/building)
 "smo" = (
 /obj/structure/table/wood,
-/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/food/condiment/saltshaker,
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = -5;
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city)
 "smw" = (
@@ -54377,6 +54392,7 @@
 /obj/item/kitchen/knife{
 	pixel_x = -2
 	},
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city)
 "szM" = (
@@ -55745,9 +55761,26 @@
 	},
 /area/f13/building)
 "sXc" = (
-/mob/living/simple_animal/hostile/molerat,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/building)
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = 3;
+	pixel_y = 8
+	},
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/legion)
 "sXe" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -64524,7 +64557,6 @@
 	},
 /area/f13/building)
 "wej" = (
-/mob/living/simple_animal/hostile/molerat,
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibup1"
 	},
@@ -64721,7 +64753,6 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "why" = (
@@ -78366,7 +78397,7 @@ neD
 iyf
 sPX
 kJu
-dDK
+iyf
 iyf
 iyf
 xlU
@@ -78623,7 +78654,7 @@ nfR
 iyf
 fCM
 njq
-mmG
+dDK
 iyf
 iyf
 qcF
@@ -78880,7 +78911,7 @@ nho
 iyf
 olZ
 kJu
-ljE
+pYS
 iyf
 iyf
 dRT
@@ -83973,7 +84004,7 @@ fyf
 fyf
 fyf
 uey
-vZR
+fyf
 fyf
 fyf
 fyf
@@ -85771,7 +85802,7 @@ fyf
 fyf
 fyf
 fyf
-vZR
+fyf
 fyf
 fyf
 fyf
@@ -110543,7 +110574,7 @@ erY
 erY
 ltl
 erY
-sCK
+erY
 erY
 erY
 koD
@@ -110800,7 +110831,7 @@ erY
 erY
 fAt
 erY
-sCK
+erY
 erY
 erY
 koD
@@ -114716,7 +114747,7 @@ mwp
 dcY
 mwp
 mwp
-dcY
+mwp
 iIh
 gcK
 gcK
@@ -115223,7 +115254,7 @@ gts
 gcK
 jKB
 mwp
-dcY
+mwp
 mwp
 vRR
 mwp
@@ -115484,7 +115515,7 @@ fUf
 wjU
 iIh
 mwp
-dcY
+mwp
 iIh
 mwp
 mwp
@@ -116196,7 +116227,7 @@ erY
 erY
 erY
 khX
-sCK
+erY
 erY
 erY
 erY
@@ -116767,7 +116798,7 @@ ehN
 gcK
 oFP
 gxx
-sXc
+cbr
 cbr
 uSi
 cbr
@@ -117534,7 +117565,7 @@ tnO
 alR
 kjQ
 vMU
-lsm
+sgz
 sBk
 dMW
 lfV
@@ -118005,7 +118036,7 @@ ybI
 oqe
 ybI
 uuG
-wdA
+ybI
 ybI
 uuG
 ybI
@@ -118045,7 +118076,7 @@ hkW
 sJw
 ybI
 ybI
-pYS
+onk
 ehN
 ehN
 vMU
@@ -118279,7 +118310,7 @@ aJb
 idu
 idu
 idu
-eAh
+idu
 hBN
 aJb
 tUb
@@ -118521,7 +118552,7 @@ dmL
 sgz
 cdc
 ehN
-jni
+ehN
 hOl
 dmL
 dmL
@@ -118824,7 +118855,7 @@ kaM
 hOl
 btW
 btW
-oGB
+btW
 kaM
 kaM
 kaM
@@ -119052,7 +119083,7 @@ gQv
 gQv
 ees
 ees
-kKo
+ees
 ees
 ees
 fsm
@@ -119079,7 +119110,7 @@ ees
 ees
 ees
 gQv
-qDF
+gQv
 gQv
 ees
 ees
@@ -121852,7 +121883,7 @@ erY
 fAt
 erY
 erY
-sCK
+erY
 erY
 wwM
 dMW
@@ -122109,7 +122140,7 @@ wGJ
 ibG
 erY
 erY
-sCK
+erY
 erY
 koD
 dMW
@@ -123193,7 +123224,7 @@ xrg
 kxA
 vtm
 vtm
-uEB
+sXc
 vtm
 vtm
 xpG
@@ -124550,7 +124581,7 @@ fyf
 fyf
 fyf
 fyf
-jHH
+fyf
 fyf
 fyf
 fyf
@@ -125703,7 +125734,7 @@ unI
 erY
 erY
 erY
-sCK
+erY
 fAt
 erY
 erY
@@ -127895,7 +127926,7 @@ fyf
 fyf
 fyf
 fyf
-jHH
+fyf
 aEG
 fyf
 kGc
@@ -128040,7 +128071,7 @@ tPy
 cdc
 wGJ
 erY
-qEb
+koD
 bSn
 vtm
 ull
@@ -129068,9 +129099,9 @@ erY
 wGJ
 cdc
 tPy
-koD
+dCh
 pWz
-rMy
+qDF
 vtm
 vtm
 vtm
@@ -130096,7 +130127,7 @@ wGJ
 cdc
 erY
 erY
-qEb
+koD
 bSn
 vtm
 bRb
@@ -131092,7 +131123,7 @@ uDG
 fmW
 jae
 uDG
-sCK
+erY
 jae
 wtj
 hGJ
@@ -133352,7 +133383,7 @@ fyf
 fyf
 fyf
 fyf
-nPu
+fyf
 fyf
 fyf
 fyf
@@ -133862,7 +133893,7 @@ gcK
 gcK
 fyf
 fyf
-vZR
+fyf
 fyf
 fyf
 fyf

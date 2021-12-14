@@ -30084,7 +30084,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/f13/tunnel)
 "uiV" = (
-/obj/structure/nest/radroach,
+/mob/living/simple_animal/hostile/radroach,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ujx" = (
@@ -36027,12 +36027,6 @@
 "yfe" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
-/area/f13/tunnel)
-"yfz" = (
-/obj/structure/nest/ghoul,
-/turf/open/floor/f13{
-	icon_state = "greenrustyfull"
-	},
 /area/f13/tunnel)
 "ygg" = (
 /obj/item/flashlight,
@@ -42527,7 +42521,7 @@ uoO
 uoO
 uoO
 uoO
-ahe
+lnr
 sNX
 lnr
 lnr
@@ -43041,7 +43035,7 @@ uoO
 uoO
 uoO
 lnr
-ahe
+lnr
 lnr
 lnr
 lnr
@@ -48337,7 +48331,7 @@ eoy
 eoy
 nBk
 nBk
-mSD
+nBk
 nBk
 nBk
 eoy
@@ -72862,7 +72856,7 @@ nBk
 nBk
 nBk
 nBk
-hJR
+nBk
 nBk
 nBk
 nBk
@@ -83455,7 +83449,7 @@ hfr
 hfr
 miI
 miI
-yfz
+miI
 tLd
 oMb
 miI
@@ -88435,7 +88429,7 @@ aoj
 uoO
 uoO
 vOo
-xVz
+uiV
 smf
 aoj
 uoO
