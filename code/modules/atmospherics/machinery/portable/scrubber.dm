@@ -41,7 +41,7 @@
 		var/turf/T = get_turf(src)
 		scrub(T.return_air())
 
-/obj/machinery/portable_atmospherics/scrubber/proc/scrub(var/datum/gas_mixture/mixture)
+/obj/machinery/portable_atmospherics/scrubber/proc/scrub(datum/gas_mixture/mixture)
 	mixture.scrub_into(air_contents, volume_rate / mixture.return_volume(), scrubbing)
 	if(!holding)
 		air_update_turf()

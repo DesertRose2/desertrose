@@ -64391,7 +64391,7 @@
 "vYK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/computer/arcade/amputation{
-	desc = "A picture of a blood-soaked Miss Nanny flashes on the screen. The Miss Nanny has a speech bubble that says, \"Put your hand in the machine if you aren't <b>scared</b>\" There's a good amount of dust on the machine and some strange looking rust stains. There's a piece of paper taped to the top of machine that reads "Do not use this!!! -Rosa"";
+	desc = "A picture of a blood-soaked Miss Nanny flashes on the screen. The Miss Nanny has a speech bubble that says, \"Put your hand in the machine if you aren't <b>scared</b>\" There's a good amount of dust on the machine and some strange looking rust stains. There's a piece of paper taped to the top of machine that reads \"Do not use this!!! -Rosa\"";
 	name = "Miss Nanny's Amputation Adventure"
 	},
 /obj/structure/barricade/wooden,
