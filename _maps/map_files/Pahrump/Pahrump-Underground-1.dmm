@@ -2352,6 +2352,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "bFV" = (
@@ -4657,16 +4658,13 @@
 	height = 1;
 	icon_state = "ladder10";
 	id = "Flooded_Room_Left";
-	name = "Entryway"
+	name = "Entryway";
+	pixel_x = 15
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/effect/decal/fakelattice,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 23
-	},
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	color = "#645546";
 	footstep = "plating";
@@ -7176,6 +7174,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "eWf" = (
@@ -10468,11 +10467,9 @@
 	height = 1;
 	icon_state = "ladder10";
 	id = "Flooded_Room_Right";
-	name = "Entryway"
-	},
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 23
+	name = "Entryway";
+	pixel_x = 15;
+	pixel_y = null
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -11537,7 +11534,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/kirbyplants,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2";
 	icon_state = "housewood4-broken"
@@ -13861,6 +13858,9 @@
 "jCM" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/ingredients/sweets,
+/obj/item/storage/box/ingredients/fruity,
+/obj/item/storage/box/ingredients/fiesta,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "jCO" = (
@@ -14255,9 +14255,10 @@
 /area/f13/tunnel)
 "jSl" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light,
+/obj/item/storage/box/ingredients/italian,
+/obj/item/storage/box/ingredients/grains,
+/obj/item/storage/box/ingredients/american,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "jSr" = (
@@ -25801,10 +25802,7 @@
 /area/f13/tunnel)
 "rAo" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_x = -7;
-	pixel_y = 16
-	},
+/obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "rAx" = (
@@ -28698,14 +28696,10 @@
 	},
 /area/f13/tunnel)
 "tvl" = (
-/obj/structure/destructible/tribal_torch/wall/lit,
-/obj/effect/decal/fakelattice,
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
-	},
-/area/f13/legion)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/operations)
 "tvw" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -29755,18 +29749,6 @@
 	icon_state = "dark"
 	},
 /area/f13/bunker)
-"tZi" = (
-/obj/effect/decal/fakelattice,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
-	},
-/area/f13/legion)
 "tZr" = (
 /obj/machinery/button/door{
 	id = "floor2elevatordoors";
@@ -91160,7 +91142,7 @@ uoO
 uoO
 uoO
 eLE
-fSp
+mlv
 nVK
 qny
 qny
@@ -92447,13 +92429,13 @@ uoO
 eLE
 mlv
 dnn
+bqT
 wji
+qBC
+qBC
+qBC
+thO
 wji
-qBC
-qBC
-qBC
-qBC
-tZi
 mlv
 uoO
 uoO
@@ -93283,7 +93265,7 @@ gEZ
 ybb
 gXi
 eVF
-cOE
+tvl
 bFS
 mrV
 enH
@@ -95794,7 +95776,7 @@ qBC
 qBC
 qtR
 lpq
-tvl
+lpq
 mlv
 uoO
 uoO
@@ -96045,12 +96027,12 @@ uoO
 eLE
 mlv
 qBC
-qBC
+sim
 qBC
 lpq
 lpq
 lpq
-qBC
+sim
 qBC
 mlv
 uoO
