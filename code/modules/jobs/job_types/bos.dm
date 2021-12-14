@@ -892,8 +892,8 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Scout Junior"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/service/maxson=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/automatic/service/maxson/caseless=1,
+		/obj/item/ammo_box/magazine/m473_pistol=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
@@ -934,8 +934,8 @@ Knight
 /datum/outfit/loadout/knighte
 	name = "Scout"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/service/maxson=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/automatic/service/maxson/caseless=1,
+		/obj/item/ammo_box/magazine/m473_pistol=2,
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout=1,
 		/obj/item/clothing/glasses/night=1,
