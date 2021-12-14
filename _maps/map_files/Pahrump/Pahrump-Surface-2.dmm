@@ -31730,7 +31730,8 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft2"
+	dir = 6;
+	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
 "kDx" = (
@@ -123927,7 +123928,7 @@ igz
 igz
 igz
 igz
-hgX
+kDw
 cpK
 jkJ
 igz
@@ -124184,7 +124185,7 @@ ybI
 ybI
 jps
 sTa
-kDw
+sTa
 sTa
 sJw
 ybI
