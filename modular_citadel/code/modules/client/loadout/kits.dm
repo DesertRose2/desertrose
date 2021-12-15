@@ -468,4 +468,4 @@
 
 //Natalia Morgan - panzer1944
 /obj/item/storage/box/large/custom_kit/nataliamorgan/PopulateContents()
-	new /obj/item/clothing/under/f13/legskirt/tac
+	new /obj/item/clothing/under/f13/legskirt/tac(src)
