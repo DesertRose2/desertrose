@@ -9098,6 +9098,13 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/ncr)
+"dix" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/wreck/trash/two_barrels,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/building)
 "diA" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/structure/chair/bench{
@@ -22490,10 +22497,10 @@
 /area/f13/city)
 "hLV" = (
 /obj/effect/decal/cleanable/glass,
-/obj/item/shard,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/item/stack/sheet/mineral/wood,
 /obj/effect/decal/fakelattice,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plating/rust,
 /area/f13/building)
 "hMb" = (
@@ -41516,6 +41523,9 @@
 /area/f13/wasteland)
 "obf" = (
 /obj/structure/reagent_dispensers/watertank,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "obh" = (
@@ -50046,6 +50056,9 @@
 "qXk" = (
 /obj/structure/toilet,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -61064,9 +61077,9 @@
 	},
 /area/f13/building)
 "uUx" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/wreck/trash/five_tires,
-/turf/open/floor/f13/wood,
+/obj/machinery/hydroponics/soil,
+/obj/machinery/light,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "uUG" = (
 /obj/structure/bed/wooden,
@@ -69465,7 +69478,7 @@
 /area/f13/wasteland)
 "xNv" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/wreck/trash/two_barrels,
+/obj/structure/wreck/trash/five_tires,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xNw" = (
@@ -106142,7 +106155,7 @@ mvv
 mvv
 mvv
 hxO
-mvv
+aBf
 sDj
 jAZ
 gts
@@ -106402,8 +106415,8 @@ mvv
 qEU
 mvv
 mvv
-nWi
-xNv
+acn
+iXW
 iXW
 fhi
 iXW
@@ -106660,7 +106673,7 @@ mvv
 mvv
 bGM
 nWi
-uUx
+iXW
 wjt
 fwH
 iXW
@@ -106917,7 +106930,7 @@ mfD
 xGH
 mvv
 gts
-iXW
+xNv
 wjt
 kSP
 iXW
@@ -107431,7 +107444,7 @@ nyl
 tBN
 mvv
 gts
-kbN
+dix
 bCq
 hFP
 iXW
@@ -108192,13 +108205,13 @@ sYX
 tBN
 mvv
 bpD
-nyl
+rdy
 obf
 iXW
 pfa
 iXW
-ydf
-msz
+uUx
+rdy
 tBN
 mvv
 bpD
