@@ -523,8 +523,7 @@
 						"totallyinnocent",
 						"cythisia",
 						"honto335",
-						"lunaticluna",
-						"neilzthegamer")
+						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -654,8 +653,7 @@
 						"landoorando",
 						"honto335",
 						"luke313",
-						"lunaticluna",
-						"neilzthegamer")
+						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
@@ -679,7 +677,7 @@
 	path = /obj/item/clothing/accessory/ncr/SGT
 	ckeywhitelist = list("muhsollini",
 						"weaselburg")
-	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer")
+	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer", "NCR Heavy Trooper", "NCR Military Police")
 
 /datum/gear/donator/zirilliuniform
 	name = "Major Zirilli's service uniform"
