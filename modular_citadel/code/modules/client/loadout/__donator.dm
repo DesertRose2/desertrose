@@ -430,11 +430,16 @@
 	name = "Caroline Nikos' belongings"
 	path = /obj/item/storage/box/large/custom_kit/nikos
 	ckeywhitelist = list("panzer1944")
-	
+
 /datum/gear/donator/kits/rhinterland
 	name = "Rachel Hinterland's belongings"
 	path = /obj/item/storage/box/large/custom_kit/rhinterland
 	ckeywhitelist = list("yecrowbarman")
+
+/datum/gear/donator/kits/nataliamorgan
+	name = "Natalia Morgan's belongings"
+	path = /obj/item/storage/box/large/custom_kit/nataliamorgan
+	ckeywhitelist = list("panzer1944")
 
 //////////////////////////////
 ///Ranger items start here.///
