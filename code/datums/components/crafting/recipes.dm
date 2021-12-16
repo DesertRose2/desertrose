@@ -25,28 +25,3 @@
 /datum/crafting_recipe/proc/check_requirements(mob/user, list/collected_requirements)
 	return TRUE
 
-/datum/crafting_recipe/shutters
-	name = "Shutters"
-	reqs = list(/obj/item/stack/sheet/plasteel = 10,
-				/obj/item/stack/cable_coil = 10,
-				/obj/item/electronics/airlock = 1
-				)
-	result = /obj/machinery/door/poddoor/shutters/old/preopen
-	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
-	time = 15 SECONDS
-	subcategory = CAT_FURNITURE
-	category = CAT_MISC
-	one_per_turf = TRUE
-
-/datum/crafting_recipe/blast_doors
-	name = "Blast Door"
-	reqs = list(/obj/item/stack/sheet/plasteel = 15,
-				/obj/item/stack/cable_coil = 15,
-				/obj/item/electronics/airlock = 1
-				)
-	result = /obj/machinery/door/poddoor/preopen
-	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
-	time = 30 SECONDS
-	subcategory = CAT_FURNITURE
-	category = CAT_MISC
-	one_per_turf = TRUE
