@@ -5,32 +5,45 @@
 	icon = 'icons/obj/doors/shutters.dmi'
 	layer = SHUTTER_LAYER
 	closingLayer = SHUTTER_LAYER
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 75, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
-	damage_deflection = 20
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 75, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
+	damage_deflection = 25
+	ranged_deflection = 20
 	max_integrity = 400
+	recipe_type = /datum/crafting_recipe/shutters
+
 
 /obj/machinery/door/poddoor/shutters/preopen
 	icon_state = "open"
 	density = FALSE
 	opacity = 0
 
+
+/*
 // The below shutters are the original ones from the TG codebase. They are remaining as "secure" shutters. If anyone wants to improve their animation, feel free.
 // The original shutters are now shutters_old.dmi; copy the naming format of the files into new a new .dmi to add new shutters that work with the poddoor code for animating the doors.
 // Originally, the shutters were reskins of blast doors. Eighty hits with the Cap's sabre to destroy one shutter is far too powerful considering shutters cannot be deconstructed (yet).
 // If you're a mapper and want super strong shutter, use the 'old' ones.
+*/
+
+// Desert Rose Edit: Shutters created via the crafting menu creates the new ('old') shutter.
+// This is an improvement on the old shutter sprite (credit to TG),
+// but isn't a dilapidated shutter like the pre-existing ones and is tough enough to justify the 10 plasteel cost.
 
 /obj/machinery/door/poddoor/shutters/old
 	name = "strong shutters"
 	desc = "These shutters have an armoured frame; it looks like plasteel. These shutters look robust enough to survive explosions."
 	icon = 'icons/obj/doors/shutters_old.dmi'
 	icon_state = "closed"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 75, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
-	max_integrity = 300
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 75, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
+	damage_deflection = 35
+	ranged_deflection = 30
 
 /obj/machinery/door/poddoor/shutters/old/preopen
 	icon_state = "open"
 	density = FALSE
 	opacity = 0
+
+// End of DR edits.
 
 // End of old shutter stuff. Credit for the old shutter sprites to TG.
 

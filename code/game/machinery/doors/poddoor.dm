@@ -1,3 +1,8 @@
+//blast door (de)construction states
+#define BLASTDOOR_NEEDS_WIRES 0
+#define BLASTDOOR_NEEDS_ELECTRONICS 1
+#define BLASTDOOR_FINISHED 2
+
 /obj/machinery/door/poddoor
 	name = "blast door"
 	desc = "A heavy duty blast door that opens mechanically."
@@ -14,12 +19,15 @@
 	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
 	resistance_flags = FIRE_PROOF
 	damage_deflection = 70
-	poddoor = TRUE
+	ranged_deflection = 40
+	var/datum/crafting_recipe/recipe_type = /datum/crafting_recipe/blast_doors
+	var/deconstruction = BLASTDOOR_FINISHED // deconstruction step
 	var/ertblast = FALSE //If this is true the blast door cannot be deconstructed
-	var/deconstruction = INTACT //For the deconstruction steps
+
 
 /obj/machinery/door/poddoor/attackby(obj/item/W, mob/user, params)
 	. = ..()
+
 	if(ertblast && W.tool_behaviour == TOOL_SCREWDRIVER) // This makes it so ERT members cannot cheese by opening their blast doors.
 		to_chat(user, "<span class='warning'>This shutter has a different kind of screw, you cannot unscrew the panel open.</span>")
 		return
@@ -33,35 +41,48 @@
 			return TRUE
 
 	if(panel_open)
-		if(W.tool_behaviour == TOOL_MULTITOOL)
+		if(W.tool_behaviour == TOOL_MULTITOOL && deconstruction == BLASTDOOR_FINISHED)
 			var/change_id = input("Set the shutters/blast door/blast door controllers ID. It must be a number between 1 and 100.", "ID", id) as num|null
 			if(change_id)
 				id = clamp(round(change_id, 1), 1, 100)
 				to_chat(user, "<span class='notice'>You change the ID to [id].</span>")
 
-		if(W.tool_behaviour == TOOL_CROWBAR && deconstruction == INTACT)
+		else if(W.tool_behaviour == TOOL_CROWBAR && deconstruction == BLASTDOOR_FINISHED)
 			to_chat(user, "<span class='notice'>You start to remove the airlock electronics.</span>")
-			if(do_after(user, 10 SECONDS, target = src))
+			if(W.use_tool(src, user, 100, volume=50))
 				new /obj/item/electronics/airlock(loc)
 				id = null
-				deconstruction = FALSE
+				deconstruction = BLASTDOOR_NEEDS_ELECTRONICS
 
-		if(W.tool_behaviour == TOOL_WIRECUTTER && deconstruction == FALSE)
+		else if(W.tool_behaviour == TOOL_WIRECUTTER && deconstruction == BLASTDOOR_NEEDS_ELECTRONICS)
 			to_chat(user, "<span class='notice'>You start to remove the internal cables.</span>")
-			if(do_after(user, 10 SECONDS, target = src))
-				deconstruction = TRUE
+			if(W.use_tool(src, user, 100, volume=50))
+				var/datum/crafting_recipe/recipe = locate(recipe_type) in GLOB.crafting_recipes
+				var/amount = recipe.reqs[/obj/item/stack/cable_coil]
+				new /obj/item/stack/cable_coil(loc, amount)
+				deconstruction = BLASTDOOR_NEEDS_WIRES
 
-		if(W.tool_behaviour == TOOL_WELDER && deconstruction == TRUE)
+		else if(W.tool_behaviour == TOOL_WELDER && deconstruction == BLASTDOOR_NEEDS_WIRES)
+			if(!W.tool_start_check(user, amount=0))
+				return
+
 			to_chat(user, "<span class='notice'>You start tearing apart the [src].</span>")
 			playsound(src.loc, 'sound/items/welder.ogg', 50, 1)
-			if(do_after(user, 15 SECONDS, target = src))
-				new /obj/item/stack/sheet/plasteel(loc, 5)
+			if(W.use_tool(src, user, 100, volume=50))
+				var/datum/crafting_recipe/recipe = locate(recipe_type) in GLOB.crafting_recipes
+				var/amount = recipe.reqs[/obj/item/stack/sheet/plasteel]
+				new /obj/item/stack/sheet/plasteel(loc, amount)
 				qdel(src)
 
 /obj/machinery/door/poddoor/examine(mob/user)
 	. = ..()
 	if(panel_open)
-		. += "<span class='<span class='notice'>The maintenance panel is [panel_open ? "opened" : "closed"].</span>"
+		if(deconstruction == BLASTDOOR_FINISHED)
+			. += "<span class='notice'>The maintenance panel is opened and the electronics could be <b>pried</b> out.</span>"
+		else if(deconstruction == BLASTDOOR_NEEDS_ELECTRONICS)
+			. += "<span class='notice'>The <i>electronics</i> are missing and there are some <b>wires</b> sticking out.</span>"
+		else if(deconstruction == BLASTDOOR_NEEDS_WIRES)
+			. += "<span class='notice'>The <i>wires</i> have been removed and it's ready to be <b>sliced apart</b>.</span>"
 
 /obj/machinery/door/poddoor/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock, idnum, override=FALSE)
 	id = "[idnum][id]"

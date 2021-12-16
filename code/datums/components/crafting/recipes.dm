@@ -31,7 +31,7 @@
 				/obj/item/stack/cable_coil = 10,
 				/obj/item/electronics/airlock = 1
 				)
-	result = /obj/machinery/door/poddoor/shutters/preopen
+	result = /obj/machinery/door/poddoor/shutters/old/preopen
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
 	time = 15 SECONDS
 	subcategory = CAT_FURNITURE
