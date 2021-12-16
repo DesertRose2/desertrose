@@ -465,3 +465,7 @@
 //Rachel Hinterland - yecrowbarman
 /obj/item/storage/box/large/custom_kit/rhinterland/PopulateContents()
 	new /obj/item/clothing/under/f13/vault13(src)
+
+//Natalia Morgan - panzer1944
+/obj/item/storage/box/large/custom_kit/nataliamorgan/PopulateContents()
+	new /obj/item/clothing/under/f13/legskirt/tac
