@@ -290,11 +290,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"ayp" = (
-/obj/effect/decal/cleanable/cobweb,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "ayq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/cell_charger,
@@ -7474,10 +7469,6 @@
 /obj/structure/reagent_dispensers/barrel/three,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
-"lzR" = (
-/obj/effect/mob_spawn/human/corpse/raidermelee,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "lAq" = (
 /obj/structure/window/reinforced/spawner,
 /obj/item/stack/sheet/mineral/uranium{
@@ -7579,10 +7570,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
-/area/f13/bunker)
-"lNS" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "lOa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7804,7 +7791,6 @@
 /obj/structure/chair/wood/fancy{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
@@ -11316,11 +11302,6 @@
 /obj/structure/chair,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
-"rqo" = (
-/obj/structure/chair/wood,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/f13/wood,
-/area/f13/bunker)
 "rqq" = (
 /obj/machinery/door/firedoor,
 /obj/structure/spacevine{
@@ -12422,11 +12403,6 @@
 	dir = 4
 	},
 /area/f13/bunker)
-"sYg" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "sYA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/five_tires,
@@ -13248,7 +13224,6 @@
 /area/f13/bunker)
 "uwS" = (
 /obj/structure/kitchenspike,
-/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor5-old"
 	},
@@ -13330,13 +13305,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
-/area/f13/bunker)
-"uBq" = (
-/obj/effect/mob_spawn/human/corpse/raidermelee,
-/obj/effect/decal/cleanable/blood/old{
-	pixel_x = 12
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "uCu" = (
 /obj/structure/spacevine{
@@ -13992,7 +13960,6 @@
 /area/f13/bunker)
 "vEH" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
-/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -14407,10 +14374,6 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/bunker)
-"wlK" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "wlR" = (
 /obj/effect/turf_decal/stripes/line,
@@ -67473,7 +67436,7 @@ heT
 aUx
 nmg
 ocx
-wlK
+wbX
 xXn
 xXn
 xXn
@@ -69026,7 +68989,7 @@ xXn
 wbX
 wbX
 erp
-uBq
+htB
 den
 kRy
 tfI
@@ -69284,7 +69247,7 @@ wbX
 wbX
 lQa
 den
-lzR
+wbX
 iiY
 tfI
 iGq
@@ -71082,7 +71045,7 @@ wbX
 mZe
 ifu
 sST
-rqo
+shQ
 haD
 crj
 aUx
@@ -73922,7 +73885,7 @@ aUx
 aUx
 aUx
 aUx
-ayp
+xos
 wbX
 xXn
 wbX
@@ -74917,7 +74880,7 @@ nBH
 lgr
 aWe
 pnZ
-wlK
+wbX
 nbb
 aWe
 wbX
@@ -80155,7 +80118,7 @@ yeh
 okW
 okW
 okW
-sYg
+wfx
 bsh
 heT
 "}
@@ -80912,7 +80875,7 @@ soK
 soK
 bsh
 tzI
-lNS
+okW
 tzI
 bsh
 bsh
