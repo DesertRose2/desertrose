@@ -71,9 +71,68 @@ jobs:
           tgui/bin/tgui --build
           bash tools/ci/dm.sh -DCIBUILDING -DCITESTING -DALL_MAPS tgstation.dme
 
+  auxmos:
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    name: Build Auxmos
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: 'Putnam3145/auxmos'
+          ref: 'fe6be06610fe366d01edf5b66e6ee602323050cf'
+          path: 'auxmos'
+
+      - name: Cache cargo registry
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo/registry
+          key: auxmos-registry-${{ hashFiles('auxmos/Cargo.lock') }}
+
+      - name: Cache cargo index
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo/git
+          key: auxmos-index-${{ hashFiles('auxmos/Cargo.lock') }}
+
+      - name: Cache cargo build
+        id: auxmos-cache
+        uses: actions/cache@v2
+        with:
+          path: auxmos/target
+          key: auxmos-build-target-${{ hashFiles('auxmos/Cargo.lock') }}
+
+      - name: Install Ubuntu Deps
+        if: steps.auxmos-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386
+
+      - uses: actions-rs/toolchain@v1
+        if: steps.auxmos-cache.outputs.cache-hit != 'true'
+        with:
+          profile: minimal
+          toolchain: ${{env.toolchain}}
+          target: ${{env.target}}
+          override: true
+
+      - name: Build
+        if: steps.auxmos-cache.outputs.cache-hit != 'true'
+        run: |
+          cargo rustc --manifest-path auxmos/Cargo.toml --target=${{env.target}} --release --verbose --features "all_reaction_hooks auxcleanup_gas_deletion katmos"
+          ldd auxmos/target/${{env.target}}/release/libauxmos.so
+      
+      - name: Upload libauxmos artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: libauxmos
+          path: auxmos/target/${{env.target}}/release/libauxmos.so
+
   run_all_tests:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     name: Integration Tests
+    needs: [auxmos]
     runs-on: ubuntu-20.04
     services:
       mysql:
@@ -113,6 +172,11 @@ jobs:
           sudo apt install zlib1g:i386
           sudo apt install libssl1.1:i386
           bash tools/ci/install_rust_g.sh
+
+      - name: Download libauxmos library
+        uses: actions/download-artifact@v2
+        with:
+          name: libauxmos
 
       - name: Compile and run tests
         run: |
