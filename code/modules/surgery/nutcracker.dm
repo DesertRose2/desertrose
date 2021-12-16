@@ -62,7 +62,7 @@
 	var/obj/item/bodypart/target_limb = user.get_bodypart("head")
 	if(target_limb) //I mean like... for example lings can be still alive without heads.
 		user.visible_message("<span class='suicide'>[user] is crushing [user.p_their()] own head with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
-		if(do_after(user, 30))
+		if(do_after(user, 30, user))
 			gib_head(user)
 	else
 		return
