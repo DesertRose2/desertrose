@@ -51,7 +51,6 @@
 	layer = 4
 	},
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/water,
@@ -74,8 +73,7 @@
 /area/f13/sewer)
 "abC" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -206,8 +204,7 @@
 /area/f13/bunker)
 "abZ" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
@@ -762,8 +759,7 @@
 /area/f13/legion)
 "aex" = (
 /obj/structure/chair/f13foldupchair{
-	dir = 4;
-	icon_state = "f13foldupchair"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless/floorgrime,
@@ -852,8 +848,7 @@
 /obj/effect/decal/fakelattice,
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
-	dir = 1;
-	icon_state = "soda_dispenser"
+	dir = 1
 	},
 /obj/structure/lattice/catwalk{
 	layer = 4
@@ -1360,8 +1355,7 @@
 	color = "#363636"
 	},
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
@@ -2124,12 +2118,10 @@
 /area/f13/ncr)
 "aiW" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
@@ -2145,8 +2137,7 @@
 	req_access = 125
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
@@ -2192,20 +2183,17 @@
 /area/f13/ncr)
 "ajf" = (
 /obj/structure/fence/corner{
-	dir = 8;
-	icon_state = "corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
 "ajg" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/inside/dirt,
@@ -2341,12 +2329,10 @@
 /area/f13/underground/mountain)
 "akf" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -2372,8 +2358,7 @@
 "akk" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -2620,13 +2605,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/bunker)
-"aoI" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
-	},
-/turf/open/floor/plating/dirt,
-/area/f13/wasteland)
 "aoO" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/barricade/bars,
@@ -2773,12 +2751,10 @@
 /area/f13/wasteland)
 "atD" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -2786,12 +2762,10 @@
 /area/f13/wasteland)
 "atE" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/snowed/temperatre,
 /area/f13/wasteland)
@@ -2831,12 +2805,10 @@
 /area/f13/wasteland)
 "atL" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
@@ -2844,12 +2816,10 @@
 /area/f13/wasteland)
 "atM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
@@ -2857,12 +2827,10 @@
 /area/f13/wasteland)
 "atN" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -2944,8 +2912,7 @@
 /area/f13/sewer)
 "avu" = (
 /obj/structure/chair/stool/retro/backed{
-	dir = 1;
-	icon_state = "nv_backed"
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -3205,8 +3172,7 @@
 /area/f13/ncr)
 "awK" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
@@ -3457,8 +3423,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -3490,8 +3455,7 @@
 "ayb" = (
 /obj/machinery/smoke_machine,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
@@ -3601,15 +3565,13 @@
 /area/f13/ncr)
 "ayw" = (
 /obj/structure/chair/comfy/brown{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/stage_l,
 /area/f13/ncr)
 "ayx" = (
 /obj/structure/chair/comfy/brown{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/ncr)
@@ -3646,8 +3608,7 @@
 /area/f13/bunker)
 "ayJ" = (
 /obj/structure/chair/comfy/brown{
-	dir = 1;
-	icon_state = "comfychair"
+	dir = 1
 	},
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
@@ -3746,8 +3707,7 @@
 /area/f13/legion)
 "azh" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -3836,10 +3796,6 @@
 	icon_state = "goo10"
 	},
 /turf/open/floor/plating/rust,
-/area/f13/radiation)
-"azw" = (
-/obj/effect/meteor/irradiated,
-/turf/open/floor/plating/dirt/dark,
 /area/f13/radiation)
 "azx" = (
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -4416,8 +4372,7 @@
 /area/f13/sewer)
 "aBw" = (
 /obj/structure/fluff/rails{
-	dir = 4;
-	icon_state = "rails"
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -4992,8 +4947,7 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	dir = 1;
-	icon_state = "warningline"
+	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -5004,8 +4958,7 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	dir = 1;
-	icon_state = "warningline"
+	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -5127,8 +5080,7 @@
 /area/f13/building)
 "aEn" = (
 /obj/structure/fluff/rails{
-	dir = 4;
-	icon_state = "rails"
+	dir = 4
 	},
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
@@ -5214,8 +5166,7 @@
 /area/f13/klamat)
 "aED" = (
 /obj/structure/fluff/rails{
-	dir = 4;
-	icon_state = "rails"
+	dir = 4
 	},
 /obj/docking_port/stationary{
 	area_type = /area/f13/wasteland;
@@ -5407,8 +5358,7 @@
 /area/f13/wasteland)
 "aFo" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/den)
@@ -5493,16 +5443,14 @@
 "aFI" = (
 /obj/structure/wreck/trash/machinepile,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "aFJ" = (
 /obj/structure/wreck/trash/two_tire,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
@@ -5553,8 +5501,7 @@
 /area/f13/wasteland)
 "aFV" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -5563,8 +5510,7 @@
 /area/f13/wasteland)
 "aFW" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
@@ -5601,8 +5547,7 @@
 "aGd" = (
 /obj/effect/mob_spawn/human/corpse/charredskeleton,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
@@ -5706,8 +5651,7 @@
 "aGC" = (
 /obj/effect/mob_spawn/human/corpse/charredskeleton,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2left"
@@ -5733,7 +5677,6 @@
 /area/f13/bunker)
 "aGI" = (
 /obj/structure/chair/stool{
-	dir = 2;
 	icon_state = "bench"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -5970,8 +5913,7 @@
 /area/f13/wasteland)
 "aHI" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -5986,19 +5928,16 @@
 /area/f13/wasteland)
 "aHK" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "aHM" = (
 /obj/structure/chair/stool{
-	dir = 2;
 	icon_state = "bench"
 	},
 /obj/machinery/light/small{
@@ -6106,7 +6045,6 @@
 /area/f13/city)
 "aIu" = (
 /obj/structure/chair/stool{
-	dir = 2;
 	icon_state = "bench"
 	},
 /turf/open/floor/f13{
@@ -6139,8 +6077,7 @@
 "aIB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/carpet/red,
 /area/f13/bunker)
@@ -6278,10 +6215,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/city)
-"aJa" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "aJc" = (
 /mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/floor/f13,
@@ -6306,8 +6239,7 @@
 /area/f13/building)
 "aJn" = (
 /obj/structure/chair/comfy{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -6329,8 +6261,7 @@
 /area/f13/building)
 "aJq" = (
 /obj/structure/chair/comfy{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -6604,7 +6535,6 @@
 "aKk" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -6700,8 +6630,7 @@
 /area/f13/followers)
 "aKx" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/decoration/vent,
 /obj/effect/decal/cleanable/dirt{
@@ -6834,8 +6763,7 @@
 /area/f13/ncr)
 "aKS" = (
 /obj/structure/chair/f13chair2{
-	dir = 8;
-	icon_state = "f13chair2"
+	dir = 8
 	},
 /obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -6864,8 +6792,7 @@
 /area/f13/klamat)
 "aLe" = (
 /obj/structure/chair/comfy/brown{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/blue,
@@ -6945,8 +6872,7 @@
 /area/f13/ncr)
 "aLH" = (
 /obj/structure/chair/f13chair2{
-	dir = 8;
-	icon_state = "f13chair2"
+	dir = 8
 	},
 /obj/machinery/light/small{
 	dir = 4
@@ -7039,8 +6965,7 @@
 /area/f13/ncr)
 "aMf" = (
 /obj/structure/chair/f13chair2{
-	dir = 8;
-	icon_state = "f13chair2"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft3"
@@ -7186,8 +7111,7 @@
 /area/f13/building)
 "aMF" = (
 /obj/structure/chair{
-	dir = 8;
-	icon_state = "chair"
+	dir = 8
 	},
 /obj/effect/decal/remains/human,
 /obj/machinery/light/small{
@@ -7201,8 +7125,7 @@
 /area/f13/building)
 "aMG" = (
 /obj/structure/chair{
-	dir = 8;
-	icon_state = "chair"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -7227,8 +7150,7 @@
 /area/f13/building)
 "aMJ" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -7451,8 +7373,7 @@
 /area/f13/building)
 "aNJ" = (
 /obj/structure/chair{
-	dir = 8;
-	icon_state = "chair"
+	dir = 8
 	},
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt{
@@ -7678,8 +7599,7 @@
 /area/f13/underground/mountain)
 "aOM" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -7702,8 +7622,7 @@
 /area/f13/building)
 "aOP" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /obj/effect/decal/cleanable/dirt{
@@ -7783,12 +7702,10 @@
 /area/f13/sewer)
 "aPc" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/item/flag/ncr,
 /obj/structure/flora/grass/brown,
@@ -7804,8 +7721,7 @@
 "aPf" = (
 /obj/structure/table,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/f13{
@@ -7969,8 +7885,7 @@
 /area/f13/ncr)
 "aPY" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
@@ -8132,8 +8047,7 @@
 /area/f13/ncr)
 "aQR" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
@@ -8265,9 +8179,7 @@
 "aRD" = (
 /obj/structure/toilet{
 	dir = 4;
-	icon_state = "toilet00";
-	pixel_x = -3;
-	pixel_y = 0
+	pixel_x = -3
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -8310,19 +8222,16 @@
 /area/f13/bunker)
 "aRP" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
 "aRQ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/indestructible/ground/outside/snow,
@@ -8361,8 +8270,7 @@
 "aSc" = (
 /obj/structure/flora/tree/pine,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -8415,8 +8323,7 @@
 /area/f13/building)
 "aSl" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/ghoul,
 /obj/effect/decal/cleanable/dirt{
@@ -8518,16 +8425,14 @@
 "aSB" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
 "aSC" = (
 /obj/structure/flora/rock/jungle,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/item/storage/trash_stack,
@@ -8680,8 +8585,7 @@
 "aTn" = (
 /obj/structure/flora/ausbushes/fernybush,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/dirt,
@@ -8704,8 +8608,7 @@
 /area/f13/wasteland)
 "aTt" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -8757,8 +8660,7 @@
 /area/f13/underground/mountain)
 "aTG" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -8777,8 +8679,7 @@
 /area/f13/building)
 "aTK" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -8787,8 +8688,7 @@
 /area/f13/ncr)
 "aTM" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -8907,8 +8807,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -9029,12 +8928,10 @@
 /area/f13/ncr)
 "aVu" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/indestructible/ground/outside/snow,
@@ -9277,8 +9174,7 @@
 /area/f13/bunker)
 "aWu" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -9408,8 +9304,7 @@
 /area/f13/wasteland)
 "aXr" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/plating/dirt,
@@ -9463,8 +9358,7 @@
 /area/f13/wasteland)
 "aXC" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -9531,8 +9425,7 @@
 /obj/structure/rack,
 /obj/item/stock_parts/cell,
 /obj/item/stock_parts/cell{
-	icon_state = "hpcell";
-	pixel_y = 0
+	icon_state = "hpcell"
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
@@ -9541,8 +9434,7 @@
 /area/f13/building)
 "aXZ" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -9637,18 +9529,10 @@
 /area/f13/building)
 "aYq" = (
 /obj/structure/rack,
-/obj/item/pen{
-	pixel_y = 0
-	},
-/obj/item/pen{
-	pixel_y = 0
-	},
-/obj/item/pen{
-	pixel_y = 0
-	},
-/obj/item/pen{
-	pixel_y = 0
-	},
+/obj/item/pen,
+/obj/item/pen,
+/obj/item/pen,
+/obj/item/pen,
 /obj/item/stack/cable_coil,
 /obj/item/reagent_containers/food/condiment/soymilk,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9658,8 +9542,7 @@
 /area/f13/building)
 "aYs" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -9691,9 +9574,7 @@
 /obj/item/paper_bin{
 	pixel_y = 1
 	},
-/obj/item/pen{
-	pixel_y = 0
-	},
+/obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -9763,8 +9644,7 @@
 /area/f13/ncr)
 "aYL" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -9823,8 +9703,7 @@
 /area/f13/casino)
 "aYZ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/machinery/light/small{
@@ -9932,13 +9811,6 @@
 /obj/machinery/smartfridge/bottlerack,
 /turf/open/floor/wood,
 /area/f13/building)
-"aZs" = (
-/obj/machinery/light/lampost,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 2;
-	icon_state = "outerturn"
-	},
-/area/f13/wasteland)
 "aZt" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "transition1"
@@ -10038,8 +9910,7 @@
 /area/f13/casino)
 "aZN" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
+	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
 /obj/item/phone,
@@ -10048,8 +9919,7 @@
 /area/f13/casino)
 "aZO" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
+	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
 /obj/machinery/computer/terminal{
@@ -10061,8 +9931,7 @@
 /area/f13/casino)
 "aZP" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
+	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
 /obj/item/folder/blue,
@@ -10071,8 +9940,7 @@
 /area/f13/casino)
 "aZQ" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
+	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
 /obj/item/card/id/away/hotel,
@@ -10081,8 +9949,7 @@
 /area/f13/casino)
 "aZR" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
+	dir = 1
 	},
 /obj/structure/table/reinforced/brass,
 /obj/item/storage/box/fountainpens,
@@ -10174,8 +10041,7 @@
 /area/f13/casino)
 "bah" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
@@ -10194,8 +10060,7 @@
 /area/f13/bunker)
 "bak" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
@@ -10236,8 +10101,7 @@
 /area/f13/bunker)
 "bat" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -10349,7 +10213,6 @@
 /area/f13/building)
 "baO" = (
 /obj/structure/decoration/clock{
-	pixel_x = 0;
 	pixel_y = 21
 	},
 /turf/open/floor/f13/wood{
@@ -10500,8 +10363,7 @@
 /area/f13/building)
 "bbs" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/clothing/under/pants/f13/ghoul,
@@ -10573,9 +10435,7 @@
 "bbE" = (
 /obj/item/ammo_casing/caseless{
 	dir = 10;
-	icon_state = "sS-casing";
-	pixel_x = 0;
-	pixel_y = 0
+	icon_state = "sS-casing"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -10738,8 +10598,7 @@
 /area/f13/city)
 "bcj" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -10785,8 +10644,7 @@
 /area/f13/bunker)
 "bcz" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -10796,8 +10654,7 @@
 /area/f13/bunker)
 "bcB" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/fence,
 /turf/open/floor/plating/tunnel,
@@ -10877,8 +10734,7 @@
 /area/f13/bunker)
 "bcR" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -11091,7 +10947,6 @@
 /area/f13/caves)
 "bdE" = (
 /obj/structure/bed/mattress/pregame,
-/obj/effect/mob_spawn/human/corpse/raidermelee,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "bdF" = (
@@ -11327,8 +11182,7 @@
 /area/f13/underground/mountain)
 "bez" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
@@ -11762,8 +11616,7 @@
 /area/f13/followers)
 "bfS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -12282,8 +12135,7 @@
 /area/f13/building)
 "bhF" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13{
@@ -12330,8 +12182,7 @@
 /area/f13/building)
 "bhM" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -12350,10 +12201,7 @@
 /area/f13/building)
 "bhO" = (
 /obj/structure/toilet{
-	dir = 4;
-	icon_state = "toilet00";
-	pixel_x = 0;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -12377,12 +12225,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"bhT" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/building)
 "bhU" = (
 /obj/structure/bed,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -12395,15 +12237,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
-	},
-/area/f13/building)
-"bhV" = (
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
 "bhW" = (
@@ -12437,10 +12270,7 @@
 /area/f13/building)
 "bib" = (
 /obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	pixel_x = 0;
-	pixel_y = 0
+	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
@@ -12449,8 +12279,7 @@
 /area/f13/building)
 "bic" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
@@ -12464,7 +12293,6 @@
 "bie" = (
 /obj/structure/sink{
 	dir = 1;
-	icon_state = "sink";
 	pixel_y = 25
 	},
 /turf/open/floor/f13/wood,
@@ -12522,8 +12350,7 @@
 /area/f13/building)
 "bil" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/outside/snow,
@@ -12657,8 +12484,7 @@
 /area/f13/building)
 "biG" = (
 /obj/structure/chair/comfy{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -12721,10 +12547,7 @@
 /area/f13/building)
 "biQ" = (
 /obj/structure/toilet{
-	dir = 4;
-	icon_state = "toilet00";
-	pixel_x = 0;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/machinery/light/small,
 /obj/item/storage/fancy/heart_box,
@@ -12892,12 +12715,10 @@
 /area/f13/building)
 "bjo" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -13079,8 +12900,7 @@
 /area/f13/building)
 "bjR" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -13243,8 +13063,7 @@
 /area/f13/building)
 "bkq" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -13285,9 +13104,7 @@
 "bkw" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
@@ -13344,8 +13161,7 @@
 /area/f13/tunnel)
 "bkK" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -13418,8 +13234,7 @@
 /area/f13/wasteland)
 "bkZ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -13452,8 +13267,7 @@
 /area/f13/tunnel)
 "blg" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/den)
@@ -13487,15 +13301,13 @@
 /area/f13/legion)
 "bll" = (
 /obj/structure/fence{
-	dir = 4;
-	icon_state = "straight"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "blo" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -13747,9 +13559,7 @@
 "bmB" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/structure/mirror{
 	pixel_x = 32
@@ -13779,8 +13589,7 @@
 /area/f13/bunker)
 "bmH" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -13828,8 +13637,7 @@
 /area/f13/legion)
 "bmT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
@@ -13906,8 +13714,7 @@
 /area/f13/building)
 "bnj" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2"
@@ -13938,8 +13745,7 @@
 	icon_state = "remains"
 	},
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -14014,8 +13820,7 @@
 /area/f13/wasteland)
 "bnB" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "crosswalkvert2"
@@ -14023,8 +13828,7 @@
 /area/f13/wasteland)
 "bnC" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "crosswalkvert2"
@@ -14109,8 +13913,7 @@
 /area/f13/building)
 "bnL" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -14147,9 +13950,7 @@
 "bnQ" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/structure/mirror{
 	pixel_y = 32
@@ -14183,8 +13984,7 @@
 /area/f13/building)
 "boa" = (
 /obj/structure/chair{
-	dir = 1;
-	icon_state = "chair"
+	dir = 1
 	},
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -14199,7 +13999,6 @@
 /area/f13/building)
 "boc" = (
 /obj/structure/chair/stool{
-	dir = 2;
 	icon_state = "bench"
 	},
 /turf/open/floor/f13{
@@ -14246,7 +14045,6 @@
 "bok" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12
 	},
 /turf/open/floor/f13{
@@ -14325,8 +14123,7 @@
 "bov" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -14372,8 +14169,7 @@
 /area/f13/building)
 "boJ" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -14412,8 +14208,7 @@
 /area/f13/building)
 "boS" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -14455,8 +14250,7 @@
 /area/f13/building)
 "bpc" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -14497,8 +14291,7 @@
 "bpr" = (
 /obj/machinery/microwave/stove,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -14534,8 +14327,7 @@
 /area/f13/tunnel)
 "bpK" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -14600,8 +14392,7 @@
 /area/f13/city)
 "bqc" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -14642,8 +14433,7 @@
 /area/f13/radiation)
 "bqr" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -14817,15 +14607,10 @@
 "brc" = (
 /obj/item/storage/trash_stack,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
-"brd" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "bre" = (
 /obj/structure/chair/wood/worn{
 	dir = 4
@@ -15199,12 +14984,10 @@
 /area/f13/bunker)
 "btj" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -15366,8 +15149,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -15609,8 +15391,7 @@
 /area/f13/building)
 "bxR" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/machinery/light/small,
 /turf/open/floor/plating/dirt,
@@ -15623,24 +15404,21 @@
 /area/f13/building)
 "bxT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bxU" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/structure/flora/tree/pine,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bxV" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/outside/snow,
@@ -15685,12 +15463,10 @@
 /area/f13/klamat)
 "byk" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -15715,23 +15491,19 @@
 /area/f13/underground/mountain)
 "byp" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
 "byq" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -15741,15 +15513,13 @@
 /area/f13/underground/mountain)
 "byu" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
 "byw" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -15762,34 +15532,28 @@
 /area/f13/underground/mountain)
 "byA" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
 "byB" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
 "byC" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/wasteland)
@@ -15804,8 +15568,7 @@
 /area/f13/klamat)
 "byF" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -15830,8 +15593,7 @@
 /area/f13/sewer)
 "byL" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "greenfull"
@@ -15877,15 +15639,13 @@
 /area/f13/legion)
 "byS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "byT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -15895,37 +15655,31 @@
 /area/f13/building)
 "byV" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "byW" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "byX" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "byZ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2bottom"
@@ -15933,8 +15687,7 @@
 /area/f13/wasteland)
 "bza" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2"
@@ -15942,8 +15695,7 @@
 /area/f13/wasteland)
 "bzb" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -15951,8 +15703,7 @@
 /area/f13/wasteland)
 "bzc" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2bottom"
@@ -15960,8 +15711,7 @@
 /area/f13/wasteland)
 "bzd" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -15969,15 +15719,13 @@
 /area/f13/wasteland)
 "bze" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "bzf" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15987,8 +15735,7 @@
 "bzg" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -15998,8 +15745,7 @@
 /area/f13/wasteland)
 "bzi" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -16022,19 +15768,16 @@
 /area/f13/building)
 "bzl" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bzm" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -16052,30 +15795,25 @@
 /area/f13/wasteland)
 "bzs" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bzt" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bzu" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright3"
@@ -16083,8 +15821,7 @@
 /area/f13/wasteland)
 "bzv" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -16105,8 +15842,7 @@
 /area/f13/wasteland)
 "bzy" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outerborder"
@@ -16114,8 +15850,7 @@
 /area/f13/wasteland)
 "bzz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright1"
@@ -16123,26 +15858,22 @@
 /area/f13/wasteland)
 "bzA" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/snowed/temperatre,
 /area/f13/wasteland)
 "bzB" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/snowed/temperatre,
 /area/f13/wasteland)
 "bzC" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2"
@@ -16150,12 +15881,10 @@
 /area/f13/wasteland)
 "bzE" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2bottom"
@@ -16191,8 +15920,7 @@
 /area/f13/klamat)
 "bzP" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -16201,8 +15929,7 @@
 /area/f13/wasteland)
 "bzT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -16259,15 +15986,13 @@
 /area/f13/sewer)
 "bAk" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/den)
 "bAl" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/den)
@@ -16438,8 +16163,7 @@
 /area/f13/legion)
 "bBf" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "greenfull"
@@ -16910,8 +16634,7 @@
 /area/f13/building)
 "bCv" = (
 /obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
+	dir = 4
 	},
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /obj/effect/decal/cleanable/dirt{
@@ -17034,14 +16757,6 @@
 	icon_state = "greenfull"
 	},
 /area/f13/sewer)
-"bDa" = (
-/obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/klamat)
 "bDe" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
@@ -17109,47 +16824,40 @@
 /area/f13/wasteland)
 "bDo" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "bDp" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "bDq" = (
 /obj/structure/flora/tree/pine,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bDr" = (
 /obj/structure/flora/tree/pine,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bDt" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -17163,23 +16871,19 @@
 /area/f13/klamat)
 "bDv" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bDx" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -17188,8 +16892,7 @@
 /area/f13/sewer)
 "bDz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/dirt,
@@ -17227,8 +16930,7 @@
 /area/f13/klamat)
 "bDG" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /mob/living/simple_animal/radstag,
 /turf/open/floor/plating/dirt,
@@ -17236,30 +16938,25 @@
 "bDH" = (
 /obj/structure/flora/tree/pine,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bDI" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bDK" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -17269,12 +16966,10 @@
 /area/f13/wasteland)
 "bDM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -17289,8 +16984,7 @@
 /area/f13/sewer)
 "bDP" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
@@ -17309,7 +17003,6 @@
 "bDT" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/water,
@@ -17584,8 +17277,7 @@
 /area/f13/followers)
 "bEC" = (
 /obj/structure/bodycontainer/morgue{
-	dir = 8;
-	icon_state = "morgue1"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -18385,8 +18077,7 @@
 /area/f13/den)
 "bRn" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /obj/effect/landmark/start/f13/raider,
 /turf/open/indestructible/ground/inside/subway,
@@ -18409,7 +18100,6 @@
 /area/f13/den)
 "bRr" = (
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/floor/f13{
@@ -18422,7 +18112,6 @@
 	layer = 1
 	},
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /obj/effect/landmark/start/f13/raider,
@@ -18432,7 +18121,6 @@
 /area/f13/den)
 "bRu" = (
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /obj/structure/table/wood,
@@ -18453,7 +18141,6 @@
 	layer = 1
 	},
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /obj/effect/landmark/start/f13/raider,
@@ -18485,8 +18172,7 @@
 /area/f13/den)
 "bRD" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/inside/subway,
@@ -18640,8 +18326,7 @@
 "bSk" = (
 /obj/structure/tires/five,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
@@ -19080,8 +18765,7 @@
 /area/f13/building)
 "bTY" = (
 /obj/structure/chair{
-	dir = 1;
-	icon_state = "chair"
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
@@ -19207,24 +18891,21 @@
 /area/f13/wasteland)
 "bUz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bUA" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "bUB" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
@@ -19316,8 +18997,7 @@
 /area/f13/radiation)
 "bUV" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
@@ -19451,8 +19131,7 @@
 /area/f13/sewer)
 "bVs" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -19478,8 +19157,7 @@
 /area/f13/sewer)
 "bVw" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/subway,
@@ -19834,7 +19512,6 @@
 "bWI" = (
 /obj/structure/sink{
 	dir = 1;
-	icon_state = "sink";
 	pixel_y = 16
 	},
 /turf/open/floor/plating/dirt/dark,
@@ -19903,8 +19580,7 @@
 /area/f13/caves)
 "bWU" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
@@ -19931,8 +19607,7 @@
 /area/f13/radiation)
 "bXg" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -19946,8 +19621,7 @@
 /area/f13/radiation)
 "bXi" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
@@ -20141,8 +19815,7 @@
 /area/f13/radiation)
 "bYc" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/f13/radiation)
@@ -20184,7 +19857,6 @@
 /area/f13/sewer)
 "bYi" = (
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/indestructible/ground/inside/subway,
@@ -20195,8 +19867,7 @@
 /area/f13/klamat)
 "bYl" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "greenfull"
@@ -20291,8 +19962,7 @@
 /area/f13/legion)
 "bYx" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
@@ -20373,8 +20043,7 @@
 /area/f13/den)
 "bYJ" = (
 /obj/structure/chair/comfy/brown{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
@@ -20435,8 +20104,7 @@
 /area/f13/den)
 "bYV" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
@@ -20504,15 +20172,13 @@
 /area/f13/den)
 "bZj" = (
 /obj/structure/chair/stool/retro/backed{
-	dir = 1;
-	icon_state = "nv_backed"
+	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bZk" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/structure/flora/tree/pine,
 /turf/open/indestructible/ground/outside/snow,
@@ -20564,8 +20230,7 @@
 /obj/structure/barricade/bars,
 /obj/structure/table,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
@@ -20592,8 +20257,7 @@
 /area/f13/den)
 "bZv" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
@@ -20616,16 +20280,14 @@
 "bZy" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bZz" = (
 /obj/item/rack_parts,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
@@ -20888,13 +20550,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/tunnel)
-"caq" = (
-/obj/structure/chair{
-	dir = 4;
-	icon_state = "chair"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
 "car" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -20909,8 +20564,7 @@
 "cat" = (
 /obj/structure/rack,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13{
@@ -20981,8 +20635,7 @@
 /area/f13/tunnel)
 "caE" = (
 /obj/structure/chair/office/light{
-	dir = 1;
-	icon_state = "officechair_white"
+	dir = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
@@ -21028,8 +20681,7 @@
 /area/f13/sewer)
 "caL" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/decoration/rag,
 /turf/open/indestructible/ground/inside/subway,
@@ -21042,8 +20694,7 @@
 /area/f13/tunnel)
 "caN" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
@@ -21269,8 +20920,7 @@
 "cby" = (
 /obj/structure/curtain{
 	color = "red";
-	pixel_x = -30;
-	pixel_y = 0
+	pixel_x = -30
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/tunnel)
@@ -21375,8 +21025,7 @@
 /area/f13/radiation)
 "cbR" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
@@ -21549,12 +21198,10 @@
 /area/f13/legion)
 "ccs" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/flora/tree/pine,
 /turf/open/indestructible/ground/outside/snow,
@@ -21577,8 +21224,7 @@
 /area/f13/ncr)
 "ccw" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
@@ -21611,8 +21257,7 @@
 /area/f13/legion)
 "ccB" = (
 /obj/structure/chair/comfy/brown{
-	dir = 1;
-	icon_state = "comfychair"
+	dir = 1
 	},
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
@@ -21717,8 +21362,7 @@
 /area/f13/legion)
 "ccR" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
@@ -21741,8 +21385,7 @@
 /area/f13/den)
 "ccV" = (
 /obj/structure/chair/stool/retro/backed{
-	dir = 1;
-	icon_state = "nv_backed"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -21905,12 +21548,10 @@
 /area/f13/sewer)
 "cdv" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -21936,7 +21577,6 @@
 /obj/effect/decal/waste,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/indestructible/ground/inside/subway,
@@ -22149,8 +21789,7 @@
 /area/f13/wasteland)
 "ceD" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
@@ -22159,8 +21798,7 @@
 /area/f13/wasteland)
 "ceE" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/dirt{
@@ -22284,16 +21922,14 @@
 /area/f13/tunnel)
 "cfh" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "cfj" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
@@ -22305,7 +21941,6 @@
 "cfl" = (
 /obj/structure/sink{
 	dir = 1;
-	icon_state = "sink";
 	pixel_y = 16
 	},
 /obj/structure/mirror{
@@ -22390,8 +22025,7 @@
 /area/f13/building)
 "cfy" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -22525,8 +22159,7 @@
 /area/f13/wasteland)
 "cfS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
@@ -22826,8 +22459,7 @@
 /area/f13/wasteland)
 "ciV" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/effect/landmark/start/f13/paladin,
 /turf/open/indestructible/ground/outside/road{
@@ -22907,12 +22539,10 @@
 /area/f13/building)
 "clo" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/brotherhood)
@@ -23212,8 +22842,7 @@
 /area/f13/ncr)
 "cuJ" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -23342,8 +22971,7 @@
 /area/f13/caves)
 "czs" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -24831,8 +24459,7 @@
 /area/f13/sewer)
 "dvw" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/structure/barricade/wooden/crude,
 /obj/structure/decoration/rag{
@@ -24844,8 +24471,7 @@
 /area/f13/radiation)
 "dvC" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/ghoul/soldier/armored,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -25432,8 +25058,7 @@
 /area/f13/ncr)
 "dJF" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -25559,8 +25184,7 @@
 	pixel_y = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/brotherhood)
@@ -25726,8 +25350,7 @@
 /area/f13/building)
 "dTu" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -26156,8 +25779,7 @@
 /area/f13/wasteland)
 "egT" = (
 /obj/structure/chair/comfy/brown{
-	dir = 1;
-	icon_state = "comfychair"
+	dir = 1
 	},
 /turf/open/floor/carpet,
 /area/f13/shack)
@@ -26304,8 +25926,7 @@
 /area/f13/shack)
 "emF" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -26592,8 +26213,7 @@
 /area/f13/tunnel)
 "etY" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -26859,12 +26479,10 @@
 	layer = 2.9
 	},
 /obj/machinery/computer/rdconsole/core/bos{
-	desc = "A console used by the scribes of the Brotherhood of Steel.";
 	dir = 8;
 	icon_keyboard = "terminal_key";
 	icon_screen = "terminal_on_alt";
-	icon_state = "terminal";
-	name = "Archive Terminal"
+	icon_state = "terminal"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
@@ -26999,8 +26617,7 @@
 /area/f13/building)
 "eCN" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/landmark/start/f13/seniorknight,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -27110,8 +26727,7 @@
 "eFP" = (
 /obj/machinery/chem_heater,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
@@ -27214,8 +26830,7 @@
 "eJD" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 8;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -27232,8 +26847,7 @@
 /area/f13/klamat)
 "eKF" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/landmark/start/f13/seniorknight,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -27420,8 +27034,7 @@
 /area/f13/building)
 "eSj" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -28194,8 +27807,7 @@
 /area/f13/sewer)
 "fsG" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -28246,16 +27858,14 @@
 /area/f13/legion)
 "fuc" = (
 /obj/structure/holohoop{
-	dir = 4;
-	icon_state = "hoop"
+	dir = 4
 	},
 /obj/item/toy/beach_ball/holoball,
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "fuw" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
@@ -28550,8 +28160,7 @@
 "fBP" = (
 /obj/item/storage/trash_stack,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -28681,8 +28290,7 @@
 /area/f13/building)
 "fHd" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
@@ -29029,8 +28637,7 @@
 	dir = 8
 	},
 /obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
@@ -29136,8 +28743,7 @@
 /area/f13/sewer)
 "fSp" = (
 /obj/structure/chair/f13foldupchair{
-	dir = 4;
-	icon_state = "f13foldupchair"
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 8;
@@ -29208,8 +28814,7 @@
 /area/f13/sewer)
 "fUC" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/ghoul/soldier,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -29270,8 +28875,7 @@
 /area/f13/shack)
 "fWy" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
@@ -29371,12 +28975,10 @@
 /area/f13/building)
 "fYX" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/effect/decal/waste,
 /turf/open/indestructible/ground/outside/ruins,
@@ -29462,8 +29064,7 @@
 /area/f13/klamat)
 "gbp" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/structure/simple_door/metal/fence,
 /turf/open/floor/plating/dirt,
@@ -29490,8 +29091,7 @@
 /area/f13/klamat)
 "gbF" = (
 /obj/structure/fence{
-	dir = 4;
-	icon_state = "straight"
+	dir = 4
 	},
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
@@ -29529,8 +29129,7 @@
 /area/f13/building)
 "gce" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
@@ -29577,8 +29176,7 @@
 /area/f13/building)
 "gds" = (
 /obj/structure/chair{
-	dir = 1;
-	icon_state = "chair"
+	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
@@ -29666,8 +29264,7 @@
 /area/f13/klamat)
 "gia" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -29716,8 +29313,7 @@
 /area/f13/sewer)
 "gjG" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/snowed,
 /obj/structure/barricade/wooden/crude/snow,
@@ -30210,8 +29806,7 @@
 /area/f13/sewer)
 "gzT" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -30274,12 +29869,10 @@
 /area/f13/sewer)
 "gBL" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/structure/decoration/ruins{
-	dir = 8;
-	icon_state = "overlap"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -30662,8 +30255,7 @@
 /area/f13/radiation)
 "gNk" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/wreck/car,
 /turf/open/floor/plating/dirt/dark,
@@ -31237,8 +30829,7 @@
 /area/f13/tunnel)
 "hiE" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/dirt{
@@ -31725,8 +31316,7 @@
 "hzE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/left{
-	dir = 4;
-	icon_state = "booth_leftend"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -31787,8 +31377,7 @@
 /area/f13/sewer)
 "hBf" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
@@ -31904,8 +31493,7 @@
 /area/f13/bunker)
 "hFN" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/light/fo13colored/Aqua{
@@ -31918,14 +31506,6 @@
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
-"hFW" = (
-/obj/effect/decal/fakelattice,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/plating/rust,
-/area/f13/building)
 "hGm" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -32191,8 +31771,7 @@
 /area/f13/radiation)
 "hOo" = (
 /obj/structure/chair/left{
-	dir = 4;
-	icon_state = "booth_leftend"
+	dir = 4
 	},
 /turf/open/floor/wood{
 	icon_state = "housewood3"
@@ -32388,8 +31967,7 @@
 /area/f13/building)
 "hYr" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/machinery/light/small,
@@ -32409,8 +31987,7 @@
 /area/f13/klamat)
 "hZh" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -32429,8 +32006,7 @@
 "hZA" = (
 /obj/machinery/light/small,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -32549,8 +32125,7 @@
 "idp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "bar"
@@ -32565,12 +32140,10 @@
 /area/f13/wasteland)
 "idS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -32839,8 +32412,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
@@ -33773,8 +33345,7 @@
 "iNz" = (
 /obj/structure/fence,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -33811,12 +33382,6 @@
 /obj/structure/billboard/cola,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
-"iOJ" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/f13{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/tunnel)
 "iPe" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor5-old"
@@ -33892,8 +33457,7 @@
 /area/f13/tunnel)
 "iRQ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/underground/mountain)
@@ -34157,8 +33721,7 @@
 /area/f13/building)
 "iYS" = (
 /obj/structure/chair/wood/modern{
-	dir = 8;
-	icon_state = "wooden_chair_new"
+	dir = 8
 	},
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged,
 /turf/open/indestructible/ground/inside/subway,
@@ -34489,8 +34052,7 @@
 "jia" = (
 /obj/structure/table/booth,
 /obj/machinery/chem_dispenser/drinks{
-	dir = 1;
-	icon_state = "soda_dispenser"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
@@ -34519,8 +34081,7 @@
 /area/f13/building)
 "jiv" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/statue/sandstone/gravestone,
 /turf/open/floor/plating/dirt,
@@ -34824,7 +34385,6 @@
 /area/f13/klamat)
 "jrA" = (
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /turf/open/water,
@@ -34873,8 +34433,7 @@
 /area/f13/building)
 "jvL" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/machinery/light/small,
 /turf/open/floor/plating/f13/outside/road{
@@ -35223,8 +34782,7 @@
 /area/f13/klamat)
 "jHq" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/outside/snow,
@@ -35590,12 +35148,10 @@
 /area/f13/tunnel)
 "jRX" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -36034,8 +35590,7 @@
 /area/f13/caves)
 "kiR" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/plating/dirt,
@@ -36544,12 +36099,10 @@
 	layer = 2.9
 	},
 /obj/machinery/computer/rdconsole/core/bos{
-	desc = "A console used by the scribes of the Brotherhood of Steel.";
 	dir = 4;
 	icon_keyboard = "terminal_key";
 	icon_screen = "terminal_on_alt";
-	icon_state = "terminal";
-	name = "Archive Terminal"
+	icon_state = "terminal"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
@@ -37115,8 +36668,7 @@
 /area/f13/klamat)
 "kOE" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop2left"
@@ -37192,16 +36744,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"kPV" = (
-/mob/living/simple_animal/hostile/handy/gutsy,
-/obj/structure/chair/f13foldupchair{
-	dir = 8;
-	icon_state = "f13foldupchair"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor{
-	icon_state = "floorrusty"
-	},
-/area/f13/bunker)
 "kQo" = (
 /obj/structure/simple_door/house{
 	req_one_access_txt = "134"
@@ -37385,12 +36927,10 @@
 /area/f13/klamat)
 "kWS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -37495,8 +37035,7 @@
 "kZq" = (
 /obj/structure/fence/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -37592,8 +37131,7 @@
 /area/f13/building)
 "lci" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -37704,8 +37242,7 @@
 /area/f13/wasteland)
 "lfc" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/machinery/light/small,
 /turf/open/floor/plating/dirt,
@@ -37990,8 +37527,7 @@
 "lnk" = (
 /obj/structure/curtain{
 	color = "red";
-	pixel_x = -30;
-	pixel_y = 0
+	pixel_x = -30
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -38026,8 +37562,7 @@
 /area/f13/bunker)
 "lnV" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -38313,8 +37848,7 @@
 "luB" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks{
-	dir = 1;
-	icon_state = "soda_dispenser"
+	dir = 1
 	},
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
@@ -38331,8 +37865,7 @@
 /area/f13/building)
 "lvn" = (
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 8;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -38364,8 +37897,7 @@
 /area/f13/klamat)
 "lvQ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -38399,8 +37931,7 @@
 "lwc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -38465,9 +37996,7 @@
 "lyb" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/structure/mirror{
 	pixel_x = 27
@@ -38581,20 +38110,17 @@
 /area/f13/building)
 "lBA" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/structure/flora/tree/pine,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "lBN" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -38755,8 +38281,7 @@
 /area/f13/ncr)
 "lJa" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/landmark/start/f13/initiate,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -39121,8 +38646,7 @@
 /obj/structure/fence,
 /obj/structure/fence/corner,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -39702,8 +39226,7 @@
 /area/f13/sewer)
 "mqF" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -39751,8 +39274,7 @@
 /area/f13/building)
 "msn" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outerturn"
@@ -40247,16 +39769,6 @@
 /obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"mFt" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "mFH" = (
 /obj/structure/table,
 /obj/item/stack/sheet/metal/fifty,
@@ -41042,8 +40554,7 @@
 /area/f13/sewer)
 "mZR" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -41304,8 +40815,7 @@
 /area/f13/wasteland)
 "nhc" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
@@ -41371,12 +40881,10 @@
 /area/f13/bunker)
 "njh" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -41511,8 +41019,7 @@
 /area/f13/sewer)
 "now" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -41725,12 +41232,10 @@
 /area/f13/bunker)
 "nvS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -41816,8 +41321,7 @@
 /area/f13/brotherhood)
 "nxY" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -41901,8 +41405,7 @@
 /area/f13/sewer)
 "nze" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -42019,16 +41522,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood)
-"nBB" = (
-/obj/structure/chair/comfy/brown{
-	buildstackamount = 0;
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/city)
 "nBI" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/pack/mustard,
@@ -42168,8 +41661,7 @@
 /area/f13/sewer)
 "nGb" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -42682,13 +42174,6 @@
 /mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/floor/plating/dirt/dark,
 /area/f13/tunnel)
-"oaG" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
-/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
-/area/f13/building)
 "oaI" = (
 /mob/living/simple_animal/hostile/raider/thief,
 /turf/open/floor/f13/wood,
@@ -43293,8 +42778,7 @@
 /area/f13/klamat)
 "otH" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 1;
@@ -43386,8 +42870,7 @@
 /area/f13/brotherhood)
 "oxO" = (
 /obj/structure/chair/middle{
-	dir = 4;
-	icon_state = "booth_middle"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -43431,8 +42914,7 @@
 /area/f13/wasteland)
 "oyy" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -43610,8 +43092,7 @@
 /area/f13/building)
 "oEX" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/machinery/light/small{
 	dir = 4
@@ -43658,12 +43139,10 @@
 /area/f13/building)
 "oFI" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -43765,8 +43244,7 @@
 "oJj" = (
 /obj/structure/barricade/concrete,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/machinery/light,
 /turf/open/floor/plating/f13/outside/road{
@@ -44107,8 +43585,7 @@
 /area/f13/sewer)
 "oVS" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "innercornerpieceleft"
@@ -44212,13 +43689,11 @@
 /area/f13/klamat)
 "oYB" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -44298,8 +43773,7 @@
 /area/f13/bunker)
 "oZX" = (
 /obj/structure/chair/f13foldupchair{
-	dir = 8;
-	icon_state = "f13foldupchair"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "floorrusty"
@@ -44354,7 +43828,6 @@
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a very futuristic vouge feel.";
 	dir = 1;
-	icon_state = "shuttle_chair";
 	name = "prewar lounge chair"
 	},
 /turf/open/floor/f13{
@@ -44466,8 +43939,7 @@
 /area/f13/brotherhood)
 "peM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 1;
@@ -44597,8 +44069,7 @@
 /area/f13/tunnel)
 "piq" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
+	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -44692,8 +44163,7 @@
 "plc" = (
 /obj/structure/barricade/concrete,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -44803,8 +44273,7 @@
 /area/f13/building)
 "pnF" = (
 /obj/structure/decoration/ruins{
-	dir = 8;
-	icon_state = "overlap"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -44992,8 +44461,7 @@
 /area/f13/klamat)
 "psD" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -45186,8 +44654,7 @@
 /area/f13/sewer)
 "pxJ" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/road{
@@ -45453,8 +44920,7 @@
 /area/f13/sewer)
 "pFQ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/machinery/light/small{
 	dir = 1
@@ -45533,8 +44999,7 @@
 	icon_state = "room"
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/floor/wood{
 	icon_state = "housewood3"
@@ -45776,8 +45241,7 @@
 "pPQ" = (
 /obj/structure/barricade/concrete,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -45854,12 +45318,10 @@
 /area/f13/sewer)
 "pSx" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -46306,17 +45768,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
-"qhU" = (
-/mob/living/simple_animal/hostile/handy/gutsy,
-/obj/effect/mob_spawn/human/corpse/charredskeleton,
-/obj/structure/chair/f13foldupchair{
-	dir = 4;
-	icon_state = "f13foldupchair"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor{
-	icon_state = "floorrusty"
-	},
-/area/f13/bunker)
 "qhX" = (
 /obj/structure/table,
 /obj/item/stack/crafting/electronicparts/five,
@@ -46554,8 +46005,7 @@
 /area/f13/brotherhood)
 "qoW" = (
 /obj/structure/chair/left{
-	dir = 4;
-	icon_state = "booth_leftend"
+	dir = 4
 	},
 /obj/structure/railing{
 	dir = 8
@@ -46641,8 +46091,7 @@
 /area/f13/shack)
 "qse" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /obj/effect/decal/waste{
 	icon_state = "goo8"
@@ -46943,9 +46392,7 @@
 	},
 /area/f13/sewer)
 "qDB" = (
-/obj/item/radio/intercom/kebob{
-	name = "Oasis intercom"
-	},
+/obj/item/radio/intercom/kebob,
 /turf/closed/wall/r_wall/rust,
 /area/f13/klamat)
 "qDL" = (
@@ -47294,8 +46741,7 @@
 /area/f13/sewer)
 "qRT" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /obj/effect/decal/waste{
 	icon_state = "goo8"
@@ -47563,8 +47009,7 @@
 	},
 /obj/structure/curtain{
 	color = "red";
-	pixel_x = 31;
-	pixel_y = 0
+	pixel_x = 31
 	},
 /obj/item/trash/candle,
 /obj/item/trash/candle,
@@ -47634,8 +47079,7 @@
 /area/f13/radiation)
 "rfz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 1;
@@ -47796,8 +47240,7 @@
 /area/f13/tunnel)
 "rlM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -48236,8 +47679,7 @@
 "ryp" = (
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged,
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -48344,8 +47786,7 @@
 /area/f13/sewer)
 "rBA" = (
 /obj/effect/decal/cleanable/blood/tracks{
-	dir = 4;
-	icon_state = "tracks"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/radiation)
@@ -48400,8 +47841,7 @@
 /area/f13/klamat)
 "rCo" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 1;
@@ -48456,8 +47896,7 @@
 /area/f13/building)
 "rDq" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
@@ -48517,8 +47956,7 @@
 /area/f13/building)
 "rFJ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/structure/wreck/trash/two_tire,
 /turf/open/floor/plating/dirt,
@@ -48663,12 +48101,10 @@
 /area/f13/brotherhood)
 "rKP" = (
 /obj/structure/fence{
-	dir = 4;
-	icon_state = "straight"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -48917,8 +48353,7 @@
 /area/f13/building)
 "rSr" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/item/storage/trash_stack,
 /turf/open/floor/plating/dirt,
@@ -48931,8 +48366,7 @@
 /area/f13/sewer)
 "rSC" = (
 /obj/structure/chair/comfy/black{
-	dir = 1;
-	icon_state = "comfychair"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13,
@@ -49215,8 +48649,7 @@
 /area/f13/shack)
 "rXq" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -49302,8 +48735,7 @@
 /area/f13/building)
 "sbH" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/plating/dirt,
@@ -49494,8 +48926,7 @@
 /area/f13/bunker)
 "sil" = (
 /obj/structure/disposalpipe/segment{
-	dir = 6;
-	icon_state = "pipe"
+	dir = 6
 	},
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
@@ -49689,12 +49120,10 @@
 /area/f13/radiation)
 "soy" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -49803,8 +49232,7 @@
 /area/f13/building)
 "sto" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -50078,8 +49506,7 @@
 /area/f13/brotherhood)
 "sAE" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /obj/effect/landmark/start/f13/ncroffduty,
 /obj/item/reagent_containers/food/urinalcake,
@@ -50566,8 +49993,7 @@
 /area/f13/radiation)
 "sNy" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -50688,8 +50114,7 @@
 /area/f13/building)
 "sRq" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/road{
@@ -51048,9 +50473,7 @@
 "taf" = (
 /obj/structure/table/wood/settler,
 /obj/item/paper,
-/obj/item/pen{
-	pixel_y = 0
-	},
+/obj/item/pen,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tal" = (
@@ -51276,8 +50699,7 @@
 "tgl" = (
 /obj/effect/mob_spawn/human/corpse/charredskeleton,
 /obj/structure/chair/f13foldupchair{
-	dir = 8;
-	icon_state = "f13foldupchair"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "floorrusty"
@@ -51309,12 +50731,10 @@
 /area/space)
 "tgX" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -51435,8 +50855,7 @@
 /area/f13/building)
 "tkj" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -51482,7 +50901,6 @@
 /area/f13/brotherhood)
 "tlF" = (
 /obj/structure/handrail/g_central{
-	layer = 2.9;
 	pixel_y = -11
 	},
 /obj/machinery/light/small{
@@ -51706,8 +51124,7 @@
 /area/f13/building)
 "trz" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
@@ -52140,8 +51557,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
@@ -52314,12 +51730,10 @@
 /area/f13/building)
 "tJV" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -52401,8 +51815,7 @@
 /area/f13/building)
 "tKT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -52416,8 +51829,7 @@
 /area/f13/casino)
 "tLd" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/plating/dirt,
@@ -52505,8 +51917,7 @@
 "tNF" = (
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -52860,8 +52271,7 @@
 /area/f13/legion)
 "uab" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/road,
@@ -53057,8 +52467,7 @@
 /area/f13/sewer)
 "ufj" = (
 /obj/structure/chair/f13foldupchair{
-	dir = 4;
-	icon_state = "f13foldupchair"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
@@ -53199,12 +52608,10 @@
 /area/f13/brotherhood)
 "uit" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -53324,12 +52731,10 @@
 /area/f13/building)
 "unD" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/structure/flora/tree/pine,
 /turf/open/indestructible/ground/outside/snow,
@@ -53418,8 +52823,7 @@
 /area/f13/legion)
 "upV" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -53453,8 +52857,7 @@
 /area/f13/klamat)
 "usa" = (
 /obj/structure/fence{
-	dir = 1;
-	icon_state = "straight"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -53697,8 +53100,7 @@
 /area/f13/brotherhood)
 "uAn" = (
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -53858,12 +53260,10 @@
 /area/f13/building)
 "uDf" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -54131,8 +53531,7 @@
 /area/f13/bunker)
 "uKZ" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/effect/landmark/start/f13/initiate,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -54299,12 +53698,10 @@
 /area/f13/klamat)
 "uPM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -54312,8 +53709,7 @@
 /area/f13/wasteland)
 "uQj" = (
 /obj/structure/chair/wood/normal{
-	dir = 8;
-	icon_state = "wooden_chair_settler"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
@@ -54704,8 +54100,7 @@
 /area/f13/klamat)
 "uZb" = (
 /obj/structure/chair/middle{
-	dir = 4;
-	icon_state = "booth_middle"
+	dir = 4
 	},
 /turf/open/floor/wood{
 	icon_state = "housewood3"
@@ -55140,8 +54535,7 @@
 /area/f13/shack)
 "vlW" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -55200,13 +54594,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/building)
-"vnv" = (
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "vnN" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/carpet/blue,
@@ -55792,8 +55179,7 @@
 /area/f13/tunnel)
 "vBN" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -55947,8 +55333,7 @@
 /area/f13/tunnel)
 "vFt" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/plating/dirt,
@@ -56070,13 +55455,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/sewer)
-"vIp" = (
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/klamat)
 "vJd" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/road{
@@ -56136,8 +55514,7 @@
 /area/f13/brotherhood)
 "vKz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /obj/machinery/light/lampost{
 	dir = 4
@@ -56627,12 +56004,10 @@
 /area/f13/bunker)
 "wbl" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -56673,8 +56048,7 @@
 /area/f13/radiation)
 "wcq" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/machinery/light,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -56714,8 +56088,7 @@
 /area/f13/klamat)
 "wcY" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -57643,8 +57016,7 @@
 /area/f13/bunker)
 "wCz" = (
 /obj/structure/chair/comfy/brown{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/carpet,
 /area/f13/shack)
@@ -57952,14 +57324,6 @@
 /obj/machinery/computer/terminal,
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/klamat)
-"wLL" = (
-/obj/structure/flora/grass/jungle,
-/obj/structure/stone_tile/surrounding_tile{
-	dir = 4;
-	icon_state = "pristine_surrounding_tile1"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "wMc" = (
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood,
@@ -58096,12 +57460,6 @@
 	name = "roughcast asphalt"
 	},
 /area/f13/klamat)
-"wRd" = (
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 2;
-	icon_state = "outerturn"
-	},
-/area/f13/wasteland)
 "wRf" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /obj/effect/decal/cleanable/dirt{
@@ -58280,8 +57638,7 @@
 /area/f13/caves)
 "wVT" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/structure/wreck/trash/one_tire,
 /turf/open/floor/plating/dirt,
@@ -58335,8 +57692,7 @@
 /area/f13/sewer)
 "wXx" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 6;
-	icon_state = "snow_corner"
+	dir = 6
 	},
 /obj/structure/fence{
 	dir = 4;
@@ -58474,12 +57830,10 @@
 /area/f13/building)
 "xbL" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -58596,8 +57950,7 @@
 /area/f13/brotherhood)
 "xeL" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler"
+	dir = 1
 	},
 /turf/open/floor/plating/rust,
 /area/f13/radiation)
@@ -58698,8 +58051,7 @@
 "xit" = (
 /obj/structure/barricade/concrete,
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /obj/machinery/camera/autoname{
 	dir = 1;
@@ -58715,8 +58067,7 @@
 "xiv" = (
 /obj/structure/curtain{
 	color = "red";
-	pixel_x = 31;
-	pixel_y = 0
+	pixel_x = 31
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
@@ -58858,12 +58209,10 @@
 /area/f13/legion)
 "xot" = (
 /obj/structure/fence{
-	dir = 8;
-	icon_state = "straight"
+	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 1;
-	icon_state = "snow_corner"
+	dir = 1
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/brotherhood)
@@ -58907,8 +58256,7 @@
 /area/f13/klamat)
 "xqN" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/machinery/light,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -58998,12 +58346,10 @@
 /area/f13/klamat)
 "xtx" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -59242,12 +58588,10 @@
 /area/f13/wasteland)
 "xzh" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -59261,8 +58605,7 @@
 /area/f13/wasteland)
 "xzA" = (
 /obj/structure/chair/comfy/brown{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -59293,8 +58636,7 @@
 /area/f13/den)
 "xAt" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 9;
-	icon_state = "snow_corner"
+	dir = 9
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
@@ -59536,12 +58878,10 @@
 /area/f13/casino)
 "xKz" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 8;
-	icon_state = "snow_corner"
+	dir = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -59556,8 +58896,7 @@
 /area/f13/brotherhood)
 "xKJ" = (
 /obj/structure/chair/comfy/brown{
-	dir = 8;
-	icon_state = "comfychair"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -59833,8 +59172,7 @@
 /area/f13/bunker)
 "xRM" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 10;
-	icon_state = "snow_corner"
+	dir = 10
 	},
 /obj/structure/fence{
 	dir = 4;
@@ -60071,8 +59409,7 @@
 /obj/structure/table/wood,
 /obj/structure/curtain{
 	color = "red";
-	pixel_x = 31;
-	pixel_y = 0
+	pixel_x = 31
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
@@ -60280,8 +59617,7 @@
 /area/f13/building)
 "ycL" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 5;
-	icon_state = "snow_corner"
+	dir = 5
 	},
 /obj/machinery/light/small{
 	dir = 1;
@@ -60528,8 +59864,7 @@
 /area/f13/klamat)
 "yir" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /obj/structure/statue/sandstone/gravestone,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
@@ -60638,8 +59973,7 @@
 /area/f13/wasteland)
 "ykU" = (
 /obj/effect/turf_decal/weather/snow/corner{
-	dir = 4;
-	icon_state = "snow_corner"
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -60654,8 +59988,7 @@
 /obj/structure/flora/grass/jungle,
 /obj/structure/stone_tile/surrounding_tile,
 /obj/structure/stone_tile/surrounding_tile{
-	dir = 8;
-	icon_state = "pristine_surrounding_tile1"
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -60689,8 +60022,7 @@
 /area/f13/building)
 "ylY" = (
 /obj/structure/simple_door/metal/fence{
-	dir = 8;
-	icon_state = "fence"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -98263,7 +97595,7 @@ jGb
 aKF
 aKF
 aKF
-vnv
+gdv
 aae
 aae
 aae
@@ -100107,7 +99439,7 @@ afn
 aab
 uxp
 abY
-aJa
+abY
 abY
 jNa
 vYD
@@ -108042,7 +107374,7 @@ aab
 aae
 xyg
 oaR
-wLL
+eqq
 oUX
 jGp
 aae
@@ -112249,7 +111581,7 @@ aWf
 aQP
 xsg
 aUc
-kPV
+qNG
 aQP
 xsg
 aab
@@ -112851,11 +112183,11 @@ aab
 aab
 xsg
 aUc
-qhU
+lOb
 aQP
 xsg
 aUc
-qhU
+lOb
 aQP
 xsg
 aab
@@ -128227,7 +127559,7 @@ bhf
 bkD
 bhf
 bkC
-caq
+bZL
 bhf
 bhf
 bkC
@@ -132071,7 +131403,7 @@ caj
 wzD
 caj
 cay
-iOJ
+caD
 caD
 caD
 cbo
@@ -132475,7 +131807,7 @@ cal
 wzD
 caj
 caz
-iOJ
+caD
 caD
 caD
 caD
@@ -133368,7 +132700,7 @@ xOK
 xOK
 sNV
 vuI
-azw
+vuI
 vuI
 vuI
 sNV
@@ -144277,9 +143609,9 @@ aDL
 aDL
 aDL
 mqF
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 bDx
 bDv
 aDL
@@ -144412,7 +143744,7 @@ bDn
 bDx
 bDx
 xKz
-aoI
+kVJ
 bDn
 bxT
 aDL
@@ -144823,7 +144155,7 @@ blv
 soy
 xKz
 bDx
-aoI
+kVJ
 bzr
 aJK
 aDL
@@ -145230,9 +144562,9 @@ bne
 bne
 aYs
 bDn
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 ajh
 aQq
 aQq
@@ -145893,7 +145225,7 @@ aDL
 tPJ
 rCX
 rCX
-bhT
+rCX
 tPJ
 rCX
 aYF
@@ -146097,7 +145429,7 @@ bhU
 bia
 bit
 tPJ
-bhT
+rCX
 rCX
 aYF
 tPJ
@@ -146497,7 +145829,7 @@ bDz
 aDL
 aDL
 tPJ
-bhV
+boI
 bib
 tPJ
 tZg
@@ -148317,7 +147649,7 @@ bhF
 bhM
 fwo
 bie
-brd
+raQ
 raQ
 biM
 biP
@@ -148529,7 +147861,7 @@ raQ
 bjG
 biP
 bki
-brd
+raQ
 raQ
 biO
 blb
@@ -149534,7 +148866,7 @@ raQ
 aOa
 raQ
 brk
-bhV
+boI
 bjA
 bjH
 bjZ
@@ -149653,8 +148985,8 @@ aLk
 aja
 aji
 nxY
-aoI
-aoI
+kVJ
+kVJ
 bDn
 axX
 bzr
@@ -149860,9 +149192,9 @@ lci
 lci
 bDn
 bDn
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 ajh
 bxL
 aQq
@@ -150275,11 +149607,11 @@ aQq
 bxL
 aGn
 bDn
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 bDn
 bDn
 bzr
@@ -153142,9 +152474,9 @@ aDL
 mqF
 bDn
 bDn
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 bzr
 aDL
 bUB
@@ -153737,8 +153069,8 @@ bzd
 aDL
 aDL
 bzm
-aoI
-aoI
+kVJ
+kVJ
 bDx
 gia
 aDL
@@ -155561,7 +154893,7 @@ aDL
 aDL
 aDL
 aDL
-mFt
+rKP
 nFy
 ukD
 mYW
@@ -155763,7 +155095,7 @@ aDL
 aDL
 aMz
 aDL
-mFt
+rKP
 aCj
 aCj
 uNk
@@ -155965,7 +155297,7 @@ aDL
 aDL
 aDL
 aDL
-mFt
+rKP
 aCj
 fME
 aCj
@@ -156958,7 +156290,7 @@ aDL
 aDL
 aYs
 bDn
-aoI
+kVJ
 bDn
 gia
 aDL
@@ -159372,11 +158704,11 @@ aMz
 aDL
 aDL
 mqF
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 bDn
 lci
 lci
@@ -159556,13 +158888,13 @@ aDL
 aDL
 aMz
 mqF
-aoI
-aoI
+kVJ
+kVJ
 bzr
 aDL
 aMz
 bzm
-aoI
+kVJ
 bDx
 vBN
 aDL
@@ -159572,7 +158904,7 @@ aDL
 aDL
 aDL
 mqF
-aoI
+kVJ
 bDn
 lci
 lci
@@ -159751,24 +159083,24 @@ aDL
 aDL
 aDL
 mqF
-aoI
+kVJ
 lci
 xKz
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 bDn
 lci
 lci
 lci
 lci
-aoI
+kVJ
 bDn
 bzr
 aDL
 bzm
-aoI
-aoI
+kVJ
+kVJ
 xKz
 xKz
 xKz
@@ -160586,7 +159918,7 @@ aMz
 aDL
 aDL
 aYs
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -161399,7 +160731,7 @@ uqV
 aDL
 aDL
 aYs
-aoI
+kVJ
 bzr
 aDL
 aMz
@@ -162210,7 +161542,7 @@ aDL
 aDL
 bzm
 bDn
-aoI
+kVJ
 vBN
 aDL
 bkq
@@ -170859,23 +170191,23 @@ aEZ
 amK
 bDn
 bDn
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
 vBN
 xnB
 aDL
 aDL
 aTN
 mqF
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 wVT
 aDL
 aDL
@@ -170891,7 +170223,7 @@ aDL
 aDL
 aDL
 mqF
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -171066,10 +170398,10 @@ bDn
 bDn
 bDn
 bDn
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
 bDn
 bDn
 lci
@@ -171079,26 +170411,26 @@ lci
 bDn
 bDn
 bDn
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 rSr
 bDn
 bDn
 bDn
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
 bzr
 aDL
 aDL
@@ -171909,20 +171241,20 @@ aDL
 bzm
 bDn
 bDn
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 fBP
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 bDn
-aoI
-aoI
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -172126,7 +171458,7 @@ lci
 lci
 lci
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -172736,7 +172068,7 @@ aDL
 aDL
 aDL
 aYs
-aoI
+kVJ
 vBN
 aDL
 mqF
@@ -172940,7 +172272,7 @@ aDL
 aTN
 aYs
 bDn
-aoI
+kVJ
 bDn
 bDn
 bzr
@@ -176795,11 +176127,11 @@ aDL
 aDL
 aDL
 mqF
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 bxT
 aDL
 aDL
@@ -176995,7 +176327,7 @@ vBN
 aDL
 aDL
 mqF
-aoI
+kVJ
 bDn
 bDn
 lci
@@ -177194,8 +176526,8 @@ aMz
 aYs
 bDn
 bDn
-aoI
-aoI
+kVJ
+kVJ
 bDn
 bDn
 lci
@@ -178772,10 +178104,10 @@ vwk
 jmk
 aDL
 bzm
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
 vBN
 aDL
 jHt
@@ -179216,7 +178548,7 @@ aDL
 aYs
 bDn
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -179922,7 +179254,7 @@ aEf
 bAM
 rTE
 bvT
-bDa
+aMN
 bFg
 kUC
 bDn
@@ -180124,7 +179456,7 @@ aEp
 bAy
 kUC
 rVA
-bDa
+aMN
 bFg
 kUC
 bDn
@@ -180326,7 +179658,7 @@ aDW
 bDL
 mow
 pMJ
-bDa
+aMN
 bFg
 kUC
 kUC
@@ -181664,7 +180996,7 @@ fxw
 aDL
 aDL
 mqF
-aoI
+kVJ
 vBN
 aDL
 bzm
@@ -181868,7 +181200,7 @@ mqF
 oyi
 wXj
 bDn
-aoI
+kVJ
 mRy
 aDL
 aDL
@@ -182752,7 +182084,7 @@ bFh
 bFh
 bFh
 bFh
-vIp
+mWk
 bFh
 bFh
 bFh
@@ -185074,7 +184406,7 @@ lci
 bDx
 bDx
 bDx
-aoI
+kVJ
 vBN
 aDL
 mqF
@@ -188223,9 +187555,9 @@ aDL
 aYs
 lci
 bDn
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -188835,7 +188167,7 @@ aDL
 aDL
 aYs
 lci
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -189647,7 +188979,7 @@ aDL
 aDL
 aYs
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -190054,10 +189386,10 @@ aDL
 aDL
 aYs
 bDn
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -190261,7 +189593,7 @@ lci
 lci
 lci
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -190465,7 +189797,7 @@ aDL
 aYs
 lci
 lci
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -190481,7 +189813,7 @@ aDL
 aWu
 wbl
 kWS
-aoI
+kVJ
 vBN
 aDL
 aPt
@@ -190685,12 +190017,12 @@ bDx
 lci
 lci
 bDn
-aoI
-aoI
-aoI
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -190873,7 +190205,7 @@ aMz
 aYs
 lci
 lci
-aoI
+kVJ
 vBN
 aDL
 aPt
@@ -190894,7 +190226,7 @@ lci
 lci
 lci
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -191098,8 +190430,8 @@ aDL
 aYs
 lci
 lci
-aoI
-aoI
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -191303,8 +190635,8 @@ aDL
 aYs
 lci
 lci
-aoI
-aoI
+kVJ
+kVJ
 vBN
 aDL
 aDL
@@ -192124,7 +191456,7 @@ aDL
 aDL
 aDL
 aYs
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -192328,7 +191660,7 @@ aDL
 aDL
 aYs
 bDn
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -192735,8 +192067,8 @@ aDL
 aDL
 aYs
 bDn
-aoI
-aoI
+kVJ
+kVJ
 bDn
 bDn
 gia
@@ -194348,7 +193680,7 @@ aDL
 aDL
 aDL
 mqF
-aoI
+kVJ
 bDn
 gia
 aDL
@@ -194548,7 +193880,7 @@ aDL
 aDL
 aDL
 mqF
-aoI
+kVJ
 bDn
 bDn
 gia
@@ -195146,7 +194478,7 @@ aCM
 bzh
 aDL
 oFI
-aoI
+kVJ
 vBN
 aDL
 aDL
@@ -195350,9 +194682,9 @@ atN
 aDL
 aYs
 bDn
-aoI
-aoI
-aoI
+kVJ
+kVJ
+kVJ
 bDn
 gia
 aDL
@@ -209275,7 +208607,7 @@ aCL
 aCL
 aCL
 aCL
-aZs
+aYD
 aFD
 aCM
 aCM
@@ -215583,7 +214915,7 @@ mzN
 bgG
 qAD
 nAT
-oaG
+nAT
 nAT
 lNo
 bUt
@@ -216345,7 +215677,7 @@ ceD
 cev
 aCM
 aHx
-wRd
+oeZ
 aFD
 aCM
 aCM
@@ -216787,7 +216119,7 @@ bUr
 bha
 nyX
 bcF
-hFW
+bcF
 bcF
 uUZ
 bha
@@ -287402,7 +286734,7 @@ avK
 aJN
 aJX
 bdJ
-nBB
+bos
 bpZ
 aUT
 erv

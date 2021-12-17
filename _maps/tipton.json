@@ -1,0 +1,10 @@
+{
+    "map_name": "Tipton",
+    "map_path": "map_files/Tipton",
+    "map_file": "Tiptop.dmm",
+    "shuttles": {
+		"cargo":"cargo_box",
+	   	"emergency": "emergency_box",
+	    "ferry": "ferry_fancy"
+    }
+}
