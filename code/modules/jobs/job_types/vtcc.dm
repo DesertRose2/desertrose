@@ -359,8 +359,8 @@
 /datum/outfit/loadout/platform
 	name = "Walking Weapons Platform"
 	backpack_contents = list(
-		 /obj/item/gun/ballistic/automatic/r84=1,
-		 /obj/item/ammo_box/magazine/lmg=2,
+		/obj/item/gun/ballistic/automatic/r84=1,
+		/obj/item/ammo_box/magazine/lmg=2,
 		/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
 		/obj/item/gun/ballistic/automatic/pistol/autoloader=1,

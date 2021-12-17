@@ -227,7 +227,7 @@
 		var/turf/open/O = loc
 		if(O.air)
 			var/datum/gas_mixture/loc_air = O.air
-			if(loc_air.get_moles(/datum/gas/oxygen) > 13)
+			if(loc_air.get_moles(GAS_O2) > 13)
 				return TRUE
 	return FALSE
 
@@ -249,8 +249,8 @@
 /obj/structure/bonfire/proc/Burn()
 	var/turf/current_location = get_turf(src)
 	current_location.hotspot_expose(1000,100,1)
-	for(var/A in current_location)
-		if(A == src)
+	for(var/atom/movable/A as anything in current_location)
+		if(A == src || QDELETED(A))
 			continue
 		if(isobj(A))
 			var/obj/O = A
