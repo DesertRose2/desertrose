@@ -35913,7 +35913,7 @@
 /area/f13/building)
 "lny" = (
 /obj/item/ammo_casing/c45{
-	pixel_w = 5;
+	pixel_y = 5;
 	pixel_x = 12
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -66754,7 +66754,7 @@
 	pixel_y = -8
 	},
 /obj/item/ammo_casing/c45{
-	pixel_w = 5;
+	pixel_y = 5;
 	pixel_x = 12
 	},
 /turf/open/indestructible/ground/inside/mountain,
