@@ -40,7 +40,7 @@
 			to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
 			return TRUE
 
-	if(panel_open)
+	if(panel_open & density == FALSE)
 		if(W.tool_behaviour == TOOL_MULTITOOL && deconstruction == BLASTDOOR_FINISHED)
 			var/change_id = input("Set the shutters/blast door/blast door controllers ID. It must be a number between 1 and 100.", "ID", id) as num|null
 			if(change_id)
@@ -77,7 +77,7 @@
 			if(W.use_tool(src, user, 100, volume=50))
 				var/datum/crafting_recipe/recipe = locate(recipe_type) in GLOB.crafting_recipes
 				var/amount = recipe.reqs[/obj/item/stack/sheet/plasteel]
-				new /obj/item/stack/sheet/plasteel(loc, amount)
+				new /obj/item/stack/sheet/plasteel(loc, amount - rand(1,5))
 				qdel(src)
 			return TRUE
 

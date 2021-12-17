@@ -713,7 +713,6 @@
 	time = 15 SECONDS
 	subcategory = CAT_FURNITURE
 	category = CAT_MISC
-	one_per_turf = TRUE
 
 /datum/crafting_recipe/blast_doors
 	name = "Blast Door"
@@ -726,4 +725,3 @@
 	time = 30 SECONDS
 	subcategory = CAT_FURNITURE
 	category = CAT_MISC
-	one_per_turf = TRUE
