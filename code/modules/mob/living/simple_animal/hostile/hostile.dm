@@ -151,7 +151,8 @@
 		for (var/obj/A in oview(vision_range, targets_from))
 			CHECK_TICK
 			. += A
-		for (var/mob/A in oview(vision_range, targets_from))
+		for (var/mob/living/A in oview(vision_range, targets_from)) //mob/dead/observers arent possible targets
+			CHECK_TICK
 			. += A
 
 /mob/living/simple_animal/hostile/proc/FindTarget(list/possible_targets, HasTargetsList = 0)//Step 2, filter down possible targets to things we actually care about
