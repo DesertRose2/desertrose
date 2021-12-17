@@ -206,8 +206,9 @@
 	required_catalysts = list(/datum/reagent/consumable/enzyme = 1)
 	mix_message = "Fine ribbons of curd form in the milk."
 	required_temp = 353
-    
+
 /datum/chemical_reaction/mozzarella/on_reaction(datum/reagents/holder, multiplier)
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= multiplier, i++)
 		new /obj/item/reagent_containers/food/snacks/mozzarella(location)
+		
