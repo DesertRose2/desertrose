@@ -1835,7 +1835,7 @@
 /area/f13/ncr)
 "aAw" = (
 /obj/machinery/button/door{
-	id = khanback;
+	id = "khanback";
 	name = "Khan gate button";
 	req_one_access_txt = "125"
 	},
@@ -2677,7 +2677,7 @@
 /area/f13/wasteland)
 "aOx" = (
 /obj/machinery/door/poddoor/shutters{
-	id = khanback;
+	id = "khanback";
 	name = "Khan Khamp"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -3241,11 +3241,10 @@
 /area/f13/wasteland)
 "aXM" = (
 /obj/machinery/button/door{
-	id = khanback;
+	id = "khanback";
 	name = "Khan gate button";
 	pixel_y = 32;
-	req_access_txt = "125";
-	req_one_access_txt = "0"
+	req_access_txt = "125"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
@@ -6756,7 +6755,7 @@
 	pixel_y = 11
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = khangate;
+	id = "khangate";
 	name = "Khan Khamp"
 	},
 /turf/open/floor/f13/wood,
@@ -56448,7 +56447,7 @@
 /area/f13/building)
 "saG" = (
 /obj/machinery/button/door{
-	id = khangate;
+	id = "khangate";
 	name = "Khan gate button";
 	pixel_y = -25;
 	req_access_txt = "125"
@@ -67610,7 +67609,7 @@
 /area/f13/building)
 "vGv" = (
 /obj/machinery/door/poddoor/shutters{
-	id = khangate;
+	id = "khangate";
 	name = "Khan Khamp"
 	},
 /turf/open/floor/f13/wood,
