@@ -19,7 +19,7 @@
 	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
 	resistance_flags = FIRE_PROOF
 	damage_deflection = 70
-	ranged_deflection = 40
+	ranged_deflection = 45
 	var/datum/crafting_recipe/recipe_type = /datum/crafting_recipe/blast_doors
 	var/deconstruction = BLASTDOOR_FINISHED // deconstruction step
 	var/ertblast = FALSE //If this is true the blast door cannot be deconstructed
@@ -50,17 +50,23 @@
 		else if(W.tool_behaviour == TOOL_CROWBAR && deconstruction == BLASTDOOR_FINISHED)
 			to_chat(user, "<span class='notice'>You start to remove the airlock electronics.</span>")
 			if(W.use_tool(src, user, 100, volume=50))
+				if(deconstruction != BLASTDOOR_FINISHED)
+					return
 				new /obj/item/electronics/airlock(loc)
 				id = null
 				deconstruction = BLASTDOOR_NEEDS_ELECTRONICS
+			return TRUE
 
 		else if(W.tool_behaviour == TOOL_WIRECUTTER && deconstruction == BLASTDOOR_NEEDS_ELECTRONICS)
 			to_chat(user, "<span class='notice'>You start to remove the internal cables.</span>")
 			if(W.use_tool(src, user, 100, volume=50))
+				if(deconstruction != BLASTDOOR_NEEDS_ELECTRONICS)
+					return
 				var/datum/crafting_recipe/recipe = locate(recipe_type) in GLOB.crafting_recipes
 				var/amount = recipe.reqs[/obj/item/stack/cable_coil]
 				new /obj/item/stack/cable_coil(loc, amount)
 				deconstruction = BLASTDOOR_NEEDS_WIRES
+			return TRUE
 
 		else if(W.tool_behaviour == TOOL_WELDER && deconstruction == BLASTDOOR_NEEDS_WIRES)
 			if(!W.tool_start_check(user, amount=0))
@@ -73,6 +79,7 @@
 				var/amount = recipe.reqs[/obj/item/stack/sheet/plasteel]
 				new /obj/item/stack/sheet/plasteel(loc, amount)
 				qdel(src)
+			return TRUE
 
 /obj/machinery/door/poddoor/examine(mob/user)
 	. = ..()

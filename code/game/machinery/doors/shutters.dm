@@ -35,7 +35,7 @@
 	icon = 'icons/obj/doors/shutters_old.dmi'
 	icon_state = "closed"
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 75, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
-	damage_deflection = 35
+	damage_deflection = 36
 	ranged_deflection = 30
 
 /obj/machinery/door/poddoor/shutters/old/preopen
