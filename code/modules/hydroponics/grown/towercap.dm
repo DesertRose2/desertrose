@@ -249,8 +249,8 @@
 /obj/structure/bonfire/proc/Burn()
 	var/turf/current_location = get_turf(src)
 	current_location.hotspot_expose(1000,100,1)
-	for(var/A in current_location)
-		if(A == src)
+	for(var/atom/movable/A as anything in current_location)
+		if(A == src || QDELETED(A))
 			continue
 		if(isobj(A))
 			var/obj/O = A
