@@ -647,6 +647,7 @@
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/buffout(src)
 
+//Sprite of Cateye done by Yonsi
 /obj/item/storage/pill_bottle/chem_tin/cateye
 	name = "Cateye"
 	icon_state = "pill_canister_cateye"
