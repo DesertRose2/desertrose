@@ -898,7 +898,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "mF" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
 	},
@@ -1366,7 +1365,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "se" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -1820,7 +1818,6 @@
 	},
 /area/f13/bunker)
 "yw" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /obj/structure/chair{
 	dir = 4
 	},
@@ -2744,7 +2741,6 @@
 /area/f13/bunker)
 "Ic" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Ii" = (
@@ -2769,8 +2765,7 @@
 /area/f13/bunker)
 "It" = (
 /obj/structure/ladder/unbreakable{
-	id = metrodungeon;
-	up = metrodungeonentrance
+	id = "metrodungeonentrance"
 	},
 /turf/open/floor/f13,
 /area/f13/bunker)
@@ -3169,7 +3164,6 @@
 	dir = 4;
 	pixel_x = -3
 	},
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Ny" = (
@@ -3232,7 +3226,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "OE" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /obj/structure/chair/bench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -3494,7 +3487,6 @@
 /area/f13/bunker)
 "Rn" = (
 /obj/structure/chair/wood,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Rp" = (
@@ -3526,7 +3518,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "RC" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "RF" = (
