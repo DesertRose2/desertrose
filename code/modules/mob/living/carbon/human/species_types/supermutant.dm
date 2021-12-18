@@ -20,11 +20,13 @@
 		OFFSET_BELT = list(5,0),
 		OFFSET_EYES = list(1,6)
 		)
-	punchstunthreshold = 20
+	punchstunthreshold = 5
+	punchdamagelow = 2
+	punchdamagehigh = 7
 	use_skintones = 0
 	sexes = 0
 	armor = 10
-	speedmod = 0.5
+	speedmod = 0.75
 	liked_food = JUNKFOOD | FRIED | RAW
 
 /datum/species/smutant/on_species_gain(mob/living/carbon/C, datum/species/old_species)
