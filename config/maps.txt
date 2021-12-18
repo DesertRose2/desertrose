@@ -23,5 +23,8 @@ map sunnyvale
 	disabled
 endmap
 map vaultvalley
-	disabled
+	voteweight 0
+endmap
+map tipton
+	voteweight 0
 endmap

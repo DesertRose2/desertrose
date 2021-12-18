@@ -23328,10 +23328,6 @@
 	dir = 4
 	},
 /area/f13/sewer)
-"wAj" = (
-/obj/effect/meteor/irradiated,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/radiation)
 "wAo" = (
 /obj/effect/decal/waste{
 	icon_state = "goo10"
@@ -98060,7 +98056,7 @@ inR
 inR
 kzJ
 rFV
-wAj
+rFV
 rFV
 rFV
 kzJ
