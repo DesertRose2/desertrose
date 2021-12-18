@@ -26634,16 +26634,6 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "thn" = (
-/mob/living/simple_animal/hostile/raider/sulphite{
-	attack_sound = 'sound/weapons/chainsawhit.ogg';
-	desc = "A mean-looking Junker armed with a ripper.";
-	faction = list("raider");
-	icon_dead = "junker_hijacker";
-	icon_living = "junker_hijacker";
-	icon_state = "junker_hijacker";
-	loot = list(/obj/effect/mob_spawn/human/corpse/raidermelee,/obj/item/locked_box/misc/money/all/low,/obj/item/nullrod/claymore/chainsaw_sword);
-	name = "Junker Brawler"
-	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertopright"
 	},
