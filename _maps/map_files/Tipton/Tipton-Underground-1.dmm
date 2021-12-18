@@ -25210,7 +25210,7 @@
 "yhm" = (
 /obj/item/storage/trash_stack,
 /obj/effect/decal/waste{
-	icon_state = "goo12"
+	icon_state = "goo5"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)

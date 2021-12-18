@@ -964,7 +964,7 @@
 /area/f13/underground/cave)
 "cS" = (
 /obj/structure/ladder/unbreakable{
-	id = mootant
+	id = "mootant"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
@@ -2650,7 +2650,7 @@
 "kT" = (
 /obj/structure/table,
 /obj/machinery/door/poddoor/shutters{
-	id = DungeonRange
+	id = "DungeonRange"
 	},
 /turf/open/floor/f13{
 	icon_state = "redmark"
@@ -2698,7 +2698,7 @@
 "lh" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/poddoor/shutters{
-	id = DungeonRange
+	id = "DungeonRange"
 	},
 /turf/open/floor/f13,
 /area/f13/underground/cave)
@@ -3167,7 +3167,7 @@
 /area/f13/underground/cave)
 "nt" = (
 /obj/machinery/button/door{
-	id = DungeonRange;
+	id = "DungeonRange";
 	pixel_x = 32
 	},
 /turf/open/floor/f13{
@@ -8288,7 +8288,7 @@
 /area/f13/underground/cave)
 "Or" = (
 /obj/machinery/button/door{
-	id = DungeonRange;
+	id = "DungeonRange";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
