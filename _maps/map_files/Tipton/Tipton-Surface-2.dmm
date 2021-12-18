@@ -3413,7 +3413,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters{
-	"id = "MallStorage";
+	id = "MallStorage";
 	name = "Mall Storage"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
