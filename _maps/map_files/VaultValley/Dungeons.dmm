@@ -2495,6 +2495,7 @@
 /obj/structure/fluff/rails,
 /obj/docking_port/stationary{
 	dir = 4;
+	dwidth = 1;
 	height = 11;
 	id = "raider_station";
 	roundstart_template = /datum/map_template/shuttle/metrobunker;

@@ -28,7 +28,7 @@
 /obj/machinery/door/airlock/grunge,
 /obj/docking_port/mobile/elevator{
 	dir = 4;
-	dwidth = 0;
+	dwidth = 2;
 	id = "raider_station_train"
 	},
 /turf/open/indestructible/ground/inside/subway,
