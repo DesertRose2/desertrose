@@ -10338,7 +10338,7 @@
 	faction = list("deathclaw", "plants");
 	health = 3000;
 	light_color = "#00ff00";
-	light_power = .3;
+	light_power = 3;
 	light_range = 12;
 	name = "glowing legendary deathclaw"
 	},
