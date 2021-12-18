@@ -3481,7 +3481,7 @@
 	speak_chance = 1
 	},
 /obj/item/gun/ballistic/automatic/autopipe{
-	color = #bc8f8f;
+	color = "#bc8f8f";
 	desc = "A legendary ramshackle weapon with a prodigious rate of fire and a funny smell...";
 	fire_delay = 6;
 	name = "Stinkys Poopstick(.357)"
@@ -20627,7 +20627,7 @@
 "ufS" = (
 /obj/effect/gibspawner/human,
 /mob/living/simple_animal/hostile/deathclaw{
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name "...uck";
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name '...uck'";
 	faction = list("deathclaw","hostile");
 	name = "broken deathclaw"
 	},
