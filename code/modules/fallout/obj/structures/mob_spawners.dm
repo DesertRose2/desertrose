@@ -142,8 +142,8 @@
 	layer = BELOW_OBJ_LAYER
 	var/infinite = FALSE
 	debris = list(/obj/effect/decal/cleanable/hatchery = 1, \
-		 /obj/item/stack/sheet/hay/ten = 1, \
-		 /obj/item/reagent_containers/food/snacks/f13/egg_nightstalker = 1)
+		/obj/item/stack/sheet/hay/ten = 1, \
+		/obj/item/reagent_containers/food/snacks/f13/egg_nightstalker = 1)
 	break_message = "<span class='warning'>The eggs are smashed, the hatchery ruined...</span>"
 	break_sound = 'sound/f13effects/rock_mined.ogg'
 
