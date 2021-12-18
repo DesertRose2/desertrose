@@ -1874,7 +1874,7 @@
 /area/f13/casino)
 "bjL" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = UBuild;
+	id = "UBuild";
 	layer = 11;
 	name = "Gabriel's U-Build"
 	},
@@ -2277,7 +2277,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = IsebelAttire;
+	id = "IsebelAttire";
 	layer = 11;
 	name = "Isebel's Modern Attire"
 	},
@@ -3035,7 +3035,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MikoStiff;
+	id = "MikoStiff";
 	layer = 11;
 	name = "Miko's Stiff Beds"
 	},
@@ -3413,7 +3413,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = MallStorage;
+	"id = "MallStorage";
 	name = "Mall Storage"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -4985,7 +4985,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MikoStiff;
+	id = "MikoStiff";
 	layer = 11;
 	name = "Miko's Stiff Beds"
 	},
@@ -7384,7 +7384,7 @@
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MallFront;
+	id = "MallFront";
 	layer = 11;
 	name = "Mall Front"
 	},
@@ -8877,7 +8877,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = 102;
+	id = "102";
 	name = "Vault Door Security Checkpoint"
 	},
 /obj/structure/window/plastitanium,
@@ -9779,7 +9779,7 @@
 	color = "000000"
 	},
 /obj/machinery/button{
-	id = MallFront;
+	id = "MallFront";
 	name = "Mall Front shutters"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
@@ -11996,7 +11996,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = IsebelAttire;
+	id = "IsebelAttire";
 	layer = 11;
 	name = "Isebel's Modern Attire"
 	},
@@ -12138,7 +12138,7 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/effect/decal/cleanable/glass,
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -13098,7 +13098,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = UBuild;
+	id = "UBuild";
 	layer = 11;
 	name = "Gabriel's U-Build"
 	},
@@ -14600,7 +14600,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MallFront;
+	id = "MallFront";
 	layer = 11;
 	name = "Mall Front"
 	},
@@ -16437,7 +16437,7 @@
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -17381,7 +17381,7 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/effect/decal/cleanable/glass,
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -17478,7 +17478,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MallFront;
+	id = "MallFront";
 	layer = 11;
 	name = "Mall Front"
 	},
@@ -17889,7 +17889,7 @@
 /area/f13/building)
 "mGk" = (
 /obj/structure/bodycontainer/crematorium{
-	id = 600
+	id = "600"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -19675,7 +19675,7 @@
 	pixel_y = 6
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -19782,7 +19782,7 @@
 /obj/structure/lattice,
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = mootant
+	id = "mootant"
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -21727,7 +21727,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = UBuild;
+	id = "UBuild";
 	layer = 11;
 	name = "Gabriel's U-Build"
 	},
@@ -22409,7 +22409,7 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/barricade/wooden,
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -24139,7 +24139,7 @@
 /area/f13/building)
 "rgu" = (
 /obj/machinery/door/poddoor/shutters{
-	id = MallStorage;
+	id = "MallStorage";
 	name = "Mall Storage"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -25405,7 +25405,7 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/effect/decal/cleanable/glass,
 /obj/machinery/door/poddoor/shutters{
-	id = ElectronicDick;
+	id = "ElectronicDick";
 	layer = 1;
 	name = "Dick's Electronic Goods"
 	},
@@ -26699,7 +26699,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MallFront;
+	id = "MallFront";
 	layer = 11;
 	name = "Mall Front"
 	},
@@ -29347,7 +29347,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = RicketyRick;
+	id = "RicketyRick";
 	layer = 11;
 	name = "Rickety Rick's Camping Supplies"
 	},
@@ -29987,7 +29987,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MikoStiff;
+	id = "MikoStiff";
 	layer = 11;
 	name = "Miko's Stiff Beds"
 	},
@@ -30184,7 +30184,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = RicketyRick;
+	id = "RicketyRick";
 	layer = 11;
 	name = "Rickety Rick's Camping Supplies"
 	},
@@ -30366,7 +30366,7 @@
 /area/f13/casino)
 "vVn" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = IsebelAttire;
+	id = "IsebelAttire";
 	layer = 11;
 	name = "Isebel's Modern Attire"
 	},
@@ -30806,13 +30806,13 @@
 /area/f13/ncr)
 "wmr" = (
 /obj/machinery/button/door{
-	id = 43;
+	id = "43";
 	name = "Exterior door button";
 	pixel_x = -6;
 	pixel_y = 32
 	},
 /obj/machinery/button/door{
-	id = 87;
+	id = "87";
 	name = "Interior door button";
 	pixel_x = 6;
 	pixel_y = 32
@@ -31123,7 +31123,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MikoStiff;
+	id = "MikoStiff";
 	layer = 11;
 	name = "Miko's Stiff Beds"
 	},
@@ -31863,7 +31863,7 @@
 	color = "000000"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = UBuild;
+	id = "UBuild";
 	layer = 11;
 	name = "Gabriel's U-Build"
 	},
@@ -31998,7 +31998,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = MallFront;
+	id = "MallFront";
 	layer = 11;
 	name = "Mall Front"
 	},

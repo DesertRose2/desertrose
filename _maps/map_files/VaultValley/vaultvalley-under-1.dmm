@@ -826,7 +826,7 @@
 "is" = (
 /obj/structure/ladder/unbreakable{
 	down = metrodungeon;
-	id = metrodungeonentrance;
+	id = "metrodungeonentrance";
 	up = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
