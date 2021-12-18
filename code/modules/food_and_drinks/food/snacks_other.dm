@@ -766,7 +766,7 @@
 	tastes = list("potato" = 3, "meatball" = 1, "squeaky cheese" = 1)
 	foodtype = VEGETABLES | GRAIN | FRIED
 	w_class = WEIGHT_CLASS_SMALL
-	
+
 /obj/item/reagent_containers/food/snacks/trailmix
 	name = "Trail Mix"
 	desc = "Seems popular among those with a certain drawl, or those who find that it's time to hit that dusty trail."
@@ -774,4 +774,61 @@
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 3)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("pinyon" = 3, "mutfruit" = 1, "apples" = 1)
-	foodtype = GRAIN | FRUIT 
+	foodtype = GRAIN | FRUIT
+
+/obj/item/reagent_containers/food/snacks/roasted_bell_pepper
+	name = "roasted bell pepper"
+	desc = "A blackened, blistered bell pepper. Great for making sauces."
+	icon_state = "roasted_bell_pepper"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/char = 1)
+	tastes = list("bell pepper" = 1, "char" = 1)
+	foodtype = VEGETABLES
+
+/obj/item/reagent_containers/food/snacks/curd_cheese
+	name = "curd cheese"
+	desc = "Known by many names throughout human cuisine, curd cheese is useful for a wide variety of dishes."
+	icon_state = "curd_cheese"
+	cooked_type = /obj/item/reagent_containers/food/snacks/cheese_curds
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/cream = 1)
+	tastes = list("cream" = 1, "cheese" = 1)
+	foodtype = DAIRY
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/reagent_containers/food/snacks/cheese_curds
+	name = "cheese curds"
+	desc = "Not to be mistaken for curd cheese. Tasty deep fried."
+	icon_state = "cheese_curds"
+	dried_type = /obj/item/reagent_containers/food/snacks/firm_cheese
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("cheese" = 1)
+	foodtype = DAIRY
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/reagent_containers/food/snacks/firm_cheese
+	name = "firm cheese"
+	desc = "Firm aged cheese, similar in texture to firm tofu. Due to its lack of moisture it's particularly useful for cooking with, as it doesn't melt easily."
+	icon_state = "firm_cheese"
+	slice_path = /obj/item/reagent_containers/food/snacks/firm_cheese_slice
+	slices_num = 5
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("aged cheese" = 1)
+	foodtype = DAIRY | VEGETABLES
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/reagent_containers/food/snacks/firm_cheese_slice
+	name = "firm cheese slice"
+	desc = "A slice of firm cheese. Perfect for grilling or making into delicious pesto."
+	icon_state = "firm_cheese_slice"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("aged cheese" = 1)
+	foodtype = DAIRY | VEGETABLES
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/reagent_containers/food/snacks/mozzarella
+	name = "mozzarella cheese"
+	desc = "Delicious, creamy, and cheesy, all in one simple package."
+	icon_state = "mozzarella"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("mozzarella" = 1)
+	foodtype = DAIRY
+	w_class = WEIGHT_CLASS_SMALL
