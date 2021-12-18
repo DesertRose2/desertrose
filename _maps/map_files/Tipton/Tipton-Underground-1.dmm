@@ -20627,7 +20627,7 @@
 "ufS" = (
 /obj/effect/gibspawner/human,
 /mob/living/simple_animal/hostile/deathclaw{
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name '...uck'";
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name: ...uck";
 	faction = list("deathclaw","hostile");
 	name = "broken deathclaw"
 	},
@@ -25216,7 +25216,7 @@
 /area/f13/radiation)
 "yhy" = (
 /mob/living/simple_animal/hostile/deathclaw{
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name '...uck';
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one seems collared and neutered but still ferocious... It's tag is weathered but you just just make out part of a name: ...uck;
 	faction = list("deathclaw","hostile");
 	name = "broken deathclaw"
 	},

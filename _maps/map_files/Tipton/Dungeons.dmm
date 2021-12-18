@@ -2690,7 +2690,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -3280,7 +3280,7 @@
 /area/f13/underground/cave)
 "nQ" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/window/reinforced/fulltile/indestructable{
@@ -5580,7 +5580,7 @@
 /area/f13/underground/cave)
 "zz" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/effect/spawner/structure/window/reinforced,
@@ -7626,7 +7626,7 @@
 	can_be_unanchored = 0
 	},
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/grille/indestructable,
@@ -9260,7 +9260,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/f13,
@@ -10395,7 +10395,7 @@
 /area/f13/underground/cave)
 "Yz" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/window/reinforced/fulltile/indestructable{
@@ -10444,7 +10444,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/plating/tunnel,
