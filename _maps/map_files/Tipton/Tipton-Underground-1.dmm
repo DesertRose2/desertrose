@@ -3481,7 +3481,7 @@
 	speak_chance = 1
 	},
 /obj/item/gun/ballistic/automatic/autopipe{
-	color = #bc8f8f;
+	color = "#bc8f8f";
 	desc = "A legendary ramshackle weapon with a prodigious rate of fire and a funny smell...";
 	fire_delay = 6;
 	name = "Stinkys Poopstick(.357)"
