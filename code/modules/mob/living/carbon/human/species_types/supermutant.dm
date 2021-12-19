@@ -20,9 +20,9 @@
 		OFFSET_BELT = list(5,0),
 		OFFSET_EYES = list(1,6)
 		)
-	punchstunthreshold = 5
-	punchdamagelow = 2
-	punchdamagehigh = 7
+	punchstunthreshold = 15
+	punchdamagelow = 5
+	punchdamagehigh = 20
 	use_skintones = 0
 	sexes = 0
 	armor = 10
