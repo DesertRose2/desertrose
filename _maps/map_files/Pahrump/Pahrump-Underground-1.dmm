@@ -37114,9 +37114,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
-"ycT" = (
-/turf/open/space/basic,
-/area/f13/tunnel)
 "ydb" = (
 /obj/item/candle/tribal_torch,
 /turf/open/indestructible/ground/inside/mountain,
@@ -85025,7 +85022,7 @@ uoO
 uoO
 uoO
 uoO
-ycT
+tur
 wIM
 weW
 weW
@@ -85791,7 +85788,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 uoO
