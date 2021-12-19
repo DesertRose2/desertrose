@@ -439,6 +439,21 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//combat rifle
+/datum/crafting_recipe/combatrifle
+	name = "Combat Rifle"
+	result = /obj/item/gun/ballistic/automatic/combat
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/metalparts = 10,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //scout carbine
 /datum/crafting_recipe/scoutcarbine
 	name = "scout carbine"
