@@ -159,6 +159,7 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Vault-tec Engineer",
 
 "City Security Officer",
+"Shopkeep",
 "Roadie",
 "Researcher",
 "Hoistway Preacher"
@@ -338,8 +339,7 @@ GLOBAL_LIST_INIT(vtcc_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(vtcc_provost_positions, list(
-	"Provost Sergeant",
-	"Provost"
+	"Provost Sergeant"
 ))
 
 GLOBAL_LIST_INIT(vtcc_positions, list(
@@ -347,6 +347,7 @@ GLOBAL_LIST_INIT(vtcc_positions, list(
 	"Provost",
 	"City Security Officer",
 	"City Security Cadet",
+	"Shopkeep",
 	"Roadie",
 	"Merchant",
 	"Innkeeper",
@@ -378,7 +379,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
-	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet","City Security Officer")),
+	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet")),
 	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger", "NCR Ranger Sergeant","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
 	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),

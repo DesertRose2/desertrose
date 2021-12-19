@@ -642,6 +642,11 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/servicerifle)
 
+/obj/item/book/granter/crafting_recipe/blueprint/combat
+	name = "combat rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/combatrifle)
+
 /obj/item/book/granter/crafting_recipe/blueprint/aep7
 	name = "aep7 blueprint"
 	icon_state = "blueprint2"
