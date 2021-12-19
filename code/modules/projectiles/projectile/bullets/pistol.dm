@@ -184,7 +184,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/m44/swc
 	name = ".44 SWC bullet"
 	damage = 38
-	armour_penetration = 0.1
+	armour_penetration = 0.15
 	wound_bonus = 30
 	bare_wound_bonus = 30
 
