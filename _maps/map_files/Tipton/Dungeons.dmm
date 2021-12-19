@@ -964,7 +964,7 @@
 /area/f13/underground/cave)
 "cS" = (
 /obj/structure/ladder/unbreakable{
-	id = mootant
+	id = "mootant"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
@@ -2650,7 +2650,7 @@
 "kT" = (
 /obj/structure/table,
 /obj/machinery/door/poddoor/shutters{
-	id = DungeonRange
+	id = "DungeonRange"
 	},
 /turf/open/floor/f13{
 	icon_state = "redmark"
@@ -2690,7 +2690,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -2698,7 +2698,7 @@
 "lh" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/poddoor/shutters{
-	id = DungeonRange
+	id = "DungeonRange"
 	},
 /turf/open/floor/f13,
 /area/f13/underground/cave)
@@ -3167,7 +3167,7 @@
 /area/f13/underground/cave)
 "nt" = (
 /obj/machinery/button/door{
-	id = DungeonRange;
+	id = "DungeonRange";
 	pixel_x = 32
 	},
 /turf/open/floor/f13{
@@ -3280,7 +3280,7 @@
 /area/f13/underground/cave)
 "nQ" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/window/reinforced/fulltile/indestructable{
@@ -5580,7 +5580,7 @@
 /area/f13/underground/cave)
 "zz" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/effect/spawner/structure/window/reinforced,
@@ -7626,7 +7626,7 @@
 	can_be_unanchored = 0
 	},
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/grille/indestructable,
@@ -8288,7 +8288,7 @@
 /area/f13/underground/cave)
 "Or" = (
 /obj/machinery/button/door{
-	id = DungeonRange;
+	id = "DungeonRange";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
@@ -9260,7 +9260,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/f13,
@@ -10338,7 +10338,7 @@
 	faction = list("deathclaw", "plants");
 	health = 3000;
 	light_color = "#00ff00";
-	light_power = .3;
+	light_power = 3;
 	light_range = 12;
 	name = "glowing legendary deathclaw"
 	},
@@ -10395,7 +10395,7 @@
 /area/f13/underground/cave)
 "Yz" = (
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /obj/structure/window/reinforced/fulltile/indestructable{
@@ -10444,7 +10444,7 @@
 	},
 /obj/structure/grille/indestructable,
 /obj/machinery/light/floor{
-	light_color = #ff4500;
+	light_color = "#ff4500";
 	light_range = 12
 	},
 /turf/open/floor/plating/tunnel,

@@ -68,7 +68,8 @@
 	armour_penetration = 0.75
 	color = rgb(95,104,94)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
-							/obj/item/stack/sheet/animalhide/deathclaw = 3)
+		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 1,
+		/obj/item/stack/sheet/animalhide/deathclaw = 3)
 
 /mob/living/simple_animal/hostile/deathclaw/legendary
 	name = "legendary deathclaw"

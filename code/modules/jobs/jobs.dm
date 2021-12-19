@@ -343,6 +343,8 @@ GLOBAL_LIST_INIT(vtcc_provost_positions, list(
 ))
 
 GLOBAL_LIST_INIT(vtcc_positions, list(
+	"Provost Sergeant",
+	"Provost",
 	"City Security Officer",
 	"City Security Cadet",
 	"Roadie",

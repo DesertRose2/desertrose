@@ -430,11 +430,16 @@
 	name = "Caroline Nikos' belongings"
 	path = /obj/item/storage/box/large/custom_kit/nikos
 	ckeywhitelist = list("panzer1944")
-	
+
 /datum/gear/donator/kits/rhinterland
 	name = "Rachel Hinterland's belongings"
 	path = /obj/item/storage/box/large/custom_kit/rhinterland
 	ckeywhitelist = list("yecrowbarman")
+
+/datum/gear/donator/kits/nataliamorgan
+	name = "Natalia Morgan's belongings"
+	path = /obj/item/storage/box/large/custom_kit/nataliamorgan
+	ckeywhitelist = list("panzer1944")
 
 //////////////////////////////
 ///Ranger items start here.///
@@ -467,7 +472,8 @@
 						"rangerbust",
 						"kirshbia",
 						"jackmcintyre",
-						"lunaticluna")
+						"lunaticluna",
+						"muhsollini")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -522,8 +528,7 @@
 						"totallyinnocent",
 						"cythisia",
 						"honto335",
-						"lunaticluna",
-						"neilzthegamer")
+						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -585,7 +590,8 @@
 						"rangerbust",
 						"jackmcintyre",
 						"kirshbia",
-						"lunaticluna")
+						"lunaticluna",
+						"muhsollini")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -652,8 +658,7 @@
 						"landoorando",
 						"honto335",
 						"luke313",
-						"lunaticluna",
-						"neilzthegamer")
+						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
@@ -677,7 +682,7 @@
 	path = /obj/item/clothing/accessory/ncr/SGT
 	ckeywhitelist = list("muhsollini",
 						"weaselburg")
-	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer")
+	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer", "NCR Heavy Trooper", "NCR Military Police")
 
 /datum/gear/donator/zirilliuniform
 	name = "Major Zirilli's service uniform"

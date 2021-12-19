@@ -942,7 +942,7 @@
 /obj/effect/spawner/bundle/f13/revolver44
 	name = ".44 revolver and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/revolver/revolver44,
+				/obj/item/gun/ballistic/revolver/m29,
 				/obj/item/ammo_box/m44
 				)
 
@@ -1996,16 +1996,6 @@
 		/obj/item/attachments/recoil_decrease,
 		/obj/item/attachments/auto_sear,
 		/obj/item/attachments/bullet_speed
-	)
-
-/obj/effect/spawner/lootdrop/f13/npc_raider
-	name = "loot drop"
-	lootcount = 1
-	lootdoubles = FALSE
-	loot = list(
-		/obj/effect/spawner/bundle/f13/sig,
-		/obj/effect/spawner/bundle/f13/beretta,
-		/obj/effect/spawner/bundle/f13/ninemil
 	)
 
 /obj/effect/spawner/lootdrop/f13/ncr_c_ration

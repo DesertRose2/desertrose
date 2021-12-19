@@ -34,6 +34,7 @@
 	var/assemblytype //the type of door frame to drop during deconstruction
 	var/datum/effect_system/spark_spread/spark_system
 	var/damage_deflection = 10
+	var/ranged_deflection = 5
 	var/real_explosion_block	//ignore this, just use explosion_block
 	var/red_alert_access = FALSE //if TRUE, this door will always open on red alert
 	var/poddoor = FALSE
@@ -221,6 +222,11 @@
 
 /obj/machinery/door/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
 	if(damage_flag == "melee" && damage_amount < damage_deflection)
+		return 0
+	. = ..()
+
+/obj/machinery/door/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
+	if(damage_flag == "bullet" | damage_flag == "laser" | damage_flag == "energy" && damage_amount < ranged_deflection)
 		return 0
 	. = ..()
 

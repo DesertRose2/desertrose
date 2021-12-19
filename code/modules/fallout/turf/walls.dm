@@ -7,7 +7,7 @@
 	icon_state = "matrix"
 
 /turf/closed/wall/f13/ReplaceWithLattice()
-	ChangeTurf(baseturfs)
+	ScrapeAway()
 
 /turf/closed/wall/f13/ruins
 	name = "ruins"

@@ -79,12 +79,12 @@
 	if(attached_device)
 		attached_device.Crossed(AM)
 
-/obj/item/transfer_valve/on_attack_hand()//Triggers mousetraps
+/obj/item/transfer_valve/on_attack_hand(user, act_intent)//Triggers mousetraps
 	. = ..()
 	if(.)
 		return
 	if(attached_device)
-		attached_device.attack_hand()
+		attached_device.attack_hand(user, act_intent)
 
 //These keep attached devices synced up, for example a TTV with a mouse trap being found in a bag so it's triggered, or moving the TTV with an infrared beam sensor to update the beam's direction.
 
@@ -172,20 +172,15 @@
 		if(!target_self)
 			target.set_volume(target.return_volume() + tank_two.volume)
 		target.set_volume(target.return_volume() + tank_one.air_contents.return_volume())
-	var/datum/gas_mixture/temp
-	temp = tank_one.air_contents.remove_ratio(1)
-	target.merge(temp)
+	tank_one.air_contents.transfer_ratio_to(target, 1)
 	if(!target_self)
-		temp = tank_two.air_contents.remove_ratio(1)
-		target.merge(temp)
+		tank_two.air_contents.transfer_ratio_to(target, 1)
 
 /obj/item/transfer_valve/proc/split_gases()
 	if (!valve_open || !tank_one || !tank_two)
 		return
 	var/ratio1 = tank_one.air_contents.return_volume()/tank_two.air_contents.return_volume()
-	var/datum/gas_mixture/temp
-	temp = tank_two.air_contents.remove_ratio(ratio1)
-	tank_one.air_contents.merge(temp)
+	tank_two.air_contents.transfer_ratio_to(tank_one.air_contents, ratio1)
 	tank_two.air_contents.set_volume(tank_two.air_contents.return_volume() - tank_one.air_contents.return_volume())
 
 /*

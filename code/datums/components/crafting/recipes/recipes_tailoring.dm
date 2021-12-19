@@ -1167,6 +1167,29 @@
 	subcategory = CAT_GENCLOTHES
 */
 
+/datum/crafting_recipe/mutiesalvagedarmorconversion
+	name = "Mutant Power Armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/mutie
+	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor = 1,
+				/obj/item/stack/crafting/goodparts = 10,
+				/obj/item/weldingtool)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
+
+/datum/crafting_recipe/mutiehelmsalvagedarmorconversion
+	name = "Mutant Power Armor Helmet"
+	result = /obj/item/clothing/head/helmet/f13/power_armor/mutie
+	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor = 1,
+				/obj/item/stack/crafting/goodparts = 6,
+				/obj/item/weldingtool)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+	tools = list(TOOL_PASTATION)
 
 /datum/crafting_recipe/ncrsalvagedarmorconversion
 	name = "Salvaged NCR Power Armor"

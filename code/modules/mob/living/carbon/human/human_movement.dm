@@ -87,6 +87,7 @@
 					FP.bloodiness = S.bloody_shoes[S.blood_state]
 					if(S.last_bloodtype)
 						FP.blood_DNA[S.last_blood_DNA] = S.last_bloodtype
+					if(S.last_blood_color) // TODO: figure out how/why this is null when last_bloodtype isn't
 						if(!FP.blood_DNA["color"])
 							FP.blood_DNA["color"] = S.last_blood_color
 						else

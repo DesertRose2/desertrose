@@ -216,16 +216,15 @@
 	contents_explosion(severity, target)
 	switch(severity)
 		if(4)
-			if(prob(5))
-				ChangeTurf(baseturfs)
+			if(prob(95))
+				return
 		if(3)
-			if(prob(25))
-				ChangeTurf(baseturfs)
+			if(prob(75))
+				return
 		if(2)
 			if(prob(50))
-				ChangeTurf(baseturfs)
-		if(1)
-			ChangeTurf(baseturfs)
+				return
+	ScrapeAway()
 
 /////////////////////////////////////////////////////////
 
