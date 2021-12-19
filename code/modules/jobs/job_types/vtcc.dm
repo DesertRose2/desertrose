@@ -544,7 +544,7 @@
 /datum/outfit/loadout/deepend
 	name = "Riot Cadet"
 	backpack_contents = list(
-	/obj/item/gun/energy/laser/pistol=1,
+	/obj/item/gun/energy/laser/wattz/magneto=1,
 	/obj/item/stock_parts/cell/ammo/ec = 3,
 	/obj/item/clothing/mask/gas/sechailer=1,
 	/obj/item/grenade/smokebomb=1,
