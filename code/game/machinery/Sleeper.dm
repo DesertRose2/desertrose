@@ -4,6 +4,7 @@
 	icon_state = "console"
 	density = FALSE
 
+//Autodocs replacing sleepers was done by Wateronix as well as the sprites. Ultimately very good idea since it keeps with lore consistancy and provides a unique looking sprite.
 /obj/machinery/sleeper
 	name = "autodoc"
 	desc = "An old pre war machine, used to stablize and heal patients."
