@@ -15,19 +15,11 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 
-/obj/item/clothing/suit/armor/f13/raider/supafly/Initialize() //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/sadist
 	name = "sadist raider armor"
 	desc = "(IV) A bunch of metal chaps adorned with severed hands at the waist with a leather plate worn on the left shoulder. Very intimidating."
 	icon_state = "sadist"
 	item_state = "sadist"
-
-/obj/item/clothing/suit/armor/f13/raider/sadist/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster
 	name = "blastmaster raider armor"
@@ -37,19 +29,11 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	flash_protect = 2
 
-/obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/yankee
 	name = "yankee raider armor"
 	desc = "(IV) A set of armor made from bulky plastic and rubber. A faded sports team logo is printed in various places. Go Desert Rats!"
 	icon_state = "yankee"
 	item_state = "yankee"
-
-/obj/item/clothing/suit/armor/f13/raider/yankee/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
@@ -57,29 +41,17 @@
 	icon_state = "badlands"
 	item_state = "badlands"
 
-/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
 	desc = "(IV) A particularly unhuggable armor, even by raider standards. Extremely spiky."
 	icon_state = "painspike"
 	item_state = "painspike"
 
-/obj/item/clothing/suit/armor/f13/raider/painspike/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/iconoclast
 	name = "iconoclast raider armor"
 	desc = "(IV) A rigid armor set that appears to be fashioned from a radiation suit, or a mining suit."
 	icon_state = "iconoclast"
 	item_state = "iconoclast"
-
-/obj/item/clothing/suit/armor/f13/raider/iconoclast/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster
 	name = "combat duster"
@@ -93,10 +65,6 @@
 	icon_state = "patrolduster"
 	item_state = "patrolduster"
 
-/obj/item/clothing/suit/armor/f13/raider/combatduster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/desperado
 	name = "desperado duster"
 	desc = "(IV) Lightly armored leather overcoat reeking of gunpowder and cigarretes."
@@ -107,20 +75,12 @@
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	dog_fashion = null
 
-/obj/item/clothing/suit/armor/f13/raider/desperado/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/leather_jacket
 	name = "raider combat leather jacket"
 	icon_state = "combat_jacket"
 	item_state = "combat_jacket"
 	desc = "(IV) This heavily padded leather jacket is unusual in that it has two sleeves. You'll definitely make a fashion statement whenever, and wherever, you rumble."
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
-/obj/item/clothing/suit/armor/f13/raider/leather_jacket/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/raider_duster
 	name = "raider desert combat armor"
@@ -129,20 +89,12 @@
 	item_state = "reptiliatenebris"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
-/obj/item/clothing/suit/armor/f13/raider/raider_duster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/templar
 	name = "raider knight armor"
 	desc = "(IV) A set of old rusty armor with black and red tabard strapped to it."
 	icon_state = "templar"
 	item_state = "templar"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
-/obj/item/clothing/suit/armor/f13/raider/templar/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/exile
 	name = "base faction exile armor"
@@ -158,29 +110,17 @@
 	icon_state = "ncrexile"
 	item_state = "ncrexile"
 
-/obj/item/clothing/suit/armor/f13/exile/ncrexile/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/exile/legexile
 	name = "modified Legion armor"
 	desc = "(IV) A modified detoriated armor kit consisting of Legion gear and scrap metal."
 	icon_state = "legexile"
 	item_state = "legexile"
 
-/obj/item/clothing/suit/armor/f13/exile/legexile/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/exile/bosexile
 	name = "modified Brotherhood armor"
 	desc = "(IV) A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal."
 	icon_state = "brotherhood_armor_outcast"
 	item_state = "brotherhood_armor_outcast"
-
-/obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/raidercombat
 	name = "raider combat armor"

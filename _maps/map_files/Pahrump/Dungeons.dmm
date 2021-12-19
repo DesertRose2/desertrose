@@ -4325,7 +4325,7 @@
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = vaultshutters;
+	id = "vaultshutters";
 	max_integrity = 999999999999;
 	resistance_flags = 242
 	},
@@ -6724,7 +6724,7 @@
 /area/f13/tribe)
 "kqn" = (
 /obj/machinery/button/door{
-	id = vaultshutters;
+	id = "vaultshutters";
 	name = "overseer button"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -6917,7 +6917,7 @@
 "kFJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	id = overseerexit;
+	id = "overseerexit";
 	name = "overseer button"
 	},
 /turf/closed/indestructible/vaultdoor,
@@ -10620,7 +10620,7 @@
 /area/f13/bunker)
 "qop" = (
 /obj/machinery/door/poddoor/shutters{
-	id = overseerexit;
+	id = "overseerexit";
 	max_integrity = 999999999999;
 	resistance_flags = 242
 	},
@@ -13757,7 +13757,7 @@
 /area/f13/bunker)
 "vqj" = (
 /obj/machinery/button/door{
-	id = vaultshutters2;
+	id = "vaultshutters2";
 	name = "armory button";
 	pixel_x = 29
 	},
@@ -13945,7 +13945,7 @@
 /area/f13/bunker)
 "vCd" = (
 /obj/machinery/button/door{
-	id = overseerexit;
+	id = "overseerexit";
 	name = "overseer button"
 	},
 /obj/effect/decal/cleanable/dirt,

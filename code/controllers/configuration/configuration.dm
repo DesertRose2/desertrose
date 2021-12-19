@@ -353,8 +353,7 @@ Example config:
 			//if ("votable")
 			//	currentmap.votable = TRUE
 			if ("endmap")
-				LAZYINITLIST(maplist)
-				maplist[currentmap.map_name] = currentmap
+				LAZYSET(maplist, currentmap.map_name, currentmap)
 				currentmap = null
 			if ("disabled")
 				currentmap = null

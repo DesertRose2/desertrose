@@ -245,12 +245,6 @@
 	maxcharge = 40000
 	chargerate = 1500
 
-/obj/item/stock_parts/cell/ammo/ecp
-	name = "electron charge pack"
-	desc = "An electron charge pack, typically used as ammunition for rapidly-firing energy weapons."
-	icon_state = "icell"
-	maxcharge = 2400
-
 /obj/item/stock_parts/cell/pulse/carbine //25 pulse shots
 	name = "pulse carbine power cell"
 	maxcharge = 5000
@@ -415,9 +409,13 @@
 	name = "toy mag burst rifle power supply"
 	maxcharge = 4000
 
+
+// FALLOUT POWER CELLS //
+
 /obj/item/stock_parts/cell/ammo
-	name = "ammo cell"
-	desc = "You shouldn't be holding this."
+	name = "ammo cell template"
+	desc = "Bugreport please."
+	icon = 'icons/fallout/objects/powercells.dmi'
 	cancharge = 0
 	w_class = WEIGHT_CLASS_TINY
 
@@ -434,7 +432,7 @@
 
 /obj/item/stock_parts/cell/ammo/mfc
 	name = "microfusion cell"
-	desc = "A microfusion cell, typically used as ammunition for large energy weapons."
+	desc = "A microfusion cell, powerful enough to be used as ammunition for large energy weapons."
 	icon_state = "mfc-full"
 	maxcharge = 2000
 
@@ -455,8 +453,8 @@
 	maxcharge = 2000
 
 /obj/item/stock_parts/cell/ammo/ec
-	name = "energy cell"
-	desc = "An energy cell, typically used as ammunition for small-arms energy weapons."
+	name = "small energy cell"
+	desc = "Energy cells are small, self-contained energy storage units often associated with one-handed energy weapons and act essentially as a very powerful battery or capacitor. They are the standard ammunition used by the majority of pistol-sized energy weapons, and as such are widely available across the Mojave Wasteland."
 	icon_state = "ec-full"
 	maxcharge = 1600
 
@@ -470,6 +468,18 @@
 			icon_state = "ec-onethirds"
 		if (0 to 50)
 			icon_state = "ec-empty"
+	. = ..()
+
+/obj/item/stock_parts/cell/ammo/ecp
+	name = "electron charge pack"
+	desc = "A electron charge pack, for rapidly-firing energy weapons."
+	icon_state = "ecp"
+	maxcharge = 2400
+
+/obj/item/stock_parts/cell/ammo/ecp/update_icon()
+	switch(charge)
+		if (0 to 50)
+			icon_state = "ecp-empty"
 	. = ..()
 
 /obj/item/stock_parts/cell/ammo/alien

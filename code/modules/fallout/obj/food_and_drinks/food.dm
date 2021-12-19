@@ -254,15 +254,35 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
 	filling_color = "#B22222"
 
+
 //WASTELAND EGGS
 
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg
-	name = "Deathclaw Egg"
+	name = "deathclaw egg"
 	desc = "A deathclaw egg. It has a brownish-red shell. Look at this thing, it's as big as your torso!"
-	icon_state = "deathclawegg"
+	icon = 'icons/fallout/mobs/mob_drops.dmi'
+	icon_state = "egg_deathclaw"
 	bonus_reagents = list(/datum/reagent/toxin = 30)
 	list_reagents = list(/datum/reagent/consumable/eggyolk = 40)
 	filling_color = "#F0E68C"
+
+/obj/item/reagent_containers/food/snacks/f13/egg_nightstalker
+	name = "nightstalker egg"
+	desc = "A shiny, leathery egg."
+	icon = 'icons/fallout/mobs/mob_drops.dmi'
+	icon_state = "egg_nightstalker"
+	bonus_reagents = list(/datum/reagent/toxin = 5)
+	list_reagents = list(/datum/reagent/consumable/eggyolk = 20)
+	filling_color = "#FFDF00"
+
+/obj/item/reagent_containers/food/snacks/f13/egg_mirelurk
+	name = "mirelurk egg"
+	desc = "A bluish egg with very hard shell."
+	icon = 'icons/fallout/mobs/mob_drops.dmi'
+	icon_state = "egg_mirelurk"
+	list_reagents = list(/datum/reagent/consumable/eggyolk = 30)
+	filling_color = "#E6E6FA"
+
 
 //WASTELAND PREPARED MEALS
 
