@@ -191,6 +191,7 @@
 			var/area/A = i
 			for(var/turf/T in get_area_turfs(A))
 				weather_act_turf(T)
+				CHECK_TICK
 	for(var/i in (carbons_only ? GLOB.carbon_list : GLOB.mob_living_list))
 		var/mob/living/L = i
 		if(can_weather_act(L))
