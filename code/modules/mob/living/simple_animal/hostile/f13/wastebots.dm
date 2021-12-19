@@ -1,7 +1,9 @@
+// In this document: Mr Handy, Securitron, Protectron, Sentry Bot, Assaultron
+
 /mob/living/simple_animal/hostile/handy
 	name = "mr. handy"
 	desc = "A crazed pre-war household assistant robot, armed with a cutting saw."
-	icon = 'icons/mob/robots.dmi'
+	icon = 'icons/fallout/mobs/robots/wasterobots.dmi'
 	icon_state = "handy"
 	icon_living = "handy"
 	icon_dead = "gib7"
@@ -123,11 +125,14 @@
 	faction = list("raider")
 	obj_damage = 300
 
+
+// SECURITRON //
+
 /mob/living/simple_animal/hostile/handy/securitron
 	name = "Securitron"
 	desc = "A private security robot created and mass-produced by the H&H Tools Factory"
-	icon_state = "Securitron"
-	icon_living = "Securitron"
+	icon_state = "securitron"
+	icon_living = "securitron"
 	icon_dead = "gib7"
 	health = 250
 	maxHealth = 250
@@ -140,15 +145,39 @@
 	extra_projectiles = 3
 	ranged = TRUE
 	retreat_distance = 2
-	minimum_distance = 2
+	minimum_distance = 4
 	check_friendly_fire = TRUE
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
 	emote_taunt_sound = null
 	emote_taunt = list("readies its arm gun")
+	emote_hear = list("Beeps.")
 	aggrosound = null
 	idlesound = null
 	death_sound = null
 	attack_sound = null
+	status_flags = CANPUSH
+
+
+/mob/living/simple_animal/hostile/handy/securitron/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] securitron invoked bullet_act() without a projectile")
+	if(prob(10) && health > 1)
+		visible_message("<span class='danger'>\The [src] releases a defensive flashbang!</span>")
+		var/flashbang_turf = get_turf(src)
+		if(!flashbang_turf)
+			return
+		var/obj/item/grenade/flashbang/sentry/S = new /obj/item/grenade/flashbang/sentry(flashbang_turf)
+		S.preprime(user = null)
+	if(prob(75) || Proj.damage > 26) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
+		return ..()
+	else
+		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		return FALSE
+
+/mob/living/simple_animal/hostile/handy/securitron/Aggro()
+	. = ..()
+	summon_backup(15)
+	say("Stop Right There Criminal!")
 
 /mob/living/simple_animal/hostile/handy/securitron/AttackingTarget()
 	. = ..()
@@ -160,63 +189,8 @@
 	obj_damage = 300
 	retreat_distance = 0 //perish, mortal
 
-/mob/living/simple_animal/hostile/handy/liberator
-	name = "liberator"
-	desc = "A small pre-War droned used by the People's Liberation Army."
-	icon_state = "liberator"
-	icon_living = "leberator"
-	icon_dead = "liberator_d"
-	icon_gib = "liberator_g"
-	health = 80
-	maxHealth = 80
-	melee_damage_lower = 5
-	melee_damage_upper = 10
-	attack_verb_simple = "slaps"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	projectilesound = 'sound/weapons/laser.ogg'
-	projectiletype = /obj/item/projectile/beam/laser/pistol
-	extra_projectiles = 1
-	ranged = TRUE
-	retreat_distance = 2
-	minimum_distance = 2
-	check_friendly_fire = TRUE
-	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
-	emote_taunt_sound = null
-	emote_taunt = list("levels its laser")
-	aggrosound = null
-	idlesound = null
-	death_sound = null
-	attack_sound = null
 
-/mob/living/simple_animal/hostile/handy/liberator_yellow
-	name = "liberator"
-	desc = "A small pre-War droned used by the People's Liberation Army."
-	icon_state = "liberator_y"
-	icon_living = "leberator_y"
-	icon_dead = "liberator_y_d"
-	health = 80
-	maxHealth = 80
-	melee_damage_lower = 5
-	melee_damage_upper = 10
-	attack_verb_simple = "slaps"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	projectilesound = 'sound/weapons/laser.ogg'
-	projectiletype = /obj/item/projectile/beam/laser/pistol
-	extra_projectiles = 1
-	ranged = TRUE
-	retreat_distance = 2
-	minimum_distance = 2
-	check_friendly_fire = TRUE
-	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
-	emote_taunt_sound = null
-	emote_taunt = list("levels its laser")
-	aggrosound = null
-	idlesound = null
-	death_sound = null
-	attack_sound = null
-
-/mob/living/simple_animal/hostile/handy/liberator_yellow/AttackingTarget()
-	. = ..()
+// ROBOBRAIN //
 
 /mob/living/simple_animal/hostile/handy/robobrain
 	name = "robobrain"
@@ -256,9 +230,13 @@
 	health = 300
 	maxHealth = 300
 
+
+// PROTECTRON //
+
 /mob/living/simple_animal/hostile/handy/protectron
 	name = "protectron"
 	desc = "A pre-war security robot armed with deadly lasers."
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
 	icon_state = "protectron"
 	icon_living = "protectron"
 	icon_dead = "protectron_dead"
@@ -312,12 +290,12 @@
 	obj_damage = 300
 
 /mob/living/simple_animal/pet/dog/protectron //Not an actual dog
-	name = "Trading Protectron"
+	name = "trading protectron"
 	desc = "A standard RobCo RX2 V1.16.4 \"Trade-o-Vend\", loaded with Trade protocols.<br>Looks like it was kept operational for an indefinite period of time. Its body is covered in cracks and dents of various sizes.<br>As it has been repaired countless times, it's amazing the machine is still functioning at all."
-	icon = 'icons/fallout/mobs/animal.dmi'
-	icon_state = "protectron"
-	icon_living = "protectron"
-	icon_dead = "protectron_d"
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
+	icon_state = "protectron_trade"
+	icon_living = "protectron_trade"
+	icon_dead = "protectron_trade_dead"
 	maxHealth = 200
 	health = 200
 	speak_chance = 5
@@ -333,6 +311,9 @@
 	attack_sound = 'sound/voice/liveagain.ogg'
 	butcher_results = list(/obj/effect/gibspawner/robot = 1)
 	blood_volume = 0
+
+
+// SENTRY BOT //
 
 /mob/living/simple_animal/hostile/handy/sentrybot
 	name = "sentry bot"
@@ -487,6 +468,9 @@
 	retreat_distance = 0
 	environment_smash = 2 //wall-busts
 
+
+// ASSAULTRON //
+
 /mob/living/simple_animal/hostile/handy/assaultron
 	name = "assaultron"
 	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis."
@@ -532,3 +516,37 @@
 	desc = "An Assaultron modified for the Medical field, SA-S-E forgoes the weaponry and deadliness of her military countarparts to save lives. Painted white with blue highlights, and a blue cross on the front of her visor, this robot comes equipped with what looks like modified medical gear. Her head has no eye-laser, instead a gently pulsing blue eye that scans people the analyze their health, a defibrilator on her back, and articulated hands to be able to use the myriad medical tools strapped to parts of her body under protective cases all show this model is meant to save lives. She's stockier than other Assaultrons due to all the added gear, and her legs seem much thicker than normal due to reinforced servos and gears."
 	icon_state = "assaultron_sase"
 	icon_dead = "assaultron_sase_dead"
+
+
+// NON CANON ROBOT MOBS
+
+/mob/living/simple_animal/hostile/handy/liberator_yellow
+	name = "liberator"
+	desc = "A small pre-War droned used by the People's Liberation Army."
+	icon = 'icons/fallout/mobs/robots/weirdrobots.dmi'
+	icon_state = "liberator_y"
+	icon_living = "leberator_y"
+	icon_dead = "liberator_y_d"
+	health = 80
+	maxHealth = 80
+	melee_damage_lower = 5
+	melee_damage_upper = 10
+	attack_verb_simple = "slaps"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	projectilesound = 'sound/weapons/laser.ogg'
+	projectiletype = /obj/item/projectile/beam/laser/pistol
+	extra_projectiles = 1
+	ranged = TRUE
+	retreat_distance = 2
+	minimum_distance = 2
+	check_friendly_fire = TRUE
+	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
+	emote_taunt_sound = null
+	emote_taunt = list("levels its laser")
+	aggrosound = null
+	idlesound = null
+	death_sound = null
+	attack_sound = null
+
+/mob/living/simple_animal/hostile/handy/liberator_yellow/AttackingTarget()
+	. = ..()
