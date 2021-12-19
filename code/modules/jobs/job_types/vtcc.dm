@@ -537,9 +537,8 @@
 /datum/outfit/loadout/newblood
 	name = "Shock Cadet"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/shotgun/hunting = 1,
-	/obj/item/ammo_box/shotgun/buck = 2,
-	/obj/item/ammo_box/shotgun/slug=1
+	/obj/item/gun/ballistic/automatic/m1carbine=1,
+	/obj/item/ammo_box/magazine/m10mm_adv=2
 	)
 
 /datum/outfit/loadout/deepend
@@ -555,6 +554,8 @@
 /datum/outfit/loadout/vcfmedic
 	name = "Field Medic"
 	backpack_contents = list(
+	/obj/item/gun/ballistic/automatic/pistol/n99=1,
+	/obj/item/ammo_box/magazine/m10mm=2,
 	/obj/item/storage/bag/chemistry=1,
 	/obj/item/storage/survivalkit_aid=1,
 	/obj/item/storage/box/medicine/stimpak5=3,
