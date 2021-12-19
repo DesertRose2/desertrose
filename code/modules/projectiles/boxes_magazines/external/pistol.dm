@@ -31,7 +31,7 @@
 
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"
-	icon_state = "45"
+	icon_state = "m45"
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 8

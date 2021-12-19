@@ -569,7 +569,7 @@
 	alpha = 255
 
 /obj/structure/trap/ctf/examine(mob/user)
-	return
+	return list()
 
 /obj/structure/trap/ctf/trap_effect(mob/living/L)
 	if(!is_ctf_target(L))

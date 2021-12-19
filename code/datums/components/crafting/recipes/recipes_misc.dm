@@ -681,7 +681,7 @@
 	time = 20
 	reqs = list(/obj/item/grown/sunflower = 5,
 				/obj/item/stack/cable_coil = 3)
-	subcategory = CAT_MISCELLANEOUS	
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/poppycrown
@@ -701,4 +701,27 @@
 				/obj/item/stack/cable_coil = 3)
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_CLOTHING
-	
+
+/datum/crafting_recipe/shutters
+	name = "Shutters"
+	reqs = list(/obj/item/stack/sheet/plasteel = 10,
+				/obj/item/stack/cable_coil = 10,
+				/obj/item/electronics/airlock = 1
+				)
+	result = /obj/machinery/door/poddoor/shutters/old/preopen
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
+	time = 15 SECONDS
+	subcategory = CAT_FURNITURE
+	category = CAT_MISC
+
+/datum/crafting_recipe/blast_doors
+	name = "Blast Door"
+	reqs = list(/obj/item/stack/sheet/plasteel = 15,
+				/obj/item/stack/cable_coil = 15,
+				/obj/item/electronics/airlock = 1
+				)
+	result = /obj/machinery/door/poddoor/preopen
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
+	time = 30 SECONDS
+	subcategory = CAT_FURNITURE
+	category = CAT_MISC

@@ -579,6 +579,31 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
+//Combat Rifle		Keywords: .45 Caliber Rifle, No Autosear (!)
+/obj/item/gun/ballistic/automatic/combat
+	name = "Combat Rifle"
+	desc = "A .45 semi-automatic combat rifle, produced pre-war for National Guard forces."
+	icon = 'icons/obj/guns/ballistic/combat_rifle.dmi'
+	icon_state = "combat_rifle"
+	item_state = "R82"
+	fire_sound = 'sound/f13weapons/combatrifle.ogg'
+	mag_type = /obj/item/ammo_box/magazine/greasegun
+	burst_size = 1
+	fire_delay = 3
+	extra_damage = 5
+	extra_penetration = 0.1
+	spread = 1
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	automatic_burst_overlay = FALSE
+	semi_auto = TRUE
+	can_attachments = TRUE
+	can_bayonet = FALSE
+	can_suppress = FALSE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 37
+	suppressor_y_offset = 16
+
 //Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
@@ -595,7 +620,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags, No Attachments. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
+//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
@@ -603,7 +628,6 @@
 	item_state = "assault_carbine"
 	fire_delay = 3.5
 	spread = 2
-	can_attachments = FALSE
 	bayonet_state = "bayonet"
 	can_bayonet = TRUE
 	knife_x_offset = 34
@@ -613,7 +637,22 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 18
 
-//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 20 (10-50) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
+//'Maxson' Scout Carbine		Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR.
+/obj/item/gun/ballistic/automatic/service/maxson/caseless
+	name = "'Maxson' scout carbine"
+	desc = "A 4.73 semi-automatic service rifle manufactured post-war by the Senora Brotherhood chapter. This once fine AR-platform gun has been mangled into a strange firearm made for stealth due to its caseless ammunition and odd choice in round."
+	icon_state = "maxson_case"
+	item_state = "assault_carbine"
+	mag_type = /obj/item/ammo_box/magazine/m473_pistol
+	can_bayonet = FALSE
+	fire_delay = 4
+	spread = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	extra_damage = 2
+
+//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
 /obj/item/gun/ballistic/automatic/service/maxson/c5mm
 	name = "'Maxson' assault carbine"
 	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
@@ -625,6 +664,7 @@
 	fire_delay = 4
 	spread = 15
 	extra_damage = 0
+	can_attachments = FALSE
 
 
 //Marksman Carbine		Keywords: 5.56,Semi-Autoamtic, 20 (10-50) round mags, Scoped.
@@ -882,6 +922,24 @@
 						"Makeshift Pilum" = "pilum"
 						)
 
+//VTCC Supression Rifle		Keywords: VTCC 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+/obj/item/gun/ballistic/automatic/assault_rifle/vtcc
+	name = "supression rifle"
+	desc = "A humble assault rifle, based off the out-dated R91 assault rifle. Primarily seen in use by the armed forces of the VTCC."
+	icon_state = "r91_vtcc"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	burst_size = 2
+	fire_delay = 3.5
+	burst_shot_delay = 3.5
+	can_attachments = FALSE
+	can_bayonet = TRUE
+	can_scope = FALSE
+	bayonet_state = "bayonet"
+	knife_x_offset = 24
+	knife_y_offset = 11
+	spread = 5
+	can_suppress = TRUE
+
 //Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
 	name = "Type 93 assault rifle"
@@ -944,12 +1002,11 @@
 	weapon_weight = WEAPON_HEAVY
 	force = 25
 	burst_size = 2
-	fire_delay = 2.5
+	fire_delay = 4
 	burst_shot_delay = 2
 	spread = 10
 	can_suppress = FALSE
 	can_attachments = TRUE
-	can_automatic = TRUE
 	can_scope = FALSE
 	zoomable = TRUE
 	zoom_amt = 10

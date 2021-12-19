@@ -181,9 +181,10 @@
 	if(iscarbon(loc))
 		var/mob/living/carbon/C = loc
 		C.visible_message("<span class='danger'>The [zone_name] on [C]'s [src.name] is [break_verb] away!</span>", "<span class='userdanger'>The [zone_name] on your [src.name] is [break_verb] away!</span>", vision_distance = COMBAT_MESSAGE_RANGE)
-		RegisterSignal(C, COMSIG_MOVABLE_MOVED, .proc/bristle)
+		if(LAZYLEN(zones_disabled)) // if we already had some, don't re-register, it was done on equip
+			RegisterSignal(C, COMSIG_MOVABLE_MOVED, .proc/bristle)
 
-	zones_disabled++
+	LAZYADD(zones_disabled, def_zone)
 	for(var/i in zone2body_parts_covered(def_zone))
 		body_parts_covered &= ~i
 
@@ -192,7 +193,7 @@
 		return
 
 	damaged_clothes = CLOTHING_DAMAGED
-	switch(zones_disabled)
+	switch(length(zones_disabled))
 		if(1)
 			name = "damaged [initial(name)]"
 		if(2)
@@ -485,6 +486,7 @@ BLIND     // can't see anything
 
 /// If we're a clothing with at least 1 shredded/disabled zone, give the wearer a periodic heads up letting them know their clothes are damaged
 /obj/item/clothing/proc/bristle(mob/living/L)
+	SIGNAL_HANDLER
 	if(!istype(L))
 		return
 	if(prob(0.2))

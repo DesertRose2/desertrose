@@ -198,6 +198,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
+	l_pocket 	= /obj/item/flashlight/seclite
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/storage/bag/money/small/ncr=1,\
@@ -262,6 +263,7 @@ Medical Officer
 	l_hand		= /obj/item/storage/firstaid/regular
 	r_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
 	mask 		= /obj/item/clothing/mask/surgical
+	l_pocket	= /obj/item/flashlight/seclite
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=2, \
 		/obj/item/storage/survivalkit_aid_adv=1, \
@@ -314,6 +316,7 @@ Sergeant First Class
 	suit 			= /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	head 			= /obj/item/clothing/head/f13/ncr/goggles
 	belt			= /obj/item/storage/belt/military/assault/ncr
+	l_pocket 		= /obj/item/flashlight/seclite
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncr=1, \
@@ -382,6 +385,7 @@ Sergeant
 	head 			= /obj/item/clothing/head/f13/ncr/goggles
 	glasses			= /obj/item/clothing/glasses/sunglasses/big
 	neck 			= /obj/item/storage/belt/holster/ncr
+	l_pocket 		= /obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrofficers=1, \
@@ -467,10 +471,12 @@ Corporal
 	accessory 		= /obj/item/clothing/accessory/ncr/CPL
 	head 			= /obj/item/clothing/head/f13/ncr/goggles
 	glasses			= /obj/item/clothing/glasses/sunglasses
+	l_pocket 		= /obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
-		/obj/item/kitchen/knife/combat=1
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/binoculars=1
 		)
 
 //Base Infantry
@@ -549,6 +555,7 @@ Combat Medic
 	suit_store		= /obj/item/gun/ballistic/automatic/service
 	l_hand			= /obj/item/storage/firstaid/regular
 	mask 			= /obj/item/clothing/mask/surgical
+	l_pocket		= /obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
@@ -595,6 +602,7 @@ Combat Engineer
 	gloves			= /obj/item/clothing/gloves/color/yellow
 	accessory		= /obj/item/clothing/accessory/armband/engine/ncr
 	suit_store		= /obj/item/gun/ballistic/automatic/service
+	l_pocket 		= /obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
@@ -646,8 +654,9 @@ Mp
 	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	belt = 			/obj/item/storage/belt/military/assault/ncr
-	gloves			= /obj/item/clothing/gloves/f13/leather/fingerless
-	ears 		= /obj/item/radio/headset/headset_ncr_com
+	gloves	= 		/obj/item/clothing/gloves/f13/leather/fingerless
+	ears 		= 	/obj/item/radio/headset/headset_ncr_com
+	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit=1, \
 		/obj/item/storage/survivalkit_aid=1, \
@@ -701,6 +710,8 @@ Heavy Trooper
 	accessory =     /obj/item/clothing/accessory/ncr/SPC
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45b
 	neck =			/obj/item/storage/belt/holster/ncr
+	belt = 			/obj/item/storage/belt/military/reconbandolier
+	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/ammo_box/magazine/lmg=2, \
@@ -742,6 +753,7 @@ Trooper
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
 	accessory =     /obj/item/clothing/accessory/ncr/TPR
 	neck = 			/obj/item/storage/belt/holster
+	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
@@ -812,6 +824,7 @@ Recruit
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/rifle/mag/varmint
 	belt = 			/obj/item/storage/belt/military/assault/ncr
+	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
@@ -888,6 +901,7 @@ Veteran Ranger
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_ranger
+	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
@@ -954,6 +968,7 @@ Veteran Ranger
 	belt =			/obj/item/storage/belt/military/reconbandolier
 	gloves =		/obj/item/clothing/gloves/patrol
 	ears = 			/obj/item/radio/headset/headset_ranger
+	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars
 	l_hand =		/obj/item/guncase
 	backpack_contents = list(
@@ -1022,6 +1037,7 @@ Veteran Ranger
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	gloves = 		/obj/item/clothing/gloves/patrol
 	ears = 			/obj/item/radio/headset/headset_ranger
+	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid = 1,	\

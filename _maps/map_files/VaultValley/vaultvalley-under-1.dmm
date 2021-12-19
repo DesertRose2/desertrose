@@ -755,7 +755,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/ncr)
 "hU" = (
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -825,9 +824,7 @@
 /area/f13/tunnel)
 "is" = (
 /obj/structure/ladder/unbreakable{
-	down = metrodungeon;
-	id = metrodungeonentrance;
-	up = null
+	id = "metrodungeonentrance";
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -1119,7 +1116,6 @@
 /area/f13/bunker)
 "kz" = (
 /obj/structure/chair/stool,
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},

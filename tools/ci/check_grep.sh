@@ -74,6 +74,10 @@ if grep -i 'vault[\s-]?tek' _maps/**/*.dmm; then
     echo "ERROR: Misspelling(s) of Vault-Tec detected in maps, please replace the K with a C."
     st=1
 fi;
+if grep -i '^\t(light|light_sources) = ' _maps/**/*.dmm; then
+	echo "ERROR: var/light or var/light_sources set in maps, please remove them."
+	st=1
+fi;
 if ls _maps/*.json | grep -P "[A-Z]"; then
     echo "Uppercase in a map json detected, these must be all lowercase."
     st=1

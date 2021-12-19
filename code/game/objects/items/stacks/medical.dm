@@ -450,7 +450,7 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		C.visible_message("<span class='suicide'>[C] is squirting all of \the [src] into [C.p_their()] mouth! That's not proper procedure! It looks like [C.p_theyre()] trying to commit suicide!</span>")
-		if(do_after(C, 2 SECONDS))
+		if(do_after(C, 2 SECONDS, C))
 			C.emote("scream")
 			for(var/i in C.bodyparts)
 				var/obj/item/bodypart/bone = i

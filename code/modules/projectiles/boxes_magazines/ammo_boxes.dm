@@ -3,7 +3,7 @@
 	name = "speed loader (.357)"
 	desc = "Designed to quickly reload revolvers."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "357"
+	icon_state = "a357"
 	ammo_type = /obj/item/ammo_casing/a357
 	caliber = "357"
 	max_ammo = 6
@@ -19,6 +19,9 @@
 /obj/item/ammo_box/a357/dumdum
 	name = "speed loader (.357 DumDum)"
 	desc = "Designed to quickly reload revolvers. Usage of these rounds will constitute a war crime in your area."
+
+/obj/item/ammo_box/a357/empty
+	start_empty = 1
 
 /obj/item/ammo_box/tube/a357
 	name = "speed loader tube (.357)"
@@ -440,6 +443,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun
 	icon_state = "lbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/buck
 	name = "Buckshot shotgun ammo box"
@@ -448,6 +452,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	icon_state = "gbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/magnum
 	name = "Magnum buckshot shotgun ammo box"
@@ -456,6 +461,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
 	icon_state = "gbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/bean
 	name = "Beanbag shotgun ammo box"
@@ -464,6 +470,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	icon_state = "stunbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/shotgun/rubber
 	name = "Rubbershot shotgun ammo box"
@@ -472,6 +479,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
 	icon_state = "stunbox"
+	start_empty = FALSE
 
 /obj/item/ammo_box/a762/doublestacked
 	name = "double stack stripper clip (.308)"
@@ -707,7 +715,7 @@
 /obj/item/ammo_box/c45rev
 	name = "speed loader (.45 ACP)"
 	desc = "Designed to quickly reload revolvers."
-	icon_state = "38"
+	icon_state = "10mm"
 	caliber = ".45"
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 6
@@ -748,9 +756,9 @@
 
 /obj/item/ammo_box/m473
 	name = "ammo box (4.73mm caseless)"
-	icon_state = "38box" //temporary until new sprite comes along
+	icon_state = "5mmbox" //i cannot be fucked to make a new sprite for it rn so - someone else can eventually(tm, rights reserved exdee)
 	ammo_type = /obj/item/ammo_casing/caseless/g11
-	max_ammo = 50
+	max_ammo = 100
 
 /*
 /obj/item/ammo_box/plasmamusket
