@@ -479,7 +479,7 @@
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
+		/obj/item/grenade/smokebomb=2,
 	)
 
 /datum/outfit/job/vtcc/f13provostsgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -545,8 +545,8 @@
 /datum/outfit/loadout/deepend
 	name = "Riot Cadet"
 	backpack_contents = list(
-	/obj/item/gun/ballistic/automatic/pistol/n99=1,
-	/obj/item/ammo_box/magazine/m10mm_adv = 3,
+	/obj/item/gun/energy/laser/pistol=1,
+	/obj/item/stock_parts/cell/ammo/ec = 3,
 	/obj/item/clothing/mask/gas/sechailer=1,
 	/obj/item/grenade/smokebomb=1,
 	/obj/item/shield/riot/tele=1
