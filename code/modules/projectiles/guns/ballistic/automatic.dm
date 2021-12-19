@@ -579,6 +579,31 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
+//Combat Rifle		Keywords: .45 Caliber Rifle, No Autosear (!)
+/obj/item/gun/ballistic/automatic/combat
+	name = "Combat Rifle"
+	desc = "A .45 semi-automatic combat rifle, produced pre-war for National Guard forces."
+	icon = 'icons/obj/guns/ballistic/combat_rifle.dmi'
+	icon_state = "combat_rifle"
+	item_state = "R82"
+	fire_sound = 'sound/f13weapons/combatrifle.ogg'
+	mag_type = /obj/item/ammo_box/magazine/greasegun
+	burst_size = 1
+	fire_delay = 3
+	extra_damage = 5
+	extra_penetration = 0.1
+	spread = 1
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	automatic_burst_overlay = FALSE
+	semi_auto = TRUE
+	can_attachments = TRUE
+	can_bayonet = FALSE
+	can_suppress = FALSE
+	suppressor_state = "suppressor"
+	suppressor_x_offset = 37
+	suppressor_y_offset = 16
+
 //Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"

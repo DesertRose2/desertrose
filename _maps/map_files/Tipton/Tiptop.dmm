@@ -22626,7 +22626,7 @@
 /obj/structure/lattice,
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = mootant
+	id = "mootant"
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"

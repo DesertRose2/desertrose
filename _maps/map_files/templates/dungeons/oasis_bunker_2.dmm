@@ -2024,7 +2024,7 @@
 /obj/machinery/door/poddoor{
 	armor = list("melee" = 5000, "bullet" = 10000, "laser" = 10000, "energy" = 10000, "bomb" = 5000, "bio" = 10000, "rad" = 10000, "fire" = 10000, "acid" = 7000);
 	desc = "An extremely heavy duty blast door that opens mechanically.";
-	id = bunkeelee;
+	id = "bunkeelee";
 	max_integrity = 6000000
 	},
 /obj/structure/simple_door/bunker,
@@ -3045,7 +3045,7 @@
 "Yp" = (
 /obj/structure/table,
 /obj/machinery/button{
-	id = bunkeelee
+	id = "bunkeelee"
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
