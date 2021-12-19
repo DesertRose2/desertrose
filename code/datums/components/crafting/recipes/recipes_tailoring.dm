@@ -389,10 +389,9 @@
 /datum/crafting_recipe/combat_armor
 	name = "combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat
-	reqs = list(/obj/item/stack/sheet/mineral/titanium = 5,
-				/obj/item/stack/crafting/metalparts = 2,
-				/obj/item/stack/sheet/durathread = 1,
-				/obj/item/stack/sheet/leather = 3)
+	reqs = list(/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/stack/crafting/goodparts = 5,
+				/obj/item/stack/sheet/metal = 10)
 	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/armor/combat)
 	time = 60
 	category = CAT_CLOTHING
@@ -402,10 +401,9 @@
 /datum/crafting_recipe/combat_helmet
 	name = "combat armor"
 	result = /obj/item/clothing/head/helmet/f13/combat
-	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
-				/obj/item/stack/crafting/metalparts = 1,
-				/obj/item/stack/sheet/durathread = 1,
-				/obj/item/stack/sheet/leather = 1)
+	reqs = list(/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/sheet/metal = 4)
 	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/armor/combat)
 	time = 60
 	category = CAT_CLOTHING
