@@ -84,17 +84,6 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
-
-/datum/crafting_recipe/combat_coat
-	name = "combat coat"
-	result = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
-	reqs = list(/obj/item/clothing/suit/armor/f13/leather_jacket/combat = 1,
-				/obj/item/stack/sheet/animalhide/deathclaw  = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 60
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-
 /*
 /datum/crafting_recipe/supaflyhelm_reinforced
 	name = "reinforced supafly helmet"
@@ -395,31 +384,45 @@
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-*//*
+*/
+
 /datum/crafting_recipe/combat_armor
 	name = "combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat
-	reqs = list(/obj/item/stack/sheet/mineral/titanium = 5,
-				/obj/item/stack/crafting/metalparts = 2,
-				/obj/item/stack/sheet/durathread = 1,
-				/obj/item/stack/sheet/leather = 3)
+	reqs = list(/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/stack/crafting/goodparts = 5,
+				/obj/item/stack/sheet/metal = 10)
 	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/armor/combat)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-*//*CRAFT rework: removed for balance
+	always_availible = FALSE
+
 /datum/crafting_recipe/combat_helmet
 	name = "combat armor"
 	result = /obj/item/clothing/head/helmet/f13/combat
-	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
-				/obj/item/stack/crafting/metalparts = 1,
-				/obj/item/stack/sheet/durathread = 1,
-				/obj/item/stack/sheet/leather = 1)
+	reqs = list(/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/sheet/metal = 4)
 	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/armor/combat)
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-*/
+	always_availible = FALSE
+
+/datum/crafting_recipe/combat_coat
+	name = "combat coat"
+	result = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
+	reqs = list(/obj/item/stack/sheet/leather = 4,
+				/obj/item/stack/sheet/cloth = 10,
+				/obj/item/stack/crafting/metalparts = 1,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_availible = FALSE
+
 /datum/crafting_recipe/bandolier
 	name = "bandolier"
 	result = /obj/item/storage/belt/bandolier

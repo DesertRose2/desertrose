@@ -525,6 +525,36 @@
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
 
+//combat rifle
+/datum/crafting_recipe/combatrifle
+	name = "Combat Rifle"
+	result = /obj/item/gun/ballistic/automatic/combat
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/metalparts = 10,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
+//Autoloader .45
+/datum/crafting_recipe/autoloader
+	name = ".45 Autoloader"
+	result = /obj/item/gun/ballistic/automatic/pistol/autoloader
+	reqs = list(/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/receiver = 1
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 //pps
 /datum/crafting_recipe/pps
 	name = "ppsh41"
