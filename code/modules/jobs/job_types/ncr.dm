@@ -970,7 +970,6 @@ Veteran Ranger
 	ears = 			/obj/item/radio/headset/headset_ranger
 	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars
-	l_hand =		/obj/item/guncase
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/storage/bag/money/small/ncr = 1, \
