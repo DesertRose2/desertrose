@@ -1,10 +1,11 @@
 /mob/living/simple_animal/hostile/ghoul
 	name = "feral ghoul"
 	desc = "A ghoul that has lost its mind and become aggressive."
-	icon = 'icons/mob/wastemobs.dmi'
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
 	icon_state = "feralghoul"
 	icon_living = "feralghoul"
 	icon_dead = "feralghoul_dead"
+	icon_gib = "feralghoul_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	robust_searching = 1
 	turns_per_move = 5
@@ -41,7 +42,6 @@
 /mob/living/simple_animal/hostile/ghoul/reaver
 	name = "feral ghoul reaver"
 	desc = "A ghoul that has lost its mind and become aggressive. This one is strapped with metal armor, and appears far stronger."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "ghoulreaver"
 	icon_living = "ghoulreaver"
 	icon_dead = "ghoulreaver_dead"
@@ -62,7 +62,6 @@
 /mob/living/simple_animal/hostile/ghoul/coldferal
 	name = "cold ghoul feral"
 	desc = "A ghoul that has lost its mind and become aggressive. This one is strapped with metal armor, and appears far stronger."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "cold_feral"
 	icon_living = "cold_feral"
 	icon_dead = "cold_feral_dead"
@@ -76,7 +75,6 @@
 /mob/living/simple_animal/hostile/ghoul/frozenreaver
 	name = "frozen ghoul reaver"
 	desc = "A ghoul that has lost its mind and become aggressive. This one is strapped with metal armor, and appears far stronger."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "frozen_reaver"
 	icon_living = "frozen_reaver"
 	icon_dead = "frozen_reaver_dead"
@@ -111,6 +109,7 @@
 	icon_state = "glowinghoul"
 	icon_living = "glowinghoul"
 	icon_dead = "glowinghoul_dead"
+	icon_gib = "glowinghoul_gib"
 	maxHealth = 130
 	health = 130
 	speed = 2
@@ -134,7 +133,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/ranged
 	name = "fiend ghoul"
-	desc = "A ghoul that has lost its mind and become aggressive. It appears to be wearing fiend equipemnt and using a Carl Gustav."
+	desc = "A mad ghoul dressed like a Fiend, using a Carl Gustav."
 	icon_state = "fiend_ghoul"
 	icon_living = "fiend_ghoul"
 	icon_dead = "fiend_ghoul_dead"
@@ -260,33 +259,27 @@
 /mob/living/simple_animal/hostile/ghoul/soldier
 	name = "ghoul soldier"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "soldier_ghoul"
 	icon_living = "soldier_ghoul"
 	icon_dead = "soldier_ghoul_d"
-	icon_gib = "syndicate_gib"
 	maxHealth = 90
 	health = 90
 
 /mob/living/simple_animal/hostile/ghoul/soldier/armored
 	name = "armored ghoul soldier"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "soldier_ghoul_a"
 	icon_living = "soldier_ghoul_a"
 	icon_dead = "soldier_ghoul_a_d"
-	icon_gib = "syndicate_gib"
 	maxHealth = 100
 	health = 100
 
 /mob/living/simple_animal/hostile/ghoul/scorched
 	name = "scorched ghoul soldier"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "scorched_m"
 	icon_living = "scorched_m"
 	icon_dead = "scorched_m_d"
-	icon_gib = "syndicate_gib"
 	speak_chance = 1
 	turns_per_move = 5
 	environment_smash = 0
@@ -307,7 +300,6 @@
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged
 	name = "Ranged Ghoul Solder"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "scorched_r"
 	icon_living = "scorched_r"
 	icon_dead = "scorched_r_d"
@@ -335,7 +327,6 @@
 /mob/living/simple_animal/hostile/ghoul/wyomingghost
 	name = "ghost soldier"
 	desc = "A figure clad in armor that stands silent except for the slight wheezing coming from them, a dark orange and black liquid pumps through a clear tube into the gas mask. The armor they wear seems to be sealed to their skin."
-	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "wyomingghost"
 	icon_living = "wyomingghost"
 	icon_dead = "wyomingghost_dead"
@@ -367,7 +358,6 @@
 	icon_state = "rebound"
 	icon_living = "rebound"
 	icon_dead = null
-	icon_gib = "syndicate_gib"
 	maxHealth = 120
 	health = 120
 	speed = 3
@@ -401,7 +391,6 @@
 	icon_state = "rebound_initiate"
 	icon_living = "rebound_initiate"
 	icon_dead = null
-	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	decompose = FALSE
 	speak = list("Destroy the non-believers....", "You will make fine addition to our army....", "There will be nothing left for them to bury...", "Glory to the All-Seeing One...")
@@ -465,7 +454,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver
 	name = "rebound ghoul reaver"
-	desc = "A heavy ghoul serving under the banner of the Rebound. They weild an AK-112 and clad in a set of a combat armor."
+	desc = "A heavy ghoul serving under the banner of the Rebound. They wield an AK-112 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver"
 	icon_living = "rebound_reaver"
 	icon_dead = null

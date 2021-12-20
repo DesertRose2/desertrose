@@ -15038,7 +15038,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "aTl" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "aTm" = (
@@ -20681,7 +20681,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "bkR" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkS" = (

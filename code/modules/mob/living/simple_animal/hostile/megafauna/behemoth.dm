@@ -3,10 +3,10 @@
 	desc = "A super mutant who has grown to an incredible size, it's skin is pulled tight! This one wields two lamposts that have had car doors tied to the ends creating deadly axes."
 	health = 3000
 	maxHealth = 3000
+	icon = 'icons/fallout/mobs/behemoth.dmi'
 	icon_state = "behemoth_axe"
 	icon_living = "behemoth_axe"
 	icon_dead = "behemoth_dead"
-	icon = 'icons/mob/Behemoth.dmi'
 	attack_verb_continuous = "slams"
 	attack_verb_simple = "slams"
 	attack_sound = 'sound/magic/demon_attack1.ogg'
