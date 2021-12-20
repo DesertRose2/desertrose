@@ -622,6 +622,7 @@
 	spawn_positions = 1
 	supervisors = "the Merchant & the Shopkeeper."
 	description = "Operate the shop when the Merchant's asleep or just isn't there, push and pull those crates to and fro like your life depends on it (and when your paycheck is based on performance, well, it certainly does). If there are no crates to pick up, head out into the wastes and start scavenging for anything you could sell at an extortionate price."
+	forbids = "Using the stock to go bunker busting. The stock is to be sold, not to be taken and used by personnel."
 
 	outfit = /datum/outfit/job/vtcc/f13roadie
 	exp_requirements = 600
