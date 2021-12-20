@@ -632,6 +632,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/m29/coltwalker)
 	healable = 1
 	ranged = 1
+	del_on_death = 0
 	projectiletype = /obj/item/projectile/bullet/m44/swc
 	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
 	casingtype = /obj/item/ammo_casing/m44/swc
@@ -646,6 +647,8 @@
 	ranged = 0
 	melee_damage_lower = 30
 	melee_damage_upper = 60
+	retreat_distance = 5
+	minimum_distance = 0
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/cautery, /obj/item/bodypart/r_arm/robot, /obj/item/hatchet)
 
 /mob/living/simple_animal/hostile/raider/junker/scrapper

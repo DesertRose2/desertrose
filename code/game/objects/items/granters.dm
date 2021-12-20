@@ -784,11 +784,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/scoutcarbine)
 
-/obj/item/book/granter/crafting_recipe/blueprint/tricarbine
-	name = "tribeam laser carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/tricarbine)
-
 /obj/item/book/granter/crafting_recipe/blueprint/wattz2k
 	name = "wattz 2000 laser rifle blueprint"
 	icon_state = "blueprint2"

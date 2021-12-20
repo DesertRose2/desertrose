@@ -37,7 +37,7 @@ post_signal(obj/source as obj|null, datum/signal/signal, var/filter as text|null
 		filter - described above.
 		range - radius of regular byond's square circle on that z-level. null means everywhere, on all z-levels.
 
-obj/proc/receive_signal(datum/signal/signal, receive_method as num, receive_param)
+/obj/proc/receive_signal(datum/signal/signal, receive_method as num, receive_param)
 	Handler from received signals. By default does nothing. Define your own for your object.
 	Avoid of sending signals directly from this proc, use spawn(0). Do not use sleep() here please.
 	parameters:
@@ -46,7 +46,7 @@ obj/proc/receive_signal(datum/signal/signal, receive_method as num, receive_para
 		TRANSMISSION_WIRE is currently unused.
 		receive_param - for TRANSMISSION_RADIO here comes frequency.
 
-datum/signal
+/datum/signal
 	vars:
 	source
 	an object that emitted signal. Used for debug and bearing.

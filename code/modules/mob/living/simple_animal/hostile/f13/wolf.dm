@@ -3,10 +3,10 @@
 /mob/living/simple_animal/hostile/wolf
 	name = "feral dog"
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>This one seems to be severely malnourished and its eyes are bloody red."
-	icon = 'icons/fallout/mobs/animal.dmi'
-	icon_state = "dog_angry"
-	icon_living = "dog_angry"
-	icon_dead = "dog_dead"
+	icon = 'icons/fallout/mobs/animals/dogs.dmi'
+	icon_state = "dog_feral"
+	icon_living = "dog_feral"
+	icon_dead = "dog_feral_dead"
 	icon_gib = "gib"
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	turns_per_move = 1
@@ -15,27 +15,16 @@
 	response_harm_simple = "kicks"
 	maxHealth = 60
 	health = 60
-//	self_weight = 35
-
 	faction = list("hostile", "wolf")
-
-//	sound_speak_chance = 5
-//	sound_speak = list('sound/f13npc/dog_charge1.ogg','sound/f13npc/dog_charge2.ogg','sound/f13npc/dog_charge3.ogg')
-
-//	aggro_sound_chance = 50
-//	aggro_sound = list('sound/f13npc/dog_alert1.ogg','sound/f13npc/dog_alert2.ogg','sound/f13npc/dog_alert3.ogg')
-
 	environment_smash = 0
 	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)
 	melee_damage_lower = 20
 	melee_damage_upper = 20
-	aggro_vision_range = 15
-//	idle_vision_range = 7
+	aggro_vision_range = 4
 	attack_verb_simple = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
 	move_to_delay = 2
-
 	emote_taunt_sound = list('sound/f13npc/dog/dog_charge1.ogg', 'sound/f13npc/dog/dog_charge2.ogg', 'sound/f13npc/dog/dog_charge3.ogg', 'sound/f13npc/dog/dog_charge4.ogg', 'sound/f13npc/dog/dog_charge5.ogg', 'sound/f13npc/dog/dog_charge6.ogg', 'sound/f13npc/dog/dog_charge7.ogg',)
 	emote_taunt = list("growls", "barks", "snarls")
 	taunt_chance = 30
@@ -58,14 +47,20 @@
 /mob/living/simple_animal/hostile/wolf/alpha
 	name = "alpha feral dog"
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>Wait... This one's a wolf!"
-	icon_state = "wolf_angry"
-	icon_living = "wolf_angry"
-	icon_dead = "wolf_dead"
+	icon_state = "dog_alpha"
+	icon_living = "dog_alpha"
+	icon_dead = "dog_alpha_dead"
 	icon_gib = "gib"
-	maxHealth = 100
-	health = 100
+	aggro_vision_range = 5
+	maxHealth = 75
+	health = 75
 	melee_damage_lower = 25
 	melee_damage_upper = 35
+
+/mob/living/simple_animal/hostile/wolf/alpha/Aggro()
+	..()
+	summon_backup(15)
+	say("Woof!")
 
 /mob/living/simple_animal/hostile/wolf/alpha/playable
 	health = 150
@@ -91,6 +86,25 @@
 	health = 100
 	melee_damage_lower = 25
 	melee_damage_upper = 35
+
+
+// FERAL DOGS
+
+/mob/living/simple_animal/hostile/wolf/feral_dog
+	name = "feral dog"
+	icon_state = "dog_feral"
+	icon_living = "dog_feral"
+	icon_dead = "dog_feral_dead"
+	icon_gib = "gib"
+
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha
+	name = "feral dog alpha"
+	icon_state = "dog_alpha"
+	icon_living = "dog_alpha"
+	icon_dead = "dog_alpha_dead"
+	icon_gib = "gib"
+
+
 
 //Unique Dogs - Guerilla for Khans is a Rottweiler, Brutus and Lupa german shepherds, Sniffs-the-Earth a sheepdog. 
 //Feel free to move or add code for different behaviours like sleep, some unused sprites prepped for that sort of thing.

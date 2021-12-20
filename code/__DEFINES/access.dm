@@ -106,6 +106,7 @@ DR2 VTCC Access, names should be self-explanatory */
 #define ACCESS_VTCC_BAR				138
 #define ACCESS_VTCC_SHOP			139
 #define ACCESS_VTCC_RESEARCH		140
+#define ACCESS_VTCC_ROADIE			141
 
 	//The Syndicate
 #define ACCESS_SYNDICATE 150//General Syndicate Access. Includes Syndicate mechs and ruins.
