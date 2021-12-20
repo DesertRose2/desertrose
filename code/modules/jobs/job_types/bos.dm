@@ -43,11 +43,9 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45b)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort45d)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort51b)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bospowerarmort60)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost45dhelm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost51bhelm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost60ahelm)
 
 /*
 Elder
@@ -233,7 +231,7 @@ Head Scribe
 /datum/outfit/loadout/hssword
 	name = "Sword Leader"
 	backpack_contents = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/tricarbine=1,
+		/obj/item/book/granter/crafting_recipe/blueprint/wattz2k=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/flux = 1,
 		/obj/item/advanced_crafting_components/conductors = 1,
@@ -254,7 +252,8 @@ Head Scribe
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health/night=1,
 		/obj/item/defibrillator/compact/combat=1,
-		/obj/item/reagent_containers/hypospray/CMO=1
+		/obj/item/reagent_containers/hypospray/CMO=1,
+		/obj/item/gun/medbeam=1
 		)
 
 /*

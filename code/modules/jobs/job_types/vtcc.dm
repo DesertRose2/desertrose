@@ -34,8 +34,8 @@
 		/datum/outfit/loadout/eldervaultie
 		)
 
-	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
 
 /datum/outfit/job/vtcc/f13alderman/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -93,8 +93,8 @@
 		/datum/outfit/loadout/armsdealer
 		)
 
-	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_BAR, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13merchant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -584,6 +584,9 @@
 	exp_requirements = 900
 	exp_type = EXP_TYPE_ROADIE
 
+	access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
+
 /datum/outfit/job/vtcc/f13shopkeep
 	name = "Shopkeeper"
 	id =		/obj/item/card/id
@@ -630,8 +633,8 @@
 		/datum/outfit/loadout/caravaner
 		)
 
-	access = list(ACCESS_VTCC, ACCESS_VTCC_SHOP)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_SHOP)
+	access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE)
+	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE)
 
 /datum/outfit/job/vtcc/f13roadie/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
