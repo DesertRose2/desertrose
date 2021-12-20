@@ -1,7 +1,13 @@
-//goat
+// In this document: Goat, Chicken, Brahmin, Radstag, Bighorner (also cow but supposed to be replaced by brahmin)
+
+//////////
+// GOAT //
+//////////
+
 /mob/living/simple_animal/hostile/retaliate/goat
 	name = "goat"
 	desc = "Not known for their pleasant disposition."
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "goat"
 	icon_living = "goat"
 	icon_dead = "goat_dead"
@@ -114,10 +120,11 @@
 /mob/living/simple_animal/cow
 	name = "cow"
 	desc = "Known for their milk, just don't tip them over."
-	icon_state = "cow"
-	icon_living = "cow"
-	icon_dead = "cow_dead"
-	icon_gib = "cow_gib"
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
+	icon_state = "brahmin"
+	icon_living = "brahmin"
+	icon_dead = "brahmin_dead"
+	icon_gib = "brahmin_gib"
 	gender = FEMALE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	speak = list("moo?","moo","MOOOOOO")
@@ -248,9 +255,41 @@
 	. = ..()
 	speak = GLOB.wisdoms //Done here so it's setup properly
 
+// Udder
+/obj/item/udder
+	name = "udder"
+
+/obj/item/udder/Initialize(loc, milk_reagent)
+	if(!milk_reagent)
+		milk_reagent = /datum/reagent/consumable/milk
+	create_reagents(50, NONE, NO_REAGENTS_VALUE)
+	reagents.add_reagent(milk_reagent, 20)
+	. = ..()
+
+/obj/item/udder/proc/generateMilk(datum/reagent/milk_reagent)
+	if(prob(5))
+		reagents.add_reagent(milk_reagent, rand(5, 10))
+
+/obj/item/udder/proc/milkAnimal(obj/O, mob/user)
+	var/obj/item/reagent_containers/glass/G = O
+	if(G.reagents.total_volume >= G.volume)
+		to_chat(user, "<span class='danger'>[O] is full.</span>")
+		return
+	var/transfered = reagents.trans_to(O, rand(5,10))
+	if(transfered)
+		user.visible_message("[user] milks [src] using \the [O].", "<span class='notice'>You milk [src] using \the [O].</span>")
+	else
+		to_chat(user, "<span class='danger'>The udder is dry. Wait a bit longer...</span>")
+
+
+/////////////
+// CHICKEN //
+/////////////
+
 /mob/living/simple_animal/chick
 	name = "\improper chick"
 	desc = "Adorable! They make such a racket though."
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "chick"
 	icon_living = "chick"
 	icon_dead = "chick_dead"
@@ -307,6 +346,7 @@
 	desc = "Hopefully the eggs are good this season."
 	gender = FEMALE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "chicken_brown"
 	icon_living = "chicken_brown"
 	icon_dead = "chicken_brown_dead"
@@ -397,202 +437,15 @@
 	else
 		STOP_PROCESSING(SSobj, src)
 
-// Space kiwis, ergo quite a copypasta of chickens.
 
-/mob/living/simple_animal/kiwi
-	name = "space kiwi"
-	desc = "Exposure to low gravity made them grow larger."
-	gender = FEMALE
-	icon_state = "kiwi"
-	icon_living = "kiwi"
-	icon_dead = "kiwi_dead"
-	speak = list("Chirp!","Cheep cheep chirp!!","Cheep.")
-	speak_emote = list("chirps","trills")
-	emote_hear = list("chirps.")
-	emote_see = list("pecks at the ground.","jumps in place.")
-	density = FALSE
-	speak_chance = 2
-	turns_per_move = 3
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 3)
-	var/egg_type = /obj/item/reagent_containers/food/snacks/egg/kiwiEgg
-	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
-	response_help_continuous  = "pets"
-	response_help_simple = "pet"
-	response_disarm_continuous = "gently pushes aside"
-	response_disarm_simple = "gently push aside"
-	response_harm_continuous = "kicks"
-	response_harm_simple = "kick"
-	attack_verb_continuous = "kicks"
-	attack_verb_simple = "kick"
-	health = 25
-	maxHealth = 25
-	ventcrawler = VENTCRAWLER_ALWAYS
-	var/eggsleft = 0
-	var/eggsFertile = TRUE
-	pass_flags = PASSTABLE | PASSMOB
-	mob_size = MOB_SIZE_SMALL
-	var/list/feedMessages = list("It chirps happily.","It chirps happily.")
-	var/list/layMessage = list("lays an egg.","squats down and croons.","begins making a huge racket.","begins chirping raucously.")
-	gold_core_spawnable = FRIENDLY_SPAWN
-	var/static/kiwi_count = 0
-
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/mob/living/simple_animal/kiwi/Destroy()
-	--kiwi_count
-	return ..()
-
-/mob/living/simple_animal/kiwi/Initialize()
-	. = ..()
-	++kiwi_count
-
-/mob/living/simple_animal/kiwi/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
-		return
-	if((!stat && prob(3) && eggsleft > 0) && egg_type)
-		visible_message("[src] [pick(layMessage)]")
-		eggsleft--
-		var/obj/item/E = new egg_type(get_turf(src))
-		E.pixel_x = rand(-6,6)
-		E.pixel_y = rand(-6,6)
-		if(eggsFertile)
-			if(kiwi_count < MAX_CHICKENS && prob(25))
-				START_PROCESSING(SSobj, E)
-
-/obj/item/reagent_containers/food/snacks/egg/kiwiEgg/process()
-	if(isturf(loc))
-		amount_grown += rand(1,2)
-		if(amount_grown >= 100)
-			visible_message("[src] hatches with a quiet cracking sound.")
-			new /mob/living/simple_animal/babyKiwi(get_turf(src))
-			STOP_PROCESSING(SSobj, src)
-			qdel(src)
-	else
-		STOP_PROCESSING(SSobj, src)
-
-/mob/living/simple_animal/kiwi/attackby(obj/item/O, mob/user, params)
-	if(istype(O, food_type)) //feedin' dem kiwis
-		if(!stat && eggsleft < 8)
-			var/feedmsg = "[user] feeds [O] to [name]! [pick(feedMessages)]"
-			user.visible_message(feedmsg)
-			qdel(O)
-			eggsleft += rand(1, 4)
-		else
-			to_chat(user, "<span class='warning'>[name] doesn't seem hungry!</span>")
-	else
-		..()
-
-/mob/living/simple_animal/babyKiwi
-	name = "baby space kiwi"
-	desc = "So huggable."
-	icon_state = "babykiwi"
-	icon_living = "babykiwi"
-	icon_dead = "babykiwi_dead"
-	gender = FEMALE
-	speak = list("Cherp.","Cherp?","Chirrup.","Cheep!")
-	speak_emote = list("chirps")
-	emote_hear = list("chirps.")
-	emote_see = list("pecks at the ground.","Happily bounces in place.")
-	density = FALSE
-	speak_chance = 2
-	turns_per_move = 2
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2)
-	response_help_continuous = "pets"
-	response_help_simple = "pet"
-	response_disarm_continuous = "gently pushes aside"
-	response_disarm_simple = "gently push aside"
-	response_harm_continuous = "kicks"
-	response_harm_simple = "kick"
-	attack_verb_continuous = "kicks"
-	attack_verb_simple = "kick"
-	health = 10
-	maxHealth = 10
-	ventcrawler = VENTCRAWLER_ALWAYS
-	var/amount_grown = 0
-	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
-	mob_size = MOB_SIZE_TINY
-	gold_core_spawnable = FRIENDLY_SPAWN
-
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/mob/living/simple_animal/babyKiwi/Initialize()
-	. = ..()
-	pixel_x = rand(-6, 6)
-	pixel_y = rand(0, 10)
-
-/mob/living/simple_animal/babyKiwi/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
-		return
-	if(!stat && !ckey)
-		amount_grown += rand(1,2)
-		if(amount_grown >= 100)
-			new /mob/living/simple_animal/kiwi(src.loc)
-			qdel(src)
-
-/obj/item/reagent_containers/food/snacks/egg/kiwiEgg
-	name = "kiwi egg"
-	desc = "A slightly bigger egg!"
-	icon_state = "kiwiegg"
-
-/obj/item/udder
-	name = "udder"
-
-/obj/item/udder/Initialize(loc, milk_reagent)
-	if(!milk_reagent)
-		milk_reagent = /datum/reagent/consumable/milk
-	create_reagents(50, NONE, NO_REAGENTS_VALUE)
-	reagents.add_reagent(milk_reagent, 20)
-	. = ..()
-
-/obj/item/udder/proc/generateMilk(datum/reagent/milk_reagent)
-	if(prob(5))
-		reagents.add_reagent(milk_reagent, rand(5, 10))
-
-/obj/item/udder/proc/milkAnimal(obj/O, mob/user)
-	var/obj/item/reagent_containers/glass/G = O
-	if(G.reagents.total_volume >= G.volume)
-		to_chat(user, "<span class='danger'>[O] is full.</span>")
-		return
-	var/transfered = reagents.trans_to(O, rand(5,10))
-	if(transfered)
-		user.visible_message("[user] milks [src] using \the [O].", "<span class='notice'>You milk [src] using \the [O].</span>")
-	else
-		to_chat(user, "<span class='danger'>The udder is dry. Wait a bit longer...</span>")
-
-/mob/living/simple_animal/deer
-	name = "doe"
-	desc = "A gentle, peaceful forest animal. How did this get into space?"
-	icon_state = "deer-doe"
-	icon_living = "deer-doe"
-	icon_dead = "deer-doe-dead"
-	gender = FEMALE
-	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	speak = list("Weeeeeeee?","Weeee","WEOOOOOOOOOO")
-	speak_emote = list("grunts","grunts lowly")
-	emote_hear = list("brays.")
-	emote_see = list("shakes its head.")
-	speak_chance = 1
-	turns_per_move = 5
-	see_in_dark = 6
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 3)
-	response_help_continuous = "pets"
-	response_help_simple = "pet"
-	response_disarm_continuous = "gently nudges"
-	response_disarm_simple = "gently nudge"
-	response_harm_continuous = "kicks"
-	response_harm_simple = "kick"
-	attack_verb_continuous = "bucks"
-	attack_verb_simple = "buck"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	health = 75
-	maxHealth = 75
-	blood_volume = BLOOD_VOLUME_NORMAL
-	footstep_type = FOOTSTEP_MOB_SHOE
+/////////////
+// BRAHMIN //
+/////////////
 
 /mob/living/simple_animal/cow/brahmin
 	name = "brahmin"
 	desc = "Brahmin or brahma are mutated cattle with two heads and looking udderly ridiculous.<br>Known for their milk, just don't tip them over."
-	icon = 'icons/mob/wastemobs.dmi'
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "brahmin"
 	icon_living = "brahmin"
 	icon_dead = "brahmin_dead"
@@ -762,10 +615,16 @@
 
 	return
 */
+
+
+/////////////
+// RADSTAG //
+/////////////
+
 /mob/living/simple_animal/radstag
 	name = "radstag"
-	desc = "a two headed dear that will run at the first sight of danger."
-	icon = 'icons/mob/wastemobs.dmi'
+	desc = "a two headed deer that will run at the first sight of danger."
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "radstag"
 	icon_living = "radstag"
 	icon_dead = "radstag_dead"
@@ -786,10 +645,15 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 	faction = list("neutral")
 
+
+///////////////
+// BIGHORNER //
+///////////////¨
+
 /mob/living/simple_animal/hostile/retaliate/goat/bighorn
-	name = "big horner"
+	name = "bighorner"
 	desc = "Mutated bighorn sheep that are often found in mountains, and are known for being foul-tempered even at the best of times."
-	icon = 'icons/mob/wastemobs.dmi'
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "bighorner"
 	icon_living = "bighorner"
 	icon_dead = "bighorner_dead"
@@ -860,6 +724,7 @@
 		else
 			udder.generateMilk(milk_reagent)
 
+// BIGHORNER LAMB
 /mob/living/simple_animal/hostile/retaliate/goat/bighorn/calf
 	name = "bighoner lamb"
 	resize = 0.7

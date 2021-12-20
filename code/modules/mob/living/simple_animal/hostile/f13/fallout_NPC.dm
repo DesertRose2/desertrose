@@ -1,10 +1,10 @@
 /mob/living/simple_animal/hostile/vault
 	name = "Vault Dweller"
 	desc = "Just a Vault Dweller"
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "vault_dweller"
 	icon_living = "vault_dweller"
 	icon_dead = "vault_dweller"
-	icon_gib = "vault_dweller"
 	speak_chance = 0
 	turns_per_move = 5
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
@@ -118,13 +118,31 @@
 	head = /obj/item/clothing/head/helmet/riot
 	//back = /obj/item/weapon/storage/backpack
 
+
+/////////////////
+// ENCLAVE NPC //
+/////////////////
+
 /mob/living/simple_animal/hostile/enclave
-	name = "Enclave"
-	desc = ""
-	icon_state = "enclave_scientist"
-	icon_living = "enclave_scientist"
-	icon_dead = "enclave_scientist"
-	icon_gib = "enclave_scientist"
+	name = "enclave specialist"
+	desc = "A Enclave soldier with combat armor and a G-11 rifle."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
+	icon_state = "enclave_specialist"
+	icon_living = "enclave_specialist"
+	maxHealth = 275
+	health = 275
+	melee_damage_lower = 35
+	melee_damage_upper = 40
+	retreat_distance = 6
+	minimum_distance = 6
+	extra_projectiles = 2
+	ranged_cooldown_time = 22
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/specialist)
+	healable = 1
+	ranged = 1
+	attack_verb_simple = "pistol-whips"
+	projectiletype = /obj/item/projectile/bullet/c46x30mm
+	projectilesound = 'sound/weapons/gunshot_smg.ogg'
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak_chance = 0
 	turns_per_move = 5
@@ -134,11 +152,7 @@
 	speed = 0
 	stat_attack = 1
 	robust_searching = 1
-	maxHealth = 150
-	health = 150
 	harm_intent_damage = 8
-	melee_damage_lower = 25
-	melee_damage_upper = 25
 	attack_verb_simple = "thrusts"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	a_intent = INTENT_HARM
@@ -152,7 +166,53 @@
 	speak_emote = list("pulls out a weapon", "shouts")
 	speak_chance = 0
 
-/obj/effect/mob_spawn/human/corpse/enclavescientist
+// Enclave Scientist
+/mob/living/simple_animal/hostile/enclave/scientist
+	name = "enclave scientist"
+	desc = "An Enclave Scientist wearing an advanced radiation suit. While they may run from you, that does not exempt them from the evil they have committed."
+	icon_state = "enclave_scientist"
+	icon_living = "enclave_scientist"
+	maxHealth = 150
+	health = 150
+	melee_damage_lower = 25
+	melee_damage_upper = 25
+	minimum_distance = 10
+	retreat_distance = 10
+	obj_damage = 0
+	environment_smash = 0
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclave)
+	ranged = 1
+	ranged_cooldown_time = 30
+	projectiletype = /obj/item/projectile/energy/declone
+	projectilesound = 'sound/weapons/wave.ogg'
+
+// Enclave Armored Infantry
+/mob/living/simple_animal/hostile/enclave/armoredinfantry
+	name = "enclave armored infantry"
+	desc = "A Enclave Soldier wearing Advanced Power Armor and a plasmacaster. Play time's over, mutie."
+	icon_state = "enclave_armored"
+	icon_living = "enclave_armored"
+	icon_dead = "enclave_soldier"
+	maxHealth = 750
+	health = 750
+	melee_damage_lower = 55
+	melee_damage_upper = 55
+	extra_projectiles = 5 //6 projectiles. oh lord.
+	retreat_distance = 3
+	minimum_distance = 5
+	ranged_cooldown_time = 12
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/armored)
+	healable = 1
+	ranged = 1
+	attack_verb_simple = "power-fists"
+	projectiletype = /obj/item/projectile/f13plasma/repeater
+	projectilesound = 'sound/f13weapons/plasmarifle.ogg'
+
+/mob/living/simple_animal/hostile/enclave/specialist
+
+
+// Enclave corpses
+/obj/effect/mob_spawn/human/corpse/enclave
 	name = "enclave scientist"
 	uniform = /obj/item/clothing/under/syndicate/combat
 	suit = /obj/item/clothing/suit/radiation
@@ -163,85 +223,24 @@
 	head = /obj/item/clothing/head/radiation
 	//back = /obj/item/weapon/storage/backpack
 
-/obj/effect/mob_spawn/human/corpse/enclave/soldier_ca
-	name = "enclave soldier"
+/obj/effect/mob_spawn/human/corpse/enclave/specialist
+	name = "enclave specialist"
 	uniform = /obj/item/clothing/under/syndicate/combat
-	shoes = /obj/item/clothing/shoes/f13/military
-	gloves = /obj/item/clothing/gloves/f13/military
-	//radio = /obj/item/device/radio/headset
-	mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	//back = /obj/item/weapon/storage/backpack
 
-/obj/effect/mob_spawn/human/corpse/enclave/soldier
-	name = "nclave advanced soldier"
+/obj/effect/mob_spawn/human/corpse/enclave/armored
+	name = "enclave armored infantry"
 	uniform = /obj/item/clothing/under/syndicate/combat
-	shoes = /obj/item/clothing/shoes/f13/military
-	gloves = /obj/item/clothing/gloves/f13/military
-	//radio = /obj/item/device/radio/headset
-	mask = /obj/item/clothing/mask/gas
-	//back = /obj/item/weapon/storage/backpack
 
-/mob/living/simple_animal/hostile/enclave/scientist
-	name = "enclave scientist"
-	desc = "An Enclave Scientist wearing an advanced radiation suit. While they may run from you, that does not exempt them from the evil they have committed."
-	minimum_distance = 10
-	retreat_distance = 10
-	obj_damage = 0
-	environment_smash = 0
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclavescientist)
-	ranged = 1
-	ranged_cooldown_time = 30
-	projectiletype = /obj/item/projectile/energy/declone
-	projectilesound = 'sound/weapons/wave.ogg'
 
-/mob/living/simple_animal/hostile/enclave/soldier
-	name = "enclave advanced soldier"
-	desc = "An Enclave Soldier wearing Advanced Power Armor and a plasma multi-caster. Play time's over, mutie."
-	icon_state = "enclaverangedelite"
-	icon_living = "eclaverangedelite"
-	icon_dead = "enclave_soldier"
-	icon_gib = "enclave_soldier"
-	maxHealth = 750
-	health = 750
-	melee_damage_lower = 55
-	melee_damage_upper = 55
-	extra_projectiles = 5 //6 projectiles. oh lord.
-	retreat_distance = 3
-	minimum_distance = 5
-	ranged_cooldown_time = 12
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/soldier)
-	healable = 1
-	ranged = 1
-	attack_verb_simple = "power-fists"
-	projectiletype = /obj/item/projectile/f13plasma/repeater
-	projectilesound = 'sound/f13weapons/plasmarifle.ogg'
-
-/mob/living/simple_animal/hostile/enclave/soldier_ca
-	name = "Enclave Footsoldier"
-	desc = "An Enclave soldier in Enclave Combat Armor, wielding an assault rifle."
-	icon_state = "enclaveranged"
-	icon_living = "enclaveranged"
-	icon_dead = "enclaveranged"
-	icon_gib = "enclave_soldier"
-	maxHealth = 275
-	health = 275
-	melee_damage_lower = 40
-	melee_damage_upper = 40
-	retreat_distance = 6
-	minimum_distance = 6
-	extra_projectiles = 2
-	ranged_cooldown_time = 22
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/soldier)
-	healable = 1
-	ranged = 1
-	attack_verb_simple = "pistol-whips"
-	projectiletype = /obj/item/projectile/bullet/c46x30mm
-	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+/////////////////////
+// BROTHERHOOD NPC //
+/////////////////////
 
 /mob/living/simple_animal/hostile/bs
 	name = "BS"
 	desc = "the brotherhood never fails."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "bs_knight"
 	icon_living = "bs_knight"
 	icon_dead = "bs_knight"
@@ -329,9 +328,15 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	//back = /obj/item/weapon/storage/backpack
 
+
+///////////////
+// NCR = NPC //
+///////////////
+
 /mob/living/simple_animal/hostile/ncr
 	name = "NCR"
 	desc = "Just an NCR."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "ncr_trooper"
 	icon_living = "ncr_trooper"
 	icon_dead = "ncr_trooper"
@@ -421,9 +426,15 @@
 	head = /obj/item/clothing/head/f13/ncr
 	//back = /obj/item/weapon/storage/backpack
 
+
+////////////////
+// LEGION NPC //
+////////////////
+
 /mob/living/simple_animal/hostile/legion
 	name = "Legion"
 	desc = "Just a Legion"
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "legion_prime"
 	icon_living = "legion_prime"
 	icon_dead = "legion_prime"
@@ -512,185 +523,3 @@
 	//mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	//back = /obj/item/weapon/storage/backpack
-
-/mob/living/simple_animal/hostile/abomination
-	name = "abomination"
-	desc = "A horrible fusion of man, animal, and something entirely different. It quakes and shudders, looking to be in an immense amount of pain. Blood and other fluids ooze from various gashes and lacerations on its body, punctuated by mouths that gnash and scream."
-	speak_emote = list("screams", "clicks", "chitters", "barks", "moans", "growls", "meows", "reverberates", "roars", "squeaks", "rattles", "exclaims", "yells", "remarks", "mumbles", "jabbers", "stutters", "seethes")
-	icon_state = "abomination"
-	icon_living = "abomination"
-	icon_dead = "abomination_dead"
-	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	robust_searching = 1
-	maxHealth = 1000
-	health = 1000
-	harm_intent_damage = 8
-	melee_damage_lower = 75
-	melee_damage_upper = 75
-	attack_verb_simple = "eviscerates"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	attack_verb_simple = "lacerates"
-	speed = -0.5
-	var/static/list/abom_sounds
-	deathmessage = "wails as its form shudders and violently comes to a stop."
-	death_sound = 'sound/voice/abomburning.ogg'
-
-/mob/living/simple_animal/hostile/abomination/AttackingTarget()
-	. = ..()
-	if(. && ishuman(target))
-		var/mob/living/carbon/human/H = target
-		var/choice = pick(1, 1, 1, 2, 3, 5)
-		H.reagents.add_reagent(/datum/reagent/toxin/FEV_solution, choice)
-
-/mob/living/simple_animal/hostile/abomination/Initialize()
-	. = ..()
-	abom_sounds = list('sound/voice/abomination1.ogg', 'sound/voice/abomscream.ogg', 'sound/voice/abommoan.ogg', 'sound/voice/abomscream2.ogg', 'sound/voice/abomscream3.ogg')
-
-/mob/living/simple_animal/hostile/abomination/say(message, datum/language/language = null, list/spans = list(), language, sanitize, ignore_spam, forced = null)
-	..()
-	if(stat)
-		return
-	var/chosen_sound = pick(abom_sounds)
-	playsound(src, chosen_sound, 50, TRUE)
-
-/mob/living/simple_animal/hostile/abomination/Life()
-	..()
-	if(stat)
-		return
-	if(prob(10))
-		var/chosen_sound = pick(abom_sounds)
-		playsound(src, chosen_sound, 70, TRUE)
-
-/mob/living/simple_animal/hostile/abomhorror
-	name = "failed experiment"
-	desc = "A terrible fusion of man, animal, and something else entirely. It looks to be in great pain."
-	speak_emote = list("screams", "clicks", "chitters", "barks", "moans", "growls", "meows", "reverberates", "roars", "squeaks", "rattles", "exclaims", "yells", "remarks", "mumbles", "jabbers", "stutters", "seethes")
-	icon_state = "horror"
-	icon_living = "horror"
-	icon_dead = "horror_dead"
-	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	robust_searching = 1
-	maxHealth = 700
-	health = 700
-	harm_intent_damage = 8
-	melee_damage_lower = 50
-	melee_damage_upper = 50
-	attack_verb_simple = "eviscerates"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	attack_verb_simple = "lacerates"
-	speed = -0.5
-	var/static/list/abom_sounds
-	deathmessage = "wails as its form shudders and violently comes to a stop."
-
-/mob/living/simple_animal/hostile/abomhorror/nsb
-	maxHealth = 1000
-	health = 1000
-	desc = "A terrible fusion of man, animal, and something else entirely. It looks to be in great pain, constantly shuddering violently and seeming relatively docile to the robots and raiders of the bunker. Huh."
-	harm_intent_damage = 8
-	melee_damage_lower = 60
-	melee_damage_upper = 70
-	obj_damage = 300
-	faction = list("raider")
-	wound_bonus = 20
-	speed = -1
-	deathmessage = "wails as its form shudders and violently comes to a stop."
-
-/mob/living/simple_animal/hostile/abomhorror/nsb/Initialize()
-	. = ..()
-	abom_sounds = list('sound/voice/abomination1.ogg', 'sound/voice/abomscream.ogg', 'sound/voice/abommoan.ogg', 'sound/voice/abomscream2.ogg', 'sound/voice/abomscream3.ogg')
-
-/mob/living/simple_animal/hostile/abomhorror/nsb/say(message, datum/language/language = null, list/spans = list(), language, sanitize, ignore_spam, forced = null)
-	..()
-	if(stat)
-		return
-	var/chosen_sound = pick(abom_sounds)
-	playsound(src, chosen_sound, 50, TRUE)
-
-/mob/living/simple_animal/hostile/abomhorror/nsb/Life()
-	..()
-	if(stat)
-		return
-	if(prob(10))
-		var/chosen_sound = pick(abom_sounds)
-		playsound(src, chosen_sound, 70, TRUE)
-
-/mob/living/simple_animal/hostile/raider/junker
-	name = "Junker"
-	desc = "One of the Junkers, raiders who build, rebuild and reprogram robots to suit their own needs."
-	icon_state = "junker"
-	icon_living = "junker"
-	icon_dead = "junker"
-	icon_gib = "junker"
-	speak = list("Gotta find me some jet...", "I'M GONNA SCRAP YOU FOR PARTS!", "This isn't anything like training... Shooting at plywood? How's that supposed to get me ready for this hell!")
-	speak_chance = 10
-	retreat_distance = 5
-	minimum_distance = 4
-	melee_damage_lower = 20
-	melee_damage_upper = 20
-	maxHealth = 200
-	health = 200
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/m29/coltwalker)
-	healable = 1
-	ranged = 1
-	del_on_death = 0
-	projectiletype = /obj/item/projectile/bullet/m44/swc
-	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
-	casingtype = /obj/item/ammo_casing/m44/swc
-	faction = list("raider", "junker")
-
-/mob/living/simple_animal/hostile/raider/junker/hijacker
-	name = "Junker Hijacker"
-	icon_state	=	"junker_hijacker"
-	icon_living	=	"junker_hijacker"
-	icon_dead	=	"junker_hijacker"
-	icon_gib	=	"junker_hijacker"
-	ranged = 0
-	melee_damage_lower = 30
-	melee_damage_upper = 60
-	retreat_distance = 5
-	minimum_distance = 0
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/cautery, /obj/item/bodypart/r_arm/robot, /obj/item/hatchet)
-
-/mob/living/simple_animal/hostile/raider/junker/scrapper
-	name = "Junker Scrapper"
-	icon_state	=	"junker_scrapper"
-	icon_living	=	"junker_scrapper"
-	icon_dead	=	"junker_scrapper"
-	icon_gib	=	"junker_scrapper"
-	projectiletype = /obj/item/projectile/ion/weak
-	projectilesound = 'sound/f13weapons/shotgun.ogg'
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker, /obj/item/gun/ballistic/revolver/ballisticfist)
-	maxHealth = 350
-	health = 350
-	robust_searching = 1
-	melee_damage_lower = 50
-	melee_damage_upper = 60
-
-/mob/living/simple_animal/hostile/raider/junker/boss
-	name = "Junker Boss"
-	icon_state	=	"junker_boss"
-	icon_living	=	"junker_boss"
-	icon_dead	=	"junker_boss"
-	icon_gib	=	"junker_boss"
-	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town...")
-	maxHealth = 700
-	health = 700
-	retreat_distance = 8
-	minimum_distance = 6
-	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator)
-	projectiletype = /obj/item/projectile/incendiary/flamethrower/incinerator
-	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
-
-/obj/effect/mob_spawn/human/corpse/raider/junker
-	uniform = /obj/item/clothing/under/f13/machinist
-	suit = /obj/item/clothing/suit/armor/f13/raider/junker
-	shoes = /obj/item/clothing/shoes/f13/military/plated
-	gloves = /obj/item/clothing/gloves/f13/handwraps
-	head = /obj/item/clothing/head/helmet/f13/raider/eyebot
-
-/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker
-	head = /obj/item/clothing/head/helmet/f13/raider/eyebot/assaultron
-
-/obj/effect/mob_spawn/human/corpse/raider/junker/boss
-	suit = /obj/item/clothing/suit/armor/f13/raider/junker/boss
-	head = /obj/item/clothing/head/helmet/f13/raider/eyebot/sentry

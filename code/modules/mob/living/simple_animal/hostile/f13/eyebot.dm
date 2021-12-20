@@ -91,7 +91,7 @@
 /mob/living/simple_animal/pet/dog/eyebot //It's a propaganda eyebot, not a dog, but...
 	name = "propaganda eyebot"
 	desc = "This eyebot's weapons module has been removed and replaced with a loudspeaker. It appears to be shouting Pre-War propaganda."
-	icon = 'icons/fallout/mobs/animal.dmi'
+	icon = 'icons/fallout/mobs/robots/eyebots.dmi'
 	icon_state = "eyebot"
 	icon_living = "eyebot"
 	icon_dead = "eyebot_d"

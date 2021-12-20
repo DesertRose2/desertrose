@@ -1,7 +1,11 @@
+//////////////////////////////
+// NCR DESERTER MERCENARIES //
+//////////////////////////////
+
 /mob/living/simple_animal/hostile/xray
 	name = "x-ray grunt"
 	desc = "A once proud member of the NCR turned mercenary."
-	icon = 'icons/mob/wastemobs.dmi'
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "deserter_melee"
 	icon_living = "deserter_melee"
 	icon_dead = null

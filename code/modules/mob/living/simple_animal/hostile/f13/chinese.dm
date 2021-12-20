@@ -1,10 +1,13 @@
+///////////////////////////
+// CHINESE GHOUL REMNANT //
+///////////////////////////
+
 /mob/living/simple_animal/hostile/chinese
 	name = "chinese remnant soldier"
 	desc = "Chinese soldiers who survived the Great War via ghoulification, and now shoot anything that isn't their own on sight."
-	icon = 'icons/mob/wastemobs.dmi'
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
 	icon_state = "chinesesoldier"
 	icon_living = "chinesesoldier"
-	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak_chance = 0
 	turns_per_move = 5

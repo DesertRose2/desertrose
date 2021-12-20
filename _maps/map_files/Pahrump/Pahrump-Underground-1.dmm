@@ -11585,7 +11585,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/mob/living/simple_animal/hostile/wolf/alpha{
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha{
 	desc = "The NCR Rangers have been known to employ K9 units from time to time.";
 	faction = list("neutral");
 	name = "Ranger Seth"

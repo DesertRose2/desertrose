@@ -10564,7 +10564,7 @@
 	},
 /area/f13/wasteland)
 "dvk" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -26602,7 +26602,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/tribe)
 "iyg" = (
-/mob/living/simple_animal/hostile/wolf/alpha,
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "iyn" = (
@@ -27760,7 +27760,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "iNm" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -29994,7 +29994,7 @@
 	},
 /area/f13/wasteland)
 "jvT" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -44370,7 +44370,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "nZr" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "nZw" = (
@@ -55405,7 +55405,7 @@
 	},
 /area/f13/building)
 "rDa" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft2"
 	},
