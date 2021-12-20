@@ -115,48 +115,12 @@
 	build_path = /obj/item/storage/toolbox
 	category = list("initial","Tools")
 
-/datum/design/apc_board
-	name = "APC Module"
-	id = "power control"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_METAL = 100, MAT_GLASS = 100)
-	build_path = /obj/item/electronics/apc
-	category = list("initial", "Electronics")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
 /datum/design/airlock_board
 	name = "Airlock Electronics"
 	id = "airlock_board"
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
 	build_path = /obj/item/electronics/airlock
-	category = list("initial", "Electronics")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
-/datum/design/firelock_board
-	name = "Firelock Circuitry"
-	id = "firelock_board"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
-	build_path = /obj/item/electronics/firelock
-	category = list("initial", "Electronics")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
-/datum/design/airalarm_electronics
-	name = "Air Alarm Electronics"
-	id = "airalarm_electronics"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
-	build_path = /obj/item/electronics/airalarm
-	category = list("initial", "Electronics")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
-/datum/design/firealarm_electronics
-	name = "Fire Alarm Electronics"
-	id = "firealarm_electronics"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
-	build_path = /obj/item/electronics/firealarm
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
@@ -504,13 +468,6 @@
 	build_path = /obj/item/radio/off
 	category = list("initial", "T-Comm")
 */
-/datum/design/intercom_frame
-	name = "Intercom Frame"
-	id = "intercom_frame"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 75, MAT_GLASS = 25)
-	build_path = /obj/item/wallframe/intercom
-	category = list("initial", "T-Comm")
 
 /datum/design/infrared_emitter
 	name = "Infrared Emitter"
@@ -665,14 +622,6 @@
 	build_path = /obj/item/toy/crayon/spraycan
 	category = list("initial", "Tools")
 
-/datum/design/desttagger
-	name = "Destination Tagger"
-	id = "desttagger"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 250, MAT_GLASS = 125)
-	build_path = /obj/item/destTagger
-	category = list("initial", "Electronics")
-
 /datum/design/handlabeler
 	name = "Hand Labeler"
 	id = "handlabel"
@@ -712,22 +661,6 @@
 	materials = list(MAT_METAL = 450, MAT_GLASS = 190)
 	build_path = /obj/item/conveyor_switch_construct
 	category = list("initial", "Construction")
-
-/datum/design/laptop
-	name = "Laptop Frame"
-	id = "laptop"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 1000)
-	build_path = /obj/item/modular_computer/laptop/buildable
-	category = list("initial","Misc")
-
-/datum/design/tablet
-	name = "Tablet Frame"
-	id = "tablet"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_GLASS = 1000)
-	build_path = /obj/item/modular_computer/tablet
-	category = list("initial","Misc")
 
 /datum/design/slime_scanner
 	name = "Slime Scanner"

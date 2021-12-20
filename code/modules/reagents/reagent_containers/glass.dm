@@ -292,19 +292,24 @@
 /obj/item/reagent_containers/glass/beaker/synthflesh
 	list_reagents = list(/datum/reagent/medicine/synthflesh = 50)
 
+
+/////////////////////
+// FALLOUT BUCKETS //
+/////////////////////
+
 /obj/item/reagent_containers/glass/bucket
 	name = "bucket"
-	desc = "It's a bucket."
-	icon = 'icons/obj/janitor.dmi'
+	desc = "It's a bucket made of thin metal."
+	icon = 'icons/fallout/objects/containers.dmi'
 	icon_state = "bucket"
 	item_state = "bucket"
-	lefthand_file = 'icons/mob/inhands/equipment/custodial_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/custodial_righthand.dmi'
+	lefthand_file = 'icons/fallout/onmob/items/container_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/items/container_righthand.dmi'
 	custom_materials = list(/datum/material/iron=200)
 	w_class = WEIGHT_CLASS_NORMAL
 	amount_per_transfer_from_this = 20
-	possible_transfer_amounts = list(5,10,15,20,25,30,50,70)
-	volume = 70
+	possible_transfer_amounts = list(10,20,30,50,120)
+	volume = 120
 	flags_inv = HIDEHAIR
 	slot_flags = ITEM_SLOT_HEAD
 	resistance_flags = NONE
@@ -366,9 +371,22 @@
 	name = "wooden bucket"
 	desc = "It's a bucket made of wood."
 	icon_state = "bucket_wooden"
+	item_state = "bucket_wooden"
 	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 2)
 	slot_flags = NONE
 	item_flags = NO_MAT_REDEMPTION
+
+/obj/item/reagent_containers/glass/bucket/plastic
+	name = "plastic bucket"
+	desc = "It's a bucket made of blue plastic."
+	icon_state = "bucket_plastic"
+	item_state = "bucket_plastic"
+	custom_materials = list(/datum/material/plastic = MINERAL_MATERIAL_AMOUNT * 1)
+	item_flags = NO_MAT_REDEMPTION
+	possible_transfer_amounts = list(10,20,35,50,150)
+	volume = 150
+
+// ---------------------------------------------------------------------------- //
 
 /obj/item/reagent_containers/glass/beaker/waterbottle
 	name = "bottle of water"
