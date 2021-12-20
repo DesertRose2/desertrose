@@ -570,10 +570,10 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
-/* Shopkeeper */
+/* Shopkeep */
 
 /datum/job/vtcc/f13shopkeep
-	title = "Shopkeeper"
+	title = "Shopkeep"
 	flag = F13SHOPKEEP
 	total_positions = 1
 	spawn_positions = 1
@@ -588,7 +588,8 @@
 	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13shopkeep
-	name = "Shopkeeper"
+	name = "Shopkeep"
+	jobtype = 	/datum/job/vtcc/f13shopkeep
 	id =		/obj/item/card/id
 	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
 	shoes = 	/obj/item/clothing/shoes/jackboots
