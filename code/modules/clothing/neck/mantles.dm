@@ -6,6 +6,7 @@
 	icon = 'icons/obj/clothing/mantles.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/mantle.dmi'
 	w_class = WEIGHT_CLASS_SMALL
+	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = CHEST|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
