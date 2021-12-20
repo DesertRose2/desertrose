@@ -68,7 +68,7 @@
 #define EXP_TYPE_ADMIN			"Admin"
 //f13 stuff
 #define EXP_TYPE_VAULT			"Vault"
-#define EXP_TYPE_VTCCSEC			"Vault-Tec City Security"
+#define EXP_TYPE_VTCCSEC		"Vault-Tec City Security"
 #define EXP_TYPE_VTCC			"Vault-Tec City Coalition"
 #define EXP_TYPE_BROTHERHOOD	"Brotherhood of Steel"
 #define EXP_TYPE_NCR			"New California Republic"
@@ -87,7 +87,8 @@
 #define EXP_TYPE_CAMP			"Camp Follower"
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_FOLLOWERS		"FoA"
-#define EXP_TYPE_ROADIE		"Roadie"
+#define EXP_TYPE_ROADIE			"Roadie"
+#define EXP_TYPE_VTCCDOC		"Vault-Tec City Doctor"
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

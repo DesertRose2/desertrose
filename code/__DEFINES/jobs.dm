@@ -177,7 +177,7 @@
 #define F13ALDERMAN		(1<<1)
 #define F13PROVOSTMARSHAL		(1<<2)
 #define F13MERCHANT		(1<<3)
-#define F13CHRESEARCHER		(1<<4)
+#define F13RECTOR		(1<<4)
 #define F13SHOPKEEP		(1<<5)
 #define F13CITYSECSCOUT		(1<<6)
 #define F13ROADIE		(1<<7)
@@ -188,6 +188,8 @@
 #define F13OUTERWALL		(1<<12)
 #define	F13PROVOSTSGT	(1<<13)
 #define	F13PROVOST		(1<<14)
+#define F13CITYEMT		(1<<15)
+#define F13CITYDOC		(1<<16)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1

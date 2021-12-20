@@ -147,18 +147,18 @@
 	/obj/item/attachments/scope=2
 	)
 
-/* Chief Researcher */
+/* Rector */
 
-/datum/job/vtcc/f13chresearcher
-	title = "Chief Researcher"
-	flag = F13CHRESEARCHER
+/datum/job/vtcc/f13rector
+	title = "Rector"
+	flag = F13RECTOR
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Alderman and the Overseer"
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 	req_admin_notify = 1
 
-	outfit = /datum/outfit/job/vtcc/f13chresearcher
+	outfit = /datum/outfit/job/vtcc/f13rector
 	loadout_options = list(
 		/datum/outfit/loadout/qadmin,
 		/datum/outfit/loadout/neurosurgeon,
@@ -168,7 +168,7 @@
 	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
 
 
-/datum/outfit/job/vtcc/f13chresearcher/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/vtcc/f13rector/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -178,9 +178,9 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
-/datum/outfit/job/vtcc/f13chresearcher
-	name = "Chief Researcher"
-	jobtype = /datum/job/vtcc/f13chresearcher
+/datum/outfit/job/vtcc/f13rector
+	name = "Rector"
+	jobtype = /datum/job/vtcc/f13rector
 
 	ears = /obj/item/radio/headset/headset_vault/cogcity/sci_lead
 	glasses =		/obj/item/clothing/glasses/hud/health
@@ -189,13 +189,13 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	r_pocket = /obj/item/clipboard
-	suit = /obj/item/clothing/suit/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
 	backpack_contents = list(
 		/obj/item/pen/fountain=1,
 		/obj/item/paper_bin=1,
-		/obj/item/gun/ballistic/revolver/needler=1,
-		/obj/item/ammo_box/needleap = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=3
 		)
 
 /datum/outfit/loadout/qadmin
@@ -690,16 +690,16 @@
 	flag = F13RESEARCHER
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Alderman and the Overseer"
+	supervisors = "the Rector, the Alderman and the Overseer"
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
-	exp_requirements = 3000
-	exp_type = EXP_TYPE_VTCC
+	exp_requirements = 900
+	exp_type = EXP_TYPE_VTCCDOC
 
 	loadout_options = list(
 		/datum/outfit/loadout/medprof,
-		/datum/outfit/loadout/robotocist,
+		/datum/outfit/loadout/robotocist
 		)
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_RESEARCH, ACCESS_ROBOTICS)
@@ -713,6 +713,7 @@
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
 /datum/outfit/job/vtcc/f13researcher
 	name = "Researcher"
@@ -725,8 +726,8 @@
 	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/needler=1,
-		/obj/item/ammo_box/needleap = 2,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/pda=1
 		)
@@ -746,6 +747,107 @@
 	/obj/item/autosurgeon/toolset=1,
 	/obj/item/clothing/glasses/hud/diagnostic=1,
 	/obj/item/clothing/under/f13/roboticistalt=1
+	)
+
+/* City EMT */
+
+/datum/job/vtcc/f13cityemt
+	title = "City EMT"
+	flag = F13CITYEMT
+	total_positions = 2
+	spawn_positions = 1
+	supervisors = "the Researchers and the Rector."
+	description = "You are an EMT for the city's public hospital. It's your responsibility to recover anyone wounded out in the wasteland so they may be treated in the hospital, and to treat patients who come in if there is no-one."
+
+	outfit = /datum/outfit/job/vtcc/f13cityemt
+	exp_requirements = 600
+	exp_type = EXP_TYPE_VTCCDOC
+
+	loadout_options = list(
+		/datum/outfit/loadout/wireless,
+		/datum/outfit/loadout/personal
+		)
+
+/datum/outfit/job/vtcc/f13cityemt
+	name = "City EMT"
+	jobtype = /datum/job/vtcc/f13cityemt
+	ears = /obj/item/radio/headset/headset_vault/cogcity/sci
+	id =            /obj/item/card/id
+	glasses =	/obj/item/clothing/glasses/hud/health
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
+	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/storage/box/medicine/stimpak5=1,
+		/obj/item/storage/firstaid/brute=2,
+		/obj/item/pda=1
+		)
+
+/datum/outfit/loadout/wireless
+	name = "Wireless Diagnosis"
+	backpack_contents = list(
+	/obj/item/gun/ballistic/rifle/remington=1,
+	/obj/item/ammo_box/a308=2
+	)
+
+/datum/outfit/loadout/personal
+	name = "Personal Diagnosis"
+	backpack_contents = list(
+	/obj/item/gun/ballistic/revolver/needler=1,
+	/obj/item/ammo_box/needleap = 2
+	)
+
+/* City Doctor */
+
+/datum/job/vtcc/f13citydoc
+	title = "City Doctor"
+	flag = F13CITYDOC
+	total_positions = 2
+	spawn_positions = 1
+	supervisors = "the Researchers and the Rector."
+	description ="You are a City Doctor. As a doctor it is your responsibility to maintain working order in the hospital and to treat patients who come in."
+
+	outfit = /datum/outfit/job/vtcc/f13citydoc
+	exp_requirements = 600
+	exp_type = EXP_TYPE_VTCCDOC
+
+	loadout_options = list(
+		/datum/outfit/loadout/anaesthetist,
+		/datum/outfit/loadout/surgeon
+		)
+
+/datum/outfit/job/vtcc/f13citydoc
+	name = "City Doctor"
+	jobtype = /datum/job/vtcc/f13citydoc
+	ears = /obj/item/radio/headset/headset_vault/cogcity/sci
+	id =            /obj/item/card/id
+	glasses =	/obj/item/clothing/glasses/hud/health
+	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
+	suit = /obj/item/clothing/suit/toggle/labcoat
+	neck = /obj/item/clothing/neck/stethoscope
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/needler=1,
+		/obj/item/ammo_box/needleap = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=3,
+		/obj/item/pda=1
+		)
+
+/datum/outfit/loadout/anaesthetist
+	name = "Anaesthetist"
+	backpack_contents = list(
+	/obj/item/clothing/mask/breath=1,
+	/obj/item/tank/internals/anesthetic=1
+	)
+
+/datum/outfit/loadout/surgeon
+	name = "Surgeon"
+	backpack_contents = list(
+	/obj/item/clothing/mask/surgical=1,
+	/obj/item/clothing/suit/hooded/surgical=1,
+	/obj/item/clothing/gloves/color/latex=1,
+	/obj/item/storage/firstaid/brute=1,
+	/obj/item/stack/medical/suture/five=2
 	)
 
 /* Hoistway Preacher */

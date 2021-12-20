@@ -914,10 +914,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Merchant"
 
 /obj/effect/landmark/start/f13/chiefresearcher
-	name = "Chief Researcher"
+	name = "Rector"
 
 /obj/effect/landmark/start/f13/researcher
 	name = "Researcher"
+
+/obj/effect/landmark/start/f13/cityemt
+	name = "City EMT"
+
+/obj/effect/landmark/start/f13/citydoc
+	name = "City Doctor"
 
 /obj/effect/landmark/start/f13/provostsgt
 	name = "Provost Sergeant"

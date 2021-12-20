@@ -71,7 +71,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Alderman",
 	"Provost Marshal",
 	"Merchant",
-	"Chief Researcher"
+	"Rector"
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -119,7 +119,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 "Alderman",
 "Provost Marshal",
-"Chief Researcher",
+"Rector",
 "Provost Sergeant",
 "Provost",
 ))
@@ -162,6 +162,9 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Shopkeep",
 "Roadie",
 "Researcher",
+"City Doctor",
+"City EMT",
+
 "Hoistway Preacher"
 ))
 
@@ -335,7 +338,7 @@ GLOBAL_LIST_INIT(followers_positions, list(
 GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Alderman",
 	"Provost Marshal",
-	"Chief Researcher"
+	"Rector"
 ))
 
 GLOBAL_LIST_INIT(vtcc_provost_positions, list(
@@ -380,6 +383,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
 	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet")),
+	EXP_TYPE_VTCCDOC       = list("titles" = list("City Doctor")),
 	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger", "NCR Ranger Sergeant","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
 	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
@@ -391,7 +395,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
 	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR Sergeant First Class","NCR Veteran Ranger","NCR Medical Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
-	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Chief Researcher"))
+	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Rector"))
 
 ))
 
