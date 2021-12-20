@@ -193,7 +193,7 @@
 
 // Generally iconic items
 
-datum/gear/supermutant/weapon
+/datum/gear/supermutant/weapon
 	name = "Sledgehammer"
 	path = /obj/item/twohanded/sledgehammer
 	cost = 4

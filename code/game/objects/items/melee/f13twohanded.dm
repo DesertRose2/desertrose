@@ -466,7 +466,7 @@
 	armour_penetration = 0.1
 	icon_prefix = "supersledge"
 
-obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
+/obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 60, icon_wielded="[icon_prefix]1")
 

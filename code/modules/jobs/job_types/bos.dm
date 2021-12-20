@@ -736,7 +736,7 @@ Scribe
 Senior Knight
 */
 
-datum/job/bos/f13seniorknight
+/datum/job/bos/f13seniorknight
 	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	faction = "BOS"

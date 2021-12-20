@@ -15,7 +15,7 @@
 	ammo_type = /obj/item/ammo_casing/a50MG/incendiary
 
 
-obj/item/ammo_box/magazine/sniper_rounds/soporific
+/obj/item/ammo_box/magazine/sniper_rounds/soporific
 	name = "sniper rounds (Zzzzz)"
 	desc = "Soporific sniper rounds, designed for happy days and dead quiet nights..."
 	icon_state = "soporific"
