@@ -1555,7 +1555,7 @@
 /turf/open/floor/grass,
 /area/f13/bunker)
 "Ec" = (
-/mob/living/simple_animal/hostile/wolf/alpha{
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha{
 	faction = list("wastebot")
 	},
 /turf/open/floor/grass,

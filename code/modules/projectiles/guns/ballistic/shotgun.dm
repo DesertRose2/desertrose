@@ -21,7 +21,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/internal/shot
 	force = 15 //Decent clubs generally speaking
-	fire_delay = 7 //Typical pump action, pretty fast.
+	fire_delay = 6 //Typical pump action, pretty fast.
 	spread = 2
 	recoil = 0.1
 	can_scope = FALSE
@@ -255,7 +255,7 @@
 			select = 1
 			spread = 12
 			burst_size = 1
-			fire_delay = 5
+			fire_delay = 3
 			burst_shot_delay = 4
 			extra_damage = 0
 			to_chat(user, "<span class='notice'>You prepare to slamfire the shotgun for a rapid burst of shots.</span>")
@@ -273,7 +273,7 @@
 //Semi-auto shotgun template
 /obj/item/gun/ballistic/shotgun/automatic/combat
 	name = "semi-auto shotgun template"
-	fire_delay = 6
+	fire_delay = 5
 	extra_damage = 0
 	recoil = 0.1
 	spread = 2
@@ -292,7 +292,7 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	name = "Browning Auto-5"
 	desc = "A semi automatic shotgun with a four round tube."
-	fire_delay = 7
+	fire_delay = 6
 	icon_state = "auto5"
 	item_state = "shotgunauto5"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
@@ -386,6 +386,7 @@
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
 	burst_size = 1
 	fire_delay = 4
+	recoil = 0.75
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY

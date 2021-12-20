@@ -1,41 +1,35 @@
-//Fallout 13 wolf directory
+// DOGS // In this document: Wolves, Feral dogs, pet dogs
 
+
+////////////
+// WOLVES //
+////////////	Pack animals, low hp, medium aggro, colder climates
+
+// Don't map wolves in the desert please. It's for non desert maps or maybe some experiments.
 /mob/living/simple_animal/hostile/wolf
-	name = "feral dog"
-	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>This one seems to be severely malnourished and its eyes are bloody red."
-	icon = 'icons/fallout/mobs/animal.dmi'
-	icon_state = "dog_angry"
-	icon_living = "dog_angry"
-	icon_dead = "dog_dead"
-	icon_gib = "gib"
+	name = "wolf"
+	desc = "A ravenous wolf."
+	icon = 'icons/fallout/mobs/animals/dogs.dmi'
+	icon_state = "wolf"
+	icon_living = "wolf"
+	icon_dead = "wolf_dead"
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	turns_per_move = 1
 	response_help_simple = "pets"
 	response_disarm_simple = "pushes aside"
 	response_harm_simple = "kicks"
-	maxHealth = 60
-	health = 60
-//	self_weight = 35
-
+	maxHealth = 75
+	health = 75
 	faction = list("hostile", "wolf")
-
-//	sound_speak_chance = 5
-//	sound_speak = list('sound/f13npc/dog_charge1.ogg','sound/f13npc/dog_charge2.ogg','sound/f13npc/dog_charge3.ogg')
-
-//	aggro_sound_chance = 50
-//	aggro_sound = list('sound/f13npc/dog_alert1.ogg','sound/f13npc/dog_alert2.ogg','sound/f13npc/dog_alert3.ogg')
-
 	environment_smash = 0
 	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)
 	melee_damage_lower = 20
-	melee_damage_upper = 20
-	aggro_vision_range = 15
-//	idle_vision_range = 7
+	melee_damage_upper = 25
+	aggro_vision_range = 5
 	attack_verb_simple = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
 	move_to_delay = 2
-
 	emote_taunt_sound = list('sound/f13npc/dog/dog_charge1.ogg', 'sound/f13npc/dog/dog_charge2.ogg', 'sound/f13npc/dog/dog_charge3.ogg', 'sound/f13npc/dog/dog_charge4.ogg', 'sound/f13npc/dog/dog_charge5.ogg', 'sound/f13npc/dog/dog_charge6.ogg', 'sound/f13npc/dog/dog_charge7.ogg',)
 	emote_taunt = list("growls", "barks", "snarls")
 	taunt_chance = 30
@@ -57,17 +51,56 @@
 
 /mob/living/simple_animal/hostile/wolf/alpha
 	name = "alpha feral dog"
-	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>Wait... This one's a wolf!"
-	icon_state = "wolf_angry"
-	icon_living = "wolf_angry"
-	icon_dead = "wolf_dead"
-	icon_gib = "gib"
-	maxHealth = 100
-	health = 100
+	aggro_vision_range = 6
+	maxHealth = 85
+	health = 85
 	melee_damage_lower = 25
 	melee_damage_upper = 35
 
-/mob/living/simple_animal/hostile/wolf/alpha/playable
+/mob/living/simple_animal/hostile/wolf/alpha/Aggro()
+	..()
+	summon_backup(15)
+	say("Awoo!")
+
+// OBSOLETE PLEASE USE WOLF INSTEAD
+/mob/living/simple_animal/hostile/wolf/cold
+	name = "cold feral dog"
+
+
+////////////////
+// FERAL DOGS //
+////////////////	Pack animals, low hp, low-medium aggro
+
+/mob/living/simple_animal/hostile/wolf/feral_dog
+	name = "feral dog"
+	desc = "The feral dogs of the wastes are mangy and malnourished, but mean and tough."
+	icon_state = "dog_feral"
+	icon_living = "dog_feral"
+	icon_dead = "dog_feral_dead"
+	icon_gib = "gib"
+	aggro_vision_range = 4
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha
+	name = "feral dog alpha"
+	desc = "The feral dogs of the wastes are mangy and malnourished, but mean and tough. <br>This one is a little larger and more alert than its packmates. "
+	icon_state = "dog_alpha"
+	icon_living = "dog_alpha"
+	icon_dead = "dog_alpha_dead"
+	icon_gib = "gib"
+	aggro_vision_range = 5
+	maxHealth = 75
+	health = 75
+	melee_damage_lower = 25
+	melee_damage_upper = 35
+
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha/Aggro()
+	..()
+	summon_backup(15)
+	say("Woof!")
+
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha/playable
 	health = 150
 	maxHealth = 150
 	emote_taunt_sound = null
@@ -79,18 +112,10 @@
 	anchored = FALSE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 
-/mob/living/simple_animal/hostile/wolf/cold
-	name = "cold feral dog"
-	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>Wait... This one's a wolf!"
-	icon = 'icons/mob/wastemobs.dmi'
-	icon_state = "cold_wolf"
-	icon_living = "cold_wolf"
-	icon_dead = "cold_wolf_dead"
-	icon_gib = "gib"
-	maxHealth = 100
-	health = 100
-	melee_damage_lower = 25
-	melee_damage_upper = 35
+
+//////////////
+// PET DOGS //
+//////////////
 
 //Unique Dogs - Guerilla for Khans is a Rottweiler, Brutus and Lupa german shepherds, Sniffs-the-Earth a sheepdog. 
 //Feel free to move or add code for different behaviours like sleep, some unused sprites prepped for that sort of thing.

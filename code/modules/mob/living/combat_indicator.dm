@@ -47,7 +47,7 @@
 	set_combat_indicator(TRUE)
 	change_combat_indicator(TRUE)
 
-mob/living/proc/toggle_combat_mode(silent = TRUE, was_forced = FALSE, visible = FALSE, update_icon = TRUE)
+/mob/living/proc/toggle_combat_mode(silent = TRUE, was_forced = FALSE, visible = FALSE, update_icon = TRUE)
 	if (!enabled_combat_indicator)
 		//set_combat_indicator(TRUE)
 		log_attack("[src] has toggled on the combat indicator")

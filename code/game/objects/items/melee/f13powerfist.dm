@@ -225,7 +225,7 @@
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_SMALL
 
-obj/item/melee/unarmed/punchdagger/cyborg
+/obj/item/melee/unarmed/punchdagger/cyborg
 	name = "assaultron claws"
 	desc = "Razor sharp blades embedded into the grippers of an assaultron. Sharp."
 	icon_state = "tiger_claw"

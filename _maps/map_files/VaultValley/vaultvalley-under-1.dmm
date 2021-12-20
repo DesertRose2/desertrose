@@ -754,11 +754,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/ncr)
-"hU" = (
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/bunker)
 "hW" = (
 /obj/effect/landmark/start/f13/ncrlieutenant,
 /obj/effect/decal/cleanable/dirt{
@@ -824,7 +819,7 @@
 /area/f13/tunnel)
 "is" = (
 /obj/structure/ladder/unbreakable{
-	id = "metrodungeonentrance";
+	id = "metrodungeonentrance"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -65417,10 +65412,10 @@ eF
 MR
 Pp
 Pp
-hU
+Pp
 Pp
 BN
-hU
+Pp
 Pp
 Pp
 Hv
@@ -65675,7 +65670,7 @@ Pp
 Pp
 Pp
 jq
-hU
+Pp
 FU
 Hp
 Hp

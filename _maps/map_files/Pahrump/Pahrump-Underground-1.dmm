@@ -1437,6 +1437,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/offices1st)
+"bbp" = (
+/obj/structure/foamedmetal,
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
 "bbt" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/hop{
@@ -3872,7 +3876,7 @@
 	},
 /area/f13/clinic)
 "cFF" = (
-/mob/living/simple_animal/hostile/deathclaw,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -4762,6 +4766,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/effect/mine/shrapnel,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -4792,14 +4797,6 @@
 	pixel_x = -3;
 	pixel_y = -3;
 	termtag = "Business"
-	},
-/obj/structure/fluff/paper/stack{
-	pixel_x = 11;
-	pixel_y = 4
-	},
-/obj/item/pen/fourcolor{
-	pixel_x = 5;
-	pixel_y = 8
 	},
 /turf/open/floor/carpet/purple,
 /area/f13/brotherhood/rnd)
@@ -6315,7 +6312,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "elG" = (
-/obj/structure/closet/crate/freezer/blood,
+/obj/structure/bodycontainer/morgue,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/medical)
 "elM" = (
@@ -10841,7 +10838,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "hmk" = (
-/mob/living/simple_animal/hostile/alien,
+/mob/living/simple_animal/hostile/handy/sentrybot,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -11588,7 +11585,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/mob/living/simple_animal/hostile/wolf/alpha{
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha{
 	desc = "The NCR Rangers have been known to employ K9 units from time to time.";
 	faction = list("neutral");
 	name = "Ranger Seth"
@@ -12372,6 +12369,9 @@
 /area/f13/legion)
 "inE" = (
 /obj/item/kirbyplants/photosynthetic,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "inM" = (
@@ -12892,8 +12892,15 @@
 /turf/open/floor/plating,
 /area/f13/tcoms)
 "iGw" = (
-/obj/effect/landmark/start/f13/seniorpaladin,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/lattice/catwalk,
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/turf/open/water,
 /area/f13/brotherhood/operations)
 "iGF" = (
 /obj/structure/table/wood/settler,
@@ -13219,9 +13226,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "iRb" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "rampdowntop"
@@ -13901,6 +13908,15 @@
 "jmN" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/tunnel)
+"jny" = (
+/obj/effect/mine/stun,
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "dark"
+	},
+/area/f13/bunker)
 "jnI" = (
 /obj/structure/table/reinforced{
 	req_access_txt = "120"
@@ -16104,6 +16120,12 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/brotherhood/operations)
+"kNd" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/floor/plating/f13/inside,
+/area/f13/brotherhood/rnd)
 "kNK" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/inside/mountain,
@@ -18478,6 +18500,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"mwT" = (
+/obj/structure/falsewall,
+/turf/open/floor/plating/f13/inside,
+/area/f13/brotherhood/rnd)
 "mxa" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 5
@@ -19484,7 +19510,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "ndp" = (
-/turf/closed/wall/r_wall/f13/vault,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/rust,
 /area/f13/bunker)
 "neb" = (
 /obj/structure/dresser{
@@ -20049,6 +20076,30 @@
 	icon_state = "purplefull"
 	},
 /area/f13/clinic)
+"nvS" = (
+/obj/structure/table{
+	layer = 2.9
+	},
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_x = -3;
+	pixel_y = -3;
+	termtag = "Business"
+	},
+/obj/item/flashlight/lamp{
+	pixel_x = -3;
+	pixel_y = 15
+	},
+/obj/structure/fluff/paper/stack{
+	pixel_x = 11;
+	pixel_y = 4
+	},
+/obj/item/pen/fourcolor{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/turf/open/floor/plating/f13/inside,
+/area/f13/brotherhood/rnd)
 "nvT" = (
 /obj/structure/simple_door/metal/dirtystore,
 /obj/effect/decal/cleanable/dirt{
@@ -21240,7 +21291,7 @@
 /area/f13/tunnel)
 "okh" = (
 /obj/structure/simple_door/bunker{
-	name = "Star Knight Office";
+	name = "Senior Knight Office";
 	req_access_txt = "120"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -21865,11 +21916,11 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/offices2nd)
 "oFr" = (
-/mob/living/simple_animal/hostile/deathclaw/mother,
-/turf/open/floor/f13{
-	icon_state = "dark"
+/obj/effect/landmark/start/f13/seniorpaladin,
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "darkyellowfull"
 	},
-/area/f13/bunker)
+/area/f13/brotherhood/offices1st)
 "oFT" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor5"
@@ -23790,6 +23841,10 @@
 	name = "floor_dirty"
 	},
 /area/f13/legion)
+"pNx" = (
+/obj/effect/mine/shrapnel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "pNK" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
 /turf/open/indestructible/ground/inside/mountain,
@@ -25867,8 +25922,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/window/reinforced{
-	color = "#3e3d42";
-	dir = 4
+	dir = 4;
+	icon_state = "twindowold"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -26645,7 +26700,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall/f13/vault,
+/turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "rzI" = (
 /obj/structure/rack,
@@ -27681,7 +27736,6 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -28003,8 +28057,8 @@
 /area/f13/tunnel)
 "sns" = (
 /obj/structure/window/reinforced{
-	color = "#3e3d42";
-	dir = 4
+	dir = 4;
+	icon_state = "twindowold"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -32396,6 +32450,11 @@
 	},
 /turf/open/water,
 /area/f13/caves)
+"val" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/mine/shrapnel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "vav" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/corner{
 	dir = 1
@@ -36321,6 +36380,7 @@
 	dir = 4;
 	pixel_x = -15
 	},
+/mob/living/simple_animal/hostile/handy/robobrain/nsb,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -37114,9 +37174,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
-"ycT" = (
-/turf/open/space/basic,
-/area/f13/tunnel)
 "ydb" = (
 /obj/item/candle/tribal_torch,
 /turf/open/indestructible/ground/inside/mountain,
@@ -39555,7 +39612,7 @@ aCo
 aCo
 aCo
 aCo
-aCo
+bbp
 aCo
 aCo
 aqn
@@ -39807,13 +39864,13 @@ rex
 aqn
 aCo
 aCo
-ndp
-ndp
-ndp
-ndp
-ndp
-ndp
-ndp
+fLU
+fLU
+fLU
+fLU
+fLU
+fLU
+fLU
 aCo
 aCo
 aqn
@@ -40063,15 +40120,15 @@ eLE
 aqn
 aqn
 aCo
-ndp
-ndp
+fLU
+fLU
 pvH
 hRy
 mgx
 ajl
 xkk
-ndp
-ndp
+fLU
+fLU
 aCo
 aCo
 aCo
@@ -40320,19 +40377,19 @@ eLE
 aqn
 aCo
 aCo
-ndp
+fLU
 iSR
 dRM
 qUS
 cFF
 dRM
-dRM
+cFF
 iaS
-ndp
-ndp
-ndp
-ndp
-ndp
+fLU
+fLU
+fLU
+fLU
+fLU
 aCo
 aqn
 eLE
@@ -40576,20 +40633,20 @@ eLE
 eLE
 aqn
 aCo
-ndp
-ndp
+fLU
+fLU
 ndp
 lIx
-ndp
+fLU
 ndp
 fnZ
 ndp
 ndp
-ndp
+fLU
 dlz
 cSq
 sfj
-ndp
+fLU
 aCo
 aqn
 eLE
@@ -40832,8 +40889,8 @@ uoO
 eLE
 aqn
 aqn
-ndp
-ndp
+fLU
+fLU
 wKF
 dRM
 dRM
@@ -40842,11 +40899,11 @@ niF
 dRM
 clz
 vaH
-ndp
-ndp
-ndp
+fLU
+fLU
+fLU
 eIg
-ndp
+fLU
 aCo
 aqn
 eLE
@@ -41091,19 +41148,19 @@ aqn
 hmk
 lIx
 dRM
-dRM
+cFF
 eTz
 eAg
 ndp
 tYd
 dRM
-cFF
+dRM
 tZg
 ndp
 exq
 eDV
 dRM
-ndp
+fLU
 aCo
 aqn
 eLE
@@ -41346,21 +41403,21 @@ rzg
 uoO
 aqn
 aqn
-ndp
-ndp
+fLU
+fLU
 wKF
 cnN
 dRM
 lIx
 dRM
-dRM
+cFF
 dRM
 dRM
 lIx
 qeH
+cFF
 dRM
-dRM
-ndp
+fLU
 aCo
 aqn
 eLE
@@ -41604,20 +41661,20 @@ uoO
 uoO
 aqn
 aCo
-ndp
-ndp
-ndp
-ndp
-ndp
-ndp
-ndp
+fLU
+fLU
+fLU
+fLU
+fLU
+fLU
+fLU
 dRM
 vaH
 ndp
 jWa
 cPA
 gSD
-ndp
+fLU
 aCo
 aqn
 eLE
@@ -41862,19 +41919,19 @@ uoO
 aqn
 aCo
 aCo
-ndp
+fLU
 wDz
 xyW
 hsL
-oFr
+dRM
 fnZ
 dRM
 niF
-ndp
-ndp
-ndp
-ndp
-ndp
+fLU
+fLU
+fLU
+fLU
+fLU
 aCo
 aqn
 eLE
@@ -42113,21 +42170,21 @@ uoO
 uoO
 uoO
 lnr
-lnr
+pNx
 lnr
 uoO
 aqn
 aqn
 aCo
-ndp
-ndp
+fLU
+fLU
 xnk
 wLN
-eAg
-ndp
-dRM
-ndp
-ndp
+jny
+fLU
+cFF
+fLU
+fLU
 aCo
 aCo
 aCo
@@ -42377,13 +42434,13 @@ uoO
 aqn
 aCo
 aCo
-ndp
-ndp
+fLU
+fLU
 nqO
-ndp
-ndp
+fLU
+fLU
 wom
-ndp
+fLU
 aCo
 aCo
 aqn
@@ -42638,9 +42695,9 @@ aCo
 nqO
 nqO
 nQI
-ndp
+fLU
 rzA
-ndp
+fLU
 aCo
 aqn
 aqn
@@ -43150,7 +43207,7 @@ uoO
 uoO
 uoO
 lnr
-rKx
+lnr
 lnr
 uoO
 hQf
@@ -43407,7 +43464,7 @@ lnr
 uoO
 uoO
 lnr
-bAD
+val
 uoO
 uoO
 hQf
@@ -43917,7 +43974,7 @@ uoO
 uoO
 uoO
 uoO
-lnr
+pNx
 lnr
 lnr
 lnr
@@ -45460,7 +45517,7 @@ uoO
 uoO
 uoO
 uoO
-lnr
+pNx
 bAD
 lnr
 uoO
@@ -47516,7 +47573,7 @@ lnr
 lnr
 lnr
 lnr
-lnr
+pNx
 lnr
 lnr
 lnr
@@ -85025,7 +85082,7 @@ uoO
 uoO
 uoO
 uoO
-ycT
+tur
 wIM
 weW
 weW
@@ -85791,7 +85848,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+aoj
 uoO
 uoO
 uoO
@@ -92637,8 +92694,8 @@ xWf
 jFm
 gEZ
 wyI
-tgy
-gwX
+mrV
+iGw
 vUq
 gwX
 tgy
@@ -94235,7 +94292,7 @@ rWh
 xhA
 tCG
 xhA
-xhA
+nvS
 xmk
 qPf
 tHw
@@ -94459,7 +94516,7 @@ ayq
 ayq
 kXH
 mrV
-iGw
+mrV
 qJx
 rrh
 vNF
@@ -94492,7 +94549,7 @@ rUF
 xhA
 vcT
 xhA
-xhA
+kNd
 xmk
 otR
 xmk
@@ -94748,8 +94805,8 @@ xhA
 xhA
 xhA
 pwZ
-xhA
-xhA
+mwT
+tCG
 xmk
 pYq
 xmk
@@ -95493,7 +95550,7 @@ vYw
 vYw
 vYw
 tSa
-vNF
+oFr
 vYw
 gul
 gul
@@ -95727,8 +95784,8 @@ jyw
 nCP
 mrV
 mrV
-jJM
 iRb
+bOf
 kxR
 cOE
 qrJ

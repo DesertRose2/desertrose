@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/deathclaw
 	name = "deathclaw"
 	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match."
-	icon = 'icons/mob/deathclaw.dmi'
+	icon = 'icons/fallout/mobs/monsters/deathclaw.dmi'
 	icon_state = "deathclaw"
 	icon_living = "deathclaw"
 	icon_dead = "deathclaw_dead"
