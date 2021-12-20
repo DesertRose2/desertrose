@@ -575,7 +575,7 @@ Decanii
 Camp Prefect (formerly slave master)
 */
 
-datum/job/CaesarsLegion/Legionnaire/f13campprefect
+/datum/job/CaesarsLegion/Legionnaire/f13campprefect
 	title = "Camp Prefect"
 	flag = F13CAMPPREFECT
 	total_positions = 2

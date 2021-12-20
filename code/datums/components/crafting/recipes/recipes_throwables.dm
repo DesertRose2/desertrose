@@ -61,7 +61,7 @@
 	category =  CAT_THROWABLE
 	subcategory = CAT_REGULAR
 
-datum/crafting_recipe/tomahawk
+/datum/crafting_recipe/tomahawk
 	name = "Tomahawk"
 	result = /obj/item/throwing_star/tomahawk
 	time = 40

@@ -17,34 +17,34 @@ remember you first need to setup an /icon var like so:
 
 GLOBAL_DATUM_INIT(my_icon, /icon, new('iconfile.dmi'))
 
-icon/ChangeOpacity(amount = 1)
+/icon/ChangeOpacity(amount = 1)
 	A very common operation in DM is to try to make an icon more or less transparent. Making an icon more
 	transparent is usually much easier than making it less so, however. This proc basically is a frontend
 	for MapColors() which can change opacity any way you like, in much the same way that SetIntensity()
 	can make an icon lighter or darker. If amount is 0.5, the opacity of the icon will be cut in half.
 	If amount is 2, opacity is doubled and anything more than half-opaque will become fully opaque.
-icon/GrayScale()
+/icon/GrayScale()
 	Converts the icon to grayscale instead of a fully colored icon. Alpha values are left intact.
-icon/ColorTone(tone)
+/icon/ColorTone(tone)
 	Similar to GrayScale(), this proc converts the icon to a range of black -> tone -> white, where tone is an
 	RGB color (its alpha is ignored). This can be used to create a sepia tone or similar effect.
 	See also the global ColorTone() proc.
-icon/MinColors(icon)
+/icon/MinColors(icon)
 	The icon is blended with a second icon where the minimum of each RGB pixel is the result.
 	Transparency may increase, as if the icons were blended with ICON_ADD. You may supply a color in place of an icon.
-icon/MaxColors(icon)
+/icon/MaxColors(icon)
 	The icon is blended with a second icon where the maximum of each RGB pixel is the result.
 	Opacity may increase, as if the icons were blended with ICON_OR. You may supply a color in place of an icon.
-icon/Opaque(background = "#000000")
+/icon/Opaque(background = "#000000")
 	All alpha values are set to 255 throughout the icon. Transparent pixels become black, or whatever background color you specify.
-icon/BecomeAlphaMask()
+/icon/BecomeAlphaMask()
 	You can convert a simple grayscale icon into an alpha mask to use with other icons very easily with this proc.
 	The black parts become transparent, the white parts stay white, and anything in between becomes a translucent shade of white.
-icon/AddAlphaMask(mask)
+/icon/AddAlphaMask(mask)
 	The alpha values of the mask icon will be blended with the current icon. Anywhere the mask is opaque,
 	the current icon is untouched. Anywhere the mask is transparent, the current icon becomes transparent.
 	Where the mask is translucent, the current icon becomes more transparent.
-icon/UseAlphaMask(mask, mode)
+/icon/UseAlphaMask(mask, mode)
 	Sometimes you may want to take the alpha values from one icon and use them on a different icon.
 	This proc will do that. Just supply the icon whose alpha mask you want to use, and src will change
 	so it has the same colors as before but uses the mask for opacity.

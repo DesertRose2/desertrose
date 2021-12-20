@@ -408,7 +408,7 @@
 	actions_types = list(/datum/action/item_action/toggle)
 
 
-obj/item/clothing/head/f13/ranger/montana/attack_self(mob/user)
+/obj/item/clothing/head/f13/ranger/montana/attack_self(mob/user)
 	weldingvisortoggle(user)
 	icon_state = "rangermontanaup"
 	item_state = "rangermontanaup"
