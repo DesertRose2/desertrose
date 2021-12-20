@@ -6,7 +6,7 @@
 	icon = 'icons/fallout/mobs/robots/wasterobots.dmi'
 	icon_state = "handy"
 	icon_living = "handy"
-	icon_dead = "gib7"
+	icon_dead = "robot_dead"
 	gender = NEUTER
 	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
 	move_resist = MOVE_FORCE_OVERPOWERING //unpullable
@@ -75,7 +75,6 @@
 	desc = "A pre-war combat robot based off the Mr. Handy design, armed with plasma weaponry and a deadly close-range flamer."
 	icon_state = "gutsy"
 	icon_living = "gutsy"
-	icon_dead = "gib7"
 	health = 150
 	maxHealth = 150
 	melee_damage_lower = 72
@@ -126,14 +125,15 @@
 	obj_damage = 300
 
 
+////////////////
 // SECURITRON //
+////////////////
 
 /mob/living/simple_animal/hostile/handy/securitron
 	name = "Securitron"
 	desc = "A private security robot created and mass-produced by the H&H Tools Factory"
 	icon_state = "securitron"
 	icon_living = "securitron"
-	icon_dead = "gib7"
 	health = 250
 	maxHealth = 250
 	melee_damage_lower = 40
@@ -190,7 +190,9 @@
 	retreat_distance = 0 //perish, mortal
 
 
+///////////////
 // ROBOBRAIN //
+///////////////
 
 /mob/living/simple_animal/hostile/handy/robobrain
 	name = "robobrain"
@@ -231,7 +233,9 @@
 	maxHealth = 300
 
 
+////////////////
 // PROTECTRON //
+////////////////
 
 /mob/living/simple_animal/hostile/handy/protectron
 	name = "protectron"
@@ -313,14 +317,15 @@
 	blood_volume = 0
 
 
+////////////////
 // SENTRY BOT //
+////////////////
 
 /mob/living/simple_animal/hostile/handy/sentrybot
 	name = "sentry bot"
 	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick armor plating."
 	icon_state = "sentrybot"
 	icon_living = "sentrybot"
-	icon_dead = "sentrybot"
 	health = 280
 	maxHealth = 280
 	melee_damage_lower = 48
@@ -469,7 +474,9 @@
 	environment_smash = 2 //wall-busts
 
 
+////////////////
 // ASSAULTRON //
+////////////////
 
 /mob/living/simple_animal/hostile/handy/assaultron
 	name = "assaultron"
@@ -477,7 +484,6 @@
 	icon_state = "assaultron"
 	icon_living = "assaultron"
 	gender = FEMALE //Pffffffffffffffffffffff
-	icon_dead = "gib7"
 	health = 400
 	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
 	maxHealth = 400
@@ -518,7 +524,9 @@
 	icon_dead = "assaultron_sase_dead"
 
 
-// NON CANON ROBOT MOBS
+//////////////////////////
+// NON CANON ROBOT MOBS //
+//////////////////////////
 
 /mob/living/simple_animal/hostile/handy/liberator_yellow
 	name = "liberator"
