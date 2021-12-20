@@ -24,6 +24,15 @@
 	},
 /turf/open/floor/f13,
 /area/shuttle/bunker_elevator)
+"i" = (
+/obj/machinery/door/airlock/grunge,
+/obj/docking_port/mobile/elevator{
+	dir = 4;
+	dwidth = 2;
+	id = "raider_station_train"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/shuttle/bunker_elevator)
 "k" = (
 /obj/structure/table/booth,
 /turf/open/floor/f13,
@@ -33,17 +42,6 @@
 	dir = 8
 	},
 /turf/open/floor/f13,
-/area/shuttle/bunker_elevator)
-"r" = (
-/obj/machinery/door/airlock/grunge,
-/obj/docking_port/mobile/elevator{
-	callTime = 600;
-	dir = 4;
-	height = 3;
-	id = "raider_station_train";
-	name = "raider train"
-	},
-/turf/open/indestructible/ground/inside/subway,
 /area/shuttle/bunker_elevator)
 "t" = (
 /obj/structure/barricade/train{
@@ -123,7 +121,7 @@
 (1,1,1) = {"
 c
 U
-r
+i
 U
 a
 "}
