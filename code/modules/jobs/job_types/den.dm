@@ -755,7 +755,7 @@ Mayor
 */
 
 /*--------------------------------------------------------------*/
-
+/*
 /datum/job/den/f13shopkeeper
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
@@ -799,3 +799,4 @@ Mayor
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/automatic_sear)
+*/
