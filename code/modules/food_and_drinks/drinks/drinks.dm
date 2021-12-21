@@ -442,33 +442,6 @@
 	volume = 100
 	isGlass = FALSE
 
-/obj/item/reagent_containers/food/drinks/flask
-	name = "flask"
-	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
-	icon_state = "flask"
-	custom_materials = list(/datum/material/iron=250)
-	volume = 60
-	isGlass = FALSE
-	custom_price = PRICE_ABOVE_NORMAL
-
-/obj/item/reagent_containers/food/drinks/flask/gold
-	name = "captain's flask"
-	desc = "A gold flask belonging to the captain."
-	icon_state = "flask_gold"
-	custom_materials = list(/datum/material/gold=500)
-
-/obj/item/reagent_containers/food/drinks/flask/det
-	name = "detective's flask"
-	desc = "The detective's only true friend."
-	icon_state = "detflask"
-	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 30)
-
-/obj/item/reagent_containers/food/drinks/britcup
-	name = "cup"
-	desc = "A cup with the british flag emblazoned on it."
-	icon_state = "britcup"
-	volume = 30
-	spillable = TRUE
 
 //////////////////////////soda_cans////////////////////////////////////////////////////
 //These are in their own group to be used as IED's in /obj/item/grenade/ghettobomb.dm//
