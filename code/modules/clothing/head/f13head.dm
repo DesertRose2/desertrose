@@ -351,13 +351,6 @@
 	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
-/obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
-	name = "restored T-45b helmet"
-	desc = "(VIII) It's a restored T-45b power armor helmet."
-	armor_block_chance = 80
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
-	requires_training = TRUE
-
 /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	name = "raider T-45b power helmet"
 	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet"
@@ -442,15 +435,6 @@
 	icon_state = "dethelm[on]"
 	item_state = "dethelm[on]"
 
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger
-	name = "Gunslinger T-51b Helm"
-	desc = "(VIII) With most of the external plating stripped to allow for internal thermal and night vision scanners, as well as aided targeting assist via onboard systems, this helm provides much more utility then protection. To support these systems, secondary power cells were installed into the helm, and covered with a stylish hat."
-	icon_state = "t51bgs"
-	item_state = "t51bgs"
-	slowdown = 0
-	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR
-	actions_types = list()
-
 /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
 	name = "sierra power helmet"
 	desc = "(VIII) A pre-war power armor helmet, issued to special NCR officers.."
@@ -513,31 +497,6 @@
 	item_state = "ultracitepa_helm"
 	slowdown = 0
 	actions_types = list()
-
-/obj/item/clothing/head/helmet/f13/power_armor/t60
-	name = "T-60a power helmet"
-	desc = "(X) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
-	icon_state = "t60helmet0"
-	item_state = "t60helmet0"
-	armor = list("tier" = 10, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
-	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor_block_chance = 90
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Same deflection as T-45 due to it having the same general shape.
-
-/obj/item/clothing/head/helmet/f13/power_armor/t60/update_icon_state()
-	icon_state = "t60helmet[on]"
-	item_state = "t60helmet[on]"
-
-/obj/item/clothing/head/helmet/f13/power_armor/t60/bos
-	name = "Brotherhood T-60a power helmet"
-	desc = "(X) The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
-	icon_state = "t60bos0"
-	item_state = "t60bos0"
-	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-
-/obj/item/clothing/head/helmet/f13/power_armor/t60/bos/update_icon_state()
-	icon_state = "t60bos[on]"
-	item_state = "t60bos[on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/excavator
 	name = "excavator power helmet"

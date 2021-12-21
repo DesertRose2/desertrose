@@ -45,17 +45,19 @@
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/senior
 	name = "brotherhood senior knight scout helmet"
-	desc = "(V) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Senior Knight."
+	desc = "(IV) An improved combat helmet, featuring a transparent visor and bearing the symbol of the Senior Knight."
 	icon_state = "brotherhood_helmet_scout_senior"
 	item_state = "brotherhood_helmet_scout_senior"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
+
+//Unused for now. Why give the Head Knight scouting armor and encourage them to scout with bad armor - when they're a head role? Let alone at all, honestly.
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain
 	name = "brotherhood knight captain scout helmet"
-	desc = "(VI) An improved combat helmet, featuring a transparent visor and bearing the symbol of the knight captain."
+	desc = "(IV) An improved combat helmet, featuring a transparent visor and bearing the symbol of the knight captain."
 	icon_state = "brotherhood_helmet_scout_captain"
 	item_state = "brotherhood_helmet_scout_captain"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
@@ -161,10 +163,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
-	desc = "(VI) A reinforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
+	desc = "(V) A set of combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	name = "brotherhood knight captain armor"
@@ -197,17 +199,18 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/senior
 	name = "brotherhood senior knight scout armor"
-	desc = "(V) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
+	desc = "(IV) A suit of combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a silver stripe."
 	icon_state = "brotherhood_scout_senior"
 	item_state = "brotherhood_scout_senior"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
+//Unused now - Head Knights shouldn't be running out to scout with low armor and speed; let alone at all tbh.
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain
 	name = "brotherhood knight captain scout armor"
-	desc = "(VI) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
+	desc = "(IV) A superior combat armor set made by the Brotherhood of Steel, lightened version used for recon. It bears a golden stripe."
 	icon_state = "brotherhood_scout_captain"
 	item_state = "brotherhood_scout_captain"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("tier" = 4, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
