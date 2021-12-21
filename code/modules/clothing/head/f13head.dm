@@ -1011,9 +1011,23 @@
 	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
+// Muties
+
 /obj/item/clothing/head/helmet/f13/mutie
 	name = "oversized bladed helmet"
 	desc = "(IV) An oversized helmet with a large blade on the top, probably meant for some big green bastard."
 	icon_state = "mutie_bladed_helmet"
 	item_state = "mutie_bladed_helmet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 28, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/mutie/knight
+	name = "mutant crusaders helm"
+	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth. In theory, that last one."
+	icon_state = "mutie_knight"
+	item_state = "mutie_knight"
+
+/obj/item/clothing/head/helmet/f13/mutie/knight/crown
+	name = "mutant monarchs helm"
+	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
+	icon_state = "mutie_crown"
+	item_state = "mutie_crown"
