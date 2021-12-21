@@ -53282,7 +53282,7 @@
 "ujq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/ncr/sergeant{
+/mob/living/simple_animal/hostile/ncr_trooper/sergeant{
 	desc = "A former NCR Sergeant that had turned his back on the Republic, now little more than a better drilled raider boss.";
 	faction = list("raider");
 	name = "Rogue Sergeant"
