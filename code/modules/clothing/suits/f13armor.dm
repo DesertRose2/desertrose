@@ -1100,3 +1100,9 @@
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutie/metal/knight
+	name = "mutant crusaders armour"
+	desc = "(V) A suit of large, yet finely forged armour with a plain white tabard draped over the top."
+	icon_state = "mutie_knight"
+	item_state = "mutie_knight"
