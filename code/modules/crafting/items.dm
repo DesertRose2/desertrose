@@ -1030,15 +1030,15 @@
 	//chance to upgrade all t45b versions to salvaged t45b, chance to upgrade salvaged t45b to t45b (new sprotes, t8 armor with no slowdown)
 	if(prob(40))
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))//ups raider to salvaged
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45d(user.loc)
 			qdel(A)
 			return
 		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/hotrod))//ups hotrod to salvaged
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45d(user.loc)
 			qdel(A)
 			return
 		if(istype(A, /obj/item/clothing/suit/armor/f13/power_armor/t45b))
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45d(user.loc)
 			qdel(A)
 			return
 	qdel(src)
@@ -1047,15 +1047,15 @@
 	var/obj/item/clothing/head/helmet/f13/power_armor/H = W
 	if(prob(50))
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm))//ups raider to salvaged
-			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45d(user.loc)
 			qdel(H)
 			return
 		if(istype(H,/obj/item/clothing/head/helmet/f13/power_armor/hotrod))//ups hotrod to salvaged
-			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45d(user.loc)
 			qdel(H)
 			return
 		if(istype(H, /obj/item/clothing/head/helmet/f13/power_armor/t45b))
-			new /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored(user.loc)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45d(user.loc)
 			qdel(H)
 			return
 	qdel(src)

@@ -1396,7 +1396,7 @@
 /datum/crafting_recipe/bospowerarmort45b
 	name = "brotherhood restored T45 power armor"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	reqs = list (/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored = 1,
+	reqs = list (/obj/item/clothing/suit/armor/f13/power_armor/t45d = 1,
 				/obj/item/stack/crafting/goodparts = 3,
 				/obj/item/stack/crafting/electronicparts = 3,
 				/obj/item/toy/crayon/spraycan)
@@ -1409,7 +1409,7 @@
 /datum/crafting_recipe/bospowerarmort45b/helmet
 	name = "brotherhood restored T45 power armor helmet"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
-	reqs = list (/obj/item/clothing/head/helmet/f13/power_armor/t45b/restored = 1,
+	reqs = list (/obj/item/clothing/head/helmet/f13/power_armor/t45d = 1,
 				/obj/item/stack/crafting/goodparts = 1,
 				/obj/item/stack/crafting/electronicparts = 2,
 				/obj/item/toy/crayon/spraycan)
@@ -1456,28 +1456,6 @@
 	name = "brotherhood T51 power armor helmet"
 	result = /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
 	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t51b = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 30
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE
-	tools = list(TOOL_PASTATION)
-
-/datum/crafting_recipe/bospowerarmort60
-	name = "brotherhood T60 power armor"
-	result = /obj/item/clothing/suit/armor/f13/power_armor/t60/bos
-	reqs = list(/obj/item/clothing/suit/armor/f13/power_armor/t60 = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 30
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-	always_availible = FALSE
-	tools = list(TOOL_PASTATION)
-
-/datum/crafting_recipe/bost60ahelm
-	name = "brotherhood T60 power armor helmet"
-	result = /obj/item/clothing/head/helmet/f13/power_armor/t60/bos
-	reqs = list(/obj/item/clothing/head/helmet/f13/power_armor/t60 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
