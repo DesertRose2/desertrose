@@ -276,7 +276,6 @@ Knight Captain
 
 	loadout_options = list(
 	/datum/outfit/loadout/captech,
-	/datum/outfit/loadout/capscout,
 	/datum/outfit/loadout/capwarden
 	)
 
@@ -325,19 +324,6 @@ Knight Captain
 		/obj/item/clothing/glasses/meson=1,
 		/obj/item/storage/belt/holster=1,
 		)
-
-/datum/outfit/loadout/capscout
-	name = "Scout Captain"
-	backpack_contents = list(
-		/obj/item/clothing/head/helmet/f13/combat/brotherhood/scout/captain=1,
-		/obj/item/clothing/suit/armor/f13/combat/brotherhood/scout/captain=1,
-		/obj/item/clothing/glasses/night=1,
-		/obj/item/binoculars=1,
-		/obj/item/book/granter/trait/trekking=1,
-		/obj/item/gun/energy/laser/wattz2k/extended=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
-		/obj/item/clothing/neck/mantle/bos/knight=1
-	)
 
 /datum/outfit/loadout/capwarden
 	name = "Warden Captain"
