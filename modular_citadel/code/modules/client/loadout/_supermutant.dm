@@ -106,8 +106,10 @@
 /datum/gear/supermutant/suit/armour/ncr/ranger/vet
 	name = "Veteran Ranger Armour"
 	path = /obj/item/storage/box/large/custom_kit/mutievet
-	restricted_desc = "Veteran Ranger"
-	restricted_roles = "NCR Veteran Ranger"
+	restricted_desc = "Ranger Higher-Ups"
+	restricted_roles = list("NCR Ranger Sergeant",
+							"NCR Veteran Ranger"
+							)
 	cost = 8
 
 //Mutant Veteran Ranger kit
@@ -156,6 +158,7 @@
 	path = /obj/item/clothing/under/f13/ncrmutie
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Veteran Ranger",
+							"NCR Ranger Sergeant",
 							"NCR Ranger",
 							"NCR Commanding Officer",
 							"NCR Medical Officer",

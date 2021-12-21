@@ -244,7 +244,7 @@
 	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/mutie
 
 /obj/item/modkit/riotgear_helmet/mutievet
-	name = "Mutant Veteran Ranger Armour modkit"
+	name = "Mutant Veteran Ranger Helmet modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
 
 /obj/item/modkit/legionvetpalhunter
