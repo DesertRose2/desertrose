@@ -20065,7 +20065,7 @@
 	pixel_y = 27
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/item/reagent_containers/food/drinks/flask/det,
+/obj/item/reagent_containers/food/drinks/flask/fancy,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
