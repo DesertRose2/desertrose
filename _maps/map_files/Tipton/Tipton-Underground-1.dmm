@@ -6625,7 +6625,7 @@
 	},
 /area/f13/sewer)
 "gCM" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -10542,7 +10542,7 @@
 /area/f13/sewer)
 "kum" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -15374,7 +15374,7 @@
 	},
 /area/f13/bunker)
 "oQs" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -16097,7 +16097,7 @@
 	},
 /area/f13/bunker)
 "pBP" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -16995,7 +16995,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
 "qAJ" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},

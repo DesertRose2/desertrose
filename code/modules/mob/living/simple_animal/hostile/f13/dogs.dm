@@ -62,10 +62,6 @@
 	summon_backup(15)
 	say("Awoo!")
 
-// OBSOLETE PLEASE USE WOLF INSTEAD
-/mob/living/simple_animal/hostile/wolf/cold
-	name = "cold feral dog"
-
 
 ////////////////
 // FERAL DOGS //
