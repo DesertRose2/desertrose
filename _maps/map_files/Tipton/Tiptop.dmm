@@ -7281,7 +7281,7 @@
 	},
 /area/f13/ncr)
 "aMP" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -7780,7 +7780,7 @@
 /area/f13/ncr)
 "aPa" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -8669,7 +8669,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/casino)
 "aTi" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "aTj" = (
@@ -8685,7 +8685,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "aTl" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "aTn" = (
@@ -9395,7 +9395,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
 "aXg" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -10223,7 +10223,7 @@
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
 "ban" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -10287,7 +10287,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "baB" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -10490,7 +10490,7 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
 "bbo" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bbq" = (
@@ -10581,7 +10581,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/wolf/alpha,
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bbE" = (
@@ -13406,7 +13406,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "bkR" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkU" = (
@@ -13422,7 +13422,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkX" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkZ" = (
@@ -48092,7 +48092,7 @@
 /turf/open/water,
 /area/f13/radiation)
 "rtx" = (
-/mob/living/simple_animal/hostile/wolf/alpha{
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha{
 	desc = "The NCR Rangers have been known to employ K9 units from time to time.";
 	faction = list("neutral");
 	name = "Ranger Seth"
@@ -53282,7 +53282,7 @@
 "ujq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/ncr/sergeant{
+/mob/living/simple_animal/hostile/ncr_trooper/sergeant{
 	desc = "A former NCR Sergeant that had turned his back on the Republic, now little more than a better drilled raider boss.";
 	faction = list("raider");
 	name = "Rogue Sergeant"

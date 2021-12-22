@@ -2974,7 +2974,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "bWa" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bWg" = (
@@ -4803,7 +4803,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "doY" = (
-/mob/living/simple_animal/hostile/wolf/cold,
+/mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "dpp" = (
@@ -9282,7 +9282,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/brotherhood)
 "gyf" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "gyA" = (
@@ -10724,7 +10724,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
 "hxF" = (
-/mob/living/simple_animal/hostile/wolf/alpha,
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "hxV" = (
@@ -16563,7 +16563,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/wolf/alpha,
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lPt" = (
@@ -20441,7 +20441,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "ovN" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "owp" = (
@@ -22026,7 +22026,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/klamat)
 "pzD" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pAh" = (

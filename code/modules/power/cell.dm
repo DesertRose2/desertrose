@@ -438,11 +438,11 @@
 
 /obj/item/stock_parts/cell/ammo/mfc/update_icon()
 	switch(charge)
-		if (1001 to 2000)
+		if (1251 to 2000)
 			icon_state = "mfc-full"
-		if (51 to 1000)
+		if (101 to 1250)
 			icon_state = "mfc-half"
-		if (0 to 50)
+		if (0 to 100)
 			icon_state = "mfc-empty"
 	. = ..()
 
@@ -473,13 +473,17 @@
 /obj/item/stock_parts/cell/ammo/ecp
 	name = "electron charge pack"
 	desc = "A electron charge pack, for rapidly-firing energy weapons."
-	icon_state = "ecp"
+	icon_state = "ecp-full"
 	maxcharge = 2400
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
 	switch(charge)
-		if (0 to 50)
-			icon_state = "ecp-empty"
+		if (1501 to 2400)
+			icon_state = "mfc-full"
+		if (101 to 1500)
+			icon_state = "mfc-half"
+		if (0 to 100)
+			icon_state = "mfc-empty"
 	. = ..()
 
 /obj/item/stock_parts/cell/ammo/alien
