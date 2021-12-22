@@ -817,13 +817,13 @@
 	icon_state = "poster88"
 
 /obj/structure/sign/poster/prewar/poster89
-	name = "Calender"
-	desc = "Calender for the year 2077."
+	name = "calendar"
+	desc = "A calendar for the year 2077."
 	icon_state = "poster89"
 
 /obj/structure/sign/poster/prewar/poster90
-	name = "Calender"
-	desc = "Calender for the year 2077."
+	name = "calendar"
+	desc = "A calendar for the year 2077."
 	icon_state = "poster90"
 
 /obj/structure/sign/poster/prewar/poster91
