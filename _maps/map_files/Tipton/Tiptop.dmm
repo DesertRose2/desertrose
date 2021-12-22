@@ -8791,7 +8791,7 @@
 	dir = 8;
 	icon_state = "snow_corner"
 	},
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright1"
 	},
@@ -8910,7 +8910,7 @@
 /area/f13/wasteland)
 "aUv" = (
 /obj/item/flag/ncr,
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "aUx" = (
@@ -13791,7 +13791,7 @@
 	dir = 4;
 	icon_state = "snow_corner"
 	},
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2top"
 	},
@@ -15342,11 +15342,11 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/tunnel)
 "bvn" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/ncr)
 "bvo" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -16397,7 +16397,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "bAZ" = (
@@ -24221,7 +24221,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "cYx" = (
@@ -29287,7 +29287,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "fWz" = (
@@ -29733,7 +29733,6 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/obj/structure/barricade/wooden/snowed,
 /obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)

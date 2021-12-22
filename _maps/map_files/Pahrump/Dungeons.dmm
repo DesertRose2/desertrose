@@ -12006,7 +12006,6 @@
 /area/f13/bunker)
 "swg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden/snowed,
 /obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)

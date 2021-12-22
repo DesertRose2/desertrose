@@ -1214,11 +1214,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "adI" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "adJ" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "adK" = (
@@ -11162,16 +11162,16 @@
 /area/f13/klamat)
 "aJw" = (
 /obj/machinery/door/airlock/glass_large,
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "aJx" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "aJy" = (
-/obj/structure/barricade/wooden/snowed,
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "aJz" = (
@@ -17372,7 +17372,7 @@
 	},
 /area/f13/wasteland)
 "bdJ" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city/museum)
 "bdK" = (
@@ -18970,7 +18970,7 @@
 	},
 /area/f13/city)
 "bjq" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/grass/snow,
 /area/f13/underground/mountain)
 "bjr" = (

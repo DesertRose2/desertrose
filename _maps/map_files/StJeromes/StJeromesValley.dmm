@@ -5696,7 +5696,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/caves)
 "aqt" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /obj/machinery/light/floor,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/caves)
@@ -8088,7 +8088,7 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/caves)
 "awP" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/caves)
 "awQ" = (
@@ -17632,7 +17632,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "bbx" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "bby" = (
@@ -20996,7 +20996,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "blZ" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /obj/structure/table/wood,
 /obj/structure/windoor_assembly{
 	dir = 4
@@ -21428,7 +21428,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bnt" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "bnu" = (
@@ -21587,7 +21587,7 @@
 	},
 /area/f13/city)
 "bnP" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bnQ" = (
@@ -23994,7 +23994,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "buS" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /obj/effect/spawner/structure/window/ice,
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
@@ -24125,11 +24125,11 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/radiation)
 "bvn" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/ncr)
 "bvo" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -24422,7 +24422,6 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/legion)
 "bwb" = (
-/obj/structure/barricade/wooden/snowed,
 /obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
@@ -36640,11 +36639,11 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "ceG" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "ceH" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -36656,7 +36655,7 @@
 	},
 /area/f13/wasteland)
 "ceJ" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -36668,7 +36667,7 @@
 	},
 /area/f13/wasteland)
 "ceL" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
@@ -36684,7 +36683,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "ceO" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "ceP" = (
@@ -39695,7 +39694,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/sewer)
 "jNQ" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/water,
 /area/f13/sewer)
 "jPE" = (
@@ -42992,7 +42991,7 @@
 /turf/open/water,
 /area/f13/caves)
 "xOK" = (
-/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plating/ice,
 /area/f13/sewer)
 "xOZ" = (
