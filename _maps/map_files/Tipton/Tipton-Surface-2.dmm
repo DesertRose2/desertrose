@@ -556,7 +556,7 @@
 	},
 /area/f13/building)
 "arG" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -1767,7 +1767,7 @@
 	},
 /area/f13/brotherhood)
 "bfX" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -2171,7 +2171,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/klamat)
 "bwg" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mechant's House";
 	req_one_access_txt = "31"
@@ -2828,7 +2828,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "bRp" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -4846,7 +4846,7 @@
 /turf/open/floor/plating/snowed/temperatre,
 /area/f13/building)
 "dqy" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -6794,7 +6794,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "eMg" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -7225,7 +7225,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "fbK" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "134"
@@ -8319,7 +8319,7 @@
 /area/f13/building)
 "fLB" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -8681,7 +8681,7 @@
 	},
 /area/f13/followers)
 "gbb" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
@@ -8833,7 +8833,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/klamat)
 "ghh" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -9128,7 +9128,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "gsy" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bank";
 	req_one_access_txt = "25"
@@ -9656,7 +9656,7 @@
 	},
 /area/f13/wasteland)
 "gKO" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -11358,7 +11358,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hUw" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Roadie Bunks";
 	req_one_access_txt = "31"
@@ -11593,7 +11593,7 @@
 /area/f13/building)
 "idy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -11952,7 +11952,7 @@
 /turf/open/floor/carpet/red,
 /area/f13/casino)
 "itK" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "itU" = (
@@ -13074,7 +13074,7 @@
 /turf/open/floor/wood,
 /area/f13/building)
 "jel" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -14095,7 +14095,7 @@
 /area/f13/ncr)
 "jQI" = (
 /obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plating/tunnel,
 /area/f13/klamat)
 "jQU" = (
@@ -15006,7 +15006,7 @@
 /area/f13/klamat)
 "kAQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	max_integrity = 300;
 	name = "Khan Kasino";
 	obj_integrity = 300;
@@ -15868,7 +15868,7 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/wasteland)
 "lib" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -20732,7 +20732,7 @@
 	},
 /area/f13/wasteland)
 "oIP" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -20785,7 +20785,7 @@
 	},
 /area/f13/klamat)
 "oNp" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -21598,7 +21598,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "pnp" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
@@ -23380,7 +23380,7 @@
 /area/f13/wasteland)
 "qCB" = (
 /obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -23753,7 +23753,7 @@
 /turf/open/floor/wood,
 /area/f13/building)
 "qRH" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
@@ -26782,7 +26782,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "tlv" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -29571,7 +29571,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "voE" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Armory";
 	req_one_access_txt = "134"
@@ -32263,7 +32263,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "xpt" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "134"

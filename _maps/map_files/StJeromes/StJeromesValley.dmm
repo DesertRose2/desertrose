@@ -3747,7 +3747,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
 "akA" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Church Backroom";
 	req_one_access_txt = "25"
@@ -10646,7 +10646,7 @@
 	},
 /area/f13/underground/mountain)
 "aFy" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	req_one_access_txt = "48"
 	},
@@ -12878,7 +12878,7 @@
 	},
 /area/f13/city)
 "aMq" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bank";
 	req_one_access_txt = "25"
@@ -13556,7 +13556,7 @@
 	},
 /area/f13/followers)
 "aOm" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -13675,7 +13675,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aOC" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bank";
 	req_one_access_txt = "25"
@@ -14324,7 +14324,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/klamat)
 "aQJ" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -14501,7 +14501,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/klamat)
 "aRs" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -15829,7 +15829,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "aVT" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Oasis Housing";
 	req_one_access_txt = "25"
@@ -16223,7 +16223,7 @@
 /turf/closed/indestructible/fakeglass,
 /area/f13/underground/mountain)
 "aXb" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Armory";
 	req_one_access_txt = "62"
@@ -16521,7 +16521,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
 "aXR" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -18365,7 +18365,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "bdW" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bdX" = (
@@ -27336,7 +27336,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bDX" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	req_one_access_txt = "25"
 	},
@@ -27796,7 +27796,7 @@
 	},
 /area/f13/wasteland)
 "bFo" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -27952,7 +27952,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bFN" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	req_one_access_txt = "25"
 	},
@@ -32955,7 +32955,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bTd" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bTe" = (
@@ -33671,7 +33671,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bVw" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -38497,7 +38497,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "fkr" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Store Backroom";
 	req_one_access_txt = "34"
@@ -38685,7 +38685,7 @@
 /turf/open/water,
 /area/f13/sewer)
 "gbK" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "62"
@@ -39358,7 +39358,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "iqv" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	req_one_access_txt = "48"
 	},
@@ -40300,7 +40300,7 @@
 /turf/open/water,
 /area/f13/caves)
 "mKF" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "62"

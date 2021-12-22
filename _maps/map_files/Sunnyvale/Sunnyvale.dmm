@@ -14734,7 +14734,7 @@
 	},
 /area/f13/klamat/mine)
 "aOj" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bank";
 	req_one_access_txt = "25"
 	},
@@ -15210,7 +15210,7 @@
 	},
 /area/f13/sunny_dale)
 "aPB" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -30270,7 +30270,7 @@
 	},
 /area/f13/underground/bos)
 "bGA" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bGB" = (

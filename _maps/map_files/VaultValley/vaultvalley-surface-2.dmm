@@ -772,7 +772,7 @@
 	},
 /area/f13/building)
 "aQV" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -3445,7 +3445,7 @@
 	},
 /area/f13/building)
 "duA" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -9960,7 +9960,7 @@
 	},
 /area/f13/wasteland)
 "kan" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -10866,7 +10866,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "kSg" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "kSh" = (
@@ -10899,7 +10899,7 @@
 	},
 /area/f13/wasteland)
 "kSM" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "kTh" = (
@@ -11710,7 +11710,7 @@
 	},
 /area/f13/building)
 "lKi" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lKt" = (
@@ -12222,7 +12222,7 @@
 	},
 /area/f13/building)
 "mpY" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -12926,7 +12926,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "mZw" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "mZT" = (
@@ -21378,7 +21378,7 @@
 	},
 /area/f13/building)
 "vCv" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -21629,7 +21629,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
 "vSi" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -22679,7 +22679,7 @@
 /turf/open/indestructible,
 /area/f13/caves)
 "wTD" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/building)
