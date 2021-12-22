@@ -474,7 +474,6 @@
 /obj/item/storage/box/large/custom_kit/dahliavega/PopulateContents()
 	new /obj/item/storage/belt/holster/ncrcf_w(src)
 	new /obj/item/clothing/head/beret/tina_beret(src)
-(src)
 
 //Lorraine Clarke - Pisshole
 /obj/item/storage/box/large/custom_kit/lorraineclarke/PopulateContents()
