@@ -441,6 +441,21 @@
 	path = /obj/item/storage/box/large/custom_kit/nataliamorgan
 	ckeywhitelist = list("panzer1944")
 
+/datum/gear/donator/kits/dahliavega
+	name = "Dahlia Lynne Vega's belongings"
+	path = /obj/item/storage/box/large/custom_kit/dahliavega
+	ckeywhitelist = list("pisshole")
+
+/datum/gear/donator/kits/lorraineclarke
+	name = "Lorraine Clarke's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lorraineclarke
+	ckeywhitelist = list("pisshole")
+
+/datum/gear/donator/kits/josephriley
+	name = "Joseph Riley's belongings"
+	path = /obj/item/storage/box/large/custom_kit/josephriley
+	ckeywhitelist = list("kooarbiter")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
