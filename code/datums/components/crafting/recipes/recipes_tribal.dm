@@ -320,13 +320,13 @@
 	result = /obj/item/ammo_casing/caseless/arrow/poison
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
-				/obj/item/grown/nettle/basic = 5)
+				/obj/item/reagent_containers/food/snacks/grown/nettle = 5)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/arrowburn
-	name = "Burn Posion Arrow"
+	name = "Burn Arrow"
 	always_availible = FALSE
 	result = /obj/item/ammo_casing/caseless/arrow/burning
 	time = 30
