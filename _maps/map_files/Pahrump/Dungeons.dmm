@@ -716,6 +716,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"bhb" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
 "bhU" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor{
@@ -2245,11 +2250,6 @@
 /obj/item/stack/crafting/electronicparts/three,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/bunker)
-"dHs" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "dHT" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -9345,10 +9345,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
-"osf" = (
-/obj/structure/simple_door/fakeglass,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "osC" = (
 /mob/living/simple_animal/hostile/supermutant/legendary,
 /obj/effect/decal/cleanable/dirt,
@@ -15704,6 +15700,10 @@
 /mob/living/simple_animal/hostile/handy/nsb,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/bunker)
+"ycc" = (
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "ych" = (
 /obj/machinery/light/broken,
@@ -35737,7 +35737,7 @@ vAC
 vAC
 vAC
 xsH
-dHs
+bhb
 nKy
 yhK
 jAl
@@ -79585,7 +79585,7 @@ heT
 bsh
 lEp
 okW
-osf
+ycc
 okW
 okW
 okW
@@ -79597,7 +79597,7 @@ okW
 okW
 okW
 okW
-osf
+ycc
 okW
 amW
 bBK
@@ -79849,7 +79849,7 @@ okW
 okW
 okW
 okW
-osf
+ycc
 okW
 okW
 okW
@@ -80629,7 +80629,7 @@ bsh
 bsh
 bsh
 rUH
-osf
+ycc
 rUH
 bsh
 bsh

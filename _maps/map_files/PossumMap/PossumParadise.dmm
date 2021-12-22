@@ -10221,6 +10221,10 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/dark,
 /area/f13/casino)
+"aGe" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/r_wall/f13/vault,
+/area/f13/city)
 "aGf" = (
 /obj/machinery/door/airlock/glass_large,
 /turf/open/floor/wood,
@@ -17972,10 +17976,6 @@
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
-"bfX" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "bfY" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
@@ -20311,15 +20311,14 @@
 /obj/machinery/power/supermatter_crystal/shard/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault/reactor)
-"jdS" = (
+"ebX" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/spawner/lootdrop/clothing_low,
-//turf/open/floor/f13/wood,
-/area/f13/city)
-"pQr" = (
-/obj/structure/sign/nanotrasen,
-/turf/closed/wall/r_wall/f13/vault,
+//area/f13/city)
+"icO" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood,
 /area/f13/city)
 
 (1,1,1) = {"
@@ -162146,7 +162145,7 @@ asx
 asx
 asx
 atm
-pQr
+aGe
 aGw
 avC
 avC
@@ -162954,7 +162953,7 @@ atG
 atG
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -163762,7 +163761,7 @@ atG
 asj
 aFs
 aFs
-pQr
+aGe
 aGx
 avC
 avC
@@ -164570,7 +164569,7 @@ atN
 aBq
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -165176,7 +165175,7 @@ atG
 aBq
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -165432,7 +165431,7 @@ aPc
 aOr
 aOE
 aOR
-jdS
+ebX
 aOr
 aPI
 aOy
@@ -165984,7 +165983,7 @@ asF
 asj
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -166792,7 +166791,7 @@ asF
 asj
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -167600,7 +167599,7 @@ atG
 ayJ
 asx
 atm
-pQr
+aGe
 aGx
 avC
 avC
@@ -171746,7 +171745,7 @@ aOy
 aOy
 aPG
 bfR
-bfX
+icO
 bgl
 aOy
 aOy

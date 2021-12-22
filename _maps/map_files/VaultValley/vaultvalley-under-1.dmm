@@ -11,6 +11,14 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"aj" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Military Police"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/ncr)
 "at" = (
 /mob/living/simple_animal/hostile/mirelurk/hunter,
 /turf/open/indestructible/ground/outside/water,
@@ -135,6 +143,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"bD" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "bE" = (
 /obj/structure/railing{
 	dir = 1
@@ -287,6 +299,15 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ncr)
+"dm" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "do" = (
 /obj/machinery/light{
 	dir = 1
@@ -574,6 +595,18 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"gr" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/door/unpowered/securedoor{
+	name = "Privates";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "gv" = (
 /obj/structure/table/wood/fancy/black,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
@@ -698,6 +731,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/caves)
+"hu" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Recruits"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "hv" = (
 /obj/structure/rack,
 /obj/effect/spawner/bundle/f13/armor/metal,
@@ -1088,6 +1129,15 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"kk" = (
+/obj/structure/simple_door/room,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "kl" = (
 /obj/structure/closet/crate{
 	anchored = 1
@@ -1256,15 +1306,6 @@
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"lX" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/wooddoor,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "mi" = (
 /obj/structure/barricade/train,
 /turf/open/indestructible/ground/inside/subway,
@@ -1448,6 +1489,17 @@
 /obj/structure/barricade/tentclothedge,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"oi" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "om" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -1551,17 +1603,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"ph" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Corporals"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "pj" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -1841,14 +1882,6 @@
 /mob/living/simple_animal/hostile/radscorpion/black,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"qN" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Commanding Officer"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "qO" = (
 /obj/structure/timeddoor{
 	deletion_time = 9000
@@ -2371,6 +2404,17 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"ve" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Corporals"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "vf" = (
 /obj/structure/fluff/rails{
 	dir = 4
@@ -2497,15 +2541,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/mining)
-"wh" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/bunker)
 "wi" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/f13/vault,
@@ -2579,14 +2614,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/caves)
-"wM" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Sergeant FIrst Class"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "wS" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
@@ -3095,6 +3122,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"Bp" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "Br" = (
 /obj/structure/simple_door/metal/barred,
 /obj/effect/decal/cleanable/blood/gibs{
@@ -3699,17 +3735,6 @@
 "HD" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
-"HE" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Sergeant"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "HO" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /obj/item/storage/trash_stack,
@@ -3871,10 +3896,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/caves)
-"IY" = (
-/obj/machinery/door/unpowered/wooddoor,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "Ja" = (
 /mob/living/simple_animal/hostile/ghoul{
 	health = 10
@@ -4027,10 +4048,6 @@
 /obj/structure/barricade/train,
 /turf/open/floor/f13,
 /area/f13/tunnel)
-"KJ" = (
-/obj/machinery/door/unpowered/wooddoor,
-/turf/open/space/basic,
-/area/f13/ncr)
 "KO" = (
 /obj/structure/closet/fridge/cannibal,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
@@ -4209,15 +4226,6 @@
 /obj/machinery/camera,
 /turf/open/floor/f13,
 /area/f13/caves)
-"Mz" = (
-/obj/structure/simple_door/room,
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Sergeant"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "MA" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos{
@@ -4628,6 +4636,14 @@
 "PC" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/tunnel)
+"PF" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant FIrst Class"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "PH" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/singlecard{
@@ -4857,18 +4873,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
-"Ru" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Privates";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Rx" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13,
@@ -4977,22 +4981,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
-"Sy" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Recruits"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
-"SB" = (
-/obj/machinery/door/unpowered/wooddoor{
-	name = "Military Police"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/ncr)
 "SC" = (
 /mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/floor/f13{
@@ -5405,6 +5393,18 @@
 /obj/item/clothing/head/f13/nursehat,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"Wa" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Commanding Officer"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
+"Wi" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/space/basic,
+/area/f13/ncr)
 "Wj" = (
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
@@ -27293,7 +27293,7 @@ Ho
 Ho
 Ho
 Ho
-Ru
+gr
 ZK
 ZK
 Il
@@ -28578,7 +28578,7 @@ Ho
 Ho
 Ho
 Ho
-Sy
+hu
 ZK
 ZK
 kJ
@@ -30115,11 +30115,11 @@ vH
 vH
 vH
 kJ
-lX
+Bp
 kJ
 kJ
 kJ
-lX
+Bp
 kJ
 ZK
 ZK
@@ -30377,7 +30377,7 @@ Ho
 Jn
 Ho
 Ho
-ph
+ve
 ZK
 ZK
 kJ
@@ -31145,7 +31145,7 @@ vH
 kJ
 SF
 SF
-IY
+bD
 SF
 rM
 kJ
@@ -31662,7 +31662,7 @@ kJ
 kJ
 SF
 SF
-SB
+aj
 ZK
 ZK
 Il
@@ -31684,7 +31684,7 @@ Uo
 wl
 kJ
 mT
-Mz
+kk
 mT
 tC
 mT
@@ -32173,7 +32173,7 @@ vH
 kJ
 SF
 SF
-KJ
+Wi
 SF
 rM
 kJ
@@ -32454,7 +32454,7 @@ Dy
 Uo
 Uo
 kJ
-HE
+oi
 mT
 mT
 mT
@@ -32716,7 +32716,7 @@ Ho
 Pj
 Ho
 Ho
-qN
+Wa
 lq
 lq
 gA
@@ -32971,7 +32971,7 @@ kJ
 mT
 mT
 mT
-wM
+PF
 mT
 mT
 Im
@@ -33227,7 +33227,7 @@ jt
 kJ
 wU
 lq
-IY
+bD
 lq
 lq
 mT
@@ -63605,8 +63605,8 @@ kK
 kK
 kK
 Hv
-wh
-wh
+dm
+dm
 by
 Pp
 jh
@@ -63862,8 +63862,8 @@ Hv
 Hv
 Hv
 Hv
-wh
-wh
+dm
+dm
 te
 Pp
 Pp
@@ -64382,7 +64382,7 @@ Nl
 Pp
 bn
 Pp
-wh
+dm
 Pp
 An
 Pv
@@ -64896,7 +64896,7 @@ Nl
 Pp
 by
 Pp
-wh
+dm
 MR
 zE
 fz
@@ -65404,8 +65404,8 @@ Hv
 Hv
 Hv
 Hv
-wh
-wh
+dm
+dm
 te
 Pp
 eF
@@ -65661,8 +65661,8 @@ kK
 kK
 kK
 Hv
-wh
-wh
+dm
+dm
 by
 Pp
 jq
