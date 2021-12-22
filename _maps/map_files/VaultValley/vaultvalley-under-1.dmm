@@ -2498,7 +2498,7 @@
 	},
 /area/f13/brotherhood/mining)
 "wh" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","raider");
 	name = "raider dog"
 	},
