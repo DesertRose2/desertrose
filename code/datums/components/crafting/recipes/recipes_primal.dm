@@ -117,7 +117,7 @@
 			/obj/item/stack/sheet/bone = 10,
 			/datum/reagent/oil = 5)
 	result = /obj/structure/statue/bone/rib
-	subcategory = CAT_PRIMAL
+	category = CAT_PRIMAL
 
 /datum/crafting_recipe/skull
 	name = "Skull Carving"

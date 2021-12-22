@@ -380,7 +380,7 @@
 				/obj/item/advanced_crafting_components/alloys = 1,
 				/obj/item/stack/sheet/glass = 4)
 	category = CAT_WEAPONRY
-	category = CAT_WEAPON
+	subcategory = CAT_WEAPON
 	tools = list(TOOL_WORKBENCH)
 
 /datum/crafting_recipe/deathclawspear
