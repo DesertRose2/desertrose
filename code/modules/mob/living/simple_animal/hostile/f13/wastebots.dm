@@ -65,13 +65,13 @@
 	add_overlay("eyes-[initial(icon_state)]")
 
 /mob/living/simple_animal/hostile/handy/nsb //NSB + Raider Bunker specific
-	name = "mr.handy"
+	name = "Mr. Handy"
 	aggro_vision_range = 15
 	faction = list("raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/gutsy
-	name = "mr. gutsy"
+	name = "Mr. Gutsy"
 	desc = "A pre-war combat robot based off the Mr. Handy design, armed with plasma weaponry and a deadly close-range flamer."
 	icon_state = "gutsy"
 	icon_living = "gutsy"
@@ -119,7 +119,7 @@
 	. = ..()
 
 /mob/living/simple_animal/hostile/handy/gutsy/nsb //NSB + Raider Bunker specific
-	name = "mr. gutsy"
+	name = "Mr. Gutsy"
 	aggro_vision_range = 15
 	faction = list("raider")
 	obj_damage = 300

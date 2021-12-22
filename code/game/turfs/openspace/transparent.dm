@@ -47,7 +47,7 @@
 
 
 /turf/open/transparent/glass
-	name = "Glass floor"
+	name = "glass floor"
 	desc = "Dont jump on it, or do, I'm not your mom."
 	icon = 'icons/turf/floors/glass.dmi'
 	icon_state = "floor_glass"
@@ -74,7 +74,7 @@
 	return TRUE
 
 /turf/open/transparent/glass/reinforced
-	name = "Reinforced glass floor"
+	name = "reinforced glass floor"
 	desc = "Do jump on it, it can take it."
 	icon = 'icons/turf/floors/reinf_glass.dmi'
 	floor_tile = /obj/item/stack/sheet/rglass

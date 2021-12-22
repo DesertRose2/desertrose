@@ -108,7 +108,7 @@
 	foodtype = GRAIN | FRUIT
 
 /obj/item/reagent_containers/food/snacks/store/bread/tofu
-	name = "Tofubread"
+	name = "tofubread"
 	desc = "Like meatbread but for vegetarians. Not guaranteed to give superpowers."
 	icon_state = "tofubread"
 	slice_path = /obj/item/reagent_containers/food/snacks/breadslice/tofu

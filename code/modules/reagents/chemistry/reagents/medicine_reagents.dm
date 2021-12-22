@@ -1309,7 +1309,7 @@
 
 /datum/reagent/medicine/neo_jelly
 	name = "Neo Jelly"
-	description = "Gradually regenerates all types of damage, without harming slime anatomy.Can OD"
+	description = "Gradually regenerates all types of damage, without harming slime anatomy."
 	reagent_state = LIQUID
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	color = "#91D865"

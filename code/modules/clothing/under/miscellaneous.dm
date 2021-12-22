@@ -220,14 +220,6 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/jamrock
-	name = "Disco-Ass Shirt and Pants"
-	desc = "This white satin shirt used to be fancy. It used to really catch the light. Now it smells like someone took a piss in the armpits while the golden brown trousers are flare-cut. Normal bell-bottom trousers would be boot-cut, but these are far from normal. They are someone's piss-soaked, cum-stained party pants. "
-	icon_state = "jamrock_uniform"
-	item_state = "jamrock_uniform"
-	item_color = "jamrock_uniform"
-	can_adjust = FALSE
-
 /obj/item/clothing/under/plasmaman
 	name = "plasma envirosuit"
 	desc = "A special containment suit that allows plasma-based lifeforms to exist safely in an oxygenated environment, and automatically extinguishes them in a crisis. Despite being airtight, it's not spaceworthy."
@@ -547,7 +539,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/harebell_dress
-	name = "Harebell dress"
+	name = "harebell dress"
 	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
 	icon_state = "harebell_dress"
 	item_state = "harebell_dress"
@@ -556,7 +548,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/flowerdress
-	name = "Flower Dress"
+	name = "flower dress"
 	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."
 	icon_state = "flowerdress"
 	item_state = "flowerdress"

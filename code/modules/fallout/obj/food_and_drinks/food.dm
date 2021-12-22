@@ -103,7 +103,7 @@
 	icon = 'icons/obj/food/food.dmi'
 
 /obj/item/reagent_containers/food/snacks/f13/bubblegum
-	name = "Bubblegum"
+	name = "bubblegum"
 	desc = "A Big Pops branded bubblegum."
 	icon_state = "bubblegum"
 	bonus_reagents = list(/datum/reagent/radium = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
@@ -202,7 +202,7 @@
 	trash = /obj/item/trash/f13/dandyapples
 
 /obj/item/reagent_containers/food/snacks/f13/blamco
-	name = "BlamCo"
+	name = "BlamCo Mac and Cheese"
 	desc = "BlamCo was a pre-War company in the United States, producing packaged foods.<br>BlamCo Mac & Cheese was their major product.<br>Unlike other foods, like apples or eggs, wheat cannot be freeze-dried. How the macaroni remains edible is unclear."
 	icon_state = "blamco"
 	bonus_reagents = list(/datum/reagent/radium = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
@@ -211,7 +211,7 @@
 	trash = /obj/item/trash/f13/blamco
 
 /obj/item/reagent_containers/food/snacks/f13/blamco/large
-	name = "big BlamCo"
+	name = "big BlamCo Mac and Cheese"
 	desc = "BlamCo was a pre-War company in the United States, producing packaged foods.<br>BlamCo Mac & Cheese was their major product.<br>Unlike other foods, like apples or eggs, wheat cannot be freeze-dried. How the macaroni remains edible is unclear."
 	icon_state = "blamco_large"
 	bonus_reagents = list(/datum/reagent/radium = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
@@ -239,7 +239,7 @@
 
 /obj/item/reagent_containers/food/snacks/f13/mre
 	name = "MRE"
-	desc = "The Meal, Ready-to-Eat : commonly known as the MRE - is a self-contained, individual field ration in lightweight packaging.<br>It's commonly used by military groups for service members to use in combat or other field conditions where organized food facilities are not available."
+	desc = "The Meal, Ready-to-Eat, commonly known as the MRE, is a self-contained, individual field ration in lightweight packaging.<br>It's commonly used by military groups for service members to use in combat or other field conditions where organized food facilities are not available."
 	icon_state = "mre"
 	bonus_reagents = list(/datum/reagent/medicine/silver_sulfadiazine = 10, /datum/reagent/medicine/tricordrazine = 10, /datum/reagent/consumable/nutriment/vitamin = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 30)
@@ -345,7 +345,7 @@
 	filling_color = "B#22222"
 
 /obj/item/reagent_containers/food/snacks/f13/deathclawomelette
-	name = "Deathclaw Omelette"
+	name = "deathclaw omelette"
 	desc = "A delicious omelette made from one big deathclaw egg. Hope you're not allergic."
 	icon_state = "deathclawomlette"
 	bitesize = 10
@@ -354,7 +354,7 @@
 	filling_color = "B#22222"
 
 /obj/item/reagent_containers/food/snacks/f13/moleratstew
-	name = "Molerat Stew"
+	name = "molerat stew"
 	desc = "A hearty stew, simmered in beer with some vegetables. It's good, if you can get over the bitter taste of the meat."
 	icon_state = "moleratstew"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/medicine/tricordrazine = 5)
@@ -362,21 +362,21 @@
 	filling_color = "B#22222"
 
 /obj/item/reagent_containers/food/snacks/f13/crispysquirrel
-	name = "Crispy Squirrel Bits"
+	name = "crispy squirrel bits"
 	desc = "Bits of squirrel meat roasted on a skewer. Tasty."
 	icon_state = "squrrielbits"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 12)
 	filling_color = "B#22222"
 
 /obj/item/reagent_containers/food/snacks/f13/squirrelstick
-	name = "Squirrel on a Stick"
+	name = "squirrel on a stick"
 	desc = "It's a whole squirrel roasted on a stick. Tastes of home on the wastes."
 	icon_state = "squrrielstick"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 24)
 	filling_color = "B#22222"
 
 /obj/item/reagent_containers/food/snacks/f13/squirrelstew
-	name = "Squirrel Stew"
+	name = "squirrel stew"
 	desc = "Stewed squirrel meat with veggies. There's more vegetable than meat."
 	icon_state = "squrrielsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6)
@@ -385,7 +385,7 @@
 	trash = /obj/item/reagent_containers/glass/bowl
 
 /obj/item/reagent_containers/food/snacks/f13/mirelurkstew
-	name = "Mirelurk Stew"
+	name = "mirelurk stew"
 	desc = "A hearty stew made from de-shelled Mirelurk meat, onions, butter, and other such delights."
 	icon_state = "Mirelurk_stew"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/medicine/tricordrazine = 5)
@@ -395,7 +395,7 @@
 	trash = /obj/item/reagent_containers/glass/bowl
 
 /obj/item/reagent_containers/food/snacks/f13/mirelurkcake
-	name = "Mirelurk Cake"
+	name = "mirelurk cake"
 	desc = "A savory cake made from the meat of a Mirelurk.  A popular dish from the coastlines."
 	bitesize = 5
 	icon_state = "Mirelurk_cake"

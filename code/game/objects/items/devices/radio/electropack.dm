@@ -151,7 +151,7 @@
 	var/tagname = null
 
 /datum/design/electropack/shockcollar
-	name = "Slave collar"
+	name = "slave collar"
 	id = "shockcollar"
 	build_type = AUTOLATHE
 	build_path = /obj/item/electropack/shockcollar

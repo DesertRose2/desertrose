@@ -1,5 +1,5 @@
 /obj/item/minigunpackbal
-	name = "Minigun ammo belt"
+	name = "minigun ammo belt"
 	desc = "The massive ammo belt for the minigun."
 	icon = 'icons/obj/guns/minigun.dmi'
 	icon_state = "balholstered"

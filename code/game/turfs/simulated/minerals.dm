@@ -866,7 +866,7 @@
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 */
 /turf/closed/mineral/strong
-	name = "Very strong rock"
+	name = "very strong rock"
 	desc = "Seems to be stronger than the other rocks in the area. Only a master of mining techniques could destroy this."
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface

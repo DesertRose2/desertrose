@@ -141,7 +141,7 @@
 
 /mob/living/simple_animal/hostile/supermutant/legendary
 	name = "legendary super mutant"
-	desc = "A huge and ugly mutant humanoid.He has a faint yellow glow to him, scars adorn his body. This super mutant is a grizzled vetern of combat. Look out!"
+	desc = "A huge and ugly mutant humanoid. He has a faint yellow glow to him, and scars adorn his body. This super mutant is a grizzled vetern of combat. Look out!"
 	color = "#FFFF00"
 	icon_state = "hulk_113_s"
 	icon_living = "hulk_113_s"

@@ -214,7 +214,7 @@
 )
 
 /obj/item/clothing/suit/hooded/cloak/hhunter
-	name = "Razorclaw armour"
+	name = "razorclaw armour"
 	icon_state = "rcarmour"
 	desc = "(VI) A suit of armour fashioned out of the remains of a legendary deathclaw."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
@@ -224,7 +224,7 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/suit/armor/f13/nightstalkerheavyarmor
-	name = "Nightstalker Heavy Armor"
+	name = "Nightstalker heavy armor"
 	icon_state = "nightstalker_tribal_armor"
 	desc = "(VI) A heavily repurposed set of combat armor now intermixed with both scavenged metal-lined pauldrons and stripped Nightstalker skin draped beneath. This armor smells slightly like rainwater."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
@@ -342,8 +342,8 @@
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/caeserpelt
-	name = "Caesars' Pelt"
-	desc = "(VIII) A pelt fit for Caeser himself. Ave!"
+	name = "Caesar's pelt"
+	desc = "(VIII) A pelt fit for Caesar himself. Ave!"
 	icon = 'icons/fallout/clothing/suits.dmi'
 	icon_state = "caesar_pelt"
 	item_state = "caeser_pelt"

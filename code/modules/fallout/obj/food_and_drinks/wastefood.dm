@@ -1,8 +1,8 @@
 //FOOD FALLOUT 13///////
 
 /obj/item/reagent_containers/food/snacks/soup/macaco
-	name = "Macaco soup"
-	desc = "To think, the monkey would've beat you to death and steal your gun."
+	name = "macaco soup"
+	desc = "To think, the monkey would've beaten you to death and stolen your gun."
 	icon_state = "macaco"
 	bonus_reagents = list( /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/medicine/omnizine = 5,  /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("Monkey" = 1)
@@ -21,7 +21,7 @@
 	foodtype = VEGETABLES | MEAT
 
 /obj/item/reagent_containers/food/snacks/soup/buffalogourd
-	name = "Buffalo gourd soup"
+	name = "buffalo gourd soup"
 	desc = "A tasty soup made with roasted gourd"
 	icon_state = "Buffalo Soup"
 	bonus_reagents = list( /datum/reagent/consumable/nutriment/vitamin = 4,  /datum/reagent/consumable/nutriment/vitamin = 6)

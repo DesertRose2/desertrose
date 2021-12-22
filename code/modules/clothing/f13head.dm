@@ -762,7 +762,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat
-	name = "Rusted Cowboy Hat"
+	name = "rustic cowboy hat"
 	desc = "(II) A cowboy hat made from tanned leather hides."
 	icon_state = "rusted_cowboy"
 	item_state = "rusted_cowboy"
@@ -778,8 +778,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/simplekitty
-	name = "Kitty Headband"
-	desc = "A headband with a pair of cute kitty ears"
+	name = "kitty headband"
+	desc = "A headband with a pair of cute kitty ears."
 	icon_state = "kittyb"
 	color = "#999999"
 	armor = list("tier" = 0)
@@ -820,7 +820,7 @@
 //DONOR, PATREON AND CUSTOM
 
 /obj/item/clothing/head/donor/macarthur
-	name = "Peaked Cap"
+	name = "peaked cap"
 	desc = "(II) A resistant, tan peaked cap, typically worn by pre-War Generals."
 	icon_state = "macarthur"
 	item_state = "macarthur"

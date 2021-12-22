@@ -137,7 +137,7 @@
 	item_color = "modif_ranger"
 
 /obj/item/clothing/under/f13/ranger/clyde
-	name = "Ranger Chaps"
+	name = "ranger chaps"
 	desc = "A desert colored short-sleeved jumpsuit with protective khaki chaps at the legs up to the thighs."
 	icon_state = "ncr_clyde"
 	item_state = "ncr_clyde"
@@ -398,7 +398,7 @@
 	item_state = "chiefrags"
 
 /obj/item/clothing/under/f13/tribe_Hhunter
-	name = "Razorclaw robes"
+	name = "razorclaw robes"
 	desc = "Tanned leather robes, decorated with bones of deathclaws and marked with the great machine spirit of earth."
 	icon_state = "hhunterrags"
 	item_state = "hhunterrags"
@@ -1115,13 +1115,13 @@
 	item_state = "raven_harness"
 
 /obj/item/clothing/under/f13/jamrock
-	name = "Disco-Ass Shirt and Pants"
+	name = "disco-ass shirt and pants"
 	desc = "This white satin shirt used to be fancy. It used to really catch the light. Now it smells like someone took a piss in the armpits while the golden brown trousers are flare-cut. Normal bell-bottom trousers would be boot-cut, but these are far from normal. They are someone's piss-soaked, cum-stained party pants."
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
 
 /obj/item/clothing/under/f13/keksweater
-	name = "Red Sweater"
+	name = "red sweater"
 	desc = "A dark red-sweater with some cargo-pants. Perfect for when it just gets too cold down in local air-conditioned areas."
 	icon_state = "brahminsss"
 	item_state = "brahminsss"

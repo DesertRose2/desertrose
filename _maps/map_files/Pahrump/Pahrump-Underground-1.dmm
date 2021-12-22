@@ -29075,7 +29075,7 @@
 	pixel_y = 15
 	},
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},
@@ -33130,7 +33130,7 @@
 	pixel_y = 15
 	},
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},
@@ -33694,7 +33694,7 @@
 	pixel_y = 15
 	},
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},
@@ -33927,7 +33927,7 @@
 	pixel_y = 15
 	},
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},
@@ -36095,7 +36095,7 @@
 "xmo" = (
 /obj/structure/chair/bench,
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},
@@ -36893,7 +36893,7 @@
 	pixel_y = 15
 	},
 /turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
 	icon_state = "bath_tile";
 	name = "Bath Water"
 	},

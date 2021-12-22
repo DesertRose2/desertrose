@@ -478,7 +478,7 @@
 	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/widered
-	name = "Wide red hat"
+	name = "wide red hat"
 	desc = "It is both wide, and red. Stylish!"
 	icon_state = "widehat_red"
 	item_state = "widehat_red"

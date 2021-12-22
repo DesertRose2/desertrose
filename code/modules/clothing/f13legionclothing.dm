@@ -201,7 +201,7 @@
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
-	name = "Champion of Kanab's Helm"
+	name = "Champion of Kanab's helm"
 	desc = "(VII) A custom forged steel full helmet made for the Conqueror and Champion of Kanab. It has a large plume of red horse hair across the top of it going horizontally, symbolizing the position of a Centurion."
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"
@@ -380,7 +380,7 @@
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
-	name = "Champion of Kanab's Armor"
+	name = "Champion of Kanab's armor"
 	desc = "(VII) The armor of the Champion and Conqueror of the city in Utah named Kanab. The armor is made up of pieces of Power Armor and pre-war Riot Gear, the shin guards are spraypainted a dark crimson and the Power Armour pauldron has a red trim. The symbol of a Pheonix is carefully engraved and painted upon the chest piece... I wonder what it means.."
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"

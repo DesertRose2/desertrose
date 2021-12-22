@@ -365,10 +365,10 @@
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/hooded/cloak/birdarmor
-	name = "Salvaged claw cloak"
+	name = "salvaged claw cloak"
 	icon_state = "birdarmor"
 	item_state = "birdarmor"
-	desc = "(V) An old cloak of Razorclaw armour, modified with a NCR armguard and a heavy looking shoulder piece, it looks like it has alot of history."
+	desc = "(V) An old cloak of Razorclaw armour, modified with a NCR armguard and a heavy looking shoulder piece, it looks like it has a lot of history."
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/birdhood
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
@@ -376,7 +376,7 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/head/hooded/cloakhood/birdhood
-	name = "Salvaged claw hood"
+	name = "salvaged claw hood"
 	icon_state = "birdhood"
 	item_state = "birdhood"
 	desc = "(V) A hood made of deathclaw skins, the leather is rather thick but looks tattered."

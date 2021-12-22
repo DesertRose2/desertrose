@@ -772,7 +772,7 @@
 	item_state = "palacent_excess"
 
 /obj/item/clothing/suit/donor/soldier
-	name = "Soldier's Greatcoat"
+	name = "soldier's greatcoat"
 	desc = "(III) A resistant, tan greatcoat, typically worn by pre-War Generals."
 	icon_state = "soldier"
 	item_state = "soldier"

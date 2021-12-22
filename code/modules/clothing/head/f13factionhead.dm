@@ -271,7 +271,7 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/head/hooded/cloakhood/hhunter
-	name = "Razorclaw helm"
+	name = "razorclaw helm"
 	icon_state = "rchelmet"
 	desc = "(VI) The skull of a legendary deathclaw."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
