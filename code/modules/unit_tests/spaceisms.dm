@@ -3,10 +3,10 @@
 GLOBAL_LIST_EMPTY(spaceisms_list)
 /atom/Initialize(mapload, ...)
 	. = ..()
-	var/static/regex/spaceism_regex = regex("(nanotrasen|bluespace|syndicate)")
+	var/static/regex/spaceism_regex = regex("(nanotrasen|bluespace|syndicate)", "i")
 	if(spaceism_regex.Find(desc))
-		spaceisms_list[type] = spaceism_regex.group[1]
+		GLOB.spaceisms_list[type] = spaceism_regex.group[1]
 
 /datum/unit_test/spaceisms/Run()
-	for(var/spaceism in spaceisms_list)
-		Fail("Spaceism found in [spaceism]: [spaceisms_list[spaceism]]")
+	for(var/spaceism in GLOB.spaceisms_list)
+		Fail("Spaceism found in [spaceism]: [GLOB.spaceisms_list[spaceism]]")
