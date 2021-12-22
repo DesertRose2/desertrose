@@ -1,6 +1,6 @@
 /obj/structure/timeddoor
 	name = "mysterious door"
-	desc = "A weird clicking can be heard coming from within the door"
+	desc = "A weird clicking can be heard coming from within the door."
 	icon = 'icons/fallout/objects/structures/doors.dmi'
 	icon_state = "timedoor"
 	density = TRUE

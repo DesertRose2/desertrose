@@ -326,7 +326,7 @@
 
 /obj/item/clothing/under/costume/cloud
 	name = "cloud"
-	desc = "cloud"
+	desc = "A cloud costume."
 	icon_state = "cloud"
 	can_adjust = FALSE
 

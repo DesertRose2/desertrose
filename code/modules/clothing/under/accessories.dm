@@ -174,12 +174,12 @@
 
 /obj/item/clothing/accessory/medal/greytide
 	name = "\"Greytider of the shift\" award"
-	desc = "An award for only the most annoying of assistants.  Locked doors mean nothing to you and behaving is not in your vocabulary"
+	desc = "An award for only the most annoying of assistants. Locked doors mean nothing to you and behaving is not in your vocabulary."
 	icon_state = "greytide"
 
 /obj/item/clothing/accessory/medal/ribbon
 	name = "ribbon"
-	desc = "A ribbon"
+	desc = "A ribbon."
 	icon_state = "cargo"
 
 /obj/item/clothing/accessory/medal/ribbon/cargo
@@ -188,7 +188,7 @@
 
 /obj/item/clothing/accessory/medal/ribbon/medical_doctor
 	name = "\"doctor of the shift\" award"
-	desc = "An award bestowed only upon the most capable doctors who have upheld the Hippocratic Oath to the best of their ability"
+	desc = "An award bestowed only upon the most capable doctors who have upheld the Hippocratic Oath to the best of their ability."
 	icon_state = "medical_doctor"
 
 /obj/item/clothing/accessory/medal/silver

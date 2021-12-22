@@ -164,7 +164,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ethereal
 	icon_state = "etherealmeat"
-	desc = "So shiny you feel like ingesting it might make you shine too"
+	desc = "So shiny you feel like ingesting it might make you shine too."
 	filling_color = "#97ee63"
 	list_reagents = list(/datum/reagent/consumable/liquidelectricity = 3)
 	tastes = list("pure electricity" = 2, "meat" = 1)
@@ -220,7 +220,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul
 	name = "ghoul meat"
 	icon_state = "flymeat"
-	desc = "Nothing says tasty like necrotic, radioactive mutant flesh"
+	desc = "Nothing says tasty like necrotic, radioactive mutant flesh!"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/radium = 6)
 	filling_color = "#FA8072"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/ghoul
@@ -237,7 +237,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/human/centaur
 	name = "centaur meat"
 	icon_state = "flymeat"
-	desc = "Absolutely disgusting"
+	desc = "Absolutely disgusting."
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/radium = 10)
 	filling_color = "#FA8072"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/centaur

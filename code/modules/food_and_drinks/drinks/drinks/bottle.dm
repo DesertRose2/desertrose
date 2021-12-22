@@ -259,7 +259,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/absinthe
 	name = "extra-strong absinthe"
-	desc = "An strong alcoholic drink brewed and distributed by"
+	desc = "A strong alcoholic drink."
 	icon_state = "absinthebottle"
 	list_reagents = list(/datum/reagent/consumable/ethanol/absinthe = 100)
 
@@ -359,7 +359,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/fernet
 	name = "Fernet Bronca"
-	desc = "A bottle of pure Fernet Bronca, produced in Cordoba Space Station"
+	desc = "A bottle of pure Fernet Bronca. It's a wonder this survived the Great War."
 	icon_state = "fernetbottle"
 	list_reagents = list(/datum/reagent/consumable/ethanol/fernet = 100)
 
@@ -417,7 +417,7 @@
 	
 /obj/item/reagent_containers/food/drinks/bottle/amaretto
 	name = "Luini Amaretto"
-	desc = "A gentle and syrup like drink, tastes of almonds and apricots"
+	desc = "A gentle and syrup-like drink, tastes of almonds and apricots."
 	icon_state = "disaronno"
 	list_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 100)
 	
@@ -661,7 +661,7 @@
 
 /obj/item/export/bottle
 	name = "Report this please"
-	desc = "A sealed bottle of alcohol, ready to be exported"
+	desc = "A sealed bottle of alcohol, ready to be exported."
 	icon = 'icons/obj/drinks.dmi'
 	force = 0
 	throwforce = 0

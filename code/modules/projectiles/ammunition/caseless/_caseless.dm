@@ -1,5 +1,5 @@
 /obj/item/ammo_casing/caseless
-	desc = "caseless round"
+	desc = "A caseless round."
 	firing_effect_type = null
 	heavy_metal = FALSE
 
@@ -50,7 +50,7 @@
 
 /obj/item/ammo_casing/caseless/lasermusket
 	name = "laser musket battery"
-	desc = "A single use battery for the laser musket"
+	desc = "A single-use battery for the laser musket."
 	caliber = "lasmusket"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "lasmusketbat"
@@ -59,7 +59,7 @@
 
 /obj/item/ammo_casing/caseless/plasmacaster
 	name = "plasma canister"
-	desc = "A single use chemical canister for the plasma caster"
+	desc = "A single-use chemical canister for the plasma caster."
 	caliber = "plasmacaster"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "plasmacan"

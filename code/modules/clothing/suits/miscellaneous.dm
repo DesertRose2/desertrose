@@ -73,7 +73,7 @@
 
 /obj/item/clothing/suit/justice
 	name = "justice suit"
-	desc = "(I) this pretty much looks ridiculous" //Needs no fixing
+	desc = "(I) This pretty much looks ridiculous." //Needs no fixing
 	icon_state = "justice"
 	item_state = "justice"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|FEET
@@ -796,7 +796,7 @@
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/qm
 
 /obj/item/clothing/head/hooded/winterhood/qm
-	desc = "(I) A dark brown winter hood"
+	desc = "(I) A dark brown winter hood."
 	icon_state = "winterhood_qm"
 
 /obj/item/clothing/suit/hooded/wintercoat/aformal

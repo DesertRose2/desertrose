@@ -18,7 +18,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion
 	name = "legion helmet"
-	desc = "Unadorned legion helmet"
+	desc = "An unadorned legion helmet."
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	lefthand_file = ""
@@ -116,7 +116,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion/libritor
 	name = "legion libritor helmet"
-	desc = "(VII) A metal legion veteran helmet with an inverted color scheme for libritors"
+	desc = "(VII) A metal legion veteran helmet with an inverted color scheme for libritors."
 	icon_state = "legheavy"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
@@ -507,7 +507,7 @@
 
 /obj/item/clothing/mask/bandana/legprime
 	name = "prime bandana"
-	desc = "A fine prime bandana"
+	desc = "A fine prime bandana."
 	icon_state = "legdecan"
 	flags_inv = HIDEFACE
 	visor_flags_inv = HIDEFACE
@@ -543,7 +543,7 @@
 
 /obj/item/clothing/mask/bandana/legprime/decan
 	name = "prime decanus bandana"
-	desc = "A fine prime decanus bandana"
+	desc = "A fine prime decanus bandana."
 	icon_state = "legdecan"
 	flags_inv = HIDEFACE
 	visor_flags_inv = HIDEFACE

@@ -145,7 +145,7 @@
 
 /obj/item/clothing/head/beret/blue
 	name = "blue beret"
-	desc = "A blue beret"
+	desc = "A blue beret."
 	icon_state = "beret_blue"
 
 /obj/item/clothing/head/beret/highlander
@@ -311,12 +311,12 @@
 //Medical
 /obj/item/clothing/head/beret/med
 	name = "medical officer's beret"
-	desc = "A fancy beret with a blue cross, smells sterile"
+	desc = "A fancy beret with a blue cross, smells sterile."
 	icon_state = "beret_med"
 
 /obj/item/clothing/head/beret/chem
 	name = "chemist's beret"
-	desc = "A fancy beret with a orange beaker, you're not sure if you should smell it"
+	desc = "A fancy beret with a orange beaker, you're not sure if you should smell it."
 	icon_state = "beret_chem"
 
 /obj/item/clothing/head/beret/viro
@@ -371,7 +371,7 @@
 //Quartermaster
 /obj/item/clothing/head/beret/qm
 	name = "quartermaster's beret"
-	desc = "This headwear shows off your Cargonian leadership"
+	desc = "This headwear shows off your Cargonian leadership."
 	icon_state = "qmberet"
 
 /obj/item/clothing/head/beret/durathread

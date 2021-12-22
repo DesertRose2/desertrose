@@ -130,8 +130,8 @@
 	return ..()
 
 /obj/item/clothing/mask/cowmask
-	name = "Cow mask with a builtin voice modulator."
-	desc = "A rubber cow mask,"
+	name = "modified cow mask"
+	desc = "A rubber cow mask, with a built-in voice modulator."
 	icon_state = "cowmask"
 	item_state = "cowmask"
 	clothing_flags = VOICEBOX_TOGGLABLE
@@ -146,7 +146,7 @@
 
 /obj/item/clothing/mask/cowmask/cursed
 	name = "cow face"
-	desc = "It looks like a cow mask, but closer inspection reveals it's melded onto this persons face!"
+	desc = "It looks like a cow mask, but closer inspection reveals it's melded onto this person's face!"
 	flags_inv = HIDEFACIALHAIR
 	clothing_flags = NONE
 

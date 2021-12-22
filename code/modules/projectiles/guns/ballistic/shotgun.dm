@@ -162,7 +162,7 @@
 //Widowmaker					Keywords: Shotgun, Double barrel, saw-off
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"
-	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
+	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture."
 	icon_state = "widowmaker"
 	item_state = "shotgundouble"
 	force = 20

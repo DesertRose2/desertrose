@@ -353,7 +353,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	name = "raider T-45b power helmet"
-	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet"
+	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet."
 	icon_state = "raiderpa_helm"
 	item_state = "raiderpa_helm"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
@@ -582,13 +582,13 @@
 
 /obj/item/clothing/head/f13/hairband
 	name = "hairband"
-	desc = "Pretty yellow hairband"
+	desc = "A pretty yellow hairband."
 	icon_state = "50shairband"
 	item_state = "50shairband"
 
 /obj/item/clothing/head/f13/nursehat
 	name = "nursehat"
-	desc = "White cloth headdress for nurses"
+	desc = "A white cloth headdress, typically used by nurses."
 	icon_state = "nursehat"
 	item_state = "nursehat"
 
@@ -747,8 +747,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/simplekitty
-	name = "Kitty Headband"
-	desc = "A headband with a pair of cute kitty ears"
+	name = "kitty headband"
+	desc = "A headband with a pair of cute kitty ears."
 	icon_state = "kittyb"
 	color = "#999999"
 	armor = list("tier" = 0)
@@ -960,7 +960,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/power_armor/legion
-	name = "Salvaged Legion T-45b helmet"
+	name = "salvaged Legion T-45b helmet"
 	desc = "(VIII) It's a salvaged T-45b power armor helmet, retrofitted in Dog City for the legion's front line."
 	icon_state = "libritor"
 	item_state = "libritor"

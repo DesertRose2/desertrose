@@ -275,7 +275,7 @@
 
 /obj/item/clothing/head/hooded/cloakhood/desert/raven_hood
 	name = "Raven cloak hood"
-	desc = "(II) A hood fashioned out of patchwork and feathers"
+	desc = "(II) A hood fashioned out of patchwork and feathers."
 	icon_state = "raven_hood"
 	item_state = "raven_hood"
 

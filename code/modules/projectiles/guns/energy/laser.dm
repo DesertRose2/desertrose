@@ -289,7 +289,7 @@
 //AER-9 Laser Rifle
 /obj/item/gun/energy/laser/aer9
 	name = "AER9 laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle"
+	desc = "A sturdy and advanced military grade pre-war service laser rifle."
 	icon_state = "laser"
 	item_state = "laser-rifle9"
 	can_scope = TRUE
@@ -356,7 +356,7 @@
 //AER-12 Laser Rifle
 /obj/item/gun/energy/laser/aer12
 	name = "AER12 laser rifle"
-	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim"
+	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim."
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
 	can_scope = TRUE
@@ -533,7 +533,7 @@
 //Ultracite Laser Rifle
 /obj/item/gun/energy/laser/ultra_rifle
 	name = "Ultracite laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite"
+	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite."
 	icon_state = "ultra_rifle"
 	item_state = "laser-rifle9"
 	zoomable = TRUE

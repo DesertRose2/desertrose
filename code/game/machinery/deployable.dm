@@ -85,22 +85,6 @@
 	icon_state = "trainwall"
 	icon_type_smooth = "trainwall"
 
-/obj/structure/barricade/wooden/attackby(obj/item/I, mob/user)
-	if(istype(I,/obj/item/stack/sheet/mineral/wood))
-		var/obj/item/stack/sheet/mineral/wood/W = I
-		if(W.amount < 5)
-			to_chat(user, "<span class='warning'>You need at least five wooden planks to make a wall!</span>")
-			return
-		to_chat(user, "<span class='notice'>You start adding [I] to [src]...</span>")
-		if(do_after(user, 50, target=src))
-			W.use(5)
-			var/turf/T = get_turf(src)
-			T.PlaceOnTop(/turf/closed/wall/mineral/wood/nonmetal)
-			qdel(src)
-		return
-	return ..()
-
-
 /obj/structure/barricade/wooden/crude
 	name = "crude plank barricade"
 	desc = "This space is blocked off by a crude assortment of planks."
@@ -108,6 +92,7 @@
 	drop_amount = 1
 	max_integrity = 50
 	proj_pass_rate = 65
+	can_build = FALSE
 
 /obj/structure/barricade/wooden/crude/snow
 	desc = "This space is blocked off by a crude assortment of planks. It seems to be covered in a layer of snow."

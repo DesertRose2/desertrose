@@ -137,7 +137,7 @@
 
 /obj/item/encryptionkey/headset_vault_security
 	name = "\proper the Security encryption key"
-	desc = "An encryption key for a radio headset.  Channels are as follows: :v - vault, :s - security"
+	desc = "An encryption key for a radio headset.  Channels are as follows: :v - vault, :s - security."
 	icon_state = "sec_cypherkey"
 	channels = list(RADIO_CHANNEL_VAULT = 1, RADIO_CHANNEL_SECURITY = 1)
 
@@ -164,7 +164,7 @@
 
 /obj/item/encryptionkey/headset_vault_hos
 	name = "\proper the Head of Security's encryption key"
-	desc = "An encryption key for a radio headset.  Channels are as follows: :v - vault, :c - command, :s - security"
+	desc = "An encryption key for a radio headset.  Channels are as follows: :v - vault, :c - command, :s - security."
 	icon_state = "hos_cypherkey"
 	channels = list(RADIO_CHANNEL_VAULT = 1, RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1)
 

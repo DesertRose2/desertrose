@@ -116,7 +116,7 @@ Concrete = Cement 1u + Water 2u + Silicon 7u
 
 /datum/material/concrete
 	name = "concrete"
-	desc = "Concrete"
+	desc = "Tough concrete."
 	color = "#A49483"
 	sheet_type = /obj/item/stack/sheet/mineral/concrete
 
@@ -156,7 +156,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 
 /turf/closed/wall/mineral/concrete
 	name = "supermart wall"
-	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built"
+	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built."
 	icon = 'icons/turf/walls/f13superstore.dmi'
 	icon_state = "supermart"
 	icon_type_smooth = "supermart"

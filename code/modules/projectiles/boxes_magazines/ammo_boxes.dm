@@ -726,7 +726,7 @@
 
 /obj/item/ammo_box/jerrycan
 	name = "jerry can"
-	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers"
+	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "jerrycan"
 	caliber = "fuel"

@@ -49,7 +49,7 @@
 
 /obj/structure/bed/wooden
 	name = "simple wooden bed"
-	desc = "Wooden frame with a mattress"
+	desc = "A wooden frame with a mattress."
 	icon_state = "bed_wood"
 	max_integrity = 80
 

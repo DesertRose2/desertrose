@@ -522,12 +522,6 @@
 
 //special items//--
 
-/obj/structure/barricade/wooden/snowed
-	name = "crude plank barricade"
-	desc = "This space is blocked off by a wooden barricade. It seems to be covered in a layer of snow."
-	icon_state = "woodenbarricade-snow"
-	max_integrity = 125
-
 /obj/item/clothing/under/syndicate/coldres
 	name = "insulated tactical turtleneck"
 	desc = "A nondescript and slightly suspicious-looking turtleneck with digital camouflage cargo pants. The interior has been padded with special insulation for both warmth and protection."

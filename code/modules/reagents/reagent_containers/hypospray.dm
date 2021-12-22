@@ -159,7 +159,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimulants
 	name = "illegal stimpack medipen"
-	desc = "A highly illegal medipen due to its load and small injections, allow for five uses before being drained"
+	desc = "A highly illegal medipen due to its load and small injections, allows for five uses before being drained."
 	volume = 50
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimulants = 50)

@@ -415,7 +415,7 @@
 
 /obj/item/card/id/silver/followers
 	name = "Followers Assistant ID"
-	desc = "A silver ID card that gives access to the Followers clinic"
+	desc = "A silver ID card that gives access to the Followers clinic."
 	access = list(ACCESS_FOLLOWER)
 	assignment = "Followers Assistant"
 
@@ -791,7 +791,7 @@
 /obj/item/card/id/knight
 	name = "knight badge"
 	icon_state = "knight"
-	desc = "A badge denoting the owner as a knight! It has a strip for swiping like an ID"
+	desc = "A badge denoting the owner as a knight! It has a strip for swiping like an ID."
 	var/id_color = "#00FF00" //defaults to green
 	var/mutable_appearance/id_overlay
 

@@ -236,7 +236,7 @@
 
 /obj/item/melee/baton/stunsword
 	name = "stunsword"
-	desc = "not actually sharp, this sword is functionally identical to a stunbaton"
+	desc = "Not actually sharp. This sword is functionally identical to a stunbaton."
 	icon_state = "stunsword"
 	item_state = "sword"
 
@@ -250,7 +250,7 @@
 
 /obj/item/ssword_kit
 	name = "stunsword kit"
-	desc = "a modkit for making a stunbaton into a stunsword"
+	desc = "A modkit for making a stunbaton into a stunsword."
 	icon = 'icons/obj/vending_restock.dmi'
 	icon_state = "refill_donksoft"
 	var/product = /obj/item/melee/baton/stunsword //what it makes

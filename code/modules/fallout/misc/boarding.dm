@@ -10,6 +10,7 @@
 	drop_amount = 0
 	var/planks = 3
 	var/maxplanks = 3
+	can_build = FALSE
 
 /obj/structure/barricade/wooden/planks/New()
 	..()

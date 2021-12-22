@@ -34,7 +34,7 @@
 
 /obj/item/ammo_casing/c9mm/op
 	name = "9mm +P bullet casing"
-	desc = "A 9mm +P bullet casing"
+	desc = "A 9mm +P bullet casing."
 	projectile_type = /obj/item/projectile/bullet/c9mm/op
 
 //12.7mm
@@ -46,7 +46,7 @@
 
 /obj/item/ammo_casing/a127mm/jhp
 	name = "12.7mm JHP bullet casing"
-	desc = "A 12.7mm JHP bullet casing"
+	desc = "A 12.7mm JHP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/a127mm/jhp
 
 // 22lr

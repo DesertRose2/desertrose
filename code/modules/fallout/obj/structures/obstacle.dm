@@ -98,7 +98,7 @@
 
 /obj/structure/junk/small/bench
 	name = "rotting planks"
-	desc = "Remains of small furniture"
+	desc = "The remains of what was once a wooden bench of some kind."
 	icon_state = "rubbish_bench"
 	slowdown = 6
 

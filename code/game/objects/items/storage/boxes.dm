@@ -743,7 +743,7 @@
 /////clown box & honkbot assembly
 /obj/item/storage/box/clown
 	name = "clown box"
-	desc = "A colorful cardboard box for the clown"
+	desc = "A colorful cardboard box for the clown."
 	illustration = "clown"
 
 /obj/item/storage/box/clown/attackby(obj/item/I, mob/user, params)
@@ -1414,7 +1414,7 @@
 
 /obj/item/storage/box/ids/followers
 	name = "box of assistant ids"
-	desc = "IDs for issue to weekly assistants"
+	desc = "IDs for issue to weekly assistants."
 
 /obj/item/storage/box/ids/followers/PopulateContents()
 	for(var/i in 1 to 7)

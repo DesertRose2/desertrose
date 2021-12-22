@@ -10,7 +10,7 @@
 
 /obj/item/reagent_containers/food/snacks/sea_weed
 	name = "seaweed sheet"
-	desc = "A thin, light salt sheet of plant mater. This is commenly used in sushi recipes,"
+	desc = "A thin, light salted sheet of seaweed. This is commonly used in sushi recipes."
 	icon_state = "sea_weed"
 	list_reagents = list(/datum/reagent/consumable/sodiumchloride = 2)
 	tastes = list("plants" = 2, "salt" = 1)
@@ -61,7 +61,7 @@
 
 /obj/item/reagent_containers/food/snacks/tobiko
 	name = "tobiko"
-	desc = "Spider eggs wrapped in a thin salted Kudzu pod"
+	desc = "Some spider eggs wrapped in a thin, salted Kudzu pod."
 	icon_state = "sushie_egg"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	filling_color = "#FF3333" // R225 G051 B051

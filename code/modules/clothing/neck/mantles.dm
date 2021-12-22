@@ -30,8 +30,8 @@
 	icon_state = "brown"
 
 /obj/item/clothing/neck/mantle/overseer
-	name = "vault-tec overseers mantle"
-	desc = "This is the overseers mantle.  Issued by the Vault-tec corporation to easily identify the overseer. This mantle has been passed down from overseer to overseer"
+	name = "vault-tec overseer's mantle"
+	desc = "This is the overseer's mantle.  Issued by the Vault-tec corporation to easily identify the overseer. This mantle has been passed down from overseer to overseer."
 	icon_state = "overseer"
 
 /obj/item/clothing/neck/mantle/bos

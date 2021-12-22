@@ -276,7 +276,7 @@
 
 /obj/machinery/button/electrochromatic
 	name = "window dim control"
-	desc = "Controls linked electrochromatic windows"
+	desc = "Controls linked electrochromatic windows."
 	device_type = /obj/item/assembly/control/electrochromatic
 
 /obj/item/wallframe/button

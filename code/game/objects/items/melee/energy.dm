@@ -365,7 +365,7 @@
 //Broken version. Not a toy, but not as strong.
 /obj/item/melee/transforming/energy/sword/cx/broken
 	name = "misaligned non-eutactic blade"
-	desc = "The Non-Eutactic Blade utilizes a hardlight blade that is dynamically 'forged' on demand to create a deadly sharp edge that is unbreakable. This one seems to have a damaged handle and misaligned components, causing the blade to be unstable at best"
+	desc = "The Non-Eutactic Blade utilizes a hardlight blade that is dynamically 'forged' on demand to create a deadly sharp edge that is unbreakable. This one seems to have a damaged handle and misaligned components, causing the blade to be unstable at best."
 	force_on = 15 //As strong a survival knife/bone dagger
 
 /obj/item/melee/transforming/energy/sword/cx/attackby(obj/item/W, mob/living/user, params)

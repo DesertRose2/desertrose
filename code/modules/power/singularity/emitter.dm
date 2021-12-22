@@ -413,7 +413,7 @@
 
 /datum/action/innate/protoemitter/firing
 	name = "Switch to Manual Firing"
-	desc = "The emitter will only fire on your command and at your designated target"
+	desc = "The emitter will only fire on your command and at your designated target."
 	button_icon_state = "mech_zoom_on"
 
 /datum/action/innate/protoemitter/firing/Activate()
@@ -421,7 +421,7 @@
 		playsound(PE,'sound/mecha/mechmove01.ogg', 50, TRUE)
 		PE.manual = FALSE
 		name = "Switch to Manual Firing"
-		desc = "The emitter will only fire on your command and at your designated target"
+		desc = "The emitter will only fire on your command and at your designated target."
 		button_icon_state = "mech_zoom_on"
 		for(var/obj/item/I in U.held_items)
 			if(istype(I, /obj/item/turret_control))
@@ -431,7 +431,7 @@
 	else
 		playsound(PE,'sound/mecha/mechmove01.ogg', 50, TRUE)
 		name = "Switch to Automatic Firing"
-		desc = "Emitters will switch to periodic firing at your last target"
+		desc = "Emitters will switch to periodic firing at your last target."
 		button_icon_state = "mech_zoom_off"
 		PE.manual = TRUE
 		for(var/V in U.held_items)

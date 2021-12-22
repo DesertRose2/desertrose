@@ -356,7 +356,7 @@
 	// Wayfarer Rose
 /obj/item/seeds/wayfarer_rose
 	name = "Pack of Wayfarer Rose Seed"
-	desc = "These seeds grow into Wayfarer Rose"
+	desc = "These seeds grow into Wayfarer Rose."
 	icon_state = "seed-wayfarerrose"
 	species = "wayfarerrose"
 	plantname = "Wayfarer Rose"

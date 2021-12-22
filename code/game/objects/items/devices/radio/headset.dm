@@ -352,7 +352,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_vault_hos/alt
 	name = "\proper the head of security's bowman headset"
-	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c. For vault, use :v"
+	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c. For vault, use :v."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
@@ -368,7 +368,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_ranger
 	name = "Ranger radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r"
+	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ranger
 
@@ -378,7 +378,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_ncr_com
 	name = "NCR Command radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r"
+	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_ranger

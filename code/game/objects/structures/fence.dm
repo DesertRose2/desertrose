@@ -250,7 +250,7 @@
 
 /obj/structure/fence/wooden
 	name = "wooden fence"
-	desc = "A fence fashioned out of wood planks. Designed to keep animals in and vagrants out"
+	desc = "A fence fashioned out of wood planks. Designed to keep animals in and vagrants out."
 	icon = 'icons/obj/fence.dmi'
 	icon_state = "straight_wood"
 	cuttable = FALSE

@@ -390,7 +390,7 @@
 
 /obj/item/gun/ballistic/revolver/needler/ultra
 	name = "Ultracite needler"
-	desc = "An ultracite enhanced needler pistol"
+	desc = "An ultracite-enhanced needler pistol."
 	icon_state = "ultraneedler"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/revneedler
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'

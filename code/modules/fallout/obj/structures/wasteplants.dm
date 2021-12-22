@@ -103,7 +103,7 @@
 /obj/structure/flora/wasteplant/wild_mesquite
 	name = "wild mesquite"
 	icon_state = "wild_mesquite"
-	desc = "The honey mesquite pod grows on a short tree with willow-like branches. Trees with pickable pods will appear bushier in foliage and have strings of pods on them, resembling a fern pattern. Pods can be eaten or used in recipes"
+	desc = "The honey mesquite pod grows on a short tree with willow-like branches. Trees with pickable pods will appear bushier in foliage and have strings of pods on them, resembling a fern pattern. Pods can be eaten or used in recipes."
 	produce = /obj/item/reagent_containers/food/snacks/grown/mesquite
 
 /obj/structure/flora/wasteplant/wild_pinyon
@@ -121,7 +121,7 @@
 /obj/structure/flora/wasteplant/wild_datura
 	name = "wild datura"
 	icon_state = "wild_datura"
-	desc = "The sacred datura root, useful as an anesthetic for surgery and in healing salves, as well as for rites of passage rituals and ceremonies"
+	desc = "The sacred datura root, useful as an anesthetic for surgery and in healing salves, as well as for rites of passage rituals and ceremonies."
 	produce = /obj/item/reagent_containers/food/snacks/grown/datura
 
 /obj/structure/flora/wasteplant/wild_punga
