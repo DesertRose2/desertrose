@@ -990,3 +990,13 @@
 	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
 	icon_state = "mutie_crown"
 	item_state = "mutie_crown"
+
+/obj/item/clothing/head/helmet/f13/combat/marine/legion/centurion
+	name = "marine combat helmet"
+	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
+	icon_state = "ptolemaic_helm"
+	item_state = "ptolemaic_helm"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+	flash_protect = 1
+	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	darkness_view = 24
