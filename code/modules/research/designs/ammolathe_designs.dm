@@ -534,6 +534,13 @@
 
 /* --Tier 4 Ammo and Magazines-- */
 //Tier 4 Magazines
+/datum/design/ammolathe/m44mext
+	name = "empty extended handgun magazine (.44 magnum)"
+	id = "m44mext"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/m44/ext/empty
+	category = list("initial", "Advanced Magazines")
+
 /datum/design/ammolathe/mg34mag
 	name = "empty machine gun magazine (7.62)"
 	id = "mg34mag"

@@ -44,6 +44,21 @@
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/healthanalyzer(src)
 
+/obj/item/storage/firstaid/officer
+	icon_state = "tactical"
+	desc = "A first aid kit for medical officers."
+
+/obj/item/storage/firstaid/regular/PopulateContents()
+	if(empty)
+		return
+	new /obj/item/stack/medical/gauze/adv(src)
+	new /obj/item/stack/medical/suture/medicated/fifteen(src)
+	new /obj/item/stack/medical/suture/medicated/fifteen(src)
+	new /obj/item/stack/medical/mesh/advanced(src)
+	new /obj/item/stack/medical/mesh/advanced(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/healthanalyzer(src)
+
 /obj/item/storage/firstaid/emergency
 	icon_state = "medbriefcase"
 	name = "emergency first-aid kit"
