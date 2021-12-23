@@ -1,8 +1,8 @@
 #define SYNDICATE_CHALLENGE_TIMER 9000		// 15 minutes
 
 /obj/machinery/computer/shuttle/syndicate
-	name = "syndicate shuttle terminal"
-	desc = "The terminal used to control the syndicate transport shuttle."
+	name = "Shi shuttle terminal"
+	desc = "The terminal used to control the Shi transport shuttle."
 	circuit = /obj/item/circuitboard/computer/syndicate_shuttle
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
@@ -52,8 +52,8 @@
 	clockwork = TRUE //it'd look weird
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate
-	name = "syndicate shuttle navigation computer"
-	desc = "Used to designate a precise transit location for the syndicate shuttle."
+	name = "Shi shuttle navigation computer"
+	desc = "Used to designate a precise transit location for the Shi shuttle."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	shuttleId = "syndicate"

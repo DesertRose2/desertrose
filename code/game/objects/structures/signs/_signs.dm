@@ -121,13 +121,3 @@
 /obj/item/sign_backing/attack_self(mob/user)
 	. = ..()
 	setDir(turn(dir, 90))
-
-/obj/structure/sign/nanotrasen
-	name = "\improper Nanotrasen Logo"
-	desc = "A sign with the Nanotrasen Logo on it. Glory to Nanotrasen!"
-	icon_state = "nanotrasen"
-
-/obj/structure/sign/logo
-	name = "nanotrasen logo"
-	desc = "The Nanotrasen corporate logo."
-	icon_state = "nanotrasen_sign1"

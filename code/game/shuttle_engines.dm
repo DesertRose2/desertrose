@@ -98,7 +98,7 @@
 /obj/structure/shuttle/engine/propulsion
 	name = "propulsion engine"
 	icon_state = "propulsion"
-	desc = "A standard reliable bluespace engine used by many forms of shuttles."
+	desc = "A rocket engine used by advanced pre-war shuttles."
 	opacity = 1
 
 /obj/structure/shuttle/engine/propulsion/left
@@ -111,7 +111,7 @@
 
 /obj/structure/shuttle/engine/propulsion/burst
 	name = "burst engine"
-	desc = "An engine that releases a large bluespace burst to propel it."
+	desc = "An engine that releases a nuclear burst to propel it."
 
 /obj/structure/shuttle/engine/propulsion/burst/cargo
 	state = ENGINE_UNWRENCHED
@@ -135,7 +135,7 @@
 	opacity = 1
 	icon = 'icons/obj/2x2.dmi'
 	icon_state = "large_engine"
-	desc = "A very large bluespace engine used to propel very large ships."
+	desc = "A very large engine used to propel very large ships."
 	bound_width = 64
 	bound_height = 64
 	appearance_flags = 0
@@ -145,7 +145,7 @@
 	opacity = 1
 	icon = 'icons/obj/3x3.dmi'
 	icon_state = "huge_engine"
-	desc = "An extremely large bluespace engine used to propel extremely large ships."
+	desc = "An extremely large engine used to propel extremely large ships."
 	bound_width = 96
 	bound_height = 96
 	appearance_flags = 0

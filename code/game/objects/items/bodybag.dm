@@ -36,8 +36,8 @@
 // Bluespace bodybag
 
 /obj/item/bodybag/bluespace
-	name = "bluespace body bag"
-	desc = "A folded bluespace body bag designed for the storage and transportation of cadavers."
+	name = "quantum body bag"
+	desc = "A folded quantum body bag designed for the storage and transportation of many cadavers."
 	icon_state = "bluebodybag_folded"
 	unfoldedbag_path = /obj/structure/closet/body_bag/bluespace
 	w_class = WEIGHT_CLASS_SMALL

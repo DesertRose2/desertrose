@@ -98,7 +98,7 @@
 
 /obj/item/folder/documents
 	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
+	desc = "A folder stamped \"Top Secret - Property of Vault-Tec Corporation. Unauthorized distribution is punishable by death.\""
 
 /obj/item/folder/documents/Initialize()
 	. = ..()
@@ -108,7 +108,7 @@
 /obj/item/folder/syndicate
 	icon_state = "folder_syndie"
 	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of The Syndicate.\""
+	desc = "A folder stamped \"Top Secret - Property of The Shi.\""
 
 /obj/item/folder/syndicate/red
 	icon_state = "folder_sred"

@@ -509,7 +509,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
-	head = /obj/item/clothing/head/helmet/swat/nanotrasen
+	head = /obj/item/clothing/head/helmet/swat
 	back = /obj/item/storage/backpack/security
 	id = /obj/item/card/id
 

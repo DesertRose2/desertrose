@@ -1092,7 +1092,6 @@
 /area/holodeck/rec_center/chapelcourt)
 "dy" = (
 /obj/structure/table/wood/fancy,
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "dark"
@@ -1214,7 +1213,7 @@
 	},
 /obj/item/toy/minimeteor{
 	color = "";
-	desc = "A primitive long-range weapon, inferior to Nanotrasen's perfected bluespace artillery.";
+	desc = "A primitive long-range weapon, inferior to quantum artillery.";
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "impact_laser";
 	name = "photon torpedo"
@@ -1286,7 +1285,7 @@
 	},
 /obj/item/toy/minimeteor{
 	color = "";
-	desc = "A primitive long-range weapon, inferior to Nanotrasen's perfected bluespace artillery.";
+	desc = "A primitive long-range weapon, inferior to quantum artillery.";
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "impact_laser";
 	name = "photon torpedo"
@@ -2323,10 +2322,6 @@
 	},
 /turf/open/floor/circuit,
 /area/ctf)
-"hd" = (
-/obj/structure/sign/nanotrasen,
-/turf/closed/indestructible/riveted,
-/area/centcom/evac)
 "he" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -4646,7 +4641,7 @@
 "ns" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -4932,7 +4927,6 @@
 "od" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /turf/open/floor/plasteel/vault{
@@ -4950,7 +4944,7 @@
 "of" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -5048,7 +5042,6 @@
 "on" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /obj/machinery/airalarm{
@@ -5105,7 +5098,6 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/storage/lockbox/medal,
 /obj/machinery/newscaster/security_unit{
 	pixel_x = 32
 	},
@@ -5162,10 +5154,6 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/centcom/evac)
-"oC" = (
-/obj/structure/sign/nanotrasen,
-/turf/closed/wall/f13/vault,
 /area/centcom/evac)
 "oD" = (
 /obj/machinery/computer/auxillary_base{
@@ -5763,7 +5751,7 @@
 "qm" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -6744,7 +6732,6 @@
 /area/centcom/evac)
 "sZ" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/taperecorder,
 /turf/open/floor/plasteel/grimy,
 /area/centcom/evac)
@@ -6784,7 +6771,6 @@
 	pixel_y = -2
 	},
 /obj/item/toy/cards/deck/syndicate{
-	icon_state = "deck_syndicate_full";
 	pixel_x = -6;
 	pixel_y = 6
 	},
@@ -7116,7 +7102,6 @@
 "tY" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /turf/open/floor/plasteel/vault{
@@ -7384,7 +7369,7 @@
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
 /obj/item/gun/ballistic/automatic/smg,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -7485,7 +7470,7 @@
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
 /obj/item/gun/ballistic/automatic/smg,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -7745,7 +7730,7 @@
 "vw" = (
 /obj/structure/table/wood,
 /obj/item/syndicatedetonator{
-	desc = "This gaudy button can be used to instantly detonate syndicate bombs that have been activated on the station. It is also fun to press."
+	desc = "This gaudy button can be used to instantly detonate bombs that have been activated on the station. It is also fun to press."
 	},
 /turf/open/floor/wood,
 /area/syndicate_mothership/control)
@@ -7819,14 +7804,6 @@
 	dir = 8
 	},
 /area/centcom/evac)
-"vJ" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
-/turf/open/floor/plasteel,
-/area/centcom/evac)
 "vK" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel,
@@ -7838,14 +7815,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
-/area/centcom/evac)
-"vM" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "vN" = (
@@ -8088,7 +8057,7 @@
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
 /obj/item/gun/ballistic/automatic/smg,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/darkred/corner{
 	dir = 1
@@ -8098,7 +8067,7 @@
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
 /obj/item/gun/ballistic/automatic/smg,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/darkred/corner{
 	dir = 4
@@ -8118,7 +8087,7 @@
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
 /obj/item/gun/ballistic/automatic/smg,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/crowbar/red,
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
@@ -8213,7 +8182,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "wL" = (
-/obj/item/soap/nanotrasen,
+/obj/item/soap,
 /turf/open/floor/plasteel/white,
 /area/centcom/evac)
 "wM" = (
@@ -10439,7 +10408,6 @@
 /area/f13/underground/mountain)
 "DA" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/taperecorder,
 /turf/open/floor/plasteel/vault{
 	dir = 8
@@ -11791,20 +11759,17 @@
 "LY" = (
 /obj/item/rupee,
 /turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
 "LZ" = (
 /turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
 "Ma" = (
 /obj/effect/landmark/error,
 /turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
@@ -11815,7 +11780,6 @@
 	invisibility = 100
 	},
 /turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
 	},
 /area/awaymission/errorroom)
@@ -30448,7 +30412,7 @@ kf
 kf
 kf
 kf
-oC
+jU
 uG
 nB
 rz
@@ -30456,7 +30420,7 @@ su
 sY
 nB
 ua
-oC
+jU
 rb
 qo
 jU
@@ -32504,7 +32468,7 @@ kf
 kf
 kf
 jU
-oC
+jU
 nO
 kf
 rG
@@ -37857,19 +37821,19 @@ rb
 qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
 qx
@@ -38176,7 +38140,7 @@ MX
 MX
 jU
 vq
-vJ
+wk
 vS
 wk
 vq
@@ -38625,7 +38589,7 @@ aa
 aa
 rb
 rb
-hd
+qx
 hv
 Cc
 MX
@@ -39139,7 +39103,7 @@ aa
 aa
 rb
 rb
-hd
+qx
 hw
 Cc
 MX
@@ -39718,7 +39682,7 @@ MX
 MX
 jU
 vq
-vM
+wq
 vT
 wq
 vq
@@ -39913,19 +39877,19 @@ rb
 qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
-hd
+qx
 hs
 CQ
 qx
@@ -46891,7 +46855,7 @@ mU
 nB
 nB
 ow
-oC
+jU
 oL
 kf
 kf

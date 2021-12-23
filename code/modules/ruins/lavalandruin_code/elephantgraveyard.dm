@@ -8,14 +8,14 @@
 	layer = ABOVE_ALL_MOB_LAYER
 
 /obj/structure/statue/bone/rib
-	name = "collosal rib"
+	name = "colossal rib"
 	desc = "It's staggering to think that something this big could have lived, let alone died."
 	oreAmount = 4
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "rib"
 
 /obj/structure/statue/bone/skull
-	name = "collosal skull"
+	name = "colossal skull"
 	desc = "The gaping maw of a dead, titanic monster."
 	oreAmount = 12
 	icon = 'icons/obj/statuelarge.dmi'
@@ -63,7 +63,7 @@
 //***Oil well puddles.
 /obj/structure/sink/oil_well	//You're not going to enjoy bathing in this...
 	name = "oil well"
-	desc = "A bubbling pool of oil.This would probably be valuable, had bluespace technology not destroyed the need for fossil fuels 200 years ago."
+	desc = "A bubbling pool of oil."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "puddle-oil"
 	dispensedreagent = /datum/reagent/oil

@@ -1305,7 +1305,6 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 		ADMIN_PUNISHMENT_FIREBALL,
 		ADMIN_PUNISHMENT_LIGHTNING,
 		ADMIN_PUNISHMENT_BRAINDAMAGE,
-		ADMIN_PUNISHMENT_BSA,
 		ADMIN_PUNISHMENT_GIB,
 		ADMIN_PUNISHMENT_SUPPLYPOD_QUICK,
 		ADMIN_PUNISHMENT_SUPPLYPOD,
@@ -1334,8 +1333,6 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 			target.adjustOrganLoss(ORGAN_SLOT_BRAIN, 199, 199)
 		if(ADMIN_PUNISHMENT_GIB)
 			target.gib(FALSE)
-		if(ADMIN_PUNISHMENT_BSA)
-			bluespace_artillery(target)
 		if(ADMIN_PUNISHMENT_FIREBALL)
 			new /obj/effect/temp_visual/target(get_turf(target))
 		if(ADMIN_PUNISHMENT_ROD)
