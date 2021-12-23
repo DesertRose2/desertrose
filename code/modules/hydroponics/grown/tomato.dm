@@ -77,11 +77,11 @@
 
 // Bluespace Tomato
 /obj/item/seeds/tomato/blue/bluespace
-	name = "pack of bluespace tomato seeds"
-	desc = "These seeds grow into bluespace tomato plants."
+	name = "pack of quantum tomato seeds"
+	desc = "These seeds grow into quantum tomato plants."
 	icon_state = "seed-bluespacetomato"
 	species = "bluespacetomato"
-	plantname = "Bluespace Tomato Plants"
+	plantname = "Quantum Tomato Plants"
 	product = /obj/item/reagent_containers/food/snacks/grown/tomato/blue/bluespace
 	yield = 2
 	mutatelist = list()
@@ -91,7 +91,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/tomato/blue/bluespace
 	seed = /obj/item/seeds/tomato/blue/bluespace
-	name = "bluespace tomato"
+	name = "quantum tomato"
 	desc = "So lubricated, you might slip through space-time."
 	icon_state = "bluespacetomato"
 	distill_reagent = null

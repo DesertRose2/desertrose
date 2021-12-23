@@ -255,7 +255,7 @@
 	list_reagents = list(/datum/reagent/gluttonytoxin = 1)
 
 /obj/item/reagent_containers/syringe/bluespace
-	name = "bluespace syringe"
+	name = "quantum syringe"
 	desc = "An advanced syringe that can hold 60 units of chemicals."
 	amount_per_transfer_from_this = 20
 	volume = 60
@@ -358,7 +358,7 @@
 	..()
 
 /obj/item/reagent_containers/syringe/dart/bluespace
-	name = "bluespace smartdart"
-	desc = "A non-harmful dart that can administer medication from a range. Once it hits a patient, using its smart nanofilter technology only medicines contained within the dart are administered to the patient. Additonally, due to capillary action, injection of chemicals past the overdose limit is prevented. Has an extended volume capacity thanks to bluespace foam."
+	name = "quantum smartdart"
+	desc = "A non-harmful dart that can administer medication from a range. Once it hits a patient, using its smart nanofilter technology only medicines contained within the dart are administered to the patient. Additonally, due to capillary action, injection of chemicals past the overdose limit is prevented. Has an extended volume capacity thanks to quantum foam."
 	amount_per_transfer_from_this = 50
 	volume = 50

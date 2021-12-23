@@ -101,7 +101,7 @@
 
 /obj/item/cartridge/lawyer
 	name = "\improper S.P.A.M. cartridge"
-	desc = "Introducing the Station Public Announcement Messenger cartridge, featuring the unique ability to broadcast-mark messages, designed for lawyers across Nanotrasen to advertise their useful and important services."
+	desc = "Introducing the Station Public Announcement Messenger cartridge, featuring the unique ability to broadcast-mark messages, designed for pre-war lawyers to advertise their useful and important services. Now it's mostly useful for annoying your fellow Vault dwellers."
 	icon_state = "cart-law"
 	access = CART_SECURITY
 	spam_enabled = 1

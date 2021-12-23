@@ -3861,7 +3861,6 @@
 /area/ruin/space/has_grav/hotel/power)
 "kK" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},

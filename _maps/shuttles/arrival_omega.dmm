@@ -250,7 +250,6 @@
 /turf/open/floor/plasteel,
 /area/shuttle/arrival)
 "F" = (
-/obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/arrival)
 

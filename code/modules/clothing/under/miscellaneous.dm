@@ -21,7 +21,7 @@
 
 /obj/item/clothing/under/rank/prisoner
 	name = "prison jumpsuit"
-	desc = "It's standardised Nanotrasen prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised Vault-Tec prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
 	icon_state = "prisoner"
 	item_state = "o_suit"
 	has_sensor = LOCKED_SENSORS
@@ -138,7 +138,7 @@
 
 /obj/item/clothing/under/rank/prisoner/skirt
 	name = "prison jumpskirt"
-	desc = "It's standardised Nanotrasen prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised Vault-Tec prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
 	icon_state = "prisoner_skirt"
 	item_state = "o_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

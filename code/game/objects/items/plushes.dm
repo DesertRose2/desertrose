@@ -585,7 +585,7 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 
 /obj/item/toy/plush/nukeplushie
 	name = "operative plushie"
-	desc = "A stuffed toy that resembles a syndicate nuclear operative. The tag claims operatives to be purely fictitious."
+	desc = "A stuffed toy that resembles a nuclear operative. The tag claims operatives to be purely fictitious."
 	icon_state = "plushie_nuke"
 	item_state = "plushie_nuke"
 	attack_verb = list("shot", "nuked", "detonated")

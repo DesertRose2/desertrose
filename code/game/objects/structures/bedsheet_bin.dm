@@ -120,10 +120,10 @@ LINEN BINS
 	dream_messages = list("honk", "laughter", "a prank", "a joke", "a smiling face", "the clown")
 
 /obj/item/bedsheet/captain
-	name = "captain's bedsheet"
-	desc = "It has a Nanotrasen symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains."
+	name = "overseer's bedsheet"
+	desc = "It has the Vault-Tec logo on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among many Overseers."
 	icon_state = "sheetcaptain"
-	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the captain")
+	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the Overseer")
 
 /obj/item/bedsheet/rd
 	name = "research director's bedsheet"
@@ -188,8 +188,8 @@ LINEN BINS
 	dream_messages = list("a unique ID", "authority", "artillery", "an ending")
 
 /obj/item/bedsheet/syndie
-	name = "syndicate bedsheet"
-	desc = "It has a syndicate emblem and it has an aura of evil."
+	name = "evil bedsheet"
+	desc = "It has an aura of evil."
 	icon_state = "sheetsyndie"
 	dream_messages = list("a green disc", "a red crystal", "a glowing blade", "a wire-covered ID")
 
@@ -206,8 +206,8 @@ LINEN BINS
 	dream_messages = list("a book", "an explosion", "lightning", "a staff", "a skeleton", "a robe", "magic")
 
 /obj/item/bedsheet/nanotrasen
-	name = "nanotrasen bedsheet"
-	desc = "It has the Nanotrasen logo on it and has an aura of duty."
+	name = "pre-war corporate bedsheet"
+	desc = "It has an old pre-war logo on it and has an aura of duty."
 	icon_state = "sheetNT"
 	dream_messages = list("authority", "an ending")
 

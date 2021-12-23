@@ -253,10 +253,8 @@
 	container_HP = 10//shouldn't be needed
 
 /obj/item/reagent_containers/glass/beaker/bluespace
-	name = "bluespace beaker"
-	desc = "A bluespace beaker, powered by experimental bluespace technology \
-		and Element Cuban combined with the Compound Pete. Can hold up to \
-		300 units. Unable to withstand reagents of an extreme pH."
+	name = "quantum beaker"
+	desc = "A quantum beaker, powered by experimental quantum technology. Can hold up to 300 units. Unable to withstand reagents of an extreme pH."
 	icon_state = "beakerbluespace"
 	custom_materials = list(/datum/material/glass = 5000, /datum/material/plasma = 3000, /datum/material/diamond = 1000, /datum/material/bluespace = 1000)
 	volume = 300

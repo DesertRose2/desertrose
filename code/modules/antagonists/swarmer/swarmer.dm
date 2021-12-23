@@ -445,14 +445,6 @@
 	to_chat(S, SPAN_WARNING("This advanced piece of technology may be of use for our masters in the future. Aborting."))
 	return FALSE
 
-/obj/machinery/computer/bsa_control/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
-	to_chat(S, SPAN_WARNING("This advanced piece of technology may be of use for our masters in the future. Aborting."))
-	return FALSE
-
-/obj/machinery/bsa/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
-	to_chat(S, SPAN_WARNING("This advanced piece of technology may be of use for our masters in the future. Aborting."))
-	return FALSE
-
 /obj/machinery/dna_vault/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
 	to_chat(S, SPAN_WARNING("This advanced piece of technology may be of use for our masters in the future. Aborting."))
 	return FALSE

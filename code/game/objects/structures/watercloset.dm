@@ -1,6 +1,6 @@
 /obj/structure/toilet
 	name = "toilet"
-	desc = "The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean."
+	desc = "A toilet. Used for swirlies and storing contraband, mainly."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "toilet00"
 	density = FALSE
@@ -159,7 +159,7 @@
 
 /obj/structure/urinal
 	name = "urinal"
-	desc = "The HU-452, an experimental urinal. Comes complete with experimental urinal cake."
+	desc = "A wall-mounted urinal."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "urinal"
 	density = FALSE
@@ -241,7 +241,7 @@
 
 /obj/machinery/shower
 	name = "shower"
-	desc = "The HS-451. Installed in the 2550s by the Nanotrasen Hygiene Division."
+	desc = "A shower, for washing up."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "shower"
 	density = FALSE
