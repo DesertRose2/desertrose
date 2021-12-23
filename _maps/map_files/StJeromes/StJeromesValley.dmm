@@ -9595,9 +9595,9 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "aBM" = (
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/combat/swat,
@@ -23482,6 +23482,7 @@
 	color = "red";
 	pixel_y = -30
 	},
+/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/carpet,
 /area/f13/underground/mountain)
 "btu" = (
@@ -26649,6 +26650,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/spawner/lootdrop/clothing_low,
+//turf/open/floor/f13/wood,
 /area/f13/city)
 "bCk" = (
 /obj/structure/table/wood,

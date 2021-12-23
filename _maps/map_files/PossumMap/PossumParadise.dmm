@@ -6121,9 +6121,9 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "asB" = (
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/combat/swat,
@@ -17973,7 +17973,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
 "bfX" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bfY" = (
@@ -20311,6 +20311,16 @@
 /obj/machinery/power/supermatter_crystal/shard/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault/reactor)
+"jdS" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/effect/spawner/lootdrop/clothing_low,
+//turf/open/floor/f13/wood,
+/area/f13/city)
+"pQr" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/r_wall/f13/vault,
+/area/f13/city)
 
 (1,1,1) = {"
 agS
@@ -162136,7 +162146,7 @@ asx
 asx
 asx
 atm
-asj
+pQr
 aGw
 avC
 avC
@@ -162944,7 +162954,7 @@ atG
 atG
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC
@@ -163752,7 +163762,7 @@ atG
 asj
 aFs
 aFs
-asj
+pQr
 aGx
 avC
 avC
@@ -164560,7 +164570,7 @@ atN
 aBq
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC
@@ -165166,7 +165176,7 @@ atG
 aBq
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC
@@ -165422,7 +165432,7 @@ aPc
 aOr
 aOE
 aOR
-aPc
+jdS
 aOr
 aPI
 aOy
@@ -165974,7 +165984,7 @@ asF
 asj
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC
@@ -166782,7 +166792,7 @@ asF
 asj
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC
@@ -167590,7 +167600,7 @@ atG
 ayJ
 asx
 atm
-asj
+pQr
 aGx
 avC
 avC

@@ -9782,7 +9782,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/crew_quarters/heads/cmo)
 "aAC" = (
-/obj/structure/sign/poster/official/obey,
+/obj/structure/sign/poster/official/anniversary_vintage_reprint,
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
 	},
@@ -23043,7 +23043,7 @@
 /area/f13/raider_mall)
 "blC" = (
 /obj/structure/rack,
-/obj/item/soap,
+/obj/item/soap/nanotrasen,
 /obj/item/storage/toolbox/artistic,
 /turf/open/floor/wood/f13/old,
 /area/f13/raider_mall)
