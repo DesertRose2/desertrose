@@ -51,7 +51,6 @@
 #include "metabolizing.dm"
 #include "pills.dm"
 #include "plantgrowth_tests.dm"
-#include "reactions.dm"
 #include "reagent_id_typos.dm"
 #include "reagent_mod_procs.dm"
 #include "reagent_recipe_collisions.dm"
