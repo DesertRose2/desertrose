@@ -2858,7 +2858,7 @@
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/medical)
 "bWl" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "bWu" = (
@@ -4747,7 +4747,7 @@
 /turf/open/floor/wood,
 /area/f13/tunnel)
 "dkK" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -8119,7 +8119,7 @@
 	},
 /area/f13/tunnel)
 "fuO" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
@@ -10556,7 +10556,7 @@
 	},
 /area/f13/followers)
 "hdd" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Veteran Ranger's Office"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -11741,6 +11741,17 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
+"hOn" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/machinery/door/unpowered/securedoor/legion,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "hOT" = (
 /mob/living/simple_animal/hostile/deathclaw,
 /turf/open/floor/f13{
@@ -13994,7 +14005,7 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/tunnel)
 "jrk" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Ranger Sergeant's Office"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -14212,7 +14223,7 @@
 /turf/open/floor/carpet/blue,
 /area/f13/tunnel)
 "jyZ" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "jza" = (
@@ -14329,7 +14340,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -15721,7 +15732,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "kAR" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -16095,7 +16106,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -18814,6 +18825,17 @@
 /obj/machinery/telecomms/processor/preset_two,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"mFl" = (
+/obj/machinery/door/unpowered/celldoor/legion,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "mFt" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -20328,7 +20350,7 @@
 /area/f13/brotherhood/operations)
 "nEU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -20720,7 +20742,7 @@
 /area/f13/brotherhood/offices1st)
 "nRK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "nSa" = (
@@ -24336,7 +24358,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood{
 	color = "#cac5ba"
 	},
@@ -30221,7 +30243,7 @@
 	},
 /area/f13/tunnel)
 "tJr" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -31957,20 +31979,9 @@
 /obj/item/trash/energybar,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
-"uJT" = (
-/obj/structure/simple_door/metal/barred,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "floor_dirty"
-	},
-/area/f13/legion)
 "uKb" = (
 /obj/effect/decal/fakelattice,
-/obj/structure/simple_door/metal/barred,
+/obj/machinery/door/unpowered/celldoor/legion,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -97290,7 +97301,7 @@ uhf
 mlv
 teX
 wji
-uJT
+mFl
 qBC
 oiQ
 vNP
@@ -98061,7 +98072,7 @@ wji
 pWg
 qBC
 qBC
-uJT
+mFl
 qBC
 qBC
 wcB
@@ -99603,7 +99614,7 @@ irD
 irD
 wji
 qBC
-uJT
+mFl
 qBC
 qBC
 wvm
@@ -100374,7 +100385,7 @@ qBC
 wji
 qBC
 qBC
-uJT
+mFl
 qBC
 wji
 wcB
@@ -100875,7 +100886,7 @@ amk
 amk
 mlv
 mlv
-kBS
+hOn
 mlv
 vjl
 lAE

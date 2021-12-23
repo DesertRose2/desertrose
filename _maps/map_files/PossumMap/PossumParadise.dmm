@@ -17992,7 +17992,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
 "bfX" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bfY" = (

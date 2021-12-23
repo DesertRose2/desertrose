@@ -37,7 +37,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Aft)
 "ak" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Aft)
 "al" = (
@@ -258,7 +258,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Midship)
 "be" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -800,7 +800,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Midship)
 "cK" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -1732,18 +1732,18 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "fb" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/closed/wall/mineral/titanium/interior,
 /area/awaymission/BMPship/Aft)
 "fc" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/carpet,
 /area/awaymission/BMPship/Fore)
 "fd" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/carpet,
 /area/awaymission/BMPship/Fore)
 "fe" = (
@@ -2049,7 +2049,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "ga" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -2230,7 +2230,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
 "gH" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Fore)
 "gI" = (
@@ -2303,7 +2303,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Midship)
 "gW" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -2342,7 +2342,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "hd" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plasteel/cafeteria{
 	dir = 2
 	},

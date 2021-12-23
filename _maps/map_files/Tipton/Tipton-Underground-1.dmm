@@ -6625,7 +6625,7 @@
 	},
 /area/f13/sewer)
 "gCM" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -10542,7 +10542,7 @@
 /area/f13/sewer)
 "kum" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -12011,7 +12011,7 @@
 "lMo" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/ncr/sergeant{
+/mob/living/simple_animal/hostile/ncr_trooper/sergeant{
 	desc = "A former NCR Sergeant that had turned his back on the Republic, now little more than a better drilled raider boss.";
 	faction = list("raider");
 	name = "Rogue Sergeant"
@@ -13261,7 +13261,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
 "mRe" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -15282,7 +15282,7 @@
 /turf/closed/mineral/ash_rock,
 /area/f13/sewer)
 "oLQ" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "oMN" = (
@@ -15374,7 +15374,7 @@
 	},
 /area/f13/bunker)
 "oQs" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -16097,7 +16097,7 @@
 	},
 /area/f13/bunker)
 "pBP" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -16995,7 +16995,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
 "qAJ" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","ghoul");
 	name = "feral guard dog"
 	},
@@ -19924,7 +19924,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "tvn" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Church Backroom";
 	req_one_access_txt = "25"
@@ -21620,7 +21620,7 @@
 	},
 /area/f13/legion)
 "vbw" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -22052,7 +22052,7 @@
 /turf/closed/mineral/ash_rock,
 /area/f13/sewer)
 "vtx" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/legion)
 "vtQ" = (

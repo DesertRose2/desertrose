@@ -311,17 +311,9 @@
 	item_state = "t45bpowerarmor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 1.40
+	slowdown = 1
 	armor_block_chance = 80
 	deflection_chance = 20 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
-	name = "restored T-45b power armor"
-	desc = "(VIII) It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
-	requires_training = TRUE
-	slowdown = 0.24
-	armor_block_chance = 80
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
@@ -331,7 +323,7 @@
 	item_state = "ncrpowerarmor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 1.40
+	slowdown = 1
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
@@ -341,7 +333,7 @@
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.4
+	slowdown = 1
 	requires_training = FALSE
 	armor_block_chance = 20
 	deflection_chance = 5 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
@@ -352,7 +344,7 @@
 	icon_state = "t45hotrod"
 	item_state = "t45hotrod"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.4
+	slowdown = 1
 	requires_training = FALSE
 	armor_block_chance = 20
 	deflection_chance = 5 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
@@ -403,13 +395,6 @@
 	slowdown = 0.24
 	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger
-	name = "gunslinger T-51b"
-	desc = "(VIII) What was once a suit of T-51 Power Armor is now an almost unrecognizable piece of art or garbage, depending on who you ask. Almost all of the external plating has either been removed or stripped to allow for maximum mobility, and overlapping underplates protect the user from small arms fire. Whoever designed this had a very specific purpose in mind: mobility and aesthetics over defense."
-	icon_state = "t51bgs"
-	item_state = "t51bgs"
-	slowdown = 0
-	flags_inv = HIDEJUMPSUIT|HIDENECK
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
 	name = "sierra power armor"
@@ -422,8 +407,6 @@
 	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight Captain and your safety is his duty."
 	icon_state = "t45dkc"
 	item_state = "t45dkc"
-	slowdown = 0.16
-	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
 	name = "brotherhood T-45d power armor"
@@ -467,13 +450,13 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
 	name = "Washington power armor"
-	desc = "(X) A dark mirror to the pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
+	desc = "(IX) A dark mirror to the pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51wbos"
 	item_state = "t51wbos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/reforgedwbos
 	name = "reforged Washington power armor"
-	desc = "(X) A dark mirror to the pinnacle of pre-war technology, reforged. This suit of power armor provides substantial protection to the wearer."
+	desc = "(IX) A dark mirror to the pinnacle of pre-war technology, reforged. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51matt"
 	item_state = "t51matt"
 
@@ -483,39 +466,6 @@
 	icon_state = "ultracitepa"
 	item_state = "ultracitepa"
 	slowdown = 0
-
-/obj/item/clothing/suit/armor/f13/power_armor/t60
-	name = "T-60a power armor"
-	desc = "(X) Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
-	icon_state = "t60powerarmor"
-	item_state = "t60powerarmor"
-	slowdown = 0.16
-	armor = list("tier" = 10, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
-
-	armor_block_chance = 90
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle. Same deflection as T-45 due to it having the same general shape.
-
-/obj/item/clothing/suit/armor/f13/power_armor/t60/tesla
-	name = "T-60b tesla armor"
-	desc = "(X*) An experimental variant of T-60a power armor featuring an array of tesla coils. A small amount of protection has been sacrificed to give a chance to deflect energy projectiles."
-	icon_state = "t60tesla"
-	item_state = "t60tesla"
-	slowdown = 0.15
-	armor = list("tier" = 10, "linelaser" = 25, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
-	var/hit_reflect_chance = 20
-
-/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
-	name = "brotherhood T-60 power armor"
-	desc = "(X) A set of T-60 power armor put into use by the Brotherhood of Steel."
-	icon_state = "t60bos"
-	item_state = "t60bos"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t60/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(hit_reflect_chance))
-			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	name = "advanced power armor"
@@ -1100,3 +1050,9 @@
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mutie/metal/knight
+	name = "mutant crusaders armour"
+	desc = "(V) A suit of large, yet finely forged armour with a plain white tabard draped over the top."
+	icon_state = "mutie_knight"
+	item_state = "mutie_knight"

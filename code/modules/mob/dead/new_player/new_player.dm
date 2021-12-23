@@ -52,10 +52,12 @@
 	*/
 		output += "<p>Please be patient, the game is starting soon!</p>"
 		output += "<p><a href='byond://?src=[REF(src)];refresh=1'>(Refresh)</a></p>"
+		output += "<p><a href='byond://?src=[REF(src)];refresh_chat=1)'>(Fix Chat Window)</a></p>"
 	else
 		output += "<p><a href='byond://?src=[REF(src)];manifest=1'>View the Crew Manifest</a></p>"
 		output += "<p><a href='byond://?src=[REF(src)];late_join=1'>Join Game!</a></p>"
 		output += "<p>[LINKIFY_READY("Observe", PLAYER_READY_TO_OBSERVE)]</p>"
+		output += "<p><a href='byond://?src=[REF(src)];refresh_chat=1)'>(Fix Chat Window)</a></p>"
 
 	if(!IsGuestKey(src.key))
 		if (SSdbcore.Connect())
@@ -236,6 +238,9 @@
 	if(href_list["refresh"])
 		src << browse(null, "window=playersetup") //closes the player setup window
 		new_player_panel()
+
+	if(href_list["refresh_chat"]) //fortuna addition. asset delivery pain
+		client.nuke_chat()
 
 	if(href_list["late_join"])
 		if(!SSticker || !SSticker.IsRoundInProgress())
