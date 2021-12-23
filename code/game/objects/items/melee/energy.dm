@@ -60,7 +60,7 @@
 		var/mob/living/carbon/C = user
 		if(C.wear_mask)
 			in_mouth = ", barely missing [C.p_their()] nose"
-	. = "<span class='warning'>[user] swings [user.p_their()] [name][in_mouth]. [user.p_they(TRUE)] light[user.p_s()] [user.p_their()] [A.name] in the process.</span>"
+	. = SPAN_WARNING("[user] swings [user.p_their()] [name][in_mouth]. [user.p_they(TRUE)] light[user.p_s()] [user.p_their()] [A.name] in the process.")
 	playsound(loc, hitsound, get_clamped_volume(), 1, -1)
 	add_fingerprint(user)
 
@@ -317,7 +317,7 @@
 /obj/item/melee/transforming/energy/sword/cx/transform_messages(mob/living/user, supress_message_text)
 	playsound(user, active ? 'sound/weapons/nebon.ogg' : 'sound/weapons/neboff.ogg', 65, 1)
 	if(!supress_message_text)
-		to_chat(user, "<span class='notice'>[src] [active ? "is now active":"can now be concealed"].</span>")
+		to_chat(user, SPAN_NOTICE("[src] [active ? "is now active":"can now be concealed"]."))
 
 
 /obj/item/melee/transforming/energy/sword/cx/update_overlays()
@@ -398,4 +398,4 @@
 /obj/item/melee/transforming/energy/sword/cx/traitor/transform_messages(mob/living/user, supress_message_text)
 	playsound(user, active ? 'sound/weapons/saberon.ogg' : 'sound/weapons/saberoff.ogg', 35, 1)
 	if(!supress_message_text)
-		to_chat(user, "<span class='notice'>[src] [active ? "is now active":"can now be concealed"].</span>")
+		to_chat(user, SPAN_NOTICE("[src] [active ? "is now active":"can now be concealed"]."))

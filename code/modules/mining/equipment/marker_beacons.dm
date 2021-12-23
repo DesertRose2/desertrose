@@ -51,7 +51,7 @@ GLOBAL_LIST_INIT(marker_beacon_colors, list(
 		to_chat(user, SPAN_WARNING("There is already a [singular_name] here."))
 		return
 	if(use(1))
-		to_chat(user, "<span class='notice'>You activate and anchor [amount ? "a":"the"] [singular_name] in place.</span>")
+		to_chat(user, SPAN_NOTICE("You activate and anchor [amount ? "a":"the"] [singular_name] in place."))
 		playsound(user, 'sound/machines/click.ogg', 50, 1)
 		var/obj/structure/marker_beacon/M = new(user.loc, picked_color)
 		transfer_fingerprints_to(M)

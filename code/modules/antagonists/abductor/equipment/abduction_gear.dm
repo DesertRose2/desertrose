@@ -41,7 +41,7 @@
 	else
 		ADD_TRAIT(src, TRAIT_NODROP, ABDUCTOR_VEST_TRAIT)
 	if(ismob(loc))
-		to_chat(loc, "<span class='notice'>Your vest is now [HAS_TRAIT_FROM(src, TRAIT_NODROP, ABDUCTOR_VEST_TRAIT) ? "locked" : "unlocked"].</span>")
+		to_chat(loc, SPAN_NOTICE("Your vest is now [HAS_TRAIT_FROM(src, TRAIT_NODROP, ABDUCTOR_VEST_TRAIT) ? "locked" : "unlocked"]."))
 
 /obj/item/clothing/suit/armor/abductor/vest/proc/flip_mode()
 	switch(mode)
@@ -181,7 +181,7 @@
 	else
 		mode = GIZMO_SCAN
 		icon_state = "gizmo_scan"
-	to_chat(user, "<span class='notice'>You switch the device to [mode==GIZMO_SCAN? "SCAN": "MARK"] MODE</span>")
+	to_chat(user, SPAN_NOTICE("You switch the device to [mode==GIZMO_SCAN? "SCAN": "MARK"] MODE"))
 
 /obj/item/abductor/gizmo/attack(mob/living/M, mob/user)
 	if(!ScientistCheck(user))
@@ -303,7 +303,7 @@
 	else
 		mode = MIND_DEVICE_MESSAGE
 		icon_state = "mind_device_message"
-	to_chat(user, "<span class='notice'>You switch the device to [mode==MIND_DEVICE_MESSAGE? "TRANSMISSION": "COMMAND"] MODE</span>")
+	to_chat(user, SPAN_NOTICE("You switch the device to [mode==MIND_DEVICE_MESSAGE? "TRANSMISSION": "COMMAND"] MODE"))
 
 /obj/item/abductor/mind_device/afterattack(atom/target, mob/living/user, flag, params)
 	. = ..()
@@ -577,22 +577,22 @@
 	L.visible_message(SPAN_DANGER("[user] probes [L] with [src]!"), \
 						"<span class='userdanger'>[user] probes you!</span>")
 
-	var/species = "<span class='warning'>Unknown species</span>"
-	var/helptext = "<span class='warning'>Species unsuitable for experiments.</span>"
+	var/species = SPAN_WARNING("Unknown species")
+	var/helptext = SPAN_WARNING("Species unsuitable for experiments.")
 
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		species = "<span class='notice'>[H.dna.species.name]</span>"
+		species = SPAN_NOTICE("[H.dna.species.name]")
 		if(L.mind && L.mind.has_antag_datum(/datum/antagonist/changeling))
-			species = "<span class='warning'>Changeling lifeform</span>"
+			species = SPAN_WARNING("Changeling lifeform")
 		var/obj/item/organ/heart/gland/temp = locate() in H.internal_organs
 		if(temp)
-			helptext = "<span class='warning'>Experimental gland detected!</span>"
+			helptext = SPAN_WARNING("Experimental gland detected!")
 		else
 			if (L.getorganslot(ORGAN_SLOT_HEART))
-				helptext = "<span class='notice'>Subject suitable for experiments.</span>"
+				helptext = SPAN_NOTICE("Subject suitable for experiments.")
 			else
-				helptext = "<span class='warning'>Subject unsuitable for experiments.</span>"
+				helptext = SPAN_WARNING("Subject unsuitable for experiments.")
 
 	to_chat(user, "<span class='notice'>Probing result:</span>[species]")
 	to_chat(user, "[helptext]")

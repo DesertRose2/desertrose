@@ -18,7 +18,7 @@
 	toggled = !toggled
 	imp_in.click_intercept = toggled ? src : null
 	imp_in.siliconaccesstoggle = toggled ? TRUE : FALSE
-	to_chat(imp_in,"<span class='notice'>You turn [toggled ? "on" : "off"] [src]'s silicon interactions.</span>")
+	to_chat(imp_in,SPAN_NOTICE("You turn [toggled ? "on" : "off"] [src]'s silicon interactions."))
 	toggle_eyes()
 
 /obj/item/implant/hijack/proc/toggle_eyes()

@@ -36,15 +36,15 @@
 				if(hand_items)
 					message = "<span class='caution'>You aren't holding anything that can be marked for recall.</span>"
 				else
-					message = "<span class='notice'>You must hold the desired item in your hands to mark it for recall.</span>"
+					message = SPAN_NOTICE("You must hold the desired item in your hands to mark it for recall.")
 
 		else if(marked_item && (marked_item in hand_items)) //unlinking item to the spell
-			message = "<span class='notice'>You remove the mark on [marked_item] to use elsewhere.</span>"
+			message = SPAN_NOTICE("You remove the mark on [marked_item] to use elsewhere.")
 			name = "Instant Summons"
 			marked_item = 		null
 
 		else if(marked_item && QDELETED(marked_item)) //the item was destroyed at some point
-			message = "<span class='warning'>You sense your marked item has been destroyed!</span>"
+			message = SPAN_WARNING("You sense your marked item has been destroyed!")
 			name = "Instant Summons"
 			marked_item = 		null
 

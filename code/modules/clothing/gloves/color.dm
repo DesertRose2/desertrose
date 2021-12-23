@@ -31,7 +31,7 @@
 				C.visible_message(SPAN_WARNING("[U] sprays glittery rubber on the hands of [C]!"))
 		else
 			user.visible_message(SPAN_WARNING("The rubber fails to stick to [C]'s hands!"),
-				"<span class='warning'>The rubber fails to stick to [C]'s [(SLOT_GLOVES in C.check_obscured_slots()) ? "unexposed" : ""] hands!</span>")
+				SPAN_WARNING("The rubber fails to stick to [C]'s [(SLOT_GLOVES in C.check_obscured_slots()) ? "unexposed" : ""] hands!"))
 
 		qdel(src)
 

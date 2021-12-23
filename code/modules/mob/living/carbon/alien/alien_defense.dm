@@ -26,7 +26,7 @@ In all, this is a lot like the monkey code. /N
 			update_mobility()
 			visible_message(SPAN_NOTICE("[M.name] nuzzles [src] trying to wake [p_them()] up!"),
 				SPAN_NOTICE("[M.name] nuzzles you trying to wake you up!"), target = M,
-				target_message = "<span class='notice'>You nuzzle [src] trying to wake [p_them()] up!</span>")
+				target_message = SPAN_NOTICE("You nuzzle [src] trying to wake [p_them()] up!"))
 		if(INTENT_DISARM, INTENT_HARM)
 			if(health > 0)
 				M.do_attack_animation(src, ATTACK_EFFECT_BITE)

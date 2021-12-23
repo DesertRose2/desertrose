@@ -298,7 +298,7 @@
 		if(allowed(user))
 			if(active)
 				locked = !locked
-				to_chat(user, "<span class='notice'>You [src.locked ? "lock" : "unlock"] the controls.</span>")
+				to_chat(user, SPAN_NOTICE("You [src.locked ? "lock" : "unlock"] the controls."))
 			else
 				to_chat(user, SPAN_WARNING("The controls can only be locked when \the [src] is online!"))
 		else

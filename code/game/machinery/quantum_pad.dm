@@ -31,7 +31,7 @@
 
 /obj/machinery/quantumpad/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It is [ linked_pad ? "currently" : "not"] linked to another pad.</span>"
+	. += SPAN_NOTICE("It is [ linked_pad ? "currently" : "not"] linked to another pad.")
 	if(!panel_open)
 		. += "<span class='notice'>The panel is <i>screwed</i> in, obstructing the linking device.</span>"
 	else

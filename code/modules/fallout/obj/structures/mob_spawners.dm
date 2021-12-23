@@ -144,7 +144,7 @@
 	debris = list(/obj/effect/decal/cleanable/hatchery = 1, \
 		/obj/item/stack/sheet/hay/ten = 1, \
 		/obj/item/reagent_containers/food/snacks/f13/egg_nightstalker = 1)
-	break_message = "<span class='warning'>The eggs are smashed, the hatchery ruined...</span>"
+	break_message = SPAN_WARNING("The eggs are smashed, the hatchery ruined...")
 	break_sound = 'sound/f13effects/rock_mined.ogg'
 
 /obj/structure/destructible/hatchery/Initialize()

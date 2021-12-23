@@ -59,7 +59,7 @@
 		if (health > 0)
 			visible_message(SPAN_NOTICE("[M.name] [response_help_continuous] [src]."), \
 							SPAN_NOTICE("[M.name] [response_help_continuous] you."), \
-							target = M, target_message = "<span class='notice'>You [response_help_simple] [src].</span>")
+							target = M, target_message = SPAN_NOTICE("You [response_help_simple] [src]."))
 			playsound(loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 
 /mob/living/simple_animal/attack_alien(mob/living/carbon/alien/humanoid/M)

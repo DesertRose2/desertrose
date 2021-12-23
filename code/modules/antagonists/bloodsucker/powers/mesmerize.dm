@@ -51,7 +51,7 @@
 	// Dead/Unconscious
 	if(target.stat > CONSCIOUS)
 		if (display_error)
-			to_chat(owner, "<span class='warning'>Your victim is not [(target.stat == DEAD || HAS_TRAIT(target, TRAIT_FAKEDEATH))?"alive":"conscious"].</span>")
+			to_chat(owner, SPAN_WARNING("Your victim is not [(target.stat == DEAD || HAS_TRAIT(target, TRAIT_FAKEDEATH))?"alive":"conscious"]."))
 		return FALSE
 	// Check: Target has eyes?
 	if(!target.getorganslot(ORGAN_SLOT_EYES))

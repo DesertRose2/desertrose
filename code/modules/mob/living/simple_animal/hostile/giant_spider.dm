@@ -412,7 +412,7 @@
 /obj/effect/proc_holder/wrap/proc/activate(mob/living/user)
 	var/message
 	if(active)
-		message = "<span class='notice'>You no longer prepare to wrap something in a cocoon.</span>"
+		message = SPAN_NOTICE("You no longer prepare to wrap something in a cocoon.")
 		remove_ranged_ability(message)
 	else
 		message = "<span class='notice'>You prepare to wrap something in a cocoon. <B>Left-click your target to start wrapping!</B></span>"

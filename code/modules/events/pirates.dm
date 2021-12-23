@@ -120,7 +120,7 @@
 	SSshuttle.registerTradeBlockade(src)
 	AddComponent(/datum/component/gps, "Nautical Signal")
 	active = TRUE
-	to_chat(user,"<span class='notice'>You toggle [src] [active ? "on":"off"].</span>")
+	to_chat(user,SPAN_NOTICE("You toggle [src] [active ? "on":"off"]."))
 	to_chat(user,SPAN_WARNING("The scrambling signal can be now tracked by GPS."))
 	START_PROCESSING(SSobj,src)
 

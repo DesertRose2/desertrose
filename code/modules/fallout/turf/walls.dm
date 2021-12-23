@@ -227,7 +227,7 @@
 	if(departing_mob.logout_time && departing_mob.logout_time + 5 MINUTES > world.time)
 		to_chat(user, SPAN_WARNING("This mind has only recently departed. Better give it some more time before taking such a drastic measure."))
 		return
-	user.visible_message("<span class='warning'>[user] [departing_mob == user ? "is trying to leave the wasteland!" : "is trying to send [departing_mob] away!"]</span>", "<span class='notice'>You [departing_mob == user ? "are trying to leave the wasteland." : "are trying to send [departing_mob] away."]</span>")
+	user.visible_message(SPAN_WARNING("[user] [departing_mob == user ? "is trying to leave the wasteland!" : "is trying to send [departing_mob] away!"]"), SPAN_NOTICE("You [departing_mob == user ? "are trying to leave the wasteland." : "are trying to send [departing_mob] away."]"))
 	icon_state = "matrix_going" // ALERT, WEE WOO
 	update_icon()
 	in_use = TRUE
@@ -253,7 +253,7 @@
 	if(departing_mob.stat == DEAD)
 		departing_mob.visible_message(SPAN_NOTICE("[user] pushes the body of [departing_mob] over the border. They're someone else's problem now."))
 	else
-		departing_mob.visible_message("<span class='notice'>[departing_mob == user ? "Out of their own volition, " : "Ushered by [user], "][departing_mob] crosses the border and departs the Sonora.</span>")
+		departing_mob.visible_message(SPAN_NOTICE("[departing_mob == user ? "Out of their own volition, " : "Ushered by [user], "][departing_mob] crosses the border and departs the Sonora."))
 	departing_mob.despawn()
 
 

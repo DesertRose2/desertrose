@@ -129,7 +129,7 @@
 	switch(stage)
 		if(2)
 			if(prob(2))
-				to_chat(affected_mob, "<span class='notice'>Your [pick("back", "arm", "leg", "elbow", "head")] itches.</span>")
+				to_chat(affected_mob, SPAN_NOTICE("Your [pick("back", "arm", "leg", "elbow", "head")] itches."))
 		if(3)
 			if(prob(4))
 				to_chat(affected_mob, SPAN_DANGER("You feel a stabbing pain in your head."))

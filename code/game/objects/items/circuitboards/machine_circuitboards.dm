@@ -294,7 +294,7 @@
 		position = (position == vending_names_paths.len) ? 1 : (position + 1)
 		var/typepath = vending_names_paths[position]
 		set_type(typepath)
-		to_chat(user, "<span class='notice'>You set the board to \"[vending_names_paths[typepath]]\".</span>")
+		to_chat(user, SPAN_NOTICE("You set the board to \"[vending_names_paths[typepath]]\"."))
 	else
 		return ..()
 
@@ -378,7 +378,7 @@
 		name = initial(new_type.name)
 		build_path = initial(new_type.build_path)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You change the circuitboard setting to \"[new_setting]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard setting to \"[new_setting]\"."))
 		return
 
 	if(I.tool_behaviour == TOOL_MULTITOOL)
@@ -664,7 +664,7 @@
 		name = initial(new_type.name)
 		build_path = initial(new_type.build_path)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You change the circuitboard setting to \"[new_setting]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard setting to \"[new_setting]\"."))
 	else
 		return ..()
 
@@ -780,7 +780,7 @@
 
 		build_path = new_path
 		name = "[new_name] 3000 (Machine Board)"
-		to_chat(user, "<span class='notice'>You change the circuit board setting to \"[new_name]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuit board setting to \"[new_name]\"."))
 	else
 		return ..()
 
@@ -1039,19 +1039,19 @@
 
 /obj/item/circuitboard/machine/dish_drive/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Its suction function is [suction ? "enabled" : "disabled"]. Use it in-hand to switch.</span>"
-	. += "<span class='notice'>Its disposal auto-transmit function is [transmit ? "enabled" : "disabled"]. Alt-click it to switch.</span>"
+	. += SPAN_NOTICE("Its suction function is [suction ? "enabled" : "disabled"]. Use it in-hand to switch.")
+	. += SPAN_NOTICE("Its disposal auto-transmit function is [transmit ? "enabled" : "disabled"]. Alt-click it to switch.")
 
 /obj/item/circuitboard/machine/dish_drive/attack_self(mob/living/user)
 	suction = !suction
-	to_chat(user, "<span class='notice'>You [suction ? "enable" : "disable"] the board's suction function.</span>")
+	to_chat(user, SPAN_NOTICE("You [suction ? "enable" : "disable"] the board's suction function."))
 
 /obj/item/circuitboard/machine/dish_drive/AltClick(mob/living/user)
 	. = ..()
 	if(!user.Adjacent(src))
 		return
 	transmit = !transmit
-	to_chat(user, "<span class='notice'>You [transmit ? "enable" : "disable"] the board's automatic disposal transmission.</span>")
+	to_chat(user, SPAN_NOTICE("You [transmit ? "enable" : "disable"] the board's automatic disposal transmission."))
 	return TRUE
 
 /obj/item/circuitboard/machine/stacking_unit_console

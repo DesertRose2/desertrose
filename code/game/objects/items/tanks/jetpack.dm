@@ -30,7 +30,7 @@
 	else if(istype(action, /datum/action/item_action/jetpack_stabilization))
 		if(on)
 			stabilizers = !stabilizers
-			to_chat(user, "<span class='notice'>You turn the jetpack stabilization [stabilizers ? "on" : "off"].</span>")
+			to_chat(user, SPAN_NOTICE("You turn the jetpack stabilization [stabilizers ? "on" : "off"]."))
 	else
 		toggle_internals(user)
 

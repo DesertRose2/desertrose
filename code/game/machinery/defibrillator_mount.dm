@@ -30,7 +30,7 @@
 		if(GLOB.security_level >= SEC_LEVEL_RED)
 			. += SPAN_NOTICE("Due to a security situation, its locking clamps can be toggled by swiping any ID.")
 		else
-			. += "<span class='notice'>Its locking clamps can be [clamps_locked ? "dis" : ""]engaged by swiping an ID with access.</span>"
+			. += SPAN_NOTICE("Its locking clamps can be [clamps_locked ? "dis" : ""]engaged by swiping an ID with access.")
 
 /obj/machinery/defibrillator_mount/process()
 	if(defib && defib.cell && defib.cell.charge < defib.cell.maxcharge && is_operational())
@@ -64,7 +64,7 @@
 		to_chat(user, SPAN_WARNING("There's no defibrillator unit loaded!"))
 		return
 	if(defib.paddles.loc != defib)
-		to_chat(user, "<span class='warning'>[defib.paddles.loc == user ? "You are already" : "Someone else is"] holding [defib]'s paddles!</span>")
+		to_chat(user, SPAN_WARNING("[defib.paddles.loc == user ? "You are already" : "Someone else is"] holding [defib]'s paddles!"))
 		return
 	user.put_in_hands(defib.paddles)
 
@@ -92,7 +92,7 @@
 				to_chat(user, SPAN_WARNING("You can't engage the clamps on a defibrillator that isn't there."))
 				return
 			clamps_locked = !clamps_locked
-			to_chat(user, "<span class='notice'>Clamps [clamps_locked ? "" : "dis"]engaged.</span>")
+			to_chat(user, SPAN_NOTICE("Clamps [clamps_locked ? "" : "dis"]engaged."))
 			update_icon()
 		else
 			to_chat(user, SPAN_WARNING("Insufficient access."))

@@ -96,7 +96,7 @@
 
 	else if(istype(W, /obj/item/screwdriver) && igniter && !lit)
 		status = !status
-		to_chat(user, "<span class='notice'>[igniter] is now [status ? "secured" : "unsecured"]!</span>")
+		to_chat(user, SPAN_NOTICE("[igniter] is now [status ? "secured" : "unsecured"]!"))
 		update_icon()
 		return
 
@@ -158,7 +158,7 @@
 	if(!status)
 		to_chat(user, SPAN_NOTICE("Secure the igniter first!"))
 		return
-	to_chat(user, "<span class='notice'>You [lit ? "extinguish" : "ignite"] [src]!</span>")
+	to_chat(user, SPAN_NOTICE("You [lit ? "extinguish" : "ignite"] [src]!"))
 	lit = !lit
 	if(lit)
 		START_PROCESSING(SSobj, src)

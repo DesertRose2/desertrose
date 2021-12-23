@@ -13,7 +13,7 @@
 	if(new_resting != resting)
 		resting = new_resting
 		if(!silent)
-			to_chat(src, "<span class='notice'>You are now [resting? "resting" : "getting up"].</span>")
+			to_chat(src, SPAN_NOTICE("You are now [resting? "resting" : "getting up"]."))
 		update_resting(updating)
 
 /mob/living/proc/update_resting(update_mobility = TRUE)
@@ -34,7 +34,7 @@
 	set category = "IC"
 	if(client?.prefs?.autostand)
 		TOGGLE_BITFIELD(combat_flags, COMBAT_FLAG_INTENTIONALLY_RESTING)
-		to_chat(src, "<span class='notice'>You are now attempting to [(combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"].</span>")
+		to_chat(src, SPAN_NOTICE("You are now attempting to [(combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"]."))
 		if((combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) && !resting)
 			set_resting(TRUE, FALSE)
 		else

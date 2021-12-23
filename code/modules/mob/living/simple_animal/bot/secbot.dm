@@ -386,7 +386,7 @@ Auto Patrol: []"},
 /mob/living/simple_animal/bot/secbot/proc/cuff(mob/living/carbon/C)
 	mode = BOT_ARREST
 	playsound(src, 'sound/weapons/cablecuff.ogg', 30, TRUE, -2)
-	C.visible_message("<span class='danger'>[process_emote("CAPTURE_ONE", C)]</span>",\
+	C.visible_message(SPAN_DANGER("[process_emote("CAPTURE_ONE", C)]"),\
 						"<span class='userdanger'>[process_emote("CAPTURE_TWO", C)]</span>")
 	if(do_after(src, 60, FALSE, C))
 		attempt_handcuff(C)
@@ -426,7 +426,7 @@ Auto Patrol: []"},
 	if(declare_arrests)
 		var/area/location = get_area(src)
 		speak(process_emote("ARREST", C, threat, arrest_type, location), radio_channel)
-	C.visible_message("<span class='danger'>[process_emote("ATTACK_ONE", C)]</span>",\
+	C.visible_message(SPAN_DANGER("[process_emote("ATTACK_ONE", C)]"),\
 							"<span class='userdanger'>[process_emote("ATTACK_TWO", C)]</span>")
 
 /mob/living/simple_animal/bot/secbot/handle_automated_action()

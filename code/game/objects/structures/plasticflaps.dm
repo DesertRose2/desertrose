@@ -32,7 +32,7 @@
 	user.visible_message(SPAN_WARNING("[user] [action] the floor."), SPAN_NOTICE("You start to [uraction] the floor..."), "You hear rustling noises.")
 	if(W.use_tool(src, user, 100, volume=100, extra_checks = CALLBACK(src, .proc/check_anchored_state, anchored)))
 		setAnchored(!anchored)
-		to_chat(user, "<span class='notice'> You [anchored ? "unscrew" : "screw"] [src] from the floor.</span>")
+		to_chat(user, SPAN_NOTICE(" You [anchored ? "unscrew" : "screw"] [src] from the floor."))
 		return TRUE
 	else
 		return TRUE

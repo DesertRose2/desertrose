@@ -640,22 +640,22 @@
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage1(mob/living/M)
 	if(prob(5))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour")]</span>")
+		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour")]"))
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage2(mob/living/M)
 	if(prob(10))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour", "The Queen approved it!")]</span>")
+		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour", "The Queen approved it!")]"))
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage3(mob/living/M)
 	if(prob(15))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "The Queen approved it!")]</span>")
+		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "The Queen approved it!")]"))
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage4(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "Sap back that missing energy!", "Got Honey?", "The Queen approved it!")]</span>")
+		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "Sap back that missing energy!", "Got Honey?", "The Queen approved it!")]"))
 	..()
 
 /datum/reagent/consumable/grey_bull

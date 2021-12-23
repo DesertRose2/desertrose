@@ -2,8 +2,8 @@
 	name = "Telepathy"
 	desc = "A rare mutation that allows the user to telepathically communicate to others."
 	quality = POSITIVE
-	text_gain_indication = "<span class='notice'>You can hear your own voice echoing in your mind!</span>"
-	text_lose_indication = "<span class='notice'>You don't hear your mind echo anymore.</span>"
+	text_gain_indication = SPAN_NOTICE("You can hear your own voice echoing in your mind!")
+	text_lose_indication = SPAN_NOTICE("You don't hear your mind echo anymore.")
 	difficulty = 12
 	power = /obj/effect/proc_holder/spell/targeted/telepathy/genetic
 	instability = 10
@@ -24,8 +24,8 @@
 	quality = POSITIVE
 	difficulty = 12
 	locked = TRUE
-	text_gain_indication = "<span class='notice'>Your throat is burning!</span>"
-	text_lose_indication = "<span class='notice'>Your throat is cooling down.</span>"
+	text_gain_indication = SPAN_NOTICE("Your throat is burning!")
+	text_lose_indication = SPAN_NOTICE("Your throat is cooling down.")
 	power = /obj/effect/proc_holder/spell/aimed/firebreath
 	instability = 30
 	energy_coeff = 1
@@ -106,7 +106,7 @@
 	name = "Void Magnet"
 	desc = "A rare genome that attracts odd forces not usually observed."
 	quality = MINOR_NEGATIVE //upsides and downsides
-	text_gain_indication = "<span class='notice'>You feel a heavy, dull force just beyond the walls watching you.</span>"
+	text_gain_indication = SPAN_NOTICE("You feel a heavy, dull force just beyond the walls watching you.")
 	instability = 30
 	power = /obj/effect/proc_holder/spell/self/void
 	energy_coeff = 1
@@ -145,8 +145,8 @@
 	quality = POSITIVE
 	locked = TRUE
 	difficulty = 16
-	text_gain_indication = "<span class='notice'>You feel power flow through your hands.</span>"
-	text_lose_indication = "<span class='notice'>The energy in your hands subsides.</span>"
+	text_gain_indication = SPAN_NOTICE("You feel power flow through your hands.")
+	text_lose_indication = SPAN_NOTICE("The energy in your hands subsides.")
 	power = /obj/effect/proc_holder/spell/targeted/touch/shock
 	instability = 30
 
@@ -198,8 +198,8 @@
 	desc = "Your sense of smell is comparable to that of a canine."
 	quality = POSITIVE
 	difficulty = 12
-	text_gain_indication = "<span class='notice'>Smells begin to make more sense...</span>"
-	text_lose_indication = "<span class='notice'>Your sense of smell goes back to normal.</span>"
+	text_gain_indication = SPAN_NOTICE("Smells begin to make more sense...")
+	text_lose_indication = SPAN_NOTICE("Your sense of smell goes back to normal.")
 	power = /obj/effect/proc_holder/spell/targeted/olfaction
 	instability = 30
 	synchronizer_coeff = 1
@@ -282,7 +282,7 @@
 	name = "Autotomy"
 	desc = "Allows a creature to voluntary discard a random appendage."
 	quality = POSITIVE
-	text_gain_indication = "<span class='notice'>Your joints feel loose.</span>"
+	text_gain_indication = SPAN_NOTICE("Your joints feel loose.")
 	instability = 30
 	power = /obj/effect/proc_holder/spell/self/self_amputation
 
@@ -323,7 +323,7 @@
 	name = "Webbing Production"
 	desc = "Allows the user to lay webbing, and travel through it."
 	quality = POSITIVE
-	text_gain_indication = "<span class='notice'>Your skin feels webby.</span>"
+	text_gain_indication = SPAN_NOTICE("Your skin feels webby.")
 	instability = 15
 	power = /obj/effect/proc_holder/spell/self/lay_genetic_web
 
@@ -362,7 +362,7 @@
 	name = "Tongue Spike"
 	desc = "Allows a creature to voluntary shoot their tongue out as a deadly weapon."
 	quality = POSITIVE
-	text_gain_indication = "<span class='notice'>Your feel like you can throw your voice.</span>"
+	text_gain_indication = SPAN_NOTICE("Your feel like you can throw your voice.")
 	instability = 15
 	power = /obj/effect/proc_holder/spell/self/tongue_spike
 
@@ -440,7 +440,7 @@
 	name = "Chem Spike"
 	desc = "Allows a creature to voluntary shoot their tongue out as biomass, allowing a long range transfer of chemicals."
 	quality = POSITIVE
-	text_gain_indication = "<span class='notice'>Your feel like you can really connect with people by throwing your voice.</span>"
+	text_gain_indication = SPAN_NOTICE("Your feel like you can really connect with people by throwing your voice.")
 	instability = 15
 	locked = TRUE
 	power = /obj/effect/proc_holder/spell/self/tongue_spike/chem
@@ -469,7 +469,7 @@
 	chems = new
 	chems.transfered = embedded_mob
 	chems.spikey = src
-	to_chat(fired_by, "<span class='notice'>Link established! Use the \"Transfer Chemicals\" ability to send your chemicals to the linked target!</span>")
+	to_chat(fired_by, SPAN_NOTICE("Link established! Use the \"Transfer Chemicals\" ability to send your chemicals to the linked target!"))
 	chems.Grant(fired_by)
 
 /obj/item/hardened_spike/chem/unembedded()

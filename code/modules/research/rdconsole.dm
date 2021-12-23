@@ -189,7 +189,7 @@ Nothing else in the console has ID requirements.
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, "<span class='notice'>You disable the security protocols[locked? " and unlock the console":""].</span>")
+	to_chat(user, SPAN_NOTICE("You disable the security protocols[locked? " and unlock the console":""]."))
 	playsound(src, "sparks", 75, 1)
 	obj_flags |= EMAGGED
 	locked = FALSE

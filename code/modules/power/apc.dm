@@ -268,10 +268,10 @@
 	if(integration_cog && is_servant_of_ratvar(user))
 		. += "<span class='brass'>There is an integration cog installed!</span>"
 
-	. += "<span class='notice'>Alt-Click the APC to [ locked ? "unlock" : "lock"] the interface.</span>"
+	. += SPAN_NOTICE("Alt-Click the APC to [ locked ? "unlock" : "lock"] the interface.")
 
 	if(area.hasSiliconAccessInArea(user))
-		. += "<span class='notice'>Ctrl-Click the APC to switch the breaker [ operating ? "off" : "on"].</span>"
+		. += SPAN_NOTICE("Ctrl-Click the APC to switch the breaker [ operating ? "off" : "on"].")
 
 // update the APC icon to show the three base states
 // also add overlays for indicator lights
@@ -779,7 +779,7 @@
 	else
 		if((allowed(usr) || area.hasSiliconAccessInArea(usr)) && !wires.is_cut(WIRE_IDSCAN) && !malfhack)
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the APC interface.</span>")
+			to_chat(user, SPAN_NOTICE("You [ locked ? "lock" : "unlock"] the APC interface."))
 			update_icon()
 			updateUsrDialog()
 		else

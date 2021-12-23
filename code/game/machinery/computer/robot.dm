@@ -102,7 +102,7 @@
 			if(allowed(usr))
 				var/mob/living/silicon/robot/R = locate(params["ref"]) in GLOB.silicon_mobs
 				if(can_control(usr, R) && !..())
-					message_admins("<span class='notice'>[ADMIN_LOOKUPFLW(usr)] [!R.locked_down ? "locked down" : "released"] [ADMIN_LOOKUPFLW(R)]!</span>")
+					message_admins(SPAN_NOTICE("[ADMIN_LOOKUPFLW(usr)] [!R.locked_down ? "locked down" : "released"] [ADMIN_LOOKUPFLW(R)]!"))
 					log_game("[key_name(usr)] [!R.locked_down ? "locked down" : "released"] [key_name(R)]!")
 					R.SetLockdown(!R.locked_down)
 					to_chat(R, "[!R.locked_down ? "<span class='notice'>Your lockdown has been lifted!" : "<span class='alert'>You have been locked down!"]</span>")

@@ -686,7 +686,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/greyscale/ignition_effect(atom/A, mob/user)
 	if(get_temperature())
-		. = "<span class='notice'>After some fiddling, [user] manages to light [A] with [src].</span>"
+		. = SPAN_NOTICE("After some fiddling, [user] manages to light [A] with [src].")
 
 
 /obj/item/lighter/slime
@@ -1017,7 +1017,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/bong/ignition_effect(atom/A, mob/user)
 	if(firecharges)
-		. = "<span class='notice'>[user] lights [A] off of the [src].</span>"
+		. = SPAN_NOTICE("[user] lights [A] off of the [src].")
 	else
 		. = ""
 

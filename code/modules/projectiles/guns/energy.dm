@@ -335,7 +335,7 @@
 			playsound(user, E.fire_sound, 50, 1)
 			playsound(user, BB.hitsound, 50, 1)
 			cell.use(E.e_cost)
-			. = "<span class='danger'>[user] casually lights their [A.name] with [src]. Damn.</span>"
+			. = SPAN_DANGER("[user] casually lights their [A.name] with [src]. Damn.")
 
 /obj/item/gun/energy/altafterattack(atom/target, mob/user, proximity_flags, params)
 	if(!right_click_overridden)

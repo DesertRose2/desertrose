@@ -4,7 +4,7 @@
 	desc = "A deadly brass spike, cleverly concealed in the floor. You think you should be safe if you disarm whatever's meant to set it off."
 	clockwork_desc = "A barbaric but undeniably effective weapon: a spear through the chest. It immobilizes anyone unlucky enough to step on it and keeps them in place until they get help.."
 	icon_state = "brass_skewer"
-	break_message = "<span class='warning'>The skewer snaps in two!</span>"
+	break_message = SPAN_WARNING("The skewer snaps in two!")
 	max_integrity = 40
 	density = FALSE
 	can_buckle = TRUE

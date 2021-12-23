@@ -138,7 +138,7 @@
 
 	if(honeycombs.len)
 		var/plural = honeycombs.len > 1
-		. += "<span class='notice'>There [plural? "are" : "is"] [honeycombs.len] uncollected honeycomb[plural ? "s":""] in the apiary.</span>"
+		. += SPAN_NOTICE("There [plural? "are" : "is"] [honeycombs.len] uncollected honeycomb[plural ? "s":""] in the apiary.")
 
 	if(honeycombs.len >= get_max_honeycomb())
 		. += SPAN_WARNING("There's no room for more honeycomb!")
@@ -237,7 +237,7 @@
 							fallen++
 					if(fallen)
 						var/multiple = fallen > 1
-						visible_message("<span class='notice'>[user] scrapes [multiple ? "[fallen]" : "a"] honeycomb[multiple ? "s" : ""] off of the frame.</span>")
+						visible_message(SPAN_NOTICE("[user] scrapes [multiple ? "[fallen]" : "a"] honeycomb[multiple ? "s" : ""] off of the frame."))
 
 			if("Remove the Queen Bee")
 				if(!queen_bee || queen_bee.loc != src)

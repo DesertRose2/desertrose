@@ -68,7 +68,7 @@
 /obj/item/circuitboard/computer/card/minor/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		target_dept = (target_dept == dept_list.len) ? 1 : (target_dept + 1)
-		to_chat(user, "<span class='notice'>You set the board to \"[dept_list[target_dept]]\".</span>")
+		to_chat(user, SPAN_NOTICE("You set the board to \"[dept_list[target_dept]]\"."))
 	else
 		return ..()
 
@@ -229,7 +229,7 @@
 /obj/item/circuitboard/computer/cargo/multitool_act(mob/living/user)
 	if(!(obj_flags & EMAGGED))
 		contraband = !contraband
-		to_chat(user, "<span class='notice'>Receiver spectrum set to [contraband ? "Broad" : "Standard"].</span>")
+		to_chat(user, SPAN_NOTICE("Receiver spectrum set to [contraband ? "Broad" : "Standard"]."))
 	else
 		to_chat(user, SPAN_NOTICE("The spectrum chip is unresponsive."))
 
@@ -248,9 +248,9 @@
 
 /obj/item/circuitboard/computer/cargo/express/multitool_act(mob/living/user)
 	if (!(obj_flags & EMAGGED))
-		to_chat(user, "<span class='notice'>Routing protocols are already set to: \"factory defaults\".</span>")
+		to_chat(user, SPAN_NOTICE("Routing protocols are already set to: \"factory defaults\"."))
 	else
-		to_chat(user, "<span class='notice'>You reset the routing protocols to: \"factory defaults\".</span>")
+		to_chat(user, SPAN_NOTICE("You reset the routing protocols to: \"factory defaults\"."))
 		obj_flags &= ~EMAGGED
 
 /obj/item/circuitboard/computer/cargo/express/emag_act(mob/living/user)

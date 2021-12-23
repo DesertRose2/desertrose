@@ -10,7 +10,7 @@
 	braintype = "Servant"
 	begin_activation_message = "<span class='brass'>You activate the cogwheel. It hitches and stalls as it begins spinning.</span>"
 	success_message = "<span class='brass'>The cogwheel's rotation smooths out as the soul vessel activates.</span>"
-	fail_message = "<span class='warning'>The cogwheel creaks and grinds to a halt. Maybe you could try again?</span>"
+	fail_message = SPAN_WARNING("The cogwheel creaks and grinds to a halt. Maybe you could try again?")
 	new_role = "Soul Vessel"
 	welcome_message = "<span class='warning'>ALL PAST LIVES ARE FORGOTTEN.</span>\n\
 	<b>You are a soul vessel - a clockwork mind created by Ratvar, the Clockwork Justiciar.\n\
@@ -18,7 +18,7 @@
 	The purpose of your existence is to further the goals of the servants and Ratvar himself. Above all else, serve Ratvar.</b>"
 	new_mob_message = "<span class='brass'>The soul vessel emits a jet of steam before its cogwheel smooths out.</span>"
 	dead_message = "<span class='deadsay'>Its cogwheel, scratched and dented, lies motionless.</span>"
-	recharge_message = "<span class='warning'>The soul vessel's internal geis capacitor is still recharging!</span>"
+	recharge_message = SPAN_WARNING("The soul vessel's internal geis capacitor is still recharging!")
 	possible_names = list("Judge", "Guard", "Servant", "Smith", "Auger")
 	autoping = FALSE
 	resistance_flags = FIRE_PROOF | ACID_PROOF

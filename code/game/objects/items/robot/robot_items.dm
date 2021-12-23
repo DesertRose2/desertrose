@@ -159,7 +159,7 @@
 		mode = "charge"
 	else
 		mode = "draw"
-	to_chat(user, "<span class='notice'>You toggle [src] to \"[mode]\" mode.</span>")
+	to_chat(user, SPAN_NOTICE("You toggle [src] to \"[mode]\" mode."))
 	update_icon()
 
 /obj/item/borg/charger/afterattack(obj/item/target, mob/living/silicon/robot/user, proximity_flag)
@@ -654,7 +654,7 @@
 	energy = clamp(energy - usage, 0, maxenergy)
 	if(energy <= 0)
 		deactivate_field()
-		visible_message("<span class='warning'>[src] blinks \"ENERGY DEPLETED\".</span>")
+		visible_message(SPAN_WARNING("[src] blinks \"ENERGY DEPLETED\"."))
 
 /obj/item/borg/projectile_dampen/proc/process_recharge()
 	if(!istype(host))

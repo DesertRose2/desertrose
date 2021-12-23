@@ -125,7 +125,7 @@
 			msg += "<span class='notice'><b><i>[t_He] [t_is] just absolutely fucked up, you can look again to take a closer look...</i></b></span>\n"
 
 	if(msg.len)
-		. += "<span class='warning'>[msg.Join("")]</span>"
+		. += SPAN_WARNING("[msg.Join("")]")
 
 	if(!appears_dead)
 		if(stat == UNCONSCIOUS)

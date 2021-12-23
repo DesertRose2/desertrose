@@ -5,7 +5,7 @@
 
 	prefs.enable_tips = !prefs.enable_tips
 	prefs.save_preferences()
-	to_chat(usr, "<span class='danger'>Examine tooltips [prefs.enable_tips ? "en" : "dis"]abled.</span>")
+	to_chat(usr, SPAN_DANGER("Examine tooltips [prefs.enable_tips ? "en" : "dis"]abled."))
 
 /client/verb/change_tip_delay()
 	set name = "Set examine tooltip delay"

@@ -39,7 +39,7 @@
 		user.DelayNextAction(CLICK_CD_MELEE)
 		user.do_attack_animation(src)
 		structureclimber.DefaultCombatKnockdown(40)
-		structureclimber.visible_message("<span class='warning'>[structureclimber] has been knocked off [src].", "You're knocked off [src]!", "You see [structureclimber] get knocked off [src].</span>")
+		structureclimber.visible_message(SPAN_WARNING("[structureclimber] has been knocked off [src]."), SPAN_WARNING("You're knocked off [src]!"))
 
 /obj/structure/ui_act(action, params)
 	. = ..()

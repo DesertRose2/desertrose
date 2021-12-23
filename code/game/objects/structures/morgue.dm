@@ -155,14 +155,14 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 
 /obj/structure/bodycontainer/morgue/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The speaker is [beeper ? "enabled" : "disabled"]. Alt-click to toggle it.</span>"
+	. += SPAN_NOTICE("The speaker is [beeper ? "enabled" : "disabled"]. Alt-click to toggle it.")
 
 /obj/structure/bodycontainer/morgue/AltClick(mob/user)
 	. = ..()
 	if(!user.canUseTopic(src, !hasSiliconAccessInArea(user)))
 		return
 	beeper = !beeper
-	to_chat(user, "<span class='notice'>You turn the speaker function [beeper ? "on" : "off"].</span>")
+	to_chat(user, SPAN_NOTICE("You turn the speaker function [beeper ? "on" : "off"]."))
 	return TRUE
 
 /obj/structure/bodycontainer/morgue/update_icon_state()

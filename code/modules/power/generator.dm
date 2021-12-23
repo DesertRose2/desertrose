@@ -195,7 +195,7 @@
 	if(!anchored)
 		kill_circs()
 	connect_to_network()
-	to_chat(user, "<span class='notice'>You [anchored?"secure":"unsecure"] [src].</span>")
+	to_chat(user, SPAN_NOTICE("You [anchored?"secure":"unsecure"] [src]."))
 	return TRUE
 
 /obj/machinery/power/generator/multitool_act(mob/living/user, obj/item/I)
@@ -210,7 +210,7 @@
 		return TRUE
 	panel_open = !panel_open
 	I.play_tool_sound(src)
-	to_chat(user, "<span class='notice'>You [panel_open?"open":"close"] the panel on [src].</span>")
+	to_chat(user, SPAN_NOTICE("You [panel_open?"open":"close"] the panel on [src]."))
 	return TRUE
 
 /obj/machinery/power/generator/crowbar_act(mob/user, obj/item/I)

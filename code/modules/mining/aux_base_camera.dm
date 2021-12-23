@@ -23,7 +23,7 @@
 /obj/item/construction/rcd/internal //Base console's internal RCD. Roundstart consoles are filled, rebuilt cosoles start empty.
 	name = "internal RCD"
 	max_matter = 600 //Bigger container and faster speeds due to being specialized and stationary.
-	no_ammo_message = "<span class='warning'>Internal matter exhausted. Please add additional materials.</span>"
+	no_ammo_message = SPAN_WARNING("Internal matter exhausted. Please add additional materials.")
 	delay_mod = 0.5
 	upgrade = TRUE
 	var/obj/machinery/computer/camera_advanced/base_construction/console

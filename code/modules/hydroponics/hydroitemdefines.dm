@@ -15,7 +15,7 @@
 /obj/item/plant_analyzer/attack_self(mob/user)
 	. = ..()
 	scan_mode = !scan_mode
-	to_chat(user, "<span class='notice'>You switch [src] to [scan_mode == PLANT_SCANMODE_CHEMICALS ? "scan for chemical reagents and traits" : "scan for plant growth statistics"].</span>")
+	to_chat(user, SPAN_NOTICE("You switch [src] to [scan_mode == PLANT_SCANMODE_CHEMICALS ? "scan for chemical reagents and traits" : "scan for plant growth statistics"]."))
 
 /obj/item/plant_analyzer/attack(mob/living/M, mob/living/carbon/human/user)
 	//Checks if target is a podman

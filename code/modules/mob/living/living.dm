@@ -125,7 +125,7 @@
 				ENABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
 				visible_message(SPAN_NOTICE("[src] is attempting to crawl under [L]."),
 					SPAN_NOTICE("You are now attempting to crawl under [L]."),
-					target = L, target_message = "<span class='notice'>[src] is attempting to crawl under you.</span>")
+					target = L, target_message = SPAN_NOTICE("[src] is attempting to crawl under you."))
 				if(!do_after(src, CRAWLUNDER_DELAY, target = src) || CHECK_MOBILITY(src, MOBILITY_STAND))
 					DISABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
 					return TRUE
@@ -279,7 +279,7 @@
 		if(!supress_message)
 			AM.pulledby.visible_message(SPAN_DANGER("[src] has pulled [AM] from [AM.pulledby]'s grip."),
 				SPAN_DANGER("[src] has pulled [AM] from your grip."), target = src,
-				target_message = "<span class='danger'>You have pulled [AM] from [AM.pulledby]'s grip.</span>")
+				target_message = SPAN_DANGER("You have pulled [AM] from [AM.pulledby]'s grip."))
 		log_combat(AM, AM.pulledby, "pulled from", src)
 		AM.pulledby.stop_pulling() //an object can't be pulled by two mobs at once.
 
@@ -294,9 +294,9 @@
 
 		log_combat(src, M, "grabbed", addition="passive grab")
 		if(!supress_message && !(iscarbon(AM) && HAS_TRAIT(src, TRAIT_STRONG_GRABBER)))
-			visible_message("<span class='warning'>[src] has grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!</span>",
-				"<span class='warning'>You have grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!</span>", target = M,
-				target_message = "<span class='warning'>[src] has grabbed you[(zone_selected == "l_arm" || zone_selected == "r_arm")? " by your hands":" passively"]!</span>")
+			visible_message(SPAN_WARNING("[src] has grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!"),
+				SPAN_WARNING("You have grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!"), target = M,
+				target_message = SPAN_WARNING("[src] has grabbed you[(zone_selected == "l_arm" || zone_selected == "r_arm")? " by your hands":" passively"]!"))
 		if(!iscarbon(src))
 			M.LAssailant = null
 		else
@@ -482,7 +482,7 @@
 	set category = "IC"
 
 	resting = !resting
-	to_chat(src, "<span class='notice'>You are now [resting ? "resting" : "getting up"].</span>")
+	to_chat(src, SPAN_NOTICE("You are now [resting ? "resting" : "getting up"]."))
 	update_canmove()
 */
 
@@ -787,14 +787,14 @@
 		if(CHECK_MOBILITY(src, MOBILITY_RESIST) && prob(30/pulledby.grab_state))
 			pulledby.visible_message(SPAN_DANGER("[src] has broken free of [pulledby]'s grip!"),
 				SPAN_DANGER("[src] has broken free of your grip!"), target = src,
-				target_message = "<span class='danger'>You have broken free of [pulledby]'s grip!</span>")
+				target_message = SPAN_DANGER("You have broken free of [pulledby]'s grip!"))
 			pulledby.stop_pulling()
 			return TRUE
 		else if(moving_resist && client) //we resisted by trying to move // this is a horrible system and whoever thought using client instead of mob is okay is not an okay person
 			client.move_delay = world.time + 20
 		pulledby.visible_message(SPAN_DANGER("[src] resists against [pulledby]'s grip!"),
 			SPAN_DANGER("[src] resists against your grip!"), target = src,
-			target_message = "<span class='danger'>You resist against [pulledby]'s grip!</span>")
+			target_message = SPAN_DANGER("You resist against [pulledby]'s grip!"))
 	else
 		pulledby.stop_pulling()
 		return TRUE
@@ -860,7 +860,7 @@
 	if (!strip_silence)
 		who.visible_message(SPAN_DANGER("[src] tries to remove [who]'s [what.name]."), \
 					"<span class='userdanger'>[src] tries to remove your [what.name].</span>", target = src,
-					target_message = "<span class='danger'>You try to remove [who]'s [what.name].</span>")
+					target_message = SPAN_DANGER("You try to remove [who]'s [what.name]."))
 		what.add_fingerprint(src)
 	else
 		to_chat(src,SPAN_NOTICE("You try to remove [who]'s [what.name]."))
@@ -910,7 +910,7 @@
 
 		who.visible_message(SPAN_NOTICE("[src] tries to put [what] on [who]."),
 			SPAN_NOTICE("[src] tries to put [what] on you."), target = src,
-			target_message = "<span class='notice'>You try to put [what] on [who].</span>")
+			target_message = SPAN_NOTICE("You try to put [what] on [who]."))
 		if(do_mob(src, who, what.equip_delay_other))
 			if(what && Adjacent(who) && what.mob_can_equip(who, src, final_where, TRUE, TRUE))
 				if(temporarilyRemoveItemFromInventory(what))

@@ -309,7 +309,7 @@
 	if(istype(W, /obj/item/screwdriver))
 		if(!locked)
 			open = !open
-			to_chat(user, "<span class='notice'>The maintenance panel is now [open ? "opened" : "closed"].</span>")
+			to_chat(user, SPAN_NOTICE("The maintenance panel is now [open ? "opened" : "closed"]."))
 		else
 			to_chat(user, SPAN_WARNING("The maintenance panel is locked."))
 	else if(istype(W, /obj/item/card/id) || istype(W, /obj/item/pda))

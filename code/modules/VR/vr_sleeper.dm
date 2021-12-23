@@ -102,7 +102,7 @@
 					VR = vr_mob.GetComponent(/datum/component/virtual_reality)
 				if(!(VR?.connect(M)))
 					if(allow_creating_vr_mobs)
-						to_chat(occupant, "<span class='warning'>Virtual avatar [vr_mob ? "corrupted" : "missing"], attempting to create one...</span>")
+						to_chat(occupant, SPAN_WARNING("Virtual avatar [vr_mob ? "corrupted" : "missing"], attempting to create one..."))
 						var/obj/effect/landmark/vr_spawn/V = get_vr_spawnpoint()
 						var/turf/T = get_turf(V)
 						if(T)

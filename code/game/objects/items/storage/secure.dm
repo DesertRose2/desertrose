@@ -39,7 +39,7 @@
 		if (istype(W, /obj/item/screwdriver))
 			if (W.use_tool(src, user, 20))
 				open =! open
-				to_chat(user, "<span class='notice'>You [open ? "open" : "close"] the service panel.</span>")
+				to_chat(user, SPAN_NOTICE("You [open ? "open" : "close"] the service panel."))
 			return
 		if (istype(W, /obj/item/wirecutters))
 			to_chat(user, "<span class='danger'>[src] is protected from this sort of tampering, yet it appears the internal memory wires can still be <b>pulsed</b>.</span>")

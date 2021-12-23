@@ -383,7 +383,7 @@
 			if(66)
 				SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "EnthMissing1")
 				var/message = "[(lewd?"I feel so lost in this complicated world without [enthrallGender]..":"I have to return to [master]!")]"
-				to_chat(owner, "<span class='warning'>You start to feel really angry about how you're not with [(lewd?"your [enthrallGender]":"[master]")]!</span>")
+				to_chat(owner, SPAN_WARNING("You start to feel really angry about how you're not with [(lewd?"your [enthrallGender]":"[master]")]!"))
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "EnthMissing2", /datum/mood_event/enthrallmissing2, message)
 				owner.stuttering += 50
 				owner.jitteriness += 250

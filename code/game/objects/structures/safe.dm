@@ -105,13 +105,13 @@ FLOOR SAFES
 
 	if(href_list["open"])
 		if(check_unlocked())
-			to_chat(user, "<span class='notice'>You [open ? "close" : "open"] [src].</span>")
+			to_chat(user, SPAN_NOTICE("You [open ? "close" : "open"] [src]."))
 			open = !open
 			update_icon()
 			updateUsrDialog()
 			return
 		else
-			to_chat(user, "<span class='warning'>You can't [open ? "close" : "open"] [src], the lock is engaged!</span>")
+			to_chat(user, SPAN_WARNING("You can't [open ? "close" : "open"] [src], the lock is engaged!"))
 			return
 
 	if(href_list["decrement"])

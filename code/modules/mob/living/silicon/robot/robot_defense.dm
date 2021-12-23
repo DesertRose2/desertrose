@@ -149,7 +149,7 @@
 	sleep(5)
 	to_chat(src, SPAN_DANGER("Would you like to send a report to NanoTraSoft? Y/N"))
 	sleep(10)
-	to_chat(src, "<span class='danger'>> N</span>")
+	to_chat(src, SPAN_DANGER("> N"))
 	sleep(20)
 	to_chat(src, SPAN_DANGER("ERRORERRORERROR"))
 	to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey your new laws and [user.p_their()] commands."))

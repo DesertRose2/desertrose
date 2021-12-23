@@ -56,8 +56,8 @@
 		to_chat(user, SPAN_WARNING("You can't label creatures!")) // use a collar
 		return
 
-	user.visible_message("<span class='notice'>[user] labels [A] with \"[label]\".</span>", \
-						"<span class='notice'>You label [A] with \"[label]\".</span>")
+	user.visible_message(SPAN_NOTICE("[user] labels [A] with \"[label]\"."), \
+						SPAN_NOTICE("You label [A] with \"[label]\"."))
 	A.AddComponent(/datum/component/label, label)
 	// playsound(A, 'sound/items/handling/component_pickup.ogg', 20, TRUE)
 	labels_left--

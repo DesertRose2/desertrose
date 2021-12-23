@@ -315,7 +315,7 @@
 	if (!carved && !chopped)
 		var/screwdrivered = W.tool_behaviour == TOOL_SCREWDRIVER
 		if(screwdrivered || W.sharpness)
-			user.show_message("<span class='notice'>You [screwdrivered ? "make a hole in the coconut" : "slice the coconut open"]!</span>", 1)
+			user.show_message(SPAN_NOTICE("You [screwdrivered ? "make a hole in the coconut" : "slice the coconut open"]!"), 1)
 			carved = TRUE
 			opened = TRUE
 			spillable = !screwdrivered

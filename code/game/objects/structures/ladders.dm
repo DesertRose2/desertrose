@@ -171,7 +171,7 @@
 		if(in_use)
 			return
 		in_use = TRUE
-		user.visible_message("[user] begins to climb [going_up ? "up" : "down"] [src].", "<span class='notice'>You begin to climb [going_up ? "up" : "down"] [src].</span>")
+		user.visible_message("[user] begins to climb [going_up ? "up" : "down"] [src].", SPAN_NOTICE("You begin to climb [going_up ? "up" : "down"] [src]."))
 		if(!do_after(user, timetouse, target = src))
 			in_use = FALSE
 			return
@@ -390,7 +390,7 @@
 		if(in_use)
 			return
 		in_use = TRUE
-		user.visible_message("[user] begins to walk [going_up ? "up to" : "down to"] [src].", "<span class='notice'>You begin to walk [going_up ? "up to" : "down to"] [src].</span>")
+		user.visible_message("[user] begins to walk [going_up ? "up to" : "down to"] [src].", SPAN_NOTICE("You begin to walk [going_up ? "up to" : "down to"] [src]."))
 		if(!do_after(user, timetouse, target = src))
 			in_use = FALSE
 			return

@@ -16,7 +16,7 @@
 
 /obj/structure/fermenting_barrel/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It is currently [open?"open, letting you pour liquids in.":"closed, letting you draw liquids from the tap."]</span>"
+	. += SPAN_NOTICE("It is currently [open?"open, letting you pour liquids in.":"closed, letting you draw liquids from the tap."]")
 
 /obj/structure/fermenting_barrel/proc/makeWine(obj/item/reagent_containers/food/snacks/grown/fruit)
 	var/amount = fruit.seed.potency / 4

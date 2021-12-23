@@ -157,7 +157,7 @@
 			return
 	else if(istype(I, /obj/item/screwdriver))
 		panel_open = !panel_open
-		user.visible_message("\The [user] [panel_open ? "opens" : "closes"] the hatch on \the [src].", "<span class='notice'>You [panel_open ? "open" : "close"] the hatch on \the [src].</span>")
+		user.visible_message("\The [user] [panel_open ? "opens" : "closes"] the hatch on \the [src].", SPAN_NOTICE("You [panel_open ? "open" : "close"] the hatch on \the [src]."))
 		update_icon()
 		if(panel_open)
 			interact(user)
@@ -208,7 +208,7 @@
 		if("power")
 			on = !on
 			mode = HEATER_MODE_STANDBY
-			usr.visible_message("<span class='notice'>[usr] switches [on ? "on" : "off"] \the [src].</span>", "<span class='notice'>You switch [on ? "on" : "off"] \the [src].</span>")
+			usr.visible_message(SPAN_NOTICE("[usr] switches [on ? "on" : "off"] \the [src]."), SPAN_NOTICE("You switch [on ? "on" : "off"] \the [src]."))
 			update_icon()
 			if (on)
 				SSair.atmos_air_machinery += src

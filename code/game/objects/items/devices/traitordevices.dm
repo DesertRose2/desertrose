@@ -256,7 +256,7 @@ effective or pretty fucking useless.
 	var/range = 12
 
 /obj/item/jammer/attack_self(mob/user)
-	to_chat(user,"<span class='notice'>You [active ? "deactivate" : "activate"] [src].</span>")
+	to_chat(user,SPAN_NOTICE("You [active ? "deactivate" : "activate"] [src]."))
 	active = !active
 	if(active)
 		GLOB.active_jammers |= src

@@ -149,7 +149,7 @@
 		to_chat(user, SPAN_WARNING("[src] is currently occupied!"))
 		return
 	if(state_open)
-		to_chat(user, "<span class='warning'>[src] must be closed to [panel_open ? "close" : "open"] its maintenance hatch!</span>")
+		to_chat(user, SPAN_WARNING("[src] must be closed to [panel_open ? "close" : "open"] its maintenance hatch!"))
 		return
 	if(default_deconstruction_screwdriver(user, "[initial(icon_state)]-o", initial(icon_state), I))
 		return

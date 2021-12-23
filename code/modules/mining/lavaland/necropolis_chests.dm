@@ -284,7 +284,7 @@
 	if(itemUser.has_status_effect(STATUS_EFFECT_HIPPOCRATIC_OATH))
 		to_chat(user, SPAN_WARNING("You can't possibly handle the responsibility of more than one rod!"))
 		return
-	var/failText = "<span class='warning'>The snake seems unsatisfied with your incomplete oath and returns to it's previous place on the rod, returning to its dormant, wooden state. You must stand still while completing your oath!</span>"
+	var/failText = SPAN_WARNING("The snake seems unsatisfied with your incomplete oath and returns to it's previous place on the rod, returning to its dormant, wooden state. You must stand still while completing your oath!")
 	to_chat(itemUser, SPAN_NOTICE("The wooden snake that was carved into the rod seems to suddenly come alive and begins to slither down your arm! The compulsion to help others grows abnormally strong..."))
 	if(do_after(itemUser, 40, target = itemUser))
 		itemUser.say("I swear to fulfill, to the best of my ability and judgment, this covenant:", forced = "hippocratic oath")
@@ -1309,12 +1309,12 @@
 /obj/item/hierophant_club/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_unfriendly_fire)) //toggle friendly fire...
 		friendly_fire_check = !friendly_fire_check
-		to_chat(user, "<span class='warning'>You toggle friendly fire [friendly_fire_check ? "off":"on"]!</span>")
+		to_chat(user, SPAN_WARNING("You toggle friendly fire [friendly_fire_check ? "off":"on"]!"))
 		return
 	if(timer > world.time)
 		return
 	if(!user.is_holding(src)) //you need to hold the staff to teleport
-		to_chat(user, "<span class='warning'>You need to hold the club in your hands to [beacon ? "teleport with it":"detach the beacon"]!</span>")
+		to_chat(user, SPAN_WARNING("You need to hold the club in your hands to [beacon ? "teleport with it":"detach the beacon"]!"))
 		return
 	if(!beacon || QDELETED(beacon))
 		if(isturf(user.loc))

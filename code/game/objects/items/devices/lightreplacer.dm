@@ -146,7 +146,7 @@
 			to_chat(user, SPAN_WARNING("\The [src] is full!"))
 			return
 
-		to_chat(user, "<span class='notice'>You fill \the [src] with lights from \the [S]. " + status_string() + "</span>")
+		to_chat(user, SPAN_NOTICE("You fill \the [src] with lights from \the [S]. " + status_string() + ""))
 
 /obj/item/lightreplacer/emag_act()
 	. = ..()

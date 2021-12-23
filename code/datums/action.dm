@@ -447,7 +447,7 @@
 			owner.research_scanner++
 		else
 			owner.research_scanner--
-		to_chat(owner, "<span class='notice'>[target] research scanner has been [active ? "activated" : "deactivated"].</span>")
+		to_chat(owner, SPAN_NOTICE("[target] research scanner has been [active ? "activated" : "deactivated"]."))
 		return 1
 
 /datum/action/item_action/toggle_research_scanner/Remove(mob/M)
@@ -608,7 +608,7 @@
 			apc.update_icon()
 	H.stealthcooldown = world.time + 15 SECONDS
 	H.toggle_eyes()
-	to_chat(owner,"<span class='notice'>You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"].</span>")
+	to_chat(owner,SPAN_NOTICE("You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"]."))
 
 /datum/action/item_action/flash
 	name = "Flash"

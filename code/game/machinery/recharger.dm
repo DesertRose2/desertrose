@@ -66,7 +66,7 @@
 			return
 		setAnchored(!anchored)
 		power_change()
-		to_chat(user, "<span class='notice'>You [anchored ? "attached" : "detached"] [src].</span>")
+		to_chat(user, SPAN_NOTICE("You [anchored ? "attached" : "detached"] [src]."))
 		G.play_tool_sound(src)
 		return
 

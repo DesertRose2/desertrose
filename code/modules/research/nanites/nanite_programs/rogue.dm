@@ -97,7 +97,7 @@
 		var/can_scratch = !host_mob.incapacitated() && get_location_accessible(host_mob, picked_bodypart)
 
 		host_mob.visible_message("[can_scratch ? SPAN_WARNING("[host_mob] scratches [host_mob.p_their()] [bodypart.name].") : ""]",\
-		"<span class='warning'>Your [bodypart.name] itches. [can_scratch ? " You scratch it." : ""]</span>")
+		SPAN_WARNING("Your [bodypart.name] itches. [can_scratch ? " You scratch it." : ""]"))
 
 //Generic nerve-affecting programs will decay into this
 /datum/nanite_program/nerve_decay

@@ -8,9 +8,9 @@
 
 /obj/structure/dresser/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wrench))
-		to_chat(user, "<span class='notice'>You begin to [anchored ? "unwrench" : "wrench"] [src].</span>")
+		to_chat(user, SPAN_NOTICE("You begin to [anchored ? "unwrench" : "wrench"] [src]."))
 		if(I.use_tool(src, user, 20, volume=50))
-			to_chat(user, "<span class='notice'>You successfully [anchored ? "unwrench" : "wrench"] [src].</span>")
+			to_chat(user, SPAN_NOTICE("You successfully [anchored ? "unwrench" : "wrench"] [src]."))
 			setAnchored(!anchored)
 	else
 		return ..()

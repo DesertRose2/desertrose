@@ -248,7 +248,7 @@
 				return
 			I.play_tool_sound(src)
 			panel_open = !panel_open
-			to_chat(user, "<span class='notice'>You [panel_open ? "open":"close"] the maintenance panel of the [src.name].</span>")
+			to_chat(user, SPAN_NOTICE("You [panel_open ? "open":"close"] the maintenance panel of the [src.name]."))
 			return
 
 		if(istype(I, /obj/item/crowbar))

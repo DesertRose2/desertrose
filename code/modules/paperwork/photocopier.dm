@@ -93,7 +93,7 @@
 				return FALSE
 			if(paper_copy)
 				if(!length(paper_copy.info))
-					to_chat(usr, "<span class='warning'>An error message flashes across [src]'s screen: \"The supplied paper is blank. Aborting.\"</span>")
+					to_chat(usr, SPAN_WARNING("An error message flashes across [src]'s screen: \"The supplied paper is blank. Aborting.\""))
 					return FALSE
 				// Basic paper
 				if(istype(paper_copy, /obj/item/paper))
@@ -290,7 +290,7 @@
 	if(ishuman(ass)) //(ass.get_item_by_slot(ITEM_SLOT_ICLOTHING) || ass.get_item_by_slot(ITEM_SLOT_OCLOTHING)))
 		var/mob/living/carbon/C = ass //have to typecast to this, is_groin_exposed is carbon level
 		if(C.is_groin_exposed())
-			to_chat(usr, "<span class='notice'>You feel kind of silly, copying [ass == usr ? "your" : ass][ass == usr ? "" : "\'s"] ass with [ass == usr ? "your" : "[ass.p_their()]"] clothes on.</span>" )
+			to_chat(usr, SPAN_NOTICE("You feel kind of silly, copying [ass == usr ? "your" : ass][ass == usr ? "" : "\'s"] ass with [ass == usr ? "your" : "[ass.p_their()]"] clothes on.") )
 			return
 
 	var/icon/temp_img
@@ -337,7 +337,7 @@
 		user.put_in_hands(object)
 	else
 		object.forceMove(drop_location())
-	to_chat(user, "<span class='notice'>You take [object] out of [src]. [busy ? "The [src] comes to a halt." : ""]</span>")
+	to_chat(user, SPAN_NOTICE("You take [object] out of [src]. [busy ? "The [src] comes to a halt." : ""]"))
 
 /obj/machinery/photocopier/attackby(obj/item/O, mob/user, params)
 	if(default_unfasten_wrench(user, O))

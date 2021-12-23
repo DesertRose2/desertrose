@@ -111,7 +111,7 @@
 	. = ..()
 	var/locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
 	if(!locked)
-		. += "<span class='notice'>Alt-click to [open ? "close":"open"] it.</span>"
+		. += SPAN_NOTICE("Alt-click to [open ? "close":"open"] it.")
 
 /obj/item/storage/lockbox/medal/AltClick(mob/user)
 	. = ..()
@@ -235,5 +235,5 @@
 
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_SET_LOCKSTATE, !privacy_lock)
 	privacy_lock = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
-	user.visible_message("<span class='notice'>[user] [privacy_lock ? "" : "un"]locks [src]'s privacy lock.</span>",
-					"<span class='notice'>You [privacy_lock ? "" : "un"]lock [src]'s privacy lock.</span>")
+	user.visible_message(SPAN_NOTICE("[user] [privacy_lock ? "" : "un"]locks [src]'s privacy lock."),
+					SPAN_NOTICE("You [privacy_lock ? "" : "un"]lock [src]'s privacy lock."))

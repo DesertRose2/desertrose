@@ -97,7 +97,7 @@
 				playsound(src, 'sound/items/crowbar.ogg', 50, TRUE)
 				if(EA.try_remove_component(IC, user, TRUE))
 					mats.user_insert(IC, user)
-			to_chat(user, "<span class='notice'>You recycle all the components[EA.assembly_components.len ? " you could " : " "]from [EA]!</span>")
+			to_chat(user, SPAN_NOTICE("You recycle all the components[EA.assembly_components.len ? " you could " : " "]from [EA]!"))
 			playsound(src, 'sound/items/electronic_assembly_empty.ogg', 50, TRUE)
 			recycling = FALSE
 			return TRUE
@@ -247,7 +247,7 @@
 					return
 				else if(islist(validation))
 					program = validation
-					to_chat(usr, "<span class='notice'>This is a valid program for [program["assembly"]["type"]].</span>")
+					to_chat(usr, SPAN_NOTICE("This is a valid program for [program["assembly"]["type"]]."))
 					if(program["requires_upgrades"])
 						if(upgraded)
 							to_chat(usr, SPAN_NOTICE("It uses advanced component designs."))
@@ -255,9 +255,9 @@
 							to_chat(usr, SPAN_WARNING("It uses unknown component designs. Printer upgrade is required to proceed."))
 					if(program["unsupported_circuit"])
 						to_chat(usr, SPAN_WARNING("This program uses components not supported by the specified assembly. Please change the assembly type in the save file to a supported one."))
-					to_chat(usr, "<span class='notice'>Used space: [program["used_space"]]/[program["max_space"]].</span>")
-					to_chat(usr, "<span class='notice'>Complexity: [program["complexity"]]/[program["max_complexity"]].</span>")
-					to_chat(usr, "<span class='notice'>Metal cost: [program["metal_cost"]].</span>")
+					to_chat(usr, SPAN_NOTICE("Used space: [program["used_space"]]/[program["max_space"]]."))
+					to_chat(usr, SPAN_NOTICE("Complexity: [program["complexity"]]/[program["max_complexity"]]."))
+					to_chat(usr, SPAN_NOTICE("Metal cost: [program["metal_cost"]]."))
 
 			if("print")
 				if(!program || cloning)
@@ -275,11 +275,11 @@
 						cloning = TRUE
 						print_program(usr)
 					else
-						to_chat(usr, "<span class='warning'>You need [program["metal_cost"]] metal to build that!</span>")
+						to_chat(usr, SPAN_WARNING("You need [program["metal_cost"]] metal to build that!"))
 				else
 					var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 					if(!materials.use_amount_mat(program["metal_cost"], /datum/material/iron))
-						to_chat(usr, "<span class='warning'>You need [program["metal_cost"]] metal to build that!</span>")
+						to_chat(usr, SPAN_WARNING("You need [program["metal_cost"]] metal to build that!"))
 						return
 					var/cloning_time = round(program["metal_cost"] / 15)
 					cloning_time = min(cloning_time, MAX_CIRCUIT_CLONE_TIME)

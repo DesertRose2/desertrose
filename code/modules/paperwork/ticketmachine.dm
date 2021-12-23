@@ -140,7 +140,7 @@
 	..()
 	if(istype(I, /obj/item/hand_labeler_refill))
 		if(!(ticket_number >= max_number))
-			to_chat(user, "<span class='notice'>[src] refuses [I]! There [max_number-ticket_number==1 ? "is" : "are"] still [max_number-ticket_number] ticket\s left!</span>")
+			to_chat(user, SPAN_NOTICE("[src] refuses [I]! There [max_number-ticket_number==1 ? "is" : "are"] still [max_number-ticket_number] ticket\s left!"))
 			return
 		to_chat(user, SPAN_NOTICE("You start to refill [src]'s ticket holder (doing this will reset its ticket count!)."))
 		if(do_after(user, 30, target = src))

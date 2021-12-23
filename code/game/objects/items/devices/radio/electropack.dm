@@ -289,7 +289,7 @@
 		return ..()
 	var/obj/item/electropack/shockcollar/shockCollar = M.get_item_by_slot(SLOT_NECK)
 	shockCollar.lock = !shockCollar.lock
-	visible_message("<span class='warning'>[shockCollar] [shockCollar.lock ? "locks" : "unlocks"] around [M]'s neck.</span>")
+	visible_message(SPAN_WARNING("[shockCollar] [shockCollar.lock ? "locks" : "unlocks"] around [M]'s neck."))
 	if(shockCollar.lock)
 		ADD_TRAIT(shockCollar, TRAIT_NODROP, TRAIT_GENERIC)
 		return

@@ -5,7 +5,7 @@
 	panel = "Mime"
 	summon_type = list(/obj/effect/forcefield/mime)
 	invocation_type = "emote"
-	invocation_emote_self = "<span class='notice'>You form a wall in front of yourself.</span>"
+	invocation_emote_self = SPAN_NOTICE("You form a wall in front of yourself.")
 	summon_lifespan = 300
 	charge_max = 300
 	clothes_req = NONE
@@ -45,9 +45,9 @@
 
 /obj/effect/proc_holder/spell/targeted/mime/speak/Trigger(mob/user, skip_can_cast = TRUE)
 	if(user.mind?.miming)
-		still_recharging_msg = "<span class='warning'>You can't break your vow of silence that fast!</span>"
+		still_recharging_msg = SPAN_WARNING("You can't break your vow of silence that fast!")
 	else
-		still_recharging_msg = "<span class='warning'>You'll have to wait before you can give your vow of silence again!</span>"
+		still_recharging_msg = SPAN_WARNING("You'll have to wait before you can give your vow of silence again!")
 	return ..()
 
 /obj/effect/proc_holder/spell/targeted/mime/speak/cast(list/targets,mob/user = usr)
@@ -69,7 +69,7 @@
 	panel = "Mime"
 	wall_type = /obj/effect/forcefield/mime/advanced
 	invocation_type = "emote"
-	invocation_emote_self = "<span class='notice'>You form a blockade in front of yourself.</span>"
+	invocation_emote_self = SPAN_NOTICE("You form a blockade in front of yourself.")
 	charge_max = 600
 	sound =  null
 	clothes_req = NONE
@@ -132,7 +132,7 @@
 	school = "mime"
 	panel = "Mime"
 	invocation_type = "emote"
-	invocation_emote_self = "<span class='notice'>You start fabricate an invisible rope.</span>"
+	invocation_emote_self = SPAN_NOTICE("You start fabricate an invisible rope.")
 	charge_max = 700
 	sound =  null
 	clothes_req = 0

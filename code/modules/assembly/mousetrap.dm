@@ -10,7 +10,7 @@
 
 /obj/item/assembly/mousetrap/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The pressure plate is [armed?"primed":"safe"].</span>"
+	. += SPAN_NOTICE("The pressure plate is [armed?"primed":"safe"].")
 
 /obj/item/assembly/mousetrap/activate()
 	if(..())

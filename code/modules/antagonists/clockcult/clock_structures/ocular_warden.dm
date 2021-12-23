@@ -8,7 +8,7 @@
 	max_integrity = 25
 	construction_value = 15
 	layer = WALL_OBJ_LAYER
-	break_message = "<span class='warning'>The warden's eye gives a glare of utter hate before falling dark!</span>"
+	break_message = SPAN_WARNING("The warden's eye gives a glare of utter hate before falling dark!")
 	debris = list(/obj/item/clockwork/component/belligerent_eye/blind_eye = 1)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	var/damage_per_tick = 3

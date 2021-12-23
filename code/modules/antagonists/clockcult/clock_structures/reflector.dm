@@ -7,7 +7,7 @@
 	max_integrity = 40
 	construction_value = 5
 	layer = WALL_OBJ_LAYER
-	break_message = "<span class='warning'>The reflectors's fragile shield shatters into pieces!</span>"
+	break_message = SPAN_WARNING("The reflectors's fragile shield shatters into pieces!")
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	light_color = "#DAAA18"
 	var/list/allowed_projectile_typecache = list(
@@ -81,6 +81,6 @@
 		return ..()
 
 	anchored = !anchored
-	to_chat(user, "<span class='notice'>You [anchored ? "secure" : "unsecure"] \the [src].</span>")
+	to_chat(user, SPAN_NOTICE("You [anchored ? "secure" : "unsecure"] \the [src]."))
 	I.play_tool_sound(src)
 	return TRUE

@@ -114,7 +114,7 @@
 	for(var/obj/item/I in contents)
 		I.forceMove(bin)
 		use_power(active_power_usage)
-	visible_message("<span class='notice'>[src] [pick("whooshes", "bwooms", "fwooms", "pshooms")] and beams its stored dishes into the nearby [bin.name].</span>")
+	visible_message(SPAN_NOTICE("[src] [pick("whooshes", "bwooms", "fwooms", "pshooms")] and beams its stored dishes into the nearby [bin.name]."))
 	playsound(src, 'sound/items/pshoom.ogg', 50, TRUE)
 	playsound(bin, 'sound/items/pshoom.ogg', 50, TRUE)
 	Beam(bin, icon_state = "rped_upgrade", time = 5)

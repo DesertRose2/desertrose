@@ -14,7 +14,7 @@
 	if(CHECK_BITFIELD(clothing_flags, VOICEBOX_TOGGLABLE))
 		TOGGLE_BITFIELD(clothing_flags, VOICEBOX_DISABLED)
 		var/status = !CHECK_BITFIELD(clothing_flags, VOICEBOX_DISABLED)
-		to_chat(user, "<span class='notice'>You turn the voice box in [src] [status ? "on" : "off"].</span>")
+		to_chat(user, SPAN_NOTICE("You turn the voice box in [src] [status ? "on" : "off"]."))
 
 /obj/item/clothing/mask/equipped(mob/M, slot)
 	. = ..()

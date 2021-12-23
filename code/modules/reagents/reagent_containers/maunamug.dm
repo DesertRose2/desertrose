@@ -69,7 +69,7 @@
 /obj/item/reagent_containers/glass/maunamug/screwdriver_act(mob/living/user, obj/item/I)
 	. = ..()
 	open = !open
-	to_chat(user, "<span class='notice'>You screw the battery case on [src] [open ? "open" : "closed"] .</span>")
+	to_chat(user, SPAN_NOTICE("You screw the battery case on [src] [open ? "open" : "closed"] ."))
 	update_icon()
 
 /obj/item/reagent_containers/glass/maunamug/attackby(obj/item/I, mob/user, params)

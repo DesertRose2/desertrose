@@ -205,7 +205,7 @@
 	m180.Turn(180)//-90)//180
 	animate(buckled_mob, transform = m180, time = 2)
 	buckled_mob.pixel_y = buckled_mob.get_standard_pixel_y_offset(180)
-	src.visible_message(text("<span class='danger'>[buckled_mob][buckled_mob.stat==DEAD?"'s corpse":""] slides off of the rack.</span>"))
+	src.visible_message(SPAN_DANGER("[buckled_mob][buckled_mob.stat==DEAD?"'s corpse":""] slides off of the rack."))
 	density = FALSE
 	buckled_mob.DefaultCombatKnockdown(30)
 	update_icon()

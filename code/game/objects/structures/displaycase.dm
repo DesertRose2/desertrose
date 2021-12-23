@@ -104,7 +104,7 @@
 /obj/structure/displaycase/attackby(obj/item/W, mob/user, params)
 	if(W.GetID() && !broken && openable)
 		if(allowed(user))
-			to_chat(user,  "<span class='notice'>You [open ? "close":"open"] [src].</span>")
+			to_chat(user,  SPAN_NOTICE("You [open ? "close":"open"] [src]."))
 			toggle_lock(user)
 		else
 			to_chat(user,  SPAN_WARNING("Access denied."))
@@ -129,9 +129,9 @@
 				to_chat(user, SPAN_NOTICE("You remove the destroyed case."))
 				qdel(src)
 		else
-			to_chat(user, "<span class='notice'>You start to [open ? "close":"open"] [src].</span>")
+			to_chat(user, SPAN_NOTICE("You start to [open ? "close":"open"] [src]."))
 			if(W.use_tool(src, user, 20))
-				to_chat(user,  "<span class='notice'>You [open ? "close":"open"] [src].</span>")
+				to_chat(user,  SPAN_NOTICE("You [open ? "close":"open"] [src]."))
 				toggle_lock(user)
 	else if(open && !showpiece)
 		if(user.transferItemToLoc(W, src))

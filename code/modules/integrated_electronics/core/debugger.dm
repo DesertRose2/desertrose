@@ -24,7 +24,7 @@
 			new_data = stripped_input(user, "Now type in a string.","[src] string writing", no_trim = TRUE)
 			if(istext(new_data) && user.IsAdvancedToolUser())
 				data_to_write = new_data
-				to_chat(user, "<span class='notice'>You set \the [src]'s memory to \"[new_data]\".</span>")
+				to_chat(user, SPAN_NOTICE("You set \the [src]'s memory to \"[new_data]\"."))
 		if("number")
 			accepting_refs = FALSE
 			copy_values = FALSE
@@ -74,7 +74,7 @@
 			var/datum/weakref/w = data_to_write
 			var/atom/A = w.resolve()
 			data_to_show = A.name
-		to_chat(user, "<span class='notice'>You write '[data_to_write ? data_to_show : "NULL"]' to the '[io]' pin of \the [io.holder].</span>")
+		to_chat(user, SPAN_NOTICE("You write '[data_to_write ? data_to_show : "NULL"]' to the '[io]' pin of \the [io.holder]."))
 
 	//If the pin can only be pulsed
 	else if(io.io_type == PULSE_CHANNEL)

@@ -33,11 +33,11 @@
 		if(INTENT_HELP)
 			visible_message(SPAN_NOTICE("[user] gently pats [src] on the head, eliciting an off-putting buzzing from its holographic field."),
 				SPAN_NOTICE("[user] gently pats you on the head, eliciting an off-putting buzzing from your holographic field."), target = user,
-				target_message = "<span class='notice'>You gently pat [src] on the head, eliciting an off-putting buzzing from its holographic field.</span>")
+				target_message = SPAN_NOTICE("You gently pat [src] on the head, eliciting an off-putting buzzing from its holographic field."))
 		if(INTENT_DISARM)
 			visible_message(SPAN_NOTICE("[user] boops [src] on the head!"),
 				SPAN_NOTICE("[user] boops you on the head!"), target = user,
-				target_message = "<span class='notice'>You boop [src] on the head!</span>")
+				target_message = SPAN_NOTICE("You boop [src] on the head!"))
 		if(INTENT_HARM)
 			user.do_attack_animation(src)
 			if (user.name == master)
@@ -52,7 +52,7 @@
 					return
 				visible_message(SPAN_DANGER("[user] stomps on [src]!."),
 					"<span class='userdanger'>[user] stomps on you!.</span>", target = user,
-					target_message = "<span class='danger'>You stomp on [src]!.</span>")
+					target_message = SPAN_DANGER("You stomp on [src]!."))
 				take_holo_damage(2)
 		else
 			grabbedby(user)

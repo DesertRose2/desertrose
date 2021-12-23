@@ -192,7 +192,7 @@
 	if (user == resident)
 		if (!broken)
 			locked = inLocked
-			to_chat(user, "<span class='notice'>You flip a secret latch and [locked?"":"un"]lock yourself inside [src].</span>")
+			to_chat(user, SPAN_NOTICE("You flip a secret latch and [locked?"":"un"]lock yourself inside [src]."))
 		else
 			to_chat(resident, SPAN_NOTICE("The secret latch to lock [src] from the inside is broken. You set it back into place..."))
 			if (do_mob(resident, src, 50))//sleep(10)

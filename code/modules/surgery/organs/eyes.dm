@@ -18,7 +18,7 @@
 
 	low_threshold_passed = "<span class='info'>Distant objects become somewhat less tangible.</span>"
 	high_threshold_passed = "<span class='info'>Everything starts to look a lot less clear.</span>"
-	now_failing = "<span class='warning'>Darkness envelopes you, as your eyes go blind!</span>"
+	now_failing = SPAN_WARNING("Darkness envelopes you, as your eyes go blind!")
 	now_fixed = "<span class='info'>Color and shapes are once again perceivable.</span>"
 	high_threshold_cleared = "<span class='info'>Your vision functions passably once more.</span>"
 	low_threshold_cleared = "<span class='info'>Your vision is cleared of any ailment.</span>"

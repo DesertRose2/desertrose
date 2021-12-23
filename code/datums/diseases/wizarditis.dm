@@ -31,7 +31,7 @@ STI KALY - blind
 			if(prob(1)&&prob(50))
 				affected_mob.say(pick("You shall not pass!", "Expeliarmus!", "By Merlins beard!", "Feel the power of the Dark Side!"), forced = "wizarditis")
 			if(prob(1)&&prob(50))
-				to_chat(affected_mob, "<span class='danger'>You feel [pick("that you don't have enough mana", "that the winds of magic are gone", "an urge to summon familiar")].</span>")
+				to_chat(affected_mob, SPAN_DANGER("You feel [pick("that you don't have enough mana", "that the winds of magic are gone", "an urge to summon familiar")]."))
 
 
 		if(3)

@@ -338,7 +338,7 @@
 		return
 	// Haven't eaten, but I'm in a Human Disguise.
 	else if(poweron_masquerade && !masquerade_override)
-		to_chat(C, "<span class='notice'>Your stomach turns, but your \"human disguise\" keeps the food down...for now.</span>")
+		to_chat(C, SPAN_NOTICE("Your stomach turns, but your \"human disguise\" keeps the food down...for now."))
 	// Keep looping until we purge. If we have activated our Human Disguise, we ignore the food. But it'll come up eventually...
 	var/sickphase = 0
 	while(foodInGut)

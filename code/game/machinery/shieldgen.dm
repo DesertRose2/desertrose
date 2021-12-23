@@ -184,7 +184,7 @@
 	else if(W.GetID())
 		if(allowed(user) && !(obj_flags & EMAGGED))
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [locked ? "lock" : "unlock"] the controls.</span>")
+			to_chat(user, SPAN_NOTICE("You [locked ? "lock" : "unlock"] the controls."))
 		else if(obj_flags & EMAGGED)
 			to_chat(user, SPAN_DANGER("Error, access controller damaged!"))
 		else
@@ -349,7 +349,7 @@
 	else if(W.GetID())
 		if(allowed(user) && !(obj_flags & EMAGGED))
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [src.locked ? "lock" : "unlock"] the controls.</span>")
+			to_chat(user, SPAN_NOTICE("You [src.locked ? "lock" : "unlock"] the controls."))
 		else if(obj_flags & EMAGGED)
 			to_chat(user, SPAN_DANGER("Error, access controller damaged!"))
 		else

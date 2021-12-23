@@ -231,8 +231,8 @@
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "vial"
 
-	var/shatter_msg = "<span class='notice'>You shatter the bottle, no turning back now!</span>"
-	var/veil_msg = "<span class='warning'>You sense a dark presence lurking just beyond the veil...</span>"
+	var/shatter_msg = SPAN_NOTICE("You shatter the bottle, no turning back now!")
+	var/veil_msg = SPAN_WARNING("You sense a dark presence lurking just beyond the veil...")
 	var/mob/living/demon_type = /mob/living/simple_animal/slaughter
 	var/antag_type = /datum/antagonist/slaughter
 
@@ -277,6 +277,6 @@
 	icon_state = "vial"
 	color = "#FF69B4" // HOT PINK
 
-	veil_msg = "<span class='warning'>You sense an adorable presence lurking just beyond the veil...</span>"
+	veil_msg = SPAN_WARNING("You sense an adorable presence lurking just beyond the veil...")
 	demon_type = /mob/living/simple_animal/slaughter/laughter
 	antag_type = /datum/antagonist/slaughter/laughter

@@ -54,8 +54,8 @@
 		if(user.a_intent == INTENT_HELP)
 			var/body_part = parse_zone(user.zone_selected)
 
-			var/heart_strength = "<span class='danger'>no</span>"
-			var/lung_strength = "<span class='danger'>no</span>"
+			var/heart_strength = SPAN_DANGER("no")
+			var/lung_strength = SPAN_DANGER("no")
 
 			var/obj/item/organ/heart/heart = M.getorganslot(ORGAN_SLOT_HEART)
 			var/obj/item/organ/lungs/lungs = M.getorganslot(ORGAN_SLOT_LUNGS)
@@ -64,11 +64,11 @@
 				return // FAIL
 			if(!(M.stat == DEAD || (HAS_TRAIT(M, TRAIT_FAKEDEATH)) || (HAS_TRAIT(M, TRAIT_NOPULSE))))
 				if(heart && istype(heart))
-					heart_strength = "<span class='danger'>an unstable</span>"
+					heart_strength = SPAN_DANGER("an unstable")
 					if(heart.beating)
 						heart_strength = "a healthy"
 				if(lungs && istype(lungs))
-					lung_strength = "<span class='danger'>strained</span>"
+					lung_strength = SPAN_DANGER("strained")
 					if(!(M.failed_last_breath || M.losebreath))
 						lung_strength = "healthy"
 
@@ -266,7 +266,7 @@
 /obj/item/clothing/neck/necklace/dope/merchant/attack_self(mob/user)
 	. = ..()
 	selling = !selling
-	to_chat(user, "<span class='notice'>[src] has been set to [selling ? "'Sell'" : "'Get Price'"] mode.</span>")
+	to_chat(user, SPAN_NOTICE("[src] has been set to [selling ? "'Sell'" : "'Get Price'"] mode."))
 
 /obj/item/clothing/neck/necklace/dope/merchant/afterattack(obj/item/I, mob/user, proximity)
 	. = ..()

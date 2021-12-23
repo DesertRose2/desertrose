@@ -33,7 +33,7 @@ RLD
 	var/plasteelmultiplier = 3 //Plasteel is worth 3 times more than glass or metal
 	var/plasmarglassmultiplier = 2 //50% less plasma than in plasteel
 	var/rglassmultiplier = 1.5 //One metal sheet, half a glass sheet
-	var/no_ammo_message = "<span class='warning'>The \'Low Ammo\' light on the device blinks yellow.</span>"
+	var/no_ammo_message = SPAN_WARNING("The \'Low Ammo\' light on the device blinks yellow.")
 	var/has_ammobar = FALSE	//controls whether or not does update_icon apply ammo indicator overlays
 	var/ammo_sections = 10	//amount of divisions in the ammo indicator overlay/number of ammo indicator states
 	var/custom_range = 7
@@ -566,7 +566,7 @@ RLD
 	update_icon()
 
 /obj/item/construction/rcd/borg
-	no_ammo_message = "<span class='warning'>Insufficient charge.</span>"
+	no_ammo_message = SPAN_WARNING("Insufficient charge.")
 	desc = "A device used to rapidly build walls and floors."
 	canRturf = TRUE
 	upgrade = TRUE

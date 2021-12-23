@@ -345,7 +345,7 @@
 	if(isspaceturf(target_turf)) //If we are fixing an area not part of pure space, it is
 		anchored = TRUE
 		icon_state = "floorbot-c"
-		visible_message("<span class='notice'>[targetdirection ? "[src] begins installing a bridge plating." : "[src] begins to repair the hole."] </span>")
+		visible_message(SPAN_NOTICE("[targetdirection ? "[src] begins installing a bridge plating." : "[src] begins to repair the hole."] "))
 		mode = BOT_REPAIRING
 		sleep(50)
 		if(mode == BOT_REPAIRING && src.loc == target_turf)

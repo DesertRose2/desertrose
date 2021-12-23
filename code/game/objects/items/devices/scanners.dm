@@ -660,7 +660,7 @@ GENETICS SCANNER
 
 		if(ongoing_weather)
 			if((ongoing_weather.stage == MAIN_STAGE) || (ongoing_weather.stage == WIND_DOWN_STAGE))
-				to_chat(user, "<span class='warning'>[src]'s barometer function can't trace anything while the storm is [ongoing_weather.stage == MAIN_STAGE ? "already here!" : "winding down."]</span>")
+				to_chat(user, SPAN_WARNING("[src]'s barometer function can't trace anything while the storm is [ongoing_weather.stage == MAIN_STAGE ? "already here!" : "winding down."]"))
 				return
 
 			to_chat(user, SPAN_NOTICE("The next [ongoing_weather] will hit in [butchertime(ongoing_weather.next_hit_time - world.time)]."))
@@ -832,7 +832,7 @@ GENETICS SCANNER
 /proc/slime_scan(mob/living/simple_animal/slime/T, mob/living/user)
 	to_chat(user, "========================")
 	to_chat(user, "<b>Slime scan results:</b>")
-	to_chat(user, "<span class='notice'>[T.colour] [T.is_adult ? "adult" : "baby"] slime</span>")
+	to_chat(user, SPAN_NOTICE("[T.colour] [T.is_adult ? "adult" : "baby"] slime"))
 	to_chat(user, "Nutrition: [T.nutrition]/[T.get_max_nutrition()]")
 	if (T.nutrition < T.get_starve_nutrition())
 		to_chat(user, SPAN_WARNING("Warning: slime is starving!"))

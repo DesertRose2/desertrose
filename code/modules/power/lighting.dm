@@ -578,7 +578,7 @@
 
 /obj/machinery/light/attack_ai(mob/user)
 	no_emergency = !no_emergency
-	to_chat(user, "<span class='notice'>Emergency lights for this fixture have been [no_emergency ? "disabled" : "enabled"].</span>")
+	to_chat(user, SPAN_NOTICE("Emergency lights for this fixture have been [no_emergency ? "disabled" : "enabled"]."))
 	update(FALSE)
 	return
 

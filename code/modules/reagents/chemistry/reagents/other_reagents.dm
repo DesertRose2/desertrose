@@ -400,7 +400,7 @@
 					to_chat(M, "<span class='boldwarning'>[pick("Ratvar's illumination of your mind has begun to flicker", "He lies rusting in Reebe, derelict and forgotten. And there he shall stay", \
 					"You can't save him. Nothing can save him now", "It seems that Nar'Sie will triumph after all")].</span>")
 				if("emote")
-					M.visible_message("<span class='warning'>[M] [pick("whimpers quietly", "shivers as though cold", "glances around in paranoia")].</span>")
+					M.visible_message(SPAN_WARNING("[M] [pick("whimpers quietly", "shivers as though cold", "glances around in paranoia")]."))
 	if(data["misc"] >= 60)	// 30 units, 135 seconds
 		if(iscultist(M, FALSE, TRUE) || is_servant_of_ratvar(M, FALSE, TRUE))
 			if(iscultist(M))

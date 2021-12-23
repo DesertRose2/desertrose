@@ -33,7 +33,7 @@
 
 /obj/item/lipstick/attack_self(mob/user)
 	cut_overlays()
-	to_chat(user, "<span class='notice'>You twist \the [src] [open ? "closed" : "open"].</span>")
+	to_chat(user, SPAN_NOTICE("You twist \the [src] [open ? "closed" : "open"]."))
 	open = !open
 	if(open)
 		var/mutable_appearance/colored_overlay = mutable_appearance(icon, "lipstick_uncap_color")
@@ -53,7 +53,7 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(H.is_mouth_covered())
-			to_chat(user, "<span class='warning'>Remove [ H == user ? "your" : "[H.p_their()]" ] mask!</span>")
+			to_chat(user, SPAN_WARNING("Remove [ H == user ? "your" : "[H.p_their()]" ] mask!"))
 			return
 		if(H.lip_style)	//if they already have lipstick on
 			to_chat(user, SPAN_WARNING("You need to wipe off the old lipstick first!"))

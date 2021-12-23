@@ -289,7 +289,7 @@
 	// DONE!
 	//DeactivatePower(user,target)
 	if(amSilent)
-		to_chat(user, "<span class='notice'>You slowly release [target]'s wrist." + (target.stat == 0 ? " [target.p_their(TRUE)] face lacks expression, like you've already been forgotten.</span>" : ""))
+		to_chat(user, SPAN_NOTICE("You slowly release [target]'s wrist." + (target.stat == 0 ? " [target.p_their(TRUE)] face lacks expression, like you've already been forgotten." : "")))
 	else
 		user.visible_message(SPAN_WARNING("[user] unclenches their teeth from [target]'s neck."), \
 							SPAN_WARNING("You retract your fangs and release [target] from your bite."))

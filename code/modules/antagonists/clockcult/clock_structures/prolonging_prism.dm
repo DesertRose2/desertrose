@@ -9,7 +9,7 @@
 	unanchored_icon = "prolonging_prism_unwrenched"
 	construction_value = 20
 	max_integrity = 125
-	break_message = "<span class='warning'>The prism falls to the ground with a heavy thud!</span>"
+	break_message = SPAN_WARNING("The prism falls to the ground with a heavy thud!")
 	debris = list(/obj/item/clockwork/alloy_shards/small = 3, \
 	/obj/item/clockwork/alloy_shards/medium = 1, \
 	/obj/item/clockwork/alloy_shards/large = 1, \

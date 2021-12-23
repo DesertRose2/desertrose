@@ -354,7 +354,7 @@
 	if(user.incapacitated())
 		return
 	F.on = !F.on
-	to_chat(user, "<span class='notice'>You toggle the helmetlight [F.on ? "on":"off"].</span>")
+	to_chat(user, SPAN_NOTICE("You toggle the helmetlight [F.on ? "on":"off"]."))
 
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_helmlight(user)

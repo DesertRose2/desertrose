@@ -193,7 +193,7 @@
 			return FALSE
 		if(L.health >= L.maxHealth || (L.flags_1 & GODMODE))
 			if(!silent)
-				to_chat(user, "<span class='warning'>[L == user ? "You are" : "[L] is"] at maximum health!</span>")
+				to_chat(user, SPAN_WARNING("[L == user ? "You are" : "[L] is"] at maximum health!"))
 			return FALSE
 		repair_values["amount_to_heal"] = L.maxHealth - L.health
 	else if(isobj(target))

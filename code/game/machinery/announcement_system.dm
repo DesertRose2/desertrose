@@ -58,7 +58,7 @@ GLOBAL_LIST_EMPTY(announcement_systems)
 	if(P.tool_behaviour == TOOL_SCREWDRIVER)
 		P.play_tool_sound(src)
 		panel_open = !panel_open
-		to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
+		to_chat(user, SPAN_NOTICE("You [panel_open ? "open" : "close"] the maintenance hatch of [src]."))
 		update_icon()
 	else if(default_deconstruction_crowbar(P))
 		return

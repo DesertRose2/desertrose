@@ -124,7 +124,7 @@
 			take_bodypart_damage(10 + 5 * extra_speed, check_armor = TRUE, wound_bonus = extra_speed * 5)
 			victim.DefaultCombatKnockdown(20)
 			DefaultCombatKnockdown(20)
-			visible_message("<span class='danger'>[src] crashes into [victim] [extra_speed ? "really hard" : ""], knocking them both over!</span>",\
+			visible_message(SPAN_DANGER("[src] crashes into [victim] [extra_speed ? "really hard" : ""], knocking them both over!"),\
 				"<span class='userdanger'>You violently crash into [victim] [extra_speed ? "extra hard" : ""]!</span>")
 		playsound(src,'sound/weapons/punch1.ogg',50,1)
 
@@ -214,8 +214,8 @@
 			power_throw++
 		if(pulling && grab_state >= GRAB_NECK)
 			power_throw++
-		visible_message("<span class='danger'>[src] throws [thrown_thing][power_throw ? " really hard!" : "."]</span>", \
-						"<span class='danger'>You throw [thrown_thing][power_throw ? " really hard!" : "."]</span>")
+		visible_message(SPAN_DANGER("[src] throws [thrown_thing][power_throw ? " really hard!" : "."]"), \
+						SPAN_DANGER("You throw [thrown_thing][power_throw ? " really hard!" : "."]"))
 		log_message("has thrown [thrown_thing] [power_throw ? "really hard" : ""]", LOG_ATTACK)
 		do_attack_animation(target, no_effect = 1)
 		playsound(loc, 'sound/weapons/punchmiss.ogg', 50, 1, -1)
@@ -268,9 +268,9 @@
 			var/slot = text2num(href_list["internal"])
 			var/obj/item/ITEM = get_item_by_slot(slot)
 			if(ITEM && istype(ITEM, /obj/item/tank) && wear_mask && (wear_mask.clothing_flags & ALLOWINTERNALS))
-				visible_message("<span class='danger'>[usr] tries to [internal ? "close" : "open"] the valve on [src]'s [ITEM.name].</span>", \
+				visible_message(SPAN_DANGER("[usr] tries to [internal ? "close" : "open"] the valve on [src]'s [ITEM.name]."), \
 								"<span class='userdanger'>[usr] tries to [internal ? "close" : "open"] the valve on your [ITEM.name].</span>", \
-								target = usr, target_message = "<span class='danger'>You try to [internal ? "close" : "open"] the valve on [src]'s [ITEM.name].</span>")
+								target = usr, target_message = SPAN_DANGER("You try to [internal ? "close" : "open"] the valve on [src]'s [ITEM.name]."))
 				if(do_mob(usr, src, POCKET_STRIP_DELAY))
 					if(internal)
 						internal = null
@@ -280,9 +280,9 @@
 							internal = ITEM
 							update_internals_hud_icon(1)
 
-					visible_message("<span class='danger'>[usr] [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name].</span>", \
+					visible_message(SPAN_DANGER("[usr] [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name]."), \
 									"<span class='userdanger'>[usr] [internal ? "opens" : "closes"] the valve on your [ITEM.name].</span>", \
-									target = usr, target_message = "<span class='danger'>You [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name].</span>")
+									target = usr, target_message = SPAN_DANGER("You [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name]."))
 	if(href_list["embedded_object"] && usr.canUseTopic(src, BE_CLOSE))
 		var/obj/item/bodypart/L = locate(href_list["embedded_limb"]) in bodyparts
 		if(!L)
@@ -412,8 +412,8 @@
 /mob/living/carbon/proc/clear_cuffs(obj/item/I, cuff_break)
 	if(!I.loc || buckled)
 		return
-	visible_message("<span class='danger'>[src] manages to [cuff_break ? "break" : "remove"] [I]!</span>")
-	to_chat(src, "<span class='notice'>You successfully [cuff_break ? "break" : "remove"] [I].</span>")
+	visible_message(SPAN_DANGER("[src] manages to [cuff_break ? "break" : "remove"] [I]!"))
+	to_chat(src, SPAN_NOTICE("You successfully [cuff_break ? "break" : "remove"] [I]."))
 
 	if(cuff_break)
 		. = !((I == handcuffed) || (I == legcuffed))

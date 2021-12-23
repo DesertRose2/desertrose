@@ -41,7 +41,7 @@ GLOBAL_LIST_EMPTY(GPS_list)
 
 ///Called on COMSIG_PARENT_EXAMINE
 /datum/component/gps/item/proc/on_examine(datum/source, mob/user, list/examine_list)
-	examine_list += "<span class='notice'>Alt-click to switch it [tracking ? "off":"on"].</span>"
+	examine_list += SPAN_NOTICE("Alt-click to switch it [tracking ? "off":"on"].")
 
 ///Called on COMSIG_ATOM_EMP_ACT
 /datum/component/gps/item/proc/on_emp_act(datum/source, severity)

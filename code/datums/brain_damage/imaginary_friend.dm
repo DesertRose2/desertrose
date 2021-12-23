@@ -2,8 +2,8 @@
 	name = "Imaginary Friend"
 	desc = "Patient can see and hear an imaginary person."
 	scan_desc = "partial schizophrenia"
-	gain_text = "<span class='notice'>You feel in good company, for some reason.</span>"
-	lose_text = "<span class='warning'>You feel lonely again.</span>"
+	gain_text = SPAN_NOTICE("You feel in good company, for some reason.")
+	lose_text = SPAN_WARNING("You feel lonely again.")
 	random_gain = TRUE
 	var/mob/camera/imaginary_friend/friend
 	var/friend_initialized = FALSE

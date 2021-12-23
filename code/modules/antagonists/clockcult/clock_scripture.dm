@@ -54,7 +54,7 @@ Judgement 5 converts
 	var/successful = FALSE
 	if(can_recite() && has_requirements())
 		if(slab.busy)
-			to_chat(invoker, "<span class='warning'>[slab] refuses to work, displaying the message: \"[slab.busy]!\"</span>")
+			to_chat(invoker, SPAN_WARNING("[slab] refuses to work, displaying the message: \"[slab.busy]!\""))
 			return FALSE
 		pre_recital()
 		slab.busy = "Invocation ([name]) in progress"

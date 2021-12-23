@@ -234,7 +234,7 @@
 		if(1)
 			. += SPAN_NOTICE("It is missing wiring.")
 		if(2)
-			. += "<span class='notice'>Alt-click to [locked ? "unlock" : "lock"] the interface.</span>"
+			. += SPAN_NOTICE("Alt-click to [locked ? "unlock" : "lock"] the interface.")
 
 /obj/machinery/airalarm/ui_status(mob/user)
 	if(hasSiliconAccessInArea(user))
@@ -772,7 +772,7 @@
 			else if(istype(W, /obj/item/screwdriver))  // Opening that Air Alarm up.
 				W.play_tool_sound(src)
 				panel_open = !panel_open
-				to_chat(user, "<span class='notice'>The wires have been [panel_open ? "exposed" : "unexposed"].</span>")
+				to_chat(user, SPAN_NOTICE("The wires have been [panel_open ? "exposed" : "unexposed"]."))
 				update_icon()
 				return
 			else if(istype(W, /obj/item/card/id) || istype(W, /obj/item/pda))// trying to unlock the interface with an ID card
@@ -870,7 +870,7 @@
 		if(src.allowed(usr) && !wires.is_cut(WIRE_IDSCAN))
 			locked = !locked
 			updateUsrDialog()
-			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the air alarm interface.</span>")
+			to_chat(user, SPAN_NOTICE("You [ locked ? "lock" : "unlock"] the air alarm interface."))
 		else
 			to_chat(user, SPAN_DANGER("Access denied."))
 	return

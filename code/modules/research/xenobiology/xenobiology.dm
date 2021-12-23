@@ -68,7 +68,7 @@
 
 	M.applied++
 	qdel(src)
-	to_chat(user, "<span class='notice'>You feed the slime [src], [M.applied == 1 ? "starting to mutate its core." : "further mutating its core."]</span>")
+	to_chat(user, SPAN_NOTICE("You feed the slime [src], [M.applied == 1 ? "starting to mutate its core." : "further mutating its core."]"))
 	playsound(M, 'sound/effects/attackblob.ogg', 50, 1)
 
 	if(M.applied >= SLIME_EXTRACT_CROSSING_REQUIRED)

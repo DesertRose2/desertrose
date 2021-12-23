@@ -292,7 +292,7 @@ GLOBAL_LIST_EMPTY(custom_shuttle_machines)		//Machines that require updating (He
 		to_chat(usr, SPAN_WARNING("Shuttles must be created in an airtight space, ensure that the shuttle is airtight, including corners."))
 		return FALSE
 	if(turfs.len + (addingTurfs ? loggedTurfs.len : 0) > SHUTTLE_CREATOR_MAX_SIZE)
-		to_chat(usr, "<span class='warning'>The [src]'s internal cooling system wizzes violently and a message appears on the screen, \"Caution, this device can only handle the creation of shuttles up to [SHUTTLE_CREATOR_MAX_SIZE] units in size. Please reduce your shuttle by [turfs.len-SHUTTLE_CREATOR_MAX_SIZE]. Sorry for the inconvinience\"</span>")
+		to_chat(usr, SPAN_WARNING("The [src]'s internal cooling system wizzes violently and a message appears on the screen, \"Caution, this device can only handle the creation of shuttles up to [SHUTTLE_CREATOR_MAX_SIZE] units in size. Please reduce your shuttle by [turfs.len-SHUTTLE_CREATOR_MAX_SIZE]. Sorry for the inconvinience\""))
 		return FALSE
 	//Check to see if it's a valid shuttle
 	for(var/i in 1 to turfs.len)

@@ -244,18 +244,18 @@
 			if(!istype(head, /obj/item/clothing/head/helmet/space/hardsuit))
 				return
 			var/obj/item/clothing/head/helmet/space/hardsuit/hardsuit_head = head
-			visible_message("<span class='danger'>[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>", \
+			visible_message(SPAN_DANGER("[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet."), \
 								"<span class='userdanger'>[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>", \
-								target = usr, target_message = "<span class='danger'>You try to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>")
+								target = usr, target_message = SPAN_DANGER("You try to [hardsuit_head ? "retract" : "extend"] [src]'s helmet."))
 			if(!do_mob(usr, src, hardsuit_head ? head.strip_delay : POCKET_STRIP_DELAY))
 				return
 			if(!istype(wear_suit, /obj/item/clothing/suit/space/hardsuit) || (hardsuit_head ? (!head || head != hardsuit_head) : head))
 				return
 			var/obj/item/clothing/suit/space/hardsuit/hardsuit = wear_suit //This should be an hardsuit given all our checks
 			if(hardsuit.ToggleHelmet(FALSE))
-				visible_message("<span class='danger'>[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet</span>", \
+				visible_message(SPAN_DANGER("[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet"), \
 										"<span class='userdanger'>[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet</span>", \
-										target = usr, target_message = "<span class='danger'>You [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>")
+										target = usr, target_message = SPAN_DANGER("You [hardsuit_head ? "retract" : "extend"] [src]'s helmet."))
 			return
 		if(href_list["item"])
 			var/slot = text2num(href_list["item"])
@@ -936,14 +936,14 @@
 		if(success)
 			to_chat(usr, "Put [src] on purrbation.")
 			log_admin("[key_name(usr)] has put [key_name(src)] on purrbation.")
-			var/msg = "<span class='notice'>[key_name_admin(usr)] has put [key_name(src)] on purrbation.</span>"
+			var/msg = SPAN_NOTICE("[key_name_admin(usr)] has put [key_name(src)] on purrbation.")
 			message_admins(msg)
 			admin_ticket_log(src, msg)
 
 		else
 			to_chat(usr, "Removed [src] from purrbation.")
 			log_admin("[key_name(usr)] has removed [key_name(src)] from purrbation.")
-			var/msg = "<span class='notice'>[key_name_admin(usr)] has removed [key_name(src)] from purrbation.</span>"
+			var/msg = SPAN_NOTICE("[key_name_admin(usr)] has removed [key_name(src)] from purrbation.")
 			message_admins(msg)
 			admin_ticket_log(src, msg)
 

@@ -112,7 +112,7 @@
 			var/obj/item/tank/T = W
 			if(!user.transferItemToLoc(T, src))
 				return
-			to_chat(user, "<span class='notice'>[holding ? "In one smooth motion you pop [holding] out of [src]'s connector and replace it with [T]" : "You insert [T] into [src]"].</span>")
+			to_chat(user, SPAN_NOTICE("[holding ? "In one smooth motion you pop [holding] out of [src]'s connector and replace it with [T]" : "You insert [T] into [src]"]."))
 			replace_tank(user, FALSE, T)
 			update_icon()
 	else if(istype(W, /obj/item/wrench))

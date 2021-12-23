@@ -111,7 +111,7 @@
 		var/obj/item/door_key/K = W
 		if(id)
 			if(id == K.id)
-				to_chat(user, "<span class='notice'>You begin [open ? "locking" : "unlocking"] padlock.</span>")
+				to_chat(user, SPAN_NOTICE("You begin [open ? "locking" : "unlocking"] padlock."))
 				if(do_after(user, 15, target = loc))
 					toggle()
 			else

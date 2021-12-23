@@ -107,9 +107,9 @@
 
 			//chance to actually hit the eyes depends on internal component
 			if(prob(effectchance * diode.rating) && C.flash_act(severity))
-				outmsg = "<span class='notice'>You blind [C] by shining [src] in [C.p_their()] eyes.</span>"
+				outmsg = SPAN_NOTICE("You blind [C] by shining [src] in [C.p_their()] eyes.")
 			else
-				outmsg = "<span class='warning'>You fail to blind [C] by shining [src] at [C.p_their()] eyes!</span>"
+				outmsg = SPAN_WARNING("You fail to blind [C] by shining [src] at [C.p_their()] eyes!")
 
 	//robots
 	else if(iscyborg(target))
@@ -120,19 +120,19 @@
 			S.flash_act(affect_silicon = 1)
 			S.DefaultCombatKnockdown(rand(100,200))
 			to_chat(S, SPAN_DANGER("Your sensors were overloaded by a laser!"))
-			outmsg = "<span class='notice'>You overload [S] by shining [src] at [S.p_their()] sensors.</span>"
+			outmsg = SPAN_NOTICE("You overload [S] by shining [src] at [S.p_their()] sensors.")
 		else
-			outmsg = "<span class='warning'>You fail to overload [S] by shining [src] at [S.p_their()] sensors!</span>"
+			outmsg = SPAN_WARNING("You fail to overload [S] by shining [src] at [S.p_their()] sensors!")
 
 	//cameras
 	else if(istype(target, /obj/machinery/camera))
 		var/obj/machinery/camera/C = target
 		if(prob(effectchance * diode.rating))
 			C.emp_act(80)
-			outmsg = "<span class='notice'>You hit the lens of [C] with [src], temporarily disabling the camera!</span>"
+			outmsg = SPAN_NOTICE("You hit the lens of [C] with [src], temporarily disabling the camera!")
 			log_combat(user, C, "EMPed", src)
 		else
-			outmsg = "<span class='warning'>You miss the lens of [C] with [src]!</span>"
+			outmsg = SPAN_WARNING("You miss the lens of [C] with [src]!")
 
 	//catpeople
 	var/list/viewers = fov_viewers(1,targloc)

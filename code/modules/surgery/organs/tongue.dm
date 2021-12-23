@@ -36,9 +36,9 @@
 		accents += new accent
 	low_threshold_passed = "<span class='info'>Your [name] feels a little sore.</span>"
 	low_threshold_cleared = "<span class='info'>Your [name] soreness has subsided.</span>"
-	high_threshold_passed = "<span class='warning'>Your [name] is really starting to hurt.</span>"
+	high_threshold_passed = SPAN_WARNING("Your [name] is really starting to hurt.")
 	high_threshold_cleared = "<span class='info'>The pain of your [name] has subsided a little.</span>"
-	now_failing = "<span class='warning'>Your [name] feels like it's about to fall out!.</span>"
+	now_failing = SPAN_WARNING("Your [name] feels like it's about to fall out!.")
 	now_fixed = "<span class='info'>The excruciating pain of your [name] has subsided.</span>"
 	languages_possible = languages_possible_base
 

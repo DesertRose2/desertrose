@@ -8,8 +8,8 @@
 	name = "Godwoken Syndrome"
 	desc = "Patient occasionally and uncontrollably channels an eldritch god when speaking."
 	scan_desc = "god delusion"
-	gain_text = "<span class='notice'>You feel a higher power inside your mind...</span>"
-	lose_text = "<span class='warning'>The divine presence leaves your head, no longer interested.</span>"
+	gain_text = SPAN_NOTICE("You feel a higher power inside your mind...")
+	lose_text = SPAN_WARNING("The divine presence leaves your head, no longer interested.")
 
 /datum/brain_trauma/special/godwoken/on_life()
 	..()
@@ -52,8 +52,8 @@
 	name = "Bluespace Prophecy"
 	desc = "Patient can sense the bob and weave of bluespace around them, showing them passageways no one else can see."
 	scan_desc = "bluespace attunement"
-	gain_text = "<span class='notice'>You feel the bluespace pulsing around you...</span>"
-	lose_text = "<span class='warning'>The faint pulsing of bluespace fades into silence.</span>"
+	gain_text = SPAN_NOTICE("You feel the bluespace pulsing around you...")
+	lose_text = SPAN_WARNING("The faint pulsing of bluespace fades into silence.")
 	var/next_portal = 0
 
 /datum/brain_trauma/special/bluespace_prophet/on_life()
@@ -125,8 +125,8 @@
 	name = "Violent Psychosis"
 	desc = "Patient fights in unpredictable ways, ranging from helping his target to hitting them with brutal strength."
 	scan_desc = "violent psychosis"
-	gain_text = "<span class='warning'>You feel unhinged...</span>"
-	lose_text = "<span class='notice'>You feel more balanced.</span>"
+	gain_text = SPAN_WARNING("You feel unhinged...")
+	lose_text = SPAN_NOTICE("You feel more balanced.")
 	var/datum/martial_art/psychotic_brawling/psychotic_brawling
 
 /datum/brain_trauma/special/psychotic_brawling/on_gain()
@@ -149,8 +149,8 @@
 	name = "Tenacity"
 	desc = "Patient is psychologically unaffected by pain and injuries, and can remain standing far longer than a normal person."
 	scan_desc = "traumatic neuropathy"
-	gain_text = "<span class='warning'>You suddenly stop feeling pain.</span>"
-	lose_text = "<span class='warning'>You realize you can feel pain again.</span>"
+	gain_text = SPAN_WARNING("You suddenly stop feeling pain.")
+	lose_text = SPAN_WARNING("You realize you can feel pain again.")
 	random_gain = TRUE
 
 /datum/brain_trauma/special/tenacity/on_gain()
@@ -167,8 +167,8 @@
 	name = "Functional Cerebral Necrosis"
 	desc = "Patient's brain is stuck in a functional near-death state, causing occasional moments of lucid hallucinations, which are often interpreted as the voices of the dead."
 	scan_desc = "chronic functional necrosis"
-	gain_text = "<span class='warning'>You feel dead inside.</span>"
-	lose_text = "<span class='notice'>You feel alive again.</span>"
+	gain_text = SPAN_WARNING("You feel dead inside.")
+	lose_text = SPAN_NOTICE("You feel alive again.")
 	var/active = FALSE
 
 /datum/brain_trauma/special/death_whispers/on_life()
@@ -194,8 +194,8 @@
 	name = "Existential Crisis"
 	desc = "Patient's hold on reality becomes faint, causing occasional bouts of non-existence."
 	scan_desc = "existential crisis"
-	gain_text = "<span class='notice'>You feel less real.</span>"
-	lose_text = "<span class='warning'>You feel more substantial again.</span>"
+	gain_text = SPAN_NOTICE("You feel less real.")
+	lose_text = SPAN_WARNING("You feel more substantial again.")
 	var/obj/effect/abstract/sync_holder/veil/veil
 	var/next_crisis = 0
 
@@ -244,8 +244,8 @@
 	name = "Criminal"
 	desc = "Patient seems to be a criminal."
 	scan_desc = "criminal mind"
-	gain_text = "<span class='warning'>Justice is coming for you.</span>"
-	lose_text = "<span class='notice'>You were absolved for your crimes.</span>"
+	gain_text = SPAN_WARNING("Justice is coming for you.")
+	lose_text = SPAN_NOTICE("You were absolved for your crimes.")
 	clonable = FALSE
 	random_gain = FALSE
 	var/obj/effect/hallucination/simple/securitron/beepsky

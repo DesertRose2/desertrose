@@ -105,7 +105,7 @@ GLOBAL_VAR_INIT(summon_magic_triggered, FALSE)
 
 	var/in_hand = H.put_in_hands(G) // not always successful
 
-	to_chat(H, "<span class='warning'>\A [G] appears [in_hand ? "in your hand" : "at your feet"]!</span>")
+	to_chat(H, SPAN_WARNING("\A [G] appears [in_hand ? "in your hand" : "at your feet"]!"))
 
 /proc/give_magic(mob/living/carbon/human/H)
 	if(H.stat == DEAD || !(H.client))
@@ -136,7 +136,7 @@ GLOBAL_VAR_INIT(summon_magic_triggered, FALSE)
 
 	var/in_hand = H.put_in_hands(M)
 
-	to_chat(H, "<span class='warning'>\A [M] appears [in_hand ? "in your hand" : "at your feet"]!</span>")
+	to_chat(H, SPAN_WARNING("\A [M] appears [in_hand ? "in your hand" : "at your feet"]!"))
 	if(lucky)
 		to_chat(H, SPAN_NOTICE("You feel incredibly lucky."))
 

@@ -438,7 +438,7 @@
 
 /obj/item/disk/plantgene/attack_self(mob/user)
 	read_only = !read_only
-	to_chat(user, "<span class='notice'>You flip the write-protect tab to [src.read_only ? "protected" : "unprotected"].</span>")
+	to_chat(user, SPAN_NOTICE("You flip the write-protect tab to [src.read_only ? "protected" : "unprotected"]."))
 
 /obj/item/disk/plantgene/examine(mob/user)
 	. = ..()

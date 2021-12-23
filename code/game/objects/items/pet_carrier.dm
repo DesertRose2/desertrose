@@ -60,9 +60,9 @@
 	else
 		. += SPAN_NOTICE("It has nothing inside.")
 	if(user.canUseTopic(src))
-		. += "<span class='notice'>Activate it in your hand to [open ? "close" : "open"] its [entrance_name].</span>"
+		. += SPAN_NOTICE("Activate it in your hand to [open ? "close" : "open"] its [entrance_name].")
 		if(!open)
-			. += "<span class='notice'>Alt-click to [locked ? "unlock" : "lock"] its [entrance_name].</span>"
+			. += SPAN_NOTICE("Alt-click to [locked ? "unlock" : "lock"] its [entrance_name].")
 
 /obj/item/pet_carrier/attack_self(mob/living/user)
 	if(open)
@@ -83,7 +83,7 @@
 	if(open || !user.canUseTopic(src, BE_CLOSE))
 		return
 	locked = !locked
-	to_chat(user, "<span class='notice'>You flip the lock switch [locked ? "down" : "up"].</span>")
+	to_chat(user, SPAN_NOTICE("You flip the lock switch [locked ? "down" : "up"]."))
 	if(locked)
 		playsound(user, 'sound/machines/boltsdown.ogg', 30, TRUE)
 	else

@@ -326,7 +326,7 @@
 		//Behavior lock/unlock mangement
 		if(allowed(user))
 			locked = !locked
-			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
+			to_chat(user, SPAN_NOTICE("Controls are now [locked ? "locked" : "unlocked"]."))
 		else
 			to_chat(user, "<span class='alert'>Access denied.</span>")
 	else if(istype(I, /obj/item/multitool) && !locked)
@@ -970,7 +970,7 @@
 				return
 
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the panel.</span>")
+			to_chat(user, SPAN_NOTICE("You [ locked ? "lock" : "unlock"] the panel."))
 		else
 			to_chat(user, "<span class='alert'>Access denied.</span>")
 

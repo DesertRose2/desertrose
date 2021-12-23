@@ -212,7 +212,7 @@
 
 	user.sync_lighting_plane_alpha()
 
-	to_chat(user, "<span class='notice'>You toggle your meson vision [(user.sight & SEE_TURFS) ? "on" : "off"].</span>")
+	to_chat(user, SPAN_NOTICE("You toggle your meson vision [(user.sight & SEE_TURFS) ? "on" : "off"]."))
 
 
 /mob/living/simple_animal/hostile/mining_drone/proc/toggle_mode()
@@ -241,7 +241,7 @@
 	else
 		user.set_light(6)
 	user.light_on = !user.light_on
-	to_chat(user, "<span class='notice'>You toggle your light [user.light_on ? "on" : "off"].</span>")
+	to_chat(user, SPAN_NOTICE("You toggle your light [user.light_on ? "on" : "off"]."))
 
 /datum/action/innate/minedrone/toggle_mode
 	name = "Toggle Mode"

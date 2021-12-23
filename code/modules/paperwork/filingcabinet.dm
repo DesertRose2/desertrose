@@ -47,9 +47,9 @@
 
 /obj/structure/filingcabinet/attackby(obj/item/P, mob/user, params)
 	if(P.tool_behaviour == TOOL_WRENCH && user.a_intent != INTENT_HELP)
-		to_chat(user, "<span class='notice'>You begin to [anchored ? "unwrench" : "wrench"] [src].</span>")
+		to_chat(user, SPAN_NOTICE("You begin to [anchored ? "unwrench" : "wrench"] [src]."))
 		if(P.use_tool(src, user, 20, volume=50))
-			to_chat(user, "<span class='notice'>You successfully [anchored ? "unwrench" : "wrench"] [src].</span>")
+			to_chat(user, SPAN_NOTICE("You successfully [anchored ? "unwrench" : "wrench"] [src]."))
 			anchored = !anchored
 	else if(P.w_class < WEIGHT_CLASS_NORMAL)
 		if(!user.transferItemToLoc(P, src))

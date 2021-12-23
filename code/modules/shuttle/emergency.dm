@@ -527,7 +527,7 @@
 			launch_status = EARLY_LAUNCHED
 			return ..()
 	else
-		to_chat(usr, "<span class='warning'>Escape pods will only launch during \"Code Red\" security alert.</span>")
+		to_chat(usr, SPAN_WARNING("Escape pods will only launch during \"Code Red\" security alert."))
 		return TRUE
 
 /obj/docking_port/mobile/pod/cancel()

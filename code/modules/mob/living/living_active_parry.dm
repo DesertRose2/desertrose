@@ -266,7 +266,7 @@
 		knockdown_check = TRUE
 	if(data.parry_sounds)
 		playsound(src, pick(data.parry_sounds), 75)
-	visible_message("<span class='danger'>[src] parries [attack_text][length(effect_text)? ", [english_list(effect_text)] [attacker]" : ""][length(effect_text) && knockdown_check? " and" : ""][knockdown_check? " knocking them to the ground" : ""]!</span>")
+	visible_message(SPAN_DANGER("[src] parries [attack_text][length(effect_text)? ", [english_list(effect_text)] [attacker]" : ""][length(effect_text) && knockdown_check? " and" : ""][knockdown_check? " knocking them to the ground" : ""]!"))
 
 /// Run counterattack if any
 /mob/living/proc/run_parry_countereffects(atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, list/return_list = list(), parry_efficiency)

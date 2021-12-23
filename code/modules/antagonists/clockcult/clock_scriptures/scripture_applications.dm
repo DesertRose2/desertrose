@@ -33,7 +33,7 @@
 	power_cost = 300
 	object_path = /obj/structure/destructible/clockwork/powered/prolonging_prism
 	creator_message = "<span class='brass'>You form a prolonging prism, which will delay the arrival of an emergency shuttle at a massive power cost.</span>"
-	observer_message = "<span class='warning'>An onyx prism forms in midair and sprouts tendrils to support itself!</span>"
+	observer_message = SPAN_WARNING("An onyx prism forms in midair and sprouts tendrils to support itself!")
 	invokers_required = 2
 	multiple_invokers_used = TRUE
 	usage_tip = "The power cost to delay a shuttle increases based on the number of times activated."
@@ -65,7 +65,7 @@
 	power_cost = 750
 	object_path = /obj/structure/destructible/clockwork/powered/mania_motor
 	creator_message = "<span class='brass'>You form a mania motor, which causes minor damage and negative mental effects in non-Servants.</span>"
-	observer_message = "<span class='warning'>A two-pronged machine rises from the ground!</span>"
+	observer_message = SPAN_WARNING("A two-pronged machine rises from the ground!")
 	invokers_required = 2
 	multiple_invokers_used = TRUE
 	usage_tip = "It will also cure hallucinations and brain damage in nearby Servants."
@@ -88,7 +88,7 @@
 	power_cost = 300
 	object_path = /obj/structure/destructible/clockwork/powered/clockwork_obelisk
 	creator_message = "<span class='brass'>You form a clockwork obelisk which can broadcast messages or produce Spatial Gateways.</span>"
-	observer_message = "<span class='warning'>A brass obelisk appears hanging in midair!</span>"
+	observer_message = SPAN_WARNING("A brass obelisk appears hanging in midair!")
 	invokers_required = 2
 	multiple_invokers_used = TRUE
 	usage_tip = "Producing a gateway has a high power cost. Gateways to or between clockwork obelisks receive double duration and uses."

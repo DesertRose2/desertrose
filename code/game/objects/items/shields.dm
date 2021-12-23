@@ -70,7 +70,7 @@
 	var/obj/effect/temp_visual/dir_setting/shield_bash/effect = new(user.loc, dir)
 	effect.pixel_x = user.pixel_x - 32		//96x96 effect, -32.
 	effect.pixel_y = user.pixel_y - 32
-	user.visible_message("<span class='warning'>[user] [harmful? "charges forwards with" : "sweeps"] [src]!</span>")
+	user.visible_message(SPAN_WARNING("[user] [harmful? "charges forwards with" : "sweeps"] [src]!"))
 	animate(user, pixel_x = px, pixel_y = py, time = 3, easing = SINE_EASING | EASE_OUT, flags = ANIMATION_PARALLEL | ANIMATION_RELATIVE)
 	animate(user, pixel_x = -px, pixel_y = -py, time = 3, flags = ANIMATION_RELATIVE)
 	animate(effect, alpha = 0, pixel_x = px * 1.5, pixel_y = py * 1.5, time = 3, flags = ANIMATION_PARALLEL | ANIMATION_RELATIVE)
@@ -84,8 +84,8 @@
 	var/wallhit = FALSE
 	var/turf/target_current_turf = get_turf(target)
 	if(harmful)
-		target.visible_message("<span class='warning'>[target_downed? "[user] slams [src] into [target]" : "[user] bashes [target] with [src]"]!</span>",
-		"<span class='warning'>[target_downed? "[user] slams [src] into you" : "[user] bashes you with [src]"]!</span>")
+		target.visible_message(SPAN_WARNING("[target_downed? "[user] slams [src] into [target]" : "[user] bashes [target] with [src]"]!"),
+		SPAN_WARNING("[target_downed? "[user] slams [src] into you" : "[user] bashes you with [src]"]!"))
 	else
 		target.visible_message(SPAN_WARNING("[user] shoves [target] with [src]!"),
 		SPAN_WARNING("[user] shoves you with [src]!"))
@@ -108,7 +108,7 @@
 	var/disarming = (target_downed && (shield_flags & SHIELD_BASH_GROUND_SLAM_DISARM)) || (shield_flags & SHIELD_BASH_ALWAYS_DISARM) || (wallhit && (shield_flags & SHIELD_BASH_WALL_DISARM))
 	var/knockdown = !target_downed && ((shield_flags & SHIELD_BASH_ALWAYS_KNOCKDOWN) || (wallhit && (shield_flags & SHIELD_BASH_WALL_KNOCKDOWN)))
 	if(shieldbash_stagger_duration || knockdown)
-		target.visible_message("<span class='warning'>[target] is knocked [knockdown? "to the floor" : "off balance"]!</span>",
+		target.visible_message(SPAN_WARNING("[target] is knocked [knockdown? "to the floor" : "off balance"]!"),
 		"<span class='userdanger'>You are knocked [knockdown? "to the floor" : "off balance"]!</span>")
 	if(knockdown)
 		target.KnockToFloor(disarming)

@@ -612,7 +612,7 @@
 	if(protection_status == FUGITIVE_WILL_PRESERVE)
 		charges--
 		UnregisterSignal(src,COMSIG_MAFIA_ON_KILL)
-		to_chat(body,"<span class='danger'>You are no longer protected. You have [charges] use[charges == 1 ? "" : "s"] left of your power.</span>")
+		to_chat(body,SPAN_DANGER("You are no longer protected. You have [charges] use[charges == 1 ? "" : "s"] left of your power."))
 		protection_status = FUGITIVE_NOT_PRESERVING
 
 /datum/mafia_role/fugitive/proc/prevent_death(datum/mafia_controller/game)

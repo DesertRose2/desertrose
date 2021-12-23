@@ -11,7 +11,7 @@
 	max_integrity = 40
 	construction_value = 5
 	layer = WALL_OBJ_LAYER
-	break_message = "<span class='warning'>The stargazer's fragile body shatters into pieces!</span>"
+	break_message = SPAN_WARNING("The stargazer's fragile body shatters into pieces!")
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	light_color = "#DAAA18"
 	var/star_light_star_bright = FALSE //If this stargazer can see starlight

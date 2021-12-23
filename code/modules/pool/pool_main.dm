@@ -60,11 +60,11 @@
 		var/pre_msg
 		var/post_msg
 		if(user == from)
-			pre_msg = "<span class='notice'>[L] is getting out of the pool.</span>"
-			post_msg = "<span class='notice'>[L] gets out of the pool.</span>"
+			pre_msg = SPAN_NOTICE("[L] is getting out of the pool.")
+			post_msg = SPAN_NOTICE("[L] gets out of the pool.")
 		else
-			pre_msg = "<span class='notice'>[L] is being pulled out of the pool by [user].</span>"
-			post_msg = "<span class='notice'>[user] pulls [L] out of the pool.</span>"
+			pre_msg = SPAN_NOTICE("[L] is being pulled out of the pool by [user].")
+			post_msg = SPAN_NOTICE("[user] pulls [L] out of the pool.")
 		L.visible_message(pre_msg)
 		if(do_mob(user, L, 20))
 			L.visible_message(post_msg)

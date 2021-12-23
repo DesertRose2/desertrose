@@ -514,7 +514,7 @@
 		owner.adjustToxLoss(-0.4, forced = TRUE) //Slimepeople should also get healed.
 		is_healing = TRUE
 	if(is_healing)
-		examine_text = "<span class='warning'>SUBJECTPRONOUN is regenerating slowly, purplish goo filling in small injuries!</span>"
+		examine_text = SPAN_WARNING("SUBJECTPRONOUN is regenerating slowly, purplish goo filling in small injuries!")
 		new /obj/effect/temp_visual/heal(get_turf(owner), "#FF0000")
 	else
 		examine_text = null
@@ -559,7 +559,7 @@
 	colour = "yellow"
 	var/cooldown = 10
 	var/max_cooldown = 10
-	examine_text = "<span class='warning'>Nearby electronics seem just a little more charged wherever SUBJECTPRONOUN goes.</span>"
+	examine_text = SPAN_WARNING("Nearby electronics seem just a little more charged wherever SUBJECTPRONOUN goes.")
 
 /datum/status_effect/stabilized/yellow/tick()
 	if(cooldown > 0)
@@ -587,7 +587,7 @@
 	id = "stabilizeddarkpurple"
 	colour = "dark purple"
 	var/obj/item/hothands/fire
-	examine_text = "<span class='notice'>Their fingertips burn brightly!</span>"
+	examine_text = SPAN_NOTICE("Their fingertips burn brightly!")
 
 /datum/status_effect/stabilized/darkpurple/on_apply()
 	ADD_TRAIT(owner, TRAIT_RESISTHEATHANDS, "slimestatus")
@@ -802,7 +802,7 @@
 
 /datum/status_effect/stabilized/green/tick() //Only occasionally give examiners a warning.
 	if(prob(50))
-		examine_text = "<span class='warning'>SUBJECTPRONOUN looks a bit green and gooey...</span>"
+		examine_text = SPAN_WARNING("SUBJECTPRONOUN looks a bit green and gooey...")
 	else
 		examine_text = null
 	return ..()
@@ -883,7 +883,7 @@
 /datum/status_effect/stabilized/oil
 	id = "stabilizedoil"
 	colour = "oil"
-	examine_text = "<span class='warning'>SUBJECTPRONOUN smells of sulfer and oil!</span>"
+	examine_text = SPAN_WARNING("SUBJECTPRONOUN smells of sulfer and oil!")
 
 /datum/status_effect/stabilized/oil/tick()
 	if(owner.stat == DEAD)
@@ -905,7 +905,7 @@
 			to_chat(owner,SPAN_NOTICE("You feel your hands melt around [M]'s neck and start to drain [M.p_them()] of life."))
 			to_chat(owner.pulling, "<span class='userdanger'>[owner]'s hands melt around your neck, and you can feel your life starting to drain away!</span>")
 			messagedelivered = TRUE
-		examine_text = "<span class='warning'>SUBJECTPRONOUN is draining health from [owner.pulling]!</span>"
+		examine_text = SPAN_WARNING("SUBJECTPRONOUN is draining health from [owner.pulling]!")
 		var/list/healing_types = list()
 		if(owner.getBruteLoss() > 0)
 			healing_types += BRUTE
@@ -946,7 +946,7 @@
 /datum/status_effect/stabilized/adamantine
 	id = "stabilizedadamantine"
 	colour = "adamantine"
-	examine_text = "<span class='warning'>SUBJECTPRONOUN has a strange metallic coating on their skin.</span>"
+	examine_text = SPAN_WARNING("SUBJECTPRONOUN has a strange metallic coating on their skin.")
 
 /datum/status_effect/stabilized/gold
 	id = "stabilizedgold"

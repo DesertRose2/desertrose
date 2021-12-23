@@ -136,7 +136,7 @@
 			to_chat(user, SPAN_WARNING("[src] is out of charge."))
 	else
 		switch_status(!turned_on)
-		to_chat(user, "<span class='notice'>[src] is now [turned_on ? "on" : "off"].</span>")
+		to_chat(user, SPAN_NOTICE("[src] is now [turned_on ? "on" : "off"]."))
 	add_fingerprint(user)
 
 /obj/item/melee/baton/attack(mob/M, mob/living/carbon/human/user)
@@ -206,7 +206,7 @@
 	if(user)
 		L.lastattacker = user.real_name
 		L.lastattackerckey = user.ckey
-		L.visible_message("<span class='danger'>[user] has [disarming? "disarmed" : "stunned"] [L] with [src]!</span>", \
+		L.visible_message(SPAN_DANGER("[user] has [disarming? "disarmed" : "stunned"] [L] with [src]!"), \
 								"<span class='userdanger'>[user] has [disarming? "disarmed" : "stunned"] you with [src]!</span>")
 		log_combat(user, L, disarming? "disarmed" : "stunned")
 

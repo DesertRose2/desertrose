@@ -196,7 +196,7 @@ Doesn't work on other aliens/AI.*/
 /obj/effect/proc_holder/alien/neurotoxin/fire(mob/living/carbon/user)
 	var/message
 	if(active)
-		message = "<span class='notice'>You empty your neurotoxin gland.</span>"
+		message = SPAN_NOTICE("You empty your neurotoxin gland.")
 		remove_ranged_ability(message)
 	else
 		message = "<span class='notice'>You prepare your neurotoxin gland. <B>Left-click to fire at a target!</B></span>"

@@ -20,8 +20,8 @@
 	high_threshold = 0.6 * LUNGS_MAX_HEALTH	//threshold at 180
 	low_threshold = 0.3 * LUNGS_MAX_HEALTH	//threshold at 90
 
-	high_threshold_passed = "<span class='warning'>You feel some sort of constriction around your chest as your breathing becomes shallow and rapid.</span>"
-	now_fixed = "<span class='warning'>Your lungs seem to once again be able to hold air.</span>"
+	high_threshold_passed = SPAN_WARNING("You feel some sort of constriction around your chest as your breathing becomes shallow and rapid.")
+	now_fixed = SPAN_WARNING("Your lungs seem to once again be able to hold air.")
 	high_threshold_cleared = "<span class='info'>The constriction around your chest loosens as your breathing calms down.</span>"
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/medicine/salbutamol = 5)

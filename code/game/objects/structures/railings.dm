@@ -58,10 +58,10 @@
 	. = ..()
 	if(flags_1&NODECONSTRUCT_1)
 		return
-	to_chat(user, "<span class='notice'>You begin to [anchored ? "unfasten the railing from":"fasten the railing to"] the floor...</span>")
+	to_chat(user, SPAN_NOTICE("You begin to [anchored ? "unfasten the railing from":"fasten the railing to"] the floor..."))
 	if(I.use_tool(src, user, volume = 75, extra_checks = CALLBACK(src, .proc/check_anchored, anchored)))
 		setAnchored(!anchored)
-		to_chat(user, "<span class='notice'>You [anchored ? "fasten the railing to":"unfasten the railing from"] the floor.</span>")
+		to_chat(user, SPAN_NOTICE("You [anchored ? "fasten the railing to":"unfasten the railing from"] the floor."))
 	return TRUE
 
 /obj/structure/railing/CanPass(atom/movable/mover, turf/target)

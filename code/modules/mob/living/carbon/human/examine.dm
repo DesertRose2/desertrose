@@ -390,7 +390,7 @@
 			msg += "<span class='notice'><b><i>[t_He] [t_is] just absolutely fucked up, you can look again to take a closer look...</i></b></span>\n"
 
 	if (length(msg))
-		. += "<span class='warning'>[msg.Join("")]</span>"
+		. += SPAN_WARNING("[msg.Join("")]")
 
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))

@@ -11,7 +11,7 @@
 			to_chat(user, SPAN_WARNING("All of the computer's expansion bays are filled."))
 			return FALSE
 		if(LAZYACCESS(expansion_bays, H.device_type))
-			to_chat(user, "<span class='warning'>The computer immediately ejects /the [H] and flashes an error: \"Hardware Address Conflict\".</span>")
+			to_chat(user, SPAN_WARNING("The computer immediately ejects /the [H] and flashes an error: \"Hardware Address Conflict\"."))
 			return FALSE
 
 	if(all_components[H.device_type])

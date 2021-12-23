@@ -103,18 +103,18 @@
 						qdel(src)
 				return
 			if(istype(P, /obj/item/wrench))
-				to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
+				to_chat(user, SPAN_NOTICE("You start [anchored ? "un" : ""]securing [name]..."))
 				if(P.use_tool(src, user, 40, volume=75))
 					if(state == 1)
-						to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
+						to_chat(user, SPAN_NOTICE("You [anchored ? "un" : ""]secure [name]."))
 						setAnchored(!anchored)
 				return
 
 		if(2)
 			if(istype(P, /obj/item/wrench))
-				to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
+				to_chat(user, SPAN_NOTICE("You start [anchored ? "un" : ""]securing [name]..."))
 				if(P.use_tool(src, user, 40, volume=75))
-					to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
+					to_chat(user, SPAN_NOTICE("You [anchored ? "un" : ""]secure [name]."))
 					setAnchored(!anchored)
 				return
 
@@ -170,9 +170,9 @@
 				return
 
 			if(istype(P, /obj/item/wrench) && !circuit.needs_anchored)
-				to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
+				to_chat(user, SPAN_NOTICE("You start [anchored ? "un" : ""]securing [name]..."))
 				if(P.use_tool(src, user, 40, volume=75))
-					to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
+					to_chat(user, SPAN_NOTICE("You [anchored ? "un" : ""]secure [name]."))
 					setAnchored(!anchored)
 				return
 

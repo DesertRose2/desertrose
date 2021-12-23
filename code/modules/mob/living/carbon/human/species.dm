@@ -964,7 +964,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(clothing_check && (slot in H.check_obscured_slots()))
 		if(return_warning)
-			return_warning[1] = "<span class='warning'>You are unable to equip that with your current garments in the way!</span>"
+			return_warning[1] = SPAN_WARNING("You are unable to equip that with your current garments in the way!")
 		return FALSE
 
 	var/num_arms = H.get_num_arms(FALSE)
@@ -1029,7 +1029,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/obj/item/bodypart/O = H.get_bodypart(BODY_ZONE_CHEST)
 				if(!H.w_uniform && !nojumpsuit && (!O || O.status != BODYPART_ROBOTIC))
 					if(return_warning)
-						return_warning[1] = "<span class='warning'>You need a jumpsuit before you can attach this [I.name]!</span>"
+						return_warning[1] = SPAN_WARNING("You need a jumpsuit before you can attach this [I.name]!")
 					return FALSE
 			if(!(I.slot_flags & ITEM_SLOT_BELT))
 				return
@@ -1071,7 +1071,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/obj/item/bodypart/O = H.get_bodypart(BODY_ZONE_CHEST)
 				if(!H.w_uniform && !nojumpsuit && (!O || O.status != BODYPART_ROBOTIC))
 					if(return_warning)
-						return_warning[1] = "<span class='warning'>You need a jumpsuit before you can attach this [I.name]!</span>"
+						return_warning[1] = SPAN_WARNING("You need a jumpsuit before you can attach this [I.name]!")
 					return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_ID) )
 				return FALSE
@@ -1086,7 +1086,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 			if(!H.w_uniform && !nojumpsuit && (!O || O.status != BODYPART_ROBOTIC))
 				if(return_warning)
-					return_warning[1] = "<span class='warning'>You need a jumpsuit before you can attach this [I.name]!</span>"
+					return_warning[1] = SPAN_WARNING("You need a jumpsuit before you can attach this [I.name]!")
 				return FALSE
 			if(I.slot_flags & ITEM_SLOT_DENYPOCKET)
 				return FALSE
@@ -1102,7 +1102,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 			if(!H.w_uniform && !nojumpsuit && (!O || O.status != BODYPART_ROBOTIC))
 				if(return_warning)
-					return_warning[1] = "<span class='warning'>You need a jumpsuit before you can attach this [I.name]!</span>"
+					return_warning[1] = SPAN_WARNING("You need a jumpsuit before you can attach this [I.name]!")
 				return FALSE
 			if(I.slot_flags & ITEM_SLOT_DENYPOCKET)
 				return FALSE
@@ -1116,7 +1116,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				return FALSE
 			if(!H.wear_suit)
 				if(return_warning)
-					return_warning[1] = "<span class='warning'>You need a suit before you can attach this [I.name]!</span>"
+					return_warning[1] = SPAN_WARNING("You need a suit before you can attach this [I.name]!")
 				return FALSE
 			if(!H.wear_suit.allowed)
 				if(return_warning)
@@ -1337,7 +1337,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 /datum/species/proc/grab(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(target.check_martial_melee_block())
 		target.visible_message(SPAN_WARNING("[target] blocks [user]'s grab attempt!"), target = user, \
-			target_message = "<span class='warning'>[target] blocks your grab attempt!</span>")
+			target_message = SPAN_WARNING("[target] blocks your grab attempt!"))
 		return 0
 	if(attacker_style && attacker_style.grab_act(user,target))
 		return 1
@@ -1354,7 +1354,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		return FALSE //CITADEL CHANGE - ditto
 	if(target.check_martial_melee_block())
 		target.visible_message(SPAN_WARNING("[target] blocks [user]'s attack!"), target = user, \
-			target_message = "<span class='warning'>[target] blocks your attack!</span>")
+			target_message = SPAN_WARNING("[target] blocks your attack!"))
 		return FALSE
 
 	if(!(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
@@ -1489,7 +1489,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(target.check_martial_melee_block()) //END EDIT
 		target.visible_message(SPAN_WARNING("[target] blocks [user]'s disarm attempt!"), target = user, \
-			target_message = "<span class='warning'>[target] blocks your disarm attempt!</span>")
+			target_message = SPAN_WARNING("[target] blocks your disarm attempt!"))
 		return FALSE
 	if(IS_STAMCRIT(user))
 		to_chat(user, SPAN_WARNING("You're too exhausted!"))
@@ -1499,9 +1499,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
 
 		target.visible_message(\
-			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_them()]self" : "\the [target]"] in the face!</span>",\
+			SPAN_DANGER("\The [user] slaps [user == target ? "[user.p_them()]self" : "\the [target]"] in the face!"),\
 			SPAN_NOTICE("[user] slaps you in the face! "),\
-			"You hear a slap.", target = user, target_message = "<span class='notice'>You slap [user == target ? "yourself" : "\the [target]"] in the face! </span>")
+			"You hear a slap.", target = user, target_message = SPAN_NOTICE("You slap [user == target ? "yourself" : "\the [target]"] in the face! "))
 		user.do_attack_animation(target, ATTACK_EFFECT_FACE_SLAP)
 		user.adjustStaminaLossBuffered(3)
 		if (!HAS_TRAIT(target, TRAIT_PERMABONER))
@@ -1520,9 +1520,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			stop_wagging_tail(target)
 		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
 		target.visible_message(\
-			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_their()] own" : "\the [target]'s"] ass!</span>",\
+			SPAN_DANGER("\The [user] slaps [user == target ? "[user.p_their()] own" : "\the [target]'s"] ass!"),\
 			SPAN_NOTICE("[user] slaps your ass! "),\
-			"You hear a slap.", target = user, target_message = "<span class='notice'>You slap [user == target ? "your own" : "\the [target]'s"] ass! </span>")
+			"You hear a slap.", target = user, target_message = SPAN_NOTICE("You slap [user == target ? "your own" : "\the [target]'s"] ass! "))
 
 		return FALSE
 
@@ -1544,7 +1544,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		if(target.pulling == user)
 			target.visible_message(SPAN_WARNING("[user] wrestles out of [target]'s grip!"), \
 				SPAN_WARNING("[user] wrestles out of your grip!"), target = user, \
-				target_message = "<span class='warning'>You wrestle out of [target]'s grip!</span>")
+				target_message = SPAN_WARNING("You wrestle out of [target]'s grip!"))
 			target.stop_pulling()
 			playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 			log_combat(user, target, "disarmed out of grab from")
@@ -1568,7 +1568,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(target.pulling)
 				target.visible_message(SPAN_WARNING("[user] has broken [target]'s grip on [target.pulling]!"), \
 					SPAN_WARNING("[user] has broken your grip on [target.pulling]!"), target = user, \
-					target_message = "<span class='warning'>You have broken [target]'s grip on [target.pulling]!</span>")
+					target_message = SPAN_WARNING("You have broken [target]'s grip on [target.pulling]!"))
 				target.stop_pulling()
 			else
 				I = target.get_active_held_item()
@@ -1738,7 +1738,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		log_combat(M, H, "attempted to touch")
 		H.visible_message(SPAN_WARNING("[M] attempted to touch [H]!"), \
 			SPAN_WARNING("[M] attempted to touch you!"), target = M, \
-			target_message = "<span class='warning'>You attempted to touch [H]!</span>")
+			target_message = SPAN_WARNING("You attempted to touch [H]!"))
 		return TRUE
 	switch(M.a_intent)
 		if(INTENT_HELP)
@@ -1777,7 +1777,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(target.check_martial_melee_block())
 		target.visible_message(SPAN_WARNING("[target] blocks [user]'s shoving attempt!"), \
 			SPAN_WARNING("You block [user]'s shoving attempt!"), target = user, \
-			target_message = "<span class='warning'>[target] blocks your shoving attempt!</span>")
+			target_message = SPAN_WARNING("[target] blocks your shoving attempt!"))
 		return FALSE
 	if(attacker_style && attacker_style.disarm_act(user,target))
 		return TRUE

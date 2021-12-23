@@ -100,7 +100,7 @@
 				to_chat(user, SPAN_WARNING("You need to equip a cautery in an inactive slot to stop [M]'s surgery!"))
 				return
 		else if(!close_tool || close_tool.tool_behaviour != required_tool_type)
-			to_chat(user, "<span class='warning'>You need to hold a [is_robotic ? "screwdriver" : "cautery"] in your inactive hand to stop [M]'s surgery!</span>")
+			to_chat(user, SPAN_WARNING("You need to hold a [is_robotic ? "screwdriver" : "cautery"] in your inactive hand to stop [M]'s surgery!"))
 			return
 		M.surgeries -= S
 		user.visible_message(SPAN_NOTICE("[user] closes [M]'s [parse_zone(selected_zone)] with [close_tool] and removes [I]."), \

@@ -37,7 +37,7 @@
 
 
 /obj/structure/janitorialcart/attackby(obj/item/I, mob/user, params)
-	var/fail_msg = "<span class='warning'>There is already one of those in [src]!</span>"
+	var/fail_msg = SPAN_WARNING("There is already one of those in [src]!")
 
 	if(istype(I, /obj/item/mop))
 		var/obj/item/mop/m=I

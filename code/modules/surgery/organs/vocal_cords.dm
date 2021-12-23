@@ -1129,7 +1129,7 @@
 				for (var/trigger in E.customTriggers)
 					speaktrigger += "[trigger], "
 				to_chat(user, "<b>[C]</b> whispers, \"<i>[speaktrigger] are my triggers.</i>\"")//So they don't trigger themselves!
-				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, C, "<span class='notice'>You whisper your triggers to [(E.lewd?"Your [E.enthrallGender]":"[E.master]")].</span>"), 5)
+				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, C, SPAN_NOTICE("You whisper your triggers to [(E.lewd?"Your [E.enthrallGender]":"[E.master]")].")), 5)
 
 
 	//CUSTOM TRIGGERS
@@ -1164,7 +1164,7 @@
 								E.customTriggers[trigger] = trigger2
 								log_reagent("FERMICHEM: [H] has been implanted by [user] with [trigger], triggering [trigger2].")
 							E.mental_capacity -= 5
-							addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, H, "<span class='notice'>[(E.lewd?"your [E.enthrallGender]":"[E.master]")] whispers you a new trigger.</span>"), 5)
+							addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, H, SPAN_NOTICE("[(E.lewd?"your [E.enthrallGender]":"[E.master]")] whispers you a new trigger.")), 5)
 							to_chat(user, "<span class='notice'><i>You sucessfully set the trigger word [trigger] in [H]</i></span>")
 						else
 							to_chat(user, "<span class='warning'>Your pet looks at you confused, it seems they don't understand that effect!</b></span>")
@@ -1226,7 +1226,7 @@
 						objective = replacetext(lowertext(objective), "suicide", "self-love")
 						message_admins("[H] has been implanted by [user] with the objective [objective].")
 						log_reagent("FERMICHEM: [H] has been implanted by [user] with the objective [objective] via MKUltra.")
-						addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, H, "<span class='notice'>[(E.lewd?"Your [E.enthrallGender]":"[E.master]")] whispers you a new objective.</span>"), 5)
+						addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, H, SPAN_NOTICE("[(E.lewd?"Your [E.enthrallGender]":"[E.master]")] whispers you a new objective.")), 5)
 						brainwash(H, objective)
 						E.mental_capacity -= 200
 						to_chat(user, "<span class='notice'><i>You sucessfully give an objective to [H]</i></span>")

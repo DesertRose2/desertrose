@@ -228,7 +228,7 @@
 			var/grab_upgrade_time = instant ? 0 : 30
 			visible_message(SPAN_DANGER("[user] starts to tighten [user.p_their()] grip on [src]!"), \
 				"<span class='userdanger'>[user] starts to tighten [user.p_their()] grip on you!</span>", target = user,
-				target_message = "<span class='danger'>You start to tighten your grip on [src]!</span>")
+				target_message = SPAN_DANGER("You start to tighten your grip on [src]!"))
 			switch(user.grab_state)
 				if(GRAB_AGGRESSIVE)
 					log_combat(user, src, "attempted to neck grab", addition="neck grab")
@@ -245,12 +245,12 @@
 				if(HAS_TRAIT(user, TRAIT_PACIFISM))
 					visible_message(SPAN_DANGER("[user] has firmly gripped [src]!"),
 						SPAN_DANGER("[user] has firmly gripped you!"), target = user,
-						target_message = "<span class='danger'>You have firmly gripped [src]!</span>")
+						target_message = SPAN_DANGER("You have firmly gripped [src]!"))
 					add_log = " (pacifist)"
 				else
 					visible_message(SPAN_DANGER("[user] has grabbed [src] aggressively!"), \
 									"<span class='userdanger'>[user] has grabbed you aggressively!</span>", target = user, \
-									target_message = "<span class='danger'>You have grabbed [src] aggressively!</span>")
+									target_message = SPAN_DANGER("You have grabbed [src] aggressively!"))
 					update_mobility()
 				stop_pulling()
 				log_combat(user, src, "grabbed", addition="aggressive grab[add_log]")
@@ -258,7 +258,7 @@
 				log_combat(user, src, "grabbed", addition="neck grab")
 				visible_message(SPAN_DANGER("[user] has grabbed [src] by the neck!"),\
 								"<span class='userdanger'>[user] has grabbed you by the neck!</span>", target = user, \
-								target_message = "<span class='danger'>You have grabbed [src] by the neck!</span>")
+								target_message = SPAN_DANGER("You have grabbed [src] by the neck!"))
 				update_mobility() //we fall down
 				if(!buckled && !density)
 					Move(user.loc)
@@ -266,7 +266,7 @@
 				log_combat(user, src, "strangled", addition="kill grab")
 				visible_message(SPAN_DANGER("[user] is strangling [src]!"), \
 								"<span class='userdanger'>[user] is strangling you!</span>", target = user, \
-								target_message = "<span class='danger'>You are strangling [src]!</span>")
+								target_message = SPAN_DANGER("You are strangling [src]!"))
 				update_mobility() //we fall down
 				if(!buckled && !density)
 					Move(user.loc)
@@ -280,7 +280,7 @@
 		log_combat(user, src, "attempted to touch")
 		visible_message(SPAN_WARNING("[user] attempted to touch [src]!"),
 			SPAN_WARNING("[user] attempted to touch you!"), target = user,
-			target_message = "<span class='warning'>You attempted to touch [src]!</span>")
+			target_message = SPAN_WARNING("You attempted to touch [src]!"))
 		return TRUE
 
 /mob/living/attack_hulk(mob/living/carbon/human/user, does_attack_animation = FALSE)
@@ -332,7 +332,7 @@
 	if(M.melee_damage_upper == 0)
 		M.visible_message(SPAN_NOTICE("\The [M] [M.friendly_verb_continuous] [src]!"),
 			SPAN_NOTICE("You [M.friendly_verb_simple] [src]!"), target = src,
-			target_message = "<span class='notice'>\The [M] [M.friendly_verb_continuous] you!</span>")
+			target_message = SPAN_NOTICE("\The [M] [M.friendly_verb_continuous] you!"))
 		return 0
 	else
 		if(HAS_TRAIT(M, TRAIT_PACIFISM))
@@ -385,7 +385,7 @@
 		if(INTENT_HELP)
 			visible_message(SPAN_NOTICE("[L.name] rubs its head against [src]."),
 				SPAN_NOTICE("[L.name] rubs its head against you."), target = L, \
-				target_message = "<span class='notice'>You rub your head against [src].</span>")
+				target_message = SPAN_NOTICE("You rub your head against [src]."))
 			return FALSE
 
 		else
@@ -417,7 +417,7 @@
 			if(!isalien(src)) //I know it's ugly, but the alien vs alien attack_alien behaviour is a bit different.
 				visible_message(SPAN_NOTICE("[M] caresses [src] with its scythe like arm."),
 					SPAN_NOTICE("[M] caresses you with its scythe like arm."), target = M,
-					target_message = "<span class='notice'>You caress [src] with your scythe like arm.</span>")
+					target_message = SPAN_NOTICE("You caress [src] with your scythe like arm."))
 			return FALSE
 		if (INTENT_GRAB)
 			grabbedby(M)

@@ -551,7 +551,7 @@
 
 	var/mob/living/carbon/human/user = usr
 	gun_light.on = !gun_light.on
-	to_chat(user, "<span class='notice'>You toggle the gunlight [gun_light.on ? "on":"off"].</span>")
+	to_chat(user, SPAN_NOTICE("You toggle the gunlight [gun_light.on ? "on":"off"]."))
 
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_gunlight(user)

@@ -202,7 +202,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		attack_verb = list("whacked", "smacked", "struck")
 		bare_wound_bonus = 0
 		wound_bonus = 0
-	to_chat(user, "<span class='notice'>[src] is now [harm ? "harmful" : "not quite as harmful"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [harm ? "harmful" : "not quite as harmful"]."))
 
 /obj/item/melee/bokken/AltClick(mob/user)
 	. = ..()
@@ -211,7 +211,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		block_parry_data = /datum/block_parry_data/bokken/quick_parry
 	else
 		block_parry_data = /datum/block_parry_data/bokken
-	to_chat(user, "<span class='notice'>[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"]."))
 
 /obj/item/melee/bokken/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/pen))
@@ -258,7 +258,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		block_parry_data = /datum/block_parry_data/bokken/quick_parry/debug
 	else
 		block_parry_data = /datum/block_parry_data/bokken/debug
-	to_chat(user, "<span class='notice'>[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"]."))
 
 /datum/block_parry_data/bokken/debug
 	parry_efficiency_perfect_override = list()
@@ -881,7 +881,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	if(isliving(user) && user.mind && user.owns_soul() && !is_devil(user))
 		var/mob/living/U = user
 		U.visible_message(SPAN_WARNING("As [U] picks [src] up, [U]'s arms briefly catch fire."), \
-			"<span class='warning'>\"As you pick up [src] your arms ignite, reminding you of all your past sins.\"</span>")
+			SPAN_WARNING("\"As you pick up [src] your arms ignite, reminding you of all your past sins.\""))
 		if(ishuman(U))
 			var/mob/living/carbon/human/H = U
 			H.apply_damage(rand(force/2, force), BURN, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))

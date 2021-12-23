@@ -301,7 +301,7 @@ the new instance inside the host to be updated to the template's stats.
 	if(!freemove)
 		return
 	if(QDELETED(H) || !force_infect(H))
-		to_chat(src, "<span class='warning'>[H ? H.name : "Host"] cannot be infected.</span>")
+		to_chat(src, SPAN_WARNING("[H ? H.name : "Host"] cannot be infected."))
 
 /mob/camera/disease/proc/adapt_cooldown()
 	to_chat(src, SPAN_NOTICE("You have altered your genetic structure. You will be unable to adapt again for [DisplayTimeText(adaptation_cooldown)]."))

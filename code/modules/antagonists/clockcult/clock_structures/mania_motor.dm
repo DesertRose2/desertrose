@@ -8,7 +8,7 @@
 	inactive_icon = "mania_motor_inactive"
 	unanchored_icon = "mania_motor_unwrenched"
 	construction_value = 20
-	break_message = "<span class='warning'>The antenna break off, leaving a pile of shards!</span>"
+	break_message = SPAN_WARNING("The antenna break off, leaving a pile of shards!")
 	max_integrity = 100
 	light_color = "#AF0AAF"
 	debris = list(/obj/item/clockwork/alloy_shards/large = 2, \

@@ -446,12 +446,12 @@ Class Procs:
 		if(!can_be_unfasten || can_be_unfasten == FAILED_UNFASTEN)
 			return can_be_unfasten
 		if(time)
-			to_chat(user, "<span class='notice'>You begin [anchored ? "un" : ""]securing [src]...</span>")
+			to_chat(user, SPAN_NOTICE("You begin [anchored ? "un" : ""]securing [src]..."))
 		I.play_tool_sound(src, 50)
 		var/prev_anchored = anchored
 		//as long as we're the same anchored state and we're either on a floor or are anchored, toggle our anchored state
 		if(I.use_tool(src, user, time, extra_checks = CALLBACK(src, .proc/unfasten_wrench_check, prev_anchored, user)))
-			to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [src].</span>")
+			to_chat(user, SPAN_NOTICE("You [anchored ? "un" : ""]secure [src]."))
 			setAnchored(!anchored)
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			SEND_SIGNAL(src, COMSIG_OBJ_DEFAULT_UNFASTEN_WRENCH, anchored)

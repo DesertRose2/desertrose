@@ -285,22 +285,22 @@
 // Description for when turning their baton "on"
 /obj/item/melee/classic_baton/proc/get_on_description()
 	. = list()
-	.["local_on"] = "<span class ='warning'>You extend the baton.</span>"
-	.["local_off"] = "<span class ='notice'>You collapse the baton.</span>"
+	.["local_on"] = SPAN_WARNING("You extend the baton.")
+	.["local_off"] = SPAN_NOTICE("You collapse the baton.")
 	return .
 
 // Default message for stunning mob.
 /obj/item/melee/classic_baton/proc/get_stun_description(mob/living/target, mob/living/user)
 	. = list()
 	.["visible"] =  SPAN_DANGER("[user] has knocked down [target] with [src]!")
-	.["local"] = "<span class ='danger'>[user] has knocked down [target] with [src]!</span>"
+	.["local"] = SPAN_DANGER("[user] has knocked down [target] with [src]!")
 	return .
 
 // Default message for stunning a silicon.
 /obj/item/melee/classic_baton/proc/get_silicon_stun_description(mob/living/target, mob/living/user)
 	. = list()
-	.["visible"] = "<span class='danger'>[user] pulses [target]'s sensors with the baton!</span>"
-	.["local"] = "<span class='danger'>You pulse [target]'s sensors with the baton!</span>"
+	.["visible"] = SPAN_DANGER("[user] pulses [target]'s sensors with the baton!")
+	.["local"] = SPAN_DANGER("You pulse [target]'s sensors with the baton!")
 	return .
 
 // Are we applying any special effects when we stun to carbon

@@ -38,7 +38,7 @@
 	next_use = world.time + rand(30,50)
 	lastuser = M.ckey
 	//blind message is the same because not everyone brings night vision to seances
-	var/msg = "<span class='notice'>The planchette slowly moves... and stops at the letter \"[planchette]\".</span>"
+	var/msg = SPAN_NOTICE("The planchette slowly moves... and stops at the letter \"[planchette]\".")
 	visible_message(msg,"",msg)
 
 /obj/structure/spirit_board/proc/spirit_board_checks(mob/M)

@@ -132,7 +132,7 @@
 			to_chat(user, SPAN_NOTICE("The power cell slot in [src]'s torso is empty."))
 		return
 
-	to_chat(user, "<span class='notice'>You [chest.cell ? "replace [src]'s [chest.cell.name] with [temp_cell]" : "insert [temp_cell] into [src]"].</span>")
+	to_chat(user, SPAN_NOTICE("You [chest.cell ? "replace [src]'s [chest.cell.name] with [temp_cell]" : "insert [temp_cell] into [src]"]."))
 	chest.cell = temp_cell
 	return TRUE
 

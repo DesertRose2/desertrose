@@ -85,22 +85,22 @@
 	var/tdelta = round(world.time - H.timeofdeath)
 
 	if (H.suiciding || (HAS_TRAIT(H, TRAIT_NOCLONE)))
-		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].</span>"
+		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].")
 	else if (H.hellbound)
-		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You notice a small tatoo with the words \"Property of Satan\" branded just above the right ventricle.</span>"
+		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You notice a small tatoo with the words \"Property of Satan\" branded just above the right ventricle.")
 	else if(tdelta > (DEFIB_TIME_LIMIT * 10))
-		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. It appears their body decomposed beyond repair.</span>"
+		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. It appears their body decomposed beyond repair.")
 	else if(total_burn >= 180 || total_brute >= 180)
-		failed = "<span class='warning'>The [tool] zaps the heart, inducing a sudden contraction, but it appears [H]'s body is too damaged to revive presently.</span>"
+		failed = SPAN_WARNING("The [tool] zaps the heart, inducing a sudden contraction, but it appears [H]'s body is too damaged to revive presently.")
 	else if(H.get_ghost())
-		failed = "<span class='warning'>The [tool] zaps the heart, inducing several contractions before dying down, but there's no spark of life in [H]'s eyes. It may be worth it to try again, however.</span>"
+		failed = SPAN_WARNING("The [tool] zaps the heart, inducing several contractions before dying down, but there's no spark of life in [H]'s eyes. It may be worth it to try again, however.")
 	else
 		var/obj/item/organ/brain/BR = H.getorgan(/obj/item/organ/brain)
 		if(BR)
 			if(H.suiciding || BR.brainmob?.suiciding)
-				failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].</span>"
+				failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].")
 		else
-			failed = "<span class='warning'>The [tool] zaps the heart, restarting the heart, but without a brain the contractions quickly die out.</span>"
+			failed = SPAN_WARNING("The [tool] zaps the heart, restarting the heart, but without a brain the contractions quickly die out.")
 
 
 	if(failed)

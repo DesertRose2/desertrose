@@ -183,7 +183,7 @@
 
 /// if someone is using ointment on our burns
 /datum/wound/burn/proc/ointment(obj/item/stack/medical/ointment/I, mob/user)
-	user.visible_message(SPAN_NOTICE("[user] begins applying [I] to [victim]'s [limb.name]..."), "<span class='notice'>You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]...</span>")
+	user.visible_message(SPAN_NOTICE("[user] begins applying [I] to [victim]'s [limb.name]..."), SPAN_NOTICE("You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]..."))
 	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
@@ -200,7 +200,7 @@
 
 /// if someone is using mesh on our burns
 /datum/wound/burn/proc/mesh(obj/item/stack/medical/mesh/I, mob/user)
-	user.visible_message(SPAN_NOTICE("[user] begins wrapping [victim]'s [limb.name] with [I]..."), "<span class='notice'>You begin wrapping [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
+	user.visible_message(SPAN_NOTICE("[user] begins wrapping [victim]'s [limb.name] with [I]..."), SPAN_NOTICE("You begin wrapping [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
@@ -224,7 +224,7 @@
 		to_chat(user, SPAN_NOTICE("There's no infection to treat on [victim]'s [limb.name]!"))
 		return
 
-	user.visible_message(SPAN_NOTICE("[user] flashes the burns on [victim]'s [limb] with [I]."), "<span class='notice'>You flash the burns on [user == victim ? "your" : "[victim]'s"] [limb.name] with [I].</span>", vision_distance=COMBAT_MESSAGE_RANGE)
+	user.visible_message(SPAN_NOTICE("[user] flashes the burns on [victim]'s [limb] with [I]."), SPAN_NOTICE("You flash the burns on [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]."), vision_distance=COMBAT_MESSAGE_RANGE)
 	sanitization += I.uv_power
 	COOLDOWN_START(I, uv_cooldown, I.uv_cooldown_length)
 

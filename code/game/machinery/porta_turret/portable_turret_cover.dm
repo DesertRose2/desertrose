@@ -56,7 +56,7 @@
 	else if(I.GetID())
 		if(parent_turret.allowed(user))
 			parent_turret.locked = !parent_turret.locked
-			to_chat(user, "<span class='notice'>Controls are now [parent_turret.locked ? "locked" : "unlocked"].</span>")
+			to_chat(user, SPAN_NOTICE("Controls are now [parent_turret.locked ? "locked" : "unlocked"]."))
 			updateUsrDialog()
 		else
 			to_chat(user, SPAN_NOTICE("Access denied."))

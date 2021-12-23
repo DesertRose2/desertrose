@@ -24,7 +24,7 @@
 
 /obj/item/radio/intercom/ratvar/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/screwdriver))
-		to_chat(user, "<span class='danger'>[src] is fastened to the wall with [is_servant_of_ratvar(user) ? "replicant alloy" : "some material you've never seen"], and can't be removed.</span>")
+		to_chat(user, SPAN_DANGER("[src] is fastened to the wall with [is_servant_of_ratvar(user) ? "replicant alloy" : "some material you've never seen"], and can't be removed."))
 		return //no unfastening!
 	. = ..()
 

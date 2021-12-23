@@ -94,10 +94,10 @@
 /obj/structure/toilet/attackby(obj/item/I, mob/living/user, params)
 	add_fingerprint(user)
 	if(istype(I, /obj/item/crowbar))
-		to_chat(user, "<span class='notice'>You start to [cistern ? "replace the lid on the cistern" : "lift the lid off the cistern"]...</span>")
+		to_chat(user, SPAN_NOTICE("You start to [cistern ? "replace the lid on the cistern" : "lift the lid off the cistern"]..."))
 		playsound(loc, 'sound/effects/stonedoor_openclose.ogg', 50, 1)
 		if(I.use_tool(src, user, 30))
-			user.visible_message("[user] [cistern ? "replaces the lid on the cistern" : "lifts the lid off the cistern"]!", "<span class='notice'>You [cistern ? "replace the lid on the cistern" : "lift the lid off the cistern"]!</span>", "<span class='italics'>You hear grinding porcelain.</span>")
+			user.visible_message("[user] [cistern ? "replaces the lid on the cistern" : "lifts the lid off the cistern"]!", SPAN_NOTICE("You [cistern ? "replace the lid on the cistern" : "lift the lid off the cistern"]!"), "<span class='italics'>You hear grinding porcelain.</span>")
 			cistern = !cistern
 			update_icon()
 	else if(I.tool_behaviour == TOOL_WRENCH && !(flags_1&NODECONSTRUCT_1))
@@ -217,11 +217,11 @@
 /obj/structure/urinal/screwdriver_act(mob/living/user, obj/item/I)
 	if(..())
 		return TRUE
-	to_chat(user, "<span class='notice'>You start to [exposed ? "screw the cap back into place" : "unscrew the cap to the drain protector"]...</span>")
+	to_chat(user, SPAN_NOTICE("You start to [exposed ? "screw the cap back into place" : "unscrew the cap to the drain protector"]..."))
 	playsound(loc, 'sound/effects/stonedoor_openclose.ogg', 50, 1)
 	if(I.use_tool(src, user, 20))
 		user.visible_message("[user] [exposed ? "screws the cap back into place" : "unscrew the cap to the drain protector"]!",
-			"<span class='notice'>You [exposed ? "screw the cap back into place" : "unscrew the cap on the drain"]!</span>",
+			SPAN_NOTICE("You [exposed ? "screw the cap back into place" : "unscrew the cap on the drain"]!"),
 			"<span class='italics'>You hear metal and squishing noises.</span>")
 		exposed = !exposed
 	return TRUE
@@ -505,8 +505,8 @@
 	var/washing_face = 0
 	if(selected_area in list(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_PRECISE_EYES))
 		washing_face = 1
-	user.visible_message("<span class='notice'>[user] starts washing [user.p_their()] [washing_face ? "face" : "hands"]...</span>", \
-						"<span class='notice'>You start washing your [washing_face ? "face" : "hands"]...</span>")
+	user.visible_message(SPAN_NOTICE("[user] starts washing [user.p_their()] [washing_face ? "face" : "hands"]..."), \
+						SPAN_NOTICE("You start washing your [washing_face ? "face" : "hands"]..."))
 	busy = TRUE
 
 	if(!do_after(user, 40, target = src))
@@ -515,8 +515,8 @@
 
 	busy = FALSE
 
-	user.visible_message("<span class='notice'>[user] washes [user.p_their()] [washing_face ? "face" : "hands"] using [src].</span>", \
-						"<span class='notice'>You wash your [washing_face ? "face" : "hands"] using [src].</span>")
+	user.visible_message(SPAN_NOTICE("[user] washes [user.p_their()] [washing_face ? "face" : "hands"] using [src]."), \
+						SPAN_NOTICE("You wash your [washing_face ? "face" : "hands"] using [src]."))
 	if(washing_face)
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user

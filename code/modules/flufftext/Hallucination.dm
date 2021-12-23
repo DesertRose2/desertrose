@@ -751,7 +751,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		message_pool.Add("<B>[other]</B> [pick("sneezes","coughs")].")
 
 	message_pool.Add(SPAN_NOTICE("You hear something squeezing through the ducts..."), \
-		"<span class='notice'>Your [pick("arm", "leg", "back", "head")] itches.</span>",\
+		SPAN_NOTICE("Your [pick("arm", "leg", "back", "head")] itches."),\
 		"<span class='warning'>You feel [pick("hot","cold","dry","wet","woozy","faint")].</span>",
 		SPAN_WARNING("Your stomach rumbles."),
 		SPAN_WARNING("Your head hurts."),

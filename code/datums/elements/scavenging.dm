@@ -67,7 +67,7 @@
 	if(!length(methods))
 		return
 	var/text = english_list(methods, "", " or ")
-	examine_list += "<span class='notice'>Looks like [source.p_they()] can be scavenged [length(tool_types) ? "with" : ""][length(methods == 1) ? "" : "either "][length(tool_types) ? "a " : ""][text]</span>"
+	examine_list += SPAN_NOTICE("Looks like [source.p_they()] can be scavenged [length(tool_types) ? "with" : ""][length(methods == 1) ? "" : "either "][length(tool_types) ? "a " : ""][text]")
 
 /datum/element/scavenging/proc/scavenge_barehanded(atom/source, mob/user)
 	scavenge(source, user, 1)
@@ -93,7 +93,7 @@
 	var/len_messages = length(search_texts)
 	var/msg_first_person
 	if(len_messages >= 2)
-		msg_first_person = "<span class='notice'>You [progress_done ? ", resume a ditched task and " : ""][search_texts[2]] [source].</span>"
+		msg_first_person = SPAN_NOTICE("You [progress_done ? ", resume a ditched task and " : ""][search_texts[2]] [source].")
 	var/msg_blind
 	if(len_messages >= 3)
 		msg_blind = "<span class='italic'>[search_texts[3]]</span>"

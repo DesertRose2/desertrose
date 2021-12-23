@@ -29,7 +29,7 @@
 		amount_per_transfer_from_this = squirt_amount
 	else
 		amount_per_transfer_from_this = initial(amount_per_transfer_from_this)
-	to_chat(user, "<span class='notice'>You will now apply the medspray's contents in [squirt_mode ? "short bursts":"extended sprays"]. You'll now use [amount_per_transfer_from_this] units per use.</span>")
+	to_chat(user, SPAN_NOTICE("You will now apply the medspray's contents in [squirt_mode ? "short bursts":"extended sprays"]. You'll now use [amount_per_transfer_from_this] units per use."))
 
 /obj/item/reagent_containers/medspray/attack(mob/living/L, mob/user, def_zone)
 	INVOKE_ASYNC(src, .proc/attempt_spray, L, user, def_zone)		// this is shitcode because the params for attack aren't even right but i'm not in the mood to refactor right now.

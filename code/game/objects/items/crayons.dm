@@ -159,7 +159,7 @@
 	if(user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		if(has_cap)
 			is_capped = !is_capped
-			to_chat(user, "<span class='notice'>The cap on [src] is now [is_capped ? "on" : "off"].</span>")
+			to_chat(user, SPAN_NOTICE("The cap on [src] is now [is_capped ? "on" : "off"]."))
 			update_icon()
 
 /obj/item/toy/crayon/CtrlClick(mob/user)
@@ -625,7 +625,7 @@
 		. += "It has [charges_left] use\s left."
 	else
 		. += "It is empty."
-	. += "<span class='notice'>Alt-click [src] to [ is_capped ? "take the cap off" : "put the cap on"].</span>"
+	. += SPAN_NOTICE("Alt-click [src] to [ is_capped ? "take the cap off" : "put the cap on"].")
 
 /obj/item/toy/crayon/spraycan/draw_on(atom/target, mob/user, proximity, params)
 	if(!proximity)

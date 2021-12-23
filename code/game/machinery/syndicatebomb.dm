@@ -133,7 +133,7 @@
 	else if(istype(I, /obj/item/screwdriver))
 		open_panel = !open_panel
 		update_icon()
-		to_chat(user, "<span class='notice'>You [open_panel ? "open" : "close"] the wire panel.</span>")
+		to_chat(user, SPAN_NOTICE("You [open_panel ? "open" : "close"] the wire panel."))
 
 	else if(is_wire_tool(I) && open_panel)
 		wires.interact(user)

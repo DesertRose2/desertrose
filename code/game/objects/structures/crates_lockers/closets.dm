@@ -114,7 +114,7 @@
 	else if(broken)
 		. += "<span class='notice'>The lock is <b>screwed</b> in.</span>"
 	else if(secure)
-		. += "<span class='notice'>Alt-click to [locked ? "unlock" : "lock"].</span>"
+		. += SPAN_NOTICE("Alt-click to [locked ? "unlock" : "lock"].")
 	if(isliving(user))
 		var/mob/living/L = user
 		if(HAS_TRAIT(L, TRAIT_SKITTISH))
@@ -175,8 +175,8 @@
 	if(!can_lock(user))
 		return
 	locked = !locked
-	user.visible_message("<span class='notice'>[user] [locked ? null : "un"]locks [src].</span>",
-	"<span class='notice'>You [locked ? null : "un"]lock [src].</span>")
+	user.visible_message(SPAN_NOTICE("[user] [locked ? null : "un"]locks [src]."),
+	SPAN_NOTICE("You [locked ? null : "un"]lock [src]."))
 	update_icon()
 
 /obj/structure/closet/proc/dump_contents(override = TRUE) //Override is for not revealing the locker electronics when you open the locker, for example
@@ -373,8 +373,8 @@
 			return
 		setAnchored(!anchored)
 		W.play_tool_sound(src, 75)
-		user.visible_message("<span class='notice'>[user] [anchored ? "anchored" : "unanchored"] \the [src] [anchored ? "to" : "from"] the ground.</span>", \
-						"<span class='notice'>You [anchored ? "anchored" : "unanchored"] \the [src] [anchored ? "to" : "from"] the ground.</span>", \
+		user.visible_message(SPAN_NOTICE("[user] [anchored ? "anchored" : "unanchored"] \the [src] [anchored ? "to" : "from"] the ground."), \
+						SPAN_NOTICE("You [anchored ? "anchored" : "unanchored"] \the [src] [anchored ? "to" : "from"] the ground."), \
 						"<span class='italics'>You hear a ratchet.</span>")
 		if(anchored)
 			storage_capacity = anchored_storage_capacity
@@ -387,16 +387,16 @@
 			if(istype(W, /obj/item/weldingtool))
 				if(!W.tool_start_check(user, amount=0))
 					return
-				to_chat(user, "<span class='notice'>You begin [welder ? "slicing" : "deconstructing"] \the [src] apart...</span>")
+				to_chat(user, SPAN_NOTICE("You begin [welder ? "slicing" : "deconstructing"] \the [src] apart..."))
 				welder = TRUE
 			if(W.use_tool(src, user, 40, volume=50))
 				if(eigen_teleport)
-					to_chat(user, "<span class='notice'>The unusual construction of \the [src] makes it impossible to [welder ? "slice" : "deconstruct"]!</span>")
+					to_chat(user, SPAN_NOTICE("The unusual construction of \the [src] makes it impossible to [welder ? "slice" : "deconstruct"]!"))
 					return
 				if(!opened)
 					return
-				user.visible_message("<span class='notice'>[user] [welder ? "slice" : "deconstruct"]s apart \the [src].</span>",
-								"<span class='notice'>You [welder ? "slice" : "deconstruct"] \the [src] apart with \the [W].</span>",
+				user.visible_message(SPAN_NOTICE("[user] [welder ? "slice" : "deconstruct"]s apart \the [src]."),
+								SPAN_NOTICE("You [welder ? "slice" : "deconstruct"] \the [src] apart with \the [W]."),
 								"<span class='italics'>You hear [welder ? "welding" : "rustling of screws and metal"].</span>")
 				deconstruct(TRUE)
 				return
@@ -410,7 +410,7 @@
 		if(!W.tool_start_check(user, amount=0))
 			return
 
-		to_chat(user, "<span class='notice'>You begin [welded ? "unwelding":"welding"] \the [src]...</span>")
+		to_chat(user, SPAN_NOTICE("You begin [welded ? "unwelding":"welding"] \the [src]..."))
 		if(W.use_tool(src, user, 40, volume=50))
 			if(eigen_teleport)
 				to_chat(user, SPAN_NOTICE("The unusual construction of \the [src] makes it impossible to weld!"))
@@ -419,8 +419,8 @@
 				return
 			welded = !welded
 			after_weld(welded)
-			user.visible_message("<span class='notice'>[user] [welded ? "welds shut" : "unwelds"] \the [src].</span>",
-							"<span class='notice'>You [welded ? "weld" : "unwelded"] \the [src] with \the [W].</span>",
+			user.visible_message(SPAN_NOTICE("[user] [welded ? "welds shut" : "unwelds"] \the [src]."),
+							SPAN_NOTICE("You [welded ? "weld" : "unwelded"] \the [src] with \the [W]."),
 							"<span class='italics'>You hear welding.</span>")
 			update_icon()
 
@@ -455,8 +455,8 @@
 	var/turf/T = get_turf(src)
 	var/list/targets = list(O, src)
 	add_fingerprint(user)
-	user.visible_message("<span class='warning'>[user] [actuallyismob ? "tries to ":""]stuff [O] into [src].</span>", \
-						"<span class='warning'>You [actuallyismob ? "try to ":""]stuff [O] into [src].</span>", \
+	user.visible_message(SPAN_WARNING("[user] [actuallyismob ? "tries to ":""]stuff [O] into [src]."), \
+						SPAN_WARNING("You [actuallyismob ? "try to ":""]stuff [O] into [src]."), \
 						"<span class='italics'>You hear clanging.</span>")
 	if(actuallyismob)
 		if(do_after_mob(user, targets, 40))

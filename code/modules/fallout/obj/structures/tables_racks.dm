@@ -52,7 +52,7 @@
 				deconstruct(TRUE)
 			return
 		if(istype(I, /obj/item/wrench))
-			to_chat(user, "<span class='notice'>You [anchored ? "unwrench" : "wrench"] the [src].</span>")
+			to_chat(user, SPAN_NOTICE("You [anchored ? "unwrench" : "wrench"] the [src]."))
 			anchored = !anchored
 		if(istype(I, /obj/item/crowbar) && deconstruction_ready)
 			to_chat(user, SPAN_NOTICE("You start deconstructing [src]..."))

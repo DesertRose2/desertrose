@@ -43,14 +43,14 @@
 
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The shoes are [on ? "enabled" : "disabled"].</span>"
+	. += SPAN_NOTICE("The shoes are [on ? "enabled" : "disabled"].")
 
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/ui_action_click(mob/user)
 	var/datum/component/material_container/bananium = GetComponent(/datum/component/material_container)
 	if(bananium.get_material_amount(/datum/material/bananium))
 		on = !on
 		update_icon()
-		to_chat(user, "<span class='notice'>You [on ? "activate" : "deactivate"] the prototype shoes.</span>")
+		to_chat(user, SPAN_NOTICE("You [on ? "activate" : "deactivate"] the prototype shoes."))
 		if(!always_noslip)
 			if(on)
 				clothing_flags |= NOSLIP

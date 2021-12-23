@@ -154,7 +154,7 @@
 	if(istype(W, /obj/item/card/id)||istype(W, /obj/item/pda))
 		if(bot_core.allowed(user) && !open && !emagged)
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] \the [src] behaviour controls.</span>")
+			to_chat(user, SPAN_NOTICE("You [ locked ? "lock" : "unlock"] \the [src] behaviour controls."))
 		else
 			if(emagged)
 				to_chat(user, SPAN_WARNING("ERROR"))

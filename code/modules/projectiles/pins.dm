@@ -7,7 +7,7 @@
 	flags_1 = CONDUCT_1
 	w_class = WEIGHT_CLASS_TINY
 	attack_verb = list("poked")
-	var/fail_message = "<span class='warning'>INVALID USER.</span>"
+	var/fail_message = SPAN_WARNING("INVALID USER.")
 	var/selfdestruct = 0 // Explode when user check is failed.
 	var/force_replace = 0 // Can forcefully replace other pins.
 	var/pin_removeable = 0 // Can be replaced by any pin.
@@ -84,7 +84,7 @@
 /obj/item/firing_pin/test_range
 	name = "test-range firing pin"
 	desc = "This safety firing pin allows weapons to be fired within proximity to a firing range."
-	fail_message = "<span class='warning'>TEST RANGE CHECK FAILED.</span>"
+	fail_message = SPAN_WARNING("TEST RANGE CHECK FAILED.")
 	pin_removeable = TRUE
 
 /obj/item/firing_pin/test_range/pin_auth(mob/living/user)
@@ -99,7 +99,7 @@
 /obj/item/firing_pin/implant
 	name = "implant-keyed firing pin"
 	desc = "This is a security firing pin which only authorizes users who are implanted with a certain device."
-	fail_message = "<span class='warning'>IMPLANT CHECK FAILED.</span>"
+	fail_message = SPAN_WARNING("IMPLANT CHECK FAILED.")
 	var/obj/item/implant/req_implant = null
 
 /obj/item/firing_pin/implant/pin_auth(mob/living/user)
@@ -128,7 +128,7 @@
 	name = "hilarious firing pin"
 	desc = "Advanced clowntech that can convert any firearm into a far more useful object."
 	color = "#FFFF00"
-	fail_message = "<span class='warning'>HONK!</span>"
+	fail_message = SPAN_WARNING("HONK!")
 	force_replace = TRUE
 
 /obj/item/firing_pin/clown/pin_auth(mob/living/user)
@@ -163,7 +163,7 @@
 	name = "DNA-keyed firing pin"
 	desc = "This is a DNA-locked firing pin which only authorizes one user. Attempt to fire once to DNA-link."
 	icon_state = "firing_pin_dna"
-	fail_message = "<span class='warning'>DNA CHECK FAILED.</span>"
+	fail_message = SPAN_WARNING("DNA CHECK FAILED.")
 	var/unique_enzymes = null
 
 /obj/item/firing_pin/dna/afterattack(atom/target, mob/user, proximity_flag)
@@ -205,7 +205,7 @@
 /obj/item/firing_pin/tag
 	name = "laser tag firing pin"
 	desc = "A recreational firing pin, used in laser tag units to ensure users have their vests on."
-	fail_message = "<span class='warning'>SUIT CHECK FAILED.</span>"
+	fail_message = SPAN_WARNING("SUIT CHECK FAILED.")
 	var/obj/item/clothing/suit/suit_requirement = null
 	var/tagcolor = ""
 
@@ -318,7 +318,7 @@
 	name = "outback firing pin"
 	desc = "A firing pin used by the austrailian defense force, retrofit to prevent weapon discharge on the station."
 	icon_state = "firing_pin_explorer"
-	fail_message = "<span class='warning'>CANNOT FIRE WHILE ON STATION, MATE!</span>"
+	fail_message = SPAN_WARNING("CANNOT FIRE WHILE ON STATION, MATE!")
 
 // This checks that the user isn't on the station Z-level.
 /obj/item/firing_pin/explorer/pin_auth(mob/living/user)

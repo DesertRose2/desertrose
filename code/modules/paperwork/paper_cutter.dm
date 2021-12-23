@@ -62,7 +62,7 @@
 		return
 	if(P.tool_behaviour == TOOL_SCREWDRIVER && storedcutter)
 		P.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>[storedcutter] has been [cuttersecured ? "unsecured" : "secured"].</span>")
+		to_chat(user, SPAN_NOTICE("[storedcutter] has been [cuttersecured ? "unsecured" : "secured"]."))
 		cuttersecured = !cuttersecured
 		return
 	..()

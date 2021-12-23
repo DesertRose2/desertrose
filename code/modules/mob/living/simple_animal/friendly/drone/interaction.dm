@@ -60,7 +60,7 @@
 			to_chat(user, SPAN_NOTICE("You start to tighten loose screws on [src]..."))
 			if(I.use_tool(src, user, 80))
 				adjustBruteLoss(-getBruteLoss())
-				visible_message("<span class='notice'>[user] tightens [src == user ? "[user.p_their()]" : "[src]'s"] loose screws!</span>", "<span class='notice'>You tighten [src == user ? "your" : "[src]'s"] loose screws.</span>")
+				visible_message(SPAN_NOTICE("[user] tightens [src == user ? "[user.p_their()]" : "[src]'s"] loose screws!"), SPAN_NOTICE("You tighten [src == user ? "your" : "[src]'s"] loose screws."))
 			else
 				to_chat(user, SPAN_WARNING("You need to remain still to tighten [src]'s screws!"))
 		else

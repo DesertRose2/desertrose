@@ -118,7 +118,7 @@
 			L.adjustToxLoss(totaldamage * 0.5, TRUE, TRUE)
 			clockwork_say(ranged_ability_user, text2ratvar("[has_holy_water ? "Heal tainted" : "Mend wounded"] flesh!"))
 			log_combat(ranged_ability_user, L, "healed with Sentinel's Compromise")
-			L.visible_message("<span class='warning'>A blue light washes over [L], [has_holy_water ? "causing [L.p_them()] to briefly glow as it mends" : " mending"] [L.p_their()] bruises and burns!</span>", \
+			L.visible_message(SPAN_WARNING("A blue light washes over [L], [has_holy_water ? "causing [L.p_them()] to briefly glow as it mends" : " mending"] [L.p_their()] bruises and burns!"), \
 			"<span class='heavy_brass'>You feel Inath-neq's power healing your wounds[has_holy_water ? " and purging the darkness within you" : ""], but a deep nausea overcomes you!</span>")
 		else
 			clockwork_say(ranged_ability_user, text2ratvar("Purge foul darkness!"))

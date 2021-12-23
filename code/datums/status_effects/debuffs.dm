@@ -829,7 +829,7 @@
 	id = "ichorial_stain"
 	status_type = STATUS_EFFECT_UNIQUE
 	duration = 600
-	examine_text = "<span class='warning'>SUBJECTPRONOUN is drenched in thick, blue ichor!</span>"
+	examine_text = SPAN_WARNING("SUBJECTPRONOUN is drenched in thick, blue ichor!")
 	alert_type = /obj/screen/alert/status_effect/ichorial_stain
 
 /datum/status_effect/ichorial_stain/on_apply()
@@ -920,7 +920,7 @@
 	status_type = STATUS_EFFECT_UNIQUE
 	duration = 300
 	tick_interval = 10
-	examine_text = "<span class='warning'>SUBJECTPRONOUN seems slow and unfocused.</span>"
+	examine_text = SPAN_WARNING("SUBJECTPRONOUN seems slow and unfocused.")
 	var/stun = TRUE
 	alert_type = /obj/screen/alert/status_effect/trance
 
@@ -1064,25 +1064,25 @@
 	switch(msg_stage)
 		if(0 to 300)
 			if(prob(1))
-				fake_msg = pick("<span class='warning'>[pick("Your head hurts.", "Your head pounds.")]</span>",
-				"<span class='warning'>[pick("You're having difficulty breathing.", "Your breathing becomes heavy.")]</span>",
-				"<span class='warning'>[pick("You feel dizzy.", "Your head spins.")]</span>",
+				fake_msg = pick(SPAN_WARNING("[pick("Your head hurts.", "Your head pounds.")]"),
+				SPAN_WARNING("[pick("You're having difficulty breathing.", "Your breathing becomes heavy.")]"),
+				SPAN_WARNING("[pick("You feel dizzy.", "Your head spins.")]"),
 				"<span notice='warning'>[pick("You swallow excess mucus.", "You lightly cough.")]</span>",
-				"<span class='warning'>[pick("Your head hurts.", "Your mind blanks for a moment.")]</span>",
-				"<span class='warning'>[pick("Your throat hurts.", "You clear your throat.")]</span>")
+				SPAN_WARNING("[pick("Your head hurts.", "Your mind blanks for a moment.")]"),
+				SPAN_WARNING("[pick("Your throat hurts.", "You clear your throat.")]"))
 		if(301 to 600)
 			if(prob(2))
-				fake_msg = pick("<span class='warning'>[pick("Your head hurts a lot.", "Your head pounds incessantly.")]</span>",
-				"<span class='warning'>[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]</span>",
+				fake_msg = pick(SPAN_WARNING("[pick("Your head hurts a lot.", "Your head pounds incessantly.")]"),
+				SPAN_WARNING("[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]"),
 				"<span class='warning'>You feel very [pick("dizzy","woozy","faint")].</span>",
-				"<span class='warning'>[pick("You hear a ringing in your ear.", "Your ears pop.")]</span>",
+				SPAN_WARNING("[pick("You hear a ringing in your ear.", "Your ears pop.")]"),
 				SPAN_WARNING("You nod off for a moment."))
 		else
 			if(prob(3))
 				if(prob(50))// coin flip to throw a message or an emote
 					fake_msg = pick("<span class='userdanger'>[pick("Your head hurts!", "You feel a burning knife inside your brain!", "A wave of pain fills your head!")]</span>",
 					"<span class='userdanger'>[pick("Your lungs hurt!", "It hurts to breathe!")]</span>",
-					"<span class='warning'>[pick("You feel nauseated.", "You feel like you're going to throw up!")]</span>")
+					SPAN_WARNING("[pick("You feel nauseated.", "You feel like you're going to throw up!")]"))
 				else
 					fake_emote = pick("cough", "sniff", "sneeze")
 	if(fake_emote)

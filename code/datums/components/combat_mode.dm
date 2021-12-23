@@ -79,7 +79,7 @@
 			combatmessagecooldown = world.time + 10 SECONDS
 			if(!forced)
 				if(source.a_intent != INTENT_HELP)
-					source.visible_message("<span class='warning'>[source] [source.resting ? "tenses up" : "drops into a combative stance"].</span>", self_message)
+					source.visible_message(SPAN_WARNING("[source] [source.resting ? "tenses up" : "drops into a combative stance"]."), self_message)
 				else
 					source.visible_message("<span class='notice'>[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")].</span>")
 			else

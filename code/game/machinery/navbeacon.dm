@@ -92,7 +92,7 @@
 	if(istype(I, /obj/item/screwdriver))
 		open = !open
 
-		user.visible_message("[user] [open ? "opens" : "closes"] the beacon's cover.", "<span class='notice'>You [open ? "open" : "close"] the beacon's cover.</span>")
+		user.visible_message("[user] [open ? "opens" : "closes"] the beacon's cover.", SPAN_NOTICE("You [open ? "open" : "close"] the beacon's cover."))
 
 		update_icon()
 
@@ -100,7 +100,7 @@
 		if(open)
 			if (src.allowed(user))
 				src.locked = !src.locked
-				to_chat(user, "<span class='notice'>Controls are now [src.locked ? "locked" : "unlocked"].</span>")
+				to_chat(user, SPAN_NOTICE("Controls are now [src.locked ? "locked" : "unlocked"]."))
 			else
 				to_chat(user, SPAN_DANGER("Access denied."))
 			updateDialog()

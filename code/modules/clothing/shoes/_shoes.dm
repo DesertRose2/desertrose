@@ -176,10 +176,10 @@
 		if(INTERACTING_WITH(user, our_guy))
 			to_chat(user, SPAN_WARNING("You're already interacting with [src]!"))
 			return
-		user.visible_message("<span class='notice'>[user] begins [tied ? "unknotting" : "tying"] the laces of [user.p_their()] [src.name].</span>", "<span class='notice'>You begin [tied ? "unknotting" : "tying"] the laces of your [src.name]...</span>")
+		user.visible_message(SPAN_NOTICE("[user] begins [tied ? "unknotting" : "tying"] the laces of [user.p_their()] [src.name]."), SPAN_NOTICE("You begin [tied ? "unknotting" : "tying"] the laces of your [src.name]..."))
 
 		if(do_after(user, lace_time, needhand=TRUE, target=our_guy, extra_checks=CALLBACK(src, .proc/still_shoed, our_guy)))
-			to_chat(user, "<span class='notice'>You [tied ? "unknot" : "tie"] the laces of your [src.name].</span>")
+			to_chat(user, SPAN_NOTICE("You [tied ? "unknot" : "tie"] the laces of your [src.name]."))
 			if(tied == SHOES_UNTIED)
 				adjust_laces(SHOES_TIED, user)
 			else
@@ -198,18 +198,18 @@
 			return
 
 		var/mod_time = lace_time
-		to_chat(user, "<span class='notice'>You quietly set to work [tied ? "untying" : "knotting"] [loc]'s [src.name]...</span>")
+		to_chat(user, SPAN_NOTICE("You quietly set to work [tied ? "untying" : "knotting"] [loc]'s [src.name]..."))
 		if(HAS_TRAIT(user, TRAIT_CLUMSY)) // based clowns trained their whole lives for this
 			mod_time *= 0.75
 
 		if(do_after(user, mod_time, needhand=TRUE, target=our_guy, extra_checks=CALLBACK(src, .proc/still_shoed, our_guy)))
-			to_chat(user, "<span class='notice'>You [tied ? "untie" : "knot"] the laces on [loc]'s [src.name].</span>")
+			to_chat(user, SPAN_NOTICE("You [tied ? "untie" : "knot"] the laces on [loc]'s [src.name]."))
 			if(tied == SHOES_UNTIED)
 				adjust_laces(SHOES_KNOTTED, user)
 			else
 				adjust_laces(SHOES_UNTIED, user)
 		else // if one of us moved
-			user.visible_message("<span class='danger'>[our_guy] stamps on [user]'s hand, mid-shoelace [tied ? "knotting" : "untying"]!</span>", "<span class='userdanger'>Ow! [our_guy] stamps on your hand!</span>", list(our_guy))
+			user.visible_message(SPAN_DANGER("[our_guy] stamps on [user]'s hand, mid-shoelace [tied ? "knotting" : "untying"]!"), "<span class='userdanger'>Ow! [our_guy] stamps on your hand!</span>", list(our_guy))
 			to_chat(our_guy, "<span class='userdanger'>You stamp on [user]'s hand! What the- [user.p_they()] [user.p_were()] [tied ? "knotting" : "untying"] your shoelaces!</span>")
 			user.emote("scream")
 			if(istype(L))
@@ -253,7 +253,7 @@
 				for(var/obj/item/I in our_guy.held_items)
 					have_anything = TRUE
 					our_guy.accident(I)
-				to_chat(our_guy, "<span class='danger'>You trip on your shoelaces a bit[have_anything ? ", flinging what you were holding" : ""]!</span>")
+				to_chat(our_guy, SPAN_DANGER("You trip on your shoelaces a bit[have_anything ? ", flinging what you were holding" : ""]!"))
 
 			if(14 to 25) // 1.3ish% chance to stumble and be a bit off balance (like being disarmed)
 				to_chat(our_guy, SPAN_DANGER("You stumble a bit on your untied shoelaces!"))
@@ -281,8 +281,8 @@
 		to_chat(user, SPAN_WARNING("You're already interacting with [src]!"))
 		return
 
-	to_chat(user, "<span class='notice'>You begin [tied ? "untying" : "tying"] the laces on [src]...</span>")
+	to_chat(user, SPAN_NOTICE("You begin [tied ? "untying" : "tying"] the laces on [src]..."))
 
 	if(do_after(user, lace_time, needhand=TRUE, target=src,extra_checks=CALLBACK(src, .proc/still_shoed, user)))
-		to_chat(user, "<span class='notice'>You [tied ? "untie" : "tie"] the laces on [src].</span>")
+		to_chat(user, SPAN_NOTICE("You [tied ? "untie" : "tie"] the laces on [src]."))
 		adjust_laces(tied ? SHOES_TIED : SHOES_UNTIED, user)

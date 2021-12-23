@@ -16,11 +16,11 @@
 		return
 	var/msg
 	if(!skip_can_cast && !can_cast(user, FALSE, TRUE))
-		msg = "<span class='warning'>You can no longer cast [name]!</span>"
+		msg = SPAN_WARNING("You can no longer cast [name]!")
 		remove_ranged_ability(msg)
 		return
 	if(active)
-		msg = "<span class='notice'>[deactive_msg]</span>"
+		msg = SPAN_NOTICE("[deactive_msg]")
 		if(charge_type == "recharge")
 			var/refund_percent = current_amount/projectile_amount
 			charge_counter = charge_max * refund_percent

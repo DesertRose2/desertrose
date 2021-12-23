@@ -163,7 +163,7 @@
 	if(istype(W, /obj/item/screwdriver) && buildstage == 2)
 		W.play_tool_sound(src)
 		panel_open = !panel_open
-		to_chat(user, "<span class='notice'>The wires have been [panel_open ? "exposed" : "unexposed"].</span>")
+		to_chat(user, SPAN_NOTICE("The wires have been [panel_open ? "exposed" : "unexposed"]."))
 		update_icon()
 		return
 

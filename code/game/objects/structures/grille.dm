@@ -150,8 +150,8 @@
 		if(!shock(user, 90))
 			W.play_tool_sound(src, 100)
 			setAnchored(!anchored)
-			user.visible_message("<span class='notice'>[user] [anchored ? "fastens" : "unfastens"] [src].</span>", \
-								"<span class='notice'>You [anchored ? "fasten [src] to" : "unfasten [src] from"] the floor.</span>")
+			user.visible_message(SPAN_NOTICE("[user] [anchored ? "fastens" : "unfastens"] [src]."), \
+								SPAN_NOTICE("You [anchored ? "fasten [src] to" : "unfasten [src] from"] the floor."))
 			return
 	else if(istype(W, /obj/item/stack/rods) && broken)
 		var/obj/item/stack/rods/R = W

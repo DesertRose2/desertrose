@@ -144,7 +144,7 @@
 		to_chat(user, SPAN_NOTICE("There's nothing there to bandage!"))
 		return
 	if(!LAZYLEN(limb.wounds))
-		to_chat(user, "<span class='notice'>There's no wounds that require bandaging on [user==M ? "your" : "[M]'s"] [limb.name]!</span>") // good problem to have imo
+		to_chat(user, SPAN_NOTICE("There's no wounds that require bandaging on [user==M ? "your" : "[M]'s"] [limb.name]!")) // good problem to have imo
 		return
 
 	var/gauzeable_wound = FALSE
@@ -154,14 +154,14 @@
 			gauzeable_wound = TRUE
 			break
 	if(!gauzeable_wound)
-		to_chat(user, "<span class='notice'>There's no wounds that require bandaging on [user==M ? "your" : "[M]'s"] [limb.name]!</span>") // good problem to have imo
+		to_chat(user, SPAN_NOTICE("There's no wounds that require bandaging on [user==M ? "your" : "[M]'s"] [limb.name]!")) // good problem to have imo
 		return
 
 	if(limb.current_gauze && (limb.current_gauze.absorption_capacity * 0.8 > absorption_capacity)) // ignore if our new wrap is < 20% better than the current one, so someone doesn't bandage it 5 times in a row
-		to_chat(user, "<span class='warning'>The bandage currently on [user==M ? "your" : "[M]'s"] [limb.name] is still in good condition!</span>")
+		to_chat(user, SPAN_WARNING("The bandage currently on [user==M ? "your" : "[M]'s"] [limb.name] is still in good condition!"))
 		return
 
-	user.visible_message(SPAN_WARNING("[user] begins wrapping the wounds on [M]'s [limb.name] with [src]..."), "<span class='warning'>You begin wrapping the wounds on [user == M ? "your" : "[M]'s"] [limb.name] with [src]...</span>")
+	user.visible_message(SPAN_WARNING("[user] begins wrapping the wounds on [M]'s [limb.name] with [src]..."), SPAN_WARNING("You begin wrapping the wounds on [user == M ? "your" : "[M]'s"] [limb.name] with [src]..."))
 
 	if(!do_after(user, (user == M ? self_delay : other_delay), target=M))
 		return

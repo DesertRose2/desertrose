@@ -121,7 +121,7 @@
 	if(!open)
 		locked = !locked
 		if(user)
-			to_chat(user, "<span class='notice'>You [locked ? "lock" : "unlock"] [src]'s controls!</span>")
+			to_chat(user, SPAN_NOTICE("You [locked ? "lock" : "unlock"] [src]'s controls!"))
 	flick("mulebot-emagged", src)
 	playsound(src, "sparks", 100, FALSE)
 

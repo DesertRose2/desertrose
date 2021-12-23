@@ -176,7 +176,7 @@
 			user.dizziness += 5
 		return FALSE
 	if(busy)
-		to_chat(user, "<span class='warning'>[src] refuses to work, displaying the message: \"[busy]!\"</span>")
+		to_chat(user, SPAN_WARNING("[src] refuses to work, displaying the message: \"[busy]!\""))
 		return FALSE
 	if(!no_cost && !can_recite_scripture(user))
 		to_chat(user, "<span class='nezbere'>[src] hums fitfully in your hands, but doesn't seem to do anything...</span>")

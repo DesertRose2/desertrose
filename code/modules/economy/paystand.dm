@@ -28,7 +28,7 @@
 				force_fee = force_fee_input
 				return
 			locked = !locked
-			to_chat(user, "<span class='notice'>You [src.locked ? "lock" : "unlock"] the paystand, protecting the bolts from [anchored ? "loosening" : "tightening"].</span>")
+			to_chat(user, SPAN_NOTICE("You [src.locked ? "lock" : "unlock"] the paystand, protecting the bolts from [anchored ? "loosening" : "tightening"]."))
 			return
 		if(!my_card)
 			var/obj/item/card/id/assistant_mains_need_to_die = W

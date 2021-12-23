@@ -174,7 +174,7 @@
 
 			visible_message(SPAN_DANGER("The [M.name] has shocked [src]!"), \
 			"<span class='userdanger'>The [M.name] has shocked you!</span>", target = M,
-			target_message = "<span class='danger'>You have shocked [src]!</span>")
+			target_message = SPAN_DANGER("You have shocked [src]!"))
 
 			do_sparks(5, TRUE, src)
 			var/power = M.powerlevel + rand(0,3)
@@ -279,13 +279,13 @@
 				return
 			M.visible_message(SPAN_NOTICE("[M] shakes [src] trying to get [p_them()] up!"), \
 							SPAN_NOTICE("You shake [src] trying to get [p_them()] up!"), target = src,
-							target_message = "<span class='notice'>[M] shakes you trying to get you up!</span>")
+							target_message = SPAN_NOTICE("[M] shakes you trying to get you up!"))
 
 		else if(M.zone_selected == BODY_ZONE_PRECISE_MOUTH) // I ADDED BOOP-EH-DEH-NOSEH - Jon
 			M.visible_message( \
 				SPAN_NOTICE("[M] boops [src]'s nose."), \
 				SPAN_NOTICE("You boop [src] on the nose."), target = src,
-				target_message = "<span class='notice'>[M] boops your nose.</span>")
+				target_message = SPAN_NOTICE("[M] boops your nose."))
 			playsound(src, 'sound/items/Nose_boop.ogg', 50, 0)
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
@@ -295,7 +295,7 @@
 
 			M.visible_message(SPAN_NOTICE("[M] gives [src] a pat on the head to make [p_them()] feel better!"), \
 						SPAN_NOTICE("You give [src] a pat on the head to make [p_them()] feel better!"), target = src,
-						target_message = "<span class='notice'>[M] gives you a pat on the head to make you feel better!</span>")
+						target_message = SPAN_NOTICE("[M] gives you a pat on the head to make you feel better!"))
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 			friendly_check = TRUE
 			if(!(client?.prefs.cit_toggles & NO_AUTO_WAG))
@@ -309,12 +309,12 @@
 			M.visible_message( \
 				SPAN_NOTICE("[M] shakes [src]'s hand."), \
 				SPAN_NOTICE("You shake [src]'s hand."), target = src,
-				target_message = "<span class='notice'>[M] shakes your hand.</span>")
+				target_message = SPAN_NOTICE("[M] shakes your hand."))
 
 		else
 			M.visible_message(SPAN_NOTICE("[M] hugs [src] to make [p_them()] feel better!"), \
 						SPAN_NOTICE("You hug [src] to make [p_them()] feel better!"), target = src,\
-						target_message = "<span class='notice'>[M] hugs you to make you feel better!</span>")
+						target_message = SPAN_NOTICE("[M] hugs you to make you feel better!"))
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "hug", /datum/mood_event/hug)
 			friendly_check = TRUE
 

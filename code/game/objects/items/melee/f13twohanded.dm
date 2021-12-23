@@ -663,7 +663,7 @@ var/list/possible_colors = list("red")
 
 /obj/item/twohanded/chainsaw/doomslayer
 	name = "THE GREAT COMMUNICATOR"
-	desc = "<span class='warning'>VRRRRRRR!!!</span>"
+	desc = SPAN_WARNING("VRRRRRRR!!!")
 	armour_penetration = 1
 	force_on = 30
 

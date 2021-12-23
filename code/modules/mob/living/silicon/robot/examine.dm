@@ -28,7 +28,7 @@
 		. += SPAN_WARNING("It's coated in something flammable.")
 
 	if(opened)
-		. += "<span class='warning'>Its cover is open and the power cell is [cell ? "installed" : "missing"].</span>"
+		. += SPAN_WARNING("Its cover is open and the power cell is [cell ? "installed" : "missing"].")
 	else
 		. += "Its cover is closed[locked ? "" : ", and looks unlocked"]."
 

@@ -205,7 +205,7 @@
 		else
 			engaged = !engaged
 			use_power(5000)
-			to_chat(user, "<span class='notice'>Teleporter [engaged ? "" : "dis"]engaged!</span>")
+			to_chat(user, SPAN_NOTICE("Teleporter [engaged ? "" : "dis"]engaged!"))
 	else
 		to_chat(user, "<span class='alert'>No target detected.</span>")
 		engaged = FALSE

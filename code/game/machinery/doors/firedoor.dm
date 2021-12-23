@@ -112,8 +112,8 @@
 			deconstruct(TRUE)
 			return
 		if(C.tool_behaviour == TOOL_SCREWDRIVER)
-			user.visible_message("<span class='notice'>[user] [boltslocked ? "unlocks" : "locks"] [src]'s bolts.</span>", \
-								"<span class='notice'>You [boltslocked ? "unlock" : "lock"] [src]'s floor bolts.</span>")
+			user.visible_message(SPAN_NOTICE("[user] [boltslocked ? "unlocks" : "locks"] [src]'s bolts."), \
+								SPAN_NOTICE("You [boltslocked ? "unlock" : "lock"] [src]'s floor bolts."))
 			C.play_tool_sound(src)
 			boltslocked = !boltslocked
 			return
@@ -126,10 +126,10 @@
 /obj/machinery/door/firedoor/try_to_weld(obj/item/weldingtool/W, mob/user)
 	if(!W.tool_start_check(user, amount=0))
 		return
-	user.visible_message("<span class='notice'>[user] starts [welded ? "unwelding" : "welding"] [src].</span>", SPAN_NOTICE("You start welding [src]."))
+	user.visible_message(SPAN_NOTICE("[user] starts [welded ? "unwelding" : "welding"] [src]."), SPAN_NOTICE("You start welding [src]."))
 	if(W.use_tool(src, user, 40, volume=50))
 		welded = !welded
-		to_chat(user, "<span class='danger'>[user] [welded?"welds":"unwelds"] [src].</span>", "<span class='notice'>You [welded ? "weld" : "unweld"] [src].</span>")
+		to_chat(user, SPAN_DANGER("[user] [welded?"welds":"unwelds"] [src]."), SPAN_NOTICE("You [welded ? "weld" : "unweld"] [src]."))
 		update_icon()
 
 /obj/machinery/door/firedoor/try_to_crowbar(obj/item/I, mob/user)

@@ -687,10 +687,10 @@
 			. += "It looks very robust."
 
 	if(hasSiliconAccessInArea(user) && !(stat & BROKEN))
-		. += "<span class='notice'>Shift-click [src] to [ density ? "open" : "close"] it.</span>"
-		. += "<span class='notice'>Ctrl-click [src] to [ locked ? "raise" : "drop"] its bolts.</span>"
-		. += "<span class='notice'>Alt-click [src] to [ secondsElectrified ? "un-electrify" : "permanently electrify"] it.</span>"
-		. += "<span class='notice'>Ctrl-Shift-click [src] to [ emergency ? "disable" : "enable"] emergency access.</span>"
+		. += SPAN_NOTICE("Shift-click [src] to [ density ? "open" : "close"] it.")
+		. += SPAN_NOTICE("Ctrl-click [src] to [ locked ? "raise" : "drop"] its bolts.")
+		. += SPAN_NOTICE("Alt-click [src] to [ secondsElectrified ? "un-electrify" : "permanently electrify"] it.")
+		. += SPAN_NOTICE("Ctrl-Shift-click [src] to [ emergency ? "disable" : "enable"] emergency access.")
 
 /obj/machinery/door/airlock/attack_ai(mob/user)
 	if(!src.canAIControl(user))
@@ -951,7 +951,7 @@
 			to_chat(user, SPAN_WARNING("[src] has no maintenance panel!"))
 			return
 		panel_open = !panel_open
-		to_chat(user, "<span class='notice'>You [panel_open ? "open":"close"] the maintenance panel of the airlock.</span>")
+		to_chat(user, SPAN_NOTICE("You [panel_open ? "open":"close"] the maintenance panel of the airlock."))
 		C.play_tool_sound(src)
 		src.update_icon()
 	else if(istype(C, /obj/item/wirecutters) && note)
@@ -1005,12 +1005,12 @@
 			if(!W.tool_start_check(user, amount=0))
 				return
 			user.visible_message("[user] is [welded ? "unwelding":"welding"] the airlock.", \
-							"<span class='notice'>You begin [welded ? "unwelding":"welding"] the airlock...</span>", \
+							SPAN_NOTICE("You begin [welded ? "unwelding":"welding"] the airlock..."), \
 							"<span class='italics'>You hear welding.</span>")
 			if(W.use_tool(src, user, 40, volume=50, extra_checks = CALLBACK(src, .proc/weld_checks, W, user)))
 				welded = !welded
 				user.visible_message("[user.name] has [welded? "welded shut":"unwelded"] [src].", \
-									"<span class='notice'>You [welded ? "weld the airlock shut":"unweld the airlock"].</span>")
+									SPAN_NOTICE("You [welded ? "weld the airlock shut":"unweld the airlock"]."))
 				update_icon()
 		else
 			if(obj_integrity < max_integrity)

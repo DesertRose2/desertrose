@@ -83,7 +83,7 @@
 		if(!src.locked)
 			toggle_power()
 			user.visible_message("[user.name] turns the [src.name] [active? "on":"off"].", \
-			"<span class='notice'>You turn the [src.name] [active? "on":"off"].</span>")
+			SPAN_NOTICE("You turn the [src.name] [active? "on":"off"]."))
 			var/fuel = loaded_tank.air_contents.get_moles(GAS_PLASMA)
 			investigate_log("turned [active?"<font color='green'>on</font>":"<font color='red'>off</font>"] by [key_name(user)]. [loaded_tank?"Fuel: [round(fuel/0.29)]%":"<font color='red'>It is empty</font>"].", INVESTIGATE_SINGULO)
 			return
@@ -125,7 +125,7 @@
 		if(allowed(user))
 			if(active)
 				locked = !locked
-				to_chat(user, "<span class='notice'>You [locked ? "lock" : "unlock"] the controls.</span>")
+				to_chat(user, SPAN_NOTICE("You [locked ? "lock" : "unlock"] the controls."))
 			else
 				to_chat(user, SPAN_WARNING("The controls can only be locked when \the [src] is active!"))
 		else
@@ -167,10 +167,10 @@
 		to_chat(user, SPAN_WARNING("[src] is locked!"))
 		return TRUE
 	if(active)
-		to_chat(user, "<span class='warning'>[src] is currently active, producing [bitcoinmining ? "research points":"power"].</span>")
+		to_chat(user, SPAN_WARNING("[src] is currently active, producing [bitcoinmining ? "research points":"power"]."))
 		return TRUE
 	bitcoinmining = !bitcoinmining
-	to_chat(user, "<span class='warning'>You [bitcoinmining ? "enable":"disable"] the research point production feature of [src].</span>")
+	to_chat(user, SPAN_WARNING("You [bitcoinmining ? "enable":"disable"] the research point production feature of [src]."))
 	return TRUE
 
 /obj/machinery/power/rad_collector/analyzer_act(mob/living/user, obj/item/I)

@@ -177,7 +177,7 @@
 			playsound(loc, 'sound/weapons/slashmiss.ogg', 50, 1, -1)
 			visible_message(SPAN_DANGER("[M] has lunged at [src]!"), \
 				"<span class='userdanger'>[M] has lunged at you!</span>", target = M, \
-				target_message = "<span class='danger'>You have lunged at [src]!</span>")
+				target_message = SPAN_DANGER("You have lunged at [src]!"))
 			return 0
 		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
 		if(!affecting)
@@ -187,7 +187,7 @@
 		playsound(loc, 'sound/weapons/slice.ogg', 25, 1, -1)
 		visible_message(SPAN_DANGER("[M] has slashed at [src]!"), \
 			"<span class='userdanger'>[M] has slashed at you!</span>", target = M, \
-			target_message = "<span class='danger'>You have slashed at [src]!</span>")
+			target_message = SPAN_DANGER("You have slashed at [src]!"))
 		log_combat(M, src, "attacked")
 		if(!dismembering_strike(M, M.zone_selected)) //Dismemberment successful
 			return 1
@@ -199,14 +199,14 @@
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
 			visible_message(SPAN_DANGER("[M] has disarmed [src]!"), \
 					"<span class='userdanger'>[M] has disarmed you!</span>", target = M, \
-					target_message = "<span class='danger'>You have disarmed [src]!</span>")
+					target_message = SPAN_DANGER("You have disarmed [src]!"))
 		else
 			playsound(loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 			DefaultCombatKnockdown(M.meleeKnockdownPower)
 			log_combat(M, src, "tackled")
 			visible_message(SPAN_DANGER("[M] has tackled down [src]!"), \
 				"<span class='userdanger'>[M] has tackled you down!</span>", target = M, \
-				target_message = "<span class='danger'>You have tackled down [src]!</span>")
+				target_message = SPAN_DANGER("You have tackled down [src]!"))
 
 /mob/living/carbon/human/attack_larva(mob/living/carbon/alien/larva/L)
 	. = ..()
@@ -291,7 +291,7 @@
 
 		visible_message(SPAN_DANGER("[M.name] has hit [src]!"), \
 						"<span class='userdanger'>[M.name] has hit you!</span>", null, COMBAT_MESSAGE_RANGE, target = M,
-						target_message = "<span class='danger'>You have hit [src]!</span>")
+						target_message = SPAN_DANGER("You have hit [src]!"))
 		log_combat(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
 
 	else
@@ -740,7 +740,7 @@
 				//Put the items in that list into a string of text
 				for(var/B in broken)
 					broken_message += B
-				to_chat(src, "<span class='warning'> Your [broken_message] [broken_plural ? "are" : "is"] non-functional!</span>")
+				to_chat(src, SPAN_WARNING(" Your [broken_message] [broken_plural ? "are" : "is"] non-functional!"))
 			if(damaged.len)
 				if(damaged.len > 1)
 					damaged.Insert(damaged.len, "and ")

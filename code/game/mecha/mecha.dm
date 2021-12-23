@@ -730,7 +730,7 @@
 				to_chat(user, SPAN_WARNING("[AI.name] is currently unresponsive, and cannot be uploaded."))
 				return
 			if(occupant || dna_lock) //Normal AIs cannot steal mechs!
-				to_chat(user, "<span class='warning'>Access denied. [name] is [occupant ? "currently occupied" : "secured with a DNA lock"].</span>")
+				to_chat(user, SPAN_WARNING("Access denied. [name] is [occupant ? "currently occupied" : "secured with a DNA lock"]."))
 				return
 			AI.control_disabled = 0
 			AI.radio_enabled = 1

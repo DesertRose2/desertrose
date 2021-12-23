@@ -651,7 +651,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 	if(density)
 		spread_density()
 	var/carbon_user = iscarbon(user)
-	user.visible_message("<span class='warning'>[user] [carbon_user ? "places [user.p_their()] hands on":"stares intently at"] [src], and [density ? "the air above it begins to shimmer" : "the shimmer above it fades"].</span>", \
+	user.visible_message(SPAN_WARNING("[user] [carbon_user ? "places [user.p_their()] hands on":"stares intently at"] [src], and [density ? "the air above it begins to shimmer" : "the shimmer above it fades"]."), \
 						"<span class='cult italic'>You channel [carbon_user ? "your life ":""]energy into [src], [density ? "temporarily preventing" : "allowing"] passage above it.</span>")
 	if(carbon_user)
 		var/mob/living/carbon/C = user
@@ -874,7 +874,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 		new_human.see_invisible = SEE_INVISIBLE_OBSERVER
 		ghosts++
 		playsound(src, 'sound/magic/exit_blood.ogg', 50, 1)
-		visible_message("<span class='warning'>A cloud of red mist forms above [src], and from within steps... a [new_human.gender == FEMALE ? "wo":""]man.</span>")
+		visible_message(SPAN_WARNING("A cloud of red mist forms above [src], and from within steps... a [new_human.gender == FEMALE ? "wo":""]man."))
 		to_chat(user, "<span class='cultitalic'>Your blood begins flowing into [src]. You must remain in place and conscious to maintain the forms of those summoned. This will hurt you slowly but surely...</span>")
 		var/obj/structure/emergency_shield/invoker/N = new(T)
 		ghost_to_spawn.transfer_ckey(new_human, FALSE)

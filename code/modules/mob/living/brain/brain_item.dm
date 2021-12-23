@@ -267,11 +267,11 @@
 		if(owner.stat < UNCONSCIOUS) //conscious or soft-crit
 			var/brain_message
 			if(prev_damage < BRAIN_DAMAGE_MILD && damage >= BRAIN_DAMAGE_MILD)
-				brain_message = "<span class='warning'>You feel lightheaded.</span>"
+				brain_message = SPAN_WARNING("You feel lightheaded.")
 			else if(prev_damage < BRAIN_DAMAGE_SEVERE && damage >= BRAIN_DAMAGE_SEVERE)
-				brain_message = "<span class='warning'>You feel less in control of your thoughts.</span>"
+				brain_message = SPAN_WARNING("You feel less in control of your thoughts.")
 			else if(prev_damage < (BRAIN_DAMAGE_DEATH - 20) && damage >= (BRAIN_DAMAGE_DEATH - 20))
-				brain_message = "<span class='warning'>You can feel your mind flickering on and off...</span>"
+				brain_message = SPAN_WARNING("You can feel your mind flickering on and off...")
 
 			if(.)
 				. += "\n[brain_message]"

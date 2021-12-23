@@ -24,7 +24,7 @@
 
 /obj/structure/extinguisher_cabinet/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to [opened ? "close":"open"] it.</span>"
+	. += SPAN_NOTICE("Alt-click to [opened ? "close":"open"] it.")
 
 /obj/structure/extinguisher_cabinet/Destroy()
 	if(stored_extinguisher)

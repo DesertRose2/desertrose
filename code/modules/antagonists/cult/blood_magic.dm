@@ -698,7 +698,7 @@
 					else
 						H.blood_volume = (BLOOD_VOLUME_SAFE*H.blood_ratio)
 						uses -= round(restore_blood/2)
-						to_chat(user,"<span class='warning'>Your blood rites have restored [H == user ? "your" : "[H.p_their()]"] blood to safe levels!</span>")
+						to_chat(user,SPAN_WARNING("Your blood rites have restored [H == user ? "your" : "[H.p_their()]"] blood to safe levels!"))
 				var/overall_damage = H.getBruteLoss() + H.getFireLoss() + H.getToxLoss() + H.getOxyLoss()
 				if(overall_damage == 0)
 					to_chat(user,"<span class='cult'>That cultist doesn't require healing!</span>")
@@ -711,9 +711,9 @@
 					if(ratio>1)
 						ratio = 1
 						uses -= round(overall_damage)
-						H.visible_message("<span class='warning'>[H] is fully healed by [H==user ? "[H.p_their()]":"[user]'s"] blood magic!</span>")
+						H.visible_message(SPAN_WARNING("[H] is fully healed by [H==user ? "[H.p_their()]":"[user]'s"] blood magic!"))
 					else
-						H.visible_message("<span class='warning'>[H] is partially healed by [H==user ? "[H.p_their()]":"[user]'s"] blood magic.</span>")
+						H.visible_message(SPAN_WARNING("[H] is partially healed by [H==user ? "[H.p_their()]":"[user]'s"] blood magic."))
 						uses = 0
 					ratio *= -1
 					H.adjustOxyLoss((overall_damage*ratio) * (H.getOxyLoss() / overall_damage), 0)

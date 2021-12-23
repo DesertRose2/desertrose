@@ -593,7 +593,7 @@
 	warn_admins(user, "Flash")
 
 /obj/item/relic/proc/petSpray(mob/user)
-	var/message = "<span class='danger'>[src] begins to shake, and in the distance the sound of rampaging animals arises!</span>"
+	var/message = SPAN_DANGER("[src] begins to shake, and in the distance the sound of rampaging animals arises!")
 	visible_message(message)
 	to_chat(user, message)
 	var/animals = rand(1,25)

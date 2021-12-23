@@ -149,7 +149,7 @@
 	if(..())
 		return TRUE
 	panel_open = !panel_open
-	to_chat(user, "<span class='notice'>You screw the camera's panel [panel_open ? "open" : "closed"].</span>")
+	to_chat(user, SPAN_NOTICE("You screw the camera's panel [panel_open ? "open" : "closed"]."))
 	I.play_tool_sound(src)
 	return TRUE
 
@@ -166,7 +166,7 @@
 		return FALSE
 
 	setViewRange((view_range == initial(view_range)) ? short_range : initial(view_range))
-	to_chat(user, "<span class='notice'>You [(view_range == initial(view_range)) ? "restore" : "mess up"] the camera's focus.</span>")
+	to_chat(user, SPAN_NOTICE("You [(view_range == initial(view_range)) ? "restore" : "mess up"] the camera's focus."))
 	return
 
 /obj/machinery/camera/welder_act(mob/living/user, obj/item/I)

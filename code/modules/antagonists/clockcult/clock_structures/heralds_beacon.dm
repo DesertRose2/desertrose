@@ -9,7 +9,7 @@
 	permanently empowering many clockwork objects and reducing all power costs by 50%, but alerting the crew to your presence. It doesn't have enough \
 	energy to sustain itself for long, and if not activated within five minutes, it will permanently shut down."
 	icon_state = "interdiction_lens"
-	break_message = "<span class='warning'>The beacon crackles with power before collapsing into pieces!</span>"
+	break_message = SPAN_WARNING("The beacon crackles with power before collapsing into pieces!")
 	max_integrity = 250
 	light_color = "#EF078E"
 	var/time_remaining = 300 //Amount of seconds left to vote on whether or not to activate the beacon

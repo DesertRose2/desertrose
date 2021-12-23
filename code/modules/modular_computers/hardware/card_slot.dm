@@ -54,7 +54,7 @@
 		I.forceMove(src)
 
 	stored_card = I
-	to_chat(user, "<span class='notice'>You insert \the [I] into \the [expansion_hw ? "secondary":"primary"] [src].</span>")
+	to_chat(user, SPAN_NOTICE("You insert \the [I] into \the [expansion_hw ? "secondary":"primary"] [src]."))
 	playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, FALSE)
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
@@ -97,7 +97,7 @@
 			try_eject(user)
 			return
 		swap_slot()
-		to_chat(user, "<span class='notice'>You adjust the connecter to fit into [expansion_hw ? "an expansion bay" : "the primary ID bay"].</span>")
+		to_chat(user, SPAN_NOTICE("You adjust the connecter to fit into [expansion_hw ? "an expansion bay" : "the primary ID bay"]."))
 
 /**
  *Swaps the card_slot hardware between using the dedicated card slot bay on a computer, and using an expansion bay.

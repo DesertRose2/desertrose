@@ -337,10 +337,10 @@
 /// if someone is using bone gel on our wound
 /datum/wound/blunt/proc/gel(obj/item/stack/medical/bone_gel/I, mob/user)
 	if(gelled)
-		to_chat(user, "<span class='warning'>[user == victim ? "Your" : "[victim]'s"] [limb.name] is already coated with bone gel!</span>")
+		to_chat(user, SPAN_WARNING("[user == victim ? "Your" : "[victim]'s"] [limb.name] is already coated with bone gel!"))
 		return
 
-	user.visible_message(SPAN_DANGER("[user] begins hastily applying [I] to [victim]'s' [limb.name]..."), "<span class='warning'>You begin hastily applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name], disregarding the warning label...</span>")
+	user.visible_message(SPAN_DANGER("[user] begins hastily applying [I] to [victim]'s' [limb.name]..."), SPAN_WARNING("You begin hastily applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name], disregarding the warning label..."))
 
 	if(!do_after(user, base_treat_time * 1.5 * (user == victim ? 1.5 : 1), target = victim, extra_checks=CALLBACK(src, .proc/still_exists)))
 		return
@@ -372,13 +372,13 @@
 /// if someone is using surgical tape on our wound
 /datum/wound/blunt/proc/tape(obj/item/stack/sticky_tape/surgical/I, mob/user)
 	if(!gelled)
-		to_chat(user, "<span class='warning'>[user == victim ? "Your" : "[victim]'s"] [limb.name] must be coated with bone gel to perform this emergency operation!</span>")
+		to_chat(user, SPAN_WARNING("[user == victim ? "Your" : "[victim]'s"] [limb.name] must be coated with bone gel to perform this emergency operation!"))
 		return
 	if(taped)
-		to_chat(user, "<span class='warning'>[user == victim ? "Your" : "[victim]'s"] [limb.name] is already wrapped in [I.name] and reforming!</span>")
+		to_chat(user, SPAN_WARNING("[user == victim ? "Your" : "[victim]'s"] [limb.name] is already wrapped in [I.name] and reforming!"))
 		return
 
-	user.visible_message(SPAN_DANGER("[user] begins applying [I] to [victim]'s' [limb.name]..."), "<span class='warning'>You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]...</span>")
+	user.visible_message(SPAN_DANGER("[user] begins applying [I] to [victim]'s' [limb.name]..."), SPAN_WARNING("You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]..."))
 
 	if(!do_after(user, base_treat_time * (user == victim ? 1.5 : 1), target = victim, extra_checks=CALLBACK(src, .proc/still_exists)))
 		return

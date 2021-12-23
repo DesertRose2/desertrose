@@ -2,7 +2,7 @@ GLOBAL_VAR_INIT(curse_of_madness_triggered, FALSE)
 
 /proc/curse_of_madness(mob/user, message)
 	if(user) //in this case either someone holding a spellbook or a badmin
-		to_chat(user, "<span class='warning'>You sent a curse of madness with the message \"[message]\"!</span>")
+		to_chat(user, SPAN_WARNING("You sent a curse of madness with the message \"[message]\"!"))
 		message_admins("[ADMIN_LOOKUPFLW(user)] sent a curse of madness with the message \"[message]\"!")
 		log_game("[key_name(user)] sent a curse of madness with the message \"[message]\"!")
 

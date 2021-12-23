@@ -86,7 +86,7 @@
 			to_chat(user, "<span class='boldnotice'>Some of [target]'s speech patterns, we should study these to better impersonate [target.p_them()]!</span>")
 			for(var/spoken_memory in recent_speech)
 				changeling.antag_memory += "\"[recent_speech[spoken_memory]]\"<br>"
-				to_chat(user, "<span class='notice'>\"[recent_speech[spoken_memory]]\"</span>")
+				to_chat(user, SPAN_NOTICE("\"[recent_speech[spoken_memory]]\""))
 			changeling.antag_memory += "<B>We have no more knowledge of [target]'s speech patterns.</B><br>"
 			to_chat(user, "<span class='boldnotice'>We have no more knowledge of [target]'s speech patterns.</span>")
 

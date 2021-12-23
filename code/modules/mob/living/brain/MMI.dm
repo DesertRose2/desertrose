@@ -89,7 +89,7 @@
 /obj/item/mmi/attack_self(mob/user)
 	if(!brain)
 		radio.on = !radio.on
-		to_chat(user, "<span class='notice'>You toggle the MMI's radio system [radio.on==1 ? "on" : "off"].</span>")
+		to_chat(user, SPAN_NOTICE("You toggle the MMI's radio system [radio.on==1 ? "on" : "off"]."))
 	else
 		to_chat(user, SPAN_NOTICE("You unlock and upend the MMI, spilling the brain onto the floor."))
 		eject_brain(user)
@@ -160,7 +160,7 @@
 		return
 
 	radio.listening = radio.listening==1 ? 0 : 1
-	to_chat(brainmob, "<span class='notice'>Radio is [radio.listening==1 ? "now" : "no longer"] receiving broadcast.</span>")
+	to_chat(brainmob, SPAN_NOTICE("Radio is [radio.listening==1 ? "now" : "no longer"] receiving broadcast."))
 
 /obj/item/mmi/emp_act(severity)
 	. = ..()

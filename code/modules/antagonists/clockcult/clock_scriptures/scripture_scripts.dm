@@ -34,7 +34,7 @@
 	power_cost = 250
 	object_path = /obj/structure/destructible/clockwork/ocular_warden
 	creator_message = "<span class='brass'>You form an ocular warden, which will automatically attack nearby unrestrained non-Servants that can see it.</span>"
-	observer_message = "<span class='warning'>A brass eye takes shape and slowly rises into the air, its red iris glaring!</span>"
+	observer_message = SPAN_WARNING("A brass eye takes shape and slowly rises into the air, its red iris glaring!")
 	usage_tip = "Although powerful, the warden is very fragile and should optimally be placed behind barricades."
 	tier = SCRIPTURE_SCRIPT
 	one_per_tile = TRUE

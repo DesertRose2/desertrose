@@ -12,7 +12,7 @@
 	power_cost = 200
 	object_path = /obj/structure/destructible/clockwork/stargazer
 	creator_message = "<span class='brass'>You form a stargazer, which will generate power near starlight.</span>"
-	observer_message = "<span class='warning'>A large lantern-shaped machine forms!</span>"
+	observer_message = SPAN_WARNING("A large lantern-shaped machine forms!")
 	usage_tip = "For obvious reasons, make sure to place this near a window or somewhere else that can see space!"
 	tier = SCRIPTURE_DRIVER
 	one_per_tile = TRUE

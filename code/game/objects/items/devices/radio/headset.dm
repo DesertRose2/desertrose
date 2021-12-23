@@ -543,7 +543,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		return
 	if (command)
 		use_command = !use_command
-		to_chat(user, "<span class='notice'>You toggle high-volume mode [use_command ? "on" : "off"].</span>")
+		to_chat(user, SPAN_NOTICE("You toggle high-volume mode [use_command ? "on" : "off"]."))
 		return TRUE
 
 /obj/item/radio/headset/proc/bowmanize()

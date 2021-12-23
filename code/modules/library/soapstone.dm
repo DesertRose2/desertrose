@@ -38,7 +38,7 @@
 		user.visible_message(SPAN_NOTICE("[user] starts erasing [existing_message]."), SPAN_NOTICE("You start erasing [existing_message]."), "<span class='hear'>You hear a chipping sound.</span>")
 		playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
 		if(do_after(user, tool_speed, target = existing_message))
-			user.visible_message(SPAN_NOTICE("[user] erases [existing_message]."), "<span class='notice'>You erase [existing_message][existing_message.creator_key == user.ckey ? ", refunding a use" : ""].</span>")
+			user.visible_message(SPAN_NOTICE("[user] erases [existing_message]."), SPAN_NOTICE("You erase [existing_message][existing_message.creator_key == user.ckey ? ", refunding a use" : ""]."))
 			existing_message.persists = FALSE
 			qdel(existing_message)
 			playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)

@@ -205,4 +205,4 @@ GLOBAL_PROTECT(AdminProcCallSpamPrevention)
 		. += "</span>"
 
 	else
-		. = "<span class='notice'>[procname] returned: [!isnull(returnval) ? returnval : "null"]</span>"
+		. = SPAN_NOTICE("[procname] returned: [!isnull(returnval) ? returnval : "null"]")

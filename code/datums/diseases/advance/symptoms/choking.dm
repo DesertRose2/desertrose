@@ -49,10 +49,10 @@ Bonus
 	switch(A.stage)
 		if(1, 2)
 			if(prob(base_message_chance) && !suppress_warning)
-				to_chat(M, "<span class='warning'>[pick("You're having difficulty breathing.", "Your breathing becomes heavy.")]</span>")
+				to_chat(M, SPAN_WARNING("[pick("You're having difficulty breathing.", "Your breathing becomes heavy.")]"))
 		if(3, 4)
 			if(!suppress_warning)
-				to_chat(M, "<span class='warning'>[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]</span>")
+				to_chat(M, SPAN_WARNING("[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]"))
 			else
 				to_chat(M, "<span class='warning'>You feel very [pick("dizzy","woozy","faint")].</span>") //fake bloodloss messages
 			Choke_stage_3_4(M, A)

@@ -77,7 +77,7 @@
 /obj/structure/destructible/clockwork/trap/trigger
 	name = "base trap trigger"
 	max_integrity = 5
-	break_message = "<span class='warning'>The trigger breaks apart!</span>"
+	break_message = SPAN_WARNING("The trigger breaks apart!")
 	density = FALSE
 
 /obj/structure/destructible/clockwork/trap/trigger/Initialize()

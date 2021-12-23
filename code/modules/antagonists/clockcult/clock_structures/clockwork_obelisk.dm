@@ -9,7 +9,7 @@
 	unanchored_icon = "obelisk_unwrenched"
 	construction_value = 20
 	max_integrity = 150
-	break_message = "<span class='warning'>The obelisk falls to the ground, undamaged!</span>"
+	break_message = SPAN_WARNING("The obelisk falls to the ground, undamaged!")
 	debris = list(/obj/item/clockwork/alloy_shards/small = 4, \
 	/obj/item/clockwork/alloy_shards/medium = 2, \
 	/obj/item/clockwork/component/hierophant_ansible/obelisk = 1)

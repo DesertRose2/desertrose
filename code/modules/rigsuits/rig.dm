@@ -497,17 +497,17 @@
 	if(!user_is_ai)
 		var/mob/living/carbon/human/H = user
 		if(istype(H) && H.back != src)
-			fail_msg = "<span class='warning'>You must be wearing \the [src] to do this.</span>"
+			fail_msg = SPAN_WARNING("You must be wearing \the [src] to do this.")
 		else if(user.incorporeal_move)
-			fail_msg = "<span class='warning'>You must be solid to do this.</span>"
+			fail_msg = SPAN_WARNING("You must be solid to do this.")
 	if(sealing)
-		fail_msg = "<span class='warning'>The hardsuit is in the process of adjusting seals and cannot be activated.</span>"
+		fail_msg = SPAN_WARNING("The hardsuit is in the process of adjusting seals and cannot be activated.")
 	else if(!fail_msg && ((use_unconcious && user.stat > 1) || (!use_unconcious && user.stat)))
-		fail_msg = "<span class='warning'>You are in no fit state to do that.</span>"
+		fail_msg = SPAN_WARNING("You are in no fit state to do that.")
 	else if(!cell)
-		fail_msg = "<span class='warning'>There is no cell installed in the suit.</span>"
+		fail_msg = SPAN_WARNING("There is no cell installed in the suit.")
 	else if(cost && cell.charge < cost * 10) //TODO: Cellrate?
-		fail_msg = "<span class='warning'>Not enough stored power.</span>"
+		fail_msg = SPAN_WARNING("Not enough stored power.")
 
 	if(fail_msg)
 		to_chat(user, "[fail_msg]")
@@ -793,14 +793,14 @@
 						wearer.temporarilyRemoveItemFromInventory(under_boots, 1, 1)
 						under_boots.forceMove(src)
 					else
-						to_chat(wearer, "<span class='danger'>You are unable to deploy \the [piece] as \the [check_slot] [check_slot.gender == PLURAL ? "are" : "is"] in the way.</span>")
+						to_chat(wearer, SPAN_DANGER("You are unable to deploy \the [piece] as \the [check_slot] [check_slot.gender == PLURAL ? "are" : "is"] in the way."))
 						return
 			use_obj.forceMove(wearer)
 			if(!wearer.equip_to_slot_if_possible(use_obj, equip_to, 0, 1))
 				use_obj.forceMove(src)
 			else
 				if(wearer)
-					to_chat(wearer, "<span class='notice'>Your [use_obj.name] [use_obj.gender == PLURAL ? "deploy" : "deploys"] swiftly.</span>")
+					to_chat(wearer, SPAN_NOTICE("Your [use_obj.name] [use_obj.gender == PLURAL ? "deploy" : "deploys"] swiftly."))
 
 	if(piece == "helmet" && helmet)
 		helmet.update_light(wearer)
@@ -957,7 +957,7 @@
 /obj/item/rig/proc/force_rest(mob/user)
 //	if(!ai_can_move_suit(user, check_user_module = 1))
 	wearer.lay_down()
-	to_chat(user, "<span class='notice'>\The [wearer] is now [wearer.resting ? "resting" : "getting up"].</span>")
+	to_chat(user, SPAN_NOTICE("\The [wearer] is now [wearer.resting ? "resting" : "getting up"]."))
 
 /obj/item/rig/proc/forced_move(direction, mob/user)
 

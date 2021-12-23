@@ -129,7 +129,7 @@
 /obj/item/geiger_counter/attack_self(mob/user)
 	scanning = !scanning
 	update_icon()
-	to_chat(user, "<span class='notice'>[icon2html(src, user)] You switch [scanning ? "on" : "off"] [src].</span>")
+	to_chat(user, SPAN_NOTICE("[icon2html(src, user)] You switch [scanning ? "on" : "off"] [src]."))
 
 /obj/item/geiger_counter/afterattack(atom/target, mob/user)
 	. = ..()
