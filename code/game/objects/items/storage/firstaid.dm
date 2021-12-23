@@ -48,7 +48,7 @@
 	icon_state = "tactical"
 	desc = "A first aid kit for medical officers."
 
-/obj/item/storage/firstaid/regular/PopulateContents()
+/obj/item/storage/firstaid/officer/PopulateContents()
 	if(empty)
 		return
 	new /obj/item/stack/medical/gauze/adv(src)
