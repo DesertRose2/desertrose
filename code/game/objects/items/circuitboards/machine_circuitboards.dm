@@ -101,7 +101,7 @@
 	needs_anchored = FALSE //wew lad
 
 /obj/item/circuitboard/machine/launchpad
-	name = "Bluespace Launchpad (Machine Board)"
+	name = "Quantum Launchpad (Machine Board)"
 	build_path = /obj/machinery/launchpad
 	req_components = list(
 		/obj/item/stack/ore/bluespace_crystal = 1,
@@ -294,7 +294,7 @@
 		position = (position == vending_names_paths.len) ? 1 : (position + 1)
 		var/typepath = vending_names_paths[position]
 		set_type(typepath)
-		to_chat(user, "<span class='notice'>You set the board to \"[vending_names_paths[typepath]]\".</span>")
+		to_chat(user, SPAN_NOTICE("You set the board to \"[vending_names_paths[typepath]]\"."))
 	else
 		return ..()
 
@@ -378,19 +378,19 @@
 		name = initial(new_type.name)
 		build_path = initial(new_type.build_path)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You change the circuitboard setting to \"[new_setting]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard setting to \"[new_setting]\"."))
 		return
 
 	if(I.tool_behaviour == TOOL_MULTITOOL)
 		pipe_layer = (pipe_layer >= PIPING_LAYER_MAX) ? PIPING_LAYER_MIN : (pipe_layer + 1)
-		to_chat(user, "<span class='notice'>You change the circuitboard to layer [pipe_layer].</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard to layer [pipe_layer]."))
 		return
 
 	. = ..()
 
 /obj/item/circuitboard/machine/thermomachine/examine()
 	. = ..()
-	. += "<span class='notice'>It is set to layer [pipe_layer]. Use a Multitool on the circuit to change this.</span>"
+	. += SPAN_NOTICE("It is set to layer [pipe_layer]. Use a Multitool on the circuit to change this.")
 
 /obj/item/circuitboard/machine/thermomachine/heater
 	name = "Heater (Machine Board)"
@@ -438,11 +438,11 @@
 		if(build_path == /obj/machinery/processor)
 			name = "Slime Processor (Machine Board)"
 			build_path = /obj/machinery/processor/slime
-			to_chat(user, "<span class='notice'>Name protocols successfully updated.</span>")
+			to_chat(user, SPAN_NOTICE("Name protocols successfully updated."))
 		else
 			name = "Food Processor (Machine Board)"
 			build_path = /obj/machinery/processor
-			to_chat(user, "<span class='notice'>Defaulting name protocols.</span>")
+			to_chat(user, SPAN_NOTICE("Defaulting name protocols."))
 	else
 		return ..()
 
@@ -474,7 +474,7 @@
 		var/position = fridges_name_paths.Find(build_path, fridges_name_paths)
 		position = (position == fridges_name_paths.len) ? 1 : (position + 1)
 		build_path = fridges_name_paths[position]
-		to_chat(user, "<span class='notice'>You set the board to [fridges_name_paths[build_path]].</span>")
+		to_chat(user, SPAN_NOTICE("You set the board to [fridges_name_paths[build_path]]."))
 	else
 		return ..()
 
@@ -664,7 +664,7 @@
 		name = initial(new_type.name)
 		build_path = initial(new_type.build_path)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You change the circuitboard setting to \"[new_setting]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard setting to \"[new_setting]\"."))
 	else
 		return ..()
 
@@ -780,7 +780,7 @@
 
 		build_path = new_path
 		name = "[new_name] 3000 (Machine Board)"
-		to_chat(user, "<span class='notice'>You change the circuit board setting to \"[new_name]\".</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuit board setting to \"[new_name]\"."))
 	else
 		return ..()
 
@@ -1010,19 +1010,19 @@
 
 /obj/item/circuitboard/machine/dish_drive/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Its suction function is [suction ? "enabled" : "disabled"]. Use it in-hand to switch.</span>"
-	. += "<span class='notice'>Its disposal auto-transmit function is [transmit ? "enabled" : "disabled"]. Alt-click it to switch.</span>"
+	. += SPAN_NOTICE("Its suction function is [suction ? "enabled" : "disabled"]. Use it in-hand to switch.")
+	. += SPAN_NOTICE("Its disposal auto-transmit function is [transmit ? "enabled" : "disabled"]. Alt-click it to switch.")
 
 /obj/item/circuitboard/machine/dish_drive/attack_self(mob/living/user)
 	suction = !suction
-	to_chat(user, "<span class='notice'>You [suction ? "enable" : "disable"] the board's suction function.</span>")
+	to_chat(user, SPAN_NOTICE("You [suction ? "enable" : "disable"] the board's suction function."))
 
 /obj/item/circuitboard/machine/dish_drive/AltClick(mob/living/user)
 	. = ..()
 	if(!user.Adjacent(src))
 		return
 	transmit = !transmit
-	to_chat(user, "<span class='notice'>You [transmit ? "enable" : "disable"] the board's automatic disposal transmission.</span>")
+	to_chat(user, SPAN_NOTICE("You [transmit ? "enable" : "disable"] the board's automatic disposal transmission."))
 	return TRUE
 
 /obj/item/circuitboard/machine/stacking_unit_console

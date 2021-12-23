@@ -37,7 +37,7 @@
 
 /mob/living/simple_animal/hostile/clockwork/marauder/examine_info()
 	if(!shield_health)
-		return "<span class='warning'>Its shield has been destroyed!</span>"
+		return SPAN_WARNING("Its shield has been destroyed!")
 
 /mob/living/simple_animal/hostile/clockwork/marauder/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
@@ -83,7 +83,7 @@
 		max_shield_health = 4
 
 /mob/living/simple_animal/hostile/clockwork/marauder/death(gibbed)
-	visible_message("<span class='danger'>[src]'s equipment clatters lifelessly to the ground as the red flames within dissipate.</span>", \
+	visible_message(SPAN_DANGER("[src]'s equipment clatters lifelessly to the ground as the red flames within dissipate."), \
 	"<span class='userdanger'>Dented and scratched, your armor falls away, and your fragile form breaks apart without its protection.</span>")
 	. = ..()
 
@@ -108,15 +108,15 @@
 	if(!shield_health)
 		return
 	var/energy_projectile = istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam)
-	visible_message("<span class='danger'>[src] deflects [P] with [p_their()] shield!</span>", \
-	"<span class='danger'>You block [P] with your shield! <i>Blocks left:</i> <b>[shield_health - 1]</b></span>")
+	visible_message(SPAN_DANGER("[src] deflects [P] with [p_their()] shield!"), \
+	SPAN_DANGER("You block [P] with your shield! <i>Blocks left:</i> <b>[shield_health - 1]</b>"))
 	if(energy_projectile)
 		playsound(src, 'sound/weapons/effects/searwall.ogg', 50, TRUE)
 	else
 		playsound(src, "ricochet", 50, TRUE)
 	shield_health--
 	if(!shield_health)
-		visible_message("<span class='warning'>[src]'s shield breaks from deflecting the attack!</span>", "<span class='boldwarning'>Your shield breaks! Give it some time to recover...</span>")
+		visible_message(SPAN_WARNING("[src]'s shield breaks from deflecting the attack!"), "<span class='boldwarning'>Your shield breaks! Give it some time to recover...</span>")
 		playsound(src, "shatter", 100, TRUE)
 	shield_health_regen = world.time + MARAUDER_SHIELD_REGEN_TIME
 	return TRUE
@@ -224,7 +224,7 @@
 /mob/living/simple_animal/hostile/clockwork/marauder/guardian/death(gibbed)
 	emerge_from_host(FALSE, TRUE)
 	unbind_from_host()
-	visible_message("<span class='warning'>[src]'s equipment clatters lifelessly to the ground as the red flames within dissipate.</span>", \
+	visible_message(SPAN_WARNING("[src]'s equipment clatters lifelessly to the ground as the red flames within dissipate."), \
 	"<span class='userdanger'>Your equipment falls away. You feel a moment of confusion before your fragile form is annihilated.</span>")
 	. = ..()
 
@@ -442,13 +442,13 @@
 	if(is_in_host())
 		return FALSE
 	if(!host)
-		to_chat(src, "<span class='warning'>You don't have a host!</span>")
+		to_chat(src, SPAN_WARNING("You don't have a host!"))
 		return FALSE
 	var/resulthealth = round((host.health / host.maxHealth) * 100, 0.5)
 	if(iscarbon(host))
 		resulthealth = round((abs(HEALTH_THRESHOLD_DEAD - host.health) / abs(HEALTH_THRESHOLD_DEAD - host.maxHealth)) * 100)
-	host.visible_message("<span class='warning'>[host]'s skin flashes crimson!</span>", "<span class='sevtug'>You feel [true_name]'s consciousness settle in your mind.</span>")
-	visible_message("<span class='warning'>[src] suddenly disappears!</span>", "<span class='sevtug'>You return to [host].</span>")
+	host.visible_message(SPAN_WARNING("[host]'s skin flashes crimson!"), "<span class='sevtug'>You feel [true_name]'s consciousness settle in your mind.</span>")
+	visible_message(SPAN_WARNING("[src] suddenly disappears!"), "<span class='sevtug'>You return to [host].</span>")
 	forceMove(host)
 	if(resulthealth > GUARDIAN_EMERGE_THRESHOLD && health != maxHealth)
 		recovering = TRUE
@@ -458,14 +458,14 @@
 
 /mob/living/simple_animal/hostile/clockwork/marauder/guardian/proc/try_emerge()
 	if(!host)
-		to_chat(src, "<span class='warning'>You don't have a host!</span>")
+		to_chat(src, SPAN_WARNING("You don't have a host!"))
 		return FALSE
 	if(!GLOB.ratvar_awakens)
 		var/resulthealth = round((host.health / host.maxHealth) * 100, 0.5)
 		if(iscarbon(host))
 			resulthealth = round((abs(HEALTH_THRESHOLD_DEAD - host.health) / abs(HEALTH_THRESHOLD_DEAD - host.maxHealth)) * 100)
 		if(host.stat != DEAD && resulthealth > GUARDIAN_EMERGE_THRESHOLD) //if above 20 health, fails
-			to_chat(src, "<span class='warning'>Your host must be at [GUARDIAN_EMERGE_THRESHOLD]% or less health to emerge like this!</span>")
+			to_chat(src, SPAN_WARNING("Your host must be at [GUARDIAN_EMERGE_THRESHOLD]% or less health to emerge like this!"))
 			return FALSE
 	return emerge_from_host(FALSE)
 
@@ -485,7 +485,7 @@
 		else
 			to_chat(host, "<span class='sevtug'>[true_name] emerges from your body to protect you!</span>")
 	forceMove(host.loc)
-	visible_message("<span class='warning'>[host]'s skin glows red as [name] emerges from their body!</span>", "<span class='sevtug_small'>You exit the safety of [host]'s body!</span>")
+	visible_message(SPAN_WARNING("[host]'s skin glows red as [name] emerges from their body!"), "<span class='sevtug_small'>You exit the safety of [host]'s body!</span>")
 	return TRUE
 
 /mob/living/simple_animal/hostile/clockwork/marauder/guardian/get_alt_name()
@@ -546,7 +546,7 @@
 	if(!owner || !message)
 		return FALSE
 	if(!linked_guardian)
-		to_chat(owner, "<span class='warning'>Your guardian seems to have been destroyed!</span>")
+		to_chat(owner, SPAN_WARNING("Your guardian seems to have been destroyed!"))
 		return FALSE
 	var/name_part = "<span class='sevtug'>Servant [findtextEx(owner.name, owner.real_name) ? "[owner.name]" : "[owner.real_name] (as [owner.name])"]</span>"
 	message = "<span class='sevtug_small'>\"[message]\"</span>" //Processed output

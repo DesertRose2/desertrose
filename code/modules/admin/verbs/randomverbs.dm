@@ -298,7 +298,7 @@
 		if(candidates.len)
 			ckey = input("Pick the player you want to respawn as a xeno.", "Suitable Candidates") as null|anything in candidates
 		else
-			to_chat(usr, "<span class='danger'>Error: create_xeno(): no suitable candidates.</span>")
+			to_chat(usr, SPAN_DANGER("Error: create_xeno(): no suitable candidates."))
 	if(!istext(ckey))
 		return 0
 
@@ -324,7 +324,7 @@
 		SSjob.SendToLateJoin(new_xeno, FALSE)
 
 	new_xeno.ckey = ckey
-	var/msg = "<span class='notice'>[key_name_admin(usr)] has spawned [ckey] as a filthy xeno [alien_caste].</span>"
+	var/msg = SPAN_NOTICE("[key_name_admin(usr)] has spawned [ckey] as a filthy xeno [alien_caste].")
 	message_admins(msg)
 	admin_ticket_log(new_xeno, msg)
 	return 1
@@ -540,7 +540,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	M.revive(full_heal = 1, admin_revive = 1)
 
 	log_admin("[key_name(usr)] healed / revived [key_name(M)]")
-	var/msg = "<span class='danger'>Admin [key_name_admin(usr)] healed / revived [ADMIN_LOOKUPFLW(M)]!</span>"
+	var/msg = SPAN_DANGER("Admin [key_name_admin(usr)] healed / revived [ADMIN_LOOKUPFLW(M)]!")
 	message_admins(msg)
 	admin_ticket_log(M, msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Rejuvinate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
@@ -760,7 +760,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!check_rights(R_ADMIN))
 		return
 	if(SSshuttle.emergency.mode == SHUTTLE_DISABLED)
-		to_chat(usr, "<span class='warning'>Error, shuttle is already disabled.</span>")
+		to_chat(usr, SPAN_WARNING("Error, shuttle is already disabled."))
 		return
 	if(alert(src, "You sure?", "Confirm", "Yes", "No") != "Yes")
 		return
@@ -780,7 +780,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!check_rights(R_ADMIN))
 		return
 	if(SSshuttle.emergency.mode != SHUTTLE_DISABLED)
-		to_chat(usr, "<span class='warning'>Error, shuttle not disabled.</span>")
+		to_chat(usr, SPAN_WARNING("Error, shuttle not disabled."))
 		return
 	if(alert(src, "You sure?", "Confirm", "Yes", "No") != "Yes")
 		return
@@ -1373,7 +1373,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 
 		if(ADMIN_PUNISHMENT_MAZING)
 			if(!puzzle_imprison(target))
-				to_chat(usr,"<span class='warning'>Imprisonment failed!</span>")
+				to_chat(usr,SPAN_WARNING("Imprisonment failed!"))
 				return
 		if(ADMIN_PUNISHMENT_PIE)
 			var/obj/item/reagent_containers/food/snacks/pie/cream/nostun/creamy = new(get_turf(target))
@@ -1393,7 +1393,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 						A.splat(target)
 		if(ADMIN_PUNISHMENT_CRACK)
 			if(!iscarbon(target))
-				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>", confidential = TRUE)
+				to_chat(usr,SPAN_WARNING("This must be used on a carbon mob."), confidential = TRUE)
 				return
 			var/mob/living/carbon/C = target
 			for(var/i in C.bodyparts)
@@ -1402,7 +1402,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 				squish_part.force_wound_upwards(type_wound, smited=TRUE)
 		if(ADMIN_PUNISHMENT_BLEED)
 			if(!iscarbon(target))
-				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>", confidential = TRUE)
+				to_chat(usr,SPAN_WARNING("This must be used on a carbon mob."), confidential = TRUE)
 				return
 			var/mob/living/carbon/C = target
 			for(var/i in C.bodyparts)
@@ -1415,14 +1415,14 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 				slice_part.force_wound_upwards(type_wound, smited=TRUE)
 		if(ADMIN_PUNISHMENT_SCARIFY)
 			if(!iscarbon(target))
-				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>", confidential = TRUE)
+				to_chat(usr,SPAN_WARNING("This must be used on a carbon mob."), confidential = TRUE)
 				return
 			var/mob/living/carbon/dude = target
 			dude.generate_fake_scars(rand(1, 4))
-			to_chat(dude, "<span class='warning'>You feel your body grow jaded and torn...</span>")
+			to_chat(dude, SPAN_WARNING("You feel your body grow jaded and torn..."))
 		if(ADMIN_PUNISHMENT_PERFORATE)
 			if(!iscarbon(target))
-				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>", confidential = TRUE)
+				to_chat(usr,SPAN_WARNING("This must be used on a carbon mob."), confidential = TRUE)
 				return
 
 			var/list/how_fucked_is_this_dude = list("A little", "A lot", "So fucking much", "FUCK THIS DUDE")
@@ -1471,12 +1471,12 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 
 		if(ADMIN_PUNISHMENT_SHOES)
 			if(!iscarbon(target))
-				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>")
+				to_chat(usr,SPAN_WARNING("This must be used on a carbon mob."))
 				return
 			var/mob/living/carbon/C = target
 			var/obj/item/clothing/shoes/sick_kicks = C.shoes
 			if(!sick_kicks?.can_be_tied)
-				to_chat(usr,"<span class='warning'>[C] does not have knottable shoes!</span>")
+				to_chat(usr,SPAN_WARNING("[C] does not have knottable shoes!"))
 				return
 			sick_kicks.adjust_laces(SHOES_KNOTTED)
 
@@ -1533,7 +1533,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 		return
 
 	if(!CONFIG_GET(flag/use_exp_tracking))
-		to_chat(usr, "<span class='warning'>Tracking is disabled in the server configuration file.</span>")
+		to_chat(usr, SPAN_WARNING("Tracking is disabled in the server configuration file."))
 		return
 
 	var/list/msg = list()
@@ -1547,10 +1547,10 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	if(!check_rights(R_ADMIN))
 		return
 	if(!C)
-		to_chat(usr, "<span class='danger'>ERROR: Client not found.</span>")
+		to_chat(usr, SPAN_DANGER("ERROR: Client not found."))
 		return
 	if(!CONFIG_GET(flag/use_exp_tracking))
-		to_chat(usr, "<span class='warning'>Tracking is disabled in the server configuration file.</span>")
+		to_chat(usr, SPAN_WARNING("Tracking is disabled in the server configuration file."))
 		return
 
 	var/list/body = list()
@@ -1564,11 +1564,11 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	if(!check_rights(R_ADMIN))
 		return
 	if(!C)
-		to_chat(usr, "<span class='danger'>ERROR: Client not found.</span>")
+		to_chat(usr, SPAN_DANGER("ERROR: Client not found."))
 		return
 
 	if(!C.set_db_player_flags())
-		to_chat(usr, "<span class='danger'>ERROR: Unable read player flags from database. Please check logs.</span>")
+		to_chat(usr, SPAN_DANGER("ERROR: Unable read player flags from database. Please check logs."))
 	var/dbflags = C.prefs.db_flags
 	var/newstate = FALSE
 	if(dbflags & DB_FLAG_EXEMPT)
@@ -1577,7 +1577,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 		newstate = TRUE
 
 	if(C.update_flag_db(DB_FLAG_EXEMPT, newstate))
-		to_chat(usr, "<span class='danger'>ERROR: Unable to update player flags. Please check logs.</span>")
+		to_chat(usr, SPAN_DANGER("ERROR: Unable to update player flags. Please check logs."))
 	else
 		message_admins("[key_name_admin(usr)] has [newstate ? "activated" : "deactivated"] job exp exempt status on [key_name_admin(C)]")
 		log_admin("[key_name(usr)] has [newstate ? "activated" : "deactivated"] job exp exempt status on [key_name(C)]")

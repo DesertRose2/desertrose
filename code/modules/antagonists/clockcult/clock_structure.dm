@@ -10,7 +10,7 @@
 	density = TRUE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	var/can_be_repaired = TRUE //if a fabricator can repair it
-	break_message = "<span class='warning'>The frog isn't a meme after all!</span>" //The message shown when a structure breaks
+	break_message = SPAN_WARNING("The frog isn't a meme after all!") //The message shown when a structure breaks
 	break_sound = 'sound/magic/clockwork/anima_fragment_death.ogg' //The sound played when a structure breaks
 	debris = list(/obj/item/clockwork/alloy_shards/large = 1, \
 	/obj/item/clockwork/alloy_shards/medium = 2, \
@@ -46,7 +46,7 @@
 	. = ..()
 	desc = initial(desc)
 	if(unanchored_icon)
-		. += "<span class='notice'>[src] is [anchored ? "":"not "]secured to the floor.</span>"
+		. += SPAN_NOTICE("[src] is [anchored ? "":"not "]secured to the floor.")
 
 /obj/structure/destructible/clockwork/examine_status(mob/user)
 	if(is_servant_of_ratvar(user) || isobserver(user))
@@ -114,7 +114,7 @@
 		if(do_damage)
 			playsound(src, break_sound, 10 * (40 * (1 - get_efficiency_mod())), 1)
 			take_damage(round(max_integrity * 0.25, 1), BRUTE)
-			to_chat(user, "<span class='warning'>As you unsecure [src] from the floor, you see cracks appear in its surface!</span>")
+			to_chat(user, SPAN_WARNING("As you unsecure [src] from the floor, you see cracks appear in its surface!"))
 
 /obj/structure/destructible/clockwork/emp_act(severity)
 	. = ..()
@@ -174,7 +174,7 @@
 /obj/structure/destructible/clockwork/powered/can_be_unfasten_wrench(mob/user, silent)
 	if(active)
 		if(!silent)
-			to_chat(user, "<span class='warning'>[src] needs to be disabled before it can be unsecured!</span>")
+			to_chat(user, SPAN_WARNING("[src] needs to be disabled before it can be unsecured!"))
 		return FAILED_UNFASTEN
 	return ..()
 
@@ -183,9 +183,9 @@
 		if(!is_servant_of_ratvar(user))
 			return FALSE
 		if(!anchored && !active)
-			to_chat(user, "<span class='warning'>[src] needs to be secured to the floor before it can be activated!</span>")
+			to_chat(user, SPAN_WARNING("[src] needs to be secured to the floor before it can be activated!"))
 			return FALSE
-		visible_message("<span class='notice'>[user] [active ? "dis" : "en"]ables [src].</span>", "<span class='brass'>You [active ? "dis" : "en"]able [src].</span>")
+		visible_message(SPAN_NOTICE("[user] [active ? "dis" : "en"]ables [src]."), "<span class='brass'>You [active ? "dis" : "en"]able [src].</span>")
 	active = !active
 	if(active)
 		icon_state = active_icon

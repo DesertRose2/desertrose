@@ -299,7 +299,7 @@
 	if(src == H.head) //Suit is already equipped
 		return ..()
 	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_HEAD && requires_training)
-		to_chat(user, "<span class='warning'>You don't have the proper training to operate the power armor!</span>")
+		to_chat(user, SPAN_WARNING("You don't have the proper training to operate the power armor!"))
 		return 0
 	if(slot == SLOT_HEAD)
 		return ..()
@@ -311,7 +311,7 @@
 		return
 	if(emped == 0)
 		if(ismob(loc))
-			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
+			to_chat(loc, SPAN_WARNING("Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems."))
 			tint += 2
 			if(istype(loc, /mob/living/carbon))
 				var/mob/living/carbon/M = loc
@@ -319,7 +319,7 @@
 			armor = armor.modifyRating(linemelee = -50, linebullet = -50, linelaser = -50)
 			emped = 1
 			spawn(50) //5 seconds of being blind and weak
-				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
+				to_chat(loc, SPAN_WARNING("Helmet power reroute successful. All systems operational."))
 				tint -= 2
 				if(istype(loc, /mob/living/carbon))
 					var/mob/living/carbon/M = loc
@@ -335,7 +335,7 @@
 				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 				return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 			if(ismob(loc))
-				to_chat(loc, "<span class='warning'>Your power armor absorbs the projectile's impact!</span>")
+				to_chat(loc, SPAN_WARNING("Your power armor absorbs the projectile's impact!"))
 			block_return[BLOCK_RETURN_SET_DAMAGE_TO] = 0
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
@@ -353,7 +353,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	name = "raider T-45b power helmet"
-	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet"
+	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet."
 	icon_state = "raiderpa_helm"
 	item_state = "raiderpa_helm"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
@@ -582,13 +582,13 @@
 
 /obj/item/clothing/head/f13/hairband
 	name = "hairband"
-	desc = "Pretty yellow hairband"
+	desc = "A pretty yellow hairband."
 	icon_state = "50shairband"
 	item_state = "50shairband"
 
 /obj/item/clothing/head/f13/nursehat
 	name = "nursehat"
-	desc = "White cloth headdress for nurses"
+	desc = "A white cloth headdress, typically used by nurses."
 	icon_state = "nursehat"
 	item_state = "nursehat"
 
@@ -747,8 +747,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/simplekitty
-	name = "Kitty Headband"
-	desc = "A headband with a pair of cute kitty ears"
+	name = "kitty headband"
+	desc = "A headband with a pair of cute kitty ears."
 	icon_state = "kittyb"
 	color = "#999999"
 	armor = list("tier" = 0)
@@ -960,7 +960,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/power_armor/legion
-	name = "Salvaged Legion T-45b helmet"
+	name = "salvaged Legion T-45b helmet"
 	desc = "(VIII) It's a salvaged T-45b power armor helmet, retrofitted in Dog City for the legion's front line."
 	icon_state = "libritor"
 	item_state = "libritor"
@@ -990,3 +990,13 @@
 	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
 	icon_state = "mutie_crown"
 	item_state = "mutie_crown"
+
+/obj/item/clothing/head/helmet/f13/combat/marine/legion/centurion
+	name = "marine combat helmet"
+	desc = "(VII) An excellent helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
+	icon_state = "ptolemaic_helm"
+	item_state = "ptolemaic_helm"
+	armor = list("tier" = 7, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 50)
+	flash_protect = 1
+	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	darkness_view = 24

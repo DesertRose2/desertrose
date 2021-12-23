@@ -179,7 +179,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 			Vc.Remove()
 		nVc.Insert(M)
 		qdel(Vc)
-		to_chat(M, "<span class='notice'><i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i></span>")
+		to_chat(M, SPAN_NOTICE("<i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i>"))
 	else
 		log_reagent("FERMICHEM: MKUltra: [creatorName], [creatorID], is enthralling [M.name], [M.ckey]")
 		M.apply_status_effect(/datum/status_effect/chem/enthrall)
@@ -286,7 +286,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 		love = pick(seen)
 		M.apply_status_effect(STATUS_EFFECT_INLOVE, love)
 		lewd = (M.client?.prefs.cit_toggles & HYPNO) && (love.client?.prefs.cit_toggles & HYPNO)
-		to_chat(M, "[(lewd?"<span class='love'>":"<span class='warning'>")][(lewd?"You develop a sudden crush on [love], your heart beginning to race as you look upon them with new eyes.":"You suddenly feel like making friends with [love].")] You feel strangely drawn towards them.</span>")
+		to_chat(M, "<span class=[(lewd?"'love'>You develop a sudden crush on [love], your heart beginning to race as you look upon them with new eyes.":"'warning'>You suddenly feel like making friends with [love].")] You feel strangely drawn towards them.</span>")
 		log_reagent("FERMICHEM: [M] ckey: [M.key] has temporarily bonded with [love] ckey: [love.key]")
 		SSblackbox.record_feedback("tally", "fermi_chem", 1, "Times people have bonded")
 	else
@@ -301,7 +301,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 			if(prob(5))
 				M.Stun(10)
 				M.emote("whimper")//does this exist?
-				to_chat(M, "[(lewd?"<span class='love'>":"<span class='warning'>")] You're overcome with a desire to see [love].</span>")
+				to_chat(M, "<span class='[lewd?"love":"warning"]'>You're overcome with a desire to see [love].</span>")
 				M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.5)//I found out why everyone was so damaged!
 	..()
 
@@ -311,7 +311,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 	M.remove_status_effect(STATUS_EFFECT_INLOVE)
 	SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "InLove")
 	SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "MissingLove")
-	to_chat(M, "[(lewd?"<span class='love'>":"<span class='warning'>")]Your feelings for [love] suddenly vanish!")
+	to_chat(M, "<span class='[lewd?"love":"warning"]'>Your feelings for [love] suddenly vanish!</span>")
 	log_reagent("FERMICHEM: [M] ckey: [M.key] is no longer in temp bond")
 	..()
 
@@ -319,10 +319,10 @@ Creating a chem with a low purity will make you permanently fall in love with so
 	if(Lover.client?.prefs.cit_toggles & NEVER_HYPNO)
 		return // doesn't even give a message, it's just ignored
 	if(Lover.has_status_effect(STATUS_EFFECT_INLOVE))
-		to_chat(Lover, "<span class='warning'>You are already fully devoted to someone else!</span>")
+		to_chat(Lover, SPAN_WARNING("You are already fully devoted to someone else!"))
 		return
 	var/lewd = (Lover.client?.prefs.cit_toggles & HYPNO) && (Love.client?.prefs.cit_toggles & HYPNO)
-	to_chat(Lover, "[(lewd?"<span class='love'>":"<span class='warning'>")]You develop a deep and sudden bond with [Love][(lewd?", your heart beginning to race as your mind filles with thoughts about them.":".")] You are determined to keep them safe and happy, and feel drawn towards them.</span>")
+	to_chat(Lover, "<span class='[lewd?"love":"warning"]'>You develop a deep and sudden bond with [Love][(lewd?", your heart beginning to race as your mind fills with thoughts about them.":".")] You are determined to keep them safe and happy, and feel drawn towards them.</span>")
 	if(Lover.mind)
 		Lover.mind.store_memory("You are in love with [Love].")
 	Lover.faction |= "[REF(Love)]"

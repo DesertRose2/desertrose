@@ -29,10 +29,10 @@
 		var/obj/item/stack/tile/plasteel/S = C
 		if(S.use(1))
 			playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
-			to_chat(user, "<span class='notice'>You build a floor.</span>")
+			to_chat(user, SPAN_NOTICE("You build a floor."))
 			ChangeTurf(/turf/open/floor/plating)
 		else
-			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
+			to_chat(user, SPAN_WARNING("You need one floor tile to build a floor!"))
 	else
 		return ..()
 /*

@@ -410,7 +410,7 @@
 	id = /datum/reagent/teslium
 	results = list(/datum/reagent/teslium = 3)
 	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/silver = 1, /datum/reagent/blackpowder = 1)
-	mix_message = "<span class='danger'>A jet of sparks flies from the mixture as it merges into a flickering slurry.</span>"
+	mix_message = SPAN_DANGER("A jet of sparks flies from the mixture as it merges into a flickering slurry.")
 	required_temp = 400
 
 /datum/chemical_reaction/energized_jelly
@@ -418,7 +418,7 @@
 	id = /datum/reagent/teslium/energized_jelly
 	results = list(/datum/reagent/teslium/energized_jelly = 2)
 	required_reagents = list(/datum/reagent/toxin/slimejelly = 1, /datum/reagent/teslium = 1)
-	mix_message = "<span class='danger'>The slime jelly starts glowing intermittently.</span>"
+	mix_message = SPAN_DANGER("The slime jelly starts glowing intermittently.")
 
 /datum/chemical_reaction/reagent_explosion/teslium_lightning
 	name = "Teslium Destabilization"

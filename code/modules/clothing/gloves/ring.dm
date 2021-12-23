@@ -23,7 +23,7 @@
 	item_state = "dring"
 
 /obj/item/clothing/gloves/ring/diamond/attack_self(mob/user)
-	user.visible_message("<span class='warning'>\The [user] gets down on one knee, presenting \the [src].</span>","<span class='warning'>You get down on one knee, presenting \the [src].</span>")
+	user.visible_message(SPAN_WARNING("\The [user] gets down on one knee, presenting \the [src]."),SPAN_WARNING("You get down on one knee, presenting \the [src]."))
 
 /obj/item/clothing/gloves/ring/silver
 	name = "silver ring"

@@ -322,7 +322,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/wood
 	name = "wooden plank"
-	desc = "One can only guess that this is a bunch of wood. You might be able to make a stake with this if you use something sharp on it"
+	desc = "One can only guess that this is a bunch of wood. You could carve it into a stake with something sharp."
 	singular_name = "wood plank"
 	icon_state = "sheet-wood"
 	item_state = "sheet-wood"
@@ -341,7 +341,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	// Taken from /obj/item/stack/rods/attackby in [rods.dm]
 	if(W.get_sharpness())
 		user.visible_message("[user] begins whittling [src] into a pointy object.", \
-				"<span class='notice'>You begin whittling [src] into a sharp point at one end.</span>", \
+				SPAN_NOTICE("You begin whittling [src] into a sharp point at one end."), \
 				"<span class='italics'>You hear wood carving.</span>")
 		// 8 Second Timer
 		if(!do_after(user, 80, TRUE, src))
@@ -349,7 +349,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 		// Make Stake
 		var/obj/item/stake/basic/new_item = new(user.loc)
 		user.visible_message("[user] finishes carving a stake out of [src].", \
-				"<span class='notice'>You finish carving a stake out of [src].</span>")
+				SPAN_NOTICE("You finish carving a stake out of [src]."))
 		// Prepare to Put in Hands (if holding wood)
 		var/obj/item/stack/sheet/mineral/wood/N = src
 		var/replace = (user.get_inactive_held_item() == N)
@@ -361,7 +361,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	if(istype(W, merge_type))
 		var/obj/item/stack/S = W
 		if(merge(S))
-			to_chat(user, "<span class='notice'>Your [S.name] stack now contains [S.get_amount()] [S.singular_name]\s.</span>")
+			to_chat(user, SPAN_NOTICE("Your [S.name] stack now contains [S.get_amount()] [S.singular_name]\s."))
 	else
 		. = ..()
 
@@ -597,7 +597,7 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 		var/atom/droploc = drop_location()
 		if(use(1))
 			playsound(I, 'sound/items/bikehorn.ogg', 50, 1, -1)
-			to_chat(user, "<span class='notice'>You stamp the cardboard! It's a clown box! Honk!</span>")
+			to_chat(user, SPAN_NOTICE("You stamp the cardboard! It's a clown box! Honk!"))
 			if (amount >= 0)
 				new/obj/item/storage/box/clown(droploc) //bugfix
 	else
@@ -639,12 +639,12 @@ GLOBAL_LIST_INIT(runed_metal_recipes, list ( \
 
 /obj/item/stack/sheet/runed_metal/attack_self(mob/living/user)
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>Only one with forbidden knowledge could hope to work this metal...</span>")
+		to_chat(user, SPAN_WARNING("Only one with forbidden knowledge could hope to work this metal..."))
 		return
 	var/turf/T = get_turf(user) //we may have moved. adjust as needed...
 	var/area/A = get_area(user)
 	if((!is_station_level(T.z) && !is_mining_level(T.z)) || (A && !A.blob_allowed))
-		to_chat(user, "<span class='warning'>The veil is not weak enough here.</span>")
+		to_chat(user, SPAN_WARNING("The veil is not weak enough here."))
 		return FALSE
 	return ..()
 
@@ -720,7 +720,7 @@ GLOBAL_LIST_INIT(brass_recipes, list ( \
 
 /obj/item/stack/tile/brass/attack_self(mob/living/user)
 	if(!is_servant_of_ratvar(user))
-		to_chat(user, "<span class='danger'>[src] seems far too fragile and rigid to build with.</span>") //haha that's because it's actually replicant alloy you DUMMY
+		to_chat(user, SPAN_DANGER("[src] seems far too fragile and rigid to build with.")) //haha that's because it's actually replicant alloy you DUMMY
 		return
 	..()
 
@@ -772,7 +772,7 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 
 /obj/item/stack/sheet/bronze/attack_self(mob/living/user)
 	if(is_servant_of_ratvar(user)) //still lets them build with it, just gives a message
-		to_chat(user, "<span class='danger'>Wha... what is this cheap imitation crap? This isn't brass at all!</span>")
+		to_chat(user, SPAN_DANGER("Wha... what is this cheap imitation crap? This isn't brass at all!"))
 	..()
 
 /obj/item/stack/sheet/bronze/get_main_recipes()
@@ -931,43 +931,6 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	pull_effort = 70
 	loom_result = /obj/item/stack/sheet/durathread
 	grind_results = list(/datum/reagent/cellulose = 10)
-
-/*   Meat tables and Pizza toilets can go straight to hell
-/obj/item/stack/sheet/meat
-	name = "meat sheets"
-	desc = "Something's bloody meat compressed into a nice solid sheet"
-	singular_name = "meat sheet"
-	icon_state = "sheet-meat"
-	material_flags = MATERIAL_COLOR
-	custom_materials = list(/datum/material/meat = MINERAL_MATERIAL_AMOUNT)
-	merge_type = /obj/item/stack/sheet/meat
-	material_type = /datum/material/meat
-	material_modifier = 1 //None of that wussy stuff
-
-/obj/item/stack/sheet/meat/fifty
-	amount = 50
-/obj/item/stack/sheet/meat/twenty
-	amount = 20
-/obj/item/stack/sheet/meat/five
-	amount = 5
-
-/obj/item/stack/sheet/pizza
-	name = "pepperoni sheetzzas"
-	desc = "It's a delicious pepperoni sheetzza!"
-	singular_name = "pepperoni sheetzza"
-	icon_state = "sheet-pizza"
-	custom_materials = list(/datum/material/pizza = MINERAL_MATERIAL_AMOUNT)
-	merge_type = /obj/item/stack/sheet/pizza
-	material_type = /datum/material/pizza
-	material_modifier = 1
-
-/obj/item/stack/sheet/pizza/fifty
-	amount = 50
-/obj/item/stack/sheet/pizza/twenty
-	amount = 20
-/obj/item/stack/sheet/pizza/five
-	amount = 5
-*/
 
 /obj/item/stack/sheet/sandblock
 	name = "blocks of sand"

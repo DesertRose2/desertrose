@@ -88,7 +88,7 @@
 /obj/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first = 0, datum/callback/callback, force, messy_throw = TRUE)
 	. = ..()
 	if(obj_flags & FROZEN)
-		visible_message("<span class='danger'>[src] shatters into a million pieces!</span>")
+		visible_message(SPAN_DANGER("[src] shatters into a million pieces!"))
 		qdel(src)
 
 /obj/assume_air(datum/gas_mixture/giver)
@@ -287,7 +287,7 @@
 							laser = text2num(result["values"]["laser"])
 							)
 				log_admin("[key_name(usr)] modified the armor on [src] ([type]) to linemelee: [armor.linemelee], linebullet: [armor.linebullet], linelaser: [armor.linelaser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid], melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser]")
-				message_admins("<span class='notice'>[key_name_admin(usr)] modified the armor on [src] ([type]) to linemelee: [armor.linemelee], linebullet: [armor.linebullet], linelaser: [armor.linelaser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid], melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser]</span>")
+				message_admins(SPAN_NOTICE("[key_name_admin(usr)] modified the armor on [src] ([type]) to linemelee: [armor.linemelee], linebullet: [armor.linebullet], linelaser: [armor.linelaser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid], melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser]"))
 	if(href_list[VV_HK_MASS_DEL_TYPE])
 		if(check_rights(R_DEBUG|R_SERVER))
 			var/action_type = alert("Strict type ([type]) or type and all subtypes?",,"Strict type","Type and subtypes","Cancel")
@@ -313,7 +313,7 @@
 						to_chat(usr, "No objects of this type exist")
 						return
 					log_admin("[key_name(usr)] deleted all objects of type [O_type] ([i] objects deleted) ")
-					message_admins("<span class='notice'>[key_name(usr)] deleted all objects of type [O_type] ([i] objects deleted) </span>")
+					message_admins(SPAN_NOTICE("[key_name(usr)] deleted all objects of type [O_type] ([i] objects deleted) "))
 				if("Type and subtypes")
 					var/i = 0
 					for(var/obj/Obj in world)
@@ -325,14 +325,14 @@
 						to_chat(usr, "No objects of this type exist")
 						return
 					log_admin("[key_name(usr)] deleted all objects of type or subtype of [O_type] ([i] objects deleted) ")
-					message_admins("<span class='notice'>[key_name(usr)] deleted all objects of type or subtype of [O_type] ([i] objects deleted) </span>")
+					message_admins(SPAN_NOTICE("[key_name(usr)] deleted all objects of type or subtype of [O_type] ([i] objects deleted) "))
 
 /obj/examine(mob/user)
 	. = ..()
 	if(obj_flags & UNIQUE_RENAME)
-		. += "<span class='notice'>Use a pen on it to rename it or change its description.</span>"
+		. += SPAN_NOTICE("Use a pen on it to rename it or change its description.")
 	if(unique_reskin && (!current_skin || always_reskinnable))
-		. += "<span class='notice'>Alt-click it to reskin it.</span>"
+		. += SPAN_NOTICE("Alt-click it to reskin it.")
 
 /obj/AltClick(mob/user)
 	. = ..()

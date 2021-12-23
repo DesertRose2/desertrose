@@ -16,7 +16,7 @@
 	if(ismob(target))
 		var/mob/M = target
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
+			M.visible_message(SPAN_WARNING("[src] vanishes on contact with [target]!"))
 			return BULLET_ACT_BLOCK
 		M.death(0)
 
@@ -33,7 +33,7 @@
 		if(target.hellbound)
 			return BULLET_ACT_BLOCK
 		if(target.anti_magic_check())
-			target.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
+			target.visible_message(SPAN_WARNING("[src] vanishes on contact with [target]!"))
 			return BULLET_ACT_BLOCK
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
@@ -41,9 +41,9 @@
 			C.regenerate_organs()
 		if(target.revive(full_heal = 1))
 			target.grab_ghost(force = TRUE) // even suicides
-			to_chat(target, "<span class='notice'>You rise with a start, you're alive!!!</span>")
+			to_chat(target, SPAN_NOTICE("You rise with a start, you're alive!!!"))
 		else if(target.stat != DEAD)
-			to_chat(target, "<span class='notice'>You feel great!</span>")
+			to_chat(target, SPAN_NOTICE("You feel great!"))
 
 /obj/item/projectile/magic/teleport
 	name = "bolt of teleportation"
@@ -59,7 +59,7 @@
 	if(ismob(target))
 		var/mob/M = target
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] fizzles on contact with [target]!</span>")
+			M.visible_message(SPAN_WARNING("[src] fizzles on contact with [target]!"))
 			return BULLET_ACT_BLOCK
 	var/teleammount = 0
 	var/teleloc = target
@@ -114,7 +114,7 @@
 	if(ismob(change))
 		var/mob/M = change
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] fizzles on contact with [M]!</span>")
+			M.visible_message(SPAN_WARNING("[src] fizzles on contact with [M]!"))
 			qdel(src)
 			return BULLET_ACT_BLOCK
 	wabbajack(change)
@@ -238,7 +238,7 @@
 
 	M.wabbajack_act(new_mob)
 
-	to_chat(new_mob, "<span class='warning'>Your form morphs into that of a [randomize].</span>")
+	to_chat(new_mob, SPAN_WARNING("Your form morphs into that of a [randomize]."))
 
 	var/poly_msg = CONFIG_GET(keyed_list/policy)["polymorph"]
 	if(poly_msg)
@@ -307,7 +307,7 @@
 	if(ismob(target))
 		var/mob/M = target
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
+			M.visible_message(SPAN_WARNING("[src] vanishes on contact with [target]!"))
 			qdel(src)
 			return BULLET_ACT_BLOCK
 	. = ..()
@@ -326,7 +326,7 @@
 	if(ismob(target))
 		var/mob/M = target
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
+			M.visible_message(SPAN_WARNING("[src] vanishes on contact with [target]!"))
 			qdel(src)
 			return BULLET_ACT_BLOCK
 	. = ..()
@@ -345,7 +345,7 @@
 	if(ismob(A) && locker_suck)
 		var/mob/M = A
 		if(M.anti_magic_check())
-			M.visible_message("<span class='warning'>[src] vanishes on contact with [A]!</span>")
+			M.visible_message(SPAN_WARNING("[src] vanishes on contact with [A]!"))
 			qdel(src)
 			return
 		if(M.anchored)
@@ -452,7 +452,7 @@
 	if(ismob(target))
 		var/mob/M = target
 		if(M.anti_magic_check())
-			visible_message("<span class='warning'>[src] fizzles on contact with [target]!</span>")
+			visible_message(SPAN_WARNING("[src] fizzles on contact with [target]!"))
 			qdel(src)
 			return BULLET_ACT_BLOCK
 	tesla_zap(src, zap_range, zap_power, zap_flags)
@@ -480,7 +480,7 @@
 	if(ismob(target))
 		var/mob/living/M = target
 		if(M.anti_magic_check())
-			visible_message("<span class='warning'>[src] vanishes into smoke on contact with [target]!</span>")
+			visible_message(SPAN_WARNING("[src] vanishes into smoke on contact with [target]!"))
 			return BULLET_ACT_BLOCK
 		M.take_overall_damage(0,10) //between this 10 burn, the 10 brute, the explosion brute, and the onfire burn, your at about 65 damage if you stop drop and roll immediately
 	var/turf/T = get_turf(target)
@@ -518,7 +518,7 @@
 		if(target == victim)
 			return BULLET_ACT_FORCE_PIERCE
 		used = 1
-		visible_message("<span class='danger'>[victim] slams into [target] with explosive force!</span>")
+		visible_message(SPAN_DANGER("[victim] slams into [target] with explosive force!"))
 		explosion(src, 2, 3, 4, -1, TRUE, FALSE, 5)
 	else
 		used = 1

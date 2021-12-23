@@ -40,7 +40,7 @@
 	if(!QDELETED(target) && target.stat != DEAD && !target.anti_magic_check(chargecost = 0) && !is_servant_of_ratvar(target)) //we do bonus damage on attacks unless they're a servant, have a null rod, or are dead
 		var/bonus_damage = bonus_burn //normally a total of 20 damage, 30 with ratvar
 		if(issilicon(target))
-			target.visible_message("<span class='warning'>[target] shudders violently at [src]'s touch!</span>", "<span class='userdanger'>ERROR: Temperature rising!</span>")
+			target.visible_message(SPAN_WARNING("[target] shudders violently at [src]'s touch!"), "<span class='userdanger'>ERROR: Temperature rising!</span>")
 			bonus_damage *= 5 //total 40 damage on borgs, 70 with ratvar
 		else if(iscultist(target) || isconstruct(target))
 			to_chat(target, "<span class='userdanger'>Your body flares with agony at [src]'s presence!</span>")
@@ -53,9 +53,9 @@
 		var/mob/living/L = hit_atom
 		if(is_servant_of_ratvar(L))
 			if(L.put_in_active_hand(src))
-				L.visible_message("<span class='warning'>[L] catches [src] out of the air!</span>")
+				L.visible_message(SPAN_WARNING("[L] catches [src] out of the air!"))
 			else
-				L.visible_message("<span class='warning'>[src] bounces off of [L], as if repelled by an unseen force!</span>")
+				L.visible_message(SPAN_WARNING("[src] bounces off of [L], as if repelled by an unseen force!"))
 		else if(!..())
 			if(!L.anti_magic_check())
 				if(issilicon(L))
@@ -78,7 +78,7 @@
 		if(!T)
 			T = get_turf(src)
 		if(T) //make sure we're not in null or something
-			T.visible_message("<span class='warning'>[src] [pick("cracks in two and fades away", "snaps in two and dematerializes")]!</span>")
+			T.visible_message(SPAN_WARNING("[src] [pick("cracks in two and fades away", "snaps in two and dematerializes")]!"))
 			new /obj/effect/temp_visual/ratvar/spearbreak(T)
 		action.weapon_reset(RATVARIAN_WEAPON_COOLDOWN)
 

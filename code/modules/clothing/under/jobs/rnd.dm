@@ -63,7 +63,7 @@
 
 /obj/item/clothing/under/rank/rnd/scientist/util
 	name = "Science Utility Uniform"
-	desc = "A utility uniform for science personnel"
+	desc = "A utility uniform for science personnel."
 	icon_state = "utilsci"
 	item_state = "utilsci"
 	can_adjust = FALSE

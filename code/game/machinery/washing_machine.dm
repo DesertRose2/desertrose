@@ -122,7 +122,7 @@ GLOBAL_LIST_INIT(dye_registry, list(
 /obj/machinery/washing_machine/examine(mob/user)
 	. = ..()
 	if(!busy)
-		. += "<span class='notice'><b>Alt-click</b> it to start a wash cycle.</span>"
+		. += SPAN_NOTICE("<b>Alt-click</b> it to start a wash cycle.")
 
 /obj/machinery/washing_machine/AltClick(mob/user)
 	. = ..()
@@ -131,10 +131,10 @@ GLOBAL_LIST_INIT(dye_registry, list(
 	if(busy)
 		return
 	if(state_open)
-		to_chat(user, "<span class='notice'>Close the door first</span>")
+		to_chat(user, SPAN_NOTICE("Close the door first."))
 		return TRUE
 	if(bloody_mess)
-		to_chat(user, "<span class='warning'>[src] must be cleaned up first.</span>")
+		to_chat(user, SPAN_WARNING("[src] must be cleaned up first."))
 		return TRUE
 
 	busy = TRUE
@@ -269,25 +269,25 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		return
 
 	if(istype(W, /obj/item/clothing/head/mob_holder))
-		to_chat(user, "<span class='warning'>It's too unwieldly to put in this way.</span>")
+		to_chat(user, SPAN_WARNING("It's too unwieldly to put in this way."))
 		return TRUE
 
 	else if(user.a_intent != INTENT_HARM)
 
 		if (!state_open)
-			to_chat(user, "<span class='warning'>Open the door first!</span>")
+			to_chat(user, SPAN_WARNING("Open the door first!"))
 			return TRUE
 
 		if(bloody_mess)
-			to_chat(user, "<span class='warning'>[src] must be cleaned up first.</span>")
+			to_chat(user, SPAN_WARNING("[src] must be cleaned up first."))
 			return TRUE
 
 		if(contents.len >= max_wash_capacity)
-			to_chat(user, "<span class='warning'>The washing machine is full!</span>")
+			to_chat(user, SPAN_WARNING("The washing machine is full!"))
 			return TRUE
 
 		if(!user.transferItemToLoc(W, src))
-			to_chat(user, "<span class='warning'>\The [W] is stuck to your hand, you cannot put it in the washing machine!</span>")
+			to_chat(user, SPAN_WARNING("\The [W] is stuck to your hand, you cannot put it in the washing machine!"))
 			return TRUE
 
 		if(W.dye_color)
@@ -299,7 +299,7 @@ GLOBAL_LIST_INIT(dye_registry, list(
 
 /obj/machinery/washing_machine/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(busy)
-		to_chat(user, "<span class='warning'>[src] is busy.</span>")
+		to_chat(user, SPAN_WARNING("[src] is busy."))
 		return
 
 	if(user.pulling && user.a_intent == INTENT_GRAB && isliving(user.pulling))

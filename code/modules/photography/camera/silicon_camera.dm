@@ -85,15 +85,15 @@
 /obj/item/camera/siliconcam/robot_camera/proc/borgprint(mob/user)
 	var/mob/living/silicon/robot/C = loc
 	if(!istype(C) || C.toner < 20)
-		to_chat(user, "<span class='warning'>Insufficent toner to print image.</span>")
+		to_chat(user, SPAN_WARNING("Insufficent toner to print image."))
 		return
 	var/datum/picture/selection = selectpicture(user)
 	if(!istype(selection))
-		to_chat(user, "<span class='warning'>Invalid Image.</span>")
+		to_chat(user, SPAN_WARNING("Invalid Image."))
 		return
 	var/obj/item/photo/p = new /obj/item/photo(C.loc, selection)
 	p.pixel_x = rand(-10, 10)
 	p.pixel_y = rand(-10, 10)
 	C.toner -= printcost	 //All fun allowed.
 	visible_message("[C.name] spits out a photograph from a narrow slot on its chassis.")
-	to_chat(usr, "<span class='notice'>You print a photograph.</span>")
+	to_chat(usr, SPAN_NOTICE("You print a photograph."))

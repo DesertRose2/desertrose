@@ -32,7 +32,7 @@
 			user.forceMove(S2)
 			S2.jaunter = user
 		else
-			to_chat(user, "<span class='warning'>It isn't dark enough here!</span>")
+			to_chat(user, SPAN_WARNING("It isn't dark enough here!"))
 
 /obj/effect/dummy/phased_mob/shadow
 	name = "darkness"
@@ -48,7 +48,7 @@
 /obj/effect/dummy/phased_mob/shadow/relaymove(mob/user, direction)
 	var/turf/newLoc = get_step(src,direction)
 	if(isspaceturf(newLoc))
-		to_chat(user, "<span class='warning'>It really would not be wise to go into space.</span>")
+		to_chat(user, SPAN_WARNING("It really would not be wise to go into space."))
 		return
 	forceMove(newLoc)
 	check_light_level()

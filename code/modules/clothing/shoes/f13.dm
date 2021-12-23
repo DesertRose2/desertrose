@@ -78,7 +78,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 
 /obj/item/clothing/shoes/f13/military/oldcombat
-	name = "Old Combat Boots"
+	name = "old combat boots"
 	desc = "A pair of old, pre-war styled boots made for combat."
 	icon_state = "oldcombat"
 	item_state = "oldcombat"
@@ -182,7 +182,7 @@
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 
 /obj/item/clothing/shoes/f13/jamrock
-	name = "Green Snakeskin Shoes"
+	name = "green snakeskin shoes"
 	desc = "They may have lost some of their lustre over the years, but these green crocodile leather shoes fit you perfectly."
 	icon_state = "jamrock_skins"
 	item_state = "jamrock_skins"

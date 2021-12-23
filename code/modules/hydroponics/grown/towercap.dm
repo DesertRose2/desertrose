@@ -51,7 +51,7 @@
 
 /obj/item/grown/log/attackby(obj/item/W, mob/user, params)
 	if(W.sharpness)
-		user.show_message("<span class='notice'>You make [plank_name] out of \the [src]!</span>", MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You make [plank_name] out of \the [src]!"), MSG_VISUAL)
 		var/seed_modifier = 3
 		if(seed)
 			seed_modifier = round(seed.potency / 25)
@@ -61,13 +61,13 @@
 			if(ST != plank && istype(ST, plank_type) && ST.amount < ST.max_amount)
 				ST.attackby(plank, user) //we try to transfer all old unfinished stacks to the new stack we created.
 		if(plank.amount > old_plank_amount)
-			to_chat(user, "<span class='notice'>You add the newly-formed [plank_name] to the stack. It now contains [plank.amount] [plank_name].</span>")
+			to_chat(user, SPAN_NOTICE("You add the newly-formed [plank_name] to the stack. It now contains [plank.amount] [plank_name]."))
 		qdel(src)
 
 	if(CheckAccepted(W))
 		var/obj/item/reagent_containers/food/snacks/grown/leaf = W
 		if(leaf.dry)
-			user.show_message("<span class='notice'>You wrap \the [W] around the log, turning it into a torch!</span>")
+			user.show_message(SPAN_NOTICE("You wrap \the [W] around the log, turning it into a torch!"))
 			var/obj/item/flashlight/flare/torch/T = new /obj/item/flashlight/flare/torch(user.loc)
 			usr.dropItemToGround(W)
 			usr.put_in_active_hand(T)
@@ -75,7 +75,7 @@
 			qdel(src)
 			return
 		else
-			to_chat(usr, "<span class ='warning'>You must dry this first!</span>")
+			to_chat(usr, SPAN_WARNING("You must dry this first!"))
 	else
 		return ..()
 
@@ -210,7 +210,7 @@
 
 /obj/structure/bonfire/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(burning)
-		to_chat(user, "<span class='warning'>You need to extinguish [src] before removing the logs!</span>")
+		to_chat(user, SPAN_WARNING("You need to extinguish [src] before removing the logs!"))
 		return
 	if(!has_buckled_mobs() && do_after(user, 50, target = src))
 		for(var/I in 1 to 5)

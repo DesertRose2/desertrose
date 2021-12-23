@@ -23,7 +23,7 @@
 
 /obj/item/clothing/under/rank/security/officer/util
 	name = "security utility uniform"
-	desc = "a grey security uniform"
+	desc = "A grey security uniform."
 	icon_state = "utilsec"
 	item_state = "utilsec"
 	can_adjust = FALSE

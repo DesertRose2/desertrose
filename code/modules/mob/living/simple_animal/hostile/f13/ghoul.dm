@@ -626,7 +626,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/proc/do_death_beep()
 	playsound(src, 'sound/machines/triple_beep.ogg', 75, TRUE)
-	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+	visible_message(SPAN_WARNING("You hear an ominous beep coming from [src]!"), SPAN_WARNING("You hear an ominous beep!"))
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/proc/self_destruct()
 	explosion(src,1,2,4,4)
@@ -687,7 +687,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/proc/do_death_beep()
 	playsound(src, 'sound/machines/triple_beep.ogg', 75, TRUE)
-	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+	visible_message(SPAN_WARNING("You hear an ominous beep coming from [src]!"), SPAN_WARNING("You hear an ominous beep!"))
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/proc/self_destruct()
 	explosion(src,2,2,8,8)

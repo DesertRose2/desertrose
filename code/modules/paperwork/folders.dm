@@ -40,11 +40,11 @@
 	if(istype(W, /obj/item/paper) || istype(W, /obj/item/photo) || istype(W, /obj/item/documents))
 		if(!user.transferItemToLoc(W, src))
 			return
-		to_chat(user, "<span class='notice'>You put [W] into [src].</span>")
+		to_chat(user, SPAN_NOTICE("You put [W] into [src]."))
 		update_icon()
 	else if(istype(W, /obj/item/pen))
 		if(!user.is_literate())
-			to_chat(user, "<span class='notice'>You scribble illegibly on the cover of [src]!</span>")
+			to_chat(user, SPAN_NOTICE("You scribble illegibly on the cover of [src]!"))
 			return
 
 		var/inputvalue = stripped_input(user, "What would you like to label the folder?", "Folder Labelling", "", MAX_NAME_LEN)

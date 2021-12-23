@@ -45,7 +45,7 @@
 		if(istype(mover.pulledby, /mob/living/simple_animal/hostile/poison/giant_spider))
 			return TRUE
 		if(prob(50))
-			to_chat(mover, "<span class='danger'>You get stuck in \the [src] for a moment.</span>")
+			to_chat(mover, SPAN_DANGER("You get stuck in \the [src] for a moment."))
 			return FALSE
 	else if(istype(mover, /obj/item/projectile))
 		return prob(30)
@@ -67,7 +67,7 @@
 		if(mover.pulledby == allowed_mob)
 			return TRUE
 		if(prob(50))
-			to_chat(mover, "<span class='danger'>You get stuck in \the [src] for a moment.</span>")
+			to_chat(mover, SPAN_DANGER("You get stuck in \the [src] for a moment."))
 			return FALSE
 		return TRUE
 	else if(istype(mover, /obj/item/projectile))
@@ -159,7 +159,7 @@
 	. = ..()
 	if(user.a_intent != INTENT_HELP)
 		user.do_attack_animation(src)
-		user.visible_message("<span class='warning'>[user] splats [src].</span>", "<span class='warning'>You splat [src].</span>", "<span class='italics'>You hear a splat...</span>")
+		user.visible_message(SPAN_WARNING("[user] splats [src]."), SPAN_WARNING("You splat [src]."), "<span class='italics'>You hear a splat...</span>")
 		playsound(loc, 'sound/effects/snap.ogg', 25)
 		qdel(src)
 		return TRUE
@@ -214,7 +214,7 @@
 			var/target_atom = pick(nearby)
 			walk_to(src, target_atom)
 			if(prob(40))
-				src.visible_message("<span class='notice'>\The [src] skitters[pick(" away"," around","")].</span>")
+				src.visible_message(SPAN_NOTICE("\The [src] skitters[pick(" away"," around","")]."))
 	else if(prob(10))
 		//ventcrawl!
 		for(var/obj/machinery/atmospherics/components/unary/vent_pump/v in view(7,src))
@@ -254,7 +254,7 @@
 
 /obj/structure/spider/cocoon/container_resist(mob/living/user)
 	var/breakout_time = 600
-	to_chat(user, "<span class='notice'>You struggle against the tight bonds... (This will take about [DisplayTimeText(breakout_time)].)</span>")
+	to_chat(user, SPAN_NOTICE("You struggle against the tight bonds... (This will take about [DisplayTimeText(breakout_time)].)"))
 	visible_message("You see something struggling and writhing in \the [src]!")
 	if(do_after(user,(breakout_time), target = src))
 		if(!user || user.stat != CONSCIOUS || user.loc != src)
@@ -263,7 +263,7 @@
 
 /obj/structure/spider/cocoon/Destroy()
 	var/turf/T = get_turf(src)
-	src.visible_message("<span class='warning'>\The [src] splits open.</span>")
+	src.visible_message(SPAN_WARNING("\The [src] splits open."))
 	for(var/atom/movable/A in contents)
 		A.forceMove(T)
 	return ..()

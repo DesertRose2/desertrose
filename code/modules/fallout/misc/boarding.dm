@@ -10,6 +10,7 @@
 	drop_amount = 0
 	var/planks = 3
 	var/maxplanks = 3
+	can_build = FALSE
 
 /obj/structure/barricade/wooden/planks/New()
 	..()
@@ -22,13 +23,13 @@
 
 /obj/structure/barricade/wooden/planks/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/crowbar))
-		visible_message("<span class='danger'>[user] begins to pry off a board...</span>")
+		visible_message(SPAN_DANGER("[user] begins to pry off a board..."))
 		var/current_planks = planks
 		if(do_after(user, 25, target = src))
 			if(current_planks  != planks)
-				to_chat(user, "<span class='warning'>That board was already pried off!</span>")
+				to_chat(user, SPAN_WARNING("That board was already pried off!"))
 				return
-			visible_message("<span class='danger'>[user] pries off a board!</span>")
+			visible_message(SPAN_DANGER("[user] pries off a board!"))
 			planks --
 			checkplanks()
 			new /obj/item/stack/sheet/mineral/wood(user.loc)

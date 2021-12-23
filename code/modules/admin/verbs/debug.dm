@@ -244,7 +244,7 @@
 	if((isobserver(oldmob) || alert("Do you want to delete [newkey]'s old mob?","Delete?","Yes","No") != "No"))
 		delmob = TRUE
 	if(!M || QDELETED(M))
-		to_chat(usr, "<span class='warning'>The target mob no longer exists, aborting.</span>")
+		to_chat(usr, SPAN_WARNING("The target mob no longer exists, aborting."))
 		return
 	if(M.ckey)
 		M.ghostize(FALSE)
@@ -766,7 +766,7 @@
 		to_chat(src, "<span class='name'>[template.name]</span>")
 		to_chat(src, "<span class='italics'>[template.description]</span>")
 	else
-		to_chat(src, "<span class='warning'>Failed to place [template.name].</span>")
+		to_chat(src, SPAN_WARNING("Failed to place [template.name]."))
 
 /client/proc/clear_dynamic_transit()
 	set category = "Debug"

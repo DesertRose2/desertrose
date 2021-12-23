@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		if(command)
 			. += "<span class='info'>Alt-click to toggle the high-volume mode.</span>"
 	else
-		. += "<span class='notice'>A small screen on the headset flashes, it's too small to read without holding or wearing the headset.</span>"
+		. += SPAN_NOTICE("A small screen on the headset flashes, it's too small to read without holding or wearing the headset.")
 
 /obj/item/radio/headset/ComponentInitialize()
 	. = ..()
@@ -352,7 +352,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_vault_hos/alt
 	name = "\proper the head of security's bowman headset"
-	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c. For vault, use :v"
+	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c. For vault, use :v."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
@@ -368,7 +368,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_ranger
 	name = "Ranger radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r"
+	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ranger
 
@@ -378,7 +378,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_ncr_com
 	name = "NCR Command radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r"
+	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_ranger
@@ -475,7 +475,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	user.set_machine(src)
 	if (istype(W,/obj/item/headsetupgrader))
 		if (!bowman)
-			to_chat(user,"<span class='notice'>You upgrade [src].</span>")
+			to_chat(user,SPAN_NOTICE("You upgrade [src]."))
 			bowmanize()
 			qdel(W)
 	if(istype(W, /obj/item/screwdriver))
@@ -494,14 +494,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 					keyslot2 = null
 
 			recalculateChannels()
-			to_chat(user, "<span class='notice'>You pop out the encryption keys in the headset.</span>")
+			to_chat(user, SPAN_NOTICE("You pop out the encryption keys in the headset."))
 
 		else
-			to_chat(user, "<span class='warning'>This headset doesn't have any unique encryption keys!  How useless...</span>")
+			to_chat(user, SPAN_WARNING("This headset doesn't have any unique encryption keys!  How useless..."))
 
 	else if(istype(W, /obj/item/encryptionkey))
 		if(keyslot && keyslot2)
-			to_chat(user, "<span class='warning'>The headset can't hold another key!</span>")
+			to_chat(user, SPAN_WARNING("The headset can't hold another key!"))
 			return
 
 		if(!keyslot)
@@ -543,7 +543,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		return
 	if (command)
 		use_command = !use_command
-		to_chat(user, "<span class='notice'>You toggle high-volume mode [use_command ? "on" : "off"].</span>")
+		to_chat(user, SPAN_NOTICE("You toggle high-volume mode [use_command ? "on" : "off"]."))
 		return TRUE
 
 /obj/item/radio/headset/proc/bowmanize()

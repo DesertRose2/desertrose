@@ -134,7 +134,7 @@
 /*
 /datum/supply_pack/engineering/shuttle_engine
 	name = "Shuttle Engine Crate"
-	desc = "Through advanced bluespace-shenanigans, our engineers have managed to fit an entire shuttle engine into one tiny little crate. Requires CE access to open."
+	desc = "Through advanced quantum-shenanigans, our engineers have managed to fit an entire shuttle engine into one tiny little crate. Requires CE access to open."
 	cost = 5000
 	access = ACCESS_CE
 	contains = list(/obj/structure/shuttle/engine/propulsion/burst/cargo)

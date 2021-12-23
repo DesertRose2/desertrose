@@ -25,11 +25,11 @@
 
 /obj/item/cartridge/virus/clown/send_virus(obj/item/pda/target, mob/living/U)
 	if(charges <= 0)
-		to_chat(U, "<span class='notice'>Out of charges.</span>")
+		to_chat(U, SPAN_NOTICE("Out of charges."))
 		return
 	if(!isnull(target) && !target.toff)
 		charges--
-		to_chat(U, "<span class='notice'>Virus Sent!</span>")
+		to_chat(U, SPAN_NOTICE("Virus Sent!"))
 		target.honkamt = (rand(15,20))
 	else
 		to_chat(U, "PDA not found.")
@@ -41,11 +41,11 @@
 
 /obj/item/cartridge/virus/mime/send_virus(obj/item/pda/target, mob/living/U)
 	if(charges <= 0)
-		to_chat(U, "<span class='notice'>Out of charges.</span>")
+		to_chat(U, SPAN_NOTICE("Out of charges."))
 		return
 	if(!isnull(target) && !target.toff)
 		charges--
-		to_chat(U, "<span class='notice'>Virus Sent!</span>")
+		to_chat(U, SPAN_NOTICE("Virus Sent!"))
 		target.silent = TRUE
 		target.ttone = "silence"
 	else
@@ -59,7 +59,7 @@
 
 /obj/item/cartridge/virus/syndicate/send_virus(obj/item/pda/target, mob/living/U)
 	if(charges <= 0)
-		to_chat(U, "<span class='notice'>Out of charges.</span>")
+		to_chat(U, SPAN_NOTICE("Out of charges."))
 		return
 	if(!isnull(target) && !target.toff)
 		charges--
@@ -72,12 +72,12 @@
 				difficulty += 2
 		var/datum/component/uplink/hidden_uplink = target.GetComponent(/datum/component/uplink)
 		if(!target.detonatable || prob(difficulty * 15) || (hidden_uplink))
-			U.show_message("<span class='danger'>An error flashes on your [src].</span>", MSG_VISUAL)
+			U.show_message(SPAN_DANGER("An error flashes on your [src]."), MSG_VISUAL)
 		else
 			message_admins("[!is_special_character(U) ? "Non-antag " : ""][ADMIN_LOOKUPFLW(U)] triggered a PDA explosion on [target.name] at [ADMIN_VERBOSEJMP(target)].")
 			var/message_log = "triggered a PDA explosion on [target.name] at [AREACOORD(target)]."
 			U.log_message(message_log, LOG_ATTACK)
-			U.show_message("<span class='notice'>Success!</span>", MSG_VISUAL)
+			U.show_message(SPAN_NOTICE("Success!"), MSG_VISUAL)
 			target.explode()
 	else
 		to_chat(U, "PDA not found.")
@@ -89,12 +89,12 @@
 
 /obj/item/cartridge/virus/frame/send_virus(obj/item/pda/target, mob/living/U)
 	if(charges <= 0)
-		to_chat(U, "<span class='notice'>Out of charges.</span>")
+		to_chat(U, SPAN_NOTICE("Out of charges."))
 		return
 	if(!isnull(target) && !target.toff)
 		charges--
 		var/lock_code = "[rand(100,999)] [pick(GLOB.phonetic_alphabet)]"
-		to_chat(U, "<span class='notice'>Virus Sent!  The unlock code to the target is: [lock_code]</span>")
+		to_chat(U, SPAN_NOTICE("Virus Sent!  The unlock code to the target is: [lock_code]"))
 		var/datum/component/uplink/hidden_uplink = target.GetComponent(/datum/component/uplink)
 		if(!hidden_uplink)
 			hidden_uplink = target.AddComponent(/datum/component/uplink)

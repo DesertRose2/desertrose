@@ -94,7 +94,7 @@
 						return
 					inserted_id = I
 				else
-					to_chat(usr, "<span class='danger'>No valid ID.</span>")
+					to_chat(usr, SPAN_DANGER("No valid ID."))
 			else if(inserted_id)
 				switch(href_list["id"])
 					if("eject")

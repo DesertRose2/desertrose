@@ -1873,6 +1873,11 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/tunnel)
+"dcz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden/crude/snow,
+/turf/open/floor/plasteel/cafeteria,
+/area/f13/bunker)
 "ddq" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -4362,6 +4367,11 @@
 /obj/item/reagent_containers/spray/cleaner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"gUg" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "gUu" = (
 /obj/structure/table/glass,
@@ -9321,11 +9331,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"opJ" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
-/area/f13/bunker)
 "oqc" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/firefighter,
@@ -9344,6 +9349,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
+/area/f13/bunker)
+"osf" = (
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "osC" = (
 /mob/living/simple_animal/hostile/supermutant/legendary,
@@ -11498,10 +11507,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
-"rHA" = (
-/obj/structure/simple_door/repaired,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "rIJ" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/turf_decal/weather/dirt{
@@ -12002,12 +12007,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
-"swg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden/snowed,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "swN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26722,7 +26721,7 @@ xsH
 xsH
 xsH
 xsH
-swg
+dcz
 xsH
 xsH
 xRz
@@ -35737,7 +35736,7 @@ vAC
 vAC
 vAC
 xsH
-opJ
+gUg
 nKy
 yhK
 jAl
@@ -79585,7 +79584,7 @@ heT
 bsh
 lEp
 okW
-rHA
+osf
 okW
 okW
 okW
@@ -79597,7 +79596,7 @@ okW
 okW
 okW
 okW
-rHA
+osf
 okW
 amW
 bBK
@@ -79849,7 +79848,7 @@ okW
 okW
 okW
 okW
-rHA
+osf
 okW
 okW
 okW
@@ -80629,7 +80628,7 @@ bsh
 bsh
 bsh
 rUH
-rHA
+osf
 rUH
 bsh
 bsh

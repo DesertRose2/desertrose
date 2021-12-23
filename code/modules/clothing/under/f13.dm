@@ -51,14 +51,14 @@
 
 /obj/item/clothing/under/f13/brahminm
 	name = "brahmin skin outfit"
-	desc = "A basic outfit consisting of a white shirt and patched trousers with Y-shaped suspenders"
+	desc = "A basic outfit consisting of a white shirt and patched trousers with Y-shaped suspenders."
 	icon_state = "brahmin_m"
 	item_state = "brahmin_m"
 	item_color = "brahmin_m"
 
 /obj/item/clothing/under/f13/brahminf
 	name = "brahmin skin outfit"
-	desc = "A basic outfit consisting of a white shirt and patched trousers with Y-shaped suspenders"
+	desc = "A basic outfit consisting of a white shirt and patched trousers with Y-shaped suspenders."
 	icon_state = "brahmin_f"
 	item_state = "brahmin_f_s"
 	item_color = "brahmin_f"
@@ -137,7 +137,7 @@
 	item_color = "modif_ranger"
 
 /obj/item/clothing/under/f13/ranger/clyde
-	name = "Ranger Chaps"
+	name = "ranger chaps"
 	desc = "A desert colored short-sleeved jumpsuit with protective khaki chaps at the legs up to the thighs."
 	icon_state = "ncr_clyde"
 	item_state = "ncr_clyde"
@@ -371,7 +371,7 @@
 
 /obj/item/clothing/under/f13/chinese_khan
 	name = "modified great khan jumpsuit"
-	desc = "An ancient Chinese combat uniform, in use before the war, modified with parts of the uniform of the Great Khans - the flag of China is replaced by a small flame, stitched in with great care, with a much larger flame commonly seen on the front of Khan jackets being visible on the back of the jumpsuit"
+	desc = "An ancient Chinese combat uniform, in use before the war, modified with parts of the uniform of the Great Khans - the flag of China is replaced by a small flame, stitched in with great care, with a much larger flame commonly seen on the front of Khan jackets being visible on the back of the jumpsuit."
 	icon_state = "chinese_khan"
 	item_state = "bl_suit"
 	item_color = "chinese_khan"
@@ -398,7 +398,7 @@
 	item_state = "chiefrags"
 
 /obj/item/clothing/under/f13/tribe_Hhunter
-	name = "Razorclaw robes"
+	name = "razorclaw robes"
 	desc = "Tanned leather robes, decorated with bones of deathclaws and marked with the great machine spirit of earth."
 	icon_state = "hhunterrags"
 	item_state = "hhunterrags"
@@ -475,14 +475,14 @@
 //stuff ported from WW2
 /obj/item/clothing/under/f13/ncr_formal_uniform
 	name = "NCR pre-war uniform"
-	desc = "An old pre-war uniform repurposed for the NCR armed forces"
+	desc = "An old pre-war uniform repurposed for the NCR armed forces."
 	icon_state = "us_uniform"
 	item_state = "us_uniform"
 	item_color = "us_uniform"
 
 /obj/item/clothing/under/f13/ncr_camo
 	name = "NCR pre-war camo"
-	desc = "Old pre-war camo repurposed for the NCR armed forces"
+	desc = "Old pre-war camo repurposed for the NCR armed forces."
 	icon_state = "nato_uniform"
 	item_state = "nato_uniform"
 	item_color = "nato_uniform"
@@ -874,7 +874,7 @@
 
 /obj/item/clothing/under/f13/gunner
 	name = "gunner combat uniform"
-	desc = "An ancient combat uniform, that went out of use around the time of the Great War. it has scratch marks and a skull painted on it to symbolize that its part of the gunners"
+	desc = "An ancient combat uniform, that went out of use around the time of the Great War. it has scratch marks and a skull painted on it to symbolize that it's part of the gunners."
 	icon_state = "GunnerPlates"
 	item_state = "GunnerPlates"
 	item_color = "GunnerPlates"
@@ -1115,13 +1115,13 @@
 	item_state = "raven_harness"
 
 /obj/item/clothing/under/f13/jamrock
-	name = "Disco-Ass Shirt and Pants"
+	name = "disco-ass shirt and pants"
 	desc = "This white satin shirt used to be fancy. It used to really catch the light. Now it smells like someone took a piss in the armpits while the golden brown trousers are flare-cut. Normal bell-bottom trousers would be boot-cut, but these are far from normal. They are someone's piss-soaked, cum-stained party pants."
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
 
 /obj/item/clothing/under/f13/keksweater
-	name = "Red Sweater"
+	name = "red sweater"
 	desc = "A dark red-sweater with some cargo-pants. Perfect for when it just gets too cold down in local air-conditioned areas."
 	icon_state = "brahminsss"
 	item_state = "brahminsss"
@@ -1135,7 +1135,7 @@
 
 /obj/item/clothing/under/f13/gunner
 	name = "gunner combat uniform"
-	desc = "An ancient combat uniform, that went out of use around the time of the Great War. it has scratch marks and a skull painted on it to symbolize that its part of the gunners"
+	desc = "An ancient combat uniform that went out of use around the time of the Great War. it has scratch marks and a skull painted on it to symbolize that it's part of the gunners."
 	icon_state = "GunnerPlates"
 	item_state = "GunnerPlates"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)

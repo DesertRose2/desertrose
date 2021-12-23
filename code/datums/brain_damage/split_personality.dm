@@ -5,8 +5,8 @@
 	name = "Split Personality"
 	desc = "Patient's brain is split into two personalities, which randomly switch control of the body."
 	scan_desc = "complete lobe separation"
-	gain_text = "<span class='warning'>You feel like your mind was split in two.</span>"
-	lose_text = "<span class='notice'>You feel alone again.</span>"
+	gain_text = SPAN_WARNING("You feel like your mind was split in two.")
+	lose_text = SPAN_NOTICE("You feel alone again.")
 	var/current_controller = OWNER
 	var/initialized = FALSE //to prevent personalities deleting themselves while we wait for ghosts
 	var/mob/living/split_personality/stranger_backseat //there's two so they can swap without overwriting
@@ -137,11 +137,11 @@
 
 /mob/living/split_personality/Login()
 	..()
-	to_chat(src, "<span class='notice'>As a split personality, you cannot do anything but observe. However, you will eventually gain control of your body, switching places with the current personality.</span>")
-	to_chat(src, "<span class='warning'><b>Do not commit suicide or put the body in a deadly position. Behave like you care about it as much as the owner.</b></span>")
+	to_chat(src, SPAN_NOTICE("As a split personality, you cannot do anything but observe. However, you will eventually gain control of your body, switching places with the current personality."))
+	to_chat(src, SPAN_WARNING("<b>Do not commit suicide or put the body in a deadly position. Behave like you care about it as much as the owner.</b>"))
 
 /mob/living/split_personality/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
-	to_chat(src, "<span class='warning'>You cannot speak, your other self is controlling your body!</span>")
+	to_chat(src, SPAN_WARNING("You cannot speak, your other self is controlling your body!"))
 	return FALSE
 
 /mob/living/split_personality/emote(act, m_type = null, message = null, intentional = FALSE)
@@ -154,7 +154,7 @@
 	desc = "Patient's brain is split into two personalities, which randomly switch control of the body."
 	scan_desc = "complete lobe separation"
 	gain_text = ""
-	lose_text = "<span class='notice'>You are free of your brainwashing.</span>"
+	lose_text = SPAN_NOTICE("You are free of your brainwashing.")
 	can_gain = FALSE
 	var/codeword
 	var/objective
@@ -198,7 +198,7 @@
 		return
 	var/message = hearing_args[HEARING_RAW_MESSAGE]
 	if(findtext(message, codeword))
-		hearing_args[HEARING_RAW_MESSAGE] = replacetext(message, codeword, "<span class='warning'>[codeword]</span>")
+		hearing_args[HEARING_RAW_MESSAGE] = replacetext(message, codeword, SPAN_WARNING("[codeword]"))
 		addtimer(CALLBACK(src, /datum/brain_trauma/severe/split_personality.proc/switch_personalities), 10)
 
 /datum/brain_trauma/severe/split_personality/brainwashing/handle_speech(datum/source, list/speech_args)
@@ -213,10 +213,10 @@
 
 /mob/living/split_personality/traitor/Login()
 	..()
-	to_chat(src, "<span class='notice'>As a brainwashed personality, you cannot do anything yet but observe. However, you may gain control of your body if you hear the special codeword, switching places with the current personality.</span>")
-	to_chat(src, "<span class='notice'>Your activation codeword is: <b>[codeword]</b></span>")
+	to_chat(src, SPAN_NOTICE("As a brainwashed personality, you cannot do anything yet but observe. However, you may gain control of your body if you hear the special codeword, switching places with the current personality."))
+	to_chat(src, SPAN_NOTICE("Your activation codeword is: <b>[codeword]</b>"))
 	if(objective)
-		to_chat(src, "<span class='notice'>Your master left you an objective: <b>[objective]</b>. Follow it at all costs when in control.</span>")
+		to_chat(src, SPAN_NOTICE("Your master left you an objective: <b>[objective]</b>. Follow it at all costs when in control."))
 
 #undef OWNER
 #undef STRANGER

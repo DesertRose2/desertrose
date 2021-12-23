@@ -27,16 +27,16 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/board/launchpad
-	name = "Machine Design (Bluespace Launchpad Board)"
-	desc = "The circuit board for a bluespace Launchpad."
+	name = "Machine Design (Quantum Launchpad Board)"
+	desc = "The circuit board for a quantum launchpad."
 	id = "launchpad"
 	build_path = /obj/item/circuitboard/machine/launchpad
 	category = list ("Teleportation Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/board/launchpad_console
-	name = "Machine Design (Bluespace Launchpad Console Board)"
-	desc = "The circuit board for a bluespace launchpad Console."
+	name = "Machine Design (Quantum Launchpad Console Board)"
+	desc = "The circuit board for a quantum launchpad console."
 	id = "launchpad_console"
 	build_path = /obj/item/circuitboard/computer/launchpad_console
 	category = list ("Teleportation Machinery")

@@ -37,10 +37,10 @@
 		else
 			prot = 0
 	if(prot > 0 || HAS_TRAIT(user, TRAIT_RESISTHEAT) || HAS_TRAIT(user, TRAIT_RESISTHEATHANDS))
-		to_chat(user, "<span class='notice'>You pick up the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You pick up the [src]."))
 		return ..()
 	else
-		to_chat(user, "<span class='warning'>You try to move the [src], but you burn your hand on it!</span>")
+		to_chat(user, SPAN_WARNING("You try to move the [src], but you burn your hand on it!"))
 	if(H)
 		var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 		if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage

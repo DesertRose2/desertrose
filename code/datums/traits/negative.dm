@@ -25,8 +25,8 @@
 	desc = "You sometimes just hate life."
 	mob_trait = TRAIT_DEPRESSION
 	value = -1
-	gain_text = "<span class='danger'>You start feeling depressed.</span>"
-	lose_text = "<span class='notice'>You no longer feel depressed.</span>" //if only it were that easy!
+	gain_text = SPAN_DANGER("You start feeling depressed.")
+	lose_text = SPAN_NOTICE("You no longer feel depressed.") //if only it were that easy!
 	medical_record_text = "Patient has a severe mood disorder, causing them to experience acute episodes of depression."
 	mood_quirk = TRUE
 
@@ -128,8 +128,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	desc = "You sleep like a rock! Whenever you're put to sleep, you sleep for a little bit longer."
 	value = -1
 	mob_trait = TRAIT_HEAVY_SLEEPER
-	gain_text = "<span class='danger'>You feel sleepy.</span>"
-	lose_text = "<span class='notice'>You feel awake again.</span>"
+	gain_text = SPAN_DANGER("You feel sleepy.")
+	lose_text = SPAN_NOTICE("You feel awake again.")
 	medical_record_text = "Patient has abnormal sleep study results and is difficult to wake up."
 
 /datum/quirk/poor_aim
@@ -143,8 +143,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Nearsighted"
 	desc = "You are nearsighted without prescription glasses, but spawn with a pair."
 	value = -1
-	gain_text = "<span class='danger'>Things far away from you start looking blurry.</span>"
-	lose_text = "<span class='notice'>You start seeing faraway things normally again.</span>"
+	gain_text = SPAN_DANGER("Things far away from you start looking blurry.")
+	lose_text = SPAN_NOTICE("You start seeing faraway things normally again.")
 	medical_record_text = "Patient requires prescription glasses in order to counteract nearsightedness."
 
 /datum/quirk/nearsighted/add()
@@ -170,7 +170,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/lums = T.get_lumcount()
 	if(lums <= 0.2)
 		if(quirk_holder.m_intent == MOVE_INTENT_RUN)
-			to_chat(quirk_holder, "<span class='warning'>Easy, easy, take it slow... you're in the dark...</span>")
+			to_chat(quirk_holder, SPAN_WARNING("Easy, easy, take it slow... you're in the dark..."))
 			quirk_holder.toggle_move_intent()
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nyctophobia", /datum/mood_event/nyctophobia)
 	else
@@ -180,8 +180,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Light Sensitivity"
 	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition."
 	value = -1
-	gain_text = "<span class='danger'>The safty of light feels off...</span>"
-	lose_text = "<span class='notice'>Enlightening.</span>"
+	gain_text = SPAN_DANGER("The safty of light feels off...")
+	lose_text = SPAN_NOTICE("Enlightening.")
 	medical_record_text = "Despite my warnings, the patient refuses turn on the lights, only to end up rolling down a full flight of stairs and into the cellar."
 
 /datum/quirk/lightless/on_process()
@@ -200,8 +200,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Acute Blood Deficiency"
 	desc = "Your body can't produce enough blood to sustain itself."
 	value = -2
-	gain_text = "<span class='danger'>You feel your vigor slowly fading away.</span>"
-	lose_text = "<span class='notice'>You feel vigorous again.</span>"
+	gain_text = SPAN_DANGER("You feel your vigor slowly fading away.")
+	lose_text = SPAN_NOTICE("You feel vigorous again.")
 	antag_removal_text = "Your antagonistic nature has removed your blood deficiency."
 	medical_record_text = "Patient requires regular treatment for blood loss due to low production of blood."
 
@@ -218,8 +218,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	desc = "Due to past troubles, you are unable to recover your sanity if you lose it. Be very careful managing your mood!"
 	value = -2
 	mob_trait = TRAIT_UNSTABLE
-	gain_text = "<span class='danger'>There's a lot on your mind right now.</span>"
-	lose_text = "<span class='notice'>Your mind finally feels calm.</span>"
+	gain_text = SPAN_DANGER("There's a lot on your mind right now.")
+	lose_text = SPAN_NOTICE("Your mind finally feels calm.")
 	medical_record_text = "Patient's mind is in a vulnerable state, and cannot recover from traumatic events."
 
 /datum/quirk/nonviolent
@@ -227,8 +227,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	desc = "The thought of violence makes you sick. So much so, in fact, that you can't hurt anyone."
 	value = -2
 	mob_trait = TRAIT_PACIFISM
-	gain_text = "<span class='danger'>You feel repulsed by the thought of violence!</span>"
-	lose_text = "<span class='notice'>You think you can defend yourself again.</span>"
+	gain_text = SPAN_DANGER("You feel repulsed by the thought of violence!")
+	lose_text = SPAN_NOTICE("You think you can defend yourself again.")
 	medical_record_text = "Patient is unusually pacifistic and cannot bring themselves to cause physical harm."
 	antag_removal_text = "Your antagonistic nature has caused you to renounce your pacifism."
 
@@ -240,8 +240,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Brain Tumor"
 	desc = "You have a little friend in your brain that is making it quite difficult to perform day to day functions properly."
 	value = -3
-	gain_text = "<span class='danger'>You feel smooth.</span>"
-	lose_text = "<span class='notice'>You feel wrinkled again.</span>"
+	gain_text = SPAN_DANGER("You feel smooth.")
+	lose_text = SPAN_NOTICE("You feel wrinkled again.")
 
 /datum/quirk/brainproblems/add()
 	var/datum/brain_trauma/mild/concussion/T = new()
@@ -290,8 +290,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Blind"
 	desc = "You are completely blind, nothing can counteract this."
 	value = -4
-	gain_text = "<span class='danger'>You can't see anything.</span>"
-	lose_text = "<span class='notice'>You miraculously gain back your vision.</span>"
+	gain_text = SPAN_DANGER("You can't see anything.")
+	lose_text = SPAN_NOTICE("You miraculously gain back your vision.")
 	medical_record_text = "Patient has permanent blindness."
 
 /datum/quirk/blindness/add()
@@ -311,8 +311,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Monophobia"
 	desc = "You will become increasingly stressed when not in company of others, triggering panic reactions ranging from sickness to heart attacks."
 	value = -4
-	gain_text = "<span class='danger'>You feel really lonely...</span>"
-	lose_text = "<span class='notice'>You feel like you could be safe on your own.</span>"
+	gain_text = SPAN_DANGER("You feel really lonely...")
+	lose_text = SPAN_NOTICE("You feel like you could be safe on your own.")
 	medical_record_text = "Patient feels sick and distressed when not around other people, leading to potentially lethal levels of stress."
 
 /datum/quirk/monophobia/post_add()

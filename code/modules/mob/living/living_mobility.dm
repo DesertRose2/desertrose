@@ -13,7 +13,7 @@
 	if(new_resting != resting)
 		resting = new_resting
 		if(!silent)
-			to_chat(src, "<span class='notice'>You are now [resting? "resting" : "getting up"].</span>")
+			to_chat(src, SPAN_NOTICE("You are now [resting? "resting" : "getting up"]."))
 		update_resting(updating)
 
 /mob/living/proc/update_resting(update_mobility = TRUE)
@@ -24,7 +24,7 @@
 //It's really not recommended to use this proc to give feedback, hence why silent is defaulting to true.
 /mob/living/proc/KnockToFloor(disarm_items = FALSE, silent = TRUE, updating = TRUE)
 	if(!silent && !resting)
-		to_chat(src, "<span class='warning'>You are knocked to the floor!</span>")
+		to_chat(src, SPAN_WARNING("You are knocked to the floor!"))
 	set_resting(TRUE, TRUE, updating)
 	if(disarm_items)
 		drop_all_held_items()
@@ -34,7 +34,7 @@
 	set category = "IC"
 	if(client?.prefs?.autostand)
 		TOGGLE_BITFIELD(combat_flags, COMBAT_FLAG_INTENTIONALLY_RESTING)
-		to_chat(src, "<span class='notice'>You are now attempting to [(combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"].</span>")
+		to_chat(src, SPAN_NOTICE("You are now attempting to [(combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"]."))
 		if((combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) && !resting)
 			set_resting(TRUE, FALSE)
 		else
@@ -42,7 +42,7 @@
 	else
 		if(!resting)
 			set_resting(TRUE, FALSE)
-			to_chat(src, "<span class='notice'>You are now laying down.</span>")
+			to_chat(src, SPAN_NOTICE("You are now laying down."))
 		else
 			resist_a_rest()
 

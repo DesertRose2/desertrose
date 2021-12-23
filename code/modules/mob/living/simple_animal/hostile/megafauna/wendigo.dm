@@ -160,7 +160,7 @@ Difficulty: Hard
 	animate(pixel_z = 0, time = 1)
 	for(var/mob/living/L in get_hearers_in_view(7, src) - src)
 		shake_camera(L, 30, 1)
-		to_chat(L, "<span class='danger'>The wendigo screams loudly!</span>")
+		to_chat(L, SPAN_DANGER("The wendigo screams loudly!"))
 	SetRecoveryTime(30, 0)
 	SLEEP_CHECK_DEATH(12)
 	can_move = TRUE
@@ -187,7 +187,7 @@ Difficulty: Hard
 	var/mob/living/carbon/human/H = user
 	if(!H.mind)
 		return
-	to_chat(H, "<span class='danger'>Power courses through you! You can now shift your form at will.</span>")
+	to_chat(H, SPAN_DANGER("Power courses through you! You can now shift your form at will."))
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/polar_bear/P = new
 	H.mind.AddSpell(P)
 	playsound(H.loc,'sound/items/drink.ogg', rand(10,50), TRUE)

@@ -5,12 +5,12 @@
 	icon_state = "null"
 
 /obj/item/trash/f13/bubblegum
-	name = "Bubblegum wrap"
+	name = "bubblegum wrapper"
 	desc = "A piece of wrapping paper from a Big Pops - pre-War branded bubblegum."
 	icon_state = "bubblegum"
 
 /obj/item/trash/f13/bubblegum_large
-	name = "big Bubblegum wrap"
+	name = "big bubblegum wrapper"
 	desc = "A piece of wrapping paper from an \"Extra\" Big Pops - pre-War branded bubblegum."
 	icon_state = "bubblegum_large"
 

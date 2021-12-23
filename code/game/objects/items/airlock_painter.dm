@@ -35,10 +35,10 @@
 //because you're expecting user input.
 /obj/item/airlock_painter/proc/can_use(mob/user)
 	if(!ink)
-		to_chat(user, "<span class='notice'>There is no toner cartridge installed in [src]!</span>")
+		to_chat(user, SPAN_NOTICE("There is no toner cartridge installed in [src]!"))
 		return 0
 	else if(ink.charges < 1)
-		to_chat(user, "<span class='notice'>[src] is out of ink!</span>")
+		to_chat(user, SPAN_NOTICE("[src] is out of ink!"))
 		return 0
 	else
 		return 1
@@ -93,7 +93,7 @@
 /obj/item/airlock_painter/examine(mob/user)
 	. = ..()
 	if(!ink)
-		. += "<span class='notice'>It doesn't have a toner cartridge installed.</span>"
+		. += SPAN_NOTICE("It doesn't have a toner cartridge installed.")
 		return
 	var/ink_level = "high"
 	if(ink.charges < 1)
@@ -102,17 +102,17 @@
 		ink_level = "low"
 	else if((ink.charges/ink.max_charges) > 1) //Over 100% (admin var edit)
 		ink_level = "dangerously high"
-	. += "<span class='notice'>Its ink levels look [ink_level].</span>"
+	. += SPAN_NOTICE("Its ink levels look [ink_level].")
 
 
 /obj/item/airlock_painter/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/toner))
 		if(ink)
-			to_chat(user, "<span class='notice'>[src] already contains \a [ink].</span>")
+			to_chat(user, SPAN_NOTICE("[src] already contains \a [ink]."))
 			return
 		if(!user.transferItemToLoc(W, src))
 			return
-		to_chat(user, "<span class='notice'>You install [W] into [src].</span>")
+		to_chat(user, SPAN_NOTICE("You install [W] into [src]."))
 		ink = W
 		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
 	else
@@ -123,7 +123,7 @@
 		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
 		ink.forceMove(user.drop_location())
 		user.put_in_hands(ink)
-		to_chat(user, "<span class='notice'>You remove [ink] from [src].</span>")
+		to_chat(user, SPAN_NOTICE("You remove [ink] from [src]."))
 		ink = null
 
 
@@ -154,14 +154,14 @@
 	. = ..()
 	var/turf/open/floor/F = target
 	if(!proximity)
-		to_chat(user, "<span class='notice'>You need to get closer!</span>")
+		to_chat(user, SPAN_NOTICE("You need to get closer!"))
 		return
 	if(use_paint(user) && isturf(F))
 		F.AddElement(/datum/element/decal, 'icons/turf/decals.dmi', stored_decal_total, turn(stored_dir, -dir2angle(F.dir)), CLEAN_STRONG, color, null, null, alpha)
 
 /obj/item/airlock_painter/decal/attack_self(mob/user)
 	if((ink) && (ink.charges >= 1))
-		to_chat(user, "<span class='notice'>[src] beeps to prevent you from removing the toner until out of charges.</span>")
+		to_chat(user, SPAN_NOTICE("[src] beeps to prevent you from removing the toner until out of charges."))
 		return
 	. = ..()
 

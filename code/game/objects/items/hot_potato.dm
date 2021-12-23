@@ -80,9 +80,9 @@
 /obj/item/hot_potato/examine(mob/user)
 	. = ..()
 	if(active)
-		. += "<span class='warning'>[src] is flashing red-hot! You should probably get rid of it!</span>"
+		. += SPAN_WARNING("[src] is flashing red-hot! You should probably get rid of it!")
 		if(show_timer)
-			. += "<span class='warning'>[src]'s timer looks to be at [DisplayTimeText(activation_time - world.time)]!</span>"
+			. += SPAN_WARNING("[src]'s timer looks to be at [DisplayTimeText(activation_time - world.time)]!")
 
 /obj/item/hot_potato/equipped(mob/user)
 	. = ..()

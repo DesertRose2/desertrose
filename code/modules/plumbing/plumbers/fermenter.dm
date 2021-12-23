@@ -16,7 +16,7 @@
 
 /obj/machinery/plumbing/fermenter/can_be_rotated(mob/user,rotation_type)
 	if(anchored)
-		to_chat(user, "<span class='warning'>It is fastened to the floor!</span>")
+		to_chat(user, SPAN_WARNING("It is fastened to the floor!"))
 		return FALSE
 	switch(eat_dir)
 		if(WEST)

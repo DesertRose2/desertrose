@@ -220,14 +220,6 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/jamrock
-	name = "Disco-Ass Shirt and Pants"
-	desc = "This white satin shirt used to be fancy. It used to really catch the light. Now it smells like someone took a piss in the armpits while the golden brown trousers are flare-cut. Normal bell-bottom trousers would be boot-cut, but these are far from normal. They are someone's piss-soaked, cum-stained party pants. "
-	icon_state = "jamrock_uniform"
-	item_state = "jamrock_uniform"
-	item_color = "jamrock_uniform"
-	can_adjust = FALSE
-
 /obj/item/clothing/under/plasmaman
 	name = "plasma envirosuit"
 	desc = "A special containment suit that allows plasma-based lifeforms to exist safely in an oxygenated environment, and automatically extinguishes them in a crisis. Despite being airtight, it's not spaceworthy."
@@ -244,7 +236,7 @@
 
 /obj/item/clothing/under/plasmaman/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>There are [extinguishes_left] extinguisher charges left in this suit.</span>"
+	. += SPAN_NOTICE("There are [extinguishes_left] extinguisher charges left in this suit.")
 
 /obj/item/clothing/under/plasmaman/proc/Extinguish(mob/living/carbon/human/H)
 	if(!istype(H))
@@ -255,7 +247,7 @@
 				return
 			next_extinguish = world.time + extinguish_cooldown
 			extinguishes_left--
-			H.visible_message("<span class='warning'>[H]'s suit automatically extinguishes [H.p_them()]!</span>","<span class='warning'>Your suit automatically extinguishes you.</span>")
+			H.visible_message(SPAN_WARNING("[H]'s suit automatically extinguishes [H.p_them()]!"),SPAN_WARNING("Your suit automatically extinguishes you."))
 			H.ExtinguishMob()
 			new /obj/effect/particle_effect/water(get_turf(H))
 	return 0
@@ -264,11 +256,11 @@
 	..()
 	if (istype(E, /obj/item/extinguisher_refill))
 		if (extinguishes_left == 5)
-			to_chat(user, "<span class='notice'>The inbuilt extinguisher is full.</span>")
+			to_chat(user, SPAN_NOTICE("The inbuilt extinguisher is full."))
 			return
 		else
 			extinguishes_left = 5
-			to_chat(user, "<span class='notice'>You refill the suit's built-in extinguisher, using up the cartridge.</span>")
+			to_chat(user, SPAN_NOTICE("You refill the suit's built-in extinguisher, using up the cartridge."))
 			qdel(E)
 			return
 	return
@@ -426,13 +418,13 @@
 
 /obj/item/clothing/under/misc/black_dress
 	name = "little black dress"
-	desc = "A small black dress"
+	desc = "A small black dress."
 	icon_state = "littleblackdress_s"
 	item_state = "littleblackdress_s"
 
 /obj/item/clothing/under/misc/pinktutu
 	name = "pink tutu"
-	desc = "A pink tutu"
+	desc = "A pink tutu."
 	icon_state = "pinktutu_s"
 	item_state = "pinktutu_s"
 
@@ -547,7 +539,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/harebell_dress
-	name = "Harebell dress"
+	name = "harebell dress"
 	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
 	icon_state = "harebell_dress"
 	item_state = "harebell_dress"
@@ -556,7 +548,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/flowerdress
-	name = "Flower Dress"
+	name = "flower dress"
 	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."
 	icon_state = "flowerdress"
 	item_state = "flowerdress"

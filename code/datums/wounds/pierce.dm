@@ -35,14 +35,14 @@
 			if(1 to 6)
 				victim.bleed(blood_bled, TRUE)
 			if(7 to 13)
-				victim.visible_message("<span class='smalldanger'>Blood droplets fly from the hole in [victim]'s [limb.name].</span>", "<span class='danger'>You cough up a bit of blood from the blow to your [limb.name].</span>", vision_distance=COMBAT_MESSAGE_RANGE)
+				victim.visible_message("<span class='smalldanger'>Blood droplets fly from the hole in [victim]'s [limb.name].</span>", SPAN_DANGER("You cough up a bit of blood from the blow to your [limb.name]."), vision_distance=COMBAT_MESSAGE_RANGE)
 				victim.bleed(blood_bled, TRUE)
 			if(14 to 19)
-				victim.visible_message("<span class='smalldanger'>A small stream of blood spurts from the hole in [victim]'s [limb.name]!</span>", "<span class='danger'>You spit out a string of blood from the blow to your [limb.name]!</span>", vision_distance=COMBAT_MESSAGE_RANGE)
+				victim.visible_message("<span class='smalldanger'>A small stream of blood spurts from the hole in [victim]'s [limb.name]!</span>", SPAN_DANGER("You spit out a string of blood from the blow to your [limb.name]!"), vision_distance=COMBAT_MESSAGE_RANGE)
 				new /obj/effect/temp_visual/dir_setting/bloodsplatter(victim.loc, victim.dir)
 				victim.bleed(blood_bled)
 			if(20 to INFINITY)
-				victim.visible_message("<span class='danger'>A spray of blood streams from the gash in [victim]'s [limb.name]!</span>", "<span class='danger'><b>You choke up on a spray of blood from the blow to your [limb.name]!</b></span>", vision_distance=COMBAT_MESSAGE_RANGE)
+				victim.visible_message(SPAN_DANGER("A spray of blood streams from the gash in [victim]'s [limb.name]!"), SPAN_DANGER("<b>You choke up on a spray of blood from the blow to your [limb.name]!</b>"), vision_distance=COMBAT_MESSAGE_RANGE)
 				victim.bleed(blood_bled)
 				new /obj/effect/temp_visual/dir_setting/bloodsplatter(victim.loc, victim.dir)
 				victim.add_splatter_floor(get_step(victim.loc, victim.dir))
@@ -53,7 +53,7 @@
 	if(victim.bodytemperature < (BODYTEMP_NORMAL -  10))
 		blood_flow -= 0.2
 		if(prob(5))
-			to_chat(victim, "<span class='notice'>You feel the [lowertext(name)] in your [limb.name] firming up from the cold!</span>")
+			to_chat(victim, SPAN_NOTICE("You feel the [lowertext(name)] in your [limb.name] firming up from the cold!"))
 
 	if(victim.reagents?.has_reagent(/datum/reagent/toxin/heparin))
 		blood_flow += 0.5 // old herapin used to just add +2 bleed stacks per tick, this adds 0.5 bleed flow to all open cuts which is probably even stronger as long as you can cut them first
@@ -87,7 +87,7 @@
 /// If someone is using a suture to close this cut
 /datum/wound/pierce/proc/suture(obj/item/stack/medical/suture/I, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.4 : 1)
-	user.visible_message("<span class='notice'>[user] begins stitching [victim]'s [limb.name] with [I]...</span>", "<span class='notice'>You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
+	user.visible_message(SPAN_NOTICE("[user] begins stitching [victim]'s [limb.name] with [I]..."), SPAN_NOTICE("You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 	if(!do_after(user, base_treat_time * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 	user.visible_message("<span class='green'>[user] stitches up some of the bleeding on [victim].</span>", "<span class='green'>You stitch up some of the bleeding on [user == victim ? "yourself" : "[victim]"].</span>")
@@ -103,7 +103,7 @@
 /// If someone is using either a cautery tool or something with heat to cauterize this pierce
 /datum/wound/pierce/proc/tool_cauterize(obj/item/I, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.5 : 1)
-	user.visible_message("<span class='danger'>[user] begins cauterizing [victim]'s [limb.name] with [I]...</span>", "<span class='danger'>You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
+	user.visible_message(SPAN_DANGER("[user] begins cauterizing [victim]'s [limb.name] with [I]..."), SPAN_DANGER("You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 	if(!do_after(user, base_treat_time * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 

@@ -17,7 +17,7 @@
 	wanted_types = list(/obj/item/reagent_containers/syringe/bluespace)
 
 /datum/bounty/item/science/bluespace_body_bag
-	name = "Bluespace Body Bag"
+	name = "Quantum Body Bag"
 	description = "Another Vault would make good use of high-capacity body bags. If you have any, please ship them."
 	reward = 5000
 	wanted_types = list(/obj/item/bodybag/bluespace)

@@ -137,26 +137,6 @@
 	tastes = list("fish" = 1, "rice" = 2, "salt" = 1)
 	foodtype = MEAT | VEGETABLES
 
-/obj/item/reagent_containers/food/snacks/rawantbrain
-	name = "Raw Ant Brain"
-	desc = "Goppy reddish-grey flesh dug out of the brain case of a giant ant."
-	icon_state = "AntBrain"
-	cooked_type = /obj/item/reagent_containers/food/snacks/baked_ant_brain
-	bitesize = 3
-	filling_color = "#CD853F"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
-	tastes = list("fat" = 4, "bitter meat" = 1)
-	foodtype = MEAT
-	
-/obj/item/reagent_containers/food/snacks/baked_ant_brain
-	name = "Baked Ant Brain"
-	desc = "Strangely reminiscent of some kind of mushroom."
-	icon_state = "baked_ant_brain"
-	bitesize = 3
-	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 3)
-	tastes = list("fat" = 2, "bitter meat" = 2)
-	foodtype = MEAT
-
 /obj/item/reagent_containers/food/snacks/sushi_adv
 	name = "funa nigiri"
 	desc = "A peace  of carp lightly placed on some rice."
@@ -501,10 +481,10 @@
 	var/mob/spammer = get_mob_by_key(fingerprintslast)
 	var/mob/living/water = new dried_being(drop_location(), TRUE, spammer)
 	if (!QDELETED(water))
-		visible_message("<span class='notice'>[src] expands!</span>")
+		visible_message(SPAN_NOTICE("[src] expands!"))
 		water.log_message("Spawned via [src] at [AREACOORD(src)], Last attached mob: [key_name(spammer)].", LOG_ATTACK)
 	else if (!spammer) // Visible message in case there are no fingerprints
-		visible_message("<span class='notice'>[src] fails to expand!</span>")
+		visible_message(SPAN_NOTICE("[src] fails to expand!"))
 	qdel(src)
 
 /obj/item/reagent_containers/food/snacks/cube/monkey

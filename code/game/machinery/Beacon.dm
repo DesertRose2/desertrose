@@ -2,8 +2,8 @@
 
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "floor_beaconf"
-	name = "bluespace gigabeacon"
-	desc = "A device that draws power from bluespace and creates a permanent tracking beacon."
+	name = "quantum gigabeacon"
+	desc = "A device that draws power from quantum entanglement and creates a permanent tracking beacon."
 	level = 1		// underfloor
 	layer = LOW_OBJ_LAYER
 	use_power = IDLE_POWER_USE
