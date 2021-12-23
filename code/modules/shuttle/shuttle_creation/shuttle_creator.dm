@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(custom_shuttle_machines)		//Machines that require updating (He
 	icon_state = "rsd"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	desc = "A device used to define the area required for custom ships. Uses bluespace crystals to create bluespace-capable ships."
+	desc = "A device used to define the area required for custom ships. Uses quantum crystals to create quantum-leap-capable ships."
 	density = FALSE
 	anchored = FALSE
 	flags_1 = CONDUCT_1

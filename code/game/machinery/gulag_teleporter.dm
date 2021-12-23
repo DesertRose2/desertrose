@@ -8,7 +8,7 @@ The console is located at computer/gulag_teleporter.dm
 //Gulag teleporter
 /obj/machinery/gulag_teleporter
 	name = "labor camp teleporter"
-	desc = "A bluespace teleporter used for teleporting prisoners to the labor camp."
+	desc = "A quantum teleporter used for teleporting prisoners to the labor camp."
 	icon = 'icons/obj/machines/implantchair.dmi'
 	icon_state = "implantchair"
 	state_open = FALSE
@@ -172,8 +172,8 @@ The console is located at computer/gulag_teleporter.dm
 
 /*  beacon that receives the teleported prisoner */
 /obj/structure/gulag_beacon
-	name = "labor camp bluespace beacon"
-	desc = "A receiving beacon for bluespace teleportations."
+	name = "labor camp quantum beacon"
+	desc = "A receiving beacon for quantum teleportations."
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "light_on-w"
 	resistance_flags = INDESTRUCTIBLE

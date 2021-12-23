@@ -13,8 +13,8 @@
 	var/upgrade_amount = 0.8
 
 /obj/item/shuttle_route_optimisation/hyperlane
-	name = "Bluespace Hyperlane Calculator"
-	desc = "Used on a custom shuttle control console to allow for the following of bluespace hyperlanes, increasing the efficiency of the shuttle."
+	name = "Quantum Hyperlane Calculator"
+	desc = "Used on a custom shuttle control console to allow for the following of quantum hyperlanes, increasing the efficiency of the shuttle."
 	icon_state = "shuttledisk_better"
 	upgrade_amount = 0.6
 

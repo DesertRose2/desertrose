@@ -1,6 +1,6 @@
 /obj/machinery/quantumpad
 	name = "quantum pad"
-	desc = "A bluespace quantum-linked telepad used for teleporting objects to other quantum pads."
+	desc = "A quantum-linked telepad used for teleporting objects to other quantum pads."
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "qpad-idle"
 	use_power = IDLE_POWER_USE

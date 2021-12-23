@@ -707,13 +707,26 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5, /datum/reagent/radium = 5)
 
 /obj/item/lighter/military
-	name = "Pre-War Military Lighter"
+	name = "pre-war military lighter"
 	icon_state = "lighter_overlay_plain"
 	desc = "That's one fancy Zippo!"
 	heat = 2500
 	light_power = 5
 	light_range = 3
 	color = "#3e4821"
+
+/obj/item/lighter/gold
+	name = "engraved zippo"
+	desc = "A shiny and relatively expensive zippo lighter. There's a small etched in verse on the bottom that reads, 'No Gods, No Masters, Only Man.'"
+	icon = 'icons/obj/custom.dmi'
+	icon_state = "gold_zippo"
+	item_state = "gold_zippo"
+	w_class = WEIGHT_CLASS_TINY
+	flags_1 = CONDUCT_1
+	slot_flags = SLOT_BELT
+	heat = 1500
+	resistance_flags = FIRE_PROOF
+	light_color = LIGHT_COLOR_FIRE
 
 ///////////
 //ROLLING//

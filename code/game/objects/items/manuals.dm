@@ -370,10 +370,10 @@
 	page_link = "Infections"
 
 /obj/item/book/manual/wiki/telescience
-	name = "Teleportation Science - Bluespace for dummies!"
+	name = "Teleportation Science - Quantum Physics for dummies!"
 	icon_state = "book7"
-	author = "University of Bluespace"
-	title = "Teleportation Science - Bluespace for dummies!"
+	author = "University of Quantum Physics"
+	title = "Teleportation Science - Quantum Physics for dummies!"
 	page_link = "Guide_to_telescience"
 
 /obj/item/book/manual/wiki/engineering_hacking

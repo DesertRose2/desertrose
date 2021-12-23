@@ -240,7 +240,7 @@
 		new /obj/item/reagent_containers/glass/beaker( src )
 
 /obj/item/storage/box/beakers/bluespace
-	name = "box of bluespace beakers"
+	name = "box of quantum beakers"
 	illustration = "beaker"
 
 /obj/item/storage/box/beakers/bluespace/PopulateContents()
@@ -1292,7 +1292,7 @@
 
 /obj/item/storage/box/mre/menu4/safe
 	spawner_chance = 0
-	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
+	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
 	can_expire = FALSE
 
 /obj/item/storage/box/mre/menu4/PopulateContents()

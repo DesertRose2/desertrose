@@ -339,8 +339,8 @@
 
 //------------------------------------UPGRADES-------------------------------------//
 /obj/item/disk/cargo/bluespace_pod //Disk that can be inserted into the Express Console to allow for Advanced Bluespace Pods
-	name = "Bluespace Drop Pod Upgrade"
-	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Nanotrasen's Bluespace Drop Pods to the supply department."
+	name = "Quantum Drop Pod Upgrade"
+	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Vault-Tec's Quantum Drop Pods to the supply department."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cargodisk"
 	item_state = "card-id"

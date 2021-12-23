@@ -1,5 +1,5 @@
 /obj/item/compressionkit
-	name = "bluespace compression kit"
+	name = "quantum compression kit"
 	desc = "An illegally modified BSRPED, capable of reducing the size of most items."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "compression_c"

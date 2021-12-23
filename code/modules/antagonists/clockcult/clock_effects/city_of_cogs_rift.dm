@@ -1,7 +1,7 @@
 //These spawn across the station when the Ark activates. Anyone can walk through one to teleport to Reebe.
 /obj/effect/clockwork/city_of_cogs_rift
 	name = "celestial rift"
-	desc = "A stable bluespace rip. You're not sure it where leads."
+	desc = "A stable quantum rip. You're not sure it where leads."
 	clockwork_desc = "A one-way rift to the City of Cogs. Because it's linked to the Ark, it can't be closed."
 	icon_state = "city_of_cogs_rift"
 	resistance_flags = INDESTRUCTIBLE

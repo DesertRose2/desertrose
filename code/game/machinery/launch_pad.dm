@@ -1,6 +1,6 @@
 /obj/machinery/launchpad
-	name = "bluespace launchpad"
-	desc = "A bluespace pad able to thrust matter through bluespace, teleporting it to or from nearby locations."
+	name = "quantum launchpad"
+	desc = "A quantum pad able to thrust matter through spacetime, teleporting it to or from nearby locations."
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "lpad-idle"
 	use_power = TRUE
@@ -174,7 +174,7 @@
 //Starts in the briefcase. Don't spawn this directly, or it will runtime when closing.
 /obj/machinery/launchpad/briefcase
 	name = "briefcase launchpad"
-	desc = "A portable bluespace pad able to thrust matter through bluespace, teleporting it to or from nearby locations. Controlled via remote."
+	desc = "A portable quantum pad able to thrust matter through spacetime, teleporting it to or from nearby locations. Controlled via remote."
 	icon_state = "blpad-idle"
 	icon_teleport = "blpad-beam"
 	anchored = FALSE

@@ -1017,8 +1017,8 @@
 		mytray.adjustToxic(round(chems.get_reagent_amount(src.type) * 2))
 
 /datum/reagent/bluespace
-	name = "Bluespace Dust"
-	description = "A dust composed of microscopic bluespace crystals, with minor space-warping properties."
+	name = "Quantum Dust"
+	description = "A dust composed of microscopic quantum crystals, with minor space-warping properties."
 	reagent_state = SOLID
 	color = "#0000CC"
 	taste_description = "fizzling blue"

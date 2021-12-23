@@ -224,7 +224,7 @@
 
 //bluespace jar, a reskin of the pet carrier that can fit people and smashes when thrown
 /obj/item/pet_carrier/bluespace
-	name = "bluespace jar"
+	name = "quantum jar"
 	desc = "A jar, that seems to be bigger on the inside, somehow allowing lifeforms to fit through its narrow entrance."
 	open = FALSE //starts closed so it looks better on menus
 	icon_state = "bluespace_jar"

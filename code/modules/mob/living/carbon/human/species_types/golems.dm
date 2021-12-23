@@ -393,7 +393,7 @@
 
 //Teleports when hit or when it wants to
 /datum/species/golem/bluespace
-	name = "Bluespace Golem"
+	name = "Quantum Golem"
 	id = "bluespace golem"
 	fixed_mut_color = "33f"
 	meat = /obj/item/stack/ore/bluespace_crystal

@@ -74,7 +74,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /obj/effect/proc_holder/spell/targeted/touch/bspie
-	name = "Bluespace Banana Pie"
+	name = "Quantum Banana Pie"
 	desc = "An entire body would fit in there!"
 	hand_path = /obj/item/melee/touch_attack/bspie
 

@@ -7,8 +7,8 @@
 //The gateway to Reebe, from which Ratvar emerges.
 /obj/structure/destructible/clockwork/massive/celestial_gateway
 	name = "\improper Ark of the Clockwork Justicar"
-	desc = "A massive, hulking amalgamation of parts. It seems to be maintaining a very unstable bluespace anomaly."
-	clockwork_desc = "Nezbere's magnum opus: a hulking clockwork machine capable of combining bluespace and steam power to summon Ratvar. Once activated, \
+	desc = "A massive, hulking amalgamation of parts. It seems to be maintaining a very unstable quantum anomaly."
+	clockwork_desc = "Nezbere's magnum opus: a hulking clockwork machine capable of combining quantum and steam power to summon Ratvar. Once activated, \
 	its instability will alert the entire area, so be prepared to defend it at all costs."
 	max_integrity = 500
 	mouse_opacity = MOUSE_OPACITY_OPAQUE
@@ -78,7 +78,7 @@
 	first_sound_played = TRUE
 	active = TRUE
 	visible_message("<span class='boldwarning'>[src] shudders and roars to life, its parts beginning to whirr and screech!</span>")
-	priority_announce("Massive [Gibberish("bluespace", 100)] anomaly detected on all frequencies. All crew are directed to \
+	priority_announce("Massive [Gibberish("quantum", 100)] anomaly detected on all frequencies. All crew are directed to \
 	@!$, [text2ratvar("PURGE ALL UNTRUTHS")] <&. the anomalies and destroy their source to prevent further damage to corporate property. This is \
 	not a drill.", "Central Command Higher Dimensional Affairs", 'sound/magic/clockwork/ark_activation_sequence.ogg')
 	set_security_level("delta")
@@ -158,7 +158,7 @@
 	var/was_stranded = SSshuttle.emergency.mode == SHUTTLE_STRANDED
 	SSshuttle.clearHostileEnvironment(src)
 	if(!was_stranded && !purpose_fulfilled)
-		priority_announce("Massive energy anomaly no longer on short-range scanners, bluespace distortions still detected.","Central Command Higher Dimensional Affairs")
+		priority_announce("Massive energy anomaly no longer on short-range scanners, quantum distortions still detected.","Central Command Higher Dimensional Affairs")
 	if(glow)
 		qdel(glow)
 		glow = null
@@ -223,18 +223,18 @@
 			. += "<span class='big'><b>Time until Ratvar's arrival:</b> [DisplayTimeText(get_arrival_time())]</span>"
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='heavy_brass'>The Ark is feeding power into the bluespace field.</span>"
+					. += "<span class='heavy_brass'>The Ark is feeding power into the quantum field.</span>"
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
 					. += "<span class='heavy_brass'>The field is ripping open a copy of itself in Ratvar's prison.</span>"
 				if(GATEWAY_RATVAR_COMING to INFINITY)
-					. += "<span class='heavy_brass'>With the bluespace field established, Ratvar is preparing to come through!</span>"
+					. += "<span class='heavy_brass'>With the quantum field established, Ratvar is preparing to come through!</span>"
 	else
 		if(!active)
 			. += SPAN_WARNING("Whatever it is, it doesn't seem to be active.")
 		else
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += SPAN_WARNING("You see a swirling bluespace anomaly steadily growing in intensity.")
+					. += SPAN_WARNING("You see a swirling quantum anomaly steadily growing in intensity.")
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
 					. += SPAN_WARNING("The anomaly is stable, and you can see flashes of something from it.")
 				if(GATEWAY_RATVAR_COMING to INFINITY)

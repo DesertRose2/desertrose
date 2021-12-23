@@ -165,13 +165,6 @@
 	attack_verb = list("elegantly HONKED")
 	icon_state = "silverhorn"
 
-/obj/item/bikehorn/bluespacehonker
-	name = "bluespace bike horn"
-	desc = "A normal bike horn colored blue and has bluespace dust held in to reed horn allowing for silly honks through space and time, into your in childhood."
-	attack_verb = list("HONKED in bluespace", "HONKED", "quantumly HONKED")
-	icon_state = "bluespacehonker"
-	moodlet = "bshonk"
-
 //canned laughter
 /obj/item/reagent_containers/food/drinks/soda_cans/canned_laughter
 	name = "Canned Laughter"

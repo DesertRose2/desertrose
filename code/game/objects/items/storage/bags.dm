@@ -378,9 +378,9 @@
 
 //bluespace tray, holds more items
 /obj/item/storage/bag/tray/bluespace
-	name = "bluespace tray"
+	name = "quantum tray"
 	icon_state = "bluespace_tray"
-	desc = "A tray created using bluespace technology to fit more food on it."
+	desc = "A tray created using quantum technology to fit more food on it."
 	max_items = 30 // far more items
 	custom_materials = list(/datum/material/iron = 2000, /datum/material/bluespace = 500)
 

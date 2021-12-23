@@ -474,7 +474,7 @@
 		species.armor -= 25
 
 /obj/item/slime_extract/bluespace
-	name = "bluespace slime extract"
+	name = "quantum slime extract"
 	icon_state = "bluespace slime extract"
 	effectmod = "warping"
 	activate_reagents = list(/datum/reagent/blood, /datum/reagent/toxin/plasma)
@@ -944,13 +944,13 @@
 	qdel(src)
 
 /obj/item/slimepotion/slime/slimeradio/ncr
-	name = "bluespace radio potion"
+	name = "quantum radio potion"
 	desc = "A strange chemical that grants those who ingest it the ability to broadcast and receive subscape radio waves."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "potgrey"
 
 /obj/item/slimepotion/slime/slimeradio
-	name = "bluespace radio potion"
+	name = "quantum radio potion"
 	desc = "A strange chemical that grants those who ingest it the ability to broadcast and receive subscape radio waves."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "potgrey"
@@ -990,7 +990,7 @@
 	qdel(src)
 
 /obj/item/stack/tile/bluespace
-	name = "bluespace floor tile"
+	name = "quantum floor tile"
 	singular_name = "floor tile"
 	desc = "Through a series of micro-teleports these tiles let people move at incredible speeds."
 	icon_state = "tile-bluespace"

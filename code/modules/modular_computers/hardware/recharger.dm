@@ -82,7 +82,7 @@
 // This is not intended to be obtainable in-game. Intended for adminbus and debugging purposes.
 /obj/item/computer_hardware/recharger/lambda
 	name = "lambda coil"
-	desc = "A very complex device that draws power from its own bluespace dimension."
+	desc = "A very complex device that draws power from its own quantum dimension."
 	icon_state = "charger_lambda"
 	w_class = WEIGHT_CLASS_TINY
 	charge_rate = 100000

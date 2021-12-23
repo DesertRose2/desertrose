@@ -28,7 +28,7 @@
 
 /obj/structure/AIcore/latejoin_inactive
 	name = "Networked AI core"
-	desc = "This AI core is connected by bluespace transmitters to NTNet, allowing for an AI personality to be downloaded to it on the fly mid-shift."
+	desc = "This AI core is connected by quantum transmitters to NTNet, allowing for an AI personality to be downloaded to it on the fly mid-shift."
 	can_deconstruct = FALSE
 	icon_state = "ai-empty"
 	anchored = TRUE

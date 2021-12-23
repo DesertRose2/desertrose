@@ -470,7 +470,7 @@
 
 //Bluespace
 /datum/chemical_reaction/slime/slimefloor2
-	name = "Bluespace Floor"
+	name = "Quantum Floor"
 	id = "m_floor2"
 	required_reagents = list(/datum/reagent/blood = 1)
 	required_container = /obj/item/slime_extract/bluespace

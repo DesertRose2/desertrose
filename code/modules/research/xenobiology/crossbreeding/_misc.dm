@@ -86,7 +86,7 @@
 //Gold capture device - Chilling Gold
 /obj/item/capturedevice
 	name = "gold capture device"
-	desc = "Bluespace technology packed into a roughly egg-shaped device, used to store nonhuman creatures. Can't catch them all, though - it only fits one."
+	desc = "Quantum technology packed into a roughly egg-shaped device, used to store nonhuman creatures. Can't catch them all, though - it only fits one."
 	w_class = WEIGHT_CLASS_SMALL
 	icon = 'icons/obj/slimecrossing.dmi'
 	icon_state = "capturedevice"

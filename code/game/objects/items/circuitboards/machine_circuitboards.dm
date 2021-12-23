@@ -101,7 +101,7 @@
 	needs_anchored = FALSE //wew lad
 
 /obj/item/circuitboard/machine/launchpad
-	name = "Bluespace Launchpad (Machine Board)"
+	name = "Quantum Launchpad (Machine Board)"
 	build_path = /obj/machinery/launchpad
 	req_components = list(
 		/obj/item/stack/ore/bluespace_crystal = 1,

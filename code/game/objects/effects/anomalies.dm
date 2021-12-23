@@ -189,7 +189,7 @@
 /////////////////////
 
 /obj/effect/anomaly/bluespace
-	name = "bluespace anomaly"
+	name = "quantum anomaly"
 	icon = 'icons/obj/projectiles.dmi'
 	icon_state = "bluespace"
 	density = TRUE

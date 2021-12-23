@@ -174,8 +174,8 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/adv)
 
 /obj/item/gun/energy/wormhole_projector
-	name = "bluespace wormhole projector"
-	desc = "A projector that emits high density quantum-coupled bluespace beams."
+	name = "quantum wormhole projector"
+	desc = "A projector that emits high density quantum-coupled beams."
 	ammo_type = list(/obj/item/ammo_casing/energy/wormhole, /obj/item/ammo_casing/energy/wormhole/orange)
 	item_state = null
 	icon_state = "wormhole_projector"
@@ -299,7 +299,7 @@
 	return
 
 /obj/item/gun/energy/gravity_gun
-	name = "one-point bluespace-gravitational manipulator"
+	name = "one-point quantum-gravitational manipulator"
 	desc = "An experimental, multi-mode device that fires bolts of Zero-Point Energy, causing local distortions in gravity."
 	ammo_type = list(/obj/item/ammo_casing/energy/gravity/repulse, /obj/item/ammo_casing/energy/gravity/attract, /obj/item/ammo_casing/energy/gravity/chaos)
 	item_state = "gravity_gun"

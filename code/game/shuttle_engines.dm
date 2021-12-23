@@ -12,7 +12,7 @@
 
 /obj/structure/shuttle/engine
 	name = "engine"
-	desc = "A bluespace engine used to make shuttles move."
+	desc = "An engine used to make shuttles move."
 	density = TRUE
 	anchored = TRUE
 	var/engine_power = 1

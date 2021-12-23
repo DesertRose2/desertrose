@@ -770,7 +770,7 @@
 /obj/item/toy/crayon/spraycan/infinite
 	name = "infinite spraycan"
 	charges = -1
-	desc = "Now with 30% more bluespace technology."
+	desc = "Now with 30% more quantum technology."
 
 #undef RANDOM_GRAFFITI
 #undef RANDOM_LETTER

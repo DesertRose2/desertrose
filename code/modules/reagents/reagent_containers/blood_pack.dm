@@ -132,8 +132,8 @@
 	..()
 
 /obj/item/reagent_containers/blood/bluespace
-	name = "bluespace blood pack"
-	desc = "Contains blood used for transfusion, this one has been made with bluespace technology to hold much more blood. Must be attached to an IV drip."
+	name = "quantum blood pack"
+	desc = "Contains blood used for transfusion, this one has been made with quantum technology to hold much more blood. Must be attached to an IV drip."
 	icon_state = "bsbloodpack"
 	volume = 600 //its a blood bath!
 

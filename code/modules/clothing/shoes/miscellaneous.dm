@@ -420,7 +420,7 @@
 
 /obj/item/clothing/shoes/wallwalkers
 	name = "wall walking boots"
-	desc = "Contrary to popular belief, these do not allow you to walk on walls. Through bluespace magic stolen from an organisation that hoards technology, they simply allow you to slip through the atoms that make up anything, but only while walking, for safety reasons. As well as this, they unfortunately cause minor breath loss as the majority of atoms in your lungs are sucked out into any solid object you walk through. Make sure not to overuse them."
+	desc = "Contrary to popular belief, these do not allow you to walk on walls. Through quantum technology stolen from an organisation that hoards technology, they simply allow you to slip through the atoms that make up anything, but only while walking, for safety reasons. As well as this, they unfortunately cause minor breath loss as the majority of atoms in your lungs are sucked out into any solid object you walk through. Make sure not to overuse them."
 	icon_state = "walkboots"
 	var/walkcool = 0
 	var/wallcharges = 4
@@ -442,7 +442,7 @@
 	var/obj/item/bluespacerecharge/ER = W
 	if(ER.uses)
 		wallcharges += ER.uses
-		to_chat(user, SPAN_NOTICE("You charged the bluespace crystal in the [src]. It now has [wallcharges] charges left."))
+		to_chat(user, SPAN_NOTICE("You charged the quantum crystal in the [src]. It now has [wallcharges] charges left."))
 		ER.uses = 0
 		ER.icon_state = "[initial(ER.icon_state)]0"
 	else
@@ -487,8 +487,8 @@
 	wallcharges--
 
 /obj/item/bluespacerecharge
-	name = "bluespace crystal recharging device"
-	desc = "A small cell with two prongs lazily jabbed into it. It looks like it's made for replacing the crystals in bluespace devices."
+	name = "quantum crystal recharging device"
+	desc = "A small cell with two prongs lazily jabbed into it. It looks like it's made for replacing the crystals in quantum devices."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "bluespace_charge"
 	item_flags = NOBLUDGEON

@@ -81,7 +81,7 @@
 	var/uses = 15
 
 /obj/item/card/emag/bluespace
-	name = "bluespace cryptographic sequencer"
+	name = "quantum cryptographic sequencer"
 	desc = "It's a blue card with a magnetic strip attached to some circuitry. It appears to have some sort of transmitter attached to it."
 	icon_state = "emag_bs"
 	prox_check = FALSE

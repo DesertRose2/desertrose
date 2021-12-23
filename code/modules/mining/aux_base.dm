@@ -263,7 +263,7 @@ interface with the mining shuttle at the landing site if a mobile beacon is also
 
 /obj/structure/mining_shuttle_beacon
 	name = "mining shuttle beacon"
-	desc = "A bluespace beacon calibrated to mark a landing spot for the mining shuttle when deployed near the auxillary mining base."
+	desc = "A quantum beacon calibrated to mark a landing spot for the mining shuttle when deployed near the auxillary mining base."
 	anchored = FALSE
 	density = FALSE
 	var/shuttle_ID = "landing_zone_dock"

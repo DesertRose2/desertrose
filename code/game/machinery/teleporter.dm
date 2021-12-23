@@ -108,7 +108,7 @@
 
 /obj/machinery/teleport/station
 	name = "teleporter station"
-	desc = "The power control station for a bluespace teleporter. Used for toggling power, and can activate a test-fire to prevent malfunctions."
+	desc = "The power control station for a quantum teleporter. Used for toggling power, and can activate a test-fire to prevent malfunctions."
 	icon_state = "controller"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 10

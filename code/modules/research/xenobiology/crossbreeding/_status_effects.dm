@@ -660,7 +660,7 @@
 
 //Bluespace has an icon because it's kinda active.
 /obj/screen/alert/status_effect/bluespaceslime
-	name = "Stabilized Bluespace Extract"
+	name = "Stabilized Quantum Extract"
 	desc = "You shouldn't see this, since we set it to change automatically!"
 	icon_state = "slime_bluespace_on"
 

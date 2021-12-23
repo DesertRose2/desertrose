@@ -242,7 +242,7 @@
 	randomdir = 0
 
 /obj/effect/temp_visual/bluespace_fissure
-	name = "bluespace fissure"
+	name = "quantum fissure"
 	icon_state = "bluestream_fade"
 	duration = 9
 

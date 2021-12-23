@@ -3,7 +3,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 
 /obj/item/hilbertshotel
 	name = "Hilbert's Hotel"
-	desc = "A sphere of what appears to be an intricate network of bluespace. Observing it in detail seems to give you a headache as you try to comprehend the infinite amount of infinitesimally distinct points on its surface."
+	desc = "A sphere of what appears to be an intricate quantum network. Observing it in detail seems to give you a headache as you try to comprehend the infinite amount of infinitesimally distinct points on its surface."
 	icon_state = "hilbertshotel"
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -233,7 +233,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	tiled_dirt = FALSE
 
 /turf/open/space/bluespace
-	name = "\proper bluespace hyperzone"
+	name = "quantum hyperzone"
 	icon_state = "bluespace"
 	baseturfs = /turf/open/space/bluespace
 	flags_1 = NOJAUNT_1
@@ -314,7 +314,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 
 /datum/action/peepholeCancel
 	name = "Cancel View"
-	desc = "Stop looking through the bluespace peephole."
+	desc = "Stop looking through the quantum peephole."
 	button_icon_state = "cancel_peephole"
 
 /datum/action/peepholeCancel/Trigger()
@@ -437,7 +437,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 
 /obj/item/analyzer/hilbertsanalyzer
 	name = "custom rigged analyzer"
-	desc = "A hand-held environmental scanner which reports current gas levels. This one seems custom rigged to additionally be able to analyze some sort of bluespace device."
+	desc = "A hand-held environmental scanner which reports current gas levels. This one seems custom rigged to additionally be able to analyze some sort of quantum device."
 	icon_state = "hilbertsanalyzer"
 
 /obj/item/analyzer/hilbertsanalyzer/afterattack(atom/target, mob/user, proximity)

@@ -9,8 +9,8 @@
 
 //Survival Capsule
 /obj/item/survivalcapsule
-	name = "bluespace shelter capsule"
-	desc = "An emergency shelter stored within a pocket of bluespace."
+	name = "quantum shelter capsule"
+	desc = "An emergency shelter stored within a quantum pocket."
 	icon_state = "capsule"
 	icon = 'icons/obj/mining.dmi'
 	w_class = WEIGHT_CLASS_TINY
@@ -70,8 +70,8 @@
 //Non-default pods
 
 /obj/item/survivalcapsule/luxury
-	name = "luxury bluespace shelter capsule"
-	desc = "An exorbitantly expensive luxury suite stored within a pocket of bluespace."
+	name = "luxury quantum shelter capsule"
+	desc = "An exorbitantly expensive luxury suite stored within a quantum pocket."
 	template_id = "shelter_beta"
 
 /obj/item/survivalcapsule/luxuryelite

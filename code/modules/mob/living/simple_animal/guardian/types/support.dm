@@ -85,9 +85,9 @@
 	beacon_cooldown = world.time + 3000
 
 /obj/structure/receiving_pad
-	name = "bluespace receiving pad"
+	name = "quantum receiving pad"
 	icon = 'icons/turf/floors.dmi'
-	desc = "A receiving zone for bluespace teleportations."
+	desc = "A receiving zone for quantum teleportations."
 	icon_state = "light_on-w"
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
 	density = FALSE

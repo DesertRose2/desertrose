@@ -294,7 +294,7 @@
 	start_charged = FALSE
 
 /obj/item/stock_parts/cell/bluespace
-	name = "bluespace power cell"
+	name = "quantum power cell"
 	desc = "A rechargeable transdimensional power cell."
 	icon_state = "bscell"
 	maxcharge = 40000

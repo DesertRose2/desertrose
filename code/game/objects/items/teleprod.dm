@@ -1,6 +1,6 @@
 /obj/item/melee/baton/cattleprod/teleprod
 	name = "teleprod"
-	desc = "A prod with a bluespace crystal on the end. The crystal doesn't look too fun to touch."
+	desc = "A prod with a quantum crystal on the end. The crystal doesn't look too fun to touch."
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state = "teleprod_nocell"
 	item_state = "teleprod"
@@ -32,7 +32,7 @@
 			qdel(src)
 			BSC.use(1)
 			user.put_in_hands(S)
-			to_chat(user, SPAN_NOTICE("You place the bluespace crystal firmly into the igniter."))
+			to_chat(user, SPAN_NOTICE("You place the quantum crystal firmly into the igniter."))
 		else
 			user.visible_message(SPAN_WARNING("You can't put the crystal onto the stunprod while it has a power cell installed!"))
 	else

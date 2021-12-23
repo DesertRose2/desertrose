@@ -1,7 +1,7 @@
 //works similar to the experiment machine (experiment.dm) except it just holds more and more prisoners
 
 /obj/machinery/fugitive_capture
-	name = "bluespace capture machine"
+	name = "quantum capture machine"
 	desc = "Much, MUCH bigger on the inside to transport prisoners safely."
 	icon = 'icons/obj/machines/research.dmi'
 	icon_state = "bluespace-prison"
