@@ -1058,38 +1058,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
-/datum/crafting_recipe/ecrecharge
-	name = "Small Energy Cell"
-	result = /obj/item/stock_parts/cell/ammo/ec
-	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
-				/obj/item/stack/sheet/metal = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 10
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
-/datum/crafting_recipe/mfcrecharge
-	name = "Microfusion Cell"
-	result = /obj/item/stock_parts/cell/ammo/mfc
-	reqs = list(/obj/item/stack/crafting/electronicparts = 4,
-				/obj/item/stack/sheet/metal = 4,
-				/obj/item/crafting/fuse = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 10
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
-/datum/crafting_recipe/ecprecharge
-	name = "Electron Charge Pack"
-	result = /obj/item/stock_parts/cell/ammo/ecp
-	reqs = list(/obj/item/stack/crafting/electronicparts = 3,
-				/obj/item/stack/sheet/metal = 2,
-				/obj/item/crafting/capacitor = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 10
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
 /*
 /datum/crafting_recipe/flux
 	name = "Flux capacitor"

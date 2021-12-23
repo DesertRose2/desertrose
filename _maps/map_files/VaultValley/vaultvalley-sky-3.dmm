@@ -865,7 +865,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
 "in" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -1865,7 +1865,7 @@
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/wasteland)
 "rE" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -2146,7 +2146,7 @@
 	},
 /area/f13/building)
 "tT" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Ranger Sergeant"
 	},
 /turf/open/floor/f13/wood,
@@ -3263,7 +3263,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "DF" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -3607,7 +3607,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "Gm" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Rangers"
 	},
 /turf/open/floor/f13/wood,
@@ -3697,7 +3697,7 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "GS" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Veteran Ranger"
 	},
 /turf/open/floor/plating/f13/outside/roof,
@@ -5477,7 +5477,7 @@
 /turf/open/floor/carpet/blue,
 /area/f13/building)
 "WY" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "Xb" = (

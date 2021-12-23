@@ -3,7 +3,7 @@
 
 ////////////
 // WOLVES //
-////////////	Pack animals, low hp, medium aggro, colder climates
+////////////	Pack animals, low hp, medium aggro, colder climates, runs away when near death
 
 // Don't map wolves in the desert please. It's for non desert maps or maybe some experiments.
 /mob/living/simple_animal/hostile/wolf
@@ -36,7 +36,33 @@
 	aggrosound = list('sound/f13npc/dog/dog_alert1.ogg', 'sound/f13npc/dog/dog_alert2.ogg', 'sound/f13npc/dog/dog_alert3.ogg')
 	idlesound = list('sound/f13npc/dog/dog_bark1.ogg', 'sound/f13npc/dog/dog_bark2.ogg', 'sound/f13npc/dog/dog_bark3.ogg')
 	death_sound = 'sound/f13npc/centaur/centaur_death.ogg'
+	/// Message for when the wolf decides to start running away
+	var/retreat_message_said = FALSE
 
+/* This is run away code for dogs stolen from space ice wolf, tried to make it work, couldn't. Keeping it here in case someone can solve it.
+/mob/living/simple_animal/hostile/wolf/Move(atom/newloc)
+	if(newloc && newloc.z == z && (islava(newloc) || ischasm(newloc)))
+		return FALSE
+	return ..()
+
+/mob/living/simple_animal/hostile/wolf/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
+	. = ..()
+	if(stat == DEAD || health > maxHealth*0.1)
+		retreat_distance = initial(retreat_distance)
+		return
+	if(!retreat_message_said && target)
+		visible_message("<span class='danger'>The [name] tries to flee from [target]!</span>")
+		retreat_message_said = TRUE
+	retreat_distance = 12
+
+/mob/living/simple_animal/hostile/wolf/BiologicalLife(seconds, times_fired)
+	if(!(. = ..()))
+		return
+	if(target)
+		return
+	adjustHealth(-maxHealth*0.025)
+	retreat_message_said = FALSE
+*/
 /mob/living/simple_animal/hostile/wolf/playable
 	health = 150
 	maxHealth = 150
@@ -62,14 +88,10 @@
 	summon_backup(15)
 	say("Awoo!")
 
-// OBSOLETE PLEASE USE WOLF INSTEAD
-/mob/living/simple_animal/hostile/wolf/cold
-	name = "cold feral dog"
-
 
 ////////////////
 // FERAL DOGS //
-////////////////	Pack animals, low hp, low-medium aggro
+////////////////	Pack animals, low hp, low-medium aggro, runs away when near death
 
 /mob/living/simple_animal/hostile/wolf/feral_dog
 	name = "feral dog"

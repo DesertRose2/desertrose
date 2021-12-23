@@ -23,7 +23,7 @@
 /area/f13/raiders)
 "aae" = (
 /obj/structure/decoration/rag,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -670,7 +670,7 @@
 /area/f13/wasteland)
 "aiQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aiT" = (
@@ -1348,7 +1348,7 @@
 /obj/structure/stone_tile/center{
 	pixel_y = -15
 	},
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -3112,7 +3112,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood,
 /area/f13/bar)
 "aUP" = (
@@ -3493,12 +3493,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "bbt" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "store backroom";
-	req_one_access_txt = "139"
-	},
+/obj/machinery/door/unpowered/secure_steeldoor/shopstorage,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/prewar/poster69{
 	pixel_x = -32
@@ -4121,7 +4116,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "blc" = (
-/obj/structure/simple_door/wood,
+/obj/structure/simple_door/house,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
@@ -7053,7 +7048,7 @@
 	},
 /area/f13/building)
 "ckt" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -7156,7 +7151,7 @@
 	},
 /area/f13/building)
 "cmY" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -7695,7 +7690,7 @@
 	},
 /area/f13/wasteland)
 "cxC" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "cxL" = (
@@ -9453,7 +9448,7 @@
 	},
 /area/f13/building)
 "dcQ" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -10577,6 +10572,13 @@
 "dvp" = (
 /turf/open/floor/f13{
 	icon_state = "stagestairs"
+	},
+/area/f13/building)
+"dvv" = (
+/obj/structure/simple_door/room/dirty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
 	},
 /area/f13/building)
 "dvH" = (
@@ -13002,7 +13004,7 @@
 /area/f13/followers)
 "eox" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
 "eoA" = (
@@ -13647,7 +13649,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "ezZ" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/raiders)
@@ -16738,7 +16740,7 @@
 /area/f13/wasteland)
 "fuV" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -17535,7 +17537,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/building)
 "fID" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Farm";
@@ -22364,13 +22366,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "hjM" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
-	max_integrity = 300;
-	name = "Legion Castrum";
-	obj_integrity = 300;
-	req_access_txt = "123"
-	},
+/obj/machinery/door/unpowered/securedoor/legion,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -26763,7 +26759,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "izR" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -28288,7 +28284,7 @@
 /turf/open/floor/wood/wood_tiled,
 /area/f13/building)
 "iTX" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "iUk" = (
@@ -29523,7 +29519,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jmw" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Farm";
@@ -29642,7 +29638,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "joc" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/f13/old,
@@ -30067,6 +30063,10 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
+/area/f13/building)
+"jww" = (
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "jwE" = (
 /obj/structure/simple_door/metal/dirtystore,
@@ -30928,8 +30928,8 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/city)
 "jMy" = (
-/obj/machinery/door/unpowered/wooddoor,
-/turf/open/floor/wood/f13/oak,
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "jMz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -34039,7 +34039,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "kFS" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -34892,7 +34892,7 @@
 "kSS" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/stone_tile/slab/cracked,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	obj_integrity = 300;
@@ -35187,7 +35187,7 @@
 	},
 /area/f13/wasteland)
 "kYv" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
 "kYE" = (
@@ -36468,9 +36468,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess,
 /area/f13/building)
 "lsS" = (
-/obj/structure/simple_door/house{
-	icon_state = "interior"
-	},
+/obj/structure/simple_door/interior,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -37150,7 +37148,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -38051,7 +38049,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood,
 /area/f13/bar)
 "lRL" = (
@@ -38622,9 +38620,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
 "mcD" = (
-/obj/structure/simple_door/house{
-	icon_state = "interior"
-	},
+/obj/structure/simple_door/interior,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -42254,13 +42250,7 @@
 /area/f13/building)
 "nor" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
-	max_integrity = 300;
-	name = "Legion Castrum";
-	obj_integrity = 300;
-	req_access_txt = "123"
-	},
+/obj/machinery/door/unpowered/securedoor/legion,
 /turf/open/floor/f13{
 	color = "#a6968e";
 	icon_state = "darkrusty";
@@ -42393,9 +42383,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "nrr" = (
-/obj/structure/simple_door/house{
-	icon_state = "glassclosing"
-	},
+/obj/structure/simple_door/glass,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/floorgrime,
@@ -43289,7 +43277,7 @@
 	},
 /area/f13/legion)
 "nGc" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -44413,7 +44401,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "oau" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "store";
@@ -44676,7 +44664,7 @@
 	},
 /area/f13/building)
 "odS" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
@@ -45767,7 +45755,7 @@
 	},
 /area/f13/building)
 "ouc" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain1"
 	},
@@ -45934,6 +45922,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/city)
+"owV" = (
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/building)
 "owY" = (
 /obj/structure/debris/v2,
 /obj/effect/decal/cleanable/dirt{
@@ -50123,7 +50117,7 @@
 /area/f13/ncr)
 "pNZ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
@@ -50422,7 +50416,7 @@
 	},
 /area/f13/wasteland)
 "pSC" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
@@ -50552,12 +50546,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/f13/city)
 "pVb" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "store backroom";
-	req_one_access_txt = "141"
-	},
+/obj/machinery/door/unpowered/securedoor/shop,
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "pVi" = (
@@ -53555,7 +53544,7 @@
 /area/f13/caves)
 "qTj" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -54837,7 +54826,7 @@
 	},
 /area/f13/wasteland)
 "rtc" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -57197,7 +57186,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -57769,9 +57758,8 @@
 	},
 /area/f13/wasteland)
 "snD" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
-/turf/open/floor/wood,
+/obj/structure/simple_door/metal,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "snN" = (
 /obj/structure/table/reinforced,
@@ -59981,7 +59969,7 @@
 	},
 /area/f13/building)
 "sWz" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Sergeant"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -60414,7 +60402,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "tdn" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Commanding Officer"
 	},
 /turf/open/floor/f13/wood{
@@ -60982,7 +60970,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/building)
 "tmH" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13/old,
 /area/f13/raiders)
 "tmU" = (
@@ -61687,7 +61675,7 @@
 /area/f13/building)
 "txH" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/interior,
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/building)
 "txO" = (
@@ -61914,7 +61902,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -64254,7 +64242,7 @@
 	},
 /area/f13/city)
 "umz" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -64921,7 +64909,7 @@
 	},
 /area/f13/wasteland)
 "uyB" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Sergeant FIrst Class"
 	},
 /turf/open/floor/f13/wood{
@@ -65749,7 +65737,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood,
 /area/f13/bar)
 "uRw" = (
@@ -66574,7 +66562,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "vde" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "vds" = (
@@ -67075,6 +67063,11 @@
 /obj/item/reagent_containers/food/snacks/strawberrycupcake,
 /turf/open/floor/plasteel/blueyellow/side,
 /area/f13/city)
+"vmB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/wood,
+/area/f13/building)
 "vmL" = (
 /obj/structure/tires/half,
 /turf/open/indestructible/ground/outside/road{
@@ -68504,7 +68497,7 @@
 /area/f13/building)
 "vLc" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/room,
+/obj/structure/simple_door/room/dirty,
 /turf/open/floor/wood{
 	icon_state = "housewastelandwest"
 	},
@@ -68651,11 +68644,8 @@
 	},
 /area/f13/wasteland)
 "vMY" = (
-/obj/machinery/door/unpowered/wooddoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "Store Garage";
-	req_one_access_txt = "141"
+/obj/machinery/door/unpowered/securedoor/shop{
+	name = "shop garage"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city)
@@ -69272,7 +69262,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bar)
 "vVW" = (
@@ -69521,7 +69511,7 @@
 	},
 /area/f13/wasteland)
 "wav" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -69865,7 +69855,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "whE" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
@@ -70934,7 +70924,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "wzo" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -71894,7 +71884,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -72450,7 +72440,7 @@
 	},
 /area/f13/wasteland)
 "wXn" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "wXq" = (
@@ -73244,7 +73234,7 @@
 /area/f13/wasteland)
 "xln" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "xlA" = (
@@ -73523,7 +73513,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "xpG" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -94639,7 +94629,7 @@ tiQ
 mAn
 iQJ
 rpu
-sDp
+jMy
 fyf
 dhD
 fyf
@@ -95409,7 +95399,7 @@ giZ
 giZ
 giZ
 giZ
-sDp
+yjG
 giZ
 rsE
 fyf
@@ -102768,7 +102758,7 @@ gts
 bFJ
 sYX
 dhC
-kFS
+owV
 nEY
 nEY
 sYX
@@ -103541,17 +103531,17 @@ sYX
 sYX
 tKZ
 sYX
-jMy
+jww
 sYX
 tKZ
 tKZ
 sYX
-jMy
+jww
 tKZ
 sYX
 tKZ
 sYX
-jMy
+jww
 sYX
 onk
 dYq
@@ -105339,13 +105329,13 @@ bFJ
 sYX
 tKZ
 sYX
-jMy
+jww
 sYX
-jMy
+jww
 sYX
 sYX
 sYX
-kFS
+owV
 sYX
 tXK
 fRx
@@ -105851,13 +105841,13 @@ nXk
 gts
 bFJ
 uEl
-kFS
+owV
 uCO
 tOg
 tKZ
 tOg
 uCO
-kFS
+owV
 tKZ
 cDf
 jmO
@@ -110749,7 +110739,7 @@ sYX
 kNl
 oXs
 bAR
-snD
+jfU
 tOg
 tOg
 sYX
@@ -111520,7 +111510,7 @@ sYX
 dVe
 jxZ
 kSb
-snD
+jfU
 tOg
 tOg
 sYX
@@ -112291,7 +112281,7 @@ sYX
 wMO
 jjl
 vOX
-snD
+jfU
 tOg
 mlI
 tKZ
@@ -113062,7 +113052,7 @@ sYX
 oxy
 rQP
 vOX
-snD
+jfU
 tOg
 tOg
 sYX
@@ -113833,7 +113823,7 @@ sYX
 tZr
 iyP
 jxZ
-snD
+jfU
 vrz
 vrz
 sYX
@@ -114878,7 +114868,7 @@ tKZ
 tBN
 mvv
 bpD
-wFB
+vmB
 msy
 jjl
 ndH
@@ -115938,7 +115928,7 @@ rkZ
 rpu
 rpu
 rpu
-sDp
+jMy
 rpu
 rpu
 rpu
@@ -116709,7 +116699,7 @@ sYX
 sYX
 sYX
 for
-sDp
+jMy
 iXW
 rpu
 eHp
@@ -120140,7 +120130,7 @@ gcK
 msG
 snB
 koD
-sDp
+jMy
 sYV
 phu
 dHN
@@ -120918,7 +120908,7 @@ sYX
 sYX
 rdy
 rdy
-eSX
+dvv
 sYX
 nPX
 fyf
@@ -131960,7 +131950,7 @@ ggK
 ejk
 sYX
 sYX
-aOc
+snD
 aVg
 tKZ
 sYX

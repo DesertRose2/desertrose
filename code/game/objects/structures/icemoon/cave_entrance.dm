@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 	faction = list("mining")
 	max_mobs = 3
 	max_integrity = 250
-	mob_types = list(/mob/living/simple_animal/hostile/asteroid/wolf)
+	mob_types = list(/mob/living/simple_animal/hostile/asteroid/polarbear)
 	move_resist = INFINITY
 	anchored = TRUE
 

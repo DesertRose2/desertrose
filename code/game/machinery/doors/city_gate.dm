@@ -1,7 +1,7 @@
 /obj/machinery/door/poddoor/gate
 	name = "city gate"
 	desc = "A heavy duty gates that opens mechanically."
-	icon = 'icons/fallout/objects/structures/city_gate.dmi'
+	icon = 'icons/fallout/structures/city_gate.dmi'
 	icon_state = "closed"
 	id = 333
 	bound_width = 96

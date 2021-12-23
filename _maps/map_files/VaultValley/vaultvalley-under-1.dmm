@@ -1260,7 +1260,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -1552,7 +1552,7 @@
 	},
 /area/f13/building)
 "ph" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Corporals"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -1842,7 +1842,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "qN" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Commanding Officer"
 	},
 /turf/open/floor/f13/wood{
@@ -2498,7 +2498,7 @@
 	},
 /area/f13/brotherhood/mining)
 "wh" = (
-/mob/living/simple_animal/hostile/wolf{
+/mob/living/simple_animal/hostile/wolf/feral_dog{
 	faction = list("hostile","wolf","raider");
 	name = "raider dog"
 	},
@@ -2580,7 +2580,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/caves)
 "wM" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Sergeant FIrst Class"
 	},
 /turf/open/floor/f13/wood{
@@ -3700,7 +3700,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "HE" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Sergeant"
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -3872,7 +3872,7 @@
 /turf/open/floor/f13,
 /area/f13/caves)
 "IY" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "Ja" = (
@@ -4028,7 +4028,7 @@
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "KJ" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/space/basic,
 /area/f13/ncr)
 "KO" = (
@@ -4211,7 +4211,7 @@
 /area/f13/caves)
 "Mz" = (
 /obj/structure/simple_door/room,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Sergeant"
 	},
 /turf/open/floor/f13/wood{
@@ -4861,7 +4861,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Privates";
 	req_one_access_txt = "28"
 	},
@@ -4978,7 +4978,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "Sy" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Recruits"
 	},
 /turf/open/floor/f13/wood{
@@ -4986,7 +4986,7 @@
 	},
 /area/f13/ncr)
 "SB" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Military Police"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
