@@ -9782,7 +9782,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/crew_quarters/heads/cmo)
 "aAC" = (
-/obj/structure/sign/poster/official/anniversary_vintage_reprint,
+/obj/structure/sign/poster/official/obey,
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
 	},

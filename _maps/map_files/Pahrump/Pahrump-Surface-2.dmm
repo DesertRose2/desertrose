@@ -70848,7 +70848,7 @@
 /area/f13/city)
 "wxI" = (
 /obj/machinery/autolathe/ammo,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
+/obj/structure/sign/poster/contraband/silenced_pistol{
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,

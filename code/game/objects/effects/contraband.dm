@@ -201,7 +201,7 @@
 
 /obj/structure/sign/poster/contraband/fun_police
 	name = "Fun Police"
-	desc = "A poster condemning the station's security forces."
+	desc = "A poster condemning the vault's security forces."
 	icon_state = "poster3"
 
 /obj/structure/sign/poster/contraband/lusty_xenomorph
@@ -289,11 +289,6 @@
 	desc = "Borg Fancy, Now only taking the most fancy."
 	icon_state = "poster21"
 
-/obj/structure/sign/poster/contraband/kss13
-	name = "Kosmicheskaya Stantsiya 13 Does Not Exist"
-	desc = "A poster mocking CentCom's denial of the existence of the derelict station near Space Station 13."
-	icon_state = "poster22"
-
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
 	desc = "A poster urging the viewer to rebel against Vault-Tec."
@@ -319,6 +314,11 @@
 	name = "D-Day Promo"
 	desc = "A promotional poster for some rapper."
 	icon_state = "poster27"
+
+/obj/structure/sign/poster/contraband/silenced_pistol
+    name = "Silenced Pistol"
+    desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags."
+    icon_state = "poster28"
 
 /obj/structure/sign/poster/contraband/energy_swords
 	name = "Energy Swords"
@@ -428,7 +428,7 @@
 
 /obj/structure/sign/poster/official/here_for_your_safety
 	name = "Here For Your Safety"
-	desc = "A poster glorifying the station's security force."
+	desc = "A poster glorifying the vault's security force."
 	icon_state = "poster1_legit"
 
 /obj/structure/sign/poster/official/cleanliness
@@ -438,7 +438,7 @@
 
 /obj/structure/sign/poster/official/help_others
 	name = "Help Others"
-	desc = "A poster encouraging you to help fellow crewmembers."
+	desc = "A poster encouraging you to help fellow Vault dwellers."
 	icon_state = "poster4_legit"
 
 /obj/structure/sign/poster/official/build
@@ -528,7 +528,7 @@
 
 /obj/structure/sign/poster/official/report_crimes
 	name = "Report Crimes"
-	desc = "A poster encouraging the swift reporting of crime or seditious behavior to station security."
+	desc = "A poster encouraging the swift reporting of crime or seditious behavior to vault security."
 	icon_state = "poster22_legit"
 
 /obj/structure/sign/poster/official/ion_rifle
@@ -568,7 +568,7 @@
 
 /obj/structure/sign/poster/official/the_owl
 	name = "The Owl"
-	desc = "The Owl would do his best to protect the station. Will you?"
+	desc = "The Owl would do his best to protect the vault. Will you?"
 	icon_state = "poster33_legit"
 
 /obj/structure/sign/poster/official/no_erp
@@ -598,7 +598,7 @@
 
 /obj/structure/sign/poster/official/hydro_ad
 	name = "Hydroponics Tray"
-	desc = "An advertisement for hydroponics trays. Space Station 13's botanical department uses a slightly newer model, but the principles are the same. From left to right: Green means the plant is done, red means the plant is unhealthy, flashing red means pests or weeds, yellow means the plant needs nutriment and blue means the plant needs water."
+	desc = "An advertisement for hydroponics trays. Vault-Tec's botanical department uses a slightly newer model, but the principles are the same. From left to right: Green means the plant is done, red means the plant is unhealthy, flashing red means pests or weeds, yellow means the plant needs nutriment and blue means the plant needs water."
 	icon_state = "poster41_legit"
 
 /obj/structure/sign/poster/official/medical_green_cross
