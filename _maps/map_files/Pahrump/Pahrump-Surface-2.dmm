@@ -3306,8 +3306,7 @@
 	id = "khanback";
 	name = "Khan gate button";
 	pixel_y = 32;
-	req_access_txt = "125";
-	req_one_access_txt = "0"
+	req_access_txt = "125"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)

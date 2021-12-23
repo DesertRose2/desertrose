@@ -3,12 +3,6 @@
 /obj/structure/stalkeregg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"aac" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall,
-/turf/closed/wall/r_wall,
-/area/f13/brotherhood/offices2nd)
 "aae" = (
 /obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6491,12 +6485,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
-"erI" = (
-/obj/structure/sign/poster/official/anniversary_vintage_reprint,
-/turf/closed/wall/r_wall/f13vault{
-	icon_state = "2-i"
-	},
-/area/f13/tunnel)
 "esc" = (
 /turf/open/floor/f13/wood{
 	color = "#c5bab2";
@@ -9408,10 +9396,6 @@
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
-/area/f13/brotherhood/offices2nd)
-"gpq" = (
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/turf/closed/wall/r_wall,
 /area/f13/brotherhood/offices2nd)
 "gpy" = (
 /obj/effect/decal/cleanable/dirt{
@@ -12716,18 +12700,6 @@
 	dir = 4
 	},
 /turf/open/water,
-/area/f13/tunnel)
-"izC" = (
-/obj/item/chair/stool/retro/black,
-/obj/effect/spawner/lootdrop/trash,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
-	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
-	name = "Silenced Pistol";
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
 /area/f13/tunnel)
 "izZ" = (
 /obj/structure/lattice{
@@ -19377,16 +19349,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/legion)
-"mYR" = (
-/obj/machinery/vending/tool,
-/obj/structure/sign/poster/contraband/rip_badger{
-	pixel_x = 14;
-	pixel_y = 31
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "darkyellowfull"
-	},
-/area/f13/brotherhood/rnd)
 "mYV" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/f13{
@@ -25081,6 +25043,12 @@
 /obj/structure/spider/stickyweb,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"qAN" = (
+/obj/structure/sign/poster/official/anniversary_vintage_reprint,
+/turf/closed/wall/r_wall/f13vault{
+	icon_state = "2-i"
+	},
+/area/f13/tunnel)
 "qBy" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -26361,6 +26329,26 @@
 	color = "#c5bab2"
 	},
 /area/f13/legion)
+"roT" = (
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/syndicate_pistol{
+	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
+	name = "Silenced Pistol";
+	pixel_x = 32
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/silenced_pistol{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/tunnel)
 "roY" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/grass,
@@ -28548,6 +28536,16 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/brotherhood/operations)
+"sFS" = (
+/obj/machinery/vending/tool,
+/obj/structure/sign/poster/contraband/rip_badger{
+	pixel_x = 14;
+	pixel_y = 31
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "darkyellowfull"
+	},
+/area/f13/brotherhood/rnd)
 "sGc" = (
 /obj/machinery/light/small/broken{
 	dir = 8
@@ -46916,7 +46914,7 @@ uBh
 ygC
 nil
 xpj
-erI
+qAN
 neb
 xpj
 wEc
@@ -71471,7 +71469,7 @@ ghw
 qtd
 dTE
 dek
-izC
+roT
 gcb
 omL
 lnL
@@ -94020,7 +94018,7 @@ piT
 cna
 rfD
 xhA
-mYR
+sFS
 qWx
 oFT
 qWx
@@ -98896,7 +98894,7 @@ hPn
 gul
 kRZ
 oFk
-aac
+bKi
 rTd
 pld
 pmm
@@ -101980,7 +101978,7 @@ hPn
 oHY
 gul
 gul
-gpq
+gul
 gul
 gul
 gul
