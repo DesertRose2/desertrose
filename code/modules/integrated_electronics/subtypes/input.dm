@@ -711,8 +711,8 @@
 			LM.playsound_local(get_turf(src), 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
 
 /obj/item/integrated_circuit/input/ntnet_packet
-	name = "wifi networking circuit"
-	desc = "Enables the sending and receiving of messages over wifi via packet data protocol."
+	name = "wireless networking circuit"
+	desc = "Enables the sending and receiving of wireless messages via packet data protocol."
 	extended_desc = "Data can be sent or received using the second pin on each side, \
 	with additonal data reserved for the third pin. When a message is received, the second activation pin \
 	will pulse whatever is connected to it. Pulsing the first activation pin will send a message. Messages \
@@ -721,7 +721,7 @@
 	complexity = 2
 	cooldown_per_use = 1
 	inputs = list(
-		"target wifi addresses"= IC_PINTYPE_STRING,
+		"target wireless addresses"= IC_PINTYPE_STRING,
 		"data to send"			= IC_PINTYPE_STRING,
 		"secondary text"		= IC_PINTYPE_STRING
 		)
@@ -743,7 +743,7 @@
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id
 	net.differentiate_broadcast = FALSE
-	desc += "<br>This circuit's hardware address is: [address]"
+	desc += "<br>This circuit's wireless address is: [address]"
 
 /obj/item/integrated_circuit/input/ntnet_packet/do_work()
 	var/target_address = get_pin_data(IC_INPUT, 1)
@@ -766,8 +766,8 @@
 	activate_pin(2)
 
 /obj/item/integrated_circuit/input/ntnet_advanced
-	name = "low-level wifi transreceiver"
-	desc = "Enables the sending and receiving of messages over wifi via packet data protocol. Allows advanced control of message contents and signalling. Must use associative lists. Outputs associative list. Has a slower transmission rate than normal wifi circuits, due to increased data processing complexity."
+	name = "low-level wireless transreceiver"
+	desc = "Enables the sending and receiving of wireless messages via packet data protocol. Allows advanced control of message contents and signalling. Must use associative lists. Outputs associative list. Has a slower transmission rate than normal wireless circuits, due to increased data processing complexity."
 	extended_desc = "Data can be sent or received using the second pin on each side, \
 	When a message is received, the second activation pin will pulse whatever is connected to it. \
 	Pulsing the first activation pin will send a message. Messages can be sent to multiple recepients. \
@@ -776,7 +776,7 @@
 	complexity = 4
 	cooldown_per_use = 10
 	inputs = list(
-		"target wifi addresses"= IC_PINTYPE_STRING,
+		"target wireless addresses"= IC_PINTYPE_STRING,
 		"data"					= IC_PINTYPE_LIST,
 		)
 	outputs = list("received data" = IC_PINTYPE_LIST, "is_broadcast" = IC_PINTYPE_BOOLEAN)
@@ -791,7 +791,7 @@
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id
 	net.differentiate_broadcast = FALSE
-	desc += "<br>This circuit's hardware address is: [address]"
+	desc += "<br>This circuit's wireless address is: [address]"
 
 /obj/item/integrated_circuit/input/ntnet_advanced/do_work()
 	var/target_address = get_pin_data(IC_INPUT, 1)
