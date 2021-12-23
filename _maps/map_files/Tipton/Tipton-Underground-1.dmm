@@ -161,7 +161,9 @@
 /area/f13/bunker)
 "ala" = (
 /obj/structure/junk/small/bed,
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
@@ -1668,7 +1670,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bHy" = (
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
 "bHZ" = (
@@ -2043,7 +2047,9 @@
 	},
 /area/f13/bunker)
 "caF" = (
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/water,
 /area/f13/sewer)
 "caP" = (
@@ -2688,7 +2694,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "cGU" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/water,
 /area/f13/sewer)
 "cGW" = (
@@ -3627,7 +3635,9 @@
 /obj/structure/chair/wood/modern{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "dGf" = (
@@ -4246,7 +4256,9 @@
 	layer = 2.7;
 	pixel_y = -16
 	},
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/water,
 /area/f13/sewer)
 "egN" = (
@@ -5223,7 +5235,9 @@
 	},
 /area/f13/bunker)
 "fdk" = (
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -5912,7 +5926,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
 "fNr" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/bunker)
@@ -6344,7 +6360,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
 "gln" = (
@@ -6482,7 +6500,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "gpQ" = (
@@ -6787,10 +6807,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "gCM" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "gCX" = (
@@ -7893,10 +7910,6 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"hGS" = (
-/obj/structure/bed/dogbed,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "hHm" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/barricade/wooden,
@@ -8102,7 +8115,9 @@
 /turf/open/water,
 /area/f13/tunnel)
 "hSG" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -8273,7 +8288,9 @@
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
 "ibI" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/floor/wood/f13{
 	icon_state = "wood-broken2"
 	},
@@ -9065,7 +9082,9 @@
 /area/f13/sewer)
 "iJL" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "iJQ" = (
@@ -10435,7 +10454,9 @@
 /area/f13/bunker)
 "jYN" = (
 /obj/item/chair,
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/water,
 /area/f13/sewer)
 "jZf" = (
@@ -10872,15 +10893,9 @@
 	},
 /area/f13/sewer)
 "kum" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/bunker)
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "kve" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11683,7 +11698,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -12010,7 +12027,9 @@
 	},
 /area/f13/sewer)
 "lsP" = (
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/water,
 /area/f13/sewer)
 "ltb" = (
@@ -12151,7 +12170,9 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/den)
 "lyb" = (
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "bar"
@@ -12924,7 +12945,9 @@
 /area/f13/bunker)
 "mhl" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/floor/carpet/red,
 /area/f13/bunker)
 "mii" = (
@@ -13277,7 +13300,9 @@
 /obj/structure/chair/wood/modern{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "mxT" = (
@@ -13970,7 +13995,9 @@
 /turf/closed/wall/rust,
 /area/f13/sewer)
 "nfp" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/sewer)
 "nfU" = (
@@ -15916,14 +15943,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
-"oQs" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/obj/effect/gibspawner/human,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "oQM" = (
 /obj/item/storage/belt/holster/hip,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
@@ -16640,11 +16659,8 @@
 	},
 /area/f13/bunker)
 "pBP" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
 /obj/structure/bed/dogbed,
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "pCg" = (
@@ -16710,7 +16726,9 @@
 	},
 /area/f13/sewer)
 "pFp" = (
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "pFD" = (
@@ -17565,14 +17583,6 @@
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
-"qAJ" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/obj/structure/campfire/barrel,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "qAP" = (
 /obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/decal/fakelattice,
@@ -19399,7 +19409,9 @@
 "sfC" = (
 /obj/structure/chair/wood/normal,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
 "sga" = (
@@ -20988,7 +21000,9 @@
 	},
 /area/f13/caves)
 "tOq" = (
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -21156,7 +21170,9 @@
 /obj/structure/chair/wood/normal{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
@@ -22613,7 +22629,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "vkp" = (
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "vkL" = (
@@ -23148,7 +23166,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "vDo" = (
-/mob/living/simple_animal/hostile/ghoul/ranged/raider,
+/mob/living/simple_animal/hostile/ghoul/ranged/raider{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "vDu" = (
@@ -23508,7 +23528,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ghoul/soldier/armored,
+/mob/living/simple_animal/hostile/ghoul/soldier/armored{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "vUT" = (
@@ -24832,7 +24854,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/radiation)
 "xcI" = (
-/mob/living/simple_animal/hostile/ghoul/soldier,
+/mob/living/simple_animal/hostile/ghoul/soldier{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "xdr" = (
@@ -25156,7 +25180,9 @@
 	},
 /area/f13/bunker)
 "xro" = (
-/mob/living/simple_animal/hostile/ghoul/ranged/desperado,
+/mob/living/simple_animal/hostile/ghoul/ranged/desperado{
+	faction = list("hostile")
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "xrz" = (
@@ -25397,7 +25423,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "xDq" = (
-/mob/living/simple_animal/hostile/ghoul/ranged,
+/mob/living/simple_animal/hostile/ghoul/ranged{
+	faction = list("hostile")
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "xDr" = (
@@ -45066,7 +45094,7 @@ hFs
 hFs
 hFs
 kGt
-hFs
+kum
 hFs
 hFs
 hFs
@@ -45663,7 +45691,7 @@ sWW
 sWW
 sWW
 oxc
-gCM
+iBY
 iBY
 wSI
 iBp
@@ -46067,8 +46095,8 @@ iBp
 iBp
 iBp
 wSI
-iBY
-iBY
+gCM
+gCM
 wSI
 iBp
 iBp
@@ -46270,7 +46298,7 @@ phU
 phU
 phU
 vlf
-gCM
+iBY
 phU
 phU
 phU
@@ -46470,7 +46498,7 @@ nCf
 nCf
 owS
 wSI
-qAJ
+cYp
 iBY
 iBY
 iBY
@@ -48288,7 +48316,7 @@ cxX
 aKu
 tLr
 eZz
-kum
+kiU
 bne
 ekb
 jAu
@@ -49713,7 +49741,7 @@ iBY
 tsn
 pBP
 tdR
-hGS
+pBP
 mOQ
 iqe
 dOS
@@ -49914,8 +49942,8 @@ iBY
 iBY
 tsn
 xkr
-gCM
-gCM
+iBY
+iBY
 mOQ
 lQl
 dOS
@@ -50117,7 +50145,7 @@ iBY
 iBY
 iBY
 rup
-hGS
+pBP
 mOQ
 nJE
 dOS
@@ -50319,7 +50347,7 @@ fxk
 iBY
 tdR
 xkr
-hGS
+pBP
 mOQ
 mOQ
 kqF
@@ -50519,9 +50547,9 @@ iBY
 iBY
 iBY
 tsn
-gCM
 iBY
-gCM
+iBY
+iBY
 mOQ
 ykJ
 dOS
@@ -50721,9 +50749,9 @@ iBY
 iBY
 iBY
 tsn
-hGS
-oQs
-hGS
+pBP
+rup
+pBP
 mOQ
 dOS
 dOS
