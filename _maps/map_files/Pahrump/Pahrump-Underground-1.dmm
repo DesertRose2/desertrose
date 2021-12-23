@@ -6500,7 +6500,7 @@
 	},
 /area/f13/tunnel)
 "erI" = (
-/obj/structure/sign/poster/official/anniversary_vintage_reprint,
+/obj/structure/sign/poster/official/safety_eye_protection,
 /turf/closed/wall/r_wall/f13vault{
 	icon_state = "2-i"
 	},
@@ -19350,7 +19350,7 @@
 /area/f13/legion)
 "mYR" = (
 /obj/machinery/vending/tool,
-/obj/structure/sign/poster/contraband/rip_badger{
+/obj/structure/sign/poster/official/safety_eye_protection{
 	pixel_x = 14;
 	pixel_y = 31
 	},
@@ -27519,9 +27519,7 @@
 "rXj" = (
 /obj/item/chair/stool/retro/black,
 /obj/effect/spawner/lootdrop/trash,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
-	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
-	name = "Silenced Pistol";
+/obj/structure/sign/poster/contraband/silenced_pistol{
 	pixel_x = 32
 	},
 /obj{
