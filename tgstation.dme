@@ -2131,6 +2131,7 @@
 #include "code\modules\fallout\obj\flora\wildplant.dm"
 #include "code\modules\fallout\obj\food_and_drinks\drink.dm"
 #include "code\modules\fallout\obj\food_and_drinks\food.dm"
+#include "code\modules\fallout\obj\food_and_drinks\meat.dm"
 #include "code\modules\fallout\obj\food_and_drinks\wastefood.dm"
 #include "code\modules\fallout\obj\manual\ncr\ncr_job_guide.dm"
 #include "code\modules\fallout\obj\spawners\lootdrops.dm"
