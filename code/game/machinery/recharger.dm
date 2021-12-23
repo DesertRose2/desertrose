@@ -37,10 +37,10 @@
 
 	if(!(stat & (NOPOWER|BROKEN)))
 		. += SPAN_NOTICE("The status display reads:")
-		. += "<span class='notice'>- Recharging <b>[recharge_coeff*10]%</b> cell charge per cycle.</span>"
+		. += SPAN_NOTICE("- Recharging <b>[recharge_coeff*10]%</b> cell charge per cycle.")
 		if(charging)
 			var/obj/item/stock_parts/cell/C = charging.get_cell()
-			. += "<span class='notice'>- \The [charging]'s cell is at <b>[C.percent()]%</b>.</span>"
+			. += SPAN_NOTICE("- \The [charging]'s cell is at <b>[C.percent()]%</b>.")
 
 /obj/machinery/recharger/proc/setCharging(new_charging)
 	charging = new_charging

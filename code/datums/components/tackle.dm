@@ -483,7 +483,7 @@
 		if(prob(25 * (src.speed - 1))) // if our tackle speed is higher than 1, with chance (speed - 1 * 25%), throw the thing at our tackle speed + 1
 			sp = speed + 1
 		I.throw_at(get_ranged_target_turf(I, pick(GLOB.alldirs), range = dist), range = dist, speed = sp)
-		I.visible_message("<span class='danger'>[I] goes flying[sp > 3 ? " dangerously fast" : ""]!</span>") // standard embed speed
+		I.visible_message(SPAN_DANGER("[I] goes flying[sp > 3 ? " dangerously fast" : ""]!")) // standard embed speed
 
 	playsound(owner, 'sound/weapons/smash.ogg', 70, TRUE)
 	tackle.finalize(hit=TRUE)

@@ -39,7 +39,7 @@
 	deconstruction_hints(user)
 
 /turf/closed/wall/proc/deconstruction_hints(mob/user)
-	return "<span class='notice'>The outer plating is <b>welded</b> firmly in place.</span>"
+	return SPAN_NOTICE("The outer plating is <b>welded</b> firmly in place.")
 
 /turf/closed/wall/attack_tk()
 	return

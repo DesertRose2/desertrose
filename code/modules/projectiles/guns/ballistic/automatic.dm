@@ -1274,7 +1274,7 @@
 /obj/item/gun/ballistic/automatic/m2a1/examine(mob/user)
 	. = ..()
 	if(cover_open && magazine)
-		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
+		. += SPAN_NOTICE("It seems like you could use an <b>empty hand</b> to remove the magazine.")
 
 /obj/item/gun/ballistic/automatic/m2a1/attack_self(mob/user)
 	cover_open = !cover_open

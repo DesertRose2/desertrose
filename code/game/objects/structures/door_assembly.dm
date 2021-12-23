@@ -33,21 +33,21 @@
 	switch(state)
 		if(AIRLOCK_ASSEMBLY_NEEDS_WIRES)
 			if(anchored)
-				. += "<span class='notice'>The anchoring bolts are <b>wrenched</b> in place, but the maintenance panel lacks <i>wiring</i>.</span>"
+				. += SPAN_NOTICE("The anchoring bolts are <b>wrenched</b> in place, but the maintenance panel lacks <i>wiring</i>.")
 			else
-				. += "<span class='notice'>The assembly is <b>welded together</b>, but the anchoring bolts are <i>unwrenched</i>.</span>"
+				. += SPAN_NOTICE("The assembly is <b>welded together</b>, but the anchoring bolts are <i>unwrenched</i>.")
 		if(AIRLOCK_ASSEMBLY_NEEDS_ELECTRONICS)
-			. += "<span class='notice'>The maintenance panel is <b>wired</b>, but the circuit slot is <i>empty</i>.</span>"
+			. += SPAN_NOTICE("The maintenance panel is <b>wired</b>, but the circuit slot is <i>empty</i>.")
 		if(AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER)
-			. += "<span class='notice'>The circuit is <b>connected loosely</b> to its slot, but the maintenance panel is <i>unscrewed and open</i>.</span>"
+			. += SPAN_NOTICE("The circuit is <b>connected loosely</b> to its slot, but the maintenance panel is <i>unscrewed and open</i>.")
 	if(!mineral && !glass && !noglass)
-		. += "<span class='notice'>There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for glass windows and mineral covers.</span>"
+		. += SPAN_NOTICE("There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for glass windows and mineral covers.")
 	else if(!mineral && glass && !noglass)
-		. += "<span class='notice'>There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for mineral covers.</span>"
+		. += SPAN_NOTICE("There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for mineral covers.")
 	else if(mineral && !glass && !noglass)
-		. += "<span class='notice'>There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for glass windows.</span>"
+		. += SPAN_NOTICE("There is a small <i>paper</i> placard on the assembly[doorname]. There are <i>empty</i> slots for glass windows.")
 	else
-		. += "<span class='notice'>There is a small <i>paper</i> placard on the assembly[doorname].</span>"
+		. += SPAN_NOTICE("There is a small <i>paper</i> placard on the assembly[doorname].")
 
 /obj/structure/door_assembly/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/pen))

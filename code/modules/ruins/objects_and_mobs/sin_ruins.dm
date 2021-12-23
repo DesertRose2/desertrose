@@ -99,8 +99,8 @@
 	icon_state = "magic_mirror"
 
 /obj/structure/mirror/magic/pride/curse(mob/user)
-	user.visible_message("<span class='danger'><B>The ground splits beneath [user] as [user.p_their()] hand leaves the mirror!</B></span>", \
-	"<span class='notice'>Perfect. Much better! Now <i>nobody</i> will be able to resist yo-</span>")
+	user.visible_message(SPAN_DANGER("<B>The ground splits beneath [user] as [user.p_their()] hand leaves the mirror!</B>"), \
+	SPAN_NOTICE("Perfect. Much better! Now <i>nobody</i> will be able to resist yo-"))
 
 	var/turf/T = get_turf(user)
 	var/list/levels = SSmapping.levels_by_trait(ZTRAIT_SPACE_RUINS)

@@ -262,9 +262,9 @@
 				owner.apply_damage(leg_damage_on_toggle * 0.5, BURN, BODY_ZONE_R_LEG)
 		if(owner.m_intent != MOVE_INTENT_WALK)
 			if(!iscultist(owner))
-				to_chat(owner, "<span class='warning'>Your leg[number_legs > 1 ? "s shiver":" shivers"] with pain!</span>")
+				to_chat(owner, SPAN_WARNING("Your leg[number_legs > 1 ? "s shiver":" shivers"] with pain!"))
 			else //Cultists take extra burn damage
-				to_chat(owner, "<span class='warning'>Your leg[number_legs > 1 ? "s burn":" burns"] with pain!</span>")
+				to_chat(owner, SPAN_WARNING("Your leg[number_legs > 1 ? "s burn":" burns"] with pain!"))
 			owner.toggle_move_intent()
 		return TRUE
 	return FALSE
@@ -942,7 +942,7 @@
 	ADD_TRAIT(owner, TRAIT_MUTE, "trance")
 	owner.add_client_colour(/datum/client_colour/monochrome/trance)
 	owner.visible_message("[stun ? SPAN_WARNING("[owner] stands still as [owner.p_their()] eyes seem to focus on a distant point.") : ""]", \
-	"<span class='warning'>[pick("You feel your thoughts slow down...", "You suddenly feel extremely dizzy...", "You feel like you're in the middle of a dream...","You feel incredibly relaxed...")]</span>")
+	SPAN_WARNING("[pick("You feel your thoughts slow down...", "You suddenly feel extremely dizzy...", "You feel like you're in the middle of a dream...","You feel incredibly relaxed...")]"))
 	return TRUE
 
 /datum/status_effect/trance/on_creation(mob/living/new_owner, _duration, _stun = TRUE)
@@ -1074,7 +1074,7 @@
 			if(prob(2))
 				fake_msg = pick(SPAN_WARNING("[pick("Your head hurts a lot.", "Your head pounds incessantly.")]"),
 				SPAN_WARNING("[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]"),
-				"<span class='warning'>You feel very [pick("dizzy","woozy","faint")].</span>",
+				SPAN_WARNING("You feel very [pick("dizzy","woozy","faint")]."),
 				SPAN_WARNING("[pick("You hear a ringing in your ear.", "Your ears pop.")]"),
 				SPAN_WARNING("You nod off for a moment."))
 		else

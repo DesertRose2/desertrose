@@ -17,7 +17,7 @@
 
 /obj/structure/chair/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
+	. += SPAN_NOTICE("It's held together by a couple of <b>bolts</b>.")
 	if(!has_buckled_mobs())
 		. += SPAN_NOTICE("Drag your sprite to sit in it.")
 

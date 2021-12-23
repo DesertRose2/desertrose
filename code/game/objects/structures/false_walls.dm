@@ -134,7 +134,7 @@
 	return null
 
 /obj/structure/falsewall/examine_status(mob/user) //So you can't detect falsewalls by examine.
-	to_chat(user, "<span class='notice'>The outer plating is <b>welded</b> firmly in place.</span>")
+	to_chat(user, SPAN_NOTICE("The outer plating is <b>welded</b> firmly in place."))
 	return null
 
 /*
@@ -150,7 +150,7 @@
 	mineral = /obj/item/stack/sheet/plasteel
 
 /obj/structure/falsewall/reinforced/examine_status(mob/user)
-	to_chat(user, "<span class='notice'>The outer <b>grille</b> is fully intact.</span>")
+	to_chat(user, SPAN_NOTICE("The outer <b>grille</b> is fully intact."))
 	return null
 
 /obj/structure/falsewall/reinforced/attackby(obj/item/tool, mob/user)

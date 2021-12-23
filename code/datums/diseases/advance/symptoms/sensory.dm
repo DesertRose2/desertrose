@@ -106,4 +106,4 @@
 					eyes.applyOrganDamage(-1)
 		else
 			if(prob(base_message_chance))
-				to_chat(M, "<span class='notice'>[pick("Your eyes feel great.","You feel like your eyes can focus more clearly.", "You don't feel the need to blink.","Your ears feel great.","Your healing feels more acute.")]</span>")
+				to_chat(M, SPAN_NOTICE("[pick("Your eyes feel great.","You feel like your eyes can focus more clearly.", "You don't feel the need to blink.","Your ears feel great.","Your healing feels more acute.")]"))

@@ -56,9 +56,9 @@
 
 /obj/machinery/hydroponics/constructable/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Use <b>Ctrl-Click</b> to activate autogrow. <b>Alt-Click</b> to empty the tray's nutrients.</span>"
+	. += SPAN_NOTICE("Use <b>Ctrl-Click</b> to activate autogrow. <b>Alt-Click</b> to empty the tray's nutrients.")
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>The status display reads: Tray efficiency at <b>[rating*100]%</b>.</span>"
+		. += SPAN_NOTICE("The status display reads: Tray efficiency at <b>[rating*100]%</b>.")
 
 
 /obj/machinery/hydroponics/Destroy()
@@ -857,9 +857,9 @@
 
 /obj/machinery/hydroponics/soil/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'><b>Alt-Click</b> to empty the tray's nutrients.</span>"
+	. += SPAN_NOTICE("<b>Alt-Click</b> to empty the tray's nutrients.")
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>You might be able to discern a plant's harvest by examining it <b>closer</b>.</span>"
+		. += SPAN_NOTICE("You might be able to discern a plant's harvest by examining it <b>closer</b>.")
 
 /obj/machinery/hydroponics/proc/become_self_sufficient() // Ambrosia Gaia effect
 	visible_message("<span class='boldnotice'>[src] begins to glow with a beautiful light!</span>")

@@ -330,7 +330,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			log_access("Failed login: [key] - blacklisted byond version")
 			to_chat(src, "<span class='userdanger'>Your version of byond is blacklisted.</span>")
 			to_chat(src, SPAN_DANGER("Byond build [byond_build] ([byond_version].[byond_build]) has been blacklisted for the following reason: [GLOB.blacklisted_builds[num2text(byond_build)]]."))
-			to_chat(src, "<span class='danger'>Please download a new version of byond. If [byond_build] is the latest, you can go to <a href=\"https://secure.byond.com/download/build\">BYOND's website</a> to download other versions.</span>")
+			to_chat(src, SPAN_DANGER("Please download a new version of byond. If [byond_build] is the latest, you can go to <a href=\"https://secure.byond.com/download/build\">BYOND's website</a> to download other versions."))
 			if(connecting_admin)
 				to_chat(src, "As an admin, you are being allowed to continue using this version, but please consider changing byond versions")
 			else
@@ -358,7 +358,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/ceb = CONFIG_GET(number/client_error_build)
 	var/cwv = CONFIG_GET(number/client_warn_version)
 	if (byond_version < cev || (byond_version == cev && byond_build < ceb))		//Out of date client.
-		to_chat(src, "<span class='danger'><b>Your version of BYOND is too old:</b></span>")
+		to_chat(src, SPAN_DANGER("<b>Your version of BYOND is too old:</b>"))
 		to_chat(src, CONFIG_GET(string/client_error_message))
 		to_chat(src, "Your version: [byond_version].[byond_build]")
 		to_chat(src, "Required version: [cev].[ceb] or later")
@@ -377,7 +377,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			msg += "Visit <a href=\"https://secure.byond.com/download\">BYOND's website</a> to get the latest version of BYOND.<br>"
 			src << browse(msg, "window=warning_popup")
 		else
-			to_chat(src, "<span class='danger'><b>Your version of byond may be getting out of date:</b></span>")
+			to_chat(src, SPAN_DANGER("<b>Your version of byond may be getting out of date:</b>"))
 			to_chat(src, CONFIG_GET(string/client_warn_message))
 			to_chat(src, "Your version: [byond_version]")
 			to_chat(src, "Required version to remove this message: [cwv] or later")
@@ -568,7 +568,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		if (CONFIG_GET(flag/panic_bunker) && !holder && !GLOB.deadmins[ckey])
 			log_access("Failed Login: [key] - New account attempting to connect during panic bunker")
 			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
-			to_chat(src, "<span class='notice'>You must first join the Discord to verify your account before joining this server.<br>To do so, read the rules and post a request in the Discord server linked here: <a href='https://discord.gg/NGpP36m'>https://discord.gg/NGpP36m</a><br>If you have already done so, wait a few minutes then try again; sometimes the server needs to fully load before you can join.</span>") //CIT CHANGE - makes the panic bunker disconnect message point to the discord
+			to_chat(src, SPAN_NOTICE("You must first join the Discord to verify your account before joining this server.<br>To do so, read the rules and post a request in the Discord server linked here: <a href='https://discord.gg/NGpP36m'>https://discord.gg/NGpP36m</a><br>If you have already done so, wait a few minutes then try again; sometimes the server needs to fully load before you can join.")) //CIT CHANGE - makes the panic bunker disconnect message point to the discord
 			var/list/connectiontopic_a = params2list(connectiontopic)
 			var/list/panic_addr = CONFIG_GET(string/panic_server_address)
 			if(panic_addr && !connectiontopic_a["redirect"])

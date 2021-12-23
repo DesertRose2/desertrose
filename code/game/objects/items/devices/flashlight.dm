@@ -144,21 +144,21 @@
 						to_chat(user, SPAN_NOTICE("You can't see anything without a mirror."))
 						return
 					if(organ_count)
-						to_chat(user, "<span class='notice'>Inside your mouth [organ_count > 1 ? "are" : "is"] [organ_list].</span>")
+						to_chat(user, SPAN_NOTICE("Inside your mouth [organ_count > 1 ? "are" : "is"] [organ_list]."))
 					else
 						to_chat(user, SPAN_NOTICE("There's nothing inside your mouth."))
 					if(pill_count)
-						to_chat(user, "<span class='notice'>You have [pill_count] implanted pill[pill_count > 1 ? "s" : ""].</span>")
+						to_chat(user, SPAN_NOTICE("You have [pill_count] implanted pill[pill_count > 1 ? "s" : ""]."))
 
 				else
 					user.visible_message(SPAN_NOTICE("[user] directs [src] to [M]'s mouth."),\
 										SPAN_NOTICE("You direct [src] to [M]'s mouth."))
 					if(organ_count)
-						to_chat(user, "<span class='notice'>Inside [their] mouth [organ_count > 1 ? "are" : "is"] [organ_list].</span>")
+						to_chat(user, SPAN_NOTICE("Inside [their] mouth [organ_count > 1 ? "are" : "is"] [organ_list]."))
 					else
 						to_chat(user, SPAN_NOTICE("[M] doesn't have any organs in [their] mouth."))
 					if(pill_count)
-						to_chat(user, "<span class='notice'>[M] has [pill_count] pill[pill_count > 1 ? "s" : ""] implanted in [their] teeth.</span>")
+						to_chat(user, SPAN_NOTICE("[M] has [pill_count] pill[pill_count > 1 ? "s" : ""] implanted in [their] teeth."))
 
 	else
 		return ..()

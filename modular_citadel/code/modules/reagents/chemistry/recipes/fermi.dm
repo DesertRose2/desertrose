@@ -208,7 +208,7 @@
 
 /datum/chemical_reaction/fermi/breast_enlarger/FermiExplode(datum/reagents, atom/my_atom, volume, temp, pH)
 	var/obj/item/organ/genital/breasts/B = new /obj/item/organ/genital/breasts(get_turf(my_atom))
-	my_atom.visible_message("<span class='warning'>The reaction suddenly condenses, creating a pair of breasts!</b></span>")
+	my_atom.visible_message(SPAN_WARNING("The reaction suddenly condenses, creating a pair of breasts!</b>"))
 	var/datum/reagent/fermi/breast_enlarger/BE = locate(/datum/reagent/fermi/breast_enlarger) in my_atom.reagents.reagent_list
 	B.size = ((BE.volume * BE.purity) / 10) //half as effective.
 	my_atom.reagents.clear_reagents()
@@ -238,7 +238,7 @@
 
 /datum/chemical_reaction/fermi/penis_enlarger/FermiExplode(datum/reagents, atom/my_atom, volume, temp, pH)
 	var/obj/item/organ/genital/penis/P = new /obj/item/organ/genital/penis(get_turf(my_atom))
-	my_atom.visible_message("<span class='warning'>The reaction suddenly condenses, creating a penis!</b></span>")
+	my_atom.visible_message(SPAN_WARNING("The reaction suddenly condenses, creating a penis!</b>"))
 	var/datum/reagent/fermi/penis_enlarger/PE = locate(/datum/reagent/fermi/penis_enlarger) in my_atom.reagents.reagent_list
 	P.length = ((PE.volume * PE.purity) / 10)//half as effective.
 	my_atom.reagents.clear_reagents()

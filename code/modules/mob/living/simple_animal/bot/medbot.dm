@@ -461,7 +461,7 @@
 		if(MEDBOT_PANIC_HIGH to MEDBOT_PANIC_FUCK)
 			. += SPAN_WARNING("They are tipped over and visibly panicking!")
 		if(MEDBOT_PANIC_FUCK to INFINITY)
-			. += "<span class='warning'><b>They are freaking out from being tipped over!</b></span>"
+			. += SPAN_WARNING("<b>They are freaking out from being tipped over!</b>")
 
 /mob/living/simple_animal/bot/medbot/handle_automated_action()
 	if(!..())

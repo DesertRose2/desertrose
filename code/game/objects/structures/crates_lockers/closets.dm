@@ -105,14 +105,14 @@
 /obj/structure/closet/examine(mob/user)
 	. = ..()
 	if(welded)
-		. += "<span class='notice'>It's <b>welded</b> shut.</span>"
+		. += SPAN_NOTICE("It's <b>welded</b> shut.")
 	if(anchored)
-		. += "<span class='notice'>It is <b>bolted</b> to the ground.</span>"
+		. += SPAN_NOTICE("It is <b>bolted</b> to the ground.")
 	if(opened)
-		. += "<span class='notice'>The parts are <b>welded</b> together.</span>"
+		. += SPAN_NOTICE("The parts are <b>welded</b> together.")
 	else if(secure && !opened)
 	else if(broken)
-		. += "<span class='notice'>The lock is <b>screwed</b> in.</span>"
+		. += SPAN_NOTICE("The lock is <b>screwed</b> in.")
 	else if(secure)
 		. += SPAN_NOTICE("Alt-click to [locked ? "unlock" : "lock"].")
 	if(isliving(user))
@@ -291,7 +291,7 @@
 		to_chat(user, SPAN_NOTICE("This locker already has a lock!"))
 		return
 	if(broken)
-		to_chat(user, "<span class='notice'><b>Unscrew</b> the broken lock first!</span>")
+		to_chat(user, SPAN_NOTICE("<b>Unscrew</b> the broken lock first!"))
 		return
 	if(!istype(E))
 		return

@@ -152,7 +152,7 @@
 	D.setDir(get_dir(D, A))
 
 	D.Stun(80)
-	A.visible_message("<span class = 'danger'><B>[A] starts spinning around with [D]!</B></span>")
+	A.visible_message(SPAN_DANGER("<B>[A] starts spinning around with [D]!</B>"))
 	A.emote("scream")
 
 	for (var/i = 0, i < 20, i++)
@@ -203,7 +203,7 @@
 
 		D.forceMove(A.loc) // Maybe this will help with the wallthrowing bug.
 
-		A.visible_message("<span class = 'danger'><B>[A] throws [D]!</B></span>")
+		A.visible_message(SPAN_DANGER("<B>[A] throws [D]!</B>"))
 		playsound(A.loc, "swing_hit", 50, 1)
 		var/turf/T = get_edge_target_turf(A, A.dir)
 		if (T && isturf(T))
@@ -238,7 +238,7 @@
 	A.setDir(get_dir(A, D))
 	D.setDir(get_dir(D, A))
 
-	A.visible_message("<span class = 'danger'><B>[A] lifts [D] up!</B></span>")
+	A.visible_message(SPAN_DANGER("<B>[A] lifts [D] up!</B>"))
 
 	FlipAnimation()
 
@@ -308,7 +308,7 @@
 			if (3)
 				fluff = "atomic [fluff]"
 
-		A.visible_message("<span class = 'danger'><B>[A] [fluff] [D]!</B></span>")
+		A.visible_message(SPAN_DANGER("<B>[A] [fluff] [D]!</B>"))
 		playsound(A.loc, "swing_hit", 50, 1)
 		if (!D.stat)
 			D.emote("scream")
@@ -352,7 +352,7 @@
 		A.forceMove(D.loc)
 		addtimer(CALLBACK(src, .proc/CheckStrikeTurf, A, T), 4)
 
-		A.visible_message("<span class = 'danger'><b>[A] headbutts [D]!</b></span>")
+		A.visible_message(SPAN_DANGER("<b>[A] headbutts [D]!</b>"))
 		D.apply_damage(damage + 15, BRUTE)
 		playsound(A.loc, "swing_hit", 50, 1)
 		D.Unconscious(20)
@@ -366,7 +366,7 @@
 	A.emote("flip")
 	A.setDir(turn(A.dir, 90))
 
-	A.visible_message("<span class = 'danger'><B>[A] roundhouse-kicks [D]!</B></span>")
+	A.visible_message(SPAN_DANGER("<B>[A] roundhouse-kicks [D]!</B>"))
 	playsound(A.loc, "swing_hit", 50, 1)
 	D.apply_damage(damage + 15, STAMINA)
 
@@ -399,7 +399,7 @@
 
 	if (surface && (ST && isturf(ST)))
 		A.forceMove(ST)
-		A.visible_message("<span class = 'danger'><B>[A] climbs onto [surface]!</b></span>")
+		A.visible_message(SPAN_DANGER("<B>[A] climbs onto [surface]!</b>"))
 		A.pixel_y = 10
 		falling = 1
 		sleep(10)
@@ -410,7 +410,7 @@
 		if ((falling == 0 && get_dist(A, D) > 1) || (falling == 1 && get_dist(A, D) > 2)) // We climbed onto stuff.
 			A.pixel_y = 0
 			if (falling == 1)
-				A.visible_message("<span class = 'danger'><B>...and dives head-first into the ground, ouch!</b></span>")
+				A.visible_message(SPAN_DANGER("<B>...and dives head-first into the ground, ouch!</b>"))
 				A.apply_damage(damage + 15, BRUTE)
 				A.DefaultCombatKnockdown(60)
 			to_chat(A, "[D] is too far away!")
@@ -435,7 +435,7 @@
 
 		A.forceMove(D.loc)
 
-		A.visible_message("<span class = 'danger'><B>[A] leg-drops [D]!</B></span>")
+		A.visible_message(SPAN_DANGER("<B>[A] leg-drops [D]!</B>"))
 		playsound(A.loc, "swing_hit", 50, 1)
 		A.emote("scream")
 

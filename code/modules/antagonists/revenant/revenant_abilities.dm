@@ -198,7 +198,7 @@
 	for(var/obj/machinery/light/L in T)
 		if(!L.on)
 			return
-		L.visible_message("<span class='warning'><b>\The [L] suddenly flares brightly and begins to spark!</span>")
+		L.visible_message(SPAN_WARNING("<b>\The [L] suddenly flares brightly and begins to spark!"))
 		var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 		s.set_up(4, 0, L)
 		s.start()

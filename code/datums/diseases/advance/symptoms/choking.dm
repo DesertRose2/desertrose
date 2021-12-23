@@ -54,7 +54,7 @@ Bonus
 			if(!suppress_warning)
 				to_chat(M, SPAN_WARNING("[pick("Your windpipe feels like a straw.", "Your breathing becomes tremendously difficult.")]"))
 			else
-				to_chat(M, "<span class='warning'>You feel very [pick("dizzy","woozy","faint")].</span>") //fake bloodloss messages
+				to_chat(M, SPAN_WARNING("You feel very [pick("dizzy","woozy","faint")].")) //fake bloodloss messages
 			Choke_stage_3_4(M, A)
 			M.emote("gasp")
 		else
@@ -121,7 +121,7 @@ Bonus
 	var/mob/living/M = A.affected_mob
 	switch(A.stage)
 		if(3, 4)
-			to_chat(M, "<span class='warning'><b>[pick("Your windpipe feels thin.", "Your lungs feel small.")]</span>")
+			to_chat(M, SPAN_WARNING("<b>[pick("Your windpipe feels thin.", "Your lungs feel small.")]"))
 			Asphyxiate_stage_3_4(M, A)
 			M.emote("gasp")
 		if(5)

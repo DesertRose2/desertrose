@@ -341,7 +341,7 @@
 					var/reagent_id = GLOB.name2reagent[translate_legacy_chem_id(reagent)]
 					if(!dispensable_reagents.Find(reagent_id))
 						visible_message(SPAN_WARNING("[src] buzzes."), "<span class='hear'>You hear a faint buzz.</span>")
-						to_chat(usr, "<span class ='danger'>[src] cannot find <b>[reagent]</b>!</span>")
+						to_chat(usr, SPAN_DANGER("[src] cannot find <b>[reagent]</b>!"))
 						playsound(src, 'sound/machines/buzz-two.ogg', 50, TRUE)
 						return
 				saved_recipes[name] = recording_recipe

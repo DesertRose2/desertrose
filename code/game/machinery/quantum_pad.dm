@@ -33,9 +33,9 @@
 	. = ..()
 	. += SPAN_NOTICE("It is [ linked_pad ? "currently" : "not"] linked to another pad.")
 	if(!panel_open)
-		. += "<span class='notice'>The panel is <i>screwed</i> in, obstructing the linking device.</span>"
+		. += SPAN_NOTICE("The panel is <i>screwed</i> in, obstructing the linking device.")
 	else
-		. += "<span class='notice'>The <i>linking</i> device is now able to be <i>scanned<i> with a multitool.</span>"
+		. += SPAN_NOTICE("The <i>linking</i> device is now able to be <i>scanned<i> with a multitool.")
 
 /obj/machinery/quantumpad/RefreshParts()
 	var/E = 0

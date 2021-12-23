@@ -38,13 +38,13 @@
 /obj/machinery/door/firedoor/examine(mob/user)
 	. = ..()
 	if(!density)
-		. += "<span class='notice'>It is open, but could be <b>pried</b> closed.</span>"
+		. += SPAN_NOTICE("It is open, but could be <b>pried</b> closed.")
 	else if(!welded)
-		. += "<span class='notice'>It is closed, but could be <i>pried</i> open. Deconstruction would require it to be <b>welded</b> shut.</span>"
+		. += SPAN_NOTICE("It is closed, but could be <i>pried</i> open. Deconstruction would require it to be <b>welded</b> shut.")
 	else if(boltslocked)
-		. += "<span class='notice'>It is <i>welded</i> shut. The floor bolts have been locked by <b>screws</b>.</span>"
+		. += SPAN_NOTICE("It is <i>welded</i> shut. The floor bolts have been locked by <b>screws</b>.")
 	else
-		. += "<span class='notice'>The bolt locks have been <i>unscrewed</i>, but the bolts themselves are still <b>wrenched</b> to the floor.</span>"
+		. += SPAN_NOTICE("The bolt locks have been <i>unscrewed</i>, but the bolts themselves are still <b>wrenched</b> to the floor.")
 
 /obj/machinery/door/firedoor/proc/CalculateAffectingAreas()
 	remove_from_areas()
@@ -408,15 +408,15 @@
 	. = ..()
 	switch(constructionStep)
 		if(CONSTRUCTION_PANEL_OPEN)
-			. += "<span class='notice'>It is <i>unbolted</i> from the floor. A small <b>loosely connected</b> metal plate is covering the wires.</span>"
+			. += SPAN_NOTICE("It is <i>unbolted</i> from the floor. A small <b>loosely connected</b> metal plate is covering the wires.")
 			if(!reinforced)
 				. += SPAN_NOTICE("It could be reinforced with plasteel.")
 		if(CONSTRUCTION_WIRES_EXPOSED)
-			. += "<span class='notice'>The maintenance plate has been <i>pried away</i>, and <b>wires</b> are trailing.</span>"
+			. += SPAN_NOTICE("The maintenance plate has been <i>pried away</i>, and <b>wires</b> are trailing.")
 		if(CONSTRUCTION_GUTTED)
-			. += "<span class='notice'>The maintenance panel is missing <i>wires</i> and the circuit board is <b>loosely connected</b>.</span>"
+			. += SPAN_NOTICE("The maintenance panel is missing <i>wires</i> and the circuit board is <b>loosely connected</b>.")
 		if(CONSTRUCTION_NOCIRCUIT)
-			. += "<span class='notice'>There are no <i>firelock electronics</i> in the frame. The frame could be <b>cut</b> apart.</span>"
+			. += SPAN_NOTICE("There are no <i>firelock electronics</i> in the frame. The frame could be <b>cut</b> apart.")
 
 /obj/structure/firelock_frame/update_icon_state()
 	icon_state = "frame[constructionStep]"

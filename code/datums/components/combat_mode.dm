@@ -81,7 +81,7 @@
 				if(source.a_intent != INTENT_HELP)
 					source.visible_message(SPAN_WARNING("[source] [source.resting ? "tenses up" : "drops into a combative stance"]."), self_message)
 				else
-					source.visible_message("<span class='notice'>[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")].</span>")
+					source.visible_message(SPAN_NOTICE("[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")]."))
 			else
 				source.visible_message(SPAN_WARNING("[source] drops into a combative stance!"), self_message)
 		else

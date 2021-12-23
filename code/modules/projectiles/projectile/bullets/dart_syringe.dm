@@ -72,7 +72,7 @@
 
 
 				target.visible_message(SPAN_NOTICE("\The [src] beeps!"))
-				to_chat("<span class='notice'><i>You feel a tiny prick as a smartdart embeds itself in you with a beep.</i></span>")
+				to_chat(SPAN_NOTICE("<i>You feel a tiny prick as a smartdart embeds itself in you with a beep.</i>"))
 				return BULLET_ACT_HIT
 			else
 				blocked = 100

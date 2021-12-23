@@ -188,7 +188,7 @@
 	phase = MAFIA_PHASE_DAY
 	if(!check_victory())
 		if(turn == 1)
-			send_message("<span class='notice'><b>The selected map is [current_map.name]!</b></br>[current_map.description]</span>")
+			send_message(SPAN_NOTICE("<b>The selected map is [current_map.name]!</b></br>[current_map.description]"))
 			send_message("<b>Day [turn] started! There is no voting on the first day. Say hello to everybody!</b>")
 			next_phase_timer = addtimer(CALLBACK(src,.proc/check_trial, FALSE),first_day_phase_period,TIMER_STOPPABLE) //no voting period = no votes = instant night
 		else

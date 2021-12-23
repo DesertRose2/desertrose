@@ -1098,7 +1098,7 @@
 					else
 						gun.projectiles_cache = gun.projectiles_cache + ammo_needed
 					playsound(get_turf(user),A.load_audio,50,1)
-					to_chat(user, "<span class='notice'>You add [ammo_needed] [A.round_term][ammo_needed > 1?"s":""] to the [gun.name]</span>")
+					to_chat(user, SPAN_NOTICE("You add [ammo_needed] [A.round_term][ammo_needed > 1?"s":""] to the [gun.name]"))
 					A.rounds = A.rounds - ammo_needed
 					A.update_name()
 					return TRUE
@@ -1109,7 +1109,7 @@
 					else
 						gun.projectiles_cache = gun.projectiles_cache + A.rounds
 					playsound(get_turf(user),A.load_audio,50,1)
-					to_chat(user, "<span class='notice'>You add [A.rounds] [A.round_term][A.rounds > 1?"s":""] to the [gun.name]</span>")
+					to_chat(user, SPAN_NOTICE("You add [A.rounds] [A.round_term][A.rounds > 1?"s":""] to the [gun.name]"))
 					A.rounds = 0
 					A.update_name()
 					return TRUE

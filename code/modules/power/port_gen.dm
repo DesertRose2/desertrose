@@ -119,7 +119,7 @@
 	if(anchored)
 		. += SPAN_NOTICE("It is anchored to the ground.")
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>The status display reads: Fuel efficiency increased by <b>[(consumption*100)-100]%</b>.</span>"
+		. += SPAN_NOTICE("The status display reads: Fuel efficiency increased by <b>[(consumption*100)-100]%</b>.")
 
 /obj/machinery/power/port_gen/pacman/HasFuel()
 	if(sheets >= 1 / (time_per_sheet / power_output) - sheet_left)

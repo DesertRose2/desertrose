@@ -17,14 +17,14 @@
 	. = ..()
 	switch(state)
 		if(GIRDER_REINF)
-			. += "<span class='notice'>The support struts are <b>screwed</b> in place.</span>"
+			. += SPAN_NOTICE("The support struts are <b>screwed</b> in place.")
 		if(GIRDER_REINF_STRUTS)
-			. += "<span class='notice'>The support struts are <i>unscrewed</i> and the inner <b>grille</b> is intact.</span>"
+			. += SPAN_NOTICE("The support struts are <i>unscrewed</i> and the inner <b>grille</b> is intact.")
 		if(GIRDER_NORMAL)
 			if(can_displace)
-				. += "<span class='notice'>The bolts are <b>wrenched</b> in place.</span>"
+				. += SPAN_NOTICE("The bolts are <b>wrenched</b> in place.")
 		if(GIRDER_DISPLACED)
-			. += "<span class='notice'>The bolts are <i>loosened</i>, but the <b>screws</b> are holding [src] together.</span>"
+			. += SPAN_NOTICE("The bolts are <i>loosened</i>, but the <b>screws</b> are holding [src] together.")
 		if(GIRDER_DISASSEMBLED)
 			. += SPAN_NOTICE("[src] is disassembled! You probably shouldn't be able to see this examine message.")
 

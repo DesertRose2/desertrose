@@ -456,7 +456,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 					tilt(user, crit=TRUE)
 
 /obj/machinery/vending/proc/freebie(mob/fatty, freebies)
-	visible_message("<span class='notice'>[src] yields [freebies > 1 ? "several free goodies" : "a free goody"]!</span>")
+	visible_message(SPAN_NOTICE("[src] yields [freebies > 1 ? "several free goodies" : "a free goody"]!"))
 
 	for(var/i in 1 to freebies)
 		playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)

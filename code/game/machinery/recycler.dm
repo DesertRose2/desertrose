@@ -45,7 +45,7 @@
 
 /obj/machinery/recycler/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Reclaiming <b>[amount_produced]%</b> of materials salvaged.</span>"
+	. += SPAN_NOTICE("Reclaiming <b>[amount_produced]%</b> of materials salvaged.")
 	. += {"The power light is [(stat & NOPOWER) ? "off" : "on"].
 	The safety-mode light is [safety_mode ? "on" : "off"].
 	The safety-sensors status light is [obj_flags & EMAGGED ? "off" : "on"]."}

@@ -23,7 +23,7 @@
 		msg = SPAN_NOTICE("[deactive_msg]")
 		remove_ranged_ability(msg)
 	else
-		msg = "<span class='notice'>[active_msg] <B>Left-click to activate spell on a target!</B></span>"
+		msg = SPAN_NOTICE("[active_msg] <B>Left-click to activate spell on a target!</B>")
 		add_ranged_ability(user, msg, TRUE)
 		on_activation(user)
 

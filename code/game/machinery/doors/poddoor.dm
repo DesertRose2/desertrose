@@ -85,11 +85,11 @@
 	. = ..()
 	if(panel_open)
 		if(deconstruction == BLASTDOOR_FINISHED)
-			. += "<span class='notice'>The maintenance panel is opened and the electronics could be <b>pried</b> out.</span>"
+			. += SPAN_NOTICE("The maintenance panel is opened and the electronics could be <b>pried</b> out.")
 		else if(deconstruction == BLASTDOOR_NEEDS_ELECTRONICS)
-			. += "<span class='notice'>The <i>electronics</i> are missing and there are some <b>wires</b> sticking out.</span>"
+			. += SPAN_NOTICE("The <i>electronics</i> are missing and there are some <b>wires</b> sticking out.")
 		else if(deconstruction == BLASTDOOR_NEEDS_WIRES)
-			. += "<span class='notice'>The <i>wires</i> have been removed and it's ready to be <b>sliced apart</b>.</span>"
+			. += SPAN_NOTICE("The <i>wires</i> have been removed and it's ready to be <b>sliced apart</b>.")
 
 /obj/machinery/door/poddoor/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock, idnum, override=FALSE)
 	id = "[idnum][id]"

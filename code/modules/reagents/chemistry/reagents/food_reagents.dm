@@ -357,7 +357,7 @@
 
 /datum/reagent/consumable/condensedcapsaicin/on_mob_life(mob/living/carbon/M)
 	if(prob(5))
-		M.visible_message("<span class='warning'>[M] [pick("dry heaves!","coughs!","splutters!")]</span>")
+		M.visible_message(SPAN_WARNING("[M] [pick("dry heaves!","coughs!","splutters!")]"))
 	..()
 
 /datum/reagent/consumable/sodiumchloride

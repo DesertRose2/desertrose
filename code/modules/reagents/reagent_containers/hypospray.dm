@@ -498,7 +498,7 @@
 
 /obj/item/hypospray/mkii/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'><b>Ctrl-Click</b> it to toggle its mode from spraying to injecting and vice versa.</span>"
+	. += SPAN_NOTICE("<b>Ctrl-Click</b> it to toggle its mode from spraying to injecting and vice versa.")
 
 #undef HYPO_SPRAY
 #undef HYPO_INJECT

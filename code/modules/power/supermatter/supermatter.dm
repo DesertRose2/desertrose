@@ -988,9 +988,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 /obj/machinery/power/supermatter_crystal/shard/examine(mob/user)
 	. = ..()
 	if(anchored)
-		. += "<span class='notice'>[src] is <b>anchored</b> to the floor.</span>"
+		. += SPAN_NOTICE("[src] is <b>anchored</b> to the floor.")
 	else
-		. += "<span class='notice'>[src] is <i>unanchored</i>, but can be <b>bolted</b> down.</span>"
+		. += SPAN_NOTICE("[src] is <i>unanchored</i>, but can be <b>bolted</b> down.")
 
 /obj/machinery/power/supermatter_crystal/shard/engine
 	name = "anchored supermatter shard"

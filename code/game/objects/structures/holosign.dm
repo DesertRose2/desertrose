@@ -143,7 +143,7 @@
 
 /obj/structure/holosign/barrier/medical/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The biometric scanners are <b>[force_allaccess ? "off" : "on"]</b>.</span>"
+	. += SPAN_NOTICE("The biometric scanners are <b>[force_allaccess ? "off" : "on"]</b>.")
 
 /obj/structure/holosign/barrier/medical/CanPass(atom/movable/mover, turf/target)
 	icon_state = "holo_medical"

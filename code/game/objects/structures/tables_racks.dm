@@ -42,7 +42,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/table/proc/deconstruction_hints(mob/user)
-	return "<span class='notice'>The top is <b>screwed</b> on, but the main <b>bolts</b> are also visible.</span>"
+	return SPAN_NOTICE("The top is <b>screwed</b> on, but the main <b>bolts</b> are also visible.")
 
 /obj/structure/table/update_icon()
 	if(smooth)
@@ -535,8 +535,8 @@
 
 /obj/structure/table/reinforced/deconstruction_hints(mob/user)
 	if(deconstruction_ready)
-		return "<span class='notice'>The top cover has been <i>welded</i> loose and the main frame's <b>bolts</b> are exposed.</span>"
-	return "<span class='notice'>The top cover is firmly <b>welded</b> on.</span>"
+		return SPAN_NOTICE("The top cover has been <i>welded</i> loose and the main frame's <b>bolts</b> are exposed.")
+	return SPAN_NOTICE("The top cover is firmly <b>welded</b> on.")
 
 /obj/structure/table/reinforced/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/weldingtool))
@@ -664,7 +664,7 @@
 
 /obj/structure/rack/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
+	. += SPAN_NOTICE("It's held together by a couple of <b>bolts</b>.")
 
 /obj/structure/rack/CanPass(atom/movable/mover, turf/target)
 	if(src.density == 0) //Because broken racks -Agouri |TODO: SPRITE!|

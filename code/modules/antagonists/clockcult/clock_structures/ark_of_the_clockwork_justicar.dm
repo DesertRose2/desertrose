@@ -255,7 +255,7 @@
 			if(!isnewplayer(M))
 				var/turf/T = get_turf(M)
 				if(T && T.z == z)
-					to_chat(M, "<span class='warning'><b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]...</span>")
+					to_chat(M, SPAN_WARNING("<b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]..."))
 				else
 					to_chat(M, "<span class='boldwarning'>You hear otherworldly sounds from all around you...</span>")
 	if(!obj_integrity)

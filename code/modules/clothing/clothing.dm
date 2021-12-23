@@ -235,14 +235,14 @@
 /obj/item/clothing/examine(mob/user)
 	. = ..()
 	if(damaged_clothes == CLOTHING_SHREDDED)
-		. += "<span class='warning'><b>It is completely shredded and requires mending before it can be worn again!</b></span>"
+		. += SPAN_WARNING("<b>It is completely shredded and requires mending before it can be worn again!</b>")
 		return
 	for(var/zone in damage_by_parts)
 		var/pct_damage_part = damage_by_parts[zone] / limb_integrity * 100
 		var/zone_name = parse_zone(zone)
 		switch(pct_damage_part)
 			if(100 to INFINITY)
-				. += "<span class='warning'><b>The [zone_name] is useless and requires mending!</b></span>"
+				. += SPAN_WARNING("<b>The [zone_name] is useless and requires mending!</b>")
 			if(60 to 99)
 				. += SPAN_WARNING("The [zone_name] is heavily shredded!")
 			if(30 to 59)
@@ -290,7 +290,7 @@
 		durability_list += list("ACID" = armor.acid)
 
 	if(LAZYLEN(armor_list) || LAZYLEN(durability_list))
-		. += "<span class='notice'>It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.</span>"
+		. += SPAN_NOTICE("It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.")
 
 /obj/item/clothing/Topic(href, href_list)
 	. = ..()
@@ -443,7 +443,7 @@ BLIND     // can't see anything
 		update_clothes_damaged_state()
 		if(ismob(loc))
 			var/mob/M = loc
-			M.visible_message(SPAN_DANGER("[M]'s [src.name] falls off, completely shredded!"), "<span class='warning'><b>Your [src.name] falls off, completely shredded!</b></span>", vision_distance = COMBAT_MESSAGE_RANGE)
+			M.visible_message(SPAN_DANGER("[M]'s [src.name] falls off, completely shredded!"), SPAN_WARNING("<b>Your [src.name] falls off, completely shredded!</b>"), vision_distance = COMBAT_MESSAGE_RANGE)
 			M.dropItemToGround(src)
 	else
 		..()

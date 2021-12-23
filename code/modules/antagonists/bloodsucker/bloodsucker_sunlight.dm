@@ -30,7 +30,7 @@
 			if(cancel_me)
 				return
 		//sleep(TIME_BLOODSUCKER_NIGHT - TIME_BLOODSUCKER_DAY_WARN)
-		warn_daylight(1,"<span class = 'danger'>Solar Flares will bombard the station with dangerous UV in [TIME_BLOODSUCKER_DAY_WARN / 60] minutes. <b>Prepare to seek cover in a coffin or closet.</b></span>")  // time2text <-- use Help On
+		warn_daylight(1,SPAN_DANGER("Solar Flares will bombard the station with dangerous UV in [TIME_BLOODSUCKER_DAY_WARN / 60] minutes. <b>Prepare to seek cover in a coffin or closet.</b>"))  // time2text <-- use Help On
 		give_home_power() // Give VANISHING ACT power to all vamps with a lair!
 
 		// Part 2: Night Ending

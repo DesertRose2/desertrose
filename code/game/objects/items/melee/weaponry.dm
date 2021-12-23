@@ -670,7 +670,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		return
 
 	to_chat(owner, SPAN_WARNING("[sucker] looks down at your [src.name] before trying to avert [sucker.p_their()] eyes, but it's too late!"))
-	to_chat(sucker, "<span class='danger'><b>[owner] sees the fear in your eyes as you try to look away from [owner.p_their()] [src.name]!</b></span>")
+	to_chat(sucker, SPAN_DANGER("<b>[owner] sees the fear in your eyes as you try to look away from [owner.p_their()] [src.name]!</b>"))
 
 	playsound(get_turf(owner), 'sound/effects/hit_punch.ogg', 50, TRUE, -1)
 	owner.do_attack_animation(sucker)

@@ -671,7 +671,7 @@
 	M.adjust_bodytemperature(heating)
 	M.adjustBruteLoss(-1*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(prob(50))
-		M.visible_message("<span class='warning'>[M] [pick("dry heaves!","coughs!","splutters!")]</span>")
+		M.visible_message(SPAN_WARNING("[M] [pick("dry heaves!","coughs!","splutters!")]"))
 	..()
 
 /datum/reagent/consumable/ethanol/firecracker

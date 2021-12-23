@@ -48,7 +48,7 @@
 		else
 			. += SPAN_NOTICE("In the event of a red alert, its access requirements will automatically lift.")
 	if(!poddoor)
-		. += "<span class='notice'>Its maintenance panel is <b>screwed</b> in place.</span>"
+		. += SPAN_NOTICE("Its maintenance panel is <b>screwed</b> in place.")
 
 /obj/machinery/door/check_access_list(list/access_list)
 	if(red_alert_access && GLOB.security_level >= SEC_LEVEL_RED)

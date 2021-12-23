@@ -58,7 +58,7 @@
 		. += "<b>[get_remaining_mod_capacity()]%</b> mod capacity remaining."
 		for(var/A in get_modkits())
 			var/obj/item/borg/upgrade/modkit/M = A
-			. += "<span class='notice'>There is \a [M] installed, using <b>[M.cost]%</b> capacity.</span>"
+			. += SPAN_NOTICE("There is \a [M] installed, using <b>[M.cost]%</b> capacity.")
 
 /obj/item/gun/energy/kinetic_accelerator/crowbar_act(mob/living/user, obj/item/I)
 	. = TRUE
@@ -286,7 +286,7 @@
 
 /obj/item/borg/upgrade/modkit/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Occupies <b>[cost]%</b> of mod capacity.</span>"
+	. += SPAN_NOTICE("Occupies <b>[cost]%</b> of mod capacity.")
 
 /obj/item/borg/upgrade/modkit/attackby(obj/item/A, mob/user)
 	if(istype(A, /obj/item/gun/energy/kinetic_accelerator))
@@ -330,7 +330,7 @@
 		else
 			to_chat(user, SPAN_NOTICE("The modkit you're trying to install would conflict with an already installed modkit. Use a crowbar to remove existing modkits."))
 	else
-		to_chat(user, "<span class='notice'>You don't have room(<b>[KA.get_remaining_mod_capacity()]%</b> remaining, [cost]% needed) to install this modkit. Use a crowbar to remove existing modkits.</span>")
+		to_chat(user, SPAN_NOTICE("You don't have room(<b>[KA.get_remaining_mod_capacity()]%</b> remaining, [cost]% needed) to install this modkit. Use a crowbar to remove existing modkits."))
 		. = FALSE
 
 /obj/item/borg/upgrade/modkit/proc/uninstall(obj/item/gun/energy/kinetic_accelerator/KA, forcemove = TRUE)

@@ -443,7 +443,7 @@
 				. += SPAN_WARNING("It is glowing brightly with high levels of electrical activity.")
 
 			if(10)
-				. += "<span class='warning'><B>It is radiating with massive levels of electrical activity!</B></span>"
+				. += SPAN_WARNING("<B>It is radiating with massive levels of electrical activity!</B>")
 
 	. += "*---------*</span>"
 

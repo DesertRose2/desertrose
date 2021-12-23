@@ -302,7 +302,7 @@
 /datum/component/nanites/proc/nanite_scan(datum/source, mob/user, full_scan)
 	if(!full_scan)
 		if(!stealth)
-			to_chat(user, "<span class='notice'><b>Nanites Detected</b></span>")
+			to_chat(user, SPAN_NOTICE("<b>Nanites Detected</b>"))
 			to_chat(user, SPAN_NOTICE("Saturation: [nanite_volume]/[max_nanites]"))
 			return TRUE
 	else

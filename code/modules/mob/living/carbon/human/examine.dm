@@ -64,7 +64,7 @@
 	else if(length(blood_DNA))
 		var/hand_number = get_num_arms(FALSE)
 		if(hand_number)
-			. += "<span class='warning'>[t_He] [t_has] [hand_number > 1 ? "" : "a"] blood-stained hand[hand_number > 1 ? "s" : ""]!</span>"
+			. += SPAN_WARNING("[t_He] [t_has] [hand_number > 1 ? "" : "a"] blood-stained hand[hand_number > 1 ? "s" : ""]!")
 
 	//handcuffed?
 	if(handcuffed)
@@ -93,7 +93,7 @@
 		if(glasses)
 			. += "[t_He] [t_has] [glasses.get_examine_string(user)] covering [t_his] eyes."
 		else if((left_eye_color == BLOODCULT_EYE || right_eye_color == BLOODCULT_EYE) && iscultist(src) && HAS_TRAIT(src, TRAIT_CULT_EYES))
-			. += "<span class='warning'><B>[t_His] eyes are glowing an unnatural red!</B></span>"
+			. += SPAN_WARNING("<B>[t_His] eyes are glowing an unnatural red!</B>")
 		else if(HAS_TRAIT(src, TRAIT_HIJACKER))
 			var/obj/item/implant/hijack/H = user.getImplant(/obj/item/implant/hijack)
 			if (H && !H.stealthmode && H.toggled)
@@ -122,7 +122,7 @@
 	//Jitters
 	switch(jitteriness)
 		if(300 to INFINITY)
-			. += "<span class='warning'><B>[t_He] [t_is] convulsing violently!</B></span>"
+			. += SPAN_WARNING("<B>[t_He] [t_is] convulsing violently!</B>")
 		if(200 to 300)
 			. += SPAN_WARNING("[t_He] [t_is] extremely jittery.")
 		if(100 to 200)

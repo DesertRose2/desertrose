@@ -179,7 +179,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 			Vc.Remove()
 		nVc.Insert(M)
 		qdel(Vc)
-		to_chat(M, "<span class='notice'><i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i></span>")
+		to_chat(M, SPAN_NOTICE("<i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i>"))
 	else
 		log_reagent("FERMICHEM: MKUltra: [creatorName], [creatorID], is enthralling [M.name], [M.ckey]")
 		M.apply_status_effect(/datum/status_effect/chem/enthrall)

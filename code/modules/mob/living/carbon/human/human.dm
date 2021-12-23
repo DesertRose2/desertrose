@@ -979,7 +979,7 @@
 	if(can_be_firemanned(target) && !incapacitated(FALSE, TRUE))
 		visible_message(SPAN_NOTICE("[src] starts [skills_space] lifting [target] onto their back.."),
 		//Joe Medic starts quickly/expertly lifting Grey Tider onto their back..
-		"<span class='notice'>[carrydelay < 35 ? "Using your gloves' nanochips, you" : "You"] [skills_space] start to lift [target] onto your back[carrydelay == 40 ? ", while assisted by the nanochips in your gloves.." : "..."]</span>")
+		SPAN_NOTICE("[carrydelay < 35 ? "Using your gloves' nanochips, you" : "You"] [skills_space] start to lift [target] onto your back[carrydelay == 40 ? ", while assisted by the nanochips in your gloves.." : "..."]"))
 		//(Using your gloves' nanochips, you/You) ( /quickly/expertly) start to lift Grey Tider onto your back(, while assisted by the nanochips in your gloves../...)
 		if(do_after(src, carrydelay, TRUE, target))
 			//Second check to make sure they're still valid to be carried

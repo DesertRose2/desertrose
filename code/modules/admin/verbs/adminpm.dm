@@ -222,14 +222,14 @@
 	if(external)
 		log_admin_private("PM: [key_name(src)]->External: [rawmsg]")
 		for(var/client/X in GLOB.admins)
-			to_chat(X, "<span class='notice'><B>PM: [key_name(src, X, 0)]-&gt;External:</B> [keywordparsedmsg]</span>", confidential = TRUE)
+			to_chat(X, SPAN_NOTICE("<B>PM: [key_name(src, X, 0)]-&gt;External:</B> [keywordparsedmsg]"), confidential = TRUE)
 	else
 		window_flash(recipient, ignorepref = TRUE)
 		log_admin_private("PM: [key_name(src)]->[key_name(recipient)]: [rawmsg]")
 		//we don't use message_admins here because the sender/receiver might get it too
 		for(var/client/X in GLOB.admins)
 			if(X.key!=key && X.key!=recipient.key)	//check client/X is an admin and isn't the sender or recipient
-				to_chat(X, "<span class='notice'><B>PM: [key_name(src, X, 0)]-&gt;[key_name(recipient, X, 0)]:</B> [keywordparsedmsg]</span>" , confidential = TRUE)
+				to_chat(X, SPAN_NOTICE("<B>PM: [key_name(src, X, 0)]-&gt;[key_name(recipient, X, 0)]:</B> [keywordparsedmsg]") , confidential = TRUE)
 
 /client/proc/popup_admin_pm(client/recipient, msg)
 	var/sender = src

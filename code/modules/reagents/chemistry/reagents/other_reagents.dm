@@ -645,7 +645,7 @@
 	..()
 	if (!istype(H))
 		return
-	to_chat(H, "<span class='warning'><b>You grit your teeth in pain as your body rapidly mutates!</b></span>")
+	to_chat(H, SPAN_WARNING("<b>You grit your teeth in pain as your body rapidly mutates!</b>"))
 	H.visible_message("<b>[H]</b> suddenly transforms!")
 	randomize_human(H)
 

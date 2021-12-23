@@ -220,6 +220,6 @@
 	if(scanning)
 		to_chat(user, SPAN_NOTICE("Cannot display logs, the scanner is in use."))
 		return
-	to_chat(user, "<span class='notice'><B>Scanner Report</B></span>")
+	to_chat(user, SPAN_NOTICE("<B>Scanner Report</B>"))
 	for(var/iterLog in log)
 		to_chat(user, iterLog)

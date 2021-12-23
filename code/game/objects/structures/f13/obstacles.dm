@@ -70,7 +70,7 @@
 
 /obj/structure/fence/fencecorner/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/weapon/wirecutters))
-		user << "<span class='warning'>Even if I cut through here, I'll get hurt if I try to get through.<br>Let's find some better options.</span>"
+		user << SPAN_WARNING("Even if I cut through here, I'll get hurt if I try to get through.<br>Let's find some better options.")
 
 /obj/structure/fence/fenceintersectmiddle
 	name = "metal fence"
@@ -82,7 +82,7 @@
 
 /obj/structure/fence/fenceintersectmiddle/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/weapon/wirecutters))
-		user << "<span class='warning'>It's not the best place to cut the fence.<br>I got to find better options.</span>"
+		user << SPAN_WARNING("It's not the best place to cut the fence.<br>I got to find better options.")
 
 /obj/structure/fence/fenceintersectbottom
 	name = "metal fence"
@@ -94,7 +94,7 @@
 
 /obj/structure/fence/fenceintersectbottom/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/weapon/wirecutters))
-		user << "<span class='warning'>The fence here is too strong - it wouldn't cut!<br>Maybe there's a better spot to try again.</span>"
+		user << SPAN_WARNING("The fence here is too strong - it wouldn't cut!<br>Maybe there's a better spot to try again.")
 
 /obj/structure/fence/fencecornerintersect
 	name = "metal fence"
@@ -106,7 +106,7 @@
 
 /obj/structure/fence/fencecornerintersect/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/weapon/wirecutters))
-		user << "<span class='warning'><br>The fence here is too strong - it wouldn't cut!</br>Let's find some better options now.</span>"
+		user << SPAN_WARNING("<br>The fence here is too strong - it wouldn't cut!</br>Let's find some better options now.")
 
 /obj/structure/fence/fencedoor
 	name = "metal fence door"

@@ -152,7 +152,7 @@
 	free butter to the station!</b>")
 	var/new_name = stripped_input(src, "Enter your name, or press \"Cancel\" to stick with Terrygold.", "Name Change")
 	if(new_name)
-		to_chat(src, "<span class='notice'>Your name is now <b>\"new_name\"</b>!</span>")
+		to_chat(src, SPAN_NOTICE("Your name is now <b>\"new_name\"</b>!"))
 		name = new_name
 
 /mob/living/simple_animal/hostile/bear/butter/AttackingTarget() //Makes some attacks by the butter bear slip those who dare cross its path.
