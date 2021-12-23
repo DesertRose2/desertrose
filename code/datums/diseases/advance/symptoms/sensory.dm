@@ -89,13 +89,13 @@
 
 			if(HAS_TRAIT_FROM(M, TRAIT_BLIND, EYE_DAMAGE))
 				if(prob(20))
-					to_chat(M, "<span class='notice'>Your vision slowly returns...</span>")
+					to_chat(M, SPAN_NOTICE("Your vision slowly returns..."))
 					M.cure_blind(EYE_DAMAGE)
 					M.cure_nearsighted(EYE_DAMAGE)
 					M.blur_eyes(35)
 
 				else if(HAS_TRAIT_FROM(M, TRAIT_NEARSIGHT, EYE_DAMAGE))
-					to_chat(M, "<span class='notice'>You can finally focus your eyes on distant objects.</span>")
+					to_chat(M, SPAN_NOTICE("You can finally focus your eyes on distant objects."))
 					M.cure_nearsighted(EYE_DAMAGE)
 					M.blur_eyes(10)
 

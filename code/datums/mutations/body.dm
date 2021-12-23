@@ -11,7 +11,7 @@
 
 /datum/mutation/human/epilepsy/on_life()
 	if(prob(1 * GET_MUTATION_SYNCHRONIZER(src)) && owner.stat == CONSCIOUS)
-		owner.visible_message("<span class='danger'>[owner] starts having a seizure!</span>", "<span class='userdanger'>You have a seizure!</span>")
+		owner.visible_message(SPAN_DANGER("[owner] starts having a seizure!"), "<span class='userdanger'>You have a seizure!</span>")
 		owner.Unconscious(200 * GET_MUTATION_POWER(src))
 		owner.Jitter(1000 * GET_MUTATION_POWER(src))
 		SEND_SIGNAL(owner, COMSIG_ADD_MOOD_EVENT, "epilepsy", /datum/mood_event/epilepsy)
@@ -84,14 +84,14 @@
 	ADD_TRAIT(owner, TRAIT_DWARF, GENETIC_MUTATION)
 	owner.AddElement(/datum/element/dwarfism, COMSIG_HUMAN_MUTATION_LOSS, src)
 	passtable_on(owner, GENETIC_MUTATION)
-	owner.visible_message("<span class='danger'>[owner] suddenly shrinks!</span>", "<span class='notice'>Everything around you seems to grow..</span>")
+	owner.visible_message(SPAN_DANGER("[owner] suddenly shrinks!"), SPAN_NOTICE("Everything around you seems to grow.."))
 
 /datum/mutation/human/dwarfism/on_losing(mob/living/carbon/human/owner)
 	if(..())
 		return
 	REMOVE_TRAIT(owner, TRAIT_DWARF, GENETIC_MUTATION)
 	passtable_off(owner, GENETIC_MUTATION)
-	owner.visible_message("<span class='danger'>[owner] suddenly grows!</span>", "<span class='notice'>Everything around you seems to shrink..</span>")
+	owner.visible_message(SPAN_DANGER("[owner] suddenly grows!"), SPAN_NOTICE("Everything around you seems to shrink.."))
 
 
 //Clumsiness has a very large amount of small drawbacks depending on item.
@@ -275,7 +275,7 @@
 		owner.emote("scream")
 		owner.jitteriness = min(max(0, owner.jitteriness + 5), 30)
 		if(prob(25))
-			to_chat(owner,"<span class='warning'>You feel someone creeping in on you...</span>")
+			to_chat(owner,SPAN_WARNING("You feel someone creeping in on you..."))
 			owner.hallucination += 20
 
 
@@ -297,17 +297,17 @@
 		return
 	if(prob(warpchance))
 		var/warpmessage = pick(
-		"<span class='warning'>With a sickening 720-degree twist of [owner.p_their()] back, [owner] vanishes into thin air.</span>",
-		"<span class='warning'>[owner] does some sort of strange backflip into another dimension. It looks pretty painful.</span>",
-		"<span class='warning'>[owner] does a jump to the left, a step to the right, and warps out of reality.</span>",
-		"<span class='warning'>[owner]'s torso starts folding inside out until it vanishes from reality, taking [owner] with it.</span>",
-		"<span class='warning'>One moment, you see [owner]. The next, [owner] is gone.</span>")
+		SPAN_WARNING("With a sickening 720-degree twist of [owner.p_their()] back, [owner] vanishes into thin air."),
+		SPAN_WARNING("[owner] does some sort of strange backflip into another dimension. It looks pretty painful."),
+		SPAN_WARNING("[owner] does a jump to the left, a step to the right, and warps out of reality."),
+		SPAN_WARNING("[owner]'s torso starts folding inside out until it vanishes from reality, taking [owner] with it."),
+		SPAN_WARNING("One moment, you see [owner]. The next, [owner] is gone."))
 		owner.visible_message(warpmessage, "<span class='userdanger'>You feel a wave of nausea as you fall through reality!</span>")
 		var/warpdistance = rand(10,15) * GET_MUTATION_POWER(src)
 		do_teleport(owner, get_turf(owner), warpdistance, channel = TELEPORT_CHANNEL_FREE)
 		owner.adjust_disgust(GET_MUTATION_SYNCHRONIZER(src) * (warpchance * warpdistance))
 		warpchance = 0
-		owner.visible_message("<span class='danger'>[owner] appears out of nowhere!</span>")
+		owner.visible_message(SPAN_DANGER("[owner] appears out of nowhere!"))
 	else
 		warpchance += 0.25 * GET_MUTATION_ENERGY(src)
 
@@ -323,11 +323,11 @@
 /datum/mutation/human/acidflesh/on_life()
 	if(prob(25))
 		if(world.time > msgcooldown)
-			to_chat(owner, "<span class='danger'>Your acid flesh bubbles...</span>")
+			to_chat(owner, SPAN_DANGER("Your acid flesh bubbles..."))
 			msgcooldown = world.time + 200
 		if(prob(15))
 			owner.acid_act(rand(30,50), 10)
-			owner.visible_message("<span class='warning'>[owner]'s skin bubbles and pops.</span>", "<span class='userdanger'>Your bubbling flesh pops! It burns!</span>")
+			owner.visible_message(SPAN_WARNING("[owner]'s skin bubbles and pops."), "<span class='userdanger'>Your bubbling flesh pops! It burns!</span>")
 			playsound(owner,'sound/weapons/sear.ogg', 50, TRUE)
 
 /datum/mutation/human/gigantism
@@ -343,7 +343,7 @@
 	ADD_TRAIT(owner, TRAIT_GIANT, GENETIC_MUTATION)
 	owner.resize = 1.25
 	owner.update_transform()
-	owner.visible_message("<span class='danger'>[owner] suddenly grows!</span>", "<span class='notice'>Everything around you seems to shrink..</span>")
+	owner.visible_message(SPAN_DANGER("[owner] suddenly grows!"), SPAN_NOTICE("Everything around you seems to shrink.."))
 
 /datum/mutation/human/gigantism/on_losing(mob/living/carbon/human/owner)
 	if(..())
@@ -351,7 +351,7 @@
 	REMOVE_TRAIT(owner, TRAIT_GIANT, GENETIC_MUTATION)
 	owner.resize = 0.8
 	owner.update_transform()
-	owner.visible_message("<span class='danger'>[owner] suddenly shrinks!</span>", "<span class='notice'>Everything around you seems to grow..</span>")
+	owner.visible_message(SPAN_DANGER("[owner] suddenly shrinks!"), SPAN_NOTICE("Everything around you seems to grow.."))
 
 /datum/mutation/human/spastic
 	name = "Spastic"

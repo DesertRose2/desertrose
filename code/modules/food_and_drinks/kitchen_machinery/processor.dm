@@ -50,7 +50,7 @@
 
 /obj/machinery/processor/attackby(obj/item/O, mob/user, params)
 	if(processing)
-		to_chat(user, "<span class='warning'>[src] is in the process of processing!</span>")
+		to_chat(user, SPAN_WARNING("[src] is in the process of processing!"))
 		return TRUE
 	if(default_deconstruction_screwdriver(user, "processor", "processor1", O))
 		return
@@ -74,7 +74,7 @@
 					loaded++
 
 		if(loaded)
-			to_chat(user, "<span class='notice'>You insert [loaded] items into [src].</span>")
+			to_chat(user, SPAN_NOTICE("You insert [loaded] items into [src]."))
 		return
 
 	var/datum/food_processor_process/P = select_recipe(O)
@@ -85,18 +85,18 @@
 		return 1
 	else
 		if(user.a_intent != INTENT_HARM)
-			to_chat(user, "<span class='warning'>That probably won't blend!</span>")
+			to_chat(user, SPAN_WARNING("That probably won't blend!"))
 			return 1
 		else
 			return ..()
 
 /obj/machinery/processor/interact(mob/user)
 	if(processing)
-		to_chat(user, "<span class='warning'>[src] is in the process of processing!</span>")
+		to_chat(user, SPAN_WARNING("[src] is in the process of processing!"))
 		return TRUE
 	if(user.a_intent == INTENT_GRAB && ismob(user.pulling) && select_recipe(user.pulling))
 		if(user.grab_state < GRAB_AGGRESSIVE)
-			to_chat(user, "<span class='warning'>You need a better grip to do that!</span>")
+			to_chat(user, SPAN_WARNING("You need a better grip to do that!"))
 			return
 		var/mob/living/pushed_mob = user.pulling
 		visible_message("<span class='warner'>[user] stuffs [pushed_mob] into [src]!</span>")
@@ -104,11 +104,11 @@
 		user.stop_pulling()
 		return
 	if(contents.len == 0)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return TRUE
 	processing = TRUE
 	user.visible_message("[user] turns on [src].", \
-		"<span class='notice'>You turn on [src].</span>", \
+		SPAN_NOTICE("You turn on [src]."), \
 		"<span class='italics'>You hear a food processor.</span>")
 	playsound(src.loc, 'sound/machines/blender.ogg', 50, 1)
 	use_power(500)
@@ -151,7 +151,7 @@
 
 /obj/machinery/processor/container_resist(mob/living/user)
 	user.forceMove(drop_location())
-	user.visible_message("<span class='notice'>[user] crawls free of the processor!</span>")
+	user.visible_message(SPAN_NOTICE("[user] crawls free of the processor!"))
 
 /obj/machinery/processor/slime
 	name = "slime processor"
@@ -202,7 +202,7 @@
 		var/C = S.cores
 		if(S.stat != DEAD)
 			S.forceMove(drop_location())
-			S.visible_message("<span class='notice'>[C] crawls free of the processor!</span>")
+			S.visible_message(SPAN_NOTICE("[C] crawls free of the processor!"))
 			return
 		for(var/i in 1 to (C+rating_amount-1))
 			var/atom/movable/item = new S.coretype(drop_location())

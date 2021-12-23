@@ -168,8 +168,8 @@
 /obj/item/twohanded/spear/examine(mob/user)
 	. = ..()
 	if(explosive)
-		. += "<span class='notice'>Alt-click to set your war cry.</span>"
-		. += "<span class='notice'>Right-click in combat mode to activate the attached explosive.</span>"
+		. += SPAN_NOTICE("Alt-click to set your war cry.")
+		. += SPAN_NOTICE("Right-click in combat mode to activate the attached explosive.")
 
 /obj/item/twohanded/spear/afterattack(atom/movable/AM, mob/user, proximity)
 	. = ..()
@@ -634,10 +634,10 @@ var/list/possible_colors = list("red")
 
 	if(!wielded) //sends empty message when venom is dry and defaults back to normal attack, and allows for injection attack if possible//
 		if(!reagents.total_volume)
-			to_chat(user, "<span class='warning'>[src]'s venom has been used up!</span>")
+			to_chat(user, SPAN_WARNING("[src]'s venom has been used up!"))
 		else
 			if(L.can_inject(user, 1))
-				to_chat(user, "<span class='warning'>Your light strike successfully injects venom into [L]'s veins.</span>")
+				to_chat(user, SPAN_WARNING("Your light strike successfully injects venom into [L]'s veins."))
 				. = 1
 
 				add_logs(user, L, "stabbed", src) //left this here, but it may or may not work properly
@@ -673,7 +673,7 @@ var/list/possible_colors = list("red")
 
 /obj/item/twohanded/chainsaw/doomslayer/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(attack_type & ATTACK_TYPE_PROJECTILE)
-		owner.visible_message("<span class='danger'>Ranged attacks just make [owner] angrier!</span>")
+		owner.visible_message(SPAN_DANGER("Ranged attacks just make [owner] angrier!"))
 		playsound(src, pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 75, 1)
 		return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return ..()

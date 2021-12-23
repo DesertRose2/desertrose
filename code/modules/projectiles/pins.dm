@@ -33,22 +33,22 @@
 			if(G.pin && (force_replace || G.pin.pin_removeable))
 				G.pin.forceMove(get_turf(G))
 				G.pin.gun_remove(user)
-				to_chat(user, "<span class ='notice'>You remove [G]'s old pin.</span>")
+				to_chat(user, SPAN_NOTICE("You remove [G]'s old pin."))
 
 			if(!G.pin)
 				if(!user.temporarilyRemoveItemFromInventory(src))
 					return
 				gun_insert(user, G)
-				to_chat(user, "<span class ='notice'>You insert [src] into [G].</span>")
+				to_chat(user, SPAN_NOTICE("You insert [src] into [G]."))
 			else
-				to_chat(user, "<span class ='notice'>This firearm already has a firing pin installed.</span>")
+				to_chat(user, SPAN_NOTICE("This firearm already has a firing pin installed."))
 
 /obj/item/firing_pin/emag_act(mob/user)
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
 	obj_flags |= EMAGGED
-	to_chat(user, "<span class='notice'>You override the authentication mechanism.</span>")
+	to_chat(user, SPAN_NOTICE("You override the authentication mechanism."))
 	return TRUE
 
 /obj/item/firing_pin/proc/gun_insert(mob/living/user, obj/item/gun/G)
@@ -172,7 +172,7 @@
 		var/mob/living/carbon/M = target
 		if(M.dna && M.dna.unique_enzymes)
 			unique_enzymes = M.dna.unique_enzymes
-			to_chat(user, "<span class='notice'>DNA-LOCK SET.</span>")
+			to_chat(user, SPAN_NOTICE("DNA-LOCK SET."))
 
 /obj/item/firing_pin/dna/pin_auth(mob/living/carbon/user)
 	if(user && user.dna && user.dna.unique_enzymes)
@@ -184,7 +184,7 @@
 	if(!unique_enzymes)
 		if(user && user.dna && user.dna.unique_enzymes)
 			unique_enzymes = user.dna.unique_enzymes
-			to_chat(user, "<span class='notice'>DNA-LOCK SET.</span>")
+			to_chat(user, SPAN_NOTICE("DNA-LOCK SET."))
 	else
 		..()
 
@@ -214,7 +214,7 @@
 		var/mob/living/carbon/human/M = user
 		if(istype(M.wear_suit, suit_requirement))
 			return TRUE
-	to_chat(user, "<span class='warning'>You need to be wearing [tagcolor] laser tag armor!</span>")
+	to_chat(user, SPAN_WARNING("You need to be wearing [tagcolor] laser tag armor!"))
 	return FALSE
 
 /obj/item/firing_pin/tag/red
@@ -324,6 +324,6 @@
 /obj/item/firing_pin/explorer/pin_auth(mob/living/user)
 	var/turf/station_check = get_turf(user)
 	if(!station_check||is_station_level(station_check.z))
-		to_chat(user, "<span class='warning'>You cannot use your weapon while on the station!</span>")
+		to_chat(user, SPAN_WARNING("You cannot use your weapon while on the station!"))
 		return FALSE
 	return TRUE

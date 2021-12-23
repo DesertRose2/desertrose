@@ -26,8 +26,8 @@
 	if(user in src.stomach_contents)
 		if(prob(40))
 			if(prob(25))
-				audible_message("<span class='warning'>You hear something rumbling inside [src]'s stomach...</span>", \
-							"<span class='warning'>You hear something rumbling.</span>", 4,\
+				audible_message(SPAN_WARNING("You hear something rumbling inside [src]'s stomach..."), \
+							SPAN_WARNING("You hear something rumbling."), 4,\
 							  "<span class='userdanger'>Something is rumbling inside your stomach!</span>")
 			var/obj/item/I = user.get_active_held_item()
 			if(I && I.force)
@@ -35,7 +35,7 @@
 				var/obj/item/bodypart/BP = get_bodypart(BODY_ZONE_CHEST)
 				if(BP.receive_damage(d, 0))
 					update_damage_overlays()
-				visible_message("<span class='danger'>[user] attacks [src]'s stomach wall with the [I.name]!</span>", \
+				visible_message(SPAN_DANGER("[user] attacks [src]'s stomach wall with the [I.name]!"), \
 									"<span class='userdanger'>[user] attacks your stomach wall with the [I.name]!</span>")
 				playsound(user.loc, 'sound/effects/attackblob.ogg', 50, 1)
 
@@ -50,7 +50,7 @@
 	. = ..()
 	if(!.)
 		var/obj/item/held_item = get_active_held_item()
-		to_chat(usr, "<span class='warning'>Your other hand is too busy holding [held_item].</span>")
+		to_chat(usr, SPAN_WARNING("Your other hand is too busy holding [held_item]."))
 		return
 	if(!held_index)
 		held_index = (active_hand_index % held_items.len)+1
@@ -163,7 +163,7 @@
 
 	//CIT CHANGES - makes it impossible to throw while in stamina softcrit
 	if(IS_STAMCRIT(src))
-		to_chat(src, "<span class='warning'>You're too exhausted.</span>")
+		to_chat(src, SPAN_WARNING("You're too exhausted."))
 		return
 
 	var/random_turn = a_intent == INTENT_HARM
@@ -189,7 +189,7 @@
 			if(pulling)
 				stop_pulling()
 			if(HAS_TRAIT(src, TRAIT_PACIFISM))
-				to_chat(src, "<span class='notice'>You gently let go of [throwable_mob].</span>")
+				to_chat(src, SPAN_NOTICE("You gently let go of [throwable_mob]."))
 				return
 
 			adjustStaminaLossBuffered(STAM_COST_THROW_MOB * ((throwable_mob.mob_size+1)**2))// throwing an entire person shall be very tiring
@@ -203,7 +203,7 @@
 		dropItemToGround(I)
 
 		if(HAS_TRAIT(src, TRAIT_PACIFISM) && I.throwforce)
-			to_chat(src, "<span class='notice'>You set [I] down gently on the ground.</span>")
+			to_chat(src, SPAN_NOTICE("You set [I] down gently on the ground."))
 			return
 
 		adjustStaminaLossBuffered(I.getweight(src, STAM_COST_THROW_MULT, SKILL_THROW_STAM_COST))
@@ -316,15 +316,15 @@
 			var/obj/item/restraints/O = src.get_item_by_slot(SLOT_HANDCUFFED)
 			buckle_cd = O.breakouttime
 		MarkResistTime()
-		visible_message("<span class='warning'>[src] attempts to unbuckle [p_them()]self!</span>", \
-					"<span class='notice'>You attempt to unbuckle yourself... (This will take around [round(buckle_cd/600,1)] minute\s, and you need to stay still.)</span>")
+		visible_message(SPAN_WARNING("[src] attempts to unbuckle [p_them()]self!"), \
+					SPAN_NOTICE("You attempt to unbuckle yourself... (This will take around [round(buckle_cd/600,1)] minute\s, and you need to stay still.)"))
 		if(do_after(src, buckle_cd, 0, target = src, required_mobility_flags = MOBILITY_RESIST))
 			if(!buckled)
 				return
 			buckled.user_unbuckle_mob(src, src)
 		else
 			if(src && buckled)
-				to_chat(src, "<span class='warning'>You fail to unbuckle yourself!</span>")
+				to_chat(src, SPAN_WARNING("You fail to unbuckle yourself!"))
 	else
 		buckled.user_unbuckle_mob(src,src)
 
@@ -332,13 +332,13 @@
 	fire_stacks -= 5
 	DefaultCombatKnockdown(60, TRUE, TRUE)
 	spin(32,2)
-	visible_message("<span class='danger'>[src] rolls on the floor, trying to put [p_them()]self out!</span>", \
-		"<span class='notice'>You stop, drop, and roll!</span>")
+	visible_message(SPAN_DANGER("[src] rolls on the floor, trying to put [p_them()]self out!"), \
+		SPAN_NOTICE("You stop, drop, and roll!"))
 	MarkResistTime(30)
 	sleep(30)
 	if(fire_stacks <= 0)
-		visible_message("<span class='danger'>[src] has successfully extinguished [p_them()]self!</span>", \
-			"<span class='notice'>You extinguish yourself.</span>")
+		visible_message(SPAN_DANGER("[src] has successfully extinguished [p_them()]self!"), \
+			SPAN_NOTICE("You extinguish yourself."))
 		ExtinguishMob()
 
 /mob/living/carbon/resist_restraints()
@@ -353,26 +353,26 @@
 
 /mob/living/carbon/proc/cuff_resist(obj/item/I, breakouttime = 600, cuff_break = 0)
 	if(I.item_flags & BEING_REMOVED)
-		to_chat(src, "<span class='warning'>You're already attempting to remove [I]!</span>")
+		to_chat(src, SPAN_WARNING("You're already attempting to remove [I]!"))
 		return
 	I.item_flags |= BEING_REMOVED
 	breakouttime = I.breakouttime
 	if(!cuff_break)
-		visible_message("<span class='warning'>[src] attempts to remove [I]!</span>")
-		to_chat(src, "<span class='notice'>You attempt to remove [I]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)</span>")
+		visible_message(SPAN_WARNING("[src] attempts to remove [I]!"))
+		to_chat(src, SPAN_NOTICE("You attempt to remove [I]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)"))
 		if(do_after(src, breakouttime, 0, target = src, required_mobility_flags = MOBILITY_RESIST))
 			clear_cuffs(I, cuff_break)
 		else
-			to_chat(src, "<span class='warning'>You fail to remove [I]!</span>")
+			to_chat(src, SPAN_WARNING("You fail to remove [I]!"))
 
 	else if(cuff_break == FAST_CUFFBREAK)
 		breakouttime = 50
-		visible_message("<span class='warning'>[src] is trying to break [I]!</span>")
-		to_chat(src, "<span class='notice'>You attempt to break [I]... (This will take around 5 seconds and you need to stand still.)</span>")
+		visible_message(SPAN_WARNING("[src] is trying to break [I]!"))
+		to_chat(src, SPAN_NOTICE("You attempt to break [I]... (This will take around 5 seconds and you need to stand still.)"))
 		if(do_after(src, breakouttime, 0, target = src))
 			clear_cuffs(I, cuff_break)
 		else
-			to_chat(src, "<span class='warning'>You fail to break [I]!</span>")
+			to_chat(src, SPAN_WARNING("You fail to break [I]!"))
 
 	else if(cuff_break == INSTANT_CUFFBREAK)
 		clear_cuffs(I, cuff_break)
@@ -504,7 +504,7 @@
 
 	if(nutrition < 100 && !blood)
 		if(message)
-			visible_message("<span class='warning'>[src] dry heaves!</span>", \
+			visible_message(SPAN_WARNING("[src] dry heaves!"), \
 							"<span class='userdanger'>You try to throw up, but there's nothing in your stomach!</span>")
 		if(stun)
 			DefaultCombatKnockdown(200)
@@ -512,13 +512,13 @@
 
 	if(is_mouth_covered()) //make this add a blood/vomit overlay later it'll be hilarious
 		if(message)
-			visible_message("<span class='danger'>[src] throws up all over [p_them()]self!</span>", \
+			visible_message(SPAN_DANGER("[src] throws up all over [p_them()]self!"), \
 							"<span class='userdanger'>You throw up all over yourself!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "vomit", /datum/mood_event/vomitself)
 		distance = 0
 	else
 		if(message)
-			visible_message("<span class='danger'>[src] throws up!</span>", "<span class='userdanger'>You throw up!</span>")
+			visible_message(SPAN_DANGER("[src] throws up!"), "<span class='userdanger'>You throw up!</span>")
 			if(!isflyperson(src))
 				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "vomit", /datum/mood_event/vomit)
 	if(stun)
@@ -599,7 +599,7 @@
 		var/total_health = (maxHealth - stam)
 		if(total_health <= crit_threshold && !stat)
 			if(CHECK_MOBILITY(src, MOBILITY_STAND))
-				to_chat(src, "<span class='notice'>You're too exhausted to keep going...</span>")
+				to_chat(src, SPAN_NOTICE("You're too exhausted to keep going..."))
 			KnockToFloor(TRUE)
 			update_health_hud()
 
@@ -955,7 +955,7 @@
 			O.Remove()
 			O.forceMove(drop_location())
 	if(organs_amt)
-		to_chat(user, "<span class='notice'>You retrieve some of [src]\'s internal organs!</span>")
+		to_chat(user, SPAN_NOTICE("You retrieve some of [src]\'s internal organs!"))
 
 /mob/living/carbon/ExtinguishMob()
 	for(var/X in get_equipped_items())
@@ -975,12 +975,12 @@
 
 
 /mob/living/carbon/proc/devour_mob(mob/living/carbon/C, devour_time = 130)
-	C.visible_message("<span class='danger'>[src] is attempting to devour [C]!</span>", \
+	C.visible_message(SPAN_DANGER("[src] is attempting to devour [C]!"), \
 					"<span class='userdanger'>[src] is attempting to devour you!</span>")
 	if(!do_mob(src, C, devour_time))
 		return
 	if(pulling && pulling == C && grab_state >= GRAB_AGGRESSIVE && a_intent == INTENT_GRAB)
-		C.visible_message("<span class='danger'>[src] devours [C]!</span>", \
+		C.visible_message(SPAN_DANGER("[src] devours [C]!"), \
 						"<span class='userdanger'>[src] devours you!</span>")
 		C.forceMove(src)
 		stomach_contents.Add(C)
@@ -1110,7 +1110,7 @@
 			var/datum/martial_art/MA = new chosenart
 			MA.teach(src)
 			log_admin("[key_name(usr)] has taught [MA] to [key_name(src)].")
-			message_admins("<span class='notice'>[key_name_admin(usr)] has taught [MA] to [key_name_admin(src)].</span>")
+			message_admins(SPAN_NOTICE("[key_name_admin(usr)] has taught [MA] to [key_name_admin(src)]."))
 	if(href_list[VV_HK_GIVE_TRAUMA])
 		if(!check_rights(NONE))
 			return
@@ -1126,13 +1126,13 @@
 		var/datum/brain_trauma/BT = gain_trauma(result)
 		if(BT)
 			log_admin("[key_name(usr)] has traumatized [key_name(src)] with [BT.name]")
-			message_admins("<span class='notice'>[key_name_admin(usr)] has traumatized [key_name_admin(src)] with [BT.name].</span>")
+			message_admins(SPAN_NOTICE("[key_name_admin(usr)] has traumatized [key_name_admin(src)] with [BT.name]."))
 	if(href_list[VV_HK_CURE_TRAUMA])
 		if(!check_rights(NONE))
 			return
 		cure_all_traumas(TRAUMA_RESILIENCE_ABSOLUTE)
 		log_admin("[key_name(usr)] has cured all traumas from [key_name(src)].")
-		message_admins("<span class='notice'>[key_name_admin(usr)] has cured all traumas from [key_name_admin(src)].</span>")
+		message_admins(SPAN_NOTICE("[key_name_admin(usr)] has cured all traumas from [key_name_admin(src)]."))
 	if(href_list[VV_HK_HALLUCINATION])
 		if(!check_rights(NONE))
 			return

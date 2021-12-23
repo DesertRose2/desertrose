@@ -538,7 +538,7 @@
 		return
 	//Box closing from here on out.
 	if(!isturf(owner.loc)) //Don't let the player use this to escape mechs/welded closets.
-		to_chat(owner, "<span class = 'notice'>You need more space to activate this implant.</span>")
+		to_chat(owner, SPAN_NOTICE("You need more space to activate this implant."))
 		return
 	if(cooldown < world.time - 100)
 		var/box = new boxtype(owner.drop_location())
@@ -598,7 +598,7 @@
 	if (!istype(H))
 		return
 	if (H.stealthcooldown > world.time)
-		to_chat(owner,"<span class='warning'>The hijack implant's stealth mode toggle is still rebooting!</span>")
+		to_chat(owner,SPAN_WARNING("The hijack implant's stealth mode toggle is still rebooting!"))
 		return
 	H.stealthmode = !H.stealthmode
 	for (var/area/area in H.imp_in.siliconaccessareas)

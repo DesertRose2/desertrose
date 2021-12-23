@@ -135,9 +135,9 @@
 					I.reagents.add_reagent(/datum/reagent/consumable/sugar, 10 - I.reagents.total_volume)
 				updateDialog()
 			else
-				to_chat(user, "<span class='warning'>There is not enough ice cream left!</span>")
+				to_chat(user, SPAN_WARNING("There is not enough ice cream left!"))
 		else
-			to_chat(user, "<span class='notice'>[O] already has ice cream in it.</span>")
+			to_chat(user, SPAN_NOTICE("[O] already has ice cream in it."))
 		return 1
 	if(istype(O, /obj/item/reagent_containers) && !(O.item_flags & ABSTRACT) && O.is_open_container())
 		. = TRUE //no afterattack
@@ -145,7 +145,7 @@
 		if(!user.transferItemToLoc(B, src))
 			return
 		replace_beaker(user, B)
-		to_chat(user, "<span class='notice'>You add [B] to [src].</span>")
+		to_chat(user, SPAN_NOTICE("You add [B] to [src]."))
 		updateUsrDialog()
 		update_icon()
 		return
@@ -181,7 +181,7 @@
 		else
 			visible_message("<span class='info'>[user] whips up some [flavour] icecream.</span>")
 	else
-		to_chat(user, "<span class='warning'>You don't have the ingredients to make this!</span>")
+		to_chat(user, SPAN_WARNING("You don't have the ingredients to make this!"))
 
 /obj/machinery/icecream_vat/Topic(href, href_list)
 	if(..())
@@ -189,7 +189,7 @@
 	if(href_list["select"])
 		dispense_flavour = text2num(href_list["select"])
 		flavour_name = get_flavour_name(dispense_flavour)
-		src.visible_message("<span class='notice'>[usr] sets [src] to dispense [flavour_name] flavoured ice cream.</span>")
+		src.visible_message(SPAN_NOTICE("[usr] sets [src] to dispense [flavour_name] flavoured ice cream."))
 
 	if(href_list["cone"])
 		var/dispense_cone = text2num(href_list["cone"])
@@ -200,7 +200,7 @@
 			I.set_cone_type(cone_name)
 			src.visible_message("<span class='info'>[usr] dispenses a crunchy [cone_name] cone from [src].</span>")
 		else
-			to_chat(usr, "<span class='warning'>There are no [cone_name] cones left!</span>")
+			to_chat(usr, SPAN_WARNING("There are no [cone_name] cones left!"))
 
 	if(href_list["make"])
 		var/amount = (text2num(href_list["amount"]))

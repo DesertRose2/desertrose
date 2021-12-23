@@ -24,7 +24,7 @@
 //It's really not recommended to use this proc to give feedback, hence why silent is defaulting to true.
 /mob/living/proc/KnockToFloor(disarm_items = FALSE, silent = TRUE, updating = TRUE)
 	if(!silent && !resting)
-		to_chat(src, "<span class='warning'>You are knocked to the floor!</span>")
+		to_chat(src, SPAN_WARNING("You are knocked to the floor!"))
 	set_resting(TRUE, TRUE, updating)
 	if(disarm_items)
 		drop_all_held_items()
@@ -42,7 +42,7 @@
 	else
 		if(!resting)
 			set_resting(TRUE, FALSE)
-			to_chat(src, "<span class='notice'>You are now laying down.</span>")
+			to_chat(src, SPAN_NOTICE("You are now laying down."))
 		else
 			resist_a_rest()
 

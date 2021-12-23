@@ -39,12 +39,12 @@
 	var/obj/item/reagent_containers/food/snacks/grown/fruit = I
 	if(istype(fruit))
 		if(!fruit.can_distill)
-			to_chat(user, "<span class='warning'>You can't distill this into anything...</span>")
+			to_chat(user, SPAN_WARNING("You can't distill this into anything..."))
 			return TRUE
 		else if(!user.transferItemToLoc(I,src))
-			to_chat(user, "<span class='warning'>[I] is stuck to your hand!</span>")
+			to_chat(user, SPAN_WARNING("[I] is stuck to your hand!"))
 			return TRUE
-		to_chat(user, "<span class='notice'>You place [I] into [src] to start the fermentation process.</span>")
+		to_chat(user, SPAN_NOTICE("You place [I] into [src] to start the fermentation process."))
 		addtimer(CALLBACK(src, .proc/makeWine, fruit), rand(80, 120) * speed_multiplier)
 		return TRUE
 	var/obj/item/W = I
@@ -59,11 +59,11 @@
 	if(open)
 		DISABLE_BITFIELD(reagents.reagents_holder_flags, DRAINABLE)
 		ENABLE_BITFIELD(reagents.reagents_holder_flags, REFILLABLE)
-		to_chat(user, "<span class='notice'>You open [src], letting you fill it.</span>")
+		to_chat(user, SPAN_NOTICE("You open [src], letting you fill it."))
 	else
 		DISABLE_BITFIELD(reagents.reagents_holder_flags, REFILLABLE)
 		ENABLE_BITFIELD(reagents.reagents_holder_flags, DRAINABLE)
-		to_chat(user, "<span class='notice'>You close [src], letting you draw from its tap.</span>")
+		to_chat(user, SPAN_NOTICE("You close [src], letting you draw from its tap."))
 	update_icon()
 
 /obj/structure/fermenting_barrel/update_icon_state()

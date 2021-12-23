@@ -63,12 +63,12 @@
 /obj/item/gun/energy/kinetic_accelerator/crowbar_act(mob/living/user, obj/item/I)
 	. = TRUE
 	if(modkits.len)
-		to_chat(user, "<span class='notice'>You pry the modifications out.</span>")
+		to_chat(user, SPAN_NOTICE("You pry the modifications out."))
 		I.play_tool_sound(src, 100)
 		for(var/obj/item/borg/upgrade/modkit/M in modkits)
 			M.uninstall(src)
 	else
-		to_chat(user, "<span class='notice'>There are no modifications currently installed.</span>")
+		to_chat(user, SPAN_NOTICE("There are no modifications currently installed."))
 
 /obj/item/gun/energy/kinetic_accelerator/Exited(atom/movable/AM)
 	. = ..()
@@ -185,7 +185,7 @@
 	if(!suppressed)
 		playsound(src.loc, 'sound/weapons/kenetic_reload.ogg', 60, 1)
 	else
-		to_chat(loc, "<span class='warning'>[src] silently charges up.</span>")
+		to_chat(loc, SPAN_WARNING("[src] silently charges up."))
 	update_icon()
 	overheat = FALSE
 
@@ -306,10 +306,10 @@
 		return FALSE
 	if(minebot_upgrade)
 		if(minebot_exclusive && !istype(KA.loc, /mob/living/simple_animal/hostile/mining_drone))
-			to_chat(user, "<span class='notice'>The modkit you're trying to install is only rated for minebot use.</span>")
+			to_chat(user, SPAN_NOTICE("The modkit you're trying to install is only rated for minebot use."))
 			return FALSE
 	else if(istype(KA.loc, /mob/living/simple_animal/hostile/mining_drone))
-		to_chat(user, "<span class='notice'>The modkit you're trying to install is not rated for minebot use.</span>")
+		to_chat(user, SPAN_NOTICE("The modkit you're trying to install is not rated for minebot use."))
 		return FALSE
 	if(denied_type)
 		var/number_of_denied = 0
@@ -324,11 +324,11 @@
 		if(.)
 			if(!user.transferItemToLoc(src, KA))
 				return FALSE
-			to_chat(user, "<span class='notice'>You install the modkit.</span>")
+			to_chat(user, SPAN_NOTICE("You install the modkit."))
 			playsound(loc, 'sound/items/screwdriver.ogg', 100, 1)
 			KA.modkits += src
 		else
-			to_chat(user, "<span class='notice'>The modkit you're trying to install would conflict with an already installed modkit. Use a crowbar to remove existing modkits.</span>")
+			to_chat(user, SPAN_NOTICE("The modkit you're trying to install would conflict with an already installed modkit. Use a crowbar to remove existing modkits."))
 	else
 		to_chat(user, "<span class='notice'>You don't have room(<b>[KA.get_remaining_mod_capacity()]%</b> remaining, [cost]% needed) to install this modkit. Use a crowbar to remove existing modkits.</span>")
 		. = FALSE

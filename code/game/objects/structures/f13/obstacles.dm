@@ -53,8 +53,8 @@
 	if(istype(W, /obj/item/weapon/wirecutters))
 		if(do_after(user,50, target = src))
 			playsound(loc, 'sound/items/Wirecutter.ogg', 100, 1)
-			user.visible_message("<span class='notice'>[user] cuts a hole in the fence.</span>", \
-								"<span class='notice'>You cut a hole in the fence.</span>")
+			user.visible_message(SPAN_NOTICE("[user] cuts a hole in the fence."), \
+								SPAN_NOTICE("You cut a hole in the fence."))
 			density = 0
 			icon_state = "cut_fence"
 			desc = "You have no idea what could make that hole..."

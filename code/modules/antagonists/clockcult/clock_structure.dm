@@ -114,7 +114,7 @@
 		if(do_damage)
 			playsound(src, break_sound, 10 * (40 * (1 - get_efficiency_mod())), 1)
 			take_damage(round(max_integrity * 0.25, 1), BRUTE)
-			to_chat(user, "<span class='warning'>As you unsecure [src] from the floor, you see cracks appear in its surface!</span>")
+			to_chat(user, SPAN_WARNING("As you unsecure [src] from the floor, you see cracks appear in its surface!"))
 
 /obj/structure/destructible/clockwork/emp_act(severity)
 	. = ..()
@@ -174,7 +174,7 @@
 /obj/structure/destructible/clockwork/powered/can_be_unfasten_wrench(mob/user, silent)
 	if(active)
 		if(!silent)
-			to_chat(user, "<span class='warning'>[src] needs to be disabled before it can be unsecured!</span>")
+			to_chat(user, SPAN_WARNING("[src] needs to be disabled before it can be unsecured!"))
 		return FAILED_UNFASTEN
 	return ..()
 
@@ -183,7 +183,7 @@
 		if(!is_servant_of_ratvar(user))
 			return FALSE
 		if(!anchored && !active)
-			to_chat(user, "<span class='warning'>[src] needs to be secured to the floor before it can be activated!</span>")
+			to_chat(user, SPAN_WARNING("[src] needs to be secured to the floor before it can be activated!"))
 			return FALSE
 		visible_message("<span class='notice'>[user] [active ? "dis" : "en"]ables [src].</span>", "<span class='brass'>You [active ? "dis" : "en"]able [src].</span>")
 	active = !active

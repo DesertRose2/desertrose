@@ -183,9 +183,9 @@
 		return
 
 	if(anchored)
-		to_chat(usr, "<span class='danger'>[src] is anchored!</span>")
+		to_chat(usr, SPAN_DANGER("[src] is anchored!"))
 		return
 
 	flipped = !flipped
-	to_chat(usr, "<span class='notice'>You flip [src].</span>")
+	to_chat(usr, SPAN_NOTICE("You flip [src]."))
 	update_icon()

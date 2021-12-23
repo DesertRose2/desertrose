@@ -112,13 +112,13 @@
 		"is pulled into an invisible vortex, vanishing from sight")
 	var/slip_out_message = pick("silently fades in", "leaps out of thin air","appears", "walks out of an invisible doorway",\
 		"slides out of a fold in spacetime")
-	to_chat(user, "<span class='notice'>You try to align with the bluespace stream...</span>")
+	to_chat(user, SPAN_NOTICE("You try to align with the bluespace stream..."))
 	if(do_after(user, 20, target = src))
 		new /obj/effect/temp_visual/bluespace_fissure(get_turf(src))
 		new /obj/effect/temp_visual/bluespace_fissure(get_turf(linked_to))
 		user.forceMove(get_turf(linked_to))
-		user.visible_message("<span class='warning'>[user] [slip_in_message].</span>", null, null, null, user)
-		user.visible_message("<span class='warning'>[user] [slip_out_message].</span>", "<span class='notice'>...and find your way to the other side.</span>")
+		user.visible_message(SPAN_WARNING("[user] [slip_in_message]."), null, null, null, user)
+		user.visible_message(SPAN_WARNING("[user] [slip_out_message]."), SPAN_NOTICE("...and find your way to the other side."))
 */
 
 /datum/brain_trauma/special/psychotic_brawling
@@ -133,7 +133,7 @@
 	..()
 	psychotic_brawling = new(null)
 	if(!psychotic_brawling.teach(owner, TRUE))
-		to_chat(owner, "<span class='notice'>But your martial knowledge keeps you grounded.</span>")
+		to_chat(owner, SPAN_NOTICE("But your martial knowledge keeps you grounded."))
 		qdel(src)
 
 /datum/brain_trauma/special/psychotic_brawling/on_lose()
@@ -232,7 +232,7 @@
 
 /datum/brain_trauma/special/existential_crisis/proc/fade_in()
 	QDEL_NULL(veil)
-	to_chat(owner, "<span class='notice'>You fade back into reality.</span>")
+	to_chat(owner, SPAN_NOTICE("You fade back into reality."))
 	next_crisis = world.time + 600
 
 //base sync holder is in desynchronizer.dm
@@ -279,7 +279,7 @@
 		return
 	if(get_dist(owner, beepsky) <= 1)
 		owner.playsound_local(owner, 'sound/weapons/egloves.ogg', 50)
-		owner.visible_message("<span class='warning'>[owner]'s body jerks as if it was shocked.</span>", "<span class='userdanger'>You feel the fist of the LAW.</span>")
+		owner.visible_message(SPAN_WARNING("[owner]'s body jerks as if it was shocked."), "<span class='userdanger'>You feel the fist of the LAW.</span>")
 		owner.take_bodypart_damage(0,0,rand(40, 70))
 		QDEL_NULL(beepsky)
 	if(prob(20) && get_dist(owner, beepsky) <= 8)

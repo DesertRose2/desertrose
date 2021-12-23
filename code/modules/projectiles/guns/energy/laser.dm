@@ -155,12 +155,12 @@
 			if(user.transferItemToLoc(AM, src))
 				cell = AM
 				if(oldcell)
-					to_chat(user, "<span class='notice'>You perform a tactical reload on \the [src], replacing the cell.</span>")
+					to_chat(user, SPAN_NOTICE("You perform a tactical reload on \the [src], replacing the cell."))
 					oldcell.dropped()
 					oldcell.forceMove(get_turf(src.loc))
 					oldcell.update_icon()
 				//else
-				//	to_chat(user, "<span class='notice'>You insert the cell into \the [src].</span>")
+				//	to_chat(user, SPAN_NOTICE("You insert the cell into \the [src]."))
 
 				//playsound(src, 'sound/weapons/autoguninsert.ogg', 60, TRUE)
 				//chamber_round()
@@ -168,17 +168,17 @@
 				update_icon()
 				return 1
 			else
-				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
+				to_chat(user, SPAN_WARNING("You cannot seem to get \the [src] out of your hands!"))
 
 /obj/item/gun/energy/laser/proc/burst_select()
 	var/mob/living/carbon/human/user = usr
 	select = !select
 	if(!select)
 		disable_burst()
-		to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
+		to_chat(user, SPAN_NOTICE("You switch to semi-automatic."))
 	else
 		enable_burst()
-		to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
 
 /obj/item/gun/energy/laser/proc/enable_burst()
 	burst_size = initial(burst_size)

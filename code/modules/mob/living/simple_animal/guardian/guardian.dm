@@ -150,7 +150,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 /mob/living/simple_animal/hostile/guardian/proc/guardianrecolor()
 	guardiancolor = input(src,"What would you like your color to be?","Choose Your Color","#ffffff") as color|null
 	if(!guardiancolor) //redo proc until we get a color
-		to_chat(src, "<span class='warning'>Not a valid color, please try again.</span>")
+		to_chat(src, SPAN_WARNING("Not a valid color, please try again."))
 		guardianrecolor()
 		return
 	if(!recolorentiresprite)
@@ -163,7 +163,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 /mob/living/simple_animal/hostile/guardian/proc/guardianrename()
 	var/new_name = sanitize_name(reject_bad_text(stripped_input(src, "What would you like your name to be?", "Choose Your Name", real_name, MAX_NAME_LEN)))
 	if(!new_name) //redo proc until we get a good name
-		to_chat(src, "<span class='warning'>Not a valid name, please try again.</span>")
+		to_chat(src, SPAN_WARNING("Not a valid name, please try again."))
 		guardianrename()
 		return
 	to_chat(src, "<span class='notice'>Your new name <span class='name'>[new_name]</span> anchors itself in your mind.</span>")
@@ -177,7 +177,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	if(!QDELETED(summoner))
 		if(summoner.stat == DEAD)
 			forceMove(summoner.loc)
-			to_chat(src, "<span class='danger'>Your summoner has died!</span>")
+			to_chat(src, SPAN_DANGER("Your summoner has died!"))
 			visible_message("<span class='danger'><B>\The [src] dies along with its user!</B></span>")
 			summoner.visible_message("<span class='danger'><B>[summoner]'s body is completely consumed by the strain of sustaining [src]!</B></span>")
 			for(var/obj/item/W in summoner)
@@ -187,7 +187,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 			death(TRUE)
 			qdel(src)
 	else
-		to_chat(src, "<span class='danger'>Your summoner has died!</span>")
+		to_chat(src, SPAN_DANGER("Your summoner has died!"))
 		visible_message("<span class='danger'><B>[src] dies along with its user!</B></span>")
 		death(TRUE)
 		qdel(src)
@@ -218,7 +218,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 			return
 		else
 			to_chat(src, "<span class='holoparasite'>You moved out of range, and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
-			visible_message("<span class='danger'>\The [src] jumps back to its user.</span>")
+			visible_message(SPAN_DANGER("\The [src] jumps back to its user."))
 			if(istype(summoner.loc, /obj/effect))
 				Recall(TRUE)
 			else
@@ -377,10 +377,10 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 
 /mob/living/simple_animal/hostile/guardian/proc/ToggleLight()
 	if(light_range<3)
-		to_chat(src, "<span class='notice'>You activate your light.</span>")
+		to_chat(src, SPAN_NOTICE("You activate your light."))
 		set_light(3)
 	else
-		to_chat(src, "<span class='notice'>You deactivate your light.</span>")
+		to_chat(src, SPAN_NOTICE("You deactivate your light."))
 		set_light(0)
 
 /mob/living/simple_animal/hostile/guardian/verb/ShowType()

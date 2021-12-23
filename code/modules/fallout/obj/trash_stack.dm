@@ -32,12 +32,12 @@
 	var/turf/ST = get_turf(src)
 	if(user?.a_intent != INTENT_HARM)
 		if(user in loot_players)
-			to_chat(user, "<span class='notice'>You already have looted [src].</span>")
+			to_chat(user, SPAN_NOTICE("You already have looted [src]."))
 			return
 		for(var/i=0, i<rand(1,4), i++)
 			var/itemtype= pickweight(lootable_trash)
 			if(itemtype)
-				to_chat(user, "<span class='notice'>You scavenge through [src].</span>")
+				to_chat(user, SPAN_NOTICE("You scavenge through [src]."))
 				var/obj/item/item = new itemtype(ST)
 				if(istype(item))
 					item.from_trash = TRUE

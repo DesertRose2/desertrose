@@ -40,9 +40,9 @@
 /obj/item/shield/examine(mob/user)
 	. = ..()
 	if(shield_flags & SHIELD_CAN_BASH)
-		. += "<span class='notice'>Right click on combat mode attack with [src] to shield bash!</span>"
+		. += SPAN_NOTICE("Right click on combat mode attack with [src] to shield bash!")
 		if(shield_flags & SHIELD_BASH_GROUND_SLAM)
-			. += "<span class='notice'>Directly rightclicking on a downed target with [src] will slam them instead of bashing.</span>"
+			. += SPAN_NOTICE("Directly rightclicking on a downed target with [src] will slam them instead of bashing.")
 
 /obj/item/shield/proc/on_shield_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance)
 	return TRUE
@@ -78,7 +78,7 @@
 /obj/item/shield/proc/bash_target(mob/living/user, mob/living/target, bashdir, harmful)
 	if(!(target.status_flags & CANKNOCKDOWN) || HAS_TRAIT(src, TRAIT_STUNIMMUNE))	// should probably add stun absorption check at some point I guess..
 		// unified stun absorption system when lol
-		target.visible_message("<span class='warning'>[user] slams [target] with [src], but [target] doesn't falter!</span>", "<span class='userdanger'>[user] slams you with [src], but it barely fazes you!</span>")
+		target.visible_message(SPAN_WARNING("[user] slams [target] with [src], but [target] doesn't falter!"), "<span class='userdanger'>[user] slams you with [src], but it barely fazes you!</span>")
 		return FALSE
 	var/target_downed = !CHECK_MOBILITY(target, MOBILITY_STAND)
 	var/wallhit = FALSE
@@ -87,13 +87,13 @@
 		target.visible_message("<span class='warning'>[target_downed? "[user] slams [src] into [target]" : "[user] bashes [target] with [src]"]!</span>",
 		"<span class='warning'>[target_downed? "[user] slams [src] into you" : "[user] bashes you with [src]"]!</span>")
 	else
-		target.visible_message("<span class='warning'>[user] shoves [target] with [src]!</span>",
-		"<span class='warning'>[user] shoves you with [src]!</span>")
+		target.visible_message(SPAN_WARNING("[user] shoves [target] with [src]!"),
+		SPAN_WARNING("[user] shoves you with [src]!"))
 	for(var/i in 1 to harmful? shieldbash_knockback : shieldbash_push_distance)
 		var/turf/new_turf = get_step(target, bashdir)
 		var/mob/living/carbon/human/H = locate() in (new_turf.contents - target)
 		if(H && harmful)
-			H.visible_message("<span class='warning'>[target] is sent crashing into [H]!</span>",
+			H.visible_message(SPAN_WARNING("[target] is sent crashing into [H]!"),
 			"<span class='userdanger'>[target] is sent crashing into you!</span>")
 			H.KnockToFloor()
 			wallhit = TRUE
@@ -125,18 +125,18 @@
 	if(!SEND_SIGNAL(user, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE)) //Combat mode has to be enabled for shield bashing
 		return FALSE
 	if(!(shield_flags & SHIELD_CAN_BASH))
-		to_chat(user, "<span class='warning'>[src] can't be used to shield bash!</span>")
+		to_chat(user, SPAN_WARNING("[src] can't be used to shield bash!"))
 		return FALSE
 	if(!CHECK_MOBILITY(user, MOBILITY_STAND))
-		to_chat(user, "<span class='warning'>You can't bash with [src] while on the ground!</span>")
+		to_chat(user, SPAN_WARNING("You can't bash with [src] while on the ground!"))
 		return FALSE
 	if(world.time < last_shieldbash + shieldbash_cooldown)
-		to_chat(user, "<span class='warning'>You can't bash with [src] again so soon!</span>")
+		to_chat(user, SPAN_WARNING("You can't bash with [src] again so soon!"))
 		return FALSE
 	var/mob/living/livingtarget = target		//only access after an isliving check!
 	if(isliving(target) && !CHECK_MOBILITY(livingtarget, MOBILITY_STAND))		//GROUND SLAAAM
 		if(!(shield_flags & SHIELD_BASH_GROUND_SLAM))
-			to_chat(user, "<span class='warning'>You can't ground slam with [src]!</span>")
+			to_chat(user, SPAN_WARNING("You can't ground slam with [src]!"))
 			return FALSE
 		bash_target(user, target, NONE, harmful)
 		user.do_attack_animation(target, used_item = src)
@@ -209,17 +209,17 @@
 /obj/item/shield/riot/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/melee/baton))
 		if(cooldown < world.time - 25)
-			user.visible_message("<span class='warning'>[user] bashes [src] with [W]!</span>")
+			user.visible_message(SPAN_WARNING("[user] bashes [src] with [W]!"))
 			playsound(user.loc, 'sound/effects/shieldbash.ogg', 50, 1)
 			cooldown = world.time
 	else if(istype(W, repair_material))
 		if(obj_integrity >= max_integrity)
-			to_chat(user, "<span class='warning'>[src] is already in perfect condition.</span>")
+			to_chat(user, SPAN_WARNING("[src] is already in perfect condition."))
 		else
 			var/obj/item/stack/S = W
 			S.use(1)
 			obj_integrity = max_integrity
-			to_chat(user, "<span class='notice'>You repair [src] with [S].</span>")
+			to_chat(user, SPAN_NOTICE("You repair [src] with [S]."))
 	else
 		return ..()
 
@@ -232,7 +232,7 @@
 		if(25 to 50)
 			. += "<span class='info'>It appears heavily damaged.</span>"
 		if(0 to 25)
-			. += "<span class='warning'>It's falling apart!</span>"
+			. += SPAN_WARNING("It's falling apart!")
 
 /obj/item/shield/riot/proc/shatter(mob/living/carbon/human/owner)
 	playsound(owner, 'sound/effects/glassbr3.ogg', 100)
@@ -241,7 +241,7 @@
 /obj/item/shield/riot/on_shield_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(can_shatter && (obj_integrity <= damage))
 		var/turf/T = get_turf(owner)
-		T.visible_message("<span class='warning'>[attack_text] destroys [src]!</span>")
+		T.visible_message(SPAN_WARNING("[attack_text] destroys [src]!"))
 		shatter(owner)
 		qdel(src)
 		return FALSE
@@ -306,14 +306,14 @@
 		throw_speed = 2
 		w_class = WEIGHT_CLASS_BULKY
 		slot_flags = ITEM_SLOT_BACK
-		to_chat(user, "<span class='notice'>You extend \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You extend \the [src]."))
 	else
 		force = 3
 		throwforce = 3
 		throw_speed = 3
 		w_class = WEIGHT_CLASS_NORMAL
 		slot_flags = null
-		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
+		to_chat(user, SPAN_NOTICE("[src] can now be concealed."))
 	add_fingerprint(user)
 
 //Legion shield					- Superior version of the Legion shield.
@@ -470,12 +470,12 @@
 		throw_speed = on_throw_speed
 		w_class = WEIGHT_CLASS_BULKY
 		playsound(user, 'sound/weapons/saberon.ogg', 35, TRUE)
-		to_chat(user, "<span class='notice'>[src] is now active.</span>")
+		to_chat(user, SPAN_NOTICE("[src] is now active."))
 	else
 		force = initial(force)
 		throwforce = initial(throwforce)
 		throw_speed = initial(throw_speed)
 		w_class = WEIGHT_CLASS_TINY
 		playsound(user, 'sound/weapons/saberoff.ogg', 35, TRUE)
-		to_chat(user, "<span class='notice'>[src] can now be concealed.</span>")
+		to_chat(user, SPAN_NOTICE("[src] can now be concealed."))
 	add_fingerprint(user)

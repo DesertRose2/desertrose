@@ -126,7 +126,7 @@
 		return
 
 	to_chat(src, "<span class='danger'><B>You begin to warp [A].</span></B>")
-	A.visible_message("<span class='danger'>[A] starts to glow faintly!</span>", \
+	A.visible_message(SPAN_DANGER("[A] starts to glow faintly!"), \
 	"<span class='userdanger'>You start to faintly glow, and you feel strangely weightless!</span>")
 	do_attack_animation(A)
 
@@ -138,7 +138,7 @@
 	if(isliving(A))
 		var/mob/living/L = A
 		L.flash_act()
-	A.visible_message("<span class='danger'>[A] disappears in a flash of light!</span>", \
+	A.visible_message(SPAN_DANGER("[A] disappears in a flash of light!"), \
 	"<span class='userdanger'>Your vision is obscured by a flash of light!</span>")
 	do_teleport(A, beacon, 0, channel = TELEPORT_CHANNEL_BLUESPACE)
 	new /obj/effect/temp_visual/guardian/phase(get_turf(A))

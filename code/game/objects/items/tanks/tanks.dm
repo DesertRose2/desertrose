@@ -28,13 +28,13 @@
 		return
 
 	if(H.internal == src)
-		to_chat(H, "<span class='notice'>You close [src] valve.</span>")
+		to_chat(H, SPAN_NOTICE("You close [src] valve."))
 		H.internal = null
 		H.update_internals_hud_icon(0)
 	else
 		if(!H.getorganslot(ORGAN_SLOT_BREATHING_TUBE))
 			if(HAS_TRAIT(H, TRAIT_NO_INTERNALS))
-				to_chat(H, "<span class='warning'>Due to cumbersome equipment or anatomy, you are currently unable to use internals!</span>")
+				to_chat(H, SPAN_WARNING("Due to cumbersome equipment or anatomy, you are currently unable to use internals!"))
 				return
 			var/obj/item/clothing/check
 			var/internals = FALSE
@@ -48,13 +48,13 @@
 					internals = TRUE
 
 			if(!internals)
-				to_chat(H, "<span class='warning'>You are not wearing an internals mask!</span>")
+				to_chat(H, SPAN_WARNING("You are not wearing an internals mask!"))
 				return
 
 		if(H.internal)
-			to_chat(H, "<span class='notice'>You switch your internals to [src].</span>")
+			to_chat(H, SPAN_NOTICE("You switch your internals to [src]."))
 		else
-			to_chat(H, "<span class='notice'>You open [src] valve.</span>")
+			to_chat(H, SPAN_NOTICE("You open [src] valve."))
 		H.internal = src
 		H.update_internals_hud_icon(1)
 	H.update_action_buttons_icon()
@@ -87,10 +87,10 @@
 		icon = src.loc
 	if(!in_range(src, user) && !isobserver(user))
 		if (icon == src)
-			. += "<span class='notice'>If you want any more information you'll need to get closer.</span>"
+			. += SPAN_NOTICE("If you want any more information you'll need to get closer.")
 		return
 
-	. += "<span class='notice'>The pressure gauge reads [round(src.air_contents.return_pressure(),0.01)] kPa.</span>"
+	. += SPAN_NOTICE("The pressure gauge reads [round(src.air_contents.return_pressure(),0.01)] kPa.")
 
 	var/celsius_temperature = src.air_contents.return_temperature()-T0C
 	var/descriptive
@@ -108,7 +108,7 @@
 	else
 		descriptive = "furiously hot"
 
-	. += "<span class='notice'>It feels [descriptive].</span>"
+	. += SPAN_NOTICE("It feels [descriptive].")
 
 /obj/item/tank/blob_act(obj/structure/blob/B)
 	if(B && B.loc == loc)

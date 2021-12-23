@@ -129,7 +129,7 @@ Bonus
 			Asphyxiate(M, A)
 			M.emote("gasp")
 			if(M.getOxyLoss() >= 120)
-				M.visible_message("<span class='warning'>[M] stops breathing, as if their lungs have totally collapsed!</span>")
+				M.visible_message(SPAN_WARNING("[M] stops breathing, as if their lungs have totally collapsed!"))
 				Asphyxiate_death(M, A)
 	return
 

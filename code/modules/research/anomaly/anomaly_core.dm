@@ -28,7 +28,7 @@
 
 /obj/item/assembly/signaler/anomaly/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_ANALYZER)
-		to_chat(user, "<span class='notice'>Analyzing... [src]'s stabilized field is fluctuating along frequency [format_frequency(frequency)], code [code].</span>")
+		to_chat(user, SPAN_NOTICE("Analyzing... [src]'s stabilized field is fluctuating along frequency [format_frequency(frequency)], code [code]."))
 	return ..()
 
 //Anomaly cores

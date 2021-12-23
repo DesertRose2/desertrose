@@ -48,7 +48,7 @@
 /datum/reagent/drug/nicotine/on_mob_life(mob/living/carbon/M)
 	if(prob(1))
 		var/smoke_message = pick("You feel relaxed.", "You feel calmed.","You feel alert.","You feel rugged.")
-		to_chat(M, "<span class='notice'>[smoke_message]</span>")
+		to_chat(M, SPAN_NOTICE("[smoke_message]"))
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "smoked", /datum/mood_event/smoked, name)
 	M.AdjustAllImmobility(-20, 0)
 	M.AdjustUnconscious(-20, 0)
@@ -69,7 +69,7 @@
 /datum/reagent/drug/crank/on_mob_life(mob/living/carbon/M)
 	if(prob(5))
 		var/high_message = pick("You feel jittery.", "You feel like you gotta go fast.", "You feel like you need to step it up.")
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 	M.AdjustAllImmobility(-20, 0)
 	M.AdjustUnconscious(-20, 0)
 	..()
@@ -117,7 +117,7 @@
 /datum/reagent/drug/krokodil/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel calm.", "You feel collected.", "You feel like you need to relax.")
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 	..()
 
 /datum/reagent/drug/krokodil/overdose_process(mob/living/M)
@@ -134,12 +134,12 @@
 
 /datum/reagent/drug/krokodil/addiction_act_stage2(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class='danger'>Your skin feels loose...</span>")
+		to_chat(M, SPAN_DANGER("Your skin feels loose..."))
 	..()
 
 /datum/reagent/drug/krokodil/addiction_act_stage3(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class='danger'>Your skin starts to peel away...</span>")
+		to_chat(M, SPAN_DANGER("Your skin starts to peel away..."))
 	M.adjustBruteLoss(3*REM, 0)
 	..()
 	. = 1
@@ -169,7 +169,7 @@
 /datum/reagent/drug/heroin/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel like you're floating.", "Life feels like a beautiful dream.", "Everything seems right with the world.")
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
@@ -187,14 +187,14 @@
 
 /datum/reagent/drug/heroin/addiction_act_stage2(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class='danger'>Life feels so hard.</span>")
+		to_chat(M, SPAN_DANGER("Life feels so hard."))
 	M.adjustToxLoss(3*REM, 0)
 	..()
 	. = 1
 
 /datum/reagent/drug/heroin/addiction_act_stage3(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class='danger'>YOU CAN'T TAKE THIS ANYMORE!!</span>")
+		to_chat(M, SPAN_DANGER("YOU CAN'T TAKE THIS ANYMORE!!"))
 	M.adjustToxLoss(4*REM, 0)
 	..()
 	. = 1
@@ -226,7 +226,7 @@
 /datum/reagent/drug/methamphetamine/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 	M.AdjustAllImmobility(-40, 0)
 	M.AdjustUnconscious(-40, 0)
 	M.adjustStaminaLoss(-7.5 * REM, 0)
@@ -247,7 +247,7 @@
 	if(prob(20))
 		M.emote("laugh")
 	if(prob(33))
-		M.visible_message("<span class='danger'>[M]'s hands flip out and flail everywhere!</span>")
+		M.visible_message(SPAN_DANGER("[M]'s hands flip out and flail everywhere!"))
 		M.drop_all_held_items()
 	..()
 	M.adjustToxLoss(1, 0)
@@ -328,7 +328,7 @@
 /datum/reagent/drug/bath_salts/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel amped up.", "You feel ready.", "You feel like you can push it to the limit.")
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 	M.adjustStaminaLoss(-5, 0)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 4)
 	M.hallucination += 5
@@ -409,7 +409,7 @@
 /datum/reagent/drug/aranesp/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel amped up.", "You feel ready.", "You feel like you can push it to the limit.")
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, SPAN_NOTICE("[high_message]"))
 	M.adjustStaminaLoss(-10, 0)
 	M.adjustToxLoss(0.5, 0)
 	if(prob(50))
@@ -511,16 +511,16 @@
 	. = ..()
 	if(istype(M))
 		M.action_cooldown_mod *= 0.5
-		to_chat(M, "<span class='notice'>You feel an intense surge of energy rushing through your veins.</span>")
+		to_chat(M, SPAN_NOTICE("You feel an intense surge of energy rushing through your veins."))
 
 /datum/reagent/syndicateadrenals/on_mob_end_metabolize(mob/living/M)
 	. = ..()
 	if(istype(M))
 		M.action_cooldown_mod *= 2
-		to_chat(M, "<span class='notice'>You feel as though the world around you is going faster.</span>")
+		to_chat(M, SPAN_NOTICE("You feel as though the world around you is going faster."))
 
 /datum/reagent/syndicateadrenals/overdose_start(mob/living/M)
-	to_chat(M, "<span class='danger'>You feel an intense pain in your chest...</span>")
+	to_chat(M, SPAN_DANGER("You feel an intense pain in your chest..."))
 
 /datum/reagent/syndicateadrenals/overdose_process(mob/living/M)
 	if(iscarbon(M))

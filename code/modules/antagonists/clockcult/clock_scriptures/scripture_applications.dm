@@ -117,7 +117,7 @@
 /datum/clockwork_scripture/memory_allocation/check_special_requirements()
 	for(var/mob/living/simple_animal/hostile/clockwork/marauder/guardian/M in GLOB.all_clockwork_mobs)
 		if(M.host == invoker)
-			to_chat(invoker, "<span class='warning'>You can only house one guardian at a time!</span>")
+			to_chat(invoker, SPAN_WARNING("You can only house one guardian at a time!"))
 			return FALSE
 	return TRUE
 
@@ -125,12 +125,12 @@
 	return create_guardian()
 
 /datum/clockwork_scripture/memory_allocation/proc/create_guardian()
-	invoker.visible_message("<span class='warning'>A purple tendril appears from [invoker]'s [slab.name] and impales itself in [invoker.p_their()] forehead!</span>", \
+	invoker.visible_message(SPAN_WARNING("A purple tendril appears from [invoker]'s [slab.name] and impales itself in [invoker.p_their()] forehead!"), \
 	"<span class='sevtug'>A tendril flies from [slab] into your forehead. You begin waiting while it painfully rearranges your thought pattern...</span>")
 	//invoker.notransform = TRUE //Vulnerable during the process
 	slab.busy = "Thought Modification in progress"
 	if(!do_after(invoker, 50, target = invoker))
-		invoker.visible_message("<span class='warning'>The tendril, covered in blood, retracts from [invoker]'s head and back into the [slab.name]!</span>", \
+		invoker.visible_message(SPAN_WARNING("The tendril, covered in blood, retracts from [invoker]'s head and back into the [slab.name]!"), \
 		"<span class='userdanger'>Total agony overcomes you as the tendril is forced out early!</span>")
 		invoker.Knockdown(100)
 		invoker.apply_damage(50, BRUTE, "head")//Sevtug leaves a gaping hole in your face if interrupted.
@@ -141,20 +141,20 @@
 	slab.busy = "Guardian Selection in progress"
 	if(!check_special_requirements())
 		return FALSE
-	to_chat(invoker, "<span class='warning'>The tendril shivers slightly as it selects a guardian...</span>")
+	to_chat(invoker, SPAN_WARNING("The tendril shivers slightly as it selects a guardian..."))
 	var/list/marauder_candidates = pollGhostCandidates("Do you want to play as the clockwork guardian of [invoker.real_name]?", ROLE_SERVANT_OF_RATVAR, null, FALSE, 50, POLL_IGNORE_HOLOPARASITE)
 	if(!check_special_requirements())
 		return FALSE
 	if(!marauder_candidates.len)
-		invoker.visible_message("<span class='warning'>The tendril retracts from [invoker]'s head, sealing the entry wound as it does so!</span>", \
-		"<span class='warning'>The tendril was unsuccessful! Perhaps you should try again another time.</span>")
+		invoker.visible_message(SPAN_WARNING("The tendril retracts from [invoker]'s head, sealing the entry wound as it does so!"), \
+		SPAN_WARNING("The tendril was unsuccessful! Perhaps you should try again another time."))
 		return FALSE
 	clockwork_say(invoker, text2ratvar("...sword and shield!"))
 	var/mob/dead/observer/theghost = pick(marauder_candidates)
 	var/mob/living/simple_animal/hostile/clockwork/marauder/guardian/M = new(invoker)
 	M.key = theghost.key
 	M.bind_to_host(invoker)
-	invoker.visible_message("<span class='warning'>The tendril retracts from [invoker]'s head, sealing the entry wound as it does so!</span>", \
+	invoker.visible_message(SPAN_WARNING("The tendril retracts from [invoker]'s head, sealing the entry wound as it does so!"), \
 	"<span class='sevtug'>[M.true_name], a clockwork guardian, has taken up residence in your mind. Communicate with it via the \"Linked Minds\" action button.</span>")
 	return TRUE
 

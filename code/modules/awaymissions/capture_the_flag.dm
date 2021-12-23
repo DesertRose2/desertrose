@@ -219,7 +219,7 @@
 			people_who_want_to_play.Cut()
 			toggle_all_ctf()
 		else
-			to_chat(user, "<span class='notice'>CTF has been requested. [num]/[CTF_REQUIRED_PLAYERS] have readied up.</span>")
+			to_chat(user, SPAN_NOTICE("CTF has been requested. [num]/[CTF_REQUIRED_PLAYERS] have readied up."))
 
 		return
 
@@ -635,7 +635,7 @@
 			for(var/obj/item/gun/G in M)
 				qdel(G)
 			O.equip(M)
-			to_chat(M, "<span class='notice'>Ammunition reloaded!</span>")
+			to_chat(M, SPAN_NOTICE("Ammunition reloaded!"))
 			playsound(get_turf(M), 'sound/weapons/shotgunpump.ogg', 50, 1, -1)
 			qdel(src)
 			break

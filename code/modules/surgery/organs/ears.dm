@@ -38,7 +38,7 @@
 		if(prob(damage / 20) && (damage > low_threshold))
 			adjustEarDamage(0, 4)
 			SEND_SOUND(owner, sound('sound/weapons/flash_ring.ogg'))
-			to_chat(owner, "<span class='warning'>The ringing in your ears grows louder, blocking out any external noises for a moment.</span>")
+			to_chat(owner, SPAN_WARNING("The ringing in your ears grows louder, blocking out any external noises for a moment."))
 	else if(!. && !deaf)
 		deaf = 1	//stop being not deaf you deaf idiot
 
@@ -146,7 +146,7 @@
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Alert: Auditory systems corrupted!.</span>")
+	to_chat(owner, SPAN_WARNING("Alert: Auditory systems corrupted!."))
 	switch(severity)
 		if(1)
 			owner.Jitter(30)
@@ -173,7 +173,7 @@
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Alert: Auditory systems corrupted!.</span>")
+	to_chat(owner, SPAN_WARNING("Alert: Auditory systems corrupted!."))
 	switch(severity)
 		if(1)
 			owner.Jitter(30)

@@ -99,7 +99,7 @@
 /obj/item/pinpointer/crew/attack_self(mob/living/user)
 	if(active)
 		active = FALSE
-		user.visible_message("<span class='notice'>[user] deactivates [user.p_their()] pinpointer.</span>", "<span class='notice'>You deactivate your pinpointer.</span>")
+		user.visible_message(SPAN_NOTICE("[user] deactivates [user.p_their()] pinpointer."), SPAN_NOTICE("You deactivate your pinpointer."))
 		playsound(src, 'sound/items/screwdriver2.ogg', 50, 1)
 		target = null //Restarting the pinpointer forces a target reset
 		STOP_PROCESSING(SSfastprocess, src)
@@ -108,7 +108,7 @@
 	if (has_owner && !pinpointer_owner)
 		pinpointer_owner = user
 	if (pinpointer_owner && pinpointer_owner != user)
-		to_chat(user, "<span class='notice'>The pinpointer doesn't respond. It seems to only recognise its owner.</span>")
+		to_chat(user, SPAN_NOTICE("The pinpointer doesn't respond. It seems to only recognise its owner."))
 		return
 	var/list/name_counts = list()
 	var/list/names = list()
@@ -130,7 +130,7 @@
 		name_counts[crewmember_name] = 1
 
 	if(!names.len)
-		user.visible_message("<span class='notice'>[user]'s pinpointer fails to detect a signal.</span>", "<span class='notice'>Your pinpointer fails to detect a signal.</span>")
+		user.visible_message(SPAN_NOTICE("[user]'s pinpointer fails to detect a signal."), SPAN_NOTICE("Your pinpointer fails to detect a signal."))
 		return
 
 	var/A = input(user, "Person to track", "Pinpoint") in names
@@ -139,7 +139,7 @@
 
 	target = names[A]
 	active = TRUE
-	user.visible_message("<span class='notice'>[user] activates [user.p_their()] pinpointer.</span>", "<span class='notice'>You activate your pinpointer.</span>")
+	user.visible_message(SPAN_NOTICE("[user] activates [user.p_their()] pinpointer."), SPAN_NOTICE("You activate your pinpointer."))
 	playsound(src, 'sound/items/screwdriver2.ogg', 50, 1)
 	START_PROCESSING(SSfastprocess, src)
 	update_icon()

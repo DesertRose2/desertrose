@@ -74,11 +74,11 @@
 	var/mob/living/carbon/human/H = locate() in contents
 
 	if(QDELETED(H))
-		to_chat(C, "<span class='warning'>Something bad happened with the clone.</span>")
+		to_chat(C, SPAN_WARNING("Something bad happened with the clone."))
 		return FALSE
 
 	if(H.key)
-		to_chat(C, "<span class='warning'>The clone seems to have been already taken.</span>")
+		to_chat(C, SPAN_WARNING("The clone seems to have been already taken."))
 		return FALSE
 
 	H.key = C.key
@@ -96,7 +96,7 @@
 
 	if(grab_ghost_when == CLONER_MATURE_CLONE)
 		H.ghostize(TRUE)	//Only does anything if they were still in their old body and not already a ghost
-		to_chat(H.get_ghost(TRUE), "<span class='notice'>Your body is beginning to regenerate in a cloning pod. You will become conscious when it is complete.</span>")
+		to_chat(H.get_ghost(TRUE), SPAN_NOTICE("Your body is beginning to regenerate in a cloning pod. You will become conscious when it is complete."))
 
 	if(H)
 		H.set_cloned_appearance()

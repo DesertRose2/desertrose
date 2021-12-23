@@ -125,7 +125,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		if(istype(Itm.loc, /mob))
 			var/mob/M = Itm.loc
 			if(!M.dropItemToGround(Itm))
-				to_chat(usr, "<span class='warning'>\the [Itm] is stuck to your hand, you cannot put it in \the [src]!</span>")
+				to_chat(usr, SPAN_WARNING("\the [Itm] is stuck to your hand, you cannot put it in \the [src]!"))
 				return
 
 		Itm.forceMove(src)
@@ -804,27 +804,27 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	if(href_list["purchase"] && GLOB.player_list.len>50)
 		var/datum/data/wasteland_equipment/prize = locate(href_list["purchase"])
 		if (!prize || !(prize in highpop_list))
-			to_chat(usr, "<span class='warning'>Error: Invalid choice!</span>")
+			to_chat(usr, SPAN_WARNING("Error: Invalid choice!"))
 			return
 		if(prize.cost > stored_caps)
-			to_chat(usr, "<span class='warning'>Error: Insufficent bottle caps value for [prize.equipment_name]!</span>")
+			to_chat(usr, SPAN_WARNING("Error: Insufficent bottle caps value for [prize.equipment_name]!"))
 		else
 			stored_caps -= prize.cost
 			GLOB.vendor_cash += prize.cost
-			to_chat(usr, "<span class='notice'>[src] clanks to life briefly before vending [prize.equipment_name]!</span>")
+			to_chat(usr, SPAN_NOTICE("[src] clanks to life briefly before vending [prize.equipment_name]!"))
 			new prize.equipment_path(src.loc)
 			SSblackbox.record_feedback("nested tally", "wasteland_equipment_bought", 1, list("[type]", "[prize.equipment_path]"))
 	else if(href_list["purchase"])
 		var/datum/data/wasteland_equipment/prize = locate(href_list["purchase"])
 		if (!prize || !(prize in prize_list))
-			to_chat(usr, "<span class='warning'>Error: Invalid choice!</span>")
+			to_chat(usr, SPAN_WARNING("Error: Invalid choice!"))
 			return
 		if(prize.cost > stored_caps)
-			to_chat(usr, "<span class='warning'>Error: Insufficent bottle caps value for [prize.equipment_name]!</span>")
+			to_chat(usr, SPAN_WARNING("Error: Insufficent bottle caps value for [prize.equipment_name]!"))
 		else
 			stored_caps -= prize.cost
 			GLOB.vendor_cash += prize.cost
-			to_chat(usr, "<span class='notice'>[src] clanks to life briefly before vending [prize.equipment_name]!</span>")
+			to_chat(usr, SPAN_NOTICE("[src] clanks to life briefly before vending [prize.equipment_name]!"))
 			new prize.equipment_path(src.loc)
 			SSblackbox.record_feedback("nested tally", "wasteland_equipment_bought", 1, list("[type]", "[prize.equipment_path]"))
 	updateUsrDialog()

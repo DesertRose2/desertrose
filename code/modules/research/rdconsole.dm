@@ -121,24 +121,24 @@ Nothing else in the console has ID requirements.
 	if(istype(D, /obj/item/disk))
 		if(istype(D, /obj/item/disk/tech_disk))
 			if(t_disk)
-				to_chat(user, "<span class='danger'>A technology disk is already loaded!</span>")
+				to_chat(user, SPAN_DANGER("A technology disk is already loaded!"))
 				return
 			if(!user.transferItemToLoc(D, src))
-				to_chat(user, "<span class='danger'>[D] is stuck to your hand!</span>")
+				to_chat(user, SPAN_DANGER("[D] is stuck to your hand!"))
 				return
 			t_disk = D
 		else if (istype(D, /obj/item/disk/design_disk))
 			if(d_disk)
-				to_chat(user, "<span class='danger'>A design disk is already loaded!</span>")
+				to_chat(user, SPAN_DANGER("A design disk is already loaded!"))
 				return
 			if(!user.transferItemToLoc(D, src))
-				to_chat(user, "<span class='danger'>[D] is stuck to your hand!</span>")
+				to_chat(user, SPAN_DANGER("[D] is stuck to your hand!"))
 				return
 			d_disk = D
 		else
-			to_chat(user, "<span class='danger'>Machine cannot accept disks in that format.</span>")
+			to_chat(user, SPAN_DANGER("Machine cannot accept disks in that format."))
 			return
-		to_chat(user, "<span class='notice'>You insert [D] into \the [src]!</span>")
+		to_chat(user, SPAN_NOTICE("You insert [D] into \the [src]!"))
 	else if(!(linked_destroy && linked_destroy.busy) && !(linked_lathe && linked_lathe.busy) && !(linked_imprinter && linked_imprinter.busy))
 		. = ..()
 
@@ -1049,7 +1049,7 @@ Nothing else in the console has ID requirements.
 			say("No Destructive Analyzer Linked!")
 			return
 		if(linked_destroy.busy)
-			to_chat(usr, "<span class='danger'>The destructive analyzer is busy at the moment.</span>")
+			to_chat(usr, SPAN_DANGER("The destructive analyzer is busy at the moment."))
 		else if(linked_destroy.loaded_item)
 			linked_destroy.unload_item()
 			screen = RDSCREEN_MENU

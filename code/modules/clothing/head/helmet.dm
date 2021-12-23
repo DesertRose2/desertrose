@@ -27,14 +27,14 @@
 	if(issignaler(I))
 		var/obj/item/assembly/signaler/S = I
 		if(F) //Has a flashlight. Player must remove it, else it will be lost forever.
-			to_chat(user, "<span class='warning'>The mounted flashlight is in the way, remove it first!</span>")
+			to_chat(user, SPAN_WARNING("The mounted flashlight is in the way, remove it first!"))
 			return
 
 		if(S.secured)
 			qdel(S)
 			var/obj/item/bot_assembly/secbot/A = new
 			user.put_in_hands(A)
-			to_chat(user, "<span class='notice'>You add the signaler to the helmet.</span>")
+			to_chat(user, SPAN_NOTICE("You add the signaler to the helmet."))
 			qdel(src)
 			return
 	return ..()
@@ -313,7 +313,7 @@
 			if(!F)
 				if(!user.transferItemToLoc(S, src))
 					return
-				to_chat(user, "<span class='notice'>You click [S] into place on [src].</span>")
+				to_chat(user, SPAN_NOTICE("You click [S] into place on [src]."))
 				if(S.on)
 					set_light(0)
 				F = S
@@ -328,7 +328,7 @@
 	if(istype(I, /obj/item/screwdriver))
 		if(F)
 			for(var/obj/item/flashlight/seclite/S in src)
-				to_chat(user, "<span class='notice'>You unscrew the seclite from [src].</span>")
+				to_chat(user, SPAN_NOTICE("You unscrew the seclite from [src]."))
 				F = null
 				S.forceMove(user.drop_location())
 				update_helmlight(user)

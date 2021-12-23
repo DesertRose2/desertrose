@@ -69,9 +69,9 @@
 	//handcuffed?
 	if(handcuffed)
 		if(istype(handcuffed, /obj/item/restraints/handcuffs/cable))
-			. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] restrained with cable!</span>"
+			. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] restrained with cable!")
 		else
-			. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!</span>"
+			. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!")
 
 	//belt
 	if(belt)
@@ -124,17 +124,17 @@
 		if(300 to INFINITY)
 			. += "<span class='warning'><B>[t_He] [t_is] convulsing violently!</B></span>"
 		if(200 to 300)
-			. += "<span class='warning'>[t_He] [t_is] extremely jittery.</span>"
+			. += SPAN_WARNING("[t_He] [t_is] extremely jittery.")
 		if(100 to 200)
-			. += "<span class='warning'>[t_He] [t_is] twitching ever so slightly.</span>"
+			. += SPAN_WARNING("[t_He] [t_is] twitching ever so slightly.")
 
 	var/appears_dead = 0
 	if(stat == DEAD || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		appears_dead = 1
 		if(suiciding)
-			. += "<span class='warning'>[t_He] appear[p_s()] to have committed suicide... there is no hope of recovery.</span>"
+			. += SPAN_WARNING("[t_He] appear[p_s()] to have committed suicide... there is no hope of recovery.")
 		if(hellbound)
-			. += "<span class='warning'>[t_His] soul seems to have been ripped out of [t_his] body.  Revival is impossible.</span>"
+			. += SPAN_WARNING("[t_His] soul seems to have been ripped out of [t_his] body.  Revival is impossible.")
 		if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(FALSE, TRUE))
 			. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_his] soul has departed...</span>"
 		else

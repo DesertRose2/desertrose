@@ -80,9 +80,9 @@
 	. = ..()
 	if(can_adjust_unarmed == TRUE)
 		if(unarmed_adjusted == TRUE)
-			. += "<span class='notice'>Alt-click on [src] to wear it on a different hand. You must take it off first, then put it on again.</span>"
+			. += SPAN_NOTICE("Alt-click on [src] to wear it on a different hand. You must take it off first, then put it on again.")
 		else
-			. += "<span class='notice'>Alt-click on [src] to wear it on a different hand. You must take it off first, then put it on again.</span>"
+			. += SPAN_NOTICE("Alt-click on [src] to wear it on a different hand. You must take it off first, then put it on again.")
 
 /obj/item/melee/unarmed/AltClick(mob/user)
 	. = ..()
@@ -93,7 +93,7 @@
 
 /obj/item/melee/unarmed/proc/toggle_unarmed_adjust()
 	unarmed_adjusted = !unarmed_adjusted
-	to_chat(usr, "<span class='notice'>[src] is ready to be worn on another hand.</span>")
+	to_chat(usr, SPAN_NOTICE("[src] is ready to be worn on another hand."))
 
 /obj/item/melee/unarmed/brass
 	name = "brass knuckles"

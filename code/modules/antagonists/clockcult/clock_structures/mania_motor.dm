@@ -25,7 +25,7 @@
 	if(active)
 		if(bad_effects)
 			try_use_power(MIN_CLOCKCULT_POWER*4)
-		visible_message("<span class='warning'>[src] hums loudly, then the sockets at its base fall dark!</span>")
+		visible_message(SPAN_WARNING("[src] hums loudly, then the sockets at its base fall dark!"))
 		playsound(src, 'sound/effects/screech.ogg', 40, 1)
 		toggle()
 		return TRUE
@@ -36,7 +36,7 @@
 		return
 	if(user.canUseTopic(src, !issilicon(user), NO_DEXTERY) && is_servant_of_ratvar(user))
 		if(!can_access_clockwork_power(src, mania_cost))
-			to_chat(user, "<span class='warning'>[src] needs more power to function!</span>")
+			to_chat(user, SPAN_WARNING("[src] needs more power to function!"))
 			return 0
 		toggle(0, user)
 

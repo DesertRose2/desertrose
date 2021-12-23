@@ -33,14 +33,14 @@
 			T.Remove()
 			qdel(T)
 			nT.Insert(C)
-			to_chat(C, "<span class='notice'>You feel your tongue.... unfluffify...?</span>")
+			to_chat(C, SPAN_NOTICE("You feel your tongue.... unfluffify...?"))
 			holder.remove_reagent(type, 10)
 	..()
 
 /datum/reagent/fermi/yamerol/overdose_process(mob/living/carbon/C)
 	var/obj/item/organ/tongue/oT = C.getorganslot(ORGAN_SLOT_TONGUE)
 	if(current_cycle == 1)
-		to_chat(C, "<span class='notice'>You feel the Yamerol sooth your tongue and lungs.</span>")
+		to_chat(C, SPAN_NOTICE("You feel the Yamerol sooth your tongue and lungs."))
 	if(current_cycle > 10)
 		if(!C.getorganslot(ORGAN_SLOT_TONGUE))
 			var/obj/item/organ/tongue/T
@@ -49,7 +49,7 @@
 			else
 				T = new()
 			T.Insert(C)
-			to_chat(C, "<span class='notice'>You feel your tongue reform in your mouth.</span>")
+			to_chat(C, SPAN_NOTICE("You feel your tongue reform in your mouth."))
 			holder.remove_reagent(type, 10)
 		else
 			if((oT.name == "fluffy tongue") && (purity == 1))
@@ -61,13 +61,13 @@
 				oT.Remove()
 				qdel(oT)
 				T.Insert(C)
-				to_chat(C, "<span class='notice'>You feel your tongue.... unfluffify...?</span>")
+				to_chat(C, SPAN_NOTICE("You feel your tongue.... unfluffify...?"))
 				holder.remove_reagent(type, 10)
 
 		if(!C.getorganslot(ORGAN_SLOT_LUNGS))
 			var/obj/item/organ/lungs/yamerol/L = new()
 			L.Insert(C)
-			to_chat(C, "<span class='notice'>You feel the yamerol merge in your chest.</span>")
+			to_chat(C, SPAN_NOTICE("You feel the yamerol merge in your chest."))
 			holder.remove_reagent(type, 10)
 	C.adjustOxyLoss(-3)
 	..()
@@ -126,7 +126,7 @@
 			else
 				M.adjustBruteLoss(-healing_factor)
 				M.adjustFireLoss(-healing_factor)
-				to_chat(M, "<span class='danger'>You feel your flesh merge with the synthetic tissue! It stings like hell!</span>")
+				to_chat(M, SPAN_DANGER("You feel your flesh merge with the synthetic tissue! It stings like hell!"))
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
 		if(method==INJECT)
 			data["injected_vol"] = reac_volume
@@ -143,7 +143,7 @@
 			if(volume >= 14)
 				if(C.regenerate_organs(only_one = TRUE))
 					C.reagents.remove_reagent(type, 15)
-					to_chat(C, "<span class='notice'>You feel something reform inside of you!</span>")
+					to_chat(C, SPAN_NOTICE("You feel something reform inside of you!"))
 
 	data["injected_vol"] -= metabolization_rate
 	if(borrowed_health)

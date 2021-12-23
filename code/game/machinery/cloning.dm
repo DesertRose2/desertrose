@@ -184,7 +184,7 @@
 
 	if(grab_ghost_when == CLONER_MATURE_CLONE)
 		H.ghostize(TRUE)	//Only does anything if they were still in their old body and not already a ghost
-		to_chat(H.get_ghost(TRUE), "<span class='notice'>Your body is beginning to regenerate in a cloning pod. You will become conscious when it is complete.</span>")
+		to_chat(H.get_ghost(TRUE), SPAN_NOTICE("Your body is beginning to regenerate in a cloning pod. You will become conscious when it is complete."))
 
 	if(H)
 		H.faction |= factions
@@ -315,15 +315,15 @@
 	var/mob/living/mob_occupant = occupant
 	if(W.GetID())
 		if(!check_access(W))
-			to_chat(user, "<span class='danger'>Access Denied.</span>")
+			to_chat(user, SPAN_DANGER("Access Denied."))
 			return
 		if(!(mob_occupant || mess))
-			to_chat(user, "<span class='danger'>Error: Pod has no occupant.</span>")
+			to_chat(user, SPAN_DANGER("Error: Pod has no occupant."))
 			return
 		else
 			connected_message("Emergency Ejection")
 			SPEAK("An emergency ejection of the current clone has occurred. Survival not guaranteed.")
-			to_chat(user, "<span class='notice'>You force an emergency ejection. </span>")
+			to_chat(user, SPAN_NOTICE("You force an emergency ejection. "))
 			go_out()
 	else
 		return ..()
@@ -332,7 +332,7 @@
 	. = ..()
 	if(!occupant)
 		return
-	to_chat(user, "<span class='warning'>You corrupt the genetic compiler.</span>")
+	to_chat(user, SPAN_WARNING("You corrupt the genetic compiler."))
 	malfunction()
 	return TRUE
 

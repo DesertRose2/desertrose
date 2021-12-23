@@ -174,7 +174,7 @@
 /datum/reagent/blood/jellyblood/on_mob_life(mob/living/carbon/M)
 	if(prob(10))
 		if(M.dna?.species?.exotic_bloodtype != "GEL")
-			to_chat(M, "<span class='danger'>Your insides are burning!</span>")
+			to_chat(M, SPAN_DANGER("Your insides are burning!"))
 		M.adjustToxLoss(rand(20,60)*REM, 0)
 		. = 1
 	else if(prob(40) && isjellyperson(M))
@@ -388,7 +388,7 @@
 		if(iscultist(M) && prob(20))
 			M.say(pick("Av'te Nar'Sie","Pa'lid Mors","INO INO ORA ANA","SAT ANA!","Daim'niodeis Arc'iai Le'eones","R'ge Na'sie","Diabo us Vo'iscum","Eld' Mon Nobis"), forced = "holy water")
 			if(prob(10))
-				M.visible_message("<span class='danger'>[M] starts having a seizure!</span>", "<span class='userdanger'>You have a seizure!</span>")
+				M.visible_message(SPAN_DANGER("[M] starts having a seizure!"), "<span class='userdanger'>You have a seizure!</span>")
 				M.Unconscious(120)
 				to_chat(M, "<span class='cultlarge'>[pick("Your blood is your bond - you are nothing without it", "Do not forget your place", \
 				"All that power, and you still fail?", "If you cannot scour this poison, I shall scour your meager life!")].</span>")
@@ -572,7 +572,7 @@
 
 	if(method == INGEST)
 		if(show_message)
-			to_chat(M, "<span class='notice'>That tasted horrible.</span>")
+			to_chat(M, SPAN_NOTICE("That tasted horrible."))
 
 	return ..()
 
@@ -1033,7 +1033,7 @@
 
 /datum/reagent/bluespace/on_mob_life(mob/living/carbon/M)
 	if(current_cycle > 10 && prob(15))
-		to_chat(M, "<span class='warning'>You feel unstable...</span>")
+		to_chat(M, SPAN_WARNING("You feel unstable..."))
 		M.Jitter(2)
 		current_cycle = 1
 		addtimer(CALLBACK(M, /mob/living/proc/bluespace_shuffle), 30)
@@ -1716,7 +1716,7 @@
 	if(method == TOUCH || method == VAPOR)
 		if(M && ishuman(M))
 			var/mob/living/carbon/human/H = M
-			to_chat(H, "<span class='danger'>Your hair is falling out in clumps!</span>")
+			to_chat(H, SPAN_DANGER("Your hair is falling out in clumps!"))
 			H.hair_style = "Bald"
 			H.facial_hair_style = "Shaved"
 			H.update_hair()
@@ -2343,21 +2343,21 @@
 		if(prob(10))
 			M.losebreath += 1
 			M.emote("cough")
-			to_chat(M, "<span class='notice'>You clear your throat.</span>")
+			to_chat(M, SPAN_NOTICE("You clear your throat."))
 	else
 		if(!knotted)
-			to_chat(M, "<span class='notice'>You feel a knot in your stomach.</span>")
+			to_chat(M, SPAN_NOTICE("You feel a knot in your stomach."))
 			knotted = TRUE
 
 		if(prob(5 + amount * 0.5)) // don't want this to cause too much damage
 			M.losebreath += 2
-			to_chat(M, "<span class='notice'>You feel a knot in your throat.</span>")
+			to_chat(M, SPAN_NOTICE("You feel a knot in your throat."))
 			M.emote("cough")
 
 		else if(prob(amount - 4))
-			to_chat(M, "<span class='warning'>Your stomach feels awfully bloated.</span>")
+			to_chat(M, SPAN_WARNING("Your stomach feels awfully bloated."))
 			playsound(M,'sound/voice/catpeople/distressed.ogg', 50, FALSE)
-			M.visible_message("<span class='warning'>[M] seems distressed!.</span>", ignored_mobs=M)
+			M.visible_message(SPAN_WARNING("[M] seems distressed!."), ignored_mobs=M)
 
 		else if(prob(amount - 8))
 			knotted = FALSE
@@ -2366,9 +2366,9 @@
 			sleep(30) //snowflake but it works, don't wanna proc this
 			if(QDELETED(M) || QDELETED(src)) //this handles race conditions about m or src not existing.
 				return
-			M.visible_message("<span class='warning'>[M] throws up a hairball! Disgusting!</span>", ignored_mobs=M)
+			M.visible_message(SPAN_WARNING("[M] throws up a hairball! Disgusting!"), ignored_mobs=M)
 			new /obj/item/toy/plush/hairball(get_turf(M))
-			to_chat(M, "<span class='notice'>Aaaah that's better!</span>")
+			to_chat(M, SPAN_NOTICE("Aaaah that's better!"))
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "cleared_stomach", /datum/mood_event/cleared_stomach, name)
 			M.reagents.del_reagent(/datum/reagent/hairball)
 			return

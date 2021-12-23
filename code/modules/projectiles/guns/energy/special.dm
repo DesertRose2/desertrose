@@ -142,17 +142,17 @@
 /obj/item/gun/energy/plasmacutter/examine(mob/user)
 	. = ..()
 	if(cell)
-		. += "<span class='notice'>[src] is [round(cell.percent())]% charged.</span>"
+		. += SPAN_NOTICE("[src] is [round(cell.percent())]% charged.")
 
 /obj/item/gun/energy/plasmacutter/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack/sheet/mineral/plasma))
 		I.use(1)
 		cell.give(1000)
-		to_chat(user, "<span class='notice'>You insert [I] in [src], recharging it.</span>")
+		to_chat(user, SPAN_NOTICE("You insert [I] in [src], recharging it."))
 	else if(istype(I, /obj/item/stack/ore/plasma))
 		I.use(1)
 		cell.give(500)
-		to_chat(user, "<span class='notice'>You insert [I] in [src], recharging it.</span>")
+		to_chat(user, SPAN_NOTICE("You insert [I] in [src], recharging it."))
 	else
 		..()
 
@@ -161,7 +161,7 @@
 	if(!QDELETED(cell) && (cell.charge >= amount * 100))
 		return TRUE
 
-	to_chat(user, "<span class='warning'>You need more charge to complete this task!</span>")
+	to_chat(user, SPAN_WARNING("You need more charge to complete this task!"))
 	return FALSE
 
 /obj/item/gun/energy/plasmacutter/use(amount)

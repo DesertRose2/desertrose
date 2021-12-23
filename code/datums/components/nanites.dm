@@ -303,7 +303,7 @@
 	if(!full_scan)
 		if(!stealth)
 			to_chat(user, "<span class='notice'><b>Nanites Detected</b></span>")
-			to_chat(user, "<span class='notice'>Saturation: [nanite_volume]/[max_nanites]</span>")
+			to_chat(user, SPAN_NOTICE("Saturation: [nanite_volume]/[max_nanites]"))
 			return TRUE
 	else
 		to_chat(user, "<span class='info'>NANITES DETECTED</span>")

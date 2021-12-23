@@ -49,7 +49,7 @@
 
 /obj/item/assembly/proc/is_secured(mob/user)
 	if(!secured)
-		to_chat(user, "<span class='warning'>The [name] is unsecured!</span>")
+		to_chat(user, SPAN_WARNING("The [name] is unsecured!"))
 		return FALSE
 	return TRUE
 
@@ -95,9 +95,9 @@
 		if((!A.secured) && (!secured))
 			holder = new/obj/item/assembly_holder(get_turf(src))
 			holder.assemble(src,A,user)
-			to_chat(user, "<span class='notice'>You attach and secure \the [A] to \the [src]!</span>")
+			to_chat(user, SPAN_NOTICE("You attach and secure \the [A] to \the [src]!"))
 		else
-			to_chat(user, "<span class='warning'>Both devices must be in attachable mode to be attached together.</span>")
+			to_chat(user, SPAN_WARNING("Both devices must be in attachable mode to be attached together."))
 		return
 	..()
 
@@ -105,9 +105,9 @@
 	if(..())
 		return TRUE
 	if(toggle_secure())
-		to_chat(user, "<span class='notice'>\The [src] is ready!</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] is ready!"))
 	else
-		to_chat(user, "<span class='notice'>\The [src] can now be attached!</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] can now be attached!"))
 	add_fingerprint(user)
 	return TRUE
 

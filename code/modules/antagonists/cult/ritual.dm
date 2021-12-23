@@ -35,7 +35,7 @@ This file contains the cult dagger and rune list code
 
 /obj/item/melee/cultblade/dagger/attack_self(mob/user)
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>[src] is covered in unintelligible shapes and markings.</span>")
+		to_chat(user, SPAN_WARNING("[src] is covered in unintelligible shapes and markings."))
 		return
 	scribe_rune(user)
 
@@ -60,7 +60,7 @@ This file contains the cult dagger and rune list code
 	if(!rune_to_scribe)
 		return
 	if(!iscultist(user, initial(rune_to_scribe.requires_full_power)))
-		to_chat(user, "<span class='warning'>You aren't strongly connected enough to Nar'sie to do draw this.</span>")
+		to_chat(user, SPAN_WARNING("You aren't strongly connected enough to Nar'sie to do draw this."))
 		return
 	if(initial(rune_to_scribe.req_keyword))
 		chosen_keyword = stripped_input(user, "Enter a keyword for the new rune.", "Words of Power")
@@ -90,10 +90,10 @@ This file contains the cult dagger and rune list code
 		var/datum/objective/eldergod/summon_objective = locate() in user_antag.cult_team?.objectives
 		var/datum/objective/sacrifice/sac_objective = locate() in user_antag.cult_team?.objectives
 		if(!summon_objective)
-			to_chat(user, "<span class='warning'>Nar'Sie does not wish to be summoned!</span>")
+			to_chat(user, SPAN_WARNING("Nar'Sie does not wish to be summoned!"))
 			return
 		if(sac_objective && !sac_objective.check_completion())
-			to_chat(user, "<span class='warning'>The sacrifice is not complete. The portal would lack the power to open if you tried!</span>")
+			to_chat(user, SPAN_WARNING("The sacrifice is not complete. The portal would lack the power to open if you tried!"))
 			return
 		if(summon_objective.check_completion())
 			to_chat(user, "<span class='cultlarge'>\"I am already here. There is no need to try to summon me now.\"</span>")
@@ -142,13 +142,13 @@ This file contains the cult dagger and rune list code
 
 /obj/item/melee/cultblade/dagger/proc/check_rune_turf(turf/T, mob/user)
 	if(isspaceturf(T))
-		to_chat(user, "<span class='warning'>You cannot scribe runes in space!</span>")
+		to_chat(user, SPAN_WARNING("You cannot scribe runes in space!"))
 		return FALSE
 	if(locate(/obj/effect/rune) in T)
 		to_chat(user, "<span class='cult'>There is already a rune here.</span>")
 		return FALSE
 	var/area/A = get_area(T)
 	if((!is_station_level(T.z) && !is_mining_level(T.z)) || (A && !A.blob_allowed))
-		to_chat(user, "<span class='warning'>The veil is not weak enough here.</span>")
+		to_chat(user, SPAN_WARNING("The veil is not weak enough here."))
 		return FALSE
 	return TRUE

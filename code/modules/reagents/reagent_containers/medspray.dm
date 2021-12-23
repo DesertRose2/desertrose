@@ -36,38 +36,38 @@
 
 /obj/item/reagent_containers/medspray/proc/attempt_spray(mob/living/L, mob/user, def_zone)
 	if(!reagents || !reagents.total_volume)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return
 
 	if(ishuman(L))
 		var/obj/item/bodypart/affecting = L.get_bodypart(check_zone(user.zone_selected))
 		if(!affecting)
-			to_chat(user, "<span class='warning'>The limb is missing!</span>")
+			to_chat(user, SPAN_WARNING("The limb is missing!"))
 			return
 		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, like patches
 			return
 		if(affecting.status != BODYPART_ORGANIC)
-			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
+			to_chat(user, SPAN_NOTICE("Medicine won't work on a robotic limb!"))
 			return
 
 	if(L == user)
-		L.visible_message("<span class='notice'>[user] attempts to [apply_method] [src] on [user.p_them()]self.</span>")
+		L.visible_message(SPAN_NOTICE("[user] attempts to [apply_method] [src] on [user.p_them()]self."))
 		if(self_delay)
 			if(!do_mob(user, L, self_delay))
 				return
 			if(!reagents || !reagents.total_volume)
 				return
-		to_chat(L, "<span class='notice'>You [apply_method] yourself with [src].</span>")
+		to_chat(L, SPAN_NOTICE("You [apply_method] yourself with [src]."))
 
 	else
 		log_combat(user, L, "attempted to apply", src, reagents.log_list())
-		L.visible_message("<span class='danger'>[user] attempts to [apply_method] [src] on [L].</span>", \
+		L.visible_message(SPAN_DANGER("[user] attempts to [apply_method] [src] on [L]."), \
 							"<span class='userdanger'>[user] attempts to [apply_method] [src] on [L].</span>")
 		if(!do_mob(user, L))
 			return
 		if(!reagents || !reagents.total_volume)
 			return
-		L.visible_message("<span class='danger'>[user] [apply_method]s [L] down with [src].</span>", \
+		L.visible_message(SPAN_DANGER("[user] [apply_method]s [L] down with [src]."), \
 							"<span class='userdanger'>[user] [apply_method]s [L] down with [src].</span>")
 
 	if(!reagents || !reagents.total_volume)

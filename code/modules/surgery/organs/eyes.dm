@@ -164,7 +164,7 @@
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Static obfuscates your vision!</span>")
+	to_chat(owner, SPAN_WARNING("Static obfuscates your vision!"))
 	owner.flash_act(visual = 1)
 	if(severity >= 70)
 		owner.adjustOrganLoss(ORGAN_SLOT_EYES, 20)
@@ -329,7 +329,7 @@
 /obj/item/organ/eyes/robotic/glow/proc/activate(silent = FALSE)
 	start_visuals()
 	if(!silent)
-		to_chat(owner, "<span class='warning'>Your [src] clicks and makes a whining noise, before shooting out a beam of light!</span>")
+		to_chat(owner, SPAN_WARNING("Your [src] clicks and makes a whining noise, before shooting out a beam of light!"))
 	active = TRUE
 	RegisterSignal(owner, COMSIG_ATOM_DIR_CHANGE, .proc/update_visuals)
 	cycle_mob_overlay()
@@ -337,7 +337,7 @@
 /obj/item/organ/eyes/robotic/glow/proc/deactivate(silent = FALSE)
 	clear_visuals()
 	if(!silent)
-		to_chat(owner, "<span class='warning'>Your [src] shuts off!</span>")
+		to_chat(owner, SPAN_WARNING("Your [src] shuts off!"))
 	active = FALSE
 	UnregisterSignal(owner, COMSIG_ATOM_DIR_CHANGE)
 	remove_mob_overlay()
@@ -425,7 +425,7 @@
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Alert: Perception visuals damaged!</span>")
+	to_chat(owner, SPAN_WARNING("Alert: Perception visuals damaged!"))
 	owner.flash_act(visual = 1)
 	if(severity >= 70)
 		owner.adjustOrganLoss(ORGAN_SLOT_EYES, 20)
@@ -438,7 +438,7 @@
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
-	to_chat(owner, "<span class='warning'>Alert: Perception visuals damaged!</span>")
+	to_chat(owner, SPAN_WARNING("Alert: Perception visuals damaged!"))
 	owner.flash_act(visual = 1)
 	if(severity >= 70)
 		owner.adjustOrganLoss(ORGAN_SLOT_EYES, 20)

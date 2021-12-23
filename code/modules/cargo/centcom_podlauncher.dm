@@ -546,7 +546,7 @@
 		. = TRUE
 		if(left_click) //When we left click:
 			dropoff_turf = get_turf(target)
-			to_chat(user, "<span class = 'notice'> You've selected [dropoff_turf] at [COORD(dropoff_turf)] as your dropoff location.</span>")
+			to_chat(user, SPAN_NOTICE(" You've selected [dropoff_turf] at [COORD(dropoff_turf)] as your dropoff location."))
 
 /datum/centcom_podlauncher/proc/refreshBay() //Called whenever the bay is switched, as well as wheneber a pod is launched
 	orderedArea = createOrderedArea(bay) //Create an ordered list full of turfs form the bay

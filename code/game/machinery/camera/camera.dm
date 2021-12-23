@@ -176,10 +176,10 @@
 	if(!I.tool_start_check(user, amount=0))
 		return TRUE
 
-	to_chat(user, "<span class='notice'>You start to weld [src]...</span>")
+	to_chat(user, SPAN_NOTICE("You start to weld [src]..."))
 	if(I.use_tool(src, user, 100, volume=50))
-		user.visible_message("<span class='warning'>[user] unwelds [src], leaving it as just a frame bolted to the wall.</span>",
-			"<span class='warning'>You unweld [src], leaving it as just a frame bolted to the wall.</span>")
+		user.visible_message(SPAN_WARNING("[user] unwelds [src], leaving it as just a frame bolted to the wall."),
+			SPAN_WARNING("You unweld [src], leaving it as just a frame bolted to the wall."))
 		deconstruct(TRUE)
 
 	return TRUE
@@ -193,18 +193,18 @@
 					return
 				qdel(I)
 				upgradeXRay()
-				to_chat(user, "<span class='notice'>You attach [I] into the assembly's inner circuits.</span>")
+				to_chat(user, SPAN_NOTICE("You attach [I] into the assembly's inner circuits."))
 			else
-				to_chat(user, "<span class='notice'>[src] already has that upgrade!</span>")
+				to_chat(user, SPAN_NOTICE("[src] already has that upgrade!"))
 			return
 
 		else if(istype(I, /obj/item/stack/sheet/mineral/plasma))
 			if(!isEmpProof())
 				if(I.use_tool(src, user, 0, amount=1))
 					upgradeEmpProof()
-					to_chat(user, "<span class='notice'>You attach [I] into the assembly's inner circuits.</span>")
+					to_chat(user, SPAN_NOTICE("You attach [I] into the assembly's inner circuits."))
 			else
-				to_chat(user, "<span class='notice'>[src] already has that upgrade!</span>")
+				to_chat(user, SPAN_NOTICE("[src] already has that upgrade!"))
 			return
 
 		else if(istype(I, /obj/item/assembly/prox_sensor))
@@ -212,10 +212,10 @@
 				if(!user.temporarilyRemoveItemFromInventory(I))
 					return
 				upgradeMotion()
-				to_chat(user, "<span class='notice'>You attach [I] into the assembly's inner circuits.</span>")
+				to_chat(user, SPAN_NOTICE("You attach [I] into the assembly's inner circuits."))
 				qdel(I)
 			else
-				to_chat(user, "<span class='notice'>[src] already has that upgrade!</span>")
+				to_chat(user, SPAN_NOTICE("[src] already has that upgrade!"))
 			return
 
 	// OTHER
@@ -234,7 +234,7 @@
 			P = I
 			itemname = P.name
 			info = P.notehtml
-		to_chat(U, "<span class='notice'>You hold \the [itemname] up to the camera...</span>")
+		to_chat(U, SPAN_NOTICE("You hold \the [itemname] up to the camera..."))
 		U.DelayNextAction(CLICK_CD_MELEE)
 		for(var/mob/O in GLOB.player_list)
 			if(isAI(O))
@@ -253,14 +253,14 @@
 
 	else if(istype(I, /obj/item/camera_bug))
 		if(!can_use())
-			to_chat(user, "<span class='notice'>Camera non-functional.</span>")
+			to_chat(user, SPAN_NOTICE("Camera non-functional."))
 			return
 		if(bug)
-			to_chat(user, "<span class='notice'>Camera bug removed.</span>")
+			to_chat(user, SPAN_NOTICE("Camera bug removed."))
 			bug.bugged_cameras -= src.c_tag
 			bug = null
 		else
-			to_chat(user, "<span class='notice'>Camera bugged.</span>")
+			to_chat(user, SPAN_NOTICE("Camera bugged."))
 			bug = I
 			bug.bugged_cameras[src.c_tag] = src
 		return
@@ -328,10 +328,10 @@
 			addtimer(CALLBACK(src, .proc/cancelCameraAlarm), 100)
 	if(displaymessage)
 		if(user)
-			visible_message("<span class='danger'>[user] [change_msg] [src]!</span>")
+			visible_message(SPAN_DANGER("[user] [change_msg] [src]!"))
 			add_hiddenprint(user)
 		else
-			visible_message("<span class='danger'>\The [src] [change_msg]!</span>")
+			visible_message(SPAN_DANGER("\The [src] [change_msg]!"))
 
 		playsound(src.loc, 'sound/items/wirecutter.ogg', 100, 1)
 	update_icon()

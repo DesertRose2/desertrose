@@ -24,7 +24,7 @@
 /datum/clockwork_scripture/create_object/stargazer/check_special_requirements()
 	var/area/A = get_area(invoker)
 	if(A.outdoors || A.map_name == "Space" || !A.blob_allowed)
-		to_chat(invoker, "<span class='danger'>Stargazers can't be built off-station.</span>")
+		to_chat(invoker, SPAN_DANGER("Stargazers can't be built off-station."))
 		return
 	return ..()
 
@@ -179,7 +179,7 @@
 
 /datum/clockwork_scripture/vanguard/check_special_requirements()
 	if(!GLOB.ratvar_awakens && islist(invoker.stun_absorption) && invoker.stun_absorption["vanguard"] && invoker.stun_absorption["vanguard"]["end_time"] > world.time)
-		to_chat(invoker, "<span class='warning'>You are already shielded by a Vanguard!</span>")
+		to_chat(invoker, SPAN_WARNING("You are already shielded by a Vanguard!"))
 		return FALSE
 	return TRUE
 
@@ -237,10 +237,10 @@
 
 /datum/clockwork_scripture/abscond/check_special_requirements()
 	if(is_reebe(invoker.z))
-		to_chat(invoker, "<span class='danger'>You're at Reebe, attempting to warp in the void could cause you to share your masters fate of banishment!.</span>")
+		to_chat(invoker, SPAN_DANGER("You're at Reebe, attempting to warp in the void could cause you to share your masters fate of banishment!."))
 		return
 	if(!isturf(invoker.loc))
-		to_chat(invoker, "<span class='danger'>You must be visible to warp!</span>")
+		to_chat(invoker, SPAN_DANGER("You must be visible to warp!"))
 		return
 	return TRUE
 
@@ -255,9 +255,9 @@
 		T = get_turf(pick(GLOB.servant_spawns))
 	if(!do_teleport(invoker, T, channel = TELEPORT_CHANNEL_CULT, forced = TRUE))
 		return
-	invoker.visible_message("<span class='warning'>[invoker] flickers and phases out of existence!</span>", \
+	invoker.visible_message(SPAN_WARNING("[invoker] flickers and phases out of existence!"), \
 	"<span class='bold sevtug_small'>You feel a dizzying sense of vertigo as you're yanked through the fabric of reality!</span>")
-	T.visible_message("<span class='warning'>[invoker] flickers and phases into existence!</span>")
+	T.visible_message(SPAN_WARNING("[invoker] flickers and phases into existence!"))
 	playsound(invoker, 'sound/magic/magic_missile.ogg', 50, TRUE)
 	playsound(T, 'sound/magic/magic_missile.ogg', 50, TRUE)
 	do_sparks(5, TRUE, invoker)
@@ -325,7 +325,7 @@
 
 /datum/clockwork_scripture/spatial_gateway/check_special_requirements()
 	if(!isturf(invoker.loc))
-		to_chat(invoker, "<span class='warning'>You must not be inside an object to use this scripture!</span>")
+		to_chat(invoker, SPAN_WARNING("You must not be inside an object to use this scripture!"))
 		return FALSE
 	var/other_servants = 0
 	for(var/mob/living/L in GLOB.alive_mob_list)
@@ -335,7 +335,7 @@
 		if(O.anchored)
 			other_servants++
 	if(!other_servants)
-		to_chat(invoker, "<span class='warning'>There are no other conscious servants or anchored clockwork obelisks!</span>")
+		to_chat(invoker, SPAN_WARNING("There are no other conscious servants or anchored clockwork obelisks!"))
 		return FALSE
 	return TRUE
 

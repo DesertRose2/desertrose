@@ -69,7 +69,7 @@
 	if(!map)
 		return
 	if(copytext("[map]", -4) != ".dmm")//4 == length(".dmm")
-		to_chat(src, "<span class='warning'>Filename must end in '.dmm': [map]</span>")
+		to_chat(src, SPAN_WARNING("Filename must end in '.dmm': [map]"))
 		return
 	var/datum/map_template/M
 	switch(alert(src, "What kind of map is this?", "Map type", "Normal", "Shuttle", "Cancel"))
@@ -80,7 +80,7 @@
 		else
 			return
 	if(!M.cached_map)
-		to_chat(src, "<span class='warning'>Map template '[map]' failed to parse properly.</span>")
+		to_chat(src, SPAN_WARNING("Map template '[map]' failed to parse properly."))
 		return
 
 	var/datum/map_report/report = M.cached_map.check_for_errors()
@@ -99,4 +99,4 @@
 
 	SSmapping.map_templates[M.id] = M
 	message_admins("<span class='adminnotice'>[key_name_admin(src)] has uploaded a map template '[map]' ([M.width]x[M.height])[report_link].</span>")
-	to_chat(src, "<span class='notice'>Map template '[map]' ready to place ([M.width]x[M.height])</span>")
+	to_chat(src, SPAN_NOTICE("Map template '[map]' ready to place ([M.width]x[M.height])"))

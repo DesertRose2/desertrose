@@ -105,7 +105,7 @@
 /obj/machinery/satellite/proc/toggle(mob/user)
 	if(!active && !isinspace())
 		if(user)
-			to_chat(user, "<span class='warning'>You can only activate [src] in space.</span>")
+			to_chat(user, SPAN_WARNING("You can only activate [src] in space."))
 		return FALSE
 	if(user)
 		to_chat(user, "<span class='notice'>You [active ? "deactivate": "activate"] [src].</span>")
@@ -146,7 +146,7 @@
 
 /obj/machinery/satellite/meteor_shield/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/disk/meteor))
-		to_chat(user, "<span class='notice'>The disk uploads better tracking and rang modification software.</span>")
+		to_chat(user, SPAN_NOTICE("The disk uploads better tracking and rang modification software."))
 		kill_range = 17
 	else
 		return ..()
@@ -202,7 +202,7 @@
 	if(obj_flags & EMAGGED)
 		return
 	obj_flags |= EMAGGED
-	to_chat(user, "<span class='notice'>You access the satellite's debug mode, increasing the chance of meteor strikes.</span>")
+	to_chat(user, SPAN_NOTICE("You access the satellite's debug mode, increasing the chance of meteor strikes."))
 	if(active)
 		change_meteor_chance(4)
 	return TRUE

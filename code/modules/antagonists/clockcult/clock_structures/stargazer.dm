@@ -62,9 +62,9 @@
 			set_light(1.5, 5)
 		else
 			if(anchored) //We lost visibility somehow
-				visible_message("<span class='danger'>[src] flickers, and falls dark.</span>")
+				visible_message(SPAN_DANGER("[src] flickers, and falls dark."))
 			else
-				visible_message("<span class='danger'>[src] whooshes quietly as it slides into a less bulky form.</span>")
+				visible_message(SPAN_DANGER("[src] whooshes quietly as it slides into a less bulky form."))
 			cut_overlays()
 			set_light(0)
 	return has_starlight

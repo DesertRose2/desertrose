@@ -57,7 +57,7 @@
 	else if(istype(old_headgear, /obj/item/clothing/mask/chameleon/drone))
 		new_headgear = new /obj/item/clothing/head/chameleon/drone()
 	else
-		to_chat(owner, "<span class='warning'>You shouldn't be able to toggle a camogear helmetmask if you're not wearing it</span>")
+		to_chat(owner, SPAN_WARNING("You shouldn't be able to toggle a camogear helmetmask if you're not wearing it"))
 	if(new_headgear)
 		// Force drop the item in the headslot, even though
 		// it's TRAIT_NODROP
@@ -495,7 +495,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/mask/chameleon)
 	randomise_action.UpdateButtonIcon()
 
 /obj/item/clothing/mask/chameleon/drone/attack_self(mob/user)
-	to_chat(user, "<span class='notice'>[src] does not have a voice changer.</span>")
+	to_chat(user, SPAN_NOTICE("[src] does not have a voice changer."))
 
 CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/shoes/chameleon)
 	name = "black shoes"

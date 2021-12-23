@@ -61,12 +61,12 @@
 	if(!foldable)
 		return
 	if(contents.len)
-		to_chat(user, "<span class='warning'>You can't fold this box with items still inside!</span>")
+		to_chat(user, SPAN_WARNING("You can't fold this box with items still inside!"))
 		return
 	if(!ispath(foldable))
 		return
 
-	to_chat(user, "<span class='notice'>You fold [src] flat.</span>")
+	to_chat(user, SPAN_NOTICE("You fold [src] flat."))
 	var/obj/item/I = new foldable
 	qdel(src)
 	user.put_in_hands(I)
@@ -737,7 +737,7 @@
 	. = ..()
 	user.DelayNextAction(CLICK_CD_MELEE)
 	playsound(src, "rustle", 50, 1, -5)
-	user.visible_message("<span class='notice'>[user] hugs \the [src].</span>","<span class='notice'>You hug \the [src].</span>")
+	user.visible_message(SPAN_NOTICE("[user] hugs \the [src]."),SPAN_NOTICE("You hug \the [src]."))
 	SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT,"hugbox", /datum/mood_event/hugbox)
 
 /////clown box & honkbot assembly
@@ -749,12 +749,12 @@
 /obj/item/storage/box/clown/attackby(obj/item/I, mob/user, params)
 	if((istype(I, /obj/item/bodypart/l_arm/robot)) || (istype(I, /obj/item/bodypart/r_arm/robot)))
 		if(contents.len) //prevent accidently deleting contents
-			to_chat(user, "<span class='warning'>You need to empty [src] out first!</span>")
+			to_chat(user, SPAN_WARNING("You need to empty [src] out first!"))
 			return
 		if(!user.temporarilyRemoveItemFromInventory(I))
 			return
 		qdel(I)
-		to_chat(user, "<span class='notice'>You add some wheels to the [src]! You've got an honkbot assembly now! Honk!</span>")
+		to_chat(user, SPAN_NOTICE("You add some wheels to the [src]! You've got an honkbot assembly now! Honk!"))
 		var/obj/item/bot_assembly/honkbot/A = new
 		qdel(src)
 		user.put_in_hands(A)
@@ -887,19 +887,19 @@
 				desc = "A paper sack with a crude smile etched onto the side."
 			else
 				return FALSE
-		to_chat(user, "<span class='notice'>You make some modifications to [src] using your pen.</span>")
+		to_chat(user, SPAN_NOTICE("You make some modifications to [src] using your pen."))
 		icon_state = "paperbag_[choice]"
 		item_state = "paperbag_[choice]"
 		return FALSE
 	else if(W.get_sharpness())
 		if(!contents.len)
 			if(item_state == "paperbag_None")
-				user.show_message("<span class='notice'>You cut eyeholes into [src].</span>", MSG_VISUAL)
+				user.show_message(SPAN_NOTICE("You cut eyeholes into [src]."), MSG_VISUAL)
 				new /obj/item/clothing/head/papersack(user.loc)
 				qdel(src)
 				return FALSE
 			else if(item_state == "paperbag_SmileyFace")
-				user.show_message("<span class='notice'>You cut eyeholes into [src] and modify the design.</span>", MSG_VISUAL)
+				user.show_message(SPAN_NOTICE("You cut eyeholes into [src] and modify the design."), MSG_VISUAL)
 				new /obj/item/clothing/head/papersack/smiley(user.loc)
 				qdel(src)
 				return FALSE
@@ -918,10 +918,10 @@
 	if(user.incapacitated())
 		return FALSE
 	if(contents.len)
-		to_chat(user, "<span class='warning'>You can't modify [src] with items still inside!</span>")
+		to_chat(user, SPAN_WARNING("You can't modify [src] with items still inside!"))
 		return FALSE
 	if(!P || !user.is_holding(P))
-		to_chat(user, "<span class='warning'>You need a pen to modify [src]!</span>")
+		to_chat(user, SPAN_WARNING("You need a pen to modify [src]!"))
 		return FALSE
 	return TRUE
 
@@ -1323,7 +1323,7 @@
 
 /obj/item/secbat/attack_self(mob/user)
 	new /mob/living/simple_animal/hostile/retaliate/bat/secbat(user.loc)
-	to_chat(user, "<span class='notice'>You open the box, releasing the secbat!</span>")
+	to_chat(user, SPAN_NOTICE("You open the box, releasing the secbat!"))
 	var/obj/item/stack/sheet/cardboard/I = new(user.drop_location())
 	qdel(src)
 	user.put_in_hands(I)

@@ -99,7 +99,7 @@
 			brainmob.set_species(ZI.old_species)	//For if the brain is cloned
 	if(!decoy_override && L.mind && L.mind.current)
 		L.mind.transfer_to(brainmob)
-	to_chat(brainmob, "<span class='notice'>You feel slightly disoriented. That's normal when you're just a brain.</span>")
+	to_chat(brainmob, SPAN_NOTICE("You feel slightly disoriented. That's normal when you're just a brain."))
 
 /obj/item/organ/brain/attackby(obj/item/O, mob/user, params)
 	user.DelayNextAction(CLICK_CD_MELEE)
@@ -119,15 +119,15 @@
 			N.volume *= (M1.volume*0.5)
 
 		if(!O.reagents.has_reagent(/datum/reagent/medicine/neurine, 10))
-			to_chat(user, "<span class='warning'>There's not enough neurine in [O] to restore [src]!</span>")
+			to_chat(user, SPAN_WARNING("There's not enough neurine in [O] to restore [src]!"))
 			return
 
-		user.visible_message("<span class='notice'>[user] starts to pour the contents of [O] onto [src].</span>", "<span class='notice'>You start to slowly pour the contents of [O] onto [src].</span>")
+		user.visible_message(SPAN_NOTICE("[user] starts to pour the contents of [O] onto [src]."), SPAN_NOTICE("You start to slowly pour the contents of [O] onto [src]."))
 		if(!do_after(user, 60, TRUE, src))
-			to_chat(user, "<span class='warning'>You failed to pour [O] onto [src]!</span>")
+			to_chat(user, SPAN_WARNING("You failed to pour [O] onto [src]!"))
 			return
 
-		user.visible_message("<span class='notice'>[user] pours the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink.</span>", "<span class='notice'>You pour the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink.</span>")
+		user.visible_message(SPAN_NOTICE("[user] pours the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink."), SPAN_NOTICE("You pour the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink."))
 		setOrganDamage((damage - (0.10 * maxHealth)*(N.volume/10)))	//heals a small amount, and by using "setorgandamage", we clear the failing variable if that was up
 		O.reagents.clear_reagents()
 
@@ -145,19 +145,19 @@
 		. = TRUE //don't do attack animation.
 		var/datum/reagent/medicine/mannitol/M = reagents.has_reagent(/datum/reagent/medicine/mannitol)
 		if(brain_death || brainmob?.health <= HEALTH_THRESHOLD_DEAD) //if the brain is fucked anyway, do nothing
-			to_chat(user, "<span class='warning'>[src] is far too damaged, you'll have to use neurine on it!</span>")
+			to_chat(user, SPAN_WARNING("[src] is far too damaged, you'll have to use neurine on it!"))
 			return
 
 		if(!O.reagents.has_reagent(/datum/reagent/medicine/mannitol, 10))
-			to_chat(user, "<span class='warning'>There's not enough mannitol in [O] to restore [src]!</span>")
+			to_chat(user, SPAN_WARNING("There's not enough mannitol in [O] to restore [src]!"))
 			return
 
-		user.visible_message("<span class='notice'>[user] starts to pour the contents of [O] onto [src].</span>", "<span class='notice'>You start to slowly pour the contents of [O] onto [src].</span>")
+		user.visible_message(SPAN_NOTICE("[user] starts to pour the contents of [O] onto [src]."), SPAN_NOTICE("You start to slowly pour the contents of [O] onto [src]."))
 		if(!do_after(user, 60, TRUE, src))
-			to_chat(user, "<span class='warning'>You failed to pour [O] onto [src]!</span>")
+			to_chat(user, SPAN_WARNING("You failed to pour [O] onto [src]!"))
 			return
 
-		user.visible_message("<span class='notice'>[user] pours the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink.</span>", "<span class='notice'>You pour the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink.</span>")
+		user.visible_message(SPAN_NOTICE("[user] pours the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink."), SPAN_NOTICE("You pour the contents of [O] onto [src], causing it to reform its original shape and turn a slightly brighter shade of pink."))
 		setOrganDamage((damage - (0.05 * maxHealth)*(M.volume/10)))	//heals a small amount, and by using "setorgandamage", we clear the failing variable if that was up
 		O.reagents.clear_reagents()
 		return
@@ -200,7 +200,7 @@
 		return ..()
 
 	if((C.head && (C.head.flags_cover & HEADCOVERSEYES)) || (C.wear_mask && (C.wear_mask.flags_cover & MASKCOVERSEYES)) || (C.glasses && (C.glasses.flags_1 & GLASSESCOVERSEYES)))
-		to_chat(user, "<span class='warning'>You're going to need to remove [C.p_their()] head cover first!</span>")
+		to_chat(user, SPAN_WARNING("You're going to need to remove [C.p_their()] head cover first!"))
 		return
 
 //since these people will be dead M != usr
@@ -212,14 +212,14 @@
 		if(C == user)
 			msg = "[user] inserts [src] into [user.p_their()] head!"
 
-		C.visible_message("<span class='danger'>[msg]</span>",
+		C.visible_message(SPAN_DANGER("[msg]"),
 						"<span class='userdanger'>[msg]</span>")
 
 		if(C != user)
-			to_chat(C, "<span class='notice'>[user] inserts [src] into your head.</span>")
-			to_chat(user, "<span class='notice'>You insert [src] into [C]'s head.</span>")
+			to_chat(C, SPAN_NOTICE("[user] inserts [src] into your head."))
+			to_chat(user, SPAN_NOTICE("You insert [src] into [C]'s head."))
 		else
-			to_chat(user, "<span class='notice'>You insert [src] into your head.</span>"	)
+			to_chat(user, SPAN_NOTICE("You insert [src] into your head.")	)
 
 		Insert(C)
 	else

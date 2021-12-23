@@ -118,7 +118,7 @@
 /datum/reagent/consumable/cooking_oil/reaction_obj(obj/O, reac_volume)
 	if(holder && holder.chem_temp >= fry_temperature)
 		if(isitem(O) && !O.GetComponent(/datum/component/fried) && !(O.resistance_flags & (FIRE_PROOF|INDESTRUCTIBLE)) && (!O.reagents || isfood(O))) //don't fry stuff we shouldn't
-			O.loc.visible_message("<span class='warning'>[O] rapidly fries as it's splashed with hot oil! Somehow.</span>")
+			O.loc.visible_message(SPAN_WARNING("[O] rapidly fries as it's splashed with hot oil! Somehow."))
 			O.fry(volume)
 			if(O.reagents)
 				O.reagents.add_reagent(/datum/reagent/consumable/cooking_oil, reac_volume)
@@ -130,7 +130,7 @@
 		boiling = TRUE
 	if(method == VAPOR || method == TOUCH) //Directly coats the mob, and doesn't go into their bloodstream
 		if(boiling)
-			M.visible_message("<span class='warning'>The boiling oil sizzles as it covers [M]!</span>", \
+			M.visible_message(SPAN_WARNING("The boiling oil sizzles as it covers [M]!"), \
 			"<span class='userdanger'>You're covered in boiling oil!</span>")
 			M.emote("scream")
 			playsound(M, 'sound/machines/fryer/deep_fryer_emerge.ogg', 25, TRUE)
@@ -451,7 +451,7 @@
 /datum/reagent/consumable/garlic/on_mob_life(mob/living/carbon/M)
 	if(isvampire(M)) //incapacitating but not lethal. Unfortunately, vampires cannot vomit.
 		if(prob(min(25, current_cycle)))
-			to_chat(M, "<span class='danger'>You can't get the scent of garlic out of your nose! You can barely think...</span>")
+			to_chat(M, SPAN_DANGER("You can't get the scent of garlic out of your nose! You can barely think..."))
 			M.Stun(10)
 			M.Jitter(10)
 			return
@@ -469,10 +469,10 @@
 		switch(method)
 			if(INGEST)
 				if(prob(min(30, current_cycle)))
-					to_chat(M, "<span class='warning'>You can't get the smell of garlic out of your nose! You can't think straight because of it!</span>")
+					to_chat(M, SPAN_WARNING("You can't get the smell of garlic out of your nose! You can't think straight because of it!"))
 					M.Jitter(15)
 				if(prob(min(15, current_cycle)))
-					M.visible_message("<span class='danger'>Something you ate is burning your stomach!</span>", "<span class='warning'>[M] clutches their stomach and falls to the ground!</span>")
+					M.visible_message(SPAN_DANGER("Something you ate is burning your stomach!"), SPAN_WARNING("[M] clutches their stomach and falls to the ground!"))
 					M.Knockdown(20)
 					M.emote("scream")
 				if(prob(min(5, current_cycle)) && iscarbon(M))
@@ -480,7 +480,7 @@
 					C.vomit()
 			if(INJECT)
 				if(prob(min(20, current_cycle)))
-					to_chat(M, "<span class='warning'>You feel like your veins are boiling!</span>")
+					to_chat(M, SPAN_WARNING("You feel like your veins are boiling!"))
 					M.emote("scream")
 					M.adjustFireLoss(5)
 	..()
@@ -686,10 +686,10 @@
 				unprotected = TRUE
 	if(unprotected)
 		if(!M.getorganslot(ORGAN_SLOT_EYES))	//can't blind somebody with no eyes
-			to_chat(M, "<span class = 'notice'>Your eye sockets feel wet.</span>")
+			to_chat(M, SPAN_NOTICE("Your eye sockets feel wet."))
 		else
 			if(!M.eye_blurry)
-				to_chat(M, "<span class = 'warning'>Tears well up in your eyes!</span>")
+				to_chat(M, SPAN_WARNING("Tears well up in your eyes!"))
 			M.blind_eyes(2)
 			M.blur_eyes(5)
 	..()
@@ -699,7 +699,7 @@
 	if(M.eye_blurry)	//Don't worsen vision if it was otherwise fine
 		M.blur_eyes(4)
 		if(prob(10))
-			to_chat(M, "<span class = 'warning'>Your eyes sting!</span>")
+			to_chat(M, SPAN_WARNING("Your eyes sting!"))
 			M.blind_eyes(2)
 
 

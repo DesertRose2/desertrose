@@ -31,7 +31,7 @@
 				if(prob(2))
 					to_chat(H, "<span class='warning'>You feel [pick("discomfort", "pressure", "a burning sensation", "pain")] in your chest.</span>")
 				if(prob(2))
-					to_chat(H, "<span class='warning'>You feel dizzy.</span>")
+					to_chat(H, SPAN_WARNING("You feel dizzy."))
 					H.confused += 6
 				if(prob(3))
 					to_chat(H, "<span class='warning'>You feel [pick("full", "nauseated", "sweaty", "weak", "tired", "short on breath", "uneasy")].</span>")
@@ -40,14 +40,14 @@
 					H.playsound_local(H, 'sound/health/slowbeat.ogg',40,0, channel = CHANNEL_HEARTBEAT)
 					sound = TRUE
 				if(prob(3))
-					to_chat(H, "<span class='danger'>You feel a sharp pain in your chest!</span>")
+					to_chat(H, SPAN_DANGER("You feel a sharp pain in your chest!"))
 					if(prob(25))
 						affected_mob.vomit(95)
 					H.emote("cough")
 					H.DefaultCombatKnockdown(40)
 					H.losebreath += 4
 				if(prob(3))
-					to_chat(H, "<span class='danger'>You feel very weak and dizzy...</span>")
+					to_chat(H, SPAN_DANGER("You feel very weak and dizzy..."))
 					H.confused += 8
 					H.adjustStaminaLoss(40)
 					H.emote("cough")

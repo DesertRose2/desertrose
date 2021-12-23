@@ -72,7 +72,7 @@ GLOBAL_VAR(posibrain_notify_cooldown)
 	if(!brainmob)
 		brainmob = new(src)
 	if(is_occupied())
-		to_chat(user, "<span class='warning'>This [name] is already active!</span>")
+		to_chat(user, SPAN_WARNING("This [name] is already active!"))
 		return
 	if(next_ask > world.time)
 		to_chat(user, recharge_message)
@@ -149,7 +149,7 @@ GLOBAL_VAR(posibrain_notify_cooldown)
 	if(QDELETED(brainmob))
 		return
 	if(is_occupied()) //Prevents hostile takeover if two ghosts get the prompt or link for the same brain.
-		to_chat(candidate, "<span class='warning'>This [name] was taken over before you could get to it! Perhaps it might be available later?</span>")
+		to_chat(candidate, SPAN_WARNING("This [name] was taken over before you could get to it! Perhaps it might be available later?"))
 		return FALSE
 	if(candidate.mind && !isobserver(candidate))
 		candidate.mind.transfer_to(brainmob)

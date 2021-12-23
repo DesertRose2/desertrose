@@ -12,10 +12,10 @@
 
 /obj/structure/fluff/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/wrench) && deconstructible)
-		user.visible_message("<span class='notice'>[user] starts disassembling [src]...</span>", "<span class='notice'>You start disassembling [src]...</span>")
+		user.visible_message(SPAN_NOTICE("[user] starts disassembling [src]..."), SPAN_NOTICE("You start disassembling [src]..."))
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 50))
-			user.visible_message("<span class='notice'>[user] disassembles [src]!</span>", "<span class='notice'>You break down [src] into scrap metal.</span>")
+			user.visible_message(SPAN_NOTICE("[user] disassembles [src]!"), SPAN_NOTICE("You break down [src] into scrap metal."))
 			playsound(user, 'sound/items/deconstruct.ogg', 50, 1)
 			new/obj/item/stack/sheet/metal(drop_location())
 			qdel(src)

@@ -320,7 +320,7 @@ All the important duct code:
 	var/obj/machinery/duct/D = A
 	var/obj/item/I = user.get_active_held_item()
 	if(I?.tool_behaviour != TOOL_WRENCH)
-		to_chat(user, "<span class='warning'>You need to be holding a wrench in your active hand to do that!</span>")
+		to_chat(user, SPAN_WARNING("You need to be holding a wrench in your active hand to do that!"))
 		return
 	if(get_dist(src, D) != 1)
 		return
@@ -404,7 +404,7 @@ All the important duct code:
 
 /obj/item/stack/ducts/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It's current color and layer are [duct_color] and [duct_layer]. Use in-hand to change.</span>"
+	. += SPAN_NOTICE("It's current color and layer are [duct_color] and [duct_layer]. Use in-hand to change.")
 
 /obj/item/stack/ducts/attack_self(mob/user)
 	var/new_layer = input("Select a layer", "Layer") as null|anything in layers

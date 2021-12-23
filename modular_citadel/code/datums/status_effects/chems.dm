@@ -26,7 +26,7 @@
 /datum/status_effect/chem/SGDF/on_remove()
 	log_reagent("FERMICHEM: SGDF mind shift applied. [owner] is now playing as their clone and should not have memories after their clone split (look up SGDF status applied). ID: [owner.key]")
 	originalmind.transfer_to(fermi_Clone)
-	to_chat(owner, "<span class='warning'>Lucidity shoots to your previously blank mind as your mind suddenly finishes the cloning process. You marvel for a moment at yourself, as your mind subconciously recollects all your memories up until the point when you cloned yourself. Curiously, you find that you memories are blank after you ingested the synthetic serum, leaving you to wonder where the other you is.</span>")
+	to_chat(owner, SPAN_WARNING("Lucidity shoots to your previously blank mind as your mind suddenly finishes the cloning process. You marvel for a moment at yourself, as your mind subconciously recollects all your memories up until the point when you cloned yourself. Curiously, you find that you memories are blank after you ingested the synthetic serum, leaving you to wonder where the other you is."))
 	fermi_Clone = null
 	return ..()
 
@@ -56,12 +56,12 @@
 
 	if (B.size == "huge")
 		if(prob(1))
-			to_chat(owner, "<span class='notice'>Your back is feeling sore.</span>")
+			to_chat(owner, SPAN_NOTICE("Your back is feeling sore."))
 			var/target = H.get_bodypart(BODY_ZONE_CHEST)
 			H.apply_damage(0.1, BRUTE, target)
 	else
 		if(prob(1))
-			to_chat(H, "<span class='notice'>Your back is feeling a little sore.</span>")
+			to_chat(H, SPAN_NOTICE("Your back is feeling a little sore."))
 	last_checked_size = B.cached_size
 	..()
 
@@ -392,9 +392,9 @@
 					addtimer(CALLBACK(M, /mob/verb/a_intent_change, INTENT_HARM), 2)
 					addtimer(CALLBACK(M, /mob/proc/click_random_mob), 2)
 					if(lewd)
-						to_chat(owner, "<span class='warning'>You are overwhelmed with anger at the lack of [enthrallGender]'s presence and suddenly lash out!</span>")
+						to_chat(owner, SPAN_WARNING("You are overwhelmed with anger at the lack of [enthrallGender]'s presence and suddenly lash out!"))
 					else
-						to_chat(owner, "<span class='warning'>You are overwhelmed with anger and suddenly lash out!</span>")
+						to_chat(owner, SPAN_WARNING("You are overwhelmed with anger and suddenly lash out!"))
 			if(90)
 				SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "EnthMissing2")
 				var/message = "[(lewd?"Where are you [enthrallGender]??!":"I need to find [master]!")]"

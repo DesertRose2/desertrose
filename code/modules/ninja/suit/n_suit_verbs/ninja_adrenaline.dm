@@ -16,4 +16,4 @@
 /obj/item/clothing/suit/space/space_ninja/proc/ninjaboost_after()
 	var/mob/living/carbon/human/H = affecting
 	H.reagents.add_reagent(/datum/reagent/radium, a_transfer)
-	to_chat(H, "<span class='danger'>You are beginning to feel the after-effect of the injection.</span>")
+	to_chat(H, SPAN_DANGER("You are beginning to feel the after-effect of the injection."))

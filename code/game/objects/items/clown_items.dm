@@ -63,28 +63,28 @@
 	//I couldn't feasibly  fix the overlay bugs caused by cleaning items we are wearing.
 	//So this is a workaround. This also makes more sense from an IC standpoint. ~Carn
 	if(user.client && ((target in user.client.screen) && !user.is_holding(target)))
-		to_chat(user, "<span class='warning'>You need to take that [target.name] off before cleaning it!</span>")
+		to_chat(user, SPAN_WARNING("You need to take that [target.name] off before cleaning it!"))
 	else if(istype(target, /obj/effect/decal/cleanable))
-		user.visible_message("[user] begins to scrub \the [target.name] out with [src].", "<span class='warning'>You begin to scrub \the [target.name] out with [src]...</span>")
+		user.visible_message("[user] begins to scrub \the [target.name] out with [src].", SPAN_WARNING("You begin to scrub \the [target.name] out with [src]..."))
 		if(do_after(user, src.cleanspeed, target = target))
-			to_chat(user, "<span class='notice'>You scrub \the [target.name] out.</span>")
+			to_chat(user, SPAN_NOTICE("You scrub \the [target.name] out."))
 			qdel(target)
 	else if(ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 		var/mob/living/carbon/human/H = user
-		user.visible_message("<span class='warning'>\the [user] washes \the [target]'s mouth out with [src.name]!</span>", "<span class='notice'>You wash \the [target]'s mouth out with [src.name]!</span>") //washes mouth out with soap sounds better than 'the soap' here
+		user.visible_message(SPAN_WARNING("\the [user] washes \the [target]'s mouth out with [src.name]!"), SPAN_NOTICE("You wash \the [target]'s mouth out with [src.name]!")) //washes mouth out with soap sounds better than 'the soap' here
 		H.lip_style = null //removes lipstick
 		H.update_body()
 		return
 	else if(istype(target, /obj/structure/window))
-		user.visible_message("[user] begins to clean \the [target.name] with [src]...", "<span class='notice'>You begin to clean \the [target.name] with [src]...</span>")
+		user.visible_message("[user] begins to clean \the [target.name] with [src]...", SPAN_NOTICE("You begin to clean \the [target.name] with [src]..."))
 		if(do_after(user, src.cleanspeed, target = target))
-			to_chat(user, "<span class='notice'>You clean \the [target.name].</span>")
+			to_chat(user, SPAN_NOTICE("You clean \the [target.name]."))
 			target.remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 			target.set_opacity(initial(target.opacity))
 	else
-		user.visible_message("[user] begins to clean \the [target.name] with [src]...", "<span class='notice'>You begin to clean \the [target.name] with [src]...</span>")
+		user.visible_message("[user] begins to clean \the [target.name] with [src]...", SPAN_NOTICE("You begin to clean \the [target.name] with [src]..."))
 		if(do_after(user, src.cleanspeed, target = target))
-			to_chat(user, "<span class='notice'>You clean \the [target.name].</span>")
+			to_chat(user, SPAN_NOTICE("You clean \the [target.name]."))
 			var/obj/effect/decal/cleanable/C = locate() in target
 			qdel(C)
 			target.remove_atom_colour(WASHABLE_COLOUR_PRIORITY)

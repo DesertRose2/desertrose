@@ -101,21 +101,21 @@
 			++loaded
 			add_seed(G)
 		if (loaded)
-			to_chat(user, "<span class='notice'>You put as many seeds from \the [O.name] into [src] as you can.</span>")
+			to_chat(user, SPAN_NOTICE("You put as many seeds from \the [O.name] into [src] as you can."))
 		else
-			to_chat(user, "<span class='notice'>There are no seeds in \the [O.name].</span>")
+			to_chat(user, SPAN_NOTICE("There are no seeds in \the [O.name]."))
 		return
 
 	else if(seedify(O,-1, src, user))
-		to_chat(user, "<span class='notice'>You extract some seeds.</span>")
+		to_chat(user, SPAN_NOTICE("You extract some seeds."))
 		return
 	else if (istype(O, /obj/item/seeds))
 		if(add_seed(O))
-			to_chat(user, "<span class='notice'>You add [O] to [src.name].</span>")
+			to_chat(user, SPAN_NOTICE("You add [O] to [src.name]."))
 			updateUsrDialog()
 		return
 	else if(user.a_intent != INTENT_HARM)
-		to_chat(user, "<span class='warning'>You can't extract any seeds from \the [O.name]!</span>")
+		to_chat(user, SPAN_WARNING("You can't extract any seeds from \the [O.name]!"))
 	else
 		return ..()
 
@@ -141,7 +141,7 @@
  */
 /obj/machinery/seed_extractor/proc/add_seed(obj/item/seeds/O)
 	if(contents.len >= 999)
-		to_chat(usr, "<span class='notice'>\The [src] is full.</span>")
+		to_chat(usr, SPAN_NOTICE("\The [src] is full."))
 		return FALSE
 
 	var/datum/component/storage/STR = O.loc.GetComponent(/datum/component/storage)
@@ -195,7 +195,7 @@
 					piles[item] -= WO
 					O.forceMove(drop_location())
 					. = TRUE
-					//to_chat(usr, "<span class='notice'>[src] clanks to life briefly before vending [prize.equipment_name]!</span>")
+					//to_chat(usr, SPAN_NOTICE("[src] clanks to life briefly before vending [prize.equipment_name]!"))
 
 // Simple extractor, not very similar.
 /obj/structure/legion_extractor
@@ -249,9 +249,9 @@
 		return
 
 	else if(seedify(O,-1, src, user))
-		to_chat(user, "<span class='notice'>You extract some seeds.</span>")
+		to_chat(user, SPAN_NOTICE("You extract some seeds."))
 		return
 	else if(user.a_intent != INTENT_HARM)
-		to_chat(user, "<span class='warning'>You can't extract any seeds from \the [O.name]!</span>")
+		to_chat(user, SPAN_WARNING("You can't extract any seeds from \the [O.name]!"))
 	else
 		return ..()

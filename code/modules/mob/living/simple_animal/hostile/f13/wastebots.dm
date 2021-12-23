@@ -162,7 +162,7 @@
 	if(!Proj)
 		CRASH("[src] securitron invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive flashbang!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive flashbang!"))
 		var/flashbang_turf = get_turf(src)
 		if(!flashbang_turf)
 			return
@@ -171,7 +171,7 @@
 	if(prob(75) || Proj.damage > 26) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/handy/securitron/Aggro()
@@ -376,7 +376,7 @@
 	if(!Proj)
 		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive flashbang!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive flashbang!"))
 		var/flashbang_turf = get_turf(src)
 		if(!flashbang_turf)
 			return
@@ -385,12 +385,12 @@
 	if(prob(75) || Proj.damage > 26) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/do_death_beep()
 	playsound(src, 'sound/machines/triple_beep.ogg', 75, TRUE)
-	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+	visible_message(SPAN_WARNING("You hear an ominous beep coming from [src]!"), SPAN_WARNING("You hear an ominous beep!"))
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/self_destruct()
 	explosion(src,0,3,5,5)
@@ -443,12 +443,12 @@
 	if(!Proj)
 		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive explosive!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive explosive!"))
 		explosion(get_turf(src),-1,-1,2, flame_range = 4) //perish, mortal - explosion size identical to craftable IED
 	if(prob(75) || Proj.damage > 30) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /obj/item/projectile/beam/laser/pistol/ultraweak/strong

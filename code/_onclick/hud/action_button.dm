@@ -117,7 +117,7 @@
 		if(id && usr.client)
 			usr.client.prefs.action_buttons_screen_locs["[name]_[id]"] = null
 		usr.update_action_buttons(TRUE)
-		to_chat(usr, "<span class='notice'>Action button positions have been reset.</span>")
+		to_chat(usr, SPAN_NOTICE("Action button positions have been reset."))
 		return TRUE
 	usr.hud_used.action_buttons_hidden = !usr.hud_used.action_buttons_hidden
 
@@ -137,7 +137,7 @@
 	if(moved)
 		moved = FALSE
 	user.update_action_buttons(TRUE)
-	to_chat(user, "<span class='notice'>Action button positions have been reset.</span>")
+	to_chat(user, SPAN_NOTICE("Action button positions have been reset."))
 	return TRUE
 
 

@@ -82,7 +82,7 @@
 			to_chat(L, "<span class='notice'>As you put on [src], its lens begins to glow, information flashing before your eyes.</span>\n\
 			<span class='heavy_brass'>Judicial visor active. Use the action button to gain the ability to smite the unworthy.</span>")
 		if(FALSE)
-			to_chat(L, "<span class='notice'>As you take off [src], its lens darkens once more.</span>")
+			to_chat(L, SPAN_NOTICE("As you take off [src], its lens darkens once more."))
 	return 1
 
 /obj/item/clothing/glasses/judicial_visor/proc/recharge_visor(mob/living/user)
@@ -133,7 +133,7 @@
 			V.update_status()
 			addtimer(CALLBACK(V, /obj/item/clothing/glasses/judicial_visor.proc/recharge_visor, ranged_ability_user), (GLOB.ratvar_awakens ? visor.recharge_cooldown*0.1 : visor.recharge_cooldown) * 2)
 		clockwork_say(ranged_ability_user, text2ratvar("Kneel, heathens!"))
-		ranged_ability_user.visible_message("<span class='warning'>[ranged_ability_user]'s judicial visor fires a stream of energy at [target], creating a strange mark!</span>", "<span class='heavy_brass'>You direct [visor]'s power to [target]. You must wait for some time before doing this again.</span>")
+		ranged_ability_user.visible_message(SPAN_WARNING("[ranged_ability_user]'s judicial visor fires a stream of energy at [target], creating a strange mark!"), "<span class='heavy_brass'>You direct [visor]'s power to [target]. You must wait for some time before doing this again.</span>")
 		var/turf/targetturf = get_turf(target)
 		new/obj/effect/clockwork/judicial_marker(targetturf, ranged_ability_user)
 		log_combat(ranged_ability_user, targetturf, "created a judicial marker")
@@ -193,15 +193,15 @@
 		var/atom/I = L.anti_magic_check()
 		if(I)
 			if(isitem(I))
-				L.visible_message("<span class='warning'>Strange energy flows into [L]'s [I.name]!</span>", \
+				L.visible_message(SPAN_WARNING("Strange energy flows into [L]'s [I.name]!"), \
 				"<span class='userdanger'>Your [I.name] shields you from [src]!</span>")
 			continue
 		L.DefaultCombatKnockdown(15) //knocks down briefly when exploding
 		if(!iscultist(L))
-			L.visible_message("<span class='warning'>[L] is struck by a judicial explosion!</span>", \
+			L.visible_message(SPAN_WARNING("[L] is struck by a judicial explosion!"), \
 			"<span class='userdanger'>[!issilicon(L) ? "An unseen force slams you into the ground!" : "ERROR: Motor servos disabled by external source!"]</span>")
 		else
-			L.visible_message("<span class='warning'>[L] is struck by a judicial explosion!</span>", \
+			L.visible_message(SPAN_WARNING("[L] is struck by a judicial explosion!"), \
 			"<span class='heavy_brass'>\"Keep an eye out, filth.\"</span>\n<span class='userdanger'>A burst of heat crushes you against the ground!</span>")
 			L.adjust_fire_stacks(2) //sets cultist targets on fire
 			L.IgniteMob()

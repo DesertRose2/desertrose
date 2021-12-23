@@ -132,7 +132,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 	if(emagged == 2)
 		if(user)
 			oldtarget_name = user.name
-		audible_message("<span class='danger'>[src] gives out an evil laugh!</span>")
+		audible_message(SPAN_DANGER("[src] gives out an evil laugh!"))
 		playsound(src, 'sound/machines/honkbot_evil_laugh.ogg', 75, 1, -1) // evil laughter
 		update_icon()
 
@@ -211,7 +211,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 
 			log_combat(src,C,"honked")
 
-			C.visible_message("<span class='danger'>[src] has honked [C]!</span>",\
+			C.visible_message(SPAN_DANGER("[src] has honked [C]!"),\
 					"<span class='userdanger'>[src] has honked you!</span>")
 		else
 			C.stuttering = 20

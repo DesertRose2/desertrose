@@ -61,7 +61,7 @@
 
 /obj/structure/destructible/clockwork/reflector/proc/can_be_rotated(mob/user,rotation_type)
 	if(anchored)
-		to_chat(user, "<span class='warning'>[src] cannot be rotated while it is fastened to the floor!</span>")
+		to_chat(user, SPAN_WARNING("[src] cannot be rotated while it is fastened to the floor!"))
 		return FALSE
 
 	return TRUE

@@ -15,7 +15,7 @@ Reproductive extracts:
 
 /obj/item/slimecross/reproductive/attackby(obj/item/O, mob/user)
 	if((last_produce + cooldown) > world.time)
-		to_chat(user, "<span class='warning'>[src] is still digesting!</span>")
+		to_chat(user, SPAN_WARNING("[src] is still digesting!"))
 		return
 	if(istype(O, /obj/item/storage/bag/bio))
 		var/list/inserted = list()
@@ -25,7 +25,7 @@ Reproductive extracts:
 			if(istype(M))
 				eat_cube(M, user)
 		else
-			to_chat(user, "<span class='warning'>There are no monkey cubes in the bio bag!</span>")
+			to_chat(user, SPAN_WARNING("There are no monkey cubes in the bio bag!"))
 	if(istype(O,/obj/item/reagent_containers/food/snacks/cube/monkey))
 		eat_cube(O, user)
 	if(cubes_eaten >= 3)
@@ -40,7 +40,7 @@ Reproductive extracts:
 /obj/item/slimecross/reproductive/proc/eat_cube(obj/item/reagent_containers/food/snacks/monkeycube, mob/user)
 		qdel(monkeycube)
 		cubes_eaten++
-		to_chat(user, "<span class='notice'>You feed [monkeycube] to [src], and it pulses gently.</span>")
+		to_chat(user, SPAN_NOTICE("You feed [monkeycube] to [src], and it pulses gently."))
 		playsound(src, 'sound/items/eatfood.ogg', 20, 1)
 
 /obj/item/slimecross/reproductive/grey

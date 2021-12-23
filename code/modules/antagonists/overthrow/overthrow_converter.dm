@@ -19,10 +19,10 @@
 		var/datum/antagonist/overthrow/TO = target_mind.has_antag_datum(/datum/antagonist/overthrow)
 		var/datum/antagonist/overthrow/UO = user_mind.has_antag_datum(/datum/antagonist/overthrow)
 		if(!UO)
-			to_chat(user, "<span class='danger'>You don't know how to use this thing!</span>") // It needs a valid team to work, if you aren't an antag don't use this thing
+			to_chat(user, SPAN_DANGER("You don't know how to use this thing!")) // It needs a valid team to work, if you aren't an antag don't use this thing
 			return FALSE
 		if(TO)
-			to_chat(user, "<span class='notice'>[target.name] woke up already, the implant would be ineffective against him!</span>")
+			to_chat(user, SPAN_NOTICE("[target.name] woke up already, the implant would be ineffective against him!"))
 			return FALSE
 		target_mind.add_antag_datum(/datum/antagonist/overthrow, UO.team)
 		log_combat(user, target, "implanted", "\a [name]")
@@ -32,22 +32,22 @@
 	if(!istype(M) || !istype(user))
 		return
 	if(!uses)
-		to_chat(user,"<span class='warning'>The converter is empty!</span>")
+		to_chat(user,SPAN_WARNING("The converter is empty!"))
 		return
 	if(M == user)
-		to_chat(user,"<span class='warning'>You cannot convert yourself!</span>")
+		to_chat(user,SPAN_WARNING("You cannot convert yourself!"))
 		return
 	if(HAS_TRAIT(M, TRAIT_MINDSHIELD))
-		to_chat(user, "<span class='danger'>This mind is too strong to convert, try to remove whatever is protecting it first!</span>")
+		to_chat(user, SPAN_DANGER("This mind is too strong to convert, try to remove whatever is protecting it first!"))
 		return
-	M.visible_message("<span class='warning'>[user] is attempting to implant [M].</span>")
+	M.visible_message(SPAN_WARNING("[user] is attempting to implant [M]."))
 	if(do_mob(user, M, 50))
 		if(convert(M,user))
-			M.visible_message("[user] has implanted [M].", "<span class='notice'>[user] implants you.</span>")
+			M.visible_message("[user] has implanted [M].", SPAN_NOTICE("[user] implants you."))
 			uses--
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>[user] fails to implant [M].</span>")
+			to_chat(user, SPAN_WARNING("[user] fails to implant [M]."))
 
 /obj/item/overthrow_converter/update_icon_state()
 	if(uses)

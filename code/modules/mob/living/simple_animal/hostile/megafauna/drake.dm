@@ -252,7 +252,7 @@ Difficulty: Medium
 	playsound(loc, 'sound/effects/meteorimpact.ogg', 200, 1)
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
-			visible_message("<span class='warning'>[src] slams down on [L], crushing [L.p_them()]!</span>")
+			visible_message(SPAN_WARNING("[src] slams down on [L], crushing [L.p_them()]!"))
 			L.gib()
 		else
 			L.adjustBruteLoss(75)
@@ -262,7 +262,7 @@ Difficulty: Medium
 					throw_dir = pick(GLOB.alldirs)
 				var/throwtarget = get_edge_target_turf(src, throw_dir)
 				L.throw_at(throwtarget, 3)
-				visible_message("<span class='warning'>[L] is thrown clear of [src]!</span>")
+				visible_message(SPAN_WARNING("[L] is thrown clear of [src]!"))
 
 	for(var/mob/M in range(7, src))
 		shake_camera(M, 15, 1)
@@ -277,7 +277,7 @@ Difficulty: Medium
 		AltClickNoInteract(src, A)
 		return
 	if(swoop_cooldown >= world.time)
-		to_chat(src, "<span class='warning'>You need to wait 20 seconds between swoop attacks!</span>")
+		to_chat(src, SPAN_WARNING("You need to wait 20 seconds between swoop attacks!"))
 		return
 	swoop_attack(TRUE, A, 25)
 

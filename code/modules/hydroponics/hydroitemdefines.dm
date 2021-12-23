@@ -20,8 +20,8 @@
 /obj/item/plant_analyzer/attack(mob/living/M, mob/living/carbon/human/user)
 	//Checks if target is a podman
 	if(ispodperson(M))
-		user.visible_message("<span class='notice'>[user] analyzes [M]'s vitals.</span>", \
-							"<span class='notice'>You analyze [M]'s vitals.</span>")
+		user.visible_message(SPAN_NOTICE("[user] analyzes [M]'s vitals."), \
+							SPAN_NOTICE("You analyze [M]'s vitals."))
 		if(scan_mode== PLANT_SCANMODE_STATS)
 			healthscan(user, M, advanced = TRUE)
 		else

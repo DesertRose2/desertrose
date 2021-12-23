@@ -91,7 +91,7 @@
 /obj/item/toy/crayon/examine(mob/user)
 	. = ..()
 	if(can_change_colour)
-		. += "<span class='notice'>Ctrl-click [src] while it's on your person to quickly recolour it.</span>"
+		. += SPAN_NOTICE("Ctrl-click [src] while it's on your person to quickly recolour it.")
 
 /obj/item/toy/crayon/proc/refill()
 	if(charges == -1)
@@ -136,12 +136,12 @@
 	if(charges == -1)
 		. = FALSE
 	else if(!charges_left)
-		to_chat(user, "<span class='warning'>There is no more of [src] left!</span>")
+		to_chat(user, SPAN_WARNING("There is no more of [src] left!"))
 		if(self_contained)
 			qdel(src)
 		. = TRUE
 	else if(charges_left < amount && requires_full)
-		to_chat(user, "<span class='warning'>There is not enough of [src] left!</span>")
+		to_chat(user, SPAN_WARNING("There is not enough of [src] left!"))
 		. = TRUE
 
 /obj/item/toy/crayon/ui_state(mob/user)
@@ -352,10 +352,10 @@
 		clicky = clamp(text2num(click_params["icon-y"]) - 16, -(world.icon_size/2), world.icon_size/2)
 
 	if(!instant)
-		to_chat(user, "<span class='notice'>You start drawing a [temp] on the [target.name]...</span>")
+		to_chat(user, SPAN_NOTICE("You start drawing a [temp] on the [target.name]..."))
 
 	if(pre_noise)
-		audible_message("<span class='notice'>You hear spraying.</span>")
+		audible_message(SPAN_NOTICE("You hear spraying."))
 		playsound(user.loc, 'sound/effects/spray.ogg', 5, 1, 5)
 
 	var/wait_time = 50
@@ -391,20 +391,20 @@
 					affected_turfs += right
 					affected_turfs += target
 				else
-					to_chat(user, "<span class='warning'>There isn't enough space to paint!</span>")
+					to_chat(user, SPAN_WARNING("There isn't enough space to paint!"))
 					return
 
 	if(!instant)
-		to_chat(user, "<span class='notice'>You finish drawing \the [temp].</span>")
+		to_chat(user, SPAN_NOTICE("You finish drawing \the [temp]."))
 	else
-		to_chat(user, "<span class='notice'>You spray a [temp] on \the [target].</span>")
+		to_chat(user, SPAN_NOTICE("You spray a [temp] on \the [target]."))
 
 	if(length(text_buffer) > 1)
 		text_buffer = copytext(text_buffer, length(text_buffer[1]) + 1)
 		SStgui.update_uis(src)
 
 	if(post_noise)
-		audible_message("<span class='notice'>You hear spraying.</span>")
+		audible_message(SPAN_NOTICE("You hear spraying."))
 		playsound(user.loc, 'sound/effects/spray.ogg', 5, 1, 5)
 
 	var/fraction = min(1, . / reagents.maximum_volume)
@@ -632,7 +632,7 @@
 		return
 
 	if(is_capped)
-		to_chat(user, "<span class='warning'>Take the cap off first!</span>")
+		to_chat(user, SPAN_WARNING("Take the cap off first!"))
 		return
 
 	if(check_empty(user))
@@ -644,7 +644,7 @@
 
 		var/mob/living/carbon/C = target
 		if(C != user)
-			C.visible_message("<span class='danger'>[user] sprays [src] into the face of [C]!</span>", "<span class='userdanger'>[user] sprays [src] into your face!</span>")
+			C.visible_message(SPAN_DANGER("[user] sprays [src] into the face of [C]!"), "<span class='userdanger'>[user] sprays [src] into your face!</span>")
 
 		if(C.client)
 			C.blur_eyes(3)
@@ -673,7 +673,7 @@
 										/obj/machinery/door/window)
 									)
 			if(hsl[3] < 0.25 && !whitelisted[target]) //Colors too dark are rejected
-				to_chat(usr, "<span class='warning'>A color that dark on an object like this? Surely not...</span>")
+				to_chat(usr, SPAN_WARNING("A color that dark on an object like this? Surely not..."))
 				return FALSE
 
 			target.add_atom_colour(paint_color, WASHABLE_COLOUR_PRIORITY)
@@ -685,7 +685,7 @@
 
 		if(pre_noise || post_noise)
 			playsound(user.loc, 'sound/effects/spray.ogg', 5, 1, 5)
-		user.visible_message("[user] coats [target] with spray paint!", "<span class='notice'>You coat [target] with spray paint.</span>")
+		user.visible_message("[user] coats [target] with spray paint!", SPAN_NOTICE("You coat [target] with spray paint."))
 		return
 
 	. = ..()
@@ -708,7 +708,7 @@
 /obj/item/toy/crayon/spraycan/borg/draw_on(atom/target,mob/user,proximity, params)
 	var/diff = ..()
 	if(!iscyborg(user))
-		to_chat(user, "<span class='notice'>How did you get this?</span>")
+		to_chat(user, SPAN_NOTICE("How did you get this?"))
 		qdel(src)
 		return FALSE
 

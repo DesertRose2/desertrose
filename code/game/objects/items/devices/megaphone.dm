@@ -32,7 +32,7 @@
 /obj/item/megaphone/proc/handle_speech(mob/living/carbon/user, list/speech_args)
 	if (user.get_active_held_item() == src)
 		if(spamcheck > world.time)
-			to_chat(user, "<span class='warning'>\The [src] needs to recharge!</span>")
+			to_chat(user, SPAN_WARNING("\The [src] needs to recharge!"))
 		else
 			playsound(loc, megaphone_sound, 100, 0, 1)
 			spamcheck = world.time + 50
@@ -42,7 +42,7 @@
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, "<span class='warning'>You overload \the [src]'s voice synthesizer.</span>")
+	to_chat(user, SPAN_WARNING("You overload \the [src]'s voice synthesizer."))
 	obj_flags |= EMAGGED
 	voicespan = list(SPAN_REALLYBIG, "userdanger")
 	return TRUE

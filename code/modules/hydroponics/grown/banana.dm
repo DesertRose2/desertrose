@@ -153,14 +153,14 @@
 /obj/item/reagent_containers/food/snacks/grown/banana/banana_spider_spawnable/attack_self(mob/user)
 	if(awakening || isspaceturf(user.loc))
 		return
-	to_chat(user, "<span class='notice'>You decide to wake up the banana spider...</span>")
+	to_chat(user, SPAN_NOTICE("You decide to wake up the banana spider..."))
 	awakening = 1
 
 	spawn(30)
 		if(!QDELETED(src))
 			var/mob/living/simple_animal/banana_spider/S = new /mob/living/simple_animal/banana_spider(get_turf(src.loc))
 			S.speed += round(10 / max(seed.potency, 1), 1)
-			S.visible_message("<span class='notice'>The banana spider chitters as it stretches its legs.</span>")
+			S.visible_message(SPAN_NOTICE("The banana spider chitters as it stretches its legs."))
 			qdel(src)
 
 // Other

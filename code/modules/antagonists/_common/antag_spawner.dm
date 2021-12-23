@@ -107,13 +107,13 @@
 
 /obj/item/antag_spawner/nuke_ops/proc/check_usability(mob/user)
 	if(used)
-		to_chat(user, "<span class='warning'>[src] is out of power!</span>")
+		to_chat(user, SPAN_WARNING("[src] is out of power!"))
 		return FALSE
 	if(!user.mind.has_antag_datum(/datum/antagonist/nukeop,TRUE))
-		to_chat(user, "<span class='danger'>AUTHENTICATION FAILURE. ACCESS DENIED.</span>")
+		to_chat(user, SPAN_DANGER("AUTHENTICATION FAILURE. ACCESS DENIED."))
 		return FALSE
 	if(!user.onSyndieBase())
-		to_chat(user, "<span class='warning'>[src] is out of range! It can only be used at your base!</span>")
+		to_chat(user, SPAN_WARNING("[src] is out of range! It can only be used at your base!"))
 		return FALSE
 	return TRUE
 
@@ -122,7 +122,7 @@
 	if(!(check_usability(user)))
 		return
 
-	to_chat(user, "<span class='notice'>You activate [src] and wait for confirmation.</span>")
+	to_chat(user, SPAN_NOTICE("You activate [src] and wait for confirmation."))
 	var/list/nuke_candidates = pollGhostCandidates("Do you want to play as a syndicate [borg_to_spawn ? "[lowertext(borg_to_spawn)] cyborg":"operative"]?", ROLE_OPERATIVE, null, ROLE_OPERATIVE, 150, POLL_IGNORE_SYNDICATE)
 	if(LAZYLEN(nuke_candidates))
 		if(QDELETED(src) || !check_usability(user))
@@ -133,7 +133,7 @@
 		do_sparks(4, TRUE, src)
 		qdel(src)
 	else
-		to_chat(user, "<span class='warning'>Unable to connect to Syndicate command. Please wait and try again later or use the teleporter on your uplink to get your points refunded.</span>")
+		to_chat(user, SPAN_WARNING("Unable to connect to Syndicate command. Please wait and try again later or use the teleporter on your uplink to get your points refunded."))
 
 /obj/item/antag_spawner/nuke_ops/spawn_antag(client/C, turf/T, kind, datum/mind/user)
 	var/mob/living/carbon/human/M = new/mob/living/carbon/human(T)
@@ -239,7 +239,7 @@
 
 /obj/item/antag_spawner/slaughter_demon/attack_self(mob/user)
 	if(!is_station_level(user.z))
-		to_chat(user, "<span class='notice'>You should probably wait until you reach the station.</span>")
+		to_chat(user, SPAN_NOTICE("You should probably wait until you reach the station."))
 		return
 	if(used)
 		return
@@ -255,7 +255,7 @@
 		playsound(user.loc, 'sound/effects/glassbr1.ogg', 100, 1)
 		qdel(src)
 	else
-		to_chat(user, "<span class='notice'>You can't seem to work up the nerve to shatter the bottle. Perhaps you should try again later.</span>")
+		to_chat(user, SPAN_NOTICE("You can't seem to work up the nerve to shatter the bottle. Perhaps you should try again later."))
 
 
 /obj/item/antag_spawner/slaughter_demon/spawn_antag(client/C, turf/T, kind = "", datum/mind/user)

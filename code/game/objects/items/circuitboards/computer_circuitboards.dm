@@ -197,11 +197,11 @@
 		if(build_path == /obj/machinery/computer/rdconsole/core)
 			name = "R&D Console - Robotics (Computer Board)"
 			build_path = /obj/machinery/computer/rdconsole/robotics
-			to_chat(user, "<span class='notice'>Access protocols successfully updated.</span>")
+			to_chat(user, SPAN_NOTICE("Access protocols successfully updated."))
 		else
 			name = "R&D Console (Computer Board)"
 			build_path = /obj/machinery/computer/rdconsole/core
-			to_chat(user, "<span class='notice'>Defaulting access protocols.</span>")
+			to_chat(user, SPAN_NOTICE("Defaulting access protocols."))
 	else
 		return ..()
 
@@ -231,7 +231,7 @@
 		contraband = !contraband
 		to_chat(user, "<span class='notice'>Receiver spectrum set to [contraband ? "Broad" : "Standard"].</span>")
 	else
-		to_chat(user, "<span class='notice'>The spectrum chip is unresponsive.</span>")
+		to_chat(user, SPAN_NOTICE("The spectrum chip is unresponsive."))
 
 /obj/item/circuitboard/computer/cargo/emag_act(mob/living/user)
 	. = ..()
@@ -239,7 +239,7 @@
 		return
 	contraband = TRUE
 	obj_flags |= EMAGGED
-	to_chat(user, "<span class='notice'>You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband.</span>")
+	to_chat(user, SPAN_NOTICE("You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband."))
 	return TRUE
 
 /obj/item/circuitboard/computer/cargo/express
@@ -257,7 +257,7 @@
 	. = SEND_SIGNAL(src, COMSIG_ATOM_EMAG_ACT)
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, "<span class='notice'>You change the routing protocols, allowing the Drop Pod to land anywhere on the station.</span>")
+	to_chat(user, SPAN_NOTICE("You change the routing protocols, allowing the Drop Pod to land anywhere on the station."))
 	obj_flags |= EMAGGED
 	return TRUE
 
@@ -343,11 +343,11 @@
 		if(build_path == /obj/machinery/computer/libraryconsole/bookmanagement)
 			name = "Library Visitor Console (Computer Board)"
 			build_path = /obj/machinery/computer/libraryconsole
-			to_chat(user, "<span class='notice'>Defaulting access protocols.</span>")
+			to_chat(user, SPAN_NOTICE("Defaulting access protocols."))
 		else
 			name = "Book Inventory Management Console (Computer Board)"
 			build_path = /obj/machinery/computer/libraryconsole/bookmanagement
-			to_chat(user, "<span class='notice'>Access protocols successfully updated.</span>")
+			to_chat(user, SPAN_NOTICE("Access protocols successfully updated."))
 	else
 		return ..()
 

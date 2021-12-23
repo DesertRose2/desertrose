@@ -59,24 +59,24 @@
 /obj/item/radio/intercom/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(unfastened)
-			user.visible_message("<span class='notice'>[user] starts tightening [src]'s screws...</span>", "<span class='notice'>You start screwing in [src]...</span>")
+			user.visible_message(SPAN_NOTICE("[user] starts tightening [src]'s screws..."), SPAN_NOTICE("You start screwing in [src]..."))
 			if(I.use_tool(src, user, 30, volume=50))
-				user.visible_message("<span class='notice'>[user] tightens [src]'s screws!</span>", "<span class='notice'>You tighten [src]'s screws.</span>")
+				user.visible_message(SPAN_NOTICE("[user] tightens [src]'s screws!"), SPAN_NOTICE("You tighten [src]'s screws."))
 				unfastened = FALSE
 		else
-			user.visible_message("<span class='notice'>[user] starts loosening [src]'s screws...</span>", "<span class='notice'>You start unscrewing [src]...</span>")
+			user.visible_message(SPAN_NOTICE("[user] starts loosening [src]'s screws..."), SPAN_NOTICE("You start unscrewing [src]..."))
 			if(I.use_tool(src, user, 40, volume=50))
-				user.visible_message("<span class='notice'>[user] loosens [src]'s screws!</span>", "<span class='notice'>You unscrew [src], loosening it from the wall.</span>")
+				user.visible_message(SPAN_NOTICE("[user] loosens [src]'s screws!"), SPAN_NOTICE("You unscrew [src], loosening it from the wall."))
 				unfastened = TRUE
 		return
 	else if(istype(I, /obj/item/wrench))
 		if(!unfastened)
-			to_chat(user, "<span class='warning'>You need to unscrew [src] from the wall first!</span>")
+			to_chat(user, SPAN_WARNING("You need to unscrew [src] from the wall first!"))
 			return
-		user.visible_message("<span class='notice'>[user] starts unsecuring [src]...</span>", "<span class='notice'>You start unsecuring [src]...</span>")
+		user.visible_message(SPAN_NOTICE("[user] starts unsecuring [src]..."), SPAN_NOTICE("You start unsecuring [src]..."))
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 80))
-			user.visible_message("<span class='notice'>[user] unsecures [src]!</span>", "<span class='notice'>You detach [src] from the wall.</span>")
+			user.visible_message(SPAN_NOTICE("[user] unsecures [src]!"), SPAN_NOTICE("You detach [src] from the wall."))
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			new/obj/item/wallframe/intercom(get_turf(src))
 			qdel(src)

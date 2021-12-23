@@ -74,7 +74,7 @@
 	mode_flags &= ~COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_ENABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles reflexively tighten!</span>" : "<span class='warning'>You drop into a combative stance!</span>"
+		var/self_message = forced? SPAN_WARNING("Your muscles reflexively tighten!") : SPAN_WARNING("You drop into a combative stance!")
 		if(visible && (forced || world.time >= combatmessagecooldown))
 			combatmessagecooldown = world.time + 10 SECONDS
 			if(!forced)
@@ -83,7 +83,7 @@
 				else
 					source.visible_message("<span class='notice'>[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")].</span>")
 			else
-				source.visible_message("<span class='warning'>[source] drops into a combative stance!</span>", self_message)
+				source.visible_message(SPAN_WARNING("[source] drops into a combative stance!"), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)
@@ -110,9 +110,9 @@
 	mode_flags |= COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_DISABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles are forcibly relaxed!</span>" : "<span class='warning'>You relax your stance.</span>"
+		var/self_message = forced? SPAN_WARNING("Your muscles are forcibly relaxed!") : SPAN_WARNING("You relax your stance.")
 		if(visible)
-			source.visible_message("<span class='warning'>[source] relaxes [source.p_their()] stance.</span>", self_message)
+			source.visible_message(SPAN_WARNING("[source] relaxes [source.p_their()] stance."), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)

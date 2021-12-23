@@ -28,7 +28,7 @@
 /obj/machinery/recharger/examine(mob/user)
 	. = ..()
 	if(!in_range(user, src) && !issilicon(user) && !isobserver(user))
-		. += "<span class='warning'>You're too far away to examine [src]'s contents and display!</span>"
+		. += SPAN_WARNING("You're too far away to examine [src]'s contents and display!")
 		return
 
 	if(charging)
@@ -36,7 +36,7 @@
 		<span class='notice'>- \A [charging].</span>"}
 
 	if(!(stat & (NOPOWER|BROKEN)))
-		. += "<span class='notice'>The status display reads:</span>"
+		. += SPAN_NOTICE("The status display reads:")
 		. += "<span class='notice'>- Recharging <b>[recharge_coeff*10]%</b> cell charge per cycle.</span>"
 		if(charging)
 			var/obj/item/stock_parts/cell/C = charging.get_cell()
@@ -62,7 +62,7 @@
 /obj/machinery/recharger/attackby(obj/item/G, mob/user, params)
 	if(istype(G, /obj/item/wrench))
 		if(charging)
-			to_chat(user, "<span class='notice'>Remove the charging item first!</span>")
+			to_chat(user, SPAN_NOTICE("Remove the charging item first!"))
 			return
 		setAnchored(!anchored)
 		power_change()
@@ -80,13 +80,13 @@
 			//Checks to make sure he's not in space doing it, and that the area got proper power.
 			var/area/a = get_area(src)
 			if(!a || !a.powered(EQUIP))
-				to_chat(user, "<span class='notice'>[src] blinks red as you try to insert [G].</span>")
+				to_chat(user, SPAN_NOTICE("[src] blinks red as you try to insert [G]."))
 				return 1
 
 			if (istype(G, /obj/item/gun/energy))
 				var/obj/item/gun/energy/E = G
 				if(!E.can_charge)
-					to_chat(user, "<span class='notice'>Your gun has no external power connector.</span>")
+					to_chat(user, SPAN_NOTICE("Your gun has no external power connector."))
 					return 1
 
 			if(!user.transferItemToLoc(G, src))
@@ -94,7 +94,7 @@
 			setCharging(G)
 
 		else
-			to_chat(user, "<span class='notice'>[src] isn't connected to anything!</span>")
+			to_chat(user, SPAN_NOTICE("[src] isn't connected to anything!"))
 		return 1
 
 	if(anchored && !charging)

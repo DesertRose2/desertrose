@@ -85,7 +85,7 @@
 	var/rounded_cached = round(cached_size)
 	if(cached_size < 0)//I don't actually know what round() does to negative numbers, so to be safe!!fixed
 		if(owner)
-			to_chat(owner, "<span class='warning'>You feel your breasts shrinking away from your body as your chest flattens out.</span>")
+			to_chat(owner, SPAN_WARNING("You feel your breasts shrinking away from your body as your chest flattens out."))
 		QDEL_IN(src, 1)
 		return
 	var/enlargement = FALSE

@@ -57,7 +57,7 @@ GLOBAL_DATUM_INIT(keycard_events, /datum/events, new)
 	if(isanimal(user))
 		var/mob/living/simple_animal/A = user
 		if(!A.dextrous)
-			to_chat(user, "<span class='warning'>You are too primitive to use this device!</span>")
+			to_chat(user, SPAN_WARNING("You are too primitive to use this device!"))
 			return UI_CLOSE
 	return ..()
 

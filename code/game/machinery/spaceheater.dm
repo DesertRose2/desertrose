@@ -143,17 +143,17 @@
 	if(istype(I, /obj/item/stock_parts/cell))
 		if(panel_open)
 			if(cell)
-				to_chat(user, "<span class='warning'>There is already a power cell inside!</span>")
+				to_chat(user, SPAN_WARNING("There is already a power cell inside!"))
 				return
 			else if(!user.transferItemToLoc(I, src))
 				return
 			cell = I
 			I.add_fingerprint(usr)
 
-			user.visible_message("\The [user] inserts a power cell into \the [src].", "<span class='notice'>You insert the power cell into \the [src].</span>")
+			user.visible_message("\The [user] inserts a power cell into \the [src].", SPAN_NOTICE("You insert the power cell into \the [src]."))
 			SStgui.update_uis(src)
 		else
-			to_chat(user, "<span class='warning'>The hatch must be open to insert a power cell!</span>")
+			to_chat(user, SPAN_WARNING("The hatch must be open to insert a power cell!"))
 			return
 	else if(istype(I, /obj/item/screwdriver))
 		panel_open = !panel_open

@@ -560,7 +560,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 		if(I.use_tool(src, user, 60))
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
 			if(stat & BROKEN)
-				to_chat(user, "<span class='warning'>The broken remains of [src] fall on the ground.</span>")
+				to_chat(user, SPAN_WARNING("The broken remains of [src] fall on the ground."))
 				new /obj/item/stack/sheet/metal(loc, 5)
 				new /obj/item/shard(loc)
 				new /obj/item/shard(loc)
@@ -573,17 +573,17 @@ GLOBAL_LIST_EMPTY(allCasters)
 			if(!I.tool_start_check(user, amount=0))
 				return
 			user.visible_message("[user] is repairing [src].", \
-							"<span class='notice'>You begin repairing [src]...</span>", \
+							SPAN_NOTICE("You begin repairing [src]..."), \
 							"<span class='italics'>You hear welding.</span>")
 			if(I.use_tool(src, user, 40, volume=50))
 				if(!(stat & BROKEN))
 					return
-				to_chat(user, "<span class='notice'>You repair [src].</span>")
+				to_chat(user, SPAN_NOTICE("You repair [src]."))
 				obj_integrity = max_integrity
 				stat &= ~BROKEN
 				update_icon()
 		else
-			to_chat(user, "<span class='notice'>[src] does not need repairs.</span>")
+			to_chat(user, SPAN_NOTICE("[src] does not need repairs."))
 	else
 		return ..()
 
@@ -614,7 +614,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 
 /obj/machinery/newscaster/attack_paw(mob/user)
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, "<span class='warning'>The news terminal controls are far too complicated for your tiny brain!</span>")
+		to_chat(user, SPAN_WARNING("The news terminal controls are far too complicated for your tiny brain!"))
 	else
 		take_damage(5, BRUTE, "melee")
 
@@ -634,7 +634,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 			else
 				targetcam = R.aicamera
 		else
-			to_chat(user, "<span class='warning'>You cannot interface with silicon photo uploading!</span>")
+			to_chat(user, SPAN_WARNING("You cannot interface with silicon photo uploading!"))
 		if(!targetcam.stored.len)
 			to_chat(usr, "<span class='boldannounce'>No images saved</span>")
 			return

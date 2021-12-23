@@ -208,7 +208,7 @@
 
 	var/sealed = (item_flags & NODROP)
 	if(sealed)
-		to_chat(user, "<span class='danger'>\The [src] is already sealed!</span>")
+		to_chat(user, SPAN_DANGER("\The [src] is already sealed!"))
 		return 0
 
 	if(!check_power_cost(user, 1)) //need power to seal the suit
@@ -217,18 +217,18 @@
 	var/failed_to_seal = FALSE
 
 	if(!suit_is_deployed())
-		to_chat(user, "<span class='danger'>\The [src] cannot seal, as it is not fully deployed!</span>")
+		to_chat(user, SPAN_DANGER("\The [src] cannot seal, as it is not fully deployed!"))
 		return 0
 
 	item_flags |= NODROP
 	sealing = TRUE
 
-	to_chat(user, "<span class='notice'>\The [src] begins to tighten it's seals.</span>")
-	wearer.visible_message("<span class='notice'>\The [wearer]'s suit emits a quiet hum as it begins to tighten it's seals.</span>",
+	to_chat(user, SPAN_NOTICE("\The [src] begins to tighten it's seals."))
+	wearer.visible_message(SPAN_NOTICE("\The [wearer]'s suit emits a quiet hum as it begins to tighten it's seals."),
 						   "<span class='notice'>With a quiet hum, your suit begins to seal.")
 
 	if(seal_delay && !do_after(user, seal_delay, target = wearer))
-		to_chat(user, "<span class='warning'>You must remain still to seal \the [src]!</span>")
+		to_chat(user, SPAN_WARNING("You must remain still to seal \the [src]!"))
 		failed_to_seal = TRUE
 
 	if(!failed_to_seal)
@@ -249,11 +249,11 @@
 				continue
 
 			if(user_piece != correct_piece)
-				to_chat(user, "<span class='danger'>\The [user_piece] is blocking \the [src] from deploying.</span>")
+				to_chat(user, SPAN_DANGER("\The [user_piece] is blocking \the [src] from deploying."))
 				failed_to_seal = TRUE
 
 			if(seal_delay && !do_after(user, seal_delay, needhand = 0, target = wearer))
-				to_chat(user, "<span class='warning'>You must remain still to seal \the [src]!</span>")
+				to_chat(user, SPAN_WARNING("You must remain still to seal \the [src]!"))
 				failed_to_seal = TRUE
 
 			if(failed_to_seal)
@@ -265,23 +265,23 @@
 					to_chat(wearer, "<font color='blue'>\The [correct_piece] seal around your feet.</font>")
 					correct_piece.icon_state = "[initial(icon_state)]_sealed0" //Solution to not need a sprite for off, on, and unused magboots.
 					if(user != wearer)
-						to_chat(user, "<span class='notice'>\The [correct_piece] has been sealed.</span>")
+						to_chat(user, SPAN_NOTICE("\The [correct_piece] has been sealed."))
 					wearer.update_inv_shoes()
 				if("gloves")
 					to_chat(wearer, "<font color='blue'>\The [correct_piece] tighten around your fingers and wrists.</font>")
 					if(user != wearer)
-						to_chat(user, "<span class='notice'>\The [correct_piece] has been sealed.</span>")
+						to_chat(user, SPAN_NOTICE("\The [correct_piece] has been sealed."))
 					wearer.update_inv_gloves()
 				if("chest")
 					to_chat(wearer, "<font color='blue'>\The [correct_piece] cinches tight again your chest.</font>")
 					if(user != wearer)
-						to_chat(user, "<span class='notice'>\The [correct_piece] has been sealed.</span>")
+						to_chat(user, SPAN_NOTICE("\The [correct_piece] has been sealed."))
 					wearer.update_inv_wear_suit()
 				if("helmet")
 					to_chat(wearer, "<font color='blue'>\The [correct_piece] hisses closed.</font>")
 					correct_piece.icon_state = "[initial(icon_state)]_sealed0" //Solution to not need a sprite for off, on, and unused helmet light.
 					if(user != wearer)
-						to_chat(user, "<span class='notice'>\The [correct_piece] has been sealed.</span>")
+						to_chat(user, SPAN_NOTICE("\The [correct_piece] has been sealed."))
 					wearer.update_inv_head()
 					if(helmet)
 						helmet.update_light(wearer)
@@ -302,8 +302,8 @@
 		return 0
 
 	if(user != wearer)
-		to_chat(user, "<span class='notice'>\The [src] has been loosened.</span>")
-	to_chat(wearer, "<span class='notice'>Your entire suit tightens around you as the components lock into place.</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] has been loosened."))
+	to_chat(wearer, SPAN_NOTICE("Your entire suit tightens around you as the components lock into place."))
 	if(airtight)
 		update_component_sealed()
 	update_icon(1)
@@ -317,7 +317,7 @@
 
 	var/sealed = (item_flags & NODROP)
 	if(!sealed)
-		to_chat(user, "<span class='danger'>\The [src] is already unsealed!</span>")
+		to_chat(user, SPAN_DANGER("\The [src] is already unsealed!"))
 		return 0
 
 	sealing = TRUE
@@ -325,17 +325,17 @@
 	var/failed_to_seal = FALSE
 
 	if(!suit_is_deployed())
-		to_chat(user, "<span class='danger'>\The [src] cannot unseal, as it is not fully deployed!</span>")
+		to_chat(user, SPAN_DANGER("\The [src] cannot unseal, as it is not fully deployed!"))
 		failed_to_seal = TRUE
 
 	if(!failed_to_seal)
 		if(user != wearer)
-			to_chat(user, "<span class='notice'>\The [src] begins to loosen it's seals.</span>")
-		wearer.visible_message("<span class='notice'>\The [wearer]'s suit emits a quiet hum as it begins to loosen it's seals.</span>",
+			to_chat(user, SPAN_NOTICE("\The [src] begins to loosen it's seals."))
+		wearer.visible_message(SPAN_NOTICE("\The [wearer]'s suit emits a quiet hum as it begins to loosen it's seals."),
 							   "<span class='notice'>With a quiet hum, your suit begins to unseal.")
 
 		if(seal_delay && !do_after(user, seal_delay, target = wearer))
-			to_chat(user, "<span class='warning'>You must remain still to unseal \the [src]!</span>")
+			to_chat(user, SPAN_WARNING("You must remain still to unseal \the [src]!"))
 			failed_to_seal = TRUE
 
 		if(!failed_to_seal)
@@ -354,11 +354,11 @@
 					continue
 
 				if(user_piece != correct_piece)
-					to_chat(user, "<span class='danger'>\The [user_piece] is blocking \the [src] from deploying.</span>")
+					to_chat(user, SPAN_DANGER("\The [user_piece] is blocking \the [src] from deploying."))
 					failed_to_seal = TRUE
 
 				if(seal_delay && !do_after(user, seal_delay, needhand = 0, target = wearer))
-					to_chat(user, "<span class='warning'>You must remain still to unseal \the [src]!</span>")
+					to_chat(user, SPAN_WARNING("You must remain still to unseal \the [src]!"))
 					failed_to_seal = TRUE
 
 				if(failed_to_seal)
@@ -369,22 +369,22 @@
 					if("boots")
 						to_chat(wearer, "<font color='blue'>\The [correct_piece] relax [correct_piece.p_their()] grip on your legs.</font>")
 						if(user != wearer)
-							to_chat(user, "<span class='notice'>\The [correct_piece] has been unsealed.</span>")
+							to_chat(user, SPAN_NOTICE("\The [correct_piece] has been unsealed."))
 						wearer.update_inv_shoes()
 					if("gloves")
 						to_chat(wearer, "<font color='blue'>\The [correct_piece] become loose around your fingers.</font>")
 						if(user != wearer)
-							to_chat(user, "<span class='notice'>\The [correct_piece] has been unsealed.</span>")
+							to_chat(user, SPAN_NOTICE("\The [correct_piece] has been unsealed."))
 						wearer.update_inv_gloves()
 					if("chest")
 						to_chat(wearer, "<font color='blue'>\The [correct_piece] releases your chest.</font>")
 						if(user != wearer)
-							to_chat(user, "<span class='notice'>\The [correct_piece] has been unsealed.</span>")
+							to_chat(user, SPAN_NOTICE("\The [correct_piece] has been unsealed."))
 						wearer.update_inv_wear_suit()
 					if("helmet")
 						to_chat(wearer, "<font color='blue'>\The [correct_piece] hisses open.</font>")
 						if(user != wearer)
-							to_chat(user, "<span class='notice'>\The [correct_piece] has been unsealed.</span>")
+							to_chat(user, SPAN_NOTICE("\The [correct_piece] has been unsealed."))
 						wearer.update_inv_head()
 						if(helmet)
 							helmet.update_light(wearer)
@@ -408,8 +408,8 @@
 		return 0
 
 	if(user != wearer)
-		to_chat(user, "<span class='notice'>\The [src] has been unsealed.</span>")
-	to_chat(wearer, "<span class='notice'>Your entire suit loosens as the components relax.</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] has been unsealed."))
+	to_chat(wearer, SPAN_NOTICE("Your entire suit loosens as the components relax."))
 
 	item_flags &= ~NODROP
 
@@ -458,13 +458,13 @@
 				if(istype(wearer))
 					if(item_flags & NODROP)
 						if(offline_slowdown < 3)
-							to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly goes dead.</span>")
+							to_chat(wearer, SPAN_DANGER("Your suit beeps stridently, and suddenly goes dead."))
 						else
-							to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly you're wearing a leaden mass of metal and plastic composites instead of a powered suit.</span>")
+							to_chat(wearer, SPAN_DANGER("Your suit beeps stridently, and suddenly you're wearing a leaden mass of metal and plastic composites instead of a powered suit."))
 					if(offline_vision_restriction == 1)
-						to_chat(wearer, "<span class='danger'>The suit optics flicker and die, leaving you with restricted vision.</span>")
+						to_chat(wearer, SPAN_DANGER("The suit optics flicker and die, leaving you with restricted vision."))
 					else if(offline_vision_restriction == 2)
-						to_chat(wearer, "<span class='danger'>The suit optics drop out completely, drowning you in darkness.</span>")
+						to_chat(wearer, SPAN_DANGER("The suit optics drop out completely, drowning you in darkness."))
 		if(!offline)
 			offline = 1
 			if(istype(wearer) && wearer.wearing_rig)
@@ -636,11 +636,11 @@
 		if(user.back != src)
 			return 0
 		else if(!src.allowed(user))
-			to_chat(user, "<span class='danger'>Unauthorized user. Access denied.</span>")
+			to_chat(user, SPAN_DANGER("Unauthorized user. Access denied."))
 			return 0
 
 	else if(!ai_override_enabled)
-		to_chat(user, "<span class='danger'>Synthetic access disabled. Please consult hardware provider.</span>")
+		to_chat(user, SPAN_DANGER("Synthetic access disabled. Please consult hardware provider."))
 		return 0
 
 	return 1
@@ -728,7 +728,7 @@
 								if(L.equip_to_slot_if_possible(under_boots, SLOT_SHOES))
 									under_boots = null
 								else
-									to_chat(user, "<span class='warning'>Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))</span>")
+									to_chat(user, SPAN_WARNING("Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))"))
 					uneq_piece.forceMove(src)
 		return 0
 
@@ -764,7 +764,7 @@
 	if(use_obj)
 		if(check_slot == use_obj && deploy_mode != ONLY_DEPLOY) //user is wearing it, retract it if not forced to deploy
 			if((item_flags & NODROP) && equip_to != SLOT_HEAD && !force) //you can only retract the helmet if the suit isn't unsealed
-				to_chat(user, "<span class='warning'>You can't retract \the [use_obj] while the suit is sealed!</span>")
+				to_chat(user, SPAN_WARNING("You can't retract \the [use_obj] while the suit is sealed!"))
 				return
 
 			var/mob/living/to_strip
@@ -780,7 +780,7 @@
 						if(to_strip.equip_to_slot_if_possible(under_boots, SLOT_SHOES))
 							under_boots = null
 						else
-							to_chat(user, "<span class='warning'>Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))</span>")
+							to_chat(user, SPAN_WARNING("Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))"))
 			use_obj.forceMove(src)
 			if(wearer)
 				to_chat(wearer, "<span class='notice'>Your [use_obj] [use_obj.gender == PLURAL ? "retract" : "retracts"] swiftly.")
@@ -811,16 +811,16 @@
 
 	if(item_flags & NODROP) //We need to check if we have the part, the person is wearing something in the parts slot, and if yes, are they the same.
 		if(helmet && wearer.head && wearer.head != helmet)
-			to_chat(user, "<span class='danger'>\The [wearer.head] is blocking \the [src] from deploying!</span>")
+			to_chat(user, SPAN_DANGER("\The [wearer.head] is blocking \the [src] from deploying!"))
 			return 0
 		if(gloves && wearer.gloves && wearer.gloves != gloves)
-			to_chat(user, "<span class='danger'>\The [wearer.gloves] is preventing \the [src] from deploying!</span>")
+			to_chat(user, SPAN_DANGER("\The [wearer.gloves] is preventing \the [src] from deploying!"))
 			return 0
 		/*if(boots && wearer.shoes && wearer.shoes != boots)
-			to_chat(user, "<span class='danger'>\The [wearer.shoes] is preventing \the [src] from deploying!</span>")
+			to_chat(user, SPAN_DANGER("\The [wearer.shoes] is preventing \the [src] from deploying!"))
 			return 0*/
 		if(chest && wearer.wear_suit && wearer.wear_suit != chest)
-			to_chat(user, "<span class='danger'>\The [wearer.wear_suit] is preventing \the [src] from deploying!</span>")
+			to_chat(user, SPAN_DANGER("\The [wearer.wear_suit] is preventing \the [src] from deploying!"))
 			return 0
 
 
@@ -903,17 +903,17 @@
 
 	if(wearer)
 		if(dam_module.damage >= 2)
-			to_chat(wearer, "<span class='danger'>The [source] has disabled your [dam_module.interface_name]!</span>")
+			to_chat(wearer, SPAN_DANGER("The [source] has disabled your [dam_module.interface_name]!"))
 		else
-			to_chat(wearer, "<span class='warning'>The [source] has damaged your [dam_module.interface_name]!</span>")
+			to_chat(wearer, SPAN_WARNING("The [source] has damaged your [dam_module.interface_name]!"))
 	dam_module.deactivate()
 
 /obj/item/rig/proc/malfunction_check(mob/living/carbon/human/user)
 	if(malfunction_delay)
 		if(offline)
-			to_chat(user, "<span class='danger'>The suit is completely unresponsive.</span>")
+			to_chat(user, SPAN_DANGER("The suit is completely unresponsive."))
 		else
-			to_chat(user, "<span class='danger'>ERROR: Hardware fault. Rebooting interface...</span>")
+			to_chat(user, SPAN_DANGER("ERROR: Hardware fault. Rebooting interface..."))
 		return 1
 	return 0
 
@@ -937,20 +937,20 @@
 			return 0
 		var/obj/item/rig_module/ai_container/module = user.loc.loc
 		if(!istype(module) || module.damage >= 2)
-			to_chat(user, "<span class='warning'>Your host module is unable to interface with the suit.</span>")
+			to_chat(user, SPAN_WARNING("Your host module is unable to interface with the suit."))
 			return 0
 
 	if(offline || !cell || !cell.charge || locked_down)
 		if(user)
-			to_chat(user, "<span class='warning'>Your host rig is unpowered and unresponsive.</span>")
+			to_chat(user, SPAN_WARNING("Your host rig is unpowered and unresponsive."))
 		return 0
 	if(!wearer || wearer.back != src)
 		if(user)
-			to_chat(user, "<span class='warning'>Your host rig is not being worn.</span>")
+			to_chat(user, SPAN_WARNING("Your host rig is not being worn."))
 		return 0
 	if(!wearer.stat && !control_overridden && !ai_override_enabled)
 		if(user)
-			to_chat(user, "<span class='warning'>You are locked out of the suit servo controller.</span>")
+			to_chat(user, SPAN_WARNING("You are locked out of the suit servo controller."))
 		return 0
 	return 1
 */
@@ -992,7 +992,7 @@
 			for(var/mob/M in range(wearer, 1))
 				if(M.pulling == wearer)
 					if(!M.restrained() && M.stat == 0 && M.canmove && wearer.Adjacent(M))
-						to_chat(user, "<span class='notice'>Your host is restrained! They can't move!</span>")
+						to_chat(user, SPAN_NOTICE("Your host is restrained! They can't move!"))
 						return 0
 					else
 						M.stop_pulling()
@@ -1032,11 +1032,11 @@
 /obj/item/rig/proc/do_emergency_release(mob/living/user)
 	if(!can_touch(user, wearer) || !has_emergency_release)
 		return can_touch(user,wearer)
-	usr.visible_message("<span class='warning'>[user] starts activating \the [src] emergency seals release!</span>")
+	usr.visible_message(SPAN_WARNING("[user] starts activating \the [src] emergency seals release!"))
 	if(!do_after(user, 240, target = wearer))
-		to_chat(user, "<span class='notice'>You need to focus on activating the emergency release.</span>")
+		to_chat(user, SPAN_NOTICE("You need to focus on activating the emergency release."))
 		return 0
-	usr.visible_message("<span class='warning'>[user] activated \the [src] emergency seals release!</span>")
+	usr.visible_message(SPAN_WARNING("[user] activated \the [src] emergency seals release!"))
 	malfunctioning += 1
 	malfunction_delay = 30
 	unseal(user)
@@ -1048,7 +1048,7 @@
 	if(!wearer.Adjacent(user))
 		return 0
 	if(user.restrained())
-		to_chat(user, "<span class='notice'>You need your hands free for this.</span>")
+		to_chat(user, SPAN_NOTICE("You need your hands free for this."))
 		return 0
 	if(user.stat || user.resting || user.lying || user.restrained())
 		return 0

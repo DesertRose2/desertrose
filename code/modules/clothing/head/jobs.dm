@@ -105,7 +105,7 @@
 
 /obj/item/clothing/head/fedora/det_hat/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to take a candy corn.</span>"
+	. += SPAN_NOTICE("Alt-click to take a candy corn.")
 
 /obj/item/clothing/head/fedora/det_hat/AltClick(mob/user)
 	. = ..()
@@ -210,21 +210,21 @@
 		return TRUE
 	switch(mode)
 		if(DRILL_DEFAULT)
-			to_chat(user, "<span class='notice'>You set the voice circuit to the middle position.</span>")
+			to_chat(user, SPAN_NOTICE("You set the voice circuit to the middle position."))
 			mode = DRILL_SHOUTING
 		if(DRILL_SHOUTING)
-			to_chat(user, "<span class='notice'>You set the voice circuit to the last position.</span>")
+			to_chat(user, SPAN_NOTICE("You set the voice circuit to the last position."))
 			mode = DRILL_YELLING
 		if(DRILL_YELLING)
-			to_chat(user, "<span class='notice'>You set the voice circuit to the first position.</span>")
+			to_chat(user, SPAN_NOTICE("You set the voice circuit to the first position."))
 			mode = DRILL_DEFAULT
 		if(DRILL_CANADIAN)
-			to_chat(user, "<span class='danger'>You adjust voice circuit but nothing happens, probably because it's broken.</span>")
+			to_chat(user, SPAN_DANGER("You adjust voice circuit but nothing happens, probably because it's broken."))
 	return TRUE
 
 /obj/item/clothing/head/warden/drill/wirecutter_act(mob/living/user, obj/item/I)
 	if(mode != DRILL_CANADIAN)
-		to_chat(user, "<span class='danger'>You broke the voice circuit!</span>")
+		to_chat(user, SPAN_DANGER("You broke the voice circuit!"))
 		mode = DRILL_CANADIAN
 	return TRUE
 

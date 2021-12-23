@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		if(command)
 			. += "<span class='info'>Alt-click to toggle the high-volume mode.</span>"
 	else
-		. += "<span class='notice'>A small screen on the headset flashes, it's too small to read without holding or wearing the headset.</span>"
+		. += SPAN_NOTICE("A small screen on the headset flashes, it's too small to read without holding or wearing the headset.")
 
 /obj/item/radio/headset/ComponentInitialize()
 	. = ..()
@@ -475,7 +475,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	user.set_machine(src)
 	if (istype(W,/obj/item/headsetupgrader))
 		if (!bowman)
-			to_chat(user,"<span class='notice'>You upgrade [src].</span>")
+			to_chat(user,SPAN_NOTICE("You upgrade [src]."))
 			bowmanize()
 			qdel(W)
 	if(istype(W, /obj/item/screwdriver))
@@ -494,14 +494,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 					keyslot2 = null
 
 			recalculateChannels()
-			to_chat(user, "<span class='notice'>You pop out the encryption keys in the headset.</span>")
+			to_chat(user, SPAN_NOTICE("You pop out the encryption keys in the headset."))
 
 		else
-			to_chat(user, "<span class='warning'>This headset doesn't have any unique encryption keys!  How useless...</span>")
+			to_chat(user, SPAN_WARNING("This headset doesn't have any unique encryption keys!  How useless..."))
 
 	else if(istype(W, /obj/item/encryptionkey))
 		if(keyslot && keyslot2)
-			to_chat(user, "<span class='warning'>The headset can't hold another key!</span>")
+			to_chat(user, SPAN_WARNING("The headset can't hold another key!"))
 			return
 
 		if(!keyslot)

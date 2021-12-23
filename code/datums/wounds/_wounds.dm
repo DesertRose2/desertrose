@@ -247,7 +247,7 @@
 
 	// now that we've determined we have a valid attempt at treating, we can stomp on their dreams if we're already interacting with the patient
 	if(INTERACTING_WITH(user, victim))
-		to_chat(user, "<span class='warning'>You're already interacting with [victim]!</span>")
+		to_chat(user, SPAN_WARNING("You're already interacting with [victim]!"))
 		return TRUE
 
 	// lastly, treat them

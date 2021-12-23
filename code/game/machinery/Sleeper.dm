@@ -63,8 +63,8 @@
 		icon_state = initial(icon_state)
 
 /obj/machinery/sleeper/container_resist(mob/living/user)
-	visible_message("<span class='notice'>[occupant] emerges from [src]!</span>",
-		"<span class='notice'>You climb out of [src]!</span>")
+	visible_message(SPAN_NOTICE("[occupant] emerges from [src]!"),
+		SPAN_NOTICE("You climb out of [src]!"))
 	open_machine()
 
 /obj/machinery/sleeper/Exited(atom/movable/user)
@@ -117,7 +117,7 @@
 	if(..())
 		return
 	if(occupant)
-		to_chat(user, "<span class='warning'>[src] is currently occupied!</span>")
+		to_chat(user, SPAN_WARNING("[src] is currently occupied!"))
 		return
 	if(state_open)
 		to_chat(user, "<span class='warning'>[src] must be closed to [panel_open ? "close" : "open"] its maintenance hatch!</span>")
@@ -142,7 +142,7 @@
 	. = !(state_open || panel_open || (flags_1 & NODECONSTRUCT_1)) && I.tool_behaviour == TOOL_CROWBAR
 	if(.)
 		I.play_tool_sound(src, 50)
-		visible_message("<span class='notice'>[usr] pries open [src].</span>", "<span class='notice'>You pry open [src].</span>")
+		visible_message(SPAN_NOTICE("[usr] pries open [src]."), SPAN_NOTICE("You pry open [src]."))
 		open_machine()
 
 /obj/machinery/sleeper/ui_state(mob/user)
@@ -158,10 +158,10 @@
 			ui.open()
 	else
 		if(!HAS_TRAIT(user, TRAIT_CHEMWHIZ))
-			to_chat(user, "<span class='warning'>Try as you might, you have no clue how to work this thing.</span>")
+			to_chat(user, SPAN_WARNING("Try as you might, you have no clue how to work this thing."))
 			return
 		if(!user.IsAdvancedToolUser())
-			to_chat(user, "<span class='warning'>The legion has no use for drugs! Better to destroy it.</span>")
+			to_chat(user, SPAN_WARNING("The legion has no use for drugs! Better to destroy it."))
 			return
 		if(!ui)
 			ui = new(user, src, "Sleeper", name)
@@ -249,13 +249,13 @@
 			if(inject_chem(chem, usr))
 				. = TRUE
 				if(scrambled_chems && prob(5))
-					to_chat(usr, "<span class='warning'>Chemical system re-route detected, results may not be as expected!</span>")
+					to_chat(usr, SPAN_WARNING("Chemical system re-route detected, results may not be as expected!"))
 
 /obj/machinery/sleeper/emag_act(mob/user)
 	. = ..()
 	obj_flags |= EMAGGED
 	scramble_chem_buttons()
-	to_chat(user, "<span class='warning'>You scramble the sleeper's user interface!</span>")
+	to_chat(user, SPAN_WARNING("You scramble the sleeper's user interface!"))
 	return TRUE
 
 /obj/machinery/sleeper/proc/inject_chem(chem, mob/user)

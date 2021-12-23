@@ -99,27 +99,27 @@ GENETICS SCANNER
 	scanmode = (scanmode + 1) % 3
 	switch(scanmode)
 		if(SCANMODE_HEALTH)
-			to_chat(user, "<span class='notice'>You switch the health analyzer to check physical health.</span>")
+			to_chat(user, SPAN_NOTICE("You switch the health analyzer to check physical health."))
 		if(SCANMODE_CHEMICAL)
-			to_chat(user, "<span class='notice'>You switch the health analyzer to scan chemical contents.</span>")
+			to_chat(user, SPAN_NOTICE("You switch the health analyzer to scan chemical contents."))
 		if(SCANMODE_WOUND)
-			to_chat(user, "<span class='notice'>You switch the health analyzer to report extra info on wounds.</span>")
+			to_chat(user, SPAN_NOTICE("You switch the health analyzer to report extra info on wounds."))
 
 /obj/item/healthanalyzer/attack(mob/living/M, mob/living/carbon/human/user)
 	flick("[icon_state]-scan", src)	//makes it so that it plays the scan animation upon scanning, including clumsy scanning
 
 	// Clumsiness/brain damage check
 	if ((HAS_TRAIT(user, TRAIT_CLUMSY) || HAS_TRAIT(user, TRAIT_DUMB)) && prob(50))
-		user.visible_message("<span class='warning'>[user] analyzes the floor's vitals!</span>", \
-							"<span class='notice'>You stupidly try to analyze the floor's vitals!</span>")
+		user.visible_message(SPAN_WARNING("[user] analyzes the floor's vitals!"), \
+							SPAN_NOTICE("You stupidly try to analyze the floor's vitals!"))
 		to_chat(user, "<span class='info'>Analyzing results for The floor:\n\tOverall status: <b>Healthy</b></span>\
 					\n<span class='info'>Key: <font color='blue'>Suffocation</font>/<font color='green'>Toxin</font>/<font color='#FF8000'>Burn</font>/<font color='red'>Brute</font></span>\
 					\n<span class='info'>\tDamage specifics: <font color='blue'>0</font>-<font color='green'>0</font>-<font color='#FF8000'>0</font>-<font color='red'>0</font></span>\
 					\n<span class='info'>Body temperature: ???</span>")
 		return
 
-	user.visible_message("<span class='notice'>[user] analyzes [M]'s vitals.</span>", \
-						"<span class='notice'>You analyze [M]'s vitals.</span>")
+	user.visible_message(SPAN_NOTICE("[user] analyzes [M]'s vitals."), \
+						SPAN_NOTICE("You analyze [M]'s vitals."))
 
 	if(scanmode == SCANMODE_HEALTH)
 		healthscan(user, M, mode, advanced)
@@ -290,7 +290,7 @@ GENETICS SCANNER
 			else if(istype(O, /obj/item/organ/liver))
 				var/obj/item/organ/liver/L = O
 				if(L.organ_flags & ORGAN_FAILING && H.stat != DEAD) //might be depreciated
-					temp_message += "<span class='danger'>Subject is suffering from liver failure: Apply Corazone and begin a liver transplant immediately!</span>"
+					temp_message += SPAN_DANGER("Subject is suffering from liver failure: Apply Corazone and begin a liver transplant immediately!")
 
 			//HEART
 			else if(ishuman(M) && (istype(O, /obj/item/organ/heart)))
@@ -405,9 +405,9 @@ GENETICS SCANNER
 		var/tdelta = round(world.time - M.timeofdeath)
 		if(tdelta < (DEFIB_TIME_LIMIT * 10))
 			if(heart_ded)
-				msg += "<span class='danger'>Subject died [DisplayTimeText(tdelta)] ago, heart requires surgical intervention for defibrillation.</span>"
+				msg += SPAN_DANGER("Subject died [DisplayTimeText(tdelta)] ago, heart requires surgical intervention for defibrillation.")
 			else
-				msg += "<span class='danger'>Subject died [DisplayTimeText(tdelta)] ago, defibrillation may be possible!</span>"
+				msg += SPAN_DANGER("Subject died [DisplayTimeText(tdelta)] ago, defibrillation may be possible!")
 			if(advanced)
 				if(H.get_ghost() || H.key || H.client)//Since it can last a while.
 					msg += "<span class='danger'> Intervention recommended.</span>\n"
@@ -458,7 +458,7 @@ GENETICS SCANNER
 		if(cyberimp_detect)
 			msg += "<span class='notice'>Detected cybernetic modifications:</span>\n"
 			msg += "<span class='notice'>[cyberimp_detect]</span>\n"
-	msg += "<span class='notice'>*---------*</span>"
+	msg += SPAN_NOTICE("*---------*")
 	to_chat(user, msg)
 	SEND_SIGNAL(M, COMSIG_NANITE_SCAN, user, FALSE)
 
@@ -545,7 +545,7 @@ GENETICS SCANNER
 		if(istype(scanner))
 			// Only emit the cheerful scanner message if this scan came from a scanner
 			playsound(scanner, 'sound/machines/ping.ogg', 50, FALSE)
-			to_chat(user, "<span class='notice'>\The [scanner] makes a happy ping and briefly displays a smiley face with several exclamation points! It's really excited to report that [patient] has no wounds!</span>")
+			to_chat(user, SPAN_NOTICE("\The [scanner] makes a happy ping and briefly displays a smiley face with several exclamation points! It's really excited to report that [patient] has no wounds!"))
 		else
 			to_chat(user, "<span class='notice ml-1'>No wounds detected in subject.</span>")
 	else
@@ -563,27 +563,27 @@ GENETICS SCANNER
 		playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
 		var/list/encouragements = list("briefly displays a happy face, gazing emptily at you", "briefly displays a spinning cartoon heart", "displays an encouraging message about eating healthy and exercising", \
 				"reminds you that everyone is doing their best", "displays a message wishing you well", "displays a sincere thank-you for your interest in first-aid", "formally absolves you of all your sins")
-		to_chat(user, "<span class='notice'>\The [src] makes a happy ping and [pick(encouragements)]!</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] makes a happy ping and [pick(encouragements)]!"))
 		next_encouragement = world.time + 10 SECONDS
 		greedy = FALSE
 	else if(!greedy)
-		to_chat(user, "<span class='warning'>\The [src] displays an eerily high-definition frowny face, chastizing you for asking it for too much encouragement.</span>")
+		to_chat(user, SPAN_WARNING("\The [src] displays an eerily high-definition frowny face, chastizing you for asking it for too much encouragement."))
 		greedy = TRUE
 	else
 		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, FALSE)
 		if(isliving(user))
 			var/mob/living/L = user
-			to_chat(L, "<span class='warning'>\The [src] makes a disappointed buzz and pricks your finger for being greedy. Ow!</span>")
+			to_chat(L, SPAN_WARNING("\The [src] makes a disappointed buzz and pricks your finger for being greedy. Ow!"))
 			L.adjustBruteLoss(4)
 			L.dropItemToGround(src)
 
 /obj/item/healthanalyzer/wound/attack(mob/living/carbon/patient, mob/living/carbon/human/user)
 	add_fingerprint(user)
-	user.visible_message("<span class='notice'>[user] scans [patient] for serious injuries.</span>", "<span class='notice'>You scan [patient] for serious injuries.</span>")
+	user.visible_message(SPAN_NOTICE("[user] scans [patient] for serious injuries."), SPAN_NOTICE("You scan [patient] for serious injuries."))
 
 	if(!istype(patient))
 		playsound(src, 'sound/machines/buzz-sigh.ogg', 30, TRUE)
-		to_chat(user, "<span class='notice'>\The [src] makes a sad buzz and briefly displays a frowny face, indicating it can't scan [patient].</span>")
+		to_chat(user, SPAN_NOTICE("\The [src] makes a sad buzz and briefly displays a frowny face, indicating it can't scan [patient]."))
 		return
 
 	woundscan(user, patient, src)
@@ -612,7 +612,7 @@ GENETICS SCANNER
 
 /obj/item/analyzer/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click [src] to activate the barometer function.</span>"
+	. += SPAN_NOTICE("Alt-click [src] to activate the barometer function.")
 
 /obj/item/analyzer/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to analyze [user.p_them()]self with [src]! The display shows that [user.p_theyre()] dead!</span>")
@@ -637,7 +637,7 @@ GENETICS SCANNER
 	if(user.canUseTopic(src))
 		. = TRUE
 		if(cooldown)
-			to_chat(user, "<span class='warning'>[src]'s barometer function is preparing itself.</span>")
+			to_chat(user, SPAN_WARNING("[src]'s barometer function is preparing itself."))
 			return
 
 		var/turf/T = get_turf(user)
@@ -649,7 +649,7 @@ GENETICS SCANNER
 		var/datum/weather/ongoing_weather = null
 
 		if(!user_area.outdoors)
-			to_chat(user, "<span class='warning'>[src]'s barometer function won't work indoors!</span>")
+			to_chat(user, SPAN_WARNING("[src]'s barometer function won't work indoors!"))
 			return
 
 		for(var/V in SSweather.processing)
@@ -663,23 +663,23 @@ GENETICS SCANNER
 				to_chat(user, "<span class='warning'>[src]'s barometer function can't trace anything while the storm is [ongoing_weather.stage == MAIN_STAGE ? "already here!" : "winding down."]</span>")
 				return
 
-			to_chat(user, "<span class='notice'>The next [ongoing_weather] will hit in [butchertime(ongoing_weather.next_hit_time - world.time)].</span>")
+			to_chat(user, SPAN_NOTICE("The next [ongoing_weather] will hit in [butchertime(ongoing_weather.next_hit_time - world.time)]."))
 			if(ongoing_weather.aesthetic)
-				to_chat(user, "<span class='warning'>[src]'s barometer function says that the next storm will breeze on by.</span>")
+				to_chat(user, SPAN_WARNING("[src]'s barometer function says that the next storm will breeze on by."))
 		else
 			var/next_hit = SSweather.next_hit_by_zlevel["[T.z]"]
 			var/fixed = next_hit ? next_hit - world.time : -1
 			if(fixed < 0)
-				to_chat(user, "<span class='warning'>[src]'s barometer function was unable to trace any weather patterns.</span>")
+				to_chat(user, SPAN_WARNING("[src]'s barometer function was unable to trace any weather patterns."))
 			else
-				to_chat(user, "<span class='warning'>[src]'s barometer function says a storm will land in approximately [butchertime(fixed)].</span>")
+				to_chat(user, SPAN_WARNING("[src]'s barometer function says a storm will land in approximately [butchertime(fixed)]."))
 		cooldown = TRUE
 		addtimer(CALLBACK(src,/obj/item/analyzer/proc/ping), cooldown_time)
 
 /obj/item/analyzer/proc/ping()
 	if(isliving(loc))
 		var/mob/living/L = loc
-		to_chat(L, "<span class='notice'>[src]'s barometer function is ready!</span>")
+		to_chat(L, SPAN_NOTICE("[src]'s barometer function is ready!"))
 	playsound(src, 'sound/machines/click.ogg', 100)
 	cooldown = FALSE
 
@@ -697,7 +697,7 @@ GENETICS SCANNER
 /proc/atmosanalyzer_scan(mixture, mob/living/user, atom/target = src, visible = TRUE)
 	var/icon = target
 	if(visible)
-		user.visible_message("[user] has used the analyzer on [icon2html(icon, viewers(user))] [target].", "<span class='notice'>You use the analyzer on [icon2html(icon, user)] [target].</span>")
+		user.visible_message("[user] has used the analyzer on [icon2html(icon, viewers(user))] [target].", SPAN_NOTICE("You use the analyzer on [icon2html(icon, user)] [target]."))
 	to_chat(user, "<span class='boldnotice'>Results of analysis of [icon2html(icon, user)] [target].</span>")
 
 	var/list/airs = islist(mixture) ? mixture : list(mixture)
@@ -713,27 +713,27 @@ GENETICS SCANNER
 		var/cached_scan_results = air_contents.analyzer_results
 
 		if(total_moles > 0)
-			to_chat(user, "<span class='notice'>Moles: [round(total_moles, 0.01)] mol</span>")
-			to_chat(user, "<span class='notice'>Volume: [volume] L</span>")
-			to_chat(user, "<span class='notice'>Pressure: [round(pressure,0.01)] kPa</span>")
+			to_chat(user, SPAN_NOTICE("Moles: [round(total_moles, 0.01)] mol"))
+			to_chat(user, SPAN_NOTICE("Volume: [volume] L"))
+			to_chat(user, SPAN_NOTICE("Pressure: [round(pressure,0.01)] kPa"))
 
 			for(var/id in air_contents.get_gases())
 				if(air_contents.get_moles(id) >= 0.005)
 					var/gas_concentration = air_contents.get_moles(id)/total_moles
-					to_chat(user, "<span class='notice'>[GLOB.gas_data.names[id]]: [round(gas_concentration*100, 0.01)] % ([round(air_contents.get_moles(id), 0.01)] mol)</span>")
-			to_chat(user, "<span class='notice'>Temperature: [round(temperature - T0C,0.01)] &deg;C ([round(temperature, 0.01)] K)</span>")
+					to_chat(user, SPAN_NOTICE("[GLOB.gas_data.names[id]]: [round(gas_concentration*100, 0.01)] % ([round(air_contents.get_moles(id), 0.01)] mol)"))
+			to_chat(user, SPAN_NOTICE("Temperature: [round(temperature - T0C,0.01)] &deg;C ([round(temperature, 0.01)] K)"))
 
 		else
 			if(airs.len > 1)
-				to_chat(user, "<span class='notice'>This node is empty!</span>")
+				to_chat(user, SPAN_NOTICE("This node is empty!"))
 			else
-				to_chat(user, "<span class='notice'>[target] is empty!</span>")
+				to_chat(user, SPAN_NOTICE("[target] is empty!"))
 
 		if(cached_scan_results && cached_scan_results["fusion"]) //notify the user if a fusion reaction was detected
 			var/instability = round(cached_scan_results["fusion"], 0.01)
 			var/tier = instability2text(instability)
 			to_chat(user, "<span class='boldnotice'>Large amounts of free neutrons detected in the air indicate that a fusion reaction took place.</span>")
-			to_chat(user, "<span class='notice'>Instability of the last fusion reaction: [instability]\n This indicates it was [tier]</span>")
+			to_chat(user, SPAN_NOTICE("Instability of the last fusion reaction: [instability]\n This indicates it was [tier]"))
 	return
 
 /obj/item/analyzer/proc/scan_turf(mob/user, turf/location)
@@ -787,7 +787,7 @@ GENETICS SCANNER
 			var/instability = round(cached_scan_results["fusion"], 0.01)
 			var/tier = instability2text(instability)
 			to_chat(user, "<span class='boldnotice'>Large amounts of free neutrons detected in the air indicate that a fusion reaction took place.</span>")
-			to_chat(user, "<span class='notice'>Instability of the last fusion reaction: [instability]\n This indicates it was [tier].</span>")
+			to_chat(user, SPAN_NOTICE("Instability of the last fusion reaction: [instability]\n This indicates it was [tier]."))
 
 /obj/item/analyzer/ranged
 	desc = "A hand-held scanner which uses advanced spectroscopy and infrared readings to analyze gases as a distance. Alt-Click to use the built in barometer function."
@@ -824,7 +824,7 @@ GENETICS SCANNER
 	if(user.stat || user.eye_blind)
 		return
 	if (!isslime(M))
-		to_chat(user, "<span class='warning'>This device can only scan slimes!</span>")
+		to_chat(user, SPAN_WARNING("This device can only scan slimes!"))
 		return
 	var/mob/living/simple_animal/slime/T = M
 	slime_scan(T, user)
@@ -835,9 +835,9 @@ GENETICS SCANNER
 	to_chat(user, "<span class='notice'>[T.colour] [T.is_adult ? "adult" : "baby"] slime</span>")
 	to_chat(user, "Nutrition: [T.nutrition]/[T.get_max_nutrition()]")
 	if (T.nutrition < T.get_starve_nutrition())
-		to_chat(user, "<span class='warning'>Warning: slime is starving!</span>")
+		to_chat(user, SPAN_WARNING("Warning: slime is starving!"))
 	else if (T.nutrition < T.get_hunger_nutrition())
-		to_chat(user, "<span class='warning'>Warning: slime is hungry</span>")
+		to_chat(user, SPAN_WARNING("Warning: slime is hungry"))
 	to_chat(user, "Electric change strength: [T.powerlevel]")
 	to_chat(user, "Health: [round(T.health/T.maxHealth,0.01)*100]%")
 	if (T.slime_mutation[4] == T.colour)
@@ -857,8 +857,8 @@ GENETICS SCANNER
 		to_chat(user, "Multiple cores detected")
 	to_chat(user, "Growth progress: [T.amount_grown]/[SLIME_EVOLUTION_THRESHOLD]")
 	if(T.effectmod)
-		to_chat(user, "<span class='notice'>Core mutation in progress: [T.effectmod]</span>")
-		to_chat(user, "<span class = 'notice'>Progress in core mutation: [T.applied] / [SLIME_EXTRACT_CROSSING_REQUIRED]</span>")
+		to_chat(user, SPAN_NOTICE("Core mutation in progress: [T.effectmod]"))
+		to_chat(user, SPAN_NOTICE("Progress in core mutation: [T.applied] / [SLIME_EXTRACT_CROSSING_REQUIRED]"))
 	to_chat(user, "========================")
 
 
@@ -880,7 +880,7 @@ GENETICS SCANNER
 	custom_materials = list(/datum/material/iron=200)
 
 /obj/item/nanite_scanner/attack(mob/living/M, mob/living/carbon/human/user)
-	user.visible_message("<span class='notice'>[user] has analyzed [M]'s nanites.</span>")
+	user.visible_message(SPAN_NOTICE("[user] has analyzed [M]'s nanites."))
 
 	add_fingerprint(user)
 
@@ -912,12 +912,12 @@ GENETICS SCANNER
 /obj/item/sequence_scanner/attack(mob/living/M, mob/living/carbon/human/user)
 	add_fingerprint(user)
 	if (!HAS_TRAIT_NOT_FROM(M, TRAIT_RADIMMUNE,BLOODSUCKER_TRAIT)) //no scanning if its a husk or DNA-less Species
-		user.visible_message("<span class='notice'>[user] analyzes [M]'s genetic sequence.</span>", \
-							"<span class='notice'>You analyze [M]'s genetic sequence.</span>")
+		user.visible_message(SPAN_NOTICE("[user] analyzes [M]'s genetic sequence."), \
+							SPAN_NOTICE("You analyze [M]'s genetic sequence."))
 		gene_scan(M, user)
 
 	else
-		user.visible_message("<span class='notice'>[user] failed to analyse [M]'s genetic sequence.</span>", "<span class='warning'>[M] has no readable genetic sequence!</span>")
+		user.visible_message(SPAN_NOTICE("[user] failed to analyse [M]'s genetic sequence."), SPAN_WARNING("[M] has no readable genetic sequence!"))
 
 /obj/item/sequence_scanner/attack_self(mob/user)
 	display_sequence(user)
@@ -933,19 +933,19 @@ GENETICS SCANNER
 	if(istype(O, /obj/machinery/computer/scan_consolenew))
 		var/obj/machinery/computer/scan_consolenew/C = O
 		if(C.stored_research)
-			to_chat(user, "<span class='notice'>[name] linked to central research database.</span>")
+			to_chat(user, SPAN_NOTICE("[name] linked to central research database."))
 			discovered = C.stored_research.discovered_mutations
 		else
-			to_chat(user,"<span class='warning'>No database to update from.</span>")
+			to_chat(user,SPAN_WARNING("No database to update from."))
 
 /obj/item/sequence_scanner/proc/gene_scan(mob/living/carbon/C, mob/living/user)
 	if(!iscarbon(C) || !C.has_dna())
 		return
 	buffer = C.dna.mutation_index
-	to_chat(user, "<span class='notice'>Subject [C.name]'s DNA sequence has been saved to buffer.</span>")
+	to_chat(user, SPAN_NOTICE("Subject [C.name]'s DNA sequence has been saved to buffer."))
 	if(LAZYLEN(buffer))
 		for(var/A in buffer)
-			to_chat(user, "<span class='notice'>[get_display_name(A)]</span>")
+			to_chat(user, SPAN_NOTICE("[get_display_name(A)]"))
 
 
 /obj/item/sequence_scanner/proc/display_sequence(mob/living/user)

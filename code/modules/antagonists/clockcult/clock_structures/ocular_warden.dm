@@ -86,7 +86,7 @@
 		if(validtargets.len)
 			target = pick(validtargets)
 			playsound(src,'sound/machines/clockcult/ocularwarden-target.ogg',50,1)
-			visible_message("<span class='warning'>[src] swivels to face [target]!</span>")
+			visible_message(SPAN_WARNING("[src] swivels to face [target]!"))
 			if(isliving(target))
 				var/mob/living/L = target
 				to_chat(L, "<span class='neovgre'>\"I SEE YOU!\"</span>\n<span class='userdanger'>[src]'s gaze [GLOB.ratvar_awakens ? "melts you alive" : "burns you"]!</span>")
@@ -95,7 +95,7 @@
 				to_chat(M.occupant, "<span class='neovgre'>\"I SEE YOU!\"</span>" )
 		else if(prob(0.5)) //Extremely low chance because of how fast the subsystem it uses processes
 			if(prob(50))
-				visible_message("<span class='notice'>[src][pick(idle_messages)]</span>")
+				visible_message(SPAN_NOTICE("[src][pick(idle_messages)]"))
 			else
 				setDir(pick(GLOB.cardinals))//Random rotation
 
@@ -105,7 +105,7 @@
 		var/obj/item/storage/book/bible/B = L.bible_check()
 		if(B)
 			if(!(B.resistance_flags & ON_FIRE))
-				to_chat(L, "<span class='warning'>Your [B.name] bursts into flames!</span>")
+				to_chat(L, SPAN_WARNING("Your [B.name] bursts into flames!"))
 			for(var/obj/item/storage/book/bible/BI in L.GetAllContents())
 				if(!(BI.resistance_flags & ON_FIRE))
 					BI.fire_act()
@@ -143,7 +143,7 @@
 	if(!target)
 		return 0
 	target = null
-	visible_message("<span class='warning'>[src] settles and seems almost disappointed.</span>")
+	visible_message(SPAN_WARNING("[src] settles and seems almost disappointed."))
 	return 1
 
 /obj/structure/destructible/clockwork/ocular_warden/get_efficiency_mod()

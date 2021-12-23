@@ -44,7 +44,7 @@
 	return ..()
 
 /mob/living/proc/ZImpactDamage(turf/T, levels)
-	visible_message("<span class='danger'>[src] crashes into [T] with a sickening noise!</span>", \
+	visible_message(SPAN_DANGER("[src] crashes into [T] with a sickening noise!"), \
 					"<span class='userdanger'>You crash into [T] with a sickening noise!</span>")
 	adjustBruteLoss((levels * 5) ** 1.5)
 	DefaultCombatKnockdown(levels * 50)
@@ -102,7 +102,7 @@
 		//Should stop you pushing a restrained person out of the way
 		if(L.pulledby && L.pulledby != src && L.restrained())
 			if(!(world.time % 5))
-				to_chat(src, "<span class='warning'>[L] is restrained, you cannot push past.</span>")
+				to_chat(src, SPAN_WARNING("[L] is restrained, you cannot push past."))
 			return 1
 
 		if(L.pulling)
@@ -110,7 +110,7 @@
 				var/mob/P = L.pulling
 				if(P.restrained())
 					if(!(world.time % 5))
-						to_chat(src, "<span class='warning'>[L] is restraining [P], you cannot push past.</span>")
+						to_chat(src, SPAN_WARNING("[L] is restraining [P], you cannot push past."))
 					return 1
 
 	//CIT CHANGES START HERE - makes it so resting stops you from moving through standing folks without a short delay
@@ -120,11 +120,11 @@
 				if(combat_flags & COMBAT_FLAG_ATTEMPTING_CRAWL)
 					return TRUE
 				if(IS_STAMCRIT(src))
-					to_chat(src, "<span class='warning'>You're too exhausted to crawl under [L].</span>")
+					to_chat(src, SPAN_WARNING("You're too exhausted to crawl under [L]."))
 					return TRUE
 				ENABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
-				visible_message("<span class='notice'>[src] is attempting to crawl under [L].</span>",
-					"<span class='notice'>You are now attempting to crawl under [L].</span>",
+				visible_message(SPAN_NOTICE("[src] is attempting to crawl under [L]."),
+					SPAN_NOTICE("You are now attempting to crawl under [L]."),
 					target = L, target_message = "<span class='notice'>[src] is attempting to crawl under you.</span>")
 				if(!do_after(src, CRAWLUNDER_DELAY, target = src) || CHECK_MOBILITY(src, MOBILITY_STAND))
 					DISABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
@@ -277,8 +277,8 @@
 
 	if(AM.pulledby)
 		if(!supress_message)
-			AM.pulledby.visible_message("<span class='danger'>[src] has pulled [AM] from [AM.pulledby]'s grip.</span>",
-				"<span class='danger'>[src] has pulled [AM] from your grip.</span>", target = src,
+			AM.pulledby.visible_message(SPAN_DANGER("[src] has pulled [AM] from [AM.pulledby]'s grip."),
+				SPAN_DANGER("[src] has pulled [AM] from your grip."), target = src,
 				target_message = "<span class='danger'>You have pulled [AM] from [AM.pulledby]'s grip.</span>")
 		log_combat(AM, AM.pulledby, "pulled from", src)
 		AM.pulledby.stop_pulling() //an object can't be pulled by two mobs at once.
@@ -391,7 +391,7 @@
 		return FALSE
 	if(!..())
 		return FALSE
-	visible_message("<b>[src]</b> points at [A].", "<span class='notice'>You point at [A].</span>")
+	visible_message("<b>[src]</b> points at [A].", SPAN_NOTICE("You point at [A]."))
 	return TRUE
 
 /mob/living/verb/succumb()
@@ -401,17 +401,17 @@
 		var/datum/status_effect/chem/enthrall/E = src.has_status_effect(/datum/status_effect/chem/enthrall)
 		if(E.phase < 3)
 			if(HAS_TRAIT(src, TRAIT_MINDSHIELD))
-				to_chat(src, "<span class='notice'>Your mindshield prevents your mind from giving in!</span>")
+				to_chat(src, SPAN_NOTICE("Your mindshield prevents your mind from giving in!"))
 			else if(src.mind.assigned_role in GLOB.command_positions)
-				to_chat(src, "<span class='notice'>Your dedication to your department prevents you from giving in!</span>")
+				to_chat(src, SPAN_NOTICE("Your dedication to your department prevents you from giving in!"))
 			else
 				E.enthrallTally += 20
-				to_chat(src, "<span class='notice'>You give into [E.master]'s influence.</span>")
+				to_chat(src, SPAN_NOTICE("You give into [E.master]'s influence."))
 	if (InCritical())
 		log_message("Has succumbed to death while in [InFullCritical() ? "hard":"soft"] critical with [round(health, 0.1)] points of health!", LOG_ATTACK)
 		adjustOxyLoss(health - HEALTH_THRESHOLD_DEAD)
 		updatehealth()
-		to_chat(src, "<span class='notice'>You have given up life and succumbed to death.</span>")
+		to_chat(src, SPAN_NOTICE("You have given up life and succumbed to death."))
 		death()
 
 /mob/living/incapacitated(ignore_restraints = FALSE, ignore_grab = FALSE, check_immobilized = FALSE)
@@ -468,7 +468,7 @@
 	set category = "IC"
 
 	if(IsSleeping())
-		to_chat(src, "<span class='notice'>You are already sleeping.</span>")
+		to_chat(src, SPAN_NOTICE("You are already sleeping."))
 		return
 	else
 		if(alert(src, "You sure you want to sleep for a while?", "Sleep", "Yes", "No") == "Yes")
@@ -785,15 +785,15 @@
 	. = ..()
 	if(pulledby.grab_state > GRAB_PASSIVE)
 		if(CHECK_MOBILITY(src, MOBILITY_RESIST) && prob(30/pulledby.grab_state))
-			pulledby.visible_message("<span class='danger'>[src] has broken free of [pulledby]'s grip!</span>",
-				"<span class='danger'>[src] has broken free of your grip!</span>", target = src,
+			pulledby.visible_message(SPAN_DANGER("[src] has broken free of [pulledby]'s grip!"),
+				SPAN_DANGER("[src] has broken free of your grip!"), target = src,
 				target_message = "<span class='danger'>You have broken free of [pulledby]'s grip!</span>")
 			pulledby.stop_pulling()
 			return TRUE
 		else if(moving_resist && client) //we resisted by trying to move // this is a horrible system and whoever thought using client instead of mob is okay is not an okay person
 			client.move_delay = world.time + 20
-		pulledby.visible_message("<span class='danger'>[src] resists against [pulledby]'s grip!</span>",
-			"<span class='danger'>[src] resists against your grip!</span>", target = src,
+		pulledby.visible_message(SPAN_DANGER("[src] resists against [pulledby]'s grip!"),
+			SPAN_DANGER("[src] resists against your grip!"), target = src,
 			target_message = "<span class='danger'>You resist against [pulledby]'s grip!</span>")
 	else
 		pulledby.stop_pulling()
@@ -847,7 +847,7 @@
 // Override if a certain type of mob should be behave differently when stripping items (can't, for example)
 /mob/living/stripPanelUnequip(obj/item/what, mob/who, where)
 	if(HAS_TRAIT(what, TRAIT_NODROP))
-		to_chat(src, "<span class='warning'>You can't remove \the [what.name], it appears to be stuck!</span>")
+		to_chat(src, SPAN_WARNING("You can't remove \the [what.name], it appears to be stuck!"))
 		return
 	var/strip_mod = 1
 	var/strip_silence = FALSE
@@ -858,12 +858,12 @@
 			strip_mod = g.strip_mod
 			strip_silence = g.strip_silence
 	if (!strip_silence)
-		who.visible_message("<span class='danger'>[src] tries to remove [who]'s [what.name].</span>", \
+		who.visible_message(SPAN_DANGER("[src] tries to remove [who]'s [what.name]."), \
 					"<span class='userdanger'>[src] tries to remove your [what.name].</span>", target = src,
 					target_message = "<span class='danger'>You try to remove [who]'s [what.name].</span>")
 		what.add_fingerprint(src)
 	else
-		to_chat(src,"<span class='notice'>You try to remove [who]'s [what.name].</span>")
+		to_chat(src,SPAN_NOTICE("You try to remove [who]'s [what.name]."))
 		what.add_fingerprint(src)
 	if(do_mob(src, who, round(what.strip_delay / strip_mod), ignorehelditem = TRUE))
 		if(what && Adjacent(who))
@@ -892,7 +892,7 @@
 /mob/living/stripPanelEquip(obj/item/what, mob/who, where)
 	what = src.get_active_held_item()
 	if(what && HAS_TRAIT(what, TRAIT_NODROP))
-		to_chat(src, "<span class='warning'>You can't put \the [what.name] on [who], it's stuck to your hand!</span>")
+		to_chat(src, SPAN_WARNING("You can't put \the [what.name] on [who], it's stuck to your hand!"))
 		return
 	if(what)
 		var/list/where_list
@@ -905,11 +905,11 @@
 			final_where = where
 
 		if(!what.mob_can_equip(who, src, final_where, TRUE, TRUE))
-			to_chat(src, "<span class='warning'>\The [what.name] doesn't fit in that place!</span>")
+			to_chat(src, SPAN_WARNING("\The [what.name] doesn't fit in that place!"))
 			return
 
-		who.visible_message("<span class='notice'>[src] tries to put [what] on [who].</span>",
-			"<span class='notice'>[src] tries to put [what] on you.</span>", target = src,
+		who.visible_message(SPAN_NOTICE("[src] tries to put [what] on [who]."),
+			SPAN_NOTICE("[src] tries to put [what] on you."), target = src,
 			target_message = "<span class='notice'>You try to put [what] on [who].</span>")
 		if(do_mob(src, who, what.equip_delay_other))
 			if(what && Adjacent(who) && what.mob_can_equip(who, src, final_where, TRUE, TRUE))
@@ -990,19 +990,19 @@
 
 /mob/living/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE, no_tk=FALSE)
 	if(incapacitated())
-		to_chat(src, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(src, SPAN_WARNING("You can't do that right now!"))
 		return FALSE
 	if(be_close && !in_range(M, src))
-		to_chat(src, "<span class='warning'>You are too far away!</span>")
+		to_chat(src, SPAN_WARNING("You are too far away!"))
 		return FALSE
 	if(!no_dextery)
-		to_chat(src, "<span class='warning'>You don't have the dexterity to do this!</span>")
+		to_chat(src, SPAN_WARNING("You don't have the dexterity to do this!"))
 		return FALSE
 	return TRUE
 
 /mob/living/proc/can_use_guns(obj/item/G)//actually used for more than guns!
 	if(G.trigger_guard != TRIGGER_GUARD_ALLOW_ALL && !IsAdvancedToolUser())
-		to_chat(src, "<span class='warning'>You don't have the dexterity to do this!</span>")
+		to_chat(src, SPAN_WARNING("You don't have the dexterity to do this!"))
 		return FALSE
 	return TRUE
 
@@ -1094,7 +1094,7 @@
 /mob/living/proc/IgniteMob()
 	if(fire_stacks > 0 && !on_fire)
 		on_fire = 1
-		visible_message("<span class='warning'>[src] catches fire!</span>", \
+		visible_message(SPAN_WARNING("[src] catches fire!"), \
 						"<span class='userdanger'>You're set on fire!</span>")
 		new/obj/effect/dummy/lighting_obj/moblight/fire(src)
 		throw_alert("fire", /obj/screen/alert/fire)

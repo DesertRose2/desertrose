@@ -230,13 +230,13 @@
 					. += "<span class='heavy_brass'>With the bluespace field established, Ratvar is preparing to come through!</span>"
 	else
 		if(!active)
-			. += "<span class='warning'>Whatever it is, it doesn't seem to be active.</span>"
+			. += SPAN_WARNING("Whatever it is, it doesn't seem to be active.")
 		else
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='warning'>You see a swirling bluespace anomaly steadily growing in intensity.</span>"
+					. += SPAN_WARNING("You see a swirling bluespace anomaly steadily growing in intensity.")
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
-					. += "<span class='warning'>The anomaly is stable, and you can see flashes of something from it.</span>"
+					. += SPAN_WARNING("The anomaly is stable, and you can see flashes of something from it.")
 				if(GATEWAY_RATVAR_COMING to INFINITY)
 					. += "<span class='boldwarning'>The anomaly is stable! Something is coming through!</span>"
 
@@ -344,12 +344,12 @@
 	if(!IsAdminGhost(user))
 		return ..()
 	if(GLOB.servants_active)
-		to_chat(user, "<span class='danger'>The Ark is already counting down.</span>")
+		to_chat(user, SPAN_DANGER("The Ark is already counting down."))
 		return ..()
 	if(alert(user, "Activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 		if(alert(user, "REALLY activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 			if(alert(user, "You're REALLY SURE? This cannot be undone.", name, "Yes - Activate the Ark", "No") == "Yes - Activate the Ark")
-				message_admins("<span class='danger'>Admin [key_name_admin(user)] started the Ark's countdown!</span>")
+				message_admins(SPAN_DANGER("Admin [key_name_admin(user)] started the Ark's countdown!"))
 				log_admin("Admin [key_name(user)] started the Ark's countdown on a non-clockcult mode!")
 				to_chat(user, "<span class='userdanger'>The gamemode is now being treated as clockwork cult, and the Ark is counting down from 5 \
 				minutes. You will need to create servant players yourself.</span>")

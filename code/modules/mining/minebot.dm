@@ -75,7 +75,7 @@
 	var/t_s = p_s()
 	if(health < maxHealth)
 		if(health >= maxHealth * 0.5)
-			. += "<span class='warning'>[t_He] look[t_s] slightly dented.</span>"
+			. += SPAN_WARNING("[t_He] look[t_s] slightly dented.")
 		else
 			. += "<span class='boldwarning'>[t_He] look[t_s] severely dented!</span>"
 	. += "<span class='notice'>Using a mining scanner on [t_him] will instruct [t_him] to drop stored ore. <b>[max(0, LAZYLEN(contents) - 1)] Stored Ore</b>\n\
@@ -185,10 +185,10 @@
 /mob/living/simple_animal/hostile/mining_drone/proc/DropOre(message = 1)
 	if(!contents.len)
 		if(message)
-			to_chat(src, "<span class='notice'>You attempt to dump your stored ore, but you have none.</span>")
+			to_chat(src, SPAN_NOTICE("You attempt to dump your stored ore, but you have none."))
 		return
 	if(message)
-		to_chat(src, "<span class='notice'>You dump your stored ore.</span>")
+		to_chat(src, SPAN_NOTICE("You dump your stored ore."))
 	for(var/obj/item/stack/ore/O in contents)
 		O.forceMove(drop_location())
 

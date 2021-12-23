@@ -17,4 +17,4 @@
 	if(usr)//is this what you mean?
 		prefs.tip_delay = indelay
 		prefs.save_preferences()
-		to_chat(usr, "<span class='danger'>Tooltip delay set to [indelay] milliseconds.</span>")
+		to_chat(usr, SPAN_DANGER("Tooltip delay set to [indelay] milliseconds."))

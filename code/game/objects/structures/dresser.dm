@@ -26,7 +26,7 @@
 	var/mob/living/carbon/human/H = user
 
 	if(H.dna && H.dna.species && (NO_UNDERWEAR in H.dna.species.species_traits))
-		to_chat(H, "<span class='warning'>You are not capable of wearing underwear.</span>")
+		to_chat(H, SPAN_WARNING("You are not capable of wearing underwear."))
 		return
 
 	var/list/undergarment_choices = list("Underwear", "Underwear Color", "Undershirt", "Undershirt Color", "Socks", "Socks Color")

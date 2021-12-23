@@ -36,19 +36,19 @@
 
 	if((A.is_drainable() && !A.is_refillable()) && get_dist(src,A) <= 1 && can_fill_from_container)
 		if(!A.reagents.total_volume)
-			to_chat(user, "<span class='warning'>[A] is empty.</span>")
+			to_chat(user, SPAN_WARNING("[A] is empty."))
 			return
 
 		if(reagents.holder_full())
-			to_chat(user, "<span class='warning'>[src] is full.</span>")
+			to_chat(user, SPAN_WARNING("[src] is full."))
 			return
 
 		var/trans = A.reagents.trans_to(src, 50) //transfer 50u , using the spray's transfer amount would take too long to refill
-		to_chat(user, "<span class='notice'>You fill \the [src] with [trans] units of the contents of \the [A].</span>")
+		to_chat(user, SPAN_NOTICE("You fill \the [src] with [trans] units of the contents of \the [A]."))
 		return
 
 	if(reagents.total_volume < amount_per_transfer_from_this)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return
 
 	if(!spray(A))
@@ -135,7 +135,7 @@
 	var/hotness = I.get_temperature()
 	if(hotness && reagents)
 		reagents.expose_temperature(hotness)
-		to_chat(user, "<span class='notice'>You heat [name] with [I]!</span>")
+		to_chat(user, SPAN_NOTICE("You heat [name] with [I]!"))
 	return ..()
 
 /obj/item/reagent_containers/spray/verb/empty()
@@ -147,7 +147,7 @@
 	if (alert(usr, "Are you sure you want to empty that?", "Empty Bottle:", "Yes", "No") != "Yes")
 		return
 	if(isturf(usr.loc) && src.loc == usr)
-		to_chat(usr, "<span class='notice'>You empty \the [src] onto the floor.</span>")
+		to_chat(usr, SPAN_NOTICE("You empty \the [src] onto the floor."))
 		reagents.reaction(usr.loc)
 		src.reagents.clear_reagents()
 
@@ -277,7 +277,7 @@
 	generate_reagents()
 
 /obj/item/reagent_containers/spray/waterflower/cyborg/empty()
-	to_chat(usr, "<span class='warning'>You can not empty this!</span>")
+	to_chat(usr, SPAN_WARNING("You can not empty this!"))
 	return
 
 /obj/item/reagent_containers/spray/waterflower/cyborg/proc/generate_reagents()

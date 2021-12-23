@@ -124,7 +124,7 @@
 	if(!istype(I, /obj/item/stack/sheet) || !can_build)
 		return ..()
 	if(!isfloorturf(loc) && !isplatingturf(loc))
-		to_chat(user, "<span class='warning'>You can only build the structure on a solid floor!</span>")
+		to_chat(user, SPAN_WARNING("You can only build the structure on a solid floor!"))
 		return
 
 	var/walltype

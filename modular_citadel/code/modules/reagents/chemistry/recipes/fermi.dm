@@ -171,7 +171,7 @@
 		S.rabid = 1//Make them an angery boi
 		S.color = "#810010"
 	my_atom.reagents.clear_reagents()
-	my_atom.visible_message("<span class='warning'>An horrifying tumoural mass forms in [my_atom]!</span>")
+	my_atom.visible_message(SPAN_WARNING("An horrifying tumoural mass forms in [my_atom]!"))
 
 /datum/chemical_reaction/fermi/breast_enlarger
 	name = "Sucubus milk"
@@ -306,7 +306,7 @@
 	if(!B || !E)
 		return
 	if(!B.data)
-		my_atom.visible_message("<span class='warning'>The reaction splutters and fails to react properly.</span>") //Just in case
+		my_atom.visible_message(SPAN_WARNING("The reaction splutters and fails to react properly.")) //Just in case
 		E.purity = 0
 	if (B.data["gender"] == "female")
 		E.data["creatorGender"] = "Mistress"
@@ -330,7 +330,7 @@
 	if(!B || !E)
 		return
 	if(!B.data)
-		my_atom.visible_message("<span class='warning'>The reaction splutters and fails to react properly.</span>") //Just in case
+		my_atom.visible_message(SPAN_WARNING("The reaction splutters and fails to react properly.")) //Just in case
 		E.purity = 0
 	if (B.data["gender"] == "female")
 		E.data["creatorGender"] = "Mistress"

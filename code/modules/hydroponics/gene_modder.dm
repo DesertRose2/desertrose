@@ -79,23 +79,23 @@
 
 	if(istype(I, /obj/item/seeds))
 		if(seed)
-			to_chat(user, "<span class='warning'>A sample is already loaded into the machine!</span>")
+			to_chat(user, SPAN_WARNING("A sample is already loaded into the machine!"))
 		else
 			if(!user.temporarilyRemoveItemFromInventory(I))
 				return
 			insert_seed(I)
-			to_chat(user, "<span class='notice'>You add [I] to the machine.</span>")
+			to_chat(user, SPAN_NOTICE("You add [I] to the machine."))
 			interact(user)
 		return
 	else if(istype(I, /obj/item/disk/plantgene))
 		if (operation)
-			to_chat(user, "<span class='notice'>Please complete current operation.</span>")
+			to_chat(user, SPAN_NOTICE("Please complete current operation."))
 			return
 		eject_disk()
 		if(!user.transferItemToLoc(I, src))
 			return
 		disk = I
-		to_chat(user, "<span class='notice'>You add [I] to the machine.</span>")
+		to_chat(user, SPAN_NOTICE("You add [I] to the machine."))
 		interact(user)
 	else
 		..()
@@ -268,7 +268,7 @@
 				if(!usr.temporarilyRemoveItemFromInventory(I))
 					return
 				insert_seed(I)
-				to_chat(usr, "<span class='notice'>You add [I] to the machine.</span>")
+				to_chat(usr, SPAN_NOTICE("You add [I] to the machine."))
 		update_icon()
 	else if(href_list["eject_disk"] && !operation)
 		var/obj/item/I = usr.get_active_held_item()
@@ -277,7 +277,7 @@
 			if(!usr.transferItemToLoc(I, src))
 				return
 			disk = I
-			to_chat(usr, "<span class='notice'>You add [I] to the machine.</span>")
+			to_chat(usr, SPAN_NOTICE("You add [I] to the machine."))
 	else if(href_list["op"] == "insert" && disk && disk.gene && seed)
 		if(!operation) // Wait for confirmation
 			operation = "insert"
@@ -443,5 +443,5 @@
 /obj/item/disk/plantgene/examine(mob/user)
 	. = ..()
 	if(gene && (istype(gene, /datum/plant_gene/core/potency)))
-		. += "<span class='notice'>Percent is relative to potency, not maximum volume of the plant.</span>"
+		. += SPAN_NOTICE("Percent is relative to potency, not maximum volume of the plant.")
 	. += "The write-protect tab is set to [src.read_only ? "protected" : "unprotected"]."

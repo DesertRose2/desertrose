@@ -77,7 +77,7 @@
 /obj/item/assembly/voice/multitool_act(mob/living/user, obj/item/I)
 	mode %= modes.len
 	mode++
-	to_chat(user, "<span class='notice'>You set [src] into [modes[mode]] mode.</span>")
+	to_chat(user, SPAN_NOTICE("You set [src] into [modes[mode]] mode."))
 	listening = FALSE
 	recorded = ""
 	return TRUE

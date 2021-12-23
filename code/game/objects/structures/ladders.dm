@@ -67,22 +67,22 @@
 	if(up && down)
 		switch(alert(peeker, "Look up or down the ladder?", "Ladder", list("Up", "Down", "Cancel")))
 			if("Up")
-				peeker.visible_message("<span class='notice'>[peeker] looks up [peeker]!</span>",
-				"<span class='notice'>You look up [peeker]!</span>")
+				peeker.visible_message(SPAN_NOTICE("[peeker] looks up [peeker]!"),
+				SPAN_NOTICE("You look up [peeker]!"))
 				peek_dir = UP
 			if("Down")
-				usr.visible_message("<span class='notice'>[usr] looks down [src]!</span>",
-				"<span class='notice'>You look down [src]!</span>")
+				usr.visible_message(SPAN_NOTICE("[usr] looks down [src]!"),
+				SPAN_NOTICE("You look down [src]!"))
 				peek_dir = DOWN
 			else
 				return
 	else if(up)
-		usr.visible_message("<span class='notice'>[usr] looks up [src]!</span>",
-		"<span class='notice'>You look up [src]!</span>")
+		usr.visible_message(SPAN_NOTICE("[usr] looks up [src]!"),
+		SPAN_NOTICE("You look up [src]!"))
 		peek_dir = UP
 	else if(down)
-		usr.visible_message("<span class='notice'>[usr] looks down [src]!</span>",
-		"<span class='notice'>You look down [src]!</span>")
+		usr.visible_message(SPAN_NOTICE("[usr] looks down [src]!"),
+		SPAN_NOTICE("You look down [src]!"))
 		peek_dir = DOWN
 	else
 		return
@@ -163,7 +163,7 @@
 
 /obj/structure/ladder/singularity_pull()
 	if (!(resistance_flags & INDESTRUCTIBLE))
-		visible_message("<span class='danger'>[src] is torn to pieces by the gravitational pull!</span>")
+		visible_message(SPAN_DANGER("[src] is torn to pieces by the gravitational pull!"))
 		qdel(src)
 
 /obj/structure/ladder/proc/travel(going_up, mob/user, is_ghost, obj/structure/ladder/ladder)
@@ -213,7 +213,7 @@
 	else if(down)
 		travel(FALSE, user, is_ghost, down)
 	else
-		to_chat(user, "<span class='warning'>[src] doesn't seem to lead anywhere!</span>")
+		to_chat(user, SPAN_WARNING("[src] doesn't seem to lead anywhere!"))
 
 	if(!is_ghost)
 		add_fingerprint(user)
@@ -243,9 +243,9 @@
 
 /obj/structure/ladder/proc/show_fluff_message(going_up, mob/user)
 	if(going_up)
-		user.visible_message("[user] climbs up [src].","<span class='notice'>You climb up [src].</span>")
+		user.visible_message("[user] climbs up [src].",SPAN_NOTICE("You climb up [src]."))
 	else
-		user.visible_message("[user] climbs down [src].","<span class='notice'>You climb down [src].</span>")
+		user.visible_message("[user] climbs down [src].",SPAN_NOTICE("You climb down [src]."))
 
 
 // Indestructible away mission ladders which link based on a mapped ID and height value rather than X/Y/Z.
@@ -381,9 +381,9 @@
 
 /obj/structure/ladder/unbreakable/transition/show_fluff_message(going_up, mob/user)
 	if(going_up)
-		user.visible_message("[user] walks up to [src].","<span class='notice'>You walk up to [src].</span>")
+		user.visible_message("[user] walks up to [src].",SPAN_NOTICE("You walk up to [src]."))
 	else
-		user.visible_message("[user] walks down to [src].","<span class='notice'>You walk down to [src].</span>")
+		user.visible_message("[user] walks down to [src].",SPAN_NOTICE("You walk down to [src]."))
 
 /obj/structure/ladder/unbreakable/transition/travel(going_up, mob/user, is_ghost, obj/structure/ladder/ladder)
 	if(!is_ghost)

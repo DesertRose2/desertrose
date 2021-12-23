@@ -66,7 +66,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		UpdateButtonIcon()
 		return
 	if(initial(uses) > 1) //no need to tell 'em if it was one-use anyway!
-		to_chat(owner, "<span class='warning'>[name] has run out of uses!</span>")
+		to_chat(owner, SPAN_WARNING("[name] has run out of uses!"))
 	qdel(src)
 
 
@@ -95,7 +95,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		UpdateButtonIcon()
 		return
 	if(initial(uses) > 1) //no need to tell 'em if it was one-use anyway!
-		to_chat(owner, "<span class='warning'>[name] has run out of uses!</span>")
+		to_chat(owner, SPAN_WARNING("[name] has run out of uses!"))
 	Remove(owner)
 	QDEL_IN(src, 100) //let any active timers on us finish up
 
@@ -168,7 +168,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 	var/mob/living/silicon/ai/A = usr
 
 	if(A.stat == DEAD)
-		to_chat(A, "<span class='warning'>You are already dead!</span>")
+		to_chat(A, SPAN_WARNING("You are already dead!"))
 		return
 
 	for(var/datum/AI_Module/AM in possible_modules)
@@ -253,7 +253,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 /datum/action/innate/ai/nuke_station/Activate()
 	var/turf/T = get_turf(owner)
 	if(!istype(T) || !is_station_level(T.z))
-		to_chat(owner, "<span class='warning'>You cannot activate the doomsday device while off-station!</span>")
+		to_chat(owner, SPAN_WARNING("You cannot activate the doomsday device while off-station!"))
 		return
 	if(alert(owner, "Send arming signal? (true = arm, false = cancel)", "purge_all_life()", "confirm = TRUE;", "confirm = FALSE;") != "confirm = TRUE;")
 		return
@@ -457,7 +457,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		C.post_status("alert", "lockdown")
 
 	minor_announce("Hostile runtime detected in door controllers. Isolation lockdown protocols are now in effect. Please remain calm.","Network Alert:", TRUE)
-	to_chat(owner, "<span class='danger'>Lockdown initiated. Network reset in 90 seconds.</span>")
+	to_chat(owner, SPAN_DANGER("Lockdown initiated. Network reset in 90 seconds."))
 	addtimer(CALLBACK(GLOBAL_PROC, .proc/minor_announce,
 		"Automatic system reboot complete. Have a secure day.",
 		"Network reset:"), 900)
@@ -486,7 +486,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		if(!istype(I, /obj/item/construction/rcd/borg)) //Ensures that cyborg RCDs are spared.
 			var/obj/item/construction/rcd/RCD = I
 			RCD.detonate_pulse()
-	to_chat(owner, "<span class='danger'>RCD detonation pulse emitted.</span>")
+	to_chat(owner, SPAN_DANGER("RCD detonation pulse emitted."))
 	owner.playsound_local(owner, 'sound/machines/twobeep.ogg', 50, 0)
 
 
@@ -529,7 +529,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 			continue
 		F.obj_flags |= EMAGGED
 		F.update_icon()
-	to_chat(owner, "<span class='notice'>All thermal sensors on the station have been disabled. Fire alerts will no longer be recognized.</span>")
+	to_chat(owner, SPAN_NOTICE("All thermal sensors on the station have been disabled. Fire alerts will no longer be recognized."))
 	owner.playsound_local(owner, 'sound/machines/terminal_off.ogg', 50, 0)
 
 
@@ -556,7 +556,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		if(!is_station_level(AA.z))
 			continue
 		AA.obj_flags |= EMAGGED
-	to_chat(owner, "<span class='notice'>All air alarm safeties on the station have been overridden. Air alarms may now use the Flood environmental mode.</span>")
+	to_chat(owner, SPAN_NOTICE("All air alarm safeties on the station have been overridden. Air alarms may now use the Flood environmental mode."))
 	owner.playsound_local(owner, 'sound/machines/terminal_off.ogg', 50, 0)
 
 
@@ -599,16 +599,16 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		remove_ranged_ability()
 		return
 	if(!istype(target))
-		to_chat(ranged_ability_user, "<span class='warning'>You can only overload machines!</span>")
+		to_chat(ranged_ability_user, SPAN_WARNING("You can only overload machines!"))
 		return
 	if(is_type_in_typecache(target, GLOB.blacklisted_malf_machines))
-		to_chat(ranged_ability_user, "<span class='warning'>You cannot overload that device!</span>")
+		to_chat(ranged_ability_user, SPAN_WARNING("You cannot overload that device!"))
 		return
 	ranged_ability_user.playsound_local(ranged_ability_user, "sparks", 50, 0)
 	attached_action.adjust_uses(-1)
 	target.audible_message("<span class='userdanger'>You hear a loud electrical buzzing sound coming from [target]!</span>")
 	addtimer(CALLBACK(attached_action, /datum/action/innate/ai/ranged/overload_machine.proc/detonate_machine, target), 50) //kaboom!
-	remove_ranged_ability("<span class='danger'>Overcharging machine...</span>")
+	remove_ranged_ability(SPAN_DANGER("Overcharging machine..."))
 	return TRUE
 
 
@@ -646,16 +646,16 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		remove_ranged_ability()
 		return
 	if(!istype(target))
-		to_chat(ranged_ability_user, "<span class='warning'>You can only animate machines!</span>")
+		to_chat(ranged_ability_user, SPAN_WARNING("You can only animate machines!"))
 		return
 	if(!target.can_be_overridden() || is_type_in_typecache(target, GLOB.blacklisted_malf_machines))
-		to_chat(ranged_ability_user, "<span class='warning'>That machine can't be overridden!</span>")
+		to_chat(ranged_ability_user, SPAN_WARNING("That machine can't be overridden!"))
 		return
 	ranged_ability_user.playsound_local(ranged_ability_user, 'sound/misc/interference.ogg', 50, 0)
 	attached_action.adjust_uses(-1)
 	target.audible_message("<span class='userdanger'>You hear a loud electrical buzzing sound coming from [target]!</span>")
 	addtimer(CALLBACK(attached_action, /datum/action/innate/ai/ranged/override_machine.proc/animate_machine, target), 50) //kabeep!
-	remove_ranged_ability("<span class='danger'>Sending override signal...</span>")
+	remove_ranged_ability(SPAN_DANGER("Sending override signal..."))
 	return TRUE
 
 
@@ -699,7 +699,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 	conveyor.masterAI = owner
 	playsound(T, 'sound/effects/phasein.ogg', 100, 1)
 	owner_AI.can_shunt = FALSE
-	to_chat(owner, "<span class='warning'>You are no longer able to shunt your core to APCs.</span>")
+	to_chat(owner, SPAN_WARNING("You are no longer able to shunt your core to APCs."))
 	adjust_uses(-1)
 
 /mob/living/silicon/ai/proc/remove_transformer_image(client/C, image/I, turf/T)
@@ -731,7 +731,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 		I.icon_state = "[success ? "green" : "red"]Overlay" //greenOverlay and redOverlay for success and failure respectively
 		addtimer(CALLBACK(src, .proc/remove_transformer_image, client, I, T), 30)
 	if(!success)
-		to_chat(src, "<span class='warning'>[alert_msg]</span>")
+		to_chat(src, SPAN_WARNING("[alert_msg]"))
 	return success
 
 
@@ -758,7 +758,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 			apc.overload_lighting()
 		else
 			apc.overload++
-	to_chat(owner, "<span class='notice'>Overcurrent applied to the powernet.</span>")
+	to_chat(owner, SPAN_NOTICE("Overcurrent applied to the powernet."))
 	owner.playsound_local(owner, "sparks", 50, 0)
 	adjust_uses(-1)
 
@@ -786,7 +786,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 			L.no_emergency = TRUE
 			INVOKE_ASYNC(L, /obj/machinery/light/.proc/update, FALSE)
 		CHECK_TICK
-	to_chat(owner, "<span class='notice'>Emergency light connections severed.</span>")
+	to_chat(owner, SPAN_NOTICE("Emergency light connections severed."))
 	owner.playsound_local(owner, 'sound/effects/light_flicker.ogg', 50, FALSE)
 
 

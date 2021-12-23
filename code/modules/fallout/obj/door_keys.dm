@@ -115,17 +115,17 @@
 				if(do_after(user, 15, target = loc))
 					toggle()
 			else
-				to_chat(user, "<span class='warning'>Wrong key!</span>")
+				to_chat(user, SPAN_WARNING("Wrong key!"))
 		else
 			if(K.id)
 				attach_id(K.id)
-				to_chat(user, "<span class='notice'>[src] is attached by [K].</span>")
+				to_chat(user, SPAN_NOTICE("[src] is attached by [K]."))
 			else
 				var/new_id
 				new_id = K.random_id()
 				K.attach_id(new_id)
 				src.attach_id(new_id)
-				to_chat(user, "<span class='notice'>[K] sets for [src] now.</span>")
+				to_chat(user, SPAN_NOTICE("[K] sets for [src] now."))
 		return 1
 	. = ..()
 

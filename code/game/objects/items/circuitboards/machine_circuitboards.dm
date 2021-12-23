@@ -383,14 +383,14 @@
 
 	if(I.tool_behaviour == TOOL_MULTITOOL)
 		pipe_layer = (pipe_layer >= PIPING_LAYER_MAX) ? PIPING_LAYER_MIN : (pipe_layer + 1)
-		to_chat(user, "<span class='notice'>You change the circuitboard to layer [pipe_layer].</span>")
+		to_chat(user, SPAN_NOTICE("You change the circuitboard to layer [pipe_layer]."))
 		return
 
 	. = ..()
 
 /obj/item/circuitboard/machine/thermomachine/examine()
 	. = ..()
-	. += "<span class='notice'>It is set to layer [pipe_layer]. Use a Multitool on the circuit to change this.</span>"
+	. += SPAN_NOTICE("It is set to layer [pipe_layer]. Use a Multitool on the circuit to change this.")
 
 /obj/item/circuitboard/machine/thermomachine/heater
 	name = "Heater (Machine Board)"
@@ -438,11 +438,11 @@
 		if(build_path == /obj/machinery/processor)
 			name = "Slime Processor (Machine Board)"
 			build_path = /obj/machinery/processor/slime
-			to_chat(user, "<span class='notice'>Name protocols successfully updated.</span>")
+			to_chat(user, SPAN_NOTICE("Name protocols successfully updated."))
 		else
 			name = "Food Processor (Machine Board)"
 			build_path = /obj/machinery/processor
-			to_chat(user, "<span class='notice'>Defaulting name protocols.</span>")
+			to_chat(user, SPAN_NOTICE("Defaulting name protocols."))
 	else
 		return ..()
 
@@ -474,7 +474,7 @@
 		var/position = fridges_name_paths.Find(build_path, fridges_name_paths)
 		position = (position == fridges_name_paths.len) ? 1 : (position + 1)
 		build_path = fridges_name_paths[position]
-		to_chat(user, "<span class='notice'>You set the board to [fridges_name_paths[build_path]].</span>")
+		to_chat(user, SPAN_NOTICE("You set the board to [fridges_name_paths[build_path]]."))
 	else
 		return ..()
 

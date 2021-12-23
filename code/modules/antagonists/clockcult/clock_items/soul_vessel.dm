@@ -50,7 +50,7 @@
 
 /obj/item/mmi/posibrain/soul_vessel/attack_self(mob/living/user)
 	if(!is_servant_of_ratvar(user))
-		to_chat(user, "<span class='warning'>You fiddle around with [src], to no avail.</span>")
+		to_chat(user, SPAN_WARNING("You fiddle around with [src], to no avail."))
 		return FALSE
 	..()
 
@@ -68,28 +68,28 @@
 		return
 	var/mob/living/carbon/human/H = target
 	if(H.stat == CONSCIOUS)
-		to_chat(user, "<span class='warning'>[H] must be dead or unconscious for you to claim [H.p_their()] mind!</span>")
+		to_chat(user, SPAN_WARNING("[H] must be dead or unconscious for you to claim [H.p_their()] mind!"))
 		return
 	if(H.head)
 		var/obj/item/I = H.head
 		if(I.flags_inv & HIDEHAIR) //they're wearing a hat that covers their skull
-			to_chat(user, "<span class='warning'>[H]'s head is covered, remove [H.p_their()] [H.head] first!</span>")
+			to_chat(user, SPAN_WARNING("[H]'s head is covered, remove [H.p_their()] [H.head] first!"))
 			return
 	if(H.wear_mask)
 		var/obj/item/I = H.wear_mask
 		if(I.flags_inv & HIDEHAIR) //they're wearing a mask that covers their skull
-			to_chat(user, "<span class='warning'>[H]'s head is covered, remove [H.p_their()] [H.wear_mask] first!</span>")
+			to_chat(user, SPAN_WARNING("[H]'s head is covered, remove [H.p_their()] [H.wear_mask] first!"))
 			return
 	var/obj/item/bodypart/head/HE = H.get_bodypart(BODY_ZONE_HEAD)
 	if(!HE) //literally headless
-		to_chat(user, "<span class='warning'>[H] has no head, and thus no mind to claim!</span>")
+		to_chat(user, SPAN_WARNING("[H] has no head, and thus no mind to claim!"))
 		return
 	var/obj/item/organ/brain/B = H.getorgan(/obj/item/organ/brain)
 	if(!B) //either somebody already got to them or robotics did
-		to_chat(user, "<span class='warning'>[H] has no brain, and thus no mind to claim!</span>")
+		to_chat(user, SPAN_WARNING("[H] has no brain, and thus no mind to claim!"))
 		return
 	if(!H.key) //nobody's home
-		to_chat(user, "<span class='warning'>[H] has no mind to claim!</span>")
+		to_chat(user, SPAN_WARNING("[H] has no mind to claim!"))
 		return
 	playsound(H, 'sound/misc/splort.ogg', 60, 1, -1)
 	playsound(H, 'sound/magic/clockwork/anima_fragment_attack.ogg', 40, 1, -1)
@@ -100,7 +100,7 @@
 	picked_name = "Slave"
 	braintype = picked_name
 	brainmob.timeofhostdeath = H.timeofdeath
-	user.visible_message("<span class='warning'>[user] presses [src] to [H]'s head, ripping through the skull and carefully extracting the brain!</span>", \
+	user.visible_message(SPAN_WARNING("[user] presses [src] to [H]'s head, ripping through the skull and carefully extracting the brain!"), \
 	"<span class='brass'>You extract [H]'s consciousness from [H.p_their()] body, trapping it in the soul vessel.</span>")
 	transfer_personality(H)
 	brainmob.fully_replace_character_name(null, "[braintype] [H.real_name]")

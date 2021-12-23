@@ -9,7 +9,7 @@
 
 /obj/structure/destructible/cult/proc/conceal() //for spells that hide cult presence
 	density = FALSE
-	visible_message("<span class='danger'>[src] fades away.</span>")
+	visible_message(SPAN_DANGER("[src] fades away."))
 	invisibility = INVISIBILITY_OBSERVER
 	alpha = 100 //To help ghosts distinguish hidden runes
 	light_range = 0
@@ -20,7 +20,7 @@
 /obj/structure/destructible/cult/proc/reveal() //for spells that reveal cult presence
 	density = initial(density)
 	invisibility = 0
-	visible_message("<span class='danger'>[src] suddenly appears!</span>")
+	visible_message(SPAN_DANGER("[src] suddenly appears!"))
 	alpha = initial(alpha)
 	light_range = initial(light_range)
 	light_power = initial(light_power)
@@ -99,7 +99,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>You're pretty sure you know exactly what this is used for and you can't seem to touch it.</span>")
+		to_chat(user, SPAN_WARNING("You're pretty sure you know exactly what this is used for and you can't seem to touch it."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")
@@ -145,7 +145,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>The heat radiating from [src] pushes you back.</span>")
+		to_chat(user, SPAN_WARNING("The heat radiating from [src] pushes you back."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")
@@ -176,7 +176,7 @@
 
 /obj/structure/destructible/cult/forge/attackby(obj/item/I, mob/user)
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>The heat radiating from [src] pushes you back.</span>")
+		to_chat(user, SPAN_WARNING("The heat radiating from [src] pushes you back."))
 		return
 	if(istype(I, /obj/item/ingot))
 		var/obj/item/ingot/notsword = I
@@ -277,7 +277,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>These books won't open and it hurts to even try and read the covers.</span>")
+		to_chat(user, SPAN_WARNING("These books won't open and it hurts to even try and read the covers."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")

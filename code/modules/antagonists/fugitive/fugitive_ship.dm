@@ -10,7 +10,7 @@
 
 /obj/machinery/fugitive_capture/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Add a prisoner by dragging them into the machine.</span>"
+	. += SPAN_NOTICE("Add a prisoner by dragging them into the machine.")
 
 /obj/machinery/fugitive_capture/MouseDrop_T(mob/target, mob/user)
 	var/mob/living/fugitive_hunter = user
@@ -21,7 +21,7 @@
 	var/mob/living/carbon/human/fugitive = target
 	var/datum/antagonist/fugitive/fug_antag = fugitive.mind.has_antag_datum(/datum/antagonist/fugitive)
 	if(!fug_antag)
-		to_chat(fugitive_hunter, "<span class='warning'>This is not a wanted fugitive!</span>")
+		to_chat(fugitive_hunter, SPAN_WARNING("This is not a wanted fugitive!"))
 		return
 	if(do_after(fugitive_hunter, 50, target = fugitive))
 		add_prisoner(fugitive, fug_antag)

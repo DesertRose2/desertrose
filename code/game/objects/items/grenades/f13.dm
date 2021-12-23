@@ -104,7 +104,7 @@
 /obj/item/grenade/homemade/attack_self(mob/user) //
 	if(!active)
 		if(!botch_check(user))
-			to_chat(user, "<span class='warning'>You light the [name]!</span>")
+			to_chat(user, SPAN_WARNING("You light the [name]!"))
 			preprime(user, null, FALSE)
 
 /obj/item/grenade/homemade/examine(mob/user)
@@ -188,14 +188,14 @@
 /obj/item/reagent_containers/food/drinks/bottle/molotov/attack_self(mob/user)
 	if(active)
 		if(!isGlass)
-			to_chat(user, "<span class='danger'>The flame's spread too far on it!</span>")
+			to_chat(user, SPAN_DANGER("The flame's spread too far on it!"))
 			return
 		to_chat(user, "<span class='info'>You snuff out the flame on [src].</span>")
 		cut_overlay(GLOB.fire_overlay)
 		active = FALSE
 
 /obj/item/export/bottle/attack_self(mob/user)
-	to_chat(user, "<span class='danger'>The seal seems fine. Best to not open it.</span>")
+	to_chat(user, SPAN_DANGER("The seal seems fine. Best to not open it."))
 
 
 /obj/item/reagent_containers/glass/bottle/napalm
@@ -232,7 +232,7 @@
 /obj/item/grenade/homemade/coffeepotbomb/attack_self(mob/user) //
 	if(!active)
 		if(!botch_check(user))
-			to_chat(user, "<span class='warning'>You start the timer! Tick tock...</span>")
+			to_chat(user, SPAN_WARNING("You start the timer! Tick tock..."))
 			primetimer(user, null, FALSE)
 			soundloop.start()
 

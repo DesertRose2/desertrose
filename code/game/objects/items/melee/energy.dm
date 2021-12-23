@@ -164,7 +164,7 @@
 		var/obj/item/stock_parts/cell/C = R.cell
 		if(active && !(C.use(hitcost)))
 			attack_self(R)
-			to_chat(R, "<span class='notice'>It's out of charge!</span>")
+			to_chat(R, SPAN_NOTICE("It's out of charge!"))
 			return
 		return ..()
 
@@ -221,13 +221,13 @@
 		if(!hacked)
 			hacked = TRUE
 			sword_color = "rainbow"
-			to_chat(user, "<span class='warning'>RNBW_ENGAGE</span>")
+			to_chat(user, SPAN_WARNING("RNBW_ENGAGE"))
 
 			if(active)
 				icon_state = "swordrainbow"
 				user.update_inv_hands()
 		else
-			to_chat(user, "<span class='warning'>It's already fabulous!</span>")
+			to_chat(user, SPAN_WARNING("It's already fabulous!"))
 	else
 		return ..()
 
@@ -339,7 +339,7 @@
 	if(!in_range(src, user))	//Basic checks to prevent abuse
 		return
 	if(user.incapacitated() || !istype(user))
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, SPAN_WARNING("You can't do that right now!"))
 		return TRUE
 
 	if(alert("Are you sure you want to recolor your blade?", "Confirm Repaint", "Yes", "No") == "Yes")
@@ -352,7 +352,7 @@
 
 /obj/item/melee/transforming/energy/sword/cx/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to recolor it.</span>"
+	. += SPAN_NOTICE("Alt-click to recolor it.")
 
 /obj/item/melee/transforming/energy/sword/cx/worn_overlays(isinhands, icon_file, used_state, style_flags = NONE)
 	. = ..()
@@ -371,10 +371,10 @@
 /obj/item/melee/transforming/energy/sword/cx/attackby(obj/item/W, mob/living/user, params)
 	if(istype(W, /obj/item/melee/transforming/energy/sword/cx))
 		if(HAS_TRAIT(W, TRAIT_NODROP) || HAS_TRAIT(src, TRAIT_NODROP))
-			to_chat(user, "<span class='warning'>\the [HAS_TRAIT(src, TRAIT_NODROP) ? src : W] is stuck to your hand, you can't attach it to \the [HAS_TRAIT(src, TRAIT_NODROP) ? W : src]!</span>")
+			to_chat(user, SPAN_WARNING("\the [HAS_TRAIT(src, TRAIT_NODROP) ? src : W] is stuck to your hand, you can't attach it to \the [HAS_TRAIT(src, TRAIT_NODROP) ? W : src]!"))
 			return
 		else
-			to_chat(user, "<span class='notice'>You combine the two light swords, making a single supermassive blade! You're cool.</span>")
+			to_chat(user, SPAN_NOTICE("You combine the two light swords, making a single supermassive blade! You're cool."))
 			new /obj/item/dualsaber/hypereutactic(user.drop_location())
 			qdel(W)
 			qdel(src)

@@ -116,7 +116,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 	addtimer(CALLBACK(src, .proc/collapse), 5 SECONDS)
 
 /obj/effect/collapsing_demonic_portal/proc/collapse()
-	visible_message("<span class='warning'>Something slips out of [src]!</span>")
+	visible_message(SPAN_WARNING("Something slips out of [src]!"))
 	var/loot = rand(1, 28)
 	switch(loot)
 		if(1)

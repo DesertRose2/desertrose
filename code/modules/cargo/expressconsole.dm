@@ -42,7 +42,7 @@
 		return
 	else if(istype(W, /obj/item/disk/cargo/bluespace_pod))
 		podType = /obj/structure/closet/supplypod/bluespacepod //doesnt effect circuit board, making reversal possible
-		to_chat(user, "<span class='notice'>You insert the disk into [src], allowing for advanced supply delivery vehicles.</span>")
+		to_chat(user, SPAN_NOTICE("You insert the disk into [src], allowing for advanced supply delivery vehicles."))
 		qdel(W)
 		return TRUE
 	else if(istype(W, /obj/item/supplypod_beacon))
@@ -58,8 +58,8 @@
 	if(obj_flags & EMAGGED)
 		return
 	if(user)
-		user.visible_message("<span class='warning'>[user] swipes a suspicious card through [src]!</span>",
-		"<span class='notice'>You change the routing protocols, allowing the Supply Pod to land anywhere on the station.</span>")
+		user.visible_message(SPAN_WARNING("[user] swipes a suspicious card through [src]!"),
+		SPAN_NOTICE("You change the routing protocols, allowing the Supply Pod to land anywhere on the station."))
 	obj_flags |= EMAGGED
 	// This also sets this on the circuit board
 	var/obj/item/circuitboard/computer/cargo/board = circuit

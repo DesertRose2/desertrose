@@ -32,14 +32,14 @@
 /obj/item/stealthboy/proc/Activate(mob/living/carbon/human/user)
 	if(!user)
 		return
-	to_chat(user, "<span class='notice'>You activate \The [src].</span>")
+	to_chat(user, SPAN_NOTICE("You activate \The [src]."))
 	src.user = user
 	START_PROCESSING(SSobj, src)
 	old_alpha = user.alpha
 	on = TRUE
 
 /obj/item/stealthboy/proc/Deactivate()
-	to_chat(user, "<span class='notice'>You deactivate \The [src].</span>")
+	to_chat(user, SPAN_NOTICE("You deactivate \The [src]."))
 	STOP_PROCESSING(SSobj, src)
 	if(user)
 		user.alpha = old_alpha

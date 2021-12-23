@@ -69,7 +69,7 @@
 						var/mob/M = item_to_retrieve.loc
 
 						if(issilicon(M)) //Items in silicons warp the whole silicon
-							M.loc.visible_message("<span class='warning'>[M] suddenly disappears!</span>")
+							M.loc.visible_message(SPAN_WARNING("[M] suddenly disappears!"))
 							M.forceMove(L.loc)
 							M.loc.visible_message("<span class='caution'>[M] suddenly appears!</span>")
 							item_to_retrieve = null
@@ -90,7 +90,7 @@
 				return
 
 			if(item_to_retrieve.loc)
-				item_to_retrieve.loc.visible_message("<span class='warning'>The [item_to_retrieve.name] suddenly disappears!</span>")
+				item_to_retrieve.loc.visible_message(SPAN_WARNING("The [item_to_retrieve.name] suddenly disappears!"))
 			if(!isitem(item_to_retrieve) || !L.put_in_hands(item_to_retrieve))
 				item_to_retrieve.forceMove(L.drop_location())
 				item_to_retrieve.loc.visible_message("<span class='caution'>The [item_to_retrieve.name] suddenly appears!</span>")

@@ -25,7 +25,7 @@
 /obj/item/reagent_containers/rag/examine(mob/user)
 	. = ..()
 	if(reagents.total_volume)
-		. += "<span class='notice'>It's soaked. Alt-Click to squeeze it dry, and perhaps gather the liquids into another held open container.</span>"
+		. += SPAN_NOTICE("It's soaked. Alt-Click to squeeze it dry, and perhaps gather the liquids into another held open container.")
 
 /obj/item/reagent_containers/rag/afterattack(atom/A, mob/user,proximity)
 	. = ..()
@@ -36,24 +36,24 @@
 		var/reagentlist = pretty_string_from_reagent_list(reagents)
 		var/log_object = "a damp rag containing [reagentlist]"
 		if(user.a_intent == INTENT_HARM && !C.is_mouth_covered())
-			C.visible_message("<span class='danger'>[user] is trying to smother \the [C] with \the [src]!</span>", "<span class='userdanger'>[user] is trying to smother you with \the [src]!</span>", "<span class='italics'>You hear some struggling and muffled cries of surprise.</span>")
+			C.visible_message(SPAN_DANGER("[user] is trying to smother \the [C] with \the [src]!"), "<span class='userdanger'>[user] is trying to smother you with \the [src]!</span>", "<span class='italics'>You hear some struggling and muffled cries of surprise.</span>")
 			if(do_after(user, 20, target = C))
 				reagents.reaction(C, INGEST)
 				reagents.trans_to(C, 5)
-				C.visible_message("<span class='danger'>[user] has smothered \the [C] with \the [src]!</span>", "<span class='userdanger'>[user] has smothered you with \the [src]!</span>", "<span class='italics'>You hear some struggling and a heavy breath taken.</span>")
+				C.visible_message(SPAN_DANGER("[user] has smothered \the [C] with \the [src]!"), "<span class='userdanger'>[user] has smothered you with \the [src]!</span>", "<span class='italics'>You hear some struggling and a heavy breath taken.</span>")
 				log_combat(user, C, "smothered", log_object)
 		else
-			C.visible_message("<span class='notice'>[user] is trying to wipe \the [C] with \the [src].</span>")
+			C.visible_message(SPAN_NOTICE("[user] is trying to wipe \the [C] with \the [src]."))
 			if(do_after(user, 20, target = C))
 				reagents.reaction(C, TOUCH)
 				reagents.remove_all(5)
-				C.visible_message("<span class='notice'>[user] has wiped \the [C] with \the [src].</span>")
+				C.visible_message(SPAN_NOTICE("[user] has wiped \the [C] with \the [src]."))
 				log_combat(user, C, "touched", log_object)
 
 	else if(istype(A) && (src in user))
-		user.visible_message("[user] starts to wipe down [A] with [src]!", "<span class='notice'>You start to wipe down [A] with [src]...</span>")
+		user.visible_message("[user] starts to wipe down [A] with [src]!", SPAN_NOTICE("You start to wipe down [A] with [src]..."))
 		if(do_after(user, action_speed, target = A))
-			user.visible_message("[user] finishes wiping off [A]!", "<span class='notice'>You finish wiping off [A].</span>")
+			user.visible_message("[user] finishes wiping off [A]!", SPAN_NOTICE("You finish wiping off [A]."))
 			SEND_SIGNAL(A, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_MEDIUM)
 
 /obj/item/reagent_containers/rag/alt_pre_attack(mob/living/M, mob/living/user, params)
@@ -90,7 +90,7 @@
 /obj/item/reagent_containers/rag/AltClick(mob/user)
 	. = ..()
 	if(reagents.total_volume && user.canUseTopic(src, BE_CLOSE))
-		to_chat(user, "<span class='notice'>You start squeezing \the [src] dry...</span>")
+		to_chat(user, SPAN_NOTICE("You start squeezing \the [src] dry..."))
 		if(do_after(user, action_speed, TRUE, src))
 			var/msg = "You squeeze \the [src]"
 			var/obj/item/target
@@ -108,7 +108,7 @@
 			else
 				msg += "'s liquids into \the [target]"
 				reagents.trans_to(target, reagents.total_volume)
-			to_chat(user, "<span class='notice'>[msg].</span>")
+			to_chat(user, SPAN_NOTICE("[msg]."))
 		return TRUE
 
 
@@ -166,7 +166,7 @@
 /obj/item/reagent_containers/rag/towel/attack_self(mob/user)
 	if(!user.CanReach(src) || !user.dropItemToGround(src))
 		return
-	to_chat(user, "<span class='notice'>You lay out \the [src] flat on the ground.</span>")
+	to_chat(user, SPAN_NOTICE("You lay out \the [src] flat on the ground."))
 	icon_state = flat_icon
 	layer = BELOW_OBJ_LAYER
 

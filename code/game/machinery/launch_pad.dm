@@ -40,7 +40,7 @@
 					return
 				var/obj/item/multitool/M = I
 				M.buffer = src
-				to_chat(user, "<span class='notice'>You save the data in the [I.name]'s buffer.</span>")
+				to_chat(user, SPAN_NOTICE("You save the data in the [I.name]'s buffer."))
 				return TRUE
 
 		if(default_deconstruction_crowbar(I))
@@ -74,13 +74,13 @@
 
 /obj/machinery/launchpad/proc/doteleport(mob/user, sending)
 	if(teleporting)
-		to_chat(user, "<span class='warning'>ERROR: Launchpad busy.</span>")
+		to_chat(user, SPAN_WARNING("ERROR: Launchpad busy."))
 		return
 
 	var/turf/dest = get_turf(src)
 
 	if(dest && is_centcom_level(dest.z))
-		to_chat(user, "<span class='warning'>ERROR: Launchpad not operative. Heavy area shielding makes teleporting impossible.</span>")
+		to_chat(user, SPAN_WARNING("ERROR: Launchpad not operative. Heavy area shielding makes teleporting impossible."))
 		return
 
 	var/target_x = x + x_offset
@@ -210,7 +210,7 @@
 			return
 		if(!usr.canUseTopic(src, BE_CLOSE, ismonkey(usr)))
 			return
-		usr.visible_message("<span class='notice'>[usr] starts closing [src]...</span>", "<span class='notice'>You start closing [src]...</span>")
+		usr.visible_message(SPAN_NOTICE("[usr] starts closing [src]..."), SPAN_NOTICE("You start closing [src]..."))
 		if(do_after(usr, 30, target = usr))
 			usr.put_in_hands(briefcase)
 			moveToNullspace() //hides it from suitcase contents
@@ -222,7 +222,7 @@
 		if(L.pad == src) //do not attempt to link when already linked
 			return ..()
 		L.pad = src
-		to_chat(user, "<span class='notice'>You link [src] to [L].</span>")
+		to_chat(user, SPAN_NOTICE("You link [src] to [L]."))
 	else
 		return ..()
 
@@ -260,7 +260,7 @@
 		if(L.pad == src.pad) //do not attempt to link when already linked
 			return ..()
 		L.pad = src.pad
-		to_chat(user, "<span class='notice'>You link [pad] to [L].</span>")
+		to_chat(user, SPAN_NOTICE("You link [pad] to [L]."))
 	else
 		return ..()
 
@@ -280,7 +280,7 @@
 /obj/item/launchpad_remote/attack_self(mob/user)
 	. = ..()
 	ui_interact(user)
-	to_chat(user, "<span class='notice'>[src] projects a display onto your retina.</span>")
+	to_chat(user, SPAN_NOTICE("[src] projects a display onto your retina."))
 
 /obj/item/launchpad_remote/ui_state(mob/user)
 	return GLOB.inventory_state
@@ -308,10 +308,10 @@
 
 /obj/item/launchpad_remote/proc/teleport(mob/user, obj/machinery/launchpad/pad)
 	if(QDELETED(pad))
-		to_chat(user, "<span class='warning'>ERROR: Launchpad not responding. Check launchpad integrity.</span>")
+		to_chat(user, SPAN_WARNING("ERROR: Launchpad not responding. Check launchpad integrity."))
 		return
 	if(!pad.isAvailable())
-		to_chat(user, "<span class='warning'>ERROR: Launchpad not operative. Make sure the launchpad is ready and powered.</span>")
+		to_chat(user, SPAN_WARNING("ERROR: Launchpad not operative. Make sure the launchpad is ready and powered."))
 		return
 	pad.doteleport(user, sending)
 

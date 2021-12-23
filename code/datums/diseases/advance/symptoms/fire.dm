@@ -147,7 +147,7 @@ Bonus
 			to_chat(M, "<span class='userdanger'>Your skin erupts into an inferno!</span>")
 			M.emote("scream")
 			if(M.fire_stacks < 0)
-				M.visible_message("<span class='warning'>[M]'s sweat sizzles and pops on contact with water!</span>")
+				M.visible_message(SPAN_WARNING("[M]'s sweat sizzles and pops on contact with water!"))
 				explosion(get_turf(M),0,0,2 * explosion_power)
 				Alkali_fire_stage_5(M, A)
 

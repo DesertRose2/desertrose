@@ -97,7 +97,7 @@
 	var/msg_blind
 	if(len_messages >= 3)
 		msg_blind = "<span class='italic'>[search_texts[3]]</span>"
-	user.visible_message("<span class='notice'>[user] [search_texts[1]] [source].</span>", msg_first_person, msg_blind)
+	user.visible_message(SPAN_NOTICE("[user] [search_texts[1]] [source]."), msg_first_person, msg_blind)
 	if(do_after(user, scavenge_time * speed_multi, TRUE, source, TRUE, CALLBACK(src, .proc/set_progress, source, world.time), resume_time = progress_done * speed_multi))
 		spawn_loot(source, user)
 	players_busy_scavenging -= user
@@ -113,7 +113,7 @@
 	var/special = TRUE
 	var/free = FALSE
 	if(!loot_left_per_atom[source])
-		to_chat(user, "<span class='warning'>Looks likes there is nothing worth of interest left in [source], what a shame...</span>")
+		to_chat(user, SPAN_WARNING("Looks likes there is nothing worth of interest left in [source], what a shame..."))
 		return
 
 	var/num_times = 0
@@ -131,28 +131,28 @@
 			if(L)
 				num_times = LAZYACCESS(L, user.ckey)
 	if(num_times >= maximum_loot_per_player)
-		to_chat(user, "<span class='warning'>You can't find anything else vaguely useful in [source].  Another set of eyes might, however.</span>")
+		to_chat(user, SPAN_WARNING("You can't find anything else vaguely useful in [source].  Another set of eyes might, however."))
 		return
 
 	switch(loot) // TODO: datumize these out.
 		if(SCAVENGING_FOUND_NOTHING)
-			to_chat(user, "<span class='notice'>You found nothing, better luck next time.</span>")
+			to_chat(user, SPAN_NOTICE("You found nothing, better luck next time."))
 			free = TRUE //doesn't consume the loot pile.
 		if(SCAVENGING_SPAWN_MOUSE)
 			var/nasty_rodent = pick("mouse", "rodent", "squeaky critter", "stupid pest", "annoying cable chewer", "nasty, ugly, evil, disease-ridden rodent")
-			to_chat(user, "<span class='notice'>You found something in [source]... no wait, that's just another [nasty_rodent].</span>")
+			to_chat(user, SPAN_NOTICE("You found something in [source]... no wait, that's just another [nasty_rodent]."))
 			new /mob/living/simple_animal/mouse(source.loc)
 		if(SCAVENGING_SPAWN_MICE)
-			user.visible_message("<span class='notice'>A small gang of mice emerges from [source].</span>", \
+			user.visible_message(SPAN_NOTICE("A small gang of mice emerges from [source]."), \
 				"<span class='notice'>You found something in [source]... no wait, that's just another- <b>no wait, that's a lot of damn mice.</b></span>")
 			for(var/i in 1 to rand(4, 6))
 				new /mob/living/simple_animal/mouse(source.loc)
 		if(SCAVENGING_SPAWN_TOM)
 			if(GLOB.tom_existed) //There can only be one.
-				to_chat(user, "<span class='notice'>You found nothing, better luck next time.</span>")
+				to_chat(user, SPAN_NOTICE("You found nothing, better luck next time."))
 				free = TRUE
 			else
-				to_chat(user, "<span class='notice'>You found something in [source]... no wait, that's Tom, the mouse! What is he doing here?</span>")
+				to_chat(user, SPAN_NOTICE("You found something in [source]... no wait, that's Tom, the mouse! What is he doing here?"))
 				new /mob/living/simple_animal/mouse/brown/Tom(source.loc)
 		else
 			special = FALSE
@@ -192,7 +192,7 @@
 
 	--loot_left_per_atom[source]
 	if(del_atom_on_depletion && !loot_left_per_atom[source])
-		source.visible_message("<span class='warning'>[source] has been looted clean.</span>")
+		source.visible_message(SPAN_WARNING("[source] has been looted clean."))
 		qdel(source)
 		return
 

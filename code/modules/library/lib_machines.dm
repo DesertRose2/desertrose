@@ -572,7 +572,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 	if(stat)
 		return
 	if(busy)
-		to_chat(user, "<span class='warning'>The book binder is busy. Please wait for completion of previous operation.</span>")
+		to_chat(user, SPAN_WARNING("The book binder is busy. Please wait for completion of previous operation."))
 		return
 	if(!user.transferItemToLoc(P, src))
 		return

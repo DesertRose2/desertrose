@@ -9,7 +9,7 @@
 	. = list("<span class='info'>*---------*\nThis is [icon2html(src, user)] \a <EM>[src]</EM>!")
 
 	if (handcuffed)
-		. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!</span>"
+		. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!")
 	if (head)
 		. += "[t_He] [t_is] wearing [head.get_examine_string(user)] on [t_his] head."
 	if (wear_mask)

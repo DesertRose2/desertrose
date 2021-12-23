@@ -65,10 +65,10 @@
 	if(.)
 		return
 	if(!is_servant_of_ratvar(user))
-		to_chat(user, "<span class='notice'>You can tell how powerful [src] is; you know better than to touch it.</span>")
+		to_chat(user, SPAN_NOTICE("You can tell how powerful [src] is; you know better than to touch it."))
 		return
 	if(!available)
-		to_chat(user, "<span class='danger'>You can no longer vote with [src].</span>")
+		to_chat(user, SPAN_DANGER("You can no longer vote with [src]."))
 		return
 	var/voting = !(user.key in voters)
 	if(alert(user, "[voting ? "Cast a" : "Undo your"] vote to activate the beacon?", "Herald's Beacon", "Change Vote", "Cancel") == "Cancel")

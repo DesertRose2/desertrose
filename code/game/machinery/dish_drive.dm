@@ -29,15 +29,15 @@
 /obj/machinery/dish_drive/examine(mob/user)
 	. = ..()
 	if(user.Adjacent(src))
-		. += "<span class='notice'>Alt-click it to beam its contents to any nearby disposal bins.</span>"
+		. += SPAN_NOTICE("Alt-click it to beam its contents to any nearby disposal bins.")
 
 /obj/machinery/dish_drive/on_attack_hand(mob/living/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(!contents.len)
-		to_chat(user, "<span class='warning'>There's nothing in [src]!</span>")
+		to_chat(user, SPAN_WARNING("There's nothing in [src]!"))
 		return
 	var/obj/item/I = contents[contents.len] //the most recently-added item
 	user.put_in_hands(I)
-	to_chat(user, "<span class='notice'>You take out [I] from [src].</span>")
+	to_chat(user, SPAN_NOTICE("You take out [I] from [src]."))
 	playsound(src, 'sound/items/pshoom.ogg', 50, TRUE)
 	flick("synthesizer_beam", src)
 
@@ -45,7 +45,7 @@
 	if(is_type_in_list(I, item_types) && user.a_intent != INTENT_HARM)
 		if(!user.transferItemToLoc(I, src))
 			return
-		to_chat(user, "<span class='notice'>You put [I] in [src], and it's beamed into energy!</span>")
+		to_chat(user, SPAN_NOTICE("You put [I] in [src], and it's beamed into energy!"))
 		playsound(src, 'sound/items/pshoom.ogg', 50, TRUE)
 		flick("synthesizer_beam", src)
 		return
@@ -83,7 +83,7 @@
 	for(var/obj/item/I in view(4, src))
 		if(is_type_in_list(I, item_types) && I.loc != src && (!I.reagents || !I.reagents.total_volume))
 			if(I.Adjacent(src))
-				visible_message("<span class='notice'>[src] beams up [I]!</span>")
+				visible_message(SPAN_NOTICE("[src] beams up [I]!"))
 				I.forceMove(src)
 				playsound(src, 'sound/items/pshoom.ogg', 50, TRUE)
 				flick("synthesizer_beam", src)
@@ -93,7 +93,7 @@
 /obj/machinery/dish_drive/attack_ai(mob/living/user)
 	if(stat)
 		return
-	to_chat(user, "<span class='notice'>You send a disposal transmission signal to [src].</span>")
+	to_chat(user, SPAN_NOTICE("You send a disposal transmission signal to [src]."))
 	do_the_dishes(TRUE)
 
 /obj/machinery/dish_drive/AltClick(mob/living/user)
@@ -108,7 +108,7 @@
 	var/obj/machinery/disposal/bin/bin = locate() in view(7, src)
 	if(!bin)
 		if(manual)
-			visible_message("<span class='warning'>[src] buzzes. There are no disposal bins in range!</span>")
+			visible_message(SPAN_WARNING("[src] buzzes. There are no disposal bins in range!"))
 			playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
 		return
 	for(var/obj/item/I in contents)

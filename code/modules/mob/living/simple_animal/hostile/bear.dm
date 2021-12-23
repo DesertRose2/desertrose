@@ -96,7 +96,7 @@
 	if(istype(target, /mob/living/simple_animal/hostile/bear) && proximity_flag)
 		var/mob/living/simple_animal/hostile/bear/A = target
 		if(A.armored)
-			to_chat(user, "<span class='warning'>[A] has already been armored up!</span>")
+			to_chat(user, SPAN_WARNING("[A] has already been armored up!"))
 			return
 		A.armored = TRUE
 		A.maxHealth += 60
@@ -161,7 +161,7 @@
 		if((L.mobility_flags & MOBILITY_STAND))
 			L.Knockdown(20)
 			playsound(loc, 'sound/misc/slip.ogg', 15)
-			L.visible_message("<span class='danger'>[L] slips on butter!</span>")
+			L.visible_message(SPAN_DANGER("[L] slips on butter!"))
 
 /mob/living/simple_animal/hostile/bear/yaoguai
 	name = "yao guai"

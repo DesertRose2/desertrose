@@ -65,7 +65,7 @@
 
 /obj/item/computer_hardware/card_slot/try_eject(mob/living/user = null, forced = FALSE)
 	if(!stored_card)
-		to_chat(user, "<span class='warning'>There are no cards in \the [src].</span>")
+		to_chat(user, SPAN_WARNING("There are no cards in \the [src]."))
 		return FALSE
 
 	if(user)
@@ -84,7 +84,7 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_user = user
 		human_user.sec_hud_set_ID()
-	to_chat(user, "<span class='notice'>You remove the card from \the [src].</span>")
+	to_chat(user, SPAN_NOTICE("You remove the card from \the [src]."))
 	playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, FALSE)
 	return TRUE
 
@@ -93,7 +93,7 @@
 		return
 	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(stored_card)
-			to_chat(user, "<span class='notice'>You press down on the manual eject button with \the [I].</span>")
+			to_chat(user, SPAN_NOTICE("You press down on the manual eject button with \the [I]."))
 			try_eject(user)
 			return
 		swap_slot()

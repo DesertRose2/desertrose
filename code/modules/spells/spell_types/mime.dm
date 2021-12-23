@@ -20,7 +20,7 @@
 /obj/effect/proc_holder/spell/aoe_turf/conjure/mime_wall/Trigger(mob/user, skip_can_cast = TRUE)
 	if(user.mind)
 		if(!user.mind.miming)
-			to_chat(usr, "<span class='notice'>You must dedicate yourself to silence first.</span>")
+			to_chat(usr, SPAN_NOTICE("You must dedicate yourself to silence first."))
 			return
 		invocation = "<B>[user.real_name]</B> looks as if a wall is in front of [user.p_them()]."
 	else
@@ -54,11 +54,11 @@
 	for(var/mob/living/carbon/human/H in targets)
 		H.mind.miming=!H.mind.miming
 		if(H.mind.miming)
-			to_chat(H, "<span class='notice'>You make a vow of silence.</span>")
+			to_chat(H, SPAN_NOTICE("You make a vow of silence."))
 			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "vow")
 		else
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "vow", /datum/mood_event/broken_vow)
-			to_chat(H, "<span class='notice'>You break your vow of silence.</span>")
+			to_chat(H, SPAN_NOTICE("You break your vow of silence."))
 
 // These spells can only be gotten from the "Guide for Advanced Mimery series" for Mime Traitors.
 
@@ -83,7 +83,7 @@
 /obj/effect/proc_holder/spell/targeted/forcewall/mime/Trigger(mob/user, skip_can_cast = TRUE)
 	if(user.mind)
 		if(!user.mind.miming)
-			to_chat(usr, "<span class='notice'>You must dedicate yourself to silence first.</span>")
+			to_chat(usr, SPAN_NOTICE("You must dedicate yourself to silence first."))
 			return
 		invocation = "<B>[user.real_name]</B> looks as if a blockade is in front of [user.p_them()]."
 	else
@@ -115,11 +115,11 @@
 
 /obj/effect/proc_holder/spell/aimed/finger_guns/Trigger(mob/user, skip_can_cast = TRUE)
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't properly point your fingers while incapacitated.</span>")
+		to_chat(user, SPAN_WARNING("You can't properly point your fingers while incapacitated."))
 		return
 	if(user.mind)
 		if(!user.mind.miming)
-			to_chat(usr, "<span class='notice'>You must dedicate yourself to silence first.</span>")
+			to_chat(usr, SPAN_NOTICE("You must dedicate yourself to silence first."))
 			return
 		invocation = "<B>[user.real_name]</B> fires [user.p_their()] finger gun!"
 	else
@@ -146,10 +146,10 @@
 /obj/effect/proc_holder/spell/targeted/touch/mimerope/Trigger(mob/user, skip_can_cast = TRUE)
 	if(user.mind)
 		if(!usr.mind.miming)
-			to_chat(usr, "<span class='notice'>You must dedicate yourself to silence first.</span>")
+			to_chat(usr, SPAN_NOTICE("You must dedicate yourself to silence first."))
 			return
 		if (usr.get_active_held_item())
-			to_chat(usr, "<span class='notice'>Your hands must be free to create the invisible rope.</span>")
+			to_chat(usr, SPAN_NOTICE("Your hands must be free to create the invisible rope."))
 			return
 		invocation = "<B>[usr.real_name]</B> is twirling an invisible rope in [usr.p_their()] hands."
 	else

@@ -669,7 +669,7 @@
 			if(2)
 				corgize()
 			if(3)
-				to_chat(src, "<span class='notice'>Oh, we actually feel quite alright!</span>")
+				to_chat(src, SPAN_NOTICE("Oh, we actually feel quite alright!"))
 	else
 		switch(rand(0,3))
 			if(0)

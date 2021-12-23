@@ -299,7 +299,7 @@
 	if(src == H.head) //Suit is already equipped
 		return ..()
 	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_HEAD && requires_training)
-		to_chat(user, "<span class='warning'>You don't have the proper training to operate the power armor!</span>")
+		to_chat(user, SPAN_WARNING("You don't have the proper training to operate the power armor!"))
 		return 0
 	if(slot == SLOT_HEAD)
 		return ..()
@@ -311,7 +311,7 @@
 		return
 	if(emped == 0)
 		if(ismob(loc))
-			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
+			to_chat(loc, SPAN_WARNING("Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems."))
 			tint += 2
 			if(istype(loc, /mob/living/carbon))
 				var/mob/living/carbon/M = loc
@@ -319,7 +319,7 @@
 			armor = armor.modifyRating(linemelee = -50, linebullet = -50, linelaser = -50)
 			emped = 1
 			spawn(50) //5 seconds of being blind and weak
-				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
+				to_chat(loc, SPAN_WARNING("Helmet power reroute successful. All systems operational."))
 				tint -= 2
 				if(istype(loc, /mob/living/carbon))
 					var/mob/living/carbon/M = loc
@@ -335,7 +335,7 @@
 				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 				return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 			if(ismob(loc))
-				to_chat(loc, "<span class='warning'>Your power armor absorbs the projectile's impact!</span>")
+				to_chat(loc, SPAN_WARNING("Your power armor absorbs the projectile's impact!"))
 			block_return[BLOCK_RETURN_SET_DAMAGE_TO] = 0
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()

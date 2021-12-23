@@ -76,7 +76,7 @@
 		if(prob(15) && iscarbon(target))
 			var/mob/living/carbon/C = target
 			C.DefaultCombatKnockdown(40)
-			C.visible_message("<span class='danger'>\The [src] knocks down \the [C]!</span>", \
+			C.visible_message(SPAN_DANGER("\The [src] knocks down \the [C]!"), \
 					"<span class='userdanger'>\The [src] knocks you down!</span>")
 
 /mob/living/simple_animal/hostile/mimic/crate/proc/trigger()
@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(protected_objects, list(/obj/structure/table, /obj/structure/ca
 	if(knockdown_people && . && prob(15) && iscarbon(target))
 		var/mob/living/carbon/C = target
 		C.DefaultCombatKnockdown(40)
-		C.visible_message("<span class='danger'>\The [src] knocks down \the [C]!</span>", \
+		C.visible_message(SPAN_DANGER("\The [src] knocks down \the [C]!"), \
 				"<span class='userdanger'>\The [src] knocks you down!</span>")
 
 /mob/living/simple_animal/hostile/mimic/copy/machine

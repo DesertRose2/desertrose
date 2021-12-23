@@ -22,27 +22,27 @@
 /obj/machinery/computer/prisoner/proc/id_insert(mob/user, obj/item/card/id/prisoner/P)
 	if(istype(P))
 		if(contained_id)
-			to_chat(user, "<span class='warning'>There's already an ID card in the console!</span>")
+			to_chat(user, SPAN_WARNING("There's already an ID card in the console!"))
 			return
 		if(!user.transferItemToLoc(P, src))
 			return
 		contained_id = P
-		user.visible_message("<span class='notice'>[user] inserts an ID card into the console.</span>", \
-							"<span class='notice'>You insert the ID card into the console.</span>")
+		user.visible_message(SPAN_NOTICE("[user] inserts an ID card into the console."), \
+							SPAN_NOTICE("You insert the ID card into the console."))
 		playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, FALSE)
 		updateUsrDialog()
 
 /obj/machinery/computer/prisoner/proc/id_eject(mob/user)
 	if(!contained_id)
-		to_chat(user, "<span class='warning'>There's no ID card in the console!</span>")
+		to_chat(user, SPAN_WARNING("There's no ID card in the console!"))
 		return
 	else
 		contained_id.forceMove(drop_location())
 		if(!issilicon(user) && Adjacent(user))
 			user.put_in_hands(contained_id)
 		contained_id = null
-		user.visible_message("<span class='notice'>[user] gets an ID card from the console.</span>", \
-							"<span class='notice'>You get the ID card from the console.</span>")
+		user.visible_message(SPAN_NOTICE("[user] gets an ID card from the console."), \
+							SPAN_NOTICE("You get the ID card from the console."))
 		playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, FALSE)
 		updateUsrDialog()
 

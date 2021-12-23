@@ -11,7 +11,7 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(!CHECK_MOBILITY(L, MOBILITY_USE) && !(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
-			to_chat(L, "<span class='warning'>You are unable to swing [src] right now!</span>")
+			to_chat(L, SPAN_WARNING("You are unable to swing [src] right now!"))
 			return
 	. = attackchain_flags
 	if(tool_behaviour && ((. = target.tool_act(user, src, tool_behaviour)) & STOP_ATTACK_PROC_CHAIN))
@@ -29,7 +29,7 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(!CHECK_MOBILITY(L, MOBILITY_USE))
-			to_chat(L, "<span class='warning'>You are unable to raise [src] right now!</span>")
+			to_chat(L, SPAN_WARNING("You are unable to raise [src] right now!"))
 			return
 	return afterattack(target, user, FALSE, params)
 
@@ -85,7 +85,7 @@
 	if(item_flags & NOBLUDGEON)
 		return
 	if(force && damtype != STAMINA && HAS_TRAIT(user, TRAIT_PACIFISM))
-		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
+		to_chat(user, SPAN_WARNING("You don't want to harm other living beings!"))
 		return
 
 	var/bigleagues = force*0.5
@@ -169,7 +169,7 @@
 	if(!(attackchain_flags & NO_AUTO_CLICKDELAY_HANDLING))
 		I.ApplyAttackCooldown(user, src, attackchain_flags)
 	if(totitemdamage)
-		visible_message("<span class='danger'>[user] has hit [src] with [I]!</span>", null, null, COMBAT_MESSAGE_RANGE)
+		visible_message(SPAN_DANGER("[user] has hit [src] with [I]!"), null, null, COMBAT_MESSAGE_RANGE)
 		//only witnesses close by and the victim see a hit message.
 		log_combat(user, src, "attacked", I)
 	take_damage(totitemdamage, I.damtype, "melee", 1)
@@ -271,7 +271,7 @@
 		attack_message_local = "[user] [message_verb] you[message_hit_area] with [I]!"
 	if(user == src)
 		attack_message_local = "You [message_verb] yourself[message_hit_area] with [I]"
-	visible_message("<span class='danger'>[attack_message]</span>",\
+	visible_message(SPAN_DANGER("[attack_message]"),\
 		"<span class='userdanger'>[attack_message_local]</span>", null, COMBAT_MESSAGE_RANGE)
 	return 1
 

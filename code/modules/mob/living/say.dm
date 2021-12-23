@@ -172,7 +172,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		return
 
 	if(!can_speak_vocal(message))
-		to_chat(src, "<span class='warning'>You find yourself unable to speak!</span>")
+		to_chat(src, SPAN_WARNING("You find yourself unable to speak!"))
 		return
 
 	var/message_range = 7
@@ -331,7 +331,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 /mob/living/proc/can_speak_basic(message, ignore_spam = FALSE) //Check BEFORE handling of xeno and ling channels
 	if(client)
 		if(client.prefs.muted & MUTE_IC)
-			to_chat(src, "<span class='danger'>You cannot speak in IC (muted).</span>")
+			to_chat(src, SPAN_DANGER("You cannot speak in IC (muted)."))
 			return 0
 		if(!ignore_spam && client.handle_spam_prevention(message,MUTE_IC))
 			return 0

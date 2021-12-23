@@ -169,12 +169,12 @@
 		return
 
 	if(!in_range(user, our_guy))
-		to_chat(user, "<span class='warning'>You aren't close enough to interact with [src]'s laces!</span>")
+		to_chat(user, SPAN_WARNING("You aren't close enough to interact with [src]'s laces!"))
 		return
 
 	if(user == loc && tied != SHOES_TIED) // if they're our own shoes, go tie-wards
 		if(INTERACTING_WITH(user, our_guy))
-			to_chat(user, "<span class='warning'>You're already interacting with [src]!</span>")
+			to_chat(user, SPAN_WARNING("You're already interacting with [src]!"))
 			return
 		user.visible_message("<span class='notice'>[user] begins [tied ? "unknotting" : "tying"] the laces of [user.p_their()] [src.name].</span>", "<span class='notice'>You begin [tied ? "unknotting" : "tying"] the laces of your [src.name]...</span>")
 
@@ -188,13 +188,13 @@
 	else // if they're someone else's shoes, go knot-wards
 		var/mob/living/L = user
 		if(istype(L) && (L.mobility_flags & MOBILITY_STAND))
-			to_chat(user, "<span class='warning'>You must be on the floor to interact with [src]!</span>")
+			to_chat(user, SPAN_WARNING("You must be on the floor to interact with [src]!"))
 			return
 		if(tied == SHOES_KNOTTED)
-			to_chat(user, "<span class='warning'>The laces on [loc]'s [src.name] are already a hopelessly tangled mess!</span>")
+			to_chat(user, SPAN_WARNING("The laces on [loc]'s [src.name] are already a hopelessly tangled mess!"))
 			return
 		if(INTERACTING_WITH(user, our_guy))
-			to_chat(user, "<span class='warning'>You're already interacting with [src]!</span>")
+			to_chat(user, SPAN_WARNING("You're already interacting with [src]!"))
 			return
 
 		var/mod_time = lace_time
@@ -231,7 +231,7 @@
 	if(tied == SHOES_KNOTTED)
 		our_guy.Paralyze(5)
 		our_guy.Knockdown(10)
-		our_guy.visible_message("<span class='danger'>[our_guy] trips on [our_guy.p_their()] knotted shoelaces and falls! What a klutz!</span>", "<span class='userdanger'>You trip on your knotted shoelaces and fall over!</span>")
+		our_guy.visible_message(SPAN_DANGER("[our_guy] trips on [our_guy.p_their()] knotted shoelaces and falls! What a klutz!"), "<span class='userdanger'>You trip on your knotted shoelaces and fall over!</span>")
 		SEND_SIGNAL(our_guy, COMSIG_ADD_MOOD_EVENT, "trip", /datum/mood_event/tripped) // well we realized they're knotted now!
 		our_alert = our_guy.throw_alert("shoealert", /obj/screen/alert/shoes/knotted)
 
@@ -242,11 +242,11 @@
 				our_guy.Paralyze(5)
 				our_guy.Knockdown(10)
 				SEND_SIGNAL(our_guy, COMSIG_ADD_MOOD_EVENT, "trip", /datum/mood_event/tripped) // well we realized they're knotted now!
-				our_guy.visible_message("<span class='danger'>[our_guy] trips on [our_guy.p_their()] untied shoelaces and falls! What a klutz!</span>", "<span class='userdanger'>You trip on your untied shoelaces and fall over!</span>")
+				our_guy.visible_message(SPAN_DANGER("[our_guy] trips on [our_guy.p_their()] untied shoelaces and falls! What a klutz!"), "<span class='userdanger'>You trip on your untied shoelaces and fall over!</span>")
 
 			if(2 to 5) // .4% chance to stumble and lurch forward
 				our_guy.throw_at(get_step(our_guy, our_guy.dir), 3, 2)
-				to_chat(our_guy, "<span class='danger'>You stumble on your untied shoelaces and lurch forward!</span>")
+				to_chat(our_guy, SPAN_DANGER("You stumble on your untied shoelaces and lurch forward!"))
 
 			if(6 to 13) // .7% chance to stumble and fling what we're holding
 				var/have_anything = FALSE
@@ -256,7 +256,7 @@
 				to_chat(our_guy, "<span class='danger'>You trip on your shoelaces a bit[have_anything ? ", flinging what you were holding" : ""]!</span>")
 
 			if(14 to 25) // 1.3ish% chance to stumble and be a bit off balance (like being disarmed)
-				to_chat(our_guy, "<span class='danger'>You stumble a bit on your untied shoelaces!</span>")
+				to_chat(our_guy, SPAN_DANGER("You stumble a bit on your untied shoelaces!"))
 				our_guy.ShoveOffBalance(SHOVE_OFFBALANCE_DURATION)
 				our_guy.Stagger(SHOVE_OFFBALANCE_DURATION)		//yes, same.
 			if(26 to 1000)
@@ -278,7 +278,7 @@
 	. = ..()
 
 	if(INTERACTING_WITH(user, src))
-		to_chat(user, "<span class='warning'>You're already interacting with [src]!</span>")
+		to_chat(user, SPAN_WARNING("You're already interacting with [src]!"))
 		return
 
 	to_chat(user, "<span class='notice'>You begin [tied ? "untying" : "tying"] the laces on [src]...</span>")

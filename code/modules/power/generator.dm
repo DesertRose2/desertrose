@@ -202,7 +202,7 @@
 	if(!anchored)
 		return
 	find_circs()
-	to_chat(user, "<span class='notice'>You update [src]'s circulator links.</span>")
+	to_chat(user, SPAN_NOTICE("You update [src]'s circulator links."))
 	return TRUE
 
 /obj/machinery/power/generator/screwdriver_act(mob/user, obj/item/I)

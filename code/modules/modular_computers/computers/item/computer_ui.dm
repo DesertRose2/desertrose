@@ -122,7 +122,7 @@
 				return
 
 			P.kill_program(forced = TRUE)
-			to_chat(user, "<span class='notice'>Program [P.filename].[P.filetype] with PID [rand(100,999)] has been killed.</span>")
+			to_chat(user, SPAN_NOTICE("Program [P.filename].[P.filetype] with PID [rand(100,999)] has been killed."))
 
 		if("PC_runprogram")
 			var/prog = params["name"]
@@ -178,7 +178,7 @@
 				if(!new_color)
 					return
 				if(color_hex2num(new_color) < 200) //Colors too dark are rejected
-					to_chat(user, "<span class='warning'>That color is too dark! Choose a lighter one.</span>")
+					to_chat(user, SPAN_WARNING("That color is too dark! Choose a lighter one."))
 					new_color = null
 			comp_light_color = new_color
 			light_color = new_color

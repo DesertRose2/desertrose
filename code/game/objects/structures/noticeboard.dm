@@ -34,9 +34,9 @@
 				return
 			notices++
 			icon_state = "nboard0[notices]"
-			to_chat(user, "<span class='notice'>You pin the [O] to the noticeboard.</span>")
+			to_chat(user, SPAN_NOTICE("You pin the [O] to the noticeboard."))
 		else
-			to_chat(user, "<span class='notice'>The noticeboard is full.</span>")
+			to_chat(user, SPAN_NOTICE("The noticeboard is full."))
 	else
 		return ..()
 
@@ -78,7 +78,7 @@
 				add_fingerprint(usr)
 				P.attackby(I, usr)
 			else
-				to_chat(usr, "<span class='notice'>You'll need something to write with!</span>")
+				to_chat(usr, SPAN_NOTICE("You'll need something to write with!"))
 
 	if(href_list["read"])
 		var/obj/item/I = locate(href_list["read"]) in contents

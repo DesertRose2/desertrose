@@ -72,7 +72,7 @@
 	var/atom/movable/AM = parent
 	var/mob/AMM = AM
 	if((ride_check_rider_restrained && M.restrained(TRUE)) || (ride_check_rider_incapacitated && M.incapacitated(FALSE, TRUE)) || (ride_check_ridden_incapacitated && istype(AMM) && AMM.incapacitated(FALSE, TRUE)))
-		AM.visible_message("<span class='warning'>[M] falls off of [AM]!</span>")
+		AM.visible_message(SPAN_WARNING("[M] falls off of [AM]!"))
 		AM.unbuckle_mob(M)
 	return TRUE
 
@@ -189,7 +189,7 @@
 		handle_vehicle_offsets()
 		handle_vehicle_layer()
 	else
-		to_chat(user, "<span class='notice'>You'll need the keys in one of your hands to [drive_verb] [AM].</span>")
+		to_chat(user, SPAN_NOTICE("You'll need the keys in one of your hands to [drive_verb] [AM]."))
 
 /datum/component/riding/proc/Unbuckle(atom/movable/M)
 	addtimer(CALLBACK(parent, /atom/movable/.proc/unbuckle_mob, M), 0, TIMER_UNIQUE)
@@ -273,7 +273,7 @@
 	AM.unbuckle_mob(user)
 	user.DefaultCombatKnockdown(60)
 	user.Daze(50)
-	user.visible_message("<span class='warning'>[AM] pushes [user] off of [AM.p_them()]!</span>")
+	user.visible_message(SPAN_WARNING("[AM] pushes [user] off of [AM.p_them()]!"))
 
 /datum/component/riding/cyborg
 	del_on_unbuckle_all = TRUE
@@ -333,7 +333,7 @@
 	var/turf/target = get_edge_target_turf(AM, AM.dir)
 	var/turf/targetm = get_step(get_turf(AM), AM.dir)
 	M.Move(targetm)
-	M.visible_message("<span class='warning'>[M] is thrown clear of [AM]!</span>")
+	M.visible_message(SPAN_WARNING("[M] is thrown clear of [AM]!"))
 	M.throw_at(target, 14, 5, AM)
 	M.DefaultCombatKnockdown(60)
 
