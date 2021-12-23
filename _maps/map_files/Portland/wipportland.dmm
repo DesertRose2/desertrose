@@ -326,7 +326,7 @@
 /turf/open/indestructible/ground,
 /area/space)
 "cH" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/wood,
 /area/f13/city)
@@ -1719,7 +1719,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "mu" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "mv" = (
@@ -4379,7 +4379,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/radiation)
 "EV" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood,
 /area/f13/city)
 "EY" = (
@@ -5818,7 +5818,7 @@
 	},
 /area/space)
 "Qd" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city)
@@ -6450,7 +6450,7 @@
 	},
 /area/space)
 "UJ" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood,
 /area/f13/city)
 "UM" = (

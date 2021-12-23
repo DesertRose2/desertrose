@@ -9347,7 +9347,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "osf" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "osC" = (

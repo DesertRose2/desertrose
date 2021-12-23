@@ -2097,7 +2097,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/awaymission/wildwest/refine)
 "gL" = (
-/obj/machinery/door/unpowered/shuttle,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/mineral/titanium/yellow,
 /area/awaymission/wildwest/refine)
 "gP" = (
