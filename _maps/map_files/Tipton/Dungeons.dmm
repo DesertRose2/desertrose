@@ -9,9 +9,9 @@
 /turf/open/indestructible,
 /area/f13/tcoms)
 "ad" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -301,8 +301,8 @@
 /area/f13/underground/cave)
 "aT" = (
 /obj/effect/gibspawner/human,
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "aU" = (
@@ -453,10 +453,9 @@
 	},
 /area/f13/underground/cave)
 "br" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin,
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 4;
+	dir = 1;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
@@ -561,11 +560,10 @@
 	},
 /area/f13/underground/cave)
 "bH" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/machinery/hydroponics/constructable,
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	dir = 5;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "bI" = (
@@ -705,7 +703,6 @@
 /area/f13/underground/cave)
 "ce" = (
 /mob/living/simple_animal/hostile/supermutant/meleemutant,
-/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /obj/machinery/light/floor,
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
@@ -768,11 +765,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "cq" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/effect/gibspawner/human,
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 9;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "cr" = (
 /obj/structure/guncase/shotgun,
@@ -821,9 +818,9 @@
 	},
 /area/f13/underground/cave)
 "cz" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/structure/destructible/tribal_torch/lit,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
 	dir = 5;
 	icon_state = "yellowsiding"
@@ -890,14 +887,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "cI" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
 	},
-/turf/open/floor/f13,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "cJ" = (
 /obj/structure/rack,
@@ -984,8 +981,8 @@
 /area/f13/underground/cave)
 "cX" = (
 /obj/effect/gibspawner/human,
-/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "cY" = (
@@ -1068,10 +1065,12 @@
 "dp" = (
 /obj/item/crafting/coffee_pot,
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "dq" = (
 /obj/machinery/vending/engivend,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "yellowsiding"
@@ -1146,8 +1145,8 @@
 	},
 /area/f13/underground/cave)
 "dI" = (
-/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1224,6 +1223,7 @@
 	dir = 1;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -1257,6 +1257,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/underground/cave)
+"ef" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/underground/cave)
 "eg" = (
 /obj/structure/barricade/wooden/strong,
 /obj/effect/decal/cleanable/dirt,
@@ -1282,6 +1289,7 @@
 	dir = 4;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 4
 	},
@@ -1308,6 +1316,7 @@
 	dir = 8;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 8
 	},
@@ -1325,6 +1334,8 @@
 /area/f13/underground/cave)
 "ew" = (
 /obj/machinery/power/emitter/anchored,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -1339,6 +1350,7 @@
 	layer = 3.0;
 	pixel_y = 16
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "ez" = (
@@ -1354,12 +1366,10 @@
 	},
 /area/f13/underground/cave)
 "eA" = (
-/obj/structure/table,
-/obj/machinery/light/small{
-	light_color = "red"
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 8;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "eB" = (
@@ -1371,13 +1381,8 @@
 	},
 /area/f13/underground/cave)
 "eD" = (
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "eE" = (
 /turf/open/floor/plasteel/airless/floorgrime,
@@ -1395,11 +1400,12 @@
 	dir = 4;
 	pixel_x = -17
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "eJ" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/f13{
@@ -1408,15 +1414,10 @@
 	},
 /area/f13/underground/cave)
 "eM" = (
-/mob/living/simple_animal/hostile/megafauna/behemoth{
-	faction = list("mining","boss","supermutant");
-	health = 5000;
-	name = "Tiny";
-	speed = 2
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
 	},
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "eN" = (
 /obj/structure/flora/grass/jungle,
@@ -1454,8 +1455,8 @@
 	},
 /area/f13/underground/cave)
 "eV" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
@@ -1485,16 +1486,13 @@
 	},
 /area/f13/underground/cave)
 "fa" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
-	},
 /obj/machinery/light/small{
 	dir = 8;
 	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("hostile")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 8
@@ -1539,6 +1537,7 @@
 /area/f13/underground/cave)
 "fo" = (
 /obj/machinery/harvester,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -1553,6 +1552,7 @@
 	},
 /area/f13/underground/cave)
 "fr" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side,
 /area/f13/underground/cave)
 "fs" = (
@@ -1560,6 +1560,14 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"fu" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "fv" = (
@@ -1581,13 +1589,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/f13{
 	icon_state = "grass3"
-	},
-/area/f13/underground/cave)
-"fy" = (
-/obj/structure/table,
-/obj/item/ammo_box/shotgun/slug,
-/turf/open/floor/f13{
-	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "fz" = (
@@ -1615,11 +1616,9 @@
 	},
 /area/f13/underground/cave)
 "fF" = (
-/mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("hostile")
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 8;
+	dir = 6;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
@@ -1639,18 +1638,11 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"fI" = (
-/obj/machinery/power/emitter/anchored,
-/turf/open/floor/f13{
-	dir = 1;
-	icon_state = "yellowsiding"
-	},
-/area/f13/underground/cave)
 "fJ" = (
-/obj/structure/table,
-/obj/item/storage/belt/utility/full,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 10;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "fL" = (
@@ -1688,6 +1680,7 @@
 /obj/structure/rack,
 /obj/item/stock_parts/cell/ammo/ec,
 /obj/item/stock_parts/cell/ammo/ec,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -1738,9 +1731,19 @@
 	},
 /area/f13/underground/cave)
 "gk" = (
-/obj/structure/table,
-/obj/item/bodypart/l_arm/robot,
-/obj/item/bodypart/r_leg/robot,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"gl" = (
+/obj/machinery/workbench/forge{
+	desc = "A reactor-heated megafurnace used for forging metal items such as swords, spears and shields and more.";
+	icon_state = "generator_on";
+	name = "superheating forge"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -1754,21 +1757,24 @@
 	},
 /area/f13/underground/cave)
 "gq" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/assaultron{
 	faction = list("hostile")
 	},
-/turf/open/floor/f13{
-	dir = 4;
-	icon_state = "yellowsiding"
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 8
 	},
 /area/f13/underground/cave)
 "gr" = (
-/obj/structure/table,
-/obj/item/bodypart/head/robot,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/machinery/light/floor{
+	light_color = "#ff4500";
+	light_range = 12
 	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "DungeonRange"
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "gs" = (
 /obj/machinery/computer/operating,
@@ -1791,13 +1797,6 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"gv" = (
-/mob/living/silicon/robot/modules/assaultron,
-/turf/open/floor/f13{
-	dir = 1;
-	icon_state = "yellowsiding"
-	},
-/area/f13/underground/cave)
 "gw" = (
 /mob/living/simple_animal/hostile/jungle/leaper,
 /turf/open/floor/f13/wood,
@@ -1810,6 +1809,7 @@
 /area/f13/underground/cave)
 "gz" = (
 /obj/machinery/vending/medical,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -1828,12 +1828,29 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"gF" = (
+/obj/structure/table,
+/obj/item/bodypart/head/robot,
+/obj/item/bodypart/chest/robot,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "gH" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"gI" = (
+/obj/structure/table,
+/obj/item/book/granter/crafting_recipe/blueprint/combat,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "gJ" = (
@@ -1853,14 +1870,15 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "gL" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "gO" = (
 /obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -1881,11 +1899,14 @@
 	},
 /area/f13/underground/cave)
 "gS" = (
-/obj/machinery/light/small{
-	light_color = "red"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/floor,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
 	},
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 10;
+	icon_state = "redmark"
 	},
 /area/f13/underground/cave)
 "gT" = (
@@ -1899,6 +1920,7 @@
 /area/f13/underground/cave)
 "gU" = (
 /obj/machinery/vending/medical,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "yellowsiding"
@@ -1932,10 +1954,12 @@
 	},
 /area/f13/underground/cave)
 "hl" = (
-/obj/machinery/shieldwallgen,
-/turf/open/floor/f13{
-	dir = 1;
-	icon_state = "yellowsiding"
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("hostile")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 4
 	},
 /area/f13/underground/cave)
 "hm" = (
@@ -1943,8 +1967,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/underground/cave)
 "hn" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
@@ -2027,6 +2051,7 @@
 /turf/closed/wall/rust,
 /area/f13/underground/cave)
 "hV" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "rampdowntop"
 	},
@@ -2038,8 +2063,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/underground/cave)
 "ic" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -2068,8 +2093,8 @@
 	},
 /area/f13/underground/cave)
 "ii" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -2121,6 +2146,7 @@
 /area/f13/underground/cave)
 "it" = (
 /obj/machinery/vending/engivend,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 5;
 	icon_state = "yellowsiding"
@@ -2196,11 +2222,17 @@
 	layer = 3.0;
 	pixel_y = 16
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "iK" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/floorgrime,
+/area/f13/underground/cave)
+"iL" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "iN" = (
 /obj/structure/flora/grass/jungle/b,
@@ -2334,17 +2366,13 @@
 	},
 /area/f13/underground/cave)
 "jr" = (
-/obj/structure/table,
-/obj/item/assembly/flash/cyborg,
-/obj/item/assembly/flash/cyborg,
-/obj/item/assembly/flash/cyborg,
-/obj/item/assembly/flash/cyborg,
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
 	},
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 1;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "js" = (
@@ -2386,6 +2414,7 @@
 	},
 /area/f13/underground/cave)
 "jy" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 6
 	},
@@ -2449,15 +2478,17 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "jM" = (
-/obj/structure/table,
-/turf/open/floor/f13{
-	dir = 4;
-	icon_state = "yellowsiding"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/ladder/unbreakable{
+	height = 0;
+	id = "Scibunker"
 	},
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "jN" = (
 /obj/structure/table/abductor,
 /obj/machinery/plantgenes/seedvault,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -2494,6 +2525,7 @@
 /area/f13/underground/cave)
 "jW" = (
 /obj/machinery/blackbox_recorder,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -2507,6 +2539,13 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/floorgrime,
+/area/f13/underground/cave)
+"jY" = (
+/obj/machinery/ammobench,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/underground/cave)
 "jZ" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -2548,14 +2587,13 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/underground/cave)
 "ks" = (
-/obj/machinery/workbench/pa,
-/obj/item/clothing/suit/armor/f13/power_armor/t45b,
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/machinery/doppler_array,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "bcircuit1";
+	light_color = "#0076bc";
+	light_power = 3;
+	light_range = 4
 	},
 /area/f13/underground/cave)
 "ku" = (
@@ -2605,15 +2643,25 @@
 	dir = 4;
 	layer = 2.9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "kI" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 4
+	},
+/area/f13/underground/cave)
+"kJ" = (
+/obj/structure/table,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "kL" = (
@@ -2622,11 +2670,22 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "kM" = (
-/obj/machinery/vending/wallmed{
-	pixel_x = -30
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/underground/cave)
+"kO" = (
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 10;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "kP" = (
@@ -2721,6 +2780,7 @@
 /obj/machinery/porta_turret/xray{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -2728,6 +2788,7 @@
 /area/f13/underground/cave)
 "ly" = (
 /obj/machinery/computer/rdconsole/core/vault,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -2741,6 +2802,14 @@
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"lA" = (
+/obj/structure/table,
+/obj/item/stack/crafting/electronicparts/five,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "lB" = (
@@ -2816,6 +2885,7 @@
 	dir = 4;
 	layer = 2.9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "lN" = (
@@ -2833,7 +2903,16 @@
 	},
 /area/f13/underground/cave)
 "lP" = (
-/obj/machinery/rnd/production/circuit_imprinter,
+/obj/structure/table/abductor,
+/obj/item/circuitboard/machine/sleeper,
+/obj/item/circuitboard/machine/sleeper,
+/obj/item/circuitboard/machine/smes,
+/obj/item/circuitboard/machine/smes,
+/obj/item/circuitboard/machine/smartfridge,
+/obj/item/circuitboard/machine/smartfridge,
+/obj/item/circuitboard/machine/smartfridge,
+/obj/item/circuitboard/machine/smoke_machine,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -2848,6 +2927,11 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/underground/cave)
+"lS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/floor,
+/turf/open/floor/f13,
+/area/f13/underground/cave)
 "lT" = (
 /obj/machinery/workbench,
 /turf/open/floor/plasteel/floorgrime,
@@ -2857,21 +2941,31 @@
 	extra_projectiles = 1;
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "lX" = (
-/obj/structure/table,
-/obj/machinery/computer/terminal,
-/turf/open/floor/f13,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "lZ" = (
-/obj/item/storage/belt/utility/full,
-/obj/structure/table,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/structure/table/abductor,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "ma" = (
@@ -2892,16 +2986,11 @@
 	},
 /area/f13/underground/cave)
 "md" = (
-/obj/structure/table,
-/obj/item/bodypart/r_arm/robot,
-/obj/item/bodypart/l_leg/robot,
-/obj/item/bodypart/chest/robot,
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/structure/table/abductor,
+/obj/item/melee/powerfist,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "mf" = (
@@ -2918,15 +3007,10 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/water,
 /area/f13/underground/cave)
-"mk" = (
-/obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "engine"
-	},
-/area/f13/underground/cave)
 "ml" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/ammo,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -2936,6 +3020,14 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/tree/jungle/small,
 /turf/open/water,
+/area/f13/underground/cave)
+"mn" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	dir = 9;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "mo" = (
 /obj/machinery/light{
@@ -2965,6 +3057,7 @@
 	light_color = "red"
 	},
 /obj/item/storage/toolbox/ammo,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -3165,14 +3258,25 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
-"nt" = (
-/obj/machinery/button/door{
-	id = "DungeonRange";
-	pixel_x = 32
-	},
+"no" = (
+/obj/machinery/shieldwallgen,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 5;
 	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"nt" = (
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("hostile")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 4
 	},
 /area/f13/underground/cave)
 "nv" = (
@@ -3186,6 +3290,14 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"ny" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "nA" = (
@@ -3205,6 +3317,7 @@
 	dir = 4;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
@@ -3220,16 +3333,15 @@
 	},
 /area/f13/underground/cave)
 "nG" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
-	},
-/turf/open/floor/f13{
-	dir = 10;
-	icon_state = "yellowsiding"
+/obj/structure/table/abductor,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "nH" = (
@@ -3295,10 +3407,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "nS" = (
-/obj/machinery/mecha_part_fabricator,
-/obj/item/robot_suit,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/structure/table/abductor,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "nT" = (
@@ -3312,8 +3429,10 @@
 	},
 /area/f13/underground/cave)
 "nU" = (
-/obj/item/gun/energy/laser/plasma/glock,
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/energy/laser/wattz/magneto,
+/obj/item/storage/belt/holster,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 1
 	},
@@ -3514,10 +3633,11 @@
 	},
 /area/f13/underground/cave)
 "oK" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "floordirtysolid"
+/obj/structure/table/abductor,
+/obj/item/gun/energy/laser/wattz2k/extended,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "oL" = (
@@ -3533,7 +3653,8 @@
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/underground/cave)
 "oO" = (
-/mob/living/simple_animal/hostile/handy/sentrybot{
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/f13{
@@ -3571,10 +3692,10 @@
 	},
 /area/f13/underground/cave)
 "oW" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/machinery/light/floor,
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "oX" = (
@@ -3602,6 +3723,7 @@
 /obj/structure/table,
 /obj/item/ammo_box/magazine/w308,
 /obj/item/ammo_box/magazine/w308,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -3645,6 +3767,12 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"pr" = (
+/obj/structure/table,
+/obj/item/stack/ore/blackpowder/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
+/area/f13/underground/cave)
 "ps" = (
 /obj/machinery/shower,
 /obj/machinery/light{
@@ -3665,9 +3793,16 @@
 	},
 /area/f13/underground/cave)
 "px" = (
-/obj/machinery/ammobench,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/structure/table/abductor,
+/obj/item/crowbar/abductor,
+/obj/item/screwdriver/abductor,
+/obj/item/multitool/abductor,
+/obj/item/weldingtool/abductor,
+/obj/item/wirecutters/abductor,
+/obj/item/wrench/abductor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
 	},
 /area/f13/underground/cave)
 "py" = (
@@ -3713,6 +3848,20 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"pE" = (
+/obj/machinery/workbench/forge{
+	desc = "A reactor-heated megafurnace used for forging metal items such as swords, spears and shields and more.";
+	icon_state = "generator_on";
+	name = "superheating forge"
+	},
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "pF" = (
@@ -3762,6 +3911,7 @@
 /area/f13/underground/cave)
 "pT" = (
 /obj/machinery/holopad,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "engine"
 	},
@@ -3879,16 +4029,22 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "qz" = (
-/obj/structure/table,
-/obj/machinery/computer/terminal{
-	dir = 1
+/obj/structure/table/abductor,
+/obj/item/storage/part_replacer,
+/obj/item/storage/part_replacer,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "bcircuit1";
+	light_color = "#0076bc";
+	light_power = 3;
+	light_range = 4
 	},
-/turf/open/floor/f13,
 /area/f13/underground/cave)
 "qB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "yellowsiding"
@@ -3972,6 +4128,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/underground/cave)
+"rg" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "rh" = (
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/grass/jungle,
@@ -3987,6 +4151,7 @@
 	},
 /area/f13/underground/cave)
 "rj" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 9
 	},
@@ -4059,6 +4224,7 @@
 	},
 /area/f13/underground/cave)
 "rD" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 1;
 	icon_state = "red"
@@ -4068,6 +4234,7 @@
 /obj/structure/table,
 /obj/item/ammo_box/magazine/m556/rifle/extended/empty,
 /obj/item/ammo_box/magazine/m556/rifle/extended/empty,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "rF" = (
@@ -4110,6 +4277,40 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/underground/cave)
+"rU" = (
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare,
+/obj/structure/table,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/underground/cave)
 "rV" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/brflowers,
@@ -4125,8 +4326,8 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
 "sb" = (
-/obj/structure/table,
-/obj/item/gun/ballistic/revolver/thatgun,
+/obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "sd" = (
@@ -4147,19 +4348,57 @@
 	dir = 8;
 	pixel_x = 17
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "sf" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
-	},
-/turf/open/floor/f13{
-	dir = 6;
-	icon_state = "yellowsiding"
+/obj/structure/table/abductor,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/manipulator/pico,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stock_parts/matter_bin/super,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "bcircuit1";
+	light_color = "#0076bc";
+	light_power = 3;
+	light_range = 4
 	},
 /area/f13/underground/cave)
 "sh" = (
@@ -4367,6 +4606,7 @@
 	},
 /area/f13/underground/cave)
 "tu" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -4382,6 +4622,8 @@
 /area/f13/underground/cave)
 "tx" = (
 /obj/structure/table,
+/obj/item/gun/ballistic/revolver/thatgun,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "tz" = (
@@ -4428,6 +4670,13 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"tJ" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/underground/cave)
 "tK" = (
 /obj/structure/reagent_dispensers/barrel/three,
 /obj/effect/decal/cleanable/dirt,
@@ -4469,12 +4718,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "tU" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/structure/destructible/tribal_torch/lit,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	dir = 6;
-	icon_state = "yellowsiding"
+/obj/machinery/implantchair/genepurge,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "bcircuit1";
+	light_color = "#0076bc";
+	light_power = 3;
+	light_range = 4
 	},
 /area/f13/underground/cave)
 "tW" = (
@@ -4493,6 +4743,7 @@
 	dir = 8;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -4530,6 +4781,7 @@
 /obj/machinery/porta_turret/xray{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 6
 	},
@@ -4595,6 +4847,14 @@
 /obj/item/clothing/mask/cigarette/rollie/cannabis,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
+"uF" = (
+/obj/structure/table,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "uH" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/seedspawner,
@@ -4620,6 +4880,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
+"uP" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"uQ" = (
+/obj/structure/table,
+/obj/item/bodypart/l_arm/robot,
+/obj/item/bodypart/l_leg/robot,
+/obj/item/bodypart/chest/robot,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "uW" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/f13{
@@ -4632,10 +4908,13 @@
 	icon_state = "grass3"
 	},
 /area/f13/underground/cave)
-"uZ" = (
-/obj/machinery/doomsday_device,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "engine"
+"vb" = (
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "vc" = (
@@ -4711,6 +4990,7 @@
 /area/f13/underground/cave)
 "vt" = (
 /obj/machinery/shieldgen,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -4719,13 +4999,6 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
 	icon_state = "grass3"
-	},
-/area/f13/underground/cave)
-"vv" = (
-/obj/structure/table,
-/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
-/turf/open/floor/f13{
-	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "vw" = (
@@ -4803,6 +5076,7 @@
 	pixel_y = 11
 	},
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "vI" = (
@@ -4824,12 +5098,12 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"vN" = (
-/mob/living/simple_animal/hostile/handy/sentrybot{
-	faction = list("hostile")
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
-	dir = 1
+"vO" = (
+/obj/structure/table,
+/obj/item/stock_parts/cell/super,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "vQ" = (
@@ -4852,16 +5126,53 @@
 	},
 /area/f13/underground/cave)
 "vU" = (
-/obj/machinery/workbench/forge{
-	desc = "A reactor-heated megafurnace used for forging metal items such as swords, spears and shields and more.";
-	icon_state = "generator_on";
-	name = "superheating forge"
-	},
-/obj/machinery/light/small{
-	light_color = "red"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+/obj/structure/table/abductor,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "bcircuit1";
+	light_color = "#0076bc";
+	light_power = 3;
+	light_range = 4
 	},
 /area/f13/underground/cave)
 "wd" = (
@@ -4893,6 +5204,16 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"wh" = (
+/obj/structure/table,
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "wi" = (
@@ -4937,6 +5258,30 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"wv" = (
+/obj/structure/table/abductor,
+/obj/item/book/granter/crafting_recipe/blueprint/aer9,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/underground/cave)
+"ww" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	dir = 5;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"wx" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "wy" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
@@ -4950,15 +5295,17 @@
 	},
 /area/f13/underground/cave)
 "wB" = (
-/mob/living/simple_animal/hostile/handy/sentrybot{
-	faction = list("hostile")
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/clothing/glasses/science,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 4
 	},
 /area/f13/underground/cave)
 "wD" = (
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/defibrillator/compact/combat,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 4
 	},
@@ -5024,6 +5371,7 @@
 /area/f13/underground/cave)
 "wT" = (
 /obj/structure/showcase/machinery/signal_decrypter,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -5070,6 +5418,7 @@
 /mob/living/simple_animal/hostile/handy/gutsy{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -5083,6 +5432,11 @@
 /obj/structure/flora/grass/jungle,
 /turf/closed/wall/f13/tentwall,
 /area/f13/underground/cave)
+"xl" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
 "xm" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/grass/jungle,
@@ -5090,6 +5444,7 @@
 /area/f13/underground/cave)
 "xn" = (
 /obj/machinery/rnd/experimentor,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -5132,6 +5487,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
@@ -5160,6 +5516,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/underground/cave)
+"xx" = (
+/obj/structure/lattice,
+/obj/machinery/light/floor,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
 "xz" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/floorgrime,
@@ -5168,6 +5531,7 @@
 /obj/effect/gibspawner/human,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "xC" = (
@@ -5208,14 +5572,11 @@
 	},
 /area/f13/underground/cave)
 "xO" = (
-/obj/structure/table,
-/obj/item/bodypart/r_arm/robot,
-/obj/item/bodypart/r_leg/robot,
-/obj/machinery/light/small{
-	light_color = "red"
-	},
+/obj/machinery/shieldwallgen,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 10;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "xP" = (
@@ -5223,15 +5584,18 @@
 	extra_projectiles = 1;
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 5;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "xV" = (
-/obj/machinery/workbench/pa,
+/obj/machinery/shieldwallgen,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 6;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "xW" = (
@@ -5320,6 +5684,7 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "ym" = (
@@ -5378,11 +5743,16 @@
 /area/f13/underground/cave)
 "yB" = (
 /obj/structure/table,
-/obj/item/ammo_box/shotgun/buck,
-/obj/item/ammo_box/shotgun/buck,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
+/area/f13/underground/cave)
+"yC" = (
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "yD" = (
 /obj/item/flashlight/lantern,
@@ -5393,6 +5763,7 @@
 /area/f13/underground/cave)
 "yE" = (
 /obj/structure/rack,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -5449,6 +5820,13 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"yQ" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "yR" = (
@@ -5615,9 +5993,16 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "zG" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plasteel/airless/floorgrime,
+/area/f13/underground/cave)
+"zI" = (
+/obj/machinery/autolathe,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/underground/cave)
 "zJ" = (
 /obj/structure/table,
@@ -5648,6 +6033,7 @@
 /mob/living/simple_animal/hostile/handy/gutsy{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -5690,6 +6076,13 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"Ab" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13,
+/area/f13/underground/cave)
 "Ad" = (
 /obj/machinery/hydroponics,
 /obj/structure/flora/ausbushes/fernybush,
@@ -5698,10 +6091,14 @@
 	},
 /area/f13/underground/cave)
 "Af" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin,
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 9;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "Ag" = (
 /obj/structure/closet/wardrobe/botanist,
@@ -5732,7 +6129,6 @@
 	},
 /area/f13/underground/cave)
 "An" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -5810,6 +6206,12 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"AF" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "AG" = (
 /mob/living/simple_animal/hostile/supermutant/meleemutant,
 /obj/structure/lattice,
@@ -5827,6 +6229,16 @@
 /area/f13/underground/cave)
 "AN" = (
 /turf/open/floor/plating/rust,
+/area/f13/underground/cave)
+"AO" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("hostile")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "AP" = (
 /obj/structure/flora/junglebush/large,
@@ -5871,6 +6283,7 @@
 /area/f13/underground/cave)
 "AX" = (
 /obj/machinery/bloodbankgen,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -5879,11 +6292,12 @@
 	},
 /area/f13/underground/cave)
 "AZ" = (
-/obj/machinery/light/small{
-	light_color = "red"
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 6;
+	dir = 5;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
@@ -5909,8 +6323,8 @@
 	},
 /area/f13/underground/cave)
 "Bd" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -5989,17 +6403,21 @@
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "Bw" = (
-/obj/structure/table,
-/obj/item/wrench/power,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 4;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "BB" = (
-/mob/living/silicon/robot/modules/assaultron,
-/turf/open/floor/f13{
-	icon_state = "yellowsiding"
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "BD" = (
 /mob/living/simple_animal/hostile/trog/tunneler,
@@ -6027,10 +6445,12 @@
 /area/f13/underground/cave)
 "BK" = (
 /obj/machinery/light/small{
+	dir = 1;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 10;
+	dir = 5;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
@@ -6047,11 +6467,21 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"BP" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
+"BN" = (
+/obj/effect/gibspawner/human,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/underground/cave)
+"BP" = (
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "BQ" = (
@@ -6089,6 +6519,12 @@
 	icon_state = "greenfull"
 	},
 /area/f13/underground/cave)
+"Ch" = (
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
 "Cj" = (
 /obj/machinery/power/smes,
 /obj/structure/cable{
@@ -6102,6 +6538,15 @@
 	icon_state = "greenfull"
 	},
 /area/f13/underground/cave)
+"Cl" = (
+/obj/structure/table,
+/obj/item/bodypart/l_arm/robot,
+/obj/item/bodypart/r_leg/robot,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "Cm" = (
 /mob/living/simple_animal/hostile/retaliate/frog,
 /turf/open/floor/f13{
@@ -6113,6 +6558,7 @@
 	extra_projectiles = 1;
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -6153,6 +6599,7 @@
 /area/f13/underground/cave)
 "Cu" = (
 /obj/machinery/vending/coffee,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner,
 /area/f13/underground/cave)
 "Cv" = (
@@ -6201,6 +6648,7 @@
 	dir = 4;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
@@ -6220,11 +6668,9 @@
 	},
 /area/f13/underground/cave)
 "CE" = (
-/obj/machinery/workbench/forge{
-	desc = "A reactor-heated megafurnace used for forging metal items such as swords, spears and shields and more.";
-	icon_state = "generator_on";
-	name = "superheating forge"
-	},
+/obj/structure/table,
+/obj/item/screwdriver/power,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -6292,6 +6738,14 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"Da" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "Db" = (
 /obj/item/flashlight/lantern,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
@@ -6309,6 +6763,17 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"De" = (
+/obj/machinery/ammobench,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "Df" = (
@@ -6335,8 +6800,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "Dk" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
+/obj/machinery/workbench/pa,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -6392,6 +6857,7 @@
 /area/f13/underground/cave)
 "DB" = (
 /obj/structure/closet/crate/freezer/surplus_limbs/fake,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -6399,17 +6865,12 @@
 	light_range = 4
 	},
 /area/f13/underground/cave)
-"DC" = (
-/obj/machinery/nuclearbomb/beer,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "engine"
-	},
-/area/f13/underground/cave)
 "DD" = (
 /obj/structure/table,
 /obj/item/stock_parts/cell/ammo/ecp,
 /obj/item/stock_parts/cell/ammo/ecp,
 /obj/item/stock_parts/cell/ammo/ecp,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
@@ -6445,6 +6906,7 @@
 /area/f13/underground/cave)
 "DS" = (
 /obj/machinery/shuttle_scrambler,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -6534,7 +6996,13 @@
 	},
 /area/f13/underground/cave)
 "Eo" = (
-/obj/machinery/workbench/advanced,
+/obj/structure/table,
+/obj/item/clothing/head/helmet/f13/power_armor/t45b,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -6555,6 +7023,7 @@
 /area/f13/underground/cave)
 "Er" = (
 /obj/machinery/limbgrower,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -6584,15 +7053,16 @@
 	},
 /area/f13/underground/cave)
 "EB" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/workbench/pa,
+/obj/item/clothing/suit/armor/f13/power_armor/t45b,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 10;
-	icon_state = "yellowsiding"
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "EC" = (
 /obj/machinery/vending/wardrobe/science_wardrobe,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -6601,6 +7071,7 @@
 "ED" = (
 /obj/structure/table/abductor,
 /obj/machinery/cell_charger,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -6609,10 +7080,11 @@
 	},
 /area/f13/underground/cave)
 "EG" = (
-/obj/effect/decal/cleanable/robot_debris/down,
+/obj/structure/table,
+/obj/item/wrench/power,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	dir = 1;
-	icon_state = "yellowsiding"
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "EJ" = (
@@ -6624,7 +7096,16 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
+"EP" = (
+/obj/structure/table/abductor,
+/obj/effect/spawner/bundle/f13/plasmaglock,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "engine"
+	},
+/area/f13/underground/cave)
 "ES" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
 	dir = 1;
 	icon_state = "redcorner"
@@ -6688,12 +7169,31 @@
 	},
 /area/f13/underground/cave)
 "Fi" = (
-/obj/machinery/rnd/destructive_analyzer,
+/obj/structure/table/abductor,
+/obj/item/circuitboard/machine/biogenerator,
+/obj/item/circuitboard/machine/biogenerator,
+/obj/item/circuitboard/machine/chem_dispenser,
+/obj/item/circuitboard/machine/chem_dispenser,
+/obj/item/circuitboard/machine/chem_dispenser,
+/obj/item/circuitboard/machine/chem_heater,
+/obj/item/circuitboard/machine/chem_heater,
+/obj/item/circuitboard/machine/chem_heater,
+/obj/item/circuitboard/machine/chem_master/advanced,
+/obj/item/circuitboard/machine/chem_master/advanced,
+/obj/item/circuitboard/machine/chem_master/advanced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
 	light_power = 3;
 	light_range = 4
+	},
+/area/f13/underground/cave)
+"Fn" = (
+/obj/machinery/power/emitter/anchored,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "Fo" = (
@@ -6712,6 +7212,7 @@
 	},
 /area/f13/underground/cave)
 "Fu" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side,
 /area/f13/underground/cave)
 "Fw" = (
@@ -6725,6 +7226,7 @@
 /mob/living/simple_animal/hostile/handy/sentrybot{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -6779,6 +7281,7 @@
 /area/f13/underground/cave)
 "FW" = (
 /obj/machinery/vending/cola,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 8
 	},
@@ -6799,6 +7302,7 @@
 	},
 /area/f13/underground/cave)
 "Ga" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 8
 	},
@@ -6834,8 +7338,12 @@
 /area/f13/underground/cave)
 "Gf" = (
 /obj/structure/table,
-/obj/item/bodypart/head/robot,
-/obj/item/bodypart/chest/robot,
+/obj/item/storage/belt/utility/full,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -6904,6 +7412,11 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "Gu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner,
 /area/f13/underground/cave)
 "Gx" = (
@@ -6913,6 +7426,11 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"Gy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white/corner,
 /area/f13/underground/cave)
 "GB" = (
 /obj/structure/flora/grass/jungle,
@@ -6969,6 +7487,7 @@
 /area/space)
 "GM" = (
 /obj/machinery/suit_storage_unit/radsuit,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 5;
 	icon_state = "yellowsiding"
@@ -7006,11 +7525,9 @@
 	},
 /area/f13/underground/cave)
 "GV" = (
-/obj/machinery/workbench/pa,
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
+/obj/structure/table,
+/obj/item/clothing/head/helmet/f13/power_armor/t45b,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -7030,6 +7547,21 @@
 "Ha" = (
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/water,
+/area/f13/underground/cave)
+"Hb" = (
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	id = "DungeonRange";
+	pixel_x = 32
+	},
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "Hp" = (
 /obj/structure/flora/tree/jungle/small,
@@ -7054,6 +7586,7 @@
 	},
 /area/f13/underground/cave)
 "Hw" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 6
 	},
@@ -7098,8 +7631,8 @@
 /area/f13/underground/cave)
 "HF" = (
 /obj/structure/lattice,
-/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "HH" = (
@@ -7113,11 +7646,12 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
 "HL" = (
-/mob/living/simple_animal/hostile/handy/gutsy{
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/f13{
-	dir = 4;
+	dir = 1;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
@@ -7157,6 +7691,7 @@
 "HS" = (
 /obj/structure/table,
 /obj/item/gun/ballistic/automatic/marksman/sniper,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -7212,6 +7747,7 @@
 	pixel_y = 16
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "Il" = (
@@ -7232,6 +7768,14 @@
 	icon_state = "grass3"
 	},
 /area/f13/underground/cave)
+"Iw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "IB" = (
 /obj/structure/destructible/tribal_torch,
 /turf/open/floor/f13/wood,
@@ -7247,6 +7791,14 @@
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"IF" = (
+/obj/structure/table,
+/obj/item/stack/sheet/metal/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "IG" = (
@@ -7304,7 +7856,17 @@
 /obj/structure/flora/ausbushes,
 /turf/open/water,
 /area/f13/underground/cave)
+"Jb" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/super,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "Jf" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 5
 	},
@@ -7374,6 +7936,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/underground/cave)
 "Jy" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "Jz" = (
@@ -7383,13 +7946,19 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"JD" = (
-/obj/machinery/porta_turret/xray{
-	faction = list("hostile")
-	},
+"JC" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /turf/open/floor/f13{
 	icon_state = "yellowsiding"
 	},
+/area/f13/underground/cave)
+"JD" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "JH" = (
 /obj/structure/flora/tree/jungle/small,
@@ -7459,6 +8028,7 @@
 	icon_state = "shuttle_chair";
 	name = "prewar lounge chair"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "JT" = (
@@ -7468,6 +8038,7 @@
 	},
 /area/f13/underground/cave)
 "JU" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
 	dir = 8;
 	icon_state = "redcorner"
@@ -7475,13 +8046,18 @@
 /area/f13/underground/cave)
 "JV" = (
 /obj/machinery/vending/wardrobe/robo_wardrobe,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "JW" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
+/mob/living/simple_animal/hostile/ghoul/reaver{
+	faction = list("hostile");
+	health = 500
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "JZ" = (
@@ -7507,6 +8083,7 @@
 /area/f13/underground/cave)
 "Ki" = (
 /obj/machinery/power/grounding_rod,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -7550,6 +8127,7 @@
 	},
 /area/f13/underground/cave)
 "Kv" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 10
 	},
@@ -7591,10 +8169,28 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"KI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
+	dir = 8
+	},
+/area/f13/underground/cave)
 "KJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 1
 	},
+/area/f13/underground/cave)
+"KK" = (
+/obj/structure/table,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
+/obj/item/book/granter/crafting_recipe/gunsmith_four,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "KN" = (
 /obj/structure/lattice,
@@ -7619,6 +8215,7 @@
 /area/f13/underground/cave)
 "KT" = (
 /obj/structure/lattice/clockwork,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "KW" = (
@@ -7707,6 +8304,7 @@
 	},
 /area/f13/underground/cave)
 "Lq" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "rampdowntop"
@@ -7717,6 +8315,13 @@
 /obj/structure/glowshroom,
 /turf/open/floor/f13{
 	icon_state = "grass3"
+	},
+/area/f13/underground/cave)
+"Lt" = (
+/obj/machinery/workbench/advanced,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "Lv" = (
@@ -7735,6 +8340,15 @@
 	icon_state = "floordirty"
 	},
 /area/f13/underground/cave)
+"LF" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "LG" = (
 /obj/effect/decal/remains/human,
 /obj/structure/flora/ausbushes/brflowers,
@@ -7744,7 +8358,9 @@
 	},
 /area/f13/underground/cave)
 "LJ" = (
-/obj/machinery/rnd/server/vault,
+/obj/structure/displaycase/trophy,
+/obj/item/stock_parts/cell/infinite/abductor,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -7781,9 +8397,13 @@
 /area/f13/underground/cave)
 "Mb" = (
 /obj/structure/table,
-/obj/item/stock_parts/cell/super,
+/obj/machinery/computer/terminal{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 1;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "Md" = (
@@ -7816,7 +8436,18 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"Mn" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("hostile")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "Mo" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 10
 	},
@@ -7835,6 +8466,7 @@
 "Mr" = (
 /obj/structure/target_stake,
 /obj/item/target,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "redmark"
 	},
@@ -7849,6 +8481,7 @@
 /area/f13/underground/cave)
 "Mt" = (
 /obj/machinery/vending/tool,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
@@ -7867,7 +8500,16 @@
 	},
 /area/f13/underground/cave)
 "Mx" = (
-/obj/machinery/rnd/production/protolathe,
+/obj/structure/table/abductor,
+/obj/item/circuitboard/machine/limbgrower,
+/obj/item/circuitboard/machine/limbgrower,
+/obj/item/circuitboard/machine/plantgenes,
+/obj/item/circuitboard/machine/plantgenes,
+/obj/item/circuitboard/machine/reagentgrinder,
+/obj/item/circuitboard/machine/reagentgrinder,
+/obj/item/circuitboard/machine/recycler,
+/obj/item/circuitboard/machine/sheetifier,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -7929,6 +8571,7 @@
 	dir = 4
 	},
 /obj/machinery/pool/drain,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -7943,6 +8586,7 @@
 /area/f13/underground/cave)
 "MO" = (
 /obj/machinery/vending/robotics,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
@@ -7975,6 +8619,11 @@
 	},
 /area/f13/underground/cave)
 "MY" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 8
 	},
@@ -7996,15 +8645,13 @@
 	},
 /area/f13/underground/cave)
 "Nc" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("hostile")
 	},
+/obj/machinery/recharge_station/fullupgrade,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowsiding"
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "Nd" = (
@@ -8109,6 +8756,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stock_parts/cell/ammo/ec,
 /obj/item/stock_parts/cell/ammo/ec,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 1
 	},
@@ -8168,18 +8816,24 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "NO" = (
-/mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("hostile")
+/obj/structure/table,
+/obj/item/assembly/flash/cyborg,
+/obj/item/assembly/flash/cyborg,
+/obj/item/assembly/flash/cyborg,
+/obj/item/assembly/flash/cyborg,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
 	},
-/obj/machinery/recharge_station/fullupgrade,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "NP" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/super,
+/obj/machinery/mecha_part_fabricator,
+/obj/item/robot_suit,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -8190,6 +8844,7 @@
 	dir = 8;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "yellowsiding"
@@ -8206,9 +8861,20 @@
 /area/f13/underground/cave)
 "NX" = (
 /obj/machinery/vending/tool,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 8;
 	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
+"Oa" = (
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "Oc" = (
@@ -8230,6 +8896,7 @@
 /area/f13/underground/cave)
 "Oe" = (
 /obj/structure/showcase/horrific_experiment,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -8291,6 +8958,7 @@
 	id = "DungeonRange";
 	pixel_x = 32
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 6
 	},
@@ -8359,6 +9027,8 @@
 /area/f13/underground/cave)
 "OH" = (
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/bundle/f13/aer9,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 1
 	},
@@ -8391,11 +9061,31 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
+"OS" = (
+/obj/structure/table,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/mineral/titanium/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
+/area/f13/underground/cave)
 "OT" = (
 /obj/machinery/hydroponics/constructable,
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"OU" = (
+/obj/structure/table,
+/obj/item/bodypart/r_arm/robot,
+/obj/item/bodypart/r_leg/robot,
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "OV" = (
@@ -8413,22 +9103,29 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"Pa" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
+"OZ" = (
+/obj/structure/table,
+/obj/item/crafting/servo,
+/obj/item/crafting/servo,
+/obj/item/stack/crafting/goodparts/five,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
+/area/f13/underground/cave)
+"Pa" = (
 /obj/machinery/light/small{
 	dir = 4;
 	light_color = "red"
 	},
-/turf/open/floor/circuit/f13_red/off,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("hostile")
+	},
+/turf/open/floor/circuit/f13_red,
 /area/f13/underground/cave)
 "Pf" = (
 /obj/machinery/workbench/advanced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -8438,12 +9135,14 @@
 /area/f13/underground/cave)
 "Ph" = (
 /obj/machinery/vending/robotics,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "Pj" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "rampdowntop"
@@ -8554,18 +9253,20 @@
 	},
 /area/f13/underground/cave)
 "PK" = (
-/obj/machinery/vending/wallmed{
-	pixel_x = 30
-	},
+/obj/structure/table,
+/obj/item/bodypart/head/robot,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "PL" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
+/obj/structure/table,
+/obj/item/bodypart/l_arm/robot,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/underground/cave)
 "PM" = (
 /obj/structure/barricade/bars,
@@ -8595,6 +9296,7 @@
 /obj/structure/fence/handrail{
 	pixel_y = -9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "PQ" = (
@@ -8620,7 +9322,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "PV" = (
-/obj/machinery/autolathe,
+/obj/structure/table,
+/obj/item/bodypart/r_arm/robot,
+/obj/item/bodypart/l_leg/robot,
+/obj/item/bodypart/chest/robot,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -8654,8 +9364,10 @@
 /area/f13/underground/cave)
 "PZ" = (
 /obj/structure/table,
+/obj/item/storage/belt/utility/full,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowsiding"
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "Qc" = (
@@ -8663,6 +9375,7 @@
 	dir = 8
 	},
 /obj/machinery/pool/drain,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "yellowsiding"
@@ -8690,7 +9403,8 @@
 	},
 /area/f13/underground/cave)
 "Qh" = (
-/obj/structure/chair/f13chair2,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "Qi" = (
@@ -8706,12 +9420,12 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
 "Qk" = (
-/obj/machinery/porta_turret/xray{
-	faction = list("hostile")
+/obj/structure/window/reinforced/fulltile/indestructable{
+	can_be_unanchored = 0
 	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/structure/grille/indestructable,
+/obj/machinery/light/floor,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "Ql" = (
 /obj/structure/rack,
@@ -8768,6 +9482,10 @@
 	},
 /area/f13/underground/cave)
 "QA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/porta_turret/xray{
+	faction = list("hostile")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 4
 	},
@@ -8780,14 +9498,10 @@
 	},
 /area/f13/underground/cave)
 "QE" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
 	},
-/turf/open/floor/circuit/f13_red/off,
+/turf/open/floor/circuit/f13_red,
 /area/f13/underground/cave)
 "QF" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -8822,8 +9536,8 @@
 	},
 /area/f13/underground/cave)
 "QN" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
 	faction = list("hostile")
 	},
 /turf/open/floor/f13{
@@ -8854,6 +9568,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "QU" = (
@@ -8872,10 +9587,12 @@
 	},
 /area/f13/underground/cave)
 "QZ" = (
-/obj/effect/decal/cleanable/robot_debris/down,
-/turf/open/floor/f13{
-	icon_state = "yellowsiding"
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "Rb" = (
 /mob/living/simple_animal/hostile/supermutant/meleemutant,
@@ -8912,6 +9629,16 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/underground/cave)
+"Rl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light,
+/mob/living/simple_animal/hostile/handy/sentrybot{
+	faction = list("hostile")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
+	dir = 1
+	},
+/area/f13/underground/cave)
 "Rm" = (
 /mob/living/simple_animal/hostile/jungle/leaper,
 /turf/open/water,
@@ -8929,6 +9656,7 @@
 	dir = 1;
 	light_color = "red"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 1;
 	icon_state = "red"
@@ -8960,6 +9688,7 @@
 /area/f13/underground/cave)
 "Rt" = (
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "Ru" = (
@@ -8991,6 +9720,7 @@
 /obj/structure/fence/handrail{
 	pixel_y = -9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "Rz" = (
@@ -9054,10 +9784,12 @@
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
 "RK" = (
-/mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("hostile")
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
 	},
-/turf/open/floor/f13,
 /area/f13/underground/cave)
 "RL" = (
 /obj/structure/flora/ausbushes/fernybush,
@@ -9067,24 +9799,21 @@
 	},
 /area/f13/underground/cave)
 "RN" = (
-/mob/living/simple_animal/hostile/handy/assaultron{
-	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis. This one seems sleeker and more dangerous, with a slick red paintjob.";
-	faction = list("hostile");
-	health = 800;
-	name = "redline assaultron";
-	rapid_melee = 2
-	},
 /obj/machinery/light/small{
 	dir = 8;
 	light_color = "red"
 	},
-/turf/open/floor/circuit/f13_red/off,
+/mob/living/simple_animal/hostile/handy/assaultron{
+	faction = list("hostile")
+	},
+/turf/open/floor/circuit/f13_red,
 /area/f13/underground/cave)
 "RP" = (
 /obj/effect/gibspawner/human,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "RQ" = (
@@ -9143,6 +9872,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
+"Sd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "Sg" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -9152,8 +9891,10 @@
 	},
 /area/f13/underground/cave)
 "Sh" = (
-/obj/structure/table,
-/obj/item/bodypart/l_arm/robot,
+/obj/machinery/vending/wallmed{
+	pixel_x = -30
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -9173,6 +9914,7 @@
 "Sl" = (
 /obj/machinery/computer/terminal,
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "So" = (
@@ -9335,12 +10077,11 @@
 	},
 /area/f13/underground/cave)
 "SW" = (
-/obj/structure/table,
-/obj/item/bodypart/l_arm/robot,
-/obj/item/bodypart/l_leg/robot,
-/obj/item/bodypart/chest/robot,
+/obj/effect/decal/cleanable/robot_debris/down,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 1;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "SY" = (
@@ -9371,9 +10112,20 @@
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/water,
 /area/f13/underground/cave)
+"Tl" = (
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "yellowsiding"
+	},
+/area/f13/underground/cave)
 "To" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/glasses/hud/health/prescription,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "Tp" = (
@@ -9398,14 +10150,20 @@
 	},
 /area/f13/underground/cave)
 "Tv" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	extra_projectiles = 1;
-	faction = list("hostile")
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/side,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "Tw" = (
-/obj/machinery/shieldgen,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "yellowsiding"
@@ -9507,11 +10265,10 @@
 	},
 /area/f13/underground/cave)
 "TO" = (
-/obj/structure/table,
-/obj/item/stock_parts/cell/super,
-/obj/machinery/light/small{
-	light_color = "red"
+/obj/machinery/vending/wallmed{
+	pixel_x = 30
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -9529,14 +10286,10 @@
 	},
 /area/f13/underground/cave)
 "TV" = (
-/obj/machinery/ammobench,
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
+/obj/structure/table,
+/obj/machinery/computer/terminal,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "TX" = (
 /obj/structure/flora/tree/jungle/small,
@@ -9629,6 +10382,7 @@
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
 /obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/underground/cave)
 "Uy" = (
@@ -9648,6 +10402,10 @@
 	},
 /area/f13/underground/cave)
 "UB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/porta_turret/xray{
+	faction = list("hostile")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 8
 	},
@@ -9695,8 +10453,9 @@
 	},
 /area/f13/underground/cave)
 "UN" = (
+/obj/item/storage/belt/utility/full,
 /obj/structure/table,
-/obj/item/screwdriver/power,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -9712,6 +10471,13 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"UQ" = (
+/obj/effect/gibspawner/human,
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
 "UR" = (
 /obj/structure/closet/wardrobe,
 /obj/item/shovel/spade,
@@ -9723,22 +10489,28 @@
 	},
 /area/f13/underground/cave)
 "UT" = (
-/obj/machinery/workbench/pa,
-/obj/item/clothing/suit/armor/f13/power_armor/t45b,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	dir = 10;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "UX" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 9
 	},
 /area/f13/underground/cave)
 "UY" = (
-/obj/structure/table,
-/obj/item/clothing/head/helmet/f13/power_armor/t45b,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/gutsy{
+	faction = list("hostile")
+	},
 /turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "UZ" = (
@@ -9753,6 +10525,7 @@
 /obj/machinery/porta_turret/xray{
 	faction = list("hostile")
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 10
 	},
@@ -9769,6 +10542,7 @@
 /obj/structure/fence/handrail{
 	pixel_y = -9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
 "Vd" = (
@@ -9780,9 +10554,12 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "Vf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 4
 	},
@@ -9871,15 +10648,6 @@
 	icon_state = "bar"
 	},
 /area/f13/underground/cave)
-"VF" = (
-/obj/machinery/doppler_array,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "bcircuit1";
-	light_color = "#0076bc";
-	light_power = 3;
-	light_range = 4
-	},
-/area/f13/underground/cave)
 "VG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -9898,6 +10666,16 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/f13{
 	icon_state = "grass2"
+	},
+/area/f13/underground/cave)
+"VN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "VP" = (
@@ -9963,6 +10741,7 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "Wn" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/side{
 	dir = 5
 	},
@@ -10004,21 +10783,18 @@
 /area/f13/underground/cave)
 "Wx" = (
 /obj/structure/table,
-/obj/machinery/computer/terminal{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	dir = 1;
-	icon_state = "yellowsiding"
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13,
 /area/f13/underground/cave)
 "Wy" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/underground/cave)
 "Wz" = (
 /obj/structure/showcase/horrific_experiment{
 	icon_state = "pod_1"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -10055,6 +10831,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
+	},
+/area/f13/underground/cave)
+"WG" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
 	},
 /area/f13/underground/cave)
 "WH" = (
@@ -10124,10 +10907,12 @@
 	},
 /area/f13/underground/cave)
 "Xc" = (
-/obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
 /turf/open/floor/f13,
 /area/f13/underground/cave)
 "Xe" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
 	dir = 4
 	},
@@ -10169,8 +10954,8 @@
 	},
 /area/f13/underground/cave)
 "Xx" = (
-/obj/item/book/granter/crafting_recipe/blueprint/aer9,
 /obj/structure/table/reinforced,
+/obj/item/storage/belt/durathread,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
 	dir = 4
 	},
@@ -10194,10 +10979,12 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "XC" = (
 /obj/machinery/suit_storage_unit/radsuit,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -10211,10 +10998,10 @@
 	},
 /area/f13/underground/cave)
 "XE" = (
-/obj/structure/destructible/tribal_torch/lit,
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/robot_debris/down,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "floordirty"
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "XF" = (
@@ -10233,6 +11020,7 @@
 /area/f13/underground/cave)
 "XH" = (
 /obj/structure/table/abductor,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -10278,6 +11066,17 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"XU" = (
+/obj/structure/table,
+/obj/item/stock_parts/cell/super,
+/obj/machinery/light/small{
+	light_color = "red"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/underground/cave)
 "XY" = (
 /obj/structure/flora/grass/jungle,
 /obj/effect/spawner/lootdrop/trash,
@@ -10306,6 +11105,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
+	},
+/area/f13/underground/cave)
+"Yf" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
 "Yg" = (
@@ -10357,6 +11164,7 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "Yq" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/corner,
 /area/f13/underground/cave)
 "Ys" = (
@@ -10368,6 +11176,7 @@
 	},
 /area/f13/underground/cave)
 "Yt" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	dir = 4;
 	icon_state = "rampdowntop"
@@ -10456,9 +11265,25 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/underground/cave)
+"YO" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
 "YQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "engine"
+	},
+/area/f13/underground/cave)
+"YU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light,
+/mob/living/simple_animal/hostile/handy/sentrybot{
+	faction = list("hostile")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white/corner{
+	dir = 4
 	},
 /area/f13/underground/cave)
 "YV" = (
@@ -10468,7 +11293,8 @@
 	},
 /area/f13/underground/cave)
 "YW" = (
-/obj/machinery/implantchair/genepurge,
+/obj/machinery/sleeper,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "bcircuit1";
 	light_color = "#0076bc";
@@ -10532,8 +11358,8 @@
 	},
 /area/f13/underground/cave)
 "Zq" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/meleemutant,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
@@ -10547,8 +11373,8 @@
 	},
 /area/f13/underground/cave)
 "Zt" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -10566,6 +11392,15 @@
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/f13{
 	icon_state = "grass3"
+	},
+/area/f13/underground/cave)
+"Zz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/robobrain/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
 	},
 /area/f13/underground/cave)
 "ZB" = (
@@ -10609,10 +11444,17 @@
 	},
 /area/f13/underground/cave)
 "ZK" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/circuit/f13_red/off,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/handy/securitron/nsb{
+	faction = list("hostile")
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "yellowsiding"
+	},
 /area/f13/underground/cave)
 "ZM" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
 	dir = 4;
 	icon_state = "redcorner"
@@ -11694,17 +12536,17 @@ aa
 aa
 aa
 pX
-HO
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-dN
+cq
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+fJ
 pX
 aa
 aa
@@ -11952,16 +12794,16 @@ aa
 aa
 pX
 oO
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-Ao
-dR
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+eD
+eM
 pX
 aa
 aa
@@ -12217,8 +13059,8 @@ pX
 pX
 pX
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -12396,7 +13238,7 @@ jm
 og
 og
 cU
-lz
+og
 Kr
 cU
 jm
@@ -12405,11 +13247,11 @@ og
 og
 cU
 og
-lz
+fu
 bh
 og
 aC
-lz
+og
 bh
 og
 og
@@ -12474,8 +13316,8 @@ lx
 nM
 Ww
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -12731,8 +13573,8 @@ Mo
 lf
 nM
 pX
-lU
-dR
+cI
+eM
 pX
 aa
 aa
@@ -12901,10 +13743,10 @@ BH
 oI
 oI
 BH
-oK
+oI
 oI
 oD
-Ys
+Aq
 Rv
 sZ
 cU
@@ -12919,11 +13761,11 @@ cU
 nR
 MG
 MG
-hn
+MG
 Rv
 sZ
 sZ
-YX
+Da
 Rv
 sZ
 sZ
@@ -12988,8 +13830,8 @@ Mo
 Mo
 lx
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -13233,20 +14075,20 @@ Ny
 rj
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+lS
+eD
+eD
+eD
+eD
+eD
+eD
+lS
 fr
 fr
 Mo
 pX
-QI
-dR
+br
+eM
 pX
 aa
 pX
@@ -13254,10 +14096,10 @@ pX
 pX
 aa
 pX
-HO
-zc
-zc
-dN
+cq
+eA
+eA
+fJ
 pX
 aa
 aa
@@ -13490,20 +14332,20 @@ pX
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -13511,10 +14353,10 @@ YM
 pX
 pX
 pX
-QI
-Ao
-Ao
-dR
+Tv
+eD
+eD
+eM
 pX
 aa
 aa
@@ -13747,31 +14589,31 @@ pX
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
 Co
-zc
-zc
-zc
-dN
+eA
+eA
+eA
+fJ
 pX
-QI
-Ao
-Ao
-dR
+br
+eD
+eD
+eM
 pX
 aa
 aa
@@ -13924,10 +14766,10 @@ KC
 Du
 aa
 cG
-oK
+oI
 BH
 oI
-oI
+tJ
 ax
 oI
 oI
@@ -13995,40 +14837,40 @@ aa
 pX
 pX
 Co
-zc
-zc
-zc
-zc
-zc
+eA
+eA
+eA
+eA
+eA
 sJ
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 sJ
-QI
-Ao
-Ao
-Ao
-dR
+br
+eD
+eD
+eD
+eM
 sJ
-QI
-Ao
-Ao
-dR
+br
+eD
+jM
+eM
 pX
 aa
 aa
@@ -14187,9 +15029,9 @@ af
 af
 aH
 af
-oK
+oI
 oD
-pA
+YO
 nR
 Kj
 oD
@@ -14252,40 +15094,40 @@ aa
 pX
 SG
 Fy
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
 zz
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
-QI
-Ao
-Ao
-Ao
-dR
+br
+eD
+eD
+eD
+eM
 pX
-QI
-Ao
-Ao
-dR
+br
+eD
+eD
+eM
 pX
 aa
 aa
@@ -14457,7 +15299,7 @@ oD
 AC
 Kj
 Kj
-pA
+Kj
 cG
 bO
 bX
@@ -14509,40 +15351,40 @@ aa
 pX
 pX
 lU
-Ao
-fR
-fR
-fR
-fR
+eD
+gk
+gk
+gk
+gk
 sJ
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 sJ
-QI
-Ao
-Ao
-Ao
-dR
+br
+eD
+eD
+eD
+eM
 sJ
-QI
-Ao
-Ao
-dR
+br
+eD
+jM
+eM
 pX
 aa
 aa
@@ -14709,7 +15551,7 @@ Kj
 oD
 ii
 MG
-ec
+JC
 oD
 Kj
 Kj
@@ -14765,8 +15607,8 @@ aa
 aa
 aa
 ze
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -14775,31 +15617,31 @@ pX
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
 xP
-fR
-fR
-fR
-nW
+gk
+gk
+gk
+fF
 pX
-QI
-Ao
-Ao
-dR
+br
+eD
+eD
+eM
 pX
 aa
 aa
@@ -14957,7 +15799,7 @@ Kj
 Kj
 nR
 zJ
-Kj
+YO
 Kj
 aN
 Kj
@@ -14966,9 +15808,9 @@ nR
 oD
 UM
 Uf
-NK
+gj
 oD
-pA
+YO
 Kj
 nR
 Kj
@@ -15022,8 +15864,8 @@ aa
 aa
 aa
 Ny
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -15032,20 +15874,20 @@ pX
 rD
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -15053,10 +15895,10 @@ YM
 pX
 pX
 pX
-QI
-Ao
-Ao
-dR
+Tv
+eD
+eD
+eM
 pX
 aa
 aa
@@ -15214,12 +16056,12 @@ cU
 cU
 cU
 aJ
-pA
+Kj
 Kj
 oD
 Kj
 Kj
-pA
+YO
 oD
 nR
 MG
@@ -15279,8 +16121,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -15289,20 +16131,20 @@ Ny
 Jf
 rD
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+lS
+eD
+eD
+eD
+eD
+eD
+eD
+lS
 fr
 fr
 fr
 pX
-QI
-dR
+br
+eM
 pX
 aa
 pX
@@ -15310,10 +16152,10 @@ pX
 pX
 aa
 pX
-CV
-fR
-fR
-nW
+bH
+gk
+gk
+fF
 pX
 aa
 aa
@@ -15536,8 +16378,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -15558,8 +16400,8 @@ jy
 jy
 lx
 pX
-QI
-QN
+br
+eM
 pX
 aa
 aa
@@ -15728,7 +16570,7 @@ cU
 sd
 cU
 aK
-pA
+Kj
 ve
 oD
 Kj
@@ -15793,8 +16635,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -15815,8 +16657,8 @@ jy
 lf
 nM
 pX
-QI
-dR
+br
+QN
 pX
 aa
 aa
@@ -16050,8 +16892,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 pX
 aa
@@ -16072,8 +16914,8 @@ lx
 nM
 Ww
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -16249,7 +17091,7 @@ pC
 KN
 dj
 og
-og
+Iw
 og
 og
 KN
@@ -16307,8 +17149,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 KW
 pX
 aa
@@ -16329,8 +17171,8 @@ pX
 pX
 pX
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -16564,8 +17406,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 pX
 aa
@@ -16577,17 +17419,17 @@ aa
 aa
 aa
 pX
-HO
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-Ao
-dR
+cq
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eD
+eM
 pX
 aa
 aa
@@ -16757,7 +17599,7 @@ rd
 rd
 aM
 Kj
-pA
+xl
 oD
 bc
 KY
@@ -16821,8 +17663,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -16835,16 +17677,16 @@ aa
 aa
 pX
 oO
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-nW
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+fF
 pX
 aa
 aa
@@ -17078,8 +17920,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 Ny
 aa
 aa
@@ -17335,8 +18177,8 @@ aa
 aa
 aa
 pX
-CV
-nW
+bH
+fF
 pX
 aa
 aa
@@ -17534,7 +18376,7 @@ oD
 oD
 oD
 Rb
-EB
+wQ
 oD
 pC
 wQ
@@ -17785,7 +18627,7 @@ rd
 rd
 aO
 KN
-Bd
+rd
 oD
 KN
 KN
@@ -17797,7 +18639,7 @@ MG
 Uf
 og
 og
-Li
+og
 KN
 cG
 KN
@@ -17849,8 +18691,8 @@ aa
 aa
 pX
 pX
-HO
-dN
+cq
+fJ
 pX
 aa
 pX
@@ -18041,7 +18883,7 @@ rd
 rd
 ay
 rd
-rd
+ef
 aY
 oD
 KN
@@ -18106,7 +18948,7 @@ aa
 aa
 pX
 SG
-QI
+br
 QN
 pX
 pX
@@ -18304,12 +19146,12 @@ oD
 UM
 MG
 nR
-KN
+yC
 oI
 oI
 bq
 oI
-Af
+KN
 oI
 Uf
 KN
@@ -18363,8 +19205,8 @@ aa
 aa
 pX
 TZ
-QI
-dR
+br
+eM
 zB
 HO
 zc
@@ -18389,9 +19231,9 @@ zc
 zc
 dN
 zB
-HO
-zc
-dN
+cq
+eA
+fJ
 pX
 aa
 aa
@@ -18551,7 +19393,7 @@ aa
 aa
 cG
 ao
-Gm
+KN
 rd
 rd
 ay
@@ -18620,8 +19462,8 @@ aa
 aa
 pX
 TZ
-QI
-dR
+br
+eM
 zB
 CV
 fR
@@ -18646,9 +19488,9 @@ fR
 fR
 nW
 zB
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -18659,7 +19501,7 @@ aa
 aa
 aa
 pX
-YM
+pX
 pX
 aa
 aa
@@ -18808,7 +19650,7 @@ aa
 aa
 cG
 ap
-zF
+xx
 KN
 rd
 KN
@@ -18817,7 +19659,7 @@ aU
 oD
 Po
 HN
-XE
+MG
 MG
 JN
 Uf
@@ -18826,7 +19668,7 @@ MG
 MG
 Uf
 MG
-Af
+KN
 cG
 UM
 MG
@@ -18877,8 +19719,8 @@ aa
 aa
 pX
 SG
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -18903,9 +19745,9 @@ pX
 pX
 pX
 pX
-lU
-Ao
-dR
+jr
+eD
+eM
 pX
 aa
 aa
@@ -18916,7 +19758,7 @@ aa
 aa
 pX
 pX
-Qk
+YM
 pX
 pX
 aa
@@ -19076,10 +19918,10 @@ KN
 KN
 KN
 sZ
-GS
 sZ
-GS
-br
+sZ
+sZ
+sZ
 sZ
 sZ
 GS
@@ -19134,8 +19976,8 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 rj
 Ga
@@ -19160,9 +20002,9 @@ Ga
 Ga
 Va
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -19172,7 +20014,7 @@ aa
 aa
 pX
 pX
-Gu
+Gy
 QA
 Vf
 pX
@@ -19360,11 +20202,11 @@ cG
 aa
 cG
 ZS
-xC
+dI
 xC
 ih
 Al
-dI
+xC
 ZS
 oD
 lC
@@ -19373,7 +20215,7 @@ GY
 ZS
 oD
 ih
-eQ
+xC
 KN
 dc
 cG
@@ -19391,35 +20233,35 @@ aa
 aa
 pX
 pX
-lU
-dR
+cI
+eM
 sJ
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -19428,7 +20270,7 @@ aa
 aa
 pX
 pX
-Gu
+Gy
 Hw
 Jy
 Wn
@@ -19580,14 +20422,14 @@ aa
 cG
 iX
 zF
-BP
+Gh
 xF
 xF
 xF
 xF
 xF
 xF
-BP
+xF
 xF
 oD
 sS
@@ -19617,8 +20459,8 @@ cG
 aa
 cG
 lC
-dI
-eQ
+xC
+xC
 xC
 KN
 KE
@@ -19626,11 +20468,11 @@ dc
 oD
 AS
 HF
-HF
+KN
 dc
 oD
 lC
-KE
+BN
 KN
 AS
 cG
@@ -19648,8 +20490,8 @@ aa
 aa
 pX
 YM
-QI
-dR
+br
+eM
 pX
 Jf
 Xe
@@ -19674,9 +20516,9 @@ en
 Xe
 uo
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -19690,7 +20532,7 @@ Jy
 Jy
 Jy
 Wn
-Vf
+YU
 pX
 pX
 aa
@@ -19839,8 +20681,8 @@ aq
 nR
 og
 og
-lz
 og
+rg
 og
 dj
 og
@@ -19860,12 +20702,12 @@ KN
 KN
 jd
 oD
-Kj
-Gm
+YO
 KN
 KN
-AG
-Kj
+KN
+KN
+xl
 cG
 cx
 cC
@@ -19873,7 +20715,7 @@ cE
 cG
 aa
 cG
-dI
+xC
 KN
 KN
 KN
@@ -19882,13 +20724,13 @@ GY
 KN
 oD
 KE
-eQ
+xC
 Ru
 KN
 oD
 KN
 KN
-eQ
+xC
 nl
 cG
 aa
@@ -19905,35 +20747,35 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
-YM
-YM
-YM
-YM
+gr
+gr
+gr
+gr
 pX
-YM
-YM
-YM
-YM
+gr
+gr
+gr
+gr
 pX
-YM
-YM
-YM
-YM
+gr
+gr
+gr
+gr
 pX
-YM
-YM
-YM
-YM
+zz
+zz
+zz
+zz
 pX
 sJ
 pX
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 pX
 zB
@@ -20095,7 +20937,7 @@ cG
 zF
 KN
 KN
-KN
+yC
 wH
 KN
 KN
@@ -20106,7 +20948,7 @@ xF
 oD
 UM
 KN
-Gm
+yC
 oD
 oL
 Le
@@ -20120,9 +20962,9 @@ ch
 Kj
 KN
 KN
-PL
 KN
-Kj
+KN
+xl
 cG
 cy
 VG
@@ -20136,7 +20978,7 @@ KN
 xC
 KN
 KN
-eQ
+dI
 oD
 xC
 Ru
@@ -20162,21 +21004,21 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 rj
 Ga
 Ga
-Ga
+gq
 er
+gq
 Ga
-Ga
-Ga
+gq
 Ga
 fa
 Ga
-Ga
+gq
 Ga
 Mo
 pX
@@ -20185,17 +21027,17 @@ HS
 pc
 ml
 tZ
-zc
+eA
 NS
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 iC
 tZ
-zc
+eA
 tZ
-dN
+fJ
 iC
 Fu
 Jy
@@ -20361,7 +21203,7 @@ be
 KN
 iv
 oD
-ii
+Yf
 MG
 gj
 oD
@@ -20374,12 +21216,12 @@ UM
 KN
 gj
 oD
-Kj
+YO
 KN
-AG
-cq
 KN
-Kj
+wH
+KN
+xl
 cG
 qX
 VG
@@ -20419,40 +21261,40 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 Ro
-cI
-cI
-Ao
-Ao
-cI
-cI
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 Mr
-QI
+br
 fr
 kT
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-vv
+br
+eD
+eD
+eD
+eD
+eD
+yB
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 Bv
-Ao
-Ao
-Ao
-dR
+eD
+eD
+eD
+eM
 Bv
 Fu
 Jy
@@ -20608,7 +21450,7 @@ aa
 cG
 aq
 MG
-hn
+MG
 MG
 aP
 sm
@@ -20676,40 +21518,40 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 Mr
-QI
-Ao
-Ao
+br
+eD
+eD
 fr
 kT
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
+br
+eD
+eD
+eD
+eD
+eD
 yB
 pX
-QI
+br
+eD
+eM
 Ao
-dR
-Ao
-Ao
-Ao
-Ao
-dR
+eD
+eD
+eD
+eM
 Ao
 Fu
 Jy
@@ -20933,40 +21775,40 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 rD
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
 Mr
-xi
-Ao
-Ao
-Ao
-Ao
+br
+eD
+eD
+eD
+eD
 fr
 kT
-QI
-Ao
+br
+eD
 rE
 tx
-Ao
-Ao
-fy
+JD
+eD
+yB
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 iC
 nC
-fR
+gk
 nC
-nW
+fF
 iC
 Fu
 Jy
@@ -20992,13 +21834,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+pX
+pX
+pX
+pX
+pX
+pX
 aa
 aa
 aa
@@ -21124,13 +21966,13 @@ iX
 KN
 KN
 KN
-PL
 KN
 KN
 KN
 KN
 KN
-xF
+KN
+WG
 oD
 UM
 KN
@@ -21138,17 +21980,17 @@ jd
 oD
 oL
 KN
-Le
-bH
+Zt
+oL
 cG
 UM
 MG
 gj
 oD
 Di
-AC
+Kj
 KN
-KN
+yC
 Di
 cu
 cG
@@ -21190,35 +22032,35 @@ aa
 aa
 pX
 pX
-QI
-dR
+br
+eM
 pX
 rD
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
 Mr
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+br
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 kT
-QI
-Ao
+br
+eD
 sb
 Xc
-Ao
-Ao
+eD
+eD
 DD
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 pX
 zB
@@ -21249,13 +22091,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+CE
+PZ
+LF
+OZ
+lA
+pX
 aa
 aa
 aa
@@ -21380,12 +22222,12 @@ cG
 aq
 sZ
 sZ
-YX
+ny
 sZ
 oV
 sZ
 sZ
-YX
+Da
 ik
 xF
 oD
@@ -21407,7 +22249,7 @@ KN
 KN
 cs
 KN
-pA
+Kj
 cG
 qr
 MG
@@ -21447,35 +22289,35 @@ aa
 aa
 pX
 YM
-QI
-dR
+br
+eM
 pX
 rD
-Ao
-Ao
+eD
+eD
 Mr
-QI
-Ao
-cI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
+br
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 kT
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
+br
+eD
+eD
+eD
+eD
+eD
 fV
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -21489,7 +22331,7 @@ Jy
 Jy
 Jy
 UX
-KJ
+Rl
 pX
 pX
 aa
@@ -21506,13 +22348,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+Dk
+cq
+eA
+eA
+fJ
+zB
 aa
 aa
 aa
@@ -21661,7 +22503,7 @@ gj
 oD
 Kj
 KN
-Gm
+KN
 AG
 wH
 Sr
@@ -21672,7 +22514,7 @@ lN
 GS
 sZ
 sZ
-Gm
+HF
 KN
 sZ
 ub
@@ -21688,7 +22530,7 @@ YX
 GS
 KN
 MG
-NK
+yQ
 cG
 aa
 aa
@@ -21704,35 +22546,35 @@ aa
 aa
 pX
 pX
-QI
+br
 QN
 pX
 Ro
-Ao
-Ao
-cI
-Ao
-Ao
-Ao
-Ao
-Ao
-cI
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
 fr
 pX
 dW
-Ao
-Ao
-Ao
-Ao
-Ao
+eD
+eD
+eD
+eD
+eD
 yE
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -21741,11 +22583,11 @@ aa
 aa
 pX
 pX
-MY
+KI
 Kv
 Jy
 UX
-vN
+KJ
 pX
 pX
 aa
@@ -21763,13 +22605,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+Eo
+br
+eD
+eD
+fF
+zB
 aa
 aa
 aa
@@ -21961,35 +22803,35 @@ aa
 aa
 pX
 pX
-CV
-nW
+bH
+fF
 pX
 Jf
 Xe
 Xe
-Xe
+hl
 en
+hl
 Xe
+hl
 Xe
+nt
 Xe
-Xe
-en
-Xe
-Xe
+hl
 Xe
 Or
 lh
-nt
-nC
-fR
-fR
+bH
+Hb
+gk
+gk
 xs
 CC
 qB
 pX
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -21999,7 +22841,7 @@ aa
 aa
 pX
 pX
-MY
+KI
 UB
 KJ
 pX
@@ -22021,12 +22863,12 @@ pX
 pX
 pX
 pX
+EB
+br
+eD
+eM
+gl
 pX
-pX
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -22197,10 +23039,10 @@ WI
 cV
 cG
 Di
-pA
+Kj
 Kj
 oD
-dw
+UM
 MG
 jd
 cG
@@ -22244,9 +23086,9 @@ pX
 pX
 pX
 pX
-lU
-Ao
-dR
+jr
+eD
+eM
 pX
 aa
 aa
@@ -22257,7 +23099,7 @@ aa
 aa
 pX
 pX
-Qk
+YM
 pX
 pX
 aa
@@ -22270,20 +23112,20 @@ aa
 aa
 aa
 pX
-HO
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-dN
+Af
+eA
+eA
+eA
+eA
+eA
+eA
 pX
-aa
-aa
-aa
-aa
+EG
+br
+eD
+eM
+vb
+pX
 aa
 aa
 aa
@@ -22475,35 +23317,35 @@ aa
 aa
 aa
 pX
-HO
-zc
+cq
+eA
 dA
-zc
-zc
-zc
-zc
+eA
+eA
+eA
+eA
 eJ
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-zc
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
 eJ
-dN
+fJ
 sJ
-QI
-Ao
-dR
+br
+eD
+eM
 pX
 aa
 aa
@@ -22514,33 +23356,33 @@ aa
 aa
 aa
 pX
-YM
-pX
-aa
-pX
-pX
-pX
-pX
 pX
 pX
 aa
-aa
-aa
 pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
+pX
+pX
+pX
+pX
 pX
 aa
 aa
 aa
-aa
+zB
+br
+eD
+eD
+eD
+eD
+eD
+eD
+sJ
+cq
+eD
+eD
+UY
+IF
+pX
 aa
 aa
 aa
@@ -22732,35 +23574,35 @@ aa
 aa
 aa
 pX
-QI
-Ao
+br
+eD
 ei
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-gq
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-nW
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+Bw
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+fF
 sJ
-CV
-fR
-nW
+bH
+gk
+fF
 pX
 aa
 aa
@@ -22783,21 +23625,21 @@ pX
 aa
 aa
 aa
+zB
+br
+eD
+eD
+eD
+eD
+eD
+eD
+sJ
+bH
+eD
+eD
+UY
+IF
 pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -22935,7 +23777,7 @@ UM
 KN
 KN
 bs
-zG
+ZR
 SP
 bC
 oM
@@ -22948,7 +23790,7 @@ Di
 KN
 AG
 pP
-Gm
+KN
 Sr
 cG
 KN
@@ -22989,7 +23831,7 @@ aa
 aa
 aa
 pX
-QI
+br
 zO
 pX
 pX
@@ -23041,20 +23883,20 @@ pX
 aa
 aa
 pX
-CV
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-nW
+AZ
+gk
+gk
+gk
+gk
+gk
+gk
 pX
-aa
-aa
-aa
-aa
+EG
+br
+eD
+eM
+pE
+pX
 aa
 aa
 aa
@@ -23192,7 +24034,7 @@ UM
 Uf
 gj
 Cq
-ZR
+zG
 ZR
 ZR
 bK
@@ -23203,7 +24045,7 @@ gj
 oD
 cK
 KN
-pA
+Kj
 Kj
 wH
 KN
@@ -23246,8 +24088,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 pX
@@ -23288,12 +24130,12 @@ aa
 aa
 pX
 pX
-HO
-Ao
-Ao
-Ao
-Ao
-dN
+cq
+eD
+eD
+eD
+eD
+fJ
 pX
 pX
 aa
@@ -23306,12 +24148,12 @@ pX
 sJ
 sJ
 pX
+Dk
+br
+eD
+eM
+AF
 pX
-pX
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -23503,8 +24345,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -23544,14 +24386,14 @@ aa
 aa
 pX
 pX
-HO
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dN
+cq
+eD
+eD
+eD
+eD
+eD
+eD
+fJ
 pX
 pX
 aa
@@ -23560,15 +24402,15 @@ aa
 aa
 aa
 pX
-HO
-dN
+cq
+fJ
 pX
-aa
-aa
-aa
-aa
-aa
-aa
+Gf
+br
+eD
+eD
+fJ
+zB
 aa
 aa
 aa
@@ -23738,13 +24580,13 @@ lN
 Kj
 Kj
 cG
-Kj
+iL
 KN
 cK
 oD
 UM
 MG
-NK
+uP
 cG
 aa
 aa
@@ -23760,8 +24602,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -23800,16 +24642,16 @@ aa
 aa
 pX
 pX
-HO
-Ao
-Ao
+cq
+eD
+eD
 XB
 Lq
 Lq
 Vd
-Ao
-Ao
-dN
+eD
+eD
+fJ
 pX
 pX
 aa
@@ -23817,15 +24659,15 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
-aa
-aa
-aa
-aa
-aa
-aa
+EB
+bH
+gk
+gk
+fF
+zB
 aa
 aa
 aa
@@ -23985,8 +24827,8 @@ KN
 oD
 nR
 KN
-wH
-eM
+UQ
+KN
 KN
 xB
 aF
@@ -23995,7 +24837,7 @@ Kj
 QR
 KN
 cG
-AC
+Kj
 KN
 Kj
 oD
@@ -24017,8 +24859,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -24056,33 +24898,33 @@ aa
 aa
 pX
 pX
-HO
-Ao
-Ao
+cq
+eD
+eD
 KT
 PP
 YQ
 YQ
 se
 KT
-Ao
-Ao
-dN
+eD
+eD
+fJ
 pX
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+dW
+eM
 pX
-aa
-aa
-aa
-aa
-aa
-aa
+GV
+CE
+LF
+OZ
+lA
+pX
 aa
 aa
 aa
@@ -24244,7 +25086,7 @@ cK
 RP
 KN
 wH
-KN
+Ch
 nR
 oD
 Kj
@@ -24274,8 +25116,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -24283,16 +25125,16 @@ pX
 Yz
 TZ
 pX
-ZK
-ZK
+Kh
+Kh
 pX
 pX
 YM
 YM
 pX
 pX
-ZK
-ZK
+Kh
+Kh
 pX
 NG
 KW
@@ -24313,33 +25155,33 @@ aa
 aa
 pX
 XC
-Ao
-Ao
+eD
+eD
 KT
 PP
 XH
 YQ
 YQ
-XH
+qz
 se
 KT
-Ao
-Ao
-dN
+eD
+eD
+xO
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+pX
+pX
+pX
+pX
+pX
 aa
 aa
 aa
@@ -24511,9 +25353,9 @@ Kj
 cG
 Sr
 nR
-KN
+HF
 oD
-pA
+Kj
 KN
 gj
 cG
@@ -24531,8 +25373,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 aa
 aa
@@ -24570,7 +25412,7 @@ aa
 aa
 pX
 JV
-Ao
+eD
 KT
 PP
 XH
@@ -24581,15 +25423,15 @@ ED
 XH
 ex
 KT
-Ao
+eD
 ew
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -24603,19 +25445,19 @@ pX
 pX
 pX
 pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -24746,7 +25588,7 @@ aL
 Kj
 wH
 KN
-AG
+yC
 KN
 Di
 cG
@@ -24768,7 +25610,7 @@ oD
 cG
 Kj
 KN
-AC
+Kj
 oD
 KN
 KN
@@ -24788,8 +25630,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 Ny
 pX
 pX
@@ -24826,53 +25668,53 @@ aa
 aa
 aa
 pX
-Tw
-Ao
+br
+eD
 Vc
 XH
-XH
+ks
 YQ
 YQ
 YQ
 YQ
-XH
-XH
+sf
+vU
 Ij
-Ao
+eD
 vt
 pX
 pX
 pX
 pX
 pX
-QI
-dR
-pX
+br
+eM
 Ny
-HO
-zc
-zc
-BK
+cq
+eA
+eA
+kO
 pX
 gO
 gO
-gO
-Sj
-gO
-gO
-pX
-NO
-kM
-lZ
-SW
-pX
-pX
-UN
-fJ
-Sj
+uF
+Zz
 gO
 gO
 pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -24991,7 +25833,7 @@ KN
 KN
 MG
 hn
-hn
+MG
 au
 MG
 KN
@@ -25000,18 +25842,18 @@ Po
 MG
 KN
 oD
-pA
+Kj
 Ok
 KN
 KN
-Gm
+KN
 pP
 cG
 UM
 MG
 gj
 oD
-ic
+mn
 KN
 og
 og
@@ -25045,8 +25887,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 pX
 YM
@@ -25083,8 +25925,8 @@ aa
 aa
 aa
 Ny
-fI
-Ao
+Tw
+eD
 Vc
 YW
 YQ
@@ -25095,41 +25937,41 @@ YQ
 YQ
 YQ
 Pj
-Ao
-dR
+eD
+eM
 sJ
-HO
-zc
-zc
-zc
-Ao
-dR
-nQ
+cq
+eA
+eA
+eA
+BB
+eM
 NG
-gv
-tx
-Ao
-dR
+HL
+Wx
+eD
+eM
 sJ
-HO
-zc
-fF
-zc
-dN
-Eo
-sJ
-HO
-zc
-nG
-nS
+cq
+eA
+Mn
+eA
+fJ
+Lt
 pX
-pX
-GV
-HO
-zc
-fF
-dN
-zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -25266,7 +26108,7 @@ Di
 cG
 cz
 MG
-tU
+mb
 oD
 KN
 nR
@@ -25303,11 +26145,11 @@ aa
 aa
 pX
 xi
-dR
+eM
 pX
-HO
-zc
-dN
+cq
+eA
+fJ
 pX
 rD
 rD
@@ -25322,7 +26164,7 @@ Wy
 Wy
 Mo
 fr
-Tv
+fr
 pX
 pX
 SF
@@ -25340,53 +26182,53 @@ pX
 pX
 pX
 pX
-hl
-Ao
+br
+eD
 QS
-VF
+YW
 YQ
 YQ
-YQ
-YQ
+lZ
+nG
 YQ
 YQ
 YQ
 Pj
-Ao
-dR
+eD
+eM
 sJ
-CV
-fR
-fR
-fR
-Ao
-dR
-nQ
+bH
+gk
+gk
+gk
+eD
+eM
 NG
+Mb
 Wx
-tx
-Ao
-dR
+eD
+eM
 sJ
-CV
-Ao
-Ao
-Ao
-zO
-eA
-sJ
-CV
-Ao
-Nc
-xO
-Ny
+bH
+eD
+eD
+eD
+eM
+wh
 pX
-UY
-QI
-Ao
-RK
-nW
-zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -25559,12 +26401,12 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 sJ
-QI
-Ao
-dR
+br
+eD
+eM
 sJ
 rD
 rD
@@ -25581,69 +26423,69 @@ fr
 fr
 fr
 sJ
-HO
-zc
-zc
-zc
-dN
+cq
+eA
+eA
+eA
+fJ
 pX
 Co
-zc
-zc
-zc
-zc
-zc
-zc
-zc
-dN
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+UT
 Ko
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
-YQ
+kM
 wT
-YQ
+nS
 YQ
 YQ
 Pf
 Ij
-Ao
-dR
+eD
+Fn
 pX
 pX
 pX
 pX
 pX
-QI
-dR
-pX
+br
+eM
 NG
-QI
-Ao
-Ao
-dR
+br
+eD
+eD
+eM
 pX
-TV
-QI
-tx
-tx
-dR
-PV
+De
+br
+KK
+pr
+eM
+zI
 pX
-jr
-EG
-dR
-Gf
-pX
-pX
-UT
-QI
-Ao
-dR
-CE
-pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -25794,7 +26636,7 @@ MG
 nY
 tK
 oD
-ic
+mn
 KN
 KN
 uO
@@ -25816,91 +26658,91 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 sJ
-CV
-fR
-nW
+bH
+gk
+fF
 sJ
 rD
 rD
 rD
 rD
 rD
-lx
+gS
 rD
 fr
-Du
+gS
 fr
 fr
 fr
 fr
 fr
 sJ
-QI
+br
 gL
 pX
 pX
-Pt
+Qk
 pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
+br
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eM
 Ko
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
-mk
-ly
 YQ
+ly
+oK
 YQ
 YQ
 Fi
 iI
-Ao
-dR
+eD
+no
 pX
 aa
 aa
 aa
-pX
-QI
-dR
-pX
 pX
 dW
-Ao
-tx
-PZ
+eM
 pX
+dW
 eD
-QI
-Xc
-Ao
-dR
-gO
+Wx
+yB
 pX
-nS
-QI
-dR
-Dk
+AF
+br
+sb
+eD
+eM
+kJ
 pX
-pX
-Bw
-QI
-Ao
-dR
-gS
-pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -26019,7 +26861,7 @@ UM
 KN
 MG
 hn
-Zq
+MG
 Zq
 MG
 gj
@@ -26028,10 +26870,10 @@ KN
 MG
 Uf
 KN
-AC
+iL
 MG
 KN
-AC
+iL
 KN
 KN
 KN
@@ -26073,8 +26915,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 iC
 iC
@@ -26095,69 +26937,69 @@ JU
 JU
 JU
 pX
-QI
-Ao
+br
+eD
 MM
 MM
-dN
+fJ
 yh
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-JD
+br
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eM
 pX
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
-uZ
+kM
 LJ
 pT
 YQ
 YQ
 Mx
 iI
-Ao
-dR
+eD
+vt
 pX
 aa
 aa
 aa
 pX
-QI
-Ao
-dN
+br
+eD
 sJ
-QI
-Ao
+br
+eD
+TV
 lX
-BB
 pX
-gO
-QI
-tx
-RK
-Ao
-dN
-pX
-gr
-xi
-Ao
-dN
-sJ
-sJ
-HO
-Ao
-Ao
-Nc
-gO
-pX
+gI
+br
+OS
+eD
+eD
+fJ
+zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -26296,7 +27138,7 @@ oV
 sZ
 mb
 oD
-Ys
+ww
 KN
 KN
 sZ
@@ -26330,8 +27172,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 iC
 iC
@@ -26352,69 +27194,69 @@ Yq
 Yq
 Yq
 pX
-QI
-Ao
+br
+eD
 Qc
 Qc
-nW
+fF
 yh
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-JD
+br
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eM
 pX
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
-DC
+kM
 jW
-YQ
+px
 YQ
 YQ
 lP
 iI
-Ao
-dR
+eD
+vt
 pX
 aa
 aa
 aa
 pX
-QI
-Ao
-nW
+br
+eD
 sJ
-QI
-Ao
-tx
-dR
+br
+eD
+Wx
+eM
 pX
 gO
-QI
-tx
-Ao
-Ao
-nW
-pX
-Sh
-xi
-Ao
-nW
-sJ
-sJ
-CV
-Ao
-Ao
-Nc
-gO
-pX
+br
+OS
+eD
+eD
+fF
+zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -26587,91 +27429,91 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 sJ
-HO
-zc
-dN
+cq
+eA
+fJ
 sJ
 rD
 rD
 rD
 rD
 rD
-lx
+gS
 rD
 fr
-Du
+gS
 fr
 fr
 fr
 fr
 fr
 sJ
-QI
+br
 gL
 pX
 pX
-Pt
+Qk
 pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
+br
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eM
 Ko
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
 YQ
 DS
-YQ
+wv
 YQ
 YQ
 xn
 iI
-Ao
-dR
+eD
+no
 pX
 aa
 aa
 aa
-pX
-QI
-dR
-pX
 pX
 dW
-Ao
-Ao
-dR
+eM
 pX
-px
-QI
-Xc
-Ao
-dR
-gO
+dW
+eD
+eD
+eM
 pX
-nS
-QI
-dR
-gk
+jY
+br
+sb
+eD
+eM
+kJ
 pX
-pX
-Bw
-QI
-Ao
-dR
-vU
-pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -26844,12 +27686,12 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 sJ
-QI
-Ao
-dR
+br
+eD
+eM
 sJ
 rD
 rD
@@ -26866,69 +27708,69 @@ fr
 fr
 fr
 sJ
-CV
-fR
-fR
-fR
-nW
+bH
+gk
+gk
+gk
+fF
 pX
 xP
-fR
-fR
-fR
-fR
-fR
-fR
-fR
-nW
+gk
+gk
+gk
+gk
+gk
+gk
+gk
+ZK
 Ko
-QI
-Ao
+br
+eD
 hV
 YQ
 YQ
-YQ
-YQ
-YQ
+kM
+md
+EP
 YQ
 YQ
 tu
 Ij
-Ao
-dR
-pX
-pX
-pX
-pX
-pX
-QI
-dR
-pX
-NG
-QI
-tx
-Ao
-dR
-pX
 eD
-QI
-tx
-tx
-dR
-PV
-pX
-md
-QI
-QZ
-NP
+Fn
 pX
 pX
-xV
-QI
-Ao
-dR
-Sj
 pX
+pX
+pX
+br
+eM
+NG
+br
+Wx
+eD
+eM
+pX
+Oa
+br
+KK
+pr
+eM
+zI
+pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -27101,12 +27943,12 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
-CV
-fR
-nW
+bH
+gk
+fF
 pX
 rD
 rD
@@ -27121,7 +27963,7 @@ Wy
 Wy
 jy
 fr
-Tv
+fr
 pX
 pX
 ov
@@ -27139,8 +27981,8 @@ pX
 pX
 pX
 pX
-hl
-Ao
+br
+eD
 QS
 Wz
 YQ
@@ -27151,41 +27993,41 @@ YQ
 YQ
 YQ
 Pj
-Ao
-dR
+eD
+eM
 sJ
-HO
-zc
-zc
-zc
-Ao
-dR
-nQ
-NG
-QI
-tx
-Ao
-dR
-sJ
-HO
-Ao
-Ao
-Ao
-zO
+cq
 eA
+eA
+eA
+eD
+eM
+NG
+br
+Wx
+Ab
+eM
 sJ
-HO
-Ao
-Nc
-TO
-Ny
+cq
+eD
+eD
+eD
+eM
+wh
 pX
-fJ
-QI
-Ao
-RK
-dN
-zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -27358,7 +28200,7 @@ aa
 aa
 aa
 pX
-QI
+br
 zO
 pX
 pX
@@ -27396,8 +28238,8 @@ aa
 aa
 aa
 Ny
-fI
-Ao
+br
+eD
 Vc
 Er
 YQ
@@ -27408,41 +28250,41 @@ YQ
 YQ
 YQ
 Pj
-Ao
-dR
+eD
+eM
 sJ
-CV
-fR
-fR
-fR
-Ao
-dR
-nQ
+bH
+gk
+gk
+gk
+BB
+eM
 NG
-gv
-qz
-Ao
-dR
+br
+QZ
+eD
+eM
 sJ
-CV
-fR
-HL
-fR
-nW
-Eo
-sJ
-CV
-fR
-sf
-nS
+bH
+gk
+AO
+gk
+fF
+Lt
 pX
-pX
-ks
-CV
-fR
-HL
-nW
-zB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -27615,8 +28457,8 @@ aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 Ny
 pX
 pX
@@ -27654,7 +28496,7 @@ aa
 aa
 pX
 Tw
-Ao
+eD
 Vc
 Oe
 tu
@@ -27662,44 +28504,44 @@ YQ
 YQ
 YQ
 YQ
-tu
-tu
+tU
+XH
 Ij
-Ao
+eD
 vt
 pX
 pX
 pX
 pX
 pX
-QI
-dR
-pX
+br
+eM
 Ny
-CV
-jM
-fR
-AZ
+bH
+RK
+gk
+Tl
 pX
 gO
 gO
-gO
-Sj
-gO
-gO
-pX
-NO
-PK
-Mb
-gr
-pX
-pX
-UY
-UN
-Sj
+uF
+Zz
 gO
 gO
 pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -27872,8 +28714,8 @@ aa
 aa
 aa
 pX
-CV
-nW
+bH
+fF
 pX
 aa
 aa
@@ -27911,7 +28753,7 @@ aa
 aa
 pX
 EC
-Ao
+eD
 KT
 Ry
 fo
@@ -27919,18 +28761,18 @@ AX
 YQ
 YQ
 DB
-tu
+XH
 eF
 KT
-Ao
+eD
 ew
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
 pX
 pX
@@ -27944,19 +28786,19 @@ pX
 pX
 pX
 pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -28138,16 +28980,16 @@ pX
 nQ
 NG
 pX
-ZK
-ZK
+Kh
+Kh
 pX
 pX
 YM
 YM
 pX
 pX
-ZK
-ZK
+Kh
+Kh
 pX
 NG
 nQ
@@ -28168,32 +29010,32 @@ aa
 aa
 pX
 GM
-Ao
-Ao
+eD
+eD
 KT
 Ry
 jN
 YQ
 YQ
-tu
+XH
 eF
 KT
-Ao
-Ao
-nW
+eD
+eD
+xV
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+br
+eM
 pX
-aa
-aa
-aa
-aa
-aa
+pX
+pX
+pX
+pX
+pX
 aa
 aa
 aa
@@ -28425,32 +29267,32 @@ aa
 aa
 pX
 pX
-CV
-Ao
-Ao
+bH
+eD
+eD
 KT
 Ry
 YQ
 YQ
 eF
 KT
-Ao
-Ao
-nW
+eD
+eD
+fF
 pX
 pX
 aa
 aa
 aa
 pX
-QI
-dR
+dW
+eM
 pX
-aa
-aa
-aa
-aa
-aa
+Nc
+Sh
+UN
+uQ
+pX
 aa
 aa
 aa
@@ -28683,16 +29525,16 @@ aa
 aa
 pX
 pX
-CV
-Ao
-Ao
+bH
+eD
+eD
 lM
 Yt
 Yt
 kG
-Ao
-Ao
-nW
+eD
+eD
+fF
 pX
 pX
 aa
@@ -28700,14 +29542,14 @@ aa
 aa
 aa
 pX
-CV
-nW
+br
+eM
+sJ
+cq
+eA
+fJ
+NP
 pX
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -28941,30 +29783,30 @@ aa
 aa
 pX
 pX
-CV
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-nW
+bH
+eD
+eD
+eD
+eD
+eD
+eD
+fF
 pX
 pX
 aa
 aa
+aa
+aa
+aa
 pX
-pX
-pX
-pX
+br
+eM
 sJ
-sJ
+bH
+eD
+eM
+OU
 pX
-pX
-pX
-pX
-aa
-aa
 aa
 aa
 aa
@@ -29199,29 +30041,29 @@ aa
 aa
 pX
 pX
-CV
-Ao
-Ao
-Ao
-Ao
-nW
+bH
+eD
+eD
+eD
+eD
+fF
 pX
 pX
 aa
 aa
 aa
-pX
-HO
-zc
-zc
-zc
-zc
-zc
-zc
-dN
-pX
 aa
 aa
+aa
+pX
+br
+eM
+pX
+NO
+SW
+eM
+gF
+pX
 aa
 aa
 aa
@@ -29467,18 +30309,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+pX
+br
+eM
+pX
+NP
+br
+eM
+wx
+pX
 aa
 aa
 aa
@@ -29724,18 +30566,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+pX
+br
+BP
+pX
+PK
+br
+eD
+VN
+zB
 aa
 aa
 aa
@@ -29981,18 +30823,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+pX
+br
+eM
+pX
+PL
+br
+eD
+Sd
+zB
 aa
 aa
 aa
@@ -30238,18 +31080,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+pX
+br
+eM
+pX
+NP
+br
+eM
+Cl
+pX
 aa
 aa
 aa
@@ -30495,18 +31337,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+pX
+br
+eM
+pX
+PV
+br
+XE
+Jb
+pX
 aa
 aa
 aa
@@ -30752,18 +31594,18 @@ aa
 aa
 aa
 aa
-pX
-QI
-Ao
-Ao
-Ao
-Ao
-Ao
-Ao
-dR
-pX
 aa
 aa
+aa
+zB
+eD
+eD
+sJ
+cq
+eD
+eM
+XU
+pX
 aa
 aa
 aa
@@ -31009,18 +31851,18 @@ aa
 aa
 aa
 aa
-pX
-CV
-fR
-fR
-fR
-fR
-fR
-fR
-nW
-pX
 aa
 aa
+aa
+zB
+eD
+eD
+sJ
+bH
+gk
+fF
+NP
+pX
 aa
 aa
 aa
@@ -31266,18 +32108,18 @@ aa
 aa
 aa
 aa
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
 aa
 aa
+aa
+pX
+BK
+fF
+pX
+Nc
+TO
+vO
+PK
+pX
 aa
 aa
 aa
@@ -31526,15 +32368,15 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pX
+pX
+pX
+pX
+pX
+pX
+pX
+pX
+pX
 aa
 aa
 aa
@@ -74029,7 +74871,7 @@ wl
 Xy
 Nt
 wl
-Nt
+rU
 Nt
 Nt
 Nt
