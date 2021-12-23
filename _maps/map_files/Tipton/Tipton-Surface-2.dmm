@@ -428,6 +428,13 @@
 /obj/item/clothing/under/shorts/polychromic,
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
+"anu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/building)
 "anB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -1687,6 +1694,17 @@
 	icon_state = "crosswalkvert2"
 	},
 /area/f13/wasteland)
+"bdn" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 500;
+	name = "Store Backroom";
+	req_one_access_txt = "31"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/klamat)
 "bdq" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -2333,6 +2351,15 @@
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
+"bDP" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Mayor's Office";
+	req_one_access_txt = "62"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/black,
+/area/f13/klamat)
 "bDS" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermainbottom"
@@ -2942,6 +2969,10 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
+"bWa" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/wasteland)
 "bWg" = (
 /obj/effect/temp_visual/steam,
 /obj/structure/chair/bench,
@@ -2990,10 +3021,6 @@
 "bWI" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/wasteland)
-"bXl" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/snow,
-/area/f13/underground/mountain)
 "bXo" = (
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -3226,13 +3253,6 @@
 /obj/machinery/door/airlock/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
-"chJ" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Bar";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/klamat)
 "chT" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -3724,17 +3744,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood)
-"cCb" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Bar";
-	req_one_access_txt = "28"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "barshutters"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/klamat)
 "cCd" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/brute,
@@ -4789,6 +4798,10 @@
 /obj/item/storage/backpack,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"doY" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/underground/mountain)
 "dpp" = (
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
@@ -5036,15 +5049,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/freezer,
-/area/f13/klamat)
-"dzf" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mayor's Office";
-	req_one_access_txt = "62"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
 "dzm" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
@@ -5309,14 +5313,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
-"dFw" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "City Housing";
-	req_one_access_txt = "25"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/klamat)
 "dGh" = (
 /obj/structure/wreck/trash/four_barrels,
 /turf/open/indestructible/ground/inside/subway{
@@ -5645,10 +5641,6 @@
 	},
 /turf/open/floor/plating/ice/temperate,
 /area/f13/den)
-"dTE" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "dTH" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6216,15 +6208,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
-"eqX" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mayor's Office";
-	req_one_access_txt = "62"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/black,
-/area/f13/klamat)
 "erj" = (
 /obj/structure/simple_door/interior,
 /obj/structure/decoration/rag{
@@ -6569,11 +6552,6 @@
 /obj/structure/filingcabinet,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"eDt" = (
-/obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/repaired,
-/turf/open/floor/plating/tunnel,
-/area/f13/klamat)
 "eDD" = (
 /turf/open/floor/plasteel/f13/vault_floor/green/white/corner{
 	dir = 4
@@ -6633,14 +6611,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"eGw" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Gatehouse";
-	req_one_access_txt = "134"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/klamat)
 "eGN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -6753,14 +6723,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/klamat)
-"eKv" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mechant's House";
-	req_one_access_txt = "31"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/klamat)
 "eKO" = (
 /obj/structure/rack,
 /obj/item/clothing/under/custom/trendy_fit,
@@ -6825,6 +6787,14 @@
 	name = "roughcast asphalt"
 	},
 /area/f13/wasteland)
+"eMw" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "City Housing";
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/wood/f13,
+/area/f13/klamat)
 "eMy" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/hooded/wintercoat,
@@ -7123,6 +7093,15 @@
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
+/area/f13/klamat)
+"eYA" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Gatehouse";
+	req_one_access_txt = "134"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "eYD" = (
 /obj/structure/rack,
@@ -8067,17 +8046,6 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
-"fCR" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "Store Backroom";
-	req_one_access_txt = "31"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/klamat)
 "fCV" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -9255,7 +9223,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/brotherhood)
 "gyf" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "gyA" = (
@@ -10129,6 +10097,14 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"hck" = (
+/obj/structure/table/wood,
+/obj/structure/curtain{
+	color = "red";
+	pixel_y = -30
+	},
+/turf/open/floor/carpet,
+/area/f13/building)
 "hcp" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -10311,6 +10287,16 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"hhP" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Roadie Bunks";
+	req_one_access_txt = "31"
+	},
+/turf/open/floor/wood/f13{
+	icon_state = "wood"
+	},
+/area/f13/klamat)
 "hhY" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -10595,6 +10581,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"htK" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "City Housing";
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/klamat)
 "htM" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -10689,6 +10683,10 @@
 "hxy" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
+"hxF" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/underground/mountain)
 "hxV" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -11543,13 +11541,6 @@
 /obj/machinery/vending/engivend,
 /turf/open/floor/plating/rust,
 /area/f13/building)
-"idJ" = (
-/obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/repaired,
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
-	},
-/area/f13/klamat)
 "idN" = (
 /obj/structure/flora/junglebush,
 /turf/open/floor/plating/dirt/dark,
@@ -12630,13 +12621,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"iRN" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Bar";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
-/area/f13/klamat)
 "iRU" = (
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = -32
@@ -12927,16 +12911,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"jaW" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/unpowered/securedoor{
-	max_integrity = 300;
-	name = "Khan Kasino";
-	obj_integrity = 300;
-	req_access_txt = "125"
-	},
-/turf/open/floor/carpet/black,
-/area/f13/casino)
 "jbo" = (
 /obj/machinery/light{
 	dir = 4
@@ -13540,16 +13514,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"jza" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	name = "Khan Khamp";
-	obj_integrity = 300;
-	req_access_txt = "125"
-	},
-/turf/open/floor/carpet,
-/area/f13/casino)
 "jzc" = (
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/indestructible/ground/outside/snow,
@@ -14134,13 +14098,6 @@
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
-"jUi" = (
-/obj/structure/simple_door/repaired,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/building)
 "jUv" = (
 /obj/structure/closet/crate/medical,
 /obj/item/storage/firstaid/ancient,
@@ -14200,16 +14157,6 @@
 /obj/machinery/workbench,
 /turf/open/floor/wood/f13,
 /area/f13/building)
-"jXd" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Roadie Bunks";
-	req_one_access_txt = "31"
-	},
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
-	},
-/area/f13/klamat)
 "jXq" = (
 /turf/open/floor/wood/f13/stage_bl,
 /area/f13/ncr)
@@ -14627,18 +14574,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"kqa" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Bank";
-	req_one_access_txt = "25"
-	},
-/obj/machinery/door/poddoor/ert{
-	id = "bankvault";
-	name = "Vault"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/klamat)
 "kqb" = (
 /obj/structure/closet/anchored,
 /obj/item/storage/belt/military/army,
@@ -15286,14 +15221,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"kKo" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "City Housing";
-	req_one_access_txt = "25"
-	},
-/turf/open/floor/wood/f13,
-/area/f13/klamat)
 "kKC" = (
 /obj/machinery/biogenerator,
 /turf/open/indestructible/ground/inside/mountain,
@@ -16071,6 +15998,18 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/green,
 /area/f13/building)
+"lun" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Bank";
+	req_one_access_txt = "25"
+	},
+/obj/machinery/door/poddoor/ert{
+	id = "bankvault";
+	name = "Vault"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/klamat)
 "luu" = (
 /obj/structure/curtain,
 /obj/effect/decal/cleanable/dirt,
@@ -16108,6 +16047,15 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
+"lxy" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 500;
+	name = "Store Backroom";
+	req_one_access_txt = "31"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/klamat)
 "lyt" = (
 /obj/structure/chair/f13chair1,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -16222,10 +16170,6 @@
 	name = "concrete wall"
 	},
 /area/f13/wasteland)
-"lCq" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
-/turf/open/indestructible/ground/outside/snow,
-/area/f13/underground/mountain)
 "lCK" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
@@ -16256,14 +16200,6 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
-"lEY" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "City Housing";
-	req_one_access_txt = "25"
-	},
-/turf/open/floor/f13/wood,
 /area/f13/building)
 "lFl" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -16371,13 +16307,6 @@
 /obj/structure/junk/small/tv,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
-	},
-/area/f13/building)
-"lJy" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
 	},
 /area/f13/building)
 "lJA" = (
@@ -16554,6 +16483,13 @@
 "lPi" = (
 /obj/structure/closet,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"lPn" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lPt" = (
@@ -17457,6 +17393,14 @@
 "msS" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
+"msY" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "City Housing";
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "mte" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -18267,6 +18211,21 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland)
+"mWp" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 500;
+	name = "Store Backroom";
+	req_one_access_txt = "31"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/klamat)
 "mWE" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -18429,12 +18388,6 @@
 /obj/structure/wreck/trash/two_tire,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
-"nca" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
-	},
-/area/f13/klamat)
 "ncn" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/tunnel)
@@ -19141,6 +19094,14 @@
 /obj/structure/flora/grass/wasteland,
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
+"nCg" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Mechant's House";
+	req_one_access_txt = "31"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/klamat)
 "nCr" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
@@ -19916,10 +19877,6 @@
 /obj/machinery/light_switch,
 /turf/closed/wall/f13/wood,
 /area/f13/building)
-"ofB" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/snow,
-/area/f13/wasteland)
 "ogQ" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/subway,
@@ -20441,7 +20398,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "ovN" = (
-/mob/living/simple_animal/hostile/wolf,
+/mob/living/simple_animal/hostile/wolf/feral_dog,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "owp" = (
@@ -20835,6 +20792,14 @@
 /obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
+"oPC" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Armory";
+	req_one_access_txt = "134"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/klamat)
 "oQe" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress3"
@@ -21222,14 +21187,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"pay" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mayor's Office";
-	req_one_access_txt = "62"
-	},
-/turf/open/floor/carpet/black,
-/area/f13/klamat)
 "paE" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/f13/wood,
@@ -21632,21 +21589,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"poE" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "Store Backroom";
-	req_one_access_txt = "31"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "storeshutters";
-	name = "store shutters"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/klamat)
 "ppf" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -22023,6 +21965,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13,
 /area/f13/klamat)
+"pzD" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "pAh" = (
 /obj/structure/table,
 /obj/item/clothing/suit/toggle/labcoat/f13/followers,
@@ -22384,14 +22330,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"pPO" = (
-/obj/structure/table/wood,
-/obj/structure/curtain{
-	color = "red";
-	pixel_y = -30
-	},
-/turf/open/floor/carpet,
 /area/f13/building)
 "pPX" = (
 /obj/effect/decal/fakelattice,
@@ -22828,16 +22766,6 @@
 /obj/effect/spawner/lootdrop/ammo,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
-"qis" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	name = "Khan Khamp";
-	obj_integrity = 300;
-	req_access_txt = "125"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
-/area/f13/casino)
 "qiF" = (
 /obj/structure/simple_door/room,
 /obj/effect/decal/cleanable/dirt{
@@ -23316,6 +23244,10 @@
 /obj/effect/gibspawner/human,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
+"qAB" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/wood/f13/old,
+/area/f13/wasteland)
 "qAC" = (
 /obj/machinery/light{
 	dir = 4
@@ -23692,10 +23624,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/klamat)
-"qPl" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/wood/f13/old,
-/area/f13/wasteland)
 "qPr" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/cola/random,
@@ -25160,6 +25088,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack,
 /area/f13/building)
+"rRq" = (
+/obj/structure/barricade/wooden/planks,
+/obj/structure/simple_door/repaired,
+/turf/open/floor/wood/f13{
+	icon_state = "wood"
+	},
+/area/f13/klamat)
 "rRE" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/f13{
@@ -25175,6 +25110,15 @@
 /mob/living/simple_animal/chick,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/dirt,
+/area/f13/klamat)
+"rSH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Mayor's Office";
+	req_one_access_txt = "62"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
 "rSP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25522,6 +25466,13 @@
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"skv" = (
+/obj/structure/simple_door/repaired,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/building)
 "skN" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -26136,6 +26087,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"sJX" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Bar";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/klamat)
 "sKo" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain2"
@@ -26563,6 +26521,11 @@
 "tej" = (
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"tev" = (
+/obj/structure/barricade/wooden/planks,
+/obj/structure/simple_door/repaired,
+/turf/open/floor/plating/tunnel,
+/area/f13/klamat)
 "teA" = (
 /turf/open/floor/f13{
 	icon_state = "bar"
@@ -26889,6 +26852,14 @@
 "tqC" = (
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/underground/mountain)
+"tqD" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Mayor's Office";
+	req_one_access_txt = "62"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/klamat)
 "trf" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/combat{
@@ -28156,6 +28127,16 @@
 /obj/machinery/vending/wardrobe/science_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/klamat)
+"ukB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/unpowered/securedoor{
+	max_integrity = 300;
+	name = "Khan Kasino";
+	obj_integrity = 300;
+	req_access_txt = "125"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/casino)
 "ukI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -28192,15 +28173,6 @@
 /obj/effect/landmark/start/f13/followersvolunteer,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
-/area/f13/klamat)
-"ulK" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Gatehouse";
-	req_one_access_txt = "134"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "ulR" = (
 /obj/structure/window/fulltile/house,
@@ -28718,14 +28690,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
-"uHz" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Armory";
-	req_one_access_txt = "134"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/klamat)
 "uHA" = (
 /obj/structure/curtain,
 /turf/open/floor/wood/f13/old,
@@ -29634,13 +29598,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
-"vrv" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/mob/living/simple_animal/hostile/wolf/feral_dog/alpha,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "vsp" = (
 /obj/structure/table/wood/poker,
 /obj/item/chair/stool/retro,
@@ -30412,6 +30369,13 @@
 	name = "Hotsprings"
 	},
 /area/f13/klamat)
+"vXS" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Bar";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
+/area/f13/klamat)
 "vYa" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife,
@@ -31143,6 +31107,17 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"wAv" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Bar";
+	req_one_access_txt = "28"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "barshutters"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood,
+/area/f13/klamat)
 "wAN" = (
 /obj/structure/rack,
 /obj/item/toy/plush/beeplushie,
@@ -31805,6 +31780,16 @@
 /obj/machinery/light/sign,
 /turf/closed/wall/f13/wood,
 /area/f13/klamat)
+"wWD" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	name = "Khan Khamp";
+	obj_integrity = 300;
+	req_access_txt = "125"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
+/area/f13/casino)
 "wWG" = (
 /obj/structure/campfire,
 /turf/open/indestructible/ground/outside/dirt,
@@ -31889,6 +31874,12 @@
 /obj/item/roller,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/klamat)
+"wZK" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/wood/f13{
+	icon_state = "wood"
+	},
 /area/f13/klamat)
 "wZM" = (
 /obj/structure/table,
@@ -32169,6 +32160,14 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building)
+"xjU" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Gatehouse";
+	req_one_access_txt = "134"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/klamat)
 "xkg" = (
 /obj/structure/table/wood,
 /obj/item/crafting/coffee_pot,
@@ -32717,15 +32716,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/followers)
-"xFM" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 500;
-	name = "Store Backroom";
-	req_one_access_txt = "31"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/klamat)
 "xFX" = (
 /obj/structure/stone_tile/slab,
 /turf/open/indestructible/ground/outside/snow,
@@ -33033,6 +33023,16 @@
 /obj/structure/closet,
 /turf/open/floor/f13/wood,
 /area/f13/underground/mountain)
+"xTP" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	name = "Khan Khamp";
+	obj_integrity = 300;
+	req_access_txt = "125"
+	},
+/turf/open/floor/carpet,
+/area/f13/casino)
 "xUn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -37187,9 +37187,9 @@ lQG
 uoV
 uoV
 dnm
-qPl
+qAB
 dnm
-qPl
+qAB
 dnm
 lQG
 uoV
@@ -57597,7 +57597,7 @@ uoV
 mwC
 ngQ
 ngQ
-pPO
+hck
 yly
 uoV
 uoV
@@ -59969,9 +59969,9 @@ wxx
 lFq
 lFq
 uPo
-chJ
+sJX
 fWN
-chJ
+sJX
 mWV
 mWV
 cgj
@@ -59993,7 +59993,7 @@ cka
 cka
 cka
 cka
-uHz
+oPC
 cka
 cka
 cka
@@ -60175,7 +60175,7 @@ vUv
 fWN
 qgW
 qgW
-iRN
+vXS
 qgW
 qgW
 qgW
@@ -60599,7 +60599,7 @@ cka
 cka
 cka
 foN
-ulK
+eYA
 cka
 cka
 cka
@@ -61182,7 +61182,7 @@ jBy
 qgW
 qgW
 nOf
-cCb
+wAv
 vUv
 vUv
 eKk
@@ -61202,7 +61202,7 @@ qey
 hzg
 nCf
 lHa
-eGw
+xjU
 xUn
 xUn
 gsa
@@ -61611,7 +61611,7 @@ cka
 cka
 cka
 xYl
-eGw
+xjU
 cka
 cka
 wbQ
@@ -68097,7 +68097,7 @@ aoQ
 kRk
 uuq
 uuq
-lJy
+anu
 uQB
 ene
 uQB
@@ -69112,7 +69112,7 @@ ukl
 ljA
 ljA
 tEV
-jUi
+skv
 vqW
 vqW
 lFl
@@ -69253,7 +69253,7 @@ dAR
 wOV
 dVZ
 dVZ
-pay
+tqD
 fNL
 kdG
 fNL
@@ -70262,7 +70262,7 @@ iKL
 iKL
 vUv
 vUv
-eqX
+bDP
 vUv
 vUv
 sei
@@ -70841,7 +70841,7 @@ lci
 cka
 sei
 sei
-nca
+wZK
 sei
 tSH
 mFb
@@ -70863,11 +70863,11 @@ cka
 cka
 cka
 cka
-kqa
+lun
 cka
 cka
 foN
-dzf
+rSH
 nOf
 vUv
 vUv
@@ -71093,11 +71093,11 @@ wtw
 wtw
 wtw
 wNN
-poE
+mWp
 owp
 fNL
 fNL
-fCR
+bdn
 owp
 fNL
 fNL
@@ -71471,7 +71471,7 @@ wHe
 uwK
 wHe
 pGx
-kqa
+lun
 fWN
 xuZ
 fZX
@@ -71485,7 +71485,7 @@ otJ
 xEr
 sei
 sei
-dFw
+htK
 sei
 sei
 pMk
@@ -71661,7 +71661,7 @@ vcA
 mFb
 mFb
 sei
-nca
+wZK
 sei
 sei
 iKL
@@ -71851,7 +71851,7 @@ lci
 cka
 sei
 sei
-eDt
+tev
 sei
 ggU
 lht
@@ -72469,7 +72469,7 @@ sei
 ggU
 ggU
 sei
-eDt
+tev
 sei
 sei
 pMk
@@ -72715,7 +72715,7 @@ cka
 cka
 cka
 cka
-fCR
+bdn
 cka
 cka
 cka
@@ -73301,7 +73301,7 @@ ghZ
 xCh
 kNz
 kNz
-dFw
+htK
 uLz
 fkh
 fWN
@@ -73929,7 +73929,7 @@ qpp
 wvw
 ovu
 cka
-jXd
+hhP
 cka
 gBS
 mDi
@@ -74125,7 +74125,7 @@ lHa
 wtw
 cka
 cka
-xFM
+lxy
 cka
 cka
 cka
@@ -74291,7 +74291,7 @@ vLu
 plV
 plV
 plV
-kKo
+eMw
 plV
 plV
 plV
@@ -74535,7 +74535,7 @@ sei
 sei
 sei
 sei
-jXd
+hhP
 sei
 sei
 sei
@@ -74917,7 +74917,7 @@ rSB
 vLu
 vLu
 sei
-dFw
+htK
 ayA
 tZp
 sei
@@ -75085,7 +75085,7 @@ sei
 fkh
 mFb
 mFb
-idJ
+rRq
 wtw
 wlI
 wlI
@@ -75099,7 +75099,7 @@ vLu
 pzu
 plV
 plV
-kKo
+eMw
 plV
 plV
 plV
@@ -75134,10 +75134,10 @@ nCf
 lHa
 wtw
 sei
-eKv
+nCg
 sei
 qgW
-dFw
+htK
 qgW
 qgW
 sei
@@ -75285,7 +75285,7 @@ lci
 cka
 sei
 sei
-nca
+wZK
 sei
 sei
 sei
@@ -77820,7 +77820,7 @@ uoV
 rPI
 hsd
 alM
-vrv
+lPn
 pbR
 iPu
 kZv
@@ -78021,13 +78021,13 @@ wbQ
 uoV
 mGg
 iMr
-dTE
+pzD
 pbR
 fHU
 xet
 rPI
 uoV
-ovN
+bWa
 uoV
 uoV
 uoV
@@ -79036,7 +79036,7 @@ pbR
 rPI
 tGb
 uoV
-ofB
+ovN
 uoV
 uoV
 wbQ
@@ -79187,7 +79187,7 @@ uHd
 uoV
 uoV
 uoV
-lEY
+msY
 wvN
 wvN
 rfV
@@ -79641,7 +79641,7 @@ rPI
 rPI
 rPI
 uoV
-ovN
+bWa
 uoV
 uoV
 uoV
@@ -88491,7 +88491,7 @@ uXX
 uXX
 uXX
 tSi
-lCq
+hxF
 tSi
 tSi
 tSi
@@ -88897,7 +88897,7 @@ tSi
 tSi
 tSi
 tSi
-bXl
+gyf
 tSi
 kZt
 kZt
@@ -89077,7 +89077,7 @@ uoV
 uoV
 uXX
 tSi
-bXl
+gyf
 tSi
 tSi
 uXX
@@ -89096,10 +89096,10 @@ uXX
 uXX
 uXX
 tSi
-bXl
+gyf
 tSi
-bXl
-bXl
+gyf
+gyf
 tSi
 kZt
 kZt
@@ -89285,7 +89285,7 @@ tSi
 uXX
 uXX
 uXX
-bXl
+gyf
 tSi
 tSi
 tSi
@@ -89298,7 +89298,7 @@ tSi
 tSi
 tSi
 tSi
-bXl
+gyf
 tSi
 tSi
 tSi
@@ -89500,7 +89500,7 @@ tSi
 tSi
 tSi
 tSi
-gyf
+doY
 tSi
 gvG
 tSi
@@ -89705,7 +89705,7 @@ ngO
 tSi
 tSi
 tSi
-bXl
+gyf
 tSi
 kZt
 kZt
@@ -90107,7 +90107,7 @@ uXX
 uXX
 uHd
 tSi
-bXl
+gyf
 tSi
 tSi
 tSi
@@ -91123,7 +91123,7 @@ tSi
 tSi
 tSi
 tSi
-lCq
+hxF
 kZt
 uHd
 uHd
@@ -91321,7 +91321,7 @@ uXX
 uXX
 tSi
 muu
-gyf
+doY
 tSi
 tSi
 tSi
@@ -92333,7 +92333,7 @@ uHd
 uHd
 rwC
 tSi
-bXl
+gyf
 tSi
 tSi
 tSi
@@ -109718,7 +109718,7 @@ mlv
 mlv
 mlv
 mlv
-qis
+wWD
 mlv
 mlv
 mlv
@@ -112133,7 +112133,7 @@ fjS
 qFV
 qFV
 qFV
-jza
+xTP
 qFV
 qFV
 qFV
@@ -112147,7 +112147,7 @@ qFV
 qFV
 qFV
 qFV
-jaW
+ukB
 qFV
 qFV
 qFV
@@ -112537,7 +112537,7 @@ rUZ
 qFV
 qFV
 qFV
-jza
+xTP
 qFV
 qFV
 qFV
@@ -112551,7 +112551,7 @@ qFV
 qFV
 qFV
 qFV
-jaW
+ukB
 qFV
 qFV
 qFV

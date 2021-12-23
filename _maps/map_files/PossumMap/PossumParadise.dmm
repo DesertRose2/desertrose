@@ -12894,6 +12894,13 @@
 /obj/item/pen,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
+"aPv" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/effect/spawner/lootdrop/clothing_low,
+//obj/vehicle/ridden/scooter/skateboard,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "aPw" = (
 /obj/structure/chair{
 	dir = 4;
@@ -13072,6 +13079,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aQc" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/floor/grass/snow,
+/area/f13/underground/mountain)
+"aQd" = (
 /mob/living/simple_animal/hostile/wolf,
 /turf/open/floor/grass/snow,
 /area/f13/underground/mountain)
@@ -17770,6 +17781,10 @@
 /obj/structure/chair/f13foldupchair,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"bfj" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/floor/grass/snow,
+/area/f13/wasteland)
 "bfk" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
@@ -17976,6 +17991,10 @@
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
+"bfX" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "bfY" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
@@ -20311,15 +20330,6 @@
 /obj/machinery/power/supermatter_crystal/shard/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault/reactor)
-"ebX" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/effect/spawner/lootdrop/clothing_low,
-//area/f13/city)
-"icO" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 
 (1,1,1) = {"
 agS
@@ -146692,7 +146702,7 @@ bed
 aGt
 beL
 asO
-bdT
+bfj
 asO
 asO
 asO
@@ -157156,7 +157166,7 @@ asa
 asa
 asa
 aOf
-aQc
+aQd
 aOf
 aOf
 aOf
@@ -158977,7 +158987,7 @@ asa
 asa
 aOf
 aOf
-aQc
+aQd
 aOf
 aOf
 aOf
@@ -160009,7 +160019,7 @@ aOd
 aOd
 aOd
 aOf
-aQc
+aQd
 aOf
 aOf
 asO
@@ -165431,7 +165441,7 @@ aPc
 aOr
 aOE
 aOR
-ebX
+aPv
 aOr
 aPI
 aOy
@@ -171745,7 +171755,7 @@ aOy
 aOy
 aPG
 bfR
-icO
+bfX
 bgl
 aOy
 aOy

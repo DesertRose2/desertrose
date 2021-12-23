@@ -716,11 +716,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
-"bhb" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
-/area/f13/bunker)
 "bhU" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor{
@@ -9326,6 +9321,11 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"opJ" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/bunker)
 "oqc" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/firefighter,
@@ -11497,6 +11497,10 @@
 /obj/structure/simple_door/room,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
+/area/f13/bunker)
+"rHA" = (
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "rIJ" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -15700,10 +15704,6 @@
 /mob/living/simple_animal/hostile/handy/nsb,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/bunker)
-"ycc" = (
-/obj/structure/simple_door/repaired,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "ych" = (
 /obj/machinery/light/broken,
@@ -35737,7 +35737,7 @@ vAC
 vAC
 vAC
 xsH
-bhb
+opJ
 nKy
 yhK
 jAl
@@ -79585,7 +79585,7 @@ heT
 bsh
 lEp
 okW
-ycc
+rHA
 okW
 okW
 okW
@@ -79597,7 +79597,7 @@ okW
 okW
 okW
 okW
-ycc
+rHA
 okW
 amW
 bBK
@@ -79849,7 +79849,7 @@ okW
 okW
 okW
 okW
-ycc
+rHA
 okW
 okW
 okW
@@ -80629,7 +80629,7 @@ bsh
 bsh
 bsh
 rUH
-ycc
+rHA
 rUH
 bsh
 bsh

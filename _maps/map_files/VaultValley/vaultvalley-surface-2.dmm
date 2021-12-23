@@ -331,14 +331,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
-"aoU" = (
-/obj/structure/bed/dogbed,
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "a ghouls best friend"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "apn" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain3"
@@ -1102,12 +1094,6 @@
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"bog" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "boA" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/f13/wood{
@@ -1335,6 +1321,15 @@
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"bzn" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
 /area/f13/building)
 "bzo" = (
 /obj/structure/fence/corner{
@@ -1582,13 +1577,6 @@
 "bNq" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/city)
-"bNK" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/wasteland)
 "bNR" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -2085,13 +2073,6 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/wasteland)
-"cfc" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/village)
 "cff" = (
 /obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
@@ -2186,6 +2167,14 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"clE" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/wasteland)
 "clR" = (
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "innerturn"
@@ -3127,6 +3116,13 @@
 	icon_state = "horizontalinnermainleft"
 	},
 /area/f13/wasteland)
+"dgi" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/wasteland)
 "dgz" = (
 /obj/structure/table,
 /obj/structure/table,
@@ -3409,10 +3405,6 @@
 /obj/machinery/light,
 /turf/open/floor/f13,
 /area/f13/building)
-"dtd" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "dtw" = (
 /obj/structure/closet/fridge,
 /obj/machinery/light/small/broken{
@@ -4322,10 +4314,6 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland)
-"emg" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "eml" = (
 /turf/closed/wall/f13/store,
 /area/f13/city)
@@ -4496,14 +4484,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"evO" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
 "ext" = (
 /obj/structure/simple_door,
 /turf/open/floor/f13{
@@ -4736,6 +4716,16 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
+	},
+/area/f13/wasteland)
+"eHI" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "eHQ" = (
@@ -5111,16 +5101,6 @@
 /obj/item/bedsheet/black,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"faE" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "faV" = (
 /obj/structure/debris/v3,
 /turf/open/floor/f13/wood{
@@ -5190,8 +5170,21 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
+"fdw" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "fdC" = (
 /turf/open/indestructible/ground/outside/road,
+/area/f13/tunnel)
+"fdD" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "131"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "fdN" = (
 /obj/structure/rack,
@@ -5259,10 +5252,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"fgl" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland)
 "fgy" = (
 /turf/open/floor/plasteel/neutral,
 /area/f13/building)
@@ -5747,6 +5736,12 @@
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"fJX" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/dirt,
+/area/f13/village)
 "fKe" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain2bottom"
@@ -6262,6 +6257,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"gio" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/wasteland)
 "giy" = (
 /obj/structure/window/fulltile/wood_window,
 /turf/open/floor/plasteel/neutral,
@@ -7667,15 +7668,15 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/building)
-"hyi" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
+"hyc" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontaldegraded"
 	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
+/mob/living/simple_animal/hostile/wolf/feral_dog,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
 	},
-/area/f13/building)
+/area/f13/wasteland)
 "hyk" = (
 /obj/structure/cargocrate,
 /turf/open/indestructible/ground/outside/desert,
@@ -8525,6 +8526,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
+"ivj" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtcorner"
+	},
+/area/f13/wasteland)
 "ivm" = (
 /obj/structure/simple_door/room{
 	req_access_txt = "123"
@@ -9496,15 +9506,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/building)
-"juC" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "125"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/caves)
 "jvf" = (
 /obj/structure/bed,
 /obj/item/bedsheet/random,
@@ -9582,10 +9583,6 @@
 /obj/structure/campfire,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
-"jzY" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "jAb" = (
 /obj/structure/flora/wasteplant/wild_datura,
 /turf/open/indestructible/ground/outside/desert,
@@ -10080,6 +10077,13 @@
 /obj/structure/filingcabinet,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"kfI" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "kfT" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -10605,10 +10609,6 @@
 "kIa" = (
 /obj/structure/spider/stickyweb,
 /obj/machinery/workbench,
-/turf/open/floor/f13/wood,
-/area/f13/building)
-"kIx" = (
-/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "kIy" = (
@@ -11456,6 +11456,10 @@
 /obj/structure/debris/v1,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"lxJ" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "lzQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -11497,13 +11501,6 @@
 	dir = 4;
 	icon_state = "rubblecorner"
 	},
-/area/f13/wasteland)
-"lCS" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "lCT" = (
 /obj/structure/flora/grass/wasteland,
@@ -12389,12 +12386,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"mAO" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	dir = 4
-	},
-/turf/open/indestructible/ground/inside/dirt,
-/area/f13/village)
 "mCc" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -12777,15 +12768,6 @@
 "mSt" = (
 /turf/open/floor/plating/f13/outside/road,
 /area/f13/wasteland)
-"mSw" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "131"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "mSA" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light/small{
@@ -12919,12 +12901,6 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/building)
-"naC" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
 "naK" = (
 /obj/structure/stairs,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -13617,6 +13593,12 @@
 /obj/item/trash/f13/tin,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"nJX" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "nKb" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbroken"
@@ -13668,15 +13650,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
-"nKK" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
-	},
-/area/f13/wasteland)
 "nKW" = (
 /obj/item/lipstick/random,
 /turf/open/floor/f13{
@@ -13701,11 +13674,6 @@
 /area/f13/building)
 "nNo" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/f13/wood,
-/area/f13/building)
-"nNG" = (
-/obj/structure/simple_door/repaired,
-/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nOe" = (
@@ -13749,13 +13717,6 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
-/area/f13/wasteland)
-"nQw" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "nQD" = (
 /obj/structure/simple_door/room,
@@ -13882,12 +13843,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
-"nXC" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/building)
 "nYl" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -13919,15 +13874,6 @@
 	icon_state = "innermaincornerouter"
 	},
 /area/f13/wasteland)
-"oaE" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/building)
 "oaN" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/f13/wood,
@@ -14525,6 +14471,15 @@
 /obj/structure/flora/tree/tall,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"oDy" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "125"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "oDM" = (
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontalcorroded"
@@ -15085,6 +15040,13 @@
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood,
 /area/f13/building)
+"plw" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "ply" = (
 /obj/structure/bed/roller,
 /turf/open/floor/f13{
@@ -16401,15 +16363,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"qxP" = (
-/obj/effect/decal/marking{
-	icon_state = "doublehorizontaldegraded"
-	},
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
 "qyp" = (
 /obj/structure/closet/anchored,
 /obj/item/clothing/head/f13/police,
@@ -16612,6 +16565,15 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
+"qFG" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/building)
 "qGH" = (
 /obj/structure/chair{
 	dir = 1
@@ -16953,10 +16915,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
-"qYS" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/wasteland)
 "qZu" = (
 /obj/structure/fence{
 	dir = 4
@@ -18399,6 +18357,18 @@
 /obj/structure/barricade/wooden/strong,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
+"sEX" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "125"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "sFe" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -19124,15 +19094,6 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
-"tpT" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","raider");
-	name = "raider dog"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood3-broken"
-	},
-/area/f13/building)
 "tqe" = (
 /obj/structure/table,
 /obj/item/clothing/neck/mantle/poncho,
@@ -19669,6 +19630,14 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/brotherhood)
+"tRz" = (
+/obj/structure/bed/dogbed,
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "a ghouls best friend"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "tRM" = (
 /obj/machinery/door/airlock/glass_large{
 	name = "Followers Clinic";
@@ -20264,16 +20233,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
-"uxn" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "131"
-	},
-/obj/structure/decoration/rag,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "uxT" = (
 /obj/structure/stone_tile/slab,
 /turf/open/indestructible/ground/inside/mountain,
@@ -20509,6 +20468,10 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/brotherhood)
+"uKe" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "uKl" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress6"
@@ -21398,6 +21361,11 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
+"vCq" = (
+/obj/structure/simple_door/repaired,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "vCI" = (
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -21612,13 +21580,6 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
-/area/f13/building)
-"vPx" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Bar";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "vPB" = (
 /obj/structure/bed,
@@ -21915,6 +21876,10 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland)
+"whG" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood,
+/area/f13/wasteland)
 "whV" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/indestructible/ground/inside/mountain,
@@ -21939,6 +21904,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"wiC" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
 	},
 /area/f13/building)
 "wiP" = (
@@ -22099,18 +22073,6 @@
 "wrr" = (
 /turf/open/floor/f13{
 	icon_state = "floordirty"
-	},
-/area/f13/wasteland)
-"wrV" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "125"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "wsp" = (
@@ -22518,6 +22480,13 @@
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"wKs" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Bar";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
 "wKv" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
@@ -22617,6 +22586,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"wQo" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","raider");
+	name = "raider dog"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
 "wQp" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -22793,6 +22769,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"xag" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/building)
 "xah" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowbottom";
@@ -22883,6 +22865,16 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/wasteland)
+"xfN" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	max_integrity = 300;
+	obj_integrity = 300;
+	req_access_txt = "131"
+	},
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "xfT" = (
 /obj/structure/chair/pew{
 	dir = 1
@@ -22983,6 +22975,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"xkt" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "xkH" = (
 /obj/structure/junk/locker,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -23368,6 +23364,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"xCR" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "xDb" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -26390,7 +26390,7 @@ ruU
 geQ
 iAX
 pjV
-mAO
+fJX
 geQ
 iBA
 iBA
@@ -27926,7 +27926,7 @@ iBA
 iBA
 iBA
 lGB
-emg
+fdw
 gFL
 fcj
 fcj
@@ -28399,7 +28399,7 @@ yaf
 aWI
 aWI
 fnc
-mSw
+fdD
 fnc
 aWI
 aWI
@@ -28703,7 +28703,7 @@ fcj
 veI
 kaQ
 iBA
-bog
+nJX
 iBA
 iBA
 iBA
@@ -33791,7 +33791,7 @@ yaf
 uJh
 fnc
 fnc
-uxn
+xfN
 fnc
 fnc
 aWI
@@ -36527,7 +36527,7 @@ iBA
 iBA
 iBA
 iBA
-lCS
+kfI
 iBA
 iBA
 iyp
@@ -36764,7 +36764,7 @@ mCp
 rSM
 rRJ
 wjp
-bNK
+dgi
 dFd
 csS
 iBA
@@ -37035,7 +37035,7 @@ iBA
 iBA
 iBA
 ruU
-faE
+eHI
 qeO
 qeO
 qeO
@@ -37562,7 +37562,7 @@ sqg
 sdJ
 lTM
 lTM
-nQw
+plw
 pJj
 lax
 iBA
@@ -37797,7 +37797,7 @@ iBA
 iBA
 iBA
 iBA
-nKK
+ivj
 bZf
 gaV
 iBA
@@ -38047,7 +38047,7 @@ lTM
 pJj
 pID
 pGC
-oaE
+bzn
 wjp
 sKF
 prC
@@ -41166,7 +41166,7 @@ bIB
 tLs
 pYf
 wlT
-tpT
+qFG
 kLQ
 tLs
 kwF
@@ -41421,7 +41421,7 @@ lTM
 pJj
 iMY
 pYf
-hyi
+wiC
 tLs
 aWp
 pYf
@@ -41658,7 +41658,7 @@ lTM
 ntw
 hmF
 kod
-cfc
+wQo
 aqM
 aqM
 aqM
@@ -42678,7 +42678,7 @@ lTM
 lTM
 lTM
 lTM
-nQw
+plw
 lTM
 lTM
 lTM
@@ -44228,7 +44228,7 @@ bIB
 xpN
 sdJ
 lTM
-nQw
+plw
 lTM
 pJj
 jna
@@ -49855,7 +49855,7 @@ bIB
 bIB
 bIB
 bIB
-jzY
+uKe
 bIB
 bIB
 bIB
@@ -54675,7 +54675,7 @@ mkX
 mkX
 mkX
 mkX
-kIx
+xCR
 mkX
 tmy
 mkX
@@ -55188,10 +55188,10 @@ tLs
 sut
 tbA
 tLs
-kIx
+xCR
 tLs
 tLs
-kIx
+xCR
 tLs
 tLs
 oHU
@@ -55450,7 +55450,7 @@ tLs
 tLs
 mkX
 mkX
-kIx
+xCR
 mkX
 mkX
 sdJ
@@ -56214,7 +56214,7 @@ hBl
 mkX
 mkX
 mkX
-jzY
+uKe
 mkX
 mkX
 xgy
@@ -62765,7 +62765,7 @@ vPX
 enm
 fBj
 vPX
-vPx
+wKs
 fbS
 fbS
 fbS
@@ -65501,7 +65501,7 @@ wHD
 wxA
 eFC
 onE
-aoU
+tRz
 tLs
 dXP
 dXP
@@ -66058,7 +66058,7 @@ nQU
 lTM
 lTM
 pJj
-jzY
+uKe
 tLs
 jht
 tLs
@@ -75433,7 +75433,7 @@ tLs
 tLs
 klE
 pYf
-nNG
+vCq
 gBR
 tLs
 tLs
@@ -75454,7 +75454,7 @@ xpK
 mEt
 mEt
 rvb
-nXC
+xag
 sdJ
 lTM
 lTM
@@ -75981,7 +75981,7 @@ kZE
 vad
 kZE
 kZE
-dtd
+xkt
 lGB
 fcj
 fcj
@@ -76748,9 +76748,9 @@ pJj
 mYi
 bij
 bij
-dtd
+xkt
 bij
-dtd
+xkt
 bij
 bij
 cff
@@ -77284,7 +77284,7 @@ eFc
 fcj
 fcj
 fcj
-fgl
+whG
 xIw
 inF
 iBA
@@ -77362,7 +77362,7 @@ qwY
 aMh
 fVR
 wHD
-evO
+clE
 xSl
 wHD
 pJj
@@ -77778,7 +77778,7 @@ bij
 bij
 bij
 bij
-dtd
+xkt
 bij
 bij
 fcj
@@ -77798,7 +77798,7 @@ eTf
 gjW
 fcj
 fcj
-fgl
+whG
 xIw
 inF
 iBA
@@ -78132,7 +78132,7 @@ nDT
 tJV
 rbK
 xtD
-qYS
+lxJ
 ukq
 lTM
 lTM
@@ -78390,7 +78390,7 @@ jFE
 rbK
 sFO
 lTM
-qxP
+hyc
 men
 gHh
 wHD
@@ -78602,7 +78602,7 @@ yaf
 yaf
 yaf
 saB
-wrV
+sEX
 gNj
 saB
 yaf
@@ -79160,7 +79160,7 @@ nDT
 qwY
 aMh
 fVR
-naC
+gio
 tYB
 wvj
 seM
@@ -86586,7 +86586,7 @@ diq
 diq
 diq
 diq
-juC
+oDy
 ruU
 qeO
 puQ

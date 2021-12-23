@@ -1369,11 +1369,6 @@
 	icon_state = "engine"
 	},
 /area/f13/brotherhood/mining)
-"aXX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
 "aYi" = (
 /obj/structure/fence/handrail{
 	density = 0;
@@ -2380,6 +2375,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood/offices2nd)
+"bFm" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/tunnel)
 "bFo" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
@@ -3137,6 +3138,18 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
+"cgN" = (
+/obj/effect/decal/fakelattice,
+/obj/machinery/door/unpowered/celldoor/legion,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	color = "#645546";
+	footstep = "plating";
+	icon_state = "darkrusty"
+	},
+/area/f13/legion)
 "cgV" = (
 /obj/effect/decal/remains/robot,
 /obj/structure/cable{
@@ -3770,12 +3783,6 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
-"cAU" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood{
-	color = "#c5bab2"
-	},
-/area/f13/legion)
 "cBm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/old,
@@ -4043,13 +4050,6 @@
 "cLN" = (
 /turf/closed/wall/f13/supermart,
 /area/f13/ncr)
-"cLO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/brotherhood/leisure)
 "cLS" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -5144,6 +5144,12 @@
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
+"dBe" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "dBn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -8787,6 +8793,10 @@
 /obj/structure/chalkboard,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"fQv" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/tunnel)
 "fQQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -9683,17 +9693,6 @@
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"gyo" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "floor_dirty"
-	},
-/area/f13/legion)
 "gyp" = (
 /obj/structure/simple_door/blast{
 	max_integrity = 1000;
@@ -10237,17 +10236,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/pod,
 /area/f13/caves)
-"gSO" = (
-/obj/machinery/door/unpowered/celldoor/legion,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "floor_dirty"
-	},
-/area/f13/legion)
 "gSR" = (
 /obj/structure/sign/poster/contraband/smoke{
 	pixel_y = -32
@@ -10943,6 +10931,15 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"hpn" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Ranger Sergeant's Office"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "hpp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -11686,12 +11683,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
-"hNn" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "hNq" = (
 /obj/structure/closet,
 /obj/structure/sign/poster/contraband/pinup_ride{
@@ -15282,10 +15273,6 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/sewer)
-"kjq" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/tunnel)
 "kjx" = (
 /obj/machinery/door/airlock/wood/glass{
 	name = "marshal's suite";
@@ -16775,10 +16762,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
-"lhK" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "lhT" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -16986,6 +16969,12 @@
 	color = "000000"
 	},
 /turf/open/floor/carpet/black,
+/area/f13/ncr)
+"loB" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
 /area/f13/ncr)
 "loJ" = (
 /obj/effect/decal/cleanable/glass,
@@ -18072,6 +18061,15 @@
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"meq" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Veteran Ranger's Office"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "meW" = (
 /obj/machinery/telecomms/server/presets/medical,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -18090,15 +18088,6 @@
 /obj/structure/barricade/wooden/strong,
 /turf/closed/mineral/random/low_chance,
 /area/f13/brotherhood/operations)
-"mgu" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Ranger Sergeant's Office"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "mgx" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
@@ -18443,6 +18432,10 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/tunnel)
+"mtY" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "mui" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -19398,17 +19391,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/medical)
-"mZJ" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/machinery/door/unpowered/securedoor/legion,
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "floor_dirty"
-	},
-/area/f13/legion)
 "mZU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
@@ -19618,26 +19600,6 @@
 /obj/effect/light_emitter,
 /turf/open/water,
 /area/f13/brotherhood/operations)
-"ngF" = (
-/obj/item/chair/stool/retro/black,
-/obj/effect/spawner/lootdrop/trash,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
-	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
-	name = "Silenced Pistol";
-	pixel_x = 32
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/item/chair/stool/retro/black,
-/obj/effect/spawner/lootdrop/trash,
-/obj/structure/sign/poster/contraband/silenced_pistol{
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/tunnel)
 "ngP" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/hos,
@@ -19914,6 +19876,15 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/operations)
+"nqL" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "nqO" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -20815,6 +20786,17 @@
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"nWb" = (
+/obj/machinery/door/unpowered/celldoor/legion,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "nWh" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -21735,11 +21717,6 @@
 /obj/structure/debris/v3,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
-"oAe" = (
-/obj/machinery/door/unpowered/securedoor,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
-/area/f13/brotherhood/rnd)
 "oAn" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -22899,15 +22876,6 @@
 "phS" = (
 /turf/open/floor/plasteel/cult,
 /area/f13/tunnel)
-"phU" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood{
-	color = "#c5bab2"
-	},
-/area/f13/legion)
 "pig" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/fancy/cigarettes/cigars,
@@ -24582,6 +24550,11 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/rnd)
+"qlu" = (
+/obj/machinery/door/unpowered/securedoor,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/rnd)
 "qlN" = (
 /obj/machinery/shower{
 	dir = 1
@@ -24927,6 +24900,17 @@
 	},
 /turf/open/floor/wood,
 /area/f13/tunnel)
+"qud" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/machinery/door/unpowered/securedoor/legion,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "quB" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -25981,6 +25965,17 @@
 /obj/machinery/plantgenes/seedvault,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
+"req" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13{
+	color = "#d9c4b9";
+	icon_state = "darkrusty";
+	name = "floor_dirty"
+	},
+/area/f13/legion)
 "rex" = (
 /turf/closed/indestructible/rock,
 /area/f13/bunker)
@@ -26521,6 +26516,11 @@
 	},
 /turf/open/floor/plasteel/stairs,
 /area/f13/brotherhood/offices2nd)
+"ruH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "ruR" = (
 /obj/structure/table/wood,
 /obj/machinery/cell_charger,
@@ -27276,6 +27276,15 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
+"rRa" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/simple_door/repaired,
+/turf/open/floor/wood{
+	color = "#cac5ba"
+	},
+/area/f13/legion)
 "rRk" = (
 /obj/item/flashlight/lamp/green,
 /obj/structure/table/wood/settler,
@@ -27507,6 +27516,26 @@
 	icon_state = "yellowrustysolid"
 	},
 /area/f13/tunnel)
+"rXj" = (
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/syndicate_pistol{
+	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
+	name = "Silenced Pistol";
+	pixel_x = 32
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/silenced_pistol{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/tunnel)
 "rXn" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/r_wall,
@@ -27734,15 +27763,6 @@
 	color = "#c5bab2"
 	},
 /area/f13/legion)
-"sff" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Veteran Ranger's Office"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "sfj" = (
 /obj/machinery/shower{
 	dir = 4
@@ -31586,18 +31606,6 @@
 /obj/item/broom,
 /turf/open/floor/plasteel/dark,
 /area/f13/tunnel)
-"uyC" = (
-/obj/effect/decal/fakelattice,
-/obj/machinery/door/unpowered/celldoor/legion,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark{
-	color = "#645546";
-	footstep = "plating";
-	icon_state = "darkrusty"
-	},
-/area/f13/legion)
 "uyQ" = (
 /obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -33326,12 +33334,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/f13/followers)
-"vBC" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/ncr)
 "vBK" = (
 /obj/effect/landmark/start/f13/innerwall,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -34853,6 +34855,13 @@
 "wBs" = (
 /turf/open/floor/wood/f13/oak,
 /area/f13/tunnel)
+"wBF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/brotherhood/leisure)
 "wCb" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
@@ -36563,15 +36572,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
-"xFd" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/simple_door/repaired,
-/turf/open/floor/wood{
-	color = "#cac5ba"
-	},
-/area/f13/legion)
 "xFN" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -38743,7 +38743,7 @@ iue
 eJi
 fxc
 bNv
-sff
+meq
 bNv
 bNv
 bNv
@@ -40802,7 +40802,7 @@ gFP
 bNv
 bNv
 ldn
-vBC
+loB
 kCo
 wVP
 cLN
@@ -41573,7 +41573,7 @@ gRq
 cLN
 bNv
 bNv
-lhK
+mtY
 ldn
 fYq
 cLN
@@ -42600,7 +42600,7 @@ eLE
 eLE
 eLE
 cYU
-mgu
+hpn
 cLN
 cLN
 cLN
@@ -54608,7 +54608,7 @@ xLd
 xLd
 xcp
 xLd
-kjq
+fQv
 xDr
 xDr
 xDr
@@ -58206,7 +58206,7 @@ xLd
 xcp
 xLd
 xLd
-kjq
+fQv
 xDr
 xDr
 cWn
@@ -61294,7 +61294,7 @@ jmN
 xDr
 xDr
 xDr
-aXX
+ruH
 xLd
 xLd
 rfH
@@ -71470,7 +71470,7 @@ omL
 ctr
 omL
 rwA
-hNn
+bFm
 miI
 nuA
 nuA
@@ -71480,7 +71480,7 @@ ghw
 qtd
 dTE
 dek
-ngF
+rXj
 gcb
 omL
 lnL
@@ -89315,7 +89315,7 @@ oSm
 fEw
 oSm
 oSm
-cAU
+dBe
 oSm
 xfF
 xXT
@@ -90329,7 +90329,7 @@ plG
 bcA
 qBC
 qBC
-gyo
+req
 tmq
 kAk
 qny
@@ -92433,7 +92433,7 @@ jZH
 jZH
 tyR
 owa
-cLO
+wBF
 cus
 jZH
 wAf
@@ -92901,7 +92901,7 @@ dgy
 imy
 xja
 cTg
-phU
+nqL
 qny
 qny
 mlv
@@ -92947,7 +92947,7 @@ jZH
 aHH
 owa
 owa
-cLO
+wBF
 cus
 jZH
 fwt
@@ -97299,7 +97299,7 @@ uhf
 mlv
 teX
 wji
-gSO
+nWb
 qBC
 oiQ
 vNP
@@ -97782,7 +97782,7 @@ mlv
 msR
 qny
 rUx
-phU
+nqL
 psp
 xja
 krQ
@@ -98070,7 +98070,7 @@ wji
 pWg
 qBC
 qBC
-gSO
+nWb
 qBC
 qBC
 wcB
@@ -98812,7 +98812,7 @@ gXQ
 jWf
 oSm
 qny
-xFd
+rRa
 qny
 cYS
 mlv
@@ -98841,7 +98841,7 @@ oiQ
 qBC
 qBC
 qBC
-uyC
+cgN
 wji
 qBC
 vNP
@@ -99187,7 +99187,7 @@ jGL
 cmZ
 cFc
 ueQ
-oAe
+qlu
 xEu
 xEu
 tLh
@@ -99612,7 +99612,7 @@ irD
 irD
 wji
 qBC
-gSO
+nWb
 qBC
 qBC
 wvm
@@ -99701,7 +99701,7 @@ nJO
 xhA
 xhA
 ueQ
-oAe
+qlu
 xEu
 xEu
 xhA
@@ -100383,7 +100383,7 @@ qBC
 wji
 qBC
 qBC
-gSO
+nWb
 qBC
 wji
 wcB
@@ -100609,7 +100609,7 @@ mlv
 bcA
 qBC
 qBC
-gyo
+req
 xuI
 oSm
 xVq
@@ -100884,7 +100884,7 @@ amk
 amk
 mlv
 mlv
-mZJ
+qud
 mlv
 vjl
 lAE

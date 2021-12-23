@@ -2174,18 +2174,6 @@
 /obj/structure/chair/comfy/black,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"cjS" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/stool/retro/tan,
-/mob/living/simple_animal/hostile/ncr_trooper/sergeant{
-	desc = "A former NCR Sergeant that had turned his back on the Republic, now little more than a better drilled raider boss.";
-	faction = list("raider");
-	name = "Rogue Sergeant"
-	},
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/bunker)
 "cjW" = (
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13/vault_floor/floor{
@@ -2418,6 +2406,12 @@
 	},
 /turf/open/water,
 /area/f13/tunnel)
+"ctz" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/legion)
 "ctJ" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
@@ -3369,13 +3363,6 @@
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
-/area/f13/bunker)
-"dyd" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "dyq" = (
 /obj/structure/table,
@@ -5870,14 +5857,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
-"fRV" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/obj/structure/bed/dogbed,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "fSx" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -6651,6 +6630,13 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/sewer)
+"gCM" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "feral guard dog"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/bunker)
 "gCX" = (
 /obj/item/gps/computer,
 /turf/open/floor/f13{
@@ -6927,10 +6913,6 @@
 /obj/structure/nest/ghoul,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"gQk" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/plasteel/airless/floorgrime,
-/area/f13/legion)
 "gQA" = (
 /obj/structure/table,
 /obj/item/seeds/ambrosia/deus,
@@ -7720,6 +7702,10 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"hHQ" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/plasteel/airless/floorgrime,
+/area/f13/legion)
 "hHU" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -7948,6 +7934,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"hTN" = (
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/bunker)
 "hTT" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -10564,6 +10554,16 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/sewer)
+"kum" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "feral guard dog"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/bunker)
 "kve" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -10879,6 +10879,14 @@
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
+"kMb" = (
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Church Backroom";
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
 "kMd" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /obj/effect/decal/cleanable/dirt{
@@ -12022,6 +12030,18 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/sewer)
+"lMo" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/stool/retro/tan,
+/mob/living/simple_animal/hostile/ncr_trooper/sergeant{
+	desc = "A former NCR Sergeant that had turned his back on the Republic, now little more than a better drilled raider boss.";
+	faction = list("raider");
+	name = "Rogue Sergeant"
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/bunker)
 "lMy" = (
 /obj/structure/bed/roller,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -14574,12 +14594,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/water,
 /area/f13/caves)
-"oeW" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/legion)
 "ofm" = (
 /obj/effect/gibspawner/human,
 /obj/structure/chair/sofa/left{
@@ -15371,6 +15385,14 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"oQs" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "feral guard dog"
+	},
+/obj/effect/gibspawner/human,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/bunker)
 "oQM" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housebase"
@@ -15414,10 +15436,6 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/bunker)
-"oSy" = (
-/obj/structure/simple_door/repaired,
-/turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "oTX" = (
 /obj/structure/lattice/catwalk,
@@ -15595,14 +15613,6 @@
 /obj/machinery/smartfridge/bottlerack/lootshelf/construction,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
-"peC" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/obj/effect/gibspawner/human,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "peE" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 8
@@ -16097,6 +16107,14 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
+/area/f13/bunker)
+"pBP" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "feral guard dog"
+	},
+/obj/structure/bed/dogbed,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "pCg" = (
 /obj/structure/nest/ghoul,
@@ -16656,14 +16674,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
-"qgN" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/obj/structure/campfire/barrel,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "qhl" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -16996,6 +17006,14 @@
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"qAJ" = (
+/mob/living/simple_animal/hostile/wolf/feral_dog{
+	faction = list("hostile","wolf","ghoul");
+	name = "feral guard dog"
+	},
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/bunker)
 "qAP" = (
 /obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/decal/fakelattice,
@@ -17127,14 +17145,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/bunker)
-"qEK" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Church Backroom";
-	req_one_access_txt = "25"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/caves)
 "qEO" = (
 /obj/structure/rack,
 /obj/machinery/light{
@@ -18958,16 +18968,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
-"sqd" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/wolf/feral_dog{
-	faction = list("hostile","wolf","ghoul");
-	name = "feral guard dog"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/bunker)
 "sqj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/side,
@@ -20012,6 +20012,12 @@
 /mob/living/simple_animal/hostile/handy/playable,
 /turf/open/water,
 /area/f13/sewer)
+"tBx" = (
+/obj/structure/simple_door/repaired,
+/turf/open/floor/wood/f13{
+	icon_state = "wood"
+	},
+/area/f13/bunker)
 "tCf" = (
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -23581,12 +23587,6 @@
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
-	},
-/area/f13/bunker)
-"wNn" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
 	},
 /area/f13/bunker)
 "wNp" = (
@@ -44801,7 +44801,7 @@ sWW
 sWW
 iBp
 oxc
-dyd
+gCM
 iBY
 wSI
 iBp
@@ -45408,7 +45408,7 @@ phU
 phU
 phU
 vlf
-dyd
+gCM
 phU
 phU
 phU
@@ -45608,7 +45608,7 @@ nCf
 nCf
 owS
 wSI
-qgN
+qAJ
 iBY
 iBY
 iBY
@@ -47426,7 +47426,7 @@ cxX
 aKu
 tLr
 eZz
-sqd
+kum
 bne
 ekb
 jAu
@@ -48437,7 +48437,7 @@ fEp
 fEp
 wSI
 wSI
-oSy
+hTN
 wSI
 wSI
 iBY
@@ -48849,7 +48849,7 @@ iBY
 iBY
 iBY
 tsn
-fRV
+pBP
 tdR
 hGS
 mOQ
@@ -49052,8 +49052,8 @@ iBY
 iBY
 tsn
 xkr
-dyd
-dyd
+gCM
+gCM
 mOQ
 lQl
 dOS
@@ -49657,9 +49657,9 @@ iBY
 iBY
 iBY
 tsn
-dyd
+gCM
 iBY
-dyd
+gCM
 mOQ
 ykJ
 dOS
@@ -49860,7 +49860,7 @@ iBY
 iBY
 tsn
 hGS
-peC
+oQs
 hGS
 mOQ
 dOS
@@ -50661,7 +50661,7 @@ dQj
 kqE
 kqE
 kqE
-oSy
+hTN
 iBY
 iBY
 iBY
@@ -54334,7 +54334,7 @@ eXl
 cvc
 pTO
 tGT
-qEK
+kMb
 tGT
 tGT
 tGT
@@ -64901,7 +64901,7 @@ mOQ
 xZt
 mzk
 mzk
-cjS
+lMo
 wrt
 nIO
 pbf
@@ -76412,7 +76412,7 @@ rUl
 hFs
 aFO
 bUM
-oeW
+ctz
 bUM
 fvA
 fvA
@@ -76458,9 +76458,9 @@ vkL
 bUM
 bUM
 wKQ
-gQk
+hHQ
 pZQ
-gQk
+hHQ
 oXe
 bUM
 iBp
@@ -94057,7 +94057,7 @@ fPY
 cSg
 lcG
 nNr
-oSy
+hTN
 iBY
 iBY
 qXT
@@ -95662,7 +95662,7 @@ sWW
 wSI
 qew
 iBY
-oSy
+hTN
 iBY
 iBY
 muS
@@ -95673,7 +95673,7 @@ muS
 lcG
 cSg
 cSg
-oSy
+hTN
 iBY
 qXT
 iBY
@@ -97896,7 +97896,7 @@ drh
 lcG
 lcG
 lcG
-wNn
+tBx
 iBY
 iBY
 wSI
