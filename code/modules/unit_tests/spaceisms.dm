@@ -4,7 +4,7 @@ GLOBAL_LIST_EMPTY(spaceisms_list)
 var/global/regex/spaceism_regex = regex("(nanotrasen|bluespace|syndicate)", "i")
 /atom/Initialize(mapload, ...)
 	. = ..()
-	if(spaceism_regex.Find(desc))
+	if(spaceism_regex?.Find(desc))
 		GLOB.spaceisms_list[type] = spaceism_regex.group[1]
 
 /datum/unit_test/spaceisms/Run()
