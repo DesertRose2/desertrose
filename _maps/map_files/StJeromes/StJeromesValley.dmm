@@ -9595,9 +9595,9 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "aBM" = (
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat,
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/combat/swat,
@@ -15037,10 +15037,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
-"aTl" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/indestructible/ground/outside/snow,
-/area/f13/underground/mountain)
 "aTm" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/indestructible/ground/outside/snow,
@@ -20705,10 +20701,6 @@
 /obj/structure/tires/five,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
-"bkX" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/indestructible/ground/outside/snow,
-/area/f13/wasteland)
 "bkY" = (
 /obj/structure/flora/stump,
 /turf/open/indestructible/ground/outside/snow,
@@ -23490,7 +23482,6 @@
 	color = "red";
 	pixel_y = -30
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/carpet,
 /area/f13/underground/mountain)
 "btu" = (
@@ -26658,8 +26649,6 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/spawner/lootdrop/clothing_low,
-//obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/turf/open/floor/f13/wood,
 /area/f13/city)
 "bCk" = (
 /obj/structure/table/wood,
@@ -169508,7 +169497,7 @@ baP
 baE
 bkW
 aDL
-bkX
+bkR
 aDL
 aDL
 aDL
@@ -179972,7 +179961,7 @@ atJ
 atJ
 atJ
 aSS
-aTl
+aTi
 aBZ
 aBZ
 aBZ
@@ -181793,7 +181782,7 @@ atJ
 atJ
 aBZ
 aBZ
-aTl
+aTi
 aBZ
 aBZ
 aBZ
@@ -182825,7 +182814,7 @@ bzH
 bzK
 bzL
 aBZ
-aTl
+aTi
 aBZ
 aZX
 aDL

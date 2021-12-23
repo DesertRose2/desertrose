@@ -180,7 +180,7 @@
 
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
-	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Nanotrasen space facilities."
+	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband within Vault-Tec installations."
 	poster_item_icon_state = "rolled_poster"
 
 /obj/structure/sign/poster/contraband/random
@@ -214,11 +214,6 @@
 	desc = "Oh what in the hell? Those cultists have animated paper technology and they use it for a meme?"
 	icon_state = "postvar"
 
-/obj/structure/sign/poster/contraband/syndicate_recruitment
-	name = "Syndicate Recruitment"
-	desc = "See the galaxy! Shatter corrupt megacorporations! Join today!"
-	icon_state = "poster5"
-
 /obj/structure/sign/poster/contraband/clown
 	name = "Clown"
 	desc = "Honk."
@@ -236,18 +231,13 @@
 
 /obj/structure/sign/poster/contraband/missing_gloves
 	name = "Missing Gloves"
-	desc = "This poster references the uproar that followed Nanotrasen's financial cuts toward insulated-glove purchases."
+	desc = "This poster references the uproar that followed Vault-Tec's financial cuts toward insulated-glove purchases."
 	icon_state = "poster9"
 
 /obj/structure/sign/poster/contraband/hacking_guide
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common Nanotrasen airlock. Sadly, it appears out of date."
+	desc = "This poster details the internal workings of the common Vault-Tec airlock. Sadly, it appears out of date."
 	icon_state = "poster10"
-
-/obj/structure/sign/poster/contraband/rip_badger
-	name = "RIP Badger"
-	desc = "This seditious poster references Nanotrasen's genocide of a space station full of badgers."
-	icon_state = "poster11"
 
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris
 	name = "Ambrosia Vulgaris"
@@ -271,7 +261,7 @@
 
 /obj/structure/sign/poster/contraband/power
 	name = "Power"
-	desc = "A poster that positions the seat of power outside Nanotrasen."
+	desc = "A poster that positions the seat of power outside Vault-Tec."
 	icon_state = "poster16"
 
 /obj/structure/sign/poster/contraband/space_cube
@@ -306,7 +296,7 @@
 
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
-	desc = "A poster urging the viewer to rebel against Nanotrasen."
+	desc = "A poster urging the viewer to rebel against Vault-Tec."
 	icon_state = "poster23"
 
 /obj/structure/sign/poster/contraband/c20r
@@ -329,11 +319,6 @@
 	name = "D-Day Promo"
 	desc = "A promotional poster for some rapper."
 	icon_state = "poster27"
-
-/obj/structure/sign/poster/contraband/syndicate_pistol
-	name = "Syndicate Pistol"
-	desc = "A poster advertising syndicate pistols as being 'classy as fuck'. It is covered in faded gang tags."
-	icon_state = "poster28"
 
 /obj/structure/sign/poster/contraband/energy_swords
 	name = "Energy Swords"
@@ -422,13 +407,8 @@
 
 /obj/structure/sign/poster/contraband/scum
 	name = "Security are Scum"
-	desc = "Anti-security propaganda. Features a human NanoTrasen security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security."
+	desc = "Anti-security propaganda. Features a Vault-Tec security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security."
 	icon_state = "poster46"
-
-/obj/structure/sign/poster/contraband/syndicate_logo
-	name = "Syndicate"
-	desc = "A poster decipting a snake shaped into an ominous 'S'!"
-	icon_state = "poster47"
 
 /obj/structure/sign/poster/contraband/bountyhunters
 	name = "Bounty Hunters"
@@ -437,7 +417,7 @@
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official Vault-Tec-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -450,11 +430,6 @@
 	name = "Here For Your Safety"
 	desc = "A poster glorifying the station's security force."
 	icon_state = "poster1_legit"
-
-/obj/structure/sign/poster/official/nanotrasen_logo
-	name = "Nanotrasen Logo"
-	desc = "A poster depicting the Nanotrasen logo."
-	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness
 	name = "Cleanliness"
@@ -571,25 +546,10 @@
 	desc = "Cohiba Robusto, the classy cigar."
 	icon_state = "poster25_legit"
 
-/obj/structure/sign/poster/official/anniversary_vintage_reprint
-	name = "50th Anniversary Vintage Reprint"
-	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Nanoposters Manufacturing, a subsidiary of Nanotrasen."
-	icon_state = "poster26_legit"
-
 /obj/structure/sign/poster/official/fruit_bowl
 	name = "Fruit Bowl"
 	desc = " Simple, yet awe-inspiring."
 	icon_state = "poster27_legit"
-
-/obj/structure/sign/poster/official/pda_ad
-	name = "PDA Ad"
-	desc = "A poster advertising the latest PDA from Nanotrasen suppliers."
-	icon_state = "poster28_legit"
-
-/obj/structure/sign/poster/official/enlist
-	name = "Enlist" // but I thought deathsquad was never acknowledged
-	desc = "Enlist in the Nanotrasen Deathsquadron reserves today!"
-	icon_state = "poster29_legit"
 
 /obj/structure/sign/poster/official/nanomichi_ad
 	name = "Nanomichi Ad"
@@ -613,7 +573,7 @@
 
 /obj/structure/sign/poster/official/no_erp
 	name = "No ERP"
-	desc = "This poster reminds the crew that Eroticism, Rape and Pornography are banned on Nanotrasen stations."
+	desc = "This poster reminds the crew that Eroticism, Rape and Pornography are banned on Vault-Tec installations."
 	icon_state = "poster34_legit"
 
 /obj/structure/sign/poster/official/wtf_is_co2
@@ -636,16 +596,6 @@
 	desc = "An advertisement for 'Fashion!', a popular fashion magazine, depicting a woman with a black dress with a golden trim, she also has a red poppy in her hair."
 	icon_state = "poster38_legit"
 
-/obj/structure/sign/poster/official/pda_ad600
-	name = "NT PDA600 Ad"
-	desc = "A poster advertising an old discounted Nanotrasen PDA. This is the old 600 model, it has a small screen and suffered from security and networking issues."
-	icon_state = "poster39_legit"
-
-/obj/structure/sign/poster/official/pda_ad800
-	name = "NT PDA800 Ad"
-	desc = "An advertisement on an old Nanotrasen PDA model. The 800 fixed a lot of security flaws that the 600 had; it also had large touchscreen and hot-swappable cartridges."
-	icon_state = "poster40_legit"
-
 /obj/structure/sign/poster/official/hydro_ad
 	name = "Hydroponics Tray"
 	desc = "An advertisement for hydroponics trays. Space Station 13's botanical department uses a slightly newer model, but the principles are the same. From left to right: Green means the plant is done, red means the plant is unhealthy, flashing red means pests or weeds, yellow means the plant needs nutriment and blue means the plant needs water."
@@ -655,17 +605,6 @@
 	name = "Medical"
 	desc = "A green cross, one of the interplanetary symbol of health and aid. It has a bunch of common languages at the top with translations." // Didn't the American Heart Foundation trademark red crosses? I'm playing it safe with green, not that they'll notice spacegame13 poster.
 	icon_state = "poster42_legit"
-
-/obj/structure/sign/poster/official/nt_storm_officer
-	name = "NT Storm Ad"
-	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, This is the officer variant. I comes with a better radio, better HUD software and better targeting sensors."
-	icon_state = "poster43_legit"
-
-/obj/structure/sign/poster/official/nt_storm
-	name = "NT Storm Ad"
-	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, It contains a rebreather and full head coverage for use on harsh environments where the air isn't always safe to breathe."
-	icon_state = "poster44_legit"
-
 
 /obj/structure/sign/poster/ncr/keep_to_myself
 	name = "NCR poster"

@@ -488,7 +488,7 @@
 "bv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/soap/nanotrasen,
+/obj/item/soap,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -511,7 +511,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/ancientstation)
 "by" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/prewar/vault_tec,
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/ancientstation/comm)
 "bz" = (
@@ -1615,7 +1615,6 @@
 "ex" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -3352,7 +3351,7 @@
 	dir = 8
 	},
 /obj/item/broken_bottle,
-/obj/item/soap/nanotrasen,
+/obj/item/soap,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/ancientstation/rnd)
@@ -5120,7 +5119,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/obj/item/soap/nanotrasen,
+/obj/item/soap,
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/ancientstation)
 "Zk" = (

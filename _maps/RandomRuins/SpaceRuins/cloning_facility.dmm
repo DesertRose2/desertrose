@@ -129,7 +129,6 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "n" = (
-/obj/structure/sign/nanotrasen,
 /turf/closed/wall,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "o" = (

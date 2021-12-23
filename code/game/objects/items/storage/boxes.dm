@@ -332,7 +332,7 @@
 		new /obj/item/grenade/empgrenade(src)
 
 /obj/item/storage/box/minibombs
-	name = "box of syndicate minibombs"
+	name = "box of minibombs"
 	desc = "A box containing 2 highly explosive syndicate minibombs."
 	icon_state = "syndiebox"
 	illustration = "frag"
@@ -854,8 +854,6 @@
 	. = ..()
 	papersack_designs = sortList(list(
 		"None" = image(icon = src.icon, icon_state = "paperbag_None"),
-		"NanotrasenStandard" = image(icon = src.icon, icon_state = "paperbag_NanotrasenStandard"),
-		"SyndiSnacks" = image(icon = src.icon, icon_state = "paperbag_SyndiSnacks"),
 		"Heart" = image(icon = src.icon, icon_state = "paperbag_Heart"),
 		"SmileyFace" = image(icon = src.icon, icon_state = "paperbag_SmileyFace")
 		))
@@ -877,10 +875,6 @@
 		switch(choice)
 			if("None")
 				desc = "A sack neatly crafted out of paper."
-			if("NanotrasenStandard")
-				desc = "A standard Nanotrasen paper lunch sack for loyal employees on the go."
-			if("SyndiSnacks")
-				desc = "The design on this paper sack is a remnant of the notorious 'SyndieSnacks' program."
 			if("Heart")
 				desc = "A paper sack with a heart etched onto the side."
 			if("SmileyFace")
@@ -1223,8 +1217,8 @@
 	illustration = null
 
 /obj/item/storage/box/mre //base MRE type.
-	name = "Nanotrasen MRE Ration Kit Menu 0"
-	desc = "A package containing food suspended in an outdated bluespace pocket which lasts for centuries. If you're lucky you may even be able to enjoy the meal without getting food poisoning."
+	name = "Vault-Tec MRE Ration Kit Menu 0"
+	desc = "A package containing irradiated food which lasts for centuries. If you're lucky you may even be able to enjoy the meal without getting rad poisoning."
 	icon_state = "mre"
 	illustration = null
 	var/can_expire = TRUE
@@ -1249,10 +1243,10 @@
 					ENABLE_BITFIELD(S.foodtype, TOXIC)
 
 /obj/item/storage/box/mre/menu1
-	name = "\improper Nanotrasen MRE Ration Kit Menu 1"
+	name = "\improper Vault-Tec MRE Ration Kit Menu 1"
 
 /obj/item/storage/box/mre/menu1/safe
-	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
+	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
 	spawner_chance = 0
 	can_expire = FALSE
 
@@ -1264,11 +1258,11 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu2
-	name = "\improper Nanotrasen MRE Ration Kit Menu 2"
+	name = "\improper Vault-Tec MRE Ration Kit Menu 2"
 
 /obj/item/storage/box/mre/menu2/safe
 	spawner_chance = 0
-	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
+	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
 	can_expire = FALSE
 
 /obj/item/storage/box/mre/menu2/PopulateContents()
@@ -1279,7 +1273,7 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu3
-	name = "\improper Nanotrasen MRE Ration Kit Menu 3"
+	name = "\improper Vault-Tec MRE Ration Kit Menu 3"
 	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any NT employee lucky enough to get their hands on one of these is truly blessed."
 	icon_state = "menu3"
 	can_expire = FALSE //always fresh, never expired.
@@ -1294,7 +1288,7 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu4
-	name = "\improper Nanotrasen MRE Ration Kit Menu 4"
+	name = "\improper Vault-Tec MRE Ration Kit Menu 4"
 
 /obj/item/storage/box/mre/menu4/safe
 	spawner_chance = 0

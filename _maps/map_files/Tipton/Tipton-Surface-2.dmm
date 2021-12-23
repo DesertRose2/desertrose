@@ -26798,11 +26798,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"tmt" = (
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalbottombordertopright"
-	},
-/area/f13/wasteland)
 "tmM" = (
 /obj/structure/sink{
 	dir = 4;
@@ -29256,7 +29251,6 @@
 	color = "red";
 	pixel_y = -30
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/carpet,
 /area/f13/building)
 "vaM" = (
@@ -103521,11 +103515,11 @@ vUP
 xKU
 xKU
 yiN
-tmt
-tmt
-tmt
-tmt
-tmt
+thn
+thn
+thn
+thn
+thn
 vko
 lVb
 sfa
@@ -105885,8 +105879,8 @@ sfa
 ejj
 sfa
 yiN
-tmt
-tmt
+thn
+thn
 vko
 sfa
 sfa
@@ -105952,10 +105946,10 @@ mNY
 mNY
 mNY
 abI
-tmt
-tmt
-tmt
-tmt
+thn
+thn
+thn
+thn
 rQk
 oAD
 dhQ
@@ -106694,9 +106688,9 @@ sfa
 xFY
 yiN
 xmH
-tmt
-tmt
-tmt
+thn
+thn
+thn
 vko
 boP
 sfa

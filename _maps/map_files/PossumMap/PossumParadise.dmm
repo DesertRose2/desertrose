@@ -6121,9 +6121,9 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "asB" = (
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat,
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/combat/swat,
@@ -10221,10 +10221,6 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/dark,
 /area/f13/casino)
-"aGe" = (
-/obj/structure/sign/nanotrasen,
-/turf/closed/wall/r_wall/f13/vault,
-/area/f13/city)
 "aGf" = (
 /obj/machinery/door/airlock/glass_large,
 /turf/open/floor/wood,
@@ -12894,13 +12890,6 @@
 /obj/item/pen,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
-"aPv" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/effect/spawner/lootdrop/clothing_low,
-//obj/vehicle/ridden/scooter/skateboard,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "aPw" = (
 /obj/structure/chair{
 	dir = 4;
@@ -13079,10 +13068,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aQc" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/floor/grass/snow,
-/area/f13/underground/mountain)
-"aQd" = (
 /mob/living/simple_animal/hostile/wolf,
 /turf/open/floor/grass/snow,
 /area/f13/underground/mountain)
@@ -17781,10 +17766,6 @@
 /obj/structure/chair/f13foldupchair,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"bfj" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/floor/grass/snow,
-/area/f13/wasteland)
 "bfk" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
@@ -146702,7 +146683,7 @@ bed
 aGt
 beL
 asO
-bfj
+bdT
 asO
 asO
 asO
@@ -157166,7 +157147,7 @@ asa
 asa
 asa
 aOf
-aQd
+aQc
 aOf
 aOf
 aOf
@@ -158987,7 +158968,7 @@ asa
 asa
 aOf
 aOf
-aQd
+aQc
 aOf
 aOf
 aOf
@@ -160019,7 +160000,7 @@ aOd
 aOd
 aOd
 aOf
-aQd
+aQc
 aOf
 aOf
 asO
@@ -162155,7 +162136,7 @@ asx
 asx
 asx
 atm
-aGe
+asj
 aGw
 avC
 avC
@@ -162963,7 +162944,7 @@ atG
 atG
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC
@@ -163771,7 +163752,7 @@ atG
 asj
 aFs
 aFs
-aGe
+asj
 aGx
 avC
 avC
@@ -164579,7 +164560,7 @@ atN
 aBq
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC
@@ -165185,7 +165166,7 @@ atG
 aBq
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC
@@ -165441,7 +165422,7 @@ aPc
 aOr
 aOE
 aOR
-aPv
+aPc
 aOr
 aPI
 aOy
@@ -165993,7 +165974,7 @@ asF
 asj
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC
@@ -166801,7 +166782,7 @@ asF
 asj
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC
@@ -167609,7 +167590,7 @@ atG
 ayJ
 asx
 atm
-aGe
+asj
 aGx
 avC
 avC

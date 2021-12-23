@@ -35107,7 +35107,6 @@
 	color = "red";
 	pixel_y = -30
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/carpet,
 /area/f13/building)
 "jCN" = (

@@ -257,7 +257,6 @@
 /area/shuttle/escape)
 "ay" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -504,7 +503,6 @@
 /area/shuttle/escape)
 "aV" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "aW" = (
@@ -833,10 +831,6 @@
 /turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bL" = (
-/obj/structure/sign/nanotrasen{
-	pixel_x = -32;
-	pixel_y = 32
-	},
 /turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bM" = (

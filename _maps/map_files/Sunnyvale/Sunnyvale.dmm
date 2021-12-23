@@ -23043,7 +23043,7 @@
 /area/f13/raider_mall)
 "blC" = (
 /obj/structure/rack,
-/obj/item/soap/nanotrasen,
+/obj/item/soap,
 /obj/item/storage/toolbox/artistic,
 /turf/open/floor/wood/f13/old,
 /area/f13/raider_mall)

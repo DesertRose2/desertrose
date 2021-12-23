@@ -663,11 +663,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
-"lS" = (
-/obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
-/turf/open/floor/plasteel/f13/vault_floor/red,
-/area/f13/bunker)
 "lW" = (
 /obj/structure/simple_door/bunker,
 /obj/effect/step_trigger/message{
@@ -3623,7 +3618,7 @@ uf
 uf
 Ui
 gB
-lS
+VM
 bl
 rW
 uf
