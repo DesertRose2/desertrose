@@ -167,10 +167,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
-"alk" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/den)
 "amH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
@@ -308,11 +304,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
-"atx" = (
-/obj/structure/simple_door/metal/iron,
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/f13/wood,
-/area/f13/sewer)
 "atQ" = (
 /obj/structure/reagent_dispensers/barrel/two,
 /turf/open/floor/f13{
@@ -331,10 +322,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
-"auS" = (
-/obj/structure/simple_door/brokenglass,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "auU" = (
 /obj/effect/landmark/start/f13/auxilia,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -795,7 +782,6 @@
 	},
 /area/f13/bunker)
 "aTL" = (
-/obj/structure/simple_door/bunker,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowdirtyfull"
@@ -892,10 +878,6 @@
 /mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/water,
 /area/f13/radiation)
-"aXb" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/f13/wood,
-/area/f13/sewer)
 "aXm" = (
 /obj/effect/decal/waste,
 /mob/living/simple_animal/hostile/fireant,
@@ -1058,7 +1040,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bdt" = (
-/obj/structure/simple_door/brokenglass,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -1213,10 +1194,6 @@
 	icon_state = "greenfull"
 	},
 /area/f13/sewer)
-"bjb" = (
-/obj/structure/simple_door/room,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "bjd" = (
 /obj/structure/bonfire/prelit,
 /turf/open/floor/plating/dirt,
@@ -1334,12 +1311,6 @@
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/wood/f13/old,
 /area/f13/tunnel)
-"bnT" = (
-/obj/structure/simple_door/dirtyglass,
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
-	},
-/area/f13/bunker)
 "boj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -1501,13 +1472,6 @@
 "bye" = (
 /turf/open/floor/plating,
 /area/f13/tunnel)
-"byx" = (
-/obj/structure/disposalpipe/broken{
-	dir = 4
-	},
-/obj/structure/simple_door/metal/ventilation,
-/turf/open/floor/plating/tunnel,
-/area/f13/sewer)
 "byC" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -1710,10 +1674,6 @@
 "bJC" = (
 /obj/structure/ladder/unbreakable,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
-"bJL" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
 "bKa" = (
 /obj/structure/lattice,
@@ -2003,11 +1963,6 @@
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
-"bYh" = (
-/obj/structure/simple_door/metal/barred,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "bYN" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/inside/subway,
@@ -2263,10 +2218,6 @@
 	icon_state = "bar"
 	},
 /area/f13/bunker)
-"ckQ" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/plasteel/floorgrime,
-/area/f13/sewer)
 "ckW" = (
 /obj/structure/table/wood,
 /obj/structure/curtain{
@@ -2323,7 +2274,6 @@
 	},
 /area/f13/caves)
 "cnT" = (
-/obj/structure/simple_door/bunker,
 /obj/effect/mine/stun,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -2360,11 +2310,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/sewer)
-"cpR" = (
-/obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "cpZ" = (
 /obj/structure/rack,
 /obj/item/clothing/head/hardhat{
@@ -2420,12 +2365,6 @@
 	},
 /turf/closed/wall/rust,
 /area/f13/bunker)
-"crZ" = (
-/obj/structure/simple_door/dirtyglass,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/tunnel)
 "csz" = (
 /obj/structure/closet/crate{
 	anchored = 1
@@ -2514,12 +2453,6 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
-	},
-/area/f13/sewer)
-"cyC" = (
-/obj/structure/simple_door/metal/fence,
-/turf/open/floor/f13{
-	icon_state = "greenfull"
 	},
 /area/f13/sewer)
 "czg" = (
@@ -3107,12 +3040,6 @@
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"dcm" = (
-/obj/structure/simple_door/tent,
-/turf/open/floor/wood/f13{
-	icon_state = "wood"
-	},
-/area/f13/bunker)
 "dcA" = (
 /obj/structure/disposalpipe/broken,
 /obj/structure/spider/stickyweb,
@@ -3396,12 +3323,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/legion)
-"dto" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/legion)
 "dtK" = (
 /obj/structure/wreck/trash/one_barrel,
 /turf/open/floor/plating/dirt/dark,
@@ -3535,7 +3456,6 @@
 "dCL" = (
 /obj/structure/lattice,
 /obj/effect/gibspawner/human,
-/obj/structure/simple_door/bunker,
 /turf/open/floor/plating,
 /area/f13/bunker)
 "dCP" = (
@@ -3906,10 +3826,6 @@
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
-"dQj" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "dRe" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -3967,11 +3883,6 @@
 /obj/structure/disposalpipe/trunk/multiz/down{
 	dir = 8
 	},
-/obj/structure/simple_door/metal/ventilation,
-/turf/open/floor/plating/tunnel,
-/area/f13/sewer)
-"dUu" = (
-/obj/structure/simple_door/bunker,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "dUW" = (
@@ -4032,15 +3943,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
-"dXu" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "greenrustyfull"
-	},
-/area/f13/sewer)
 "dXO" = (
 /obj/machinery/workbench,
 /turf/open/floor/f13{
@@ -4265,16 +4167,6 @@
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"egY" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "ehs" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -4528,11 +4420,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"ewn" = (
-/obj/structure/simple_door/metal/barred,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "ewq" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/pizza/meat,
@@ -4570,13 +4457,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13{
 	icon_state = "wood-broken5"
-	},
-/area/f13/bunker)
-"ezd" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
 	},
 /area/f13/bunker)
 "ezp" = (
@@ -4905,10 +4785,6 @@
 	dir = 1
 	},
 /area/f13/radiation)
-"eNI" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
 "eNZ" = (
 /obj/structure/reagent_dispensers/barrel/three,
 /turf/open/indestructible/ground/inside/subway,
@@ -4965,10 +4841,6 @@
 	},
 /turf/open/water,
 /area/f13/sewer)
-"eQS" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/wood/f13/old,
-/area/f13/tunnel)
 "eRc" = (
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13{
@@ -5586,7 +5458,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "fwJ" = (
-/obj/structure/simple_door/brokenglass,
 /obj/structure/decoration/rag,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -5633,17 +5504,6 @@
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
-"fxq" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "fxw" = (
 /obj/structure/table_frame/wood,
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged,
@@ -5807,12 +5667,6 @@
 /obj/effect/decal/cleanable/insectguts,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
-"fIl" = (
-/obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/tunnel)
 "fIq" = (
 /obj/structure/bed/old,
 /obj/item/blanket,
@@ -5865,8 +5719,6 @@
 /area/f13/bunker)
 "fJZ" = (
 /obj/structure/lattice,
-/obj/structure/simple_door/bunker,
-/obj/structure/simple_door/bunker,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -5936,10 +5788,6 @@
 /obj/structure/nest/radroach,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"fOk" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/outside/wood,
-/area/f13/caves)
 "fOO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
@@ -6272,7 +6120,6 @@
 /obj/structure/disposalpipe/trunk/multiz/down{
 	dir = 1
 	},
-/obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "gfq" = (
@@ -6616,10 +6463,6 @@
 /mob/living/simple_animal/hostile/mirelurk,
 /turf/open/water,
 /area/f13/tunnel)
-"gtd" = (
-/obj/structure/simple_door/metal/fence,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "gtt" = (
 /obj/structure/table,
 /obj/item/clothing/suit/armor/vest/durathread,
@@ -6709,12 +6552,6 @@
 /obj/effect/decal/waste,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"gyg" = (
-/obj/structure/simple_door/metal/store{
-	icon_state = "brokenstore"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
 "gyj" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7013,10 +6850,6 @@
 /obj/item/trash/coal,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"gMs" = (
-/obj/structure/simple_door/room,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/radiation)
 "gMF" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/handrail/g_central{
@@ -7275,7 +7108,6 @@
 /turf/open/floor/plating/dirt/dark,
 /area/f13/caves)
 "hbb" = (
-/obj/structure/simple_door/tent,
 /turf/open/floor/wood/f13{
 	icon_state = "wood-broken6"
 	},
@@ -7782,7 +7614,6 @@
 	icon_state = "post_wood";
 	pixel_y = -5
 	},
-/obj/structure/simple_door/tent,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "hyQ" = (
@@ -8200,10 +8031,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
-"hVN" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/water,
-/area/f13/tunnel)
 "hVV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/wreck/trash/engine,
@@ -8284,7 +8111,6 @@
 	},
 /area/f13/bunker)
 "ibD" = (
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
 "ibI" = (
@@ -8331,10 +8157,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
 /turf/open/floor/wood/f13/old,
 /area/f13/radiation)
-"iev" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/f13/wood,
-/area/f13/sewer)
 "ieE" = (
 /obj/structure/lattice,
 /obj/structure/table/wood,
@@ -8405,12 +8227,6 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
-"iid" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "iig" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -8799,10 +8615,6 @@
 /obj/item/stack/f13Cash/random/low,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"iwv" = (
-/obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/plasteel/floorgrime,
-/area/f13/sewer)
 "iwT" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/wood/f13{
@@ -8948,7 +8760,6 @@
 /turf/open/floor/plating/dirt/dark,
 /area/f13/tunnel)
 "iEG" = (
-/obj/structure/simple_door/metal/barred,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -9276,7 +9087,6 @@
 /area/f13/sewer)
 "iRZ" = (
 /obj/structure/disposalpipe/trunk/multiz/down,
-/obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "iSk" = (
@@ -9363,14 +9173,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
-"iVG" = (
-/obj/structure/simple_door/metal/iron,
-/obj/structure/barricade/wooden/planks/pregame,
-/obj/structure/decoration/rag{
-	icon_state = "skin"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/sewer)
 "iVN" = (
 /obj/structure/rack,
 /obj/item/crafting/lunchbox,
@@ -9589,12 +9391,6 @@
 /obj/structure/disposalpipe/junction/yjunction,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
-"jgB" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plasteel/f13/vault_floor/yellow{
-	icon_state = "yellowrustyfull"
-	},
-/area/f13/sewer)
 "jgJ" = (
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9841,13 +9637,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/tunnel)
-"jpJ" = (
-/obj/structure/simple_door/metal/fence{
-	door_type = "fence_wood";
-	icon_state = "fence_wood"
-	},
-/turf/open/indestructible/ground/inside/dirt,
-/area/f13/wasteland)
 "jqq" = (
 /obj/structure/debris/v4,
 /turf/closed/wall/f13/ruins,
@@ -10080,12 +9869,6 @@
 /obj/effect/gibspawner/human,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"jyd" = (
-/obj/structure/simple_door/house{
-	icon_state = "interior"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/tunnel)
 "jyO" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/fakelattice,
@@ -10301,12 +10084,6 @@
 /obj/structure/decoration/rag,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"jPc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/metal/iron,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "jPB" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /obj/effect/decal/waste{
@@ -10509,10 +10286,6 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"kax" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "kaG" = (
 /obj/structure/wreck/trash/two_tire,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10642,10 +10415,6 @@
 /obj/structure/debris/v4,
 /turf/open/floor/plating/dirt/dark,
 /area/f13/sewer)
-"kgW" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plasteel/airless/floorgrime,
-/area/f13/legion)
 "kha" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/rock/pile/largejungle,
@@ -10719,12 +10488,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/side,
 /area/f13/legion)
-"kkE" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/yellow{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/sewer)
 "kkI" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -10751,7 +10514,6 @@
 /turf/open/floor/plating/ice,
 /area/f13/tunnel)
 "klw" = (
-/obj/structure/simple_door/bunker,
 /obj/structure/decoration/rag,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowdirtyfull"
@@ -10765,7 +10527,6 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/obj/structure/simple_door/brokenglass,
 /obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -10843,10 +10604,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
-"kpR" = (
-/obj/structure/simple_door/dirtyglass,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "kqb" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -10867,7 +10624,6 @@
 /area/f13/bunker)
 "kqF" = (
 /obj/structure/barricade/wooden/planks/pregame,
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "krg" = (
@@ -11086,10 +10842,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowrustyfull"
 	},
-/area/f13/sewer)
-"kGt" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "kGM" = (
 /obj/structure/disposalpipe/trunk{
@@ -11622,10 +11374,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"lah" = (
-/obj/structure/simple_door/metal/fence,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "lau" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -11786,12 +11534,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
-"lfa" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/f13{
-	icon_state = "greenrustyfull"
-	},
-/area/f13/sewer)
 "lgg" = (
 /obj/structure/sign/poster/contraband/communist_state,
 /turf/closed/indestructible/f13vaultrusted,
@@ -12150,10 +11892,6 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plating/rust,
 /area/f13/sewer)
-"lxw" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/carpet,
-/area/f13/shack)
 "lxJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa,
@@ -12704,13 +12442,7 @@
 	},
 /area/f13/radiation)
 "lXx" = (
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/sewer)
-"lXH" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/simple_door/metal/ventilation,
-/turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "lXK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12884,7 +12616,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/bunker)
 "meI" = (
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -12968,12 +12699,6 @@
 	},
 /turf/closed/wall/f13/ruins,
 /area/f13/sewer)
-"miD" = (
-/obj/structure/simple_door/metal/fence{
-	req_one_access_txt = "28"
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "miG" = (
 /mob/living/simple_animal/hostile/handy/gutsy/nsb,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13046,10 +12771,6 @@
 	},
 /turf/open/water,
 /area/f13/caves)
-"mma" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/den)
 "mmk" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -13248,19 +12969,10 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"mvz" = (
-/obj/structure/simple_door/bunker,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "mvM" = (
 /obj/structure/barricade/wooden/strong,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"mwb" = (
-/obj/structure/simple_door/metal/barred,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/den)
 "mwm" = (
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13306,7 +13018,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "mxT" = (
-/obj/structure/simple_door/metal/ventilation,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "mxZ" = (
@@ -13549,10 +13260,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
-"mHF" = (
-/obj/structure/simple_door/metal/ventilation,
-/turf/open/floor/plating/tunnel,
-/area/f13/sewer)
 "mIm" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -13728,12 +13435,6 @@
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
-"mRe" = (
-/obj/structure/simple_door/fakeglass,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/legion)
 "mRK" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/stone_tile/surrounding_tile{
@@ -13742,7 +13443,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mRO" = (
-/obj/structure/simple_door/wood,
 /obj/structure/grille,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
@@ -13781,10 +13481,6 @@
 /obj/item/trash/raisins,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
-"mVJ" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/f13/wood,
-/area/f13/radiation)
 "mVN" = (
 /turf/open/floor/wood,
 /area/f13/bunker)
@@ -13931,10 +13627,6 @@
 	icon_state = "greenfull"
 	},
 /area/f13/den)
-"ndp" = (
-/obj/structure/simple_door/brokenglass,
-/turf/open/floor/f13/wood,
-/area/f13/radiation)
 "nds" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
@@ -13979,12 +13671,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/legion)
-"nfj" = (
-/obj/structure/simple_door/house{
-	icon_state = "interior"
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "nfk" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/spider/stickyweb,
@@ -14055,13 +13741,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
-"nhu" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "nhF" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -14108,7 +13787,6 @@
 /turf/open/floor/plating/rust,
 /area/f13/radiation)
 "njs" = (
-/obj/structure/simple_door/metal/fence,
 /obj/structure/decoration/rag,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
@@ -14216,10 +13894,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"nqc" = (
-/obj/structure/simple_door/metal/ventilation,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "nqd" = (
 /mob/living/simple_animal/hostile/xray/ranged{
 	desc = "A once proud member of the NCR turned traitorous raider.";
@@ -14273,7 +13947,6 @@
 /obj/structure/disposalpipe/trunk/multiz/down{
 	dir = 4
 	},
-/obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "nrS" = (
@@ -14323,12 +13996,6 @@
 	},
 /turf/closed/wall/rust,
 /area/f13/sewer)
-"nuI" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
-/turf/open/floor/plating/dirt/dark,
-/area/f13/radiation)
 "nuU" = (
 /obj/structure/disposalpipe/sorting/wrap,
 /obj/structure/disposalpipe/segment{
@@ -14353,10 +14020,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/legion)
-"nwq" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "nwL" = (
 /obj/structure/closet/crate/freezer/blood{
 	pixel_y = -5
@@ -14439,10 +14102,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
-"nzk" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/den)
 "nzp" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/indestructible/ground/inside/mountain,
@@ -14581,13 +14240,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"nEI" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
-/obj/structure/simple_door/metal/iron,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "nFm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13{
@@ -14915,7 +14567,6 @@
 /turf/open/water,
 /area/f13/caves)
 "nRX" = (
-/obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood{
 	icon_state = "housewood3"
@@ -15498,16 +15149,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/sewer)
-"ovb" = (
-/obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/tunnel)
-"ovu" = (
-/obj/structure/simple_door/metal/fence,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "ovK" = (
 /obj/structure/disposalpipe/broken{
 	dir = 4
@@ -15851,10 +15492,6 @@
 /obj/structure/debris/v4,
 /turf/closed/mineral/ash_rock,
 /area/f13/sewer)
-"oLQ" = (
-/obj/structure/simple_door/fakeglass,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "oMN" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -16106,14 +15743,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side,
 /area/f13/radiation)
-"oYx" = (
-/obj/structure/simple_door/metal/fence{
-	name = "Legion Gate";
-	req_access_txt = 123
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rust,
-/area/f13/legion)
 "oZS" = (
 /obj/structure/lattice,
 /obj/structure/rack,
@@ -16307,12 +15936,6 @@
 	icon_state = "greenfull"
 	},
 /area/f13/den)
-"plr" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/legion)
 "pma" = (
 /mob/living/simple_animal/hostile/handy/robobrain,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -16371,11 +15994,6 @@
 	dir = 4
 	},
 /area/f13/legion)
-"poC" = (
-/obj/structure/simple_door/metal/barred,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/airless/floorgrime,
-/area/f13/legion)
 "poN" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/pill/patch/healingpowder,
@@ -16406,14 +16024,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/sewer)
-"ppS" = (
-/obj/structure/simple_door/metal/iron,
-/obj/effect/decal/fakelattice,
-/obj/structure/lattice/catwalk{
-	layer = 4
-	},
-/turf/open/floor/plating/tunnel,
-/area/f13/legion)
 "ppV" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
@@ -16542,7 +16152,6 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "prospector1open"
 	},
-/obj/structure/simple_door/metal/barred,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "pwg" = (
@@ -16570,12 +16179,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/bunker)
-"pwN" = (
-/obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/plasteel/f13/vault_floor/yellow{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/sewer)
 "pxT" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /obj/effect/decal/cleanable/greenglow,
@@ -16706,12 +16309,6 @@
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/wasteland)
-"pEj" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plasteel/f13/vault_floor/yellow{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/bunker)
 "pEs" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 10
@@ -16959,7 +16556,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "pRz" = (
-/obj/structure/simple_door/metal/iron,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -16973,10 +16569,6 @@
 	icon_state = "yellowdirtysolid"
 	},
 /area/f13/bunker)
-"pSj" = (
-/obj/structure/simple_door/room,
-/turf/open/floor/f13/wood,
-/area/f13/sewer)
 "pSq" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -17000,13 +16592,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/applejack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"pTC" = (
-/obj/structure/simple_door/metal/barred,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/legion)
 "pTG" = (
 /turf/open/floor/carpet/green,
 /area/f13/radiation)
@@ -17136,10 +16721,6 @@
 "qao" = (
 /turf/open/floor/plating/ice,
 /area/f13/tunnel)
-"qas" = (
-/obj/structure/simple_door/bunker,
-/turf/open/water,
-/area/f13/sewer)
 "qbu" = (
 /obj/effect/decal/waste,
 /obj/effect/decal/cleanable/dirt,
@@ -17184,12 +16765,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"qdy" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/sewer)
 "qef" = (
 /obj/effect/decal/fakelattice,
 /obj/structure/disposalpipe/segment,
@@ -17268,11 +16843,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"qiJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/metal/barred,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "qiU" = (
 /obj/item/reagent_containers/glass/bucket{
 	desc = "It smells awful.";
@@ -17331,12 +16901,6 @@
 /obj/structure/table/wood,
 /turf/open/water,
 /area/f13/sewer)
-"qlN" = (
-/obj/structure/simple_door/tent,
-/turf/open/floor/wood/f13{
-	icon_state = "wood-broken5"
-	},
-/area/f13/bunker)
 "qmH" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -17675,10 +17239,6 @@
 	icon_state = "neutralrusty"
 	},
 /area/f13/bunker)
-"qDJ" = (
-/obj/structure/simple_door/tent,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/legion)
 "qDR" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/indestructible/ground/inside/mountain,
@@ -18037,12 +17597,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/bunker)
-"qUd" = (
-/obj/structure/simple_door/metal,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/sewer)
 "qUu" = (
 /obj/structure/chair/f13foldupchair{
 	desc = "A folding chair, missing half the seat, probably for dropping something through it.";
@@ -18104,12 +17658,6 @@
 	},
 /turf/open/water,
 /area/f13/radiation)
-"qXE" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/sewer)
 "qXH" = (
 /obj/structure/campfire/barrel,
 /obj/structure/flora/grass/wasteland{
@@ -18126,10 +17674,6 @@
 	icon_state = "housewood3"
 	},
 /area/f13/shack)
-"qXT" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "qYD" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -18296,10 +17840,6 @@
 /obj/structure/campfire/stove,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/sewer)
-"rex" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "reG" = (
 /obj/structure/table,
@@ -18861,10 +18401,6 @@
 "rFV" = (
 /turf/open/floor/plating/dirt/dark,
 /area/f13/radiation)
-"rGv" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "rGC" = (
 /obj/structure/reagent_dispensers/barrel/two,
 /obj/effect/decal/cleanable/dirt,
@@ -19244,7 +18780,6 @@
 	},
 /area/f13/legion)
 "rXR" = (
-/obj/structure/simple_door/wood,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/radiation)
 "rYg" = (
@@ -19370,12 +18905,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/radiation)
-"sdY" = (
-/obj/structure/simple_door/fakeglass,
-/turf/open/floor/wood/f13{
-	icon_state = "wood-broken7"
-	},
-/area/f13/bunker)
 "sei" = (
 /obj/structure/lattice/catwalk,
 /obj/item/storage/trash_stack,
@@ -19533,7 +19062,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "slQ" = (
-/obj/structure/simple_door/metal,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -19695,10 +19223,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/legion)
-"ssf" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/radiation)
 "ssm" = (
 /obj/structure/rack,
 /obj/machinery/light/small,
@@ -20175,7 +19699,6 @@
 	},
 /area/f13/sewer)
 "sSy" = (
-/obj/structure/simple_door/metal/dirtystore,
 /obj/structure/barricade/wooden/planks,
 /obj/structure/timeddoor,
 /turf/open/floor/f13{
@@ -20450,10 +19973,6 @@
 /obj/structure/wreck/trash/halftire,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"tiD" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/legion)
 "tiS" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
@@ -20591,9 +20110,6 @@
 	},
 /area/f13/legion)
 "trL" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
@@ -20776,16 +20292,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"tDR" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "tFh" = (
 /obj/structure/table,
 /obj/machinery/light/small{
@@ -20841,13 +20347,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"tIG" = (
-/obj/structure/simple_door/metal/fence,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "greenrustyfull"
-	},
-/area/f13/sewer)
 "tIK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/right,
@@ -21123,7 +20622,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "tTg" = (
-/obj/structure/simple_door/metal/iron,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
@@ -21162,10 +20660,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"tWn" = (
-/obj/structure/simple_door/bunker,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "tWq" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
@@ -21450,10 +20944,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/sewer)
-"uln" = (
-/obj/structure/simple_door/tent,
-/turf/open/indestructible/ground/outside/wood,
-/area/f13/caves)
 "ulp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table_frame,
@@ -21637,11 +21127,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/legion)
-"uqD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plating/tunnel,
-/area/f13/sewer)
 "uqH" = (
 /obj/structure/decoration/rag{
 	icon_state = "skin"
@@ -21679,10 +21164,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/legion)
-"urM" = (
-/obj/structure/simple_door/bunker/glass,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "urN" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
@@ -22295,10 +21776,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/legion)
-"uUk" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
 "uUF" = (
 /obj/structure/chair/wood{
 	dir = 4;
@@ -22478,7 +21955,6 @@
 	},
 /area/f13/sewer)
 "vda" = (
-/obj/structure/simple_door/metal,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -22625,7 +22101,6 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "vkp" = (
@@ -22635,7 +22110,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "vkL" = (
-/obj/structure/simple_door/metal/iron,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -22669,14 +22143,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"vlj" = (
-/obj/structure/simple_door/house{
-	icon_state = "dirtystore"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/tunnel)
 "vlR" = (
 /obj/effect/decal/waste{
 	pixel_x = 18;
@@ -22759,12 +22225,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
-"vpA" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "vpD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -22863,7 +22323,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
 "vtx" = (
-/obj/structure/simple_door/fakeglass,
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/legion)
 "vtQ" = (
@@ -22996,10 +22455,6 @@
 /obj/structure/campfire,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"vxS" = (
-/obj/structure/simple_door/tent,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "vyP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/xray/ranged/shotgun{
@@ -23024,10 +22479,6 @@
 /obj/item/multitool,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
-"vzc" = (
-/obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/f13/wood,
-/area/f13/bunker)
 "vzy" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -23077,11 +22528,6 @@
 "vAy" = (
 /turf/open/floor/f13,
 /area/f13/tunnel)
-"vAJ" = (
-/obj/structure/simple_door/metal/fence,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "vAV" = (
 /obj/item/instrument/glockenspiel,
 /obj/structure/rack,
@@ -23141,7 +22587,6 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/tunnel)
 "vCu" = (
-/obj/structure/simple_door/metal/barred,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -23161,7 +22606,6 @@
 	},
 /area/f13/legion)
 "vDm" = (
-/obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
@@ -23493,10 +22937,6 @@
 /obj/structure/chair/wood/normal,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"vTT" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/bunker)
 "vUa" = (
 /obj/structure/barricade/bars,
 /obj/structure/decoration/rag{
@@ -23702,10 +23142,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/tunnel)
-"wap" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/radiation)
 "way" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -23859,7 +23295,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
 	icon_state = "floorrustysolid"
@@ -23891,11 +23326,6 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
-"whQ" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/simple_door/metal/barred,
-/turf/open/water,
-/area/f13/sewer)
 "wip" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/indestructible/ground/inside/mountain,
@@ -23909,12 +23339,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/caves)
-"wkp" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/f13{
-	icon_state = "bar"
-	},
-/area/f13/tunnel)
 "wlf" = (
 /obj/item/storage/belt/holster/hip,
 /obj/item/storage/belt/military/alt,
@@ -24315,7 +23739,6 @@
 /turf/closed/indestructible/rock,
 /area/f13/caves)
 "wFZ" = (
-/obj/structure/simple_door/metal/dirtystore,
 /obj/structure/timeddoor,
 /turf/open/floor/f13{
 	icon_state = "greenfull"
@@ -24663,7 +24086,6 @@
 	},
 /area/f13/sewer)
 "wVA" = (
-/obj/structure/simple_door/bunker,
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
 	},
@@ -24821,10 +24243,6 @@
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
-/area/f13/sewer)
-"xbI" = (
-/obj/structure/simple_door/metal/iron,
-/turf/open/floor/plating/tunnel,
 /area/f13/sewer)
 "xbU" = (
 /obj/structure/chair/wood/fancy{
@@ -25127,10 +24545,6 @@
 /obj/item/stack/sheet/mineral/sandbags,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"xov" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/wood/f13/old,
-/area/f13/shack)
 "xoH" = (
 /mob/living/simple_animal/hostile/giantantqueen,
 /turf/open/indestructible/ground/inside/mountain,
@@ -25555,7 +24969,6 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
 "xJr" = (
-/obj/structure/simple_door/metal/barred,
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -25662,17 +25075,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"xOe" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#c1ac99";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "xOi" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -27483,7 +26885,7 @@ wrD
 wrD
 wrD
 wrD
-hVN
+wrD
 wrD
 xXm
 iBp
@@ -32641,7 +32043,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 kOs
 hQG
@@ -33570,7 +32972,7 @@ enD
 crU
 hUW
 enD
-fxq
+wFr
 exg
 mOQ
 oMN
@@ -33974,7 +33376,7 @@ enD
 wSI
 anp
 enD
-fxq
+wFr
 xiB
 mOQ
 lWr
@@ -33985,7 +33387,7 @@ iuU
 aXT
 gug
 gug
-ezd
+qTc
 wFr
 oUD
 qEH
@@ -34173,7 +33575,7 @@ xvl
 mOQ
 iGG
 wFr
-xOe
+wFr
 enD
 enD
 tCz
@@ -34187,7 +33589,7 @@ xhh
 xhh
 gug
 gug
-ezd
+qTc
 enD
 oUD
 kOa
@@ -34378,7 +33780,7 @@ wFr
 tCz
 wFr
 wFr
-fxq
+wFr
 dYw
 mOQ
 lWr
@@ -34462,7 +33864,7 @@ sWW
 hQG
 hFs
 kOs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -34782,7 +34184,7 @@ qTc
 wSI
 enD
 qTc
-nhu
+qTc
 rMe
 mOQ
 bVT
@@ -34800,7 +34202,7 @@ mOQ
 mOQ
 mOQ
 mOQ
-ezd
+qTc
 mOQ
 iBp
 vKr
@@ -34983,7 +34385,7 @@ crU
 crU
 crU
 crU
-xOe
+wFr
 tCz
 crU
 ghG
@@ -35589,7 +34991,7 @@ tCz
 tCz
 tCz
 wSI
-ezd
+qTc
 wSI
 wSI
 ghG
@@ -35792,7 +35194,7 @@ qTc
 wSI
 enD
 qTc
-nhu
+qTc
 knb
 mOQ
 njL
@@ -35810,7 +35212,7 @@ mOQ
 mOQ
 mOQ
 mOQ
-ezd
+qTc
 mOQ
 iBp
 vKr
@@ -36196,7 +35598,7 @@ enD
 wSI
 qTc
 enD
-egY
+enD
 idJ
 mOQ
 kOa
@@ -36364,7 +35766,7 @@ xvl
 xvl
 xvl
 tJq
-kGt
+hFs
 tJq
 xvl
 xvl
@@ -36395,7 +35797,7 @@ xvl
 mOQ
 iGG
 qTc
-ezd
+qTc
 enD
 enD
 crU
@@ -36403,7 +35805,7 @@ wSI
 mOQ
 iSk
 wFr
-xOe
+wFr
 enD
 qTc
 wgY
@@ -36480,7 +35882,7 @@ sWW
 sWW
 iBp
 hQG
-bYh
+tTg
 iQx
 hQG
 sWW
@@ -36600,15 +36002,15 @@ enD
 wSI
 qTc
 enD
-fxq
+wFr
 bPV
 mOQ
 jwm
 enD
-tDR
+enD
 enD
 qTc
-xOe
+wFr
 enD
 wFr
 chx
@@ -37004,7 +36406,7 @@ dZO
 crU
 sHc
 qTc
-egY
+enD
 enD
 mOQ
 hsw
@@ -37572,7 +36974,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -39193,7 +38595,7 @@ xvl
 hml
 xyL
 xyL
-pEj
+uYb
 xyL
 xyL
 pCw
@@ -39377,7 +38779,7 @@ rsF
 xvl
 hFs
 hFs
-iVG
+vkg
 xDm
 scn
 xDm
@@ -40589,7 +39991,7 @@ rsF
 xvl
 hFs
 hFs
-rex
+hFs
 juC
 juC
 juC
@@ -41002,7 +40404,7 @@ xvl
 xvl
 xvl
 vUa
-kGt
+hFs
 bxV
 xvl
 xvl
@@ -42137,7 +41539,7 @@ sWW
 iBp
 hQG
 iQx
-bYh
+tTg
 hQG
 sWW
 sWW
@@ -43704,12 +43106,12 @@ xvl
 xvl
 xvl
 xvl
-kkE
+hlp
 xvl
 vWz
 hFs
 xvl
-kkE
+hlp
 xvl
 xvl
 xvl
@@ -45093,7 +44495,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 kum
 hFs
 hFs
@@ -45304,7 +44706,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 fPl
 xvl
@@ -46344,7 +45746,7 @@ xvl
 oLh
 bJC
 hFs
-tWn
+hFs
 iKu
 xCD
 xCD
@@ -48728,7 +48130,7 @@ eNZ
 iBY
 iBY
 iBY
-ewn
+vda
 iBY
 phU
 rHN
@@ -49327,7 +48729,7 @@ fEp
 fEp
 wSI
 wSI
-oLQ
+iBY
 wSI
 wSI
 iBY
@@ -49969,7 +49371,7 @@ xvl
 xvl
 xvl
 xvl
-bJL
+iOM
 xvl
 xvl
 xvl
@@ -50755,11 +50157,11 @@ pBP
 mOQ
 dOS
 dOS
-cpR
+iEG
 dOS
 dOS
 dOS
-ovu
+dOS
 jya
 fwK
 sys
@@ -51547,11 +50949,11 @@ phU
 cko
 dOS
 dOS
-dQj
+dOS
 kqE
 kqE
 kqE
-oLQ
+iBY
 iBY
 iBY
 iBY
@@ -51967,7 +51369,7 @@ iBY
 iBY
 iBY
 iBY
-dQj
+dOS
 dOS
 dOS
 dOS
@@ -52169,11 +51571,11 @@ iBY
 vDo
 iBY
 iBY
-dQj
 dOS
 dOS
 dOS
-ovu
+dOS
+dOS
 fwK
 ufS
 jAg
@@ -53782,18 +53184,18 @@ xvl
 xvl
 xvl
 xvl
-kGt
+hFs
 xvl
 xvl
 xvl
 xvl
 xvl
-rex
+hFs
 xvl
 xvl
 xvl
 xvl
-jgB
+xCo
 xvl
 xvl
 hFs
@@ -53866,7 +53268,7 @@ hQG
 hQG
 hQG
 hQG
-bJL
+iOM
 hQG
 hQG
 xvl
@@ -54070,7 +53472,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -55411,7 +54813,7 @@ scC
 scC
 iJt
 scC
-kGt
+hFs
 hFs
 hFs
 xvl
@@ -55672,7 +55074,7 @@ iBp
 hQG
 kOs
 hFs
-cyC
+nyz
 nyz
 hQG
 sWW
@@ -56143,7 +55545,7 @@ hFs
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -56821,7 +56223,7 @@ toe
 xvl
 xvl
 scC
-jgB
+xCo
 toe
 toe
 bbt
@@ -57020,7 +56422,7 @@ sWW
 xvl
 kZF
 toe
-jgB
+xCo
 mnw
 scC
 xvl
@@ -57617,7 +57019,7 @@ sWW
 sWW
 xvl
 riU
-uqD
+scC
 toe
 toe
 sJG
@@ -58032,7 +57434,7 @@ riU
 riU
 riU
 riU
-xbI
+mLD
 xCo
 cCp
 kBH
@@ -58569,7 +57971,7 @@ tRM
 vKr
 xvl
 tJq
-kGt
+hFs
 tJq
 mOL
 efQ
@@ -58631,7 +58033,7 @@ riU
 riU
 riU
 riU
-qiJ
+riU
 riU
 riU
 riU
@@ -58830,7 +58232,7 @@ sWW
 xvl
 xvl
 xoS
-jPc
+euZ
 xoS
 xoS
 xoS
@@ -59078,7 +58480,7 @@ eXl
 lQM
 sLr
 kXp
-vxS
+iWx
 voR
 iWx
 eXl
@@ -59274,13 +58676,13 @@ eXl
 fcE
 iWx
 eXl
-fOk
+jbO
 eXl
 eXl
 lQM
 wOd
 kXp
-vxS
+iWx
 lSv
 iWx
 eXl
@@ -59686,7 +59088,7 @@ dAI
 dAI
 eXl
 eXl
-rGv
+iWx
 eXl
 dsv
 sLr
@@ -60300,13 +59702,13 @@ iWx
 iWx
 iWx
 iWx
-rGv
+iWx
 iWx
 iWx
 iWx
 iWx
 voR
-uln
+jbO
 xnJ
 sLr
 sLr
@@ -60429,7 +59831,7 @@ hFs
 hFs
 hFs
 hFs
-aXb
+xDm
 vHc
 vis
 vis
@@ -60508,7 +59910,7 @@ iWx
 iWx
 iWx
 voR
-uln
+jbO
 xnJ
 sLr
 sLr
@@ -60526,7 +59928,7 @@ hQG
 hQG
 hQG
 xly
-lXH
+fVU
 qZq
 imO
 fMw
@@ -60732,7 +60134,7 @@ hQG
 gbs
 iOM
 iOM
-bJL
+iOM
 hFs
 rUl
 hFs
@@ -61257,7 +60659,7 @@ xvl
 jxD
 toe
 toe
-jgB
+xCo
 riU
 riU
 xvl
@@ -61439,7 +60841,7 @@ hFs
 hFs
 hFs
 hFs
-aXb
+xDm
 vis
 thx
 rUJ
@@ -61462,7 +60864,7 @@ toe
 xvl
 riU
 riU
-atx
+xDm
 vHc
 vis
 vis
@@ -62391,7 +61793,7 @@ xvl
 hFs
 hFs
 hFs
-bYh
+tTg
 hFs
 hFs
 hFs
@@ -62449,7 +61851,7 @@ hFs
 hFs
 hFs
 hFs
-aXb
+xDm
 vis
 vis
 vhZ
@@ -62958,7 +62360,7 @@ xiW
 hFs
 rUl
 hFs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -63109,7 +62511,7 @@ cwa
 iWx
 iWx
 lqr
-fOk
+jbO
 iWx
 iWx
 iWx
@@ -63472,18 +62874,18 @@ bvQ
 bvQ
 bvQ
 bvQ
-nwq
+bvQ
 bvQ
 bvQ
 bvQ
 yir
 tjd
 tjd
-nwq
+bvQ
 bvQ
 tjd
 bvQ
-nwq
+bvQ
 mxZ
 hFs
 bxV
@@ -63681,14 +63083,14 @@ bvQ
 bvQ
 bvQ
 oQa
-nwq
+bvQ
 bvQ
 lgV
 wWi
-nwq
+bvQ
 mxZ
 hFs
-kGt
+hFs
 hFs
 hFs
 mOL
@@ -63921,7 +63323,7 @@ jzo
 iWx
 iWx
 iWx
-rGv
+iWx
 iWx
 iWx
 iWx
@@ -64262,7 +63664,7 @@ wBj
 wBj
 wBj
 wBj
-lah
+hFs
 hFs
 hFs
 hFs
@@ -64497,7 +63899,7 @@ phU
 iBp
 sWW
 mOL
-kGt
+hFs
 bxV
 mOL
 mOL
@@ -64677,7 +64079,7 @@ phU
 phU
 phU
 phU
-nwq
+bvQ
 phU
 phU
 phU
@@ -64702,7 +64104,7 @@ mOL
 hFs
 hFs
 hFs
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -65093,11 +64495,11 @@ phU
 phU
 phU
 phU
-nwq
+bvQ
 phU
 phU
 phU
-nwq
+bvQ
 bCz
 phU
 iBp
@@ -65499,7 +64901,7 @@ bxK
 bvQ
 bvQ
 bvQ
-nwq
+bvQ
 bvQ
 yir
 bvQ
@@ -65772,7 +65174,7 @@ iBp
 hQG
 kOs
 hFs
-bJL
+iOM
 iOM
 iOM
 iOM
@@ -66088,7 +65490,7 @@ riU
 xvl
 iBp
 phU
-urM
+bvQ
 phU
 phU
 phU
@@ -66097,7 +65499,7 @@ phU
 phU
 phU
 phU
-urM
+bvQ
 phU
 tjd
 tjd
@@ -66138,7 +65540,7 @@ cnn
 cnn
 cnn
 cnn
-fOk
+jbO
 iWx
 iWx
 opb
@@ -66180,7 +65582,7 @@ mOL
 ehM
 dEA
 dEA
-lXH
+fVU
 xLv
 hQG
 sWW
@@ -66303,7 +65705,7 @@ bvQ
 phU
 phU
 phU
-nwq
+bvQ
 phU
 phU
 phU
@@ -66435,7 +65837,7 @@ oRe
 hFs
 hFs
 hFs
-bYh
+tTg
 hFs
 hFs
 hQG
@@ -66908,7 +66310,7 @@ tjd
 gyB
 phU
 phU
-nwq
+bvQ
 bCz
 phU
 phU
@@ -67114,7 +66516,7 @@ bvQ
 bvQ
 bvQ
 bvQ
-nwq
+bvQ
 bvQ
 tjd
 tjd
@@ -67387,7 +66789,7 @@ xvY
 tiS
 ijK
 sZP
-whQ
+kOs
 ijK
 ijK
 oOn
@@ -67693,7 +67095,7 @@ jWq
 eqV
 eqV
 eqV
-rex
+hFs
 hFs
 hFs
 pvR
@@ -68396,7 +67798,7 @@ rUl
 xvY
 ijK
 ijK
-whQ
+kOs
 sZP
 ijK
 ijK
@@ -68459,7 +67861,7 @@ hQG
 hFs
 hFs
 hFs
-bYh
+tTg
 hFs
 hFs
 pqy
@@ -69826,7 +69228,7 @@ geT
 hFs
 rUl
 jLh
-kGt
+hFs
 hFs
 hFs
 hFs
@@ -70257,7 +69659,7 @@ xvl
 xvl
 xvl
 xvl
-mHF
+mLD
 xvl
 xvl
 xvl
@@ -70285,7 +69687,7 @@ xvl
 xvl
 xvl
 xvl
-mHF
+mLD
 xvl
 xvl
 xvl
@@ -70836,7 +70238,7 @@ hQG
 hFs
 rUl
 hFs
-mHF
+mLD
 rjo
 rjo
 hQG
@@ -71258,7 +70660,7 @@ hQG
 sWW
 hQG
 rjo
-mHF
+mLD
 mLD
 rjo
 mLD
@@ -71491,7 +70893,7 @@ xvl
 xvl
 xvl
 xvl
-mHF
+mLD
 xvl
 xvl
 xvl
@@ -71848,7 +71250,7 @@ rUl
 hFs
 hQG
 xiW
-mHF
+mLD
 xiW
 hQG
 sWW
@@ -72250,7 +71652,7 @@ hQG
 hFs
 gMF
 hFs
-dUu
+mLD
 iOM
 iOM
 iOM
@@ -72268,7 +71670,7 @@ sWW
 sWW
 hQG
 rjo
-mHF
+mLD
 mLD
 rjo
 mLD
@@ -72280,7 +71682,7 @@ rjo
 hQG
 hQG
 rjo
-mHF
+mLD
 mLD
 rjo
 mLD
@@ -72289,7 +71691,7 @@ rjo
 rjo
 rjo
 mLD
-mHF
+mLD
 wrD
 wrD
 wrD
@@ -72858,7 +72260,7 @@ rUl
 hFs
 hQG
 xiW
-mHF
+mLD
 xiW
 hQG
 sWW
@@ -72886,7 +72288,7 @@ hQG
 hQG
 hQG
 mLD
-mHF
+mLD
 mLD
 rjo
 rjo
@@ -73480,7 +72882,7 @@ hQG
 sWW
 hQG
 mLD
-mHF
+mLD
 mLD
 mLD
 mLD
@@ -73866,7 +73268,7 @@ hQG
 riU
 rUl
 hFs
-mHF
+mLD
 mLD
 mLD
 hQG
@@ -74064,7 +73466,7 @@ sWW
 iBp
 hQG
 wmz
-mHF
+mLD
 riU
 rUl
 hFs
@@ -74405,7 +73807,7 @@ hFs
 hFs
 hFs
 hFs
-bYh
+tTg
 hFs
 hFs
 hFs
@@ -74607,7 +74009,7 @@ hFs
 hFs
 hFs
 hFs
-bYh
+tTg
 hFs
 hFs
 hFs
@@ -75452,7 +74854,7 @@ nyz
 hQG
 hQG
 hQG
-byx
+dYf
 hQG
 hQG
 hQG
@@ -75466,7 +74868,7 @@ hQG
 hQG
 hQG
 hQG
-mHF
+mLD
 hQG
 hQG
 hQG
@@ -75474,7 +74876,7 @@ hQG
 hQG
 hQG
 hQG
-mHF
+mLD
 hQG
 hQG
 hQG
@@ -75813,8 +75215,8 @@ mOQ
 iBp
 sWW
 xvl
-bYh
-bYh
+tTg
+tTg
 xvl
 sWW
 sWW
@@ -76354,8 +75756,8 @@ sWW
 sWW
 sWW
 rEV
-xov
-xov
+fUI
+fUI
 rEV
 sWW
 sWW
@@ -76903,7 +76305,7 @@ fvA
 fvA
 fvA
 fvA
-tiD
+gFR
 fOO
 jfY
 vkV
@@ -77302,7 +76704,7 @@ rUl
 hFs
 aFO
 bUM
-mRe
+vCu
 bUM
 fvA
 fvA
@@ -77498,7 +76900,7 @@ rjo
 rjo
 crf
 fVU
-lXH
+fVU
 pMD
 rUl
 hFs
@@ -77751,7 +77153,7 @@ fld
 fld
 fld
 fld
-kgW
+vtx
 pZQ
 pZQ
 bUM
@@ -77768,7 +77170,7 @@ sWW
 rEV
 rEV
 rEV
-lxw
+eTR
 rEV
 vwA
 sWW
@@ -78116,7 +77518,7 @@ knp
 knp
 knp
 qEY
-plr
+qEY
 tNV
 fOO
 pqs
@@ -78128,8 +77530,8 @@ bUM
 sgq
 sgq
 bUM
-ppS
-ppS
+lPP
+lPP
 bUM
 sgq
 sgq
@@ -78318,7 +77720,7 @@ jaz
 knp
 knp
 qEY
-plr
+qEY
 eto
 fOO
 mjv
@@ -78577,7 +77979,7 @@ rEV
 wac
 fUI
 fUI
-xov
+fUI
 fUI
 aAd
 rEV
@@ -79549,7 +78951,7 @@ jZY
 fvA
 qlF
 fvA
-oYx
+fvA
 lPP
 lPP
 lPP
@@ -79920,7 +79322,7 @@ dcA
 fVU
 fVU
 nfk
-lXH
+fVU
 nek
 mrJ
 hFs
@@ -80467,7 +79869,7 @@ biQ
 hQG
 hQG
 bxV
-kGt
+hFs
 bxV
 hQG
 hQG
@@ -80516,7 +79918,7 @@ hQG
 hQG
 hQG
 hQG
-mHF
+mLD
 hQG
 hQG
 hQG
@@ -81453,7 +80855,7 @@ hQG
 hQG
 hQG
 hQG
-qdy
+lIZ
 hQG
 hQG
 hQG
@@ -81549,7 +80951,7 @@ bKo
 pZQ
 pZQ
 pZQ
-dto
+vCu
 lPP
 oax
 lPP
@@ -81751,7 +81153,7 @@ wqP
 pZQ
 pZQ
 pZQ
-dto
+vCu
 lPP
 bwi
 rhG
@@ -81951,7 +81353,7 @@ bUM
 bUM
 wzn
 wzn
-poC
+pZQ
 bUM
 bUM
 lPP
@@ -82463,8 +81865,8 @@ hQG
 hQG
 hQG
 hQG
-qUd
-qUd
+lIZ
+lIZ
 hQG
 hQG
 sWW
@@ -82969,13 +82371,13 @@ fOO
 kOc
 bUM
 xCx
-pTC
+vDe
 bBI
 xCx
-pTC
+vDe
 bBI
 xCx
-pTC
+vDe
 xCx
 bUM
 vPj
@@ -83066,7 +82468,7 @@ hQG
 cma
 cUd
 lIZ
-qUd
+lIZ
 lIZ
 lIZ
 lIZ
@@ -84791,7 +84193,7 @@ tMB
 tMB
 tMB
 tMB
-qDJ
+gFR
 tMB
 cFh
 aYG
@@ -86206,7 +85608,7 @@ whe
 jCL
 rxG
 xGT
-jpJ
+jCL
 xix
 xix
 jCL
@@ -86285,9 +85687,9 @@ hFs
 hFs
 hFs
 hFs
-kax
+iBY
 lFS
-vzc
+iLA
 fda
 coF
 eGT
@@ -88953,7 +88355,7 @@ hFs
 xcI
 veg
 hFs
-lah
+hFs
 hFs
 hFs
 oAo
@@ -89016,7 +88418,7 @@ qhl
 hFs
 gMF
 hFs
-cyC
+nyz
 nyz
 mOL
 sWW
@@ -89272,7 +88674,7 @@ qWx
 uKb
 lux
 vZP
-nEI
+wAo
 vZP
 vZP
 qNq
@@ -89358,7 +88760,7 @@ baj
 wZW
 wZW
 wZW
-uUk
+wZW
 wZW
 qla
 qla
@@ -90100,7 +89502,7 @@ qNq
 qNq
 qNq
 qNq
-ssf
+nUN
 qNq
 qNq
 qNq
@@ -90204,7 +89606,7 @@ gmt
 uxL
 kOb
 uxL
-mma
+uxL
 uxL
 qla
 uxL
@@ -90371,7 +89773,7 @@ uxL
 uxL
 uxL
 sty
-uUk
+wZW
 sty
 sty
 sty
@@ -90402,7 +89804,7 @@ uxL
 uxL
 qla
 qiU
-mma
+uxL
 fWr
 ehs
 fWr
@@ -90415,7 +89817,7 @@ uxL
 qla
 qla
 gmt
-nzk
+uxL
 gmt
 qla
 qla
@@ -90567,7 +89969,7 @@ rUl
 veg
 qla
 wZW
-uUk
+wZW
 uxL
 uxL
 uxL
@@ -90810,7 +90212,7 @@ gmt
 fWr
 uHd
 uHd
-mma
+uxL
 uxL
 qla
 uxL
@@ -91008,7 +90410,7 @@ uxL
 uxL
 qla
 qiU
-mma
+uxL
 fWr
 uHd
 uHd
@@ -91238,7 +90640,7 @@ qla
 hFs
 rUl
 hFs
-tIG
+soL
 wVO
 soL
 kve
@@ -91612,7 +91014,7 @@ dMr
 kHb
 uxL
 fWr
-mwb
+cqg
 uxL
 uxL
 fWr
@@ -91624,7 +91026,7 @@ uxL
 uxL
 uxL
 uxL
-mma
+uxL
 fWr
 fWr
 fWr
@@ -91985,7 +91387,7 @@ lxT
 uxL
 uxL
 uxL
-uUk
+wZW
 wZW
 wZW
 wZW
@@ -92050,7 +91452,7 @@ hQG
 hQG
 tnl
 hQG
-dXu
+soL
 hQG
 hQG
 hQG
@@ -92196,7 +91598,7 @@ bXF
 uxL
 qla
 wZW
-gyg
+wZW
 wZW
 wZW
 wZW
@@ -92220,11 +91622,11 @@ uxL
 uxL
 qla
 uxL
-mma
 uxL
 uxL
 uxL
-mma
+uxL
+uxL
 sTV
 qla
 uxL
@@ -92352,7 +91754,7 @@ sWW
 hQG
 rMH
 hFs
-kGt
+hFs
 ePY
 fnv
 fbu
@@ -92603,15 +92005,15 @@ uxL
 sty
 bXF
 bXF
-eNI
+wZW
 bXF
 bXF
 sty
 uxL
 uxL
-alk
+uxL
 wZW
-alk
+uxL
 uxL
 fWr
 fWr
@@ -92760,7 +92162,7 @@ hQG
 hQG
 hQG
 hQG
-qXE
+ePY
 hQG
 hQG
 hQG
@@ -92830,7 +92232,7 @@ gmt
 uxL
 uxL
 uxL
-mma
+uxL
 eXz
 qla
 uxL
@@ -92841,7 +92243,7 @@ qla
 qla
 qla
 gmt
-nzk
+uxL
 gmt
 qla
 qla
@@ -92991,7 +92393,7 @@ rUl
 hFs
 qla
 qla
-alk
+uxL
 qla
 qla
 qla
@@ -93028,7 +92430,7 @@ uxL
 uxL
 qla
 kXY
-mma
+uxL
 cqg
 kTh
 uxL
@@ -93209,11 +92611,11 @@ qla
 wZW
 tRS
 wZW
-uUk
+wZW
 tRS
 qla
 tRS
-uUk
+wZW
 wZW
 tRS
 wZW
@@ -93392,7 +92794,7 @@ sWW
 sWW
 hQG
 esN
-iid
+hFs
 qla
 fQy
 wZW
@@ -93565,7 +92967,7 @@ xbe
 wVO
 soL
 bKX
-lfa
+wVO
 hlp
 xCo
 dqd
@@ -93802,7 +93204,7 @@ bjr
 wZW
 uVU
 wZW
-uUk
+wZW
 wZW
 qla
 vUo
@@ -93813,7 +93215,7 @@ wZW
 wZW
 qla
 qla
-uUk
+wZW
 qla
 qla
 qla
@@ -93821,7 +93223,7 @@ qla
 qla
 qla
 qla
-uUk
+wZW
 qla
 qla
 liV
@@ -93929,7 +93331,7 @@ iBY
 iBY
 iBY
 iBY
-nfj
+iBY
 xoa
 lcG
 xoa
@@ -94208,7 +93610,7 @@ wZW
 wZW
 qla
 wZW
-uUk
+wZW
 wZW
 wZW
 wZW
@@ -94379,7 +93781,7 @@ wVO
 wVO
 bGW
 hQG
-pwN
+hlp
 hQG
 bGW
 bGW
@@ -94546,7 +93948,7 @@ lEW
 muS
 iBY
 iBY
-qXT
+iBY
 iBY
 kIr
 wSI
@@ -94937,7 +94339,7 @@ wSI
 iBY
 iBY
 iBY
-qXT
+iBY
 iBY
 muS
 uwj
@@ -94947,10 +94349,10 @@ fPY
 cSg
 lcG
 nNr
-oLQ
 iBY
 iBY
-qXT
+iBY
+iBY
 iBY
 iBY
 wSI
@@ -95497,7 +94899,7 @@ hQG
 hQG
 hQG
 mkH
-vpA
+fKg
 mkH
 hQG
 hQG
@@ -95519,7 +94921,7 @@ hQG
 hQG
 hQG
 hQG
-rex
+hFs
 hQG
 hQG
 hQG
@@ -95684,7 +95086,7 @@ xYf
 xDm
 xDm
 hdT
-pSj
+xDm
 xDm
 bMp
 hQG
@@ -95738,14 +95140,14 @@ sWW
 hQG
 rUl
 hFs
-gtd
 iBY
 iBY
-gtd
+iBY
+iBY
 qog
 qog
 qog
-vAJ
+qog
 iBY
 qog
 qog
@@ -95757,7 +95159,7 @@ qog
 qog
 eYv
 qog
-vAJ
+qog
 qog
 qog
 iBY
@@ -95818,7 +95220,7 @@ ars
 ars
 ars
 ars
-crZ
+ars
 ars
 ars
 bag
@@ -96032,7 +95434,7 @@ wGX
 wGX
 wGX
 wGX
-ovb
+wGX
 wGX
 qRX
 sva
@@ -96552,7 +95954,7 @@ sWW
 wSI
 qew
 iBY
-oLQ
+iBY
 iBY
 iBY
 muS
@@ -96563,9 +95965,9 @@ muS
 lcG
 cSg
 cSg
-oLQ
 iBY
-qXT
+iBY
+iBY
 iBY
 iBY
 gnE
@@ -96829,7 +96231,7 @@ kdM
 gdr
 krg
 krg
-fIl
+ars
 krg
 krg
 krg
@@ -96902,7 +96304,7 @@ hQG
 xsQ
 xsQ
 hQG
-iev
+xDm
 hQG
 xsQ
 hQG
@@ -97090,7 +96492,7 @@ hQG
 hQG
 hQG
 hQG
-mVJ
+rZE
 hQG
 xsQ
 hQG
@@ -97562,16 +96964,16 @@ sWW
 wSI
 iBY
 kbt
-vTT
+iBY
 iBY
 iBY
 muS
 svu
-dcm
+lcG
 svu
 svu
 svu
-qlN
+hss
 svu
 muS
 iBY
@@ -97696,7 +97098,7 @@ sWW
 sWW
 sWW
 sWW
-nuI
+rFV
 sWW
 sWW
 sWW
@@ -97767,7 +97169,7 @@ iBY
 cZb
 xMl
 iBY
-kpR
+iBY
 vbw
 vbw
 vbw
@@ -97971,7 +97373,7 @@ xMl
 bHZ
 muS
 svu
-qlN
+hss
 svu
 svu
 svu
@@ -98165,7 +97567,7 @@ hFs
 hFs
 hFs
 hFs
-nqc
+iBY
 iBY
 kIr
 iwo
@@ -98456,7 +97858,7 @@ bBu
 aLg
 aLg
 rSR
-vlj
+gPJ
 uPh
 ttf
 lGL
@@ -98584,7 +97986,7 @@ muS
 muS
 muS
 muS
-sdY
+vBr
 muS
 iBY
 iBY
@@ -98642,8 +98044,8 @@ sWW
 krg
 krg
 nan
-eQS
-eQS
+mTE
+mTE
 nan
 krg
 krg
@@ -98777,7 +98179,7 @@ wSI
 esZ
 iBY
 iBY
-bnT
+lcG
 xai
 vbw
 oyl
@@ -98910,7 +98312,7 @@ sWW
 sWW
 sWW
 lux
-bjb
+vZP
 lux
 lux
 dSm
@@ -99043,7 +98445,7 @@ mTE
 nmV
 cXj
 mTE
-jyd
+mTE
 mTE
 mTE
 mTE
@@ -99062,7 +98464,7 @@ sWW
 vUz
 rSR
 aLg
-wkp
+aLg
 vAy
 vAy
 vAy
@@ -99134,13 +98536,13 @@ sWW
 sWW
 hQG
 wrD
-qas
+rUl
 rUl
 rTS
 kTL
 kha
 rUl
-mvz
+vZP
 jxP
 jxP
 jxP
@@ -99179,7 +98581,7 @@ vKr
 vKr
 wSI
 nnw
-nqc
+iBY
 nnw
 wSI
 elx
@@ -99253,10 +98655,10 @@ mTE
 krg
 krg
 krg
-jyd
-jyd
-jyd
-jyd
+mTE
+mTE
+mTE
+mTE
 krg
 sWW
 sWW
@@ -99308,13 +98710,13 @@ nRh
 lux
 lux
 lux
-miD
+vZP
 lux
 dAr
 sWW
 lux
 lux
-gMs
+lux
 uKb
 lux
 sWW
@@ -99336,7 +98738,7 @@ sWW
 sWW
 hQG
 wrD
-qas
+rUl
 rUl
 rTS
 kTL
@@ -99856,7 +99258,7 @@ nWD
 mTE
 mTE
 mTE
-jyd
+mTE
 mTE
 mTE
 mTE
@@ -101758,7 +101160,7 @@ koe
 rZE
 hur
 rZE
-ndp
+rZE
 fKg
 eLq
 eLq
@@ -102980,7 +102382,7 @@ eqC
 vZP
 ftZ
 aHC
-wap
+vZP
 vZP
 vZP
 pur
@@ -103771,7 +103173,7 @@ pur
 pur
 pur
 pur
-mVJ
+rZE
 pur
 rZE
 xYk
@@ -103785,7 +103187,7 @@ fKg
 fKg
 pur
 vZP
-auS
+vZP
 vZP
 fAB
 pur
@@ -104772,7 +104174,7 @@ sWW
 qNq
 bQq
 rZE
-mVJ
+rZE
 fKg
 fKg
 fKg
@@ -105899,7 +105301,7 @@ hQG
 pzD
 kqq
 kqq
-ckQ
+kqq
 fZi
 biy
 kqq
@@ -106105,7 +105507,7 @@ rSe
 kqq
 deA
 fZi
-iwv
+kqq
 hFs
 rUl
 hQG
