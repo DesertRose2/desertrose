@@ -333,7 +333,7 @@
 
 /obj/item/storage/box/minibombs
 	name = "box of minibombs"
-	desc = "A box containing 2 highly explosive syndicate minibombs."
+	desc = "A box containing 2 highly explosive minibombs."
 	icon_state = "syndiebox"
 	illustration = "frag"
 

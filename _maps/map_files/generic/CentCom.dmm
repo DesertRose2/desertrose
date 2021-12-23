@@ -1213,7 +1213,7 @@
 	},
 /obj/item/toy/minimeteor{
 	color = "";
-	desc = "A primitive long-range weapon, inferior to bluespace artillery.";
+	desc = "A primitive long-range weapon, inferior to quantum artillery.";
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "impact_laser";
 	name = "photon torpedo"
@@ -1285,7 +1285,7 @@
 	},
 /obj/item/toy/minimeteor{
 	color = "";
-	desc = "A primitive long-range weapon, inferior to bluespace artillery.";
+	desc = "A primitive long-range weapon, inferior to quantum artillery.";
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "impact_laser";
 	name = "photon torpedo"

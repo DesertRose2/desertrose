@@ -188,8 +188,8 @@ LINEN BINS
 	dream_messages = list("a unique ID", "authority", "artillery", "an ending")
 
 /obj/item/bedsheet/syndie
-	name = "syndicate bedsheet"
-	desc = "It has a syndicate emblem and it has an aura of evil."
+	name = "evil bedsheet"
+	desc = "It has an aura of evil."
 	icon_state = "sheetsyndie"
 	dream_messages = list("a green disc", "a red crystal", "a glowing blade", "a wire-covered ID")
 

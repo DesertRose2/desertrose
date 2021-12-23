@@ -316,9 +316,9 @@
 	icon_state = "poster27"
 
 /obj/structure/sign/poster/contraband/silenced_pistol
-    name = "Silenced Pistol"
-    desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags."
-    icon_state = "poster28"
+	name = "Silenced Pistol"
+	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags."
+	icon_state = "poster28"
 
 /obj/structure/sign/poster/contraband/energy_swords
 	name = "Energy Swords"
