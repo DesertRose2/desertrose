@@ -236,7 +236,7 @@
 	door_type = "fence"
 	open_sound = "sound/f13machines/doorchainlink_open.ogg"
 	close_sound = "sound/f13machines/doorchainlink_close.ogg"
-	opaque = 0
+	var/opaque = 0
 	can_hold_padlock = TRUE
 	icon = 'icons/obj/fence.dmi'
 

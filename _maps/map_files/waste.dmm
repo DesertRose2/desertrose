@@ -43,7 +43,7 @@
 /turf/open/floor/wood,
 /area/f13/desert)
 "ak" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood,
 /area/f13/desert)
 "al" = (
@@ -97,7 +97,7 @@
 /turf/open/f13/inside/wood,
 /area/f13/desert)
 "aw" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/f13/inside/wood,
 /area/f13/desert)
 "ax" = (
@@ -127,7 +127,7 @@
 	},
 /area/f13/desert)
 "aC" = (
-/obj/machinery/door/unpowered/wooddoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plasteel/f13,
 /area/f13/desert)
 "aD" = (

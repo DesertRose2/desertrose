@@ -9346,10 +9346,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
-"osf" = (
-/obj/structure/simple_door/fakeglass,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bunker)
 "osC" = (
 /mob/living/simple_animal/hostile/supermutant/legendary,
 /obj/effect/decal/cleanable/dirt,
@@ -9572,6 +9568,11 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/bunker)
+"oHR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden/crude/snow,
+/turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "oHS" = (
 /obj/effect/turf_decal/bot,
@@ -10433,6 +10434,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
+/area/f13/bunker)
+"pYX" = (
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "qan" = (
 /obj/structure/sign/poster/official/help_others,
@@ -12003,11 +12008,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
-"swg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "swN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26722,7 +26722,7 @@ xsH
 xsH
 xsH
 xsH
-swg
+oHR
 xsH
 xsH
 xRz
@@ -79585,7 +79585,7 @@ heT
 bsh
 lEp
 okW
-osf
+pYX
 okW
 okW
 okW
@@ -79597,7 +79597,7 @@ okW
 okW
 okW
 okW
-osf
+pYX
 okW
 amW
 bBK
@@ -79849,7 +79849,7 @@ okW
 okW
 okW
 okW
-osf
+pYX
 okW
 okW
 okW
@@ -80629,7 +80629,7 @@ bsh
 bsh
 bsh
 rUH
-osf
+pYX
 rUH
 bsh
 bsh

@@ -650,7 +650,7 @@
 	},
 /area/f13/legion)
 "aee" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -4865,7 +4865,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "aDm" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Church Backroom";
 	req_one_access_txt = "25"
@@ -5806,7 +5806,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "aGY" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bank";
 	req_one_access_txt = "25"
@@ -7503,7 +7503,7 @@
 	},
 /area/f13/wasteland)
 "aNN" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -8791,7 +8791,7 @@
 	dir = 8;
 	icon_state = "snow_corner"
 	},
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright1"
 	},
@@ -8910,7 +8910,7 @@
 /area/f13/wasteland)
 "aUv" = (
 /obj/item/flag/ncr,
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "aUx" = (
@@ -13791,7 +13791,7 @@
 	dir = 4;
 	icon_state = "snow_corner"
 	},
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2top"
 	},
@@ -15342,11 +15342,11 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/tunnel)
 "bvn" = (
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/ncr)
 "bvo" = (
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -15425,7 +15425,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bwS" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -16397,7 +16397,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "bAZ" = (
@@ -18869,7 +18869,7 @@
 /turf/open/water,
 /area/f13/sewer)
 "bTd" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "bTe" = (
@@ -20804,7 +20804,7 @@
 /turf/open/water,
 /area/f13/sewer)
 "cad" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "cae" = (
@@ -24221,7 +24221,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "cYx" = (
@@ -25136,7 +25136,7 @@
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "dDj" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "134"
@@ -26121,7 +26121,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "efl" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -27525,7 +27525,7 @@
 /area/f13/building)
 "eWz" = (
 /obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plating/tunnel,
 /area/f13/klamat)
 "eXv" = (
@@ -28517,7 +28517,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "fBa" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
@@ -28830,7 +28830,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/klamat)
 "fJR" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -29287,7 +29287,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/obj/structure/barricade/wooden/crude/snow,
+/obj/structure/barricade/wooden/snowed,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "fWz" = (
@@ -29377,7 +29377,7 @@
 	},
 /area/f13/building)
 "fYU" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -29584,7 +29584,7 @@
 /area/f13/klamat)
 "gdd" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -29733,6 +29733,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
+/obj/structure/barricade/wooden/snowed,
 /obj/structure/barricade/wooden/crude/snow,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
@@ -30919,7 +30920,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
 "gWW" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -34029,7 +34030,7 @@
 	},
 /area/f13/klamat)
 "iUU" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
@@ -39943,7 +39944,7 @@
 	},
 /area/f13/wasteland)
 "mxD" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -41279,7 +41280,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "neT" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -41761,7 +41762,7 @@
 /area/f13/sewer)
 "nwf" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	max_integrity = 300;
 	name = "Khan Kasino";
 	obj_integrity = 300;
@@ -43031,7 +43032,7 @@
 /area/f13/klamat)
 "ola" = (
 /obj/structure/barricade/wooden/planks,
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -43982,7 +43983,7 @@
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "oQA" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Armory";
 	req_one_access_txt = "134"
@@ -45001,7 +45002,7 @@
 	},
 /area/f13/bunker)
 "psr" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Gatehouse";
 	req_one_access_txt = "134"
@@ -45446,7 +45447,7 @@
 	},
 /area/f13/wasteland)
 "pEP" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},
@@ -47866,7 +47867,7 @@
 /turf/closed/indestructible/f13/matrix,
 /area/f13/sewer)
 "rmN" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
@@ -51785,7 +51786,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "tsy" = (
-/obj/structure/simple_door/fakeglass,
+/obj/structure/simple_door/repaired,
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/legion)
 "tsz" = (
@@ -52689,7 +52690,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "tSp" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -52987,7 +52988,7 @@
 	},
 /area/f13/brotherhood)
 "ucj" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
 	req_one_access_txt = "28"
 	},
@@ -55136,7 +55137,7 @@
 /area/f13/klamat)
 "vkQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mayor's Office";
 	req_one_access_txt = "62"
@@ -55224,7 +55225,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
 "vnf" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Roadie Bunks";
 	req_one_access_txt = "31"
@@ -55609,7 +55610,7 @@
 	},
 /area/f13/radiation)
 "vxp" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Mechant's House";
 	req_one_access_txt = "31"
@@ -56254,7 +56255,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "vMw" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	max_integrity = 300;
 	name = "Khan Khamp";
@@ -58827,7 +58828,7 @@
 	},
 /area/f13/bunker)
 "xlq" = (
-/obj/machinery/door/unpowered/wooddoor{
+/obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
