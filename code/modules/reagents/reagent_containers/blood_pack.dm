@@ -107,11 +107,11 @@
 /obj/item/reagent_containers/blood/attack(mob/living/carbon/C, mob/user, def_zone)
 	if(user.a_intent == INTENT_HELP && reagents.total_volume > 0 && iscarbon(C) && user.a_intent == INTENT_HELP)
 		if(C.is_mouth_covered())
-			to_chat(user, "<span class='notice'>You cant drink from the [src] while your mouth is covered.</span>")
+			to_chat(user, "<span class='notice'>You can't drink from the [src] while your mouth is covered.</span>")
 			return
 		if(user != C)
 			user.visible_message("<span class='danger'>[user] forces [C] to drink from the [src].</span>", \
-			"<span class='notice'>You force [C] to drink from the [src]</span>")
+			"<span class='notice'>You force [C] to drink from the [src].</span>")
 			if(!do_mob(user, C, 50))
 				return
 		else

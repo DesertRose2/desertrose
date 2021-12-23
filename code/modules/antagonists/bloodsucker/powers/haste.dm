@@ -29,7 +29,7 @@
 		return FALSE
 	if(!owner.has_gravity(owner.loc)) //We dont want people to be able to use this to fly around in space
 		if(display_error)
-			to_chat(owner, "<span class='warning'>You cant dash while floating!</span>")
+			to_chat(owner, "<span class='warning'>You can't dash while floating!</span>")
 		return FALSE
 	return TRUE
 

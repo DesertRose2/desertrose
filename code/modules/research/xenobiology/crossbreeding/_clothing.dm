@@ -58,7 +58,7 @@ Slimecrossing Armor
 	set_light(5)
 
 /obj/structure/light_prism/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	to_chat(user, "<span class='notice'>You dispel [src]</span>")
+	to_chat(user, "<span class='notice'>You dispel [src].</span>")
 	qdel(src)
 
 /datum/action/item_action/change_prism_colour

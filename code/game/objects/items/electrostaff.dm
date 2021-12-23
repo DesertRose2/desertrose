@@ -199,7 +199,7 @@
 	if(!no_charge_and_force)
 		if(!on)
 			target.visible_message("<span class='warning'>[user] has bapped [target] with [src]. Luckily it was off.</span>", \
-							"<span class='warning'>[user] has bapped you with [src]. Luckily it was off</span>")
+							"<span class='warning'>[user] has bapped you with [src]. Luckily it was off.</span>")
 			turn_off()			//if it wasn't already off
 			return FALSE
 		var/obj/item/stock_parts/cell/C = get_cell()

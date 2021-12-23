@@ -232,7 +232,7 @@
 /obj/item/grenade/homemade/coffeepotbomb/attack_self(mob/user) //
 	if(!active)
 		if(!botch_check(user))
-			to_chat(user, "<span class='warning'>You start the timer! Tick tock</span>")
+			to_chat(user, "<span class='warning'>You start the timer! Tick tock...</span>")
 			primetimer(user, null, FALSE)
 			soundloop.start()
 

@@ -358,7 +358,7 @@
 			if(4 to 7)
 				. += "<span class='notice'>The plant'll be ready for harvest in around a few minutes after reaching maturation.</span>"
 			if(8 to 10)
-				. += "<span class='warning'>The plant's harvest is going to take a while after it's matured.'</span>"
+				. += "<span class='warning'>The plant's harvest is going to take a while after it's matured.</span>"
 		switch(myseed.endurance)	// Check endurance
 			if(10 to 30)
 				. += "<span class='warning'>The plant's endurance is faltering, a breeze is capable of causing it to buckle.</span>"

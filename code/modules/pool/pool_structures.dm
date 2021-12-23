@@ -107,7 +107,7 @@
 
 		if(61 to 80)
 			jumper.visible_message("<span class='notice'>[jumper] goes for an awesome dive! Don't stand in [jumper.p_their()] way!</span>", \
-								"<span class='notice'>You feel like this dive will be awesome</span>")
+								"<span class='notice'>You feel like this dive will be awesome.</span>")
 			sleep(30)
 			backswim()
 			var/atom/throw_target = get_edge_target_turf(src, dir)

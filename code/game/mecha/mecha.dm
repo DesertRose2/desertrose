@@ -531,7 +531,7 @@
 		return 0
 	if(defence_mode)
 		if(world.time - last_message > 20)
-			occupant_message("<span class='danger'>Unable to move while in defence mode</span>")
+			occupant_message("<span class='danger'>Unable to move while in defence mode.</span>")
 			last_message = world.time
 		return 0
 	if(zoom_mode)

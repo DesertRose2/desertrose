@@ -42,7 +42,7 @@
 			if(!chosen_organ)
 				return -1
 			if(!target.reagents.has_reagent(/datum/reagent/synthtissue))
-				to_chat(user, "<span class='notice'>There's no synthtissue available for use on [chosen_organ]</span>")
+				to_chat(user, "<span class='notice'>There's no synthtissue available for use on [chosen_organ].</span>")
 				return -1
 			var/datum/reagent/synthtissue/Sf = locate(/datum/reagent/synthtissue) in target.reagents.reagent_list
 			if(Sf.volume < 10)

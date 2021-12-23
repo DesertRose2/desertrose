@@ -86,7 +86,7 @@
 		if(RAD_LEVEL_CRITICAL + 1 to INFINITY)
 			. += "<span class='boldannounce'>Ambient radiation levels above critical level!</span>"
 
-	. += "<span class='notice'>The last radiation amount detected was [last_tick_amount]</span>"
+	. += "<span class='notice'>The last radiation amount detected was [last_tick_amount].</span>"
 
 /obj/item/geiger_counter/update_icon_state()
 	if(!scanning)

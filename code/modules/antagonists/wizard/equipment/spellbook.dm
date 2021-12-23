@@ -82,8 +82,8 @@
 
 /datum/spellbook_entry/proc/Refund(mob/living/carbon/human/user,obj/item/spellbook/book) //return point value or -1 for failure
 	var/area/wizard_station/A = GLOB.areas_by_type[/area/wizard_station]
-	if(!(user in A.contents))
-		to_chat(user, "<span class='warning'>You can only refund spells at the wizard lair</span>")
+	if(!(get_area(user) != A))
+		to_chat(user, "<span class='warning'>You can only refund spells at the wizard lair.</span>")
 		return -1
 	if(!S)
 		S = new spell_type()

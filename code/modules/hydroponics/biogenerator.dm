@@ -132,7 +132,7 @@
 			to_chat(user, "<span class='warning'>The biogenerator is full! Activate it.</span>")
 		else
 			if(user.transferItemToLoc(O, src))
-				to_chat(user, "<span class='info'>You put [O.name] in [src.name]</span>")
+				to_chat(user, "<span class='info'>You put [O] in [src].</span>")
 		return TRUE //no afterattack
 	else if (istype(O, /obj/item/disk/design_disk))
 		user.visible_message("<span class='notice'>[user] begins to load \the [O] in \the [src]...</span>",

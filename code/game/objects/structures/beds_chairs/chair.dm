@@ -429,7 +429,7 @@
 	if(!proximity)
 		return
 	if(prob(break_chance))
-		user.visible_message("<span class='danger'>[user] smashes [src] to pieces against [target]</span>")
+		user.visible_message("<span class='danger'>[user] smashes [src] to pieces against [target].</span>")
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
 			if(C.health < C.maxHealth*0.5)

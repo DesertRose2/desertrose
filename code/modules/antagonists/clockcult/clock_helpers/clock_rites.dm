@@ -68,10 +68,10 @@
 		return FALSE
 	. = cast(invoker, T, H)
 	if(!.)
-		to_chat(invoker, "<span class='warning'> You fail casting [name]</span>")
+		to_chat(invoker, "<span class='warning'>You fail casting [name].</span>")
 		post_cast(FALSE)
 	else
-		to_chat(invoker, "<span class='warning'>You successfully cast [name]</span>")
+		to_chat(invoker, "<span class='warning'>You successfully cast [name].</span>")
 		post_cast(TRUE)
 	R.performing_rite = FALSE
 	return

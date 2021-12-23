@@ -309,7 +309,7 @@
 
 	if(href_list["toggle_maint_access"])
 		if(state)
-			occupant_message("<span class='danger'>Maintenance protocols in effect</span>")
+			occupant_message("<span class='danger'>Maintenance protocols in effect.</span>")
 			return
 		maint_access = !maint_access
 		send_byjax(usr,"exosuit.browser","t_maint_access","[maint_access?"Forbid":"Permit"] maintenance protocols")

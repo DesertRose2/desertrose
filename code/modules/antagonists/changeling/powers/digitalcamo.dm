@@ -16,7 +16,7 @@
 		user.digitalinvis = 0
 		user.digitalcamo = 0
 	else
-		to_chat(user, "<span class='notice'>We distort our form to hide from the AI</span>")
+		to_chat(user, "<span class='notice'>We distort our form to hide from the AI.</span>")
 		user.digitalcamo = 1
 		user.digitalinvis = 1
 	return TRUE

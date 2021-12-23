@@ -76,11 +76,11 @@ GLOBAL_LIST_EMPTY(custom_shuttle_machines)		//Machines that require updating (He
 		return
 	if(istype(target, /obj/machinery/computer/custom_shuttle))
 		if(!linkedShuttleId)
-			to_chat(user, "<span class='warning'>Error, no defined shuttle linked to device</span>")
+			to_chat(user, "<span class='warning'>Error, no defined shuttle linked to device.</span>")
 			return
 	else if(istype(target, /obj/machinery/computer/camera_advanced/shuttle_docker/custom))
 		if(!linkedShuttleId)
-			to_chat(user, "<span class='warning'>Error, no defined shuttle linked to device</span>")
+			to_chat(user, "<span class='warning'>Error, no defined shuttle linked to device.</span>")
 			return
 		var/obj/machinery/computer/camera_advanced/shuttle_docker/custom/console = target
 		console.linkShuttle(linkedShuttleId)

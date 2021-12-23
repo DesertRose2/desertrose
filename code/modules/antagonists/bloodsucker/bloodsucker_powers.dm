@@ -76,7 +76,7 @@
 	var/mob/living/L = owner
 	if(L.blood_volume < bloodcost)
 		if(display_error)
-			to_chat(owner, "<span class='warning'>You need at least [bloodcost] blood to activate [name]</span>")
+			to_chat(owner, "<span class='warning'>You need at least [bloodcost] blood to activate [name].</span>")
 		return FALSE
 	return TRUE
 

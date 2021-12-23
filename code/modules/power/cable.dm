@@ -580,16 +580,16 @@ By design, d1 is the smallest direction and d2 is the highest
 
 /obj/item/stack/cable_coil/attack_self(mob/user)
 	if(amount < 15)
-		to_chat(user, "<span class='notice'>You don't have enough cable coil to make restraints out of them</span>")
+		to_chat(user, "<span class='notice'>You don't have enough cable to make restraints.</span>")
 		return
 	to_chat(user, "<span class='notice'>You start making some cable restraints.</span>")
 	if(!do_after(user, 30, TRUE, user, TRUE) || !use(15))
-		to_chat(user, "<span class='notice'>You fail to make cable restraints, you need to be standing still to do it</span>")
+		to_chat(user, "<span class='notice'>You fail to make cable restraints, you need to be standing still to do it!</span>")
 		return
 	var/obj/item/restraints/handcuffs/cable/result = new(get_turf(user))
 	user.put_in_hands(result)
 	result.color = color
-	to_chat(user, "<span class='notice'>You make some restraints out of cable</span>")
+	to_chat(user, "<span class='notice'>You make some restraints out of cable.</span>")
 
 //add cables to the stack
 /obj/item/stack/cable_coil/proc/give(extra)

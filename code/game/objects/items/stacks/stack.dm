@@ -313,7 +313,7 @@
 				if(!W.fulltile)
 					continue
 			if(AM.density)
-				to_chat(usr, "<span class='warning'>Theres a [AM.name] here. You cant make a [R.title] here!</span>")
+				to_chat(usr, "<span class='warning'>There's [AM] in the way. You can't make a [R.title] here!</span>")
 				return FALSE
 	if(R.placement_checks)
 		switch(R.placement_checks)
@@ -435,7 +435,7 @@
 			return TRUE
 		else
 			change_stack(user, stackmaterial)
-			to_chat(user, "<span class='notice'>You take [stackmaterial] sheets out of the stack</span>")
+			to_chat(user, "<span class='notice'>You take [stackmaterial] sheets out of the stack.</span>")
 		return TRUE
 
 /obj/item/stack/proc/change_stack(mob/user, amount)

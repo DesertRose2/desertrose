@@ -63,7 +63,7 @@
 
 		if(istype(W, /obj/item/stack/ore/glass) && pit_sand < 1 )
 			var/obj/item/stack/ore/glass/sand_target = W
-			usr.show_message("<span class='notice'>You fill the hole with sand</span>", 1)
+			usr.show_message("<span class='notice'>You fill the hole with sand.</span>", 1)
 			if (pit_sand == 0)
 				if (sand_target.amount >= 1)
 					sand_target.amount = sand_target.amount - 1

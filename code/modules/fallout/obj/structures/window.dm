@@ -74,7 +74,7 @@
 					return
 				Z.use(3)
 				new /obj/structure/barricade/wooden/planks(get_turf(src))
-				user.visible_message("<span class='notice'>[user] reinforces the window with some planks</span>", "<span class='notice'>You reinforce the window with some planks.</span>")
+				user.visible_message("<span class='notice'>[user] reinforces the window with some planks.</span>", "<span class='notice'>You reinforce the window with some planks.</span>")
 				return
 	else if(!istype(W, /obj/item/stack/sheet/mineral/wood))
 		if(locate(/obj/structure/barricade/wooden/planks) in get_turf(src))

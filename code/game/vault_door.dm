@@ -71,10 +71,10 @@
 
 /obj/structure/vaultdoor/proc/vaultactivate()
 	if(destroyed)
-		to_chat(usr, "<span class='warning'>[src] is broken</span>")
+		to_chat(usr, "<span class='warning'>[src] is broken.</span>")
 		return
 	if(is_busy)
-		to_chat(usr, "<span class='warning'>[src] is busy</span>")
+		to_chat(usr, "<span class='warning'>[src] is busy.</span>")
 		return
 	if(density)
 		open()

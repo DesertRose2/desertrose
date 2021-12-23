@@ -131,7 +131,7 @@ GLOBAL_LIST_INIT(dye_registry, list(
 	if(busy)
 		return
 	if(state_open)
-		to_chat(user, "<span class='notice'>Close the door first</span>")
+		to_chat(user, "<span class='notice'>Close the door first.</span>")
 		return TRUE
 	if(bloody_mess)
 		to_chat(user, "<span class='warning'>[src] must be cleaned up first.</span>")

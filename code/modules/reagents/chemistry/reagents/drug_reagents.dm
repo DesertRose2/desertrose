@@ -187,7 +187,7 @@
 
 /datum/reagent/drug/heroin/addiction_act_stage2(mob/living/M)
 	if(prob(25))
-		to_chat(M, "<span class='danger'>Life feels so hard</span>")
+		to_chat(M, "<span class='danger'>Life feels so hard.</span>")
 	M.adjustToxLoss(3*REM, 0)
 	..()
 	. = 1

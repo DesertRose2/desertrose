@@ -108,9 +108,9 @@
 						if(T)
 							new_player(occupant, T, V.vr_outfit)
 						else
-							to_chat(occupant, "<span class='warning'>Virtual world misconfigured, aborting transfer</span>")
+							to_chat(occupant, "<span class='warning'>Virtual world misconfigured, aborting transfer!</span>")
 					else
-						to_chat(occupant, "<span class='warning'>The virtual world does not support the creation of new virtual avatars, aborting transfer</span>")
+						to_chat(occupant, "<span class='warning'>The virtual world does not support the creation of new virtual avatars, aborting transfer!</span>")
 				else
 					to_chat(vr_mob, "<span class='notice'>Transfer successful! You are now playing as [vr_mob] in VR!</span>")
 			. = TRUE

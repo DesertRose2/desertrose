@@ -446,7 +446,7 @@
 			nopass = TRUE
 	if(!nopass)
 		INVOKE_ASYNC(A, /obj/machinery/door.proc/open)
-		wearer.visible_message("<span class='warning'>[wearer] rolls sideways and slips past [A]</span>")
+		wearer.visible_message("<span class='warning'>[wearer] rolls sideways and slips past [A].</span>")
 		var/turf/target = get_turf(A)
 		if(istype(A, /obj/machinery/door/window) && (get_turf(wearer) == get_turf(A)))
 			target = get_step(A, A.dir)

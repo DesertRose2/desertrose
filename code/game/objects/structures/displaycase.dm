@@ -126,7 +126,7 @@
 			if(showpiece)
 				to_chat(user, "<span class='notice'>Remove the displayed object first.</span>")
 			else
-				to_chat(user, "<span class='notice'>You remove the destroyed case</span>")
+				to_chat(user, "<span class='notice'>You remove the destroyed case.</span>")
 				qdel(src)
 		else
 			to_chat(user, "<span class='notice'>You start to [open ? "close":"open"] [src].</span>")
@@ -136,7 +136,7 @@
 	else if(open && !showpiece)
 		if(user.transferItemToLoc(W, src))
 			showpiece = W
-			to_chat(user, "<span class='notice'>You put [W] on display</span>")
+			to_chat(user, "<span class='notice'>You put [W] on display.</span>")
 			update_icon()
 	else if(istype(W, /obj/item/stack/sheet/glass) && broken)
 		var/obj/item/stack/sheet/glass/G = W

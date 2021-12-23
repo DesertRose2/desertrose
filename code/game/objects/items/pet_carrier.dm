@@ -136,7 +136,7 @@
 		if(alternate_escape_time > 0)
 			loc.visible_message("<span class='notice'>The [src] begins to shake!</span>")
 			if(do_after(user, alternate_escape_time, target = user))
-				loc.visible_message("<span class='notice'>[user] jumps out of [src]</span>")
+				loc.visible_message("<span class='notice'>[user] jumps out of [src]!</span>")
 				remove_occupant(user)
 			return
 		else //instant escape, different message

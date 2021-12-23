@@ -160,7 +160,7 @@
 /obj/item/emagrecharge/examine(mob/user)
 	. = ..()
 	if(uses)
-		. += "<span class='notice'>It can add up to [uses] charges to compatible devices</span>"
+		. += "<span class='notice'>It can add up to [uses] charges to compatible devices.</span>"
 	else
 		. += "<span class='warning'>It has a small, red, blinking light coming from inside of it. It's spent.</span>"
 

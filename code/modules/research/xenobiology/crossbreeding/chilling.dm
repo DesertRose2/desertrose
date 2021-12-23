@@ -31,7 +31,7 @@ Chilling extracts:
 	colour = "grey"
 
 /obj/item/slimecross/chilling/grey/do_effect(mob/user)
-	user.visible_message("<span class='notice'>[src] produces a few small, grey cubes</span>")
+	user.visible_message("<span class='notice'>[src] produces a few small, grey cubes.</span>")
 	for(var/i in 1 to 3)
 		new /obj/item/barriercube(get_turf(user))
 	..()

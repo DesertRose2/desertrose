@@ -101,7 +101,7 @@
 		if(threats.len)
 			target = pick(threats)
 		else
-			to_chat(owner, "<span class='warning'>There is no potential foe of different faction around to attack</span>")
+			to_chat(owner, "<span class='warning'>There is no potential foe of different faction around to attack.</span>")
 	if(target)
 		var/mob/living/simple_animal/hostile/boss/paper_wizard/wiz = boss
 		var/directions = GLOB.cardinals.Copy()

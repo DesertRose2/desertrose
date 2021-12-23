@@ -121,7 +121,7 @@
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 
 /obj/item/restraints/handcuffs/cable/attack_self(mob/user)
-	to_chat(user, "<span class='notice'>You start unwinding the cable restraints back into coil</span>")
+	to_chat(user, "<span class='notice'>You start unwinding the cable restraints back into a coil of wire.</span>")
 	if(!do_after(user, 25, TRUE, user))
 		return
 	qdel(src)
@@ -129,7 +129,7 @@
 	coil.amount = 15
 	user.put_in_hands(coil)
 	coil.color = color
-	to_chat(user, "<span class='notice'>You unwind the cable restraints back into coil</span>")
+	to_chat(user, "<span class='notice'>You unwind the cable restraints back into a coil of wire.</span>")
 
 /obj/item/restraints/handcuffs/cable/red
 	color = "#ff0000"

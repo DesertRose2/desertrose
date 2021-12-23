@@ -1038,7 +1038,7 @@
 
 /datum/reagent/consumable/tea/pinkmilk/on_mob_life(mob/living/carbon/M)
 	if(prob(15))
-		to_chat(M, "<span class = 'notice'>[pick("You cant help to smile.","You feel nostalgia all of sudden.","You remember to relax.")]</span>")
+		to_chat(M, "<span class = 'notice'>[pick("You can't help but smile.","You feel nostalgia all of sudden.","You remember to relax.")]</span>")
 	..()
 	. = 1
 

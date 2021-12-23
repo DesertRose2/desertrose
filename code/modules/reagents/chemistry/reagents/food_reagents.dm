@@ -469,7 +469,7 @@
 		switch(method)
 			if(INGEST)
 				if(prob(min(30, current_cycle)))
-					to_chat(M, "<span class='warning'>You cant get the smell of garlic out of your nose! You cant think straight because of it!</span>")
+					to_chat(M, "<span class='warning'>You can't get the smell of garlic out of your nose! You can't think straight because of it!</span>")
 					M.Jitter(15)
 				if(prob(min(15, current_cycle)))
 					M.visible_message("<span class='danger'>Something you ate is burning your stomach!</span>", "<span class='warning'>[M] clutches their stomach and falls to the ground!</span>")
