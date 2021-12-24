@@ -312,7 +312,6 @@
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
-//	machine_tool_behaviour = list(TOOL_LEGION, TOOL_NCR)
 	categories = list("Security")
 	super_advanced_technology = FALSE
 

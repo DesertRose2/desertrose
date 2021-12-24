@@ -6,7 +6,7 @@
 	limbs_id = "smutant"
 	species_traits = list(NOTRANSSTING, NOGENITALS, NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE)
-	inherent_biotypes = list(MOB_INORGANIC, MOB_HUMANOID)
+	inherent_biotypes = list(MOB_HUMANOID)
 	whitelisted = 1
 	whitelist = list("honto335", "pisshole", "goldrobo", "prawn04", "jkjudgex", "theburningflame", "theeternalflame",
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",

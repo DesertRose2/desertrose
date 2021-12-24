@@ -50,8 +50,8 @@
 		if(iswallturf(loc))
 			to_chat(user, SPAN_WARNING("There is already a wall present!"))
 			return
-		if(!isfloorturf(src.loc) && !isgroundturf(src.loc))
-			to_chat(user, SPAN_WARNING("A floor must be present to build a false wall!"))
+		if(isgroundlessturf(loc))
+			to_chat(user, SPAN_WARNING("You need a solid surface to build a false wall on!"))
 			return
 		if (locate(/obj/structure/falsewall) in src.loc.contents)
 			to_chat(user, SPAN_WARNING("There is already a false wall present!"))
