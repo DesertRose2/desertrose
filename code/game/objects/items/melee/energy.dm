@@ -71,7 +71,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/axes_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/axes_righthand.dmi'
 	force = 40
-	force_on = 80
+	force_on = 150
 	throwforce = 25
 	throwforce_on = 30
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -80,7 +80,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	w_class_on = WEIGHT_CLASS_HUGE
 	flags_1 = CONDUCT_1
-	armour_penetration = 0.5
+	armour_penetration = 100
 	attack_verb_off = list("attacked", "chopped", "cleaved", "torn", "cut")
 	attack_verb_on = list()
 	light_color = "#40ceff"
@@ -293,7 +293,7 @@
 	throw_range = 5
 	sharpness = SHARP_EDGED
 	embedding = list("embedded_pain_multiplier" = 6, "embed_chance" = 20, "embedded_fall_chance" = 60)
-	armour_penetration = 0.2
+	armour_penetration = 10
 	block_chance = 35
 	light_color = "#37FFF7"
 	actions_types = list()
@@ -389,7 +389,7 @@
 			It appears to have a wooden grip and a shaved down guard."
 	icon_state = "cxsword_hilt_traitor"
 	force_on = 30
-	armour_penetration = 0.65
+	armour_penetration = 35
 	embedding = list("embedded_pain_multiplier" = 10, "embed_chance" = 75, "embedded_fall_chance" = 0, "embedded_impact_pain_multiplier" = 10)
 	block_chance = 50
 	hitsound_on = 'sound/weapons/blade1.ogg'

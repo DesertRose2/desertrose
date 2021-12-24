@@ -300,8 +300,8 @@
 		to_chat(usr, SPAN_WARNING("There is another [R.title] here!"))
 		return FALSE
 	if(R.on_floor)
-		if(!isfloorturf(T) && !isgroundturf(T))
-			to_chat(usr, SPAN_WARNING("\The [R.title] must be constructed on the floor!"))
+		if(isgroundlessturf(T))
+			to_chat(usr, SPAN_WARNING("\The [R.title] must be constructed on the ground!"))
 			return FALSE
 		for(var/obj/AM in T)
 			if(istype(AM,/obj/structure/grille))

@@ -18,7 +18,7 @@
 	name = "fork"
 	desc = "Pointy."
 	icon_state = "fork"
-	force = 5
+	force = 4
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
 	throw_speed = 3
@@ -61,13 +61,13 @@
 	throwforce = 15
 	throw_speed = 4
 	throw_range = 6
-	embedding = list("pain_mult" = 2, "embed_chance" = 80, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
+	embedding = list("pain_mult" = 2, "embed_chance" = 100, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
 	sharpness = SHARP_EDGED
 
 /obj/item/kitchen/knife
 	name = "kitchen knife"
-	icon_state = "knife_kitchen"
-	desc = "A general purpose Chef's Knife made by VaultCook Incorporated. Guaranteed to stay sharp for years to come."
+	icon_state = "knife"
+	desc = "A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come."
 	flags_1 = CONDUCT_1
 	force = 15
 	w_class = WEIGHT_CLASS_SMALL
@@ -137,69 +137,44 @@
 	icon_state = "knife_cleaver"
 	desc = "Heavy bladed tool for chopping meat."
 	flags_1 = CONDUCT_1
-	force = 25
-	throwforce = 20
+	force = 15
+	throwforce = 10
 	custom_materials = list(/datum/material/iron=18000)
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_price = PRICE_EXPENSIVE
 
 /obj/item/kitchen/knife/combat
-	name = "hunting knife"
-	icon_state = "knife_hunting"
+	name = "combat knife"
+	icon_state = "buckknife"
 	item_state = "knife"
-	desc = "A dependable hunting knife."
+	desc = "A military combat utility survival knife."
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
-	force = 30
-	throwforce = 25
+	force = 20
+	throwforce = 20
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
-	bayonet = FALSE
+	bayonet = TRUE
 
 /obj/item/kitchen/knife/combat/survival
 	name = "survival knife"
-	icon_state = "knife_survival"
+	icon_state = "survivalknife"
 	item_state = "knife"
-	desc = "A multi-purpose knife with blackened steel."
+	desc = "A hunting grade survival knife."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	force = 25
-	throwforce = 25
-
-/obj/item/kitchen/knife/combat/bayonet
-	name = "bayonet knife"
-	icon_state = "knife_bayonet"
-	item_state = "knife"
-	desc = "This weapon is made for stabbing, not much use for other things."
-	force = 10
-	throwforce = 5
-	armour_penetration = 0.2
+	force = 15
+	throwforce = 15
 	bayonet = TRUE
-
-/obj/item/kitchen/knife/bowie
-	name = "bowie knife"
-	icon_state = "knife_bowie"
-	item_state = "knife_bowie"
-	desc = "A large clip point fighting knife."
-	force = 33
-	throwforce = 25
-	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
-
-/obj/item/kitchen/knife/trench
-	name = "trench knife"
-	icon_state = "knife_trench"
-	item_state = "knife_trench"
-	desc = "This blade is designed for brutal close quarters combat."
-	force = 37
-	throwforce = 25
-	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
 
 /obj/item/kitchen/knife/combat/bone
 	name = "bone dagger"
 	item_state = "bone_dagger"
-	icon_state = "knife_bone"
+	icon_state = "bone_dagger"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	desc = "A sharpened bone. The bare minimum in survival."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	force = 20
-	throwforce = 20
+	force = 15
+	throwforce = 15
 	custom_materials = null
 
 /obj/item/kitchen/knife/combat/bone/plastic
@@ -254,40 +229,3 @@
 /obj/item/kitchen/knife/scimiar/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 90 - force, 100, force - 60) //bonus chance increases depending on force
-
-/obj/item/kitchen/knife/cosmicdirty
-	name = "dirty cosmic knife"
-	desc = "A high-quality kitchen knife made from Saturnite alloy."
-	icon_state = "cosmic_knife_dirty"
-	item_state = "knife"
-	force = 15
-	throwforce = 10
-	armour_penetration = 0.2
-
-/obj/item/kitchen/knife/cosmic
-	name = "cosmic knife"
-	desc = "A high-quality kitchen knife made from Saturnite alloy, this one seems to be in better condition."
-	icon_state = "cosmic_knife"
-	item_state = "knife"
-	force = 25
-	throwforce = 15
-	armour_penetration = 0.2
-
-/obj/item/kitchen/knife/cosmicheated
-	name = "superheated cosmic knife"
-	desc = "A high-quality kitchen knife made from Saturnite alloy, this one looks like it has been heated to high temperatures."
-	icon_state = "cosmic_knife_heated"
-	item_state = "knife"
-	damtype = BURN
-	force = 35
-	throwforce = 20
-	armour_penetration = 0.4
-
-/obj/item/kitchen/knife/ritualdagger
-	name = "ritual dagger"
-	desc = "An ancient blade used to carry out the spiritual rituals of the Wayfarer people."
-	icon_state = "ritualdagger"
-	item_state = "knife_ritual"
-	force = 25
-	throwforce = 20
-	armour_penetration = 0.2

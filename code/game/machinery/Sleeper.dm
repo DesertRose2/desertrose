@@ -6,11 +6,10 @@
 
 //Autodocs replacing sleepers was done by Wateronix as well as the sprites. Ultimately very good idea since it keeps with lore consistancy and provides a unique looking sprite.
 /obj/machinery/sleeper
-	name = "autodoc"
-	desc = "An old pre war machine, used to stablize and heal patients."
-	icon = 'icons/obj/machines/autodoc.dmi'
-	icon_state = "autodoc"
-	layer = 3.3
+	name = "sleeper"
+	desc = "An enclosed machine used to stabilize and heal patients."
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
 	density = FALSE
 	state_open = TRUE
 	circuit = /obj/item/circuitboard/machine/sleeper
@@ -152,20 +151,9 @@
 
 /obj/machinery/sleeper/ui_interact(mob/living/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
-	if(istype(user, /mob/dead/observer))
-		if(!ui)
-			ui = new(user, src, "Sleeper", name)
-			ui.open()
-	else
-		if(!HAS_TRAIT(user, TRAIT_CHEMWHIZ))
-			to_chat(user, SPAN_WARNING("Try as you might, you have no clue how to work this thing."))
-			return
-		if(!user.IsAdvancedToolUser())
-			to_chat(user, SPAN_WARNING("The legion has no use for drugs! Better to destroy it."))
-			return
-		if(!ui)
-			ui = new(user, src, "Sleeper", name)
-			ui.open()
+	if(!ui)
+		ui = new(user, src, "Sleeper", name)
+		ui.open()
 
 /obj/machinery/sleeper/AltClick(mob/user)
 	if(!user.canUseTopic(src, !issilicon(user)))

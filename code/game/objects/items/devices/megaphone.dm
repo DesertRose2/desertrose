@@ -10,7 +10,6 @@
 	siemens_coefficient = 1
 	var/spamcheck = 0
 	var/list/voicespan = list(SPAN_COMMAND)
-	var/megaphone_sound = 'sound/items/megaphone.ogg'
 
 /obj/item/megaphone/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] is uttering [user.p_their()] last words into \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -34,7 +33,7 @@
 		if(spamcheck > world.time)
 			to_chat(user, SPAN_WARNING("\The [src] needs to recharge!"))
 		else
-			playsound(loc, megaphone_sound, 100, 0, 1)
+			playsound(loc, 'sound/items/megaphone.ogg', 100, 0, 1)
 			spamcheck = world.time + 50
 			speech_args[SPEECH_SPANS] |= voicespan
 
@@ -64,13 +63,3 @@
 	desc = "Something that should not exist."
 	icon_state = "megaphone-clown"
 	voicespan = list(SPAN_CLOWN)
-
-/obj/item/megaphone/cornu
-	name = "cornu horn"
-	desc = "A horn carried by roman flagbearers to inform the commander's orders to the troops. Loudly."
-	icon = 'icons/obj/musician.dmi'
-	icon_state = "cornu"
-	item_state = "cornu"
-	lefthand_file = 'icons/mob/inhands/equipment/horns_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/horns_righthand.dmi'
-	megaphone_sound = 'sound/items/cornu.ogg'

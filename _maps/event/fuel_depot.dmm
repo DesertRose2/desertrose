@@ -2952,7 +2952,7 @@
 /area/f13/bunker)
 "Sp" = (
 /obj/structure/table,
-/obj/item/book/granter/trait/chemistry{
+/obj/item/book/granter/trait/crafting/chemistry{
 	name = "Chemistry for Vault Dwellers";
 	pixel_y = 8
 	},

@@ -1,6 +1,5 @@
 /obj/item/grenade/flashbang
 	name = "flashbang"
-	desc = "A prewar police riot supression device, this one delivers a powerful flash and deafening boom."
 	icon_state = "flashbang"
 	item_state = "flashbang"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
@@ -143,10 +142,3 @@
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
 	rots_per_mag = 2
 	shrapnel_type = /obj/item/projectile/bullet/pellet/stingball
-
-/obj/item/grenade/flashbang/sentry
-	name = "defensive flashbang" //for sentrybots
-	desc = "Why are you staring at this?!"
-	flashbang_range = 7
-	det_time = 1 SECONDS
-

@@ -180,17 +180,9 @@
 	name = "R&D Console (Computer Board)"
 	build_path = /obj/machinery/computer/rdconsole/core
 
-/obj/item/circuitboard/computer/rdconsole/bos
-	name = "R&D Console (Computer Board)"
-	build_path = /obj/machinery/computer/rdconsole/core/bos
-
 /obj/item/circuitboard/computer/rdconsole/vault
 	name = "R&D Console (Computer Board)"
 	build_path = /obj/machinery/computer/rdconsole/core/vault
-
-/obj/item/circuitboard/computer/rdconsole/followers
-	name = "R&D Console (Computer Board)"
-	build_path = /obj/machinery/computer/rdconsole/core/followers
 
 /obj/item/circuitboard/computer/rdconsole/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
@@ -333,11 +325,6 @@
 	name = "Library Visitor Console (Computer Board)"
 	build_path = /obj/machinery/computer/libraryconsole
 
-/obj/item/circuitboard/computer/robco_terminal
-	name = "RobCo Terminal Mainboard (Computer board)"
-	build_path = /obj/machinery/computer/terminal
-
-
 /obj/item/circuitboard/computer/libraryconsole/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(build_path == /obj/machinery/computer/libraryconsole/bookmanagement)
@@ -392,39 +379,3 @@
 /obj/item/circuitboard/computer/shuttle/docker
 	name = "Shuttle Navigation Computer (Computer Board)"
 	build_path = /obj/machinery/computer/camera_advanced/shuttle_docker/custom
-
-/obj/item/circuitboard/computer/enclave_control
-	name = "Enclave Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/enclavefortelevator
-
-/obj/item/circuitboard/computer/bos_control
-	name = "BoS Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/boselevator
-
-/obj/item/circuitboard/computer/bos_entry_control
-	name = "BoS Entry Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/bosentryelevator
-
-/obj/item/circuitboard/computer/vault_control
-	name = "Vault Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/vaultelevator
-
-/obj/item/circuitboard/computer/bunker_control
-	name = "Bunker Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/bunkerelevator
-
-/obj/item/circuitboard/computer/northbunker_control
-	name = "North Bunker Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/northbunkerelevator
-
-/obj/item/circuitboard/computer/mining_control
-	name = "Mining Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/miningelevator
-
-/obj/item/circuitboard/computer/vault113_control
-	name = "Vault 113 Elevator Control (Computer board)"
-	build_path = /obj/machinery/computer/shuttle/vault113elevator
-
-/obj/item/circuitboard/computer/bos
-	name = "Brotherhood Monitor (Computer Board)"
-	build_path = /obj/machinery/computer/security/bos
