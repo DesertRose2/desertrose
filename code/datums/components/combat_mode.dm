@@ -90,7 +90,6 @@
 			source.playsound_local(source, 'sound/misc/ui_toggle_vats.ogg', 70, FALSE, pressure_affected = FALSE)
 	RegisterSignal(source, COMSIG_MOB_CLIENT_MOUSEMOVE, .proc/onMouseMove)
 	RegisterSignal(source, COMSIG_MOVABLE_MOVED, .proc/on_move)
-	RegisterSignal(source, COMSIG_MOB_CLIENT_MOVE, .proc/on_client_move)
 	if(hud_icon)
 		hud_icon.combat_on = TRUE
 		hud_icon.update_icon()
