@@ -1,6 +1,8 @@
 #define CAT_THROWABLE "Throwables & Explosives"
 	#define CAT_REGULAR "Throwables"
 	#define CAT_EXPLOSIVE "Explosives"
+
+// CAT_WEAPONRY
 	#define CAT_MISCWEP	"Misc. Weaponry"
 
 // CAT_FOOD
