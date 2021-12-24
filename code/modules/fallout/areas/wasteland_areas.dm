@@ -23,6 +23,21 @@
 	ambientsounds = list('sound/f13ambience/wasteland.ogg', 'sound/f13ambience/sewer.ogg')
 	flags_1 = NONE //>desert >>has destroyed robo dirt on it
 
+/area/f13/klamat
+	name = "Klamat"
+	icon_state = "klamat"
+	requires_power = TRUE
+
+/area/f13/klamat/mine
+	name = "Klamat mine"
+	icon_state = "klamat_mine"
+	requires_power = TRUE
+
+/area/f13/deepmine
+	name = "Klamat deep mine"
+	icon_state = "klamat_mine"
+	requires_power = TRUE
+
 /area/f13/underground/mountain
 	name = "mountain"
 	icon_state = "cave"
