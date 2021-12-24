@@ -39,7 +39,7 @@
 	Stun(1000)
 	pseudo_death = TRUE
 	incorporeal_move = 0
-	to_chat(src, "<span class='notice'>Your astral projection is interrupted and your mind is sent back to your body with a shock!</span>")
+	to_chat(src, SPAN_NOTICE("Your astral projection is interrupted and your mind is sent back to your body with a shock!"))
 
 /mob/living/simple_animal/astral/ClickOn(atom/A, params)
 	. = ..()
@@ -54,7 +54,7 @@
 				if(H.reagents.has_reagent(/datum/reagent/fermi/astral) && !H.mind)
 					var/datum/reagent/fermi/astral/As = locate(/datum/reagent/fermi/astral) in H.reagents.reagent_list
 					if(As.originalmind == src.mind && As.current_cycle < 10 && H.stat != DEAD) //So you can return to your body.
-						to_chat(src, "<span class='warning'><b><i>The intensity of the astrogen in your body is too much allow you to return to yourself yet!</b></i></span>")
+						to_chat(src, SPAN_WARNING("<b><i>The intensity of the astrogen in your body is too much allow you to return to yourself yet!</b></i>"))
 						return
 					to_chat(src, "<b><i>You astrally possess [H]!</b></i>")
 					log_reagent("FERMICHEM: [src] has astrally possessed [A]!")

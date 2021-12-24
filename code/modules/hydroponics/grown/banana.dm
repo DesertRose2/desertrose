@@ -98,12 +98,12 @@
 
 // Bluespace Banana
 /obj/item/seeds/banana/bluespace
-	name = "pack of bluespace banana seeds"
-	desc = "They're seeds that grow into bluespace banana trees. When grown, keep away from bluespace clown."
+	name = "pack of quantum banana seeds"
+	desc = "They're seeds that grow into quantum banana trees. When grown, keep away from quantum clowns."
 	icon_state = "seed-banana-blue"
 	species = "bluespacebanana"
 	icon_grow = "banana-grow"
-	plantname = "Bluespace Banana Tree"
+	plantname = "Quantum Banana Tree"
 	product = /obj/item/reagent_containers/food/snacks/grown/banana/bluespace
 	mutatelist = list()
 	genes = list(/datum/plant_gene/trait/slip, /datum/plant_gene/trait/teleport, /datum/plant_gene/trait/repeated_harvest)
@@ -112,7 +112,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/banana/bluespace
 	seed = /obj/item/seeds/banana/bluespace
-	name = "bluespace banana"
+	name = "quantum banana"
 	icon_state = "banana_blue"
 	item_state = "bluespace_peel"
 	trash = /obj/item/grown/bananapeel/bluespace
@@ -123,8 +123,8 @@
 
 /obj/item/grown/bananapeel/bluespace
 	seed = /obj/item/seeds/banana/bluespace
-	name = "bluespace banana peel"
-	desc = "A peel from a bluespace banana."
+	name = "quantum banana peel"
+	desc = "A peel from a quantum banana."
 	icon_state = "banana_peel_blue"
 
 //Banana Spider.
@@ -153,14 +153,14 @@
 /obj/item/reagent_containers/food/snacks/grown/banana/banana_spider_spawnable/attack_self(mob/user)
 	if(awakening || isspaceturf(user.loc))
 		return
-	to_chat(user, "<span class='notice'>You decide to wake up the banana spider...</span>")
+	to_chat(user, SPAN_NOTICE("You decide to wake up the banana spider..."))
 	awakening = 1
 
 	spawn(30)
 		if(!QDELETED(src))
 			var/mob/living/simple_animal/banana_spider/S = new /mob/living/simple_animal/banana_spider(get_turf(src.loc))
 			S.speed += round(10 / max(seed.potency, 1), 1)
-			S.visible_message("<span class='notice'>The banana spider chitters as it stretches its legs.</span>")
+			S.visible_message(SPAN_NOTICE("The banana spider chitters as it stretches its legs."))
 			qdel(src)
 
 // Other

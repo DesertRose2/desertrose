@@ -345,7 +345,7 @@
 
 /obj/machinery/computer/security/bos
 	name = "brootherhood bunker camera terminal"
-	desc = "Used to access the various cameras inside the bunker"
+	desc = "Used to access the various cameras inside the bunker."
 	icon_state = "terminal"
 	icon_keyboard = "terminal_key"
 	icon_screen = "terminal_on_alt"

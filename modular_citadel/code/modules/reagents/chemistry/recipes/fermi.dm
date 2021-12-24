@@ -171,7 +171,7 @@
 		S.rabid = 1//Make them an angery boi
 		S.color = "#810010"
 	my_atom.reagents.clear_reagents()
-	my_atom.visible_message("<span class='warning'>An horrifying tumoural mass forms in [my_atom]!</span>")
+	my_atom.visible_message(SPAN_WARNING("An horrifying tumoural mass forms in [my_atom]!"))
 
 /datum/chemical_reaction/fermi/breast_enlarger
 	name = "Sucubus milk"
@@ -208,7 +208,7 @@
 
 /datum/chemical_reaction/fermi/breast_enlarger/FermiExplode(datum/reagents, atom/my_atom, volume, temp, pH)
 	var/obj/item/organ/genital/breasts/B = new /obj/item/organ/genital/breasts(get_turf(my_atom))
-	my_atom.visible_message("<span class='warning'>The reaction suddenly condenses, creating a pair of breasts!</b></span>")
+	my_atom.visible_message(SPAN_WARNING("The reaction suddenly condenses, creating a pair of breasts!</b>"))
 	var/datum/reagent/fermi/breast_enlarger/BE = locate(/datum/reagent/fermi/breast_enlarger) in my_atom.reagents.reagent_list
 	B.size = ((BE.volume * BE.purity) / 10) //half as effective.
 	my_atom.reagents.clear_reagents()
@@ -238,7 +238,7 @@
 
 /datum/chemical_reaction/fermi/penis_enlarger/FermiExplode(datum/reagents, atom/my_atom, volume, temp, pH)
 	var/obj/item/organ/genital/penis/P = new /obj/item/organ/genital/penis(get_turf(my_atom))
-	my_atom.visible_message("<span class='warning'>The reaction suddenly condenses, creating a penis!</b></span>")
+	my_atom.visible_message(SPAN_WARNING("The reaction suddenly condenses, creating a penis!</b>"))
 	var/datum/reagent/fermi/penis_enlarger/PE = locate(/datum/reagent/fermi/penis_enlarger) in my_atom.reagents.reagent_list
 	P.length = ((PE.volume * PE.purity) / 10)//half as effective.
 	my_atom.reagents.clear_reagents()
@@ -306,7 +306,7 @@
 	if(!B || !E)
 		return
 	if(!B.data)
-		my_atom.visible_message("<span class='warning'>The reaction splutters and fails to react properly.</span>") //Just in case
+		my_atom.visible_message(SPAN_WARNING("The reaction splutters and fails to react properly.")) //Just in case
 		E.purity = 0
 	if (B.data["gender"] == "female")
 		E.data["creatorGender"] = "Mistress"
@@ -330,7 +330,7 @@
 	if(!B || !E)
 		return
 	if(!B.data)
-		my_atom.visible_message("<span class='warning'>The reaction splutters and fails to react properly.</span>") //Just in case
+		my_atom.visible_message(SPAN_WARNING("The reaction splutters and fails to react properly.")) //Just in case
 		E.purity = 0
 	if (B.data["gender"] == "female")
 		E.data["creatorGender"] = "Mistress"

@@ -148,7 +148,7 @@
 					break
 		if("delete")
 			if(!src.allowed(usr) && !CHECK_BITFIELD(obj_flags, EMAGGED))
-				to_chat(usr, "<span class='danger'>ACCESS DENIED.</span>")
+				to_chat(usr, SPAN_DANGER("ACCESS DENIED."))
 				return
 
 			if(!SelectedMachine)

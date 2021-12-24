@@ -211,7 +211,7 @@
 	wine_power = 80
 
 /obj/item/reagent_containers/food/snacks/grown/cherry_bomb/attack_self(mob/living/user)
-	user.visible_message("<span class='warning'>[user] plucks the stem from [src]!</span>", "<span class='userdanger'>You pluck the stem from [src], which begins to hiss loudly!</span>")
+	user.visible_message(SPAN_WARNING("[user] plucks the stem from [src]!"), "<span class='userdanger'>You pluck the stem from [src], which begins to hiss loudly!</span>")
 	message_admins("[ADMIN_LOOKUPFLW(user)] primed a cherry bomb for detonation at [ADMIN_VERBOSEJMP(user)]")
 	log_game("[key_name(user)] primed a cherry bomb for detonation at [AREACOORD(user)].")
 	prime()
@@ -299,13 +299,13 @@
 			amount_per_transfer_from_this = possible_transfer_amounts[i+1]
 		else
 			amount_per_transfer_from_this = possible_transfer_amounts[1]
-		to_chat(user, "<span class='notice'>[src]'s transfer amount is now [amount_per_transfer_from_this] units.</span>")
+		to_chat(user, SPAN_NOTICE("[src]'s transfer amount is now [amount_per_transfer_from_this] units."))
 		return
 
 /obj/item/reagent_containers/food/snacks/grown/coconut/attackby(obj/item/W, mob/user, params)
 	//ADDING STRAW LOGIC
 	if (istype(W,/obj/item/stack/sheet/mineral/bamboo) && opened && !straw && fused)
-		user.show_message("<span class='notice'>You add a bamboo straw to the coconut!</span>", 1)
+		user.show_message(SPAN_NOTICE("You add a bamboo straw to the coconut!"), 1)
 		straw = TRUE
 		W.use(1)
 		icon_state += "_straw"
@@ -315,7 +315,7 @@
 	if (!carved && !chopped)
 		var/screwdrivered = W.tool_behaviour == TOOL_SCREWDRIVER
 		if(screwdrivered || W.sharpness)
-			user.show_message("<span class='notice'>You [screwdrivered ? "make a hole in the coconut" : "slice the coconut open"]!</span>", 1)
+			user.show_message(SPAN_NOTICE("You [screwdrivered ? "make a hole in the coconut" : "slice the coconut open"]!"), 1)
 			carved = TRUE
 			opened = TRUE
 			spillable = !screwdrivered
@@ -343,10 +343,10 @@
 
 			//Display an attack message.
 			if(M != user)
-				M.visible_message("<span class='danger'>[user] has cracked open a [name] on [M]'s head!</span>", \
+				M.visible_message(SPAN_DANGER("[user] has cracked open a [name] on [M]'s head!"), \
 						"<span class='userdanger'>[user] has cracked open a [name] on [M]'s head!</span>")
 			else
-				user.visible_message("<span class='danger'>[M] cracks open a [name] on their [M.p_them()] head!</span>", \
+				user.visible_message(SPAN_DANGER("[M] cracks open a [name] on their [M.p_them()] head!"), \
 						"<span class='userdanger'>[M] cracks open a [name] on [M.p_their()] head!</span>")
 
 			//The coconut breaks open so splash its reagents
@@ -369,12 +369,12 @@
 		return
 
 	if(!reagents || !reagents.total_volume)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return
 
 	if(user.a_intent == INTENT_HARM && spillable)
 		var/R
-		M.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [M]!</span>", \
+		M.visible_message(SPAN_DANGER("[user] splashes the contents of [src] onto [M]!"), \
 						"<span class='userdanger'>[user] splashes the contents of [src] onto [M]!</span>")
 		if(reagents)
 			for(var/datum/reagent/A in reagents.reagent_list)
@@ -388,16 +388,16 @@
 		reagents.clear_reagents()
 	else
 		if(M != user)
-			M.visible_message("<span class='danger'>[user] attempts to feed something to [M].</span>", \
+			M.visible_message(SPAN_DANGER("[user] attempts to feed something to [M]."), \
 						"<span class='userdanger'>[user] attempts to feed something to you.</span>")
 			if(!do_mob(user, M))
 				return
 			if(!reagents || !reagents.total_volume)
 				return // The drink might be empty after the delay, such as by spam-feeding
-			M.visible_message("<span class='danger'>[user] feeds something to [M].</span>", "<span class='userdanger'>[user] feeds something to you.</span>")
+			M.visible_message(SPAN_DANGER("[user] feeds something to [M]."), "<span class='userdanger'>[user] feeds something to you.</span>")
 			log_combat(user, M, "fed", reagents.log_list())
 		else
-			to_chat(user, "<span class='notice'>You swallow a gulp of [src].</span>")
+			to_chat(user, SPAN_NOTICE("You swallow a gulp of [src]."))
 		var/fraction = min(5/reagents.total_volume, 1)
 		reagents.reaction(M, INGEST, fraction)
 		addtimer(CALLBACK(reagents, /datum/reagents.proc/trans_to, M, 5), 5)
@@ -413,32 +413,32 @@
 
 	if(target.is_refillable()) //Something like a glass. Player probably wants to transfer TO it.
 		if(!reagents.total_volume)
-			to_chat(user, "<span class='warning'>[src] is empty!</span>")
+			to_chat(user, SPAN_WARNING("[src] is empty!"))
 			return
 
 		if(target.reagents.holder_full())
-			to_chat(user, "<span class='warning'>[target] is full.</span>")
+			to_chat(user, SPAN_WARNING("[target] is full."))
 			return
 
 		var/trans = reagents.trans_to(target, amount_per_transfer_from_this)
-		to_chat(user, "<span class='notice'>You transfer [trans] unit\s of the solution to [target].</span>")
+		to_chat(user, SPAN_NOTICE("You transfer [trans] unit\s of the solution to [target]."))
 
 	else if(target.is_drainable()) //A dispenser. Transfer FROM it TO us.
 		if(!target.reagents.total_volume)
-			to_chat(user, "<span class='warning'>[target] is empty and can't be refilled!</span>")
+			to_chat(user, SPAN_WARNING("[target] is empty and can't be refilled!"))
 			return
 
 		if(reagents.holder_full())
-			to_chat(user, "<span class='warning'>[src] is full.</span>")
+			to_chat(user, SPAN_WARNING("[src] is full."))
 			return
 
 		var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this)
-		to_chat(user, "<span class='notice'>You fill [src] with [trans] unit\s of the contents of [target].</span>")
+		to_chat(user, SPAN_NOTICE("You fill [src] with [trans] unit\s of the contents of [target]."))
 
 	else if(reagents.total_volume)
 		if(user.a_intent == INTENT_HARM && spillable == TRUE)
-			user.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [target]!</span>", \
-								"<span class='notice'>You splash the contents of [src] onto [target].</span>")
+			user.visible_message(SPAN_DANGER("[user] splashes the contents of [src] onto [target]!"), \
+								SPAN_NOTICE("You splash the contents of [src] onto [target]."))
 			reagents.reaction(target, TOUCH)
 			reagents.clear_reagents()
 
@@ -531,8 +531,8 @@
 //	var/turf/player_turf = get_turf(user)
 //	if(player_turf?.is_blocked_turf(TRUE))
 //		return FALSE
-	user.visible_message("<span class='danger'>[user] begins to plant \the [src]…</span>")
+	user.visible_message(SPAN_DANGER("[user] begins to plant \the [src]."))
 	if(do_after(user, 8 SECONDS, target = user.drop_location(), progress = TRUE))
 		new /obj/structure/fluff/hedge/opaque(user.drop_location())
-		to_chat(user, "<span class='notice'>You plant \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You plant \the [src]."))
 		qdel(src)

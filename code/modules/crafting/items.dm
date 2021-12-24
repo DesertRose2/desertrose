@@ -77,11 +77,11 @@
 	icon_state = "blueprint2"
 
 /obj/item/blueprint/misc/stim
-	name = "Stimpack blueprint"
+	name = "stimpack blueprint"
 	desc = "Stimpacks"
 
 /obj/item/blueprint/misc/superstims
-	name = "Super Stimpack blueprint"
+	name = "super stimpack blueprint"
 	desc = "Super stims"
 
 //weapon blueprints
@@ -254,25 +254,25 @@
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/stack/prefabs/mWeaponParts
-	name = "Metal Weapon Parts"
+	name = "metal weapon parts"
 	desc = ""
 	//icon_state = ""
 	merge_type = /obj/item/stack/prefabs/mWeaponParts
 
 /obj/item/stack/prefabs/wWeaponParts
-	name = "Wooden Weapon Parts"
+	name = "wooden weapon parts"
 	desc = ""
 	//icon_state = ""
 	merge_type = /obj/item/stack/prefabs/wWeaponParts
 
 /obj/item/stack/prefabs/pWeaponParts
-	name = "Plastic Weapon Parts"
+	name = "plastic weapon parts"
 	desc = ""
 	//icon_state = ""
 	merge_type = /obj/item/stack/prefabs/pWeaponParts
 
 /obj/item/stack/prefabs/psWeaponParts
-	name = "Plasteel Weapon Parts"
+	name = "plasteel weapon parts"
 	desc = ""
 	//icon_state = ""
 	merge_type = /obj/item/stack/prefabs/psWeaponParts
@@ -304,7 +304,7 @@
 	var/obj/item/advanced_crafting_components/alloys/alloys
 	var/obj/item/advanced_crafting_components/receiver/receiver
 	var/obj/item/advanced_crafting_components/assembly/assembly
-	name = "Simple Weapon Frame"
+	name = "simple weapon frame"
 	desc = ""
 	icon_state = "gunframe"
 
@@ -447,7 +447,7 @@
 	var/obj/item/advanced_crafting_components/alloys/alloys
 	var/obj/item/advanced_crafting_components/receiver/receiver
 	var/obj/item/advanced_crafting_components/assembly/assembly
-	name = "Complex Weapon Frame"
+	name = "complex weapon frame"
 	desc = ""
 	icon_state = "gunframe"
 
@@ -659,51 +659,51 @@
 		screw = W
 
 /obj/item/prefabs/complex/simpleWeaponFrame/low
-	name = "Simple Weapon Frame (crude)"
+	name = "simple weapon frame (crude)"
 	desc = ""
 	icon_state = "gunframe"
 
 /obj/item/prefabs/complex/complexWeaponFrame/low
-	name = "Complex Weapon Frame (crude)"
+	name = "complex weapon frame (crude)"
 	desc = ""
 	icon_state = "gunframe"
 
 /obj/item/prefabs/complex/simpleWeaponFrame/mid
-	name = "Simple Weapon Frame (fair)"
+	name = "simple weapon frame (fair)"
 	desc = ""
 	//icon_state = ""
 
 /obj/item/prefabs/complex/complexWeaponFrame/mid
-	name = "Complex Weapon Frame (fair)"
+	name = "complex weapon frame (fair)"
 	desc = ""
 	//icon_state = ""
 
 /obj/item/prefabs/complex/simpleWeaponFrame/high
-	name = "Simple Weapon Frame (masterwork)"
+	name = "simple weapon frame (masterwork)"
 	desc = ""
 	//icon_state = ""
 
 /obj/item/prefabs/complex/complexWeaponFrame/high
-	name = "Complex Weapon Frame (masterwork)"
+	name = "complex weapon frame (masterwork)"
 	desc = ""
 	//icon_state = ""
 
 //moulds
 /obj/item/prefabs/mould
-	name = "Mould"
+	name = "mould"
 	desc = ""
 	icon_state = "mould"
 
 /obj/item/prefabs/mould/action/simple
-	name = "Simple Action Mould"
+	name = "simple action mould"
 	desc = ""
 
 /obj/item/prefabs/mould/action/auto
-	name = "Automatic Action Mould"
+	name = "automatic action mould"
 	desc = ""
 
 /obj/item/prefabs/mould/barrel/shotgun
-	name = "Shotgun Barrel Mould"
+	name = "shotgun barrel mould"
 	desc = ""
 /obj/item/prefabs/mould/barrel/m357
 	name = ".357 Barrel Mould"
@@ -738,46 +738,46 @@
 	desc = ""
 
 /obj/item/prefabs/mould/bolt/simple
-	name = "Simple Bolt Mould"
+	name = "simple bolt mould"
 	desc = ""
 
 /obj/item/prefabs/mould/bolt/high
-	name = "Advanced Bolt Mould"
+	name = "advanced bolt mould"
 	desc = ""
 
 /obj/item/prefabs/mould/trigger
-	name = "Trigger Mould"
+	name = "trigger mould"
 	desc = ""
 
 /obj/item/prefabs/mould/stock
-	name = "Stock Mould"
+	name = "stock mould"
 	desc = ""
 
 /obj/item/prefabs/mould/screw
-	name = "Screw Mould"
+	name = "screw mould"
 	desc = ""
 
 /obj/item/prefabs/mould/simpleWeaponFrame
-	name = "Simple Weapon Frame Mould"
+	name = "simple weapon frame mould"
 	desc = ""
 
 /obj/item/prefabs/mould/complexWeaponFrame
-	name = "Complex Weapon Frame Mould"
+	name = "complex weapon frame mould"
 	desc = ""
 
 //components
 /obj/item/prefabs/complex/action/simple
-	name = "Simple Action"
+	name = "simple action"
 	desc = ""
 	icon_state = "action"
 
 /obj/item/prefabs/complex/action/auto
-	name = "Automatic Action"
+	name = "automatic action"
 	desc = ""
 	icon_state = "action"
 
 /obj/item/prefabs/complex/barrel
-	name = "Barrel"
+	name = "barrel"
 	desc = ""
 	icon_state = "barrel"
 
@@ -816,82 +816,82 @@
 	desc = ""
 
 /obj/item/prefabs/complex/bolt
-	name = "Bolt"
+	name = "bolt"
 	desc = ""
 	icon_state = "bolt"
 
 /obj/item/prefabs/complex/barrel/shotgun
-	name = "Shotgun Barrel"
+	name = "shotgun barrel"
 	desc = ""
 	icon_state = "barrel"
 
 /obj/item/prefabs/complex/bolt/simple
-	name = "Simple Bolt"
+	name = "simple bolt"
 	desc = ""
 	icon_state = "bolt"
 
 /obj/item/prefabs/complex/bolt/high
-	name = "Advanced Bolt"
+	name = "advanced bolt"
 	desc = ""
 
 /obj/item/prefabs/complex/trigger
-	name = "Trigger"
+	name = "trigger"
 	desc = ""
 	icon_state = "trigger"
 
 /obj/item/prefabs/complex/stock
-	name = "Stock"
+	name = "stock"
 	desc = ""
 	icon_state = "stockwood"
 
 /obj/item/prefabs/complex/stock/low
-	name = "Wooden Stock"
+	name = "wooden stock"
 	desc = ""
 	icon_state = "stockwood"
 
 /obj/item/prefabs/complex/stock/mid
-	name = "Plastic Stock"
+	name = "plastic stock"
 	desc = ""
 	icon_state = "stock"
 
 /obj/item/prefabs/complex/screw
-	name = "Screw"
+	name = "screw"
 	desc = ""
 	icon_state = "screw"
 
 //plasma
 /obj/item/advanced_crafting_components/flux
-	name = "Flux capacitator"
+	name = "flux capacitator"
 	desc = "An energy weapon part, a craftsman might want to have this."
 	icon_state = "flux"
 
 //lasers
 /obj/item/advanced_crafting_components/lenses
-	name = "Focused crystal lenses"
+	name = "focused crystal lenses"
 	desc = "An energy weapon part, a craftsman might want to have this."
 	icon_state = "lenses"
 
 //general energy
 /obj/item/advanced_crafting_components/conductors
-	name = "Superconductor coil"
+	name = "superconductor coil"
 	desc = "An energy weapon part, a craftsman might want to have this."
 	icon_state = "conductor"
 
 //general ballistics
 /obj/item/advanced_crafting_components/receiver
-	name = "Advanced modular receiver"
+	name = "advanced modular receiver"
 	desc = "A ballistic weapon part, a craftsman might want to have this."
 	icon_state = "receiver"
 
 //rifles
 /obj/item/advanced_crafting_components/assembly
-	name = "Pre-war weapon assembly"
+	name = "pre-war weapon assembly"
 	desc = "A ballistic weapon part, a craftsman might want to have this."
 	icon_state = "weapon_parts_1"
 
 //general
 /obj/item/advanced_crafting_components/alloys
-	name = "Superlight alloys"
+	name = "superlight alloys"
 	desc = "A general crafting part, a craftsman might want to have this."
 	icon_state = "alloys"
 
@@ -957,7 +957,7 @@
 				)
 
 /obj/item/salvage/low
-	name = "Pre-war salvage"
+	name = "pre-war salvage"
 	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "salvage"
 	Loot = list(/obj/item/stack/sheet/metal/ten,
@@ -971,7 +971,7 @@
 				)
 
 /obj/item/salvage/high
-	name = "Advanced pre-war salvage"
+	name = "advanced pre-war salvage"
 	desc = "Some advanced pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "goodsalvage"
 	Loot = list(/obj/item/blueprint/research = 5,
@@ -987,7 +987,7 @@
 				)
 
 /obj/item/experimental
-	name = "Servo repair kit"
+	name = "servo repair kit"
 	desc = "These appear to be used for repairing powerarmor sets..."
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "radio-multitool"
@@ -1061,7 +1061,7 @@
 	qdel(src)
 
 /obj/item/invention
-	name = "Invention"
+	name = "invention"
 	desc = "What could this be..."
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "radio-multitool"

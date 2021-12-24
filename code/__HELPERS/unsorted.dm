@@ -1456,8 +1456,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 /proc/get_random_drink()
 	var/list/blocked = list(/obj/item/reagent_containers/food/drinks/soda_cans,
 		/obj/item/reagent_containers/food/drinks/bottle,
-		/obj/item/reagent_containers/food/drinks/flask/russian,
-		/obj/item/reagent_containers/food/drinks/flask/steel
+		/obj/item/reagent_containers/food/drinks/flask/russian
 		)
 	return pick(subtypesof(/obj/item/reagent_containers/food/drinks) - blocked)
 

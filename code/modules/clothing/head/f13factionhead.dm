@@ -132,7 +132,7 @@
 
 /obj/item/clothing/head/helmet/f13/fiend_reinforced
 	name = "reinforced fiend helmet"
-	desc = "(V) A leather cap cobbled together adorned with a bighorner skull, perfect for any drug-fueled frenzy. This helmet has been reinforced with metal plates under its skull"
+	desc = "(V) A leather cap cobbled together adorned with a bighorner skull, perfect for any drug-fueled frenzy. This helmet has been reinforced with metal plates under its skull."
 	icon_state = "fiend"
 	item_state = "fiend"
 	armor = list("tier" = 5, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
@@ -152,7 +152,7 @@
 
 /obj/item/clothing/head/helmet/f13/raidercombathelmet
 	name = "raider combat helmet"
-	desc = "(V) A combat helmet modified with metal plating"
+	desc = "(V) A combat helmet modified with metal plating."
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
@@ -271,7 +271,7 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/head/hooded/cloakhood/hhunter
-	name = "Razorclaw helm"
+	name = "razorclaw helm"
 	icon_state = "rchelmet"
 	desc = "(VI) The skull of a legendary deathclaw."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)

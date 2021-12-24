@@ -10,17 +10,17 @@
 
 /datum/action/ranger_takedown/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, "<span class='warning'>You can't use [name] while you're incapacitated.</span>")
+		to_chat(owner, SPAN_WARNING("You can't use [name] while you're incapacitated."))
 		return
 	var/mob/living/carbon/human/H = owner
 	if (H.mind.martial_art.streak == "ranger_takedown")
-		owner.visible_message("<span class='danger'>[owner] assumes a neutral stance.</span>", "<b><i>Your next attack is cleared.</i></b>")
+		owner.visible_message(SPAN_DANGER("[owner] assumes a neutral stance."), "<b><i>Your next attack is cleared.</i></b>")
 		H.mind.martial_art.streak = ""
 	else
 		if(HAS_TRAIT(H, TRAIT_PACIFISM))
-			to_chat(H, "<span class='warning'>You don't want to harm other people!</span>")
+			to_chat(H, SPAN_WARNING("You don't want to harm other people!"))
 			return
-		owner.visible_message("<span class='danger'>[owner] assumes the Ranger Takedown stance!</span>", "<b><i>Your next attack will be a Ranger Takedown.</i></b>")
+		owner.visible_message(SPAN_DANGER("[owner] assumes the Ranger Takedown stance!"), "<b><i>Your next attack will be a Ranger Takedown.</i></b>")
 		H.mind.martial_art.streak = "ranger_takedown"
 
 /datum/martial_art/rangertakedown/disarm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -47,7 +47,7 @@
 /datum/martial_art/rangertakedown/teach(mob/living/carbon/human/H,make_temporary=0)
 	if(..())
 		to_chat(H, "<span class = 'userdanger'>You know the arts of [name]!</span>")
-		to_chat(H, "<span class = 'danger'>Place your cursor over a move at the top of the screen to see what it does.</span>")
+		to_chat(H, SPAN_DANGER("Place your cursor over a move at the top of the screen to see what it does."))
 		rangertakedown.Grant(H)
 
 /datum/martial_art/rangertakedown/on_remove(mob/living/carbon/human/H)

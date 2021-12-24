@@ -54,7 +54,7 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 	if(locked)
 		if(message_cooldown <= world.time)
 			message_cooldown = world.time + 50
-			to_chat(user, "<span class='warning'>[src]'s door won't budge!</span>")
+			to_chat(user, SPAN_WARNING("[src]'s door won't budge!"))
 		return
 	open()
 
@@ -63,7 +63,7 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 
 /obj/structure/bodycontainer/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(locked)
-		to_chat(user, "<span class='danger'>It's locked.</span>")
+		to_chat(user, SPAN_DANGER("It's locked."))
 		return
 	if(!connected)
 		to_chat(user, "That doesn't appear to have a tray.")
@@ -83,7 +83,7 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 	add_fingerprint(user)
 	if(istype(P, /obj/item/pen))
 		if(!user.is_literate())
-			to_chat(user, "<span class='notice'>You scribble illegibly on the side of [src]!</span>")
+			to_chat(user, SPAN_NOTICE("You scribble illegibly on the side of [src]!"))
 			return
 		var/t = stripped_input(user, "What would you like the label to be?", text("[]", name), null)
 		if (user.get_active_held_item() != P)
@@ -107,13 +107,13 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 		open()
 		return
 	user.visible_message(null, \
-		"<span class='notice'>You lean on the back of [src] and start pushing the tray open... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
+		SPAN_NOTICE("You lean on the back of [src] and start pushing the tray open... (this will take about [DisplayTimeText(breakout_time)].)"), \
 		"<span class='italics'>You hear a metallic creaking from [src].</span>")
 	if(do_after(user,(breakout_time), target = src))
 		if(!user || user.stat != CONSCIOUS || user.loc != src )
 			return
-		user.visible_message("<span class='warning'>[user] successfully broke out of [src]!</span>", \
-			"<span class='notice'>You successfully break out of [src]!</span>")
+		user.visible_message(SPAN_WARNING("[user] successfully broke out of [src]!"), \
+			SPAN_NOTICE("You successfully break out of [src]!"))
 		open()
 
 /obj/structure/bodycontainer/proc/open()
@@ -155,14 +155,14 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 
 /obj/structure/bodycontainer/morgue/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The speaker is [beeper ? "enabled" : "disabled"]. Alt-click to toggle it.</span>"
+	. += SPAN_NOTICE("The speaker is [beeper ? "enabled" : "disabled"]. Alt-click to toggle it.")
 
 /obj/structure/bodycontainer/morgue/AltClick(mob/user)
 	. = ..()
 	if(!user.canUseTopic(src, !hasSiliconAccessInArea(user)))
 		return
 	beeper = !beeper
-	to_chat(user, "<span class='notice'>You turn the speaker function [beeper ? "on" : "off"].</span>")
+	to_chat(user, SPAN_NOTICE("You turn the speaker function [beeper ? "on" : "off"]."))
 	return TRUE
 
 /obj/structure/bodycontainer/morgue/update_icon_state()
@@ -206,7 +206,7 @@ GLOBAL_LIST_EMPTY(crematoriums)
 	var/id = 1
 
 /obj/structure/bodycontainer/crematorium/attack_robot(mob/user) //Borgs can't use crematoriums without help
-	to_chat(user, "<span class='warning'>[src] is locked against you.</span>")
+	to_chat(user, SPAN_WARNING("[src] is locked against you."))
 	return
 
 /obj/structure/bodycontainer/crematorium/Destroy()
@@ -322,7 +322,7 @@ GLOBAL_LIST_EMPTY(crematoriums)
 		connected.close()
 		add_fingerprint(user)
 	else
-		to_chat(user, "<span class='warning'>That's not connected to anything!</span>")
+		to_chat(user, SPAN_WARNING("That's not connected to anything!"))
 
 /obj/structure/tray/MouseDrop_T(atom/movable/O as mob|obj, mob/user)
 	if(!ismovable(O) || O.anchored || !Adjacent(user) || !user.Adjacent(O) || O.loc == user)
@@ -338,7 +338,7 @@ GLOBAL_LIST_EMPTY(crematoriums)
 		return
 	O.forceMove(src.loc)
 	if (user != O)
-		visible_message("<span class='warning'>[user] stuffs [O] into [src].</span>")
+		visible_message(SPAN_WARNING("[user] stuffs [O] into [src]."))
 	return
 
 /*

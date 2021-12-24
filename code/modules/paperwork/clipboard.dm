@@ -41,7 +41,7 @@
 		if(!user.transferItemToLoc(W, src))
 			return
 		toppaper = W
-		to_chat(user, "<span class='notice'>You clip the paper onto \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You clip the paper onto \the [src]."))
 		update_icon()
 	else if(toppaper)
 		toppaper.attackby(user.get_active_held_item(), user)
@@ -90,7 +90,7 @@
 					if(!usr.transferItemToLoc(W, src))
 						return
 					haspen = W
-					to_chat(usr, "<span class='notice'>You slot [W] into [src].</span>")
+					to_chat(usr, SPAN_NOTICE("You slot [W] into [src]."))
 
 		if(href_list["write"])
 			var/obj/item/P = locate(href_list["write"]) in src
@@ -120,7 +120,7 @@
 			var/obj/item/P = locate(href_list["top"]) in src
 			if(istype(P))
 				toppaper = P
-				to_chat(usr, "<span class='notice'>You move [P.name] to the top.</span>")
+				to_chat(usr, SPAN_NOTICE("You move [P.name] to the top."))
 
 		//Update everything
 		attack_self(usr)

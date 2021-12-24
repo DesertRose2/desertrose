@@ -3,7 +3,7 @@
 	desc = "These seeds grow into broc flowers."
 	icon_state = "seed-broc"
 	species = "broc"
-	plantname = "broc flowers"
+	plantname = "Broc Flowers"
 	product = /obj/item/reagent_containers/food/snacks/grown/broc
 	lifespan = 25
 	endurance = 10
@@ -12,7 +12,11 @@
 	production = 4
 	maturation = 4
 	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
+	icon_harvest = "broc-harvest"
+	icon_grow = "broc-grow"
+	icon_dead = "broc-dead"
 	//mutatelist = list(/obj/item/seeds/geraniumseed, /obj/item/seeds/lilyseed)
+	reagents_add = list(/datum/reagent/medicine/dexalin = 0.2, /datum/reagent/medicine/salglu_solution = 0.05, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/medicine/bicaridine = 0.1,)
 
 /obj/item/reagent_containers/food/snacks/grown/broc
 	seed = /obj/item/seeds/poppy/broc
@@ -21,12 +25,5 @@
 	icon_state = "broc"
 	//slot_flags = SLOT_HEAD
 	filling_color = "#FF6347"
-	juice_results = list(/datum/reagent/broctea = 0)
+	juice_results = list(/datum/reagent/consumable/tea/broctea = 0)
 	distill_reagent = /datum/reagent/consumable/ethanol/brocbrew
-
-
-/obj/item/reagent_containers/food/snacks/grown/broc/add_juice()
-	if(..())
-		reagents.add_reagent(/datum/reagent/dexalin, 1 + round((seed.potency / 5), 1))
-		reagents.add_reagent(/datum/reagent/medicine/salglu_solution, 1 + round((seed.potency / 20), 1))
-		bitesize = 1 + round(reagents.total_volume / 3, 1)

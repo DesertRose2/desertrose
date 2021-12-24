@@ -69,7 +69,7 @@
 			if(L.mob_run_block(src, 0, "the [name]", ATTACK_TYPE_TACKLE, 0, src, null, null) & BLOCK_SUCCESS)
 				DefaultCombatKnockdown(40, 1, 1)
 			else
-				L.visible_message("<span class ='danger'>[src] pounces on [L]!</span>", "<span class ='userdanger'>[src] pounces on you!</span>")
+				L.visible_message(SPAN_DANGER("[src] pounces on [L]!"), "<span class ='userdanger'>[src] pounces on you!</span>")
 				L.DefaultCombatKnockdown(100)
 				L.Stagger(4 SECONDS)
 				sleep(2)//Runtime prevention (infinite bump() calls on hulks)
@@ -77,7 +77,7 @@
 
 			toggle_leap(0)
 		else if(hit_atom.density && !hit_atom.CanPass(src))
-			visible_message("<span class ='danger'>[src] smashes into [hit_atom]!</span>", "<span class ='alertalien'>[src] smashes into [hit_atom]!</span>")
+			visible_message(SPAN_DANGER("[src] smashes into [hit_atom]!"), "<span class ='alertalien'>[src] smashes into [hit_atom]!</span>")
 			Paralyze(40, TRUE, TRUE)
 
 		if(leaping)

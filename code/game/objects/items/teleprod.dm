@@ -1,6 +1,6 @@
 /obj/item/melee/baton/cattleprod/teleprod
 	name = "teleprod"
-	desc = "A prod with a bluespace crystal on the end. The crystal doesn't look too fun to touch."
+	desc = "A prod with a quantum crystal on the end. The crystal doesn't look too fun to touch."
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state = "teleprod_nocell"
 	item_state = "teleprod"
@@ -13,7 +13,7 @@
 	do_teleport(L, get_turf(L), 15, channel = TELEPORT_CHANNEL_BLUESPACE)
 
 /obj/item/melee/baton/cattleprod/teleprod/clowning_around(mob/living/user)
-	user.visible_message("<span class='danger'>[user] accidentally hits [user.p_them()]self with [src]!</span>", \
+	user.visible_message(SPAN_DANGER("[user] accidentally hits [user.p_them()]self with [src]!"), \
 						"<span class='userdanger'>You accidentally hit yourself with [src]!</span>")
 	SEND_SIGNAL(user, COMSIG_LIVING_MINOR_SHOCK)
 	user.DefaultCombatKnockdown(stamforce * 6)
@@ -32,8 +32,8 @@
 			qdel(src)
 			BSC.use(1)
 			user.put_in_hands(S)
-			to_chat(user, "<span class='notice'>You place the bluespace crystal firmly into the igniter.</span>")
+			to_chat(user, SPAN_NOTICE("You place the quantum crystal firmly into the igniter."))
 		else
-			user.visible_message("<span class='warning'>You can't put the crystal onto the stunprod while it has a power cell installed!</span>")
+			user.visible_message(SPAN_WARNING("You can't put the crystal onto the stunprod while it has a power cell installed!"))
 	else
 		return ..()

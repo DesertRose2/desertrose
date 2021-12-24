@@ -269,6 +269,6 @@
 	. = ..()
 	if(rand(1,100) > hit_reaction_chance)
 		return
-	owner.visible_message("<span class='danger'>[owner]'s [src] emits a loud noise as [owner] is struck!</span>")
+	owner.visible_message(SPAN_DANGER("[owner]'s [src] emits a loud noise as [owner] is struck!"))
 	playsound(get_turf(owner), 'sound/magic/clockwork/invoke_general.ogg', 20, TRUE)
 	addtimer(CALLBACK(src, .proc/reactionshot, owner), 10)

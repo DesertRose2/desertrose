@@ -1873,6 +1873,11 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/tunnel)
+"dcz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden/crude/snow,
+/turf/open/floor/plasteel/cafeteria,
+/area/f13/bunker)
 "ddq" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -2245,12 +2250,6 @@
 /obj/item/stack/crafting/electronicparts/three,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/bunker)
-"dHs" = (
-/obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "dHT" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -4368,6 +4367,11 @@
 /obj/item/reagent_containers/spray/cleaner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"gUg" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "gUu" = (
 /obj/structure/table/glass,
@@ -12003,12 +12007,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
-"swg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden/snowed,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "swN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26723,7 +26721,7 @@ xsH
 xsH
 xsH
 xsH
-swg
+dcz
 xsH
 xsH
 xRz
@@ -35738,7 +35736,7 @@ vAC
 vAC
 vAC
 xsH
-dHs
+gUg
 nKy
 yhK
 jAl

@@ -44,14 +44,14 @@
 
 /obj/item/clothing/under/rank/engineering/engineer/mechanic
 	name = "mechanic's jumpsuit"
-	desc = "an old mechanic's jumpsuit"
+	desc = "An old mechanic's jumpsuit."
 	icon_state = "mechanic"
 	item_state = "mechanic"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/engineering/engineer/util
 	name = "engineering utility uniform"
-	desc = "a utility jumpsuit for engineering personnel"
+	desc = "A utility jumpsuit for engineering personnel."
 	icon_state = "utileng"
 	item_state = "utileng"
 	can_adjust = FALSE

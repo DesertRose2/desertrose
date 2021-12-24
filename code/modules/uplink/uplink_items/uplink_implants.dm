@@ -86,7 +86,7 @@
 
 /datum/uplink_item/implants/storage
 	name = "Storage Implant"
-	desc = "An implant injected into the body, and later activated at the user's will. It will open a small bluespace \
+	desc = "An implant injected into the body, and later activated at the user's will. It will open a small quantum \
 			pocket capable of storing two regular-sized items."
 	item = /obj/item/storage/box/syndie_kit/imp_storage
 	cost = 8

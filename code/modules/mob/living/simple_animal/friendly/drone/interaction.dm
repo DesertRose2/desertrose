@@ -16,16 +16,16 @@
 
 				if("Cannibalize")
 					if(D.health < D.maxHealth)
-						D.visible_message("<span class='notice'>[D] begins to cannibalize parts from [src].</span>", "<span class='notice'>You begin to cannibalize parts from [src]...</span>")
+						D.visible_message(SPAN_NOTICE("[D] begins to cannibalize parts from [src]."), SPAN_NOTICE("You begin to cannibalize parts from [src]..."))
 						if(do_after(D, 60, 0, target = src))
-							D.visible_message("<span class='notice'>[D] repairs itself using [src]'s remains!</span>", "<span class='notice'>You repair yourself using [src]'s remains.</span>")
+							D.visible_message(SPAN_NOTICE("[D] repairs itself using [src]'s remains!"), SPAN_NOTICE("You repair yourself using [src]'s remains."))
 							D.adjustBruteLoss(-src.maxHealth)
 							new /obj/effect/decal/cleanable/oil/streak(get_turf(src))
 							qdel(src)
 						else
-							to_chat(D, "<span class='warning'>You need to remain still to cannibalize [src]!</span>")
+							to_chat(D, SPAN_WARNING("You need to remain still to cannibalize [src]!"))
 					else
-						to_chat(D, "<span class='warning'>You're already in perfect condition!</span>")
+						to_chat(D, SPAN_WARNING("You're already in perfect condition!"))
 				if("Nothing")
 					return
 
@@ -41,37 +41,37 @@
 									  "can't tell if their ethernet detour is moving or not", "won't be able to reseed enough"+\
 									  " kernels to function properly","can't start their neurotube console")
 
-		to_chat(user, "<span class='warning'>You can't seem to find the [pick(faux_gadgets)]! Without it, [src] [pick(faux_problems)].</span>")
+		to_chat(user, SPAN_WARNING("You can't seem to find the [pick(faux_gadgets)]! Without it, [src] [pick(faux_problems)]."))
 		return
-	user.visible_message("<span class='notice'>[user] begins to reactivate [src].</span>", "<span class='notice'>You begin to reactivate [src]...</span>")
+	user.visible_message(SPAN_NOTICE("[user] begins to reactivate [src]."), SPAN_NOTICE("You begin to reactivate [src]..."))
 	if(do_after(user, 30, 1, target = src))
 		revive(full_heal = 1)
-		user.visible_message("<span class='notice'>[user] reactivates [src]!</span>", "<span class='notice'>You reactivate [src].</span>")
+		user.visible_message(SPAN_NOTICE("[user] reactivates [src]!"), SPAN_NOTICE("You reactivate [src]."))
 		alert_drones(DRONE_NET_CONNECT)
 		if(G)
 			to_chat(G, "<span class='ghostalert'>You([name]) were reactivated by [user]!</span>")
 	else
-		to_chat(user, "<span class='warning'>You need to remain still to reactivate [src]!</span>")
+		to_chat(user, SPAN_WARNING("You need to remain still to reactivate [src]!"))
 
 
 /mob/living/simple_animal/drone/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/screwdriver) && stat != DEAD)
 		if(health < maxHealth)
-			to_chat(user, "<span class='notice'>You start to tighten loose screws on [src]...</span>")
+			to_chat(user, SPAN_NOTICE("You start to tighten loose screws on [src]..."))
 			if(I.use_tool(src, user, 80))
 				adjustBruteLoss(-getBruteLoss())
-				visible_message("<span class='notice'>[user] tightens [src == user ? "[user.p_their()]" : "[src]'s"] loose screws!</span>", "<span class='notice'>You tighten [src == user ? "your" : "[src]'s"] loose screws.</span>")
+				visible_message(SPAN_NOTICE("[user] tightens [src == user ? "[user.p_their()]" : "[src]'s"] loose screws!"), SPAN_NOTICE("You tighten [src == user ? "your" : "[src]'s"] loose screws."))
 			else
-				to_chat(user, "<span class='warning'>You need to remain still to tighten [src]'s screws!</span>")
+				to_chat(user, SPAN_WARNING("You need to remain still to tighten [src]'s screws!"))
 		else
-			to_chat(user, "<span class='warning'>[src]'s screws can't get any tighter!</span>")
+			to_chat(user, SPAN_WARNING("[src]'s screws can't get any tighter!"))
 		return //This used to not exist and drones who repaired themselves also stabbed the shit out of themselves.
 	else if(istype(I, /obj/item/wrench) && user != src) //They aren't required to be hacked, because laws can change in other ways (i.e. admins)
-		user.visible_message("<span class='notice'>[user] starts resetting [src]...</span>", \
-							"<span class='notice'>You press down on [src]'s factory reset control...</span>")
+		user.visible_message(SPAN_NOTICE("[user] starts resetting [src]..."), \
+							SPAN_NOTICE("You press down on [src]'s factory reset control..."))
 		if(I.use_tool(src, user, 50, volume=50))
-			user.visible_message("<span class='notice'>[user] resets [src]!</span>", \
-								"<span class='notice'>You reset [src]'s directives to factory defaults!</span>")
+			user.visible_message(SPAN_NOTICE("[user] resets [src]!"), \
+								SPAN_NOTICE("You reset [src]'s directives to factory defaults!"))
 			update_drone_hack(FALSE)
 		return
 	else
@@ -99,7 +99,7 @@
 			to_chat(src, "<span class='heavy_brass'>From now on, these are your laws:</span>")
 			laws = "1. Purge all untruths and honor Ratvar."
 		else
-			visible_message("<span class='warning'>[src]'s display glows a vicious red!</span>", \
+			visible_message(SPAN_WARNING("[src]'s display glows a vicious red!"), \
 							"<span class='userdanger'>ERROR: LAW OVERRIDE DETECTED</span>")
 			to_chat(src, "<span class='boldannounce'>From now on, these are your laws:</span>")
 			laws = \

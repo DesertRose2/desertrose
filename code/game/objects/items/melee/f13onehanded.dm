@@ -246,7 +246,7 @@
 /obj/item/claymore/highlander/Destroy()
 	if(nuke_disk)
 		nuke_disk.forceMove(get_turf(src))
-		nuke_disk.visible_message("<span class='warning'>The nuke disk is vulnerable!</span>")
+		nuke_disk.visible_message(SPAN_WARNING("The nuke disk is vulnerable!"))
 		nuke_disk = null
 	STOP_PROCESSING(SSobj, src)
 	return ..()
@@ -264,7 +264,7 @@
 
 /obj/item/claymore/highlander/pickup(mob/living/user)
 	. = ..()
-	to_chat(user, "<span class='notice'>The power of Scotland protects you! You are shielded from all stuns and knockdowns.</span>")
+	to_chat(user, SPAN_NOTICE("The power of Scotland protects you! You are shielded from all stuns and knockdowns."))
 	user.add_stun_absorption("highlander", INFINITY, 1, " is protected by the power of Scotland!", "The power of Scotland absorbs the stun!", " is protected by the power of Scotland!")
 	user.ignore_slowdown(HIGHLANDER)
 
@@ -285,7 +285,7 @@
 	if(!QDELETED(target) && iscarbon(target) && target.stat == DEAD && target.mind && target.mind.special_role == "highlander")
 		user.fully_heal() //STEAL THE LIFE OF OUR FALLEN FOES
 		add_notch(user)
-		target.visible_message("<span class='warning'>[target] crumbles to dust beneath [user]'s blows!</span>", "<span class='userdanger'>As you fall, your body crumbles to dust!</span>")
+		target.visible_message(SPAN_WARNING("[target] crumbles to dust beneath [user]'s blows!"), "<span class='userdanger'>As you fall, your body crumbles to dust!</span>")
 		target.dust()
 
 /obj/item/claymore/highlander/attack_self(mob/living/user)
@@ -295,9 +295,9 @@
 		if(H.client && H.mind.special_role == "highlander" && (!closest_victim || get_dist(user, closest_victim) < closest_distance))
 			closest_victim = H
 	if(!closest_victim)
-		to_chat(user, "<span class='warning'>[src] thrums for a moment and falls dark. Perhaps there's nobody nearby.</span>")
+		to_chat(user, SPAN_WARNING("[src] thrums for a moment and falls dark. Perhaps there's nobody nearby."))
 		return
-	to_chat(user, "<span class='danger'>[src] thrums and points to the [dir2text(get_dir(user, closest_victim))].</span>")
+	to_chat(user, SPAN_DANGER("[src] thrums and points to the [dir2text(get_dir(user, closest_victim))]."))
 
 /obj/item/claymore/highlander/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if((attack_type & ATTACK_TYPE_PROJECTILE) && is_energy_reflectable_projectile(object))
@@ -310,11 +310,11 @@
 	var/new_name = name
 	switch(notches)
 		if(1)
-			to_chat(user, "<span class='notice'>Your first kill - hopefully one of many. You scratch a notch into [src]'s blade.</span>")
-			to_chat(user, "<span class='warning'>You feel your fallen foe's soul entering your blade, restoring your wounds!</span>")
+			to_chat(user, SPAN_NOTICE("Your first kill - hopefully one of many. You scratch a notch into [src]'s blade."))
+			to_chat(user, SPAN_WARNING("You feel your fallen foe's soul entering your blade, restoring your wounds!"))
 			new_name = "notched claymore"
 		if(2)
-			to_chat(user, "<span class='notice'>Another falls before you. Another soul fuses with your own. Another notch in the blade.</span>")
+			to_chat(user, SPAN_NOTICE("Another falls before you. Another soul fuses with your own. Another notch in the blade."))
 			new_name = "double-notched claymore"
 			add_atom_colour(rgb(255, 235, 235), ADMIN_COLOUR_PRIORITY)
 		if(3)
@@ -346,7 +346,7 @@
 			new_name = "gore-stained claymore"
 			add_atom_colour(rgb(255, 95, 95), ADMIN_COLOUR_PRIORITY)
 		if(10)
-			user.visible_message("<span class='warning'>[user]'s eyes light up with a vengeful fire!</span>", \
+			user.visible_message(SPAN_WARNING("[user]'s eyes light up with a vengeful fire!"), \
 			"<span class='userdanger'>YOU FEEL THE POWER OF VALHALLA FLOWING THROUGH YOU! <i>THERE CAN BE ONLY ONE!!!</i></span>")
 			user.update_icons()
 			new_name = "GORE-DRENCHED CLAYMORE OF [pick("THE WHIMSICAL SLAUGHTER", "A THOUSAND SLAUGHTERED CATTLE", "GLORY AND VALHALLA", "ANNIHILATION", "OBLITERATION")]"
@@ -458,7 +458,7 @@
 	if(!istype(user))
 		return
 	if(user.get_item_by_slot(user.getBackSlot()) != src)
-		to_chat(user, "<span class='warning'>The backpack must be worn properly to use!</span>")
+		to_chat(user, SPAN_WARNING("The backpack must be worn properly to use!"))
 		return
 	if(user.incapacitated())
 		return
@@ -468,7 +468,7 @@
 	if(sword in src)
 		//Detach the sword into the user's hands
 		if(!user.put_in_hands(sword))
-			to_chat(user, "<span class='warning'>You need a free hand to hold the shishkebab!</span>")
+			to_chat(user, SPAN_WARNING("You need a free hand to hold the shishkebab!"))
 			return
 	else
 		//Remove from their hands and put back "into" the tank
@@ -551,7 +551,7 @@
 /obj/item/weapon/melee/shishkebab/doMove(atom/destination)
 	if(destination && (destination != tank.loc || !ismob(destination)))
 		if (loc != tank)
-			to_chat(tank.loc, "<span class='notice'>The shishkebab slides back into the backpack tank.</span>")
+			to_chat(tank.loc, SPAN_NOTICE("The shishkebab slides back into the backpack tank."))
 		destination = tank
 	..()
 

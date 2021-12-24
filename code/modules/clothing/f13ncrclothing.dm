@@ -400,7 +400,7 @@
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/head/f13/ranger/montana
-	name = "Reclaimed Ranger Helmet"
+	name = "reclaimed Ranger helmet"
 	desc = "(VI) A mishmash of, most recognizably, a ranger patrol helmet and a ranger veteran's helmet once repurposed by the Centurion that killed them. It's got signs of wear and rust; its respirator has been gutted, its eyepieces are dull and cracked, and it's got pieces from a few different sources - hard to place sources. The top of the helmet, above the eyes, is emblazoned with a few words - De Oppresso Liber."
 	icon_state = "rangermontana"
 	item_state = "rangermontana"

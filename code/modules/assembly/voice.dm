@@ -24,7 +24,7 @@
 
 /obj/item/assembly/voice/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Use a multitool to swap between \"inclusive\", \"exclusive\", \"recognizer\", and \"voice sensor\" mode.</span>"
+	. += SPAN_NOTICE("Use a multitool to swap between \"inclusive\", \"exclusive\", \"recognizer\", and \"voice sensor\" mode.")
 
 /obj/item/assembly/voice/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)
 	. = ..()
@@ -77,7 +77,7 @@
 /obj/item/assembly/voice/multitool_act(mob/living/user, obj/item/I)
 	mode %= modes.len
 	mode++
-	to_chat(user, "<span class='notice'>You set [src] into [modes[mode]] mode.</span>")
+	to_chat(user, SPAN_NOTICE("You set [src] into [modes[mode]] mode."))
 	listening = FALSE
 	recorded = ""
 	return TRUE

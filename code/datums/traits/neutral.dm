@@ -6,16 +6,16 @@
 	desc = "You can't taste anything! Toxic food will still poison you."
 	value = 0
 	mob_trait = TRAIT_AGEUSIA
-	gain_text = "<span class='notice'>You can't taste anything!</span>"
-	lose_text = "<span class='notice'>You can taste again!</span>"
+	gain_text = SPAN_NOTICE("You can't taste anything!")
+	lose_text = SPAN_NOTICE("You can taste again!")
 	medical_record_text = "Patient suffers from ageusia and is incapable of tasting food or reagents."
 
 /datum/quirk/snob
 	name = "Snob"
 	desc = "You care about the finer things, if a room doesn't look nice its just not really worth it, is it?"
 	value = 0
-	gain_text = "<span class='notice'>You feel like you understand what things should look like.</span>"
-	lose_text = "<span class='notice'>Well who cares about deco anyways?</span>"
+	gain_text = SPAN_NOTICE("You feel like you understand what things should look like.")
+	lose_text = SPAN_NOTICE("Well who cares about deco anyways?")
 	medical_record_text = "Patient seems to be rather stuck up."
 	mob_trait = TRAIT_SNOB
 
@@ -23,8 +23,8 @@
 	name = "Ananas Affinity"
 	desc = "You find yourself greatly enjoying fruits of the ananas genus. You can't seem to ever get enough of their sweet goodness!"
 	value = 0
-	gain_text = "<span class='notice'>You feel an intense craving for pineapple.</span>"
-	lose_text = "<span class='notice'>Your feelings towards pineapples seem to return to a lukewarm state.</span>"
+	gain_text = SPAN_NOTICE("You feel an intense craving for pineapple.")
+	lose_text = SPAN_NOTICE("Your feelings towards pineapples seem to return to a lukewarm state.")
 	medical_record_text = "Patient demonstrates a pathological love of pineapple."
 
 /datum/quirk/pineapple_liker/add()
@@ -42,8 +42,8 @@
 	name = "Ananas Aversion"
 	desc = "You find yourself greatly detesting fruits of the ananas genus. Serious, how the hell can anyone say these things are good? And what kind of madman would even dare putting it on a pizza!?"
 	value = 0
-	gain_text = "<span class='notice'>You find yourself pondering what kind of idiot actually enjoys pineapples...</span>"
-	lose_text = "<span class='notice'>Your feelings towards pineapples seem to return to a lukewarm state.</span>"
+	gain_text = SPAN_NOTICE("You find yourself pondering what kind of idiot actually enjoys pineapples...")
+	lose_text = SPAN_NOTICE("Your feelings towards pineapples seem to return to a lukewarm state.")
 	medical_record_text = "Patient is correct to think that pineapple is disgusting."
 
 /datum/quirk/pineapple_hater/add()
@@ -61,8 +61,8 @@
 	name = "Deviant Tastes"
 	desc = "You dislike food that most people enjoy, and find delicious what they don't."
 	value = 0
-	gain_text = "<span class='notice'>You start craving something that tastes strange.</span>"
-	lose_text = "<span class='notice'>You feel like eating normal food again.</span>"
+	gain_text = SPAN_NOTICE("You start craving something that tastes strange.")
+	lose_text = SPAN_NOTICE("You feel like eating normal food again.")
 	medical_record_text = "Patient demonstrates irregular nutrition preferences."
 
 /datum/quirk/deviant_tastes/add()
@@ -101,8 +101,8 @@
 	name = "Social Anxiety"
 	desc = "Talking to people is very difficult for you, and you often stutter or even lock up."
 	value = 0
-	gain_text = "<span class='danger'>You start worrying about what you're saying.</span>"
-	lose_text = "<span class='notice'>You feel easier about talking again.</span>" //if only it were that easy!
+	gain_text = SPAN_DANGER("You start worrying about what you're saying.")
+	lose_text = SPAN_NOTICE("You feel easier about talking again.") //if only it were that easy!
 	medical_record_text = "Patient is usually anxious in social encounters and prefers to avoid them."
 	var/dumb_thing = TRUE
 
@@ -122,7 +122,7 @@
 	if(prob(2 + nearby_people))
 		H.stuttering = max(3, H.stuttering)
 	else if(prob(min(3, nearby_people)) && !H.silent)
-		to_chat(H, "<span class='danger'>You retreat into yourself. You <i>really</i> don't feel up to talking.</span>")
+		to_chat(H, SPAN_DANGER("You retreat into yourself. You <i>really</i> don't feel up to talking."))
 		H.silent = max(10, H.silent)
 	else if(prob(0.5) && dumb_thing)
 		to_chat(H, "<span class='userdanger'>You think of a dumb thing you said a long time ago and scream internally.</span>")
@@ -173,7 +173,7 @@
 	value = 0
 	//no mob trait because it's handled uniquely
 	gain_text = "<span class='userdanger'>...</span>"
-	lose_text = "<span class='notice'>You feel in tune with the world again.</span>"
+	lose_text = SPAN_NOTICE("You feel in tune with the world again.")
 	medical_record_text = "Patient suffers from acute Reality Dissociation Syndrome and experiences vivid hallucinations."
 
 /datum/quirk/insanity/on_process()
@@ -196,8 +196,8 @@
 	name = "Mute"
 	desc = "Due to some accident, medical condition, or simply by choice, you are completely unable to speak."
 	value = 0
-	gain_text = "<span class='danger'>You find yourself unable to speak!</span>"
-	lose_text = "<span class='notice'>You feel a growing strength in your vocal chords.</span>"
+	gain_text = SPAN_DANGER("You find yourself unable to speak!")
+	lose_text = SPAN_NOTICE("You feel a growing strength in your vocal chords.")
 	medical_record_text = "Functionally mute, patient is unable to use their voice in any capacity."
 	antag_removal_text = "Your antagonistic nature has caused your voice to be heard."
 	var/datum/brain_trauma/severe/mute/mute
@@ -216,16 +216,16 @@
 	desc = "Whether it's a sixth sense or careful study of body language, it only takes you a quick glance at someone to understand how they feel."
 	value = 0
 	mob_trait = TRAIT_EMPATH
-	gain_text = "<span class='notice'>You feel in tune with those around you.</span>"
-	lose_text = "<span class='danger'>You feel isolated from others.</span>"
+	gain_text = SPAN_NOTICE("You feel in tune with those around you.")
+	lose_text = SPAN_DANGER("You feel isolated from others.")
 	medical_record_text = "Patient is highly perceptive of and sensitive to social cues, or may possibly have ESP. Further testing needed."
 
 /datum/quirk/longtimer
 	name = "Longtimer"
 	desc = "You've been around for a long time and seen more than your fair share of action, suffering some pretty nasty scars along the way. For whatever reason, you've declined to get them removed or augmented."
 	value = 0
-	gain_text = "<span class='notice'>Your body has seen better days.</span>"
-	lose_text = "<span class='notice'>Your sins may wash away, but those scars are here to stay...</span>"
+	gain_text = SPAN_NOTICE("Your body has seen better days.")
+	lose_text = SPAN_NOTICE("Your sins may wash away, but those scars are here to stay...")
 	medical_record_text = "Patient has withstood significant physical trauma and declined plastic surgery procedures to heal scarring."
 	/// the minimum amount of scars we can generate
 	var/min_scars = 3

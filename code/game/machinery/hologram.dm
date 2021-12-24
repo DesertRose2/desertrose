@@ -173,7 +173,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 /obj/machinery/holopad/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>The status display reads: Current projection range: <b>[holo_range]</b> units.</span>"
+		. += SPAN_NOTICE("The status display reads: Current projection range: <b>[holo_range]</b> units.")
 
 /obj/machinery/holopad/attackby(obj/item/P, mob/user, params)
 	if(default_deconstruction_screwdriver(user, "holopad_open", "holopad0", P))
@@ -190,11 +190,11 @@ GLOBAL_LIST_EMPTY(network_holopads)
 
 	if(istype(P,/obj/item/disk/holodisk))
 		if(disk)
-			to_chat(user,"<span class='warning'>There's already a disk inside [src]!</span>")
+			to_chat(user,SPAN_WARNING("There's already a disk inside [src]!"))
 			return
 		if (!user.transferItemToLoc(P,src))
 			return
-		to_chat(user,"<span class='notice'>You insert [P] into [src].</span>")
+		to_chat(user,SPAN_NOTICE("You insert [P] into [src]."))
 		disk = P
 		return
 
@@ -274,7 +274,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 					calling = TRUE
 					return TRUE
 			else
-				to_chat(usr, "<span class='warning'>You must stand on the holopad to make a call!</span>")
+				to_chat(usr, SPAN_WARNING("You must stand on the holopad to make a call!"))
 		if("connectcall")
 			var/datum/holocall/call_to_connect = locate(params["holopad"]) in holo_calls
 			if(!QDELETED(call_to_connect))
@@ -413,7 +413,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 		move_hologram()
 
 		set_holo(user, Hologram)
-		visible_message("<span class='notice'>A holographic image of [user] flickers to life before your eyes!</span>")
+		visible_message(SPAN_NOTICE("A holographic image of [user] flickers to life before your eyes!"))
 
 		return Hologram
 	else
@@ -568,7 +568,7 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 	Hologram.setAnchored(TRUE)//So space wind cannot drag it.
 	Hologram.name = "[record.caller_name] (Hologram)"//If someone decides to right click.
 	Hologram.set_light(2)	//hologram lighting
-	visible_message("<span class='notice'>A holographic image of [record.caller_name] flickers to life before your eyes!</span>")
+	visible_message(SPAN_NOTICE("A holographic image of [record.caller_name] flickers to life before your eyes!"))
 	return Hologram
 
 /obj/machinery/holopad/proc/replay_start()

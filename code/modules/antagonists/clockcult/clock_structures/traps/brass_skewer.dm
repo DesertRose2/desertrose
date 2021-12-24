@@ -4,7 +4,7 @@
 	desc = "A deadly brass spike, cleverly concealed in the floor. You think you should be safe if you disarm whatever's meant to set it off."
 	clockwork_desc = "A barbaric but undeniably effective weapon: a spear through the chest. It immobilizes anyone unlucky enough to step on it and keeps them in place until they get help.."
 	icon_state = "brass_skewer"
-	break_message = "<span class='warning'>The skewer snaps in two!</span>"
+	break_message = SPAN_WARNING("The skewer snaps in two!")
 	max_integrity = 40
 	density = FALSE
 	can_buckle = TRUE
@@ -23,7 +23,7 @@
 		var/mob/living/L = buckled_mobs[1]
 		if(iscarbon(L))
 			L.DefaultCombatKnockdown(100)
-			L.visible_message("<span class='warning'>[L] is maimed as the skewer shatters while still in [L.p_their()] body!</span>")
+			L.visible_message(SPAN_WARNING("[L] is maimed as the skewer shatters while still in [L.p_their()] body!"))
 			L.adjustBruteLoss(15)
 		unbuckle_mob(L)
 	return ..()
@@ -36,7 +36,7 @@
 
 /obj/structure/destructible/clockwork/trap/attackby(obj/item/I, mob/living/user, params)
 	if(buckled_mobs && (user in buckled_mobs))
-		to_chat(user, "<span class='warning'>You can't reach!</span>")
+		to_chat(user, SPAN_WARNING("You can't reach!"))
 		return
 	..()
 
@@ -71,10 +71,10 @@
 		var/obj/mecha/M = locate() in get_turf(src)
 		if(M)
 			M.take_damage(50,BRUTE,"melee")
-			M.visible_message("<span class='danger'>A massive brass spike erupts from the ground, penetrating \the [M] and shattering the trap into pieces!</span>")
+			M.visible_message(SPAN_DANGER("A massive brass spike erupts from the ground, penetrating \the [M] and shattering the trap into pieces!"))
 			addtimer(CALLBACK(src, .proc/take_damage, max_integrity), 1)
 		else
-			visible_message("<span class='danger'>A massive brass spike erupts from the ground!</span>")
+			visible_message(SPAN_DANGER("A massive brass spike erupts from the ground!"))
 
 	playsound(src, 'sound/machines/clockcult/brass_skewer.ogg', 75, FALSE)
 	icon_state = "[initial(icon_state)]_extended"
@@ -97,11 +97,11 @@
 	if(user == skewee)
 		if(wiggle_wiggle)
 			return
-		user.visible_message("<span class='warning'>[user] starts wriggling off of [src]!</span>", \
-		"<span class='danger'>You start agonizingly working your way off of [src]...</span>")
+		user.visible_message(SPAN_WARNING("[user] starts wriggling off of [src]!"), \
+		SPAN_DANGER("You start agonizingly working your way off of [src]..."))
 		wiggle_wiggle = TRUE
 		if(!do_after(user, 300, target = user))
-			user.visible_message("<span class='warning'>[user] slides back down [src]!</span>")
+			user.visible_message(SPAN_WARNING("[user] slides back down [src]!"))
 			user.emote("scream")
 			user.apply_damage(10, BRUTE, BODY_ZONE_CHEST)
 			playsound(user, 'sound/misc/desceration-03.ogg', 50, TRUE)
@@ -109,15 +109,15 @@
 			return
 		wiggle_wiggle = FALSE
 	else
-		user.visible_message("<span class='danger'>[user] starts tenderly lifting [skewee] off of [src]...</span>", \
-		"<span class='danger'>You start tenderly lifting [skewee] off of [src]...</span>")
+		user.visible_message(SPAN_DANGER("[user] starts tenderly lifting [skewee] off of [src]..."), \
+		SPAN_DANGER("You start tenderly lifting [skewee] off of [src]..."))
 		if(!do_after(user, 60, target = skewee))
-			skewee.visible_message("<span class='warning'>[skewee] painfully slides back down [src].</span>")
+			skewee.visible_message(SPAN_WARNING("[skewee] painfully slides back down [src]."))
 			if(skewee.stat >= UNCONSCIOUS)
 				return //by ratvar, no more spamming my deadchat, holy fuck
 			skewee.say("Oof, ouch owwie!!", forced = "fail brass skewer removal")
 			return
-	skewee.visible_message("<span class='danger'>[skewee] comes free of [src] with a squelching pop!</span>", \
+	skewee.visible_message(SPAN_DANGER("[skewee] comes free of [src] with a squelching pop!"), \
 	"<span class='boldannounce'>You come free of [src]!</span>")
 	skewee.DefaultCombatKnockdown(30)
 	playsound(skewee, 'sound/misc/desceration-03.ogg', 50, TRUE)

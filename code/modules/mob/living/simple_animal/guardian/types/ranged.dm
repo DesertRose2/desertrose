@@ -75,7 +75,7 @@
 			lighting_alpha = LIGHTING_PLANE_ALPHA_VISIBLE
 			msg = "You deactivate your night vision."
 
-	to_chat(src, "<span class='notice'>[msg]</span>")
+	to_chat(src, SPAN_NOTICE("[msg]"))
 
 
 /mob/living/simple_animal/hostile/guardian/ranged/verb/Snare()

@@ -65,7 +65,7 @@
 		if(enemies.len && prob(10))
 			enemies = list()
 			LoseTarget()
-			src.visible_message("<span class='notice'>[src] calms down.</span>")
+			src.visible_message(SPAN_NOTICE("[src] calms down."))
 		udder.generateMilk(milk_reagent)
 		eat_plants()
 		if(!pulledby)
@@ -77,7 +77,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/goat/Retaliate()
 	..()
-	src.visible_message("<span class='danger'>[src] gets an evil-looking gleam in [p_their()] eye.</span>")
+	src.visible_message(SPAN_DANGER("[src] gets an evil-looking gleam in [p_their()] eye."))
 
 /mob/living/simple_animal/hostile/retaliate/goat/Move()
 	. = ..()
@@ -113,7 +113,7 @@
 		var/mob/living/carbon/human/H = target
 		if(istype(H.dna.species, /datum/species/pod))
 			var/obj/item/bodypart/NB = pick(H.bodyparts)
-			H.visible_message("<span class='warning'>[src] takes a big chomp out of [H]!</span>", \
+			H.visible_message(SPAN_WARNING("[src] takes a big chomp out of [H]!"), \
 								  "<span class='userdanger'>[src] takes a big chomp out of your [NB]!</span>")
 			NB.dismember()
 //cow
@@ -209,8 +209,8 @@
 
 /mob/living/simple_animal/cow/on_attack_hand(mob/living/carbon/M)
 	if(!stat && M.a_intent == INTENT_DISARM && icon_state != icon_dead)
-		M.visible_message("<span class='warning'>[M] tips over [src].</span>",
-			"<span class='notice'>You tip over [src].</span>")
+		M.visible_message(SPAN_WARNING("[M] tips over [src]."),
+			SPAN_NOTICE("You tip over [src]."))
 		to_chat(src, "<span class='userdanger'>You are tipped over by [M]!</span>")
 		DefaultCombatKnockdown(60,ignore_canknockdown = TRUE)
 		icon_state = icon_dead
@@ -228,7 +228,7 @@
 					if(4)
 						external = "[src] seems resigned to its fate."
 						internal = "You resign yourself to your fate."
-				visible_message("<span class='notice'>[external]</span>",
+				visible_message(SPAN_NOTICE("[external]"),
 					"<span class='revennotice'>[internal]</span>")
 	else
 		..()
@@ -273,13 +273,13 @@
 /obj/item/udder/proc/milkAnimal(obj/O, mob/user)
 	var/obj/item/reagent_containers/glass/G = O
 	if(G.reagents.total_volume >= G.volume)
-		to_chat(user, "<span class='danger'>[O] is full.</span>")
+		to_chat(user, SPAN_DANGER("[O] is full."))
 		return
 	var/transfered = reagents.trans_to(O, rand(5,10))
 	if(transfered)
-		user.visible_message("[user] milks [src] using \the [O].", "<span class='notice'>You milk [src] using \the [O].</span>")
+		user.visible_message("[user] milks [src] using \the [O].", SPAN_NOTICE("You milk [src] using \the [O]."))
 	else
-		to_chat(user, "<span class='danger'>The udder is dry. Wait a bit longer...</span>")
+		to_chat(user, SPAN_DANGER("The udder is dry. Wait a bit longer..."))
 
 
 /////////////
@@ -408,7 +408,7 @@
 			qdel(O)
 			eggsleft += rand(1, 4)
 		else
-			to_chat(user, "<span class='warning'>[name] doesn't seem hungry!</span>")
+			to_chat(user, SPAN_WARNING("[name] doesn't seem hungry!"))
 	else
 		..()
 
@@ -524,7 +524,7 @@
 					update_brahmin_fluff()
 					regenerate_icons()
 				else
-					to_chat(usr, "<span class='danger'>There is nothing to remove from its [remove_from].</span>")
+					to_chat(usr, SPAN_DANGER("There is nothing to remove from its [remove_from]."))
 					return
 
 		show_inv(usr)
@@ -540,17 +540,17 @@
 
 			if("back")
 				if(inventory_back)
-					to_chat(usr, "<span class='warning'>It's already wearing something!</span>")
+					to_chat(usr, SPAN_WARNING("It's already wearing something!"))
 					return
 				else
 					var/obj/item/item_to_add = usr.get_active_held_item()
 
 					if(!item_to_add)
-						usr.visible_message("[usr] pets [src].","<span class='notice'>You rest your hand on [src]'s back for a moment.</span>")
+						usr.visible_message("[usr] pets [src].",SPAN_NOTICE("You rest your hand on [src]'s back for a moment."))
 						return
 
 					if(!usr.temporarilyRemoveItemFromInventory(item_to_add))
-						to_chat(usr, "<span class='warning'>\The [item_to_add] is stuck to your hand, you cannot put it on [src]'s back!</span>")
+						to_chat(usr, SPAN_WARNING("\The [item_to_add] is stuck to your hand, you cannot put it on [src]'s back!"))
 						return
 
 					//The objects that brahmin can wear on their backs.
@@ -559,7 +559,7 @@
 						allowed = TRUE
 
 					if(!allowed)
-						to_chat(usr, "<span class='warning'>You set [item_to_add] on [src]'s back, but it falls off!</span>")
+						to_chat(usr, SPAN_WARNING("You set [item_to_add] on [src]'s back, but it falls off!"))
 						item_to_add.forceMove(drop_location())
 						if(prob(25))
 							step_rand(item_to_add)

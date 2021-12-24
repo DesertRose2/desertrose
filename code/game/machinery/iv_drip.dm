@@ -76,36 +76,36 @@
 		return
 
 	if(attached)
-		visible_message("<span class='warning'>[attached] is detached from [src].</span>")
+		visible_message(SPAN_WARNING("[attached] is detached from [src]."))
 		attached = null
 		update_icon()
 		return
 
 	if(!target.has_dna())
-		to_chat(usr, "<span class='danger'>The drip beeps: Warning, incompatible creature!</span>")
+		to_chat(usr, SPAN_DANGER("The drip beeps: Warning, incompatible creature!"))
 		return
 
 	if(Adjacent(target) && usr.Adjacent(target))
 		if(beaker)
-			usr.visible_message("<span class='warning'>[usr] attaches [src] to [target].</span>", "<span class='notice'>You attach [src] to [target].</span>")
+			usr.visible_message(SPAN_WARNING("[usr] attaches [src] to [target]."), SPAN_NOTICE("You attach [src] to [target]."))
 			log_combat(usr, target, "attached", src, "containing: [beaker.name] - ([beaker.reagents.log_list()])")
 			add_fingerprint(usr)
 			attached = target
 			START_PROCESSING(SSmachines, src)
 			update_icon()
 		else
-			to_chat(usr, "<span class='warning'>There's nothing attached to the IV drip!</span>")
+			to_chat(usr, SPAN_WARNING("There's nothing attached to the IV drip!"))
 
 
 /obj/machinery/iv_drip/attackby(obj/item/W, mob/user, params)
 	if(is_type_in_typecache(W, drip_containers))
 		if(beaker)
-			to_chat(user, "<span class='warning'>There is already a reagent container loaded!</span>")
+			to_chat(user, SPAN_WARNING("There is already a reagent container loaded!"))
 			return
 		if(!user.transferItemToLoc(W, src))
 			return
 		beaker = W
-		to_chat(user, "<span class='notice'>You attach [W] to [src].</span>")
+		to_chat(user, SPAN_NOTICE("You attach [W] to [src]."))
 		user.log_message("attached a [W] to [src] at [AREACOORD(src)] containing ([beaker.reagents.log_list()])", LOG_ATTACK)
 		add_fingerprint(user)
 		update_icon()
@@ -178,10 +178,10 @@
 		return
 	if(dripfeed)
 		dripfeed = FALSE
-		to_chat(usr, "<span class='notice'>You loosen the valve to speed up the [src].</span>")
+		to_chat(usr, SPAN_NOTICE("You loosen the valve to speed up the [src]."))
 	else
 		dripfeed = TRUE
-		to_chat(usr, "<span class='notice'>You tighten the valve to slowly drip-feed the contents of [src].</span>")
+		to_chat(usr, SPAN_NOTICE("You tighten the valve to slowly drip-feed the contents of [src]."))
 
 /obj/machinery/iv_drip/attack_robot(mob/user)
 	if(Adjacent(user))
@@ -193,7 +193,7 @@
 	set src in view(1)
 
 	if(!isliving(usr))
-		to_chat(usr, "<span class='warning'>You can't do that!</span>")
+		to_chat(usr, SPAN_WARNING("You can't do that!"))
 		return
 
 	if(usr.incapacitated())
@@ -213,7 +213,7 @@
 	set src in view(1)
 
 	if(!isliving(usr))
-		to_chat(usr, "<span class='warning'>You can't do that!</span>")
+		to_chat(usr, SPAN_WARNING("You can't do that!"))
 		return
 
 	if(usr.incapacitated())
@@ -241,7 +241,7 @@
 
 /obj/machinery/iv_drip/telescopic
 	name = "telescopic IV drip"
-	desc = "An IV drip with an advanced infusion pump that can both drain blood into and inject liquids from attached containers. Blood packs are processed at an accelerated rate. This one is telescopic, and can be picked up and put down.Alt-Click with a beaker attached to change the transfer rate."
+	desc = "An IV drip with an advanced infusion pump that can both drain blood into and inject liquids from attached containers. Blood packs are processed at an accelerated rate. This one is telescopic, and can be picked up and put down. Alt-Click with a beaker attached to change the transfer rate."
 	icon_state = "iv_drip"
 
 /obj/machinery/iv_drip/telescopic/update_icon_state()

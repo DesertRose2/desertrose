@@ -4,7 +4,7 @@
 	set category = "OOC"
 	
 	if(autobunker_last_try + 5 SECONDS > world.time)
-		to_chat(src, "<span class='danger'>Function on cooldown, try again in 5 seconds.</span>")
+		to_chat(src, SPAN_DANGER("Function on cooldown, try again in 5 seconds."))
 		return
 	autobunker_last_try = world.time
 

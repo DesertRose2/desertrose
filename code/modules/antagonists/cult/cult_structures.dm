@@ -9,7 +9,7 @@
 
 /obj/structure/destructible/cult/proc/conceal() //for spells that hide cult presence
 	density = FALSE
-	visible_message("<span class='danger'>[src] fades away.</span>")
+	visible_message(SPAN_DANGER("[src] fades away."))
 	invisibility = INVISIBILITY_OBSERVER
 	alpha = 100 //To help ghosts distinguish hidden runes
 	light_range = 0
@@ -20,7 +20,7 @@
 /obj/structure/destructible/cult/proc/reveal() //for spells that reveal cult presence
 	density = initial(density)
 	invisibility = 0
-	visible_message("<span class='danger'>[src] suddenly appears!</span>")
+	visible_message(SPAN_DANGER("[src] suddenly appears!"))
 	alpha = initial(alpha)
 	light_range = initial(light_range)
 	light_power = initial(light_power)
@@ -30,7 +30,7 @@
 
 /obj/structure/destructible/cult/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>\The [src] is [anchored ? "":"not "]secured to the floor.</span>"
+	. += SPAN_NOTICE("\The [src] is [anchored ? "":"not "]secured to the floor.")
 	if((iscultist(user) || isobserver(user)) && cooldowntime > world.time)
 		. += "<span class='cult italic'>The magic in [src] is too weak, [p_they()] will be ready to use again in [DisplayTimeText(cooldowntime - world.time)].</span>"
 
@@ -47,7 +47,7 @@
 			M.DelayNextAction(CLICK_CD_MELEE)
 			obj_integrity = min(max_integrity, obj_integrity + 5)
 			Beam(M, icon_state="sendbeam", time=4)
-			M.visible_message("<span class='danger'>[M] repairs \the <b>[src]</b>.</span>", \
+			M.visible_message(SPAN_DANGER("[M] repairs \the <b>[src]</b>."), \
 				"<span class='cult'>You repair <b>[src]</b>, leaving [p_they()] at <b>[round(obj_integrity * 100 / max_integrity)]%</b> stability.</span>")
 			return TRUE
 		else
@@ -59,7 +59,7 @@
 	if(istype(I, /obj/item/melee/cultblade/dagger) && iscultist(user))
 		anchored = !anchored
 		density = !density
-		to_chat(user, "<span class='notice'>You [anchored ? "":"un"]secure \the [src] [anchored ? "to":"from"] the floor.</span>")
+		to_chat(user, SPAN_NOTICE("You [anchored ? "":"un"]secure \the [src] [anchored ? "to":"from"] the floor."))
 		if(!anchored)
 			icon_state = "[initial(icon_state)]_off"
 		else
@@ -83,7 +83,7 @@
 	name = "altar"
 	desc = "A bloodstained altar dedicated to Nar'Sie."
 	icon_state = "talismanaltar"
-	break_message = "<span class='warning'>The altar shatters, leaving only the wailing of the damned!</span>"
+	break_message = SPAN_WARNING("The altar shatters, leaving only the wailing of the damned!")
 
 	var/static/image/radial_whetstone = image(icon = 'icons/obj/kitchen.dmi', icon_state = "cult_sharpener")
 	var/static/image/radial_shell = image(icon = 'icons/obj/wizard.dmi', icon_state = "construct-cult")
@@ -99,7 +99,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>You're pretty sure you know exactly what this is used for and you can't seem to touch it.</span>")
+		to_chat(user, SPAN_WARNING("You're pretty sure you know exactly what this is used for and you can't seem to touch it."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")
@@ -133,7 +133,7 @@
 	icon_state = "forge"
 	light_range = 2
 	light_color = LIGHT_COLOR_LAVA
-	break_message = "<span class='warning'>The force breaks apart into shards with a howling scream!</span>"
+	break_message = SPAN_WARNING("The force breaks apart into shards with a howling scream!")
 
 	var/static/image/radial_flagellant = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "cultrobes")
 	var/static/image/radial_shielded = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "cult_armor")
@@ -145,7 +145,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>The heat radiating from [src] pushes you back.</span>")
+		to_chat(user, SPAN_WARNING("The heat radiating from [src] pushes you back."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")
@@ -176,7 +176,7 @@
 
 /obj/structure/destructible/cult/forge/attackby(obj/item/I, mob/user)
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>The heat radiating from [src] pushes you back.</span>")
+		to_chat(user, SPAN_WARNING("The heat radiating from [src] pushes you back."))
 		return
 	if(istype(I, /obj/item/ingot))
 		var/obj/item/ingot/notsword = I
@@ -190,7 +190,7 @@
 	light_range = 1.5
 	light_color = LIGHT_COLOR_RED
 	break_sound = 'sound/effects/glassbr2.ogg'
-	break_message = "<span class='warning'>The blood-red crystal falls to the floor and shatters!</span>"
+	break_message = SPAN_WARNING("The blood-red crystal falls to the floor and shatters!")
 	var/heal_delay = 25
 	var/last_heal = 0
 	var/corrupt_delay = 50
@@ -265,7 +265,7 @@
 	icon_state = "tomealtar"
 	light_range = 1.5
 	light_color = LIGHT_COLOR_FIRE
-	break_message = "<span class='warning'>The books and tomes of the archives burn into ash as the desk shatters!</span>"
+	break_message = SPAN_WARNING("The books and tomes of the archives burn into ash as the desk shatters!")
 
 	var/static/image/radial_blindfold = image(icon = 'icons/obj/clothing/glasses.dmi', icon_state = "blindfold")
 	var/static/image/radial_curse = image(icon = 'icons/obj/cult.dmi', icon_state ="shuttlecurse")
@@ -277,7 +277,7 @@
 	if(!user.canUseTopic(src, TRUE))
 		return
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>These books won't open and it hurts to even try and read the covers.</span>")
+		to_chat(user, SPAN_WARNING("These books won't open and it hurts to even try and read the covers."))
 		return
 	if(!anchored)
 		to_chat(user, "<span class='cultitalic'>You need to anchor [src] to the floor with your dagger first.</span>")

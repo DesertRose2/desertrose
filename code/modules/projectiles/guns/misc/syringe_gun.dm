@@ -36,7 +36,7 @@
 
 /obj/item/gun/syringe/attack_self(mob/living/user)
 	if(!syringes.len)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return 0
 
 	var/obj/item/reagent_containers/syringe/S = syringes[syringes.len]
@@ -46,7 +46,7 @@
 	S.forceMove(user.loc)
 
 	syringes.Remove(S)
-	to_chat(user, "<span class='notice'>You unload [S] from \the [src].</span>")
+	to_chat(user, SPAN_NOTICE("You unload [S] from \the [src]."))
 
 	return 1
 
@@ -55,12 +55,12 @@
 		if(syringes.len < max_syringes)
 			if(!user.transferItemToLoc(A, src))
 				return FALSE
-			to_chat(user, "<span class='notice'>You load [A] into \the [src].</span>")
+			to_chat(user, SPAN_NOTICE("You load [A] into \the [src]."))
 			syringes += A
 			recharge_newshot()
 			return TRUE
 		else
-			to_chat(user, "<span class='warning'>[src] cannot hold more syringes!</span>")
+			to_chat(user, SPAN_WARNING("[src] cannot hold more syringes!"))
 	return FALSE
 
 /obj/item/gun/syringe/rapidsyringe
@@ -91,17 +91,17 @@
 	if(istype(A, /obj/item/dnainjector))
 		var/obj/item/dnainjector/D = A
 		if(D.used)
-			to_chat(user, "<span class='warning'>This injector is used up!</span>")
+			to_chat(user, SPAN_WARNING("This injector is used up!"))
 			return
 		if(syringes.len < max_syringes)
 			if(!user.transferItemToLoc(D, src))
 				return FALSE
-			to_chat(user, "<span class='notice'>You load \the [D] into \the [src].</span>")
+			to_chat(user, SPAN_NOTICE("You load \the [D] into \the [src]."))
 			syringes += D
 			recharge_newshot()
 			return TRUE
 		else
-			to_chat(user, "<span class='warning'>[src] cannot hold more syringes!</span>")
+			to_chat(user, SPAN_WARNING("[src] cannot hold more syringes!"))
 	return FALSE
 
 /obj/item/gun/syringe/dart
@@ -121,7 +121,7 @@
 	if(istype(A, /obj/item/reagent_containers/syringe/dart))
 		..()
 	else
-		to_chat(user, "<span class='notice'>You can't put the [A] into \the [src]!</span>")
+		to_chat(user, SPAN_NOTICE("You can't put the [A] into \the [src]!"))
 		return FALSE
 
 /obj/item/gun/syringe/dart/rapiddart
@@ -161,7 +161,7 @@
 	fire_sound = 'sound/items/syringeproj.ogg'
 
 /obj/item/gun/syringe/blowgun/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stam_cost = 0)
-	visible_message("<span class='danger'>[user] starts aiming with a blowgun!</span>")
+	visible_message(SPAN_DANGER("[user] starts aiming with a blowgun!"))
 	if(do_after(user, 25, target = src))
 		user.adjustStaminaLoss(20)
 		user.adjustOxyLoss(20)

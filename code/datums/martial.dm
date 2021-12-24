@@ -53,7 +53,7 @@
 
 	if(!damage)
 		playsound(D.loc, A.dna.species.miss_sound, 25, 1, -1)
-		D.visible_message("<span class='warning'>[A] has attempted to [atk_verb] [D]!</span>", \
+		D.visible_message(SPAN_WARNING("[A] has attempted to [atk_verb] [D]!"), \
 			"<span class='userdanger'>[A] has attempted to [atk_verb] [D]!</span>", null, COMBAT_MESSAGE_RANGE)
 		add_logs(A, D, "attempted to [atk_verb]")
 		return 0
@@ -62,7 +62,7 @@
 	var/armor_block = D.run_armor_check(affecting, "melee")
 
 	playsound(D.loc, A.dna.species.attack_sound, 25, 1, -1)
-	D.visible_message("<span class='danger'>[A] has [atk_verb]ed [D]!</span>", \
+	D.visible_message(SPAN_DANGER("[A] has [atk_verb]ed [D]!"), \
 			"<span class='userdanger'>[A] has [atk_verb]ed [D]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 	D.apply_damage(damage, BRUTE, affecting, armor_block)
@@ -70,7 +70,7 @@
 	add_logs(A, D, "punched")
 
 	if((D.stat != DEAD) && damage >= A.dna.species.punchstunthreshold)
-		D.visible_message("<span class='danger'>[A] has knocked [D] down!!</span>", \
+		D.visible_message(SPAN_DANGER("[A] has knocked [D] down!!"), \
 								"<span class='userdanger'>[A] has knocked [D] down!</span>")
 		D.apply_effect(40, EFFECT_KNOCKDOWN, armor_block)
 		D.forcesay(GLOB.hit_appends)

@@ -14,7 +14,7 @@
 	var/desc = "Heavy gusts of wind blanket the area, periodically knocking down anyone caught in the open."
 
 	/// The message displayed in chat to foreshadow the weather's beginning
-	var/telegraph_message = "<span class='warning'>The wind begins to pick up.</span>"
+	var/telegraph_message = SPAN_WARNING("The wind begins to pick up.")
 
 	/// In deciseconds, how long from the beginning of the telegraph until the weather begins
 	var/telegraph_duration = 300
@@ -38,7 +38,7 @@
 	var/weather_color = null
 
 	/// Displayed once the weather is over
-	var/end_message = "<span class='danger'>The wind relents its assault.</span>"
+	var/end_message = SPAN_DANGER("The wind relents its assault.")
 	/// In deciseconds, how long the "wind-down" graphic will appear before vanishing entirely
 	var/end_duration = 300
 	/// Sound that plays while weather is ending

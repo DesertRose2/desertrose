@@ -84,15 +84,15 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, !ismonkey(user)))
 		return
 	if(holding)
-		to_chat(user, "<span class='notice'>You remove [holding] from [src].</span>")
+		to_chat(user, SPAN_NOTICE("You remove [holding] from [src]."))
 		replace_tank(user, TRUE)
 		return TRUE
 
 /obj/machinery/portable_atmospherics/examine(mob/user)
 	. = ..()
 	if(holding)
-		. += "<span class='notice'>\The [src] contains [holding]. Alt-click [src] to remove it.</span>"
-		. += "<span class='notice'>Click [src] with another gas tank to hot swap [holding].</span>"
+		. += SPAN_NOTICE("\The [src] contains [holding]. Alt-click [src] to remove it.")
+		. += SPAN_NOTICE("Click [src] with another gas tank to hot swap [holding].")
 
 /obj/machinery/portable_atmospherics/proc/replace_tank(mob/living/user, close_valve, obj/item/tank/new_tank)
 	if(holding)
@@ -112,7 +112,7 @@
 			var/obj/item/tank/T = W
 			if(!user.transferItemToLoc(T, src))
 				return
-			to_chat(user, "<span class='notice'>[holding ? "In one smooth motion you pop [holding] out of [src]'s connector and replace it with [T]" : "You insert [T] into [src]"].</span>")
+			to_chat(user, SPAN_NOTICE("[holding ? "In one smooth motion you pop [holding] out of [src]'s connector and replace it with [T]" : "You insert [T] into [src]"]."))
 			replace_tank(user, FALSE, T)
 			update_icon()
 	else if(istype(W, /obj/item/wrench))
@@ -122,22 +122,22 @@
 				W.play_tool_sound(src)
 				user.visible_message( \
 					"[user] disconnects [src].", \
-					"<span class='notice'>You unfasten [src] from the port.</span>", \
+					SPAN_NOTICE("You unfasten [src] from the port."), \
 					"<span class='italics'>You hear a ratchet.</span>")
 				update_icon()
 				return
 			else
 				var/obj/machinery/atmospherics/components/unary/portables_connector/possible_port = locate(/obj/machinery/atmospherics/components/unary/portables_connector) in loc
 				if(!possible_port)
-					to_chat(user, "<span class='notice'>Nothing happens.</span>")
+					to_chat(user, SPAN_NOTICE("Nothing happens."))
 					return
 				if(!connect(possible_port))
-					to_chat(user, "<span class='notice'>[name] failed to connect to the port.</span>")
+					to_chat(user, SPAN_NOTICE("[name] failed to connect to the port."))
 					return
 				W.play_tool_sound(src)
 				user.visible_message( \
 					"[user] connects [src].", \
-					"<span class='notice'>You fasten [src] to the port.</span>", \
+					SPAN_NOTICE("You fasten [src] to the port."), \
 					"<span class='italics'>You hear a ratchet.</span>")
 				update_icon()
 	else

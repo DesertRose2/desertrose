@@ -31,20 +31,20 @@
 			if(!I.tool_start_check(user, amount=2))
 				return
 
-			to_chat(user, "<span class='notice'>You begin repairing [src].</span>")
+			to_chat(user, SPAN_NOTICE("You begin repairing [src]."))
 			if(I.use_tool(src, user, 40, volume=50, amount=2))
 				obj_integrity = max_integrity
 				update_icon()
-				to_chat(user, "<span class='notice'>You repair [src].</span>")
+				to_chat(user, SPAN_NOTICE("You repair [src]."))
 		else
-			to_chat(user, "<span class='warning'>[src] is already in good condition!</span>")
+			to_chat(user, SPAN_WARNING("[src] is already in good condition!"))
 		return
 	else if(istype(I, /obj/item/stack/sheet/glass) && broken)
 		var/obj/item/stack/sheet/glass/G = I
 		if(G.get_amount() < 2)
-			to_chat(user, "<span class='warning'>You need two glass sheets to fix [src]!</span>")
+			to_chat(user, SPAN_WARNING("You need two glass sheets to fix [src]!"))
 			return
-		to_chat(user, "<span class='notice'>You start fixing [src]...</span>")
+		to_chat(user, SPAN_NOTICE("You start fixing [src]..."))
 		if(do_after(user, 20, target = src) && G.use(2))
 			broken = 0
 			obj_integrity = max_integrity
@@ -53,7 +53,7 @@
 		if(istype(I, /obj/item/twohanded/fireaxe) && !fireaxe)
 			var/obj/item/twohanded/fireaxe/F = I
 			if(F.wielded)
-				to_chat(user, "<span class='warning'>Unwield the [F.name] first.</span>")
+				to_chat(user, SPAN_WARNING("Unwield the [F.name] first."))
 				return
 			if(!user.transferItemToLoc(F, src))
 				return
@@ -115,7 +115,7 @@
 			update_icon()
 			return
 	if(locked)
-		to_chat(user, "<span class='warning'>The [name] won't budge!</span>")
+		to_chat(user, SPAN_WARNING("The [name] won't budge!"))
 		return
 	else
 		open = !open
@@ -131,7 +131,7 @@
 
 /obj/structure/fireaxecabinet/attack_tk(mob/user)
 	if(locked)
-		to_chat(user, "<span class='warning'>The [name] won't budge!</span>")
+		to_chat(user, SPAN_WARNING("The [name] won't budge!"))
 		return
 	else
 		open = !open
@@ -177,7 +177,7 @@
 	set src in oview(1)
 
 	if(locked)
-		to_chat(usr, "<span class='warning'>The [name] won't budge!</span>")
+		to_chat(usr, SPAN_WARNING("The [name] won't budge!"))
 		return
 	else
 		open = !open

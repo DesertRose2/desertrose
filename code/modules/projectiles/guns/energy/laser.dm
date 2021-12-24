@@ -155,12 +155,12 @@
 			if(user.transferItemToLoc(AM, src))
 				cell = AM
 				if(oldcell)
-					to_chat(user, "<span class='notice'>You perform a tactical reload on \the [src], replacing the cell.</span>")
+					to_chat(user, SPAN_NOTICE("You perform a tactical reload on \the [src], replacing the cell."))
 					oldcell.dropped()
 					oldcell.forceMove(get_turf(src.loc))
 					oldcell.update_icon()
 				//else
-				//	to_chat(user, "<span class='notice'>You insert the cell into \the [src].</span>")
+				//	to_chat(user, SPAN_NOTICE("You insert the cell into \the [src]."))
 
 				//playsound(src, 'sound/weapons/autoguninsert.ogg', 60, TRUE)
 				//chamber_round()
@@ -168,17 +168,17 @@
 				update_icon()
 				return 1
 			else
-				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
+				to_chat(user, SPAN_WARNING("You cannot seem to get \the [src] out of your hands!"))
 
 /obj/item/gun/energy/laser/proc/burst_select()
 	var/mob/living/carbon/human/user = usr
 	select = !select
 	if(!select)
 		disable_burst()
-		to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
+		to_chat(user, SPAN_NOTICE("You switch to semi-automatic."))
 	else
 		enable_burst()
-		to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
 
 /obj/item/gun/energy/laser/proc/enable_burst()
 	burst_size = initial(burst_size)
@@ -289,7 +289,7 @@
 //AER-9 Laser Rifle
 /obj/item/gun/energy/laser/aer9
 	name = "AER9 laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle"
+	desc = "A sturdy and advanced military grade pre-war service laser rifle."
 	icon_state = "laser"
 	item_state = "laser-rifle9"
 	can_scope = TRUE
@@ -356,7 +356,7 @@
 //AER-12 Laser Rifle
 /obj/item/gun/energy/laser/aer12
 	name = "AER12 laser rifle"
-	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim"
+	desc = "The AER12, a successor to the AER9, is a cutting-edge state of the art laser rifle employed pre-war in specialty units, featuring green-beams and associated green-trim."
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
 	can_scope = TRUE
@@ -533,7 +533,7 @@
 //Ultracite Laser Rifle
 /obj/item/gun/energy/laser/ultra_rifle
 	name = "Ultracite laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite"
+	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite."
 	icon_state = "ultra_rifle"
 	item_state = "laser-rifle9"
 	zoomable = TRUE

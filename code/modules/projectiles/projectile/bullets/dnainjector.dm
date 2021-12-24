@@ -15,7 +15,7 @@
 					return BULLET_ACT_HIT
 			else
 				blocked = 100
-				target.visible_message("<span class='danger'>\The [src] was deflected!</span>", \
+				target.visible_message(SPAN_DANGER("\The [src] was deflected!"), \
 									   "<span class='userdanger'>You were protected against \the [src]!</span>")
 	return ..()
 

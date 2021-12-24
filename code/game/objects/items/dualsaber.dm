@@ -114,7 +114,7 @@
 /// Specific hulk checks due to reflection chance for balance issues and switches hitsounds.
 /obj/item/dualsaber/proc/on_wield(obj/item/source, mob/living/carbon/user)
 	if(user.has_dna() && user.dna.check_mutation(HULK))
-		to_chat(user, "<span class='warning'>You lack the grace to wield this!</span>")
+		to_chat(user, SPAN_WARNING("You lack the grace to wield this!"))
 		return COMPONENT_TWOHANDED_BLOCK_WIELD
 	wielded = TRUE
 	sharpness = SHARP_EDGED
@@ -176,7 +176,7 @@
 
 /obj/item/dualsaber/attack(mob/target, mob/living/carbon/human/user)
 	if(user.has_dna() && user.dna.check_mutation(HULK))
-		to_chat(user, "<span class='warning'>You grip the blade too hard and accidentally drop it!</span>")
+		to_chat(user, SPAN_WARNING("You grip the blade too hard and accidentally drop it!"))
 		user.dropItemToGround(src)
 		return
 	..()
@@ -194,7 +194,7 @@
 		sleep(1)
 
 /obj/item/dualsaber/proc/impale(mob/living/user)
-	to_chat(user, "<span class='warning'>You twirl around a bit before losing your balance and impaling yourself on [src].</span>")
+	to_chat(user, SPAN_WARNING("You twirl around a bit before losing your balance and impaling yourself on [src]."))
 	if (force)
 		user.take_bodypart_damage(20,25)
 	else
@@ -210,7 +210,7 @@
 
 /obj/item/dualsaber/attack_hulk(mob/living/carbon/human/user, does_attack_animation = 0)  //In case thats just so happens that it is still activated on the groud, prevents hulk from picking it up
 	if(wielded)
-		to_chat(user, "<span class='warning'>You can't pick up such dangerous item with your meaty hands without losing fingers, better not to!</span>")
+		to_chat(user, SPAN_WARNING("You can't pick up such dangerous item with your meaty hands without losing fingers, better not to!"))
 		return 1
 
 /obj/item/dualsaber/process()
@@ -233,7 +233,7 @@
 		var/mob/living/carbon/C = user
 		if(C.wear_mask)
 			in_mouth = ", barely missing [user.p_their()] nose"
-	. = "<span class='warning'>[user] swings [user.p_their()] [name][in_mouth]. [user.p_they(TRUE)] light[user.p_s()] [user.p_their()] [A.name] in the process.</span>"
+	. = SPAN_WARNING("[user] swings [user.p_their()] [name][in_mouth]. [user.p_they(TRUE)] light[user.p_s()] [user.p_their()] [A.name] in the process.")
 	playsound(loc, hitsound, get_clamped_volume(), 1, -1)
 	add_fingerprint(user)
 	// Light your candles while spinning around the room
@@ -256,11 +256,11 @@
 	if(istype(W, /obj/item/multitool))
 		if(!hacked)
 			hacked = TRUE
-			to_chat(user, "<span class='warning'>2XRNBW_ENGAGE</span>")
+			to_chat(user, SPAN_WARNING("2XRNBW_ENGAGE"))
 			saber_color = "rainbow"
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>It's starting to look like a triple rainbow - no, nevermind.</span>")
+			to_chat(user, SPAN_WARNING("It's starting to look like a triple rainbow - no, nevermind."))
 	else
 		return ..()
 
@@ -318,7 +318,7 @@
 	if(!user.canUseTopic(src, BE_CLOSE, FALSE) || hacked)
 		return
 	if(user.incapacitated() || !istype(user))
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, SPAN_WARNING("You can't do that right now!"))
 		return
 	if(alert("Are you sure you want to recolor your blade?", "Confirm Repaint", "Yes", "No") == "Yes")
 		var/energy_color_input = input(usr,"","Choose Energy Color",light_color) as color|null
@@ -343,7 +343,7 @@
 /obj/item/dualsaber/hypereutactic/examine(mob/user)
 	. = ..()
 	if(!hacked)
-		. += "<span class='notice'>Alt-click to recolor it.</span>"
+		. += SPAN_NOTICE("Alt-click to recolor it.")
 
 /obj/item/dualsaber/hypereutactic/rainbow_process()
 	. = ..()

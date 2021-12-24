@@ -31,9 +31,9 @@
 /obj/item/gun/ballistic/automatic/magrifle/examine(mob/user)
 	. = ..()
 	if(cell)
-		. += "<span class='notice'>[src]'s cell is [round(cell.charge / cell.maxcharge, 0.1) * 100]% full.</span>"
+		. += SPAN_NOTICE("[src]'s cell is [round(cell.charge / cell.maxcharge, 0.1) * 100]% full.")
 	else
-		. += "<span class='notice'>[src] doesn't seem to have a cell!</span>"
+		. += SPAN_NOTICE("[src] doesn't seem to have a cell!")
 
 /obj/item/gun/ballistic/automatic/magrifle/can_shoot()
 	if(QDELETED(cell))

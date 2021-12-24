@@ -256,7 +256,7 @@
 	if(src == H.wear_suit) //Suit is already equipped
 		return ..()
 	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_WEAR_SUIT && requires_training)
-		to_chat(user, "<span class='warning'>You don't have the proper training to operate the power armor!</span>")
+		to_chat(user, SPAN_WARNING("You don't have the proper training to operate the power armor!"))
 		return 0
 	if(slot == SLOT_WEAR_SUIT)
 		ADD_TRAIT(user, TRAIT_STUNIMMUNE,	"stun_immunity")
@@ -277,14 +277,14 @@
 	if(emped == 0)
 		if(ismob(loc))
 			var/mob/living/L = loc
-			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
+			to_chat(loc, SPAN_WARNING("Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems."))
 			slowdown += 30
 			armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
 			emped = 1
 			if(istype(L))
 				L.update_equipment_speed_mods()
 			spawn(50) //5 seconds of being slow and weak
-				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
+				to_chat(loc, SPAN_WARNING("Armor power reroute successful. All systems operational."))
 				slowdown -= 30
 				armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
 				emped = 0
@@ -299,7 +299,7 @@
 				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 				return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 			if(ismob(loc))
-				to_chat(loc, "<span class='warning'>Your power armor absorbs the projectile's impact!</span>")
+				to_chat(loc, SPAN_WARNING("Your power armor absorbs the projectile's impact!"))
 			block_return[BLOCK_RETURN_SET_DAMAGE_TO] = 0
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
@@ -740,7 +740,7 @@
 
 /obj/item/clothing/suit/armor/f13/harpercoat
 	name = "outlaw coat"
-	desc = "(IV) A combat duster"
+	desc = "(IV) A combat duster."
 	icon_state = "harperduster"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
@@ -1056,3 +1056,10 @@
 	desc = "(V) A suit of large, yet finely forged armour with a plain white tabard draped over the top."
 	icon_state = "mutie_knight"
 	item_state = "mutie_knight"
+
+/obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
+	name = "Ptolemaic combat armor"
+	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, stylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
+	icon_state = "ptolemaic_armor"
+	item_state = "ptolemaic_armor"
+	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)

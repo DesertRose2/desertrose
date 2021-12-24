@@ -44,10 +44,10 @@
 		var/clr = C.crayon_color
 
 		if(!(clr in list("blue", "green", "mime", "orange", "purple", "rainbow", "red", "yellow")))
-			to_chat(usr, "<span class='notice'>[src] refuses to take on this colour!</span>")
+			to_chat(usr, SPAN_NOTICE("[src] refuses to take on this colour!"))
 			return
 
-		to_chat(usr, "<span class='notice'>You colour [src] with [W].</span>")
+		to_chat(usr, SPAN_NOTICE("You colour [src] with [W]."))
 		icon_state = "egg-[clr]"
 	else
 		..()
@@ -123,11 +123,11 @@
 	if(istype(W, /obj/item/kitchen/fork))
 		var/obj/item/kitchen/fork/F = W
 		if(F.forkload)
-			to_chat(user, "<span class='warning'>You already have omelette on your fork!</span>")
+			to_chat(user, SPAN_WARNING("You already have omelette on your fork!"))
 		else
 			F.icon_state = "forkloaded"
 			user.visible_message("[user] takes a piece of omelette with [user.p_their()] fork!", \
-				"<span class='notice'>You take a piece of omelette with your fork.</span>")
+				SPAN_NOTICE("You take a piece of omelette with your fork."))
 
 			var/datum/reagent/R = pick(reagents.reagent_list)
 			reagents.remove_reagent(R.type, 1)

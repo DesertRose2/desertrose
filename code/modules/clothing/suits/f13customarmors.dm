@@ -106,7 +106,7 @@
 
 //Custom item - Kozak / Jack Torres
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ltcarrier
-	name = "Lieutenant Plate Carrier"
+	name = "Lieutenant plate carrier"
 	desc = "(VI) A lightened version of the NCR officers vest that has reinforced with a light ceramic plate in an overlayed plate carrier."
 	icon_state = "lt_pc"
 	item_state = "lt_pc"

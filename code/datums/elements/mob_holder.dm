@@ -31,28 +31,28 @@
 
 /datum/element/mob_holder/proc/on_examine(mob/living/source, mob/user, list/examine_list)
 	if(ishuman(user) && !istype(source.loc, /obj/item/clothing/head/mob_holder))
-		examine_list += "<span class='notice'>Looks like [source.p_they(TRUE)] can be picked up with <b>Alt+Click</b>!</span>"
+		examine_list += SPAN_NOTICE("Looks like [source.p_they(TRUE)] can be picked up with <b>Alt+Click</b>!")
 
 /datum/element/mob_holder/proc/mob_try_pickup(mob/living/source, mob/user)
 	if(!ishuman(user) || !user.Adjacent(source) || user.incapacitated())
 		return FALSE
 	if(user.get_active_held_item())
-		to_chat(user, "<span class='warning'>Your hands are full!</span>")
+		to_chat(user, SPAN_WARNING("Your hands are full!"))
 		return FALSE
 	if(source.buckled)
-		to_chat(user, "<span class='warning'>[source] is buckled to something!</span>")
+		to_chat(user, SPAN_WARNING("[source] is buckled to something!"))
 		return FALSE
 	if(source == user)
-		to_chat(user, "<span class='warning'>You can't pick yourself up.</span>")
+		to_chat(user, SPAN_WARNING("You can't pick yourself up."))
 		return FALSE
-	source.visible_message("<span class='warning'>[user] starts picking up [source].</span>", \
+	source.visible_message(SPAN_WARNING("[user] starts picking up [source]."), \
 					"<span class='userdanger'>[user] starts picking you up!</span>")
 	if(!do_after(user, 20, target = source) || source.buckled)
 		return FALSE
 
-	source.visible_message("<span class='warning'>[user] picks up [source]!</span>", \
+	source.visible_message(SPAN_WARNING("[user] picks up [source]!"), \
 					"<span class='userdanger'>[user] picks you up!</span>")
-	to_chat(user, "<span class='notice'>You pick [source] up.</span>")
+	to_chat(user, SPAN_NOTICE("You pick [source] up."))
 	source.drop_all_held_items()
 	var/obj/item/clothing/head/mob_holder/holder = new(get_turf(source), source, worn_state, alt_worn, right_hand, left_hand, inv_slots)
 	if(proctype)
@@ -160,7 +160,7 @@
 /obj/item/clothing/head/mob_holder/container_resist()
 	if(isliving(loc))
 		var/mob/living/L = loc
-		L.visible_message("<span class='warning'>[held_mob] escapes from [L]!</span>", "<span class='warning'>[held_mob] escapes your grip!</span>")
+		L.visible_message(SPAN_WARNING("[held_mob] escapes from [L]!"), SPAN_WARNING("[held_mob] escapes your grip!"))
 	release()
 
 /obj/item/clothing/head/mob_holder/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)

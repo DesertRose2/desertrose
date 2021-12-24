@@ -236,7 +236,7 @@
 		return
 	. = TRUE
 	if(user.incapacitated() || !istype(user))
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, SPAN_WARNING("You can't do that right now!"))
 		return
 	if(alert("Are you sure you want to recolor your gun?", "Confirm Repaint", "Yes", "No") == "Yes")
 		var/body_color_input = input(usr,"","Choose Shroud Color",body_color) as color|null
@@ -246,7 +246,7 @@
 
 /obj/item/gun/ballistic/automatic/AM4B/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to recolor it.</span>"
+	. += SPAN_NOTICE("Alt-click to recolor it.")
 
 /obj/item/ammo_box/magazine/toy/AM4C
 	name = "foam force AM4-C magazine"

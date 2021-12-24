@@ -47,8 +47,8 @@
 	if((victim == src) || (victim == summoner) || (hasmatchingsummoner(victim)))
 		to_chat(victim, "<span class='holoparasite'>[src] glows with a strange <font color=\"[guardiancolor]\">light</font>, and you don't touch it.</span>")
 		return FALSE
-	to_chat(src, "<span class='danger'>One of your explosive traps caught [victim]!</span>")
-	to_chat(victim, "<span class='danger'>[bomb] was boobytrapped!</span>")
+	to_chat(src, SPAN_DANGER("One of your explosive traps caught [victim]!"))
+	to_chat(victim, SPAN_DANGER("[bomb] was boobytrapped!"))
 	return TRUE
 
 /mob/living/simple_animal/hostile/guardian/bomb/proc/on_failure(atom/bomb)

@@ -5,14 +5,14 @@
 	else
 		if (getBruteLoss())
 			if (getBruteLoss() < 30)
-				. += "<span class='warning'>It looks slightly dented.</span>"
+				. += SPAN_WARNING("It looks slightly dented.")
 			else
-				. += "<span class='danger'>It looks severely dented!</span>"
+				. += SPAN_DANGER("It looks severely dented!")
 		if (getFireLoss())
 			if (getFireLoss() < 30)
-				. += "<span class='warning'>It looks slightly charred.</span>"
+				. += SPAN_WARNING("It looks slightly charred.")
 			else
-				. += "<span class='danger'>Its casing is melted and heat-warped!</span>"
+				. += SPAN_DANGER("Its casing is melted and heat-warped!")
 		if(deployed_shell)
 			. += "The wireless networking light is blinking."
 		else if (!shunted && !client)

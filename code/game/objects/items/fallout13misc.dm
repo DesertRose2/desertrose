@@ -135,7 +135,7 @@
 				H << "<span class='boldannounce'>You have received the specialized training needed to move in any form of Power Armor.</span>"
 			src.icon_state = initial(src.icon_state)
 			src.busy = 0
-			visible_message("<span class='warning'>[src] self-destructs!</span>")
+			visible_message(SPAN_WARNING("[src] self-destructs!"))
 			qdel(src)
 	return
 */
@@ -220,7 +220,7 @@
 
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
-		visible_message("<span class='notice'>[user] begins to make a flag.</span>")
+		visible_message(SPAN_NOTICE("[user] begins to make a flag."))
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
@@ -256,7 +256,7 @@
 
 /obj/item/flag/attack_hand(mob/user)
 	if(!removing && item_state != "emptyflag")
-		visible_message("<span class='notice'>[user] begins to remove a flag.</span>")
+		visible_message(SPAN_NOTICE("[user] begins to remove a flag."))
 		removing = TRUE
 		if(do_after(user, 30, target = src))
 			new /obj/item/stack/sheet/leather(loc)

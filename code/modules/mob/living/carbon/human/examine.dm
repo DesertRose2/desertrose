@@ -64,14 +64,14 @@
 	else if(length(blood_DNA))
 		var/hand_number = get_num_arms(FALSE)
 		if(hand_number)
-			. += "<span class='warning'>[t_He] [t_has] [hand_number > 1 ? "" : "a"] blood-stained hand[hand_number > 1 ? "s" : ""]!</span>"
+			. += SPAN_WARNING("[t_He] [t_has] [hand_number > 1 ? "" : "a"] blood-stained hand[hand_number > 1 ? "s" : ""]!")
 
 	//handcuffed?
 	if(handcuffed)
 		if(istype(handcuffed, /obj/item/restraints/handcuffs/cable))
-			. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] restrained with cable!</span>"
+			. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] restrained with cable!")
 		else
-			. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!</span>"
+			. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!")
 
 	//belt
 	if(belt)
@@ -93,7 +93,7 @@
 		if(glasses)
 			. += "[t_He] [t_has] [glasses.get_examine_string(user)] covering [t_his] eyes."
 		else if((left_eye_color == BLOODCULT_EYE || right_eye_color == BLOODCULT_EYE) && iscultist(src) && HAS_TRAIT(src, TRAIT_CULT_EYES))
-			. += "<span class='warning'><B>[t_His] eyes are glowing an unnatural red!</B></span>"
+			. += SPAN_WARNING("<B>[t_His] eyes are glowing an unnatural red!</B>")
 		else if(HAS_TRAIT(src, TRAIT_HIJACKER))
 			var/obj/item/implant/hijack/H = user.getImplant(/obj/item/implant/hijack)
 			if (H && !H.stealthmode && H.toggled)
@@ -122,19 +122,19 @@
 	//Jitters
 	switch(jitteriness)
 		if(300 to INFINITY)
-			. += "<span class='warning'><B>[t_He] [t_is] convulsing violently!</B></span>"
+			. += SPAN_WARNING("<B>[t_He] [t_is] convulsing violently!</B>")
 		if(200 to 300)
-			. += "<span class='warning'>[t_He] [t_is] extremely jittery.</span>"
+			. += SPAN_WARNING("[t_He] [t_is] extremely jittery.")
 		if(100 to 200)
-			. += "<span class='warning'>[t_He] [t_is] twitching ever so slightly.</span>"
+			. += SPAN_WARNING("[t_He] [t_is] twitching ever so slightly.")
 
 	var/appears_dead = 0
 	if(stat == DEAD || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		appears_dead = 1
 		if(suiciding)
-			. += "<span class='warning'>[t_He] appear[p_s()] to have committed suicide... there is no hope of recovery.</span>"
+			. += SPAN_WARNING("[t_He] appear[p_s()] to have committed suicide... there is no hope of recovery.")
 		if(hellbound)
-			. += "<span class='warning'>[t_His] soul seems to have been ripped out of [t_his] body.  Revival is impossible.</span>"
+			. += SPAN_WARNING("[t_His] soul seems to have been ripped out of [t_his] body.  Revival is impossible.")
 		if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(FALSE, TRUE))
 			. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_his] soul has departed...</span>"
 		else
@@ -390,7 +390,7 @@
 			msg += "<span class='notice'><b><i>[t_He] [t_is] just absolutely fucked up, you can look again to take a closer look...</i></b></span>\n"
 
 	if (length(msg))
-		. += "<span class='warning'>[msg.Join("")]</span>"
+		. += SPAN_WARNING("[msg.Join("")]")
 
 	var/trait_exam = common_trait_examine()
 	if (!isnull(trait_exam))

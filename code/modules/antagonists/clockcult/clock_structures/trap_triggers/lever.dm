@@ -10,7 +10,7 @@
 	. = ..()
 	if(.)
 		return
-	user.visible_message("<span class='notice'>[user] pulls [src]!</span>", "<span class='notice'>You pull [src]. It clicks, then lifts back upwards.</span>")
+	user.visible_message(SPAN_NOTICE("[user] pulls [src]!"), SPAN_NOTICE("You pull [src]. It clicks, then lifts back upwards."))
 	if(wired_to.len)
 		audible_message("<i>You hear gears clanking.</i>")
 	playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)

@@ -76,9 +76,9 @@
 	. = list("<span class='cult'>*---------*\nThis is [icon2html(src, user)] \a <b>[src]</b>!\n[desc]")
 	if(health < maxHealth)
 		if(health >= maxHealth/2)
-			. += "<span class='warning'>[t_He] look[t_s] slightly dented.</span>"
+			. += SPAN_WARNING("[t_He] look[t_s] slightly dented.")
 		else
-			. += "<span class='warning'><b>[t_He] look[t_s] severely dented!</b></span>"
+			. += SPAN_WARNING("<b>[t_He] look[t_s] severely dented!</b>")
 	. += "*---------*</span>"
 
 /mob/living/simple_animal/hostile/construct/attack_animal(mob/living/simple_animal/M)
@@ -90,10 +90,10 @@
 			adjustHealth(-5)
 			if(src != M)
 				Beam(M,icon_state="sendbeam",time=4)
-				M.visible_message("<span class='danger'>[M] repairs some of \the <b>[src]'s</b> dents.</span>", \
+				M.visible_message(SPAN_DANGER("[M] repairs some of \the <b>[src]'s</b> dents."), \
 						   "<span class='cult'>You repair some of <b>[src]'s</b> dents, leaving <b>[src]</b> at <b>[health]/[maxHealth]</b> health.</span>")
 			else
-				M.visible_message("<span class='danger'>[M] repairs some of [p_their()] own dents.</span>", \
+				M.visible_message(SPAN_DANGER("[M] repairs some of [p_their()] own dents."), \
 						   "<span class='cult'>You repair some of your own dents, leaving you at <b>[M.health]/[M.maxHealth]</b> health.</span>")
 		else
 			if(src != M)
@@ -152,7 +152,7 @@
 		var/reflectchance = 40 - round(P.damage/3)
 		if(prob(reflectchance))
 			apply_damage(P.damage * 0.5, P.damage_type)
-			visible_message("<span class='danger'>The [P.name] is reflected by [src]'s armored shell!</span>", \
+			visible_message(SPAN_DANGER("The [P.name] is reflected by [src]'s armored shell!"), \
 							"<span class='userdanger'>The [P.name] is reflected by your armored shell!</span>")
 
 			// Find a turf near or on the original location to bounce to
@@ -363,7 +363,7 @@
 			if(undismembermerable_limbs) //they have limbs we can't remove, and no parts we can, attack!
 				return ..()
 			C.DefaultCombatKnockdown(60)
-			visible_message("<span class='danger'>[src] knocks [C] down!</span>")
+			visible_message(SPAN_DANGER("[src] knocks [C] down!"))
 			to_chat(src, "<span class='cultlarge'>\"Bring [C.p_them()] to me.\"</span>")
 			return FALSE
 		do_attack_animation(C)

@@ -50,7 +50,7 @@
 
 /obj/item/wirecutters/attack(mob/living/carbon/C, mob/user)
 	if(istype(C) && C.handcuffed && istype(C.handcuffed, /obj/item/restraints/handcuffs/cable))
-		user.visible_message("<span class='notice'>[user] cuts [C]'s restraints with [src]!</span>")
+		user.visible_message(SPAN_NOTICE("[user] cuts [C]'s restraints with [src]!"))
 		qdel(C.handcuffed)
 		return
 	else
@@ -118,23 +118,23 @@
 	playsound(get_turf(user), 'sound/items/change_jaws.ogg', 50, 1)
 	var/obj/item/crowbar/power/pryjaws = new /obj/item/crowbar/power(drop_location())
 	pryjaws.name = name
-	to_chat(user, "<span class='notice'>You attach the pry jaws to [src].</span>")
+	to_chat(user, SPAN_NOTICE("You attach the pry jaws to [src]."))
 	qdel(src)
 	user.put_in_active_hand(pryjaws)
 
 /obj/item/wirecutters/power/attack(mob/living/carbon/C, mob/user)
 	if(istype(C))
 		if(C.handcuffed)
-			user.visible_message("<span class='notice'>[user] cuts [C]'s restraints with [src]!</span>")
+			user.visible_message(SPAN_NOTICE("[user] cuts [C]'s restraints with [src]!"))
 			qdel(C.handcuffed)
 			return
 		else if(C.has_status_effect(STATUS_EFFECT_CHOKINGSTRAND))
 			var/man = C == user ? "your" : "[C]'\s"
-			user.visible_message("<span class='notice'>[user] attempts to remove the durathread strand from around [man] neck.</span>", \
-								"<span class='notice'>You attempt to remove the durathread strand from around [man] neck.</span>")
+			user.visible_message(SPAN_NOTICE("[user] attempts to remove the durathread strand from around [man] neck."), \
+								SPAN_NOTICE("You attempt to remove the durathread strand from around [man] neck."))
 			if(do_after(user, 15, null, C))
-				user.visible_message("<span class='notice'>[user] succesfuly removes the durathread strand.</span>",
-									"<span class='notice'>You succesfuly remove the durathread strand.</span>")
+				user.visible_message(SPAN_NOTICE("[user] succesfuly removes the durathread strand."),
+									SPAN_NOTICE("You succesfuly remove the durathread strand."))
 				C.remove_status_effect(STATUS_EFFECT_CHOKINGSTRAND)
 			return
 	..()

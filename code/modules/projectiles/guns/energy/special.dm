@@ -142,17 +142,17 @@
 /obj/item/gun/energy/plasmacutter/examine(mob/user)
 	. = ..()
 	if(cell)
-		. += "<span class='notice'>[src] is [round(cell.percent())]% charged.</span>"
+		. += SPAN_NOTICE("[src] is [round(cell.percent())]% charged.")
 
 /obj/item/gun/energy/plasmacutter/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack/sheet/mineral/plasma))
 		I.use(1)
 		cell.give(1000)
-		to_chat(user, "<span class='notice'>You insert [I] in [src], recharging it.</span>")
+		to_chat(user, SPAN_NOTICE("You insert [I] in [src], recharging it."))
 	else if(istype(I, /obj/item/stack/ore/plasma))
 		I.use(1)
 		cell.give(500)
-		to_chat(user, "<span class='notice'>You insert [I] in [src], recharging it.</span>")
+		to_chat(user, SPAN_NOTICE("You insert [I] in [src], recharging it."))
 	else
 		..()
 
@@ -161,7 +161,7 @@
 	if(!QDELETED(cell) && (cell.charge >= amount * 100))
 		return TRUE
 
-	to_chat(user, "<span class='warning'>You need more charge to complete this task!</span>")
+	to_chat(user, SPAN_WARNING("You need more charge to complete this task!"))
 	return FALSE
 
 /obj/item/gun/energy/plasmacutter/use(amount)
@@ -174,8 +174,8 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/adv)
 
 /obj/item/gun/energy/wormhole_projector
-	name = "bluespace wormhole projector"
-	desc = "A projector that emits high density quantum-coupled bluespace beams."
+	name = "quantum wormhole projector"
+	desc = "A projector that emits high density quantum-coupled beams."
 	ammo_type = list(/obj/item/ammo_casing/energy/wormhole, /obj/item/ammo_casing/energy/wormhole/orange)
 	item_state = null
 	icon_state = "wormhole_projector"
@@ -299,7 +299,7 @@
 	return
 
 /obj/item/gun/energy/gravity_gun
-	name = "one-point bluespace-gravitational manipulator"
+	name = "one-point quantum-gravitational manipulator"
 	desc = "An experimental, multi-mode device that fires bolts of Zero-Point Energy, causing local distortions in gravity."
 	ammo_type = list(/obj/item/ammo_casing/energy/gravity/repulse, /obj/item/ammo_casing/energy/gravity/attract, /obj/item/ammo_casing/energy/gravity/chaos)
 	item_state = "gravity_gun"

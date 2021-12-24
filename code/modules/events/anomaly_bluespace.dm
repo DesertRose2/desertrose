@@ -1,5 +1,5 @@
 /datum/round_event_control/anomaly/anomaly_bluespace
-	name = "Anomaly: Bluespace"
+	name = "Anomaly: Quantum"
 	typepath = /datum/round_event/anomaly/anomaly_bluespace
 
 	max_occurrences = 1
@@ -12,6 +12,6 @@
 
 /datum/round_event/anomaly/anomaly_bluespace/announce(fake)
 	if(prob(90))
-		priority_announce("Unstable bluespace anomaly detected on long range scanners. Expected location: [impact_area.name].", "Anomaly Alert")
+		priority_announce("Unstable quantum anomaly detected on long range scanners. Expected location: [impact_area.name].", "Anomaly Alert")
 	else
-		print_command_report("Unstable bluespace anomaly detected on long range scanners. Expected location: [impact_area.name].", "Unstable bluespace anomaly")
+		print_command_report("Unstable quantum anomaly detected on long range scanners. Expected location: [impact_area.name].", "Unstable quantum anomaly")

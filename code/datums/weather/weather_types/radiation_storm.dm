@@ -4,7 +4,7 @@
 	desc = "A cloud of intense radiation passes through the area dealing radiation damage to those who are unprotected."
 	probability = 0
 	telegraph_duration = 400
-	telegraph_message = "<span class='danger'>The air begins to feel heavy.</span>"
+	telegraph_message = SPAN_DANGER("The air begins to feel heavy.")
 
 	weather_message = "<span class='userdanger'><i>You feel waves of irritation wash over you! Find shelter!</i></span>"
 	weather_overlay = "ash_storm"
@@ -14,7 +14,7 @@
 	weather_sound = 'sound/misc/bloblarm.ogg'
 
 	end_duration = 100
-	end_message = "<span class='notice'>The air seems to be cooling off again.</span>"
+	end_message = SPAN_NOTICE("The air seems to be cooling off again.")
 
 	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,

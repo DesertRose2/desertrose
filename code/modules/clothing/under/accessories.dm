@@ -75,9 +75,9 @@
 
 /obj/item/clothing/accessory/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>\The [src] can be attached to a uniform. Alt-click to remove it once attached.</span>"
+	. += SPAN_NOTICE("\The [src] can be attached to a uniform. Alt-click to remove it once attached.")
 	if(initial(above_suit))
-		. += "<span class='notice'>\The [src] can be worn above or below your suit. Alt-click to toggle.</span>"
+		. += SPAN_NOTICE("\The [src] can be worn above or below your suit. Alt-click to toggle.")
 
 /obj/item/clothing/accessory/waistcoat
 	name = "waistcoat"
@@ -124,7 +124,7 @@
 
 		if(M.wear_suit)
 			if((M.wear_suit.flags_inv & HIDEJUMPSUIT)) //Check if the jumpsuit is covered
-				to_chat(user, "<span class='warning'>Medals can only be pinned on jumpsuits.</span>")
+				to_chat(user, SPAN_WARNING("Medals can only be pinned on jumpsuits."))
 				return
 
 		if(M.w_uniform)
@@ -134,17 +134,17 @@
 				delay = 0
 			else
 				user.visible_message("[user] is trying to pin [src] on [M]'s chest.", \
-									"<span class='notice'>You try to pin [src] on [M]'s chest.</span>")
+									SPAN_NOTICE("You try to pin [src] on [M]'s chest."))
 			var/input
 			if(!commended && user != M)
-				input = stripped_input(user,"Please input a reason for this commendation, it will be recorded by Nanotrasen.", ,"", 140)
+				input = stripped_input(user,"Please input a reason for this commendation. It will be publicly announced at the end of the round.", ,"", 140)
 			if(do_after(user, delay, target = M))
 				if(U.attach_accessory(src, user, 0)) //Attach it, do not notify the user of the attachment
 					if(user == M)
-						to_chat(user, "<span class='notice'>You attach [src] to [U].</span>")
+						to_chat(user, SPAN_NOTICE("You attach [src] to [U]."))
 					else
 						user.visible_message("[user] pins \the [src] on [M]'s chest.", \
-											"<span class='notice'>You pin \the [src] on [M]'s chest.</span>")
+											SPAN_NOTICE("You pin \the [src] on [M]'s chest."))
 						if(input)
 							SSblackbox.record_feedback("associative", "commendation", 1, list("commender" = "[user.real_name]", "commendee" = "[M.real_name]", "medal" = "[src]", "reason" = input))
 							GLOB.commendations += "[user.real_name] awarded <b>[M.real_name]</b> the <span class='medaltext'>[name]</span>! \n- [input]"
@@ -154,13 +154,13 @@
 							message_admins("<b>[key_name(M)]</b> was given the following commendation by <b>[key_name(user)]</b>: [input]")
 
 		else
-			to_chat(user, "<span class='warning'>Medals can only be pinned on jumpsuits!</span>")
+			to_chat(user, SPAN_WARNING("Medals can only be pinned on jumpsuits!"))
 	else
 		..()
 
 /obj/item/clothing/accessory/medal/conduct
 	name = "distinguished conduct medal"
-	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by Nanotrasen. It is often awarded by a captain to a member of his crew."
+	desc = "A bronze medal awarded for distinguished conduct, and not much else."
 
 /obj/item/clothing/accessory/medal/bronze_heart
 	name = "bronze heart medal"
@@ -174,12 +174,12 @@
 
 /obj/item/clothing/accessory/medal/greytide
 	name = "\"Greytider of the shift\" award"
-	desc = "An award for only the most annoying of assistants.  Locked doors mean nothing to you and behaving is not in your vocabulary"
+	desc = "An award for only the most annoying of assistants. Locked doors mean nothing to you and behaving is not in your vocabulary"
 	icon_state = "greytide"
 
 /obj/item/clothing/accessory/medal/ribbon
 	name = "ribbon"
-	desc = "A ribbon"
+	desc = "A ribbon."
 	icon_state = "cargo"
 
 /obj/item/clothing/accessory/medal/ribbon/cargo
@@ -188,7 +188,7 @@
 
 /obj/item/clothing/accessory/medal/ribbon/medical_doctor
 	name = "\"doctor of the shift\" award"
-	desc = "An award bestowed only upon the most capable doctors who have upheld the Hippocratic Oath to the best of their ability"
+	desc = "An award bestowed only upon the most capable doctors who have upheld the Hippocratic Oath to the best of their ability."
 	icon_state = "medical_doctor"
 
 /obj/item/clothing/accessory/medal/silver
@@ -204,7 +204,7 @@
 
 /obj/item/clothing/accessory/medal/silver/security
 	name = "robust security award"
-	desc = "An award for distinguished combat and sacrifice in defence of Nanotrasen's commercial interests. Often awarded to security staff."
+	desc = "An award for distinguished combat and sacrifice in defense of a Vault. Often awarded to security staff."
 
 /obj/item/clothing/accessory/medal/gold
 	name = "gold medal"
@@ -214,12 +214,12 @@
 	custom_materials = list(/datum/material/gold=1000)
 
 /obj/item/clothing/accessory/medal/gold/captain
-	name = "medal of captaincy"
-	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain to Nanotrasen, and their undisputable authority over their crew."
+	name = "Vault overseer's medal"
+	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a Vault overseer, and their undisputable authority over the Vault's denizens."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/accessory/medal/gold/captain/family
-	name = "old medal of captaincy"
+	name = "old Vault overseer's medal"
 	desc = "A rustic badge pure gold, has been through hell and back by the looks, the syndcate have been after these by the looks of it for generations..."
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10) //Pure gold
 	custom_materials = list(/datum/material/gold=2000)
@@ -239,7 +239,7 @@
 /obj/item/clothing/accessory/medal/plasma/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	if(exposed_temperature > 300)
 		atmos_spawn_air("plasma=20;TEMP=[exposed_temperature]")
-		visible_message("<span class='danger'> \The [src] bursts into flame!</span>","<span class='userdanger'>Your [src] bursts into flame!</span>")
+		visible_message(SPAN_DANGER(" \The [src] bursts into flame!"),"<span class='userdanger'>Your [src] bursts into flame!</span>")
 		qdel(src)
 
 /obj/item/clothing/accessory/medal/plasma/nobel_science
@@ -307,7 +307,7 @@
 /obj/item/clothing/accessory/lawyers_badge/attack_self(mob/user)
 	if(prob(1))
 		user.say("The testimony contradicts the evidence!", forced = "attorney's badge")
-	user.visible_message("[user] shows [user.p_their()] attorney's badge.", "<span class='notice'>You show your attorney's badge.</span>")
+	user.visible_message("[user] shows [user.p_their()] attorney's badge.", SPAN_NOTICE("You show your attorney's badge."))
 
 /obj/item/clothing/accessory/lawyers_badge/on_uniform_equip(obj/item/clothing/under/U, user)
 	var/mob/living/L = user

@@ -60,11 +60,11 @@
 		var/pre_msg
 		var/post_msg
 		if(user == from)
-			pre_msg = "<span class='notice'>[L] is getting out of the pool.</span>"
-			post_msg = "<span class='notice'>[L] gets out of the pool.</span>"
+			pre_msg = SPAN_NOTICE("[L] is getting out of the pool.")
+			post_msg = SPAN_NOTICE("[L] gets out of the pool.")
 		else
-			pre_msg = "<span class='notice'>[L] is being pulled out of the pool by [user].</span>"
-			post_msg = "<span class='notice'>[user] pulls [L] out of the pool.</span>"
+			pre_msg = SPAN_NOTICE("[L] is being pulled out of the pool by [user].")
+			post_msg = SPAN_NOTICE("[user] pulls [L] out of the pool.")
 		L.visible_message(pre_msg)
 		if(do_mob(user, L, 20))
 			L.visible_message(post_msg)
@@ -118,7 +118,7 @@
 				var/mob/living/carbon/H = victim
 				if(filled)
 					if (H.wear_mask && H.wear_mask.flags_cover & MASKCOVERSMOUTH)
-						H.visible_message("<span class='danger'>[H] falls in the water!</span>",
+						H.visible_message(SPAN_DANGER("[H] falls in the water!"),
 											"<span class='userdanger'>You fall in the water!</span>")
 						playsound(src, 'sound/effects/splash.ogg', 60, TRUE, 1)
 						H.DefaultCombatKnockdown(20)
@@ -127,25 +127,25 @@
 						H.DefaultCombatKnockdown(60)
 						H.adjustOxyLoss(5)
 						H.emote("cough")
-						H.visible_message("<span class='danger'>[H] falls in and takes a drink!</span>",
+						H.visible_message(SPAN_DANGER("[H] falls in and takes a drink!"),
 											"<span class='userdanger'>You fall in and swallow some water!</span>")
 						playsound(src, 'sound/effects/splash.ogg', 60, TRUE, 1)
 				else if(!H.head || !(H.head.armor.getRating("melee") > 20))
 					if(prob(75))
-						H.visible_message("<span class='danger'>[H] falls in the drained pool!</span>",
+						H.visible_message(SPAN_DANGER("[H] falls in the drained pool!"),
 													"<span class='userdanger'>You fall in the drained pool!</span>")
 						H.adjustBruteLoss(7)
 						H.DefaultCombatKnockdown(80)
 						playsound(src, 'sound/effects/woodhit.ogg', 60, TRUE, 1)
 					else
-						H.visible_message("<span class='danger'>[H] falls in the drained pool, and cracks his skull!</span>",
+						H.visible_message(SPAN_DANGER("[H] falls in the drained pool, and cracks his skull!"),
 													"<span class='userdanger'>You fall in the drained pool, and crack your skull!</span>")
 						H.apply_damage(15, BRUTE, "head")
 						H.DefaultCombatKnockdown(200) // This should hurt. And it does.
 						playsound(src, 'sound/effects/woodhit.ogg', 60, TRUE, 1)
 						playsound(src, 'sound/misc/crack.ogg', 100, TRUE)
 				else
-					H.visible_message("<span class='danger'>[H] falls in the drained pool, but had an helmet!</span>",
+					H.visible_message(SPAN_DANGER("[H] falls in the drained pool, but had an helmet!"),
 										"<span class='userdanger'>You fall in the drained pool, but you had an helmet!</span>")
 					H.DefaultCombatKnockdown(40)
 					playsound(src, 'sound/effects/woodhit.ogg', 60, TRUE, 1)
@@ -163,16 +163,16 @@
 		return
 	var/victimname = victim == user? "themselves" : "[victim]"
 	var/starttext = victim == user? "[user] is descending into [src]." : "[user] is lowering [victim] into [src]."
-	user.visible_message("<span class='notice'>[starttext]</span>")
+	user.visible_message(SPAN_NOTICE("[starttext]"))
 	if(do_mob(user, victim, 20))
-		user.visible_message("<span class='notice'>[user] lowers [victimname] into [src].</span>")
+		user.visible_message(SPAN_NOTICE("[user] lowers [victimname] into [src]."))
 		victim.AddElement(/datum/element/swimming)		//make sure they have it so they don't fall/whatever
 		victim.forceMove(src)
 
 /turf/open/pool/attackby(obj/item/W, mob/living/user)
 	if(istype(W, /obj/item/mop) && filled)
 		W.reagents.add_reagent(/datum/reagent/water, 5)
-		to_chat(user, "<span class='notice'>You wet [W] in [src].</span>")
+		to_chat(user, SPAN_NOTICE("You wet [W] in [src]."))
 		playsound(src, 'sound/effects/slosh.ogg', 25, TRUE)
 	else
 		return ..()

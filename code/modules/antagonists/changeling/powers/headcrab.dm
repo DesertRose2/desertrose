@@ -42,4 +42,4 @@
 	if(crab.origin)
 		crab.origin.active = 1
 		crab.origin.transfer_to(crab)
-		to_chat(crab, "<span class='warning'>You burst out of the remains of your former body in a shower of gore!</span>")
+		to_chat(crab, SPAN_WARNING("You burst out of the remains of your former body in a shower of gore!"))

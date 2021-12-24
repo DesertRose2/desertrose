@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/asteroid/ice_demon
 	name = "demonic watcher"
-	desc = "A creature formed entirely out of ice, bluespace energy emanates from inside of it."
+	desc = "A creature formed entirely out of ice, quantum energy emanates from inside of it."
 	icon = 'icons/mob/icemoon/icemoon_monsters.dmi'
 	icon_state = "ice_demon"
 	icon_living = "ice_demon"

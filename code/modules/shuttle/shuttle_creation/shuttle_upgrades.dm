@@ -13,8 +13,8 @@
 	var/upgrade_amount = 0.8
 
 /obj/item/shuttle_route_optimisation/hyperlane
-	name = "Bluespace Hyperlane Calculator"
-	desc = "Used on a custom shuttle control console to allow for the following of bluespace hyperlanes, increasing the efficiency of the shuttle."
+	name = "Quantum Hyperlane Calculator"
+	desc = "Used on a custom shuttle control console to allow for the following of quantum hyperlanes, increasing the efficiency of the shuttle."
 	icon_state = "shuttledisk_better"
 	upgrade_amount = 0.6
 
@@ -29,11 +29,11 @@
 	if(!istype(O, /obj/machinery/computer))
 		return
 	if(!istype(O, /obj/machinery/computer/custom_shuttle))
-		to_chat(user, "<span class='warning'>This upgrade only works on a custom shuttle flight console.</span>")
+		to_chat(user, SPAN_WARNING("This upgrade only works on a custom shuttle flight console."))
 		return
 	if (!user.transferItemToLoc(src, get_turf(O)))
 		return
 	var/obj/machinery/computer/custom_shuttle/link_comp = O
 	link_comp.distance_multiplier = clamp(link_comp.distance_multiplier, 0, upgrade_amount)
 	playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, 0)
-	to_chat(usr, "<span class='notice'>You insert the disk into the flight computer, allowing for routes to be [upgrade_amount]x the original distance.</span>")
+	to_chat(usr, SPAN_NOTICE("You insert the disk into the flight computer, allowing for routes to be [upgrade_amount]x the original distance."))

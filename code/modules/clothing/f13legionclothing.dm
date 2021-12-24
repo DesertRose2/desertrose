@@ -18,7 +18,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion
 	name = "legion helmet"
-	desc = "Unadorned legion helmet"
+	desc = "An unadorned legion helmet."
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	lefthand_file = ""
@@ -116,7 +116,7 @@
 
 /obj/item/clothing/head/helmet/f13/legion/libritor
 	name = "legion libritor helmet"
-	desc = "(VII) A metal legion veteran helmet with an inverted color scheme for libritors"
+	desc = "(VII) A metal legion veteran helmet with an inverted color scheme for libritors."
 	icon_state = "legheavy"
 	armor = list("tier" = 7, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
@@ -201,7 +201,7 @@
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
-	name = "Champion of Kanab's Helm"
+	name = "Champion of Kanab's helm"
 	desc = "(VII) A custom forged steel full helmet made for the Conqueror and Champion of Kanab. It has a large plume of red horse hair across the top of it going horizontally, symbolizing the position of a Centurion."
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"
@@ -380,7 +380,7 @@
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
-	name = "Champion of Kanab's Armor"
+	name = "Champion of Kanab's armor"
 	desc = "(VII) The armor of the Champion and Conqueror of the city in Utah named Kanab. The armor is made up of pieces of Power Armor and pre-war Riot Gear, the shin guards are spraypainted a dark crimson and the Power Armour pauldron has a red trim. The symbol of a Pheonix is carefully engraved and painted upon the chest piece... I wonder what it means.."
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"
@@ -507,7 +507,7 @@
 
 /obj/item/clothing/mask/bandana/legprime
 	name = "prime bandana"
-	desc = "A fine prime bandana"
+	desc = "A fine prime bandana."
 	icon_state = "legdecan"
 	flags_inv = HIDEFACE
 	visor_flags_inv = HIDEFACE
@@ -543,7 +543,7 @@
 
 /obj/item/clothing/mask/bandana/legprime/decan
 	name = "prime decanus bandana"
-	desc = "A fine prime decanus bandana"
+	desc = "A fine prime decanus bandana."
 	icon_state = "legdecan"
 	flags_inv = HIDEFACE
 	visor_flags_inv = HIDEFACE

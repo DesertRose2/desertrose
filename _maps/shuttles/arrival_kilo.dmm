@@ -19,7 +19,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/arrival)
 "e" = (
-/obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/arrival)
 "f" = (

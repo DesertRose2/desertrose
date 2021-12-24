@@ -17,7 +17,7 @@
 	time = 16
 
 /datum/surgery_step/extract_core/preop(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
-	display_results(user, target, "<span class='notice'>You begin to extract a core from [target]...</span>",
+	display_results(user, target, SPAN_NOTICE("You begin to extract a core from [target]..."),
 		"[user] begins to extract a core from [target].",
 		"[user] begins to extract a core from [target].")
 
@@ -25,7 +25,7 @@
 	var/mob/living/simple_animal/slime/slime = target
 	if(slime.cores > 0)
 		slime.cores--
-		display_results(user, target, "<span class='notice'>You successfully extract a core from [target]. [slime.cores] core\s remaining.</span>",
+		display_results(user, target, SPAN_NOTICE("You successfully extract a core from [target]. [slime.cores] core\s remaining."),
 			"[user] successfully extracts a core from [target]!",
 			"[user] successfully extracts a core from [target]!")
 
@@ -37,5 +37,5 @@
 		else
 			return 0
 	else
-		to_chat(user, "<span class='warning'>There aren't any cores left in [target]!</span>")
+		to_chat(user, SPAN_WARNING("There aren't any cores left in [target]!"))
 		return 1

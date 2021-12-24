@@ -38,10 +38,10 @@
 	if(!SSticker.HasRoundStarted() || !loc || !ghost_usable)
 		return
 	if(!uses)
-		to_chat(user, "<span class='warning'>This spawner is out of charges!</span>")
+		to_chat(user, SPAN_WARNING("This spawner is out of charges!"))
 		return
 	if(jobban_isbanned(user, banType))
-		to_chat(user, "<span class='warning'>You are jobanned!</span>")
+		to_chat(user, SPAN_WARNING("You are jobanned!"))
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
@@ -509,7 +509,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
-	head = /obj/item/clothing/head/helmet/swat/nanotrasen
+	head = /obj/item/clothing/head/helmet/swat
 	back = /obj/item/storage/backpack/security
 	id = /obj/item/card/id
 
@@ -598,7 +598,7 @@
 	var/despawn = alert("Return to cryosleep? (Warning, Your mob will be deleted!)",,"Yes","No")
 	if(despawn == "No" || !loc || !Adjacent(user))
 		return
-	user.visible_message("<span class='notice'>[user.name] climbs back into cryosleep...</span>")
+	user.visible_message(SPAN_NOTICE("[user.name] climbs back into cryosleep..."))
 	qdel(user)
 
 /datum/outfit/cryobartender

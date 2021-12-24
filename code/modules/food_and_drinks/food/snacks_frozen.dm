@@ -53,7 +53,7 @@
 /obj/item/reagent_containers/food/snacks/charrie_float
 	name = "Cherry Shake"
 	trash = /obj/item/reagent_containers/food/drinks/drinkingglass
-	desc = "Cherries mixed with ice-cream, known for its filling tastes"
+	desc = "Cherries mixed with ice-cream, known for its filling tastes."
 	icon_state = "cherryshake"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cherryshake = 15)

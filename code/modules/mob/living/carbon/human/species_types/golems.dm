@@ -105,7 +105,7 @@
 			boom_warning = TRUE
 	else
 		if(boom_warning)
-			to_chat(H, "<span class='notice'>You feel more stable.</span>")
+			to_chat(H, SPAN_NOTICE("You feel more stable."))
 			boom_warning = FALSE
 
 	if(H.bodytemperature > 850 && H.on_fire && prob(25))
@@ -137,9 +137,9 @@
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		if(H.fire_stacks)
-			to_chat(owner, "<span class='notice'>You ignite yourself!</span>")
+			to_chat(owner, SPAN_NOTICE("You ignite yourself!"))
 		else
-			to_chat(owner, "<span class='warning'>You try to ignite yourself, but fail!</span>")
+			to_chat(owner, SPAN_WARNING("You try to ignite yourself, but fail!"))
 		H.IgniteMob() //firestacks are already there passively
 
 //Harder to hurt
@@ -338,7 +338,7 @@
 	special_names = list("Castle", "Bag", "Dune", "Worm", "Storm")
 
 /datum/species/golem/sand/spec_death(gibbed, mob/living/carbon/human/H)
-	H.visible_message("<span class='danger'>[H] turns into a pile of sand!</span>")
+	H.visible_message(SPAN_DANGER("[H] turns into a pile of sand!"))
 	for(var/obj/item/W in H)
 		H.dropItemToGround(W)
 	for(var/i=1, i <= rand(3,5), i++)
@@ -349,7 +349,7 @@
 	if(!(P.original == H && P.firer == H))
 		if(P.flag == "bullet" || P.flag == "bomb")
 			playsound(H, 'sound/effects/shovel_dig.ogg', 70, 1)
-			H.visible_message("<span class='danger'>The [P.name] sinks harmlessly in [H]'s sandy body!</span>", \
+			H.visible_message(SPAN_DANGER("The [P.name] sinks harmlessly in [H]'s sandy body!"), \
 			"<span class='userdanger'>The [P.name] sinks harmlessly in [H]'s sandy body!</span>")
 			return BULLET_ACT_BLOCK
 	return ..()
@@ -370,7 +370,7 @@
 
 /datum/species/golem/glass/spec_death(gibbed, mob/living/carbon/human/H)
 	playsound(H, "shatter", 70, 1)
-	H.visible_message("<span class='danger'>[H] shatters!</span>")
+	H.visible_message(SPAN_DANGER("[H] shatters!"))
 	for(var/obj/item/W in H)
 		H.dropItemToGround(W)
 	for(var/i=1, i <= rand(3,5), i++)
@@ -380,7 +380,7 @@
 /datum/species/golem/glass/bullet_act(obj/item/projectile/P, mob/living/carbon/human/H)
 	if(!(P.original == H && P.firer == H)) //self-shots don't reflect
 		if(P.flag == "laser" || P.flag == "energy")
-			H.visible_message("<span class='danger'>The [P.name] gets reflected by [H]'s glass skin!</span>", \
+			H.visible_message(SPAN_DANGER("The [P.name] gets reflected by [H]'s glass skin!"), \
 			"<span class='userdanger'>The [P.name] gets reflected by [H]'s glass skin!</span>")
 			if(P.starting)
 				var/new_x = P.starting.x + pick(0, 0, 0, 0, 0, -1, 1, -2, 2)
@@ -393,7 +393,7 @@
 
 //Teleports when hit or when it wants to
 /datum/species/golem/bluespace
-	name = "Bluespace Golem"
+	name = "Quantum Golem"
 	id = "bluespace golem"
 	fixed_mut_color = "33f"
 	meat = /obj/item/stack/ore/bluespace_crystal
@@ -408,7 +408,7 @@
 	var/last_teleport = 0
 
 /datum/species/golem/bluespace/proc/reactive_teleport(mob/living/carbon/human/H)
-	H.visible_message("<span class='warning'>[H] teleports!</span>", "<span class='danger'>You destabilize and teleport!</span>")
+	H.visible_message(SPAN_WARNING("[H] teleports!"), SPAN_DANGER("You destabilize and teleport!"))
 	new /obj/effect/particle_effect/sparks(get_turf(H))
 	playsound(get_turf(H), "sparks", 50, 1)
 	do_teleport(H, get_turf(H), 6, asoundin = 'sound/weapons/emitter2.ogg', channel = TELEPORT_CHANNEL_BLUESPACE)
@@ -467,12 +467,12 @@
 
 /datum/action/innate/unstable_teleport/Activate()
 	var/mob/living/carbon/human/H = owner
-	H.visible_message("<span class='warning'>[H] starts vibrating!</span>", "<span class='danger'>You start charging your bluespace core...</span>")
+	H.visible_message(SPAN_WARNING("[H] starts vibrating!"), SPAN_DANGER("You start charging your bluespace core..."))
 	playsound(get_turf(H), 'sound/weapons/flash.ogg', 25, 1)
 	addtimer(CALLBACK(src, .proc/teleport, H), 15)
 
 /datum/action/innate/unstable_teleport/proc/teleport(mob/living/carbon/human/H)
-	H.visible_message("<span class='warning'>[H] disappears in a shower of sparks!</span>", "<span class='danger'>You teleport!</span>")
+	H.visible_message(SPAN_WARNING("[H] disappears in a shower of sparks!"), SPAN_DANGER("You teleport!"))
 	var/datum/effect_system/spark_spread/spark_system = new /datum/effect_system/spark_spread
 	spark_system.set_up(10, 0, src)
 	spark_system.attach(H)
@@ -658,7 +658,7 @@
 	. = ..()
 	if(!has_corpse)
 		var/turf/T = get_turf(H)
-		H.visible_message("<span class='warning'>[H]'s exoskeleton shatters, collapsing into a heap of scrap!</span>")
+		H.visible_message(SPAN_WARNING("[H]'s exoskeleton shatters, collapsing into a heap of scrap!"))
 		playsound(H, 'sound/magic/clockwork/anima_fragment_death.ogg', 62, TRUE)
 		for(var/i in 1 to rand(3, 5))
 			new/obj/item/clockwork/alloy_shards/small(T)
@@ -723,11 +723,11 @@
 	if(gibbed)
 		return
 	if(H.on_fire)
-		H.visible_message("<span class='danger'>[H] burns into ash!</span>")
+		H.visible_message(SPAN_DANGER("[H] burns into ash!"))
 		H.dust(just_ash = TRUE)
 		return
 
-	H.visible_message("<span class='danger'>[H] falls apart into a pile of bandages!</span>")
+	H.visible_message(SPAN_DANGER("[H] falls apart into a pile of bandages!"))
 	new /obj/structure/cloth_pile(get_turf(H), H)
 	..()
 
@@ -749,7 +749,7 @@
 		H.unequip_everything()
 		H.forceMove(src)
 		cloth_golem = H
-		to_chat(cloth_golem, "<span class='notice'>You start gathering your life energy, preparing to rise again...</span>")
+		to_chat(cloth_golem, SPAN_NOTICE("You start gathering your life energy, preparing to rise again..."))
 		addtimer(CALLBACK(src, .proc/revive), revive_time)
 	else
 		return INITIALIZE_HINT_QDEL
@@ -760,7 +760,7 @@
 	return ..()
 
 /obj/structure/cloth_pile/burn()
-	visible_message("<span class='danger'>[src] burns into ash!</span>")
+	visible_message(SPAN_DANGER("[src] burns into ash!"))
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
 	..()
 
@@ -777,7 +777,7 @@
 		cloth_golem.grab_ghost() //won't pull if it's a suicide
 	sleep(20)
 	cloth_golem.forceMove(get_turf(src))
-	cloth_golem.visible_message("<span class='danger'>[src] rises and reforms into [cloth_golem]!</span>","<span class='userdanger'>You reform into yourself!</span>")
+	cloth_golem.visible_message(SPAN_DANGER("[src] rises and reforms into [cloth_golem]!"),"<span class='userdanger'>You reform into yourself!</span>")
 	cloth_golem = null
 	qdel(src)
 
@@ -788,7 +788,7 @@
 		return
 
 	if(P.get_temperature())
-		visible_message("<span class='danger'>[src] bursts into flames!</span>")
+		visible_message(SPAN_DANGER("[src] bursts into flames!"))
 		fire_act()
 
 /datum/species/golem/plastic
@@ -873,7 +873,7 @@
 				M.jitteriness += 3
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "gonged", /datum/mood_event/loud_gong)
 			else
-				M.show_message("<span class='warning'>GONG!</span>", MSG_AUDIBLE)
+				M.show_message(SPAN_WARNING("GONG!"), MSG_AUDIBLE)
 				M.playsound_local(H, 'sound/effects/gong.ogg', 50, TRUE)
 
 
@@ -907,16 +907,16 @@
 		if(last_creation + brother_creation_cooldown > world.time) //no cheesing dork
 			return
 		if(C.amount < 10)
-			to_chat(H, "<span class='warning'>You do not have enough cardboard!</span>")
+			to_chat(H, SPAN_WARNING("You do not have enough cardboard!"))
 			return FALSE
-		to_chat(H, "<span class='notice'>You attempt to create a new cardboard brother.</span>")
+		to_chat(H, SPAN_NOTICE("You attempt to create a new cardboard brother."))
 		if(do_after(user, 30, target = user))
 			if(last_creation + brother_creation_cooldown > world.time) //no cheesing dork
 				return
 			if(!C.use(10))
-				to_chat(H, "<span class='warning'>You do not have enough cardboard!</span>")
+				to_chat(H, SPAN_WARNING("You do not have enough cardboard!"))
 				return FALSE
-			to_chat(H, "<span class='notice'>You create a new cardboard golem shell.</span>")
+			to_chat(H, SPAN_NOTICE("You create a new cardboard golem shell."))
 			create_brother(H.loc)
 
 /datum/species/golem/cardboard/proc/create_brother(location)
@@ -992,9 +992,9 @@
 
 /datum/action/innate/bonechill/Activate()
 	if(world.time < last_use + cooldown)
-		to_chat("<span class='notice'>You aren't ready yet to rattle your bones again</span>")
+		to_chat(SPAN_NOTICE("You aren't ready to rattle your bones again yet."))
 		return
-	owner.visible_message("<span class='warning'>[owner] rattles [owner.p_their()] bones harrowingly.</span>", "<span class='notice'>You rattle your bones</span>")
+	owner.visible_message(SPAN_WARNING("[owner] rattles [owner.p_their()] bones harrowingly."), SPAN_NOTICE("You rattle your bones!"))
 	last_use = world.time
 	if(prob(snas_chance))
 		playsound(get_turf(owner),'sound/magic/RATTLEMEBONES2.ogg', 100)

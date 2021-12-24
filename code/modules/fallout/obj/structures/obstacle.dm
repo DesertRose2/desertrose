@@ -98,7 +98,7 @@
 
 /obj/structure/junk/small/bench
 	name = "rotting planks"
-	desc = "Remains of small furniture"
+	desc = "The remains of what was once a wooden bench of some kind."
 	icon_state = "rubbish_bench"
 	slowdown = 6
 
@@ -111,106 +111,52 @@
 	density = 1
 	obj_integrity = 100
 	max_integrity = 100
-//	var/proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
-//	var/material = METAL
-/*
-/obj/structure/barricade/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
-		make_debris()
-	qdel(src)
-
-/obj/structure/barricade/proc/make_debris()
-	return
-
-/obj/structure/barricade/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/weapon/weldingtool) && user.a_intent != INTENT_HARM && material == METAL)
-		var/obj/item/weapon/weldingtool/WT = I
-		if(obj_integrity < max_integrity)
-			if(WT.remove_fuel(0,user))
-				to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
-				playsound(loc, WT.usesound, 40, 1)
-				if(do_after(user, 40*I.toolspeed, target = src))
-					obj_integrity = Clamp(obj_integrity + 20, 0, max_integrity)
-	else
-		return ..()
-
-/obj/structure/barricade/CanPass(go/mover, turf/target, height=0)//So bullets will fly over and stuff.
-	if(height==0)
-		return 1
-	if(locate(/obj/structure/barricade) in get_turf(mover))
-		return 1
-	else if(istype(mover, /obj/item/projectile))
-		if(!anchored)
-			return 1
-		var/obj/item/projectile/proj = mover
-		if(proj.firer && Adjacent(proj.firer))
-			return 1
-		if(prob(proj_pass_rate))
-			return 1
-		return 0
-	else
-		return !density
-*/
-
 
 /////BARRICADE TYPES///////
 
+// Main code in deployable.dm
 /obj/structure/barricade/wooden
-	name = "wooden barricade"
-	desc = "This space is blocked off by a wooden barricade."
 	icon = 'icons/obj/fence.dmi'
 	icon_state = "woodenbarricade"
-//	material = WOOD
+	var/can_build = TRUE
 
 /obj/structure/barricade/wooden/attackby(obj/item/weapon/I, mob/living/user, params)
-	if(!istype(src, /obj/structure/barricade/wooden/planks) && !istype(src, /obj/structure/barricade/wooden/crude) && istype(I, /obj/item/stack/sheet/))
-		if(isfloorturf(loc) || isplatingturf(loc))
-			var/obj/item/stack/sheet/mineral/wood/W = I
-			var/obj/item/stack/sheet/cloth/C = I
-			var/obj/item/stack/sheet/leather/L = I //???
-			var/obj/item/stack/sheet/glass/G = I
-			var/obj/item/stack/sheet/rglass/M = I
-			if(W.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a wall...</span>")
-				if(do_after(user, 100, target = src) && W.use(3))
-					var/turf/open/T = loc
-					T.ChangeTurf(/turf/closed/wall/f13/wood)
-					qdel(src)
-					return TRUE
-			if(C.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building an interior wall...</span>")
-				if(do_after(user, 100, target = src) && C.use(3))
-					var/turf/open/T = loc
-					T.ChangeTurf(/turf/closed/wall/f13/wood/interior)
-					qdel(src)
-					return TRUE
-			if(L.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a house wall...</span>")
-				if(do_after(user, 100, target = src) && L.use(3))
-					var/turf/open/T = loc
-					T.ChangeTurf(/turf/closed/wall/f13/wood/house)
-					qdel(src)
-					return TRUE
-			if(G.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a house window...</span>")
-				if(do_after(user, 100, target = src) && G.use(3))
-					var/turf/open/T = loc
-					new /obj/structure/window/fulltile/house(T)
-					qdel(src)
-					return TRUE
-			if(M.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a wood framed window...</span>")
-				if(do_after(user, 100, target = src) && M.use(3))
-					var/turf/open/T = loc
-					new /obj/structure/window/fulltile/wood(T)
-					qdel(src)
-					return TRUE
-			else
-				to_chat(user, "<span class='warning'>You need atleast 3 materials to build a structure!</span>")
-		else
-			to_chat(user, "<span class='warning'>You can only build the structure on a solid floor!</span>")
+	if(!istype(I, /obj/item/stack/sheet) || !can_build)
+		return ..()
+	if(!isfloorturf(loc) && !isplatingturf(loc))
+		to_chat(user, SPAN_WARNING("You can only build the structure on a solid floor!"))
+		return
+
+	var/walltype
+	var/windowtype
+	var/structname = "a wall"
+	if(istype(I, /obj/item/stack/sheet/mineral/wood))
+		walltype = /turf/closed/wall/f13/wood
+	else if(istype(I, /obj/item/stack/sheet/cloth))
+		walltype = /turf/closed/wall/f13/wood/interior
+		structname = "an interior wall"
+	else if(istype(I, /obj/item/stack/sheet/leather))
+		walltype = /turf/closed/wall/f13/wood/house
+		structname = "a house wall"
+	else if(istype(I, /obj/item/stack/sheet/glass))
+		windowtype = /obj/structure/window/fulltile/house
+		structname = "a house window"
+	else if(istype(I, /obj/item/stack/sheet/rglass))
+		windowtype = /obj/structure/window/fulltile/wood
+		structname = "a wood framed window"
 	else
 		return ..()
+	
+	to_chat(user, SPAN_NOTICE("You start building [structname]..."))
+	if(do_after(user, 100, target = src) && I.use(3))
+		var/turf/open/T = loc
+		if(walltype)
+			T.ChangeTurf(walltype)
+		else if(windowtype)
+			new windowtype(T)
+		qdel(src)
+	return TRUE
+	
 
 /obj/structure/barricade/wooden/strong
 	name = "strong wooden barricade"
@@ -218,6 +164,7 @@
 	obj_integrity = 300
 	max_integrity = 300
 	proj_pass_rate = 30
+	can_build = FALSE
 
 /obj/structure/barricade/bars //FighterX2500 is this you?
 	name = "metal bars"
