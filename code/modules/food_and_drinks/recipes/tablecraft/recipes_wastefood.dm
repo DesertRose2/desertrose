@@ -328,5 +328,6 @@
 		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2
 	)
 	result = /obj/item/reagent_containers/food/snacks/pie/f13/human_meatpie
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD
