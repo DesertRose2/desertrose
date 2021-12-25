@@ -50,7 +50,8 @@
 				/obj/item/reagent_containers/glass/bowl = 1,
 				/datum/reagent/water = 10
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/longpork_stew
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	result = /obj/item/reagent_containers/food/snacks/soup/f13/longpork_stew
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD
 
@@ -279,5 +280,53 @@
 		/obj/item/reagent_containers/food/snacks/butter = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/baked_nightstalker_tail
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_ribs
+	name = "Human Ribs"
+	reqs = list(
+		/datum/reagent/consumable/bbqsauce = 5,
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 3,
+		/obj/item/stack/rods = 2
+	)
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	result = /obj/item/reagent_containers/food/snacks/f13/human_ribs
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_burrito
+	name = "Longpork Burrito"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2,
+		/obj/item/reagent_containers/food/snacks/grown/chili = 2,
+		/obj/item/reagent_containers/food/snacks/tortilla = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/human_burrito
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/iguana_bits
+	name = "Iguana Bits"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2,
+		/obj/item/reagent_containers/food/snacks/grown/onion= 1,
+		/obj/item/stack/sheet/mineral/wood = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/iguana_bits
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_meatpie
+	name = "Longpork Meat pie"
+	reqs = list(
+		/datum/reagent/consumable/blackpepper = 1,
+		/datum/reagent/consumable/sodiumchloride = 1,
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/f13/human_meatpie
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD

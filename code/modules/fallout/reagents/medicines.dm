@@ -577,8 +577,8 @@
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
 
-/datum/reagent/medicine/longpork_stew
-	name = "longpork stew"
+/datum/reagent/medicine/longpork
+	name = "longpork"
 	description = "A dish sworn by some to have unusual healing properties. To most it just tastes disgusting. What even is longpork anyways?..."
 	reagent_state = LIQUID
 	color =  "#915818"
@@ -588,7 +588,7 @@
 	var/longpork_hurting = 0
 	var/longpork_lover_healing = -2
 
-/datum/reagent/medicine/longpork_stew/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/longpork/on_mob_life(mob/living/carbon/M)
 	var/is_longporklover = FALSE
 	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER))
 		is_longporklover = TRUE
@@ -602,7 +602,7 @@
 		. = TRUE
 		..()
 
-/datum/reagent/medicine/longpork_stew/overdose_process(mob/living/M)
+/datum/reagent/medicine/longpork/overdose_process(mob/living/M)
 	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
