@@ -233,7 +233,7 @@
 	for(var/antag_name in total_antagonists)
 		var/list/L = total_antagonists[antag_name]
 		log_game("[antag_name]s :[L.Join(", ")].")
-	set_observer_default_invisibility(0, "<span class='warning'>The round is over! You are now visible to the living.</span>")
+	set_observer_default_invisibility(0, SPAN_WARNING("The round is over! You are now visible to the living."))
 
 	CHECK_TICK
 	SSdbcore.SetRoundEnd()

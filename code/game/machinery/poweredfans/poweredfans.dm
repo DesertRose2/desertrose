@@ -27,8 +27,8 @@
 	qdel(src)
 
 /obj/machinery/poweredfans/wirecutter_act(mob/living/user, obj/item/I)
-	user.visible_message("<span class='warning'>[user] removes the wires from the [src].</span>",
-		"<span class='notice'>You start to remove the wires from the [src]...</span>", "You hear clanking and banging noises.")
+	user.visible_message(SPAN_WARNING("[user] removes the wires from the [src]."),
+		SPAN_NOTICE("You start to remove the wires from the [src]..."), "You hear clanking and banging noises.")
 	if(I.use_tool(src, user, 30, volume=50))
 		deconstruct()
 	return TRUE

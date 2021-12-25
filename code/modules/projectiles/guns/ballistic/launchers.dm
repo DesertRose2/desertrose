@@ -72,7 +72,7 @@
 /obj/item/gun/ballistic/automatic/speargun/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] spear\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] spear\s into \the [src]."))
 		update_icon()
 		chamber_round()
 
@@ -120,20 +120,20 @@
 		if(AC)
 			if(!user.put_in_hands(AC))
 				AC.bounce_away(FALSE, NONE)
-			to_chat(user, "<span class='notice'>You remove \the [AC] from \the [src]!</span>")
+			to_chat(user, SPAN_NOTICE("You remove \the [AC] from \the [src]!"))
 			playsound(src, 'sound/weapons/gun_magazine_remove_full.ogg', 70, TRUE)
 			chambered = null
 		else
-			to_chat(user, "<span class='notice'>There's no [magazine_wording] in [src].</span>")
+			to_chat(user, SPAN_NOTICE("There's no [magazine_wording] in [src]."))
 	update_icon()
 
 /obj/item/gun/ballistic/rocketlauncher/attackby(obj/item/A, mob/user, params)
 	if(magazine && istype(A, /obj/item/ammo_casing))
 		if(chambered)
-			to_chat(user, "<span class='notice'>[src] already has a [magazine_wording] chambered.</span>")
+			to_chat(user, SPAN_NOTICE("[src] already has a [magazine_wording] chambered."))
 			return
 		if(magazine.attackby(A, user, silent = TRUE))
-			to_chat(user, "<span class='notice'>You load a new [A] into \the [src].</span>")
+			to_chat(user, SPAN_NOTICE("You load a new [A] into \the [src]."))
 			playsound(src, "gun_insert_full_magazine", 70, 1)
 			chamber_round()
 			update_icon()
@@ -142,7 +142,7 @@
 	icon_state = "[initial(icon_state)]-[chambered ? "1" : "0"]"
 
 /obj/item/gun/ballistic/rocketlauncher/suicide_act(mob/living/user)
-	user.visible_message("<span class='warning'>[user] aims [src] at the ground! It looks like [user.p_theyre()] performing a sick rocket jump!</span>", \
+	user.visible_message(SPAN_WARNING("[user] aims [src] at the ground! It looks like [user.p_theyre()] performing a sick rocket jump!"), \
 		"<span class='userdanger'>You aim [src] at the ground to perform a bisnasty rocket jump...</span>")
 	if(can_shoot())
 		user.mob_transforming = TRUE
@@ -160,7 +160,7 @@
 		sleep(5)
 		shoot_with_empty_chamber(user)
 		sleep(20)
-		user.visible_message("<span class='warning'>[user] looks about the room realizing [user.p_theyre()] still there. [user.p_they(TRUE)] proceed to shove [src] down their throat and choke [user.p_them()]self with it!</span>", \
+		user.visible_message(SPAN_WARNING("[user] looks about the room realizing [user.p_theyre()] still there. [user.p_they(TRUE)] proceed to shove [src] down their throat and choke [user.p_them()]self with it!"), \
 			"<span class='userdanger'>You look around after realizing you're still here, then proceed to choke yourself to death with [src]!</span>")
 		sleep(20)
 		return OXYLOSS
@@ -191,7 +191,7 @@
 /obj/item/gun/ballistic/automatic/tribalbow/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] arrow\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] arrow\s into \the [src]."))
 		update_icon()
 		chamber_round()
 
@@ -223,7 +223,7 @@
 /obj/item/gun/ballistic/automatic/bonebow/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] arrow\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] arrow\s into \the [src]."))
 		update_icon()
 		chamber_round()
 
@@ -255,7 +255,7 @@
 /obj/item/gun/ballistic/automatic/sturdybow/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] arrow\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] arrow\s into \the [src]."))
 		update_icon()
 		chamber_round()
 
@@ -286,7 +286,7 @@
 /obj/item/gun/ballistic/automatic/silverbow/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] arrow\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] arrow\s into \the [src]."))
 		update_icon()
 		chamber_round()
 
@@ -322,6 +322,6 @@
 /obj/item/gun/ballistic/automatic/crossbow/attackby(obj/item/A, mob/user, params)
 	var/num_loaded = magazine.attackby(A, user, params, 1)
 	if(num_loaded)
-		to_chat(user, "<span class='notice'>You load [num_loaded] arrow\s into \the [src].</span>")
+		to_chat(user, SPAN_NOTICE("You load [num_loaded] arrow\s into \the [src]."))
 		update_icon()
 		chamber_round()

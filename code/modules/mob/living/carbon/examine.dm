@@ -9,7 +9,7 @@
 	. = list("<span class='info'>*---------*\nThis is [icon2html(src, user)] \a <EM>[src]</EM>!")
 
 	if (handcuffed)
-		. += "<span class='warning'>[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!</span>"
+		. += SPAN_WARNING("[t_He] [t_is] [icon2html(handcuffed, user)] handcuffed!")
 	if (head)
 		. += "[t_He] [t_is] wearing [head.get_examine_string(user)] on [t_his] head."
 	if (wear_mask)
@@ -125,7 +125,7 @@
 			msg += "<span class='notice'><b><i>[t_He] [t_is] just absolutely fucked up, you can look again to take a closer look...</i></b></span>\n"
 
 	if(msg.len)
-		. += "<span class='warning'>[msg.Join("")]</span>"
+		. += SPAN_WARNING("[msg.Join("")]")
 
 	if(!appears_dead)
 		if(stat == UNCONSCIOUS)
@@ -174,7 +174,7 @@
 	if(!visible_scars)
 		return ..()
 
-	var/msg = list("<span class='notice'><i>You examine [src] closer, and note the following...</i></span>")
+	var/msg = list(SPAN_NOTICE("<i>You examine [src] closer, and note the following...</i>"))
 	for(var/i in visible_scars)
 		var/datum/scar/S = i
 		var/scar_text = S.get_examine_description(user)

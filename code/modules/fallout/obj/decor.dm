@@ -30,7 +30,7 @@
 
 /obj/structure/decoration/clock/old
 	name = "\improper old clock"
-	desc = "An ancient instrument to indicate, keep, and co-ordinate time.<br>The clock was stopped by a distant nuclear blast on October 23, 2077 at 09:49 a.m."
+	desc = "An ancient instrument to indicate, keep, and co-ordinate time.<br>The clock was stopped by a distant nuclear blast on October 23, 2077 at 09:49 AM."
 	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "old_clock"
 

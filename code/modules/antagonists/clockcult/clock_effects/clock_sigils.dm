@@ -19,7 +19,7 @@
 	if(I.force)
 		if(is_servant_of_ratvar(user) && user.a_intent != INTENT_HARM)
 			return ..()
-		user.visible_message("<span class='warning'>[user] scatters [src] with [I]!</span>", "<span class='danger'>You scatter [src] with [I]!</span>")
+		user.visible_message(SPAN_WARNING("[user] scatters [src] with [I]!"), SPAN_DANGER("You scatter [src] with [I]!"))
 		qdel(src)
 		return 1
 	return ..()
@@ -31,13 +31,13 @@
 	if(iscarbon(user) && !user.stat)
 		if(is_servant_of_ratvar(user) && user.a_intent != INTENT_HARM)
 			return ..()
-		user.visible_message("<span class='warning'>[user] stamps out [src]!</span>", "<span class='danger'>You stomp on [src], scattering it into thousands of particles.</span>")
+		user.visible_message(SPAN_WARNING("[user] stamps out [src]!"), SPAN_DANGER("You stomp on [src], scattering it into thousands of particles."))
 		qdel(src)
 		return TRUE
 	. = ..()
 
 /obj/effect/clockwork/sigil/ex_act(severity)
-	visible_message("<span class='warning'>[src] scatters into thousands of particles.</span>")
+	visible_message(SPAN_WARNING("[src] scatters into thousands of particles."))
 	qdel(src)
 
 /obj/effect/clockwork/sigil/Crossed(atom/movable/AM)
@@ -49,7 +49,7 @@
 				var/atom/I = L.anti_magic_check(check_antimagic, check_holy)
 				if(I)
 					if(isitem(I))
-						L.visible_message("<span class='warning'>[L]'s [I.name] [resist_string], protecting [L.p_them()] from [src]'s effects!</span>", \
+						L.visible_message(SPAN_WARNING("[L]'s [I.name] [resist_string], protecting [L.p_them()] from [src]'s effects!"), \
 						"<span class='userdanger'>Your [I.name] [resist_string], protecting you!</span>")
 					return
 				sigil_effects(L)
@@ -85,7 +85,7 @@
 		L.IgniteMob()
 	else
 		L.Stun(40)
-	L.visible_message("<span class='warning'>[src] appears around [L] in a burst of light!</span>", \
+	L.visible_message(SPAN_WARNING("[src] appears around [L] in a burst of light!"), \
 	"<span class='userdanger'>[target_flashed ? "An unseen force":"The glowing sigil around you"] [iscultist(L) ? "painfully bursts into flames!" : "holds you in place!"]</span>")
 	L.apply_status_effect(STATUS_EFFECT_BELLIGERENT)
 	new /obj/effect/temp_visual/ratvar/sigil/transgression(get_turf(src))
@@ -121,9 +121,9 @@
 		if(is_servant_of_ratvar(M) && !M.stat)
 			has_servant = TRUE
 	if(!has_sigil && !has_servant)
-		visible_message("<span class='danger'>[src] strains into a gentle violet color, but quietly fades...</span>")
+		visible_message(SPAN_DANGER("[src] strains into a gentle violet color, but quietly fades..."))
 		return
-	L.visible_message("<span class='warning'>[src] begins to glow a piercing magenta!</span>", "<span class='sevtug'>You feel something start to invade your mind...</span>")
+	L.visible_message(SPAN_WARNING("[src] begins to glow a piercing magenta!"), "<span class='sevtug'>You feel something start to invade your mind...</span>")
 	var/oldcolor = color
 	animate(src, color = "#AF0AAF", time = convert_time, flags = ANIMATION_END_NOW)
 	var/obj/effect/temp_visual/ratvar/sigil/glow
@@ -138,7 +138,7 @@
 			qdel(glow)
 		animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
 		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
-		visible_message("<span class='warning'>[src] slowly stops glowing!</span>")
+		visible_message(SPAN_WARNING("[src] slowly stops glowing!"))
 		return
 	if(is_eligible_servant(L))
 		to_chat(L, "<span class='heavy_brass'>\"You belong to me now.\"</span>")
@@ -171,7 +171,7 @@
 				to_chat(M, "<span class='heavy_brass'>[message] [L.real_name]!</span>")
 	animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
 	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
-	visible_message("<span class='warning'>[src] slowly stops glowing!</span>")
+	visible_message(SPAN_WARNING("[src] slowly stops glowing!"))
 
 
 //Sigil of Transmission: Serves as an access point for powered structures.
@@ -194,7 +194,7 @@
 /obj/effect/clockwork/sigil/transmission/ex_act(severity)
 	if(severity == 3)
 		adjust_clockwork_power(500) //Light explosions charge the network!
-		visible_message("<span class='warning'>[src] flares a brilliant orange!</span>")
+		visible_message(SPAN_WARNING("[src] flares a brilliant orange!"))
 	else
 		..()
 
@@ -238,7 +238,7 @@
 		return
 	var/giving_power = min(FLOOR(cyborg.cell.maxcharge - cyborg.cell.charge, MIN_CLOCKCULT_POWER), get_clockwork_power()) //give the borg either all our power or their missing power floored to MIN_CLOCKCULT_POWER
 	if(adjust_clockwork_power(-giving_power))
-		cyborg.visible_message("<span class='warning'>[cyborg] glows a brilliant orange!</span>")
+		cyborg.visible_message(SPAN_WARNING("[cyborg] glows a brilliant orange!"))
 		var/previous_color = cyborg.color
 		cyborg.color = list("#EC8A2D", "#EC8A2D", "#EC8A2D", rgb(0,0,0))
 		cyborg.apply_status_effect(STATUS_EFFECT_POWERREGEN, giving_power * 0.1) //ten ticks, restoring 10% each
@@ -248,19 +248,19 @@
 /obj/effect/clockwork/sigil/transmission/proc/cyborg_checks(mob/living/silicon/robot/cyborg, silent)
 	if(!cyborg.cell)
 		if(!silent)
-			to_chat(cyborg, "<span class='warning'>You have no cell!</span>")
+			to_chat(cyborg, SPAN_WARNING("You have no cell!"))
 		return FALSE
 	if(!get_clockwork_power())
 		if(!silent)
-			to_chat(cyborg, "<span class='warning'>There is no power available across sigils!</span>")
+			to_chat(cyborg, SPAN_WARNING("There is no power available across sigils!"))
 		return FALSE
 	if(cyborg.cell.charge > cyborg.cell.maxcharge - MIN_CLOCKCULT_POWER)
 		if(!silent)
-			to_chat(cyborg, "<span class='warning'>You are already at maximum charge!</span>")
+			to_chat(cyborg, SPAN_WARNING("You are already at maximum charge!"))
 		return FALSE
 	if(cyborg.has_status_effect(STATUS_EFFECT_POWERREGEN))
 		if(!silent)
-			to_chat(cyborg, "<span class='warning'>You are already regenerating power!</span>")
+			to_chat(cyborg, SPAN_WARNING("You are already regenerating power!"))
 		return FALSE
 	return TRUE
 
@@ -332,7 +332,7 @@
 				var/obj/effect/temp_visual/ratvar/sigil/vitality/V = new /obj/effect/temp_visual/ratvar/sigil/vitality(get_turf(src))
 				animate(V, alpha = 0, transform = matrix()*2, time = 8)
 				playsound(L, 'sound/magic/wandodeath.ogg', 50, 1)
-				L.visible_message("<span class='warning'>[L] collapses in on [L.p_them()]self as [src] flares bright blue!</span>")
+				L.visible_message(SPAN_WARNING("[L] collapses in on [L.p_them()]self as [src] flares bright blue!"))
 				to_chat(L, "<span class='inathneq_large'>\"[text2ratvar("Your life will not be wasted.")]\"</span>")
 				for(var/obj/item/W in L)
 					if(!L.dropItemToGround(W))
@@ -382,7 +382,7 @@
 					var/obj/effect/temp_visual/ratvar/sigil/vitality/V = new /obj/effect/temp_visual/ratvar/sigil/vitality(get_turf(src))
 					animate(V, alpha = 0, transform = matrix()*2, time = 8)
 					playsound(L, 'sound/magic/staff_healing.ogg', 50, 1)
-					L.visible_message("<span class='warning'>[L]'s eyes suddenly open wide, gleaming with renewed vigor for the cause!</span>", "<span class='inathneq'>\"[text2ratvar("Awaken!")]\"</span>")
+					L.visible_message(SPAN_WARNING("[L]'s eyes suddenly open wide, gleaming with renewed vigor for the cause!"), "<span class='inathneq'>\"[text2ratvar("Awaken!")]\"</span>")
 					break
 			var/vitality_for_cycle = 3
 			if(!GLOB.ratvar_awakens)

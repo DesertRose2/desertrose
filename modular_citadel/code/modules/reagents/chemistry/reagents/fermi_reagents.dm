@@ -48,12 +48,12 @@
 	//var/component/nanites/N = M.GetComponent(/datum/component/nanites)
 	var/datum/component/nanites/N = C.GetComponent(/datum/component/nanites)
 	if(prob(5))
-		to_chat(C, "<span class='warning'>The residual voltage from the nanites causes you to seize up!</b></span>")
+		to_chat(C, SPAN_WARNING("The residual voltage from the nanites causes you to seize up!</b>"))
 		C.electrocute_act(10, (get_turf(C)), 1, SHOCK_ILLUSION)
 	if(prob(10))
 		var/atom/T = C
 		T.emp_act(80)
-		to_chat(C, "<span class='warning'>You feel a strange tingling sensation come from your core.</b></span>")
+		to_chat(C, SPAN_WARNING("You feel a strange tingling sensation come from your core.</b>"))
 	if(isnull(N))
 		return ..()
 	N.nanite_volume += -10*cached_purity
@@ -75,12 +75,12 @@
 //Increases shock events.
 /datum/reagent/fermi/nanite_b_goneTox/on_mob_life(mob/living/carbon/C)//Damages the taker if their purity is low. Extended use of impure chemicals will make the original die. (thus can't be spammed unless you've very good)
 	if(prob(15))
-		to_chat(C, "<span class='warning'>The residual voltage in your system causes you to seize up!</b></span>")
+		to_chat(C, SPAN_WARNING("The residual voltage in your system causes you to seize up!</b>"))
 		C.electrocute_act(10, (get_turf(C)), 1, SHOCK_ILLUSION)
 	if(prob(50))
 		var/atom/T = C
 		T.emp_act(80)
-		to_chat(C, "<span class='warning'>You feel your hair stand on end as you glow brightly for a moment!</b></span>")
+		to_chat(C, SPAN_WARNING("You feel your hair stand on end as you glow brightly for a moment!</b>"))
 	..()
 
 
@@ -106,7 +106,7 @@
 	C.adjustFireLoss(acidstr/2, 0)
 	if((method==VAPOR) && (!C.wear_mask))
 		if(prob(20))
-			to_chat(C, "<span class='warning'>You can feel your lungs burning!</b></span>")
+			to_chat(C, SPAN_WARNING("You can feel your lungs burning!</b>"))
 		C.adjustOrganLoss(ORGAN_SLOT_LUNGS, acidstr*2)
 		C.apply_damage(acidstr/5, BURN, target)
 	C.acid_act(acidstr, volume)
@@ -145,7 +145,7 @@
 	if(LAZYLEN(holder.reagent_list) == 1)
 		return ..()
 	holder.pH = ((holder.pH * holder.total_volume)+(pH * (volume)))/(holder.total_volume + (volume))
-	holder.my_atom.visible_message("<span class='warning'>The beaker fizzes as the pH changes!</b></span>")
+	holder.my_atom.visible_message(SPAN_WARNING("The beaker fizzes as the pH changes!</b>"))
 	playsound(holder.my_atom, 'sound/FermiChem/bufferadd.ogg', 50, 1)
 	holder.remove_reagent(type, volume, ignore_pH = TRUE)
 	..()
@@ -164,7 +164,7 @@
 	if(LAZYLEN(holder.reagent_list) == 1)
 		return ..()
 	holder.pH = ((holder.pH * holder.total_volume)+(pH * (volume)))/(holder.total_volume + (volume))
-	holder.my_atom.visible_message("<span class='warning'>The beaker froths as the pH changes!</b></span>")
+	holder.my_atom.visible_message(SPAN_WARNING("The beaker froths as the pH changes!</b>"))
 	playsound(holder.my_atom, 'sound/FermiChem/bufferadd.ogg', 50, 1)
 	holder.remove_reagent(type, volume, ignore_pH = TRUE)
 	..()

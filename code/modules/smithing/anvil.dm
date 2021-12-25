@@ -168,8 +168,8 @@
 			stepsdone += "u"
 			currentsteps += 1
 			currentquality -= 1
-	user.visible_message("<span class='notice'>[user] works the metal on the anvil with their hammer with a loud clang!</span>", \
-						"<span class='notice'>You [stepdone] the metal with a loud clang!</span>")
+	user.visible_message(SPAN_NOTICE("[user] works the metal on the anvil with their hammer with a loud clang!"), \
+						SPAN_NOTICE("You [stepdone] the metal with a loud clang!"))
 	playsound(src, 'sound/effects/clang2.ogg',40, 2)
 	addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/effects/clang2.ogg', 40, 2), 15)
 	if(length(stepsdone) >= 3)
@@ -188,7 +188,7 @@
 		var/skillmod = user.mind.get_skill_level(/datum/skill/level/dwarfy/blacksmithing)/10 + 1
 		finalfailchance = max(0, finalfailchance / skillmod) //lv 2 gives 20% less to fail, 3 30%, etc
 	if((currentsteps > 10 || (rng && prob(finalfailchance))) && !artifact)
-		to_chat(user, "<span class='warning'>You overwork the metal, causing it to turn into useless slag!</span>")
+		to_chat(user, SPAN_WARNING("You overwork the metal, causing it to turn into useless slag!"))
 		var/turf/T = get_turf(user)
 		workpiece_state = FALSE
 		new /obj/item/stack/ore/slag(T)

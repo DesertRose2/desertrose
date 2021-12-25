@@ -61,7 +61,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/tea/catnip
 	seed = /obj/item/seeds/tea/catnip
-	name = "Catnip buds"
+	name = "catnip buds"
 	icon_state = "catnip"
 	filling_color = "#4582B4"
 	grind_results = list(/datum/reagent/pax/catnip = 2, /datum/reagent/water = 1)

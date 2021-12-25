@@ -29,8 +29,8 @@
 			used = TRUE
 
 		if(used)
-			user.visible_message("<span class = 'notice'>[user] uses [src] on [C], reinforcing it and tossing the empty case away afterwards.</span>", \
-			"<span class = 'notice'>You reinforce [C] with [src], making it a little more protective! You toss the empty casing away afterwards.</span>")
+			user.visible_message(SPAN_NOTICE("[user] uses [src] on [C], reinforcing it and tossing the empty case away afterwards."), \
+			SPAN_NOTICE("You reinforce [C] with [src], making it a little more protective! You toss the empty casing away afterwards."))
 			C.name = "durathread [C.name]" // this disappears if it gets repaired, which is annoying
 			qdel(src)
 			return

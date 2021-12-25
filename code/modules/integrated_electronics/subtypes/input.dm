@@ -18,7 +18,7 @@
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 
 /obj/item/integrated_circuit/input/button/ask_for_input(mob/user) //Bit misleading name for this specific use.
-	to_chat(user, "<span class='notice'>You press the button labeled '[displayed_name]'.</span>")
+	to_chat(user, SPAN_NOTICE("You press the button labeled '[displayed_name]'."))
 	activate_pin(1)
 
 /obj/item/integrated_circuit/input/toggle_button
@@ -36,7 +36,7 @@
 	set_pin_data(IC_OUTPUT, 1, !get_pin_data(IC_OUTPUT, 1))
 	push_data()
 	activate_pin(1)
-	to_chat(user, "<span class='notice'>You toggle the button labeled '[displayed_name]' [get_pin_data(IC_OUTPUT, 1) ? "on" : "off"].</span>")
+	to_chat(user, SPAN_NOTICE("You toggle the button labeled '[displayed_name]' [get_pin_data(IC_OUTPUT, 1) ? "on" : "off"]."))
 
 /obj/item/integrated_circuit/input/numberpad
 	name = "number pad"
@@ -370,7 +370,7 @@
 		activate_pin(2)
 
 /obj/item/integrated_circuit/input/turfpoint
-	name = "Tile pointer"
+	name = "tile pointer"
 	desc = "This circuit will get a tile ref with the provided absolute coordinates."
 	extended_desc = "If the machine	cannot see the target, it will not be able to calculate the correct direction.\
 	This circuit only works while inside an assembly."
@@ -711,8 +711,8 @@
 			LM.playsound_local(get_turf(src), 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
 
 /obj/item/integrated_circuit/input/ntnet_packet
-	name = "NTNet networking circuit"
-	desc = "Enables the sending and receiving of messages over NTNet via packet data protocol."
+	name = "wireless networking circuit"
+	desc = "Enables the sending and receiving of wireless messages via packet data protocol."
 	extended_desc = "Data can be sent or received using the second pin on each side, \
 	with additonal data reserved for the third pin. When a message is received, the second activation pin \
 	will pulse whatever is connected to it. Pulsing the first activation pin will send a message. Messages \
@@ -721,7 +721,7 @@
 	complexity = 2
 	cooldown_per_use = 1
 	inputs = list(
-		"target NTNet addresses"= IC_PINTYPE_STRING,
+		"target wireless addresses"= IC_PINTYPE_STRING,
 		"data to send"			= IC_PINTYPE_STRING,
 		"secondary text"		= IC_PINTYPE_STRING
 		)
@@ -743,7 +743,7 @@
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id
 	net.differentiate_broadcast = FALSE
-	desc += "<br>This circuit's NTNet hardware address is: [address]"
+	desc += "<br>This circuit's wireless address is: [address]"
 
 /obj/item/integrated_circuit/input/ntnet_packet/do_work()
 	var/target_address = get_pin_data(IC_INPUT, 1)
@@ -766,8 +766,8 @@
 	activate_pin(2)
 
 /obj/item/integrated_circuit/input/ntnet_advanced
-	name = "Low level NTNet transreceiver"
-	desc = "Enables the sending and receiving of messages over NTNet via packet data protocol. Allows advanced control of message contents and signalling. Must use associative lists. Outputs associative list. Has a slower transmission rate than normal NTNet circuits, due to increased data processing complexity."
+	name = "low-level wireless transreceiver"
+	desc = "Enables the sending and receiving of wireless messages via packet data protocol. Allows advanced control of message contents and signalling. Must use associative lists. Outputs associative list. Has a slower transmission rate than normal wireless circuits, due to increased data processing complexity."
 	extended_desc = "Data can be sent or received using the second pin on each side, \
 	When a message is received, the second activation pin will pulse whatever is connected to it. \
 	Pulsing the first activation pin will send a message. Messages can be sent to multiple recepients. \
@@ -776,7 +776,7 @@
 	complexity = 4
 	cooldown_per_use = 10
 	inputs = list(
-		"target NTNet addresses"= IC_PINTYPE_STRING,
+		"target wireless addresses"= IC_PINTYPE_STRING,
 		"data"					= IC_PINTYPE_LIST,
 		)
 	outputs = list("received data" = IC_PINTYPE_LIST, "is_broadcast" = IC_PINTYPE_BOOLEAN)
@@ -791,7 +791,7 @@
 	var/datum/component/ntnet_interface/net = LoadComponent(/datum/component/ntnet_interface)
 	address = net.hardware_id
 	net.differentiate_broadcast = FALSE
-	desc += "<br>This circuit's NTNet hardware address is: [address]"
+	desc += "<br>This circuit's wireless address is: [address]"
 
 /obj/item/integrated_circuit/input/ntnet_advanced/do_work()
 	var/target_address = get_pin_data(IC_INPUT, 1)
@@ -897,7 +897,7 @@
 			return FALSE
 	set_pin_data(IC_OUTPUT, 1, WEAKREF(A))
 	push_data()
-	to_chat(user, "<span class='notice'>You scan [A] with [assembly].</span>")
+	to_chat(user, SPAN_NOTICE("You scan [A] with [assembly]."))
 	activate_pin(1)
 	return TRUE
 
@@ -930,7 +930,7 @@
 			return FALSE
 	set_pin_data(IC_OUTPUT, 1, WEAKREF(A))
 	push_data()
-	to_chat(user, "<span class='notice'>You scan [A] with [assembly].</span>")
+	to_chat(user, SPAN_NOTICE("You scan [A] with [assembly]."))
 	activate_pin(1)
 	return TRUE
 
@@ -957,7 +957,7 @@
 		user.transferItemToLoc(A,drop_location())
 	set_pin_data(IC_OUTPUT, 1, WEAKREF(A))
 	push_data()
-	to_chat(user, "<span class='notice'>You let [assembly] scan [A].</span>")
+	to_chat(user, SPAN_NOTICE("You let [assembly] scan [A]."))
 	activate_pin(1)
 	return TRUE
 
@@ -1032,8 +1032,8 @@
 	return
 
 /obj/item/integrated_circuit/input/ntnetsc
-	name = "NTNet scanner"
-	desc = "This can return the NTNet IDs of a component inside the given object, if there are any."
+	name = "network scanner"
+	desc = "This can return the network IDs of a component inside the given object, if there are any."
 	icon_state = "signalsc"
 	w_class = WEIGHT_CLASS_TINY
 	complexity = 2

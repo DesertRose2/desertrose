@@ -48,15 +48,15 @@
 
 /obj/item/inducer/proc/cantbeused(mob/user)
 	if(!user.IsAdvancedToolUser())
-		to_chat(user, "<span class='warning'>You don't have the dexterity to use [src]!</span>")
+		to_chat(user, SPAN_WARNING("You don't have the dexterity to use [src]!"))
 		return TRUE
 
 	if(!cell)
-		to_chat(user, "<span class='warning'>[src] doesn't have a power cell installed!</span>")
+		to_chat(user, SPAN_WARNING("[src] doesn't have a power cell installed!"))
 		return TRUE
 
 	if(!cell.charge)
-		to_chat(user, "<span class='warning'>[src]'s battery is dead!</span>")
+		to_chat(user, SPAN_WARNING("[src]'s battery is dead!"))
 		return TRUE
 	return FALSE
 
@@ -65,12 +65,12 @@
 	if(istype(W, /obj/item/screwdriver))
 		W.play_tool_sound(src)
 		if(!opened)
-			to_chat(user, "<span class='notice'>You unscrew the battery compartment.</span>")
+			to_chat(user, SPAN_NOTICE("You unscrew the battery compartment."))
 			opened = TRUE
 			update_icon()
 			return
 		else
-			to_chat(user, "<span class='notice'>You close the battery compartment.</span>")
+			to_chat(user, SPAN_NOTICE("You close the battery compartment."))
 			opened = FALSE
 			update_icon()
 			return
@@ -79,12 +79,12 @@
 			if(!cell)
 				if(!user.transferItemToLoc(W, src))
 					return
-				to_chat(user, "<span class='notice'>You insert [W] into [src].</span>")
+				to_chat(user, SPAN_NOTICE("You insert [W] into [src]."))
 				cell = W
 				update_icon()
 				return
 			else
-				to_chat(user, "<span class='notice'>[src] already has \a [cell] installed!</span>")
+				to_chat(user, SPAN_NOTICE("[src] already has \a [cell] installed!"))
 				return
 
 	if(cantbeused(user))
@@ -113,10 +113,10 @@
 	if(C)
 		var/done_any = FALSE
 		if(C.charge >= C.maxcharge)
-			to_chat(user, "<span class='notice'>[A] is fully charged!</span>")
+			to_chat(user, SPAN_NOTICE("[A] is fully charged!"))
 			recharging = FALSE
 			return TRUE
-		user.visible_message("[user] starts recharging [A] with [src].","<span class='notice'>You start recharging [A] with [src].</span>")
+		user.visible_message("[user] starts recharging [A] with [src].",SPAN_NOTICE("You start recharging [A] with [src]."))
 		while(C.charge < C.maxcharge)
 			if(do_after(user, 10, target = user) && cell.charge)
 				done_any = TRUE
@@ -127,7 +127,7 @@
 			else
 				break
 		if(done_any) // Only show a message if we succeeded at least once
-			user.visible_message("[user] recharged [A]!","<span class='notice'>You recharged [A]!</span>")
+			user.visible_message("[user] recharged [A]!",SPAN_NOTICE("You recharged [A]!"))
 		recharging = FALSE
 		return TRUE
 	recharging = FALSE
@@ -147,7 +147,7 @@
 
 /obj/item/inducer/attack_self(mob/user)
 	if(opened && cell)
-		user.visible_message("[user] removes [cell] from [src]!","<span class='notice'>You remove [cell].</span>")
+		user.visible_message("[user] removes [cell] from [src]!",SPAN_NOTICE("You remove [cell]."))
 		cell.update_icon()
 		user.put_in_hands(cell)
 		cell = null
@@ -157,11 +157,11 @@
 /obj/item/inducer/examine(mob/living/M)
 	. = ..()
 	if(cell)
-		. += "<span class='notice'>Its display shows: [DisplayEnergy(cell.charge)].</span>"
+		. += SPAN_NOTICE("Its display shows: [DisplayEnergy(cell.charge)].")
 	else
-		. += "<span class='notice'>Its display is dark.</span>"
+		. += SPAN_NOTICE("Its display is dark.")
 	if(opened)
-		. += "<span class='notice'>Its battery compartment is open.</span>"
+		. += SPAN_NOTICE("Its battery compartment is open.")
 
 /obj/item/inducer/update_overlays()
 	. = ..()

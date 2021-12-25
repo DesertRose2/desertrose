@@ -70,10 +70,6 @@
 #define CAT_WEAPON	"Ranged Weapons"
 #define CAT_MELEE	"Melee Weapons"
 #define CAT_AMMO	"Ammunition"
-#define CAT_THROWABLE "Throwables & Explosives"
-#define CAT_REGULAR "Throwables"
-#define CAT_EXPLOSIVE "Explosives"
-#define CAT_MISCWEP	"Misc. Weaponry"
 #define CAT_PARTS	"Weapon Parts"
 #define CAT_ROBOT	"Robots"
 #define CAT_MISC	"Misc"
@@ -99,16 +95,7 @@
 #define CAT_SANDWICH	"Sandwiches"
 #define CAT_SOUP	"Soups"
 #define CAT_SPAGHETTI	"Spaghettis"
-#define CAT_WASTEFOOD "Wastefood"
 #define CAT_ICE	"Frozen"
-#define CAT_MEDICAL "Medical"
-#define CAT_BOTTLE "Bottling"
-#define CAT_GENCLOTHES "General Clothing"
-#define CAT_ARMOR "Armor"
-#define CAT_BELTS	"Belts"
-#define CAT_WASTELAND	"Wasteland Clothing"
-#define CAT_SHOES "Shoes"
-#define CAT_MISCCLOTHING "Misc Clothing"
 
 #define RCD_FLOORWALL 1
 #define RCD_AIRLOCK 2

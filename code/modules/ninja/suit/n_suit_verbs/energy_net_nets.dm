@@ -97,10 +97,10 @@ It is possible to destroy the net by the occupant or someone else.
 
 	visible_message("[affecting] suddenly vanishes!")
 	affecting.forceMove(pick(GLOB.holdingfacility)) //Throw mob in to the holding facility.
-	to_chat(affecting, "<span class='danger'>You appear in a strange place!</span>")
+	to_chat(affecting, SPAN_DANGER("You appear in a strange place!"))
 
 	if(!QDELETED(master))//As long as they still exist.
-		to_chat(master, "<span class='notice'><b>SUCCESS</b>: transport procedure of [affecting] complete.</span>")
+		to_chat(master, SPAN_NOTICE("<b>SUCCESS</b>: transport procedure of [affecting] complete."))
 	do_sparks(5, FALSE, affecting)
 	playsound(affecting, 'sound/effects/phasein.ogg', 25, 1)
 	playsound(affecting, 'sound/effects/sparks2.ogg', 50, 1)

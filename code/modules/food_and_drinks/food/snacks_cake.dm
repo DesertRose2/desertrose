@@ -422,8 +422,8 @@
 	foodtype = DAIRY | FRUIT | SUGAR
 
 /obj/item/reagent_containers/food/snacks/cakeslice/pavlovacream
-	name = "Pavlova slice"
-	desc = "A cracked slice of pavlova stacked with berries"
+	name = "pavlova slice"
+	desc = "A cracked slice of pavlova stacked with berries."
 	icon_state = "pavlova_slice"
 	tastes = list("meringue" = 5, "creaminess" = 1, "berries" = 1)
 	foodtype = DAIRY | FRUIT | SUGAR

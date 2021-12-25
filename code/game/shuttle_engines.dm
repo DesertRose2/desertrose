@@ -12,7 +12,7 @@
 
 /obj/structure/shuttle/engine
 	name = "engine"
-	desc = "A bluespace engine used to make shuttles move."
+	desc = "An engine used to make shuttles move."
 	density = TRUE
 	anchored = TRUE
 	var/engine_power = 1
@@ -22,7 +22,7 @@
 /obj/structure/shuttle/engine/can_be_unfasten_wrench(mob/user, silent)
 	if(state == ENGINE_WELDED)
 		if(!silent)
-			to_chat(user, "<span class='warning'>[src] is welded to the floor!</span>")
+			to_chat(user, SPAN_WARNING("[src] is welded to the floor!"))
 		return FAILED_UNFASTEN
 	return ..()
 
@@ -41,18 +41,18 @@
 /obj/structure/shuttle/engine/welder_act(mob/living/user, obj/item/I)
 	switch(state)
 		if(ENGINE_UNWRENCHED)
-			to_chat(user, "<span class='warning'>The [src.name] needs to be wrenched to the floor!</span>")
+			to_chat(user, SPAN_WARNING("The [src.name] needs to be wrenched to the floor!"))
 		if(ENGINE_WRENCHED)
 			if(!I.tool_start_check(user, amount=0))
 				return TRUE
 
 			user.visible_message("[user.name] starts to weld the [name] to the floor.", \
-				"<span class='notice'>You start to weld \the [src] to the floor...</span>", \
+				SPAN_NOTICE("You start to weld \the [src] to the floor..."), \
 				"<span class='italics'>You hear welding.</span>")
 
 			if(I.use_tool(src, user, ENGINE_WELDTIME, volume=50))
 				state = ENGINE_WELDED
-				to_chat(user, "<span class='notice'>You weld \the [src] to the floor.</span>")
+				to_chat(user, SPAN_NOTICE("You weld \the [src] to the floor."))
 				alter_engine_power(engine_power)
 
 		if(ENGINE_WELDED)
@@ -60,12 +60,12 @@
 				return TRUE
 
 			user.visible_message("[user.name] starts to cut the [name] free from the floor.", \
-				"<span class='notice'>You start to cut \the [src] free from the floor...</span>", \
+				SPAN_NOTICE("You start to cut \the [src] free from the floor..."), \
 				"<span class='italics'>You hear welding.</span>")
 
 			if(I.use_tool(src, user, ENGINE_WELDTIME, volume=50))
 				state = ENGINE_WRENCHED
-				to_chat(user, "<span class='notice'>You cut \the [src] free from the floor.</span>")
+				to_chat(user, SPAN_NOTICE("You cut \the [src] free from the floor."))
 				alter_engine_power(-engine_power)
 	return TRUE
 
@@ -98,7 +98,7 @@
 /obj/structure/shuttle/engine/propulsion
 	name = "propulsion engine"
 	icon_state = "propulsion"
-	desc = "A standard reliable bluespace engine used by many forms of shuttles."
+	desc = "A rocket engine used by advanced pre-war shuttles."
 	opacity = 1
 
 /obj/structure/shuttle/engine/propulsion/left
@@ -111,7 +111,7 @@
 
 /obj/structure/shuttle/engine/propulsion/burst
 	name = "burst engine"
-	desc = "An engine that releases a large bluespace burst to propel it."
+	desc = "An engine that releases a nuclear burst to propel it."
 
 /obj/structure/shuttle/engine/propulsion/burst/cargo
 	state = ENGINE_UNWRENCHED
@@ -135,7 +135,7 @@
 	opacity = 1
 	icon = 'icons/obj/2x2.dmi'
 	icon_state = "large_engine"
-	desc = "A very large bluespace engine used to propel very large ships."
+	desc = "A very large engine used to propel very large ships."
 	bound_width = 64
 	bound_height = 64
 	appearance_flags = 0
@@ -145,7 +145,7 @@
 	opacity = 1
 	icon = 'icons/obj/3x3.dmi'
 	icon_state = "huge_engine"
-	desc = "An extremely large bluespace engine used to propel extremely large ships."
+	desc = "An extremely large engine used to propel extremely large ships."
 	bound_width = 96
 	bound_height = 96
 	appearance_flags = 0

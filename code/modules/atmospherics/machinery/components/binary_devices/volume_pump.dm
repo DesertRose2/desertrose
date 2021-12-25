@@ -29,8 +29,8 @@
 
 /obj/machinery/atmospherics/components/binary/volume_pump/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>You can hold <b>Ctrl</b> and click on it to toggle it on and off.</span>"
-	. += "<span class='notice'>You can hold <b>Alt</b> and click on it to maximize its pressure.</span>"
+	. += SPAN_NOTICE("You can hold <b>Ctrl</b> and click on it to toggle it on and off.")
+	. += SPAN_NOTICE("You can hold <b>Alt</b> and click on it to maximize its pressure.")
 
 /obj/machinery/atmospherics/components/binary/volume_pump/CtrlClick(mob/user)
 	var/area/A = get_area(src)
@@ -170,7 +170,7 @@
 	. = ..()
 	var/area/A = get_area(src)
 	if(. && on && is_operational())
-		to_chat(user, "<span class='warning'>You cannot unwrench [src], turn it off first!</span>")
+		to_chat(user, SPAN_WARNING("You cannot unwrench [src], turn it off first!"))
 		return FALSE
 	else
 		investigate_log("Pump, [src.name], was unwrenched by [key_name(usr)] at [x], [y], [z], [A]", INVESTIGATE_ATMOS)

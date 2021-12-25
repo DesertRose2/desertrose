@@ -1,6 +1,5 @@
 /obj/item/grenade/flashbang
 	name = "flashbang"
-	desc = "A prewar police riot supression device, this one delivers a powerful flash and deafening boom."
 	icon_state = "flashbang"
 	item_state = "flashbang"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
@@ -30,7 +29,7 @@
 /obj/item/grenade/flashbang/proc/bang(mob/living/M, turf/source)
 	if(M.stat == DEAD)	//They're dead!
 		return
-	M.show_message("<span class='warning'>BANG</span>", MSG_AUDIBLE)
+	M.show_message(SPAN_WARNING("BANG!"), MSG_AUDIBLE)
 	var/distance = get_dist(get_turf(M), source)
 	if(!distance || loc == M || loc == M.loc)	//Stop allahu akbarring rooms with this.
 		M.DefaultCombatKnockdown(200)
@@ -92,7 +91,7 @@
 /obj/item/grenade/stingbang/proc/pop(turf/T , mob/living/M)
 	if(M.stat == DEAD)	//They're dead!
 		return
-	M.show_message("<span class='warning'>POP</span>", MSG_AUDIBLE)
+	M.show_message(SPAN_WARNING("POP!"), MSG_AUDIBLE)
 	var/distance = max(0,get_dist(get_turf(src),T))
 
 //Flash
@@ -143,10 +142,3 @@
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
 	rots_per_mag = 2
 	shrapnel_type = /obj/item/projectile/bullet/pellet/stingball
-
-/obj/item/grenade/flashbang/sentry
-	name = "defensive flashbang" //for sentrybots
-	desc = "Why are you staring at this?!"
-	flashbang_range = 7
-	det_time = 1 SECONDS
-

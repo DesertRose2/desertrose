@@ -59,12 +59,12 @@
 	return ..()
 
 /datum/antagonist/abductor/greet()
-	to_chat(owner.current, "<span class='notice'>You are the [owner.special_role]!</span>")
-	to_chat(owner.current, "<span class='notice'>You are an operative for your home planet's government. Your mission is to detain, experiment, and observe.</span>")
-	to_chat(owner.current, "<span class='notice'>Work together with your teammate to bring live subjects from the space station nearby onto your ship for experimentation.</span>")
-	to_chat(owner.current, "<span class='notice'>For the sake of the mission, do not damage the integrity of the station, do not kill anyone unless in self defense, always capture specimens first if you can, and do not steal equipment or belongings from abducted specimens.</span>")
-	to_chat(owner.current, "<span class='notice'>Your task is to observe and take notes of the effects of your experiments.</span>")
-	to_chat(owner.current, "<span class='notice'>[greet_text]</span>")
+	to_chat(owner.current, SPAN_NOTICE("You are the [owner.special_role]!"))
+	to_chat(owner.current, SPAN_NOTICE("You are an operative for your home planet's government. Your mission is to detain, experiment, and observe."))
+	to_chat(owner.current, SPAN_NOTICE("Work together with your teammate to bring live subjects from the space station nearby onto your ship for experimentation."))
+	to_chat(owner.current, SPAN_NOTICE("For the sake of the mission, do not damage the integrity of the station, do not kill anyone unless in self defense, always capture specimens first if you can, and do not steal equipment or belongings from abducted specimens."))
+	to_chat(owner.current, SPAN_NOTICE("Your task is to observe and take notes of the effects of your experiments."))
+	to_chat(owner.current, SPAN_NOTICE("[greet_text]"))
 	owner.announce_objectives()
 
 /datum/antagonist/abductor/proc/finalize_abductor()
@@ -116,7 +116,7 @@
 
 /datum/antagonist/abductor/proc/admin_equip(mob/admin)
 	if(!ishuman(owner.current))
-		to_chat(admin, "<span class='warning'>This only works on humans!</span>")
+		to_chat(admin, SPAN_WARNING("This only works on humans!"))
 		return
 	var/mob/living/carbon/human/H = owner.current
 	var/gear = alert(admin,"Agent or Scientist Gear","Gear","Agent","Scientist")

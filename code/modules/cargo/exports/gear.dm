@@ -62,7 +62,7 @@
 /datum/export/gear/sec_helmetswat
 	cost = 150
 	unit_name = "swat helmet"
-	export_types = list(/obj/item/clothing/head/helmet/swat/nanotrasen)
+	export_types = list(/obj/item/clothing/head/helmet/swat)
 
 /datum/export/gear/thunder_helmet
 	cost = 120

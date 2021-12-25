@@ -79,7 +79,7 @@ GLOBAL_LIST(labor_sheet_values)
 				var/obj/item/card/id/prisoner/P = I
 				P.points += stacking_machine.points
 				stacking_machine.points = 0
-				to_chat(usr, "<span class='notice'>Points transferred.</span>")
+				to_chat(usr, SPAN_NOTICE("Points transferred."))
 				. = TRUE
 			else
 				to_chat(usr, "<span class='alert'>No valid id for point transfer detected.</span>")
@@ -98,7 +98,7 @@ GLOBAL_LIST(labor_sheet_values)
 						if(!(obj_flags & EMAGGED))
 							Radio.set_frequency(FREQ_SECURITY)
 							Radio.talk_into(src, "A prisoner has returned to the station. Minerals and Prisoner ID card ready for retrieval.", FREQ_SECURITY)
-						to_chat(usr, "<span class='notice'>Shuttle received message and will be sent shortly.</span>")
+						to_chat(usr, SPAN_NOTICE("Shuttle received message and will be sent shortly."))
 						. = TRUE
 
 /obj/machinery/mineral/labor_claim_console/proc/locate_stacking_machine()
@@ -111,7 +111,7 @@ GLOBAL_LIST(labor_sheet_values)
 /obj/machinery/mineral/labor_claim_console/emag_act(mob/user)
 	if(!(obj_flags & EMAGGED))
 		obj_flags |= EMAGGED
-		to_chat(user, "<span class='warning'>PZZTTPFFFT</span>")
+		to_chat(user, SPAN_WARNING("PZZTTPFFFT"))
 
 /**********************Prisoner Collection Unit**************************/
 
@@ -145,11 +145,11 @@ GLOBAL_LIST(labor_sheet_values)
 	if(istype(I, /obj/item/card/id))
 		if(istype(I, /obj/item/card/id/prisoner))
 			var/obj/item/card/id/prisoner/prisoner_id = I
-			to_chat(user, "<span class='notice'><B>ID: [prisoner_id.registered_name]</B></span>")
-			to_chat(user, "<span class='notice'>Points Collected:[prisoner_id.points]</span>")
-			to_chat(user, "<span class='notice'>Point Quota: [prisoner_id.goal]</span>")
-			to_chat(user, "<span class='notice'>Collect points by bringing smelted minerals to the Labor Shuttle stacking machine. Reach your quota to earn your release.</span>")
+			to_chat(user, SPAN_NOTICE("<B>ID: [prisoner_id.registered_name]</B>"))
+			to_chat(user, SPAN_NOTICE("Points Collected:[prisoner_id.points]"))
+			to_chat(user, SPAN_NOTICE("Point Quota: [prisoner_id.goal]"))
+			to_chat(user, SPAN_NOTICE("Collect points by bringing smelted minerals to the Labor Shuttle stacking machine. Reach your quota to earn your release."))
 		else
-			to_chat(user, "<span class='warning'>Error: Invalid ID</span>")
+			to_chat(user, SPAN_WARNING("Error: Invalid ID"))
 	else
 		return ..()

@@ -30,6 +30,13 @@
 	icon_state = "flask113"
 	list_reagents = list(/datum/reagent/water = 30, /datum/reagent/radium = 10, /datum/reagent/medicine/mine_salve = 20)
 
+/obj/item/reagent_containers/food/drinks/flask/russian
+	name = "russian flask"
+	desc = "Every good russian spaceman knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
+	icon = 'icons/obj/custom.dmi'
+	icon_state = "russianflask"
+	volume = 60
+
 /obj/item/reagent_containers/food/drinks/flask/personalmug
 	name = "personal mug"
 	desc = "A worn mug that is someone favourite."

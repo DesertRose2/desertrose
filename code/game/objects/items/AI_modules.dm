@@ -42,7 +42,7 @@ AI MODULES
 //The proc other things should be calling
 /obj/item/aiModule/proc/install(datum/ai_laws/law_datum, mob/user)
 	if(!bypass_law_amt_check && (!laws.len || laws[1] == "")) //So we don't loop trough an empty list and end up with runtimes.
-		to_chat(user, "<span class='warning'>ERROR: No laws found on board.</span>")
+		to_chat(user, SPAN_WARNING("ERROR: No laws found on board."))
 		return
 
 	var/overflow = FALSE
@@ -60,10 +60,10 @@ AI MODULES
 
 	var/law2log = transmitInstructions(law_datum, user, overflow) //Freeforms return something extra we need to log
 	if(law_datum.owner)
-		to_chat(user, "<span class='notice'>Upload complete. [law_datum.owner]'s laws have been modified.</span>")
+		to_chat(user, SPAN_NOTICE("Upload complete. [law_datum.owner]'s laws have been modified."))
 		law_datum.owner.law_change_counter++
 	else
-		to_chat(user, "<span class='notice'>Upload complete.</span>")
+		to_chat(user, SPAN_NOTICE("Upload complete."))
 
 	var/time = time2text(world.realtime,"hh:mm:ss")
 	var/ainame = law_datum.owner ? law_datum.owner.name : "empty AI core"
@@ -268,15 +268,15 @@ AI MODULES
 	if(lawpos == null)
 		return
 	if(lawpos <= 0)
-		to_chat(user, "<span class='warning'>Error: The law number of [lawpos] is invalid.</span>")
+		to_chat(user, SPAN_WARNING("Error: The law number of [lawpos] is invalid."))
 		lawpos = 1
 		return
-	to_chat(user, "<span class='notice'>Law [lawpos] selected.</span>")
+	to_chat(user, SPAN_NOTICE("Law [lawpos] selected."))
 	..()
 
 /obj/item/aiModule/remove/install(datum/ai_laws/law_datum, mob/user)
 	if(lawpos > (law_datum.get_law_amount(list(LAW_INHERENT = 1, LAW_SUPPLIED = 1))))
-		to_chat(user, "<span class='warning'>There is no law [lawpos] to delete!</span>")
+		to_chat(user, SPAN_WARNING("There is no law [lawpos] to delete!"))
 		return
 	..()
 
@@ -470,7 +470,7 @@ AI MODULES
 		return
 	var/datum/antagonist/overthrow/O = user_mind.has_antag_datum(/datum/antagonist/overthrow)
 	if(!O)
-		to_chat(user, "<span class='warning'>It appears that to install this module, you require a password you do not know.</span>") // This is the best fluff i could come up in my mind
+		to_chat(user, SPAN_WARNING("It appears that to install this module, you require a password you do not know.")) // This is the best fluff i could come up in my mind
 		return
 	var/mob/living/silicon/ai/AI = law_datum.owner
 	if(!AI)
@@ -488,7 +488,7 @@ AI MODULES
 			to_chat(AI, "<span class='userdanger'>You feel your circuits being scrambled! You serve another overthrow team now!</span>") // to make it clearer for the AI
 	T = target_mind.add_antag_datum(/datum/antagonist/overthrow, O.team)
 	if(AI)
-		to_chat(AI, "<span class='warning'>You serve the [T.team] team now! Assist them in completing the team shared objectives, which you can see in your notes.</span>")
+		to_chat(AI, SPAN_WARNING("You serve the [T.team] team now! Assist them in completing the team shared objectives, which you can see in your notes."))
 	..()
 
 /******************** Hacked AI Module ******************/
@@ -508,7 +508,7 @@ AI MODULES
 /obj/item/aiModule/syndicate/transmitInstructions(datum/ai_laws/law_datum, mob/sender, overflow)
 //	..()    //We don't want this module reporting to the AI who dun it. --NEO
 	if(law_datum.owner)
-		to_chat(law_datum.owner, "<span class='warning'>BZZZZT</span>")
+		to_chat(law_datum.owner, SPAN_WARNING("BZZZZT"))
 		if(!overflow)
 			law_datum.owner.add_hacked_law(laws[1])
 		else
@@ -532,7 +532,7 @@ AI MODULES
 /obj/item/aiModule/toyAI/transmitInstructions(datum/ai_laws/law_datum, mob/sender, overflow)
 	//..()
 	if(law_datum.owner)
-		to_chat(law_datum.owner, "<span class='warning'>BZZZZT</span>")
+		to_chat(law_datum.owner, SPAN_WARNING("BZZZZT"))
 		if(!overflow)
 			law_datum.owner.add_ion_law(laws[1])
 		else
@@ -546,9 +546,9 @@ AI MODULES
 
 /obj/item/aiModule/toyAI/attack_self(mob/user)
 	laws[1] = generate_ion_law()
-	to_chat(user, "<span class='notice'>You press the button on [src].</span>")
+	to_chat(user, SPAN_NOTICE("You press the button on [src]."))
 	playsound(user, 'sound/machines/click.ogg', 20, 1)
-	src.loc.visible_message("<span class='warning'>[icon2html(src, viewers(loc))] [laws[1]]</span>")
+	src.loc.visible_message(SPAN_WARNING("[icon2html(src, viewers(loc))] [laws[1]]"))
 
 /******************** Mother Drone  ******************/
 

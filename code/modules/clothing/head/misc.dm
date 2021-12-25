@@ -392,7 +392,7 @@
 
 /obj/item/clothing/head/hotel
 	name = "Telegram cap"
-	desc = "A bright red cap warn by hotel staff. Or people who want to be a singing telegram"
+	desc = "A bright red cap warn by hotel staff. Or people who want to be a singing telegram."
 	icon_state = "telegram"
 	dog_fashion = /datum/dog_fashion/head/telegram
 
@@ -418,13 +418,13 @@
 
 /obj/item/clothing/head/cowboyhat/black
 	name = "black cowboy hat"
-	desc = "A a black cowboy hat, perfect for any outlaw"
+	desc = "A black cowboy hat, perfect for any outlaw."
 	icon_state = "cowboyhat_black"
 	item_state= "cowboyhat_black"
 
 /obj/item/clothing/head/cowboyhat/white
 	name = "white cowboy hat"
-	desc = "A white cowboy hat, perfect for your every day rancher"
+	desc = "A white cowboy hat, perfect for your average rancher."
 	icon_state = "cowboyhat_white"
 	item_state= "cowboyhat_white"
 
@@ -436,7 +436,7 @@
 
 /obj/item/clothing/head/cowboyhat/sec
 	name = "security cowboy hat"
-	desc = "A security cowboy hat, perfect for any true lawman"
+	desc = "A security cowboy hat, perfect for any true lawman."
 	icon_state = "cowboyhat_sec"
 	item_state= "cowboyhat_sec"
 
@@ -478,7 +478,7 @@
 	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/widered
-	name = "Wide red hat"
+	name = "wide red hat"
 	desc = "It is both wide, and red. Stylish!"
 	icon_state = "widehat_red"
 	item_state = "widehat_red"

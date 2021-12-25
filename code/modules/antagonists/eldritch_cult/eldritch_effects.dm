@@ -24,7 +24,7 @@
 	. = ..()
 	if(istype(I, /obj/item/storage/book/bible) || istype(I, /obj/item/nullrod))
 		user.say("BEGONE FOUL MAGICKS!!", forced = "bible")
-		to_chat(user, "<span class='danger'>You disrupt the magic of [src] with [I].</span>")
+		to_chat(user, SPAN_DANGER("You disrupt the magic of [src] with [I]."))
 		qdel(src)
 
 /obj/effect/eldritch/proc/activate(mob/living/user)
@@ -92,7 +92,7 @@
 
 		return
 	is_in_use = FALSE
-	to_chat(user,"<span class='warning'>Your ritual failed! You used either wrong components or are missing something important!</span>")
+	to_chat(user,SPAN_WARNING("Your ritual failed! You used either wrong components or are missing something important!"))
 
 /obj/effect/eldritch/big
 	name = "transmutation circle"
@@ -204,7 +204,7 @@
 			arm.dismember()
 			qdel(arm)
 		else
-			to_chat(human_user,"<span class='danger'>You pull your hand away from the hole as eldritch energy flails out, trying to latch onto existence itself!</span>")
+			to_chat(human_user,SPAN_DANGER("You pull your hand away from the hole as eldritch energy flails out, trying to latch onto existence itself!"))
 
 /obj/effect/broken_illusion/attack_tk(mob/user)
 	if(!ishuman(user))

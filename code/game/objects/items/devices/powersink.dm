@@ -73,20 +73,20 @@ GLOBAL_LIST_EMPTY(power_sinks)
 			if(isturf(T) && !T.intact)
 				attached = locate() in T
 				if(!attached)
-					to_chat(user, "<span class='warning'>This device must be placed over an exposed, powered cable node!</span>")
+					to_chat(user, SPAN_WARNING("This device must be placed over an exposed, powered cable node!"))
 				else
 					set_mode(CLAMPED_OFF)
 					user.visible_message( \
 						"[user] attaches \the [src] to the cable.", \
-						"<span class='notice'>You attach \the [src] to the cable.</span>",
+						SPAN_NOTICE("You attach \the [src] to the cable."),
 						"<span class='italics'>You hear some wires being connected to something.</span>")
 			else
-				to_chat(user, "<span class='warning'>This device must be placed over an exposed, powered cable node!</span>")
+				to_chat(user, SPAN_WARNING("This device must be placed over an exposed, powered cable node!"))
 		else
 			set_mode(DISCONNECTED)
 			user.visible_message( \
 				"[user] detaches \the [src] from the cable.", \
-				"<span class='notice'>You detach \the [src] from the cable.</span>",
+				SPAN_NOTICE("You detach \the [src] from the cable."),
 				"<span class='italics'>You hear some wires being disconnected from something.</span>")
 	else
 		return ..()
@@ -105,7 +105,7 @@ GLOBAL_LIST_EMPTY(power_sinks)
 		if(CLAMPED_OFF)
 			user.visible_message( \
 				"[user] activates \the [src]!", \
-				"<span class='notice'>You activate \the [src].</span>",
+				SPAN_NOTICE("You activate \the [src]."),
 				"<span class='italics'>You hear a click.</span>")
 			message_admins("Power sink activated by [ADMIN_LOOKUPFLW(user)] at [ADMIN_VERBOSEJMP(src)]")
 			log_game("Power sink activated by [key_name(user)] at [AREACOORD(src)]")
@@ -114,7 +114,7 @@ GLOBAL_LIST_EMPTY(power_sinks)
 		if(OPERATING)
 			user.visible_message( \
 				"[user] deactivates \the [src]!", \
-				"<span class='notice'>You deactivate \the [src].</span>",
+				SPAN_NOTICE("You deactivate \the [src]."),
 				"<span class='italics'>You hear a click.</span>")
 			set_mode(CLAMPED_OFF)
 

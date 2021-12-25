@@ -27,8 +27,8 @@
 	return final_threat*D.hosts
 
 /datum/antagonist/disease/greet()
-	to_chat(owner.current, "<span class='notice'>You are the [owner.special_role]!</span>")
-	to_chat(owner.current, "<span class='notice'>Infect members of the crew to gain adaptation points, and spread your infection further.</span>")
+	to_chat(owner.current, SPAN_NOTICE("You are the [owner.special_role]!"))
+	to_chat(owner.current, SPAN_NOTICE("Infect members of the crew to gain adaptation points, and spread your infection further."))
 	owner.announce_objectives()
 
 /datum/antagonist/disease/apply_innate_effects(mob/living/mob_override)

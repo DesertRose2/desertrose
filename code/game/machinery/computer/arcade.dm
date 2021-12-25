@@ -5,7 +5,7 @@
 
 /obj/machinery/computer/arcade
 	name = "random arcade"
-	desc = "random arcade machine"
+	desc = "A random arcade machine."
 	icon_state = "arcade"
 	icon_keyboard = null
 	icon_screen = "invaders"
@@ -118,7 +118,7 @@
 		new prizeselect(src)
 
 	var/atom/movable/prize = pick(contents)
-	visible_message("<span class='notice'>[src] dispenses [prize]!</span>", "<span class='notice'>You hear a chime and a clunk.</span>")
+	visible_message(SPAN_NOTICE("[src] dispenses [prize]!"), SPAN_NOTICE("You hear a chime and a clunk."))
 
 	prize.forceMove(get_turf(src))
 
@@ -140,11 +140,11 @@
 		var/obj/item/stack/arcadeticket/T = O
 		var/amount = T.get_amount()
 		if(amount <2)
-			to_chat(user, "<span class='warning'>You need 2 tickets to claim a prize!</span>")
+			to_chat(user, SPAN_WARNING("You need 2 tickets to claim a prize!"))
 			return
 		prizevend(user)
 		T.pay_tickets()
 		T.update_icon()
 		O = T
-		to_chat(user, "<span class='notice'>You turn in 2 tickets to the [src] and claim a prize!</span>")
+		to_chat(user, SPAN_NOTICE("You turn in 2 tickets to the [src] and claim a prize!"))
 		return

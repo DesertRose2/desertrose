@@ -8,7 +8,7 @@
 	icon_living = "handy"
 	icon_dead = "robot_dead"
 	gender = NEUTER
-	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
+	mob_biotypes = MOB_ROBOTIC
 	move_resist = MOVE_FORCE_OVERPOWERING //unpullable
 	health = 160
 	maxHealth = 160
@@ -65,13 +65,13 @@
 	add_overlay("eyes-[initial(icon_state)]")
 
 /mob/living/simple_animal/hostile/handy/nsb //NSB + Raider Bunker specific
-	name = "mr.handy"
+	name = "Mr. Handy"
 	aggro_vision_range = 15
 	faction = list("raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/gutsy
-	name = "mr. gutsy"
+	name = "Mr. Gutsy"
 	desc = "A pre-war combat robot based off the Mr. Handy design, armed with plasma weaponry and a deadly close-range flamer."
 	icon_state = "gutsy"
 	icon_living = "gutsy"
@@ -119,7 +119,7 @@
 	. = ..()
 
 /mob/living/simple_animal/hostile/handy/gutsy/nsb //NSB + Raider Bunker specific
-	name = "mr. gutsy"
+	name = "Mr. Gutsy"
 	aggro_vision_range = 15
 	faction = list("raider")
 	obj_damage = 300
@@ -162,7 +162,7 @@
 	if(!Proj)
 		CRASH("[src] securitron invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive flashbang!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive flashbang!"))
 		var/flashbang_turf = get_turf(src)
 		if(!flashbang_turf)
 			return
@@ -171,7 +171,7 @@
 	if(prob(75) || Proj.damage > 26) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/handy/securitron/Aggro()
@@ -303,7 +303,7 @@
 	maxHealth = 200
 	health = 200
 	speak_chance = 5
-	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
+	mob_biotypes = MOB_ROBOTIC
 	faction = list("neutral", "silicon", "dog", "hostile", "pirate", "wastebot", "wolf", "plants", "turret", "enclave", "ghoul", "cazador", "supermutant", "gecko", "slime", "radscorpion", "skeleton", "carp", "bs", "bighorner")
 	speak = list("Howdy partner! How about you spend some of them there hard earned caps on some of this fine merchandise.", "Welcome back partner! Hoo-wee it's a good day to buy some personal protection!", "Stop, this is a robbery! At these prices you are robbing me.", "Legion? NCR? Raider? Hell we don't care, as long as you got the caps.", "What a fine day partner. A fine day indeed.", "Reminds me of what my grandpappy used to say, make a snap decision now and never question it. You look like you could use some product there partner.", "Lotta critters out there want to chew you up partner, you could use a little hand with that now couldn't you?")
 	speak_emote = list()
@@ -376,7 +376,7 @@
 	if(!Proj)
 		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive flashbang!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive flashbang!"))
 		var/flashbang_turf = get_turf(src)
 		if(!flashbang_turf)
 			return
@@ -385,12 +385,12 @@
 	if(prob(75) || Proj.damage > 26) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/do_death_beep()
 	playsound(src, 'sound/machines/triple_beep.ogg', 75, TRUE)
-	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+	visible_message(SPAN_WARNING("You hear an ominous beep coming from [src]!"), SPAN_WARNING("You hear an ominous beep!"))
 
 /mob/living/simple_animal/hostile/handy/sentrybot/proc/self_destruct()
 	explosion(src,0,3,5,5)
@@ -443,12 +443,12 @@
 	if(!Proj)
 		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
 	if(prob(10) && health > 1)
-		visible_message("<span class='danger'>\The [src] releases a defensive explosive!</span>")
+		visible_message(SPAN_DANGER("\The [src] releases a defensive explosive!"))
 		explosion(get_turf(src),-1,-1,2, flame_range = 4) //perish, mortal - explosion size identical to craftable IED
 	if(prob(75) || Proj.damage > 30) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
 		return FALSE
 
 /obj/item/projectile/beam/laser/pistol/ultraweak/strong
@@ -485,7 +485,7 @@
 	icon_living = "assaultron"
 	gender = FEMALE //Pffffffffffffffffffffff
 	health = 400
-	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
+	mob_biotypes = MOB_ROBOTIC
 	maxHealth = 400
 	speed = 0
 	melee_damage_lower = 55

@@ -130,15 +130,15 @@
 
 /datum/action/vehicle/sealed/horn/Trigger()
 	if(world.time - last_honk_time > 20)
-		vehicle_entered_target.visible_message("<span class='danger'>[vehicle_entered_target] loudly honks</span>")
-		to_chat(owner, "<span class='notice'>You press the vehicle's horn.</span>")
+		vehicle_entered_target.visible_message(SPAN_DANGER("[vehicle_entered_target] loudly honks!"))
+		to_chat(owner, SPAN_NOTICE("You press the vehicle's horn."))
 		playsound(vehicle_entered_target, hornsound, 75)
 		last_honk_time = world.time
 
 /datum/action/vehicle/sealed/horn/clowncar/Trigger()
 	if(world.time - last_honk_time > 20)
-		vehicle_entered_target.visible_message("<span class='danger'>[vehicle_entered_target] loudly honks</span>")
-		to_chat(owner, "<span class='notice'>You press the vehicle's horn.</span>")
+		vehicle_entered_target.visible_message(SPAN_DANGER("[vehicle_entered_target] loudly honks!"))
+		to_chat(owner, SPAN_NOTICE("You press the vehicle's horn."))
 		last_honk_time = world.time
 		if(vehicle_target.inserted_key)
 			vehicle_target.inserted_key.attack_self(owner) //The key plays a sound
@@ -151,7 +151,7 @@
 	button_icon_state = "car_dump"
 
 /datum/action/vehicle/sealed/DumpKidnappedMobs/Trigger()
-	vehicle_entered_target.visible_message("<span class='danger'>[vehicle_entered_target] starts dumping the people inside of it.</span>")
+	vehicle_entered_target.visible_message(SPAN_DANGER("[vehicle_entered_target] starts dumping the people inside of it."))
 	vehicle_entered_target.DumpSpecificMobs(VEHICLE_CONTROL_KIDNAPPED)
 
 
@@ -186,7 +186,7 @@
 //			V.unbuckle_mob(L)
 //			L.throw_at(landing_turf, 2, 2)
 //			L.Knockdown(40)
-//			V.visible_message("<span class='danger'>[L] misses the landing and falls on [L.p_their()] face!</span>")
+//			V.visible_message(SPAN_DANGER("[L] misses the landing and falls on [L.p_their()] face!"))
 //		else
 //			L.spin(4, 1)
 //			animate(L, pixel_y = -6, time = 4)

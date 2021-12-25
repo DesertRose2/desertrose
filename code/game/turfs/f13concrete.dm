@@ -116,7 +116,7 @@ Concrete = Cement 1u + Water 2u + Silicon 7u
 
 /datum/material/concrete
 	name = "concrete"
-	desc = "Concrete"
+	desc = "Tough concrete."
 	color = "#A49483"
 	sheet_type = /obj/item/stack/sheet/mineral/concrete
 
@@ -156,7 +156,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 
 /turf/closed/wall/mineral/concrete
 	name = "supermart wall"
-	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built"
+	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built."
 	icon = 'icons/turf/walls/f13superstore.dmi'
 	icon_state = "supermart"
 	icon_type_smooth = "supermart"
@@ -182,9 +182,9 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	if(istype(I,/obj/item/stack/sheet/mineral/concrete))
 		var/obj/item/stack/sheet/mineral/concrete/C = I
 		if(C.amount < 2)
-			to_chat(user, "<span class='warning'>You need at least two concrete bags to make a wall!</span>")
+			to_chat(user, SPAN_WARNING("You need at least two concrete bags to make a wall!"))
 			return
-		to_chat(user, "<span class='notice'>You start adding [I] to [src]...</span>")
+		to_chat(user, SPAN_NOTICE("You start adding [I] to [src]..."))
 		if(do_after(user, 50, target=src))
 			C.use(2)
 			var/turf/T = get_turf(src)
@@ -197,7 +197,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 
 		if(I.use_tool(src, user, 60, volume=50))
 			user.visible_message("[user] welds the [src] apart.", "You start to weld the [src] apart...")
-			to_chat(user, "<span class='notice'>You weld the [src] apart.</span>")
+			to_chat(user, SPAN_NOTICE("You weld the [src] apart."))
 			qdel(src)
 			return
 

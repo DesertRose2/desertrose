@@ -14,7 +14,7 @@
 		if(method in list(INGEST, VAPOR))
 			M.adjustToxLoss(3.75*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //increased from 0.5*reac_volume, which was amusingly low since stimpak heals toxins. now a pill at safe max crits and then heals back up to low health within a few seconds
 			if(show_message)
-				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+				to_chat(M, SPAN_WARNING("You don't feel so good..."))
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
@@ -162,7 +162,7 @@
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(3*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //also increased from 0.5, reduced from 6
 			if(show_message)
-				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+				to_chat(M, SPAN_WARNING("You don't feel so good..."))
 	..()
 
 /datum/reagent/medicine/healing_powder/overdose_start(mob/living/M)
@@ -280,14 +280,14 @@
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
+		to_chat(M, SPAN_NOTICE("You feel tougher, able to shrug off pain more easily."))
 		M.maxHealth += 50
 		M.health += 50
 		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
+		to_chat(M, SPAN_NOTICE("You feel as vulnerable to pain as a normal person."))
 		M.maxHealth -= 50
 		M.health -= 50
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
@@ -295,14 +295,14 @@
 		if(1 to 25)
 			M.confused += 10
 			M.blur_eyes(20)
-			to_chat(M, "<span class='notice'>Your head is pounding. Med-X is hard on the body. </span>")
+			to_chat(M, SPAN_NOTICE("Your head is pounding. Med-X is hard on the body. "))
 		if(26 to 50)
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
 			M.set_disgust(12)
 			M.adjustStaminaLoss(30*REAGENTS_EFFECT_MULTIPLIER)
-			to_chat(M, "<span class='danger'>Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. </span>")
+			to_chat(M, SPAN_DANGER("Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. "))
 		if(51 to INFINITY)
 			M.confused +=40
 			M.blur_eyes(30)
@@ -321,7 +321,7 @@
 			M.Jitter(1000)
 			M.set_heartattack(TRUE)
 			M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
-			to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+			to_chat(M, SPAN_DANGER("Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. "))
 			*/
 	..()
 
@@ -330,7 +330,7 @@
 	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
 		is_druggie = TRUE
 	if(is_druggie == FALSE && isliving(M))
-		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
+		to_chat(M, SPAN_NOTICE("You are not used to taking drugs."))
 		M.confused = 0
 	..()
 
@@ -360,7 +360,7 @@
 	M.Dizzy(2)
 	M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
 	if(prob(10))
-		to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+		to_chat(M, SPAN_DANGER("Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. "))
 	..()
 
 /datum/reagent/medicine/medx/addiction_act_stage1(mob/living/M)
@@ -409,7 +409,7 @@
 /datum/reagent/medicine/cateye/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel at ease as everything becomes clearer.</span>")
+		to_chat(M, SPAN_NOTICE("You feel at ease as everything becomes clearer."))
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		ADD_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
 		ADD_TRAIT(M, TRAIT_NIGHT_VISION, "cateye")
@@ -417,14 +417,14 @@
 /datum/reagent/medicine/cateye/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>Your eyes feel tired..</span>")
+		to_chat(M, SPAN_NOTICE("Your eyes feel tired.."))
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "cateye")
 		REMOVE_TRAIT(M, TRAIT_NICE_SHOT, "cateye")
 		REMOVE_TRAIT(M, TRAIT_NIGHT_VISION, "cateye")
 
 /datum/reagent/medicine/cateye/overdose_process(mob/living/M)
 	if(prob(33))
-		to_chat(M, "<span class='danger'>Your vision blurs and doesn't appear to come back!</span>")
+		to_chat(M, SPAN_DANGER("Your vision blurs and doesn't appear to come back!"))
 		M.Dizzy(2)
 		M.set_blurriness(50)
 	..()
@@ -477,23 +477,23 @@
 		M.cure_all_traumas(TRAUMA_RESILIENCE_SURGERY)
 /*	if(HAS_TRAIT(M, TRAIT_BLIND, TRAIT_GENERIC))
 		if(prob(20))
-			to_chat(M, "<span class='warning'>Your vision slowly returns...</span>")
+			to_chat(M, SPAN_WARNING("Your vision slowly returns..."))
 			M.cure_blind(EYE_DAMAGE)
 			M.cure_nearsighted(EYE_DAMAGE)
 			M.blur_eyes(35)
 	else if(HAS_TRAIT(M, TRAIT_NEARSIGHT, TRAIT_GENERIC))
-		to_chat(M, "<span class='warning'>The blackness in your peripheral vision fades.</span>")
+		to_chat(M, SPAN_WARNING("The blackness in your peripheral vision fades."))
 		M.cure_nearsighted(EYE_DAMAGE)
 		M.blur_eyes(10)*/
 	else if(M.eye_blind || M.eye_blurry)
 		M.set_blindness(0)
 		M.set_blurriness(0)
-		to_chat(M, "<span class='warning'>Your vision slowly returns to normal...</span>")
+		to_chat(M, SPAN_WARNING("Your vision slowly returns to normal..."))
 //	else if(eyes.eye_damage > 0)
 //		M.adjust_eye_damage(-1)
 //	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -2)
 	if (prob(5))
-		to_chat(M, "<span class='notice'>You feel way more intelligent!</span>")
+		to_chat(M, SPAN_NOTICE("You feel way more intelligent!"))
 	..()
 	. = TRUE
 
@@ -548,7 +548,7 @@
 //			M.reagents.remove_reagent(R.id,2)
 	for(var/datum/reagent/R in M.reagents.addiction_list)
 		M.reagents.addiction_list.Remove(R)
-		to_chat(M, "<span class='notice'>You feel like you've gotten over your need for [R.name].</span>")
+		to_chat(M, SPAN_NOTICE("You feel like you've gotten over your need for [R.name]."))
 	M.confused = max(M.confused, 4)
 	if(ishuman(M) && prob(5))
 		var/mob/living/carbon/human/H = M

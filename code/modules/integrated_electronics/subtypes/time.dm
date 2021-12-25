@@ -142,8 +142,8 @@
 	power_draw_per_use = 2
 
 /obj/item/integrated_circuit/time/clock
-	name = "integrated clock (NT Common Time)"
-	desc = "Tells you what the time is, in Nanotrasen Common Time."				//round time
+	name = "integrated clock (Vault Common Time)"
+	desc = "Tells you what the time is, in Vault-Tec Common Time."				//round time
 	icon_state = "clock"
 	inputs = list()
 	outputs = list(
@@ -172,14 +172,14 @@
 
 /obj/item/integrated_circuit/time/clock/station
 	name = "integrated clock (Station Time)"
-	desc = "Tells you what the time is, in terms and adjusted for your local station or planet"
+	desc = "Tells you what the time is, in terms and adjusted for your own personal slice of the wasteland."
 
 /obj/item/integrated_circuit/time/clock/station/get_time()
 	return STATION_TIME(FALSE, world.time)
 
 /obj/item/integrated_circuit/time/clock/bluespace
-	name = "integrated clock (Bluespace Absolute Time)"
-	desc = "Tells you what the time is, in Bluespace Absolute Time, unaffected by local time dilation or other phenomenon."
+	name = "integrated clock (Solar Absolute Time)"
+	desc = "Tells you what the time is, in Solar Absolute Time, unaffected by local time dilation or other phenomenon."
 
 /obj/item/integrated_circuit/time/clock/bluespace/get_time()
 	return REALTIMEOFDAY

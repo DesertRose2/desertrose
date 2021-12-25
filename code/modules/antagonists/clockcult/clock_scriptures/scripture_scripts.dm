@@ -34,7 +34,7 @@
 	power_cost = 250
 	object_path = /obj/structure/destructible/clockwork/ocular_warden
 	creator_message = "<span class='brass'>You form an ocular warden, which will automatically attack nearby unrestrained non-Servants that can see it.</span>"
-	observer_message = "<span class='warning'>A brass eye takes shape and slowly rises into the air, its red iris glaring!</span>"
+	observer_message = SPAN_WARNING("A brass eye takes shape and slowly rises into the air, its red iris glaring!")
 	usage_tip = "Although powerful, the warden is very fragile and should optimally be placed behind barricades."
 	tier = SCRIPTURE_SCRIPT
 	one_per_tile = TRUE
@@ -72,7 +72,7 @@
 
 /datum/clockwork_scripture/create_object/vitality_matrix/check_special_requirements()
 	if(locate(object_path) in range(1, invoker))
-		to_chat(invoker, "<span class='danger'>Vitality matrices placed next to each other could interfere and cause a feedback loop! Move away from the other ones!</span>")
+		to_chat(invoker, SPAN_DANGER("Vitality matrices placed next to each other could interfere and cause a feedback loop! Move away from the other ones!"))
 		return FALSE
 	return ..()
 
@@ -157,12 +157,12 @@
 
 /datum/clockwork_scripture/clockwork_armaments/check_special_requirements()
 	for(var/datum/action/innate/clockwork_armaments/F in invoker.actions)
-		to_chat(invoker, "<span class='warning'>You have already bound a Ratvarian spear to yourself!</span>")
+		to_chat(invoker, SPAN_WARNING("You have already bound a Ratvarian spear to yourself!"))
 		return FALSE
 	return invoker.can_hold_items()
 
 /datum/clockwork_scripture/clockwork_armaments/scripture_effects()
-	invoker.visible_message("<span class='warning'>A shimmer of yellow light infuses [invoker]!</span>", \
+	invoker.visible_message(SPAN_WARNING("A shimmer of yellow light infuses [invoker]!"), \
 	"<span class='brass'>You bind clockwork equipment to yourself. Use Clockwork Armaments and Call Spear to summon them.</span>")
 	var/datum/action/innate/call_weapon/ratvarian_spear/S = new()
 	S.Grant(invoker)
@@ -213,7 +213,7 @@
 	if(remove_item_if_better(I, owner))
 		do_message += owner.equip_to_slot_or_del(new/obj/item/clothing/shoes/clockwork(null), SLOT_SHOES)
 	if(do_message)
-		owner.visible_message("<span class='warning'>Strange armor appears on [owner]!</span>", "<span class='heavy_brass'>A bright shimmer runs down your body, equipping you with Ratvarian armor.</span>")
+		owner.visible_message(SPAN_WARNING("Strange armor appears on [owner]!"), "<span class='heavy_brass'>A bright shimmer runs down your body, equipping you with Ratvarian armor.</span>")
 		playsound(owner, 'sound/magic/clockwork/fellowship_armory.ogg', 15 * do_message, TRUE) //get sound loudness based on how much we equipped
 	cooldown = CLOCKWORK_ARMOR_COOLDOWN + world.time
 	owner.update_action_buttons_icon()
@@ -415,7 +415,7 @@
 	quickbind_desc = "Quickly drains power in an area around the invoker, causing burns proportional to the amount of energy drained.<br><b>Maximum of 20 chants.</b>"
 
 /datum/clockwork_scripture/channeled/void_volt/scripture_effects()
-	invoker.visible_message("<span class='warning'>[invoker] glows in a brilliant golden light!</span>")
+	invoker.visible_message(SPAN_WARNING("[invoker] glows in a brilliant golden light!"))
 	invoker.add_atom_colour("#FFD700", ADMIN_COLOUR_PRIORITY)
 	invoker.light_power = 2
 	invoker.light_range = 4
@@ -453,7 +453,7 @@
 	return TRUE
 
 /datum/clockwork_scripture/channeled/void_volt/chant_end_effects()
-	invoker.visible_message("<span class='warning'>[invoker] stops glowing...</span>")
+	invoker.visible_message(SPAN_WARNING("[invoker] stops glowing..."))
 	invoker.remove_atom_colour(ADMIN_COLOUR_PRIORITY)
 	invoker.light_power = 0
 	invoker.light_range = 0

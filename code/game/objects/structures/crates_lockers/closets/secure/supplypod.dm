@@ -23,13 +23,13 @@
 	var/atom/other_delivery
 
 /obj/structure/closet/supplypod/bluespacepod
-	name = "Bluespace Drop Pod"
-	desc = "A Bluespace drop pod. Teleports back to CentCom after delivery."
+	name = "Quantum Drop Pod"
+	desc = "A quantum drop pod. Teleports back to CentCom after delivery."
 	icon_state = "bluespacepod"
 
 /obj/structure/closet/supplypod/bluespacepod/centcompod
 	name = "CentCom Drop Pod"
-	desc = "A Bluespace drop pod, this one has been marked with Central Command's designations. Teleports back to Centcom after delivery."
+	desc = "A quantum drop pod, this one has been marked with Central Command's designations. Teleports back to Centcom after delivery."
 	icon_state = "centcompod"
 
 /obj/structure/closet/supplypod/Initialize(mapload, SO)
@@ -148,8 +148,8 @@
 
 //------------------------------------UPGRADES-------------------------------------//
 /obj/item/disk/cargo/bluespace_pod
-	name = "Bluespace Drop Pod Upgrade"
-	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Bluespace Drop Pods to the supply department."
+	name = "Quantum Drop Pod Upgrade"
+	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Quantum Drop Pods to the supply department."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cargodisk"
 	item_state = "card-id"
