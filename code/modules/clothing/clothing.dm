@@ -271,12 +271,8 @@
 		armor_list += list("EXPLOSIVE" = armor.bomb)
 	if(armor.bullet)
 		armor_list += list("BULLET" = armor.bullet)
-	if(armor.energy)
-		armor_list += list("ENERGY" = armor.energy)
 	if(armor.laser)
 		armor_list += list("LASER" = armor.laser)
-	if(armor.magic)
-		armor_list += list("MAGIC" = armor.magic)
 	if(armor.melee)
 		armor_list += list("MELEE" = armor.melee)
 	if(armor.rad)
@@ -284,8 +280,6 @@
 
 	if(LAZYLEN(durability_list))
 		durability_list.Cut()
-	if(armor.fire)
-		durability_list += list("FIRE" = armor.fire)
 	if(armor.acid)
 		durability_list += list("ACID" = armor.acid)
 
