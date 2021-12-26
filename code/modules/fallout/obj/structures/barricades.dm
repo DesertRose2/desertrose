@@ -1,3 +1,4 @@
+// In this document: Barricades: buildable, provides some cover
 #define SINGLE "single"
 #define VERTICAL "vertical"
 #define HORIZONTAL "horizontal"
@@ -90,6 +91,7 @@
 
 //Yeah the new tents go here. Sue me. Use cloth for more posh places like NCR, brahmin skin for tribals/legion//
 //You'll find train turfs here too. Sue me.
+// should be moved I guess, guh
 
 /obj/structure/barricade/tentleathercorner
 	name = "brahmin skin tent"
@@ -111,12 +113,19 @@
 	icon = 'icons/fallout/turfs/walls/tents.dmi'
 	icon_state = "cloth_edge"
 
+/////////////////////////
+/// WOODEN BARRICADES ///
+/////////////////////////
+
 /obj/structure/barricade/wooden
 	name = "wooden barricade"
 	desc = "This space is blocked off by a wooden barricade."
 	icon_state = "woodenbarricade"
 	bar_material = WOOD
 	var/drop_amount = 3
+
+/obj/structure/barricade/wooden/make_debris()
+	new /obj/item/stack/sheet/mineral/wood(get_turf(src), drop_amount)
 
 /obj/structure/barricade/wooden/strong
 	name = "strong wooden barricade"
@@ -140,9 +149,6 @@
 	icon_state = "woodenbarricade-snow-old"
 	max_integrity = 75
 
-/obj/structure/barricade/wooden/make_debris()
-	new /obj/item/stack/sheet/mineral/wood(get_turf(src), drop_amount)
-
 /obj/structure/barricade/wooden/boarded_door
 	name = "boarded up"
 	desc = "Bunch of planks blocking up a doorway or other opening"
@@ -158,6 +164,11 @@
 	icon_state = "trainwall"
 	icon_type_smooth = "trainwall"
 
+
+//////////////////
+/// METAL BARS ///
+//////////////////
+
 /obj/structure/barricade/bars
 	name = "metal bars"
 	desc = "Old, corroded metal bars. Ain't got a file on you, right?" //Description by Mr.Fagetti
@@ -167,6 +178,10 @@
 	proj_pass_rate = 90
 	pass_flags = LETPASSTHROW //Feed the prisoners, or not.
 
+
+////////////////
+/// SANDBAGS ///
+////////////////
 
 /obj/structure/barricade/sandbags
 	name = "sandbags"
@@ -195,6 +210,11 @@
 
 /obj/structure/barricade/sandbags/make_debris()
 	new /obj/item/stack/ore/glass(get_turf(src), drop_amount)
+
+
+////////////////////////
+/// SS 13 vanilla =( ///
+////////////////////////
 
 /obj/structure/barricade/security
 	name = "security barrier"
