@@ -90,7 +90,6 @@
 			source.playsound_local(source, 'sound/misc/ui_toggle_vats.ogg', 70, FALSE, pressure_affected = FALSE)
 	RegisterSignal(source, COMSIG_MOB_CLIENT_MOUSEMOVE, .proc/onMouseMove)
 	RegisterSignal(source, COMSIG_MOVABLE_MOVED, .proc/on_move)
-	RegisterSignal(source, COMSIG_MOB_CLIENT_MOVE, .proc/on_client_move)
 	if(hud_icon)
 		hud_icon.combat_on = TRUE
 		hud_icon.update_icon()
@@ -131,11 +130,6 @@
 	var/mob/living/L = source
 	if(mode_flags & COMBAT_MODE_ACTIVE && L.client && lastmousedir && lastmousedir != dir)
 		L.setDir(lastmousedir, ismousemovement = TRUE)
-
-/// Added movement delay if moving backward.
-/datum/component/combat_mode/proc/on_client_move(mob/source, client/client, direction, n, oldloc, added_delay)
-	if(oldloc != n && direction == REVERSE_DIR(source.dir))
-		client.move_delay += added_delay*0.5
 
 ///Changes the user direction to (try) match the pointer.
 /datum/component/combat_mode/proc/onMouseMove(mob/source, object, location, control, params)
