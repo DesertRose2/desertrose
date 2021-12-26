@@ -118,6 +118,14 @@
 	bar_material = WOOD
 	var/drop_amount = 3
 
+/obj/structure/barricade/wooden/strong
+	name = "strong wooden barricade"
+	desc = "This space is blocked off by a strong wooden barricade."
+	obj_integrity = 300
+	max_integrity = 300
+	proj_pass_rate = 30
+	can_build = FALSE
+
 /obj/structure/barricade/wooden/crude
 	name = "crude plank barricade"
 	desc = "This space is blocked off by a crude assortment of planks."
