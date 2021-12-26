@@ -1,9 +1,10 @@
-// ID locked Fallout doors, unpowered being as the name says, simple mechanical doors.
+// ID locked Fallout doors, unpowered being as the name says, simple mechanical doors. The doors in this file can be ID locked, but no padlocked, so reverse of simple doors.
 
 /obj/machinery/door/unpowered
 	icon = 'icons/fallout/structures/doors.dmi'
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 70)
 	autoclose = TRUE
+	density = TRUE
 	max_integrity = 300
 	obj_integrity = 300
 	req_one_access_txt = null // Add the channel for the ID you want to lock this door to, check defines.
@@ -27,7 +28,6 @@
 	desc = "Thick wooden door with a built-in lock. Can't be padlocked."
 	icon_state = "secure"
 	assemblytype = /obj/item/stack/sheet/mineral/wood/five
-	density = TRUE
 	explosion_block = TRUE
 
 /obj/machinery/door/unpowered/securedoor/update_icon()
@@ -66,14 +66,13 @@
 	assemblytype = /obj/item/stack/sheet/metal/ten
 	max_integrity = 700
 	obj_integrity = 700
-	density = TRUE
 	explosion_block = TRUE
 
 /obj/machinery/door/unpowered/secure_steeldoor/update_icon()
 	if(density)
 		icon_state = "secure_steel"
 	else
-		icon_state = "secure_steelopen"
+		icon_state = "secure_steel_open"
 
 /obj/machinery/door/unpowered/secure_steeldoor/do_animate(animation)
 	switch(animation)
@@ -98,7 +97,6 @@
 	assemblytype = /obj/item/stack/sheet/metal/ten
 	max_integrity = 700
 	obj_integrity = 700
-	density = TRUE
 	explosion_block = TRUE
 	req_access_txt = "121"
 
@@ -106,7 +104,7 @@
 	if(density)
 		icon_state = "secure_NCR"
 	else
-		icon_state = "secure_NCRopen"
+		icon_state = "secure_NCR_open"
 
 /obj/machinery/door/unpowered/secure_NCR/do_animate(animation)
 	switch(animation)
@@ -126,7 +124,6 @@
 	max_integrity = 600
 	obj_integrity = 600
 	assemblytype = /obj/item/stack/rods
-	density = TRUE
 	visible = FALSE
 	explosion_block = FALSE
 	pass_flags = LETPASSTHROW 
@@ -153,7 +150,7 @@
 	req_access_txt = "123"
 
 
-// Intended for the outer door of Legion bases, instead of airlocks.
+// Legion iron gate. Intended for the outer door of Legion bases, instead of airlocks.
 /obj/machinery/door/unpowered/secure_legion
 	name = "iron gate"
 	desc = "Thick iron rods with sharp tips make for a fitting gate for the Legion castrum."
@@ -161,7 +158,6 @@
 	max_integrity = 700
 	obj_integrity = 700
 	assemblytype = /obj/item/stack/rods
-	density = TRUE
 	visible = FALSE
 	explosion_block = FALSE
 	proj_pass_rate = 95
@@ -171,7 +167,7 @@
 	if(density)
 		icon_state = "secure_legion"
 	else
-		icon_state = "secure_legionopen"
+		icon_state = "secure_legion_open"
 
 /obj/machinery/door/unpowered/secure_legion/do_animate(animation)
 	switch(animation)
@@ -181,3 +177,29 @@
 		if("closing")
 			playsound(src,'sound/f13machines/doorchainlink_close.ogg',40,1)
 			flick("secure_legion_closing", src)
+
+
+// Intended for the outer door of BoS bases, instead of airlocks. Toughest but costs most metal.
+/obj/machinery/door/unpowered/secure_bos
+	name = "steel security door"
+	desc = "Hard steel makes a statement. The statement in this case is stay out."
+	icon_state = "secure_bos" 
+	max_integrity = 800
+	obj_integrity = 800
+	assemblytype = /obj/item/stack/sheet/metal/ten
+	req_access_txt = "120"
+
+/obj/machinery/door/unpowered/secure_bos/update_icon()
+	if(density)
+		icon_state = "secure_bos"
+	else
+		icon_state = "secure_bos_open"
+
+/obj/machinery/door/unpowered/secure_bos/do_animate(animation)
+	switch(animation)
+		if("opening")
+			playsound(src,'sound/machines/door_open.ogg',40,1)
+			flick("secure_bos_opening", src)
+		if("closing")
+			playsound(src,'sound/machines/door_close.ogg',40,1)
+			flick("secure_bos_closing", src)

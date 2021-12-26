@@ -1,6 +1,7 @@
 /////////////////
 //Large Objects//
 /////////////////
+
 /datum/crafting_recipe/ncrgate
 	name = "NCR reinforced door"
 	result = /obj/machinery/door/unpowered/secure_NCR
@@ -19,6 +20,16 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 	always_availible = FALSE
+
+/datum/crafting_recipe/gate_bos
+	name = "Brotherhood steel door"
+	result = /obj/machinery/door/unpowered/secure_bos
+	reqs = list(/obj/item/stack/sheet/metal = 35)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_availible = FALSE
+
 
 /datum/crafting_recipe/plant
 	name = "Potted plant"
