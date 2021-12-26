@@ -88,7 +88,34 @@
 /obj/machinery/door/unpowered/secure_steeldoor/shopstorage
 	name = "shop storeroom"
 	req_access_txt = "139"
-	autoclose = TRUE
+
+
+//  NCR secure door - intended to replace the darned airlocks people build. Same function.
+/obj/machinery/door/unpowered/secure_NCR
+	name = "reinforced door"
+	desc = "Solid oak and metal reinforcements make this style of door a favoured method to secure Republic buildings. Has a built in lock."
+	icon_state = "secure_NCR"
+	assemblytype = /obj/item/stack/sheet/metal/ten
+	max_integrity = 700
+	obj_integrity = 700
+	density = TRUE
+	explosion_block = TRUE
+	req_access_txt = "121"
+
+/obj/machinery/door/unpowered/secure_NCR/update_icon()
+	if(density)
+		icon_state = "secure_NCR"
+	else
+		icon_state = "secure_NCRopen"
+
+/obj/machinery/door/unpowered/secure_NCR/do_animate(animation)
+	switch(animation)
+		if("opening")
+			playsound(src,'sound/machines/door_open.ogg',40,1)
+			flick("secure_NCR_opening", src)
+		if("closing")
+			playsound(src,'sound/machines/door_close.ogg',40,1)
+			flick("secure_NCR_closing", src)
 
 
 // ID lock it, so guards etc can access, but those outside faction cannot.
@@ -124,3 +151,33 @@
 /obj/machinery/door/unpowered/celldoor/legion
 	name = "Prison door"
 	req_access_txt = "123"
+
+
+// Intended for the outer door of Legion bases, instead of airlocks.
+/obj/machinery/door/unpowered/secure_legion
+	name = "iron gate"
+	desc = "Thick iron rods with sharp tips make for a fitting gate for the Legion castrum."
+	icon_state = "secure_legion" 
+	max_integrity = 700
+	obj_integrity = 700
+	assemblytype = /obj/item/stack/rods
+	density = TRUE
+	visible = FALSE
+	explosion_block = FALSE
+	proj_pass_rate = 95
+	req_access_txt = "123"
+
+/obj/machinery/door/unpowered/secure_legion/update_icon()
+	if(density)
+		icon_state = "secure_legion"
+	else
+		icon_state = "secure_legionopen"
+
+/obj/machinery/door/unpowered/secure_legion/do_animate(animation)
+	switch(animation)
+		if("opening")
+			playsound(src,'sound/f13machines/doorchainlink_open.ogg',40,1)
+			flick("secure_legion_opening", src)
+		if("closing")
+			playsound(src,'sound/f13machines/doorchainlink_close.ogg',40,1)
+			flick("secure_legion_closing", src)

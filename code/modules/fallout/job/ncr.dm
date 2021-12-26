@@ -30,6 +30,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/smoke)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrgate)
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //LM and LC Only Roles

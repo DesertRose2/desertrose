@@ -36,6 +36,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/zombiepoultice)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legiongate)
+
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
