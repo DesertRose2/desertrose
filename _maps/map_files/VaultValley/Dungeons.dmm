@@ -254,15 +254,15 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice{
+/obj/item/reagent_containers/pill/patch/f13/healpoultice{
 	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice{
+/obj/item/reagent_containers/pill/patch/f13/healpoultice{
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "dk" = (
@@ -3100,21 +3100,21 @@
 "MV" = (
 /obj/structure/table,
 /obj/machinery/light/broken,
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = -3
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = 3
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "Nf" = (
@@ -4182,13 +4182,13 @@
 "ZU" = (
 /obj/structure/table,
 /obj/machinery/light/broken,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super{
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super{
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super{
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "ZX" = (

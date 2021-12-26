@@ -48,7 +48,6 @@
 	icon_state = "bitter"
 	self_delay = 0
 
-
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak
 	name = "stimpak"
 	desc = "A handheld delivery system for medicine, used to rapidly heal physical damage to the body."

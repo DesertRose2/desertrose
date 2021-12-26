@@ -373,7 +373,7 @@
 /turf/open/floor/plating/f13/inside,
 /area/space)
 "db" = (
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -938,7 +938,7 @@
 "hi" = (
 /obj/structure/closet/crate/radiation,
 /obj/item/reagent_containers/blood/radaway,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1709,7 +1709,7 @@
 /obj/item/trash/can{
 	icon_state = "air"
 	},
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2212,7 +2212,7 @@
 /area/space)
 "pA" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2273,7 +2273,7 @@
 /area/f13/building)
 "pZ" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/reagent_containers/medspray/styptic,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -5589,9 +5589,9 @@
 /area/f13/city)
 "Oq" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /turf/open/floor/f13,
 /area/f13/city)
