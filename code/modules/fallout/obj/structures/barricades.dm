@@ -6,16 +6,20 @@
 #define WOOD 2
 #define SAND 3
 
-//Barricades/cover
+///////////////////////
+/// BARRICADE TYPES ///
+///////////////////////
 
 /obj/structure/barricade
 	name = "chest high wall"
 	desc = "Looks like this would make good cover."
+	icon = 'icons/fallout/structures/barricades.dmi'
 	anchored = TRUE
 	density = TRUE
 	max_integrity = 100
-//	var/proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
+	proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
 	var/bar_material = METAL
+	var/can_build = TRUE
 
 /obj/structure/barricade/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -46,7 +50,44 @@
 	else
 		return ..()
 
-/////BARRICADE TYPES AND TENTS///////
+/obj/structure/barricade/wooden/attackby(obj/item/weapon/I, mob/living/user, params)
+	if(!istype(I, /obj/item/stack/sheet) || !can_build)
+		return ..()
+	if(!isfloorturf(loc) && !isplatingturf(loc))
+		to_chat(user, SPAN_WARNING("You can only build the structure on a solid floor!"))
+		return
+
+	var/walltype
+	var/windowtype
+	var/structname = "a wall"
+	if(istype(I, /obj/item/stack/sheet/mineral/wood))
+		walltype = /turf/closed/wall/f13/wood
+	else if(istype(I, /obj/item/stack/sheet/cloth))
+		walltype = /turf/closed/wall/f13/wood/interior
+		structname = "an interior wall"
+	else if(istype(I, /obj/item/stack/sheet/leather))
+		walltype = /turf/closed/wall/f13/wood/house
+		structname = "a house wall"
+	else if(istype(I, /obj/item/stack/sheet/glass))
+		windowtype = /obj/structure/window/fulltile/house
+		structname = "a house window"
+	else if(istype(I, /obj/item/stack/sheet/rglass))
+		windowtype = /obj/structure/window/fulltile/wood
+		structname = "a wood framed window"
+	else
+		return ..()
+	
+	to_chat(user, SPAN_NOTICE("You start building [structname]..."))
+	if(do_after(user, 100, target = src) && I.use(3))
+		var/turf/open/T = loc
+		if(walltype)
+			T.ChangeTurf(walltype)
+		else if(windowtype)
+			new windowtype(T)
+		qdel(src)
+	return TRUE
+
+
 //Yeah the new tents go here. Sue me. Use cloth for more posh places like NCR, brahmin skin for tribals/legion//
 //You'll find train turfs here too. Sue me.
 
@@ -73,17 +114,9 @@
 /obj/structure/barricade/wooden
 	name = "wooden barricade"
 	desc = "This space is blocked off by a wooden barricade."
-	icon = 'icons/obj/structures.dmi'
 	icon_state = "woodenbarricade"
 	bar_material = WOOD
 	var/drop_amount = 3
-
-/obj/structure/barricade/train
-	name = "train siding"
-	desc = "The side of an ancient train, the vehicles that tamed the West. Now, it's little more than an armoured coffin wall."
-	icon = 'icons/turf/walls/f13composite.dmi'
-	icon_state = "trainwall"
-	icon_type_smooth = "trainwall"
 
 /obj/structure/barricade/wooden/crude
 	name = "crude plank barricade"
@@ -101,6 +134,30 @@
 
 /obj/structure/barricade/wooden/make_debris()
 	new /obj/item/stack/sheet/mineral/wood(get_turf(src), drop_amount)
+
+/obj/structure/barricade/wooden/boarded_door
+	name = "boarded up"
+	desc = "Bunch of planks blocking up a doorway or other opening"
+	icon_state = "boarded"
+	obj_integrity = 150
+	max_integrity = 150
+	proj_pass_rate = 0
+
+/obj/structure/barricade/train
+	name = "train siding"
+	desc = "The side of an ancient train, the vehicles that tamed the West. Now, it's little more than an armoured coffin wall."
+	icon = 'icons/turf/walls/f13composite.dmi'
+	icon_state = "trainwall"
+	icon_type_smooth = "trainwall"
+
+/obj/structure/barricade/bars
+	name = "metal bars"
+	desc = "Old, corroded metal bars. Ain't got a file on you, right?" //Description by Mr.Fagetti
+	icon_state = "bars"
+	obj_integrity = 400
+	max_integrity = 400
+	proj_pass_rate = 90
+	pass_flags = LETPASSTHROW //Feed the prisoners, or not.
 
 
 /obj/structure/barricade/sandbags

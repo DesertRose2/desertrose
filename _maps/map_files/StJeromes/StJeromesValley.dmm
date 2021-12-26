@@ -10429,7 +10429,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "aEN" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "aEO" = (
@@ -20592,7 +20592,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkW" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkY" = (
@@ -32468,7 +32468,7 @@
 	},
 /area/f13/tunnel)
 "bSc" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -32513,7 +32513,7 @@
 	},
 /area/f13/tunnel)
 "bSk" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube"
@@ -32542,7 +32542,7 @@
 	},
 /area/f13/tunnel)
 "bSp" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -34677,7 +34677,7 @@
 /area/f13/den)
 "bZp" = (
 /obj/structure/bed/mattress/pregame,
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
@@ -38332,7 +38332,7 @@
 	},
 /area/f13/sewer)
 "fko" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "fls" = (
@@ -42173,7 +42173,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "uIL" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/machinery/light/small{
 	dir = 1
 	},

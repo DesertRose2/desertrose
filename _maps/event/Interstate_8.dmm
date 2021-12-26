@@ -1389,7 +1389,7 @@
 	},
 /area/f13/building)
 "oq" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
 	},

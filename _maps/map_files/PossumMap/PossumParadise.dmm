@@ -13522,14 +13522,14 @@
 /turf/open/floor/carpet/black,
 /area/f13/casino)
 "aRI" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "aRJ" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
 	icon_state = "dirt"
@@ -13626,7 +13626,7 @@
 	},
 /area/f13/wasteland)
 "aSa" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirt"
@@ -13738,7 +13738,7 @@
 	},
 /area/f13/wasteland)
 "aSw" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerpavement"
@@ -13787,7 +13787,7 @@
 	},
 /area/f13/city/museum)
 "aSD" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerpavementcorner"
@@ -17640,7 +17640,7 @@
 	},
 /area/f13/city/museum)
 "beL" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "beM" = (

@@ -2636,20 +2636,20 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "iR" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 10;
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "iS" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "iT" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirtcorner"
@@ -2712,7 +2712,7 @@
 	},
 /area/f13/wasteland)
 "ji" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
 	icon_state = "dirt"
@@ -2769,7 +2769,7 @@
 	},
 /area/f13/wasteland)
 "js" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
 	icon_state = "dirt"
@@ -2817,21 +2817,21 @@
 	},
 /area/f13/wasteland)
 "jy" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 9;
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "jz" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
 "jA" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
@@ -4168,7 +4168,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "nD" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
@@ -4226,7 +4226,7 @@
 	},
 /area/f13/wasteland)
 "nM" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"

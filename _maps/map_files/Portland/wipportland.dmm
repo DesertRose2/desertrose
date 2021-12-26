@@ -2637,7 +2637,7 @@
 	},
 /area/space)
 "sx" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -2735,7 +2735,7 @@
 /turf/open/floor/f13/wood,
 /area/space)
 "te" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -3257,7 +3257,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "wK" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
