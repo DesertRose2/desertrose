@@ -20613,7 +20613,7 @@
 /obj/structure/table,
 /obj/item/twohanded/sledgehammer/atomsjudgement,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/obj/item/reagent_containers/pill/radx,
+/obj/item/reagent_containers/pill/f13/radx,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
 "uek" = (

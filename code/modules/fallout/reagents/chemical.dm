@@ -134,7 +134,7 @@
 	name = "syringe (med-x)"
 	desc = "Contains Med-X, a powerful analgesic drug that increases the user's damage resistance. Highly addictive, and prolonged presence in the body comes with severe side effects."
 	list_reagents = list(/datum/reagent/medicine/medx = 10)
-	icon_state = "med-x"
+	icon_state = "medx"
 
 /obj/item/reagent_containers/hypospray/medipen/f13/medx/update_overlays()
 	. = ..()
@@ -145,7 +145,7 @@
 /obj/item/reagent_containers/hypospray/medipen/f13/psycho
 	name = "psycho"
 	desc = "Contains Psycho, a drug that makes the user hit harder and shrug off slight stuns, but causes slight brain damage and carries a risk of addiction."
-	icon_state = "psychopen"
+	icon_state = "psycho"
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)

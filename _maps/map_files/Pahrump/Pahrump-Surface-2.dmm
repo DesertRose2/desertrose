@@ -14028,7 +14028,7 @@
 /area/f13/wasteland)
 "eGp" = (
 /obj/item/twohanded/required/kirbyplants/dead,
-/obj/item/reagent_containers/pill/fixer,
+/obj/item/reagent_containers/pill/f13/fixer,
 /obj/item/reagent_containers/pill/insulin,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
