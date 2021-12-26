@@ -8,7 +8,7 @@
 	if (prob(90))
 		playsound(loc, "punch", 25, 1, -1)
 		log_combat(M, src, "attacked")
-		visible_message("<span class='danger'>[M] has kicked [src]!</span>", \
+		visible_message(SPAN_DANGER("[M] has kicked [src]!"), \
 				"<span class='userdanger'>[M] has kicked [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 		if ((stat != DEAD) && (damage > 4.9))
 			Unconscious(rand(100,200))
@@ -17,7 +17,7 @@
 		apply_damage(damage, BRUTE, affecting)
 	else
 		playsound(loc, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
-		visible_message("<span class='danger'>[M] has attempted to kick [src]!</span>", \
+		visible_message(SPAN_DANGER("[M] has attempted to kick [src]!"), \
 				"<span class='userdanger'>[M] has attempted to kick [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 /mob/living/carbon/alien/larva/attack_hulk(mob/living/carbon/human/user, does_attack_animation = FALSE)
@@ -26,7 +26,7 @@
 		if(.)
 			return
 		playsound(loc, "punch", 25, 1, -1)
-		visible_message("<span class='danger'>[user] has pummeled [src]!</span>", \
+		visible_message(SPAN_DANGER("[user] has pummeled [src]!"), \
 		"<span class='userdanger'>[user] has pummeled [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 		adjustBruteLoss(5 + rand(1,9))
 		new /datum/forced_movement(src, get_step_away(user,src, 30), 1)

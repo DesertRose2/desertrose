@@ -7,8 +7,8 @@
 //The gateway to Reebe, from which Ratvar emerges.
 /obj/structure/destructible/clockwork/massive/celestial_gateway
 	name = "\improper Ark of the Clockwork Justicar"
-	desc = "A massive, hulking amalgamation of parts. It seems to be maintaining a very unstable bluespace anomaly."
-	clockwork_desc = "Nezbere's magnum opus: a hulking clockwork machine capable of combining bluespace and steam power to summon Ratvar. Once activated, \
+	desc = "A massive, hulking amalgamation of parts. It seems to be maintaining a very unstable quantum anomaly."
+	clockwork_desc = "Nezbere's magnum opus: a hulking clockwork machine capable of combining quantum and steam power to summon Ratvar. Once activated, \
 	its instability will alert the entire area, so be prepared to defend it at all costs."
 	max_integrity = 500
 	mouse_opacity = MOUSE_OPACITY_OPAQUE
@@ -78,7 +78,7 @@
 	first_sound_played = TRUE
 	active = TRUE
 	visible_message("<span class='boldwarning'>[src] shudders and roars to life, its parts beginning to whirr and screech!</span>")
-	priority_announce("Massive [Gibberish("bluespace", 100)] anomaly detected on all frequencies. All crew are directed to \
+	priority_announce("Massive [Gibberish("quantum", 100)] anomaly detected on all frequencies. All crew are directed to \
 	@!$, [text2ratvar("PURGE ALL UNTRUTHS")] <&. the anomalies and destroy their source to prevent further damage to corporate property. This is \
 	not a drill.", "Central Command Higher Dimensional Affairs", 'sound/magic/clockwork/ark_activation_sequence.ogg')
 	set_security_level("delta")
@@ -158,7 +158,7 @@
 	var/was_stranded = SSshuttle.emergency.mode == SHUTTLE_STRANDED
 	SSshuttle.clearHostileEnvironment(src)
 	if(!was_stranded && !purpose_fulfilled)
-		priority_announce("Massive energy anomaly no longer on short-range scanners, bluespace distortions still detected.","Central Command Higher Dimensional Affairs")
+		priority_announce("Massive energy anomaly no longer on short-range scanners, quantum distortions still detected.","Central Command Higher Dimensional Affairs")
 	if(glow)
 		qdel(glow)
 		glow = null
@@ -223,20 +223,20 @@
 			. += "<span class='big'><b>Time until Ratvar's arrival:</b> [DisplayTimeText(get_arrival_time())]</span>"
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='heavy_brass'>The Ark is feeding power into the bluespace field.</span>"
+					. += "<span class='heavy_brass'>The Ark is feeding power into the quantum field.</span>"
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
 					. += "<span class='heavy_brass'>The field is ripping open a copy of itself in Ratvar's prison.</span>"
 				if(GATEWAY_RATVAR_COMING to INFINITY)
-					. += "<span class='heavy_brass'>With the bluespace field established, Ratvar is preparing to come through!</span>"
+					. += "<span class='heavy_brass'>With the quantum field established, Ratvar is preparing to come through!</span>"
 	else
 		if(!active)
-			. += "<span class='warning'>Whatever it is, it doesn't seem to be active.</span>"
+			. += SPAN_WARNING("Whatever it is, it doesn't seem to be active.")
 		else
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='warning'>You see a swirling bluespace anomaly steadily growing in intensity.</span>"
+					. += SPAN_WARNING("You see a swirling quantum anomaly steadily growing in intensity.")
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
-					. += "<span class='warning'>The anomaly is stable, and you can see flashes of something from it.</span>"
+					. += SPAN_WARNING("The anomaly is stable, and you can see flashes of something from it.")
 				if(GATEWAY_RATVAR_COMING to INFINITY)
 					. += "<span class='boldwarning'>The anomaly is stable! Something is coming through!</span>"
 
@@ -255,7 +255,7 @@
 			if(!isnewplayer(M))
 				var/turf/T = get_turf(M)
 				if(T && T.z == z)
-					to_chat(M, "<span class='warning'><b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]...</span>")
+					to_chat(M, SPAN_WARNING("<b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]..."))
 				else
 					to_chat(M, "<span class='boldwarning'>You hear otherworldly sounds from all around you...</span>")
 	if(!obj_integrity)
@@ -344,12 +344,12 @@
 	if(!IsAdminGhost(user))
 		return ..()
 	if(GLOB.servants_active)
-		to_chat(user, "<span class='danger'>The Ark is already counting down.</span>")
+		to_chat(user, SPAN_DANGER("The Ark is already counting down."))
 		return ..()
 	if(alert(user, "Activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 		if(alert(user, "REALLY activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 			if(alert(user, "You're REALLY SURE? This cannot be undone.", name, "Yes - Activate the Ark", "No") == "Yes - Activate the Ark")
-				message_admins("<span class='danger'>Admin [key_name_admin(user)] started the Ark's countdown!</span>")
+				message_admins(SPAN_DANGER("Admin [key_name_admin(user)] started the Ark's countdown!"))
 				log_admin("Admin [key_name(user)] started the Ark's countdown on a non-clockcult mode!")
 				to_chat(user, "<span class='userdanger'>The gamemode is now being treated as clockwork cult, and the Ark is counting down from 5 \
 				minutes. You will need to create servant players yourself.</span>")

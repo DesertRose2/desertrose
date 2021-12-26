@@ -265,18 +265,18 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, "<span class='warning'>Your hands are full!</span>")
+		to_chat(user, SPAN_WARNING("Your hands are full!"))
 		return
 	var/obj/item/reagent_containers/pill/P = locate() in contents
 	if(P)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, P, user)
 		if(!user.put_in_hands(P))
 			P.forceMove(user.drop_location())	// make sure it's not stuck in the user if the put in hands somehow fails
-			to_chat(user, "<span class='warning'>[P] drops to the floor!</span>")
+			to_chat(user, SPAN_WARNING("[P] drops to the floor!"))
 		else
-			to_chat(user, "<span class='notice'>You take \a [P] out of [src].</span>")
+			to_chat(user, SPAN_NOTICE("You take \a [P] out of [src]."))
 	else
-		to_chat(user, "<span class='notice'>There are no pills left in the bottle.</span>")
+		to_chat(user, SPAN_NOTICE("There are no pills left in the bottle."))
 	return TRUE
 
 
@@ -435,7 +435,7 @@
 
 /obj/item/storage/belt/organbox
 	name = "Organ Storage"
-	desc = "A compact box that helps hold massive amounts of implants, organs, and some tools. Has a belt clip for easy carrying"
+	desc = "A compact box that helps hold massive amounts of implants, organs, and some tools. Has a belt clip for easy carrying."
 	w_class = WEIGHT_CLASS_BULKY
 	icon = 'icons/obj/mysterybox.dmi'
 	icon_state = "organbox_open"

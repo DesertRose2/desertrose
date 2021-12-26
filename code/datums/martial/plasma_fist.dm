@@ -46,7 +46,7 @@
 
 /datum/martial_art/plasma_fist/proc/Throwback(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	var/damage = (damage_roll(A,D)*3)
-	D.visible_message("<span class='danger'>[A] has hit [D] with Plasma Punch!</span>", \
+	D.visible_message(SPAN_DANGER("[A] has hit [D] with Plasma Punch!"), \
 								"<span class='userdanger'>[A] has hit [D] with Plasma Punch!</span>")
 	playsound(D.loc, 'sound/weapons/punch1.ogg', 50, 1, -1)
 	var/atom/throw_target = get_edge_target_turf(D, get_dir(D, get_step_away(D, A)))
@@ -60,7 +60,7 @@
 	A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 	playsound(D.loc, 'sound/weapons/punch1.ogg', 50, 1, -1)
 	A.say("PLASMA FIST!", forced="plasma fist")
-	D.visible_message("<span class='danger'>[A] has hit [D] with THE PLASMA FIST TECHNIQUE!</span>", \
+	D.visible_message(SPAN_DANGER("[A] has hit [D] with THE PLASMA FIST TECHNIQUE!"), \
 								"<span class='userdanger'>[A] has hit [D] with THE PLASMA FIST TECHNIQUE!</span>")
 	D.gib()
 	log_combat(A, D, "gibbed (Plasma Fist)")

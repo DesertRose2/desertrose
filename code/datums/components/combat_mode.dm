@@ -74,23 +74,22 @@
 	mode_flags &= ~COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_ENABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles reflexively tighten!</span>" : "<span class='warning'>You drop into a combative stance!</span>"
+		var/self_message = forced? SPAN_WARNING("Your muscles reflexively tighten!") : SPAN_WARNING("You drop into a combative stance!")
 		if(visible && (forced || world.time >= combatmessagecooldown))
 			combatmessagecooldown = world.time + 10 SECONDS
 			if(!forced)
 				if(source.a_intent != INTENT_HELP)
-					source.visible_message("<span class='warning'>[source] [source.resting ? "tenses up" : "drops into a combative stance"].</span>", self_message)
+					source.visible_message(SPAN_WARNING("[source] [source.resting ? "tenses up" : "drops into a combative stance"]."), self_message)
 				else
-					source.visible_message("<span class='notice'>[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")].</span>")
+					source.visible_message(SPAN_NOTICE("[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")]."))
 			else
-				source.visible_message("<span class='warning'>[source] drops into a combative stance!</span>", self_message)
+				source.visible_message(SPAN_WARNING("[source] drops into a combative stance!"), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)
 			source.playsound_local(source, 'sound/misc/ui_toggle_vats.ogg', 70, FALSE, pressure_affected = FALSE)
 	RegisterSignal(source, COMSIG_MOB_CLIENT_MOUSEMOVE, .proc/onMouseMove)
 	RegisterSignal(source, COMSIG_MOVABLE_MOVED, .proc/on_move)
-	RegisterSignal(source, COMSIG_MOB_CLIENT_MOVE, .proc/on_client_move)
 	if(hud_icon)
 		hud_icon.combat_on = TRUE
 		hud_icon.update_icon()
@@ -110,9 +109,9 @@
 	mode_flags |= COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_DISABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles are forcibly relaxed!</span>" : "<span class='warning'>You relax your stance.</span>"
+		var/self_message = forced? SPAN_WARNING("Your muscles are forcibly relaxed!") : SPAN_WARNING("You relax your stance.")
 		if(visible)
-			source.visible_message("<span class='warning'>[source] relaxes [source.p_their()] stance.</span>", self_message)
+			source.visible_message(SPAN_WARNING("[source] relaxes [source.p_their()] stance."), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)
@@ -131,11 +130,6 @@
 	var/mob/living/L = source
 	if(mode_flags & COMBAT_MODE_ACTIVE && L.client && lastmousedir && lastmousedir != dir)
 		L.setDir(lastmousedir, ismousemovement = TRUE)
-
-/// Added movement delay if moving backward.
-/datum/component/combat_mode/proc/on_client_move(mob/source, client/client, direction, n, oldloc, added_delay)
-	if(oldloc != n && direction == REVERSE_DIR(source.dir))
-		client.move_delay += added_delay*0.5
 
 ///Changes the user direction to (try) match the pointer.
 /datum/component/combat_mode/proc/onMouseMove(mob/source, object, location, control, params)

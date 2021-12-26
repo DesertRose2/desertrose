@@ -301,15 +301,6 @@
 	tastes = list("cobwebs" = 1, "sugar" = 2)
 	foodtype = JUNKFOOD | SUGAR | ANTITOXIC
 
-/obj/item/reagent_containers/food/snacks/tobiko
-	name = "tobiko"
-	desc = "Spider eggs wrapped in a thin salted Kudzu pod"
-	icon_state = "sushie_egg"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
-	filling_color = "#FF3333" // R225 G051 B051
-	tastes = list("seaweed" = 1, "cobwebs" = 1, "salty" = 2)
-	foodtype = MEAT | VEGETABLES
-
 /obj/item/reagent_containers/food/snacks/chococoin
 	name = "chocolate coin"
 	desc = "A completely edible but nonflippable festive coin."
@@ -697,7 +688,7 @@
 	tastes = list("peaches" = 1, "tin" = 7)
 
 /obj/item/reagent_containers/food/snacks/crab_rangoon
-	name = "Crab Rangoon"
+	name = "crab rangoon"
 	desc = "Has many names, like crab puffs, cheese wontons, crab dumplings? Whatever you call them, they're a fabulous blast of cream cheesy crab."
 	icon_state = "crabrangoon"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
@@ -707,7 +698,7 @@
 	foodtype = MEAT | DAIRY | GRAIN
 
 /obj/item/reagent_containers/food/snacks/chocolatestrawberry
-	name = "Chocolate dipped strawberries"
+	name = "chocolate-dipped strawberries"
 	desc = "A strawberry dipped in a bit of chocolate."
 	icon_state = "chocolatestrawberry"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/nutriment = 2)
@@ -717,7 +708,7 @@
 	dunkable = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatebanana
-	name = "Chocolate dipped banana"
+	name = "chocolate-dipped banana"
 	desc = "A banana dipped in a bit of chocolate and held on a stick."
 	icon_state = "banana_coco"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)

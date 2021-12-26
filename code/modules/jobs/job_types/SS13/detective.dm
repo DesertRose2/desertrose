@@ -3,7 +3,6 @@
 	flag = DETECTIVE
 //	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list("Head of Security")
-	department_flag = ENGSEC
 
 	total_positions = 1
 	spawn_positions = 1

@@ -467,18 +467,6 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
-/*
-/datum/crafting_recipe/bluespacehonker
-	name = "Bluespace Bike horn"
-	result = /obj/item/bikehorn/bluespacehonker
-	time = 10
-	reqs = list(/obj/item/stack/ore/bluespace_crystal = 1,
-				/obj/item/toy/crayon/blue = 1,
-				/obj/item/bikehorn = 1)
-	subcategory = CAT_MISCELLANEOUS
-	category = CAT_MISC
-*/
-
 /datum/crafting_recipe/mousetrap
 	name = "Mouse Trap"
 	result = /obj/item/assembly/mousetrap

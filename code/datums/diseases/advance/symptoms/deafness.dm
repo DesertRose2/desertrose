@@ -48,7 +48,7 @@ Bonus
 	switch(A.stage)
 		if(3, 4)
 			if(prob(base_message_chance) && !suppress_warning)
-				to_chat(M, "<span class='warning'>[pick("You hear a ringing in your ear.", "Your ears pop.")]</span>")
+				to_chat(M, SPAN_WARNING("[pick("You hear a ringing in your ear.", "Your ears pop.")]"))
 		if(5)
 			if(power > 2)
 				var/obj/item/organ/ears/ears = M.getorganslot(ORGAN_SLOT_EARS)

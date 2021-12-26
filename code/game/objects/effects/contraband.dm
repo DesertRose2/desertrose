@@ -95,10 +95,10 @@
 	if(istype(I, /obj/item/wirecutters))
 		I.play_tool_sound(src, 100)
 		if(ruined)
-			to_chat(user, "<span class='notice'>You remove the remnants of the poster.</span>")
+			to_chat(user, SPAN_NOTICE("You remove the remnants of the poster."))
 			qdel(src)
 		else
-			to_chat(user, "<span class='notice'>You carefully remove the poster from the wall.</span>")
+			to_chat(user, SPAN_NOTICE("You carefully remove the poster from the wall."))
 			roll_and_drop(user.loc)
 
 /obj/structure/sign/poster/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -123,7 +123,7 @@
 //separated to reduce code duplication. Moved here for ease of reference and to unclutter r_wall/attackby()
 /turf/closed/wall/proc/place_poster(obj/item/poster/P, mob/user)
 	if(!P.poster_structure)
-		to_chat(user, "<span class='warning'>[P] has no poster... inside it? Inform a coder!</span>")
+		to_chat(user, SPAN_WARNING("[P] has no poster... inside it? Inform a coder!"))
 		return
 
 	// Deny placing posters on currently-diagonal walls, although the wall may change in the future.
@@ -136,14 +136,14 @@
 	var/stuff_on_wall = 0
 	for(var/obj/O in contents) //Let's see if it already has a poster on it or too much stuff
 		if(istype(O, /obj/structure/sign/poster))
-			to_chat(user, "<span class='warning'>The wall is far too cluttered to place a poster!</span>")
+			to_chat(user, SPAN_WARNING("The wall is far too cluttered to place a poster!"))
 			return
 		stuff_on_wall++
 		if(stuff_on_wall == 3)
-			to_chat(user, "<span class='warning'>The wall is far too cluttered to place a poster!</span>")
+			to_chat(user, SPAN_WARNING("The wall is far too cluttered to place a poster!"))
 			return
 
-	to_chat(user, "<span class='notice'>You start placing the poster on the wall...</span>"	)
+	to_chat(user, SPAN_NOTICE("You start placing the poster on the wall...")	)
 
 	var/obj/structure/sign/poster/D = P.poster_structure
 
@@ -158,10 +158,10 @@
 			return
 
 		if(iswallturf(src) && user && user.loc == temp_loc)	//Let's check if everything is still there
-			to_chat(user, "<span class='notice'>You place the poster!</span>")
+			to_chat(user, SPAN_NOTICE("You place the poster!"))
 			return
 
-	to_chat(user, "<span class='notice'>The poster falls down!</span>")
+	to_chat(user, SPAN_NOTICE("The poster falls down!"))
 	D.roll_and_drop(temp_loc)
 
 // Various possible posters follow
@@ -180,7 +180,7 @@
 
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
-	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Nanotrasen space facilities."
+	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband within Vault-Tec installations."
 	poster_item_icon_state = "rolled_poster"
 
 /obj/structure/sign/poster/contraband/random
@@ -201,7 +201,7 @@
 
 /obj/structure/sign/poster/contraband/fun_police
 	name = "Fun Police"
-	desc = "A poster condemning the station's security forces."
+	desc = "A poster condemning the vault's security forces."
 	icon_state = "poster3"
 
 /obj/structure/sign/poster/contraband/lusty_xenomorph
@@ -213,11 +213,6 @@
 	name = "Post This Ratvar"
 	desc = "Oh what in the hell? Those cultists have animated paper technology and they use it for a meme?"
 	icon_state = "postvar"
-
-/obj/structure/sign/poster/contraband/syndicate_recruitment
-	name = "Syndicate Recruitment"
-	desc = "See the galaxy! Shatter corrupt megacorporations! Join today!"
-	icon_state = "poster5"
 
 /obj/structure/sign/poster/contraband/clown
 	name = "Clown"
@@ -236,18 +231,13 @@
 
 /obj/structure/sign/poster/contraband/missing_gloves
 	name = "Missing Gloves"
-	desc = "This poster references the uproar that followed Nanotrasen's financial cuts toward insulated-glove purchases."
+	desc = "This poster references the uproar that followed Vault-Tec's financial cuts toward insulated-glove purchases."
 	icon_state = "poster9"
 
 /obj/structure/sign/poster/contraband/hacking_guide
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common Nanotrasen airlock. Sadly, it appears out of date."
+	desc = "This poster details the internal workings of the common Vault-Tec airlock. Sadly, it appears out of date."
 	icon_state = "poster10"
-
-/obj/structure/sign/poster/contraband/rip_badger
-	name = "RIP Badger"
-	desc = "This seditious poster references Nanotrasen's genocide of a space station full of badgers."
-	icon_state = "poster11"
 
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris
 	name = "Ambrosia Vulgaris"
@@ -271,7 +261,7 @@
 
 /obj/structure/sign/poster/contraband/power
 	name = "Power"
-	desc = "A poster that positions the seat of power outside Nanotrasen."
+	desc = "A poster that positions the seat of power outside Vault-Tec."
 	icon_state = "poster16"
 
 /obj/structure/sign/poster/contraband/space_cube
@@ -299,14 +289,9 @@
 	desc = "Borg Fancy, Now only taking the most fancy."
 	icon_state = "poster21"
 
-/obj/structure/sign/poster/contraband/kss13
-	name = "Kosmicheskaya Stantsiya 13 Does Not Exist"
-	desc = "A poster mocking CentCom's denial of the existence of the derelict station near Space Station 13."
-	icon_state = "poster22"
-
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
-	desc = "A poster urging the viewer to rebel against Nanotrasen."
+	desc = "A poster urging the viewer to rebel against Vault-Tec."
 	icon_state = "poster23"
 
 /obj/structure/sign/poster/contraband/c20r
@@ -330,9 +315,9 @@
 	desc = "A promotional poster for some rapper."
 	icon_state = "poster27"
 
-/obj/structure/sign/poster/contraband/syndicate_pistol
-	name = "Syndicate Pistol"
-	desc = "A poster advertising syndicate pistols as being 'classy as fuck'. It is covered in faded gang tags."
+/obj/structure/sign/poster/contraband/silenced_pistol
+	name = "Silenced Pistol"
+	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags."
 	icon_state = "poster28"
 
 /obj/structure/sign/poster/contraband/energy_swords
@@ -422,13 +407,8 @@
 
 /obj/structure/sign/poster/contraband/scum
 	name = "Security are Scum"
-	desc = "Anti-security propaganda. Features a human NanoTrasen security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security."
+	desc = "Anti-security propaganda. Features a Vault-Tec security officer being shot in the head, with the words 'Scum' and a short inciteful manifesto. Used to anger security."
 	icon_state = "poster46"
-
-/obj/structure/sign/poster/contraband/syndicate_logo
-	name = "Syndicate"
-	desc = "A poster decipting a snake shaped into an ominous 'S'!"
-	icon_state = "poster47"
 
 /obj/structure/sign/poster/contraband/bountyhunters
 	name = "Bounty Hunters"
@@ -437,7 +417,7 @@
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official Vault-Tec-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -448,13 +428,8 @@
 
 /obj/structure/sign/poster/official/here_for_your_safety
 	name = "Here For Your Safety"
-	desc = "A poster glorifying the station's security force."
+	desc = "A poster glorifying the vault's security force."
 	icon_state = "poster1_legit"
-
-/obj/structure/sign/poster/official/nanotrasen_logo
-	name = "Nanotrasen Logo"
-	desc = "A poster depicting the Nanotrasen logo."
-	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness
 	name = "Cleanliness"
@@ -463,7 +438,7 @@
 
 /obj/structure/sign/poster/official/help_others
 	name = "Help Others"
-	desc = "A poster encouraging you to help fellow crewmembers."
+	desc = "A poster encouraging you to help fellow Vault dwellers."
 	icon_state = "poster4_legit"
 
 /obj/structure/sign/poster/official/build
@@ -553,7 +528,7 @@
 
 /obj/structure/sign/poster/official/report_crimes
 	name = "Report Crimes"
-	desc = "A poster encouraging the swift reporting of crime or seditious behavior to station security."
+	desc = "A poster encouraging the swift reporting of crime or seditious behavior to vault security."
 	icon_state = "poster22_legit"
 
 /obj/structure/sign/poster/official/ion_rifle
@@ -571,25 +546,10 @@
 	desc = "Cohiba Robusto, the classy cigar."
 	icon_state = "poster25_legit"
 
-/obj/structure/sign/poster/official/anniversary_vintage_reprint
-	name = "50th Anniversary Vintage Reprint"
-	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Nanoposters Manufacturing, a subsidiary of Nanotrasen."
-	icon_state = "poster26_legit"
-
 /obj/structure/sign/poster/official/fruit_bowl
 	name = "Fruit Bowl"
 	desc = " Simple, yet awe-inspiring."
 	icon_state = "poster27_legit"
-
-/obj/structure/sign/poster/official/pda_ad
-	name = "PDA Ad"
-	desc = "A poster advertising the latest PDA from Nanotrasen suppliers."
-	icon_state = "poster28_legit"
-
-/obj/structure/sign/poster/official/enlist
-	name = "Enlist" // but I thought deathsquad was never acknowledged
-	desc = "Enlist in the Nanotrasen Deathsquadron reserves today!"
-	icon_state = "poster29_legit"
 
 /obj/structure/sign/poster/official/nanomichi_ad
 	name = "Nanomichi Ad"
@@ -608,12 +568,12 @@
 
 /obj/structure/sign/poster/official/the_owl
 	name = "The Owl"
-	desc = "The Owl would do his best to protect the station. Will you?"
+	desc = "The Owl would do his best to protect the vault. Will you?"
 	icon_state = "poster33_legit"
 
 /obj/structure/sign/poster/official/no_erp
 	name = "No ERP"
-	desc = "This poster reminds the crew that Eroticism, Rape and Pornography are banned on Nanotrasen stations."
+	desc = "This poster reminds the crew that Eroticism, Rape and Pornography are banned on Vault-Tec installations."
 	icon_state = "poster34_legit"
 
 /obj/structure/sign/poster/official/wtf_is_co2
@@ -636,19 +596,9 @@
 	desc = "An advertisement for 'Fashion!', a popular fashion magazine, depicting a woman with a black dress with a golden trim, she also has a red poppy in her hair."
 	icon_state = "poster38_legit"
 
-/obj/structure/sign/poster/official/pda_ad600
-	name = "NT PDA600 Ad"
-	desc = "A poster advertising an old discounted Nanotrasen PDA. This is the old 600 model, it has a small screen and suffered from security and networking issues."
-	icon_state = "poster39_legit"
-
-/obj/structure/sign/poster/official/pda_ad800
-	name = "NT PDA800 Ad"
-	desc = "An advertisement on an old Nanotrasen PDA model. The 800 fixed a lot of security flaws that the 600 had; it also had large touchscreen and hot-swappable cartridges."
-	icon_state = "poster40_legit"
-
 /obj/structure/sign/poster/official/hydro_ad
 	name = "Hydroponics Tray"
-	desc = "An advertisement for hydroponics trays. Space Station 13's botanical department uses a slightly newer model, but the principles are the same. From left to right: Green means the plant is done, red means the plant is unhealthy, flashing red means pests or weeds, yellow means the plant needs nutriment and blue means the plant needs water."
+	desc = "An advertisement for hydroponics trays. Vault-Tec's botanical department uses a slightly newer model, but the principles are the same. From left to right: Green means the plant is done, red means the plant is unhealthy, flashing red means pests or weeds, yellow means the plant needs nutriment and blue means the plant needs water."
 	icon_state = "poster41_legit"
 
 /obj/structure/sign/poster/official/medical_green_cross
@@ -656,264 +606,4 @@
 	desc = "A green cross, one of the interplanetary symbol of health and aid. It has a bunch of common languages at the top with translations." // Didn't the American Heart Foundation trademark red crosses? I'm playing it safe with green, not that they'll notice spacegame13 poster.
 	icon_state = "poster42_legit"
 
-/obj/structure/sign/poster/official/nt_storm_officer
-	name = "NT Storm Ad"
-	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, This is the officer variant. I comes with a better radio, better HUD software and better targeting sensors."
-	icon_state = "poster43_legit"
-
-/obj/structure/sign/poster/official/nt_storm
-	name = "NT Storm Ad"
-	desc = "An advertisement for NanoTrasen Storm. A premium infantry helmet, It contains a rebreather and full head coverage for use on harsh environments where the air isn't always safe to breathe."
-	icon_state = "poster44_legit"
-
-
-/obj/structure/sign/poster/ncr/keep_to_myself
-	name = "NCR poster"
-	desc = "What I know, I keep to myself."
-	icon_state = "poster45"
-
-/obj/structure/sign/poster/ncr/democracy
-	name = "NCR poster"
-	desc = "NCR Trooper, you bring DEMOCRACY to this LAND."
-	icon_state = "poster47"
-
-/obj/structure/sign/poster/ncr/irradiated_food
-	name = "NCR poster"
-	desc = "DON'T eat IRRADIATED food, the NCR needs you STRONG!"
-	icon_state = "poster48"
-
-/obj/structure/sign/poster/ncr/loaded
-	name = "NCR poster"
-	desc = "LOADED? Your next pickup could also be LOADED with disease."
-	icon_state = "poster49"
-
-/obj/structure/sign/poster/prewar/corporate_espionage
-	name = "pre-war poster"
-	desc = "Only YOU can stop CORPORATE ESPIONAGE."
-	icon_state = "poster46"
-
-/obj/structure/sign/poster/prewar/poster60
-	name = "pre-war poster"
-	desc = "Midnight man premiering next July!"
-	icon_state = "poster60"
-
-/obj/structure/sign/poster/prewar/poster61
-	name = "pin-up poster"
-	icon_state = "poster61"
-
-/obj/structure/sign/poster/prewar/poster62
-	name = "pre-war poster"
-	desc = "Fellout 8, Coming SOON."
-	icon_state = "poster62"
-
-/obj/structure/sign/poster/prewar/poster63
-	name = "pre-war poster"
-	icon_state = "poster"
-
-/obj/structure/sign/poster/prewar/poster64
-	name = "pre-war poster"
-	icon_state = "poster64"
-
-/obj/structure/sign/poster/prewar/poster65
-	name = "pre-war poster"
-	icon_state = "poster65"
-
-/obj/structure/sign/poster/prewar/poster66
-	name = "pre-war poster"
-	icon_state = "poster66"
-
-/obj/structure/sign/poster/prewar/poster67
-	name = "pre-war poster"
-	icon_state = "poster67"
-
-/obj/structure/sign/poster/prewar/poster68
-	name = "pre-war poster"
-	icon_state = "poster68"
-
-/obj/structure/sign/poster/prewar/poster69
-	name = "pre-war poster"
-	icon_state = "poster69"
-
-/obj/structure/sign/poster/prewar/poster70
-	name = "pre-war poster"
-	icon_state = "poster70"
-
-/obj/structure/sign/poster/prewar/poster71
-	name = "pre-war poster"
-	icon_state = "poster71"
-
-/obj/structure/sign/poster/prewar/poster72
-	name = "pre-war poster"
-	icon_state = "poster72"
-
-/obj/structure/sign/poster/prewar/poster73
-	name = "pre-war poster"
-	icon_state = "poster73"
-
-/obj/structure/sign/poster/prewar/poster74
-	name = "pre-war poster"
-	icon_state = "poster74"
-
-/obj/structure/sign/poster/prewar/poster75
-	name = "pre-war poster"
-	icon_state = "poster75"
-
-/obj/structure/sign/poster/prewar/poster76
-	name = "pre-war poster"
-	icon_state = "poster76"
-
-/obj/structure/sign/poster/prewar/poster77
-	name = "pre-war poster"
-	icon_state = "poster77"
-
-/obj/structure/sign/poster/prewar/poster78
-	name = "pre-war poster"
-	icon_state = "poster78"
-
-/obj/structure/sign/poster/prewar/poster79
-	name = "pre-war poster"
-	icon_state = "poster79"
-
-/obj/structure/sign/poster/prewar/poster80
-	name = "pre-war poster"
-	icon_state = "poster80"
-
-/obj/structure/sign/poster/prewar/poster81
-	name = "pre-war poster"
-	icon_state = "poster81"
-
-/obj/structure/sign/poster/prewar/poster82
-	name = "pre-war poster"
-	icon_state = "poster82"
-
-/obj/structure/sign/poster/prewar/poster83
-	name = "medical poster"
-	desc = "Broken bones and how to find them."
-	icon_state = "poster83"
-
-/obj/structure/sign/poster/prewar/poster84
-	name = "medical poster"
-	desc = "Dissection LAYERS are keys to SUCCESS."
-	icon_state = "poster84"
-
-/obj/structure/sign/poster/prewar/poster85
-	name = "medical poster"
-	desc = "Anatomy of a human arm."
-	icon_state = "poster85"
-
-/obj/structure/sign/poster/prewar/poster86
-	name = "medical poster"
-	desc = "Anatomy of a human heart."
-	icon_state = "poster86"
-
-/obj/structure/sign/poster/prewar/poster87
-	name = "medical poster"
-	desc = "Functioning of the human heart."
-	icon_state = "poster87"
-
-/obj/structure/sign/poster/prewar/poster88
-	name = "medical poster"
-	desc = "Human head anatomy and function."
-	icon_state = "poster88"
-
-/obj/structure/sign/poster/prewar/poster89
-	name = "Calender"
-	desc = "Calender for the year 2077."
-	icon_state = "poster89"
-
-/obj/structure/sign/poster/prewar/poster90
-	name = "Calender"
-	desc = "Calender for the year 2077."
-	icon_state = "poster90"
-
-/obj/structure/sign/poster/prewar/poster91
-	name = "chemical poster"
-	icon_state = "poster91"
-
-/obj/structure/sign/poster/prewar/poster92
-	name = "chemical poster"
-	icon_state = "poster92"
-
-/obj/structure/sign/poster/prewar/poster93
-	name = "pre-war poster"
-	icon_state = "poster93"
-
-/obj/structure/sign/poster/prewar/poster94
-	name = "pre-war poster"
-	icon_state = "poster94"
-
-/obj/structure/sign/poster/prewar/protectron
-	name = "protectron advertisement poster"
-	desc = "A poster advertising the latest RobCo Mk.2 Protectron. Now with laser-targeted laser fire!"
-	icon_state = "poster50"
-
-/obj/structure/sign/poster/prewar/vault_tec
-	name = "vault-tec poster"
-	desc = "A poster advertising the Vault-Tec Corporation. Vault-Tec: Revolutionizing safety for an uncertain future!"
-	icon_state = "poster51"
-
-/obj/structure/sign/poster/contraband/pinup_ride
-	name = "Pin-up - Sweet Ride"
-	desc = "A pin-up of a woman riding a rocket while holding two toy guns."
-	icon_state = "poster52"
-
-/obj/structure/sign/poster/contraband/pinup_couch
-	name = "Pin-up - Lounging"
-	desc = "A pin-up of a woman in revealing lingerie sprawled across a couch."
-	icon_state = "poster53"
-
-/obj/structure/sign/poster/contraband/pinup_bed
-	name = "Pin-up - Bed Time"
-	desc = "A pin-up of a woman holding a book while laying on a large pillow."
-	icon_state = "poster54"
-
-/obj/structure/sign/poster/contraband/pinup_pink
-	name = "Pin-up - Just Peachy"
-	desc = "A pin-up of a woman with bright pink clothing and a small crown in a suggestive pose."
-	icon_state = "poster55"
-
-/obj/structure/sign/poster/contraband/pinup_funk
-	name = "Pin-up - Funk"
-	desc = "A pin-up of an attractive woman, with the word 'funk' written over her. On second thought, that might not be 'funk'..."
-	icon_state = "poster56"
-
-/obj/structure/sign/poster/contraband/pinup_topless
-	name = "Pin-up - Topless Times"
-	desc = "A pin-up of a woman without a shirt, freed from the restraints of clothing."
-	icon_state = "poster57"
-
-/obj/structure/sign/poster/contraband/pinup_shower
-	name = "Pin-up - Take a Shower"
-	desc = "A pin-up of a woman peeking out from behind a curtain, it looks like she's inviting you in with her."
-	icon_state = "poster58"
-
-/obj/structure/sign/poster/contraband/pinup_vixen
-	name = "Pin-up - Space Vixen"
-	desc = "A pin-up of a woman in a space suit that's definately NOT spaceproof."
-	icon_state = "poster59"
-
-
 #undef PLACE_SPEED
-
-/obj/effect/landmark/poster_spawner
-	icon = 'icons/obj/contraband.dmi'
-	var/list/posters = list()
-
-/obj/effect/landmark/poster_spawner/Initialize()
-	. = ..()
-	var/obj/structure/sign/poster/P = pick(posters)
-	world << "[P]"
-	new P(loc)
-	qdel()
-
-/obj/effect/landmark/poster_spawner/ncr
-	posters = list(/obj/structure/sign/poster/ncr/keep_to_myself, /obj/structure/sign/poster/ncr/democracy, /obj/structure/sign/poster/ncr/irradiated_food, /obj/structure/sign/poster/ncr/loaded)
-
-/obj/effect/landmark/poster_spawner/prewar
-	posters = list(/obj/structure/sign/poster/prewar/corporate_espionage, /obj/structure/sign/poster/prewar/protectron, /obj/structure/sign/poster/prewar/vault_tec)
-
-/obj/effect/landmark/poster_spawner/pinup
-	posters = list(/obj/structure/sign/poster/contraband/pinup_ride, /obj/structure/sign/poster/contraband/pinup_couch,
-		/obj/structure/sign/poster/contraband/pinup_bed, /obj/structure/sign/poster/contraband/pinup_pink,
-		/obj/structure/sign/poster/contraband/pinup_funk, /obj/structure/sign/poster/contraband/pinup_topless,
-		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen)

@@ -105,13 +105,13 @@ FLOOR SAFES
 
 	if(href_list["open"])
 		if(check_unlocked())
-			to_chat(user, "<span class='notice'>You [open ? "close" : "open"] [src].</span>")
+			to_chat(user, SPAN_NOTICE("You [open ? "close" : "open"] [src]."))
 			open = !open
 			update_icon()
 			updateUsrDialog()
 			return
 		else
-			to_chat(user, "<span class='warning'>You can't [open ? "close" : "open"] [src], the lock is engaged!</span>")
+			to_chat(user, SPAN_WARNING("You can't [open ? "close" : "open"] [src], the lock is engaged!"))
 			return
 
 	if(href_list["decrement"])
@@ -159,16 +159,16 @@ FLOOR SAFES
 		if(I.w_class + space <= maxspace)
 			space += I.w_class
 			if(!user.transferItemToLoc(I, src))
-				to_chat(user, "<span class='warning'>\The [I] is stuck to your hand, you cannot put it in the safe!</span>")
+				to_chat(user, SPAN_WARNING("\The [I] is stuck to your hand, you cannot put it in the safe!"))
 				return
-			to_chat(user, "<span class='notice'>You put [I] in [src].</span>")
+			to_chat(user, SPAN_NOTICE("You put [I] in [src]."))
 			updateUsrDialog()
 			return
 		else
-			to_chat(user, "<span class='notice'>[I] won't fit in [src].</span>")
+			to_chat(user, SPAN_NOTICE("[I] won't fit in [src]."))
 			return
 	else if(istype(I, /obj/item/clothing/neck/stethoscope))
-		to_chat(user, "<span class='warning'>Hold [I] in one of your hands while you manipulate the dial!</span>")
+		to_chat(user, SPAN_WARNING("Hold [I] in one of your hands while you manipulate the dial!"))
 	else
 		return ..()
 

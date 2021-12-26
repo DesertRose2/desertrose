@@ -9,7 +9,7 @@
 	var/list/mob/living/carbon/human/broadcasted_mobs = list()
 
 /obj/item/organ/heart/gland/mindshock/activate()
-	to_chat(owner, "<span class='notice'>You get a headache.</span>")
+	to_chat(owner, SPAN_NOTICE("You get a headache."))
 
 	var/turf/T = get_turf(owner)
 	for(var/mob/living/carbon/H in orange(4,T))
@@ -20,7 +20,7 @@
 				to_chat(H, "<span class='userdanger'>You hear a loud buzz in your head, silencing your thoughts!</span>")
 				H.Stun(50)
 			if(2)
-				to_chat(H, "<span class='warning'>You hear an annoying buzz in your head.</span>")
+				to_chat(H, SPAN_WARNING("You hear an annoying buzz in your head."))
 				H.confused += 15
 				H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10, 160)
 			if(3)

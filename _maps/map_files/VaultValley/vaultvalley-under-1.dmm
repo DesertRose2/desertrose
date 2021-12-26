@@ -160,6 +160,14 @@
 /obj/structure/table/booth,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"bL" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant FIrst Class"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "bO" = (
 /obj/structure/chair/right{
 	dir = 8
@@ -1256,15 +1264,6 @@
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"lX" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "mi" = (
 /obj/structure/barricade/train,
 /turf/open/indestructible/ground/inside/subway,
@@ -1431,6 +1430,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"nX" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/space/basic,
+/area/f13/ncr)
 "nY" = (
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
@@ -1551,17 +1554,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"ph" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Corporals"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "pj" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -1841,14 +1833,6 @@
 /mob/living/simple_animal/hostile/radscorpion/black,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"qN" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Commanding Officer"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "qO" = (
 /obj/structure/timeddoor{
 	deletion_time = 9000
@@ -2579,14 +2563,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/caves)
-"wM" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant FIrst Class"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "wS" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
@@ -2808,6 +2784,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
 /area/f13/caves)
+"zg" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Commanding Officer"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "zm" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -3008,6 +2992,18 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"AM" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/door/unpowered/securedoor{
+	name = "Privates";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "AN" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -3475,6 +3471,14 @@
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"Fu" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Military Police"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/ncr)
 "Fx" = (
 /obj/structure/table/wood,
 /obj/item/stack/f13Cash/caps/twofivezero,
@@ -3699,17 +3703,6 @@
 "HD" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
-"HE" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "HO" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /obj/item/storage/trash_stack,
@@ -3871,10 +3864,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/caves)
-"IY" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "Ja" = (
 /mob/living/simple_animal/hostile/ghoul{
 	health = 10
@@ -3904,6 +3893,17 @@
 "Jp" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
+"Jr" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Corporals"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "Jt" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -4027,10 +4027,6 @@
 /obj/structure/barricade/train,
 /turf/open/floor/f13,
 /area/f13/tunnel)
-"KJ" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/space/basic,
-/area/f13/ncr)
 "KO" = (
 /obj/structure/closet/fridge/cannibal,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
@@ -4209,15 +4205,6 @@
 /obj/machinery/camera,
 /turf/open/floor/f13,
 /area/f13/caves)
-"Mz" = (
-/obj/structure/simple_door/room,
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "MA" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos{
@@ -4240,6 +4227,15 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"MK" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "MO" = (
 /obj/structure/table/snooker{
 	dir = 10
@@ -4331,6 +4327,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
+/area/f13/ncr)
+"Nt" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
+"Nv" = (
+/obj/machinery/door/unpowered/securedoor,
+/turf/open/floor/carpet,
 /area/f13/ncr)
 "Nw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4430,6 +4441,14 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"Op" = (
+/obj/machinery/door/unpowered/securedoor{
+	name = "Recruits"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "Ov" = (
 /obj/structure/railing{
 	dir = 1
@@ -4857,18 +4876,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
-"Ru" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/securedoor{
-	name = "Privates";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Rx" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13,
@@ -4977,22 +4984,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
-"Sy" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Recruits"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
-"SB" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Military Police"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/ncr)
 "SC" = (
 /mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/floor/f13{
@@ -5184,6 +5175,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"TR" = (
+/obj/structure/simple_door/room,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Sergeant"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "TU" = (
 /obj/item/trash/chips,
 /obj/machinery/light,
@@ -27293,7 +27293,7 @@ Ho
 Ho
 Ho
 Ho
-Ru
+AM
 ZK
 ZK
 Il
@@ -28578,7 +28578,7 @@ Ho
 Ho
 Ho
 Ho
-Sy
+Op
 ZK
 ZK
 kJ
@@ -30115,11 +30115,11 @@ vH
 vH
 vH
 kJ
-lX
+MK
 kJ
 kJ
 kJ
-lX
+MK
 kJ
 ZK
 ZK
@@ -30377,7 +30377,7 @@ Ho
 Jn
 Ho
 Ho
-ph
+Jr
 ZK
 ZK
 kJ
@@ -31145,7 +31145,7 @@ vH
 kJ
 SF
 SF
-IY
+Nv
 SF
 rM
 kJ
@@ -31662,7 +31662,7 @@ kJ
 kJ
 SF
 SF
-SB
+Fu
 ZK
 ZK
 Il
@@ -31684,7 +31684,7 @@ Uo
 wl
 kJ
 mT
-Mz
+TR
 mT
 tC
 mT
@@ -32173,7 +32173,7 @@ vH
 kJ
 SF
 SF
-KJ
+nX
 SF
 rM
 kJ
@@ -32454,7 +32454,7 @@ Dy
 Uo
 Uo
 kJ
-HE
+Nt
 mT
 mT
 mT
@@ -32716,7 +32716,7 @@ Ho
 Pj
 Ho
 Ho
-qN
+zg
 lq
 lq
 gA
@@ -32971,7 +32971,7 @@ kJ
 mT
 mT
 mT
-wM
+bL
 mT
 mT
 Im
@@ -33227,7 +33227,7 @@ jt
 kJ
 wU
 lq
-IY
+Nv
 lq
 lq
 mT

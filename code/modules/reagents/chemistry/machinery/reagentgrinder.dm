@@ -106,7 +106,7 @@
 		return TRUE
 
 	if (is_type_in_list(I, blacklistchems))
-		to_chat(user, "<span class='warning'>You cannot fit that there!</span>")
+		to_chat(user, SPAN_WARNING("You cannot fit that there!"))
 		return
 
 	if (istype(I, /obj/item/reagent_containers) && !(I.item_flags & ABSTRACT) && I.is_open_container())
@@ -115,12 +115,12 @@
 		if(!user.transferItemToLoc(B, src))
 			return
 		replace_beaker(user, B)
-		to_chat(user, "<span class='notice'>You add [B] to [src].</span>")
+		to_chat(user, SPAN_NOTICE("You add [B] to [src]."))
 		update_icon()
 		return
 
 	if(holdingitems.len >= limit)
-		to_chat(user, "<span class='warning'>[src] is filled to capacity!</span>")
+		to_chat(user, SPAN_WARNING("[src] is filled to capacity!"))
 		return TRUE
 
 	//Fill machine with a bag!
@@ -130,23 +130,23 @@
 			for(var/i in inserted)
 				holdingitems[i] = TRUE
 			if(!I.contents.len)
-				to_chat(user, "<span class='notice'>You empty [I] into [src].</span>")
+				to_chat(user, SPAN_NOTICE("You empty [I] into [src]."))
 			else
-				to_chat(user, "<span class='notice'>You fill [src] to the brim.</span>")
+				to_chat(user, SPAN_NOTICE("You fill [src] to the brim."))
 		return TRUE
 
 	if(!I.grind_results && !I.juice_results)
 		if(user.a_intent == INTENT_HARM)
 			return ..()
 		else
-			to_chat(user, "<span class='warning'>You cannot grind [I] into reagents!</span>")
+			to_chat(user, SPAN_WARNING("You cannot grind [I] into reagents!"))
 			return TRUE
 
 	if(!I.grind_requirements(src)) //Error messages should be in the objects' definitions
 		return
 
 	if(user.transferItemToLoc(I, src))
-		to_chat(user, "<span class='notice'>You add [I] to [src].</span>")
+		to_chat(user, SPAN_NOTICE("You add [I] to [src]."))
 		holdingitems[I] = TRUE
 		return FALSE
 
@@ -202,27 +202,27 @@
 /obj/machinery/reagentgrinder/examine(mob/user)
 	. = ..()
 	if(!in_range(user, src) && !hasSiliconAccessInArea(user) && !isobserver(user))
-		. += "<span class='warning'>You're too far away to examine [src]'s contents and display!</span>"
+		. += SPAN_WARNING("You're too far away to examine [src]'s contents and display!")
 		return
 
 	if(operating)
-		. += "<span class='warning'>\The [src] is operating.</span>"
+		. += SPAN_WARNING("\The [src] is operating.")
 		return
 
 	if(beaker || length(holdingitems))
-		. += "<span class='notice'>\The [src] contains:</span>"
+		. += SPAN_NOTICE("\The [src] contains:")
 		if(beaker)
-			. += "<span class='notice'>- \A [beaker].</span>"
+			. += SPAN_NOTICE("- \A [beaker].")
 		for(var/i in holdingitems)
 			var/obj/item/O = i
-			. += "<span class='notice'>- \A [O.name].</span>"
+			. += SPAN_NOTICE("- \A [O.name].")
 
 	if(!(stat & (NOPOWER|BROKEN)))
-		. += "<span class='notice'>The status display reads:</span>"
+		. += SPAN_NOTICE("The status display reads:")
 		. += "<span class='notice'>- Grinding reagents at <b>[speed*100]%</b>.<span>"
 		if(beaker)
 			for(var/datum/reagent/R in beaker.reagents.reagent_list)
-				. += "<span class='notice'>- [R.volume] units of [R.name].</span>"
+				. += SPAN_NOTICE("- [R.volume] units of [R.name].")
 
 /obj/machinery/reagentgrinder/AltClick(mob/user)
 	. = ..()
@@ -278,7 +278,7 @@
 
 /obj/machinery/reagentgrinder/proc/juice_item(obj/item/I) //Juicing results can be found in respective object definitions
 	if(I.on_juice(src) == -1)
-		to_chat(usr, "<span class='danger'>[src] shorts out as it tries to juice up [I], and transfers it back to storage.</span>")
+		to_chat(usr, SPAN_DANGER("[src] shorts out as it tries to juice up [I], and transfers it back to storage."))
 		return
 	beaker.reagents.add_reagent_list(I.juice_results)
 	remove_object(I)
@@ -297,7 +297,7 @@
 
 /obj/machinery/reagentgrinder/proc/grind_item(obj/item/I) //Grind results can be found in respective object definitions
 	if(I.on_grind(src) == -1) //Call on_grind() to change amount as needed, and stop grinding the item if it returns -1
-		to_chat(usr, "<span class='danger'>[src] shorts out as it tries to grind up [I], and transfers it back to storage.</span>")
+		to_chat(usr, SPAN_DANGER("[src] shorts out as it tries to grind up [I], and transfers it back to storage."))
 		return
 	beaker.reagents.add_reagent_list(I.grind_results)
 	if(I.reagents)

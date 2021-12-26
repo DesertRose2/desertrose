@@ -43,11 +43,6 @@ export const KeycardAuth = (props, context) => {
                       fluid
                       onClick={() => act('emergency_maint')}
                       content="Emergency Maintenance Access" />
-                    <Button
-                      icon="meteor"
-                      fluid
-                      onClick={() => act('bsa_unlock')}
-                      content="Bluespace Artillery Unlock" />
                   </Fragment>
                 )}
               </Fragment>

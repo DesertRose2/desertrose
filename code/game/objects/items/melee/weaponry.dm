@@ -26,9 +26,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 */
 /obj/item/banhammer/attack(mob/M, mob/user)
 	if(user.zone_selected == BODY_ZONE_HEAD)
-		M.visible_message("<span class='danger'>[user] are stroking the head of [M] with a bangammer</span>", "<span class='userdanger'>[user] are stroking the head with a bangammer</span>", "you hear a bangammer stroking a head");
+		M.visible_message(SPAN_DANGER("[user] are stroking the head of [M] with a bangammer"), "<span class='userdanger'>[user] are stroking the head with a bangammer</span>", "you hear a bangammer stroking a head");
 	else
-		M.visible_message("<span class='danger'>[M] has been banned FOR NO REISIN by [user]</span>", "<span class='userdanger'>You have been banned FOR NO REISIN by [user]</span>", "you hear a banhammer banning someone")
+		M.visible_message(SPAN_DANGER("[M] has been banned FOR NO REISIN by [user]"), "<span class='userdanger'>You have been banned FOR NO REISIN by [user]</span>", "you hear a banhammer banning someone")
 	playsound(loc, 'sound/effects/adminhelp.ogg', 15) //keep it at 15% volume so people don't jump out of their skin too much
 	if(user.a_intent != INTENT_HELP)
 		return ..(M, user)
@@ -202,7 +202,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		attack_verb = list("whacked", "smacked", "struck")
 		bare_wound_bonus = 0
 		wound_bonus = 0
-	to_chat(user, "<span class='notice'>[src] is now [harm ? "harmful" : "not quite as harmful"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [harm ? "harmful" : "not quite as harmful"]."))
 
 /obj/item/melee/bokken/AltClick(mob/user)
 	. = ..()
@@ -211,7 +211,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		block_parry_data = /datum/block_parry_data/bokken/quick_parry
 	else
 		block_parry_data = /datum/block_parry_data/bokken
-	to_chat(user, "<span class='notice'>[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"]."))
 
 /obj/item/melee/bokken/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/pen))
@@ -258,7 +258,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		block_parry_data = /datum/block_parry_data/bokken/quick_parry/debug
 	else
 		block_parry_data = /datum/block_parry_data/bokken/debug
-	to_chat(user, "<span class='notice'>[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"].</span>")
+	to_chat(user, SPAN_NOTICE("[src] is now [quick_parry ? "emphasizing shorter parries, forcing you to riposte or be staggered" : "emphasizing longer parries, with a shorter window to riposte but more forgiving parries"]."))
 
 /datum/block_parry_data/bokken/debug
 	parry_efficiency_perfect_override = list()
@@ -304,14 +304,14 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		qdel(src)
 
 		user.put_in_hands(S)
-		to_chat(user, "<span class='notice'>You fasten the glass shard to the top of the rod with the cable.</span>")
+		to_chat(user, SPAN_NOTICE("You fasten the glass shard to the top of the rod with the cable."))
 
 	else if(istype(I, /obj/item/assembly/igniter) && !HAS_TRAIT(I, TRAIT_NODROP))
 		var/obj/item/melee/baton/cattleprod/P = new /obj/item/melee/baton/cattleprod
 
 		remove_item_from_storage(user)
 
-		to_chat(user, "<span class='notice'>You fasten [I] to the top of the rod with the cable.</span>")
+		to_chat(user, SPAN_NOTICE("You fasten [I] to the top of the rod with the cable."))
 
 		qdel(I)
 		qdel(src)
@@ -585,12 +585,12 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	if(proximity_flag)
 		if(is_type_in_typecache(target, strong_against))
 			new /obj/effect/decal/cleanable/insectguts(target.drop_location())
-			to_chat(user, "<span class='warning'>You easily splat the [target].</span>")
+			to_chat(user, SPAN_WARNING("You easily splat the [target]."))
 			if(istype(target, /mob/living/))
 				var/mob/living/bug = target
 				bug.death(1)
 		if(is_type_in_typecache(target, spider_panic))
-			to_chat(user, "<span class='warning'>You easily land a critical blow on the [target].</span>")
+			to_chat(user, SPAN_WARNING("You easily land a critical blow on the [target]."))
 			if(istype(target, /mob/living/))
 				var/mob/living/bug = target
 				bug.adjustBruteLoss(35) //What kinda mad man would go into melee with a spider?!
@@ -636,10 +636,10 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		return
 
 	if(owner == sucker) // big mood
-		to_chat(owner, "<span class='danger'>Wait a second... you just looked at your own [src.name]!</span>")
+		to_chat(owner, SPAN_DANGER("Wait a second... you just looked at your own [src.name]!"))
 		addtimer(CALLBACK(src, .proc/selfGottem, owner), 10)
 	else
-		to_chat(sucker, "<span class='danger'>Wait a second... was that a-</span>")
+		to_chat(sucker, SPAN_DANGER("Wait a second... was that a-"))
 		addtimer(CALLBACK(src, .proc/GOTTEM, owner, sucker), 6)
 
 /// Stage 3A: We face our own failures
@@ -648,7 +648,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		return
 
 	playsound(get_turf(owner), 'sound/effects/hit_punch.ogg', 50, TRUE, -1)
-	owner.visible_message("<span class='danger'>[owner] shamefully bops [owner.p_them()]self with [owner.p_their()] [src.name].</span>", "<span class='userdanger'>You shamefully bop yourself with your [src.name].</span>", \
+	owner.visible_message(SPAN_DANGER("[owner] shamefully bops [owner.p_them()]self with [owner.p_their()] [src.name]."), "<span class='userdanger'>You shamefully bop yourself with your [src.name].</span>", \
 		"<span class='hear'>You hear a dull thud!</span>")
 	log_combat(owner, owner, "bopped", src.name, "(self)")
 	owner.do_attack_animation(owner)
@@ -662,22 +662,22 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		return
 
 	if(QDELETED(src) || QDELETED(owner))
-		to_chat(sucker, "<span class='warning'>Nevermind... must've been your imagination...</span>")
+		to_chat(sucker, SPAN_WARNING("Nevermind... must've been your imagination..."))
 		return
 
 	if(!in_range(owner, sucker) || !(owner.mobility_flags & MOBILITY_USE))
-		to_chat(sucker, "<span class='notice'>Phew... you moved away before [owner] noticed you saw [owner.p_their()] [src.name]...</span>")
+		to_chat(sucker, SPAN_NOTICE("Phew... you moved away before [owner] noticed you saw [owner.p_their()] [src.name]..."))
 		return
 
-	to_chat(owner, "<span class='warning'>[sucker] looks down at your [src.name] before trying to avert [sucker.p_their()] eyes, but it's too late!</span>")
-	to_chat(sucker, "<span class='danger'><b>[owner] sees the fear in your eyes as you try to look away from [owner.p_their()] [src.name]!</b></span>")
+	to_chat(owner, SPAN_WARNING("[sucker] looks down at your [src.name] before trying to avert [sucker.p_their()] eyes, but it's too late!"))
+	to_chat(sucker, SPAN_DANGER("<b>[owner] sees the fear in your eyes as you try to look away from [owner.p_their()] [src.name]!</b>"))
 
 	playsound(get_turf(owner), 'sound/effects/hit_punch.ogg', 50, TRUE, -1)
 	owner.do_attack_animation(sucker)
 
 	if(HAS_TRAIT(owner, TRAIT_HULK))
-		owner.visible_message("<span class='danger'>[owner] bops [sucker] with [owner.p_their()] [src.name] much harder than intended, sending [sucker.p_them()] flying!</span>", \
-			"<span class='danger'>You bop [sucker] with your [src.name] much harder than intended, sending [sucker.p_them()] flying!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", ignored_mobs=list(sucker))
+		owner.visible_message(SPAN_DANGER("[owner] bops [sucker] with [owner.p_their()] [src.name] much harder than intended, sending [sucker.p_them()] flying!"), \
+			SPAN_DANGER("You bop [sucker] with your [src.name] much harder than intended, sending [sucker.p_them()] flying!"), "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", ignored_mobs=list(sucker))
 		to_chat(sucker, "<span class='userdanger'>[owner] bops you incredibly hard with [owner.p_their()] [src.name], sending you flying!</span>")
 		sucker.apply_damage(50, STAMINA)
 		sucker.Knockdown(50)
@@ -685,7 +685,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		var/atom/throw_target = get_edge_target_turf(sucker, owner.dir)
 		sucker.throw_at(throw_target, 6, 3, owner)
 	else
-		owner.visible_message("<span class='danger'>[owner] bops [sucker] with [owner.p_their()] [src.name]!</span>", "<span class='danger'>You bop [sucker] with your [src.name]!</span>", \
+		owner.visible_message(SPAN_DANGER("[owner] bops [sucker] with [owner.p_their()] [src.name]!"), SPAN_DANGER("You bop [sucker] with your [src.name]!"), \
 			"<span class='hear'>You hear a dull thud!</span>", ignored_mobs=list(sucker))
 		sucker.apply_damage(15, STAMINA)
 		log_combat(owner, sucker, "bopped", src.name, "(setup)")
@@ -711,8 +711,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	if(user.a_intent != INTENT_HARM && ((user.zone_selected == BODY_ZONE_PRECISE_MOUTH) || (user.zone_selected == BODY_ZONE_PRECISE_EYES) || (user.zone_selected == BODY_ZONE_HEAD)))
 		user.do_attack_animation(M)
 		playsound(M, 'sound/weapons/slap.ogg', 50, 1, -1)
-		user.visible_message("<span class='danger'>[user] slaps [M]!</span>",
-		"<span class='notice'>You slap [M]!</span>",\
+		user.visible_message(SPAN_DANGER("[user] slaps [M]!"),
+		SPAN_NOTICE("You slap [M]!"),\
 		"You hear a slap.")
 		return
 	else
@@ -742,7 +742,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/extendohand/attack(atom/M, mob/living/carbon/human/user)
 	var/dist = get_dist(M, user)
 	if(dist < reach)
-		to_chat(user, "<span class='warning'>[M] is too close to use [src] on.</span>")
+		to_chat(user, SPAN_WARNING("[M] is too close to use [src] on."))
 		return
 	M.attack_hand(user)
 
@@ -793,12 +793,12 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	if(wielded || !(attack_type & ATTACK_TYPE_PROJECTILE))
 		if(prob(final_block_chance))
 			if(attack_type & ATTACK_TYPE_PROJECTILE)
-				owner.visible_message("<span class='danger'>[owner] deflects [attack_text] with [src]!</span>")
+				owner.visible_message(SPAN_DANGER("[owner] deflects [attack_text] with [src]!"))
 				playsound(src, pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 75, 1)
 				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 				return BLOCK_SUCCESS | BLOCK_REDIRECTED | BLOCK_SHOULD_REDIRECT | BLOCK_PHYSICAL_EXTERNAL
 			else
-				owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
+				owner.visible_message(SPAN_DANGER("[owner] parries [attack_text] with [src]!"))
 				return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return NONE
 
@@ -880,8 +880,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	. = ..()
 	if(isliving(user) && user.mind && user.owns_soul() && !is_devil(user))
 		var/mob/living/U = user
-		U.visible_message("<span class='warning'>As [U] picks [src] up, [U]'s arms briefly catch fire.</span>", \
-			"<span class='warning'>\"As you pick up [src] your arms ignite, reminding you of all your past sins.\"</span>")
+		U.visible_message(SPAN_WARNING("As [U] picks [src] up, [U]'s arms briefly catch fire."), \
+			SPAN_WARNING("\"As you pick up [src] your arms ignite, reminding you of all your past sins.\""))
 		if(ishuman(U))
 			var/mob/living/carbon/human/H = U
 			H.apply_damage(rand(force/2, force), BURN, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
@@ -890,7 +890,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/pitchfork/demonic/attack(mob/target, mob/living/carbon/human/user)
 	if(user.mind && user.owns_soul() && !is_devil(user))
-		to_chat(user, "<span class='warning'>[src] burns in your hands.</span>")
+		to_chat(user, SPAN_WARNING("[src] burns in your hands."))
 		user.apply_damage(rand(force/2, force), BURN, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
 	..()
 
@@ -900,7 +900,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		return
 	if(iswallturf(target))
 		var/turf/closed/wall/W = target
-		user.visible_message("<span class='danger'>[user] blasts \the [target] with \the [src]!</span>")
+		user.visible_message(SPAN_DANGER("[user] blasts \the [target] with \the [src]!"))
 		playsound(target, 'sound/magic/disintegrate.ogg', 100, TRUE)
 		W.break_wall()
 		W.ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
@@ -949,10 +949,10 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 		..()
 		return
 	if(homerun_ready)
-		to_chat(user, "<span class='notice'>You're already ready to do a home run!</span>")
+		to_chat(user, SPAN_NOTICE("You're already ready to do a home run!"))
 		..()
 		return
-	to_chat(user, "<span class='warning'>You begin gathering strength...</span>")
+	to_chat(user, SPAN_WARNING("You begin gathering strength..."))
 	playsound(get_turf(src), 'sound/magic/lightning_chargeup.ogg', 65, 1)
 	if(do_after(user, 90, target = src))
 		to_chat(user, "<span class='userdanger'>You gather power! Time for a home run!</span>")

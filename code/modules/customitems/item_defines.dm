@@ -32,9 +32,9 @@ All custom items with worn sprites must follow the contained sprite system: http
 /obj/item/clothing/mask/fluff/corvo_cigarette/attack_self(mob/user)
 	active= !active
 	if(active)
-		user << "<span class='notice'>You turn \the [src] on.</span>"
+		user << SPAN_NOTICE("You turn \the [src] on.")
 	else
-		user << "<span class='notice'>You turn \the [src] off.</span>"
+		user << SPAN_NOTICE("You turn \the [src] off.")
 
 	update_icon()
 	user.regenerate_icons()

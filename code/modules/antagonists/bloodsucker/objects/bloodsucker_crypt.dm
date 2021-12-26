@@ -133,7 +133,7 @@
 	if(!O.Adjacent(src) || O == user || !isliving(O) || !isliving(user) || useLock || has_buckled_mobs() || user.incapacitated())
 		return
 	if(!anchored && AmBloodsucker(user))
-		to_chat(user, "<span class='danger'>Until this rack is secured in place, it cannot serve its purpose.</span>")
+		to_chat(user, SPAN_DANGER("Until this rack is secured in place, it cannot serve its purpose."))
 		return
 	// PULL TARGET: Remember if I was pullin this guy, so we can restore this
 	var/waspulling = (O == owner.pulling)
@@ -166,7 +166,7 @@
 	if(!buckle_mob(M)) // force=TRUE))
 		return
 	// Attempt Buckle
-	user.visible_message("<span class='notice'>[user] straps [M] into the rack, immobilizing them.</span>", \
+	user.visible_message(SPAN_NOTICE("[user] straps [M] into the rack, immobilizing them."), \
 					"<span class='boldnotice'>You secure [M] tightly in place. They won't escape you now.</span>")
 
 	playsound(src.loc, 'sound/effects/pop_expl.ogg', 25, 1)
@@ -187,11 +187,11 @@
 	// Attempt Unbuckle
 	if(!AmBloodsucker(user))
 		if(M == user)
-			M.visible_message("<span class='danger'>[user] tries to release themself from the rack!</span>",\
-							"<span class='danger'>You attempt to release yourself from the rack!</span>") //  For sound if not seen -->  "<span class='italics'>You hear a squishy wet noise.</span>")
+			M.visible_message(SPAN_DANGER("[user] tries to release themself from the rack!"),\
+							SPAN_DANGER("You attempt to release yourself from the rack!")) //  For sound if not seen -->  "<span class='italics'>You hear a squishy wet noise.</span>")
 		else
-			M.visible_message("<span class='danger'>[user] tries to pull [M] rack!</span>",\
-							"<span class='danger'>[user] attempts to release you from the rack!</span>") //  For sound if not seen -->  "<span class='italics'>You hear a squishy wet noise.</span>")
+			M.visible_message(SPAN_DANGER("[user] tries to pull [M] rack!"),\
+							SPAN_DANGER("[user] attempts to release you from the rack!")) //  For sound if not seen -->  "<span class='italics'>You hear a squishy wet noise.</span>")
 		if(!do_mob(user, M, 200))
 			return
 	// Did the time. Now try to do it.
@@ -205,7 +205,7 @@
 	m180.Turn(180)//-90)//180
 	animate(buckled_mob, transform = m180, time = 2)
 	buckled_mob.pixel_y = buckled_mob.get_standard_pixel_y_offset(180)
-	src.visible_message(text("<span class='danger'>[buckled_mob][buckled_mob.stat==DEAD?"'s corpse":""] slides off of the rack.</span>"))
+	src.visible_message(SPAN_DANGER("[buckled_mob][buckled_mob.stat==DEAD?"'s corpse":""] slides off of the rack."))
 	density = FALSE
 	buckled_mob.DefaultCombatKnockdown(30)
 	update_icon()
@@ -228,9 +228,9 @@
 	// CHECK ONE: Am I claiming this? Is it in the right place?
 	if(istype(B) && !owner)
 		if(!B.lair)
-			to_chat(user, "<span class='danger'>You don't have a lair. Claim a coffin to make that location your lair.</span>")
+			to_chat(user, SPAN_DANGER("You don't have a lair. Claim a coffin to make that location your lair."))
 		if(B.lair != get_area(src))
-			to_chat(user, "<span class='danger'>You may only activate this structure in your lair: [B.lair].</span>")
+			to_chat(user, SPAN_DANGER("You may only activate this structure in your lair: [B.lair]."))
 			return
 		switch(alert(user,"Do you wish to afix this structure here? Be aware you wont be able to unsecure it anymore", "Secure [src]", "Yes", "No"))
 			if("Yes")
@@ -263,10 +263,10 @@
 	var/datum/antagonist/bloodsucker/B = user.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER)
 	// Check Bloodmob/living/M, force = FALSE, check_loc = TRUE
 	if(user.blood_volume < CONVERT_COST + 5)
-		to_chat(user, "<span class='notice'>You don't have enough blood to initiate the Dark Communion with [target].</span>")
+		to_chat(user, SPAN_NOTICE("You don't have enough blood to initiate the Dark Communion with [target]."))
 		return
 	if(B.count_vassals(user.mind) > B.bloodsucker_level)
-		to_chat(user, "<span class='notice'>Your power is yet too weak to bring more vassals under your control....</span>")
+		to_chat(user, SPAN_NOTICE("Your power is yet too weak to bring more vassals under your control...."))
 		return
 	// Prep...
 	useLock = TRUE
@@ -275,57 +275,57 @@
 	// Step Three:	Blood Ritual
 	// Conversion Process
 	if(convert_progress > 0)
-		to_chat(user, "<span class='notice'>You prepare to initiate [target] into your service.</span>")
+		to_chat(user, SPAN_NOTICE("You prepare to initiate [target] into your service."))
 		if(!do_torture(user,target))
-			to_chat(user, "<span class='danger'><i>The ritual has been interrupted!</i></span>")
+			to_chat(user, SPAN_DANGER("<i>The ritual has been interrupted!</i>"))
 		else
 			convert_progress -- // Ouch. Stop. Don't.
 			// All done!
 			if(convert_progress <= 0)
 				// FAIL: Can't be Vassal
 				if(!SSticker.mode.can_make_vassal(target, user, display_warning = FALSE) || HAS_TRAIT(target, TRAIT_MINDSHIELD)) // If I'm an unconvertable Antag ONLY
-					to_chat(user, "<span class='danger'>[target] doesn't respond to your persuasion. It doesn't appear they can be converted to follow you, they either have a mindshield or their external loyalties are too difficult for you to break.<i>\[ALT+click to release\]</span>")
+					to_chat(user, SPAN_DANGER("[target] doesn't respond to your persuasion. It doesn't appear they can be converted to follow you, they either have a mindshield or their external loyalties are too difficult for you to break.<i>\[ALT+click to release\]"))
 					convert_progress ++ // Pop it back up some. Avoids wasting Blood on a lost cause.
 				// SUCCESS: All done!
 				else
 					if(RequireDisloyalty(target))
 						to_chat(user, "<span class='boldwarning'>[target] has external loyalties! [target.p_they(TRUE)] will require more <i>persuasion</i> to break [target.p_them()] to your will!</span>")
 					else
-						to_chat(user, "<span class='notice'>[target] looks ready for the <b>Dark Communion</b>.</span>")
+						to_chat(user, SPAN_NOTICE("[target] looks ready for the <b>Dark Communion</b>."))
 			// Still Need More Persuasion...
 			else
-				to_chat(user, "<span class='notice'>[target] could use [convert_progress == 1?"a little":"some"] more <i>persuasion</i>.</span>")
+				to_chat(user, SPAN_NOTICE("[target] could use [convert_progress == 1?"a little":"some"] more <i>persuasion</i>."))
 		useLock = FALSE
 		return
 	// Check: Mindshield & Antag
 	if(!disloyalty_confirm && RequireDisloyalty(target))
 		if(!do_disloyalty(user,target))
-			to_chat(user, "<span class='danger'><i>The ritual has been interrupted!</i></span>")
+			to_chat(user, SPAN_DANGER("<i>The ritual has been interrupted!</i>"))
 		else if (!disloyalty_confirm)
-			to_chat(user, "<span class='danger'>[target] refuses to give into your persuasion. Perhaps a little more?</span>")
+			to_chat(user, SPAN_DANGER("[target] refuses to give into your persuasion. Perhaps a little more?"))
 		else
-			to_chat(user, "<span class='notice'>[target] looks ready for the <b>Dark Communion</b>.</span>")
+			to_chat(user, SPAN_NOTICE("[target] looks ready for the <b>Dark Communion</b>."))
 		useLock = FALSE
 		return
 	// Check: Blood
 	if(user.blood_volume < CONVERT_COST)
-		to_chat(user, "<span class='notice'>You don't have enough blood to initiate the Dark Communion with [target], you need [CONVERT_COST - user.blood_volume] units more!</span>")
+		to_chat(user, SPAN_NOTICE("You don't have enough blood to initiate the Dark Communion with [target], you need [CONVERT_COST - user.blood_volume] units more!"))
 		useLock = FALSE
 		return
 	B.AddBloodVolume(-CONVERT_COST)
-	target.add_mob_blood(user, "<span class='danger'>Youve used [CONVERT_COST] amount of blood to gain a new vassal!</span>")
+	target.add_mob_blood(user, SPAN_DANGER("Youve used [CONVERT_COST] amount of blood to gain a new vassal!"))
 	to_chat(user, )
-	user.visible_message("<span class='notice'>[user] marks a bloody smear on [target]'s forehead and puts a wrist up to [target.p_their()] mouth!</span>", \
-					  "<span class='notice'>You paint a bloody marking across [target]'s forehead, place your wrist to [target.p_their()] mouth, and subject [target.p_them()] to the Dark Communion.</span>")
+	user.visible_message(SPAN_NOTICE("[user] marks a bloody smear on [target]'s forehead and puts a wrist up to [target.p_their()] mouth!"), \
+					  SPAN_NOTICE("You paint a bloody marking across [target]'s forehead, place your wrist to [target.p_their()] mouth, and subject [target.p_them()] to the Dark Communion."))
 	if(!do_mob(user, src, 50))
-		to_chat(user, "<span class='danger'><i>The ritual has been interrupted!</i></span>")
+		to_chat(user, SPAN_DANGER("<i>The ritual has been interrupted!</i>"))
 		useLock = FALSE
 		return
 	// Convert to Vassal!
 	if(B && B.attempt_turn_vassal(target))
 		//remove_loyalties(target) // In case of Mindshield, or appropriate Antag (Traitor, Internal, etc)
 		//if (!target.buckled)
-		//	to_chat(user, "<span class='danger'><i>The ritual has been interrupted!</i></span>")
+		//	to_chat(user, SPAN_DANGER("<i>The ritual has been interrupted!</i>"))
 		//	useLock = FALSE
 		//	return
 		user.playsound_local(null, 'sound/effects/explosion_distant.ogg', 40, TRUE)
@@ -379,7 +379,7 @@
 	if(I)
 		playsound(loc, I.hitsound, 30, 1, -1)
 		I.play_tool_sound(target)
-	target.visible_message("<span class='danger'>[user] has [method_string] [target]'s [target_string] with [user.p_their()] [weapon_string]!</span>", \
+	target.visible_message(SPAN_DANGER("[user] has [method_string] [target]'s [target_string] with [user.p_their()] [weapon_string]!"), \
 						   "<span class='userdanger'>[user] has [method_string] your [target_string] with [user.p_their()] [weapon_string]!</span>")
 	if(!target.is_muzzled())
 		target.emote("scream")
@@ -392,7 +392,7 @@
 	// OFFER YES/NO NOW!
 	spawn(10)
 		if(useLock && target && target.client) // Are we still torturing? Did we cancel? Are they still here?
-			to_chat(user, "<span class='notice'>[target] has been given the opportunity for servitude. You await their decision...</span>")
+			to_chat(user, SPAN_NOTICE("[target] has been given the opportunity for servitude. You await their decision..."))
 			var/alert_text = "You are being tortured! Do you want to give in and pledge your undying loyalty to [user]?"
 		/*	if(HAS_TRAIT(target, TRAIT_MINDSHIELD))
 				alert_text += "\n\nYou will no longer be loyal to the station!"
@@ -428,7 +428,7 @@
 	// Failsafe: You already said YES.
 	if(disloyalty_confirm)
 		return
-	to_chat(target, "<span class='notice'>You refuse to give in! You <i>will not</i> break!</span>")
+	to_chat(target, SPAN_NOTICE("You refuse to give in! You <i>will not</i> break!"))
 
 
 /obj/structure/bloodsucker/vassalrack/proc/remove_loyalties(mob/living/target)

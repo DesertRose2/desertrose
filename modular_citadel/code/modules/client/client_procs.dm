@@ -46,4 +46,4 @@
 	set desc = "Did the context menu get stuck on or off? Press this button."
 
 	show_popup_menus = !show_popup_menus
-	to_chat(src, "<span class='notice'>The right-click context menu is now [show_popup_menus ? "enabled" : "disabled"].</span>")
+	to_chat(src, SPAN_NOTICE("The right-click context menu is now [show_popup_menus ? "enabled" : "disabled"]."))

@@ -5,7 +5,6 @@ Chief Engineer
 	title = "Chief Engineer"
 	flag = CHIEF
 	department_head = list("Captain")
-	department_flag = ENGSEC
 	head_announce = list("Engineering")
 	//
 	total_positions = 1
@@ -69,7 +68,6 @@ Station Engineer
 	title = "Station Engineer"
 	flag = ENGINEER
 	department_head = list("Chief Engineer")
-	department_flag = ENGSEC
 	//
 	total_positions = 5
 	spawn_positions = 5
@@ -125,7 +123,6 @@ Atmospheric Technician
 	title = "Atmospheric Technician"
 	flag = ATMOSTECH
 	department_head = list("Chief Engineer")
-	department_flag = ENGSEC
 	//
 	total_positions = 3
 	spawn_positions = 2

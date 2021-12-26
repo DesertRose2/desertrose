@@ -150,7 +150,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 /mob/living/simple_animal/hostile/guardian/proc/guardianrecolor()
 	guardiancolor = input(src,"What would you like your color to be?","Choose Your Color","#ffffff") as color|null
 	if(!guardiancolor) //redo proc until we get a color
-		to_chat(src, "<span class='warning'>Not a valid color, please try again.</span>")
+		to_chat(src, SPAN_WARNING("Not a valid color, please try again."))
 		guardianrecolor()
 		return
 	if(!recolorentiresprite)
@@ -163,7 +163,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 /mob/living/simple_animal/hostile/guardian/proc/guardianrename()
 	var/new_name = sanitize_name(reject_bad_text(stripped_input(src, "What would you like your name to be?", "Choose Your Name", real_name, MAX_NAME_LEN)))
 	if(!new_name) //redo proc until we get a good name
-		to_chat(src, "<span class='warning'>Not a valid name, please try again.</span>")
+		to_chat(src, SPAN_WARNING("Not a valid name, please try again."))
 		guardianrename()
 		return
 	to_chat(src, "<span class='notice'>Your new name <span class='name'>[new_name]</span> anchors itself in your mind.</span>")
@@ -177,9 +177,9 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	if(!QDELETED(summoner))
 		if(summoner.stat == DEAD)
 			forceMove(summoner.loc)
-			to_chat(src, "<span class='danger'>Your summoner has died!</span>")
-			visible_message("<span class='danger'><B>\The [src] dies along with its user!</B></span>")
-			summoner.visible_message("<span class='danger'><B>[summoner]'s body is completely consumed by the strain of sustaining [src]!</B></span>")
+			to_chat(src, SPAN_DANGER("Your summoner has died!"))
+			visible_message(SPAN_DANGER("<B>\The [src] dies along with its user!</B>"))
+			summoner.visible_message(SPAN_DANGER("<B>[summoner]'s body is completely consumed by the strain of sustaining [src]!</B>"))
 			for(var/obj/item/W in summoner)
 				if(!summoner.dropItemToGround(W))
 					qdel(W)
@@ -187,8 +187,8 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 			death(TRUE)
 			qdel(src)
 	else
-		to_chat(src, "<span class='danger'>Your summoner has died!</span>")
-		visible_message("<span class='danger'><B>[src] dies along with its user!</B></span>")
+		to_chat(src, SPAN_DANGER("Your summoner has died!"))
+		visible_message(SPAN_DANGER("<B>[src] dies along with its user!</B>"))
 		death(TRUE)
 		qdel(src)
 	snapback()
@@ -218,7 +218,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 			return
 		else
 			to_chat(src, "<span class='holoparasite'>You moved out of range, and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
-			visible_message("<span class='danger'>\The [src] jumps back to its user.</span>")
+			visible_message(SPAN_DANGER("\The [src] jumps back to its user."))
 			if(istype(summoner.loc, /obj/effect))
 				Recall(TRUE)
 			else
@@ -263,7 +263,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 		summoner.adjustBruteLoss(amount)
 		if(amount > 0)
 			to_chat(summoner, "<span class='danger'><B>Your [name] is under attack! You take damage!</span></B>")
-			summoner.visible_message("<span class='danger'><B>Blood sprays from [summoner] as [src] takes damage!</B></span>")
+			summoner.visible_message(SPAN_DANGER("<B>Blood sprays from [summoner] as [src] takes damage!</B>"))
 			if(summoner.stat == UNCONSCIOUS)
 				to_chat(summoner, "<span class='danger'><B>Your body can't take the strain of sustaining [src] in this condition, it begins to fall apart!</span></B>")
 				summoner.adjustCloneLoss(amount * 0.5) //dying hosts take 50% bonus damage as cloneloss
@@ -377,10 +377,10 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 
 /mob/living/simple_animal/hostile/guardian/proc/ToggleLight()
 	if(light_range<3)
-		to_chat(src, "<span class='notice'>You activate your light.</span>")
+		to_chat(src, SPAN_NOTICE("You activate your light."))
 		set_light(3)
 	else
-		to_chat(src, "<span class='notice'>You deactivate your light.</span>")
+		to_chat(src, SPAN_NOTICE("You deactivate your light."))
 		set_light(0)
 
 /mob/living/simple_animal/hostile/guardian/verb/ShowType()

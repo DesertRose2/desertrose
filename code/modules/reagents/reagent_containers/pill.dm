@@ -36,22 +36,22 @@
 		return FALSE
 
 	if(M == user)
-		M.visible_message("<span class='notice'>[user] attempts to [apply_method] [src].</span>")
+		M.visible_message(SPAN_NOTICE("[user] attempts to [apply_method] [src]."))
 		if(self_delay)
 			if(!do_mob(user, M, self_delay))
 				return FALSE
-		to_chat(M, "<span class='notice'>You [apply_method] [src].</span>")
+		to_chat(M, SPAN_NOTICE("You [apply_method] [src]."))
 	else
-		M.visible_message("<span class='danger'>[user] attempts to force [M] to [apply_method] [src].</span>", \
+		M.visible_message(SPAN_DANGER("[user] attempts to force [M] to [apply_method] [src]."), \
 							"<span class='userdanger'>[user] attempts to force [M] to [apply_method] [src].</span>")
 		if(!do_mob(user, M))
 			return FALSE
-		M.visible_message("<span class='danger'>[user] forces [M] to [apply_method] [src].</span>", \
+		M.visible_message(SPAN_DANGER("[user] forces [M] to [apply_method] [src]."), \
 							"<span class='userdanger'>[user] forces [M] to [apply_method] [src].</span>")
 
 	var/makes_me_think = pick(strings("redpill.json", "redpill_questions"))
 	if(icon_state == "pill4" && prob(5)) //you take the red pill - you stay in Wonderland, and I show you how deep the rabbit hole goes
-		addtimer(CALLBACK(GLOBAL_PROC, /proc/to_chat, M, "<span class='notice'>[makes_me_think]</span>"), 50)
+		addtimer(CALLBACK(GLOBAL_PROC, /proc/to_chat, M, SPAN_NOTICE("[makes_me_think]")), 50)
 
 	log_combat(user, M, "fed", reagents.log_list())
 	if(reagents.total_volume)
@@ -67,15 +67,15 @@
 	if(!dissolvable || !target.is_refillable())
 		return
 	if(target.is_drainable() && !target.reagents.total_volume)
-		to_chat(user, "<span class='warning'>[target] is empty! There's nothing to dissolve [src] in.</span>")
+		to_chat(user, SPAN_WARNING("[target] is empty! There's nothing to dissolve [src] in."))
 		return
 
 	if(target.reagents.holder_full())
-		to_chat(user, "<span class='warning'>[target] is full.</span>")
+		to_chat(user, SPAN_WARNING("[target] is full."))
 		return
 
-	user.visible_message("<span class='warning'>[user] slips something into [target]!</span>",
-						"<span class='notice'>You dissolve [src] in [target].</span>", vision_distance = 2)
+	user.visible_message(SPAN_WARNING("[user] slips something into [target]!"),
+						SPAN_NOTICE("You dissolve [src] in [target]."), vision_distance = 2)
 	reagents.trans_to(target, reagents.total_volume)
 	qdel(src)
 	return STOP_ATTACK_PROC_CHAIN
@@ -235,7 +235,7 @@
 
 /obj/item/reagent_containers/pill/floorpill
 	name = "floorpill"
-	desc = "A strange pill found in the depths of maintenance"
+	desc = "A strange pill found in the depths of maintenance."
 	icon_state = "pill21"
 	var/static/list/names = list("maintenance pill","floorpill","mystery pill","suspicious pill","strange pill")
 	var/static/list/descs = list("Your feeling is telling you no, but...","Drugs are expensive, you can't afford not to eat any pills that you find."\

@@ -3,12 +3,6 @@
 /obj/structure/stalkeregg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"aac" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall,
-/turf/closed/wall/r_wall,
-/area/f13/brotherhood/offices2nd)
 "aae" = (
 /obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
@@ -809,6 +803,17 @@
 "azF" = (
 /turf/open/floor/carpet/green,
 /area/f13/followers)
+"azL" = (
+/obj/structure/pool/ladder{
+	dir = 2;
+	pixel_y = 15
+	},
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "azO" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -6068,6 +6073,19 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
+"eaL" = (
+/obj/structure/chair/bench,
+/obj/structure/disposalpipe/broken{
+	dir = 4;
+	layer = 3;
+	pixel_y = 15
+	},
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "eaX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/shower{
@@ -6491,12 +6509,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
-"erI" = (
-/obj/structure/sign/poster/official/anniversary_vintage_reprint,
-/turf/closed/wall/r_wall/f13vault{
-	icon_state = "2-i"
-	},
-/area/f13/tunnel)
 "esc" = (
 /turf/open/floor/f13/wood{
 	color = "#c5bab2";
@@ -6594,6 +6606,12 @@
 /obj/structure/flora/junglebush/large,
 /turf/open/water,
 /area/f13/caves)
+"euQ" = (
+/obj/structure/sign/poster/official/safety_eye_protection,
+/turf/closed/wall/r_wall/f13vault{
+	icon_state = "2-i"
+	},
+/area/f13/tunnel)
 "evi" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /obj/structure/lattice/catwalk,
@@ -6896,6 +6914,19 @@
 	color = "#c5bab2"
 	},
 /area/f13/legion)
+"eET" = (
+/obj/structure/chair/bench,
+/obj/structure/disposalpipe/broken{
+	dir = 8;
+	layer = 3;
+	pixel_y = 15
+	},
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "eEY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/corner,
@@ -9408,10 +9439,6 @@
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
-/area/f13/brotherhood/offices2nd)
-"gpq" = (
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/turf/closed/wall/r_wall,
 /area/f13/brotherhood/offices2nd)
 "gpy" = (
 /obj/effect/decal/cleanable/dirt{
@@ -12728,18 +12755,6 @@
 	},
 /turf/open/water,
 /area/f13/tunnel)
-"izC" = (
-/obj/item/chair/stool/retro/black,
-/obj/effect/spawner/lootdrop/trash,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
-	desc = "A poster advertising silenced pistols as being 'classy as fuck'. It is covered in faded gang tags.";
-	name = "Silenced Pistol";
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/tunnel)
 "izZ" = (
 /obj/structure/lattice{
 	density = 1
@@ -13019,7 +13034,7 @@
 /area/f13/tunnel)
 "iKB" = (
 /obj/structure/table,
-/obj/item/book/granter/trait/chemistry,
+/obj/item/book/granter/trait/crafting/chemistry,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -16225,6 +16240,24 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"kQj" = (
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/silenced_pistol{
+	pixel_x = 32
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/chair/stool/retro/black,
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/silenced_pistol{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/tunnel)
 "kRf" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -17259,6 +17292,16 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"ltB" = (
+/obj/structure/chair/bench{
+	pixel_y = 15
+	},
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "ltH" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -18151,6 +18194,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
+"mhL" = (
+/obj/structure/chair/bench,
+/obj/structure/decoration/vent{
+	pixel_y = 15
+	},
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "miI" = (
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -19116,6 +19170,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/f13/wood/interior,
 /area/f13/tunnel)
+"mNn" = (
+/obj/structure/chair/bench,
+/turf/open/pool{
+	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
+	icon_state = "bath_tile";
+	name = "Bath Water"
+	},
+/area/f13/tunnel)
 "mNE" = (
 /obj/structure/barricade/bars,
 /turf/open/water,
@@ -19399,16 +19461,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/legion)
-"mYR" = (
-/obj/machinery/vending/tool,
-/obj/structure/sign/poster/contraband/rip_badger{
-	pixel_x = 14;
-	pixel_y = 31
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "darkyellowfull"
-	},
-/area/f13/brotherhood/rnd)
 "mYV" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/f13{
@@ -28659,6 +28711,16 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/brotherhood/leisure)
+"sJA" = (
+/obj/machinery/vending/tool,
+/obj/structure/sign/poster/official/safety_eye_protection{
+	pixel_x = 14;
+	pixel_y = 31
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red{
+	icon_state = "darkyellowfull"
+	},
+/area/f13/brotherhood/rnd)
 "sJS" = (
 /obj/structure/lattice/catwalk,
 /turf/open/water,
@@ -29090,16 +29152,6 @@
 /obj/machinery/door/airlock/freezer,
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
-	},
-/area/f13/tunnel)
-"sZe" = (
-/obj/structure/chair/bench{
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
 	},
 /area/f13/tunnel)
 "sZi" = (
@@ -33133,19 +33185,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/rnd)
-"vuU" = (
-/obj/structure/chair/bench,
-/obj/structure/disposalpipe/broken{
-	dir = 8;
-	layer = 3;
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "vuY" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -33699,17 +33738,6 @@
 	icon_state = "carpetsymbol"
 	},
 /area/f13/tunnel)
-"vLt" = (
-/obj/structure/pool/ladder{
-	dir = 2;
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "vLO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
@@ -33932,17 +33960,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
-"vTc" = (
-/obj/structure/chair/bench,
-/obj/structure/decoration/vent{
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "vTH" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
@@ -36103,14 +36120,6 @@
 "xmk" = (
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/reactor)
-"xmo" = (
-/obj/structure/chair/bench,
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "xmr" = (
 /obj/structure/grille,
 /obj/structure/grille,
@@ -36895,19 +36904,6 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/cmo,
-/area/f13/tunnel)
-"xUX" = (
-/obj/structure/chair/bench,
-/obj/structure/disposalpipe/broken{
-	dir = 4;
-	layer = 3;
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads!...you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
 /area/f13/tunnel)
 "xVa" = (
 /obj/structure/noticeboard{
@@ -46927,7 +46923,7 @@ uBh
 ygC
 nil
 xpj
-erI
+euQ
 neb
 xpj
 wEc
@@ -58965,8 +58961,8 @@ fJM
 tur
 neT
 nlk
-sZe
-vuU
+ltB
+eET
 jmN
 xDr
 pXC
@@ -59222,8 +59218,8 @@ fJM
 mIm
 nlk
 nlk
-vLt
-vTc
+azL
+mhL
 jmN
 xDr
 jmN
@@ -59479,8 +59475,8 @@ fJM
 tur
 nNA
 dLZ
-sZe
-xmo
+ltB
+mNn
 jmN
 xDr
 vSd
@@ -59993,8 +59989,8 @@ mGg
 tur
 piq
 nlk
-sZe
-xmo
+ltB
+mNn
 jmN
 xDr
 tDl
@@ -60250,8 +60246,8 @@ fJM
 mIm
 nlk
 nlk
-vLt
-vTc
+azL
+mhL
 jmN
 xDr
 vSd
@@ -60507,8 +60503,8 @@ fJM
 tur
 neT
 dLZ
-sZe
-xUX
+ltB
+eaL
 jmN
 ukI
 jmN
@@ -71482,7 +71478,7 @@ ghw
 qtd
 dTE
 dek
-izC
+kQj
 gcb
 omL
 lnL
@@ -94031,7 +94027,7 @@ piT
 cna
 rfD
 xhA
-mYR
+sJA
 qWx
 oFT
 qWx
@@ -98907,7 +98903,7 @@ hPn
 gul
 kRZ
 oFk
-aac
+bKi
 rTd
 pld
 pmm
@@ -101991,7 +101987,7 @@ hPn
 oHY
 gul
 gul
-gpq
+gul
 gul
 gul
 gul

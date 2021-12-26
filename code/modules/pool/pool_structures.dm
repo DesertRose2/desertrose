@@ -56,15 +56,15 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/jumper = user
 		if(jumping)
-			to_chat(user, "<span class='notice'>Someone else is already making a jump!</span>")
+			to_chat(user, SPAN_NOTICE("Someone else is already making a jump!"))
 			return
 		var/turf/T = get_turf(src)
 		if(HAS_TRAIT(user, TRAIT_SWIMMING))
 			return
 		else
 			if(Adjacent(jumper))
-				jumper.visible_message("<span class='notice'>[user] climbs up \the [src]!</span>", \
-									"<span class='notice'>You climb up \the [src] and prepares to jump!</span>")
+				jumper.visible_message(SPAN_NOTICE("[user] climbs up \the [src]!"), \
+									SPAN_NOTICE("You climb up \the [src] and prepares to jump!"))
 				jumper.Stun(40)
 				jumping = TRUE
 				var/original_layer = jumper.layer
@@ -82,32 +82,32 @@
 /obj/structure/pool/Lboard/proc/dive(mob/living/carbon/jumper, original_layer, original_px, original_py)
 	switch(rand(1, 100))
 		if(1 to 20)
-			jumper.visible_message("<span class='notice'>[jumper] goes for a small dive!</span>", \
-								"<span class='notice'>You go for a small dive.</span>")
+			jumper.visible_message(SPAN_NOTICE("[jumper] goes for a small dive!"), \
+								SPAN_NOTICE("You go for a small dive."))
 			sleep(15)
 			backswim()
 			var/atom/throw_target = get_edge_target_turf(src, dir)
 			jumper.throw_at(throw_target, 1, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
 
 		if(21 to 40)
-			jumper.visible_message("<span class='notice'>[jumper] goes for a dive!</span>", \
-								"<span class='notice'>You're going for a dive!</span>")
+			jumper.visible_message(SPAN_NOTICE("[jumper] goes for a dive!"), \
+								SPAN_NOTICE("You're going for a dive!"))
 			sleep(20)
 			backswim()
 			var/atom/throw_target = get_edge_target_turf(src, dir)
 			jumper.throw_at(throw_target, 2, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
 
 		if(41 to 60)
-			jumper.visible_message("<span class='notice'>[jumper] goes for a long dive! Stay far away!</span>", \
-					"<span class='notice'>You're going for a long dive!!</span>")
+			jumper.visible_message(SPAN_NOTICE("[jumper] goes for a long dive! Stay far away!"), \
+					SPAN_NOTICE("You're going for a long dive!!"))
 			sleep(25)
 			backswim()
 			var/atom/throw_target = get_edge_target_turf(src, dir)
 			jumper.throw_at(throw_target, 3, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
 
 		if(61 to 80)
-			jumper.visible_message("<span class='notice'>[jumper] goes for an awesome dive! Don't stand in [jumper.p_their()] way!</span>", \
-								"<span class='notice'>You feel like this dive will be awesome</span>")
+			jumper.visible_message(SPAN_NOTICE("[jumper] goes for an awesome dive! Don't stand in [jumper.p_their()] way!"), \
+								SPAN_NOTICE("You feel like this dive will be awesome."))
 			sleep(30)
 			backswim()
 			var/atom/throw_target = get_edge_target_turf(src, dir)
@@ -115,7 +115,7 @@
 		if(81 to 91)
 			sleep(20)
 			backswim()
-			jumper.visible_message("<span class='danger'>[jumper] misses [jumper.p_their()] step!</span>", \
+			jumper.visible_message(SPAN_DANGER("[jumper] misses [jumper.p_their()] step!"), \
 							"<span class='userdanger'>You misstep!</span>")
 			var/atom/throw_target = get_edge_target_turf(src, dir)
 			jumper.throw_at(throw_target, 0, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
@@ -123,14 +123,14 @@
 			jumper.adjustBruteLoss(10)
 
 		if(91 to 100)
-			jumper.visible_message("<span class='notice'>[jumper] is preparing for the legendary dive! Can [jumper.p_they()] make it?</span>", \
+			jumper.visible_message(SPAN_NOTICE("[jumper] is preparing for the legendary dive! Can [jumper.p_they()] make it?"), \
 								"<span class='userdanger'>You start preparing for a legendary dive!</span>")
 			jumper.SpinAnimation(7,1)
 
 			sleep(30)
 			if(prob(75))
 				backswim()
-				jumper.visible_message("<span class='notice'>[jumper] fails!</span>", \
+				jumper.visible_message(SPAN_NOTICE("[jumper] fails!"), \
 						"<span class='userdanger'>You can't quite do it!</span>")
 				var/atom/throw_target = get_edge_target_turf(src, dir)
 				jumper.throw_at(throw_target, 1, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
@@ -139,7 +139,7 @@
 				jumper.IgniteMob()
 				sleep(5)
 				backswim()
-				jumper.visible_message("<span class='danger'>[jumper] bursts into flames of pure awesomness!</span>", \
+				jumper.visible_message(SPAN_DANGER("[jumper] bursts into flames of pure awesomness!"), \
 					"<span class='userdanger'>No one can stop you now!</span>")
 				var/atom/throw_target = get_edge_target_turf(src, dir)
 				jumper.throw_at(throw_target, 6, 1, callback = CALLBACK(src, .proc/on_finish_jump, jumper))
@@ -153,7 +153,7 @@
 	if(istype(victim.loc, /turf/open/pool))
 		var/turf/open/pool/P = victim.loc
 		if(!P.filled)		//you dun fucked up now
-			to_chat(victim, "<span class='warning'>That was stupid of you..</span>")
-			victim.visible_message("<span class='danger'>[victim] smashes into the ground!</span>")
+			to_chat(victim, SPAN_WARNING("That was stupid of you.."))
+			victim.visible_message(SPAN_DANGER("[victim] smashes into the ground!"))
 			victim.apply_damage(50)
 			victim.DefaultCombatKnockdown(200)

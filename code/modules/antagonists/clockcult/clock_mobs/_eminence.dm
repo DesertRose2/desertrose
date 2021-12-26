@@ -30,17 +30,17 @@
 		if(!GLOB.ratvar_awakens)
 			if(locate(/obj/effect/blessing, T))
 				if(last_failed_turf != T)
-					T.visible_message("<span class='warning'>[T] suddenly emits a ringing sound!</span>", null, null, null, src)
+					T.visible_message(SPAN_WARNING("[T] suddenly emits a ringing sound!"), null, null, null, src)
 					playsound(T, 'sound/machines/clockcult/ark_damage.ogg', 75, FALSE)
 					last_failed_turf = T
 				if((world.time - lastWarning) >= 30)
 					lastWarning = world.time
-					to_chat(src, "<span class='warning'>This turf is consecrated and can't be crossed!</span>")
+					to_chat(src, SPAN_WARNING("This turf is consecrated and can't be crossed!"))
 				return
 			if(istype(get_area(T), /area/chapel))
 				if((world.time - lastWarning) >= 30)
 					lastWarning = world.time
-					to_chat(src, "<span class='warning'>The Chapel is hallowed ground under a heretical deity, and can't be accessed!</span>")
+					to_chat(src, SPAN_WARNING("The Chapel is hallowed ground under a heretical deity, and can't be accessed!"))
 				return
 		else
 			for(var/turf/TT in range(5, src))
@@ -121,7 +121,7 @@
 		INVOKE_ASYNC(src, .proc/attempt_recall, G)
 	else if(istype(A, /obj/structure/destructible/clockwork/trap/trigger))
 		var/obj/structure/destructible/clockwork/trap/trigger/T = A
-		T.visible_message("<span class='danger'>[T] clunks as it's activated remotely.</span>")
+		T.visible_message(SPAN_DANGER("[T] clunks as it's activated remotely."))
 		to_chat(src, "<span class='brass'>You activate [T].</span>")
 		T.activate()
 
@@ -129,7 +129,7 @@
 	if(G.recalling)
 		return
 	if(!G.recalls_remaining)
-		to_chat(src, "<span class='warning'>The Ark can no longer recall!</span>")
+		to_chat(src, SPAN_WARNING("The Ark can no longer recall!"))
 		return
 	if(alert(src, "Initiate mass recall?", "Mass Recall", "Yes", "No") != "Yes" || QDELETED(src) || QDELETED(G) || !G.obj_integrity)
 		return
@@ -206,7 +206,7 @@
 	if(!istype(wall))
 		return
 	if(superheated_walls >= SUPERHEATED_CLOCKWORK_WALL_LIMIT && !wall.heated)
-		to_chat(src, "<span class='warning'>You're exerting all of your power superheating this many walls already! Cool some down first!</span>")
+		to_chat(src, SPAN_WARNING("You're exerting all of your power superheating this many walls already! Cool some down first!"))
 		return
 	wall.turn_up_the_heat()
 	if(wall.heated)
@@ -265,7 +265,7 @@
 		owner.playsound_local(owner, 'sound/magic/magic_missile.ogg', 50, TRUE)
 		flash_color(owner, flash_color = "#AF0AAF", flash_time = 25)
 	else
-		to_chat(owner, "<span class='warning'>There is no Ark!</span>")
+		to_chat(owner, SPAN_WARNING("There is no Ark!"))
 */
 
 //Warps to a chosen Obelisk
@@ -285,7 +285,7 @@
 			possible_targets[avoid_assoc_duplicate_keys("[locname] [O.name]", warpnames)] = O
 
 	if(!possible_targets.len)
-		to_chat(owner, "<span class='warning'>There are no Obelisks to warp to!</span>")
+		to_chat(owner, SPAN_WARNING("There are no Obelisks to warp to!"))
 		return
 
 	var/target_key = input(owner, "Choose an Obelisk to warp to.", "Obelisk Warp") as null|anything in possible_targets
@@ -295,7 +295,7 @@
 		return
 
 	if(!target)
-		to_chat(owner, "<span class='warning'>That Obelisk does no longer exist!</span>")
+		to_chat(owner, SPAN_WARNING("That Obelisk does no longer exist!"))
 		return
 	owner.forceMove(get_turf(target))
 	owner.playsound_local(owner, 'sound/magic/magic_missile.ogg', 50, TRUE)
@@ -313,7 +313,7 @@
 		owner.playsound_local(owner, 'sound/magic/magic_missile.ogg', 50, TRUE)
 		flash_color(owner, flash_color = "#AF0AAF", flash_time = 25)
 	else
-		to_chat(owner, "<span class='warning'>You're already on the station!</span>")
+		to_chat(owner, SPAN_WARNING("You're already on the station!"))
 
 //A quick-use button for recalling the servants to the Ark
 /datum/action/innate/eminence/mass_recall

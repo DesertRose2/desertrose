@@ -41,7 +41,7 @@ GLOBAL_LIST_EMPTY(GPS_list)
 
 ///Called on COMSIG_PARENT_EXAMINE
 /datum/component/gps/item/proc/on_examine(datum/source, mob/user, list/examine_list)
-	examine_list += "<span class='notice'>Alt-click to switch it [tracking ? "off":"on"].</span>"
+	examine_list += SPAN_NOTICE("Alt-click to switch it [tracking ? "off":"on"].")
 
 ///Called on COMSIG_ATOM_EMP_ACT
 /datum/component/gps/item/proc/on_emp_act(datum/source, severity)
@@ -68,16 +68,16 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	if(!user.canUseTopic(parent, BE_CLOSE))
 		return //user not valid to use gps
 	if(emped)
-		to_chat(user, "<span class='warning'>It's busted!</span>")
+		to_chat(user, SPAN_WARNING("It's busted!"))
 		return
 	var/atom/A = parent
 	if(tracking)
 		A.cut_overlay("working")
-		to_chat(user, "<span class='notice'>[parent] is no longer tracking, or visible to other GPS devices.</span>")
+		to_chat(user, SPAN_NOTICE("[parent] is no longer tracking, or visible to other GPS devices."))
 		tracking = FALSE
 	else
 		A.add_overlay("working")
-		to_chat(user, "<span class='notice'>[parent] is now tracking, and visible to other GPS devices.</span>")
+		to_chat(user, SPAN_NOTICE("[parent] is now tracking, and visible to other GPS devices."))
 		tracking = TRUE
 
 /datum/component/gps/item/ui_interact(mob/user, datum/tgui/ui)

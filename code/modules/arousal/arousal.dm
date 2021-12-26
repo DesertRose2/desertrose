@@ -55,7 +55,7 @@
 		if(linked_organ)
 			. = linked_organ.reagents
 	if(!. && !silent)
-		to_chat(H, "<span class='warning'>Your [name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
+		to_chat(H, SPAN_WARNING("Your [name] is unable to produce it's own fluids, it's missing the organs for it."))
 
 /mob/living/carbon/human/proc/do_climax(datum/reagents/R, atom/target, obj/item/organ/genital/G, spill = TRUE)
 	if(!G)
@@ -123,7 +123,7 @@
 		var/obj/item/organ/genital/ret_organ = input(src, "with what?", "Climax", null) as null|obj in genitals_list
 		return ret_organ
 	else if(!silent)
-		to_chat(src, "<span class='warning'>You cannot climax without available genitals.</span>")
+		to_chat(src, SPAN_WARNING("You cannot climax without available genitals."))
 
 /mob/living/carbon/human/proc/pick_partner(silent = FALSE)
 	var/list/partners = list()
@@ -142,11 +142,11 @@
 	//NOW the list should only contain correct partners
 	if(!partners.len)
 		if(!silent)
-			to_chat(src, "<span class='warning'>You cannot do this alone.</span>")
+			to_chat(src, SPAN_WARNING("You cannot do this alone."))
 		return //No one left.
 	var/mob/living/target = input(src, "With whom?", "Sexual partner", null) as null|anything in partners //pick one, default to null
 	if(target && in_range(src, target))
-		to_chat(src,"<span class='notice'>Waiting for consent...</span>")
+		to_chat(src,SPAN_NOTICE("Waiting for consent..."))
 		var/consenting = input(target, "Do you want [src] to climax with you?","Climax mechanics","No") in list("Yes","No")
 		if(consenting == "Yes")
 			return target
@@ -169,12 +169,12 @@
 		if(SC && CanReach(SC))
 			return SC
 	else if(!silent)
-		to_chat(src, "<span class='warning'>You cannot do this without an appropriate container.</span>")
+		to_chat(src, SPAN_WARNING("You cannot do this without an appropriate container."))
 
 /mob/living/carbon/human/proc/available_rosie_palms(silent = FALSE, list/whitelist_typepaths = list(/obj/item/dildo))
 	if(restrained(TRUE)) //TRUE ignores grabs
 		if(!silent)
-			to_chat(src, "<span class='warning'>You can't do that while restrained!</span>")
+			to_chat(src, SPAN_WARNING("You can't do that while restrained!"))
 		return FALSE
 	if(!get_num_arms() || !get_empty_held_indexes())
 		if(whitelist_typepaths)
@@ -184,7 +184,7 @@
 				if(is_holding_item_of_type(path))
 					return TRUE
 		if(!silent)
-			to_chat(src, "<span class='warning'>You need at least one free arm.</span>")
+			to_chat(src, SPAN_WARNING("You need at least one free arm."))
 		return FALSE
 	return TRUE
 
@@ -192,14 +192,14 @@
 /mob/living/carbon/human/proc/mob_climax(forced_climax=FALSE) //Forced is instead of the other proc, makes you cum if you have the tools for it, ignoring restraints
 	if(mb_cd_timer > world.time)
 		if(!forced_climax) //Don't spam the message to the victim if forced to come too fast
-			to_chat(src, "<span class='warning'>You need to wait [DisplayTimeText((mb_cd_timer - world.time), TRUE)] before you can do that again!</span>")
+			to_chat(src, SPAN_WARNING("You need to wait [DisplayTimeText((mb_cd_timer - world.time), TRUE)] before you can do that again!"))
 		return
 
 	if(!client?.prefs.arousable || !has_dna())
 		return
 	if(stat == DEAD)
 		if(!forced_climax)
-			to_chat(src, "<span class='warning'>You can't do that while dead!</span>")
+			to_chat(src, SPAN_WARNING("You can't do that while dead!"))
 		return
 	if(forced_climax) //Something forced us to cum, this is not a masturbation thing and does not progress to the other checks
 		for(var/obj/item/organ/genital/G in internal_organs)
@@ -236,7 +236,7 @@
 	//If we get here, then this is not a forced climax and we gotta check a few things.
 
 	if(stat == UNCONSCIOUS) //No sleep-masturbation, you're unconscious.
-		to_chat(src, "<span class='warning'>You must be conscious to do that!</span>")
+		to_chat(src, SPAN_WARNING("You must be conscious to do that!"))
 		return
 
 	//Ok, now we check what they want to do.

@@ -8,7 +8,7 @@
 		return
 
 	if(!SSdbcore.Connect())
-		to_chat(src, "<span class='danger'>Failed to establish database connection.</span>")
+		to_chat(src, SPAN_DANGER("Failed to establish database connection."))
 		return
 
 	var/bantype_pass = 0
@@ -107,7 +107,7 @@
 
 	if(blockselfban)
 		if(a_ckey == ckey)
-			to_chat(usr, "<span class='danger'>You cannot apply this ban type on yourself.</span>")
+			to_chat(usr, SPAN_DANGER("You cannot apply this ban type on yourself."))
 			return
 
 	var/who
@@ -138,7 +138,7 @@
 			if (check_rights(R_PERMISSIONS, FALSE))
 				max_bans = MAX_ADMIN_BANS_PER_HEADMIN
 			if(adm_bans >= max_bans)
-				to_chat(usr, "<span class='danger'>You already logged [max_bans] admin ban(s) or more. Do not abuse this function!</span>")
+				to_chat(usr, SPAN_DANGER("You already logged [max_bans] admin ban(s) or more. Do not abuse this function!"))
 				qdel(query_check_adminban_amt)
 				return
 		qdel(query_check_adminban_amt)
@@ -232,17 +232,17 @@
 	qdel(query_unban_get_id)
 
 	if(ban_number == 0)
-		to_chat(usr, "<span class='danger'>Database update failed due to no bans fitting the search criteria. If this is not a legacy ban you should contact the database admin.</span>")
+		to_chat(usr, SPAN_DANGER("Database update failed due to no bans fitting the search criteria. If this is not a legacy ban you should contact the database admin."))
 		return
 
 	if(ban_number > 1)
-		to_chat(usr, "<span class='danger'>Database update failed due to multiple bans fitting the search criteria. Note down the ckey, job and current time and contact the database admin.</span>")
+		to_chat(usr, SPAN_DANGER("Database update failed due to multiple bans fitting the search criteria. Note down the ckey, job and current time and contact the database admin."))
 		return
 
 	if(istext(ban_id))
 		ban_id = text2num(ban_id)
 	if(!isnum(ban_id))
-		to_chat(usr, "<span class='danger'>Database update failed due to a ban ID mismatch. Contact the database admin.</span>")
+		to_chat(usr, SPAN_DANGER("Database update failed due to a ban ID mismatch. Contact the database admin."))
 		return
 
 	DB_ban_unban_by_id(ban_id)
@@ -342,11 +342,11 @@
 	qdel(query_unban_get_ckey)
 
 	if(ban_number == 0)
-		to_chat(usr, "<span class='danger'>Database update failed due to a ban id not being present in the database.</span>")
+		to_chat(usr, SPAN_DANGER("Database update failed due to a ban id not being present in the database."))
 		return
 
 	if(ban_number > 1)
-		to_chat(usr, "<span class='danger'>Database update failed due to multiple bans having the same ID. Contact the database admin.</span>")
+		to_chat(usr, SPAN_DANGER("Database update failed due to multiple bans having the same ID. Contact the database admin."))
 		return
 
 	if(!istype(owner))
@@ -383,7 +383,7 @@
 		return
 
 	if(!SSdbcore.Connect())
-		to_chat(usr, "<span class='danger'>Failed to establish database connection.</span>")
+		to_chat(usr, SPAN_DANGER("Failed to establish database connection."))
 		return
 
 	var/output = "<div align='center'><table width='90%'><tr>"

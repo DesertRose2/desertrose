@@ -16,21 +16,21 @@
 
 /obj/item/clothing/under/rank/security/officer
 	name = "security jumpsuit"
-	desc = "A tactical security jumpsuit for officers complete with Nanotrasen belt buckle."
+	desc = "A tactical security jumpsuit for officers complete with Vault-Tec belt buckle."
 	icon_state = "rsecurity"
 	item_state = "r_suit"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30, "wound" = 10)
 
 /obj/item/clothing/under/rank/security/officer/util
 	name = "security utility uniform"
-	desc = "a grey security uniform"
+	desc = "A grey security uniform."
 	icon_state = "utilsec"
 	item_state = "utilsec"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/officer/grey
 	name = "grey security jumpsuit"
-	desc = "A tactical relic of years past before Nanotrasen decided it was cheaper to dye the suits red instead of washing out the blood."
+	desc = "A tactical relic of years past before Vault-Tec decided it was cheaper to dye the suits red instead of washing out the blood."
 	icon_state = "security"
 	item_state = "gy_suit"
 
@@ -93,20 +93,20 @@
 
 /obj/item/clothing/under/rank/security/warden
 	name = "security suit"
-	desc = "A formal security suit for officers complete with Nanotrasen belt buckle."
+	desc = "A formal security suit for officers complete with Vault-Tec belt buckle."
 	icon_state = "rwarden"
 	item_state = "r_suit"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30, "wound" = 10)
 
 /obj/item/clothing/under/rank/security/warden/grey
 	name = "grey security suit"
-	desc = "A formal relic of years past before Nanotrasen decided it was cheaper to dye the suits red instead of washing out the blood."
+	desc = "A formal relic of years past before Vault-Tec decided it was cheaper to dye the suits red instead of washing out the blood."
 	icon_state = "warden"
 	item_state = "gy_suit"
 
 /obj/item/clothing/under/rank/security/warden/skirt
 	name = "warden's suitskirt"
-	desc = "A formal security suitskirt for officers complete with Nanotrasen belt buckle."
+	desc = "A formal security suitskirt for officers complete with Vault-Tec belt buckle."
 	icon_state = "rwarden_skirt"
 	item_state = "r_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

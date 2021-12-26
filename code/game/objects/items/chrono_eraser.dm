@@ -2,7 +2,7 @@
 #define CHRONO_FRAME_COUNT 22
 /obj/item/chrono_eraser
 	name = "Timestream Eradication Device"
-	desc = "The result of outlawed time-bluespace research, this device is capable of wiping a being from the timestream. They never are, they never were, they never will be."
+	desc = "The result of outlawed quantum spacetime research, this device is capable of wiping a being from the timestream. They never are, they never were, they never will be."
 	icon = 'icons/obj/chronos.dmi'
 	icon_state = "chronobackpack"
 	item_state = "backpack"
@@ -89,7 +89,7 @@
 		field = F
 		F.gun = src
 		if(isliving(user) && F.captured)
-			to_chat(user, "<span class='notice'>Connection established with target: <b>[F.captured]</b></span>")
+			to_chat(user, SPAN_NOTICE("Connection established with target: <b>[F.captured]</b>"))
 
 
 /obj/item/gun/energy/chrono_gun/proc/field_disconnect(obj/effect/chrono_field/F)
@@ -154,7 +154,7 @@
 
 /obj/effect/chrono_field
 	name = "eradication field"
-	desc = "An aura of time-bluespace energy."
+	desc = "An aura of quantum spacetime energy."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "chronofield"
 	density = FALSE

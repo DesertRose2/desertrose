@@ -62,7 +62,7 @@
 	if(prob(85) || Proj.damage > 26)
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] is deflected harmlessly by \the [src]'s thick skin!</span>")
+		visible_message(SPAN_DANGER("\The [Proj] is deflected harmlessly by \the [src]'s thick skin!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/supermutant/death(gibbed)
@@ -96,7 +96,7 @@
 	icon_state = icon_dead
 	anchored = FALSE
 	if(!gibbed)
-		visible_message("<span class='danger'>\the [src] shouts something incoherent about brahmins for the last time and stops moving...</span>")
+		visible_message(SPAN_DANGER("\the [src] shouts something incoherent about brahmins for the last time and stops moving..."))
 	..()
 
 /mob/living/simple_animal/hostile/supermutant/meleemutant
@@ -141,7 +141,7 @@
 
 /mob/living/simple_animal/hostile/supermutant/legendary
 	name = "legendary super mutant"
-	desc = "A huge and ugly mutant humanoid.He has a faint yellow glow to him, scars adorn his body. This super mutant is a grizzled vetern of combat. Look out!"
+	desc = "A huge and ugly mutant humanoid. He has a faint yellow glow to him, and scars adorn his body. This super mutant is a grizzled vetern of combat. Look out!"
 	color = "#FFFF00"
 	icon_state = "hulk_113_s"
 	icon_living = "hulk_113_s"
@@ -278,7 +278,7 @@
 
 /mob/living/simple_animal/hostile/supermutant/suicider/proc/do_death_beep()
 	playsound(src, 'sound/machines/triple_beep.ogg', 100, TRUE)
-	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+	visible_message(SPAN_WARNING("You hear an ominous beep coming from [src]!"), SPAN_WARNING("You hear an ominous beep!"))
 
 /mob/living/simple_animal/hostile/supermutant/suicider/proc/self_destruct()
 	explosion(src,1,1,8,8)

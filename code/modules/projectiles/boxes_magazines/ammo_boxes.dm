@@ -665,7 +665,7 @@
 
 /*/obj/item/ammo_box/a50MG/AP
 	name = "anti-materiel armor piercing ammo rack (.50MG)"
-	desc = "A .rack of .50 MG ammo, for when you really need (a very big) something dead."
+	desc = "A rack of .50 MG ammo, for when you really need (a very big) something dead."
 	icon_state = "50ap"
 	ammo_type = /obj/item/ammo_casing/a50MG/AP
 	max_ammo = 5
@@ -726,7 +726,7 @@
 
 /obj/item/ammo_box/jerrycan
 	name = "jerry can"
-	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers"
+	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "jerrycan"
 	caliber = "fuel"

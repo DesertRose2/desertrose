@@ -30,7 +30,7 @@
 			if(cancel_me)
 				return
 		//sleep(TIME_BLOODSUCKER_NIGHT - TIME_BLOODSUCKER_DAY_WARN)
-		warn_daylight(1,"<span class = 'danger'>Solar Flares will bombard the station with dangerous UV in [TIME_BLOODSUCKER_DAY_WARN / 60] minutes. <b>Prepare to seek cover in a coffin or closet.</b></span>")  // time2text <-- use Help On
+		warn_daylight(1,SPAN_DANGER("Solar Flares will bombard the station with dangerous UV in [TIME_BLOODSUCKER_DAY_WARN / 60] minutes. <b>Prepare to seek cover in a coffin or closet.</b>"))  // time2text <-- use Help On
 		give_home_power() // Give VANISHING ACT power to all vamps with a lair!
 
 		// Part 2: Night Ending
@@ -41,7 +41,7 @@
 		//sleep(TIME_BLOODSUCKER_DAY_WARN - TIME_BLOODSUCKER_DAY_FINAL_WARN)
 		message_admins("BLOODSUCKER NOTICE: Daylight beginning in [TIME_BLOODSUCKER_DAY_FINAL_WARN] seconds.)")
 		warn_daylight(2,"<span class = 'userdanger'>Solar Flares are about to bombard the station! You have [TIME_BLOODSUCKER_DAY_FINAL_WARN] seconds to find cover!</span>",\
-					  "<span class = 'danger'>In [TIME_BLOODSUCKER_DAY_FINAL_WARN / 10], your master will be at risk of a Solar Flare. Make sure they find cover!</span>")
+					  SPAN_DANGER("In [TIME_BLOODSUCKER_DAY_FINAL_WARN / 10], your master will be at risk of a Solar Flare. Make sure they find cover!"))
 
 		// (FINAL LIL WARNING)
 		while(time_til_cycle > 5)
@@ -58,7 +58,7 @@
 				return
 		//sleep(50)
 		warn_daylight(4,"<span class = 'userdanger'>Solar flares bombard the station with deadly UV light!</span><br><span class = ''>Stay in cover for the next [TIME_BLOODSUCKER_DAY / 60] minutes or risk Final Death!</span>",\
-					  "<span class = 'danger'>Solar flares bombard the station with UV light!</span>")
+					  SPAN_DANGER("Solar flares bombard the station with UV light!"))
 
 		// Part 4: Day
 		amDay = TRUE
@@ -140,7 +140,7 @@
 				continue
 			else
 				if(!bloodsuckerdatum.warn_sun_locker)
-					to_chat(M, "<span class='warning'>Your skin sizzles. The [M.current.loc] doesn't protect well against UV bombardment.</span>")
+					to_chat(M, SPAN_WARNING("Your skin sizzles. The [M.current.loc] doesn't protect well against UV bombardment."))
 					bloodsuckerdatum.warn_sun_locker = TRUE
 				M.current.adjustFireLoss(0.5 + bloodsuckerdatum.bloodsucker_level / 2) // M.current.fireloss += 0.5 + bloodsuckerdatum.bloodsucker_level / 2  //  Do DIRECT damage. Being spaced was causing this to not occur. setFireLoss(bloodsuckerdatum.bloodsucker_level)
 				M.current.updatehealth()

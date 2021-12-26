@@ -11,14 +11,14 @@
 	wanted_types = list(/obj/item/storage/backpack/holding)
 
 /datum/bounty/item/science/bluespace_syringe
-	name = "Bluespace Syringe"
-	description = "Nanotrasen would make good use of high-capacity syringes. If you have any, please ship them."
+	name = "Quantum Syringe"
+	description = "Another Vault would make good use of high-capacity syringes. If you have any, please ship them."
 	reward = 1500
 	wanted_types = list(/obj/item/reagent_containers/syringe/bluespace)
 
 /datum/bounty/item/science/bluespace_body_bag
-	name = "Bluespace Body Bag"
-	description = "Nanotrasen would make good use of high-capacity body bags. If you have any, please ship them."
+	name = "Quantum Body Bag"
+	description = "Another Vault would make good use of high-capacity body bags. If you have any, please ship them."
 	reward = 5000
 	wanted_types = list(/obj/item/bodybag/bluespace)
 
@@ -66,7 +66,7 @@
 	wanted_types = list(/obj/item/gun/energy/e_gun/nuclear)
 
 /datum/bounty/item/science/bscells
-	name = "Bluespace Power Cells"
+	name = "Quantum Power Cells"
 	description = "Someone in upper management keeps using the excuse that his tablet battery dies when he's in the middle of work. This will be the last time he doesn't have his presentation, I swear to -"
 	reward = 3000
 	required_count = 10 //Easy to make
@@ -80,8 +80,8 @@
 	wanted_types = list(/obj/item/stock_parts/manipulator/femto)
 
 /datum/bounty/item/science/t4bins
-	name = "Bluespace Matter Bins"
-	description = "The local Janitorial union has gone on strike. Can you send us some bluespace bins so we don't have to take out our own trash?"
+	name = "Quantum Matter Bins"
+	description = "The local Janitorial union has gone on strike. Can you send us some quantum bins so we don't have to take out our own trash?"
 	reward = 2000
 	required_count = 20 //Easy to make
 	wanted_types = list(/obj/item/stock_parts/matter_bin/bluespace)
@@ -106,16 +106,6 @@
 	reward = 2000
 	required_count = 20 //Easy to make
 	wanted_types = list(/obj/item/stock_parts/micro_laser/quadultra)
-
-/datum/bounty/item/science/fakecrystals
-	name = "Synthetic Bluespace Crystals"
-	description = "Don't, uh, tell anyone, but one of our BSA arrays might have had a little... accident. Send us some bluespace crystals so we can recalibrate it before anyone realizes. The whole set uses artificial bluespace crystals, so we need and not any other type of bluespace crystals..."
-	reward = 8000
-	required_count = 5
-	wanted_types = list(/obj/item/stack/ore/bluespace_crystal/artificial)
-	exclude_types = list(/obj/item/stack/ore/bluespace_crystal,
-						/obj/item/stack/sheet/bluespace_crystal,
-						/obj/item/stack/ore/bluespace_crystal/refined)
 
 /datum/bounty/item/science/noneactive_reactivearmor
 	name = "Reactive Armor Shells"

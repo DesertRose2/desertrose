@@ -35,7 +35,7 @@
 		var/obj/item/stack/cable_coil/C = I
 		I.use_tool(src, user, 0, 1)
 		has_sensor = HAS_SENSORS
-		to_chat(user,"<span class='notice'>You repair the suit sensors on [src] with [C].</span>")
+		to_chat(user,SPAN_NOTICE("You repair the suit sensors on [src] with [C]."))
 		return 1
 	if(!attach_accessory(I, user))
 		return ..()
@@ -84,11 +84,11 @@
 		var/obj/item/clothing/accessory/A = I
 		if(attached_accessory)
 			if(user)
-				to_chat(user, "<span class='warning'>[src] already has an accessory.</span>")
+				to_chat(user, SPAN_WARNING("[src] already has an accessory."))
 			return
 		if(dummy_thick)
 			if(user)
-				to_chat(user, "<span class='warning'>[src] is too bulky and cannot have accessories attached to it!</span>")
+				to_chat(user, SPAN_WARNING("[src] is too bulky and cannot have accessories attached to it!"))
 			return
 		else
 			if(user && !user.temporarilyRemoveItemFromInventory(I))
@@ -97,7 +97,7 @@
 				return
 
 			if(user && notifyAttach)
-				to_chat(user, "<span class='notice'>You attach [I] to [src].</span>")
+				to_chat(user, SPAN_NOTICE("You attach [I] to [src]."))
 
 			if((flags_inv & HIDEACCESSORY) || (A.flags_inv & HIDEACCESSORY))
 				return TRUE
@@ -123,9 +123,9 @@
 		var/obj/item/clothing/accessory/A = attached_accessory
 		attached_accessory.detach(src, user)
 		if(user.put_in_hands(A))
-			to_chat(user, "<span class='notice'>You detach [A] from [src].</span>")
+			to_chat(user, SPAN_NOTICE("You detach [A] from [src]."))
 		else
-			to_chat(user, "<span class='notice'>You detach [A] from [src] and it falls on the floor.</span>")
+			to_chat(user, SPAN_NOTICE("You detach [A] from [src] and it falls on the floor."))
 
 		if(ishuman(loc))
 			var/mob/living/carbon/human/H = loc
@@ -177,20 +177,20 @@
 	var/list/modes = list("Off", "Binary vitals", "Exact vitals", "Tracking beacon")
 	var/switchMode = input("Select a sensor mode:", "Suit Sensor Mode", modes[sensor_mode + 1]) in modes
 	if(get_dist(usr, src) > 1)
-		to_chat(usr, "<span class='warning'>You have moved too far away!</span>")
+		to_chat(usr, SPAN_WARNING("You have moved too far away!"))
 		return
 	sensor_mode = modes.Find(switchMode) - 1
 
 	if (src.loc == usr)
 		switch(sensor_mode)
 			if(0)
-				to_chat(usr, "<span class='notice'>You disable your suit's remote sensing equipment.</span>")
+				to_chat(usr, SPAN_NOTICE("You disable your suit's remote sensing equipment."))
 			if(1)
-				to_chat(usr, "<span class='notice'>Your suit will now only report whether you are alive or dead.</span>")
+				to_chat(usr, SPAN_NOTICE("Your suit will now only report whether you are alive or dead."))
 			if(2)
-				to_chat(usr, "<span class='notice'>Your suit will now only report your exact vital lifesigns.</span>")
+				to_chat(usr, SPAN_NOTICE("Your suit will now only report your exact vital lifesigns."))
 			if(3)
-				to_chat(usr, "<span class='notice'>Your suit will now report your exact vital lifesigns as well as your coordinate position.</span>")
+				to_chat(usr, SPAN_NOTICE("Your suit will now report your exact vital lifesigns as well as your coordinate position."))
 
 	if(ishuman(loc))
 		var/mob/living/carbon/human/H = loc
@@ -219,7 +219,7 @@
 
 	sensor_mode = SENSOR_COORDS
 
-	to_chat(user, "<span class='notice'>Your suit will now report your exact vital lifesigns as well as your coordinate position.</span>")
+	to_chat(user, SPAN_NOTICE("Your suit will now report your exact vital lifesigns as well as your coordinate position."))
 
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
@@ -245,12 +245,12 @@
 	if(!can_use(usr))
 		return
 	if(!can_adjust)
-		to_chat(usr, "<span class='warning'>You cannot wear this suit any differently!</span>")
+		to_chat(usr, SPAN_WARNING("You cannot wear this suit any differently!"))
 		return
 	if(toggle_jumpsuit_adjust())
-		to_chat(usr, "<span class='notice'>You adjust the suit to wear it more casually.</span>")
+		to_chat(usr, SPAN_NOTICE("You adjust the suit to wear it more casually."))
 	else
-		to_chat(usr, "<span class='notice'>You adjust the suit back to normal.</span>")
+		to_chat(usr, SPAN_NOTICE("You adjust the suit back to normal."))
 	if(ishuman(usr))
 		var/mob/living/carbon/human/H = usr
 		H.update_inv_w_uniform()

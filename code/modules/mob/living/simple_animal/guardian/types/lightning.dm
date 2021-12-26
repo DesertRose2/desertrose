@@ -113,7 +113,7 @@
 							if(C)
 								C.jitteriness = max(C.jitteriness - 990, 10)
 					L.visible_message(
-						"<span class='danger'>[L] was shocked by the lightning chain!</span>", \
+						SPAN_DANGER("[L] was shocked by the lightning chain!"), \
 						"<span class='userdanger'>You are shocked by the lightning chain!</span>", \
 						"<span class='italics'>You hear a heavy electrical crack.</span>" \
 					)

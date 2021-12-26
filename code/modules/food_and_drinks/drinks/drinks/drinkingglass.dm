@@ -102,9 +102,9 @@
 		var/obj/item/reagent_containers/food/snacks/egg/E = I
 		if(reagents)
 			if(reagents.total_volume >= reagents.maximum_volume)
-				to_chat(user, "<span class='notice'>[src] is full.</span>")
+				to_chat(user, SPAN_NOTICE("[src] is full."))
 			else
-				to_chat(user, "<span class='notice'>You break [E] in [src].</span>")
+				to_chat(user, SPAN_NOTICE("You break [E] in [src]."))
 				reagents.add_reagent(/datum/reagent/consumable/eggyolk, 5)
 				qdel(E)
 			return
@@ -113,7 +113,7 @@
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/attack(obj/target, mob/user)
 	if(user.a_intent == INTENT_HARM && ismob(target) && target.reagents && reagents.total_volume)
-		target.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [target]!</span>", \
+		target.visible_message(SPAN_DANGER("[user] splashes the contents of [src] onto [target]!"), \
 						"<span class='userdanger'>[user] splashes the contents of [src] onto [target]!</span>")
 		log_combat(user, target, "splashed", src)
 		reagents.reaction(target, TOUCH)
@@ -127,8 +127,8 @@
 		return
 
 	else if(reagents.total_volume && user.a_intent == INTENT_HARM)
-		user.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [target]!</span>", \
-							"<span class='notice'>You splash the contents of [src] onto [target].</span>")
+		user.visible_message(SPAN_DANGER("[user] splashes the contents of [src] onto [target]!"), \
+							SPAN_NOTICE("You splash the contents of [src] onto [target]."))
 		reagents.reaction(target, TOUCH)
 		reagents.clear_reagents()
 		return

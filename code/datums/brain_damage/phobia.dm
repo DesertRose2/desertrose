@@ -2,8 +2,8 @@
 	name = "Phobia"
 	desc = "Patient is unreasonably afraid of something."
 	scan_desc = "phobia"
-	gain_text = "<span class='warning'>You start finding default values very unnerving...</span>"
-	lose_text = "<span class='notice'>You no longer feel afraid of default values.</span>"
+	gain_text = SPAN_WARNING("You start finding default values very unnerving...")
+	lose_text = SPAN_NOTICE("You no longer feel afraid of default values.")
 	var/phobia_type
 	var/next_check = 0
 	var/next_scare = 0
@@ -22,8 +22,8 @@
 	if(!phobia_type)
 		phobia_type = pick(SStraumas.phobia_types)
 
-	gain_text = "<span class='warning'>You start finding [phobia_type] very unnerving...</span>"
-	lose_text = "<span class='notice'>You no longer feel afraid of [phobia_type].</span>"
+	gain_text = SPAN_WARNING("You start finding [phobia_type] very unnerving...")
+	lose_text = SPAN_NOTICE("You no longer feel afraid of [phobia_type].")
 	scan_desc += " of [phobia_type]"
 	trigger_words = SStraumas.phobia_words[phobia_type]
 	trigger_mobs = SStraumas.phobia_mobs[phobia_type]
@@ -116,7 +116,7 @@
 	var/reaction = rand(1,4)
 	switch(reaction)
 		if(1)
-			to_chat(owner, "<span class='warning'>You are paralyzed with fear!</span>")
+			to_chat(owner, SPAN_WARNING("You are paralyzed with fear!"))
 			owner.Stun(70)
 			owner.Jitter(8)
 		if(2)
@@ -126,7 +126,7 @@
 			if(reason)
 				owner.pointed(reason)
 		if(3)
-			to_chat(owner, "<span class='warning'>You shut your eyes in terror!</span>")
+			to_chat(owner, SPAN_WARNING("You shut your eyes in terror!"))
 			owner.Jitter(5)
 			owner.blind_eyes(10)
 		if(4)

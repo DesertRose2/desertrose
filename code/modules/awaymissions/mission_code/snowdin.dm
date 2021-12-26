@@ -173,10 +173,10 @@
 /turf/open/lava/plasma/attackby(obj/item/I, mob/user, params)
 	var/obj/item/reagent_containers/glass/C = I
 	if(C.reagents.total_volume >= C.volume)
-		to_chat(user, "<span class='danger'>[C] is full.</span>")
+		to_chat(user, SPAN_DANGER("[C] is full."))
 		return
 	C.reagents.add_reagent(/datum/reagent/toxin/plasma, rand(5, 10))
-	user.visible_message("[user] scoops some plasma from the [src] with \the [C].", "<span class='notice'>You scoop out some plasma from the [src] using \the [C].</span>")
+	user.visible_message("[user] scoops some plasma from the [src] with \the [C].", SPAN_NOTICE("You scoop out some plasma from the [src] using \the [C]."))
 
 /turf/open/lava/plasma/burn_stuff(AM)
 	. = 0
@@ -242,12 +242,12 @@
 							NB.species_id = "plasmaman"//change the species_id of the limb to that of a plasmaman
 							NB.no_update = TRUE
 							NB.change_bodypart_status()
-							PP.visible_message("<span class='warning'>[L] screams in pain as [L.p_their()] [NB] melts down to the bone!</span>", \
+							PP.visible_message(SPAN_WARNING("[L] screams in pain as [L.p_their()] [NB] melts down to the bone!"), \
 											  "<span class='userdanger'>You scream out in pain as your [NB] melts down to the bone, leaving an eerie plasma-like glow where flesh used to be!</span>")
 						if(!plasma_parts.len && !robo_parts.len) //a person with no potential organic limbs left AND no robotic limbs, time to turn them into a plasmaman
 							PP.IgniteMob()
 							PP.set_species(/datum/species/plasmaman)
-							PP.visible_message("<span class='warning'>[L] bursts into a brilliant purple flame as [L.p_their()] entire body is that of a skeleton!</span>", \
+							PP.visible_message(SPAN_WARNING("[L] bursts into a brilliant purple flame as [L.p_their()] entire body is that of a skeleton!"), \
 											  "<span class='userdanger'>Your senses numb as all of your remaining flesh is turned into a purple slurry, sloshing off your body and leaving only your bones to show in a vibrant purple!</span>")
 
 
@@ -521,12 +521,6 @@
 				)
 
 //special items//--
-
-/obj/structure/barricade/wooden/snowed
-	name = "crude plank barricade"
-	desc = "This space is blocked off by a wooden barricade. It seems to be covered in a layer of snow."
-	icon_state = "woodenbarricade-snow"
-	max_integrity = 125
 
 /obj/item/clothing/under/syndicate/coldres
 	name = "insulated tactical turtleneck"

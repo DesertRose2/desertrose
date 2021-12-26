@@ -115,7 +115,7 @@
 	if(!..())
 		return
 	if(isliving(M))
-		to_chat(M, "<span class='danger'>You are stunned by the powerful acid of the Deathnettle!</span>")
+		to_chat(M, SPAN_DANGER("You are stunned by the powerful acid of the Deathnettle!"))
 		log_combat(user, M, "attacked", src)
 
 		M.adjust_blurriness(force/7)

@@ -1,5 +1,5 @@
 /obj/item/ammo_casing/caseless
-	desc = "A caseless bullet casing."
+	desc = "A caseless round."
 	firing_effect_type = null
 	heavy_metal = FALSE
 
@@ -15,7 +15,7 @@
 	icon_state = "[initial(icon_state)]"
 
 /obj/item/ammo_casing/caseless/needle
-	name = "A needler round."
+	name = "needler round"
 	desc = "A dart for use in needler pistols."
 	icon_state = "needler-casing"
 	caliber = "needle"
@@ -30,27 +30,27 @@
 	return
 */
 /obj/item/ammo_casing/caseless/needle/ap
-	name = "A needler round."
+	name = "needler round"
 	desc = "A dart for use in needler pistols."
 	icon_state = "apneedler-casing"
 	caliber = "needle"
 	projectile_type = /obj/item/projectile/bullet/needle/ap
 
 /obj/item/ammo_casing/caseless/needle/ultra
-	name = "An ultracite needler round."
+	name = "ultracite needler round"
 	desc = "A dart for use in needler pistols."
 	caliber = "ultraneedle"
 	projectile_type = /obj/item/projectile/bullet/needle/ultra
 
 /obj/item/ammo_casing/caseless/musketball
-	name = "Musketball"
+	name = "musketball"
 	desc = "This is a lead ball for a musket."
 	caliber = "musketball"
 	projectile_type = /obj/item/projectile/bullet/F13/musketball
 
 /obj/item/ammo_casing/caseless/lasermusket
-	name = "Laser musket battery"
-	desc = "A single use battery for the laser musket"
+	name = "laser musket battery"
+	desc = "A single-use battery for the laser musket."
 	caliber = "lasmusket"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "lasmusketbat"
@@ -58,8 +58,8 @@
 	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/energy
 
 /obj/item/ammo_casing/caseless/plasmacaster
-	name = "Plasma canister"
-	desc = "A single use chemical canister for the plasma caster"
+	name = "plasma canister"
+	desc = "A single-use chemical canister for the plasma caster."
 	caliber = "plasmacaster"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "plasmacan"

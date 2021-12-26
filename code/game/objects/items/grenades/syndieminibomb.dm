@@ -1,6 +1,6 @@
 /obj/item/grenade/syndieminibomb
-	desc = "A syndicate manufactured explosive used to sow destruction and chaos."
-	name = "syndicate minibomb"
+	name = "minibomb"
+	desc = "A manufactured explosive used to sow destruction and chaos."
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "syndicate"
 	item_state = "flashbang"
@@ -22,12 +22,6 @@
 	ex_heavy = 2
 	ex_light = 3
 	ex_flame = 3
-
-/obj/item/grenade/syndieminibomb/concussion/frag
-	name = "frag grenade"
-	desc = "Fire in the hole."
-	icon_state = "frag"
-
 
 /obj/item/grenade/frag
 	name = "frag grenade"

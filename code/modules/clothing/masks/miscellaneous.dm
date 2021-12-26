@@ -13,7 +13,7 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(src == C.wear_mask)
-			to_chat(user, "<span class='warning'>You need help taking this off!</span>")
+			to_chat(user, SPAN_WARNING("You need help taking this off!"))
 			return
 	..()
 
@@ -130,8 +130,8 @@
 	return ..()
 
 /obj/item/clothing/mask/cowmask
-	name = "Cow mask with a builtin voice modulator."
-	desc = "A rubber cow mask,"
+	name = "modified cow mask"
+	desc = "A rubber cow mask, with a built-in voice modulator."
 	icon_state = "cowmask"
 	item_state = "cowmask"
 	clothing_flags = VOICEBOX_TOGGLABLE
@@ -146,7 +146,7 @@
 
 /obj/item/clothing/mask/cowmask/cursed
 	name = "cow face"
-	desc = "It looks like a cow mask, but closer inspection reveals it's melded onto this persons face!"
+	desc = "It looks like a cow mask, but closer inspection reveals it's melded onto this person's face!"
 	flags_inv = HIDEFACIALHAIR
 	clothing_flags = NONE
 
@@ -275,10 +275,10 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if((C.get_item_by_slot(SLOT_HEAD == src)) || (C.get_item_by_slot(SLOT_WEAR_MASK) == src))
-			to_chat(user, "<span class='warning'>You can't tie [src] while wearing it!</span>")
+			to_chat(user, SPAN_WARNING("You can't tie [src] while wearing it!"))
 			return
 	if(slot_flags & ITEM_SLOT_HEAD)
-		to_chat(user, "<span class='warning'>You must undo [src] before you can tie it into a neckerchief!</span>")
+		to_chat(user, SPAN_WARNING("You must undo [src] before you can tie it into a neckerchief!"))
 	else
 		if(user.is_holding(src))
 			var/obj/item/clothing/neck/neckerchief/nk = new(src)
@@ -289,7 +289,7 @@
 			var/currentHandIndex = user.get_held_index_of_item(src)
 			user.transferItemToLoc(src, null)
 			user.put_in_hand(nk, currentHandIndex)
-			user.visible_message("<span class='notice'>You tie [src] up like a neckerchief.</span>", "<span class='notice'>[user] ties [src] up like a neckerchief.</span>")
+			user.visible_message(SPAN_NOTICE("You tie [src] up like a neckerchief."), SPAN_NOTICE("[user] ties [src] up like a neckerchief."))
 			qdel(src)
 		else
 			to_chat(user, "<span class='warning'>You must be holding [src] in order to tie it!")
@@ -416,7 +416,7 @@
 		for(var/X in actions)
 			var/datum/action/A = X
 			A.UpdateButtonIcon()
-		to_chat(user, "<span class='notice'>Your paper mask now has a [choice] symbol!</span>")
+		to_chat(user, SPAN_NOTICE("Your paper mask now has a [choice] symbol!"))
 		return 1
 
 //Desert facewrap

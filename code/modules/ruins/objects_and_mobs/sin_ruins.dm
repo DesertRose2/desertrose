@@ -20,7 +20,7 @@
 		to_chat(user, "<span class='userdanger'>No... just one more try...</span>")
 		user.gib()
 	else
-		user.visible_message("<span class='warning'>[user] pulls [src]'s lever with a glint in [user.p_their()] eyes!</span>", "<span class='warning'>You feel a draining as you pull the lever, but you \
+		user.visible_message(SPAN_WARNING("[user] pulls [src]'s lever with a glint in [user.p_their()] eyes!"), "<span class='warning'>You feel a draining as you pull the lever, but you \
 		know it'll be worth it.</span>")
 	icon_state = "slots2"
 	playsound(src, 'sound/lavaland/cursed_slot_machine.ogg', 50, 0)
@@ -84,10 +84,10 @@
 	if(ishuman(mover))
 		var/mob/living/carbon/human/H = mover
 		if(H.nutrition >= NUTRITION_LEVEL_FAT)
-			H.visible_message("<span class='warning'>[H] pushes through [src]!</span>", "<span class='notice'>You've seen and eaten worse than this.</span>")
+			H.visible_message(SPAN_WARNING("[H] pushes through [src]!"), SPAN_NOTICE("You've seen and eaten worse than this."))
 			return TRUE
 		else
-			to_chat(H, "<span class='warning'>You're repulsed by even looking at [src]. Only a pig could force themselves to go through it.</span>")
+			to_chat(H, SPAN_WARNING("You're repulsed by even looking at [src]. Only a pig could force themselves to go through it."))
 	if(istype(mover, /mob/living/simple_animal/hostile/morph))
 		return TRUE
 	else
@@ -99,8 +99,8 @@
 	icon_state = "magic_mirror"
 
 /obj/structure/mirror/magic/pride/curse(mob/user)
-	user.visible_message("<span class='danger'><B>The ground splits beneath [user] as [user.p_their()] hand leaves the mirror!</B></span>", \
-	"<span class='notice'>Perfect. Much better! Now <i>nobody</i> will be able to resist yo-</span>")
+	user.visible_message(SPAN_DANGER("<B>The ground splits beneath [user] as [user.p_their()] hand leaves the mirror!</B>"), \
+	SPAN_NOTICE("Perfect. Much better! Now <i>nobody</i> will be able to resist yo-"))
 
 	var/turf/T = get_turf(user)
 	var/list/levels = SSmapping.levels_by_trait(ZTRAIT_SPACE_RUINS)
@@ -141,5 +141,5 @@
 			H.dna.transfer_identity(user, transfer_SE=1)
 			user.updateappearance(mutcolor_update=1)
 			user.domutcheck()
-			user.visible_message("<span class='warning'>[user]'s appearance shifts into [H]'s!</span>", \
+			user.visible_message(SPAN_WARNING("[user]'s appearance shifts into [H]'s!"), \
 			"<span class='boldannounce'>[H.p_they(TRUE)] think[H.p_s()] [H.p_theyre()] <i>sooo</i> much better than you. Not anymore, [H.p_they()] won't.</span>")

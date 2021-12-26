@@ -44,11 +44,11 @@
 	. = ..()
 	if(red_alert_access)
 		if(GLOB.security_level >= SEC_LEVEL_RED)
-			. += "<span class='notice'>Due to a security threat, its access requirements have been lifted!</span>"
+			. += SPAN_NOTICE("Due to a security threat, its access requirements have been lifted!")
 		else
-			. += "<span class='notice'>In the event of a red alert, its access requirements will automatically lift.</span>"
+			. += SPAN_NOTICE("In the event of a red alert, its access requirements will automatically lift.")
 	if(!poddoor)
-		. += "<span class='notice'>Its maintenance panel is <b>screwed</b> in place.</span>"
+		. += SPAN_NOTICE("Its maintenance panel is <b>screwed</b> in place.")
 
 /obj/machinery/door/check_access_list(list/access_list)
 	if(red_alert_access && GLOB.security_level >= SEC_LEVEL_RED)
@@ -343,7 +343,7 @@
 
 /obj/machinery/door/proc/crush()
 	for(var/mob/living/L in get_turf(src))
-		L.visible_message("<span class='warning'>[src] closes on [L], crushing [L.p_them()]!</span>", "<span class='userdanger'>[src] closes on you and crushes you!</span>")
+		L.visible_message(SPAN_WARNING("[src] closes on [L], crushing [L.p_them()]!"), "<span class='userdanger'>[src] closes on you and crushes you!</span>")
 		if(iscarbon(L))
 			var/mob/living/carbon/C = L
 			for(var/i in C.all_wounds) // should probably replace with signal

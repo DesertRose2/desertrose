@@ -35,15 +35,15 @@
 		src.flipped = !src.flipped
 		if(src.flipped)
 			icon_state = "[soft_type]soft_flipped"
-			to_chat(user, "<span class='notice'>You flip the hat backwards.</span>")
+			to_chat(user, SPAN_NOTICE("You flip the hat backwards."))
 		else
 			icon_state = "[soft_type]soft"
-			to_chat(user, "<span class='notice'>You flip the hat back in normal position.</span>")
+			to_chat(user, SPAN_NOTICE("You flip the hat back in normal position."))
 		usr.update_inv_head()	//so our mob-overlays update
 
 /obj/item/clothing/head/soft/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click the cap to flip it [flipped ? "forwards" : "backwards"].</span>"
+	. += SPAN_NOTICE("Alt-click the cap to flip it [flipped ? "forwards" : "backwards"].")
 
 /obj/item/clothing/head/soft/red
 	name = "red cap"
@@ -133,7 +133,7 @@
 
 /obj/item/clothing/head/soft/baseball
 	name = "baseball cap"
-	desc = "It's a robust baseball hat, this one belongs to syndicate major league team."
+	desc = "It's a robust baseball hat, this one belongs to a pre-war major league team."
 	icon_state = "baseballsoft"
 	soft_type = "baseball"
 	item_state = "baseballsoft"

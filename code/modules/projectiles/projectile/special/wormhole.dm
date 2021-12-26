@@ -1,5 +1,5 @@
 /obj/item/projectile/beam/wormhole
-	name = "bluespace beam"
+	name = "quantum beam"
 	icon_state = "spark"
 	hitsound = "sparks"
 	damage = 0
@@ -13,7 +13,7 @@
 	hitscan = TRUE
 
 /obj/item/projectile/beam/wormhole/orange
-	name = "orange bluespace beam"
+	name = "orange quantum beam"
 	color = "#FF6600"
 
 /obj/item/projectile/beam/wormhole/Initialize(mapload, obj/item/ammo_casing/energy/wormhole/casing)

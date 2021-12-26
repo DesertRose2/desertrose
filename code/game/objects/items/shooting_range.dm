@@ -28,7 +28,7 @@
 /obj/item/target/welder_act(mob/living/user, obj/item/I)
 	if(I.use_tool(src, user, 0, volume=40))
 		removeOverlays()
-		to_chat(user, "<span class='notice'>You slice off [src]'s uneven chunks of aluminium and scorch marks.</span>")
+		to_chat(user, SPAN_NOTICE("You slice off [src]'s uneven chunks of aluminium and scorch marks."))
 	return TRUE
 
 /obj/item/target/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -37,7 +37,7 @@
 
 /obj/item/target/syndicate
 	icon_state = "target_s"
-	desc = "A shooting target that looks like syndicate scum."
+	desc = "A shooting target that looks like subversive scum."
 	hp = 2600
 
 /obj/item/target/alien
@@ -72,7 +72,7 @@
 	if(C.GetPixel(p_x, p_y) && P.original == src && overlays.len <= 35) // if the located pixel isn't blank (null)
 		hp -= P.damage
 		if(hp <= 0)
-			visible_message("<span class='danger'>[src] breaks into tiny pieces and collapses!</span>")
+			visible_message(SPAN_DANGER("[src] breaks into tiny pieces and collapses!"))
 			qdel(src)
 		var/image/bullet_hole = image('icons/effects/effects.dmi', "scorch", OBJ_LAYER + 0.5)
 		bullet_hole.pixel_x = p_x - 1 //offset correction

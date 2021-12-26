@@ -2,7 +2,6 @@
 	title = "Medical Doctor"
 	flag = DOCTOR
 	department_head = list("Chief Medical Officer")
-	department_flag = MEDSCI
 
 	total_positions = 5
 	spawn_positions = 3
