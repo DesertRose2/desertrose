@@ -36,31 +36,31 @@
 				verb = "mediocre"
 		if(!verb)
 			return
-		. += SPAN_NOTICE("Those could work as a [verb] throwing weapon.")
+		. += "<span class='notice'>Those could work as a [verb] throwing weapon.</span>"
 
 /obj/item/stack/tile/attackby(obj/item/W, mob/user, params)
 
 	if (istype(W, /obj/item/weldingtool))
 		if(get_amount() < 4)
-			to_chat(user, SPAN_WARNING("You need at least four tiles to do this!"))
+			to_chat(user, "<span class='warning'>You need at least four tiles to do this!</span>")
 			return
 
 		if(!mineralType)
-			to_chat(user, SPAN_WARNING("You can not reform this!"))
+			to_chat(user, "<span class='warning'>You can not reform this!</span>")
 			return
 
 		if(W.use_tool(src, user, 0, volume=40))
 			if(mineralType == "plasma")
 				atmos_spawn_air("plasma=5;TEMP=1000")
-				user.visible_message(SPAN_WARNING("[user.name] sets the plasma tiles on fire!"), \
-									SPAN_WARNING("You set the plasma tiles on fire!"))
+				user.visible_message("<span class='warning'>[user.name] sets the plasma tiles on fire!</span>", \
+									"<span class='warning'>You set the plasma tiles on fire!</span>")
 				qdel(src)
 				return
 
 			if (mineralType == "metal")
 				var/obj/item/stack/sheet/metal/new_item = new(user.loc)
 				user.visible_message("[user.name] shaped [src] into metal with the welding tool.", \
-							SPAN_NOTICE("You shaped [src] into metal with the welding tool."), \
+							"<span class='notice'>You shaped [src] into metal with the welding tool.</span>", \
 							"<span class='italics'>You hear welding.</span>")
 				var/obj/item/stack/rods/R = src
 				src = null
@@ -73,7 +73,7 @@
 				var/sheet_type = text2path("/obj/item/stack/sheet/mineral/[mineralType]")
 				var/obj/item/stack/sheet/mineral/new_item = new sheet_type(user.loc)
 				user.visible_message("[user.name] shaped [src] into a sheet with the welding tool.", \
-							SPAN_NOTICE("You shaped [src] into a sheet with the welding tool."), \
+							"<span class='notice'>You shaped [src] into a sheet with the welding tool.</span>", \
 							"<span class='italics'>You hear welding.</span>")
 				var/obj/item/stack/rods/R = src
 				src = null

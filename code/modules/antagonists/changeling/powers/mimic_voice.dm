@@ -16,7 +16,7 @@
 	if(changeling.mimicing)
 		changeling.mimicing = ""
 		changeling.chem_recharge_slowdown -= 0.5
-		to_chat(user, SPAN_NOTICE("We return our vocal glands to their original position."))
+		to_chat(user, "<span class='notice'>We return our vocal glands to their original position.</span>")
 		return
 
 	var/mimic_voice = stripped_input(user, "Enter a name to mimic.", "Mimic Voice", null, MAX_NAME_LEN)
@@ -25,6 +25,6 @@
 
 	changeling.mimicing = mimic_voice
 	changeling.chem_recharge_slowdown += 0.5
-	to_chat(user, SPAN_NOTICE("We shape our glands to take the voice of <b>[mimic_voice]</b>, this will slow down regenerating chemicals while active."))
-	to_chat(user, SPAN_NOTICE("Use this power again to return to our original voice and return chemical production to normal levels."))
+	to_chat(user, "<span class='notice'>We shape our glands to take the voice of <b>[mimic_voice]</b>, this will slow down regenerating chemicals while active.</span>")
+	to_chat(user, "<span class='notice'>Use this power again to return to our original voice and return chemical production to normal levels.</span>")
 	return TRUE

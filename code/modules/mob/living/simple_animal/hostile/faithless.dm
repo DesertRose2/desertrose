@@ -46,5 +46,5 @@
 	if(. && prob(12) && iscarbon(target))
 		var/mob/living/carbon/C = target
 		C.DefaultCombatKnockdown(60)
-		C.visible_message(SPAN_DANGER("\The [src] knocks down \the [C]!"), \
+		C.visible_message("<span class='danger'>\The [src] knocks down \the [C]!</span>", \
 				"<span class='userdanger'>\The [src] knocks you down!</span>")

@@ -95,7 +95,7 @@
 
 /obj/item/clockwork/slab/cyborg/access_display(mob/living/user)
 	if(!GLOB.ratvar_awakens)
-		to_chat(user, SPAN_WARNING("Use the action buttons to recite your limited set of scripture!"))
+		to_chat(user, "<span class='warning'>Use the action buttons to recite your limited set of scripture!</span>")
 	else
 		..()
 
@@ -162,7 +162,7 @@
 /obj/item/clockwork/slab/attack_self(mob/living/user)
 	if(iscultist(user))
 		to_chat(user, "<span class='heavy_brass'>\"You reek of blood. You've got a lot of nerve to even look at that slab.\"</span>")
-		user.visible_message(SPAN_WARNING("A sizzling sound comes from [user]'s hands!"), "<span class='userdanger'>[src] suddenly grows extremely hot in your hands!</span>")
+		user.visible_message("<span class='warning'>A sizzling sound comes from [user]'s hands!</span>", "<span class='userdanger'>[src] suddenly grows extremely hot in your hands!</span>")
 		playsound(get_turf(user), 'sound/weapons/sear.ogg', 50, 1)
 		user.dropItemToGround(src)
 		user.emote("scream")
@@ -170,13 +170,13 @@
 		user.apply_damage(5, BURN, BODY_ZONE_R_ARM)
 		return FALSE
 	if(!is_servant_of_ratvar(user))
-		to_chat(user, SPAN_WARNING("The information on [src]'s display shifts rapidly. After a moment, your head begins to pound, and you tear your eyes away."))
+		to_chat(user, "<span class='warning'>The information on [src]'s display shifts rapidly. After a moment, your head begins to pound, and you tear your eyes away.</span>")
 		if(user.confused || user.dizziness)
 			user.confused += 5
 			user.dizziness += 5
 		return FALSE
 	if(busy)
-		to_chat(user, SPAN_WARNING("[src] refuses to work, displaying the message: \"[busy]!\""))
+		to_chat(user, "<span class='warning'>[src] refuses to work, displaying the message: \"[busy]!\"</span>")
 		return FALSE
 	if(!no_cost && !can_recite_scripture(user))
 		to_chat(user, "<span class='nezbere'>[src] hums fitfully in your hands, but doesn't seem to do anything...</span>")
@@ -187,7 +187,7 @@
 	. = ..()
 	if(is_servant_of_ratvar(user) && linking && user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		linking = null
-		to_chat(user, SPAN_NOTICE("Object link canceled."))
+		to_chat(user, "<span class='notice'>Object link canceled.</span>")
 		return TRUE
 
 /obj/item/clockwork/slab/proc/access_display(mob/living/user)
@@ -200,14 +200,14 @@
 	if(!scripture || !user || !user.canUseTopic(src) || (!no_cost && !can_recite_scripture(user)))
 		return FALSE
 	if(user.get_active_held_item() != src)
-		to_chat(user, SPAN_WARNING("You need to hold the slab in your active hand to recite scripture!"))
+		to_chat(user, "<span class='warning'>You need to hold the slab in your active hand to recite scripture!</span>")
 		return FALSE
 	var/initial_tier = initial(scripture.tier)
 	if(initial_tier == SCRIPTURE_PERIPHERAL)
-		to_chat(user, SPAN_WARNING("Nice try using href exploits"))
+		to_chat(user, "<span class='warning'>Nice try using href exploits</span>")
 		return
 	if(!GLOB.ratvar_awakens && !no_cost && !SSticker.scripture_states[initial_tier])
-		to_chat(user, SPAN_WARNING("That scripture is not unlocked, and cannot be recited!"))
+		to_chat(user, "<span class='warning'>That scripture is not unlocked, and cannot be recited!</span>")
 		return FALSE
 	var/datum/clockwork_scripture/scripture_to_recite = new scripture
 	scripture_to_recite.slab = src
@@ -351,7 +351,7 @@
 		if("bind")
 			var/datum/clockwork_scripture/path = text2path(params["script"]) //we need a path and not a string
 			if(!ispath(path, /datum/clockwork_scripture) || !initial(path.quickbind) || initial(path.tier) == SCRIPTURE_PERIPHERAL) //fuck you href bus
-				to_chat(usr, SPAN_WARNING("Nice try using href exploits"))
+				to_chat(usr, "<span class='warning'>Nice try using href exploits</span>")
 				return
 			var/found_index = quickbound.Find(path)
 			if(found_index) //hey, we already HAVE this bound

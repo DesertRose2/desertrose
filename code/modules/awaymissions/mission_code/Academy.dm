@@ -150,7 +150,7 @@
 /obj/structure/academy_wizard_spawner/deconstruct(disassembled = TRUE)
 	if(!broken)
 		broken = 1
-		visible_message(SPAN_WARNING("[src] breaks down!"))
+		visible_message("<span class='warning'>[src] breaks down!</span>")
 		icon_state = "forge_off"
 		STOP_PROCESSING(SSobj, src)
 
@@ -178,7 +178,7 @@
 	..()
 	if(!used)
 		if(!ishuman(user) || !user.mind || (user.mind in SSticker.mode.wizards))
-			to_chat(user, SPAN_WARNING("You feel the magic of the dice is restricted to ordinary humans!"))
+			to_chat(user, "<span class='warning'>You feel the magic of the dice is restricted to ordinary humans!</span>")
 			return
 		if(rigged)
 			effect(user,rigged)
@@ -187,7 +187,7 @@
 
 /obj/item/dice/d20/fate/equipped(mob/user, slot)
 	if(!ishuman(user) || !user.mind || (user.mind in SSticker.mode.wizards))
-		to_chat(user, SPAN_WARNING("You feel the magic of the dice is restricted to ordinary humans! You should leave it alone."))
+		to_chat(user, "<span class='warning'>You feel the magic of the dice is restricted to ordinary humans! You should leave it alone.</span>")
 		user.dropItemToGround(src)
 		return
 	return ..()
@@ -236,7 +236,7 @@
 			user.ForceContractDisease(D, FALSE, TRUE)
 		if(10)
 			//Nothing
-			visible_message(SPAN_NOTICE("[src] roll perfectly."))
+			visible_message("<span class='notice'>[src] roll perfectly.</span>")
 		if(11)
 			//Cookie
 			var/obj/item/reagent_containers/food/snacks/cookie/C = new(drop_location())
@@ -289,7 +289,7 @@
 			new /obj/item/card/id/captains_spare(drop_location())
 		if(19)
 			//Instrinct Resistance
-			to_chat(user, SPAN_NOTICE("You feel robust."))
+			to_chat(user, "<span class='notice'>You feel robust.</span>")
 			var/datum/species/S = user.dna.species
 			S.brutemod *= 0.5
 			S.burnmod *= 0.5
@@ -344,7 +344,7 @@
 	AddElement(/datum/element/update_icon_blocker)
 
 /obj/structure/ladder/unbreakable/rune/show_fluff_message(up,mob/user)
-	user.visible_message("[user] activates \the [src].",SPAN_NOTICE("You activate \the [src]."))
+	user.visible_message("[user] activates \the [src].","<span class='notice'>You activate \the [src].</span>")
 
 /obj/structure/ladder/unbreakable/rune/use(mob/user, is_ghost=FALSE)
 	if(is_ghost || !(user.mind in SSticker.mode.wizards))

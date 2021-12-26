@@ -82,13 +82,13 @@
 	if(!isliving(A))
 		return ..()
 	if(slam_cooldown + slam_cooldown_time > world.time)
-		to_chat(src, SPAN_WARNING("Your slam ability is still on cooldown!"))
+		to_chat(src, "<span class='warning'>Your slam ability is still on cooldown!</span>")
 		return
 
 	face_atom(A)
 	var/mob/living/victim = A
 	victim.take_bodypart_damage(brute=20, wound_bonus=wound_bonus) // don't worry, there's more punishment when they hit something
-	visible_message(SPAN_DANGER("[src] slams into [victim] with monstrous strength!"), SPAN_DANGER("You slam into [victim] with monstrous strength!"), ignored_mobs=victim)
+	visible_message("<span class='danger'>[src] slams into [victim] with monstrous strength!</span>", "<span class='danger'>You slam into [victim] with monstrous strength!</span>", ignored_mobs=victim)
 	to_chat(victim, "<span class='userdanger'>[src] slams into you with monstrous strength, sending you flying like a ragdoll!</span>")
 	var/turf/yeet_target = get_edge_target_turf(victim, dir)
 	victim.throw_at(yeet_target, 10, 5, src)
@@ -170,15 +170,15 @@
 /obj/item/organ/heart/demon/attack(mob/M, mob/living/carbon/user, obj/target)
 	if(M != user)
 		return ..()
-	user.visible_message(SPAN_WARNING("[user] raises [src] to [user.p_their()] mouth and tears into it with [user.p_their()] teeth!"), \
-						SPAN_DANGER("An unnatural hunger consumes you. You raise [src] your mouth and devour it!"))
+	user.visible_message("<span class='warning'>[user] raises [src] to [user.p_their()] mouth and tears into it with [user.p_their()] teeth!</span>", \
+						"<span class='danger'>An unnatural hunger consumes you. You raise [src] your mouth and devour it!</span>")
 	playsound(user, 'sound/magic/demon_consume.ogg', 50, 1)
 	for(var/obj/effect/proc_holder/spell/knownspell in user.mind.spell_list)
 		if(knownspell.type == /obj/effect/proc_holder/spell/bloodcrawl)
-			to_chat(user, SPAN_WARNING("...and you don't feel any different."))
+			to_chat(user, "<span class='warning'>...and you don't feel any different.</span>")
 			qdel(src)
 			return
-	user.visible_message(SPAN_WARNING("[user]'s eyes flare a deep crimson!"), \
+	user.visible_message("<span class='warning'>[user]'s eyes flare a deep crimson!</span>", \
 						"<span class='userdanger'>You feel a strange power seep into your body... you have absorbed the demon's blood-travelling powers!</span>")
 	user.temporarilyRemoveItemFromInventory(src, TRUE)
 	src.Insert(user) //Consuming the heart literally replaces your heart with a demon heart. H A R D C O R E

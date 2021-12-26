@@ -221,7 +221,7 @@
 	difficulty = 10 //would be 15 but cmo rarely have it on themselfs and leave it in their lockers...
 
 /datum/objective_item/special/bluespace
-	name = "a quantum power cell."
+	name = "a bluespace power cell."
 	targetitem = /obj/item/stock_parts/cell/bluespace
 	difficulty = 5
 

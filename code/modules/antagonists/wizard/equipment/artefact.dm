@@ -28,7 +28,7 @@
 		charges--
 		user.visible_message("<span class='boldannounce'>[src] hums with power as [user] deals a blow to [activate_descriptor] itself!</span>")
 	else
-		to_chat(user, SPAN_DANGER("The unearthly energies that powered the blade are now dormant."))
+		to_chat(user, "<span class='danger'>The unearthly energies that powered the blade are now dormant.</span>")
 
 /obj/effect/rend
 	name = "tear in the fabric of reality"
@@ -60,7 +60,7 @@
 
 /obj/effect/rend/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/nullrod))
-		user.visible_message(SPAN_DANGER("[user] seals \the [src] with \the [I]."))
+		user.visible_message("<span class='danger'>[user] seals \the [src] with \the [I].</span>")
 		qdel(src)
 		return
 	else
@@ -157,8 +157,8 @@
 	. = ..()
 
 /obj/item/scrying/attack_self(mob/user)
-	to_chat(user, SPAN_NOTICE("You can see...everything!"))
-	visible_message(SPAN_DANGER("[user] stares into [src], their eyes glazing over."))
+	to_chat(user, "<span class='notice'>You can see...everything!</span>")
+	visible_message("<span class='danger'>[user] stares into [src], their eyes glazing over.</span>")
 	user.ghostize(1, voluntary = TRUE)
 
 /////////////////////////////////////////Necromantic Stone///////////////////
@@ -186,16 +186,16 @@
 		return
 
 	if(M.stat != DEAD)
-		to_chat(user, SPAN_WARNING("This artifact can only affect the dead!"))
+		to_chat(user, "<span class='warning'>This artifact can only affect the dead!</span>")
 		return
 
 	if(!M.mind || !M.client)
-		to_chat(user, SPAN_WARNING("There is no soul connected to this body..."))
+		to_chat(user, "<span class='warning'>There is no soul connected to this body...</span>")
 		return
 
 	check_spooky()//clean out/refresh the list
 	if(spooky_scaries.len >= 3 && !unlimited)
-		to_chat(user, SPAN_WARNING("This artifact can only affect three undead at a time!"))
+		to_chat(user, "<span class='warning'>This artifact can only affect three undead at a time!</span>")
 		return
 
 	M.set_species(/datum/species/skeleton/space, icon_update=0)
@@ -292,7 +292,7 @@
 		if(voodoo_link)
 			target = null
 			voodoo_link.forceMove(drop_location())
-			to_chat(user, SPAN_NOTICE("You remove the [voodoo_link] from the doll."))
+			to_chat(user, "<span class='notice'>You remove the [voodoo_link] from the doll.</span>")
 			voodoo_link = null
 			update_targets()
 			return
@@ -310,16 +310,16 @@
 					user.reset_perspective(null)
 					user.unset_machine()
 			if(BODY_ZONE_R_LEG,BODY_ZONE_L_LEG)
-				to_chat(user, SPAN_NOTICE("You move the doll's legs around."))
+				to_chat(user, "<span class='notice'>You move the doll's legs around.</span>")
 				var/turf/T = get_step(target,pick(GLOB.cardinals))
 				target.Move(T)
 			if(BODY_ZONE_R_ARM,BODY_ZONE_L_ARM)
 				target.click_random_mob()
 				GiveHint(target)
 			if(BODY_ZONE_HEAD)
-				to_chat(user, SPAN_NOTICE("You smack the doll's head with your hand."))
+				to_chat(user, "<span class='notice'>You smack the doll's head with your hand.</span>")
 				target.Dizzy(10)
-				to_chat(target, SPAN_WARNING("You suddenly feel as if your head was hit with a hammer!"))
+				to_chat(target, "<span class='warning'>You suddenly feel as if your head was hit with a hammer!</span>")
 				GiveHint(target,user)
 		cooldown = world.time + cooldown_time
 
@@ -334,10 +334,10 @@
 /obj/item/voodoo/proc/GiveHint(mob/victim,force=0)
 	if(prob(50) || force)
 		var/way = dir2text(get_dir(victim,get_turf(src)))
-		to_chat(victim, SPAN_NOTICE("You feel a dark presence from the [way]."))
+		to_chat(victim, "<span class='notice'>You feel a dark presence from [way]</span>")
 	if(prob(20) || force)
 		var/area/A = get_area(src)
-		to_chat(victim, SPAN_NOTICE("You feel a dark presence from \the [A]."))
+		to_chat(victim, "<span class='notice'>You feel a dark presence from [A.name]</span>")
 
 /obj/item/voodoo/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] links the voodoo doll to [user.p_them()]self and sits on it, infinitely crushing [user.p_them()]self! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -388,7 +388,7 @@
 	var/turf/T = get_turf(user)
 	var/area/A = get_area(user)
 	if(!T || !A || A.noteleport)
-		to_chat(user, SPAN_WARNING("You play \the [src], yet no sound comes out of it... Looks like it won't work here."))
+		to_chat(user, "<span class='warning'>You play \the [src], yet no sound comes out of it... Looks like it won't work here.</span>")
 		return
 	on_cooldown = TRUE
 	last_user = user

@@ -1,7 +1,7 @@
 //This file is for glass working types of things!
 
 /obj/item/glasswork
-	name = "this is a bug report it!"
+	name = "This is a bug report it!"
 	desc = "Failer to code. Contact your local bug remover..."
 	icon = 'icons/obj/glassworks.dmi'
 	w_class = WEIGHT_CLASS_SMALL
@@ -11,32 +11,32 @@
 	tool_behaviour = null
 
 /obj/item/glasswork/glasskit
-	name = "glass working tools"
+	name = "Glass working tools"
 	desc = "A lovely belt of most the tools you will need to shape, mold, and refine glass into more advanced shapes."
 	icon_state = "glass_tools"
 	tool_behaviour = TOOL_GLASS_CUT //Cutting takes 20 ticks
 
 /obj/item/glasswork/blowing_rod
-	name = "glass working blow rod"
+	name = "Glass working blow rod"
 	desc = "A hollow metal stick made for glass blowing."
 	icon_state = "blowing_rods_unused"
 	tool_behaviour = TOOL_BLOW //Rods take 5 ticks
 
 /obj/item/glasswork/glass_base //Welding takes 30 ticks
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A sheet of glass set aside for glass working"
 	icon_state = "glass_base"
 	var/next_step = null
 	var/rod = /obj/item/glasswork/blowing_rod
 
 /obj/item/tea_plate
-	name = "tea Plate"
+	name = "Tea Plate"
 	desc = "A polished plate for a tea cup. How fancy!"
 	icon = 'icons/obj/glass_ware.dmi'
 	icon_state = "tea_plate"
 
 /obj/item/tea_cup
-	name = "tea Cup"
+	name = "Tea Cup"
 	desc = "A glass cup made for fake tea!"
 	icon = 'icons/obj/glass_ware.dmi'
 	icon_state = "tea_plate"
@@ -48,7 +48,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/dish
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a small glass dish. Needs to be cut with some tools."
 	next_step = /obj/item/glasswork/glass_base/dish_part1
 
@@ -60,7 +60,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/dish_part1
-	name = "half chem dish sheet"
+	name = "Half chem dish sheet"
 	desc = "A sheet of glass cut in half, looks like it still needs some more cutting down"
 	icon_state = "glass_base_half"
 	next_step = /obj/item/reagent_containers/glass/beaker/glass_dish
@@ -79,7 +79,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/glass_lens
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a small glass lens. Needs to be cut with some tools."
 	next_step = /obj/item/glasswork/glass_base/glass_lens_part1
 
@@ -91,7 +91,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/glass_lens_part1
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass ready to be heated. Needs to be heated with some tools."
 	icon_state = "glass_base_half"
 	next_step = /obj/item/glasswork/glass_base/glass_lens_part2
@@ -104,7 +104,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/glass_lens_part2
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated. Needs to be heated more with some tools."
 	icon_state = "glass_base_heat"
 	next_step = /obj/item/glasswork/glass_base/glass_lens_part3
@@ -117,7 +117,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/glass_lens_part3
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated into a blob of hot glass. Needs to be placed onto a blow tube."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/glass_lens_part4
@@ -131,7 +131,7 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/glass_lens_part4
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated into a blob of hot glass. Needs to be cut off onto a blow tube."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/glasswork/glass_base/glass_lens_part5
@@ -145,7 +145,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/glass_lens_part5
-	name = "unpolished glass lens"
+	name = "Unpolished glass lens"
 	desc = "A small unpolished glass lens. Could be polished with some cloth."
 	icon = 'icons/obj/glass_ware.dmi'
 	icon_state = "glass_optics"
@@ -159,7 +159,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/glass_lens_part6
-	name = "unrefined glass lens"
+	name = "Unrefined glass lens"
 	desc = "A small polished glass lens. Just needs to be refined with some sandstone."
 	icon = 'icons/obj/glass_ware.dmi'
 	icon_state = "glass_optics"
@@ -178,7 +178,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/spouty
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a spout beaker. Needs to be cut with some tools."
 	next_step = /obj/item/glasswork/glass_base/spouty_part2
 
@@ -190,7 +190,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/spouty_part2
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated. Needs to be heated with some tools."
 	icon_state = "glass_base_half"
 	next_step = /obj/item/glasswork/glass_base/spouty_part3
@@ -203,7 +203,7 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/spouty_part3
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated into a blob of hot glass. Needs to be placed onto a blow tube."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/spouty_part4
@@ -217,7 +217,7 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/spouty_part4
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "Cut glass that has been heated into a blob of hot glass. Needs to be cut off onto a blow tube."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/reagent_containers/glass/beaker/flask/spouty
@@ -237,7 +237,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/flask_small
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a small flask. Needs to be heated with some tools."
 	next_step = /obj/item/glasswork/glass_base/flask_small_part1
 
@@ -249,8 +249,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/flask_small_part1
-	name = "molten glass"
-	desc = "A blob of melted glass, this one is ideal for a small flask. Needs to be blown with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass, this one is ideal for a small flask. Needs to be blown with some tools."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/flask_small_part2
 
@@ -263,8 +263,8 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/flask_small_part2
-	name = "molten glass"
-	desc = "A blob of molten glass on the end of a blowing rod. Needs to be cut off with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass on the end of a blowing rod. Needs to be cut off with some tools."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/reagent_containers/glass/beaker/flask
 
@@ -283,7 +283,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/flask_large
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a large flask. Needs to be heated with some tools."
 	next_step = /obj/item/glasswork/glass_base/flask_large_part1
 
@@ -295,8 +295,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/flask_large_part1
-	name = "molten glass"
-	desc = "A blob of molten glass, this one is ideal for a large flask. Needs to be blown with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass, this one is ideal for a large flask. Needs to be blown with some tools."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/flask_large_part2
 
@@ -309,8 +309,8 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/flask_large_part2
-	name = "molten glass"
-	desc = "A blob of molten glass on the end of a blowing rod. Needs to be cut off with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass on the end of a blowing rod. Needs to be cut off with some tools."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/reagent_containers/glass/beaker/flask/large
 
@@ -329,7 +329,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/tea_plate
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a tea plate, how fancy! Needs to be heated with some tools."
 	next_step = /obj/item/glasswork/glass_base/tea_plate1
 
@@ -341,8 +341,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/tea_plate1
-	name = "molten glass"
-	desc = "A blob of molten glass, this one is ideal for a tea plate. Needs to be blown with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass, this one is ideal for a tea plate. Needs to be blown with some tools."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/tea_plate2
 
@@ -355,8 +355,8 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/tea_plate2
-	name = "molten glass"
-	desc = "A blob of molten glass on the end of a blowing rod. Needs to be cut off with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass on the end of a blowing rod. Needs to be cut off with some tools."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/glasswork/glass_base/tea_plate3
 
@@ -369,8 +369,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/tea_plate3
-	name = "glass disc"
-	desc = "A glass disc that can't be used for much. Needs to be polished with some cloth."
+	name = "Disk of glass"
+	desc = "A disk of glass that can be cant be used for much. Needs to be polished with some cloth."
 	icon_state = "glass_base_half"
 	next_step = /obj/item/tea_plate
 
@@ -388,7 +388,7 @@
 ////////////////////////////////////////////////////
 
 /obj/item/glasswork/glass_base/tea_cup
-	name = "glass fodder sheet"
+	name = "Glass fodder sheet"
 	desc = "A set of glass sheets set aside for glass working, this one is ideal for a tea cup, how fancy! Needs to be heated with some tools."
 	next_step = /obj/item/glasswork/glass_base/tea_cup1
 
@@ -400,8 +400,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/tea_cup1
-	name = "molten glass"
-	desc = "A blob of molten glass, this one is ideal for a tea cup. Needs to be blown with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass, this one is ideal for a tea cup. Needs to be blown with some tools."
 	icon_state = "glass_base_molding"
 	next_step = /obj/item/glasswork/glass_base/tea_cup2
 
@@ -414,8 +414,8 @@
 			qdel(I)
 
 /obj/item/glasswork/glass_base/tea_cupe2
-	name = "molten glass"
-	desc = "A blob of molten glass on the end of a blowing rod. Needs to be cut off with some tools."
+	name = "Metled glass"
+	desc = "A blob of metled glass on the end of a blowing rod. Needs to be cut off with some tools."
 	icon_state = "blowing_rods_inuse"
 	next_step = /obj/item/glasswork/glass_base/tea_cup3
 
@@ -428,8 +428,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/tea_cup3
-	name = "glass disc"
-	desc = "A bowl of glass that can't be used for much. Needs to be polished with some cloth."
+	name = "Disk of glass"
+	desc = "A bowl of glass that can be cant be used for much. Needs to be polished with some cloth."
 	icon_state = "glass_base_half"
 	next_step = /obj/item/glasswork/glass_base/tea_cup4
 
@@ -441,8 +441,8 @@
 			qdel(src)
 
 /obj/item/glasswork/glass_base/tea_cup4
-	name = "glass disc"
-	desc = "A bowl of polished glass that can't be used for much. Needs some more glass to make a handle."
+	name = "Disk of glass"
+	desc = "A bowl of polished glass that can be cant be used for much. Needs some more glass to make a handle."
 	icon_state = "glass_base_half"
 	next_step = /obj/item/tea_cup
 

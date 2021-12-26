@@ -49,7 +49,7 @@
 		return 0
 
 	if(accepted_item.charges >= 5)
-		to_chat(user, SPAN_DANGER("Another grenade of that type will not fit into the module."))
+		to_chat(user, "<span class='danger'>Another grenade of that type will not fit into the module.</span>")
 		return 0
 
 	to_chat(user, "<font color='blue'><b>You slot \the [input_device] into the suit module.</b></font>")
@@ -68,7 +68,7 @@
 	var/mob/living/carbon/human/H = holder.wearer
 
 	if(!charge_selected)
-		to_chat(H, SPAN_DANGER("You have not selected a grenade type."))
+		to_chat(H, "<span class='danger'>You have not selected a grenade type.</span>")
 		return 0
 
 	var/datum/rig_charge/charge = charges[charge_selected]
@@ -77,12 +77,12 @@
 		return 0
 
 	if(charge.charges <= 0)
-		to_chat(H, SPAN_DANGER("Insufficient grenades!"))
+		to_chat(H, "<span class='danger'>Insufficient grenades!</span>")
 		return 0
 
 	charge.charges--
 	var/obj/item/grenade/new_grenade = new charge.product_type(get_turf(H))
-	H.visible_message(SPAN_DANGER("[H] launches \a [new_grenade]!"))
+	H.visible_message("<span class='danger'>[H] launches \a [new_grenade]!</span>")
 	new_grenade.throw_at(target,fire_force,fire_distance)
 	new_grenade.prime()
 
@@ -176,7 +176,7 @@
 	var/l_hand = M.get_item_for_held_index(1)
 	var/r_hand = M.get_item_for_held_index(2)
 	if(l_hand && r_hand)
-		to_chat(M, SPAN_DANGER("Your hands are full."))
+		to_chat(M, "<span class='danger'>Your hands are full.</span>")
 		deactivate()
 		return
 
@@ -222,11 +222,11 @@
 	if(target)
 		var/obj/item/firing = new fabrication_type()
 		firing.forceMove(get_turf(src))
-		H.visible_message(SPAN_DANGER("[H] launches \a [firing]!"))
+		H.visible_message("<span class='danger'>[H] launches \a [firing]!</span>")
 		firing.throw_at(target,fire_force,fire_distance)
 	else
 		if(l_hand && r_hand)
-			to_chat(H, SPAN_DANGER("Your hands are full."))
+			to_chat(H, "<span class='danger'>Your hands are full.</span>")
 		else
 			var/obj/item/new_weapon = new fabrication_type()
 			new_weapon.forceMove(H)

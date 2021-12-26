@@ -43,7 +43,7 @@
 	var/mob/living/A = get_duelist(gun_A)
 	var/mob/living/B = get_duelist(gun_B)
 	if(!A || !B)
-		message_duelists(SPAN_WARNING("To begin the duel, both participants need to be holding paired dueling pistols."))
+		message_duelists("<span class='warning'>To begin the duel, both participants need to be holding paired dueling pistols.</span>")
 		return
 	begin()
 
@@ -53,7 +53,7 @@
 	fired.Cut()
 	countdown_step = countdown_length
 
-	message_duelists(SPAN_NOTICE("Set your gun setting and move [required_distance] steps away from your opponent."))
+	message_duelists("<span class='notice'>Set your gun setting and move [required_distance] steps away from your opponent.</span>")
 
 	START_PROCESSING(SSobj, src)
 
@@ -75,7 +75,7 @@
 	return G == gun_A ? gun_B : gun_A
 
 /datum/duel/proc/end()
-	message_duelists(SPAN_NOTICE("Duel finished. Re-engaging safety."))
+	message_duelists("<span class='notice'>Duel finished. Re-engaging safety.</span>")
 	STOP_PROCESSING(SSobj, src)
 	state = DUEL_IDLE
 
@@ -101,17 +101,17 @@
 				end()
 
 /datum/duel/proc/back_to_prep()
-	message_duelists(SPAN_NOTICE("Positions invalid. Please move to valid positions [required_distance] steps aways from each other to continue."))
+	message_duelists("<span class='notice'>Positions invalid. Please move to valid positions [required_distance] steps aways from each other to continue.</span>")
 	state = DUEL_PREPARATION
 	confirmations.Cut()
 	countdown_step = countdown_length
 
 /datum/duel/proc/confirm_positioning()
-	message_duelists(SPAN_NOTICE("Position confirmed. Confirm readiness by pulling the trigger once."))
+	message_duelists("<span class='notice'>Position confirmed. Confirm readiness by pulling the trigger once.</span>")
 	state = DUEL_READY
 
 /datum/duel/proc/confirm_ready()
-	message_duelists(SPAN_NOTICE("Readiness confirmed. Starting countdown. Commence firing at zero mark."))
+	message_duelists("<span class='notice'>Readiness confirmed. Starting countdown. Commence firing at zero mark.</span>")
 	state = DUEL_COUNTDOWN
 
 /datum/duel/proc/countdown_step()
@@ -204,7 +204,7 @@
 			setting = DUEL_SETTING_C
 		if(DUEL_SETTING_C)
 			setting = DUEL_SETTING_A
-	to_chat(user,SPAN_NOTICE("You switch [src] setting to [setting] mode."))
+	to_chat(user,"<span class='notice'>You switch [src] setting to [setting] mode.</span>")
 	update_icon()
 
 /obj/item/gun/energy/dueling/update_overlays(force_update)
@@ -226,7 +226,7 @@
 		if(DUEL_READY)
 			return .
 		else
-			to_chat(user,SPAN_WARNING("[src] is locked. Wait for FIRE signal before shooting."))
+			to_chat(user,"<span class='warning'>[src] is locked. Wait for FIRE signal before shooting.</span>")
 			return FALSE
 
 /obj/item/gun/energy/dueling/proc/is_duelist(mob/living/L)
@@ -239,9 +239,9 @@
 /obj/item/gun/energy/dueling/process_fire(atom/target, mob/living/user, message, params, zone_override, bonus_spread = 0, stam_cost = 0)
 	if(duel.state == DUEL_READY)
 		duel.confirmations[src] = TRUE
-		to_chat(user,SPAN_NOTICE("You confirm your readiness."))
+		to_chat(user,"<span class='notice'>You confirm your readiness.</span>")
 	else if(!is_duelist(target)) //I kinda want to leave this out just to see someone shoot a bystander or missing.
-		to_chat(user,SPAN_WARNING("[src] safety system prevents shooting anyone but your designated opponent."))
+		to_chat(user,"<span class='warning'>[src] safety system prevents shooting anyone but your designated opponent.</span>")
 	else
 		duel.fired[src] = TRUE
 		. = ..()

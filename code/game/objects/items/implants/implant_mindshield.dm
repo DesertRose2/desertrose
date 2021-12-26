@@ -31,7 +31,7 @@
 
 		if(target.mind.has_antag_datum(/datum/antagonist/rev/head) || target.mind.unconvertable)
 			if(!silent)
-				target.visible_message(SPAN_WARNING("[target] seems to resist the implant!"), SPAN_WARNING("You feel something interfering with your mental conditioning, but you resist it!"))
+				target.visible_message("<span class='warning'>[target] seems to resist the implant!</span>", "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>")
 			var/obj/item/implanter/I = loc
 			removed(target, 1)
 			qdel(src)
@@ -45,9 +45,9 @@
 			rev.remove_revolutionary(FALSE, user)
 		if(!silent)
 			if(target.mind in SSticker.mode.cult)
-				to_chat(target, SPAN_WARNING("You feel something interfering with your mental conditioning, but you resist it!"))
+				to_chat(target, "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>")
 			else
-				to_chat(target, SPAN_NOTICE("You feel a sense of peace and security. You are now protected from brainwashing."))
+				to_chat(target, "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>")
 		ADD_TRAIT(target, TRAIT_MINDSHIELD, "implant")
 		target.sec_hud_set_implants()
 		return TRUE

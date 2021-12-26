@@ -45,10 +45,10 @@
 	if(istype(O, /obj/item/organ/brain)) //Time to stick a brain in it --NEO
 		var/obj/item/organ/brain/newbrain = O
 		if(brain)
-			to_chat(user, SPAN_WARNING("There's already a brain in the MMI!"))
+			to_chat(user, "<span class='warning'>There's already a brain in the MMI!</span>")
 			return
 		if(!newbrain.brainmob)
-			to_chat(user, SPAN_WARNING("You aren't sure where this brain came from, but you're pretty sure it's a useless brain!"))
+			to_chat(user, "<span class='warning'>You aren't sure where this brain came from, but you're pretty sure it's a useless brain!</span>")
 			return
 
 		if(!user.transferItemToLoc(O, src))
@@ -89,9 +89,9 @@
 /obj/item/mmi/attack_self(mob/user)
 	if(!brain)
 		radio.on = !radio.on
-		to_chat(user, SPAN_NOTICE("You toggle the MMI's radio system [radio.on==1 ? "on" : "off"]."))
+		to_chat(user, "<span class='notice'>You toggle the MMI's radio system [radio.on==1 ? "on" : "off"].</span>")
 	else
-		to_chat(user, SPAN_NOTICE("You unlock and upend the MMI, spilling the brain onto the floor."))
+		to_chat(user, "<span class='notice'>You unlock and upend the MMI, spilling the brain onto the floor.</span>")
 		eject_brain(user)
 		update_icon()
 		name = initial(name)
@@ -154,13 +154,13 @@
 	set popup_menu = 0
 
 	if(brainmob.stat)
-		to_chat(brainmob, SPAN_WARNING("Can't do that while incapacitated or dead!"))
+		to_chat(brainmob, "<span class='warning'>Can't do that while incapacitated or dead!</span>")
 	if(!radio.on)
-		to_chat(brainmob, SPAN_WARNING("Your radio is disabled!"))
+		to_chat(brainmob, "<span class='warning'>Your radio is disabled!</span>")
 		return
 
 	radio.listening = radio.listening==1 ? 0 : 1
-	to_chat(brainmob, SPAN_NOTICE("Radio is [radio.listening==1 ? "now" : "no longer"] receiving broadcast."))
+	to_chat(brainmob, "<span class='notice'>Radio is [radio.listening==1 ? "now" : "no longer"] receiving broadcast.</span>")
 
 /obj/item/mmi/emp_act(severity)
 	. = ..()
@@ -199,13 +199,13 @@
 	if(brainmob)
 		var/mob/living/brain/B = brainmob
 		if(!B.key || !B.mind || B.stat == DEAD)
-			. += SPAN_WARNING("The MMI indicates the brain is completely unresponsive.")
+			. += "<span class='warning'>The MMI indicates the brain is completely unresponsive.</span>"
 
 		else if(!B.client)
-			. += SPAN_WARNING("The MMI indicates the brain is currently inactive; it might change.")
+			. += "<span class='warning'>The MMI indicates the brain is currently inactive; it might change.</span>"
 
 		else
-			. += SPAN_NOTICE("The MMI indicates the brain is active.")
+			. += "<span class='notice'>The MMI indicates the brain is active.</span>"
 
 /obj/item/mmi/relaymove(mob/user)
 	return //so that the MMI won't get a warning about not being able to move if it tries to move

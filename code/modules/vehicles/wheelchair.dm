@@ -38,7 +38,7 @@
 /obj/vehicle/ridden/wheelchair/driver_move(mob/living/user, direction)
 	if(istype(user))
 		if(canmove && (user.get_num_arms() < arms_required))
-			to_chat(user, SPAN_WARNING("You don't have enough arms to operate the wheels!"))
+			to_chat(user, "<span class='warning'>You don't have enough arms to operate the wheels!</span>")
 			canmove = FALSE
 			addtimer(VARSET_CALLBACK(src, canmove, TRUE), 20)
 			return FALSE
@@ -69,9 +69,9 @@
 	handle_rotation(newdir)
 
 /obj/vehicle/ridden/wheelchair/wrench_act(mob/living/user, obj/item/I)	//Attackby should stop it attacking the wheelchair after moving away during decon
-	to_chat(user, SPAN_NOTICE("You begin to detach the wheels..."))
+	to_chat(user, "<span class='notice'>You begin to detach the wheels...</span>")
 	if(I.use_tool(src, user, 40, volume=50))
-		to_chat(user, SPAN_NOTICE("You detach the wheels and deconstruct the chair."))
+		to_chat(user, "<span class='notice'>You detach the wheels and deconstruct the chair.</span>")
 		new /obj/item/stack/rods(drop_location(), 6)
 		new /obj/item/stack/sheet/metal(drop_location(), 4)
 		qdel(src)

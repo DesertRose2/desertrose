@@ -38,13 +38,13 @@
 		if(!user.transferItemToLoc(I,src))
 			return
 		mytape = I
-		to_chat(user, SPAN_NOTICE("You insert [I] into [src]."))
+		to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
 		update_icon()
 
 
 /obj/item/taperecorder/proc/eject(mob/user)
 	if(mytape)
-		to_chat(user, SPAN_NOTICE("You remove [mytape] from [src]."))
+		to_chat(user, "<span class='notice'>You remove [mytape] from [src].</span>")
 		stop()
 		user.put_in_hands(mytape)
 		mytape = null
@@ -113,7 +113,7 @@
 		return
 
 	if(mytape.used_capacity < mytape.max_capacity)
-		to_chat(usr, SPAN_NOTICE("Recording started."))
+		to_chat(usr, "<span class='notice'>Recording started.</span>")
 		recording = 1
 		update_icon()
 		mytape.timestamp += mytape.used_capacity
@@ -127,7 +127,7 @@
 		recording = 0
 		update_icon()
 	else
-		to_chat(usr, SPAN_NOTICE("The tape is full."))
+		to_chat(usr, "<span class='notice'>The tape is full.</span>")
 
 
 /obj/item/taperecorder/verb/stop()
@@ -141,7 +141,7 @@
 		recording = 0
 		mytape.timestamp += mytape.used_capacity
 		mytape.storedinfo += "\[[time2text(mytape.used_capacity * 10,"mm:ss")]\] Recording stopped."
-		to_chat(usr, SPAN_NOTICE("Recording stopped."))
+		to_chat(usr, "<span class='notice'>Recording stopped.</span>")
 		return
 	else if(playing)
 		playing = 0
@@ -165,7 +165,7 @@
 
 	playing = 1
 	update_icon()
-	to_chat(usr, SPAN_NOTICE("Playing started."))
+	to_chat(usr, "<span class='notice'>Playing started.</span>")
 	var/used = mytape.used_capacity	//to stop runtimes when you eject the tape
 	var/max = mytape.max_capacity
 	for(var/i = 1, used < max, sleep(10 * playsleepseconds))
@@ -210,12 +210,12 @@
 	if(!mytape)
 		return
 	if(!canprint)
-		to_chat(usr, SPAN_NOTICE("The recorder can't print that fast!"))
+		to_chat(usr, "<span class='notice'>The recorder can't print that fast!</span>")
 		return
 	if(recording || playing)
 		return
 
-	to_chat(usr, SPAN_NOTICE("Transcript printed."))
+	to_chat(usr, "<span class='notice'>Transcript printed.</span>")
 	var/obj/item/paper/P = new /obj/item/paper(get_turf(src))
 	var/t1 = "<B>Transcript:</B><BR><BR>"
 	for(var/i = 1, mytape.storedinfo.len >= i, i++)
@@ -257,7 +257,7 @@
 
 /obj/item/tape/attack_self(mob/user)
 	if(!ruined)
-		to_chat(user, SPAN_NOTICE("You pull out all the tape!"))
+		to_chat(user, "<span class='notice'>You pull out all the tape!</span>")
 		ruin()
 
 
@@ -276,9 +276,9 @@
 
 /obj/item/tape/attackby(obj/item/I, mob/user, params)
 	if(ruined && istype(I, /obj/item/screwdriver) || istype(I, /obj/item/pen))
-		to_chat(user, SPAN_NOTICE("You start winding the tape back in..."))
+		to_chat(user, "<span class='notice'>You start winding the tape back in...</span>")
 		if(I.use_tool(src, user, 120))
-			to_chat(user, SPAN_NOTICE("You wound the tape back in."))
+			to_chat(user, "<span class='notice'>You wound the tape back in.</span>")
 			fix()
 
 //Random colour tapes

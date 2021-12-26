@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(dummy_mob_list)
 
 
 	//Second, copy over the preferences, if there are any
-	var/datum/preferences/P = H?.client?.prefs
+	var/datum/preferences/P = H.get_preferences()
 	if (P)
 		P.copy_to(mannequin)
 

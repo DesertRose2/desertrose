@@ -51,7 +51,7 @@
 			var/datum/material/M = I
 			var/amt = materials[I]
 			if(amt)
-				examine_list += SPAN_NOTICE("It has [amt] units of [lowertext(M.name)] stored.")
+				examine_list += "<span class='notice'>It has [amt] units of [lowertext(M.name)] stored.</span>"
 
 /// Proc that allows players to fill the parent with mats
 /datum/component/material_container/proc/OnAttackBy(datum/source, obj/item/I, mob/living/user)
@@ -63,7 +63,7 @@
 	if(I.item_flags & ABSTRACT)
 		return
 	if((I.flags_1 & HOLOGRAM_1) || (I.item_flags & NO_MAT_REDEMPTION) || (tc && !is_type_in_typecache(I, tc)))
-		to_chat(user, SPAN_WARNING("[parent] won't accept [I]!"))
+		to_chat(user, "<span class='warning'>[parent] won't accept [I]!</span>")
 		return
 	. = COMPONENT_NO_AFTERATTACK
 	var/datum/callback/pc = precondition
@@ -71,10 +71,10 @@
 		return
 	var/material_amount = get_item_material_amount(I)
 	if(!material_amount)
-		to_chat(user, SPAN_WARNING("[I] does not contain sufficient materials to be accepted by [parent]."))
+		to_chat(user, "<span class='warning'>[I] does not contain sufficient materials to be accepted by [parent].</span>")
 		return
 	if((!precise_insertion || !GLOB.typecache_stack[I.type]) && !has_space(material_amount))
-		to_chat(user, SPAN_WARNING("[parent] has not enough space. Please remove materials from [parent] in order to insert more."))
+		to_chat(user, "<span class='warning'>[parent] has not enough space. Please remove materials from [parent] in order to insert more.</span>")
 		return
 	user_insert(I, user)
 
@@ -106,13 +106,13 @@
 		inserted = insert_stack(S, requested_amount)
 	else
 		if(!user.temporarilyRemoveItemFromInventory(I))
-			to_chat(user, SPAN_WARNING("[I] is stuck to you and cannot be placed into [parent]."))
+			to_chat(user, "<span class='warning'>[I] is stuck to you and cannot be placed into [parent].</span>")
 			return
 		inserted = insert_item(I)
 		qdel(I)
 
 	if(inserted)
-		to_chat(user, SPAN_NOTICE("You insert a material total of [inserted] into [parent]."))
+		to_chat(user, "<span class='notice'>You insert a material total of [inserted] into [parent].</span>")
 		if(after_insert)
 			after_insert.Invoke(I, last_inserted_id, inserted)
 		if(remote && remote.after_insert)

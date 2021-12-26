@@ -70,14 +70,14 @@
 /obj/item/storage/belt/waistsheath/examine(mob/user)
 	..()
 	if(length(contents))
-		to_chat(user, SPAN_NOTICE("Alt-click it to quickly draw the blade."))
+		to_chat(user, "<span class='notice'>Alt-click it to quickly draw the blade.</span>")
 
 /obj/item/storage/belt/waistsheath/AltClick(mob/user)
 	if(!iscarbon(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(length(contents))
 		var/obj/item/I = contents[2]
-		user.visible_message("[user] takes [I] out of [src].", SPAN_NOTICE("You take [I] out of [src]."))
+		user.visible_message("[user] takes [I] out of [src].", "<span class='notice'>You take [I] out of [src].</span>")
 		user.put_in_hands(I)
 		update_icon()
 	else
@@ -180,13 +180,13 @@
 				show_message = TRUE
 			else
 				if(!spam_protection)
-					to_chat(user, SPAN_WARNING("Your [name] is full and can't hold any more!"))
+					to_chat(user, "<span class='warning'>Your [name] is full and can't hold any more!</span>")
 					spam_protection = TRUE
 					continue
 	if(show_message)
 		playsound(user, "rustle", 50, TRUE)
-		user.visible_message(SPAN_NOTICE("[user] scoops up the casings beneath [user.p_them()]."), \
-			SPAN_NOTICE("You scoop up the casings beneath you with your [name]."))
+		user.visible_message("<span class='notice'>[user] scoops up the casings beneath [user.p_them()].</span>", \
+			"<span class='notice'>You scoop up the casings beneath you with your [name].</span>")
 	spam_protection = FALSE
 
 /*

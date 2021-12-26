@@ -16,9 +16,9 @@
 		if (prob(90))
 			log_combat(M, src, "attacked")
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
-			visible_message(SPAN_DANGER("[M] has slashed at [src]!"), \
+			visible_message("<span class='danger'>[M] has slashed at [src]!</span>", \
 							"<span class='userdanger'>[M] has slashed at you!</span>", target = M, \
-							target_message = SPAN_DANGER("You have slashed at [src]!"))
+							target_message = "<span class='danger'>You have slashed at [src]!</span>")
 			if(prob(8))
 				flash_act(affect_silicon = 1)
 			log_combat(M, src, "attacked")
@@ -26,9 +26,9 @@
 			updatehealth()
 		else
 			playsound(loc, 'sound/weapons/slashmiss.ogg', 25, 1, -1)
-			visible_message(SPAN_DANGER("[M] take a swipe at [src]!"), \
+			visible_message("<span class='danger'>[M] take a swipe at [src]!</span>", \
 							"<span class='userdanger'>[M] take a swipe at you!</span>", target = M, \
-							target_message = SPAN_DANGER("You take a swipe at [src]!"))
+							target_message = "<span class='danger'>You take a swipe at [src]!</span>")
 
 /mob/living/silicon/attack_animal(mob/living/simple_animal/M)
 	. = ..()
@@ -64,9 +64,9 @@
 			return
 		adjustBruteLoss(rand(10, 15))
 		playsound(loc, "punch", 25, 1, -1)
-		visible_message(SPAN_DANGER("[user] has punched [src]!"), \
+		visible_message("<span class='danger'>[user] has punched [src]!</span>", \
 				"<span class='userdanger'>[user] has punched you!</span>", target = user, \
-				target_message = SPAN_DANGER("You have punched [src]!"))
+				target_message = "<span class='danger'>You have punched [src]!</span>")
 		return TRUE
 	return FALSE
 
@@ -77,16 +77,16 @@
 	switch(M.a_intent)
 		if (INTENT_HELP)
 			M.visible_message("[M] pets [src].", \
-							SPAN_NOTICE("You pet [src]."), target = src,
+							"<span class='notice'>You pet [src].</span>", target = src,
 							target_message = "[M] pets you.")
 		if(INTENT_GRAB)
 			grabbedby(M)
 		else
 			M.do_attack_animation(src, ATTACK_EFFECT_PUNCH)
 			playsound(src.loc, 'sound/effects/bang.ogg', 10, 1)
-			visible_message(SPAN_DANGER("[M] punches [src], but doesn't leave a dent."), \
-				SPAN_WARNING("[M] punches you, but doesn't leave a dent."), null, COMBAT_MESSAGE_RANGE, null, M,
-				SPAN_DANGER("You punch [src], but don't leave a dent."))
+			visible_message("<span class='danger'>[M] punches [src], but doesn't leave a dent.</span>", \
+				"<span class='warning'>[M] punches you, but doesn't leave a dent.</span>", null, COMBAT_MESSAGE_RANGE, null, M,
+				"<span class='danger'>You punch [src], but don't leave a dent.</span>")
 
 /mob/living/silicon/attack_drone(mob/living/simple_animal/drone/M)
 	if(M.a_intent == INTENT_HARM)
@@ -102,7 +102,7 @@
 
 /mob/living/silicon/emp_act(severity)
 	. = ..()
-	to_chat(src, SPAN_DANGER("Warning: Electromagnetic pulse detected."))
+	to_chat(src, "<span class='danger'>Warning: Electromagnetic pulse detected.</span>")
 	if(. & EMP_PROTECT_SELF)
 		return
 	src.take_bodypart_damage(severity/5)

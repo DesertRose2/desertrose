@@ -99,7 +99,7 @@
 /obj/item/stock_parts/cell/examine(mob/user)
 	. = ..()
 	if(rigged)
-		to_chat(user, SPAN_DANGER("This power cell seems to be faulty!"))
+		to_chat(user, "<span class='danger'>This power cell seems to be faulty!</span>")
 	else
 		to_chat(user, "The charge meter reads [round(src.percent() )]%.")
 
@@ -156,22 +156,22 @@
 	if(isethereal(user))
 		var/mob/living/carbon/human/H = user
 		if(charge < 100)
-			to_chat(H, SPAN_WARNING("The [src] doesn't have enough power!"))
+			to_chat(H, "<span class='warning'>The [src] doesn't have enough power!</span>")
 			return
 		var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)
 		if(stomach.crystal_charge > 146)
-			to_chat(H, SPAN_WARNING("Your charge is full!"))
+			to_chat(H, "<span class='warning'>Your charge is full!</span>")
 			return
-		to_chat(H, SPAN_NOTICE("You clumsily channel power through the [src] and into your body, wasting some in the process."))
+		to_chat(H, "<span class='notice'>You clumsily channel power through the [src] and into your body, wasting some in the process.</span>")
 		if(do_after(user, 5, target = src))
 			if((charge < 100) || (stomach.crystal_charge > 146))
 				return
 			if(istype(stomach))
-				to_chat(H, SPAN_NOTICE("You receive some charge from the [src]."))
+				to_chat(H, "<span class='notice'>You receive some charge from the [src].</span>")
 				stomach.adjust_charge(3)
 				charge -= 100 //you waste way more than you receive, so that ethereals cant just steal one cell and forget about hunger
 			else
-				to_chat(H, SPAN_WARNING("You can't receive charge from the [src]!"))
+				to_chat(H, "<span class='warning'>You can't receive charge from the [src]!</span>")
 		return
 
 /obj/item/stock_parts/cell/blob_act(obj/structure/blob/B)
@@ -294,7 +294,7 @@
 	start_charged = FALSE
 
 /obj/item/stock_parts/cell/bluespace
-	name = "quantum power cell"
+	name = "bluespace power cell"
 	desc = "A rechargeable transdimensional power cell."
 	icon_state = "bscell"
 	maxcharge = 40000
@@ -438,11 +438,11 @@
 
 /obj/item/stock_parts/cell/ammo/mfc/update_icon()
 	switch(charge)
-		if (1251 to 2000)
+		if (1001 to 2000)
 			icon_state = "mfc-full"
-		if (101 to 1250)
+		if (51 to 1000)
 			icon_state = "mfc-half"
-		if (0 to 100)
+		if (0 to 50)
 			icon_state = "mfc-empty"
 	. = ..()
 
@@ -473,17 +473,13 @@
 /obj/item/stock_parts/cell/ammo/ecp
 	name = "electron charge pack"
 	desc = "A electron charge pack, for rapidly-firing energy weapons."
-	icon_state = "ecp-full"
+	icon_state = "ecp"
 	maxcharge = 2400
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
 	switch(charge)
-		if (1501 to 2400)
-			icon_state = "mfc-full"
-		if (101 to 1500)
-			icon_state = "mfc-half"
-		if (0 to 100)
-			icon_state = "mfc-empty"
+		if (0 to 50)
+			icon_state = "ecp-empty"
 	. = ..()
 
 /obj/item/stock_parts/cell/ammo/alien

@@ -17,7 +17,7 @@
 		AddBloodVolume(passive_blood_drain) // -.1 currently
 	if(HandleHealing(1)) 		// Heal
 		if(!notice_healing && owner.current.blood_volume > 0)
-			to_chat(owner, SPAN_NOTICE("The power of your blood begins knitting your wounds..."))
+			to_chat(owner, "<span class='notice'>The power of your blood begins knitting your wounds...</span>")
 			notice_healing = TRUE
 	else if(notice_healing)
 		notice_healing = FALSE 	// Apply Low Blood Effects
@@ -141,7 +141,7 @@
 		AddBloodVolume(50)
 		var/obj/item/bodypart/L = C.get_bodypart(targetLimbZone) // 2) Limb returns Damaged
 		L.brute_dam = 60
-		to_chat(C, SPAN_NOTICE("Your flesh knits as it regrows your [L]!"))
+		to_chat(C, "<span class='notice'>Your flesh knits as it regrows your [L]!</span>")
 		playsound(C, 'sound/magic/demon_consume.ogg', 50, TRUE)
 		return TRUE
 
@@ -220,7 +220,7 @@
 	// Died? Convert to Torpor (fake death)
 	if(owner.current.stat >= DEAD)
 		Torpor_Begin()
-		to_chat(owner, SPAN_DANGER("Your immortal body will not yet relinquish your soul to the abyss. You enter Torpor."))
+		to_chat(owner, "<span class='danger'>Your immortal body will not yet relinquish your soul to the abyss. You enter Torpor.</span>")
 		sleep(30) //To avoid spam
 		if(poweron_masquerade)
 			to_chat(owner, "<span class='warning'>Your wounds will not heal until you disable the <span class='boldnotice'>Masquerade</span> power.</span>")
@@ -251,7 +251,7 @@
 			power.DeactivatePower()
 	if(owner.current.suiciding)
 		owner.current.suiciding = FALSE //Youll die but not for long.
-		to_chat(owner.current, SPAN_WARNING("Your body keeps you going, even as you try to end yourself."))
+		to_chat(owner.current, "<span class='warning'>Your body keeps you going, even as you try to end yourself.</span>")
 
 /datum/antagonist/bloodsucker/proc/Torpor_End()
 	owner.current.stat = SOFT_CRIT
@@ -260,7 +260,7 @@
 	REMOVE_TRAIT(owner.current, TRAIT_NODEATH, "bloodsucker")
 	REMOVE_TRAIT(owner.current, TRAIT_RESISTHIGHPRESSURE, "bloodsucker")
 	REMOVE_TRAIT(owner.current, TRAIT_RESISTLOWPRESSURE, "bloodsucker")
-	to_chat(owner, SPAN_WARNING("You have recovered from Torpor."))
+	to_chat(owner, "<span class='warning'>You have recovered from Torpor.</span>")
 
 
 /datum/antagonist/proc/AmFinalDeath()
@@ -292,14 +292,14 @@
 	FreeAllVassals()
 	// Elders get Dusted
 	if(bloodsucker_level >= 4) // (bloodsucker_title)
-		owner.current.visible_message(SPAN_WARNING("[owner.current]'s skin crackles and dries, their skin and bones withering to dust. A hollow cry whips from what is now a sandy pile of remains."), \
+		owner.current.visible_message("<span class='warning'>[owner.current]'s skin crackles and dries, their skin and bones withering to dust. A hollow cry whips from what is now a sandy pile of remains.</span>", \
 			"<span class='userdanger'>Your soul escapes your withering body as the abyss welcomes you to your Final Death.</span>", \
 			"<span class='italics'>You hear a dry, crackling sound.</span>")
 		sleep(50)
 		owner.current.dust()
 	// Fledglings get Gibbed
 	else
-		owner.current.visible_message(SPAN_WARNING("[owner.current]'s skin bursts forth in a spray of gore and detritus. A horrible cry echoes from what is now a wet pile of decaying meat."), \
+		owner.current.visible_message("<span class='warning'>[owner.current]'s skin bursts forth in a spray of gore and detritus. A horrible cry echoes from what is now a wet pile of decaying meat.</span>", \
 			"<span class='userdanger'>Your soul escapes your withering body as the abyss welcomes you to your Final Death.</span>", \
 			"<span class='italics'>You hear a wet, bursting sound.</span>")
 		owner.current.gib(TRUE, FALSE, FALSE) //Brain cloning is wierd and allows hellbounds. Lets destroy the brain for safety.
@@ -338,7 +338,7 @@
 		return
 	// Haven't eaten, but I'm in a Human Disguise.
 	else if(poweron_masquerade && !masquerade_override)
-		to_chat(C, SPAN_NOTICE("Your stomach turns, but your \"human disguise\" keeps the food down...for now."))
+		to_chat(C, "<span class='notice'>Your stomach turns, but your \"human disguise\" keeps the food down...for now.</span>")
 	// Keep looping until we purge. If we have activated our Human Disguise, we ignore the food. But it'll come up eventually...
 	var/sickphase = 0
 	while(foodInGut)
@@ -352,19 +352,19 @@
 		// Put up disguise? Then hold off the vomit.
 		if(poweron_masquerade && !masquerade_override)
 			if(sickphase > 0)
-				to_chat(C, SPAN_NOTICE("Your stomach settles temporarily. You regain your composure...for now."))
+				to_chat(C, "<span class='notice'>Your stomach settles temporarily. You regain your composure...for now.</span>")
 			sickphase = 0
 			continue
 		switch(sickphase)
 			if(1)
-				to_chat(C, SPAN_WARNING("You feel unwell. You can taste ash on your tongue."))
+				to_chat(C, "<span class='warning'>You feel unwell. You can taste ash on your tongue.</span>")
 				C.Stun(10)
 			if(2)
-				to_chat(C, SPAN_WARNING("Your stomach turns. Whatever you ate tastes of grave dirt and brimstone."))
+				to_chat(C, "<span class='warning'>Your stomach turns. Whatever you ate tastes of grave dirt and brimstone.</span>")
 				C.Dizzy(15)
 				C.Stun(13)
 			if(3)
-				to_chat(C, SPAN_WARNING("You purge the food of the living from your viscera! You've never felt worse."))
+				to_chat(C, "<span class='warning'>You purge the food of the living from your viscera! You've never felt worse.</span>")
 				//Puke blood only if puke_blood is true, and loose some blood, else just puke normally.
 				if(puke_blood)
 					C.blood_volume = max(0, C.blood_volume - foodInGut * 2)

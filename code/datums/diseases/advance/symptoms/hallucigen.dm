@@ -52,15 +52,15 @@ Bonus
 		if(1, 2)
 			if(prob(base_message_chance))
 				if(!fake_healthy)
-					to_chat(M, SPAN_NOTICE("[pick("Something appears in your peripheral vision, then winks out.", "You hear a faint whisper with no source.", "Your head aches.")]"))
+					to_chat(M, "<span class='notice'>[pick("Something appears in your peripheral vision, then winks out.", "You hear a faint whisper with no source.", "Your head aches.")]</span>")
 				else
-					to_chat(M, SPAN_NOTICE("[pick(healthy_messages)]"))
+					to_chat(M, "<span class='notice'>[pick(healthy_messages)]</span>")
 		if(3, 4)
 			if(prob(base_message_chance))
 				if(!fake_healthy)
-					to_chat(M, SPAN_DANGER("[pick("Something is following you.", "You are being watched.", "You hear a whisper in your ear.", "Thumping footsteps slam toward you from nowhere.")]"))
+					to_chat(M, "<span class='danger'>[pick("Something is following you.", "You are being watched.", "You hear a whisper in your ear.", "Thumping footsteps slam toward you from nowhere.")]</span>")
 				else
-					to_chat(M, SPAN_NOTICE("[pick(healthy_messages)]"))
+					to_chat(M, "<span class='notice'>[pick(healthy_messages)]</span>")
 		else
 			if(prob(base_message_chance))
 				to_chat(M, "<span class='userdanger'>[pick("Oh, your head...", "Your head pounds.", "They're everywhere! Run!", "Something in the shadows...")]</span>")

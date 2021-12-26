@@ -98,9 +98,9 @@
 /obj/item/bodypart/examine(mob/user)
 	. = ..()
 	if(brute_dam > DAMAGE_PRECISION)
-		. += SPAN_WARNING("This limb has [brute_dam > 30 ? "severe" : "minor"] bruising.")
+		. += "<span class='warning'>This limb has [brute_dam > 30 ? "severe" : "minor"] bruising.</span>"
 	if(burn_dam > DAMAGE_PRECISION)
-		. += SPAN_WARNING("This limb has [burn_dam > 30 ? "severe" : "minor"] burns.")
+		. += "<span class='warning'>This limb has [burn_dam > 30 ? "severe" : "minor"] burns.</span>"
 
 /obj/item/bodypart/blob_act()
 	take_damage(max_damage)
@@ -117,11 +117,11 @@
 		if(HAS_TRAIT(C, TRAIT_LIMBATTACHMENT))
 			if(!H.get_bodypart(body_zone) && !animal_origin)
 				if(H == user)
-					H.visible_message(SPAN_WARNING("[H] jams [src] into [H.p_their()] empty socket!"),\
-					SPAN_NOTICE("You force [src] into your empty socket, and it locks into place!"))
+					H.visible_message("<span class='warning'>[H] jams [src] into [H.p_their()] empty socket!</span>",\
+					"<span class='notice'>You force [src] into your empty socket, and it locks into place!</span>")
 				else
-					H.visible_message(SPAN_WARNING("[user] jams [src] into [H]'s empty socket!"),\
-					SPAN_NOTICE("[user] forces [src] into your empty socket, and it locks into place!"))
+					H.visible_message("<span class='warning'>[user] jams [src] into [H]'s empty socket!</span>",\
+					"<span class='notice'>[user] forces [src] into your empty socket, and it locks into place!</span>")
 				user.temporarilyRemoveItemFromInventory(src, TRUE)
 				attach_limb(C)
 				return
@@ -131,11 +131,11 @@
 	if(W.sharpness)
 		add_fingerprint(user)
 		if(!contents.len)
-			to_chat(user, SPAN_WARNING("There is nothing left inside [src]!"))
+			to_chat(user, "<span class='warning'>There is nothing left inside [src]!</span>")
 			return
 		playsound(loc, 'sound/weapons/slice.ogg', 50, 1, -1)
-		user.visible_message(SPAN_WARNING("[user] begins to cut open [src]."),\
-			SPAN_NOTICE("You begin to cut open [src]..."))
+		user.visible_message("<span class='warning'>[user] begins to cut open [src].</span>",\
+			"<span class='notice'>You begin to cut open [src]...</span>")
 		if(do_after(user, 54, target = src))
 			drop_organs(user)
 	else
@@ -882,7 +882,7 @@
 		dam_mul *= iter_wound.damage_mulitplier_penalty
 
 	if(!LAZYLEN(wounds) && current_gauze && !replaced)
-		owner.visible_message(SPAN_NOTICE("\The [current_gauze] on [owner]'s [name] fall away."), SPAN_NOTICE("The [current_gauze] on your [name] fall away."))
+		owner.visible_message("<span class='notice'>\The [current_gauze] on [owner]'s [name] fall away.</span>", "<span class='notice'>The [current_gauze] on your [name] fall away.</span>")
 		QDEL_NULL(current_gauze)
 	wound_damage_multiplier = dam_mul
 	update_disabled()
@@ -938,5 +938,5 @@
 		return
 	current_gauze.absorption_capacity -= seep_amt
 	if(current_gauze.absorption_capacity < 0)
-		owner.visible_message(SPAN_DANGER("\The [current_gauze] on [owner]'s [name] fall away in rags."), SPAN_WARNING("\The [current_gauze] on your [name] fall away in rags."), vision_distance=COMBAT_MESSAGE_RANGE)
+		owner.visible_message("<span class='danger'>\The [current_gauze] on [owner]'s [name] fall away in rags.</span>", "<span class='warning'>\The [current_gauze] on your [name] fall away in rags.</span>", vision_distance=COMBAT_MESSAGE_RANGE)
 		QDEL_NULL(current_gauze)

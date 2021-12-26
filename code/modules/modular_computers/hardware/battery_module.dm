@@ -32,32 +32,32 @@
 		return FALSE
 
 	if(battery)
-		to_chat(user, SPAN_WARNING("You try to connect \the [I] to \the [src], but its connectors are occupied."))
+		to_chat(user, "<span class='warning'>You try to connect \the [I] to \the [src], but its connectors are occupied.</span>")
 		return FALSE
 
 	if(I.w_class > holder.max_hardware_size)
-		to_chat(user, SPAN_WARNING("This power cell is too large for \the [holder]!"))
+		to_chat(user, "<span class='warning'>This power cell is too large for \the [holder]!</span>")
 		return FALSE
 
 	if(user && !user.transferItemToLoc(I, src))
 		return FALSE
 
 	battery = I
-	to_chat(user, SPAN_NOTICE("You connect \the [I] to \the [src]."))
+	to_chat(user, "<span class='notice'>You connect \the [I] to \the [src].</span>")
 
 	return TRUE
 
 
 /obj/item/computer_hardware/battery/try_eject(mob/living/user = null, forced = FALSE)
 	if(!battery)
-		to_chat(user, SPAN_WARNING("There is no power cell connected to \the [src]."))
+		to_chat(user, "<span class='warning'>There is no power cell connected to \the [src].</span>")
 		return FALSE
 	else
 		if(user)
 			user.put_in_hands(battery)
 		else
 			battery.forceMove(drop_location())
-		to_chat(user, SPAN_NOTICE("You detach \the [battery] from \the [src]."))
+		to_chat(user, "<span class='notice'>You detach \the [battery] from \the [src].</span>")
 		battery = null
 
 		if(holder)

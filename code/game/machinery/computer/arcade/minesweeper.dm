@@ -265,7 +265,7 @@
 						new /obj/item/storage/backpack/duffelbag/syndie/c4(loc)
 						new /obj/item/storage/backpack/duffelbag/syndie/x4(loc)
 				message_admins("[key_name_admin(user)] won emagged Minesweeper and got [itemname]!")
-				visible_message(SPAN_NOTICE("[src] dispenses [itemname]!"), SPAN_NOTICE("You hear a chime and a clunk."))
+				visible_message("<span class='notice'>[src] dispenses [itemname]!</span>", "<span class='notice'>You hear a chime and a clunk.</span>")
 				DISABLE_BITFIELD(obj_flags, EMAGGED)
 			else
 				var/dope_prizes = (area >= 480) ? list(ARCADE_WEIGHT_RARE) : (area >= 256) ? list(ARCADE_WEIGHT_RARE, ARCADE_WEIGHT_TRICK) : null
@@ -298,10 +298,10 @@
 	randomcolour = rgb(randomnumber,randomnumber/2,randomnumber/3)
 	ENABLE_BITFIELD(obj_flags, EMAGGED)
 	if(game_status == MINESWEEPER_GAME_MAIN_MENU)
-		to_chat(user, SPAN_WARNING("An ominous tune plays from the arcade's speakers!"))
+		to_chat(user, "<span class='warning'>An ominous tune plays from the arcade's speakers!</span>")
 		playsound(user, 'sound/arcade/minesweeper_emag1.ogg', 100, 0, extrarange = 3, falloff = 10)
 	else	//Can't let you do that, star fox!
-		to_chat(user, SPAN_WARNING("The machine buzzes and sparks... the game has been reset!"))
+		to_chat(user, "<span class='warning'>The machine buzzes and sparks... the game has been reset!</span>")
 		playsound(user, 'sound/machines/buzz-sigh.ogg', 100, 0, extrarange = 3, falloff = 10)	//Loud buzz
 		game_status = MINESWEEPER_GAME_MAIN_MENU
 	return TRUE

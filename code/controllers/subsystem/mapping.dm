@@ -496,12 +496,12 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			if(!mapfile)
 				return
 			away_name = "[mapfile] custom"
-			to_chat(usr,SPAN_NOTICE("Loading [away_name]..."))
+			to_chat(usr,"<span class='notice'>Loading [away_name]...</span>")
 			var/datum/map_template/template = new(mapfile, choice, ztraits)
 			away_level = template.load_new_z(ztraits)
 		else
 			away_name = answer
-			to_chat(usr,SPAN_NOTICE("Loading [away_name]..."))
+			to_chat(usr,"<span class='notice'>Loading [away_name]...</span>")
 			var/datum/map_template/template = new(away_name, choice)
 			away_level = template.load_new_z(ztraits)
 

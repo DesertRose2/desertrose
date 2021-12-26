@@ -61,7 +61,7 @@
 			return
 		var/num_loaded = magazine.attackby(A, user, params, 1)
 		if(num_loaded)
-			to_chat(user, SPAN_NOTICE("You load [num_loaded] shell\s into \the [src]!"))
+			to_chat(user, "<span class='notice'>You load [num_loaded] shell\s into \the [src]!</span>")
 			playsound(user, 'sound/weapons/shotguninsert.ogg', 60, 1)
 			A.update_icon()
 			update_icon()
@@ -71,7 +71,7 @@
 		if (!magazine && istype(AM, mag_type))
 			if(user.transferItemToLoc(AM, src))
 				magazine = AM
-				to_chat(user, SPAN_NOTICE("You load a new magazine into \the [src]."))
+				to_chat(user, "<span class='notice'>You load a new magazine into \the [src].</span>")
 				if(magazine.ammo_count())
 					playsound(src, "gun_insert_full_magazine", 70, 1)
 					if(!chambered)
@@ -83,23 +83,23 @@
 				update_icon()
 				return 1
 			else
-				to_chat(user, SPAN_WARNING("You cannot seem to get \the [src] out of your hands!"))
+				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
 				return
 		else if (magazine)
-			to_chat(user, SPAN_NOTICE("There's already a magazine in \the [src]."))
+			to_chat(user, "<span class='notice'>There's already a magazine in \the [src].</span>")
 	if(istype(A, /obj/item/suppressor))
 		var/obj/item/suppressor/S = A
 		if(!can_suppress)
-			to_chat(user, SPAN_WARNING("You can't seem to figure out how to fit [S] on [src]!"))
+			to_chat(user, "<span class='warning'>You can't seem to figure out how to fit [S] on [src]!</span>")
 			return
 		if(!user.is_holding(src))
-			to_chat(user, SPAN_NOTICE("You need be holding [src] to fit [S] to it!"))
+			to_chat(user, "<span class='notice'>You need be holding [src] to fit [S] to it!</span>")
 			return
 		if(suppressed)
-			to_chat(user, SPAN_WARNING("[src] already has a suppressor!"))
+			to_chat(user, "<span class='warning'>[src] already has a suppressor!</span>")
 			return
 		if(user.transferItemToLoc(A, src))
-			to_chat(user, SPAN_NOTICE("You screw [S] onto [src]."))
+			to_chat(user, "<span class='notice'>You screw [S] onto [src].</span>")
 			install_suppressor(A)
 			update_overlays()
 			return
@@ -118,7 +118,7 @@
 			var/obj/item/suppressor/S = suppressed
 			if(!user.is_holding(src))
 				return ..()
-			to_chat(user, SPAN_NOTICE("You unscrew [suppressed] from [src]."))
+			to_chat(user, "<span class='notice'>You unscrew [suppressed] from [src].</span>")
 			user.put_in_hands(suppressed)
 			fire_sound = S.oldsound
 			suppressed = null
@@ -135,7 +135,7 @@
 			magazine.update_icon()
 			playsound(src, "sound/f13weapons/garand_ping.ogg", 70, 1)
 			magazine = null
-			to_chat(user, SPAN_NOTICE("You eject the enbloc clip out of \the [src]."))
+			to_chat(user, "<span class='notice'>You eject the enbloc clip out of \the [src].</span>")
 		else
 			magazine.forceMove(drop_location())
 			user.put_in_hands(magazine)
@@ -145,15 +145,15 @@
 			else
 				playsound(src, "gun_remove_empty_magazine", 70, 1)
 			magazine = null
-			to_chat(user, SPAN_NOTICE("You pull the magazine out of \the [src]."))
+			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
 		AC.forceMove(drop_location())
 		AC.bounce_away()
 		chambered = null
-		to_chat(user, SPAN_NOTICE("You unload the round from \the [src]'s chamber."))
+		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
 		playsound(src, "gun_slide_lock", 70, 1)
 	else
-		to_chat(user, SPAN_NOTICE("There's no magazine in \the [src]."))
+		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()
 	return
 
@@ -203,20 +203,20 @@
 
 /obj/item/gun/ballistic/proc/sawoff(mob/user)
 	if(sawn_off)
-		to_chat(user, SPAN_WARNING("\The [src] is already shortened!"))
+		to_chat(user, "<span class='warning'>\The [src] is already shortened!</span>")
 		return
 	user.DelayNextAction(CLICK_CD_MELEE)
-	user.visible_message("[user] begins to shorten \the [src].", SPAN_NOTICE("You begin to shorten \the [src]..."))
+	user.visible_message("[user] begins to shorten \the [src].", "<span class='notice'>You begin to shorten \the [src]...</span>")
 
 	//if there's any live ammo inside the gun, makes it go off
 	if(blow_up(user))
-		user.visible_message(SPAN_DANGER("\The [src] goes off!"), SPAN_DANGER("\The [src] goes off in your face!"))
+		user.visible_message("<span class='danger'>\The [src] goes off!</span>", "<span class='danger'>\The [src] goes off in your face!</span>")
 		return
 
 	if(do_after(user, 30, target = src))
 		if(sawn_off)
 			return
-		user.visible_message("[user] shortens \the [src]!", SPAN_NOTICE("You shorten \the [src]."))
+		user.visible_message("[user] shortens \the [src]!", "<span class='notice'>You shorten \the [src].</span>")
 		name = "sawn-off [src.name]"
 		desc = sawn_desc
 		w_class = WEIGHT_CLASS_NORMAL

@@ -110,7 +110,7 @@ GLOBAL_PROTECT(Banlist)
 
 	GLOB.Banlist.cd = "/base"
 	if ( GLOB.Banlist.dir.Find("[ban_ckey][computerid]") )
-		to_chat(usr, SPAN_DANGER("Ban already exists."))
+		to_chat(usr, text("<span class='danger'>Ban already exists.</span>"))
 		return 0
 	else
 		GLOB.Banlist.dir.Add("[ban_ckey][computerid]")

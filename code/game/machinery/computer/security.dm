@@ -25,7 +25,7 @@
 
 /obj/machinery/computer/secure_data/laptop
 	name = "security laptop"
-	desc = "A cheap Vault-Tec security laptop, it functions as a security records console. It's bolted to the table."
+	desc = "A cheap Nanotrasen security laptop, it functions as a security records console. It's bolted to the table."
 	icon_state = "laptop"
 	icon_screen = "seclaptop"
 	icon_keyboard = "laptop_key"
@@ -318,7 +318,7 @@ What a mess.*/
 					rank = I.assignment
 					screen = 1
 				else
-					to_chat(usr, SPAN_DANGER("Unauthorized Access."))
+					to_chat(usr, "<span class='danger'>Unauthorized Access.</span>")
 				playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
 
 //RECORD FUNCTIONS

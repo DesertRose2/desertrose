@@ -38,7 +38,7 @@
 		if(volume >= 15) //To prevent monkey breast farms
 			var/turf/T = get_turf(M)
 			var/obj/item/organ/genital/breasts/B = new /obj/item/organ/genital/breasts(T)
-			M.visible_message(SPAN_WARNING("A pair of breasts suddenly fly out of the [M]!</b>"))
+			M.visible_message("<span class='warning'>A pair of breasts suddenly fly out of the [M]!</b></span>")
 			var/T2 = get_random_station_turf()
 			M.adjustBruteLoss(25)
 			M.DefaultCombatKnockdown(50)
@@ -77,7 +77,7 @@
 		B.size = "flat"
 		B.cached_size = 0
 		B.prev_size = 0
-		to_chat(H, SPAN_WARNING("Your chest feels warm, tingling with newfound sensitivity.</b>"))
+		to_chat(H, "<span class='warning'>Your chest feels warm, tingling with newfound sensitivity.</b></span>")
 		H.reagents.remove_reagent(type, 5)
 		B.Insert(H)
 
@@ -87,7 +87,7 @@
 	if (ISINRANGE_EX(B.cached_size, 8.5, 9) && (H.w_uniform || H.wear_suit))
 		var/target = H.get_bodypart(BODY_ZONE_CHEST)
 		if(!message_spam)
-			to_chat(H, SPAN_DANGER("Your breasts begin to strain against your clothes tightly!</b>"))
+			to_chat(H, "<span class='danger'>Your breasts begin to strain against your clothes tightly!</b></span>")
 			message_spam = TRUE
 		H.adjustOxyLoss(5, 0)
 		H.apply_damage(1, BRUTE, target)
@@ -197,7 +197,7 @@
 		if(volume >= 15) //to prevent monkey penis farms
 			var/turf/T = get_turf(M)
 			var/obj/item/organ/genital/penis/P = new /obj/item/organ/genital/penis(T)
-			M.visible_message(SPAN_WARNING("A penis suddenly flies out of the [M]!</b>"))
+			M.visible_message("<span class='warning'>A penis suddenly flies out of the [M]!</b></span>")
 			var/T2 = get_random_station_turf()
 			M.adjustBruteLoss(25)
 			M.DefaultCombatKnockdown(50)
@@ -226,7 +226,7 @@
 
 		P = new
 		P.length = 1
-		to_chat(H, SPAN_WARNING("Your groin feels warm, as you feel a newly forming bulge down below.</b>"))
+		to_chat(H, "<span class='warning'>Your groin feels warm, as you feel a newly forming bulge down below.</b></span>")
 		P.prev_length = 1
 		H.reagents.remove_reagent(type, 5)
 		P.Insert(H)
@@ -235,7 +235,7 @@
 	if (ISINRANGE_EX(P.length, 20.5, 21) && (H.w_uniform || H.wear_suit))
 		var/target = H.get_bodypart(BODY_ZONE_CHEST)
 		if(!message_spam)
-			to_chat(H, SPAN_DANGER("Your cock begin to strain against your clothes tightly!</b>"))
+			to_chat(H, "<span class='danger'>Your cock begin to strain against your clothes tightly!</b></span>")
 			message_spam = TRUE
 		H.apply_damage(2.5, BRUTE, target)
 

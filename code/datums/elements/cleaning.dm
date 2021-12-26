@@ -45,4 +45,4 @@
 				cleaned_human.clean_blood()
 				cleaned_human.wash_cream()
 				cleaned_human.regenerate_icons()
-				to_chat(cleaned_human, SPAN_DANGER("[AM] cleans your face!"))
+				to_chat(cleaned_human, "<span class='danger'>[AM] cleans your face!</span>")

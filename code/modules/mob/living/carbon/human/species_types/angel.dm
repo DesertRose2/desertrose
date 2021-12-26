@@ -63,7 +63,7 @@
 
 	var/datum/gas_mixture/environment = T.return_air()
 	if(environment && !(environment.return_pressure() > 30))
-		to_chat(H, SPAN_WARNING("The atmosphere is too thin for you to fly!"))
+		to_chat(H, "<span class='warning'>The atmosphere is too thin for you to fly!</span>")
 		return FALSE
 	return TRUE
 
@@ -78,11 +78,11 @@
 	var/datum/species/angel/A = H.dna.species
 	if(A.CanFly(H))
 		if(H.movement_type & FLYING)
-			to_chat(H, SPAN_NOTICE("You settle gently back onto the ground..."))
+			to_chat(H, "<span class='notice'>You settle gently back onto the ground...</span>")
 			A.ToggleFlight(H,0)
 			H.update_mobility()
 		else
-			to_chat(H, SPAN_NOTICE("You beat your wings and begin to hover gently above the ground..."))
+			to_chat(H, "<span class='notice'>You beat your wings and begin to hover gently above the ground...</span>")
 			H.set_resting(FALSE, TRUE)
 			A.ToggleFlight(H,1)
 			H.update_mobility()
@@ -92,7 +92,7 @@
 	if(H.buckled)
 		buckled_obj = H.buckled
 
-	to_chat(H, SPAN_NOTICE("Your wings spazz out and launch you!"))
+	to_chat(H, "<span class='notice'>Your wings spazz out and launch you!</span>")
 
 	playsound(H.loc, 'sound/misc/slip.ogg', 50, 1, -3)
 

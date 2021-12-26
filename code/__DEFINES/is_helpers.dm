@@ -30,6 +30,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 
 #define isfloorturf(A) (istype(A, /turf/open/floor))
 
+#define isgroundturf(A) (istype(A, /turf/open/indestructible/ground))
+
 #define isclosedturf(A) (istype(A, /turf/closed))
 
 #define isindestructiblewall(A) (istype(A, /turf/closed/indestructible))
@@ -115,6 +117,7 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 
 #define isAI(A) (istype(A, /mob/living/silicon/ai))
 
+#define isghoul(A) (is_species(A, /datum/species/ghoul))
 
 #define ispAI(A) (istype(A, /mob/living/silicon/pai))
 
@@ -241,3 +244,7 @@ GLOBAL_LIST_INIT(glass_sheet_types, typecacheof(list(
 
 #define isfinite(n) (isnum(n) && n == n)
 
+//F13 EDIT
+#define iskey(A) istype(A, /obj/item/key)
+
+#define islock(A) istype(A, /obj/item/lock_construct)

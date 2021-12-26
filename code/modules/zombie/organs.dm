@@ -51,7 +51,7 @@
 	if (causes_damage && !iszombie(owner) && owner.stat != DEAD)
 		owner.adjustToxLoss(1)
 		if (prob(10))
-			to_chat(owner, SPAN_DANGER("You feel sick..."))
+			to_chat(owner, "<span class='danger'>You feel sick...</span>")
 	if(timer_id)
 		return
 	if(owner.suiciding)
@@ -89,7 +89,7 @@
 		return
 
 	owner.grab_ghost()
-	owner.visible_message(SPAN_DANGER("[owner] suddenly convulses, as [owner.p_they()][stand_up ? " stagger to [owner.p_their()] feet and" : ""] gain a ravenous hunger in [owner.p_their()] eyes!"), "<span class='alien'>You HUNGER!</span>")
+	owner.visible_message("<span class='danger'>[owner] suddenly convulses, as [owner.p_they()][stand_up ? " stagger to [owner.p_their()] feet and" : ""] gain a ravenous hunger in [owner.p_their()] eyes!</span>", "<span class='alien'>You HUNGER!</span>")
 	playsound(owner.loc, 'sound/hallucinations/far_noise.ogg', 50, 1)
 	owner.do_jitter_animation(living_transformation_time)
 	owner.Stun(living_transformation_time)

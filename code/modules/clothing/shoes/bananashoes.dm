@@ -28,7 +28,7 @@
 			if(!always_noslip)
 				clothing_flags &= ~NOSLIP
 			update_icon()
-			to_chat(loc, SPAN_WARNING("You ran out of bananium!"))
+			to_chat(loc, "<span class='warning'>You ran out of bananium!</span>")
 		else
 			new /obj/item/grown/bananapeel/specialpeel(get_step(src,turn(usr.dir, 180))) //honk
 			bananium.use_amount_mat(100, /datum/material/bananium)
@@ -37,27 +37,27 @@
 	var/datum/component/material_container/bananium = GetComponent(/datum/component/material_container)
 	var/sheet_amount = bananium.retrieve_all()
 	if(sheet_amount)
-		to_chat(user, SPAN_NOTICE("You retrieve [sheet_amount] sheets of bananium from the prototype shoes."))
+		to_chat(user, "<span class='notice'>You retrieve [sheet_amount] sheets of bananium from the prototype shoes.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("You cannot retrieve any bananium from the prototype shoes."))
+		to_chat(user, "<span class='notice'>You cannot retrieve any bananium from the prototype shoes.</span>")
 
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("The shoes are [on ? "enabled" : "disabled"].")
+	. += "<span class='notice'>The shoes are [on ? "enabled" : "disabled"].</span>"
 
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/ui_action_click(mob/user)
 	var/datum/component/material_container/bananium = GetComponent(/datum/component/material_container)
 	if(bananium.get_material_amount(/datum/material/bananium))
 		on = !on
 		update_icon()
-		to_chat(user, SPAN_NOTICE("You [on ? "activate" : "deactivate"] the prototype shoes."))
+		to_chat(user, "<span class='notice'>You [on ? "activate" : "deactivate"] the prototype shoes.</span>")
 		if(!always_noslip)
 			if(on)
 				clothing_flags |= NOSLIP
 			else
 				clothing_flags &= ~NOSLIP
 	else
-		to_chat(user, SPAN_WARNING("You need bananium to turn the prototype shoes on!"))
+		to_chat(user, "<span class='warning'>You need bananium to turn the prototype shoes on!</span>")
 
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/update_icon_state()
 	icon_state = "clown_prototype_[on? "on" : "off"]"

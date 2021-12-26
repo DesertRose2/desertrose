@@ -133,7 +133,7 @@
 		reversing = FALSE //Now that we're done reversing, we set this to false (otherwise we would get stuck in an infinite loop of calling the close proc at the bottom of open() )
 		bluespace = TRUE //Make it so that the pod doesn't stay in centcom forever
 		QDEL_IN(risingPod, 10)
-		audible_message(SPAN_NOTICE("The pod hisses, closing quickly and launching itself away from the station."), SPAN_NOTICE("The ground vibrates, the nearby pod launching away from the station."))
+		audible_message("<span class='notice'>The pod hisses, closing quickly and launching itself away from the station.</span>", "<span class='notice'>The ground vibrates, the nearby pod launching away from the station.</span>")
 		stay_after_drop = FALSE
 		specialisedPod(holder) // Do special actions for specialised pods - this is likely if we were already doing manual launches
 
@@ -339,8 +339,8 @@
 
 //------------------------------------UPGRADES-------------------------------------//
 /obj/item/disk/cargo/bluespace_pod //Disk that can be inserted into the Express Console to allow for Advanced Bluespace Pods
-	name = "Quantum Drop Pod Upgrade"
-	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Vault-Tec's Quantum Drop Pods to the supply department."
+	name = "Bluespace Drop Pod Upgrade"
+	desc = "This disk provides a firmware update to the Express Supply Console, granting the use of Nanotrasen's Bluespace Drop Pods to the supply department."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cargodisk"
 	item_state = "card-id"

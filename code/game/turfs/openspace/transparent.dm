@@ -47,7 +47,7 @@
 
 
 /turf/open/transparent/glass
-	name = "glass floor"
+	name = "Glass floor"
 	desc = "Dont jump on it, or do, I'm not your mom."
 	icon = 'icons/turf/floors/glass.dmi'
 	icon_state = "floor_glass"
@@ -64,7 +64,7 @@
 	return ..()
 
 /turf/open/transparent/glass/wrench_act(mob/living/user, obj/item/I)
-	to_chat(user, SPAN_NOTICE("You begin removing glass..."))
+	to_chat(user, "<span class='notice'>You begin removing glass...</span>")
 	if(I.use_tool(src, user, 30, volume=80))
 		if(!istype(src, /turf/open/transparent/glass))
 			return TRUE
@@ -74,13 +74,13 @@
 	return TRUE
 
 /turf/open/transparent/glass/reinforced
-	name = "reinforced glass floor"
+	name = "Reinforced glass floor"
 	desc = "Do jump on it, it can take it."
 	icon = 'icons/turf/floors/reinf_glass.dmi'
 	floor_tile = /obj/item/stack/sheet/rglass
 
 /turf/open/transparent/glass/reinforced/wrench_act(mob/living/user, obj/item/I)
-	to_chat(user, SPAN_NOTICE("You begin removing reinforced glass..."))
+	to_chat(user, "<span class='notice'>You begin removing reinforced glass...</span>")
 	if(I.use_tool(src, user, 30, volume=80))
 		if(!istype(src, /turf/open/transparent/glass/reinforced))
 			return TRUE

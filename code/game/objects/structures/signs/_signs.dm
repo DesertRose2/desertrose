@@ -27,13 +27,13 @@
 
 /obj/structure/sign/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wrench) && buildable_sign)
-		user.visible_message(SPAN_NOTICE("[user] starts removing [src]..."), \
-							SPAN_NOTICE("You start unfastening [src]."))
+		user.visible_message("<span class='notice'>[user] starts removing [src]...</span>", \
+							"<span class='notice'>You start unfastening [src].</span>")
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 40))
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
-			user.visible_message(SPAN_NOTICE("[user] unfastens [src]."), \
-								SPAN_NOTICE("You unfasten [src]."))
+			user.visible_message("<span class='notice'>[user] unfastens [src].</span>", \
+								"<span class='notice'>You unfasten [src].</span>")
 			var/obj/item/sign_backing/SB = new (get_turf(user))
 			SB.icon_state = icon_state
 			SB.set_custom_materials(custom_materials) //This is here so picture frames and wooden things don't get messed up.
@@ -105,8 +105,8 @@
 	. = ..()
 	if(isturf(target) && proximity)
 		var/turf/T = target
-		user.visible_message(SPAN_NOTICE("[user] fastens [src] to [T]."), \
-							SPAN_NOTICE("You attach the sign to [T]."))
+		user.visible_message("<span class='notice'>[user] fastens [src] to [T].</span>", \
+							"<span class='notice'>You attach the sign to [T].</span>")
 		playsound(T, 'sound/items/deconstruct.ogg', 50, 1)
 		var/obj/structure/sign/S = new sign_path(T)
 		S.setDir(dir)
@@ -121,3 +121,13 @@
 /obj/item/sign_backing/attack_self(mob/user)
 	. = ..()
 	setDir(turn(dir, 90))
+
+/obj/structure/sign/nanotrasen
+	name = "\improper Nanotrasen Logo"
+	desc = "A sign with the Nanotrasen Logo on it. Glory to Nanotrasen!"
+	icon_state = "nanotrasen"
+
+/obj/structure/sign/logo
+	name = "nanotrasen logo"
+	desc = "The Nanotrasen corporate logo."
+	icon_state = "nanotrasen_sign1"

@@ -36,7 +36,7 @@
 		if(user.a_intent == INTENT_HARM && !C.is_mouth_covered())
 			reagents.reaction(C, INGEST)
 			reagents.trans_to(C, reagents.total_volume)
-			C.visible_message(SPAN_DANGER("[user] has smothered \the [C] with \the [src]!"), "<span class='userdanger'>[user] has smothered you with \the [src]!</span>", "<span class='italics'>You hear some struggling and muffled cries of surprise.</span>")
+			C.visible_message("<span class='danger'>[user] has smothered \the [C] with \the [src]!</span>", "<span class='userdanger'>[user] has smothered you with \the [src]!</span>", "<span class='italics'>You hear some struggling and muffled cries of surprise.</span>")
 			log_game("[key_name(user)] smothered [key_name(A)] with a damp rag containing [reagentlist]")
 			log_attack("[key_name(user)] smothered [key_name(A)] with a damp rag containing [reagentlist]")
 		else
@@ -44,12 +44,12 @@
 			reagents.clear_reagents()
 			log_game("[key_name(user)] touched [key_name(A)] with a damp rag containing [reagentlist]")
 			log_attack("[key_name(user)] touched [key_name(A)] with a damp rag containing [reagentlist]")
-			C.visible_message(SPAN_NOTICE("[user] has touched \the [C] with \the [src]."))
+			C.visible_message("<span class='notice'>[user] has touched \the [C] with \the [src].</span>")
 
 	else if(istype(A) && (src in user))
-		user.visible_message("[user] starts to wipe down [A] with [src]!", SPAN_NOTICE("You start to wipe down [A] with [src]..."))
+		user.visible_message("[user] starts to wipe down [A] with [src]!", "<span class='notice'>You start to wipe down [A] with [src]...</span>")
 		if(do_after(user,30, target = A))
-			user.visible_message("[user] finishes wiping off [A]!", SPAN_NOTICE("You finish wiping off [A]."))
+			user.visible_message("[user] finishes wiping off [A]!", "<span class='notice'>You finish wiping off [A].</span>")
 			SEND_SIGNAL(A, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_MEDIUM)
 	return
 
@@ -105,7 +105,7 @@
 /obj/item/reagent_containers/glass/rag/towel/attack_self(mob/user)
 	if(!user.CanReach(src) || !user.dropItemToGround(src))
 		return
-	to_chat(user, SPAN_NOTICE("You lay out \the [src] flat on the ground."))
+	to_chat(user, "<span class='notice'>You lay out \the [src] flat on the ground.</span>")
 	icon_state = flat_icon
 	layer = BELOW_OBJ_LAYER
 

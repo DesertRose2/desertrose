@@ -64,11 +64,11 @@
 
 	var/datum/gas_mixture/environment = loc.return_air()
 
-	var/t =	SPAN_NOTICE("Coordinates: [x],[y] \n")
-	t +=	SPAN_DANGER("Temperature: [environment.return_temperature()] \n")
+	var/t =	"<span class='notice'>Coordinates: [x],[y] \n</span>"
+	t +=	"<span class='danger'>Temperature: [environment.return_temperature()] \n</span>"
 	for(var/id in environment.get_gases())
 		if(environment.get_moles(id))
-			t+=SPAN_NOTICE("[GLOB.gas_data.names[id]]: [environment.get_moles(id)] \n")
+			t+="<span class='notice'>[GLOB.gas_data.names[id]]: [environment.get_moles(id)] \n</span>"
 
 	to_chat(usr, t)
 
@@ -232,7 +232,7 @@
 		var/obj/item/I = get_item_by_slot(slot)
 		if(istype(I))
 			if(slot in check_obscured_slots())
-				to_chat(src, SPAN_WARNING("You are unable to unequip that while wearing other garments over it!"))
+				to_chat(src, "<span class='warning'>You are unable to unequip that while wearing other garments over it!</span>")
 				return FALSE
 			I.attack_hand(src)
 
@@ -301,7 +301,7 @@
 		return
 
 	if(is_blind())
-		to_chat(src, SPAN_WARNING("Something is there but you can't see it!"))
+		to_chat(src, "<span class='warning'>Something is there but you can't see it!</span>")
 		return
 
 	face_atom(A)
@@ -722,7 +722,7 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
 /mob/proc/swap_hand()
 	var/obj/item/held_item = get_active_held_item()
 	if(SEND_SIGNAL(src, COMSIG_MOB_SWAP_HANDS, held_item) & COMPONENT_BLOCK_SWAP)
-		to_chat(src, SPAN_WARNING("Your other hand is too busy holding [held_item]."))
+		to_chat(src, "<span class='warning'>Your other hand is too busy holding [held_item].</span>")
 		return FALSE
 	return TRUE
 

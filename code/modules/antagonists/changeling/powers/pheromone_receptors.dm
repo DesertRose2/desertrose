@@ -17,11 +17,11 @@
 /obj/effect/proc_holder/changeling/pheromone_receptors/sting_action(mob/living/carbon/user)
 	var/datum/antagonist/changeling/changeling = user.mind.has_antag_datum(/datum/antagonist/changeling)
 	if(!receptors_active)
-		to_chat(user, SPAN_WARNING("We search for the scent of any nearby changelings."))
+		to_chat(user, "<span class='warning'>We search for the scent of any nearby changelings.</span>")
 		changeling.chem_recharge_slowdown += 0.5
 		user.apply_status_effect(/datum/status_effect/agent_pinpointer/changeling)
 	else
-		to_chat(user, SPAN_NOTICE("We stop searching for now."))
+		to_chat(user, "<span class='notice'>We stop searching for now.</span>")
 		changeling.chem_recharge_slowdown -= 0.5
 		user.remove_status_effect(/datum/status_effect/agent_pinpointer/changeling)
 

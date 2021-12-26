@@ -21,7 +21,7 @@
 				return TRUE
 			else
 				blocked = 100
-				target.visible_message(SPAN_DANGER("\The [src] was deflected!"), \
+				target.visible_message("<span class='danger'>\The [src] was deflected!</span>", \
 									   "<span class='userdanger'>You were protected against \the [src]!</span>")
 
 	..(target, blocked)
@@ -71,13 +71,13 @@
 
 
 
-				target.visible_message(SPAN_NOTICE("\The [src] beeps!"))
-				to_chat(SPAN_NOTICE("<i>You feel a tiny prick as a smartdart embeds itself in you with a beep.</i>"))
+				target.visible_message("<span class='notice'>\The [src] beeps!</span>")
+				to_chat("<span class='notice'><i>You feel a tiny prick as a smartdart embeds itself in you with a beep.</i></span>")
 				return BULLET_ACT_HIT
 			else
 				blocked = 100
-				target.visible_message(SPAN_DANGER("\The [src] was deflected!"), \
+				target.visible_message("<span class='danger'>\The [src] was deflected!</span>", \
 									   "<span class='userdanger'>You see a [src] bounce off you, booping sadly!</span>")
 
-	target.visible_message(SPAN_DANGER("\The [src] fails to land on target!"))
+	target.visible_message("<span class='danger'>\The [src] fails to land on target!</span>")
 	return BULLET_ACT_BLOCK

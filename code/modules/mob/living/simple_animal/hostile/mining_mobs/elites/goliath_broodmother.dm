@@ -115,7 +115,7 @@
 	var/tturf = get_turf(target)
 	if(!isturf(tturf))
 		return
-	visible_message(SPAN_WARNING("[src] digs its tentacles under [target]!"))
+	visible_message("<span class='warning'>[src] digs its tentacles under [target]!</span>")
 	new /obj/effect/temp_visual/goliath_tentacle/broodmother/patch(tturf, src)
 
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother/proc/spawn_children(target)
@@ -134,7 +134,7 @@
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother/proc/rage()
 	ranged_cooldown = world.time + 70
 	playsound(src,'sound/spookoween/insane_low_laugh.ogg', 200, 1)
-	visible_message(SPAN_WARNING("[src] starts picking up speed!"))
+	visible_message("<span class='warning'>[src] starts picking up speed!</span>")
 	color = "#FF0000"
 	set_varspeed(0)
 	move_to_delay = 3
@@ -147,7 +147,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother/proc/call_children()
 	ranged_cooldown = world.time + 60
-	visible_message(SPAN_WARNING("The ground shakes near [src]!"))
+	visible_message("<span class='warning'>The ground shakes near [src]!</span>")
 	var/list/directions = GLOB.cardinals.Copy() + GLOB.diagonals.Copy()
 	for(var/mob/child in children_list)
 		var/spawndir = pick_n_take(directions)
@@ -190,14 +190,14 @@
 	if(!isturf(tturf))
 		return
 	if(get_dist(src, target) <= 7)//Screen range check, so it can't attack people off-screen
-		visible_message(SPAN_WARNING("[src] digs one of its tentacles under [target]!"))
+		visible_message("<span class='warning'>[src] digs one of its tentacles under [target]!</span>")
 		new /obj/effect/temp_visual/goliath_tentacle/broodmother(tturf, src)
 
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/death()
 	. = ..()
 	if(mother != null)
 		mother.children_list -= src
-	visible_message(SPAN_WARNING("[src] explodes!"))
+	visible_message("<span class='warning'>[src] explodes!</span>")
 	explosion(get_turf(loc),0,0,0,flame_range = 3, adminlog = FALSE)
 	qdel()
 
@@ -207,7 +207,7 @@
 	for(var/mob/living/L in loc)
 		if((!QDELETED(spawner) && spawner.faction_check_mob(L)) || L.stat == DEAD)
 			continue
-		visible_message(SPAN_DANGER("[src] grabs hold of [L]!"))
+		visible_message("<span class='danger'>[src] grabs hold of [L]!</span>")
 		L.Stun(10)
 		L.adjustBruteLoss(rand(30,35))
 		latched = TRUE

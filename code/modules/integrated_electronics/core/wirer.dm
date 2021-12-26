@@ -20,28 +20,28 @@
 
 /obj/item/integrated_electronics/wirer/proc/wire(datum/integrated_io/io, mob/user)
 	if(!io.holder.assembly)
-		to_chat(user, SPAN_WARNING("\The [io.holder] needs to be secured inside an assembly first."))
+		to_chat(user, "<span class='warning'>\The [io.holder] needs to be secured inside an assembly first.</span>")
 		return
 	switch(mode)
 		if(WIRE)
 			selected_io = io
-			to_chat(user, SPAN_NOTICE("You attach a data wire to \the [selected_io.holder]'s [selected_io.name] data channel."))
+			to_chat(user, "<span class='notice'>You attach a data wire to \the [selected_io.holder]'s [selected_io.name] data channel.</span>")
 			mode = WIRING
 			update_icon()
 		if(WIRING)
 			if(io == selected_io)
-				to_chat(user, SPAN_WARNING("Wiring \the [selected_io.holder]'s [selected_io.name] into itself is rather pointless."))
+				to_chat(user, "<span class='warning'>Wiring \the [selected_io.holder]'s [selected_io.name] into itself is rather pointless.</span>")
 				return
 			if(io.io_type != selected_io.io_type)
 				to_chat(user, "<span class='warning'>Those two types of channels are incompatible.  The first is a [selected_io.io_type], \
 				while the second is a [io.io_type].</span>")
 				return
 			if(io.holder.assembly && io.holder.assembly != selected_io.holder.assembly)
-				to_chat(user, SPAN_WARNING("Both \the [io.holder] and \the [selected_io.holder] need to be inside the same assembly."))
+				to_chat(user, "<span class='warning'>Both \the [io.holder] and \the [selected_io.holder] need to be inside the same assembly.</span>")
 				return
 			selected_io.connect_pin(io)
 
-			to_chat(user, SPAN_NOTICE("You connect \the [selected_io.holder]'s [selected_io.name] to \the [io.holder]'s [io.name]."))
+			to_chat(user, "<span class='notice'>You connect \the [selected_io.holder]'s [selected_io.name] to \the [io.holder]'s [io.name].</span>")
 			mode = WIRE
 			update_icon()
 			selected_io.holder.interact(user) // This is to update the UI.
@@ -50,10 +50,10 @@
 		if(UNWIRE)
 			selected_io = io
 			if(!io.linked.len)
-				to_chat(user, SPAN_WARNING("There is nothing connected to \the [selected_io] data channel."))
+				to_chat(user, "<span class='warning'>There is nothing connected to \the [selected_io] data channel.</span>")
 				selected_io = null
 				return
-			to_chat(user, SPAN_NOTICE("You prepare to detach a data wire from \the [selected_io.holder]'s [selected_io.name] data channel."))
+			to_chat(user, "<span class='notice'>You prepare to detach a data wire from \the [selected_io.holder]'s [selected_io.name] data channel.</span>")
 			mode = UNWIRING
 			update_icon()
 			return
@@ -82,18 +82,18 @@
 			mode = UNWIRE
 		if(WIRING)
 			if(selected_io)
-				to_chat(user, SPAN_NOTICE("You decide not to wire the data channel."))
+				to_chat(user, "<span class='notice'>You decide not to wire the data channel.</span>")
 			selected_io = null
 			mode = WIRE
 		if(UNWIRE)
 			mode = WIRE
 		if(UNWIRING)
 			if(selected_io)
-				to_chat(user, SPAN_NOTICE("You decide not to disconnect the data channel."))
+				to_chat(user, "<span class='notice'>You decide not to disconnect the data channel.</span>")
 			selected_io = null
 			mode = UNWIRE
 	update_icon()
-	to_chat(user, SPAN_NOTICE("You set \the [src] to [mode]."))
+	to_chat(user, "<span class='notice'>You set \the [src] to [mode].</span>")
 
 #undef WIRE
 #undef WIRING

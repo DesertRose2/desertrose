@@ -21,7 +21,7 @@
 				return
 			target = value["value"]
 			if(!istype(target))
-				to_chat(usr, SPAN_DANGER("Invalid target."))
+				to_chat(usr, "<span class='danger'>Invalid target.</span>")
 				return
 		if("No")
 			target = null
@@ -41,12 +41,12 @@
 
 	if(targetselected)
 		if(!hascall(target, procname))
-			to_chat(usr, SPAN_WARNING("Error: callproc(): type [target.type] has no [proctype] named [procpath]."))
+			to_chat(usr, "<span class='warning'>Error: callproc(): type [target.type] has no [proctype] named [procpath].</span>")
 			return
 	else
 		procpath = "/[proctype]/[procname]"
 		if(!text2path(procpath))
-			to_chat(usr, SPAN_WARNING("Error: callproc(): [procpath] does not exist."))
+			to_chat(usr, "<span class='warning'>Error: callproc(): [procpath] does not exist.</span>")
 			return
 
 	var/list/lst = get_callproc_args()
@@ -89,7 +89,7 @@ GLOBAL_PROTECT(AdminProcCallSpamPrevention)
 
 /proc/WrapAdminProcCall(datum/target, procname, list/arguments)
 	if(target != GLOBAL_PROC && procname == "Del")
-		to_chat(usr, SPAN_WARNING("Calling Del() is not allowed"))
+		to_chat(usr, "<span class='warning'>Calling Del() is not allowed</span>")
 		return
 
 	if(target != GLOBAL_PROC && !target.CanProcCall(procname))
@@ -145,14 +145,14 @@ GLOBAL_PROTECT(AdminProcCallSpamPrevention)
 	if(!procname)
 		return
 	if(!hascall(A,procname))
-		to_chat(usr, SPAN_WARNING("Error: callproc_datum(): type [A.type] has no proc named [procname]."))
+		to_chat(usr, "<span class='warning'>Error: callproc_datum(): type [A.type] has no proc named [procname].</span>")
 		return
 	var/list/lst = get_callproc_args()
 	if(!lst)
 		return
 
 	if(!A || !IsValidSrc(A))
-		to_chat(usr, SPAN_WARNING("Error: callproc_datum(): owner of proc no longer exists."))
+		to_chat(usr, "<span class='warning'>Error: callproc_datum(): owner of proc no longer exists.</span>")
 		return
 	var/msg = "[key_name(src)] called [A]'s [procname]() with [lst.len ? "the arguments [list2params(lst)]":"no arguments"]."
 	log_admin(msg)
@@ -205,4 +205,4 @@ GLOBAL_PROTECT(AdminProcCallSpamPrevention)
 		. += "</span>"
 
 	else
-		. = SPAN_NOTICE("[procname] returned: [!isnull(returnval) ? returnval : "null"]")
+		. = "<span class='notice'>[procname] returned: [!isnull(returnval) ? returnval : "null"]</span>"

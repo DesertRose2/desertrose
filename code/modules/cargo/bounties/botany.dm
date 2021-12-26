@@ -95,7 +95,7 @@
 	multiplier = 2
 
 /datum/bounty/item/botany/banana_bluespace
-	name = "Quantum Bananas"
+	name = "Bluespace Bananas"
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/banana/bluespace)
 	multiplier = 2
 	foodtype = "banana split"
@@ -196,7 +196,7 @@
 	foodtype = "dessert"
 
 /datum/bounty/item/botany/tomato_bluespace
-	name = "Quantum Tomatoes"
+	name = "Bluespace Tomatoes"
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato/blue/bluespace)
 	multiplier = 4
 

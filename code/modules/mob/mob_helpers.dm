@@ -389,10 +389,10 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 			if(affecting.heal_damage(brute_heal, burn_heal, 0, TRUE, FALSE))
 				H.update_damage_overlays()
 			user.visible_message("[user] has fixed some of the [dam ? "dents on" : "burnt wires in"] [H]'s [affecting.name].", \
-			SPAN_NOTICE("You fix some of the [dam ? "dents on" : "burnt wires in"] [H]'s [affecting.name]."))
+			"<span class='notice'>You fix some of the [dam ? "dents on" : "burnt wires in"] [H]'s [affecting.name].</span>")
 			return 1 //successful heal
 		else
-			to_chat(user, SPAN_WARNING("[affecting] is already in good condition!"))
+			to_chat(user, "<span class='warning'>[affecting] is already in good condition!</span>")
 
 
 /proc/IsAdminGhost(mob/user)
@@ -414,14 +414,14 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 /mob/proc/toggleSiliconAccessArea(area/area)
 	if (area in siliconaccessareas)
 		siliconaccessareas -= area
-		to_chat(src,SPAN_WARNING("You lost control of [area]!"))
+		to_chat(src,"<span class='warning'>You lost control of [area]!</span>")
 		return FALSE
 	else
 		if (LAZYLEN(siliconaccessareas) < HIJACK_APC_MAX_AMOUNT)
 			siliconaccessareas += area
-			to_chat(src,SPAN_NOTICE("You successfully took control of [area]."))
+			to_chat(src,"<span class='notice'>You successfully took control of [area].</span>")
 		else
-			to_chat(src,SPAN_WARNING("You are connected to too many APCs! Too many more will fry your brain."))
+			to_chat(src,"<span class='warning'>You are connected to too many APCs! Too many more will fry your brain.</span>")
 			return FALSE
 		return TRUE
 
@@ -565,10 +565,10 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 
 /mob/proc/can_read(obj/O)
 	if(is_blind())
-		to_chat(src, SPAN_WARNING("As you are trying to read [O], you suddenly feel very stupid!"))
+		to_chat(src, "<span class='warning'>As you are trying to read [O], you suddenly feel very stupid!</span>")
 		return
 	if(!is_literate())
-		to_chat(src, SPAN_NOTICE("You try to read [O], but can't comprehend any of it."))
+		to_chat(src, "<span class='notice'>You try to read [O], but can't comprehend any of it.</span>")
 		return
 	return TRUE
 

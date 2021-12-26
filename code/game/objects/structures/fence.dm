@@ -91,31 +91,31 @@
 /obj/structure/fence/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/wirecutters))
 		if(!cuttable)
-			to_chat(user, SPAN_NOTICE("This section of the fence can't be cut."))
+			to_chat(user, "<span class='notice'>This section of the fence can't be cut.</span>")
 			return
 		if(invulnerable)
-			to_chat(user, SPAN_NOTICE("This fence is too strong to cut through."))
+			to_chat(user, "<span class='notice'>This fence is too strong to cut through.</span>")
 			return
 		var/current_stage = hole_size
 
-		user.visible_message(SPAN_DANGER("\The [user] starts cutting through \the [src] with \the [W]."),\
-		SPAN_DANGER("You start cutting through \the [src] with \the [W]."))
+		user.visible_message("<span class='danger'>\The [user] starts cutting through \the [src] with \the [W].</span>",\
+		"<span class='danger'>You start cutting through \the [src] with \the [W].</span>")
 
 		if(do_after(user, CUT_TIME*W.toolspeed, target = src))
 			if(current_stage == hole_size)
 				switch(++hole_size)
 					if(MEDIUM_HOLE)
-						visible_message(SPAN_NOTICE("\The [user] cuts into \the [src] some more."))
+						visible_message("<span class='notice'>\The [user] cuts into \the [src] some more.</span>")
 						to_chat(user, "<span class='info'>You could probably fit yourself through that hole now. Although climbing through would be much faster if you made it even bigger.</span>")
 						climbable = TRUE
 						W.play_tool_sound(user, 20)
 					if(LARGE_HOLE)
-						visible_message(SPAN_NOTICE("\The [user] completely cuts through \the [src]."))
+						visible_message("<span class='notice'>\The [user] completely cuts through \the [src].</span>")
 						to_chat(user, "<span class='info'>The hole in \the [src] is now big enough to walk through.</span>")
 						climbable = FALSE
 						W.play_tool_sound(user, 20)
 					if(DESTROY_HOLE)
-						visible_message(SPAN_NOTICE("\The [user] removes \the [src]."))
+						visible_message("<span class='notice'>\The [user] removes \the [src].</span>")
 						to_chat(user, "<span class='info'>\The [src] is removed.</span>")
 						deconstruct(TRUE)
 						W.play_tool_sound(user, 20)
@@ -126,29 +126,29 @@
 		var/obj/item/stack/rods/rods = W
 		switch(hole_size)
 			if(NO_HOLE)
-				to_chat(user, SPAN_WARNING("You cannot repair \the [src] any further!"))
+				to_chat(user, "<span class='warning'>You cannot repair \the [src] any further!</span>")
 				return
 			if(MEDIUM_HOLE)
 				if(rods.get_amount() < 2)
-					to_chat(user, SPAN_WARNING("You need at least two rods to repair \the [src]!"))
+					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
 					return
-				to_chat(user, SPAN_NOTICE("You start repairing \the [src]..."))
+				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
 				if(do_after(user, 20, target = src))
 					if(rods.get_amount() < 2)
 						return
 					rods.use(2)
-					to_chat(user, SPAN_NOTICE("You completely repair the hole in \the [src]."))
+					to_chat(user, "<span class='notice'>You completely repair the hole in \the [src].</span>")
 					hole_size = NO_HOLE
 			if(LARGE_HOLE)
 				if(rods.get_amount() < 2)
-					to_chat(user, SPAN_WARNING("You need at least two rods to repair \the [src]!"))
+					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
 					return
-				to_chat(user, SPAN_NOTICE("You start repairing \the [src]..."))
+				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
 				if(do_after(user, 20, target = src))
 					if(rods.get_amount() < 2)
 						return
 					rods.use(2)
-					to_chat(user, SPAN_NOTICE("You repair a bit of the hole in \the [src]."))
+					to_chat(user, "<span class='notice'>You repair a bit of the hole in \the [src].</span>")
 					hole_size = MEDIUM_HOLE
 
 		update_cut_status()
@@ -208,10 +208,10 @@
 /obj/structure/fence/door/proc/toggle(mob/user)
 	switch(open)
 		if(FALSE)
-			visible_message(SPAN_NOTICE("\The [user] opens \the [src]."))
+			visible_message("<span class='notice'>\The [user] opens \the [src].</span>")
 			open = TRUE
 		if(TRUE)
-			visible_message(SPAN_NOTICE("\The [user] closes \the [src]."))
+			visible_message("<span class='notice'>\The [user] closes \the [src].</span>")
 			open = FALSE
 
 	update_door_status()
@@ -236,7 +236,7 @@
 	door_type = "fence"
 	open_sound = "sound/f13machines/doorchainlink_open.ogg"
 	close_sound = "sound/f13machines/doorchainlink_close.ogg"
-	var/opaque = 0
+	opaque = 0
 	can_hold_padlock = TRUE
 	icon = 'icons/obj/fence.dmi'
 
@@ -250,7 +250,7 @@
 
 /obj/structure/fence/wooden
 	name = "wooden fence"
-	desc = "A fence fashioned out of wood planks. Designed to keep animals in and vagrants out."
+	desc = "A fence fashioned out of wood planks. Designed to keep animals in and vagrants out"
 	icon = 'icons/obj/fence.dmi'
 	icon_state = "straight_wood"
 	cuttable = FALSE

@@ -2,7 +2,7 @@
 	name = "abductee mindsnapped"
 	desc = "The patient's brain has been scrambled by experimental procedures."
 	scan_desc = "brain scrambling"
-	gain_text = SPAN_DANGER("Your mind snaps.. you feel fragmented.")
+	gain_text = "<span class='danger'>Your mind snaps.. you feel fragmented.</span>"
 	lose_text = "<span class='boldnotice'>Your mind heals itself and you feel whole again.</span>"
 	random_gain = FALSE
 	clonable = TRUE

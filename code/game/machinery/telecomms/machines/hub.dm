@@ -42,7 +42,7 @@
 /obj/machinery/telecomms/hub/preset
 	id = "Hub"
 	network = "tcommsat"
-	autolinkers = list("hub", "relay", "s_relay", "m_relay", "r_relay", "h_relay", "science", "medical",
-	"supply", "service", "common", "command", "engineering", "security",
-	"receiverA", "receiverB", "broadcasterA", "broadcasterB", "autorelay")
+	autolinkers = list("hub", "relay", "s_relay", "m_relay", "r_relay", "h_relay", "science", "medical", 
+	"supply", "service", "vault", "ncr", "bos", "enclave", "town", "legion", "common", "command", "engineering", "security", "ranger", "khans",
+	"receiverA", "receiverB", "broadcasterA", "broadcasterB")
 

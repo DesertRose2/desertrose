@@ -132,7 +132,7 @@
 
 /obj/item/clothing/under/rank/medical/doctor/util
 	name = "Medical Utility Uniform"
-	desc = "A utility jumpsuit for medical personnel."
+	desc = "Utility jumpsuit for medical personnel"
 	icon_state = "utilmed"
 	item_state = "utilmed"
 	can_adjust = FALSE

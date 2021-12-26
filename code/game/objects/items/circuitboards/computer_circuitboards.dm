@@ -68,7 +68,7 @@
 /obj/item/circuitboard/computer/card/minor/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		target_dept = (target_dept == dept_list.len) ? 1 : (target_dept + 1)
-		to_chat(user, SPAN_NOTICE("You set the board to \"[dept_list[target_dept]]\"."))
+		to_chat(user, "<span class='notice'>You set the board to \"[dept_list[target_dept]]\".</span>")
 	else
 		return ..()
 
@@ -180,20 +180,28 @@
 	name = "R&D Console (Computer Board)"
 	build_path = /obj/machinery/computer/rdconsole/core
 
+/obj/item/circuitboard/computer/rdconsole/bos
+	name = "R&D Console (Computer Board)"
+	build_path = /obj/machinery/computer/rdconsole/core/bos
+
 /obj/item/circuitboard/computer/rdconsole/vault
 	name = "R&D Console (Computer Board)"
 	build_path = /obj/machinery/computer/rdconsole/core/vault
+
+/obj/item/circuitboard/computer/rdconsole/followers
+	name = "R&D Console (Computer Board)"
+	build_path = /obj/machinery/computer/rdconsole/core/followers
 
 /obj/item/circuitboard/computer/rdconsole/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(build_path == /obj/machinery/computer/rdconsole/core)
 			name = "R&D Console - Robotics (Computer Board)"
 			build_path = /obj/machinery/computer/rdconsole/robotics
-			to_chat(user, SPAN_NOTICE("Access protocols successfully updated."))
+			to_chat(user, "<span class='notice'>Access protocols successfully updated.</span>")
 		else
 			name = "R&D Console (Computer Board)"
 			build_path = /obj/machinery/computer/rdconsole/core
-			to_chat(user, SPAN_NOTICE("Defaulting access protocols."))
+			to_chat(user, "<span class='notice'>Defaulting access protocols.</span>")
 	else
 		return ..()
 
@@ -221,9 +229,9 @@
 /obj/item/circuitboard/computer/cargo/multitool_act(mob/living/user)
 	if(!(obj_flags & EMAGGED))
 		contraband = !contraband
-		to_chat(user, SPAN_NOTICE("Receiver spectrum set to [contraband ? "Broad" : "Standard"]."))
+		to_chat(user, "<span class='notice'>Receiver spectrum set to [contraband ? "Broad" : "Standard"].</span>")
 	else
-		to_chat(user, SPAN_NOTICE("The spectrum chip is unresponsive."))
+		to_chat(user, "<span class='notice'>The spectrum chip is unresponsive.</span>")
 
 /obj/item/circuitboard/computer/cargo/emag_act(mob/living/user)
 	. = ..()
@@ -231,7 +239,7 @@
 		return
 	contraband = TRUE
 	obj_flags |= EMAGGED
-	to_chat(user, SPAN_NOTICE("You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband."))
+	to_chat(user, "<span class='notice'>You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband.</span>")
 	return TRUE
 
 /obj/item/circuitboard/computer/cargo/express
@@ -240,16 +248,16 @@
 
 /obj/item/circuitboard/computer/cargo/express/multitool_act(mob/living/user)
 	if (!(obj_flags & EMAGGED))
-		to_chat(user, SPAN_NOTICE("Routing protocols are already set to: \"factory defaults\"."))
+		to_chat(user, "<span class='notice'>Routing protocols are already set to: \"factory defaults\".</span>")
 	else
-		to_chat(user, SPAN_NOTICE("You reset the routing protocols to: \"factory defaults\"."))
+		to_chat(user, "<span class='notice'>You reset the routing protocols to: \"factory defaults\".</span>")
 		obj_flags &= ~EMAGGED
 
 /obj/item/circuitboard/computer/cargo/express/emag_act(mob/living/user)
 	. = SEND_SIGNAL(src, COMSIG_ATOM_EMAG_ACT)
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, SPAN_NOTICE("You change the routing protocols, allowing the Drop Pod to land anywhere on the station."))
+	to_chat(user, "<span class='notice'>You change the routing protocols, allowing the Drop Pod to land anywhere on the station.</span>")
 	obj_flags |= EMAGGED
 	return TRUE
 
@@ -325,16 +333,21 @@
 	name = "Library Visitor Console (Computer Board)"
 	build_path = /obj/machinery/computer/libraryconsole
 
+/obj/item/circuitboard/computer/robco_terminal
+	name = "RobCo Terminal Mainboard (Computer board)"
+	build_path = /obj/machinery/computer/terminal
+
+
 /obj/item/circuitboard/computer/libraryconsole/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(build_path == /obj/machinery/computer/libraryconsole/bookmanagement)
 			name = "Library Visitor Console (Computer Board)"
 			build_path = /obj/machinery/computer/libraryconsole
-			to_chat(user, SPAN_NOTICE("Defaulting access protocols."))
+			to_chat(user, "<span class='notice'>Defaulting access protocols.</span>")
 		else
 			name = "Book Inventory Management Console (Computer Board)"
 			build_path = /obj/machinery/computer/libraryconsole/bookmanagement
-			to_chat(user, SPAN_NOTICE("Access protocols successfully updated."))
+			to_chat(user, "<span class='notice'>Access protocols successfully updated.</span>")
 	else
 		return ..()
 
@@ -360,6 +373,10 @@
 	GLOB.syndicate_shuttle_boards -= src
 	return ..()
 
+/obj/item/circuitboard/computer/bsa_control
+	name = "Bluespace Artillery Controls (Computer Board)"
+	build_path = /obj/machinery/computer/bsa_control
+
 /obj/item/circuitboard/computer/sat_control
 	name = "Satellite Network Control (Computer Board)"
 	build_path = /obj/machinery/computer/sat_control
@@ -379,3 +396,39 @@
 /obj/item/circuitboard/computer/shuttle/docker
 	name = "Shuttle Navigation Computer (Computer Board)"
 	build_path = /obj/machinery/computer/camera_advanced/shuttle_docker/custom
+
+/obj/item/circuitboard/computer/enclave_control
+	name = "Enclave Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/enclavefortelevator
+
+/obj/item/circuitboard/computer/bos_control
+	name = "BoS Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/boselevator
+
+/obj/item/circuitboard/computer/bos_entry_control
+	name = "BoS Entry Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/bosentryelevator
+
+/obj/item/circuitboard/computer/vault_control
+	name = "Vault Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/vaultelevator
+
+/obj/item/circuitboard/computer/bunker_control
+	name = "Bunker Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/bunkerelevator
+
+/obj/item/circuitboard/computer/northbunker_control
+	name = "North Bunker Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/northbunkerelevator
+
+/obj/item/circuitboard/computer/mining_control
+	name = "Mining Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/miningelevator
+
+/obj/item/circuitboard/computer/vault113_control
+	name = "Vault 113 Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/vault113elevator
+
+/obj/item/circuitboard/computer/bos
+	name = "Brotherhood Monitor (Computer Board)"
+	build_path = /obj/machinery/computer/security/bos

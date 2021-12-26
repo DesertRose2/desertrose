@@ -74,7 +74,7 @@
 		walk(src, 0) //stops walking
 		if(decompose)
 			if(prob(0.2)) // 0.2% chance every cycle to decompose
-				visible_message(SPAN_NOTICE("\The dead body of the [src] decomposes!"))
+				visible_message("<span class='notice'>\The dead body of the [src] decomposes!</span>")
 				gib(FALSE, FALSE, FALSE, TRUE)
 		return
 
@@ -406,7 +406,7 @@
 /mob/living/simple_animal/hostile/proc/OpenFire(atom/A)
 	if(CheckFriendlyFire(A))
 		return
-	visible_message(SPAN_DANGER("<b>[src]</b> [ranged_message] at [A]!"))
+	visible_message("<span class='danger'><b>[src]</b> [ranged_message] at [A]!</span>")
 
 
 	if(rapid > 1)

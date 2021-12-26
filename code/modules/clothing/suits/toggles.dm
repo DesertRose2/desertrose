@@ -62,10 +62,10 @@
 		if(ishuman(src.loc))
 			var/mob/living/carbon/human/H = src.loc
 			if(H.wear_suit != src)
-				to_chat(H, SPAN_WARNING("You must be wearing [src] to put up the hood!"))
+				to_chat(H, "<span class='warning'>You must be wearing [src] to put up the hood!</span>")
 				return
 			if(H.head)
-				to_chat(H, SPAN_WARNING("You're already wearing something on your head!"))
+				to_chat(H, "<span class='warning'>You're already wearing something on your head!</span>")
 				return
 			else if(H.equip_to_slot_if_possible(hood,SLOT_HEAD,0,0,1))
 				suittoggled = TRUE
@@ -113,7 +113,7 @@
 	if(!can_use(usr))
 		return 0
 
-	to_chat(usr, SPAN_NOTICE("You toggle [src]'s [togglename]."))
+	to_chat(usr, "<span class='notice'>You toggle [src]'s [togglename].</span>")
 	if(src.suittoggled)
 		src.icon_state = "[initial(icon_state)]"
 		src.suittoggled = FALSE
@@ -176,7 +176,7 @@
 		H.transferItemToLoc(helmet, src, TRUE)
 		H.update_inv_wear_suit()
 		if(message)
-			to_chat(H, SPAN_NOTICE("The helmet on the hardsuit disengages."))
+			to_chat(H, "<span class='notice'>The helmet on the hardsuit disengages.</span>")
 		playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
 	else
 		helmet.forceMove(src)
@@ -196,15 +196,15 @@
 		if(ishuman(src.loc))
 			if(H.wear_suit != src)
 				if(message)
-					to_chat(H, SPAN_WARNING("You must be wearing [src] to engage the helmet!"))
+					to_chat(H, "<span class='warning'>You must be wearing [src] to engage the helmet!</span>")
 				return
 			if(H.head)
 				if(message)
-					to_chat(H, SPAN_WARNING("You're already wearing something on your head!"))
+					to_chat(H, "<span class='warning'>You're already wearing something on your head!</span>")
 				return
 			else if(H.equip_to_slot_if_possible(helmet,SLOT_HEAD,0,0,1))
 				if(message)
-					to_chat(H, SPAN_NOTICE("You engage the helmet on the hardsuit."))
+					to_chat(H, "<span class='notice'>You engage the helmet on the hardsuit.</span>")
 				suittoggled = TRUE
 				H.update_inv_wear_suit()
 				playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)

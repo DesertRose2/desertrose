@@ -22,7 +22,7 @@
 /obj/item/clothing/glasses/examine(mob/user)
 	. = ..()
 	if(glass_colour_type && ishuman(user))
-		. += SPAN_NOTICE("Alt-click to toggle its colors.")
+		. += "<span class='notice'>Alt-click to toggle its colors.</span>"
 
 /obj/item/clothing/glasses/visor_toggling()
 	..()
@@ -45,7 +45,7 @@
 	var/mob/living/carbon/human/H = loc
 	var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
 	if((!HAS_TRAIT(H, TRAIT_BLIND) || !eyes) && H.glasses == src)
-		to_chat(H, SPAN_DANGER("[src] overloads and blinds you!"))
+		to_chat(H, "<span class='danger'>[src] overloads and blinds you!</span>")
 		H.flash_act(visual = 1)
 		H.blind_eyes(3)
 		H.blur_eyes(5)
@@ -309,18 +309,18 @@
 	if (installed && !installed.crit_fail)
 		installed.attack_self(user)
 	else
-		to_chat(user, SPAN_DANGER("Install a new flash in [src]!"))
+		to_chat(user, "<span class = 'danger'>Install a new flash in [src]!</span>")
 
 /obj/item/clothing/glasses/sunglasses/stunglasses/attackby(obj/item/W,mob/user)
 	if (istype(W,/obj/item/screwdriver))
 		if (installed)
 			installed.forceMove(get_turf(src))
-			to_chat(user, SPAN_NOTICE("You remove [installed] from [src]."))
+			to_chat(user, "<span class = 'notice'>You remove [installed] from [src].</span>")
 			installed = null
 	if (istype(W,/obj/item/assembly/flash))
 		if (!installed)
 			W.forceMove(src)
-			to_chat(user, SPAN_NOTICE("You install [W] into [src]."))
+			to_chat(user, "<span class = 'notice'>You install [W] into [src].</span>")
 			installed = W
 	. = ..()
 
@@ -500,7 +500,7 @@
 				var/mob/living/carbon/C = user
 				C.update_inv_wear_mask()
 		else
-			to_chat(user, SPAN_NOTICE("The eye winks at you and vanishes into the abyss, you feel really unlucky."))
+			to_chat(user, "<span class='notice'>The eye winks at you and vanishes into the abyss, you feel really unlucky.</span>")
 		qdel(src)
 	..()
 

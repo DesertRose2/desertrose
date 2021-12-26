@@ -100,7 +100,7 @@
 /obj/machinery/pool/controller/emag_act(mob/user)
 	. = ..()
 	if(!(obj_flags & EMAGGED)) //If it is not already emagged, emag it.
-		to_chat(user, SPAN_WARNING("You disable the [src]'s safety features."))
+		to_chat(user, "<span class='warning'>You disable the [src]'s safety features.</span>")
 		do_sparks(5, TRUE, src)
 		obj_flags |= EMAGGED
 		temperature_unlocked = TRUE
@@ -108,7 +108,7 @@
 		log_game("[key_name(user)] emagged [src]")
 		message_admins("[key_name_admin(user)] emagged [src]")
 	else
-		to_chat(user, SPAN_WARNING("The interface on [src] is already too damaged to short it again."))
+		to_chat(user, "<span class='warning'>The interface on [src] is already too damaged to short it again.</span>")
 		return
 
 /obj/machinery/pool/controller/AltClick(mob/living/user)
@@ -148,7 +148,7 @@
 				reagents.clear_reagents()
 				// This also reacts them. No nitroglycerin deathpools, sorry gamers :(
 				W.reagents.trans_to(reagents, max_beaker_transfer)
-				user.visible_message(SPAN_NOTICE("[src] makes a slurping noise."), "<span class='notice'>All of the contents of [W] are quickly suctioned out by the machine!</span")
+				user.visible_message("<span class='notice'>[src] makes a slurping noise.</span>", "<span class='notice'>All of the contents of [W] are quickly suctioned out by the machine!</span")
 				updateUsrDialog()
 				var/list/reagent_names = list()
 				var/list/rejected = list()
@@ -165,10 +165,10 @@
 					message_admins(msg)
 				if(length(rejected))
 					rejected = english_list(rejected)
-					to_chat(user, SPAN_WARNING("[src] rejects the following chemicals as they do not have at least [min_reagent_amount] units of volume: [rejected]"))
+					to_chat(user, "<span class='warning'>[src] rejects the following chemicals as they do not have at least [min_reagent_amount] units of volume: [rejected]</span>")
 				update_color()
 		else
-			to_chat(user, SPAN_NOTICE("[src] beeps unpleasantly as it rejects the beaker. Why are you trying to feed it an empty beaker?"))
+			to_chat(user, "<span class='notice'>[src] beeps unpleasantly as it rejects the beaker. Why are you trying to feed it an empty beaker?</span>")
 			return
 	else if(panel_open && is_wire_tool(W))
 		wires.interact(user)
@@ -254,7 +254,7 @@
 				else
 					drownee.adjustOxyLoss(4)
 					if(prob(35))
-						to_chat(drownee, SPAN_DANGER("You're drowning!"))
+						to_chat(drownee, "<span class='danger'>You're drowning!</span>")
 
 /obj/machinery/pool/controller/proc/set_bloody(state)
 	if(bloody == state)
@@ -318,7 +318,7 @@
 		return
 	if(href_list["IncreaseTemp"])
 		if(CanUpTemp(usr))
-			visible_message(SPAN_WARNING("[usr] presses a button on [src]."))
+			visible_message("<span class='warning'>[usr] presses a button on [src].</span>")
 			temperature++
 			update_temp()
 			var/msg = "POOL: [key_name(usr)] increased [src]'s pool temperature at [COORD(src)] to [temperature]"
@@ -327,7 +327,7 @@
 			interact_delay = world.time + 15
 	if(href_list["DecreaseTemp"])
 		if(CanDownTemp(usr))
-			visible_message(SPAN_WARNING("[usr] presses a button on [src]."))
+			visible_message("<span class='warning'>[usr] presses a button on [src].</span>")
 			temperature--
 			update_temp()
 			var/msg = "POOL: [key_name(usr)] decreased [src]'s pool temperature at [COORD(src)] to [temperature]"
@@ -339,7 +339,7 @@
 			var/msg = "POOL: [key_name(usr)] activated [src]'s pool drain in [linked_drain.filling? "FILLING" : "DRAINING"] mode at [COORD(src)]"
 			log_game(msg)
 			message_admins(msg)
-			visible_message(SPAN_WARNING("[usr] presses a button on [src]."))
+			visible_message("<span class='warning'>[usr] presses a button on [src].</span>")
 			mist_off()
 			interact_delay = world.time + 60
 			linked_drain.active = TRUE
@@ -361,7 +361,7 @@
 		if(POOL_COOL)
 			return "<span class='boldnotice'>Cool</span>"
 		if(POOL_NORMAL)
-			return SPAN_NOTICE("Normal")
+			return "<span class='notice'>Normal</span>"
 		if(POOL_WARM)
 			return "<span class='boldnotice'>Warm</span>"
 		if(POOL_SCALDING)

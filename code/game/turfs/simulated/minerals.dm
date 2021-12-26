@@ -50,7 +50,7 @@
 /turf/closed/mineral/attackby(obj/item/pickaxe/I, mob/user, params)
 	var/stored_dir = user.dir
 	if (!user.IsAdvancedToolUser())
-		to_chat(usr, SPAN_WARNING("You don't have the dexterity to do this!"))
+		to_chat(usr, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return
 
 	if(I.tool_behaviour == TOOL_MINING)
@@ -61,7 +61,7 @@
 		if(last_act + (40 * I.toolspeed) > world.time)//prevents message spam
 			return
 		last_act = world.time
-		to_chat(user, SPAN_NOTICE("You start picking..."))
+		to_chat(user, "<span class='notice'>You start picking...</span>")
 
 		if(I.use_tool(src, user, 40, volume=50))
 			var/range = I.digrange //Store the current digrange so people don't cheese digspeed swapping for faster mining
@@ -72,7 +72,7 @@
 						if(get_dir(user,M)&stored_dir)
 							M.gets_drilled(user)
 							dug_tiles += M
-				to_chat(user, SPAN_NOTICE("You finish cutting into the rock."))
+				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
 				if(!(src in dug_tiles))
 					gets_drilled(user)
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
@@ -98,10 +98,10 @@
 	..()
 
 /turf/closed/mineral/attack_alien(mob/living/carbon/alien/M)
-	to_chat(M, SPAN_NOTICE("You start digging into the rock..."))
+	to_chat(M, "<span class='notice'>You start digging into the rock...</span>")
 	playsound(src, 'sound/effects/break_stone.ogg', 50, 1)
 	if(do_after(M, 40, target = src))
-		to_chat(M, SPAN_NOTICE("You tunnel into the rock."))
+		to_chat(M, "<span class='notice'>You tunnel into the rock.</span>")
 		gets_drilled(M)
 
 /turf/closed/mineral/Bumped(atom/movable/AM)
@@ -758,7 +758,7 @@
 
 /turf/closed/mineral/gibtonite/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/mining_scanner) || istype(I, /obj/item/t_scanner/adv_mining_scanner) && stage == 1)
-		user.visible_message(SPAN_NOTICE("[user] holds [I] to [src]..."), SPAN_NOTICE("You use [I] to locate where to cut off the chain reaction and attempt to stop it..."))
+		user.visible_message("<span class='notice'>[user] holds [I] to [src]...</span>", "<span class='notice'>You use [I] to locate where to cut off the chain reaction and attempt to stop it...</span>")
 		defuse()
 	..()
 
@@ -769,7 +769,7 @@
 		name = "gibtonite deposit"
 		desc = "An active gibtonite reserve. Run!"
 		stage = GIBTONITE_ACTIVE
-		visible_message(SPAN_DANGER("There was gibtonite inside! It's going to explode!"))
+		visible_message("<span class='danger'>There was gibtonite inside! It's going to explode!</span>")
 		var/turf/bombturf = get_turf(src)
 
 		var/notify_admins = 0
@@ -808,7 +808,7 @@
 		stage = GIBTONITE_STABLE
 		if(det_time < 0)
 			det_time = 0
-		visible_message(SPAN_NOTICE("The chain reaction was stopped! The gibtonite had [det_time] reactions left till the explosion!"))
+		visible_message("<span class='notice'>The chain reaction was stopped! The gibtonite had [det_time] reactions left till the explosion!</span>")
 
 /turf/closed/mineral/gibtonite/gets_drilled(mob/user, triggered_by_explosion = 0)
 	if(stage == GIBTONITE_UNSTRUCK && mineralAmt >= 1) //Gibtonite deposit is activated
@@ -866,7 +866,7 @@
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 */
 /turf/closed/mineral/strong
-	name = "very strong rock"
+	name = "Very strong rock"
 	desc = "Seems to be stronger than the other rocks in the area. Only a master of mining techniques could destroy this."
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
@@ -878,13 +878,13 @@
 /*
 /turf/closed/mineral/strong/attackby(obj/item/I, mob/user, params)
 	if(!ishuman(user))
-		to_chat(usr, SPAN_WARNING("Only a more advanced species could break a rock such as this one!"))
+		to_chat(usr, "<span class='warning'>Only a more advanced species could break a rock such as this one!</span>")
 		return FALSE
 	var/mob/living/carbon/human/H = user
 	if(H.mind.get_skill_level(/datum/skill/mining) >= SKILL_LEVEL_MASTER)
 		. = ..()
 	else
-		to_chat(usr, SPAN_WARNING("The rock seems to be too strong to destroy. Maybe I can break it once I become a master miner."))
+		to_chat(usr, "<span class='warning'>The rock seems to be too strong to destroy. Maybe I can break it once I become a master miner.</span>")
 */
 
 /turf/closed/mineral/strong/gets_drilled(mob/user)

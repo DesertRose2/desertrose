@@ -119,10 +119,10 @@
 		var/success_after_tier = max(100 - (lock_tier * 20), 0) / 2 //the higher the lock tier, the harder it is, down to a max of 0, divided by 2
 		if(!prob(success_after_tier))
 			if(fragile)
-				to_chat(user, SPAN_WARNING("You fail to open [src]. It crumbles apart, all the contents being destroyed."))
+				to_chat(user, "<span class='warning'>You fail to open [src]. It crumbles apart, all the contents being destroyed.</span>")
 				qdel(src)
 				return
-			to_chat(user, SPAN_WARNING("You fail to unlock [src]. It looks like it took some damage from the attempt."))
+			to_chat(user, "<span class='warning'>You fail to unlock [src]. It looks like it took some damage from the attempt.</span>")
 			fragile = TRUE
 			return
 		to_chat(user, "<span class='green'>You successfully unlock [src].</span>")
@@ -139,7 +139,7 @@
 		var/success_after_tier = max(100 - (lock_tier * 20), 0) //the higher the lock tier, the harder it is, down to a max of 0
 		var/success_after_skill = min((user.client.prefs.special_l * 5) + success_after_tier, 100) //the higher the persons luck, the better, up to a max of 100, with 50 added
 		if(!prob(success_after_skill))
-			to_chat(user, SPAN_WARNING("You fail to pick [src]."))
+			to_chat(user, "<span class='warning'>You fail to pick [src].</span>")
 			return
 		to_chat(user, "<span class='green'>You successfully unlock [src].</span>")
 		locked = FALSE
@@ -155,7 +155,7 @@
 		used = TRUE
 		spawn_prizes()
 		return
-	to_chat(user, SPAN_WARNING("[src] is locked up tight, perhaps you can open it?"))
+	to_chat(user, "<span class='warning'>[src] is locked up tight, perhaps you can open it?</span>")
 
 /************
 *** ARMOR ***

@@ -7275,7 +7275,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/space)
 "Io" = (
-/obj/structure/simple_door/repaired,
+/obj/structure/simple_door/fakeglass,
 /turf/open/indestructible/ground/inside/subway,
 /area/space)
 "Ip" = (
@@ -7744,7 +7744,7 @@
 	},
 /area/space)
 "JP" = (
-/obj/structure/simple_door/repaired,
+/obj/structure/simple_door/fakeglass,
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
 	},

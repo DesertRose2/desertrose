@@ -32,7 +32,8 @@
 #define SMELTER			(1<<8) 	//uses various minerals
 #define NANITE_COMPILER (1<<9) //Prints nanite disks
 #define AUTOBOTTLER  	(1<<10) //Uses booze, for printing
-//Note: More than one of these can be added to a design but imprinter and lathe designs are incompatable.
+#define AMMOLATHE		(1<<11) //For ammo and magazine production.
+//Note: More then one of these can be added to a design but imprinter and lathe designs are incompatable.
 
 //Modular computer/NTNet defines
 

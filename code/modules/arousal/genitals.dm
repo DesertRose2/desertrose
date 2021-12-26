@@ -92,7 +92,7 @@
 	set desc = "Allows you to toggle which genitals should show through clothes or not."
 
 	if(stat != CONSCIOUS)
-		to_chat(usr, SPAN_WARNING("You can toggle genitals visibility right now..."))
+		to_chat(usr, "<span class='warning'>You can toggle genitals visibility right now...</span>")
 		return
 
 	var/list/genital_list = list()

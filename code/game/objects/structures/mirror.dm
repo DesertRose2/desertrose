@@ -73,9 +73,9 @@
 	if(!I.tool_start_check(user, amount=0))
 		return TRUE
 
-	to_chat(user, SPAN_NOTICE("You begin repairing [src]..."))
+	to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
 	if(I.use_tool(src, user, 10, volume=50))
-		to_chat(user, SPAN_NOTICE("You repair [src]."))
+		to_chat(user, "<span class='notice'>You repair [src].</span>")
 		broken = 0
 		icon_state = initial(icon_state)
 		desc = initial(desc)
@@ -164,7 +164,7 @@
 						if(custom_tone)
 							var/temp_hsv = RGBtoHSV(new_s_tone)
 							if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
-								to_chat(H,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+								to_chat(H,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 							else
 								H.skin_tone = custom_tone
 								H.dna.skin_tone_override = custom_tone
@@ -181,7 +181,7 @@
 						H.dna.features["mcolor"] = sanitize_hexcolor(new_mutantcolor)
 
 					else
-						to_chat(H, SPAN_NOTICE("Invalid color. Your color is not bright enough."))
+						to_chat(H, "<span class='notice'>Invalid color. Your color is not bright enough.</span>")
 
 			H.update_body()
 			H.update_hair()
@@ -196,14 +196,14 @@
 			if(H.gender == "male")
 				if(alert(H, "Become a Witch?", "Confirmation", "Yes", "No") == "Yes")
 					H.gender = "female"
-					to_chat(H, SPAN_NOTICE("Man, you feel like a woman!"))
+					to_chat(H, "<span class='notice'>Man, you feel like a woman!</span>")
 				else
 					return
 
 			else
 				if(alert(H, "Become a Warlock?", "Confirmation", "Yes", "No") == "Yes")
 					H.gender = "male"
-					to_chat(H, SPAN_NOTICE("Whoa man, you feel like a man!"))
+					to_chat(H, "<span class='notice'>Whoa man, you feel like a man!</span>")
 				else
 					return
 			H.dna.update_ui_block(DNA_GENDER_BLOCK)

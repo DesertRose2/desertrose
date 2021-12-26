@@ -57,13 +57,13 @@
 /obj/item/pneumatic_cannon/examine(mob/user)
 	. = ..()
 	if(!in_range(user, src))
-		. += SPAN_NOTICE("You'll need to get closer to see any more.")
+		. += "<span class='notice'>You'll need to get closer to see any more.</span>"
 		return
 	for(var/obj/item/I in loadedItems)
 		. += "<span class='info'>[icon2html(I, user)] It has \a [I] loaded.</span>"
 		CHECK_TICK
 	if(tank)
-		. += SPAN_NOTICE("[icon2html(tank, user)] It has \a [tank] mounted onto it.")
+		. += "<span class='notice'>[icon2html(tank, user)] It has \a [tank] mounted onto it.</span>"
 
 /obj/item/pneumatic_cannon/attackby(obj/item/W, mob/user, params)
 	if(user.a_intent == INTENT_HARM)
@@ -72,11 +72,11 @@
 		if(!tank)
 			var/obj/item/tank/internals/IT = W
 			if(IT.volume <= 3)
-				to_chat(user, SPAN_WARNING("\The [IT] is too small for \the [src]."))
+				to_chat(user, "<span class='warning'>\The [IT] is too small for \the [src].</span>")
 				return
 			updateTank(W, 0, user)
 	else if(W.type == type)
-		to_chat(user, SPAN_WARNING("You're fairly certain that putting a pneumatic cannon inside another pneumatic cannon would cause a spacetime disruption."))
+		to_chat(user, "<span class='warning'>You're fairly certain that putting a pneumatic cannon inside another pneumatic cannon would cause a spacetime disruption.</span>")
 	else if(istype(W, /obj/item/wrench))
 		switch(pressureSetting)
 			if(1)
@@ -85,12 +85,12 @@
 				pressureSetting = 3
 			if(3)
 				pressureSetting = 1
-		to_chat(user, SPAN_NOTICE("You tweak \the [src]'s pressure output to [pressureSetting]."))
+		to_chat(user, "<span class='notice'>You tweak \the [src]'s pressure output to [pressureSetting].</span>")
 	else if(istype(W, /obj/item/screwdriver))
 		if(tank)
 			updateTank(tank, 1, user)
 	else if(loadedWeightClass >= maxWeightClass)
-		to_chat(user, SPAN_WARNING("\The [src] can't hold any more items!"))
+		to_chat(user, "<span class='warning'>\The [src] can't hold any more items!</span>")
 	else if(isitem(W))
 		var/obj/item/IW = W
 		load_item(IW, user)
@@ -100,15 +100,15 @@
 		return TRUE
 	if(allowed_typecache && !is_type_in_typecache(I, allowed_typecache))
 		if(user)
-			to_chat(user, SPAN_WARNING("[I] won't fit into [src]!"))
+			to_chat(user, "<span class='warning'>[I] won't fit into [src]!</span>")
 		return
 	if((loadedWeightClass + I.w_class) > maxWeightClass)	//Only make messages if there's a user
 		if(user)
-			to_chat(user, SPAN_WARNING("\The [I] won't fit into \the [src]!"))
+			to_chat(user, "<span class='warning'>\The [I] won't fit into \the [src]!</span>")
 		return FALSE
 	if(I.w_class > w_class)
 		if(user)
-			to_chat(user, SPAN_WARNING("\The [I] is too large to fit into \the [src]!"))
+			to_chat(user, "<span class='warning'>\The [I] is too large to fit into \the [src]!</span>")
 		return FALSE
 	return TRUE
 
@@ -118,7 +118,7 @@
 	if(user)		//Only use transfer proc if there's a user, otherwise just set loc.
 		if(!user.transferItemToLoc(I, src))
 			return FALSE
-		to_chat(user, SPAN_NOTICE("You load \the [I] into \the [src]."))
+		to_chat(user, "<span class='notice'>You load \the [I] into \the [src].</span>")
 	else
 		I.forceMove(src)
 	loadedItems += I
@@ -140,17 +140,17 @@
 	if(!can_trigger_gun(user))
 		return
 	if(!loadedItems || !loadedWeightClass)
-		to_chat(user, SPAN_WARNING("\The [src] has nothing loaded."))
+		to_chat(user, "<span class='warning'>\The [src] has nothing loaded.</span>")
 		return
 	if(!tank && checktank)
-		to_chat(user, SPAN_WARNING("\The [src] can't fire without a source of gas."))
+		to_chat(user, "<span class='warning'>\The [src] can't fire without a source of gas.</span>")
 		return
 	if(tank && !tank.air_contents.remove(gasPerThrow * pressureSetting))
-		to_chat(user, SPAN_WARNING("\The [src] lets out a weak hiss and doesn't react!"))
+		to_chat(user, "<span class='warning'>\The [src] lets out a weak hiss and doesn't react!</span>")
 		return
 	if(HAS_TRAIT(user, TRAIT_CLUMSY) && prob(75) && clumsyCheck && iscarbon(user))
 		var/mob/living/carbon/C = user
-		C.visible_message(SPAN_WARNING("[C] loses [C.p_their()] grip on [src], causing it to go off!"), "<span class='userdanger'>[src] slips out of your hands and goes off!</span>")
+		C.visible_message("<span class='warning'>[C] loses [C.p_their()] grip on [src], causing it to go off!</span>", "<span class='userdanger'>[src] slips out of your hands and goes off!</span>")
 		C.dropItemToGround(src, TRUE)
 		if(prob(10))
 			target = get_turf(user)
@@ -159,15 +159,15 @@
 			target = pick(possible_targets)
 		discharge = 1
 	if(!discharge)
-		user.visible_message(SPAN_DANGER("[user] fires \the [src]!"), \
-							SPAN_DANGER("You fire \the [src]!"))
+		user.visible_message("<span class='danger'>[user] fires \the [src]!</span>", \
+							"<span class='danger'>You fire \the [src]!</span>")
 	log_combat(user, target, "fired at", src)
 	var/turf/T = get_target(target, get_turf(src))
 	playsound(src, 'sound/weapons/sonic_jackhammer.ogg', 50, 1)
 	fire_items(T, user)
 	if(pressureSetting >= 3 && iscarbon(user))
 		var/mob/living/carbon/C = user
-		C.visible_message(SPAN_WARNING("[C] is thrown down by the force of the cannon!"), "<span class='userdanger'>[src] slams into your shoulder, knocking you down!")
+		C.visible_message("<span class='warning'>[C] is thrown down by the force of the cannon!</span>", "<span class='userdanger'>[src] slams into your shoulder, knocking you down!")
 		C.DefaultCombatKnockdown(60)
 
 /obj/item/pneumatic_cannon/proc/fire_items(turf/target, mob/user)
@@ -227,17 +227,17 @@
 	if(removing)
 		if(!tank)
 			return
-		to_chat(user, SPAN_NOTICE("You detach \the [thetank] from \the [src]."))
+		to_chat(user, "<span class='notice'>You detach \the [thetank] from \the [src].</span>")
 		tank.forceMove(user.drop_location())
 		user.put_in_hands(tank)
 		tank = null
 	if(!removing)
 		if(tank)
-			to_chat(user, SPAN_WARNING("\The [src] already has a tank."))
+			to_chat(user, "<span class='warning'>\The [src] already has a tank.</span>")
 			return
 		if(!user.transferItemToLoc(thetank, src))
 			return
-		to_chat(user, SPAN_NOTICE("You hook \the [thetank] up to \the [src]."))
+		to_chat(user, "<span class='notice'>You hook \the [thetank] up to \the [src].</span>")
 		tank = thetank
 	update_icon()
 

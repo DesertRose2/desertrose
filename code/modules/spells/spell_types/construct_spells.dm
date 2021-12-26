@@ -194,19 +194,19 @@
 
 /obj/effect/proc_holder/spell/targeted/abyssal_gaze/cast(list/targets, mob/user = usr)
 	if(!LAZYLEN(targets))
-		to_chat(user, SPAN_NOTICE("No target found in range."))
+		to_chat(user, "<span class='notice'>No target found in range.</span>")
 		revert_cast()
 		return
 
 	var/mob/living/carbon/target = targets[1]
 
 	if(!(target in oview(range)))
-		to_chat(user, SPAN_NOTICE("[target] is too far away!"))
+		to_chat(user, "<span class='notice'>[target] is too far away!</span>")
 		revert_cast()
 		return
 
 	if(target.anti_magic_check(TRUE, TRUE))
-		to_chat(target, SPAN_WARNING("You feel a freezing darkness closing in on you, but it rapidly dissipates."))
+		to_chat(target, "<span class='warning'>You feel a freezing darkness closing in on you, but it rapidly dissipates.</span>")
 		return
 
 	to_chat(target, "<span class='userdanger'>A freezing darkness surrounds you...</span>")
@@ -241,29 +241,29 @@
 
 /obj/effect/proc_holder/spell/targeted/dominate/cast(list/targets, mob/user = usr)
 	if(!LAZYLEN(targets))
-		to_chat(user, SPAN_NOTICE("No target found in range."))
+		to_chat(user, "<span class='notice'>No target found in range.</span>")
 		revert_cast()
 		return
 
 	var/mob/living/simple_animal/S = targets[1]
 
 	if(S.ckey)
-		to_chat(user, SPAN_WARNING("[S] is too intelligent to dominate!"))
+		to_chat(user, "<span class='warning'>[S] is too intelligent to dominate!</span>")
 		revert_cast()
 		return
 
 	if(S.stat)
-		to_chat(user, SPAN_WARNING("[S] is dead!"))
+		to_chat(user, "<span class='warning'>[S] is dead!</span>")
 		revert_cast()
 		return
 
 	if(S.sentience_type != SENTIENCE_ORGANIC)
-		to_chat(user, SPAN_WARNING("[S] cannot be dominated!"))
+		to_chat(user, "<span class='warning'>[S] cannot be dominated!</span>")
 		revert_cast()
 		return
 
 	if(!(S in oview(range)))
-		to_chat(user, SPAN_NOTICE("[S] is too far away!"))
+		to_chat(user, "<span class='notice'>[S] is too far away!</span>")
 		revert_cast()
 		return
 

@@ -16,7 +16,7 @@
 /obj/item/implantpad/examine(mob/user)
 	. = ..()
 	if(case)
-		. += SPAN_NOTICE("Alt-click [src] to remove the inserted implant case.")
+		. += "<span class='notice'>Alt-click [src] to remove the inserted implant case.</span>"
 
 /obj/item/implantpad/update_icon_state()
 	icon_state = "implantpad-[case ? TRUE : FALSE]"

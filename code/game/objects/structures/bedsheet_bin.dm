@@ -50,10 +50,10 @@ LINEN BINS
 		return
 	if(layer == initial(layer))
 		layer = ABOVE_MOB_LAYER
-		to_chat(user, SPAN_NOTICE("You cover yourself with [src]."))
+		to_chat(user, "<span class='notice'>You cover yourself with [src].</span>")
 	else
 		layer = initial(layer)
-		to_chat(user, SPAN_NOTICE("You smooth [src] out beneath you."))
+		to_chat(user, "<span class='notice'>You smooth [src] out beneath you.</span>")
 	add_fingerprint(user)
 	return
 
@@ -63,7 +63,7 @@ LINEN BINS
 		transfer_fingerprints_to(C)
 		C.add_fingerprint(user)
 		qdel(src)
-		to_chat(user, SPAN_NOTICE("You tear [src] up."))
+		to_chat(user, "<span class='notice'>You tear [src] up.</span>")
 	else
 		return ..()
 
@@ -120,10 +120,10 @@ LINEN BINS
 	dream_messages = list("honk", "laughter", "a prank", "a joke", "a smiling face", "the clown")
 
 /obj/item/bedsheet/captain
-	name = "overseer's bedsheet"
-	desc = "It has the Vault-Tec logo on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among many Overseers."
+	name = "captain's bedsheet"
+	desc = "It has a Nanotrasen symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains."
 	icon_state = "sheetcaptain"
-	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the Overseer")
+	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the captain")
 
 /obj/item/bedsheet/rd
 	name = "research director's bedsheet"
@@ -188,8 +188,8 @@ LINEN BINS
 	dream_messages = list("a unique ID", "authority", "artillery", "an ending")
 
 /obj/item/bedsheet/syndie
-	name = "evil bedsheet"
-	desc = "It has an aura of evil."
+	name = "syndicate bedsheet"
+	desc = "It has a syndicate emblem and it has an aura of evil."
 	icon_state = "sheetsyndie"
 	dream_messages = list("a green disc", "a red crystal", "a glowing blade", "a wire-covered ID")
 
@@ -206,8 +206,8 @@ LINEN BINS
 	dream_messages = list("a book", "an explosion", "lightning", "a staff", "a skeleton", "a robe", "magic")
 
 /obj/item/bedsheet/nanotrasen
-	name = "pre-war corporate bedsheet"
-	desc = "It has an old pre-war logo on it and has an aura of duty."
+	name = "nanotrasen bedsheet"
+	desc = "It has the Nanotrasen logo on it and has an aura of duty."
 	icon_state = "sheetNT"
 	dream_messages = list("authority", "an ending")
 
@@ -325,18 +325,18 @@ LINEN BINS
 /obj/structure/bedsheetbin/attackby(obj/item/I, mob/user, params)
 	if(is_type_in_list(I, allowed_sheets))
 		if(!user.transferItemToLoc(I, src))
-			to_chat(user, SPAN_WARNING("\The [I] is stuck to your hand, you cannot place it into the bin!"))
+			to_chat(user, "<span class='warning'>\The [I] is stuck to your hand, you cannot place it into the bin!</span>")
 			return
 		sheets.Add(I)
 		amount++
-		to_chat(user, SPAN_NOTICE("You put [I] in [src]."))
+		to_chat(user, "<span class='notice'>You put [I] in [src].</span>")
 		update_icon()
 	else if(amount && !hidden && I.w_class < WEIGHT_CLASS_BULKY)	//make sure there's sheets to hide it among, make sure nothing else is hidden in there.
 		if(!user.transferItemToLoc(I, src))
-			to_chat(user, SPAN_WARNING("\The [I] is stuck to your hand, you cannot hide it among the sheets!"))
+			to_chat(user, "<span class='warning'>\The [I] is stuck to your hand, you cannot hide it among the sheets!</span>")
 			return
 		hidden = I
-		to_chat(user, SPAN_NOTICE("You hide [I] among the sheets."))
+		to_chat(user, "<span class='notice'>You hide [I] among the sheets.</span>")
 
 
 /obj/structure/bedsheetbin/attack_paw(mob/user)
@@ -359,12 +359,12 @@ LINEN BINS
 
 		B.forceMove(drop_location())
 		user.put_in_hands(B)
-		to_chat(user, SPAN_NOTICE("You take [B] out of [src]."))
+		to_chat(user, "<span class='notice'>You take [B] out of [src].</span>")
 		update_icon()
 
 		if(hidden)
 			hidden.forceMove(drop_location())
-			to_chat(user, SPAN_NOTICE("[hidden] falls out of [B]!"))
+			to_chat(user, "<span class='notice'>[hidden] falls out of [B]!</span>")
 			hidden = null
 
 	add_fingerprint(user)
@@ -383,7 +383,7 @@ LINEN BINS
 			B = new chosen
 
 		B.forceMove(drop_location())
-		to_chat(user, SPAN_NOTICE("You telekinetically remove [B] from [src]."))
+		to_chat(user, "<span class='notice'>You telekinetically remove [B] from [src].</span>")
 		update_icon()
 
 		if(hidden)

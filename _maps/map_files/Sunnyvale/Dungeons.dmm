@@ -4137,7 +4137,7 @@
 /area/f13/bunker)
 "jU" = (
 /obj/machinery/computer{
-	desc = "Some kind of machine. Seems broken and useless.";
+	desc = "Some kind of machine.Seems broken and useless.";
 	name = "broken computer"
 	},
 /turf/open/floor/plasteel/f13{

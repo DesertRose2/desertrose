@@ -19,13 +19,13 @@
 	var/turf/T = get_turf(user)
 	var/area/A = get_area(T)
 	if(!isfloorturf(T))
-		to_chat(user, SPAN_WARNING("You cannot place [src] on this spot!"))
+		to_chat(user, "<span class='warning'>You cannot place [src] on this spot!</span>")
 		return
 	if(A.always_unpowered)
-		to_chat(user, SPAN_WARNING("You cannot place [src] in this area!"))
+		to_chat(user, "<span class='warning'>You cannot place [src] in this area!</span>")
 		return
 	if(gotwallitem(T, ndir, inverse*2))
-		to_chat(user, SPAN_WARNING("There's already an item on this wall!"))
+		to_chat(user, "<span class='warning'>There's already an item on this wall!</span>")
 		return
 
 	return TRUE
@@ -34,7 +34,7 @@
 	if(result_path)
 		playsound(src.loc, 'sound/machines/click.ogg', 75, 1)
 		user.visible_message("[user.name] attaches [src] to the wall.",
-			SPAN_NOTICE("You attach [src] to the wall."),
+			"<span class='notice'>You attach [src] to the wall.</span>",
 			"<span class='italics'>You hear clicking.</span>")
 		var/ndir = get_dir(on_wall,user)
 		if(inverse)
@@ -74,7 +74,7 @@
 	var/glass_amt = round(custom_materials[SSmaterials.GetMaterialRef(/datum/material/glass)]/MINERAL_MATERIAL_AMOUNT)
 
 	if(metal_amt || glass_amt)
-		to_chat(user, SPAN_NOTICE("You dismantle [src]."))
+		to_chat(user, "<span class='notice'>You dismantle [src].</span>")
 		if(metal_amt)
 			new /obj/item/stack/sheet/metal(get_turf(src), metal_amt)
 		if(glass_amt)
@@ -98,18 +98,18 @@
 	var/turf/T = get_turf(on_wall) //the user is not where it needs to be.
 	var/area/A = get_area(T)
 	if(A.get_apc())
-		to_chat(user, SPAN_WARNING("This area already has an APC!"))
+		to_chat(user, "<span class='warning'>This area already has an APC!</span>")
 		return //only one APC per area
 	if(!A.requires_power)
-		to_chat(user, SPAN_WARNING("You cannot place [src] in this area!"))
+		to_chat(user, "<span class='warning'>You cannot place [src] in this area!</span>")
 		return //can't place apcs in areas with no power requirement
 	for(var/obj/machinery/power/terminal/E in T)
 		if(E.master)
-			to_chat(user, SPAN_WARNING("There is another network terminal here!"))
+			to_chat(user, "<span class='warning'>There is another network terminal here!</span>")
 			return
 		else
 			new /obj/item/stack/cable_coil(T, 10)
-			to_chat(user, SPAN_NOTICE("You cut the cables and disassemble the unused power terminal."))
+			to_chat(user, "<span class='notice'>You cut the cables and disassemble the unused power terminal.</span>")
 			qdel(E)
 	return TRUE
 

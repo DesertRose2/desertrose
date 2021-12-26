@@ -375,7 +375,7 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 	. = TRUE
 
 	if((mode & DESTROY_MODE) && istype(A, /obj/item/pipe) || istype(A, /obj/structure/disposalconstruct) || istype(A, /obj/structure/c_transit_tube) || istype(A, /obj/structure/c_transit_tube_pod) || istype(A, /obj/item/pipe_meter))
-		to_chat(user, SPAN_NOTICE("You start destroying a pipe..."))
+		to_chat(user, "<span class='notice'>You start destroying a pipe...</span>")
 		playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 		if(do_after(user, destroy_speed, target = A))
 			activate()
@@ -385,19 +385,19 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 	if((mode & PAINT_MODE))
 		if(istype(A, /obj/machinery/atmospherics/pipe) && !istype(A, /obj/machinery/atmospherics/pipe/layer_manifold))
 			var/obj/machinery/atmospherics/pipe/P = A
-			to_chat(user, SPAN_NOTICE("You start painting \the [P] [paint_color]..."))
+			to_chat(user, "<span class='notice'>You start painting \the [P] [paint_color]...</span>")
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 			if(do_after(user, paint_speed, target = A))
 				P.paint(GLOB.pipe_paint_colors[paint_color]) //paint the pipe
-				user.visible_message(SPAN_NOTICE("[user] paints \the [P] [paint_color]."),SPAN_NOTICE("You paint \the [P] [paint_color]."))
+				user.visible_message("<span class='notice'>[user] paints \the [P] [paint_color].</span>","<span class='notice'>You paint \the [P] [paint_color].</span>")
 			return
 		var/obj/item/pipe/P = A
 		if(istype(P) && findtext("[P.pipe_type]", "/obj/machinery/atmospherics/pipe") && !findtext("[P.pipe_type]", "layer_manifold"))
-			to_chat(user, SPAN_NOTICE("You start painting \the [A] [paint_color]..."))
+			to_chat(user, "<span class='notice'>You start painting \the [A] [paint_color]...</span>")
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 			if(do_after(user, paint_speed, target = A))
 				A.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY) //paint the pipe
-				user.visible_message(SPAN_NOTICE("[user] paints \the [A] [paint_color]."),SPAN_NOTICE("You paint \the [A] [paint_color]."))
+				user.visible_message("<span class='notice'>[user] paints \the [A] [paint_color].</span>","<span class='notice'>You paint \the [A] [paint_color].</span>")
 			return
 
 	if(mode & BUILD_MODE)
@@ -407,11 +407,11 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 					return ..()
 				A = T
 				if(is_type_in_typecache(recipe, GLOB.ventcrawl_machinery) && isclosedturf(A)) //wall escapism sanity check.
-					to_chat(user, SPAN_WARNING("[src]'s error light flickers; there's something in the way!"))
+					to_chat(user, "<span class='warning'>[src]'s error light flickers; there's something in the way!</span>")
 					return
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 				if (recipe.type == /datum/pipe_info/meter)
-					to_chat(user, SPAN_NOTICE("You start building a meter..."))
+					to_chat(user, "<span class='notice'>You start building a meter...</span>")
 					if(do_after(user, atmos_build_speed, target = A))
 						activate()
 						var/obj/item/pipe_meter/PM = new /obj/item/pipe_meter(A)
@@ -419,7 +419,7 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 						if(mode & WRENCH_MODE)
 							PM.wrench_act(user, src)
 				else
-					to_chat(user, SPAN_NOTICE("You start building a pipe..."))
+					to_chat(user, "<span class='notice'>You start building a pipe...</span>")
 					if(do_after(user, atmos_build_speed, target = A))
 						activate()
 						var/obj/machinery/atmospherics/path = queued_p_type
@@ -443,15 +443,15 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 					return ..()
 				A = T
 				if(isclosedturf(A))
-					to_chat(user, SPAN_WARNING("[src]'s error light flickers; there's something in the way!"))
+					to_chat(user, "<span class='warning'>[src]'s error light flickers; there's something in the way!</span>")
 					return
-				to_chat(user, SPAN_NOTICE("You start building a disposals pipe..."))
+				to_chat(user, "<span class='notice'>You start building a disposals pipe...</span>")
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 				if(do_after(user, disposal_build_speed, target = A))
 					var/obj/structure/disposalconstruct/C = new (A, queued_p_type, queued_p_dir, queued_p_flipped)
 
 					if(!C.can_place())
-						to_chat(user, SPAN_WARNING("There's not enough room to build that here!"))
+						to_chat(user, "<span class='warning'>There's not enough room to build that here!</span>")
 						qdel(C)
 						return
 
@@ -468,14 +468,14 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 					return ..()
 				A = T
 				if(isclosedturf(A))
-					to_chat(user, SPAN_WARNING("[src]'s error light flickers; there's something in the way!"))
+					to_chat(user, "<span class='warning'>[src]'s error light flickers; there's something in the way!</span>")
 					return
-				to_chat(user, SPAN_NOTICE("You start building a transit tube..."))
+				to_chat(user, "<span class='notice'>You start building a transit tube...</span>")
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 				if(do_after(user, transit_build_speed, target = A))
 					for(var/obj/structure/c_transit_tube/tube in A)
 						if(tube.dir == queued_p_dir || (queued_p_flipped && (tube.dir == turn(queued_p_dir, 45))))
-							to_chat(user, SPAN_WARNING("[src]'s error light flickers; there's already a pipe in the way!"))
+							to_chat(user, "<span class='warning'>[src]'s error light flickers; there's already a pipe in the way!</span>")
 							return
 					activate()
 					if(queued_p_type == /obj/structure/c_transit_tube_pod)
@@ -501,9 +501,9 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 					return ..()
 				A = get_turf(A)
 				if(isclosedturf(A))
-					to_chat(user, SPAN_WARNING("[src]'s error light flickers; there's something in the way!"))
+					to_chat(user, "<span class='warning'>[src]'s error light flickers; there's something in the way!</span>")
 					return
-				to_chat(user, SPAN_NOTICE("You start building a fluid duct..."))
+				to_chat(user, "<span class='notice'>You start building a fluid duct...</span>")
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, 1)
 				if(do_after(user, plumbing_build_speed, target = A))
 					var/obj/machinery/duct/D

@@ -8,14 +8,14 @@
 	layer = ABOVE_ALL_MOB_LAYER
 
 /obj/structure/statue/bone/rib
-	name = "colossal rib"
+	name = "collosal rib"
 	desc = "It's staggering to think that something this big could have lived, let alone died."
 	oreAmount = 4
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "rib"
 
 /obj/structure/statue/bone/skull
-	name = "colossal skull"
+	name = "collosal skull"
 	desc = "The gaping maw of a dead, titanic monster."
 	oreAmount = 12
 	icon = 'icons/obj/statuelarge.dmi'
@@ -63,7 +63,7 @@
 //***Oil well puddles.
 /obj/structure/sink/oil_well	//You're not going to enjoy bathing in this...
 	name = "oil well"
-	desc = "A bubbling pool of oil."
+	desc = "A bubbling pool of oil.This would probably be valuable, had bluespace technology not destroyed the need for fossil fuels 200 years ago."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "puddle-oil"
 	dispensedreagent = /datum/reagent/oil
@@ -76,7 +76,7 @@
 /obj/structure/sink/oil_well/on_attack_hand(mob/M)
 	flick("puddle-oil-splash",src)
 	reagents.reaction(M, TOUCH, 20) //Covers target in 20u of oil.
-	to_chat(M, SPAN_NOTICE("You touch the pool of oil, only to get oil all over yourself. It would be wise to wash this off with water."))
+	to_chat(M, "<span class='notice'>You touch the pool of oil, only to get oil all over yourself. It would be wise to wash this off with water.</span>")
 
 /obj/structure/sink/oil_well/attackby(obj/item/O, mob/user, params)
 	flick("puddle-oil-splash",src)
@@ -90,12 +90,12 @@
 		if(RG.is_refillable())
 			if(!RG.reagents.holder_full())
 				RG.reagents.add_reagent(dispensedreagent, min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
-				to_chat(user, SPAN_NOTICE("You fill [RG] from [src]."))
+				to_chat(user, "<span class='notice'>You fill [RG] from [src].</span>")
 				return TRUE
-			to_chat(user, SPAN_NOTICE("\The [RG] is full."))
+			to_chat(user, "<span class='notice'>\The [RG] is full.</span>")
 			return FALSE
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, SPAN_NOTICE("You won't have any luck getting \the [O] out if you drop it in the oil."))
+		to_chat(user, "<span class='notice'>You won't have any luck getting \the [O] out if you drop it in the oil.</span>")
 		return 1
 	else
 		return ..()
@@ -148,15 +148,15 @@
 
 /obj/structure/closet/crate/grave/open(mob/living/user, obj/item/S)
 	if(!opened)
-		to_chat(user, SPAN_NOTICE("The ground here is too hard to dig up with your bare hands. You'll need a shovel."))
+		to_chat(user, "<span class='notice'>The ground here is too hard to dig up with your bare hands. You'll need a shovel.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("The grave has already been dug up."))
+		to_chat(user, "<span class='notice'>The grave has already been dug up.</span>")
 
 /obj/structure/closet/crate/grave/tool_interact(obj/item/S, mob/living/carbon/user)
 	if(user.a_intent == INTENT_HELP) //checks to attempt to dig the grave, must be done on help intent only.
 		if(!opened)
 			if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_SHOVEL)
-				to_chat(user, SPAN_NOTICE("You start start to dig open \the [src]  with \the [S]..."))
+				to_chat(user, "<span class='notice'>You start start to dig open \the [src]  with \the [S]...</span>")
 				if (do_after(user,20, target = src))
 					opened = TRUE
 					locked = TRUE
@@ -170,17 +170,17 @@
 					return 1
 				return 1
 			else
-				to_chat(user, SPAN_NOTICE("You can't dig up a grave with \the [S.name]."))
+				to_chat(user, "<span class='notice'>You can't dig up a grave with \the [S.name].</span>")
 				return 1
 		else
-			to_chat(user, SPAN_NOTICE("The grave has already been dug up."))
+			to_chat(user, "<span class='notice'>The grave has already been dug up.</span>")
 			return 1
 
 	else if((user.a_intent != INTENT_HELP) && opened) //checks to attempt to remove the grave entirely.
 		if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_SHOVEL)
-			to_chat(user, SPAN_NOTICE("You start to remove \the [src]  with \the [S]."))
+			to_chat(user, "<span class='notice'>You start to remove \the [src]  with \the [S].</span>")
 			if (do_after(user,15, target = src))
-				to_chat(user, SPAN_NOTICE("You remove \the [src]  completely."))
+				to_chat(user, "<span class='notice'>You remove \the [src]  completely.</span>")
 				SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "graverobbing", /datum/mood_event/graverobbing)
 				deconstruct(TRUE)
 				return 1

@@ -58,11 +58,11 @@
 			return ..()	//just hit them in the head
 
 		if(!user.IsAdvancedToolUser())
-			to_chat(user, SPAN_WARNING("You don't have the dexterity to do this!"))
+			to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 			return
 
 		if(!M.get_bodypart(BODY_ZONE_HEAD))
-			to_chat(user, SPAN_WARNING("[M] doesn't have a head!"))
+			to_chat(user, "<span class='warning'>[M] doesn't have a head!</span>")
 			return
 
 		if(flashlight_power < 0.3)
@@ -72,33 +72,33 @@
 		switch(user.zone_selected)
 			if(BODY_ZONE_PRECISE_EYES)
 				if((M.head && M.head.flags_cover & HEADCOVERSEYES) || (M.wear_mask && M.wear_mask.flags_cover & MASKCOVERSEYES) || (M.glasses && M.glasses.flags_cover & GLASSESCOVERSEYES))
-					to_chat(user, SPAN_NOTICE("You're going to need to remove that [(M.head && M.head.flags_cover & HEADCOVERSEYES) ? "helmet" : (M.wear_mask && M.wear_mask.flags_cover & MASKCOVERSEYES) ? "mask": "glasses"] first."))
+					to_chat(user, "<span class='notice'>You're going to need to remove that [(M.head && M.head.flags_cover & HEADCOVERSEYES) ? "helmet" : (M.wear_mask && M.wear_mask.flags_cover & MASKCOVERSEYES) ? "mask": "glasses"] first.</span>")
 					return
 
 				var/obj/item/organ/eyes/E = M.getorganslot(ORGAN_SLOT_EYES)
 				if(!E)
-					to_chat(user, SPAN_DANGER("[M] doesn't have any eyes!"))
+					to_chat(user, "<span class='danger'>[M] doesn't have any eyes!</span>")
 					return
 
 				if(M == user)	//they're using it on themselves
 					if(M.flash_act(visual = 1))
-						M.visible_message("[M] directs [src] to [M.p_their()] eyes.", SPAN_NOTICE("You wave the light in front of your eyes! Trippy!"))
+						M.visible_message("[M] directs [src] to [M.p_their()] eyes.", "<span class='notice'>You wave the light in front of your eyes! Trippy!</span>")
 					else
-						M.visible_message("[M] directs [src] to [M.p_their()] eyes.", SPAN_NOTICE("You wave the light in front of your eyes."))
+						M.visible_message("[M] directs [src] to [M.p_their()] eyes.", "<span class='notice'>You wave the light in front of your eyes.</span>")
 				else
-					user.visible_message(SPAN_WARNING("[user] directs [src] to [M]'s eyes."), \
-										SPAN_DANGER("You direct [src] to [M]'s eyes."))
+					user.visible_message("<span class='warning'>[user] directs [src] to [M]'s eyes.</span>", \
+										"<span class='danger'>You direct [src] to [M]'s eyes.</span>")
 					if(M.stat == DEAD || (HAS_TRAIT(M, TRAIT_BLIND)) || !M.flash_act(visual = 1)) //mob is dead or fully blind
-						to_chat(user, SPAN_WARNING("[M]'s pupils don't react to the light!"))
+						to_chat(user, "<span class='warning'>[M]'s pupils don't react to the light!</span>")
 					else if(M.dna && M.dna.check_mutation(XRAY))	//mob has X-ray vision
-						to_chat(user, SPAN_DANGER("[M]'s pupils give an eerie glow!"))
+						to_chat(user, "<span class='danger'>[M]'s pupils give an eerie glow!</span>")
 					else //they're okay!
-						to_chat(user, SPAN_NOTICE("[M]'s pupils narrow."))
+						to_chat(user, "<span class='notice'>[M]'s pupils narrow.</span>")
 
 			if(BODY_ZONE_PRECISE_MOUTH)
 
 				if(M.is_mouth_covered())
-					to_chat(user, SPAN_NOTICE("You're going to need to remove that [(M.head && M.head.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] first."))
+					to_chat(user, "<span class='notice'>You're going to need to remove that [(M.head && M.head.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] first.</span>")
 					return
 
 				var/their = M.p_their()
@@ -139,26 +139,26 @@
 									can_use_mirror = mirror.pixel_x < 0
 
 					M.visible_message("[M] directs [src] to [their] mouth.", \
-					SPAN_NOTICE("You point [src] into your mouth."))
+					"<span class='notice'>You point [src] into your mouth.</span>")
 					if(!can_use_mirror)
-						to_chat(user, SPAN_NOTICE("You can't see anything without a mirror."))
+						to_chat(user, "<span class='notice'>You can't see anything without a mirror.</span>")
 						return
 					if(organ_count)
-						to_chat(user, SPAN_NOTICE("Inside your mouth [organ_count > 1 ? "are" : "is"] [organ_list]."))
+						to_chat(user, "<span class='notice'>Inside your mouth [organ_count > 1 ? "are" : "is"] [organ_list].</span>")
 					else
-						to_chat(user, SPAN_NOTICE("There's nothing inside your mouth."))
+						to_chat(user, "<span class='notice'>There's nothing inside your mouth.</span>")
 					if(pill_count)
-						to_chat(user, SPAN_NOTICE("You have [pill_count] implanted pill[pill_count > 1 ? "s" : ""]."))
+						to_chat(user, "<span class='notice'>You have [pill_count] implanted pill[pill_count > 1 ? "s" : ""].</span>")
 
 				else
-					user.visible_message(SPAN_NOTICE("[user] directs [src] to [M]'s mouth."),\
-										SPAN_NOTICE("You direct [src] to [M]'s mouth."))
+					user.visible_message("<span class='notice'>[user] directs [src] to [M]'s mouth.</span>",\
+										"<span class='notice'>You direct [src] to [M]'s mouth.</span>")
 					if(organ_count)
-						to_chat(user, SPAN_NOTICE("Inside [their] mouth [organ_count > 1 ? "are" : "is"] [organ_list]."))
+						to_chat(user, "<span class='notice'>Inside [their] mouth [organ_count > 1 ? "are" : "is"] [organ_list].</span>")
 					else
-						to_chat(user, SPAN_NOTICE("[M] doesn't have any organs in [their] mouth."))
+						to_chat(user, "<span class='notice'>[M] doesn't have any organs in [their] mouth.</span>")
 					if(pill_count)
-						to_chat(user, SPAN_NOTICE("[M] has [pill_count] pill[pill_count > 1 ? "s" : ""] implanted in [their] teeth."))
+						to_chat(user, "<span class='notice'>[M] has [pill_count] pill[pill_count > 1 ? "s" : ""] implanted in [their] teeth.</span>")
 
 	else
 		return ..()
@@ -178,7 +178,7 @@
 	. = ..()
 	if(!proximity_flag)
 		if(holo_cooldown > world.time)
-			to_chat(user, SPAN_WARNING("[src] is not ready yet!"))
+			to_chat(user, "<span class='warning'>[src] is not ready yet!</span>")
 			return
 		var/T = get_turf(target)
 		if(locate(/mob/living) in T)
@@ -208,7 +208,7 @@
 	. = ..()
 	playsound(loc, 'sound/machines/ping.ogg', 50, 0) //make some noise!
 	if(creator)
-		visible_message(SPAN_DANGER("[creator] created a medical hologram!"))
+		visible_message("<span class='danger'>[creator] created a medical hologram!</span>")
 
 
 /obj/item/flashlight/seclite
@@ -266,7 +266,7 @@
 
 /obj/item/flashlight/flare
 	name = "flare"
-	desc = "A red road flare. There are instructions on the side, it reads 'pull cord, make light'."
+	desc = "A red Nanotrasen issued flare. There are instructions on the side, it reads 'pull cord, make light'."
 	w_class = WEIGHT_CLASS_SMALL
 	brightness_on = 7 // Pretty bright.
 	total_mass = 0.8
@@ -322,16 +322,16 @@
 
 	// Usual checks
 	if(!fuel)
-		to_chat(user, SPAN_WARNING("[src] is out of fuel!"))
+		to_chat(user, "<span class='warning'>[src] is out of fuel!</span>")
 		return
 	if(on)
-		to_chat(user, SPAN_NOTICE("[src] is already on."))
+		to_chat(user, "<span class='notice'>[src] is already on.</span>")
 		return
 
 	. = ..()
 	// All good, turn it on.
 	if(.)
-		user.visible_message(SPAN_NOTICE("[user] lights \the [src]."), SPAN_NOTICE("You light \the [src]!"))
+		user.visible_message("<span class='notice'>[user] lights \the [src].</span>", "<span class='notice'>You light \the [src]!</span>")
 		playsound(loc, 'sound/effects/flare_light.ogg', 50, 0)
 		force = on_damage
 		damtype = "fire"
@@ -342,9 +342,9 @@
 
 /obj/item/flashlight/flare/torch
 	name = "torch"
-	desc = "A torch fashioned from some leaves and a log."
-	brightness_on = 6 //When on were like a lantern
-	w_class = WEIGHT_CLASS_BULKY
+	desc = "A self-lighting handheld torch fashioned from some cloth wrapped around a wooden handle. It could probably fit in a backpack while it isn't burning."
+	w_class = WEIGHT_CLASS_NORMAL
+	brightness_on = 5
 	light_color = "#FAA44B"
 	icon_state = "torch"
 	item_state = "torch"
@@ -352,8 +352,32 @@
 	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	light_color = LIGHT_COLOR_ORANGE
 	total_mass = TOTAL_MASS_NORMAL_ITEM
-	on_damage = 12 //Its a log thats on fire
+	on_damage = 10
 	slot_flags = null
+
+/obj/item/flashlight/flare/torch/attack_self(mob/user)
+	// Usual checks
+	if(!fuel)
+		to_chat(user, "<span class='warning'>[src] is out of fuel!</span>")
+		return
+	if(on)
+		to_chat(user, "<span class='notice'>[src] is already lit.</span>")
+		return
+	// All good, turn it on.
+	else
+		user.visible_message("<span class='notice'>[user] lights [src].</span>", "<span class='notice'>You light [src]!</span>")
+		playsound(loc, 'sound/effects/torch_light.ogg', 50, 0)
+		force = on_damage
+		damtype = BURN
+		w_class = WEIGHT_CLASS_BULKY
+		desc = "A handheld wooden torch that's slowly burning away."
+		START_PROCESSING(SSobj, src)
+		on = !on
+		update_brightness(user)
+		for(var/X in actions)
+			var/datum/action/A = X
+			A.UpdateButtonIcon()
+		return TRUE
 
 /obj/item/flashlight/lantern
 	name = "lantern"
@@ -431,7 +455,7 @@
 		to_chat(user, "\The [src] now has [emp_cur_charges] charge\s.")
 		A.emp_act(80)
 	else
-		to_chat(user, SPAN_WARNING("\The [src] needs time to recharge!"))
+		to_chat(user, "<span class='warning'>\The [src] needs time to recharge!</span>")
 	return
 
 /obj/item/flashlight/emp/debug //for testing emp_act()
@@ -493,15 +517,15 @@
 
 /obj/item/flashlight/glowstick/attack_self(mob/user)
 	if(!fuel)
-		to_chat(user, SPAN_NOTICE("[src] is spent."))
+		to_chat(user, "<span class='notice'>[src] is spent.</span>")
 		return
 	if(on)
-		to_chat(user, SPAN_NOTICE("[src] is already lit."))
+		to_chat(user, "<span class='notice'>[src] is already lit.</span>")
 		return
 
 	. = ..()
 	if(.)
-		user.visible_message(SPAN_NOTICE("[user] cracks and shakes [src]."), SPAN_NOTICE("You crack and shake [src], turning it on!"))
+		user.visible_message("<span class='notice'>[user] cracks and shakes [src].</span>", "<span class='notice'>You crack and shake [src], turning it on!</span>")
 		activate()
 
 /obj/item/flashlight/glowstick/proc/activate()

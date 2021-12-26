@@ -12,7 +12,7 @@
 
 /datum/supply_pack/engineering/shieldgen
 	name = "Anti-breach Shield Projector Crate"
-	desc = "Vault breached again? Say no more with the Vault-Tec Anti-Breach Shield Projector! Uses forcefield technology to keep the Vault in, and the wasteland out. Contains two shield projectors."
+	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
 	cost = 2500
 	contains = list(/obj/machinery/shieldgen,
 					/obj/machinery/shieldgen)
@@ -134,7 +134,7 @@
 /*
 /datum/supply_pack/engineering/shuttle_engine
 	name = "Shuttle Engine Crate"
-	desc = "Through advanced quantum-shenanigans, our engineers have managed to fit an entire shuttle engine into one tiny little crate. Requires CE access to open."
+	desc = "Through advanced bluespace-shenanigans, our engineers have managed to fit an entire shuttle engine into one tiny little crate. Requires CE access to open."
 	cost = 5000
 	access = ACCESS_CE
 	contains = list(/obj/structure/shuttle/engine/propulsion/burst/cargo)
@@ -154,6 +154,17 @@
 	crate_name = "toolbox crate"
 	special = TRUE //Department resupply shuttle loan event.
 
+/datum/supply_pack/engineering/bsa
+	name = "Bluespace Artillery Parts"
+	desc = "The pride of Nanotrasen Naval Command. The legendary Bluespace Artillery Cannon is a devastating feat of human engineering and testament to wartime determination. Highly advanced research is required for proper construction. "
+	cost = 45000
+	special = TRUE
+	contains = list(/obj/item/circuitboard/machine/bsa/front,
+					/obj/item/circuitboard/machine/bsa/middle,
+					/obj/item/circuitboard/machine/bsa/back,
+					/obj/item/circuitboard/computer/bsa_control
+					)
+	crate_name= "bluespace artillery parts crate"
 /*
 /datum/supply_pack/engineering/dna_vault
 	name = "DNA Vault Parts"

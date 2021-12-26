@@ -8,12 +8,12 @@
 /mob/living/carbon/human/UnarmedAttack(atom/A, proximity, intent = a_intent, attackchain_flags = NONE)
 
 	if(!has_active_hand()) //can't attack without a hand.
-		to_chat(src, SPAN_NOTICE("You look at your arm and sigh."))
+		to_chat(src, "<span class='notice'>You look at your arm and sigh.</span>")
 		return
 
 	var/obj/item/bodypart/check_arm = get_active_hand()
 	if(check_arm && check_arm.is_disabled() == BODYPART_DISABLED_WOUND)
-		to_chat(src, SPAN_WARNING("The damage in your [check_arm.name] is preventing you from using it! Get it fixed, or at least splinted!"))
+		to_chat(src, "<span class='warning'>The damage in your [check_arm.name] is preventing you from using it! Get it fixed, or at least splinted!</span>")
 		return
 
 	. = attackchain_flags
@@ -67,7 +67,7 @@
 	if(!user.can_interact_with(src))
 		return FALSE
 	if((interaction_flags_atom & INTERACT_ATOM_REQUIRES_DEXTERITY) && !user.IsAdvancedToolUser())
-		to_chat(user, SPAN_WARNING("You don't have the dexterity to do this!"))
+		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return FALSE
 	if(!(interaction_flags_atom & INTERACT_ATOM_IGNORE_INCAPACITATED) && user.incapacitated((interaction_flags_atom & INTERACT_ATOM_IGNORE_RESTRAINED), !(interaction_flags_atom & INTERACT_ATOM_CHECK_GRAB)))
 		return FALSE
@@ -174,7 +174,7 @@
 		var/armor = ML.run_armor_check(affecting, "melee")
 		if(prob(75))
 			ML.apply_damage(rand(1,3), BRUTE, affecting, armor)
-			ML.visible_message(SPAN_DANGER("[name] bites [ML]!"), \
+			ML.visible_message("<span class='danger'>[name] bites [ML]!</span>", \
 							"<span class='userdanger'>[name] bites [ML]!</span>")
 			if(armor >= 2)
 				return
@@ -182,7 +182,7 @@
 				var/datum/disease/D = thing
 				ML.ForceContractDisease(D)
 		else
-			ML.visible_message(SPAN_DANGER("[src] has attempted to bite [ML]!"))
+			ML.visible_message("<span class='danger'>[src] has attempted to bite [ML]!</span>")
 	DelayNextAction()
 
 /*

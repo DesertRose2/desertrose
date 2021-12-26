@@ -45,7 +45,7 @@
 
 /obj/machinery/recycler/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Reclaiming <b>[amount_produced]%</b> of materials salvaged.")
+	. += "<span class='notice'>Reclaiming <b>[amount_produced]%</b> of materials salvaged.</span>"
 	. += {"The power light is [(stat & NOPOWER) ? "off" : "on"].
 	The safety-mode light is [safety_mode ? "on" : "off"].
 	The safety-sensors status light is [obj_flags & EMAGGED ? "off" : "on"]."}
@@ -78,7 +78,7 @@
 		safety_mode = FALSE
 		update_icon()
 	playsound(src, "sparks", 75, 1, -1)
-	to_chat(user, SPAN_NOTICE("You use the cryptographic sequencer on [src]."))
+	to_chat(user, "<span class='notice'>You use the cryptographic sequencer on [src].</span>")
 	return TRUE
 
 /obj/machinery/recycler/update_icon_state()

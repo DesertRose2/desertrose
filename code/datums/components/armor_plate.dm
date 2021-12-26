@@ -36,29 +36,29 @@
 	if(ismecha(parent))
 		if(amount)
 			if(amount < maxamount)
-				examine_list += SPAN_NOTICE("Its armor is enhanced with [amount] [upgrade_name].")
+				examine_list += "<span class='notice'>Its armor is enhanced with [amount] [upgrade_name].</span>"
 			else
-				examine_list += SPAN_NOTICE("It's wearing a fearsome carapace entirely composed of [upgrade_name] - its pilot must be an experienced monster hunter.")
+				examine_list += "<span class='notice'>It's wearing a fearsome carapace entirely composed of [upgrade_name] - its pilot must be an experienced monster hunter.</span>"
 		else
-			examine_list += SPAN_NOTICE("You could probably use high-quality metal parts to reinforce it.")
+			examine_list += "<span class='notice'>You could probably use high-quality metal parts to reinforce it.</span>"
 	else
 		if(amount)
-			examine_list += SPAN_NOTICE("It has been strengthened with [amount]/[maxamount] [upgrade_name].")
+			examine_list += "<span class='notice'>It has been strengthened with [amount]/[maxamount] [upgrade_name].</span>"
 		else
-			examine_list += SPAN_NOTICE("It can be strengthened with up to [maxamount] [upgrade_name].")
+			examine_list += "<span class='notice'>It can be strengthened with up to [maxamount] [upgrade_name].</span>"
 
 /datum/component/armor_plate/proc/applyplate(datum/source, obj/item/I, mob/user, params)
 	if(!istype(I,upgrade_item))
 		return
 	if(amount >= maxamount)
-		to_chat(user, SPAN_WARNING("You can't improve [parent] any further!"))
+		to_chat(user, "<span class='warning'>You can't improve [parent] any further!</span>")
 		return
 
 	if(istype(I,/obj/item/stack))
 		I.use(1)
 	else
 		if(length(I.contents))
-			to_chat(user, SPAN_WARNING("[I] cannot be used for armoring while there's something inside!"))
+			to_chat(user, "<span class='warning'>[I] cannot be used for armoring while there's something inside!</span>")
 			return
 		qdel(I)
 

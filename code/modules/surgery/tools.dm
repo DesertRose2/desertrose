@@ -12,7 +12,7 @@
 
 /obj/item/retractor/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -34,11 +34,11 @@
 	playsound(get_turf(user), 'sound/items/change_drill.ogg', 50, TRUE)
 	if(tool_behaviour == TOOL_RETRACTOR)
 		tool_behaviour = TOOL_HEMOSTAT
-		to_chat(user, SPAN_NOTICE("You configure the gears of [src], they are now in hemostat mode."))
+		to_chat(user, "<span class='notice'>You configure the gears of [src], they are now in hemostat mode.</span>")
 		icon_state = "hemostat_a"
 	else
 		tool_behaviour = TOOL_RETRACTOR
-		to_chat(user, SPAN_NOTICE("You configure the gears of [src], they are now in retractor mode."))
+		to_chat(user, "<span class='notice'>You configure the gears of [src], they are now in retractor mode.</span>")
 		icon_state = "retractor_a"
 
 /obj/item/retractor/advanced/examine(mob/living/user)
@@ -70,7 +70,7 @@
 
 /obj/item/hemostat/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -107,7 +107,7 @@
 
 /obj/item/cautery/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -141,7 +141,7 @@
 
 /obj/item/surgicaldrill/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -160,11 +160,11 @@
 	playsound(get_turf(user), 'sound/weapons/tap.ogg', 50, TRUE)
 	if(tool_behaviour == TOOL_DRILL)
 		tool_behaviour = TOOL_CAUTERY
-		to_chat(user, SPAN_NOTICE("You focus the lenses of [src], it is now in mending mode."))
+		to_chat(user, "<span class='notice'>You focus the lenses of [src], it is now in mending mode.</span>")
 		icon_state = "cautery_a"
 	else
 		tool_behaviour = TOOL_DRILL
-		to_chat(user, SPAN_NOTICE("You dilate the lenses of [src], it is now in drilling mode."))
+		to_chat(user, "<span class='notice'>You dilate the lenses of [src], it is now in drilling mode.</span>")
 		icon_state = "surgicaldrill_a"
 
 /obj/item/surgicaldrill/advanced/examine(mob/living/user)
@@ -212,7 +212,7 @@
 
 /obj/item/scalpel/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -235,13 +235,13 @@
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
 	if(tool_behaviour == TOOL_SCALPEL)
 		tool_behaviour = TOOL_SAW
-		to_chat(user, SPAN_NOTICE("You increase the power of [src], now it can cut bones."))
+		to_chat(user, "<span class='notice'>You increase the power of [src], now it can cut bones.</span>")
 		set_light(2)
 		force += 1 //we don't want to ruin sharpened stuff
 		icon_state = "saw_a"
 	else
 		tool_behaviour = TOOL_SCALPEL
-		to_chat(user, SPAN_NOTICE("You lower the power of [src], it can no longer cut bones."))
+		to_chat(user, "<span class='notice'>You lower the power of [src], it can no longer cut bones.</span>")
 		set_light(1)
 		force -= 1
 		icon_state = "scalpel_a"
@@ -301,7 +301,7 @@
 
 /obj/item/circular_saw/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()
 
@@ -325,7 +325,7 @@
 
 /obj/item/surgical_drapes
 	name = "surgical drapes"
-	desc = "Sterile surgical drapes provide optimal safety and infection control."
+	desc = "Nanotrasen brand surgical drapes provide optimal safety and infection control."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "surgical_drapes"
 	w_class = WEIGHT_CLASS_TINY
@@ -367,13 +367,13 @@
 	if(!proximity)
 		return
 	if(contents.len)
-		to_chat(user, SPAN_NOTICE("[src] already has something inside it."))
+		to_chat(user, "<span class='notice'>[src] already has something inside it.</span>")
 		return
 	if(!isorgan(I) && !isbodypart(I))
-		to_chat(user, SPAN_NOTICE("[src] can only hold body parts!"))
+		to_chat(user, "<span class='notice'>[src] can only hold body parts!</span>")
 		return
 
-	user.visible_message("[user] puts [I] into [src].", SPAN_NOTICE("You put [I] inside [src]."))
+	user.visible_message("[user] puts [I] into [src].", "<span class='notice'>You put [I] inside [src].</span>")
 	icon_state = "evidence"
 	var/xx = I.pixel_x
 	var/yy = I.pixel_y
@@ -392,7 +392,7 @@
 /obj/item/organ_storage/attack_self(mob/user)
 	if(contents.len)
 		var/obj/item/I = contents[1]
-		user.visible_message("[user] dumps [I] from [src].", SPAN_NOTICE("You dump [I] from [src]."))
+		user.visible_message("[user] dumps [I] from [src].", "<span class='notice'>You dump [I] from [src].</span>")
 		cut_overlays()
 		I.forceMove(get_turf(src))
 		icon_state = "evidenceobj"
@@ -414,13 +414,13 @@
 	if(!proximity)
 		return
 	if(istype(O, /obj/item/disk/surgery))
-		to_chat(user, SPAN_NOTICE("You load the surgery protocol from [O] into [src]."))
+		to_chat(user, "<span class='notice'>You load the surgery protocol from [O] into [src].</span>")
 		var/obj/item/disk/surgery/D = O
 		if(do_after(user, 10, target = O))
 			advanced_surgeries |= D.surgeries
 		return TRUE
 	if(istype(O, /obj/machinery/computer/operating))
-		to_chat(user, SPAN_NOTICE("You copy surgery protocols from [O] into [src]."))
+		to_chat(user, "<span class='notice'>You copy surgery protocols from [O] into [src].</span>")
 		var/obj/machinery/computer/operating/OC = O
 		if(do_after(user, 10, target = O))
 			advanced_surgeries |= OC.advanced_surgeries
@@ -444,6 +444,6 @@
 
 /obj/item/bonesetter/attack(mob/living/L, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		to_chat(user, SPAN_WARNING("You refrain from hitting [L] with [src], as you are in help intent."))
+		to_chat(user, "<span class='warning'>You refrain from hitting [L] with [src], as you are in help intent.</span>")
 		return
 	return ..()

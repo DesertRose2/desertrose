@@ -10,12 +10,12 @@
 			return
 		var/turf/loccheck = get_turf(A)
 		if(is_reebe(loccheck.z))
-			user.visible_message(SPAN_WARNING("An unseen force knocks [user] to the ground!"), "<span class='big_brass'>\"I think not!\"</span>")
+			user.visible_message("<span class='warning'>An unseen force knocks [user] to the ground!</span>", "<span class='big_brass'>\"I think not!\"</span>")
 			user.DefaultCombatKnockdown(60)
 			return
 		if(istype(loccheck.loc, /area/fabric_of_reality))
-			to_chat(user, SPAN_DANGER("You can't do that here!"))
-		to_chat(user, SPAN_DANGER("The Bluespace interfaces of the two devices catastrophically malfunction!"))
+			to_chat(user, "<span class='danger'>You can't do that here!</span>")
+		to_chat(user, "<span class='danger'>The Bluespace interfaces of the two devices catastrophically malfunction!</span>")
 		qdel(W)
 		playsound(loccheck,'sound/effects/supermatter.ogg', 200, 1)
 		user.gib(TRUE, TRUE, TRUE)
@@ -24,7 +24,7 @@
 				continue
 			for(var/mob/living/M in T)
 				if(M.movement_type & FLYING)
-					M.visible_message(SPAN_DANGER("The bluespace collapse crushes the air towards it, pulling [M] towards the ground..."))
+					M.visible_message("<span class='danger'>The bluespace collapse crushes the air towards it, pulling [M] towards the ground...</span>")
 					M.DefaultCombatKnockdown(5, TRUE, TRUE)		//Overrides stun absorbs.
 			T.TerraformTurf(/turf/open/chasm/magic, /turf/open/chasm/magic)
 		for (var/obj/structure/ladder/unbreakable/binary/ladder in GLOB.ladders)

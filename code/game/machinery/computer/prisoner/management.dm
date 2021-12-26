@@ -74,7 +74,7 @@
 		if(screen)
 			id_insert(user)
 		else
-			to_chat(user, SPAN_DANGER("Unauthorized access."))
+			to_chat(user, "<span class='danger'>Unauthorized access.</span>")
 	else
 		return ..()
 
@@ -121,7 +121,7 @@
 				screen = !screen
 				playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
 			else
-				to_chat(usr, SPAN_DANGER("Unauthorized access."))
+				to_chat(usr, "<span class='danger'>Unauthorized access.</span>")
 
 		else if(href_list["warn"])
 			var/warning = stripped_input(usr, "Message:", "Enter your message here!", "", MAX_MESSAGE_LEN)

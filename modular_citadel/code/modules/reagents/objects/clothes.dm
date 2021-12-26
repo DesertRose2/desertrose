@@ -13,7 +13,7 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(is_ninja(C))
-			to_chat(C, SPAN_NOTICE("Using your superior ninja reflexes, you take the hat off before tipping."))
+			to_chat(C, "<span class='notice'>Using your superior ninja reflexes, you take the hat off before tipping.</span>")
 			return ..()
 
 		if(src == C.head)
@@ -28,7 +28,7 @@
 	if(usr)
 		var/mob/living/carbon/C = usr
 		if(is_ninja(C))
-			to_chat(C, SPAN_NOTICE("Using your superior ninja reflexes, you take the hat off before tipping."))
+			to_chat(C, "<span class='notice'>Using your superior ninja reflexes, you take the hat off before tipping.</span>")
 			return ..()
 
 		if(src == C.head)

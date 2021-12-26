@@ -304,15 +304,15 @@
 		if(alert)
 			switch(stability)
 				if(70 to 90)
-					message = SPAN_WARNING("You shiver.")
+					message = "<span class='warning'>You shiver.</span>"
 				if(60 to 69)
-					message = SPAN_WARNING("You feel cold.")
+					message = "<span class='warning'>You feel cold.</span>"
 				if(40 to 59)
-					message = SPAN_WARNING("You feel sick.")
+					message = "<span class='warning'>You feel sick.</span>"
 				if(20 to 39)
-					message = SPAN_WARNING("It feels like your skin is moving.")
+					message = "<span class='warning'>It feels like your skin is moving.</span>"
 				if(1 to 19)
-					message = SPAN_WARNING("You can feel your cells burning.")
+					message = "<span class='warning'>You can feel your cells burning.</span>"
 				if(-INFINITY to 0)
 					message = "<span class='boldwarning'>You can feel your DNA exploding, we need to do something fast!</span>"
 		if(stability <= 0)
@@ -669,7 +669,7 @@
 			if(2)
 				corgize()
 			if(3)
-				to_chat(src, SPAN_NOTICE("Oh, we actually feel quite alright!"))
+				to_chat(src, "<span class='notice'>Oh, we actually feel quite alright!</span>")
 	else
 		switch(rand(0,3))
 			if(0)

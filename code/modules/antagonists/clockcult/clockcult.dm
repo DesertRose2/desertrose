@@ -180,7 +180,7 @@
 	owner.current.log_message("has renounced the cult of Ratvar!", LOG_ATTACK, color="#BE8700")
 	owner.special_role = null
 	if(iscyborg(owner.current))
-		to_chat(owner.current, SPAN_WARNING("Despite your freedom from Ratvar's influence, you are still irreparably damaged and no longer possess certain functions such as AI linking."))
+		to_chat(owner.current, "<span class='warning'>Despite your freedom from Ratvar's influence, you are still irreparably damaged and no longer possess certain functions such as AI linking.</span>")
 	. = ..()
 
 
@@ -203,9 +203,9 @@
 
 /datum/antagonist/clockcult/proc/admin_give_slab(mob/admin)
 	if(!SSticker.mode.equip_servant(owner.current))
-		to_chat(admin, SPAN_WARNING("Failed to outfit [owner.current]!"))
+		to_chat(admin, "<span class='warning'>Failed to outfit [owner.current]!</span>")
 	else
-		to_chat(admin, SPAN_NOTICE("Successfully gave [owner.current] servant equipment!"))
+		to_chat(admin, "<span class='notice'>Successfully gave [owner.current] servant equipment!</span>")
 
 /datum/team/clockcult
 	name = "Clockcult"

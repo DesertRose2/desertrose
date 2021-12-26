@@ -64,9 +64,9 @@
 
 	if(isnum(.)) //Numerical values of drained handle their feedback here, Alpha values handle it themselves (Research hacking)
 		if(.)
-			to_chat(H, SPAN_NOTICE("Gained <B>[DisplayEnergy(.)]</B> of energy from [A]."))
+			to_chat(H, "<span class='notice'>Gained <B>[DisplayEnergy(.)]</B> of energy from [A].</span>")
 		else
-			to_chat(H, SPAN_DANGER("\The [A] has run dry of energy, you must find another source!"))
+			to_chat(H, "<span class='danger'>\The [A] has run dry of energy, you must find another source!</span>")
 		. = INTERRUPT_UNARMED_ATTACK
 	else
 		. = FALSE	//as to not cancel attack_hand()

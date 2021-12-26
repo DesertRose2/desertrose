@@ -177,7 +177,7 @@
 	L.flags_1 |= (flags_1 & ADMIN_SPAWNED_1)	//If we were admin spawned, lets have our children count as that as well.
 	spawned_mobs += L
 	L.nest = src
-	visible_message(SPAN_DANGER("[L] [spawn_text] [src]."))
+	visible_message("<span class='danger'>[L] [spawn_text] [src].</span>")
 
 
 /////////////////
@@ -329,7 +329,7 @@
 	if(prob(50))
 		return ..()
 	else
-		visible_message(SPAN_DANGER("[src] dodges [Proj]!"))
+		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
 		return 0
 
 /mob/living/simple_animal/hostile/cazador/young
@@ -404,7 +404,7 @@
 	if(prob(50))
 		return ..()
 	else
-		visible_message(SPAN_DANGER("[src] dodges [Proj]!"))
+		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
 		return 0
 
 

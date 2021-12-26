@@ -146,7 +146,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	if(user.zone_selected != BODY_ZONE_PRECISE_EYES && user.zone_selected != BODY_ZONE_HEAD)
 		return ..()
 	var/mob/living/carbon/human/poorsod = M
-	visible_message(SPAN_DANGER("[user] throws the sand at [poorsod]'s face!"))
+	visible_message("<span class='danger'>[user] throws the sand at [poorsod]'s face!</span>")
 	if(ishuman(user))
 		var/mob/living/carbon/human/sayer = user
 		sayer.forcesay("POCKET SAAND!!")
@@ -154,13 +154,13 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 
 /obj/item/stack/ore/glass/proc/eyesand(mob/living/carbon/human/C)
 	if(C.head && C.head.flags_cover & HEADCOVERSEYES)
-		visible_message(SPAN_DANGER("[C]'s headgear blocks the sand!"))
+		visible_message("<span class='danger'>[C]'s headgear blocks the sand!</span>")
 		return
 	if(C.wear_mask && C.wear_mask.flags_cover & MASKCOVERSEYES)
-		visible_message(SPAN_DANGER("[C]'s mask blocks the sand!"))
+		visible_message("<span class='danger'>[C]'s mask blocks the sand!</span>")
 		return
 	if(C.glasses && C.glasses.flags_cover & GLASSESCOVERSEYES)
-		visible_message(SPAN_DANGER("[C]'s glasses block the sand!"))
+		visible_message("<span class='danger'>[C]'s glasses block the sand!</span>")
 		return
 	C.adjust_blurriness(6)
 	C.adjustStaminaLoss(15)//the pain from your eyes burning does stamina damage
@@ -193,7 +193,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	merge_type = /obj/item/stack/ore/plasma
 
 /obj/item/stack/ore/plasma/welder_act(mob/living/user, obj/item/I)
-	to_chat(user, SPAN_WARNING("You can't hit a high enough temperature to smelt [src] properly!"))
+	to_chat(user, "<span class='warning'>You can't hit a high enough temperature to smelt [src] properly!</span>")
 	return TRUE
 
 /obj/item/stack/ore/silver
@@ -279,7 +279,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 
 /obj/item/gibtonite/attackby(obj/item/I, mob/user, params)
 	if(!wires && istype(I, /obj/item/assembly/igniter))
-		user.visible_message("[user] attaches [I] to [src].", SPAN_NOTICE("You attach [I] to [src]."))
+		user.visible_message("[user] attaches [I] to [src].", "<span class='notice'>You attach [I] to [src].</span>")
 		wires = new /datum/wires/explosive/gibtonite(src)
 		attacher = key_name(user)
 		qdel(I)
@@ -299,7 +299,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 			primed = FALSE
 			if(det_timer)
 				deltimer(det_timer)
-			user.visible_message("The chain reaction was stopped! ...The ore's quality looks diminished.", SPAN_NOTICE("You stopped the chain reaction. ...The ore's quality looks diminished."))
+			user.visible_message("The chain reaction was stopped! ...The ore's quality looks diminished.", "<span class='notice'>You stopped the chain reaction. ...The ore's quality looks diminished.</span>")
 			icon_state = "Gibtonite ore"
 			quality = GIBTONITE_QUALITY_LOW
 			return
@@ -342,7 +342,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 		else if(triggered_by == 2)
 			log_game("A signal has primed a [name] for detonation at [AREACOORD(bombturf)]. Igniter attacher: [key_name(attacher)].")
 		else
-			user.visible_message(SPAN_WARNING("[user] strikes \the [src], causing a chain reaction!"), SPAN_DANGER("You strike \the [src], causing a chain reaction."))
+			user.visible_message("<span class='warning'>[user] strikes \the [src], causing a chain reaction!</span>", "<span class='danger'>You strike \the [src], causing a chain reaction.</span>")
 			log_game("[key_name(user)] has primed a [name] for detonation at [AREACOORD(bombturf)]")
 		det_timer = addtimer(CALLBACK(src, .proc/detonate, notify_admins), det_time, TIMER_STOPPABLE)
 
@@ -431,15 +431,15 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 /obj/item/coin/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stack/cable_coil))
 		if(string_attached)
-			to_chat(user, SPAN_WARNING("There already is a string attached to this coin!"))
+			to_chat(user, "<span class='warning'>There already is a string attached to this coin!</span>")
 			return
 
 		if (W.use_tool(src, user, 0, 1, skill_gain_mult = BARE_USE_TOOL_MULT))
 			add_overlay("coin_string_overlay")
 			string_attached = 1
-			to_chat(user, SPAN_NOTICE("You attach a string to the coin."))
+			to_chat(user, "<span class='notice'>You attach a string to the coin.</span>")
 		else
-			to_chat(user, SPAN_WARNING("You need one length of cable to attach a string to the coin!"))
+			to_chat(user, "<span class='warning'>You need one length of cable to attach a string to the coin!</span>")
 			return
 	else
 		..()
@@ -451,13 +451,13 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	new /obj/item/stack/cable_coil(drop_location(), 1)
 	overlays = list()
 	string_attached = null
-	to_chat(user, SPAN_NOTICE("You detach the string from the coin."))
+	to_chat(user, "<span class='notice'>You detach the string from the coin.</span>")
 	return TRUE
 
 /obj/item/coin/attack_self(mob/user)
 	if(cooldown < world.time)
 		if(string_attached) //does the coin have a wire attached
-			to_chat(user, SPAN_WARNING("The coin won't flip very well with something attached!") )
+			to_chat(user, "<span class='warning'>The coin won't flip very well with something attached!</span>" )
 			return FALSE//do not flip the coin
 		cooldown = world.time + 15
 		flick("coin_[coinflip]_flip", src)
@@ -468,7 +468,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 		sleep(15)
 		if(loc == oldloc && user && !user.incapacitated())
 			user.visible_message("[user] has flipped [src]. It lands on [coinflip].", \
-								SPAN_NOTICE("You flip [src]. It lands on [coinflip]."), \
+								"<span class='notice'>You flip [src]. It lands on [coinflip].</span>", \
 								"<span class='italics'>You hear the clattering of loose change.</span>")
 	return TRUE//did the coin flip? useful for suicide_act
 

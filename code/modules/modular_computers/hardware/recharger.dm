@@ -55,7 +55,7 @@
 /obj/item/computer_hardware/recharger/wired/can_install(obj/item/modular_computer/M, mob/living/user = null)
 	if(ismachinery(M.physical) && M.physical.anchored)
 		return ..()
-	to_chat(user, SPAN_WARNING("\The [src] is incompatible with portable computers!"))
+	to_chat(user, "<span class='warning'>\The [src] is incompatible with portable computers!</span>")
 	return 0
 
 /obj/item/computer_hardware/recharger/wired/use_power(amount, charging=0)
@@ -82,7 +82,7 @@
 // This is not intended to be obtainable in-game. Intended for adminbus and debugging purposes.
 /obj/item/computer_hardware/recharger/lambda
 	name = "lambda coil"
-	desc = "A very complex device that draws power from its own quantum dimension."
+	desc = "A very complex device that draws power from its own bluespace dimension."
 	icon_state = "charger_lambda"
 	w_class = WEIGHT_CLASS_TINY
 	charge_rate = 100000

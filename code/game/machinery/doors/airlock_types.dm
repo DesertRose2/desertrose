@@ -271,7 +271,7 @@
 
 /obj/machinery/door/airlock/bananium
 	name = "bananium airlock"
-	desc = "Honkhonkhonk."
+	desc = "Honkhonkhonk"
 	icon = 'icons/obj/doors/airlocks/station/bananium.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_bananium
 	doorOpen = 'sound/items/bikehorn.ogg'
@@ -660,30 +660,30 @@
 		return 0
 	else if(istype(I, /obj/item/wrench))
 		if(construction_state == GEAR_SECURE)
-			user.visible_message(SPAN_NOTICE("[user] begins loosening [src]'s cogwheel..."), SPAN_NOTICE("You begin loosening [src]'s cogwheel..."))
+			user.visible_message("<span class='notice'>[user] begins loosening [src]'s cogwheel...</span>", "<span class='notice'>You begin loosening [src]'s cogwheel...</span>")
 			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_SECURE)
 				return 1
-			user.visible_message(SPAN_NOTICE("[user] loosens [src]'s cogwheel!"), SPAN_NOTICE("[src]'s cogwheel pops off and dangles loosely."))
+			user.visible_message("<span class='notice'>[user] loosens [src]'s cogwheel!</span>", "<span class='notice'>[src]'s cogwheel pops off and dangles loosely.</span>")
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			construction_state = GEAR_LOOSE
 		else if(construction_state == GEAR_LOOSE)
-			user.visible_message(SPAN_NOTICE("[user] begins tightening [src]'s cogwheel..."), SPAN_NOTICE("You begin tightening [src]'s cogwheel into place..."))
+			user.visible_message("<span class='notice'>[user] begins tightening [src]'s cogwheel...</span>", "<span class='notice'>You begin tightening [src]'s cogwheel into place...</span>")
 			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_LOOSE)
 				return 1
-			user.visible_message(SPAN_NOTICE("[user] tightens [src]'s cogwheel!"), SPAN_NOTICE("You firmly tighten [src]'s cogwheel into place."))
+			user.visible_message("<span class='notice'>[user] tightens [src]'s cogwheel!</span>", "<span class='notice'>You firmly tighten [src]'s cogwheel into place.</span>")
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			construction_state = GEAR_SECURE
 		return 1
 	else if(istype(I, /obj/item/crowbar))
 		if(construction_state == GEAR_SECURE)
-			to_chat(user, SPAN_WARNING("[src]'s cogwheel is too tightly secured! Your [I.name] can't reach under it!"))
+			to_chat(user, "<span class='warning'>[src]'s cogwheel is too tightly secured! Your [I.name] can't reach under it!</span>")
 			return 1
 		else if(construction_state == GEAR_LOOSE)
-			user.visible_message(SPAN_NOTICE("[user] begins slowly lifting off [src]'s cogwheel..."), SPAN_NOTICE("You slowly begin lifting off [src]'s cogwheel..."))
+			user.visible_message("<span class='notice'>[user] begins slowly lifting off [src]'s cogwheel...</span>", "<span class='notice'>You slowly begin lifting off [src]'s cogwheel...</span>")
 			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_LOOSE)
 				return 1
-			user.visible_message(SPAN_NOTICE("[user] lifts off [src]'s cogwheel, causing it to fall apart!"), \
-			SPAN_NOTICE("You lift off [src]'s cogwheel, causing it to fall apart!"))
+			user.visible_message("<span class='notice'>[user] lifts off [src]'s cogwheel, causing it to fall apart!</span>", \
+			"<span class='notice'>You lift off [src]'s cogwheel, causing it to fall apart!</span>")
 			deconstruct(TRUE)
 		return 1
 	return 0

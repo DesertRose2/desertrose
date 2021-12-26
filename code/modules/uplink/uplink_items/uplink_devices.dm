@@ -21,8 +21,8 @@
 	cost = 2
 
 /datum/uplink_item/device_tools/bluespacerecharge
-	name = "Quantum Crystal Recharging Device"
-	desc = "A small device intended for recharging Wall Walking boots. Using it will add six charges to them. Use ten quantum crystals on this recharger to add three more charges to it. "
+	name = "Bluespace Crystal Recharging Device"
+	desc = "A small device intended for recharging Wall Walking boots. Using it will add six charges to them. Use ten bluespace crystals on this recharger to add three more charges to it. "
 	item = /obj/item/bluespacerecharge
 	cost = 2
 
@@ -69,10 +69,10 @@
 	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 
 /datum/uplink_item/device_tools/compressionkit
-	name = "Quantum Compression Kit"
+	name = "Bluespace Compression Kit"
 	desc = "A modified version of a BSRPED that can be used to reduce the size of most items while retaining their original functions! \
 			Does not work on storage items. \
-			Recharge using quantum crystals. \
+			Recharge using bluespace crystals. \
 			Comes with 5 charges."
 	item = /obj/item/compressionkit
 	cost = 5

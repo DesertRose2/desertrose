@@ -82,11 +82,11 @@
 		if(C.has_trait(TRAIT_LIMBATTACHMENT))
 			if(!H.get_bodypart(body_zone) && !animal_origin)
 				if(H == user)
-					H.visible_message(SPAN_WARNING("[H] jams [src] into [H.p_their()] empty socket!"),\
-					SPAN_NOTICE("You force [src] into your empty socket, and it locks into place!"))
+					H.visible_message("<span class='warning'>[H] jams [src] into [H.p_their()] empty socket!</span>",\
+					"<span class='notice'>You force [src] into your empty socket, and it locks into place!</span>")
 				else
-					H.visible_message(SPAN_WARNING("[user] jams [src] into [H]'s empty socket!"),\
-					SPAN_NOTICE("[user] forces [src] into your empty socket, and it locks into place!"))
+					H.visible_message("<span class='warning'>[user] jams [src] into [H]'s empty socket!</span>",\
+					"<span class='notice'>[user] forces [src] into your empty socket, and it locks into place!</span>")
 				user.temporarilyRemoveItemFromInventory(src, TRUE)
 				attach_limb(C)
 				return
@@ -96,11 +96,11 @@
 	if(W.sharpness)
 		add_fingerprint(user)
 		if(!contents.len)
-			to_chat(user, SPAN_WARNING("There is nothing left inside [src]!"))
+			to_chat(user, "<span class='warning'>There is nothing left inside [src]!</span>")
 			return
 		playsound(loc, 'sound/weapons/slice.ogg', 50, 1, -1)
-		user.visible_message(SPAN_WARNING("[user] begins to cut open [src]."),\
-			SPAN_NOTICE("You begin to cut open [src]..."))
+		user.visible_message("<span class='warning'>[user] begins to cut open [src].</span>",\
+			"<span class='notice'>You begin to cut open [src]...</span>")
 		if(do_after(user, 54, target = src))
 			drop_organs(user)
 	else

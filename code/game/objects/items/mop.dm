@@ -43,11 +43,11 @@
 	var/mob/living/L = user
 
 	if(istype(L) && IS_STAMCRIT(L))
-		to_chat(user, SPAN_DANGER("You're too exhausted for that."))
+		to_chat(user, "<span class='danger'>You're too exhausted for that.</span>")
 		return
 
 	if(reagents.total_volume < 1)
-		to_chat(user, SPAN_WARNING("Your mop is dry!"))
+		to_chat(user, "<span class='warning'>Your mop is dry!</span>")
 		return
 
 	var/turf/T = get_turf(A)
@@ -56,7 +56,7 @@
 		return
 
 	if(T)
-		user.visible_message("[user] cleans \the [T] with [src].", SPAN_NOTICE("You clean \the [T] with [src]."))
+		user.visible_message("[user] cleans \the [T] with [src].", "<span class='notice'>You clean \the [T] with [src].</span>")
 		clean(T)
 		user.DelayNextAction(CLICK_CD_MELEE)
 		user.do_attack_animation(T, used_item = src)
@@ -78,7 +78,7 @@
 		J.mymop=src
 		J.update_icon()
 	else
-		to_chat(user, SPAN_WARNING("You are unable to fit your [name] into the [J.name]."))
+		to_chat(user, "<span class='warning'>You are unable to fit your [name] into the [J.name].</span>")
 		return
 
 /obj/item/mop/cyborg
@@ -110,7 +110,7 @@
 		START_PROCESSING(SSobj, src)
 	else
 		STOP_PROCESSING(SSobj,src)
-	to_chat(user, SPAN_NOTICE("You set the condenser switch to the '[refill_enabled ? "ON" : "OFF"]' position."))
+	to_chat(user, "<span class='notice'>You set the condenser switch to the '[refill_enabled ? "ON" : "OFF"]' position.</span>")
 	playsound(user, 'sound/machines/click.ogg', 30, 1)
 
 /obj/item/mop/advanced/process()
@@ -120,7 +120,7 @@
 
 /obj/item/mop/advanced/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("The condenser switch is set to <b>[refill_enabled ? "ON" : "OFF"]</b>.")
+	. += "<span class='notice'>The condenser switch is set to <b>[refill_enabled ? "ON" : "OFF"]</b>.</span>"
 
 /obj/item/mop/advanced/Destroy()
 	if(refill_enabled)

@@ -31,9 +31,9 @@
 /obj/machinery/dna_scannernew/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: Radiation pulse accuracy increased by factor <b>[precision_coeff**2]</b>.<br>Radiation pulse damage decreased by factor <b>[damage_coeff**2]</b>.")
+		. += "<span class='notice'>The status display reads: Radiation pulse accuracy increased by factor <b>[precision_coeff**2]</b>.<br>Radiation pulse damage decreased by factor <b>[damage_coeff**2]</b>.</span>"
 		if(scan_level >= 3)
-			. += SPAN_NOTICE("Scanner has been upgraded to support autoprocessing.")
+			. += "<span class='notice'>Scanner has been upgraded to support autoprocessing.</span>"
 
 /obj/machinery/dna_scannernew/update_icon_state()
 	//no power or maintenance
@@ -55,7 +55,7 @@
 
 /obj/machinery/dna_scannernew/proc/toggle_open(mob/user)
 	if(panel_open)
-		to_chat(user, SPAN_NOTICE("Close the maintenance panel first."))
+		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
 		return
 
 	if(state_open)
@@ -63,7 +63,7 @@
 		return
 
 	else if(locked)
-		to_chat(user, SPAN_NOTICE("The bolts are locked down, securing the door shut."))
+		to_chat(user, "<span class='notice'>The bolts are locked down, securing the door shut.</span>")
 		return
 
 	open_machine()
@@ -72,15 +72,15 @@
 	if(!locked)
 		open_machine()
 		return
-	user.visible_message(SPAN_NOTICE("You see [user] kicking against the door of [src]!"), \
-		SPAN_NOTICE("You lean on the back of [src] and start pushing the door open... (this will take about [DisplayTimeText(breakout_time)].)"), \
+	user.visible_message("<span class='notice'>You see [user] kicking against the door of [src]!</span>", \
+		"<span class='notice'>You lean on the back of [src] and start pushing the door open... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
 		"<span class='hear'>You hear a metallic creaking from [src].</span>")
 	if(do_after(user,(breakout_time), target = src))
 		if(!user || user.stat != CONSCIOUS || user.loc != src || state_open || !locked)
 			return
 		locked = FALSE
-		user.visible_message(SPAN_WARNING("[user] successfully broke out of [src]!"), \
-			SPAN_NOTICE("You successfully break out of [src]!"))
+		user.visible_message("<span class='warning'>[user] successfully broke out of [src]!</span>", \
+			"<span class='notice'>You successfully break out of [src]!</span>")
 		open_machine()
 
 /obj/machinery/dna_scannernew/proc/locate_computer(type_)
@@ -126,7 +126,7 @@
 	if(user.stat || locked)
 		if(message_cooldown <= world.time)
 			message_cooldown = world.time + 50
-			to_chat(user, SPAN_WARNING("[src]'s door won't budge!"))
+			to_chat(user, "<span class='warning'>[src]'s door won't budge!</span>")
 		return
 	open_machine()
 
@@ -171,7 +171,7 @@
 
 /obj/item/disk/data/attack_self(mob/user)
 	read_only = !read_only
-	to_chat(user, SPAN_NOTICE("You flip the write-protect tab to [read_only ? "protected" : "unprotected"]."))
+	to_chat(user, "<span class='notice'>You flip the write-protect tab to [read_only ? "protected" : "unprotected"].</span>")
 
 /obj/item/disk/data/examine(mob/user)
 	. = ..()

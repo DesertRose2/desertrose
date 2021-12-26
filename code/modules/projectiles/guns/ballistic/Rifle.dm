@@ -38,7 +38,7 @@
 	if(recentpump > world.time)
 		return
 	if(IS_STAMCRIT(user))//CIT CHANGE - makes pumping shotguns impossible in stamina softcrit
-		to_chat(user, SPAN_WARNING("You're too exhausted for that."))//CIT CHANGE - ditto
+		to_chat(user, "<span class='warning'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
 		return//CIT CHANGE - ditto
 	pump(user, TRUE)
 	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
@@ -57,7 +57,7 @@
 
 /obj/item/gun/ballistic/rifle/proc/pump(mob/M, visible = TRUE)
 	if(visible)
-		M.visible_message(SPAN_WARNING("[M] racks [src]."), SPAN_WARNING("You rack [src]."))
+		M.visible_message("<span class='warning'>[M] racks [src].</span>", "<span class='warning'>You rack [src].</span>")
 	playsound(M, pump_sound, 60, 1)
 	pump_unload(M)
 	pump_reload(M)
@@ -111,7 +111,7 @@
 
 /obj/item/gun/ballistic/rifle/boltaction/attackby(obj/item/A, mob/user, params)
 	if(!bolt_open)
-		to_chat(user, SPAN_NOTICE("The bolt is closed!"))
+		to_chat(user, "<span class='notice'>The bolt is closed!</span>")
 		return
 	. = ..()
 
@@ -329,7 +329,7 @@
 
 /obj/item/gun/ballistic/rifle/mag/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Alt-click to remove the magazine.")
+	. += "<span class='notice'>Alt-click to remove the magazine.</span>"
 
 /obj/item/gun/ballistic/rifle/mag/AltClick(mob/living/user)
 	var/obj/item/ammo_casing/AC = chambered //Find chambered round
@@ -342,15 +342,15 @@
 		else
 			playsound(src, "gun_remove_empty_magazine", 70, 1)
 		magazine = null
-		to_chat(user, SPAN_NOTICE("You pull the magazine out of \the [src]."))
+		to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
 		AC.forceMove(drop_location())
 		AC.bounce_away()
 		chambered = null
-		to_chat(user, SPAN_NOTICE("You unload the round from \the [src]'s chamber."))
+		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
 		playsound(src, "gun_slide_lock", 70, 1)
 	else
-		to_chat(user, SPAN_NOTICE("There's no magazine in \the [src]."))
+		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()
 	return
 

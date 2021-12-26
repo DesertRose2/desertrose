@@ -22,7 +22,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/revolver/m29/coltwalker)
 	healable = 1
 	ranged = 1
-	del_on_death = 1
+	del_on_death = 0
 	projectiletype = /obj/item/projectile/bullet/m44/swc
 	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
 	casingtype = /obj/item/ammo_casing/m44/swc

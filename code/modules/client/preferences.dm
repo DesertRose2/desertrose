@@ -1159,7 +1159,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		return
 
 	if (!isnum(desiredLvl))
-		to_chat(user, SPAN_DANGER("UpdateJobPreference - desired level was not a number. Please notify coders!"))
+		to_chat(user, "<span class='danger'>UpdateJobPreference - desired level was not a number. Please notify coders!</span>")
 		ShowChoices(user)
 		return
 
@@ -1189,7 +1189,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 /datum/preferences/proc/SetQuirks(mob/user)
 	if(!SSquirks)
-		to_chat(user, SPAN_DANGER("The quirk subsystem is still initializing! Try again in a minute."))
+		to_chat(user, "<span class='danger'>The quirk subsystem is still initializing! Try again in a minute.</span>")
 		return
 
 	var/list/dat = list()
@@ -1253,7 +1253,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 /datum/preferences/proc/SetSpecial(mob/user)
 //	if(!SSquirks)
-	//	to_chat(user, SPAN_DANGER("The quirk subsystem is still initializing! Try again in a minute."))
+	//	to_chat(user, "<span class='danger'>The quirk subsystem is still initializing! Try again in a minute.</span>")
 //		return
 
 	var/list/dat = list()
@@ -1368,21 +1368,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/list/L = V
 					for(var/Q in all_quirks)
 						if((quirk in L) && (Q in L) && !(Q == quirk)) //two quirks have lined up in the list of the list of quirks that conflict with each other, so return (see quirks.dm for more details)
-							to_chat(user, SPAN_DANGER("[quirk] is incompatible with [Q]."))
+							to_chat(user, "<span class='danger'>[quirk] is incompatible with [Q].</span>")
 							return
 				var/value = SSquirks.quirk_points[quirk]
 				var/balance = GetQuirkBalance()
 				if(quirk in all_quirks)
 					if(balance + value < 0)
-						to_chat(user, SPAN_WARNING("Refunding this would cause you to go below your balance!"))
+						to_chat(user, "<span class='warning'>Refunding this would cause you to go below your balance!</span>")
 						return
 					all_quirks -= quirk
 				else
 					if(GetPositiveQuirkCount() >= MAX_QUIRKS)
-						to_chat(user, SPAN_WARNING("You can't have more than [MAX_QUIRKS] positive quirks!"))
+						to_chat(user, "<span class='warning'>You can't have more than [MAX_QUIRKS] positive quirks!</span>")
 						return
 					if(balance - value < 0)
-						to_chat(user, SPAN_WARNING("You don't have enough balance to gain this quirk!"))
+						to_chat(user, "<span class='warning'>You don't have enough balance to gain this quirk!</span>")
 						return
 					all_quirks += quirk
 				SetQuirks(user)
@@ -1614,7 +1614,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 										if(modified_limbs[modified_limb][1] == LOADOUT_LIMB_PROSTHETIC && modified_limb != limb_type)
 											number_of_prosthetics += 1
 									if(number_of_prosthetics == MAXIMUM_LOADOUT_PROSTHETICS)
-										to_chat(user, SPAN_DANGER("You can only have up to two prosthetic limbs!"))
+										to_chat(user, "<span class='danger'>You can only have up to two prosthetic limbs!</span>")
 									else
 										//save the actual prosthetic data
 										modified_limbs[limb_type] = list(modification_type, prosthetic_type)
@@ -1719,7 +1719,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mutant_color2")
 					var/new_mutantcolor = input(user, "Choose your character's secondary alien/mutant color:", "Character Preference","#"+features["mcolor2"]) as color|null
@@ -1730,7 +1730,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor2"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mutant_color3")
 					var/new_mutantcolor = input(user, "Choose your character's tertiary alien/mutant color:", "Character Preference","#"+features["mcolor3"]) as color|null
@@ -1741,7 +1741,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor3"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mismatched_markings")
 					show_mismatched_markings = !show_mismatched_markings
@@ -1945,7 +1945,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if(custom_tone)
 								var/temp_hsv = RGBtoHSV(custom_tone)
 								if(ReadHSV(temp_hsv)[3] < ReadHSV("#333333")[3]) // rgb(50,50,50)
-									to_chat(user,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+									to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 								else
 									use_custom_skin_tone = TRUE
 									skin_tone = custom_tone
@@ -2057,7 +2057,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["cock_color"] = sanitize_hexcolor(new_cockcolor, 6)
 						else
-							to_chat(user,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("cock_length")
 					var/min_D = CONFIG_GET(number/penis_min_inches_prefs)
@@ -2097,7 +2097,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["balls_color"] = sanitize_hexcolor(new_ballscolor, 6)
 						else
-							to_chat(user,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("balls_visibility")
 					var/n_vis = input(user, "Testicles Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2124,7 +2124,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["breasts_color"] = sanitize_hexcolor(new_breasts_color, 6)
 						else
-							to_chat(user,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("breasts_visibility")
 					var/n_vis = input(user, "Breasts Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2146,7 +2146,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["vag_color"] = sanitize_hexcolor(new_vagcolor, 6)
 						else
-							to_chat(user,SPAN_DANGER("Invalid color. Your color is not bright enough."))
+							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("vag_visibility")
 					var/n_vis = input(user, "Vagina Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2462,7 +2462,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					persistent_scars = !persistent_scars
 
 				if("clear_scars")
-					to_chat(user, SPAN_NOTICE("All scar slots cleared. Please save character to confirm."))
+					to_chat(user, "<span class='notice'>All scar slots cleared. Please save character to confirm.</span>")
 					scars_list["1"] = ""
 					scars_list["2"] = ""
 					scars_list["3"] = ""
@@ -2604,11 +2604,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else if(toggle && (!(is_type_in_ref_list(G, chosen_gear))))
 				/*
 				if(!is_loadout_slot_available(G.category))
-					to_chat(user, SPAN_DANGER("You cannot take this loadout, as you've already chosen too many of the same category!"))
+					to_chat(user, "<span class='danger'>You cannot take this loadout, as you've already chosen too many of the same category!</span>")
 					return
 				*/
 				if(G.donoritem && !G.donator_ckey_check(user.ckey))
-					to_chat(user, SPAN_DANGER("This is an item intended for donator use only. You are not authorized to use this item."))
+					to_chat(user, "<span class='danger'>This is an item intended for donator use only. You are not authorized to use this item.</span>")
 					return
 				if(gear_points >= initial(G.cost))
 					chosen_gear += G.type

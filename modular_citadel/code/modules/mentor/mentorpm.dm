@@ -3,7 +3,7 @@
 	set category = "Mentor"
 	set name = "Mentor PM"
 	if(!is_mentor())
-		to_chat(src, SPAN_DANGER("Error: Mentor-PM-Panel: Only Mentors and Admins may use this command."))
+		to_chat(src, "<span class='danger'>Error: Mentor-PM-Panel: Only Mentors and Admins may use this command.</span>")
 		return
 	var/list/client/targets[0]
 	for(var/client/T)
@@ -27,7 +27,7 @@
 	else if(istype(whom,/client))
 		C = whom
 	if(!C)
-		if(is_mentor())	to_chat(src, SPAN_DANGER("Error: Mentor-PM: Client not found."))
+		if(is_mentor())	to_chat(src, "<span class='danger'>Error: Mentor-PM: Client not found.</span>")
 		else		mentorhelp(msg)	//Mentor we are replying to left. Mentorhelp instead(check below)
 		return
 
@@ -45,7 +45,7 @@
 
 		if(!C)
 			if(is_mentor())
-				to_chat(src, SPAN_DANGER("Error: Mentor-PM: Client not found."))
+				to_chat(src, "<span class='danger'>Error: Mentor-PM: Client not found.</span>")
 			else
 				mentorhelp(msg)	//Mentor we are replying to has vanished, Mentorhelp instead (how the fuck does this work?let's hope it works,shrug)
 				return

@@ -63,12 +63,12 @@
 		return
 	if (get_active_held_item())
 		if (HAS_TRAIT_FROM(src, TRAIT_AUTO_CATCH_ITEM,RISING_BASS_TRAIT))
-			visible_message(SPAN_WARNING("[src] chops [I] out of the air!"))
+			visible_message("<span class='warning'>[src] chops [I] out of the air!</span>")
 			return TRUE
 		return
 	I.attack_hand(src)
 	if(get_active_held_item() == I) //if our attack_hand() picks up the item...
-		visible_message(SPAN_WARNING("[src] catches [I]!")) //catch that sucker!
+		visible_message("<span class='warning'>[src] catches [I]!</span>") //catch that sucker!
 		throw_mode_off()
 		return TRUE
 
@@ -172,9 +172,9 @@
 			if(M.powerlevel < 0)
 				M.powerlevel = 0
 
-			visible_message(SPAN_DANGER("The [M.name] has shocked [src]!"), \
+			visible_message("<span class='danger'>The [M.name] has shocked [src]!</span>", \
 			"<span class='userdanger'>The [M.name] has shocked you!</span>", target = M,
-			target_message = SPAN_DANGER("You have shocked [src]!"))
+			target_message = "<span class='danger'>You have shocked [src]!</span>")
 
 			do_sparks(5, TRUE, src)
 			var/power = M.powerlevel + rand(0,3)
@@ -263,7 +263,7 @@
 
 /mob/living/carbon/proc/help_shake_act(mob/living/carbon/M)
 	if(on_fire)
-		to_chat(M, SPAN_WARNING("You can't put [p_them()] out with just your bare hands!"))
+		to_chat(M, "<span class='warning'>You can't put [p_them()] out with just your bare hands!</span>")
 		return
 
 	if(M == src && check_self_for_injuries())
@@ -277,15 +277,15 @@
 			if(buckled)
 				to_chat(M, "<span class='warning'>You need to unbuckle [src] first to do that!")
 				return
-			M.visible_message(SPAN_NOTICE("[M] shakes [src] trying to get [p_them()] up!"), \
-							SPAN_NOTICE("You shake [src] trying to get [p_them()] up!"), target = src,
-							target_message = SPAN_NOTICE("[M] shakes you trying to get you up!"))
+			M.visible_message("<span class='notice'>[M] shakes [src] trying to get [p_them()] up!</span>", \
+							"<span class='notice'>You shake [src] trying to get [p_them()] up!</span>", target = src,
+							target_message = "<span class='notice'>[M] shakes you trying to get you up!</span>")
 
 		else if(M.zone_selected == BODY_ZONE_PRECISE_MOUTH) // I ADDED BOOP-EH-DEH-NOSEH - Jon
 			M.visible_message( \
-				SPAN_NOTICE("[M] boops [src]'s nose."), \
-				SPAN_NOTICE("You boop [src] on the nose."), target = src,
-				target_message = SPAN_NOTICE("[M] boops your nose."))
+				"<span class='notice'>[M] boops [src]'s nose.</span>", \
+				"<span class='notice'>You boop [src] on the nose.</span>", target = src,
+				target_message = "<span class='notice'>[M] boops your nose.</span>")
 			playsound(src, 'sound/items/Nose_boop.ogg', 50, 0)
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
@@ -293,9 +293,9 @@
 			if(ishuman(src))
 				S = dna.species
 
-			M.visible_message(SPAN_NOTICE("[M] gives [src] a pat on the head to make [p_them()] feel better!"), \
-						SPAN_NOTICE("You give [src] a pat on the head to make [p_them()] feel better!"), target = src,
-						target_message = SPAN_NOTICE("[M] gives you a pat on the head to make you feel better!"))
+			M.visible_message("<span class='notice'>[M] gives [src] a pat on the head to make [p_them()] feel better!</span>", \
+						"<span class='notice'>You give [src] a pat on the head to make [p_them()] feel better!</span>", target = src,
+						target_message = "<span class='notice'>[M] gives you a pat on the head to make you feel better!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 			friendly_check = TRUE
 			if(!(client?.prefs.cit_toggles & NO_AUTO_WAG))
@@ -307,14 +307,14 @@
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_R_ARM || check_zone(M.zone_selected) == BODY_ZONE_L_ARM)
 			M.visible_message( \
-				SPAN_NOTICE("[M] shakes [src]'s hand."), \
-				SPAN_NOTICE("You shake [src]'s hand."), target = src,
-				target_message = SPAN_NOTICE("[M] shakes your hand."))
+				"<span class='notice'>[M] shakes [src]'s hand.</span>", \
+				"<span class='notice'>You shake [src]'s hand.</span>", target = src,
+				target_message = "<span class='notice'>[M] shakes your hand.</span>")
 
 		else
-			M.visible_message(SPAN_NOTICE("[M] hugs [src] to make [p_them()] feel better!"), \
-						SPAN_NOTICE("You hug [src] to make [p_them()] feel better!"), target = src,\
-						target_message = SPAN_NOTICE("[M] hugs you to make you feel better!"))
+			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>", \
+						"<span class='notice'>You hug [src] to make [p_them()] feel better!</span>", target = src,\
+						target_message = "<span class='notice'>[M] hugs you to make you feel better!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "hug", /datum/mood_event/hug)
 			friendly_check = TRUE
 
@@ -348,8 +348,8 @@
 			if(!embeds)
 				embeds = TRUE
 				// this way, we only visibly try to examine ourselves if we have something embedded, otherwise we'll still hug ourselves :)
-				visible_message(SPAN_NOTICE("[src] examines [p_them()]self."), \
-					SPAN_NOTICE("You check yourself for shrapnel."))
+				visible_message("<span class='notice'>[src] examines [p_them()]self.</span>", \
+					"<span class='notice'>You check yourself for shrapnel.</span>")
 			if(I.isEmbedHarmless())
 				to_chat(src, "\t <a href='?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(LB)]' class='warning'>There is \a [I] stuck to your [LB.name]!</a>")
 			else
@@ -369,16 +369,16 @@
 			return
 
 		if (damage == 1)
-			to_chat(src, SPAN_WARNING("Your eyes sting a little."))
+			to_chat(src, "<span class='warning'>Your eyes sting a little.</span>")
 			if(prob(40))
 				eyes.applyOrganDamage(1)
 
 		else if (damage == 2)
-			to_chat(src, SPAN_WARNING("Your eyes burn."))
+			to_chat(src, "<span class='warning'>Your eyes burn.</span>")
 			eyes.applyOrganDamage(rand(2, 4))
 
 		else if( damage >= 3)
-			to_chat(src, SPAN_WARNING("Your eyes itch and burn severely!"))
+			to_chat(src, "<span class='warning'>Your eyes itch and burn severely!</span>")
 			eyes.applyOrganDamage(rand(12, 16))
 
 		if(eyes.damage > 10)
@@ -388,22 +388,22 @@
 			if(eyes.damage > 20)
 				if(prob(eyes.damage - 20))
 					if(!HAS_TRAIT(src, TRAIT_NEARSIGHT))
-						to_chat(src, SPAN_WARNING("Your eyes start to burn badly!"))
+						to_chat(src, "<span class='warning'>Your eyes start to burn badly!</span>")
 					become_nearsighted(EYE_DAMAGE)
 
 				else if(prob(eyes.damage - 25))
 					if(!HAS_TRAIT(src, TRAIT_BLIND))
-						to_chat(src, SPAN_WARNING("You can't see anything!"))
+						to_chat(src, "<span class='warning'>You can't see anything!</span>")
 					eyes.applyOrganDamage(eyes.maxHealth)
 
 			else
-				to_chat(src, SPAN_WARNING("Your eyes are really starting to hurt. This can't be good for you!"))
+				to_chat(src, "<span class='warning'>Your eyes are really starting to hurt. This can't be good for you!</span>")
 		if(has_bane(BANE_LIGHT))
 			mind.disrupt_spells(-500)
 		return TRUE
 	else if(damage == 0) // just enough protection
 		if(prob(20))
-			to_chat(src, SPAN_NOTICE("Something bright flashes in the corner of your vision!"))
+			to_chat(src, "<span class='notice'>Something bright flashes in the corner of your vision!</span>")
 		if(has_bane(BANE_LIGHT))
 			mind.disrupt_spells(0)
 
@@ -425,13 +425,13 @@
 			adjustEarDamage(ear_damage,deaf)
 
 			if(ears.damage >= 15)
-				to_chat(src, SPAN_WARNING("Your ears start to ring badly!"))
+				to_chat(src, "<span class='warning'>Your ears start to ring badly!</span>")
 				if(prob(ears.damage - 5))
 					to_chat(src, "<span class='userdanger'>You can't hear anything!</span>")
 					ears.damage = min(ears.damage, ears.maxHealth)
 					// you need earmuffs, inacusiate, or replacement
 			else if(ears.damage >= 5)
-				to_chat(src, SPAN_WARNING("Your ears start to ring!"))
+				to_chat(src, "<span class='warning'>Your ears start to ring!</span>")
 			SEND_SOUND(src, sound('sound/weapons/flash_ring.ogg',0,1,0,250))
 		return effect_amount //how soundbanged we are
 
@@ -504,6 +504,6 @@
 		attack_message_local = "[user] [message_verb] you[message_hit_area] with [I][extra_wound_details]!"
 	if(user == src)
 		attack_message_local = "You [message_verb] yourself[message_hit_area] with [I][extra_wound_details]"
-	visible_message(SPAN_DANGER("[attack_message]"),\
+	visible_message("<span class='danger'>[attack_message]</span>",\
 		"<span class='userdanger'>[attack_message_local]</span>", null, COMBAT_MESSAGE_RANGE)
 	return TRUE

@@ -10,6 +10,7 @@
 	siemens_coefficient = 1
 	var/spamcheck = 0
 	var/list/voicespan = list(SPAN_COMMAND)
+	var/megaphone_sound = 'sound/items/megaphone.ogg'
 
 /obj/item/megaphone/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] is uttering [user.p_their()] last words into \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -31,9 +32,9 @@
 /obj/item/megaphone/proc/handle_speech(mob/living/carbon/user, list/speech_args)
 	if (user.get_active_held_item() == src)
 		if(spamcheck > world.time)
-			to_chat(user, SPAN_WARNING("\The [src] needs to recharge!"))
+			to_chat(user, "<span class='warning'>\The [src] needs to recharge!</span>")
 		else
-			playsound(loc, 'sound/items/megaphone.ogg', 100, 0, 1)
+			playsound(loc, megaphone_sound, 100, 0, 1)
 			spamcheck = world.time + 50
 			speech_args[SPEECH_SPANS] |= voicespan
 
@@ -41,7 +42,7 @@
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, SPAN_WARNING("You overload \the [src]'s voice synthesizer."))
+	to_chat(user, "<span class='warning'>You overload \the [src]'s voice synthesizer.</span>")
 	obj_flags |= EMAGGED
 	voicespan = list(SPAN_REALLYBIG, "userdanger")
 	return TRUE
@@ -63,3 +64,13 @@
 	desc = "Something that should not exist."
 	icon_state = "megaphone-clown"
 	voicespan = list(SPAN_CLOWN)
+
+/obj/item/megaphone/cornu
+	name = "cornu horn"
+	desc = "A horn carried by roman flagbearers to inform the commander's orders to the troops. Loudly."
+	icon = 'icons/obj/musician.dmi'
+	icon_state = "cornu"
+	item_state = "cornu"
+	lefthand_file = 'icons/mob/inhands/equipment/horns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/horns_righthand.dmi'
+	megaphone_sound = 'sound/items/cornu.ogg'

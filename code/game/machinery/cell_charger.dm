@@ -36,34 +36,34 @@
 	if(charging)
 		. += "Current charge: [round(charging.percent(), 1)]%."
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: Charge rate at <b>[charge_rate]J</b> per cycle.")
+		. += "<span class='notice'>The status display reads: Charge rate at <b>[charge_rate]J</b> per cycle.</span>"
 
 /obj/machinery/cell_charger/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stock_parts/cell) && !panel_open)
 		if(stat & BROKEN)
-			to_chat(user, SPAN_WARNING("[src] is broken!"))
+			to_chat(user, "<span class='warning'>[src] is broken!</span>")
 			return
 		if(!anchored)
-			to_chat(user, SPAN_WARNING("[src] isn't attached to the ground!"))
+			to_chat(user, "<span class='warning'>[src] isn't attached to the ground!</span>")
 			return
 		if(charging)
-			to_chat(user, SPAN_WARNING("There is already a cell in the charger!"))
+			to_chat(user, "<span class='warning'>There is already a cell in the charger!</span>")
 			return
 		if (is_type_in_list(W, blacklistcells))
-			to_chat(user, SPAN_WARNING("You cannot fit that there!"))
+			to_chat(user, "<span class='warning'>You cannot fit that there!</span>")
 			return	
 		else
 			var/area/a = loc.loc // Gets our locations location, like a dream within a dream
 			if(!isarea(a))
 				return
 			if(!a.powered(EQUIP)) // There's no APC in this area, don't try to cheat power!
-				to_chat(user, SPAN_WARNING("[src] blinks red as you try to insert the cell!"))
+				to_chat(user, "<span class='warning'>[src] blinks red as you try to insert the cell!</span>")
 				return
 			if(!user.transferItemToLoc(W,src))
 				return
 
 			charging = W
-			user.visible_message("[user] inserts a cell into [src].", SPAN_NOTICE("You insert a cell into [src]."))
+			user.visible_message("[user] inserts a cell into [src].", "<span class='notice'>You insert a cell into [src].</span>")
 			update_icon()
 	else
 		if(!charging && default_deconstruction_screwdriver(user, icon_state, icon_state, W))
@@ -95,7 +95,7 @@
 	user.put_in_hands(charging)
 	charging.add_fingerprint(user)
 
-	user.visible_message("[user] removes [charging] from [src].", SPAN_NOTICE("You remove [charging] from [src]."))
+	user.visible_message("[user] removes [charging] from [src].", "<span class='notice'>You remove [charging] from [src].</span>")
 
 	removecell()
 
@@ -104,7 +104,7 @@
 		return
 
 	charging.forceMove(loc)
-	to_chat(user, SPAN_NOTICE("You telekinetically remove [charging] from [src]."))
+	to_chat(user, "<span class='notice'>You telekinetically remove [charging] from [src].</span>")
 
 	removecell()
 
@@ -113,7 +113,7 @@
 		return
 
 	charging.forceMove(loc)
-	to_chat(user, SPAN_NOTICE("You remotely disconnect the battery port and eject [charging] from [src]."))
+	to_chat(user, "<span class='notice'>You remotely disconnect the battery port and eject [charging] from [src].</span>")
 
 	removecell()
 	return

@@ -125,7 +125,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		if(istype(Itm.loc, /mob))
 			var/mob/M = Itm.loc
 			if(!M.dropItemToGround(Itm))
-				to_chat(usr, SPAN_WARNING("\the [Itm] is stuck to your hand, you cannot put it in \the [src]!"))
+				to_chat(usr, "<span class='warning'>\the [Itm] is stuck to your hand, you cannot put it in \the [src]!</span>")
 				return
 
 		Itm.forceMove(src)
@@ -516,7 +516,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Rad-X pill",					/obj/item/reagent_containers/pill/radx,								20),
 		new /datum/data/wasteland_equipment("RadAway",						/obj/item/reagent_containers/blood/radaway,							30),
 		new /datum/data/wasteland_equipment("Stimpak",						/obj/item/reagent_containers/hypospray/medipen/stimpak,				100),
-		new /datum/data/wasteland_equipment("Chemistry for Wastelanders",	/obj/item/book/granter/trait/crafting/chemistry,								600),
+		new /datum/data/wasteland_equipment("Chemistry for Wastelanders",	/obj/item/book/granter/trait/chemistry,								600),
 		new /datum/data/wasteland_equipment("Surgery for Wastelanders",		/obj/item/book/granter/trait/lowsurgery,							500)
 		)
 	highpop_list = list(
@@ -524,7 +524,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Empty pillbottle",				/obj/item/storage/pill_bottle,										15),
 		new /datum/data/wasteland_equipment("Rad-X pill",					/obj/item/reagent_containers/pill/radx,								20),
 		new /datum/data/wasteland_equipment("RadAway",						/obj/item/reagent_containers/blood/radaway,							30),
-		new /datum/data/wasteland_equipment("Chemistry for Wastelanders",	/obj/item/book/granter/trait/crafting/chemistry,								600),
+		new /datum/data/wasteland_equipment("Chemistry for Wastelanders",	/obj/item/book/granter/trait/chemistry,								600),
 		new /datum/data/wasteland_equipment("Surgery for Wastelanders",		/obj/item/book/granter/trait/lowsurgery,							500)
 		)
 
@@ -664,14 +664,14 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
-		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/crafting/demolitions,						600)
+		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Random manual",					/obj/item/book/manual/random,									40),
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
-		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/crafting/demolitions,						600)
+		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 
 /obj/machinery/mineral/wasteland_vendor/advcomponents
@@ -804,27 +804,27 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	if(href_list["purchase"] && GLOB.player_list.len>50)
 		var/datum/data/wasteland_equipment/prize = locate(href_list["purchase"])
 		if (!prize || !(prize in highpop_list))
-			to_chat(usr, SPAN_WARNING("Error: Invalid choice!"))
+			to_chat(usr, "<span class='warning'>Error: Invalid choice!</span>")
 			return
 		if(prize.cost > stored_caps)
-			to_chat(usr, SPAN_WARNING("Error: Insufficent bottle caps value for [prize.equipment_name]!"))
+			to_chat(usr, "<span class='warning'>Error: Insufficent bottle caps value for [prize.equipment_name]!</span>")
 		else
 			stored_caps -= prize.cost
 			GLOB.vendor_cash += prize.cost
-			to_chat(usr, SPAN_NOTICE("[src] clanks to life briefly before vending [prize.equipment_name]!"))
+			to_chat(usr, "<span class='notice'>[src] clanks to life briefly before vending [prize.equipment_name]!</span>")
 			new prize.equipment_path(src.loc)
 			SSblackbox.record_feedback("nested tally", "wasteland_equipment_bought", 1, list("[type]", "[prize.equipment_path]"))
 	else if(href_list["purchase"])
 		var/datum/data/wasteland_equipment/prize = locate(href_list["purchase"])
 		if (!prize || !(prize in prize_list))
-			to_chat(usr, SPAN_WARNING("Error: Invalid choice!"))
+			to_chat(usr, "<span class='warning'>Error: Invalid choice!</span>")
 			return
 		if(prize.cost > stored_caps)
-			to_chat(usr, SPAN_WARNING("Error: Insufficent bottle caps value for [prize.equipment_name]!"))
+			to_chat(usr, "<span class='warning'>Error: Insufficent bottle caps value for [prize.equipment_name]!</span>")
 		else
 			stored_caps -= prize.cost
 			GLOB.vendor_cash += prize.cost
-			to_chat(usr, SPAN_NOTICE("[src] clanks to life briefly before vending [prize.equipment_name]!"))
+			to_chat(usr, "<span class='notice'>[src] clanks to life briefly before vending [prize.equipment_name]!</span>")
 			new prize.equipment_path(src.loc)
 			SSblackbox.record_feedback("nested tally", "wasteland_equipment_bought", 1, list("[type]", "[prize.equipment_path]"))
 	updateUsrDialog()

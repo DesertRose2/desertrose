@@ -79,18 +79,18 @@
 			if(pai.master_dna)
 				return
 			if(!iscarbon(usr))
-				to_chat(usr, SPAN_WARNING("You don't have any DNA, or your DNA is incompatible with this device!"))
+				to_chat(usr, "<span class='warning'>You don't have any DNA, or your DNA is incompatible with this device!</span>")
 			else
 				var/mob/living/carbon/M = usr
 				pai.master = M.real_name
 				pai.master_dna = M.dna.unique_enzymes
-				to_chat(pai, SPAN_NOTICE("You have been bound to a new master."))
+				to_chat(pai, "<span class='notice'>You have been bound to a new master.</span>")
 		if(href_list["wipe"])
 			var/confirm = input("Are you CERTAIN you wish to delete the current personality? This action cannot be undone.", "Personality Wipe") in list("Yes", "No")
 			if(confirm == "Yes")
 				if(pai)
-					to_chat(pai, SPAN_WARNING("You feel yourself slipping away from reality."))
-					to_chat(pai, SPAN_DANGER("Byte by byte you lose your sense of self."))
+					to_chat(pai, "<span class='warning'>You feel yourself slipping away from reality.</span>")
+					to_chat(pai, "<span class='danger'>Byte by byte you lose your sense of self.</span>")
 					to_chat(pai, "<span class='userdanger'>Your mental faculties leave you.</span>")
 					to_chat(pai, "<span class='rose'>oblivion... </span>")
 					qdel(pai)
@@ -106,11 +106,11 @@
 			if(pai.canholo)
 				to_chat(pai, "<span class='userdanger'>Your owner has disabled your holomatrix projectors!</span>")
 				pai.canholo = FALSE
-				to_chat(usr, SPAN_WARNING("You disable your pAI's holomatrix!"))
+				to_chat(usr, "<span class='warning'>You disable your pAI's holomatrix!</span>")
 			else
 				to_chat(pai, "<span class='boldnotice'>Your owner has enabled your holomatrix projectors!</span>")
 				pai.canholo = TRUE
-				to_chat(usr, SPAN_NOTICE("You enable your pAI's holomatrix!"))
+				to_chat(usr, "<span class='notice'>You enable your pAI's holomatrix!</span>")
 
 	attack_self(usr)
 
@@ -157,7 +157,7 @@
 				src.add_overlay("pai-sunglasses")
 
 /obj/item/paicard/proc/alertUpdate()
-	visible_message("<span class ='info'>[src] flashes a message across its screen, \"Additional personalities available for download.\"", SPAN_NOTICE("[src] bleeps electronically."))
+	visible_message("<span class ='info'>[src] flashes a message across its screen, \"Additional personalities available for download.\"", "<span class='notice'>[src] bleeps electronically.</span>")
 
 /obj/item/paicard/emp_act(severity)
 	. = ..()

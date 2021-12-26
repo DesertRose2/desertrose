@@ -32,13 +32,13 @@
 
 /obj/structure/geyser/plunger_act(obj/item/plunger/P, mob/living/user, _reinforced)
 	if(!_reinforced)
-		to_chat(user, SPAN_WARNING("The [P.name] isn't strong enough!"))
+		to_chat(user, "<span class='warning'>The [P.name] isn't strong enough!</span>")
 		return
 	if(activated)
 		to_chat(user, "<span class'warning'>The [name] is already active!</span>")
 		return
 
-	to_chat(user, SPAN_NOTICE("You start vigorously plunging [src]!"))
+	to_chat(user, "<span class='notice'>You start vigorously plunging [src]!</span>")
 	if(do_after(user, 50 * P.plunge_mod, target = src) && !activated)
 		start_chemming()
 
@@ -73,7 +73,7 @@
 		var/mob/living/carbon/H = hit_atom
 		if(!H.wear_mask)
 			H.equip_to_slot_if_possible(src, ITEM_SLOT_MASK)
-			H.visible_message(SPAN_WARNING("The plunger slams into [H]'s face!"), SPAN_WARNING("The plunger suctions to your face!"))
+			H.visible_message("<span class='warning'>The plunger slams into [H]'s face!</span>", "<span class='warning'>The plunger suctions to your face!</span>")
 
 /obj/item/plunger/reinforced
 	name = "reinforced plunger"

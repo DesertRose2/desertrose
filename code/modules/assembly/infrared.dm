@@ -33,7 +33,7 @@
 
 /obj/item/assembly/infra/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("The infrared trigger is [on?"on":"off"].")
+	. += "<span class='notice'>The infrared trigger is [on?"on":"off"].</span>"
 
 /obj/item/assembly/infra/activate()
 	if(!..())

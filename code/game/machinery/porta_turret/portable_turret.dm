@@ -239,7 +239,7 @@
 				toggle_on()
 				return TRUE
 			else
-				to_chat(usr, SPAN_WARNING("It has to be secured first!"))
+				to_chat(usr, "<span class='warning'>It has to be secured first!</span>")
 		if("authweapon")
 			turret_flags ^= TURRET_FLAG_AUTH_WEAPONS
 			return TRUE
@@ -286,19 +286,19 @@
 		if(istype(I, /obj/item/crowbar))
 			//If the turret is destroyed, you can remove it with a crowbar to
 			//try and salvage its components
-			to_chat(user, SPAN_NOTICE("You begin prying the metal coverings off..."))
+			to_chat(user, "<span class='notice'>You begin prying the metal coverings off...</span>")
 			if(I.use_tool(src, user, 20))
 				if(prob(70))
 					if(stored_gun)
 						stored_gun.forceMove(loc)
 						stored_gun = null
-					to_chat(user, SPAN_NOTICE("You remove the turret and salvage some components."))
+					to_chat(user, "<span class='notice'>You remove the turret and salvage some components.</span>")
 					if(prob(50))
 						new /obj/item/stack/sheet/metal(loc, rand(1,4))
 					if(prob(50))
 						new /obj/item/assembly/prox_sensor(loc)
 				else
-					to_chat(user, SPAN_NOTICE("You remove the turret but did not manage to salvage anything."))
+					to_chat(user, "<span class='notice'>You remove the turret but did not manage to salvage anything.</span>")
 				qdel(src)
 				return
 
@@ -311,13 +311,13 @@
 			setAnchored(TRUE)
 			invisibility = INVISIBILITY_MAXIMUM
 			update_icon()
-			to_chat(user, SPAN_NOTICE("You secure the exterior bolts on the turret."))
+			to_chat(user, "<span class='notice'>You secure the exterior bolts on the turret.</span>")
 			if(has_cover)
 				cover = new /obj/machinery/porta_turret_cover(loc) //create a new turret. While this is handled in process(), this is to workaround a bug where the turret becomes invisible for a split second
 				cover.parent_turret = src //make the cover's parent src
 		else if(anchored)
 			setAnchored(FALSE)
-			to_chat(user, SPAN_NOTICE("You unsecure the exterior bolts on the turret."))
+			to_chat(user, "<span class='notice'>You unsecure the exterior bolts on the turret.</span>")
 			power_change()
 			invisibility = 0
 			qdel(cover) //deletes the cover, and the turret instance itself becomes its own cover.
@@ -326,7 +326,7 @@
 		//Behavior lock/unlock mangement
 		if(allowed(user))
 			locked = !locked
-			to_chat(user, SPAN_NOTICE("Controls are now [locked ? "locked" : "unlocked"]."))
+			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
 		else
 			to_chat(user, "<span class='alert'>Access denied.</span>")
 	else if(istype(I, /obj/item/multitool) && !locked)
@@ -334,14 +334,14 @@
 			return
 		var/obj/item/multitool/M = I
 		M.buffer = src
-		to_chat(user, SPAN_NOTICE("You add [src] to multitool buffer."))
+		to_chat(user, "<span class='notice'>You add [src] to multitool buffer.</span>")
 	else
 		return ..()
 
 /obj/machinery/porta_turret/emag_act(mob/user)
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, SPAN_WARNING("You short out [src]'s threat assessment circuits."))
+	to_chat(user, "<span class='warning'>You short out [src]'s threat assessment circuits.</span>")
 	audible_message("<span class='hear'>[src] hums oddly...</span>")
 	obj_flags |= EMAGGED
 	controllock = TRUE
@@ -680,7 +680,7 @@
 		return FALSE
 	if(remote_controller)
 		if(warning_message)
-			to_chat(remote_controller, SPAN_WARNING("Your uplink to [src] has been severed!"))
+			to_chat(remote_controller, "<span class='warning'>Your uplink to [src] has been severed!</span>")
 		quit_action.Remove(remote_controller)
 		toggle_action.Remove(remote_controller)
 		remote_controller.click_intercept = null
@@ -957,7 +957,7 @@
 		var/obj/item/multitool/M = I
 		if(M.buffer && istype(M.buffer, /obj/machinery/porta_turret))
 			turrets |= M.buffer
-			to_chat(user, SPAN_NOTICE("You link \the [M.buffer] with \the [src]."))
+			to_chat(user, "<span class='notice'>You link \the [M.buffer] with \the [src].</span>")
 			return
 
 	if (issilicon(user))
@@ -966,18 +966,18 @@
 	if ( get_dist(src, user) == 0 )		// trying to unlock the interface
 		if (allowed(usr))
 			if(obj_flags & EMAGGED)
-				to_chat(user, SPAN_WARNING("The turret control is unresponsive!"))
+				to_chat(user, "<span class='warning'>The turret control is unresponsive!</span>")
 				return
 
 			locked = !locked
-			to_chat(user, SPAN_NOTICE("You [ locked ? "lock" : "unlock"] the panel."))
+			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the panel.</span>")
 		else
 			to_chat(user, "<span class='alert'>Access denied.</span>")
 
 /obj/machinery/turretid/emag_act(mob/user)
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, SPAN_NOTICE("You short out the turret controls' access analysis module."))
+	to_chat(user, "<span class='notice'>You short out the turret controls' access analysis module.</span>")
 	obj_flags |= EMAGGED
 	locked = FALSE
 
@@ -985,7 +985,7 @@
 	if(!ailock || IsAdminGhost(user))
 		return attack_hand(user)
 	else
-		to_chat(user, SPAN_WARNING("There seems to be a firewall preventing you from accessing this device!"))
+		to_chat(user, "<span class='warning'>There seems to be a firewall preventing you from accessing this device!</span>")
 
 /obj/machinery/turretid/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -1012,7 +1012,7 @@
 			if(!hasSiliconAccessInArea(usr) || IsAdminGhost(usr))
 				return
 			if((obj_flags & EMAGGED) || (stat & BROKEN))
-				to_chat(usr, SPAN_WARNING("The turret control is unresponsive!"))
+				to_chat(usr, "<span class='warning'>The turret control is unresponsive!</span>")
 				return
 			locked = !locked
 			return TRUE

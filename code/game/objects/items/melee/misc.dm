@@ -3,7 +3,7 @@
 
 /obj/item/melee/proc/check_martial_counter(mob/living/carbon/human/target, mob/living/carbon/human/user)
 	if(target.check_martial_melee_block())
-		target.visible_message(SPAN_DANGER("[target.name] blocks [src] and twists [user]'s arm behind [user.p_their()] back!"),
+		target.visible_message("<span class='danger'>[target.name] blocks [src] and twists [user]'s arm behind [user.p_their()] back!</span>",
 					"<span class='userdanger'>You block the attack!</span>")
 		user.Stun(40)
 		return TRUE
@@ -63,7 +63,7 @@
 	force = 18
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
-	armour_penetration = 75
+	armour_penetration = 0.95
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "cut")
 	hitsound = 'sound/weapons/rapierhit.ogg'
@@ -164,7 +164,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	force = 15
 	throwforce = 25
-	armour_penetration = 200
+	armour_penetration = 1
 	flags_1 = CONDUCT_1
 	obj_flags = UNIQUE_RENAME
 	w_class = WEIGHT_CLASS_BULKY
@@ -235,7 +235,7 @@
 	. = ..()
 	if(iscarbon(target))
 		if(HAS_TRAIT(user, TRAIT_PACIFISM))
-			visible_message(SPAN_WARNING("[user] gently taps [target] with [src]."),null,null,COMBAT_MESSAGE_RANGE)
+			visible_message("<span class='warning'>[user] gently taps [target] with [src].</span>",null,null,COMBAT_MESSAGE_RANGE)
 		log_combat(user, target, "slept", src)
 		var/mob/living/carbon/H = target
 		H.Dizzy(10)
@@ -285,22 +285,22 @@
 // Description for when turning their baton "on"
 /obj/item/melee/classic_baton/proc/get_on_description()
 	. = list()
-	.["local_on"] = SPAN_WARNING("You extend the baton.")
-	.["local_off"] = SPAN_NOTICE("You collapse the baton.")
+	.["local_on"] = "<span class ='warning'>You extend the baton.</span>"
+	.["local_off"] = "<span class ='notice'>You collapse the baton.</span>"
 	return .
 
 // Default message for stunning mob.
 /obj/item/melee/classic_baton/proc/get_stun_description(mob/living/target, mob/living/user)
 	. = list()
-	.["visible"] =  SPAN_DANGER("[user] has knocked down [target] with [src]!")
-	.["local"] = SPAN_DANGER("[user] has knocked down [target] with [src]!")
+	.["visible"] =  "<span class ='danger'>[user] has knocked down [target] with [src]!</span>"
+	.["local"] = "<span class ='danger'>[user] has knocked down [target] with [src]!</span>"
 	return .
 
 // Default message for stunning a silicon.
 /obj/item/melee/classic_baton/proc/get_silicon_stun_description(mob/living/target, mob/living/user)
 	. = list()
-	.["visible"] = SPAN_DANGER("[user] pulses [target]'s sensors with the baton!")
-	.["local"] = SPAN_DANGER("You pulse [target]'s sensors with the baton!")
+	.["visible"] = "<span class='danger'>[user] pulses [target]'s sensors with the baton!</span>"
+	.["local"] = "<span class='danger'>You pulse [target]'s sensors with the baton!</span>"
 	return .
 
 // Are we applying any special effects when we stun to carbon
@@ -316,12 +316,12 @@
 		return ..()
 
 	if(IS_STAMCRIT(user))//CIT CHANGE - makes batons unusuable in stamina softcrit
-		to_chat(user, SPAN_WARNING("You're too exhausted for that."))//CIT CHANGE - ditto
+		to_chat(user, "<span class='warning'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
 		return //CIT CHANGE - ditto
 
 	add_fingerprint(user)
 	if((HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
-		to_chat(user, SPAN_DANGER("You club yourself over the head."))
+		to_chat(user, "<span class ='danger'>You club yourself over the head.</span>")
 		user.DefaultCombatKnockdown(60 * force)
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
@@ -466,7 +466,7 @@
 	weight_class_on = WEIGHT_CLASS_NORMAL
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton/get_wait_description()
-	return SPAN_DANGER("The baton is still charging!")
+	return "<span class='danger'>The baton is still charging!</span>"
 
 /obj/item/melee/classic_baton/telescopic/contractor_baton/additional_effects_carbon(mob/living/target, mob/living/user)
 	target.Jitter(20)
@@ -484,7 +484,7 @@
 	slot_flags = null
 	w_class = WEIGHT_CLASS_BULKY
 	force = 0.001
-	armour_penetration = 1000
+	armour_penetration = 1
 	var/obj/machinery/power/supermatter_crystal/shard
 	var/balanced = 1
 	force_string = "INFINITE"
@@ -495,7 +495,7 @@
 	qdel(shard.countdown)
 	shard.countdown = null
 	START_PROCESSING(SSobj, src)
-	visible_message(SPAN_WARNING("[src] appears, balanced ever so perfectly on its hilt. This isn't ominous at all."))
+	visible_message("<span class='warning'>[src] appears, balanced ever so perfectly on its hilt. This isn't ominous at all.</span>")
 
 /obj/item/melee/supermatter_sword/process()
 	if(balanced || throwing || ismob(src.loc) || isnull(src.loc))
@@ -529,17 +529,17 @@
 	balanced = 0
 
 /obj/item/melee/supermatter_sword/ex_act(severity, target)
-	visible_message(SPAN_DANGER("The blast wave smacks into [src] and rapidly flashes to ash."),\
+	visible_message("<span class='danger'>The blast wave smacks into [src] and rapidly flashes to ash.</span>",\
 	"<span class='italics'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything()
 
 /obj/item/melee/supermatter_sword/acid_act()
-	visible_message(SPAN_DANGER("The acid smacks into [src] and rapidly flashes to ash."),\
+	visible_message("<span class='danger'>The acid smacks into [src] and rapidly flashes to ash.</span>",\
 	"<span class='italics'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything()
 
 /obj/item/melee/supermatter_sword/bullet_act(obj/item/projectile/P)
-	visible_message(SPAN_DANGER("[P] smacks into [src] and rapidly flashes to ash."),\
+	visible_message("<span class='danger'>[P] smacks into [src] and rapidly flashes to ash.</span>",\
 	"<span class='italics'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything(P)
 	return BULLET_ACT_HIT
@@ -561,8 +561,9 @@
 	return FALSE
 
 /obj/item/melee/curator_whip
-	name = "curator's whip"
+	name = "whip"
 	desc = "Somewhat eccentric and outdated, it still stings like hell to be hit by."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "whip"
 	item_state = "chain"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
@@ -600,7 +601,7 @@
 		extend(user)
 	else
 		if (held_sausage)
-			to_chat(user, SPAN_WARNING("You can't retract [src] while [held_sausage] is attached!"))
+			to_chat(user, "<span class='warning'>You can't retract [src] while [held_sausage] is attached!</span>")
 			return
 		retract(user)
 
@@ -611,15 +612,15 @@
 	..()
 	if (istype(target, /obj/item/reagent_containers/food/snacks/sausage))
 		if (!on)
-			to_chat(user, SPAN_WARNING("You must extend [src] to attach anything to it!"))
+			to_chat(user, "<span class='warning'>You must extend [src] to attach anything to it!</span>")
 			return
 		if (held_sausage)
-			to_chat(user, SPAN_WARNING("[held_sausage] is already attached to [src]!"))
+			to_chat(user, "<span class='warning'>[held_sausage] is already attached to [src]!</span>")
 			return
 		if (user.transferItemToLoc(target, src))
 			held_sausage = target
 		else
-			to_chat(user, SPAN_WARNING("[target] doesn't seem to want to get on [src]!"))
+			to_chat(user, "<span class='warning'>[target] doesn't seem to want to get on [src]!</span>")
 	update_icon()
 
 /obj/item/melee/roastingstick/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -635,13 +636,13 @@
 		. += mutable_appearance(icon, "roastingstick_sausage")
 
 /obj/item/melee/roastingstick/proc/extend(user)
-	to_chat(user, SPAN_WARNING("You extend [src]."))
+	to_chat(user, "<span class ='warning'>You extend [src].</span>")
 	icon_state = "roastingstick_1"
 	item_state = "nullrod"
 	w_class = WEIGHT_CLASS_BULKY
 
 /obj/item/melee/roastingstick/proc/retract(user)
-	to_chat(user, SPAN_NOTICE("You collapse [src]."))
+	to_chat(user, "<span class ='notice'>You collapse [src].</span>")
 	icon_state = "roastingstick_0"
 	item_state = null
 	w_class = WEIGHT_CLASS_SMALL
@@ -697,7 +698,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	throwforce = 8
 	block_chance = 10
-	armour_penetration = 50
+	armour_penetration = 1
 	attack_verb = list("smacked", "struck", "cracked", "beaten")
 	var/overlay_state = "mace_handle"
 	var/mutable_appearance/overlay

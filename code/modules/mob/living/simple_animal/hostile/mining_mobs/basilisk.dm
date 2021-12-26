@@ -103,13 +103,13 @@
 		distanced = get_dist(loc,diamonds.loc)
 		if(distanced <= 1 && diamonds)
 			qdel(diamonds)
-			src.visible_message(SPAN_NOTICE("[src] consumes [diamonds], and it disappears! ...At least, you think."))
+			src.visible_message("<span class='notice'>[src] consumes [diamonds], and it disappears! ...At least, you think.</span>")
 	if(bait)
 		var/distanceb = 0
 		distanceb = get_dist(loc,bait.loc)
 		if(distanceb <= 1 && bait)
 			qdel(bait)
-			visible_message(SPAN_NOTICE("[src] examines [bait] closer, and telekinetically shatters the pen."))
+			visible_message("<span class='notice'>[src] examines [bait] closer, and telekinetically shatters the pen.</span>")
 
 /mob/living/simple_animal/hostile/asteroid/basilisk/watcher/random/Initialize()
 	. = ..()

@@ -45,7 +45,7 @@
 			return TRUE
 
 		playsound(loc, 'sound/weapons/handcuffs.ogg', 30, TRUE)
-		ranged_ability_user.visible_message(SPAN_DANGER("[ranged_ability_user] begins forming manacles around [L]'s wrists!"), \
+		ranged_ability_user.visible_message("<span class='danger'>[ranged_ability_user] begins forming manacles around [L]'s wrists!</span>", \
 		"<span class='neovgre_small'>You begin shaping replicant alloy into manacles around [L]'s wrists...</span>")
 		to_chat(L, "<span class='userdanger'>[ranged_ability_user] begins forming manacles around your wrists!</span>")
 		if(do_mob(ranged_ability_user, L, 30))
@@ -55,7 +55,7 @@
 				to_chat(ranged_ability_user, "<span class='neovgre_small'>You shackle [L].</span>")
 				log_combat(ranged_ability_user, L, "handcuffed")
 		else
-			to_chat(ranged_ability_user, SPAN_WARNING("You fail to shackle [L]."))
+			to_chat(ranged_ability_user, "<span class='warning'>You fail to shackle [L].</span>")
 
 		successful = TRUE
 
@@ -71,7 +71,7 @@
 	item_flags = DROPDEL
 
 /obj/item/restraints/handcuffs/clockwork/dropped(mob/user)
-	user.visible_message(SPAN_DANGER("[user]'s [name] come apart at the seams!"), \
+	user.visible_message("<span class='danger'>[user]'s [name] come apart at the seams!</span>", \
 	"<span class='userdanger'>Your [name] break apart as they're removed!</span>")
 	. = ..()
 
@@ -118,12 +118,12 @@
 			L.adjustToxLoss(totaldamage * 0.5, TRUE, TRUE)
 			clockwork_say(ranged_ability_user, text2ratvar("[has_holy_water ? "Heal tainted" : "Mend wounded"] flesh!"))
 			log_combat(ranged_ability_user, L, "healed with Sentinel's Compromise")
-			L.visible_message(SPAN_WARNING("A blue light washes over [L], [has_holy_water ? "causing [L.p_them()] to briefly glow as it mends" : " mending"] [L.p_their()] bruises and burns!"), \
+			L.visible_message("<span class='warning'>A blue light washes over [L], [has_holy_water ? "causing [L.p_them()] to briefly glow as it mends" : " mending"] [L.p_their()] bruises and burns!</span>", \
 			"<span class='heavy_brass'>You feel Inath-neq's power healing your wounds[has_holy_water ? " and purging the darkness within you" : ""], but a deep nausea overcomes you!</span>")
 		else
 			clockwork_say(ranged_ability_user, text2ratvar("Purge foul darkness!"))
 			log_combat(ranged_ability_user, L, "purged of holy water with Sentinel's Compromise")
-			L.visible_message(SPAN_WARNING("A blue light washes over [L], causing [L.p_them()] to briefly glow!"), \
+			L.visible_message("<span class='warning'>A blue light washes over [L], causing [L.p_them()] to briefly glow!</span>", \
 			"<span class='heavy_brass'>You feel Inath-neq's power purging the darkness within you!</span>")
 		playsound(targetturf, 'sound/magic/staff_healing.ogg', 50, 1)
 
@@ -148,7 +148,7 @@
 
 	if(target in view(7, get_turf(ranged_ability_user)))
 		successful = TRUE
-		ranged_ability_user.visible_message(SPAN_WARNING("[ranged_ability_user] fires a ray of energy at [target]!"), "<span class='nzcrentr'>You fire a volt ray at [target].</span>")
+		ranged_ability_user.visible_message("<span class='warning'>[ranged_ability_user] fires a ray of energy at [target]!</span>", "<span class='nzcrentr'>You fire a volt ray at [target].</span>")
 		playsound(ranged_ability_user, 'sound/effects/light_flicker.ogg', 50, 1)
 		T = get_turf(target)
 		new/obj/effect/temp_visual/ratvar/volt_hit(T, ranged_ability_user)
@@ -197,7 +197,7 @@
 	log_override = TRUE
 
 /obj/item/projectile/kindle/Destroy()
-	visible_message(SPAN_WARNING("[src] flickers out!"))
+	visible_message("<span class='warning'>[src] flickers out!</span>")
 	. = ..()
 
 /obj/item/projectile/kindle/on_hit(atom/target, blocked = FALSE)
@@ -209,14 +209,14 @@
 		playsound(L, 'sound/magic/fireball.ogg', 50, TRUE, frequency = 1.25)
 		if(O)
 			if(isitem(O))
-				L.visible_message(SPAN_WARNING("[L]'s eyes flare with dim light!"), \
+				L.visible_message("<span class='warning'>[L]'s eyes flare with dim light!</span>", \
 				"<span class='userdanger'>Your [O] glows white-hot against you as it absorbs [src]'s power!</span>")
 			else if(ismob(O))
-				L.visible_message(SPAN_WARNING("[L]'s eyes flare with dim light!"))
+				L.visible_message("<span class='warning'>[L]'s eyes flare with dim light!</span>")
 			playsound(L, 'sound/weapons/sear.ogg', 50, TRUE)
 		else
 			if(!iscultist(L))
-				L.visible_message(SPAN_WARNING("[L]'s eyes blaze with brilliant light!"), \
+				L.visible_message("<span class='warning'>[L]'s eyes blaze with brilliant light!</span>", \
 				"<span class='userdanger'>Your vision suddenly screams with white-hot light!</span>")
 				L.DefaultCombatKnockdown(15, TRUE, FALSE, 15)
 				L.apply_status_effect(STATUS_EFFECT_KINDLE)
@@ -226,7 +226,7 @@
 					S.emp_act(80)
 			else //for Nar'sian weaklings
 				to_chat(L, "<span class='heavy_brass'>\"How does it feel to see the light, dog?\"</span>")
-				L.visible_message(SPAN_WARNING("[L]'s eyes flare with burning light!"), \
+				L.visible_message("<span class='warning'>[L]'s eyes flare with burning light!</span>", \
 				"<span class='userdanger'>Your vision suddenly screams with a flash of burning hot light!</span>")  //Debuffs Narsian cultists hard + deals some burn instead of just hardstunning them; Only the confusion part can stack
 				L.flash_act(1,1)
 				if(iscarbon(target))
@@ -298,7 +298,7 @@
 		successful = TRUE
 
 		clockwork_say(ranged_ability_user, text2ratvar("Kneel, heathens!"))
-		ranged_ability_user.visible_message(SPAN_WARNING("[ranged_ability_user]'s eyes fire a stream of energy at [target], creating a strange mark!"), \
+		ranged_ability_user.visible_message("<span class='warning'>[ranged_ability_user]'s eyes fire a stream of energy at [target], creating a strange mark!</span>", \
 		"<span class='heavy_brass'>You direct the judicial force to [target].</span>")
 		var/turf/targetturf = get_turf(target)
 		new/obj/effect/clockwork/judicial_marker(targetturf, ranged_ability_user)

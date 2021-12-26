@@ -9,7 +9,7 @@
 	unanchored_icon = "prolonging_prism_unwrenched"
 	construction_value = 20
 	max_integrity = 125
-	break_message = SPAN_WARNING("The prism falls to the ground with a heavy thud!")
+	break_message = "<span class='warning'>The prism falls to the ground with a heavy thud!</span>"
 	debris = list(/obj/item/clockwork/alloy_shards/small = 3, \
 	/obj/item/clockwork/alloy_shards/medium = 1, \
 	/obj/item/clockwork/alloy_shards/large = 1, \
@@ -33,7 +33,7 @@
 	if(active)
 		if(bad_effects)
 			try_use_power(MIN_CLOCKCULT_POWER*4)
-		visible_message(SPAN_WARNING("[src] emits an airy chuckling sound and falls dark!"))
+		visible_message("<span class='warning'>[src] emits an airy chuckling sound and falls dark!</span>")
 		toggle()
 		return TRUE
 
@@ -48,13 +48,13 @@
 			return 0
 		var/turf/T = get_turf(src)
 		if(!T || !is_station_level(T.z))
-			to_chat(user, SPAN_WARNING("[src] must be on the station to function!"))
+			to_chat(user, "<span class='warning'>[src] must be on the station to function!</span>")
 			return 0
 		if(SSshuttle.emergency.mode != SHUTTLE_CALL)
-			to_chat(user, SPAN_WARNING("No emergency shuttles are attempting to arrive at the station!"))
+			to_chat(user, "<span class='warning'>No emergency shuttles are attempting to arrive at the station!</span>")
 			return 0
 		if(!try_use_power(get_delay_cost()))
-			to_chat(user, SPAN_WARNING("[src] needs more power to function!"))
+			to_chat(user, "<span class='warning'>[src] needs more power to function!</span>")
 			return 0
 		delay_cost += delay_cost_increase
 		delay_remaining += PRISM_DELAY_DURATION

@@ -33,12 +33,12 @@
 	addtimer(CALLBACK(src, .proc/controllerscan), 10)
 
 /obj/machinery/am_shielding/proc/overheat()
-	visible_message(SPAN_DANGER("[src] melts!"))
+	visible_message("<span class='danger'>[src] melts!</span>")
 	new /obj/effect/hotspot(loc)
 	qdel(src)
 
 /obj/machinery/am_shielding/proc/collapse()
-	visible_message(SPAN_NOTICE("[src] collapses back into a container!"))
+	visible_message("<span class='notice'>[src] collapses back into a container!</span>")
 	new /obj/item/am_shielding_container(drop_location())
 	qdel(src)
 

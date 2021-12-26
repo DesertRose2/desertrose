@@ -147,7 +147,7 @@
 		return
 
 	if(!(silent || demoted))
-		var/msg = SPAN_DANGER("[victim]'s [limb.name] [occur_text]!")
+		var/msg = "<span class='danger'>[victim]'s [limb.name] [occur_text]!</span>"
 		var/vis_dist = COMBAT_MESSAGE_RANGE
 
 		if(severity != WOUND_SEVERITY_MODERATE)
@@ -247,7 +247,7 @@
 
 	// now that we've determined we have a valid attempt at treating, we can stomp on their dreams if we're already interacting with the patient
 	if(INTERACTING_WITH(user, victim))
-		to_chat(user, SPAN_WARNING("You're already interacting with [victim]!"))
+		to_chat(user, "<span class='warning'>You're already interacting with [victim]!</span>")
 		return TRUE
 
 	// lastly, treat them

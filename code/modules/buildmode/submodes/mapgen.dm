@@ -5,10 +5,10 @@
 	var/generator_path
 
 /datum/buildmode_mode/mapgen/show_help(client/c)
-	to_chat(c, SPAN_NOTICE("***********************************************************"))
-	to_chat(c, SPAN_NOTICE("Left Mouse Button on turf/obj/mob      = Select corner"))
-	to_chat(c, SPAN_NOTICE("Right Mouse Button on buildmode button = Select generator"))
-	to_chat(c, SPAN_NOTICE("***********************************************************"))
+	to_chat(c, "<span class='notice'>***********************************************************</span>")
+	to_chat(c, "<span class='notice'>Left Mouse Button on turf/obj/mob      = Select corner</span>")
+	to_chat(c, "<span class='notice'>Right Mouse Button on buildmode button = Select generator</span>")
+	to_chat(c, "<span class='notice'>***********************************************************</span>")
 
 /datum/buildmode_mode/mapgen/change_settings(client/c)
 	var/list/gen_paths = subtypesof(/datum/mapGenerator)
@@ -25,7 +25,7 @@
 
 /datum/buildmode_mode/mapgen/handle_click(client/c, params, obj/object)
 	if(isnull(generator_path))
-		to_chat(c, SPAN_WARNING("Select generator type first."))
+		to_chat(c, "<span class='warning'>Select generator type first.</span>")
 		deselect_region()
 		return
 	..()

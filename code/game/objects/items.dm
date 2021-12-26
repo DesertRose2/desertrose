@@ -320,7 +320,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		return
 	if(loc == user && current_equipped_slot && current_equipped_slot != SLOT_HANDS)
 		if(current_equipped_slot in user.check_obscured_slots())
-			to_chat(src, SPAN_WARNING("You are unable to unequip that while wearing other garments over it!"))
+			to_chat(src, "<span class='warning'>You are unable to unequip that while wearing other garments over it!</span>")
 			return FALSE
 
 	if(resistance_flags & ON_FIRE)
@@ -335,9 +335,9 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 		if(can_handle_hot)
 			extinguish()
-			to_chat(user, SPAN_NOTICE("You put out the fire on [src]."))
+			to_chat(user, "<span class='notice'>You put out the fire on [src].</span>")
 		else
-			to_chat(user, SPAN_WARNING("You burn your hand on [src]!"))
+			to_chat(user, "<span class='warning'>You burn your hand on [src]!</span>")
 			var/obj/item/bodypart/affecting = C.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 			if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
 				C.update_damage_overlays()
@@ -347,7 +347,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/C = user
 		if(istype(C))
 			if(!C.gloves || (!(C.gloves.resistance_flags & (UNACIDABLE|ACID_PROOF))))
-				to_chat(user, SPAN_WARNING("The acid on [src] burns your hand!"))
+				to_chat(user, "<span class='warning'>The acid on [src] burns your hand!</span>")
 				var/obj/item/bodypart/affecting = C.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 				if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
 					C.update_damage_overlays()
@@ -359,7 +359,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/grav = user.has_gravity()
 	if(grav > STANDARD_GRAVITY)
 		var/grav_power = min(3,grav - STANDARD_GRAVITY)
-		to_chat(user,SPAN_NOTICE("You start picking up [src]..."))
+		to_chat(user,"<span class='notice'>You start picking up [src]...</span>")
 		if(!do_mob(user,src,30*grav_power))
 			return
 
@@ -388,7 +388,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		return
 	if(loc == user && current_equipped_slot && current_equipped_slot != SLOT_HANDS)
 		if(current_equipped_slot in user.check_obscured_slots())
-			to_chat(src, SPAN_WARNING("You are unable to unequip that while wearing other garments over it!"))
+			to_chat(src, "<span class='warning'>You are unable to unequip that while wearing other garments over it!</span>")
 			return FALSE
 
 
@@ -411,7 +411,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(!A.has_fine_manipulation)
 		if(src in A.contents) // To stop Aliens having items stuck in their pockets
 			A.dropItemToGround(src)
-		to_chat(user, SPAN_WARNING("Your claws aren't capable of such fine manipulation!"))
+		to_chat(user, "<span class='warning'>Your claws aren't capable of such fine manipulation!</span>")
 		return
 	attack_paw(A)
 
@@ -541,7 +541,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/proc/eyestab(mob/living/carbon/M, mob/living/carbon/user)
 	if(HAS_TRAIT(user, TRAIT_PACIFISM))
-		to_chat(user, SPAN_WARNING("You don't want to harm [M]!"))
+		to_chat(user, "<span class='warning'>You don't want to harm [M]!</span>")
 		return
 	if(HAS_TRAIT(user, TRAIT_CLUMSY) && prob(50))
 		M = user
@@ -556,26 +556,26 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			(H.wear_mask && H.wear_mask.flags_cover & MASKCOVERSEYES) || \
 			(H.glasses && H.glasses.flags_cover & GLASSESCOVERSEYES))
 			// you can't stab someone in the eyes wearing a mask!
-			to_chat(user, SPAN_DANGER("You're going to need to remove that mask/helmet/glasses first!"))
+			to_chat(user, "<span class='danger'>You're going to need to remove that mask/helmet/glasses first!</span>")
 			return
 
 	if(ismonkey(M))
 		var/mob/living/carbon/monkey/Mo = M
 		if(Mo.wear_mask && Mo.wear_mask.flags_cover & MASKCOVERSEYES)
 			// you can't stab someone in the eyes wearing a mask!
-			to_chat(user, SPAN_DANGER("You're going to need to remove that mask/helmet/glasses first!"))
+			to_chat(user, "<span class='danger'>You're going to need to remove that mask/helmet/glasses first!</span>")
 			return
 
 	if(isalien(M))//Aliens don't have eyes./N     slimes also don't have eyes!
-		to_chat(user, SPAN_WARNING("You cannot locate any eyes on this creature!"))
+		to_chat(user, "<span class='warning'>You cannot locate any eyes on this creature!</span>")
 		return
 
 	if(isbrain(M))
-		to_chat(user, SPAN_DANGER("You cannot locate any organic eyes on this brain!"))
+		to_chat(user, "<span class='danger'>You cannot locate any organic eyes on this brain!</span>")
 		return
 
 	if(IS_STAMCRIT(user))//CIT CHANGE - makes eyestabbing impossible if you're in stamina softcrit
-		to_chat(user, SPAN_DANGER("You're too exhausted for that."))//CIT CHANGE - ditto
+		to_chat(user, "<span class='danger'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
 		return //CIT CHANGE - ditto
 
 	src.add_fingerprint(user)
@@ -587,11 +587,11 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	user.adjustStaminaLossBuffered(10)//CIT CHANGE - makes eyestabbing cost stamina
 
 	if(M != user)
-		M.visible_message(SPAN_DANGER("[user] has stabbed [M] in the eye with [src]!"), \
+		M.visible_message("<span class='danger'>[user] has stabbed [M] in the eye with [src]!</span>", \
 							"<span class='userdanger'>[user] stabs you in the eye with [src]!</span>")
 	else
 		user.visible_message( \
-			SPAN_DANGER("[user] has stabbed [user.p_them()]self in the eyes with [src]!"), \
+			"<span class='danger'>[user] has stabbed [user.p_them()]self in the eyes with [src]!</span>", \
 			"<span class='userdanger'>You stab yourself in the eyes with [src]!</span>" \
 		)
 	if(is_human_victim)
@@ -613,20 +613,20 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(eyes.damage >= 10)
 		M.adjust_blurriness(15)
 		if(M.stat != DEAD)
-			to_chat(M, SPAN_DANGER("Your eyes start to bleed profusely!"))
+			to_chat(M, "<span class='danger'>Your eyes start to bleed profusely!</span>")
 		if(!(HAS_TRAIT(M, TRAIT_BLIND) || HAS_TRAIT(M, TRAIT_NEARSIGHT)))
-			to_chat(M, SPAN_DANGER("You become nearsighted!"))
+			to_chat(M, "<span class='danger'>You become nearsighted!</span>")
 		M.become_nearsighted(EYE_DAMAGE)
 		if(prob(50))
 			if(M.stat != DEAD)
 				if(M.drop_all_held_items())
-					to_chat(M, SPAN_DANGER("You drop what you're holding and clutch at your eyes!"))
+					to_chat(M, "<span class='danger'>You drop what you're holding and clutch at your eyes!</span>")
 			M.adjust_blurriness(10)
 			M.Unconscious(20)
 			M.DefaultCombatKnockdown(40)
 		if (prob(eyes.damage - 10 + 1))
 			M.become_blind(EYE_DAMAGE)
-			to_chat(M, SPAN_DANGER("You go blind!"))
+			to_chat(M, "<span class='danger'>You go blind!</span>")
 
 /obj/item/clean_blood()
 	. = ..()
@@ -760,7 +760,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/proc/ignition_effect(atom/A, mob/user)
 	if(get_temperature())
-		. = SPAN_NOTICE("[user] lights [A] with [src].")
+		. = "<span class='notice'>[user] lights [A] with [src].</span>"
 	else
 		. = ""
 
@@ -1122,13 +1122,13 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	return
 
 /obj/item/gun/proc/weapondraw(obj/item/gun/G, mob/living/user) // Eventually, this will be /obj/item/weapon and guns will be /obj/item/weapon/gun/etc. SOON.tm
-	user.visible_message(SPAN_DANGER("[user] grabs \a [G]!")) // probably could code in differences as to where you're picking it up from and so forth. later.
+	user.visible_message("<span class='danger'>[user] grabs \a [G]!</span>") // probably could code in differences as to where you're picking it up from and so forth. later.
 	user.SetWeaponDrawDelay(max((4 * G.weapon_weight + 1),(user.AmountWeaponDrawDelay())))
 	// TODO: Define where you're grabbing it from, assign numbers to them, and then divide the paralyze total by that. Tables/holster/belt/back/container.
 	user.log_message("[user] pulled a [G]", INDIVIDUAL_ATTACK_LOG)
 
 /obj/item/throwing_star/proc/throwingweapondraw(obj/item/throwing_star/T, mob/living/user)
-	user.visible_message(SPAN_DANGER("[user] grabs \a [T]!"))
+	user.visible_message("<span class='danger'>[user] grabs \a [T]!</span>")
 	user.SetThrowDelay(6)
 	user.log_message("[user] pulled a [T]", INDIVIDUAL_ATTACK_LOG)
 

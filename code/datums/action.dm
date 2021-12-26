@@ -447,7 +447,7 @@
 			owner.research_scanner++
 		else
 			owner.research_scanner--
-		to_chat(owner, SPAN_NOTICE("[target] research scanner has been [active ? "activated" : "deactivated"]."))
+		to_chat(owner, "<span class='notice'>[target] research scanner has been [active ? "activated" : "deactivated"].</span>")
 		return 1
 
 /datum/action/item_action/toggle_research_scanner/Remove(mob/M)
@@ -538,7 +538,7 @@
 		return
 	//Box closing from here on out.
 	if(!isturf(owner.loc)) //Don't let the player use this to escape mechs/welded closets.
-		to_chat(owner, SPAN_NOTICE("You need more space to activate this implant."))
+		to_chat(owner, "<span class = 'notice'>You need more space to activate this implant.</span>")
 		return
 	if(cooldown < world.time - 100)
 		var/box = new boxtype(owner.drop_location())
@@ -598,7 +598,7 @@
 	if (!istype(H))
 		return
 	if (H.stealthcooldown > world.time)
-		to_chat(owner,SPAN_WARNING("The hijack implant's stealth mode toggle is still rebooting!"))
+		to_chat(owner,"<span class='warning'>The hijack implant's stealth mode toggle is still rebooting!</span>")
 		return
 	H.stealthmode = !H.stealthmode
 	for (var/area/area in H.imp_in.siliconaccessareas)
@@ -608,7 +608,7 @@
 			apc.update_icon()
 	H.stealthcooldown = world.time + 15 SECONDS
 	H.toggle_eyes()
-	to_chat(owner,SPAN_NOTICE("You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"]."))
+	to_chat(owner,"<span class='notice'>You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"].</span>")
 
 /datum/action/item_action/flash
 	name = "Flash"

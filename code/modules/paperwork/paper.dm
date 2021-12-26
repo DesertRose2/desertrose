@@ -120,7 +120,7 @@
 	if(ishuman(usr))
 		var/mob/living/carbon/human/H = usr
 		if(HAS_TRAIT(H, TRAIT_CLUMSY) && prob(25))
-			to_chat(H, SPAN_WARNING("You cut yourself on the paper! Ahhhh! Ahhhhh!"))
+			to_chat(H, "<span class='warning'>You cut yourself on the paper! Ahhhh! Ahhhhh!</span>")
 			H.damageoverlaytemp = 9001
 			H.update_damage_hud()
 			return
@@ -143,12 +143,12 @@
 /obj/item/paper/examine(mob/user)
 	. = ..()
 	if(!in_range(user, src) && !isobserver(user))
-		. += SPAN_WARNING("You're too far away to read it!")
+		. += "<span class='warning'>You're too far away to read it!</span>"
 		return
 	if(user.can_read(src))
 		ui_interact(user)
 		return
-	. += SPAN_WARNING("You cannot read it!")
+	. += "<span class='warning'>You cannot read it!</span>"
 
 /obj/item/paper/ui_status(mob/user,/datum/ui_state/state)
 		// Are we on fire?  Hard ot read if so
@@ -180,7 +180,7 @@
 		return
 	. = TRUE
 	if(!bypass_clumsy && HAS_TRAIT(user, TRAIT_CLUMSY) && prob(10) && Adjacent(user))
-		user.visible_message(SPAN_WARNING("[user] accidentally ignites [user.p_them()]self!"), \
+		user.visible_message("<span class='warning'>[user] accidentally ignites [user.p_them()]self!</span>", \
 							"<span class='userdanger'>You miss [src] and accidentally light yourself on fire!</span>")
 		if(user.is_holding(I)) //checking if they're holding it in case TK is involved
 			user.dropItemToGround(I)
@@ -201,12 +201,12 @@
 
 	if(istype(P, /obj/item/pen) || istype(P, /obj/item/toy/crayon))
 		if(length(info) >= MAX_PAPER_LENGTH) // Sheet must have less than 1000 charaters
-			to_chat(user, SPAN_WARNING("This sheet of paper is full!"))
+			to_chat(user, "<span class='warning'>This sheet of paper is full!</span>")
 			return
 		ui_interact(user)
 		return
 	else if(istype(P, /obj/item/stamp))
-		to_chat(user, SPAN_NOTICE("You ready your stamp over the paper! "))
+		to_chat(user, "<span class='notice'>You ready your stamp over the paper! </span>")
 		ui_interact(user)
 		return /// Normaly you just stamp, you don't need to read the thing
 	else
@@ -310,7 +310,7 @@
 					LAZYADD(stamped, stamp_icon_state)
 
 				update_static_data(usr,ui)
-				ui.user.visible_message(SPAN_NOTICE("[ui.user] stamps [src] with [stamp_class]!"), SPAN_NOTICE("You stamp [src] with [stamp_class]!"))
+				ui.user.visible_message("<span class='notice'>[ui.user] stamps [src] with [stamp_class]!</span>", "<span class='notice'>You stamp [src] with [stamp_class]!</span>")
 			else
 				to_chat(usr, pick("You try to stamp but you miss!", "There is no where else you can stamp!"))
 			. = TRUE

@@ -46,4 +46,4 @@
 	holder.update_action_buttons_icon()
 	if(recharge_sound)
 		playsound(dashing_item, recharge_sound, 50, 1)
-	to_chat(holder, SPAN_NOTICE("[src] now has [current_charges]/[max_charges] charges."))
+	to_chat(holder, "<span class='notice'>[src] now has [current_charges]/[max_charges] charges.</span>")

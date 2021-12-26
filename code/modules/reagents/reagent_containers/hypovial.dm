@@ -40,7 +40,7 @@
 /obj/item/reagent_containers/glass/bottle/vial/small/bluespace
 	volume = 120
 	possible_transfer_amounts = list(1,2,5,10,20)
-	name = "quantum hypovial"
+	name = "bluespace hypovial"
 	icon_state = "hypovialbs"
 	unique_reskin = null
 
@@ -62,7 +62,7 @@
 
 /obj/item/reagent_containers/glass/bottle/vial/large/bluespace
 	possible_transfer_amounts = list(1,2,5,10,20)
-	name = "quantum large hypovial"
+	name = "bluespace large hypovial"
 	volume = 240
 	icon_state = "hypoviallargebs"
 	unique_reskin = null

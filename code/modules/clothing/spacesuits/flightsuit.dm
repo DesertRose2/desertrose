@@ -434,7 +434,7 @@
 	target.hitby(wearer)
 	target.take_damage(60, BRUTE, "melee", 1)
 	if(wearer.Move(target.loc))
-		wearer.visible_message(SPAN_WARNING("[wearer] smashes straight past [target]!"))
+		wearer.visible_message("<span class='warning'>[wearer] smashes straight past [target]!</span>")
 
 /obj/item/flightpack/proc/airlock_pass(obj/machinery/door/A)
 	var/nopass = FALSE
@@ -446,7 +446,7 @@
 			nopass = TRUE
 	if(!nopass)
 		INVOKE_ASYNC(A, /obj/machinery/door.proc/open)
-		wearer.visible_message(SPAN_WARNING("[wearer] rolls sideways and slips past [A]."))
+		wearer.visible_message("<span class='warning'>[wearer] rolls sideways and slips past [A]</span>")
 		var/turf/target = get_turf(A)
 		if(istype(A, /obj/machinery/door/window) && (get_turf(wearer) == get_turf(A)))
 			target = get_step(A, A.dir)
@@ -458,7 +458,7 @@
 		return FALSE
 	if(!victim.anchored)
 		var/knockback = (power + ((part_manip.rating + part_bin.rating) / 2) - (victim.density * 2)) * 2
-		victim.visible_message(SPAN_WARNING("[victim.name] is sent flying by the impact!"))
+		victim.visible_message("<span class='warning'>[victim.name] is sent flying by the impact!</span>")
 		var/turf/target = get_turf(victim)
 		for(var/i in 1 to knockback)
 			target = get_step(target, direction)
@@ -472,14 +472,14 @@
 /obj/item/flightpack/proc/losecontrol(knockdown = FALSE, move = TRUE)
 	usermessage("Warning: Control system not responding. Deactivating!", "boldwarning")
 	if(wearer)
-		wearer.visible_message(SPAN_WARNING("[wearer]'s flight suit abruptly shuts off and [wearer.p_they()] lose[wearer.p_s()] control!"))
+		wearer.visible_message("<span class='warning'>[wearer]'s flight suit abruptly shuts off and [wearer.p_they()] lose[wearer.p_s()] control!</span>")
 		if(move)
 			while(momentum_x != 0 || momentum_y != 0)
 				sleep(2)
 				step(wearer, pick(GLOB.cardinals))
 				momentum_decay()
 				adjust_momentum(0, 0, 10)
-		wearer.visible_message(SPAN_WARNING("[wearer]'s flight suit crashes into the ground!"))
+		wearer.visible_message("<span class='warning'>[wearer]'s flight suit crashes into the ground!</span>")
 		if(knockdown)
 			wearer.Knockdown(80)
 	momentum_x = 0
@@ -854,7 +854,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/flightsuit/proc/lock_suit(mob/wearer)
 	user = wearer
-	user.visible_message(SPAN_NOTICE("[wearer]'s flight suit locks around [wearer.p_them()], powered buckles and straps automatically adjusting to [wearer.p_their()] body!"))
+	user.visible_message("<span class='notice'>[wearer]'s flight suit locks around [wearer.p_them()], powered buckles and straps automatically adjusting to [wearer.p_their()] body!</span>")
 	playsound(src.loc, 'sound/items/rped.ogg', 65, 1)
 	resync()
 	strip_delay = locked_strip_delay
@@ -876,7 +876,7 @@
 			usermessage("Your flight shoes must be fully retracted first!", "boldwarning")
 			return FALSE
 		if(wearer)
-			user.visible_message(SPAN_NOTICE("[wearer]'s flight suit detaches from [wearer.p_their()] body, becoming nothing more then a bulky metal skeleton."))
+			user.visible_message("<span class='notice'>[wearer]'s flight suit detaches from [wearer.p_their()] body, becoming nothing more then a bulky metal skeleton.</span>")
 	playsound(src, 'sound/items/rped.ogg', 65, 1)
 	resync()
 	strip_delay = initial(strip_delay)
@@ -899,7 +899,7 @@
 		user.equip_to_slot_if_possible(pack,SLOT_BACK,0,0,1)
 		pack.item_flags |= NODROP
 		resync()
-		user.visible_message(SPAN_NOTICE("A [pack.name] extends from [user]'s [name] and clamps to [user.p_their()] back!"))
+		user.visible_message("<span class='notice'>A [pack.name] extends from [user]'s [name] and clamps to [user.p_their()] back!</span>")
 		user.update_inv_wear_suit()
 	playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
 	deployedpack = TRUE
@@ -916,7 +916,7 @@
 		if(user)
 			user.transferItemToLoc(pack, src, TRUE)
 			user.update_inv_wear_suit()
-			user.visible_message(SPAN_NOTICE("[user]'s [pack.name] detaches from [user.p_their()] back and retracts into [user.p_their()] [src]!"))
+			user.visible_message("<span class='notice'>[user]'s [pack.name] detaches from [user.p_their()] back and retracts into [user.p_their()] [src]!</span>")
 	pack.forceMove(src)
 	playsound(src, 'sound/mecha/mechmove03.ogg', 50, 1)
 	deployedpack = FALSE
@@ -936,7 +936,7 @@
 			return FALSE
 		user.equip_to_slot_if_possible(shoes,SLOT_SHOES,0,0,1)
 		shoes.item_flags |= NODROP
-		user.visible_message(SPAN_NOTICE("[user]'s [name] extends a pair of [shoes.name] over [user.p_their()] feet!"))
+		user.visible_message("<span class='notice'>[user]'s [name] extends a pair of [shoes.name] over [user.p_their()] feet!</span>")
 		user.update_inv_wear_suit()
 	playsound(src.loc, 'sound/mecha/mechmove03.ogg', 50, 1)
 	deployedshoes = TRUE
@@ -947,7 +947,7 @@
 	if(user)
 		user.transferItemToLoc(shoes, src, TRUE)
 		user.update_inv_wear_suit()
-		user.visible_message(SPAN_NOTICE("[user]'s [shoes.name] retracts back into [user.p_their()] [name]!"))
+		user.visible_message("<span class='notice'>[user]'s [shoes.name] retracts back into [user.p_their()] [name]!</span>")
 	shoes.forceMove(src)
 	deployedshoes = FALSE
 

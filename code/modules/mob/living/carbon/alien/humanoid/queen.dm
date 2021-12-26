@@ -97,7 +97,7 @@
 
 		prom = new (user.loc)
 		if(!user.put_in_active_hand(prom, 1))
-			to_chat(user, SPAN_WARNING("You must empty your hands before preparing the parasite."))
+			to_chat(user, "<span class='warning'>You must empty your hands before preparing the parasite.</span>")
 			return 0
 		else //Just in case telling the player only once is not enough!
 			to_chat(user, "<span class='noticealien'>Use the royal parasite on one of your children to promote her to Praetorian!</span>")
@@ -136,7 +136,7 @@
 		qdel(src)
 		return
 	else
-		to_chat(user, SPAN_WARNING("This child must be alert and responsive to become a Praetorian!"))
+		to_chat(user, "<span class='warning'>This child must be alert and responsive to become a Praetorian!</span>")
 
 /obj/item/queenpromote/attack_self(mob/user)
 	to_chat(user, "<span class='noticealien'>You discard [src].</span>")

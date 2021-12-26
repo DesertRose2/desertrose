@@ -56,9 +56,9 @@
 
 /obj/machinery/hydroponics/constructable/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Use <b>Ctrl-Click</b> to activate autogrow. <b>Alt-Click</b> to empty the tray's nutrients.")
+	. += "<span class='notice'>Use <b>Ctrl-Click</b> to activate autogrow. <b>Alt-Click</b> to empty the tray's nutrients.</span>"
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: Tray efficiency at <b>[rating*100]%</b>.")
+		. += "<span class='notice'>The status display reads: Tray efficiency at <b>[rating*100]%</b>.</span>"
 
 
 /obj/machinery/hydroponics/Destroy()
@@ -95,7 +95,7 @@
 		myseed.forceMove(src)
 
 	if(!powered() && self_sustaining)
-		visible_message(SPAN_WARNING("[name]'s auto-grow functionality shuts off!"))
+		visible_message("<span class='warning'>[name]'s auto-grow functionality shuts off!</span>")
 		idle_power_usage = 0
 		self_sustaining = FALSE
 		update_icon()
@@ -308,11 +308,11 @@
 	if(myseed)
 		. += "<span class='info'>It has <span class='name'>[myseed.plantname]</span> planted.</span>"
 		if (dead)
-			. += SPAN_WARNING("It's dead!")
+			. += "<span class='warning'>It's dead!</span>"
 		else if (harvest)
 			. += "<span class='info'>It's ready to harvest.</span>"
 		else if (plant_health <= (myseed.endurance / 2))
-			. += SPAN_WARNING("It looks unhealthy.")
+			. += "<span class='warning'>It looks unhealthy.</span>"
 	else
 		. += "<span class='info'>It's empty.</span>"
 
@@ -322,9 +322,9 @@
 		. += "<span class='info'>The tray's autogrow is active, halting reagent drain, and actively maintaning the plant.</span>"
 
 	if(weedlevel >= 5)
-		. += SPAN_WARNING("It's filled with weeds!")
+		. += "<span class='warning'>It's filled with weeds!</span>"
 	if(pestlevel >= 5)
-		. += SPAN_WARNING("It's filled with tiny worms!")
+		. += "<span class='warning'>It's filled with tiny worms!</span>"
 
 // Examining more a plant will yield a rough estimation of it's stats.
 // Intended for use by Wayfarer's and Legion to allow their farmers to gauge roughly how it's going.
@@ -334,88 +334,88 @@
 		. += "<span class=info>You examine the plant to get a better view of it's harvest...</span>"
 		switch(myseed.potency)	// Check potency
 			if(0 to 20)
-				. += SPAN_WARNING("The harvest's size is questioned, the fruits are small and insignificant.")
+				. += "<span class='warning'>The harvest's size is questioned, the fruits are small and insignificant.</span>"
 			if(21 to 40)
-				. += SPAN_NOTICE("The harvest's size is moderate, small but capable of feeding a singular person.")
+				. += "<span class='notice'>The harvest's size is moderate, small but capable of feeding a singular person.</span>"
 			if(41 to 60)
-				. += SPAN_NOTICE("The harvest's size is good, well sized and fit for a family.")
+				. += "<span class='notice'>The harvest's size is good, well sized and fit for a family.</span>"
 			if(61 to 80)
-				. += SPAN_NOTICE("The harvest's size is great! It's capable of providing a good feast!")
+				. += "<span class='notice'>The harvest's size is great! It's capable of providing a good feast!</span>"
 			if(81 to 100)
 				. += "<span class='nicegreen'>The harvest's size is huge and unmistakable!</span>"
 		switch(myseed.yield) 	// Check yield
 			if(0 to 2)
-				. += SPAN_WARNING("The plant will bear but a few fruits, if any at that.")
+				. += "<span class='warning'>The plant will bear but a few fruits, if any at that.</span>"
 			if(3 to 5)
-				. += SPAN_NOTICE("The plant will bear a handful of fruit at most.")
+				. += "<span class='notice'>The plant will bear a handful of fruit at most.</span>"
 			if(5 to 7)
-				. += SPAN_NOTICE("The plant will yield an ample amount.")
+				. += "<span class='notice'>The plant will yield an ample amount.</span>"
 			if(8 to 10)
 				. += "<span class='nicegreen'>The plant is high yielding and fertile!</span>"
 		switch(myseed.production) // Check production speed
 			if(1 to 3)
 				. += "<span class='nicegreen'>The plant'll be ready for harvest within a minute once it's matured!</span>"
 			if(4 to 7)
-				. += SPAN_NOTICE("The plant'll be ready for harvest in around a few minutes after reaching maturation.")
+				. += "<span class='notice'>The plant'll be ready for harvest in around a few minutes after reaching maturation.</span>"
 			if(8 to 10)
-				. += SPAN_WARNING("The plant's harvest is going to take a while after it's matured.")
+				. += "<span class='warning'>The plant's harvest is going to take a while after it's matured.'</span>"
 		switch(myseed.endurance)	// Check endurance
 			if(10 to 30)
-				. += SPAN_WARNING("The plant's endurance is faltering, a breeze is capable of causing it to buckle.")
+				. += "<span class='warning'>The plant's endurance is faltering, a breeze is capable of causing it to buckle.</span>"
 			if(31 to 50)
-				. += SPAN_NOTICE("The plant is durable, capable of taking the rough environment for a while.")
+				. += "<span class='notice'>The plant is durable, capable of taking the rough environment for a while.</span>"
 			if(51 to 70)
-				. += SPAN_NOTICE("The plant's fortitude is remarkable, it's able to withstand harsh toxins and stay alive.")
+				. += "<span class='notice'>The plant's fortitude is remarkable, it's able to withstand harsh toxins and stay alive.</span>"
 			if(71 to 90)
-				. += SPAN_NOTICE("The plant's endurance is as solid as an oak!")
+				. += "<span class='notice'>The plant's endurance is as solid as an oak!</span>"
 			if(90 to 100)
 				. += "<span class='nicegreen'>The plant's endurance is herculean, capable of surviving far longer than any man!</span>"
 		switch(myseed.lifespan)		// Checks lifespan
 			if(10 to 30)
-				. += SPAN_WARNING("The plant's lifespan is counted in minutes, look away, and it will be nevermore.")
+				. += "<span class='warning'>The plant's lifespan is counted in minutes, look away, and it will be nevermore.</span>"
 			if(31 to 50)
-				. += SPAN_NOTICE("The plant's lifespan is counted in hours, do not let it go so simply.")
+				. += "<span class='notice'>The plant's lifespan is counted in hours, do not let it go so simply.</span>"
 			if(51 to 70)
-				. += SPAN_NOTICE("The plant's lifespan is counted in days.")
+				. += "<span class='notice'>The plant's lifespan is counted in days.</span>"
 			if(71 to 90)
-				. += SPAN_NOTICE("The plant's lifepsan is counted in weeks.")
+				. += "<span class='notice'>The plant's lifepsan is counted in weeks.</span>"
 			if(90 to 100)
 				. += "<span class='nicegreen'>The plant's lifespan is forevermore. Treat it well, and it will not abandon you.</span>"
 		switch(myseed.instability)		// Checks Instability
 			if(0 to 20)
 				. += "<span class='nicegreen'>The plant's stability is solid, the foundation secure.</span>"
 			if(21 to 40)
-				. += SPAN_NOTICE("The plant's stability is shifting, the harvest uncertain.")
+				. += "<span class='notice'>The plant's stability is shifting, the harvest uncertain.</span>"
 			if(41 to 60)
-				. += SPAN_NOTICE("The plant's stability is loose, the harvest producing ancient relatives.")
+				. += "<span class='notice'>The plant's stability is loose, the harvest producing ancient relatives.</span>"
 			if(61 to 80)
-				. += SPAN_NOTICE("The plant's unstable, it actively morphs and tries to push itself to something greater.")
+				. += "<span class='notice'>The plant's unstable, it actively morphs and tries to push itself to something greater.</span>"
 			if(81 to 100)
-				. += SPAN_WARNING("The plant's unstable, the earth beneath moans and croaks, roots bend and insidious liquids seep from the skin.")
+				. += "<span class='warning'>The plant's unstable, the earth beneath moans and croaks, roots bend and insidious liquids seep from the skin.</span>"
 		switch(myseed.weed_rate)		//Checks Weed Growth Rate
 			if(0 to 2)
 				. += "<span class='nicegreen'>The weed growth around the plant appear to be of a miniscule amount...</span>"
 			if(3 to 5)
-				. += SPAN_NOTICE("The weed growth could overwhelm the plant in a matter of minutes...")
+				. += "<span class='notice'>The weed growth could overwhelm the plant in a matter of minutes...</span>"
 			if(5 to 7)
-				. += SPAN_NOTICE("The weed growth would in but a few moments overwhelm the plant...")
+				. += "<span class='notice'>The weed growth would in but a few moments overwhelm the plant...</span>"
 			if(8 to 10)
-				. += SPAN_WARNING("The weed growth could instantly put down the plant..!")
+				. += "<span class='warning'>The weed growth could instantly put down the plant..!</span>"
 		switch(myseed.weed_chance)		//Checks weed growth chance
 			if(0 to 20)
 				. += "<span class='nicegreen'>... and the chance of the weeds to grow are highly unlikely.</span>"
 			if(21 to 40)
-				. += SPAN_NOTICE("... and there's a coinflip's chance for the weeds to come forth.")
+				. += "<span class='notice'>... and there's a coinflip's chance for the weeds to come forth.</span>"
 			if(41 to 60)
-				. += SPAN_NOTICE("... and the weeds are more likely to spew forth than not.")
+				. += "<span class='notice'>... and the weeds are more likely to spew forth than not.</span>"
 			if(61 to 80)
-				. += SPAN_NOTICE("... and the weeds are very likely to come!")
+				. += "<span class='notice'>... and the weeds are very likely to come!</span>"
 			if(81 to 100)
-				. += SPAN_WARNING("... and the weeds will bloom.")
+				. += "<span class='warning'>... and the weeds will bloom.</span>"
 	else if(!myseed)
-		. += SPAN_NOTICE("... nothing seems to be growing there.")
+		. += "<span class='notice'>... nothing seems to be growing there.</span>"
 	else
-		. += SPAN_NOTICE("... You can't see anything in particular. Maybe you need to get closer to examine it closely?")
+		. += "<span class='notice'>... You can't see anything in particular. Maybe you need to get closer to examine it closely?</span>"
 	. = ..()
 
 /obj/machinery/hydroponics/proc/weedinvasion() // If a weed growth is sufficient, this happens.
@@ -451,7 +451,7 @@
 	weedlevel = 0 // Reset
 	pestlevel = 0 // Reset
 	update_icon()
-	visible_message(SPAN_WARNING("The [oldPlantName] is overtaken by some [myseed.plantname]!"))
+	visible_message("<span class='warning'>The [oldPlantName] is overtaken by some [myseed.plantname]!</span>")
 	name = "hydroponics tray ([myseed.plantname])"
 	if(myseed.product)
 		desc = initial(myseed.product.desc)
@@ -489,7 +489,7 @@
 
 	sleep(5) // Wait a while
 	update_icon()
-	visible_message(SPAN_WARNING("[oldPlantName] suddenly mutates into [myseed.plantname]!"))
+	visible_message("<span class='warning'>[oldPlantName] suddenly mutates into [myseed.plantname]!</span>")
 	TRAY_NAME_UPDATE
 
 /obj/machinery/hydroponics/proc/mutateweed() // If the weeds gets the mutagent instead. Mind you, this pretty much destroys the old plant
@@ -509,10 +509,10 @@
 
 		sleep(5) // Wait a while
 		update_icon()
-		visible_message(SPAN_WARNING("The mutated weeds in [src] spawn some [myseed.plantname]!"))
+		visible_message("<span class='warning'>The mutated weeds in [src] spawn some [myseed.plantname]!</span>")
 		TRAY_NAME_UPDATE
 	else
-		to_chat(usr, SPAN_WARNING("The few weeds in [src] seem to react, but only for a moment..."))
+		to_chat(usr, "<span class='warning'>The few weeds in [src] seem to react, but only for a moment...</span>")
 
 
 /**
@@ -533,10 +533,10 @@
 	if(pestlevel > 5)
 		message_admins("[ADMIN_LOOKUPFLW(user)] caused spiderling pests to spawn in a hydro tray")
 		log_game("[key_name(user)] caused spiderling pests to spawn in a hydro tray")
-		visible_message(SPAN_WARNING("The pests seem to behave oddly..."))
+		visible_message("<span class='warning'>The pests seem to behave oddly...</span>")
 		spawn_atom_to_turf(/obj/structure/spider/spiderling/hunter, src, 3, FALSE)
 	else
-		to_chat(user, SPAN_WARNING("The pests seem to behave oddly, but quickly settle down..."))
+		to_chat(user, "<span class='warning'>The pests seem to behave oddly, but quickly settle down...</span>")
 
 /obj/machinery/hydroponics/attackby(obj/item/O, mob/user, params)
 	//Called when mob user "attacks" it with object O
@@ -554,15 +554,15 @@
 		if(istype(reagent_source, /obj/item/reagent_containers/syringe))
 			var/obj/item/reagent_containers/syringe/syr = reagent_source
 			if(syr.mode != 1)
-				to_chat(user, SPAN_WARNING("You can't get any extract out of this plant.")		)
+				to_chat(user, "<span class='warning'>You can't get any extract out of this plant.</span>"		)
 				return
 
 		if(!reagent_source.reagents.total_volume)
-			to_chat(user, SPAN_NOTICE("[reagent_source] is empty."))
+			to_chat(user, "<span class='notice'>[reagent_source] is empty.</span>")
 			return 1
 
 		if(reagents.total_volume >= reagents.maximum_volume && !reagent_source.reagents.has_reagent(/datum/reagent/water, 1))
-			to_chat(user, SPAN_NOTICE("[src] is full."))
+			to_chat(user, "<span class='notice'>[src] is full.</span>")
 			return
 
 		var/list/trays = list(src)//makes the list just this in cases of syringes and compost etc
@@ -589,7 +589,7 @@
 				playsound(loc, 'sound/effects/slosh.ogg', 25, TRUE)
 
 		if(visi_msg)
-			visible_message(SPAN_NOTICE("[visi_msg]."))
+			visible_message("<span class='notice'>[visi_msg].</span>")
 
 
 		for(var/obj/machinery/hydroponics/H in trays)
@@ -616,7 +616,7 @@
 				investigate_log("had Kudzu planted in it by [key_name(user)] at [AREACOORD(src)]","kudzu")
 			if(!user.transferItemToLoc(O, src))
 				return
-			to_chat(user, SPAN_NOTICE("You plant [O]."))
+			to_chat(user, "<span class='notice'>You plant [O].</span>")
 			dead = FALSE
 			myseed = O
 			TRAY_NAME_UPDATE
@@ -626,7 +626,7 @@
 			update_icon()
 			return
 		else
-			to_chat(user, SPAN_WARNING("[src] already has seeds in it!"))
+			to_chat(user, "<span class='warning'>[src] already has seeds in it!</span>")
 			return
 
 	else if(istype(O, /obj/item/plant_analyzer))
@@ -643,7 +643,7 @@
 				to_chat(user, "- <B>Plant Reagents</B> -")
 				to_chat(user, "*---------*")
 				for(var/datum/plant_gene/reagent/G in myseed.genes)
-					to_chat(user, SPAN_NOTICE("- [G.get_name()] -"))
+					to_chat(user, "<span class='notice'>- [G.get_name()] -</span>")
 				to_chat(user, "*---------*")
 		else
 			to_chat(user, "<B>No plant found.</B>")
@@ -657,11 +657,11 @@
 
 	else if(istype(O, /obj/item/cultivator))
 		if(weedlevel > 0)
-			user.visible_message("[user] uproots the weeds.", SPAN_NOTICE("You remove the weeds from [src]."))
+			user.visible_message("[user] uproots the weeds.", "<span class='notice'>You remove the weeds from [src].</span>")
 			weedlevel = 0
 			update_icon()
 		else
-			to_chat(user, SPAN_WARNING("This plot is completely devoid of weeds! It doesn't need uprooting."))
+			to_chat(user, "<span class='warning'>This plot is completely devoid of weeds! It doesn't need uprooting.</span>")
 
 	else if(istype(O, /obj/item/storage/bag/plants))
 		attack_hand(user)
@@ -673,12 +673,12 @@
 
 	else if(istype(O, /obj/item/shovel/spade))
 		if(!myseed && !weedlevel)
-			to_chat(user, SPAN_WARNING("[src] doesn't have any plants or weeds!"))
+			to_chat(user, "<span class='warning'>[src] doesn't have any plants or weeds!</span>")
 			return
-		user.visible_message(SPAN_NOTICE("[user] starts digging out [src]'s plants..."),
-			SPAN_NOTICE("You start digging out [src]'s plants..."))
+		user.visible_message("<span class='notice'>[user] starts digging out [src]'s plants...</span>",
+			"<span class='notice'>You start digging out [src]'s plants...</span>")
 		if(O.use_tool(src, user, 50, volume=50) || (!myseed && !weedlevel))
-			user.visible_message(SPAN_NOTICE("[user] digs out the plants in [src]!"), SPAN_NOTICE("You dig out all of [src]'s plants!"))
+			user.visible_message("<span class='notice'>[user] digs out the plants in [src]!</span>", "<span class='notice'>You dig out all of [src]'s plants!</span>")
 			if(myseed) //Could be that they're just using it as a de-weeder
 				age = 0
 				plant_health = 0
@@ -712,7 +712,7 @@
 
 	else if(dead)
 		dead = FALSE
-		to_chat(user, SPAN_NOTICE("You remove the dead plant from [src]."))
+		to_chat(user, "<span class='notice'>You remove the dead plant from [src].</span>")
 		qdel(myseed)
 		myseed = null
 		update_icon()
@@ -726,7 +726,7 @@
 	if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
 		return
 	if(!powered())
-		to_chat(user, SPAN_WARNING("[name] has no power."))
+		to_chat(user, "<span class='warning'>[name] has no power.</span>")
 		return
 	if(!anchored)
 		return
@@ -743,15 +743,15 @@
 	var/warning = alert(user, "Are you sure you wish to empty the tray's nutrient beaker?","Empty Tray Nutrients?", "Yes", "No")
 	if(warning == "Yes" && user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
 		reagents.clear_reagents()
-		to_chat(user, SPAN_WARNING("You empty [src]'s nutrient tank."))
+		to_chat(user, "<span class='warning'>You empty [src]'s nutrient tank.</span>")
 
 /obj/machinery/hydroponics/proc/update_tray(mob/user)
 	harvest = FALSE
 	lastproduce = age
 	if(myseed.getYield() <= 0)
-		to_chat(user, SPAN_WARNING("You fail to harvest anything useful!"))
+		to_chat(user, "<span class='warning'>You fail to harvest anything useful!</span>")
 	else
-		to_chat(user, SPAN_NOTICE("You harvest [myseed.getYield()] items from the [myseed.plantname]."))
+		to_chat(user, "<span class='notice'>You harvest [myseed.getYield()] items from the [myseed.plantname].</span>")
 	if(!myseed.get_gene(/datum/plant_gene/trait/repeated_harvest))
 		qdel(myseed)
 		myseed = null
@@ -818,7 +818,7 @@
 
 /obj/machinery/hydroponics/soil/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/shovel) && !istype(O, /obj/item/shovel/spade)) //Doesn't include spades because of uprooting plants
-		to_chat(user, SPAN_NOTICE("You clear up [src]!"))
+		to_chat(user, "<span class='notice'>You clear up [src]!</span>")
 		qdel(src)
 	else
 		return ..()
@@ -846,7 +846,7 @@
 
 /obj/machinery/hydroponics/soil/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/shovel) && !istype(O, /obj/item/shovel/spade)) //Doesn't include spades because of uprooting plants
-		to_chat(user, SPAN_NOTICE("You clear up [src]!"))
+		to_chat(user, "<span class='notice'>You clear up [src]!</span>")
 		qdel(src)
 	else
 		return ..()
@@ -857,9 +857,9 @@
 
 /obj/machinery/hydroponics/soil/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("<b>Alt-Click</b> to empty the tray's nutrients.")
+	. += "<span class='notice'><b>Alt-Click</b> to empty the tray's nutrients.</span>"
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("You might be able to discern a plant's harvest by examining it <b>closer</b>.")
+		. += "<span class='notice'>You might be able to discern a plant's harvest by examining it <b>closer</b>.</span>"
 
 /obj/machinery/hydroponics/proc/become_self_sufficient() // Ambrosia Gaia effect
 	visible_message("<span class='boldnotice'>[src] begins to glow with a beautiful light!</span>")

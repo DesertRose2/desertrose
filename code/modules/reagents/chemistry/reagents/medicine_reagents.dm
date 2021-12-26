@@ -53,7 +53,7 @@
 			if(1   to 32)
 				mytray.mutatepest(user)
 			else if(prob(20))
-				mytray.visible_message(SPAN_WARNING("Nothing happens..."))
+				mytray.visible_message("<span class='warning'>Nothing happens...</span>")
 
 /datum/reagent/medicine/adminordrazine/on_mob_life(mob/living/carbon/M)
 	M.reagents.remove_all_type(/datum/reagent/toxin, 5*REM, 0, 1)
@@ -283,11 +283,11 @@
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(0.5*reac_volume)
 			if(show_message)
-				to_chat(M, SPAN_WARNING("You don't feel so good..."))
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 		else if(M.getFireLoss())
 			M.adjustFireLoss(-reac_volume)
 			if(show_message)
-				to_chat(M, SPAN_DANGER("You feel your burns healing! It stings like hell!"))
+				to_chat(M, "<span class='danger'>You feel your burns healing! It stings like hell!</span>")
 			M.emote("scream")
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
 	..()
@@ -348,11 +348,11 @@
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(0.5*reac_volume)
 			if(show_message)
-				to_chat(M, SPAN_WARNING("You don't feel so good..."))
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 		else if(M.getBruteLoss())
 			M.adjustBruteLoss(-reac_volume)
 			if(show_message)
-				to_chat(M, SPAN_DANGER("You feel your bruises healing! It stings like hell!"))
+				to_chat(M, "<span class='danger'>You feel your bruises healing! It stings like hell!</span>")
 			M.emote("scream")
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
 	..()
@@ -414,11 +414,11 @@
 
 /datum/reagent/medicine/salglu_solution/overdose_process(mob/living/M)
 	if(prob(3))
-		to_chat(M, SPAN_WARNING("You feel salty."))
+		to_chat(M, "<span class = 'warning'>You feel salty.</span>")
 		holder.add_reagent(/datum/reagent/consumable/sodiumchloride, 1)
 		holder.remove_reagent(/datum/reagent/medicine/salglu_solution, 0.5)
 	else if(prob(3))
-		to_chat(M, SPAN_WARNING("You feel sweet."))
+		to_chat(M, "<span class = 'warning'>You feel sweet.</span>")
 		holder.add_reagent(/datum/reagent/consumable/sugar, 1)
 		holder.remove_reagent(/datum/reagent/medicine/salglu_solution, 0.5)
 	if(prob(33))
@@ -449,7 +449,7 @@
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjust_nutrition(-5)
 			if(show_message)
-				to_chat(M, SPAN_WARNING("Your stomach feels empty and cramps!"))
+				to_chat(M, "<span class='warning'>Your stomach feels empty and cramps!</span>")
 		else
 			var/mob/living/carbon/C = M
 			for(var/s in C.surgeries)
@@ -458,7 +458,7 @@
 				// +10% success propability on each step, useful while operating in less-than-perfect conditions
 
 			if(show_message)
-				to_chat(M, SPAN_DANGER("You feel your injuries fade away to nothing!") )
+				to_chat(M, "<span class='danger'>You feel your injuries fade away to nothing!</span>" )
 	..()
 
 /datum/reagent/medicine/mine_salve/on_mob_end_metabolize(mob/living/M)
@@ -485,7 +485,7 @@
 		if(method in list(INGEST, VAPOR))
 			C.losebreath++
 			C.emote("cough")
-			to_chat(M, SPAN_DANGER("You feel your throat closing up!"))
+			to_chat(M, "<span class='danger'>You feel your throat closing up!</span>")
 		else if(method == INJECT)
 			return
 		else if(method in list(PATCH, TOUCH))
@@ -495,7 +495,7 @@
 				var/datum/wound/iter_wound = i
 				iter_wound.on_synthflesh(reac_volume)
 			if(show_message)
-				to_chat(M, SPAN_DANGER("You feel your burns and bruises healing! It stings like hell!"))
+				to_chat(M, "<span class='danger'>You feel your burns and bruises healing! It stings like hell!</span>")
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
 			var/vol = reac_volume + M.reagents.get_reagent_amount(/datum/reagent/medicine/synthflesh)
 			//Has to be at less than THRESHOLD_UNHUSK burn damage and have 100 synthflesh before unhusking. Corpses dont metabolize.
@@ -782,7 +782,7 @@
 /datum/reagent/medicine/morphine/on_mob_life(mob/living/carbon/M)
 	switch(current_cycle)
 		if(11)
-			to_chat(M, SPAN_WARNING("You start to feel tired...") )
+			to_chat(M, "<span class='warning'>You start to feel tired...</span>" )
 		if(12 to 24)
 			M.drowsyness += 1
 		if(24 to INFINITY)
@@ -846,13 +846,13 @@
 	eyes.applyOrganDamage(-2)
 	if(HAS_TRAIT_FROM(M, TRAIT_BLIND, EYE_DAMAGE))
 		if(prob(20))
-			to_chat(M, SPAN_WARNING("Your vision slowly returns..."))
+			to_chat(M, "<span class='warning'>Your vision slowly returns...</span>")
 			M.cure_blind(EYE_DAMAGE)
 			M.cure_nearsighted(EYE_DAMAGE)
 			M.blur_eyes(35)
 
 	else if(HAS_TRAIT_FROM(M, TRAIT_NEARSIGHT, EYE_DAMAGE))
-		to_chat(M, SPAN_WARNING("The blackness in your peripheral vision fades."))
+		to_chat(M, "<span class='warning'>The blackness in your peripheral vision fades.</span>")
 		M.cure_nearsighted(EYE_DAMAGE)
 		M.blur_eyes(10)
 	else if(M.eye_blind || M.eye_blurry)
@@ -938,14 +938,14 @@
 /datum/reagent/medicine/strange_reagent/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(M.stat == DEAD)
 		if(M.suiciding || M.hellbound) //they are never coming back
-			M.visible_message(SPAN_WARNING("[M]'s body does not react..."))
+			M.visible_message("<span class='warning'>[M]'s body does not react...</span>")
 			return
 		if(M.getBruteLoss() >= 100 || M.getFireLoss() >= 100 || HAS_TRAIT(M, TRAIT_HUSK)) //body is too damaged to be revived
-			M.visible_message(SPAN_WARNING("[M]'s body convulses a bit, and then falls still once more."))
+			M.visible_message("<span class='warning'>[M]'s body convulses a bit, and then falls still once more.</span>")
 			M.do_jitter_animation(10)
 			return
 		else
-			M.visible_message(SPAN_WARNING("[M]'s body starts convulsing!"))
+			M.visible_message("<span class='warning'>[M]'s body starts convulsing!</span>")
 			M.notify_ghost_cloning(source = M)
 			M.do_jitter_animation(10)
 			addtimer(CALLBACK(M, /mob/living/carbon.proc/do_jitter_animation, 10), 40) //jitter immediately, then again after 4 and 8 seconds
@@ -1084,7 +1084,7 @@
 	if(HAS_TRAIT(M, TRAIT_CHEM_USER))
 		is_druggie = TRUE
 	if(is_druggie == FALSE && isliving(M))
-		to_chat(M, SPAN_NOTICE("You are not used to taking drugs."))
+		to_chat(M, "<span class='notice'>You are not used to taking drugs.</span>")
 		M.confused = 0
 	..()
 
@@ -1309,7 +1309,7 @@
 
 /datum/reagent/medicine/neo_jelly
 	name = "Neo Jelly"
-	description = "Gradually regenerates all types of damage, without harming slime anatomy."
+	description = "Gradually regenerates all types of damage, without harming slime anatomy.Can OD"
 	reagent_state = LIQUID
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	color = "#91D865"
@@ -1698,7 +1698,7 @@
 		M.losebreath += rand(2,4)
 		M.adjustOxyLoss(rand(1,3))
 		if(prob(30))
-			to_chat(M, SPAN_DANGER("You can feel your blood clotting up in your veins!"))
+			to_chat(M, "<span class='danger'>You can feel your blood clotting up in your veins!</span>")
 		else if(prob(10))
 			to_chat(M, "<span class='userdanger'>You feel like your blood has stopped moving!</span>")
 		if(prob(50))

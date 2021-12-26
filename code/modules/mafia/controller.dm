@@ -188,7 +188,7 @@
 	phase = MAFIA_PHASE_DAY
 	if(!check_victory())
 		if(turn == 1)
-			send_message(SPAN_NOTICE("<b>The selected map is [current_map.name]!</b></br>[current_map.description]"))
+			send_message("<span class='notice'><b>The selected map is [current_map.name]!</b></br>[current_map.description]</span>")
 			send_message("<b>Day [turn] started! There is no voting on the first day. Say hello to everybody!</b>")
 			next_phase_timer = addtimer(CALLBACK(src,.proc/check_trial, FALSE),first_day_phase_period,TIMER_STOPPABLE) //no voting period = no votes = instant night
 		else
@@ -445,9 +445,9 @@
 	if(R)
 		var/datum/mafia_role/killer = get_random_voter("Mafia")
 		if(SEND_SIGNAL(killer,COMSIG_MAFIA_CAN_PERFORM_ACTION,src,"mafia killing",R) & MAFIA_PREVENT_ACTION)
-			send_message(SPAN_DANGER("[killer.body.real_name] was unable to attack [R.body.real_name] tonight!"),MAFIA_TEAM_MAFIA)
+			send_message("<span class='danger'>[killer.body.real_name] was unable to attack [R.body.real_name] tonight!</span>",MAFIA_TEAM_MAFIA)
 		else
-			send_message(SPAN_DANGER("[killer.body.real_name] has attacked [R.body.real_name]!"),MAFIA_TEAM_MAFIA)
+			send_message("<span class='danger'>[killer.body.real_name] has attacked [R.body.real_name]!</span>",MAFIA_TEAM_MAFIA)
 			R.kill(src)
 	reset_votes("Mafia")
 	SEND_SIGNAL(src,COMSIG_MAFIA_NIGHT_KILL_PHASE)
@@ -475,9 +475,9 @@
 	else
 		votes[vote_type][voter] = target
 	if(old_vote && old_vote == target)
-		send_message(SPAN_NOTICE("[voter.body.real_name] retracts their vote for [target.body.real_name]!"), team = teams)
+		send_message("<span class='notice'>[voter.body.real_name] retracts their vote for [target.body.real_name]!</span>", team = teams)
 	else
-		send_message(SPAN_NOTICE("[voter.body.real_name] voted for [target.body.real_name]!"),team = teams)
+		send_message("<span class='notice'>[voter.body.real_name] voted for [target.body.real_name]!</span>",team = teams)
 	if(!teams)
 		target.body.update_icon() //Update the vote display if it's a public vote
 		var/datum/mafia_role/old = old_vote
@@ -711,24 +711,24 @@
 		switch(action)
 			if("mf_signup")
 				if(!SSticker.HasRoundStarted())
-					to_chat(usr, SPAN_WARNING("Wait for the round to start."))
+					to_chat(usr, "<span class='warning'>Wait for the round to start.</span>")
 					return
 				if(GLOB.mafia_signup[C.ckey])
 					GLOB.mafia_signup -= C.ckey
-					to_chat(usr, SPAN_NOTICE("You unregister from Mafia."))
+					to_chat(usr, "<span class='notice'>You unregister from Mafia.</span>")
 					return
 				else
 					GLOB.mafia_signup[C.ckey] = C
-					to_chat(usr, SPAN_NOTICE("You sign up for Mafia."))
+					to_chat(usr, "<span class='notice'>You sign up for Mafia.</span>")
 				if(phase == MAFIA_PHASE_SETUP)
 					check_signups()
 					try_autostart()
 			if("mf_spectate")
 				if(C.ckey in spectators)
-					to_chat(usr, SPAN_NOTICE("You will no longer get messages from the game."))
+					to_chat(usr, "<span class='notice'>You will no longer get messages from the game.</span>")
 					spectators -= C.ckey
 				else
-					to_chat(usr, SPAN_NOTICE("You will now get messages from the game."))
+					to_chat(usr, "<span class='notice'>You will now get messages from the game.</span>")
 					spectators += C.ckey
 	if(user_role.game_status == MAFIA_DEAD)
 		return
@@ -909,8 +909,8 @@
 	//small message about not getting into this game for clarity on why they didn't get in
 	for(var/unpicked in possible_keys)
 		var/client/unpicked_client = GLOB.directory[unpicked]
-		to_chat(unpicked_client, SPAN_DANGER("Sorry, the starting mafia game has too many players and you were not picked."))
-		to_chat(unpicked_client, SPAN_WARNING("You're still signed up, getting messages from the current round, and have another chance to join when the one starting now finishes."))
+		to_chat(unpicked_client, "<span class='danger'>Sorry, the starting mafia game has too many players and you were not picked.</span>")
+		to_chat(unpicked_client, "<span class='warning'>You're still signed up, getting messages from the current round, and have another chance to join when the one starting now finishes.</span>")
 
 	if(!setup.len) //don't actually have one yet, so generate a max player random setup. it's good to do this here instead of above so it doesn't generate one every time a game could possibly start.
 		setup = generate_random_setup()

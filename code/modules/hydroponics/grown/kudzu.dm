@@ -31,22 +31,22 @@
 	if(isspaceturf(user.loc))
 		return
 	if(!isturf(user.loc))
-		to_chat(user, SPAN_WARNING("You need more space to plant [src]."))
+		to_chat(user, "<span class='warning'>You need more space to plant [src].</span>")
 		return FALSE
 	if(locate(/obj/structure/spacevine) in user.loc)
-		to_chat(user, SPAN_WARNING("There is too much kudzu here to plant [src]."))
+		to_chat(user, "<span class='warning'>There is too much kudzu here to plant [src].</span>")
 		return FALSE
-	to_chat(user, SPAN_NOTICE("You plant [src]."))
+	to_chat(user, "<span class='notice'>You plant [src].</span>")
 	message_admins("Kudzu planted by [ADMIN_LOOKUPFLW(user)] at [ADMIN_VERBOSEJMP(user)]")
 	investigate_log("was planted by [key_name(user)] at [AREACOORD(user)]", INVESTIGATE_BOTANY)
 	new /datum/spacevine_controller(get_turf(user), mutations, potency, production)
 	qdel(src)
 /*
 /obj/item/seeds/kudzu/attack_self(mob/user)
-	user.visible_message(SPAN_DANGER("[user] begins throwing seeds on the ground..."))
+	user.visible_message("<span class='danger'>[user] begins throwing seeds on the ground...</span>")
 	if(do_after(user, 50, needhand = TRUE, target = user.drop_location(), progress = TRUE))
 		plant(user)
-		to_chat(user, SPAN_NOTICE("You plant the kudzu. You monster."))
+		to_chat(user, "<span class='notice'>You plant the kudzu. You monster.</span>")
 */
 /obj/item/seeds/kudzu/get_analyzer_text()
 	var/text = ..()

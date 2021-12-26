@@ -27,22 +27,22 @@
 			if(M != user)
 				M.visible_message(\
 					"[user.name] pulls [M.name] free from the sticky nest!",\
-					SPAN_NOTICE("[user.name] pulls you free from the gelatinous resin."),\
+					"<span class='notice'>[user.name] pulls you free from the gelatinous resin.</span>",\
 					"<span class='italics'>You hear squelching...</span>")
 			else
 				M.visible_message(\
-					SPAN_WARNING("[M.name] struggles to break free from the gelatinous resin!"),\
-					SPAN_NOTICE("You struggle to break free from the gelatinous resin... (Stay still for two minutes.)"),\
+					"<span class='warning'>[M.name] struggles to break free from the gelatinous resin!</span>",\
+					"<span class='notice'>You struggle to break free from the gelatinous resin... (Stay still for two minutes.)</span>",\
 					"<span class='italics'>You hear squelching...</span>")
 				if(!do_after(M, 1200, target = src))
 					if(M && M.buckled)
-						to_chat(M, SPAN_WARNING("You fail to unbuckle yourself!"))
+						to_chat(M, "<span class='warning'>You fail to unbuckle yourself!</span>")
 					return
 				if(!M.buckled)
 					return
 				M.visible_message(\
-					SPAN_WARNING("[M.name] breaks free from the gelatinous resin!"),\
-					SPAN_NOTICE("You break free from the gelatinous resin!"),\
+					"<span class='warning'>[M.name] breaks free from the gelatinous resin!</span>",\
+					"<span class='notice'>You break free from the gelatinous resin!</span>",\
 					"<span class='italics'>You hear squelching...</span>")
 
 			unbuckle_mob(M)
@@ -63,7 +63,7 @@
 	if(buckle_mob(M))
 		M.visible_message(\
 			"[user.name] secretes a thick vile goo, securing [M.name] into [src]!",\
-			SPAN_DANGER("[user.name] drenches you in a foul-smelling resin, trapping you in [src]!"),\
+			"<span class='danger'>[user.name] drenches you in a foul-smelling resin, trapping you in [src]!</span>",\
 			"<span class='italics'>You hear squelching...</span>")
 
 /obj/structure/bed/nest/post_buckle_mob(mob/living/M)

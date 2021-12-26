@@ -71,10 +71,10 @@
 
 /obj/structure/vaultdoor/proc/vaultactivate()
 	if(destroyed)
-		to_chat(usr, SPAN_WARNING("[src] is broken."))
+		to_chat(usr, "<span class='warning'>[src] is broken</span>")
 		return
 	if(is_busy)
-		to_chat(usr, SPAN_WARNING("[src] is busy."))
+		to_chat(usr, "<span class='warning'>[src] is busy</span>")
 		return
 	if(density)
 		open()
@@ -92,12 +92,12 @@
 			if(!I.tool_start_check(user, amount=0))
 				return
 
-			to_chat(user, SPAN_NOTICE("You begin repairing [src]..."))
+			to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
 			if(I.use_tool(src, user, 40, volume=50))
 				obj_integrity += 50 //Only heal it slightly
-				to_chat(user, SPAN_NOTICE("You repair [src]."))
+				to_chat(user, "<span class='notice'>You repair [src].</span>")
 		else
-			to_chat(user, SPAN_WARNING("[src] is already in good condition!"))
+			to_chat(user, "<span class='warning'>[src] is already in good condition!</span>")
 		return
 
 //ß íå õî÷ó ïåðåäåëûâàòü ýòî äåðüìî  - Google translate tells me that from Russian to english this is "Do not move your arms around this way." so dont.

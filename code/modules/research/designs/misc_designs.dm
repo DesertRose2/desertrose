@@ -296,7 +296,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 
 /datum/design/locator
-	name = "Quantum Locator"
+	name = "Bluespace Locator"
 	desc = "Used to track portable teleportation beacons and targets with embedded tracking implants."
 	id = "locator"
 	build_type = PROTOLATHE
@@ -389,7 +389,7 @@
 
 /datum/design/blutrash
 	name = "Trashbag of Holding"
-	desc = "An advanced trash bag with quantum properties; capable of holding a plethora of garbage."
+	desc = "An advanced trash bag with bluespace properties; capable of holding a plethora of garbage."
 	id = "blutrash"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/gold = 1500, /datum/material/uranium = 250, /datum/material/plasma = 1500)
@@ -808,8 +808,8 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/shuttle_speed_upgrade_hyper
-	name = "Shuttle Quantum Hyperlane Optimisation Upgrade"
-	desc = "A disk that allows for calculating shorter routes when inserted into a flight control console. This one abuses quantum hyperlanes for increased efficiency."
+	name = "Shuttle Bluespace Hyperlane Optimisation Upgrade"
+	desc = "A disk that allows for calculating shorter routes when inserted into a flight control console. This one abuses bluespace hyperlanes for increased efficiency."
 	id = "disk_shuttle_route_hyper"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)

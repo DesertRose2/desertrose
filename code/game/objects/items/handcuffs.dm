@@ -47,7 +47,7 @@
 		return
 
 	if(iscarbon(user) && (HAS_TRAIT(user, TRAIT_CLUMSY) && prob(50)))
-		to_chat(user, SPAN_WARNING("Uh... how do those things work?!"))
+		to_chat(user, "<span class='warning'>Uh... how do those things work?!</span>")
 		apply_cuffs(user,user)
 		return
 
@@ -59,7 +59,7 @@
 
 	if(!C.handcuffed)
 		if(C.get_num_arms(FALSE) >= 2 || C.get_arm_ignore())
-			C.visible_message(SPAN_DANGER("[user] is trying to put [src.name] on [C]!"), \
+			C.visible_message("<span class='danger'>[user] is trying to put [src.name] on [C]!</span>", \
 								"<span class='userdanger'>[user] is trying to put [src.name] on [C]!</span>")
 
 			playsound(loc, cuffsound, 30, 1, -2)
@@ -68,14 +68,14 @@
 					apply_cuffs(C, user, TRUE)
 				else
 					apply_cuffs(C, user)
-				to_chat(user, SPAN_NOTICE("You handcuff [C]."))
+				to_chat(user, "<span class='notice'>You handcuff [C].</span>")
 				SSblackbox.record_feedback("tally", "handcuffs", 1, type)
 
 				log_combat(user, C, "handcuffed")
 			else
-				to_chat(user, SPAN_WARNING("You fail to handcuff [C]!"))
+				to_chat(user, "<span class='warning'>You fail to handcuff [C]!</span>")
 		else
-			to_chat(user, SPAN_WARNING("[C] doesn't have two hands..."))
+			to_chat(user, "<span class='warning'>[C] doesn't have two hands...</span>")
 
 /obj/item/restraints/handcuffs/proc/apply_cuffs(mob/living/carbon/target, mob/user, dispense = 0)
 	if(target.handcuffed)
@@ -121,7 +121,7 @@
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 
 /obj/item/restraints/handcuffs/cable/attack_self(mob/user)
-	to_chat(user, SPAN_NOTICE("You start unwinding the cable restraints back into a coil of wire."))
+	to_chat(user, "<span class='notice'>You start unwinding the cable restraints back into coil</span>")
 	if(!do_after(user, 25, TRUE, user))
 		return
 	qdel(src)
@@ -129,7 +129,7 @@
 	coil.amount = 15
 	user.put_in_hands(coil)
 	coil.color = color
-	to_chat(user, SPAN_NOTICE("You unwind the cable restraints back into a coil of wire."))
+	to_chat(user, "<span class='notice'>You unwind the cable restraints back into coil</span>")
 
 /obj/item/restraints/handcuffs/cable/red
 	color = "#ff0000"
@@ -169,24 +169,24 @@
 			var/obj/item/wirerod/W = new /obj/item/wirerod
 			remove_item_from_storage(user)
 			user.put_in_hands(W)
-			to_chat(user, SPAN_NOTICE("You wrap the cable restraint around the top of the rod."))
+			to_chat(user, "<span class='notice'>You wrap the cable restraint around the top of the rod.</span>")
 			qdel(src)
 		else
-			to_chat(user, SPAN_WARNING("You need one rod to make a wired rod!"))
+			to_chat(user, "<span class='warning'>You need one rod to make a wired rod!</span>")
 			return
 	else if(istype(I, /obj/item/stack/sheet/metal))
 		var/obj/item/stack/sheet/metal/M = I
 		if(M.get_amount() < 6)
-			to_chat(user, SPAN_WARNING("You need at least six metal sheets to make good enough weights!"))
+			to_chat(user, "<span class='warning'>You need at least six metal sheets to make good enough weights!</span>")
 			return
-		to_chat(user, SPAN_NOTICE("You begin to apply [I] to [src]..."))
+		to_chat(user, "<span class='notice'>You begin to apply [I] to [src]...</span>")
 		if(do_after(user, 35, target = src))
 			if(M.get_amount() < 6 || !M)
 				return
 			var/obj/item/restraints/legcuffs/bola/S = new /obj/item/restraints/legcuffs/bola
 			M.use(6)
 			user.put_in_hands(S)
-			to_chat(user, SPAN_NOTICE("You make some weights out of [I] and tie them to [src]."))
+			to_chat(user, "<span class='notice'>You make some weights out of [I] and tie them to [src].</span>")
 			remove_item_from_storage(user)
 			qdel(src)
 	else
@@ -268,7 +268,7 @@
 	if(ishuman(user) && !user.stat && !user.restrained())
 		armed = !armed
 		icon_state = "[initial(icon_state)][armed]"
-		to_chat(user, SPAN_NOTICE("[src] is now [armed ? "armed" : "disarmed"]"))
+		to_chat(user, "<span class='notice'>[src] is now [armed ? "armed" : "disarmed"]</span>")
 
 /obj/item/restraints/legcuffs/beartrap/Crossed(AM as mob|obj)
 	if(armed && isturf(src.loc))
@@ -297,7 +297,7 @@
 				armed = FALSE
 				icon_state = "[initial(icon_state)][armed]"
 				playsound(src.loc, 'sound/effects/snap.ogg', 50, 1)
-				L.visible_message(SPAN_DANGER("[L] triggers \the [src]."), \
+				L.visible_message("<span class='danger'>[L] triggers \the [src].</span>", \
 						"<span class='userdanger'>You trigger \the [src]!</span>")
 				L.apply_damage(trap_damage, BRUTE, def_zone)
 	..()
@@ -330,8 +330,10 @@
 /obj/item/restraints/legcuffs/bola
 	name = "bola"
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
+	icon = 'icons/fallout/objects/melee/weapons.dmi'
 	icon_state = "bola"
-	breakouttime = 35//easy to apply, easy to break out of
+	breakouttime = 15//easy to apply, easy to break out of
+	slowdown = 4
 	gender = NEUTER
 	var/knockdown = 0
 
@@ -353,7 +355,7 @@
  */
 /obj/item/restraints/legcuffs/bola/proc/ensnare(mob/living/carbon/C)
 	if(!C.legcuffed && C.get_num_legs(FALSE) >= 2)
-		visible_message(SPAN_DANGER("\The [src] ensnares [C]!"))
+		visible_message("<span class='danger'>\The [src] ensnares [C]!</span>")
 		C.legcuffed = src
 		forceMove(C)
 		C.update_equipment_speed_mods()
@@ -366,13 +368,14 @@
 /obj/item/restraints/legcuffs/bola/tactical//traitor variant
 	name = "reinforced bola"
 	desc = "A strong bola, made with a long steel chain. It looks heavy, enough so that it could trip somebody."
-	icon_state = "bola_r"
-	breakouttime = 70
-	knockdown = 20
+	icon_state = "bola"
+	breakouttime = 35
+	slowdown = 7
 
 /obj/item/restraints/legcuffs/bola/energy //For Security
 	name = "energy bola"
 	desc = "A specialized hard-light bola designed to ensnare fleeing criminals and aid in arrests."
+	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ebola"
 	hitsound = 'sound/weapons/taserhit.ogg'
 	w_class = WEIGHT_CLASS_SMALL

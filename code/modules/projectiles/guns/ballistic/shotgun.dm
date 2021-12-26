@@ -43,7 +43,7 @@
 	if(recentpump > world.time)
 		return
 	if(IS_STAMCRIT(user))//CIT CHANGE - makes pumping shotguns impossible in stamina softcrit
-		to_chat(user, SPAN_WARNING("You're too exhausted for that."))//CIT CHANGE - ditto
+		to_chat(user, "<span class='warning'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
 		return//CIT CHANGE - ditto
 	pump(user, TRUE)
 	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
@@ -62,7 +62,7 @@
 
 /obj/item/gun/ballistic/shotgun/proc/pump(mob/M, visible = TRUE)
 	if(visible)
-		M.visible_message(SPAN_WARNING("[M] racks [src]."), SPAN_WARNING("You rack [src]."))
+		M.visible_message("<span class='warning'>[M] racks [src].</span>", "<span class='warning'>You rack [src].</span>")
 	playsound(M, pump_sound, 60, 1)
 	pump_unload(M)
 	pump_reload(M)
@@ -162,7 +162,7 @@
 //Widowmaker					Keywords: Shotgun, Double barrel, saw-off
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"
-	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture."
+	desc = "A Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
 	icon_state = "widowmaker"
 	item_state = "shotgundouble"
 	force = 20
@@ -258,13 +258,13 @@
 			fire_delay = 3
 			burst_shot_delay = 4
 			extra_damage = 0
-			to_chat(user, SPAN_NOTICE("You prepare to slamfire the shotgun for a rapid burst of shots."))
+			to_chat(user, "<span class='notice'>You prepare to slamfire the shotgun for a rapid burst of shots.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 2
 			extra_damage = 1
-			to_chat(user, SPAN_NOTICE("You go back to firing the shotgun one round at a time."))
+			to_chat(user, "<span class='notice'>You go back to firing the shotgun one round at a time.</span>")
 
 ///////////////////////////
 //SEMI-AUTOMATIC SHOTGUNS//
@@ -338,7 +338,7 @@
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Alt-click to switch tubes.")
+	. += "<span class='notice'>Alt-click to switch tubes.</span>"
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize()
 	. = ..()

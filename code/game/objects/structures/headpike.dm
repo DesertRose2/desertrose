@@ -38,7 +38,7 @@
 		. += H
 
 /obj/structure/headpike/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	to_chat(user, SPAN_NOTICE("You take down [src]."))
+	to_chat(user, "<span class='notice'>You take down [src].</span>")
 	if(victim)
 		victim.forceMove(drop_location())
 		victim = null

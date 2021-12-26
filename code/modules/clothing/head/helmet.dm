@@ -27,14 +27,14 @@
 	if(issignaler(I))
 		var/obj/item/assembly/signaler/S = I
 		if(F) //Has a flashlight. Player must remove it, else it will be lost forever.
-			to_chat(user, SPAN_WARNING("The mounted flashlight is in the way, remove it first!"))
+			to_chat(user, "<span class='warning'>The mounted flashlight is in the way, remove it first!</span>")
 			return
 
 		if(S.secured)
 			qdel(S)
 			var/obj/item/bot_assembly/secbot/A = new
 			user.put_in_hands(A)
-			to_chat(user, SPAN_NOTICE("You add the signaler to the helmet."))
+			to_chat(user, "<span class='notice'>You add the signaler to the helmet.</span>")
 			qdel(src)
 			return
 	return ..()
@@ -132,6 +132,12 @@
 	clothing_flags = STOPSPRESSUREDAMAGE
 	strip_delay = 80
 	dog_fashion = null
+
+/obj/item/clothing/head/helmet/swat/nanotrasen
+	name = "\improper SWAT helmet"
+	desc = "An extremely robust, space-worthy helmet with the Nanotrasen logo emblazoned on the top."
+	icon_state = "swat"
+	item_state = "swat"
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
@@ -307,7 +313,7 @@
 			if(!F)
 				if(!user.transferItemToLoc(S, src))
 					return
-				to_chat(user, SPAN_NOTICE("You click [S] into place on [src]."))
+				to_chat(user, "<span class='notice'>You click [S] into place on [src].</span>")
 				if(S.on)
 					set_light(0)
 				F = S
@@ -322,7 +328,7 @@
 	if(istype(I, /obj/item/screwdriver))
 		if(F)
 			for(var/obj/item/flashlight/seclite/S in src)
-				to_chat(user, SPAN_NOTICE("You unscrew the seclite from [src]."))
+				to_chat(user, "<span class='notice'>You unscrew the seclite from [src].</span>")
 				F = null
 				S.forceMove(user.drop_location())
 				update_helmlight(user)
@@ -348,7 +354,7 @@
 	if(user.incapacitated())
 		return
 	F.on = !F.on
-	to_chat(user, SPAN_NOTICE("You toggle the helmetlight [F.on ? "on":"off"]."))
+	to_chat(user, "<span class='notice'>You toggle the helmetlight [F.on ? "on":"off"].</span>")
 
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_helmlight(user)

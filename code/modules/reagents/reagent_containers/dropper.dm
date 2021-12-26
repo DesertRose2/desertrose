@@ -18,11 +18,11 @@
 
 	if(reagents.total_volume > 0)
 		if(target.reagents.total_volume >= target.reagents.maximum_volume)
-			to_chat(user, SPAN_NOTICE("[target] is full."))
+			to_chat(user, "<span class='notice'>[target] is full.</span>")
 			return
 
 		if(!target.is_injectable())
-			to_chat(user, SPAN_WARNING("You cannot directly fill [target]!"))
+			to_chat(user, "<span class='warning'>You cannot directly fill [target]!</span>")
 			return
 
 		var/trans = 0
@@ -50,17 +50,17 @@
 					reagents.reaction(safe_thing, TOUCH, fraction)
 					trans = reagents.trans_to(safe_thing, amount_per_transfer_from_this)
 
-					target.visible_message(SPAN_DANGER("[user] tries to squirt something into [target]'s eyes, but fails!"), \
+					target.visible_message("<span class='danger'>[user] tries to squirt something into [target]'s eyes, but fails!</span>", \
 											"<span class='userdanger'>[user] tries to squirt something into [target]'s eyes, but fails!</span>")
 
-					to_chat(user, SPAN_NOTICE("You transfer [trans] unit\s of the solution."))
+					to_chat(user, "<span class='notice'>You transfer [trans] unit\s of the solution.</span>")
 					update_icon()
 					return
 			else if(isalien(target)) //hiss-hiss has no eyes!
-				to_chat(target, SPAN_DANGER("[target] does not seem to have any eyes!"))
+				to_chat(target, "<span class='danger'>[target] does not seem to have any eyes!</span>")
 				return
 
-			target.visible_message(SPAN_DANGER("[user] squirts something into [target]'s eyes!"), \
+			target.visible_message("<span class='danger'>[user] squirts something into [target]'s eyes!</span>", \
 									"<span class='userdanger'>[user] squirts something into [target]'s eyes!</span>")
 
 			reagents.reaction(target, TOUCH, fraction)
@@ -68,22 +68,22 @@
 			log_combat(user, M, "squirted", reagents.log_list())
 
 		trans = src.reagents.trans_to(target, amount_per_transfer_from_this)
-		to_chat(user, SPAN_NOTICE("You transfer [trans] unit\s of the solution."))
+		to_chat(user, "<span class='notice'>You transfer [trans] unit\s of the solution.</span>")
 		update_icon()
 
 	else
 
 		if(!target.is_drawable(FALSE)) //No drawing from mobs here
-			to_chat(user, SPAN_NOTICE("You cannot directly remove reagents from [target]."))
+			to_chat(user, "<span class='notice'>You cannot directly remove reagents from [target].</span>")
 			return
 
 		if(!target.reagents.total_volume)
-			to_chat(user, SPAN_WARNING("[target] is empty!"))
+			to_chat(user, "<span class='warning'>[target] is empty!</span>")
 			return
 
 		var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this)
 
-		to_chat(user, SPAN_NOTICE("You fill [src] with [trans] unit\s of the solution."))
+		to_chat(user, "<span class='notice'>You fill [src] with [trans] unit\s of the solution.</span>")
 
 		update_icon()
 

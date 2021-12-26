@@ -1321,7 +1321,7 @@
 /area/f13/bunker/museum)
 "ey" = (
 /obj/machinery/computer{
-	desc = "Some kind of machine. Seems broken and useless.";
+	desc = "Some kind of machine.Seems broken and useless.";
 	name = "broken computer"
 	},
 /obj/structure/disposalpipe/segment,

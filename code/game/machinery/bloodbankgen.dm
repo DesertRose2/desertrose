@@ -30,9 +30,9 @@
 /obj/machinery/bloodbankgen/examine(mob/user)
 	. = ..()
 	if(bag)
-		. += SPAN_NOTICE("It has \a [bag.name] hooked to its <b>input</b> slot. The counter reads: \"Current Capacity: [bag.reagents.total_volume] of [bag.reagents.maximum_volume]\"")
+		. += "<span class='notice'>It has \a [bag.name] hooked to its <b>input</b> slot. The counter reads: \"Current Capacity: [bag.reagents.total_volume] of [bag.reagents.maximum_volume]\"</span>"
 	if(outbag)
-		. += SPAN_NOTICE("It has \a [outbag.name] hooked to its <b>output</b> slot. The counter reads: \"Current Capacity: [outbag.reagents.total_volume] of [outbag.reagents.maximum_volume]\"")
+		. += "<span class='notice'>It has \a [outbag.name] hooked to its <b>output</b> slot. The counter reads: \"Current Capacity: [outbag.reagents.total_volume] of [outbag.reagents.maximum_volume]\"</span>"
 
 
 /obj/machinery/bloodbankgen/handle_atom_del(atom/A)
@@ -179,10 +179,10 @@
 		if(!anchored)
 			. += "[msg ? " and a" : "A"]nchor its bolts"
 		if(length(msg))
-			to_chat(user, SPAN_WARNING("[msg] first."))
+			to_chat(user, "<span class='warning'>[msg] first.</span>")
 			return
 		if(bag && outbag)
-			to_chat(user, SPAN_WARNING("This machine already has bags attached."))
+			to_chat(user, "<span class='warning'>This machine already has bags attached.</span>")
 
 		if(!bag && !outbag)
 			var/choice = alert(user, "Choose where to place [O]", "", "Input", "Cancel", "Output")
@@ -198,7 +198,7 @@
 		else if(!outbag)
 			attachoutput(O, user)
 	else
-		to_chat(user, SPAN_WARNING("You cannot put this in [src]!"))
+		to_chat(user, "<span class='warning'>You cannot put this in [src]!</span>")
 
 /obj/machinery/bloodbankgen/is_operational()
 	return ..() && anchored
@@ -251,7 +251,7 @@
 		draining = TRUE
 		update_icon()
 	else
-		to_chat(usr, SPAN_WARNING("There is no blood bag in the input slot."))
+		to_chat(usr, "<span class='warning'>There is no blood bag in the input slot.</span>")
 		return
 
 /obj/machinery/bloodbankgen/proc/activateoutput()
@@ -259,7 +259,7 @@
 		filling = TRUE
 		update_icon()
 	else
-		to_chat(usr, SPAN_WARNING("There is no blood bag in the output slot."))
+		to_chat(usr, "<span class='warning'>There is no blood bag in the output slot.</span>")
 		return
 
 /obj/machinery/bloodbankgen/proc/check_container_volume(list/reagents, multiplier = 1)
@@ -297,22 +297,22 @@
 		if(!user.transferItemToLoc(O, src))
 			return
 		bag = O
-		to_chat(user, SPAN_NOTICE("You add [O] to the machine's input slot."))
+		to_chat(user, "<span class='notice'>You add [O] to the machine's input slot.</span>")
 		update_icon()
 		updateUsrDialog()
 	else
-		to_chat(user, SPAN_NOTICE("There is already something in this slot!"))
+		to_chat(user, "<span class='notice'>There is already something in this slot!</span>")
 
 /obj/machinery/bloodbankgen/proc/attachoutput(obj/item/O, mob/user)
 	if(!outbag)
 		if(!user.transferItemToLoc(O, src))
 			return
 		outbag = O
-		to_chat(user, SPAN_NOTICE("You add [O] to the machine's output slot."))
+		to_chat(user, "<span class='notice'>You add [O] to the machine's output slot.</span>")
 		update_icon()
 		updateUsrDialog()
 	else
-		to_chat(user, SPAN_NOTICE("There is already something in this slot!"))
+		to_chat(user, "<span class='notice'>There is already something in this slot!</span>")
 
 /obj/machinery/bloodbankgen/Topic(href, href_list)
 	. = ..()

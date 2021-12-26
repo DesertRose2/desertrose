@@ -133,7 +133,7 @@
 /mob/living/simple_animal/hostile/syndicate/melee/bullet_act(obj/item/projectile/Proj)
 	if(prob(25))
 		return ..()
-	visible_message(SPAN_DANGER("[src] blocks [Proj] with its shield!"))
+	visible_message("<span class='danger'>[src] blocks [Proj] with its shield!</span>")
 	return BULLET_ACT_BLOCK
 
 /mob/living/simple_animal/hostile/syndicate/melee/sword/space

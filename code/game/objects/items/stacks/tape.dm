@@ -28,15 +28,15 @@
 		return
 
 	if(I.embedding && I.embedding == conferred_embed)
-		to_chat(user, SPAN_WARNING("[I] is already coated in [src]!"))
+		to_chat(user, "<span class='warning'>[I] is already coated in [src]!</span>")
 		return
 
-	user.visible_message(SPAN_NOTICE("[user] begins wrapping [I] with [src]."), SPAN_NOTICE("You begin wrapping [I] with [src]."))
+	user.visible_message("<span class='notice'>[user] begins wrapping [I] with [src].</span>", "<span class='notice'>You begin wrapping [I] with [src].</span>")
 
 	if(do_after(user, apply_time, target=I))
 		I.embedding = conferred_embed
 		I.updateEmbedding()
-		to_chat(user, SPAN_NOTICE("You finish wrapping [I] with [src]."))
+		to_chat(user, "<span class='notice'>You finish wrapping [I] with [src].</span>")
 		if(!endless)
 			use(1)
 		I.name = "[prefix] [I.name]"

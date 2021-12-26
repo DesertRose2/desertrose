@@ -40,22 +40,22 @@
 	if(user.zone_selected != "head")
 		return
 	if(!target_limb)
-		to_chat(user, SPAN_NOTICE("[M] has no [parse_zone(target_zone)]!"))
+		to_chat(user, "<span class='notice'>[M] has no [parse_zone(target_zone)]!</span>")
 		return
 	if(!get_location_accessible(M, target_zone))
-		to_chat(user, SPAN_NOTICE("Expose [M]\s head before trying to crush it!"))
+		to_chat(user, "<span class='notice'>Expose [M]\s head before trying to crush it!</span>")
 		return
 
-	M.visible_message(SPAN_WARNING("[user] is trying to crush [M]\s head with \the [src]!"))
+	M.visible_message("<span class='warning'>[user] is trying to crush [M]\s head with \the [src]!</span>")
 
 	var/crush_time = max(0, 400 - target_limb.brute_dam*2)
 	if(do_mob(user, M, crush_time))
 		if(get_location_accessible(M, target_zone)) //Yes, two checks, before and after the timer. What if someone puts a helmet on the guy while you're crushing his head?
 			if(target_limb)//If he still has the head. In case you queue up a lot of these up at once or the guy loses the head while you're removing it.
-				M.visible_message(SPAN_WARNING("[M]\s head cracks like a watermelon, spilling everything inside, as it becomes an unrecognizable mess!"))
+				M.visible_message("<span class='warning'>[M]\s head cracks like a watermelon, spilling everything inside, as it becomes an unrecognizable mess!</span>")
 				gib_head(M)
 		else
-			to_chat(user, SPAN_NOTICE("Expose [M]\s head before trying to crush it!"))
+			to_chat(user, "<span class='notice'>Expose [M]\s head before trying to crush it!</span>")
 
 
 /obj/item/nutcracker/suicide_act(mob/living/carbon/user)

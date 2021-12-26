@@ -96,7 +96,7 @@
 	if(istype(target, /mob/living/simple_animal/hostile/bear) && proximity_flag)
 		var/mob/living/simple_animal/hostile/bear/A = target
 		if(A.armored)
-			to_chat(user, SPAN_WARNING("[A] has already been armored up!"))
+			to_chat(user, "<span class='warning'>[A] has already been armored up!</span>")
 			return
 		A.armored = TRUE
 		A.maxHealth += 60
@@ -152,7 +152,7 @@
 	free butter to the station!</b>")
 	var/new_name = stripped_input(src, "Enter your name, or press \"Cancel\" to stick with Terrygold.", "Name Change")
 	if(new_name)
-		to_chat(src, SPAN_NOTICE("Your name is now <b>\"new_name\"</b>!"))
+		to_chat(src, "<span class='notice'>Your name is now <b>\"new_name\"</b>!</span>")
 		name = new_name
 
 /mob/living/simple_animal/hostile/bear/butter/AttackingTarget() //Makes some attacks by the butter bear slip those who dare cross its path.
@@ -161,7 +161,7 @@
 		if((L.mobility_flags & MOBILITY_STAND))
 			L.Knockdown(20)
 			playsound(loc, 'sound/misc/slip.ogg', 15)
-			L.visible_message(SPAN_DANGER("[L] slips on butter!"))
+			L.visible_message("<span class='danger'>[L] slips on butter!</span>")
 
 /mob/living/simple_animal/hostile/bear/yaoguai
 	name = "yao guai"

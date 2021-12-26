@@ -144,7 +144,7 @@ Difficulty: Extremely Hard
 
 /mob/living/simple_animal/hostile/megafauna/demonic_frost_miner/ex_act(severity, target)
 	adjustBruteLoss(30 * severity - 120)
-	visible_message(SPAN_DANGER("[src] absorbs the explosion!"), "<span class='userdanger'>You absorb the explosion!</span>")
+	visible_message("<span class='danger'>[src] absorbs the explosion!</span>", "<span class='userdanger'>You absorb the explosion!</span>")
 
 /mob/living/simple_animal/hostile/megafauna/demonic_frost_miner/Goto(target, delay, minimum_distance)
 	if(enraging)
@@ -277,15 +277,15 @@ Difficulty: Extremely Hard
 
 /obj/item/resurrection_crystal/attack_self(mob/living/user)
 	if(!iscarbon(user))
-		to_chat(user, SPAN_NOTICE("A dark presence stops you from absorbing the crystal."))
+		to_chat(user, "<span class='notice'>A dark presence stops you from absorbing the crystal.</span>")
 		return
 	forceMove(user)
-	to_chat(user, SPAN_NOTICE("You feel a bit safer... but a demonic presence lurks in the back of your head..."))
+	to_chat(user, "<span class='notice'>You feel a bit safer... but a demonic presence lurks in the back of your head...</span>")
 	RegisterSignal(user, COMSIG_MOB_DEATH, .proc/resurrect)
 
 /// Resurrects the target when they die by cloning them into a new duplicate body and transferring their mind to the clone on a safe station turf
 /obj/item/resurrection_crystal/proc/resurrect(mob/living/carbon/user, gibbed)
-	user.visible_message(SPAN_NOTICE("You see [user]'s soul dragged out of their body!"), SPAN_NOTICE("You feel your soul dragged away to a fresh body!"))
+	user.visible_message("<span class='notice'>You see [user]'s soul dragged out of their body!</span>", "<span class='notice'>You feel your soul dragged away to a fresh body!</span>")
 	var/typepath = user.type
 	var/turf/T = find_safe_turf()
 	var/mob/living/carbon/clone = new typepath(T)
@@ -293,7 +293,7 @@ Difficulty: Extremely Hard
 	user.dna.transfer_identity(clone)
 	clone.updateappearance(mutcolor_update=1)
 	user.mind.transfer_to(clone) // second life
-	to_chat(clone, SPAN_NOTICE("You blink and find yourself in [get_area_name(T)]."))
+	to_chat(clone, "<span class='notice'>You blink and find yourself in [get_area_name(T)].</span>")
 	user.gib()
 	qdel(src)
 
@@ -348,6 +348,6 @@ Difficulty: Extremely Hard
 /datum/status_effect/ice_block_talisman/on_remove()
 	. = ..()
 	if(!owner.stat)
-		to_chat(owner, SPAN_NOTICE("The cube melts!"))
+		to_chat(owner, "<span class='notice'>The cube melts!</span>")
 	owner.cut_overlay(cube)
 	UnregisterSignal(owner, COMSIG_MOVABLE_PRE_MOVE)

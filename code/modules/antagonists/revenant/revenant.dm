@@ -186,7 +186,7 @@
 /mob/living/simple_animal/revenant/attackby(obj/item/W, mob/living/user, params)
 	. = ..()
 	if(istype(W, /obj/item/nullrod))
-		visible_message(SPAN_WARNING("[src] violently flinches!"), \
+		visible_message("<span class='warning'>[src] violently flinches!</span>", \
 						"<span class='revendanger'>As \the [W] passes through you, you feel your essence draining away!</span>")
 		adjustBruteLoss(25) //hella effective
 		inhibited = TRUE
@@ -222,12 +222,12 @@
 	revealed = TRUE
 	invisibility = 0
 	playsound(src, 'sound/effects/screech.ogg', 100, 1)
-	visible_message(SPAN_WARNING("[src] lets out a waning screech as violet mist swirls around its dissolving body!"))
+	visible_message("<span class='warning'>[src] lets out a waning screech as violet mist swirls around its dissolving body!</span>")
 	icon_state = "revenant_draining"
 	for(var/i = alpha, i > 0, i -= 10)
 		stoplag()
 		alpha = i
-	visible_message(SPAN_DANGER("[src]'s body breaks apart into a fine pile of blue dust."))
+	visible_message("<span class='danger'>[src]'s body breaks apart into a fine pile of blue dust.</span>")
 	var/reforming_essence = essence_regen_cap //retain the gained essence capacity
 	var/obj/item/ectoplasm/revenant/R = new(get_turf(src))
 	R.essence = max(reforming_essence - 15 * perfectsouls, 75) //minus any perfect souls
@@ -356,13 +356,13 @@
 		reform()
 	else
 		inert = TRUE
-		visible_message(SPAN_WARNING("[src] settles down and seems lifeless."))
+		visible_message("<span class='warning'>[src] settles down and seems lifeless.</span>")
 
 /obj/item/ectoplasm/revenant/attack_self(mob/user)
 	if(!reforming || inert)
 		return ..()
-	user.visible_message(SPAN_NOTICE("[user] scatters [src] in all directions."), \
-						SPAN_NOTICE("You scatter [src] across the area. The particles slowly fade away."))
+	user.visible_message("<span class='notice'>[user] scatters [src] in all directions.</span>", \
+						"<span class='notice'>You scatter [src] across the area. The particles slowly fade away.</span>")
 	user.dropItemToGround(src)
 	scatter()
 
@@ -370,7 +370,7 @@
 	..()
 	if(inert)
 		return
-	visible_message(SPAN_NOTICE("[src] breaks into particles upon impact, which fade away to nothingness."))
+	visible_message("<span class='notice'>[src] breaks into particles upon impact, which fade away to nothingness.</span>")
 	scatter()
 
 /obj/item/ectoplasm/revenant/examine(mob/user)

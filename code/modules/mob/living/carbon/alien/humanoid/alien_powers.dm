@@ -100,7 +100,7 @@ Doesn't work on other aliens/AI.*/
 	var/msg = sanitize(input("Message:", "Alien Whisper") as text|null)
 	if(msg)
 		if(M.anti_magic_check(FALSE, FALSE, TRUE, 0))
-			to_chat(user, SPAN_NOTICE("As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled."))
+			to_chat(user, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled.</span>")
 			return
 		log_directed_talk(user, M, msg, LOG_SAY, tag="alien whisper")
 		to_chat(M, "<span class='noticealien'>You hear a strange, alien voice in your head...</span>[msg]")
@@ -196,10 +196,10 @@ Doesn't work on other aliens/AI.*/
 /obj/effect/proc_holder/alien/neurotoxin/fire(mob/living/carbon/user)
 	var/message
 	if(active)
-		message = SPAN_NOTICE("You empty your neurotoxin gland.")
+		message = "<span class='notice'>You empty your neurotoxin gland.</span>"
 		remove_ranged_ability(message)
 	else
-		message = SPAN_NOTICE("You prepare your neurotoxin gland. <B>Left-click to fire at a target!</B>")
+		message = "<span class='notice'>You prepare your neurotoxin gland. <B>Left-click to fire at a target!</B></span>"
 		add_ranged_ability(user, message, TRUE)
 
 /obj/effect/proc_holder/alien/neurotoxin/update_icon()
@@ -217,7 +217,7 @@ Doesn't work on other aliens/AI.*/
 	var/mob/living/carbon/user = ranged_ability_user
 
 	if(user.getPlasma() < p_cost)
-		to_chat(user, SPAN_WARNING("You need at least [p_cost] plasma to spit."))
+		to_chat(user, "<span class='warning'>You need at least [p_cost] plasma to spit.</span>")
 		remove_ranged_ability()
 		return
 
@@ -266,7 +266,7 @@ Doesn't work on other aliens/AI.*/
 
 /obj/effect/proc_holder/alien/resin/fire(mob/living/carbon/user)
 	if(locate(/obj/structure/alien/resin) in user.loc)
-		to_chat(user, SPAN_DANGER("There is already a resin structure there."))
+		to_chat(user, "<span class='danger'>There is already a resin structure there.</span>")
 		return FALSE
 
 	if(!check_vent_block(user))
@@ -277,8 +277,8 @@ Doesn't work on other aliens/AI.*/
 		return FALSE
 	if (!cost_check(check_turf,user))
 		return FALSE
-	to_chat(user, SPAN_NOTICE("You shape a [choice]."))
-	user.visible_message(SPAN_NOTICE("[user] vomits up a thick purple substance and begins to shape it."))
+	to_chat(user, "<span class='notice'>You shape a [choice].</span>")
+	user.visible_message("<span class='notice'>[user] vomits up a thick purple substance and begins to shape it.</span>")
 
 	choice = structures[choice]
 	new choice(user.loc)

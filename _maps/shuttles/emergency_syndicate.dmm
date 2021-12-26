@@ -330,7 +330,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/silenced_pistol{
+/obj/structure/sign/poster/contraband/syndicate_pistol{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,

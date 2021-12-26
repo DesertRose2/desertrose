@@ -205,7 +205,7 @@
 			var/id = get_virus_id_by_index(text2num(params["index"]))
 			var/datum/disease/advance/A = SSdisease.archive_diseases[id]
 			if(!istype(A) || !A.mutable)
-				to_chat(usr, SPAN_WARNING("ERROR: Cannot replicate virus strain."))
+				to_chat(usr, "<span class='warning'>ERROR: Cannot replicate virus strain.</span>")
 				return
 			A = A.Copy()
 			var/list/data = list("viruses" = list(A))
@@ -239,13 +239,13 @@
 		if(stat & (NOPOWER|BROKEN))
 			return
 		if(beaker)
-			to_chat(user, SPAN_WARNING("A container is already loaded into [src]!"))
+			to_chat(user, "<span class='warning'>A container is already loaded into [src]!</span>")
 			return
 		if(!user.transferItemToLoc(I, src))
 			return
 
 		beaker = I
-		to_chat(user, SPAN_NOTICE("You insert [I] into [src]."))
+		to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
 		update_icon()
 	else
 		return ..()

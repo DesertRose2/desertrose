@@ -241,7 +241,7 @@
 			playsound(loc, 'sound/spookoween/insane_low_laugh.ogg', 300, 1)
 			qdel(src)
 		else
-			visible_message(SPAN_DANGER("[src] seems to be resisting the effect!"))
+			visible_message("<span class='danger'>[src] seems to be resisting the effect!</span>")
 	else
 		..()
 

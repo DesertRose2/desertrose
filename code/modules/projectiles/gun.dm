@@ -173,13 +173,13 @@
 
 /obj/item/gun/proc/shoot_with_empty_chamber(mob/living/user as mob|obj)
 	if (isenergy == TRUE)
-		to_chat(user, SPAN_DANGER("*power failure*"))
+		to_chat(user, "<span class='danger'>*power failure*</span>")
 		playsound(src, 'sound/f13weapons/noammoenergy.ogg', 30, 1)
 		return
 	if (isbow == TRUE)
-		to_chat(user, SPAN_DANGER("*no arrows*")) //Insert cool plink plink sound here
+		to_chat(user, "<span class='danger'>*no arrows*</span>") //Insert cool plink plink sound here
 		return
-	to_chat(user, SPAN_DANGER("*click*"))
+	to_chat(user, "<span class='danger'>*click*</span>")
 	playsound(src, "gun_dry_fire", 30, 1)
 
 /obj/item/gun/proc/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
@@ -196,9 +196,9 @@
 		playsound(user, fire_sound, 50, 1)
 		if(message)
 			if(pointblank)
-				user.visible_message(SPAN_DANGER("[user] fires [src] point blank at [pbtarget]!"), null, null, COMBAT_MESSAGE_RANGE)
+				user.visible_message("<span class='danger'>[user] fires [src] point blank at [pbtarget]!</span>", null, null, COMBAT_MESSAGE_RANGE)
 			else
-				user.visible_message(SPAN_DANGER("[user] fires [src]!"), null, null, COMBAT_MESSAGE_RANGE)
+				user.visible_message("<span class='danger'>[user] fires [src]!</span>", null, null, COMBAT_MESSAGE_RANGE)
 
 //Adds logging to the attack log whenever anyone draws a gun, adds a pause after drawing a gun before you can do anything based on it's size
 /obj/item/gun/pickup(mob/living/user)
@@ -314,7 +314,7 @@
 	if(!handle_pins(user))
 		return FALSE
 	if(HAS_TRAIT(user, TRAIT_PACIFISM) && chambered?.harmful) // If the user has the pacifist trait, then they won't be able to fire [src] if the round chambered inside of [src] is lethal.
-		to_chat(user, SPAN_NOTICE(" [src] is lethally chambered! You don't want to risk harming anyone..."))
+		to_chat(user, "<span class='notice'> [src] is lethally chambered! You don't want to risk harming anyone...</span>")
 		return FALSE
 
 /obj/item/gun/CheckAttackCooldown(mob/user, atom/target)
@@ -338,7 +338,7 @@
 			pin.auth_fail(user)
 			return FALSE
 	else
-		to_chat(user, SPAN_WARNING("[src]'s trigger is locked. This weapon doesn't have a firing pin installed!"))
+		to_chat(user, "<span class='warning'>[src]'s trigger is locked. This weapon doesn't have a firing pin installed!</span>")
 	return FALSE
 
 /obj/item/gun/proc/recharge_newshot()
@@ -353,7 +353,7 @@
 	if(on_cooldown())
 		return
 	if(user.IsWeaponDrawDelayed())
-		to_chat(user, SPAN_NOTICE("[src] is not yet ready to fire!"))
+		to_chat(user, "<span class='notice'>[src] is not yet ready to fire!</span>")
 		return
 	firing = TRUE
 	. = do_fire(target, user, message, params, zone_override, bonus_spread, stam_cost)
@@ -413,7 +413,7 @@
 	if(chambered && chambered.BB)
 		if(HAS_TRAIT(user, TRAIT_PACIFISM)) // If the user has the pacifist trait, then they won't be able to fire [src] if the round chambered inside of [src] is lethal.
 			if(chambered.harmful) // Is the bullet chambered harmful?
-				to_chat(user, SPAN_NOTICE(" [src] is lethally chambered! You don't want to risk harming anyone..."))
+				to_chat(user, "<span class='notice'> [src] is lethally chambered! You don't want to risk harming anyone...</span>")
 				return
 		if(randomspread)
 			sprd = round((rand() - 0.5) * DUALWIELD_PENALTY_EXTRA_MULTIPLIER * (randomized_gun_spread + randomized_bonus_spread), 1)
@@ -449,7 +449,7 @@
 		if(!gun_light)
 			if(!user.transferItemToLoc(I, src))
 				return
-			to_chat(user, SPAN_NOTICE("You click \the [S] into place on \the [src]."))
+			to_chat(user, "<span class='notice'>You click \the [S] into place on \the [src].</span>")
 			if(S.on)
 				set_light(0)
 			gun_light = S
@@ -463,7 +463,7 @@
 			return ..()
 		if(!user.transferItemToLoc(I, src))
 			return
-		to_chat(user, SPAN_NOTICE("You attach \the [K] to the front of \the [src]."))
+		to_chat(user, "<span class='notice'>You attach \the [K] to the front of \the [src].</span>")
 		bayonet = K
 		update_icon()
 		update_overlays()
@@ -474,7 +474,7 @@
 		if(!scope)
 			if(!user.transferItemToLoc(I, src))
 				return
-			to_chat(user, SPAN_NOTICE("You attach \the [C] to the top of \the [src]."))
+			to_chat(user, "<span class='notice'>You attach \the [C] to the top of \the [src].</span>")
 			scope = C
 			src.zoomable = TRUE
 			src.zoom_amt = 10
@@ -493,7 +493,7 @@
 				src.spread -= 8
 			else
 				src.spread = 0
-			to_chat(user, SPAN_NOTICE("You attach \the [R] to \the [src]."))
+			to_chat(user, "<span class='notice'>You attach \the [R] to \the [src].</span>")
 	else if(istype(I, /obj/item/attachments/bullet_speed))
 		var/obj/item/attachments/bullet_speed/B = I
 		if(!bullet_speed && can_attachments)
@@ -502,7 +502,7 @@
 			bullet_speed = B
 			src.desc += " It has an improved barrel installed."
 			src.extra_speed += TILES_TO_PIXELS(15)
-			to_chat(user, SPAN_NOTICE("You attach \the [B] to \the [src]."))
+			to_chat(user, "<span class='notice'>You attach \the [B] to \the [src].</span>")
 	else if(istype(I, /obj/item/attachments/burst_improvement))
 		var/obj/item/attachments/burst_improvement/T = I
 		if(!burst_improvement && burst_size > 1 && can_attachments)
@@ -511,25 +511,25 @@
 			burst_improvement = T
 			src.desc += " It has a modified burst cam installed."
 			src.burst_size += 1
-			to_chat(user, SPAN_NOTICE("You attach \the [T] to \the [src]."))
+			to_chat(user, "<span class='notice'>You attach \the [T] to \the [src].</span>")
 			update_icon()
 	else if(istype(I, /obj/item/screwdriver))
 		if(gun_light)
 			var/obj/item/flashlight/seclite/S = gun_light
-			to_chat(user, SPAN_NOTICE("You unscrew the seclite from \the [src]."))
+			to_chat(user, "<span class='notice'>You unscrew the seclite from \the [src].</span>")
 			gun_light = null
 			S.forceMove(get_turf(user))
 			update_gunlight(user)
 			S.update_brightness(user)
 			QDEL_NULL(alight)
 		if(bayonet)
-			to_chat(user, SPAN_NOTICE("You unscrew the bayonet from \the [src]."))
+			to_chat(user, "<span class='notice'>You unscrew the bayonet from \the [src].</span>")
 			var/obj/item/kitchen/knife/K = bayonet
 			K.forceMove(get_turf(user))
 			bayonet = null
 			update_icon()
 		if(scope)
-			to_chat(user, SPAN_NOTICE("You unscrew the scope from \the [src]."))
+			to_chat(user, "<span class='notice'>You unscrew the scope from \the [src].</span>")
 			var/obj/item/attachments/scope/C = scope
 			C.forceMove(get_turf(user))
 			src.zoomable = FALSE
@@ -551,7 +551,7 @@
 
 	var/mob/living/carbon/human/user = usr
 	gun_light.on = !gun_light.on
-	to_chat(user, SPAN_NOTICE("You toggle the gunlight [gun_light.on ? "on":"off"]."))
+	to_chat(user, "<span class='notice'>You toggle the gunlight [gun_light.on ? "on":"off"].</span>")
 
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_gunlight(user)
@@ -650,10 +650,10 @@
 		return
 
 	if(user == target)
-		target.visible_message(SPAN_WARNING("[user] sticks [src] in [user.p_their()] mouth, ready to pull the trigger..."), \
+		target.visible_message("<span class='warning'>[user] sticks [src] in [user.p_their()] mouth, ready to pull the trigger...</span>", \
 			"<span class='userdanger'>You stick [src] in your mouth, ready to pull the trigger...</span>")
 	else
-		target.visible_message(SPAN_WARNING("[user] points [src] at [target]'s head, ready to pull the trigger..."), \
+		target.visible_message("<span class='warning'>[user] points [src] at [target]'s head, ready to pull the trigger...</span>", \
 			"<span class='userdanger'>[user] points [src] at your head, ready to pull the trigger...</span>")
 
 	busy_action = TRUE
@@ -661,15 +661,15 @@
 	if(!bypass_timer && (!do_mob(user, target, 120) || user.zone_selected != BODY_ZONE_PRECISE_MOUTH))
 		if(user)
 			if(user == target)
-				user.visible_message(SPAN_NOTICE("[user] decided not to shoot."))
+				user.visible_message("<span class='notice'>[user] decided not to shoot.</span>")
 			else if(target && target.Adjacent(user))
-				target.visible_message(SPAN_NOTICE("[user] has decided to spare [target]."), SPAN_NOTICE("[user] has decided to spare your life!"))
+				target.visible_message("<span class='notice'>[user] has decided to spare [target]</span>", "<span class='notice'>[user] has decided to spare your life!</span>")
 		busy_action = FALSE
 		return
 
 	busy_action = FALSE
 
-	target.visible_message(SPAN_WARNING("[user] pulls the trigger!"), "<span class='userdanger'>[user] pulls the trigger!</span>")
+	target.visible_message("<span class='warning'>[user] pulls the trigger!</span>", "<span class='userdanger'>[user] pulls the trigger!</span>")
 
 	playsound('sound/weapons/dink.ogg', 30, 1)
 
@@ -743,14 +743,14 @@
 		user.client.pixel_y = world.icon_size*_y
 		RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, .proc/rotate)
 		UnregisterSignal(user, COMSIG_MOVABLE_MOVED) //pls don't conflict with anything else using this signal
-		user.visible_message(SPAN_NOTICE("[user] looks down the scope of [src]."), SPAN_NOTICE("You look down the scope of [src]."))
+		user.visible_message("<span class='notice'>[user] looks down the scope of [src].</span>", "<span class='notice'>You look down the scope of [src].</span>")
 	else
 		user.remove_movespeed_modifier(/datum/movespeed_modifier/scoped_in)
 		user.client.change_view(CONFIG_GET(string/default_view))
 		user.client.pixel_x = 0
 		user.client.pixel_y = 0
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
-		user.visible_message(SPAN_NOTICE("[user] looks up from the scope of [src]."), SPAN_NOTICE("You look up from the scope of [src]."))
+		user.visible_message("<span class='notice'>[user] looks up from the scope of [src].</span>", "<span class='notice'>You look up from the scope of [src].</span>")
 		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/on_walk) //Extra proc to make sure your zoom resets for bug where you don't unzoom when toggling while moving
 
 /obj/item/gun/proc/on_walk(mob/living/user)

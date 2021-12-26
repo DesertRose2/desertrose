@@ -207,39 +207,39 @@
 			if(W.tool_behaviour == TOOL_WRENCH && !isinspace())
 				W.play_tool_sound(src, 75)
 				anchored = TRUE
-				user.visible_message(SPAN_NOTICE("[user.name] secures the [name] to the floor."), \
-					SPAN_NOTICE("You secure the external bolts."))
+				user.visible_message("<span class='notice'>[user.name] secures the [name] to the floor.</span>", \
+					"<span class='notice'>You secure the external bolts.</span>")
 				construction_state = PA_CONSTRUCTION_UNWIRED
 				did_something = TRUE
 		if(PA_CONSTRUCTION_UNWIRED)
 			if(W.tool_behaviour == TOOL_WRENCH)
 				W.play_tool_sound(src, 75)
 				anchored = FALSE
-				user.visible_message(SPAN_NOTICE("[user.name] detaches the [name] from the floor."), \
-					SPAN_NOTICE("You remove the external bolts."))
+				user.visible_message("<span class='notice'>[user.name] detaches the [name] from the floor.</span>", \
+					"<span class='notice'>You remove the external bolts.</span>")
 				construction_state = PA_CONSTRUCTION_UNSECURED
 				did_something = TRUE
 			else if(istype(W, /obj/item/stack/cable_coil))
 				if(W.use_tool(src, user, 0, 1))
-					user.visible_message(SPAN_NOTICE("[user.name] adds wires to the [name]."), \
-						SPAN_NOTICE("You add some wires."))
+					user.visible_message("<span class='notice'>[user.name] adds wires to the [name].</span>", \
+						"<span class='notice'>You add some wires.</span>")
 					construction_state = PA_CONSTRUCTION_PANEL_OPEN
 					did_something = TRUE
 		if(PA_CONSTRUCTION_PANEL_OPEN)
 			if(W.tool_behaviour == TOOL_WIRECUTTER)//TODO:Shock user if its on?
-				user.visible_message(SPAN_NOTICE("[user.name] removes some wires from the [name]."), \
-					SPAN_NOTICE("You remove some wires."))
+				user.visible_message("<span class='notice'>[user.name] removes some wires from the [name].</span>", \
+					"<span class='notice'>You remove some wires.</span>")
 				construction_state = PA_CONSTRUCTION_UNWIRED
 				did_something = TRUE
 			else if(W.tool_behaviour == TOOL_SCREWDRIVER)
-				user.visible_message(SPAN_NOTICE("[user.name] closes the [name]'s access panel."), \
-					SPAN_NOTICE("You close the access panel."))
+				user.visible_message("<span class='notice'>[user.name] closes the [name]'s access panel.</span>", \
+					"<span class='notice'>You close the access panel.</span>")
 				construction_state = PA_CONSTRUCTION_COMPLETE
 				did_something = TRUE
 		if(PA_CONSTRUCTION_COMPLETE)
 			if(W.tool_behaviour == TOOL_SCREWDRIVER)
-				user.visible_message(SPAN_NOTICE("[user.name] opens the [name]'s access panel."), \
-					SPAN_NOTICE("You open the access panel."))
+				user.visible_message("<span class='notice'>[user.name] opens the [name]'s access panel.</span>", \
+					"<span class='notice'>You open the access panel.</span>")
 				construction_state = PA_CONSTRUCTION_PANEL_OPEN
 				did_something = TRUE
 

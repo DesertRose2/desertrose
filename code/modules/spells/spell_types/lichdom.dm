@@ -37,17 +37,17 @@
 			if((item.item_flags & ABSTRACT) || HAS_TRAIT(item, TRAIT_NODROP) || SEND_SIGNAL(item, COMSIG_ITEM_IMBUE_SOUL, user))
 				continue
 			marked_item = item
-			to_chat(M, SPAN_WARNING("You begin to focus your very being into [item]..."))
+			to_chat(M, "<span class='warning'>You begin to focus your very being into [item]...</span>")
 			break
 
 		if(!marked_item)
-			to_chat(M, SPAN_WARNING("None of the items you hold are suitable for emplacement of your fragile soul."))
+			to_chat(M, "<span class='warning'>None of the items you hold are suitable for emplacement of your fragile soul.</span>")
 			return
 
 		playsound(user, 'sound/effects/pope_entry.ogg', 100)
 
 		if(!do_after(M, 50, needhand=FALSE, target=marked_item))
-			to_chat(M, SPAN_WARNING("Your soul snaps back to your body as you stop ensouling [marked_item]!"))
+			to_chat(M, "<span class='warning'>Your soul snaps back to your body as you stop ensouling [marked_item]!</span>")
 			return
 
 		marked_item.name = "ensouled [marked_item.name]"
@@ -133,7 +133,7 @@
 	mind.transfer_to(lich)
 	mind.grab_ghost(force=TRUE)
 	lich.hardset_dna(null,null,null,lich.real_name,null, new /datum/species/skeleton/space)
-	to_chat(lich, SPAN_WARNING("Your bones clatter and shudder as you are pulled back into this world!"))
+	to_chat(lich, "<span class='warning'>Your bones clatter and shudder as you are pulled back into this world!</span>")
 	var/turf/body_turf = get_turf(old_body)
 	lich.DefaultCombatKnockdown(200 + 200*resurrections)
 	resurrections++
@@ -148,7 +148,7 @@
 				I.forceMove(body_turf)
 		var/wheres_wizdo = dir2text(get_dir(body_turf, item_turf))
 		if(wheres_wizdo)
-			old_body.visible_message(SPAN_WARNING("Suddenly [old_body.name]'s corpse falls to pieces! You see a strange energy rise from the remains, and speed off towards the [wheres_wizdo]!"))
+			old_body.visible_message("<span class='warning'>Suddenly [old_body.name]'s corpse falls to pieces! You see a strange energy rise from the remains, and speed off towards the [wheres_wizdo]!</span>")
 			body_turf.Beam(item_turf,icon_state="lichbeam",time=10+10*resurrections,maxdistance=INFINITY)
 		old_body.dust()
 

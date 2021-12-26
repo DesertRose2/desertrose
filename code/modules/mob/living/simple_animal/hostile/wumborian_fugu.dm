@@ -74,13 +74,13 @@
 /datum/action/innate/fugu/expand/Activate()
 	var/mob/living/simple_animal/hostile/asteroid/fugu/F = owner
 	if(F.wumbo)
-		to_chat(F, SPAN_NOTICE("YOU'RE ALREADY WUMBO!"))
+		to_chat(F, "<span class='notice'>YOU'RE ALREADY WUMBO!</span>")
 		return
 	if(F.inflate_cooldown)
-		to_chat(F, SPAN_NOTICE("You need time to gather your strength."))
+		to_chat(F, "<span class='notice'>You need time to gather your strength.</span>")
 		return
 	if(F.buffed)
-		to_chat(F, SPAN_NOTICE("Something is interfering with your growth."))
+		to_chat(F, "<span class='notice'>Something is interfering with your growth.</span>")
 		return
 	F.wumbo = 1
 	F.icon_state = "Fugu1"
@@ -134,7 +134,7 @@
 	if(proximity_flag && isanimal(target))
 		var/mob/living/simple_animal/A = target
 		if(A.buffed || (A.type in banned_mobs) || A.stat)
-			to_chat(user, SPAN_WARNING("Something's interfering with [src]'s effects. It's no use."))
+			to_chat(user, "<span class='warning'>Something's interfering with [src]'s effects. It's no use.</span>")
 			return
 		A.buffed++
 		A.maxHealth *= 1.5

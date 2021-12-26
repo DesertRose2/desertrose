@@ -302,7 +302,7 @@
 		if(ADV_BUILDMODE)
 			if(left_click && alt_click)
 				objholder = object.type
-				to_chat(user, SPAN_NOTICE("[initial(object.name)] ([object.type]) selected."))
+				to_chat(user, "<span class='notice'>[initial(object.name)] ([object.type]) selected.</span>")
 			else if(left_click)
 				if(ispath(objholder, /turf))
 					var/turf/T = get_turf(object)
@@ -323,17 +323,17 @@
 					if(object.vv_edit_var(varholder, valueholder))
 						log_admin("Build Mode: [key_name(user)] modified [object.name]'s [varholder] to [valueholder]")
 					else
-						to_chat(user, SPAN_WARNING("Varedit rejected"))
+						to_chat(user, "<span class='warning'>Varedit rejected</span>")
 				else
-					to_chat(user, SPAN_WARNING("[initial(object.name)] does not have a var called '[varholder]'"))
+					to_chat(user, "<span class='warning'>[initial(object.name)] does not have a var called '[varholder]'</span>")
 			if(right_click)
 				if(object.vars.Find(varholder))
 					if(object.vv_edit_var(varholder, initial(object.vars[varholder])))
 						log_admin("Build Mode: [key_name(user)] modified [object.name]'s [varholder] to [valueholder]")
 					else
-						to_chat(user, SPAN_WARNING("Varedit rejected"))
+						to_chat(user, "<span class='warning'>Varedit rejected</span>")
 				else
-					to_chat(user, SPAN_WARNING("[initial(object.name)] does not have a var called '[varholder]'"))
+					to_chat(user, "<span class='warning'>[initial(object.name)] does not have a var called '[varholder]'</span>")
 
 		if(THROW_BUILDMODE)
 			if(left_click)
@@ -361,7 +361,7 @@
 					return
 				if(cornerA && cornerB)
 					if(!generator_path)
-						to_chat(user, SPAN_WARNING("Select generator type first."))
+						to_chat(user, "<span class='warning'>Select generator type first.</span>")
 						return
 					var/datum/mapGenerator/G = new generator_path
 					if(istype(G, /datum/mapGenerator/repair/reload_station_map))

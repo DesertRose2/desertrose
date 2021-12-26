@@ -56,7 +56,7 @@
 	var/list/mobs = list()
 	for(var/mob/M in range(0, get_turf(src)))
 		mobs += M
-	to_chat(mobs, SPAN_NOTICE("[icon2html(host.icon, world, host.icon_state)] flashes a message: [stuff_to_display]"))
+	to_chat(mobs, "<span class='notice'>[icon2html(host.icon, world, host.icon_state)] flashes a message: [stuff_to_display]</span>")
 	host.investigate_log("displayed \"[html_encode(stuff_to_display)]\" as [type].", INVESTIGATE_CIRCUIT)
 
 /obj/item/integrated_circuit/output/screen/extralarge // the subtype is called "extralarge" because tg brought back medium screens and they named the subtype /screen/large
@@ -72,7 +72,7 @@
 	var/list/mobs = list()
 	for(var/mob/M in viewers(7, get_turf(src)))
 		mobs += M
-	to_chat(mobs, SPAN_NOTICE("[icon2html(host.icon, world, host.icon_state)] flashes a message: [stuff_to_display]"))
+	to_chat(mobs, "<span class='notice'>[icon2html(host.icon, world, host.icon_state)] flashes a message: [stuff_to_display]</span>")
 	host.investigate_log("displayed \"[html_encode(stuff_to_display)]\" as [type].", INVESTIGATE_CIRCUIT)
 
 /obj/item/integrated_circuit/output/light

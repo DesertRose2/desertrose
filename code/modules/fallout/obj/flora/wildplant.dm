@@ -32,7 +32,7 @@
 
 /obj/structure/flora/wild_plant/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/shovel))
-		user << SPAN_NOTICE("You clear up [src]!")
+		user << "<span class='notice'>You clear up [src]!</span>"
 		qdel(src)
 		return
 	return ..()
@@ -46,22 +46,22 @@
 			update_icon()
 	else if(dead)
 		dead = 0
-		to_chat(user, SPAN_NOTICE("You remove the dead plant."))
+		to_chat(user, "<span class='notice'>You remove the dead plant.</span>")
 		qdel(myseed)
 		qdel(src)
 	else
-		to_chat(user, SPAN_NOTICE("You touched the plant... Are you happy now?")) // Does this make you happy, Stanley?
+		to_chat(user, "<span class='notice'>You touched the plant... Are you happy now?</span>") // Does this make you happy, Stanley?
 
 /obj/structure/flora/wild_plant/examine(user)
 	. = ..()
 	if(myseed)
 		. += "<span class='info'>It has <span class='name'>[myseed.plantname]</span> planted.</span>"
 		if (dead)
-			. += SPAN_WARNING("It's dead!")
+			. += "<span class='warning'>It's dead!</span>"
 		else if (harvest)
 			. += "<span class='info'>It's ready to harvest.</span>"
 		else if (health <= (myseed.endurance / 2))
-			. += SPAN_WARNING("It looks unhealthy.")
+			. += "<span class='warning'>It looks unhealthy.</span>"
 
 /obj/structure/flora/wild_plant/proc/plantdies()
 	health = 0

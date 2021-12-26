@@ -57,7 +57,7 @@
 	if(istype(T))
 		var/light_amount = T.get_lumcount()
 		if(light_amount < SHADOW_SPECIES_LIGHT_THRESHOLD)
-			H.visible_message(SPAN_DANGER("[H] dances in the shadows, evading [P]!"))
+			H.visible_message("<span class='danger'>[H] dances in the shadows, evading [P]!</span>")
 			playsound(T, "bullet_miss", 75, 1)
 			return BULLET_ACT_FORCE_PIERCE
 	return ..()
@@ -77,7 +77,7 @@
 	..()
 	if(M.dna.species.id != "nightmare")
 		M.set_species(/datum/species/shadow/nightmare)
-		visible_message(SPAN_WARNING("[M] thrashes as [src] takes root in [M.p_their()] body!"))
+		visible_message("<span class='warning'>[M] thrashes as [src] takes root in [M.p_their()] body!</span>")
 	var/obj/effect/proc_holder/spell/targeted/shadowwalk/SW = new
 	M.AddSpell(SW)
 	shadowwalk = SW
@@ -104,12 +104,12 @@
 /obj/item/organ/heart/nightmare/attack(mob/M, mob/living/carbon/user, obj/target)
 	if(M != user)
 		return ..()
-	user.visible_message(SPAN_WARNING("[user] raises [src] to [user.p_their()] mouth and tears into it with [user.p_their()] teeth!"), \
-						SPAN_DANGER("[src] feels unnaturally cold in your hands. You raise [src] your mouth and devour it!"))
+	user.visible_message("<span class='warning'>[user] raises [src] to [user.p_their()] mouth and tears into it with [user.p_their()] teeth!</span>", \
+						"<span class='danger'>[src] feels unnaturally cold in your hands. You raise [src] your mouth and devour it!</span>")
 	playsound(user, 'sound/magic/demon_consume.ogg', 50, 1)
 
 
-	user.visible_message(SPAN_WARNING("Blood erupts from [user]'s arm as it reforms into a weapon!"), \
+	user.visible_message("<span class='warning'>Blood erupts from [user]'s arm as it reforms into a weapon!</span>", \
 						"<span class='userdanger'>Icy blood pumps through your veins as your arm reforms itself!</span>")
 	user.temporarilyRemoveItemFromInventory(src, TRUE)
 	Insert(user)
@@ -123,7 +123,7 @@
 /obj/item/organ/heart/nightmare/Remove(special = FALSE)
 	respawn_progress = 0
 	if(!QDELETED(owner) && blade && special != HEART_SPECIAL_SHADOWIFY)
-		owner.visible_message(SPAN_WARNING("\The [blade] disintegrates!"))
+		owner.visible_message("<span class='warning'>\The [blade] disintegrates!</span>")
 		QDEL_NULL(blade)
 	return ..()
 
@@ -148,7 +148,7 @@
 			Insert(old_owner, HEART_SPECIAL_SHADOWIFY)
 			to_chat(owner, "<span class='userdanger'>You feel the shadows invade your skin, leaping into the center of your chest! You're alive!</span>")
 			SEND_SOUND(owner, sound('sound/effects/ghost.ogg'))
-		owner.visible_message(SPAN_WARNING("[owner] staggers to [owner.p_their()] feet!"))
+		owner.visible_message("<span class='warning'>[owner] staggers to [owner.p_their()] feet!</span>")
 		playsound(owner, 'sound/hallucinations/far_noise.ogg', 50, 1)
 		respawn_progress = 0
 
@@ -179,7 +179,7 @@
 	if(isopenturf(AM))
 		var/turf/open/T = AM
 		if(T.light_range && !isspaceturf(T)) //no fairy grass or light tile can escape the fury of the darkness.
-			to_chat(user, SPAN_NOTICE("You scrape away [T] with your [name] and snuff out its lights."))
+			to_chat(user, "<span class='notice'>You scrape away [T] with your [name] and snuff out its lights.</span>")
 			T.ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 	else if(isliving(AM))
 		var/mob/living/L = AM
@@ -189,7 +189,7 @@
 			var/mob/living/silicon/robot/borg = AM
 			if(borg.lamp_intensity)
 				borg.update_headlamp(TRUE, INFINITY)
-				to_chat(borg, SPAN_DANGER("Your headlamp is fried! You'll need a human to help replace it."))
+				to_chat(borg, "<span class='danger'>Your headlamp is fried! You'll need a human to help replace it.</span>")
 			for(var/obj/item/assembly/flash/cyborg/F in borg.held_items)
 				if(!F.crit_fail)
 					F.burn_out()
@@ -211,7 +211,7 @@
 		PDA.fon = FALSE
 		PDA.f_lum = 0
 		PDA.update_icon()
-		visible_message(SPAN_DANGER("The light in [PDA] shorts out!"))
+		visible_message("<span class='danger'>The light in [PDA] shorts out!</span>")
 	else if(istype(O, /obj/item/gun))
 		var/obj/item/gun/weapon = O
 		if(weapon.gun_light)
@@ -221,9 +221,9 @@
 			weapon.gun_light = null
 			weapon.update_gunlight()
 			QDEL_NULL(weapon.alight)
-			visible_message(SPAN_DANGER("[light] on [O] flickers out and disintegrates!"))
+			visible_message("<span class='danger'>[light] on [O] flickers out and disintegrates!</span>")
 	else
-		visible_message(SPAN_DANGER("[O] is disintegrated by [src]!"))
+		visible_message("<span class='danger'>[O] is disintegrated by [src]!</span>")
 		O.burn()
 	playsound(src, 'sound/items/welder.ogg', 50, 1)
 

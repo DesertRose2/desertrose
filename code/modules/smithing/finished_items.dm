@@ -84,7 +84,7 @@
 		force = 0
 
 /obj/item/pickaxe/smithed/attack_self(mob/user)
-		to_chat(user, SPAN_NOTICE("Tool does not have a configureable dig range."))
+		to_chat(user, "<span class='notice'>Tool does not have a configureable dig range.</span>")
 
 /obj/item/shovel/smithed
 	name = "shovel"
@@ -297,7 +297,7 @@
 	if(!iscultist(user))
 		user.DefaultCombatKnockdown(100)
 		user.dropItemToGround(src, TRUE)
-		user.visible_message(SPAN_WARNING("A powerful force shoves [user] away from [target]!"), \
+		user.visible_message("<span class='warning'>A powerful force shoves [user] away from [target]!</span>", \
 							"<span class='cultlarge'>\"You shouldn't be touching tools that aren't yours.\"</span>")
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
@@ -317,7 +317,7 @@
 	if(!is_servant_of_ratvar(user))
 		user.DefaultCombatKnockdown(100)
 		user.dropItemToGround(src, TRUE)
-		user.visible_message(SPAN_WARNING("A powerful force shoves [user] away from [target]!"), "<span class='neovgre'>\"You shouldn't be touching tools that aren't yours.\"</span>")
+		user.visible_message("<span class='warning'>A powerful force shoves [user] away from [target]!</span>", "<span class='neovgre'>\"You shouldn't be touching tools that aren't yours.\"</span>")
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
 			H.apply_damage(rand(force/2, force), BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))

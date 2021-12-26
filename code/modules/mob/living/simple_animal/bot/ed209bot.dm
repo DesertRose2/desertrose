@@ -196,9 +196,9 @@ Auto Patrol[]"},
 	. = ..()
 	if(emagged == 2)
 		if(user)
-			to_chat(user, SPAN_WARNING("You short out [src]'s target assessment circuits."))
+			to_chat(user, "<span class='warning'>You short out [src]'s target assessment circuits.</span>")
 			oldtarget_name = user.name
-		audible_message(SPAN_DANGER("[src] buzzes oddly!"))
+		audible_message("<span class='danger'>[src] buzzes oddly!</span>")
 		declare_arrests = FALSE
 		icon_state = "[lasercolor]ed209[on]"
 		set_weapon()
@@ -551,13 +551,13 @@ Auto Patrol[]"},
 	if(declare_arrests)
 		var/area/location = get_area(src)
 		speak("[arrest_type ? "Detaining" : "Arresting"] level [threat] scumbag <b>[C]</b> in [location].", radio_channel)
-	C.visible_message(SPAN_DANGER("[src] has stunned [C]!"),\
+	C.visible_message("<span class='danger'>[src] has stunned [C]!</span>",\
 							"<span class='userdanger'>[src] has stunned you!</span>")
 
 /mob/living/simple_animal/bot/ed209/proc/cuff(mob/living/carbon/C)
 	mode = BOT_ARREST
 	playsound(src, 'sound/weapons/cablecuff.ogg', 30, TRUE, -2)
-	C.visible_message(SPAN_DANGER("[src] is trying to put zipties on [C]!"),\
+	C.visible_message("<span class='danger'>[src] is trying to put zipties on [C]!</span>",\
 						"<span class='userdanger'>[src] is trying to put zipties on you!</span>")
 
 	spawn(60)

@@ -282,7 +282,7 @@
 				C.update_icon()
 				batteries_recharged = 1
 		if(batteries_recharged)
-			to_chat(target, SPAN_NOTICE("Your batteries are recharged!"))
+			to_chat(target, "<span class='notice'>Your batteries are recharged!</span>")
 
 
 
@@ -353,7 +353,7 @@
 /datum/plant_gene/trait/teleport
 	// Makes plant teleport people when squashed or slipped on.
 	// Teleport radius is calculated as max(round(potency*rate), 1)
-	name = "Quantum Activity"
+	name = "Bluespace Activity"
 	rate = 0.1
 
 /datum/plant_gene/trait/teleport/on_squash(obj/item/reagent_containers/food/snacks/grown/G, atom/target)
@@ -366,7 +366,7 @@
 /datum/plant_gene/trait/teleport/on_slip(obj/item/reagent_containers/food/snacks/grown/G, mob/living/carbon/C)
 	var/teleport_radius = max(round(G.seed.potency / 10), 1)
 	var/turf/T = get_turf(C)
-	to_chat(C, SPAN_WARNING("You slip through spacetime!"))
+	to_chat(C, "<span class='warning'>You slip through spacetime!</span>")
 	do_teleport(C, T, teleport_radius, channel = TELEPORT_CHANNEL_BLUESPACE)
 	if(prob(50))
 		do_teleport(G, T, teleport_radius, channel = TELEPORT_CHANNEL_BLUESPACE)
@@ -397,7 +397,7 @@
 /datum/plant_gene/trait/battery/on_attackby(obj/item/reagent_containers/food/snacks/grown/G, obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack/cable_coil))
 		if(I.use_tool(src, user, 0, 5, skill_gain_mult = TRIVIAL_USE_TOOL_MULT))
-			to_chat(user, SPAN_NOTICE("You add some cable to [G] and slide it inside the battery encasing."))
+			to_chat(user, "<span class='notice'>You add some cable to [G] and slide it inside the battery encasing.</span>")
 			var/obj/item/stock_parts/cell/potato/pocell = new /obj/item/stock_parts/cell/potato(user.loc)
 			pocell.icon_state = G.icon_state
 			pocell.maxcharge = G.seed.potency * 20
@@ -415,7 +415,7 @@
 
 			qdel(G)
 		else
-			to_chat(user, SPAN_WARNING("You need five lengths of cable to make a [G] battery!"))
+			to_chat(user, "<span class='warning'>You need five lengths of cable to make a [G] battery!</span>")
 
 
 /datum/plant_gene/trait/stinging
@@ -429,7 +429,7 @@
 			var/fraction = min(injecting_amount/G.reagents.total_volume, 1)
 			G.reagents.reaction(L, INJECT, fraction)
 			G.reagents.trans_to(L, injecting_amount)
-			to_chat(target, SPAN_DANGER("You are pricked by [G]!"))
+			to_chat(target, "<span class='danger'>You are pricked by [G]!</span>")
 
 /datum/plant_gene/trait/smoke
 	name = "gaseous decomposition"
@@ -476,7 +476,7 @@
 			HY.weedlevel = 0 // Reset
 			HY.pestlevel = 0 // Reset
 			HY.update_icon()
-			HY.visible_message(SPAN_WARNING("The [H.myseed.plantname] spreads!"))
+			HY.visible_message("<span class='warning'>The [H.myseed.plantname] spreads!</span>")
 
 /datum/plant_gene/trait/plant_type // Parent type
 	name = "you shouldn't see this"

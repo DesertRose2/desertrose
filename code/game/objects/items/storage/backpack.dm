@@ -84,21 +84,21 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, SPAN_WARNING("Your hands are full!"))
+		to_chat(user, "<span class='warning'>Your hands are full!</span>")
 		return
 	var/obj/item/throwing_star/L = locate() in contents
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, SPAN_NOTICE("You take a spear out of the quiver."))
+		to_chat(user, "<span class='notice'>You take a spear out of the quiver.</span>")
 		return TRUE
 	var/obj/item/restraints/legcuffs/W = locate() in contents
 	if(W && contents.len > 0)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, user)
 		user.put_in_hands(W)
-		to_chat(user, SPAN_NOTICE("You take a bola out of the quiver."))
+		to_chat(user, "<span class='notice'>You take a bola out of the quiver.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("There is nothing left in the quiver."))
+		to_chat(user, "<span class='notice'>There is nothing left in the quiver.</span>")
 	return TRUE
 
 /obj/item/storage/backpack/holding/satchel

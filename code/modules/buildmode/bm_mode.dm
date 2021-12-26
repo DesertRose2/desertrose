@@ -34,7 +34,7 @@
 	CRASH("No help defined, yell at a coder")
 
 /datum/buildmode_mode/proc/change_settings(client/c)
-	to_chat(c, SPAN_WARNING("There is no configuration available for this mode"))
+	to_chat(c, "<span class='warning'>There is no configuration available for this mode</span>")
 	return
 
 /datum/buildmode_mode/proc/Reset()
@@ -84,7 +84,7 @@
 			handle_selected_area(c, params)
 			deselect_region()
 		else
-			to_chat(c, SPAN_NOTICE("Region selection canceled!"))
+			to_chat(c, "<span class='notice'>Region selection canceled!</span>")
 			deselect_region()
 	return
 

@@ -25,7 +25,7 @@
 
 /obj/item/clothing/under/rank/cargo/util
 	name = "cargo utility uniform"
-	desc = "A utility uniform for cargo personnel."
+	desc = "a utility uniform for cargo personnel"
 	icon_state = "utilsupply"
 	item_state = "utilsupply"
 	can_adjust = FALSE
@@ -33,7 +33,7 @@
 
 /obj/item/clothing/under/rank/cargo/tech/skirt
 	name = "cargo technician's jumpskirt"
-	desc = "Skiiiiirts! They're comfy and easy to wear."
+	desc = "Skiiiiirts! They're comfy and easy to wear"
 	icon_state = "cargo_skirt"
 	item_state = "lb_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

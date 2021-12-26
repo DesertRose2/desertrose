@@ -71,10 +71,6 @@
 	path = /obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
 	cost = 7
 
-/datum/gear/supermutant/suit/armour/knight
-	name = "Crusader's Armour"
-	path = /obj/item/clothing/suit/armor/f13/mutie/metal/knight
-
 /datum/gear/supermutant/suit/ncr
 	name = "NCR Armour"
 	path = /obj/item/clothing/suit/armor/f13/combat/ncr/mutie
@@ -106,10 +102,8 @@
 /datum/gear/supermutant/suit/armour/ncr/ranger/vet
 	name = "Veteran Ranger Armour"
 	path = /obj/item/storage/box/large/custom_kit/mutievet
-	restricted_desc = "Ranger Higher-Ups"
-	restricted_roles = list("NCR Ranger Sergeant",
-							"NCR Veteran Ranger"
-							)
+	restricted_desc = "Veteran Ranger"
+	restricted_roles = "NCR Veteran Ranger"
 	cost = 8
 
 //Mutant Veteran Ranger kit
@@ -158,7 +152,6 @@
 	path = /obj/item/clothing/under/f13/ncrmutie
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Veteran Ranger",
-							"NCR Ranger Sergeant",
 							"NCR Ranger",
 							"NCR Commanding Officer",
 							"NCR Medical Officer",
@@ -181,14 +174,6 @@
 	path = /obj/item/clothing/head/helmet/f13/mutie
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_HATS
 	cost = 1
-
-/datum/gear/supermutant/headwear/knight
-	name = "Mutant Knight Helmet"
-	path = /obj/item/clothing/head/helmet/f13/mutie/knight
-
-/datum/gear/supermutant/headwear/crown
-	name = "Mutant Monarch Helmet"
-	path = /obj/item/clothing/head/helmet/f13/mutie/knight/crown
 
 // Gloves and Bracers
 

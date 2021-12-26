@@ -28,7 +28,7 @@
 
 /obj/structure/AIcore/latejoin_inactive
 	name = "Networked AI core"
-	desc = "This AI core is connected by quantum transmitters to NTNet, allowing for an AI personality to be downloaded to it on the fly mid-shift."
+	desc = "This AI core is connected by bluespace transmitters to NTNet, allowing for an AI personality to be downloaded to it on the fly mid-shift."
 	can_deconstruct = FALSE
 	icon_state = "ai-empty"
 	anchored = TRUE
@@ -81,15 +81,15 @@
 	if(!anchored)
 		if(istype(P, /obj/item/weldingtool) && can_deconstruct)
 			if(state != EMPTY_CORE)
-				to_chat(user, SPAN_WARNING("The core must be empty to deconstruct it!"))
+				to_chat(user, "<span class='warning'>The core must be empty to deconstruct it!</span>")
 				return
 
 			if(!P.tool_start_check(user, amount=0))
 				return
 
-			to_chat(user, SPAN_NOTICE("You start to deconstruct the frame..."))
+			to_chat(user, "<span class='notice'>You start to deconstruct the frame...</span>")
 			if(P.use_tool(src, user, 20, volume=50) && state == EMPTY_CORE)
-				to_chat(user, SPAN_NOTICE("You deconstruct the frame."))
+				to_chat(user, "<span class='notice'>You deconstruct the frame.</span>")
 				deconstruct(TRUE)
 			return
 	else
@@ -99,7 +99,7 @@
 					if(!user.transferItemToLoc(P, src))
 						return
 					playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
-					to_chat(user, SPAN_NOTICE("You place the circuit board inside the frame."))
+					to_chat(user, "<span class='notice'>You place the circuit board inside the frame.</span>")
 					update_icon()
 					state = CIRCUIT_CORE
 					circuit = P
@@ -107,13 +107,13 @@
 			if(CIRCUIT_CORE)
 				if(istype(P, /obj/item/screwdriver))
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You screw the circuit board into place."))
+					to_chat(user, "<span class='notice'>You screw the circuit board into place.</span>")
 					state = SCREWED_CORE
 					update_icon()
 					return
 				if(istype(P, /obj/item/crowbar))
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You remove the circuit board."))
+					to_chat(user, "<span class='notice'>You remove the circuit board.</span>")
 					state = EMPTY_CORE
 					update_icon()
 					circuit.forceMove(loc)
@@ -122,7 +122,7 @@
 			if(SCREWED_CORE)
 				if(istype(P, /obj/item/screwdriver) && circuit)
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You unfasten the circuit board."))
+					to_chat(user, "<span class='notice'>You unfasten the circuit board.</span>")
 					state = CIRCUIT_CORE
 					update_icon()
 					return
@@ -130,21 +130,21 @@
 					var/obj/item/stack/cable_coil/C = P
 					if(C.get_amount() >= 5)
 						playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
-						to_chat(user, SPAN_NOTICE("You start to add cables to the frame..."))
+						to_chat(user, "<span class='notice'>You start to add cables to the frame...</span>")
 						if(do_after(user, 20, target = src) && state == SCREWED_CORE && C.use_tool(src, user, 0, 5))
-							to_chat(user, SPAN_NOTICE("You add cables to the frame."))
+							to_chat(user, "<span class='notice'>You add cables to the frame.</span>")
 							state = CABLED_CORE
 							update_icon()
 					else
-						to_chat(user, SPAN_WARNING("You need five lengths of cable to wire the AI core!"))
+						to_chat(user, "<span class='warning'>You need five lengths of cable to wire the AI core!</span>")
 					return
 			if(CABLED_CORE)
 				if(istype(P, /obj/item/wirecutters))
 					if(brain)
-						to_chat(user, SPAN_WARNING("Get that [brain.name] out of there first!"))
+						to_chat(user, "<span class='warning'>Get that [brain.name] out of there first!</span>")
 					else
 						P.play_tool_sound(src)
-						to_chat(user, SPAN_NOTICE("You remove the cables."))
+						to_chat(user, "<span class='notice'>You remove the cables.</span>")
 						state = SCREWED_CORE
 						update_icon()
 						new /obj/item/stack/cable_coil(drop_location(), 5)
@@ -154,18 +154,18 @@
 					var/obj/item/stack/sheet/rglass/G = P
 					if(G.get_amount() >= 2)
 						playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
-						to_chat(user, SPAN_NOTICE("You start to put in the glass panel..."))
+						to_chat(user, "<span class='notice'>You start to put in the glass panel...</span>")
 						if(do_after(user, 20, target = src) && state == CABLED_CORE && G.use(2))
-							to_chat(user, SPAN_NOTICE("You put in the glass panel."))
+							to_chat(user, "<span class='notice'>You put in the glass panel.</span>")
 							state = GLASS_CORE
 							update_icon()
 					else
-						to_chat(user, SPAN_WARNING("You need two sheets of reinforced glass to insert them into the AI core!"))
+						to_chat(user, "<span class='warning'>You need two sheets of reinforced glass to insert them into the AI core!</span>")
 					return
 
 				if(istype(P, /obj/item/aiModule))
 					if(brain && brain.laws.id != DEFAULT_AI_LAWID)
-						to_chat(user, SPAN_WARNING("The installed [brain.name] already has set laws!"))
+						to_chat(user, "<span class='warning'>The installed [brain.name] already has set laws!</span>")
 						return
 					var/obj/item/aiModule/module = P
 					module.install(laws, user)
@@ -174,36 +174,36 @@
 				if(istype(P, /obj/item/mmi) && !brain)
 					var/obj/item/mmi/M = P
 					if(!M.brainmob)
-						to_chat(user, SPAN_WARNING("Sticking an empty [M.name] into the frame would sort of defeat the purpose!"))
+						to_chat(user, "<span class='warning'>Sticking an empty [M.name] into the frame would sort of defeat the purpose!</span>")
 						return
 					if(M.brainmob.stat == DEAD)
-						to_chat(user, SPAN_WARNING("Sticking a dead [M.name] into the frame would sort of defeat the purpose!"))
+						to_chat(user, "<span class='warning'>Sticking a dead [M.name] into the frame would sort of defeat the purpose!</span>")
 						return
 
 					if(!M.brainmob.client)
-						to_chat(user, SPAN_WARNING("Sticking an inactive [M.name] into the frame would sort of defeat the purpose."))
+						to_chat(user, "<span class='warning'>Sticking an inactive [M.name] into the frame would sort of defeat the purpose.</span>")
 						return
 
 					if(!CONFIG_GET(flag/allow_ai) || (jobban_isbanned(M.brainmob, "AI") && !QDELETED(src) && !QDELETED(user) && !QDELETED(M) && !QDELETED(user) && Adjacent(user)))
 						if(!QDELETED(M))
-							to_chat(user, SPAN_WARNING("This [M.name] does not seem to fit!"))
+							to_chat(user, "<span class='warning'>This [M.name] does not seem to fit!</span>")
 						return
 
 					if(!M.brainmob.mind)
-						to_chat(user, SPAN_WARNING("This [M.name] is mindless!"))
+						to_chat(user, "<span class='warning'>This [M.name] is mindless!</span>")
 						return
 
 					if(!user.transferItemToLoc(M,src))
 						return
 
 					brain = M
-					to_chat(user, SPAN_NOTICE("You add [M.name] to the frame."))
+					to_chat(user, "<span class='notice'>You add [M.name] to the frame.</span>")
 					update_icon()
 					return
 
 				if(istype(P, /obj/item/crowbar) && brain)
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You remove the brain."))
+					to_chat(user, "<span class='notice'>You remove the brain.</span>")
 					brain.forceMove(loc)
 					brain = null
 					update_icon()
@@ -212,7 +212,7 @@
 			if(GLASS_CORE)
 				if(istype(P, /obj/item/crowbar))
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You remove the glass panel."))
+					to_chat(user, "<span class='notice'>You remove the glass panel.</span>")
 					state = CABLED_CORE
 					update_icon()
 					new /obj/item/stack/sheet/rglass(loc, 2)
@@ -220,7 +220,7 @@
 
 				if(istype(P, /obj/item/screwdriver))
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You connect the monitor."))
+					to_chat(user, "<span class='notice'>You connect the monitor.</span>")
 					if(brain)
 						SSticker.mode.remove_antag_for_borging(brain.brainmob.mind)
 						if(!istype(brain.laws, /datum/ai_laws/ratvar))
@@ -249,7 +249,7 @@
 
 				if(istype(P, /obj/item/screwdriver))
 					P.play_tool_sound(src)
-					to_chat(user, SPAN_NOTICE("You disconnect the monitor."))
+					to_chat(user, "<span class='notice'>You disconnect the monitor.</span>")
 					state = GLASS_CORE
 					update_icon()
 					return

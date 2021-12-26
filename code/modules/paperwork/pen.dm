@@ -69,7 +69,7 @@
 			colour = "blue"
 		else
 			colour = "black"
-	to_chat(user, SPAN_NOTICE("\The [src] will now write in [colour]."))
+	to_chat(user, "<span class='notice'>\The [src] will now write in [colour].</span>")
 	desc = "It's a fancy four-color ink pen, set to [colour]."
 
 /obj/item/pen/fountain
@@ -126,7 +126,7 @@
 	var/deg = input(user, "What angle would you like to rotate the pen head to? (1-360)", "Rotate Pen Head") as null|num
 	if(deg && (deg > 0 && deg <= 360))
 		degrees = deg
-		to_chat(user, SPAN_NOTICE("You rotate the top of the pen to [degrees] degrees."))
+		to_chat(user, "<span class='notice'>You rotate the top of the pen to [degrees] degrees.</span>")
 		SEND_SIGNAL(src, COMSIG_PEN_ROTATED, deg, user)
 
 /obj/item/pen/attack(mob/living/M, mob/user,stealth)
@@ -135,9 +135,9 @@
 
 	if(!force)
 		if(M.can_inject(user, 1))
-			to_chat(user, SPAN_WARNING("You stab [M] with the pen."))
+			to_chat(user, "<span class='warning'>You stab [M] with the pen.</span>")
 			if(!stealth)
-				to_chat(M, SPAN_DANGER("You feel a tiny prick!"))
+				to_chat(M, "<span class='danger'>You feel a tiny prick!</span>")
 			. = 1
 
 		log_combat(user, M, "stabbed", src)
@@ -158,10 +158,10 @@
 			if(QDELETED(O) || !user.canUseTopic(O, BE_CLOSE))
 				return
 			if(oldname == input)
-				to_chat(user, SPAN_NOTICE("You changed \the [O.name] to... well... \the [O.name]."))
+				to_chat(user, "<span class='notice'>You changed \the [O.name] to... well... \the [O.name].</span>")
 			else
 				O.name = input
-				to_chat(user, SPAN_NOTICE("\The [oldname] has been successfully been renamed to \the [input]."))
+				to_chat(user, "<span class='notice'>\The [oldname] has been successfully been renamed to \the [input].</span>")
 				O.renamedByPlayer = TRUE
 
 		if(penchoice == "Change description")
@@ -169,7 +169,7 @@
 			if(QDELETED(O) || !user.canUseTopic(O, BE_CLOSE))
 				return
 			O.desc = input
-			to_chat(user, SPAN_NOTICE("You have successfully changed \the [O.name]'s description."))
+			to_chat(user, "<span class='notice'>You have successfully changed \the [O.name]'s description.</span>")
 
 /*
  * Sleepypens
@@ -230,7 +230,7 @@
 		embedding = list(embed_chance = EMBED_CHANCE)
 		throwforce = initial(throwforce)
 		playsound(user, 'sound/weapons/saberoff.ogg', 5, TRUE)
-		to_chat(user, SPAN_WARNING("[src] can now be concealed."))
+		to_chat(user, "<span class='warning'>[src] can now be concealed.</span>")
 	else
 		on = TRUE
 		force = 18
@@ -241,7 +241,7 @@
 		embedding = list(embed_chance = 100) //rule of cool
 		throwforce = 35
 		playsound(user, 'sound/weapons/saberon.ogg', 5, TRUE)
-		to_chat(user, SPAN_WARNING("[src] is now active."))
+		to_chat(user, "<span class='warning'>[src] is now active.</span>")
 	updateEmbedding()
 	update_icon()
 

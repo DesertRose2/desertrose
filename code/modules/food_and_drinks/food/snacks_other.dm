@@ -1,4 +1,5 @@
-////////////////////////////////////////////CHEESES////////////////////////////////////////////
+
+////////////////////////////////////////////OTHER////////////////////////////////////////////
 
 /obj/item/reagent_containers/food/snacks/store/cheesewheel
 	name = "cheese wheel"
@@ -6,87 +7,12 @@
 	icon_state = "cheesewheel"
 	slice_path = /obj/item/reagent_containers/food/snacks/cheesewedge
 	slices_num = 5
-	cooked_type = /obj/item/reagent_containers/food/snacks/baked_cheese
 	list_reagents = list(/datum/reagent/consumable/nutriment = 15, /datum/reagent/consumable/nutriment/vitamin = 5)
 	w_class = WEIGHT_CLASS_NORMAL
 	tastes = list("cheese" = 1)
 	foodtype = DAIRY
 
-/obj/item/reagent_containers/food/snacks/cheesewedge
-	name = "cheese wedge"
-	desc = "A wedge of delicious Cheddar. The cheese wheel it was cut from can't have gone far."
-	icon_state = "cheesewedge"
-	filling_color = "#FFD700"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
-	tastes = list("cheese" = 1)
-	foodtype = DAIRY
 
-/obj/item/reagent_containers/food/snacks/curd_cheese
-	name = "curd cheese"
-	desc = "Known by many names throughout human cuisine, curd cheese is useful for a wide variety of dishes."
-	icon_state = "curd_cheese"
-	cooked_type = /obj/item/reagent_containers/food/snacks/cheese_curds
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/cream = 1)
-	tastes = list("cream" = 1, "cheese" = 1)
-	foodtype = DAIRY
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/cheese_curds
-	name = "cheese curds"
-	desc = "Not to be mistaken for curd cheese. Tasty deep fried."
-	icon_state = "cheese_curds"
-	dried_type = /obj/item/reagent_containers/food/snacks/firm_cheese
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("cheese" = 1)
-	foodtype = DAIRY
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/firm_cheese
-	name = "firm cheese"
-	desc = "Firm aged cheese, similar in texture to firm tofu. Due to its lack of moisture it's particularly useful for cooking with, as it doesn't melt easily."
-	icon_state = "firm_cheese"
-	slice_path = /obj/item/reagent_containers/food/snacks/firm_cheese_slice
-	slices_num = 5
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("aged cheese" = 1)
-	foodtype = DAIRY | VEGETABLES
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/firm_cheese_slice
-	name = "firm cheese slice"
-	desc = "A slice of firm cheese. Perfect for grilling or making into delicious pesto."
-	icon_state = "firm_cheese_slice"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("aged cheese" = 1)
-	foodtype = DAIRY | VEGETABLES
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/mozzarella
-	name = "mozzarella cheese"
-	desc = "Delicious, creamy, and cheesy, all in one simple package."
-	icon_state = "mozzarella"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("mozzarella" = 1)
-	foodtype = DAIRY
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/baked_cheese
-	name = "baked cheese wheel"
-	desc = "A baked cheese wheel, melty and delicious."
-	icon_state = "baked_cheese"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/capsaicin = 1)
-	tastes = list("cheese" = 1)
-	foodtype = DAIRY
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/herby_cheese
-	name = "herby cheese"
-	desc = "This cheese seems to be curd cheese mixed with herbs fresh from the garden."
-	icon_state = "herby_cheese"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	tastes = list("cheese" = 1, "herbs" = 1)
-	foodtype = DAIRY | VEGETABLES
-	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/reagent_containers/food/snacks/royalcheese
 	name = "royal cheese"
@@ -97,7 +23,14 @@
 	tastes = list("cheese" = 4, "royalty" = 1)
 	foodtype = DAIRY
 
-///////////////////////////////////OTHER//////////////////////
+/obj/item/reagent_containers/food/snacks/cheesewedge
+	name = "cheese wedge"
+	desc = "A wedge of delicious Cheddar. The cheese wheel it was cut from can't have gone far."
+	icon_state = "cheesewedge"
+	filling_color = "#FFD700"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
+	tastes = list("cheese" = 1)
+	foodtype = DAIRY
 
 /obj/item/reagent_containers/food/snacks/watermelonslice
 	name = "watermelon slice"
@@ -300,6 +233,15 @@
 	filling_color = "#00800"
 	tastes = list("cobwebs" = 1, "sugar" = 2)
 	foodtype = JUNKFOOD | SUGAR | ANTITOXIC
+
+/obj/item/reagent_containers/food/snacks/tobiko
+	name = "tobiko"
+	desc = "Spider eggs wrapped in a thin salted Kudzu pod"
+	icon_state = "sushie_egg"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
+	filling_color = "#FF3333" // R225 G051 B051
+	tastes = list("seaweed" = 1, "cobwebs" = 1, "salty" = 2)
+	foodtype = MEAT | VEGETABLES
 
 /obj/item/reagent_containers/food/snacks/chococoin
 	name = "chocolate coin"
@@ -688,7 +630,7 @@
 	tastes = list("peaches" = 1, "tin" = 7)
 
 /obj/item/reagent_containers/food/snacks/crab_rangoon
-	name = "crab rangoon"
+	name = "Crab Rangoon"
 	desc = "Has many names, like crab puffs, cheese wontons, crab dumplings? Whatever you call them, they're a fabulous blast of cream cheesy crab."
 	icon_state = "crabrangoon"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
@@ -698,7 +640,7 @@
 	foodtype = MEAT | DAIRY | GRAIN
 
 /obj/item/reagent_containers/food/snacks/chocolatestrawberry
-	name = "chocolate-dipped strawberries"
+	name = "Chocolate dipped strawberries"
 	desc = "A strawberry dipped in a bit of chocolate."
 	icon_state = "chocolatestrawberry"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/nutriment = 2)
@@ -708,7 +650,7 @@
 	dunkable = TRUE
 
 /obj/item/reagent_containers/food/snacks/chocolatebanana
-	name = "chocolate-dipped banana"
+	name = "Chocolate dipped banana"
 	desc = "A banana dipped in a bit of chocolate and held on a stick."
 	icon_state = "banana_coco"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
@@ -838,42 +780,55 @@
 	name = "roasted bell pepper"
 	desc = "A blackened, blistered bell pepper. Great for making sauces."
 	icon_state = "roasted_bell_pepper"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/char = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/char = 1)
 	tastes = list("bell pepper" = 1, "char" = 1)
 	foodtype = VEGETABLES
 
-/obj/item/reagent_containers/food/snacks/mozzarella_sticks
-	name = "mozzarella sticks"
-	desc = "Little sticks of mozzarella, breaded and fried."
-	icon_state = "mozzarella_sticks"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("creamy cheese" = 1, "breading" = 1, "oil" = 1)
-	foodtype = DAIRY | GRAIN 
+/obj/item/reagent_containers/food/snacks/curd_cheese
+	name = "curd cheese"
+	desc = "Known by many names throughout human cuisine, curd cheese is useful for a wide variety of dishes."
+	icon_state = "curd_cheese"
+	cooked_type = /obj/item/reagent_containers/food/snacks/cheese_curds
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/cream = 1)
+	tastes = list("cream" = 1, "cheese" = 1)
+	foodtype = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/reagent_containers/food/snacks/pesto
-	name = "pesto"
-	desc = "A combination of firm cheese, salt, herbs, garlic, oil, and pine nuts. Frequently used as a sauce for pasta or pizza, or eaten on bread."
-	icon_state = "pesto"
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("pesto" = 1)
-	foodtype = VEGETABLES | DAIRY 
+/obj/item/reagent_containers/food/snacks/cheese_curds
+	name = "cheese curds"
+	desc = "Not to be mistaken for curd cheese. Tasty deep fried."
+	icon_state = "cheese_curds"
+	dried_type = /obj/item/reagent_containers/food/snacks/firm_cheese
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("cheese" = 1)
+	foodtype = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/reagent_containers/food/snacks/tomato_sauce
-	name = "tomato sauce"
-	desc = "Tomato sauce, perfect for pizza or pasta. Mamma mia!"
-	icon_state = "tomato_sauce"
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("tomato" = 1, "herbs" = 1)
-	foodtype = VEGETABLES
+/obj/item/reagent_containers/food/snacks/firm_cheese
+	name = "firm cheese"
+	desc = "Firm aged cheese, similar in texture to firm tofu. Due to its lack of moisture it's particularly useful for cooking with, as it doesn't melt easily."
+	icon_state = "firm_cheese"
+	slice_path = /obj/item/reagent_containers/food/snacks/firm_cheese_slice
+	slices_num = 5
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("aged cheese" = 1)
+	foodtype = DAIRY | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/reagent_containers/food/snacks/bechamel_sauce
-	name = "béchamel sauce"
-	desc = "A classic white sauce common to several European cultures."
-	icon_state = "bechamel_sauce"
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("cream" = 1)
-	foodtype = DAIRY | GRAIN
+/obj/item/reagent_containers/food/snacks/firm_cheese_slice
+	name = "firm cheese slice"
+	desc = "A slice of firm cheese. Perfect for grilling or making into delicious pesto."
+	icon_state = "firm_cheese_slice"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("aged cheese" = 1)
+	foodtype = DAIRY | VEGETABLES
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/reagent_containers/food/snacks/mozzarella
+	name = "mozzarella cheese"
+	desc = "Delicious, creamy, and cheesy, all in one simple package."
+	icon_state = "mozzarella"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	tastes = list("mozzarella" = 1)
+	foodtype = DAIRY
 	w_class = WEIGHT_CLASS_SMALL

@@ -326,28 +326,28 @@
 
 /obj/item/clothing/under/costume/cloud
 	name = "cloud"
-	desc = "A cloud costume."
+	desc = "cloud"
 	icon_state = "cloud"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/costume/kimono
-	name = "kimono"
-	desc = "A traditional piece of clothing from Japan."
+	name = "Kimono"
+	desc = "A traditional piece of clothing from japan"
 	icon_state = "kimono"
 	item_state = "kimono"
 
 /obj/item/clothing/under/costume/kimono/black
-	name = "black kimono"
+	name = "Black Kimono"
 	icon_state = "kimono_a"
 	item_state = "kimono_a"
 
 /obj/item/clothing/under/costume/kimono/kamishimo
-	name = "kamishimo"
+	name = "Kamishimo"
 	icon_state = "kamishimo"
 	item_state = "kamishimo"
 
 /obj/item/clothing/under/costume/kimono/fancy
-	name = "fancy kimono"
+	name = "Fancy Kimono"
 	icon_state = "fancy_kimono"
 	item_state = "fancy_kimono"
 

@@ -28,7 +28,7 @@
 	else 
 		icon_state = "beacon-off"
 		GLOB.teleportbeacons.Remove(src)
-	to_chat(user, SPAN_NOTICE("You [enabled ? "enable" : "disable"] the beacon."))
+	to_chat(user, "<span class='notice'>You [enabled ? "enable" : "disable"] the beacon.</span>")
 	return
 
 /obj/item/beacon/attackby(obj/item/W, mob/user)

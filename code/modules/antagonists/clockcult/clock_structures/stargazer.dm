@@ -11,7 +11,7 @@
 	max_integrity = 40
 	construction_value = 5
 	layer = WALL_OBJ_LAYER
-	break_message = SPAN_WARNING("The stargazer's fragile body shatters into pieces!")
+	break_message = "<span class='warning'>The stargazer's fragile body shatters into pieces!</span>"
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	light_color = "#DAAA18"
 	var/star_light_star_bright = FALSE //If this stargazer can see starlight
@@ -62,9 +62,9 @@
 			set_light(1.5, 5)
 		else
 			if(anchored) //We lost visibility somehow
-				visible_message(SPAN_DANGER("[src] flickers, and falls dark."))
+				visible_message("<span class='danger'>[src] flickers, and falls dark.</span>")
 			else
-				visible_message(SPAN_DANGER("[src] whooshes quietly as it slides into a less bulky form."))
+				visible_message("<span class='danger'>[src] whooshes quietly as it slides into a less bulky form.</span>")
 			cut_overlays()
 			set_light(0)
 	return has_starlight

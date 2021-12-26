@@ -37,7 +37,7 @@
 /obj/machinery/smartfridge/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: This unit can hold a maximum of <b>[max_n_of_items]</b> items.")
+		. += "<span class='notice'>The status display reads: This unit can hold a maximum of <b>[max_n_of_items]</b> items.</span>"
 
 /obj/machinery/smartfridge/update_icon_state()
 	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
@@ -86,12 +86,12 @@
 	if(!stat)
 
 		if(contents.len >= max_n_of_items)
-			to_chat(user, SPAN_WARNING("\The [src] is full!"))
+			to_chat(user, "<span class='warning'>\The [src] is full!</span>")
 			return FALSE
 
 		if(accept_check(O))
 			load(O)
-			user.visible_message(SPAN_NOTICE("[user] adds \the [O] to \the [src]."), SPAN_NOTICE("You add \the [O] to \the [src]."))
+			user.visible_message("<span class='notice'>[user] adds \the [O] to \the [src].</span>", "<span class='notice'>You add \the [O] to \the [src].</span>")
 			updateUsrDialog()
 			if (visible_contents)
 				update_icon()
@@ -110,22 +110,22 @@
 
 			if(loaded)
 				if(contents.len >= max_n_of_items)
-					user.visible_message(SPAN_NOTICE("[user] loads \the [src] with \the [O]."), \
-									SPAN_NOTICE("You fill \the [src] with \the [O]."))
+					user.visible_message("<span class='notice'>[user] loads \the [src] with \the [O].</span>", \
+									"<span class='notice'>You fill \the [src] with \the [O].</span>")
 				else
-					user.visible_message(SPAN_NOTICE("[user] loads \the [src] with \the [O]."), \
-										SPAN_NOTICE("You load \the [src] with \the [O]."))
+					user.visible_message("<span class='notice'>[user] loads \the [src] with \the [O].</span>", \
+										"<span class='notice'>You load \the [src] with \the [O].</span>")
 				if(O.contents.len > 0)
-					to_chat(user, SPAN_WARNING("Some items are refused."))
+					to_chat(user, "<span class='warning'>Some items are refused.</span>")
 				if (visible_contents)
 					update_icon()
 				return TRUE
 			else
-				to_chat(user, SPAN_WARNING("There is nothing in [O] to put in [src]!"))
+				to_chat(user, "<span class='warning'>There is nothing in [O] to put in [src]!</span>")
 				return FALSE
 
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, SPAN_WARNING("\The [src] smartly refuses [O]."))
+		to_chat(user, "<span class='warning'>\The [src] smartly refuses [O].</span>")
 		updateUsrDialog()
 		return FALSE
 	else
@@ -142,7 +142,7 @@
 	if(ismob(O.loc))
 		var/mob/M = O.loc
 		if(!M.transferItemToLoc(O, src))
-			to_chat(usr, SPAN_WARNING("\the [O] is stuck to your hand, you cannot put it in \the [src]!"))
+			to_chat(usr, "<span class='warning'>\the [O] is stuck to your hand, you cannot put it in \the [src]!</span>")
 			return FALSE
 		else
 			return TRUE
@@ -198,7 +198,7 @@
 			var/desired = 0
 
 			if(!allow_ai_retrieve && isAI(usr))
-				to_chat(usr, SPAN_WARNING("[src] does not seem to be configured to respect your authority!"))
+				to_chat(usr, "<span class='warning'>[src] does not seem to be configured to respect your authority!</span>")
 				return
 
 			if (params["amount"])
@@ -636,7 +636,7 @@
 
 /obj/machinery/smartfridge/bottlerack/gardentool/proc/can_be_rotated(mob/user,rotation_type)
 	if(anchored)
-		to_chat(user, SPAN_WARNING("[src] cannot be rotated while it is fastened to the wall!"))
+		to_chat(user, "<span class='warning'>[src] cannot be rotated while it is fastened to the wall!</span>")
 	else
 		return TRUE
 
@@ -889,7 +889,7 @@
 
 /obj/machinery/smartfridge/bottlerack/lootshelf/books
 	chance_initial_contents = list(
-		/obj/item/book/granter/trait/crafting/chemistry = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/reagent_containers/food/snacks/deadmouse = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_one = 1,

@@ -17,9 +17,9 @@
 
 /obj/item/reagent_containers/glass/maunamug/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("The status display reads: Current temperature: <b>[reagents.chem_temp]K</b> Current Charge:[cell ? "[cell.charge / cell.maxcharge * 100]%" : "No cell found"].")
+	. += "<span class='notice'>The status display reads: Current temperature: <b>[reagents.chem_temp]K</b> Current Charge:[cell ? "[cell.charge / cell.maxcharge * 100]%" : "No cell found"].</span>"
 	if(open)
-		. += SPAN_NOTICE("The battery case is open.")
+		. += "<span class='notice'>The battery case is open.</span>"
 
 /obj/item/reagent_containers/glass/maunamug/update_overlays()
 	. = ..()
@@ -40,7 +40,7 @@
 	update_icon()
 	if(reagents.chem_temp >= max_temp)
 		change_power_status(FALSE)
-		audible_message(SPAN_NOTICE("The Mauna Mug lets out a happy beep and turns off!"))
+		audible_message("<span class='notice'>The Mauna Mug lets out a happy beep and turns off!</span>")
 		playsound(src, 'sound/machines/chime.ogg', 50)
 
 /obj/item/reagent_containers/glass/maunamug/Destroy()
@@ -69,7 +69,7 @@
 /obj/item/reagent_containers/glass/maunamug/screwdriver_act(mob/living/user, obj/item/I)
 	. = ..()
 	open = !open
-	to_chat(user, SPAN_NOTICE("You screw the battery case on [src] [open ? "open" : "closed"] ."))
+	to_chat(user, "<span class='notice'>You screw the battery case on [src] [open ? "open" : "closed"] .</span>")
 	update_icon()
 
 /obj/item/reagent_containers/glass/maunamug/attackby(obj/item/I, mob/user, params)
@@ -77,15 +77,15 @@
 	if(!istype(I, /obj/item/stock_parts/cell))
 		return ..()
 	if(!open)
-		to_chat(user, SPAN_WARNING("The battery case must be open to insert a power cell!"))
+		to_chat(user, "<span class='warning'>The battery case must be open to insert a power cell!</span>")
 		return FALSE
 	if(cell)
-		to_chat(user, SPAN_WARNING("There is already a power cell inside!"))
+		to_chat(user, "<span class='warning'>There is already a power cell inside!</span>")
 		return FALSE
 	else if(!user.transferItemToLoc(I, src))
 		return
 	cell = I
-	user.visible_message(SPAN_NOTICE("[user] inserts a power cell into [src]."), SPAN_NOTICE("You insert the power cell into [src]."))
+	user.visible_message("<span class='notice'>[user] inserts a power cell into [src].</span>", "<span class='notice'>You insert the power cell into [src].</span>")
 	update_icon()
 
 /obj/item/reagent_containers/glass/maunamug/on_attack_hand(mob/living/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -93,7 +93,7 @@
 		cell.update_icon()
 		user.put_in_hands(cell)
 		cell = null
-		to_chat(user, SPAN_NOTICE("You remove the power cell from [src]."))
+		to_chat(user, "<span class='notice'>You remove the power cell from [src].</span>")
 		on = FALSE
 		update_icon()
 		return TRUE

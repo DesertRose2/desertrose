@@ -350,7 +350,7 @@
 				radiomod = ":" + key
 				break
 
-	to_chat(src, SPAN_NOTICE("Automatic announcements [Autochan == "None" ? "will not use the radio." : "set to [Autochan]."]"))
+	to_chat(src, "<span class='notice'>Automatic announcements [Autochan == "None" ? "will not use the radio." : "set to [Autochan]."]</span>")
 
 /mob/living/silicon/put_in_hand_check() // This check is for borgs being able to receive items, not put them in others' hands.
 	return 0

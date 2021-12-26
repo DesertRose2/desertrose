@@ -32,9 +32,9 @@
 					I.mining_points += points
 					points = 0
 				else
-					to_chat(usr, SPAN_WARNING("No ID detected."))
+					to_chat(usr, "<span class='warning'>No ID detected.</span>")
 			else
-				to_chat(usr, SPAN_WARNING("No points to claim."))
+				to_chat(usr, "<span class='warning'>No points to claim.</span>")
 			return TRUE
 
 /obj/machinery/point_bank/power_change()

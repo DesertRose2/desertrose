@@ -6,7 +6,7 @@
 //-----------------------------------------------
 /obj/machinery/atmospherics/components/unary/shuttle
 	name = "shuttle atmospherics device"
-	desc = "This does something to do with shuttle atmospherics."
+	desc = "This does something to do with shuttle atmospherics"
 	icon_state = "heater"
 	icon = 'icons/turf/shuttle.dmi'
 

@@ -57,7 +57,7 @@
 		if(!forced)
 			to_chat(src, "<span class='danger'><B>You exit stealth.</span></B>")
 		else
-			visible_message(SPAN_DANGER("\The [src] suddenly appears!"))
+			visible_message("<span class='danger'>\The [src] suddenly appears!</span>")
 			stealthcooldown = world.time + initial(stealthcooldown) //we were forced out of stealth and go on cooldown
 			cooldown = world.time + 40 //can't recall for 4 seconds
 		updatestealthalert()

@@ -127,7 +127,7 @@
 
 /datum/design/nanites/mitosis
 	name = "Mitosis"
-	desc = "The nanites gain the ability to self-replicate, using quantum entanglement to power the process, instead of drawing from a template. This rapidly speeds up the replication rate,\
+	desc = "The nanites gain the ability to self-replicate, using bluespace to power the process, instead of drawing from a template. This rapidly speeds up the replication rate,\
 			but it causes occasional software errors due to faulty copies. Not compatible with cloud sync."
 	id = "mitosis_nanites"
 	program_type = /datum/nanite_program/mitosis

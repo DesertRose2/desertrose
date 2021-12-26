@@ -234,7 +234,7 @@
 				rank = I.assignment
 				screen = 1
 			else
-				to_chat(usr, SPAN_DANGER("Unauthorized access."))
+				to_chat(usr, "<span class='danger'>Unauthorized access.</span>")
 			playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
 		if(authenticated)
 			if(href_list["screen"])
@@ -576,7 +576,7 @@
 
 /obj/machinery/computer/med_data/laptop
 	name = "medical laptop"
-	desc = "A cheap Vault-Tec medical laptop, it functions as a medical records computer. It's bolted to the table."
+	desc = "A cheap Nanotrasen medical laptop, it functions as a medical records computer. It's bolted to the table."
 	icon_state = "laptop"
 	icon_screen = "medlaptop"
 	icon_keyboard = "laptop_key"

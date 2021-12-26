@@ -2,6 +2,7 @@
 	title = "Clown"
 	flag = CLOWN
 	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
 
 	total_positions = 1
 	spawn_positions = 1

@@ -273,7 +273,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/bunker)
 "fP" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
+/mob/living/simple_animal/hostile/wolf{
 	faction = list("wastebot")
 	},
 /turf/open/floor/grass,

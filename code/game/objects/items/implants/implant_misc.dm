@@ -34,7 +34,7 @@
 	. = ..()
 	uses--
 	imp_in.do_adrenaline(150, TRUE, 0, 0, TRUE, list(/datum/reagent/medicine/inaprovaline = 3, /datum/reagent/medicine/synaptizine = 10, /datum/reagent/medicine/regen_jelly = 10, /datum/reagent/medicine/stimulants = 10), "<span class='boldnotice'>You feel a sudden surge of energy!</span>")
-	to_chat(imp_in, SPAN_NOTICE("You feel a sudden surge of energy!"))
+	to_chat(imp_in, "<span class='notice'>You feel a sudden surge of energy!</span>")
 	if(!uses)
 		qdel(src)
 
@@ -48,7 +48,7 @@
 	. = ..()
 	uses--
 	imp_in.do_adrenaline(20, TRUE, 0, 0, TRUE, list(/datum/reagent/fermi/eigenstate = 1.2), "<span class='boldnotice'>You feel an internal prick as as the bluespace starts ramping up!</span>")
-	to_chat(imp_in, SPAN_NOTICE("You feel an internal prick as as the bluespace starts ramping up!"))
+	to_chat(imp_in, "<span class='notice'>You feel an internal prick as as the bluespace starts ramping up!</span>")
 	if(!uses)
 		qdel(src)
 

@@ -62,21 +62,21 @@
 		return TRUE
 	switch(aggressiveness)
 		if(1)
-			to_chat(user, SPAN_NOTICE("You set the restrictor to the middle position."))
+			to_chat(user, "<span class='notice'>You set the restrictor to the middle position.</span>")
 			aggressiveness = 2
 		if(2)
-			to_chat(user, SPAN_NOTICE("You set the restrictor to the last position."))
+			to_chat(user, "<span class='notice'>You set the restrictor to the last position.</span>")
 			aggressiveness = 3
 		if(3)
-			to_chat(user, SPAN_NOTICE("You set the restrictor to the first position."))
+			to_chat(user, "<span class='notice'>You set the restrictor to the first position.</span>")
 			aggressiveness = 1
 		if(4)
-			to_chat(user, SPAN_DANGER("You adjust the restrictor but nothing happens, probably because it's broken."))
+			to_chat(user, "<span class='danger'>You adjust the restrictor but nothing happens, probably because it's broken.</span>")
 	return TRUE
 
 /obj/item/clothing/mask/gas/sechailer/wirecutter_act(mob/living/user, obj/item/I)
 	if(aggressiveness != 4)
-		to_chat(user, SPAN_DANGER("You broke the restrictor!"))
+		to_chat(user, "<span class='danger'>You broke the restrictor!</span>")
 		aggressiveness = 4
 	return TRUE
 
@@ -94,7 +94,7 @@
 	if(!safety)
 		return
 	safety = FALSE
-	to_chat(user, SPAN_WARNING("You silently fry [src]'s vocal circuit with the cryptographic sequencer."))
+	to_chat(user, "<span class='warning'>You silently fry [src]'s vocal circuit with the cryptographic sequencer.</span>")
 	return TRUE
 
 /obj/item/clothing/mask/gas/sechailer/verb/halt()
@@ -106,7 +106,7 @@
 	if(!can_use(usr))
 		return
 	if(broken_hailer)
-		to_chat(usr, SPAN_WARNING("\The [src]'s hailing system is broken."))
+		to_chat(usr, "<span class='warning'>\The [src]'s hailing system is broken.</span>")
 		return
 
 	var/phrase = 0	//selects which phrase to use
@@ -121,7 +121,7 @@
 
 		switch(recent_uses)
 			if(3)
-				to_chat(usr, SPAN_WARNING("\The [src] is starting to heat up."))
+				to_chat(usr, "<span class='warning'>\The [src] is starting to heat up.</span>")
 			if(4)
 				to_chat(usr, "<span class='userdanger'>\The [src] is heating up dangerously from overuse!</span>")
 			if(5) //overload

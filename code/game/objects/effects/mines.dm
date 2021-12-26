@@ -9,7 +9,7 @@
 	var/triggered = FALSE
 
 /obj/effect/mine/proc/mineEffect(mob/victim)
-	to_chat(victim, SPAN_DANGER("*click*"))
+	to_chat(victim, "<span class='danger'>*click*</span>")
 
 /obj/effect/mine/Crossed(atom/movable/AM)
 	if(triggered || !isturf(loc))
@@ -24,7 +24,7 @@
 /obj/effect/mine/proc/triggermine(mob/victim)
 	if(triggered)
 		return
-	visible_message(SPAN_DANGER("[victim] sets off [icon2html(src, viewers(src))] [src]!"))
+	visible_message("<span class='danger'>[victim] sets off [icon2html(src, viewers(src))] [src]!</span>")
 	var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 	s.set_up(3, 1, src)
 	s.start()
@@ -154,14 +154,14 @@
 	victim.put_in_hands(chainsaw, forced = TRUE)
 	chainsaw.attack_self(victim)
 	victim.reagents.add_reagent(/datum/reagent/medicine/adminordrazine,25)
-	to_chat(victim, SPAN_WARNING("KILL, KILL, KILL! YOU HAVE NO ALLIES ANYMORE, KILL THEM ALL!"))
+	to_chat(victim, "<span class='warning'>KILL, KILL, KILL! YOU HAVE NO ALLIES ANYMORE, KILL THEM ALL!</span>")
 
 	victim.client.color = pure_red
 	animate(victim.client,color = red_splash, time = 10, easing = SINE_EASING|EASE_OUT)
 	sleep(10)
 	animate(victim.client,color = old_color, time = duration)//, easing = SINE_EASING|EASE_OUT)
 	sleep(duration)
-	to_chat(victim, SPAN_NOTICE("Your bloodlust seeps back into the bog of your subconscious and you regain self control."))
+	to_chat(victim, "<span class='notice'>Your bloodlust seeps back into the bog of your subconscious and you regain self control.</span>")
 	qdel(chainsaw)
 	victim.log_message("exited a blood frenzy", LOG_ATTACK)
 	qdel(src)
@@ -174,7 +174,7 @@
 /obj/effect/mine/pickup/healing/mineEffect(mob/living/carbon/victim)
 	if(!victim.client || !istype(victim))
 		return
-	to_chat(victim, SPAN_NOTICE("You feel great!"))
+	to_chat(victim, "<span class='notice'>You feel great!</span>")
 	victim.revive(full_heal = 1, admin_revive = 1)
 
 /obj/effect/mine/pickup/speed
@@ -186,8 +186,8 @@
 /obj/effect/mine/pickup/speed/mineEffect(mob/living/carbon/victim)
 	if(!victim.client || !istype(victim))
 		return
-	to_chat(victim, SPAN_NOTICE("You feel fast!"))
+	to_chat(victim, "<span class='notice'>You feel fast!</span>")
 	victim.add_movespeed_modifier(/datum/movespeed_modifier/yellow_orb)
 	sleep(duration)
 	victim.remove_movespeed_modifier(/datum/movespeed_modifier/yellow_orb)
-	to_chat(victim, SPAN_NOTICE("You slow down."))
+	to_chat(victim, "<span class='notice'>You slow down.</span>")

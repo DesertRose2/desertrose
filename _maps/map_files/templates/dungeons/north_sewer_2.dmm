@@ -1446,7 +1446,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "AB" = (
-/obj/structure/simple_door/repaired,
+/obj/structure/simple_door/fakeglass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)

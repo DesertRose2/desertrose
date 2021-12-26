@@ -9,7 +9,7 @@
 	decay_factor = STANDARD_ORGAN_DECAY
 
 	low_threshold_passed = "<span class='info'>Prickles of pain appear then die out from within your chest...</span>"
-	high_threshold_passed = SPAN_WARNING("Something inside your chest hurts, and the pain isn't subsiding. You notice yourself breathing far faster than before.")
+	high_threshold_passed = "<span class='warning'>Something inside your chest hurts, and the pain isn't subsiding. You notice yourself breathing far faster than before.</span>"
 	now_fixed = "<span class='info'>Your heart begins to beat again.</span>"
 	high_threshold_cleared = "<span class='info'>The pain in your chest has died down, and your breathing becomes more relaxed.</span>"
 
@@ -42,7 +42,7 @@
 	..()
 	if(!beating)
 		user.visible_message("<span class='notice'>[user] squeezes [src] to \
-			make it beat again!</span>",SPAN_NOTICE("You squeeze [src] to make it beat again!"))
+			make it beat again!</span>","<span class='notice'>You squeeze [src] to make it beat again!</span>")
 		Restart()
 		addtimer(CALLBACK(src, .proc/stop_if_unowned), 80)
 
@@ -59,7 +59,7 @@
 /obj/item/organ/heart/proc/HeartStrengthMessage()
 	if(beating)
 		return "a healthy"
-	return SPAN_DANGER("an unstable")
+	return "<span class='danger'>an unstable</span>"
 
 /obj/item/organ/heart/OnEatFrom(eater, feeder)
 	. = ..()
@@ -78,7 +78,7 @@
 		if(owner.health <= owner.crit_threshold && beat != BEAT_SLOW)
 			beat = BEAT_SLOW
 			owner.playsound_local(get_turf(owner), slowbeat,40,0, channel = CHANNEL_HEARTBEAT)
-			to_chat(owner, SPAN_NOTICE("You feel your heart slow down..."))
+			to_chat(owner, "<span class = 'notice'>You feel your heart slow down...</span>")
 		if(beat == BEAT_SLOW && owner.health > owner.crit_threshold)
 			owner.stop_sound_channel(CHANNEL_HEARTBEAT)
 			beat = BEAT_NONE
@@ -170,7 +170,7 @@
 
 		cursed_heart.last_pump = world.time
 		playsound(owner,'sound/effects/singlebeat.ogg',40,1)
-		to_chat(owner, SPAN_NOTICE("Your heart beats."))
+		to_chat(owner, "<span class = 'notice'>Your heart beats.</span>")
 
 		var/mob/living/carbon/human/H = owner
 		if(istype(H))

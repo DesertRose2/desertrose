@@ -16,9 +16,9 @@
 	if(istype(tool, /obj/item/shockpaddles))
 		var/obj/item/shockpaddles/pads = tool
 		if(!pads.wielded)
-			to_chat(user, SPAN_WARNING("You need to wield the paddles in both hands before you can use them!"))
+			to_chat(user, "<span class='warning'>You need to wield the paddles in both hands before you can use them!</span>")
 			return FALSE
-	display_results(user, target, SPAN_NOTICE("You begin to apply the [tool] onto the heart directly..."),
+	display_results(user, target, "<span class='notice'>You begin to apply the [tool] onto the heart directly...</span>",
 		"[user] begin to prepare the heart for contact with the [tool].",
 		"[user] begin to prepare the heart for contact with the [tool].	")
 	target.notify_ghost_cloning("Your heart is undergoing Emergency Cardioversion Induction Surgery!")
@@ -33,16 +33,16 @@
 	playsound(src, 'sound/machines/defib_zap.ogg', 75, 1, -1)
 	playsound(src, "bodyfall", 50, 1)
 	if(H.stat != DEAD)
-		display_results(user, target, SPAN_WARNING("You can't use this procedure on the living! [H]'s body flops madly like a wild fish on the table from the current, and your crazed surgical methods."),
-			SPAN_WARNING("[user] screws up, causing [H] to flop around violently as they're zapped!"),
-			SPAN_WARNING("[user] screws up, causing [H] to flop around violently as they're zapped!"))
+		display_results(user, target, "<span class='warning'>You can't use this procedure on the living! [H]'s body flops madly like a wild fish on the table from the current, and your crazed surgical methods.</span>",
+			"<span class='warning'>[user] screws up, causing [H] to flop around violently as they're zapped!</span>",
+			"<span class='warning'>[user] screws up, causing [H] to flop around violently as they're zapped!</span>")
 		H.emote("scream")
 		H.electrocute_act(25, (tool), 1, SHOCK_ILLUSION)
 		H.adjustFireLoss(10)
 		H.emote("flip")
 		H.Jitter(100)
 		return FALSE
-	display_results(user, target, SPAN_NOTICE("You attach the [tool] to [target]'s heart and prepare to pulse."),
+	display_results(user, target, "<span class='notice'>You attach the [tool] to [target]'s heart and prepare to pulse.</span>",
 		"[user] attaches the [tool] to [H]'s heart and prepares to pulse.",
 		"")
 	H.adjustBruteLoss(10)
@@ -69,38 +69,38 @@
 	playsound(src, 'sound/machines/defib_zap.ogg', 75, 1, -1)
 	playsound(src, "bodyfall", 50, 1)
 	var/mob/living/carbon/human/H = target
-	display_results(user, target, SPAN_WARNING("You screw up, sending a current through their body!"),
-		SPAN_WARNING("[user] screws up, causing [H] to flop around violently as they're zapped!"),
-		SPAN_WARNING("[user] screws up, causing [H] to flop around violently as they're zapped!"))
+	display_results(user, target, "<span class='warning'>You screw up, sending a current through their body!</span>",
+		"<span class='warning'>[user] screws up, causing [H] to flop around violently as they're zapped!</span>",
+		"<span class='warning'>[user] screws up, causing [H] to flop around violently as they're zapped!</span>")
 	H.electrocute_act(25, (tool), 1, SHOCK_ILLUSION)
 	H.adjustFireLoss(10)
 	H.emote("flip")
 	H.adjustOrganLoss(ORGAN_SLOT_HEART, 10)
 
 /datum/surgery_step/ventricular_electrotherapy/proc/ghetto_defib(mob/user, mob/living/carbon/human/H, obj/item/tool)
-	H.visible_message(SPAN_WARNING("[H]'s body convulses a bit."))
+	H.visible_message("<span class='warning'>[H]'s body convulses a bit.</span>")
 	var/total_brute	= H.getBruteLoss()
 	var/total_burn	= H.getFireLoss()
 	var/failed
 	var/tdelta = round(world.time - H.timeofdeath)
 
 	if (H.suiciding || (HAS_TRAIT(H, TRAIT_NOCLONE)))
-		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].")
+		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].</span>"
 	else if (H.hellbound)
-		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You notice a small tatoo with the words \"Property of Satan\" branded just above the right ventricle.")
+		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You notice a small tatoo with the words \"Property of Satan\" branded just above the right ventricle.</span>"
 	else if(tdelta > (DEFIB_TIME_LIMIT * 10))
-		failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. It appears their body decomposed beyond repair.")
+		failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. It appears their body decomposed beyond repair.</span>"
 	else if(total_burn >= 180 || total_brute >= 180)
-		failed = SPAN_WARNING("The [tool] zaps the heart, inducing a sudden contraction, but it appears [H]'s body is too damaged to revive presently.")
+		failed = "<span class='warning'>The [tool] zaps the heart, inducing a sudden contraction, but it appears [H]'s body is too damaged to revive presently.</span>"
 	else if(H.get_ghost())
-		failed = SPAN_WARNING("The [tool] zaps the heart, inducing several contractions before dying down, but there's no spark of life in [H]'s eyes. It may be worth it to try again, however.")
+		failed = "<span class='warning'>The [tool] zaps the heart, inducing several contractions before dying down, but there's no spark of life in [H]'s eyes. It may be worth it to try again, however.</span>"
 	else
 		var/obj/item/organ/brain/BR = H.getorgan(/obj/item/organ/brain)
 		if(BR)
 			if(H.suiciding || BR.brainmob?.suiciding)
-				failed = SPAN_WARNING("The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].")
+				failed = "<span class='warning'>The heart is zapped by the [tool], but nothing happens. You feel like the spark of life has fully left [H].</span>"
 		else
-			failed = SPAN_WARNING("The [tool] zaps the heart, restarting the heart, but without a brain the contractions quickly die out.")
+			failed = "<span class='warning'>The [tool] zaps the heart, restarting the heart, but without a brain the contractions quickly die out.</span>"
 
 
 	if(failed)
@@ -118,7 +118,7 @@
 			H.adjustFireLoss((mobhealth - HALFWAYCRITDEATH) * (total_burn / overall_damage), 0)
 			H.adjustBruteLoss((mobhealth - HALFWAYCRITDEATH) * (total_brute / overall_damage), 0)
 		H.updatehealth() // Previous "adjust" procs don't update health, so we do it manually.
-		H.visible_message(SPAN_NOTICE("The [tool] zaps the heart, inducing several contractions before speeding up into a regular rhythm, [H]'s eyes snapping open with a loud gasp!"))
+		H.visible_message("<span class='notice'>The [tool] zaps the heart, inducing several contractions before speeding up into a regular rhythm, [H]'s eyes snapping open with a loud gasp!</span>")
 		playsound(src, 'sound/machines/defib_success.ogg', 50, 0)
 		H.set_heartattack(FALSE)
 		H.revive()

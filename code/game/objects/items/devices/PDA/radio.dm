@@ -1,9 +1,11 @@
 // Radio Cartridge, essentially a remote signaler with limited spectrum.
 /obj/item/integrated_signaler
 	name = "\improper PDA radio module"
-	desc = "An electronic radio system of Vault-Tec design."
+	desc = "An electronic radio system of Nanotrasen origin."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "power_mod"
+
+/obj/item/integrated_signaler
 	var/frequency = FREQ_SIGNALER
 	var/code = DEFAULT_SIGNALER_CODE
 	var/last_transmission

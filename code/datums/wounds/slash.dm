@@ -151,27 +151,27 @@
 /// if a felinid is licking this cut to reduce bleeding
 /datum/wound/slash/proc/lick_wounds(mob/living/carbon/human/user)
 	if(INTERACTING_WITH(user, victim))
-		to_chat(user, SPAN_WARNING("You're already interacting with [victim]!"))
+		to_chat(user, "<span class='warning'>You're already interacting with [victim]!</span>")
 		return
 
 	if(user.is_mouth_covered())
-		to_chat(user, SPAN_WARNING("Your mouth is covered, you can't lick [victim]'s wounds!"))
+		to_chat(user, "<span class='warning'>Your mouth is covered, you can't lick [victim]'s wounds!</span>")
 		return
 
 	if(!user.getorganslot(ORGAN_SLOT_TONGUE))
-		to_chat(user, SPAN_WARNING("You can't lick wounds without a tongue!")) // f in chat
+		to_chat(user, "<span class='warning'>You can't lick wounds without a tongue!</span>") // f in chat
 		return
 
 	// transmission is one way patient -> felinid since google said cat saliva is antiseptic or whatever, and also because felinids are already risking getting beaten for this even without people suspecting they're spreading a deathvirus
 	for(var/datum/disease/D in victim.diseases)
 		user.ForceContractDisease(D)
 
-	user.visible_message(SPAN_NOTICE("[user] begins licking the wounds on [victim]'s [limb.name]."), SPAN_NOTICE("You begin licking the wounds on [victim]'s [limb.name]..."), ignored_mobs=victim)
+	user.visible_message("<span class='notice'>[user] begins licking the wounds on [victim]'s [limb.name].</span>", "<span class='notice'>You begin licking the wounds on [victim]'s [limb.name]...</span>", ignored_mobs=victim)
 	to_chat(victim, "<span class='notice'>[user] begins to lick the wounds on your [limb.name].</span")
 	if(!do_after(user, base_treat_time, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
-	user.visible_message(SPAN_NOTICE("[user] licks the wounds on [victim]'s [limb.name]."), SPAN_NOTICE("You lick some of the wounds on [victim]'s [limb.name]."), ignored_mobs=victim)
+	user.visible_message("<span class='notice'>[user] licks the wounds on [victim]'s [limb.name].</span>", "<span class='notice'>You lick some of the wounds on [victim]'s [limb.name]</span>", ignored_mobs=victim)
 	to_chat(victim, "<span class='green'>[user] licks the wounds on your [limb.name]!</span")
 	blood_flow -= 0.5
 	if(isinsect(victim) || iscatperson(victim) || ismammal(victim) || isdwarf(victim) || ismonkey(victim)) // Yep you can lick monkeys.
@@ -196,7 +196,7 @@
 /// If someone's putting a laser gun up to our cut to cauterize it
 /datum/wound/slash/proc/las_cauterize(obj/item/gun/energy/laser/lasgun, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.25 : 1)
-	user.visible_message(SPAN_WARNING("[user] begins aiming [lasgun] directly at [victim]'s [limb.name]..."), "<span class='userdanger'>You begin aiming [lasgun] directly at [user == victim ? "your" : "[victim]'s"] [limb.name]...</span>")
+	user.visible_message("<span class='warning'>[user] begins aiming [lasgun] directly at [victim]'s [limb.name]...</span>", "<span class='userdanger'>You begin aiming [lasgun] directly at [user == victim ? "your" : "[victim]'s"] [limb.name]...</span>")
 	if(!do_after(user, base_treat_time  * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 	var/damage = lasgun.chambered.BB.damage
@@ -206,12 +206,12 @@
 		return
 	victim.emote("scream")
 	blood_flow -= damage / (5 * self_penalty_mult) // 20 / 5 = 4 bloodflow removed, p good
-	victim.visible_message(SPAN_WARNING("The cuts on [victim]'s [limb.name] scar over!"))
+	victim.visible_message("<span class='warning'>The cuts on [victim]'s [limb.name] scar over!</span>")
 
 /// If someone is using either a cautery tool or something with heat to cauterize this cut
 /datum/wound/slash/proc/tool_cauterize(obj/item/I, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.5 : 1)
-	user.visible_message(SPAN_DANGER("[user] begins cauterizing [victim]'s [limb.name] with [I]..."), SPAN_DANGER("You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
+	user.visible_message("<span class='danger'>[user] begins cauterizing [victim]'s [limb.name] with [I]...</span>", "<span class='danger'>You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
 	if(!do_after(user, base_treat_time * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
@@ -230,7 +230,7 @@
 /// If someone is using a suture to close this cut
 /datum/wound/slash/proc/suture(obj/item/stack/medical/suture/I, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.4 : 1)
-	user.visible_message(SPAN_NOTICE("[user] begins stitching [victim]'s [limb.name] with [I]..."), SPAN_NOTICE("You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
+	user.visible_message("<span class='notice'>[user] begins stitching [victim]'s [limb.name] with [I]...</span>", "<span class='notice'>You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
 
 	if(!do_after(user, base_treat_time * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return

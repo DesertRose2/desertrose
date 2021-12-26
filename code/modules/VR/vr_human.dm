@@ -39,7 +39,7 @@
 		real_mind.current.stop_sound_channel(CHANNEL_HEARTBEAT)
 		if(deathchecks && vr_sleeper)
 			if(vr_sleeper.you_die_in_the_game_you_die_for_real)
-				to_chat(real_mind, SPAN_WARNING("You feel everything fading away..."))
+				to_chat(real_mind, "<span class='warning'>You feel everything fading away...</span>")
 				real_mind.current.death(0)
 	if(deathchecks && vr_sleeper)
 		vr_sleeper.vr_human = null

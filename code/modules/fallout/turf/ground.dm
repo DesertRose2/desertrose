@@ -29,10 +29,10 @@
 		var/obj/item/stack/tile/plasteel/S = C
 		if(S.use(1))
 			playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
-			to_chat(user, SPAN_NOTICE("You build a floor."))
+			to_chat(user, "<span class='notice'>You build a floor.</span>")
 			ChangeTurf(/turf/open/floor/plating)
 		else
-			to_chat(user, SPAN_WARNING("You need one floor tile to build a floor!"))
+			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 	else
 		return ..()
 /*
@@ -54,6 +54,10 @@
 	turf_light_range = 3
 	turf_light_power = 0.75
 	slowdown = 0.2
+
+/turf/open/indestructible/ground/outside/Initialize()
+	. = ..()
+	flags_2 |= GLOBAL_LIGHT_TURF_2
 
 #define GRASS_SPONTANEOUS_GROUND 		2
 #define GRASS_WEIGHT_GROUND			4

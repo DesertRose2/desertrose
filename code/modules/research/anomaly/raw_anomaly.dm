@@ -16,8 +16,8 @@
 	var/anomaly_type
 
 /obj/item/raw_anomaly_core/bluespace
-	name = "raw quantum core"
-	desc = "The raw core of a quantum anomaly, glowing and full of potential."
+	name = "raw bluespace core"
+	desc = "The raw core of a bluespace anomaly, glowing and full of potential."
 	anomaly_type = /obj/item/assembly/signaler/anomaly/bluespace
 	icon_state = "rawcore_bluespace"
 

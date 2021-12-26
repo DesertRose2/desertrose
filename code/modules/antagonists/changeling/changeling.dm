@@ -194,25 +194,25 @@
 	thepower.on_purchase(owner.current)
 	loudfactor += thepower.loudness
 	if(loudfactor >= 4 && !bloodtestwarnings)
-		to_chat(owner.current, SPAN_WARNING("Our blood is growing flammable. Our blood will react violently to heat."))
+		to_chat(owner.current, "<span class='warning'>Our blood is growing flammable. Our blood will react violently to heat.</span>")
 		bloodtestwarnings = 1
 	if(loudfactor >= 10 && bloodtestwarnings < 2)
-		to_chat(owner.current, SPAN_WARNING("Our blood has grown extremely flammable. Our blood will react explosively to heat."))
+		to_chat(owner.current, "<span class='warning'>Our blood has grown extremely flammable. Our blood will react explosively to heat.</span>")
 		bloodtestwarnings = 2
 
 /datum/antagonist/changeling/proc/readapt()
 	if(!ishuman(owner.current))
-		to_chat(owner.current, SPAN_DANGER("We can't remove our evolutions in this form!"))
+		to_chat(owner.current, "<span class='danger'>We can't remove our evolutions in this form!</span>")
 		return
 	if(canrespec)
-		to_chat(owner.current, SPAN_NOTICE("We have removed our evolutions from this form, and are now ready to readapt."))
+		to_chat(owner.current, "<span class='notice'>We have removed our evolutions from this form, and are now ready to readapt.</span>")
 		reset_powers()
 		playsound(get_turf(owner.current), 'sound/effects/lingreadapt.ogg', 75, TRUE, 5, soundenvwet = 0)
 		canrespec = 0
 		SSblackbox.record_feedback("tally", "changeling_power_purchase", 1, "Readapt")
 		return 1
 	else
-		to_chat(owner.current, SPAN_DANGER("You lack the power to readapt your evolutions!"))
+		to_chat(owner.current, "<span class='danger'>You lack the power to readapt your evolutions!</span>")
 		return 0
 
 //Called in life()
@@ -249,29 +249,29 @@
 		var/datum/changelingprofile/prof = stored_profiles[1]
 		if(prof.dna == user.dna && stored_profiles.len >= dna_max)//If our current DNA is the stalest, we gotta ditch it.
 			if(verbose)
-				to_chat(user, SPAN_WARNING("We have reached our capacity to store genetic information! We must transform before absorbing more."))
+				to_chat(user, "<span class='warning'>We have reached our capacity to store genetic information! We must transform before absorbing more.</span>")
 			return
 	if(!target)
 		return
 	if(NO_DNA_COPY in target.dna.species.species_traits)
 		if(verbose)
-			to_chat(user, SPAN_WARNING("[target] is not compatible with our biology."))
+			to_chat(user, "<span class='warning'>[target] is not compatible with our biology.</span>")
 		return
 	if((HAS_TRAIT(target, TRAIT_NOCLONE)) || (HAS_TRAIT(target, TRAIT_NOCLONE)))
 		if(verbose)
-			to_chat(user, SPAN_WARNING("DNA of [target] is ruined beyond usability!"))
+			to_chat(user, "<span class='warning'>DNA of [target] is ruined beyond usability!</span>")
 		return
 	if(!ishuman(target))//Absorbing monkeys is entirely possible, but it can cause issues with transforming. That's what lesser form is for anyway!
 		if(verbose)
-			to_chat(user, SPAN_WARNING("We could gain no benefit from absorbing a lesser creature."))
+			to_chat(user, "<span class='warning'>We could gain no benefit from absorbing a lesser creature.</span>")
 		return
 	if(has_dna(target.dna))
 		if(verbose)
-			to_chat(user, SPAN_WARNING("We already have this DNA in storage!"))
+			to_chat(user, "<span class='warning'>We already have this DNA in storage!</span>")
 		return
 	if(!target.has_dna())
 		if(verbose)
-			to_chat(user, SPAN_WARNING("[target] is not compatible with our biology."))
+			to_chat(user, "<span class='warning'>[target] is not compatible with our biology.</span>")
 		return
 	return 1
 
@@ -510,7 +510,7 @@
 
 /datum/antagonist/changeling/proc/admin_restore_appearance(mob/admin)
 	if(!stored_profiles.len || !iscarbon(owner.current))
-		to_chat(admin, SPAN_DANGER("Resetting DNA failed!"))
+		to_chat(admin, "<span class='danger'>Resetting DNA failed!</span>")
 	else
 		var/mob/living/carbon/C = owner.current
 		first_prof.dna.transfer_identity(C, transfer_SE=1)

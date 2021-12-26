@@ -325,18 +325,18 @@
 /obj/item/radio/examine(mob/user)
 	. = ..()
 	if (unscrewed)
-		. += SPAN_NOTICE("It can be attached and modified.")
+		. += "<span class='notice'>It can be attached and modified.</span>"
 	else
-		. += SPAN_NOTICE("It cannot be modified or attached.")
+		. += "<span class='notice'>It cannot be modified or attached.</span>"
 
 /obj/item/radio/attackby(obj/item/W, mob/user, params)
 	add_fingerprint(user)
 	if(istype(W, /obj/item/screwdriver))
 		unscrewed = !unscrewed
 		if(unscrewed)
-			to_chat(user, SPAN_NOTICE("The radio can now be attached and modified!"))
+			to_chat(user, "<span class='notice'>The radio can now be attached and modified!</span>")
 		else
-			to_chat(user, SPAN_NOTICE("The radio can no longer be modified or attached!"))
+			to_chat(user, "<span class='notice'>The radio can no longer be modified or attached!</span>")
 	else
 		return ..()
 
@@ -347,7 +347,7 @@
 	emped++ //There's been an EMP; better count it
 	var/curremp = emped //Remember which EMP this was
 	if (listening && ismob(loc))	// if the radio is turned on and on someone's person they notice
-		to_chat(loc, SPAN_WARNING("\The [src] overloads."))
+		to_chat(loc, "<span class='warning'>\The [src] overloads.</span>")
 	broadcasting = FALSE
 	listening = FALSE
 	for (var/ch_name in channels)
@@ -396,14 +396,14 @@
 					keyslot = null
 
 			recalculateChannels()
-			to_chat(user, SPAN_NOTICE("You pop out the encryption key in the radio."))
+			to_chat(user, "<span class='notice'>You pop out the encryption key in the radio.</span>")
 
 		else
-			to_chat(user, SPAN_WARNING("This radio doesn't have any encryption keys!"))
+			to_chat(user, "<span class='warning'>This radio doesn't have any encryption keys!</span>")
 
 	else if(istype(W, /obj/item/encryptionkey/))
 		if(keyslot)
-			to_chat(user, SPAN_WARNING("The radio can't hold another key!"))
+			to_chat(user, "<span class='warning'>The radio can't hold another key!</span>")
 			return
 
 		if(!keyslot)

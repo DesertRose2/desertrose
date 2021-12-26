@@ -36,15 +36,15 @@
 				if(hand_items)
 					message = "<span class='caution'>You aren't holding anything that can be marked for recall.</span>"
 				else
-					message = SPAN_NOTICE("You must hold the desired item in your hands to mark it for recall.")
+					message = "<span class='notice'>You must hold the desired item in your hands to mark it for recall.</span>"
 
 		else if(marked_item && (marked_item in hand_items)) //unlinking item to the spell
-			message = SPAN_NOTICE("You remove the mark on [marked_item] to use elsewhere.")
+			message = "<span class='notice'>You remove the mark on [marked_item] to use elsewhere.</span>"
 			name = "Instant Summons"
 			marked_item = 		null
 
 		else if(marked_item && QDELETED(marked_item)) //the item was destroyed at some point
-			message = SPAN_WARNING("You sense your marked item has been destroyed!")
+			message = "<span class='warning'>You sense your marked item has been destroyed!</span>"
 			name = "Instant Summons"
 			marked_item = 		null
 
@@ -69,7 +69,7 @@
 						var/mob/M = item_to_retrieve.loc
 
 						if(issilicon(M)) //Items in silicons warp the whole silicon
-							M.loc.visible_message(SPAN_WARNING("[M] suddenly disappears!"))
+							M.loc.visible_message("<span class='warning'>[M] suddenly disappears!</span>")
 							M.forceMove(L.loc)
 							M.loc.visible_message("<span class='caution'>[M] suddenly appears!</span>")
 							item_to_retrieve = null
@@ -90,7 +90,7 @@
 				return
 
 			if(item_to_retrieve.loc)
-				item_to_retrieve.loc.visible_message(SPAN_WARNING("The [item_to_retrieve.name] suddenly disappears!"))
+				item_to_retrieve.loc.visible_message("<span class='warning'>The [item_to_retrieve.name] suddenly disappears!</span>")
 			if(!isitem(item_to_retrieve) || !L.put_in_hands(item_to_retrieve))
 				item_to_retrieve.forceMove(L.drop_location())
 				item_to_retrieve.loc.visible_message("<span class='caution'>The [item_to_retrieve.name] suddenly appears!</span>")

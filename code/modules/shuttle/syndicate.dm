@@ -1,8 +1,8 @@
 #define SYNDICATE_CHALLENGE_TIMER 9000		// 15 minutes
 
 /obj/machinery/computer/shuttle/syndicate
-	name = "Shi shuttle terminal"
-	desc = "The terminal used to control the Shi transport shuttle."
+	name = "syndicate shuttle terminal"
+	desc = "The terminal used to control the syndicate transport shuttle."
 	circuit = /obj/item/circuitboard/computer/syndicate_shuttle
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
@@ -19,18 +19,18 @@
 
 /obj/machinery/computer/shuttle/syndicate/ui_act(action, params)
 	if(!allowed(usr))
-		to_chat(usr, SPAN_DANGER("Access denied."))
+		to_chat(usr, "<span class='danger'>Access denied.</span>")
 		return
 
 	switch(action)
 		if("move")
 			if(istype(src, /obj/machinery/computer/shuttle/syndicate/drop_pod))
 				if(!is_centcom_level(z))
-					to_chat(usr, SPAN_WARNING("Pods are one way!"))
+					to_chat(usr, "<span class='warning'>Pods are one way!</span>")
 					return
 			var/obj/item/circuitboard/computer/syndicate_shuttle/board = circuit
 			if(board?.challenge && world.time < SYNDICATE_CHALLENGE_TIMER)
-				to_chat(usr, SPAN_WARNING("You've issued a combat challenge to the station! You've got to give them at least [DisplayTimeText(SYNDICATE_CHALLENGE_TIMER - world.time)] more to allow them to prepare."))
+				to_chat(usr, "<span class='warning'>You've issued a combat challenge to the station! You've got to give them at least [DisplayTimeText(SYNDICATE_CHALLENGE_TIMER - world.time)] more to allow them to prepare.</span>")
 				return
 			board.moved = TRUE
 	return ..()
@@ -52,8 +52,8 @@
 	clockwork = TRUE //it'd look weird
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate
-	name = "Shi shuttle navigation computer"
-	desc = "Used to designate a precise transit location for the Shi shuttle."
+	name = "syndicate shuttle navigation computer"
+	desc = "Used to designate a precise transit location for the syndicate shuttle."
 	icon_screen = "syndishuttle"
 	icon_keyboard = "syndie_key"
 	shuttleId = "syndicate"

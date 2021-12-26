@@ -118,7 +118,7 @@
 			return TRUE
 		else if(mob.restrained(ignore_grab = 1))
 			move_delay = world.time + 10
-			to_chat(src, SPAN_WARNING("You're restrained! You can't move!"))
+			to_chat(src, "<span class='warning'>You're restrained! You can't move!</span>")
 			return TRUE
 		else
 			return !mob.attempt_resist_grab(TRUE)
@@ -183,17 +183,17 @@
 			var/turf/open/floor/stepTurf = get_step(L, direction)
 			if(stepTurf)
 				for(var/obj/effect/decal/cleanable/salt/S in stepTurf)
-					to_chat(L, SPAN_WARNING("[S] bars your passage!"))
+					to_chat(L, "<span class='warning'>[S] bars your passage!</span>")
 					if(isrevenant(L))
 						var/mob/living/simple_animal/revenant/R = L
 						R.reveal(20)
 						R.stun(20)
 					return
 				if(stepTurf.flags_1 & NOJAUNT_1)
-					to_chat(L, SPAN_WARNING("Some strange aura is blocking the way."))
+					to_chat(L, "<span class='warning'>Some strange aura is blocking the way.</span>")
 					return
 				if (locate(/obj/effect/blessing, stepTurf))
-					to_chat(L, SPAN_WARNING("Holy energies block your path!"))
+					to_chat(L, "<span class='warning'>Holy energies block your path!</span>")
 					return
 
 				L.forceMove(stepTurf)
@@ -370,14 +370,14 @@
 	set category = "IC"
 
 	if(zMove(UP, TRUE))
-		to_chat(src, SPAN_NOTICE("You move upwards."))
+		to_chat(src, "<span class='notice'>You move upwards.</span>")
 
 /mob/verb/down()
 	set name = "Move Down"
 	set category = "IC"
 
 	if(zMove(DOWN, TRUE))
-		to_chat(src, SPAN_NOTICE("You move down."))
+		to_chat(src, "<span class='notice'>You move down.</span>")
 
 /mob/proc/zMove(dir, feedback = FALSE)
 	if(dir != UP && dir != DOWN)
@@ -385,11 +385,11 @@
 	var/turf/target = get_step_multiz(src, dir)
 	if(!target)
 		if(feedback)
-			to_chat(src, SPAN_WARNING("There's nothing in that direction!"))
+			to_chat(src, "<span class='warning'>There's nothing in that direction!</span>")
 		return FALSE
 	if(!canZMove(dir, target))
 		if(feedback)
-			to_chat(src, SPAN_WARNING("You couldn't move there!"))
+			to_chat(src, "<span class='warning'>You couldn't move there!</span>")
 		return FALSE
 	forceMove(target)
 	return TRUE

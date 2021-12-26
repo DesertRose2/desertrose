@@ -17,8 +17,8 @@
 
 /obj/machinery/atmospherics/components/trinary/filter/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("You can hold <b>Ctrl</b> and click on it to toggle it on and off.")
-	. += SPAN_NOTICE("You can hold <b>Alt</b> and click on it to maximize its flow rate.")
+	. += "<span class='notice'>You can hold <b>Ctrl</b> and click on it to toggle it on and off.</span>"
+	. += "<span class='notice'>You can hold <b>Alt</b> and click on it to maximize its flow rate.</span>"
 
 /obj/machinery/atmospherics/components/trinary/filter/CtrlClick(mob/user)
 	var/area/A = get_area(src)
@@ -36,7 +36,7 @@
 	var/turf/T = get_turf(src)
 	if(user.canUseTopic(src, BE_CLOSE, FALSE,))
 		transfer_rate = MAX_TRANSFER_RATE
-		to_chat(user,SPAN_NOTICE("You maximize the flow rate on the [src]."))
+		to_chat(user,"<span class='notice'>You maximize the flow rate on the [src].</span>")
 		investigate_log("Filter, [src.name], was maximized by [key_name(usr)] at [x], [y], [z], [A]", INVESTIGATE_ATMOS)
 		message_admins("Filter, [src.name], was maximized by [ADMIN_LOOKUPFLW(usr)] at [ADMIN_COORDJMP(T)], [A]")
 		return TRUE
@@ -167,7 +167,7 @@
 /obj/machinery/atmospherics/components/trinary/filter/can_unwrench(mob/user)
 	. = ..()
 	if(. && on && is_operational())
-		to_chat(user, SPAN_WARNING("You cannot unwrench [src], turn it off first!"))
+		to_chat(user, "<span class='warning'>You cannot unwrench [src], turn it off first!</span>")
 		return FALSE
 
 // Mapping

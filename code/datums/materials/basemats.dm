@@ -7,6 +7,14 @@
 	sheet_type = /obj/item/stack/sheet/metal
 	value_per_unit = 0.0025
 
+/datum/material/lead
+	name = "lead"
+	desc = "Common lead ore often found in sedimentary and igneous layers of the crust."
+	color = "#878687"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/lead
+	value_per_unit = 0.0025
+
 ///Breaks extremely easily but is transparent.
 /datum/material/glass
 	name = "glass"
@@ -19,6 +27,16 @@
 	value_per_unit = 0.0025
 	beauty_modifier = 0.05
 	armor_modifiers = list("melee" = 0.2, "bullet" = 0.2, "laser" = 0, "energy" = 1, "bomb" = 0, "bio" = 0.2, "rad" = 0.2, "fire" = 1, "acid" = 0.2) // yeah ok
+
+/datum/material/blackpowder
+	name = "blackpowder"
+	desc = "blackpowder"
+	color = "#000000"
+	alpha = 150
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/ore/blackpowder
+	value_per_unit = 0.0050
+
 
 /*
 Color matrices are like regular colors but unlike with normal colors, you can go over 255 on a channel.
@@ -105,7 +123,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 ///Can cause bluespace effects on use. (Teleportation) (Not yet implemented)
 /datum/material/bluespace
 	name = "quantum mesh"
-	desc = "Crystals with quantum properties"
+	desc = "Crystals with bluespace properties"
 	color = list(119/255, 217/255, 396/255,0, 0,0,0,0, 0,0,0,0, 0,0,0,1, 0,0,0,0)
 	integrity_modifier = 0.2 //these things shatter when thrown.
 	alpha = 200

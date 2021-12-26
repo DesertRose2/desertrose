@@ -2,8 +2,8 @@
 	name = "Telepathy"
 	desc = "A rare mutation that allows the user to telepathically communicate to others."
 	quality = POSITIVE
-	text_gain_indication = SPAN_NOTICE("You can hear your own voice echoing in your mind!")
-	text_lose_indication = SPAN_NOTICE("You don't hear your mind echo anymore.")
+	text_gain_indication = "<span class='notice'>You can hear your own voice echoing in your mind!</span>"
+	text_lose_indication = "<span class='notice'>You don't hear your mind echo anymore.</span>"
 	difficulty = 12
 	power = /obj/effect/proc_holder/spell/targeted/telepathy/genetic
 	instability = 10
@@ -24,8 +24,8 @@
 	quality = POSITIVE
 	difficulty = 12
 	locked = TRUE
-	text_gain_indication = SPAN_NOTICE("Your throat is burning!")
-	text_lose_indication = SPAN_NOTICE("Your throat is cooling down.")
+	text_gain_indication = "<span class='notice'>Your throat is burning!</span>"
+	text_lose_indication = "<span class='notice'>Your throat is cooling down.</span>"
 	power = /obj/effect/proc_holder/spell/aimed/firebreath
 	instability = 30
 	energy_coeff = 1
@@ -58,7 +58,7 @@
 		if(C.is_mouth_covered())
 			C.adjust_fire_stacks(2)
 			C.IgniteMob()
-			to_chat(C,SPAN_WARNING("Something in front of your mouth caught fire!"))
+			to_chat(C,"<span class='warning'>Something in front of your mouth caught fire!</span>")
 			return FALSE
 
 /obj/effect/proc_holder/spell/aimed/firebreath/cast(list/targets, mob/living/user)
@@ -106,7 +106,7 @@
 	name = "Void Magnet"
 	desc = "A rare genome that attracts odd forces not usually observed."
 	quality = MINOR_NEGATIVE //upsides and downsides
-	text_gain_indication = SPAN_NOTICE("You feel a heavy, dull force just beyond the walls watching you.")
+	text_gain_indication = "<span class='notice'>You feel a heavy, dull force just beyond the walls watching you.</span>"
 	instability = 30
 	power = /obj/effect/proc_holder/spell/self/void
 	energy_coeff = 1
@@ -145,8 +145,8 @@
 	quality = POSITIVE
 	locked = TRUE
 	difficulty = 16
-	text_gain_indication = SPAN_NOTICE("You feel power flow through your hands.")
-	text_lose_indication = SPAN_NOTICE("The energy in your hands subsides.")
+	text_gain_indication = "<span class='notice'>You feel power flow through your hands.</span>"
+	text_lose_indication = "<span class='notice'>The energy in your hands subsides.</span>"
 	power = /obj/effect/proc_holder/spell/targeted/touch/shock
 	instability = 30
 
@@ -178,18 +178,18 @@
 			C.dropItemToGround(C.get_active_held_item())
 			C.dropItemToGround(C.get_inactive_held_item())
 			C.confused += 10
-			C.visible_message(SPAN_DANGER("[user] electrocutes [target]!"),"<span class='userdanger'>[user] electrocutes you!</span>")
+			C.visible_message("<span class='danger'>[user] electrocutes [target]!</span>","<span class='userdanger'>[user] electrocutes you!</span>")
 			return ..()
 		else
-			user.visible_message(SPAN_WARNING("[user] fails to electrocute [target]!"))
+			user.visible_message("<span class='warning'>[user] fails to electrocute [target]!</span>")
 			return ..()
 	else if(isliving(target))
 		var/mob/living/L = target
 		L.electrocute_act(15, user, 1, SHOCK_NOSTUN)
-		L.visible_message(SPAN_DANGER("[user] electrocutes [target]!"),"<span class='userdanger'>[user] electrocutes you!</span>")
+		L.visible_message("<span class='danger'>[user] electrocutes [target]!</span>","<span class='userdanger'>[user] electrocutes you!</span>")
 		return ..()
 	else
-		to_chat(user,SPAN_WARNING("The electricity doesn't seem to affect [target]..."))
+		to_chat(user,"<span class='warning'>The electricity doesn't seem to affect [target]...</span>")
 		return ..()
 
 
@@ -198,8 +198,8 @@
 	desc = "Your sense of smell is comparable to that of a canine."
 	quality = POSITIVE
 	difficulty = 12
-	text_gain_indication = SPAN_NOTICE("Smells begin to make more sense...")
-	text_lose_indication = SPAN_NOTICE("Your sense of smell goes back to normal.")
+	text_gain_indication = "<span class='notice'>Smells begin to make more sense...</span>"
+	text_lose_indication = "<span class='notice'>Your sense of smell goes back to normal.</span>"
 	power = /obj/effect/proc_holder/spell/targeted/olfaction
 	instability = 30
 	synchronizer_coeff = 1
@@ -229,7 +229,7 @@
 
 	if(air.get_moles(GAS_MIASMA))
 		user.adjust_disgust(sensitivity * 45)
-		to_chat(user, SPAN_WARNING("With your overly sensitive nose, you get a whiff of stench and feel sick! Try moving to a cleaner area!"))
+		to_chat(user, "<span class='warning'>With your overly sensitive nose, you get a whiff of stench and feel sick! Try moving to a cleaner area!</span>")
 		return
 
 	var/atom/sniffed = user.get_active_held_item()
@@ -240,49 +240,49 @@
 			if(md5(H.dna.uni_identity) in sniffed.fingerprints)
 				possible |= H
 		if(!length(possible))
-			to_chat(user,SPAN_WARNING("Despite your best efforts, there are no scents to be found on [sniffed]..."))
+			to_chat(user,"<span class='warning'>Despite your best efforts, there are no scents to be found on [sniffed]...</span>")
 			return
 		tracking_target = input(user, "Choose a scent to remember.", "Scent Tracking") as null|anything in sortNames(possible)
 		if(!tracking_target)
 			if(!old_target)
-				to_chat(user,SPAN_WARNING("You decide against remembering any scents. Instead, you notice your own nose in your peripheral vision. This goes on to remind you of that one time you started breathing manually and couldn't stop. What an awful day that was."))
+				to_chat(user,"<span class='warning'>You decide against remembering any scents. Instead, you notice your own nose in your peripheral vision. This goes on to remind you of that one time you started breathing manually and couldn't stop. What an awful day that was.</span>")
 				return
 			tracking_target = old_target
 			on_the_trail(user)
 			return
-		to_chat(user,SPAN_NOTICE("You pick up the scent of [tracking_target]. The hunt begins."))
+		to_chat(user,"<span class='notice'>You pick up the scent of [tracking_target]. The hunt begins.</span>")
 		on_the_trail(user)
 		return
 
 	if(!tracking_target)
-		to_chat(user,SPAN_WARNING("You're not holding anything to smell, and you haven't smelled anything you can track. You smell your skin instead; it's kinda salty."))
+		to_chat(user,"<span class='warning'>You're not holding anything to smell, and you haven't smelled anything you can track. You smell your skin instead; it's kinda salty.</span>")
 		return
 
 	on_the_trail(user)
 
 /obj/effect/proc_holder/spell/targeted/olfaction/proc/on_the_trail(mob/living/user)
 	if(!tracking_target)
-		to_chat(user,SPAN_WARNING("You're not tracking a scent, but the game thought you were. Something's gone wrong! Report this as a bug."))
+		to_chat(user,"<span class='warning'>You're not tracking a scent, but the game thought you were. Something's gone wrong! Report this as a bug.</span>")
 		return
 	if(tracking_target == user)
-		to_chat(user,SPAN_WARNING("You smell out the trail to yourself. Yep, it's you."))
+		to_chat(user,"<span class='warning'>You smell out the trail to yourself. Yep, it's you.</span>")
 		return
 	if(usr.z < tracking_target.z)
-		to_chat(user,SPAN_WARNING("The trail leads... way up above you? Huh. They must be really, really far away."))
+		to_chat(user,"<span class='warning'>The trail leads... way up above you? Huh. They must be really, really far away.</span>")
 		return
 	else if(usr.z > tracking_target.z)
-		to_chat(user,SPAN_WARNING("The trail leads... way down below you? Huh. They must be really, really far away."))
+		to_chat(user,"<span class='warning'>The trail leads... way down below you? Huh. They must be really, really far away.</span>")
 		return
 	var/direction_text = "[dir2text(get_dir(usr, tracking_target))]"
 	if(direction_text)
-		to_chat(user,SPAN_NOTICE("You consider [tracking_target]'s scent. The trail leads <b>[direction_text].</b>"))
+		to_chat(user,"<span class='notice'>You consider [tracking_target]'s scent. The trail leads <b>[direction_text].</b></span>")
 
 
 /datum/mutation/human/self_amputation
 	name = "Autotomy"
 	desc = "Allows a creature to voluntary discard a random appendage."
 	quality = POSITIVE
-	text_gain_indication = SPAN_NOTICE("Your joints feel loose.")
+	text_gain_indication = "<span class='notice'>Your joints feel loose.</span>"
 	instability = 30
 	power = /obj/effect/proc_holder/spell/self/self_amputation
 
@@ -312,7 +312,7 @@
 			if(BP.dismemberable)
 				parts += BP
 	if(!parts.len)
-		to_chat(usr, SPAN_NOTICE("You can't shed any more limbs!"))
+		to_chat(usr, "<span class='notice'>You can't shed any more limbs!</span>")
 		return
 
 	var/obj/item/bodypart/BP = pick(parts)
@@ -323,7 +323,7 @@
 	name = "Webbing Production"
 	desc = "Allows the user to lay webbing, and travel through it."
 	quality = POSITIVE
-	text_gain_indication = SPAN_NOTICE("Your skin feels webby.")
+	text_gain_indication = "<span class='notice'>Your skin feels webby.</span>"
 	instability = 15
 	power = /obj/effect/proc_holder/spell/self/lay_genetic_web
 
@@ -339,20 +339,20 @@
 /obj/effect/proc_holder/spell/self/lay_genetic_web/cast(list/targets, mob/user = usr)
 	var/failed = FALSE
 	if(!isturf(user.loc))
-		to_chat(user, SPAN_WARNING("You can't lay webs here!"))
+		to_chat(user, "<span class='warning'>You can't lay webs here!</span>")
 		failed = TRUE
 	var/turf/T = get_turf(user)
 	var/obj/structure/spider/stickyweb/genetic/W = locate() in T
 	if(W)
-		to_chat(user, SPAN_WARNING("There's already a web here!"))
+		to_chat(user, "<span class='warning'>There's already a web here!</span>")
 		failed = TRUE
 	if(failed)
 		revert_cast(user)
 		return FALSE
 
-	user.visible_message(SPAN_NOTICE("[user] begins to secrete a sticky substance."),SPAN_NOTICE("You begin to lay a web."))
+	user.visible_message("<span class='notice'>[user] begins to secrete a sticky substance.</span>","<span class='notice'>You begin to lay a web.</span>")
 	if(!do_after(user, 4 SECONDS, target = T))
-		to_chat(user, SPAN_WARNING("Your web spinning was interrupted!"))
+		to_chat(user, "<span class='warning'>Your web spinning was interrupted!</span>")
 		return
 	else
 		new /obj/structure/spider/stickyweb/genetic(T, user)
@@ -362,7 +362,7 @@
 	name = "Tongue Spike"
 	desc = "Allows a creature to voluntary shoot their tongue out as a deadly weapon."
 	quality = POSITIVE
-	text_gain_indication = SPAN_NOTICE("Your feel like you can throw your voice.")
+	text_gain_indication = "<span class='notice'>Your feel like you can throw your voice.</span>"
 	instability = 15
 	power = /obj/effect/proc_holder/spell/self/tongue_spike
 
@@ -393,7 +393,7 @@
 			break
 
 	if(!tongue)
-		to_chat(C, SPAN_NOTICE("You don't have a tongue to shoot!"))
+		to_chat(C, "<span class='notice'>You don't have a tongue to shoot!</span>")
 		return
 
 	tongue.Remove(C, special = TRUE)
@@ -430,7 +430,7 @@
 
 /obj/item/hardened_spike/unembedded()
 	var/turf/T = get_turf(src)
-	visible_message(SPAN_WARNING("[src] cracks and twists, changing shape!"))
+	visible_message("<span class='warning'>[src] cracks and twists, changing shape!</span>")
 	for(var/i in contents)
 		var/obj/o = i
 		o.forceMove(T)
@@ -440,7 +440,7 @@
 	name = "Chem Spike"
 	desc = "Allows a creature to voluntary shoot their tongue out as biomass, allowing a long range transfer of chemicals."
 	quality = POSITIVE
-	text_gain_indication = SPAN_NOTICE("Your feel like you can really connect with people by throwing your voice.")
+	text_gain_indication = "<span class='notice'>Your feel like you can really connect with people by throwing your voice.</span>"
 	instability = 15
 	locked = TRUE
 	power = /obj/effect/proc_holder/spell/self/tongue_spike/chem
@@ -469,11 +469,11 @@
 	chems = new
 	chems.transfered = embedded_mob
 	chems.spikey = src
-	to_chat(fired_by, SPAN_NOTICE("Link established! Use the \"Transfer Chemicals\" ability to send your chemicals to the linked target!"))
+	to_chat(fired_by, "<span class='notice'>Link established! Use the \"Transfer Chemicals\" ability to send your chemicals to the linked target!</span>")
 	chems.Grant(fired_by)
 
 /obj/item/hardened_spike/chem/unembedded()
-	to_chat(fired_by, SPAN_WARNING("Link lost!"))
+	to_chat(fired_by, "<span class='warning'>Link lost!</span>")
 	QDEL_NULL(chems)
 	..()
 
@@ -492,12 +492,12 @@
 		return
 	var/mob/living/carbon/human/transferer = owner
 
-	to_chat(transfered, SPAN_WARNING("You feel a tiny prick!"))
+	to_chat(transfered, "<span class='warning'>You feel a tiny prick!</span>")
 	transferer.reagents.trans_to(transfered, transferer.reagents.total_volume, 1, 1, 0)
 
 	var/obj/item/bodypart/L = spikey.checkembedded()
 
 	//this is where it would deal damage, if it transfers chems it removes itself so no damage
 	spikey.forceMove(get_turf(L))
-	transfered.visible_message(SPAN_NOTICE("[spikey] falls out of [transfered]!"))
+	transfered.visible_message("<span class='notice'>[spikey] falls out of [transfered]!</span>")
 

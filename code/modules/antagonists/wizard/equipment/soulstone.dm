@@ -32,7 +32,7 @@
 /obj/item/soulstone/pickup(mob/living/user)
 	..()
 	if(!iscultist(user, TRUE) && !iswizard(user) && !usability)
-		to_chat(user, SPAN_DANGER("An overwhelming feeling of dread comes over you as you pick up the soulstone. It would be wise to be rid of this quickly."))
+		to_chat(user, "<span class='danger'>An overwhelming feeling of dread comes over you as you pick up the soulstone. It would be wise to be rid of this quickly.</span>")
 
 /obj/item/soulstone/examine(mob/user)
 	. = ..()
@@ -58,7 +58,7 @@
 		to_chat(user, "<span class='userdanger'>Your body is wracked with debilitating pain!</span>")
 		return
 	if(spent)
-		to_chat(user, SPAN_WARNING("There is no power left in the shard."))
+		to_chat(user, "<span class='warning'>There is no power left in the shard.</span>")
 		return
 	if(!ishuman(M))//If target is not a human.
 		return ..()
@@ -114,7 +114,7 @@
 	if(istype(O, /obj/item/soulstone))
 		var/obj/item/soulstone/SS = O
 		if(!iscultist(user, TRUE) && !iswizard(user) && !SS.usability)
-			to_chat(user, SPAN_DANGER("An overwhelming feeling of dread comes over you as you attempt to place the soulstone into the shell. It would be wise to be rid of this quickly."))
+			to_chat(user, "<span class='danger'>An overwhelming feeling of dread comes over you as you attempt to place the soulstone into the shell. It would be wise to be rid of this quickly.</span>")
 			user.Dizzy(30)
 			return
 		SS.transfer_soul("CONSTRUCT",src,user)
@@ -149,7 +149,7 @@
 				if(iscultist(user))
 					to_chat(user, "<span class='cult'><b>\"This soul is mine.</b></span> <span class='cultlarge'>SACRIFICE THEM!\"</span>")
 				else
-					to_chat(user, SPAN_DANGER("The soulstone seems to reject this soul."))
+					to_chat(user, "<span class='danger'>The soulstone seems to reject this soul.</span>")
 				return FALSE
 			if(contents.len)
 				to_chat(user, "<span class='userdanger'>Capture failed!</span>: The soulstone is full! Free an existing soul to make room.")
@@ -177,7 +177,7 @@
 				T.health = T.maxHealth
 				icon_state = "soulstone2"
 				name = "soulstone: Shade of [T.real_name]"
-				to_chat(T, SPAN_NOTICE("Your soul has been captured by the soulstone. Its arcane energies are reknitting your ethereal form."))
+				to_chat(T, "<span class='notice'>Your soul has been captured by the soulstone. Its arcane energies are reknitting your ethereal form.</span>")
 				if(user != T)
 					to_chat(user, "<span class='info'><b>Capture successful!</b>:</span> [T.real_name]'s soul has been captured and stored within the soulstone.")
 
@@ -279,7 +279,7 @@
 	if(!T)
 		return FALSE
 	if(!chosen_ghost)
-		to_chat(U, SPAN_DANGER("There were no spirits willing to become a shade."))
+		to_chat(U, "<span class='danger'>There were no spirits willing to become a shade.</span>")
 		return FALSE
 	if(contents.len) //If they used the soulstone on someone else in the meantime
 		return FALSE

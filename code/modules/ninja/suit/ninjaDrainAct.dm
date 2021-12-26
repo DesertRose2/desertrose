@@ -127,14 +127,14 @@ They *could* go in their appropriate files, but this is supposed to be modular
 
 	. = DRAIN_RD_HACK_FAILED
 
-	to_chat(H, SPAN_NOTICE("Hacking \the [src]..."))
+	to_chat(H, "<span class='notice'>Hacking \the [src]...</span>")
 	AI_notify_hack()
 
 	if(stored_research)
-		to_chat(H, SPAN_NOTICE("Copying files..."))
+		to_chat(H, "<span class='notice'>Copying files...</span>")
 		if(do_after(H, S.s_delay, target = src) && G.candrain && src)
 			stored_research.copy_research_to(S.stored_research)
-	to_chat(H, SPAN_NOTICE("Data analyzed. Process finished."))
+	to_chat(H, "<span class='notice'>Data analyzed. Process finished.</span>")
 
 //RD SERVER//
 //Shamelessly copypasted from above, since these two used to be the same proc, but with MANY colon operators
@@ -144,14 +144,14 @@ They *could* go in their appropriate files, but this is supposed to be modular
 
 	. = DRAIN_RD_HACK_FAILED
 
-	to_chat(H, SPAN_NOTICE("Hacking \the [src]..."))
+	to_chat(H, "<span class='notice'>Hacking \the [src]...</span>")
 	AI_notify_hack()
 
 	if(stored_research)
-		to_chat(H, SPAN_NOTICE("Copying files..."))
+		to_chat(H, "<span class='notice'>Copying files...</span>")
 		if(do_after(H, S.s_delay, target = src) && G.candrain && src)
 			stored_research.copy_research_to(S.stored_research)
-	to_chat(H, SPAN_NOTICE("Data analyzed. Process finished."))
+	to_chat(H, "<span class='notice'>Data analyzed. Process finished.</span>")
 
 
 //WIRE//
@@ -199,7 +199,7 @@ They *could* go in their appropriate files, but this is supposed to be modular
 	var/drain = 0 //Drain amount
 	. = 0
 
-	occupant_message(SPAN_DANGER("Warning: Unauthorized access through sub-route 4, block H, detected."))
+	occupant_message("<span class='danger'>Warning: Unauthorized access through sub-route 4, block H, detected.</span>")
 	if(get_charge())
 		while(G.candrain && cell.charge > 0 && !maxcapacity)
 			drain = rand(G.mindrain,G.maxdrain)
@@ -226,7 +226,7 @@ They *could* go in their appropriate files, but this is supposed to be modular
 	var/drain = 0 //Drain amount
 	. = 0
 
-	to_chat(src, SPAN_DANGER("Warning: Unauthorized access through sub-route 12, block C, detected."))
+	to_chat(src, "<span class='danger'>Warning: Unauthorized access through sub-route 12, block C, detected.</span>")
 
 	if(cell && cell.charge)
 		while(G.candrain && cell.charge > 0 && !maxcapacity)
@@ -260,7 +260,7 @@ They *could* go in their appropriate files, but this is supposed to be modular
 		var/datum/effect_system/spark_spread/spark_system = new /datum/effect_system/spark_spread()
 		spark_system.set_up(5, 0, loc)
 		playsound(src, "sparks", 50, 1)
-		visible_message(SPAN_DANGER("[H] electrocutes [src] with [H.p_their()] touch!"), "<span class='userdanger'>[H] electrocutes you with [H.p_their()] touch!</span>")
+		visible_message("<span class='danger'>[H] electrocutes [src] with [H.p_their()] touch!</span>", "<span class='userdanger'>[H] electrocutes you with [H.p_their()] touch!</span>")
 		electrocute_act(15, H)
 
 		DefaultCombatKnockdown(G.stunforce)

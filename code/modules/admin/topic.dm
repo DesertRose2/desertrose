@@ -49,7 +49,7 @@
 			return
 		var/mob/M = locate(href_list["getplaytimewindow"]) in GLOB.mob_list
 		if(!M)
-			to_chat(usr, SPAN_DANGER("ERROR: Mob not found."))
+			to_chat(usr, "<span class='danger'>ERROR: Mob not found.</span>")
 			return
 		cmd_show_exp_panel(M.client)
 
@@ -58,7 +58,7 @@
 			return
 		var/client/C = locate(href_list["toggleexempt"]) in GLOB.clients
 		if(!C)
-			to_chat(usr, SPAN_DANGER("ERROR: Client not found."))
+			to_chat(usr, "<span class='danger'>ERROR: Client not found.</span>")
 			return
 		toggle_exempt_status(C)
 
@@ -66,7 +66,7 @@
 		if(!check_rights(R_ADMIN))
 			return
 		if (!SSticker.mode)
-			to_chat(usr, SPAN_DANGER("Not until the round starts!"))
+			to_chat(usr, "<span class='danger'>Not until the round starts!</span>")
 			return
 		switch(href_list["makeAntag"])
 			if("traitors")
@@ -272,7 +272,7 @@
 			message_admins("Ban process: A mob matching [playermob.key] was found at location [playermob.x], [playermob.y], [playermob.z]. Custom ip and computer id fields replaced with the ip and computer id from the located mob.")
 
 		if(!DB_ban_record(bantype, playermob, banduration, banreason, banjob, bankey, banip, bancid ))
-			to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+			to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 			return
 		create_message("note", bankey, null, banreason, null, null, 0, 0, null, 0, banseverity)
 
@@ -553,7 +553,7 @@
 					mins = minutes - GLOB.CMinutes
 				mins = input(usr,"How long (in minutes)? (Default: 1440)","Ban time",mins ? mins : 1440) as num|null
 				if(mins <= 0)
-					to_chat(usr, SPAN_DANGER("[mins] is not a valid duration."))
+					to_chat(usr, "<span class='danger'>[mins] is not a valid duration.</span>")
 					return
 				minutes = GLOB.CMinutes + mins
 				duration = GetExp(minutes)
@@ -612,7 +612,7 @@
 				if(!severity)
 					return
 				if(!DB_ban_record(BANTYPE_JOB_PERMA, M, -1, reason, "appearance"))
-					to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+					to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 					return
 				if(M.client)
 					jobban_buildcache(M.client)
@@ -622,12 +622,12 @@
 				message_admins("<span class='adminnotice'>[key_name_admin(usr)] appearance banned [key_name_admin(M)].</span>")
 				to_chat(M, "<span class='boldannounce'><BIG>You have been appearance banned by [usr.client.key].</BIG></span>")
 				to_chat(M, "<span class='boldannounce'>The reason is: [reason]</span>")
-				to_chat(M, SPAN_DANGER("Appearance ban can be lifted only upon request."))
+				to_chat(M, "<span class='danger'>Appearance ban can be lifted only upon request.</span>")
 				var/bran = CONFIG_GET(string/banappeals)
 				if(bran)
-					to_chat(M, SPAN_DANGER("To try to resolve this matter head to [bran]"))
+					to_chat(M, "<span class='danger'>To try to resolve this matter head to [bran]</span>")
 				else
-					to_chat(M, SPAN_DANGER("No ban appeals URL has been set."))
+					to_chat(M, "<span class='danger'>No ban appeals URL has been set.</span>")
 			if("No")
 				return
 
@@ -1013,7 +1013,7 @@
 				if("Yes")
 					var/mins = input(usr,"How long (in minutes)?","Ban time",1440) as num|null
 					if(mins <= 0)
-						to_chat(usr, SPAN_DANGER("[mins] is not a valid duration."))
+						to_chat(usr, "<span class='danger'>[mins] is not a valid duration.</span>")
 						return
 					var/reason = input(usr,"Please State Reason For Banning [M.key].","Reason") as message|null
 					if(!reason)
@@ -1024,7 +1024,7 @@
 					var/msg
 					for(var/job in notbannedlist)
 						if(!DB_ban_record(BANTYPE_JOB_TEMP, M, mins, reason, job))
-							to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+							to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 							return
 						if(M.client)
 							jobban_buildcache(M.client)
@@ -1038,7 +1038,7 @@
 					message_admins("<span class='adminnotice'>[key_name_admin(usr)] banned [key_name_admin(M)] from [msg] for [mins] minutes.</span>")
 					to_chat(M, "<span class='boldannounce'><BIG>You have been [(msg == ("ooc" || "appearance")) ? "banned" : "jobbanned"] by [usr.client.key] from: [msg].</BIG></span>")
 					to_chat(M, "<span class='boldannounce'>The reason is: [reason]</span>")
-					to_chat(M, SPAN_DANGER("This jobban will be lifted in [mins] minutes."))
+					to_chat(M, "<span class='danger'>This jobban will be lifted in [mins] minutes.</span>")
 					href_list["jobban2"] = 1 // lets it fall through and refresh
 					return 1
 				if("No")
@@ -1050,7 +1050,7 @@
 						var/msg
 						for(var/job in notbannedlist)
 							if(!DB_ban_record(BANTYPE_JOB_PERMA, M, -1, reason, job))
-								to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+								to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 								return
 							if(M.client)
 								jobban_buildcache(M.client)
@@ -1064,7 +1064,7 @@
 						message_admins("<span class='adminnotice'>[key_name_admin(usr)] banned [key_name_admin(M)] from [msg].</span>")
 						to_chat(M, "<span class='boldannounce'><BIG>You have been [(msg == ("ooc" || "appearance")) ? "banned" : "jobbanned"] by [usr.client.key] from: [msg].</BIG></span>")
 						to_chat(M, "<span class='boldannounce'>The reason is: [reason]</span>")
-						to_chat(M, SPAN_DANGER("Jobban can be lifted only upon request."))
+						to_chat(M, "<span class='danger'>Jobban can be lifted only upon request.</span>")
 						href_list["jobban2"] = 1 // lets it fall through and refresh
 						return 1
 				if("Cancel")
@@ -1104,17 +1104,17 @@
 		var/mob/M = locate(href_list["boot2"])
 		if(ismob(M))
 			if(!check_if_greater_rights_than(M.client))
-				to_chat(usr, SPAN_DANGER("Error: They have more rights than you do."))
+				to_chat(usr, "<span class='danger'>Error: They have more rights than you do.</span>")
 				return
 			if(alert(usr, "Kick [key_name(M)]?", "Confirm", "Yes", "No") != "Yes")
 				return
 			if(!M)
-				to_chat(usr, SPAN_DANGER("Error: [M] no longer exists!"))
+				to_chat(usr, "<span class='danger'>Error: [M] no longer exists!</span>")
 				return
 			if(!M.client)
-				to_chat(usr, SPAN_DANGER("Error: [M] no longer has a client!"))
+				to_chat(usr, "<span class='danger'>Error: [M] no longer has a client!</span>")
 				return
-			to_chat(M, SPAN_DANGER("You have been kicked from the server by [usr.client.holder.fakekey ? "an Administrator" : "[usr.client.key]"]."))
+			to_chat(M, "<span class='danger'>You have been kicked from the server by [usr.client.holder.fakekey ? "an Administrator" : "[usr.client.key]"].</span>")
 			log_admin("[key_name(usr)] kicked [key_name(M)].")
 			message_admins("<span class='adminnotice'>[key_name_admin(usr)] kicked [key_name_admin(M)].</span>")
 			qdel(M.client)
@@ -1289,23 +1289,23 @@
 			if("Yes")
 				var/mins = input(usr,"How long (in minutes)?","Ban time",1440) as num|null
 				if(mins <= 0)
-					to_chat(usr, SPAN_DANGER("[mins] is not a valid duration."))
+					to_chat(usr, "<span class='danger'>[mins] is not a valid duration.</span>")
 					return
 				var/reason = input(usr,"Please State Reason For Banning [M.key].","Reason") as message|null
 				if(!reason)
 					return
 				if(!DB_ban_record(BANTYPE_TEMP, M, mins, reason))
-					to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+					to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 					return
 				AddBan(M.ckey, M.computer_id, reason, usr.ckey, 1, mins)
 				ban_unban_log_save("[key_name(usr)] has banned [key_name(M)]. - Reason: [reason] - This will be removed in [mins] minutes.")
 				to_chat(M, "<span class='boldannounce'><BIG>You have been banned by [usr.client.key].\nReason: [reason]</BIG></span>")
-				to_chat(M, SPAN_DANGER("This is a temporary ban, it will be removed in [mins] minutes. The round ID is [GLOB.round_id]."))
+				to_chat(M, "<span class='danger'>This is a temporary ban, it will be removed in [mins] minutes. The round ID is [GLOB.round_id].</span>")
 				var/bran = CONFIG_GET(string/banappeals)
 				if(bran)
-					to_chat(M, SPAN_DANGER("To try to resolve this matter head to [bran]"))
+					to_chat(M, "<span class='danger'>To try to resolve this matter head to [bran]</span>")
 				else
-					to_chat(M, SPAN_DANGER("No ban appeals URL has been set."))
+					to_chat(M, "<span class='danger'>No ban appeals URL has been set.</span>")
 				log_admin_private("[key_name(usr)] has banned [key_name(M)].\nReason: [key_name(M)]\nThis will be removed in [mins] minutes.")
 				var/msg = "<span class='adminnotice'>[key_name_admin(usr)] has banned [key_name_admin(M)].\nReason: [reason]\nThis will be removed in [mins] minutes.</span>"
 				message_admins(msg)
@@ -1325,14 +1325,14 @@
 					if("No")
 						AddBan(M.ckey, M.computer_id, reason, usr.ckey, 0, 0)
 				to_chat(M, "<span class='boldannounce'><BIG>You have been banned by [usr.client.key].\nReason: [reason]</BIG></span>")
-				to_chat(M, SPAN_DANGER("This is a permanent ban. The round ID is [GLOB.round_id]."))
+				to_chat(M, "<span class='danger'>This is a permanent ban. The round ID is [GLOB.round_id].</span>")
 				var/bran = CONFIG_GET(string/banappeals)
 				if(bran)
-					to_chat(M, SPAN_DANGER("To try to resolve this matter head to [bran]"))
+					to_chat(M, "<span class='danger'>To try to resolve this matter head to [bran]</span>")
 				else
-					to_chat(M, SPAN_DANGER("No ban appeals URL has been set."))
+					to_chat(M, "<span class='danger'>No ban appeals URL has been set.</span>")
 				if(!DB_ban_record(BANTYPE_PERMA, M, -1, reason))
-					to_chat(usr, SPAN_DANGER("Failed to apply ban."))
+					to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
 					return
 				ban_unban_log_save("[key_name(usr)] has permabanned [key_name(M)]. - Reason: [reason] - This is a permanent ban.")
 				log_admin_private("[key_name(usr)] has banned [key_name(M)].\nReason: [reason]\nThis is a permanent ban.")
@@ -1786,11 +1786,11 @@
 		var/mob/M = locate(href_list["sendbacktolobby"])
 
 		if(!isobserver(M))
-			to_chat(usr, SPAN_NOTICE("You can only send ghost players back to the Lobby."))
+			to_chat(usr, "<span class='notice'>You can only send ghost players back to the Lobby.</span>")
 			return
 
 		if(!M.client)
-			to_chat(usr, SPAN_WARNING("[M] doesn't seem to have an active client."))
+			to_chat(usr, "<span class='warning'>[M] doesn't seem to have an active client.</span>")
 			return
 
 		if(alert(usr, "Send [key_name(M)] back to Lobby?", "Message", "Yes", "No") != "Yes")
@@ -1922,7 +1922,7 @@
 			return
 
 		L.revive(full_heal = 1, admin_revive = 1)
-		message_admins(SPAN_DANGER("Admin [key_name_admin(usr)] healed / revived [key_name_admin(L)]!"))
+		message_admins("<span class='danger'>Admin [key_name_admin(usr)] healed / revived [key_name_admin(L)]!</span>")
 		log_admin("[key_name(usr)] healed / Revived [key_name(L)].")
 
 	else if(href_list["makeai"])
@@ -1934,7 +1934,7 @@
 			to_chat(usr, "This can only be used on instances of type /mob/living/carbon/human.")
 			return
 
-		message_admins(SPAN_DANGER("Admin [key_name_admin(usr)] AIized [key_name_admin(H)]!"))
+		message_admins("<span class='danger'>Admin [key_name_admin(usr)] AIized [key_name_admin(H)]!</span>")
 		log_admin("[key_name(usr)] AIized [key_name(H)].")
 		H.AIize()
 
@@ -2753,7 +2753,7 @@
 			if(alert("Are you sure you want to kick all [afkonly ? "AFK" : ""] clients from the lobby??","Message","Yes","Cancel") != "Yes")
 				to_chat(usr, "Kick clients from lobby aborted")
 				return
-			var/list/listkicked = kick_clients_in_lobby(SPAN_DANGER("You were kicked from the lobby by [usr.client.holder.fakekey ? "an Administrator" : "[usr.client.key]"]."), afkonly)
+			var/list/listkicked = kick_clients_in_lobby("<span class='danger'>You were kicked from the lobby by [usr.client.holder.fakekey ? "an Administrator" : "[usr.client.key]"].</span>", afkonly)
 
 			var/strkicked = ""
 			for(var/name in listkicked)
@@ -2823,7 +2823,7 @@
 	else if(href_list["viewruntime"])
 		var/datum/error_viewer/error_viewer = locate(href_list["viewruntime"])
 		if(!istype(error_viewer))
-			to_chat(usr, SPAN_WARNING("That runtime viewer no longer exists."))
+			to_chat(usr, "<span class='warning'>That runtime viewer no longer exists.</span>")
 			return
 
 		if(href_list["viewruntime_backto"])
@@ -2853,7 +2853,7 @@
 			return
 
 		if(!CONFIG_GET(string/centcom_ban_db))
-			to_chat(usr, SPAN_WARNING("Centcom Galactic Ban DB is disabled!"))
+			to_chat(usr, "<span class='warning'>Centcom Galactic Ban DB is disabled!</span>")
 			return
 
 		var/ckey = href_list["centcomlookup"]
@@ -2963,7 +2963,7 @@
 	var/client/C = GLOB.directory[ckey]
 	if(C)
 		if(check_rights_for(C, R_ADMIN,0))
-			to_chat(usr, SPAN_DANGER("The client chosen is an admin! Cannot mentorize."))
+			to_chat(usr, "<span class='danger'>The client chosen is an admin! Cannot mentorize.</span>")
 			return
 	if(SSdbcore.Connect())
 		var/datum/DBQuery/query_get_mentor = SSdbcore.NewQuery(
@@ -2974,7 +2974,7 @@
 			qdel(query_get_mentor)
 			return
 		if(query_get_mentor.NextRow())
-			to_chat(usr, SPAN_DANGER("[ckey] is already a mentor."))
+			to_chat(usr, "<span class='danger'>[ckey] is already a mentor.</span>")
 			qdel(query_get_mentor)
 			return
 		qdel(query_get_mentor)
@@ -2991,7 +2991,7 @@
 			return
 		qdel(query_add_admin_log)
 	else
-		to_chat(usr, SPAN_DANGER("Failed to establish database connection. The changes will last only for the current round."))
+		to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
 	new /datum/mentors(ckey)
 	to_chat(usr, "<span class='adminnotice'>New mentor added.</span>")
 
@@ -3005,7 +3005,7 @@
 	var/client/C = GLOB.directory[ckey]
 	if(C)
 		if(check_rights_for(C, R_ADMIN,0))
-			to_chat(usr, SPAN_DANGER("The client chosen is an admin, not a mentor! Cannot de-mentorize."))
+			to_chat(usr, "<span class='danger'>The client chosen is an admin, not a mentor! Cannot de-mentorize.</span>")
 			return
 		C.remove_mentor_verbs()
 		C.mentor_datum = null
@@ -3021,5 +3021,5 @@
 		if(!query_add_admin_log.warn_execute())
 			return
 	else
-		to_chat(usr, SPAN_DANGER("Failed to establish database connection. The changes will last only for the current round."))
+		to_chat(usr, "<span class='danger'>Failed to establish database connection. The changes will last only for the current round.</span>")
 	to_chat(usr, "<span class='adminnotice'>Mentor removed.</span>")

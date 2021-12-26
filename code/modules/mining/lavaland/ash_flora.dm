@@ -37,7 +37,7 @@
 				msg = harvest_message_low
 			else if(rand_harvested == harvest_amount_high)
 				msg = harvest_message_high
-			to_chat(user, SPAN_NOTICE("[msg]"))
+			to_chat(user, "<span class='notice'>[msg]</span>")
 		for(var/i in 1 to rand_harvested)
 			new harvest(get_turf(src))
 
@@ -56,7 +56,7 @@
 
 /obj/structure/flora/ash/attackby(obj/item/W, mob/user, params)
 	if(!harvested && needs_sharp_harvest && W.sharpness)
-		user.visible_message(SPAN_NOTICE("[user] starts to harvest from [src] with [W]."),SPAN_NOTICE("You begin to harvest from [src] with [W]."))
+		user.visible_message("<span class='notice'>[user] starts to harvest from [src] with [W].</span>","<span class='notice'>You begin to harvest from [src] with [W].</span>")
 		if(do_after(user, harvest_time, target = src))
 			harvest(user)
 	else
@@ -64,7 +64,7 @@
 
 /obj/structure/flora/ash/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(!harvested && !needs_sharp_harvest)
-		user.visible_message(SPAN_NOTICE("[user] starts to harvest from [src]."),SPAN_NOTICE("You begin to harvest from [src]."))
+		user.visible_message("<span class='notice'>[user] starts to harvest from [src].</span>","<span class='notice'>You begin to harvest from [src].</span>")
 		if(do_after(user, harvest_time, target = src))
 			harvest(user)
 
@@ -211,9 +211,9 @@
 	if(istype(I, /obj/item/reagent_containers/food/snacks))
 		var/obj/item/reagent_containers/food/snacks/S = I
 		if(I.w_class > WEIGHT_CLASS_SMALL)
-			to_chat(user, SPAN_WARNING("The ingredient is too big for [src]!"))
+			to_chat(user, "<span class='warning'>The ingredient is too big for [src]!</span>")
 		else if(contents.len >= 20)
-			to_chat(user, SPAN_WARNING("You can't add more ingredients to [src]!"))
+			to_chat(user, "<span class='warning'>You can't add more ingredients to [src]!</span>")
 		else
 			if(reagents.has_reagent(/datum/reagent/water, 10)) //are we starting a soup or a salad?
 				var/obj/item/reagent_containers/food/snacks/customizable/A = new/obj/item/reagent_containers/food/snacks/customizable/soup/ashsoup(get_turf(src))

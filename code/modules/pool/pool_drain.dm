@@ -98,10 +98,10 @@
 						playsound(src, pick('sound/misc/crack.ogg','sound/misc/crunch.ogg'), 50, TRUE)
 						if(H.lying)			//down for any reason
 							H.adjustBruteLoss(2)
-							to_chat(H, SPAN_DANGER("You're caught in the drain!"))
+							to_chat(H, "<span class='danger'>You're caught in the drain!</span>")
 						else
 							H.apply_damage(2.5, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)) //drain should only target the legs
-							to_chat(H, SPAN_DANGER("Your legs are caught in the drain!"))
+							to_chat(H, "<span class='danger'>Your legs are caught in the drain!</span>")
 		else
 			for(var/turf/open/pool/P in controller.linked_turfs)
 				P.filled = FALSE
@@ -142,7 +142,7 @@
 /obj/machinery/pool/filter/emag_act(mob/living/user)
 	. = ..()
 	if(!(obj_flags & EMAGGED))
-		to_chat(user, SPAN_WARNING("You disable the [src]'s shark filter! Run!"))
+		to_chat(user, "<span class='warning'>You disable the [src]'s shark filter! Run!</span>")
 		obj_flags |= EMAGGED
 		do_sparks(5, TRUE, src)
 		icon_state = "filter_b"

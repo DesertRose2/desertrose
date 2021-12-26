@@ -1,6 +1,6 @@
 /obj/item/export_scanner
 	name = "export scanner"
-	desc = "A device used to check objects against a cargo exports and bounty database. Cannot scan reagent values."
+	desc = "A device used to check objects against Nanotrasen exports and bounty database. Sadly can not scan reagents vaule."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "export_scanner"
 	item_state = "radio"
@@ -14,7 +14,7 @@
 /obj/item/export_scanner/examine(user)
 	. = ..()
 	if(!cargo_console)
-		. += SPAN_NOTICE("[src] is not currently linked to a cargo console.")
+		. += "<span class='notice'>[src] is not currently linked to a cargo console.</span>"
 
 /obj/item/export_scanner/afterattack(obj/O, mob/user, proximity)
 	. = ..()
@@ -25,9 +25,9 @@
 		var/obj/machinery/computer/cargo/C = O
 		if(!C.requestonly)
 			cargo_console = C
-			to_chat(user, SPAN_NOTICE("Scanner linked to [C]."))
+			to_chat(user, "<span class='notice'>Scanner linked to [C].</span>")
 	else if(!istype(cargo_console))
-		to_chat(user, SPAN_WARNING("You must link [src] to a cargo console first!"))
+		to_chat(user, "<span class='warning'>You must link [src] to a cargo console first!</span>")
 	else
 		// Before you fix it:
 		// yes, checking manifests is a part of intended functionality.
@@ -40,8 +40,8 @@
 			price += ex.reagents_value[x]
 
 		if(price)
-			to_chat(user, SPAN_NOTICE("Scanned [O], value: <b>[price]</b> credits[O.contents.len ? " (contents included)" : ""]."))
+			to_chat(user, "<span class='notice'>Scanned [O], value: <b>[price]</b> credits[O.contents.len ? " (contents included)" : ""].</span>")
 		else
-			to_chat(user, SPAN_WARNING("Scanned [O], no export value."))
+			to_chat(user, "<span class='warning'>Scanned [O], no export value.</span>")
 		if(bounty_ship_item_and_contents(O, dry_run=TRUE))
-			to_chat(user, SPAN_NOTICE("Scanned item is eligible for one or more bounties."))
+			to_chat(user, "<span class='notice'>Scanned item is eligible for one or more bounties.</span>")

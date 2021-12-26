@@ -83,7 +83,7 @@
 /mob/living/simple_animal/hostile/poison/bees/examine(mob/user)
 	. = ..()
 	if(!beehome)
-		. += SPAN_WARNING("This bee is homeless!")
+		. += "<span class='warning'>This bee is homeless!</span>"
 
 /mob/living/simple_animal/hostile/poison/bees/proc/generate_bee_visuals()
 	cut_overlays()
@@ -266,21 +266,21 @@
 				if(queen && queen.beegent)
 					qb.queen.assign_reagent(queen.beegent) //Bees use the global singleton instances of reagents, so we don't need to worry about one bee being deleted and her copies losing their reagents.
 				user.put_in_active_hand(qb)
-				user.visible_message(SPAN_NOTICE("[user] injects [src] with royal bee jelly, causing it to split into two bees, MORE BEES!"),SPAN_WARNING("You inject [src] with royal bee jelly, causing it to split into two bees, MORE BEES!"))
+				user.visible_message("<span class='notice'>[user] injects [src] with royal bee jelly, causing it to split into two bees, MORE BEES!</span>","<span class ='warning'>You inject [src] with royal bee jelly, causing it to split into two bees, MORE BEES!</span>")
 			else
-				to_chat(user, SPAN_WARNING("You don't have enough royal bee jelly to split a bee in two!"))
+				to_chat(user, "<span class='warning'>You don't have enough royal bee jelly to split a bee in two!</span>")
 		else
 			var/datum/reagent/R = GLOB.chemical_reagents_list[S.reagents.get_master_reagent_id()]
 			if(R && S.reagents.has_reagent(R.type, 5))
 				S.reagents.remove_reagent(R.type,5)
 				if(R.can_synth)
 					queen.assign_reagent(R)
-					user.visible_message(SPAN_WARNING("[user] injects [src]'s genome with [R.name], mutating it's DNA!"),SPAN_WARNING("You inject [src]'s genome with [R.name], mutating it's DNA!"))
+					user.visible_message("<span class='warning'>[user] injects [src]'s genome with [R.name], mutating it's DNA!</span>","<span class='warning'>You inject [src]'s genome with [R.name], mutating it's DNA!</span>")
 					name = queen.name
 				else
-					user.visible_message(SPAN_WARNING("[user] injects [src]'s genome with [R.name]... but nothing happens."),SPAN_WARNING("You inject [src]'s genome with [R.name]... but nothing happens."))
+					user.visible_message("<span class='warning'>[user] injects [src]'s genome with [R.name]... but nothing happens.</span>","<span class='warning'>You inject [src]'s genome with [R.name]... but nothing happens.</span>")
 			else
-				to_chat(user, SPAN_WARNING("You don't have enough units of that chemical to modify the bee's DNA!"))
+				to_chat(user, "<span class='warning'>You don't have enough units of that chemical to modify the bee's DNA!</span>")
 	..()
 
 

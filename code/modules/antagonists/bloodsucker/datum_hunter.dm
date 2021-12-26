@@ -140,10 +140,10 @@
 	// Found one!
 	if(vamps.len)
 		scan_target = pickweight(vamps) //Point at a 'random' vamp, biasing heavily towards closer ones.
-		to_chat(owner, SPAN_WARNING("You detect signs of monsters to the <b>[dir2text(get_dir(my_loc,get_turf(scan_target)))]!</b>"))
+		to_chat(owner, "<span class='warning'>You detect signs of monsters to the <b>[dir2text(get_dir(my_loc,get_turf(scan_target)))]!</b></span>")
 	// Will yield a "?"
 	else
-		to_chat(owner, SPAN_NOTICE("There are no monsters nearby."))
+		to_chat(owner, "<span class='notice'>There are no monsters nearby.</span>")
 	// Force Point-To Immediately
 	point_to_target()
 
@@ -157,7 +157,7 @@
 
 /datum/status_effect/agent_pinpointer/hunter_edition/Destroy()
 	if (scan_target)
-		to_chat(owner, SPAN_NOTICE("You've lost the trail."))
+		to_chat(owner, "<span class='notice'>You've lost the trail.</span>")
 	..()
 */
 
@@ -180,7 +180,7 @@
 /datum/action/bloodsucker/trackvamp/ActivatePower()
 
 	var/mob/living/user = owner
-	to_chat(user, SPAN_NOTICE("You look around, scanning your environment and discerning signs of any filthy, wretched affronts to the natural order."))
+	to_chat(user, "<span class='notice'>You look around, scanning your environment and discerning signs of any filthy, wretched affronts to the natural order.</span>")
 
 	if (!do_mob(user,owner,80))
 		return
@@ -227,12 +227,12 @@
 	// Found one!
 	if(best_vamp)
 		var/distString = best_dist <= HUNTER_SCAN_MAX_DISTANCE / 2 ? "<b>somewhere closeby!</b>" : "somewhere in the distance."
-		//to_chat(owner, SPAN_WARNING("You detect signs of Bloodsuckers to the <b>[dir2text(get_dir(my_loc,get_turf(targetVamp)))]!</b>"))
-		to_chat(owner, SPAN_WARNING("You detect signs of monsters [distString]"))
+		//to_chat(owner, "<span class='warning'>You detect signs of Bloodsuckers to the <b>[dir2text(get_dir(my_loc,get_turf(targetVamp)))]!</b></span>")
+		to_chat(owner, "<span class='warning'>You detect signs of monsters [distString]</span>")
 
 	// Will yield a "?"
 	else
-		to_chat(owner, SPAN_NOTICE("There are no monsters nearby."))
+		to_chat(owner, "<span class='notice'>There are no monsters nearby.</span>")
 
 
 

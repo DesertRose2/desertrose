@@ -82,7 +82,7 @@
 /obj/item/gun/energy/examine(mob/user)
 	. = ..()
 	if(!right_click_overridden)
-		. += SPAN_NOTICE("Right click in combat mode to switch modes.")
+		. += "<span class='notice'>Right click in combat mode to switch modes.</span>"
 
 /obj/item/gun/energy/process()
 	if(selfcharge && cell?.charge < cell.maxcharge)
@@ -174,7 +174,7 @@
 	fire_sound = C.fire_sound
 	//fire_delay = C.delay
 	if(user_for_feedback)
-		to_chat(user_for_feedback, SPAN_NOTICE("[src] is now set to [C.select_name || C]."))
+		to_chat(user_for_feedback, "<span class='notice'>[src] is now set to [C.select_name || C].</span>")
 	post_set_firemode()
 	update_icon(TRUE)
 
@@ -319,13 +319,13 @@
 		if(!BB)
 			. = ""
 		else if(BB.nodamage || !BB.damage || BB.damage_type == STAMINA)
-			user.visible_message(SPAN_DANGER("[user] tries to light [user.p_their()] [A.name] with [src], but it doesn't do anything. Dumbass."))
+			user.visible_message("<span class='danger'>[user] tries to light [user.p_their()] [A.name] with [src], but it doesn't do anything. Dumbass.</span>")
 			playsound(user, E.fire_sound, 50, 1)
 			playsound(user, BB.hitsound, 50, 1)
 			cell.use(E.e_cost)
 			. = ""
 		else if(BB.damage_type != BURN)
-			user.visible_message(SPAN_DANGER("[user] tries to light [user.p_their()] [A.name] with [src], but only succeeds in utterly destroying it. Dumbass."))
+			user.visible_message("<span class='danger'>[user] tries to light [user.p_their()] [A.name] with [src], but only succeeds in utterly destroying it. Dumbass.</span>")
 			playsound(user, E.fire_sound, 50, 1)
 			playsound(user, BB.hitsound, 50, 1)
 			cell.use(E.e_cost)
@@ -335,7 +335,7 @@
 			playsound(user, E.fire_sound, 50, 1)
 			playsound(user, BB.hitsound, 50, 1)
 			cell.use(E.e_cost)
-			. = SPAN_DANGER("[user] casually lights their [A.name] with [src]. Damn.")
+			. = "<span class='danger'>[user] casually lights their [A.name] with [src]. Damn.</span>"
 
 /obj/item/gun/energy/altafterattack(atom/target, mob/user, proximity_flags, params)
 	if(!right_click_overridden)
@@ -349,17 +349,17 @@
 	if (get_dist(src, user)<2)
 		if(cell)
 			if(can_charge == 0)
-				to_chat(user, SPAN_NOTICE("You can't remove the cell from \the [src]."))
+				to_chat(user, "<span class='notice'>You can't remove the cell from \the [src].</span>")
 				return
 			cell.forceMove(drop_location())
 			user.put_in_hands(cell)
 			cell.update_icon()
 			cell = null
-			to_chat(user, SPAN_NOTICE("You pull the cell out of \the [src]."))
+			to_chat(user, "<span class='notice'>You pull the cell out of \the [src].</span>")
 			playsound(src, 'sound/f13weapons/equipsounds/laserreload.ogg', 50, 1)
 			update_icon()
 		else
-			to_chat(user, SPAN_NOTICE("There's no cell in \the [src]."))
+			to_chat(user, "<span class='notice'>There's no cell in \the [src].</span>")
 		return
 	else 
 		return
@@ -369,17 +369,17 @@
 		return
 	if(cell)
 		if(can_charge == 0)
-			to_chat(user, SPAN_NOTICE("You can't remove the cell from \the [src]."))
+			to_chat(user, "<span class='notice'>You can't remove the cell from \the [src].</span>")
 			return
 		cell.forceMove(drop_location())
 		user.put_in_hands(cell)
 		cell.update_icon()
 		cell = null
-		to_chat(user, SPAN_NOTICE("You pull the cell out of \the [src]."))
+		to_chat(user, "<span class='notice'>You pull the cell out of \the [src].</span>")
 		playsound(src, 'sound/f13weapons/equipsounds/laserreload.ogg', 50, 1)
 		update_icon()
 	else
-		to_chat(user, SPAN_NOTICE("There's no cell in \the [src]."))
+		to_chat(user, "<span class='notice'>There's no cell in \the [src].</span>")
 	return
 
 
@@ -390,15 +390,15 @@
 		if (!cell && istype(AM, cell_type))
 			if(user.transferItemToLoc(AM, src))
 				cell = AM
-				to_chat(user, SPAN_NOTICE("You load a new cell into \the [src]."))
+				to_chat(user, "<span class='notice'>You load a new cell into \the [src].</span>")
 				A.update_icon()
 				update_icon()
 				return 1
 			else
-				to_chat(user, SPAN_WARNING("You cannot seem to get \the [src] out of your hands!"))
+				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
 				return
 		//else if (cell)
-			//to_chat(user, SPAN_NOTICE("There's already a cell in \the [src]."))
+			//to_chat(user, "<span class='notice'>There's already a cell in \the [src].</span>")
 
 /obj/item/gun/energy/examine(mob/user)
 	. = ..()

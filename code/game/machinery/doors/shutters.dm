@@ -49,7 +49,7 @@
 
 /obj/machinery/door/poddoor/shutters/radiation
 	name = "radiation shutters"
-	desc = "Lead-lined shutters painted yellow with a radioactive hazard symbol on it. Blocks out most radiation."
+	desc = "Lead-lined shutters painted yellow with a radioactive hazard symbol on it. Blocks out most radiation"
 	icon = 'icons/obj/doors/shutters_radiation.dmi'
 	icon_state = "closed"
 	rad_insulation = 0.2

@@ -73,7 +73,7 @@
 			web_sound_input = trim(web_sound_input)
 			if(findtext(web_sound_input, ":") && !findtext(web_sound_input, GLOB.is_http_protocol))
 				to_chat(src, "<span class='boldwarning'>Non-http(s) URIs are not allowed.</span>")
-				to_chat(src, SPAN_WARNING("For youtube-dl shortcuts like ytsearch: please use the appropriate full url from the website."))
+				to_chat(src, "<span class='warning'>For youtube-dl shortcuts like ytsearch: please use the appropriate full url from the website.</span>")
 				return
 			var/shell_scrubbed_input = shell_url_scrub(web_sound_input)
 			var/list/output = world.shelleo("[ytdl] --format \"bestaudio\[ext=mp3]/best\[ext=mp4]\[height<=360]/bestaudio\[ext=m4a]/bestaudio\[ext=aac]\" --dump-single-json --no-playlist -- \"[shell_scrubbed_input]\"")
@@ -86,7 +86,7 @@
 					data = json_decode(stdout)
 				catch(var/exception/e)
 					to_chat(src, "<span class='boldwarning'>Youtube-dl JSON parsing FAILED:</span>")
-					to_chat(src, SPAN_WARNING("[e]: [stdout]"))
+					to_chat(src, "<span class='warning'>[e]: [stdout]</span>")
 					return
 
 				if (data["url"])
@@ -111,7 +111,7 @@
 					message_admins("[key_name(src)] played web sound: [web_sound_input]")
 			else
 				to_chat(src, "<span class='boldwarning'>Youtube-dl URL retrieval FAILED:</span>")
-				to_chat(src, SPAN_WARNING("[stderr]"))
+				to_chat(src, "<span class='warning'>[stderr]</span>")
 
 		else //pressed ok with blank
 			log_admin("[key_name(src)] stopped web sound")
@@ -121,7 +121,7 @@
 
 		if(web_sound_url && !findtext(web_sound_url, GLOB.is_http_protocol))
 			to_chat(src, "<span class='boldwarning'>BLOCKED: Content URL not using http(s) protocol</span>")
-			to_chat(src, SPAN_WARNING("The media provider returned a content URL that isn't using the HTTP or HTTPS protocol"))
+			to_chat(src, "<span class='warning'>The media provider returned a content URL that isn't using the HTTP or HTTPS protocol</span>")
 			return
 		if(web_sound_url || stop_web_sounds)
 			for(var/m in GLOB.player_list)
@@ -162,7 +162,7 @@
 		var/title = "[explode[explode.len]]"
 
 		if(!findtext(title, ".mp3") && !findtext(title, ".mp4")) // IE sucks.
-			to_chat(src, SPAN_WARNING("The format is not .mp3/.mp4, IE 8 and above can only support the .mp3/.mp4 format, the music might not play."), confidential = TRUE)
+			to_chat(src, "<span class='warning'>The format is not .mp3/.mp4, IE 8 and above can only support the .mp3/.mp4 format, the music might not play.</span>", confidential = TRUE)
 
 		if(length(title) > 50) //kev no.
 			title = "Unknown.mp3"

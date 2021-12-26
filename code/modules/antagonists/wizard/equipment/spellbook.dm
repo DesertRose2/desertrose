@@ -39,7 +39,7 @@
 	for(var/obj/effect/proc_holder/spell/aspell in user.mind.spell_list)
 		if(initial(S.name) == initial(aspell.name)) // Not using directly in case it was learned from one spellbook then upgraded in another
 			if(aspell.spell_level >= aspell.level_max)
-				to_chat(user,  SPAN_WARNING("This spell cannot be improved further."))
+				to_chat(user,  "<span class='warning'>This spell cannot be improved further.</span>")
 				return 0
 			else
 				aspell.name = initial(aspell.name)
@@ -49,25 +49,25 @@
 					aspell.charge_counter = aspell.charge_max
 				switch(aspell.spell_level)
 					if(1)
-						to_chat(user, SPAN_NOTICE("You have improved [aspell.name] into Efficient [aspell.name]."))
+						to_chat(user, "<span class='notice'>You have improved [aspell.name] into Efficient [aspell.name].</span>")
 						aspell.name = "Efficient [aspell.name]"
 					if(2)
-						to_chat(user, SPAN_NOTICE("You have further improved [aspell.name] into Quickened [aspell.name]."))
+						to_chat(user, "<span class='notice'>You have further improved [aspell.name] into Quickened [aspell.name].</span>")
 						aspell.name = "Quickened [aspell.name]"
 					if(3)
-						to_chat(user, SPAN_NOTICE("You have further improved [aspell.name] into Free [aspell.name]."))
+						to_chat(user, "<span class='notice'>You have further improved [aspell.name] into Free [aspell.name].</span>")
 						aspell.name = "Free [aspell.name]"
 					if(4)
-						to_chat(user, SPAN_NOTICE("You have further improved [aspell.name] into Instant [aspell.name]."))
+						to_chat(user, "<span class='notice'>You have further improved [aspell.name] into Instant [aspell.name].</span>")
 						aspell.name = "Instant [aspell.name]"
 				if(aspell.spell_level >= aspell.level_max)
-					to_chat(user, SPAN_NOTICE("This spell cannot be strengthened any further."))
+					to_chat(user, "<span class='notice'>This spell cannot be strengthened any further.</span>")
 				SSblackbox.record_feedback("nested tally", "wizard_spell_improved", 1, list("[name]", "[aspell.spell_level]"))
 				return 1
 	//No same spell found - just learn it
 	SSblackbox.record_feedback("tally", "wizard_spell_learned", 1, name)
 	user.mind.AddSpell(S)
-	to_chat(user, SPAN_NOTICE("You have learned [S.name]."))
+	to_chat(user, "<span class='notice'>You have learned [S.name].</span>")
 	return 1
 
 /datum/spellbook_entry/proc/CanRefund(mob/living/carbon/human/user,obj/item/spellbook/book)
@@ -82,8 +82,8 @@
 
 /datum/spellbook_entry/proc/Refund(mob/living/carbon/human/user,obj/item/spellbook/book) //return point value or -1 for failure
 	var/area/wizard_station/A = GLOB.areas_by_type[/area/wizard_station]
-	if(!(get_area(user) != A))
-		to_chat(user, SPAN_WARNING("You can only refund spells at the wizard lair."))
+	if(!(user in A.contents))
+		to_chat(user, "<span class='warning'>You can only refund spells at the wizard lair</span>")
 		return -1
 	if(!S)
 		S = new spell_type()
@@ -500,7 +500,7 @@
 	SSblackbox.record_feedback("tally", "wizard_spell_learned", 1, name)
 	new /datum/round_event/wizard/ghost()
 	active = TRUE
-	to_chat(user, SPAN_NOTICE("You have cast summon ghosts!"))
+	to_chat(user, "<span class='notice'>You have cast summon ghosts!</span>")
 	playsound(get_turf(user), 'sound/effects/ghost2.ogg', 50, 1)
 	return TRUE
 
@@ -520,7 +520,7 @@
 	rightandwrong(SUMMON_GUNS, user, 25)
 	active = 1
 	playsound(get_turf(user), 'sound/magic/castsummon.ogg', 50, 1)
-	to_chat(user, SPAN_NOTICE("You have cast summon guns!"))
+	to_chat(user, "<span class='notice'>You have cast summon guns!</span>")
 	return 1
 
 /datum/spellbook_entry/summon/magic
@@ -539,7 +539,7 @@
 	rightandwrong(SUMMON_MAGIC, user, 25)
 	active = 1
 	playsound(get_turf(user), 'sound/magic/castsummon.ogg', 50, 1)
-	to_chat(user, SPAN_NOTICE("You have cast summon magic!"))
+	to_chat(user, "<span class='notice'>You have cast summon magic!</span>")
 	return 1
 
 /datum/spellbook_entry/summon/events
@@ -558,7 +558,7 @@
 	summonevents()
 	times++
 	playsound(get_turf(user), 'sound/magic/castsummon.ogg', 50, 1)
-	to_chat(user, SPAN_NOTICE("You have cast summon events."))
+	to_chat(user, "<span class='notice'>You have cast summon events.</span>")
 	return 1
 
 /datum/spellbook_entry/summon/events/GetInfo()
@@ -579,7 +579,7 @@
 	if(!message)
 		return FALSE
 	curse_of_madness(user, message)
-	to_chat(user, SPAN_NOTICE("You have cast the curse of insanity!"))
+	to_chat(user, "<span class='notice'>You have cast the curse of insanity!</span>")
 	playsound(user, 'sound/magic/mandswap.ogg', 50, 1)
 	return TRUE
 
@@ -629,16 +629,16 @@
 	if(istype(O, /obj/item/antag_spawner/contract))
 		var/obj/item/antag_spawner/contract/contract = O
 		if(contract.used)
-			to_chat(user, SPAN_WARNING("The contract has been used, you can't get your points back now!"))
+			to_chat(user, "<span class='warning'>The contract has been used, you can't get your points back now!</span>")
 		else
-			to_chat(user, SPAN_NOTICE("You feed the contract back into the spellbook, refunding your points."))
+			to_chat(user, "<span class='notice'>You feed the contract back into the spellbook, refunding your points.</span>")
 			uses++
 			for(var/datum/spellbook_entry/item/contract/CT in entries)
 				if(!isnull(CT.limit))
 					CT.limit++
 			qdel(O)
 	else if(istype(O, /obj/item/antag_spawner/slaughter_demon))
-		to_chat(user, SPAN_NOTICE("On second thought, maybe summoning a demon is a bad idea. You refund your points."))
+		to_chat(user, "<span class='notice'>On second thought, maybe summoning a demon is a bad idea. You refund your points.</span>")
 		uses++
 		for(var/datum/spellbook_entry/item/bloodbottle/BB in entries)
 			if(!isnull(BB.limit))
@@ -697,11 +697,11 @@
 
 /obj/item/spellbook/attack_self(mob/user)
 	if(!owner)
-		to_chat(user, SPAN_NOTICE("You bind the spellbook to yourself."))
+		to_chat(user, "<span class='notice'>You bind the spellbook to yourself.</span>")
 		owner = user
 		return
 	if(user != owner)
-		to_chat(user, SPAN_WARNING("The [name] does not recognize you as its owner and refuses to open!"))
+		to_chat(user, "<span class='warning'>The [name] does not recognize you as its owner and refuses to open!</span>")
 		return
 	user.set_machine(src)
 	var/dat = ""

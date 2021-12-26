@@ -43,7 +43,7 @@
 			src.recoil += 0.1
 			src.automatic_burst_overlay = TRUE
 			src.semi_auto = FALSE
-			to_chat(user, SPAN_NOTICE("You attach \the [A] to \the [src]."))
+			to_chat(user, "<span class='notice'>You attach \the [A] to \the [src].</span>")
 			update_icon()
 	else
 		return ..()
@@ -70,11 +70,11 @@
 			if(user.transferItemToLoc(AM, src))
 				magazine = AM
 				if(oldmag)
-					to_chat(user, SPAN_NOTICE("You perform a tactical reload on \the [src], replacing the magazine."))
+					to_chat(user, "<span class='notice'>You perform a tactical reload on \the [src], replacing the magazine.</span>")
 					oldmag.forceMove(get_turf(src.loc))
 					oldmag.update_icon()
 				else
-					to_chat(user, SPAN_NOTICE("You insert the magazine into \the [src]."))
+					to_chat(user, "<span class='notice'>You insert the magazine into \the [src].</span>")
 
 				playsound(user, 'sound/weapons/autoguninsert.ogg', 60, 1)
 				chamber_round()
@@ -82,7 +82,7 @@
 				update_icon()
 				return 1
 			else
-				to_chat(user, SPAN_WARNING("You cannot seem to get \the [src] out of your hands!"))
+				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
 
 /obj/item/gun/ballistic/automatic/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_firemode))
@@ -93,16 +93,16 @@
 /obj/item/gun/ballistic/automatic/proc/burst_select()
 	var/mob/living/carbon/human/user = usr
 	if(semi_auto)
-		to_chat(user, SPAN_NOTICE("This weapon is semi-automatic only."))
+		to_chat(user, "<span class = 'notice'>This weapon is semi-automatic only.</span>")
 		return
 	else
 		select = !select
 		if(!select)
 			disable_burst()
-			to_chat(user, SPAN_NOTICE("You switch to semi-automatic."))
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 		else
 			enable_burst()
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 		update_icon()
 	for(var/X in actions)
@@ -137,7 +137,7 @@
 		magazine.dropped()
 		user.visible_message(
 			"[magazine] falls out and clatters on the floor!",
-			SPAN_NOTICE("[magazine] falls out and clatters on the floor!")
+			"<span class='notice'>[magazine] falls out and clatters on the floor!</span>"
 		)
 		if(auto_eject_sound)
 			playsound(user, auto_eject_sound, 40, 1)
@@ -220,7 +220,7 @@
 			fire_delay += 1
 			recoil = 0.1
 			extra_damage = -1
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
@@ -228,7 +228,7 @@
 			fire_delay += 1
 			recoil = 0.25
 			extra_damage = -2
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -266,13 +266,13 @@
 			spread += 11
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, SPAN_NOTICE("You switch to semi-auto."))
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -328,14 +328,14 @@
 			fire_delay += 3.75
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			fire_delay -= 3.75
 			spread = 2
 			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, SPAN_NOTICE("You switch to semi-auto."))
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -367,14 +367,14 @@
 			spread += 7
 			recoil = 0.25
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			recoil = 0.1
 			extra_damage = 3
 			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, SPAN_NOTICE("You switch to semi-auto."))
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -411,14 +411,14 @@
 			fire_delay += 1
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			fire_delay = 2
 			spread = 0
 			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, SPAN_NOTICE("You switch to semi-auto."))
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -451,7 +451,7 @@
 			recoil = 0.3
 			extra_damage = 2
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire in short bursts."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire in short bursts.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
@@ -460,7 +460,7 @@
 			recoil = 0.5
 			extra_damage = 0
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire in long bursts.."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire in long bursts..</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -530,7 +530,7 @@
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Alt-click to toggle the stock.")
+	. += "<span class='notice'>Alt-click to toggle the stock.</span>"
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/proc/toggle_stock(mob/living/user)
 	stock = !stock
@@ -1104,7 +1104,7 @@
 			spread = 4
 			fire_delay = 5
 			recoil = 0.2
-			to_chat(user, SPAN_NOTICE("You switch to automatic fire."))
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
@@ -1112,7 +1112,7 @@
 			spread = 0
 			fire_delay = 4
 			recoil= 0.1
-			to_chat(user, SPAN_NOTICE("You switch to semi-auto."))
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -1147,13 +1147,13 @@
 			burst_size = 3
 			spread = 20
 			recoil = 0.25
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 34
 			recoil = 0.5
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -1192,14 +1192,14 @@
 			spread = 15
 			extra_damage = -1
 			recoil = 0.25
-			to_chat(user, SPAN_NOTICE("You switch to firing in small bursts."))
+			to_chat(user, "<span class='notice'>You switch to firing in small bursts.</span>")
 		if(1)
 			select = 0
 			burst_size = 3
 			spread = 20
 			extra_damage = -2
 			recoil = 0.5
-			to_chat(user, SPAN_NOTICE("You switch to full auto."))
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -1233,14 +1233,14 @@
 			spread = 6
 			extra_damage = 0
 			recoil = 0.25
-			to_chat(user, SPAN_NOTICE("You switch to firing in small-bursts."))
+			to_chat(user, "<span class='notice'>You switch to firing in small-bursts.</span>")
 		if(1)
 			select += 1
 			burst_size = 3
 			spread = 10
 			extra_damage = -1
 			recoil = 0.5
-			to_chat(user, SPAN_NOTICE("You switch to full auto."))
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -1274,11 +1274,11 @@
 /obj/item/gun/ballistic/automatic/m2a1/examine(mob/user)
 	. = ..()
 	if(cover_open && magazine)
-		. += SPAN_NOTICE("It seems like you could use an <b>empty hand</b> to remove the magazine.")
+		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
 
 /obj/item/gun/ballistic/automatic/m2a1/attack_self(mob/user)
 	cover_open = !cover_open
-	to_chat(user, SPAN_NOTICE("You [cover_open ? "open" : "close"] [src]'s cover."))
+	to_chat(user, "<span class='notice'>You [cover_open ? "open" : "close"] [src]'s cover.</span>")
 	if(cover_open)
 		playsound(user, 'sound/weapons/sawopen.ogg', 60, 1)
 	else
@@ -1287,7 +1287,7 @@
 
 /obj/item/gun/ballistic/automatic/m2a1/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
 	if(cover_open)
-		to_chat(user, SPAN_WARNING("[src]'s cover is open! Close it before firing!"))
+		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
 	else
 		. = ..()
 		update_icon()
@@ -1305,12 +1305,12 @@
 		user.put_in_hands(magazine)
 		magazine = null
 		update_icon()
-		to_chat(user, SPAN_NOTICE("You remove the magazine from [src]."))
+		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
 		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
 
 /obj/item/gun/ballistic/automatic/m2a1/attackby(obj/item/A, mob/user, params)
 	if(!cover_open && istype(A, mag_type))
-		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't insert a new mag."))
+		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
 		return
 	..()
 
@@ -1323,14 +1323,14 @@
 			spread = 40
 			extra_damage = -5
 			recoil = 0.5
-			to_chat(user, SPAN_NOTICE("You switch to burst fire."))
+			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 60
 			extra_damage = -10
 			recoil = 1
-			to_chat(user, SPAN_NOTICE("You switch to full auto."))
+			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return

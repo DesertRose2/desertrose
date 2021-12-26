@@ -49,9 +49,9 @@
 	M.buckling = src
 	if(!M.can_buckle() && !force)
 		if(M == usr)
-			to_chat(M, SPAN_WARNING("You are unable to buckle yourself to [src]!"))
+			to_chat(M, "<span class='warning'>You are unable to buckle yourself to [src]!</span>")
 		else
-			to_chat(usr, SPAN_WARNING("You are unable to buckle [M] to [src]!"))
+			to_chat(usr, "<span class='warning'>You are unable to buckle [M] to [src]!</span>")
 		M.buckling = null
 		return FALSE
 
@@ -120,13 +120,13 @@
 	if(.)
 		if(M == user)
 			M.visible_message(\
-				SPAN_NOTICE("[M] buckles [M.p_them()]self to [src]."),\
-				SPAN_NOTICE("You buckle yourself to [src]."),\
+				"<span class='notice'>[M] buckles [M.p_them()]self to [src].</span>",\
+				"<span class='notice'>You buckle yourself to [src].</span>",\
 				"<span class='italics'>You hear metal clanking.</span>")
 		else
 			M.visible_message(\
-				SPAN_WARNING("[user] buckles [M] to [src]!"),\
-				SPAN_WARNING("[user] buckles you to [src]!"),\
+				"<span class='warning'>[user] buckles [M] to [src]!</span>",\
+				"<span class='warning'>[user] buckles you to [src]!</span>",\
 				"<span class='italics'>You hear metal clanking.</span>")
 
 /atom/movable/proc/user_unbuckle_mob(mob/living/buckled_mob, mob/user)
@@ -135,13 +135,13 @@
 		return
 	if(M != user)
 		M.visible_message(\
-			SPAN_NOTICE("[user] unbuckles [M] from [src]."),\
-			SPAN_NOTICE("[user] unbuckles you from [src]."),\
+			"<span class='notice'>[user] unbuckles [M] from [src].</span>",\
+			"<span class='notice'>[user] unbuckles you from [src].</span>",\
 			"<span class='italics'>You hear metal clanking.</span>")
 	else
 		M.visible_message(\
-			SPAN_NOTICE("[M] unbuckles [M.p_them()]self from [src]."),\
-			SPAN_NOTICE("You unbuckle yourself from [src]."),\
+			"<span class='notice'>[M] unbuckles [M.p_them()]self from [src].</span>",\
+			"<span class='notice'>You unbuckle yourself from [src].</span>",\
 			"<span class='italics'>You hear metal clanking.</span>")
 	add_fingerprint(user)
 	if(isliving(M.pulledby))

@@ -60,11 +60,11 @@
 	playsound(loc, "punch", 25, 1, -1)
 
 	if(M.stat == DEAD)
-		M.visible_message(SPAN_DANGER("[user] smacks [M]'s lifeless corpse with [src]."), "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='italics'>You hear smacking.</span>")
+		M.visible_message("<span class='danger'>[user] smacks [M]'s lifeless corpse with [src].</span>", "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='italics'>You hear smacking.</span>")
 	else if(M.has_language(/datum/language/codespeak))
-		M.visible_message(SPAN_DANGER("[user] beats [M] over the head with [src]!"), "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='italics'>You hear smacking.</span>")
+		M.visible_message("<span class='danger'>[user] beats [M] over the head with [src]!</span>", "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='italics'>You hear smacking.</span>")
 	else
-		M.visible_message(SPAN_NOTICE("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), "<span class='boldnotice'>As [user] hits you with [src], codewords and responses flow through your mind.</span>", "<span class='italics'>You hear smacking.</span>")
+		M.visible_message("<span class='notice'>[user] teaches [M] by beating [M.p_them()] over the head with [src]!</span>", "<span class='boldnotice'>As [user] hits you with [src], codewords and responses flow through your mind.</span>", "<span class='italics'>You hear smacking.</span>")
 		M.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 		use_charge(user)
 
@@ -72,7 +72,7 @@
 	charges--
 	if(!charges)
 		var/turf/T = get_turf(src)
-		T.visible_message(SPAN_WARNING("The cover and contents of [src] start shifting and changing!"))
+		T.visible_message("<span class='warning'>The cover and contents of [src] start shifting and changing!</span>")
 
 		qdel(src)
 		var/obj/item/book/manual/random/book = new(T)

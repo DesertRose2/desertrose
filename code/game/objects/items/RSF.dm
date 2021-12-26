@@ -21,7 +21,7 @@ RSF
 
 /obj/item/rsf/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("It currently holds [matter]/30 fabrication-units.")
+	. += "<span class='notice'>It currently holds [matter]/30 fabrication-units.</span>"
 
 /obj/item/rsf/cyborg
 	matter = 30
@@ -69,10 +69,10 @@ RSF
 		matter = 30 //borgs dont actually use the matter so this is mostly just so it doesnt fail the next check incase of shennanigans
 		var/mob/living/silicon/robot/R = user
 		if(!R.cell || R.cell.charge < 200)
-			to_chat(user, SPAN_WARNING("You do not have enough power to use [src]."))
+			to_chat(user, "<span class='warning'>You do not have enough power to use [src].</span>")
 			return
 	if(matter < 1)
-		to_chat(user, SPAN_WARNING("\The [src] doesn't have enough matter left."))
+		to_chat(user, "<span class='warning'>\The [src] doesn't have enough matter left.</span>")
 		return
 
 
@@ -123,7 +123,7 @@ RSF
 
 /obj/item/cookiesynth/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("It currently holds [matter]/10 cookie-units.")
+	. += "<span class='notice'>It currently holds [matter]/10 cookie-units.</span>"
 
 /obj/item/cookiesynth/attackby()
 	return
@@ -132,9 +132,9 @@ RSF
 	. = ..()
 	obj_flags ^= EMAGGED
 	if(obj_flags & EMAGGED)
-		to_chat(user, SPAN_WARNING("You short out [src]'s reagent safety checker!"))
+		to_chat(user, "<span class='warning'>You short out [src]'s reagent safety checker!</span>")
 	else
-		to_chat(user, SPAN_WARNING("You reset [src]'s reagent safety checker!"))
+		to_chat(user, "<span class='warning'>You reset [src]'s reagent safety checker!</span>")
 		toxin = FALSE
 	return TRUE
 
@@ -165,12 +165,12 @@ RSF
 	if (!(istype(A, /obj/structure/table) || isfloorturf(A)))
 		return
 	if(matter < 1)
-		to_chat(user, SPAN_WARNING("[src] doesn't have enough matter left. Wait for it to recharge!"))
+		to_chat(user, "<span class='warning'>[src] doesn't have enough matter left. Wait for it to recharge!</span>")
 		return
 	if(iscyborg(user))
 		var/mob/living/silicon/robot/R = user
 		if(!R.cell || R.cell.charge < 400)
-			to_chat(user, SPAN_WARNING("You do not have enough power to use [src]."))
+			to_chat(user, "<span class='warning'>You do not have enough power to use [src].</span>")
 			return
 	var/turf/T = get_turf(A)
 	playsound(src.loc, 'sound/machines/click.ogg', 10, 1)

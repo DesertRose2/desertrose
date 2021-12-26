@@ -33,7 +33,7 @@
 	if(strikes_to_lose_limb == 0)
 		///victim.adjustToxLoss(0.5) Toxin damage shouldn't happen only on septic limbs that are completely dead.
 		if(prob(1))
-			victim.visible_message(SPAN_DANGER("The infection on the remnants of [victim]'s [limb.name] shift and bubble nauseatingly!"), SPAN_WARNING("You can feel the infection on the remnants of your [limb.name] coursing through your veins!"))
+			victim.visible_message("<span class='danger'>The infection on the remnants of [victim]'s [limb.name] shift and bubble nauseatingly!</span>", "<span class='warning'>You can feel the infection on the remnants of your [limb.name] coursing through your veins!</span>")
 		return
 
 	if(victim.reagents)
@@ -74,25 +74,25 @@
 			if(prob(30))
 				victim.adjustToxLoss(0.2)
 				if(prob(6))
-					to_chat(victim, SPAN_WARNING("The blisters on your [limb.name] ooze a strange pus..."))
+					to_chat(victim, "<span class='warning'>The blisters on your [limb.name] ooze a strange pus...</span>")
 		if(WOUND_INFECTION_SEVERE to WOUND_INFECTION_CRITICAL)
 			if(!disabling && prob(2))
-				to_chat(victim, SPAN_WARNING("<b>Your [limb.name] completely locks up, as you struggle for control against the infection!</b>"))
+				to_chat(victim, "<span class='warning'><b>Your [limb.name] completely locks up, as you struggle for control against the infection!</b></span>")
 				disabling = TRUE
 			else if(disabling && prob(8))
-				to_chat(victim, SPAN_NOTICE("You regain sensation in your [limb.name], but it's still in terrible shape!"))
+				to_chat(victim, "<span class='notice'>You regain sensation in your [limb.name], but it's still in terrible shape!</span>")
 				disabling = FALSE
 			else if(prob(20))
 				victim.adjustToxLoss(0.5)
 		if(WOUND_INFECTION_CRITICAL to WOUND_INFECTION_SEPTIC)
 			if(!disabling && prob(3))
-				to_chat(victim, SPAN_WARNING("<b>You suddenly lose all sensation of the festering infection in your [limb.name]!</b>"))
+				to_chat(victim, "<span class='warning'><b>You suddenly lose all sensation of the festering infection in your [limb.name]!</b></span>")
 				disabling = TRUE
 			else if(disabling && prob(3))
-				to_chat(victim, SPAN_NOTICE("You can barely feel your [limb.name] again, and you have to strain to retain motor control!"))
+				to_chat(victim, "<span class='notice'>You can barely feel your [limb.name] again, and you have to strain to retain motor control!</span>")
 				disabling = FALSE
 			else if(prob(1))
-				to_chat(victim, SPAN_WARNING("You contemplate life without your [limb.name]..."))
+				to_chat(victim, "<span class='warning'>You contemplate life without your [limb.name]...</span>")
 				victim.adjustToxLoss(0.75)
 			else if(prob(4))
 				victim.adjustToxLoss(1)
@@ -183,7 +183,7 @@
 
 /// if someone is using ointment on our burns
 /datum/wound/burn/proc/ointment(obj/item/stack/medical/ointment/I, mob/user)
-	user.visible_message(SPAN_NOTICE("[user] begins applying [I] to [victim]'s [limb.name]..."), SPAN_NOTICE("You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]..."))
+	user.visible_message("<span class='notice'>[user] begins applying [I] to [victim]'s [limb.name]...</span>", "<span class='notice'>You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]...</span>")
 	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
@@ -194,13 +194,13 @@
 	flesh_healing += I.flesh_regeneration
 
 	if((infestation <= 0 || sanitization >= infestation) && (flesh_damage <= 0 || flesh_healing > flesh_damage))
-		to_chat(user, SPAN_NOTICE("You've done all you can with [I], now you must wait for the flesh on [victim]'s [limb.name] to recover."))
+		to_chat(user, "<span class='notice'>You've done all you can with [I], now you must wait for the flesh on [victim]'s [limb.name] to recover.</span>")
 	else
 		try_treating(I, user)
 
 /// if someone is using mesh on our burns
 /datum/wound/burn/proc/mesh(obj/item/stack/medical/mesh/I, mob/user)
-	user.visible_message(SPAN_NOTICE("[user] begins wrapping [victim]'s [limb.name] with [I]..."), SPAN_NOTICE("You begin wrapping [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
+	user.visible_message("<span class='notice'>[user] begins wrapping [victim]'s [limb.name] with [I]...</span>", "<span class='notice'>You begin wrapping [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]...</span>")
 	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), target=victim, extra_checks = CALLBACK(src, .proc/still_exists)))
 		return
 
@@ -211,20 +211,20 @@
 	flesh_healing += I.flesh_regeneration
 
 	if(sanitization >= infestation && flesh_healing > flesh_damage)
-		to_chat(user, SPAN_NOTICE("You've done all you can with [I], now you must wait for the flesh on [victim]'s [limb.name] to recover."))
+		to_chat(user, "<span class='notice'>You've done all you can with [I], now you must wait for the flesh on [victim]'s [limb.name] to recover.</span>")
 	else
 		try_treating(I, user)
 
 /// Paramedic UV penlights
 /datum/wound/burn/proc/uv(obj/item/flashlight/pen/paramedic/I, mob/user)
 	if(!COOLDOWN_FINISHED(I, uv_cooldown))
-		to_chat(user, SPAN_NOTICE("[I] is still recharging!"))
+		to_chat(user, "<span class='notice'>[I] is still recharging!</span>")
 		return
 	if(infestation <= 0 || infestation < sanitization)
-		to_chat(user, SPAN_NOTICE("There's no infection to treat on [victim]'s [limb.name]!"))
+		to_chat(user, "<span class='notice'>There's no infection to treat on [victim]'s [limb.name]!</span>")
 		return
 
-	user.visible_message(SPAN_NOTICE("[user] flashes the burns on [victim]'s [limb] with [I]."), SPAN_NOTICE("You flash the burns on [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]."), vision_distance=COMBAT_MESSAGE_RANGE)
+	user.visible_message("<span class='notice'>[user] flashes the burns on [victim]'s [limb] with [I].</span>", "<span class='notice'>You flash the burns on [user == victim ? "your" : "[victim]'s"] [limb.name] with [I].</span>", vision_distance=COMBAT_MESSAGE_RANGE)
 	sanitization += I.uv_power
 	COOLDOWN_START(I, uv_cooldown, I.uv_cooldown_length)
 

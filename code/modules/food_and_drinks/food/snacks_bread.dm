@@ -108,7 +108,7 @@
 	foodtype = GRAIN | FRUIT
 
 /obj/item/reagent_containers/food/snacks/store/bread/tofu
-	name = "tofubread"
+	name = "Tofubread"
 	desc = "Like meatbread but for vegetarians. Not guaranteed to give superpowers."
 	icon_state = "tofubread"
 	slice_path = /obj/item/reagent_containers/food/snacks/breadslice/tofu
@@ -166,23 +166,6 @@
 	icon_state = "tofubreadslice"
 	filling_color = "#FFFFFF"
 	foodtype = GRAIN
-
-/obj/item/reagent_containers/food/snacks/store/bread/corn
-	name = "cornbread"
-	desc = "Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread."
-	icon_state = "cornbread"
-	slice_path = /obj/item/reagent_containers/food/snacks/breadslice/corn
-	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
-	tastes = list("cornbread" = 10)
-	foodtype = GRAIN
-	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/reagent_containers/food/snacks/breadslice/corn
-	name = "cornbread slice"
-	desc = "A chunk of crispy, cowboy-style cornbread. Consume contentedly."
-	icon_state = "cornbread_slice"
-	foodtype = GRAIN
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
 
 /obj/item/reagent_containers/food/snacks/baguette
 	name = "baguette"

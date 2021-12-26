@@ -31,7 +31,7 @@
 		return
 	. = TRUE
 	if(user.incapacitated() || !istype(user))
-		to_chat(user, SPAN_WARNING("You can't do that right now!"))
+		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
 		return
 	if(alert("Are you sure you want to repaint your gun?", "Confirm Repaint", "Yes", "No") == "Yes")
 		var/body_color_input = input(usr,"","Choose Body Color",body_color) as color|null

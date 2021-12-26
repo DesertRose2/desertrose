@@ -469,19 +469,3 @@
 //Natalia Morgan - panzer1944
 /obj/item/storage/box/large/custom_kit/nataliamorgan/PopulateContents()
 	new /obj/item/clothing/under/f13/legskirt/tac(src)
-
-//Dahlia Lynee Vega - Pisshole
-/obj/item/storage/box/large/custom_kit/dahliavega/PopulateContents()
-	new /obj/item/storage/belt/holster/ncrcf_w(src)
-	new /obj/item/clothing/head/beret/tina_beret(src)
-
-//Lorraine Clarke - Pisshole
-/obj/item/storage/box/large/custom_kit/lorraineclarke/PopulateContents()
-	new /obj/item/clothing/under/f13/ncr/ncr_dress/skirt(src)
-	new /obj/item/clothing/suit/toggle/labcoat/depjacket/sup(src)
-	new /obj/item/clothing/head/flight(src)
-	new /obj/item/clothing/ears/headphones(src)
-
-//Joseph Riley - kooarbiter
-/obj/item/storage/box/large/custom_kit/josephriley/PopulateContents()
-	new /obj/item/clothing/suit/toggle/chef(src)

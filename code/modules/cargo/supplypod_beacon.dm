@@ -47,9 +47,9 @@
 /obj/item/supplypod_beacon/examine(user)
 	. = ..()
 	if(!express_console)
-		. += SPAN_NOTICE("[src] is not currently linked to a Express Supply console.")
+		. += "<span class='notice'>[src] is not currently linked to a Express Supply console.</span>"
 	else
-		. += SPAN_NOTICE("Alt-click to unlink it from the Express Supply console.")
+		. += "<span class='notice'>Alt-click to unlink it from the Express Supply console.</span>"
 
 /obj/item/supplypod_beacon/Destroy()
 	if(express_console)
@@ -73,7 +73,7 @@
 	update_status(SP_LINKED)
 	if (express_console.usingBeacon)
 		update_status(SP_READY)
-	to_chat(user, SPAN_NOTICE("[src] linked to [C]."))
+	to_chat(user, "<span class='notice'>[src] linked to [C].</span>")
 
 /obj/item/supplypod_beacon/AltClick(mob/user)
 	. = ..()
@@ -82,7 +82,7 @@
 	if (express_console)
 		unlink_console()
 	else
-		to_chat(user, SPAN_NOTICE("There is no linked console!"))
+		to_chat(user, "<span class='notice'>There is no linked console!</span>")
 	return TRUE
 
 /obj/item/supplypod_beacon/attackby(obj/item/W, mob/user)

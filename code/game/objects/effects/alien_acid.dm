@@ -76,17 +76,17 @@
 			playsound(loc, 'sound/items/welder.ogg', 100, 1)
 		target_strength--
 		if(target_strength <= 0)
-			target.visible_message(SPAN_WARNING("[target] collapses under its own weight into a puddle of goop and undigested debris!"))
+			target.visible_message("<span class='warning'>[target] collapses under its own weight into a puddle of goop and undigested debris!</span>")
 			target.acid_melt()
 			qdel(src)
 		else
 
 			switch(target_strength)
 				if(24)
-					visible_message(SPAN_WARNING("[target] is holding up against the acid!"))
+					visible_message("<span class='warning'>[target] is holding up against the acid!</span>")
 				if(16)
-					visible_message(SPAN_WARNING("[target] is being melted by the acid!"))
+					visible_message("<span class='warning'>[target] is being melted by the acid!</span>")
 				if(8)
-					visible_message(SPAN_WARNING("[target] is struggling to withstand the acid!"))
+					visible_message("<span class='warning'>[target] is struggling to withstand the acid!</span>")
 				if(4)
-					visible_message(SPAN_WARNING("[target] begins to crumble under the acid!"))
+					visible_message("<span class='warning'>[target] begins to crumble under the acid!</span>")

@@ -46,17 +46,17 @@
 
 /datum/action/risingbassmove/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't use [name] while you're incapacitated."))
+		to_chat(owner, "<span class='warning'>You can't use [name] while you're incapacitated.</span>")
 		return
 	var/mob/living/carbon/human/H = owner
 	if (H.mind.martial_art.streak == "[movestreak]")
 		H.mind.martial_art.streak = ""
-		to_chat(H,SPAN_DANGER("You relax your muscles and return to a neutral position."))
+		to_chat(H,"<span class='danger'>You relax your muscles and return to a neutral position.</span>")
 	else
 		if(HAS_TRAIT(H, TRAIT_PACIFISM))
-			to_chat(H, SPAN_WARNING("You don't want to harm other people!"))
+			to_chat(H, "<span class='warning'>You don't want to harm other people!</span>")
 			return
-		to_chat(H,SPAN_DANGER("You get ready to use the [name] maneuver!"))
+		to_chat(H,"<span class='danger'>You get ready to use the [name] maneuver!</span>")
 		H.mind.martial_art.streak = "[movestreak]"
 
 /datum/action/risingbassmove/sidekick
@@ -85,7 +85,7 @@
 		var/turf/H = get_step(D, dir)
 		var/turf/K = get_step(D, oppdir)
 		A.do_attack_animation(D, ATTACK_EFFECT_KICK)
-		D.visible_message(SPAN_WARNING("[A] kicks [D] in the side, sliding them over!"), \
+		D.visible_message("<span class='warning'>[A] kicks [D] in the side, sliding them over!</span>", \
 						  "<span class='userdanger'>[A] kicks you in the side, forcing you to step away!</span>")
 		playsound(get_turf(A), 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 		D.apply_damage(damage, BRUTE, BODY_ZONE_CHEST)
@@ -102,7 +102,7 @@
 	var/turf/H = get_step(A, get_dir(D,A))
 	var/L = checkfordensity(H,D) ? H : A.loc
 	A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
-	D.visible_message(SPAN_WARNING("[A] flips [D] over their shoulder, slamming them into the ground!"), \
+	D.visible_message("<span class='warning'>[A] flips [D] over their shoulder, slamming them into the ground!</span>", \
 					  "<span class='userdanger'>[A] flips you over their shoulder, slamming you into the ground!</span>")
 	playsound(get_turf(A), 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 	D.emote("scream")
@@ -120,7 +120,7 @@
 	var/damage = damage_roll(A,D)
 	if(CHECK_MOBILITY(D, MOBILITY_STAND) && repulsecool < world.time)
 		A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
-		D.visible_message(SPAN_WARNING("[A] smashes [D] in the chest, throwing them away!"), \
+		D.visible_message("<span class='warning'>[A] smashes [D] in the chest, throwing them away!</span>", \
 						  "<span class='userdanger'>[A] smashes you in the chest, repelling you away!</span>")
 		playsound(get_turf(A), 'sound/weapons/punch1.ogg', 50, 1, -1)
 		var/atom/F = get_edge_target_turf(D, get_dir(A, get_step_away(D, A)))
@@ -137,7 +137,7 @@
 	var/damage = (damage_roll(A,D)*0.5)
 	if(CHECK_MOBILITY(D, MOBILITY_STAND))
 		A.do_attack_animation(D, ATTACK_EFFECT_KICK)
-		D.visible_message(SPAN_WARNING("[A] smashes their foot down on [D]'s foot!"), \
+		D.visible_message("<span class='warning'>[A] smashes their foot down on [D]'s foot!</span>", \
 						  "<span class='userdanger'>[A] smashes your foot!</span>")
 		playsound(get_turf(A), 'sound/weapons/punch1.ogg', 50, 1, -1)
 		D.apply_damage(damage, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
@@ -152,7 +152,7 @@
 			var/obj/item/G = D.get_active_held_item()
 			if (G && !(G.item_flags & (ABSTRACT|DROPDEL)) && D.temporarilyRemoveItemFromInventory(G))
 				A.put_in_hands(G)
-				D.visible_message(SPAN_WARNING("[A] slaps [D]'s hands, taking [G] from them!"), \
+				D.visible_message("<span class='warning'>[A] slaps [D]'s hands, taking [G] from them!</span>", \
 					"<span class='userdanger'>[A] slaps you, taking [G] from you!</span>")
 				log_combat(A, D, "deft switched (Rising Bass)")
 				return TRUE
@@ -168,15 +168,15 @@
 	var/stunthreshold = A.dna.species.punchstunthreshold
 	A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 	if(CHECK_MOBILITY(D, MOBILITY_STAND) && damage >= stunthreshold)
-		D.visible_message(SPAN_DANGER("[A] trips [D]!"), \
+		D.visible_message("<span class='danger'>[A] trips [D]!</span>", \
 					"<span class='userdanger'>You're tripped by [A]!</span>", "<span class='hear'>You hear something thump against the floor!</span>", COMBAT_MESSAGE_RANGE, A)
-		to_chat(A, SPAN_DANGER("You trip [D]!"))
+		to_chat(A, "<span class='danger'>You trip [D]!</span>")
 		D.DefaultCombatKnockdown(10, override_hardstun = 0.01, override_stamdmg = damage)
 		D.Dizzy(damage)
 	else
-		D.visible_message(SPAN_DANGER("[A] jabs [D] in the stomach!"), \
+		D.visible_message("<span class='danger'>[A] jabs [D] in the stomach!</span>", \
 					"<span class='userdanger'>You're jabbed in the stomach by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
-		to_chat(A, SPAN_DANGER("You jab [D] in the stomach!"))
+		to_chat(A, "<span class='danger'>You jab [D] in the stomach!</span>")
 		D.apply_damage(damage*2 + 10, STAMINA)
 		D.disgust = min(damage, 20)
 	playsound(D, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
@@ -209,7 +209,7 @@
 		return BULLET_ACT_HIT
 	if(!isturf(A.loc)) //NO MOTHERFLIPPIN MECHS!
 		return BULLET_ACT_HIT
-	A.visible_message(SPAN_DANGER("[A] dodges the projectile cleanly, they're immune to ranged weapons!"), "<span class='userdanger'>You dodge out of the way of the projectile!</span>")
+	A.visible_message("<span class='danger'>[A] dodges the projectile cleanly, they're immune to ranged weapons!</span>", "<span class='userdanger'>You dodge out of the way of the projectile!</span>")
 	playsound(get_turf(A), pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 75, TRUE)
 	return BULLET_ACT_FORCE_PIERCE
 

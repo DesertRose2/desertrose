@@ -182,7 +182,7 @@
 
 /datum/reagent/consumable/superlaughter/on_mob_life(mob/living/carbon/M)
 	if(prob(30))
-		M.visible_message(SPAN_DANGER("[M] bursts out into a fit of uncontrollable laughter!"), "<span class='userdanger'>You burst out in a fit of uncontrollable laughter!</span>")
+		M.visible_message("<span class='danger'>[M] bursts out into a fit of uncontrollable laughter!</span>", "<span class='userdanger'>You burst out in a fit of uncontrollable laughter!</span>")
 		M.Stun(5)
 		SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "chemical_laughter", /datum/mood_event/chemical_superlaughter)
 	..()
@@ -435,7 +435,7 @@
 
 /datum/reagent/consumable/tea/arnold_palmer/on_mob_life(mob/living/carbon/M)
 	if(prob(5))
-		to_chat(M, SPAN_NOTICE("[pick("You remember to square your shoulders.","You remember to keep your head down.","You can't decide between squaring your shoulders and keeping your head down.","You remember to relax.","You think about how someday you'll get two strokes off your golf game.")]"))
+		to_chat(M, "<span class = 'notice'>[pick("You remember to square your shoulders.","You remember to keep your head down.","You can't decide between squaring your shoulders and keeping your head down.","You remember to relax.","You think about how someday you'll get two strokes off your golf game.")]</span>")
 	..()
 	. = 1
 
@@ -640,22 +640,22 @@
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage1(mob/living/M)
 	if(prob(5))
-		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour")]"))
+		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour")]</span>")
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage2(mob/living/M)
 	if(prob(10))
-		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour", "The Queen approved it!")]"))
+		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour", "The Queen approved it!")]</span>")
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage3(mob/living/M)
 	if(prob(15))
-		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "The Queen approved it!")]"))
+		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "The Queen approved it!")]</span>")
 	..()
 
 /datum/reagent/consumable/buzz_fuzz/addiction_act_stage4(mob/living/M)
 	if(prob(25))
-		to_chat(M, SPAN_NOTICE("[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "Sap back that missing energy!", "Got Honey?", "The Queen approved it!")]"))
+		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "Sap back that missing energy!", "Got Honey?", "The Queen approved it!")]</span>")
 	..()
 
 /datum/reagent/consumable/grey_bull
@@ -1038,7 +1038,7 @@
 
 /datum/reagent/consumable/tea/pinkmilk/on_mob_life(mob/living/carbon/M)
 	if(prob(15))
-		to_chat(M, SPAN_NOTICE("[pick("You can't help but smile.","You feel nostalgia all of sudden.","You remember to relax.")]"))
+		to_chat(M, "<span class = 'notice'>[pick("You cant help to smile.","You feel nostalgia all of sudden.","You remember to relax.")]</span>")
 	..()
 	. = 1
 
@@ -1054,7 +1054,7 @@
 
 /datum/reagent/consumable/tea/pinktea/on_mob_life(mob/living/carbon/M)
 	if(prob(10))
-		to_chat(M, SPAN_NOTICE("[pick("Diamond skies where white deer fly.","Sipping strawberry tea.","Silver raindrops drift through timeless, Neverending June.","Crystal ... pearls free, with love!","Beaming love into me.")]"))
+		to_chat(M, "<span class = 'notice'>[pick("Diamond skies where white deer fly.","Sipping strawberry tea.","Silver raindrops drift through timeless, Neverending June.","Crystal ... pearls free, with love!","Beaming love into me.")]</span>")
 	..()
 	. = 1
 

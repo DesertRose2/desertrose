@@ -22,7 +22,7 @@
 
 	if(owner.nutrition <= hunger_threshold)
 		synthesizing = TRUE
-		to_chat(owner, SPAN_NOTICE("You feel less hungry..."))
+		to_chat(owner, "<span class='notice'>You feel less hungry...</span>")
 		owner.adjust_nutrition(50)
 		addtimer(CALLBACK(src, .proc/synth_cool), 50)
 
@@ -34,7 +34,7 @@
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
 	owner.reagents.add_reagent(/datum/reagent/toxin/bad_food, poison_amount * severity/100)
-	to_chat(owner, SPAN_WARNING("You feel like your insides are burning."))
+	to_chat(owner, "<span class='warning'>You feel like your insides are burning.</span>")
 
 /obj/item/organ/cyberimp/chest/nutriment/plus
 	name = "Nutriment pump implant PLUS"
@@ -74,7 +74,7 @@
 			cooldown = revive_cost + world.time
 			reviving = FALSE
 			if(owner)
-				to_chat(owner, SPAN_NOTICE("Your reviver implant shuts down and starts recharging. It will be ready again in [DisplayTimeText(revive_cost)]."))
+				to_chat(owner, "<span class='notice'>Your reviver implant shuts down and starts recharging. It will be ready again in [DisplayTimeText(revive_cost)].</span>")
 		return
 
 	if(!. || cooldown > world.time || owner.stat == CONSCIOUS || owner.stat == DEAD || owner.suiciding)
@@ -83,7 +83,7 @@
 	revive_cost = 0
 	convalescence_time = 0
 	reviving = TRUE
-	to_chat(owner, SPAN_NOTICE("You feel a faint buzzing as your reviver implant starts patching your wounds..."))
+	to_chat(owner, "<span class='notice'>You feel a faint buzzing as your reviver implant starts patching your wounds...</span>")
 
 /obj/item/organ/cyberimp/chest/reviver/proc/heal()
 	if(!owner)
@@ -125,7 +125,7 @@
 		return
 	H.set_heartattack(FALSE)
 	if(H.stat == CONSCIOUS || H.stat == SOFT_CRIT)
-		to_chat(H, SPAN_NOTICE("You feel your heart beating again!"))
+		to_chat(H, "<span class='notice'>You feel your heart beating again!</span>")
 
 #undef MAX_HEAL_COOLDOWN
 #undef DEF_CONVALESCENCE_TIME
@@ -161,7 +161,7 @@
 	if(!on)
 		if(crit_fail || (organ_flags & ORGAN_FAILING))
 			if(!silent)
-				to_chat(owner, SPAN_WARNING("Your thrusters set seems to be broken!"))
+				to_chat(owner, "<span class='warning'>Your thrusters set seems to be broken!</span>")
 			return 0
 		on = TRUE
 		if(allow_thrust(0.01))
@@ -169,14 +169,14 @@
 			RegisterSignal(owner, COMSIG_MOVABLE_MOVED, .proc/move_react)
 			owner.add_movespeed_modifier(/datum/movespeed_modifier/jetpack/cybernetic)
 			if(!silent)
-				to_chat(owner, SPAN_NOTICE("You turn your thrusters set on."))
+				to_chat(owner, "<span class='notice'>You turn your thrusters set on.</span>")
 	else
 		ion_trail.stop()
 		if(!QDELETED(owner))
 			UnregisterSignal(owner, COMSIG_MOVABLE_MOVED)
 			owner.remove_movespeed_modifier(/datum/movespeed_modifier/jetpack/cybernetic)
 			if(!silent)
-				to_chat(owner, SPAN_NOTICE("You turn your thrusters set off."))
+				to_chat(owner, "<span class='notice'>You turn your thrusters set off.</span>")
 		on = FALSE
 	update_icon()
 

@@ -102,12 +102,12 @@
 		src.icon_state = "ushankaup"
 		src.item_state = "ushankaup"
 		earflaps = 0
-		to_chat(user, SPAN_NOTICE("You raise the ear flaps on the ushanka."))
+		to_chat(user, "<span class='notice'>You raise the ear flaps on the ushanka.</span>")
 	else
 		src.icon_state = "ushankadown"
 		src.item_state = "ushankadown"
 		earflaps = 1
-		to_chat(user, SPAN_NOTICE("You lower the ear flaps on the ushanka."))
+		to_chat(user, "<span class='notice'>You lower the ear flaps on the ushanka.</span>")
 
 /*
  * Pumpkin head
@@ -277,7 +277,7 @@
 	paranoia = new()
 	paranoia.clonable = FALSE
 	user.gain_trauma(paranoia, TRAUMA_RESILIENCE_MAGIC)
-	to_chat(user, SPAN_WARNING("As you don the foiled hat, an entire world of conspiracy theories and seemingly insane ideas suddenly rush into your mind. What you once thought unbelievable suddenly seems.. undeniable. Everything is connected and nothing happens just by accident. You know too much and now they're out to get you. "))
+	to_chat(user, "<span class='warning'>As you don the foiled hat, an entire world of conspiracy theories and seemingly insane ideas suddenly rush into your mind. What you once thought unbelievable suddenly seems.. undeniable. Everything is connected and nothing happens just by accident. You know too much and now they're out to get you. </span>")
 
 /obj/item/clothing/head/foilhat/MouseDrop(atom/over_object)
 	//God Im sorry
@@ -304,7 +304,7 @@
 		return
 	QDEL_NULL(paranoia)
 	if(!target.IsUnconscious())
-		to_chat(target, SPAN_WARNING("Your zealous conspirationism rapidly dissipates as the donned hat warps up into a ruined mess. All those theories starting to sound like nothing but a ridicolous fanfare."))
+		to_chat(target, "<span class='warning'>Your zealous conspirationism rapidly dissipates as the donned hat warps up into a ruined mess. All those theories starting to sound like nothing but a ridicolous fanfare.</span>")
 
 /obj/item/clothing/head/foilhat/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(!warped && iscarbon(user))

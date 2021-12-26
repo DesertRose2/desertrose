@@ -24,28 +24,28 @@
 /obj/machinery/blackbox_recorder/on_attack_hand(mob/living/user, act_intent, unarmed_attack_flags)
 	. = ..()
 	if(stored)
-		to_chat(user, SPAN_NOTICE("You start struggling to pry the [stored] from the [src]..."))
+		to_chat(user, "<span class='notice'>You start struggling to pry the [stored] from the [src]...</span>")
 		if(!do_after(user, 30 SECONDS, TRUE, src))
-			to_chat(user, SPAN_WARNING("Your fingers slip as you fail to pry the [stored] from the [src], clicking it right back into the slot!"))
+			to_chat(user, "<span class='warning'>Your fingers slip as you fail to pry the [stored] from the [src], clicking it right back into the slot!</span>")
 			return
 		if(user.put_in_hands(stored))
 			stored.forceMove(user.drop_location())
 		stored = null
-		to_chat(user, SPAN_WARNING("You successfully pry the [stored] from the [src], and send its overwhelming weight tumbling onto the ground! The tapes on the [src] stop spinning..."))
+		to_chat(user, "<span class='warning'>You successfully pry the [stored] from the [src], and send its overwhelming weight tumbling onto the ground! The tapes on the [src] stop spinning...</span>")
 		update_icon()
 		return
 	else
-		to_chat(user, SPAN_WARNING("It seems that the blackbox is missing..."))
+		to_chat(user, "<span class='warning'>It seems that the blackbox is missing...</span>")
 		return
 
 /obj/machinery/blackbox_recorder/attackby(obj/item/I, mob/living/user, params)
 	. = ..()
 	if(istype(I, /obj/item/blackbox))
 		if(HAS_TRAIT(I, TRAIT_NODROP) || !user.transferItemToLoc(I, src))
-			to_chat(user, SPAN_WARNING("[I] is stuck to your hand!"))
+			to_chat(user, "<span class='warning'>[I] is stuck to your hand!</span>")
 			return
-		user.visible_message(SPAN_NOTICE("[user] clicks the [I] into the [src]!"), \
-		SPAN_NOTICE("You press [I] into [src], and it clicks into place. The tapes on the [src] begin spinning again..."))
+		user.visible_message("<span class='notice'>[user] clicks the [I] into the [src]!</span>", \
+		"<span class='notice'>You press [I] into [src], and it clicks into place. The tapes on the [src] begin spinning again...</span>")
 		playsound(src, 'sound/machines/click.ogg', 50, TRUE)
 		stored = I
 		update_icon()

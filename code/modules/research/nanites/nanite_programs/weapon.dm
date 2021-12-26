@@ -14,7 +14,7 @@
 	else
 		host_mob.adjustBruteLoss(1, TRUE)
 	if(prob(3))
-		to_chat(host_mob, SPAN_WARNING("You feel a stab of pain from somewhere inside you."))
+		to_chat(host_mob, "<span class='warning'>You feel a stab of pain from somewhere inside you.</span>")
 
 /datum/nanite_program/poison
 	name = "Poisoning"
@@ -25,7 +25,7 @@
 /datum/nanite_program/poison/active_effect()
 	host_mob.adjustToxLoss(1)
 	if(prob(2))
-		to_chat(host_mob, SPAN_WARNING("You feel nauseous."))
+		to_chat(host_mob, "<span class='warning'>You feel nauseous.</span>")
 		if(iscarbon(host_mob))
 			var/mob/living/carbon/C = host_mob
 			C.vomit(20)
@@ -71,7 +71,7 @@
 
 /datum/nanite_program/meltdown/disable_passive_effect()
 	. = ..()
-	to_chat(host_mob, SPAN_WARNING("Your blood cools down, and the pain gradually fades."))
+	to_chat(host_mob, "<span class='warning'>Your blood cools down, and the pain gradually fades.</span>")
 
 /datum/nanite_program/explosive
 	name = "Chain Detonation"
@@ -82,7 +82,7 @@
 	rogue_types = list(/datum/nanite_program/toxic)
 
 /datum/nanite_program/explosive/on_trigger(comm_message)
-	host_mob.visible_message(SPAN_WARNING("[host_mob] starts emitting a high-pitched buzzing, and [host_mob.p_their()] skin begins to glow..."),\
+	host_mob.visible_message("<span class='warning'>[host_mob] starts emitting a high-pitched buzzing, and [host_mob.p_their()] skin begins to glow...</span>",\
 							"<span class='userdanger'>You start emitting a high-pitched buzzing, and your skin begins to glow...</span>")
 	addtimer(CALLBACK(src, .proc/boom), clamp((nanites.nanite_volume * 0.35), 25, 150))
 

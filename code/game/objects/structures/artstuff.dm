@@ -21,7 +21,7 @@
 		painting = C
 		C.forceMove(get_turf(src))
 		C.layer = layer+0.1
-		user.visible_message(SPAN_NOTICE("[user] puts \the [C] on \the [src]."),SPAN_NOTICE("You place \the [C] on \the [src]."))
+		user.visible_message("<span class='notice'>[user] puts \the [C] on \the [src].</span>","<span class='notice'>You place \the [C] on \the [src].</span>")
 	else
 		return ..()
 
@@ -265,7 +265,7 @@
 	if(C)
 		C.forceMove(drop_location())
 		C = null
-		to_chat(user, SPAN_NOTICE("You remove the painting from the frame."))
+		to_chat(user, "<span class='notice'>You remove the painting from the frame.</span>")
 		update_icon()
 		return TRUE
 
@@ -274,7 +274,7 @@
 		C = new_canvas
 		if(!C.finalized)
 			C.finalize(user)
-		to_chat(user,SPAN_NOTICE("You frame [C]."))
+		to_chat(user,"<span class='notice'>You frame [C].</span>")
 	update_icon()
 
 /obj/structure/sign/painting/proc/try_rename(mob/user)
@@ -380,7 +380,7 @@
 			return
 		var/mob/user = usr
 		if(!persistence_id || !C)
-			to_chat(user,SPAN_WARNING("This is not a persistent painting."))
+			to_chat(user,"<span class='warning'>This is not a persistent painting.</span>")
 			return
 		var/md5 = md5(C.get_data_string())
 		var/author = C.author_ckey
@@ -395,4 +395,4 @@
 			if(P.C && md5(P.C.get_data_string()) == md5)
 				QDEL_NULL(P.C)
 		log_admin("[key_name(user)] has deleted a persistent painting made by [author].")
-		message_admins(SPAN_NOTICE("[key_name_admin(user)] has deleted persistent painting made by [author]."))
+		message_admins("<span class='notice'>[key_name_admin(user)] has deleted persistent painting made by [author].</span>")

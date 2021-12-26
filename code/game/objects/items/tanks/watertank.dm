@@ -32,7 +32,7 @@
 	if(!istype(user))
 		return
 	if(user.get_item_by_slot(user.getBackSlot()) != src)
-		to_chat(user, SPAN_WARNING("The watertank must be worn properly to use!"))
+		to_chat(user, "<span class='warning'>The watertank must be worn properly to use!</span>")
 		return
 	if(user.incapacitated())
 		return
@@ -42,7 +42,7 @@
 	if(noz in src)
 		//Detach the nozzle into the user's hands
 		if(!user.put_in_hands(noz))
-			to_chat(user, SPAN_WARNING("You need a free hand to hold the mister!"))
+			to_chat(user, "<span class='warning'>You need a free hand to hold the mister!</span>")
 			return
 	else
 		//Remove from their hands and put back "into" the tank
@@ -130,7 +130,7 @@
 /obj/item/reagent_containers/spray/mister/doMove(atom/destination)
 	if(destination && (destination != tank.loc || !ismob(destination)))
 		if (loc != tank)
-			to_chat(tank.loc, SPAN_NOTICE("The mister snaps back onto the watertank."))
+			to_chat(tank.loc, "<span class='notice'>The mister snaps back onto the watertank.</span>")
 		destination = tank
 	..()
 
@@ -167,7 +167,7 @@
 
 /obj/item/reagent_containers/spray/mister/janitor/attack_self(mob/user)
 	amount_per_transfer_from_this = (amount_per_transfer_from_this == 10 ? 5 : 10)
-	to_chat(user, SPAN_NOTICE("You [amount_per_transfer_from_this == 10 ? "remove" : "fix"] the nozzle. You'll now use [amount_per_transfer_from_this] units per spray."))
+	to_chat(user, "<span class='notice'>You [amount_per_transfer_from_this == 10 ? "remove" : "fix"] the nozzle. You'll now use [amount_per_transfer_from_this] units per spray.</span>")
 
 //ATMOS FIRE FIGHTING BACKPACK
 
@@ -231,7 +231,7 @@
 /obj/item/extinguisher/mini/nozzle/doMove(atom/destination)
 	if(destination && (destination != tank.loc || !ismob(destination)))
 		if(loc != tank)
-			to_chat(tank.loc, SPAN_NOTICE("The nozzle snaps back onto the tank!"))
+			to_chat(tank.loc, "<span class='notice'>The nozzle snaps back onto the tank!</span>")
 		destination = tank
 	..()
 
@@ -266,10 +266,10 @@
 			return //Safety check so you don't blast yourself trying to refill your tank
 		var/datum/reagents/R = reagents
 		if(R.total_volume < 100)
-			to_chat(user, SPAN_WARNING("You need at least 100 units of water to use the resin launcher!"))
+			to_chat(user, "<span class='warning'>You need at least 100 units of water to use the resin launcher!</span>")
 			return
 		if(resin_cooldown)
-			to_chat(user, SPAN_WARNING("Resin launcher is still recharging..."))
+			to_chat(user, "<span class='warning'>Resin launcher is still recharging...</span>")
 			return
 		resin_cooldown = TRUE
 		R.remove_any(100)
@@ -289,7 +289,7 @@
 			return
 		for(var/S in target)
 			if(istype(S, /obj/effect/particle_effect/foam/metal/resin) || istype(S, /obj/structure/foamedmetal/resin))
-				to_chat(user, SPAN_WARNING("There's already resin here!"))
+				to_chat(user, "<span class='warning'>There's already resin here!</span>")
 				return
 		if(metal_synthesis_cooldown < 5)
 			var/obj/effect/particle_effect/foam/metal/resin/F = new (get_turf(target))
@@ -298,7 +298,7 @@
 			spawn(100)
 				metal_synthesis_cooldown--
 		else
-			to_chat(user, SPAN_WARNING("Resin foam mix is still being synthesized..."))
+			to_chat(user, "<span class='warning'>Resin foam mix is still being synthesized...</span>")
 			return
 
 /obj/effect/resin_container
@@ -352,7 +352,7 @@
 	if(!istype(user))
 		return
 	if (user.get_item_by_slot(SLOT_BACK) != src)
-		to_chat(user, SPAN_WARNING("The chemtank needs to be on your back before you can activate it!"))
+		to_chat(user, "<span class='warning'>The chemtank needs to be on your back before you can activate it!</span>")
 		return
 	if(on)
 		turn_off()
@@ -400,13 +400,13 @@
 	on = TRUE
 	START_PROCESSING(SSobj, src)
 	if(ismob(loc))
-		to_chat(loc, SPAN_NOTICE("[src] turns on."))
+		to_chat(loc, "<span class='notice'>[src] turns on.</span>")
 
 /obj/item/reagent_containers/chemtank/proc/turn_off()
 	on = FALSE
 	STOP_PROCESSING(SSobj, src)
 	if(ismob(loc))
-		to_chat(loc, SPAN_NOTICE("[src] turns off."))
+		to_chat(loc, "<span class='notice'>[src] turns off.</span>")
 
 /obj/item/reagent_containers/chemtank/process()
 	if(!ishuman(loc))

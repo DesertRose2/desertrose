@@ -84,13 +84,13 @@
 		if(SYRINGE_DRAW)
 
 			if(reagents.total_volume >= reagents.maximum_volume)
-				to_chat(user, SPAN_NOTICE("The syringe is full."))
+				to_chat(user, "<span class='notice'>The syringe is full.</span>")
 				return
 
 			if(L) //living mob
 				var/drawn_amount = reagents.maximum_volume - reagents.total_volume
 				if(target != user)
-					target.visible_message(SPAN_DANGER("[user] is trying to take a blood sample from [target]!"), \
+					target.visible_message("<span class='danger'>[user] is trying to take a blood sample from [target]!</span>", \
 									"<span class='userdanger'>[user] is trying to take a blood sample from [target]!</span>")
 					busy = TRUE
 					if(!do_mob(user, target, extra_checks=CALLBACK(L, /mob/living/proc/can_inject,user,1)))
@@ -102,20 +102,20 @@
 				if(L.transfer_blood_to(src, drawn_amount))
 					user.visible_message("[user] takes a blood sample from [L].")
 				else
-					to_chat(user, SPAN_WARNING("You are unable to draw any blood from [L]!"))
+					to_chat(user, "<span class='warning'>You are unable to draw any blood from [L]!</span>")
 
 			else //if not mob
 				if(!target.reagents.total_volume)
-					to_chat(user, SPAN_WARNING("[target] is empty!"))
+					to_chat(user, "<span class='warning'>[target] is empty!</span>")
 					return
 
 				if(!target.is_drawable())
-					to_chat(user, SPAN_WARNING("You cannot directly remove reagents from [target]!"))
+					to_chat(user, "<span class='warning'>You cannot directly remove reagents from [target]!</span>")
 					return
 
 				var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this) // transfer from, transfer to - who cares?
 
-				to_chat(user, SPAN_NOTICE("You fill [src] with [trans] units of the solution. It now contains [reagents.total_volume] units."))
+				to_chat(user, "<span class='notice'>You fill [src] with [trans] units of the solution. It now contains [reagents.total_volume] units.</span>")
 			if (round(reagents.total_volume, 0.1) >= reagents.maximum_volume)
 				mode=!mode
 				update_icon()
@@ -126,22 +126,22 @@
 			log_combat(user, target, "attempted to inject", src, addition="which had [contained]")
 
 			if(!reagents.total_volume)
-				to_chat(user, SPAN_NOTICE("[src] is empty."))
+				to_chat(user, "<span class='notice'>[src] is empty.</span>")
 				return
 
 			if(!L && !target.is_injectable()) //only checks on non-living mobs, due to how can_inject() handles
-				to_chat(user, SPAN_WARNING("You cannot directly fill [target]!"))
+				to_chat(user, "<span class='warning'>You cannot directly fill [target]!</span>")
 				return
 
 			if(target.reagents.total_volume >= target.reagents.maximum_volume)
-				to_chat(user, SPAN_NOTICE("[target] is full."))
+				to_chat(user, "<span class='notice'>[target] is full.</span>")
 				return
 
 			if(L) //living mob
 				if(!L.can_inject(user, TRUE))
 					return
 				if(L != user)
-					L.visible_message(SPAN_DANGER("[user] is trying to inject [L]!"), \
+					L.visible_message("<span class='danger'>[user] is trying to inject [L]!</span>", \
 											"<span class='userdanger'>[user] is trying to inject [L]!</span>")
 					if(!do_mob(user, L, extra_checks=CALLBACK(L, /mob/living/proc/can_inject,user,1)))
 						return
@@ -159,7 +159,7 @@
 			var/fraction = min(amount_per_transfer_from_this/reagents.total_volume, 1)
 			reagents.reaction(L, INJECT, fraction)
 			reagents.trans_to(target, amount_per_transfer_from_this)
-			to_chat(user, SPAN_NOTICE("You inject [amount_per_transfer_from_this] units of the solution. The syringe now contains [reagents.total_volume] units."))
+			to_chat(user, "<span class='notice'>You inject [amount_per_transfer_from_this] units of the solution. The syringe now contains [reagents.total_volume] units.</span>")
 			if (reagents.total_volume <= 0 && mode==SYRINGE_INJECT)
 				mode = SYRINGE_DRAW
 				update_icon()
@@ -255,7 +255,7 @@
 	list_reagents = list(/datum/reagent/gluttonytoxin = 1)
 
 /obj/item/reagent_containers/syringe/bluespace
-	name = "quantum syringe"
+	name = "bluespace syringe"
 	desc = "An advanced syringe that can hold 60 units of chemicals."
 	amount_per_transfer_from_this = 20
 	volume = 60
@@ -316,31 +316,31 @@
 		if(SYRINGE_DRAW)
 
 			if(reagents.total_volume >= reagents.maximum_volume)
-				to_chat(user, SPAN_NOTICE("The dart is full!"))
+				to_chat(user, "<span class='notice'>The dart is full!</span>")
 				return
 
 			if(L) //living mob
-				to_chat(user, SPAN_WARNING("You can't draw blood using a dart!"))
+				to_chat(user, "<span class='warning'>You can't draw blood using a dart!</span>")
 				return
 
 			else //if not mob
 				if(!target.reagents.total_volume)
-					to_chat(user, SPAN_WARNING("[target] is empty!"))
+					to_chat(user, "<span class='warning'>[target] is empty!</span>")
 					return
 
 				if(!target.is_drawable())
-					to_chat(user, SPAN_WARNING("You cannot directly remove reagents from [target]!"))
+					to_chat(user, "<span class='warning'>You cannot directly remove reagents from [target]!</span>")
 					return
 
 				var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this)
 
-				to_chat(user, SPAN_NOTICE("You soak the [src] with [trans] units of the solution. It now contains [reagents.total_volume] units."))
+				to_chat(user, "<span class='notice'>You soak the [src] with [trans] units of the solution. It now contains [reagents.total_volume] units.</span>")
 			if (round(reagents.total_volume,1) >= reagents.maximum_volume)
 				mode=!mode
 				update_icon()
 
 		if(SYRINGE_INJECT)
-			src.visible_message(SPAN_DANGER("The smartdart gives a frustrated boop! It's fully saturated; You need to shoot someone with it!"))
+			src.visible_message("<span class='danger'>The smartdart gives a frustrated boop! It's fully saturated; You need to shoot someone with it!</span>")
 
 /obj/item/reagent_containers/syringe/dart/attack_self(mob/user)
 	return
@@ -358,7 +358,7 @@
 	..()
 
 /obj/item/reagent_containers/syringe/dart/bluespace
-	name = "quantum smartdart"
-	desc = "A non-harmful dart that can administer medication from a range. Once it hits a patient, using its smart nanofilter technology only medicines contained within the dart are administered to the patient. Additonally, due to capillary action, injection of chemicals past the overdose limit is prevented. Has an extended volume capacity thanks to quantum foam."
+	name = "bluespace smartdart"
+	desc = "A non-harmful dart that can administer medication from a range. Once it hits a patient, using its smart nanofilter technology only medicines contained within the dart are administered to the patient. Additonally, due to capillary action, injection of chemicals past the overdose limit is prevented. Has an extended volume capacity thanks to bluespace foam."
 	amount_per_transfer_from_this = 50
 	volume = 50

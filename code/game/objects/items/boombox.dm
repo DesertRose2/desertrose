@@ -18,7 +18,7 @@
 		update_icon()
 		return
 	if(!availabletrackids || !availabletrackids.len)
-		to_chat(user, SPAN_NOTICE("[src] flashes as you prod it senselessly. It doesn't have any songs stored on it."))
+		to_chat(user, "<span class='notice'>[src] flashes as you prod it senselessly. It doesn't have any songs stored on it.</span>")
 		return
 	if(!boomingandboxing)
 		var/list/tracklist = list()

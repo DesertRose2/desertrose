@@ -1,6 +1,6 @@
 /mob/camera/blob/proc/can_buy(cost = 15)
 	if(blob_points < cost)
-		to_chat(src, SPAN_WARNING("You cannot afford this, you need at least [cost] resources!"))
+		to_chat(src, "<span class='warning'>You cannot afford this, you need at least [cost] resources!</span>")
 		return 0
 	add_points(-cost)
 	return 1
@@ -16,30 +16,30 @@
 				if(ROLE_BLOB in M.faction)
 					continue
 				if(M.client)
-					to_chat(src, SPAN_WARNING("There is someone too close to place your blob core!"))
+					to_chat(src, "<span class='warning'>There is someone too close to place your blob core!</span>")
 					return 0
 			for(var/mob/living/M in view(13, src))
 				if(ROLE_BLOB in M.faction)
 					continue
 				if(M.client)
-					to_chat(src, SPAN_WARNING("Someone could see your blob core from here!"))
+					to_chat(src, "<span class='warning'>Someone could see your blob core from here!</span>")
 					return 0
 		var/turf/T = get_turf(src)
 		if(T.density)
-			to_chat(src, SPAN_WARNING("This spot is too dense to place a blob core on!"))
+			to_chat(src, "<span class='warning'>This spot is too dense to place a blob core on!</span>")
 			return 0
 		for(var/obj/O in T)
 			if(istype(O, /obj/structure/blob))
 				if(istype(O, /obj/structure/blob/normal))
 					qdel(O)
 				else
-					to_chat(src, SPAN_WARNING("There is already a blob here!"))
+					to_chat(src, "<span class='warning'>There is already a blob here!</span>")
 					return 0
 			else if(O.density)
-				to_chat(src, SPAN_WARNING("This spot is too dense to place a blob core on!"))
+				to_chat(src, "<span class='warning'>This spot is too dense to place a blob core on!</span>")
 				return 0
 		if(!pop_override && world.time <= manualplace_min_time && world.time <= autoplace_max_time)
-			to_chat(src, SPAN_WARNING("It is too early to place your blob core!"))
+			to_chat(src, "<span class='warning'>It is too early to place your blob core!</span>")
 			return 0
 	else if(placement_override == 1)
 		var/turf/T = pick(GLOB.blobstart)
@@ -82,19 +82,19 @@
 		T = get_turf(src)
 	var/obj/structure/blob/B = (locate(/obj/structure/blob) in T)
 	if(!B)
-		to_chat(src, SPAN_WARNING("There is no blob here!"))
+		to_chat(src, "<span class='warning'>There is no blob here!</span>")
 		return
 	if(!istype(B, /obj/structure/blob/normal))
-		to_chat(src, SPAN_WARNING("Unable to use this blob, find a normal one."))
+		to_chat(src, "<span class='warning'>Unable to use this blob, find a normal one.</span>")
 		return
 	if(needsNode && nodes_required)
 		if(!(locate(/obj/structure/blob/node) in orange(3, T)) && !(locate(/obj/structure/blob/core) in orange(4, T)))
-			to_chat(src, SPAN_WARNING("You need to place this blob closer to a node or core!"))
+			to_chat(src, "<span class='warning'>You need to place this blob closer to a node or core!</span>")
 			return //handholdotron 2000
 	if(nearEquals)
 		for(var/obj/structure/blob/L in orange(nearEquals, T))
 			if(L.type == blobstrain)
-				to_chat(src, SPAN_WARNING("There is a similar blob nearby, move more than [nearEquals] tiles away from it!"))
+				to_chat(src, "<span class='warning'>There is a similar blob nearby, move more than [nearEquals] tiles away from it!</span>")
 				return
 	if(!can_buy(price))
 		return
@@ -107,9 +107,9 @@
 	set desc = "Toggle requiring nodes to place resource and factory blobs."
 	nodes_required = !nodes_required
 	if(nodes_required)
-		to_chat(src, SPAN_WARNING("You now require a nearby node or core to place factory and resource blobs."))
+		to_chat(src, "<span class='warning'>You now require a nearby node or core to place factory and resource blobs.</span>")
 	else
-		to_chat(src, SPAN_WARNING("You no longer require a nearby node or core to place factory and resource blobs."))
+		to_chat(src, "<span class='warning'>You no longer require a nearby node or core to place factory and resource blobs.</span>")
 
 /mob/camera/blob/verb/create_shield_power()
 	set category = "Blob"
@@ -124,9 +124,9 @@
 			return
 		if(S.obj_integrity < S.max_integrity * 0.5)
 			add_points(BLOB_REFLECTOR_COST)
-			to_chat(src, SPAN_WARNING("This shield blob is too damaged to be modified properly!"))
+			to_chat(src, "<span class='warning'>This shield blob is too damaged to be modified properly!</span>")
 			return
-		to_chat(src, SPAN_WARNING("You secrete a reflective ooze over the shield blob, allowing it to reflect projectiles at the cost of reduced integrity."))
+		to_chat(src, "<span class='warning'>You secrete a reflective ooze over the shield blob, allowing it to reflect projectiles at the cost of reduced integrity.</span>")
 		S.change_to(/obj/structure/blob/shield/reflective, src)
 	else
 		createSpecial(15, /obj/structure/blob/shield, 0, 0, T)
@@ -156,25 +156,25 @@
 	var/turf/T = get_turf(src)
 	var/obj/structure/blob/factory/B = locate(/obj/structure/blob/factory) in T
 	if(!B)
-		to_chat(src, SPAN_WARNING("You must be on a factory blob!"))
+		to_chat(src, "<span class='warning'>You must be on a factory blob!</span>")
 		return
 	if(B.naut) //if it already made a blobbernaut, it can't do it again
-		to_chat(src, SPAN_WARNING("This factory blob is already sustaining a blobbernaut."))
+		to_chat(src, "<span class='warning'>This factory blob is already sustaining a blobbernaut.</span>")
 		return
 	if(B.obj_integrity < B.max_integrity * 0.5)
-		to_chat(src, SPAN_WARNING("This factory blob is too damaged to sustain a blobbernaut."))
+		to_chat(src, "<span class='warning'>This factory blob is too damaged to sustain a blobbernaut.</span>")
 		return
 	if(!can_buy(40))
 		return
 
 	B.naut = TRUE	//temporary placeholder to prevent creation of more than one per factory.
-	to_chat(src, SPAN_NOTICE("You attempt to produce a blobbernaut."))
+	to_chat(src, "<span class='notice'>You attempt to produce a blobbernaut.</span>")
 	var/list/mob/candidates = pollGhostCandidates("Do you want to play as a [blobstrain.name] blobbernaut?", ROLE_BLOB, null, ROLE_BLOB, 50) //players must answer rapidly
 	if(LAZYLEN(candidates)) //if we got at least one candidate, they're a blobbernaut now.
 		B.max_integrity = initial(B.max_integrity) * 0.25 //factories that produced a blobbernaut have much lower health
 		B.obj_integrity = min(B.obj_integrity, B.max_integrity)
 		B.update_icon()
-		B.visible_message(SPAN_WARNING("<b>The blobbernaut [pick("rips", "tears", "shreds")] its way out of the factory blob!</b>"))
+		B.visible_message("<span class='warning'><b>The blobbernaut [pick("rips", "tears", "shreds")] its way out of the factory blob!</b></span>")
 		playsound(B.loc, 'sound/effects/splat.ogg', 50, 1)
 		var/mob/living/simple_animal/hostile/blob/blobbernaut/blobber = new /mob/living/simple_animal/hostile/blob/blobbernaut(get_turf(B))
 		flick("blobbernaut_produce", blobber)
@@ -194,7 +194,7 @@
 		to_chat(blobber, "Your overmind's blob reagent is: <b><font color=\"[blobstrain.color]\">[blobstrain.name]</b></font>!")
 		to_chat(blobber, "The <b><font color=\"[blobstrain.color]\">[blobstrain.name]</b></font> reagent [blobstrain.shortdesc ? "[blobstrain.shortdesc]" : "[blobstrain.description]"]")
 	else
-		to_chat(src, SPAN_WARNING("You could not conjure a sentience for your blobbernaut. Your points have been refunded. Try again later."))
+		to_chat(src, "<span class='warning'>You could not conjure a sentience for your blobbernaut. Your points have been refunded. Try again later.</span>")
 		add_points(40)
 
 /mob/camera/blob/verb/relocate_core()
@@ -204,14 +204,14 @@
 	var/turf/T = get_turf(src)
 	var/obj/structure/blob/node/B = locate(/obj/structure/blob/node) in T
 	if(!B)
-		to_chat(src, SPAN_WARNING("You must be on a blob node!"))
+		to_chat(src, "<span class='warning'>You must be on a blob node!</span>")
 		return
 	if(!blob_core)
 		to_chat(src, "<span class='userdanger'>You have no core and are about to die! May you rest in peace.</span>")
 		return
 	var/area/A = get_area(T)
 	if(isspaceturf(T) || A && !A.blob_allowed)
-		to_chat(src, SPAN_WARNING("You cannot relocate your core here!"))
+		to_chat(src, "<span class='warning'>You cannot relocate your core here!</span>")
 		return
 	if(!can_buy(80))
 		return
@@ -232,17 +232,17 @@
 /mob/camera/blob/proc/remove_blob(turf/T)
 	var/obj/structure/blob/B = locate() in T
 	if(!B)
-		to_chat(src, SPAN_WARNING("There is no blob there!"))
+		to_chat(src, "<span class='warning'>There is no blob there!</span>")
 		return
 	if(B.point_return < 0)
-		to_chat(src, SPAN_WARNING("Unable to remove this blob."))
+		to_chat(src, "<span class='warning'>Unable to remove this blob.</span>")
 		return
 	if(max_blob_points < B.point_return + blob_points)
-		to_chat(src, SPAN_WARNING("You have too many resources to remove this blob!"))
+		to_chat(src, "<span class='warning'>You have too many resources to remove this blob!</span>")
 		return
 	if(B.point_return)
 		add_points(B.point_return)
-		to_chat(src, SPAN_NOTICE("Gained [B.point_return] resources from removing \the [B]."))
+		to_chat(src, "<span class='notice'>Gained [B.point_return] resources from removing \the [B].</span>")
 	qdel(B)
 
 /mob/camera/blob/verb/expand_blob_power()
@@ -259,7 +259,7 @@
 	for(var/obj/structure/blob/AB in range(T, 1))
 		possibleblobs += AB
 	if(!possibleblobs.len)
-		to_chat(src, SPAN_WARNING("There is no blob adjacent to the target tile!"))
+		to_chat(src, "<span class='warning'>There is no blob adjacent to the target tile!</span>")
 		return
 	if(can_buy(BLOB_SPREAD_COST))
 		var/attacksuccess = FALSE
@@ -274,7 +274,7 @@
 			if(attacksuccess) //if we successfully attacked a turf with a blob on it, only give an attack refund
 				B.blob_attack_animation(T, src)
 			else
-				to_chat(src, SPAN_WARNING("There is a blob there!"))
+				to_chat(src, "<span class='warning'>There is a blob there!</span>")
 				add_points(BLOB_SPREAD_COST) //otherwise, refund all of the cost
 		else
 			var/list/cardinalblobs = list()

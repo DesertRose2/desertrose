@@ -9,8 +9,8 @@
 
 //Survival Capsule
 /obj/item/survivalcapsule
-	name = "quantum shelter capsule"
-	desc = "An emergency shelter stored within a quantum pocket."
+	name = "bluespace shelter capsule"
+	desc = "An emergency shelter stored within a pocket of bluespace."
 	icon_state = "capsule"
 	icon = 'icons/obj/mining.dmi'
 	w_class = WEIGHT_CLASS_TINY
@@ -40,18 +40,18 @@
 	//Can't grab when capsule is New() because templates aren't loaded then
 	get_template()
 	if(!used)
-		loc.visible_message(SPAN_WARNING("\The [src] begins to shake. Stand back!"))
+		loc.visible_message("<span class='warning'>\The [src] begins to shake. Stand back!</span>")
 		used = TRUE
 		sleep(50)
 		var/turf/deploy_location = get_turf(src)
 		var/status = template.check_deploy(deploy_location)
 		switch(status)
 			if(SHELTER_DEPLOY_BAD_AREA)
-				src.loc.visible_message(SPAN_WARNING("\The [src] will not function in this area."))
+				src.loc.visible_message("<span class='warning'>\The [src] will not function in this area.</span>")
 			if(SHELTER_DEPLOY_BAD_TURFS, SHELTER_DEPLOY_ANCHORED_OBJECTS)
 				var/width = template.width
 				var/height = template.height
-				src.loc.visible_message(SPAN_WARNING("\The [src] doesn't have room to deploy! You need to clear a [width]x[height] area!"))
+				src.loc.visible_message("<span class='warning'>\The [src] doesn't have room to deploy! You need to clear a [width]x[height] area!</span>")
 
 		if(status != SHELTER_DEPLOY_ALLOWED)
 			used = FALSE
@@ -70,8 +70,8 @@
 //Non-default pods
 
 /obj/item/survivalcapsule/luxury
-	name = "luxury quantum shelter capsule"
-	desc = "An exorbitantly expensive luxury suite stored within a quantum pocket."
+	name = "luxury bluespace shelter capsule"
+	desc = "An exorbitantly expensive luxury suite stored within a pocket of bluespace."
 	template_id = "shelter_beta"
 
 /obj/item/survivalcapsule/luxuryelite
@@ -160,8 +160,8 @@
 	if(flags_1 & NODECONSTRUCT_1)
 		return TRUE
 
-	user.visible_message(SPAN_WARNING("[user] disassembles [src]."),
-		SPAN_NOTICE("You start to disassemble [src]..."), "You hear clanking and banging noises.")
+	user.visible_message("<span class='warning'>[user] disassembles [src].</span>",
+		"<span class='notice'>You start to disassemble [src]...</span>", "You hear clanking and banging noises.")
 	if(I.use_tool(src, user, 20, volume=50))
 		new /obj/item/gps(loc)
 		qdel(src)
@@ -237,8 +237,8 @@
 	if(flags_1 & NODECONSTRUCT_1)
 		return TRUE
 
-	user.visible_message(SPAN_WARNING("[user] disassembles [src]."),
-		SPAN_NOTICE("You start to disassemble [src]..."), "You hear clanking and banging noises.")
+	user.visible_message("<span class='warning'>[user] disassembles [src].</span>",
+		"<span class='notice'>You start to disassemble [src]...</span>", "You hear clanking and banging noises.")
 	if(I.use_tool(src, user, 20, volume=50))
 		deconstruct()
 	return TRUE

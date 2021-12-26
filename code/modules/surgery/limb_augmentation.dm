@@ -11,18 +11,18 @@
 		tool = tool.contents[1]
 	var/obj/item/bodypart/aug = tool
 	if(aug.status != BODYPART_ROBOTIC)
-		to_chat(user, SPAN_WARNING("That's not an augment, silly!"))
+		to_chat(user, "<span class='warning'>That's not an augment, silly!</span>")
 		return -1
 	if(aug.body_zone != target_zone)
-		to_chat(user, SPAN_WARNING("[tool] isn't the right type for [parse_zone(target_zone)]."))
+		to_chat(user, "<span class='warning'>[tool] isn't the right type for [parse_zone(target_zone)].</span>")
 		return -1
 	L = surgery.operated_bodypart
 	if(L)
-		display_results(user, target, SPAN_NOTICE("You begin to augment [target]'s [parse_zone(user.zone_selected)]..."),
+		display_results(user, target, "<span class ='notice'>You begin to augment [target]'s [parse_zone(user.zone_selected)]...</span>",
 			"[user] begins to augment [target]'s [parse_zone(user.zone_selected)] with [aug].",
 			"[user] begins to augment [target]'s [parse_zone(user.zone_selected)].")
 	else
-		user.visible_message("[user] looks for [target]'s [parse_zone(user.zone_selected)].", SPAN_NOTICE("You look for [target]'s [parse_zone(user.zone_selected)]..."))
+		user.visible_message("[user] looks for [target]'s [parse_zone(user.zone_selected)].", "<span class ='notice'>You look for [target]'s [parse_zone(user.zone_selected)]...</span>")
 
 //ACTUAL SURGERIES
 /datum/surgery/augmentation
@@ -42,10 +42,10 @@
 			tool = tool.contents[1]
 		if(istype(tool) && user.temporarilyRemoveItemFromInventory(tool))
 			tool.replace_limb(target, TRUE)
-		display_results(user, target, SPAN_NOTICE("You successfully augment [target]'s [parse_zone(target_zone)]."),
+		display_results(user, target, "<span class='notice'>You successfully augment [target]'s [parse_zone(target_zone)].</span>",
 			"[user] successfully augments [target]'s [parse_zone(target_zone)] with [tool]!",
 			"[user] successfully augments [target]'s [parse_zone(target_zone)]!")
 		log_combat(user, target, "augmented", addition="by giving him new [parse_zone(target_zone)] INTENT: [uppertext(user.a_intent)]")
 	else
-		to_chat(user, SPAN_WARNING("[target] has no organic [parse_zone(target_zone)] there!"))
+		to_chat(user, "<span class='warning'>[target] has no organic [parse_zone(target_zone)] there!</span>")
 	return TRUE

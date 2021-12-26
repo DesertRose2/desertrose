@@ -142,7 +142,7 @@
 
 /obj/item/storage/fancy/cigarettes/attack_self(mob/user)
 	if(contents.len == 0 && spawn_coupon)
-		to_chat(user, SPAN_NOTICE("You rip the back off \the [src] and get a coupon!"))
+		to_chat(user, "<span class='notice'>You rip the back off \the [src] and get a coupon!</span>")
 		var/obj/item/coupon/attached_coupon = new
 		user.put_in_hands(attached_coupon)
 		attached_coupon.generate()
@@ -163,30 +163,30 @@
 
 /obj/item/storage/fancy/cigarettes/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Alt-click to extract contents.")
+	. += "<span class='notice'>Alt-click to extract contents.</span>"
 	if(spawn_coupon)
-		. += SPAN_NOTICE("There's a coupon on the back of the pack! You can tear it off once it's empty.")
+		. += "<span class='notice'>There's a coupon on the back of the pack! You can tear it off once it's empty.</span>"
 
 /obj/item/storage/fancy/cigarettes/AltClick(mob/living/carbon/user)
 	. = ..()
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, SPAN_WARNING("Your hands are full!"))
+		to_chat(user, "<span class='warning'>Your hands are full!</span>")
 		return
 	var/obj/item/lighter/L = locate() in contents
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, SPAN_NOTICE("You take \a [L] out of the pack."))
+		to_chat(user, "<span class='notice'>You take \a [L] out of the pack.</span>")
 		return TRUE
 	var/obj/item/clothing/mask/cigarette/W = locate() in contents
 	if(W && contents.len > 0)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, user)
 		user.put_in_hands(W)
-		to_chat(user, SPAN_NOTICE("You take \a [W] out of the pack."))
+		to_chat(user, "<span class='notice'>You take \a [W] out of the pack.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("There are no [icon_type]s left in the pack."))
+		to_chat(user, "<span class='notice'>There are no [icon_type]s left in the pack.</span>")
 	return TRUE
 
 /obj/item/storage/fancy/cigarettes/update_icon_state()
@@ -225,11 +225,11 @@
 			SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, M)
 			M.equip_to_slot_if_possible(W, SLOT_WEAR_MASK)
 			contents -= W
-			to_chat(user, SPAN_NOTICE("You take \a [W] out of the pack."))
+			to_chat(user, "<span class='notice'>You take \a [W] out of the pack.</span>")
 		else
 			return ..()
 	else
-		to_chat(user, SPAN_NOTICE("There are no [icon_type]s left in the pack."))
+		to_chat(user, "<span class='notice'>There are no [icon_type]s left in the pack.</span>")
 
 /obj/item/storage/fancy/cigarettes/dromedaryco
 	name = "\improper DromedaryCo packet"
@@ -317,7 +317,7 @@
 
 /obj/item/storage/fancy/rollingpapers
 	name = "rolling paper pack"
-	desc = "A pack of cheap rolling papers."
+	desc = "A pack of Nanotrasen brand rolling papers."
 	w_class = WEIGHT_CLASS_TINY
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cig_paper_pack"

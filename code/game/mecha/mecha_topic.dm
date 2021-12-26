@@ -84,7 +84,7 @@
 						<b>Air source: </b>[use_internal_tank?"Internal Airtank":"Environment"]<br>
 						<b>Airtank pressure: </b>[tank_pressure]kPa<br>
 						<b>Airtank temperature: </b>[tank_temperature]&deg;K|[tank_temperature - T0C]&deg;C<br>
-						<b>Cabin pressure: </b>[cabin_pressure>WARNING_HIGH_PRESSURE ? SPAN_DANGER("[cabin_pressure]"): cabin_pressure]kPa<br>
+						<b>Cabin pressure: </b>[cabin_pressure>WARNING_HIGH_PRESSURE ? "<span class='danger'>[cabin_pressure]</span>": cabin_pressure]kPa<br>
 						<b>Cabin temperature: </b> [return_temperature()]&deg;K|[return_temperature() - T0C]&deg;C<br>
 						[dna_lock?"<b>DNA-locked:</b><br> <span style='font-size:10px;letter-spacing:-1px;'>[dna_lock]</span> \[<a href='?src=[REF(src)];reset_dna=1'>Reset</a>\]<br>":""]<br>
 						[thrusters_action.owner ? "<b>Thrusters: </b> [thrusters_active ? "Enabled" : "Disabled"]<br>" : ""]
@@ -185,7 +185,7 @@
 			continue //there's some strange access without a name
 		. += "[a_name] - <a href='?src=[REF(src)];add_req_access=[a];user=[REF(user)];id_card=[REF(id_card)]'>Add</a><br>"
 	. += "<hr><a href='?src=[REF(src)];finish_req_access=1;user=[REF(user)]'>Finish</a> "
-	. += SPAN_DANGER("(Warning! The ID upload panel will be locked. It can be unlocked only through Exosuit Interface.)")
+	. += "<span class='danger'>(Warning! The ID upload panel will be locked. It can be unlocked only through Exosuit Interface.)</span>"
 	. += "</body></html>"
 	user << browse(., "window=exosuit_add_access")
 	onclose(user, "exosuit_add_access")
@@ -309,7 +309,7 @@
 
 	if(href_list["toggle_maint_access"])
 		if(state)
-			occupant_message(SPAN_DANGER("Maintenance protocols in effect."))
+			occupant_message("<span class='danger'>Maintenance protocols in effect</span>")
 			return
 		maint_access = !maint_access
 		send_byjax(usr,"exosuit.browser","t_maint_access","[maint_access?"Forbid":"Permit"] maintenance protocols")
@@ -320,7 +320,7 @@
 				occupant_message("Disconnected from the air system port.")
 				mecha_log_message("Disconnected from gas port.")
 			else
-				occupant_message(SPAN_WARNING("Unable to disconnect from the air system port!"))
+				occupant_message("<span class='warning'>Unable to disconnect from the air system port!</span>")
 				return
 		else
 			var/obj/machinery/atmospherics/components/unary/portables_connector/possible_port = locate() in loc
@@ -328,7 +328,7 @@
 				occupant_message("Connected to the air system port.")
 				mecha_log_message("Connected to gas port.")
 			else
-				occupant_message(SPAN_WARNING("Unable to connect with air system port!"))
+				occupant_message("<span class='warning'>Unable to connect with air system port!</span>")
 				return
 		send_byjax(occupant,"exosuit.browser","t_port_connection","[internal_tank.connected_port?"Disconnect from":"Connect to"] gas port")
 
@@ -337,7 +337,7 @@
 			return
 		var/mob/living/carbon/C = occupant
 		if(!istype(C) || !C.dna)
-			to_chat(C, SPAN_DANGER(" You do not have any DNA!"))
+			to_chat(C, "<span class='danger'> You do not have any DNA!</span>")
 			return
 		dna_lock = C.dna.unique_enzymes
 		occupant_message("You feel a prick as the needle takes your DNA sample.")
@@ -352,9 +352,9 @@
 		spawn(100)
 			if(T == loc)
 				clearInternalDamage(MECHA_INT_CONTROL_LOST)
-				occupant_message(SPAN_NOTICE("Recalibration successful."))
+				occupant_message("<span class='notice'>Recalibration successful.</span>")
 				mecha_log_message("Recalibration of coordination system finished with 0 errors.")
 			else
-				occupant_message(SPAN_WARNING("Recalibration failed!"))
+				occupant_message("<span class='warning'>Recalibration failed!</span>")
 				mecha_log_message("Recalibration of coordination system failed with 1 error.", color="red")
 

@@ -5,6 +5,7 @@
 	var/article  // If non-null, overrides a/an/some in all cases
 
 	var/flags_1 = NONE
+	var/flags_2 = NONE // Sorry, we ran out of space and needed a second flag pit
 	var/interaction_flags_atom = NONE
 	var/datum/reagents/reagents = null
 
@@ -387,9 +388,9 @@
 				. += "Nothing."
 		else if(reagents.reagents_holder_flags & AMOUNT_VISIBLE)
 			if(reagents.total_volume)
-				. += SPAN_NOTICE("It has [reagents.total_volume] unit\s left.")
+				. += "<span class='notice'>It has [reagents.total_volume] unit\s left.</span>"
 			else
-				. += SPAN_DANGER("It's empty.")
+				. += "<span class='danger'>It's empty.</span>"
 
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
 
@@ -405,7 +406,7 @@
 	. = list()
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE_MORE, user, .)
 	if(!LAZYLEN(.)) // lol ..length
-		return list(SPAN_NOTICE("<i>You examine [src] closer, but find nothing of interest...</i>"))
+		return list("<span class='notice'><i>You examine [src] closer, but find nothing of interest...</i></span>")
 
 /// Updates the icon of the atom
 /atom/proc/update_icon()
@@ -443,7 +444,7 @@
 		return				//why are you buckling nonliving mobs to atoms?
 	if(user.buckle_message_cooldown <= world.time)
 		user.buckle_message_cooldown = world.time + 50
-		to_chat(user, SPAN_WARNING("You can't move while buckled to [src]!"))
+		to_chat(user, "<span class='warning'>You can't move while buckled to [src]!</span>")
 
 /atom/proc/contents_explosion(severity, target)
 	return //For handling the effects of explosions on contents that would not normally be effected
@@ -665,7 +666,7 @@
 	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(STR, /datum/component/storage.proc/handle_mass_item_insertion, things, src_object, user, progress)))
 		stoplag(1)
 	qdel(progress)
-	to_chat(user, SPAN_NOTICE("You dump as much of [src_object.parent]'s contents into [STR.insert_preposition]to [src] as you can."))
+	to_chat(user, "<span class='notice'>You dump as much of [src_object.parent]'s contents into [STR.insert_preposition]to [src] as you can.</span>")
 	if(user.active_storage) //refresh the HUD to show the transfered contents
 		user.active_storage.ui_show(user)
 	return TRUE
@@ -798,7 +799,7 @@
 				if(amount)
 					reagents.add_reagent(chosen_id, amount)
 					log_admin("[key_name(usr)] has added [amount] units of [chosen_id] to [src]")
-					message_admins(SPAN_NOTICE("[key_name(usr)] has added [amount] units of [chosen_id] to [src]"))
+					message_admins("<span class='notice'>[key_name(usr)] has added [amount] units of [chosen_id] to [src]</span>")
 	if(href_list[VV_HK_TRIGGER_EXPLOSION] && check_rights(R_FUN))
 		usr.client.cmd_admin_explosion(src)
 	if(href_list[VV_HK_TRIGGER_EMP] && check_rights(R_FUN))
@@ -885,7 +886,7 @@
 /atom/proc/multitool_check_buffer(user, obj/item/I, silent = FALSE)
 	if(!istype(I, /obj/item/multitool))
 		if(user && !silent)
-			to_chat(user, SPAN_WARNING("[I] has no data buffer!"))
+			to_chat(user, "<span class='warning'>[I] has no data buffer!</span>")
 		return FALSE
 	return TRUE
 

@@ -25,27 +25,27 @@
 	var/locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
 	if(W.GetID())
 		if(broken)
-			to_chat(user, SPAN_DANGER("It appears to be broken."))
+			to_chat(user, "<span class='danger'>It appears to be broken.</span>")
 			return
 		if(allowed(user))
 			SEND_SIGNAL(src, COMSIG_TRY_STORAGE_SET_LOCKSTATE, !locked)
 			locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
 			if(locked)
 				icon_state = icon_locked
-				to_chat(user, SPAN_DANGER("You lock the [src.name]!"))
+				to_chat(user, "<span class='danger'>You lock the [src.name]!</span>")
 				SEND_SIGNAL(src, COMSIG_TRY_STORAGE_HIDE_ALL)
 				return
 			else
 				icon_state = icon_closed
-				to_chat(user, SPAN_DANGER("You unlock the [src.name]!"))
+				to_chat(user, "<span class='danger'>You unlock the [src.name]!</span>")
 				return
 		else
-			to_chat(user, SPAN_DANGER("Access Denied."))
+			to_chat(user, "<span class='danger'>Access Denied.</span>")
 			return
 	if(!locked)
 		return ..()
 	else
-		to_chat(user, SPAN_DANGER("It's locked!"))
+		to_chat(user, "<span class='danger'>It's locked!</span>")
 
 /obj/item/storage/lockbox/emag_act(mob/user)
 	. = ..()
@@ -56,7 +56,7 @@
 	desc += "It appears to be broken."
 	icon_state = src.icon_broken
 	if(user)
-		visible_message(SPAN_WARNING("\The [src] has been broken by [user] with an electromagnetic card!"))
+		visible_message("<span class='warning'>\The [src] has been broken by [user] with an electromagnetic card!</span>")
 	return TRUE
 
 /obj/item/storage/lockbox/Entered()
@@ -111,7 +111,7 @@
 	. = ..()
 	var/locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
 	if(!locked)
-		. += SPAN_NOTICE("Alt-click to [open ? "close":"open"] it.")
+		. += "<span class='notice'>Alt-click to [open ? "close":"open"] it.</span>"
 
 /obj/item/storage/lockbox/medal/AltClick(mob/user)
 	. = ..()
@@ -235,5 +235,5 @@
 
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_SET_LOCKSTATE, !privacy_lock)
 	privacy_lock = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)
-	user.visible_message(SPAN_NOTICE("[user] [privacy_lock ? "" : "un"]locks [src]'s privacy lock."),
-					SPAN_NOTICE("You [privacy_lock ? "" : "un"]lock [src]'s privacy lock."))
+	user.visible_message("<span class='notice'>[user] [privacy_lock ? "" : "un"]locks [src]'s privacy lock.</span>",
+					"<span class='notice'>You [privacy_lock ? "" : "un"]lock [src]'s privacy lock.</span>")

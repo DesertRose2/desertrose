@@ -132,7 +132,7 @@
 	animate(pixel_z = 0, time = 1)
 	for(var/mob/living/L in get_hearers_in_view(7, src) - src)
 		shake_camera(L, 30, 1)
-		to_chat(L, SPAN_DANGER("The behemoth screams loudly!"))
+		to_chat(L, "<span class='danger'>The behemoth screams loudly!</span>")
 	SetRecoveryTime(30, 0)
 	SLEEP_CHECK_DEATH(12)
 	can_move = TRUE

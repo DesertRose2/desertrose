@@ -38,7 +38,7 @@
 	var/target = get_turf(targets[1])
 
 	if(get_dist(user,target)>range)
-		to_chat(user, SPAN_NOTICE("\The [target] is too far away!"))
+		to_chat(user, "<span class='notice'>\The [target] is too far away!</span>")
 		return
 
 	. = ..()
@@ -74,7 +74,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /obj/effect/proc_holder/spell/targeted/touch/bspie
-	name = "Quantum Banana Pie"
+	name = "Bluespace Banana Pie"
 	desc = "An entire body would fit in there!"
 	hand_path = /obj/item/melee/touch_attack/bspie
 

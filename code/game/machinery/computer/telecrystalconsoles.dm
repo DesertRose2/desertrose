@@ -32,7 +32,7 @@ GLOBAL_LIST_INIT(possible_uplinker_IDs, list("Alfa","Bravo","Charlie","Delta","E
 
 /obj/machinery/computer/telecrystals/uplinker/attackby(obj/item/I, mob/user, params)
 	if(uplinkholder)
-		to_chat(user, SPAN_NOTICE("[src] already has an uplink in it."))
+		to_chat(user, "<span class='notice'>[src] already has an uplink in it.</span>")
 		return
 	var/datum/component/uplink/hidden_uplink = I.GetComponent(/datum/component/uplink)
 	if(hidden_uplink)
@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(possible_uplinker_IDs, list("Alfa","Bravo","Charlie","Delta","E
 		update_icon()
 		updateUsrDialog()
 	else
-		to_chat(user, SPAN_NOTICE("[I] doesn't appear to be an uplink..."))
+		to_chat(user, "<span class='notice'>[I] doesn't appear to be an uplink...</span>")
 
 /obj/machinery/computer/telecrystals/uplinker/update_overlays()
 	. = ..()

@@ -24,13 +24,13 @@
 		return
 	if(!owner.getorganslot(ORGAN_SLOT_EYES))
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("You have no eyes with which to mesmerize."))
+			to_chat(owner, "<span class='warning'>You have no eyes with which to mesmerize.</span>")
 		return FALSE
 	// Check: Eyes covered?
 	var/mob/living/L = owner
 	if(istype(L) && L.is_eyes_covered() || !isturf(owner.loc))
 		if(display_error)
-			to_chat(owner, SPAN_WARNING("Your eyes are concealed from sight."))
+			to_chat(owner, "<span class='warning'>Your eyes are concealed from sight.</span>")
 		return FALSE
 	return TRUE
 
@@ -46,31 +46,31 @@
 	// Bloodsucker
 	if(target.mind && target.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER))
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("Bloodsuckers are immune to [src]."))
+			to_chat(owner, "<span class='warning'>Bloodsuckers are immune to [src].</span>")
 		return FALSE
 	// Dead/Unconscious
 	if(target.stat > CONSCIOUS)
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("Your victim is not [(target.stat == DEAD || HAS_TRAIT(target, TRAIT_FAKEDEATH))?"alive":"conscious"]."))
+			to_chat(owner, "<span class='warning'>Your victim is not [(target.stat == DEAD || HAS_TRAIT(target, TRAIT_FAKEDEATH))?"alive":"conscious"].</span>")
 		return FALSE
 	// Check: Target has eyes?
 	if(!target.getorganslot(ORGAN_SLOT_EYES))
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("They have no eyes!"))
+			to_chat(owner, "<span class='warning'>They have no eyes!</span>")
 		return FALSE
 	// Check: Target blind?
 	if(target.eye_blind > 0)
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("Your victim's eyes are glazed over. They cannot perceive you."))
+			to_chat(owner, "<span class='warning'>Your victim's eyes are glazed over. They cannot perceive you.</span>")
 		return FALSE
 	// Check: Target See Me? (behind wall)
 	if(!(owner in target.fov_view()))
 		// Sub-Check: GET CLOSER
 		//if (!(owner in range(target_range, get_turf(target)))
 		//	if (display_error)
-		//		to_chat(owner, SPAN_WARNING("You're too far from your victim."))
+		//		to_chat(owner, "<span class='warning'>You're too far from your victim.</span>")
 		if(display_error)
-			to_chat(owner, SPAN_WARNING("You're too far outside your victim's view."))
+			to_chat(owner, "<span class='warning'>You're too far outside your victim's view.</span>")
 		return FALSE
 
 	if(target.has_status_effect(STATUS_EFFECT_MESMERIZE)) // ignores facing once the windup has started
@@ -79,12 +79,12 @@
 	// Check: Facing target?
 	if(!is_A_facing_B(owner,target))	// in unsorted.dm
 		if (display_error)
-			to_chat(owner, SPAN_WARNING("You must be facing your victim."))
+			to_chat(owner, "<span class='warning'>You must be facing your victim.</span>")
 		return FALSE
 	// Check: Target facing me?
 	if (CHECK_MOBILITY(target, MOBILITY_STAND) && !is_A_facing_B(target,owner))
 		if(display_error)
-			to_chat(owner, SPAN_WARNING("Your victim must be facing you to see into your eyes."))
+			to_chat(owner, "<span class='warning'>Your victim must be facing you to see into your eyes.</span>")
 		return FALSE
 	return TRUE
 
@@ -100,7 +100,7 @@
 		DeactivatePower()
 		DeactivateRangedAbility()
 		StartCooldown()
-		to_chat(L, SPAN_WARNING("[target] has escaped your gaze!"))
+		to_chat(L, "<span class='warning'>[target] has escaped your gaze!</span>")
 		UnregisterSignal(target, COMSIG_MOVABLE_MOVED)
 
 /datum/action/bloodsucker/targeted/mesmerize/FireTargetedPower(atom/A)
@@ -127,12 +127,12 @@
 	target.apply_status_effect(STATUS_EFFECT_MESMERIZE, power_time)
 	target.face_atom(L)
 	target.Stun(power_time)
-	to_chat(L, SPAN_NOTICE("[target] is fixed in place by your hypnotic gaze."))
+	to_chat(L, "<span class='notice'>[target] is fixed in place by your hypnotic gaze.</span>")
 	target.DelayNextAction(power_time)
 	spawn(power_time)
 	if(istype(target) && success)
 		if(istype(L) && target.stat == CONSCIOUS && (target in L.fov_view(10))) // They Woke Up! (Notice if within view)
-			to_chat(L, SPAN_WARNING("[target] has snapped out of their trance."))
+			to_chat(L, "<span class='warning'>[target] has snapped out of their trance.</span>")
 
 
 /datum/action/bloodsucker/targeted/mesmerize/ContinueActive(mob/living/user, mob/living/target)

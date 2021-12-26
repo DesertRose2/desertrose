@@ -49,25 +49,25 @@
 	if(frying)
 		. += "You can make out \a [frying] in the oil."
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: Frying at <b>[fry_speed*100]%</b> speed.<br>Using <b>[oil_use*10]</b> units of oil per second.")
+		. += "<span class='notice'>The status display reads: Frying at <b>[fry_speed*100]%</b> speed.<br>Using <b>[oil_use*10]</b> units of oil per second.</span>"
 
 /obj/machinery/deepfryer/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/reagent_containers/pill))
 		if(!reagents.total_volume)
-			to_chat(user, SPAN_WARNING("There's nothing to dissolve [I] in!"))
+			to_chat(user, "<span class='warning'>There's nothing to dissolve [I] in!</span>")
 			return
-		user.visible_message(SPAN_NOTICE("[user] drops [I] into [src]."), SPAN_NOTICE("You dissolve [I] in [src]."))
+		user.visible_message("<span class='notice'>[user] drops [I] into [src].</span>", "<span class='notice'>You dissolve [I] in [src].</span>")
 		I.reagents.trans_to(src, I.reagents.total_volume)
 		qdel(I)
 		return
 	if(istype(I,/obj/item/clothing/head/mob_holder))
-		to_chat(user, SPAN_WARNING("This does not fit in the fryer.")) // TODO: Deepfrying instakills mobs, spawns a whole deep-fried mob.
+		to_chat(user, "<span class='warning'>This does not fit in the fryer.</span>") // TODO: Deepfrying instakills mobs, spawns a whole deep-fried mob.
 		return
 	if(!reagents.has_reagent(/datum/reagent/consumable/cooking_oil))
-		to_chat(user, SPAN_WARNING("[src] has no cooking oil to fry with!"))
+		to_chat(user, "<span class='warning'>[src] has no cooking oil to fry with!</span>")
 		return
 	if(I.resistance_flags & INDESTRUCTIBLE)
-		to_chat(user, SPAN_WARNING("You don't feel it would be wise to fry [I]..."))
+		to_chat(user, "<span class='warning'>You don't feel it would be wise to fry [I]...</span>")
 		return
 	if(I.GetComponent(/datum/component/fried))
 		to_chat(user, "<span class='userdanger'>Your cooking skills are not up to the legendary Doublefry technique.</span>")
@@ -83,7 +83,7 @@
 			return ..()
 		else if(!frying && user.transferItemToLoc(I, src))
 			frying = I
-			to_chat(user, SPAN_NOTICE("You put [I] into [src]."))
+			to_chat(user, "<span class='notice'>You put [I] into [src].</span>")
 			icon_state = "fryer_on"
 			fry_loop.start()
 
@@ -99,10 +99,10 @@
 		if(cook_time >= 30 && !frying_fried)
 			frying_fried = TRUE //frying... frying... fried
 			playsound(src.loc, 'sound/machines/ding.ogg', 50, 1)
-			audible_message(SPAN_NOTICE("[src] dings!"))
+			audible_message("<span class='notice'>[src] dings!</span>")
 		else if (cook_time >= 60 && !frying_burnt)
 			frying_burnt = TRUE
-			visible_message(SPAN_WARNING("[src] emits an acrid smell!"))
+			visible_message("<span class='warning'>[src] emits an acrid smell!</span>")
 
 
 /obj/machinery/deepfryer/attack_ai(mob/user)
@@ -111,7 +111,7 @@
 /obj/machinery/deepfryer/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(frying)
 		if(frying.loc == src)
-			to_chat(user, SPAN_NOTICE("You eject [frying] from [src]."))
+			to_chat(user, "<span class='notice'>You eject [frying] from [src].</span>")
 			frying.fry(cook_time)
 			icon_state = "fryer_off"
 			frying.forceMove(drop_location())
@@ -127,10 +127,10 @@
 		if(!user.CheckActionCooldown(CLICK_CD_MELEE))
 			return
 		if(user.grab_state < GRAB_AGGRESSIVE)
-			to_chat(user, SPAN_WARNING("You need a better grip to do that!"))
+			to_chat(user, "<span class='warning'>You need a better grip to do that!</span>")
 			return
 		var/mob/living/carbon/C = user.pulling
-		user.visible_message(SPAN_DANGER("[user] dunks [C]'s face in [src]!"))
+		user.visible_message("<span class = 'danger'>[user] dunks [C]'s face in [src]!</span>")
 		reagents.reaction(C, TOUCH)
 		C.apply_damage(min(30, reagents.total_volume), BURN, BODY_ZONE_HEAD)
 		reagents.remove_any((reagents.total_volume/2))

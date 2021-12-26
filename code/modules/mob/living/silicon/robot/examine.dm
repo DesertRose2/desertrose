@@ -11,32 +11,32 @@
 		. += effects_exam
 	if (getBruteLoss())
 		if (getBruteLoss() < maxHealth*0.5)
-			. += SPAN_WARNING("It looks slightly dented.")
+			. += "<span class='warning'>It looks slightly dented.</span>"
 		else
-			. += SPAN_WARNING("<B>It looks severely dented!</B>")
+			. += "<span class='warning'><B>It looks severely dented!</B></span>"
 	if (getFireLoss() || getToxLoss())
 		var/overall_fireloss = getFireLoss() + getToxLoss()
 		if (overall_fireloss < maxHealth * 0.5)
-			. += SPAN_WARNING("It looks slightly charred.")
+			. += "<span class='warning'>It looks slightly charred.</span>"
 		else
-			. += SPAN_WARNING("It looks slightly charred.")
+			. += "<span class='warning'>It looks slightly charred.</span>"
 	if (health < -maxHealth*0.5)
-		. += SPAN_WARNING("It looks barely operational.")
+		. += "<span class='warning'>It looks barely operational.</span>"
 	if (fire_stacks < 0)
-		. += SPAN_WARNING("It's covered in water.")
+		. += "<span class='warning'>It's covered in water.</span>"
 	else if (fire_stacks > 0)
-		. += SPAN_WARNING("It's coated in something flammable.")
+		. += "<span class='warning'>It's coated in something flammable.</span>"
 
 	if(opened)
-		. += SPAN_WARNING("Its cover is open and the power cell is [cell ? "installed" : "missing"].")
+		. += "<span class='warning'>Its cover is open and the power cell is [cell ? "installed" : "missing"].</span>"
 	else
 		. += "Its cover is closed[locked ? "" : ", and looks unlocked"]."
 
 	if(cell && cell.charge <= 0)
-		. += SPAN_WARNING("Its battery indicator is blinking red!")
+		. += "<span class='warning'>Its battery indicator is blinking red!</span>"
 
 	if(is_servant_of_ratvar(src) && get_dist(user, src) <= 1 && !stat) //To counter pseudo-stealth by using headlamps
-		. += SPAN_WARNING("Its eyes are glowing a blazing yellow!")
+		. += "<span class='warning'>Its eyes are glowing a blazing yellow!</span>"
 
 	switch(stat)
 		if(CONSCIOUS)
@@ -45,7 +45,7 @@
 			else if(!client)
 				. += "It appears to be in stand-by mode." //afk
 		if(UNCONSCIOUS)
-			. += SPAN_WARNING("It doesn't seem to be responding.")
+			. += "<span class='warning'>It doesn't seem to be responding.</span>"
 		if(DEAD)
 			. += "<span class='deadsay'>It looks like its system is corrupted and requires a reset.</span>"
 	. += "*---------*</span>"

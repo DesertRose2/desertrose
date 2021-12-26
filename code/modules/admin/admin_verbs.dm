@@ -584,7 +584,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		T.mind.AddSpell(new S)
 	else
 		T.AddSpell(new S)
-		message_admins(SPAN_DANGER("Spells given to mindless mobs will not be transferred in mindswap or cloning!"))
+		message_admins("<span class='danger'>Spells given to mindless mobs will not be transferred in mindswap or cloning!</span>")
 
 /client/proc/remove_spell(mob/T in GLOB.mob_list)
 	set category = "Admin.Fun"
@@ -604,7 +604,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set name = "Give Disease"
 	set desc = "Gives a Disease to a mob."
 	if(!istype(T))
-		to_chat(src, SPAN_NOTICE("You can only give a disease to a mob of type /mob/living."))
+		to_chat(src, "<span class='notice'>You can only give a disease to a mob of type /mob/living.</span>")
 		return
 	var/datum/disease/D = input("Choose the disease to give to that guy", "ACHOO") as null|anything in SSdisease.diseases
 	if(!D)

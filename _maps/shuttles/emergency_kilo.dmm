@@ -41,6 +41,7 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/escape)
 "ai" = (
+/obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "aj" = (

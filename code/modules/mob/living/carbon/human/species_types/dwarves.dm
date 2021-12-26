@@ -125,17 +125,17 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 			owner.adjustToxLoss(10)
 		if(25 to 50)
 			if(last_alcohol_spam + 20 SECONDS < world.time)
-				to_chat(owner, SPAN_DANGER("Oh DAMN, I need some brew!"))
+				to_chat(owner, "<span class='danger'>Oh DAMN, I need some brew!</span>")
 				last_alcohol_spam = world.time
 		if(51 to 75)
 			if(last_alcohol_spam + 35 SECONDS < world.time)
-				to_chat(owner, SPAN_WARNING("Your body aches, you need to get ahold of some booze..."))
+				to_chat(owner, "<span class='warning'>Your body aches, you need to get ahold of some booze...</span>")
 				last_alcohol_spam = world.time
 		if(76 to 100)
 			if(last_alcohol_spam + 40 SECONDS < world.time)
-				to_chat(owner, SPAN_NOTICE("A pint of anything would really hit the spot right now."))
+				to_chat(owner, "<span class='notice'>A pint of anything would really hit the spot right now.</span>")
 				last_alcohol_spam = world.time
 		if(101 to 150)
 			if(last_alcohol_spam + 50 SECONDS < world.time)
-				to_chat(owner, SPAN_NOTICE("You feel like you could use a good brew."))
+				to_chat(owner, "<span class='notice'>You feel like you could use a good brew.</span>")
 				last_alcohol_spam = world.time

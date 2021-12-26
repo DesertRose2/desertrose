@@ -10,18 +10,18 @@
 
 /obj/item/reagent_containers/glass/primitive_chem_isolator/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Ctrl + Click to take out chemicals.")
+	. += "<span class='notice'>Ctrl + Click to take out chemicals.</span>"
 
 /obj/item/reagent_containers/glass/primitive_chem_isolator/CtrlClick(mob/user)
 	if(!reagents)
-		to_chat(user, SPAN_WARNING("There are no chemicals to spin out."))
+		to_chat(user, "<span class='warning'>There are no chemicals to spin out.</span>")
 		return
-	to_chat(user, SPAN_NOTICE("You see some chemicals you can spin out of [src]."))
+	to_chat(user, "<span class='notice'>You see some chemicals you can spin out of [src].</span>")
 	var/datum/reagent/choice = input(user, "Which chemical would you like to remove?") as null|anything in reagents.reagent_list
 	if(!choice)
 		return
-	to_chat(user, SPAN_NOTICE("You slowly start to spin [src], attempting to remove the chemical."))
+	to_chat(user, "<span class='notice'>You slowly start to spin [src], attempting to remove the chemical.</span>")
 	if(!do_after(user, 5 SECONDS, target = src))
 		return
-	to_chat(user, SPAN_NOTICE("You successfully spin out the chemical from [src]."))
+	to_chat(user, "<span class='notice'>You successfully spin out the chemical from [src].</span>")
 	reagents.remove_reagent(choice.type, 1000)

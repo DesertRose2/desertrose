@@ -27,16 +27,16 @@
 /obj/structure/bookcase/examine(mob/user)
 	. = ..()
 	if(!anchored)
-		. += SPAN_NOTICE("The <i>bolts</i> on the bottom are unsecured.")
+		. += "<span class='notice'>The <i>bolts</i> on the bottom are unsecured.</span>"
 	if(anchored)
-		. += SPAN_NOTICE("It's secured in place with <b>bolts</b>.")
+		. += "<span class='notice'>It's secured in place with <b>bolts</b>.</span>"
 	switch(state)
 		if(0)
-			. += SPAN_NOTICE("There's a <b>small crack</b> visible on the back panel.")
+			. += "<span class='notice'>There's a <b>small crack</b> visible on the back panel.</span>"
 		if(1)
-			. += SPAN_NOTICE("There's space inside for a <i>wooden</i> shelf.")
+			. += "<span class='notice'>There's space inside for a <i>wooden</i> shelf.</span>"
 		if(2)
-			. += SPAN_NOTICE("There's a <b>small crack</b> visible on the shelf.")
+			. += "<span class='notice'>There's a <b>small crack</b> visible on the shelf.</span>"
 
 /obj/structure/bookcase/Initialize(mapload)
 	. = ..()
@@ -55,12 +55,12 @@
 		if(0)
 			if(istype(I, /obj/item/wrench))
 				if(I.use_tool(src, user, 20, volume=50))
-					to_chat(user, SPAN_NOTICE("You wrench the frame into place."))
+					to_chat(user, "<span class='notice'>You wrench the frame into place.</span>")
 					anchored = TRUE
 					state = 1
 			if(istype(I, /obj/item/crowbar))
 				if(I.use_tool(src, user, 20, volume=50))
-					to_chat(user, SPAN_NOTICE("You pry the frame apart."))
+					to_chat(user, "<span class='notice'>You pry the frame apart.</span>")
 					deconstruct(TRUE)
 
 		if(1)
@@ -68,12 +68,12 @@
 				var/obj/item/stack/sheet/mineral/wood/W = I
 				if(W.get_amount() >= 2)
 					W.use(2)
-					to_chat(user, SPAN_NOTICE("You add a shelf."))
+					to_chat(user, "<span class='notice'>You add a shelf.</span>")
 					state = 2
 					icon_state = "book-0"
 			if(istype(I, /obj/item/wrench))
 				I.play_tool_sound(src, 100)
-				to_chat(user, SPAN_NOTICE("You unwrench the frame."))
+				to_chat(user, "<span class='notice'>You unwrench the frame.</span>")
 				anchored = FALSE
 				state = 0
 
@@ -87,11 +87,11 @@
 				for(var/obj/item/T in I.contents)
 					if(istype(T, /obj/item/book) || istype(T, /obj/item/spellbook))
 						STR.remove_from_storage(T, src)
-				to_chat(user, SPAN_NOTICE("You empty \the [I] into \the [src]."))
+				to_chat(user, "<span class='notice'>You empty \the [I] into \the [src].</span>")
 				update_icon()
 			else if(istype(I, /obj/item/pen))
 				if(!user.is_literate())
-					to_chat(user, SPAN_NOTICE("You scribble illegibly on the side of [src]!"))
+					to_chat(user, "<span class='notice'>You scribble illegibly on the side of [src]!</span>")
 					return
 				var/newname = stripped_input(user, "What would you like to title this bookshelf?")
 				if(!user.canUseTopic(src, BE_CLOSE))
@@ -102,10 +102,10 @@
 					name = "bookcase ([sanitize(newname)])"
 			else if(istype(I, /obj/item/crowbar))
 				if(contents.len)
-					to_chat(user, SPAN_WARNING("You need to remove the books first!"))
+					to_chat(user, "<span class='warning'>You need to remove the books first!</span>")
 				else
 					I.play_tool_sound(src, 100)
-					to_chat(user, SPAN_NOTICE("You pry the shelf out."))
+					to_chat(user, "<span class='notice'>You pry the shelf out.</span>")
 					new /obj/item/stack/sheet/mineral/wood(drop_location(), 2)
 					state = 1
 					icon_state = "bookempty"
@@ -131,7 +131,7 @@
 /obj/structure/bookcase/attack_ghost(mob/dead/observer/user)
 	. = ..()
 	if(!length(contents))
-		to_chat(user, SPAN_WARNING("It's empty!"))
+		to_chat(user, "<span class='warning'>It's empty!</span>")
 		return
 	var/obj/item/book/choice = input("Which book would you like to read?") as null|obj in contents
 	if(choice)
@@ -204,16 +204,16 @@
 
 /obj/item/book/attack_self(mob/user)
 	if(is_blind(user))
-		to_chat(user, SPAN_WARNING("As you are trying to read, you suddenly feel very stupid!"))
+		to_chat(user, "<span class='warning'>As you are trying to read, you suddenly feel very stupid!</span>")
 		return
 	if(ismonkey(user))
-		to_chat(user, SPAN_NOTICE("You skim through the book but can't comprehend any of it."))
+		to_chat(user, "<span class='notice'>You skim through the book but can't comprehend any of it.</span>")
 		return
 	if(dat)
 		show_to(user)
 		user.visible_message("[user] opens a book titled \"[title]\" and begins reading intently.")
 	else
-		to_chat(user, SPAN_NOTICE("This book is completely blank!"))
+		to_chat(user, "<span class='notice'>This book is completely blank!</span>")
 
 /obj/item/book/attack_ghost(mob/dead/observer/O)
 	. = ..()
@@ -225,14 +225,14 @@
 /obj/item/book/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/pen))
 		if(is_blind(user))
-			to_chat(user, SPAN_WARNING(" As you are trying to write on the book, you suddenly feel very stupid!"))
+			to_chat(user, "<span class='warning'> As you are trying to write on the book, you suddenly feel very stupid!</span>")
 			return
 		if(unique)
-			to_chat(user, SPAN_WARNING("These pages don't seem to take the ink well! Looks like you can't modify it."))
+			to_chat(user, "<span class='warning'>These pages don't seem to take the ink well! Looks like you can't modify it.</span>")
 			return
 		var/literate = user.is_literate()
 		if(!literate)
-			to_chat(user, SPAN_NOTICE("You scribble illegibly on the cover of [src]!"))
+			to_chat(user, "<span class='notice'>You scribble illegibly on the cover of [src]!</span>")
 			return
 		var/choice = input("What would you like to change?") in list("Title", "Contents", "Author", "Cancel")
 		if(!user.canUseTopic(src, BE_CLOSE, literate))
@@ -303,9 +303,9 @@
 					to_chat(user, "[I]'s screen flashes: 'Book stored in buffer. Title added to general inventory.'")
 
 	else if(istype(I, /obj/item/kitchen/knife) || istype(I, /obj/item/wirecutters))
-		to_chat(user, SPAN_NOTICE("You begin to carve out [title]..."))
+		to_chat(user, "<span class='notice'>You begin to carve out [title]...</span>")
 		if(do_after(user, 30, target = src))
-			to_chat(user, SPAN_NOTICE("You carve out the pages from [title]! You didn't want to read it anyway."))
+			to_chat(user, "<span class='notice'>You carve out the pages from [title]! You didn't want to read it anyway.</span>")
 			var/obj/item/storage/book/B = new
 			B.name = src.name
 			B.title = src.title

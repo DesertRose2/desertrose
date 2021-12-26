@@ -94,7 +94,7 @@
 	if(is_type_in_typecache(target,wanted_objects)) //we eats
 		udder.generateMilk()
 		regenerate_icons()
-		visible_message(SPAN_NOTICE("[src] slurps up [target]."))
+		visible_message("<span class='notice'>[src] slurps up [target].</span>")
 		qdel(target)
 	return ..()
 

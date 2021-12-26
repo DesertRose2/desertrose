@@ -713,7 +713,7 @@
 
 	for(var/obj/item/reagent_containers/syringe/dart/D in contents)
 		if(round(target.reagents.total_volume, 1) <= 0)
-			to_chat(user, SPAN_NOTICE("You soak as many of the darts as you can with the contents from [target]."))
+			to_chat(user, "<span class='notice'>You soak as many of the darts as you can with the contents from [target].</span>")
 			return
 		if(D.mode == SYRINGE_INJECT)
 			continue
@@ -931,7 +931,7 @@
 /obj/item/storage/belt/sabre/examine(mob/user)
 	. = ..()
 	if(length(contents))
-		. += SPAN_NOTICE("Alt-click it to quickly draw the blade.")
+		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
 
 /obj/item/storage/belt/sabre/PopulateContents()
 	new starting_sword(src)
@@ -1051,19 +1051,19 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, SPAN_WARNING("Your hands are full!"))
+		to_chat(user, "<span class='warning'>Your hands are full!</span>")
 		return
 	var/obj/item/ammo_casing/caseless/arrow/L = locate() in contents
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, SPAN_NOTICE("You take \a [L] out of the quiver."))
+		to_chat(user, "<span class='notice'>You take \a [L] out of the quiver.</span>")
 		return TRUE
 	var/obj/item/ammo_casing/caseless/W = locate() in contents
 	if(W && contents.len > 0)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, user)
 		user.put_in_hands(W)
-		to_chat(user, SPAN_NOTICE("You take \a [W] out of the quiver."))
+		to_chat(user, "<span class='notice'>You take \a [W] out of the quiver.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("There is nothing left in the quiver."))
+		to_chat(user, "<span class='notice'>There is nothing left in the quiver.</span>")
 	return TRUE

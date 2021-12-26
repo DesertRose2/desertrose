@@ -26,12 +26,12 @@
 		var/success = C.equip_to_slot_if_possible(new /obj/item/clothing/gloves/color/yellow/sprayon, ITEM_SLOT_GLOVES, TRUE, TRUE, clothing_check = TRUE)
 		if(success)
 			if(C == user)
-				C.visible_message(SPAN_NOTICE("[U] sprays their hands with glittery rubber!"))
+				C.visible_message("<span class='notice'>[U] sprays their hands with glittery rubber!</span>")
 			else
-				C.visible_message(SPAN_WARNING("[U] sprays glittery rubber on the hands of [C]!"))
+				C.visible_message("<span class='warning'>[U] sprays glittery rubber on the hands of [C]!</span>")
 		else
-			user.visible_message(SPAN_WARNING("The rubber fails to stick to [C]'s hands!"),
-				SPAN_WARNING("The rubber fails to stick to [C]'s [(SLOT_GLOVES in C.check_obscured_slots()) ? "unexposed" : ""] hands!"))
+			user.visible_message("<span class='warning'>The rubber fails to stick to [C]'s hands!</span>",
+				"<span class='warning'>The rubber fails to stick to [C]'s [(SLOT_GLOVES in C.check_obscured_slots()) ? "unexposed" : ""] hands!</span>")
 
 		qdel(src)
 
@@ -101,7 +101,7 @@
 /obj/item/clothing/gloves/color/yellow/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
 		if(can_be_cut && icon_state == initial(icon_state))//only if not dyed
-			to_chat(user, SPAN_NOTICE("You snip the fingertips off of [src]."))
+			to_chat(user, "<span class='notice'>You snip the fingertips off of [src].</span>")
 			I.play_tool_sound(src)
 			new /obj/item/clothing/gloves/cut(drop_location())
 			qdel(src)
@@ -110,7 +110,7 @@
 /obj/item/clothing/gloves/color/fyellow/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
 		if(can_be_cut && icon_state == initial(icon_state))//only if not dyed
-			to_chat(user, SPAN_NOTICE("You snip the fingertips off of [src]."))
+			to_chat(user, "<span class='notice'>You snip the fingertips off of [src].</span>")
 			I.play_tool_sound(src)
 			new /obj/item/clothing/gloves/cut(drop_location())
 			qdel(src)
@@ -132,7 +132,7 @@
 /obj/item/clothing/gloves/color/black/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
 		if(can_be_cut && icon_state == initial(icon_state))//only if not dyed
-			to_chat(user, SPAN_NOTICE("You snip the fingertips off of [src]."))
+			to_chat(user, "<span class='notice'>You snip the fingertips off of [src].</span>")
 			I.play_tool_sound(src)
 			new /obj/item/clothing/gloves/fingerless(drop_location())
 			qdel(src)

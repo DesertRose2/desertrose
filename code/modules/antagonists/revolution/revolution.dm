@@ -115,7 +115,7 @@
 	var/list/L = owner.current.get_contents()
 	var/obj/item/assembly/flash/flash = locate() in L
 	if (!flash)
-		to_chat(admin, SPAN_DANGER("Deleting flash failed!"))
+		to_chat(admin, "<span class='danger'>Deleting flash failed!</span>")
 		return
 	qdel(flash)
 
@@ -136,7 +136,7 @@
 	var/list/L = owner.current.get_contents()
 	var/obj/item/assembly/flash/flash = locate() in L
 	if (!flash)
-		to_chat(admin, SPAN_DANGER("Repairing flash failed!"))
+		to_chat(admin, "<span class='danger'>Repairing flash failed!</span>")
 	else
 		flash.crit_fail = 0
 		flash.update_icon()

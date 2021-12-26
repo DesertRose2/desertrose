@@ -33,7 +33,7 @@
 
 /obj/item/clockwork/construct_chassis/on_attack_hand(mob/living/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(w_class >= WEIGHT_CLASS_HUGE)
-		to_chat(user, SPAN_WARNING("[src] is too cumbersome to carry! Drag it around instead!"))
+		to_chat(user, "<span class='warning'>[src] is too cumbersome to carry! Drag it around instead!</span>")
 		return
 	. = ..()
 
@@ -42,16 +42,16 @@
 	if(!user.can_reenter_round())
 		return FALSE
 	if(!SSticker.mode)
-		to_chat(user, SPAN_DANGER("You cannot use that before the game has started."))
+		to_chat(user, "<span class='danger'>You cannot use that before the game has started.</span>")
 		return
 	if(QDELETED(src))
-		to_chat(user, SPAN_DANGER("You were too late! Better luck next time."))
+		to_chat(user, "<span class='danger'>You were too late! Better luck next time.</span>")
 		return
 	user.forceMove(get_turf(src)) //If we attack through the alert, jump to the chassis so we know what we're getting into
 	if(alert(user, "Become a [construct_name]? You can no longer be cloned!", construct_name, "Yes", "Cancel") == "Cancel")
 		return
 	if(QDELETED(src))
-		to_chat(user, SPAN_DANGER("You were too late! Better luck next time."))
+		to_chat(user, "<span class='danger'>You were too late! Better luck next time.</span>")
 		return
 	pre_spawn()
 	visible_message(creation_message)

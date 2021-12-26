@@ -36,10 +36,10 @@
 /obj/machinery/gibber/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += SPAN_NOTICE("The status display reads: Outputting <b>[meat_produced]</b> meat slab(s) after <b>[gibtime*0.1]</b> seconds of processing.")
+		. += "<span class='notice'>The status display reads: Outputting <b>[meat_produced]</b> meat slab(s) after <b>[gibtime*0.1]</b> seconds of processing.</span>"
 		for(var/obj/item/stock_parts/manipulator/M in component_parts)
 			if(M.rating >= 2)
-				. += SPAN_NOTICE("Gibber has been upgraded to process inorganic materials.")
+				. += "<span class='notice'>Gibber has been upgraded to process inorganic materials.</span>"
 
 /obj/machinery/gibber/update_overlays()
 	. = ..()
@@ -67,36 +67,36 @@
 	if(stat & (NOPOWER|BROKEN))
 		return
 	if(operating)
-		to_chat(user, SPAN_DANGER("It's locked and running."))
+		to_chat(user, "<span class='danger'>It's locked and running.</span>")
 		return
 
 	if(!anchored)
-		to_chat(user, SPAN_NOTICE("[src] cannot be used unless bolted to the ground."))
+		to_chat(user, "<span class='notice'>[src] cannot be used unless bolted to the ground.</span>")
 		return
 
 	if(user.pulling && user.a_intent == INTENT_GRAB && isliving(user.pulling))
 		var/mob/living/L = user.pulling
 		if(!iscarbon(L))
-			to_chat(user, SPAN_DANGER("This item is not suitable for the gibber!"))
+			to_chat(user, "<span class='danger'>This item is not suitable for the gibber!</span>")
 			return
 		var/mob/living/carbon/C = L
 		if(C.buckled ||C.has_buckled_mobs())
-			to_chat(user, SPAN_WARNING("[C] is attached to something!"))
+			to_chat(user, "<span class='warning'>[C] is attached to something!</span>")
 			return
 
 		if(!ignore_clothing)
 			for(var/obj/item/I in C.held_items + C.get_equipped_items())
 				if(!HAS_TRAIT(I, TRAIT_NODROP))
-					to_chat(user, SPAN_DANGER("Subject may not have abiotic items on."))
+					to_chat(user, "<span class='danger'>Subject may not have abiotic items on.</span>")
 					return
 
-		user.visible_message(SPAN_DANGER("[user] starts to put [C] into the gibber!"))
+		user.visible_message("<span class='danger'>[user] starts to put [C] into the gibber!</span>")
 
 		add_fingerprint(user)
 
 		if(do_after(user, gibtime, target = src))
 			if(C && user.pulling == C && !C.buckled && !C.has_buckled_mobs() && !occupant)
-				user.visible_message(SPAN_DANGER("[user] stuffs [C] into the gibber!"))
+				user.visible_message("<span class='danger'>[user] stuffs [C] into the gibber!</span>")
 				C.forceMove(src)
 				occupant = C
 				update_icon()

@@ -191,7 +191,7 @@
 
 /mob/living/silicon/pai/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE, no_tk=FALSE)
 	if(be_close && !in_range(M, src))
-		to_chat(src, SPAN_WARNING("You are too far away!"))
+		to_chat(src, "<span class='warning'>You are too far away!</span>")
 		return FALSE
 	return TRUE
 
@@ -280,7 +280,7 @@
 	if(cable)
 		if(get_dist(src, cable) > 1)
 			var/turf/T = get_turf(src.loc)
-			T.visible_message(SPAN_WARNING("[src.cable] rapidly retracts back into its spool."), "<span class='italics'>You hear a click and the sound of wire spooling rapidly.</span>")
+			T.visible_message("<span class='warning'>[src.cable] rapidly retracts back into its spool.</span>", "<span class='italics'>You hear a click and the sound of wire spooling rapidly.</span>")
 			qdel(src.cable)
 			cable = null
 
@@ -313,12 +313,12 @@
 	if(radio_short_timerid)
 		deltimer(radio_short_timerid)
 	radio_short = TRUE
-	to_chat(src, SPAN_DANGER("Your radio shorts out!"))
+	to_chat(src, "<span class='danger'>Your radio shorts out!</span>")
 	radio_short_timerid = addtimer(CALLBACK(src, .proc/unshort_radio), radio_short_cooldown, flags = TIMER_STOPPABLE)
 
 /mob/living/silicon/pai/proc/unshort_radio()
 	radio_short = FALSE
-	to_chat(src, SPAN_DANGER("You feel your radio is operational once more."))
+	to_chat(src, "<span class='danger'>You feel your radio is operational once more.</span>")
 	if(radio_short_timerid)
 		deltimer(radio_short_timerid)
 

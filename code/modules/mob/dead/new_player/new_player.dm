@@ -52,12 +52,10 @@
 	*/
 		output += "<p>Please be patient, the game is starting soon!</p>"
 		output += "<p><a href='byond://?src=[REF(src)];refresh=1'>(Refresh)</a></p>"
-		output += "<p><a href='byond://?src=[REF(src)];refresh_chat=1)'>(Fix Chat Window)</a></p>"
 	else
 		output += "<p><a href='byond://?src=[REF(src)];manifest=1'>View the Crew Manifest</a></p>"
 		output += "<p><a href='byond://?src=[REF(src)];late_join=1'>Join Game!</a></p>"
 		output += "<p>[LINKIFY_READY("Observe", PLAYER_READY_TO_OBSERVE)]</p>"
-		output += "<p><a href='byond://?src=[REF(src)];refresh_chat=1)'>(Fix Chat Window)</a></p>"
 
 	if(!IsGuestKey(src.key))
 		if (SSdbcore.Connect())
@@ -239,12 +237,9 @@
 		src << browse(null, "window=playersetup") //closes the player setup window
 		new_player_panel()
 
-	if(href_list["refresh_chat"]) //fortuna addition. asset delivery pain
-		client.nuke_chat()
-
 	if(href_list["late_join"])
 		if(!SSticker || !SSticker.IsRoundInProgress())
-			to_chat(usr, SPAN_DANGER("The round is either not ready, or has already finished..."))
+			to_chat(usr, "<span class='danger'>The round is either not ready, or has already finished...</span>")
 			return
 
 		if(href_list["late_join"] == "override")
@@ -252,16 +247,16 @@
 			return
 
 		if(SSticker.queued_players.len || (relevant_cap && living_player_count() >= relevant_cap && !(ckey(key) in GLOB.admin_datums)))
-			to_chat(usr, SPAN_DANGER("[CONFIG_GET(string/hard_popcap_message)]"))
+			to_chat(usr, "<span class='danger'>[CONFIG_GET(string/hard_popcap_message)]</span>")
 
 			var/queue_position = SSticker.queued_players.Find(usr)
 			if(queue_position == 1)
-				to_chat(usr, SPAN_NOTICE("You are next in line to join the game. You will be notified when a slot opens up."))
+				to_chat(usr, "<span class='notice'>You are next in line to join the game. You will be notified when a slot opens up.</span>")
 			else if(queue_position)
-				to_chat(usr, SPAN_NOTICE("There are [queue_position-1] players in front of you in the queue to join the game."))
+				to_chat(usr, "<span class='notice'>There are [queue_position-1] players in front of you in the queue to join the game.</span>")
 			else
 				SSticker.queued_players += usr
-				to_chat(usr, SPAN_NOTICE("You have been added to the queue to join the game. Your position in queue is [SSticker.queued_players.len]."))
+				to_chat(usr, "<span class='notice'>You have been added to the queue to join the game. Your position in queue is [SSticker.queued_players.len].</span>")
 			return
 		LateChoices()
 
@@ -273,16 +268,16 @@
 			var/msg = "[key_name(usr)] attempted to join the round using a href that shouldn't be available at this moment!"
 			log_admin(msg)
 			message_admins(msg)
-			to_chat(usr, SPAN_DANGER("The round is either not ready, or has already finished..."))
+			to_chat(usr, "<span class='danger'>The round is either not ready, or has already finished...</span>")
 			return
 
 		if(!GLOB.enter_allowed)
-			to_chat(usr, SPAN_NOTICE("There is an administrative lock on entering the game!"))
+			to_chat(usr, "<span class='notice'>There is an administrative lock on entering the game!</span>")
 			return
 
 		if(SSticker.queued_players.len && !(ckey(key) in GLOB.admin_datums))
 			if((living_player_count() >= relevant_cap) || (src != SSticker.queued_players[1]))
-				to_chat(usr, SPAN_WARNING("Server is full."))
+				to_chat(usr, "<span class='warning'>Server is full.</span>")
 				return
 
 		AttemptLateSpawn(href_list["SelectedJob"])
@@ -290,11 +285,11 @@
 
 	if(href_list["JoinAsGhostRole"])
 		if(!GLOB.enter_allowed)
-			to_chat(usr, SPAN_NOTICE(" There is an administrative lock on entering the game!"))
+			to_chat(usr, "<span class='notice'> There is an administrative lock on entering the game!</span>")
 
 		if(SSticker.queued_players.len && !(ckey(key) in GLOB.admin_datums))
 			if((living_player_count() >= relevant_cap) || (src != SSticker.queued_players[1]))
-				to_chat(usr, SPAN_WARNING("Server is full."))
+				to_chat(usr, "<span class='warning'>Server is full.</span>")
 				return
 
 		var/obj/effect/mob_spawn/MS = pick(GLOB.mob_spawners[href_list["JoinAsGhostRole"]])
@@ -327,15 +322,15 @@
 			if(POLLTYPE_OPTION)
 				var/optionid = text2num(href_list["voteoptionid"])
 				if(vote_on_poll(pollid, optionid))
-					to_chat(usr, SPAN_NOTICE("Vote successful."))
+					to_chat(usr, "<span class='notice'>Vote successful.</span>")
 				else
-					to_chat(usr, SPAN_DANGER("Vote failed, please try again or contact an administrator."))
+					to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
 			if(POLLTYPE_TEXT)
 				var/replytext = href_list["replytext"]
 				if(log_text_poll_reply(pollid, replytext))
-					to_chat(usr, SPAN_NOTICE("Feedback logging successful."))
+					to_chat(usr, "<span class='notice'>Feedback logging successful.</span>")
 				else
-					to_chat(usr, SPAN_DANGER("Feedback logging failed, please try again or contact an administrator."))
+					to_chat(usr, "<span class='danger'>Feedback logging failed, please try again or contact an administrator.</span>")
 			if(POLLTYPE_RATING)
 				var/id_min = text2num(href_list["minid"])
 				var/id_max = text2num(href_list["maxid"])
@@ -356,9 +351,9 @@
 								return
 
 						if(!vote_on_numval_poll(pollid, optionid, rating))
-							to_chat(usr, SPAN_DANGER("Vote failed, please try again or contact an administrator."))
+							to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
 							return
-				to_chat(usr, SPAN_NOTICE("Vote successful."))
+				to_chat(usr, "<span class='notice'>Vote successful.</span>")
 			if(POLLTYPE_MULTI)
 				var/id_min = text2num(href_list["minoptionid"])
 				var/id_max = text2num(href_list["maxoptionid"])
@@ -374,21 +369,21 @@
 							if(0)
 								continue
 							if(1)
-								to_chat(usr, SPAN_DANGER("Vote failed, please try again or contact an administrator."))
+								to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
 								return
 							if(2)
-								to_chat(usr, SPAN_DANGER("Maximum replies reached."))
+								to_chat(usr, "<span class='danger'>Maximum replies reached.</span>")
 								break
-				to_chat(usr, SPAN_NOTICE("Vote successful."))
+				to_chat(usr, "<span class='notice'>Vote successful.</span>")
 			if(POLLTYPE_IRV)
 				if (!href_list["IRVdata"])
-					to_chat(src, SPAN_DANGER("No ordering data found. Please try again or contact an administrator."))
+					to_chat(src, "<span class='danger'>No ordering data found. Please try again or contact an administrator.</span>")
 					return
 				var/list/votelist = splittext(href_list["IRVdata"], ",")
 				if (!vote_on_irv_poll(pollid, votelist))
-					to_chat(src, SPAN_DANGER("Vote failed, please try again or contact an administrator."))
+					to_chat(src, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
 					return
-				to_chat(src, SPAN_NOTICE("Vote successful."))
+				to_chat(src, "<span class='notice'>Vote successful.</span>")
 
 //When you cop out of the round (NB: this HAS A SLEEP FOR PLAYER INPUT IN IT)
 /mob/dead/new_player/proc/make_me_an_observer()
@@ -410,11 +405,11 @@
 	observer.started_as_observer = TRUE
 	close_spawn_windows()
 	var/obj/effect/landmark/observer_start/O = locate(/obj/effect/landmark/observer_start) in GLOB.landmarks_list
-	to_chat(src, SPAN_NOTICE("Now teleporting."))
+	to_chat(src, "<span class='notice'>Now teleporting.</span>")
 	if (O)
 		observer.forceMove(O.loc)
 	else
-		to_chat(src, SPAN_NOTICE("Teleporting failed. Ahelp an admin please"))
+		to_chat(src, "<span class='notice'>Teleporting failed. Ahelp an admin please</span>")
 		stack_trace("There's no freaking observer landmark available on this map or you're making observers before the map is initialised")
 	transfer_ckey(observer, FALSE)
 	observer.client = client
@@ -736,7 +731,7 @@
 		has_antags = TRUE
 	if(client.prefs.job_preferences.len == 0)
 		if(!ineligible_for_roles)
-			to_chat(src, SPAN_DANGER("You have no jobs enabled, along with return to lobby if job is unavailable. This makes you ineligible for any round start role, please update your job preferences."))
+			to_chat(src, "<span class='danger'>You have no jobs enabled, along with return to lobby if job is unavailable. This makes you ineligible for any round start role, please update your job preferences.</span>")
 		ineligible_for_roles = TRUE
 		ready = PLAYER_NOT_READY
 		if(has_antags)

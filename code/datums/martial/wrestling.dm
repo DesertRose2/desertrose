@@ -49,12 +49,12 @@
 
 /datum/action/slam/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't WRESTLE while you're OUT FOR THE COUNT."))
+		to_chat(owner, "<span class='warning'>You can't WRESTLE while you're OUT FOR THE COUNT.</span>")
 		return
 	if(HAS_TRAIT(owner, TRAIT_PACIFISM))
-		to_chat(owner, SPAN_WARNING("You are too HIPPIE to WRESTLE other living beings!"))
+		to_chat(owner, "<span class='warning'>You are too HIPPIE to WRESTLE other living beings!</span>")
 		return
-	owner.visible_message(SPAN_DANGER("[owner] prepares to BODY SLAM!"), "<b><i>Your next attack will be a BODY SLAM.</i></b>")
+	owner.visible_message("<span class='danger'>[owner] prepares to BODY SLAM!</span>", "<b><i>Your next attack will be a BODY SLAM.</i></b>")
 	var/mob/living/carbon/human/H = owner
 	H.mind.martial_art.streak = "slam"
 
@@ -64,12 +64,12 @@
 
 /datum/action/throw_wrassle/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't WRESTLE while you're OUT FOR THE COUNT."))
+		to_chat(owner, "<span class='warning'>You can't WRESTLE while you're OUT FOR THE COUNT.</span>")
 		return
 	if(HAS_TRAIT(owner, TRAIT_PACIFISM))
-		to_chat(owner, SPAN_WARNING("You are too HIPPIE to WRESTLE other living beings!"))
+		to_chat(owner, "<span class='warning'>You are too HIPPIE to WRESTLE other living beings!</span>")
 		return
-	owner.visible_message(SPAN_DANGER("[owner] prepares to THROW!"), "<b><i>Your next attack will be a THROW.</i></b>")
+	owner.visible_message("<span class='danger'>[owner] prepares to THROW!</span>", "<b><i>Your next attack will be a THROW.</i></b>")
 	var/mob/living/carbon/human/H = owner
 	H.mind.martial_art.streak = "throw"
 
@@ -79,12 +79,12 @@
 
 /datum/action/kick/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't WRESTLE while you're OUT FOR THE COUNT."))
+		to_chat(owner, "<span class='warning'>You can't WRESTLE while you're OUT FOR THE COUNT.</span>")
 		return
 	if(HAS_TRAIT(owner, TRAIT_PACIFISM))
-		to_chat(owner, SPAN_WARNING("You are too HIPPIE to WRESTLE other living beings!"))
+		to_chat(owner, "<span class='warning'>You are too HIPPIE to WRESTLE other living beings!</span>")
 		return
-	owner.visible_message(SPAN_DANGER("[owner] prepares to KICK!"), "<b><i>Your next attack will be a KICK.</i></b>")
+	owner.visible_message("<span class='danger'>[owner] prepares to KICK!</span>", "<b><i>Your next attack will be a KICK.</i></b>")
 	var/mob/living/carbon/human/H = owner
 	H.mind.martial_art.streak = "kick"
 
@@ -94,12 +94,12 @@
 
 /datum/action/strike/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't WRESTLE while you're OUT FOR THE COUNT."))
+		to_chat(owner, "<span class='warning'>You can't WRESTLE while you're OUT FOR THE COUNT.</span>")
 		return
 	if(HAS_TRAIT(owner, TRAIT_PACIFISM))
-		to_chat(owner, SPAN_WARNING("You are too HIPPIE to WRESTLE other living beings!"))
+		to_chat(owner, "<span class='warning'>You are too HIPPIE to WRESTLE other living beings!</span>")
 		return
-	owner.visible_message(SPAN_DANGER("[owner] prepares to STRIKE!"), "<b><i>Your next attack will be a STRIKE.</i></b>")
+	owner.visible_message("<span class='danger'>[owner] prepares to STRIKE!</span>", "<b><i>Your next attack will be a STRIKE.</i></b>")
 	var/mob/living/carbon/human/H = owner
 	H.mind.martial_art.streak = "strike"
 
@@ -109,19 +109,19 @@
 
 /datum/action/drop/Trigger()
 	if(owner.incapacitated())
-		to_chat(owner, SPAN_WARNING("You can't WRESTLE while you're OUT FOR THE COUNT."))
+		to_chat(owner, "<span class='warning'>You can't WRESTLE while you're OUT FOR THE COUNT.</span>")
 		return
 	if(HAS_TRAIT(owner, TRAIT_PACIFISM))
-		to_chat(owner, SPAN_WARNING("You are too HIPPIE to WRESTLE other living beings!"))
+		to_chat(owner, "<span class='warning'>You are too HIPPIE to WRESTLE other living beings!</span>")
 		return
-	owner.visible_message(SPAN_DANGER("[owner] prepares to LEG DROP!"), "<b><i>Your next attack will be a LEG DROP.</i></b>")
+	owner.visible_message("<span class='danger'>[owner] prepares to LEG DROP!</span>", "<b><i>Your next attack will be a LEG DROP.</i></b>")
 	var/mob/living/carbon/human/H = owner
 	H.mind.martial_art.streak = "drop"
 
 /datum/martial_art/wrestling/teach(mob/living/carbon/human/H,make_temporary=0)
 	if(..())
 		to_chat(H, "<span class = 'userdanger'>SNAP INTO A THIN TIM!</span>")
-		to_chat(H, SPAN_DANGER("Place your cursor over a move at the top of the screen to see what it does."))
+		to_chat(H, "<span class = 'danger'>Place your cursor over a move at the top of the screen to see what it does.</span>")
 		drop.Grant(H)
 		kick.Grant(H)
 		slam.Grant(H)
@@ -152,7 +152,7 @@
 	D.setDir(get_dir(D, A))
 
 	D.Stun(80)
-	A.visible_message(SPAN_DANGER("<B>[A] starts spinning around with [D]!</B>"))
+	A.visible_message("<span class = 'danger'><B>[A] starts spinning around with [D]!</B></span>")
 	A.emote("scream")
 
 	for (var/i = 0, i < 20, i++)
@@ -203,7 +203,7 @@
 
 		D.forceMove(A.loc) // Maybe this will help with the wallthrowing bug.
 
-		A.visible_message(SPAN_DANGER("<B>[A] throws [D]!</B>"))
+		A.visible_message("<span class = 'danger'><B>[A] throws [D]!</B></span>")
 		playsound(A.loc, "swing_hit", 50, 1)
 		var/turf/T = get_edge_target_turf(A, A.dir)
 		if (T && isturf(T))
@@ -238,7 +238,7 @@
 	A.setDir(get_dir(A, D))
 	D.setDir(get_dir(D, A))
 
-	A.visible_message(SPAN_DANGER("<B>[A] lifts [D] up!</B>"))
+	A.visible_message("<span class = 'danger'><B>[A] lifts [D] up!</B></span>")
 
 	FlipAnimation()
 
@@ -308,7 +308,7 @@
 			if (3)
 				fluff = "atomic [fluff]"
 
-		A.visible_message(SPAN_DANGER("<B>[A] [fluff] [D]!</B>"))
+		A.visible_message("<span class = 'danger'><B>[A] [fluff] [D]!</B></span>")
 		playsound(A.loc, "swing_hit", 50, 1)
 		if (!D.stat)
 			D.emote("scream")
@@ -352,7 +352,7 @@
 		A.forceMove(D.loc)
 		addtimer(CALLBACK(src, .proc/CheckStrikeTurf, A, T), 4)
 
-		A.visible_message(SPAN_DANGER("<b>[A] headbutts [D]!</b>"))
+		A.visible_message("<span class = 'danger'><b>[A] headbutts [D]!</b></span>")
 		D.apply_damage(damage + 15, BRUTE)
 		playsound(A.loc, "swing_hit", 50, 1)
 		D.Unconscious(20)
@@ -366,7 +366,7 @@
 	A.emote("flip")
 	A.setDir(turn(A.dir, 90))
 
-	A.visible_message(SPAN_DANGER("<B>[A] roundhouse-kicks [D]!</B>"))
+	A.visible_message("<span class = 'danger'><B>[A] roundhouse-kicks [D]!</B></span>")
 	playsound(A.loc, "swing_hit", 50, 1)
 	D.apply_damage(damage + 15, STAMINA)
 
@@ -399,7 +399,7 @@
 
 	if (surface && (ST && isturf(ST)))
 		A.forceMove(ST)
-		A.visible_message(SPAN_DANGER("<B>[A] climbs onto [surface]!</b>"))
+		A.visible_message("<span class = 'danger'><B>[A] climbs onto [surface]!</b></span>")
 		A.pixel_y = 10
 		falling = 1
 		sleep(10)
@@ -410,7 +410,7 @@
 		if ((falling == 0 && get_dist(A, D) > 1) || (falling == 1 && get_dist(A, D) > 2)) // We climbed onto stuff.
 			A.pixel_y = 0
 			if (falling == 1)
-				A.visible_message(SPAN_DANGER("<B>...and dives head-first into the ground, ouch!</b>"))
+				A.visible_message("<span class = 'danger'><B>...and dives head-first into the ground, ouch!</b></span>")
 				A.apply_damage(damage + 15, BRUTE)
 				A.DefaultCombatKnockdown(60)
 			to_chat(A, "[D] is too far away!")
@@ -435,7 +435,7 @@
 
 		A.forceMove(D.loc)
 
-		A.visible_message(SPAN_DANGER("<B>[A] leg-drops [D]!</B>"))
+		A.visible_message("<span class = 'danger'><B>[A] leg-drops [D]!</B></span>")
 		playsound(A.loc, "swing_hit", 50, 1)
 		A.emote("scream")
 
@@ -473,7 +473,7 @@
 	if(A.pulling == D || A == D) // don't stun grab yoursel
 		return FALSE
 	A.start_pulling(D)
-	D.visible_message(SPAN_DANGER("[A] gets [D] in a cinch!"), \
+	D.visible_message("<span class='danger'>[A] gets [D] in a cinch!</span>", \
 								"<span class='userdanger'>[A] gets [D] in a cinch!</span>")
 	D.Stun(rand(60,100))
 	log_combat(A, D, "cinched")

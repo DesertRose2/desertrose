@@ -10,7 +10,7 @@
 /obj/item/modkit/pre_attack(obj/item/I, mob/user)
 	if(is_type_in_list(I, target_items))
 		var/obj/item/R = new result_item(get_turf(user))
-		to_chat(user, SPAN_NOTICE("You apply the [src] to [I], using the custom parts to turn it into [R]."))
+		to_chat(user, "<span class='notice'>You apply the [src] to [I], using the custom parts to turn it into [R].</span>")
 		remove_item_from_storage(I)
 		qdel(I)
 		user.put_in_hands(R)
@@ -244,7 +244,7 @@
 	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/mutie
 
 /obj/item/modkit/riotgear_helmet/mutievet
-	name = "Mutant Veteran Ranger Helmet modkit"
+	name = "Mutant Veteran Ranger Armour modkit"
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/mutie
 
 /obj/item/modkit/legionvetpalhunter

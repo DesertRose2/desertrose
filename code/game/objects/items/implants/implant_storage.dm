@@ -1,6 +1,6 @@
 /obj/item/implant/storage
 	name = "storage implant"
-	desc = "Stores up to two big items in a quantum pocket."
+	desc = "Stores up to two big items in a bluespace pocket."
 	icon_state = "storage"
 	implant_color = "r"
 	var/max_slot_stacking = 4
@@ -35,7 +35,7 @@
 			pocket = new(target)
 
 /obj/item/storage/bluespace_pocket
-	name = "internal quantum pocket"
+	name = "internal bluespace pocket"
 	icon_state = "pillbox"
 	w_class = WEIGHT_CLASS_TINY
 	desc = "A tiny yet spacious pocket, usually found implanted inside sneaky syndicate agents and nowhere else."

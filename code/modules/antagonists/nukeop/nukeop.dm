@@ -44,7 +44,7 @@
 
 /datum/antagonist/nukeop/greet()
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/ops.ogg',100,0)
-	to_chat(owner, SPAN_NOTICE("You are a [nuke_team ? nuke_team.syndicate_name : "syndicate"] agent!"))
+	to_chat(owner, "<span class='notice'>You are a [nuke_team ? nuke_team.syndicate_name : "syndicate"] agent!</span>")
 	owner.announce_objectives()
 
 /datum/antagonist/nukeop/on_gain()
@@ -142,7 +142,7 @@
 		antag_memory += "<B>Syndicate Nuclear Bomb Code</B>: [code]<br>"
 		to_chat(owner.current, "The nuclear authorization code is: <B>[code]</B>")
 	else
-		to_chat(admin, SPAN_DANGER("No valid nuke found!"))
+		to_chat(admin, "<span class='danger'>No valid nuke found!</span>")
 
 /datum/antagonist/nukeop/leader
 	name = "Nuclear Operative Leader"

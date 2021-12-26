@@ -48,7 +48,7 @@
 		P.add_fingerprint(user)
 		return OXYLOSS
 	else
-		to_chat(user, SPAN_WARNING("You need more paper!"))
+		to_chat(user, "<span class='warning'>You need more paper!</span>")
 		return SHAME
 
 /obj/item/proc/can_be_package_wrapped() //can the item be wrapped with package wrapper into a delivery package
@@ -99,7 +99,7 @@
 		if(O.opened)
 			return
 		if(!O.delivery_icon) //no delivery icon means unwrappable closet (e.g. body bags)
-			to_chat(user, SPAN_WARNING("You can't wrap this!"))
+			to_chat(user, "<span class='warning'>You can't wrap this!</span>")
 			return
 		if(use(3))
 			var/obj/structure/bigDelivery/P = new /obj/structure/bigDelivery(get_turf(O.loc))
@@ -108,13 +108,13 @@
 			P.add_fingerprint(user)
 			O.add_fingerprint(user)
 		else
-			to_chat(user, SPAN_WARNING("You need more paper!"))
+			to_chat(user, "<span class='warning'>You need more paper!</span>")
 			return
 	else
-		to_chat(user, SPAN_WARNING("The object you are trying to wrap is unsuitable for the sorting machinery!"))
+		to_chat(user, "<span class='warning'>The object you are trying to wrap is unsuitable for the sorting machinery!</span>")
 		return
 
-	user.visible_message(SPAN_NOTICE("[user] wraps [target]."))
+	user.visible_message("<span class='notice'>[user] wraps [target].</span>")
 	user.log_message("has used [name] on [key_name(target)]", LOG_ATTACK, color="blue")
 
 /obj/item/stack/packageWrap/use(used, transfer = FALSE)

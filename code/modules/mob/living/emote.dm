@@ -450,7 +450,7 @@
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
 	if(stop_bad_mime.Find(input, 1, 1))
-		to_chat(user, SPAN_DANGER("Invalid emote."))
+		to_chat(user, "<span class='danger'>Invalid emote.</span>")
 		return TRUE
 	return FALSE
 
@@ -534,10 +534,10 @@
 	. = ..()
 	var/obj/item/circlegame/N = new(user)
 	if(user.put_in_hands(N))
-		to_chat(user, SPAN_NOTICE("You make a circle with your hand."))
+		to_chat(user, "<span class='notice'>You make a circle with your hand.</span>")
 	else
 		qdel(N)
-		to_chat(user, SPAN_WARNING("You don't have any free hands to make a circle with."))
+		to_chat(user, "<span class='warning'>You don't have any free hands to make a circle with.</span>")
 
 /datum/emote/living/slap
 	key = "slap"
@@ -550,9 +550,9 @@
 		return
 	var/obj/item/slapper/N = new(user)
 	if(user.put_in_hands(N))
-		to_chat(user, SPAN_NOTICE("You ready your slapping hand."))
+		to_chat(user, "<span class='notice'>You ready your slapping hand.</span>")
 	else
-		to_chat(user, SPAN_WARNING("You're incapable of slapping in your current state."))
+		to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>")
 
 /datum/emote/living/audio_emote/blorble
 	key = "blorble"

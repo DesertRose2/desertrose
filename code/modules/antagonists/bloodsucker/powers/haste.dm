@@ -25,11 +25,11 @@
 	// Being Grabbed
 	if(owner.pulledby && owner.pulledby.grab_state >= GRAB_AGGRESSIVE)
 		if(display_error)
-			to_chat(owner, SPAN_WARNING("You're being grabbed!"))
+			to_chat(owner, "<span class='warning'>You're being grabbed!</span>")
 		return FALSE
 	if(!owner.has_gravity(owner.loc)) //We dont want people to be able to use this to fly around in space
 		if(display_error)
-			to_chat(owner, SPAN_WARNING("You can't dash while floating!"))
+			to_chat(owner, "<span class='warning'>You cant dash while floating!</span>")
 		return FALSE
 	return TRUE
 

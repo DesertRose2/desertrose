@@ -39,7 +39,7 @@
 			victim.rad_act(5)
 
 /obj/structure/reagent_dispensers/barrel/boom()
-	visible_message(SPAN_DANGER("\The [src] ruptures!"))
+	visible_message("<span class='danger'>\The [src] ruptures!</span>")
 	chem_splash(loc, 0, list(reagents))
 	qdel(src)
 
@@ -83,20 +83,20 @@
 /obj/structure/reagent_dispensers/barrel/explosive/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/weldingtool))
 		if(!reagents.has_reagent(/datum/reagent/fuel))
-			to_chat(user, SPAN_WARNING("[src] is out of fuel!"))
+			to_chat(user, "<span class='warning'>[src] is out of fuel!</span>")
 			return
 		var/obj/item/weldingtool/W = I
 		if(!W.welding)
 			if(W.reagents.has_reagent(/datum/reagent/fuel, W.max_fuel))
-				to_chat(user, SPAN_WARNING("Your [W.name] is already full!"))
+				to_chat(user, "<span class='warning'>Your [W.name] is already full!</span>")
 				return
 			reagents.trans_to(W, W.max_fuel)
-			user.visible_message(SPAN_NOTICE("[user] refills [user.p_their()] [W.name]."), SPAN_NOTICE("You refill [W]."))
+			user.visible_message("<span class='notice'>[user] refills [user.p_their()] [W.name].</span>", "<span class='notice'>You refill [W].</span>")
 			playsound(src, 'sound/effects/refill.ogg', 50, 1)
 			W.update_icon()
 		else
 			var/turf/T = get_turf(src)
-			user.visible_message(SPAN_WARNING("[user] catastrophically fails at refilling [user.p_their()] [W.name]!"), "<span class='userdanger'>That was stupid of you.</span>")
+			user.visible_message("<span class='warning'>[user] catastrophically fails at refilling [user.p_their()] [W.name]!</span>", "<span class='userdanger'>That was stupid of you.</span>")
 			var/message_admins = "[ADMIN_LOOKUPFLW(user)] triggered a fuelbarrel explosion via welding tool at [ADMIN_VERBOSEJMP(T)]."
 			GLOB.bombers += message_admins
 			message_admins(message_admins)

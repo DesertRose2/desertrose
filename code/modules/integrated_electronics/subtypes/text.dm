@@ -7,7 +7,7 @@
 // - Text Replacer - //
 /obj/item/integrated_circuit/text/text_replacer
 	name = "find-replace circuit"
-	desc = "Replaces all of one bit of text with another."
+	desc = "Replaces all of one bit of text with another"
 	extended_desc = "Takes a string(haystack) and puts out the string while having a certain word(needle) replaced with another."
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 	inputs = list(

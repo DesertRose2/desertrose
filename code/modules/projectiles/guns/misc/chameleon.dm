@@ -127,13 +127,13 @@
 /obj/item/gun/energy/laser/chameleon/attack_self(mob/user)
 	. = ..()
 	if(!can_hitscan)
-		to_chat(user, SPAN_WARNING("[src]'s current disguised gun does not allow it to enable high velocity mode!"))
+		to_chat(user, "<span class='warning'>[src]'s current disguised gun does not allow it to enable high velocity mode!</span>")
 		return
 	if(!chambered)
-		to_chat(user, SPAN_WARNING("Unknown error in energy lens: Please reset chameleon disguise and try again."))
+		to_chat(user, "<span class='warning'>Unknown error in energy lens: Please reset chameleon disguise and try again.</span>")
 		return
 	set_hitscan(!hitscan_mode)
-	to_chat(user, SPAN_NOTICE("You toggle [src]'s high velocity beam mode to [hitscan_mode? "on" : "off"]."))
+	to_chat(user, "<span class='notice'>You toggle [src]'s high velocity beam mode to [hitscan_mode? "on" : "off"].</span>")
 
 /obj/item/gun/energy/laser/chameleon/proc/set_hitscan(hitscan)
 	var/obj/item/ammo_casing/energy/chameleon/AC = chambered

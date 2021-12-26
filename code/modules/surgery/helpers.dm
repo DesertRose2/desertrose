@@ -70,11 +70,11 @@
 			if(S.ignore_clothes || get_location_accessible(M, selected_zone))
 				var/datum/surgery/procedure = new S.type(M, selected_zone, affecting)
 				user.visible_message("[user] drapes [I] over [M]'s [parse_zone(selected_zone)] to prepare for surgery.", \
-					SPAN_NOTICE("You drape [I] over [M]'s [parse_zone(selected_zone)] to prepare for \an [procedure.name]."))
+					"<span class='notice'>You drape [I] over [M]'s [parse_zone(selected_zone)] to prepare for \an [procedure.name].</span>")
 
 				log_combat(user, M, "operated on", null, "(OPERATION TYPE: [procedure.name]) (TARGET AREA: [selected_zone])")
 			else
-				to_chat(user, SPAN_WARNING("You need to expose [M]'s [parse_zone(selected_zone)] first!"))
+				to_chat(user, "<span class='warning'>You need to expose [M]'s [parse_zone(selected_zone)] first!</span>")
 
 	else if(!current_surgery.step_in_progress)
 		attempt_cancel_surgery(current_surgery, I, M, user)
@@ -86,7 +86,7 @@
 	if(S.status == 1)
 		M.surgeries -= S
 		user.visible_message("[user] removes [I] from [M]'s [parse_zone(selected_zone)].", \
-			SPAN_NOTICE("You remove [I] from [M]'s [parse_zone(selected_zone)]."))
+			"<span class='notice'>You remove [I] from [M]'s [parse_zone(selected_zone)].</span>")
 		qdel(S)
 	else if(S.can_cancel)
 		var/required_tool_type = TOOL_CAUTERY
@@ -97,14 +97,14 @@
 		if(iscyborg(user))
 			close_tool = locate(/obj/item/cautery) in user.held_items
 			if(!close_tool)
-				to_chat(user, SPAN_WARNING("You need to equip a cautery in an inactive slot to stop [M]'s surgery!"))
+				to_chat(user, "<span class='warning'>You need to equip a cautery in an inactive slot to stop [M]'s surgery!</span>")
 				return
 		else if(!close_tool || close_tool.tool_behaviour != required_tool_type)
-			to_chat(user, SPAN_WARNING("You need to hold a [is_robotic ? "screwdriver" : "cautery"] in your inactive hand to stop [M]'s surgery!"))
+			to_chat(user, "<span class='warning'>You need to hold a [is_robotic ? "screwdriver" : "cautery"] in your inactive hand to stop [M]'s surgery!</span>")
 			return
 		M.surgeries -= S
-		user.visible_message(SPAN_NOTICE("[user] closes [M]'s [parse_zone(selected_zone)] with [close_tool] and removes [I]."), \
-			SPAN_NOTICE("You close [M]'s [parse_zone(selected_zone)] with [close_tool] and remove [I]."))
+		user.visible_message("<span class='notice'>[user] closes [M]'s [parse_zone(selected_zone)] with [close_tool] and removes [I].</span>", \
+			"<span class='notice'>You close [M]'s [parse_zone(selected_zone)] with [close_tool] and remove [I].</span>")
 		qdel(S)
 
 /proc/get_location_modifier(mob/M)

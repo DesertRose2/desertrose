@@ -33,7 +33,7 @@
 					D.stop_pulling()
 					if(A.a_intent == INTENT_GRAB)
 						log_combat(A, D, "grabbed", addition="aggressively")
-						D.visible_message(SPAN_WARNING("[A] violently grabs [D]!"), \
+						D.visible_message("<span class='warning'>[A] violently grabs [D]!</span>", \
 						  "<span class='userdanger'>[A] violently grabs you!</span>")
 						A.setGrabState(GRAB_AGGRESSIVE) //Instant aggressive grab
 					else
@@ -42,7 +42,7 @@
 		if(4)
 			A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 			atk_verb = "headbutts"
-			D.visible_message(SPAN_DANGER("[A] [atk_verb] [D]!"), \
+			D.visible_message("<span class='danger'>[A] [atk_verb] [D]!</span>", \
 					  "<span class='userdanger'>[A] [atk_verb] you!</span>")
 			playsound(get_turf(D), 'sound/weapons/punch1.ogg', 40, 1, -1)
 			D.apply_damage(damage*1.5, BRUTE, BODY_ZONE_HEAD)
@@ -54,7 +54,7 @@
 		if(5,6)
 			A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 			atk_verb = pick("punches", "kicks", "hits", "slams into")
-			D.visible_message(SPAN_DANGER("[A] [atk_verb] [D] with inhuman strength, sending [D.p_them()] flying backwards!"), \
+			D.visible_message("<span class='danger'>[A] [atk_verb] [D] with inhuman strength, sending [D.p_them()] flying backwards!</span>", \
 							  "<span class='userdanger'>[A] [atk_verb] you with inhuman strength, sending you flying backwards!</span>")
 			D.apply_damage(damage*2, BRUTE)
 			playsound(get_turf(D), 'sound/effects/meteorimpact.ogg', 25, 1, -1)

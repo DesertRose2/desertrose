@@ -57,7 +57,7 @@
 
 /obj/machinery/computer/arcade/orion_trail/kobayashi
 	name = "Kobayashi Maru control computer"
-	desc = "A test for cadets."
+	desc = "A test for cadets"
 	icon = 'icons/obj/machines/particle_accelerator.dmi'
 	icon_state = "control_boxp"
 	events = list("Raiders" = 3, "Interstellar Flux" = 1, "Illness" = 3, "Breakdown" = 2, "Malfunction" = 2, "Collision" = 1, "Spaceport" = 2)
@@ -210,7 +210,7 @@
 							to_chat(usr, "<span class='userdanger'>You suddenly feel extremely nauseated and hunch over until it passes.</span>")
 							M.Stun(60)
 						if(severity >= 3) //you didn't pray hard enough
-							to_chat(M, SPAN_WARNING("An overpowering wave of nausea consumes over you. You hunch over, your stomach's contents preparing for a spectacular exit."))
+							to_chat(M, "<span class='warning'>An overpowering wave of nausea consumes over you. You hunch over, your stomach's contents preparing for a spectacular exit.</span>")
 							M.Stun(100)
 							sleep(30)
 							M.vomit(10, distance = 5)
@@ -241,7 +241,7 @@
 							playsound(loc, 'sound/effects/bang.ogg', 50, 1)
 					if(ORION_TRAIL_MALFUNCTION)
 						playsound(loc, 'sound/effects/empulse.ogg', 50, 1)
-						visible_message(SPAN_DANGER("[src] malfunctions, randomizing in-game stats!"))
+						visible_message("<span class='danger'>[src] malfunctions, randomizing in-game stats!</span>")
 						var/oldfood = food
 						var/oldfuel = fuel
 						food = rand(10,80) / rand(1,2)
@@ -249,9 +249,9 @@
 						if(electronics)
 							sleep(10)
 							if(oldfuel > fuel && oldfood > food)
-								audible_message(SPAN_DANGER("[src] lets out a somehow reassuring chime."))
+								audible_message("<span class='danger'>[src] lets out a somehow reassuring chime.</span>")
 							else if(oldfuel < fuel || oldfood < food)
-								audible_message(SPAN_DANGER("[src] lets out a somehow ominous chime."))
+								audible_message("<span class='danger'>[src] lets out a somehow ominous chime.</span>")
 							food = oldfood
 							fuel = oldfuel
 							playsound(loc, 'sound/machines/chime.ogg', 50, 1)
@@ -738,7 +738,7 @@
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
-	to_chat(user, SPAN_NOTICE("You override the cheat code menu and skip to Cheat #[rand(1, 50)]: Realism Mode."))
+	to_chat(user, "<span class='notice'>You override the cheat code menu and skip to Cheat #[rand(1, 50)]: Realism Mode.</span>")
 	name = "The Orion Trail: Realism Edition"
 	desc = "Learn how our ancestors got to Orion, and try not to die in the process!"
 	newgame()
@@ -765,9 +765,9 @@
 	if(!(in_range(user, src)))
 		return
 	if(!active)
-		. += SPAN_NOTICE("There's a little switch on the bottom. It's flipped down.")
+		. += "<span class='notice'>There's a little switch on the bottom. It's flipped down.</span>"
 	else
-		. += SPAN_NOTICE("There's a little switch on the bottom. It's flipped up.")
+		. += "<span class='notice'>There's a little switch on the bottom. It's flipped up.</span>"
 
 /obj/item/orion_ship/attack_self(mob/user) //Minibomb-level explosion. Should probably be more because of how hard it is to survive the machine! Also, just over a 5-second fuse
 	if(active)
@@ -776,13 +776,13 @@
 	message_admins("[ADMIN_LOOKUPFLW(usr)] primed an explosive Orion ship for detonation at [AREACOORD(usr)].")
 	log_game("[key_name(usr)] primed an explosive Orion ship for detonation at [AREACOORD(usr)].")
 
-	to_chat(user, SPAN_WARNING("You flip the switch on the underside of [src]."))
+	to_chat(user, "<span class='warning'>You flip the switch on the underside of [src].</span>")
 	active = 1
-	visible_message(SPAN_NOTICE("[src] softly beeps and whirs to life!"))
+	visible_message("<span class='notice'>[src] softly beeps and whirs to life!</span>")
 	playsound(loc, 'sound/machines/defib_SaftyOn.ogg', 25, 1)
 	say("This is ship ID #[rand(1,1000)] to Orion Port Authority. We're coming in for landing, over.")
 	sleep(20)
-	visible_message(SPAN_WARNING("[src] begins to vibrate..."))
+	visible_message("<span class='warning'>[src] begins to vibrate...</span>")
 	say("Uh, Port? Having some issues with our reactor, could you check it out? Over.")
 	sleep(30)
 	say("Oh, God! Code Eight! CODE EIGHT! IT'S GONNA BL-")

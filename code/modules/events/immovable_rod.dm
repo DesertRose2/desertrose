@@ -111,7 +111,7 @@ In my current plan for it, 'solid' will be defined as anything with density == 1
 /obj/effect/immovablerod/Bump(atom/clong)
 	if(prob(10))
 		playsound(src, 'sound/effects/bang.ogg', 50, 1)
-		audible_message(SPAN_DANGER("You hear a CLANG!"))
+		audible_message("<span class='danger'>You hear a CLANG!</span>")
 
 	if(clong && prob(25))
 		x = clong.x
@@ -137,7 +137,7 @@ In my current plan for it, 'solid' will be defined as anything with density == 1
 		qdel(other)
 
 /obj/effect/immovablerod/proc/penetrate(mob/living/L)
-	L.visible_message(SPAN_DANGER("[L] is penetrated by an immovable rod!") , "<span class='userdanger'>The rod penetrates you!</span>" , SPAN_DANGER("You hear a CLANG!"))
+	L.visible_message("<span class='danger'>[L] is penetrated by an immovable rod!</span>" , "<span class='userdanger'>The rod penetrates you!</span>" , "<span class ='danger'>You hear a CLANG!</span>")
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
 		H.adjustBruteLoss(160)
@@ -153,13 +153,13 @@ In my current plan for it, 'solid' will be defined as anything with density == 1
 				if(!M.stat)
 					shake_camera(M, 2, 3)
 			if(wizard)
-				U.visible_message("<span class='boldwarning'>[src] transforms into [wizard] as [U] suplexes them!</span>", SPAN_WARNING("As you grab [src], it suddenly turns into [wizard] as you suplex them!"))
+				U.visible_message("<span class='boldwarning'>[src] transforms into [wizard] as [U] suplexes them!</span>", "<span class='warning'>As you grab [src], it suddenly turns into [wizard] as you suplex them!</span>")
 				to_chat(wizard, "<span class='boldwarning'>You're suddenly jolted out of rod-form as [U] somehow manages to grab you, slamming you into the ground!</span>")
 				wizard.Stun(60)
 				wizard.apply_damage(25, BRUTE)
 				qdel(src)
 			else
-				U.visible_message("<span class='boldwarning'>[U] suplexes [src] into the ground!</span>", SPAN_WARNING("You suplex [src] into the ground!"))
+				U.visible_message("<span class='boldwarning'>[U] suplexes [src] into the ground!</span>", "<span class='warning'>You suplex [src] into the ground!</span>")
 				new /obj/structure/festivus/anchored(drop_location())
 				new /obj/effect/anomaly/flux(drop_location())
 				qdel(src)

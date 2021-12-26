@@ -143,21 +143,21 @@
 	if(istype(I, /obj/item/stock_parts/cell))
 		if(panel_open)
 			if(cell)
-				to_chat(user, SPAN_WARNING("There is already a power cell inside!"))
+				to_chat(user, "<span class='warning'>There is already a power cell inside!</span>")
 				return
 			else if(!user.transferItemToLoc(I, src))
 				return
 			cell = I
 			I.add_fingerprint(usr)
 
-			user.visible_message("\The [user] inserts a power cell into \the [src].", SPAN_NOTICE("You insert the power cell into \the [src]."))
+			user.visible_message("\The [user] inserts a power cell into \the [src].", "<span class='notice'>You insert the power cell into \the [src].</span>")
 			SStgui.update_uis(src)
 		else
-			to_chat(user, SPAN_WARNING("The hatch must be open to insert a power cell!"))
+			to_chat(user, "<span class='warning'>The hatch must be open to insert a power cell!</span>")
 			return
 	else if(istype(I, /obj/item/screwdriver))
 		panel_open = !panel_open
-		user.visible_message("\The [user] [panel_open ? "opens" : "closes"] the hatch on \the [src].", SPAN_NOTICE("You [panel_open ? "open" : "close"] the hatch on \the [src]."))
+		user.visible_message("\The [user] [panel_open ? "opens" : "closes"] the hatch on \the [src].", "<span class='notice'>You [panel_open ? "open" : "close"] the hatch on \the [src].</span>")
 		update_icon()
 		if(panel_open)
 			interact(user)
@@ -208,7 +208,7 @@
 		if("power")
 			on = !on
 			mode = HEATER_MODE_STANDBY
-			usr.visible_message(SPAN_NOTICE("[usr] switches [on ? "on" : "off"] \the [src]."), SPAN_NOTICE("You switch [on ? "on" : "off"] \the [src]."))
+			usr.visible_message("<span class='notice'>[usr] switches [on ? "on" : "off"] \the [src].</span>", "<span class='notice'>You switch [on ? "on" : "off"] \the [src].</span>")
 			update_icon()
 			if (on)
 				SSair.atmos_air_machinery += src

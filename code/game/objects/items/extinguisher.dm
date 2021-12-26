@@ -80,10 +80,10 @@
 		afterattack(user,user)
 		return OXYLOSS
 	else if (safety && (reagents.total_volume >= 1))
-		user.visible_message(SPAN_WARNING("[user] puts the nozzle to [user.p_their()] mouth... The safety's still on!"))
+		user.visible_message("<span class='warning'>[user] puts the nozzle to [user.p_their()] mouth... The safety's still on!</span>")
 		return SHAME
 	else
-		user.visible_message(SPAN_WARNING("[user] puts the nozzle to [user.p_their()] mouth... [src] is empty!"))
+		user.visible_message("<span class='warning'>[user] puts the nozzle to [user.p_their()] mouth... [src] is empty!</span>")
 		return SHAME
 
 /obj/item/extinguisher/attack_self(mob/user)
@@ -110,25 +110,25 @@
 	. += "The safety is [safety ? "on" : "off"]."
 
 	if(reagents.total_volume)
-		. += SPAN_NOTICE("Alt-click to empty it.")
+		. += "<span class='notice'>Alt-click to empty it.</span>"
 
 /obj/item/extinguisher/proc/AttemptRefill(atom/target, mob/user)
 	if(istype(target, tanktype) && target.Adjacent(user))
 		var/safety_save = safety
 		safety = TRUE
 		if(reagents.total_volume == reagents.maximum_volume)
-			to_chat(user, SPAN_WARNING("\The [src] is already full!"))
+			to_chat(user, "<span class='warning'>\The [src] is already full!</span>")
 			safety = safety_save
 			return 1
 		var/obj/structure/reagent_dispensers/W = target //will it work?
 		var/transferred = W.reagents.trans_to(src, max_water)
 		if(transferred > 0)
-			to_chat(user, SPAN_NOTICE("\The [src] has been refilled by [transferred] units."))
+			to_chat(user, "<span class='notice'>\The [src] has been refilled by [transferred] units.</span>")
 			playsound(src.loc, 'sound/effects/refill.ogg', 50, 1, -6)
 			for(var/datum/reagent/water/R in reagents.reagent_list)
 				R.cooling_temperature = cooling_power
 		else
-			to_chat(user, SPAN_WARNING("\The [W] is empty!"))
+			to_chat(user, "<span class='warning'>\The [W] is empty!</span>")
 		safety = safety_save
 		return 1
 	else
@@ -145,7 +145,7 @@
 		return
 	if (!safety)
 		if (src.reagents.total_volume < 1)
-			to_chat(usr, SPAN_WARNING("\The [src] is empty!"))
+			to_chat(usr, "<span class='warning'>\The [src] is empty!</span>")
 			return
 
 		if (world.time < src.last_use + 12)
@@ -249,7 +249,7 @@
 //firebot assembly
 /obj/item/extinguisher/attackby(obj/O, mob/user, params)
 	if(istype(O, /obj/item/bodypart/l_arm/robot) || istype(O, /obj/item/bodypart/r_arm/robot))
-		to_chat(user, SPAN_NOTICE("You add [O] to [src]."))
+		to_chat(user, "<span class='notice'>You add [O] to [src].</span>")
 		qdel(O)
 		qdel(src)
 		user.put_in_hands(new /obj/item/bot_assembly/firebot)

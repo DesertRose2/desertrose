@@ -103,7 +103,7 @@
 	var/obj/item/computer_hardware/card_slot/card_slot = all_components[MC_CARD]
 	var/obj/item/computer_hardware/card_slot/card_slot2 = all_components[MC_CARD2]
 	if(!(card_slot || card_slot2))
-		//to_chat(user, SPAN_WARNING("There isn't anywhere you can fit a card into on this computer."))
+		//to_chat(user, "<span class='warning'>There isn't anywhere you can fit a card into on this computer.</span>")
 		return FALSE
 
 	var/obj/item/card/inserting_id = inserting_item.RemoveID()
@@ -112,7 +112,7 @@
 
 	if((card_slot?.try_insert(inserting_id)) || (card_slot2?.try_insert(inserting_id)))
 		return TRUE
-	//to_chat(user, SPAN_WARNING("This computer doesn't have an open card slot."))
+	//to_chat(user, "<span class='warning'>This computer doesn't have an open card slot.</span>")
 	return FALSE
 
 /obj/item/modular_computer/MouseDrop(obj/over_object, src_location, over_location)
@@ -138,7 +138,7 @@
 /obj/item/modular_computer/emag_act(mob/user)
 	. = ..()
 	if(!enabled)
-		to_chat(user, SPAN_WARNING("You'd need to turn the [src] on first."))
+		to_chat(user, "<span class='warning'>You'd need to turn the [src] on first.</span>")
 		return FALSE
 	obj_flags |= EMAGGED //Mostly for consistancy purposes; the programs will do their own emag handling
 	var/newemag = FALSE
@@ -149,17 +149,17 @@
 		if(app.run_emag())
 			newemag = TRUE
 	if(newemag)
-		to_chat(user, SPAN_NOTICE("You swipe \the [src]. A console window momentarily fills the screen, with white text rapidly scrolling past."))
+		to_chat(user, "<span class='notice'>You swipe \the [src]. A console window momentarily fills the screen, with white text rapidly scrolling past.</span>")
 		return TRUE
-	to_chat(user, SPAN_NOTICE("You swipe \the [src]. A console window fills the screen, but it quickly closes itself after only a few lines are written to it."))
+	to_chat(user, "<span class='notice'>You swipe \the [src]. A console window fills the screen, but it quickly closes itself after only a few lines are written to it.</span>")
 	return FALSE
 
 /obj/item/modular_computer/examine(mob/user)
 	. = ..()
 	if(obj_integrity <= integrity_failure * max_integrity)
-		. += SPAN_DANGER("It is heavily damaged!")
+		. += "<span class='danger'>It is heavily damaged!</span>"
 	else if(obj_integrity < max_integrity)
-		. += SPAN_WARNING("It is damaged.")
+		. += "<span class='warning'>It is damaged.</span>"
 
 	. += get_modular_computer_parts_examine(user)
 
@@ -195,9 +195,9 @@
 	var/issynth = issilicon(user) // Robots and AIs get different activation messages.
 	if(obj_integrity <= integrity_failure * max_integrity)
 		if(issynth)
-			to_chat(user, SPAN_WARNING("You send an activation signal to \the [src], but it responds with an error code. It must be damaged."))
+			to_chat(user, "<span class='warning'>You send an activation signal to \the [src], but it responds with an error code. It must be damaged.</span>")
 		else
-			to_chat(user, SPAN_WARNING("You press the power button, but the computer fails to boot up, displaying variety of errors before shutting down again."))
+			to_chat(user, "<span class='warning'>You press the power button, but the computer fails to boot up, displaying variety of errors before shutting down again.</span>")
 		return
 
 	// If we have a recharger, enable it automatically. Lets computer without a battery work.
@@ -207,17 +207,17 @@
 
 	if(all_components[MC_CPU] && use_power()) // use_power() checks if the PC is powered
 		if(issynth)
-			to_chat(user, SPAN_NOTICE("You send an activation signal to \the [src], turning it on."))
+			to_chat(user, "<span class='notice'>You send an activation signal to \the [src], turning it on.</span>")
 		else
-			to_chat(user, SPAN_NOTICE("You press the power button and start up \the [src]."))
+			to_chat(user, "<span class='notice'>You press the power button and start up \the [src].</span>")
 		enabled = 1
 		update_icon()
 		ui_interact(user)
 	else // Unpowered
 		if(issynth)
-			to_chat(user, SPAN_WARNING("You send an activation signal to \the [src] but it does not respond."))
+			to_chat(user, "<span class='warning'>You send an activation signal to \the [src] but it does not respond.</span>")
 		else
-			to_chat(user, SPAN_WARNING("You press the power button but \the [src] does not respond."))
+			to_chat(user, "<span class='warning'>You press the power button but \the [src] does not respond.</span>")
 
 // Process currently calls handle_power(), may be expanded in future if more things are added.
 /obj/item/modular_computer/process()
@@ -345,7 +345,7 @@
 		P.kill_program(forced = TRUE)
 		idle_threads.Remove(P)
 	if(loud)
-		physical.visible_message(SPAN_NOTICE("\The [src] shuts down."))
+		physical.visible_message("<span class='notice'>\The [src] shuts down.</span>")
 	enabled = 0
 	update_icon()
 
@@ -364,31 +364,31 @@
 
 	if(W.tool_behaviour == TOOL_WRENCH)
 		if(all_components.len)
-			to_chat(user, SPAN_WARNING("Remove all components from \the [src] before disassembling it."))
+			to_chat(user, "<span class='warning'>Remove all components from \the [src] before disassembling it.</span>")
 			return
 		new /obj/item/stack/sheet/metal( get_turf(src.loc), steel_sheet_cost )
-		physical.visible_message(SPAN_NOTICE("\The [src] is disassembled by [user]."))
+		physical.visible_message("<span class='notice'>\The [src] is disassembled by [user].</span>")
 		relay_qdel()
 		qdel(src)
 		return
 
 	if(W.tool_behaviour == TOOL_WELDER)
 		if(obj_integrity == max_integrity)
-			to_chat(user, SPAN_WARNING("\The [src] does not require repairs."))
+			to_chat(user, "<span class='warning'>\The [src] does not require repairs.</span>")
 			return
 
 		if(!W.tool_start_check(user, amount=1))
 			return
 
-		to_chat(user, SPAN_NOTICE("You begin repairing damage to \the [src]..."))
+		to_chat(user, "<span class='notice'>You begin repairing damage to \the [src]...</span>")
 		if(W.use_tool(src, user, 20, volume=50, amount=1))
 			obj_integrity = max_integrity
-			to_chat(user, SPAN_NOTICE("You repair \the [src]."))
+			to_chat(user, "<span class='notice'>You repair \the [src].</span>")
 		return
 
 	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		if(!all_components.len)
-			to_chat(user, SPAN_WARNING("This device doesn't have any components installed."))
+			to_chat(user, "<span class='warning'>This device doesn't have any components installed.</span>")
 			return
 		var/list/component_names = list()
 		for(var/h in all_components)

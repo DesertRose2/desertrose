@@ -161,7 +161,7 @@
 
 /datum/reagent/toxin/slimejelly/on_mob_life(mob/living/carbon/M)
 	if(prob(10))
-		to_chat(M, SPAN_DANGER("Your insides are burning!"))
+		to_chat(M, "<span class='danger'>Your insides are burning!</span>")
 		M.adjustToxLoss(rand(20,60)*REM, 0)
 		. = 1
 	else if(prob(40))
@@ -495,7 +495,7 @@
 	if(prob(50))
 		switch(pick(1, 2, 3, 4))
 			if(1)
-				to_chat(M, SPAN_DANGER("You can barely see!"))
+				to_chat(M, "<span class='danger'>You can barely see!</span>")
 				M.blur_eyes(3)
 			if(2)
 				M.emote("cough")
@@ -1023,7 +1023,7 @@
 				var/list/possible_mes = list("oofs softly.", "looks like their bones hurt.", "grimaces, as though their bones hurt.")
 				M.say("*custom " + pick(possible_mes), forced = /datum/reagent/toxin/bonehurtingjuice)
 			if(3)
-				to_chat(M, SPAN_WARNING("Your bones hurt!"))
+				to_chat(M, "<span class='warning'>Your bones hurt!</span>")
 	return ..()
 
 /datum/reagent/toxin/bonehurtingjuice/overdose_process(mob/living/carbon/M)
@@ -1043,19 +1043,19 @@
 			if(bp)
 				bp.receive_damage(0, 0, 200)
 				playsound(M, get_sfx("desceration"), 50, TRUE, -1)
-				M.visible_message(SPAN_WARNING("[M]'s bones hurt too much!!"), SPAN_DANGER("Your bones hurt too much!!"))
+				M.visible_message("<span class='warning'>[M]'s bones hurt too much!!</span>", "<span class='danger'>Your bones hurt too much!!</span>")
 				M.say("OOF!!", forced = /datum/reagent/toxin/bonehurtingjuice)
 			else //SUCH A LUST FOR REVENGE!!!
-				to_chat(M, SPAN_WARNING("A phantom limb hurts!"))
+				to_chat(M, "<span class='warning'>A phantom limb hurts!</span>")
 				M.say("Why are we still here, just to suffer?", forced = /datum/reagent/toxin/bonehurtingjuice)
 		else //you just want to socialize
 			if(bp)
 				playsound(M, get_sfx("desceration"), 50, TRUE, -1)
-				M.visible_message(SPAN_WARNING("[M] rattles loudly and flails around!!"), SPAN_DANGER("Your bones hurt so much that your missing muscles spasm!!"))
+				M.visible_message("<span class='warning'>[M] rattles loudly and flails around!!</span>", "<span class='danger'>Your bones hurt so much that your missing muscles spasm!!</span>")
 				M.say("OOF!!", forced=/datum/reagent/toxin/bonehurtingjuice)
 				bp.receive_damage(200, 0, 0) //But I don't think we should
 			else
-				to_chat(M, SPAN_WARNING("Your missing arm aches from wherever you left it."))
+				to_chat(M, "<span class='warning'>Your missing arm aches from wherever you left it.</span>")
 				M.emote("sigh")
 	return ..()
 
@@ -1091,7 +1091,7 @@
 	M.confused = M.dizziness //add a tertiary effect here if this is isn't an effective poison.
 	if(current_cycle >= 12 && prob(8))
 		var/tox_message = pick("You feel your heart spasm in your chest.", "You feel faint.","You feel you need to catch your breath.","You feel a prickle of pain in your chest.")
-		to_chat(M, SPAN_NOTICE("[tox_message]"))
+		to_chat(M, "<span class='notice'>[tox_message]</span>")
 	. = 1
 	..()
 
@@ -1108,6 +1108,6 @@
 	M.adjustOrganLoss(ORGAN_SLOT_EARS,1)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN,1)
 	if(prob(1))
-		to_chat(M, SPAN_NOTICE("Ah, what was that? You thought you heard something..."))
+		to_chat(M, "<span class='notice'>Ah, what was that? You thought you heard something...</span>")
 		M.confused += 5
 	return ..()

@@ -1213,6 +1213,14 @@
 /obj/structure/flora/junglebush/b,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
+"adI" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/caves)
+"adJ" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
 "adK" = (
 /mob/living/simple_animal/hostile/deathclaw,
 /turf/open/indestructible/ground/outside/desert,
@@ -11152,6 +11160,20 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
+"aJw" = (
+/obj/machinery/door/airlock/glass_large,
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/wood/f13/old,
+/area/f13/klamat)
+"aJx" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/wood/f13/old,
+/area/f13/klamat)
+"aJy" = (
+/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/wood/f13/old,
+/area/f13/klamat)
 "aJz" = (
 /obj/machinery/light/small,
 /turf/open/floor/carpet,
@@ -12876,7 +12898,8 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/spawner/lootdrop/clothing_low,
-//turf/open/floor/f13/wood,
+//obj/vehicle/ridden/scooter/skateboard,
+/turf/open/floor/f13/wood,
 /area/f13/city)
 "aPw" = (
 /obj/structure/chair{
@@ -13056,6 +13079,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aQc" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/floor/grass/snow,
+/area/f13/underground/mountain)
+"aQd" = (
 /mob/living/simple_animal/hostile/wolf,
 /turf/open/floor/grass/snow,
 /area/f13/underground/mountain)
@@ -17344,6 +17371,10 @@
 	icon_state = "transition1"
 	},
 /area/f13/wasteland)
+"bdJ" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/city/museum)
 "bdK" = (
 /obj/machinery/light/lampost{
 	dir = 1;
@@ -17750,6 +17781,10 @@
 /obj/structure/chair/f13foldupchair,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"bfj" = (
+/mob/living/simple_animal/hostile/wolf,
+/turf/open/floor/grass/snow,
+/area/f13/wasteland)
 "bfk" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
@@ -17956,6 +17991,10 @@
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
+"bfX" = (
+/obj/structure/simple_door/fakeglass,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "bfY" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
@@ -18930,6 +18969,10 @@
 	icon_state = "outerborder"
 	},
 /area/f13/city)
+"bjq" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/grass/snow,
+/area/f13/underground/mountain)
 "bjr" = (
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontal"
@@ -20287,40 +20330,6 @@
 /obj/machinery/power/supermatter_crystal/shard/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault/reactor)
-"dAo" = (
-/obj/machinery/door/airlock/glass_large,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/wood/f13/old,
-/area/f13/klamat)
-"eIt" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/city/museum)
-"rvy" = (
-/obj/structure/simple_door/repaired,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"sWq" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/grass/snow,
-/area/f13/underground/mountain)
-"uxc" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/wood/f13/old,
-/area/f13/klamat)
-"uNG" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
-"xaU" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/caves)
-"xjG" = (
-/obj/structure/barricade/wooden/crude/snow,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/wood/f13/old,
-/area/f13/klamat)
 
 (1,1,1) = {"
 agS
@@ -28529,7 +28538,7 @@ aab
 adA
 adA
 adC
-uNG
+adI
 bgy
 bgA
 bgG
@@ -28731,7 +28740,7 @@ aab
 adA
 adA
 adC
-xaU
+adJ
 bgz
 bgB
 bgB
@@ -28933,7 +28942,7 @@ aab
 adB
 adE
 adC
-uNG
+adI
 bgy
 bgC
 bgB
@@ -119621,11 +119630,11 @@ aQY
 aRh
 aQZ
 aQZ
-eIt
-eIt
-eIt
-eIt
-eIt
+bdJ
+bdJ
+bdJ
+bdJ
+bdJ
 aQz
 aQx
 aQx
@@ -125905,7 +125914,7 @@ aRS
 aSd
 aSd
 aQN
-eIt
+bdJ
 aUS
 aUX
 aUM
@@ -126107,7 +126116,7 @@ aRS
 aSd
 aSd
 aSq
-eIt
+bdJ
 aUT
 aQZ
 aQx
@@ -126309,7 +126318,7 @@ aRS
 aSd
 aSd
 aQN
-eIt
+bdJ
 aUT
 aQZ
 aQZ
@@ -126511,7 +126520,7 @@ aRS
 aSd
 aSd
 aSq
-eIt
+bdJ
 aUT
 aQx
 aQZ
@@ -126713,7 +126722,7 @@ aSd
 aSd
 aSd
 aQN
-eIt
+bdJ
 aUT
 aVi
 aQZ
@@ -141815,7 +141824,7 @@ ayH
 ayH
 aIJ
 aAN
-dAo
+aJw
 aAK
 aAK
 aAK
@@ -142017,7 +142026,7 @@ ayH
 ayH
 aAN
 aAN
-uxc
+aJx
 aAK
 aAK
 aAK
@@ -142421,7 +142430,7 @@ aFR
 ayH
 aAN
 aAN
-dAo
+aJw
 aAK
 aAK
 aAK
@@ -142623,7 +142632,7 @@ ayH
 ayH
 aIJ
 aAN
-xjG
+aJy
 aAK
 aAK
 aAK
@@ -146693,7 +146702,7 @@ bed
 aGt
 beL
 asO
-bdT
+bfj
 asO
 asO
 asO
@@ -157157,7 +157166,7 @@ asa
 asa
 asa
 aOf
-aQc
+aQd
 aOf
 aOf
 aOf
@@ -158978,7 +158987,7 @@ asa
 asa
 aOf
 aOf
-aQc
+aQd
 aOf
 aOf
 aOf
@@ -159065,7 +159074,7 @@ asO
 aOf
 aOf
 aOf
-sWq
+bjq
 asa
 bki
 bki
@@ -159267,7 +159276,7 @@ asO
 aOf
 aOf
 aOf
-sWq
+bjq
 aOf
 bki
 bki
@@ -159468,8 +159477,8 @@ asO
 asa
 asa
 asa
-sWq
-sWq
+bjq
+bjq
 aOf
 bnx
 bkj
@@ -160010,7 +160019,7 @@ aOd
 aOd
 aOd
 aOf
-aQc
+aQd
 aOf
 aOf
 asO
@@ -171746,7 +171755,7 @@ aOy
 aOy
 aPG
 bfR
-rvy
+bfX
 bgl
 aOy
 aOy

@@ -333,7 +333,7 @@
 					/obj/item/reagent_containers/rag/towel,
 					/obj/item/bikehorn/rubberducky,
 					/obj/item/bikehorn/rubberducky,
-					/obj/item/soap)
+					/obj/item/soap/nanotrasen)
 	crate_name = "shower crate"
 
 //////////////////////////////////////////////////////////////////////////////

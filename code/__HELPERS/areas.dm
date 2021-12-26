@@ -132,16 +132,16 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(/area/engine/eng
 
 	if(creator)
 		if(creator.create_area_cooldown >= world.time)
-			to_chat(creator, SPAN_WARNING("You're trying to create a new area a little too fast."))
+			to_chat(creator, "<span class='warning'>You're trying to create a new area a little too fast.</span>")
 			return
 		creator.create_area_cooldown = world.time + 10
 
 	var/list/turfs = detect_room(get_turf(creator), area_or_turf_fail_types)
 	if(!turfs)
-		to_chat(creator, SPAN_WARNING("The new area must be completely airtight and not a part of a shuttle."))
+		to_chat(creator, "<span class='warning'>The new area must be completely airtight and not a part of a shuttle.</span>")
 		return
 	if(turfs.len > BP_MAX_ROOM_SIZE)
-		to_chat(creator, SPAN_WARNING("The room you're in is too big. It is [((turfs.len / BP_MAX_ROOM_SIZE)-1)*100]% larger than allowed."))
+		to_chat(creator, "<span class='warning'>The room you're in is too big. It is [((turfs.len / BP_MAX_ROOM_SIZE)-1)*100]% larger than allowed.</span>")
 		return
 	var/list/areas = list("New Area" = /area)
 	for(var/i in 1 to turfs.len)
@@ -155,7 +155,7 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(/area/engine/eng
 	area_choice = areas[area_choice]
 
 	if(!area_choice)
-		to_chat(creator, SPAN_WARNING("No choice selected. The area remains undefined."))
+		to_chat(creator, "<span class='warning'>No choice selected. The area remains undefined.</span>")
 		return
 	var/area/newA
 	var/area/oldA = get_area(get_turf(creator))
@@ -164,7 +164,7 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(/area/engine/eng
 		if(!str || !length(str)) //cancel
 			return
 		if(length(str) > 50)
-			to_chat(creator, SPAN_WARNING("The given name is too long. The area remains undefined."))
+			to_chat(creator, "<span class='warning'>The given name is too long. The area remains undefined.</span>")
 			return
 		newA = new area_choice
 		newA.setup(str)
@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(/area/engine/eng
 		var/obj/machinery/door/firedoor/FD = door
 		FD.CalculateAffectingAreas()
 
-	to_chat(creator, SPAN_NOTICE("You have created a new area, named [newA.name]. It is now weather proof, and constructing an APC will allow it to be powered."))
+	to_chat(creator, "<span class='notice'>You have created a new area, named [newA.name]. It is now weather proof, and constructing an APC will allow it to be powered.</span>")
 	return TRUE
 
 

@@ -20,7 +20,7 @@
 	maxHealth = 70
 	health = 70
 	healable = 0
-	mob_biotypes = MOB_ROBOTIC
+	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
 	blood_volume = 0
 	var/heavy_emp_damage = 25
 

@@ -54,8 +54,8 @@
 		if(user.a_intent == INTENT_HELP)
 			var/body_part = parse_zone(user.zone_selected)
 
-			var/heart_strength = SPAN_DANGER("no")
-			var/lung_strength = SPAN_DANGER("no")
+			var/heart_strength = "<span class='danger'>no</span>"
+			var/lung_strength = "<span class='danger'>no</span>"
 
 			var/obj/item/organ/heart/heart = M.getorganslot(ORGAN_SLOT_HEART)
 			var/obj/item/organ/lungs/lungs = M.getorganslot(ORGAN_SLOT_LUNGS)
@@ -64,11 +64,11 @@
 				return // FAIL
 			if(!(M.stat == DEAD || (HAS_TRAIT(M, TRAIT_FAKEDEATH)) || (HAS_TRAIT(M, TRAIT_NOPULSE))))
 				if(heart && istype(heart))
-					heart_strength = SPAN_DANGER("an unstable")
+					heart_strength = "<span class='danger'>an unstable</span>"
 					if(heart.beating)
 						heart_strength = "a healthy"
 				if(lungs && istype(lungs))
-					lung_strength = SPAN_DANGER("strained")
+					lung_strength = "<span class='danger'>strained</span>"
 					if(!(M.failed_last_breath || M.losebreath))
 						lung_strength = "healthy"
 
@@ -76,7 +76,7 @@
 				heart_strength = "<span class='boldannounce'>a faint, fluttery</span>"
 
 			var/diagnosis = (body_part == BODY_ZONE_CHEST ? "You hear [heart_strength] pulse and [lung_strength] respiration." : "You faintly hear [heart_strength] pulse.")
-			user.visible_message("[user] places [src] against [M]'s [body_part] and listens attentively.", SPAN_NOTICE("You place [src] against [M]'s [body_part]. [diagnosis]"))
+			user.visible_message("[user] places [src] against [M]'s [body_part] and listens attentively.", "<span class='notice'>You place [src] against [M]'s [body_part]. [diagnosis]</span>")
 			return
 	return ..(M,user)
 
@@ -217,16 +217,16 @@
 /obj/item/clothing/neck/petcollar/locked/attackby(obj/item/K, mob/user, params)
 	if(istype(K, /obj/item/key/collar))
 		if(lock != FALSE)
-			to_chat(user, SPAN_WARNING("With a click the collar unlocks!"))
+			to_chat(user, "<span class='warning'>With a click the collar unlocks!</span>")
 			lock = FALSE
 		else
-			to_chat(user, SPAN_WARNING("With a click the collar locks!"))
+			to_chat(user, "<span class='warning'>With a click the collar locks!</span>")
 			lock = TRUE
 	return
 
 /obj/item/clothing/neck/petcollar/locked/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(loc == user && user.get_item_by_slot(SLOT_NECK) && lock != FALSE)
-		to_chat(user, SPAN_WARNING("The collar is locked! You'll need unlock the collar before you can take it off!"))
+		to_chat(user, "<span class='warning'>The collar is locked! You'll need unlock the collar before you can take it off!</span>")
 		return
 	..()
 
@@ -266,7 +266,7 @@
 /obj/item/clothing/neck/necklace/dope/merchant/attack_self(mob/user)
 	. = ..()
 	selling = !selling
-	to_chat(user, SPAN_NOTICE("[src] has been set to [selling ? "'Sell'" : "'Get Price'"] mode."))
+	to_chat(user, "<span class='notice'>[src] has been set to [selling ? "'Sell'" : "'Get Price'"] mode.</span>")
 
 /obj/item/clothing/neck/necklace/dope/merchant/afterattack(obj/item/I, mob/user, proximity)
 	. = ..()
@@ -279,7 +279,7 @@
 
 	if(price)
 		var/true_price = round(price*profit_scaling)
-		to_chat(user, SPAN_NOTICE("[selling ? "Sold" : "Getting the price of"] [I], value: <b>[true_price]</b> credits[I.contents.len ? " (exportable contents included)" : ""].[profit_scaling < 1 && selling ? "<b>[round(price-true_price)]</b> credit\s taken as processing fee\s." : ""]"))
+		to_chat(user, "<span class='notice'>[selling ? "Sold" : "Getting the price of"] [I], value: <b>[true_price]</b> credits[I.contents.len ? " (exportable contents included)" : ""].[profit_scaling < 1 && selling ? "<b>[round(price-true_price)]</b> credit\s taken as processing fee\s." : ""]</span>")
 		if(selling)
 			new /obj/item/holochip(get_turf(user),true_price)
 			for(var/i in ex.exported_atoms_ref)
@@ -288,7 +288,7 @@
 					continue
 				qdel(AM)
 	else
-		to_chat(user, SPAN_WARNING("There is no export value for [I] or any items within it."))
+		to_chat(user, "<span class='warning'>There is no export value for [I] or any items within it.</span>")
 
 //////////////////////////////////
 //VERY SUPER BADASS NECKERCHIEFS//
@@ -311,7 +311,7 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(C.get_item_by_slot(SLOT_NECK) == src)
-			to_chat(user, SPAN_WARNING("You can't untie [src] while wearing it!"))
+			to_chat(user, "<span class='warning'>You can't untie [src] while wearing it!</span>")
 			return
 		if(user.is_holding(src))
 			var/obj/item/clothing/mask/bandana/newBand = new sourceBandanaType(user)

@@ -24,21 +24,21 @@ In all, this is a lot like the monkey code. /N
 			AdjustUnconscious(-60, FALSE)
 			AdjustSleeping(-100, FALSE)
 			update_mobility()
-			visible_message(SPAN_NOTICE("[M.name] nuzzles [src] trying to wake [p_them()] up!"),
-				SPAN_NOTICE("[M.name] nuzzles you trying to wake you up!"), target = M,
-				target_message = SPAN_NOTICE("You nuzzle [src] trying to wake [p_them()] up!"))
+			visible_message("<span class='notice'>[M.name] nuzzles [src] trying to wake [p_them()] up!</span>",
+				"<span class='notice'>[M.name] nuzzles you trying to wake you up!</span>", target = M,
+				target_message = "<span class='notice'>You nuzzle [src] trying to wake [p_them()] up!</span>")
 		if(INTENT_DISARM, INTENT_HARM)
 			if(health > 0)
 				M.do_attack_animation(src, ATTACK_EFFECT_BITE)
 				playsound(loc, 'sound/weapons/bite.ogg', 50, 1, -1)
-				visible_message(SPAN_DANGER("[M.name] bites [src]!"), \
+				visible_message("<span class='danger'>[M.name] bites [src]!</span>", \
 						"<span class='userdanger'>[M.name] bites [src]!</span>", null, COMBAT_MESSAGE_RANGE, null, M,
-						SPAN_DANGER("You bite [src]!"))
+						"<span class='danger'>You bite [src]!</span>")
 				adjustBruteLoss(1)
 				log_combat(M, src, "attacked")
 				updatehealth()
 			else
-				to_chat(M, SPAN_WARNING("[name] is too injured for that."))
+				to_chat(M, "<span class='warning'>[name] is too injured for that.</span>")
 
 
 /mob/living/carbon/alien/attack_larva(mob/living/carbon/alien/larva/L)
@@ -58,12 +58,12 @@ In all, this is a lot like the monkey code. /N
 			grabbedby(M)
 		if (INTENT_HARM)
 			if(HAS_TRAIT(M, TRAIT_PACIFISM))
-				to_chat(M, SPAN_NOTICE("You don't want to hurt [src]!"))
+				to_chat(M, "<span class='notice'>You don't want to hurt [src]!</span>")
 				return TRUE
 			M.do_attack_animation(src, ATTACK_EFFECT_PUNCH)
 		if(INTENT_DISARM)
 			if(HAS_TRAIT(M, TRAIT_PACIFISM))
-				to_chat(M, SPAN_NOTICE("You don't want to hurt [src]!"))
+				to_chat(M, "<span class='notice'>You don't want to hurt [src]!</span>")
 				return TRUE
 			M.do_attack_animation(src, ATTACK_EFFECT_DISARM)
 

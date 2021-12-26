@@ -152,7 +152,7 @@
 		if(target.wear_mask && istype(target.wear_mask, /obj/item/clothing/mask/facehugger))
 			return FALSE
 	// passed initial checks - time to leap!
-	M.visible_message(SPAN_DANGER("[src] leaps at [M]'s face!"), \
+	M.visible_message("<span class='danger'>[src] leaps at [M]'s face!</span>", \
 							"<span class='userdanger'>[src] leaps at [M]'s face!</span>")
 
 	// probiscis-blocker handling
@@ -162,7 +162,7 @@
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
 			if(H.is_mouth_covered(head_only = 1))
-				H.visible_message(SPAN_DANGER("[src] smashes against [H]'s [H.head]!"), \
+				H.visible_message("<span class='danger'>[src] smashes against [H]'s [H.head]!</span>", \
 									"<span class='userdanger'>[src] smashes against [H]'s [H.head]!</span>")
 				Die()
 				return FALSE
@@ -170,7 +170,7 @@
 		if(target.wear_mask)
 			var/obj/item/clothing/W = target.wear_mask
 			if(target.dropItemToGround(W))
-				target.visible_message(SPAN_DANGER("[src] tears [W] off of [target]'s face!"), \
+				target.visible_message("<span class='danger'>[src] tears [W] off of [target]'s face!</span>", \
 									"<span class='userdanger'>[src] tears [W] off of [target]'s face!</span>")
 		target.equip_to_slot_if_possible(src, SLOT_WEAR_MASK, 0, 1, 1)
 	return TRUE // time for a smoke
@@ -205,7 +205,7 @@
 			return
 
 	if(!sterile)
-		target.visible_message(SPAN_DANGER("[src] falls limp after violating [target]'s face!"), \
+		target.visible_message("<span class='danger'>[src] falls limp after violating [target]'s face!</span>", \
 								"<span class='userdanger'>[src] falls limp after violating [target]'s face!</span>")
 
 		Die()
@@ -216,7 +216,7 @@
 			new /obj/item/organ/body_egg/alien_embryo(target)
 
 	else
-		target.visible_message(SPAN_DANGER("[src] violates [target]'s face!"), \
+		target.visible_message("<span class='danger'>[src] violates [target]'s face!</span>", \
 								"<span class='userdanger'>[src] violates [target]'s face!</span>")
 
 /obj/item/clothing/mask/facehugger/proc/GoActive()
@@ -243,7 +243,7 @@
 	item_state = "facehugger_inactive"
 	stat = DEAD
 
-	visible_message(SPAN_DANGER("[src] curls up into a ball!"))
+	visible_message("<span class='danger'>[src] curls up into a ball!</span>")
 
 /proc/CanHug(mob/living/M)
 	if(!istype(M))

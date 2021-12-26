@@ -16,14 +16,14 @@
 	require_all_chems = FALSE
 
 /datum/surgery_step/embalming/preop(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
-	user.visible_message("[user] starts to embalm [target]'s body.", SPAN_NOTICE("You start embalming [target]'s body."))
+	user.visible_message("[user] starts to embalm [target]'s body.", "<span class='notice'>You start embalming [target]'s body.</span>")
 
 /datum/surgery_step/embalming/success(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
-	user.visible_message("[user] embalms [target]'s body.", SPAN_NOTICE("You succeed in embalming [target]'s body."))
+	user.visible_message("[user] embalms [target]'s body.", "<span class='notice'>You succeed in embalming [target]'s body.</span>")
 	ADD_TRAIT(target, TRAIT_HUSK, MAGIC_TRAIT) //Husk's prevent body smell
 	return TRUE
 
 /datum/surgery_step/embalming/failure(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
-	user.visible_message("[user] screws up!", SPAN_WARNING("You screwed up!"))
+	user.visible_message("[user] screws up!", "<span class='warning'>You screwed up!</span>")
 	ADD_TRAIT(target, TRAIT_NOCLONE, MAGIC_TRAIT) //That body is ruined, but still gives miasma
 	return FALSE

@@ -102,7 +102,7 @@
 			M.visible_message("[M] chews a bit on [src].")
 			faint_ticker++
 			return TRUE
-		M.visible_message(SPAN_WARNING("[M] devours [src]!"))
+		M.visible_message("<span class='warning'>[M] devours [src]!</span>")
 		var/level_gain = (powerlevel - M.powerlevel)
 		if(level_gain >= -1 && !bruised && !M.ckey)//Player shrooms can't level up to become robust gods.
 			if(level_gain < 1)//So we still gain a level if two mushrooms were the same level
@@ -164,7 +164,7 @@
 			Recover()
 			qdel(I)
 		else
-			to_chat(user, SPAN_WARNING("[src] won't eat it!"))
+			to_chat(user, "<span class='warning'>[src] won't eat it!</span>")
 		return
 	if(I.force)
 		Bruise()

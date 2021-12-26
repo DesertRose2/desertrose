@@ -271,7 +271,7 @@
 					/obj/item/grenade/chem_grenade/cleaner,
 					/obj/item/grenade/chem_grenade/cleaner,
 					/obj/item/grenade/chem_grenade/cleaner,
-					/obj/item/soap)
+					/obj/item/soap/nanotrasen)
 	crate_name = "standard janitorial crate"
 
 /datum/supply_pack/service/janitor/janicart

@@ -22,7 +22,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/space)
 "j" = (
-/obj/machinery/door/unpowered/securedoor,
+/obj/machinery/door/unpowered/shuttle,
 /turf/open/floor/mineral/titanium/blue,
 /area/space)
 "l" = (

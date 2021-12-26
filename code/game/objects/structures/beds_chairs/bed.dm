@@ -25,7 +25,7 @@
 /obj/structure/bed/examine(mob/user)
 	. = ..()
 	if(bolts)
-		. += SPAN_NOTICE("It's held together by a couple of <b>bolts</b>.")
+		. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
 
 /obj/structure/bed/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -49,7 +49,7 @@
 
 /obj/structure/bed/wooden
 	name = "simple wooden bed"
-	desc = "A wooden frame with a mattress."
+	desc = "Wooden frame with a mattress"
 	icon_state = "bed_wood"
 	max_integrity = 80
 
@@ -80,19 +80,19 @@
 	if(istype(W, /obj/item/roller/robo))
 		var/obj/item/roller/robo/R = W
 		if(R.loaded)
-			to_chat(user, SPAN_WARNING("You already have a roller bed docked!"))
+			to_chat(user, "<span class='warning'>You already have a roller bed docked!</span>")
 			return
 
 		if(has_buckled_mobs())
 			if(buckled_mobs.len > 1)
 				unbuckle_all_mobs()
-				user.visible_message(SPAN_NOTICE("[user] unbuckles all creatures from [src]."))
+				user.visible_message("<span class='notice'>[user] unbuckles all creatures from [src].</span>")
 			else
 				user_unbuckle_mob(buckled_mobs[1],user)
 		else
 			R.loaded = src
 			forceMove(R)
-			user.visible_message("[user] collects [src].", SPAN_NOTICE("You collect [src]."))
+			user.visible_message("[user] collects [src].", "<span class='notice'>You collect [src].</span>")
 		return 1
 	else
 		return ..()
@@ -104,7 +104,7 @@
 			return 0
 		if(has_buckled_mobs())
 			return 0
-		usr.visible_message("[usr] collapses \the [src.name].", SPAN_NOTICE("You collapse \the [src.name]."))
+		usr.visible_message("[usr] collapses \the [src.name].", "<span class='notice'>You collapse \the [src.name].</span>")
 		var/obj/structure/bed/roller/B = new foldabletype(get_turf(src))
 		usr.put_in_hands(B)
 		qdel(src)
@@ -136,9 +136,9 @@
 	if(istype(I, /obj/item/roller/robo))
 		var/obj/item/roller/robo/R = I
 		if(R.loaded)
-			to_chat(user, SPAN_WARNING("[R] already has a roller bed loaded!"))
+			to_chat(user, "<span class='warning'>[R] already has a roller bed loaded!</span>")
 			return
-		user.visible_message(SPAN_NOTICE("[user] loads [src]."), SPAN_NOTICE("You load [src] into [R]."))
+		user.visible_message("<span class='notice'>[user] loads [src].</span>", "<span class='notice'>You load [src] into [R].</span>")
 		R.loaded = new/obj/structure/bed/roller(R)
 		qdel(src) //"Load"
 		return
@@ -177,10 +177,10 @@
 	if(loaded)
 		var/obj/structure/bed/roller/R = loaded
 		R.forceMove(location)
-		user.visible_message("[user] deploys [loaded].", SPAN_NOTICE("You deploy [loaded]."))
+		user.visible_message("[user] deploys [loaded].", "<span class='notice'>You deploy [loaded].</span>")
 		loaded = null
 	else
-		to_chat(user, SPAN_WARNING("The dock is empty!"))
+		to_chat(user, "<span class='warning'>The dock is empty!</span>")
 
 //Dog bed
 

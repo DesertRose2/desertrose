@@ -27,7 +27,7 @@
 /datum/disease/revblight/stage_act()
 	if(!finalstage)
 		if(affected_mob.lying && prob(stage*4))
-			to_chat(affected_mob, SPAN_NOTICE("You feel better."))
+			to_chat(affected_mob, "<span class='notice'>You feel better.</span>")
 			cure()
 			return
 		if(prob(stage*3))
@@ -61,7 +61,7 @@
 				if(affected_mob.dna?.species)
 					affected_mob.dna.species.handle_mutant_bodyparts(affected_mob,"#1d2953")
 					affected_mob.dna.species.handle_hair(affected_mob,"#1d2953")
-				affected_mob.visible_message(SPAN_WARNING("[affected_mob] looks terrifyingly gaunt..."), "<span class='revennotice'>You suddenly feel like your skin is <i>wrong</i>...</span>")
+				affected_mob.visible_message("<span class='warning'>[affected_mob] looks terrifyingly gaunt...</span>", "<span class='revennotice'>You suddenly feel like your skin is <i>wrong</i>...</span>")
 				affected_mob.add_atom_colour("#1d2953", TEMPORARY_COLOUR_PRIORITY)
 				new /obj/effect/temp_visual/revenant(affected_mob.loc)
 				addtimer(CALLBACK(src, .proc/curses), 150)

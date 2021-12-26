@@ -158,7 +158,7 @@ By design, d1 is the smallest direction and d2 is the highest
 	if(istype(W, /obj/item/wirecutters))
 		if (shock(user, 50))
 			return
-		user.visible_message("[user] cuts the cable.", SPAN_NOTICE("You cut the cable."))
+		user.visible_message("[user] cuts the cable.", "<span class='notice'>You cut the cable.</span>")
 		stored.add_fingerprint(user)
 		investigate_log("was cut by [key_name(usr)] in [AREACOORD(src)]", INVESTIGATE_WIRES)
 		deconstruct()
@@ -167,7 +167,7 @@ By design, d1 is the smallest direction and d2 is the highest
 	else if(istype(W, /obj/item/stack/cable_coil))
 		var/obj/item/stack/cable_coil/coil = W
 		if (coil.get_amount() < 1)
-			to_chat(user, SPAN_WARNING("Not enough cable!"))
+			to_chat(user, "<span class='warning'>Not enough cable!</span>")
 			return
 		coil.cable_join(src, user)
 
@@ -179,9 +179,9 @@ By design, d1 is the smallest direction and d2 is the highest
 
 	else if(istype(W, /obj/item/multitool))
 		if(powernet && (powernet.avail > 0))		// is it powered?
-			to_chat(user, SPAN_DANGER("[DisplayPower(powernet.avail)] in power network."))
+			to_chat(user, "<span class='danger'>[DisplayPower(powernet.avail)] in power network.</span>")
 		else
-			to_chat(user, SPAN_DANGER("The cable is not powered."))
+			to_chat(user, "<span class='danger'>The cable is not powered.</span>")
 		shock(user, 5, 0.2)
 
 	src.add_fingerprint(user)
@@ -558,7 +558,7 @@ By design, d1 is the smallest direction and d2 is the highest
 		if(difference >= 0)
 			heal_amount = difference
 		if(user == H)
-			user.visible_message(SPAN_NOTICE("[user] starts to fix some of the wires in [H]'s [affecting.name]."), SPAN_NOTICE("You start fixing some of the wires in [H]'s [affecting.name]."))
+			user.visible_message("<span class='notice'>[user] starts to fix some of the wires in [H]'s [affecting.name].</span>", "<span class='notice'>You start fixing some of the wires in [H]'s [affecting.name].</span>")
 			if(!do_mob(user, H, 50))
 				return
 		if(item_heal_robotic(H, user, 0, heal_amount))
@@ -580,16 +580,16 @@ By design, d1 is the smallest direction and d2 is the highest
 
 /obj/item/stack/cable_coil/attack_self(mob/user)
 	if(amount < 15)
-		to_chat(user, SPAN_NOTICE("You don't have enough cable to make restraints."))
+		to_chat(user, "<span class='notice'>You don't have enough cable coil to make restraints out of them</span>")
 		return
-	to_chat(user, SPAN_NOTICE("You start making some cable restraints."))
+	to_chat(user, "<span class='notice'>You start making some cable restraints.</span>")
 	if(!do_after(user, 30, TRUE, user, TRUE) || !use(15))
-		to_chat(user, SPAN_NOTICE("You fail to make cable restraints, you need to be standing still to do it!"))
+		to_chat(user, "<span class='notice'>You fail to make cable restraints, you need to be standing still to do it</span>")
 		return
 	var/obj/item/restraints/handcuffs/cable/result = new(get_turf(user))
 	user.put_in_hands(result)
 	result.color = color
-	to_chat(user, SPAN_NOTICE("You make some restraints out of cable."))
+	to_chat(user, "<span class='notice'>You make some restraints out of cable</span>")
 
 //add cables to the stack
 /obj/item/stack/cable_coil/proc/give(extra)
@@ -613,15 +613,15 @@ By design, d1 is the smallest direction and d2 is the highest
 		return
 
 	if(!isturf(T) || T.intact || !T.can_have_cabling())
-		to_chat(user, SPAN_WARNING("You can only lay cables on catwalks and plating!"))
+		to_chat(user, "<span class='warning'>You can only lay cables on catwalks and plating!</span>")
 		return
 
 	if(get_amount() < 1) // Out of cable
-		to_chat(user, SPAN_WARNING("There is no cable left!"))
+		to_chat(user, "<span class='warning'>There is no cable left!</span>")
 		return
 
 	if(get_dist(T,user) > 1) // Too far
-		to_chat(user, SPAN_WARNING("You can't lay cable at a place that far away!"))
+		to_chat(user, "<span class='warning'>You can't lay cable at a place that far away!</span>")
 		return
 
 	var/dirn
@@ -635,7 +635,7 @@ By design, d1 is the smallest direction and d2 is the highest
 
 	for(var/obj/structure/cable/LC in T)
 		if(LC.d2 == dirn && LC.d1 == 0)
-			to_chat(user, SPAN_WARNING("There's already a cable at that position!"))
+			to_chat(user, "<span class='warning'>There's already a cable at that position!</span>")
 			return
 
 	var/obj/structure/cable/C = get_new_cable(T)
@@ -678,7 +678,7 @@ By design, d1 is the smallest direction and d2 is the highest
 		return
 
 	if(get_dist(C, user) > 1)		// make sure it's close enough
-		to_chat(user, SPAN_WARNING("You can't lay cable at a place that far away!"))
+		to_chat(user, "<span class='warning'>You can't lay cable at a place that far away!</span>")
 		return
 
 
@@ -692,10 +692,10 @@ By design, d1 is the smallest direction and d2 is the highest
 	if((C.d1 == dirn || C.d2 == dirn) && !forceddir)
 		if(!U.can_have_cabling())						//checking if it's a plating or catwalk
 			if (showerror)
-				to_chat(user, SPAN_WARNING("You can only lay cables on catwalks and plating!"))
+				to_chat(user, "<span class='warning'>You can only lay cables on catwalks and plating!</span>")
 			return
 		if(U.intact)						//can't place a cable if it's a plating with a tile on it
-			to_chat(user, SPAN_WARNING("You can't lay cable there unless the floor tiles are removed!"))
+			to_chat(user, "<span class='warning'>You can't lay cable there unless the floor tiles are removed!</span>")
 			return
 		else
 			// cable is pointing at us, we're standing on an open tile
@@ -706,7 +706,7 @@ By design, d1 is the smallest direction and d2 is the highest
 			for(var/obj/structure/cable/LC in U)		// check to make sure there's not a cable there already
 				if(LC.d1 == fdirn || LC.d2 == fdirn)
 					if (showerror)
-						to_chat(user, SPAN_WARNING("There's already a cable at that position!"))
+						to_chat(user, "<span class='warning'>There's already a cable at that position!</span>")
 					return
 
 			var/obj/structure/cable/NC = get_new_cable (U)
@@ -751,7 +751,7 @@ By design, d1 is the smallest direction and d2 is the highest
 				continue
 			if((LC.d1 == nd1 && LC.d2 == nd2) || (LC.d1 == nd2 && LC.d2 == nd1) )	// make sure no cable matches either direction
 				if (showerror)
-					to_chat(user, SPAN_WARNING("There's already a cable at that position!"))
+					to_chat(user, "<span class='warning'>There's already a cable at that position!</span>")
 
 				return
 

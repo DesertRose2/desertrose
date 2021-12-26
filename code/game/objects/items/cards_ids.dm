@@ -81,7 +81,7 @@
 	var/uses = 15
 
 /obj/item/card/emag/bluespace
-	name = "quantum cryptographic sequencer"
+	name = "bluespace cryptographic sequencer"
 	desc = "It's a blue card with a magnetic strip attached to some circuitry. It appears to have some sort of transmitter attached to it."
 	icon_state = "emag_bs"
 	prox_check = FALSE
@@ -97,7 +97,7 @@
 	if(istype(A, /obj/item/storage) && !(istype(A, /obj/item/storage/lockbox) || istype(A, /obj/item/storage/pod)))
 		return
 	if(!uses)
-		user.visible_message(SPAN_WARNING("[src] emits a weak spark. It's burnt out!"))
+		user.visible_message("<span class='warning'>[src] emits a weak spark. It's burnt out!</span>")
 		playsound(src, 'sound/effects/light_flicker.ogg', 100, 1)
 		return
 	else if(uses <= 3)
@@ -106,15 +106,15 @@
 		return
 	uses = max(uses - 1, 0)
 	if(!uses)
-		user.visible_message(SPAN_WARNING("[src] fizzles and sparks. It seems like it's out of charges."))
+		user.visible_message("<span class='warning'>[src] fizzles and sparks. It seems like it's out of charges.</span>")
 		playsound(src, 'sound/effects/light_flicker.ogg', 100, 1)
 
 /obj/item/card/emag/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("It has <b>[uses ? uses : "no"]</b> charges left.")
+	. += "<span class='notice'>It has <b>[uses ? uses : "no"]</b> charges left.</span>"
 
 /obj/item/card/id/examine_more(mob/user)
-	var/list/msg = list(SPAN_NOTICE("<i>You examine [src] closer, and note the following...</i>"))
+	var/list/msg = list("<span class='notice'><i>You examine [src] closer, and note the following...</i></span>")
 
 	if(mining_points)
 		msg += "There's [mining_points] mining equipment redemption point\s loaded onto this card."
@@ -138,11 +138,11 @@
 		var/obj/item/emagrecharge/ER = W
 		if(ER.uses)
 			uses += ER.uses
-			to_chat(user, SPAN_NOTICE("You have added [ER.uses] charges to [src]. It now has [uses] charges."))
+			to_chat(user, "<span class='notice'>You have added [ER.uses] charges to [src]. It now has [uses] charges.</span>")
 			playsound(src, "sparks", 100, 1)
 			ER.uses = 0
 		else
-			to_chat(user, SPAN_WARNING("[ER] has no charges left."))
+			to_chat(user, "<span class='warning'>[ER] has no charges left.</span>")
 		return
 	. = ..()
 
@@ -160,9 +160,9 @@
 /obj/item/emagrecharge/examine(mob/user)
 	. = ..()
 	if(uses)
-		. += SPAN_NOTICE("It can add up to [uses] charges to compatible devices.")
+		. += "<span class='notice'>It can add up to [uses] charges to compatible devices</span>"
 	else
-		. += SPAN_WARNING("It has a small, red, blinking light coming from inside of it. It's spent.")
+		. += "<span class='warning'>It has a small, red, blinking light coming from inside of it. It's spent.</span>"
 
 /obj/item/card/emagfake
 	desc = "It's a card with a magnetic strip attached to some circuitry. Closer inspection shows that this card is a poorly made replica, with a \"DonkCo\" logo stamped on the back."
@@ -229,8 +229,8 @@
 
 /obj/item/card/id/attack_self(mob/user)
 	if(Adjacent(user))
-		user.visible_message(SPAN_NOTICE("[user] shows you: [icon2html(src, viewers(user))] [src.name]."), \
-					SPAN_NOTICE("You show \the [src.name]."))
+		user.visible_message("<span class='notice'>[user] shows you: [icon2html(src, viewers(user))] [src.name].</span>", \
+					"<span class='notice'>You show \the [src.name].</span>")
 		add_fingerprint(user)
 
 /obj/item/card/id/attackby(obj/item/W, mob/user, params)
@@ -245,30 +245,30 @@
 		var/list/money_contained = money_bag.contents
 		var/money_added = mass_insert_money(money_contained, user)
 		if (money_added)
-			to_chat(user, SPAN_NOTICE("You stuff the contents into the card! They disappear in a puff of bluespace smoke, adding [money_added] worth of credits to the linked account."))
+			to_chat(user, "<span class='notice'>You stuff the contents into the card! They disappear in a puff of bluespace smoke, adding [money_added] worth of credits to the linked account.</span>")
 	else
 		return ..()
 
 /obj/item/card/id/proc/insert_money(obj/item/I, mob/user, physical_currency)
 	if(!registered_account)
-		to_chat(user, SPAN_WARNING("[src] doesn't have a linked account to deposit [I] into!"))
+		to_chat(user, "<span class='warning'>[src] doesn't have a linked account to deposit [I] into!</span>")
 		return
 	var/cash_money = I.get_item_credit_value()
 	if(!cash_money)
-		to_chat(user, SPAN_WARNING("[I] doesn't seem to be worth anything!"))
+		to_chat(user, "<span class='warning'>[I] doesn't seem to be worth anything!</span>")
 		return
 	registered_account.adjust_money(cash_money)
 	if(physical_currency)
-		to_chat(user, SPAN_NOTICE("You stuff [I] into [src]. It disappears in a small puff of bluespace smoke, adding [cash_money] credits to the linked account."))
+		to_chat(user, "<span class='notice'>You stuff [I] into [src]. It disappears in a small puff of bluespace smoke, adding [cash_money] credits to the linked account.</span>")
 	else
-		to_chat(user, SPAN_NOTICE("You insert [I] into [src], adding [cash_money] credits to the linked account."))
+		to_chat(user, "<span class='notice'>You insert [I] into [src], adding [cash_money] credits to the linked account.</span>")
 
-	to_chat(user, SPAN_NOTICE("The linked account now reports a balance of [registered_account.account_balance] cr."))
+	to_chat(user, "<span class='notice'>The linked account now reports a balance of [registered_account.account_balance] cr.</span>")
 	qdel(I)
 
 /obj/item/card/id/proc/mass_insert_money(list/money, mob/user)
 	if(!registered_account)
-		to_chat(user, SPAN_WARNING("[src] doesn't have a linked account to deposit into!"))
+		to_chat(user, "<span class='warning'>[src] doesn't have a linked account to deposit into!</span>")
 		return FALSE
 
 	if (!money || !money.len)
@@ -297,7 +297,7 @@
 // Returns true if new account was set.
 /obj/item/card/id/proc/set_new_account(mob/living/user)
 	if(bank_support != ID_FREE_BANK_ACCOUNT)
-		to_chat(user, SPAN_WARNING("This ID has no modular banking support whatsover, must be an older model..."))
+		to_chat(user, "<span class='warning'>This ID has no modular banking support whatsover, must be an older model...</span>")
 		return
 	. = FALSE
 	var/datum/bank_account/old_account = registered_account
@@ -310,10 +310,10 @@
 	if(!alt_click_can_use_id(user))
 		return
 	if(!new_bank_id || new_bank_id < 111111 || new_bank_id > 999999)
-		to_chat(user, SPAN_WARNING("The account ID number needs to be between 111111 and 999999."))
+		to_chat(user, "<span class='warning'>The account ID number needs to be between 111111 and 999999.</span>")
 		return
 	if (registered_account && registered_account.account_id == new_bank_id)
-		to_chat(user, SPAN_WARNING("The account ID was already assigned to this card."))
+		to_chat(user, "<span class='warning'>The account ID was already assigned to this card.</span>")
 		return
 
 	for(var/A in SSeconomy.bank_accounts)
@@ -324,11 +324,11 @@
 
 			B.bank_cards += src
 			registered_account = B
-			to_chat(user, SPAN_NOTICE("The provided account has been linked to this ID card."))
+			to_chat(user, "<span class='notice'>The provided account has been linked to this ID card.</span>")
 
 			return TRUE
 
-	to_chat(user, SPAN_WARNING("The account ID number provided is invalid."))
+	to_chat(user, "<span class='warning'>The account ID number provided is invalid.</span>")
 	return
 
 /obj/item/card/id/AltClick(mob/living/user)
@@ -341,7 +341,7 @@
 		return
 
 	if (world.time < registered_account.withdrawDelay)
-		registered_account.bank_card_talk(SPAN_WARNING("ERROR: UNABLE TO LOGIN DUE TO SCHEDULED MAINTENANCE. MAINTENANCE IS SCHEDULED TO COMPLETE IN [(registered_account.withdrawDelay - world.time)/10] SECONDS."), TRUE)
+		registered_account.bank_card_talk("<span class='warning'>ERROR: UNABLE TO LOGIN DUE TO SCHEDULED MAINTENANCE. MAINTENANCE IS SCHEDULED TO COMPLETE IN [(registered_account.withdrawDelay - world.time)/10] SECONDS.</span>", TRUE)
 		return
 
 	var/amount_to_remove =  input(user, "How much do you want to withdraw? Current Balance: [registered_account.account_balance]", "Withdraw Funds", 5) as num|null
@@ -354,9 +354,9 @@
 	if(amount_to_remove && registered_account.adjust_money(-amount_to_remove))
 		var/obj/item/holochip/holochip = new (user.drop_location(), amount_to_remove)
 		user.put_in_hands(holochip)
-		to_chat(user, SPAN_NOTICE("You withdraw [amount_to_remove] credits into a holochip."))
+		to_chat(user, "<span class='notice'>You withdraw [amount_to_remove] credits into a holochip.</span>")
 		return
-	registered_account.bank_card_talk(SPAN_WARNING("ERROR: The linked account has no sufficient credits to perform that withdrawal."), TRUE)
+	registered_account.bank_card_talk("<span class='warning'>ERROR: The linked account has no sufficient credits to perform that withdrawal.</span>", TRUE)
 
 /obj/item/card/id/examine(mob/user)
 	. = ..()
@@ -413,6 +413,23 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
+/obj/item/card/id/silver/followers
+	name = "Followers Assistant ID"
+	desc = "A silver ID card that gives access to the Followers clinic"
+	access = list(ACCESS_FOLLOWER)
+	assignment = "Followers Assistant"
+
+/obj/item/card/id/silver/followers/attack_self(mob/user)
+	if(isliving(user))
+		var/mob/living/living_user = user
+		if(alert(user, "Action", "Volunteer Card", "Show", "Write Name") == "Write Name")
+			registered_name = living_user.real_name
+			update_label()
+			to_chat(user, "<span class='notice'>You successfully write your name on the ID card.</span>")
+			return
+	..()
+
+
 /obj/item/card/id/silver/reaper
 	name = "Thirteen's ID Card (Reaper)"
 	access = list(ACCESS_MAINT_TUNNELS)
@@ -451,7 +468,7 @@
 		src.access |= I.access
 		if(isliving(user) && user.mind)
 			if(user.mind.special_role || anyone)
-				to_chat(usr, SPAN_NOTICE("The card's microscanners activate as you pass it over the ID, copying its access."))
+				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
 	if(isliving(user) && user.mind)
@@ -488,7 +505,7 @@
 			assignment = target_occupation
 			update_label()
 			forged = TRUE
-			to_chat(user, SPAN_NOTICE("You successfully forge the ID card."))
+			to_chat(user, "<span class='notice'>You successfully forge the ID card.</span>")
 			log_game("[key_name(user)] has forged \the [initial(name)] with name \"[registered_name]\" and occupation \"[assignment]\".")
 
 			// First time use automatically sets the account id to the user.
@@ -501,7 +518,7 @@
 						if(account.account_id == accountowner.account_id)
 							account.bank_cards += src
 							registered_account = account
-							to_chat(user, SPAN_NOTICE("Your account number has been automatically assigned."))
+							to_chat(user, "<span class='notice'>Your account number has been automatically assigned.</span>")
 			return
 		else if (popup_input == "Forge/Reset" && forged)
 			registered_name = initial(registered_name)
@@ -509,7 +526,7 @@
 			log_game("[key_name(user)] has reset \the [initial(name)] named \"[src]\" to default.")
 			update_label()
 			forged = FALSE
-			to_chat(user, SPAN_NOTICE("You successfully reset the ID card."))
+			to_chat(user, "<span class='notice'>You successfully reset the ID card.</span>")
 			return
 		else if (popup_input == "Change Account ID")
 			set_new_account(user)
@@ -648,13 +665,13 @@
 /obj/item/card/id/prisoner/examine(mob/user)
 	. = ..()
 	if(sentence && world.time < sentence)
-		. += SPAN_NOTICE("You're currently serving a sentence for [crime]. <b>[DisplayTimeText(sentence - world.time)]</b> left.")
+		. += "<span class='notice'>You're currently serving a sentence for [crime]. <b>[DisplayTimeText(sentence - world.time)]</b> left.</span>"
 	else if(goal)
-		. += SPAN_NOTICE("You have accumulated [points] out of the [goal] points you need for freedom.")
+		. += "<span class='notice'>You have accumulated [points] out of the [goal] points you need for freedom.</span>"
 	else if(!sentence)
-		. += SPAN_WARNING("You are currently serving a permanent sentence for [crime].")
+		. += "<span class='warning'>You are currently serving a permanent sentence for [crime].</span>"
 	else
-		. += SPAN_NOTICE("Your sentence is up! You're free!")
+		. += "<span class='notice'>Your sentence is up! You're free!</span>"
 
 /obj/item/card/id/prisoner/one
 	icon_state = "prisoner_001"
@@ -774,7 +791,7 @@
 /obj/item/card/id/knight
 	name = "knight badge"
 	icon_state = "knight"
-	desc = "A badge denoting the owner as a knight! It has a strip for swiping like an ID."
+	desc = "A badge denoting the owner as a knight! It has a strip for swiping like an ID"
 	var/id_color = "#00FF00" //defaults to green
 	var/mutable_appearance/id_overlay
 
@@ -800,14 +817,14 @@
 	if(!in_range(src, user))	//Basic checks to prevent abuse
 		return
 	if(user.incapacitated() || !istype(user))
-		to_chat(user, SPAN_WARNING("You can't do that right now!"))
+		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
 		return TRUE
 	if(alert("Are you sure you want to recolor your id?", "Confirm Repaint", "Yes", "No") == "Yes")
 		var/energy_color_input = input(usr,"","Choose Energy Color",id_color) as color|null
 		if(!in_range(src, user) || !energy_color_input)
 			return TRUE
 		if(user.incapacitated() || !istype(user))
-			to_chat(user, SPAN_WARNING("You can't do that right now!"))
+			to_chat(user, "<span class='warning'>You can't do that right now!</span>")
 			return TRUE
 		id_color = sanitize_hexcolor(energy_color_input, desired_format=6, include_crunch=1)
 		update_icon()
@@ -815,7 +832,7 @@
 
 /obj/item/card/id/knight/examine(mob/user)
 	. = ..()
-	. += SPAN_NOTICE("Alt-click to recolor it.")
+	. += "<span class='notice'>Alt-click to recolor it.</span>"
 
 /obj/item/card/id/knight/blue
 	id_color = "#0000FF"
@@ -833,3 +850,361 @@
 	access = get_all_accesses()+get_all_centcom_access()+get_all_syndicate_access()
 	registered_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	. = ..()
+
+
+
+////////Dogtag types/////////
+//All one subtype for making item path pretty/easily telling what ID cards are dogtags, for gravemarkers
+
+/obj/item/card/id/dogtag
+	name = "holo dogtag"
+	desc = "An advanced holographic dogtag, that shows the duty of a BoS member."
+	icon_state = "holodogtag"
+	assignment = "ID tags"
+	uses_overlays = FALSE
+
+/obj/item/card/id/selfassign/attack_self(mob/user)
+	if(isliving(user))
+		var/mob/living/living_user = user
+		if(alert(user, "Action", "Agent ID", "Show", "Forge") == "Forge")
+			registered_name = living_user.real_name
+			assignment = living_user.job
+			update_label()
+			to_chat(user, "<span class='notice'>You successfully forge the ID card.</span>")
+			return
+	..()
+
+/obj/item/card/id/selfassign
+	icon_state = "silver"
+	item_state = "silver_id"
+	desc = "A rewritable card that allows you to put your name and assignment on it."
+
+/obj/item/card/id/dogtag/deputy
+	name = "deputy's badge"
+	desc = "A silver badge which shows honour and dedication."
+	assignment = "badge"
+	assignment = "Deputy"
+	icon_state = "deputy"
+	item_state = "badge-deputy"
+	access = list(ACCESS_BAR, ACCESS_GATEWAY)
+
+/obj/item/card/id/dogtag/deputy/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/card/id/dogtag/sheriff))
+		var/newname = stripped_input(user, "Who do you want to designate as your deputy?", , "", MAX_NAME_LEN)
+		if(newname)
+			to_chat(user, "You scribble the [registered_name] for the name on the badge.")
+			registered_name = newname
+			update_label()
+	return ..()
+
+/obj/item/card/id/dogtag/sheriff
+	name = "sheriff's badge"
+	desc = "A golden Sheriff's badge."
+	assignment = "badge"
+	icon_state = "sheriff"
+	item_state = "badge-sheriff"
+
+/obj/item/card/id/dogtag/town
+	name = "citizenship permit"
+	desc = "A permit identifying the holder as a citizen of a nearby town."
+	icon_state = "doctor"
+	item_state = "card-doctor"
+	assignment = "citizenship permit"
+	access = list(ACCESS_BAR)
+
+/obj/item/card/id/dogtag/town/mafia
+	name = "citizenship permit"
+	desc = "A permit identifying the holder as a citizen of a nearby town."
+	icon_state = "doctor"
+	item_state = "card-doctor"
+	assignment = "citizenship permit"
+	assignment = "Settler"
+	obj_flags = UNIQUE_RENAME
+	access = list(ACCESS_BAR)
+
+/obj/item/card/id/dogtag/town/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/card/id/silver/mayor))
+		var/newname = stripped_input(user, "Who do you want to grant citizenship to?", , "", MAX_NAME_LEN)
+		if(newname)
+			to_chat(user, "You scribble the [registered_name] for the name on the permit.")
+			registered_name = newname
+			update_label()
+	return ..()
+
+/obj/item/card/id/dogtag/ncrambassador
+	name = "ambassador's permit"
+	desc = "An silver encrusted ambassador's permit in a plastic holder."
+	icon_state = "silver"
+	item_state = "silver"
+	assignment = "ambassador's permit"
+
+/obj/item/card/id/dogtag/ncradmin
+	name = "Administrators ID"
+	desc = "An silver encrusted admins ID in a plastic holder."
+	icon_state = "silver"
+	item_state = "silver"
+
+/obj/item/card/id/dogtag/ncrtrooper
+	name = "trooper's tags"
+	desc = "A dog tag proving enlistment."
+	icon_state = "ncrdogtagrecruit"
+
+/obj/item/card/id/dogtag/ncrmp
+	name = "military police tags"
+	desc = "A dog tag that associates one with the NCROSI."
+	icon_state = "ncrdogtagrecruit"
+
+/obj/item/card/id/dogtag/ncrht
+	name = "heavy trooper's tags"
+	desc = "A dog tag proving the elite status of the heavy trooper."
+	icon_state = "ncrdogtagrecruit"
+
+/obj/item/card/id/dogtag/ncrsergeant
+	name = "sergeant's tags"
+	desc = "A chevron decorated dog tag showing NCO-ship."
+	icon_state = "ncrdogtagsergeant"
+
+/obj/item/card/id/dogtag/ncrlieutenant
+	name = "commanding officer's tags"
+	desc = "A silver bar dog tag that denotes a member of the NCR military with an officer's commission."
+	icon_state = "ncrdogtagofficer"
+
+/obj/item/card/id/dogtag/ncrcaptain
+	name = "captain's tags"
+	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR captain."
+	icon_state = "ncrdogtagcaptain"
+
+/obj/item/card/id/dogtag/ncrranger
+	name = "ranger badge"
+	desc = "A badge formed out of a Legion denarius that invokes fear in those who see it, belonging to someone with a big iron on their hip."
+	icon_state = "ranger"
+
+/obj/item/card/id/dogtag/ncrvetranger
+	name = "veteran ranger badge"
+	desc = "A badge formed out of a Legion aureus that is worn by the most feared men and women of the Republic."
+	icon_state = "vetranger"
+
+/obj/item/card/id/dogtag/ncrcolonel
+	name = "colonel's tags"
+	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR colonel."
+	icon_state = "ncrdogtagcaptain"
+
+/obj/item/card/id/dogtag/legfollower
+	name = "follower medallion"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a camp follower."
+	icon_state = "legionmedallionrecruit"
+	assignment = "follower medallion"
+
+/obj/item/card/id/dogtag/legauxilia
+	name = "auxilia medallion"
+	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a respected auxilia of the Legion."
+	icon_state = "legionmedallionveteran"
+	item_state = "card-id_leg"
+	assignment = "auxilia medallion"
+
+/obj/item/card/id/dogtag/legrecruit
+	name = "recruit medallion"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a recruit."
+	icon_state = "legionmedallionrecruit"
+	item_state = "card-id_leg"
+	assignment = "recruit medallion"
+
+/obj/item/card/id/dogtag/legprime
+	name = "prime medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a prime."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "prime medallion"
+
+/obj/item/card/id/dogtag/legslavemaster
+	name = "prefect medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to the dreaded Slavemaster."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "slavemaster medallion"
+
+/obj/item/card/id/dogtag/leglibritor
+	name = "libritor medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a libritor."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "libritor medallion"
+
+/obj/item/card/id/dogtag/legveteran
+	name = "veteran medallion"
+	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran, and reeks of iron."
+	icon_state = "legionmedallionveteran"
+	item_state = "card-id_leg"
+	assignment = "veteran medallion"
+
+/obj/item/card/id/dogtag/legcenturion
+	name = "centurion medallion"
+	desc = "A golden disc awarded to the most fierce men in the whole legion. If you are close enough to read the insignia you won't be alive much longer."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "centurion medallion"
+
+/obj/item/card/id/dogtag/legvenator
+	name = "venator medallion"
+	desc = "A golden disc awarded to the elite hunters of the legion. If you are close enough to read the insignia you won't be alive much longer."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "venator medallion"
+
+/obj/item/card/id/dogtag/legexplorer
+	name = "explorer medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to an explorer."
+	icon_state = "legionmedallionprime"
+	item_state = "card-id_leg"
+	assignment = "explorer medallion"
+
+/obj/item/card/id/dogtag/legpriest
+	name = "priestess medallion"
+	desc = "A golden disc awarded to the trusted spiritual guide to the nearby Legion."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "priestess medallion"
+
+/obj/item/card/id/dogtag/legorator
+	name = "orator medallion"
+	desc = "A golden disc awarded to the one who is a dedicated ambassador for Caesar's Legion."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "orator medallion"
+
+//For PilotBland's frumentarii custom loadout
+/obj/item/card/id/dogtag/legfrumentariiremus
+	name = "Remus Amius' frumentarius medallion"
+	desc = "A golden disc with a string threaded through the top, displaying official markings confirming a frumentarius' status."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "frumentarius medallion"
+
+/obj/item/card/id/legionbrand
+	name = "Legion's brand"
+	desc = "A brand for identifying Caesar's Legion's slaves."
+	icon_state = "legionbrand"
+	item_state = "slave"
+	assignment = "Slave brand"
+	uses_overlays = FALSE
+
+/obj/item/card/id/legionbrand/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+///OUTLAW TAGS////
+
+/obj/item/card/id/rusted
+	name = "rusted tags"
+	desc = "Decrepit uncared for NCR dogtags, kept as a reminder to something."
+	icon_state = "rustedncrtag"
+	item_state = "rustedncrtag"
+	uses_overlays = FALSE
+
+/obj/item/card/id/rusted/rustedmedallion
+	name = "rusted medallion"
+	desc = "A battered and unkempt legion medallion, kept as a reminder to something."
+	icon_state = "rustedmedallion"
+	item_state = "rustedmedallion"
+	uses_overlays = FALSE
+
+/obj/item/card/id/rusted/fadedvaultid
+	name = "faded id card"
+	desc = "A and worn Vault-Tech issued ID card, broken beyond use, kept as a reminder to something."
+	icon_state = "fadedvaultid"
+	item_state = "fadedvaultid"
+	uses_overlays = FALSE
+
+/obj/item/card/id/rusted/brokenholodog
+	name = "broken holotag"
+	desc = "A BoS issue holotag, it isnt working now though, kept as a reminder to something."
+	icon_state = "brokenholodog"
+	item_state = "brokenholodog"
+	uses_overlays = FALSE
+
+/obj/item/card/id/khantattoo
+	name = "Great Khan tattoo"
+	desc = "A tattoo of the symbol of the Great Khans."
+	icon_state = "skin"
+	item_state = "skin"
+	assignment = "gang tattoo"
+	uses_overlays = FALSE
+
+	access = list(ACCESS_KHAN)
+
+/obj/item/card/id/khantattoo/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+/obj/item/card/id/bandittattoo
+	name = "Bandit tattoo"
+	desc = "A tattoo of the symbol of the bandits."
+	icon_state = "skin"
+	item_state = "skin"
+	assignment = "gang tattoo"
+	uses_overlays = FALSE
+
+/obj/item/card/id/bandittattoo/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+/* Tribal Tags
+*/
+
+/obj/item/card/id/tribetattoo
+	name = "Tattoo of the machine spirits"
+	desc = "A tattoo depicting the five machine spirits in harmony."
+	icon_state = "talisman"
+	item_state = "talisman"
+	assignment = "tribe tattoo"
+	uses_overlays = FALSE
+
+	access = list(ACCESS_TRIBE)
+
+/obj/item/card/id/tribetattoo/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+/obj/item/card/id/silver/mayor
+	name = "Mayor's mayoral permit"
+	desc = "A silver encrusted identification permit reserved for the Mayor of Oasis."
+	icon_state = "silver"
+	item_state = "silver_id"
+	assignment = "mayoral permit"
+	uses_overlays = FALSE
+
+/obj/item/card/id/dendoctor
+	name = "doctor's name badge"
+	desc = "A plastic-sealed name badge certifying the medical expertise of its holder."
+	icon_state = "doctor"
+	item_state = "card-doctor"
+	assignment = "name badge"
+	uses_overlays = FALSE
+
+/obj/item/card/id/chief
+	name = "crimson identification card"
+	desc = "A red card which shows dedication and leadership to the Vaults safety and security."
+	icon_state = "chief"
+	item_state = "sec_id"
+	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
+	uses_overlays = FALSE
+
+/obj/item/card/id/sec
+	name = "red identification card"
+	desc = "A red card which shows dedication to the Security department."
+	icon_state = "sec"
+	item_state = "sec_id"
+	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
+	uses_overlays = FALSE
+
+/obj/item/card/data/wpermit
+	name = "\improper VTCC weapons permit"
+
+//rebound
+/obj/item/card/id/rusted/rebound
+	name = "rebound medalion"
+	desc = "An unfamiliar rectangular medalion made out of steel. It has a dogtag tied to it with 'Bakersfield' stamped on it."
+	icon_state = "rebound"
+	item_state = "rustedncrtag"
+	uses_overlays = FALSE

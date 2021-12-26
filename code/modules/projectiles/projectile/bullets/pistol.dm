@@ -290,7 +290,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 				return TRUE
 			else
 				blocked = 100
-				target.visible_message(SPAN_DANGER("\The [src] was deflected!"), \
+				target.visible_message("<span class='danger'>\The [src] was deflected!</span>", \
 									   "<span class='userdanger'>You were protected against \the [src]!</span>")
 
 	..(target, blocked)

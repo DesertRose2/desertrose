@@ -1,6 +1,6 @@
 /obj/item/book/manual/ncr/jobguide
 	name = "Camp Miller Infantry Book, Part 1"
-	desc = "An infantry field manual issued to all NCR Army Personnel."
+	desc = "An infantry field manual issued to all NCR Army Personnel"
 	icon_state ="ncr_manual"
 	author = "NCR Army Command"
 	title = "Camp Miller Infantry Book, Part 1"

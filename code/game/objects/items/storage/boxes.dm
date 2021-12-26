@@ -61,12 +61,12 @@
 	if(!foldable)
 		return
 	if(contents.len)
-		to_chat(user, SPAN_WARNING("You can't fold this box with items still inside!"))
+		to_chat(user, "<span class='warning'>You can't fold this box with items still inside!</span>")
 		return
 	if(!ispath(foldable))
 		return
 
-	to_chat(user, SPAN_NOTICE("You fold [src] flat."))
+	to_chat(user, "<span class='notice'>You fold [src] flat.</span>")
 	var/obj/item/I = new foldable
 	qdel(src)
 	user.put_in_hands(I)
@@ -240,7 +240,7 @@
 		new /obj/item/reagent_containers/glass/beaker( src )
 
 /obj/item/storage/box/beakers/bluespace
-	name = "box of quantum beakers"
+	name = "box of bluespace beakers"
 	illustration = "beaker"
 
 /obj/item/storage/box/beakers/bluespace/PopulateContents()
@@ -332,8 +332,8 @@
 		new /obj/item/grenade/empgrenade(src)
 
 /obj/item/storage/box/minibombs
-	name = "box of minibombs"
-	desc = "A box containing 2 highly explosive minibombs."
+	name = "box of syndicate minibombs"
+	desc = "A box containing 2 highly explosive syndicate minibombs."
 	icon_state = "syndiebox"
 	illustration = "frag"
 
@@ -737,24 +737,24 @@
 	. = ..()
 	user.DelayNextAction(CLICK_CD_MELEE)
 	playsound(src, "rustle", 50, 1, -5)
-	user.visible_message(SPAN_NOTICE("[user] hugs \the [src]."),SPAN_NOTICE("You hug \the [src]."))
+	user.visible_message("<span class='notice'>[user] hugs \the [src].</span>","<span class='notice'>You hug \the [src].</span>")
 	SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT,"hugbox", /datum/mood_event/hugbox)
 
 /////clown box & honkbot assembly
 /obj/item/storage/box/clown
 	name = "clown box"
-	desc = "A colorful cardboard box for the clown."
+	desc = "A colorful cardboard box for the clown"
 	illustration = "clown"
 
 /obj/item/storage/box/clown/attackby(obj/item/I, mob/user, params)
 	if((istype(I, /obj/item/bodypart/l_arm/robot)) || (istype(I, /obj/item/bodypart/r_arm/robot)))
 		if(contents.len) //prevent accidently deleting contents
-			to_chat(user, SPAN_WARNING("You need to empty [src] out first!"))
+			to_chat(user, "<span class='warning'>You need to empty [src] out first!</span>")
 			return
 		if(!user.temporarilyRemoveItemFromInventory(I))
 			return
 		qdel(I)
-		to_chat(user, SPAN_NOTICE("You add some wheels to the [src]! You've got an honkbot assembly now! Honk!"))
+		to_chat(user, "<span class='notice'>You add some wheels to the [src]! You've got an honkbot assembly now! Honk!</span>")
 		var/obj/item/bot_assembly/honkbot/A = new
 		qdel(src)
 		user.put_in_hands(A)
@@ -854,6 +854,8 @@
 	. = ..()
 	papersack_designs = sortList(list(
 		"None" = image(icon = src.icon, icon_state = "paperbag_None"),
+		"NanotrasenStandard" = image(icon = src.icon, icon_state = "paperbag_NanotrasenStandard"),
+		"SyndiSnacks" = image(icon = src.icon, icon_state = "paperbag_SyndiSnacks"),
 		"Heart" = image(icon = src.icon, icon_state = "paperbag_Heart"),
 		"SmileyFace" = image(icon = src.icon, icon_state = "paperbag_SmileyFace")
 		))
@@ -875,25 +877,29 @@
 		switch(choice)
 			if("None")
 				desc = "A sack neatly crafted out of paper."
+			if("NanotrasenStandard")
+				desc = "A standard Nanotrasen paper lunch sack for loyal employees on the go."
+			if("SyndiSnacks")
+				desc = "The design on this paper sack is a remnant of the notorious 'SyndieSnacks' program."
 			if("Heart")
 				desc = "A paper sack with a heart etched onto the side."
 			if("SmileyFace")
 				desc = "A paper sack with a crude smile etched onto the side."
 			else
 				return FALSE
-		to_chat(user, SPAN_NOTICE("You make some modifications to [src] using your pen."))
+		to_chat(user, "<span class='notice'>You make some modifications to [src] using your pen.</span>")
 		icon_state = "paperbag_[choice]"
 		item_state = "paperbag_[choice]"
 		return FALSE
 	else if(W.get_sharpness())
 		if(!contents.len)
 			if(item_state == "paperbag_None")
-				user.show_message(SPAN_NOTICE("You cut eyeholes into [src]."), MSG_VISUAL)
+				user.show_message("<span class='notice'>You cut eyeholes into [src].</span>", MSG_VISUAL)
 				new /obj/item/clothing/head/papersack(user.loc)
 				qdel(src)
 				return FALSE
 			else if(item_state == "paperbag_SmileyFace")
-				user.show_message(SPAN_NOTICE("You cut eyeholes into [src] and modify the design."), MSG_VISUAL)
+				user.show_message("<span class='notice'>You cut eyeholes into [src] and modify the design.</span>", MSG_VISUAL)
 				new /obj/item/clothing/head/papersack/smiley(user.loc)
 				qdel(src)
 				return FALSE
@@ -912,10 +918,10 @@
 	if(user.incapacitated())
 		return FALSE
 	if(contents.len)
-		to_chat(user, SPAN_WARNING("You can't modify [src] with items still inside!"))
+		to_chat(user, "<span class='warning'>You can't modify [src] with items still inside!</span>")
 		return FALSE
 	if(!P || !user.is_holding(P))
-		to_chat(user, SPAN_WARNING("You need a pen to modify [src]!"))
+		to_chat(user, "<span class='warning'>You need a pen to modify [src]!</span>")
 		return FALSE
 	return TRUE
 
@@ -1217,8 +1223,8 @@
 	illustration = null
 
 /obj/item/storage/box/mre //base MRE type.
-	name = "Vault-Tec MRE Ration Kit Menu 0"
-	desc = "A package containing irradiated food which lasts for centuries. If you're lucky you may even be able to enjoy the meal without getting rad poisoning."
+	name = "Nanotrasen MRE Ration Kit Menu 0"
+	desc = "A package containing food suspended in an outdated bluespace pocket which lasts for centuries. If you're lucky you may even be able to enjoy the meal without getting food poisoning."
 	icon_state = "mre"
 	illustration = null
 	var/can_expire = TRUE
@@ -1243,10 +1249,10 @@
 					ENABLE_BITFIELD(S.foodtype, TOXIC)
 
 /obj/item/storage/box/mre/menu1
-	name = "\improper Vault-Tec MRE Ration Kit Menu 1"
+	name = "\improper Nanotrasen MRE Ration Kit Menu 1"
 
 /obj/item/storage/box/mre/menu1/safe
-	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
+	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
 	spawner_chance = 0
 	can_expire = FALSE
 
@@ -1258,11 +1264,11 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu2
-	name = "\improper Vault-Tec MRE Ration Kit Menu 2"
+	name = "\improper Nanotrasen MRE Ration Kit Menu 2"
 
 /obj/item/storage/box/mre/menu2/safe
 	spawner_chance = 0
-	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
+	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
 	can_expire = FALSE
 
 /obj/item/storage/box/mre/menu2/PopulateContents()
@@ -1273,7 +1279,7 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu3
-	name = "\improper Vault-Tec MRE Ration Kit Menu 3"
+	name = "\improper Nanotrasen MRE Ration Kit Menu 3"
 	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any NT employee lucky enough to get their hands on one of these is truly blessed."
 	icon_state = "menu3"
 	can_expire = FALSE //always fresh, never expired.
@@ -1288,11 +1294,11 @@
 	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/box/mre/menu4
-	name = "\improper Vault-Tec MRE Ration Kit Menu 4"
+	name = "\improper Nanotrasen MRE Ration Kit Menu 4"
 
 /obj/item/storage/box/mre/menu4/safe
 	spawner_chance = 0
-	desc = "A package containing preserved pre-war food capable of lasting till the end of time."
+	desc = "A package containing food suspended in a bluespace pocket capable of lasting till the end of time."
 	can_expire = FALSE
 
 /obj/item/storage/box/mre/menu4/PopulateContents()
@@ -1317,7 +1323,7 @@
 
 /obj/item/secbat/attack_self(mob/user)
 	new /mob/living/simple_animal/hostile/retaliate/bat/secbat(user.loc)
-	to_chat(user, SPAN_NOTICE("You open the box, releasing the secbat!"))
+	to_chat(user, "<span class='notice'>You open the box, releasing the secbat!</span>")
 	var/obj/item/stack/sheet/cardboard/I = new(user.drop_location())
 	qdel(src)
 	user.put_in_hands(I)
@@ -1408,7 +1414,7 @@
 
 /obj/item/storage/box/ids/followers
 	name = "box of assistant ids"
-	desc = "IDs for issue to weekly assistants."
+	desc = "IDs for issue to weekly assistants"
 
 /obj/item/storage/box/ids/followers/PopulateContents()
 	for(var/i in 1 to 7)

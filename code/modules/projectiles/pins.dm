@@ -7,7 +7,7 @@
 	flags_1 = CONDUCT_1
 	w_class = WEIGHT_CLASS_TINY
 	attack_verb = list("poked")
-	var/fail_message = SPAN_WARNING("INVALID USER.")
+	var/fail_message = "<span class='warning'>INVALID USER.</span>"
 	var/selfdestruct = 0 // Explode when user check is failed.
 	var/force_replace = 0 // Can forcefully replace other pins.
 	var/pin_removeable = 0 // Can be replaced by any pin.
@@ -33,22 +33,22 @@
 			if(G.pin && (force_replace || G.pin.pin_removeable))
 				G.pin.forceMove(get_turf(G))
 				G.pin.gun_remove(user)
-				to_chat(user, SPAN_NOTICE("You remove [G]'s old pin."))
+				to_chat(user, "<span class ='notice'>You remove [G]'s old pin.</span>")
 
 			if(!G.pin)
 				if(!user.temporarilyRemoveItemFromInventory(src))
 					return
 				gun_insert(user, G)
-				to_chat(user, SPAN_NOTICE("You insert [src] into [G]."))
+				to_chat(user, "<span class ='notice'>You insert [src] into [G].</span>")
 			else
-				to_chat(user, SPAN_NOTICE("This firearm already has a firing pin installed."))
+				to_chat(user, "<span class ='notice'>This firearm already has a firing pin installed.</span>")
 
 /obj/item/firing_pin/emag_act(mob/user)
 	. = ..()
 	if(obj_flags & EMAGGED)
 		return
 	obj_flags |= EMAGGED
-	to_chat(user, SPAN_NOTICE("You override the authentication mechanism."))
+	to_chat(user, "<span class='notice'>You override the authentication mechanism.</span>")
 	return TRUE
 
 /obj/item/firing_pin/proc/gun_insert(mob/living/user, obj/item/gun/G)
@@ -84,7 +84,7 @@
 /obj/item/firing_pin/test_range
 	name = "test-range firing pin"
 	desc = "This safety firing pin allows weapons to be fired within proximity to a firing range."
-	fail_message = SPAN_WARNING("TEST RANGE CHECK FAILED.")
+	fail_message = "<span class='warning'>TEST RANGE CHECK FAILED.</span>"
 	pin_removeable = TRUE
 
 /obj/item/firing_pin/test_range/pin_auth(mob/living/user)
@@ -99,7 +99,7 @@
 /obj/item/firing_pin/implant
 	name = "implant-keyed firing pin"
 	desc = "This is a security firing pin which only authorizes users who are implanted with a certain device."
-	fail_message = SPAN_WARNING("IMPLANT CHECK FAILED.")
+	fail_message = "<span class='warning'>IMPLANT CHECK FAILED.</span>"
 	var/obj/item/implant/req_implant = null
 
 /obj/item/firing_pin/implant/pin_auth(mob/living/user)
@@ -128,7 +128,7 @@
 	name = "hilarious firing pin"
 	desc = "Advanced clowntech that can convert any firearm into a far more useful object."
 	color = "#FFFF00"
-	fail_message = SPAN_WARNING("HONK!")
+	fail_message = "<span class='warning'>HONK!</span>"
 	force_replace = TRUE
 
 /obj/item/firing_pin/clown/pin_auth(mob/living/user)
@@ -163,7 +163,7 @@
 	name = "DNA-keyed firing pin"
 	desc = "This is a DNA-locked firing pin which only authorizes one user. Attempt to fire once to DNA-link."
 	icon_state = "firing_pin_dna"
-	fail_message = SPAN_WARNING("DNA CHECK FAILED.")
+	fail_message = "<span class='warning'>DNA CHECK FAILED.</span>"
 	var/unique_enzymes = null
 
 /obj/item/firing_pin/dna/afterattack(atom/target, mob/user, proximity_flag)
@@ -172,7 +172,7 @@
 		var/mob/living/carbon/M = target
 		if(M.dna && M.dna.unique_enzymes)
 			unique_enzymes = M.dna.unique_enzymes
-			to_chat(user, SPAN_NOTICE("DNA-LOCK SET."))
+			to_chat(user, "<span class='notice'>DNA-LOCK SET.</span>")
 
 /obj/item/firing_pin/dna/pin_auth(mob/living/carbon/user)
 	if(user && user.dna && user.dna.unique_enzymes)
@@ -184,7 +184,7 @@
 	if(!unique_enzymes)
 		if(user && user.dna && user.dna.unique_enzymes)
 			unique_enzymes = user.dna.unique_enzymes
-			to_chat(user, SPAN_NOTICE("DNA-LOCK SET."))
+			to_chat(user, "<span class='notice'>DNA-LOCK SET.</span>")
 	else
 		..()
 
@@ -205,7 +205,7 @@
 /obj/item/firing_pin/tag
 	name = "laser tag firing pin"
 	desc = "A recreational firing pin, used in laser tag units to ensure users have their vests on."
-	fail_message = SPAN_WARNING("SUIT CHECK FAILED.")
+	fail_message = "<span class='warning'>SUIT CHECK FAILED.</span>"
 	var/obj/item/clothing/suit/suit_requirement = null
 	var/tagcolor = ""
 
@@ -214,7 +214,7 @@
 		var/mob/living/carbon/human/M = user
 		if(istype(M.wear_suit, suit_requirement))
 			return TRUE
-	to_chat(user, SPAN_WARNING("You need to be wearing [tagcolor] laser tag armor!"))
+	to_chat(user, "<span class='warning'>You need to be wearing [tagcolor] laser tag armor!</span>")
 	return FALSE
 
 /obj/item/firing_pin/tag/red
@@ -249,11 +249,11 @@
 	. = ..()
 	var/lethal = only_lethals ? "only lethal " : ""
 	if(min_sec_level != max_sec_level)
-		. += SPAN_NOTICE("It's currently set to disallow [lethal]operation when the security level isn't between <b>[NUM2SECLEVEL(min_sec_level)]</b> and <b>[NUM2SECLEVEL(max_sec_level)]</b>.")
+		. += "<span class='notice'>It's currently set to disallow [lethal]operation when the security level isn't between <b>[NUM2SECLEVEL(min_sec_level)]</b> and <b>[NUM2SECLEVEL(max_sec_level)]</b>.</span>"
 	else
-		. += SPAN_NOTICE("It's currently set to disallow [lethal]operation when the security level isn't <b>[NUM2SECLEVEL(min_sec_level)]</b>.")
+		. += "<span class='notice'>It's currently set to disallow [lethal]operation when the security level isn't <b>[NUM2SECLEVEL(min_sec_level)]</b>.</span>"
 	if(can_toggle)
-		. += SPAN_NOTICE("You can use a <b>multitool</b> to modify its settings.")
+		. += "<span class='notice'>You can use a <b>multitool</b> to modify its settings.</span>"
 
 /obj/item/firing_pin/security_level/multitool_act(mob/living/user, obj/item/I)
 	. = TRUE
@@ -318,12 +318,12 @@
 	name = "outback firing pin"
 	desc = "A firing pin used by the austrailian defense force, retrofit to prevent weapon discharge on the station."
 	icon_state = "firing_pin_explorer"
-	fail_message = SPAN_WARNING("CANNOT FIRE WHILE ON STATION, MATE!")
+	fail_message = "<span class='warning'>CANNOT FIRE WHILE ON STATION, MATE!</span>"
 
 // This checks that the user isn't on the station Z-level.
 /obj/item/firing_pin/explorer/pin_auth(mob/living/user)
 	var/turf/station_check = get_turf(user)
 	if(!station_check||is_station_level(station_check.z))
-		to_chat(user, SPAN_WARNING("You cannot use your weapon while on the station!"))
+		to_chat(user, "<span class='warning'>You cannot use your weapon while on the station!</span>")
 		return FALSE
 	return TRUE

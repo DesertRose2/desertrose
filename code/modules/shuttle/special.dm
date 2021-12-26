@@ -188,7 +188,7 @@
 		var/throwtarget = get_edge_target_turf(src, boot_dir)
 		M.DefaultCombatKnockdown(40)
 		M.throw_at(throwtarget, 5, 1)
-		to_chat(M, SPAN_NOTICE("No climbing on the bar please."))
+		to_chat(M, "<span class='notice'>No climbing on the bar please.</span>")
 	else
 		. = ..()
 
@@ -266,7 +266,7 @@
 		check_times -= AM
 		return
 	else
-		to_chat(AM, SPAN_WARNING("You don't have enough money to enter the main shuttle. You'll have to fly coach."))
+		to_chat(AM, "<span class='warning'>You don't have enough money to enter the main shuttle. You'll have to fly coach.</span>")
 		return ..()
 
 /mob/living/simple_animal/hostile/bear/fightpit

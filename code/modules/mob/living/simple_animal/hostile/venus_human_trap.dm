@@ -39,7 +39,7 @@
  * Displays a message, spawns a human venus trap, then qdels itself.
  */
 /obj/structure/alien/resin/flower_bud_enemy/proc/bear_fruit()
-	visible_message(SPAN_DANGER("The plant has borne fruit!"))
+	visible_message("<span class='danger'>The plant has borne fruit!</span>")
 	new /mob/living/simple_animal/hostile/venus_human_trap(get_turf(src))
 	qdel(src)
 
@@ -161,7 +161,7 @@
 	if(plant_ask == "No" || QDELETED(src))
 		return
 	if(key)
-		to_chat(user, SPAN_WARNING("Someone else already took this plant!"))
+		to_chat(user, "<span class='warning'>Someone else already took this plant!</span>")
 		return
 	key = user.key
 	log_game("[key_name(src)] took control of [name].")

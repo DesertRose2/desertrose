@@ -298,14 +298,14 @@
 				burst_size = 4
 			if (recoil_decrease)
 				spread = 20
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 10
 			if (recoil_decrease)
 				spread = 2
-			to_chat(user, SPAN_NOTICE("You switch to semi-automatic."))
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
@@ -416,14 +416,14 @@
 				burst_size = 3
 			if (recoil_decrease)
 				spread = 10
-			to_chat(user, SPAN_NOTICE("You switch to [burst_size]-rnd burst."))
+			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 1
 			if (recoil_decrease)
 				spread = 0
-			to_chat(user, SPAN_NOTICE("You switch to semi-automatic."))
+			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return

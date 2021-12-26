@@ -166,12 +166,12 @@
 	. = ..()
 	if(organ_flags & ORGAN_FAILING)
 		if(status == ORGAN_ROBOTIC)
-			. += SPAN_WARNING("[src] seems to be broken!")
+			. += "<span class='warning'>[src] seems to be broken!</span>"
 			return
-		. += SPAN_WARNING("[src] has decayed for too long, and has turned a sickly color! It doesn't look like it will work anymore!")
+		. += "<span class='warning'>[src] has decayed for too long, and has turned a sickly color! It doesn't look like it will work anymore!</span>"
 		return
 	if(damage > high_threshold)
-		. += SPAN_WARNING("[src] is starting to look discolored.")
+		. += "<span class='warning'>[src] is starting to look discolored.</span>"
 
 /obj/item/organ/proc/OnEatFrom(eater, feeder)
 	useable = FALSE //You can't use it anymore after eating it you spaztic

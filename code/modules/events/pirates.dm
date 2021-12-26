@@ -120,8 +120,8 @@
 	SSshuttle.registerTradeBlockade(src)
 	AddComponent(/datum/component/gps, "Nautical Signal")
 	active = TRUE
-	to_chat(user,SPAN_NOTICE("You toggle [src] [active ? "on":"off"]."))
-	to_chat(user,SPAN_WARNING("The scrambling signal can be now tracked by GPS."))
+	to_chat(user,"<span class='notice'>You toggle [src] [active ? "on":"off"].</span>")
+	to_chat(user,"<span class='warning'>The scrambling signal can be now tracked by GPS.</span>")
 	START_PROCESSING(SSobj,src)
 
 /obj/machinery/shuttle_scrambler/interact(mob/user)
@@ -147,10 +147,10 @@
 /obj/machinery/shuttle_scrambler/proc/dump_loot(mob/user)
 	if(credits_stored)	// Prevents spamming empty holochips
 		new /obj/item/holochip(drop_location(), credits_stored)
-		to_chat(user,SPAN_NOTICE("You retrieve the siphoned credits!"))
+		to_chat(user,"<span class='notice'>You retrieve the siphoned credits!</span>")
 		credits_stored = 0
 	else
-		to_chat(user,SPAN_NOTICE("There's nothing to withdraw."))
+		to_chat(user,"<span class='notice'>There's nothing to withdraw.</span>")
 
 /obj/machinery/shuttle_scrambler/proc/send_notification()
 	priority_announce("Data theft signal detected, source registered on local gps units.")
@@ -234,7 +234,7 @@
 
 /obj/machinery/loot_locator/interact(mob/user)
 	if(world.time <= next_use)
-		to_chat(user,SPAN_WARNING("[src] is recharging."))
+		to_chat(user,"<span class='warning'>[src] is recharging.</span>")
 		return
 	next_use = world.time + cooldown
 	var/atom/movable/AM = find_random_loot()
@@ -269,7 +269,7 @@
 
 /obj/machinery/piratepad/multitool_act(mob/living/user, obj/item/multitool/I)
 	if (istype(I))
-		to_chat(user, SPAN_NOTICE("You register [src] in [I]s buffer."))
+		to_chat(user, "<span class='notice'>You register [src] in [I]s buffer.</span>")
 		I.buffer = src
 		return TRUE
 
@@ -293,7 +293,7 @@
 
 /obj/machinery/computer/piratepad_control/multitool_act(mob/living/user, obj/item/multitool/I)
 	if (istype(I) && istype(I.buffer,/obj/machinery/piratepad))
-		to_chat(user, SPAN_NOTICE("You link [src] with [I.buffer] in [I] buffer."))
+		to_chat(user, "<span class='notice'>You link [src] with [I.buffer] in [I] buffer.</span>")
 		pad = I.buffer
 		return TRUE
 
@@ -391,7 +391,7 @@
 
 	if(!value)
 		status_report += "Nothing"
-	pad.visible_message(SPAN_NOTICE("[pad] activates!"))
+	pad.visible_message("<span class='notice'>[pad] activates!</span>")
 	flick(pad.sending_state,pad)
 	pad.icon_state = pad.idle_state
 	sending = FALSE
@@ -401,7 +401,7 @@
 		return
 	sending = TRUE
 	status_report = "Sending..."
-	pad.visible_message(SPAN_NOTICE("[pad] starts charging up."))
+	pad.visible_message("<span class='notice'>[pad] starts charging up.</span>")
 	pad.icon_state = pad.warmup_state
 	sending_timer = addtimer(CALLBACK(src,.proc/send),warmup_time, TIMER_STOPPABLE)
 

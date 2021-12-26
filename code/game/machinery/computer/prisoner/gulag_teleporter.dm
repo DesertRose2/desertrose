@@ -73,7 +73,7 @@
 	if(..())
 		return
 	if(!allowed(usr))
-		to_chat(usr, SPAN_WARNING("Access denied."))
+		to_chat(usr, "<span class='warning'>Access denied.</span>")
 		return
 	switch(action)
 		if("scan_teleporter")
@@ -143,7 +143,7 @@
 	playsound(src, 'sound/weapons/emitter.ogg', 50, TRUE)
 	prisoner.forceMove(get_turf(beacon))
 	prisoner.Stun(40) // small travel dizziness
-	to_chat(prisoner, SPAN_WARNING("The teleportation makes you a little dizzy."))
+	to_chat(prisoner, "<span class='warning'>The teleportation makes you a little dizzy.</span>")
 	new /obj/effect/particle_effect/sparks(get_turf(prisoner))
 	playsound(src, "sparks", 50, TRUE)
 	if(teleporter.locked)

@@ -120,22 +120,22 @@
 /obj/item/bodypart/chest/robot/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stock_parts/cell))
 		if(src.cell)
-			to_chat(user, SPAN_WARNING("You have already inserted a cell!"))
+			to_chat(user, "<span class='warning'>You have already inserted a cell!</span>")
 			return
 		else
 			if(!user.transferItemToLoc(W, src))
 				return
 			src.cell = W
-			to_chat(user, SPAN_NOTICE("You insert the cell."))
+			to_chat(user, "<span class='notice'>You insert the cell.</span>")
 	else if(istype(W, /obj/item/stack/cable_coil))
 		if(src.wired)
-			to_chat(user, SPAN_WARNING("You have already inserted wire!"))
+			to_chat(user, "<span class='warning'>You have already inserted wire!</span>")
 			return
 		if (W.use_tool(src, user, 0, 1))
 			src.wired = 1
-			to_chat(user, SPAN_NOTICE("You insert the wire."))
+			to_chat(user, "<span class='notice'>You insert the wire.</span>")
 		else
-			to_chat(user, SPAN_WARNING("You need one length of coil to wire it!"))
+			to_chat(user, "<span class='warning'>You need one length of coil to wire it!</span>")
 	else
 		return ..()
 
@@ -184,10 +184,10 @@
 	if(istype(W, /obj/item/assembly/flash/handheld))
 		var/obj/item/assembly/flash/handheld/F = W
 		if(src.flash1 && src.flash2)
-			to_chat(user, SPAN_WARNING("You have already inserted the eyes!"))
+			to_chat(user, "<span class='warning'>You have already inserted the eyes!</span>")
 			return
 		else if(F.crit_fail)
-			to_chat(user, SPAN_WARNING("You can't use a broken flash!"))
+			to_chat(user, "<span class='warning'>You can't use a broken flash!</span>")
 			return
 		else
 			if(!user.transferItemToLoc(F, src))
@@ -196,11 +196,11 @@
 				src.flash2 = F
 			else
 				src.flash1 = F
-			to_chat(user, SPAN_NOTICE("You insert the flash into the eye socket."))
+			to_chat(user, "<span class='notice'>You insert the flash into the eye socket.</span>")
 	else if(istype(W, /obj/item/crowbar))
 		if(flash1 || flash2)
 			W.play_tool_sound(src)
-			to_chat(user, SPAN_NOTICE("You remove the flash from [src]."))
+			to_chat(user, "<span class='notice'>You remove the flash from [src].</span>")
 			if(flash1)
 				flash1.forceMove(user.loc)
 				flash1 = null
@@ -208,7 +208,7 @@
 				flash2.forceMove(user.loc)
 				flash2 = null
 		else
-			to_chat(user, SPAN_WARNING("There is no flash to remove from [src]."))
+			to_chat(user, "<span class='warning'>There is no flash to remove from [src].</span>")
 
 	else
 		return ..()

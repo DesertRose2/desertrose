@@ -45,7 +45,7 @@
 		return FALSE
 	var/damage = (damage_roll(A,D) + 5)
 	if(CHECK_MOBILITY(D, MOBILITY_STAND))
-		D.visible_message(SPAN_WARNING("[A] slams [D] into the ground!"), \
+		D.visible_message("<span class='warning'>[A] slams [D] into the ground!</span>", \
 							"<span class='userdanger'>[A] slams you into the ground!</span>")
 		playsound(get_turf(A), 'sound/weapons/slam.ogg', 50, 1, -1)
 		D.apply_damage(damage, BRUTE)
@@ -59,7 +59,7 @@
 	var/damage = damage_roll(A,D)
 	if(!CHECK_MOBILITY(D, MOBILITY_STAND) && CHECK_MOBILITY(D, MOBILITY_USE))
 		log_combat(A, D, "knocked out (Head kick)(CQC)")
-		D.visible_message(SPAN_WARNING("[A] kicks [D]'s head, knocking [D.p_them()] out!"), \
+		D.visible_message("<span class='warning'>[A] kicks [D]'s head, knocking [D.p_them()] out!</span>", \
 							"<span class='userdanger'>[A] kicks your head, knocking you out!</span>")
 		playsound(get_turf(A), 'sound/weapons/genhit1.ogg', 50, 1, -1)
 		D.SetSleeping(300)
@@ -68,7 +68,7 @@
 		D.throw_at(throw_target, 1, 14, A)
 		D.adjustOrganLoss(ORGAN_SLOT_BRAIN, damage + 10, 150)
 	else
-		D.visible_message(SPAN_WARNING("[A] kicks [D]!"), \
+		D.visible_message("<span class='warning'>[A] kicks [D]!</span>", \
 							"<span class='userdanger'>[A] kicks you!</span>")
 		playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 		D.Dizzy(damage)
@@ -81,7 +81,7 @@
 		return FALSE
 	var/damage = (damage_roll(A,D) + 55)
 	log_combat(A, D, "pressured (CQC)")
-	D.visible_message(SPAN_WARNING("[A] punches [D]'s neck!"))
+	D.visible_message("<span class='warning'>[A] punches [D]'s neck!</span>")
 	D.apply_damage(damage, STAMINA)
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 	return TRUE
@@ -94,7 +94,7 @@
 	var/damage = (damage_roll(A,D) + 15)
 	if(!D.stat)
 		log_combat(A, D, "restrained (CQC)")
-		D.visible_message(SPAN_WARNING("[A] locks [D] into a restraining position!"), \
+		D.visible_message("<span class='warning'>[A] locks [D] into a restraining position!</span>", \
 							"<span class='userdanger'>[A] locks you into a restraining position!</span>")
 		D.apply_damage(damage, STAMINA)
 		D.Stun(100)
@@ -108,7 +108,7 @@
 	var/damage = damage_roll(A,D)
 	if(!D.stat)
 		log_combat(A, D, "consecutive CQC'd (CQC)")
-		D.visible_message(SPAN_WARNING("[A] strikes [D]'s abdomen, neck and back consecutively!"), \
+		D.visible_message("<span class='warning'>[A] strikes [D]'s abdomen, neck and back consecutively</span>", \
 							"<span class='userdanger'>[A] strikes your abdomen, neck and back consecutively!</span>")
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, 1, -1)
 		var/obj/item/I = D.get_active_held_item()
@@ -129,7 +129,7 @@
 			D.drop_all_held_items()
 			A.setGrabState(GRAB_AGGRESSIVE) //Instant agressive grab if on grab intent
 			log_combat(A, D, "grabbed", addition="aggressively")
-			D.visible_message(SPAN_WARNING("[A] violently grabs [D]!"), \
+			D.visible_message("<span class='warning'>[A] violently grabs [D]!</span>", \
 								"<span class='userdanger'>[A] violently grabs you!</span>")
 		return TRUE
 	return FALSE
@@ -152,7 +152,7 @@
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, 1, -1)
 	else
 		playsound(get_turf(D), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
-	D.visible_message(SPAN_DANGER("[A] [picked_hit_type] [D]!"), \
+	D.visible_message("<span class='danger'>[A] [picked_hit_type] [D]!</span>", \
 					  "<span class='userdanger'>[A] [picked_hit_type] you!</span>")
 	log_combat(A, D, "[picked_hit_type] (CQC)")
 	if(!CHECK_MOBILITY(A, MOBILITY_STAND) && !D.stat && CHECK_MOBILITY(D, MOBILITY_STAND))
@@ -177,7 +177,7 @@
 		A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 		if(damage >= stunthreshold)	
 			I = D.get_active_held_item()
-			D.visible_message(SPAN_WARNING("[A] strikes [D]'s jaw with their hand!"), \
+			D.visible_message("<span class='warning'>[A] strikes [D]'s jaw with their hand!</span>", \
 							"<span class='userdanger'>[A] strikes your jaw, disorienting you!</span>")
 			playsound(get_turf(D), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 			D.drop_all_held_items()
@@ -186,7 +186,7 @@
 			D.apply_damage(damage*2 + 20, STAMINA)
 			D.apply_damage(damage*0.5, BRUTE)
 		else
-			D.visible_message(SPAN_DANGER("[A] strikes [D] in the chest!"), \
+			D.visible_message("<span class='danger'>[A] strikes [D] in the chest!</span>", \
 							"<span class='userdanger'>[A] strikes you in the chest!</span>")
 			playsound(D, 'sound/weapons/cqchit1.ogg', 25, 1, -1)
 			D.apply_damage(damage + 15, STAMINA)
@@ -194,7 +194,7 @@
 		log_combat(A, D, "disarmed (CQC)", "[I ? " grabbing \the [I]" : ""]")
 	if(restraining && A.pulling == D)
 		log_combat(A, D, "knocked out (Chokehold)(CQC)")
-		D.visible_message(SPAN_DANGER("[A] puts [D] into a chokehold!"), \
+		D.visible_message("<span class='danger'>[A] puts [D] into a chokehold!</span>", \
 							"<span class='userdanger'>[A] puts you into a chokehold!</span>")
 		D.SetSleeping(400)
 		restraining = FALSE

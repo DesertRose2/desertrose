@@ -11,7 +11,7 @@
 		return TRUE //martial art code was a mistake
 	A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 	atk_verb = pick("punches", "smashes", "ruptures", "cracks")
-	D.visible_message(SPAN_DANGER("[A] [atk_verb] [D] with inhuman strength, sending [D.p_them()] flying backwards!"), \
+	D.visible_message("<span class='danger'>[A] [atk_verb] [D] with inhuman strength, sending [D.p_them()] flying backwards!</span>", \
 					  "<span class='userdanger'>[A] [atk_verb] you with inhuman strength, sending you flying backwards!</span>")
 	D.apply_damage(damage, BRUTE) //KAPOW
 	playsound(D, 'sound/effects/meteorimpact.ogg', 25, 1, -1)
@@ -36,4 +36,4 @@
 	var/datum/martial_art/mushpunch/mush = new(null)
 	mush.teach(user)
 	qdel(src)
-	visible_message(SPAN_WARNING("[user] devours [src]."))
+	visible_message("<span class='warning'>[user] devours [src].</span>")

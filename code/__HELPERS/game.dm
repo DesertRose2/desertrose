@@ -434,22 +434,22 @@
 		window_flash(M.client)
 	switch(ignore_category ? askuser(M,Question,"Please answer in [DisplayTimeText(poll_time)]!","Yes","No","Never for this round", StealFocus=0, Timeout=poll_time) : askuser(M,Question,"Please answer in [DisplayTimeText(poll_time)]!","Yes","No", StealFocus=0, Timeout=poll_time))
 		if(1)
-			to_chat(M, SPAN_NOTICE("Choice registered: Yes."))
+			to_chat(M, "<span class='notice'>Choice registered: Yes.</span>")
 			if(time_passed + poll_time <= world.time)
-				to_chat(M, SPAN_DANGER("Sorry, you answered too late to be considered!"))
+				to_chat(M, "<span class='danger'>Sorry, you answered too late to be considered!</span>")
 				SEND_SOUND(M, 'sound/machines/buzz-sigh.ogg')
 				candidates -= M
 			else
 				candidates += M
 		if(2)
-			to_chat(M, SPAN_DANGER("Choice registered: No."))
+			to_chat(M, "<span class='danger'>Choice registered: No.</span>")
 			candidates -= M
 		if(3)
 			var/list/L = GLOB.poll_ignore[ignore_category]
 			if(!L)
 				GLOB.poll_ignore[ignore_category] = list()
 			GLOB.poll_ignore[ignore_category] += M.ckey
-			to_chat(M, SPAN_DANGER("Choice registered: Never for this round."))
+			to_chat(M, "<span class='danger'>Choice registered: Never for this round.</span>")
 			candidates -= M
 		else
 			candidates -= M

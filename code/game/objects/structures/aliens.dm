@@ -256,19 +256,19 @@
 	if(user.getorgan(/obj/item/organ/alien/plasmavessel))
 		switch(status)
 			if(BURST)
-				to_chat(user, SPAN_NOTICE("You clear the hatched egg."))
+				to_chat(user, "<span class='notice'>You clear the hatched egg.</span>")
 				playsound(loc, 'sound/effects/attackblob.ogg', 100, 1)
 				qdel(src)
 				return
 			if(GROWING)
-				to_chat(user, SPAN_NOTICE("The child is not developed yet."))
+				to_chat(user, "<span class='notice'>The child is not developed yet.</span>")
 				return
 			if(GROWN)
-				to_chat(user, SPAN_NOTICE("You retrieve the child."))
+				to_chat(user, "<span class='notice'>You retrieve the child.</span>")
 				Burst(kill=FALSE)
 				return
 	else
-		to_chat(user, SPAN_NOTICE("It feels slimy."))
+		to_chat(user, "<span class='notice'>It feels slimy.</span>")
 		user.DelayNextAction(CLICK_CD_MELEE)
 
 /obj/structure/alien/egg/proc/Grow()

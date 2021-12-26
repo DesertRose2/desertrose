@@ -1795,7 +1795,7 @@
 	},
 /area/f13/bunker)
 "yF" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
+/mob/living/simple_animal/hostile/wolf{
 	faction = list("hostile","wolf","raider");
 	name = "raider dog"
 	},
@@ -2685,7 +2685,7 @@
 /area/f13/bunker)
 "HQ" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/mob/living/simple_animal/hostile/wolf/feral_dog{
+/mob/living/simple_animal/hostile/wolf{
 	faction = list("hostile","wolf","raider");
 	name = "raider dog"
 	},
@@ -3320,7 +3320,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Ql" = (
-/mob/living/simple_animal/hostile/wolf/feral_dog{
+/mob/living/simple_animal/hostile/wolf{
 	faction = list("hostile","wolf","raider");
 	name = "raider dog"
 	},

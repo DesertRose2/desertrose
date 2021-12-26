@@ -111,13 +111,13 @@
 	category = CAT_PRIMAL
 
 /datum/crafting_recipe/rib
-	name = "Colossal Rib"
+	name = "Collosal Rib"
 	always_availible = FALSE
 	reqs = list(
 			/obj/item/stack/sheet/bone = 10,
 			/datum/reagent/oil = 5)
 	result = /obj/structure/statue/bone/rib
-	category = CAT_PRIMAL
+	subcategory = CAT_PRIMAL
 
 /datum/crafting_recipe/skull
 	name = "Skull Carving"
