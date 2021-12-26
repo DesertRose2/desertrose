@@ -81,7 +81,7 @@ Tribal Chief
 	l_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2
 		)
 
 /datum/outfit/loadout/chiefnight
@@ -133,7 +133,7 @@ Tribal Shaman
 	shoes = 	/obj/item/clothing/shoes/sandal
 	r_hand = 	/obj/item/twohanded/sledgehammer/shamanstaff
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=3,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=3,
 		/obj/item/smelling_salts/wayfarer=1,
 		/obj/item/pestle=1,
 		/obj/item/storage/bag/chemistry/tribal=1
@@ -192,7 +192,7 @@ Tribal Head Hunter
 	l_pocket =		/obj/item/flashlight/lantern	
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/stack/medical/gauze=1)
 
 /*
@@ -240,7 +240,7 @@ Druid
 		/obj/item/reagent_containers/glass/mortar=1,
 		/obj/item/pestle=1,
 		/obj/item/reagent_containers/glass/primitive_chem_isolator=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
 		/obj/item/smelling_salts/crafted=1,
 		/obj/item/storage/bag/chemistry/tribal=1)
 
@@ -301,7 +301,7 @@ Villager
 	gloves = 	/obj/item/clothing/gloves/f13/handwraps
 	shoes = 	/obj/item/clothing/shoes/sandal
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/flashlight/flare/torch=1)
 
@@ -390,7 +390,7 @@ Hunter
 	shoes = 	/obj/item/clothing/shoes/f13/rag
 	l_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/kitchen/knife/combat/bone=1)
 
 /datum/outfit/loadout/arqosman
@@ -445,7 +445,7 @@ Spirit-Pledged
 	backpack_contents = list(
 		/obj/item/twohanded/spear/bonespear=1,
 		/obj/item/kitchen/knife/combat/bone=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1
 	)
 
 /datum/outfit/loadout/gardener

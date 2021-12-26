@@ -461,7 +461,7 @@
 
 /obj/item/storage/box/medicine/powder5/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+		new /obj/item/reagent_containers/pill/patch/f13/healingpowder(src)
 
 /obj/item/storage/box/medicine/powder10
 	name = "box of ten powders"
@@ -469,7 +469,7 @@
 
 /obj/item/storage/box/medicine/powder10/PopulateContents()
 	for(var/i in 1 to 10)
-		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+		new /obj/item/reagent_containers/pill/patch/f13/healingpowder(src)
 //		
 
 //Poultices
@@ -479,7 +479,7 @@
 
 /obj/item/storage/box/medicine/poultice5/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+		new /obj/item/reagent_containers/pill/patch/f13/healpoultice(src)
 
 /obj/item/storage/box/medicine/poultice10
 	name = "box of ten poultices"
@@ -487,7 +487,7 @@
 
 /obj/item/storage/box/medicine/poultice10/PopulateContents()
 	for(var/i in 1 to 10)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+		new /obj/item/reagent_containers/pill/patch/f13/healpoultice(src)
 //
 
 //Regular Stimpak
@@ -497,7 +497,7 @@
 
 /obj/item/storage/box/medicine/stimpak5/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 
 /obj/item/storage/box/medicine/stimpak10
 	name = "box of ten stimpaks"
@@ -505,7 +505,7 @@
 
 /obj/item/storage/box/medicine/stimpak10/PopulateContents()
 	for(var/i in 1 to 10)
-		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 //
 
 //Super Stimpaks
@@ -515,7 +515,7 @@
 
 /obj/item/storage/box/medicine/superstimpak5/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super(src)
 
 /obj/item/storage/box/medicine/superstimpak10
 	name = "box of ten super stimpaks"
@@ -523,5 +523,5 @@
 
 /obj/item/storage/box/medicine/superstimpak10/PopulateContents()
 	for(var/i in 1 to 10)
-		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super(src)
 //		

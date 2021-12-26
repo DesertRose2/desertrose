@@ -200,7 +200,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 		/obj/item/storage/bag/money/small/ncr=1,\
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1, \
 		/obj/item/binoculars=1
 		)
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

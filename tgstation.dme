@@ -2201,6 +2201,7 @@
 #include "code\modules\fallout\plants\xander.dm"
 #include "code\modules\fallout\plants\yucca.dm"
 #include "code\modules\fallout\reagents\alcohol.dm"
+#include "code\modules\fallout\reagents\chemical.dm"
 #include "code\modules\fallout\reagents\drinkmix.dm"
 #include "code\modules\fallout\reagents\drinks.dm"
 #include "code\modules\fallout\reagents\drugs.dm"
