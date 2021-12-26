@@ -269,25 +269,18 @@
 		if (islist(result))
 			if (result["button"] != 2) // If the user pressed the cancel button
 				// text2num conveniently returns a null on invalid values
-				armor = armor.setRating(tier = text2num(result["values"]["tier"]),\
-							linemelee = text2num(result["values"]["linemelee"]),\
-							linebullet = text2num(result["values"]["linebullet"]),\
-							linelaser = text2num(result["values"]["linelaser"]),\
+				armor = armor.setRating(
 							melee = text2num(result["values"]["melee"]),\
 							bullet = text2num(result["values"]["bullet"]),\
 							laser = text2num(result["values"]["laser"]),\
-							energy = text2num(result["values"]["energy"]),\
+							melee = text2num(result["values"]["melee"]),\
 							bomb = text2num(result["values"]["bomb"]),\
 							bio = text2num(result["values"]["bio"]),\
 							rad = text2num(result["values"]["rad"]),\
-							fire = text2num(result["values"]["fire"]),\
-							acid = text2num(result["values"]["acid"]),\
-							melee = text2num(result["values"]["melee"]),\
-							bullet = text2num(result["values"]["bullet"]),\
-							laser = text2num(result["values"]["laser"])
+							acid = text2num(result["values"]["acid"])
 							)
-				log_admin("[key_name(usr)] modified the armor on [src] ([type]) to linemelee: [armor.linemelee], linebullet: [armor.linebullet], linelaser: [armor.linelaser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid], melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser]")
-				message_admins(SPAN_NOTICE("[key_name_admin(usr)] modified the armor on [src] ([type]) to linemelee: [armor.linemelee], linebullet: [armor.linebullet], linelaser: [armor.linelaser], energy: [armor.energy], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], fire: [armor.fire], acid: [armor.acid], melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser]"))
+				log_admin("[key_name(usr)] modified the armor on [src] ([type]) to melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], acid: [armor.acid]")
+				message_admins(SPAN_NOTICE("[key_name_admin(usr)] modified the armor on [src] ([type]) to melee: [armor.melee], bullet: [armor.bullet], laser: [armor.laser], bomb: [armor.bomb], bio: [armor.bio], rad: [armor.rad], acid: [armor.acid]"))
 	if(href_list[VV_HK_MASS_DEL_TYPE])
 		if(check_rights(R_DEBUG|R_SERVER))
 			var/action_type = alert("Strict type ([type]) or type and all subtypes?",,"Strict type","Type and subtypes","Cancel")

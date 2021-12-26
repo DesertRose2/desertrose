@@ -21,9 +21,6 @@
 		if(C.armor.laser < 10)
 			C.armor.laser = 10
 			used = TRUE
-		if(C.armor.fire < 40)
-			C.armor.fire = 40
-			used = TRUE
 		if(C.armor.acid < 10)
 			C.armor.acid = 10
 			used = TRUE

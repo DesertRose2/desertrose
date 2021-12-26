@@ -62,14 +62,12 @@
 	if(ishuman(host_mob))
 		var/mob/living/carbon/human/H = host_mob
 		H.physiology.armor.laser += 35
-		H.physiology.armor.energy += 35
 
 /datum/nanite_program/refractive/disable_passive_effect()
 	. = ..()
 	if(ishuman(host_mob))
 		var/mob/living/carbon/human/H = host_mob
 		H.physiology.armor.laser -= 35
-		H.physiology.armor.energy -= 35
 
 /datum/nanite_program/coagulating
 	name = "Rapid Coagulation"

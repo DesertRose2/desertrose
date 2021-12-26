@@ -116,3 +116,8 @@
 		GLOB.coin_values[path] = C.value
 		qdel(C)
 
+// Visual nets
+var/list/datum/visualnet/visual_nets = list()
+
+//A list of slots where an item doesn't count as "worn" if it's in one of them
+var/global/list/unworn_slots = list(slot_l_hand,slot_r_hand, slot_l_store, slot_r_store,slot_robot_equip_1,slot_robot_equip_2,slot_robot_equip_3)
