@@ -15,7 +15,7 @@
 	item_state = "sheet-hide"
 	singular_name = "animal skin piece"
 	novariants = TRUE
-	merge_type = null
+	merge_type = /obj/item/stack/sheet/animalhide/f13
 
 /obj/item/stack/sheet/animalhide/f13/generic
 	merge_type = /obj/item/stack/sheet/animalhide/f13/generic
