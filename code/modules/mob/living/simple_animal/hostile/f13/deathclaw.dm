@@ -68,7 +68,7 @@
 	armour_penetration = 0.75
 	color = rgb(95,104,94)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
-		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 1,
+		/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw = 1,
 		/obj/item/stack/sheet/animalhide/f13/deathclaw = 3,
 		/obj/item/stack/sheet/bone/claw = 1)
 

@@ -1963,10 +1963,10 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/sewer)
 "afo" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "afp" = (
@@ -35573,7 +35573,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "cbU" = (
-/obj/structure/stalkeregg,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/caves)
 "cbV" = (
@@ -39261,7 +39260,7 @@
 	},
 /area/f13/klamat)
 "izG" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/plasteel/floorgrime,
@@ -39662,7 +39661,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
 "kgP" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "khK" = (
@@ -41235,7 +41234,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "qZj" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/plasteel/floorgrime,

@@ -1,4 +1,7 @@
-// In this document: Animal drops from butchery
+// In this document: Hides, Sinew, Bone, Eggs, Tanning pelts. Stuff related to Fallout animal drops.
+// Principle: If theres unique clothing made from specific resources its inhand crafting.
+// Bighorner and Nightstalker pelt needs tanning in a drying rack before being made into clothing.
+
 
 ///////////
 // HIDES //
@@ -201,8 +204,7 @@ GLOBAL_LIST_INIT(bone_recipes, list(
 	icon_state = "bone_claw"
 	item_state = "sheet-bone"
 	singular_name = "claw"
-	merge_type = /obj/item/stack/sheet/bone/claw
-
+	w_class = WEIGHT_CLASS_TINY
 
 //////////////////
 // PELT TANNING //
@@ -231,28 +233,32 @@ GLOBAL_LIST_INIT(bone_recipes, list(
 // EGGS //
 //////////
 
+/obj/item/reagent_containers/food/snacks/f13/egg
+	name = "egg"
+	icon = 'icons/fallout/mobs/mob_drops.dmi'
+
+// OBSOLETE replace with below
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg
+
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw
 	name = "deathclaw egg"
 	desc = "A deathclaw egg. It has a brownish-red shell. Look at this thing, it's as big as your torso!"
-	icon = 'icons/fallout/mobs/mob_drops.dmi'
 	icon_state = "egg_deathclaw"
 	bonus_reagents = list(/datum/reagent/toxin = 30)
 	list_reagents = list(/datum/reagent/consumable/eggyolk = 40)
 	filling_color = "#F0E68C"
 
-/obj/item/reagent_containers/food/snacks/f13/egg_nightstalker
+/obj/item/reagent_containers/food/snacks/f13/egg/nightstalker
 	name = "nightstalker egg"
 	desc = "A shiny, leathery egg."
-	icon = 'icons/fallout/mobs/mob_drops.dmi'
 	icon_state = "egg_nightstalker"
 	bonus_reagents = list(/datum/reagent/toxin = 5)
 	list_reagents = list(/datum/reagent/consumable/eggyolk = 20)
 	filling_color = "#FFDF00"
 
-/obj/item/reagent_containers/food/snacks/f13/egg_mirelurk
+/obj/item/reagent_containers/food/snacks/f13/egg/mirelurk
 	name = "mirelurk egg"
 	desc = "A bluish egg with very hard shell."
-	icon = 'icons/fallout/mobs/mob_drops.dmi'
 	icon_state = "egg_mirelurk"
 	list_reagents = list(/datum/reagent/consumable/eggyolk = 30)
 	filling_color = "#E6E6FA"

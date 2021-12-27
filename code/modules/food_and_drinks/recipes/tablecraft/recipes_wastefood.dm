@@ -35,7 +35,7 @@
 /datum/crafting_recipe/food/deathclawomelette
 	name = "Deathclaw Omelette"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 1,
+		/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw = 1,
 		/obj/item/reagent_containers/food/snacks/meat/steak/deathclaw = 1,
 		/obj/item/reagent_containers/food/snacks/butter =2,
 		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1
@@ -251,7 +251,7 @@
 /datum/crafting_recipe/food/deathclaw_egg_omelette
 	name = "deathclaw egg omelette"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 2,
+		/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw = 2,
 		/obj/item/reagent_containers/food/snacks/meat/steak/deathclaw = 3,
 		/obj/item/reagent_containers/food/snacks/butter = 2,
 		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 2,
