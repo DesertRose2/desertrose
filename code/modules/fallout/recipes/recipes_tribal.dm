@@ -389,8 +389,9 @@
 	result = /obj/item/twohanded/spear/bonespear/deathclaw
 	time = 80
 	reqs = list(/obj/item/stack/sheet/bone/claw = 2,
-				/obj/item/stack/sheet/bone = 10,
-				/obj/item/stack/sheet/sinew = 5)
+				/obj/item/stack/sheet/bone = 8,
+				/obj/item/stack/sheet/animalhide/f13/deathclaw = 1,
+				/obj/item/stack/sheet/sinew = 4)
 	category = CAT_PRIMAL
 	tools = list(TOOL_WORKBENCH)
 
