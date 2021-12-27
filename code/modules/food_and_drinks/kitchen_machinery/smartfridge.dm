@@ -320,7 +320,7 @@
 		var/obj/item/reagent_containers/food/snacks/S = O
 		if(S.dried_type)
 			return TRUE
-	if(istype(O, /obj/item/stack/sheet/wetleather/)) //no wethide
+	if(istype(O, /obj/item/stack/sheet/wetleather) || istype(O, /obj/item/stack/sheet/animalhide/f13/nightstalker) || istype(O, /obj/item/stack/sheet/animalhide/f13/bighorner))
 		return TRUE
 	return FALSE
 
@@ -347,6 +347,14 @@
 	for(var/obj/item/stack/sheet/wetleather/WL in src)
 		new /obj/item/stack/sheet/leather(drop_location(), WL.amount)
 		qdel(WL)
+		return TRUE
+	for(var/obj/item/stack/sheet/animalhide/f13/bighorner/BH in src)
+		new /obj/item/stack/sheet/animalhide/f13/pelt_horner(drop_location(), BH.amount)
+		qdel(BH)
+		return TRUE
+	for(var/obj/item/stack/sheet/animalhide/f13/nightstalker/NS in src)
+		new /obj/item/stack/sheet/animalhide/f13/pelt_stalker(drop_location(), NS.amount)
+		qdel(NS)
 		return TRUE
 	return FALSE
 

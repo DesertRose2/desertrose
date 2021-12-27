@@ -573,8 +573,8 @@
 	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/f13/hat_nightstalker
-	name = "nightstalker pelt"
-	desc = "A hat made from nightstalker pelt which makes the wearer feel both comfortable and elegant."
+	name = "nightstalker fur headwear"
+	desc = "Made from nightstalker pelt which makes the wearer feel both comfortable and elegant."
 	icon_state = "hat_nightstalker"
 	item_state = "hat_nightstalker"
 

@@ -16,7 +16,7 @@
 
 /obj/item/clothing/neck/mantle/gecko
 	name = "gecko skin mantle"
-	desc = "Made from tanned young gecko hides, too thin to be useful for armor. The small claws are still attached."
+	desc = "Made from young gecko hides, too thin to be useful for armor. The small claws are still attached."
 	icon_state = "gecko"
 
 /obj/item/clothing/neck/mantle/gray
@@ -63,7 +63,7 @@
 
 /obj/item/clothing/neck/mantle/peltfur
 	name = "warm fur mantle"
-	desc = "A mantle made from bighorner fur."
+	desc = "A mantle made from bighorner pelts."
 	icon_state = "peltfur"
 	cold_protection = CHEST|GROIN|ARMS
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
