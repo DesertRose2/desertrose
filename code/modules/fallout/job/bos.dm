@@ -45,6 +45,7 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost45dhelm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost51bhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_bos)
 
 /*
 Elder
