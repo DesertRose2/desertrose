@@ -29,9 +29,9 @@
 /area/f13/building)
 "au" = (
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aw" = (
@@ -217,7 +217,7 @@
 /area/f13/wasteland)
 "cO" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "cX" = (
@@ -457,7 +457,7 @@
 /area/f13/wasteland)
 "fz" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "fG" = (
@@ -2462,8 +2462,8 @@
 /area/f13/wasteland)
 "yb" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/item/storage/firstaid/ancient,
 /obj/item/storage/firstaid/ancient,
 /turf/open/indestructible/ground/outside/road{

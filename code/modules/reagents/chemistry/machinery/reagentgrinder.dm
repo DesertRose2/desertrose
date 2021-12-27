@@ -19,11 +19,11 @@
 	var/speed = 1
 	var/list/holdingitems
 	var/blacklistchems = list(
-	/obj/item/reagent_containers/pill/patch/turbo,
-	/obj/item/reagent_containers/pill/patch/medx,
-	/obj/item/reagent_containers/pill/buffout,
-	/obj/item/reagent_containers/pill/cateye,
-	/obj/item/reagent_containers/pill/patch/jet
+	/obj/item/reagent_containers/pill/patch/f13/turbo,
+	/obj/item/reagent_containers/hypospray/medipen/f13/medx,
+	/obj/item/reagent_containers/pill/f13/buffout,
+	/obj/item/reagent_containers/pill/f13/cateye,
+	/obj/item/reagent_containers/pill/patch/f13/jet
 	)
 
 	var/static/radial_examine = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_examine")

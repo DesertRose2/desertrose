@@ -411,18 +411,18 @@
 			return TRUE
 		*/
 		if(item_type == "stimPak")
-			var/obj/item/reagent_containers/hypospray/medipen/stimpak/custom/P
+			var/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom/P
 			for(var/i=0; i <amount; i++)
-				P = new /obj/item/reagent_containers/hypospray/medipen/stimpak/custom(drop_location())
+				P = new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom(drop_location())
 				P.name = trim ("[name] stimpak")
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each)
 				P.update_icon()
 			return TRUE
 		if(item_type == "superStimpak")
-			var/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom/P
+			var/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom/P
 			for(var/i=0; i <amount; i++)
-				P = new /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom(drop_location())
+				P = new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom(drop_location())
 				P.name = trim ("[name] super stimpak")
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each)
@@ -431,7 +431,7 @@
 		if(item_type == "bag")
 			var/obj/item/reagent_containers/pill/patch/P
 			for(var/i = 0; i < amount; i++)
-				P = new/obj/item/reagent_containers/pill/patch/healingpowder/custom(drop_location())
+				P = new/obj/item/reagent_containers/pill/patch/f13/healingpowder/custom(drop_location())
 				P.name = trim("[name] powder")
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each)//, transfered_by = usr)

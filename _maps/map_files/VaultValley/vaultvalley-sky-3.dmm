@@ -1419,8 +1419,8 @@
 /obj/structure/table/wood,
 /obj/item/smelling_salts/wayfarer,
 /obj/item/smelling_salts/wayfarer,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "mO" = (
@@ -2331,12 +2331,12 @@
 /area/f13/wasteland)
 "vk" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "vn" = (
@@ -3315,12 +3315,12 @@
 /area/f13/village)
 "Ea" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "Ec" = (

@@ -533,7 +533,7 @@
 /area/f13/bunker)
 "aGK" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
@@ -623,7 +623,7 @@
 /obj/item/geiger_counter,
 /obj/item/clothing/gloves/chameleon/insulated,
 /obj/item/clothing/shoes/galoshes,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -1395,12 +1395,12 @@
 /area/f13/sewer)
 "brg" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "brr" = (
@@ -6560,7 +6560,7 @@
 /obj/item/geiger_counter,
 /obj/item/clothing/gloves/chameleon/insulated,
 /obj/item/clothing/shoes/galoshes,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -7090,7 +7090,7 @@
 /obj/item/geiger_counter,
 /obj/item/clothing/gloves/chameleon/insulated,
 /obj/item/clothing/shoes/galoshes,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -7308,8 +7308,8 @@
 /obj/item/clothing/suit/armor/f13/atomzealot,
 /obj/item/clothing/under/f13/atombeliever,
 /obj/item/clothing/under/f13/atomwitchunder,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
 "hkE" = (
@@ -11901,7 +11901,7 @@
 /area/f13/sewer)
 "lFc" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -13057,12 +13057,12 @@
 	color = "#845f58";
 	pixel_x = -30
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -15709,7 +15709,7 @@
 /obj/effect/decal/remains{
 	icon_state = "remains"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowrustyfull"
@@ -15818,12 +15818,12 @@
 /area/f13/legion)
 "poN" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "ppj" = (
@@ -16738,9 +16738,9 @@
 "qlI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -17721,8 +17721,8 @@
 /area/f13/tunnel)
 "rfg" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/smelling_salts/wayfarer,
 /obj/item/smelling_salts/wayfarer,
 /turf/open/floor/wood/f13/old,
@@ -20613,7 +20613,7 @@
 /obj/structure/table,
 /obj/item/twohanded/sledgehammer/atomsjudgement,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/obj/item/reagent_containers/pill/radx,
+/obj/item/reagent_containers/pill/f13/radx,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
 "uek" = (
@@ -24036,7 +24036,7 @@
 /obj/item/geiger_counter,
 /obj/item/clothing/gloves/chameleon/insulated,
 /obj/item/clothing/shoes/galoshes,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -24252,7 +24252,7 @@
 /area/f13/sewer)
 "xqo" = (
 /obj/structure/table/booth,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)

@@ -471,10 +471,10 @@
 					// /obj/item/reagent_containers/medigel,
 					/obj/item/reagent_containers/chem_pack,
 					/obj/item/reagent_containers/hypospray/medipen,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom
 	))
 
 	if(istype(O, /obj/item/storage/pill_bottle))
@@ -734,7 +734,7 @@
 	max_n_of_items = 100
 
 /obj/machinery/smartfridge/bottlerack/alchemy_rack/accept_check(obj/item/O)
-	if(istype(O, /obj/item/reagent_containers/pill/patch/healingpowder) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive) || istype(O, /obj/item/reagent_containers/pill/patch/healpoultice))
+	if(istype(O, /obj/item/reagent_containers/pill/patch/f13/healingpowder) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive) || istype(O, /obj/item/reagent_containers/pill/patch/f13/healpoultice))
 		return TRUE
 	return FALSE
 
