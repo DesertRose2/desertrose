@@ -4906,7 +4906,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "od" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "oe" = (
@@ -5120,7 +5120,7 @@
 	},
 /area/space)
 "oI" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "oJ" = (

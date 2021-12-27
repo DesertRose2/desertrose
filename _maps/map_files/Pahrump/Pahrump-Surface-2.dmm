@@ -1397,7 +1397,7 @@
 	},
 /area/f13/legion)
 "atI" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerbordercorner"
@@ -2168,7 +2168,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aGl" = (
-/obj/structure/tires/five{
+/obj/structure/obstacle/tirepile{
 	pixel_y = 10
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -2402,7 +2402,7 @@
 	dir = 8
 	},
 /obj/structure/barricade/wooden,
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain1"
 	},
@@ -5069,7 +5069,7 @@
 	},
 /area/f13/building)
 "byP" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
 	},
@@ -6473,7 +6473,7 @@
 /area/f13/bar)
 "bXb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -6936,7 +6936,7 @@
 /turf/closed/wall/rust,
 /area/f13/ncr)
 "cia" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "cio" = (
@@ -7267,7 +7267,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
 "cpu" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "cpD" = (
@@ -7362,7 +7362,7 @@
 	},
 /area/f13/building)
 "crd" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerpavement"
@@ -7392,7 +7392,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "crA" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
 	icon_state = "dirt"
@@ -8354,7 +8354,7 @@
 	},
 /area/f13/legion)
 "cJZ" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
@@ -8751,7 +8751,7 @@
 	},
 /area/f13/building)
 "cSi" = (
-/obj/structure/tires/five{
+/obj/structure/obstacle/tirepile{
 	pixel_x = -16;
 	pixel_y = -7
 	},
@@ -8789,7 +8789,7 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "cST" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
@@ -10549,7 +10549,7 @@
 	},
 /area/f13/building)
 "dvg" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -12592,7 +12592,7 @@
 	},
 /area/f13/wasteland)
 "ehm" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerpavement"
@@ -12934,7 +12934,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "emU" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "enf" = (
@@ -13063,7 +13063,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "epm" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "epT" = (
@@ -14133,7 +14133,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -14405,7 +14405,7 @@
 	},
 /area/f13/wasteland)
 "eKN" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
 "eKP" = (
@@ -16559,7 +16559,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fqg" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "horizontalinnermain2right"
@@ -18018,7 +18018,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "fQL" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
 "fQW" = (
@@ -19368,7 +19368,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "glw" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
@@ -19392,7 +19392,7 @@
 	},
 /area/f13/building)
 "gmJ" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirt"
@@ -20410,7 +20410,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "gBu" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermaintop"
 	},
@@ -20603,7 +20603,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "gEA" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -22438,7 +22438,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "hjN" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain1"
 	},
@@ -23639,7 +23639,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/city)
 "hCF" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /obj/effect/mine/shrapnel/sting,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
@@ -23882,7 +23882,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_2"
 	},
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor2"
 	},
@@ -23946,7 +23946,7 @@
 	},
 /area/f13/building)
 "hHl" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright1"
 	},
@@ -24604,7 +24604,7 @@
 	},
 /area/f13/building)
 "hSR" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertopleft"
 	},
@@ -24670,7 +24670,7 @@
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/city)
 "hTV" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "hUc" = (
@@ -32039,7 +32039,7 @@
 	frequency = 1891;
 	pixel_y = -33
 	},
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor2"
 	},
@@ -32312,7 +32312,7 @@
 	},
 /area/f13/building)
 "keW" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -33205,7 +33205,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "krJ" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
 	},
@@ -33614,7 +33614,7 @@
 /area/f13/building)
 "kxP" = (
 /obj/structure/car/rubbish2,
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -39739,7 +39739,7 @@
 	},
 /area/f13/wasteland)
 "mup" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
 	icon_state = "outerbordercorner"
@@ -40933,7 +40933,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "mOY" = (
@@ -45707,7 +45707,7 @@
 	},
 /area/f13/wasteland)
 "osj" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "osm" = (
@@ -46545,7 +46545,7 @@
 	},
 /area/f13/building)
 "oGZ" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/effect/decal/marking{
 	icon_state = "dottedverticalcorroded"
 	},
@@ -47264,7 +47264,7 @@
 	},
 /area/f13/wasteland)
 "oSw" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "oSy" = (
@@ -49623,7 +49623,7 @@
 	},
 /area/f13/wasteland)
 "pEv" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "pEy" = (
@@ -50060,7 +50060,7 @@
 	},
 /area/f13/building)
 "pKY" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pLh" = (
@@ -50550,7 +50550,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pTS" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /obj/effect/decal/cleanable/oil,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -53766,7 +53766,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qVP" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
 	},
@@ -54619,7 +54619,7 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "rme" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderrighttop"
 	},
@@ -58846,7 +58846,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sCz" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
@@ -59072,7 +59072,7 @@
 	},
 /area/f13/wasteland)
 "sGG" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirtcorner"
@@ -59752,7 +59752,7 @@
 	},
 /area/f13/tunnel)
 "sRL" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
@@ -60252,7 +60252,7 @@
 	},
 /area/f13/city)
 "sZA" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "sZH" = (
@@ -60431,7 +60431,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city)
 "tcn" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerpavementcorner"
@@ -61164,7 +61164,7 @@
 	},
 /area/f13/building)
 "toy" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "toB" = (
@@ -62077,7 +62077,7 @@
 	},
 /area/f13/ncr)
 "tDq" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "tDU" = (
@@ -62307,7 +62307,7 @@
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/city)
 "tHB" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "tHM" = (
@@ -62939,7 +62939,7 @@
 	},
 /area/f13/wasteland)
 "tRc" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -64227,7 +64227,7 @@
 	},
 /area/f13/wasteland)
 "ulz" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
@@ -64459,7 +64459,7 @@
 	},
 /area/f13/tunnel)
 "uoS" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerborder"
@@ -65790,7 +65790,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "uRb" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
@@ -67139,7 +67139,7 @@
 /turf/open/floor/plasteel/blueyellow/side,
 /area/f13/city)
 "vmL" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermaintop"
 	},
@@ -67162,7 +67162,7 @@
 	},
 /area/f13/wasteland)
 "vnf" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -68229,7 +68229,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -69009,7 +69009,7 @@
 /turf/open/floor/plating/rust,
 /area/f13/building)
 "vQG" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -72422,7 +72422,7 @@
 	},
 /area/f13/building)
 "wXd" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -72684,7 +72684,7 @@
 	},
 /area/f13/wasteland)
 "xbR" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2top"
 	},
@@ -76459,7 +76459,7 @@
 /turf/open/floor/wood,
 /area/f13/bar)
 "ykI" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},

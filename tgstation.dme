@@ -2160,6 +2160,7 @@
 #include "code\modules\fallout\obj\structures\chair.dm"
 #include "code\modules\fallout\obj\structures\fridge.dm"
 #include "code\modules\fallout\obj\structures\haycrafts.dm"
+#include "code\modules\fallout\obj\structures\junk.dm"
 #include "code\modules\fallout\obj\structures\mob_spawners.dm"
 #include "code\modules\fallout\obj\structures\obstacle.dm"
 #include "code\modules\fallout\obj\structures\simple_door.dm"
