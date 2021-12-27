@@ -45,6 +45,7 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bosweldingmask)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost45dhelm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bost51bhelm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_bos)
 
 /*
 Elder
@@ -635,7 +636,7 @@ Scribe
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2, \
 		/obj/item/gun/energy/laser/crusader=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2 \
 	)

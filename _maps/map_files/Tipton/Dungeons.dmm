@@ -2796,11 +2796,11 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "lL" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -4520,8 +4520,8 @@
 /area/f13/underground/cave)
 "ui" = (
 /obj/structure/table,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -8100,7 +8100,7 @@
 /area/f13/underground/cave)
 "Nu" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},

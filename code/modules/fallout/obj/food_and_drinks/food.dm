@@ -261,7 +261,7 @@
 /obj/item/reagent_containers/food/snacks/f13/moleratstew
 	name = "molerat stew"
 	desc = "A hearty stew, simmered in beer with some vegetables. It's good, if you can get over the bitter taste of the meat."
-	icon_state = "moleratstew"
+	icon_state = "molerat_stew"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/medicine/tricordrazine = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 20)
 	filling_color = "B#22222"
@@ -292,7 +292,7 @@
 /obj/item/reagent_containers/food/snacks/f13/mirelurkstew
 	name = "mirelurk stew"
 	desc = "A hearty stew made from de-shelled Mirelurk meat, onions, butter, and other such delights."
-	icon_state = "Mirelurk_stew"
+	icon_state = "mirelurk_stew"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/medicine/tricordrazine = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 20)
 	tastes = list("crab" = 5, "onions" = 1)
@@ -658,15 +658,53 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	foodtype = MEAT
 
-/obj/item/reagent_containers/food/snacks/soup/longpork_stew
+/obj/item/reagent_containers/food/snacks/soup/f13/longpork_stew
 	name = "longpork stew"
 	desc = "A thick, oily stew that tastes and smells weird. Has small pieces of raw, chewy meat."
-	icon_state = "moleratstew"
+	icon_state = "longpork_stew"
 	bitesize = 4
 	volume = 30
-	list_reagents = list(/datum/reagent/medicine/longpork_stew = 30)
-	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/medicine/longpork_stew = 5)
+	list_reagents = list(/datum/reagent/medicine/longpork = 30)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/medicine/longpork = 5)
 	filling_color = "#a7510b"
 	tastes = list("oily broth" = 5, "chewy meat" = 1)
 	trash = /obj/item/reagent_containers/glass/bowl
 	foodtype = MEAT | LONGPORK
+
+/obj/item/reagent_containers/food/snacks/f13/human_burrito
+	name = "longpork burrito"
+	desc = "A thick, oily burrito reeking horribly and leaking some sort of dark thick liquid."
+	icon_state = "humanburrito"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/medicine/longpork = 3)	
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/medicine/longpork = 1)
+	filling_color = "#1a1001"
+	tastes = list("torilla" = 2, "oily broth" = 5, "chewy meat" = 1)
+	foodtype = GRAIN | MEAT | LONGPORK
+
+/obj/item/reagent_containers/food/snacks/f13/iguana_bits
+	name = "iguana bits"
+	desc = "A stick with totally legit and authentic iguana meat. Reeks of the Hub."
+	icon_state = "iguanabits"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/medicine/longpork = 3)	
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/medicine/longpork = 1)
+	tastes = list("almost real meat" = 2, "oily broth" = 1)
+	foodtype = MEAT | LONGPORK
+
+/obj/item/reagent_containers/food/snacks/f13/human_ribs
+	name = "human ribs"
+	desc = "An oily delicious looking hunch of meat. You get a feeling this was part of somebody recently."
+	icon_state = "humanribs"
+	w_class = WEIGHT_CLASS_NORMAL
+	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/bbqsauce = 5, /datum/reagent/medicine/longpork = 8)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/medicine/longpork = 3)
+	tastes = list("meat" = 3, "smokey sauce" = 1, "oily broth" = 1)
+	foodtype = MEAT | LONGPORK
+
+/obj/item/reagent_containers/food/snacks/pie/f13/human_meatpie
+	name = "longpork meat-pie"
+	icon_state = "humanmeatpie"
+	desc = "An old barber recipe, very delicious! Although you get a feeling that just might be a finger."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/medicine/longpork = 15)
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/medicine/longpork = 2)
+	tastes = list("pie" = 1, "questionable meat" = 1, "oily broth" = 1)
+	foodtype = GRAIN | MEAT | LONGPORK

@@ -64,14 +64,14 @@ GLOBAL_LIST_INIT(trash_ammo, list(
 ))
 
 GLOBAL_LIST_INIT(trash_chem, list(
-	/obj/item/storage/pill_bottle/chem_tin/mentats = 5,
-	/obj/item/storage/pill_bottle/chem_tin/fixer = 5,
-	/obj/item/storage/pill_bottle/chem_tin/radx = 5,
+	/obj/item/storage/pill_bottle/chem_tin/f13/mentats = 5,
+	/obj/item/storage/pill_bottle/chem_tin/f13/fixer = 5,
+	/obj/item/storage/pill_bottle/chem_tin/f13/radx = 5,
 	/obj/item/reagent_containers/food/drinks/bottle/orangejuice = 10,
 	/obj/item/reagent_containers/food/drinks/bottle/cognac = 10,
 	/obj/item/reagent_containers/food/drinks/bottle/whiskey = 10,
-	/obj/item/reagent_containers/hypospray/medipen/psycho = 5,
-	/obj/item/reagent_containers/pill/patch/healingpowder = 5
+	/obj/item/reagent_containers/hypospray/medipen/f13/psycho = 5,
+	/obj/item/reagent_containers/pill/patch/f13/healingpowder = 5
 ))
 
 GLOBAL_LIST_INIT(trash_craft, list(
@@ -296,23 +296,23 @@ GLOBAL_LIST_INIT(loot_medical_tool, list(
 ))
 
 GLOBAL_LIST_INIT(loot_medical_medicine, list(
-	/obj/item/reagent_containers/pill/patch/healingpowder,
-	/obj/item/storage/pill_bottle/chem_tin/radx,
+	/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+	/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 	/obj/item/reagent_containers/blood/radaway,
-	/obj/item/storage/pill_bottle/chem_tin/mentats,
-	/obj/item/storage/pill_bottle/chem_tin/fixer,
-	/obj/item/reagent_containers/hypospray/medipen/stimpak,
+	/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+	/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
+	/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 	/obj/item/reagent_containers/medspray/styptic,
 	/obj/item/reagent_containers/medspray/silver_sulf,
 	/obj/item/reagent_containers/medspray/sterilizine
 ))
 
 GLOBAL_LIST_INIT(loot_medical_drug, list(
-	/obj/item/reagent_containers/pill/patch/jet,
-	/obj/item/reagent_containers/pill/patch/turbo,
-	/obj/item/reagent_containers/pill/patch/healingpowder,
+	/obj/item/reagent_containers/pill/patch/f13/jet,
+	/obj/item/reagent_containers/pill/patch/f13/turbo,
+	/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 	/obj/item/reagent_containers/pill/stimulant,
-	/obj/item/reagent_containers/pill/patch/medx
+	/obj/item/reagent_containers/hypospray/medipen/f13/medx
 ))
 
 GLOBAL_LIST_INIT(loot_t1_melee, list(

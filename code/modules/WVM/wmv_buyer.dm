@@ -19,9 +19,9 @@
 								/obj/item/stack/ore/silver = 2,
 								/obj/item/stack/ore/iron = 1,
 								/obj/item/stack/sheet/leather = 3,
-								/obj/item/reagent_containers/pill/patch/jet = 5,
-								/obj/item/reagent_containers/hypospray/medipen/psycho = 15,
-								/obj/item/reagent_containers/pill/patch/medx = 10,
+								/obj/item/reagent_containers/pill/patch/f13/jet = 5,
+								/obj/item/reagent_containers/hypospray/medipen/f13/psycho = 15,
+								/obj/item/reagent_containers/hypospray/medipen/f13/medx = 10,
 								/obj/item/invention = 25,
 								/obj/item/experimental = 25
 								)

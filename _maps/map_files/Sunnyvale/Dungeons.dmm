@@ -1308,7 +1308,7 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/shoes/jackboots,
 /turf/open/floor/plasteel/f13{
@@ -2107,7 +2107,7 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
@@ -3509,8 +3509,8 @@
 /obj/effect/turf_decal/stripes/red/full,
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3575,8 +3575,8 @@
 	},
 /area/medical/abandoned)
 "iJ" = (
-/obj/item/storage/pill_bottle/chem_tin/mentats,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
@@ -4068,8 +4068,8 @@
 "jL" = (
 /obj/structure/table/glass,
 /obj/item/healthanalyzer,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
 	},
@@ -4245,8 +4245,8 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrusty"
 	},

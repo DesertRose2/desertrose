@@ -47,7 +47,7 @@
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/overseer
 	neck = 			/obj/item/storage/belt/holster
 	id =            /obj/item/card/id/silver
-	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super
 	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	belt = 			/obj/item/gun/ballistic/automatic/pistol/n99/executive
 	backpack_contents = list(
@@ -191,7 +191,7 @@
 		/obj/item/paper_bin=1,
 		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super = 3
 		)
 
 /datum/outfit/loadout/qadmin
@@ -244,7 +244,7 @@
 	jobtype = 		/datum/job/vtcc/f13provostmarshal
 	id =            /obj/item/card/id/silver
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
-	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super
+	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super
 	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	belt = 			/obj/item/storage/belt/military/assault
@@ -721,7 +721,7 @@
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/needler=1,
 		/obj/item/ammo_box/needleap = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak = 3,
 		/obj/item/pda=1
 		)
 
@@ -1069,10 +1069,10 @@
 /datum/outfit/loadout/addict
 	name = "Addict"
 	backpack_contents = list(
-	/obj/item/reagent_containers/pill/patch/medx=1,
-	/obj/item/reagent_containers/pill/buffout = 2,
+	/obj/item/reagent_containers/hypospray/medipen/f13/medx=1,
+	/obj/item/reagent_containers/pill/f13/buffout = 2,
 	/obj/item/reagent_containers/pill/lsd = 2,
-	/obj/item/reagent_containers/pill/patch/jet = 2,
+	/obj/item/reagent_containers/pill/patch/f13/jet = 2,
 	/obj/item/clothing/shoes/f13/raidertreads=1
 	)
 
