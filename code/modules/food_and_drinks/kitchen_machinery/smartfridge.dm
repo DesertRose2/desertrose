@@ -727,6 +727,7 @@
 //-------------------------
 // Alchemy Rack
 //-------------------------
+
 /obj/machinery/smartfridge/bottlerack/alchemy_rack
 	name = "alchemy rack"
 	desc = "A neatly organized cupboard for the storage of homemade remedies and flasks."
@@ -734,9 +735,10 @@
 	max_n_of_items = 100
 
 /obj/machinery/smartfridge/bottlerack/alchemy_rack/accept_check(obj/item/O)
-	if(istype(O, /obj/item/reagent_containers/pill/patch/f13/) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive))
+	if(istype(O, /obj/item/reagent_containers/pill/patch/f13/) || istype(O, /obj/item/stack/medical/mourning) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive))
 		return TRUE
 	return FALSE
+
 
 // ---------------------------------------
 // Update Icons for Alchemy Rack

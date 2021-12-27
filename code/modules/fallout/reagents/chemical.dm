@@ -11,7 +11,10 @@
 /obj/item/reagent_containers/hypospray/medipen/f13
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 
-/* Healing Chemicals */
+
+// -----------------
+// HEALING POWDER
+// ------------------
 
 /obj/item/reagent_containers/pill/patch/f13/healingpowder
 	name = "healing powder"
@@ -21,11 +24,16 @@
 	self_delay = 0
 
 /obj/item/reagent_containers/pill/patch/f13/healingpowder/custom
-	name = "Healing Powder"
-	desc = "A powder used to heal physical wounds derived from ground broc flowers and xander roots, commonly used by tribals."
+	name = "medicinal powder"
+	desc = "A uncommon mix of powdered roots or chemicals."
 	list_reagents = null
 	icon_state = "healingpowder"
 	self_delay = 0
+
+
+// -----------------
+// HEALING POULTICE
+// -----------------
 
 /obj/item/reagent_containers/pill/patch/f13/healpoultice
 	name = "healing poultice"
@@ -41,12 +49,22 @@
 	icon_state = "healingpoulticezombie"
 	self_delay = 50
 
+
+// -----------------
+// BITTER DRINK
+// ------------------
+
 /obj/item/reagent_containers/pill/patch/f13/bitterdrink
 	name = "bitter drink"
-	desc = "A disgusting drink favored by legion during their long marches. It leaves disgusting aftertaste."
+	desc = "A disgusting drink favored by legion during their long marches. Slow working, but cures most ailments.<br> Mixing with other medicines or drinking more than one bottle is not wise."
 	list_reagents = list(/datum/reagent/medicine/bitter_drink = 10)
 	icon_state = "bitter"
 	self_delay = 0
+
+
+// -----------
+// STIMPAK
+// -----------
 
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak
 	name = "stimpak"
@@ -76,6 +94,10 @@
 	if(reagents.total_volume)
 		. += custom_stimpak_overlay
 
+// -------------
+// SUPER STIMPAK
+// -------------
+
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super
 	name = "super stimpak"
 	desc = "The super version comes in a hypodermic, but with an additional vial containing more powerful drugs than the basic model and a leather belt to strap the needle to the injured limb."
@@ -102,6 +124,10 @@
 	if(reagents.total_volume)
 		. += custom_superstimpak_overlay
 
+// --------
+// HYDRA
+// --------
+
 /obj/item/stack/medical/bone_gel/hydra
 	name = "hydra"
 	singular_name = "hydra"
@@ -116,7 +142,50 @@
 	to_chat(user, SPAN_WARNING("Hydra can only be used on fractured limbs while aggressively holding someone!"))
 	return
 
-/* Narcotics */
+
+// ------------------
+// MOURNING DUST
+// ------------------
+
+/obj/item/stack/medical/mourning
+	name = "mourning dust"
+	singular_name = "mourning dust"
+	desc = "A type of primitive herbal poultice.\nWhile traditionally used to prepare corpses for the mourning feast, it can also treat scrapes and burns on the living, however, it is liable to cause shortness of breath when employed in this manner.\nIt is imbued with ancient wisdom."
+	icon = 'icons/fallout/objects/medicine/chemical.dmi'
+	icon_state = "mourningpoultice"
+	amount = 15
+	max_amount = 15
+	heal_brute = 10
+	heal_burn = 10
+	self_delay = 40
+	other_delay = 10
+	repeating = TRUE
+	merge_type = /obj/item/stack/medical/mourning
+	novariants = TRUE
+
+/obj/item/stack/medical/mourning/five
+	amount = 5
+
+/obj/item/stack/medical/mourning/ten
+	amount = 10
+
+/obj/item/stack/medical/mourning/heal(mob/living/M, mob/user)
+	if(iscarbon(M))
+		return heal_carbon(M, user, heal_brute, heal_burn)
+	return ..()
+
+/obj/item/stack/medical/mourning/post_heal_effects(amount_healed, mob/living/carbon/healed_mob, mob/user)
+	. = ..()
+	healed_mob.adjustOxyLoss(amount_healed)
+
+//OBSOLETE replace with /mourning, waiting on Tipton for this one too
+/obj/item/stack/medical/poultice/ten
+	amount = 10
+
+
+///////////////
+// NARCOTICS //
+///////////////
 
 /obj/item/reagent_containers/pill/patch/f13/jet
 	name = "jet"
@@ -150,8 +219,10 @@
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
 
-/* Pills */
 
+///////////
+// PILLS //
+///////////
 
 /obj/item/reagent_containers/pill/f13/mentat
 	name = "Mentat"
@@ -186,8 +257,10 @@
 	icon_state = "pillcateye"
 	list_reagents = list(/datum/reagent/medicine/cateye = 10)
 
-/* Pill Bottles */
 
+//////////////////
+// PILL BOTTLES //
+//////////////////
 
 /obj/item/storage/pill_bottle/chem_tin/f13/mentats
 	name = "Mentats"
