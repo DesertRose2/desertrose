@@ -316,7 +316,6 @@ Knight Captain
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
 		/obj/item/storage/bag/money/small/bos=1
@@ -781,14 +780,15 @@ Senior Knight
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/clothing/neck/mantle/bos/knight
+	/*
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
+	*/
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
 		/obj/item/storage/bag/money/small/bosknight=1
@@ -890,14 +890,15 @@ Knight
 	belt = 			/obj/item/storage/belt/military
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/clothing/neck/mantle/bos/knight
+	/*
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
+	*/
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
 		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/book/granter/crafting_recipe/gunsmith_three=1, \
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1, \
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2, \
 		/obj/item/storage/bag/money/small/bosknight=1
@@ -1031,6 +1032,7 @@ Initiate
 		/obj/item/gun/ballistic/automatic/pistol/crusader_pistol=1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
 		/obj/item/storage/toolbox/mechanical=1,
 		/obj/item/clothing/accessory/bos/initiateK=1
 		)
