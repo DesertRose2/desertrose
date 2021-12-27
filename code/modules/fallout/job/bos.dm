@@ -299,6 +299,8 @@ Knight Captain
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
 
+// Above: Band-aid fix for Knights not receiving gunsmithing knowledge round-start, simply copies recipes learned from GnB books to here.
+
 /datum/outfit/job/bos/f13knightcap
 	name = "Knight Captain"
 	jobtype = /datum/job/bos/f13knightcap
@@ -771,6 +773,8 @@ Senior Knight
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
 
+// Above: Band-aid fix for Knights not receiving gunsmithing knowledge round-start, simply copies recipes learned from GnB books to here.
+
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
@@ -881,6 +885,8 @@ Knight
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/burst_improvement)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
+
+// Above: Band-aid fix for Knights not receiving gunsmithing knowledge round-start, simply copies recipes learned from GnB books to here.
 
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
