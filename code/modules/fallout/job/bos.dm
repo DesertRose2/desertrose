@@ -284,14 +284,30 @@ Knight Captain
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/widowmaker)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/colt6520)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scope)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/suppressor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/burst_improvement)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
 
 /datum/outfit/job/bos/f13knightcap
 	name = "Knight Captain"
 	jobtype = /datum/job/bos/f13knightcap
+	/*
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
+	*/
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
 	belt = 			/obj/item/storage/belt/security/full
@@ -737,6 +753,25 @@ Senior Knight
 	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
+/datum/outfit/job/bos/f13seniorknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/widowmaker)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/colt6520)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scope)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/suppressor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/burst_improvement)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
+
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
@@ -827,6 +862,25 @@ Knight
 
 	access = list(ACCESS_JANITOR, ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+/datum/outfit/job/bos/f13knight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/widowmaker)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/colt6520)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scope)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/suppressor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/burst_improvement)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/recoil_decrease)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bullet_speed)
 
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
