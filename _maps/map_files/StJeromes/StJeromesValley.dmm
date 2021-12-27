@@ -16791,7 +16791,7 @@
 /obj/effect/decal/marking{
 	icon_state = "dottedvertical"
 	},
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "aYX" = (
@@ -32474,7 +32474,7 @@
 	},
 /area/f13/tunnel)
 "bSd" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -42618,7 +42618,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "wjI" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13{
 	icon_state = "grass3"
 	},

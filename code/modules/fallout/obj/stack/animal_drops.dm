@@ -15,6 +15,7 @@
 	item_state = "sheet-hide"
 	singular_name = "animal skin piece"
 	novariants = TRUE
+	merge_type = null
 
 /obj/item/stack/sheet/animalhide/f13/generic
 	merge_type = /obj/item/stack/sheet/animalhide/f13/generic
@@ -134,7 +135,7 @@ GLOBAL_LIST_INIT(nightstalker_recipes, list( \
 	icon_state = "skin_human"
 	merge_type = /obj/item/stack/sheet/animalhide/f13/human
 
-/obj/item/stack/sheet/animalhide/human/get_main_recipes()
+/obj/item/stack/sheet/animalhide/f13/human/get_main_recipes()
 	. = ..()
 	. += GLOB.human_recipes
 

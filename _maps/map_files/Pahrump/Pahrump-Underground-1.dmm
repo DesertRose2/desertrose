@@ -19056,7 +19056,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "mJZ" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "mKc" = (

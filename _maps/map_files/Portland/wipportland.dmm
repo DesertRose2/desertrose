@@ -3807,7 +3807,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/space)
 "AP" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "AQ" = (
