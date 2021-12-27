@@ -181,7 +181,7 @@
 /datum/crafting_recipe/food/fried_brahmin_skin
 	name = "Fried brahmin skin"
 	reqs = list(
-		/obj/item/stack/sheet/animalhide/brahmin = 2,
+		/obj/item/stack/sheet/animalhide/f13/brahmin = 2,
 		/obj/item/reagent_containers/food/snacks/butter = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
@@ -274,7 +274,7 @@
 /datum/crafting_recipe/food/baked_nightstalker_tail
 	name = "Baked Nightstalker tail"
 	reqs = list(
-		/obj/item/clothing/head/f13/stalkerpelt = 1,
+		/obj/item/stack/sheet/animalhide/f13/nightstalker = 1,
 		/obj/item/stack/sheet/mineral/wood = 1,
 		/obj/item/reagent_containers/food/snacks/butter = 1
 	)

@@ -15,7 +15,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	speak_chance = 0
 	turns_per_move = 5
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/gecko = 2, /obj/item/stack/sheet/animalhide/gecko = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/gecko = 2, /obj/item/stack/sheet/animalhide/f13/gecko = 1)
 	response_help_simple = "pets"
 	response_disarm_simple = "gently pushes aside"
 	response_harm_simple = "hits"
@@ -69,7 +69,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	speak_chance = 0
 	turns_per_move = 5
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew = 1, /obj/item/clothing/head/f13/stalkerpelt = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew = 1, /obj/item/stack/sheet/animalhide/f13/nightstalker = 1)
 	response_help_simple = "pets"
 	response_disarm_simple = "gently pushes aside"
 	response_harm_simple = "bites"
@@ -178,12 +178,6 @@
 	icon_state = "stalker-egg"
 	density = 1
 	anchored = 0
-
-/obj/item/clothing/head/f13/stalkerpelt
-	name = "nightstalker pelt"
-	desc = "A hat made from nightstalker pelt which makes the wearer feel both comfortable and elegant."
-	icon_state = "stalkerpelt"
-	item_state = "fedora"
 
 
 /////////////

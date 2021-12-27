@@ -19,8 +19,8 @@
 	speed = -1
 	see_in_dark = 8
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 4,
-							/obj/item/stack/sheet/animalhide/deathclaw = 2,
-							/obj/item/stack/sheet/bone = 4)
+							/obj/item/stack/sheet/animalhide/f13/deathclaw = 2,
+							/obj/item/stack/sheet/bone/claw = 1)
 	response_help_simple  = "pets"
 	response_disarm_simple = "gently pushes aside"
 	response_harm_simple   = "hits"
@@ -69,7 +69,8 @@
 	color = rgb(95,104,94)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
 		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 1,
-		/obj/item/stack/sheet/animalhide/deathclaw = 3)
+		/obj/item/stack/sheet/animalhide/f13/deathclaw = 3,
+		/obj/item/stack/sheet/bone/claw = 1)
 
 /mob/living/simple_animal/hostile/deathclaw/legendary
 	name = "legendary deathclaw"

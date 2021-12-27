@@ -37928,7 +37928,7 @@
 "mBR" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/food/snacks/meat/slab/deathclaw,
-/obj/item/stack/sheet/animalhide/deathclaw,
+/obj/item/stack/sheet/animalhide/f13/deathclaw,
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "innermiddle"
 	},

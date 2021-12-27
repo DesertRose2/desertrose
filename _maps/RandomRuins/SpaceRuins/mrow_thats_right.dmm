@@ -846,17 +846,7 @@
 /obj/structure/closet/crate/freezer{
 	name = "cat hide"
 	},
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/f13/human
 /turf/open/floor/plasteel/freezer,
 /area/ruin/space/has_grav/powered/cat_man)
 "ct" = (

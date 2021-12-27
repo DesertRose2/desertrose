@@ -27,7 +27,7 @@
 	gold_core_spawnable = HOSTILE_SPAWN
 	faction = list("trog")
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human = 2,
-							/obj/item/stack/sheet/animalhide/human = 1,
+							/obj/item/stack/sheet/animalhide/f13/human = 1,
 							/obj/item/stack/sheet/bone = 1)
 
 /mob/living/simple_animal/hostile/trog/sporecarrier

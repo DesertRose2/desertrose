@@ -25767,7 +25767,7 @@
 /area/f13/wasteland)
 "bzW" = (
 /obj/structure/bed,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/f13/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "bzX" = (
@@ -25788,7 +25788,7 @@
 /area/f13/underground/mountain)
 "bAa" = (
 /obj/structure/bed/mattress,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/f13/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "bAb" = (

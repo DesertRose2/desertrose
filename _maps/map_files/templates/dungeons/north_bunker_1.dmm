@@ -292,7 +292,7 @@
 "lH" = (
 /obj/structure/chair,
 /obj/effect/decal/remains/human,
-/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/f13/human,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -1024,7 +1024,7 @@
 	},
 /area/f13/bunker)
 "Fr" = (
-/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/f13/human,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},

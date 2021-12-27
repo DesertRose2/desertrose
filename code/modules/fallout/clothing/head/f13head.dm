@@ -572,6 +572,12 @@
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
 
+/obj/item/clothing/head/f13/hat_nightstalker
+	name = "nightstalker pelt"
+	desc = "A hat made from nightstalker pelt which makes the wearer feel both comfortable and elegant."
+	icon_state = "hat_nightstalker"
+	item_state = "hat_nightstalker"
+
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"
 	desc = "(I) <font color='#157206'>Him haffi drop him fork and run,</font><br><font color='green'>Him can't stand up to Jah Jah son,</font><br><font color='#fd680e'>Him haffi lef' ya with him gun,</font><br><font color='red'>Dig off with him bomb.</font>"
@@ -583,6 +589,7 @@
 /obj/item/clothing/head/f13/hairband
 	name = "hairband"
 	desc = "A pretty yellow hairband."
+	flags_inv = null
 	icon_state = "50shairband"
 	item_state = "50shairband"
 
