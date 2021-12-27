@@ -238,12 +238,11 @@
 
 /obj/item/suppressor
 	name = "suppressor"
-	desc = "A syndicate small-arms suppressor for maximum espionage."
+	desc = "A military suppressor usable on most weapons. Maximum tacticool."
 	icon = 'icons/obj/guns/projectile.dmi'
 	icon_state = "suppressor"
 	w_class = WEIGHT_CLASS_TINY
 	var/oldsound = null
-
 
 /obj/item/suppressor/specialoffer
 	name = "cheap suppressor"
