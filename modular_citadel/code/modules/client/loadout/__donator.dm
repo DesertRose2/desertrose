@@ -721,6 +721,7 @@
 	ckeywhitelist = list(
 							"kayzach",
 							"pisshole",
+							"asterixcodix",
 							"allakai",
 							"thegreatcoward",
 							"muhsollini"
@@ -741,9 +742,12 @@
 	ckeywhitelist = list(
 							"pisshole",
 							"idiocityinc",
+							"snowwolf29",
+							"gurking",
+							"asterixcodix",
 							"allakai",
 							"thegreatcoward",
-							"muhsollini"							
+							"muhsollini"
 		)
 	restricted_roles = list(
 							"NCR Ranger Sergeant",
