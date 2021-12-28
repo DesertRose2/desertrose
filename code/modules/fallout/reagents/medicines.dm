@@ -198,16 +198,16 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30
 	heal_factor = -2
-	heal_factor_perk = -2
+	heal_factor_perk = -4
 
 /datum/reagent/medicine/healing_powder/poultice_zombie
 	name = "zombie poultice"
 	description = "Highly refined powder, usually only utilized by members of Caesar's Legion, for its effects on mind of its user."
 	color = "#a64adb"
-	metabolization_rate = 0.4 * REAGENTS_METABOLISM
+	metabolization_rate = 0.2 * REAGENTS_METABOLISM
 	overdose_threshold = 11
 	heal_factor = 0
-	heal_factor_perk = -1
+	heal_factor_perk = -5
 
 /datum/reagent/medicine/healing_powder/poultice_zombie/on_mob_life(mob/living/carbon/M)
 	var/is_technophobe = FALSE
@@ -254,6 +254,7 @@
 	. = TRUE
 	..()
 
+
 // ----------------
 // RAD-X REAGENT
 // ----------------
@@ -271,6 +272,7 @@
 	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER)
 	. = TRUE
 	..()
+
 
 // ----------------
 // RADAWAY REAGENT
@@ -292,6 +294,7 @@
 		H.confused = max(M.confused, 3)
 	. = TRUE
 	..()
+
 
 // ----------------
 // MED-X REAGENT
@@ -426,6 +429,7 @@
 		M.Jitter(5)
 	..()
 
+
 // ----------------
 // CATEYE REAGENT
 // ----------------
@@ -492,6 +496,7 @@
 		. = TRUE
 		M.blur_eyes(40)
 	..()
+
 
 // ----------------
 // MENTAT REAGENT
@@ -573,6 +578,7 @@
 		M.Jitter(5)
 	..()
 
+
 // ----------------
 // FIXER REAGENT
 // ----------------
@@ -598,6 +604,7 @@
 	..()
 	. = TRUE
 
+
 // ----------------
 // GAIA EXTRACT REAGENT
 // ----------------
@@ -622,6 +629,7 @@
 /datum/reagent/medicine/gaia/overdose_start(mob/living/M)
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
+
 
 // ----------------
 // LONGPORK REAGENT
@@ -656,6 +664,7 @@
 	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
+
 
 // --------------------------
 // MOURNING DUST REAGENT

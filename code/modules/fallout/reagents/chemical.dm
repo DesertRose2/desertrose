@@ -42,6 +42,11 @@
 	icon_state = "healingpoultice"
 	self_delay = 0
 
+
+// -----------------
+// ZOMBIE POULTICE
+// -----------------
+
 /obj/item/reagent_containers/pill/patch/f13/poultice_zombie
 	name = "zombie poultice"
 	desc = "A well refined powder, mostly in use by Caesar's Legion for its side effects which it causes in first time users."
