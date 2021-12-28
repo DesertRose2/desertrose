@@ -22,7 +22,7 @@
 	name = "Insect Chitin Armor"
 	result = /obj/item/clothing/suit/armor/f13/chitinarmor
 	time = 30
-	reqs = list(/obj/item/stack/sheet/animalhide/chitin = 12,
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/chitin = 12,
 				/obj/item/stack/sheet/sinew = 4,
 				/obj/item/stack/sheet/cloth = 4)
 	category = CAT_CLOTHING
@@ -41,7 +41,7 @@
 	result = /obj/item/clothing/accessory/skullcodpiece
 	time = 20
 	reqs = list(/obj/item/stack/sheet/bone = 2,
-				/obj/item/stack/sheet/animalhide/deathclaw = 1) //changed from goliath to deathclaw
+				/obj/item/stack/sheet/animalhide/f13/deathclaw = 1)
 	category = CAT_PRIMAL
 
 /datum/crafting_recipe/bracers
@@ -165,7 +165,7 @@
 	time = 50
 	reqs = list(/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/sinew = 2,
-				/obj/item/stack/sheet/animalhide/deathclaw = 4)
+				/obj/item/stack/sheet/animalhide/f13/deathclaw = 4)
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
@@ -259,7 +259,7 @@
 	name = "Male Tribal Outfit"
 	result = /obj/item/clothing/under/f13/tribal
 	time = 20
-	reqs = list(/obj/item/stack/sheet/animalhide/gecko = 2)
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/gecko = 2)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
@@ -268,7 +268,7 @@
 	name = "Female Tribal Outfit"
 	result = /obj/item/clothing/under/f13/female/tribal
 	time = 20
-	reqs = list(/obj/item/stack/sheet/animalhide/gecko = 2)
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/gecko = 2)
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
@@ -364,7 +364,7 @@
 	always_availible = FALSE
 	result = /obj/item/gun/ballistic/automatic/bonebow
 	time = 80
-	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/deathclaw = 6,
 				/obj/item/stack/sheet/bone = 10,
 				/obj/item/stack/sheet/sinew = 5)
 	category = CAT_PRIMAL
@@ -388,9 +388,10 @@
 	always_availible = FALSE
 	result = /obj/item/twohanded/spear/bonespear/deathclaw
 	time = 80
-	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 4,
-				/obj/item/stack/sheet/bone = 10,
-				/obj/item/stack/sheet/sinew = 5)
+	reqs = list(/obj/item/stack/sheet/bone/claw = 2,
+				/obj/item/stack/sheet/bone = 8,
+				/obj/item/stack/sheet/animalhide/f13/deathclaw = 1,
+				/obj/item/stack/sheet/sinew = 4)
 	category = CAT_PRIMAL
 	tools = list(TOOL_WORKBENCH)
 
@@ -410,7 +411,7 @@
 	always_availible = FALSE
 	result = /obj/item/shield/riot/tribal/nightstalker
 	reqs = list(/obj/item/shield/tribal = 1,
-				/obj/item/clothing/head/f13/stalkerpelt = 1)
+				/obj/item/stack/sheet/animalhide/f13/nightstalker = 1)
 	category = CAT_PRIMAL
 	tools = list(TOOL_WORKBENCH)
 

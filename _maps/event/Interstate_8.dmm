@@ -2486,7 +2486,7 @@
 	},
 /area/f13/wasteland)
 "yp" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ys" = (

@@ -34,7 +34,7 @@
 	del_on_death = 0
 	decompose = TRUE
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human = 2,
-							/obj/item/stack/sheet/animalhide/human = 1)
+							/obj/item/stack/sheet/animalhide/f13/human = 1)
 
 /mob/living/simple_animal/hostile/raider/Aggro()
 	..()

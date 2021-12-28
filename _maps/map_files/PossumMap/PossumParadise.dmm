@@ -17273,7 +17273,7 @@
 /obj/effect/decal/marking{
 	icon_state = "dottedvertical"
 	},
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "bdx" = (
