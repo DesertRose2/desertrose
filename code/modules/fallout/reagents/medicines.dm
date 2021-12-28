@@ -679,5 +679,5 @@
 /datum/chemical_reaction/mourningdust/on_reaction(datum/reagents/holder, multiplier)
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= multiplier, i++)
-		new /obj/item/stack/medical/mourning/five/five(location)
+		new /obj/item/stack/medical/mourning/five(location)
 
