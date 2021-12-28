@@ -1151,8 +1151,8 @@
 	},
 /area/f13/klamat)
 "aKJ" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/closet/crate/medical,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -2838,10 +2838,10 @@
 /area/f13/klamat)
 "bRC" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/curtain{
 	pixel_x = 30
 	},
@@ -4553,8 +4553,8 @@
 /area/f13/ncr)
 "dch" = (
 /obj/structure/closet/crate/medical,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -5061,7 +5061,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = 25
 	},
@@ -8351,7 +8351,7 @@
 /area/f13/building)
 "fMh" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "fMN" = (
@@ -10758,7 +10758,7 @@
 /area/f13/building)
 "hyA" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -12841,7 +12841,7 @@
 /area/f13/building)
 "iWy" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "iWD" = (
@@ -13056,7 +13056,7 @@
 "jdM" = (
 /obj/structure/bed/mattress/pregame,
 /obj/item/clothing/head/fedora,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -14098,7 +14098,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = 25
 	},
@@ -16547,7 +16547,7 @@
 /area/f13/wasteland)
 "lPi" = (
 /obj/structure/closet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lPn" = (
@@ -17809,7 +17809,7 @@
 /area/f13/wasteland)
 "mEe" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/outside/dirt,
@@ -19713,7 +19713,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
 "nXJ" = (
@@ -20510,7 +20510,7 @@
 /area/f13/building)
 "ozP" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "oAD" = (
@@ -21879,8 +21879,8 @@
 /area/f13/brotherhood)
 "pvB" = (
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -22277,9 +22277,9 @@
 /area/f13/klamat)
 "pLR" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -22350,7 +22350,7 @@
 /area/f13/klamat)
 "pOD" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
@@ -24023,15 +24023,15 @@
 /area/f13/klamat)
 "rdk" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = 7;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = -8;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "rdl" = (
@@ -24469,13 +24469,13 @@
 /area/f13/klamat)
 "rsY" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
 "rtY" = (
@@ -24681,7 +24681,7 @@
 /area/f13/wasteland)
 "ryJ" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
@@ -25299,7 +25299,7 @@
 "rYv" = (
 /obj/structure/table,
 /obj/item/paper,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -26147,7 +26147,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -28549,8 +28549,8 @@
 /area/f13/klamat)
 "uzI" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/effect/spawner/lootdrop/clothing_middle,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -28713,7 +28713,7 @@
 /area/f13/building)
 "uHt" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/medspray/sterilizine,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
@@ -30250,18 +30250,18 @@
 "vRj" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -30390,7 +30390,7 @@
 /area/f13/klamat)
 "vXI" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -31226,7 +31226,7 @@
 /area/f13/underground/mountain)
 "wDM" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -31268,18 +31268,18 @@
 "wEC" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -31325,7 +31325,7 @@
 /area/f13/klamat)
 "wFL" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "wGi" = (
@@ -31985,8 +31985,8 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "xcA" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/closet/crate/medical,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -32349,7 +32349,7 @@
 /area/f13/klamat)
 "xsw" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -32777,7 +32777,7 @@
 /area/f13/wasteland)
 "xHO" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/machinery/light/small{
 	dir = 8
 	},

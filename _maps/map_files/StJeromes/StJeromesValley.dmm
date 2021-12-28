@@ -473,7 +473,7 @@
 /area/f13/brotherhood)
 "abi" = (
 /obj/structure/table,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /obj/item/storage/box/beakers,
 /obj/machinery/light{
 	dir = 4
@@ -1963,10 +1963,10 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/sewer)
 "afo" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "afp" = (
@@ -5377,8 +5377,8 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
-/obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault)
 "apA" = (
@@ -10429,7 +10429,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "aEN" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "aEO" = (
@@ -11142,7 +11142,7 @@
 /area/f13/underground/mountain)
 "aHf" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/outside/dirt,
@@ -12738,8 +12738,8 @@
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/syringe/medx,
 /obj/item/reagent_containers/syringe/medx,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/effect/spawner/lootdrop/clothing_middle,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
@@ -12827,8 +12827,8 @@
 	},
 /area/f13/klamat)
 "aMn" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /obj/item/reagent_containers/blood/radaway,
 /obj/structure/closet/crate/medical,
@@ -13282,7 +13282,7 @@
 /area/f13/wasteland)
 "aNC" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aND" = (
@@ -13519,14 +13519,14 @@
 /area/f13/followers)
 "aOn" = (
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -13674,15 +13674,15 @@
 /area/f13/underground/mountain)
 "aOJ" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = 16
@@ -14076,7 +14076,7 @@
 /area/f13/wasteland)
 "aQa" = (
 /obj/structure/closet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "aQb" = (
@@ -14187,13 +14187,13 @@
 /obj/structure/rack,
 /obj/item/storage/toolbox/emergency/old,
 /obj/item/storage/toolbox/emergency/old,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "aQx" = (
@@ -15291,8 +15291,8 @@
 /area/f13/casino)
 "aUq" = (
 /obj/structure/table/wood/poker,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
@@ -15335,10 +15335,10 @@
 "aUy" = (
 /obj/item/reagent_containers/syringe/medx,
 /obj/item/reagent_containers/syringe/medx,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/closet/crate/medical,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -16791,7 +16791,7 @@
 /obj/effect/decal/marking{
 	icon_state = "dottedvertical"
 	},
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "aYX" = (
@@ -17881,9 +17881,9 @@
 /area/f13/city)
 "bcI" = (
 /obj/structure/bed/mattress/pregame,
-/obj/item/reagent_containers/pill/patch/jet,
-/obj/item/reagent_containers/pill/patch/jet,
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bcJ" = (
@@ -17962,7 +17962,7 @@
 /area/f13/city)
 "bcX" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bcY" = (
@@ -18629,7 +18629,7 @@
 /area/f13/city)
 "bfg" = (
 /obj/structure/bed/mattress/pregame,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bfh" = (
@@ -20592,7 +20592,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkW" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bkY" = (
@@ -20939,13 +20939,13 @@
 "bmj" = (
 /obj/structure/table/wood,
 /obj/item/storage/bag/trash,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "bmk" = (
@@ -21440,7 +21440,7 @@
 "bnM" = (
 /obj/structure/table,
 /obj/item/paper,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -21520,7 +21520,7 @@
 /area/f13/city)
 "bnZ" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -21610,7 +21610,7 @@
 /area/f13/city)
 "bol" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -21797,7 +21797,7 @@
 "boN" = (
 /obj/structure/bed/mattress/pregame,
 /obj/item/clothing/head/fedora,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -24485,9 +24485,9 @@
 /obj/structure/table/wood,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/mask/surgical,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/lighter,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
@@ -24605,7 +24605,7 @@
 /area/f13/legion)
 "bxf" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/stack/medical/gauze/improvised,
 /obj/item/stack/medical/gauze/improvised,
 /obj/item/stack/medical/gauze/improvised,
@@ -25292,7 +25292,7 @@
 /obj/item/clothing/shoes/roman,
 /obj/item/shield/riot/roman,
 /obj/item/claymore/machete/gladius,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "byN" = (
@@ -25767,7 +25767,7 @@
 /area/f13/wasteland)
 "bzW" = (
 /obj/structure/bed,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/f13/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "bzX" = (
@@ -25788,7 +25788,7 @@
 /area/f13/underground/mountain)
 "bAa" = (
 /obj/structure/bed/mattress,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/f13/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "bAb" = (
@@ -27443,8 +27443,8 @@
 /area/f13/followers)
 "bEJ" = (
 /obj/structure/closet/crate/medical,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -30451,8 +30451,8 @@
 /area/f13/underground/cave/vault/fourfivefour)
 "bMs" = (
 /obj/structure/table,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -30660,7 +30660,7 @@
 /area/f13/underground/cave/vault/fourfivefour)
 "bMU" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -32468,13 +32468,13 @@
 	},
 /area/f13/tunnel)
 "bSc" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
 "bSd" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -32513,7 +32513,7 @@
 	},
 /area/f13/tunnel)
 "bSk" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube"
@@ -32542,7 +32542,7 @@
 	},
 /area/f13/tunnel)
 "bSp" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -34677,7 +34677,7 @@
 /area/f13/den)
 "bZp" = (
 /obj/structure/bed/mattress/pregame,
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
@@ -35573,7 +35573,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "cbU" = (
-/obj/structure/stalkeregg,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/caves)
 "cbV" = (
@@ -37087,7 +37086,7 @@
 "cgB" = (
 /obj/structure/table,
 /obj/item/scalpel,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "cgC" = (
@@ -37109,13 +37108,13 @@
 "cgE" = (
 /obj/structure/table,
 /obj/item/scalpel,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "cgF" = (
 /obj/structure/table/wood/poker,
 /obj/effect/spawner/lootdrop/f13/armor/random,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "cgG" = (
@@ -38155,18 +38154,18 @@
 "eDc" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -38332,7 +38331,7 @@
 	},
 /area/f13/sewer)
 "fko" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "fls" = (
@@ -39261,9 +39260,9 @@
 	},
 /area/f13/klamat)
 "izG" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "iAe" = (
@@ -39646,7 +39645,7 @@
 /obj/structure/table,
 /obj/item/twohanded/sledgehammer/atomsjudgement,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/obj/item/reagent_containers/pill/radx,
+/obj/item/reagent_containers/pill/f13/radx,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "kfG" = (
@@ -39662,7 +39661,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
 "kgP" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "khK" = (
@@ -40157,9 +40156,9 @@
 /area/f13/sewer)
 "mEj" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -41235,7 +41234,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "qZj" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/plasteel/floorgrime,
@@ -41559,8 +41558,8 @@
 /obj/item/clothing/suit/armor/f13/atomzealot,
 /obj/item/clothing/under/f13/atombeliever,
 /obj/item/clothing/under/f13/atomwitchunder,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "sxj" = (
@@ -42173,7 +42172,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "uIL" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -42619,7 +42618,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "wjI" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/floor/f13{
 	icon_state = "grass3"
 	},

@@ -91,8 +91,10 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("turret frame", /obj/machinery/porta_turret_construct, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("button frame", /obj/item/wallframe/button, 1), \
+	new/datum/stack_recipe("computer frame", /obj/structure/frame/computer, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("machine frame", /obj/structure/frame/machine, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
+	new/datum/stack_recipe("extinguisher cabinet frame", /obj/item/wallframe/extinguisher_cabinet, 2), \
 	new/datum/stack_recipe("light fixture frame", /obj/item/wallframe/light_fixture, 2), \
 	new/datum/stack_recipe("small light fixture frame", /obj/item/wallframe/light_fixture/small, 1), \
 	new/datum/stack_recipe("floodlight frame", /obj/structure/floodlight_frame, 5, one_per_turf = TRUE, on_floor = TRUE), \
@@ -804,36 +806,6 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 	novariants = TRUE
 	merge_type = /obj/item/stack/sheet/greatergem
 
-	/*
- * Bones
- */
-
-GLOBAL_LIST_INIT(bone_recipes, list(
-	new /datum/stack_recipe("Bone Dagger", /obj/item/kitchen/knife/combat/bone, 2, time = 20), \
-	new /datum/stack_recipe("Skull Helmet", /obj/item/clothing/head/helmet/skull, 4, time = 30), \
-	new /datum/stack_recipe("Bone Armor", /obj/item/clothing/suit/armor/bone, 6, time = 30)))
-
-/obj/item/stack/sheet/bone
-	name = "bones"
-	icon = 'icons/obj/mining.dmi'
-	icon_state = "bone"
-	item_state = "sheet-bone"
-	custom_materials = list(/datum/material/bone = MINERAL_MATERIAL_AMOUNT)
-	singular_name = "bone"
-	desc = "Someone's been drinking their milk."
-	force = 7
-	throwforce = 5
-	max_amount = 12
-	w_class = WEIGHT_CLASS_NORMAL
-	throw_speed = 1
-	throw_range = 3
-	grind_results = list(/datum/reagent/carbon = 10)
-	merge_type = /obj/item/stack/sheet/bone
-	material_type = /datum/material/bone
-
-/obj/item/stack/sheet/bone/get_main_recipes()
-	. = ..()
-	. += GLOB.bone_recipes
 
 	/*
  * Plastic

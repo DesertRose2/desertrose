@@ -206,8 +206,8 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
-/obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -618,7 +618,7 @@
 	},
 /area/f13/bunker)
 "tx" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
@@ -872,7 +872,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "Ct" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "Cu" = (
@@ -1259,7 +1259,7 @@
 /obj/structure/table/wood/settler,
 /obj/item/paper,
 /obj/item/trash/coal,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
@@ -1521,8 +1521,8 @@
 /area/f13/bunker)
 "Zq" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"

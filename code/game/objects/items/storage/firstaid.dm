@@ -41,7 +41,7 @@
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/emergency
@@ -244,7 +244,7 @@
 	STR.allow_quick_gather = TRUE
 	STR.click_gather = TRUE
 	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/pill, /obj/item/dice))
-	STR.cant_hold = typecacheof(list(/obj/item/reagent_containers/pill/patch/jet, /obj/item/reagent_containers/pill/patch/turbo, /obj/item/reagent_containers/pill/patch/healingpowder, /obj/item/reagent_containers/pill/patch/healpoultice))
+	STR.cant_hold = typecacheof(list(/obj/item/reagent_containers/pill/patch/f13/jet, /obj/item/reagent_containers/pill/patch/f13/turbo, /obj/item/reagent_containers/pill/patch/f13/healingpowder, /obj/item/reagent_containers/pill/patch/f13/healpoultice))
 
 /obj/item/storage/pill_bottle/AltClick(mob/living/carbon/user)
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
@@ -610,49 +610,3 @@
 	STR.allow_quick_gather = TRUE
 	STR.click_gather = TRUE
 	STR.can_hold = typecacheof(list(/obj/item/reagent_containers/pill, /obj/item/reagent_containers/syringe, /obj/item/dice))
-
-/obj/item/storage/pill_bottle/chem_tin/mentats
-	name = "Mentats"
-	icon_state = "pill_canister_mentats"
-	desc = "Contains pills used to increase intelligence and perception."
-
-/obj/item/storage/pill_bottle/chem_tin/mentats/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/mentat(src)
-
-/obj/item/storage/pill_bottle/chem_tin/fixer
-	name = "Fixer"
-	icon_state = "pill_canister_fixer"
-	desc = "Contains pills used to treat addiction and overdose on other chems."
-
-/obj/item/storage/pill_bottle/chem_tin/fixer/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/fixer(src)
-
-/obj/item/storage/pill_bottle/chem_tin/radx
-	name = "Rad-X"
-	icon_state = "pill_canister_radx"
-	desc = "Contains pills used to treat and prevent radiation and minor toxin damage."
-
-/obj/item/storage/pill_bottle/chem_tin/radx/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/radx(src)
-
-/obj/item/storage/pill_bottle/chem_tin/buffout
-	name = "Buffout"
-	icon_state = "pill_canister_buffout"
-	desc = "Contains pills used to increase muscle mass."
-
-/obj/item/storage/pill_bottle/chem_tin/buffout/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/buffout(src)
-
-//Sprite of Cateye done by Yonsi
-/obj/item/storage/pill_bottle/chem_tin/cateye
-	name = "Cateye"
-	icon_state = "pill_canister_cateye"
-	desc = "Contains pills used to increase one's senses."
-
-/obj/item/storage/pill_bottle/chem_tin/cateye/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/cateye(src)

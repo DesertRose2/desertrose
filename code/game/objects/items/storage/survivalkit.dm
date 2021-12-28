@@ -6,10 +6,10 @@
 
 /obj/item/storage/survivalkit/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/flashlight/flare(src)
-	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/reagent_containers/pill/f13/radx(src)
 
 /obj/item/storage/survivalkit_tribal
 	name = "survival kit"
@@ -19,8 +19,8 @@
 
 /obj/item/storage/survivalkit_tribal/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
-	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/f13/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/f13/healingpowder(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/flashlight/flare/torch(src)
 
@@ -32,10 +32,10 @@
 
 /obj/item/storage/survivalkit_adv/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/flashlight/seclite(src)
-	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/reagent_containers/pill/f13/radx(src)
 
 /obj/item/storage/survivalkit_aid
 	name = "individual first aid kit"
@@ -50,7 +50,7 @@
 
 /obj/item/storage/survivalkit_aid/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
@@ -68,7 +68,7 @@
 
 /obj/item/storage/survivalkit_aid_adv/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super(src)
 	new /obj/item/stack/medical/gauze/adv(src)
 	new /obj/item/stack/medical/suture/medicated(src)
 	new /obj/item/stack/medical/mesh(src)

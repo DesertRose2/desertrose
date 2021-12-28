@@ -258,36 +258,3 @@
 /obj/item/reagent_containers/pill/breast_enlargement
 	name = "breast enlargement pill"
 	list_reagents = list(/datum/reagent/fermi/breast_enlarger = 10)
-
-/obj/item/reagent_containers/pill/mentat
-	name = "Mentat"
-	desc = "A chalky pill that induces increased memory and cognitive functions, as well as heightened perception and creative faculties. \
-	Also known for fixing eye damage and blindness, for some reason."
-	icon_state = "pill20"
-	list_reagents = list(/datum/reagent/medicine/mentat = 10)
-
-/obj/item/reagent_containers/pill/fixer
-	name = "Fixer pill"
-	desc = "A bitter pill that is known to rapidly treat the addictions, withdrawal effects, and other drawbacks of other chemicals. \
-	Side effects include heavy nausea."
-	icon_state = "pill3"
-	list_reagents = list(/datum/reagent/medicine/fixer = 10)
-
-/obj/item/reagent_containers/pill/radx
-	name = "Rad-X pill"
-	desc = "A pill that stabilizes radiation levels and treats small amounts of toxin damage."
-	icon_state = "pill18"
-	list_reagents = list(/datum/reagent/medicine/radx = 20)
-
-/obj/item/reagent_containers/pill/buffout
-	name = "Buffout pill"
-	desc = "A metallic tasting pill that greatly increases bloodflow and builds muscle mass. \
-	Side effects may include sore muscles and increased irritability."
-	icon_state = "buffoutpill"
-	list_reagents = list(/datum/reagent/drug/buffout = 10)
-
-/obj/item/reagent_containers/pill/cateye
-	name = "Cateye pill"
-	desc = "A pill that smells strongly of carrots.. or maybe its fertalizer. It's hard to tell actually."
-	icon_state = "pill18"
-	list_reagents = list(/datum/reagent/medicine/cateye = 10)

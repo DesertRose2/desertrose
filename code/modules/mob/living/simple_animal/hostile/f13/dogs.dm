@@ -22,7 +22,7 @@
 	health = 75
 	faction = list("hostile", "wolf")
 	environment_smash = 0
-	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \
+	butcher_results = list(/obj/item/stack/sheet/animalhide/f13/dog = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)
 	melee_damage_lower = 20
 	melee_damage_upper = 25
@@ -116,6 +116,9 @@
 	health = 75
 	melee_damage_lower = 25
 	melee_damage_upper = 35
+	butcher_results = list(/obj/item/stack/sheet/animalhide/f13/dog = 1, \
+	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1, \
+	/obj/item/stack/sheet/bone = 1)
 
 /mob/living/simple_animal/hostile/wolf/feral_dog/alpha/Aggro()
 	..()

@@ -16,7 +16,7 @@
 
 /obj/item/clothing/neck/mantle/gecko
 	name = "gecko skin mantle"
-	desc = "Made from tanned young gecko hides, too thin to be useful for armor. The small claws are still attached."
+	desc = "Made from young gecko hides, too thin to be useful for armor. The small claws are still attached."
 	icon_state = "gecko"
 
 /obj/item/clothing/neck/mantle/gray
@@ -33,34 +33,6 @@
 	name = "vault-tec overseer's mantle"
 	desc = "This is the overseer's mantle.  Issued by the Vault-tec corporation to easily identify the overseer. This mantle has been passed down from overseer to overseer."
 	icon_state = "overseer"
-
-/obj/item/clothing/neck/mantle/bos
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/mantle/bos/left
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_l"
-
-/obj/item/clothing/neck/mantle/bos/right
-	name = "Brotherhood of Steel shoulder cape"
-	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
-	icon_state = "bosshouldercape_r"
-
-/obj/item/clothing/neck/mantle/bos/paladin
-	name = "Paladin cloak"
-	desc = "This stylish dark navy cloak that is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
-	icon_state = "paladin"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
-	alternate_worn_layer = UNDER_HAIR_LAYER
-
-/obj/item/clothing/neck/mantle/bos/knight
-	name = "Knight mantle"
-	desc = "A Navy blue shoulder covering worn by Brotherhood Knights, a shoulder holster is added for utility."
-	icon_state = "knight"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
 /obj/item/clothing/neck/mantle/ranger
 	name = "NCR ranger cape"
@@ -90,8 +62,8 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 
 /obj/item/clothing/neck/mantle/peltfur
-	name = "warm fur pelt"
-	desc = "A pelt made from bighorner fur."
+	name = "warm fur mantle"
+	desc = "A mantle made from bighorner pelts."
 	icon_state = "peltfur"
 	cold_protection = CHEST|GROIN|ARMS
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)

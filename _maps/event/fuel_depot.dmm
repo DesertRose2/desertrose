@@ -1649,8 +1649,8 @@
 	},
 /area/f13/bunker)
 "zW" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "zX" = (
@@ -1694,7 +1694,7 @@
 /area/f13/bunker)
 "Aw" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1724,8 +1724,8 @@
 /area/f13/bunker)
 "AL" = (
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "AN" = (
@@ -2342,7 +2342,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "JD" = (
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
 /obj/structure/table,
 /turf/open/floor/plasteel/f13{
@@ -3344,8 +3344,8 @@
 /area/f13/bunker)
 "ZF" = (
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ZJ" = (
