@@ -10169,14 +10169,14 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/city)
 "aDU" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair_settler"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "aDV" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair_settler"
 	},
@@ -10234,7 +10234,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "aEf" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair_settler"
 	},
@@ -17079,7 +17079,7 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/ncr)
 "aZV" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/forest)
 "aZW" = (
@@ -17246,7 +17246,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "baB" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -17904,7 +17904,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bcN" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bcO" = (
@@ -17933,7 +17933,7 @@
 	},
 /area/f13/city/museum)
 "bcR" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "bcS" = (
@@ -17985,7 +17985,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/city/museum)
 "bdc" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/machinery/light/small{
@@ -17999,7 +17999,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "bde" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -18068,13 +18068,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bdo" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "bdp" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -19225,13 +19225,13 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/city)
 "bhk" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/forest)
 "bhl" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/snow,
@@ -19588,7 +19588,7 @@
 /turf/open/floor/plating/wooden,
 /area/f13/ruins)
 "bik" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/structure/decoration/clock{
@@ -19613,7 +19613,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bin" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -19712,7 +19712,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "biA" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/gecko,
@@ -19730,7 +19730,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "biD" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -20263,7 +20263,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bjY" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bjZ" = (
@@ -24305,7 +24305,7 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/legion)
 "bwi" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/forest)
 "bwj" = (
@@ -24321,7 +24321,7 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/legion)
 "bwm" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
@@ -24729,7 +24729,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "bxy" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
@@ -26827,7 +26827,7 @@
 /turf/closed/wall/f13/wood/interior,
 /area/f13/klamat)
 "bDe" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	pixel_x = -8
 	},
 /obj/machinery/light/small{
@@ -33941,7 +33941,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bWY" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair_settler"
 	},
@@ -33957,7 +33957,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXa" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXb" = (
@@ -34174,7 +34174,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXO" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bXP" = (
@@ -34330,7 +34330,7 @@
 	},
 /area/f13/wasteland)
 "bYn" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /obj/item/restraints/handcuffs/cable/zipties/used,
 /turf/open/floor/wood/f13/old,
 /area/f13/shack)
@@ -34554,11 +34554,11 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bYU" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bYV" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair_settler"
 	},
@@ -34778,7 +34778,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
 "bZD" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -34842,7 +34842,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bZM" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bZN" = (
@@ -34923,7 +34923,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "caa" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -34946,7 +34946,7 @@
 /turf/open/water,
 /area/f13/shack)
 "cae" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -35737,7 +35737,7 @@
 	desc = "It smells awful.";
 	name = "waste bucket"
 	},
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	desc = "A folding chair, missing half the seat, probably for dropping something through it.";
 	dir = 1
 	},
@@ -35969,7 +35969,7 @@
 	},
 /area/f13/tunnel)
 "cdi" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
@@ -36637,7 +36637,7 @@
 	},
 /area/f13/city)
 "cfo" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/wood{
@@ -36652,7 +36652,7 @@
 	},
 /area/f13/city)
 "cfq" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/wood{
@@ -38818,7 +38818,7 @@
 	},
 /area/f13/caves)
 "hhn" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
@@ -39414,7 +39414,7 @@
 /turf/open/water,
 /area/f13/caves)
 "jfN" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
@@ -42544,7 +42544,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "vWn" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,

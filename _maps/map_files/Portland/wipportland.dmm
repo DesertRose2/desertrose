@@ -115,7 +115,7 @@
 	},
 /area/space)
 "bh" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "bk" = (
@@ -1319,7 +1319,7 @@
 	},
 /area/f13/building)
 "ke" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -1778,7 +1778,7 @@
 	},
 /area/space)
 "mP" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -1978,7 +1978,7 @@
 /obj/effect/decal/remains{
 	icon_state = "remains"
 	},
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -2101,7 +2101,7 @@
 	},
 /area/space)
 "oN" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -2276,7 +2276,7 @@
 	},
 /area/space)
 "qb" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
@@ -2548,7 +2548,7 @@
 	},
 /area/space)
 "rX" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -2758,7 +2758,7 @@
 	},
 /area/space)
 "tu" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -2880,7 +2880,7 @@
 	},
 /area/space)
 "uj" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/structure/decoration/clock{
@@ -2992,7 +2992,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -3249,7 +3249,7 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/building)
 "wG" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "wK" = (
@@ -3383,7 +3383,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "xJ" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -3585,7 +3585,7 @@
 /turf/open/floor/plasteel/blueyellow,
 /area/space)
 "zn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -3929,7 +3929,7 @@
 	},
 /area/space)
 "BF" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -4081,7 +4081,7 @@
 	},
 /area/space)
 "CP" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -4238,7 +4238,7 @@
 /turf/open/indestructible/ground,
 /area/space)
 "DO" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -4474,7 +4474,7 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "FM" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/wood/f13,
@@ -4702,7 +4702,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
 "HA" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -4833,7 +4833,7 @@
 	},
 /area/space)
 "IJ" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13,
@@ -6090,7 +6090,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/space)
 "Sl" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/f13,
 /area/f13/city)
 "Sn" = (
@@ -6624,7 +6624,7 @@
 	},
 /area/space)
 "VU" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"

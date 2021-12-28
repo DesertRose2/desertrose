@@ -2953,7 +2953,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "jV" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
@@ -2965,7 +2965,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "jX" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 8;
 	icon_state = "f13foldupchair"
 	},
@@ -2999,7 +2999,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "kd" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "ke" = (
@@ -3072,7 +3072,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "ks" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#706891"
@@ -3572,7 +3572,7 @@
 	},
 /area/f13/wasteland)
 "lU" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
@@ -3622,7 +3622,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "ma" = (
-/obj/structure/chair/f13foldupchair{
+/obj/structure/chair/folding{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
@@ -3748,7 +3748,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "mu" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
@@ -3756,12 +3756,12 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "mv" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "mw" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /obj/effect/spawner/lootdrop/trash,
 /obj/machinery/light{
 	dir = 4;

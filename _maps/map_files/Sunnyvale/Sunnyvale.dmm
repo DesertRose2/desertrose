@@ -939,7 +939,7 @@
 	},
 /area/f13/klamat)
 "adf" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -950,7 +950,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -1172,14 +1172,14 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "adR" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "adS" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -1309,7 +1309,7 @@
 	},
 /area/f13/legioncamp)
 "aej" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
@@ -1631,7 +1631,7 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "afh" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -1706,7 +1706,7 @@
 	},
 /area/f13/klamat)
 "aft" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -1862,7 +1862,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -2083,7 +2083,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "agA" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -2226,7 +2226,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "agV" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -3420,7 +3420,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "aku" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
@@ -3528,7 +3528,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "akN" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "akO" = (
@@ -6665,7 +6665,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/underground/vault_atrium_upper)
 "atw" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -6675,14 +6675,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "aty" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "atz" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/newscaster{
@@ -7265,7 +7265,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/security/brig)
 "auM" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/power/apc{
@@ -7286,7 +7286,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "auN" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/structure/cable{
@@ -7322,7 +7322,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/mountain)
 "auS" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -11167,7 +11167,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "aDX" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -11177,7 +11177,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aDY" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -11186,7 +11186,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aDZ" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -11237,7 +11237,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/security/checkpoint)
 "aEg" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/structure/cable{
@@ -11572,7 +11572,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/security/checkpoint)
 "aEW" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/camera/autoname{
@@ -11586,7 +11586,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/security/checkpoint)
 "aEY" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/structure/cable{
@@ -13312,7 +13312,7 @@
 	},
 /area/f13/desert)
 "aKa" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/light/small{
@@ -13942,7 +13942,7 @@
 	},
 /area/f13/desert)
 "aLK" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/light/small,
@@ -15816,7 +15816,7 @@
 	},
 /area/f13/sunny_dale)
 "aRr" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aRs" = (
@@ -16188,7 +16188,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aSt" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /obj/machinery/light/small,
@@ -17074,11 +17074,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aUR" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aUS" = (
@@ -17233,7 +17233,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aVn" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /obj/effect/landmark/start/f13/pusher,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
@@ -19623,7 +19623,7 @@
 	},
 /area/f13/sunny_dale)
 "bcd" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -19634,7 +19634,7 @@
 	},
 /area/f13/sunny_dale)
 "bce" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -19980,7 +19980,7 @@
 	},
 /area/f13/sunny_dale)
 "bcY" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -20000,7 +20000,7 @@
 	},
 /area/f13/sunny_dale)
 "bda" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -20009,7 +20009,7 @@
 	},
 /area/f13/sunny_dale)
 "bdb" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -20225,7 +20225,7 @@
 	},
 /area/f13/sunny_dale)
 "bdE" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -20279,7 +20279,7 @@
 	},
 /area/f13/sunny_dale)
 "bdL" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -20289,7 +20289,7 @@
 	},
 /area/f13/sunny_dale)
 "bdM" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -20299,7 +20299,7 @@
 	},
 /area/f13/sunny_dale)
 "bdN" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -20308,7 +20308,7 @@
 	},
 /area/f13/sunny_dale)
 "bdO" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -20454,7 +20454,7 @@
 	},
 /area/f13/sunny_dale)
 "bei" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -21401,7 +21401,7 @@
 	},
 /area/f13/desert)
 "bhb" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -21520,14 +21520,14 @@
 	},
 /area/f13/desert)
 "bhv" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bhw" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -21549,7 +21549,7 @@
 	},
 /area/f13/raider_mall)
 "bhz" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -21564,7 +21564,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bhB" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -21605,7 +21605,7 @@
 	},
 /area/f13/raider_mall)
 "bhF" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -21614,7 +21614,7 @@
 	},
 /area/f13/raider_mall)
 "bhG" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -21956,7 +21956,7 @@
 	},
 /area/f13/desert)
 "biJ" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -21978,7 +21978,7 @@
 	},
 /area/f13/raider_mall)
 "biL" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -21994,7 +21994,7 @@
 	},
 /area/f13/raider_mall)
 "biN" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -23305,7 +23305,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/raider_mall)
 "bmu" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -24577,7 +24577,7 @@
 	},
 /area/f13/sunny_dale)
 "bqf" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bqg" = (
@@ -24649,14 +24649,14 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "bqr" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bqs" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -24730,7 +24730,7 @@
 	},
 /area/f13/sunny_dale)
 "bqD" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -24837,7 +24837,7 @@
 	},
 /area/f13/desert)
 "bqU" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -25221,7 +25221,7 @@
 	},
 /area/f13/ncr_main)
 "brX" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
@@ -25498,7 +25498,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bsI" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -25726,7 +25726,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr_main)
 "btt" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -25736,7 +25736,7 @@
 	},
 /area/f13/desert)
 "btu" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -25753,7 +25753,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "btw" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -27164,7 +27164,7 @@
 	},
 /area/f13/prison)
 "bxu" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -27275,14 +27275,14 @@
 	},
 /area/f13/powerplant)
 "bxL" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
 /area/f13/powerplant)
 "bxM" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -27340,7 +27340,7 @@
 /turf/open/floor/plating,
 /area/f13/powerplant)
 "bxU" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -27350,7 +27350,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bxV" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -27361,7 +27361,7 @@
 	},
 /area/f13/desert)
 "bxW" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -27399,7 +27399,7 @@
 	},
 /area/f13/powerplant)
 "byb" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /obj/effect/decal/cleanable/blood/old,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
@@ -27449,7 +27449,7 @@
 /turf/open/floor/plating,
 /area/f13/powerplant)
 "byj" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
@@ -27474,7 +27474,7 @@
 	},
 /area/f13/prison)
 "byn" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /turf/open/floor/plasteel/f13{
 	icon_state = "dark"
 	},
@@ -28299,7 +28299,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
 "bAS" = (
-/obj/structure/chair/stool/f13stool,
+/obj/structure/chair/stool/retro,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -30626,7 +30626,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/prison)
 "bHC" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /turf/open/floor/wood/f13/old{
@@ -30761,13 +30761,13 @@
 	},
 /area/f13/prison)
 "bHY" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/prison)
 "bHZ" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /turf/open/floor/wood/f13/old{
@@ -30782,7 +30782,7 @@
 	},
 /area/f13/sunny_dale)
 "bIb" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	name = "stool"
 	},
 /turf/open/floor/wood/f13/old{
@@ -31791,7 +31791,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "bLd" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "bLe" = (
@@ -34128,7 +34128,7 @@
 	},
 /area/f13/ncr_main)
 "bRQ" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -34138,7 +34138,7 @@
 	},
 /area/f13/ncr_main)
 "bRR" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -34148,7 +34148,7 @@
 	},
 /area/f13/ncr_main)
 "bRS" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
