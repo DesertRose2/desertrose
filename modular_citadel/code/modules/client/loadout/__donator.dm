@@ -366,11 +366,6 @@
 	path = /obj/item/storage/box/large/custom_kit/deth
 	ckeywhitelist = list("deathslayer2481")
 
-/datum/gear/donator/kits/katiemorgan/
-	name = "Katie Morgan's belongings"
-	path = /obj/item/storage/box/large/custom_kit/katiemorgan/
-	ckeywhitelist = list("idiocityinc")
-
 /datum/gear/donator/kits/bryanmonroe
 	name = "Bryan ''Aranesp'' Monroe's belongings"
 	path = /obj/item/storage/box/large/custom_kit/bryanmonroe
@@ -391,11 +386,6 @@
 	path = /obj/item/storage/box/large/custom_kit/thebatsman
 	ckeywhitelist = list("elizabethdame")
 
-/datum/gear/donator/kits/parkerwright
-	name = "Parker Wright's belongings"
-	path = /obj/item/storage/box/large/custom_kit/parkerwright
-	ckeywhitelist = list("kayzach")
-
 /datum/gear/donator/kits/houndmaster
 	name = "Canis' belongings"
 	path = /obj/item/storage/box/large/custom_kit/houndmaster
@@ -410,11 +400,6 @@
 	name = "Griffith Clydesdale's belongings"
 	path = /obj/item/storage/box/large/custom_kit/holhorse
 	ckeywhitelist = list("landoorando")
-
-/datum/gear/donator/kits/shi
-	name = "Daiyu Liu's belongings"
-	path = /obj/item/storage/box/large/custom_kit/shi
-	ckeywhitelist = list("muhsollini")
 
 /datum/gear/donator/kits/montana
 	name = "Montana's belongings"
@@ -728,3 +713,43 @@
 						"hallow96",
 						"sm45hb0t",
 						"crailek")
+
+/datum/gear/donator/recon
+	name = "recon pack"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/storage/box/large/custom_kit/recon
+	ckeywhitelist = list(
+							"kayzach",
+							"pisshole",
+							"allakai",
+							"thegreatcoward",
+							"muhsollini"
+		)
+	restricted_roles = list(
+							"NCR Ranger Sergeant",
+							"NCR Ranger",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Trooper",
+							"NCR Off-Duty"
+						)
+
+/datum/gear/donator/scout
+	name = "scout pack"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/storage/box/large/custom_kit/scout
+	ckeywhitelist = list(
+							"pisshole",
+							"idiocityinc",
+							"allakai",
+							"thegreatcoward",
+							"muhsollini"							
+		)
+	restricted_roles = list(
+							"NCR Ranger Sergeant",
+							"NCR Ranger",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Trooper",
+							"NCR Off-Duty"
+		)
