@@ -3426,8 +3426,7 @@
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gibtorso"
 	},
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/f13/human,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
@@ -19057,7 +19056,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "mJZ" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "mKc" = (

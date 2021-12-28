@@ -8,7 +8,7 @@
 	no_equip = list(SLOT_BACK)
 	blacklisted = 1
 	limbs_id = "human"
-	skinned_type = /obj/item/stack/sheet/animalhide/human
+	skinned_type = /obj/item/stack/sheet/animalhide/f13/human
 	species_type = "human" //they're a kind of human
 
 	var/datum/action/innate/flight/fly

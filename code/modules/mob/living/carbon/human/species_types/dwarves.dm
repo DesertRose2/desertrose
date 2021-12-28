@@ -12,7 +12,7 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 	use_skintones = USE_SKINTONES_GRAYSCALE_CUSTOM
 	say_mod = "bellows" //high energy, EXTRA BIOLOGICAL FUEL
 	damage_overlay_type = "human"
-	skinned_type = /obj/item/stack/sheet/animalhide/human
+	skinned_type = /obj/item/stack/sheet/animalhide/f13/human
 	liked_food = ALCOHOL | MEAT | DAIRY //Dwarves like alcohol, meat, and dairy products.
 	disliked_food = JUNKFOOD | FRIED //Dwarves hate foods that have no nutrition other than alcohol.
 	mutant_organs = list(/obj/item/organ/dwarfgland) //Dwarven alcohol gland, literal gland warrior

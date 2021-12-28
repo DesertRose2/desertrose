@@ -152,6 +152,6 @@
 	always_availible = FALSE
 	reqs = list(
 			/obj/item/stack/sheet/mineral/wood = 10,
-			/obj/item/stack/sheet/animalhide/brahmin = 2)
+			/obj/item/stack/sheet/animalhide/f13/brahmin = 2)
 	result = /obj/item/shield/tribal
 	category = CAT_PRIMAL

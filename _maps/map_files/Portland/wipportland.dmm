@@ -73,7 +73,6 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "aJ" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "aK" = (
@@ -100,7 +99,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "aX" = (
-/obj/structure/mirelurkegg,
 /mob/living/simple_animal/hostile/mirelurk/baby,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
@@ -2160,7 +2158,6 @@
 /turf/open/floor/plating/f13/inside,
 /area/space)
 "pi" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/dirt,
 /area/space)
 "pj" = (
@@ -2195,7 +2192,6 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/space)
 "pq" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/radiation)
 "ps" = (
@@ -3811,7 +3807,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/space)
 "AP" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "AQ" = (
@@ -3862,7 +3858,6 @@
 /turf/open/floor/plasteel/blueyellow,
 /area/space)
 "Bi" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "Bj" = (

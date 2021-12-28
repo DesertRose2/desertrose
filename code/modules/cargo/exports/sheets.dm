@@ -20,13 +20,6 @@
 	unit_name = "monkey hide"
 	export_types = list(/obj/item/stack/sheet/animalhide/monkey)
 
-/datum/export/stack/skin/human
-	cost = 70
-	export_category = EXPORT_CONTRABAND
-	unit_name = "piece"
-	message = "of human skin"
-	export_types = list(/obj/item/stack/sheet/animalhide/human)
-
 /datum/export/stack/skin/goliath_hide
 	cost = 160
 	unit_name = "goliath hide"
@@ -38,21 +31,10 @@
 	unit_name = "cat hide"
 	export_types = list(/obj/item/stack/sheet/animalhide/cat)
 
-/datum/export/stack/skin/corgi
-	cost = 140
-	export_category = EXPORT_CONTRABAND
-	unit_name = "corgi hide"
-	export_types = list(/obj/item/stack/sheet/animalhide/corgi)
-
 /datum/export/stack/skin/lizard
 	cost = 50
 	unit_name = "lizard hide"
 	export_types = list(/obj/item/stack/sheet/animalhide/lizard)
-
-/datum/export/stack/skin/gondola
-	cost = 1000
-	unit_name = "gondola hide"
-	export_types = list(/obj/item/stack/sheet/animalhide/gondola)
 
 /datum/export/stack/skin/xeno
 	cost = 300
