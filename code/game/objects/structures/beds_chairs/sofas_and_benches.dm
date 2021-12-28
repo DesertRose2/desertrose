@@ -138,13 +138,13 @@
 /obj/structure/chair/sofa/post_unbuckle_mob()
 	. = ..()
 	update_armrest()
-
+//---
 /obj/structure/chair/sofa/left
 	icon_state = "sofaend_left"
-
+//---
 /obj/structure/chair/sofa/right
 	icon_state = "sofaend_right"
-
+//---
 /obj/structure/chair/sofa/corner
 	icon_state = "sofa_corner"
 
@@ -152,39 +152,29 @@
 	return
 
 
-// Credit for the sprites goes to CEV Eris. The sprites were taken from Hyper Station and modified to fit with armrests which were also added.
 // ----------
 // FANCY SOFA 
 // ----------
+// Credit for the sprites goes to CEV Eris. The sprites were taken from Hyper Station and modified to fit with armrests which were also added.
 
 /obj/structure/chair/sofa/fancy
 	name = "fancy sofa"
 	desc = "Soft, cushy and cozy. These sofas are a rare luxury in the wasteland."
 	icon_state = "fancy_sofamiddle"
-
+//---
 /obj/structure/chair/sofa/left/fancy
-	icon_state = "fancy_sofaend_left"
-
-/obj/structure/chair/sofa/right/fancy
-	icon_state = "fancy_sofaend_right"
-
-/obj/structure/chair/sofa/corner/fancy
-	icon_state = "fancy_sofacorner"
-
-
-// OBSOLETE stuff, incorrect pathing for the sides to inherit the overlays bla bla, replace with 
-/obj/structure/chair/sofa/corp
 	name = "fancy sofa"
 	desc = "Soft, cushy and cozy. These sofas are a rare luxury in the wasteland."
-	icon_state = "fancy_sofamiddle"
-
-/obj/structure/chair/sofa/corp/left
 	icon_state = "fancy_sofaend_left"
-
-/obj/structure/chair/sofa/corp/right
+//---
+/obj/structure/chair/sofa/right/fancy
+	name = "fancy sofa"
+	desc = "Soft, cushy and cozy. These sofas are a rare luxury in the wasteland."
 	icon_state = "fancy_sofaend_right"
-
-/obj/structure/chair/sofa/corp/corner
+//---
+/obj/structure/chair/sofa/corner/fancy
+	name = "fancy sofa"
+	desc = "Soft, cushy and cozy. These sofas are a rare luxury in the wasteland."
 	icon_state = "fancy_sofa_corner"
 
 
@@ -354,16 +344,9 @@
 	icon_state = "bench_padded_edge_overlay"
 
 
-// OBSOLETE
-/obj/structure/chair/bench
-	name = "bench"
-	desc = "A classic wooden bench. It has some dried wax on it..."
-	icon = 'icons/fallout/objects/furniture/sofas_and_benches.dmi'
-	icon_state = "church"
-	item_chair = null
-	buildstacktype = /obj/item/stack/sheet/mineral/wood
 
-//OBSOLETE replace with booth_left
+
+//OBSOLETE replace with /obj/structure/chair/booth_left
 /obj/structure/chair/left
 	name = "booth"
 	desc = "A diner-styled end booth."
@@ -372,22 +355,7 @@
 	item_chair = null
 	var/mutable_appearance/overlay
 
-/obj/structure/chair/left/proc/update_overlay()
-		add_overlay(overlay)
-
-/obj/structure/chair/left/Initialize()
-	overlay = GetOverlay()
-	overlay.layer = ABOVE_ALL_MOB_LAYER
-	return ..()
-
-/obj/structure/chair/left/Destroy()
-	QDEL_NULL(overlay)
-	return ..()
-
-/obj/structure/chair/left/proc/GetOverlay()
-	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "booth_leftend_overlay")
-
-//OBSOLETE replace with booth_middle
+//OBSOLETE replace with /obj/structure/chair/booth_middle
 /obj/structure/chair/middle
 	name = "booth"
 	desc = "A diner-styled middle booth."
@@ -396,46 +364,29 @@
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	item_chair = null
-	var/mutable_appearance/overlay
 
-/obj/structure/chair/middle/proc/update_overlay()
-		add_overlay(overlay)
-
-/obj/structure/chair/middle/Initialize()
-	overlay = GetOverlay()
-	overlay.layer = ABOVE_ALL_MOB_LAYER
-	return ..()
-
-/obj/structure/chair/middle/Destroy()
-	QDEL_NULL(overlay)
-	return ..()
-
-/obj/structure/chair/middle/proc/GetOverlay()
-	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "booth_middle_overlay")
-
-
-//OBSOLETEeplace with booth_right
+//OBSOLETEeplace with /obj/structure/chair/booth_right
 /obj/structure/chair/right
 	name = "booth"
 	desc = "A diner-styled end booth."
 	icon = 'icons/fallout/objects/furniture/sofas_and_benches.dmi'
 	icon_state = "booth_rightend"
-	resistance_flags = FLAMMABLE
-	max_integrity = 70
 	item_chair = null
-	var/mutable_appearance/overlay
 
-/obj/structure/chair/right/proc/update_overlay()
-		add_overlay(overlay)
+// OBSOLETE ---> /obj/structure/chair/sofa/fancy 
+/obj/structure/chair/sofa/corp
+	name = "fancy sofa"
+	desc = "Soft, cushy and cozy. These sofas are a rare luxury in the wasteland."
+	icon_state = "fancy_sofamiddle"
 
-/obj/structure/chair/right/Initialize()
-	overlay = GetOverlay()
-	overlay.layer = ABOVE_ALL_MOB_LAYER
-	return ..()
+// OBSOLETE ----> /obj/structure/chair/sofa/left/fancy
+/obj/structure/chair/sofa/corp/left 
+	icon_state = "fancy_sofaend_left"
 
-/obj/structure/chair/right/Destroy()
-	QDEL_NULL(overlay)
-	return ..()
+// OBSOLETE ----> /obj/structure/chair/sofa/right/fancy
+/obj/structure/chair/sofa/corp/right
+	icon_state = "fancy_sofaend_right"
 
-/obj/structure/chair/right/proc/GetOverlay()
-	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "booth_rightend_overlay")
+// OBSOLETE ----> /obj/structure/chair/sofa/corner/fancy
+/obj/structure/chair/sofa/corp/corner
+	icon_state = "fancy_sofa_corner"

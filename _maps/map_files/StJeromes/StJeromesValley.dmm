@@ -34147,7 +34147,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXK" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/structure/curtain{
 	color = "#D2691E";
 	pixel_x = -30
@@ -34155,7 +34155,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXL" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bXM" = (
@@ -36686,7 +36686,7 @@
 	},
 /area/f13/city)
 "cfv" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4;
 	icon_state = "booth_leftend"
 	},
@@ -36736,7 +36736,7 @@
 	},
 /area/f13/city)
 "cfB" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	icon_state = "booth_middle";
 	dir = 4
 	},

@@ -470,7 +470,7 @@
 	},
 /area/f13/brotherhood/leisure)
 "arr" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -479,7 +479,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
@@ -2031,7 +2031,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/tunnel)
 "brA" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -4080,7 +4080,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cNb" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -6645,7 +6645,7 @@
 	},
 /area/f13/legion)
 "ewq" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -6850,7 +6850,7 @@
 	},
 /area/f13/brotherhood/medical)
 "eDy" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -7066,7 +7066,7 @@
 	},
 /area/f13/tunnel)
 "eKU" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -7968,7 +7968,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
 "foE" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -8092,7 +8092,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /obj/structure/railing{
@@ -11129,7 +11129,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /obj/structure/railing{
@@ -11892,7 +11892,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -17669,7 +17669,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
@@ -19274,7 +19274,7 @@
 	},
 /area/f13/legion)
 "mQV" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -19397,7 +19397,7 @@
 	},
 /area/f13/tunnel)
 "mUv" = (
-/obj/structure/chair/middle,
+/obj/structure/chair/booth_middle,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -19905,7 +19905,7 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -21495,7 +21495,7 @@
 	},
 /area/f13/tunnel)
 "ooV" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -26355,7 +26355,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -26445,7 +26445,7 @@
 	},
 /area/f13/tunnel)
 "rpI" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
@@ -32529,7 +32529,7 @@
 	},
 /area/f13/bunker)
 "vaW" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -33511,7 +33511,7 @@
 	},
 /area/f13/clinic)
 "vED" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,

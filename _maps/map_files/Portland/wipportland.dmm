@@ -4468,7 +4468,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/space)
 "FL" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -5942,11 +5942,11 @@
 	},
 /area/f13/desert)
 "Rh" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /turf/open/floor/wood,
 /area/f13/city)
 "Rl" = (
-/obj/structure/chair/middle,
+/obj/structure/chair/booth_middle,
 /turf/open/floor/wood,
 /area/f13/city)
 "Rn" = (
@@ -6018,7 +6018,7 @@
 /turf/open/floor/f13,
 /area/space)
 "RJ" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/wood,
 /area/f13/city)
 "RM" = (
@@ -6209,7 +6209,7 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "Td" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -6325,7 +6325,7 @@
 	},
 /area/f13/wasteland)
 "TT" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /turf/open/floor/wood,

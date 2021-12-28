@@ -3160,7 +3160,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kH" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4;
 	icon_state = "booth_leftend"
 	},
@@ -3173,7 +3173,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "kJ" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8;
 	icon_state = "booth_rightend"
 	},
@@ -3186,7 +3186,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "kL" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4;
 	icon_state = "booth_leftend"
 	},
@@ -3198,7 +3198,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "kN" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8;
 	icon_state = "booth_rightend"
 	},
@@ -3265,7 +3265,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "kY" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4;
 	icon_state = "booth_rightend"
 	},
@@ -3281,7 +3281,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "la" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8;
 	icon_state = "booth_leftend"
 	},
@@ -3289,7 +3289,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "lb" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4;
 	icon_state = "booth_rightend"
 	},
@@ -3304,7 +3304,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "ld" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8;
 	icon_state = "booth_leftend"
 	},
