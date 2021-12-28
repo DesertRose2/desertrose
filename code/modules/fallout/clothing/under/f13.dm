@@ -228,6 +228,20 @@
 	item_state = "shiny"
 	item_color = "shiny"
 
+/obj/item/clothing/under/f13/scav
+	name = "scavvers outfit"
+	desc = "A rather minimilistic outfit with large pockets and a simple belt."
+	icon_state = "minimalist_scav"
+	item_state = "minimalist_scav"
+	item_color = "minimalist_scav"
+
+/obj/item/clothing/under/f13/female/scav
+	name = "scavvers outfit"
+	desc = "A rather minimilistic outfit with a simple belt."
+	icon_state = "minimalist_scav"
+	item_state = "minimalist_scav"
+	item_color = "minimalist_scav"
+
 /obj/item/clothing/under/f13/merca
 	name = "merc outfit"
 	desc = "A mercenary ragtag outfit."
@@ -350,6 +364,20 @@
 	icon_state = "raiderrags"
 	item_state = "raiderrags"
 	item_color = "raiderrags"
+
+/obj/item/clothing/under/f13/raiderscav
+	name = "raider scav outfit"
+	desc = "A torn up red shirt and grey jeans with rather large pockets, perfect for hauling a hand home for your next meal."
+	icon_state = "raider_scav"
+	item_state = "raider_scav"
+	item_color = "raider_scav"
+
+/obj/item/clothing/under/f13/female/raiderscav
+	name = "raider scav outfit"
+	desc = "A cropped, red denim jacket with half a sleeve missing alongside brown leggings with one leg repaired with a fishnet stocking."
+	icon_state = "raider_scav_f"
+	item_state = "raider_scav_f"
+	item_color = "raider_scav_f"
 
 /obj/item/clothing/under/f13/khan
 	name = "great khan uniform"
