@@ -144,7 +144,7 @@
 
 
 // ------------------
-// MOURNING DUST
+// MOURNING DUST   (should be remade to a patch instead of stackable to be in line with other meds at some point)
 // ------------------
 
 /obj/item/stack/medical/mourning
