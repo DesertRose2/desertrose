@@ -1647,7 +1647,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault)
 "aew" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault)
 "aex" = (
@@ -2135,7 +2135,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2179,7 +2179,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault)
 "afX" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -2274,7 +2274,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault)
 "agh" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2286,7 +2286,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault)
 "agi" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2470,7 +2470,7 @@
 	},
 /area/f13/brotherhood)
 "agO" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2486,7 +2486,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault)
 "agR" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -2765,7 +2765,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault)
 "ahH" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2781,7 +2781,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault)
 "ahJ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -3104,7 +3104,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -12413,7 +12413,7 @@
 	},
 /area/f13/ncr)
 "aKS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -12620,7 +12620,7 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/ncr)
 "aLH" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -12776,7 +12776,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/ncr)
 "aMf" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -41488,7 +41488,7 @@
 	},
 /area/f13/sewer)
 "skF" = (
-/obj/structure/chair/f13chair1,
+/obj/structure/chair,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/sewer)
 "slU" = (

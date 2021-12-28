@@ -20007,7 +20007,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
 "gus" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -45944,7 +45944,7 @@
 	},
 /area/f13/building)
 "owq" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/carpet/blue,
@@ -48476,7 +48476,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "pmC" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -49053,7 +49053,7 @@
 	},
 /area/f13/wasteland)
 "pwy" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -50170,7 +50170,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pNr" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -53454,7 +53454,7 @@
 	},
 /area/f13/wasteland)
 "qQe" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -57273,7 +57273,7 @@
 /turf/open/floor/plasteel/shuttle,
 /area/f13/wasteland)
 "sfb" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -57330,7 +57330,7 @@
 	},
 /area/f13/building)
 "sfU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -61746,7 +61746,7 @@
 	},
 /area/f13/building)
 "txC" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"

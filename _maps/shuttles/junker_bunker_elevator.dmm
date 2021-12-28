@@ -3,7 +3,7 @@
 /turf/open/floor/engine,
 /area/shuttle/junker_bunker_elevator)
 "d" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/engine,
 /area/shuttle/junker_bunker_elevator)
 "x" = (

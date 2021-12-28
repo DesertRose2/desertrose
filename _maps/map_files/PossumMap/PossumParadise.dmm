@@ -1844,7 +1844,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -1970,7 +1970,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault/medical/breakroom)
 "agh" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2306,7 +2306,7 @@
 	},
 /area/f13/vault/medical/chemistry)
 "ahn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2317,7 +2317,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/brotherhood)
 "ahp" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -2662,7 +2662,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -4712,7 +4712,7 @@
 	},
 /area/construction/mining)
 "aoi" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault/diner)
 "aoj" = (
@@ -5847,7 +5847,7 @@
 /turf/closed/wall,
 /area/f13/tcoms)
 "arB" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -6214,14 +6214,14 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "asR" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault/diner)
 "asS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},

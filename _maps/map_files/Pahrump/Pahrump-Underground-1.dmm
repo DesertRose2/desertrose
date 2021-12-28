@@ -255,7 +255,7 @@
 /turf/open/floor/plasteel,
 /area/f13/tunnel)
 "agc" = (
-/obj/structure/chair/stool/bar/alien,
+/obj/structure/chair/stool/alien,
 /turf/open/floor/plasteel/dark,
 /area/f13/tunnel)
 "agf" = (

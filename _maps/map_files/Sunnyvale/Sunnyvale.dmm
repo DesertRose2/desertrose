@@ -188,7 +188,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/desert)
 "aaL" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -613,7 +613,7 @@
 	},
 /area/f13/legioncamp)
 "ace" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -674,7 +674,7 @@
 	},
 /area/f13/legioncamp)
 "ack" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -971,7 +971,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "adk" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -999,7 +999,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "adp" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -1126,7 +1126,7 @@
 	},
 /area/f13/klamat)
 "adI" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -1303,7 +1303,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "aei" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "dark"
 	},
@@ -1582,7 +1582,7 @@
 	},
 /area/f13/desert)
 "aeZ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -2007,7 +2007,7 @@
 	},
 /area/f13/klamat/mine)
 "agn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2021,7 +2021,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "agp" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -3007,7 +3007,7 @@
 /turf/closed/wall/r_wall,
 /area/f13/deepmine)
 "ajc" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -3027,7 +3027,7 @@
 	},
 /area/f13/deepmine)
 "aje" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -5567,7 +5567,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/underground/overseer_office)
 "aqN" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -6381,14 +6381,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "asP" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/hallway/secondary/exit)
 "asQ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -7096,7 +7096,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/crew_quarters/heads/hos)
 "auy" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -7205,7 +7205,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/crew_quarters/heads/hop)
 "auH" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -7301,7 +7301,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "auP" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -7641,7 +7641,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "avz" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -7865,7 +7865,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side,
 /area/f13/underground/vault_atrium_upper)
 "awb" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -7969,7 +7969,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/underground/vault_atrium_upper)
 "awq" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -8254,7 +8254,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/quartermaster/storage)
 "awP" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -8269,7 +8269,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/underground/vault_atrium_upper)
 "awS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -9210,7 +9210,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/quartermaster/qm)
 "azk" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -9418,7 +9418,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/quartermaster/qm)
 "azK" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/quartermaster/qm)
 "azL" = (
@@ -9435,7 +9435,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/science/xenobiology)
 "azO" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/landmark/start/f13/vaultdoctor,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
@@ -9495,7 +9495,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/crew_quarters/heads/cmo)
 "azU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -9510,7 +9510,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/crew_quarters/heads/cmo)
 "azW" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -10236,7 +10236,7 @@
 /turf/open/floor/plating,
 /area/f13/underground/vault_atrium_upper)
 "aBF" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -10353,7 +10353,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/medical/medbay/central)
 "aBU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -10464,7 +10464,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/medical/medbay/central)
 "aCj" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -10621,7 +10621,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aCD" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -10720,7 +10720,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aCS" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
@@ -10866,7 +10866,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aDn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -10992,7 +10992,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aDD" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -11504,7 +11504,7 @@
 /area/f13/desert)
 "aEO" = (
 /obj/machinery/light,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -11521,7 +11521,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aEQ" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -12213,7 +12213,7 @@
 	},
 /area/f13/desert)
 "aGL" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
 	},
@@ -12235,7 +12235,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/medical/medbay/central)
 "aGO" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greendirtysolid"
@@ -12323,7 +12323,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -12409,13 +12409,13 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
 	},
 /area/f13/underground/enclave_base)
 "aHp" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
@@ -12634,7 +12634,7 @@
 	},
 /area/f13/sunny_dale)
 "aHX" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -12671,8 +12671,8 @@
 	},
 /area/f13/den)
 "aId" = (
-/obj/structure/chair/f13chair2,
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
 	},
@@ -12683,7 +12683,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aIf" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -13005,7 +13005,7 @@
 	},
 /area/f13/sunny_dale)
 "aJf" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -13142,7 +13142,7 @@
 /turf/open/floor/plasteel/stairs/old,
 /area/f13/desert)
 "aJB" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -13161,7 +13161,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aJD" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -13220,7 +13220,7 @@
 	},
 /area/f13/desert)
 "aJL" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -13414,7 +13414,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aKp" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /mob/living/simple_animal/hostile/handy/gutsy{
 	a_intent = "harm";
 	name = "\improper Mister Gutsy"
@@ -13424,7 +13424,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aKq" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -13631,7 +13631,7 @@
 	},
 /area/f13/sunny_dale)
 "aKS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -13712,7 +13712,7 @@
 	},
 /area/f13/den)
 "aLf" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -13820,7 +13820,7 @@
 	},
 /area/f13/sunny_dale)
 "aLv" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -14264,7 +14264,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "aMH" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aMI" = (
@@ -14308,7 +14308,7 @@
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/den)
 "aMQ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -14325,7 +14325,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aMT" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -14442,7 +14442,7 @@
 /area/f13/underground/enclave_base)
 "aNo" = (
 /obj/machinery/light/small,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -14471,7 +14471,7 @@
 /area/f13/den)
 "aNt" = (
 /obj/machinery/light/small,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -14906,7 +14906,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aOK" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -14987,7 +14987,7 @@
 	},
 /area/f13/sunny_dale)
 "aOX" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -15011,7 +15011,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -15326,7 +15326,7 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "aPU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -15596,7 +15596,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/prison)
 "aQI" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -15632,7 +15632,7 @@
 	},
 /area/f13/desert)
 "aQO" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -15674,7 +15674,7 @@
 	},
 /area/f13/sunny_dale)
 "aQU" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aQV" = (
@@ -16505,7 +16505,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -16668,7 +16668,7 @@
 	},
 /area/f13/sunny_dale)
 "aTI" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -16677,7 +16677,7 @@
 	},
 /area/f13/sunny_dale)
 "aTJ" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -16760,7 +16760,7 @@
 	},
 /area/f13/sunny_dale)
 "aTU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -16773,7 +16773,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/sunny_dale)
 "aTW" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -16953,7 +16953,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aUz" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -17326,7 +17326,7 @@
 	},
 /area/f13/sunny_dale)
 "aVA" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/sunny_dale)
 "aVB" = (
@@ -17506,7 +17506,7 @@
 	},
 /area/f13/sunny_dale)
 "aWc" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -17579,7 +17579,7 @@
 	},
 /area/f13/sunny_dale)
 "aWm" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -17990,7 +17990,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aXA" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -18967,7 +18967,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bap" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -19116,7 +19116,7 @@
 	},
 /area/f13/sunny_dale)
 "baK" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -21741,7 +21741,7 @@
 	},
 /area/f13/raider_mall)
 "bhX" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -21871,7 +21871,7 @@
 	},
 /area/f13/sunny_dale)
 "bis" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -24139,7 +24139,7 @@
 	},
 /area/f13/powerplant)
 "boS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -24209,7 +24209,7 @@
 	},
 /area/f13/klamat)
 "bpc" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -24612,13 +24612,13 @@
 	},
 /area/f13/ncr_main)
 "bql" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
 /area/f13/ncr_main)
 "bqm" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -24681,7 +24681,7 @@
 	},
 /area/f13/underground/mountain)
 "bqw" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -24769,7 +24769,7 @@
 	},
 /area/f13/desert)
 "bqK" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -25694,7 +25694,7 @@
 	},
 /area/f13/powerplant)
 "btn" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -25713,7 +25713,7 @@
 	},
 /area/f13/raider_mall)
 "btq" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -25771,7 +25771,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bty" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -25941,7 +25941,7 @@
 	},
 /area/f13/ncr_main)
 "btX" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -25950,7 +25950,7 @@
 	},
 /area/f13/ncr_main)
 "btY" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -26313,7 +26313,7 @@
 /turf/open/floor/wood/f13/old/ruinedstraightnorth,
 /area/f13/desert)
 "buR" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -26376,7 +26376,7 @@
 	},
 /area/f13/powerplant)
 "bvb" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -26639,7 +26639,7 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/desert)
 "bvQ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -27517,7 +27517,7 @@
 /area/f13/powerplant)
 "byt" = (
 /obj/effect/decal/cleanable/glass,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -27854,7 +27854,7 @@
 	},
 /area/f13/powerplant)
 "bzw" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -28192,7 +28192,7 @@
 /area/f13/desert)
 "bAz" = (
 /obj/effect/decal/cleanable/blood,
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -28787,7 +28787,7 @@
 	},
 /area/f13/prison)
 "bCl" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -29290,7 +29290,7 @@
 	},
 /area/f13/prison)
 "bDD" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -29299,7 +29299,7 @@
 	},
 /area/f13/prison)
 "bDE" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -29942,7 +29942,7 @@
 	},
 /area/f13/underground/bos)
 "bFz" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -30177,7 +30177,7 @@
 	},
 /area/f13/underground/bos)
 "bGj" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -30797,7 +30797,7 @@
 	},
 /area/f13/underground/mountain)
 "bId" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -31029,7 +31029,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bIJ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -36658,7 +36658,7 @@
 	},
 /area/f13/mountain_bunker)
 "dcA" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -36726,7 +36726,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood)
 "dvE" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -37003,7 +37003,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/sewer)
 "fNZ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -37232,7 +37232,7 @@
 	},
 /area/f13/sunny_dale)
 "hHV" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/f13/wood{
@@ -37441,7 +37441,7 @@
 /turf/open/floor/wood,
 /area/f13/brotherhood)
 "jlf" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -37574,7 +37574,7 @@
 	},
 /area/f13/mountain_bunker)
 "jVI" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -37706,7 +37706,7 @@
 	},
 /area/f13/desert)
 "lkz" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -37968,7 +37968,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr_main)
 "mRP" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 4
 	},
 /turf/open/floor/f13/wood{
@@ -38266,7 +38266,7 @@
 /area/f13/mountain_bunker)
 "plG" = (
 /obj/structure/light_construct,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -38394,7 +38394,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "qaV" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "qcb" = (
@@ -38751,7 +38751,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
 "sBi" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -38792,7 +38792,7 @@
 	},
 /area/f13/sunny_dale)
 "sSJ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -38898,7 +38898,7 @@
 	},
 /area/f13/mountain_bunker)
 "tXg" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -38999,7 +38999,7 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood)
 "uNd" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/ghoul,
@@ -39242,7 +39242,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wEy" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
