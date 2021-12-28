@@ -1289,7 +1289,6 @@
 #include "code\game\objects\structures\beds_chairs\alien_nest.dm"
 #include "code\game\objects\structures\beds_chairs\bed.dm"
 #include "code\game\objects\structures\beds_chairs\chairs.dm"
-#include "code\game\objects\structures\beds_chairs\pew.dm"
 #include "code\game\objects\structures\beds_chairs\sofas_and_benches.dm"
 #include "code\game\objects\structures\crates_lockers\closets.dm"
 #include "code\game\objects\structures\crates_lockers\crates.dm"

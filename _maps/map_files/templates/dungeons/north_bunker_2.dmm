@@ -725,7 +725,7 @@
 /turf/open/floor/grass,
 /area/f13/bunker)
 "nh" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -1944,7 +1944,7 @@
 	},
 /area/f13/bunker)
 "KR" = (
-/obj/structure/chair/sofa/corp,
+/obj/structure/chair/sofa/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -2260,7 +2260,7 @@
 	},
 /area/f13/bunker)
 "QF" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/cobweb,
@@ -2603,7 +2603,7 @@
 	},
 /area/f13/bunker)
 "VU" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,

@@ -1595,7 +1595,7 @@
 	},
 /area/f13/caves)
 "pC" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3394,7 +3394,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "En" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
