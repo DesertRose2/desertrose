@@ -2100,7 +2100,7 @@
 /area/f13/bunker)
 "dsg" = (
 /obj/effect/decal/remains/human,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
@@ -4644,7 +4644,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "hpR" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -5617,7 +5617,7 @@
 /area/f13/bunker)
 "iGQ" = (
 /obj/effect/decal/remains/human,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
@@ -9044,7 +9044,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "nUV" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/waste{
 	icon_state = "goo10"
@@ -9424,7 +9424,7 @@
 /obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
@@ -9762,7 +9762,7 @@
 /obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
@@ -10880,7 +10880,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "qKi" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
 "qKk" = (
@@ -10963,7 +10963,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
 "qOy" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "qOT" = (
@@ -12036,7 +12036,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "syz" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
@@ -13681,7 +13681,7 @@
 	pixel_x = 18;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
