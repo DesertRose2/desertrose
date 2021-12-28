@@ -981,15 +981,22 @@
 
 /obj/item/clothing/head/helmet/f13/mutie/knight
 	name = "mutant crusaders helm"
-	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth. In theory, that last one."
+	desc = "(V) An oversized helmet with a series of slits for the eyes and mouth. In theory, that last one."
 	icon_state = "mutie_knight"
 	item_state = "mutie_knight"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 28, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/mutie/knight/crown
 	name = "mutant monarchs helm"
-	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
+	desc = "(V) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
 	icon_state = "mutie_crown"
 	item_state = "mutie_crown"
+
+/obj/item/clothing/head/helmet/f13/mutie/aviator
+	name = "oversized aviators helmet"
+	desc = "(IV) A rather large aviator's helm with a pair of goggles stitched on top of it for some reason or another."
+	icon_state = "muite_aviator"
+	item_state = "muite_aviator"
 
 /obj/item/clothing/head/helmet/f13/combat/marine/legion/centurion
 	name = "marine combat helmet"
