@@ -290,7 +290,7 @@
 	desc = "Allows you to create a spare Codex Cicatrix if you have lost one, using a bible, human skin, a pen and a pair of eyes."
 	gain_text = "Their hands are at your throat, yet you see them not."
 	cost = 0
-	required_atoms = list(/obj/item/organ/eyes,/obj/item/stack/sheet/animalhide/human,/obj/item/storage/book/bible,/obj/item/pen)
+	required_atoms = list(/obj/item/organ/eyes,/obj/item/stack/sheet/animalhide/f13/human,/obj/item/storage/book/bible,/obj/item/pen)
 	result_atoms = list(/obj/item/forbidden_book)
 	route = "Start"
 

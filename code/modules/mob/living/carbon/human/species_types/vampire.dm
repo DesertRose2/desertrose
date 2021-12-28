@@ -12,7 +12,7 @@
 	mutanttongue = /obj/item/organ/tongue/vampire
 	blacklisted = TRUE
 	limbs_id = "human"
-	skinned_type = /obj/item/stack/sheet/animalhide/human
+	skinned_type = /obj/item/stack/sheet/animalhide/f13/human
 	var/info_text = "You are a <span class='danger'>Vampire</span>. You will slowly but constantly lose blood if outside of a coffin. If inside a coffin, you will slowly heal. You may gain more blood by grabbing a live victim and using your drain ability."
 	species_type = "undead"
 

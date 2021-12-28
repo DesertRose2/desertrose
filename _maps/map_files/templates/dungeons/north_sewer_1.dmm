@@ -4,7 +4,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "aS" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "aT" = (
