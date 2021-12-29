@@ -192,65 +192,58 @@
 	buildstacktype = /obj/item/stack/sheet/mineral/wood
 	buildstackamount = 3
 	item_chair = null
-//---
+
 /obj/structure/chair/pew/left
 	name = "wooden pew end"
 	icon_state = "pewend_left"
 	var/mutable_appearance/leftpewarmrest
+/obj/structure/chair/pew/right
+	name = "wooden pew end"
+	icon_state = "pewend_right"
+	var/mutable_appearance/rightpewarmrest
 
 /obj/structure/chair/pew/left/Initialize()
 	leftpewarmrest = GetLeftPewArmrest()
 	leftpewarmrest.layer = ABOVE_MOB_LAYER
 	return ..()
+/obj/structure/chair/pew/right/Initialize()
+	rightpewarmrest = GetRightPewArmrest()
+	rightpewarmrest.layer = ABOVE_MOB_LAYER
+	return ..()
 
 /obj/structure/chair/pew/left/proc/GetLeftPewArmrest()
-	return mutable_appearance(	icon = 'icons/fallout/objects/furniture/sofas_and_benches.dmi', "pewend_left_overlay")
+	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "pewend_left_overlay")
+/obj/structure/chair/pew/right/proc/GetRightPewArmrest()
+	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "pewend_right_overlay")
 
 /obj/structure/chair/pew/left/Destroy()
 	QDEL_NULL(leftpewarmrest)
+	return ..()
+/obj/structure/chair/pew/right/Destroy()
+	QDEL_NULL(rightpewarmrest)
 	return ..()
 
 /obj/structure/chair/pew/left/post_buckle_mob(mob/living/M)
 	. = ..()
 	update_leftpewarmrest()
+/obj/structure/chair/pew/right/post_buckle_mob(mob/living/M)
+	. = ..()
+	update_rightpewarmrest()
 
 /obj/structure/chair/pew/left/proc/update_leftpewarmrest()
 	if(has_buckled_mobs())
 		add_overlay(leftpewarmrest)
 	else
 		cut_overlay(leftpewarmrest)
-
-/obj/structure/chair/pew/left/post_unbuckle_mob()
-	. = ..()
-	update_leftpewarmrest()
-//---
-/obj/structure/chair/pew/right
-	name = "wooden pew end"
-	icon_state = "pewend_right"
-	var/mutable_appearance/rightpewarmrest
-
-/obj/structure/chair/pew/right/Initialize()
-	rightpewarmrest = GetRightPewArmrest()
-	rightpewarmrest.layer = ABOVE_MOB_LAYER
-	return ..()
-
-/obj/structure/chair/pew/right/proc/GetRightPewArmrest()
-	return mutable_appearance('icons/fallout/objects/furniture/sofas_and_benches.dmi', "pewend_right_overlay")
-
-/obj/structure/chair/pew/right/Destroy()
-	QDEL_NULL(rightpewarmrest)
-	return ..()
-
-/obj/structure/chair/pew/right/post_buckle_mob(mob/living/M)
-	. = ..()
-	update_rightpewarmrest()
-
 /obj/structure/chair/pew/right/proc/update_rightpewarmrest()
 	if(has_buckled_mobs())
 		add_overlay(rightpewarmrest)
 	else
 		cut_overlay(rightpewarmrest)
 
+/obj/structure/chair/pew/left/post_unbuckle_mob()
+	. = ..()
+	update_leftpewarmrest()
 /obj/structure/chair/pew/right/post_unbuckle_mob()
 	. = ..()
 	update_rightpewarmrest()
