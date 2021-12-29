@@ -1,4 +1,4 @@
-//Fallout 13 general indestructible floor directory
+// In this document: various indestructible turfs such as desert sand, gravel.
 
 /turf
 	var/baseturf_icon
@@ -53,7 +53,7 @@
 /turf/open/indestructible/ground/outside
 	turf_light_range = 3
 	turf_light_power = 0.75
-	slowdown = 0.2
+	slowdown = 0.1
 
 #define GRASS_SPONTANEOUS_GROUND 		2
 #define GRASS_WEIGHT_GROUND			4
@@ -66,13 +66,13 @@
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
-	slowdown = 1
+	slowdown = 0.5
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
-	var/pit_sand = 1
+	var/pit_sand = TRUE
 	var/storedindex = 0			//amount of stored items
 	var/mob/living/gravebody	//is there a body in the pit?
 	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
@@ -161,37 +161,157 @@
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
 	slowdown = 0.3
 	flags_1 = CAN_HAVE_NATURE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_DIRT
+	barefootstep = FOOTSTEP_DIRT_BAREFOOT
+	clawfootstep = FOOTSTEP_DIRT
 
 /turf/open/indestructible/ground/outside/dirt/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //same thing here, dirt absorbs the liquid... :(
 
+
+// ----------------
+// DESERT (sonora)
+// ----------------
+
+/turf/open/indestructible/ground/outside/desert/sonora
+	name = "desert"
+	icon = 'icons/fallout/turfs/desert.dmi'
+	icon_state = "desertsmooth"
+
+/turf/open/indestructible/ground/outside/desert/sonora/coarse
+	icon_state = "desertcoarse"
+	slowdown = 0.6
+
+/turf/open/indestructible/ground/outside/desert/sonora/coarse/alt
+	icon_state = "desertcoarse2"
+
+/turf/open/indestructible/ground/outside/desert/sonora/rough
+	icon_state = "desertrough"
+	slowdown = 0.8
+
+/turf/open/indestructible/ground/outside/desert/sonora/cracked
+	icon_state = "desertcracked"
+	slowdown = 1
+
+/obj/effect/overlay/desert
+	name = "desert"
+	icon = 'icons/fallout/turfs/desert.dmi'
+	icon_state = "desertside"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/effect/overlay/desert/corner
+	name = "desert"
+	icon_state = "desertcorner"
+
+
+// --------------
+// DIRT (sonora)
+// --------------
+
+/turf/open/indestructible/ground/outside/dirt/sonora
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirt"
+	slowdown = 0.2
+
+/turf/open/indestructible/ground/outside/dirt/sonora/edge
+	icon_state = "dirt_sandedge"
+
+/turf/open/indestructible/ground/outside/dirt/sonora/corner
+	icon_state = "dirt_sandcorner"
+
+/obj/effect/overlay/dirt
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirtside"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/effect/overlay/dirt/corner
+	icon_state = "dirtcorner"
+
+
+// -----------
+// SANDY DIRT
+// -----------
+
+/turf/open/indestructible/ground/outside/dirt/sandy
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirt_sandy"
+	slowdown = 0.1
+
+/turf/open/indestructible/ground/outside/dirt/sandy/sandedge
+	icon_state = "dirt_sandy_sandedge"
+
+/turf/open/indestructible/ground/outside/dirt/sandy/sandcorner
+	icon_state = "dirt_sandy_sandcorner"
+
+/obj/effect/overlay/dirt/sandy_side
+	icon_state = "dirt_sandyside"
+
+/obj/effect/overlay/dirt/sandy_corner
+	icon_state = "dirt_sandycorner"
+
+
+// ---------------
+// OUTDOOR GRAVEL
+// ---------------
+
+/turf/open/indestructible/ground/outside/gravel
+	name = "gravel"
+	icon = 'icons/fallout/turfs/gravel.dmi'
+	icon_state = "gravel"
+	slowdown = 0.1
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
+
+/turf/open/indestructible/ground/outside/gravel/desertmerge
+	name = "gravel"
+	icon_state = "desertmerge"
+
+/obj/effect/overlay/dirt/gravel
+	name = "gravel"
+	icon = 'icons/fallout/turfs/gravel.dmi'
+	icon_state = "gravelside"
+
+/obj/effect/overlay/dirt/gravel
+	icon_state = "gravelcorner"
+
+
+// ---------------
+// ROAD & SIDEWALK
+// ---------------
+
 /turf/open/indestructible/ground/outside/road
-	name = "\proper road"
+	name = "road"
 	icon_state = "innermiddle"
 	icon = 'icons/fallout/turfs/asphalt.dmi'
-//	step_sounds = list("human" = "erikafootsteps")
+	slowdown = 0
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_ROAD_BAREFOOT
 
 /turf/open/indestructible/ground/outside/sidewalk
-	name = "\proper sidewalk"
+	name = "sidewalk"
 	icon_state = "outermiddle"
 	icon = 'icons/fallout/turfs/sidewalk.dmi'
-//	step_sounds = list("human" = "erikafootsteps")
+	slowdown = 0
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_ROAD_BAREFOOT
 
-/turf/open/indestructible/ground/outside/ruins
-	name = "ruins"
-	desc = "It's just a pile of concrete rubble."
-	icon_state = "rubblefull"
-	icon = 'icons/fallout/turfs/ground.dmi'
-//	step_sounds = list("human" = "erikafootsteps")
 
-/turf/open/indestructible/ground/outside/wood
-	name = "\proper wood planks"
-	icon_state = "housewood1"
-	icon = 'icons/turf/floors.dmi'
-	//	step_sounds = list("human" = "woodfootsteps")
+// -------
+// WATER
+// -------
 
 /turf/open/indestructible/ground/outside/water
 	gender = PLURAL
@@ -200,6 +320,17 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "riverwater_motion"
 	slowdown = 2
+	footstep = FOOTSTEP_WATER
+
+/turf/open/indestructible/ground/outside/water/river_slow
+	name = "river water"
+	icon = 'icons/fallout/turfs/water.dmi'
+	icon_state = "river_slow"
+
+
+// -------
+// SNOW
+// -------
 
 /turf/open/indestructible/ground/outside/snow
 	initial_gas_mix = "o2=22;n2=82;TEMP=285"
@@ -207,6 +338,31 @@
 	icon = 'icons/turf/snow.dmi'
 	desc = "Looks cold."
 	icon_state = "snow"
+	footstep = FOOTSTEP_SNOW
+	barefootstep = FOOTSTEP_SNOW_BAREFOOT
+
+
+// -------
+// OUTDOOR PLANKS
+// -------
+
+/turf/open/indestructible/ground/outside/wood
+	name = "\proper wood planks"
+	icon_state = "housewood1"
+	icon = 'icons/turf/floors.dmi'
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+
+
+// -------
+// RUINS
+// -------
+
+/turf/open/indestructible/ground/outside/ruins
+	name = "ruins"
+	desc = "It's just a pile of concrete rubble."
+	icon_state = "rubblefull"
+	footstep = FOOTSTEP_DIRT
 
 /turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
