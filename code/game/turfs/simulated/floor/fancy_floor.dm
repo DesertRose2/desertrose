@@ -183,9 +183,9 @@
 	initial_gas_mix = FROZEN_ATMOS
 	slowdown = 1.5 //So digging it out paths are useful.
 	bullet_sizzle = TRUE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_SNOW
+	barefootstep = FOOTSTEP_SNOW_BAREFOOT
+	clawfootstep = FOOTSTEP_SNOW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/snow/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
@@ -219,9 +219,9 @@
 	ore_type = /obj/item/stack/ore/glass/basalt
 	turfverb = "dig up"
 	slowdown = 0
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_DIRT
+	barefootstep = FOOTSTEP_DIRT_BAREFOOT
+	clawfootstep = FOOTSTEP_DIRT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/fakebasalt/Initialize()
