@@ -8142,7 +8142,7 @@
 /area/space)
 "KY" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon,
+/obj/item/clothing/suit/hooded/f13/hooded_recon,
 /obj/item/storage/belt/military/reconbandolier,
 /turf/open/floor/wood,
 /area/space)
