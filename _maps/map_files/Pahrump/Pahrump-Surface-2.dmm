@@ -52938,14 +52938,14 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "qHB" = (
-/obj/item/stack/medical/poultice/ten,
+/obj/item/stack/medical/mourning/ten,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/structure/closet{
 	anchored = 1
 	},
-/obj/item/stack/medical/poultice/ten,
+/obj/item/stack/medical/mourning/ten,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},

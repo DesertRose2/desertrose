@@ -437,14 +437,19 @@
 	new /obj/item/reagent_containers/food/snacks/f13/canned/ncr/cranberry_cobbler(src)
 	new /obj/item/storage/box/matches(src)
 	new /obj/item/clothing/mask/cigarette/cigar/ncr(src)
-	
-//	
+
+
+////////////////////////
+// HEALING ITEM BOXES //
+////////////////////////
+
 //Healing Items
 /obj/item/storage/box/medicine
 	name = "box of medication"
 	desc = "A box full of medication. Base item so you shouldn't be seeing this."
-	icon_state = "secbox"
-	illustration = "syringe_f13"
+	icon = 'icons/fallout/objects/storage.dmi'
+	icon_state = "medicinebox"
+	illustration = "overlay_stim"
 
 /obj/item/storage/box/medicine/PopulateContents()
 	for(var/i in 1 to 7)
@@ -454,10 +459,15 @@
 	if(contents.len == 0)
 		qdel(src)
 
-//Powders
+// --------------------
+// HEALING POWDER BOXES
+// --------------------
+
 /obj/item/storage/box/medicine/powder5
 	name = "box of five powders"
 	desc = "A box full of powders."
+	icon_state = "medicinebox_simple"
+	illustration = "overlay_powder"
 
 /obj/item/storage/box/medicine/powder5/PopulateContents()
 	for(var/i in 1 to 5)
@@ -466,16 +476,24 @@
 /obj/item/storage/box/medicine/powder10
 	name = "box of ten powders"
 	desc = "A box full of powders."
+	icon_state = "medicinebox_simple_big"
+	illustration = "overlay_powder"
 
 /obj/item/storage/box/medicine/powder10/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/reagent_containers/pill/patch/f13/healingpowder(src)
-//		
+
+
+// --------------------
+// POULTICE BOXES
+// --------------------
 
 //Poultices
 /obj/item/storage/box/medicine/poultice5
 	name = "box of five poultices"
 	desc = "A box full of poultices."
+	icon_state = "medicinebox_simple"
+	illustration = "overlay_poultice"
 
 /obj/item/storage/box/medicine/poultice5/PopulateContents()
 	for(var/i in 1 to 5)
@@ -484,11 +502,17 @@
 /obj/item/storage/box/medicine/poultice10
 	name = "box of ten poultices"
 	desc = "A box full of poultices."
+	icon_state = "medicinebox_simple_big"
+	illustration = "overlay_poultice"
 
 /obj/item/storage/box/medicine/poultice10/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/reagent_containers/pill/patch/f13/healpoultice(src)
-//
+
+
+// --------------------
+// STIMPACK BOXES
+// --------------------
 
 //Regular Stimpak
 /obj/item/storage/box/medicine/stimpak5
@@ -502,11 +526,16 @@
 /obj/item/storage/box/medicine/stimpak10
 	name = "box of ten stimpaks"
 	desc = "A box full of regular stimpaks."
+	icon_state = "medicinebox_big"
 
 /obj/item/storage/box/medicine/stimpak10/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
-//
+
+
+// --------------------
+// SUPER STIMPACK BOXES
+// --------------------
 
 //Super Stimpaks
 /obj/item/storage/box/medicine/superstimpak5
@@ -520,6 +549,7 @@
 /obj/item/storage/box/medicine/superstimpak10
 	name = "box of ten super stimpaks"
 	desc = "A box full of regular stimpaks."
+	icon_state = "medicinebox_big"
 
 /obj/item/storage/box/medicine/superstimpak10/PopulateContents()
 	for(var/i in 1 to 10)
