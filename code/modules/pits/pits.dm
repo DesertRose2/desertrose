@@ -5,7 +5,7 @@
 /obj/dugpit
 	name = "pit"
 	anchored = 1
-	icon = 'icons/misc/Pit.dmi'
+	icon = 'icons/fallout/turfs/pits.dmi'
 	icon_state = "pit"
 	mouse_opacity = 0
 	layer = HIGH_TURF_LAYER

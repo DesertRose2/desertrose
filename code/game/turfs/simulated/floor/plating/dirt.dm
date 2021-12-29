@@ -8,9 +8,9 @@
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	attachment_holes = FALSE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_DIRT
+	barefootstep = FOOTSTEP_DIRT_BAREFOOT
+	clawfootstep = FOOTSTEP_DIRT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
