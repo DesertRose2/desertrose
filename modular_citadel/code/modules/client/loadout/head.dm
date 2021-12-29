@@ -149,10 +149,11 @@
 /datum/gear/head/ncr_medical_officer
 	name = "NCR medical officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/medical_officer
+	path = /obj/item/clothing/head/beret/medical
 	restricted_desc = "NCR Officers"
 	restricted_roles = list(
 							"NCR Medical Officer",
+							"NCR Combat Medic",
 							"NCR Off-Duty"
 						)
 

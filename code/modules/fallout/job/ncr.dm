@@ -250,7 +250,7 @@ Medical Officer
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT2
-	head 		= /obj/item/clothing/head/beret/medical_officer
+	head 		= /obj/item/clothing/head/beret/medical
 	neck 		= /obj/item/storage/belt/holster/med_lt
 	glasses 	= /obj/item/clothing/glasses/hud/health/f13
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile

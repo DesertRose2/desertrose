@@ -68,10 +68,10 @@
 	icon_state = "ncr_officer"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/head/beret/medical_officer
-	name = "NCR medical officer beret"
-	desc = "(IV) A white beret, issued to medical officers of the NCR."
-	icon_state = "ncr_medical_officer"
+/obj/item/clothing/head/beret/medical
+	name = "NCR medical beret"
+	desc = "(IV) A white beret, issued to medical personel of the NCR."
+	icon_state = "ncr_medical"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_sapper
