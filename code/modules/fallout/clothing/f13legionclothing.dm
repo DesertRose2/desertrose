@@ -212,6 +212,9 @@
 	name = "old leather strips"
 	desc = "Worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
 	icon_state = "legslaveleather"
+	armor = list("tier" = 1, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0)
+	allowed = list(/obj/item/hatchet, /obj/item/scythe, /obj/item/cultivator, /obj/item/shovel)
+
 
 /obj/item/clothing/suit/armor/f13/legion
 	name = "legion armor"
