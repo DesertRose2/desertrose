@@ -336,8 +336,14 @@
 	icon = 'icons/fallout/objects/furniture/sofas_and_benches.dmi'
 	icon_state = "bench_padded_edge_overlay"
 
-
-
+//OBSOLETE
+/obj/structure/chair/bench
+	name = "bench"
+	desc = "A classic wooden bench. It has some dried wax on it..."
+	icon = 'icons/fallout/objects/furniture/sofas_and_benches.dmi'
+	icon_state = "bench"
+	item_chair = null
+	buildstacktype = /obj/item/stack/sheet/mineral/wood
 
 //OBSOLETE replace with /obj/structure/chair/booth_left
 /obj/structure/chair/left
