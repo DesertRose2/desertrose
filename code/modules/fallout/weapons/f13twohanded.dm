@@ -348,6 +348,36 @@
 /obj/item/twohanded/chainsaw/update_icon_state()
 	icon_state = "chainsaw_[on ? "on" : "off"]"
 
+
+//STEEL SAW
+
+/obj/item/twohanded/chainsaw/steelsaw
+	name = "Steel Saw"
+	desc = "A heavy piece of industrial equipment, designed for use within old steel mills."
+	icon_state = "steelsaw_off"
+	force_on = 80
+	force = 20
+	throw_range = 2
+	toolspeed = 4
+	slowdown = 0.5
+
+/obj/item/twohanded/chainsaw/steelsaw/update_icon_state()
+	icon_state = "steelsaw_[on ? "on" : "off"]"
+
+//AUTO-AXE
+
+/obj/item/twohanded/chainsaw/steelsaw/autoaxe
+	name = "auto axe"
+	desc = "A heavily modified steel saw, upgraded using the parts of old car engines."
+	icon_state = "autoaxe_off"
+	force_on = 88
+	throw_range = 1
+	toolspeed = 5
+	slowdown = 0.5
+
+/obj/item/twohanded/chainsaw/steelsaw/autoaxe/update_icon_state()
+	icon_state = "autoaxe_[on ? "on" : "off"]"
+
 //THERMIC LANCE
 /obj/item/twohanded/thermic_lance
 	name = "thermic lance"
