@@ -148,7 +148,7 @@
 /area/f13/ncr)
 "aaD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -713,7 +713,7 @@
 	},
 /area/f13/city)
 "ajz" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/left/fancy{
 	dir = 1
 	},
 /obj/structure/curtain{
@@ -5206,7 +5206,7 @@
 	},
 /area/f13/raiders)
 "bAv" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -5295,7 +5295,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/building)
 "bBG" = (
-/obj/structure/chair/sofa/corp,
+/obj/structure/chair/sofa/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
@@ -5326,7 +5326,7 @@
 	},
 /area/f13/building)
 "bCe" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -7076,7 +7076,7 @@
 	},
 /area/f13/building)
 "ckW" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -7220,7 +7220,7 @@
 /area/f13/building)
 "coN" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/left/fancy{
 	dir = 4;
 	pixel_x = -7
 	},
@@ -7478,7 +7478,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cto" = (
-/obj/structure/chair/sofa/corp/corner,
+/obj/structure/chair/sofa/corner/fancy,
 /turf/open/indestructible/hotelwood,
 /area/f13/building)
 "cts" = (
@@ -7761,7 +7761,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/raiders)
 "cAb" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -8211,7 +8211,7 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "cHt" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 4;
 	pixel_x = -7
 	},
@@ -9342,14 +9342,14 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
 "dby" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4;
 	icon_state = "booth_leftend_blue"
 	},
 /turf/open/floor/plasteel/cmo,
 /area/f13/city)
 "dbz" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -10249,7 +10249,7 @@
 	},
 /area/f13/wasteland)
 "dpa" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10819,7 +10819,7 @@
 	},
 /area/f13/city)
 "dAg" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10902,7 +10902,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "dBE" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -11219,7 +11219,7 @@
 	},
 /area/f13/building)
 "dHU" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/oak,
@@ -15994,7 +15994,7 @@
 "fjm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/broken,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -16353,7 +16353,7 @@
 /area/f13/city)
 "fnp" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
 /area/f13/city)
@@ -16717,7 +16717,7 @@
 	},
 /area/f13/wasteland)
 "fss" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 4
 	},
 /obj/machinery/light{
@@ -16899,7 +16899,7 @@
 /area/f13/wasteland)
 "fxf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
@@ -17027,7 +17027,7 @@
 /area/f13/building)
 "fzE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/oak,
@@ -19734,7 +19734,7 @@
 	},
 /area/f13/building)
 "grf" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
@@ -20007,7 +20007,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
 "gus" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -20224,7 +20224,7 @@
 /area/f13/wasteland)
 "gxF" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -23613,7 +23613,7 @@
 	},
 /area/f13/wasteland)
 "hCk" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/left/fancy{
 	dir = 4;
 	pixel_x = -7
 	},
@@ -23685,7 +23685,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
 "hDu" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/right/fancy,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hDE" = (
@@ -25372,7 +25372,7 @@
 	},
 /area/f13/wasteland)
 "idL" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/left/fancy{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -27055,7 +27055,7 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/building)
 "iBT" = (
-/obj/structure/chair/sofa/corp,
+/obj/structure/chair/sofa/fancy,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -28674,7 +28674,7 @@
 	},
 /area/f13/building)
 "iYY" = (
-/obj/structure/chair/sofa/corp/corner,
+/obj/structure/chair/sofa/corner/fancy,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
 	dir = 4;
@@ -28796,7 +28796,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "jaz" = (
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/fancy{
 	dir = 4;
 	pixel_x = -7
 	},
@@ -30351,7 +30351,7 @@
 	},
 /area/f13/building)
 "jzB" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -33533,7 +33533,7 @@
 	},
 /area/f13/wasteland)
 "kwU" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/right/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
@@ -33564,7 +33564,7 @@
 	},
 /area/f13/wasteland)
 "kxv" = (
-/obj/structure/chair/sofa/corp,
+/obj/structure/chair/sofa/fancy,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "kxw" = (
@@ -33653,7 +33653,7 @@
 	},
 /area/f13/legion)
 "kyT" = (
-/obj/structure/chair/sofa/corp/corner,
+/obj/structure/chair/sofa/corner/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
@@ -35381,7 +35381,7 @@
 	},
 /area/f13/building)
 "kZV" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 1
 	},
 /obj/machinery/light,
@@ -36571,7 +36571,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "lsJ" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -37070,7 +37070,7 @@
 	},
 /area/f13/clinic)
 "lAN" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/ghoul,
@@ -39543,7 +39543,7 @@
 /turf/closed/indestructible/opshuttle,
 /area/f13/building)
 "mrB" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
@@ -40143,7 +40143,7 @@
 	},
 /area/f13/ncr)
 "mAk" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -42526,7 +42526,7 @@
 	},
 /area/f13/building)
 "nrP" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /obj/machinery/light/broken{
@@ -42887,7 +42887,7 @@
 	},
 /area/f13/building)
 "nyS" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -45354,7 +45354,7 @@
 	},
 /area/f13/wasteland)
 "ons" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -45404,7 +45404,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/wasteland)
 "oog" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/left/fancy{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -45944,7 +45944,7 @@
 	},
 /area/f13/building)
 "owq" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/carpet/blue,
@@ -47179,7 +47179,7 @@
 /area/f13/wasteland)
 "oRz" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -47486,7 +47486,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/tunnel)
 "oWk" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8;
 	icon_state = "booth_rightend_blue"
 	},
@@ -47918,7 +47918,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -48260,7 +48260,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -48476,7 +48476,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "pmC" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -49053,7 +49053,7 @@
 	},
 /area/f13/wasteland)
 "pwy" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -50064,7 +50064,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pLh" = (
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/fancy{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -50117,7 +50117,7 @@
 "pLP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -50170,7 +50170,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pNr" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -51832,7 +51832,7 @@
 	},
 /area/f13/wasteland)
 "qoz" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -53454,7 +53454,7 @@
 	},
 /area/f13/wasteland)
 "qQe" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -53490,7 +53490,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "qQQ" = (
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/fancy{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -56274,7 +56274,7 @@
 /area/f13/building)
 "rOM" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/carpet/red,
 /area/f13/city)
 "rPz" = (
@@ -56878,7 +56878,7 @@
 /area/f13/ncr)
 "rZU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -57143,7 +57143,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "sdo" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -57273,7 +57273,7 @@
 /turf/open/floor/plasteel/shuttle,
 /area/f13/wasteland)
 "sfb" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -57330,7 +57330,7 @@
 	},
 /area/f13/building)
 "sfU" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -58183,7 +58183,7 @@
 	},
 /area/f13/building)
 "stn" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
@@ -59008,7 +59008,7 @@
 /turf/open/floor/wood/wood_tiled,
 /area/f13/building)
 "sEX" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -60458,7 +60458,7 @@
 /area/f13/legion)
 "tcC" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/oak,
@@ -60506,7 +60506,7 @@
 /area/f13/building)
 "tdv" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /turf/open/floor/carpet/red,
 /area/f13/city)
 "tdw" = (
@@ -60817,7 +60817,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/city)
 "tiJ" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -61746,7 +61746,7 @@
 	},
 /area/f13/building)
 "txC" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -61894,7 +61894,7 @@
 /area/f13/ncr)
 "tzC" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -64312,7 +64312,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bar)
 "umk" = (
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/right/fancy,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -65887,7 +65887,7 @@
 	},
 /area/f13/wasteland)
 "uSo" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4;
 	icon_state = "booth_rightend_blue"
 	},
@@ -69125,7 +69125,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/chair/sofa/corp/right,
+/obj/structure/chair/sofa/right/fancy,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -69509,7 +69509,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/tribe)
 "vYX" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 4;
 	pixel_x = -7
 	},
@@ -70192,7 +70192,7 @@
 	},
 /area/f13/followers)
 "wmi" = (
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/fancy{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -71300,7 +71300,7 @@
 /turf/open/water,
 /area/f13/city)
 "wFl" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8;
 	icon_state = "booth_leftend_blue"
 	},
@@ -71547,7 +71547,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "wKN" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -74028,7 +74028,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "xym" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -74277,7 +74277,7 @@
 "xDr" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -75891,7 +75891,7 @@
 	},
 /area/f13/wasteland)
 "ybK" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -76112,7 +76112,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/building)
 "ygv" = (
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/fancy{
 	dir = 1
 	},
 /obj/machinery/light{

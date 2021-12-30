@@ -3121,7 +3121,7 @@
 	},
 /area/f13/underground/cave)
 "feS" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3630,7 +3630,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/underground/cave)
 "fTR" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8708,7 +8708,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "nBr" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
@@ -11375,7 +11375,7 @@
 	},
 /area/f13/bunker)
 "rxx" = (
-/obj/structure/chair/middle,
+/obj/structure/chair/booth_middle,
 /obj/item/radio/intercom{
 	frequency = 1361;
 	name = "Vault Intercom";
@@ -12234,7 +12234,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sKJ" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -13388,7 +13388,7 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "uMj" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
