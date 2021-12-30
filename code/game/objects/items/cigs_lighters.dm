@@ -708,12 +708,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/military
 	name = "pre-war military lighter"
-	icon_state = "lighter_overlay_plain"
+	icon_state = "zippo_military"
 	desc = "That's one fancy Zippo!"
 	heat = 2500
-	light_power = 5
-	light_range = 3
-	color = "#3e4821"
+
 
 /obj/item/lighter/gold
 	name = "engraved zippo"
