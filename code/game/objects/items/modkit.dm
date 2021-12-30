@@ -115,7 +115,7 @@
 
 /obj/item/modkit/erinarmor
 	name = "chest gear harness modkit"
-	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	target_items = list(/obj/item/clothing/suit/hooded/f13/hooded_recon)
 	result_item = /obj/item/clothing/suit/armor/f13/rangerrig
 
 /obj/item/modkit/kainatarmor
@@ -194,12 +194,12 @@
 
 /obj/item/modkit/ncr_trenchcloak
 	name = "Ranger trenchcloak modkit"
-	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	target_items = list(/obj/item/clothing/suit/hooded/f13/hooded_recon)
 	result_item = /obj/item/clothing/suit/armor/f13/ncr_trenchcloak
 
 /obj/item/modkit/rangerjacket
 	name = "Ranger jacket modkit"
-	target_items = list(/obj/item/clothing/suit/toggle/armor/f13/rangerrecon)
+	target_items = list(/obj/item/clothing/suit/hooded/f13/hooded_recon)
 	result_item = /obj/item/clothing/suit/armor/f13/rangerrecon_jacket
 
 /obj/item/modkit/ursuslegion
@@ -209,7 +209,7 @@
 
 /obj/item/modkit/harebellscout
 	name = "Harebell scout beret modkit"
-	target_items = list(/obj/item/clothing/head/beret/ncr_recon_ranger, /obj/item/clothing/head/beret/ncr_scout)
+	target_items = list(/obj/item/clothing/head/beret/ncr_scout)
 	result_item = /obj/item/clothing/head/beret/tina_beret
 
 /obj/item/modkit/trailcoat

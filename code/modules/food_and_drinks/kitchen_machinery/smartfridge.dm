@@ -236,7 +236,7 @@
 /obj/machinery/smartfridge/drying_rack
 	name = "drying rack"
 	desc = "A wooden contraption, used to dry plant products, food and hide."
-	icon = 'icons/obj/hydroponics/equipment.dmi'
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "drying_rack"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 5
@@ -628,11 +628,12 @@
 		icon_state = "[initial(icon_state)]-off"
 
 // -------------------------
-//  Gardentool Rack
+//  Gardentool Rack FALLOUT CERTIFIED
 // -------------------------
 /obj/machinery/smartfridge/bottlerack/gardentool
 	name = "garden toolrack"
 	desc = "The wasteland farmers organisational tool storage."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "gardentool"
 	layer = ABOVE_OBJ_LAYER
 	max_n_of_items = 30
@@ -652,12 +653,23 @@
 	. = ..()
 	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, .proc/can_be_rotated))
 
+/obj/machinery/smartfridge/bottlerack/gardentool/primitive
+	initial_contents = list(
+		/obj/item/shovel = 2,
+		/obj/item/hatchet = 2,
+		/obj/item/cultivator/rake  = 2,
+		/obj/item/scythe = 1,
+		/obj/item/reagent_containers/glass/bucket/wood = 3,
+		/obj/item/storage/bag/plants = 2)
+
+
 // -------------------------
-//  Seedbin
+//  Seedbin FALLOUT CERTIFIED
 // -------------------------
 /obj/machinery/smartfridge/bottlerack/seedbin
 	name = "seed bin"
 	desc = "Organised dumping ground for the starters of life."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "seedbin"
 	max_n_of_items = 400
 
@@ -665,6 +677,16 @@
 	if(istype(O, /obj/item/seeds))
 		return TRUE
 	return FALSE
+
+/obj/machinery/smartfridge/bottlerack/seedbin/primitive
+	initial_contents = list(
+		/obj/item/seeds/wheat = 3,
+		/obj/item/seeds/poppy/broc = 2,
+		/obj/item/seeds/xander = 2,
+		/obj/item/seeds/feracactus = 1,
+		/obj/item/seeds/fungus = 1,
+		/obj/item/seeds/punga = 1,
+		/obj/item/seeds/ambrosia  = 1,)
 
 // ---------------------------------------
 // Update Icons for Seed Bin
@@ -693,11 +715,12 @@
 		icon_state = "[initial(icon_state)]-off"
 
 //-------------------------
-// grownbin
+// grownbin FALLOUT CERTIFIED
 //-------------------------
 /obj/machinery/smartfridge/bottlerack/grownbin
 	name = "Harvest bin"
 	desc = "A large box, to contain the harvest that the Earth has blessed upon you."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "grownbin"
 	max_n_of_items = 1000
 
