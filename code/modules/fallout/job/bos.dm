@@ -992,7 +992,7 @@ Initiate
 		/obj/item/storage/survivalkit_aid=1,
 		/obj/item/gun/energy/laser/crusader=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/book/granter/trait/crafting/chemistry=1,
+		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/lowsurgery=1,
 		/obj/item/clothing/accessory/bos/initiateS=1
 		)

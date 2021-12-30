@@ -396,7 +396,7 @@
 		ready = PLAYER_NOT_READY
 		return FALSE
 
-	var/this_is_like_playing_right = alert(src,"You can respawn after observing, but if you do, using information learned while ghosting is not okay. Common sense and intent matters. Proceed?","Observing","Yes","No")
+	var/this_is_like_playing_right = alert(src,"You may spawn in after observing, but using information learned while ghosting is not allowed. Proceed?","Observing","Yes","No")
 
 	if(QDELETED(src) || !src.client || this_is_like_playing_right != "Yes")
 		ready = PLAYER_NOT_READY

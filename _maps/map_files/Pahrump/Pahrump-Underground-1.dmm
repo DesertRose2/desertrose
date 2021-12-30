@@ -13033,7 +13033,7 @@
 /area/f13/tunnel)
 "iKB" = (
 /obj/structure/table,
-/obj/item/book/granter/trait/crafting/chemistry,
+/obj/item/book/granter/trait/chemistry,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
