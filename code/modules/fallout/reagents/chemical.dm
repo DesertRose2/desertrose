@@ -269,7 +269,7 @@
 
 /obj/item/storage/pill_bottle/chem_tin/f13/mentats
 	name = "Mentats"
-	icon_state = "pill_canister_mentats"
+	icon_state = "pill_canister_mentat"
 	desc = "Contains pills used to increase intelligence and perception."
 
 /obj/item/storage/pill_bottle/chem_tin/f13/mentats/PopulateContents()

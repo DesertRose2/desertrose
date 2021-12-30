@@ -200,7 +200,7 @@ Great Khans
 	name = "Chemist"
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/beaker/plastic=2,
-		/obj/item/book/granter/trait/crafting/chemistry=1,
+		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/clothing/mask/gas/glass=1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv = 1)
