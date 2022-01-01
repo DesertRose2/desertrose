@@ -117,13 +117,13 @@
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)
 	START_PROCESSING(SSweather, src)			//The reason this doesn't start and stop at main stage is because processing list is also used to see active running weathers (for example, you wouldn't want two ash storms starting at once.)
 	update_areas()
-	for(var/M in GLOB.player_list)
+	for(var/mob/M in GLOB.player_list)
 		var/turf/mob_turf = get_turf(M)
 		if(mob_turf && (mob_turf.z in impacted_z_levels))
 			if(telegraph_message)
 				to_chat(M, telegraph_message)
-			if(telegraph_sound)
-				SEND_SOUND(M, sound(telegraph_sound))
+			if(telegraph_sound &&  M.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
+				SEND_SOUND(M, sound(telegraph_sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_BUZZ))
 	addtimer(CALLBACK(src, .proc/start), telegraph_duration)
 
 /**
@@ -138,13 +138,13 @@
 		return
 	stage = MAIN_STAGE
 	update_areas()
-	for(var/M in GLOB.player_list)
+	for(var/mob/M in GLOB.player_list)
 		var/turf/mob_turf = get_turf(M)
 		if(mob_turf && (mob_turf.z in impacted_z_levels))
 			if(weather_message)
 				to_chat(M, weather_message)
-			if(weather_sound)
-				SEND_SOUND(M, sound(weather_sound))
+			if(weather_sound && M.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
+				SEND_SOUND(M, sound(weather_sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_BUZZ))
 	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
 
 /**
@@ -159,13 +159,13 @@
 		return
 	stage = WIND_DOWN_STAGE
 	update_areas()
-	for(var/M in GLOB.player_list)
+	for(var/mob/M in GLOB.player_list)
 		var/turf/mob_turf = get_turf(M)
 		if(mob_turf && (mob_turf.z in impacted_z_levels))
 			if(end_message)
 				to_chat(M, end_message)
-			if(end_sound)
-				SEND_SOUND(M, sound(end_sound))
+			if(end_sound  &&  M.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
+				SEND_SOUND(M, sound(end_sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_BUZZ))
 	addtimer(CALLBACK(src, .proc/end), end_duration)
 
 /**
