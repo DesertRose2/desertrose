@@ -366,14 +366,14 @@
 	item_color = "raiderrags"
 
 /obj/item/clothing/under/f13/raiderscav
-	name = "raider scav outfit"
+	name = "torn scav outfit"
 	desc = "A torn up red shirt and grey jeans with rather large pockets, perfect for hauling a hand home for your next meal."
 	icon_state = "raider_scav"
 	item_state = "raider_scav"
 	item_color = "raider_scav"
 
 /obj/item/clothing/under/f13/female/raiderscav
-	name = "raider scav outfit"
+	name = "torn scav outfit"
 	desc = "A cropped, red denim jacket with half a sleeve missing alongside brown leggings with one leg repaired with a fishnet stocking."
 	icon_state = "raider_scav_f"
 	item_state = "raider_scav_f"

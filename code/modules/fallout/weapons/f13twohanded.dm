@@ -358,7 +358,7 @@
 	force_on = 80
 	force = 20
 	throw_range = 2
-	toolspeed = 4
+	toolspeed = 1
 	slowdown = 0.5
 
 /obj/item/twohanded/chainsaw/steelsaw/update_icon_state()
@@ -372,7 +372,7 @@
 	icon_state = "autoaxe_off"
 	force_on = 88
 	throw_range = 1
-	toolspeed = 5
+	toolspeed = 1.5
 	slowdown = 0.5
 
 /obj/item/twohanded/chainsaw/steelsaw/autoaxe/update_icon_state()

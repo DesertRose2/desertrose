@@ -790,6 +790,51 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 
+/datum/crafting_recipe/scav
+	name = "scavvers outfit"
+	result = /obj/item/clothing/under/f13/scav
+	reqs = list(/obj/item/stack/sheet/cloth = 2,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/fscav
+	name = "female scavvers outfit"
+	result = /obj/item/clothing/under/f13/female/scav
+	reqs = list(/obj/item/stack/sheet/cloth = 2,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/raiderscav
+	name = "torn scavvers outfit"
+	result = /obj/item/clothing/under/f13/raiderscav
+	reqs = list(/obj/item/stack/sheet/cloth = 2,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+/datum/crafting_recipe/fraiderscav
+	name = "torn female scavvers outfit"
+	result = /obj/item/clothing/under/f13/female/raiderscav
+	reqs = list(/obj/item/stack/sheet/cloth = 2,
+				/obj/item/stack/sheet/leather = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
+	always_availible = FALSE
+
+
 //Shoes
 
 /datum/crafting_recipe/laceup
@@ -1241,7 +1286,7 @@
 /datum/crafting_recipe/ncrcombathelmet
 	name = "NCR combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/ncr
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)	
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
