@@ -69,7 +69,7 @@
 	slowdown = 0.5
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND_BAREFOOT
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
 	var/pit_sand = TRUE
@@ -156,14 +156,11 @@
 /turf/open/indestructible/ground/outside/dirt
 	name = "dirt"
 	icon_state = "dirtfull"
-//	step_sounds = list("human" = "dirtfootsteps")
-//	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
-//	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
 	slowdown = 0.3
 	flags_1 = CAN_HAVE_NATURE
 	footstep = FOOTSTEP_DIRT
-	barefootstep = FOOTSTEP_DIRT_BAREFOOT
-	clawfootstep = FOOTSTEP_DIRT
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_SAND
 
 /turf/open/indestructible/ground/outside/dirt/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //same thing here, dirt absorbs the liquid... :(
@@ -263,6 +260,29 @@
 	icon_state = "dirt_sandycorner"
 
 
+// ------------
+// FERTILE DIRT
+// ------------
+
+/turf/open/indestructible/ground/outside/dirt/fertile
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirt_fertile"
+	slowdown = 0.1
+
+/turf/open/indestructible/ground/outside/dirt/fertile/sandedge
+	icon_state = "dirt_fertile_sandedge"
+
+/turf/open/indestructible/ground/outside/dirt/fertile/sandcorner
+	icon_state = "dirt_fertile_sandcorner"
+
+/obj/effect/overlay/dirt/fertile_side
+	icon_state = "dirt_fertileside"
+
+/obj/effect/overlay/dirt/fertile_corner
+	icon_state = "dirt_fertilecorner"
+
+
 // ---------------
 // OUTDOOR GRAVEL
 // ---------------
@@ -273,7 +293,7 @@
 	icon_state = "gravel"
 	slowdown = 0.1
 	footstep = FOOTSTEP_GRAVEL
-	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
+
 
 /turf/open/indestructible/ground/outside/gravel/desertmerge
 	name = "gravel"
@@ -298,7 +318,7 @@
 	icon = 'icons/fallout/turfs/asphalt.dmi'
 	slowdown = 0
 	footstep = FOOTSTEP_ROAD
-	barefootstep = FOOTSTEP_ROAD_BAREFOOT
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
 
 /turf/open/indestructible/ground/outside/sidewalk
 	name = "sidewalk"
@@ -306,7 +326,7 @@
 	icon = 'icons/fallout/turfs/sidewalk.dmi'
 	slowdown = 0
 	footstep = FOOTSTEP_ROAD
-	barefootstep = FOOTSTEP_ROAD_BAREFOOT
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
 
 
 // -------
@@ -339,7 +359,7 @@
 	desc = "Looks cold."
 	icon_state = "snow"
 	footstep = FOOTSTEP_SNOW
-	barefootstep = FOOTSTEP_SNOW_BAREFOOT
+	barefootstep = FOOTSTEP_SAND
 
 
 // -------

@@ -476,6 +476,13 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/legion)
+"aCK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/libritor,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/legion)
 "aDl" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/handrail/g_central{
@@ -1694,7 +1701,10 @@
 	},
 /area/f13/legion)
 "bJC" = (
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "TUNSCOPRS"
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bJL" = (
@@ -5004,6 +5014,10 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"eXI" = (
+/obj/effect/landmark/start/f13/Hhunter,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "eYv" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul,
@@ -7348,6 +7362,10 @@
 	},
 /turf/closed/wall/f13/ruins,
 /area/f13/bunker)
+"hmq" = (
+/obj/effect/landmark/start/f13/chief,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "hmK" = (
 /mob/living/simple_animal/hostile/giantant,
 /obj/effect/spawner/lootdrop/trash,
@@ -7728,6 +7746,10 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"hIK" = (
+/obj/effect/landmark/start/f13/villager,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "hIN" = (
 /obj/structure/window/fulltile/ruins/broken,
 /obj/structure/barricade/sandbags,
@@ -7875,6 +7897,10 @@
 /obj/structure/window/fulltile/house/broken,
 /turf/open/water,
 /area/f13/sewer)
+"hRo" = (
+/obj/effect/landmark/start/f13/shaman,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "hRI" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9915,6 +9941,10 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"jKW" = (
+/obj/effect/landmark/start/f13/druid,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "jLh" = (
 /obj/structure/handrail/g_central{
 	dir = 1;
@@ -10881,7 +10911,6 @@
 /area/f13/radiation)
 "kMb" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Church Backroom";
 	req_one_access_txt = "25"
 	},
@@ -13001,7 +13030,7 @@
 "mBc" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = "TUNMUTIE"
+	id = "TUNCITY"
 	},
 /turf/open/floor/f13{
 	icon_state = "greenfull"
@@ -13607,6 +13636,7 @@
 	name = "light tube"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/bandit,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "nid" = (
@@ -17750,7 +17780,7 @@
 /turf/open/water,
 /area/f13/sewer)
 "rgz" = (
-/obj/effect/landmark/start/f13/villager,
+/obj/effect/landmark/start/f13/spiritpledged,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "rho" = (
@@ -18720,6 +18750,10 @@
 /obj/structure/wreck/trash/four_barrels,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/sewer)
+"seL" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/wood/f13/old,
+/area/f13/den)
 "seR" = (
 /obj/structure/closet/crate{
 	anchored = 1
@@ -19247,6 +19281,11 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"sGv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/floor/wood/f13/old,
+/area/f13/den)
 "sGM" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/meat/slab/gecko,
@@ -20466,6 +20505,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/bunker)
+"tXb" = (
+/obj/effect/landmark/start/f13/hunter,
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
 "tXj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -22009,6 +22052,15 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/rust,
 /area/f13/radiation)
+"vrL" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "TUNMUTIE"
+	},
+/turf/open/floor/f13{
+	icon_state = "greenfull"
+	},
+/area/f13/sewer)
 "vsk" = (
 /obj/structure/lattice,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -23932,6 +23984,10 @@
 	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
+/area/f13/den)
+"xau" = (
+/obj/effect/landmark/start/f13/bandit,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
 "xaK" = (
 /turf/open/floor/wood/f13/old,
@@ -47010,7 +47066,7 @@ sWW
 sWW
 sWW
 xvl
-mBc
+vrL
 hFs
 hFs
 hFs
@@ -61609,7 +61665,7 @@ tMZ
 sLr
 hyz
 iWx
-iWx
+jKW
 edX
 iWx
 edX
@@ -61811,7 +61867,7 @@ tMZ
 sLr
 hyz
 iWx
-iWx
+hRo
 edX
 iWx
 edX
@@ -62013,7 +62069,7 @@ tMZ
 sLr
 hyz
 iWx
-iWx
+jKW
 edX
 iWx
 edX
@@ -64458,7 +64514,7 @@ mKE
 wWH
 iWx
 iWx
-rgz
+iWx
 iWx
 iWx
 iWx
@@ -64847,8 +64903,8 @@ tMZ
 rVm
 hOb
 iWx
-iWx
-iWx
+tXb
+tXb
 iWx
 oEO
 jbO
@@ -64860,11 +64916,11 @@ rVm
 voR
 iWx
 iWx
-iWx
+hIK
 edX
 voR
 edX
-iWx
+rgz
 iWx
 kmg
 eXl
@@ -65062,7 +65118,7 @@ fLh
 voR
 iWx
 iWx
-iWx
+hIK
 edX
 voR
 edX
@@ -65250,7 +65306,7 @@ cnn
 cnn
 fOk
 iWx
-iWx
+eXI
 opb
 fRi
 iWx
@@ -65263,12 +65319,12 @@ iWx
 iWx
 iWx
 iWx
-iWx
-iWx
+hmq
+hIK
 edX
 voR
 edX
-iWx
+rgz
 iWx
 jux
 eXl
@@ -65466,11 +65522,11 @@ iWx
 iWx
 iWx
 iWx
-iWx
+hIK
 edX
 voR
 edX
-iWx
+rgz
 iWx
 voR
 eXl
@@ -65670,7 +65726,7 @@ iWx
 iWx
 iWx
 iWx
-rgz
+iWx
 iWx
 iWx
 iWx
@@ -75842,9 +75898,9 @@ ldq
 dNC
 bUM
 ahe
-fld
+aCK
 srH
-fld
+aCK
 wdb
 bUM
 aor
@@ -89105,7 +89161,7 @@ wAx
 dMr
 wPn
 uxL
-uxL
+xau
 qla
 qla
 qla
@@ -89307,7 +89363,7 @@ wAx
 dMr
 wPn
 uxL
-uxL
+xau
 qla
 dlJ
 gmt
@@ -89509,7 +89565,7 @@ wAx
 dMr
 qla
 uxL
-uxL
+xau
 qla
 qiU
 mma
@@ -90104,7 +90160,7 @@ sty
 qla
 uxL
 qla
-wZW
+seL
 sIM
 uVU
 hyQ
@@ -90306,7 +90362,7 @@ wZW
 qla
 uxL
 qla
-sIM
+sGv
 vFy
 vtQ
 hyQ
@@ -90710,7 +90766,7 @@ qla
 qla
 uxL
 qla
-sIM
+sGv
 sIM
 vtQ
 hyQ
@@ -90912,7 +90968,7 @@ tRS
 qla
 uxL
 qla
-wZW
+seL
 wZW
 uVU
 hyQ
@@ -91933,7 +91989,7 @@ wAx
 dMr
 wPn
 uxL
-uxL
+xau
 qla
 hPK
 gmt
@@ -92135,7 +92191,7 @@ wAx
 dMr
 wPn
 uxL
-uxL
+xau
 qla
 kXY
 mma
@@ -92337,7 +92393,7 @@ wAx
 dMr
 wPn
 uxL
-uxL
+xau
 qla
 qla
 qla
