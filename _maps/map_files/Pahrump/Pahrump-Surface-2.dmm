@@ -550,10 +550,7 @@
 /area/f13/wasteland)
 "ags" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Khan Khamp";
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/floor/wood/f13/old,
@@ -4274,10 +4271,7 @@
 /area/f13/building)
 "bnU" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Farm";
-	obj_integrity = 300;
 	req_one_access_txt = "124; 135"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -4416,7 +4410,6 @@
 /area/f13/building)
 "bpz" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	max_integrity = 500;
 	name = "store";
 	req_one_access_txt = "139"
@@ -11657,10 +11650,7 @@
 	color = "#363636"
 	},
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Khan Khamp";
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/floor/f13{
@@ -12920,7 +12910,6 @@
 /area/f13/tunnel)
 "emM" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
 	},
@@ -16206,10 +16195,7 @@
 	color = "#363636"
 	},
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Khan Khamp";
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/floor/wood/f13/carpet,
@@ -32292,7 +32278,6 @@
 /area/f13/building)
 "keM" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
 	},
@@ -33778,9 +33763,6 @@
 	pixel_y = -15
 	},
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "131"
 	},
 /turf/open/floor/plasteel/cult,
@@ -41481,9 +41463,6 @@
 /obj/structure/stone_tile/slab,
 /obj/structure/stone_tile/slab/cracked,
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "131"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -54454,10 +54433,7 @@
 /area/f13/wasteland)
 "rjN" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Farm";
-	obj_integrity = 300;
 	req_one_access_txt = "124; 135"
 	},
 /turf/open/indestructible/ground/outside/road{
@@ -55148,7 +55124,6 @@
 "rxQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Bar";
 	req_one_access_txt = "138"
 	},
@@ -65522,19 +65497,11 @@
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "uKA" = (
-/obj/item/storage/bag/money{
-	anchored = 1;
-	pixel_x = 32
-	},
-/obj/structure/noticeboard{
-	layer = 2.5;
-	pixel_x = 32
-	},
+/obj/machinery/mineral/wasteland_trader,
 /turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1"
+	icon_state = "horizontaloutermain2left"
 	},
-/area/f13/wasteland)
+/area/f13/city)
 "uKB" = (
 /obj/effect/decal/remains/human,
 /obj/machinery/light{
@@ -88365,7 +88332,7 @@ ycD
 xnT
 ycD
 ycD
-uKA
+ycD
 bFJ
 qDU
 uMZ
@@ -88622,8 +88589,8 @@ gLx
 gLx
 fdT
 ycD
-ycD
-gdY
+uKA
+uaf
 sIf
 cWB
 qJR
