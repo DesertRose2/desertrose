@@ -23,7 +23,13 @@
 								/obj/item/reagent_containers/hypospray/medipen/f13/psycho = 15,
 								/obj/item/reagent_containers/hypospray/medipen/f13/medx = 10,
 								/obj/item/invention = 25,
-								/obj/item/experimental = 25
+								/obj/item/experimental = 25,
+								/obj/item/gun/ballistic/automatic/pistol/ninemil = 25,
+								/obj/item/gun/ballistic/revolver/colt6520 = 30,
+								/obj/item/gun/ballistic/rifle/enfield = 35,
+								/obj/item/gun/ballistic/automatic/pistol/n99 = 30,
+								/obj/item/gun/ballistic/automatic/pistol/pistol22 = 20,
+								/obj/item/gun/ballistic/revolver/widowmaker = 40
 								)
 
 /obj/machinery/mineral/wasteland_trader/general
