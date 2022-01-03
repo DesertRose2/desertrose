@@ -664,6 +664,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
+		new /datum/data/wasteland_equipment("SCAV! Issue 1",					/obj/item/book/granter/crafting_recipe/scav_one,				600),
+		new /datum/data/wasteland_equipment("SCAV! Issue 2",					/obj/item/book/granter/crafting_recipe/scav_two,				600),
 		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 	highpop_list = list(
@@ -671,6 +673,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
+		new /datum/data/wasteland_equipment("SCAV! Issue 1",					/obj/item/book/granter/crafting_recipe/scav_one,				600),
+		new /datum/data/wasteland_equipment("SCAV! Issue 2",					/obj/item/book/granter/crafting_recipe/scav_two,				600),
 		new /datum/data/wasteland_equipment("Anarchist's Cookbook",				/obj/item/book/granter/trait/demolitions,						600)
 		)
 
