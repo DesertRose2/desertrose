@@ -146,35 +146,14 @@
 							"NCR Off-Duty"
 						)
 
-/datum/gear/head/ncr_scout
-	name = "NCR scout beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_scout
-	restricted_desc = "NCR NCOs"
-	restricted_roles = list(
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Off-Duty"
-						)
-
-/datum/gear/head/ncr_medical
-	name = "NCR combat medic beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_medic
-	restricted_desc = "NCR"
-	restricted_roles = list(
-							"NCR Combat Medic",
-							"NCR Off-Duty"
-						)
-
 /datum/gear/head/ncr_medical_officer
 	name = "NCR medical officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_medic_lt
+	path = /obj/item/clothing/head/beret/medical
 	restricted_desc = "NCR Officers"
 	restricted_roles = list(
 							"NCR Medical Officer",
+							"NCR Combat Medic",
 							"NCR Off-Duty"
 						)
 
@@ -187,13 +166,6 @@
 							"NCR Combat Engineer",
 							"NCR Off-Duty"
 						)
-
-/datum/gear/head/ncr_recon_ranger
-	name = "ranger recon beret"
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_recon_ranger
-	restricted_desc = "Rangers"
-	restricted_roles = list("NCR Ranger")
 
 /datum/gear/head/bos_beret
 	name = "brotherhood beret"
@@ -254,16 +226,10 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_flapcap
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Recruit"
 						)
 
 /datum/gear/head/ncr_slouch
@@ -271,17 +237,8 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_slouch
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
 							"NCR Trooper",
-							"NCR Recruit",
-							"NCR Veteran Ranger",
-							"NCR Ranger Sergeant",
-							"NCR Ranger"
 						)

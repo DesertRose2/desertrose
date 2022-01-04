@@ -101,7 +101,7 @@
 		if(85 to 86)
 			new /obj/item/defibrillator/compact(src)
 		if(87) //1% chance
-			new /obj/item/weed_extract(src)
+			new /obj/item/toy/katana(src)
 		if(88)
 			new /obj/item/organ/brain(src)
 		if(89)

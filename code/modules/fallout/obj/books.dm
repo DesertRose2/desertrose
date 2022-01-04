@@ -324,6 +324,26 @@
 	traitname = "chem use"
 	remarks = list("Clean your needles...", "Ensure you have quality product...", "Don't mix drugs...", "Only buy from trusted dealers...")
 
+/obj/item/book/granter/trait/chemistry
+	name = "Chemistry for Wastelanders"
+	desc = "A useful book on chemistry."
+	oneuse = TRUE
+	granted_trait = TRAIT_CHEMWHIZ
+	traitname = "chemistry"
+	remarks = list("Always have a safe working environment...", "Don't give chems to strangers...", "Never drink any chemicals straight from the dispenser...", "Always wear your labcoat...", "Never forget your goggles...")
+	var/crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+
+/obj/item/book/granter/trait/demolitions
+	name = "Anarchist's Cookbook"
+	desc = "A manual on how to construct homemade explosives without losing your fingers, now with pictures."
+	oneuse = TRUE
+	granted_trait = TRAIT_DEMOLITION_EXPERT
+	traitname = "explosives"
+	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
+	var/crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
+
+
+
 /obj/item/book/granter/trait/selection
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
@@ -344,7 +364,7 @@
 				traitname = "minor surgery"
 			if("Chemistry")
 				qdel(src)
-				user.put_in_hands(new /obj/item/book/granter/trait/crafting/chemistry)
+				user.put_in_hands(new /obj/item/book/granter/trait/chemistry)
 				return
 			if("Salvager")
 				granted_trait = TRAIT_TECHNOPHREAK
@@ -360,7 +380,7 @@
 				traitname = "punching"
 			if("Explosive Expert")
 				qdel(src)
-				user.put_in_hands(new /obj/item/book/granter/trait/crafting/demolitions)
+				user.put_in_hands(new /obj/item/book/granter/trait/demolitions)
 				return
 	else
 		. = ..()
@@ -384,7 +404,7 @@
 				traitname = "minor surgery"
 			if("Chemistry")
 				qdel(src)
-				user.put_in_hands(new /obj/item/book/granter/trait/crafting/chemistry)
+				user.put_in_hands(new /obj/item/book/granter/trait/chemistry)
 				return
 			if("Salvager")
 				granted_trait = TRAIT_TECHNOPHREAK
@@ -399,6 +419,8 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
+/* Since these books did not disappear after reading, replaced with a version that uses the standard format for now. Keep this subtype?
+
 /obj/item/book/granter/trait/crafting
 	var/list/crafting_recipe_types = list()
 
@@ -412,6 +434,7 @@
 		var/datum/crafting_recipe/R = crafting_recipe_type
 		user.mind.teach_crafting_recipe(crafting_recipe_type)
 		to_chat(user,SPAN_NOTICE("You learned how to make [initial(R.name)]."))
+
 
 /obj/item/book/granter/trait/crafting/chemistry
 	name = "Chemistry for Wastelanders"
@@ -430,3 +453,4 @@
 	traitname = "explosives"
 	remarks = list("Have a sturdy table...", "Ensure you have quality ingredients...", "Don't do this while drunk...", "Make sure you aren't watched...")
 	crafting_recipe_types = list(/datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/dynamite, /datum/crafting_recipe/explosive/frag, /datum/crafting_recipe/explosive/explosive, /datum/crafting_recipe/explosive/nitro, /datum/crafting_recipe/explosive/flashbang, /datum/crafting_recipe/explosive/smoke, /datum/crafting_recipe/explosive/emp, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/explosive/c4chem)
+*/

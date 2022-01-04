@@ -55,7 +55,7 @@
 /area/f13/bunker)
 "aX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
@@ -1022,7 +1022,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "tI" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13{
@@ -1108,7 +1108,7 @@
 /area/f13/bunker)
 "vh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
@@ -1772,7 +1772,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Hr" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Hw" = (
@@ -2032,7 +2032,7 @@
 /area/f13/bunker)
 "LH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "LP" = (
@@ -2165,7 +2165,7 @@
 /area/f13/tunnel)
 "PF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "PI" = (
@@ -2293,7 +2293,7 @@
 	},
 /area/f13/bunker)
 "RU" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "RZ" = (

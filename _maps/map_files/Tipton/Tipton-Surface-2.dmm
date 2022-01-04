@@ -348,6 +348,14 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"aky" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/building)
 "akG" = (
 /obj/item/defibrillator/loaded,
 /obj/item/defibrillator/loaded,
@@ -558,7 +566,7 @@
 "arG" = (
 /obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
-	req_one_access_txt = "28"
+	req_one_access_txt = "138"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/klamat)
@@ -710,12 +718,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/white/whitepurplechess,
 /area/f13/building)
-"awV" = (
-/obj/structure/simple_door/house{
-	req_one_access_txt = "134"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/klamat)
 "axf" = (
 /obj/structure/closet/fridge,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -871,6 +873,10 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"aDj" = (
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "aEg" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 5
@@ -1151,8 +1157,8 @@
 	},
 /area/f13/klamat)
 "aKJ" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/closet/crate/medical,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -1776,7 +1782,7 @@
 "bfX" = (
 /obj/machinery/door/unpowered/securedoor{
 	name = "Bar";
-	req_one_access_txt = "28"
+	req_one_access_txt = "138"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
@@ -2034,7 +2040,6 @@
 	brightness = 3;
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerborder"
@@ -2169,14 +2174,6 @@
 /obj/machinery/vending/boozeomat,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
-/area/f13/klamat)
-"bwg" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mechant's House";
-	req_one_access_txt = "31"
-	},
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
 "bwv" = (
 /obj/structure/car,
@@ -2829,19 +2826,18 @@
 /area/f13/wasteland)
 "bRp" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	max_integrity = 500;
-	name = "Store Backroom";
-	req_one_access_txt = "31"
+	name = "store";
+	req_one_access_txt = "139"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/klamat)
 "bRC" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/curtain{
 	pixel_x = 30
 	},
@@ -2978,13 +2974,9 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "bWg" = (
-/obj/effect/temp_visual/steam,
-/obj/structure/chair/bench,
-/turf/open/water{
-	desc = "Shallow water heated by the earth below. It bubbles up, steaming the area and warming the body..";
-	name = "Hotsprings"
-	},
-/area/f13/caves)
+/obj/machinery/telecomms/server/presets/khans,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/underground/mountain)
 "bWu" = (
 /obj/structure/bookcase,
 /turf/open/floor/f13{
@@ -3268,9 +3260,8 @@
 	},
 /area/f13/brotherhood)
 "chU" = (
-/obj/effect/landmark/start/f13/ncrsergeant,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/ncr)
+/turf/closed/indestructible/f13/matrix,
+/area/f13/klamat)
 "cih" = (
 /obj/item/kirbyplants/dead,
 /turf/open/floor/f13{
@@ -3790,6 +3781,10 @@
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"cDz" = (
+/obj/effect/landmark/start/f13/ncrfirstsergeant,
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "cDG" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
@@ -4553,8 +4548,8 @@
 /area/f13/ncr)
 "dch" = (
 /obj/structure/closet/crate/medical,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -4851,14 +4846,14 @@
 /turf/open/floor/plating/snowed/temperatre,
 /area/f13/building)
 "dqy" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Bar";
-	req_one_access_txt = "28"
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "barshutters"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Bar";
+	req_one_access_txt = "138"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "dqF" = (
@@ -4962,6 +4957,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_large,
 /area/f13/casino)
+"dvj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/genghis,
+/turf/open/floor/wood/wood_large,
+/area/f13/casino)
 "dvp" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
@@ -5061,7 +5061,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = 25
 	},
@@ -5786,6 +5786,10 @@
 	icon_state = "housewood3"
 	},
 /area/f13/building)
+"dYd" = (
+/obj/effect/landmark/start/f13/ncrcorporal,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "dYl" = (
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/generic,
@@ -5973,7 +5977,6 @@
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "efJ" = (
-/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -6805,7 +6808,6 @@
 /area/f13/klamat)
 "eMg" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	max_integrity = 500;
 	name = "Store Backroom";
 	req_one_access_txt = "31"
@@ -6963,6 +6965,13 @@
 	icon_state = "housewood3"
 	},
 /area/f13/building)
+"eRJ" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/landmark/start/f13/ncrtrooper,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "eRO" = (
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -7235,12 +7244,11 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "fbK" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Gatehouse";
-	req_one_access_txt = "134"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Gatehouse";
+	req_one_access_txt = "136: 137"
+	},
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "fbV" = (
@@ -8250,9 +8258,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/klamat)
 "fJP" = (
-/obj/effect/landmark/start/f13/ncrlieutenant,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/ncr)
+/obj/effect/landmark/start/f13/hoistway,
+/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
+	dir = 1;
+	icon_state = "neutraldirty"
+	},
+/area/f13/klamat)
 "fJQ" = (
 /obj/machinery/grill,
 /turf/open/floor/plating/dirt,
@@ -8351,7 +8362,7 @@
 /area/f13/building)
 "fMh" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "fMN" = (
@@ -8686,7 +8697,6 @@
 /area/f13/followers)
 "gbb" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
 	},
@@ -8838,10 +8848,7 @@
 /area/f13/klamat)
 "ghh" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	name = "Khan Khamp";
-	obj_integrity = 300;
+	name = "Khan Kasino";
 	req_access_txt = "125"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -8955,6 +8962,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
+"gnh" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/landmark/start/f13/ncrcorporal,
+/turf/open/floor/plating/dirt,
 /area/f13/wasteland)
 "gnP" = (
 /obj/machinery/light/small{
@@ -9132,14 +9146,14 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
 "gsy" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Bank";
-	req_one_access_txt = "25"
-	},
 /obj/machinery/door/poddoor/ert{
 	id = "bankvault";
 	name = "Vault"
+	},
+/obj/machinery/door/unpowered/securedoor{
+	name = "Mayor's Office";
+	req_access_txt = "136; 137";
+	req_one_access_txt = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
@@ -9150,6 +9164,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
+"gsX" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/closed/mineral/snowmountain,
+/area/f13/underground/mountain)
 "gtd" = (
 /obj/item/clothing/under/f13/police,
 /obj/item/clothing/head/f13/police,
@@ -9774,7 +9792,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "gOP" = (
-/obj/structure/ladder/unbreakable,
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "TUNSCOPRS"
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/building)
 "gOS" = (
@@ -10758,7 +10779,7 @@
 /area/f13/building)
 "hyA" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -10801,8 +10822,7 @@
 "hzW" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
-	id = "TUNCITY"
+	id = "TUNMUTIE"
 	},
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -11280,6 +11300,11 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/klamat)
+"hQl" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/effect/landmark/start/f13/ncrsergeant,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/wasteland)
 "hQt" = (
 /obj/structure/chair{
 	dir = 4
@@ -11363,9 +11388,9 @@
 /area/f13/building)
 "hUw" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Roadie Bunks";
-	req_one_access_txt = "31"
+	max_integrity = 500;
+	name = "store";
+	req_one_access_txt = "139"
 	},
 /turf/open/floor/wood/f13{
 	icon_state = "wood"
@@ -11598,9 +11623,9 @@
 "idy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Mayor's Office";
-	req_one_access_txt = "62"
+	req_access_txt = "136; 137";
+	req_one_access_txt = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
@@ -12083,12 +12108,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "ixB" = (
-/obj/effect/temp_visual/steam,
-/turf/open/water{
-	desc = "Shallow water heated by the earth below. It bubbles up, steaming the area and warming the body..";
-	name = "Hotsprings"
-	},
-/area/f13/caves)
+/obj/machinery/telecomms/server/presets/ranger,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/underground/mountain)
 "ixS" = (
 /obj/machinery/autolathe,
 /turf/open/floor/wood{
@@ -12841,7 +12863,7 @@
 /area/f13/building)
 "iWy" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "iWD" = (
@@ -13056,7 +13078,7 @@
 "jdM" = (
 /obj/structure/bed/mattress/pregame,
 /obj/item/clothing/head/fedora,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -13071,10 +13093,9 @@
 /area/f13/building)
 "jel" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	max_integrity = 500;
-	name = "Store Backroom";
-	req_one_access_txt = "31"
+	name = "store";
+	req_one_access_txt = "139"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -13189,7 +13210,7 @@
 /area/f13/building)
 "jiX" = (
 /obj/structure/chair/office/dark,
-/obj/effect/landmark/start/f13/townsec,
+/obj/effect/landmark/start/f13/provost,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -13918,9 +13939,11 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/klamat)
 "jKP" = (
-/obj/effect/landmark/start/f13/ncrcaptain,
-/turf/open/floor/wood/f13/old,
-/area/f13/ncr)
+/obj/effect/landmark/start/f13/provostmarshal,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/klamat)
 "jKU" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -14098,7 +14121,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = 25
 	},
@@ -14787,6 +14810,7 @@
 /obj/structure/chair/sofa/right{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/ncrveteranranger,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "kua" = (
@@ -14994,9 +15018,7 @@
 "kAQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/unpowered/securedoor{
-	max_integrity = 300;
 	name = "Khan Kasino";
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/floor/carpet/black,
@@ -15333,7 +15355,7 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
-/obj/effect/landmark/start/f13/townsec,
+/obj/effect/landmark/start/f13/provost,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -16464,6 +16486,7 @@
 /obj/structure/chair/sofa/corner{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/ncrrangersergeant,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "lMW" = (
@@ -16547,7 +16570,7 @@
 /area/f13/wasteland)
 "lPi" = (
 /obj/structure/closet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lPn" = (
@@ -17809,7 +17832,7 @@
 /area/f13/wasteland)
 "mEe" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/outside/dirt,
@@ -18432,6 +18455,13 @@
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/klamat)
+"ncE" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "ndg" = (
 /obj/structure/rack,
 /obj/item/clothing/head/caphat/formal/fedcover{
@@ -19519,7 +19549,6 @@
 "nPw" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "TUNCITY"
 	},
 /turf/open/indestructible/ground/inside/subway{
@@ -19713,7 +19742,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
+/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
 "nXJ" = (
@@ -20510,7 +20539,7 @@
 /area/f13/building)
 "ozP" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "oAD" = (
@@ -20733,9 +20762,9 @@
 /area/f13/wasteland)
 "oIP" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Mayor's Office";
-	req_one_access_txt = "62"
+	req_access_txt = "136; 137";
+	req_one_access_txt = null
 	},
 /turf/open/floor/carpet/black,
 /area/f13/klamat)
@@ -20785,12 +20814,12 @@
 	},
 /area/f13/klamat)
 "oNp" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Mayor's Office";
-	req_one_access_txt = "62"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Mayor's Office";
+	req_access_txt = "136; 137";
+	req_one_access_txt = null
+	},
 /turf/open/floor/carpet/black,
 /area/f13/klamat)
 "oNq" = (
@@ -20957,7 +20986,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
 	icon_state = "outerborder"
@@ -21133,7 +21161,6 @@
 "oXc" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "S5"
 	},
 /turf/open/floor/f13{
@@ -21380,7 +21407,8 @@
 /area/f13/building)
 "peD" = (
 /obj/machinery/door/airlock/research{
-	req_one_access_txt = "6"
+	name = "Research Division";
+	req_one_access_txt = "136; 140"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 6;
@@ -21474,13 +21502,13 @@
 /obj/item/clothing/under/f13/khan/shorts/booty,
 /obj/item/clothing/under/f13/khan/shorts/booty,
 /obj/item/clothing/under/f13/khan/shorts/booty,
+/obj/item/clothing/head/helmet/f13/khan,
+/obj/item/clothing/head/helmet/f13/khan,
+/obj/item/clothing/head/helmet/f13/khan,
+/obj/item/clothing/head/helmet/f13/khan,
 /obj/item/clothing/suit/armor/khan_jacket,
 /obj/item/clothing/suit/armor/khan_jacket,
 /obj/item/clothing/suit/armor/khan_jacket,
-/obj/item/clothing/head/helmet/f13/khan,
-/obj/item/clothing/head/helmet/f13/khan,
-/obj/item/clothing/head/helmet/f13/khan,
-/obj/item/clothing/head/helmet/f13/khan,
 /turf/open/floor/f13/wood,
 /area/f13/casino)
 "pjb" = (
@@ -21585,7 +21613,6 @@
 /area/f13/klamat)
 "pnp" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
 	},
@@ -21879,8 +21906,8 @@
 /area/f13/brotherhood)
 "pvB" = (
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -22277,9 +22304,9 @@
 /area/f13/klamat)
 "pLR" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -22350,7 +22377,7 @@
 /area/f13/klamat)
 "pOD" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
@@ -23754,7 +23781,6 @@
 /area/f13/building)
 "qRH" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "City Housing";
 	req_one_access_txt = "25"
 	},
@@ -23886,9 +23912,12 @@
 	},
 /area/f13/klamat)
 "qYo" = (
-/obj/effect/landmark/start/f13/ncrcolonel,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/ncr)
+/obj/structure/chair/office/dark,
+/obj/effect/landmark/start/f13/provostsgt,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/klamat)
 "qYp" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -24014,7 +24043,8 @@
 /area/f13/casino)
 "rdb" = (
 /obj/machinery/door/airlock/research{
-	req_one_access_txt = "6"
+	name = "Research Division";
+	req_one_access_txt = "136; 140"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 5;
@@ -24023,15 +24053,15 @@
 /area/f13/klamat)
 "rdk" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = 7;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder{
+/obj/item/reagent_containers/pill/patch/f13/healingpowder{
 	pixel_x = -8;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "rdl" = (
@@ -24255,6 +24285,7 @@
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/ncrranger,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "rlZ" = (
@@ -24469,13 +24500,13 @@
 /area/f13/klamat)
 "rsY" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
 "rtY" = (
@@ -24681,7 +24712,7 @@
 /area/f13/wasteland)
 "ryJ" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/casino)
@@ -25299,7 +25330,7 @@
 "rYv" = (
 /obj/structure/table,
 /obj/item/paper,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -26147,7 +26178,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -26239,6 +26270,10 @@
 	icon_state = "floordirty"
 	},
 /area/f13/brotherhood)
+"sND" = (
+/obj/effect/landmark/start/f13/ncrcombatengineer,
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "sNP" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
@@ -26783,10 +26818,7 @@
 /area/f13/klamat)
 "tlv" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
 	name = "Khan Khamp";
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/floor/carpet,
@@ -27004,8 +27036,8 @@
 /area/f13/ncr)
 "tuN" = (
 /obj/machinery/door/airlock/vault{
-	name = "Inner Armory";
-	req_one_access_txt = "134"
+	name = "Armory";
+	req_one_access_txt = "137"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -28549,8 +28581,8 @@
 /area/f13/klamat)
 "uzI" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/effect/spawner/lootdrop/clothing_middle,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -28713,7 +28745,7 @@
 /area/f13/building)
 "uHt" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/medspray/sterilizine,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
@@ -28871,7 +28903,10 @@
 	},
 /area/f13/building)
 "uMI" = (
-/obj/machinery/door/airlock/command/glass,
+/obj/machinery/door/airlock/command/glass{
+	name = "inner Vault";
+	req_one_access_txt = "135; 136; 137"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -29506,6 +29541,7 @@
 /obj/structure/chair/sofa/corner{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/ncrranger,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "vmF" = (
@@ -29558,9 +29594,8 @@
 /area/f13/klamat)
 "voE" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Armory";
-	req_one_access_txt = "134"
+	name = "Gatehouse";
+	req_one_access_txt = "136: 137"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
@@ -30250,18 +30285,18 @@
 "vRj" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -30390,7 +30425,7 @@
 /area/f13/klamat)
 "vXI" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -30695,13 +30730,6 @@
 /obj/machinery/sleeper,
 /obj/machinery/light/small{
 	dir = 1
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/ncr)
-"wka" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "NCRR1"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
@@ -31226,7 +31254,7 @@
 /area/f13/underground/mountain)
 "wDM" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -31268,18 +31296,18 @@
 "wEC" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -31325,7 +31353,7 @@
 /area/f13/klamat)
 "wFL" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
 "wGi" = (
@@ -31380,6 +31408,10 @@
 "wIg" = (
 /turf/closed/wall/f13/tentwall,
 /area/f13/ncr)
+"wIl" = (
+/obj/effect/landmark/start/f13/ncrrecruit,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "wIq" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
@@ -31985,8 +32017,8 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "xcA" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/structure/closet/crate/medical,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
@@ -32250,9 +32282,8 @@
 /area/f13/klamat)
 "xpt" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
 	name = "Gatehouse";
-	req_one_access_txt = "134"
+	req_one_access_txt = "136: 137"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
@@ -32349,7 +32380,7 @@
 /area/f13/klamat)
 "xsw" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -32481,9 +32512,9 @@
 /turf/open/floor/carpet/red,
 /area/f13/casino)
 "xyP" = (
-/obj/machinery/door/airlock/security/glass{
-	name = "Inner Gatehouse";
-	req_one_access_txt = "134"
+/obj/machinery/door/airlock/command/glass{
+	name = "Security";
+	req_one_access_txt = "135; 136; 137"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -32531,6 +32562,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"xAF" = (
+/obj/effect/landmark/start/f13/ncrtrooper,
+/turf/open/floor/plating/dirt,
+/area/f13/wasteland)
 "xAM" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/bot,
@@ -32777,7 +32812,7 @@
 /area/f13/wasteland)
 "xHO" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -32800,6 +32835,7 @@
 /obj/structure/chair/sofa/right{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/ncrranger,
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "xIT" = (
@@ -33045,11 +33081,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xVr" = (
-/obj/effect/landmark/start/f13/ncrsergeant,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright1"
+/obj/machinery/door/unpowered/securedoor{
+	max_integrity = 500;
+	name = "store";
+	req_one_access_txt = "139"
 	},
-/area/f13/ncr)
+/turf/open/floor/f13/wood,
+/area/f13/klamat)
 "xVv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -34343,9 +34381,9 @@ dbq
 dbq
 dbq
 uuH
-bWg
+uyq
 fBd
-ixB
+fBd
 uuH
 uuH
 uuH
@@ -34546,9 +34584,9 @@ dbq
 dbq
 uuH
 uyq
-ixB
+fBd
 qrV
-bWg
+uyq
 uuH
 uuH
 uuH
@@ -34747,9 +34785,9 @@ dbq
 dbq
 dbq
 uuH
-bWg
+uyq
 fBd
-ixB
+fBd
 uyq
 uuH
 yjp
@@ -34950,9 +34988,9 @@ dbq
 dbq
 uuH
 uuH
-ixB
 fBd
-bWg
+fBd
+uyq
 khn
 yjp
 aba
@@ -35153,7 +35191,7 @@ dbq
 pMd
 uuH
 uuH
-ixB
+fBd
 uuH
 uuH
 aba
@@ -40428,7 +40466,7 @@ hPO
 yhi
 vwP
 vwP
-gij
+cDz
 dJW
 gij
 yhi
@@ -40825,8 +40863,8 @@ sER
 uTc
 yhi
 yhi
-sTy
-pMk
+ncE
+wIl
 vwk
 lQG
 yhi
@@ -41027,8 +41065,8 @@ sER
 uLZ
 yhi
 nPu
-sTy
-pMk
+ncE
+wIl
 vwk
 lOO
 yhi
@@ -41229,8 +41267,8 @@ lpQ
 bKZ
 yhi
 bEq
-sTy
-pMk
+eRJ
+xAF
 vwk
 lQG
 yhi
@@ -41431,8 +41469,8 @@ yhi
 yhi
 yhi
 nPu
-sTy
-pMk
+eRJ
+xAF
 gzg
 uoV
 wbQ
@@ -41633,8 +41671,8 @@ aQX
 fRD
 fRD
 lQG
-sTy
-pMk
+eRJ
+xAF
 vwk
 lQG
 lOO
@@ -42037,8 +42075,8 @@ lQG
 lQG
 lQG
 rcI
-sTy
-pMk
+gnh
+dYd
 vwk
 uoV
 lQG
@@ -42239,8 +42277,8 @@ gYX
 gYX
 gYX
 gYX
-pMk
-pMk
+aDj
+aDj
 vwk
 uoV
 wbQ
@@ -42841,9 +42879,9 @@ yhi
 yhi
 hcx
 wbQ
-rPB
+hQl
 wsz
-rPB
+hQl
 rPB
 rPB
 sTy
@@ -43851,7 +43889,7 @@ gij
 tjN
 gFO
 yhi
-gij
+sND
 gij
 aLR
 yhi
@@ -44473,7 +44511,7 @@ gij
 yhi
 gij
 gij
-jKP
+gij
 hdi
 yhi
 asO
@@ -44878,7 +44916,7 @@ jGJ
 gij
 bqg
 wme
-xVr
+wme
 wme
 eJv
 exu
@@ -45080,8 +45118,8 @@ yhi
 gij
 efJ
 xIT
-chU
-qYo
+xIT
+xIT
 xIT
 sfa
 sfa
@@ -45282,8 +45320,8 @@ jGJ
 gij
 efJ
 xIT
-chU
-fJP
+xIT
+xIT
 xIT
 sfa
 sfa
@@ -48477,7 +48515,7 @@ aHr
 aHr
 aHr
 yhi
-wka
+gij
 gij
 gij
 gij
@@ -60124,7 +60162,7 @@ pTz
 "}
 (133,1,1) = {"
 lci
-lci
+chU
 lIn
 jcR
 jcR
@@ -60326,8 +60364,8 @@ pTz
 "}
 (134,1,1) = {"
 lci
-lci
-osS
+chU
+fJP
 hIj
 hIj
 hIj
@@ -60528,7 +60566,7 @@ pTz
 "}
 (135,1,1) = {"
 lci
-lci
+chU
 suv
 beu
 bMY
@@ -61802,7 +61840,7 @@ wtw
 wtw
 wtw
 wtw
-awV
+voE
 nFu
 nqA
 wHe
@@ -63356,7 +63394,7 @@ pTz
 "}
 (149,1,1) = {"
 lci
-lci
+chU
 lIn
 jcR
 jcR
@@ -63376,9 +63414,9 @@ mlt
 efp
 lci
 eOn
+jKP
 eOn
-eOn
-jiX
+qYo
 xxz
 lci
 lci
@@ -63558,7 +63596,7 @@ pTz
 "}
 (150,1,1) = {"
 lci
-lci
+chU
 suv
 bMY
 bMY
@@ -68696,7 +68734,7 @@ aoQ
 aoQ
 aoQ
 aoQ
-ljA
+aky
 fbV
 jBp
 evm
@@ -74558,7 +74596,7 @@ uHd
 uHd
 uHd
 uHd
-uHd
+gsX
 uoV
 uoV
 uoV
@@ -75126,10 +75164,10 @@ nCf
 lHa
 wtw
 sei
-bwg
+bRp
 sei
 qgW
-qRH
+xVr
 qgW
 qgW
 sei
@@ -111437,7 +111475,7 @@ pjG
 klE
 uNq
 kIY
-tqC
+bWg
 tqC
 fto
 caN
@@ -112245,7 +112283,7 @@ pjG
 cAs
 ezA
 scK
-tqC
+ixB
 tqC
 owY
 eNz
@@ -112334,7 +112372,7 @@ qFV
 qFV
 qFV
 qFV
-qFV
+dvj
 qFV
 qFV
 qFV

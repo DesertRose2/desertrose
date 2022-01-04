@@ -35,7 +35,7 @@
 /datum/crafting_recipe/food/deathclawomelette
 	name = "Deathclaw Omelette"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 1,
+		/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw = 1,
 		/obj/item/reagent_containers/food/snacks/meat/steak/deathclaw = 1,
 		/obj/item/reagent_containers/food/snacks/butter =2,
 		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1
@@ -50,7 +50,8 @@
 				/obj/item/reagent_containers/glass/bowl = 1,
 				/datum/reagent/water = 10
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/longpork_stew
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	result = /obj/item/reagent_containers/food/snacks/soup/f13/longpork_stew
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD
 
@@ -181,7 +182,7 @@
 /datum/crafting_recipe/food/fried_brahmin_skin
 	name = "Fried brahmin skin"
 	reqs = list(
-		/obj/item/stack/sheet/animalhide/brahmin = 2,
+		/obj/item/stack/sheet/animalhide/f13/brahmin = 2,
 		/obj/item/reagent_containers/food/snacks/butter = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/fried_brahmin_skin
@@ -250,7 +251,7 @@
 /datum/crafting_recipe/food/deathclaw_egg_omelette
 	name = "deathclaw egg omelette"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/f13/deathclawegg = 2,
+		/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw = 2,
 		/obj/item/reagent_containers/food/snacks/meat/steak/deathclaw = 3,
 		/obj/item/reagent_containers/food/snacks/butter = 2,
 		/obj/item/reagent_containers/food/snacks/grown/mutfruit = 2,
@@ -274,10 +275,59 @@
 /datum/crafting_recipe/food/baked_nightstalker_tail
 	name = "Baked Nightstalker tail"
 	reqs = list(
-		/obj/item/clothing/head/f13/stalkerpelt = 1,
+		/obj/item/stack/sheet/animalhide/f13/nightstalker = 1,
 		/obj/item/stack/sheet/mineral/wood = 1,
 		/obj/item/reagent_containers/food/snacks/butter = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/f13/baked_nightstalker_tail
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_ribs
+	name = "Human Ribs"
+	reqs = list(
+		/datum/reagent/consumable/bbqsauce = 5,
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 3,
+		/obj/item/stack/rods = 2
+	)
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	result = /obj/item/reagent_containers/food/snacks/f13/human_ribs
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_burrito
+	name = "Longpork Burrito"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2,
+		/obj/item/reagent_containers/food/snacks/grown/chili = 2,
+		/obj/item/reagent_containers/food/snacks/tortilla = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/human_burrito
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/iguana_bits
+	name = "Iguana Bits"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2,
+		/obj/item/reagent_containers/food/snacks/grown/onion= 1,
+		/obj/item/stack/sheet/mineral/wood = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/f13/iguana_bits
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
+	category = CAT_FOOD
+	subcategory = CAT_WASTEFOOD
+
+/datum/crafting_recipe/food/human_meatpie
+	name = "Longpork Meat pie"
+	reqs = list(
+		/datum/reagent/consumable/blackpepper = 1,
+		/datum/reagent/consumable/sodiumchloride = 1,
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/meat/slab/human= 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/f13/human_meatpie
+	blacklist = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul)
 	category = CAT_FOOD
 	subcategory = CAT_WASTEFOOD

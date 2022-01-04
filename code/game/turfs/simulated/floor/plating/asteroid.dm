@@ -10,7 +10,7 @@
 	icon_plating = "asteroid"
 	postdig_icon_change = TRUE
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	/// Environment type for the turf

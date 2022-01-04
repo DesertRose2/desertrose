@@ -203,13 +203,13 @@
 	name = "Mentats"
 	id = "mentats"
 	cost = 30
-	item_path = /obj/item/storage/pill_bottle/chem_tin/mentats
+	item_path = /obj/item/storage/pill_bottle/chem_tin/f13/mentats
 
 /datum/gang_item/equipment/fixer
 	name = "Fixer"
 	id = "fixer"
 	cost = 100
-	item_path = /obj/item/storage/pill_bottle/chem_tin/fixer
+	item_path = /obj/item/storage/pill_bottle/chem_tin/f13/fixer
 
 /datum/gang_item/equipment/emp
 	name = "EMP Grenade"

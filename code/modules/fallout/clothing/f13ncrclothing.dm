@@ -54,42 +54,30 @@
 	name = "NCR garrison cap"
 	desc = "(I) A simple cloth garrison cap to be worn when a helmet isn't necessary."
 	icon_state = "ncr_cap"
-	item_state = "ncr_cap"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr
 	name = "NCR infantry beret"
 	desc = "(IV) A beret, issued to members of NCR."
-	icon_state = "ncr_infantry_beret_enlisted"
-	item_state = "ncr_infantry_beret_enlisted"
+	icon_state = "infantryberet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_lt
 	name = "NCR officer beret"
 	desc = "(VI) A beret, standard issue for all commissioned NCR Officers."
-	icon_state = "ncr_infantry_beret_officer"
-	item_state = "ncr_infantry_beret_officer"
+	icon_state = "ncr_officer"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/head/beret/ncr_medic
-	name = "NCR combat medic beret"
-	desc = "(IV) A light blue beret, issued to medical personel of the NCR."
-	icon_state = "ncr_medic_beret_enlisted"
-	item_state = "ncr_medic_beret_enlisted"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_medic_lt
-	name = "NCR medical officer beret"
-	desc = "(IV) A white beret, issued to medical officers of the NCR."
-	icon_state = "ncr_medic_beret_officer"
-	item_state = "ncr_medic_beret_officer"
+/obj/item/clothing/head/beret/medical
+	name = "NCR medical beret"
+	desc = "(IV) A white beret, issued to medical personel of the NCR."
+	icon_state = "ncr_medical"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_sapper
 	name = "NCR sapper beret"
 	desc = "(IV) A grey beret, issued to troopers that have passed Sapper School."
-	icon_state = "ncr_sapper_beret"
-	item_state = "ncr_sapper_beret"
+	icon_state = "sapperberet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr_campaign
@@ -113,54 +101,48 @@
 	item_state = "ncr_codresscap"
 	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-//Unused or too meme
-
 /obj/item/clothing/head/beret/ncr_recon
 	name = "NCR first recon beret"
 	desc = "(IV) A red beret, issued to members of the NCR 1st Reconnaissance Battalion often shortened to First Recon."
-	icon_state = "ncr_recon_beret_enlisted"
-	item_state = "ncr_recon_beret_enlisted"
+	icon_state = "reconberet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/beret/ncr_scout
 	name = "NCR third scout beret"
 	desc = "(IV) A brown beret, issued to members of the NCR 1st Reconnaissance Battalion, 3rd Scout Regiment."
 	icon_state = "scoutberet"
-	item_state = "scoutberet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/head/beret/ncr_sof
-	name = "NCR SOF beret"
-	desc = "(VII) A tan beret, issued members of the New California Republic Special Operations Command."
-	icon_state = "ncr_sof_beret"
-	item_state = "ncr_sof_beret"
-	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr_flapcap
 	name = "NCR field cap"
 	desc = "(IV) A special issue canvas NCR field cap with cotton neckflap, for sun protection in arid climates."
 	icon_state = "ncr_flapcap"
 	item_state = "ncr_flapcap"
-	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	icon_state = "ncr_flapcap"
-	item_state = "ncr_flapcap"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/ncr_slouch
 	name = "NCR slouch hat"
 	desc = "(IV) An irregular issue NCR sun hat, the left side of the brim is pinned to the crown for ease with shouldering rifles."
 	icon_state = "ncr_slouch"
-	item_state = "ncr_slouch"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+//Unused or too meme
 
 /obj/item/clothing/head/f13/ncr_stetson
 	name = "NCR air cavalry stetson"
 	desc = "(VI) A black brahmin leather stetson, authorized for usage amongst all troopers assigned to Air Cavalry units."
 	icon_state = "ncr_stetson"
-	item_state = "ncr_stetson"
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/head/beret/ncr_sof
+	name = "NCR SOF beret"
+	desc = "(VII) A tan beret, issued members of the New California Republic Special Operations Command."
+	icon_state = "ncr_sof_beret"
+	armor = list("tier" = 7, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 //Armour
 
+//PVT PFC - Recruit / Trooper
 /obj/item/clothing/suit/armor/f13/ncrarmor
 	name = "NCR patrol vest"
 	desc = "(IV) A standard issue NCR Infantry vest."
@@ -169,13 +151,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	name = "NCR mantle vest"
-	desc = "(IV) A standard issue NCR Infantry vest with a mantle on the shoulder."
-	icon_state = "ncr_standard_mantle"
-	item_state = "ncr_standard_mantle"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-
+//SPC - Combat Medic / Combat Engineer
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	name = "NCR reinforced patrol vest"
 	desc = "(IV) A standard issue NCR Infantry vest reinforced with a groinpad."
@@ -183,6 +159,15 @@
 	item_state = "ncr_reinforced_vest"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+//CPL - Corporal
+/obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	name = "NCR mantle vest"
+	desc = "(IV) A standard issue NCR Infantry vest with a mantle on the shoulder."
+	icon_state = "ncr_standard_mantle"
+	item_state = "ncr_standard_mantle"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+//SGT/SFC - Sergeant / Sergeant First Class
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	name = "NCR reinforced mantle vest"
 	desc = "(V) A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
@@ -190,6 +175,7 @@
 	item_state = "ncr_reinforced_mantle"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
+//2nd LT - Medical Officer
 /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	name = "NCR medical labcoat"
 	desc = "(IV) An armored labcoat typically issued to NCR Medical Officers. It's a standard white labcoat with the Medical Officer's name stitched into the breast and a two headed bear sewn into the shoulder."
@@ -198,6 +184,7 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	allowed = list(/obj/item/gun, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
 
+//1st LT/CPT - Commanding Officer
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	name = "NCR officer vest"
 	desc = "(VI) A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
@@ -339,7 +326,13 @@
 	item_state = "shi"
 	item_color = "shi"
 
-//Die in a pit of fire
+/obj/item/clothing/under/f13/ncr/recon
+	name = "NCR recon fatigues"
+	desc = "A standard duty uniform for the first recon under the New California Republic."
+	icon_state = "reconclothes"
+	item_state = "reconclothes"
+	item_color = "reconclothes"
+
 /obj/item/clothing/under/f13/ncr/scout
 	name = "NCR scout fatigues"
 	desc = "A standard duty uniform for scouts of the New California Republic."
@@ -350,12 +343,14 @@
 //Rangers
 //Hats and Helmets
 
-/obj/item/clothing/head/beret/ncr_recon_ranger
-	name = "NCR ranger recon beret"
-	desc = "(IV) A brown beret, issued to members of the NCR Recon Rangers."
-	icon_state = "scoutberet"
-	item_state = "scoutberet"
+//Custom item - PurplePineapple / Piper Rivera / Appropriated for this
+/obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	name = "recon hood"
+	icon_state = "reconhood"
+	item_state = "reconhood"
+	desc = "(V) A thicker than average leather hood, seamlessly stitched to the jacket you're wearing."
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 
 /obj/item/clothing/head/f13/trailranger
 	name = "NCR trail ranger hat"
@@ -399,15 +394,6 @@
 	item_state = "recon_helmetup"
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 
-/obj/item/clothing/head/f13/ranger/montana
-	name = "reclaimed Ranger helmet"
-	desc = "(VI) A mishmash of, most recognizably, a ranger patrol helmet and a ranger veteran's helmet once repurposed by the Centurion that killed them. It's got signs of wear and rust; its respirator has been gutted, its eyepieces are dull and cracked, and it's got pieces from a few different sources - hard to place sources. The top of the helmet, above the eyes, is emblazoned with a few words - De Oppresso Liber."
-	icon_state = "rangermontana"
-	item_state = "rangermontana"
-	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
-	actions_types = list(/datum/action/item_action/toggle)
-
-
 /obj/item/clothing/head/f13/ranger/montana/attack_self(mob/user)
 	weldingvisortoggle(user)
 	icon_state = "rangermontanaup"
@@ -438,13 +424,17 @@
 
 //Armours
 
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
-	name = "ranger recon duster"
-	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
-	icon_state = "duster_recon"
-	item_state = "duster_recon"
+//Custom item - PurplePineapple / Piper Rivera / Appropriated for this
+/obj/item/clothing/suit/hooded/f13/hooded_recon
+	name = "hooded ranger jacket"
+	desc = "(V) A thicker than average duster worn by NCR recon rangers out in the field. This particular duster has been modified heavily with striped down riot gear and homemade kneepads. A leather hood has been stitched in place of the original collar."
+	icon_state = "hooded_recon"
+	item_state = "hooded_recon"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.1
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS //Since this uses the hooded object, needs to be set to match armor/f13
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 
 /obj/item/clothing/suit/armor/f13/trailranger
 	name = "ranger vest"

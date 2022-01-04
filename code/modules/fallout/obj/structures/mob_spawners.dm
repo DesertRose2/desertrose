@@ -143,7 +143,7 @@
 	var/infinite = FALSE
 	debris = list(/obj/effect/decal/cleanable/hatchery = 1, \
 		/obj/item/stack/sheet/hay/ten = 1, \
-		/obj/item/reagent_containers/food/snacks/f13/egg_nightstalker = 1)
+		/obj/item/reagent_containers/food/snacks/f13/egg/nightstalker = 1)
 	break_message = SPAN_WARNING("The eggs are smashed, the hatchery ruined...")
 	break_sound = 'sound/f13effects/rock_mined.ogg'
 
@@ -178,7 +178,7 @@
 				/mob/living/simple_animal/hostile/mirelurk/hunter = 1,
 				/mob/living/simple_animal/hostile/mirelurk/baby = 5)
 	debris = list(/obj/effect/decal/cleanable/hatchery/mirelurk = 1, \
-				/obj/item/reagent_containers/food/snacks/f13/egg_mirelurk = 1)
+				/obj/item/reagent_containers/food/snacks/f13/egg/mirelurk = 1)
 
 /obj/structure/destructible/hatchery/gecko
 	name = "gecko hatchery"

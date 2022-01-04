@@ -12,7 +12,7 @@
 	mutantears = /obj/item/organ/ears/dullahan
 	blacklisted = TRUE
 	limbs_id = "human"
-	skinned_type = /obj/item/stack/sheet/animalhide/human
+	skinned_type = /obj/item/stack/sheet/animalhide/f13/human
 	has_field_of_vision = FALSE //Too much of a trouble, their vision is already bound to their severed head.
 	species_type = "undead"
 	var/pumpkin = FALSE

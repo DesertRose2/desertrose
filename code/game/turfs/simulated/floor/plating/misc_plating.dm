@@ -51,7 +51,7 @@
 	planetary_atmos = TRUE
 	attachment_holes = FALSE
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
@@ -113,7 +113,7 @@
 	attachment_holes = FALSE
 	bullet_bounce_sound = null
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
@@ -157,7 +157,7 @@
 	name = "iron sand"
 	desc = "Like sand, but more <i>metal</i>."
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 

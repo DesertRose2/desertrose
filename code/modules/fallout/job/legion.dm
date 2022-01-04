@@ -36,6 +36,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/zombiepoultice)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legiongate)
+
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = 			/obj/item/storage/belt/military/assault/legion
@@ -106,7 +108,7 @@ Legate
 		/obj/item/restraints/legcuffs/bola=2,
 		/obj/item/melee/powerfist=1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
 		/obj/item/storage/bag/money/small/legion=1)
 
 /*
@@ -132,7 +134,7 @@ Orator
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/type17
 	l_pocket = 	 /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/ammo_box/magazine/m9mm=3,
 		/obj/item/storage/box/ids/legfollower=1,
 		/obj/item/storage/bag/money/small/legion=1)
@@ -169,7 +171,7 @@ Priestess of Mars
 	shoes = /obj/item/clothing/shoes/roman
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
 		/obj/item/clothing/under/f13/pmarsrobe=1)
 
 /datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -234,7 +236,7 @@ Centurion
 		/obj/item/restraints/legcuffs/bola=1,
 		/obj/item/key/scollar=1,
 		/obj/item/key/bcollar=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/electropack/shockcollar=1,
 		/obj/item/electropack/shockcollar/explosive=2,
 		/obj/item/storage/bag/money/small/legion=1)
@@ -311,7 +313,7 @@ Vexillarius
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/claymore/machete/spatha=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/megaphone/cornu=1,
 		/obj/item/storage/bag/money/small/legofficers=1)
 
@@ -383,8 +385,8 @@ Decanii
 	ears = 			/obj/item/radio/headset/headset_legion
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/claymore/machete/spatha=1,
 		/obj/item/storage/bag/money/small/legion=1)
@@ -453,8 +455,8 @@ Decanii
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/storage/bag/money/small/legofficers=1)
 
@@ -529,8 +531,8 @@ Decanii
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/storage/bag/money/small/legofficers=1)
@@ -599,7 +601,7 @@ Camp Prefect (formerly slave master)
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/melee/curator_whip=1,
 		/obj/item/ammo_box/shotgun/rubber=1,
 		/obj/item/storage/box/handcuffs=1,
@@ -644,7 +646,7 @@ Libritor
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/ammo_box/magazine/m762=2,
 		/obj/item/storage/bag/money/small/legofficers=1,
@@ -693,8 +695,8 @@ Veteran Legionary
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/binoculars=1,
 		/obj/item/storage/bag/money/small/legofficers=1)
@@ -780,7 +782,7 @@ Prime Legionairy
 	r_pocket 		=/obj/item/restraints/handcuffs
 	l_pocket		= /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/storage/bag/money/small/legofficers=1
 	)
@@ -847,7 +849,7 @@ Recruit Legionary
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/storage/bag/money/small/legenlisted=1)
 
 /datum/outfit/loadout/recruitlegline
@@ -923,7 +925,7 @@ Venator
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/storage/bag/money/small/legofficers=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1
 	)
 
 /datum/outfit/loadout/venatorstandard
@@ -986,7 +988,7 @@ Explorer
 	l_pocket	=	/obj/item/flashlight/lantern
 	r_pocket = 		/obj/item/binoculars
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=2,
 		/obj/item/claymore/machete/reinforced=1
@@ -1049,7 +1051,7 @@ Auxilia
 	belt =			null
 	r_pocket =      /obj/item/flashlight/flare/torch
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2)
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2)
 
 /datum/outfit/job/CaesarsLegion/f13auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1161,8 +1163,8 @@ Camp Follower
 	head =	/obj/item/clothing/head/f13/legion/servant
 	neck =	/obj/item/clothing/neck/apron/medicus
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
 		/obj/item/smelling_salts/crafted=1,
 		/obj/item/clothing/under/f13/campfollowerfemale=1,
 		/obj/item/book/granter/trait/mars_teachings=1
@@ -1174,7 +1176,7 @@ Camp Follower
 	mask =		/obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/storage/bag/money/small/legion=1
 	)
 
@@ -1253,7 +1255,7 @@ Off-Duty Legionary
 	r_hand =	/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/storage/bag/money/small/legion=1,
 		)
 
@@ -1262,7 +1264,7 @@ Off-Duty Legionary
 	neck =	/obj/item/clothing/mask/bandana/legcenturion
 	belt =	/obj/item/claymore/machete/spatha
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
 		/obj/item/clothing/accessory/legion/cent=1
 		)
 
@@ -1271,7 +1273,7 @@ Off-Duty Legionary
 	mask =	/obj/item/clothing/mask/bandana/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/clothing/accessory/legion/officer=1
 		)
 
@@ -1280,7 +1282,7 @@ Off-Duty Legionary
 	mask =	/obj/item/clothing/mask/bandana/legdecan
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
 		/obj/item/clothing/accessory/legion/prime=1
 		)
 
@@ -1289,6 +1291,6 @@ Off-Duty Legionary
 	neck =	/obj/item/clothing/neck/mantle/gray
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
 		/obj/item/clothing/accessory/legion/explorer=1
 		)

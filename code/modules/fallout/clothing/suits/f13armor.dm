@@ -726,14 +726,21 @@
 
 /obj/item/clothing/suit/armor/f13/mutie/metal
 	name = "mutant armour"
-	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	desc = "(V) An oversized set of metal armour, made to fit the frame of a super mutant."
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
+/obj/item/clothing/suit/armor/f13/mutie/metal/heavy
+	name = "heavy mutant armour"
+	desc = "(VII) A heavy, rusted metal cuirass, with uneven layers of some kind of metal as pauldrons."
+	icon_state = "mutie_heavy_armour"
+	item_state = "mutie_heavy_armour"
+	armor = list("tier" = 7, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+
 /obj/item/clothing/suit/armor/f13/mutie/metal/reinforced
 	name = "reinforced mutant armour"
-	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	desc = "(VI) An oversized boiler plate, hammered to fit the frame of a super mutant."
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 30, "acid" = 20)
@@ -743,6 +750,20 @@
 	desc = "(V) A suit of large, yet finely forged armour with a plain white tabard draped over the top."
 	icon_state = "mutie_knight"
 	item_state = "mutie_knight"
+
+/obj/item/clothing/suit/hooded/mutie/poncho
+	name = "hooded mutant poncho"
+	desc = "(IV) An oversized poncho with a hood of some description, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
+	icon_state = "mutie_weathered_poncho"
+	item_state = "mutie_weathered_poncho"
+	hoodtype = /obj/item/clothing/head/hooded/muite/poncho
+
+/obj/item/clothing/head/hooded/muite/poncho
+	name = "mutant poncho hood"
+	icon_state = "mutie_weathered_poncho_hood"
+	desc = "(IV) A protective & concealing hood, stitched onto a poncho."
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	flags_inv = HIDEEYES
 
 /obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
 	name = "Ptolemaic combat armor"

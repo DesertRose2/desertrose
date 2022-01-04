@@ -27,7 +27,7 @@
 	decompose = TRUE
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul = 2,
-							/obj/item/stack/sheet/animalhide/human = 1,
+							/obj/item/stack/sheet/animalhide/f13/human = 1,
 							/obj/item/stack/sheet/bone = 1)
 
 //	loot = list(/obj/effect/gibspawner/human, /obj/item/stack/f13Cash/random/low)   // not quite ready for cap drops on ghouls

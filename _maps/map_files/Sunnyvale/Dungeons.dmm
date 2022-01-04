@@ -576,7 +576,7 @@
 	},
 /area/f13/underground/enclave_base)
 "by" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -585,7 +585,7 @@
 	},
 /area/f13/underground/enclave_base)
 "bz" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -1089,7 +1089,7 @@
 	},
 /area/f13/underground/enclave_base)
 "cP" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -1282,7 +1282,7 @@
 /turf/closed/mineral/random/high_chance,
 /area/f13/underground/cave)
 "dt" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1308,7 +1308,7 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/shoes/jackboots,
 /turf/open/floor/plasteel/f13{
@@ -1320,7 +1320,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -1465,7 +1465,7 @@
 	},
 /area/f13/bunker)
 "dS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2107,7 +2107,7 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
@@ -2944,7 +2944,7 @@
 	},
 /area/f13/bunker)
 "hq" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -3072,7 +3072,7 @@
 /area/f13/bunker)
 "hF" = (
 /obj/machinery/light,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -3509,8 +3509,8 @@
 /obj/effect/turf_decal/stripes/red/full,
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3575,8 +3575,8 @@
 	},
 /area/medical/abandoned)
 "iJ" = (
-/obj/item/storage/pill_bottle/chem_tin/mentats,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
@@ -3669,7 +3669,7 @@
 	},
 /area/medical/abandoned)
 "iT" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -4068,8 +4068,8 @@
 "jL" = (
 /obj/structure/table/glass,
 /obj/item/healthanalyzer,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
 	},
@@ -4245,8 +4245,8 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrusty"
 	},

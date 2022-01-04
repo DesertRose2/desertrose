@@ -22,7 +22,7 @@
 	},
 /area/f13/bunker)
 "am" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -280,7 +280,7 @@
 	},
 /area/f13/bunker)
 "eM" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -847,7 +847,7 @@
 	},
 /area/f13/bunker)
 "of" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -1585,7 +1585,7 @@
 /turf/closed/indestructible/rock,
 /area/f13/wasteland)
 "zc" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -1649,8 +1649,8 @@
 	},
 /area/f13/bunker)
 "zW" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "zX" = (
@@ -1694,7 +1694,7 @@
 /area/f13/bunker)
 "Aw" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1724,8 +1724,8 @@
 /area/f13/bunker)
 "AL" = (
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "AN" = (
@@ -1782,7 +1782,7 @@
 	},
 /area/f13/tunnel)
 "Bx" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2005,7 +2005,7 @@
 /area/f13/bunker)
 "Fc" = (
 /obj/machinery/light,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -2160,7 +2160,7 @@
 	},
 /area/f13/wasteland)
 "GJ" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2342,7 +2342,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "JD" = (
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
 /obj/structure/table,
 /turf/open/floor/plasteel/f13{
@@ -2484,7 +2484,7 @@
 	},
 /area/f13/bunker)
 "Ll" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -2952,7 +2952,7 @@
 /area/f13/bunker)
 "Sp" = (
 /obj/structure/table,
-/obj/item/book/granter/trait/crafting/chemistry{
+/obj/item/book/granter/trait/chemistry{
 	name = "Chemistry for Vault Dwellers";
 	pixel_y = 8
 	},
@@ -3061,7 +3061,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "UF" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13{
@@ -3168,7 +3168,7 @@
 /area/f13/bunker)
 "Wp" = (
 /obj/structure/light_construct,
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -3344,8 +3344,8 @@
 /area/f13/bunker)
 "ZF" = (
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ZJ" = (

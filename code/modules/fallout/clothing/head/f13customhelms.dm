@@ -1,12 +1,3 @@
-//Custom item - PurplePineapple / Piper Rivera
-/obj/item/clothing/head/hooded/cloakhood/f13/hooded_recon
-	name = "recon hood"
-	icon_state = "reconhood"
-	item_state = "reconhood"
-	desc = "(VI) A thicker than average leather hood, seamlessly stitched to the jacket you're wearing."
-	armor = list("tier" = 6, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
-
 //Custom items - Pisshole / Valentina Vega
 /obj/item/clothing/head/beret/tina_beret
 	name = "Harebell Scout Beret"
@@ -37,16 +28,18 @@
 	item_state = "mets"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
-//Custom item - Muhsollini / Daiyu Liu
-/obj/item/clothing/head/beret/ncr_medic/shi
-	name = "NCR chinese peaked cap"
-	desc = "(IV) A tan repurposed old chinese remnant officer peaked cap. It still features a bright red star in the middle."
-	icon_state = "shi"
-	item_state = "shi"
-
 //Custom item - annoyingincantation / Ptolemos Gloriosus
 /obj/item/clothing/head/helmet/f13/legion/rangercent/ptolemy
 	name = "Ptolemaic combat helm"
 	desc = "(V) A salvaged helmet of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one sports a flagrant waste of golden and red paint, an excess of luxurious plumage, and a pair of polarized lenses. The word PTOLEMY is carelessly inscribed against the interior."
 	icon_state = "ptolemaic_helm"
 	item_state = "ptolemaic_helm"
+
+//Custom item - Pisshole / Montana
+/obj/item/clothing/head/f13/ranger/montana
+	name = "reclaimed Ranger helmet"
+	desc = "(VI) A mishmash of, most recognizably, a ranger patrol helmet and a ranger veteran's helmet once repurposed by the Centurion that killed them. It's got signs of wear and rust; its respirator has been gutted, its eyepieces are dull and cracked, and it's got pieces from a few different sources - hard to place sources. The top of the helmet, above the eyes, is emblazoned with a few words - De Oppresso Liber."
+	icon_state = "rangermontana"
+	item_state = "rangermontana"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+	actions_types = list(/datum/action/item_action/toggle)

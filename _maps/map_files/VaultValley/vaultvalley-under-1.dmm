@@ -169,7 +169,7 @@
 	},
 /area/f13/ncr)
 "bO" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/raider/tribal,
@@ -455,10 +455,10 @@
 /area/f13/caves)
 "eR" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -1565,7 +1565,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "pl" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/f13,
@@ -1595,7 +1595,7 @@
 	},
 /area/f13/caves)
 "pC" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -1613,7 +1613,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "pG" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/f13,
@@ -1938,7 +1938,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rw" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /turf/open/floor/f13,
@@ -2092,7 +2092,7 @@
 	},
 /area/f13/building)
 "sK" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/raider/firefighter,
@@ -2805,7 +2805,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "zr" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/raider/firefighter,
@@ -3035,7 +3035,7 @@
 	},
 /area/f13/bunker)
 "AY" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/ruins,
@@ -3204,7 +3204,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "CV" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 8
 	},
 /turf/open/floor/f13,
@@ -3229,7 +3229,7 @@
 	},
 /area/f13/caves)
 "Dc" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 4
 	},
 /turf/open/floor/f13,
@@ -3394,7 +3394,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "En" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -3637,7 +3637,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "GL" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/f13,
@@ -4669,7 +4669,7 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "PN" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 8
 	},
 /turf/open/floor/f13,
@@ -4820,9 +4820,9 @@
 /area/f13/tunnel)
 "QE" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/pill/patch/medx,
+/obj/item/reagent_containers/hypospray/medipen/f13/medx,
 /obj/item/reagent_containers/medspray/synthflesh,
-/obj/item/reagent_containers/pill/patch/medx,
+/obj/item/reagent_containers/hypospray/medipen/f13/medx,
 /obj/item/reagent_containers/medspray/synthflesh,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -5657,7 +5657,7 @@
 	},
 /area/f13/building)
 "Yk" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 4
 	},
 /turf/open/floor/f13,

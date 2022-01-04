@@ -1,6 +1,36 @@
 /////////////////
 //Large Objects//
 /////////////////
+
+/datum/crafting_recipe/ncrgate
+	name = "NCR reinforced door"
+	result = /obj/machinery/door/unpowered/secure_NCR
+	reqs = list(/obj/item/stack/sheet/metal = 20,
+				/obj/item/stack/sheet/mineral/wood = 20,)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_availible = FALSE
+
+/datum/crafting_recipe/legiongate
+	name = "Legion iron gate"
+	result = /obj/machinery/door/unpowered/secure_legion
+	reqs = list(/obj/item/stack/sheet/metal = 25)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_availible = FALSE
+
+/datum/crafting_recipe/gate_bos
+	name = "Brotherhood steel door"
+	result = /obj/machinery/door/unpowered/secure_bos
+	reqs = list(/obj/item/stack/sheet/metal = 35)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_availible = FALSE
+
+
 /datum/crafting_recipe/plant
 	name = "Potted plant"
 	result = /obj/item/kirbyplants/random
@@ -346,7 +376,7 @@
 	reqs = list(/obj/item/paper = 5,
 				/obj/item/organ/eyes = 1,
 				/obj/item/organ/heart = 1,
-				/obj/item/stack/sheet/animalhide/human = 1)
+				/obj/item/stack/sheet/animalhide/f13/human = 1)
 	time = 150
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC

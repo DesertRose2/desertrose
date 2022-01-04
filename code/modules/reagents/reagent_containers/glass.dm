@@ -441,11 +441,11 @@
 	var/obj/item/grinded
 	var/mortar_mode = MORTAR_JUICE
 	var/blacklistchems = list(
-	/obj/item/reagent_containers/pill/patch/turbo,
-	/obj/item/reagent_containers/pill/patch/medx,
-	/obj/item/reagent_containers/pill/buffout,
-	/obj/item/reagent_containers/pill/cateye,
-	/obj/item/reagent_containers/pill/patch/jet,
+	/obj/item/reagent_containers/pill/patch/f13/turbo,
+	/obj/item/reagent_containers/hypospray/medipen/f13/medx,
+	/obj/item/reagent_containers/pill/f13/buffout,
+	/obj/item/reagent_containers/pill/f13/cateye,
+	/obj/item/reagent_containers/pill/patch/f13/jet
 	)
 
 

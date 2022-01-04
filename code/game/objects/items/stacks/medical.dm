@@ -468,21 +468,6 @@
 			C.visible_message("<span class='suicide'>[C] screws up like an idiot and still dies anyway!</span>")
 			return (BRUTELOSS)
 
-/obj/item/stack/medical/bone_gel/hydra
-	name = "hydra"
-	singular_name = "hydra"
-	desc = "A large bottle with a hose at the end meant to help deal with fractures in natural way."
-	icon = 'icons/obj/chemical.dmi'
-	icon_state = "hydra"
-	self_delay = 10
-
-	amount = 3
-	self_delay = 10
-
-/obj/item/stack/medical/bone_gel/hydra/attack(mob/living/M, mob/user)
-	to_chat(user, SPAN_WARNING("Hydra can only be used on fractured limbs while aggressively holding someone!"))
-	return
-
 /obj/item/stack/medical/bone_gel/cyborg
 	custom_materials = null
 	is_cyborg = 1
@@ -522,45 +507,3 @@
 		return TRUE
 
 	to_chat(user, SPAN_WARNING("You can't heal [M] with the \the [src]!"))
-
-/obj/item/stack/medical/poultice
-	name = "mourning poultices"
-	singular_name = "mourning poultice"
-	desc = "A type of primitive herbal poultice.\nWhile traditionally used to prepare corpses for the mourning feast, it can also treat scrapes and burns on the living, however, it is liable to cause shortness of breath when employed in this manner.\nIt is imbued with ancient wisdom."
-	icon = 'icons/obj/chemical.dmi'
-	icon_state = "bandaid_mourningpoultice"
-	amount = 15
-	max_amount = 15
-	heal_brute = 10
-	heal_burn = 10
-	self_delay = 40
-	other_delay = 10
-	repeating = TRUE
-	merge_type = /obj/item/stack/medical/poultice
-	novariants = TRUE
-
-/obj/item/stack/medical/poultice/ten
-	amount = 10
-
-/obj/item/stack/medical/poultice/five
-	amount = 5
-
-/obj/item/stack/medical/poultice/heal(mob/living/M, mob/user)
-	if(iscarbon(M))
-		return heal_carbon(M, user, heal_brute, heal_burn)
-	return ..()
-
-/obj/item/stack/medical/poultice/post_heal_effects(amount_healed, mob/living/carbon/healed_mob, mob/user)
-	. = ..()
-	healed_mob.adjustOxyLoss(amount_healed)
-
-/datum/chemical_reaction/mourningpoultice
-	name = "mourning poultice"
-	id = "mournpoultice"
-	required_reagents = list(/datum/reagent/consumable/tea/coyotetea = 10, /datum/reagent/cellulose = 20, /datum/reagent/consumable/tea/feratea = 10)
-	mob_react = FALSE
-
-/datum/chemical_reaction/mourningpoultice/on_reaction(datum/reagents/holder, multiplier)
-	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= multiplier, i++)
-		new /obj/item/stack/medical/poultice/five(location)

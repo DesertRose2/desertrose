@@ -5,63 +5,12 @@
 	item_state = "sheet-hide"
 	novariants = TRUE
 
-/obj/item/stack/sheet/animalhide/human
-	name = "human skin"
-	desc = "hopefully it was cut from a feral ghoul."
-	icon_state = "sheet-humhide"
-	singular_name = "human skin piece"
-	novariants = FALSE
-	merge_type = /obj/item/stack/sheet/animalhide/human
-
-GLOBAL_LIST_INIT(human_recipes, list( \
-	new/datum/stack_recipe("bloated human costume", /obj/item/clothing/suit/hooded/bloated_human, 5), \
-	))
-
-/obj/item/stack/sheet/animalhide/human/get_main_recipes()
-	. = ..()
-	. += GLOB.human_recipes
-
 /obj/item/stack/sheet/animalhide/generic
 	name = "skin"
 	desc = "A piece of skin."
 	singular_name = "skin piece"
 	novariants = FALSE
 	merge_type = /obj/item/stack/sheet/animalhide/generic
-
-/obj/item/stack/sheet/animalhide/corgi
-	name = "corgi hide"
-	desc = "The by-product of corgi farming."
-	singular_name = "corgi hide piece"
-	icon_state = "sheet-corgi"
-	item_state = "sheet-corgi"
-	merge_type = /obj/item/stack/sheet/animalhide/corgi
-
-
-GLOBAL_LIST_INIT(gondola_recipes, list ( \
-	new/datum/stack_recipe("gondola mask", /obj/item/clothing/mask/gondola, 1), \
-	new/datum/stack_recipe("gondola suit", /obj/item/clothing/under/costume/gondola, 2), \
-	new/datum/stack_recipe("gondola bedsheet", /obj/item/bedsheet/gondola, 1), \
-	))
-
-/obj/item/stack/sheet/animalhide/gondola
-	name = "gondola hide"
-	desc = "The extremely valuable product of gondola hunting."
-	singular_name = "gondola hide piece"
-	icon_state = "sheet-gondola"
-	item_state = "sheet-gondola"
-	merge_type = /obj/item/stack/sheet/animalhide/gondola
-
-/obj/item/stack/sheet/animalhide/gondola/get_main_recipes()
-	. = ..()
-	. += GLOB.gondola_recipes
-
-GLOBAL_LIST_INIT(corgi_recipes, list ( \
-	new/datum/stack_recipe("corgi costume", /obj/item/clothing/suit/hooded/ian_costume, 3), \
-	))
-
-/obj/item/stack/sheet/animalhide/corgi/get_main_recipes()
-	. = ..()
-	. += GLOB.corgi_recipes
 
 /obj/item/stack/sheet/animalhide/cat
 	name = "cat hide"
@@ -129,12 +78,6 @@ GLOBAL_LIST_INIT(xeno_recipes, list ( \
 	icon = 'icons/mob/alien.dmi'
 	icon_state = "claw"
 
-/obj/item/weed_extract
-	name = "weed extract"
-	desc = "A piece of slimy, purplish weed."
-	icon = 'icons/mob/alien.dmi'
-	icon_state = "weed_extract"
-
 /obj/item/stack/sheet/hairlesshide
 	name = "hairless hide"
 	desc = "This hide was stripped of its hair, but still needs washing and tanning."
@@ -186,25 +129,6 @@ GLOBAL_LIST_INIT(leather_recipes, list ( \
 /obj/item/stack/sheet/leather/twenty
 	amount = 20
 
-/*
- * Sinew
- */
-/obj/item/stack/sheet/sinew
-	name = "sinew"
-	icon = 'icons/obj/mining.dmi'
-	desc = "Long stringy filaments, presumably from some kind of animal."
-	singular_name = "sinew"
-	icon_state = "sinew"
-	novariants = TRUE
-	merge_type = /obj/item/stack/sheet/sinew
-
-GLOBAL_LIST_INIT(sinew_recipes, list ( \
-	new/datum/stack_recipe("sinew restraints", /obj/item/restraints/handcuffs/sinew, 1), \
-))
-
-/obj/item/stack/sheet/sinew/get_main_recipes()
-	. = ..()
-	. += GLOB.sinew_recipes
 
 		/*
  * Plates
@@ -229,14 +153,6 @@ GLOBAL_LIST_INIT(sinew_recipes, list ( \
 	icon_state = "polar_bear_hide"
 	singular_name = "polar bear hide"
 	merge_type = /obj/item/stack/sheet/animalhide/goliath_hide/polar_bear_hide
-
-/obj/item/stack/sheet/animalhide/chitin
-	name = "insect chitin"
-	desc = "Thick insect chitin, tough but light."
-	singular_name = "piece of insect chitin"
-	icon_state = "sheet-chitin"
-	grind_results = list(/datum/reagent/sodium = 3, /datum/reagent/chlorine = 3)
-	merge_type = /obj/item/stack/sheet/animalhide/chitin
 
 /obj/item/stack/sheet/animalhide/ashdrake
 	name = "ash drake hide"

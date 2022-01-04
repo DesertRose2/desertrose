@@ -55,7 +55,7 @@
 	name = "reinforced leather armor"
 	result = /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 	reqs = list(/obj/item/clothing/suit/armor/f13/leatherarmor = 1,
-				/obj/item/stack/sheet/animalhide/gecko = 3
+				/obj/item/stack/sheet/animalhide/f13/gecko = 3
 	)
 	tools = list(TOOL_WORKBENCH)
 	time = 60
@@ -65,7 +65,7 @@
 /datum/crafting_recipe/leather_jacket
 	name = "leather jacket"
 	result = /obj/item/clothing/suit/armor/f13/leather_jacket
-	reqs = list(/obj/item/stack/sheet/animalhide/brahmin = 2,
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/brahmin = 2,
 				/obj/item/stack/sheet/durathread = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 60
@@ -76,8 +76,8 @@
 	name = "combat jacket"
 	result = /obj/item/clothing/suit/armor/f13/leather_jacket/combat
 	reqs = list(/obj/item/clothing/suit/armor/f13/leather_jacket = 1,
-				/obj/item/stack/sheet/animalhide/brahmin = 1,
-				/obj/item/stack/sheet/animalhide/gecko = 1,
+				/obj/item/stack/sheet/animalhide/f13/brahmin = 1,
+				/obj/item/stack/sheet/animalhide/f13/gecko = 1,
 				/obj/item/stack/sheet/leather = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 60
@@ -766,7 +766,7 @@
 /datum/crafting_recipe/brahmin
 	name = "male brahmin-skin outfit"
 	result = /obj/item/clothing/under/f13/mercadv
-	reqs = list(/obj/item/stack/sheet/animalhide/brahmin = 1)
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/brahmin = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
@@ -775,7 +775,7 @@
 /datum/crafting_recipe/fbrahmin
 	name = "female brahmin-skin outfit"
 	result = /obj/item/clothing/under/f13/female/brahmin
-	reqs = list(/obj/item/stack/sheet/animalhide/brahmin = 1)
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/brahmin = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
@@ -1162,7 +1162,7 @@
 /datum/crafting_recipe/tribalgeckoarmor
 	name = "Gecko Armor"
 	result = /obj/item/clothing/suit/armor/f13/tribal
-	reqs = list(/obj/item/stack/sheet/animalhide/gecko = 2,
+	reqs = list(/obj/item/stack/sheet/animalhide/f13/gecko = 2,
 				/obj/item/stack/sheet/cloth = 2,
 				/obj/item/stack/sheet/hay = 3)
 	time = 10
@@ -1230,6 +1230,7 @@
 /datum/crafting_recipe/ncrcombatarmor
 	name = "NCR combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/ncr
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1240,6 +1241,7 @@
 /datum/crafting_recipe/ncrcombathelmet
 	name = "NCR combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/ncr
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)	
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30

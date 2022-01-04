@@ -34,7 +34,7 @@ Coven Stuff
 	suit_store =  	/obj/item/gun/ballistic/automatic/pistol/suppressed
 
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2,
 		/obj/item/flashlight/flare/culttorch=1,
 		/obj/item/grenade/flashbang=1,
 		/obj/item/pda=1,
@@ -92,9 +92,9 @@ Great Khans
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs=1, \
 		/obj/item/restraints/legcuffs/bola=1, \
-		/obj/item/reagent_containers/pill/patch/jet=2, \
-		/obj/item/reagent_containers/pill/patch/medx=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
+		/obj/item/reagent_containers/pill/patch/f13/jet=2, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/medx=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan/battlecoat
 	head = /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -187,9 +187,9 @@ Great Khans
 	l_pocket = /obj/item/storage/bag/money/small/khan
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs=1, \
-		/obj/item/reagent_containers/pill/patch/jet=2, \
-		/obj/item/reagent_containers/pill/patch/medx=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1)
+		/obj/item/reagent_containers/pill/patch/f13/jet=2, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/medx=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1)
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -200,7 +200,7 @@ Great Khans
 	name = "Chemist"
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/beaker/plastic=2,
-		/obj/item/book/granter/trait/crafting/chemistry=1,
+		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/clothing/mask/gas/glass=1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv = 1)
@@ -220,7 +220,7 @@ Great Khans
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/autoloader = 1,
 		/obj/item/ammo_box/magazine/m45 = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2,
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/book/granter/trait/big_leagues=1)
 /*
@@ -289,8 +289,8 @@ Bandit
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	backpack_contents = list(
 		/obj/item/claymore/machete/pipe=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
-		/obj/item/reagent_containers/pill/patch/healingpowder=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1, \
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1, \
 		/obj/item/storage/bag/money/small/raider=1, \
 		/obj/item/ammo_box/magazine/m9mm = 2
 		)
@@ -427,8 +427,8 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs=2, \
 		/obj/item/claymore/machete/pipe=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
-		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1, \
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2, \
 		/obj/item/storage/bag/money/small/raider=1)
 
 	suit_store = pick(
@@ -490,7 +490,7 @@ Outlaw
 		/obj/item/stock_parts/cell/ammo/ec=3,
 		/obj/item/switchblade=1,
 		/obj/item/book/granter/trait/midsurgery=1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4,
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak = 4,
 		/obj/item/reagent_containers/medspray/synthflesh = 2
 		)
 
@@ -503,10 +503,10 @@ Outlaw
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/claymore/machete/pipe/pan = 1,
 		/obj/item/ammo_box/tube/a357=3,
-		/obj/item/reagent_containers/pill/patch/jet=1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho=1,
-		/obj/item/reagent_containers/pill/patch/turbo=1,
-		/obj/item/reagent_containers/pill/buffout=1
+		/obj/item/reagent_containers/pill/patch/f13/jet=1,
+		/obj/item/reagent_containers/hypospray/medipen/f13/psycho=1,
+		/obj/item/reagent_containers/pill/patch/f13/turbo=1,
+		/obj/item/reagent_containers/pill/f13/buffout=1
 		)
 
 /datum/outfit/loadout/highway
@@ -562,7 +562,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/shield/makeshift=1,
 		/obj/item/megaphone=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=3
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=3
 	)
 
 /datum/outfit/loadout/raider_bos
@@ -574,7 +574,7 @@ Outlaw
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=3,
 		/obj/item/kitchen/knife/combat=1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super=1
 		)
 
 /datum/outfit/loadout/raider_ncr
@@ -598,7 +598,7 @@ Outlaw
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=2,
-		/obj/item/reagent_containers/pill/patch/healingpowder=3)
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=3)
 
 /datum/outfit/loadout/raider_vault
 	name = "Dishelved Vaultie"
@@ -673,8 +673,8 @@ Outlaw
 	r_pocket = /obj/item/flashlight/flare
 	belt = 	/obj/item/kitchen/knife/combat/survival
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/reagent_containers/pill/radx=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2, \
+		/obj/item/reagent_containers/pill/f13/radx=1, \
 		/obj/item/storage/bag/money/small/wastelander, \
 		/obj/item/kitchen/knife)
 	suit_store = pick(

@@ -83,7 +83,7 @@ Administrator
 		/obj/item/reagent_containers/hypospray/combat=1,
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/reagent_containers/dropper/SR/NotVault=1,
-		/obj/item/book/granter/trait/crafting/chemistry=1,
+		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/techno=1)
 
 /*
@@ -176,7 +176,7 @@ Practitioner
 	satchel = 	/obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2,
 		/obj/item/reagent_containers/medspray/synthflesh=1,
 		/obj/item/storage/firstaid/ancient=1)
 

@@ -35,7 +35,7 @@
 		M.AdjustUnconscious(-20, 0)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0 && M.getToxLoss() == 0)
 		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder) && !M.reagents.has_reagent(/datum/reagent/medicine/longpork) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
 		M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER)
@@ -85,7 +85,7 @@
 		M.AdjustUnconscious(-20, 0)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0 && M.getToxLoss() == 0 && M.getOxyLoss() == 0)
 		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/longpork) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
 		M.adjustBruteLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustFireLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
@@ -101,25 +101,33 @@
 	..()
 	. = TRUE
 
+
+// ----------------------
+// BITTER DRINK REAGENT
+// ----------------------    Intended: Slow heal but very good total, brute, burn, a little tox. No stack with other meds, and OD limit just above 1 dose. Not locked to tribals.
+
 /datum/reagent/medicine/bitter_drink
 	name = "bitter drink"
-	description = "An herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys."
+	description = "This bitter tasting drink has become popular in the Legion, suitable for wounded warriors on long forced marches.<br>Slow working, does help with both wounds and poison, but nobody can take more than one bottle without puking. Avoid mixing with other medicine."
 	reagent_state = LIQUID
 	color ="#A9FBFB"
-	taste_description = "bitterness and liquid pain"
-	metabolization_rate = 0.7 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
+	taste_description = "deep bitterness"
+	metabolization_rate = 0.2 * REAGENTS_METABOLISM
 	overdose_threshold = 11
 
 /datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
+	if(M.health < 0)
+		M.adjustToxLoss(-0.3*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustBruteLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustFireLoss(-0.4*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
 		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) //should prevent stacking with healing powder and stimpaks
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/longpork) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
 		M.adjustFireLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-		M.Dizzy(5)
 		M.set_disgust(10)
 		. = TRUE
-	..()
+	..() 
 
 /datum/reagent/medicine/bitter_drink/overdose_start(mob/living/M)
 	to_chat(M, "<span class='userdanger'>You feel your stomach rejecting the disgusting concoction.</span>")
@@ -128,10 +136,15 @@
 /datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
 	M.set_disgust(60)
 	M.Dizzy(10)
-	M.adjustFireLoss(3*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustBruteLoss(3*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustOxyLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
+
+
+// ----------------------
+// HEALING POWDER REAGENT
+// ----------------------
 
 /datum/reagent/medicine/healing_powder
 	name = "healing powder"
@@ -180,7 +193,7 @@
 
 /datum/reagent/medicine/healing_powder/poultice
 	name = "healing poultice"
-	description = "Restores limb condition and heals rapidly."
+	description = "Restores even major bruising and heals wounds rapidly."
 	color = "#C8A5DC"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30
@@ -223,6 +236,11 @@
 	..()
 	. = TRUE
 
+
+// ----------------------
+// MUSHROOM EXTRACT REAGENT
+// ----------------------
+
 /datum/reagent/medicine/radshroom
 	name = "Mushroom extract"
 	description = "A combination of punga and cave fungus to help dealing with radiation."
@@ -230,11 +248,16 @@
 	color = "#533404c5"
 	metabolization_rate = 1.2 * REAGENTS_METABOLISM
 
-/datum/reagent/radshroom/radx/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/radshroom/on_mob_life(mob/living/carbon/M)
 	if(M.radiation > 0)
 		M.radiation -= min(M.radiation, 12)
 	. = TRUE
 	..()
+
+
+// ----------------
+// RAD-X REAGENT
+// ----------------
 
 /datum/reagent/medicine/radx
 	name = "Rad-X"
@@ -250,8 +273,13 @@
 	. = TRUE
 	..()
 
+
+// ----------------
+// RADAWAY REAGENT
+// ----------------
+
 /datum/reagent/medicine/radaway
-	name = "Radaway"
+	name = "RadAway"
 
 	description = "A potent anti-toxin drug."
 	reagent_state = LIQUID
@@ -266,6 +294,11 @@
 		H.confused = max(M.confused, 3)
 	. = TRUE
 	..()
+
+
+// ----------------
+// MED-X REAGENT
+// ----------------
 
 /datum/reagent/medicine/medx
 	name = "Med-X"
@@ -396,6 +429,11 @@
 		M.Jitter(5)
 	..()
 
+
+// ----------------
+// CATEYE REAGENT
+// ----------------
+
 /datum/reagent/medicine/cateye
 	name = "Cateye"
 
@@ -458,6 +496,11 @@
 		. = TRUE
 		M.blur_eyes(40)
 	..()
+
+
+// ----------------
+// MENTAT REAGENT
+// ----------------
 
 /datum/reagent/medicine/mentat
 	name = "Mentat Powder"
@@ -535,6 +578,11 @@
 		M.Jitter(5)
 	..()
 
+
+// ----------------
+// FIXER REAGENT
+// ----------------
+
 /datum/reagent/medicine/fixer
 	name = "Fixer Powder"
 
@@ -555,6 +603,11 @@
 		H.vomit(10)
 	..()
 	. = TRUE
+
+
+// ----------------
+// GAIA EXTRACT REAGENT
+// ----------------
 
 /datum/reagent/medicine/gaia
 	name = "Gaia Extract"
@@ -577,8 +630,13 @@
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
 
-/datum/reagent/medicine/longpork_stew
-	name = "longpork stew"
+
+// ----------------
+// LONGPORK REAGENT
+// ----------------
+
+/datum/reagent/medicine/longpork
+	name = "longpork"
 	description = "A dish sworn by some to have unusual healing properties. To most it just tastes disgusting. What even is longpork anyways?..."
 	reagent_state = LIQUID
 	color =  "#915818"
@@ -588,21 +646,38 @@
 	var/longpork_hurting = 0
 	var/longpork_lover_healing = -2
 
-/datum/reagent/medicine/longpork_stew/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/longpork/on_mob_life(mob/living/carbon/M)
 	var/is_longporklover = FALSE
 	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER))
 		is_longporklover = TRUE
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
 		metabolization_rate = 3 * REAGENTS_METABOLISM //metabolizes much quicker if not injured
 	var/longpork_heal_rate = (is_longporklover ? longpork_lover_healing : longpork_hurting) * REAGENTS_EFFECT_MULTIPLIER
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
 		M.adjustFireLoss(longpork_heal_rate)
 		M.adjustBruteLoss(longpork_heal_rate)
 		M.adjustToxLoss(is_longporklover ? 0 : 3)
 		. = TRUE
 		..()
 
-/datum/reagent/medicine/longpork_stew/overdose_process(mob/living/M)
+/datum/reagent/medicine/longpork/overdose_process(mob/living/M)
 	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
+
+
+// --------------------------
+// MOURNING DUST REAGENT
+// --------------------------
+
+/datum/chemical_reaction/mourningdust
+	name = "mourning dust"
+	id = "mournpoultice"
+	required_reagents = list(/datum/reagent/consumable/tea/coyotetea = 10, /datum/reagent/cellulose = 20, /datum/reagent/consumable/tea/feratea = 10)
+	mob_react = FALSE
+
+/datum/chemical_reaction/mourningdust/on_reaction(datum/reagents/holder, multiplier)
+	var/location = get_turf(holder.my_atom)
+	for(var/i = 1, i <= multiplier, i++)
+		new /obj/item/stack/medical/mourning/five(location)
+

@@ -193,9 +193,9 @@
 /obj/item/reagent_containers/pill/charcoal,
 /obj/item/reagent_containers/pill/charcoal,
 /obj/item/reagent_containers/pill/charcoal,
-/obj/item/reagent_containers/pill/fixer,
-/obj/item/reagent_containers/pill/fixer,
-/obj/item/reagent_containers/pill/fixer,
+/obj/item/reagent_containers/pill/f13/fixer,
+/obj/item/reagent_containers/pill/f13/fixer,
+/obj/item/reagent_containers/pill/f13/fixer,
 /obj/item/reagent_containers/pill/mentat,
 /obj/item/reagent_containers/pill/mentat,
 /obj/item/reagent_containers/pill/mentat,
@@ -1834,14 +1834,14 @@
 /obj/structure/closet/crate{
 	icon_state = "medicalcrate"
 	},
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/f13/wood,
 /area/space)
 "eO" = (
@@ -3032,7 +3032,7 @@
 "it" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/drinks/flask,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3069,8 +3069,8 @@
 /area/space)
 "ix" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/pill/patch/turbo,
-/obj/item/reagent_containers/pill/patch/turbo,
+/obj/item/reagent_containers/pill/patch/f13/turbo,
+/obj/item/reagent_containers/pill/patch/f13/turbo,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3133,9 +3133,9 @@
 /area/space)
 "iF" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3187,7 +3187,7 @@
 /obj/item/clothing/suit/armor/f13/leatherarmor,
 /obj/item/clothing/gloves/botanic_leather,
 /obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/effect/spawner/lootdrop/clothing_low,
 /obj/item/storage/bag/plants,
@@ -3336,7 +3336,7 @@
 /obj/structure/table/wood/settler,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/space)
 "ji" = (
@@ -3447,8 +3447,8 @@
 "jy" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/firstaid,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13/wood,
 /area/space)
 "jz" = (
@@ -3746,11 +3746,11 @@
 /turf/open/floor/wood,
 /area/space)
 "kv" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /turf/open/floor/wood,
 /area/space)
 "kw" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/wood,
 /area/space)
 "kx" = (
@@ -3891,7 +3891,7 @@
 /area/space)
 "kY" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/book/granter/crafting_recipe/gunsmith_one,
 /turf/open/floor/f13/wood,
 /area/space)
@@ -4122,7 +4122,7 @@
 /turf/open/floor/f13/wood,
 /area/space)
 "lP" = (
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -4582,7 +4582,7 @@
 "ni" = (
 /obj/structure/table,
 /obj/item/paper,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -4633,7 +4633,7 @@
 /area/space)
 "nq" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -4707,7 +4707,7 @@
 /area/space)
 "nz" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -4883,7 +4883,7 @@
 "oa" = (
 /obj/structure/bed/mattress/pregame,
 /obj/item/clothing/head/fedora,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -4906,7 +4906,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "od" = (
-/obj/structure/tires/half,
+/obj/effect/overlay/junk/tire_buried,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "oe" = (
@@ -5026,7 +5026,7 @@
 /obj/item/clothing/shoes/roman,
 /obj/item/shield/riot/roman,
 /obj/item/claymore/machete/gladius,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "ow" = (
@@ -5120,7 +5120,7 @@
 	},
 /area/space)
 "oI" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "oJ" = (
@@ -5342,7 +5342,7 @@
 /area/space)
 "py" = (
 /obj/structure/bed,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/f13/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "pz" = (
@@ -5637,15 +5637,15 @@
 /obj/structure/table/wood,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/mask/surgical,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/lighter,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "qw" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/stack/medical/gauze/improvised,
 /obj/item/stack/medical/gauze/improvised,
 /obj/item/stack/medical/gauze/improvised,
@@ -6047,7 +6047,7 @@
 /area/space)
 "rN" = (
 /obj/structure/bed/mattress/pregame,
-/obj/item/stack/sheet/animalhide/molerat,
+/obj/item/stack/sheet/animalhide/f13/generic,
 /obj/effect/landmark/start/f13/vetlegionary,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
@@ -6071,9 +6071,9 @@
 /area/space)
 "rR" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "rS" = (
@@ -6095,7 +6095,7 @@
 "rV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/mattress/pregame,
-/obj/item/stack/sheet/animalhide/molerat,
+/obj/item/stack/sheet/animalhide/f13/generic,
 /obj/effect/landmark/start/f13/vetlegionary,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
@@ -6187,7 +6187,7 @@
 /area/space)
 "si" = (
 /obj/structure/bed/mattress/pregame,
-/obj/item/stack/sheet/animalhide/molerat,
+/obj/item/stack/sheet/animalhide/f13/generic,
 /obj/effect/landmark/start/f13/explorer,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
@@ -8142,7 +8142,7 @@
 /area/space)
 "KY" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon,
+/obj/item/clothing/suit/hooded/f13/hooded_recon,
 /obj/item/storage/belt/military/reconbandolier,
 /turf/open/floor/wood,
 /area/space)
@@ -8188,9 +8188,9 @@
 /area/space)
 "Lf" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/clothing/under/f13/blackdress,
 /obj/item/clothing/gloves/f13/lace,
 /turf/open/floor/f13/wood,
@@ -8412,7 +8412,7 @@
 /area/space)
 "LL" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/pill/charcoal,
 /obj/item/reagent_containers/pill/charcoal,
 /turf/open/floor/f13/wood,
@@ -8517,7 +8517,7 @@
 "LY" = (
 /obj/structure/table/wood,
 /obj/item/folder/yellow,
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /turf/open/floor/f13/wood,
 /area/space)
 "LZ" = (

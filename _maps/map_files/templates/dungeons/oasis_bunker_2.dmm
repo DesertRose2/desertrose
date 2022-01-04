@@ -675,9 +675,9 @@
 /area/f13/bunker)
 "me" = (
 /obj/structure/closet/secure_closet/medical1,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/hypospray/medipen/stimulants,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/mesh,
 /turf/open/floor/plasteel/barber{
@@ -990,7 +990,7 @@
 /area/f13/bunker)
 "se" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"

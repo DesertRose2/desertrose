@@ -376,7 +376,7 @@
 	},
 /area/f13/bunker)
 "hn" = (
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -469,9 +469,9 @@
 "iW" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "redrustyfull"
 	},
@@ -725,7 +725,7 @@
 /turf/open/floor/grass,
 /area/f13/bunker)
 "nh" = (
-/obj/structure/chair/sofa/corp/left,
+/obj/structure/chair/sofa/left/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -808,8 +808,8 @@
 "oH" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "floorrusty"
 	},
@@ -1060,7 +1060,7 @@
 "tF" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
@@ -1070,8 +1070,8 @@
 "tG" = (
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -1233,7 +1233,7 @@
 /area/f13/bunker)
 "wQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
@@ -1330,7 +1330,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/bunker)
 "zK" = (
@@ -1715,8 +1715,8 @@
 "GY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -1944,7 +1944,7 @@
 	},
 /area/f13/bunker)
 "KR" = (
-/obj/structure/chair/sofa/corp,
+/obj/structure/chair/sofa/fancy,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -1993,7 +1993,7 @@
 /turf/open/floor/grass,
 /area/f13/bunker)
 "LL" = (
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2172,7 +2172,7 @@
 	},
 /area/f13/bunker)
 "OR" = (
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2260,7 +2260,7 @@
 	},
 /area/f13/bunker)
 "QF" = (
-/obj/structure/chair/sofa/corp/corner{
+/obj/structure/chair/sofa/corner/fancy{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/cobweb,
@@ -2603,7 +2603,7 @@
 	},
 /area/f13/bunker)
 "VU" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right/fancy{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2716,7 +2716,7 @@
 /area/f13/bunker)
 "XA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair1{
+/obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
@@ -2771,7 +2771,7 @@
 /obj/structure/closet{
 	storage_capacity = 10
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "floorrusty"
 	},

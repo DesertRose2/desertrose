@@ -287,7 +287,7 @@ Mayor
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/flare
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2, \
 		/obj/item/storage/firstaid/regular,
 		/obj/item/clothing/accessory/armband/medblue  \
 		)
@@ -336,7 +336,7 @@ Mayor
 	name = "Protector of the Faith"
 	l_hand = /obj/item/nullrod
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2
 		)
 
 /datum/job/den/f13preacher/after_spawn(mob/living/H, mob/M)

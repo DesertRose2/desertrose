@@ -236,7 +236,7 @@
 /obj/machinery/smartfridge/drying_rack
 	name = "drying rack"
 	desc = "A wooden contraption, used to dry plant products, food and hide."
-	icon = 'icons/obj/hydroponics/equipment.dmi'
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "drying_rack"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 5
@@ -320,7 +320,7 @@
 		var/obj/item/reagent_containers/food/snacks/S = O
 		if(S.dried_type)
 			return TRUE
-	if(istype(O, /obj/item/stack/sheet/wetleather/)) //no wethide
+	if(istype(O, /obj/item/stack/sheet/wetleather) || istype(O, /obj/item/stack/sheet/animalhide/f13/nightstalker) || istype(O, /obj/item/stack/sheet/animalhide/f13/bighorner))
 		return TRUE
 	return FALSE
 
@@ -347,6 +347,14 @@
 	for(var/obj/item/stack/sheet/wetleather/WL in src)
 		new /obj/item/stack/sheet/leather(drop_location(), WL.amount)
 		qdel(WL)
+		return TRUE
+	for(var/obj/item/stack/sheet/animalhide/f13/bighorner/BH in src)
+		new /obj/item/stack/sheet/animalhide/f13/pelt_horner(drop_location(), BH.amount)
+		qdel(BH)
+		return TRUE
+	for(var/obj/item/stack/sheet/animalhide/f13/nightstalker/NS in src)
+		new /obj/item/stack/sheet/animalhide/f13/pelt_stalker(drop_location(), NS.amount)
+		qdel(NS)
 		return TRUE
 	return FALSE
 
@@ -471,10 +479,10 @@
 					// /obj/item/reagent_containers/medigel,
 					/obj/item/reagent_containers/chem_pack,
 					/obj/item/reagent_containers/hypospray/medipen,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-					/obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom
 	))
 
 	if(istype(O, /obj/item/storage/pill_bottle))
@@ -620,11 +628,12 @@
 		icon_state = "[initial(icon_state)]-off"
 
 // -------------------------
-//  Gardentool Rack
+//  Gardentool Rack FALLOUT CERTIFIED
 // -------------------------
 /obj/machinery/smartfridge/bottlerack/gardentool
 	name = "garden toolrack"
 	desc = "The wasteland farmers organisational tool storage."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "gardentool"
 	layer = ABOVE_OBJ_LAYER
 	max_n_of_items = 30
@@ -644,12 +653,23 @@
 	. = ..()
 	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, .proc/can_be_rotated))
 
+/obj/machinery/smartfridge/bottlerack/gardentool/primitive
+	initial_contents = list(
+		/obj/item/shovel = 2,
+		/obj/item/hatchet = 2,
+		/obj/item/cultivator/rake  = 2,
+		/obj/item/scythe = 1,
+		/obj/item/reagent_containers/glass/bucket/wood = 3,
+		/obj/item/storage/bag/plants = 2)
+
+
 // -------------------------
-//  Seedbin
+//  Seedbin FALLOUT CERTIFIED
 // -------------------------
 /obj/machinery/smartfridge/bottlerack/seedbin
 	name = "seed bin"
 	desc = "Organised dumping ground for the starters of life."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "seedbin"
 	max_n_of_items = 400
 
@@ -657,6 +677,16 @@
 	if(istype(O, /obj/item/seeds))
 		return TRUE
 	return FALSE
+
+/obj/machinery/smartfridge/bottlerack/seedbin/primitive
+	initial_contents = list(
+		/obj/item/seeds/wheat = 3,
+		/obj/item/seeds/poppy/broc = 2,
+		/obj/item/seeds/xander = 2,
+		/obj/item/seeds/feracactus = 1,
+		/obj/item/seeds/fungus = 1,
+		/obj/item/seeds/punga = 1,
+		/obj/item/seeds/ambrosia  = 1,)
 
 // ---------------------------------------
 // Update Icons for Seed Bin
@@ -685,11 +715,12 @@
 		icon_state = "[initial(icon_state)]-off"
 
 //-------------------------
-// grownbin
+// grownbin FALLOUT CERTIFIED
 //-------------------------
 /obj/machinery/smartfridge/bottlerack/grownbin
 	name = "Harvest bin"
 	desc = "A large box, to contain the harvest that the Earth has blessed upon you."
+	icon = 'icons/fallout/objects/farming/farming_structures.dmi'
 	icon_state = "grownbin"
 	max_n_of_items = 1000
 
@@ -727,6 +758,7 @@
 //-------------------------
 // Alchemy Rack
 //-------------------------
+
 /obj/machinery/smartfridge/bottlerack/alchemy_rack
 	name = "alchemy rack"
 	desc = "A neatly organized cupboard for the storage of homemade remedies and flasks."
@@ -734,9 +766,10 @@
 	max_n_of_items = 100
 
 /obj/machinery/smartfridge/bottlerack/alchemy_rack/accept_check(obj/item/O)
-	if(istype(O, /obj/item/reagent_containers/pill/patch/healingpowder) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive) || istype(O, /obj/item/reagent_containers/pill/patch/healpoultice))
+	if(istype(O, /obj/item/reagent_containers/pill/patch/f13/) || istype(O, /obj/item/stack/medical/mourning) || istype(O, /obj/item/reagent_containers/glass/bottle/primitive))
 		return TRUE
 	return FALSE
+
 
 // ---------------------------------------
 // Update Icons for Alchemy Rack
@@ -889,7 +922,7 @@
 
 /obj/machinery/smartfridge/bottlerack/lootshelf/books
 	chance_initial_contents = list(
-		/obj/item/book/granter/trait/crafting/chemistry = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/reagent_containers/food/snacks/deadmouse = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_one = 1,

@@ -30,6 +30,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/entrenching_tool)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/smoke)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrgate)
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //LM and LC Only Roles
@@ -200,7 +202,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 		/obj/item/storage/bag/money/small/ncr=1,\
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=1, \
 		/obj/item/binoculars=1
 		)
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -248,7 +250,7 @@ Medical Officer
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT2
-	head 		= /obj/item/clothing/head/beret/ncr_medic_lt
+	head 		= /obj/item/clothing/head/beret/medical
 	neck 		= /obj/item/storage/belt/holster/med_lt
 	glasses 	= /obj/item/clothing/glasses/hud/health/f13
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile
@@ -1029,8 +1031,7 @@ Veteran Ranger
 
 /datum/outfit/loadout/rangerrecon
 	name = "Recon Ranger"
-	head = /obj/item/clothing/head/beret/ncr_recon_ranger	
-	suit =	/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
+	suit =	/obj/item/clothing/suit/hooded/f13/hooded_recon
 	belt =	/obj/item/storage/belt/military/reconbandolier
 	r_hand = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(/obj/item/ammo_box/magazine/w308 = 3)

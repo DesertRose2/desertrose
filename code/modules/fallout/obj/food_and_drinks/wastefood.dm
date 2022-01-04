@@ -12,7 +12,7 @@
 /obj/item/reagent_containers/food/snacks/soup/moleratstew
 	name = "molerat stew"
 	desc = "A nice and warm stew. Healthy and strong."
-	icon_state = "stew"
+	icon_state = "molerat_stew"
 	bonus_reagents = list( /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/tomatojuice = 5,  /datum/reagent/consumable/nutriment/vitamin = 5)
 	list_reagents = list( /datum/reagent/consumable/nutriment/vitamin = 10, /datum/reagent/medicine/oculine = 5, /datum/reagent/consumable/tomatojuice = 5,  /datum/reagent/consumable/nutriment/vitamin = 5)
 	bitesize = 7
@@ -23,7 +23,7 @@
 /obj/item/reagent_containers/food/snacks/soup/buffalogourd
 	name = "buffalo gourd soup"
 	desc = "A tasty soup made with roasted gourd."
-	icon_state = "Buffalo Soup"
+	icon_state = "buffalo_soup"
 	bonus_reagents = list( /datum/reagent/consumable/nutriment/vitamin = 4,  /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("buttery flesh" = 1, "creamy soup" = 1)
 	foodtype = VEGETABLES

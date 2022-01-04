@@ -73,7 +73,6 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "aJ" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "aK" = (
@@ -100,7 +99,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "aX" = (
-/obj/structure/mirelurkegg,
 /mob/living/simple_animal/hostile/mirelurk/baby,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
@@ -117,7 +115,7 @@
 	},
 /area/space)
 "bh" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "bk" = (
@@ -373,7 +371,7 @@
 /turf/open/floor/plating/f13/inside,
 /area/space)
 "db" = (
-/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/f13/jet,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -938,7 +936,7 @@
 "hi" = (
 /obj/structure/closet/crate/radiation,
 /obj/item/reagent_containers/blood/radaway,
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1321,7 +1319,7 @@
 	},
 /area/f13/building)
 "ke" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -1709,7 +1707,7 @@
 /obj/item/trash/can{
 	icon_state = "air"
 	},
-/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -1780,7 +1778,7 @@
 	},
 /area/space)
 "mP" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -1980,7 +1978,7 @@
 /obj/effect/decal/remains{
 	icon_state = "remains"
 	},
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -2103,7 +2101,7 @@
 	},
 /area/space)
 "oN" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -2160,7 +2158,6 @@
 /turf/open/floor/plating/f13/inside,
 /area/space)
 "pi" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/dirt,
 /area/space)
 "pj" = (
@@ -2195,7 +2192,6 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/space)
 "pq" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/radiation)
 "ps" = (
@@ -2212,7 +2208,7 @@
 /area/space)
 "pA" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2273,14 +2269,14 @@
 /area/f13/building)
 "pZ" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/item/reagent_containers/medspray/styptic,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
 /area/space)
 "qb" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
@@ -2552,7 +2548,7 @@
 	},
 /area/space)
 "rX" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -2637,7 +2633,7 @@
 	},
 /area/space)
 "sx" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -2735,7 +2731,7 @@
 /turf/open/floor/f13/wood,
 /area/space)
 "te" = (
-/obj/structure/tires/five,
+/obj/structure/obstacle/tirepile,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -2762,7 +2758,7 @@
 	},
 /area/space)
 "tu" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -2884,7 +2880,7 @@
 	},
 /area/space)
 "uj" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/structure/decoration/clock{
@@ -2996,7 +2992,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -3253,11 +3249,11 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/building)
 "wG" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "wK" = (
-/obj/structure/tires,
+/obj/effect/overlay/junk/tire,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -3387,7 +3383,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/city)
 "xJ" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -3589,7 +3585,7 @@
 /turf/open/floor/plasteel/blueyellow,
 /area/space)
 "zn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -3811,7 +3807,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/space)
 "AP" = (
-/obj/structure/tires/two,
+/obj/structure/obstacle,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "AQ" = (
@@ -3862,7 +3858,6 @@
 /turf/open/floor/plasteel/blueyellow,
 /area/space)
 "Bi" = (
-/obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "Bj" = (
@@ -3934,7 +3929,7 @@
 	},
 /area/space)
 "BF" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -4086,7 +4081,7 @@
 	},
 /area/space)
 "CP" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -4243,7 +4238,7 @@
 /turf/open/indestructible/ground,
 /area/space)
 "DO" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -4473,13 +4468,13 @@
 /turf/open/indestructible/ground/outside/road,
 /area/space)
 "FL" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /turf/open/floor/wood,
 /area/f13/city)
 "FM" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/wood/f13,
@@ -4707,7 +4702,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
 "HA" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -4838,7 +4833,7 @@
 	},
 /area/space)
 "IJ" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13,
@@ -5589,9 +5584,9 @@
 /area/f13/city)
 "Oq" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/blood/radaway,
 /turf/open/floor/f13,
 /area/f13/city)
@@ -5947,11 +5942,11 @@
 	},
 /area/f13/desert)
 "Rh" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /turf/open/floor/wood,
 /area/f13/city)
 "Rl" = (
-/obj/structure/chair/middle,
+/obj/structure/chair/booth_middle,
 /turf/open/floor/wood,
 /area/f13/city)
 "Rn" = (
@@ -6023,7 +6018,7 @@
 /turf/open/floor/f13,
 /area/space)
 "RJ" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/wood,
 /area/f13/city)
 "RM" = (
@@ -6095,7 +6090,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/space)
 "Sl" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/f13,
 /area/f13/city)
 "Sn" = (
@@ -6214,7 +6209,7 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "Td" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -6330,7 +6325,7 @@
 	},
 /area/f13/wasteland)
 "TT" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -6629,7 +6624,7 @@
 	},
 /area/space)
 "VU" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"

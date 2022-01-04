@@ -526,7 +526,7 @@
 /area/f13/bunker)
 "aSK" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "aTC" = (
@@ -1395,10 +1395,10 @@
 /area/f13/bunker)
 "ciU" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -1802,10 +1802,10 @@
 /area/f13/tunnel)
 "cUm" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -2100,7 +2100,7 @@
 /area/f13/bunker)
 "dsg" = (
 /obj/effect/decal/remains/human,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
@@ -2881,7 +2881,7 @@
 /area/f13/bunker)
 "eEr" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/pill/radx,
+/obj/item/reagent_containers/pill/f13/radx,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -3121,7 +3121,7 @@
 	},
 /area/f13/underground/cave)
 "feS" = (
-/obj/structure/chair/middle{
+/obj/structure/chair/booth_middle{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3630,7 +3630,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/underground/cave)
 "fTR" = (
-/obj/structure/chair/left{
+/obj/structure/chair/booth_left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3951,7 +3951,7 @@
 /area/f13/bunker)
 "gsV" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/pill/radx,
+/obj/item/reagent_containers/pill/f13/radx,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "gtb" = (
@@ -4644,7 +4644,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "hpR" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -4712,8 +4712,8 @@
 /area/f13/bunker)
 "hvB" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/grenade/empgrenade,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
@@ -5617,7 +5617,7 @@
 /area/f13/bunker)
 "iGQ" = (
 /obj/effect/decal/remains/human,
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
@@ -7906,7 +7906,7 @@
 /obj/structure/closet/cabinet{
 	name = "Vault 223 cabinet"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "mtg" = (
@@ -8708,7 +8708,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
 "nBr" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
@@ -9044,7 +9044,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "nUV" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/waste{
 	icon_state = "goo10"
@@ -9424,7 +9424,7 @@
 /obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
@@ -9762,7 +9762,7 @@
 /obj/machinery/light/broken{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /obj/effect/decal/waste{
 	icon_state = "goo5"
 	},
@@ -10664,7 +10664,7 @@
 /turf/open/floor/plasteel/bar,
 /area/f13/bunker)
 "qsp" = (
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qsy" = (
@@ -10880,7 +10880,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "qKi" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
 "qKk" = (
@@ -10963,7 +10963,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
 "qOy" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "qOT" = (
@@ -11375,7 +11375,7 @@
 	},
 /area/f13/bunker)
 "rxx" = (
-/obj/structure/chair/middle,
+/obj/structure/chair/booth_middle,
 /obj/item/radio/intercom{
 	frequency = 1361;
 	name = "Vault Intercom";
@@ -12036,7 +12036,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "syz" = (
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
@@ -12234,7 +12234,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sKJ" = (
-/obj/structure/chair/right{
+/obj/structure/chair/booth_right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -13388,7 +13388,7 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "uMj" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
@@ -13418,7 +13418,7 @@
 /area/f13/bunker)
 "uPo" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -13648,7 +13648,7 @@
 "viI" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
 "vjN" = (
@@ -13681,7 +13681,7 @@
 	pixel_x = 18;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},

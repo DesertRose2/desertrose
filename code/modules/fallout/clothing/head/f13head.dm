@@ -572,6 +572,12 @@
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
 
+/obj/item/clothing/head/f13/hat_nightstalker
+	name = "nightstalker fur headwear"
+	desc = "Made from nightstalker pelt which makes the wearer feel both comfortable and elegant."
+	icon_state = "hat_nightstalker"
+	item_state = "hat_nightstalker"
+
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"
 	desc = "(I) <font color='#157206'>Him haffi drop him fork and run,</font><br><font color='green'>Him can't stand up to Jah Jah son,</font><br><font color='#fd680e'>Him haffi lef' ya with him gun,</font><br><font color='red'>Dig off with him bomb.</font>"
@@ -583,6 +589,7 @@
 /obj/item/clothing/head/f13/hairband
 	name = "hairband"
 	desc = "A pretty yellow hairband."
+	flags_inv = null
 	icon_state = "50shairband"
 	item_state = "50shairband"
 
@@ -981,15 +988,22 @@
 
 /obj/item/clothing/head/helmet/f13/mutie/knight
 	name = "mutant crusaders helm"
-	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth. In theory, that last one."
+	desc = "(V) An oversized helmet with a series of slits for the eyes and mouth. In theory, that last one."
 	icon_state = "mutie_knight"
 	item_state = "mutie_knight"
+	armor = list("tier" = 5, "energy" = 20, "bomb" = 28, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/mutie/knight/crown
 	name = "mutant monarchs helm"
-	desc = "(IV) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
+	desc = "(V) An oversized helmet with a series of slits for the eyes and mouth, with some kind of crown arcwelded to it."
 	icon_state = "mutie_crown"
 	item_state = "mutie_crown"
+
+/obj/item/clothing/head/helmet/f13/mutie/aviator
+	name = "oversized aviators helmet"
+	desc = "(IV) A rather large aviator's helm with a pair of goggles stitched on top of it for some reason or another."
+	icon_state = "muite_aviator"
+	item_state = "muite_aviator"
 
 /obj/item/clothing/head/helmet/f13/combat/marine/legion/centurion
 	name = "marine combat helmet"

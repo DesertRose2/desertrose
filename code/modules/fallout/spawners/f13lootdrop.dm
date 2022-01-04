@@ -523,11 +523,11 @@
 	lootcount = 1
 
 	loot = list(
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/storage/pill_bottle/chem_tin/radx,
+				/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+				/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 				/obj/item/reagent_containers/blood/radaway,
-				/obj/item/storage/pill_bottle/chem_tin/mentats,
-				/obj/item/storage/pill_bottle/chem_tin/fixer
+				/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+				/obj/item/storage/pill_bottle/chem_tin/f13/fixer
 				)
 
 /obj/effect/spawner/lootdrop/f13/medical/wasteland
@@ -537,12 +537,12 @@
 	name = "wasteland meds spawner"
 	lootcount = 1
 
-	loot = list(/obj/item/reagent_containers/pill/patch/healingpowder,
-				/obj/item/storage/pill_bottle/chem_tin/radx,
+	loot = list(/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+				/obj/item/storage/pill_bottle/chem_tin/f13/radx,
 				/obj/item/reagent_containers/blood/radaway,
-				/obj/item/storage/pill_bottle/chem_tin/mentats,
-				/obj/item/storage/pill_bottle/chem_tin/fixer,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
+				/obj/item/storage/pill_bottle/chem_tin/f13/mentats,
+				/obj/item/storage/pill_bottle/chem_tin/f13/fixer,
+				/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 				/obj/item/reagent_containers/medspray/styptic,
 				/obj/item/reagent_containers/medspray/silver_sulf,
 				/obj/item/reagent_containers/medspray/sterilizine
@@ -553,12 +553,12 @@
 	lootcount = 1
 
 	loot = list(
-				/obj/item/reagent_containers/pill/patch/jet,
-				/obj/item/reagent_containers/pill/patch/turbo,
-				/obj/item/reagent_containers/pill/patch/healingpowder,
+				/obj/item/reagent_containers/pill/patch/f13/jet,
+				/obj/item/reagent_containers/pill/patch/f13/turbo,
+				/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 				/obj/item/reagent_containers/pill/stimulant,
-				/obj/item/reagent_containers/pill/patch/medx,
-				/obj/item/storage/pill_bottle/chem_tin/buffout
+				/obj/item/reagent_containers/hypospray/medipen/f13/psycho,
+				/obj/item/storage/pill_bottle/chem_tin/f13/buffout
 				)
 /*	------------------------------------------------
 	--------------WEAPON SPAWNERS-------------------
@@ -1893,9 +1893,9 @@
 	name = "trait book spawner"
 	lootcount = 1
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 10,
-				/obj/item/book/granter/trait/crafting/chemistry = 10,
+				/obj/item/book/granter/trait/chemistry = 10,
 				/obj/item/book/granter/trait/trekking = 10,
-				/obj/item/book/granter/trait/crafting/demolitions = 5,
+				/obj/item/book/granter/trait/demolitions = 5,
 				/obj/item/book/granter/trait/pa_wear = 1,
 				/obj/item/book/granter/crafting_recipe/gunsmith_one = 50,
 				/obj/item/book/granter/crafting_recipe/gunsmith_two = 20,
