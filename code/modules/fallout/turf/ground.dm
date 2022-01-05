@@ -131,13 +131,13 @@
 	//loop through neighbouring desert turfs, if they have grass, then increase weight
 	for(var/turf/open/indestructible/ground/outside/desert/T in RANGE_TURFS(3, src))
 		if(T.turfPlant)
-			Weight += GRASS_WEIGHT
+			Weight += GRASS_WEIGHT_GROUND
 
 	//use weight to try to spawn grass
 	if(prob(Weight))
 
 		//If surrounded on 5+ sides, pick from lush
-		if(Weight == (5 * GRASS_WEIGHT))
+		if(Weight == (5 * GRASS_WEIGHT_GROUND))
 			randPlant = pickweight(LUSH_PLANT_SPAWN_LIST_GROUND)
 		else
 			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST_GROUND)
