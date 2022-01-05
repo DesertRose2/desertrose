@@ -425,7 +425,7 @@
 
 	else if(target.is_drainable()) //A dispenser. Transfer FROM it TO us.
 		if(!target.reagents.total_volume)
-			to_chat(user, SPAN_WARNING("[target] is empty and can't be refilled!"))
+			to_chat(user, SPAN_WARNING("[target] is empty and might be hard to refill."))
 			return
 
 		if(reagents.holder_full())

@@ -389,10 +389,6 @@
 	new /obj/item/modkit/deth(src)
 	new /obj/item/modkit/dethelm(src)
 
-//Katie Morgan - IdiocityInc
-/obj/item/storage/box/large/custom_kit/katiemorgan/PopulateContents()
-	new /obj/item/clothing/head/beret/ncr_scout(src)
-
 //Bryan ''Aranesp'' Monroe - ElizabethDame
 /obj/item/storage/box/large/custom_kit/bryanmonroe/PopulateContents()
 	new /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat(src)
@@ -419,10 +415,6 @@
 	new /obj/item/clothing/head/soft/grey(src)
 	new /obj/item/storage/backpack/satchel/explorer(src)
 
-//Parker Wright - KayZach
-/obj/item/storage/box/large/custom_kit/parkerwright/PopulateContents()
-	new /obj/item/clothing/head/beret/ncr_recon(src)
-
 //Canis - KayZach
 /obj/item/storage/box/large/custom_kit/houndmaster/PopulateContents()
 	new /obj/item/modkit/houndmasterhelm(src)
@@ -435,13 +427,6 @@
 /obj/item/storage/box/large/custom_kit/holhorse/PopulateContents()
 	new /obj/item/clothing/under/f13/ranger/clyde(src)
 	new /obj/item/clothing/suit/armor/f13/trailranger/clyde(src)
-
-//Daiyu Liu - Muhsollini
-/obj/item/storage/box/large/custom_kit/shi/PopulateContents()
-	new /obj/item/clothing/under/f13/ncr/shi(src)
-	new /obj/item/clothing/head/beret/ncr_medic/shi(src)
-	new /obj/item/modkit/shicoat(src)
-	new /obj/item/clothing/shoes/f13/military/shi(src)
 
 //Montana - Pisshole
 /obj/item/storage/box/large/custom_kit/montana/PopulateContents()
@@ -485,3 +470,13 @@
 //Joseph Riley - kooarbiter
 /obj/item/storage/box/large/custom_kit/josephriley/PopulateContents()
 	new /obj/item/clothing/suit/toggle/chef(src)
+
+//NCR Recon
+/obj/item/storage/box/large/custom_kit/recon/PopulateContents()
+	new	/obj/item/clothing/head/beret/ncr_recon(src)
+	new	/obj/item/clothing/under/f13/ncr/recon(src)
+
+//NCR Scouts
+/obj/item/storage/box/large/custom_kit/scout/PopulateContents()
+	new	/obj/item/clothing/head/beret/ncr_scout(src)
+	new	/obj/item/clothing/under/f13/ncr/scout(src)

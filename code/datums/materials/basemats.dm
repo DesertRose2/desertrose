@@ -270,7 +270,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	value_per_unit = 0.0025
 	armor_modifiers = list("melee" = 0.25, "bullet" = 0.25, "laser" = 0.25, "energy" = 0.25, "bomb" = 0.25, "bio" = 0.25, "rad" = 1.5, "fire" = 0.25, "acid" = 1.5)
 	beauty_modifier = 0.3
-	turf_sound_override = FOOTSTEP_SAND
+	turf_sound_override = FOOTSTEP_SNOW
 	texture_layer_icon_state = "sand"
 
 /datum/material/runedmetal

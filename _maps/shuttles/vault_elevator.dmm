@@ -7,7 +7,7 @@
 /turf/open/floor/engine,
 /area/shuttle/vault_elevator)
 "c" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	icon_state = "f13chair2";
 	dir = 4
 	},
@@ -30,7 +30,7 @@
 	icon_state = "bulb";
 	dir = 8
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	icon_state = "f13chair2";
 	dir = 4
 	},

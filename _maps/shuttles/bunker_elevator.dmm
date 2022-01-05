@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	icon_state = "f13chair2";
 	dir = 4
 	},
@@ -18,7 +18,7 @@
 	icon_state = "bulb";
 	dir = 8
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	icon_state = "f13chair2";
 	dir = 4
 	},

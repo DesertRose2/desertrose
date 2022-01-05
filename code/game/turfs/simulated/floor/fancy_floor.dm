@@ -183,7 +183,7 @@
 	initial_gas_mix = FROZEN_ATMOS
 	slowdown = 1.5 //So digging it out paths are useful.
 	bullet_sizzle = TRUE
-	footstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_SNOW
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
@@ -220,7 +220,7 @@
 	turfverb = "dig up"
 	slowdown = 0
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 

@@ -81,7 +81,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space)
 "C" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood,

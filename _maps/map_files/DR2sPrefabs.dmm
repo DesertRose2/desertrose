@@ -3746,11 +3746,11 @@
 /turf/open/floor/wood,
 /area/space)
 "kv" = (
-/obj/structure/chair/right,
+/obj/structure/chair/booth_right,
 /turf/open/floor/wood,
 /area/space)
 "kw" = (
-/obj/structure/chair/left,
+/obj/structure/chair/booth_left,
 /turf/open/floor/wood,
 /area/space)
 "kx" = (
@@ -8142,7 +8142,7 @@
 /area/space)
 "KY" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon,
+/obj/item/clothing/suit/hooded/f13/hooded_recon,
 /obj/item/storage/belt/military/reconbandolier,
 /turf/open/floor/wood,
 /area/space)

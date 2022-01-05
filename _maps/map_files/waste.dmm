@@ -163,25 +163,25 @@
 	},
 /area/f13/desert)
 "aJ" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/f13/inside/wood,
 /area/f13/desert)
 "aK" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	icon_state = "wooden_chair";
 	dir = 4
 	},
 /turf/open/f13/inside/wood,
 /area/f13/desert)
 "aL" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	icon_state = "wooden_chair";
 	dir = 8
 	},
 /turf/open/f13/inside/wood,
 /area/f13/desert)
 "aM" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	icon_state = "wooden_chair";
 	dir = 1
 	},

@@ -502,7 +502,7 @@
 	},
 /area/f13/building)
 "gg" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
@@ -654,9 +654,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/f13chair2{
-	dir = 8;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -738,7 +737,7 @@
 	},
 /area/f13/building)
 "iD" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"
@@ -756,7 +755,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -845,9 +844,8 @@
 	},
 /area/f13/wasteland)
 "jq" = (
-/obj/structure/chair/f13chair2{
-	dir = 8;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 8
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -978,9 +976,8 @@
 /turf/open/floor/carpet/black,
 /area/f13/building)
 "kq" = (
-/obj/structure/chair/f13chair2{
-	dir = 4;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 4
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -1395,9 +1392,8 @@
 	},
 /area/f13/wasteland)
 "or" = (
-/obj/structure/chair/f13chair2{
-	dir = 1;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 1
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -1787,7 +1783,7 @@
 	},
 /area/f13/tunnel)
 "sb" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -2115,7 +2111,7 @@
 	},
 /area/f13/wasteland)
 "vk" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -3086,7 +3082,7 @@
 	},
 /area/f13/wasteland)
 "Fa" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
@@ -3325,7 +3321,7 @@
 	},
 /area/f13/wasteland)
 "HT" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -3517,7 +3513,7 @@
 	},
 /area/f13/tunnel)
 "JM" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/f13/wood{
@@ -3839,7 +3835,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "MP" = (
-/obj/structure/chair/wood/normal{
+/obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/f13/wood{
@@ -3927,7 +3923,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/ncr)
 "NF" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -3942,9 +3938,8 @@
 	},
 /area/f13/wasteland)
 "NI" = (
-/obj/structure/chair/f13chair2{
-	dir = 1;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 1
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "horizontaloutermain0"
@@ -3998,7 +3993,7 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
 "Ow" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -4170,7 +4165,7 @@
 	},
 /area/f13/building)
 "PV" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -4246,7 +4241,7 @@
 /turf/closed/wall/f13/store,
 /area/f13/building)
 "Rg" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 8;
 	icon_state = "bench";
 	name = "stool"
@@ -4546,7 +4541,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	icon_state = "bench_center";
 	name = "stool"
 	},
@@ -4555,7 +4550,7 @@
 	},
 /area/f13/building)
 "Tt" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/wood,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -4703,9 +4698,8 @@
 	},
 /area/f13/building)
 "UO" = (
-/obj/structure/chair/f13chair2{
-	dir = 1;
-	icon_state = "f13chair2"
+/obj/structure/chair{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -4962,7 +4956,7 @@
 	},
 /area/f13/building)
 "Xf" = (
-/obj/structure/chair/stool/f13stool{
+/obj/structure/chair/stool/retro{
 	dir = 4;
 	icon_state = "bench";
 	name = "stool"

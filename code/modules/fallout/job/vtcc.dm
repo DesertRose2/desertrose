@@ -349,7 +349,7 @@
 		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/suppressor = 1,
 		/obj/item/camera=1,
-		/obj/item/book/granter/trait/crafting/demolitions=1,
+		/obj/item/book/granter/trait/demolitions=1,
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/storage/bag/ammo=1,
 		/obj/item/clothing/suit/armor/f13/riot/vault/provost/sgt=1,
@@ -459,7 +459,7 @@
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/suppressor = 1,
 		/obj/item/camera=1,
-		/obj/item/book/granter/trait/crafting/demolitions=1,
+		/obj/item/book/granter/trait/demolitions=1,
 		/obj/item/gun/ballistic/automatic/pistol/n99=1,
 		/obj/item/ammo_box/magazine/m10mm_adv=2
 	)

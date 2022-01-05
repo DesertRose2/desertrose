@@ -1844,7 +1844,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -1970,7 +1970,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
 /area/f13/vault/medical/breakroom)
 "agh" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2306,7 +2306,7 @@
 	},
 /area/f13/vault/medical/chemistry)
 "ahn" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -2317,7 +2317,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/brotherhood)
 "ahp" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -2662,7 +2662,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
@@ -4712,7 +4712,7 @@
 	},
 /area/construction/mining)
 "aoi" = (
-/obj/structure/chair/f13chair2,
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault/diner)
 "aoj" = (
@@ -5847,7 +5847,7 @@
 /turf/closed/wall,
 /area/f13/tcoms)
 "arB" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 1;
 	icon_state = "f13chair2"
 	},
@@ -6214,14 +6214,14 @@
 /turf/open/floor/wood,
 /area/f13/city)
 "asR" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 4;
 	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/vault/diner)
 "asS" = (
-/obj/structure/chair/f13chair2{
+/obj/structure/chair{
 	dir = 8;
 	icon_state = "f13chair2"
 	},
@@ -8218,7 +8218,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "aza" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -8233,7 +8233,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/city)
 "azd" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -8350,7 +8350,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "azx" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -8487,7 +8487,7 @@
 	},
 /area/f13/klamat)
 "azV" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "azW" = (
@@ -8596,7 +8596,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "aAs" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /obj/effect/landmark/start/f13/settler,
@@ -8807,7 +8807,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "aBe" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /obj/effect/landmark/start/f13/settler,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
@@ -13406,7 +13406,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "aRo" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -13915,7 +13915,7 @@
 	},
 /area/f13/city/museum)
 "aSZ" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "aTa" = (
@@ -13928,7 +13928,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/city/museum)
 "aTc" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/machinery/light/small{
@@ -13942,7 +13942,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "aTe" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -13955,13 +13955,13 @@
 /turf/open/floor/grass/snow,
 /area/f13/city/museum)
 "aTg" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city/museum)
 "aTh" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -14878,7 +14878,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "aWa" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /obj/structure/decoration/clock{
@@ -14895,7 +14895,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "aWc" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -14973,7 +14973,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "aWm" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
@@ -15002,7 +15002,7 @@
 	},
 /area/f13/den)
 "aWr" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/wood/modern{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
@@ -15396,7 +15396,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "aXx" = (
-/obj/structure/chair/wood/worn,
+/obj/structure/chair/wood/modern,
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "aXy" = (
@@ -17747,7 +17747,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bfi" = (
-/obj/structure/chair/f13foldupchair,
+/obj/structure/chair/folding,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bfk" = (
