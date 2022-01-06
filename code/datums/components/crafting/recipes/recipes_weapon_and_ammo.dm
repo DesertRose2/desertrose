@@ -739,9 +739,10 @@
 	name = "Desert Eagle"
 	result = /obj/item/gun/ballistic/automatic/pistol/deagle
 	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/crafting/metalparts = 8,
+				/obj/item/stack/crafting/metalparts = 10,
+				/obj/item/stack/sheet/mineral/wood = 5,
 				/obj/item/advanced_crafting_components/alloys = 1,
-				/obj/item/stack/crafting/goodparts = 3
+				/obj/item/stack/crafting/goodparts = 5
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120

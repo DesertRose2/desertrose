@@ -518,25 +518,7 @@
 						"Lighter" = "thaxflannel"
 						)
 
-//Masks
-/obj/item/clothing/mask/ncr_facewrap
-	name = "desert facewrap"
-	desc = "A facewrap commonly employed by NCR troops in desert environments."
-	icon_state = "ncr_facewrap"
-	w_class = WEIGHT_CLASS_TINY
-	flags_inv = HIDEFACE
-	flags_cover = MASKCOVERSMOUTH
-	visor_flags_inv = HIDEFACE
-	visor_flags_cover = MASKCOVERSMOUTH
-	gas_transfer_coefficient = 0.9
-	permeability_coefficient = 0.01
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/ncr_facewrap/attack_self(mob/user)
-	adjustmask(user)
-
+//Gasmasks
 
 /obj/item/clothing/mask/gas/ranger
 	name = "ranger gas mask"
@@ -545,18 +527,6 @@
 	item_state = "rangermask"
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
 	visor_flags_inv = 0
-
-
-/obj/item/clothing/mask/bandana/ranger
-	name = "red ranger bandana"
-	desc = "An worn down, bright red bandana, looks like one a ranger would wear."
-	icon_state = "ranger"
-	item_state = "ranger"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
 
 //Boots
 
