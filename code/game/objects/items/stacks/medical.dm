@@ -298,6 +298,9 @@
 		return TRUE
 	to_chat(user, SPAN_WARNING("You can't heal [M] with \the [src]!"))
 
+/obj/item/stack/medical/suture/medicated/fifteen
+	amount = 15
+
 /obj/item/stack/medical/ointment
 	name = "ointment"
 	desc = "Basic burn ointment, rated effective for second degree burns with proper bandaging, though it's still an effective stabilizer for worse burns. Not terribly good at outright healing burns though."

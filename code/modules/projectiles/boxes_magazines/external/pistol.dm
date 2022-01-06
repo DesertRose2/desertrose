@@ -148,6 +148,17 @@
 /obj/item/ammo_box/magazine/m44/empty
 	start_empty = 1
 
+/obj/item/ammo_box/magazine/m44/ext
+	name = "extended handgun magazine (.44 magnum)"
+	icon_state = "50aeexp"
+	ammo_type = /obj/item/ammo_casing/m44
+	caliber = "44"
+	max_ammo = 15
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m44/ext/empty
+	start_empty = 1
+
 /obj/item/ammo_box/magazine/m22
 	name = "pistol magazine (.22lr)"
 	icon_state = "pistol22"
