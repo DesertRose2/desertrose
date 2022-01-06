@@ -47,7 +47,6 @@ GLOBAL_LIST_INIT(trash_clothing, list(
 	/obj/item/clothing/gloves/f13/military = 5,
 	/obj/item/clothing/gloves/f13/leather/fingerless = 5,
 	/obj/item/clothing/shoes/f13/tan = 5,
-	/obj/item/clothing/suit/armor/f13/punk = 5,
 	/obj/item/clothing/suit/armor/f13/kit = 5,
 	/obj/item/clothing/head/welding = 5
 ))
@@ -248,8 +247,6 @@ GLOBAL_LIST_INIT(loot_t3_armor, list(
 	/obj/item/clothing/suit/armor/f13/metalarmor/reinforced,
 	/obj/item/clothing/head/helmet/f13/metalmask/mk2,
 	/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat,
-	/obj/item/clothing/head/helmet/f13/combat/swat,
-	/obj/item/clothing/suit/armor/f13/combat/swat,
 	/obj/item/clothing/suit/armor/f13/combat,
 	/obj/item/clothing/head/helmet/f13/combat,
 	/obj/item/clothing/suit/armor/bulletproof,
@@ -257,9 +254,7 @@ GLOBAL_LIST_INIT(loot_t3_armor, list(
 	/obj/item/clothing/suit/armor/f13/combat/dark,
 	/obj/item/clothing/head/helmet/f13/combat/dark,
 	/obj/item/clothing/suit/armor/f13/combat/mk2/dark,
-	/obj/item/clothing/head/helmet/f13/combat/mk2/dark,
-	/obj/item/clothing/suit/armor/f13/sulphitearmor,
-	/obj/item/clothing/head/helmet/f13/sulphitehelm
+	/obj/item/clothing/head/helmet/f13/combat/mk2/dark
 ))
 
 GLOBAL_LIST_INIT(loot_t4_armor, list(

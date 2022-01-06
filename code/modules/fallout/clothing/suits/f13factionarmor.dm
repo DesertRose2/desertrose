@@ -153,6 +153,19 @@
 	slowdown = 0.3
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
+//Khans
+/obj/item/clothing/suit/armor/f13/combat/khan
+	name = "khanbat armor"
+	desc = "(V) An old set of combat armor, repainted in the blue color of the Khans."
+	icon_state = "combat_armor_khan"
+	item_state = "combat_armor_khan"
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/khan
+	name = "reinforced khanbat armor"
+	desc = "(VI) An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
+	icon_state = "combat_armor_khan_mk2"
+	item_state = "combat_armor_khan_mk2"
+
 //Oasis/Town
 /obj/item/clothing/suit/armor/f13/town
 	name = "town trenchcoat"
@@ -325,6 +338,31 @@
 /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured/roadie/fast/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+//Brotherhood of Steel
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
+	name = "knight captain's T-45d Power Armour"
+	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight Captain and your safety is his duty."
+	icon_state = "t45dkc"
+	item_state = "t45dkc"
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
+	name = "brotherhood T-45d power armor"
+	desc = "(VIII) A set of T-45d power armor put into use by the Brotherhood of Steel."
+	icon_state = "t45dbos"
+	item_state = "t45dbos"
+
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
+	name = "brotherhood T-51b power armor"
+	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
+	icon_state = "t51bbos"
+	item_state = "t51bbos"
+
+
+
+
+
 
 
 //THE GRAVEYARD

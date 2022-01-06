@@ -88,35 +88,6 @@
 // SULPHITE GANG //
 /////////////////// - these guys legit looks terrible compared to junkers, use only if desperate
 
-/mob/living/simple_animal/hostile/raider/sulphite
-	name = "Sulphite Brawler"
-	desc = "A raider with low military grade armor and a shishkebab"
-	icon_state = "sulphite"
-	icon_living = "sulphite"
-	icon_dead = "sulphite_dead"
-	turns_per_move = 5
-	response_help_simple = "pokes"
-	response_disarm_simple = "shoves"
-	response_harm_simple = "hits"
-	speed = 1
-	stat_attack = 1
-	robust_searching = 1
-	maxHealth = 220
-	health = 220
-	harm_intent_damage = 8
-	melee_damage_lower = 40
-	melee_damage_upper = 55
-	attack_verb_simple = "attacks"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	a_intent = INTENT_HARM
-	loot = list(/obj/item/shishkebabpack, /obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/clothing/suit/armor/f13/sulphitearmor)
-	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
-	loot = list()
-	unsuitable_atmos_damage = 15
-	faction = list("raiders")
-	check_friendly_fire = 1
-	status_flags = CANPUSH
-
 /mob/living/simple_animal/hostile/raider/sulphite/boss
 	name = "Sulphite Boss"
 	desc = "A raider with modified power armour and an incinerator"

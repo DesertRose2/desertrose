@@ -17,20 +17,47 @@
 	if(!allowed)
 		allowed = GLOB.security_vest_allowed
 */
-//Leather and metal
-/obj/item/clothing/suit/armor/f13/leather_jacket
-	name = "leather jacket"
-	icon_state = "leather_jacket"
-	item_state = "leather_jacket"
-	desc = "(II) A black, heavy leather jacket."
-	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+
+
+
+////////////////
+//LIGHT ARMORS//
+///////////////
+
+
+// Composed of mostly light armors; low protections, low to no slowdown from armor.
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat
-	name = "combat leather jacket"
+	name = "leather jacket"
 	icon_state = "combat_jacket"
 	item_state = "combat_jacket"
 	desc = "(III) This heavily padded leather jacket is unusual in that it has two sleeves. You'll definitely make a fashion statement whenever, and wherever, you rumble."
 	armor = list("tier" = 3, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/leatherarmor
+	name = "leather armor"
+	desc = "(III) Your basic all leather apparel. Finely crafted from tanned brahmin hide."
+	icon_state = "leather_armor"
+	item_state = "leather_armor"
+	armor = list("tier" = 3, "energy" = 25, "bomb" = 32, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 35)
+	strip_delay = 40
+
+/obj/item/clothing/suit/armor/f13/kit
+	name = "armor kit"
+	desc = "(III) Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It is unable to reflect laser beams and probably won't shield you from a random bullet, but it sure is better than going into the battle without any armor at all."
+	icon_state = "armorkit"
+	item_state = "armorkit"
+	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	strip_delay = 30
+
+/obj/item/clothing/suit/armor/f13/vaquero
+	name = "vaquero suit"
+	desc = "(III) An ornate suit worn by Mexican gunfighters in the Old West, padded with leather for extra protection."
+	icon_state = "vaquero"
+	item_state = "vaquero"
+	armor = list("tier" = 3, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
 	name = "combat leather coat"
@@ -46,38 +73,9 @@
 	desc = "(VII) A heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("tier" = 7, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
-/obj/item/clothing/suit/armor/f13/kit
-	name = "armor kit"
-	desc = "(III) Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It is unable to reflect laser beams and probably won't shield you from a random bullet, but it sure is better than going into the battle without any armor at all."
-	icon_state = "armorkit"
-	item_state = "armorkit"
-	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-	strip_delay = 30
-
 /obj/item/clothing/suit/armor/f13/kit/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/punk
-	name = "armor kit"
-	desc = "(III) A couple of armor parts that can be worn over the clothing for moderate protection against the dangers of wasteland.<br>Do you feel lucky now? Well, do ya, punk?"
-	icon_state = "punkit" //Punk it
-	item_state = "punkit" //Pun kit
-	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-	strip_delay = 30
-	icon = 'icons/fallout/clothing/suits.dmi'
-
-/obj/item/clothing/suit/armor/f13/punk/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/leatherarmor
-	name = "leather armor"
-	desc = "(III) Your basic all leather apparel. Finely crafted from tanned brahmin hide."
-	icon_state = "leather_armor"
-	item_state = "leather_armor"
-	armor = list("tier" = 3, "energy" = 25, "bomb" = 32, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 35)
-	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 	name = "reinforced leather armor"
@@ -85,6 +83,16 @@
 	item_state = "leather_armor_2"
 	desc = "(IV) An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35)
+
+
+
+
+/////////////////
+//MEDIUM ARMORS//
+////////////////
+
+
+// Comprised mostly of metal and combat armors; medium protection, low to medium slowdowns.
 
 /obj/item/clothing/suit/armor/f13/metalarmor
 	name = "metal armor"
@@ -148,27 +156,6 @@
 	desc = "(VI) A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
 	color = "#302E2E"
 
-/obj/item/clothing/suit/armor/f13/combat/swat
-	name = "SWAT combat armor"
-	desc = "(V) A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
-	icon_state = "armoralt"
-	item_state = "armoralt"
-	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/combat/chinese
-	name = "Chinese combat armor"
-	desc = "(IV) An uncommon suit of pre-war Chinese combat armor. It's a very basic and straightforward piece of armor that covers the front of the user."
-	icon_state = "chicom_armor"
-	item_state = "chicom_armor"
-	armor = list("tier" = 4, "energy" = 40, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/combatrusted
-	name = "rusted combat armor"
-	desc = "(V) An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
-	icon_state = "rusted_combat_armor"
-	item_state = "rusted_combat_armor"
-	armor = list("tier" = 5, "energy" = 38, "bomb" = 48, "bio" = 58, "rad" = 10, "fire" = 58, "acid" = 18)
-
 /obj/item/clothing/suit/armor/f13/combat/environmental
 	name = "environmental armor"
 	desc = "(V) A pre-war suit developed for use in heavily contaminated environments, and is prized in the Wasteland for its ability to protect against biological threats."
@@ -193,18 +180,6 @@
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
-/obj/item/clothing/suit/armor/f13/combat/khan
-	name = "khanbat armor"
-	desc = "(V) An old set of combat armor, repainted in the blue color of the Khans."
-	icon_state = "combat_armor_khan"
-	item_state = "combat_armor_khan"
-
-/obj/item/clothing/suit/armor/f13/combat/mk2/khan
-	name = "reinforced khanbat armor"
-	desc = "(VI) An old set of combat armor, repainted in the colors of the Khans, with a big mongol on the back."
-	icon_state = "combat_armor_khan_mk2"
-	item_state = "combat_armor_khan_mk2"
-
 /obj/item/clothing/suit/armor/f13/combat/marine
 	name = "marine combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
@@ -225,7 +200,14 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-//Power armors, including salvaged and faction
+
+
+////////////////
+//POWER ARMORS//
+////////////////
+
+
+//Includes working PA and salvaged PA as well as faction specific PAs.
 
 /obj/item/clothing/suit/armor/f13/power_armor
 	name = "power armor"
@@ -406,35 +388,6 @@
 	slowdown = 0.24
 	armor = list("tier" = 8, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
-	name = "sierra power armor"
-	desc = "(VIII) A captured set of T-45d power armor put into use by the NCR, it's been heavily modified and decorated with the head of a bear and intricate gold trimming. A two headed bear is scorched into the breastplate."
-	icon_state = "sierra"
-	item_state = "sierra"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
-	name = "knight captain's T-45d Power Armour"
-	desc = "(VIII) A classic set of T-45d Power Armour only to be used in armed combat, it signifies the Knight Captain and their place in the Brotherhood. A leader, and a beacon of structure in a place where chaos reigns. All must rally to his call, for he is the Knight Captain and your safety is his duty."
-	icon_state = "t45dkc"
-	item_state = "t45dkc"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
-	name = "brotherhood T-45d power armor"
-	desc = "(VIII) A set of T-45d power armor put into use by the Brotherhood of Steel."
-	icon_state = "t45dbos"
-	item_state = "t45dbos"
-
-/obj/item/clothing/suit/armor/f13/power_armor/midwest
-	name = "midwestern power armor"
-	desc = "(IX) This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here."
-	icon_state = "midwestgrey_pa"
-	item_state = "midwestgrey_pa"
-	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
-
-	armor_block_chance = 80
-	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
-
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
 	desc = "(IX) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
@@ -452,31 +405,6 @@
 	item_state = "t51tesla"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
 	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
-
-/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
-	name = "brotherhood T-51b power armor"
-	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
-	icon_state = "t51bbos"
-	item_state = "t51bbos"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
-	name = "Washington power armor"
-	desc = "(IX) A dark mirror to the pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
-	icon_state = "t51wbos"
-	item_state = "t51wbos"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t51b/reforgedwbos
-	name = "reforged Washington power armor"
-	desc = "(IX) A dark mirror to the pinnacle of pre-war technology, reforged. This suit of power armor provides substantial protection to the wearer."
-	icon_state = "t51matt"
-	item_state = "t51matt"
-
-/obj/item/clothing/suit/armor/f13/power_armor/t51b/ultra
-	name = "ultracite power armor"
-	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer. Now ultracite enhanced."
-	icon_state = "ultracitepa"
-	item_state = "ultracitepa"
-	slowdown = 0
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	name = "advanced power armor"
@@ -550,31 +478,6 @@
 
 //Various
 
-/obj/item/clothing/suit/armor/tesla //changed from armor/laserproof
-	name = "tesla armor"
-	desc = "(V) A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Has a chance to deflect energy projectiles."
-	icon_state = "tesla_armor"
-	item_state = "tesla_armor"
-	blood_overlay_type = "armor"
-	armor = list("tier" = 5, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	resistance_flags = FIRE_PROOF
-	var/hit_reflect_chance = 20
-	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-
-/obj/item/clothing/suit/armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(hit_reflect_chance))
-			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
-
-/obj/item/clothing/suit/armor/f13/sulphitearmor
-	name = "sulphite armor"
-	desc = "(VI) A combination of what seems to be raider metal armor with a jerry-rigged flame-exhaust system and ceramic plating."
-	icon_state = "sulphitearmor"
-	item_state = "sulphitearmor"
-	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-
 /obj/item/clothing/suit/toggle/armor
 	body_parts_covered = CHEST|GROIN
 	cold_protection = CHEST|GROIN
@@ -587,14 +490,6 @@
 	resistance_flags = NONE
 	armor = list("tier" = 2, "energy" = 16, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	togglename = "collar"
-
-/obj/item/clothing/suit/armor/f13/vaquero
-	name = "vaquero suit"
-	desc = "(III) An ornate suit worn by Mexican gunfighters in the Old West, padded with leather for extra protection."
-	icon_state = "vaquero"
-	item_state = "vaquero"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
-	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/armor/f13/slam
 	name = "slammer raider armor"

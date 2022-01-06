@@ -435,3 +435,45 @@
 	desc = "A denim jacket. Cropped, for your pleasure."
 	icon_state = "croppeddenim"
 	item_state = "croppeddenim"
+
+/obj/item/clothing/suit/armor/f13/kit/punk
+	name = "armor kit"
+	desc = "(III) A couple of armor parts that can be worn over the clothing for moderate protection against the dangers of wasteland.<br>Do you feel lucky now? Well, do ya, punk?"
+	icon_state = "punkit" //Punk it
+	item_state = "punkit" //Pun kit
+	icon = 'icons/fallout/clothing/suits.dmi'
+
+/obj/item/clothing/suit/armor/f13/kit/punk/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/combat/rusted
+	name = "rusted combat armor"
+	desc = "(V) An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
+	icon_state = "rusted_combat_armor"
+	item_state = "rusted_combat_armor"
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
+	name = "sierra power armor"
+	desc = "(VIII) A captured set of T-45d power armor put into use by the NCR, it's been heavily modified and decorated with the head of a bear and intricate gold trimming. A two headed bear is scorched into the breastplate."
+	icon_state = "sierra"
+	item_state = "sierra"
+
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/reforgedwbos
+	name = "reforged Washington power armor"
+	desc = "(IX) A dark mirror to the pinnacle of pre-war technology, reforged. This suit of power armor provides substantial protection to the wearer."
+	icon_state = "t51matt"
+	item_state = "t51matt"
+
+/obj/item/clothing/suit/armor/f13/combat/chinese
+	name = "Chinese combat armor"
+	desc = "(IV) An uncommon suit of pre-war Chinese combat armor. It's a very basic and straightforward piece of armor that covers the front of the user."
+	icon_state = "chicom_armor"
+	item_state = "chicom_armor"
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/midwest
+	name = "midwestern power armor"
+	desc = "(VIII) This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here."
+	icon_state = "midwestgrey_pa"
+	item_state = "midwestgrey_pa"

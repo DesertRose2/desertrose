@@ -447,7 +447,7 @@ Outlaw
 
 /datum/outfit/loadout/mercenary
 	name = "Mercenary"
-	suit = /obj/item/clothing/suit/armor/f13/combat/swat
+	suit = /obj/item/clothing/suit/armor/f13/combat
 	l_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm=3,

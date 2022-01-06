@@ -320,23 +320,15 @@
 	name = "tier 3 armor"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/metal/reinforced,
-				/obj/effect/spawner/bundle/f13/armor/swat,
 				/obj/effect/spawner/bundle/f13/armor/combat,
 				/obj/effect/spawner/bundle/f13/armor/bulletproof,
-				/obj/effect/spawner/bundle/f13/armor/combat/dark,
-				/obj/effect/spawner/bundle/f13/armor/sulphite
+				/obj/effect/spawner/bundle/f13/armor/combat/dark
 				)
 
 /obj/effect/spawner/bundle/f13/armor/metal/reinforced
 	items = list(
 				/obj/item/clothing/suit/armor/f13/metalarmor/reinforced,
 				/obj/item/clothing/head/helmet/f13/metalmask/mk2
-				)
-
-/obj/effect/spawner/bundle/f13/armor/swat
-	items = list(
-				/obj/item/clothing/head/helmet/f13/combat/swat,
-				/obj/item/clothing/suit/armor/f13/combat/swat
 				)
 
 /obj/effect/spawner/bundle/f13/armor/combat
@@ -358,13 +350,6 @@
 	items = list(
 				/obj/item/clothing/suit/armor/f13/combat/dark,
 				/obj/item/clothing/head/helmet/f13/combat/dark
-				)
-
-/obj/effect/spawner/bundle/f13/armor/sulphite
-	name = "sulphite raider armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/sulphitearmor,
-				/obj/item/clothing/head/helmet/f13/sulphitehelm
 				)
 
 /obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
