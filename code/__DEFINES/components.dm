@@ -149,8 +149,8 @@
 #define COMSIG_ITEM_HIT_REACT "item_hit_react"					//from base of obj/item/hit_reaction(): (list/args)
 
 // /obj/item/clothing signals
-#define COMSIG_CLOTH_DROPPED "cloths_missing"
-#define COMSIG_CLOTH_EQUIPPED "cloths_recovered"
+#define COMSIG_CLOTHING_DROPPED "clothes_missing"
+#define COMSIG_CLOTHING_EQUIPPED "clothes_equipped"
 #define COMSIG_GLASS_LENSES_REMOVED "lenses_removed" // lenses.dm
 #define COMSIG_SHOES_STEP_ACTION "shoes_step_action"			//from base of obj/item/clothing/shoes/proc/step_action(): ()
 
