@@ -419,27 +419,6 @@
 		to_chat(user, SPAN_NOTICE("Your paper mask now has a [choice] symbol!"))
 		return 1
 
-
-//NCR Facewrap
-
-/obj/item/clothing/mask/ncr_facewrap
-	name = "desert facewrap"
-	desc = "A facewrap commonly employed by NCR troops in desert environments."
-	icon_state = "ncr_facewrap"
-	w_class = WEIGHT_CLASS_TINY
-	flags_inv = HIDEFACE
-	flags_cover = MASKCOVERSMOUTH
-	visor_flags_inv = HIDEFACE
-	visor_flags_cover = MASKCOVERSMOUTH
-	gas_transfer_coefficient = 0.9
-	permeability_coefficient = 0.01
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
-/obj/item/clothing/mask/ncr_facewrap/attack_self(mob/user)
-	adjustmask(user)
-
 //Desert facewrap
 
 /obj/item/clothing/mask/facewrap
@@ -461,20 +440,6 @@
 	visor_flags_inv = HIDEFACE
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
-
-
-//Ranger bandana
-
-/obj/item/clothing/mask/bandana/ranger
-	name = "red ranger bandana"
-	desc = "An worn down, bright red bandana, looks like one a ranger would wear."
-	icon_state = "ranger"
-	item_state = "ranger"
-	flags_inv = HIDEFACE
-	visor_flags_inv = HIDEFACE
-	adjusted_flags = null
-	actions_types = list(/datum/action/item_action/adjust)
-
 
 //Society Mask
 
