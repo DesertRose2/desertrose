@@ -231,6 +231,12 @@ GLOBAL_LIST_INIT(clawfootstep, list(
 		'sound/f13effects/footsteps/sand/sand2.ogg',
 		'sound/f13effects/footsteps/sand/sand3.ogg',
 		'sound/f13effects/footsteps/sand/sand4.ogg'), 100, 1),
+	FOOTSTEP_DIRT = list(list(
+		'sound/f13effects/footsteps/dirt/dirt1.ogg',
+		'sound/f13effects/footsteps/dirt/dirt2.ogg',
+		'sound/f13effects/footsteps/dirt/dirt3.ogg',
+		'sound/f13effects/footsteps/dirt/dirt4.ogg',
+		'sound/f13effects/footsteps/dirt/dirt5.ogg'), 75, 1),
 	FOOTSTEP_GRASS = list(list(
 		'sound/effects/footstep/grass1.ogg',
 		'sound/effects/footstep/grass2.ogg',
