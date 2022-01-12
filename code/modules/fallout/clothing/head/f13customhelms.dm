@@ -1,4 +1,4 @@
-//Custom items - Pisshole / Valentina Vega
+//Custom items - Pisshole / Valentina Vega - Sprite edit by Pisshole
 /obj/item/clothing/head/beret/tina_beret
 	name = "Harebell Scout Beret"
 	desc = "(IV) A worn beret darkened by use, it appears to be the old symbol of Scout Corporals in the 1st Battalion, 3rd Infantry Regiment of the NCRA. The petals of a harebell appear to be threaded around the flash. Someone likes flowers."
@@ -35,7 +35,7 @@
 	icon_state = "ptolemaic_helm"
 	item_state = "ptolemaic_helm"
 
-//Custom item - Pisshole / Montana
+//Custom item - Pisshole / Montana - Sprite by Pisshole
 /obj/item/clothing/head/f13/ranger/montana
 	name = "reclaimed Ranger helmet"
 	desc = "(VI) A mishmash of, most recognizably, a ranger patrol helmet and a ranger veteran's helmet once repurposed by the Centurion that killed them. It's got signs of wear and rust; its respirator has been gutted, its eyepieces are dull and cracked, and it's got pieces from a few different sources - hard to place sources. The top of the helmet, above the eyes, is emblazoned with a few words - De Oppresso Liber."
@@ -43,3 +43,11 @@
 	item_state = "rangermontana"
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
 	actions_types = list(/datum/action/item_action/toggle)
+
+//Custom item - Pisshole / Bangles - Sprite by Pisshole
+/obj/item/clothing/head/f13/trailranger/trailbandana
+	name = "NCR ranger bandana"
+	desc = "(IV) A thin piece of cloth that keeps sweat out of your face - or maybe just completes your fashion sense."
+	icon_state = "trailbandana"
+	item_state = "trailbandana"
+	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)

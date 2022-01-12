@@ -538,6 +538,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+//Sprite by Pisshole
 /obj/item/clothing/under/harebell_dress
 	name = "harebell dress"
 	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
@@ -547,6 +548,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+//Sprite edit by Pisshole
 /obj/item/clothing/under/flowerdress
 	name = "flower dress"
 	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."

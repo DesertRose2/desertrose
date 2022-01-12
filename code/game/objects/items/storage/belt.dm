@@ -836,6 +836,7 @@
 	icon_state = "holster_hip"
 	item_state = "holster_hip"
 
+//Sprite by Pisshole
 /obj/item/storage/belt/holster/ncrcf_w
 	name = "Worn NCRCF Women's Jacket"
 	desc = "A worn, torn women's NCRCF jacket with 'pockets' slit into the inside, letting you hide some things in the seam. Somehow, it fills you with vague feelings of rebellion and mommy and daddy issues. You kind of wish you could fit drugs in this..."
