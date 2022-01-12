@@ -488,3 +488,4 @@
 	new /obj/item/clothing/head/f13/trailranger/trailbandana
 	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig
 	new /obj/item/clothing/gloves/f13/leather/silverbangles
+	new /obj/item/warpaint_bowl
