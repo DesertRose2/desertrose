@@ -19,7 +19,7 @@
 	icon_state = "thaxarmor"
 	item_state = "thaxarmor"
 
-//Custom items - Pisshole / Valentina Vega
+//Custom item - Pisshole / Valentina Vega - Sprite edit by Pisshole
 /obj/item/clothing/suit/armor/f13/tina_jacket
 	name = "trail coat"
 	desc = "A dark red ranger's trenchcoat, replete with a belt and a trail ranger scarf dyed the color of harebells. It smells a little like flowers, lemon juice and gunpowder."
@@ -122,3 +122,19 @@
 	item_state = "ptolemaic_armor"
 
 
+//Custom item - Pisshole / Lorraine Clarke - Sprite by Pisshole
+/obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/ncrarmorbomber
+	name = "NCR reinforced bomber jacket"
+	desc = "(IV) A standard issue NCR Infantry vest with a reinforced jacket over top - the jacket's in the style of the NCR Air Force, but with a red cross patch on the shoulder opposite the flag."
+	icon_state = "ncrarmorbomber"
+	item_state = "ncrarmorbomber"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+//Custom item - Pisshole / Bangles - Sprite by Pisshole
+/obj/item/clothing/suit/armor/f13/trailranger/trailrig
+	name = "Lightweight Harness"
+	desc = "(IV) A simple gear harness, lightweight to allow freedom of movement but enough to carry your gear."
+	icon_state = "trailrig"
+	item_state = "trailrig"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.2

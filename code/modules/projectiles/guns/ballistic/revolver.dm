@@ -143,7 +143,7 @@
 	extra_penetration = 0.1
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
-//10mm Ranger Revolver
+//10mm Ranger Revolver - Sprite by Pisshole
 /obj/item/gun/ballistic/revolver/colt6520/ranger
 	name = "10mm 'Hard-Boiled' Special"
 	desc = "A shiny big iron that was popular among tax collectors and insurance investigators before the war. While technically based on a law-enforcement variant of the 6520, it is outfitted uniquely with modifications including a larger trigger guard and heavier weight to counterbalance its fire rate."
@@ -167,7 +167,7 @@
 	fire_delay = 4
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 
-//.45 Ranger Revolver
+//.45 Ranger Revolver - Sprite by Pisshole
 /obj/item/gun/ballistic/revolver/revolver45/ranger
 	name = "Casull Cowboy .45"
 	desc = "A rare .454 Casull revolver in incredibly well-maintained condition, polished to a mirror sheen. It's been rechambered to fit .45 ACP for some reason. Most of these have been lost to the mists of time."
@@ -210,7 +210,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/lucky37
 	block_chance = 20
 
-//.357 Ranger Revolver
+//.357 Ranger Revolver - Sprite by Pisshole
 /obj/item/gun/ballistic/revolver/colt357/ranger
 	name = "Lawman Autorevolver"
 	desc = "A pre-war conceptualized .357 never manufactured due to niche design, it's become a semi-common sight among NCR ranger big-irons. Its weight is a little more than it looks - and it already looks a bit oversized. Even so, the most interesting thing about it (aside from the golden bear design imprinted upon an embedded medallion in the grip) is that it is break-open style."
@@ -296,7 +296,7 @@
 	extra_damage = -2 //Smaller barrel thus lower bullet velocity
 	spread = 3
 
-//.44 Ranger Revolver
+//.44 Ranger Revolver - Sprites by Pisshole
 /obj/item/gun/ballistic/revolver/revolver44/ranger
 	name = "Shorty .44"
 	desc = "Noticing a short-barreled .44 on a ranger's hip might mean death will come 10 seconds more. A quality revolver like this makes up for its difference in size."

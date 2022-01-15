@@ -455,7 +455,7 @@
 /obj/item/storage/box/large/custom_kit/nataliamorgan/PopulateContents()
 	new /obj/item/clothing/under/f13/legskirt/tac(src)
 
-//Dahlia Lynee Vega - Pisshole
+//Dahlia Lynne Vega - Pisshole
 /obj/item/storage/box/large/custom_kit/dahliavega/PopulateContents()
 	new /obj/item/storage/belt/holster/ncrcf_w(src)
 	new /obj/item/clothing/head/beret/tina_beret(src)
@@ -466,6 +466,7 @@
 	new /obj/item/clothing/suit/toggle/labcoat/depjacket/sup(src)
 	new /obj/item/clothing/head/flight(src)
 	new /obj/item/clothing/ears/headphones(src)
+	new /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/ncrarmorbomber(src)
 
 //Joseph Riley - kooarbiter
 /obj/item/storage/box/large/custom_kit/josephriley/PopulateContents()
@@ -480,3 +481,11 @@
 /obj/item/storage/box/large/custom_kit/scout/PopulateContents()
 	new	/obj/item/clothing/head/beret/ncr_scout(src)
 	new	/obj/item/clothing/under/f13/ncr/scout(src)
+
+//Bangles - Pisshole
+
+/obj/item/storage/box/large/custom_kit/bangles/PopulateContents()
+	new /obj/item/clothing/head/f13/trailranger/trailbandana
+	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig
+	new /obj/item/clothing/gloves/f13/leather/silverbangles
+	new /obj/item/warpaint_bowl
