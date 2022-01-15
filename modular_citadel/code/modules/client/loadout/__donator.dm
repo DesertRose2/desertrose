@@ -441,6 +441,11 @@
 	path = /obj/item/storage/box/large/custom_kit/josephriley
 	ckeywhitelist = list("kooarbiter")
 
+/datum/gear/donator/kits/dahliavega
+	name = "Bangles' Belongings"
+	path = /obj/item/storage/box/large/custom_kit/bangles
+	ckeywhitelist = list("pisshole")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
