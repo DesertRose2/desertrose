@@ -842,8 +842,6 @@
 	desc = "A worn, torn women's NCRCF jacket with 'pockets' slit into the inside, letting you hide some things in the seam. Somehow, it fills you with vague feelings of rebellion and mommy and daddy issues. You kind of wish you could fit drugs in this..."
 	icon_state = "ncrcf_w"
 	item_state = "ncrcf_w"
-	alternate_worn_layer = MANTLE_LAYER
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
