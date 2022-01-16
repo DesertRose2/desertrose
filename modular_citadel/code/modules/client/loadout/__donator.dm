@@ -442,7 +442,7 @@
 	ckeywhitelist = list("kooarbiter")
 
 /datum/gear/donator/kits/bangles
-	name = "Bangles' Belongings"
+	name = "Bangles' belongings"
 	path = /obj/item/storage/box/large/custom_kit/bangles
 	ckeywhitelist = list("pisshole")
 

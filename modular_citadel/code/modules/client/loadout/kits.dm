@@ -485,7 +485,7 @@
 //Bangles - Pisshole
 
 /obj/item/storage/box/large/custom_kit/bangles/PopulateContents()
-	new /obj/item/clothing/head/f13/trailranger/trailbandana
-	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig
-	new /obj/item/clothing/gloves/f13/leather/silverbangles
-	new /obj/item/warpaint_bowl
+	new /obj/item/clothing/head/f13/trailranger/trailbandana(src)
+	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig(src)
+	new /obj/item/clothing/gloves/f13/leather/silverbangles(src)
+	new /obj/item/warpaint_bowl(src)
