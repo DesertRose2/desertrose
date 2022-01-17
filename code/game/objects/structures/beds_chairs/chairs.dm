@@ -532,7 +532,7 @@
 	icon_state = "office_chair_white"
 
 /obj/structure/chair/office/dark
-	icon_state = "officechair_dark"
+	icon_state = "office_chair_dark"
 
 
 ////////////
