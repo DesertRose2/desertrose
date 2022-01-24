@@ -559,6 +559,7 @@
 						 "theneworleans",
 						 "ollieoxen",
 						 "cythisia",
+						 "marcusstephens",
 						 "landoorando",
 						 "luke313",
 						 "pisshole")
@@ -628,6 +629,7 @@
 						"julwaters",
 						"shoi87",
 						"gurking",
+						"marcusstephens",
 						"idiocityinc",
 						"zeronetalpha",
 						"mrmatrixman",
@@ -677,6 +679,7 @@
 	ckeywhitelist = list("gurking",
 						"totallyinnocent",
 						"thegreatcoward",
+						"marcusstephens",
 						"usotsukihime",
 						"asterixcodix")
 	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
