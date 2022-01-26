@@ -246,6 +246,13 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/bar)
 
+/obj/item/book/granter/crafting_recipe/tribalrecipes
+	name = "Tribal Recipes"
+	desc = "A book all about the tribal recipes."
+	oneuse = TRUE
+	remarks = list("There are five Machine Spirits...", "Each govern an aspect of life...", "Always respect the Machine Spirits", "Never use them for selfish reasons", "Honor and love those blessed by the machine spirits.")
+	crafting_recipe_types = list(/datum/crafting_recipe/heavytribe, /datum/crafting_recipe/tribe_armor, /datum/crafting_recipe/ritual, /datum/crafting_recipe/tribalshield, /datum/crafting_recipe/warclub, /datum/crafting_recipe/warmace, /datum/crafting_recipe/arrowpoison, /datum/crafting_recipe/arrowburn, /datum/crafting_recipe/deathclawspear, /datum/crafting_recipe/tribalwar/sturdybow, /datum/crafting_recipe/tribalwar/silverbow, /datum/crafting_recipe/tribalwar/bonebow, /datum/crafting_recipe/tribalshield, /datum/crafting_recipe/nightshield, /datum/crafting_recipe/hydra)
+
 /obj/item/book/granter/trait/lowsurgery
 	name = "Surgery for Wastelanders"
 	desc = "A useful book on surgery."

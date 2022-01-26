@@ -921,3 +921,83 @@ Outlaw
 		/obj/item/reagent_containers/food/drinks/bottle/applejack=1,
 		/obj/item/reagent_containers/food/drinks/bottle/goldschlager=1,
 		/obj/item/clothing/accessory/pocketprotector/cosmetology=1)
+
+//Note: Recipes will be gone and into a book as soon as I figure out how to do that much
+/datum/job/wasteland/f13tribal
+	title = "Tribal"
+	faction = "Wastelander"
+	total_positions = -1
+	spawn_positions = -1
+	description = "You may have come near or far reach the Arizo"
+	supervisors = "no one or the stars above"
+	selection_color = "#dddddd"
+	outfit = /datum/job/wasteland/f13tribal
+
+	access = list()
+	minimal_access = list()
+
+	loadout_options = list(
+		/datum/outfit/loadout/gatherer, //Bow and quiver, Bone knife, Healing powder
+		/datum/outfit/loadout/gardener //Deathclaw Bone Spear, Bone knife, Healing powder
+	)
+
+/datum/outfit/loadout/gatherer
+	name = "Gatherer"
+	backpack_contents = list(
+		/obj/item/twohanded/spear/bonespear=1,
+		/obj/item/kitchen/knife/combat/bone=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1
+	)
+
+/datum/outfit/loadout/gardener
+	name = "Gardener"
+	backpack_contents = list(
+		/obj/item/scythe=1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/cultivator=1,
+		/obj/item/reagent_containers/glass/bucket/wood=1
+	)
+
+
+/datum/outfit/job/wasteland/f13tribal/pre_equip(mob/living/carbon/human/H)
+	..()
+	name = "Tribal"
+	jobtype = /datum/job/wasteland/f13tribal
+
+	id = 		null
+	ears = 		null
+	belt = 		/obj/item/kitchen/knife/combat/bone
+	backpack =	/obj/item/storage/backpack/satchel/explorer
+	satchel = 	/obj/item/storage/backpack/satchel/explorer
+	uniform = /obj/item/clothing/under/f13/tribe
+	gloves =    /obj/item/clothing/gloves/f13/handwraps
+	shoes =     /obj/item/clothing/shoes/sandal
+	l_pocket = /obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder = 2,
+		/obj/item/flashlight/lantern = 1,
+		)
+
+
+/datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
+	H.grant_language(/datum/language/tribal)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ritual)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warclub)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warmace)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowpoison)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowburn)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/deathclawspear)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/nightshield)
