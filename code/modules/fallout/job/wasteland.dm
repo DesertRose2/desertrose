@@ -928,7 +928,7 @@ Outlaw
 	faction = "Wastelander"
 	total_positions = -1
 	spawn_positions = -1
-	description = "You may have come near or far reach the Arizo"
+	description = "You come from far away land and or even you are from here from one of the local tribes."
 	supervisors = "no one or the stars above"
 	selection_color = "#dddddd"
 	outfit = /datum/job/wasteland/f13tribal
@@ -937,14 +937,14 @@ Outlaw
 	minimal_access = list()
 
 	loadout_options = list(
-		/datum/outfit/loadout/gatherer, //Bow and quiver, Bone knife, Healing powder
-		/datum/outfit/loadout/gardener //Deathclaw Bone Spear, Bone knife, Healing powder
+		/datum/outfit/loadout/gatherer, //needs to be fixed but this is draft PR
+		/datum/outfit/loadout/gardener //needs to be fixed but this is draft PR
 	)
 
 /datum/outfit/loadout/gatherer
 	name = "Gatherer"
 	backpack_contents = list(
-		/obj/item/twohanded/spear/bonespear=1,
+		/obj/item/twohanded/spear=1,
 		/obj/item/kitchen/knife/combat/bone=1,
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1
 	)
