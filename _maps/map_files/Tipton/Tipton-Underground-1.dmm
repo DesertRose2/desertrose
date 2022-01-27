@@ -4831,7 +4831,7 @@
 /area/f13/tunnel)
 "ePx" = (
 /mob/living/simple_animal/hostile/bear/yaoguai,
-/turf/open/floor/plating/ice,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/tunnel)
 "ePR" = (
 /obj/structure/wreck/car/bike{
@@ -6088,7 +6088,7 @@
 /area/f13/bunker)
 "gcZ" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/ice,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/tunnel)
 "gdk" = (
 /obj/item/storage/trash_stack,
@@ -10451,7 +10451,7 @@
 /area/f13/bunker)
 "klv" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
-/turf/open/floor/plating/ice,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/tunnel)
 "klw" = (
 /obj/structure/simple_door/bunker,
@@ -16591,7 +16591,7 @@
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/legion)
 "qao" = (
-/turf/open/floor/plating/ice,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/tunnel)
 "qas" = (
 /obj/structure/simple_door/bunker,
@@ -19269,7 +19269,7 @@
 /area/f13/bunker)
 "sER" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/floor/plating/ice,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/tunnel)
 "sES" = (
 /obj/structure/table,
