@@ -206,6 +206,11 @@
 /turf/open/floor/plating/ice/temperate
 	initial_temperature = 255.37
 
+/turf/open/floor/plating/ice/tipton
+	initial_temperature = T20C
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+	baseturfs = /turf/open/floor/plating/ice/tipton
+
 /turf/open/floor/plating/ice/break_tile()
 	return
 
