@@ -353,14 +353,14 @@
 	foodtype = SUGAR
 	distill_reagent = /datum/reagent/consumable/ethanol/mead
 
-	// Wayfarer Rose
-/obj/item/seeds/wayfarer_rose
-	name = "Pack of Wayfarer Rose Seed"
-	desc = "These seeds grow into Wayfarer Rose."
+	// Desert Rose renamed from Wayfarer rose
+/obj/item/seeds/desert_rose
+	name = "Pack of Desert Rose Seed"
+	desc = "These seeds grow into Desert Rose."
 	icon_state = "seed-wayfarerrose"
 	species = "wayfarerrose"
 	plantname = "Wayfarer Rose"
-	product = /obj/item/grown/wayfarer_rose
+	product = /obj/item/grown/desert_rose
 	endurance = 10
 	maturation = 8
 	yield = 6
@@ -370,10 +370,10 @@
 	icon_grow = "wayfarerrose-grow"
 	icon_dead = "wayfarerrose-dead"
 
-/obj/item/grown/wayfarer_rose
-	seed = /obj/item/seeds/wayfarer_rose
-	name = "wayfarer rose"
-	desc = "A beautiful blue flower the same shade as the turquoise gemstones commonly used by Wayfarers."
+/obj/item/grown/desert_rose
+	seed = /obj/item/seeds/desert_rose
+	name = "Desert rose"
+	desc = "A beautiful blue flower the same shade as the turquoise gemstones commonly once commonly used by Wayfarers in the area."
 	icon_state = "wayfarerrose"
 	slot_flags = ITEM_SLOT_HEAD
 	

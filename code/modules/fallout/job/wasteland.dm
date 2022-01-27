@@ -638,7 +638,6 @@ Outlaw
 	/datum/outfit/loadout/fieldhand,
 	/datum/outfit/loadout/hobo,
 	/datum/outfit/loadout/hombre,
-	/datum/outfit/loadout/tribal,
 	/datum/outfit/loadout/exmil,
 	/datum/outfit/loadout/eidolon,
 	/datum/outfit/loadout/aviator,
@@ -836,19 +835,6 @@ Outlaw
 		/obj/item/storage/fancy/rollingpapers=1,
 		/obj/item/ammo_box/m44=1)
 
-/datum/outfit/loadout/tribal
-	name = "Tribal"
-	suit = /obj/item/clothing/suit/hooded/cloak/desert
-	uniform = /obj/item/clothing/under/f13/raiderrags
-	shoes = /obj/item/clothing/shoes/f13/rag
-	head = /obj/item/clothing/head/f13/cowboy
-	gloves = /obj/item/clothing/gloves/bracer
-	belt = /obj/item/storage/belt/tribe_quiver
-	l_hand = /obj/item/gun/ballistic/bow
-	backpack_contents = list(
-		/obj/item/kitchen/knife/combat/bone=1,
-		/obj/item/flashlight=1)
-
 /datum/outfit/loadout/exmil
 	name = "Ex-Military"
 	suit = /obj/item/clothing/suit/flakjack
@@ -931,36 +917,61 @@ Outlaw
 	description = "You come from far away land and or even you are from here from one of the local tribes."
 	supervisors = "no one or the stars above"
 	selection_color = "#dddddd"
-	outfit = /datum/job/wasteland/f13tribal
+	outfit = /datum/outfit/job/wasteland/f13tribal
 
 	access = list()
 	minimal_access = list()
 
 	loadout_options = list(
-		/datum/outfit/loadout/gatherer, //needs to be fixed but this is draft PR
-		/datum/outfit/loadout/gardener //needs to be fixed but this is draft PR
+		/datum/outfit/loadout/tribalspearman,
+		/datum/outfit/loadout/tribalbowman,
+		/datum/outfit/loadout/tribalshaman,
+		/datum/outfit/loadout/wayfarer
 	)
 
-/datum/outfit/loadout/gatherer
-	name = "Gatherer"
+/datum/outfit/loadout/tribalspearman
+	name = "Spearman"
 	backpack_contents = list(
 		/obj/item/twohanded/spear=1,
-		/obj/item/kitchen/knife/combat/bone=1,
-		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1
+		/obj/item/clothing/head/helmet/f13/fiend=1,
+		/obj/item/clothing/suit/armor/f13/tribal=1,
+		/obj/item/storage/belt/mining/primitive=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2
 	)
 
-/datum/outfit/loadout/gardener
-	name = "Gardener"
+/datum/outfit/loadout/tribalbowman
+	name = "Bowman"
 	backpack_contents = list(
-		/obj/item/scythe=1,
+		/obj/item/storage/belt/tribe_quiver=1,
+		/obj/item/gun/ballistic/bow=1,
+		/obj/item/clothing/head/helmet/f13/wayfarer/antler=1,
+		/obj/item/clothing/suit/hooded/cloak/goliath/tatteredred=1,
+		/obj/item/clothing/neck/mantle/brown=1
+	)
+
+/datum/outfit/loadout/tribalshaman
+	name = "Shaman"
+	backpack_contents = list(
+		/obj/item/warpaint_bowl=1,
 		/obj/item/storage/bag/plants=1,
 		/obj/item/cultivator=1,
-		/obj/item/reagent_containers/glass/bucket/wood=1
+		/obj/item/reagent_containers/glass/bucket/wood=1,
+		/obj/item/kitchen/knife/ritualdagger=1,
+		/obj/item/clothing/suit/hooded/cloak/desert=1
 	)
 
+/datum/outfit/loadout/wayfarer
+	name = "Wayfarer"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/wayfarer/hunter,
+		/obj/item/twohanded/sledgehammer/warmace=1,
+		/obj/item/clothing/suit/armor/f13/tribe_armor=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
+		/obj/item/clothing/head/helmet/f13/wayfarer/hunter=1,
+		/obj/item/storage/belt/mining/primitive=1
+	)
 
-/datum/outfit/job/wasteland/f13tribal/pre_equip(mob/living/carbon/human/H)
-	..()
+/datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"
 	jobtype = /datum/job/wasteland/f13tribal
 
@@ -969,7 +980,7 @@ Outlaw
 	belt = 		/obj/item/kitchen/knife/combat/bone
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
-	uniform = /obj/item/clothing/under/f13/tribe
+	uniform = /obj/item/clothing/under/f13/raiderrags
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	shoes =     /obj/item/clothing/shoes/sandal
 	l_pocket = /obj/item/flashlight/lantern
