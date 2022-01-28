@@ -533,6 +533,7 @@
 						"totallyinnocent",
 						"cythisia",
 						"honto335",
+						"spartan2548",
 						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -665,6 +666,7 @@
 						"landoorando",
 						"honto335",
 						"luke313",
+						"spartan2548",
 						"lunaticluna")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -706,10 +708,10 @@
 	ckeywhitelist = list("dioclex")
 	restricted_roles = list("Legion Venator")
 
-/datum/gear/donator/wayfarerrose
-	name = "Wayfarer rose"
+/datum/gear/donator/desertrose
+	name = "Desert rose"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/grown/wayfarer_rose
+	path = /obj/item/grown/desert_rose
 	ckeywhitelist = list("ollieoxen",
 						"andrej99",
 						"novaskelly",
