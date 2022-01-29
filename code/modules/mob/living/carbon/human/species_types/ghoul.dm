@@ -17,10 +17,8 @@
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage -= 10
-	C.faction |= "ghoul"
 /datum/species/ghoul/on_species_loss(mob/living/carbon/C)
 	..()
-	C.faction -= "ghoul"
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
 

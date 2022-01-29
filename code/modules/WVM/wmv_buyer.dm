@@ -57,14 +57,20 @@
 	dat += "<br>"
 	dat +="<div class='statusDisplay'>"
 	dat += "<b>Accepted goods and prices:</b><br>"
-	dat += "Iron ore : 1.5 caps<br>"
+	/*dat += "Iron ore : 1.5 caps<br>"
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
 	dat += "Diamond : 50 caps<br>"
-	dat += "Leather : 5 caps<br>"
+	dat += "Leather : 5 caps<br>"*/
 	dat += "Jet/Psycho/MedX : 5-15 caps<br>"
-	dat += "Inventions : 25 caps"
-	dat += "Tinker Kits : 25 caps"
+	/*dat += "Inventions : 25 caps<br>"
+	dat += "Tinker Kits : 25 caps<br>"*/
+	dat += "Browning Hi-Power : 25<br>"
+	dat += "Colt 6520 : 30<br>"
+	dat += "Enfield : 35<br>"
+	dat += "N99 pistol : 30<br>"
+	dat += ".22 pistol : 20<br>"
+	dat += "Winchester widowmaker : 40<br>"
 	dat += "</div>"
 
 	var/datum/browser/popup = new(user, "tradingvendor", "Trading point", 400, 500)
