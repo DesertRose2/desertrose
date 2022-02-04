@@ -641,8 +641,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	name = "Wasteland Pip-N-Walk"
 	icon_state = "generic_idle"
 	prize_list = list(
-		new /datum/data/wasteland_equipment("Pip-boy 3000",			/obj/item/pda,																250),
-		new /datum/data/wasteland_equipment("Reprogrammable ID",	/obj/item/card/id/selfassign,												200),
+		new /datum/data/wasteland_equipment("Pip-boy 3000",			/obj/item/pda,																175),
+		new /datum/data/wasteland_equipment("Reprogrammable ID",	/obj/item/card/id/selfassign,												125),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Reagent Scanner",	/obj/item/cartridge/chemistry,						50),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Health Scanner",	/obj/item/cartridge/medical,						50),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Signaler",	/obj/item/cartridge/signal,								50),
@@ -662,6 +662,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Random manual",					/obj/item/book/manual/random,									40),
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
+		new /datum/data/wasteland_equipment("Box of ingredients - Wildcard",	/obj/item/storage/box/ingredients/wildcard,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
 		new /datum/data/wasteland_equipment("SCAV! Issue 1",					/obj/item/book/granter/crafting_recipe/scav_one,				600),
@@ -671,6 +672,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Random manual",					/obj/item/book/manual/random,									40),
 		new /datum/data/wasteland_equipment("Box of ingredients - American",	/obj/item/storage/box/ingredients/american,						80),
+		new /datum/data/wasteland_equipment("Box of ingredients - Wildcard",	/obj/item/storage/box/ingredients/wildcard,						80),
 		new /datum/data/wasteland_equipment("Music box",						/obj/item/holodisk/musicbox,									400),
 		new /datum/data/wasteland_equipment("Advanced Armor and You",			/obj/item/book/granter/trait/pa_wear,							2000),
 		new /datum/data/wasteland_equipment("SCAV! Issue 1",					/obj/item/book/granter/crafting_recipe/scav_one,				600),
