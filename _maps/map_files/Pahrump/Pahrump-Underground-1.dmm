@@ -254,10 +254,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/f13/tunnel)
-"agc" = (
-/obj/structure/chair/stool/alien,
-/turf/open/floor/plasteel/dark,
-/area/f13/tunnel)
 "agf" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -48978,7 +48974,7 @@ pvL
 ygC
 qqn
 ced
-agc
+rud
 iRz
 nNu
 nNu
@@ -49235,7 +49231,7 @@ bUB
 ygC
 sui
 ced
-agc
+rud
 xPf
 nNu
 nNu
