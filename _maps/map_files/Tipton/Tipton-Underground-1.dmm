@@ -743,11 +743,6 @@
 	},
 /turf/open/water,
 /area/f13/sewer)
-"aPR" = (
-/obj/item/bedsheet/purple,
-/obj/structure/bed/wooden,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "aQd" = (
 /obj/structure/spider/stickyweb,
 /turf/open/indestructible/ground/inside/subway,
@@ -2422,10 +2417,6 @@
 "cvc" = (
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
-/area/f13/caves)
-"cwa" = (
-/obj/structure/table/wood/fancy/purple,
-/turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "cwk" = (
 /obj/structure/lattice/catwalk,
@@ -4965,10 +4956,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
-"eXI" = (
-/obj/effect/landmark/start/f13/Hhunter,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "eYv" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul,
@@ -7286,10 +7273,6 @@
 	},
 /turf/closed/wall/f13/ruins,
 /area/f13/bunker)
-"hmq" = (
-/obj/effect/landmark/start/f13/chief,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "hmK" = (
 /mob/living/simple_animal/hostile/giantant,
 /obj/effect/spawner/lootdrop/trash,
@@ -7647,10 +7630,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"hIK" = (
-/obj/effect/landmark/start/f13/villager,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "hIN" = (
 /obj/structure/window/fulltile/ruins/broken,
 /obj/structure/barricade/sandbags,
@@ -7798,10 +7777,6 @@
 /obj/structure/window/fulltile/house/broken,
 /turf/open/water,
 /area/f13/sewer)
-"hRo" = (
-/obj/effect/landmark/start/f13/shaman,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "hRI" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9590,14 +9565,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/sewer)
-"juq" = (
-/obj/structure/closet/cabinet/anchored,
-/obj/item/clothing/under/f13/tribal,
-/obj/item/clothing/under/f13/tribal,
-/obj/item/clothing/under/f13/female/tribal,
-/obj/item/clothing/under/f13/female/tribal,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "jux" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/glass/mortar{
@@ -9846,10 +9813,6 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
-"jKW" = (
-/obj/effect/landmark/start/f13/druid,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "jLh" = (
 /obj/structure/handrail/g_central{
 	dir = 1;
@@ -11617,12 +11580,6 @@
 /obj/machinery/microwave/stove,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
-"lvm" = (
-/obj/structure/closet/cabinet/anchored,
-/obj/item/clothing/under/f13/wayfarer/hunter,
-/obj/item/clothing/under/f13/wayfarer/hunter,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "lvr" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /turf/open/floor/wood/f13/old,
@@ -12102,8 +12059,8 @@
 	},
 /area/f13/bunker)
 "lSv" = (
-/obj/structure/bed/wooden,
-/obj/item/bedsheet/purple,
+/obj/structure/bed/old,
+/obj/item/blanket,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "lSF" = (
@@ -14545,21 +14502,6 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/water,
 /area/f13/caves)
-"ojj" = (
-/obj/item/clothing/under/f13/wayfarer,
-/obj/item/clothing/under/f13/wayfarer,
-/obj/item/clothing/under/f13/wayfarer,
-/obj/item/clothing/under/f13/wayfarer,
-/obj/item/clothing/under/f13/wayfarer,
-/obj/item/clothing/under/f13/wayfarer,
-/obj/structure/rack,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/shoes/sandal,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "ojW" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -14768,10 +14710,6 @@
 	},
 /area/f13/bunker)
 "orU" = (
-/obj/item/clothing/head/helmet/f13/deathskull,
-/obj/item/clothing/head/helmet/f13/deathskull,
-/obj/item/clothing/head/helmet/f13/deathskull,
-/obj/item/clothing/head/helmet/f13/deathskull,
 /obj/structure/rack,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
@@ -15978,13 +15916,6 @@
 "pCU" = (
 /obj/effect/mob_spawn/alien/corpse/humanoid,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
-"pDb" = (
-/obj/structure/barricade/wooden,
-/obj/structure/curtain{
-	color = "#450159"
-	},
-/turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "pDm" = (
 /obj/structure/reagent_dispensers/compostbin,
@@ -17554,7 +17485,7 @@
 /turf/open/water,
 /area/f13/sewer)
 "rgz" = (
-/obj/effect/landmark/start/f13/spiritpledged,
+/obj/effect/landmark/start/f13/tribal,
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "rho" = (
@@ -20252,10 +20183,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/bunker)
-"tXb" = (
-/obj/effect/landmark/start/f13/hunter,
-/turf/open/floor/wood/f13/old,
-/area/f13/caves)
 "tXj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -57506,9 +57433,9 @@ vKr
 sLr
 eXl
 eXl
-pDb
-pDb
-pDb
+nto
+nto
+nto
 eXl
 eXl
 lQM
@@ -57706,9 +57633,9 @@ vKr
 vKr
 sLr
 tMZ
-pDb
-aPR
-iWx
+nto
+lSv
+rgz
 iWx
 iWx
 voR
@@ -57718,7 +57645,7 @@ sLr
 qRn
 eXl
 lSv
-iWx
+rgz
 eXl
 dsv
 sLr
@@ -57908,7 +57835,7 @@ vKr
 sLr
 sLr
 sLr
-pDb
+nto
 voR
 iWx
 iWx
@@ -58122,7 +58049,7 @@ wOd
 kXp
 vxS
 lSv
-iWx
+rgz
 eXl
 dsv
 tMZ
@@ -58314,7 +58241,7 @@ ckv
 sLr
 eXl
 lSv
-iWx
+rgz
 eXl
 iWx
 iWx
@@ -58536,9 +58463,9 @@ iWx
 yhT
 sLr
 eXl
-aPR
-voR
-aPR
+lSv
+iWx
+lSv
 eXl
 lQM
 sLr
@@ -58738,9 +58665,9 @@ iWx
 yhT
 eXl
 eXl
+lSv
 iWx
-iWx
-iWx
+lSv
 eXl
 eXl
 lQM
@@ -59143,7 +59070,7 @@ iWx
 rGv
 iWx
 iWx
-iWx
+rgz
 iWx
 voR
 uln
@@ -59342,10 +59269,10 @@ iWx
 iWx
 iWx
 iWx
-pDb
+nto
 iWx
 iWx
-iWx
+rgz
 iWx
 voR
 uln
@@ -60330,8 +60257,8 @@ sLr
 sLr
 nYW
 eXl
-pDb
-pDb
+nto
+nto
 eXl
 nYW
 iWx
@@ -60737,7 +60664,7 @@ cHP
 iWx
 iWx
 nvy
-pDb
+nto
 iWx
 iWx
 iWx
@@ -60939,7 +60866,7 @@ uct
 iWx
 iWx
 jux
-pDb
+nto
 iWx
 iWx
 iWx
@@ -61339,7 +61266,7 @@ tMZ
 sLr
 hyz
 iWx
-jKW
+iWx
 edX
 iWx
 edX
@@ -61541,11 +61468,11 @@ tMZ
 sLr
 hyz
 iWx
-hRo
+iWx
 edX
 iWx
 edX
-pDb
+nto
 iWx
 iWx
 cAd
@@ -61743,7 +61670,7 @@ tMZ
 sLr
 hyz
 iWx
-jKW
+iWx
 edX
 iWx
 edX
@@ -61945,7 +61872,7 @@ tMZ
 sLr
 fin
 eXl
-cwa
+voR
 iWx
 iWx
 iWx
@@ -62560,7 +62487,7 @@ iWx
 iWx
 iWx
 eXl
-ojj
+orU
 orU
 iWx
 eXl
@@ -63166,9 +63093,9 @@ iWx
 iWx
 iWx
 eXl
-juq
-fcE
-lvm
+orU
+orU
+orU
 eXl
 lQM
 sLr
@@ -64577,8 +64504,8 @@ tMZ
 kXp
 hOb
 iWx
-tXb
-tXb
+iWx
+iWx
 iWx
 oEO
 jbO
@@ -64590,7 +64517,7 @@ kXp
 voR
 iWx
 iWx
-hIK
+rgz
 edX
 voR
 edX
@@ -64792,7 +64719,7 @@ fLh
 voR
 iWx
 iWx
-hIK
+rgz
 edX
 voR
 edX
@@ -64980,7 +64907,7 @@ cnn
 cnn
 fOk
 iWx
-eXI
+iWx
 opb
 fRi
 iWx
@@ -64993,8 +64920,8 @@ iWx
 iWx
 iWx
 iWx
-hmq
-hIK
+iWx
+rgz
 edX
 voR
 edX
@@ -65196,7 +65123,7 @@ iWx
 iWx
 iWx
 iWx
-hIK
+rgz
 edX
 voR
 edX

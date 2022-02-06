@@ -799,17 +799,6 @@
 "azF" = (
 /turf/open/floor/carpet/green,
 /area/f13/followers)
-"azL" = (
-/obj/structure/pool/ladder{
-	dir = 2;
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "azO" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1766,21 +1755,6 @@
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
-"bkW" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/pool/ladder{
-	dir = 2;
-	pixel_x = -7;
-	pixel_y = 17
-	},
-/turf/open/pool{
-	color = "#575361";
-	desc = "Deep, poorly filtered water.";
-	name = "Stagnant Water"
-	},
-/area/f13/legion)
 "bls" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/computer/terminal{
@@ -2183,11 +2157,7 @@
 /obj/item/bikehorn/rubberducky{
 	layer = 5
 	},
-/turf/open/pool{
-	color = "#575361";
-	desc = "Deep, poorly filtered water.";
-	name = "Stagnant Water"
-	},
+/turf/open/water,
 /area/f13/legion)
 "bxC" = (
 /obj/structure/bed/mattress{
@@ -2870,11 +2840,7 @@
 	dir = 8;
 	layer = 3
 	},
-/turf/open/pool{
-	color = "#575361";
-	desc = "Deep, poorly filtered water.";
-	name = "Stagnant Water"
-	},
+/turf/open/water,
 /area/f13/legion)
 "bWz" = (
 /obj/machinery/telecomms/server/presets/den,
@@ -6075,11 +6041,7 @@
 	layer = 3;
 	pixel_y = 15
 	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
+/turf/open/water,
 /area/f13/tunnel)
 "eaX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6916,11 +6878,7 @@
 	layer = 3;
 	pixel_y = 15
 	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
+/turf/open/water,
 /area/f13/tunnel)
 "eEY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8760,11 +8718,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/pool{
-	color = "#575361";
-	desc = "Deep, poorly filtered water.";
-	name = "Stagnant Water"
-	},
+/turf/open/water,
 /area/f13/legion)
 "fON" = (
 /obj/structure/table/wood,
@@ -17291,11 +17245,7 @@
 /obj/structure/chair/bench{
 	pixel_y = 15
 	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
+/turf/open/water,
 /area/f13/tunnel)
 "ltH" = (
 /obj/structure/chair/sofa/fancy{
@@ -18189,17 +18139,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
-"mhL" = (
-/obj/structure/chair/bench,
-/obj/structure/decoration/vent{
-	pixel_y = 15
-	},
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
-/area/f13/tunnel)
 "miI" = (
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
@@ -19167,11 +19106,7 @@
 /area/f13/tunnel)
 "mNn" = (
 /obj/structure/chair/bench,
-/turf/open/pool{
-	desc = "Warm relaxing water to take a bath in. And it has no rads! ... you think.";
-	icon_state = "bath_tile";
-	name = "Bath Water"
-	},
+/turf/open/water,
 /area/f13/tunnel)
 "mNE" = (
 /obj/structure/barricade/bars,
@@ -29452,11 +29387,7 @@
 /obj/structure/disposalpipe/broken{
 	layer = 3
 	},
-/turf/open/pool{
-	color = "#575361";
-	desc = "Deep, poorly filtered water.";
-	name = "Stagnant Water"
-	},
+/turf/open/water,
 /area/f13/legion)
 "tjK" = (
 /obj/effect/decal/cleanable/dirt{
@@ -59213,8 +59144,8 @@ fJM
 mIm
 nlk
 nlk
-azL
-mhL
+weW
+mNn
 jmN
 xDr
 jmN
@@ -60241,8 +60172,8 @@ fJM
 mIm
 nlk
 nlk
-azL
-mhL
+weW
+mNn
 jmN
 xDr
 vSd
@@ -94949,7 +94880,7 @@ eLE
 mlv
 uWI
 qBC
-bkW
+fOL
 fOL
 fOL
 tjI
@@ -95721,7 +95652,7 @@ mlv
 tDV
 qBC
 qBC
-bkW
+fOL
 fOL
 fOL
 mlv
