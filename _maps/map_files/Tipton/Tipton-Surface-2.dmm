@@ -1853,7 +1853,7 @@
 	dir = 1;
 	pixel_x = -14
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "bhG" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2061,7 +2061,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "boP" = (
 /obj/structure/fence{
@@ -2726,7 +2726,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "bMc" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -3856,7 +3856,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "cCv" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -5500,7 +5500,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/den)
 "dFg" = (
 /obj/structure/table/wood,
@@ -5852,7 +5852,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/den)
 "dTH" = (
 /obj/structure/rack,
@@ -6363,7 +6363,7 @@
 	dir = 1;
 	pixel_x = -19
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "eoB" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -7639,7 +7639,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "ffz" = (
 /obj/structure/barricade/wooden/planks/pregame,
@@ -8056,7 +8056,7 @@
 /area/f13/wasteland)
 "frL" = (
 /obj/effect/turf_decal/weather/snow/corner,
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "fsu" = (
 /obj/effect/turf_decal/weather/snow/corner,
@@ -9605,7 +9605,7 @@
 /area/f13/wasteland)
 "gwH" = (
 /obj/structure/sink/puddle,
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/den)
 "gwK" = (
 /obj/structure/fence/wooden{
@@ -10252,7 +10252,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "gSc" = (
 /obj/structure/rack,
@@ -10925,7 +10925,7 @@
 	dir = 1;
 	pixel_x = 13
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "hpp" = (
 /obj/machinery/computer/slot_machine,
@@ -14272,7 +14272,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/den)
 "jCj" = (
 /obj/structure/table/wood,
@@ -15882,7 +15882,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "kJY" = (
 /obj/machinery/light/small{
@@ -16308,7 +16308,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "kZt" = (
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/underground/mountain)
 "kZv" = (
 /obj/structure/simple_door/room,
@@ -16888,7 +16888,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "lCY" = (
 /obj/structure/simple_door/metal/barred,
@@ -18905,7 +18905,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 10
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "mTr" = (
 /obj/structure/table,
@@ -20365,7 +20365,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "nSJ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -23504,7 +23504,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "qcr" = (
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/den)
 "qcB" = (
 /obj/structure/rack,
@@ -24754,7 +24754,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "qXl" = (
 /obj/structure/rack,
@@ -29143,7 +29143,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
 "uiU" = (
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "ujb" = (
 /obj/structure/car/rubbish3,
@@ -30439,7 +30439,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 6
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "vdI" = (
 /obj/structure/chair/stool,
@@ -30726,7 +30726,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "vqy" = (
 /obj/structure/table/wood,
@@ -31875,7 +31875,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "wkG" = (
 /turf/open/water,
@@ -32371,7 +32371,7 @@
 	dir = 1;
 	pixel_x = 13
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "wDa" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -32553,7 +32553,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 9
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "wIB" = (
 /obj/structure/table/wood,
@@ -32963,7 +32963,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/ice/temperate,
+/turf/open/floor/plating/ice/tipton,
 /area/f13/wasteland)
 "wWf" = (
 /obj/structure/chair/stool,

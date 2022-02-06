@@ -303,7 +303,8 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Bandit",
 	"Outlaw",
 	"Faithful",
-	"Wastelander"
+	"Wastelander",
+	"Tribal"
 ))
 GLOBAL_LIST_INIT(security_positions, list(
 	"Vault-tec Security",

@@ -20,6 +20,7 @@
 	var/broken_hailer = 0
 	var/safety = TRUE
 
+//Sprite by Pisshole
 /obj/item/clothing/mask/gas/montana
 	name = "Worn Scout Scarf"
 	desc = "An old covering for a ranger's mouth, the color is dreary and worn, and stains run along it in mostly red or brown. It's thick enough that you wonder if there's something hidden inside of it, but whatever it is must be sewn inside the material. It seems to function well enough as a gas mask, as well. Huh."

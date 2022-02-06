@@ -1004,12 +1004,14 @@
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	icon = 'icons/fallout/clothing/suits.dmi'
 
+//Sprite by Pisshole
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
 	name = "Chicken Coop jacket"
 	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
 	icon_state = "drive_jacket"
 	item_state = "drive_jacket"
 
+//Sprite tweaked by Pisshole
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/croppeddenim
 	name = "cropped denim jacket"
 	desc = "A denim jacket. Cropped, for your pleasure."

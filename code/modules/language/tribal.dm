@@ -1,6 +1,6 @@
-/datum/language/wayfarer
-	name = "Wayfarer"
-	desc = "The language spoken by members of the Wayfarer tribe, boasting a complex system of phonemes and alien grammar. An expert ear of a researcher may notice the vague resemblance to the Indo-European language family."
+/datum/language/tribal
+	name = "tribal"
+	desc = "The language spoken by members of the tribals, boasting a complex system of phonemes and alien grammar. An expert ear of a researcher may notice the vague resemblance to the Indo-European language family."
 	key = "w"
 	syllables = list(
 	"pa", "pe", "pi","pa", "pe", "pi","pr", "bm",
@@ -20,4 +20,3 @@
 	"yor", "yar", "da", "do", "de", "di", "du", "dr",
 	"tos", "tis", "kos", "kis", "bos", "bis", "wos", "wis", "gos", "gis"
 )
-	icon_state = "wayfarer"
