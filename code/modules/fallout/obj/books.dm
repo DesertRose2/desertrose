@@ -369,6 +369,7 @@
 	name = "Private Diary"
 	desc = "Your private diary, reminding you of the knowledge you previously had."
 	granted_trait = null
+	pages_to_mastery = 0
 
 /obj/item/book/granter/trait/selection/attack_self(mob/user)
 	var/list/choices = list("Hard Yards","Minor Surgery","Power Armor","Chemistry","Salvager","Melee Expert", "Tinkerer", "Iron Fist", "Explosive Expert")

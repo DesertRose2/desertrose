@@ -1010,5 +1010,7 @@ Outlaw
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/punji_sticks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/nightshield)
+

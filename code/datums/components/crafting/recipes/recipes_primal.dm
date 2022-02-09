@@ -155,3 +155,11 @@
 			/obj/item/stack/sheet/animalhide/f13/brahmin = 2)
 	result = /obj/item/shield/tribal
 	category = CAT_PRIMAL
+
+/datum/crafting_recipe/punji_sticks
+	name = "Punji stick trap"
+	always_availible = FALSE
+	time = 30
+	reqs = list(/obj/item/grown/log/bamboo = 5)
+	result = /obj/structure/punji_sticks
+	category = CAT_PRIMAL

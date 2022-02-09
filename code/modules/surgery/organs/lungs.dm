@@ -480,7 +480,7 @@
 /obj/item/organ/lungs/cybernetic/upgraded
 	name = "upgraded cybernetic lungs"
 	desc = "A more advanced version of the stock cybernetic lungs. Features the ability to filter out various airbourne toxins and carbon dioxide even at heavy levels."
-	icon_state = "lungs-c-u2"
+	icon_state = "lungs-c-u"
 	maxHealth = 2 * STANDARD_ORGAN_THRESHOLD
 	safe_breath_min = 4 //You could literally be breathing the thinnest amount of oxygen and be fine
 	safe_breath_max = 250 //Or be in an enriched oxygen room for that matter

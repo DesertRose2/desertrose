@@ -131,13 +131,13 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
 "S" = (
-/obj/structure/closet/f13/leigon/plants,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood,
 /area/survivalpod)
 "T" = (
