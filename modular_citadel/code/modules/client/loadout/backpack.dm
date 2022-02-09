@@ -102,3 +102,11 @@
 /datum/gear/backpack/necklace//this is here because loadout doesn't support proper accessories
 	name = "A renameable necklace"
 	path = /obj/item/clothing/accessory/necklace
+
+/datum/gear/backpack/camera
+	name = "A camera"
+	path = /obj/item/camera
+
+/datum/gear/backpack/hollowedbook
+	name = "A Hollowed book"
+	path = /obj/item/storage/book

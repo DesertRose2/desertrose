@@ -383,8 +383,8 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
  */
 
 GLOBAL_LIST_INIT(bamboo_recipes, list ( \
-	new/datum/stack_recipe("punji sticks trap", /obj/structure/punji_sticks, 5, time = 30, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("blow gun", /obj/item/gun/syringe/blowgun, 10, time = 70), \
+	/*new/datum/stack_recipe("punji sticks trap", /obj/structure/punji_sticks, 5, time = 30, one_per_turf = TRUE, on_floor = TRUE), */ \
+	/* new/datum/stack_recipe("blow gun", /obj/item/gun/syringe/blowgun, 10, time = 70), */ \
 	))
 
 /obj/item/stack/sheet/mineral/bamboo
@@ -489,10 +489,11 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
  * Durathread
  */
 GLOBAL_LIST_INIT(durathread_recipes, list ( \
-	new/datum/stack_recipe("durathread jumpsuit", /obj/item/clothing/under/misc/durathread, 4, time = 40),
+	new/datum/stack_recipe("durathread jumpsuit", /obj/item/clothing/under/misc/durathread, 4, time = 40), \
 	new/datum/stack_recipe("durathread beret", /obj/item/clothing/head/beret/durathread, 2, time = 40), \
 	new/datum/stack_recipe("durathread beanie", /obj/item/clothing/head/beanie/durathread, 2, time = 40), \
 	new/datum/stack_recipe("durathread bandana", /obj/item/clothing/mask/bandana/durathread, 1, time = 25), \
+	new/datum/stack_recipe("durathread dufflebag", /obj/item/storage/backpack/duffelbag/durathread, 12, time = 60), \
 	))
 
 /obj/item/stack/sheet/durathread

@@ -1,5 +1,5 @@
 /datum/language/tribal
-	name = "tribal"
+	name = "Tribal"
 	desc = "The language spoken by members of the tribals, boasting a complex system of phonemes and alien grammar. An expert ear of a researcher may notice the vague resemblance to the Indo-European language family."
 	key = "w"
 	syllables = list(
