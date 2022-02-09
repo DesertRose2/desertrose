@@ -224,11 +224,6 @@
 	desc = "An marked patch of soil, showing signs of an ancestrial burial long ago. You wouldn't disturb a grave... right?";
 	name = "Wayfarer burial mound"
 	},
-/obj/item/grown/wayfarer_rose{
-	anchored = 1;
-	pixel_x = -5;
-	pixel_y = -7
-	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "cy" = (
