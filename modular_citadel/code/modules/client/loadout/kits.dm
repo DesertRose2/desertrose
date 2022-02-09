@@ -431,7 +431,7 @@
 //Montana - Pisshole
 /obj/item/storage/box/large/custom_kit/montana/PopulateContents()
 	new /obj/item/modkit/montanahelmet(src)
-	new /obj/item/modkit/montanascarf(src)
+	new /obj/item/clothing/mask/gas/montana(src)
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
 

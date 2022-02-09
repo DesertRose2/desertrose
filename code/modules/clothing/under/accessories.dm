@@ -249,7 +249,7 @@
 //Sprite by Pisshole
 /obj/item/clothing/accessory/medal/californian_cross
 	name = "The Californian Cross"
-	desc = "This medal is given to those who have endured the hardships of captivity and all it entails, we honor their courage and resolve in those dark times and shall never forget what they gave."
+	desc = "The gilded Cross of the Californian armed forces, it is awarded to long-term prisoners of war and survivors of extended torture at the hands of the enemies of the Republic who never broke in their service to the NCR. Like a light shining under the desert sun, the Cross is emblematic of the resolve the bearer wore in their darkest hours."
 	icon_state = "californian_cross"
 	item_state = "californian_cross"
 

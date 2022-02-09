@@ -777,7 +777,7 @@
 	new /obj/item/gun/ballistic/revolver/police(src)
 
 /obj/item/storage/belt/holster/ranger44/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver44/ranger(src)
+	new /obj/item/gun/ballistic/revolver/m29/ranger(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
