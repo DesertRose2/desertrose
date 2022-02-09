@@ -297,7 +297,7 @@
 	spread = 3
 
 //.44 Ranger Revolver - Sprites by Pisshole
-/obj/item/gun/ballistic/revolver/revolver44/ranger
+/obj/item/gun/ballistic/revolver/m29/ranger
 	name = "Shorty .44"
 	desc = "Noticing a short-barreled .44 on a ranger's hip might mean death will come 10 seconds more. A quality revolver like this makes up for its difference in size."
 	icon_state = "ranger44_alt"
