@@ -4,20 +4,11 @@
 /area/f13/wasteland)
 "c" = (
 /obj/structure/campfire/stove,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "d" = (
 /obj/structure/simple_door/tent,
 /turf/open/floor/plating/f13/outside/desert,
-/area/survivalpod)
-"f" = (
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
 /area/survivalpod)
 "g" = (
 /obj/structure/table/wood,
@@ -45,17 +36,11 @@
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "m" = (
 /obj/machinery/workbench,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "n" = (
 /obj/structure/table/wood,
@@ -68,10 +53,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "B" = (
 /turf/open/floor/f13/wood,
@@ -87,20 +69,14 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/structure/closet/crate/wooden,
 /obj/item/storage/box/matches,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "O" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 4;
 	icon_state = "f13foldupchair"
 	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "P" = (
 /obj/structure/chair/f13foldupchair{
@@ -111,17 +87,11 @@
 "Q" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 "R" = (
 /obj/structure/closet/crate/wooden,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
+/turf/open/floor/f13/wood,
 /area/survivalpod)
 
 (1,1,1) = {"
@@ -166,9 +136,9 @@ Q
 B
 L
 N
-f
-f
-f
+B
+B
+B
 L
 L
 "}
@@ -178,10 +148,10 @@ L
 L
 L
 c
-f
-f
-f
-f
+B
+B
+B
+B
 d
 "}
 (6,1,1) = {"
@@ -190,9 +160,9 @@ Q
 B
 L
 l
-f
-f
-f
+B
+B
+B
 L
 L
 "}
@@ -202,8 +172,8 @@ R
 K
 L
 m
-f
-f
+B
+B
 O
 L
 a
