@@ -37,9 +37,6 @@
 /area/survivalpod)
 "h" = (
 /obj/machinery/workbench,
-/turf/open/floor/carpet/black,
-/area/survivalpod)
-"i" = (
 /obj/item/flashlight/lantern,
 /turf/open/floor/carpet/black,
 /area/survivalpod)
@@ -118,7 +115,7 @@ a
 a
 f
 f
-i
+f
 f
 f
 c
