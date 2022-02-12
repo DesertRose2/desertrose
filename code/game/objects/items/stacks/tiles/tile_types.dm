@@ -192,6 +192,16 @@
 	turf_type = /turf/open/floor/wood/wood_diagonal
 	merge_type = /obj/item/stack/tile/wood/wood_diagonal
 
+//Bamboo
+/obj/item/stack/tile/bamboo
+	name = "bamboo mat pieces"
+	singular_name = "bamboo mat piece"
+	desc = "A piece of a bamboo mat with a decorative trim."
+	icon_state = "tile_bamboo"
+	turf_type = /turf/open/floor/bamboo
+	merge_type = /obj/item/stack/tile/bamboo
+	resistance_flags = FLAMMABLE
+	
 //Cloth Floors
 
 /obj/item/stack/tile/padded
