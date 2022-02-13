@@ -160,6 +160,6 @@
 	name = "Punji stick trap"
 	always_availible = FALSE
 	time = 30
-	reqs = list(/obj/item/grown/log/bamboo = 5)
+	reqs = list(/obj/item/stack/sheet/mineral/bamboo = 5)
 	result = /obj/structure/punji_sticks
 	category = CAT_PRIMAL
