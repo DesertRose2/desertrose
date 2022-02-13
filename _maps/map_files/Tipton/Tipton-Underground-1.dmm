@@ -24343,7 +24343,7 @@
 /area/f13/bunker)
 "xKf" = (
 /obj/machinery/door/poddoor/gate/preopen{
-	id = ""legiongates""
+	id = "legiongates"
 	},
 /obj/effect/decal/fakelattice,
 /obj/structure/lattice/catwalk{
