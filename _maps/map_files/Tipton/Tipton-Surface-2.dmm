@@ -31131,9 +31131,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"vGK" = (
-/turf/closed/wall/f13/wood/house/broken,
-/area/f13/klamat)
 "vGW" = (
 /obj/structure/closet/crate/wicker,
 /turf/open/floor/wood/f13/old,
@@ -69318,7 +69315,7 @@ eyH
 fcc
 eNI
 qHl
-vGK
+hdL
 vGp
 gzs
 vGp

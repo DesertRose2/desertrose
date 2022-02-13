@@ -9113,6 +9113,18 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
+/obj/machinery/button/door{
+	id = "legiongates";
+	name = "gate";
+	pixel_x = 32;
+	pixel_y = -5
+	},
+/obj/machinery/button/door{
+	id = "legionshuttereast";
+	name = "gate shutters";
+	pixel_x = 32;
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -14768,7 +14780,9 @@
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag,
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters{
+	id = ""legionshutternorth""
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
 "oyd" = (
@@ -16673,6 +16687,11 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 12
+	},
+/obj/machinery/button/door{
+	id = "legionshutternorth";
+	name = "gate shutters";
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -20685,7 +20704,9 @@
 "uuC" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/strong,
-/obj/machinery/door/poddoor/shutters,
+/obj/machinery/door/poddoor/shutters{
+	id = "legionshuttereast"
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
 "uvw" = (
@@ -24321,7 +24342,9 @@
 	},
 /area/f13/bunker)
 "xKf" = (
-/obj/machinery/door/poddoor/gate/preopen,
+/obj/machinery/door/poddoor/gate/preopen{
+	id = ""legiongates""
+	},
 /obj/effect/decal/fakelattice,
 /obj/structure/lattice/catwalk{
 	layer = 4
