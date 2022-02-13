@@ -14781,7 +14781,7 @@
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag,
 /obj/machinery/door/poddoor/shutters{
-	id = ""legionshutternorth""
+	id = "legionshutternorth"
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
