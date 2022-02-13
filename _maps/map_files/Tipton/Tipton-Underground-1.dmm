@@ -1448,12 +1448,6 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/sewer)
-"bvJ" = (
-/obj/structure/kitchenspike,
-/turf/open/floor/plasteel/f13/vault_floor/yellow{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/sewer)
 "bvQ" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -5687,9 +5681,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
-"fKg" = (
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "fKK" = (
 /obj/effect/decal/waste{
 	pixel_x = -5;
@@ -9585,9 +9576,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
-"juC" = (
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
 "juT" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib3-old"
@@ -11058,11 +11046,6 @@
 /obj/structure/sink/puddle,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/den)
-"kYo" = (
-/obj/structure/nest/mirelurk,
-/obj/structure/nest/mirelurk,
-/turf/open/water,
-/area/f13/tunnel)
 "kYv" = (
 /obj/structure/disposalpipe/broken{
 	dir = 4
@@ -20986,10 +20969,6 @@
 /obj/effect/decal/waste,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
-"uKx" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "uKK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/mineral/ash_rock,
@@ -30180,7 +30159,7 @@ vKr
 vKr
 vKr
 ipc
-bvJ
+pGv
 dWN
 hlp
 hfo
@@ -38597,7 +38576,7 @@ fDv
 aQd
 aQd
 ybd
-uKx
+wSl
 vIf
 frX
 vKr
@@ -38793,7 +38772,7 @@ ndu
 bAs
 qJs
 czy
-fKg
+nUU
 rAp
 aQd
 mBl
@@ -38992,7 +38971,7 @@ vKr
 vKr
 frX
 frX
-uKx
+wSl
 glt
 aQd
 ndu
@@ -39196,13 +39175,13 @@ vKr
 frX
 qgi
 bAs
-uKx
+wSl
 oWC
 aQd
 vIf
 qgi
 vVF
-uKx
+wSl
 aQd
 aQd
 frX
@@ -39399,11 +39378,11 @@ frX
 vIf
 vIf
 aQd
-fKg
+nUU
 aQd
 vIf
-uKx
-uKx
+wSl
+wSl
 uKK
 frX
 frX
@@ -40402,7 +40381,7 @@ qdh
 aQd
 aQd
 kcF
-uKx
+wSl
 wPb
 ndu
 aQd
@@ -40818,7 +40797,7 @@ aQd
 sUq
 roI
 aQd
-uKx
+wSl
 kcF
 vIf
 frX
@@ -41022,7 +41001,7 @@ frX
 aQd
 vIf
 vIf
-uKx
+wSl
 frX
 frX
 xvl
@@ -41223,7 +41202,7 @@ frX
 frX
 frX
 vIf
-uKx
+wSl
 bXe
 ndu
 frX
@@ -41426,7 +41405,7 @@ vKr
 frX
 aQd
 aQd
-fKg
+nUU
 aQd
 aQd
 frX
@@ -41629,7 +41608,7 @@ frX
 frX
 frX
 frX
-fKg
+nUU
 roI
 frX
 aQd
@@ -41833,8 +41812,8 @@ vKr
 frX
 aQd
 sUq
-fKg
-fKg
+nUU
+nUU
 aQd
 ndu
 frX
@@ -52584,7 +52563,7 @@ vKr
 vKr
 vKr
 vKr
-juC
+pCU
 sLr
 sLr
 cnn
@@ -52786,7 +52765,7 @@ vKr
 vKr
 vKr
 vKr
-juC
+pCU
 sLr
 sLr
 vKr
@@ -67898,7 +67877,7 @@ xvl
 xvl
 xvl
 tRM
-fKg
+nUU
 tRM
 tRM
 xvl
@@ -70331,7 +70310,7 @@ tRM
 tRM
 tRM
 tRM
-fKg
+nUU
 hFs
 hFs
 hFs
@@ -75830,10 +75809,10 @@ hQG
 muI
 yfB
 yfB
-fKg
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
+nUU
 ybd
 hQG
 cTZ
@@ -76035,8 +76014,8 @@ iCY
 yfB
 yfB
 xbV
-fKg
-fKg
+nUU
+nUU
 hQG
 cTZ
 hQG
@@ -76433,7 +76412,7 @@ vKr
 hQG
 gwV
 hQG
-fKg
+nUU
 yfB
 wrD
 wrD
@@ -76635,14 +76614,14 @@ vKr
 hQG
 xXH
 hQG
-fKg
+nUU
 yfB
 wrD
 wrD
 wrD
 wrD
 yfB
-fKg
+nUU
 hQG
 obm
 hQG
@@ -76837,7 +76816,7 @@ vKr
 hQG
 waP
 geT
-fKg
+nUU
 xbV
 iCY
 wrD
@@ -77039,7 +77018,7 @@ vKr
 hQG
 xXH
 hQG
-fKg
+nUU
 yfB
 wrD
 wrD
@@ -77241,14 +77220,14 @@ vKr
 hQG
 xXH
 hQG
-fKg
+nUU
 ybd
 yfB
 hmU
 wrD
 iCY
 yfB
-fKg
+nUU
 hQG
 rjo
 hQG
@@ -77443,14 +77422,14 @@ vKr
 hQG
 ciP
 hQG
-fKg
-fKg
+nUU
+nUU
 yfB
 yfB
 yfB
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 hQG
 rjo
 hQG
@@ -77617,7 +77596,7 @@ tRM
 vKr
 vKr
 vKr
-fKg
+nUU
 vKr
 vKr
 vKr
@@ -77645,14 +77624,14 @@ vKr
 hQG
 ciF
 hQG
-fKg
+nUU
 xbV
 wrD
 wrD
 yfB
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 hQG
 mLD
 hQG
@@ -77819,7 +77798,7 @@ faA
 cMS
 vKr
 vKr
-fKg
+nUU
 vKr
 vKr
 vKr
@@ -77854,7 +77833,7 @@ wrD
 hmU
 yfB
 muI
-fKg
+nUU
 hQG
 ciF
 hQG
@@ -78425,8 +78404,8 @@ faA
 iyu
 vKr
 vKr
-fKg
-fKg
+nUU
+nUU
 vKr
 vKr
 vKr
@@ -78627,8 +78606,8 @@ suS
 cMS
 vKr
 vKr
-fKg
-fKg
+nUU
+nUU
 vKr
 vKr
 vKr
@@ -78829,8 +78808,8 @@ wsF
 vKr
 vKr
 vKr
-fKg
-fKg
+nUU
+nUU
 vKr
 vKr
 vKr
@@ -82664,7 +82643,7 @@ vKr
 vKr
 vKr
 vKr
-kYo
+oFy
 wrD
 wrD
 vKr
@@ -94453,7 +94432,7 @@ iKY
 qqM
 kKa
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -94655,7 +94634,7 @@ wuu
 rZE
 rZE
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -94857,7 +94836,7 @@ dZO
 dZO
 rZE
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -95261,7 +95240,7 @@ bZm
 dmY
 iol
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -95463,7 +95442,7 @@ bZm
 bZm
 iol
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -95867,7 +95846,7 @@ hQG
 hQG
 hQG
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -96069,7 +96048,7 @@ kot
 qfg
 lux
 fAB
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -96271,7 +96250,7 @@ lux
 lux
 kot
 hei
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -96473,7 +96452,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -96675,7 +96654,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -97079,7 +97058,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 iBp
@@ -97281,7 +97260,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -97685,7 +97664,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 lAO
 hQG
 kmO
@@ -98134,9 +98113,9 @@ vKr
 vKr
 vKr
 vKr
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 wSI
 wSI
 wSI
@@ -98337,7 +98316,7 @@ vKr
 vKr
 vKr
 uxF
-fKg
+nUU
 vRZ
 vKr
 iBp
@@ -98538,8 +98517,8 @@ vKr
 vKr
 vKr
 uxF
-fKg
-fKg
+nUU
+nUU
 vKr
 vKr
 iBp
@@ -98739,9 +98718,9 @@ vKr
 vKr
 vKr
 wrD
-fKg
+nUU
 gnq
-fKg
+nUU
 vKr
 vKr
 iBp
@@ -98897,7 +98876,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -98940,8 +98919,8 @@ vKr
 vKr
 wrD
 wrD
-fKg
-fKg
+nUU
+nUU
 gQi
 vKr
 vKr
@@ -99131,7 +99110,7 @@ iBp
 iBp
 vKr
 vKr
-fKg
+nUU
 vKr
 vKr
 iBp
@@ -99141,8 +99120,8 @@ iBp
 vKr
 wrD
 bwE
-fKg
-fKg
+nUU
+nUU
 vKr
 vKr
 vKr
@@ -99301,7 +99280,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -99503,7 +99482,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -99533,7 +99512,7 @@ wrD
 vKr
 vKr
 vKr
-fKg
+nUU
 wrD
 vKr
 wrD
@@ -99705,7 +99684,7 @@ vKr
 vKr
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -99907,7 +99886,7 @@ pur
 kot
 vKr
 hQG
-fKg
+nUU
 hQG
 iBp
 vKr
@@ -99942,7 +99921,7 @@ vKr
 vKr
 vKr
 iha
-fKg
+nUU
 wrD
 wrD
 vKr
@@ -100109,7 +100088,7 @@ pur
 kot
 pur
 oiv
-fKg
+nUU
 hQG
 iBp
 iBp
@@ -100145,8 +100124,8 @@ vKr
 vKr
 vKr
 vKr
-fKg
-fKg
+nUU
+nUU
 hdf
 wrD
 vKr
@@ -100311,7 +100290,7 @@ pur
 pur
 pur
 pur
-fKg
+nUU
 hQG
 vKr
 vKr
@@ -100348,7 +100327,7 @@ vKr
 vKr
 vKr
 gQi
-fKg
+nUU
 vKr
 vKr
 vKr
@@ -100513,7 +100492,7 @@ rZE
 hur
 rZE
 ndp
-fKg
+nUU
 eLq
 eLq
 eLq
@@ -100715,9 +100694,9 @@ ykq
 cFf
 dpQ
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 gdk
 eLq
 vKr
@@ -100918,9 +100897,9 @@ rZE
 aon
 pur
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 eLq
 vKr
 vKr
@@ -101120,8 +101099,8 @@ dBJ
 rZE
 dID
 pur
-fKg
-fKg
+nUU
+nUU
 ugM
 eLq
 vKr
@@ -101322,9 +101301,9 @@ rZE
 nhF
 hkZ
 pur
-fKg
+nUU
 bwE
-fKg
+nUU
 pur
 pur
 pur
@@ -101524,9 +101503,9 @@ hur
 xYk
 dpQ
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 pur
 fAB
 vZP
@@ -101727,8 +101706,8 @@ rZE
 rZE
 pur
 xkR
-fKg
-fKg
+nUU
+nUU
 pur
 eqC
 vZP
@@ -101928,9 +101907,9 @@ rZE
 rZE
 nhF
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 mRO
 vZP
 vZP
@@ -102130,8 +102109,8 @@ hkZ
 rZE
 xqv
 pur
-fKg
-fKg
+nUU
+nUU
 bwE
 mRO
 wAo
@@ -102332,9 +102311,9 @@ rZE
 rZE
 hur
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 pur
 eqC
 ftZ
@@ -102535,8 +102514,8 @@ nhF
 kHG
 pur
 ugM
-fKg
-fKg
+nUU
+nUU
 pur
 vZP
 auS
@@ -102736,9 +102715,9 @@ rZE
 cFf
 ykq
 pur
-fKg
+nUU
 bwE
-fKg
+nUU
 pur
 pur
 pur
@@ -102938,9 +102917,9 @@ lux
 lux
 yhm
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 eLq
 vKr
 vKr
@@ -103140,9 +103119,9 @@ kot
 kot
 lux
 pur
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 eLq
 vKr
 vKr
@@ -103343,7 +103322,7 @@ pur
 pur
 pur
 gdk
-fKg
+nUU
 ugM
 eLq
 vKr
@@ -103527,25 +103506,25 @@ qNq
 bQq
 rZE
 mVJ
-fKg
-fKg
-fKg
-fKg
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
+nUU
+nUU
+nUU
+nUU
 vRZ
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
 tCC
-fKg
-fKg
-fKg
-fKg
-fKg
-fKg
-fKg
+nUU
+nUU
+nUU
+nUU
+nUU
+nUU
+nUU
 xkR
 eLq
 vKr
