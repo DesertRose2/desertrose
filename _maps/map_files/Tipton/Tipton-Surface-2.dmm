@@ -789,7 +789,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "ayS" = (
-/obj/structure/rack,
+/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -11871,6 +11871,11 @@
 /obj/structure/table,
 /obj/item/wrench/power,
 /turf/open/floor/plating/tunnel,
+/area/f13/brotherhood)
+"hWK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/gear_painter,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "hWN" = (
 /obj/structure/fence/corner,
@@ -72693,7 +72698,7 @@ bXo
 inf
 iUW
 tPl
-cjt
+hWK
 cjt
 tPl
 pTz

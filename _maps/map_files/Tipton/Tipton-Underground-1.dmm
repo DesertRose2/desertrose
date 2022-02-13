@@ -10137,6 +10137,13 @@
 /obj/item/radio,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
+"kdC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/gear_painter,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/bunker)
 "kdM" = (
 /obj/structure/table,
 /obj/item/pizzabox/pineapple,
@@ -62526,7 +62533,7 @@ hQG
 mOQ
 tgn
 uLE
-bKR
+kdC
 mDv
 mOQ
 dzR
