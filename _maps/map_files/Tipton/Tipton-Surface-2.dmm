@@ -22735,7 +22735,6 @@
 	name = "store shutters";
 	pixel_x = -6;
 	pixel_y = 30;
-	req_one_access = "139";
 	req_one_access_txt = "139"
 	},
 /obj/machinery/button/door{
@@ -22743,7 +22742,6 @@
 	name = "counter shutters";
 	pixel_x = 6;
 	pixel_y = 30;
-	req_one_access = "139";
 	req_one_access_txt = "139"
 	},
 /obj/structure/noticeboard{

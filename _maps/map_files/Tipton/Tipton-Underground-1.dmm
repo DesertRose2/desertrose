@@ -11922,7 +11922,6 @@
 "lNG" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/remains/human,
-/obj/effect/mob_spawn/alien/corpse/humanoid,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -14237,7 +14236,6 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/radiation)
 "nUU" = (
-/obj/effect/mob_spawn/alien/corpse/humanoid,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "nVn" = (
@@ -15909,7 +15907,6 @@
 	},
 /area/f13/sewer)
 "pCU" = (
-/obj/effect/mob_spawn/alien/corpse/humanoid,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "pDm" = (
@@ -15951,7 +15948,6 @@
 /area/f13/bunker)
 "pGv" = (
 /obj/structure/kitchenspike,
-/obj/effect/mob_spawn/alien/corpse/humanoid,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowdirtyfull"
 	},
@@ -18547,7 +18543,7 @@
 /area/f13/radiation)
 "skS" = (
 /obj/structure/ladder/unbreakable{
-	height = 2;
+	height = 1;
 	id = "TUNNCR"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -23419,7 +23415,6 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/bunker)
 "wSl" = (
-/obj/effect/mob_spawn/alien/corpse/humanoid,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
