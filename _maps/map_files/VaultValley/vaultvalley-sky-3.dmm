@@ -517,9 +517,8 @@
 /turf/open/floor/f13,
 /area/f13/brotherhood)
 "fe" = (
-/obj/effect/landmark/start/f13/hunter,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/village)
+/turf/closed/indestructible/rock,
+/area/f13/wasteland)
 "fg" = (
 /obj/structure/wreck/trash/machinepile,
 /obj/structure/barricade/wooden/planks,
@@ -677,6 +676,12 @@
 /obj/effect/spawner/bundle/costume/plaguedoctor,
 /turf/open/floor/carpet/blue,
 /area/f13/building)
+"gB" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "gD" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13{
@@ -697,8 +702,9 @@
 "gG" = (
 /obj/structure/table/reinforced,
 /obj/machinery/reagentgrinder/constructed,
-/obj/machinery/light/small,
-/turf/open/floor/plasteel/darkpurple/corner,
+/turf/open/floor/plasteel/darkpurple/corner{
+	dir = 1
+	},
 /area/f13/city)
 "gH" = (
 /obj/machinery/light/small,
@@ -898,12 +904,9 @@
 "is" = (
 /obj/structure/table/reinforced,
 /obj/machinery/processor/chopping_block,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/darkpurple/corner{
-	dir = 8
+	dir = 1
 	},
 /area/f13/city)
 "iE" = (
@@ -1060,14 +1063,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "kh" = (
-/obj/structure/table/wood/settler,
-/obj/item/reagent_containers/food/drinks/bottle/instacoffee,
-/obj/item/reagent_containers/food/drinks/coffee{
-	pixel_x = -8;
-	pixel_y = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/f13/city)
+/obj/effect/landmark/start/f13/tribal,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "kk" = (
 /obj/structure/filingcabinet/filingcabinet,
 /turf/open/floor/f13{
@@ -1119,13 +1117,9 @@
 	},
 /area/f13/wasteland)
 "kz" = (
-/obj/structure/bed,
-/obj/item/bedsheet/purple{
-	color = "#450159"
-	},
-/obj/effect/landmark/start/f13/druid,
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/obj/effect/landmark/start/f13/tribal,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "kA" = (
 /obj/effect/landmark/start/f13/elder,
 /obj/structure/chair/comfy/shuttle{
@@ -1303,18 +1297,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "lE" = (
-/obj/structure/curtain{
-	color = "#5c131b";
-	pixel_y = 32
-	},
-/turf/open/floor/wood/f13/carpet,
-/area/f13/city)
+/obj/effect/landmark/start/f13/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/village)
 "lH" = (
 /obj/structure/curtain{
 	color = "#5c131b";
 	pixel_x = 32
 	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/city)
 "lI" = (
 /obj/effect/spawner/lootdrop/bedsheet,
@@ -2167,9 +2158,12 @@
 	},
 /area/f13/wasteland)
 "tY" = (
-/obj/effect/landmark/start/f13/villager,
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/obj/structure/closet/cabinet/anchored,
+/obj/item/razor,
+/obj/item/switchblade,
+/obj/effect/spawner/lootdrop/clothing_high,
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "ud" = (
 /obj/effect/spawner/lootdrop/druggie_pill/no_turf,
 /obj/effect/decal/cleanable/dirt,
@@ -2245,13 +2239,13 @@
 	},
 /area/f13/building)
 "uC" = (
-/obj/structure/bed,
-/obj/item/bedsheet/purple{
-	color = "#450159"
+/obj/structure/bed/wooden,
+/obj/item/bedsheet/hos{
+	desc = "A comfortable red bedsheet.";
+	name = "Comfy Red Bedsheet"
 	},
-/obj/effect/landmark/start/f13/shaman,
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "uF" = (
 /obj/machinery/door/airlock/highsecurity{
 	req_access_txt = 137
@@ -2489,6 +2483,9 @@
 "wt" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/darkpurple/corner{
 	dir = 8
 	},
@@ -2772,7 +2769,9 @@
 	dir = 8;
 	pixel_x = 12
 	},
-/turf/open/floor/plasteel/darkpurple/corner,
+/turf/open/floor/plasteel/darkpurple/corner{
+	dir = 8
+	},
 /area/f13/city)
 "yG" = (
 /obj/structure/table/wood/settler,
@@ -2789,9 +2788,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "yO" = (
-/obj/effect/landmark/start/f13/Hhunter,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/village)
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "yV" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/item/razor,
@@ -3569,11 +3570,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/city)
 "Ga" = (
 /obj/machinery/light/small,
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/carpet/royalblack,
 /area/f13/city)
 "Ge" = (
 /obj/structure/reagent_dispensers/compostbin,
@@ -4151,11 +4152,9 @@
 	},
 /area/f13/building)
 "Mk" = (
-/obj/structure/railing{
-	dir = 5
-	},
-/turf/open/transparent/openspace,
-/area/f13/wasteland)
+/obj/machinery/light/small,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "Ml" = (
 /obj/structure/rack,
 /obj/item/flashlight/seclite{
@@ -4517,7 +4516,7 @@
 /area/f13/wasteland)
 "OI" = (
 /turf/open/floor/plasteel/darkpurple/corner{
-	dir = 8
+	dir = 4
 	},
 /area/f13/city)
 "OO" = (
@@ -5533,9 +5532,9 @@
 	},
 /area/f13/wasteland)
 "XC" = (
-/obj/effect/landmark/start/f13/chief,
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/obj/machinery/door/airlock/silver/glass,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "XF" = (
 /obj/structure/dresser,
 /obj/item/warpaint_bowl{
@@ -5859,183 +5858,183 @@ we
 we
 we
 we
-Kr
-Kr
-Kr
-Kr
-yc
-bP
-Td
-Dx
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 "}
 (2,1,1) = {"
 we
@@ -6292,7 +6291,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (3,1,1) = {"
 we
@@ -6549,7 +6548,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (4,1,1) = {"
 we
@@ -6806,7 +6805,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (5,1,1) = {"
 we
@@ -7063,7 +7062,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (6,1,1) = {"
 we
@@ -7100,7 +7099,7 @@ sA
 sA
 Mm
 sA
-XC
+sA
 od
 Cx
 yc
@@ -7320,7 +7319,7 @@ zB
 zB
 fO
 ls
-ls
+we
 "}
 (7,1,1) = {"
 we
@@ -7577,7 +7576,7 @@ gF
 gF
 Yh
 ls
-ls
+we
 "}
 (8,1,1) = {"
 we
@@ -7834,7 +7833,7 @@ Du
 gF
 Yh
 ls
-ls
+we
 "}
 (9,1,1) = {"
 we
@@ -8091,7 +8090,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (10,1,1) = {"
 Px
@@ -8348,7 +8347,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (11,1,1) = {"
 Px
@@ -8605,7 +8604,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (12,1,1) = {"
 Px
@@ -8862,7 +8861,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (13,1,1) = {"
 we
@@ -9119,7 +9118,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (14,1,1) = {"
 we
@@ -9376,7 +9375,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (15,1,1) = {"
 we
@@ -9633,7 +9632,7 @@ WJ
 gF
 Yh
 ls
-ls
+we
 "}
 (16,1,1) = {"
 we
@@ -9890,7 +9889,7 @@ rZ
 gF
 Yh
 ls
-ls
+we
 "}
 (17,1,1) = {"
 we
@@ -9904,12 +9903,12 @@ Rc
 Yj
 Yj
 Yj
+kz
+kz
 Yj
 Yj
-Yj
-Yj
-Yj
-Yj
+kz
+kz
 Yj
 Yj
 Yj
@@ -10147,7 +10146,7 @@ gF
 gF
 Yh
 ls
-ls
+we
 "}
 (18,1,1) = {"
 we
@@ -10161,12 +10160,12 @@ Yj
 Yj
 Yj
 Yj
+kz
+kz
 Yj
 Yj
-Yj
-Yj
-Yj
-Yj
+kz
+kz
 Yj
 Yj
 Yj
@@ -10189,7 +10188,7 @@ Uf
 sA
 sA
 sA
-tY
+sA
 sA
 yy
 Yj
@@ -10404,7 +10403,7 @@ Zq
 Zq
 ls
 ls
-ls
+we
 "}
 (19,1,1) = {"
 we
@@ -10418,12 +10417,12 @@ WS
 NT
 Yj
 Yj
+kz
+kz
 Yj
 Yj
-Yj
-Yj
-Yj
-Yj
+kz
+kz
 Yj
 Yj
 Yj
@@ -10661,7 +10660,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (20,1,1) = {"
 we
@@ -10703,7 +10702,7 @@ Uf
 sA
 ch
 dX
-tY
+sA
 sA
 yy
 Yj
@@ -10918,7 +10917,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (21,1,1) = {"
 we
@@ -11175,7 +11174,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (22,1,1) = {"
 we
@@ -11432,7 +11431,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (23,1,1) = {"
 we
@@ -11689,7 +11688,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (24,1,1) = {"
 we
@@ -11731,7 +11730,7 @@ Uf
 sA
 sA
 sA
-tY
+sA
 ch
 rg
 Yj
@@ -11946,7 +11945,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (25,1,1) = {"
 we
@@ -12203,7 +12202,7 @@ EQ
 Zq
 ls
 ls
-ls
+we
 "}
 (26,1,1) = {"
 we
@@ -12226,7 +12225,7 @@ EZ
 He
 Cx
 aG
-tY
+sA
 sA
 Hf
 Cx
@@ -12460,7 +12459,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (27,1,1) = {"
 we
@@ -12717,7 +12716,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (28,1,1) = {"
 we
@@ -12974,7 +12973,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (29,1,1) = {"
 we
@@ -13231,7 +13230,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (30,1,1) = {"
 we
@@ -13488,7 +13487,7 @@ EQ
 Zq
 ls
 ls
-ls
+we
 "}
 (31,1,1) = {"
 we
@@ -13745,7 +13744,7 @@ EQ
 Zq
 ls
 ls
-ls
+we
 "}
 (32,1,1) = {"
 we
@@ -14002,7 +14001,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (33,1,1) = {"
 we
@@ -14259,7 +14258,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (34,1,1) = {"
 we
@@ -14271,8 +14270,8 @@ PC
 sA
 sA
 PC
-sA
-sA
+kh
+kh
 sA
 IB
 ct
@@ -14516,7 +14515,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (35,1,1) = {"
 we
@@ -14528,8 +14527,8 @@ PC
 sA
 Ja
 PC
-sA
-sA
+kh
+kh
 od
 ma
 ct
@@ -14773,7 +14772,7 @@ Wu
 Zq
 ls
 ls
-ls
+we
 "}
 (36,1,1) = {"
 we
@@ -14785,8 +14784,8 @@ PC
 sA
 sA
 PC
-sA
-sA
+kh
+kh
 sA
 IB
 ct
@@ -15030,7 +15029,7 @@ Zq
 Zq
 ls
 ls
-ls
+we
 "}
 (37,1,1) = {"
 we
@@ -15287,7 +15286,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (38,1,1) = {"
 we
@@ -15544,7 +15543,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (39,1,1) = {"
 we
@@ -15801,7 +15800,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (40,1,1) = {"
 we
@@ -16058,7 +16057,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (41,1,1) = {"
 we
@@ -16315,7 +16314,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (42,1,1) = {"
 we
@@ -16572,7 +16571,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (43,1,1) = {"
 we
@@ -16599,8 +16598,8 @@ Uf
 Uf
 Uf
 Uf
-Uf
-Uf
+lE
+lE
 Uf
 zN
 Cx
@@ -16829,7 +16828,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (44,1,1) = {"
 we
@@ -16856,8 +16855,8 @@ zq
 nG
 ys
 Uf
-Uf
-Uf
+lE
+lE
 Uf
 Ik
 Cx
@@ -17086,7 +17085,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (45,1,1) = {"
 we
@@ -17113,8 +17112,8 @@ kJ
 bg
 WK
 Uf
-Uf
-Uf
+lE
+lE
 Uf
 zN
 Cx
@@ -17343,13 +17342,13 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (46,1,1) = {"
 we
 Cx
 px
-yO
+RZ
 RZ
 ma
 wM
@@ -17600,7 +17599,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (47,1,1) = {"
 we
@@ -17857,7 +17856,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (48,1,1) = {"
 we
@@ -18114,7 +18113,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (49,1,1) = {"
 we
@@ -18371,7 +18370,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (50,1,1) = {"
 we
@@ -18628,7 +18627,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (51,1,1) = {"
 we
@@ -18885,7 +18884,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (52,1,1) = {"
 we
@@ -19142,7 +19141,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (53,1,1) = {"
 we
@@ -19399,7 +19398,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (54,1,1) = {"
 we
@@ -19407,7 +19406,7 @@ we
 Cx
 lu
 Uf
-fe
+Uf
 Uf
 Cx
 Yj
@@ -19419,9 +19418,9 @@ Yj
 Mg
 Cx
 sA
-kz
+vS
 sA
-kz
+vS
 Cx
 nP
 RI
@@ -19656,7 +19655,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (55,1,1) = {"
 we
@@ -19913,7 +19912,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (56,1,1) = {"
 we
@@ -19921,7 +19920,7 @@ we
 Cx
 XY
 Uf
-fe
+Uf
 Uf
 Cx
 Yj
@@ -19933,9 +19932,9 @@ sA
 sA
 gm
 sA
-kz
+vS
 sA
-kz
+vS
 Cx
 sZ
 ls
@@ -20170,7 +20169,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (57,1,1) = {"
 we
@@ -20427,7 +20426,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (58,1,1) = {"
 we
@@ -20684,7 +20683,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (59,1,1) = {"
 we
@@ -20699,7 +20698,7 @@ Yj
 Yj
 Yj
 Cx
-uC
+vS
 IE
 sA
 Nv
@@ -20941,7 +20940,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (60,1,1) = {"
 we
@@ -21198,7 +21197,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (61,1,1) = {"
 we
@@ -21455,7 +21454,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (62,1,1) = {"
 we
@@ -21712,7 +21711,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (63,1,1) = {"
 we
@@ -21969,7 +21968,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (64,1,1) = {"
 we
@@ -22226,7 +22225,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (65,1,1) = {"
 we
@@ -22483,7 +22482,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (66,1,1) = {"
 we
@@ -22740,7 +22739,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (67,1,1) = {"
 we
@@ -22997,7 +22996,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (68,1,1) = {"
 we
@@ -23254,7 +23253,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (69,1,1) = {"
 we
@@ -23511,10 +23510,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (70,1,1) = {"
-Kr
+we
 Kr
 Kr
 cw
@@ -23768,10 +23767,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (71,1,1) = {"
-Kr
+we
 Kr
 Kr
 FM
@@ -24025,10 +24024,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (72,1,1) = {"
-Kr
+we
 Kr
 Kr
 Ne
@@ -24282,10 +24281,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (73,1,1) = {"
-Kr
+we
 Kr
 Kr
 He
@@ -24539,10 +24538,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (74,1,1) = {"
-Kr
+we
 Kr
 Kr
 gM
@@ -24796,11 +24795,11 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (75,1,1) = {"
+we
 Kr
-Kr
 gM
 gM
 gM
@@ -25053,10 +25052,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (76,1,1) = {"
-Kr
+we
 Kr
 gM
 gM
@@ -25310,10 +25309,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (77,1,1) = {"
-Kr
+we
 gM
 gM
 ls
@@ -25567,10 +25566,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (78,1,1) = {"
-gM
+we
 gM
 ls
 ls
@@ -25824,10 +25823,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (79,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -26081,10 +26080,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (80,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -26338,10 +26337,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (81,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -26595,10 +26594,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (82,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -26852,10 +26851,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (83,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -27109,10 +27108,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (84,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -27366,10 +27365,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (85,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -27623,10 +27622,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (86,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -27880,10 +27879,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (87,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -28137,10 +28136,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (88,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -28394,10 +28393,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (89,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -28651,10 +28650,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (90,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -28908,10 +28907,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (91,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -29165,10 +29164,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (92,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -29422,10 +29421,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (93,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -29679,10 +29678,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (94,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -29936,10 +29935,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (95,1,1) = {"
-ls
+fe
 ls
 ls
 ls
@@ -30193,10 +30192,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (96,1,1) = {"
-Kr
+we
 ls
 ls
 ls
@@ -30450,10 +30449,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (97,1,1) = {"
-Kr
+we
 Kr
 ls
 ls
@@ -30707,10 +30706,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (98,1,1) = {"
-Kr
+we
 Kr
 Kr
 ls
@@ -30964,10 +30963,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (99,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -31221,10 +31220,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (100,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -31478,10 +31477,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (101,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -31735,10 +31734,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (102,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -31992,10 +31991,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (103,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -32249,10 +32248,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (104,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -32506,10 +32505,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (105,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -32763,10 +32762,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (106,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -33020,10 +33019,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (107,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -33277,10 +33276,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (108,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -33534,10 +33533,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (109,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -33791,10 +33790,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (110,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -34048,10 +34047,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (111,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -34305,10 +34304,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (112,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -34562,10 +34561,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (113,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -34819,10 +34818,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (114,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -35076,10 +35075,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (115,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -35333,10 +35332,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (116,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -35590,10 +35589,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (117,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -35628,7 +35627,7 @@ Jb
 Iz
 El
 fB
-ca
+OI
 ca
 OI
 fA
@@ -35847,10 +35846,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (118,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -36104,10 +36103,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (119,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -36361,10 +36360,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (120,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -36618,10 +36617,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (121,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -36875,10 +36874,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (122,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -37132,10 +37131,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (123,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -37389,10 +37388,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (124,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -37646,10 +37645,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (125,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -37903,10 +37902,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (126,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -38160,10 +38159,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (127,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -38213,9 +38212,9 @@ gU
 gU
 gU
 gU
-aV
-pm
-qe
+gU
+gU
+Yh
 ls
 ls
 ls
@@ -38417,10 +38416,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (128,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -38470,9 +38469,9 @@ gU
 gU
 gU
 gU
+gU
+gU
 Yh
-ls
-ls
 ls
 ls
 ls
@@ -38674,10 +38673,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (129,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -38727,9 +38726,9 @@ gU
 gU
 gU
 gU
+gU
+gU
 Yh
-ls
-ls
 ls
 ls
 ls
@@ -38931,10 +38930,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (130,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -38984,9 +38983,9 @@ gU
 gU
 gU
 gU
+gU
+gU
 Yh
-ls
-ls
 ls
 ls
 ls
@@ -39188,10 +39187,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (131,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -39241,9 +39240,9 @@ gU
 gU
 gU
 gU
+gU
+gU
 Yh
-ls
-ls
 ls
 ls
 ls
@@ -39445,10 +39444,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (132,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -39498,9 +39497,9 @@ gU
 gU
 gU
 gU
+gU
+gU
 Yh
-ls
-ls
 ls
 ls
 ls
@@ -39702,10 +39701,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (133,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -39755,12 +39754,12 @@ gU
 gU
 gU
 gU
-Yh
-ls
-ls
-ls
-ls
-fb
+gU
+gU
+gB
+zB
+zB
+zB
 zB
 zB
 zB
@@ -39959,10 +39958,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (134,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -40012,12 +40011,12 @@ gU
 gU
 gU
 gU
-Yh
-ls
-ls
-ls
-ls
-gK
+gU
+gU
+gU
+gU
+gU
+gU
 gU
 gU
 gU
@@ -40216,10 +40215,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (135,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -40269,12 +40268,12 @@ gU
 gU
 gU
 gU
-Mk
-zB
-zB
-zB
-zB
-KW
+gU
+gU
+gU
+gU
+gU
+gU
 gU
 ls
 gU
@@ -40473,10 +40472,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (136,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -40730,10 +40729,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (137,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -40987,10 +40986,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (138,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -41041,10 +41040,10 @@ pm
 pm
 pm
 pm
-pm
-pm
-pm
-pm
+ip
+uF
+uF
+aV
 pm
 ip
 gU
@@ -41244,10 +41243,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (139,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -41292,16 +41291,16 @@ El
 El
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+El
+El
+El
+El
+El
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -41314,8 +41313,8 @@ ls
 ls
 ls
 NL
-hL
-hL
+GC
+GC
 TE
 GC
 GC
@@ -41501,10 +41500,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (140,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -41549,16 +41548,16 @@ RO
 El
 El
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+ZL
+ZL
+El
+ES
+Mk
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -41571,8 +41570,8 @@ ls
 ls
 ls
 NL
-hL
-hL
+GC
+GC
 NL
 GC
 SF
@@ -41758,10 +41757,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (141,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -41806,16 +41805,16 @@ hY
 RO
 El
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+ZL
+ZL
+FW
+ES
+KN
+rL
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -41828,7 +41827,7 @@ ls
 ls
 ls
 NL
-hL
+GC
 Ga
 NL
 NL
@@ -42015,10 +42014,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (142,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -42063,16 +42062,16 @@ hY
 RO
 El
 ls
+El
+El
+El
+El
+ES
+KN
+rL
+gU
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Yh
 ls
 gK
 gU
@@ -42272,10 +42271,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (143,1,1) = {"
-Kr
+we
 Kr
 Kr
 we
@@ -42320,16 +42319,16 @@ hY
 RO
 El
 ls
+El
+tY
+GC
+FW
+ES
+ES
+XC
+gU
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Yh
 ls
 gK
 gU
@@ -42529,10 +42528,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (144,1,1) = {"
-Kr
+we
 Kr
 we
 we
@@ -42577,16 +42576,16 @@ hY
 RO
 El
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+Um
+GC
+El
+Tg
+ZL
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -42599,8 +42598,8 @@ ls
 ls
 ls
 xS
-lE
-hL
+hm
+GC
 Ld
 GC
 GC
@@ -42786,10 +42785,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (145,1,1) = {"
-Kr
+we
 Kr
 we
 we
@@ -42834,16 +42833,16 @@ hY
 RO
 El
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+uC
+yO
+El
+SH
+ZL
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -42856,8 +42855,8 @@ ls
 ls
 ls
 ck
-lE
-hL
+hm
+GC
 NL
 GC
 SF
@@ -43043,10 +43042,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (146,1,1) = {"
-Kr
+we
 Kr
 Kr
 we
@@ -43091,16 +43090,16 @@ hY
 RO
 El
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+El
+El
+El
+El
+El
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -43113,7 +43112,7 @@ ls
 ls
 ls
 NL
-hL
+GC
 Ga
 NL
 NL
@@ -43300,10 +43299,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (147,1,1) = {"
-Kr
+we
 Kr
 Kr
 we
@@ -43348,16 +43347,16 @@ hY
 RO
 El
 El
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+El
+ZL
+ZL
+El
+ES
+Mk
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -43557,10 +43556,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (148,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -43606,15 +43605,15 @@ RO
 RO
 El
 El
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+ZL
+ZL
+FW
+ES
+KN
+rL
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -43814,10 +43813,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (149,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -43863,15 +43862,15 @@ hY
 RO
 RO
 El
+El
+El
+El
+ES
+KN
+rL
+gU
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Yh
 ls
 gK
 gU
@@ -43884,8 +43883,8 @@ ls
 ls
 ls
 NL
-hL
-hL
+GC
+GC
 Ld
 GC
 GC
@@ -44071,10 +44070,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (150,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -44120,15 +44119,15 @@ hY
 hY
 RO
 El
+tY
+GC
+FW
+ES
+ES
+XC
+gU
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Yh
 ls
 gK
 gU
@@ -44141,8 +44140,8 @@ ls
 ls
 ls
 NL
-hL
-hL
+GC
+GC
 NL
 GC
 BV
@@ -44328,10 +44327,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (151,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -44377,15 +44376,15 @@ hY
 hY
 RO
 El
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+Um
+GC
+El
+Tg
+ZL
+El
+gU
+gU
+Yh
 ls
 gK
 gU
@@ -44398,7 +44397,7 @@ ls
 ls
 ls
 NL
-hL
+GC
 Ga
 NL
 NL
@@ -44585,10 +44584,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (152,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -44634,15 +44633,15 @@ hY
 hY
 RO
 El
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+uC
+yO
+El
+SH
+ZL
+El
+gU
+gU
+Yh
 fb
 KW
 gU
@@ -44842,10 +44841,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (153,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -44891,15 +44890,15 @@ hY
 hY
 RO
 El
-zB
-zB
-zB
-zB
-zB
-zB
-zB
-zB
-zB
+El
+El
+El
+El
+El
+El
+uF
+uF
+gB
 KW
 gU
 gU
@@ -45099,10 +45098,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (154,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -45169,8 +45168,8 @@ ls
 ls
 ls
 ck
-lE
-hL
+hm
+GC
 Ld
 GC
 GC
@@ -45356,10 +45355,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (155,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -45426,8 +45425,8 @@ ls
 ls
 ls
 NL
-hL
-hL
+GC
+GC
 NL
 GC
 BV
@@ -45613,10 +45612,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (156,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -45683,7 +45682,7 @@ ls
 ls
 ls
 NL
-hL
+GC
 Ga
 NL
 NL
@@ -45870,10 +45869,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (157,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -45940,13 +45939,13 @@ ls
 ls
 ls
 NL
-GC
-GC
+hL
+hL
 lX
 lX
 lX
-kh
-kh
+lX
+lX
 NL
 gK
 gU
@@ -46127,10 +46126,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (158,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -46197,13 +46196,13 @@ ls
 ls
 ls
 NL
-GC
-GC
 hL
 hL
 hL
-GC
-GC
+hL
+hL
+hL
+hL
 NL
 gK
 gU
@@ -46384,10 +46383,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (159,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -46454,13 +46453,13 @@ ls
 ls
 ls
 NL
-GC
-GC
 hL
 hL
 hL
-GC
-GC
+hL
+hL
+hL
+hL
 NL
 gK
 gU
@@ -46641,10 +46640,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (160,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -46713,9 +46712,9 @@ ls
 NL
 hL
 hL
-GC
-GC
-GC
+hL
+hL
+hL
 yD
 NL
 NL
@@ -46898,10 +46897,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (161,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -46970,9 +46969,9 @@ ls
 NL
 lX
 hL
-GC
-GC
-GC
+hL
+hL
+hL
 yD
 NL
 ls
@@ -47155,10 +47154,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (162,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -47412,10 +47411,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (163,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -47669,10 +47668,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (164,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -47926,10 +47925,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (165,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -48183,10 +48182,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (166,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -48440,10 +48439,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (167,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -48697,10 +48696,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (168,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -48954,10 +48953,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (169,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -49211,10 +49210,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (170,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -49468,10 +49467,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (171,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -49725,10 +49724,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (172,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -49982,10 +49981,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (173,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -50239,10 +50238,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (174,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -50496,10 +50495,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (175,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -50753,10 +50752,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (176,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -51010,10 +51009,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (177,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -51267,10 +51266,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (178,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -51524,10 +51523,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (179,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -51781,10 +51780,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (180,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -52038,10 +52037,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (181,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -52295,10 +52294,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (182,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -52552,10 +52551,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (183,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -52809,10 +52808,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (184,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -53066,10 +53065,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (185,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -53323,10 +53322,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (186,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -53580,10 +53579,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (187,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -53837,10 +53836,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (188,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -54094,10 +54093,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (189,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -54351,10 +54350,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (190,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -54608,10 +54607,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (191,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -54865,10 +54864,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (192,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -55122,10 +55121,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (193,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -55379,10 +55378,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (194,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -55636,10 +55635,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (195,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -55893,10 +55892,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (196,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -56150,10 +56149,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (197,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -56407,10 +56406,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (198,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -56664,10 +56663,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (199,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -56921,10 +56920,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (200,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -57178,10 +57177,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (201,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -57435,10 +57434,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (202,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -57692,10 +57691,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (203,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -57949,10 +57948,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (204,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -58206,10 +58205,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (205,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -58463,10 +58462,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (206,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -58720,10 +58719,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (207,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -58977,10 +58976,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (208,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -59234,10 +59233,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (209,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -59491,10 +59490,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (210,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -59748,10 +59747,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (211,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -60005,10 +60004,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (212,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -60262,10 +60261,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (213,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -60519,10 +60518,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (214,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -60776,10 +60775,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (215,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -61033,10 +61032,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (216,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -61290,10 +61289,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (217,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -61547,10 +61546,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (218,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -61804,10 +61803,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (219,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -62061,10 +62060,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (220,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -62318,10 +62317,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (221,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -62575,10 +62574,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (222,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -62832,10 +62831,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (223,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -63089,10 +63088,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (224,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -63346,10 +63345,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (225,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -63603,10 +63602,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (226,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -63860,10 +63859,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (227,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -64117,10 +64116,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (228,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -64374,10 +64373,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (229,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -64631,10 +64630,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (230,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -64888,10 +64887,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (231,1,1) = {"
-Kr
+we
 Kr
 Kr
 Kr
@@ -65145,9 +65144,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (232,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -65169,7 +65169,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -65402,9 +65401,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (233,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -65426,7 +65426,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -65659,9 +65658,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (234,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -65683,7 +65683,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -65916,9 +65915,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (235,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -65941,7 +65941,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -66173,9 +66172,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (236,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -66199,7 +66199,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -66430,9 +66429,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (237,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -66479,7 +66479,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -66687,9 +66686,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (238,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -66736,7 +66736,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -66944,9 +66943,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (239,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -66994,7 +66994,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -67201,9 +67200,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (240,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -67251,7 +67251,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -67458,9 +67457,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (241,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -67508,7 +67508,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -67715,9 +67714,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (242,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -67765,7 +67765,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -67972,9 +67971,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (243,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -68022,7 +68022,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -68229,9 +68228,10 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (244,1,1) = {"
+we
 Kr
 Kr
 Kr
@@ -68280,7 +68280,6 @@ Kr
 Kr
 Kr
 Kr
-Kr
 ls
 ls
 ls
@@ -68486,7 +68485,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (245,1,1) = {"
 we
@@ -68743,7 +68742,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (246,1,1) = {"
 we
@@ -69000,7 +68999,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (247,1,1) = {"
 we
@@ -69257,7 +69256,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (248,1,1) = {"
 we
@@ -69514,7 +69513,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (249,1,1) = {"
 we
@@ -69771,7 +69770,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (250,1,1) = {"
 we
@@ -70028,7 +70027,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (251,1,1) = {"
 we
@@ -70285,7 +70284,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (252,1,1) = {"
 we
@@ -70542,7 +70541,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (253,1,1) = {"
 we
@@ -70799,7 +70798,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (254,1,1) = {"
 we
@@ -71056,7 +71055,7 @@ ls
 ls
 ls
 ls
-ls
+we
 "}
 (255,1,1) = {"
 we
@@ -71069,249 +71068,249 @@ we
 we
 we
 we
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 "}

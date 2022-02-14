@@ -44,15 +44,16 @@
 /obj/structure/bed,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"bf" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"bj" = (
-/obj/structure/barricade/wooden,
+"aT" = (
+/obj/structure/table,
+/obj/structure/barricade/bars,
 /turf/open/floor/wood/f13{
 	icon_state = "housewood1-broken"
 	},
+/area/f13/bunker)
+"bf" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "bq" = (
 /obj/structure/window/fulltile/house{
@@ -379,14 +380,6 @@
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"eb" = (
-/obj/structure/chair/comfy/brown{
-	dir = 8
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/bunker)
 "ef" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1"
@@ -443,17 +436,6 @@
 	pixel_x = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"fp" = (
-/obj/effect/decal/cleanable/oil{
-	icon_state = "floor2"
-	},
-/obj/structure/table/wood/poker{
-	name = "felt table"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
 /area/f13/bunker)
 "fz" = (
 /obj/machinery/conveyor/auto{
@@ -1400,13 +1382,6 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"qo" = (
-/obj/structure/table,
-/obj/structure/barricade/bars,
-/turf/open/floor/wood/f13{
-	icon_state = "housewood1-broken"
-	},
-/area/f13/bunker)
 "qu" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
@@ -1516,10 +1491,8 @@
 	},
 /area/f13/bunker)
 "rr" = (
-/mob/living/simple_animal/hostile/centaur,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
+/obj/structure/barricade/wooden,
+/turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "rv" = (
 /mob/living/simple_animal/hostile/supermutant/nightkin,
@@ -1625,6 +1598,11 @@
 	},
 /turf/open/floor/f13,
 /area/f13/bunker)
+"tm" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/bunker)
 "tp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/broken{
@@ -1704,12 +1682,6 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood/gibs/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"ur" = (
-/mob/living/simple_animal/hostile/raider/firefighter,
-/turf/open/floor/wood/f13{
-	icon_state = "housewood1-broken"
-	},
 /area/f13/bunker)
 "uB" = (
 /obj/machinery/light{
@@ -1860,14 +1832,6 @@
 	name = "broken robot workbench"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"wr" = (
-/obj/structure/table/wood/poker{
-	name = "felt table"
-	},
-/turf/open/floor/wood/f13{
-	icon_state = "housewood1-broken"
-	},
 /area/f13/bunker)
 "wv" = (
 /obj/machinery/vending/games,
@@ -2337,13 +2301,23 @@
 	},
 /area/f13/bunker)
 "Bk" = (
-/obj/structure/barricade/wooden,
-/turf/closed/wall/r_wall/rust,
+/obj/structure/table,
+/obj/structure/barricade/bars,
+/obj/effect/spawner/lootdrop/food,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
 /area/f13/bunker)
 "Bs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"Bv" = (
+/mob/living/simple_animal/hostile/raider/firefighter,
+/turf/open/floor/wood/f13{
+	icon_state = "housewood1-broken"
+	},
 /area/f13/bunker)
 "Bw" = (
 /obj/structure/debris/v4,
@@ -2763,6 +2737,12 @@
 /obj/item/toy/cards/deck/syndicate,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"Fw" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/wood/f13{
+	icon_state = "housewood1-broken"
+	},
+/area/f13/bunker)
 "Fx" = (
 /mob/living/simple_animal/hostile/centaur,
 /turf/open/floor/f13,
@@ -2891,11 +2871,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Gz" = (
+/obj/machinery/microwave{
+	pixel_y = 16
+	},
 /obj/structure/table,
-/obj/structure/barricade/bars,
-/obj/effect/spawner/lootdrop/food,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
+	icon_state = "housewood3-broken"
 	},
 /area/f13/bunker)
 "GA" = (
@@ -3029,12 +3010,10 @@
 	},
 /area/f13/bunker)
 "Ip" = (
-/obj/machinery/microwave{
-	pixel_y = 16
-	},
-/obj/structure/table,
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood{
-	icon_state = "housewood3-broken"
+	icon_state = "housewood2"
 	},
 /area/f13/bunker)
 "Ir" = (
@@ -3112,8 +3091,12 @@
 	},
 /area/f13/bunker)
 "IZ" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor2"
+	},
+/obj/structure/table/wood/poker{
+	name = "felt table"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3135,6 +3118,14 @@
 /mob/living/simple_animal/hostile/raider/ranged/legendary,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/bunker)
+"Jl" = (
+/obj/structure/table/wood/poker{
+	name = "felt table"
+	},
+/turf/open/floor/wood/f13{
+	icon_state = "housewood1-broken"
 	},
 /area/f13/bunker)
 "Jo" = (
@@ -3363,13 +3354,16 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
-"Lt" = (
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/bunker)
 "LB" = (
 /turf/open/floor/plasteel/elevatorshaft,
+/area/f13/bunker)
+"LC" = (
+/obj/structure/chair/comfy/brown{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/bunker)
 "LJ" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
@@ -3494,6 +3488,12 @@
 /mob/living/simple_animal/hostile/raider/junker/boss,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/bunker)
+"Oj" = (
+/mob/living/simple_animal/hostile/raider/biker,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
 	},
 /area/f13/bunker)
 "Oq" = (
@@ -3717,12 +3717,6 @@
 	},
 /obj/item/trash/f13/electronic/toaster/oven,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"QA" = (
-/mob/living/simple_animal/hostile/raider/biker,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood4-broken"
-	},
 /area/f13/bunker)
 "QI" = (
 /obj/structure/bed/old,
@@ -20886,7 +20880,7 @@ Xl
 Xl
 Xl
 Xl
-bj
+Fw
 bC
 ag
 Xl
@@ -21139,7 +21133,7 @@ Lj
 Xl
 ZQ
 BH
-eb
+LC
 Bz
 Bz
 Bz
@@ -21650,9 +21644,9 @@ Lj
 Lj
 Lj
 Lj
-Bk
+rr
 UL
-IZ
+Ip
 Xi
 oo
 Cs
@@ -22166,14 +22160,14 @@ lU
 Bz
 gw
 Mo
-fp
+IZ
 Mo
 Mo
 Mo
 Xt
 pP
 Bz
-qo
+aT
 zu
 gX
 Xl
@@ -22682,7 +22676,7 @@ tR
 Mo
 Mo
 oH
-wr
+Jl
 Mo
 Yj
 Bz
@@ -23455,7 +23449,7 @@ jZ
 Bz
 Bz
 Bz
-Lt
+tm
 Bz
 Bz
 hZ
@@ -24734,8 +24728,8 @@ hZ
 Bz
 Bz
 Bz
+Bk
 Gz
-Ip
 ER
 hr
 Bz
@@ -24991,7 +24985,7 @@ hZ
 Bz
 Bz
 Bz
-Gz
+Bk
 Bz
 Bz
 xg
@@ -24999,7 +24993,7 @@ Bz
 Uy
 Bz
 Bz
-ur
+Bv
 Bz
 Xl
 Lj
@@ -26798,7 +26792,7 @@ Bz
 gq
 Bz
 Bz
-QA
+Oj
 Bz
 Xl
 Lj
@@ -34273,7 +34267,7 @@ pa
 iK
 iK
 AH
-bU
+AH
 Xl
 AQ
 Zf
@@ -34772,7 +34766,7 @@ AH
 AH
 AH
 BR
-AH
+xh
 AH
 AH
 AH
@@ -35029,7 +35023,7 @@ AH
 AH
 AH
 kq
-AH
+xh
 AH
 AH
 GO
@@ -35306,7 +35300,7 @@ Xl
 RC
 RC
 Ic
-RC
+bK
 RC
 RC
 RC
@@ -35820,7 +35814,7 @@ Xl
 RC
 RC
 RC
-RC
+Rw
 RC
 Xl
 Xl
@@ -36075,7 +36069,7 @@ AH
 AH
 Xl
 RC
-RC
+bK
 RC
 RC
 RC
@@ -36844,10 +36838,10 @@ iK
 iK
 AH
 AH
-bU
 AH
 AH
-rr
+AH
+AH
 AH
 AH
 Xl
