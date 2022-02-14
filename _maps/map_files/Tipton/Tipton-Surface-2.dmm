@@ -179,7 +179,7 @@
 /area/f13/building)
 "aec" = (
 /obj/structure/flora/wasteplant/wild_punga,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aen" = (
 /obj/machinery/mineral/equipment_vendor,
@@ -388,7 +388,7 @@
 /area/f13/wasteland)
 "alJ" = (
 /obj/structure/barricade/wooden/strong,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "alM" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -789,7 +789,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "ayS" = (
-/obj/structure/rack,
+/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -1841,6 +1841,12 @@
 "bgP" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/klamat)
+"bgU" = (
+/obj/structure/flora/wasteplant/wild_yucca,
+/turf/open/indestructible/ground/outside/desert{
+	icon_state = "wasteland33"
+	},
+/area/f13/wasteland)
 "bhh" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor6";
@@ -2764,12 +2770,9 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland)
-"bMK" = (
-/turf/closed/mineral/random/high_chance,
-/area/f13/underground/mountain)
 "bMS" = (
 /obj/item/storage/trash_stack,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "bMY" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -3812,7 +3815,7 @@
 /area/f13/klamat)
 "cBC" = (
 /turf/closed/mineral/snowmountain{
-	turf_type = /turf/open/floor/plating/f13/outside/desert
+	turf_type = /turf/open/indestructible/ground/outside/desert
 	},
 /area/f13/wasteland)
 "cBJ" = (
@@ -4059,7 +4062,6 @@
 "cIv" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "TUNNCR"
 	},
 /obj/machinery/light/small{
@@ -4422,7 +4424,7 @@
 /area/f13/klamat)
 "cTD" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "cTF" = (
 /obj/effect/turf_decal/stripes/asteroid/line,
@@ -5794,7 +5796,7 @@
 /area/f13/building)
 "dSp" = (
 /obj/structure/flora/wasteplant/wild_yucca,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "dSr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6043,7 +6045,7 @@
 	height = 2;
 	id = "ES2"
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "eag" = (
 /obj/effect/decal/cleanable/dirt{
@@ -6833,7 +6835,7 @@
 /area/f13/building)
 "eFO" = (
 /obj/structure/flora/wasteplant/wild_mutfruit,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "eFU" = (
 /obj/machinery/light/small{
@@ -7451,7 +7453,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "fag" = (
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "faE" = (
 /obj/structure/bed,
@@ -9815,7 +9817,7 @@
 /area/f13/ncr)
 "gCY" = (
 /obj/structure/tires/half,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gDb" = (
 /obj/structure/chair/office/dark,
@@ -10509,7 +10511,7 @@
 "hbf" = (
 /mob/living/simple_animal/chicken,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "hbj" = (
 /obj/structure/window/reinforced{
@@ -11663,7 +11665,7 @@
 /area/f13/wasteland)
 "hOE" = (
 /mob/living/simple_animal/cow/brahmin,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "hOJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11855,7 +11857,7 @@
 /area/f13/wasteland)
 "hWi" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "hWn" = (
 /obj/structure/chair/sofa/corp/left{
@@ -11869,6 +11871,11 @@
 /obj/structure/table,
 /obj/item/wrench/power,
 /turf/open/floor/plating/tunnel,
+/area/f13/brotherhood)
+"hWK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/gear_painter,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "hWN" = (
 /obj/structure/fence/corner,
@@ -12080,17 +12087,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
-"ifs" = (
-/obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1"
-	},
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "NCR1"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/ncr)
 "ifu" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/rag/towel,
@@ -15362,7 +15358,7 @@
 /area/f13/ncr)
 "kua" = (
 /obj/structure/nest/radroach,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kuf" = (
 /obj/machinery/light/small{
@@ -15387,7 +15383,7 @@
 /area/f13/building)
 "kvi" = (
 /obj/structure/flora/tree/joshua,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kvn" = (
 /obj/machinery/light/small{
@@ -16399,7 +16395,7 @@
 /area/f13/klamat)
 "lcr" = (
 /obj/structure/flora/tree/cactus,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ldk" = (
 /obj/structure/window/fulltile/ruins,
@@ -17174,6 +17170,12 @@
 	dir = 4
 	},
 /area/f13/brotherhood)
+"lNE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/random/nonfiction,
+/turf/open/floor/wood,
+/area/f13/klamat)
 "lNL" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outerborder"
@@ -17230,7 +17232,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "lPx" = (
 /obj/structure/table/wood,
@@ -18046,7 +18048,7 @@
 /area/f13/brotherhood)
 "mqY" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mra" = (
 /obj/structure/table,
@@ -18359,7 +18361,7 @@
 /area/f13/klamat)
 "mAH" = (
 /obj/structure/flora/wasteplant/wild_feracactus,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mAM" = (
 /obj/structure/closet/fridge/cannibal,
@@ -18779,7 +18781,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/underground/mountain)
 "mNY" = (
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mNZ" = (
 /obj/structure/rack,
@@ -19625,7 +19627,7 @@
 	name = "BoxStation emergency evac bay";
 	width = 32
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "nsz" = (
 /obj/machinery/light/small{
@@ -20758,7 +20760,7 @@
 /area/f13/ncr)
 "oiU" = (
 /obj/structure/flora/wasteplant/wild_coyote,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "oiZ" = (
 /turf/closed/wall/rust,
@@ -20830,7 +20832,7 @@
 /area/f13/building)
 "olI" = (
 /obj/structure/bus_door,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "olJ" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -20851,6 +20853,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_large,
 /area/f13/casino)
+"omg" = (
+/obj/structure/flora/tree/cactus,
+/turf/open/indestructible/ground/outside/desert{
+	icon_state = "wasteland32"
+	},
+/area/f13/wasteland)
 "oml" = (
 /obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/road{
@@ -22112,7 +22120,7 @@
 	icon_state = "tall_grass_2";
 	pixel_x = -6
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "pcj" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
@@ -22732,7 +22740,6 @@
 	name = "store shutters";
 	pixel_x = -6;
 	pixel_y = 30;
-	req_one_access = "139";
 	req_one_access_txt = "139"
 	},
 /obj/machinery/button/door{
@@ -22740,7 +22747,6 @@
 	name = "counter shutters";
 	pixel_x = 6;
 	pixel_y = 30;
-	req_one_access = "139";
 	req_one_access_txt = "139"
 	},
 /obj/structure/noticeboard{
@@ -24376,7 +24382,7 @@
 /area/f13/wasteland)
 "qHJ" = (
 /obj/structure/flora/wasteplant/wild_broc,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "qHK" = (
 /obj/structure/wreck/trash/machinepile,
@@ -25044,7 +25050,7 @@
 	layer = 2;
 	pixel_y = 9
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "rfV" = (
 /obj/structure/dresser,
@@ -25289,7 +25295,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "rpV" = (
 /obj/machinery/computer/shuttle/vault113elevator,
@@ -25315,7 +25321,7 @@
 /area/f13/brotherhood)
 "rqH" = (
 /obj/structure/lattice/catwalk,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "rqX" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -26664,7 +26670,7 @@
 /area/f13/wasteland)
 "sqY" = (
 /obj/structure/sink/well,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "srX" = (
 /turf/open/floor/carpet/black,
@@ -27031,7 +27037,6 @@
 "sEU" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	icon_state = "manhole_open";
 	id = "TUNGHOUL"
 	},
 /turf/open/floor/f13{
@@ -29358,7 +29363,7 @@
 /area/f13/wasteland)
 "uqS" = (
 /obj/structure/flora/grass/wasteland,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "uqX" = (
 /obj/effect/decal/marking{
@@ -29384,7 +29389,7 @@
 /area/f13/klamat)
 "urV" = (
 /obj/effect/spawner/lootdrop/food,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "usC" = (
 /obj/structure/chair/wood/fancy{
@@ -29407,7 +29412,7 @@
 /area/f13/wasteland)
 "utC" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "utO" = (
 /obj/structure/flora/grass/wasteland{
@@ -30263,11 +30268,11 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "uXX" = (
 /turf/closed/mineral/snowmountain{
-	turf_type = /turf/open/floor/plating/f13/outside/desert
+	turf_type = /turf/open/indestructible/ground/outside/desert
 	},
 /area/f13/underground/mountain)
 "uYj" = (
@@ -30283,7 +30288,7 @@
 "uYu" = (
 /obj/structure/bookcase/random/nonfiction,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/space/basic,
+/turf/open/floor/wood,
 /area/f13/klamat)
 "uYx" = (
 /obj/machinery/light/small{
@@ -30698,7 +30703,7 @@
 /area/f13/building)
 "vpy" = (
 /obj/structure/flora/tree/wasteland,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "vpK" = (
 /obj/structure/table,
@@ -31131,9 +31136,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"vGK" = (
-/turf/closed/wall/f13/wood/house/broken,
-/area/f13/klamat)
 "vGW" = (
 /obj/structure/closet/crate/wicker,
 /turf/open/floor/wood/f13/old,
@@ -31584,7 +31586,7 @@
 "vZm" = (
 /obj/machinery/hydroponics/soil,
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "vZo" = (
 /obj/effect/decal/cleanable/glass,
@@ -33234,7 +33236,7 @@
 /obj/structure/fluff/rails{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xet" = (
 /obj/structure/rack,
@@ -33295,7 +33297,7 @@
 /area/f13/casino)
 "xhc" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xhe" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -34250,7 +34252,7 @@
 /area/f13/building)
 "xSU" = (
 /obj/structure/flora/wasteplant/wild_xander,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xTc" = (
 /obj/structure/flora/tree/wasteland,
@@ -39858,7 +39860,7 @@ ffW
 wIg
 lQG
 yhi
-ifs
+fdk
 gij
 gij
 jIS
@@ -65495,7 +65497,7 @@ sei
 djw
 cdO
 lFq
-uYu
+lNE
 sei
 cka
 cka
@@ -69318,7 +69320,7 @@ eyH
 fcc
 eNI
 qHl
-vGK
+hdL
 vGp
 gzs
 vGp
@@ -72696,7 +72698,7 @@ bXo
 inf
 iUW
 tPl
-cjt
+hWK
 cjt
 tPl
 pTz
@@ -96177,7 +96179,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -97127,7 +97129,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -97723,7 +97725,7 @@ mNY
 mNY
 rfy
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -98134,7 +98136,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -98197,7 +98199,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 ksm
 mNY
@@ -98336,7 +98338,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -98529,7 +98531,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -98655,7 +98657,7 @@ mNY
 mNY
 kvi
 mNY
-mNY
+ksm
 ksm
 mNY
 eFO
@@ -98726,7 +98728,7 @@ afq
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -98930,7 +98932,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -99337,14 +99339,14 @@ mNY
 mNY
 rfy
 mNY
+ozt
+ksm
 mNY
 mNY
 mNY
 mNY
 mNY
-mNY
-mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -99750,12 +99752,12 @@ mNY
 mNY
 mNY
 mNY
+ksm
 mNY
 mNY
 mNY
 mNY
-mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -99832,7 +99834,7 @@ tej
 wpD
 tej
 afq
-mNY
+ozt
 mNY
 lPt
 rPI
@@ -100274,7 +100276,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 rpz
@@ -100473,7 +100475,7 @@ mNY
 mNY
 mNY
 mAH
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -100547,8 +100549,8 @@ mNY
 mNY
 mNY
 mNY
-mNY
-mNY
+ozt
+ozt
 mNY
 mNY
 mNY
@@ -100871,13 +100873,13 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 ksm
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -105584,7 +105586,7 @@ mte
 bDS
 qHJ
 mNY
-lcr
+omg
 mNY
 mNY
 tWX
@@ -106999,7 +107001,7 @@ bDS
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 tWX
@@ -108017,7 +108019,7 @@ mNY
 mNY
 mNY
 mNY
-dSp
+bgU
 mNY
 mNY
 mNY
@@ -108287,9 +108289,9 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -108413,7 +108415,7 @@ bDS
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -108470,12 +108472,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -108489,12 +108485,18 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -108615,7 +108617,7 @@ bDS
 mNY
 rfy
 mNY
-mNY
+ksm
 xSU
 mNY
 mNY
@@ -108672,31 +108674,31 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -108869,36 +108871,36 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -109022,7 +109024,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -109071,33 +109073,33 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -109229,7 +109231,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -109427,7 +109429,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -109489,11 +109491,11 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -109624,7 +109626,7 @@ xKU
 bDS
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -109677,13 +109679,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -109691,11 +109686,18 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -109830,14 +109832,14 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 rfy
 mNY
 mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -109879,13 +109881,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -109893,20 +109888,27 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -110081,13 +110083,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -110103,12 +110098,19 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -110283,13 +110285,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -110299,28 +110294,35 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -110501,28 +110503,28 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -110703,28 +110705,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -110737,11 +110717,33 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -110905,32 +110907,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -110939,11 +110915,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -110952,9 +110923,40 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -111107,9 +111109,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -111125,38 +111124,41 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -111242,7 +111244,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ksm
 mNY
 mNY
 mNY
@@ -111309,9 +111311,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -111343,22 +111342,25 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -111554,13 +111556,13 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -111648,7 +111650,7 @@ mNY
 mNY
 mNY
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -111756,13 +111758,13 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -112124,11 +112126,11 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -112316,38 +112318,6 @@ jGl
 aHr
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -112368,9 +112338,41 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -112452,7 +112454,7 @@ xKU
 sjb
 pus
 mNY
-mNY
+ozt
 mNY
 mNY
 mNY
@@ -112518,29 +112520,6 @@ jGl
 aHr
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -112558,21 +112537,44 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -112720,11 +112722,6 @@ jGl
 aHr
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -112737,37 +112734,42 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -112939,37 +112941,37 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -113152,26 +113154,26 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -113354,26 +113356,26 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -113556,10 +113558,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -113568,14 +113566,18 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -113735,16 +113737,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -113758,10 +113750,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -113770,22 +113758,36 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -113937,16 +113939,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -113985,9 +113977,19 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -114139,26 +114141,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-vEa
-vEa
-vEa
-vEa
-vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -114187,9 +114169,29 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -114356,11 +114358,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -114389,9 +114386,14 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
@@ -114558,11 +114560,6 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
-bMK
-bMK
 vEa
 vEa
 vEa
@@ -114591,9 +114588,14 @@ vEa
 vEa
 vEa
 vEa
-bMK
-bMK
-bMK
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
+vEa
 vEa
 vEa
 vEa
