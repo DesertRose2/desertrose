@@ -163,6 +163,16 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"bS" = (
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
+/obj/structure/bedsheetbin/towel,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "bW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/vault,
@@ -374,6 +384,26 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"eh" = (
+/obj/structure/closet,
+/obj/item/clothing/under/rank/security/detective/grey/skirt,
+/obj/item/clothing/under/rank/security/detective/grey/skirt,
+/obj/item/clothing/under/rank/security/detective/grey/skirt,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/under/rank/security/officer/skirt,
+/obj/item/clothing/under/rank/security/officer/skirt,
+/obj/item/clothing/under/rank/security/officer/skirt,
+/obj/item/clothing/under/rank/security/officer,
+/obj/item/clothing/under/rank/security/officer,
+/obj/item/clothing/under/rank/security/officer,
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "ei" = (
 /obj/item/vending_refill/coffee,
 /obj/item/vending_refill/coffee,
@@ -459,7 +489,9 @@
 /area/f13/city)
 "eN" = (
 /obj/machinery/vending/coffee,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "eO" = (
 /obj/structure/chair/right,
@@ -1396,6 +1428,16 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"ml" = (
+/obj/item/storage/fancy/donut_box,
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "mn" = (
 /obj/structure/campfire,
 /turf/open/indestructible/ground/outside/dirt,
@@ -1454,7 +1496,9 @@
 	icon_state = "innercity";
 	name = "gatehouse"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "mV" = (
 /obj/structure/fluff/railing{
@@ -2096,6 +2140,13 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"sQ" = (
+/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "sR" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -2311,7 +2362,9 @@
 /obj/structure/guncase,
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "uF" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -2634,6 +2687,14 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"xg" = (
+/obj/machinery/door/airlock/highsecurity{
+	req_access_txt = 137
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "xl" = (
 /turf/open/floor/carpet/red,
 /area/f13/city)
@@ -2874,7 +2935,9 @@
 	anchored = 1;
 	pixel_y = -3
 	},
-/turf/closed/wall/f13/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "yV" = (
 /obj/structure/closet/cabinet/anchored,
@@ -3147,6 +3210,15 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/wasteland)
+"By" = (
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "BD" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -3263,6 +3335,16 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
+/area/f13/city)
+"CH" = (
+/obj/structure/closet/crate/footlocker{
+	anchored = 1;
+	pixel_x = -9;
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "CZ" = (
 /obj/structure/railing/corner{
@@ -4774,6 +4856,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Qs" = (
+/obj/structure/bed,
+/obj/item/bedsheet/brown,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "Qw" = (
 /obj/structure/table/wood,
 /obj/item/soap/homemade,
@@ -5597,7 +5686,18 @@
 	icon_state = "innercity";
 	name = "gatehouse"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/item/clothing/mask/gas/sechailer{
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/city)
 "Xj" = (
 /obj/structure/bookcase/random,
@@ -5645,12 +5745,9 @@
 	},
 /area/f13/wasteland)
 "XC" = (
-/obj/item/storage/fancy/donut_box,
-/obj/structure/table/reinforced{
-	icon_state = "innercity";
-	name = "gatehouse"
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "XF" = (
 /obj/structure/dresser,
@@ -37296,13 +37393,13 @@ Yh
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
-gU
-gU
+Mk
+Mk
+Mk
+Mk
+Mk
+uF
+uF
 Yh
 ls
 ls
@@ -37553,11 +37650,11 @@ Yh
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+sQ
+Qs
+XC
+Qs
+Mk
 ls
 gU
 Yh
@@ -37810,11 +37907,11 @@ Yh
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+sQ
+CH
+XC
+CH
+Mk
 ls
 gU
 Yh
@@ -38067,11 +38164,11 @@ Yh
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+Mk
+Qs
+XC
+Qs
+sQ
 gU
 gU
 Yh
@@ -38324,11 +38421,11 @@ Yh
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+Mk
+CH
+XC
+CH
+Mk
 gU
 gU
 Yh
@@ -38581,11 +38678,11 @@ qe
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+sQ
+Qs
+XC
+XC
+xg
 gU
 gU
 Yh
@@ -38838,11 +38935,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+Mk
+CH
+XC
+XC
+Mk
 gU
 gU
 Yh
@@ -39095,11 +39192,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+Mk
+XC
+XC
+XC
+sQ
 gU
 gU
 Yh
@@ -39352,11 +39449,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+sQ
+XC
+XC
+XC
+Mk
 gU
 gU
 Yh
@@ -39609,11 +39706,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+sQ
+XC
+eh
+bS
+Mk
 gU
 gU
 Yh
@@ -39866,10 +39963,10 @@ ls
 ls
 ls
 gK
-nY
 Mk
-rL
-rL
+xg
+sQ
+sQ
 Mk
 gU
 gU
@@ -40123,11 +40220,11 @@ ls
 ls
 ls
 gK
-hY
+ml
 XC
 Xi
 mS
-rL
+sQ
 gU
 gU
 gU
@@ -40380,11 +40477,11 @@ ls
 ls
 ls
 gK
-hY
-hY
-hY
-Xi
-rL
+XC
+XC
+XC
+By
+sQ
 gU
 gU
 gU
@@ -40638,8 +40735,8 @@ ls
 ls
 gK
 uC
-hY
-hY
+XC
+XC
 eN
 Mk
 gU
@@ -40896,9 +40993,9 @@ ls
 gK
 yO
 uC
-hY
-hY
-nY
+XC
+XC
+xg
 gU
 gU
 gU
