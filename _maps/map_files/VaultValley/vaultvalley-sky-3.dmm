@@ -203,6 +203,14 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"ci" = (
+/obj/structure/curtain{
+	color = "black";
+	pixel_y = -32
+	},
+/obj/structure/chair/comfy/purple,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "ck" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowright"
@@ -449,6 +457,10 @@
 /obj/machinery/microwave,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/city)
+"eN" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "eO" = (
 /obj/structure/chair/right,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -676,12 +688,6 @@
 /obj/effect/spawner/bundle/costume/plaguedoctor,
 /turf/open/floor/carpet/blue,
 /area/f13/building)
-"gB" = (
-/obj/structure/railing{
-	dir = 5
-	},
-/turf/open/transparent/openspace,
-/area/f13/wasteland)
 "gD" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13{
@@ -1077,6 +1083,15 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
+"km" = (
+/obj/structure/curtain{
+	color = "black";
+	pixel_y = -32
+	},
+/obj/structure/table/wood/settler,
+/obj/item/toy/cards/deck,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "kn" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -1199,6 +1214,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/f13/wasteland)
+"kX" = (
+/obj/structure/curtain{
+	color = "black";
+	pixel_y = -32
+	},
+/obj/structure/chair/comfy,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "kZ" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/toggle/labcoat/scribecoat,
@@ -1384,6 +1407,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"mD" = (
+/obj/machinery/microwave,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/city)
 "mF" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated,
 /area/f13/wasteland)
@@ -1415,6 +1443,19 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"mS" = (
+/obj/item/vending_refill/coffee{
+	pixel_x = 10
+	},
+/obj/item/vending_refill/coffee{
+	pixel_y = 5
+	},
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "mV" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -1434,6 +1475,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/wasteland)
+"nl" = (
+/obj/structure/bed/wooden,
+/obj/item/bedsheet/hos{
+	desc = "A comfortable red bedsheet.";
+	name = "Comfy Red Bedsheet"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "nn" = (
 /obj/machinery/computer/arcade,
 /turf/open/floor/f13{
@@ -1677,6 +1726,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"pD" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/transparent/openspace,
+/area/f13/wasteland)
 "pF" = (
 /obj/item/paper_bin{
 	pixel_x = 16;
@@ -1829,6 +1884,16 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/village)
+"rj" = (
+/obj/structure/curtain{
+	color = "black";
+	pixel_y = -32
+	},
+/obj/structure/chair/comfy/purple{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "rv" = (
 /obj/structure/table/booth,
 /obj/item/toy/figure/bartender{
@@ -1968,6 +2033,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"ss" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "st" = (
 /obj/structure/fluff/railing{
 	dir = 10
@@ -2158,12 +2229,10 @@
 	},
 /area/f13/wasteland)
 "tY" = (
-/obj/structure/closet/cabinet/anchored,
-/obj/item/razor,
-/obj/item/switchblade,
-/obj/effect/spawner/lootdrop/clothing_high,
-/turf/open/floor/carpet/royalblack,
-/area/f13/city)
+/obj/item/binoculars,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
 "ud" = (
 /obj/effect/spawner/lootdrop/druggie_pill/no_turf,
 /obj/effect/decal/cleanable/dirt,
@@ -2239,12 +2308,10 @@
 	},
 /area/f13/building)
 "uC" = (
-/obj/structure/bed/wooden,
-/obj/item/bedsheet/hos{
-	desc = "A comfortable red bedsheet.";
-	name = "Comfy Red Bedsheet"
-	},
-/turf/open/floor/carpet/royalblack,
+/obj/structure/guncase,
+/obj/item/gun/ballistic/revolver/caravan_shotgun,
+/obj/item/gun/ballistic/revolver/caravan_shotgun,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "uF" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -2737,6 +2804,13 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/red,
 /area/f13/city)
+"yu" = (
+/obj/machinery/light/small,
+/obj/item/storage/fancy/cigarettes/cigars,
+/obj/item/lighter/military,
+/obj/structure/table/wood/settler,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "yx" = (
 /obj/machinery/chem_master/primitive,
 /turf/open/floor/f13/wood,
@@ -2788,10 +2862,19 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "yO" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/noticeboard{
+	layer = 2.5;
+	pixel_y = 3
 	},
-/turf/open/floor/carpet/royalblack,
+/obj/item/gun/ballistic/shotgun/trench{
+	anchored = 1;
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/shotgun/hunting{
+	anchored = 1;
+	pixel_y = -3
+	},
+/turf/closed/wall/f13/tunnel,
 /area/f13/city)
 "yV" = (
 /obj/structure/closet/cabinet/anchored,
@@ -3863,6 +3946,10 @@
 /obj/item/kirbyplants/photosynthetic,
 /turf/open/floor/carpet/royalblack,
 /area/f13/brotherhood)
+"IX" = (
+/obj/machinery/door/airlock/silver/glass,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "Ja" = (
 /obj/structure/bonfire,
 /turf/open/floor/f13/wood,
@@ -4152,8 +4239,7 @@
 	},
 /area/f13/building)
 "Mk" = (
-/obj/machinery/light/small,
-/turf/open/floor/wood/f13/oak,
+/turf/closed/wall/f13/tunnel,
 /area/f13/city)
 "Ml" = (
 /obj/structure/rack,
@@ -4444,6 +4530,13 @@
 /obj/structure/window/fulltile/house,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"Oe" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/city)
 "Om" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4927,6 +5020,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
+"Sc" = (
+/obj/machinery/light/small,
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "Sj" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -5250,6 +5350,12 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"Vd" = (
+/obj/structure/closet/cabinet/anchored,
+/obj/item/razor,
+/obj/effect/spawner/lootdrop/clothing_high,
+/turf/open/floor/carpet/royalblack,
+/area/f13/city)
 "Ve" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_2"
@@ -5486,6 +5592,13 @@
 /obj/structure/table,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"Xi" = (
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city)
 "Xj" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/carpet/royalblack,
@@ -5532,7 +5645,11 @@
 	},
 /area/f13/wasteland)
 "XC" = (
-/obj/machinery/door/airlock/silver/glass,
+/obj/item/storage/fancy/donut_box,
+/obj/structure/table/reinforced{
+	icon_state = "innercity";
+	name = "gatehouse"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "XF" = (
@@ -33307,7 +33424,7 @@ qq
 ls
 ls
 gK
-gU
+tY
 gU
 gU
 gU
@@ -33842,7 +33959,7 @@ pm
 pm
 pm
 ip
-gU
+tY
 gU
 gU
 Yh
@@ -39749,14 +39866,14 @@ ls
 ls
 ls
 gK
+nY
+Mk
+rL
+rL
+Mk
 gU
 gU
-gU
-gU
-gU
-gU
-gU
-gB
+pD
 zB
 zB
 zB
@@ -40006,6 +40123,11 @@ ls
 ls
 ls
 gK
+hY
+XC
+Xi
+mS
+rL
 gU
 gU
 gU
@@ -40014,12 +40136,7 @@ gU
 gU
 gU
 gU
-gU
-gU
-gU
-gU
-gU
-gU
+tY
 Yh
 ls
 ls
@@ -40263,11 +40380,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+hY
+hY
+hY
+Xi
+rL
 gU
 gU
 gU
@@ -40520,11 +40637,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+uC
+hY
+hY
+eN
+Mk
 gU
 gU
 gU
@@ -40777,11 +40894,11 @@ ls
 ls
 ls
 gK
-gU
-gU
-gU
-gU
-gU
+yO
+uC
+hY
+hY
+nY
 gU
 gU
 gU
@@ -41549,11 +41666,11 @@ El
 El
 ls
 El
-ZL
-ZL
+Rs
+MM
 El
 ES
-Mk
+yu
 El
 gU
 gU
@@ -41806,11 +41923,11 @@ RO
 El
 ls
 El
-ZL
+Oe
 ZL
 FW
 ES
-KN
+kX
 rL
 gU
 gU
@@ -42067,7 +42184,7 @@ El
 El
 El
 ES
-KN
+ci
 rL
 gU
 ls
@@ -42320,12 +42437,12 @@ RO
 El
 ls
 El
-tY
+Vd
 GC
 FW
 ES
 ES
-XC
+IX
 gU
 ls
 Yh
@@ -42834,11 +42951,11 @@ RO
 El
 ls
 El
-uC
-yO
+nl
+ss
 El
 SH
-ZL
+mD
 El
 gU
 gU
@@ -43348,11 +43465,11 @@ RO
 El
 El
 El
-ZL
-ZL
+Rs
+MM
 El
 ES
-Mk
+Sc
 El
 gU
 gU
@@ -43605,11 +43722,11 @@ RO
 RO
 El
 El
-ZL
+Oe
 ZL
 FW
 ES
-KN
+km
 rL
 gU
 gU
@@ -43866,7 +43983,7 @@ El
 El
 El
 ES
-KN
+rj
 rL
 gU
 ls
@@ -44119,12 +44236,12 @@ hY
 hY
 RO
 El
-tY
+Vd
 GC
 FW
 ES
 ES
-XC
+IX
 gU
 ls
 Yh
@@ -44633,11 +44750,11 @@ hY
 hY
 RO
 El
-uC
-yO
+nl
+ss
 El
 SH
-ZL
+mD
 El
 gU
 gU
@@ -44898,7 +45015,7 @@ El
 El
 uF
 uF
-gB
+pD
 KW
 gU
 gU
@@ -45416,7 +45533,7 @@ gU
 gU
 gU
 gU
-gU
+tY
 Yh
 ls
 ls
