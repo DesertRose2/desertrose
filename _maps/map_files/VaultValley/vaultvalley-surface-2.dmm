@@ -3453,8 +3453,7 @@
 /area/f13/building)
 "dwT" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -5179,9 +5178,6 @@
 /area/f13/tunnel)
 "fdD" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "131"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -5801,8 +5797,7 @@
 /area/f13/city)
 "fNt" = (
 /obj/structure/chair/wood{
-	dir = 8;
-	icon_state = "wooden_chair"
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -12250,13 +12245,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"mtd" = (
-/obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/building)
 "mte" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -12379,8 +12367,7 @@
 /area/f13/radiation)
 "mAv" = (
 /obj/structure/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -14473,9 +14460,6 @@
 /area/f13/wasteland)
 "oDy" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -18005,8 +17989,7 @@
 /area/f13/building)
 "skj" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair"
+	dir = 4
 	},
 /turf/open/floor/wood/f13/old{
 	icon_state = "housewood2-broken"
@@ -18359,9 +18342,6 @@
 /area/f13/city)
 "sEX" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "125"
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -20226,13 +20206,6 @@
 	icon_state = "whitepurplerustychess2"
 	},
 /area/f13/building)
-"uwU" = (
-/obj/structure/chair/wood{
-	icon_state = "wooden_chair"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/old,
-/area/f13/legion)
 "uxT" = (
 /obj/structure/stone_tile/slab,
 /turf/open/indestructible/ground/inside/mountain,
@@ -22287,8 +22260,7 @@
 /area/f13/city)
 "wCo" = (
 /obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
@@ -22867,9 +22839,6 @@
 /area/f13/wasteland)
 "xfN" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "131"
 	},
 /obj/structure/decoration/rag,
@@ -74787,7 +74756,7 @@ vPX
 ocs
 wnm
 eyC
-mtd
+esh
 bIB
 sdJ
 mwR
@@ -75044,7 +75013,7 @@ vPX
 bIB
 keb
 iRT
-mtd
+esh
 wYp
 sdJ
 wUS
@@ -75301,7 +75270,7 @@ bIB
 bIB
 keb
 eiR
-mtd
+esh
 ocs
 sdJ
 ego
@@ -75558,7 +75527,7 @@ pQT
 bIB
 wnm
 xGI
-mtd
+esh
 bIB
 sBh
 mHR
@@ -75634,7 +75603,7 @@ qLi
 uUn
 xso
 xso
-uwU
+pZP
 bdf
 uJX
 uLu

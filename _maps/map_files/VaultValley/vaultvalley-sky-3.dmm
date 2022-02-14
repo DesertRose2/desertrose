@@ -1861,9 +1861,6 @@
 /area/f13/wasteland)
 "rE" = (
 /obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	max_integrity = 300;
-	obj_integrity = 300;
 	req_access_txt = "131"
 	},
 /obj/structure/decoration/rag,
@@ -3435,12 +3432,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/wasteland)
-"EO" = (
-/obj/structure/chair/wood{
-	icon_state = "wooden_chair"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "EQ" = (
 /turf/open/floor/f13,
 /area/f13/brotherhood)
@@ -14275,7 +14266,7 @@ we
 we
 ma
 sA
-EO
+FT
 PC
 sA
 sA
@@ -14789,7 +14780,7 @@ we
 we
 zZ
 sA
-EO
+FT
 PC
 sA
 sA
