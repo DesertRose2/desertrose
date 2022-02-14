@@ -10,7 +10,7 @@
 	desc = "One of the Junkers, raiders who build, rebuild and reprogram robots to suit their own needs."
 	icon_state = "junker"
 	icon_living = "junker"
-//	icon_dead = "junker_dead"
+	icon_dead = "junker_dead"
 	speak = list("Gotta find me some jet...", "I'M GONNA SCRAP YOU FOR PARTS!", "This isn't anything like training... Shooting at plywood? How's that supposed to get me ready for this hell!")
 	speak_chance = 10
 	retreat_distance = 5
@@ -32,8 +32,6 @@
 	name = "Junker Hijacker"
 	icon_state	=	"junker_hijacker"
 	icon_living	=	"junker_hijacker"
-	icon_dead	=	"junker_hijacker"
-	icon_gib	=	"junker_hijacker"
 	ranged = 0
 	melee_damage_lower = 30
 	melee_damage_upper = 60
@@ -45,7 +43,6 @@
 	name = "Junker Scrapper"
 	icon_state	=	"junker_scrapper"
 	icon_living	=	"junker_scrapper"
-	icon_dead	=	"junker_scrapper"
 	projectiletype = /obj/item/projectile/ion/weak
 	projectilesound = 'sound/f13weapons/shotgun.ogg'
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker, /obj/item/gun/ballistic/revolver/ballisticfist)
@@ -59,7 +56,6 @@
 	name = "Junker Boss"
 	icon_state	=	"junker_boss"
 	icon_living	=	"junker_boss"
-	icon_dead	=	"junker_boss"
 	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town...")
 	maxHealth = 700
 	health = 700
