@@ -142,7 +142,7 @@
 	AddComponent(/datum/component/butchering, 100, 70) //decent in a pinch, but pretty bad.
 //	AddComponent(/datum/component/jousting)
 	AddElement(/datum/element/sword_point)
-	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=40, icon_wielded="[icon_prefix]1")
+	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40, icon_wielded="[icon_prefix]1")
 
 /obj/item/twohanded/spear/rightclick_attack_self(mob/user)
 	if(explosive)
@@ -244,7 +244,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
 	reach = 2
-	throwforce = 25
+	throwforce = 20
 	throwforce = 20
 	throw_speed = 4
 	embedding = list("embedded_impact_pain_multiplier" = 3)
@@ -258,6 +258,20 @@
 /obj/item/twohanded/spear/bonespear/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=30, icon_wielded="[icon_prefix]1")
+
+/*
+ * Bamboo Spear
+ */
+/obj/item/twohanded/spear/bamboospear //Blatant imitation of spear, but all natural. Also not valid for explosive modification.
+	icon_state = "bamboo_spear0"
+	icon_prefix = "bamboo_spear"
+	name = "bamboo spear"
+	desc = "A haphazardly-constructed bamboo stick with a sharpened tip, ready to poke holes into unsuspecting people."
+	throwforce = 25	//Better to throw
+
+/obj/item/twohanded/spear/bamboospear/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=20, icon_wielded="[icon_prefix]1")
 
 /obj/item/twohanded/spear/bonespear/deathclaw
 	name = "deathclaw spear"

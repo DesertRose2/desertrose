@@ -169,6 +169,15 @@
 		usr.put_in_hands(C)
 		qdel(src)
 
+/obj/structure/chair/stool/bamboo
+	name = "bamboo stool"
+	desc = "A makeshift bamboo stool with a rustic look."
+	icon_state = "bamboo_stool"
+	resistance_flags = FLAMMABLE
+	max_integrity = 60
+	buildstacktype = /obj/item/stack/sheet/mineral/bamboo
+	buildstackamount = 2
+	item_chair = /obj/item/chair/stool/bamboo
 
 // -------------------
 // CHAIR ITEM (inhand)
@@ -282,7 +291,14 @@
 				C.DefaultCombatKnockdown(20)
 		smash(user)
 
-
+/obj/item/chair/stool/bamboo
+	name = "bamboo stool"
+	icon_state = "bamboo_stool_toppled"
+	item_state = "stool_bamboo"
+	hitsound = 'sound/weapons/genhit1.ogg'
+	origin_type = /obj/structure/chair/stool/bamboo
+	custom_materials = null
+	break_chance = 50	//Submissive and breakable unlike the chad iron stool
 
 //OBSOLETE replace with 
 /obj/structure/chair/stool/f13stool

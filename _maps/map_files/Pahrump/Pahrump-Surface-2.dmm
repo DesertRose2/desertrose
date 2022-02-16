@@ -57792,7 +57792,7 @@
 	},
 /area/f13/wasteland)
 "tNI" = (
-/obj/structure/rack,
+/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "tNJ" = (

@@ -284,6 +284,13 @@
 	volume = 10
 	proj_piercing = 1
 
+/obj/item/reagent_containers/syringe/crude
+	name = "crude syringe"
+	desc = "A crudely made syringe. The flimsy wooden construction makes it hold a minimal amounts of reagents, but its very disposable."
+	icon_state = "crude_0"
+	possible_transfer_amounts = list(1,5)
+	volume = 5
+
 /obj/item/reagent_containers/syringe/get_belt_overlay()
 	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', "pouch")
 
@@ -293,7 +300,7 @@
 	volume = 20
 	amount_per_transfer_from_this = 20
 	icon_state = "empty"
-	item_state = "syringe_empty"
+	item_state =  "syringe_empty"
 	show_filling = FALSE
 	var/emptrig = FALSE
 
