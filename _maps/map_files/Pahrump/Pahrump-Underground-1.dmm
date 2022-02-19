@@ -1262,10 +1262,7 @@
 	},
 /area/f13/tunnel)
 "aTN" = (
-/obj/machinery/sleeper{
-	density = 1;
-	dir = 4
-	},
+/obj/machinery/sleeper,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "whitedirtysolid"
 	},
@@ -3747,13 +3744,6 @@
 /obj/item/blanket,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"cBv" = (
-/obj/structure/chair/f13chair1{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/f13/brotherhood/leisure)
 "cBR" = (
 /obj/structure/disposalpipe/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -4312,12 +4302,6 @@
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
-"cUu" = (
-/obj/structure/chair/bench{
-	icon_state = "dropshipleft"
-	},
-/turf/open/floor/carpet/black,
-/area/f13/brotherhood/rnd)
 "cUS" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -7241,7 +7225,7 @@
 	},
 /area/f13/legion)
 "eSr" = (
-/obj/structure/chair/f13chair1{
+/obj/structure/chair/f13foldupchair{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -13778,7 +13762,7 @@
 /area/f13/caves)
 "jiU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/f13chair1{
+/obj/structure/chair/f13foldupchair{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -14348,7 +14332,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "jFm" = (
-/obj/structure/chair/f13chair1{
+/obj/structure/chair/f13foldupchair{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -30837,10 +30821,10 @@
 	},
 /area/f13/tunnel)
 "uaH" = (
-/obj/structure/chair/f13chair1{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/f13foldupchair{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/f13/brotherhood/leisure)
 "uaL" = (
@@ -34022,9 +34006,7 @@
 	},
 /area/f13/bunker)
 "vXI" = (
-/obj/structure/chair/bench{
-	icon_state = "dropshipright"
-	},
+/obj/structure/chair/f13foldupchair,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood/rnd)
 "vXU" = (
@@ -36800,11 +36782,7 @@
 /turf/open/floor/wood,
 /area/f13/tunnel)
 "xSd" = (
-/obj/machinery/sleeper{
-	density = 1;
-	dir = 4;
-	icon_state = "sleeper_clockwork"
-	},
+/obj/machinery/sleeper,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/medical)
 "xST" = (
@@ -94171,7 +94149,7 @@ xWf
 eSr
 eSr
 xWf
-cBv
+jiU
 gEZ
 tgy
 mrV
@@ -100397,9 +100375,9 @@ tdP
 tbq
 xhA
 hoe
-cUu
-cUu
-cUu
+vXI
+vXI
+vXI
 sUa
 cwq
 ojl
@@ -101168,9 +101146,9 @@ xjE
 oTJ
 xhA
 sUa
-cUu
-cUu
-cUu
+vXI
+vXI
+vXI
 sUa
 eIW
 say

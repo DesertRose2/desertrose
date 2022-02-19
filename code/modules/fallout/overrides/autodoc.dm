@@ -16,5 +16,5 @@
 			to_chat(user, SPAN_WARNING("The legion has no use for drugs! Better to destroy it."))
 			return
 	if(!ui)
-		ui = new(user, src, "Autodoc", name)
+		ui = new(user, src, "Sleeper", name)
 		ui.open()
