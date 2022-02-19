@@ -119,7 +119,7 @@
 		var/mob/living/L = user
 		if(HAS_TRAIT(L, TRAIT_SKITTISH))
 			. += SPAN_NOTICE("Ctrl-Shift-click [src] to jump inside.")
-	if(isobserver(user))
+	if(isobserver(user) && check_rights_for(user.client, R_ADMIN))
 		. += "<span class='info'>It contains: [english_list(contents)].</span>"
 		investigate_log("had its contents examined by [user] as a ghost.", INVESTIGATE_GHOST)
 
