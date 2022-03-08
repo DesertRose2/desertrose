@@ -478,7 +478,10 @@
 						"kirshbia",
 						"jackmcintyre",
 						"lunaticluna",
-						"muhsollini")
+						"muhsollini",
+						"tzula",
+						"ollieoxen",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
@@ -549,7 +552,8 @@
 						"muhsollini",
 						"rangerbust",
 						"kayzach",
-						"pisshole")
+						"pisshole",
+						"tzula")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -598,7 +602,10 @@
 						"jackmcintyre",
 						"kirshbia",
 						"lunaticluna",
-						"muhsollini")
+						"muhsollini",
+						"tzula",
+						"ollieoxen",
+						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
@@ -667,7 +674,8 @@
 						"honto335",
 						"luke313",
 						"spartan2548",
-						"lunaticluna")
+						"lunaticluna",
+						"tzula")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
