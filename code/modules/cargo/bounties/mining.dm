@@ -28,7 +28,7 @@
 	name = "Bone Armor"
 	description = "Station 14 has volunteered their lizard crew for ballistic armor testing. Ship over some bone armor."
 	reward = 2000
-	wanted_types = list(/obj/item/clothing/suit/armor/bone)
+	wanted_types = list(/obj/item/clothing/suit/armor/f13/bone)
 
 /datum/bounty/item/mining/skull_helmet
 	name = "Skull Helmet"

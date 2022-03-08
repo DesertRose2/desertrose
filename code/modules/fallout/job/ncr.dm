@@ -64,7 +64,7 @@ Colonel
 	id 			= /obj/item/card/id/dogtag/ncrcolonel
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
-	accessory 	= /obj/item/clothing/accessory/ncr
+	accessory 	= /obj/item/clothing/accessory/f13/ncr
 	head 		= /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
 	belt        = /obj/item/storage/belt/military/assault/ncr/crossbelt
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
@@ -115,7 +115,7 @@ Captain
 	id 			= /obj/item/card/id/dogtag/ncrcaptain
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
-	accessory 	= /obj/item/clothing/accessory/ncr/CPT
+	accessory 	= /obj/item/clothing/accessory/f13/ncr/CPT
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/captain
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	neck 		= /obj/item/storage/belt/holster/ncr_officer
@@ -188,7 +188,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
-	accessory 	= /obj/item/clothing/accessory/ncr/LT1
+	accessory 	= /obj/item/clothing/accessory/f13/ncr/LT1
 	head 		= /obj/item/clothing/head/beret/ncr_lt
 	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
@@ -249,7 +249,7 @@ Medical Officer
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
-	accessory 	= /obj/item/clothing/accessory/ncr/LT2
+	accessory 	= /obj/item/clothing/accessory/f13/ncr/LT2
 	head 		= /obj/item/clothing/head/beret/medical
 	neck 		= /obj/item/storage/belt/holster/med_lt
 	glasses 	= /obj/item/clothing/glasses/hud/health/f13
@@ -304,7 +304,7 @@ Sergeant First Class
 	id 				= /obj/item/card/id/dogtag/ncrsergeant
 	uniform		 	= /obj/item/clothing/under/f13/ncr
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
-	accessory 		= /obj/item/clothing/accessory/ncr/FSGT
+	accessory 		= /obj/item/clothing/accessory/f13/ncr/FSGT
 	glasses 		= /obj/item/clothing/glasses/sunglasses/big
 	neck 			= /obj/item/storage/belt/holster/ncr_officer
 	ears 			= /obj/item/radio/headset/headset_ncr_com
@@ -375,7 +375,7 @@ Sergeant
 	suit			= /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	uniform 		= /obj/item/clothing/under/f13/ncr
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
-	accessory		= /obj/item/clothing/accessory/ncr/SGT
+	accessory		= /obj/item/clothing/accessory/f13/ncr/SGT
 	head 			= /obj/item/clothing/head/f13/ncr/goggles
 	glasses			= /obj/item/clothing/glasses/sunglasses/big
 	neck 			= /obj/item/storage/belt/holster/ncr
@@ -461,7 +461,7 @@ Corporal
 	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
 	id 				= /obj/item/card/id/dogtag/ncrtrooper
 	neck 			= /obj/item/storage/belt/holster/ncr
-	accessory 		= /obj/item/clothing/accessory/ncr/CPL
+	accessory 		= /obj/item/clothing/accessory/f13/ncr/CPL
 	head 			= /obj/item/clothing/head/f13/ncr/goggles
 	glasses			= /obj/item/clothing/glasses/sunglasses
 	l_pocket 		= /obj/item/flashlight
@@ -543,7 +543,7 @@ Combat Medic
 	belt 			= /obj/item/storage/belt/military/assault/ncr
 	head			= /obj/item/clothing/head/f13/ncr/steelpot_med
 	gloves			= /obj/item/clothing/gloves/color/latex/nitrile
-	accessory		= /obj/item/clothing/accessory/armband/med/ncr
+	accessory		= /obj/item/clothing/accessory/armband/med/f13/ncr
 	suit_store		= /obj/item/gun/ballistic/automatic/service
 	l_hand			= /obj/item/storage/firstaid/regular
 	mask 			= /obj/item/clothing/mask/surgical
@@ -591,7 +591,7 @@ Combat Engineer
 	glasses			= /obj/item/clothing/glasses/welding
 	belt 			= /obj/item/storage/belt/military/assault/ncr/engineer
 	gloves			= /obj/item/clothing/gloves/color/yellow
-	accessory		= /obj/item/clothing/accessory/armband/engine/ncr
+	accessory		= /obj/item/clothing/accessory/armband/engine/f13/ncr
 	suit_store		= /obj/item/gun/ballistic/automatic/service
 	l_pocket 		= /obj/item/flashlight
 	backpack_contents = list(
@@ -637,7 +637,7 @@ Mp
 	id = 			/obj/item/card/id/dogtag/ncrsergeant
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
-	accessory =     /obj/item/clothing/accessory/armband/black
+	accessory =     /obj/item/clothing/accessory/f13/armband/black
 	head = 			/obj/item/clothing/head/f13/ncr/steelpot_mp
 	neck = 			/obj/item/storage/belt/holster/ncr_officer
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
@@ -696,7 +696,7 @@ Heavy Trooper
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/ncr
 	suit_store =	/obj/item/gun/ballistic/automatic/r84
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/SPC
+	accessory =     /obj/item/clothing/accessory/f13/ncr/SPC
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45b
 	neck =			/obj/item/storage/belt/holster/ncr
 	belt = 			/obj/item/storage/belt/military/ncr_bandolier
@@ -739,7 +739,7 @@ Trooper
 	suit =			/obj/item/clothing/suit/armor/f13/ncrarmor
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/TPR
+	accessory =     /obj/item/clothing/accessory/f13/ncr/TPR
 	neck = 			/obj/item/storage/belt/holster
 	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
@@ -806,7 +806,7 @@ Recruit
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/REC
+	accessory =     /obj/item/clothing/accessory/f13/ncr/REC
 	head = 			/obj/item/clothing/head/f13/ncr
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/rifle/mag/varmint
@@ -882,7 +882,7 @@ Veteran Ranger
 	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
 	belt =			/obj/item/storage/belt/military/assault/ncr
 	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
-	gloves =		/obj/item/clothing/gloves/rifleman
+	gloves =		/obj/item/clothing/gloves/f13/rifleman
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_ranger
@@ -950,7 +950,7 @@ Veteran Ranger
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	belt =			/obj/item/storage/belt/military/reconbandolier
-	gloves =		/obj/item/clothing/gloves/patrol
+	gloves =		/obj/item/clothing/gloves/f13/patrol
 	ears = 			/obj/item/radio/headset/headset_ranger
 	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars
@@ -1017,7 +1017,7 @@ Veteran Ranger
 	uniform = 		/obj/item/clothing/under/f13/ranger
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
 	glasses = 		/obj/item/clothing/glasses/sunglasses
-	gloves = 		/obj/item/clothing/gloves/patrol
+	gloves = 		/obj/item/clothing/gloves/f13/patrol
 	ears = 			/obj/item/radio/headset/headset_ranger
 	l_pocket = 		/obj/item/flashlight/seclite
 	r_pocket = 		/obj/item/binoculars

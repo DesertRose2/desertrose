@@ -12,7 +12,7 @@
 
 /datum/crafting_recipe/bonearmor
 	name = "Bone Armor"
-	result = /obj/item/clothing/suit/armor/bone
+	result = /obj/item/clothing/suit/armor/f13/bone
 	time = 30
 	reqs = list(/obj/item/stack/sheet/bone = 6)
 	category = CAT_CLOTHING
@@ -161,7 +161,7 @@
 
 /datum/crafting_recipe/goliathcloak
 	name = "Deathclaw cloak"
-	result = /obj/item/clothing/suit/hooded/cloak/goliath
+	result = /obj/item/clothing/suit/hooded/f13/cloak/goliath
 	time = 50
 	reqs = list(/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/sinew = 2,
@@ -171,7 +171,7 @@
 
 /datum/crafting_recipe/tatteredredcloak
 	name = "Tattered red cloak"
-	result = /obj/item/clothing/suit/hooded/cloak/goliath/tatteredred
+	result = /obj/item/clothing/suit/hooded/f13/cloak/goliath/tatteredred
 	time = 50
 	reqs = list(/obj/item/stack/sheet/leather = 1,
 				/obj/item/stack/sheet/sinew = 1,

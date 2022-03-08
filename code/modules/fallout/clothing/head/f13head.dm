@@ -570,6 +570,8 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/f13
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/head.dmi'
 	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/f13/hat_nightstalker
@@ -1014,3 +1016,75 @@
 	flash_protect = 1
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
+
+/obj/item/clothing/head/f13/beret/headband
+	name = "red headband"
+	desc = "A red headband fashioned out of some tattered sleeves. The fabric is soaked in sweat, dirt and blood."
+	icon_state = "platedheadbandred"
+
+/obj/item/clothing/head/f13/bandit
+	name = "bandit hat"
+	desc = "(I) A black cowboy hat with a large brim, curved to the sides, and a silver eagle pinned to the front."
+	icon_state = "bandit"
+	item_state = "fedora"
+	armor = list("tier" = 1)
+
+/obj/item/clothing/head/f13/gambler
+	name = "gambler hat"
+	desc = "(I) Perfect for a ramblin' gamblin' man." //But I got to ramble (ramblin' man) //Oh I got to gamble (gamblin' man) //Got to got to ramble (ramblin' man) //I was born a ramblin' gamblin' man
+	icon_state = "gambler"
+	item_state = "dethat"
+	armor = list("tier" = 1)
+
+/obj/item/clothing/head/f13/Bikerhelmet
+	name = "Future Helmet"
+	desc = "(II) A helmet of some sort as if from the distant future."
+	icon_state = "biker_helmet"
+	item_state = "biker_helmet"
+	armor = list("tier" = 2,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 0)
+	resistance_flags = FIRE_PROOF
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
+/obj/item/clothing/head/f13/rainbowbunchcrown
+	name = "rainbow flower crown"
+	desc = "A flower crown made out of the flowers of the rainbow bunch plant."
+	dynamic_hair_suffix = ""
+	attack_verb = list("crowned")
+
+/obj/item/clothing/head/f13/rainbowbunchcrown/Initialize()
+	. = ..()
+	var/crown_type = rand(1,4)
+	switch(crown_type)
+		if(1)
+			desc += " This one has red, yellow and white flowers."
+			icon_state = "rainbow_bunch_crown_1"
+		if(2)
+			desc += " This one has blue, yellow, green and white flowers."
+			icon_state = "rainbow_bunch_crown_2"
+		if(3)
+			desc += " This one has red, blue, purple and pink flowers."
+			icon_state = "rainbow_bunch_crown_3"
+		if(4)
+			desc += " This one has yellow, green and white flowers."
+			icon_state = "rainbow_bunch_crown_4"
+
+/obj/item/clothing/head/f13/sunflowercrown
+	name = "sunflower crown"
+	desc = "A bright flower crown made out sunflowers that is sure to brighten up anyone's day!"
+	icon_state = "sunflower_crown"
+	dynamic_hair_suffix = ""
+	attack_verb = list("crowned")
+
+/obj/item/clothing/head/f13/poppycrown
+	name = "poppy crown"
+	desc = "A flower crown made out of a string of bright red poppies."
+	icon_state = "poppy_crown"
+	dynamic_hair_suffix = ""
+	attack_verb = list("crowned")
+
+/obj/item/clothing/head/f13/lilycrown
+	name = "lily crown"
+	desc = "A leafy flower crown with a cluster of large white lilies at at the front."
+	icon_state = "lily_crown"
+	dynamic_hair_suffix = ""
+	attack_verb = list("crowned")

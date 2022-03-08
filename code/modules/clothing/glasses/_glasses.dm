@@ -230,15 +230,6 @@
 	icon_state = "circle_glasses"
 	item_state = "circle_glasses"
 
-/obj/item/clothing/glasses/regular/protected
-	name = "prescription sunglasses"
-	desc = "A pair of tinted glasses to help prevent from the ever present sun and bright flashes."
-	icon_state = "presc_sun"
-	item_state = "presc_sun"
-	flash_protect = 1
-	tint = 1
-	darkness_view = 1
-
 //Here lies green glasses, so ugly they died. RIP
 
 /obj/item/clothing/glasses/sunglasses
@@ -602,22 +593,4 @@
 		var/mob/living/carbon/human/H = user
 		H.update_sight()
 
-/obj/item/clothing/glasses/sunglasses/fakeblindfold
-	name = "priestess blindfold"
-	desc = "The coverings used to restrict the sight of the world, but see with the Sight of Mars."
-	icon_state = "legpriestess"
-	item_state = "legpriestess"
-
-/obj/item/clothing/glasses/sunglasses/fakeblindfold/equipped(mob/living/user, slot)
-	..()
-	if(ishuman(user))
-		var/mob/living/carbon/human/U = user
-		if(U.job in list("Priestess of Mars"))
-		else
-			to_chat(user, "<span class='userdanger'>\"You want to be blind, do you?\"</span>")
-			user.dropItemToGround(src, TRUE)
-			user.Dizzy(30)
-			user.Knockdown(100)
-			user.blind_eyes(30)
-		return
 

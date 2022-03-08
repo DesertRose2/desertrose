@@ -1,6 +1,6 @@
 /obj/machinery/vending/nukacolavend
 	name = "\improper Nuka-Cola vending machine"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "nuka_vending"
 	icon_deny = "nuka_vending-deny"
 	product_slogans = "Take the leap... enjoy a Quantum!"
@@ -17,7 +17,7 @@
 
 /obj/machinery/vending/nukacolavendfull
 	name = "\improper pristine Nuka-Cola vending machine"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "nuka_vending"
 	icon_deny = "nuka_vending-deny"
 	product_slogans = "Take the leap... enjoy a Quantum!"

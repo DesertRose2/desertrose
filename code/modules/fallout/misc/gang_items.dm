@@ -119,7 +119,7 @@
 	name = "Jester suit"
 	id = "jester_uniform"
 	cost = 40
-	item_path = /obj/item/clothing/under/jester
+	item_path = /obj/item/clothing/under/rank/civilian/clown/jester
 
 /datum/gang_item/clothing/biker_uniform
 	name = "Biker uniform"
@@ -131,13 +131,13 @@
 	name = "Scarecrow uniform"
 	id = "scarecrow_uniform"
 	cost = 40
-	item_path = /obj/item/clothing/under/scarecrow
+	item_path = /obj/item/clothing/under/costume/scarecrow
 
 /datum/gang_item/clothing/soviet_uniform
 	name = "Soviet uniform"
 	id = "soviet_uniform"
 	cost = 40
-	item_path = /obj/item/clothing/under/soviet
+	item_path = /obj/item/clothing/under/costume/soviet
 
 /datum/gang_item/clothing/chairmen_uniform
 	name = "Chairmen uniform"

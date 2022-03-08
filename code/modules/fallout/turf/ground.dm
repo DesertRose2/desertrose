@@ -69,7 +69,7 @@
 	slowdown = 0.5
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
 	var/pit_sand = TRUE

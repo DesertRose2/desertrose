@@ -592,7 +592,7 @@
 
 /datum/crafting_recipe/cloak
 	name = "desert cloak"
-	result = /obj/item/clothing/suit/hooded/cloak/desert
+	result = /obj/item/clothing/suit/hooded/f13/cloak/desert
 	reqs = list(/obj/item/stack/sheet/leather = 3)
 	tools = list(TOOL_WORKBENCH)
 	time = 25
@@ -868,7 +868,7 @@
 
 /datum/crafting_recipe/facewrap
 	name = "headwrap"
-	result = /obj/item/clothing/mask/facewrap
+	result = /obj/item/clothing/mask/f13/facewrap
 	reqs = list(/obj/item/stack/sheet/cloth = 2)
 	tools = list(TOOL_WORKBENCH)
 	time = 10
@@ -877,7 +877,7 @@
 
 /datum/crafting_recipe/ncr_facewrap
 	name = "facewrap"
-	result = /obj/item/clothing/mask/facewrap
+	result = /obj/item/clothing/mask/f13/facewrap
 	reqs = list(/obj/item/stack/sheet/cloth = 2)
 	tools = list(TOOL_WORKBENCH)
 	time = 10

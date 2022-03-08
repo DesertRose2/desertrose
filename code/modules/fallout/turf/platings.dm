@@ -12,134 +12,6 @@
 	attachment_holes = FALSE
 	planetary_atmos = TRUE
 
-/* so we can't break this */
-/turf/open/floor/plating/f13/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
-	return
-
-/turf/open/floor/plating/f13/burn_tile()
-	return
-
-/turf/open/floor/plating/f13/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
-	return
-
-/turf/open/floor/plating/f13/MakeDry()
-	return
-
-/turf/open/floor/plating/f13/outside
-	name = "What the fuck mappers? why is this here"
-	desc = "If found, scream at the github repo about this"
-	icon_state = "wasteland1"
-	icon = 'icons/turf/f13desert.dmi'
-	turf_light_range = 3
-	turf_light_power = 0.75
-
-#define GRASS_SPONTANEOUS 		2
-#define GRASS_WEIGHT 			4
-#define LUSH_PLANT_SPAWN_LIST list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/joshua = 3, /obj/structure/flora/tree/cactus = 2, /obj/structure/flora/tree/wasteland = 2)
-#define DESOLATE_PLANT_SPAWN_LIST list(/obj/structure/flora/grass/wasteland = 1)
-
-/turf/open/floor/plating/f13/outside/desert
-	name = "\improper desert"
-	desc = "A stretch of desert."
-	icon = 'icons/turf/f13desert.dmi'
-	icon_state = "wasteland1"
-
-	archdrops = list(/obj/item/stack/ore/glass = list(ARCH_PROB = 100,ARCH_MAXDROP = 5)) //sand
-	var/obj/structure/flora/turfPlant = null
-	slowdown = 2
-	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
-	var/pit_sand = 2
-	var/storedindex = 0			//amount of stored items
-	var/mob/living/gravebody	//is there a body in the pit?
-	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
-	var/pitcontents = list()
-	var/obj/dugpit/mypit
-	var/unburylevel = 0
-
-/turf/open/floor/plating/f13/outside/desert/Initialize()
-	. = ..()
-	icon_state = "wasteland[rand(1,31)]"
-	//If no fences, machines (soil patches are machines), etc. try to plant grass
-	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
-		plantGrass()
-
-//Pass PlantForce for admin stuff I guess?
-/turf/open/floor/plating/f13/outside/desert/proc/plantGrass(Plantforce = FALSE)
-	var/Weight = 0
-	var/randPlant = null
-
-	//spontaneously spawn grass
-	if(Plantforce || prob(GRASS_SPONTANEOUS))
-		randPlant = pickweight(LUSH_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
-		turfPlant = new randPlant(src)
-		. = TRUE //in case we ever need this to return if we spawned
-		return .
-
-	//loop through neighbouring desert turfs, if they have grass, then increase weight
-	for(var/turf/open/floor/plating/f13/outside/desert/T in RANGE_TURFS(3, src))
-		if(T.turfPlant)
-			Weight += GRASS_WEIGHT
-
-	//use weight to try to spawn grass
-	if(prob(Weight))
-
-		//If surrounded on 5+ sides, pick from lush
-		if(Weight == (5 * GRASS_WEIGHT))
-			randPlant = pickweight(LUSH_PLANT_SPAWN_LIST)
-		else
-			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST)
-		turfPlant = new randPlant(src)
-		. = TRUE
-
-//Make sure we delete the plant if we ever change turfs
-/turf/open/floor/plating/f13/outside/desert/ChangeTurf(path, new_baseturf, flags)
-	if(turfPlant)
-		qdel(turfPlant)
-	. =  ..()
-
-/turf/open/floor/plating/f13/outside/road
-	name = "\proper road"
-	desc = "A stretch of road."
-	icon = 'icons/turf/f13road.dmi'
-	icon_state = "outermiddle"
-
-// Rooftops, enjoy
-
-/turf/open/floor/plating/f13/outside/roof
-	name = "\proper rooftop"
-	desc = "It's a roof. What more do you want?"
-	icon = 'icons/turf/f13rooftop.dmi'
-	icon_state = "brick_1"
-
-/turf/open/floor/plating/f13/outside/roof/red
-	icon_state = "brick_r"
-
-/turf/open/floor/plating/f13/outside/roof/blue
-	icon_state = "brick_b"
-
-/turf/open/floor/plating/f13/outside/roof/metal
-	name = "\proper metal roof"
-	icon_state = "rust_1"
-
-/turf/open/floor/plating/f13/outside/roof/metal/verdigris
-	icon_state = "rust_c"
-
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated
-	icon_state = "shingles_1"
-
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated/red
-	icon_state = "shingles_r"
-
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated/green
-	icon_state = "shingles_g"
-
-/turf/open/floor/plating/f13/outside/roof/wood
-	name = "\proper wooden roof"
-	icon_state = "wood_1"
-
-/turf/open/floor/plating/f13/outside/roof/wood/old
-	icon_state = "wood_2"
-
 //New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
 
 /turf/open/floor/wood/f13
@@ -258,7 +130,7 @@
 /turf/open/floor/plating/f13/inside/mountain
 	name = "mountain"
 	desc = "Damp cave flooring."
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "mountain0"
 	var/obj/structure/flora/turfPlant = null
 
@@ -279,7 +151,7 @@
 
 /turf/open/floor/plasteel/f13/vault_floor
 	name = "vault floor"
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "vault_floor"
 	planetary_atmos = FALSE // They're _inside_ a vault.
 
@@ -538,7 +410,7 @@
 
 
 /turf/open/floor/circuit/f13_blue
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "bcircuit2"
 	icon_normal = "bcircuit2"
 
@@ -547,7 +419,7 @@
 	on = FALSE
 
 /turf/open/floor/circuit/f13_green
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "gcircuit2"
 	icon_normal = "gcircuit2"
 	light_color = LIGHT_COLOR_GREEN
@@ -558,7 +430,7 @@
 	on = FALSE
 
 /turf/open/floor/circuit/f13_red
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "rcircuit1"
 	icon_normal = "rcircuit1"
 	light_color = LIGHT_COLOR_FLARE

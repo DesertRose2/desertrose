@@ -95,12 +95,12 @@
 	slowdown = 0.25
 	strip_delay = 10
 
-/obj/item/clothing/suit/armor/fluff/metalarmor/Initialize()
+/obj/item/clothing/suit/armor/f13/metalarmor/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
 
-/obj/item/clothing/suit/armor/fluff/metalarmor/Destroy()
+/obj/item/clothing/suit/armor/f13/metalarmor/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
@@ -539,7 +539,7 @@
 
 //Various
 
-/obj/item/clothing/suit/armor/tesla //changed from armor/laserproof
+/obj/item/clothing/suit/armor/f13/tesla //changed from armor/laserproof
 	name = "tesla armor"
 	desc = "(V) A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Has a chance to deflect energy projectiles."
 	icon_state = "tesla_armor"
@@ -550,7 +550,7 @@
 	var/hit_reflect_chance = 20
 	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
-/obj/item/clothing/suit/armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+/obj/item/clothing/suit/armor/f13/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
 		if(prob(hit_reflect_chance))
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
@@ -685,7 +685,7 @@
 	equip_delay_other = 50
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
-/obj/item/clothing/suit/armor/bone
+/obj/item/clothing/suit/armor/f13/bone
 	name = "bone armor"
 	desc = "(III) A tribal armor plate, crafted from animal bone."
 	icon_state = "bonearmor"
@@ -699,7 +699,7 @@
 						"Alternative New" = "hbonearmor"
 						)
 
-/obj/item/clothing/suit/armor/bone/Initialize()
+/obj/item/clothing/suit/armor/f13/bone/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -945,65 +945,6 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-//THE GRAVEYARD
-//UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
-//IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
-
-/obj/item/clothing/suit/armor/warriors
-	name = "warriors armored vest"
-	desc = "The symbol of the greatest gangers."
-	icon_state = "warriors"
-	item_state = "warriors"
-
-/obj/item/clothing/suit/armor/f13/harbingermantle
-	name = "Harbinger's Mantle"
-	desc = "(VII) An eerie, silken cloth that seems to be dripping with a thick mist. It is in truth a high-tech stealth device that allows for psionic amplification. The capacitors and manipulators in it utilise quantum technology and are highly volatile."
-	icon_state = "scloak"
-	item_state = "scloak"
-	armor = list("tier" = 7, "energy" = 55, "bomb" = 45, "bio" = 45, "rad" = 45, "fire" = 45, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/ghostechoe
-	name = "tattered peace coat"
-	desc = "(II) An old coat belonging to a Desert Ranger once. It has been stripped of most useful protection, and has seen better days. A crude peace symbol has been painted on the back in white."
-	icon_state = "ghostechoe"
-	item_state = "ghostechoe"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/cyberpunk
-	name = "armored trenchcoat"
-	desc = "A trenchcoat augmented with a special alloy for some protection and style."
-	icon_state = "jensencoat"
-	item_state = "jensencoat"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
-	resistance_flags = UNACIDABLE
-	strip_delay = 30
-	icon = 'icons/fallout/clothing/suits.dmi'
-
-/obj/item/clothing/suit/armor/f13/doom
-	name = "green chestplate"
-	desc = "(V) An odd green chestplate.<br>It's lightweight and strangely comfortable."
-	icon_state = "praetor"
-	item_state = "g_suit"
-	armor = list("tier" = 5, "energy" = 30, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 30)
-	resistance_flags = UNACIDABLE
-	strip_delay = 10
-	icon = 'icons/fallout/clothing/suits.dmi'
-
-/obj/item/clothing/suit/armor/f13/scoutarmor
-	name = "light scout armor"
-	desc = "(VI) A prewar design for lightweight, battle-ready armor designed to be easily used in the field or in reconnaissance situations where mobility is required."
-	icon_state = "scout_armor_lt"
-	item_state = "scout_armor_lt"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/reconarmor
-	name = "recon armor"
-	desc = "(VI) An old military grade pre war combat armor. It's well-fitted for good all-around protection."
-	icon_state = "recon_armor"
-	item_state = "recon_armor"
-	armor = list("tier" = 6, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	icon = 'icons/fallout/clothing/suits.dmi'
-
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive
 	name = "Chicken Coop jacket"
 	desc = "A driving jacket with an insignia of a chicken egg. Appropriate for masquerades and homicidal revenge both (clawhammer and mask not included)."
@@ -1064,23 +1005,15 @@
 	icon_state = "mutie_knight"
 	item_state = "mutie_knight"
 
-/obj/item/clothing/suit/hooded/mutie/poncho
-	name = "hooded mutant poncho"
-	desc = "(IV) An oversized poncho with a hood of some description, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
-	icon_state = "mutie_weathered_poncho"
-	item_state = "mutie_weathered_poncho"
-	hoodtype = /obj/item/clothing/head/hooded/muite/poncho
-
-/obj/item/clothing/head/hooded/muite/poncho
-	name = "mutant poncho hood"
-	icon_state = "mutie_weathered_poncho_hood"
-	desc = "(IV) A protective & concealing hood, stitched onto a poncho."
-	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	flags_inv = HIDEEYES
-
 /obj/item/clothing/suit/armor/f13/combat/marine/legion/centurion
 	name = "Ptolemaic combat armor"
 	desc = "(VII) An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. This one is adorned with red robes, a red chest with a golden bull, a red tabard, and a faded cape. It has been furthermore lavishly and overindulgently decorated, with gold-leaf plating, crude, stylized carvings of the Legion Bull, and a ludicrous, gilded codpiece."
 	icon_state = "ptolemaic_armor"
 	item_state = "ptolemaic_armor"
 	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+
+/obj/item/clothing/suit/armor/f13/vest/trench
+	name = "followers trenchcoat"
+	desc = "(IV) A grey and which trench coat with dark blue highlights, on the sides and back it has the unique symbol of the followers. Under said coat is an armor vest, perfect for light weight protection."
+	icon_state = "followerstrench"
+	item_state = "followerstrench"

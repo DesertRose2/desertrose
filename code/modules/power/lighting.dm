@@ -841,7 +841,7 @@
 //F13 EDIT
 /obj/machinery/light/lampost
 	name = "light post"
-	icon = 'icons/obj/f13lamppost.dmi'
+	icon = 'icons/fallout/objects/f13lamppost.dmi'
 	icon_state = "lamppost0"
 	base_state = "lamppost1"
 	desc = "a post supporting a usually outdoor lamp or lantern."

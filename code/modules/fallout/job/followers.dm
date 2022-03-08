@@ -187,7 +187,7 @@ Practitioner
 	gloves = 	/obj/item/clothing/gloves/color/latex/nitrile
 	glasses = 	/obj/item/clothing/glasses/hud/health
 	backpack_contents = list(
-		/obj/item/clothing/suit/hooded/surgical=1,
+		/obj/item/clothing/suit/hooded/f13/surgical=1,
 		/obj/item/reagent_containers/medspray/synthflesh=1,
 		/obj/item/healthanalyzer/advanced=1,)
 

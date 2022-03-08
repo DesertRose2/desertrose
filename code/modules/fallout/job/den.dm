@@ -564,7 +564,7 @@ Mayor
 
 /datum/outfit/loadout/bum
 	name = "Bum"
-	mask = /obj/item/clothing/mask/facewrap
+	mask = /obj/item/clothing/mask/f13/facewrap
 	neck = /obj/item/clothing/neck/mantle/poncho
 	uniform = /obj/item/clothing/under/f13/rag
 	gloves = /obj/item/clothing/gloves/f13/handwraps
@@ -694,7 +694,7 @@ Mayor
 	name = "Classy"
 	head = /obj/item/clothing/head/collectable/tophat
 	glasses = /obj/item/clothing/glasses/monocle
-	uniform = /obj/item/clothing/under/suit_jacket/charcoal
+	uniform = /obj/item/clothing/under/suit/charcoal
 	suit = /obj/item/clothing/suit/f13/banker
 	gloves = /obj/item/clothing/gloves/color/white/redcoat
 	shoes = /obj/item/clothing/shoes/laceup

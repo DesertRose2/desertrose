@@ -45,7 +45,7 @@
 	satchel = 		/obj/item/storage/backpack/satchel/explorer
 	uniform = 		/obj/item/clothing/under/f13/legskirt
 	shoes = 		/obj/item/clothing/shoes/f13/military/plated
-	gloves =		/obj/item/clothing/gloves/legion
+	gloves =		/obj/item/clothing/gloves/f13/legion
 	box = 			/obj/item/storage/survivalkit_tribal
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -226,9 +226,9 @@ Centurion
 	name = "Legion Centurion"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
-	mask =			/obj/item/clothing/mask/bandana/legcenturion
+	mask =			/obj/item/clothing/mask/bandana/f13/legcenturion
 	neck =			/obj/item/storage/belt/holster
-	glasses = 		/obj/item/clothing/glasses/legionpolarizing
+	glasses = 		/obj/item/clothing/glasses/f13/legionpolarizing
 	ears = 			/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -307,7 +307,7 @@ Vexillarius
 	id = 			/obj/item/card/id/dogtag/legveteran
 	neck =			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/vexil
-	glasses = 		/obj/item/clothing/glasses/legionpolarizing
+	glasses = 		/obj/item/clothing/glasses/f13/legionpolarizing
 	ears = 			/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -379,9 +379,9 @@ Decanii
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/decan
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/decan
-	mask =			/obj/item/clothing/mask/bandana/legvet/decan
+	mask =			/obj/item/clothing/mask/bandana/f13/legvet/decan
 	neck =			/obj/item/storage/belt/holster/ranger45
-	glasses = 		/obj/item/clothing/glasses/legionpolarizing
+	glasses = 		/obj/item/clothing/glasses/f13/legionpolarizing
 	ears = 			/obj/item/radio/headset/headset_legion
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
@@ -448,9 +448,9 @@ Decanii
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit =			/obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head =			/obj/item/clothing/head/helmet/f13/legion/prime/decan
-	mask =			/obj/item/clothing/mask/bandana/legprime/decan
+	mask =			/obj/item/clothing/mask/bandana/f13/legprime/decan
 	neck =			/obj/item/storage/belt/holster
-	glasses = 		/obj/item/clothing/glasses/legiongoggles/shielded
+	glasses = 		/obj/item/clothing/glasses/f13/legiongoggles/shielded
 	ears = 			/obj/item/radio/headset/headset_legion
 	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
@@ -524,9 +524,9 @@ Decanii
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit/decan
-	mask =			/obj/item/clothing/mask/bandana/legrecruit/decan
+	mask =			/obj/item/clothing/mask/bandana/f13/legrecruit/decan
 	neck =			/obj/item/storage/belt/holster
-	glasses = 		/obj/item/clothing/glasses/legiongoggles
+	glasses = 		/obj/item/clothing/glasses/f13/legiongoggles
 	ears = 			/obj/item/radio/headset/headset_legion
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -595,7 +595,7 @@ Camp Prefect (formerly slave master)
 	head = 			/obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
 	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/combat/auto5
-	glasses = 		/obj/item/clothing/glasses/legiongoggles/shielded
+	glasses = 		/obj/item/clothing/glasses/f13/legiongoggles/shielded
 	ears =			/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -641,7 +641,7 @@ Libritor
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/legion
 	suit_store = 	/obj/item/gun/ballistic/automatic/bar
 	neck			= /obj/item/storage/belt/holster
-	glasses			= /obj/item/clothing/glasses/legiongoggles
+	glasses			= /obj/item/clothing/glasses/f13/legiongoggles
 	ears			= /obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -650,7 +650,7 @@ Libritor
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/ammo_box/magazine/m762=2,
 		/obj/item/storage/bag/money/small/legofficers=1,
-		/obj/item/clothing/accessory/legion/prime=1
+		/obj/item/clothing/accessory/f13/legion/prime=1
 	)
 
 /*
@@ -686,11 +686,11 @@ Veteran Legionary
 	name = "Veteran Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vetlegionary
 	id = 			/obj/item/card/id/dogtag/legveteran
-	mask =			/obj/item/clothing/mask/bandana/legvet
+	mask =			/obj/item/clothing/mask/bandana/f13/legvet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
 	neck = 			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
-	glasses = 		/obj/item/clothing/glasses/legiongoggles/shielded
+	glasses = 		/obj/item/clothing/glasses/f13/legiongoggles/shielded
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -773,11 +773,11 @@ Prime Legionairy
 	name = "Prime Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	id				= /obj/item/card/id/dogtag/legprime
-	mask			= /obj/item/clothing/mask/bandana/legprime
+	mask			= /obj/item/clothing/mask/bandana/f13/legprime
 	head			= /obj/item/clothing/head/helmet/f13/legion/prime
 	neck			= /obj/item/storage/belt/holster
 	suit			= /obj/item/clothing/suit/armor/f13/legion/prime
-	glasses			= /obj/item/clothing/glasses/legiongoggles
+	glasses			= /obj/item/clothing/glasses/f13/legiongoggles
 	ears			= /obj/item/radio/headset/headset_legion
 	r_pocket 		=/obj/item/restraints/handcuffs
 	l_pocket		= /obj/item/flashlight/lantern
@@ -842,8 +842,8 @@ Recruit Legionary
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	id = 			/obj/item/card/id/dogtag/legrecruit
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
-	mask =			/obj/item/clothing/mask/bandana/legrecruit
-	glasses = 		/obj/item/clothing/glasses/legiongoggles
+	mask =			/obj/item/clothing/mask/bandana/f13/legrecruit
+	glasses = 		/obj/item/clothing/glasses/f13/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
 	l_pocket = 		/obj/item/flashlight/lantern
@@ -915,7 +915,7 @@ Venator
 	id 			= 	/obj/item/card/id/dogtag/legvenator
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/venator
 	head 		= 	/obj/item/clothing/head/helmet/f13/legion/venator
-	mask 		=	/obj/item/clothing/mask/bandana/legvenator
+	mask 		=	/obj/item/clothing/mask/bandana/f13/legvenator
 	neck 		=	/obj/item/storage/belt/holster
 	glasses 	= 	/obj/item/clothing/glasses/night
 	ears		=	/obj/item/radio/headset/headset_legion
@@ -979,8 +979,8 @@ Explorer
 	jobtype 	= 	/datum/job/CaesarsLegion/Legionnaire/f13explorer
 	id			= 	/obj/item/card/id/dogtag/legexplorer
 	head		= 	/obj/item/clothing/head/helmet/f13/legion/prime/explorer
-	glasses		= 	/obj/item/clothing/glasses/legiongoggles
-	mask		= 	/obj/item/clothing/mask/bandana/legexplorer
+	glasses		= 	/obj/item/clothing/glasses/f13/legiongoggles
+	mask		= 	/obj/item/clothing/mask/bandana/f13/legexplorer
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/prime/explorer
 	neck 		= 	/obj/item/storage/belt/holster
 	ears		=	/obj/item/radio/headset/headset_legion
@@ -1133,7 +1133,7 @@ Camp Follower
 	uniform = 	/obj/item/clothing/under/f13/campfollowermale
 	id =		/obj/item/card/id/dogtag/legfollower
 	ears = 		/obj/item/radio/headset/headset_legion
-	gloves =	/obj/item/clothing/gloves/legion
+	gloves =	/obj/item/clothing/gloves/f13/legion
 
 /datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1173,7 +1173,7 @@ Camp Follower
 /datum/outfit/loadout/campfolloweroffduty
 	name = "Retired Legionary"
 	uniform =	/obj/item/clothing/under/f13/legskirt
-	mask =		/obj/item/clothing/mask/bandana/oldredbandana
+	mask =		/obj/item/clothing/mask/bandana/f13/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete=1,
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
@@ -1261,29 +1261,29 @@ Off-Duty Legionary
 
 /datum/outfit/loadout/offcent
 	name =	"Centurion"
-	neck =	/obj/item/clothing/mask/bandana/legcenturion
+	neck =	/obj/item/clothing/mask/bandana/f13/legcenturion
 	belt =	/obj/item/claymore/machete/spatha
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice=2,
-		/obj/item/clothing/accessory/legion/cent=1
+		/obj/item/clothing/accessory/f13/legion/cent=1
 		)
 
 /datum/outfit/loadout/offdecvet
 	name = 	"Decani or Veteran"
-	mask =	/obj/item/clothing/mask/bandana/oldredbandana
+	mask =	/obj/item/clothing/mask/bandana/f13/oldredbandana
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
-		/obj/item/clothing/accessory/legion/officer=1
+		/obj/item/clothing/accessory/f13/legion/officer=1
 		)
 
 /datum/outfit/loadout/offprime
 	name =	"Prime"
-	mask =	/obj/item/clothing/mask/bandana/legdecan
+	mask =	/obj/item/clothing/mask/bandana/f13/legdecan
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1,
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
-		/obj/item/clothing/accessory/legion/prime=1
+		/obj/item/clothing/accessory/f13/legion/prime=1
 		)
 
 /datum/outfit/loadout/offexpven
@@ -1292,5 +1292,5 @@ Off-Duty Legionary
 	backpack_contents = list(
 		/obj/item/claymore/machete/gladius=1,
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice=1,
-		/obj/item/clothing/accessory/legion/explorer=1
+		/obj/item/clothing/accessory/f13/legion/explorer=1
 		)

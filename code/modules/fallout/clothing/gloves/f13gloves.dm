@@ -1,4 +1,4 @@
-/obj/item/clothing/gloves/f13
+/obj/item/clothing/gloves/f13/f13
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 10, rad = 10, fire = 10, acid = 10)
 
 /obj/item/clothing/gloves/f13/baseball
@@ -122,3 +122,51 @@
 	desc = "(IV) See this? It's a sign to move on."
 	icon_state = "mutie_bracer_sign"
 	item_state = "mutie_bracer_sign"
+
+/obj/item/clothing/gloves/f13/patrol
+	name = "patrol ranger gloves"
+	desc = "A pair of ranger's gloves. The right thumb and finger have been removed to not impair the wearer's shooting ability."
+	icon_state = "patrol"
+	item_state = "patrol"
+	item_color = null	//So they don't wash.
+	transfer_prints = TRUE
+	strip_delay = 40
+	equip_delay_other = 20
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
+
+/obj/item/clothing/gloves/f13/patrol/insulated
+	name = "insulated patrol ranger gloves"
+	desc = "A pair of ranger's gloves. This pair is protected against electrical shocks."
+	siemens_coefficient = 0
+
+/obj/item/clothing/gloves/f13/modif_patrol
+	name = "modified patrol ranger gloves"
+	desc = "A pair of ranger's gloves. These ones have been enlongated, protecting the elbow as well."
+	icon_state = "patrol"
+	item_state = "modif_patrol"
+	item_color = null	//So they don't wash.
+	transfer_prints = TRUE
+	strip_delay = 40
+	equip_delay_other = 20
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
+
+/obj/item/clothing/gloves/f13/patrol/burned
+	name = "wrapped patrol ranger gloves"
+	desc = "A pair of ranger's gloves. One of the gloves was replaced with a bandage."
+	icon_state = "burned"
+	item_state = "burned"
+	item_color = null	//So they don't wash.
+
+/obj/item/clothing/gloves/f13/rifleman
+	name = "rifleman gloves"
+	desc = "A pair of rifleman's gloves. The thumb and finger have been removed to not impair the wearer's shooting ability."
+	icon_state = "rifleman"
+	item_state = "rifleman"
+	item_color = null	//So they don't wash.
+	transfer_prints = TRUE
+	strip_delay = 40
+	equip_delay_other = 20
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT

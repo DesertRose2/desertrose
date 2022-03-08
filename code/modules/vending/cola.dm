@@ -1,7 +1,7 @@
 
 /obj/machinery/vending/cola
 	name = "\improper Robust Softdrinks"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	desc = "A softdrink vendor."
 	icon_state = "nuka_vending"
 	product_slogans = "Take the leap... enjoy a Quantum!"

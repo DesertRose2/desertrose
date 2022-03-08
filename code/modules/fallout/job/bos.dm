@@ -80,7 +80,7 @@ Elder
 	uniform =		/obj/item/clothing/under/f13/bos/fatigues
 	suit = 			/obj/item/clothing/suit/f13/elder
 	glasses =       /obj/item/clothing/glasses/night
-	accessory = 	/obj/item/clothing/accessory/bos/elder
+	accessory = 	/obj/item/clothing/accessory/f13/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/laer
 	neck =			/obj/item/clothing/neck/mantle/bos/right
 	backpack_contents = list(
@@ -132,7 +132,7 @@ Head Paladin
 	name = "Head Paladin"
 	jobtype = /datum/job/bos/f13sentinel
 	uniform = 		/obj/item/clothing/under/f13/recon
-	accessory = 	/obj/item/clothing/accessory/bos/sentinel
+	accessory = 	/obj/item/clothing/accessory/f13/bos/sentinel
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	belt =			/obj/item/storage/belt/military/assault
@@ -212,7 +212,7 @@ Head Scribe
 	jobtype = /datum/job/bos/f13headscribe
 	chemwhiz = TRUE
 	uniform = 		/obj/item/clothing/under/f13/bos/bodysuit/scribe
-	accessory = 	/obj/item/clothing/accessory/bos/headscribe
+	accessory = 	/obj/item/clothing/accessory/f13/bos/headscribe
 	glasses =       /obj/item/clothing/glasses/night
 	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
 	id = 			/obj/item/card/id/dogtag
@@ -294,7 +294,7 @@ Knight Captain
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
-	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
+	accessory = 	/obj/item/clothing/accessory/f13/bos/knightcaptain
 	belt = 			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	id = 			/obj/item/card/id/dogtag
@@ -379,7 +379,7 @@ Senior Paladin
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	glasses =       /obj/item/clothing/glasses/night
-	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
+	accessory = 	/obj/item/clothing/accessory/f13/bos/seniorpaladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military/assault
@@ -472,7 +472,7 @@ Paladin
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
 		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/clothing/accessory/bos/juniorpaladin=1
+		/obj/item/clothing/accessory/f13/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinb
@@ -482,7 +482,7 @@ Paladin
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
-		/obj/item/clothing/accessory/bos/juniorpaladin=1
+		/obj/item/clothing/accessory/f13/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/paladinc
@@ -490,7 +490,7 @@ Paladin
 	backpack_contents = list(
 		/obj/item/melee/powerfist=1,
 		/obj/item/book/granter/trait/big_leagues=1,
-		/obj/item/clothing/accessory/bos/paladin=1
+		/obj/item/clothing/accessory/f13/bos/paladin=1
 		)
 
 /datum/outfit/loadout/paladind
@@ -500,7 +500,7 @@ Paladin
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/grenade/smokebomb=1,
 		/obj/item/binoculars=1,
-		/obj/item/clothing/accessory/bos/paladin=1
+		/obj/item/clothing/accessory/f13/bos/paladin=1
 		)
 
 /*
@@ -548,7 +548,7 @@ Proctor
 	chemwhiz = TRUE
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/scribe
 	shoes = 		/obj/item/clothing/shoes/combat
-	accessory = 	/obj/item/clothing/accessory/bos/seniorscribe
+	accessory = 	/obj/item/clothing/accessory/f13/bos/seniorscribe
 	suit = 			/obj/item/clothing/suit/f13/seniorscribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
@@ -654,7 +654,7 @@ Scribe
 /datum/outfit/loadout/scribejsw
 	name = "Junior Sword Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/clothing/accessory/f13/bos/juniorscribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
@@ -664,7 +664,7 @@ Scribe
 /datum/outfit/loadout/scribesw
 	name = "Sword Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/clothing/accessory/f13/bos/scribe=1,
 		/obj/item/clothing/suit/toggle/labcoat/scribecoat=4,
 		/obj/item/advanced_crafting_components/lenses = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
@@ -674,7 +674,7 @@ Scribe
 /datum/outfit/loadout/scribejsh
 	name = "Junior Shield Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/clothing/accessory/f13/bos/juniorscribe=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/book/granter/trait/pa_wear=1,
 		/obj/item/storage/survivalkit_aid=1
@@ -683,7 +683,7 @@ Scribe
 /datum/outfit/loadout/scribesh
 	name = "Shield Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/clothing/accessory/f13/bos/scribe=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/book/granter/trait/pa_wear=1,
 		/obj/item/storage/survivalkit_aid=1
@@ -694,7 +694,7 @@ Scribe
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/clothing/accessory/bos/juniorscribe=1,
+		/obj/item/clothing/accessory/f13/bos/juniorscribe=1,
 		/obj/item/defibrillator/compact=1,
 		/obj/item/storage/survivalkit_aid_adv=1
 		)
@@ -705,7 +705,7 @@ Scribe
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/CMO=1,
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/clothing/accessory/bos/scribe=1,
+		/obj/item/clothing/accessory/f13/bos/scribe=1,
 		/obj/item/defibrillator/compact=1,
 		/obj/item/storage/survivalkit_aid_adv=1
 		)
@@ -741,7 +741,7 @@ Senior Knight
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
-	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
+	accessory = 	/obj/item/clothing/accessory/f13/bos/seniorknight
 	uniform =		/obj/item/clothing/under/f13/bos/bodysuit/knight
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military
@@ -861,7 +861,7 @@ Knight
 		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
-		/obj/item/clothing/accessory/bos/juniorknight=1
+		/obj/item/clothing/accessory/f13/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightb
@@ -874,7 +874,7 @@ Knight
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/clothing/accessory/bos/juniorknight=1
+		/obj/item/clothing/accessory/f13/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightc
@@ -889,7 +889,7 @@ Knight
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
 		/obj/item/clothing/glasses/sunglasses=1,
-		/obj/item/clothing/accessory/bos/juniorknight=1
+		/obj/item/clothing/accessory/f13/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/knightd
@@ -903,7 +903,7 @@ Knight
 		/obj/item/clothing/mask/gas/welding/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
-		/obj/item/clothing/accessory/bos/knight=1
+		/obj/item/clothing/accessory/f13/bos/knight=1
 		)
 
 /datum/outfit/loadout/knighte
@@ -916,7 +916,7 @@ Knight
 		/obj/item/clothing/glasses/night=1,
 		/obj/item/binoculars=1,
 		/obj/item/grenade/smokebomb=1,
-		/obj/item/clothing/accessory/bos/knight=1
+		/obj/item/clothing/accessory/f13/bos/knight=1
 		)
 
 /datum/outfit/loadout/knightf
@@ -931,7 +931,7 @@ Knight
 		/obj/item/reagent_containers/spray/pepper=1,
 		/obj/item/melee/classic_baton/telescopic=1,
 		/obj/item/clothing/glasses/sunglasses=1,
-		/obj/item/clothing/accessory/bos/knight=1
+		/obj/item/clothing/accessory/f13/bos/knight=1
 		)
 
 /*
@@ -979,7 +979,7 @@ Initiate
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
 		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/storage/toolbox/mechanical=1,
-		/obj/item/clothing/accessory/bos/initiateK=1
+		/obj/item/clothing/accessory/f13/bos/initiateK=1
 		)
 
 /datum/outfit/loadout/initiates
@@ -994,7 +994,7 @@ Initiate
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/lowsurgery=1,
-		/obj/item/clothing/accessory/bos/initiateS=1
+		/obj/item/clothing/accessory/f13/bos/initiateS=1
 		)
 
 /*
@@ -1084,71 +1084,71 @@ Off-Duty
 /datum/outfit/loadout/offa
 	name = "Junior Knight"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1
+		/obj/item/clothing/accessory/f13/bos/juniorknight=1
 		)
 
 /datum/outfit/loadout/offb
 	name = "Knight"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1
+		/obj/item/clothing/accessory/f13/bos/knight=1
 		)
 
 /datum/outfit/loadout/offc
 	name = "Senior Knight"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorknight=1
+		/obj/item/clothing/accessory/f13/bos/seniorknight=1
 		)
 
 /datum/outfit/loadout/offd
 	name = "Knight Captain"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knightcaptain=1
+		/obj/item/clothing/accessory/f13/bos/knightcaptain=1
 		)
 
 /datum/outfit/loadout/offe
 	name = "Junior Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorscribe=1
+		/obj/item/clothing/accessory/f13/bos/juniorscribe=1
 		)
 
 /datum/outfit/loadout/offf
 	name = "Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/scribe=1
+		/obj/item/clothing/accessory/f13/bos/scribe=1
 		)
 
 /datum/outfit/loadout/offg
 	name = "Senior Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorscribe=1
+		/obj/item/clothing/accessory/f13/bos/seniorscribe=1
 		)
 
 /datum/outfit/loadout/offh
 	name = "Head Scribe"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/headscribe=1
+		/obj/item/clothing/accessory/f13/bos/headscribe=1
 		)
 
 /datum/outfit/loadout/offi
 	name = "Junior Paladin"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorpaladin=1
+		/obj/item/clothing/accessory/f13/bos/juniorpaladin=1
 		)
 
 /datum/outfit/loadout/offj
 	name = "Paladin"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/paladin=1
+		/obj/item/clothing/accessory/f13/bos/paladin=1
 		)
 
 /datum/outfit/loadout/offk
 	name = "Senior Paladin"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorpaladin=1
+		/obj/item/clothing/accessory/f13/bos/seniorpaladin=1
 		)
 
 /datum/outfit/loadout/offl
 	name = "Head Paladin"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/sentinel=1
+		/obj/item/clothing/accessory/f13/bos/sentinel=1
 		)

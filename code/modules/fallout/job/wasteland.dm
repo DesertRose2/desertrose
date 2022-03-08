@@ -25,7 +25,7 @@ Coven Stuff
 	glasses = 		/obj/item/clothing/glasses/night
 	mask = 			/obj/item/clothing/mask/gas/syndicate
 	uniform =		/obj/item/clothing/under/syndicate/combat
-	suit = 			/obj/item/clothing/suit/hooded/cloak/goliath
+	suit = 			/obj/item/clothing/suit/hooded/f13/cloak/goliath
 	belt = 			/obj/item/storage/belt/military/army
 	shoes = 		/obj/item/clothing/shoes/plate/red
 	gloves = 		/obj/item/clothing/gloves/plate/red
@@ -281,7 +281,7 @@ Bandit
 		/obj/item/clothing/under/f13/raider_leather, \
 		/obj/item/clothing/under/f13/raiderrags, \
 		/obj/item/clothing/under/pants/f13/ghoul, \
-		/obj/item/clothing/under/jabroni)
+		/obj/item/clothing/under/costume/jabroni)
 	r_pocket = /obj/item/flashlight/flare
 	shoes = pick(
 			/obj/item/clothing/shoes/jackboots,\
@@ -394,7 +394,7 @@ Outlaw
 		/obj/item/clothing/under/f13/raider_leather, \
 		/obj/item/clothing/under/f13/raiderrags, \
 		/obj/item/clothing/under/pants/f13/ghoul, \
-		/obj/item/clothing/under/jabroni)
+		/obj/item/clothing/under/costume/jabroni)
 	suit = pick(
 		/obj/item/clothing/suit/armor/f13/raider/supafly,\
 		/obj/item/clothing/suit/armor/f13/raider/yankee, \
@@ -536,7 +536,7 @@ Outlaw
 	suit = /obj/item/clothing/suit/armor/f13/raider/leather_jacket
 	head = /obj/item/clothing/head/helmet/skull
 	shoes = /obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/jabroni
+	uniform = /obj/item/clothing/under/costume/jabroni
 	l_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun=3,
@@ -741,7 +741,7 @@ Outlaw
 	uniform = /obj/item/clothing/under/f13/brahmin
 	shoes = /obj/item/clothing/shoes/roman
 	head = /obj/item/clothing/head/scarecrow_hat
-	gloves = /obj/item/clothing/gloves/legion
+	gloves = /obj/item/clothing/gloves/f13/legion
 	l_hand = /obj/item/claymore/machete/gladius
 	backpack_contents = list(
 		/obj/item/shield/legion/buckler=1,
@@ -815,7 +815,7 @@ Outlaw
 	neck = /obj/item/clothing/neck/mantle/poncho
 	uniform = /obj/item/clothing/under/pants/f13/ghoul
 	shoes = /obj/item/clothing/shoes/sandal
-	mask = /obj/item/clothing/mask/facewrap
+	mask = /obj/item/clothing/mask/f13/facewrap
 	head = /obj/item/clothing/head/rice_hat
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	l_hand = /obj/item/claymore/machete/pipe/pan
@@ -838,7 +838,7 @@ Outlaw
 
 /datum/outfit/loadout/tribal
 	name = "Tribal"
-	suit = /obj/item/clothing/suit/hooded/cloak/desert
+	suit = /obj/item/clothing/suit/hooded/f13/cloak/desert
 	uniform = /obj/item/clothing/under/f13/raiderrags
 	shoes = /obj/item/clothing/shoes/f13/rag
 	head = /obj/item/clothing/head/f13/cowboy
@@ -886,7 +886,7 @@ Outlaw
 	shoes = /obj/item/clothing/shoes/f13/tan
 	head = /obj/item/clothing/head/flight
 	neck = /obj/item/storage/belt/holster/full
-	gloves = /obj/item/clothing/gloves/rifleman
+	gloves = /obj/item/clothing/gloves/f13/rifleman
 	backpack_contents = list(
 		/obj/item/lighter/fusion=1,
 		/obj/item/storage/fancy/cigarettes/cigpack_carp=1)
@@ -907,7 +907,7 @@ Outlaw
 /datum/outfit/loadout/trouper
 	name = "Trouper"
 	neck = /obj/item/clothing/neck/mantle/poncho/red
-	uniform = /obj/item/clothing/under/redeveninggown
+	uniform = /obj/item/clothing/under/dress/redeveninggown
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/widered
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/pistol22

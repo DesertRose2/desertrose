@@ -110,7 +110,7 @@
 					/obj/item/clothing/suit/toggle/labcoat/depjacket/med = 5,
 					/obj/item/clothing/shoes/sneakers/white = 5,
 					/obj/item/clothing/head/soft/emt = 5,
-					/obj/item/clothing/suit/hooded/surgical = 5,
+					/obj/item/clothing/suit/hooded/f13/surgical = 5,
 					/obj/item/clothing/mask/surgical = 5,
 					/obj/item/clothing/under/rank/medical/doctor/util = 5,
 					/obj/item/clothing/under/rank/medical/paramedic/red = 5,

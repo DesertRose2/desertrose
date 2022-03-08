@@ -64,7 +64,7 @@
 /datum/outfit/loadout/baron
 	name = "Baron"
 	backpack_contents = list(
-	/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak=1,)
+	/obj/item/clothing/suit/hooded/f13/cloak/desert/raven_cloak=1,)
 
 /datum/outfit/loadout/eldervaultie
 	name = "Elder Vaultie"
@@ -729,7 +729,7 @@
 	name = "Medical Professional"
 	backpack_contents = list(
 	/obj/item/autosurgeon/surgery=1,
-	/obj/item/clothing/suit/hooded/parka/medical=1,
+	/obj/item/clothing/suit/hooded/f13/parka/medical=1,
 	/obj/item/storage/firstaid/brute=1,
 	/obj/item/ammo_box/needleap = 2
 	)
@@ -926,7 +926,7 @@
 	name = "Dancer"
 	backpack_contents = list(
 	/obj/item/stack/f13Cash/caps = 20,
-	/obj/item/clothing/under/singery=1,
+	/obj/item/clothing/under/costume/singer/yellow=1,
 	/obj/item/clothing/shoes/singery=1,
 	/obj/item/gun/ballistic/revolver/colt6520=1
 	)

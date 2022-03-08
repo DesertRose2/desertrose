@@ -63,3 +63,27 @@
 	invis_view = SEE_INVISIBLE_MINIMUM
 //	flags = NODROP
 	glass_colour_type = /datum/client_colour/glass_colour/lightorange
+
+/obj/item/clothing/glasses/sunglasses/fakeblindfold
+	name = "priestess blindfold"
+	desc = "The coverings used to restrict the sight of the world, but see with the Sight of Mars."
+	icon_state = "legpriestess"
+	item_state = "legpriestess"
+
+/obj/item/clothing/glasses/sunglasses/fakeblindfold/equipped(mob/living/carbon/human/user, slot)
+	. = ..()
+	if(!ishuman(user) || user.job == "Priestess of Mars")
+		return
+	to_chat(user, "<span class='userdanger'>\"You want to be blind, do you?\"</span>")
+	user.dropItemToGround(src, TRUE)
+	user.Dizzy(30)
+	user.Knockdown(100)
+	user.blind_eyes(30)
+
+/obj/item/clothing/glasses/sunglasses/f13/protected
+	name = "prescription sunglasses"
+	desc = "A pair of tinted glasses to help prevent from the ever present sun and bright flashes."
+	icon = 'icons/fallout/clothing/glasses.dmi'
+	icon = 'icons/fallout/onmob/clothing/eyes.dmi'
+	icon_state = "presc_sun"
+	item_state = "presc_sun"

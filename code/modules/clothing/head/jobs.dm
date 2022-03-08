@@ -133,11 +133,6 @@
 	desc = "A black beret, perfect for war veterans and dark, brooding, anti-hero mimes."
 	icon_state = "beretblack"
 
-/obj/item/clothing/head/beret/headband
-	name = "red headband"
-	desc = "A red headband fashioned out of some tattered sleeves. The fabric is soaked in sweat, dirt and blood."
-	icon_state = "platedheadbandred"
-
 /obj/item/clothing/head/beret/purple
 	name = "purple beret"
 	desc = "A purple beret."

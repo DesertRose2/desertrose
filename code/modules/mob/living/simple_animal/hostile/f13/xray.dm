@@ -107,7 +107,7 @@
 	uniform = /obj/item/clothing/under/f13/dbdu
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/marine
 	shoes = /obj/item/clothing/shoes/f13/military/leather
-	gloves = /obj/item/clothing/gloves/patrol
+	gloves = /obj/item/clothing/gloves/f13/patrol
 	id = /obj/item/card/id/rusted
 	belt = /obj/item/storage/belt/military/leather
 

@@ -466,13 +466,13 @@
 
 //Legion Goggles
 
-/obj/item/clothing/glasses/legiongoggles
+/obj/item/clothing/glasses/f13/legiongoggles
 	name = "sandstorm goggles"
 	desc = "Post-war makeshift protective goggles made by legion artisans."
 	icon_state = "legion"
 	item_state = "legion"
 
-/obj/item/clothing/glasses/legiongoggles/shielded
+/obj/item/clothing/glasses/f13/legiongoggles/shielded
 	name = "sandstorm goggles"
 	desc = "Post-war makeshift protective goggles made by legion artisans. These have anti-flash protection."
 	icon_state = "legion"
@@ -480,7 +480,7 @@
 	darkness_view = 1
 	flash_protect = 1
 
-/obj/item/clothing/glasses/legionpolarizing
+/obj/item/clothing/glasses/f13/legionpolarizing
 	name = "polarizing goggles"
 	desc = "Fancy goggles with rare polarizing glass, usually reserved for commanders due to rarity."
 	icon_state = "legpolarizing"
@@ -490,7 +490,7 @@
 
 //Legion Bandanas
 
-/obj/item/clothing/mask/bandana/auxilia
+/obj/item/clothing/mask/bandana/f13/auxilia
 	name = "auxilia bandana"
 	desc = "Simple black cloth intended for auxilia."
 	icon_state = "legaux"
@@ -499,7 +499,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legrecruit
+/obj/item/clothing/mask/bandana/f13/legrecruit
 	name = "recruit bandana"
 	desc = "A fine recruit bandana."
 	icon_state = "legrecruit"
@@ -508,7 +508,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legprime
+/obj/item/clothing/mask/bandana/f13/legprime
 	name = "prime bandana"
 	desc = "A fine prime bandana."
 	icon_state = "legdecan"
@@ -517,7 +517,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legvet
+/obj/item/clothing/mask/bandana/f13/legvet
 	name = "veteran bandana"
 	desc = "A fine veteran bandana."
 	icon_state = "legvet"
@@ -526,7 +526,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legexplorer
+/obj/item/clothing/mask/bandana/f13/legexplorer
 	name = "explorer facewrap"
 	desc = "A robust red explorer facewrap."
 	icon_state = "legexp"
@@ -535,7 +535,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legrecruit/decan
+/obj/item/clothing/mask/bandana/f13/legrecruit/decan
 	name = "recruit decanus bandana"
 	desc = "A fine recruit decanus bandana."
 	icon_state = "legrecruit"
@@ -544,7 +544,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legprime/decan
+/obj/item/clothing/mask/bandana/f13/legprime/decan
 	name = "prime decanus bandana"
 	desc = "A fine prime decanus bandana."
 	icon_state = "legdecan"
@@ -553,7 +553,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legvet/decan
+/obj/item/clothing/mask/bandana/f13/legvet/decan
 	name = "veteran decanus bandana"
 	desc = "A fine veteran decanus bandana."
 	icon_state = "legvet"
@@ -562,7 +562,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legvenator
+/obj/item/clothing/mask/bandana/f13/legvenator
 	name = "venator bandana"
 	desc = "A fine venator bandana."
 	icon_state = "legcenturion"
@@ -571,7 +571,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legcenturion
+/obj/item/clothing/mask/bandana/f13/legcenturion
 	name = "centurion bandana"
 	desc = "A fine centurion bandana."
 	icon_state = "legcenturion"
@@ -580,7 +580,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/momentobandana
+/obj/item/clothing/mask/bandana/f13/momentobandana
 	name = "momento bandana"
 	desc = "A bandana that serves the user as a reminder of the past."
 	icon_state = "momento"
@@ -589,7 +589,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/legdecan
+/obj/item/clothing/mask/bandana/f13/legdecan
 	name = "decanus bandana"
 	desc = "A fine decanus bandana."
 	icon_state = "legdecan"
@@ -598,7 +598,7 @@
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
 
-/obj/item/clothing/mask/bandana/oldredbandana
+/obj/item/clothing/mask/bandana/f13/oldredbandana
 	name = "old bandana"
 	desc = "A fine bandana."
 	icon_state = "legdecan"
@@ -609,7 +609,7 @@
 
 //Legion Gloves
 
-/obj/item/clothing/gloves/legion
+/obj/item/clothing/gloves/f13/legion
 	name = "leather gloves"
 	desc = "Fingerless leather gloves to improve grip worn by legionaires."
 	icon_state = "legion"
@@ -621,7 +621,7 @@
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 
-/obj/item/clothing/gloves/legion/plated
+/obj/item/clothing/gloves/f13/legion/plated
 	name = "metal gauntlet"
 	desc = "Leather gloves with metal reinforcement."
 	icon_state = "plated"
@@ -629,7 +629,7 @@
 	transfer_prints = FALSE
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 10)
 
-/obj/item/clothing/gloves/legion/legate
+/obj/item/clothing/gloves/f13/legion/legate
 	name = "brass gauntlets"
 	desc = "Heavy finely crafted metal gloves."
 	icon_state = "legionlegate"

@@ -101,7 +101,7 @@
 /obj/item/modkit/trenchcoatfollowers
 	name = "followers trenchcoat modkit"
 	target_items = list(/obj/item/clothing/suit/armor/vest)
-	result_item = /obj/item/clothing/suit/armor/vest/trench
+	result_item = /obj/item/clothing/suit/armor/f13/vest/trench
 
 /obj/item/modkit/patrolduster
 	name = "Patrol Duster modkit"
@@ -125,8 +125,8 @@
 
 /obj/item/modkit/birdarmor
 	name = "Salvaged claw cloak modkit"
-	target_items = list(/obj/item/clothing/suit/hooded/cloak/goliath)
-	result_item = /obj/item/clothing/suit/hooded/cloak/birdarmor
+	target_items = list(/obj/item/clothing/suit/hooded/f13/cloak/goliath)
+	result_item = /obj/item/clothing/suit/hooded/f13/cloak/birdarmor
 
 /obj/item/modkit/feuferarmor
 	name = "T-51b Reforged WBoS Body modkit"
@@ -292,7 +292,7 @@
 /obj/item/modkit/montanascarf
 	name = "Worn scout scarf modkit"
 	target_items = list(/obj/item/clothing/mask/gas/sechailer)
-	result_item = /obj/item/clothing/mask/gas/montana
+	result_item = /obj/item/clothing/mask/gas/f13/montana
 
 //Crusader Pistol Modkits
 

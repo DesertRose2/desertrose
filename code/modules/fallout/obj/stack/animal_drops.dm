@@ -196,7 +196,7 @@ GLOBAL_LIST_INIT(sinew_recipes, list ( \
 GLOBAL_LIST_INIT(bone_recipes, list(
 	new /datum/stack_recipe("Bone Dagger", /obj/item/kitchen/knife/combat/bone, 2, time = 20), \
 	new /datum/stack_recipe("Skull Helmet", /obj/item/clothing/head/helmet/skull, 4, time = 30), \
-	new /datum/stack_recipe("Bone Armor", /obj/item/clothing/suit/armor/bone, 6, time = 30)))
+	new /datum/stack_recipe("Bone Armor", /obj/item/clothing/suit/armor/f13/bone, 6, time = 30)))
 
 // Deathclaw claw
 /obj/item/stack/sheet/bone/claw

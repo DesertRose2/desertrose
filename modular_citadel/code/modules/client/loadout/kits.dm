@@ -52,7 +52,7 @@
 /obj/item/storage/box/large/custom_kit/piperrivera/PopulateContents()
 	new /obj/item/modkit/piper_hat(src)
 	new /obj/item/modkit/hoodedrecon(src)
-	new /obj/item/clothing/accessory/waistcoat/sheepskin(src)
+	new /obj/item/clothing/accessory/waistcoat/f13/sheepskin(src)
 	new /obj/item/clothing/under/f13/ranger/blue(src)
 	new /obj/item/clothing/shoes/f13/cowboy(src)
 
@@ -80,11 +80,11 @@
 //Sam Webb - thegreatcoward
 /obj/item/storage/box/large/custom_kit/samwebb/PopulateContents()
 	new /obj/item/clothing/head/beret/ncr(src)
-	new /obj/item/clothing/accessory/ncr/LT2(src)
+	new /obj/item/clothing/accessory/f13/ncr/LT2(src)
 
 //Wolf Emerson - seabass390
 /obj/item/storage/box/large/custom_kit/wolfemerson/PopulateContents()
-	new /obj/item/clothing/gloves/modif_patrol(src)
+	new /obj/item/clothing/gloves/f13/modif_patrol(src)
 	new /obj/item/clothing/under/f13/ranger/modif_ranger(src)
 	new /obj/item/modkit/wolfvest(src)
 
@@ -105,12 +105,12 @@
 //Tycho Siricus - seabass390
 /obj/item/storage/box/large/custom_kit/tychosiricus/PopulateContents()
 	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/clothing/head/beret/headband(src)
-	new /obj/item/clothing/mask/bandana/momentobandana(src)
+	new /obj/item/clothing/head/f13/beret/headband(src)
+	new /obj/item/clothing/mask/bandana/f13/momentobandana(src)
 
 //Yahir Pinney - murderfox
 /obj/item/storage/box/large/custom_kit/yahirpinney/PopulateContents()
-	new /obj/item/clothing/under/jabroni(src)
+	new /obj/item/clothing/under/costume/jabroni(src)
 	new /obj/item/clothing/head/welding/f13/fire(src)
 
 //Katharine Lamb - elizabethdame
@@ -130,8 +130,8 @@
 //Kainat Ali - muhsollini
 /obj/item/storage/box/large/custom_kit/kainatali/PopulateContents()
 	new /obj/item/clothing/under/f13/ncr/scout(src)
-	new /obj/item/clothing/gloves/patrol/burned(src)
-	new /obj/item/clothing/glasses/regular/protected(src)
+	new /obj/item/clothing/gloves/f13/patrol/burned(src)
+	new /obj/item/clothing/glasses/sunglasses/f13/protected(src)
 	new /obj/item/clothing/neck/mantle/ranger(src)
 	new /obj/item/modkit/kainatarmor(src)
 
@@ -144,7 +144,7 @@
 
 //Liz Holder - jaxterminator
 /obj/item/storage/box/large/custom_kit/lizholder/PopulateContents()
-	new /obj/item/clothing/suit/hooded/cloak/goliath/tatteredred(src)
+	new /obj/item/clothing/suit/hooded/f13/cloak/goliath/tatteredred(src)
 	new /obj/item/clothing/under/f13/female/mercadv(src)
 	new /obj/item/dildo/flared/huge(src)
 
@@ -252,11 +252,11 @@
 
 //Alice Dakota - muhsollini
 /obj/item/storage/box/large/custom_kit/alicedakota/PopulateContents()
-	new /obj/item/clothing/mask/rat/vaultboy(src)
+	new /obj/item/clothing/mask/f13/vaultboy(src)
 
 //Haidee Murphy - purplepineapple
 /obj/item/storage/box/large/custom_kit/haideemurphy/PopulateContents()
-	new /obj/item/clothing/mask/rat/redding(src)
+	new /obj/item/clothing/mask/f13/redding(src)
 
 //Aaron Cooper - wilsonmann55
 /obj/item/storage/box/large/custom_kit/aaroncooper/PopulateContents()
@@ -282,7 +282,7 @@
 
 //Citadel - arkadec
 /obj/item/storage/box/large/custom_kit/citadel/PopulateContents()
-	new /obj/item/clothing/mask/rat/citadel(src)
+	new /obj/item/clothing/mask/f13/citadel(src)
 
 //Blade - Sadokist
 /obj/item/storage/box/large/custom_kit/bladetalon/PopulateContents()
@@ -308,15 +308,15 @@
 	new /obj/item/clothing/head/helmet/f13/brahmincowboyhat(src)
 	new /obj/item/clothing/shoes/workboots/mining(src)
 	new /obj/item/storage/belt/military/alt(src)
-	new /obj/item/clothing/mask/bandana/oldredbandana(src)
-	new /obj/item/clothing/glasses/legiongoggles(src)
+	new /obj/item/clothing/mask/bandana/f13/oldredbandana(src)
+	new /obj/item/clothing/glasses/f13/legiongoggles(src)
 
 //Silver - muhsollini
 /obj/item/storage/box/large/custom_kit/silvertalon/PopulateContents()
 	new /obj/item/clothing/under/syndicate/skirt(src)
 	new /obj/item/modkit/talon(src)
-	new /obj/item/clothing/glasses/legiongoggles(src)
-	new /obj/item/clothing/mask/bandana/auxilia(src)
+	new /obj/item/clothing/glasses/f13/legiongoggles(src)
+	new /obj/item/clothing/mask/bandana/f13/auxilia(src)
 
 //Marine - saintsfan3324
 /obj/item/storage/box/large/custom_kit/marinetalon/PopulateContents()
@@ -324,7 +324,7 @@
 
 //Flagstaff - landoorando
 /obj/item/storage/box/large/custom_kit/flagstaff/PopulateContents()
-	new /obj/item/clothing/mask/rat/flagstaff(src)
+	new /obj/item/clothing/mask/f13/flagstaff(src)
 
 //Emily Winona - muhsollini
 /obj/item/storage/box/large/custom_kit/emilywinona/PopulateContents()
@@ -334,7 +334,7 @@
 	new /obj/item/clothing/mask/bandana/ranger(src)
 	new /obj/item/storage/belt/holster/hip(src)
 	new /obj/item/storage/belt/military/assault/ncr/crossbelt/reverse(src)
-	new /obj/item/clothing/accessory/waistcoat/cowboy(src)
+	new /obj/item/clothing/accessory/waistcoat/f13/cowboy(src)
 
 //Luti - spaceanglo
 /obj/item/storage/box/large/custom_kit/luti/PopulateContents()
@@ -346,10 +346,10 @@
 	new /obj/item/modkit/harebellscout(src)
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
-	new /obj/item/clothing/accessory/medal/californian_cross(src)
+	new /obj/item/clothing/accessory/medal/f13/californian_cross(src)
 	new /obj/item/clothing/suit/toggle/labcoat/f13/wanderer/drive(src)
-	new /obj/item/clothing/under/harebell_dress(src)
-	new /obj/item/clothing/under/flowerdress(src)
+	new /obj/item/clothing/under/dress/harebell(src)
+	new /obj/item/clothing/under/dress/flower(src)
 
 //Bartholomew The Apostle - pilotbland
 /obj/item/storage/box/large/custom_kit/bartholomewtheapostle/PopulateContents()

@@ -417,5 +417,5 @@
 	icon_state = "sepia"
 
 /turf/open/floor/plasteel/f13
-	icon = 'icons/turf/f13floors2.dmi'
+	icon = 'icons/fallout/turfs/f13floors2.dmi'
 	icon_state = "floor"

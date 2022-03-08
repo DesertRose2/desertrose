@@ -3,8 +3,8 @@
 /obj/item/clothing/neck/mantle
 	name = "mantle template"
 	desc = " worn in accessory slot, no concealing hood, decorative."
-	icon = 'icons/obj/clothing/mantles.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/mantle.dmi'
+	icon = 'icons/fallout/clothing/mantles.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/mantle.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = CHEST|ARMS
@@ -89,8 +89,6 @@
 /obj/item/clothing/neck/mantle/poncho/red
 	icon_state = "redponcho"
 
-
-
 //SS13 Cloaks
 /obj/item/clothing/neck/mantle/hos
 	name = "head of security's mantle"
@@ -163,7 +161,6 @@
 /obj/item/clothing/neck/mantle/polychromic/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, poly_colors, 3)
-
 
 /obj/item/clothing/neck/mantle/alt
 	name = "cloak"

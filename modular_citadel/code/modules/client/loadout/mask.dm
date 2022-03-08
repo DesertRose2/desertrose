@@ -59,5 +59,5 @@
 /datum/gear/mask/society
 	name = "Society mask"
 	subcategory = LOADOUT_SUBCATEGORY_MASK_MASKS
-	path = /obj/item/clothing/mask/society
+	path = /obj/item/clothing/mask/f13/society
 	cost = 15 // We live in a society - Lamasmaster

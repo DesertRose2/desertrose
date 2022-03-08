@@ -562,7 +562,7 @@
 /datum/gear/donator/rangercaptainpins
 	name = "Ranger-Captain Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ranger/CPT
+	path = /obj/item/clothing/accessory/f13/ranger/CPT
 	ckeywhitelist = list("superballs",
 						"shoi87",
 						"svenja",
@@ -573,7 +573,7 @@
 /datum/gear/donator/rangerlieutenantpins
 	name = "Ranger-Lieutenant Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ranger/LT
+	path = /obj/item/clothing/accessory/f13/ranger/LT
 	ckeywhitelist = list("allakai",
 						"shoi87",
 						"svenja",
@@ -597,7 +597,7 @@
 /datum/gear/donator/rangersergeantpins
 	name = "Ranger-Sergeant Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ranger/SGT
+	path = /obj/item/clothing/accessory/f13/ranger/SGT
 	ckeywhitelist = list("usotsukihime",
 						"seabass390",
 						"panzer1944",
@@ -613,7 +613,7 @@
 /datum/gear/donator/rangerpins
 	name = "Ranger Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ranger
+	path = /obj/item/clothing/accessory/f13/ranger
 	ckeywhitelist = list("pilotbland",
 						"poots13",
 						"panzer1944",
@@ -668,7 +668,7 @@
 /datum/gear/donator/captainpins
 	name = "NCR Captain Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ncr/CPT
+	path = /obj/item/clothing/accessory/f13/ncr/CPT
 	ckeywhitelist = list("gurking",
 						"totallyinnocent",
 						"thegreatcoward",
@@ -679,7 +679,7 @@
 /datum/gear/donator/ncrasgtpins
 	name = "NCR Sgt Pins"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/accessory/ncr/SGT
+	path = /obj/item/clothing/accessory/f13/ncr/SGT
 	ckeywhitelist = list("muhsollini",
 						"weaselburg")
 	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer", "NCR Heavy Trooper", "NCR Military Police")

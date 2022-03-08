@@ -56,7 +56,7 @@
 	new /obj/item/stack/medical/suture/medicated/fifteen(src)
 	new /obj/item/stack/medical/mesh/advanced(src)
 	new /obj/item/stack/medical/mesh/advanced(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak(src)
 	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/emergency

@@ -157,7 +157,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 /turf/closed/wall/mineral/concrete
 	name = "supermart wall"
 	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built."
-	icon = 'icons/turf/walls/f13superstore.dmi'
+	icon = 'icons/fallout/turfs/walls/f13superstore.dmi'
 	icon_state = "supermart"
 	icon_type_smooth = "supermart"
 	hardness = 90
@@ -206,7 +206,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 /turf/closed/wall/f13/store/constructed
 	name = "store wall"
 	desc = "A pre-War store wall made of solid concrete. This one looks newly built."
-	icon = 'icons/turf/walls/f13store.dmi'
+	icon = 'icons/fallout/turfs/walls/f13store.dmi'
 	icon_state = "store"
 	icon_type_smooth = "store"
 	hardness = 80

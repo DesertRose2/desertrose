@@ -12,7 +12,7 @@
 /turf/closed/wall/f13/ruins
 	name = "ruins"
 	desc = "All what has left from the good old days."
-	icon = 'icons/turf/walls/f13composite.dmi'
+	icon = 'icons/fallout/turfs/walls/f13composite.dmi'
 	icon_state = "ruins"
 	icon_type_smooth = "ruins"
 	hardness = 70
@@ -107,7 +107,7 @@
 /turf/closed/wall/f13/store
 	name = "store wall"
 	desc = "A pre-War store wall made of solid concrete."
-	icon = 'icons/turf/walls/f13store.dmi'
+	icon = 'icons/fallout/turfs/walls/f13store.dmi'
 	icon_state = "store"
 	icon_type_smooth = "store"
 	hardness = 80
@@ -135,7 +135,7 @@
 /turf/closed/wall/f13/supermart
 	name = "supermart wall"
 	desc = "A pre-War supermart wall made of reinforced concrete."
-	icon = 'icons/turf/walls/f13superstore.dmi'
+	icon = 'icons/fallout/turfs/walls/f13superstore.dmi'
 	icon_state = "supermart"
 	icon_type_smooth = "supermart"
 	hardness = 90

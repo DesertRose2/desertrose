@@ -664,19 +664,13 @@
 /datum/export/gear/bone_armor
 	cost = 50
 	unit_name = "bone armor"
-	export_types = list(/obj/item/clothing/suit/armor/bone)
+	export_types = list(/obj/item/clothing/suit/armor/f13/bone)
 	include_subtypes = TRUE
 
 /datum/export/gear/swat_armor
 	cost = 350
 	unit_name = "swat mki armor"
 	export_types = list(/obj/item/clothing/suit/space/swat)
-	include_subtypes = TRUE
-
-/datum/export/gear/dragon_armor
-	cost = 750
-	unit_name = "drake bone armor"
-	export_types = list(/obj/item/clothing/suit/hooded/cloak/drake)
 	include_subtypes = TRUE
 
 /datum/export/gear/commandamor
@@ -763,7 +757,7 @@
 /datum/export/gear/cloaksmining
 	cost = 90
 	unit_name = "lava land cloak"
-	export_types = list(/obj/item/clothing/suit/hooded/cloak/goliath)
+	export_types = list(/obj/item/clothing/suit/hooded/f13/cloak/goliath)
 	include_subtypes = TRUE
 
 /datum/export/gear/labcoats

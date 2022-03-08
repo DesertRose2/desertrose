@@ -217,8 +217,8 @@
 					/obj/item/clothing/shoes/sneakers/black = 5)
 	contraband = list(/obj/item/clothing/under/syndicate/tacticool = 1)
 
-	premium = list(/obj/item/clothing/under/suit_jacket/checkered = 1,
+	premium = list(/obj/item/clothing/under/suit/checkered = 1,
 					/obj/item/clothing/head/mailman = 1,
-					/obj/item/clothing/under/rank/mailman = 1,
+					/obj/item/clothing/under/misc/mailman = 1,
 					/obj/item/clothing/suit/jacket/leather = 1,
 					/obj/item/clothing/suit/jacket/leather/overcoat = 1)

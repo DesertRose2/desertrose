@@ -160,7 +160,7 @@
 /obj/structure/barricade/train
 	name = "train siding"
 	desc = "The side of an ancient train, the vehicles that tamed the West. Now, it's little more than an armoured coffin wall."
-	icon = 'icons/turf/walls/f13composite.dmi'
+	icon = 'icons/fallout/turfs/walls/f13composite.dmi'
 	icon_state = "trainwall"
 	icon_type_smooth = "trainwall"
 

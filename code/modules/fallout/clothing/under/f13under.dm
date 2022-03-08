@@ -1210,3 +1210,23 @@
 	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"
+
+//Sprite by Pisshole
+/obj/item/clothing/under/dress/harebell
+	name = "harebell dress"
+	desc = "A fancy, custom-sewn dress with burgundy color, a slight slit up the leg, and beautiful harebells."
+	icon_state = "harebell_dress"
+	item_state = "harebell_dress"
+	item_color = "harebell_dress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
+//Sprite edit by Pisshole
+/obj/item/clothing/under/dress/flower
+	name = "flower dress"
+	desc = "A fancy, custom-sewn dress in pale purples with a dark purple sash at the hip sewn with a variety of flowers and a billowing, full skirt."
+	icon_state = "flowerdress"
+	item_state = "flowerdress"
+	item_color = "flowerdress"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE

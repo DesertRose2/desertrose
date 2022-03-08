@@ -147,7 +147,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola
 	name = "Nuka-Cola"
 	desc = "The most popular flavored soft drink in the United States before the Great War."
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "nukacola"
 	list_reagents = list(/datum/reagent/consumable/nuka_cola = 25, /datum/reagent/radium = 5)
 	foodtype = SUGAR
@@ -160,7 +160,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/sunset
 	name = "Sunset Sarsparilla"
 	desc = "The most popular flavored root beer in the West!"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "sunset"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/sunset = 15, /datum/reagent/medicine/salglu_solution = 5)
 	foodtype = SUGAR
@@ -464,7 +464,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/bawls
 	name = "Balls Guarana"
 	desc = "To give you that Bounce!"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "bawls"
 	list_reagents = list(/datum/reagent/consumable/coffee = 10, /datum/reagent/consumable/bawls = 15)
 	foodtype = SUGAR
@@ -511,7 +511,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/vim
 	name = "Vim"
 	desc = "You've got Vim!"
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/f13vending.dmi'
 	icon_state = "vim"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/vim = 15)
 	foodtype = SUGAR

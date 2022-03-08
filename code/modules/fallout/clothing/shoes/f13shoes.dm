@@ -4,6 +4,8 @@
 	var/stepsound = TRUE
 */
 /obj/item/clothing/shoes/f13
+	icon = 'icons/fallout/clothing/shoes.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/feet.dmi'
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 
 /obj/item/clothing/shoes/f13/rag
@@ -209,3 +211,21 @@
 /obj/item/clothing/shoes/f13/mutie/boots/dark
 	icon_state = "mutie_boots_dark"
 	icon_state = "mutie_boots_dark"
+
+/obj/item/clothing/shoes/f13/thighboot
+	name = "thigh high boots"
+	desc = "A pair of black and blue boots that reach up to a person's thigh."
+	icon_state = "thigh_high"
+	item_state = "thigh_high"
+
+/obj/item/clothing/shoes/f13/thighboot/platform
+	name = "thigh high platform"
+	desc = "A pair of chunky platform heels that reach up to a person's thigh."
+	icon_state = "thigh_high_heel"
+	item_state = "thigh_high_heel"
+	offset = 2
+
+/obj/item/clothing/shoes/f13/swagshoes
+	name = "swag shoes"
+	desc = "They got me for my foams!"
+	icon_state = "SwagShoes"

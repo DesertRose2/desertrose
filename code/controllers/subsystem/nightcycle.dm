@@ -12,8 +12,7 @@
 #define CYCLE_NIGHTTIME 810000
 
 GLOBAL_LIST_INIT(nightcycle_turfs, typecacheof(list(
-	/turf/open/indestructible/ground/outside,
-	/turf/open/floor/plating/f13/outside)))
+	/turf/open/indestructible/ground/outside)))
 
 SUBSYSTEM_DEF(nightcycle)
 	name = "Day/Night Cycle"

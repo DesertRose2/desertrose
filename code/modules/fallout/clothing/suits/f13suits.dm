@@ -1,7 +1,7 @@
 //ARMOR, AND ALL PATREON/CUSTOM/DONOR STUFF (EVEN IF SUIT AND NOT ARMOR) TO GO INTO f13armor.dm
 /*FOR REFERENCE
 /obj/item/clothing/suit
-	icon = 'icons/obj/clothing/suits.dmi'
+	icon = 'icons/fallout/clothing/suits.dmi'
 	name = "suit"
 	block_priority = BLOCK_PRIORITY_WEAR_SUIT
 	var/fire_resist = T0C+100
@@ -43,12 +43,20 @@
 		M.update_inv_wear_suit()
 */
 
+/obj/item/clothing/suit/f13
+	icon = 'icons/fallout/clothing/suits.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suit.dmi'
+
+/obj/item/clothing/suit/hooded/f13
+	icon = 'icons/fallout/clothing/suits.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suit.dmi'
+
 //Fallout 50s
 /obj/item/clothing/suit/f13/vest
 	name = "tan vest"
 	desc = "(I) It's a vest made of tanned leather."
 	icon_state = "tanleather"
-	item_state = "det_suit"
+	item_state = "tanleather"
 	body_parts_covered = CHEST|GROIN|LEGS
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
@@ -98,7 +106,7 @@
 	name = "tan robe"
 	desc = "(I) Only a monk would find this robe nice and comfortable."
 	icon_state = "robe_liz"
-	item_state = "brownjsuit"
+	item_state = "robe_liz"
 	armor = list("tier" = 1)
 
 /obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
@@ -192,6 +200,10 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 //Fallout 13 toggle apparel directory
+/obj/item/clothing/suit/toggle/labcoat/f13 // why labcoat? idk, TODO: see if this needs a repath
+	icon = 'icons/fallout/clothing/suits.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suit.dmi'
+
 /obj/item/clothing/suit/toggle/labcoat/f13/emergency
 	name = "first responder jacket"
 	desc = "(I) A high-visibility jacket worn by medical first responders."
@@ -251,111 +263,91 @@
 	item_state = "labcoat"
 	armor = list("tier" = 2, "energy" = 10, "bomb" = 0, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 
-/obj/item/clothing/suit/hooded/cloak/desert
+/obj/item/clothing/suit/hooded/f13/cloak/desert
 	name = "desert cloak"
 	icon_state = "desertcloak"
 	desc = "(II) A practical cloak made out of animal hide."
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/desert
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/desert
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
-/obj/item/clothing/head/hooded/cloakhood/desert
+/obj/item/clothing/head/hooded/f13/cloakhood/desert
 	name = "desert cloak hood"
 	icon_state = "desertcloak"
 	desc = "(II) A protective and concealing hood."
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/suit/hooded/cloak/desert/raven_cloak
+/obj/item/clothing/suit/hooded/f13/cloak/desert/raven_cloak
 	name = "Raven cloak"
 	desc = "(II) A huge cloak made out of hundreds of knife-like black bird feathers. It glitters in the light, ranging from blue to dark green and purple."
 	icon_state = "raven_cloak"
 	item_state = "raven_cloak"
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/desert/raven_hood
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/desert/raven_hood
 
-/obj/item/clothing/head/hooded/cloakhood/desert/raven_hood
+/obj/item/clothing/head/hooded/f13/cloakhood/desert/raven_hood
 	name = "Raven cloak hood"
 	desc = "(II) A hood fashioned out of patchwork and feathers."
 	icon_state = "raven_hood"
 	item_state = "raven_hood"
 
-/obj/item/clothing/suit/hooded/cloak/goliath
+/obj/item/clothing/suit/hooded/f13/cloak/goliath
 	name = "deathclaw cloak"
 	icon_state = "clawsuitcloak"
 	desc = "(V) A staunch, practical cloak made out of sinew and skin from the fearsome deathclaw."
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 40, "bio" = 30, "rad" = 10, "fire" = 60, "acid" = 20)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/goliath
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
-/obj/item/clothing/head/hooded/cloakhood/goliath
+/obj/item/clothing/head/hooded/f13/cloakhood/goliath
 	name = "deathclaw cloak hood"
 	icon_state = "clawheadcloak"
 	desc = "(V) A protective & concealing hood."
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 60, "acid" = 20)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/suit/hooded/parka/medical
+/obj/item/clothing/suit/hooded/f13/parka/medical
 	name = "armored medical parka"
 	icon_state = "armormedical"
 	desc = "(III) A staunch, practical parka made out of a wind-breaking jacket, reinforced with metal plates."
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
-	hoodtype = /obj/item/clothing/head/hooded/parkahood/medical
+	hoodtype = /obj/item/clothing/head/hooded/f13/parkahood/medical
 
-/obj/item/clothing/head/hooded/parkahood/medical
+/obj/item/clothing/head/hooded/f13/parkahood/medical
 	name = "armored medical parka hood"
 	icon_state = "armorhoodmedical"
 	desc = "(III) A protective & concealing parka hood."
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/suit/hooded/parka/grey
+/obj/item/clothing/suit/hooded/f13/parka/grey
 	name = "grey armored parka"
 	icon_state = "armorgrey"
 	desc = "(III) A staunch, practical parka made out of a wind-breaking jacket, reinforced with metal plates."
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
-	hoodtype = /obj/item/clothing/head/hooded/parkahood/grey
+	hoodtype = /obj/item/clothing/head/hooded/f13/parkahood/grey
 
-/obj/item/clothing/head/hooded/parkahood/grey
+/obj/item/clothing/head/hooded/f13/parkahood/grey
 	name = "armored grey parka hood"
 	icon_state = "armorhoodgrey"
 	desc = "(III) A protective & concealing parka hood."
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/suit/hooded/cloak/goliath/tatteredred
+/obj/item/clothing/suit/hooded/f13/cloak/goliath/tatteredred
 	name = "tattered red cloak"
 	icon_state = "goliath_cloak"
 	desc = "(II) An old ragged, tattered red cloak that is covered in burns and bullet holes."
 	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath/tattered
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/goliath/tattered
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 
-/obj/item/clothing/head/hooded/cloakhood/goliath/tattered
+/obj/item/clothing/head/hooded/f13/cloakhood/goliath/tattered
 	name = "tattered red cloak hood"
 	icon_state = "golhood"
 	desc = "(II) A tattered hood, better than nothing in the waste."
 	armor = list("tier" = 2, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
-
-/obj/item/clothing/suit/hooded/cloak/drake //SS13 item, obviously
-	name = "drake armour"
-	icon_state = "dragon"
-	desc = "(V) A suit of armour fashioned from the remains of an ash drake."
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 70, "bio" = 60, "rad" = 50, "fire" = 100, "acid" = 100)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/drake
-	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-
-/obj/item/clothing/head/hooded/cloakhood/drake
-	name = "drake helm"
-	icon_state = "dragon"
-	desc = "(V) The skull of a dragon."
-	armor = list("tier" = 5, "energy" = 40, "bomb" = 70, "bio" = 60, "rad" = 50, "fire" = 100, "acid" = 100)
-	heat_protection = HEAD
-	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/suit/f13/jamrock
 	name = "disco-ass blazer"
@@ -364,18 +356,18 @@
 	item_state = "jamrock_blazer"
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
-/obj/item/clothing/suit/hooded/cloak/birdarmor
+/obj/item/clothing/suit/hooded/f13/cloak/birdarmor
 	name = "salvaged claw cloak"
 	icon_state = "birdarmor"
 	item_state = "birdarmor"
 	desc = "(V) An old cloak of Razorclaw armour, modified with a NCR armguard and a heavy looking shoulder piece, it looks like it has a lot of history."
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/birdhood
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/birdhood
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/head/hooded/cloakhood/birdhood
+/obj/item/clothing/head/hooded/f13/cloakhood/birdhood
 	name = "salvaged claw hood"
 	icon_state = "birdhood"
 	item_state = "birdhood"
@@ -383,3 +375,91 @@
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/suit/hooded/f13/surgical
+	name = "surgical scrubs"
+	desc = "A bundle with all the sterile clothing needed to perform safe surgery accoring to the standards set in the Followers' pamphlet on safe surgery. The shoe covers have grip surfaces to prevent slipping in the blood."
+	icon = 'icons/fallout/clothing/scrubs.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/scrub.dmi'
+	icon_state = "surgical_scrubs"
+	w_class = WEIGHT_CLASS_BULKY
+	strip_delay = 60
+	equip_delay_other = 60
+	hoodtype = /obj/item/clothing/head/hooded/f13/surgical
+	clothing_flags = NOSLIP
+	permeability_coefficient = 0.6
+	body_parts_covered = CHEST|GROIN|LEGS|FEET
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
+	armor = list("tier" = 0, "energy" = 0, "bomb" = 0, "bio" = 40, "rad" = 10, "fire" = 0, "acid" = 10)
+
+/obj/item/clothing/head/hooded/f13/surgical
+	name = "hair net"
+	desc = "It's not a good idea to risk hair falling into open wounds."
+	icon = 'icons/fallout/clothing/scrubs.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/scrub.dmi'
+	icon_state = "hood_surgical_scrubs"
+	item_state = "hood_surgical_scrubs"
+	flags_inv = HIDEHAIR
+	armor = list("tier" = 0, "energy" = 0, "bomb" = 0, "bio" = 40, "rad" = 10, "fire" = 0, "acid" = 10)
+
+/obj/item/clothing/suit/hooded/f13/mutie/poncho
+	name = "hooded mutant poncho"
+	desc = "(IV) An oversized poncho with a hood of some description, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
+	icon_state = "mutie_weathered_poncho"
+	item_state = "mutie_weathered_poncho"
+	hoodtype = /obj/item/clothing/head/hooded/f13/mutie/poncho
+
+/obj/item/clothing/head/hooded/f13/mutie/poncho
+	name = "mutant poncho hood"
+	icon_state = "mutie_weathered_poncho_hood"
+	desc = "(IV) A protective & concealing hood, stitched onto a poncho."
+	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	flags_inv = HIDEEYES
+
+/obj/item/clothing/under/suit/turtle/skirt
+	name = "turtleneck skirt"
+	desc = "A turtleneck sweater paired with a skirt."
+	icon_state = "blackturt_white_skirt"
+	item_state = "blackturt_white_skirt"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/suit/turtle/skirt/pink
+	name = "pink turtleneck skirt"
+	icon_state = "blackturt_pink_skirt"
+	item_state = "blackturt_pink_skirt"
+
+/obj/item/clothing/under/suit/turtle/skirt/pink/stripe
+	name = "turtleneck skirt"
+	icon_state = "blackturt_white_skirt_pink_stripe"
+	item_state = "blackturt_white_skirt_pink_stripe"
+
+/obj/item/clothing/under/suit/turtle/skirt/pencil
+	name = "turtleneck pencil skirt"
+	icon_state = "black_turt_alt_white_skirt"
+	item_state = "black_turt_alt_white_skirt"
+
+/obj/item/clothing/under/suit/turtle/skirt/grey
+	name = "grey turtleneck skirt"
+	icon_state = "greyturt_white_skirt"
+	item_state = "greyturt_white_skirt"
+
+/obj/item/clothing/under/suit/mutie
+	name = "oversized suit"
+	desc = "A decidedly oversized suit, one fit for a big green bastard."
+	icon_state = "mutie_suit"
+	item_state = "mutie_suit"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/suit/mutie/burgundy
+	icon_state = "mutie_burgundy_suit"
+	item_state = "mutie_burgundy_suit"
+
+/obj/item/clothing/under/suit/mutie/purple
+	icon_state = "mutie_purple_suit"
+	item_state = "mutie_purple_suit"
+
+/obj/item/clothing/under/suit/mutie/purple/pinstripe
+	desc = "A decidedly oversized suit, one fit for a big green bastard. This one has a tag that says 'Made in Texas'."
+	icon_state = "mutie_purple_suit"
+	item_state = "mutie_purple_suit"
+	can_adjust = TRUE
