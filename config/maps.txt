@@ -26,5 +26,4 @@ map vaultvalley
 	voteweight 0
 endmap
 map tipton
-	voteweight 0
 endmap

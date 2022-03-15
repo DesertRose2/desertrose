@@ -4261,6 +4261,17 @@
 	},
 /turf/open/water,
 /area/f13/caves)
+"eqo" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 16
+	},
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "Waster"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "eqC" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/inside/subway,
@@ -5093,6 +5104,10 @@
 	icon_state = "bar"
 	},
 /area/f13/bunker)
+"fek" = (
+/obj/structure/sign/warning,
+/turf/closed/wall/r_wall/rust,
+/area/f13/brotherhood)
 "feL" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -5546,6 +5561,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"fDy" = (
+/obj/structure/rack,
+/obj/item/pickaxe/drill,
+/obj/item/pickaxe/drill,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "fDY" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
@@ -6423,6 +6446,14 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
+"gwa" = (
+/obj/structure/rack,
+/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "gwm" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -9498,6 +9529,12 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
+"jrM" = (
+/obj/machinery/door/airlock/hatch{
+	req_access_txt = "120"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/brotherhood)
 "jrU" = (
 /obj/structure/disposalpipe/broken{
 	dir = 8
@@ -10493,6 +10530,14 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/sewer)
+"kyE" = (
+/obj/structure/rack,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "kzd" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/trash,
@@ -12155,6 +12200,11 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
+"lYp" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "lYF" = (
 /obj/structure/handrail/g_central{
 	dir = 1;
@@ -15874,6 +15924,10 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"pAN" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/turf/open/floor/plating/asteroid/snow/ice/icemoon,
+/area/f13/tunnel)
 "pBn" = (
 /obj/structure/bed/old,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -16957,6 +17011,14 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/radiation)
+"qIP" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 16
+	},
+/obj/structure/barricade/wooden/strong,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "qJs" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -19659,6 +19721,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"tty" = (
+/obj/structure/spider/stickyweb,
+/turf/closed/wall/rust,
+/area/f13/sewer)
 "tuJ" = (
 /mob/living/simple_animal/hostile/rat{
 	name = "Giant rat that makes all of the rules";
@@ -22226,6 +22292,12 @@
 /obj/structure/wreck/trash/bus_door,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
+"vNj" = (
+/obj/structure/ore_box,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "vNp" = (
 /mob/living/simple_animal/hostile/handy/assaultron,
 /turf/open/floor/wood,
@@ -31616,7 +31688,7 @@ jzZ
 lrb
 lrb
 lrb
-lrb
+pAN
 lrb
 hWy
 lrb
@@ -47049,7 +47121,7 @@ vKr
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 yfB
 yfB
@@ -47251,7 +47323,7 @@ vKr
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 yfB
 yfB
@@ -48260,7 +48332,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 yfB
@@ -48462,7 +48534,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 yfB
@@ -48664,7 +48736,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 yfB
@@ -48865,7 +48937,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 clo
@@ -49066,7 +49138,7 @@ iBp
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -49267,7 +49339,7 @@ iBp
 iBp
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 vKr
@@ -49468,7 +49540,7 @@ vKr
 iBp
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -49669,7 +49741,7 @@ vKr
 vKr
 iBp
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -49871,7 +49943,7 @@ iBp
 iBp
 iBp
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -50073,7 +50145,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -50275,7 +50347,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -50477,7 +50549,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -50680,7 +50752,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -50883,7 +50955,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 vKr
@@ -51086,8 +51158,8 @@ dhU
 dhU
 dhU
 dhU
-vKr
-vKr
+iBp
+iBp
 vKr
 vKr
 yfB
@@ -51492,7 +51564,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -51694,7 +51766,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 pyr
@@ -51896,7 +51968,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 yfB
@@ -52098,7 +52170,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 yfB
@@ -52300,7 +52372,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 yfB
@@ -52502,7 +52574,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -52894,11 +52966,11 @@ vKr
 vKr
 efQ
 efQ
-pnE
-pnE
+vNj
+vNj
 hcl
-pnE
-pnE
+gwa
+fDy
 efQ
 efQ
 vKr
@@ -52907,7 +52979,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -53096,20 +53168,20 @@ vKr
 vKr
 efQ
 efQ
-pnE
+vNj
 rUO
 rUO
 rUO
-pnE
+kyE
+fek
 efQ
-efQ
-vKr
+cnn
 dhU
 dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -53302,16 +53374,16 @@ hcl
 rUO
 fwd
 rUO
-hcl
-efQ
-efQ
-vKr
+rUO
+rUO
+tNH
+cnn
+cnn
 dhU
-dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -53504,16 +53576,16 @@ hcl
 rUO
 rUO
 rUO
-hcl
-efQ
-efQ
-vKr
-dhU
-dhU
-vKr
-vKr
+rUO
+rUO
+jrM
+cnn
+cnn
+cnn
 vKr
 vKr
+vKr
+iBp
 vKr
 tRM
 tRM
@@ -53707,9 +53779,9 @@ rUO
 rUO
 rUO
 pnE
+fek
 efQ
-efQ
-vKr
+cnn
 dhU
 dhU
 vKr
@@ -53911,11 +53983,11 @@ tNH
 efQ
 efQ
 efQ
-vKr
+cnn
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -54113,11 +54185,11 @@ rUO
 efQ
 efQ
 efQ
-vKr
+cnn
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -54319,7 +54391,7 @@ vKr
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -54521,7 +54593,7 @@ vKr
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 vKr
 scK
@@ -54723,7 +54795,7 @@ vKr
 dhU
 dhU
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -55331,7 +55403,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -55533,7 +55605,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -55735,7 +55807,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 bbJ
 cRJ
@@ -55937,7 +56009,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -56139,7 +56211,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 tRM
@@ -56341,7 +56413,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 tRM
@@ -56543,7 +56615,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 yfB
 tRM
@@ -56745,7 +56817,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -57754,7 +57826,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 clo
@@ -57956,7 +58028,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -58158,7 +58230,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -58360,7 +58432,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -58562,7 +58634,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 tRM
@@ -58764,7 +58836,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -58966,7 +59038,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 yfB
@@ -59369,7 +59441,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 oNX
 lju
@@ -59570,7 +59642,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+iBp
 vKr
 vKr
 yfB
@@ -59768,10 +59840,10 @@ tRM
 tRM
 vKr
 vKr
-vKr
-vKr
-vKr
-vKr
+iBp
+iBp
+iBp
+iBp
 vKr
 vKr
 vKr
@@ -68417,11 +68489,11 @@ hFs
 hFs
 hFs
 hFs
-hFs
-hFs
-hFs
-hFs
-hFs
+lYp
+mvM
+mvM
+mvM
+lYp
 hFs
 hFs
 hFs
@@ -68619,11 +68691,11 @@ hFs
 hFs
 hFs
 hFs
-hFs
-hFs
-hFs
-hFs
-hFs
+lYp
+mvM
+mvM
+mvM
+lYp
 hFs
 hFs
 hFs
@@ -68806,7 +68878,7 @@ hFs
 hFs
 hFs
 hFs
-pUw
+eqo
 hFs
 hFs
 hFs
@@ -68820,10 +68892,10 @@ hFs
 hFs
 hFs
 hFs
-hFs
-pUw
-hFs
-hFs
+lYp
+qIP
+mvM
+lYp
 hFs
 hFs
 hFs
@@ -69008,7 +69080,7 @@ xvl
 xvl
 xvl
 xvl
-xvl
+mHF
 xvl
 xvl
 xvl
@@ -69210,7 +69282,7 @@ hQG
 hQG
 hQG
 hQG
-hQG
+mLD
 hQG
 hQG
 hQG
@@ -69410,9 +69482,9 @@ mLD
 rjo
 mLD
 mLD
-rjo
 mLD
-rjo
+hQG
+mLD
 rjo
 mLD
 hQG
@@ -69611,8 +69683,8 @@ hQG
 hQG
 hQG
 hQG
-hQG
-rjo
+tty
+mLD
 hQG
 hQG
 hQG
