@@ -763,7 +763,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/color/latex,
 /obj/item/clothing/mask/surgical,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/plasteel/white,
 /area/ruin/powered/animal_hospital)
 "ce" = (

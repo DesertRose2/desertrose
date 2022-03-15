@@ -6166,7 +6166,7 @@
 /obj/item/detective_scanner,
 /obj/structure/closet,
 /obj/item/clothing/neck/mantle/hos,
-/obj/item/clothing/under/hosparademale,
+/obj/item/clothing/under/rank/security/head_of_security/parade,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
@@ -12805,7 +12805,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/clothing/suit/hooded/surgical{
+/obj/item/clothing/suit/hooded/f13/surgical{
 	pixel_x = 9;
 	pixel_y = 7
 	},
@@ -13569,7 +13569,7 @@
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/mask/gas/sechailer/swat,
 /obj/item/clothing/head/helmet/f13/combat/swat,
-/obj/item/clothing/glasses/legiongoggles,
+/obj/item/clothing/glasses/f13/legiongoggles,
 /obj/structure/window/reinforced,
 /obj/item/grenade/chem_grenade/teargas,
 /obj/machinery/door/window/brigdoor{

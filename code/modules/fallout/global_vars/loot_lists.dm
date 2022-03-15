@@ -178,7 +178,7 @@ GLOBAL_LIST_INIT(loot_prewar_clothing, list(
 	/obj/item/clothing/suit/hooded/chaplain_hoodie,
 	/obj/item/clothing/under/pants/camo,
 	/obj/item/clothing/neck/apron/bartender,
-	/obj/item/clothing/under/rank/bartender/purple,
+	/obj/item/clothing/under/rank/civilian/bartender/purple,
 	/obj/item/clothing/under/dress/skirt/plaid/blue,
 	/obj/item/clothing/under/dress/skirt/plaid,
 	/obj/item/clothing/under/suit/navy,

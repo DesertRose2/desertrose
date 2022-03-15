@@ -4,7 +4,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -14,7 +14,7 @@
 /area/f13/bunker)
 "bp" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -66,7 +66,7 @@
 "cr" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -79,7 +79,7 @@
 "cW" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -100,7 +100,7 @@
 /obj/item/reagent_containers/blood/lizard,
 /obj/item/reagent_containers/blood,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -115,7 +115,7 @@
 /obj/item/storage/belt/military/army,
 /obj/item/kitchen/knife/combat,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -128,7 +128,7 @@
 /obj/structure/table,
 /obj/item/storage/box/pillbottles,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -139,7 +139,7 @@
 "eo" = (
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -147,7 +147,7 @@
 /obj/effect/decal/remains/human,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -168,7 +168,7 @@
 	id = 28
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -180,7 +180,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -191,14 +191,14 @@
 "fm" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "fH" = (
 /obj/structure/chair,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -209,7 +209,7 @@
 /obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -217,7 +217,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -236,7 +236,7 @@
 "gJ" = (
 /mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -246,35 +246,35 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "gW" = (
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "gZ" = (
 /mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "hj" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "hw" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/radiation)
@@ -314,7 +314,7 @@
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -327,14 +327,14 @@
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "jw" = (
 /mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -377,7 +377,7 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -385,7 +385,7 @@
 /obj/structure/table,
 /obj/item/clothing/suit/toggle/labcoat/f13/followers,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -414,7 +414,7 @@
 /obj/structure/closet,
 /obj/item/storage/box/gloves,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -423,7 +423,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -433,7 +433,7 @@
 	id = 53
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -456,14 +456,14 @@
 /obj/item/paper_bin,
 /obj/machinery/light,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "nR" = (
 /obj/structure/table/optable,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -479,7 +479,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -557,7 +557,7 @@
 "rK" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -567,7 +567,7 @@
 /obj/item/storage/box/masks,
 /obj/item/clothing/suit/toggle/labcoat/f13/followers,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -577,7 +577,7 @@
 /obj/item/cautery,
 /obj/item/razor,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -600,14 +600,14 @@
 "th" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "tk" = (
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -634,7 +634,7 @@
 	icon_state = "bench"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -654,7 +654,7 @@
 /obj/item/reagent_containers/food/drinks/flask/vault113,
 /obj/item/reagent_containers/food/drinks/flask/vault113,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -668,7 +668,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -697,14 +697,14 @@
 	icon_state = "bench"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "wG" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -714,7 +714,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -734,7 +734,7 @@
 "xv" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -757,7 +757,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -794,7 +794,7 @@
 "zB" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -828,7 +828,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -837,7 +837,7 @@
 /obj/item/surgical_drapes,
 /obj/item/surgicaldrill,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -849,7 +849,7 @@
 "AK" = (
 /mob/living/simple_animal/hostile/radscorpion/black,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -862,7 +862,7 @@
 "BX" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -880,7 +880,7 @@
 	pixel_y = -30
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -892,7 +892,7 @@
 /obj/structure/table,
 /obj/item/storage/box/beakers,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -948,7 +948,7 @@
 "FQ" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -958,7 +958,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -968,7 +968,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -978,7 +978,7 @@
 	},
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -999,14 +999,14 @@
 	},
 /mob/living/simple_animal/hostile/ghoul/legendary,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "HJ" = (
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1021,7 +1021,7 @@
 "HQ" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1041,7 +1041,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1057,7 +1057,7 @@
 /obj/effect/spawner/lootdrop/f13/traitbooks,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1067,7 +1067,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1076,7 +1076,7 @@
 /obj/item/storage/box/syringes,
 /obj/item/storage/box/syringes,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1135,7 +1135,7 @@
 	termtag = "Business"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1144,7 +1144,7 @@
 /obj/item/paper,
 /obj/item/pen,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1167,7 +1167,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1183,7 +1183,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1199,7 +1199,7 @@
 	pixel_x = 10
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1208,7 +1208,7 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/machinery/light,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1221,14 +1221,14 @@
 "Nm" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "NE" = (
 /obj/effect/spawner/lootdrop/f13/explosiveslow,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1244,7 +1244,7 @@
 "NX" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1269,7 +1269,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1291,7 +1291,7 @@
 "OI" = (
 /obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1308,7 +1308,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1354,7 +1354,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1364,7 +1364,7 @@
 	id = 93
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1383,7 +1383,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1399,14 +1399,14 @@
 	termtag = "Business"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
 "SS" = (
 /obj/structure/rack,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1426,7 +1426,7 @@
 "Ts" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1450,7 +1450,7 @@
 "Vh" = (
 /obj/machinery/workbench/advanced,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1470,7 +1470,7 @@
 	icon_state = "bench_center"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1493,7 +1493,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1501,7 +1501,7 @@
 /obj/structure/rack,
 /obj/item/tank/internals/anesthetic,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1515,7 +1515,7 @@
 "Zl" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1524,7 +1524,7 @@
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1536,7 +1536,7 @@
 /obj/structure/closet/crate/bin,
 /obj/machinery/light,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)

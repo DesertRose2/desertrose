@@ -2038,7 +2038,7 @@
 	anchored = 1;
 	can_be_unanchored = 1
 	},
-/obj/item/clothing/gloves/legion/plated,
+/obj/item/clothing/gloves/f13/legion/plated,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -16794,10 +16794,10 @@
 	color = "#845f58";
 	pixel_x = 30
 	},
-/obj/item/clothing/mask/bandana/auxilia,
-/obj/item/clothing/mask/bandana/auxilia,
-/obj/item/clothing/mask/bandana/auxilia,
-/obj/item/clothing/mask/bandana/auxilia,
+/obj/item/clothing/mask/bandana/f13/auxilia,
+/obj/item/clothing/mask/bandana/f13/auxilia,
+/obj/item/clothing/mask/bandana/f13/auxilia,
+/obj/item/clothing/mask/bandana/f13/auxilia,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -18793,8 +18793,8 @@
 	anchored = 1;
 	can_be_unanchored = 1
 	},
-/obj/item/clothing/gloves/legion,
-/obj/item/clothing/glasses/legiongoggles,
+/obj/item/clothing/gloves/f13/legion,
+/obj/item/clothing/glasses/f13/legiongoggles,
 /obj/item/clothing/under/f13/legskirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel{

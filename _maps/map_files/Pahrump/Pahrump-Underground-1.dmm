@@ -175,17 +175,17 @@
 /area/f13/tunnel)
 "adx" = (
 /obj/structure/closet/cabinet/anchored,
-/obj/item/clothing/under/suit_jacket/charcoal,
-/obj/item/clothing/under/suit_jacket/checkered,
-/obj/item/clothing/under/suit_jacket/female,
-/obj/item/clothing/under/suit_jacket/navy,
-/obj/item/clothing/under/suit_jacket/burgundy,
+/obj/item/clothing/under/suit/charcoal,
+/obj/item/clothing/under/suit/checkered,
+/obj/item/clothing/under/suit/black/skirt,
+/obj/item/clothing/under/suit/navy,
+/obj/item/clothing/under/suit/burgundy,
 /obj/item/clothing/under/f13/classdress,
 /obj/item/clothing/under/f13/erpdress,
 /obj/item/clothing/under/misc/black_dress,
 /obj/item/clothing/under/rank/civilian/victorianblackdress,
 /obj/item/clothing/under/rank/civilian/victorianreddress,
-/obj/item/clothing/under/sundress,
+/obj/item/clothing/under/dress/sundress,
 /obj/item/clothing/under/dress/redeveninggown,
 /obj/item/clothing/under/dress/flamenco,
 /obj/item/clothing/suit/puffydress,
@@ -1104,17 +1104,17 @@
 /area/f13/brotherhood/leisure)
 "aNr" = (
 /obj/structure/closet/cabinet/anchored,
-/obj/item/clothing/under/suit_jacket/burgundy,
-/obj/item/clothing/under/suit_jacket/charcoal,
-/obj/item/clothing/under/suit_jacket/checkered,
-/obj/item/clothing/under/suit_jacket/female,
-/obj/item/clothing/under/suit_jacket/navy,
+/obj/item/clothing/under/suit/burgundy,
+/obj/item/clothing/under/suit/charcoal,
+/obj/item/clothing/under/suit/checkered,
+/obj/item/clothing/under/suit/black/skirt,
+/obj/item/clothing/under/suit/navy,
 /obj/item/clothing/under/f13/classdress,
 /obj/item/clothing/under/f13/erpdress,
 /obj/item/clothing/under/misc/black_dress,
 /obj/item/clothing/under/rank/civilian/victorianblackdress,
 /obj/item/clothing/under/rank/civilian/victorianreddress,
-/obj/item/clothing/under/sundress,
+/obj/item/clothing/under/dress/sundress,
 /obj/item/clothing/under/dress/redeveninggown,
 /obj/item/clothing/under/dress/flamenco,
 /obj/item/clothing/suit/puffydress,
@@ -4209,7 +4209,7 @@
 	pixel_x = -13
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -4678,7 +4678,7 @@
 	},
 /obj/effect/mine/shrapnel,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -6883,7 +6883,7 @@
 "eIg" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -11297,10 +11297,10 @@
 /obj/item/clothing/under/f13/fprostitute,
 /obj/item/clothing/under/f13/fprostitute,
 /obj/item/clothing/under/f13/fprostitute,
-/obj/item/clothing/under/jabroni,
-/obj/item/clothing/under/jabroni,
-/obj/item/clothing/under/jabroni,
-/obj/item/clothing/under/jabroni,
+/obj/item/clothing/under/costume/jabroni,
+/obj/item/clothing/under/costume/jabroni,
+/obj/item/clothing/under/costume/jabroni,
+/obj/item/clothing/under/costume/jabroni,
 /obj/item/clothing/under/f13/female/flapper,
 /obj/item/clothing/under/f13/female/flapper,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -12115,7 +12115,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -15345,9 +15345,9 @@
 /obj/structure/table{
 	layer = 2.9
 	},
-/obj/item/clothing/under/rank/medical/green,
-/obj/item/clothing/under/rank/medical/purple,
-/obj/item/clothing/under/rank/medical/blue,
+/obj/item/clothing/under/rank/medical/doctor/green,
+/obj/item/clothing/under/rank/medical/doctor/purple,
+/obj/item/clothing/under/rank/medical/doctor/blue,
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_x = -9
 	},
@@ -17660,7 +17660,7 @@
 	anchored = 1;
 	name = "formal attire cabinet"
 	},
-/obj/item/clothing/accessory/bos/elder,
+/obj/item/clothing/accessory/f13/bos/elder,
 /obj/item/clothing/suit/f13/elder,
 /obj/item/pda/heads/hop{
 	name = "Elder's PDA"
@@ -20542,7 +20542,7 @@
 /obj/structure/table{
 	layer = 2.9
 	},
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/surgical_drapes,
@@ -20765,7 +20765,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/reactor)
 "oaf" = (
-/obj/item/clothing/under/rank/research_director/turtleneck,
+/obj/item/clothing/under/rank/rnd/research_director/turtleneck,
 /obj/item/clothing/head/cowboyhat/sec,
 /obj/effect/spawner/lootdrop/clothing_high,
 /obj/item/toy/eightball,
@@ -22538,17 +22538,17 @@
 /area/f13/brotherhood/mining)
 "pgw" = (
 /obj/structure/closet,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
+/obj/item/clothing/head/beret/f13/ncr_dresscap,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -24594,7 +24594,7 @@
 	dir = 4
 	},
 /obj/effect/decal/remains/human,
-/obj/item/clothing/under/rank/research_director/alt,
+/obj/item/clothing/under/rank/rnd/research_director/alt,
 /obj/item/clothing/suit/toggle/labcoat,
 /turf/open/floor/f13{
 	icon_state = "purplefull"
@@ -25803,8 +25803,8 @@
 	anchored = 1;
 	name = "formal attire cabinet"
 	},
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
-/obj/item/clothing/suit/toggle/labcoat/fieldscribe,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/fieldscribe,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
@@ -27378,7 +27378,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -32648,9 +32648,9 @@
 	color = "000000"
 	},
 /obj/item/bostaff/ncr_flag,
-/obj/item/clothing/head/beret/ncr_codresscap,
-/obj/item/clothing/head/beret/ncr_codresscap,
-/obj/item/clothing/head/beret/ncr_codresscap,
+/obj/item/clothing/head/beret/f13/ncr_codresscap,
+/obj/item/clothing/head/beret/f13/ncr_codresscap,
+/obj/item/clothing/head/beret/f13/ncr_codresscap,
 /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
 /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
 /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
@@ -33835,8 +33835,8 @@
 	anchored = 1;
 	name = "formal attire cabinet"
 	},
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
-/obj/item/clothing/suit/toggle/labcoat/fieldscribe,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/fieldscribe,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood/offices2nd)
 "weJ" = (
@@ -34528,17 +34528,17 @@
 /area/f13/tunnel)
 "wIJ" = (
 /obj/structure/closet/cabinet/anchored,
-/obj/item/clothing/under/suit_jacket/navy,
-/obj/item/clothing/under/suit_jacket/female,
-/obj/item/clothing/under/suit_jacket/checkered,
-/obj/item/clothing/under/suit_jacket/charcoal,
-/obj/item/clothing/under/suit_jacket/burgundy,
+/obj/item/clothing/under/suit/navy,
+/obj/item/clothing/under/suit/black/skirt,
+/obj/item/clothing/under/suit/checkered,
+/obj/item/clothing/under/suit/charcoal,
+/obj/item/clothing/under/suit/burgundy,
 /obj/item/clothing/under/f13/classdress,
 /obj/item/clothing/under/f13/erpdress,
 /obj/item/clothing/under/misc/black_dress,
 /obj/item/clothing/under/rank/civilian/victorianblackdress,
 /obj/item/clothing/under/rank/civilian/victorianreddress,
-/obj/item/clothing/under/sundress,
+/obj/item/clothing/under/dress/sundress,
 /obj/item/clothing/under/dress/redeveninggown,
 /obj/item/clothing/under/dress/flamenco,
 /obj/item/clothing/suit/puffydress,
@@ -35305,10 +35305,10 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/medical)
 "xgg" = (
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
 /obj/structure/table/survival_pod,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)

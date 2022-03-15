@@ -438,7 +438,7 @@ Mayor
 	belt = null
 
 	id = /obj/item/card/id/dogtag/town
-	uniform = /obj/item/clothing/under/rank/chaplain
+	uniform = /obj/item/clothing/under/rank/civilian/chaplain
 	backpack_contents = list(/obj/item/camera/spooky = 1)
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
@@ -514,7 +514,7 @@ Mayor
 	name = "Fancy"
 	head = /obj/item/clothing/head/fedora
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/rank/bartender
+	uniform = /obj/item/clothing/under/rank/civilian/bartender
 	suit = /obj/item/clothing/suit/toggle/lawyer/black
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/f13/fancy
@@ -681,7 +681,7 @@ Mayor
 	name = "Banker"
 	jobtype = /datum/job/den/f13banker
 
-	uniform = /obj/item/clothing/under/lawyer/blacksuit
+	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/headset_den
 	shoes = /obj/item/clothing/shoes/f13/fancy

@@ -290,13 +290,13 @@
 /area/f13/desert)
 "abd" = (
 /obj/effect/landmark/start/f13/farmer,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "abe" = (
 /obj/effect/landmark/start/f13/prospector,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -324,7 +324,7 @@
 /area/f13/desert)
 "abk" = (
 /obj/effect/landmark/start/f13/prospector,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -738,7 +738,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "acv" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -748,24 +748,24 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "acx" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
 "acy" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "acz" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "acA" = (
 /obj/effect/landmark/start/f13/farmer,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -830,7 +830,7 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "acL" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
 /area/f13/desert)
@@ -1289,7 +1289,7 @@
 	},
 /area/f13/klamat)
 "aeg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
@@ -1333,12 +1333,12 @@
 	},
 /area/f13/klamat/mine)
 "aen" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "aeo" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerbordercorner"
 	},
@@ -1369,7 +1369,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "aer" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
@@ -1432,7 +1432,7 @@
 /area/f13/legioncamp)
 "aeB" = (
 /obj,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -1450,12 +1450,12 @@
 	},
 /area/f13/klamat/mine)
 "aeE" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
 "aeF" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerborder"
 	},
@@ -1505,7 +1505,7 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "aeO" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -1515,7 +1515,7 @@
 	dir = 9;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1524,13 +1524,13 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "aeR" = (
 /obj/structure/table/wood,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1539,7 +1539,7 @@
 	dir = 5;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1577,7 +1577,7 @@
 /area/f13/klamat/mine)
 "aeY" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1586,18 +1586,18 @@
 	dir = 1;
 	icon_state = "f13chair2"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "afa" = (
 /obj/structure/rack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "afb" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -1676,12 +1676,12 @@
 	dir = 4;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "afp" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1690,7 +1690,7 @@
 	dir = 8;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -1715,13 +1715,13 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
 "afu" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "afv" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -1772,13 +1772,13 @@
 /area/f13/klamat/mine)
 "afE" = (
 /obj/effect/landmark/start/f13/settler,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "afF" = (
 /mob/living/simple_animal/hostile/cazador/young,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -2109,7 +2109,7 @@
 	},
 /area/f13/desert)
 "agE" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
@@ -2330,7 +2330,7 @@
 /turf/open/floor/plating,
 /area/f13/klamat/mine)
 "ahj" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavementcorner"
 	},
@@ -2472,7 +2472,7 @@
 	dir = 9;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -2482,7 +2482,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -2496,7 +2496,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -2505,13 +2505,13 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "ahG" = (
 /obj/structure/fence/corner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -2525,14 +2525,14 @@
 /area/f13/klamat/mine)
 "ahI" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "ahJ" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -2645,7 +2645,7 @@
 	dir = 8;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -2655,7 +2655,7 @@
 	dir = 4;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -2692,7 +2692,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/crude,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -2702,7 +2702,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/crude,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -2710,7 +2710,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "legionfg"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/legioncamp)
@@ -2718,7 +2718,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "legionfg"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/legioncamp)
@@ -2728,7 +2728,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/crude,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -2967,12 +2967,12 @@
 	},
 /area/f13/deepmine)
 "aiV" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
 "aiW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -3081,13 +3081,13 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "ajm" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerturn"
 	},
 /area/f13/desert)
 "ajn" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innercornerpieceleft"
 	},
@@ -3162,13 +3162,13 @@
 	},
 /area/f13/deepmine)
 "ajx" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerbordercorner"
 	},
 /area/f13/desert)
 "ajy" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerturn"
 	},
@@ -7328,7 +7328,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/mountain)
 "auT" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerturn"
 	},
 /area/f13/desert)
@@ -8210,7 +8210,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/hallway/secondary/exit)
 "awK" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerturn"
 	},
@@ -8871,7 +8871,7 @@
 /area/hydroponics/garden)
 "ayv" = (
 /mob/living/simple_animal/hostile/radroach,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -10826,7 +10826,7 @@
 /area/medical/medbay/central)
 "aDg" = (
 /mob/living/simple_animal/hostile/radroach,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -11830,14 +11830,14 @@
 /area/f13/underground/enclave_base)
 "aFB" = (
 /obj/structure/window/fulltile/wood_window,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "aFC" = (
 /obj/structure/window/fulltile/wood_window,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -11966,13 +11966,13 @@
 	},
 /area/f13/underground/enclave_base)
 "aFW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "aFX" = (
 /obj/effect/landmark/start/f13/wastelander,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -11982,11 +11982,11 @@
 /area/f13/desert)
 "aFZ" = (
 /obj/structure/foamedmetal,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aGa" = (
 /mob/living/simple_animal/hostile/mimic/crate,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
@@ -12045,19 +12045,19 @@
 /area/f13/den)
 "aGk" = (
 /obj/effect/landmark/start/f13/settler,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "aGl" = (
 /obj/effect/landmark/start/f13/settler,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "aGm" = (
 /obj/effect/landmark/start/f13/settler,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -12098,7 +12098,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12119,7 +12119,7 @@
 /area/f13/den)
 "aGx" = (
 /obj/item/dice,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12191,7 +12191,7 @@
 /obj/item/trash/can{
 	icon_state = "dandyapples"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12199,7 +12199,7 @@
 /obj/item/trash/can{
 	icon_state = "instamash"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12207,7 +12207,7 @@
 /obj/item/trash/can{
 	icon_state = "candy"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -12296,19 +12296,19 @@
 /area/f13/den)
 "aGY" = (
 /mob/living/simple_animal/hostile/radscorpion,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "aGZ" = (
 /mob/living/simple_animal/hostile/radscorpion,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
 "aHa" = (
 /obj/machinery/vending/nukacolavend,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12653,14 +12653,14 @@
 /area/f13/den)
 "aIa" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "aIb" = (
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -12748,7 +12748,7 @@
 /area/f13/tunnel)
 "aIo" = (
 /obj/structure/table,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /turf/open/floor/wood/f13/old,
@@ -12836,7 +12836,7 @@
 /area/f13/sunny_dale)
 "aID" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -12974,7 +12974,7 @@
 /area/f13/sunny_dale)
 "aJa" = (
 /obj/structure/window/fulltile/wood_window,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aJb" = (
 /obj/machinery/light{
@@ -13012,7 +13012,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aJg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "outerbordercorner"
 	},
@@ -13247,7 +13247,7 @@
 "aJP" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -13306,7 +13306,7 @@
 /turf/open/floor/plating,
 /area/f13/underground/enclave_base)
 "aJZ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerborder"
 	},
@@ -13488,7 +13488,7 @@
 /area/f13/desert)
 "aKz" = (
 /mob/living/simple_animal/hostile/raider/thief,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -13721,7 +13721,7 @@
 	},
 /area/f13/underground/enclave_base)
 "aLg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerborder"
 	},
@@ -13751,7 +13751,7 @@
 	dir = 8;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -13832,7 +13832,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor1-old"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -13841,7 +13841,7 @@
 /area/f13/den)
 "aLy" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aLz" = (
 /obj/structure/simple_door/room,
@@ -13871,7 +13871,7 @@
 /area/f13/sunny_dale)
 "aLD" = (
 /obj/structure/table,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -13936,7 +13936,7 @@
 	},
 /area/f13/den)
 "aLJ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerbordercorner"
 	},
@@ -13984,14 +13984,14 @@
 /area/f13/den)
 "aLP" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
 "aLQ" = (
 /obj/machinery/vending/nukacolavend,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -14037,21 +14037,21 @@
 /area/f13/sunny_dale)
 "aLW" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "aLX" = (
 /mob/living/simple_animal/hostile/raider/ranged,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aLY" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -14099,14 +14099,14 @@
 /area/f13/den)
 "aMg" = (
 /obj/structure/table,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
 "aMh" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -14146,13 +14146,13 @@
 /area/f13/den)
 "aMn" = (
 /obj/item/clothing/suit/armor/f13/brokenpa,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "aMo" = (
 /mob/living/simple_animal/hostile/cazador/young,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
@@ -14164,13 +14164,13 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aMq" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "transition7"
 	},
 /area/f13/desert)
 "aMr" = (
 /mob/living/simple_animal/hostile/raider,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -15193,7 +15193,7 @@
 /area/f13/sunny_dale)
 "aPy" = (
 /obj/structure/closet/crate/trashcart,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -15277,7 +15277,7 @@
 /area/f13/sunny_dale)
 "aPM" = (
 /obj/structure/closet/crate/bin,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -15318,7 +15318,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aPT" = (
 /obj/item/clothing/head/helmet/f13/raidermetal,
@@ -15458,7 +15458,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -15468,7 +15468,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -15477,7 +15477,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -15486,7 +15486,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -15495,7 +15495,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -15559,7 +15559,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aQB" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/f13/desert)
@@ -15609,7 +15609,7 @@
 /area/f13/ncr_main)
 "aQK" = (
 /obj/machinery/light/lampost,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -15860,23 +15860,23 @@
 /area/f13/desert)
 "aRw" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aRx" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innercornerpieceleft"
 	},
 /area/f13/desert)
 "aRy" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom1"
 	},
 /area/f13/desert)
 "aRz" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -15934,7 +15934,7 @@
 /area/f13/den)
 "aRG" = (
 /obj/machinery/light/lampost,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -15981,12 +15981,12 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/den)
 "aRL" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -15995,54 +15995,54 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/den)
 "aRN" = (
 /obj/effect/landmark/start/f13/wastelander,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "aRO" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "tinycornervertical"
 	},
 /area/f13/desert)
 "aRP" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "innerturn"
 	},
 /area/f13/desert)
 "aRQ" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "aRR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "innerturn"
 	},
 /area/f13/desert)
 "aRS" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornervertical"
 	},
 /area/f13/desert)
 "aRT" = (
 /obj/effect/landmark/observer_start,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aRU" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticalrightborderright3"
 	},
@@ -16052,31 +16052,31 @@
 	desc = "A sprayed metal sheet that says \"Den\".";
 	name = "Den Sign"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aRW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "innerturn"
 	},
 /area/f13/desert)
 "aRX" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornervertical"
 	},
 /area/f13/desert)
 "aRY" = (
 /obj/machinery/light/lampost,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
 "aRZ" = (
 /obj/machinery/light/lampost,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerturn"
 	},
@@ -16097,7 +16097,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "aSc" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -16116,7 +16116,7 @@
 	},
 /area/f13/raider_mall)
 "aSf" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/sunny_dale)
@@ -16341,7 +16341,7 @@
 /obj/effect/decal/roadline{
 	icon_state = "singlehorizontal"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -16469,7 +16469,7 @@
 /area/f13/sunny_dale)
 "aTf" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -16485,7 +16485,7 @@
 /obj/effect/decal/roadline{
 	icon_state = "singlehorizontalleft"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -16741,7 +16741,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aTR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -16892,7 +16892,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -16938,7 +16938,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aUx" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -17056,7 +17056,7 @@
 /area/f13/sunny_dale)
 "aUN" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -17093,11 +17093,11 @@
 /area/f13/sunny_dale)
 "aUU" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aUV" = (
 /obj/effect/turf_decal/loading_area,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -17113,7 +17113,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -17362,14 +17362,14 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "aVH" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	id = "S5"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -17492,7 +17492,7 @@
 /area/f13/sunny_dale)
 "aVZ" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -17526,13 +17526,13 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "aWg" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -17700,13 +17700,13 @@
 	},
 /area/f13/sunny_dale)
 "aWI" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornervertical"
 	},
 /area/f13/desert)
 "aWJ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innerturn"
 	},
@@ -17855,7 +17855,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "aXh" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/sunny_dale)
@@ -17864,7 +17864,7 @@
 	dir = 4;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -17873,13 +17873,13 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
 "aXk" = (
 /obj/structure/fence/corner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -17888,7 +17888,7 @@
 	brightness = 3;
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -17912,7 +17912,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "outerbordercorner"
 	},
@@ -17928,7 +17928,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/sunny_dale)
@@ -17938,18 +17938,18 @@
 	id = "garage";
 	name = "broken shutters"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/sunny_dale)
 "aXs" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornerhorizontal"
 	},
 /area/f13/desert)
 "aXt" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -18014,7 +18014,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/sunny_dale)
 "aXD" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "transition7"
 	},
 /area/f13/sunny_dale)
@@ -18024,7 +18024,7 @@
 	id = "garage";
 	name = "broken shutters"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "transition7"
 	},
 /area/f13/sunny_dale)
@@ -18040,7 +18040,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -18085,7 +18085,7 @@
 /area/f13/sunny_dale)
 "aXO" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18101,7 +18101,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -18116,7 +18116,7 @@
 	icon_state = "corner"
 	},
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "outerbordercorner"
 	},
@@ -18127,7 +18127,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -18315,7 +18315,7 @@
 /area/f13/sunny_dale)
 "aYt" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -18357,31 +18357,31 @@
 /obj/effect/decal/roadline{
 	icon_state = "singlevertical"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aYA" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "aYB" = (
 /obj/machinery/light/small,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerbordercorner"
 	},
 /area/f13/sunny_dale)
 "aYC" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/sunny_dale)
 "aYD" = (
 /obj/machinery/light/small,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/sunny_dale)
@@ -18391,7 +18391,7 @@
 	id = "garage";
 	name = "broken shutters"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/sunny_dale)
@@ -18439,7 +18439,7 @@
 /area/f13/sunny_dale)
 "aYM" = (
 /obj/effect/decal/cleanable/robot_debris,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -18470,7 +18470,7 @@
 "aYQ" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18480,7 +18480,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18489,7 +18489,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18518,7 +18518,7 @@
 "aYW" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/sunny_dale)
@@ -18649,24 +18649,24 @@
 	},
 /area/f13/sunny_dale)
 "aZr" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/desert)
 "aZs" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2right"
 	},
 /area/f13/desert)
 "aZt" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/desert)
 "aZu" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18677,7 +18677,7 @@
 /area/f13/sunny_dale)
 "aZw" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -18729,13 +18729,13 @@
 	dir = 4;
 	icon_state = "loadingarea"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "aZD" = (
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -18774,12 +18774,12 @@
 "aZK" = (
 /obj/structure/fence,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerturn"
 	},
 /area/f13/desert)
 "aZL" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/sunny_dale)
@@ -18806,7 +18806,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/sunny_dale)
@@ -18866,7 +18866,7 @@
 /turf/open/floor/carpet,
 /area/f13/sunny_dale)
 "aZZ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innercornerpieceright"
 	},
 /area/f13/desert)
@@ -18952,7 +18952,7 @@
 "bam" = (
 /obj/structure/fence,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -18983,7 +18983,7 @@
 "bar" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -19068,19 +19068,19 @@
 	dir = 10;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "baE" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "baF" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -19207,7 +19207,7 @@
 "baV" = (
 /obj/structure/fence,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerturn"
 	},
@@ -19327,7 +19327,7 @@
 	dir = 4;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -19462,7 +19462,7 @@
 /area/f13/sunny_dale)
 "bbF" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -19521,7 +19521,7 @@
 "bbO" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19545,7 +19545,7 @@
 "bbR" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19570,7 +19570,7 @@
 "bbV" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19647,7 +19647,7 @@
 /obj/structure/rack,
 /obj/item/storage/belt,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19693,7 +19693,7 @@
 /obj/structure/rack,
 /obj/machinery/light/small,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19706,7 +19706,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -19723,7 +19723,7 @@
 	icon_state = "end"
 	},
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerbordercorner"
 	},
@@ -19734,7 +19734,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -19838,7 +19838,7 @@
 "bcD" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -19888,7 +19888,7 @@
 	dir = 4;
 	icon_state = "bulb-broken"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/sunny_dale)
@@ -20023,12 +20023,12 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bdd" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20037,7 +20037,7 @@
 	dir = 5;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticaloutermain2"
 	},
 /area/f13/sunny_dale)
@@ -20058,7 +20058,7 @@
 "bdh" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -20128,19 +20128,19 @@
 /area/f13/sunny_dale)
 "bdq" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bdr" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bds" = (
 /obj/item/clothing/shoes/sneakers/orange,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20203,18 +20203,18 @@
 /area/f13/sunny_dale)
 "bdA" = (
 /obj/structure/bed/mattress/pregame,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bdB" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2"
 	},
 /area/f13/sunny_dale)
 "bdC" = (
 /obj/item/clothing/under/rank/prisoner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/sunny_dale)
@@ -20284,7 +20284,7 @@
 	icon_state = "bench";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20294,7 +20294,7 @@
 	name = "stool"
 	},
 /obj/machinery/light/small,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20303,7 +20303,7 @@
 	icon_state = "bench_center";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20313,19 +20313,19 @@
 	icon_state = "bench";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bdP" = (
 /obj/machinery/light/small,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/sunny_dale)
 "bdQ" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2right"
 	},
 /area/f13/sunny_dale)
@@ -20476,20 +20476,20 @@
 	name = "intercom";
 	pixel_x = 30
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
 "bel" = (
 /obj/item/clothing/under/villain,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/sunny_dale)
 "bem" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/sunny_dale)
@@ -20498,7 +20498,7 @@
 	name = "intercom";
 	pixel_x = 30
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2right"
 	},
 /area/f13/sunny_dale)
@@ -20515,7 +20515,7 @@
 /area/f13/ncr_main)
 "bep" = (
 /obj/structure/wreck/trash/two_tire,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -20534,7 +20534,7 @@
 "bes" = (
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2right"
 	},
 /area/f13/sunny_dale)
@@ -20546,7 +20546,7 @@
 "beu" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/under/rank/prisoner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -20601,7 +20601,7 @@
 /obj/effect/decal/roadline{
 	icon_state = "singlehorizontalright"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -20669,7 +20669,7 @@
 /obj/structure/closet/crate,
 /obj/item/clothing/gloves/Biker,
 /obj/item/clothing/under/f13/Retro_Biker_Vest,
-/obj/item/clothing/head/fluff/Bikerhelmet,
+/obj/item/clothing/head/f13/Bikerhelmet,
 /turf/open/floor/plasteel/vaporwave,
 /area/f13/raider_mall)
 "beS" = (
@@ -21396,7 +21396,7 @@
 /obj/item/trash/can{
 	icon_state = "mechanist"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -21493,28 +21493,28 @@
 /turf/open/floor/carpet/black,
 /area/f13/sunny_dale)
 "bhq" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "crossborder"
 	},
 /area/f13/desert)
 "bhr" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross1"
 	},
 /area/f13/desert)
 "bhs" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross2"
 	},
 /area/f13/desert)
 "bht" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross3"
 	},
 /area/f13/desert)
 "bhu" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "crossborder"
 	},
@@ -21682,19 +21682,19 @@
 /turf/open/floor/plating,
 /area/f13/desert)
 "bhP" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "crossborderroundtopleft"
 	},
 /area/f13/desert)
 "bhQ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "crossborderroundmid"
 	},
 /area/f13/desert)
 "bhR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crossbordertopright"
 	},
 /area/f13/desert)
@@ -21774,18 +21774,18 @@
 	},
 /area/f13/raider_mall)
 "bic" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "crossborderbottomleft"
 	},
 /area/f13/desert)
 "bid" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert1"
 	},
 /area/f13/desert)
 "bie" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crossborderbottomright"
 	},
 /area/f13/desert)
@@ -21812,7 +21812,7 @@
 "bii" = (
 /obj/structure/bed/mattress/pregame,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/sunny_dale)
@@ -21846,7 +21846,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bio" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert2"
 	},
 /area/f13/desert)
@@ -21866,7 +21866,7 @@
 /area/f13/raider_mall)
 "bir" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/sunny_dale)
@@ -21930,7 +21930,7 @@
 /turf/open/floor/carpet/black,
 /area/f13/sunny_dale)
 "biD" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert3"
 	},
 /area/f13/desert)
@@ -21950,7 +21950,7 @@
 /turf/open/floor/wood/f13/old/ruinedstraightnorth,
 /area/f13/desert)
 "biI" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "crossborder"
 	},
@@ -22087,7 +22087,7 @@
 	},
 /area/f13/raider_mall)
 "biY" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/maintenance/disposal)
@@ -22252,7 +22252,7 @@
 	},
 /area/f13/raider_mall)
 "bjw" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innerpavementcorner"
 	},
@@ -22489,7 +22489,7 @@
 	},
 /area/f13/raider_mall)
 "bkb" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innerpavement"
 	},
@@ -22912,7 +22912,7 @@
 /turf/open/floor/wood/f13/stage_tl,
 /area/f13/raider_mall)
 "blg" = (
-/obj/item/clothing/under/singery,
+/obj/item/clothing/under/costume/singer/yellow,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/raider_mall)
 "blh" = (
@@ -22954,7 +22954,7 @@
 /area/f13/raider_mall)
 "blm" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
 /area/f13/desert)
@@ -23249,7 +23249,7 @@
 /area/f13/desert)
 "bml" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
@@ -23440,7 +23440,7 @@
 /area/f13/raider_mall)
 "bmO" = (
 /obj/structure/wreck/trash/bus_door,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -23604,7 +23604,7 @@
 /area/f13/ncr_main)
 "bnn" = (
 /obj/structure/sign/bilboards/random,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -23637,19 +23637,19 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bns" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "innerpavement"
 	},
 /area/f13/desert)
 "bnt" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "innerpavement"
 	},
 /area/f13/desert)
 "bnu" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "innerpavement"
 	},
@@ -23726,53 +23726,53 @@
 /area/f13/desert)
 "bnH" = (
 /obj/effect/landmark/start/f13/wastelander,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bnI" = (
 /obj/effect/decal/roadline,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bnJ" = (
 /obj/effect/decal/roadline,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
 "bnK" = (
 /obj/effect/decal/roadline,
 /mob/living/simple_animal/hostile/deathclaw,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bnL" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/desert)
 "bnM" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermainbottom"
 	},
 /area/f13/desert)
 "bnN" = (
 /obj/effect/landmark/start/f13/vetlegionary,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bnO" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermainright"
 	},
 /area/f13/desert)
 "bnP" = (
 /obj/effect/landmark/start/f13/vexillarius,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -23782,23 +23782,23 @@
 	dir = 4;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bnR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/desert)
 "bnS" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermaintop"
 	},
 /area/f13/desert)
 "bnT" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "innermaincornerinner"
 	},
@@ -23823,19 +23823,19 @@
 	},
 /area/f13/underground/mountain)
 "bnY" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "innerpavement"
 	},
 /area/f13/desert)
 "bnZ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "innerpavement"
 	},
 /area/f13/desert)
 "boa" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "innerpavement"
 	},
@@ -23845,19 +23845,19 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "boc" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticalrightborderrightbottom"
 	},
 /area/f13/desert)
 "bod" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticaloutermainbottom"
 	},
 /area/f13/desert)
 "boe" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticalleftborderleftbottom"
 	},
@@ -23871,7 +23871,7 @@
 /area/f13/underground/mountain)
 "boh" = (
 /obj/machinery/light/lampost,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -23929,7 +23929,7 @@
 /area/f13/den)
 "boo" = (
 /obj/machinery/light,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -24101,7 +24101,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/ncr_main)
@@ -24159,18 +24159,18 @@
 /area/f13/powerplant)
 "boV" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "boW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticalleftborderrighttop"
 	},
 /area/f13/desert)
 "boX" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "verticaloutermaintop"
 	},
@@ -24236,7 +24236,7 @@
 	},
 /area/f13/powerplant)
 "bpg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "innercornermisc"
 	},
@@ -24264,7 +24264,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -24297,12 +24297,12 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bpq" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/ncr_main)
@@ -24318,7 +24318,7 @@
 /area/f13/desert)
 "bpt" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -24356,7 +24356,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/ncr_main)
@@ -24385,7 +24385,7 @@
 /area/f13/ncr_main)
 "bpB" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -24486,11 +24486,11 @@
 /area/f13/underground/mountain)
 "bpR" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bpS" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bpT" = (
 /mob/living/simple_animal/hostile/deathclaw/mother,
@@ -24507,7 +24507,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -24832,7 +24832,7 @@
 /area/f13/underground/mountain)
 "bqT" = (
 /mob/living/simple_animal/hostile/handy,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -24904,7 +24904,7 @@
 /area/f13/ncr_main)
 "bre" = (
 /obj/effect/landmark/start/f13/slave,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -24954,7 +24954,7 @@
 /area/f13/mountain_bunker)
 "brl" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -25037,7 +25037,7 @@
 /obj/item/paper/crumpled{
 	info = "Stupid beast has stinged me with capitalism,i fear this be last words of Boris,i hope comrades in vault 223 are okay."
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "brz" = (
 /obj/effect/decal/remains/human,
@@ -25045,7 +25045,7 @@
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "brA" = (
 /obj/structure/spacevine{
@@ -25059,20 +25059,20 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "brC" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "brD" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -25110,7 +25110,7 @@
 /area/f13/sunny_dale)
 "brI" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -25138,7 +25138,7 @@
 	name = "Mutant Vines"
 	},
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "brN" = (
 /obj/structure/table,
@@ -25177,7 +25177,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -25271,7 +25271,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -25357,7 +25357,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
@@ -25365,7 +25365,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -25374,7 +25374,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavementcorner"
 	},
@@ -25383,7 +25383,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
@@ -25400,7 +25400,7 @@
 /area/f13/desert)
 "bsx" = (
 /obj/structure/table,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /obj/item/reagent_containers/blood/OMinus,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/cautery,
@@ -25460,7 +25460,7 @@
 	dir = 8;
 	light_color = "#e8eaff"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
@@ -25524,17 +25524,17 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/ncr_main)
 "bsN" = (
 /mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bsO" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bsP" = (
 /obj/structure/spacevine{
@@ -25554,14 +25554,14 @@
 /area/f13/desert)
 "bsR" = (
 /mob/living/simple_animal/hostile/stalker,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bsS" = (
 /mob/living/simple_animal/hostile/stalker,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bsT" = (
 /obj/structure/rack,
@@ -25577,12 +25577,12 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bsV" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/ncr_main)
 "bsW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/ncr_main)
@@ -25592,13 +25592,13 @@
 	name = "Garage Door Button";
 	pixel_y = 24
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/ncr_main)
 "bsY" = (
 /obj/structure/wreck/trash/five_tires,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/ncr_main)
@@ -25606,13 +25606,13 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/ncr_main)
 "bta" = (
 /obj/structure/rack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/ncr_main)
@@ -25657,7 +25657,7 @@
 /area/f13/desert)
 "bti" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
@@ -25681,7 +25681,7 @@
 	id = 420;
 	name = "Garage Door"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/ncr_main)
@@ -25731,7 +25731,7 @@
 	icon_state = "bench";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -25740,7 +25740,7 @@
 	icon_state = "bench_center";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -25758,7 +25758,7 @@
 	icon_state = "bench";
 	name = "stool"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -25816,7 +25816,7 @@
 /area/f13/klamat)
 "btF" = (
 /obj/structure/weightlifter,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/ncr_main)
@@ -25883,7 +25883,7 @@
 /area/f13/desert)
 "btP" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -26246,18 +26246,18 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/ncr_main)
 "buI" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/ncr_main)
 "buJ" = (
 /obj/machinery/light,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/ncr_main)
@@ -26385,14 +26385,14 @@
 /area/f13/powerplant)
 "bvc" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bvd" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
@@ -26410,7 +26410,7 @@
 /area/f13/prison)
 "bvg" = (
 /obj/structure/holohoop,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -26422,7 +26422,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -26465,7 +26465,7 @@
 /area/f13/powerplant)
 "bvp" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bvq" = (
 /obj/structure/bonfire,
@@ -26479,7 +26479,7 @@
 "bvs" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/vomit,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -26504,21 +26504,21 @@
 /area/f13/powerplant)
 "bvw" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bvx" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bvy" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
@@ -26592,7 +26592,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -26658,7 +26658,7 @@
 /area/f13/den)
 "bvT" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
@@ -26668,7 +26668,7 @@
 	name = "Mutant Vines"
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bvV" = (
 /turf/open/floor/wood/f13/old/ruinedcornerbl,
@@ -26677,13 +26677,13 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "ncrfg"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bvX" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
@@ -26699,7 +26699,7 @@
 /area/f13/desert)
 "bwa" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -26708,7 +26708,7 @@
 /obj/effect/decal/cleanable/vomit{
 	icon_state = "vomittox_2"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -26771,7 +26771,7 @@
 /area/f13/powerplant)
 "bwk" = (
 /obj/structure/closet,
-/obj/item/clothing/under/suit_jacket/navy,
+/obj/item/clothing/under/suit/navy,
 /obj/item/clothing/shoes/laceup,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -26859,12 +26859,12 @@
 /area/f13/sunny_dale)
 "bwx" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bwy" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/holodeck/rec_center/basketball)
@@ -26873,7 +26873,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -26945,7 +26945,7 @@
 /area/f13/sunny_dale)
 "bwL" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -26975,19 +26975,19 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bwQ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticaloutermain2"
 	},
 /area/f13/desert)
 "bwR" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bwS" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -27121,7 +27121,7 @@
 /area/f13/underground/bos)
 "bxm" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -27134,7 +27134,7 @@
 /area/f13/sunny_dale)
 "bxo" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/underground/bos)
 "bxp" = (
 /turf/closed/wall/r_wall/f13superstore{
@@ -27243,13 +27243,13 @@
 /area/f13/powerplant)
 "bxG" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bxH" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
@@ -27356,7 +27356,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -27373,13 +27373,13 @@
 /obj/item/trash/can{
 	icon_state = "air"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/desert)
 "bxY" = (
 /mob/living/simple_animal/hostile/deathclaw,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -27388,7 +27388,7 @@
 	dir = 1;
 	layer = 4.1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -27457,7 +27457,7 @@
 /area/f13/sunny_dale)
 "byk" = (
 /obj/structure/simple_door/interior,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/prison)
@@ -27550,7 +27550,7 @@
 /area/f13/sunny_dale)
 "byy" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/desert)
@@ -27626,7 +27626,7 @@
 /area/f13/sunny_dale)
 "byL" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -27674,13 +27674,13 @@
 "byT" = (
 /obj/structure/simple_door/interior,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/prison)
 "byU" = (
 /obj/structure/closet,
-/obj/item/clothing/under/suit_jacket/charcoal,
+/obj/item/clothing/under/suit/charcoal,
 /obj/item/clothing/shoes/laceup,
 /obj/item/paper,
 /turf/open/floor/plasteel/f13{
@@ -27807,7 +27807,7 @@
 	},
 /area/f13/prison)
 "bzo" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -27987,7 +27987,7 @@
 /area/f13/desert)
 "bzR" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -28079,7 +28079,7 @@
 /area/f13/desert)
 "bAh" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -28137,7 +28137,7 @@
 /area/f13/sunny_dale)
 "bAq" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -28185,7 +28185,7 @@
 /area/f13/desert)
 "bAy" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
@@ -28263,7 +28263,7 @@
 /area/f13/powerplant)
 "bAL" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -28349,7 +28349,7 @@
 /area/f13/sunny_dale)
 "bBa" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermaintop"
 	},
 /area/f13/desert)
@@ -28695,7 +28695,7 @@
 	name = "Mutant Vines"
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -28704,7 +28704,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
@@ -28876,7 +28876,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -28885,7 +28885,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -29098,7 +29098,7 @@
 /area/f13/sunny_dale)
 "bDb" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
@@ -29139,40 +29139,40 @@
 /area/f13/tunnel)
 "bDh" = (
 /mob/living/simple_animal/hostile/stalker,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
 "bDi" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDj" = (
 /obj/effect/decal/cleanable/vomit,
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDk" = (
 /obj/structure/closet/crate/miningcar,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDl" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bDm" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -29216,13 +29216,13 @@
 /area/f13/den)
 "bDs" = (
 /obj/item/mining_scanner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDt" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
@@ -29232,14 +29232,14 @@
 /obj/item/stack/sheet/mineral/uranium,
 /obj/item/stack/sheet/mineral/uranium,
 /obj/item/stack/sheet/mineral/uranium,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bDv" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -29266,13 +29266,13 @@
 "bDz" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDA" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -29308,13 +29308,13 @@
 /area/f13/prison)
 "bDF" = (
 /obj/structure/table,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
 "bDG" = (
 /mob/living/simple_animal/cow/brahmin,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 9;
 	icon_state = "outerpavement"
 	},
@@ -29327,7 +29327,7 @@
 /area/f13/den)
 "bDI" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -29351,12 +29351,12 @@
 /area/f13/tunnel)
 "bDM" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/geisha,
+/obj/item/clothing/under/costume/geisha,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bDN" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/redeveninggown,
+/obj/item/clothing/under/dress/redeveninggown,
 /obj/item/clothing/under/f13/female/flapper,
 /obj/item/clothing/under/f13/female/flapper,
 /turf/open/floor/wood/f13/old,
@@ -29398,7 +29398,7 @@
 /area/f13/sunny_dale)
 "bDT" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -29422,7 +29422,7 @@
 /obj/structure/fence/cut/medium{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -29431,7 +29431,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 2;
 	icon_state = "outerborder"
 	},
@@ -29441,7 +29441,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerborder"
 	},
@@ -29450,7 +29450,7 @@
 /obj/structure/fence/cut/large{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -29459,7 +29459,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -29469,7 +29469,7 @@
 	dir = 5;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bEc" = (
 /obj/structure/table,
@@ -29493,49 +29493,49 @@
 /area/f13/den)
 "bEf" = (
 /obj/structure/wreck/bus/rusted/segmented14,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEg" = (
 /obj/structure/wreck/bus/rusted/segmented15,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEh" = (
 /obj/structure/wreck/bus/rusted/segmented16,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEi" = (
 /obj/structure/wreck/bus/rusted/segmented17,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEj" = (
 /obj/structure/wreck/bus/rusted/segmented18,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEk" = (
 /obj/structure/wreck/bus/rusted/segmented19,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEl" = (
 /obj/structure/wreck/bus/rusted/segmented20,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bEm" = (
 /obj/structure/wreck/trash/five_tires,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "innerturn"
 	},
@@ -29590,55 +29590,55 @@
 /area/f13/den)
 "bEv" = (
 /obj/effect/decal/cleanable/molten_object,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bEw" = (
 /obj/effect/gibspawner/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEx" = (
 /obj/structure/wreck/bus/rusted/segmented7,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEy" = (
 /obj/structure/wreck/bus/rusted/segmented8,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEz" = (
 /obj/structure/wreck/bus/rusted/segmented9,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEA" = (
 /obj/structure/wreck/bus/rusted/segmented10,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEB" = (
 /obj/structure/wreck/bus/rusted/segmented11,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEC" = (
 /obj/structure/wreck/bus/rusted/segmented12,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bED" = (
 /obj/structure/wreck/bus/rusted/segmented13,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -29653,12 +29653,12 @@
 	name = "Garage Door";
 	pixel_y = 24
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/underground/bos)
 "bEG" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/underground/bos)
@@ -29666,20 +29666,20 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/underground/bos)
 "bEI" = (
 /obj/item/rack_parts,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerbordercorner"
 	},
 /area/f13/underground/bos)
 "bEJ" = (
 /obj/structure/rack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/underground/bos)
@@ -29698,43 +29698,43 @@
 /area/f13/den)
 "bEM" = (
 /obj/structure/wreck/bus/rusted/segmented,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEN" = (
 /obj/structure/wreck/bus/rusted/segmented1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEO" = (
 /obj/structure/wreck/bus/rusted/segmented2,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEP" = (
 /obj/structure/wreck/bus/rusted/segmented3,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bEQ" = (
 /obj/structure/wreck/bus/rusted/segmented4,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bER" = (
 /obj/structure/wreck/bus/rusted/segmented5,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bES" = (
 /obj/structure/wreck/bus/rusted/segmented6,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -29745,12 +29745,12 @@
 	id = 601;
 	name = "Garage Door"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
 "bEU" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/underground/bos)
@@ -29759,18 +29759,18 @@
 	dir = 8;
 	icon_state = "bike_rust_med_no_wheels"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/underground/bos)
 "bEW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/underground/bos)
 "bEX" = (
 /obj/structure/wreck/trash/five_tires,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/underground/bos)
@@ -29791,16 +29791,16 @@
 /area/f13/prison)
 "bFb" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/dress/blacktango,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bFc" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
 "bFd" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/underground/bos)
@@ -29836,19 +29836,19 @@
 /area/science/xenobiology)
 "bFj" = (
 /obj/structure/wreck/trash/autoshaft,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bFk" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
 "bFl" = (
 /obj/item/storage/toolbox/mechanical/old,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/underground/bos)
@@ -29871,7 +29871,7 @@
 /area/f13/prison)
 "bFp" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -29897,13 +29897,13 @@
 /area/f13/desert)
 "bFs" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bFt" = (
 /obj/structure/wreck/trash/three_barrels,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/underground/bos)
@@ -29930,13 +29930,13 @@
 /area/f13/prison)
 "bFx" = (
 /obj/structure/wreck/car/bike,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bFy" = (
 /obj/structure/wreck/trash/four_barrels,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/underground/bos)
@@ -29951,7 +29951,7 @@
 /area/f13/prison)
 "bFA" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -29981,7 +29981,7 @@
 	id = 600;
 	name = "Garage Door"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
@@ -30009,13 +30009,13 @@
 	name = "Garage Door";
 	pixel_y = 24
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/underground/bos)
 "bFL" = (
 /obj/structure/wreck/trash/engine,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
@@ -30023,7 +30023,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/underground/bos)
@@ -30038,7 +30038,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -30052,7 +30052,7 @@
 	dir = 9;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -30068,7 +30068,7 @@
 /area/f13/underground/bos)
 "bFS" = (
 /obj/structure/wreck/trash/five_tires,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/underground/bos)
@@ -30084,7 +30084,7 @@
 	dir = 4;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -30094,13 +30094,13 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bFW" = (
 /obj/structure/fence/corner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavementcorner"
 	},
@@ -30120,19 +30120,19 @@
 /area/f13/underground/bos)
 "bFZ" = (
 /obj/structure/wreck/trash/two_tire,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/underground/bos)
 "bGa" = (
 /obj/structure/wreck/trash/bus_door,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
 "bGb" = (
 /obj/item/wrench,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
@@ -30144,7 +30144,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/underground/bos)
@@ -30152,7 +30152,7 @@
 /obj/structure/wreck/car{
 	dir = 9
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
@@ -30171,7 +30171,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/bos)
 "bGi" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/underground/bos)
@@ -30183,19 +30183,19 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/bos)
 "bGk" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerbordercorner"
 	},
 /area/f13/underground/bos)
 "bGl" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/underground/bos)
 "bGm" = (
 /obj/structure/rack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerbordercorner"
 	},
@@ -30207,12 +30207,12 @@
 /area/f13/underground/bos)
 "bGo" = (
 /obj/machinery/light,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/underground/bos)
 "bGp" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerbordercorner"
 	},
@@ -30222,7 +30222,7 @@
 	dir = 5;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -30246,11 +30246,11 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/bos)
 "bGv" = (
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/underground/bos)
 "bGw" = (
 /obj/structure/rack,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/underground/bos)
 "bGx" = (
 /turf/closed/mineral/plasma,
@@ -30293,7 +30293,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/desert)
@@ -30302,20 +30302,20 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bGG" = (
 /obj/structure/fence/corner,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 6;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bGH" = (
 /obj/structure/closet/crate/bin,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/desert)
@@ -30324,7 +30324,7 @@
 	dir = 9;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 10;
 	icon_state = "outerpavement"
 	},
@@ -30351,7 +30351,7 @@
 	dir = 8;
 	icon_state = "toilet00"
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/underground/bos)
 "bGO" = (
 /obj/structure/sink,
@@ -30360,7 +30360,7 @@
 	},
 /area/f13/prison)
 "bGP" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -30369,7 +30369,7 @@
 	},
 /area/f13/prison)
 "bGQ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -30378,7 +30378,7 @@
 	},
 /area/f13/prison)
 "bGR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -30416,7 +30416,7 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/underground/bos)
 "bGX" = (
 /turf/closed/wall/r_wall/f13composite{
@@ -30604,7 +30604,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/bos)
 "bHy" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -30682,7 +30682,7 @@
 /turf/open/floor/plasteel/cult,
 /area/f13/underground/mountain)
 "bHK" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /turf/closed/wall/f13wood{
@@ -30832,7 +30832,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavementcorner"
 	},
@@ -30842,7 +30842,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -30852,7 +30852,7 @@
 	dir = 8;
 	icon_state = "end"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
@@ -31400,7 +31400,7 @@
 	},
 /area/hallway/secondary/exit)
 "bJP" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2left"
 	},
 /area/maintenance/disposal)
@@ -31409,7 +31409,7 @@
 	dir = 1
 	},
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain2right"
 	},
 /area/maintenance/disposal)
@@ -31428,7 +31428,7 @@
 /area/maintenance/disposal)
 "bJU" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/underground/bos)
@@ -31445,7 +31445,7 @@
 /turf/closed/indestructible/rock,
 /area/f13/underground/mountain)
 "bJX" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/maintenance/disposal)
@@ -31483,7 +31483,7 @@
 /area/maintenance/central/secondary)
 "bKd" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/maintenance/disposal)
@@ -31741,7 +31741,7 @@
 /area/f13/legioncamp)
 "bKV" = (
 /obj/structure/table,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/legioncamp)
 "bKW" = (
@@ -31934,7 +31934,7 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -33745,7 +33745,7 @@
 /area/f13/brotherhood)
 "bQZ" = (
 /obj/structure/simple_door/metal/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -33755,7 +33755,7 @@
 	icon_state = "straight"
 	},
 /obj/structure/sign/warning/securearea,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -33764,12 +33764,12 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bRc" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/ncr_main)
 "bRd" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/ncr_main)
@@ -33900,7 +33900,7 @@
 "bRt" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
-/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/dress/blacktango,
 /obj/item/clothing/under/f13/gentlesuit,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/neck/tie/blue,
@@ -34202,18 +34202,18 @@
 /area/f13/den)
 "bRX" = (
 /obj/machinery/vending/hydronutrients,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bRY" = (
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bRZ" = (
 /obj/machinery/vending/hydroseeds,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bSa" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bSb" = (
 /obj/machinery/light{
@@ -34474,19 +34474,19 @@
 /area/f13/underground/mountain)
 "bSM" = (
 /obj/effect/landmark/start/f13/slavemaster,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bSN" = (
 /obj/effect/landmark/start/f13/recleg,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bSO" = (
 /obj/effect/landmark/start/f13/recleg,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -34541,7 +34541,7 @@
 /area/f13/ncr_main)
 "bSY" = (
 /obj/effect/mine/stun,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/desert)
@@ -34560,43 +34560,43 @@
 /area/f13/ncr_main)
 "bTa" = (
 /obj/effect/landmark/start/f13/orator,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bTb" = (
 /obj/effect/landmark/start/f13/priestess,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bTc" = (
 /obj/effect/landmark/start/f13/legate,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bTd" = (
 /obj/effect/landmark/start/f13/legionary,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bTe" = (
 /obj/effect/landmark/start/f13/explorer,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bTf" = (
 /mob/living/simple_animal/hostile/deathclaw,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
 "bTg" = (
 /obj/item/reagent_containers/food/snacks/f13/egg/deathclaw,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/underground/bos)
@@ -34611,44 +34611,44 @@
 /area/f13/desert)
 "bTi" = (
 /obj/effect/landmark/start/f13/explorer,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bTj" = (
 /obj/effect/landmark/start/f13/centurion,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bTk" = (
 /obj/effect/landmark/start/f13/decanus,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bTl" = (
 /obj/effect/landmark/start/f13/auxilia,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
 "bTm" = (
 /obj/effect/landmark/start/f13/campfollower,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bTn" = (
 /obj/item/flag/legion,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bTo" = (
 /obj/item/flag/legion,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -34685,70 +34685,70 @@
 /area/f13/mountain_bunker)
 "bTu" = (
 /obj/effect/landmark/start/f13/ncrambassador,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bTv" = (
 /obj/effect/landmark/start/f13/ncrcaptain,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
 "bTw" = (
 /obj/effect/landmark/start/f13/ncrcolonel,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bTx" = (
 /obj/effect/landmark/start/f13/ncrht,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bTy" = (
 /obj/effect/landmark/start/f13/ncrlieutenant,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bTz" = (
 /obj/effect/decal/roadline,
 /obj/effect/landmark/start/f13/ncrmp,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bTA" = (
 /obj/effect/decal/roadline,
 /obj/effect/landmark/start/f13/ncrrecruit,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
 "bTB" = (
 /obj/effect/landmark/start/f13/ncrsergeant,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/desert)
 "bTC" = (
 /obj/effect/landmark/start/f13/ncrrecruit,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermainbottom"
 	},
 /area/f13/desert)
 "bTD" = (
 /obj/effect/landmark/start/f13/ncrspecialist,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/desert)
 "bTE" = (
 /obj/effect/landmark/start/f13/ncrtrooper,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermainright"
 	},
 /area/f13/desert)
@@ -34758,7 +34758,7 @@
 /area/f13/desert)
 "bTG" = (
 /obj/effect/landmark/start/f13/ncrtrooper,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertopleft"
 	},
 /area/f13/desert)
@@ -35034,13 +35034,13 @@
 /area/f13/village)
 "bUC" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bUD" = (
 /mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -35357,7 +35357,7 @@
 /area/f13/prison)
 "bVH" = (
 /obj/effect/spawner/lootdrop/f13/traitbooks,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "bVI" = (
 /obj/structure/table,
@@ -35371,7 +35371,7 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -35410,14 +35410,14 @@
 /area/f13/sunny_dale)
 "bVP" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
 "bVQ" = (
 /obj/structure/barricade/wooden,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innercornerpieceright"
 	},
 /area/f13/desert)
@@ -35576,26 +35576,26 @@
 /area/f13/brotherhood)
 "bWo" = (
 /obj/effect/mine/stun,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "bWp" = (
 /obj/effect/mine/stun,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
 "bWq" = (
 /obj/effect/mine/stun,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
 "bWr" = (
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "outerpavement"
 	},
 /area/f13/desert)
@@ -35608,7 +35608,7 @@
 /area/f13/sunny_dale)
 "bWt" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -35617,7 +35617,7 @@
 	dir = 10;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)
@@ -35626,7 +35626,7 @@
 	dir = 6;
 	icon_state = "corner"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/desert)
@@ -35638,7 +35638,7 @@
 /obj/structure/sign/warning/securearea{
 	name = "MILITARIZED ZONE AHEAD"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -35651,7 +35651,7 @@
 /obj/structure/sign/warning/securearea{
 	name = "MILITARIZED ZONE AHEAD"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -35664,7 +35664,7 @@
 /obj/structure/sign/warning/securearea{
 	name = "MILITARIZED ZONE AHEAD"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -36599,7 +36599,7 @@
 /area/f13/ncr_main)
 "czp" = (
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -36750,7 +36750,7 @@
 	name = "intercom";
 	pixel_x = 30
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/sunny_dale)
@@ -36793,7 +36793,7 @@
 "dQg" = (
 /obj/effect/decal/roadline,
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37140,7 +37140,7 @@
 "gLB" = (
 /obj/effect/decal/roadline,
 /obj/effect/landmark/start/f13/ncradmin,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37160,7 +37160,7 @@
 	dir = 4;
 	pixel_x = 11
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -37251,13 +37251,13 @@
 	height = 2;
 	id = "S3"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
 "hQA" = (
 /obj/effect/mine/explosive,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37273,7 +37273,7 @@
 /area/f13/brotherhood)
 "hWN" = (
 /obj/effect/landmark/start/f13/ncrcitizen,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
 /area/f13/desert)
@@ -37416,7 +37416,7 @@
 	dir = 5;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37443,7 +37443,7 @@
 	dir = 8;
 	icon_state = "f13chair2"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/ncr_main)
@@ -37521,7 +37521,7 @@
 /area/f13/sewer)
 "jCd" = (
 /obj/structure/wreck/trash/engine,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/ncr_main)
@@ -37583,7 +37583,7 @@
 	icon_state = "tracks"
 	},
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37669,7 +37669,7 @@
 /obj/effect/decal/roadline,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37734,7 +37734,7 @@
 "lpU" = (
 /obj/effect/decal/roadline,
 /obj/effect/landmark/start/f13/ncrcitizen,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37757,7 +37757,7 @@
 	height = 2;
 	id = "S2"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -37927,7 +37927,7 @@
 /obj/structure/rack,
 /obj/item/reagent_containers/food/snacks/meat/slab/deathclaw,
 /obj/item/stack/sheet/animalhide/f13/deathclaw,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38073,7 +38073,7 @@
 	dir = 4;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38103,7 +38103,7 @@
 "nFf" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38222,7 +38222,7 @@
 	dir = 5;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38288,7 +38288,7 @@
 	dir = 10;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38339,7 +38339,7 @@
 	height = 2;
 	id = "S1"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38521,7 +38521,7 @@
 	},
 /area/f13/desert)
 "qLG" = (
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
 "qOp" = (
 /obj/machinery/door/airlock/hatch{
@@ -38556,7 +38556,7 @@
 /area/f13/underground/mountain)
 "rbQ" = (
 /obj/item/gun/ballistic/revolver/m29/alt,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38624,7 +38624,7 @@
 "rzK" = (
 /obj/effect/decal/roadline,
 /obj/effect/mine/explosive,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
@@ -38709,7 +38709,7 @@
 	dir = 8;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "outerpavement"
 	},
@@ -38723,7 +38723,7 @@
 "smn" = (
 /obj/effect/decal/roadline,
 /obj/effect/mine/explosive,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38826,7 +38826,7 @@
 	dir = 4;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -38944,7 +38944,7 @@
 	height = 2;
 	id = "S4"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -39155,7 +39155,7 @@
 	dir = 4;
 	icon_state = "tracks"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/desert)
@@ -39211,7 +39211,7 @@
 /area/f13/desert)
 "wBD" = (
 /obj/effect/landmark/start/f13/ncrcitizen,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -39362,7 +39362,7 @@
 "xSL" = (
 /obj/structure/barricade/wooden,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
@@ -39378,7 +39378,7 @@
 	name = "intercom";
 	pixel_x = 30
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/sunny_dale)
@@ -39396,7 +39396,7 @@
 "yla" = (
 /obj/structure/fence,
 /obj/structure/timeddoor,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/desert)

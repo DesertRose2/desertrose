@@ -36,7 +36,7 @@
 /area/f13/bunker)
 "aO" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -245,7 +245,7 @@
 "cK" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -541,7 +541,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -676,7 +676,7 @@
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -787,7 +787,7 @@
 "jA" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1251,7 +1251,7 @@
 "oQ" = (
 /obj/structure/closet/fridge/standard,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1388,7 +1388,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1464,7 +1464,7 @@
 "rf" = (
 /obj/machinery/processor,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1528,7 +1528,7 @@
 "sh" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1587,7 +1587,7 @@
 "sU" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -1901,7 +1901,7 @@
 /obj/structure/table,
 /obj/item/storage/box/cups,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -2198,7 +2198,7 @@
 "Ao" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -2611,7 +2611,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -2813,7 +2813,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -2857,7 +2857,7 @@
 "Go" = (
 /obj/structure/window/reinforced/unanchored,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3039,7 +3039,7 @@
 "IC" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3350,7 +3350,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3523,7 +3523,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3664,7 +3664,7 @@
 "Qc" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3693,7 +3693,7 @@
 "Qm" = (
 /obj/structure/junk/machinery,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3851,7 +3851,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3918,7 +3918,7 @@
 "Sk" = (
 /obj/item/stack/conveyor,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -3980,7 +3980,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -4002,7 +4002,7 @@
 "Tc" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -4247,7 +4247,7 @@
 "VS" = (
 /obj/structure/table_frame,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -4362,7 +4362,7 @@
 "WX" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -4429,7 +4429,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)

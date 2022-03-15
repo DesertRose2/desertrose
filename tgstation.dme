@@ -2091,8 +2091,6 @@
 #include "code\modules\fallout\clothing\suits\f13customarmors.dm"
 #include "code\modules\fallout\clothing\suits\f13factionarmor.dm"
 #include "code\modules\fallout\clothing\suits\f13suits.dm"
-#include "code\modules\fallout\clothing\under\f13civilian.dm"
-#include "code\modules\fallout\clothing\under\f13medsci.dm"
 #include "code\modules\fallout\clothing\under\f13pants.dm"
 #include "code\modules\fallout\clothing\under\f13under.dm"
 #include "code\modules\fallout\datums\materials.dm"

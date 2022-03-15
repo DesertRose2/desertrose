@@ -139,7 +139,7 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/clothing_middle,
 /obj/item/clothing/shoes/singery,
-/obj/item/clothing/under/singery,
+/obj/item/clothing/under/costume/singer/yellow,
 /obj/item/clothing/under/f13/bartenderalt,
 /obj/item/clothing/shoes/f13/fancy,
 /obj/item/reagent_containers/food/drinks/flask,

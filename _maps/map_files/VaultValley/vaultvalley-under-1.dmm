@@ -2168,12 +2168,12 @@
 /obj/item/radio/headset/headset_ncr,
 /obj/item/radio/headset/headset_ncr,
 /obj/item/radio/headset/headset_ncr,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -5699,7 +5699,7 @@
 "XE" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},

@@ -215,7 +215,7 @@
 	},
 /area/f13/city)
 "alh" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -286,7 +286,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -591,7 +591,7 @@
 	},
 /area/f13/city)
 "aEQ" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -1036,7 +1036,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bhc" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -1282,7 +1282,7 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/wasteland)
 "bwg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -2230,7 +2230,7 @@
 	},
 /area/f13/wasteland)
 "clR" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "innerturn"
 	},
 /area/f13/wasteland)
@@ -2395,7 +2395,7 @@
 	},
 /area/f13/building)
 "cvA" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "innerturn"
 	},
@@ -3332,7 +3332,7 @@
 /area/f13/wasteland)
 "dlU" = (
 /obj/structure/billboard/cola,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -3390,7 +3390,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "doN" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornervertical"
 	},
@@ -3784,7 +3784,7 @@
 	dir = 8
 	},
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -3842,7 +3842,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -4084,7 +4084,7 @@
 /area/f13/building)
 "dWL" = (
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -4714,7 +4714,7 @@
 	},
 /area/f13/wasteland)
 "eEh" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "tinycornerhorizontal"
 	},
 /area/f13/wasteland)
@@ -5373,7 +5373,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "fib" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "innerturn"
 	},
@@ -5447,7 +5447,7 @@
 /area/f13/wasteland)
 "fpV" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornervertical"
 	},
@@ -5634,7 +5634,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -6156,7 +6156,7 @@
 "fYB" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/storage/trash_stack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -6424,7 +6424,7 @@
 /area/f13/building)
 "gjV" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "gjW" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -6598,7 +6598,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -6676,7 +6676,7 @@
 /area/f13/building)
 "gtN" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/hooded/parka/grey,
+/obj/item/clothing/suit/hooded/f13/parka/grey,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/building)
 "guA" = (
@@ -7212,7 +7212,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -7521,7 +7521,7 @@
 	dir = 4
 	},
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -7546,7 +7546,7 @@
 /turf/open/floor/wood/f13/maple,
 /area/f13/city)
 "hmu" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -7680,7 +7680,7 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/structure/decoration/vent,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -8269,7 +8269,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -9218,7 +9218,7 @@
 /area/f13/building)
 "iTl" = (
 /obj/item/storage/trash_stack,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -9283,7 +9283,7 @@
 /area/f13/building)
 "iVw" = (
 /obj/effect/turf_decal/loading_area,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -9487,7 +9487,7 @@
 /area/f13/brotherhood)
 "jiv" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -9643,7 +9643,7 @@
 	icon_state = "room"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -9661,7 +9661,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -9854,7 +9854,7 @@
 /area/f13/building)
 "jGk" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornervertical"
 	},
@@ -10074,7 +10074,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
 "jWx" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornervertical"
 	},
@@ -10621,7 +10621,7 @@
 "kxM" = (
 /obj/structure/table,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -11471,7 +11471,7 @@
 /area/f13/legion)
 "lpJ" = (
 /obj/structure/car/rubbish1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -11760,7 +11760,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "lDF" = (
-/turf/open/floor/plating/f13/outside/roof,
+/turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "lDK" = (
 /obj/structure/table/wood,
@@ -12527,7 +12527,7 @@
 /area/f13/wasteland)
 "mxK" = (
 /obj/structure/car/rubbish1,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "innerturn"
 	},
@@ -12674,7 +12674,7 @@
 /area/f13/building)
 "mGn" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornervertical"
 	},
@@ -12970,7 +12970,7 @@
 	},
 /area/f13/building)
 "mSt" = (
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "mSA" = (
 /obj/effect/decal/cleanable/generic,
@@ -13340,7 +13340,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "nmD" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "innerturn"
 	},
@@ -14599,7 +14599,7 @@
 "oyP" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/head/helmet/gladiator,
-/obj/item/clothing/under/gladiator,
+/obj/item/clothing/under/costume/gladiator,
 /obj/item/locked_box/armor/prewar_costumes,
 /turf/open/floor/f13,
 /area/f13/building)
@@ -14807,7 +14807,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -16642,8 +16642,8 @@
 "qAr" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/winterboots,
-/obj/item/clothing/gloves/rifleman,
-/obj/item/clothing/suit/hooded/parka/grey,
+/obj/item/clothing/gloves/f13/rifleman,
+/obj/item/clothing/suit/hooded/f13/parka/grey,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qAx" = (
@@ -16764,7 +16764,7 @@
 /area/f13/building)
 "qDP" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "tinycornervertical"
 	},
@@ -16968,7 +16968,7 @@
 	},
 /area/f13/wasteland)
 "qMM" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -17238,7 +17238,7 @@
 "rdm" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
@@ -17407,7 +17407,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/city)
 "rna" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "tinycornervertical"
 	},
 /area/f13/wasteland)
@@ -18161,7 +18161,7 @@
 /area/f13/legion)
 "saS" = (
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/city)
@@ -19012,7 +19012,7 @@
 /area/f13/wasteland)
 "sXR" = (
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -19775,7 +19775,7 @@
 	},
 /area/f13/brotherhood)
 "tMu" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornerhorizontal"
 	},
@@ -20254,7 +20254,7 @@
 /area/f13/building)
 "umE" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "tinycornervertical"
 	},
 /area/f13/wasteland)
@@ -22107,7 +22107,7 @@
 	},
 /area/f13/building)
 "wef" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "tinycornervertical"
 	},
@@ -22707,7 +22707,7 @@
 /obj/item/gun/ballistic/revolver/widowmaker,
 /obj/item/gun/ballistic/rifle/mag/varmint,
 /obj/item/ammo_box/magazine/m556/rifle/small,
-/obj/item/clothing/under/overalls,
+/obj/item/clothing/under/misc/overalls,
 /obj/item/clothing/shoes/workboots,
 /obj/effect/spawner/lootdrop/ammo/shotgun,
 /turf/open/floor/f13/wood,
@@ -22898,7 +22898,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -23072,7 +23072,7 @@
 "xcb" = (
 /obj/machinery/grill,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)

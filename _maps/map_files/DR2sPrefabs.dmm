@@ -48,7 +48,7 @@
 "ai" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/dress/blacktango,
 /obj/item/clothing/under/f13/gentlesuit,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /turf/open/floor/f13/wood,
@@ -183,8 +183,8 @@
 /area/space)
 "aC" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/blacktango,
-/obj/item/clothing/under/redeveninggown,
+/obj/item/clothing/under/dress/blacktango,
+/obj/item/clothing/under/dress/redeveninggown,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -405,7 +405,7 @@
 /obj/item/clothing/under/f13/pinkdress,
 /obj/item/clothing/under/f13/relaxedwear,
 /obj/item/clothing/under/f13/spring,
-/obj/item/clothing/under/redeveninggown,
+/obj/item/clothing/under/dress/redeveninggown,
 /turf/open/floor/f13/wood,
 /area/space)
 "bf" = (
@@ -1448,7 +1448,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
-/obj/item/clothing/gloves/rifleman,
+/obj/item/clothing/gloves/f13/rifleman,
 /turf/open/floor/f13/wood,
 /area/space)
 "dR" = (
@@ -5757,7 +5757,7 @@
 /area/space)
 "qR" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/space)
@@ -6832,13 +6832,13 @@
 /area/space)
 "GT" = (
 /obj/structure/fence,
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/space)
 "GU" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
@@ -6847,13 +6847,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 1;
 	icon_state = "outerpavement"
 	},
 /area/space)
 "GW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 5;
 	icon_state = "outerpavement"
 	},
@@ -6903,7 +6903,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/space)
 "Hf" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -6923,7 +6923,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},
@@ -7021,7 +7021,7 @@
 	dir = 4;
 	icon_state = "straight"
 	},
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	dir = 4;
 	icon_state = "outerpavement"
 	},

@@ -121,7 +121,7 @@
 /turf/closed/indestructible/riveted,
 /area/f13/underground/mountain)
 "aw" = (
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "ax" = (
 /obj/effect/holodeck_effect/mobspawner/penguin,
@@ -590,7 +590,7 @@
 "bW" = (
 /obj/structure/table/glass,
 /obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /obj/item/clothing/mask/surgical,
 /turf/open/floor/holofloor{
 	icon_state = "white"
@@ -1538,14 +1538,14 @@
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/clothing/under/schoolgirl,
+/obj/item/clothing/under/costume/schoolgirl,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
 "eD" = (
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/clothing/under/schoolgirl/green,
+/obj/item/clothing/under/costume/schoolgirl/green,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
 "eE" = (
@@ -1655,14 +1655,14 @@
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/clothing/under/schoolgirl/orange,
+/obj/item/clothing/under/costume/schoolgirl/orange,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
 "eU" = (
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/clothing/under/schoolgirl/red,
+/obj/item/clothing/under/costume/schoolgirl/red,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
 "eV" = (
@@ -1748,7 +1748,7 @@
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/obj/item/clothing/under/schoolgirl,
+/obj/item/clothing/under/costume/schoolgirl,
 /obj/item/toy/katana,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
@@ -2362,7 +2362,7 @@
 	name = "Syndicate Auxillary Shuttle Dock";
 	width = 50
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "hm" = (
 /obj/effect/turf_decal/stripes/line,
@@ -3454,7 +3454,7 @@
 	set_cap = 1;
 	set_luminosity = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "kj" = (
 /obj/machinery/light,
@@ -3512,7 +3512,7 @@
 	set_cap = 1;
 	set_luminosity = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "ku" = (
 /turf/closed/indestructible/riveted,
@@ -4152,7 +4152,7 @@
 /area/abductor_ship)
 "ma" = (
 /obj/structure/flora/grass/wasteland,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "mb" = (
 /obj/machinery/computer/shuttle/labor,
@@ -4327,7 +4327,7 @@
 /area/abductor_ship)
 "my" = (
 /obj/structure/flora/tree/wasteland,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "mz" = (
 /obj/item/disk/data,
@@ -4335,7 +4335,7 @@
 	set_cap = 1;
 	set_luminosity = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "mA" = (
 /obj/item/toy/figure/syndie,
@@ -4343,7 +4343,7 @@
 	set_cap = 1;
 	set_luminosity = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "mB" = (
 /obj/effect/baseturf_helper/asteroid/snow,
@@ -4355,7 +4355,7 @@
 	set_cap = 1;
 	set_luminosity = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "mD" = (
 /obj/structure/chair/office/dark{
@@ -4563,7 +4563,7 @@
 	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
 	width = 23
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "ni" = (
 /turf/open/floor/plasteel/grimy,
@@ -4693,7 +4693,7 @@
 	name = "\improper FOURTH WALL";
 	pixel_x = -32
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "ny" = (
 /obj/machinery/light{
@@ -4840,7 +4840,7 @@
 /area/centcom/evac)
 "nU" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/under/rank/curator/treasure_hunter,
+/obj/item/clothing/under/rank/civilian/curator/treasure_hunter,
 /obj/item/clothing/under/color/jumpskirt/black,
 /obj/item/clothing/under/shorts/black,
 /obj/item/clothing/under/pants/track,
@@ -5310,7 +5310,7 @@
 /area/centcom/holding)
 "oW" = (
 /obj/item/toy/figure/syndie,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "oX" = (
 /obj/item/twohanded/required/kirbyplants{
@@ -5545,7 +5545,7 @@
 /area/syndicate_mothership/control)
 "pG" = (
 /obj/structure/statue/uranium/nuke,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "pH" = (
 /obj/structure/sign/plaques/thunderdome{
@@ -6065,7 +6065,7 @@
 /area/f13/underground/mountain)
 "rd" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "re" = (
 /obj/item/paper/fluff/stations/centcom/disk_memo,
@@ -9243,7 +9243,7 @@
 /turf/open/floor/grass,
 /area/centcom/evac)
 "zK" = (
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/centcom/evac)
 "zL" = (
 /obj/structure/window/reinforced,
@@ -9456,7 +9456,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "At" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross1"
 	},
 /area/centcom/evac)
@@ -9917,7 +9917,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "BZ" = (
 /obj/effect/turf_decal/loading_area{
@@ -10007,7 +10007,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "Cl" = (
 /obj/machinery/button/door{
@@ -11952,9 +11952,9 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "OU" = (
-/obj/item/clothing/under/jabroni,
-/obj/item/clothing/under/geisha,
-/obj/item/clothing/under/kilt,
+/obj/item/clothing/under/costume/jabroni,
+/obj/item/clothing/under/costume/geisha,
+/obj/item/clothing/under/costume/kilt,
 /obj/structure/closet,
 /turf/open/floor/wood,
 /area/centcom/holding)
@@ -12577,7 +12577,7 @@
 /area/centcom/holding)
 "Wh" = (
 /obj/effect/turf_decal/caution/stand_clear,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/syndicate_mothership)
 "Wx" = (
 /obj/structure/rack,

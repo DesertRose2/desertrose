@@ -112,7 +112,7 @@
 	name = "purple bartender's outfit spawner"
 	items = list(
 				/obj/item/clothing/neck/apron/bartender,
-				/obj/item/clothing/under/rank/bartender/purple
+				/obj/item/clothing/under/rank/civilian/bartender/purple
 				)
 
 /obj/effect/spawner/bundle/f13/plaidskirt/bluered

@@ -4260,7 +4260,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/underground/cave/vault)
 "kj" = (
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/underground/cave/vault)
 "kk" = (
 /obj/structure/foamedmetal,
@@ -4278,7 +4278,7 @@
 /area/f13/underground/vault_atrium_Lower)
 "km" = (
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/f13/outside/desert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/underground/cave/vault)
 "kn" = (
 /obj/structure/disposalpipe/segment,

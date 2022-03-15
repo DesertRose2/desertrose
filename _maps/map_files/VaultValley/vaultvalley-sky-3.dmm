@@ -138,7 +138,7 @@
 /obj/structure/fluff/railing{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "bJ" = (
 /obj/item/vending_refill/cigarette,
@@ -280,7 +280,7 @@
 /area/f13/wasteland)
 "cY" = (
 /obj/structure/railing/corner,
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "dg" = (
 /obj/machinery/light/small{
@@ -707,7 +707,7 @@
 "gF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "gG" = (
 /obj/structure/table/reinforced,
@@ -817,7 +817,7 @@
 /area/f13/city)
 "hN" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
 /turf/open/floor/carpet/red,
 /area/f13/brotherhood)
 "hS" = (
@@ -869,7 +869,7 @@
 /area/f13/wasteland)
 "ig" = (
 /obj/structure/railing,
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "ii" = (
 /obj/item/kirbyplants,
@@ -923,7 +923,7 @@
 /obj/structure/fluff/railing{
 	dir = 6
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "iG" = (
 /obj/structure/closet/cabinet/anchored,
@@ -949,7 +949,7 @@
 	anchored = 1;
 	name = "formal attire cabinet"
 	},
-/obj/item/clothing/accessory/bos/elder,
+/obj/item/clothing/accessory/f13/bos/elder,
 /obj/item/clothing/suit/f13/elder,
 /obj/item/pda/heads/hop{
 	name = "Elder's PDA"
@@ -1040,7 +1040,7 @@
 /area/f13/city)
 "jN" = (
 /obj/item/pizzabox,
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "jO" = (
 /obj/structure/rack,
@@ -1229,7 +1229,7 @@
 /area/f13/city)
 "kZ" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/toggle/labcoat/scribecoat,
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
 "le" = (
@@ -1253,7 +1253,7 @@
 /obj/structure/railing/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "lk" = (
 /obj/structure/fence{
@@ -1422,7 +1422,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/city)
 "mF" = (
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "mH" = (
 /obj/structure/table/wood,
@@ -1632,7 +1632,7 @@
 /obj/structure/railing{
 	dir = 5
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "oB" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1782,7 +1782,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "pS" = (
-/turf/open/floor/plating/f13/outside/roof/wood/old,
+/turf/open/indestructible/ground/outside/roof/wood/old,
 /area/f13/wasteland)
 "pV" = (
 /obj/structure/closet/crate/grave{
@@ -1799,7 +1799,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/vertibird,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "pZ" = (
 /obj/structure/chair/office/dark{
@@ -1849,7 +1849,7 @@
 /obj/structure/fluff/railing/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "qz" = (
 /obj/structure/table,
@@ -1926,7 +1926,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "rE" = (
 /obj/machinery/door/unpowered/securedoor{
@@ -1999,7 +1999,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "se" = (
 /obj/machinery/light/small/broken{
@@ -2061,7 +2061,7 @@
 /obj/structure/fluff/railing{
 	dir = 10
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "sz" = (
 /obj/structure/chair/comfy/beige,
@@ -2137,7 +2137,7 @@
 /obj/structure/fluff/railing{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "sY" = (
 /obj/structure/fence/corner/wooden{
@@ -2505,7 +2505,7 @@
 /obj/structure/fluff/railing/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "vU" = (
 /obj/item/chair,
@@ -2622,7 +2622,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/singerb,
 /obj/item/clothing/shoes/singery,
-/obj/item/clothing/under/singery,
+/obj/item/clothing/under/costume/singer/yellow,
 /obj/item/clothing/under/costume/singer/yellow,
 /obj/item/clothing/under/costume/singer/blue,
 /obj/item/clothing/under/costume/singer/yellow/custom,
@@ -2680,7 +2680,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/floor/plating/f13/outside/roof/red,
+/turf/open/indestructible/ground/outside/roof/red,
 /area/f13/wasteland)
 "xS" = (
 /obj/structure/window/fulltile/house{
@@ -2907,7 +2907,7 @@
 /area/f13/city)
 "yW" = (
 /obj/structure/railing,
-/turf/open/floor/plating/f13/outside/roof/red,
+/turf/open/indestructible/ground/outside/roof/red,
 /area/f13/wasteland)
 "zg" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -2928,7 +2928,7 @@
 	},
 /area/f13/city)
 "zo" = (
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "zq" = (
 /obj/machinery/hydroponics/soil{
@@ -2993,7 +2993,7 @@
 /obj/structure/fluff/railing{
 	dir = 9
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "zZ" = (
 /obj/structure/decoration/rag,
@@ -3003,7 +3003,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/village)
 "Aa" = (
-/turf/open/floor/plating/f13/outside/roof/metal/verdigris,
+/turf/open/indestructible/ground/outside/roof/metal/verdigris,
 /area/f13/wasteland)
 "Ab" = (
 /turf/closed/wall/r_wall,
@@ -3251,7 +3251,7 @@
 	},
 /area/f13/wasteland)
 "Cj" = (
-/turf/open/floor/plating/f13/outside/roof/wood,
+/turf/open/indestructible/ground/outside/roof/wood,
 /area/f13/wasteland)
 "Cm" = (
 /turf/open/transparent/openspace,
@@ -3263,7 +3263,7 @@
 /area/f13/ncr)
 "Cw" = (
 /obj/structure/fluff/railing,
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "Cx" = (
 /turf/closed/wall/f13/wood,
@@ -3290,7 +3290,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/roof/red,
+/turf/open/indestructible/ground/outside/roof/red,
 /area/f13/wasteland)
 "Dc" = (
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant{
@@ -3340,7 +3340,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "Dx" = (
 /obj/structure/fence/corner/wooden{
@@ -3352,7 +3352,7 @@
 /obj/structure/fluff/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "DE" = (
 /obj/item/bedsheet/black,
@@ -3427,7 +3427,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "Ee" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -3448,7 +3448,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "Es" = (
 /obj/machinery/door/airlock/hatch{
@@ -3484,7 +3484,7 @@
 /obj/structure/fluff/railing{
 	dir = 5
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
+/turf/open/indestructible/ground/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "EA" = (
 /obj/structure/rack,
@@ -3565,7 +3565,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "Fn" = (
 /obj/item/kirbyplants/dead{
@@ -3792,7 +3792,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	name = "Veteran Ranger"
 	},
-/turf/open/floor/plating/f13/outside/roof,
+/turf/open/indestructible/ground/outside/roof,
 /area/f13/ncr)
 "Ha" = (
 /obj/structure/dresser,
@@ -3847,7 +3847,7 @@
 	pixel_x = 11;
 	pixel_y = -6
 	},
-/turf/open/floor/plating/f13/outside/roof,
+/turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "HW" = (
 /turf/closed/wall,
@@ -4028,7 +4028,7 @@
 	},
 /area/f13/building)
 "Jy" = (
-/turf/open/floor/plating/f13/outside/roof,
+/turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "JO" = (
 /obj/structure/chair/comfy/brown{
@@ -4114,7 +4114,7 @@
 /obj/structure/railing{
 	dir = 6
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "KE" = (
 /obj/structure/spirit_board,
@@ -4126,7 +4126,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "KL" = (
 /obj/structure/sign/warning/securearea,
@@ -4329,7 +4329,7 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/bundle/costume/nyangirl,
 /obj/item/clothing/under/color/random,
-/obj/item/clothing/under/draculass,
+/obj/item/clothing/under/costume/draculass,
 /turf/open/floor/carpet/black,
 /area/f13/building)
 "MF" = (
@@ -4590,7 +4590,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "Oo" = (
 /obj/structure/fluff/railing{
@@ -4748,7 +4748,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "PI" = (
 /obj/structure/rack,
@@ -4989,7 +4989,7 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "Rx" = (
-/turf/open/floor/plating/f13/outside/roof/red,
+/turf/open/indestructible/ground/outside/roof/red,
 /area/f13/wasteland)
 "RD" = (
 /obj/structure/table/reinforced,
@@ -5229,7 +5229,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/roof/red,
+/turf/open/indestructible/ground/outside/roof/red,
 /area/f13/wasteland)
 "Tu" = (
 /obj/structure/table/reinforced,
@@ -5535,7 +5535,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
+/turf/open/indestructible/ground/outside/roof/metal,
 /area/f13/wasteland)
 "WA" = (
 /obj/structure/simple_door/room,
@@ -5575,7 +5575,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/f13/outside/road,
+/turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "WK" = (
 /obj/structure/rack,

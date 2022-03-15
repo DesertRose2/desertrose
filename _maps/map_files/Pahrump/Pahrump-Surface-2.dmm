@@ -578,7 +578,7 @@
 /obj/effect/spawner/lootdrop/clothing_high,
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -699,7 +699,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -722,7 +722,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -750,7 +750,7 @@
 "akn" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -981,7 +981,7 @@
 /obj/structure/closet/anchored{
 	pixel_y = 10
 	},
-/obj/item/clothing/under/draculass,
+/obj/item/clothing/under/costume/draculass,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/item/reagent_containers/glass/rag/towel,
 /obj/effect/decal/cleanable/dirt,
@@ -1035,7 +1035,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -1314,7 +1314,7 @@
 /obj/structure/closet/anchored{
 	pixel_y = 10
 	},
-/obj/item/clothing/under/pirate,
+/obj/item/clothing/under/costume/pirate,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/item/reagent_containers/glass/rag/towel,
 /obj/effect/decal/cleanable/dirt,
@@ -1356,7 +1356,7 @@
 /obj/structure/closet/anchored{
 	pixel_y = 10
 	},
-/obj/item/clothing/under/suit_jacket/female,
+/obj/item/clothing/under/suit/black/skirt,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/item/reagent_containers/glass/rag/towel,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1403,7 +1403,7 @@
 /obj/structure/closet/anchored{
 	pixel_y = 10
 	},
-/obj/item/clothing/under/geisha,
+/obj/item/clothing/under/costume/geisha,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/item/reagent_containers/glass/rag/towel,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1480,7 +1480,7 @@
 	icon_state = "bench"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -1724,7 +1724,7 @@
 /obj/effect/decal/remains/human,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -2353,7 +2353,7 @@
 "aMp" = (
 /obj/structure/closet,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -2786,7 +2786,7 @@
 /area/f13/city)
 "aSL" = (
 /obj/item/clothing/head/helmet/gladiator,
-/obj/item/clothing/under/gladiator,
+/obj/item/clothing/under/costume/gladiator,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/cabinet/anchored{
@@ -2920,7 +2920,7 @@
 "aVq" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -3611,7 +3611,7 @@
 /obj/item/paper,
 /obj/item/pen,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -3688,7 +3688,7 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -4056,7 +4056,7 @@
 /obj/effect/decal/remains/human,
 /mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -4224,7 +4224,7 @@
 	termtag = "Security"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -4474,7 +4474,7 @@
 "buv" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -4541,7 +4541,7 @@
 "bvP" = (
 /obj/machinery/autolathe/constructionlathe,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -5222,7 +5222,7 @@
 /obj/machinery/light,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -6632,7 +6632,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -6913,7 +6913,7 @@
 /area/f13/building)
 "cru" = (
 /obj/structure/table/wood,
-/obj/item/clothing/head/fluff/bandit,
+/obj/item/clothing/head/f13/bandit,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -7647,7 +7647,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -9860,7 +9860,7 @@
 /obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /obj/item/storage/pill_bottle/chem_tin/f13/radx,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -10593,7 +10593,7 @@
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/clothing/gloves/f13/military,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -11305,7 +11305,7 @@
 /obj/structure/rack,
 /obj/item/clothing/under/dress/redeveninggown,
 /obj/structure/rack,
-/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/dress/blacktango,
 /obj/item/clothing/gloves/evening/black,
 /obj/item/clothing/gloves/evening,
 /obj/effect/decal/cleanable/dirt{
@@ -11838,10 +11838,10 @@
 /obj/item/clothing/under/costume/schoolgirl/green,
 /obj/item/clothing/under/costume/schoolgirl/orange,
 /obj/item/clothing/under/costume/schoolgirl/red,
-/obj/item/clothing/under/schoolgirl,
-/obj/item/clothing/under/schoolgirl/green,
-/obj/item/clothing/under/schoolgirl/orange,
-/obj/item/clothing/under/schoolgirl/red,
+/obj/item/clothing/under/costume/schoolgirl,
+/obj/item/clothing/under/costume/schoolgirl/green,
+/obj/item/clothing/under/costume/schoolgirl/orange,
+/obj/item/clothing/under/costume/schoolgirl/red,
 /obj/item/clothing/under/f13/blackdress,
 /obj/item/clothing/under/f13/erpdress,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13098,7 +13098,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -13832,7 +13832,7 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -13964,7 +13964,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -15755,7 +15755,7 @@
 /obj/item/clothing/gloves/f13/military,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -15959,7 +15959,7 @@
 "fBp" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -17316,7 +17316,7 @@
 	},
 /area/f13/building)
 "gaq" = (
-/obj/item/clothing/under/rank/clown/sexy,
+/obj/item/clothing/under/rank/civilian/clown/sexy,
 /obj/item/clothing/mask/gas/sexyclown,
 /obj/item/clothing/suit/f13/sexymaid,
 /obj/structure/closet/cabinet/anchored{
@@ -17666,12 +17666,12 @@
 /obj/item/radio/headset/headset_ncr,
 /obj/item/radio/headset/headset_ncr,
 /obj/item/radio/headset/headset_ncr,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
-/obj/item/clothing/mask/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
+/obj/item/clothing/mask/f13/ncr_facewrap,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -17857,7 +17857,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/ammo,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -18468,7 +18468,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -20028,7 +20028,7 @@
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /obj/item/clothing/mask/gas/glass,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -20173,7 +20173,7 @@
 	termtag = "Security"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -20477,7 +20477,7 @@
 	amount = 50
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -20900,7 +20900,7 @@
 "hkA" = (
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -21176,7 +21176,7 @@
 	icon_state = "hpcell"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -21301,7 +21301,7 @@
 	id = 42
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -21450,7 +21450,7 @@
 "huc" = (
 /obj/structure/rack,
 /obj/item/clothing/head/rice_hat,
-/obj/item/clothing/under/geisha,
+/obj/item/clothing/under/costume/geisha,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hui" = (
@@ -24016,7 +24016,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/indestructible/rock{
 	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
+	icon = 'icons/fallout/turfs/walls/f13superstore.dmi';
 	icon_state = "supermart";
 	icon_type_smooth = "supermart";
 	name = "supermart wall";
@@ -24625,7 +24625,7 @@
 /obj/structure/table,
 /obj/item/phone,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -24684,7 +24684,7 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -25539,7 +25539,7 @@
 /obj/structure/rack,
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -25996,7 +25996,7 @@
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -27340,7 +27340,7 @@
 "jkT" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -27369,7 +27369,7 @@
 	},
 /mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -27444,7 +27444,7 @@
 	id = 61
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -27743,7 +27743,7 @@
 	termtag = "Security"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -28646,7 +28646,7 @@
 /obj/item/storage/belt/military/army,
 /obj/item/kitchen/knife/combat,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -29121,7 +29121,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -29349,7 +29349,7 @@
 "jXf" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -29659,7 +29659,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -29719,7 +29719,7 @@
 /obj/effect/decal/remains/human,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -30475,7 +30475,7 @@
 "kpr" = (
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -31418,7 +31418,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -31886,7 +31886,7 @@
 /obj/effect/spawner/lootdrop/clothing_low,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/item/clothing/under/f13/classdress,
-/obj/item/clothing/mask/society,
+/obj/item/clothing/mask/f13/society,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -32329,7 +32329,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -32340,7 +32340,7 @@
 	termtag = "Business"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -33837,7 +33837,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -34230,7 +34230,7 @@
 /area/f13/wasteland)
 "lCD" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/item/clothing/under/stripeddress,
+/obj/item/clothing/under/dress/striped,
 /obj/item/clothing/suit/f13/sexymaid,
 /obj/structure/closet/cabinet/anchored{
 	pixel_y = 10
@@ -34420,7 +34420,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -34616,7 +34616,7 @@
 /obj/item/paper,
 /obj/item/pen,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -35102,7 +35102,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "lSI" = (
-/obj/item/clothing/under/lawyer/female{
+/obj/item/clothing/under/rank/civilian/lawyer/female{
 	pixel_x = -5;
 	pixel_y = -5
 	},
@@ -35233,7 +35233,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -35471,8 +35471,8 @@
 /area/f13/building)
 "maX" = (
 /obj/structure/rack,
-/obj/item/clothing/under/redeveninggown,
-/obj/item/clothing/under/redeveninggown,
+/obj/item/clothing/under/dress/redeveninggown,
+/obj/item/clothing/under/dress/redeveninggown,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
@@ -35795,7 +35795,7 @@
 	termtag = "Security"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -36186,10 +36186,10 @@
 	},
 /area/f13/ncr)
 "mpQ" = (
-/obj/item/clothing/suit/armor/khan_jacket,
-/obj/item/clothing/suit/armor/khan_jacket,
-/obj/item/clothing/suit/armor/khan_jacket,
-/obj/item/clothing/suit/armor/khan_jacket,
+/obj/item/clothing/suit/armor/f13/khan_jacket,
+/obj/item/clothing/suit/armor/f13/khan_jacket,
+/obj/item/clothing/suit/armor/f13/khan_jacket,
+/obj/item/clothing/suit/armor/f13/khan_jacket,
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
@@ -36549,7 +36549,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -36569,7 +36569,7 @@
 "mwc" = (
 /obj/machinery/vending/snack,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -37070,7 +37070,7 @@
 "mHS" = (
 /obj/machinery/vending/tool,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -37433,7 +37433,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -37900,7 +37900,7 @@
 "mWn" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/shoes/thighboot/platform{
+/obj/item/clothing/shoes/f13/thighboot/platform{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -38066,7 +38066,7 @@
 /area/f13/wasteland)
 "mZD" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -38439,7 +38439,7 @@
 	id = 42
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -38731,7 +38731,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -38786,7 +38786,7 @@
 	},
 /area/f13/wasteland)
 "nqk" = (
-/obj/item/clothing/under/redeveninggown,
+/obj/item/clothing/under/dress/redeveninggown,
 /obj/item/clothing/suit/f13/sexymaid,
 /obj/structure/closet/cabinet/anchored{
 	pixel_y = 10
@@ -39358,7 +39358,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -39511,7 +39511,7 @@
 /area/f13/building)
 "nDz" = (
 /obj/structure/rack,
-/obj/item/clothing/mask/rat/vaultboy,
+/obj/item/clothing/mask/f13/vaultboy,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -39795,7 +39795,7 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/wasteland)
 "nIv" = (
-/obj/item/clothing/under/soviet,
+/obj/item/clothing/under/costume/soviet,
 /obj/structure/displaycase,
 /turf/open/floor/carpet/royalblack,
 /area/f13/building)
@@ -39921,14 +39921,14 @@
 "nKF" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/head/beret/headband,
+/obj/item/clothing/head/f13/beret/headband,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/mask/bandana/black,
 /obj/item/clothing/mask/bandana/blue,
 /obj/item/clothing/mask/bandana/durathread,
 /obj/item/clothing/mask/bandana/gold,
 /obj/item/clothing/mask/bandana/green,
-/obj/item/clothing/mask/bandana/oldredbandana,
+/obj/item/clothing/mask/bandana/f13/oldredbandana,
 /obj/item/clothing/mask/bandana/red,
 /obj/item/clothing/mask/bandana/skull,
 /turf/open/floor/f13/wood,
@@ -40528,7 +40528,7 @@
 "nVu" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -40926,7 +40926,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -41477,7 +41477,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -42180,7 +42180,7 @@
 "oxy" = (
 /obj/effect/spawner/lootdrop/clothing_low,
 /obj/item/clothing/under/f13/classdress,
-/obj/item/clothing/mask/society,
+/obj/item/clothing/mask/f13/society,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -42794,7 +42794,7 @@
 "oIm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -43327,7 +43327,7 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -43565,7 +43565,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -43763,7 +43763,7 @@
 /area/f13/bar)
 "oYX" = (
 /obj/structure/rack,
-/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/dress/blacktango,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -44835,7 +44835,7 @@
 /obj/item/paper,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -45024,7 +45024,7 @@
 /area/f13/building)
 "pvA" = (
 /obj/structure/rack,
-/obj/item/clothing/under/suit_jacket/navy,
+/obj/item/clothing/under/suit/navy,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pvC" = (
@@ -45123,7 +45123,7 @@
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -45614,7 +45614,7 @@
 /area/f13/caves)
 "pFl" = (
 /obj/structure/rack,
-/obj/item/clothing/under/assistantformal,
+/obj/item/clothing/under/misc/assistantformal,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pFv" = (
@@ -47233,7 +47233,7 @@
 /obj/structure/rack,
 /obj/item/pickaxe,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -49608,7 +49608,7 @@
 /area/f13/building)
 "rdB" = (
 /obj/structure/rack,
-/obj/item/clothing/under/sundress,
+/obj/item/clothing/under/dress/sundress,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "rdC" = (
@@ -49710,7 +49710,7 @@
 "rfP" = (
 /obj/structure/rack,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -50597,7 +50597,7 @@
 	icon_state = "bench"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -50692,7 +50692,7 @@
 "ryY" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -51631,7 +51631,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -51871,7 +51871,7 @@
 	id = 42
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -52076,7 +52076,7 @@
 "rXj" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -52297,7 +52297,7 @@
 	icon_state = "remains"
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -52306,7 +52306,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -52665,7 +52665,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -52738,7 +52738,7 @@
 /obj/structure/rack,
 /obj/item/clothing/under/f13/Retro_Biker_Vest,
 /obj/item/clothing/gloves/Biker,
-/obj/item/clothing/head/fluff/Bikerhelmet,
+/obj/item/clothing/head/f13/Bikerhelmet,
 /obj/item/clothing/mask/frog,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -54263,7 +54263,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "sDS" = (
-/obj/item/clothing/under/jabroni,
+/obj/item/clothing/under/costume/jabroni,
 /obj/structure/displaycase,
 /turf/open/floor/carpet/purple,
 /area/f13/building)
@@ -55011,7 +55011,7 @@
 /obj/structure/spider/stickyweb,
 /obj/machinery/light,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -55047,7 +55047,7 @@
 "sSJ" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -55947,7 +55947,7 @@
 "thb" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -57340,7 +57340,7 @@
 /obj/structure/spider/stickyweb,
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -57660,7 +57660,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -57797,7 +57797,7 @@
 /obj/structure/rack,
 /obj/item/storage/belt/utility/full,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -58601,7 +58601,7 @@
 /obj/effect/spawner/lootdrop/clothing_low,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/item/clothing/under/f13/classdress,
-/obj/item/clothing/mask/society,
+/obj/item/clothing/mask/f13/society,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -58970,7 +58970,7 @@
 "ufP" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -60461,7 +60461,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -60794,7 +60794,7 @@
 /area/f13/bar)
 "uQe" = (
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -61826,7 +61826,7 @@
 	},
 /obj/structure/table,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -62016,7 +62016,7 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -63903,7 +63903,7 @@
 "vPz" = (
 /mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -66257,7 +66257,7 @@
 	},
 /turf/closed/indestructible/rock{
 	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
+	icon = 'icons/fallout/turfs/walls/f13superstore.dmi';
 	icon_state = "supermart";
 	icon_type_smooth = "supermart";
 	name = "supermart wall";
@@ -66596,7 +66596,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /obj/effect/spawner/lootdrop/clothing_low,
 /obj/item/clothing/under/f13/classdress,
-/obj/item/clothing/mask/society,
+/obj/item/clothing/mask/f13/society,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -66741,7 +66741,7 @@
 "wOo" = (
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -67317,7 +67317,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -67622,7 +67622,7 @@
 "xcm" = (
 /obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -67749,7 +67749,7 @@
 /area/f13/building)
 "xee" = (
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/city)
@@ -67982,7 +67982,7 @@
 /area/f13/building)
 "xiH" = (
 /obj/structure/rack,
-/obj/item/clothing/under/lawyer/female{
+/obj/item/clothing/under/rank/civilian/lawyer/female{
 	pixel_x = -5;
 	pixel_y = -5
 	},
@@ -68394,7 +68394,7 @@
 /obj/structure/rack,
 /obj/item/clothing/neck/tie/black,
 /obj/item/clothing/accessory/pocketprotector/full,
-/obj/item/clothing/under/lawyer/blacksuit,
+/obj/item/clothing/under/rank/civilian/lawyer/black,
 /obj/item/clothing/under/rank/civilian/lawyer/black/alt,
 /obj/item/clothing/under/suit/navy,
 /obj/item/clothing/under/suit/charcoal,
@@ -69046,7 +69046,7 @@
 	},
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -69452,7 +69452,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
@@ -69496,7 +69496,7 @@
 "xJd" = (
 /turf/closed/indestructible/rock{
 	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
+	icon = 'icons/fallout/turfs/walls/f13superstore.dmi';
 	icon_state = "supermart";
 	icon_type_smooth = "supermart";
 	name = "supermart wall";
@@ -69872,7 +69872,7 @@
 "xOv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
-/obj/item/clothing/mask/society,
+/obj/item/clothing/mask/f13/society,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -69950,7 +69950,7 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/clothing_middle,
 /obj/item/clothing/shoes/singery,
-/obj/item/clothing/under/singery,
+/obj/item/clothing/under/costume/singer/yellow,
 /obj/item/clothing/under/f13/bartenderalt,
 /obj/item/clothing/shoes/f13/fancy,
 /obj/item/reagent_containers/food/drinks/flask,
@@ -70039,7 +70039,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
@@ -70348,7 +70348,7 @@
 "xVN" = (
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/suit/hooded/surgical,
+/obj/item/clothing/suit/hooded/f13/surgical,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -70619,7 +70619,7 @@
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
@@ -70636,7 +70636,7 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/holofloor/grass{
-	icon = 'icons/turf/f13floors2.dmi';
+	icon = 'icons/fallout/turfs/f13floors2.dmi';
 	icon_state = "grass1"
 	},
 /area/f13/wasteland)
