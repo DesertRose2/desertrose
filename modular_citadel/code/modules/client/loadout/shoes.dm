@@ -62,6 +62,10 @@
 	name = "female diesel boots"
 	path = /obj/item/clothing/shoes/f13/diesel/alt
 
+/datum/gear/shoes/cowboyboots
+	name = "cowboy boots"
+	path = /obj/item/clothing/shoes/f13/cowboy
+
 //It would be a pain in the ass and people would complain if we locked these behind certain roles to get as a loadout, due to their non-slip nature we'll just increase their cost for now. -Superballs
 /datum/gear/shoes/military
 	name = "military boots"
@@ -95,5 +99,5 @@
 
 /datum/gear/shoes/f13/thighboot/platform
 	name = "thigh high platforms"
-	path =/obj/item/clothing/shoes/f13/thighboot/platform
+	path = /obj/item/clothing/shoes/f13/thighboot/platform
 	cost = 1

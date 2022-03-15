@@ -229,7 +229,7 @@ Head Scribe
 	name = "Sword Leader"
 	backpack_contents = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/wattz2k=1,
-		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat=1,
 		/obj/item/advanced_crafting_components/flux = 1,
 		/obj/item/advanced_crafting_components/conductors = 1,
 		/obj/item/advanced_crafting_components/alloys = 1
@@ -312,7 +312,7 @@ Knight Captain
 	backpack_contents = list(
 		/obj/item/clothing/head/helmet/f13/power_armor/t45d=1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,
+		/obj/item/clothing/mask/gas/welding/f13/bos=1,
 		/obj/item/storage/belt/utility/bos=1,
 		/obj/item/construction/rcd/industrial=1,
 		/obj/item/gun/energy/laser/aer12=1,
@@ -563,7 +563,7 @@ Proctor
 	name = "Senior Sword Scribe"
 	backpack_contents = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/aer9=1,
-		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
 		/obj/item/advanced_crafting_components/alloys = 1,
 		/obj/item/storage/survivalkit_aid=1
@@ -655,7 +655,7 @@ Scribe
 	name = "Junior Sword Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/f13/bos/juniorscribe=1,
-		/obj/item/clothing/suit/toggle/labcoat/scribecoat=1,
+		/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat=1,
 		/obj/item/advanced_crafting_components/lenses = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
@@ -665,7 +665,7 @@ Scribe
 	name = "Sword Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/f13/bos/scribe=1,
-		/obj/item/clothing/suit/toggle/labcoat/scribecoat=4,
+		/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat=4,
 		/obj/item/advanced_crafting_components/lenses = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/maxson=1,
 		/obj/item/storage/survivalkit_aid=1
@@ -770,7 +770,7 @@ Senior Knight
 		/obj/item/clothing/glasses/meson=1,
 		/obj/item/construction/rcd=1,
 		/obj/item/storage/belt/utility/full/engi=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,
+		/obj/item/clothing/mask/gas/welding/f13/bos=1,
 		/obj/item/grenade/plastic/c4=2
 		)
 
@@ -858,7 +858,7 @@ Knight
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,
+		/obj/item/clothing/mask/gas/welding/f13/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/f13/bos/juniorknight=1
@@ -900,7 +900,7 @@ Knight
 		/obj/item/clothing/head/helmet/f13/combat/brotherhood=1,
 		/obj/item/clothing/suit/armor/f13/combat/brotherhood=1,
 		/obj/item/clothing/glasses/meson=1,
-		/obj/item/clothing/mask/gas/welding/bos=1,
+		/obj/item/clothing/mask/gas/welding/f13/bos=1,
 		/obj/item/grenade/plastic/c4=1,
 		/obj/item/storage/belt/utility/full=1,
 		/obj/item/clothing/accessory/f13/bos/knight=1

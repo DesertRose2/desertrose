@@ -263,6 +263,16 @@
 	item_state = "labcoat"
 	armor = list("tier" = 2, "energy" = 10, "bomb" = 0, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 
+//Sprite by Pisshole
+/obj/item/clothing/suit/toggle/labcoat/f13/ncrbomber
+	name = "NCR bomber"
+	desc = "(II) Often given to and worn by NCR Air Force pilots. With the imagery of the flag on the back, and a tiny NCR flag patch on the shoulder, it's pretty on the nose indicative of its country of origin."
+	icon_state = "ncrbomber"
+	item_state = "ncrbomber"
+	cold_protection = CHEST|GROIN|ARMS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	armor = list("tier" = 2, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 10)
+
 /obj/item/clothing/suit/hooded/f13/cloak/desert
 	name = "desert cloak"
 	icon_state = "desertcloak"

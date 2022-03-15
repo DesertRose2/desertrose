@@ -161,7 +161,7 @@ Priestess of Mars
 /datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
 	uniform = /obj/item/clothing/under/f13/priestess
-	glasses = /obj/item/clothing/glasses/sunglasses/fakeblindfold
+	glasses = /obj/item/clothing/glasses/sunglasses/f13/fakeblindfold
 	head	= /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	ears	= /obj/item/radio/headset/headset_legion
 	gloves	= /obj/item/clothing/gloves/fingerless

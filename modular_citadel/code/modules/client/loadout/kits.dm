@@ -79,7 +79,7 @@
 
 //Sam Webb - thegreatcoward
 /obj/item/storage/box/large/custom_kit/samwebb/PopulateContents()
-	new /obj/item/clothing/head/beret/ncr(src)
+	new /obj/item/clothing/head/beret/f13/ncr(src)
 	new /obj/item/clothing/accessory/f13/ncr/LT2(src)
 
 //Wolf Emerson - seabass390
@@ -92,7 +92,7 @@
 /obj/item/storage/box/large/custom_kit/donnykennedey/PopulateContents()
 	new /obj/item/clothing/head/f13/ncr/goggles(src)
 	new /obj/item/storage/belt/military(src)
-	new /obj/item/clothing/mask/ncr_facewrap(src)
+	new /obj/item/clothing/mask/f13/ncr_facewrap(src)
 	new /obj/item/clothing/glasses/welding(src)
 	new /obj/item/clothing/gloves/combat(src)
 
@@ -331,7 +331,7 @@
 	new /obj/item/modkit/rangerjacket(src)
 	new /obj/item/clothing/under/f13/ranger/modif_ranger(src)
 	new /obj/item/clothing/shoes/f13/military/cowboy(src)
-	new /obj/item/clothing/mask/bandana/ranger(src)
+	new /obj/item/clothing/mask/bandana/f13/ranger(src)
 	new /obj/item/storage/belt/holster/hip(src)
 	new /obj/item/storage/belt/military/assault/ncr/crossbelt/reverse(src)
 	new /obj/item/clothing/accessory/waistcoat/f13/cowboy(src)
@@ -368,7 +368,7 @@
 
 //Aphelion Roche - gurking
 /obj/item/storage/box/large/custom_kit/aphelionroche/PopulateContents()
-	new /obj/item/clothing/suit/toggle/labcoat/fieldscribe(src)
+	new /obj/item/clothing/suit/toggle/labcoat/f13/fieldscribe(src)
 	new /obj/item/storage/belt/military/alt(src)
 
 //Matt Sharp - soldierboy2
@@ -431,7 +431,7 @@
 //Montana - Pisshole
 /obj/item/storage/box/large/custom_kit/montana/PopulateContents()
 	new /obj/item/modkit/montanahelmet(src)
-	new /obj/item/modkit/montanascarf(src)
+	new /obj/item/clothing/mask/gas/f13/montana(src)
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
 
@@ -455,7 +455,7 @@
 /obj/item/storage/box/large/custom_kit/nataliamorgan/PopulateContents()
 	new /obj/item/clothing/under/f13/legskirt/tac(src)
 
-//Dahlia Lynee Vega - Pisshole
+//Dahlia Lynne Vega - Pisshole
 /obj/item/storage/box/large/custom_kit/dahliavega/PopulateContents()
 	new /obj/item/storage/belt/holster/ncrcf_w(src)
 	new /obj/item/clothing/head/beret/tina_beret(src)
@@ -466,6 +466,7 @@
 	new /obj/item/clothing/suit/toggle/labcoat/depjacket/sup(src)
 	new /obj/item/clothing/head/flight(src)
 	new /obj/item/clothing/ears/headphones(src)
+	new /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/ncrarmorbomber(src)
 
 //Joseph Riley - kooarbiter
 /obj/item/storage/box/large/custom_kit/josephriley/PopulateContents()
@@ -473,10 +474,18 @@
 
 //NCR Recon
 /obj/item/storage/box/large/custom_kit/recon/PopulateContents()
-	new	/obj/item/clothing/head/beret/ncr_recon(src)
+	new	/obj/item/clothing/head/beret/f13/ncr_recon(src)
 	new	/obj/item/clothing/under/f13/ncr/recon(src)
 
 //NCR Scouts
 /obj/item/storage/box/large/custom_kit/scout/PopulateContents()
-	new	/obj/item/clothing/head/beret/ncr_scout(src)
+	new	/obj/item/clothing/head/beret/f13/ncr_scout(src)
 	new	/obj/item/clothing/under/f13/ncr/scout(src)
+
+//Bangles - Pisshole
+
+/obj/item/storage/box/large/custom_kit/bangles/PopulateContents()
+	new /obj/item/clothing/head/f13/trailranger/trailbandana(src)
+	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig(src)
+	new /obj/item/clothing/gloves/f13/leather/silverbangles(src)
+	new /obj/item/warpaint_bowl(src)

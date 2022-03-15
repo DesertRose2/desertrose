@@ -3,7 +3,7 @@
 	name = "speed loader (.357)"
 	desc = "Designed to quickly reload revolvers."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "a357"
+	icon_state = "357"
 	ammo_type = /obj/item/ammo_casing/a357
 	caliber = "357"
 	max_ammo = 6

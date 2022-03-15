@@ -79,7 +79,7 @@ Colonel
 		/obj/item/gun/ballistic/automatic/pistol/m1911=1, \
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/storage/bag/money/small/ncr=1, \
-		/obj/item/clothing/head/beret/ncr=1)
+		/obj/item/clothing/head/beret/f13/ncr=1)
 
 /*
 Captain
@@ -125,11 +125,11 @@ Captain
 		/obj/item/melee/classic_baton/telescopic=1, \
 		/obj/item/binoculars=1, \
 		/obj/item/storage/bag/money/small/ncr=1, \
-		/obj/item/clothing/mask/ncr_facewrap=1)
+		/obj/item/clothing/mask/f13/ncr_facewrap=1)
 
 /datum/outfit/loadout/captline
 	name = "Line Officer"
-	head 		= /obj/item/clothing/head/beret/ncr
+	head 		= /obj/item/clothing/head/beret/f13/ncr
 	shoes 		= /obj/item/clothing/shoes/f13/military/leather
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	belt 		= /obj/item/storage/belt/military/assault/ncr/crossbelt
@@ -141,7 +141,7 @@ Captain
 
 /datum/outfit/loadout/captscout
 	name = "Scout Officer"
-	belt = 		/obj/item/storage/belt/military/ncr_bandolier
+	belt = 		/obj/item/storage/belt/military/NCR_Bandolier
 	l_hand = 	/obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/garand308=3,
@@ -189,7 +189,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/f13/ncr/LT1
-	head 		= /obj/item/clothing/head/beret/ncr_lt
+	head 		= /obj/item/clothing/head/beret/f13/ncr_lt
 	neck 		= /obj/item/storage/belt/holster/ncr_officer
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	gloves 		= /obj/item/clothing/gloves/f13/leather
@@ -250,18 +250,19 @@ Medical Officer
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/f13/ncr/LT2
-	head 		= /obj/item/clothing/head/beret/medical
+	head 		= /obj/item/clothing/head/beret/f13/medical
 	neck 		= /obj/item/storage/belt/holster/med_lt
 	glasses 	= /obj/item/clothing/glasses/hud/health/f13
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
-	l_hand		= /obj/item/storage/firstaid/officer
+	l_hand		= /obj/item/storage/firstaid/regular
 	r_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
 	mask 		= /obj/item/clothing/mask/surgical
 	l_pocket	= /obj/item/flashlight/seclite
 	backpack_contents = list(
+		/obj/item/storage/survivalkit_aid=2, \
 		/obj/item/storage/survivalkit_aid_adv=1, \
 		/obj/item/storage/bag/money/small/ncr=1, \
 		/obj/item/kitchen/knife/combat=1, \
@@ -399,7 +400,7 @@ Sergeant
 /datum/outfit/loadout/serlight
 	name = "Sharpshooter"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/attachments/scope=1
@@ -409,7 +410,7 @@ Sergeant
 /datum/outfit/loadout/sercqb
 	name = "Assault"
 	l_hand = /obj/item/gun/ballistic/shotgun/lever
-	belt = 	/obj/item/storage/belt/military/ncr_bandolier
+	belt = 	/obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
@@ -418,7 +419,7 @@ Sergeant
 /datum/outfit/loadout/sersct
 	name = "Marksman"
 	l_hand = /obj/item/gun/ballistic/rifle/remington
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/a762/doublestacked=3,
 		/obj/item/attachments/scope=1
@@ -485,7 +486,7 @@ Corporal
 /datum/outfit/loadout/corplight
 	name = "Light Infantry"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/attachments/scope=1)
@@ -494,7 +495,7 @@ Corporal
 /datum/outfit/loadout/corpcqb
 	name = "Assault"
 	l_hand = /obj/item/gun/ballistic/shotgun/hunting
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
@@ -503,7 +504,7 @@ Corporal
 /datum/outfit/loadout/corpsct
 	name = "Marksman"
 	l_hand = /obj/item/gun/ballistic/rifle/remington
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/a762/doublestacked=3,
 		/obj/item/attachments/scope=1
@@ -586,7 +587,7 @@ Combat Engineer
 	id 				= /obj/item/card/id/dogtag/ncrtrooper
 	neck 			= /obj/item/storage/belt/holster/ncr
 	head			= /obj/item/clothing/head/f13/ncr
-	mask			= /obj/item/clothing/mask/ncr_facewrap
+	mask			= /obj/item/clothing/mask/f13/ncr_facewrap
 	suit 			= /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	glasses			= /obj/item/clothing/glasses/welding
 	belt 			= /obj/item/storage/belt/military/assault/ncr/engineer
@@ -699,7 +700,7 @@ Heavy Trooper
 	accessory =     /obj/item/clothing/accessory/f13/ncr/SPC
 	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t45b
 	neck =			/obj/item/storage/belt/holster/ncr
-	belt = 			/obj/item/storage/belt/military/ncr_bandolier
+	belt = 			/obj/item/storage/belt/military/reconbandolier
 	l_pocket =		/obj/item/flashlight
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=1, \
@@ -735,7 +736,7 @@ Trooper
 	jobtype = /datum/job/ncr/f13trooper
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	head = 			/obj/item/clothing/head/f13/ncr/goggles
-	mask =			/obj/item/clothing/mask/ncr_facewrap
+	mask =			/obj/item/clothing/mask/f13/ncr_facewrap
 	suit =			/obj/item/clothing/suit/armor/f13/ncrarmor
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	shoes = 		/obj/item/clothing/shoes/f13/military/ncr
@@ -761,14 +762,14 @@ Trooper
 /datum/outfit/loadout/trooplight
 	name = "Light Infantry"
 	l_hand = /obj/item/gun/ballistic/automatic/m1carbine/ncr
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/reconbandolier
 	backpack_contents = list(/obj/item/ammo_box/magazine/m10mm_adv/simple=3)
 
 //Scout with a Hunting Shotgun
 /datum/outfit/loadout/troopcqb
 	name = "Assault"
 	l_hand = /obj/item/gun/ballistic/shotgun/hunting
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
@@ -777,7 +778,7 @@ Trooper
 /datum/outfit/loadout/troopsct
 	name = "Marksman"
 	l_hand = /obj/item/gun/ballistic/rifle/remington
-	belt = /obj/item/storage/belt/military/ncr_bandolier
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(/obj/item/ammo_box/a762/doublestacked=2)
 
 /datum/outfit/job/ncr/f13trooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1026,7 +1027,7 @@ Veteran Ranger
 		/obj/item/storage/bag/money/small/ncr = 1, \
 		/obj/item/restraints/handcuffs=1, \
 		/obj/item/kitchen/knife/bowie=1, \
-		/obj/item/clothing/mask/gas/ranger = 1)
+		/obj/item/clothing/mask/gas/f13/ranger = 1)
 
 /datum/outfit/loadout/rangerrecon
 	name = "Recon Ranger"
@@ -1039,7 +1040,7 @@ Veteran Ranger
 	name = "Trail Ranger"
 	head =	/obj/item/clothing/head/f13/trailranger	
 	suit =	/obj/item/clothing/suit/armor/f13/trailranger
-	belt =	/obj/item/storage/belt/military/reconbandolier
+	belt =	/obj/item/storage/belt/military/NCR_Bandolier
 	r_hand = /obj/item/gun/ballistic/automatic/m1garand
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308 = 3,

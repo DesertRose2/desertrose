@@ -777,7 +777,7 @@
 	new /obj/item/gun/ballistic/revolver/police(src)
 
 /obj/item/storage/belt/holster/ranger44/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/revolver44/ranger(src)
+	new /obj/item/gun/ballistic/revolver/m29/ranger(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
@@ -836,13 +836,12 @@
 	icon_state = "holster_hip"
 	item_state = "holster_hip"
 
+//Sprite by Pisshole
 /obj/item/storage/belt/holster/ncrcf_w
 	name = "Worn NCRCF Women's Jacket"
 	desc = "A worn, torn women's NCRCF jacket with 'pockets' slit into the inside, letting you hide some things in the seam. Somehow, it fills you with vague feelings of rebellion and mommy and daddy issues. You kind of wish you could fit drugs in this..."
 	icon_state = "ncrcf_w"
 	item_state = "ncrcf_w"
-	alternate_worn_layer = MANTLE_LAYER
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
@@ -1011,13 +1010,13 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/storage/belt/military/ncr_bandolier
+/obj/item/storage/belt/military/NCR_Bandolier
 	name = "NCR bandolier"
 	desc = "A standard issue NCR bandolier."
 	icon_state = "ncr_bandolier"
 	item_state = "ncr_bandolier"
 
-/obj/item/storage/belt/military/ncr_bandolier/ComponentInitialize()
+/obj/item/storage/belt/military/NCR_Bandolier/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7

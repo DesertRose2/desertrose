@@ -1312,6 +1312,12 @@
 	dir = 8
 	},
 /area/f13/underground/cave)
+"es" = (
+/obj/machinery/computer/shuttle/vault113elevator{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
 "eu" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle,
@@ -2307,6 +2313,10 @@
 "jj" = (
 /obj/machinery/workbench,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"jk" = (
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "jl" = (
@@ -3837,6 +3847,19 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"qo" = (
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dir = 2;
+	dwidth = 1;
+	height = 1;
+	id = "North_Ground";
+	name = "Ground";
+	roundstart_template = /datum/map_template/shuttle/northbunker/elevator;
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "qr" = (
 /obj/structure/reagent_dispensers/barrel/four,
@@ -9371,6 +9394,9 @@
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/water,
 /area/f13/underground/cave)
+"Tl" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
 "To" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/glasses/hud/health/prescription,
@@ -10149,6 +10175,9 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"Xp" = (
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "Xq" = (
 /turf/open/floor/f13{
@@ -58162,11 +58191,11 @@ jJ
 zj
 xd
 xd
-jJ
-jJ
-zj
-jJ
-jJ
+wl
+wl
+Tl
+wl
+wl
 aa
 aa
 aa
@@ -58419,11 +58448,11 @@ jJ
 Kz
 xd
 xd
-xd
-zj
-zj
-jJ
-jJ
+Tl
+Tl
+Tl
+Tl
+wl
 aa
 aa
 aa
@@ -58676,15 +58705,15 @@ jJ
 jJ
 jJ
 jJ
-zj
-zj
-jJ
-jJ
-jJ
-aa
-aa
-aa
-aa
+wl
+Tl
+Tl
+Tl
+wl
+wl
+wl
+wl
+wl
 aa
 aa
 aa
@@ -58933,15 +58962,15 @@ wl
 wl
 wl
 wl
-zj
-zj
-jJ
-jJ
-jJ
-aa
-aa
-aa
-aa
+wl
+Tl
+Tl
+Tl
+jk
+Xp
+Xp
+Xp
+wl
 aa
 aa
 aa
@@ -59190,15 +59219,15 @@ zj
 xd
 xd
 zj
-zj
-jJ
-jJ
-jJ
-jJ
-aa
-aa
-aa
-aa
+aL
+Tl
+Tl
+Tl
+aL
+qo
+Xp
+Xp
+wl
 aa
 aa
 aa
@@ -59445,17 +59474,17 @@ fP
 fP
 fp
 Xo
-jJ
-jJ
-jJ
-jJ
-jJ
-jJ
-jJ
-aa
-aa
-aa
-aa
+zj
+zj
+aL
+Tl
+Tl
+Tl
+aL
+Xp
+Xp
+Xp
+wl
 aa
 aa
 aa
@@ -59705,14 +59734,14 @@ wl
 wl
 wl
 wl
+Tl
+Tl
+es
+jk
+Xp
+Xp
+Xp
 wl
-wl
-jJ
-jJ
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -59961,15 +59990,15 @@ Xo
 jJ
 jJ
 jJ
-jJ
-jJ
-jJ
-jJ
-jJ
-aa
-aa
-aa
-aa
+wl
+Tl
+Tl
+Tl
+wl
+wl
+wl
+wl
+wl
 aa
 aa
 aa
@@ -60218,11 +60247,11 @@ Xo
 jJ
 jJ
 jJ
-Xo
-jJ
-jJ
-aa
-aa
+wl
+Tl
+Tl
+Tl
+wl
 aa
 aa
 aa
@@ -60475,11 +60504,11 @@ Xo
 jJ
 jJ
 jJ
-Xo
-jJ
-jJ
-aa
-aa
+wl
+wl
+wl
+wl
+wl
 aa
 aa
 aa

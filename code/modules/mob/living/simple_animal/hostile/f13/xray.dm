@@ -48,7 +48,7 @@
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	id = /obj/item/card/id/rusted
-	mask = /obj/item/clothing/mask/ncr_facewrap
+	mask = /obj/item/clothing/mask/f13/ncr_facewrap
 	glasses = /obj/item/clothing/glasses/f13/biker
 	belt = /obj/item/storage/belt/military/alt
 

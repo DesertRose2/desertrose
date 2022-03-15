@@ -180,7 +180,7 @@
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
 //Great Khan
-/obj/item/clothing/suit/armor/khan_jacket
+/obj/item/clothing/suit/armor/f13/khan_jacket
 	name = "khan armored jacket"
 	desc = "(IV) The symbol of the greatest pushers."
 	icon_state = "khan_jacket"
@@ -213,12 +213,12 @@
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 
-/obj/item/clothing/suit/hooded/cloak/hhunter
+/obj/item/clothing/suit/hooded/f13/cloak/hhunter
 	name = "razorclaw armour"
 	icon_state = "rcarmour"
 	desc = "(VI) A suit of armour fashioned out of the remains of a legendary deathclaw."
 	armor = list("tier" = 6, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/hhunter
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/hhunter
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF

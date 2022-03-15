@@ -20,7 +20,7 @@
 					/obj/item/clothing/suit/jacket/flannel/brown = 4,
 					/obj/item/clothing/suit/jacket/puffer/vest = 4,
 					/obj/item/clothing/suit/jacket/puffer = 4,
-					/obj/item/clothing/suit/hooded/cloak/david = 4,
+					/obj/item/clothing/suit/hooded/f13/cloak/david = 4,
 					/obj/item/clothing/suit/bomber = 5,
 					/obj/item/clothing/under/suit/turtle/teal = 3,
 					/obj/item/clothing/under/suit/turtle/grey = 3,

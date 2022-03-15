@@ -74,6 +74,32 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
+/datum/crafting_recipe/steelsaw
+	name = "Steel Saw"
+	result = /obj/item/twohanded/chainsaw/steelsaw
+	reqs = list(/obj/item/circular_saw = 1,
+				/obj/item/stack/cable_coil = 5,
+				/obj/item/stack/sheet/plasteel = 5,
+				/obj/item/stack/crafting/goodparts = 3)
+	tools = list(TOOL_WELDER, TOOL_AWORKBENCH)
+	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+	always_availible = FALSE
+
+/datum/crafting_recipe/autoaxe
+	name = "Auto Axe"
+	result = /obj/item/twohanded/chainsaw/steelsaw/autoaxe
+	reqs = list(/obj/item/twohanded/chainsaw/steelsaw = 1,
+				/obj/item/stack/sheet/mineral/titanium = 1,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/structure/wreck/trash/engine)
+	tools = list(TOOL_WELDER)
+	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+	always_availible = FALSE
+
 /datum/crafting_recipe/flamerfuel
 	name = "Flamethrower Fuel"
 	result = /obj/item/ammo_box/jerrycan
@@ -739,9 +765,10 @@
 	name = "Desert Eagle"
 	result = /obj/item/gun/ballistic/automatic/pistol/deagle
 	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/stack/crafting/metalparts = 8,
+				/obj/item/stack/crafting/metalparts = 10,
+				/obj/item/stack/sheet/mineral/wood = 5,
 				/obj/item/advanced_crafting_components/alloys = 1,
-				/obj/item/stack/crafting/goodparts = 3
+				/obj/item/stack/crafting/goodparts = 5
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120

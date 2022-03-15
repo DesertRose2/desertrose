@@ -286,6 +286,7 @@
 
 // Californian cross
 
+//Sprite by Pisshole
 /obj/item/clothing/accessory/medal/f13/californian_cross
 	name = "Californian Cross"
 	desc = "This medal is given to those who have endured the hardships of captivity and all it entails, we honor their courage and resolve in those dark times and shall never forget what they gave."

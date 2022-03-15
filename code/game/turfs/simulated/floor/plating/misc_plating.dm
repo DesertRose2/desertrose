@@ -51,7 +51,7 @@
 	planetary_atmos = TRUE
 	attachment_holes = FALSE
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_CARPET_BAREFOOT
+	barefootstep = FOOTSTEP_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
@@ -113,7 +113,7 @@
 	attachment_holes = FALSE
 	bullet_bounce_sound = null
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_CARPET_BAREFOOT
+	barefootstep = FOOTSTEP_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
@@ -157,7 +157,7 @@
 	name = "iron sand"
 	desc = "Like sand, but more <i>metal</i>."
 	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_CARPET_BAREFOOT
+	barefootstep = FOOTSTEP_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
@@ -206,6 +206,11 @@
 /turf/open/floor/plating/ice/temperate
 	initial_temperature = 255.37
 
+/turf/open/floor/plating/ice/tipton
+	initial_temperature = T20C
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+	baseturfs = /turf/open/floor/plating/ice/tipton
+
 /turf/open/floor/plating/ice/break_tile()
 	return
 
@@ -224,9 +229,9 @@
 	initial_temperature = 180
 	attachment_holes = FALSE
 	planetary_atmos = TRUE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_SNOW
+	barefootstep = FOOTSTEP_SNOW_BAREFOOT
+	clawfootstep = FOOTSTEP_SNOW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/snowed/cavern

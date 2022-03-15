@@ -1,4 +1,5 @@
 /* In this file:
+ * Bamboo floor
  * Wood floor
  * Grass floor
  * Fake Basalt
@@ -6,6 +7,25 @@
  * Fake pits
  * Fake space
  */
+
+/turf/open/floor/bamboo
+	desc = "A bamboo mat with a decorative trim."
+	icon = 'icons/turf/floors/bamboo_mat.dmi'
+	icon_state = "bamboo"
+	floor_tile = /obj/item/stack/tile/bamboo
+	broken_states = list("damaged")
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/bamboo)
+	flags_1 = NONE
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	tiled_dirt = FALSE
+
+/turf/open/floor/carpet/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>There's a <b>small crack</b> on the edge of it.</span>"
 
 /turf/open/floor/wood
 	desc = "Stylish dark wood."
@@ -184,8 +204,8 @@
 	slowdown = 1.5 //So digging it out paths are useful.
 	bullet_sizzle = TRUE
 	footstep = FOOTSTEP_SNOW
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SNOW_BAREFOOT
+	clawfootstep = FOOTSTEP_SNOW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/snow/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
@@ -219,9 +239,9 @@
 	ore_type = /obj/item/stack/ore/glass/basalt
 	turfverb = "dig up"
 	slowdown = 0
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_WOOD_BAREFOOT
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_DIRT
+	barefootstep = FOOTSTEP_DIRT_BAREFOOT
+	clawfootstep = FOOTSTEP_DIRT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/fakebasalt/Initialize()

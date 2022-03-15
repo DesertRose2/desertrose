@@ -712,8 +712,8 @@
 	icon_state = "mountainrock"
 	smooth = SMOOTH_MORE|SMOOTH_BORDER
 	canSmoothWith = list (/turf/closed)
-	baseturfs = /turf/open/floor/plating/asteroid/snow
-	initial_gas_mix = FROZEN_ATMOS
+	baseturfs = /turf/open/indestructible/ground/outside/snow
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	environment_type = "snow"
 	turf_type = /turf/open/floor/plating/asteroid/snow
 	defer_change = TRUE

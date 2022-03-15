@@ -638,7 +638,6 @@ Outlaw
 	/datum/outfit/loadout/fieldhand,
 	/datum/outfit/loadout/hobo,
 	/datum/outfit/loadout/hombre,
-	/datum/outfit/loadout/tribal,
 	/datum/outfit/loadout/exmil,
 	/datum/outfit/loadout/eidolon,
 	/datum/outfit/loadout/aviator,
@@ -836,19 +835,6 @@ Outlaw
 		/obj/item/storage/fancy/rollingpapers=1,
 		/obj/item/ammo_box/m44=1)
 
-/datum/outfit/loadout/tribal
-	name = "Tribal"
-	suit = /obj/item/clothing/suit/hooded/f13/cloak/desert
-	uniform = /obj/item/clothing/under/f13/raiderrags
-	shoes = /obj/item/clothing/shoes/f13/rag
-	head = /obj/item/clothing/head/f13/cowboy
-	gloves = /obj/item/clothing/gloves/bracer
-	belt = /obj/item/storage/belt/tribe_quiver
-	l_hand = /obj/item/gun/ballistic/bow
-	backpack_contents = list(
-		/obj/item/kitchen/knife/combat/bone=1,
-		/obj/item/flashlight=1)
-
 /datum/outfit/loadout/exmil
 	name = "Ex-Military"
 	suit = /obj/item/clothing/suit/flakjack
@@ -921,3 +907,110 @@ Outlaw
 		/obj/item/reagent_containers/food/drinks/bottle/applejack=1,
 		/obj/item/reagent_containers/food/drinks/bottle/goldschlager=1,
 		/obj/item/clothing/accessory/pocketprotector/cosmetology=1)
+
+//Note: Recipes will be gone and into a book as soon as I figure out how to do that much
+/datum/job/wasteland/f13tribal
+	title = "Tribal"
+	faction = "Wastelander"
+	total_positions = -1
+	spawn_positions = -1
+	description = "You come from far away land and or even you are from here from one of the local tribes."
+	supervisors = "no one or the stars above"
+	selection_color = "#dddddd"
+	outfit = /datum/outfit/job/wasteland/f13tribal
+
+	access = list()
+	minimal_access = list()
+
+	loadout_options = list(
+		/datum/outfit/loadout/tribalspearman,
+		/datum/outfit/loadout/tribalbowman,
+		/datum/outfit/loadout/tribalshaman,
+		/datum/outfit/loadout/wayfarer
+	)
+
+/datum/outfit/loadout/tribalspearman
+	name = "Spearman"
+	backpack_contents = list(
+		/obj/item/twohanded/spear=1,
+		/obj/item/clothing/head/helmet/f13/fiend=1,
+		/obj/item/clothing/suit/armor/f13/tribal=1,
+		/obj/item/storage/belt/mining/primitive=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2
+	)
+
+/datum/outfit/loadout/tribalbowman
+	name = "Bowman"
+	backpack_contents = list(
+		/obj/item/storage/belt/tribe_quiver=1,
+		/obj/item/gun/ballistic/bow=1,
+		/obj/item/clothing/head/helmet/f13/wayfarer/antler=1,
+		/obj/item/clothing/suit/hooded/f13/cloak/goliath/tatteredred=1,
+		/obj/item/clothing/neck/mantle/brown=1
+	)
+
+/datum/outfit/loadout/tribalshaman
+	name = "Shaman"
+	backpack_contents = list(
+		/obj/item/warpaint_bowl=1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/cultivator=1,
+		/obj/item/reagent_containers/glass/bucket/wood=1,
+		/obj/item/kitchen/knife/ritualdagger=1,
+		/obj/item/clothing/suit/hooded/f13/cloak/desert=1
+	)
+
+/datum/outfit/loadout/wayfarer
+	name = "Wayfarer"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/wayfarer/hunter,
+		/obj/item/twohanded/sledgehammer/warmace=1,
+		/obj/item/clothing/suit/armor/f13/tribe_armor=1,
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
+		/obj/item/clothing/head/helmet/f13/wayfarer/hunter=1,
+		/obj/item/storage/belt/mining/primitive=1
+	)
+
+/datum/outfit/job/wasteland/f13tribal
+	name = "Tribal"
+	jobtype = /datum/job/wasteland/f13tribal
+
+	id = 		null
+	ears = 		null
+	belt = 		/obj/item/kitchen/knife/combat/bone
+	backpack =	/obj/item/storage/backpack/satchel/explorer
+	satchel = 	/obj/item/storage/backpack/satchel/explorer
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	gloves =    /obj/item/clothing/gloves/f13/handwraps
+	shoes =     /obj/item/clothing/shoes/sandal
+	l_pocket = /obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/f13/healingpowder = 2,
+		/obj/item/flashlight/lantern = 1,
+		)
+
+
+/datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
+	H.grant_language(/datum/language/tribal)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ritual)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warclub)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warmace)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowpoison)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/arrowburn)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/deathclawspear)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/punji_sticks)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/nightshield)
+

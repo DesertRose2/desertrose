@@ -225,6 +225,12 @@
 	},
 /turf/closed/mineral/iron,
 /area/f13/radiation)
+"cC" = (
+/obj/structure/barricade/train{
+	dir = 10
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "cD" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
 /obj/effect/decal/remains/human,
@@ -257,6 +263,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"cT" = (
+/obj/structure/barricade/train{
+	dir = 9
+	},
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "cV" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -548,6 +561,12 @@
 /obj/item/pen/fountain,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"fU" = (
+/obj/structure/chair/left{
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "fX" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -571,7 +590,6 @@
 	name = "departure schedule";
 	possible_destinations = "raider_subway;raider_station"
 	},
-/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -897,6 +915,13 @@
 /obj/structure/barricade/tentclothcorner,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"iX" = (
+/obj/structure/barricade/train{
+	dir = 4
+	},
+/obj/structure/timeddoor,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "iY" = (
 /mob/living/simple_animal/hostile/raider/ranged/legendary,
 /turf/open/floor/f13{
@@ -1047,6 +1072,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"jN" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowbottom";
+	name = "train cabin"
+	},
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "jQ" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/f13,
@@ -1286,6 +1319,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"mr" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowtop";
+	name = "train cabin"
+	},
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "mC" = (
 /obj/item/trash/chips,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -2333,6 +2375,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/caves)
+"uM" = (
+/obj/structure/ladder/unbreakable{
+	down = "metro_train_1";
+	id = "metrodungeonentrance";
+	up = null
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "uN" = (
 /mob/living/simple_animal/hostile/ghoul/soldier,
 /turf/open/indestructible/ground/inside/subway,
@@ -2596,6 +2646,13 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"xd" = (
+/obj/structure/barricade/train{
+	dir = 6
+	},
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "xf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/r_wall,
@@ -2725,6 +2782,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/mining)
+"yE" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "yG" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -3599,11 +3661,10 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
 "Gk" = (
-/obj/structure/fluff/rails,
-/obj/docking_port/stationary{
-	dir = 4;
-	id = "raider_subway"
+/obj/structure/barricade/train{
+	dir = 1
 	},
+/obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "Gx" = (
@@ -4172,6 +4233,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"Mf" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/timeddoor,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Mj" = (
 /mob/living/simple_animal/hostile/ghoul/frozenreaver,
 /obj/effect/decal/waste{
@@ -4278,6 +4344,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"Nd" = (
+/obj/structure/barricade/train,
+/obj/structure/timeddoor,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "Nk" = (
 /obj/structure/barricade/train{
 	dir = 5
@@ -4339,6 +4410,14 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"Nu" = (
+/obj/structure/barricade/train{
+	dir = 8;
+	layer = 4
+	},
+/obj/structure/fluff/rails,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "Nv" = (
 /obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/carpet,
@@ -4449,6 +4528,11 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"Or" = (
+/obj/structure/table,
+/obj/machinery/light/broken,
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Ov" = (
 /obj/structure/railing{
 	dir = 1
@@ -4686,8 +4770,7 @@
 /area/f13/caves)
 "PT" = (
 /obj/structure/chair/wood/normal{
-	dir = 4;
-	icon_state = "wooden_chair"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -4876,6 +4959,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"Ru" = (
+/obj/structure/table,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Rx" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13,
@@ -5189,6 +5279,12 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"TV" = (
+/obj/structure/chair/right{
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "TY" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/singlecard{
@@ -5272,6 +5368,14 @@
 /obj/effect/spawner/lootdrop/clothing_low,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"UO" = (
+/obj/structure/ladder/unbreakable{
+	down = "metro_train_2";
+	id = "metrodungeonentrance";
+	up = null
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "UU" = (
 /obj/structure/table/snooker{
 	dir = 5
@@ -5312,6 +5416,12 @@
 "Vq" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)
+"Vs" = (
+/obj/structure/chair/right{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "Vt" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/tunnel)
@@ -5367,6 +5477,12 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/ncr)
+"VN" = (
+/obj/structure/chair/left{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/tunnel)
 "VO" = (
 /mob/living/simple_animal/hostile/deathclaw{
 	faction = list("deathclaw","raider");
@@ -51458,11 +51574,11 @@ vH
 vH
 Jp
 sX
-vP
-vP
-vT
-vP
-vP
+Nk
+BW
+Nu
+BW
+cC
 vP
 vP
 vT
@@ -51716,9 +51832,9 @@ vH
 vH
 sX
 vP
-vP
-vT
-vP
+rB
+Kv
+rB
 vP
 vP
 vP
@@ -51972,11 +52088,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+dO
+jQ
+dO
+ji
 vP
 vP
 vT
@@ -52229,11 +52345,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -52486,11 +52602,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -52743,11 +52859,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -53000,11 +53116,11 @@ PC
 PC
 PC
 sX
-vP
-vP
-Gk
-vP
-vP
+qm
+iB
+Kv
+Or
+ji
 vP
 vP
 vT
@@ -53257,11 +53373,11 @@ gj
 hf
 je
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -53514,11 +53630,11 @@ is
 je
 je
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -53771,11 +53887,11 @@ is
 je
 je
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -54028,11 +54144,11 @@ je
 je
 je
 je
-vP
-vP
-vT
-vP
-vP
+qm
+ym
+jQ
+ym
+ji
 vP
 vP
 vT
@@ -54286,9 +54402,9 @@ je
 je
 je
 vP
-vP
-vT
-vP
+rB
+Kv
+rB
 vP
 vP
 vP
@@ -54542,11 +54658,11 @@ je
 je
 je
 je
-vP
-vP
-vT
-vP
-vP
+qm
+dO
+jQ
+dO
+ji
 vP
 vP
 vT
@@ -54799,11 +54915,11 @@ je
 je
 cb
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -55056,11 +55172,11 @@ je
 cb
 je
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -55313,11 +55429,11 @@ cb
 AS
 je
 vw
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -55570,11 +55686,11 @@ PC
 PC
 PC
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+Ru
+Kv
+Or
+ji
 vP
 vP
 vT
@@ -55827,11 +55943,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -56084,11 +56200,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -56341,11 +56457,11 @@ Jp
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -56598,11 +56714,11 @@ Jp
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+TV
+Kv
+fU
+ji
 vP
 vP
 vT
@@ -56855,11 +56971,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+iB
+Kv
+Or
+ji
 vP
 vP
 vT
@@ -57112,11 +57228,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -57369,11 +57485,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -57626,11 +57742,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+VN
+Kv
+Vs
+ji
 vP
 vP
 vT
@@ -57883,11 +57999,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+qm
+ym
+jQ
+ym
+ji
 vP
 vP
 vT
@@ -58141,9 +58257,9 @@ vH
 vH
 sX
 vP
-vP
-vT
-vP
+rB
+Kv
+rB
 vP
 vP
 vP
@@ -58397,11 +58513,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+iX
+Mf
+iX
+Nd
 vP
 vP
 vT
@@ -58654,11 +58770,11 @@ vH
 vH
 Jp
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+TV
+Kv
+fU
+Nd
 vP
 vP
 vT
@@ -58911,11 +59027,11 @@ Jp
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+TV
+Kv
+fU
+Nd
 vP
 vP
 vT
@@ -59168,11 +59284,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+TV
+Kv
+fU
+Nd
 vP
 vP
 vT
@@ -59425,11 +59541,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+Ru
+Kv
+Or
+Nd
 vP
 vP
 vT
@@ -59682,11 +59798,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+VN
+Kv
+Vs
+Nd
 vP
 vP
 vT
@@ -59939,11 +60055,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+VN
+Kv
+Vs
+Nd
 vP
 vP
 vT
@@ -60196,11 +60312,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+ym
+jQ
+ym
+Nd
 vP
 vP
 vT
@@ -60453,11 +60569,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+uM
+Kv
+UO
+Nd
 vP
 vP
 vT
@@ -60710,11 +60826,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+Gk
+Re
+Kv
+Re
+Nd
 vP
 vP
 vT
@@ -60967,11 +61083,11 @@ vH
 vH
 vH
 sX
-vP
-vP
-vT
-vP
-vP
+cT
+mr
+yE
+jN
+xd
 vP
 vP
 vT

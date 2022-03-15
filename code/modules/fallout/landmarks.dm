@@ -270,7 +270,11 @@
 	name = "Preacher"
 	icon_state = "Preacher"
 
-//Tribal
+/obj/effect/landmark/start/f13/tribal
+	name = "Tribal"
+	icon_state = "Wastelander"
+
+/* Tribal Faction Tribe not used */
 
 /obj/effect/landmark/start/f13/chief
 	name = "Chief"

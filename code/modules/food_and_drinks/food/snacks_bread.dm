@@ -172,7 +172,7 @@
 	desc = "Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread."
 	icon_state = "cornbread"
 	slice_path = /obj/item/reagent_containers/food/snacks/breadslice/corn
-	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 30, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cornbread" = 10)
 	foodtype = GRAIN
 	w_class = WEIGHT_CLASS_SMALL
@@ -182,7 +182,7 @@
 	desc = "A chunk of crispy, cowboy-style cornbread. Consume contentedly."
 	icon_state = "cornbread_slice"
 	foodtype = GRAIN
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
 
 /obj/item/reagent_containers/food/snacks/baguette
 	name = "baguette"

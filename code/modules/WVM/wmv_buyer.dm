@@ -14,16 +14,22 @@
 	var/expected_price = 0
 	var/list/prize_list = list()  //if you add something to this, please, for the love of god, sort it by price/type. use tabs and not spaces.
 
-	var/list/goods_list = list( /obj/item/stack/ore/diamond = 50,
+	var/list/goods_list = list( /*obj/item/stack/ore/diamond = 50,
 								/obj/item/stack/ore/gold = 7,
 								/obj/item/stack/ore/silver = 2,
 								/obj/item/stack/ore/iron = 1,
-								/obj/item/stack/sheet/leather = 3,
+								/obj/item/stack/sheet/leather = 3,*/
 								/obj/item/reagent_containers/pill/patch/f13/jet = 5,
 								/obj/item/reagent_containers/hypospray/medipen/f13/psycho = 15,
 								/obj/item/reagent_containers/hypospray/medipen/f13/medx = 10,
-								/obj/item/invention = 25,
-								/obj/item/experimental = 25
+								/*obj/item/invention = 25,
+								/obj/item/experimental = 25,*/
+								/obj/item/gun/ballistic/automatic/pistol/ninemil = 25,
+								/obj/item/gun/ballistic/revolver/colt6520 = 30,
+								/obj/item/gun/ballistic/rifle/enfield = 35,
+								/obj/item/gun/ballistic/automatic/pistol/n99 = 30,
+								/obj/item/gun/ballistic/automatic/pistol/pistol22 = 20,
+								/obj/item/gun/ballistic/revolver/widowmaker = 40
 								)
 
 /obj/machinery/mineral/wasteland_trader/general
@@ -51,14 +57,20 @@
 	dat += "<br>"
 	dat +="<div class='statusDisplay'>"
 	dat += "<b>Accepted goods and prices:</b><br>"
-	dat += "Iron ore : 1.5 caps<br>"
+	/*dat += "Iron ore : 1.5 caps<br>"
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
 	dat += "Diamond : 50 caps<br>"
-	dat += "Leather : 5 caps<br>"
+	dat += "Leather : 5 caps<br>"*/
 	dat += "Jet/Psycho/MedX : 5-15 caps<br>"
-	dat += "Inventions : 25 caps"
-	dat += "Tinker Kits : 25 caps"
+	/*dat += "Inventions : 25 caps<br>"
+	dat += "Tinker Kits : 25 caps<br>"*/
+	dat += "Browning Hi-Power : 25<br>"
+	dat += "Colt 6520 : 30<br>"
+	dat += "Enfield : 35<br>"
+	dat += "N99 pistol : 30<br>"
+	dat += ".22 pistol : 20<br>"
+	dat += "Winchester widowmaker : 40<br>"
 	dat += "</div>"
 
 	var/datum/browser/popup = new(user, "tradingvendor", "Trading point", 400, 500)

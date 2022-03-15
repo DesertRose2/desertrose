@@ -179,7 +179,7 @@
 	item_state = "legmarinehelmet"
 
 //LM/LC
-/obj/item/clothing/head/hooded/cloakhood/f13/acolyte
+/obj/item/clothing/head/hooded/f13/cloakhood/acolyte
 	name = "acolyte hood"
 	desc = "(I) The hood of the Acolyte, pulled over the wearer's head to shroud the Alcolyte in Mars' will and path so they may see it.."
 	icon_state = "acolyte"
@@ -362,7 +362,7 @@
 	name = "acolyte robe"
 	desc = "(I) Those who wear the garmets have been chosen by a Priestess of Mars to work under them. Made of fine cloth and stitched carefully, this shows everyone that you are on the Mars' path."
 	icon_state = "acolyte"
-	hoodtype = /obj/item/clothing/head/hooded/cloakhood/f13/acolyte
+	hoodtype = /obj/item/clothing/head/hooded/f13/cloakhood/acolyte
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 

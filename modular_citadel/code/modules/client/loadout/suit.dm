@@ -5,7 +5,7 @@
 
 /datum/gear/suit/redhood
 	name = "Red cloak"
-	path = /obj/item/clothing/suit/hooded/cloak/david
+	path = /obj/item/clothing/suit/hooded/f13/cloak/david
 	cost = 3
 
 /datum/gear/suit/jacketbomber
@@ -17,6 +17,29 @@
 	name = "Old bomber jacket"
 	path = /obj/item/clothing/suit/bomber
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
+/datum/gear/suit/ncrbomber
+	name = "NCR bomber jacket"
+	path = /obj/item/clothing/suit/toggle/labcoat/f13/ncrbomber
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Commanding Officer",
+							"NCR Medical Officer",
+							"NCR Veteran Ranger",
+							"NCR Commanding Officer",
+							"NCR Sergeant First Class",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Heavy Trooper",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty",
+							"NCR Ranger",
+							"NCR Recruit"
+						)
 
 /datum/gear/suit/jacketflannelblack // all of these are reskins of bomber jackets but with the vibe to make you look like a true lumberjack
 	name = "Black flannel jacket"

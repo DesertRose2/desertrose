@@ -270,7 +270,7 @@
 	item_state = "hunterhelm"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/head/hooded/cloakhood/hhunter
+/obj/item/clothing/head/hooded/f13/cloakhood/hhunter
 	name = "razorclaw helm"
 	icon_state = "rchelmet"
 	desc = "(VI) The skull of a legendary deathclaw."

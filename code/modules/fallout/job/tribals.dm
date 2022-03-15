@@ -26,7 +26,7 @@
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	H.grant_language(/datum/language/wayfarer)
+	H.grant_language(/datum/language/tribal)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ritual)
@@ -49,8 +49,8 @@ Tribal Chief
 /datum/job/tribal/f13chief
 	title = "Chief"
 	faction = "Village"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Elders of the tribe."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -93,7 +93,7 @@ Tribal Chief
 /datum/outfit/loadout/chiefrazor
 	name = "Razorclaw Chief"
 	head =		/obj/item/clothing/head/helmet/f13/wayfarer/chief/green
-	suit =		/obj/item/clothing/suit/hooded/cloak/hhunter
+	suit =		/obj/item/clothing/suit/hooded/f13/cloak/hhunter
 	l_hand = 	/obj/item/twohanded/spear/bonespear/deathclaw
 /*
 Tribal Shaman
@@ -101,8 +101,8 @@ Tribal Shaman
 /datum/job/tribal/f13shaman
 	title = "Shaman"
 	faction = "Village"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Elders of the tribe and the chief."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -163,8 +163,8 @@ Tribal Head Hunter
 /datum/job/tribal/f13Hhunter
 	title = "Head Hunter"
 	faction = "Village"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Elders of the tribe and the chief."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -185,8 +185,8 @@ Tribal Head Hunter
 	name = "Head Hunter"
 	jobtype = /datum/job/tribal/f13Hhunter
 	uniform = 		/obj/item/clothing/under/f13/wayfarer/hunter
-	head =			/obj/item/clothing/head/hooded/cloakhood/hhunter
-	suit = 			/obj/item/clothing/suit/hooded/cloak/hhunter
+	head =			/obj/item/clothing/head/hooded/f13/cloakhood/hhunter
+	suit = 			/obj/item/clothing/suit/hooded/f13/cloak/hhunter
 	suit_store =	/obj/item/melee/transforming/cleaving_saw
 	belt = 			/obj/item/storage/belt/mining/primitive
 	l_pocket =		/obj/item/flashlight/lantern	
@@ -202,8 +202,8 @@ Druid
 /datum/job/tribal/f13druid
 	title = "Druid"
 	faction = "Village"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Chief and the Shaman."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -275,8 +275,8 @@ Villager
 /datum/job/tribal/f13villager
 	title = "Villager"
 	faction = "Village"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Tribal Chief, Shaman and Headhunter"
 	description = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe."
 	selection_color = "#006666"
@@ -353,8 +353,8 @@ Hunter
 /datum/job/tribal/f13hunter
 	title = "Hunter"
 	faction = "Village"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The chief and Head Hunter."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -419,8 +419,8 @@ Spirit-Pledged
 /datum/job/tribal/f13spiritpledged
 	title = "Spirit-Pledged"
 	faction = "Village"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "All other tribals."
 	description = "An outsider to the tribe, you have been welcomed to learn their ways and grow closer to their culture and lifestyle."
 	selection_color = "#006666"

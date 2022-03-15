@@ -1063,7 +1063,7 @@
 	/obj/item/ammo_box/magazine/m45=1,
 	/obj/item/clothing/shoes/workboots/mining=1,
 	/obj/item/clothing/glasses/f13/biker=1,
-	/obj/item/clothing/mask/ncr_facewrap=1
+	/obj/item/clothing/mask/f13/ncr_facewrap=1
 	)
 
 /datum/outfit/loadout/addict

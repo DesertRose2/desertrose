@@ -137,7 +137,7 @@
 /datum/gear/head/ncr_infantry
 	name = "NCR infantry beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr
+	path = /obj/item/clothing/head/beret/f13/ncr
 	restricted_desc = "NCR NCOs"
 	restricted_roles = list(
 							"NCR Sergeant First Class",
@@ -149,7 +149,7 @@
 /datum/gear/head/ncr_medical_officer
 	name = "NCR medical officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/medical
+	path = /obj/item/clothing/head/beret/f13/medical
 	restricted_desc = "NCR Officers"
 	restricted_roles = list(
 							"NCR Medical Officer",
@@ -160,7 +160,7 @@
 /datum/gear/head/ncr_sapper
 	name = "NCR sapper beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
-	path = /obj/item/clothing/head/beret/ncr_sapper
+	path = /obj/item/clothing/head/beret/f13/ncr_sapper
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Combat Engineer",

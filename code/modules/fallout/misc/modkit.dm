@@ -209,7 +209,7 @@
 
 /obj/item/modkit/harebellscout
 	name = "Harebell scout beret modkit"
-	target_items = list(/obj/item/clothing/head/beret/ncr_scout)
+	target_items = list(/obj/item/clothing/head/beret/f13/ncr_scout)
 	result_item = /obj/item/clothing/head/beret/tina_beret
 
 /obj/item/modkit/trailcoat

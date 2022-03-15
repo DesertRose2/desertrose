@@ -131,14 +131,14 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 3, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/suit/toggle/labcoat/fieldscribe
+/obj/item/clothing/suit/toggle/labcoat/f13/fieldscribe
 	name = "fieldscribe suit"
 	desc = "(IV) A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
 	body_parts_covered = CHEST|ARMS|LEGS
 	armor = list("tier" = 4, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/suit/toggle/labcoat/scribecoat
+/obj/item/clothing/suit/toggle/labcoat/f13/scribecoat
 	name = "fieldscribe coat"
 	desc = "(IV) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
@@ -377,7 +377,7 @@
 
 //Gasmasks
 
-/obj/item/clothing/mask/gas/welding/bos
+/obj/item/clothing/mask/gas/welding/f13/bos
 	name = "brotherhood welding mask"
 	desc = "A gas mask with built-in welding goggles and a face shield. It bears color pattern of the brotherhood alongside polarizing glass."
 	icon_state = "weldingmaskbos"

@@ -64,13 +64,17 @@
 //	flags = NODROP
 	glass_colour_type = /datum/client_colour/glass_colour/lightorange
 
-/obj/item/clothing/glasses/sunglasses/fakeblindfold
+/obj/item/clothing/glasses/sunglasses/f13
+	icon = 'icons/fallout/clothing/glasses.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/eyes.dmi'
+
+/obj/item/clothing/glasses/sunglasses/f13/fakeblindfold
 	name = "priestess blindfold"
 	desc = "The coverings used to restrict the sight of the world, but see with the Sight of Mars."
 	icon_state = "legpriestess"
 	item_state = "legpriestess"
 
-/obj/item/clothing/glasses/sunglasses/fakeblindfold/equipped(mob/living/carbon/human/user, slot)
+/obj/item/clothing/glasses/sunglasses/f13/fakeblindfold/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(!ishuman(user) || user.job == "Priestess of Mars")
 		return
@@ -83,7 +87,5 @@
 /obj/item/clothing/glasses/sunglasses/f13/protected
 	name = "prescription sunglasses"
 	desc = "A pair of tinted glasses to help prevent from the ever present sun and bright flashes."
-	icon = 'icons/fallout/clothing/glasses.dmi'
-	icon = 'icons/fallout/onmob/clothing/eyes.dmi'
 	icon_state = "presc_sun"
 	item_state = "presc_sun"

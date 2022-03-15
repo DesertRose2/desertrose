@@ -14,7 +14,7 @@
 	mutantrace_variation = NONE
 	body_parts_covered = CHEST|ARMS|LEGS
 
-/obj/item/clothing/suit/hooded/cloak/david
+/obj/item/clothing/suit/hooded/f13/cloak/david
 	name = "red cloak"
 	icon_state = "goliath_cloak"
 	desc = "Ever wanted to look like a badass without ANY effort? Try this nanotrasen brand red cloak, perfect for kids"

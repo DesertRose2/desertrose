@@ -32,6 +32,14 @@
 	item_state = "ncr_gloves"
 	transfer_prints = TRUE
 
+//Sprite by Pisshole
+/obj/item/clothing/gloves/f13/leather/silverbangles
+	name = "silver bangles"
+	desc = "Silver and glass bangles, some rings of metal and some made of... glass and plastic?"
+	icon_state = "silverbangles"
+	item_state = "silverbangles"
+	transfer_prints = TRUE
+
 /obj/item/clothing/gloves/f13/military
 	name = "military gloves"
 	desc = "Tight fitting black leather gloves with mesh along the finger tips and padding along the palm. The craftsmanship indicates it was made for a officer."
