@@ -82,7 +82,7 @@
 	ckeywhitelist = list("thegreatcoward")
 
 /datum/gear/donator/kits/wolfemerson
-	name = "Wolf Emerson's belonings"
+	name = "Wolf Emerson's belongings"
 	path = /obj/item/storage/box/large/custom_kit/wolfemerson
 	ckeywhitelist = list("seabass390")
 
@@ -578,8 +578,9 @@
 						"shoi87",
 						"svenja",
 						"usotsukihime",
-						"thegreatcoward")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						"thegreatcoward",
+						"pisshole")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerlieutenantpins
 	name = "Ranger-Lieutenant Pins"
@@ -606,7 +607,7 @@
 						"tzula",
 						"ollieoxen",
 						"pisshole")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangersergeantpins
 	name = "Ranger-Sergeant Pins"
@@ -691,7 +692,8 @@
 						"thegreatcoward",
 						"marcusstephens",
 						"usotsukihime",
-						"asterixcodix")
+						"asterixcodix",
+						"pisshole")
 	restricted_roles = list("NCR Commanding Officer", "NCR Off-Duty")
 
 /datum/gear/donator/ncrasgtpins
@@ -699,7 +701,8 @@
 	slot = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/ncr/SGT
 	ckeywhitelist = list("muhsollini",
-						"weaselburg")
+						"weaselburg",
+						"pisshole")
 	restricted_roles = list("NCR Combat Medic", "NCR Combat Engineer", "NCR Heavy Trooper", "NCR Military Police")
 
 /datum/gear/donator/zirilliuniform
