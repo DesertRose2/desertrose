@@ -91,11 +91,11 @@ SUBSYSTEM_DEF(nightcycle)
 			if(T.turf_light_range && !QDELETED(T)) //Turfs are qdeleted on changeturf
 				T.set_light(T.turf_light_range, sunPower, sunColour)
 
-    currentColumn = x + 1
-    if (currentColumn > world.maxx)
-        currentColumn = 1
-        working = FALSE
-        return
+	currentColumn = x + 1
+	if (currentColumn > world.maxx)
+		currentColumn = 1
+		working = FALSE
+		return
 
 /datum/controller/subsystem/nightcycle/proc/updateLight(newTime)
 	switch (newTime)
