@@ -2,7 +2,6 @@
     "map_name": "Yuma",
 	"map_path": "map_files/Pahrump",
     "map_file": [
-		"Dungeons.dmm",
 		"Pahrump-Underground-1.dmm",
 		"Pahrump-Surface-2.dmm",
 		"Pahrump-Above-3.dmm"
@@ -20,14 +19,6 @@
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
 			"Up": 1,
-			"Linkage" : "Cross"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Dungeons": true,
-			"Up": 1,
-			"Down": -1,
 			"Linkage" : "Cross"
 		},
 		{
