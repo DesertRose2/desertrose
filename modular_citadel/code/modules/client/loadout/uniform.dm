@@ -35,10 +35,10 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
+							"OSI Officer",
 							"NCR Veteran Ranger",
-							"NCR Commanding Officer",
-							"NCR Sergeant First Class",
+							"NCR First Sergeant",
+							"NCR Ranger Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -58,10 +58,10 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
+							"OSI Officer",
 							"NCR Veteran Ranger",
-							"NCR Commanding Officer",
-							"NCR Sergeant First Class",
+							"NCR First Sergeant",
+							"NCR Ranger Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -81,10 +81,10 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
+							"OSI Officer",
 							"NCR Veteran Ranger",
-							"NCR Commanding Officer",
-							"NCR Sergeant First Class",
+							"NCR First Sergeant",
+							"NCR Ranger Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -105,7 +105,7 @@
 	restricted_roles = list(
 							"NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer"
+							"OSI Officer"
 							)
 
 /datum/gear/uniform/ranger
@@ -447,7 +447,7 @@
 
 /datum/gear/uniform/tacticalskirt
 	name = "''tactical'' combat skirt"
-	path = /obj/item/clothing/under/f13/legskirt/tac 
+	path = /obj/item/clothing/under/f13/legskirt/tac
 
 /datum/gear/uniform/sweater
 	name = "Cream Commando Sweater"

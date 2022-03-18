@@ -30,8 +30,8 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -50,6 +50,7 @@
 	restricted_desc = "Rangers"
 	restricted_roles = list(
 							"NCR Ranger",
+							"NCR Ranger Sergeant",
 							"NCR Veteran Ranger"
 						)
 
@@ -81,8 +82,8 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -100,7 +101,8 @@
 	path = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutie
 	restricted_desc = "Rangers"
 	restricted_roles = list("NCR Ranger",
-							"NCR Veteran Ranger"
+							"NCR Veteran Ranger",
+							"NCR Ranger Sergeant"
 							)
 
 /datum/gear/supermutant/suit/armour/ncr/ranger/vet
@@ -161,8 +163,8 @@
 							"NCR Ranger Sergeant",
 							"NCR Ranger",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",

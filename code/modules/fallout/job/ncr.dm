@@ -231,20 +231,20 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	backpack_contents =list(/obj/item/ammo_box/magazine/m556/rifle/assault=1)
 
 /*
-Medical Officer
+OSI Officer, renamed from Medical Officer
 */
 /datum/job/ncr/f13medicalofficer
-	title = "NCR Medical Officer"
+	title = "OSI Officer"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
-	supervisors = "Lieutenant and above"
+	description = "You are a representative of the OSI in Camp Miller. You do not have any command authority unless it relates to supply, science, or medical purpose. You are not a soldier. Your duties are to ensure supplies are in order, that the troopers are in good health and that every member of the supply branch are fulfilling their obligations."
+	supervisors = "Acting Army CO and High Command"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 
 /datum/outfit/job/ncr/f13medicalofficer
-	name = "NCR Medical Officer"
+	name = "OSI Officer"
 	jobtype		= /datum/job/ncr/f13medicalofficer
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
 	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -278,11 +278,11 @@ Medical Officer
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 /*
-Sergeant First Class
+First Sergeant
 */
 
 /datum/job/ncr/f13firstsergeant
-	title = "NCR Sergeant First Class"
+	title = "NCR First Sergeant"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Commanding Officer as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
@@ -300,7 +300,7 @@ Sergeant First Class
 	)
 
 /datum/outfit/job/ncr/f13firstsergeant
-	name = "NCR Sergeant First Class"
+	name = "NCR First Sergeant"
 	jobtype			= /datum/job/ncr/f13firstsergeant
 	id 				= /obj/item/card/id/dogtag/ncrsergeant
 	uniform		 	= /obj/item/clothing/under/f13/ncr
@@ -1038,7 +1038,7 @@ Veteran Ranger
 
 /datum/outfit/loadout/rangertrail
 	name = "Trail Ranger"
-	head =	/obj/item/clothing/head/f13/trailranger	
+	head =	/obj/item/clothing/head/f13/trailranger
 	suit =	/obj/item/clothing/suit/armor/f13/trailranger
 	belt =	/obj/item/storage/belt/military/NCR_Bandolier
 	r_hand = /obj/item/gun/ballistic/automatic/m1garand

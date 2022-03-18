@@ -98,8 +98,8 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -114,9 +114,9 @@
 	name = "NCR campaign hat"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_campaign
-	restricted_desc = "NCR"
+	restricted_desc = "NCR First Sergeant"
 	restricted_roles = list(
-							"NCR Sergeant First Class",
+							"NCR First Sergeant",
 							"NCR Off-Duty"
 							)
 
@@ -124,7 +124,7 @@
 	name = "NCR air cavalry stetson"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_stetson
-	restricted_desc = "NCR"
+	restricted_desc = "NCR off-duty"
 	restricted_roles = list("NCR Off-Duty")
 
 
@@ -140,7 +140,7 @@
 	path = /obj/item/clothing/head/beret/ncr
 	restricted_desc = "NCR NCOs"
 	restricted_roles = list(
-							"NCR Sergeant First Class",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Off-Duty"
@@ -150,9 +150,9 @@
 	name = "NCR medical officer beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
 	path = /obj/item/clothing/head/beret/medical
-	restricted_desc = "NCR Officers"
+	restricted_desc = "NCR Medical Personnel"
 	restricted_roles = list(
-							"NCR Medical Officer",
+							"OSI Officer",
 							"NCR Combat Medic",
 							"NCR Off-Duty"
 						)
@@ -161,7 +161,7 @@
 	name = "NCR sapper beret"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_BERET
 	path = /obj/item/clothing/head/beret/ncr_sapper
-	restricted_desc = "NCR"
+	restricted_desc = "NCR Engineering Personnel"
 	restricted_roles = list(
 							"NCR Combat Engineer",
 							"NCR Off-Duty"
@@ -194,8 +194,8 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -211,8 +211,8 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
+							"OSI Officer",
+							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -225,7 +225,7 @@
 	name = "NCR field cap"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_flapcap
-	restricted_desc = "NCR"
+	restricted_desc = "NCR grunts"
 	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",
@@ -236,7 +236,7 @@
 	name = "NCR slouch hat"
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HATS
 	path = /obj/item/clothing/head/f13/ncr_slouch
-	restricted_desc = "NCR"
+	restricted_desc = "NCR grunts"
 	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",

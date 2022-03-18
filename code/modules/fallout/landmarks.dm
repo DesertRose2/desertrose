@@ -20,11 +20,11 @@
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrmedofficer
-	name = "NCR Medical Officer"
+	name = "OSI Officer"
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrfirstsergeant
-	name = "NCR Sergeant First Class"
+	name = "NCR First Sergeant"
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrsergeant
