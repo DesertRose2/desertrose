@@ -17,4 +17,4 @@
 
 #define is_dungeon_level(z) SSmapping.level_trait(z, ZTRAIT_DUNGEON)
 
-#define is_above_level(z) SSmapping.level_trait(z, ZTRAIT_ABOVE)
+#define is_top_level(z) (SSmapping.level_trait(z, ZTRAIT_DOWN) && !SSmapping.level_trait(z, ZTRAIT_UP))

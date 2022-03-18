@@ -38,7 +38,7 @@
 	var/_x = 0
 	var/_y = 0
 	var/turf/T = get_turf(user)
-	if(is_above_level(T.z)) //higher elevation equals higher view range
+	if(is_top_level(T.z)) //higher elevation equals higher view range
 		src.zoom_out_amt = 19
 		src.zoom_amt = 10
 		to_chat(user,"You see the horizon more clearly from this elevation.")
