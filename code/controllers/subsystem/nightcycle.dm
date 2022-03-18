@@ -13,7 +13,8 @@
 
 GLOBAL_LIST_INIT(nightcycle_turfs, typecacheof(list(
 	/turf/open/indestructible/ground/outside,
-	/turf/open/floor/plating/f13/outside)))
+	/turf/open/floor/plating/f13/outside,
+	/turf/open/transparent/openspace/air,)))
 
 SUBSYSTEM_DEF(nightcycle)
 	name = "Day/Night Cycle"

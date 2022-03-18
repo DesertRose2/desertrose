@@ -44,14 +44,10 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 	var/turf/A = SSmapping.get_turf_below(src)
 	if(istype(A,/turf/closed/wall))
 		opacity = 1
-
 	else
-		if(!A.contents)
-			return
-		else
-			for(var/obj/O in A.contents)
-				if(istype(O,/obj/structure/simple_door))
-					opacity = 1
+		for(var/obj/O in A.contents)
+			if(istype(O,/obj/structure/simple_door))
+				opacity = 1
 
 /turf/open/transparent/openspace/can_have_cabling()
 	if(locate(/obj/structure/lattice/catwalk, src))
@@ -161,3 +157,6 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 
 /turf/open/transparent/openspace/icemoon/can_zFall(atom/movable/A, levels = 1, turf/target)
 	return TRUE
+
+/turf/open/transparent/openspace/air
+	name = "air"
