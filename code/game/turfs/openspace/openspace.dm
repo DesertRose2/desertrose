@@ -160,3 +160,5 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 
 /turf/open/transparent/openspace/air
 	name = "air"
+	turf_light_range = 3
+	turf_light_power = 0.75

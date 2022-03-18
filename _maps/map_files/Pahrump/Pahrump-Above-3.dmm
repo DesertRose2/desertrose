@@ -242,7 +242,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/transparent/openspace/air,
+/turf/open/transparent/openspace,
 /area/f13/legion)
 "wu" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -410,7 +410,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "GL" = (
-/turf/open/transparent/openspace/air,
+/turf/open/transparent/openspace,
 /area/f13/ncr)
 "HX" = (
 /obj/structure/barricade/concrete,
@@ -430,7 +430,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "LO" = (
-/turf/open/transparent/openspace/air,
+/turf/open/transparent/openspace,
 /area/f13/building)
 "LT" = (
 /turf/open/floor/wood{
@@ -487,7 +487,7 @@
 	},
 /area/f13/legion)
 "SG" = (
-/turf/open/transparent/openspace/air,
+/turf/open/transparent/openspace,
 /area/f13/brotherhood)
 "VB" = (
 /obj/structure/wreck/trash/machinepile,
