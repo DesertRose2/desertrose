@@ -34,7 +34,6 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 
 /turf/open/transparent/openspace/Initialize() // handle plane and layer here so that they don't cover other obs/turfs in Dream Maker
 	. = ..()
-
 	is_wall_below()
 	vis_contents += GLOB.openspace_backdrop_one_for_all //Special grey square for projecting backdrop darkness filter on it.
 
@@ -47,9 +46,12 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 		opacity = 1
 
 	else
-		for(var/obj/O in A.contents)
-			if(istype(O,/obj/structure/simple_door))
-				opacity = 1
+		if(!A.contents)
+			return
+		else
+			for(var/obj/O in A.contents)
+				if(istype(O,/obj/structure/simple_door))
+					opacity = 1
 
 /turf/open/transparent/openspace/can_have_cabling()
 	if(locate(/obj/structure/lattice/catwalk, src))
