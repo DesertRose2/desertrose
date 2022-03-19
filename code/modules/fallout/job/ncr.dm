@@ -237,29 +237,31 @@ OSI Officer, renamed from Medical Officer
 	title = "OSI Officer"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a representative of the OSI in Camp Miller. You do not have any command authority unless it relates to supply, science, or medical purpose. You are not a soldier. Your duties are to ensure supplies are in order, that the troopers are in good health and that every member of the supply branch are fulfilling their obligations."
+	description = "You are a representative of the OSI in Camp Miller as part of a joint operation with the army. You do not have any command authority unless it relates to supply, science, or medical purpose. You are not a soldier, though you have been granted clearance and pins granting you roughly officer rank. Your duties are to ensure supplies are in order, that the troopers are in good health and that every member of the supply branch are fulfilling their obligations."
 	supervisors = "Acting Army CO and High Command"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 
+	loadout_options = list(
+	/datum/outfit/loadout/osimed,	//Old Medical Officer
+	/datum/outfit/loadout/osifarm,	//Farming Mojave Kit
+	/datum/outfit/loadout/ositech	//Engie Analyst
+	)
+
 /datum/outfit/job/ncr/f13medicalofficer
 	name = "OSI Officer"
 	jobtype		= /datum/job/ncr/f13medicalofficer
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
-	uniform		= /obj/item/clothing/under/f13/ncr/ncr_officer
+	uniform		= /obj/item/clothing/under/lawyer/blacksuit
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT2
 	head 		= /obj/item/clothing/head/beret/medical
 	neck 		= /obj/item/storage/belt/holster/med_lt
-	glasses 	= /obj/item/clothing/glasses/hud/health/f13
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
-	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
-	l_hand		= /obj/item/storage/firstaid/regular
-	r_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
-	mask 		= /obj/item/clothing/mask/surgical
+	belt		= /obj/item/storage/belt/military/assault/ncr
 	l_pocket	= /obj/item/flashlight/seclite
 	backpack_contents = list(
 		/obj/item/storage/survivalkit_aid=2, \
@@ -275,7 +277,35 @@ OSI Officer, renamed from Medical Officer
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
+
+/datum/outfit/loadout/osimed
+	name = "Medical Professional"
+	backpack_contents = list(
+		/obj/item/clothing/mask/surgical=1,
+		/obj/item/storage/backpack/duffelbag/med/surgery=1,
+		/obj/item/book/granter/trait/midsurgery=1,
+		/obj/item/storage/firstaid/regular=1,
+		/obj/item/clothing/glasses/hud/health/f13=1)
+
+/datum/outfit/loadout/osifarm
+	name = "Mojave Sharecropper Kit"
+	backpack_contents = list(
+		/obj/item/seeds/watermelon=2,
+		/obj/item/seeds/fungus=2,
+		/obj/item/seeds/ambrosia=2,
+		/obj/item/seeds/punga=2,
+		/obj/item/seeds/feracactus=2,
+		/obj/item/circuitboard/machine/hydroponics=1)
+
+/datum/outfit/loadout/ositech
+	name = "Tech Analyst"
+	backpack_contents =list(
+		/obj/item/stock_parts/manipulator/femto=1,
+		/obj/item/construction/rcd/loaded/upgraded=1,
+		/obj/item/rcd_ammo/large=1,
+		/obj/item/storage/part_replacer=1,
+		/obj/item/clothing/glasses/meson/engine/prescription=1)
 
 /*
 First Sergeant
