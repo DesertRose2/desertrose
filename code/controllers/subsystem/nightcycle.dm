@@ -13,8 +13,7 @@
 
 GLOBAL_LIST_INIT(nightcycle_turfs, typecacheof(list(
 	/turf/open/indestructible/ground/outside,
-	/turf/open/floor/plating/f13/outside,
-	/turf/open/transparent/openspace/air,)))
+	/turf/open/floor/plating/f13/outside)))
 
 SUBSYSTEM_DEF(nightcycle)
 	name = "Day/Night Cycle"
@@ -31,8 +30,6 @@ SUBSYSTEM_DEF(nightcycle)
 	var/working = 0
 	var/doColumns //number of columns to do at a time
 	var/newTime
-	var/const/surface_z = 3 //station z level
-	var/affected_zs = list()
 
 /datum/controller/subsystem/nightcycle/fire(resumed = FALSE)
 	if(nextBracket())
@@ -76,26 +73,23 @@ SUBSYSTEM_DEF(nightcycle)
 /datum/controller/subsystem/nightcycle/proc/doWork()
 	var/list/currentTurfs = list()
 	var/x = min(currentColumn + doColumns, world.maxx)
-	if(!LAZYLEN(affected_zs))
-		var/next_z = surface_z
-		var/offset
-		while((offset = SSmapping.level_trait(next_z, ZTRAIT_UP)))
-			next_z += offset
-			affected_zs |= next_z
+//	for (var/z in SSmapping.levels_by_trait(ZTRAIT_STATION))
+	//HACK. Z level 2 is always surface and nobody sets their fucking traits correctly.
+	//This should be done with a ztrait for surface/subsurface
+	var/z = 3
+	var/start_turf = locate(x,world.maxy,z)
+	var/end_turf = locate(x,1,z)
 
-	for(var/z in affected_zs)
-//		currentTurfs = block(locate(currentColumn,1,z), locate(x,world.maxy,z)) //this is probably brutal on the overhead
-		var/start_turf = locate(x,world.maxy,z)
-		var/end_turf = locate(x,1,z)
-		currentTurfs = getline(start_turf,end_turf)
-		for (var/turf/T in currentTurfs)
-			if(T.turf_light_range && !QDELETED(T)) //Turfs are qdeleted on changeturf
-				T.set_light(T.turf_light_range, sunPower, sunColour)
+//	currentTurfs = block(locate(currentColumn,1,z), locate(x,world.maxy,z)) //this is probably brutal on the overhead
+	currentTurfs = getline(start_turf,end_turf)
+	for (var/turf/T in currentTurfs)
+		if(T.turf_light_range && !QDELETED(T)) //Turfs are qdeleted on changeturf
+			T.set_light(T.turf_light_range, sunPower, sunColour)
 
 	currentColumn = x + 1
 	if (currentColumn > world.maxx)
 		currentColumn = 1
-		working = FALSE
+		working = 0
 		return
 
 /datum/controller/subsystem/nightcycle/proc/updateLight(newTime)

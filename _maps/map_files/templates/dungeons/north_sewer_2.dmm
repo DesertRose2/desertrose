@@ -290,6 +290,7 @@
 /area/f13/bunker)
 "fg" = (
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/splats,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
@@ -450,6 +451,7 @@
 /area/f13/bunker)
 "iT" = (
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
@@ -473,6 +475,7 @@
 /area/f13/tunnel)
 "jj" = (
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old"
 	},
@@ -604,6 +607,7 @@
 "lw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/splats,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
@@ -663,6 +667,7 @@
 "mQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/mob_spawn/human/corpse/raider/tribal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "mU" = (
@@ -1193,6 +1198,7 @@
 "vR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "vS" = (
@@ -1360,8 +1366,7 @@
 	harm_intent_damage = 10;
 	health = 400;
 	name = "legendary sentry bot";
-	obj_damage = 100;
-	faction = list("raider")
+	obj_damage = 100
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
@@ -1601,6 +1606,7 @@
 "DQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/raidermelee,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
 	},
@@ -2015,6 +2021,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
+/obj/item/gun/ballistic/automatic/pistol/pistol127/compact,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "LG" = (
