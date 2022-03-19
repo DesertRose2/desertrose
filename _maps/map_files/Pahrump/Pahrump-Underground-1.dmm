@@ -19773,10 +19773,11 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "nts" = (
-/obj/structure/fence/handrail{
-	pixel_y = -8
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "VC1"
 	},
-/turf/open/floor/plasteel/f13,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "nuc" = (
 /obj/machinery/light/fo13colored/Aqua{
@@ -20556,13 +20557,6 @@
 	icon_state = "whitedirtysolid"
 	},
 /area/f13/brotherhood/medical)
-"nUf" = (
-/obj/structure/railing/corner,
-/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
-	dir = 8;
-	icon_state = "neutraldirty"
-	},
-/area/f13/tunnel)
 "nUw" = (
 /obj/structure/chair/stool{
 	icon_state = "bench_center"
@@ -25067,11 +25061,9 @@
 	},
 /area/f13/brotherhood/offices2nd)
 "qLa" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "VC2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -25546,9 +25538,6 @@
 "qYp" = (
 /obj/machinery/light/small{
 	dir = 4
-	},
-/obj/structure/railing{
-	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 4;
@@ -30308,18 +30297,6 @@
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"tXF" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
-	dir = 8;
-	icon_state = "neutraldirty"
-	},
-/area/f13/tunnel)
 "tYd" = (
 /obj/structure/rack,
 /obj/machinery/light/small{
@@ -31451,15 +31428,6 @@
 /mob/living/simple_animal/hostile/mirelurk,
 /turf/open/water,
 /area/f13/caves)
-"uHu" = (
-/obj/structure/railing/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
-	dir = 4;
-	icon_state = "neutralrusty"
-	},
-/area/f13/tunnel)
 "uHU" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
@@ -35774,7 +35742,10 @@
 	},
 /area/f13/bunker)
 "xwT" = (
-/obj/structure/stairs/north,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "VC3"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "xxn" = (
@@ -42995,8 +42966,8 @@ smm
 smm
 gsJ
 smm
-nUf
-tXF
+smm
+gsJ
 kLg
 ygC
 eLE
@@ -43252,8 +43223,8 @@ wpJ
 wpJ
 wpJ
 wpJ
+wpJ
 nts
-xwT
 wAe
 ygC
 eLE
@@ -43509,7 +43480,7 @@ wpJ
 wpJ
 wpJ
 wpJ
-nts
+wpJ
 qLa
 dZV
 ygC
@@ -43766,7 +43737,7 @@ wpJ
 wpJ
 wpJ
 wpJ
-nts
+wpJ
 xwT
 wAe
 ygC
@@ -44023,7 +43994,7 @@ ask
 ask
 wQD
 mnB
-uHu
+mnB
 qYp
 cft
 ygC
