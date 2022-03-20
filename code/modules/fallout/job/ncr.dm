@@ -295,13 +295,16 @@ OSI Officer, renamed from Medical Officer
 		/obj/item/seeds/fungus=2,
 		/obj/item/seeds/ambrosia=2,
 		/obj/item/seeds/punga=2,
+		/obj/item/seeds/corn=2,
 		/obj/item/seeds/feracactus=2,
 		/obj/item/circuitboard/machine/hydroponics=1)
 
 /datum/outfit/loadout/ositech
 	name = "Tech Analyst"
 	backpack_contents =list(
-		/obj/item/stock_parts/manipulator/femto=1,
+		/obj/item/stock_parts/manipulator/pico=2,
+		/obj/item/stock_parts/matter_bin/adv=2,
+		/obj/item/screwdriver=1,
 		/obj/item/construction/rcd/loaded/upgraded=1,
 		/obj/item/rcd_ammo/large=1,
 		/obj/item/storage/part_replacer=1,
