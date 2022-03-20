@@ -50,8 +50,8 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Knight Captain",
 
 	"NCR Commanding Officer",
-	"NCR Sergeant First Class",
-	"NCR Medical Officer",
+	"NCR First Sergeant",
+	"OSI Officer",
 
 	"Legion Centurion",
 	"Legion Venator",
@@ -258,8 +258,8 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 
 GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Commanding Officer",
-	"NCR Sergeant First Class",
-	"NCR Medical Officer"
+	"NCR First Sergeant",
+	"OSI Officer"
 ))
 /*
 GLOBAL_LIST_INIT(ncr_general_positions, list(
@@ -390,7 +390,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR Sergeant First Class","NCR Veteran Ranger","NCR Medical Officer")),
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR First Sergeant","NCR Veteran Ranger","OSI Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
 	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Chief Researcher"))
 
