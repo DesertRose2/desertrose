@@ -16424,7 +16424,8 @@
 	icon_state = "rottweiler";
 	icon_dead = "rottweiler_dead";
 	name = "Guerrilla";
-	health = 200
+	health = 200;
+	faction = list("neutral")
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
