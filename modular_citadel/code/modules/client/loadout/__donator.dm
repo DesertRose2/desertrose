@@ -553,7 +553,8 @@
 						"rangerbust",
 						"kayzach",
 						"pisshole",
-						"tzula")
+						"tzula",
+						"yeehawguvnah")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -676,7 +677,8 @@
 						"luke313",
 						"spartan2548",
 						"lunaticluna",
-						"tzula")
+						"tzula",
+						"yeehawguvnah")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
 
 ////////////////////////////
