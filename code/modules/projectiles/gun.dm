@@ -285,7 +285,10 @@
 		to_chat(user, "<span class='userdanger'>You need both hands free to fire \the [src]!</span>")
 		return
 
-	user.DelayNextAction(ranged_attack_speed)
+	if (automatic == 0)
+		user.DelayNextAction(ranged_attack_speed)
+	if (automatic == 1)
+		user.DelayNextAction(autofire_shot_delay)
 
 	//DUAL (or more!) WIELDING
 	var/bonus_spread = 0
@@ -323,7 +326,10 @@
 	return user.CheckActionCooldown(get_clickcd())
 
 /obj/item/gun/proc/get_clickcd()
-	return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+	if (automatic == 0)
+		return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+	if (automatic == 1)
+		return isnull(chambered?.click_cooldown_override)? autofire_shot_delay : chambered.click_cooldown_override
 
 /obj/item/gun/GetEstimatedAttackSpeed()
 	return get_clickcd()
@@ -345,7 +351,10 @@
 	return
 
 /obj/item/gun/proc/on_cooldown()
-	return busy_action || firing || ((last_fire + fire_delay) > world.time)
+	if (automatic == 0)
+		return busy_action || firing || ((last_fire + fire_delay) > world.time)
+	if (automatic == 1)
+		return busy_action || firing
 
 /obj/item/gun/proc/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stam_cost = 0)
 	add_fingerprint(user)
