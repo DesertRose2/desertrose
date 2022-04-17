@@ -445,6 +445,7 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
 
+//New sprite edited by pisshole
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
 	desc = "(VI) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
@@ -457,11 +458,18 @@
 						"Old-School" = "ncr_patrol_alternative"
 						)
 
+//New sprite edited by Pisshole
 /obj/item/clothing/suit/armor/f13/rangercombat/sergeant
 	name = "sergeant ranger combat armor"
-	desc = "(VI) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	desc = "(VI) The NCR Patrol armor, a set of gear with a long and storied history in the NCR as the first Ranger Combat Armor. This one has a Veteran ranger's coat over top. Snazzy!"
 	icon_state = "rangersergeant"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+	always_reskinnable = TRUE
+	unique_reskin = list(
+						"Coat" = "rangersergeant",
+						"New" = "ncr_patrol",
+						"Old-School" = "ncr_patrol_alternative"
+						)
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
