@@ -40,6 +40,8 @@
 	var/burst_shot_delay = 3
 	/// The time between firing actions, this means between bursts if this is burst weapon. The reason this is 0 is because you are still, by default, limited by clickdelay.
 	var/fire_delay = 0
+	//Time between individual shots when firing full-auto.
+	var/autofire_shot_delay = 3
 	/// Last world.time this was fired
 	var/last_fire = 0
 	/// Currently firing, whether or not it's a burst or not.
@@ -119,9 +121,7 @@
 	/// Just 'slightly' snowflakey way to modify projectile damage for projectiles fired from this gun.
 //	var/projectile_damage_multiplier = 1
 
-/*
 	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds
-*/ //Disabled because automatic fire is buggy and a bit OP.
 
 /obj/item/gun/Initialize()
 	. = ..()
