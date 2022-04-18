@@ -434,6 +434,7 @@
 	new /obj/item/clothing/mask/gas/montana(src)
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/suit/armor/f13/rangercombat/sergeant/tina_vet(src)
 
 //Katie Leon - tybug0rz
 /obj/item/storage/box/large/custom_kit/katieleon/PopulateContents()
@@ -472,6 +473,25 @@
 /obj/item/storage/box/large/custom_kit/josephriley/PopulateContents()
 	new /obj/item/clothing/suit/toggle/chef(src)
 
+//Bangles - Pisshole
+/obj/item/storage/box/large/custom_kit/bangles/PopulateContents()
+	new /obj/item/clothing/head/f13/trailranger/trailbandana(src)
+	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig(src)
+	new /obj/item/clothing/gloves/f13/leather/silverbangles(src)
+	new /obj/item/warpaint_bowl(src)
+
+//Judith Rhodes - Pisshole
+/obj/item/storage/box/large/custom_kit/judithrhodes/PopulateContents()
+	new /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_bandolierholster(src)
+	new /obj/item/storage/belt/military/assault/ncr(src)
+
+//Lang - Pisshole
+/obj/item/storage/box/large/custom_kit/lang/PopulateContents()
+	new /obj/item/clothing/head/helmet/f13/ncr/rangercombat/eliteriot(src)
+	new /obj/item/clothing/under/f13/ranger/vet/chinesespecop(src)
+	new /obj/item/storage/belt/military/assault/ncr/crossbelt(src)
+	new /obj/item/clothing/shoes/f13/military(src)
+
 //NCR Recon
 /obj/item/storage/box/large/custom_kit/recon/PopulateContents()
 	new	/obj/item/clothing/head/beret/ncr_recon(src)
@@ -482,10 +502,13 @@
 	new	/obj/item/clothing/head/beret/ncr_scout(src)
 	new	/obj/item/clothing/under/f13/ncr/scout(src)
 
-//Bangles - Pisshole
-
-/obj/item/storage/box/large/custom_kit/bangles/PopulateContents()
-	new /obj/item/clothing/head/f13/trailranger/trailbandana(src)
-	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig(src)
-	new /obj/item/clothing/gloves/f13/leather/silverbangles(src)
-	new /obj/item/warpaint_bowl(src)
+//NCR Pilot - LM and Event Only
+/obj/item/storage/box/large/custom_kit/ncrpilot/PopulateContents()
+	new	/obj/item/clothing/head/flight(src)
+	new	/obj/item/clothing/shoes/f13/military/ncr_officer_boots(src)
+	new /obj/item/clothing/head/f13/ncr_stetson(src)
+	new /obj/item/clothing/suit/toggle/labcoat/f13/ncrbomber(src)
+	new /obj/item/clothing/under/f13/ncr/ncr_officer(src)
+	new /obj/item/gun/ballistic/automatic/pistol/pistol127(src)
+	new /obj/item/ammo_box/magazine/m127mm(src)
+	new /obj/item/ammo_box/magazine/m127mm/empty(src)
