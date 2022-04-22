@@ -3,15 +3,15 @@
 //////////////////////////////
 
 /mob/living/simple_animal/hostile/xray
-	name = "x-ray grunt"
-	desc = "A once proud member of the NCR turned mercenary."
+	name = "NCR deserter"
+	desc = "A once proud member of the NCR with a chip on their shoulder."
 	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "deserter_melee"
 	icon_living = "deserter_melee"
 	icon_dead = null
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	speak = list("Better this than the Mojave, I guess...", "The fuck am I doing here?", "Nowhere to go... not east... nor west...", "Hope the pay's better than the Army's...")
+	speak = list("Better this than the Mojave, I guess...", "Screw California!", "Well, it was this or be a Legion slampig...", "MARCHIN', SINGIN', HAVIN' A BALL, HEARD THAT KIMBALL'S DICK WAS SMALL! Oo-rah! ...do we say oo-rah?", "I wouldn't have deserted if Tandi was still around...", "Nowhere to go... not east... nor west...")
 	speak_chance = 4
 	turns_per_move = 5
 	response_help_simple = "pokes"
@@ -35,13 +35,13 @@
 	del_on_death = 1
 
 /obj/effect/mob_spawn/human/corpse/xray_grunt
-	id_job = "X-Ray Company Grunt"
+	id_job = "NCR Deserter"
 	hair_style = "Bald"
 	facial_hair_style = "Shaved"
 	outfit = /datum/outfit/xraycompanygrunt
 
 /datum/outfit/xraycompanygrunt
-	name = "x-ray grunt"
+	name = "NCR Deserter"
 	head = /obj/item/clothing/head/f13/ncr/old
 	uniform = /obj/item/clothing/under/f13/exile
 	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
@@ -83,8 +83,8 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/shotgun/trench)
 
 /mob/living/simple_animal/hostile/xray/marauder
-	name = "x-ray marauder"
-	desc = "A once proud member of the NCR turned mercenary. This one is clad in riot gear."
+	name = "NCR Deserter Marauder"
+	desc = "A once proud member of the NCR turned thief. This one is clad in probably stolen valor."
 	icon_state = "marauder_pistol"
 	icon_living = "marauder_pistol"
 	ranged = 1
@@ -98,11 +98,11 @@
 	stat_attack = UNCONSCIOUS
 
 /obj/effect/mob_spawn/human/corpse/xray_marauder
-	id_job = "X-Ray Company Marauder"
+	id_job = "NCR Deserter Marauder"
 	outfit = /datum/outfit/xraycompanymarauder
 
 /datum/outfit/xraycompanymarauder
-	name = "x-ray marauder"
+	name = "NCR Deserter Marauder"
 	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/marine
 	uniform = /obj/item/clothing/under/f13/dbdu
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/marine
@@ -141,8 +141,8 @@
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
 
 /mob/living/simple_animal/hostile/xray/marauder/boss
-	name = "x-ray heavy marauder"
-	desc = "A once proud member of the NCR turned mercenary. This one is clad in marine combat armor."
+	name = "NCR Deserter Heavy"
+	desc = "A once proud member of the NCR turned cutthroat. This one jacked themselves some pre-war marine combat gear."
 	icon_state = "mmarauder_mg"
 	icon_living = "mmarauder_mg"
 	maxHealth = 1100
@@ -161,11 +161,11 @@
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
 
 /obj/effect/mob_spawn/human/corpse/xray_marauder_boss
-	id_job = "X-Ray Company Heavy Marauder"
+	id_job = "NCR Deserter Heavy"
 	outfit = /datum/outfit/xraycompanyheavymarauder
 
 /datum/outfit/xraycompanyheavymarauder
-	name = "x-ray heavy marauder"
+	name = "NCR Deserter Heavy"
 	head = /obj/item/clothing/head/helmet/f13/combat/marine
 	uniform = /obj/item/clothing/under/f13/recon/marine
 	suit = /obj/item/clothing/suit/armor/f13/combat/marine
