@@ -12269,16 +12269,12 @@
 "eqN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
 /obj/structure/table/reinforced{
 	icon_state = "innercity";
 	name = "gatehouse"
 	},
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -17029,6 +17025,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -25902,6 +25899,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -27323,9 +27321,9 @@
 /obj/item/ammo_box/c45rev,
 /obj/item/ammo_box/c45rev,
 /obj/item/storage/belt/holster/hip,
-/obj/item/clothing/head/helmet/police,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/head/warden,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -32452,6 +32450,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -34774,13 +34773,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/lockbox/clusterbang,
-/obj/item/storage/lockbox,
-/obj/item/storage/lockbox,
 /obj/structure/table/reinforced{
 	icon_state = "innercity";
 	name = "gatehouse"
 	},
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -37293,6 +37291,7 @@
 	pixel_x = -3
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -37363,6 +37362,7 @@
 	color = "#363636"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -40441,6 +40441,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -48381,6 +48382,10 @@
 /obj/item/lockpick_set,
 /obj/item/lockpick_set,
 /obj/item/lockpick_set,
+/obj/item/key{
+	pixel_x = -10;
+	pixel_y = 9
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -51246,17 +51251,16 @@
 /area/f13/building)
 "rHS" = (
 /obj/structure/closet/secure_closet/brig,
-/obj/item/clothing/suit/bio_suit/security,
-/obj/item/clothing/suit/hooded/wintercoat/security,
-/obj/item/clothing/under/rank/security/head_of_security/alt,
-/obj/item/clothing/under/rank/security/head_of_security/grey,
-/obj/item/clothing/under/rank/security/head_of_security/skirt,
-/obj/item/clothing/under/rank/security/officer,
-/obj/item/clothing/head/bio_hood/security,
 /obj/machinery/light/broken{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/under/f13/police,
+/obj/item/clothing/under/f13/police,
+/obj/item/clothing/under/f13/police,
+/obj/item/clothing/head/helmet/police,
+/obj/item/clothing/head/helmet/police,
+/obj/item/clothing/head/helmet/police,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
