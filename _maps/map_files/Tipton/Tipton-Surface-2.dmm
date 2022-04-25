@@ -32298,18 +32298,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/klamat)
-"vRB" = (
-/obj/machinery/door/airlock/wood{
-	name = "Ranger Lodge";
-	req_access = 121;
-	req_access_txt = "121"
-	},
-/obj/machinery/door/unpowered/secure_NCR{
-	color = "#e8e4ca";
-	name = "Ranger Lodge"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/ncr)
 "vRI" = (
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
@@ -50325,7 +50313,7 @@ dbq
 aHr
 yhi
 yhi
-vRB
+ogy
 yhi
 yhi
 yhi
