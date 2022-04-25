@@ -1980,13 +1980,11 @@
 /turf/open/floor/carpet,
 /area/f13/building)
 "bjm" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 9
 	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "bjA" = (
@@ -3978,6 +3976,12 @@
 	dir = 5
 	},
 /area/f13/klamat)
+"cCB" = (
+/obj/machinery/mineral/ore_redemption,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "cCM" = (
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10005,13 +10009,11 @@
 	},
 /area/f13/building)
 "gCq" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 5
 	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "gCw" = (
@@ -10682,13 +10684,11 @@
 	},
 /area/f13/building)
 "gXS" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 6
 	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "gXV" = (
@@ -16380,13 +16380,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/klamat)
 "kNv" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 10
 	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "kNz" = (
@@ -19079,12 +19077,10 @@
 	},
 /area/f13/followers)
 "mGt" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
 	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "mGC" = (
@@ -21886,6 +21882,13 @@
 /obj/item/reagent_containers/pill/patch/f13/healpoultice,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/mountain)
+"ozS" = (
+/obj/item/circuitboard/machine/ore_silo,
+/obj/structure/frame/machine,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/brotherhood)
 "oAD" = (
 /obj/machinery/hydroponics/soil/crafted,
 /obj/effect/turf_decal/weather/snow/corner{
@@ -35588,10 +35591,8 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "yhA" = (
-/obj/structure/lattice{
-	density = 1
-	},
 /obj/effect/turf_decal/stripes/asteroid/line,
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "yhK" = (
@@ -69632,9 +69633,9 @@ kKQ
 nDx
 bXo
 kIE
+cCB
+ozS
 jcd
-bXo
-bXo
 bXo
 inf
 bXo
