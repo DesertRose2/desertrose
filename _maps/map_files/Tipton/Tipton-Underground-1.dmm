@@ -3992,6 +3992,10 @@
 /obj/structure/wreck/trash/one_barrel,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
+"dWq" = (
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "dWJ" = (
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
@@ -4648,14 +4652,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side,
 /area/f13/radiation)
-"eDU" = (
-/obj/machinery/door/airlock/wood{
-	name = "Gatehouse";
-	req_access = 121;
-	req_access_txt = "121"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "eEu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small{
@@ -6314,10 +6310,6 @@
 	},
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/bunker)
-"ghU" = (
-/obj/item/storage/bag/ore,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "ghZ" = (
 /obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/decal/fakelattice,
@@ -12046,6 +12038,14 @@
 	icon_state = "neutralrusty"
 	},
 /area/f13/bunker)
+"lwY" = (
+/obj/machinery/door/airlock/wood{
+	name = "Gatehouse";
+	req_access = 121;
+	req_access_txt = "121"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "lxd" = (
 /obj/structure/bed/old,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -12986,14 +12986,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
-"moZ" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "miningbos";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mpM" = (
 /obj/structure/barricade/bars,
 /turf/open/floor/f13{
@@ -13397,6 +13389,14 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
+"mHv" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "miningbos";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "mHF" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
@@ -13492,6 +13492,14 @@
 "mLD" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"mLJ" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "miningncr";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "mMD" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/tunnel,
@@ -15792,9 +15800,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "oUT" = (
-/obj/machinery/vending/medical{
-	req_access = null
-	},
+/obj/machinery/vending/medical,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/bunker)
@@ -17709,6 +17715,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"qQC" = (
+/obj/machinery/door/unpowered/secure_legion,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "qQY" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/subway,
@@ -18389,14 +18399,6 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/bunker)
-"rwJ" = (
-/obj/structure/ladder/unbreakable{
-	name = "mining ladder";
-	id = "miningwaster";
-	height = 2
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "rwM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/side{
@@ -18644,14 +18646,6 @@
 /obj/effect/spawner/bundle/f13/armor/combat,
 /turf/open/floor/wood/f13/old,
 /area/f13/shack)
-"rKg" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "mininglegion";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/legion)
 "rKH" = (
 /obj/machinery/autolathe,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -19120,10 +19114,6 @@
 /mob/living/simple_animal/hostile/ghoul/ranged,
 /turf/open/floor/plating/rust,
 /area/f13/bunker)
-"sfL" = (
-/obj/machinery/door/unpowered/secure_legion,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/legion)
 "sgf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/recharge_station,
@@ -19404,10 +19394,6 @@
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"stf" = (
-/obj/structure/ore_box,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/legion)
 "sty" = (
 /turf/closed/wall/mineral/wood,
 /area/f13/den)
@@ -20489,6 +20475,14 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"tCs" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "mininglegion";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "tCv" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/strong,
@@ -20955,6 +20949,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/radiation)
+"tYm" = (
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "tYD" = (
 /mob/living/simple_animal/hostile/handy/gutsy,
 /obj/structure/chair/f13foldupchair{
@@ -21827,6 +21825,14 @@
 	},
 /turf/closed/wall/f13/ruins,
 /area/f13/shack)
+"uMH" = (
+/obj/structure/ladder/unbreakable{
+	name = "mining ladder";
+	id = "miningwaster";
+	height = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "uNi" = (
 /mob/living/simple_animal/hostile/ghoul/legendary,
 /turf/open/floor/plating/tunnel,
@@ -24647,14 +24653,6 @@
 	},
 /turf/open/water,
 /area/f13/radiation)
-"xhL" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "miningncr";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "xhM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood{
@@ -29482,9 +29480,9 @@ vKr
 vKr
 vKr
 vKr
-xhL
+mLJ
 tRM
-eDU
+lwY
 dBi
 klS
 klS
@@ -54636,7 +54634,7 @@ rUO
 pnE
 fek
 efQ
-moZ
+mHv
 dhU
 dhU
 vKr
@@ -75602,7 +75600,7 @@ vKr
 vKr
 vKr
 vKr
-rKg
+tCs
 gFR
 vKr
 vKr
@@ -75803,7 +75801,7 @@ vKr
 vKr
 vKr
 vKr
-stf
+dWq
 gFR
 gFR
 vKr
@@ -76410,7 +76408,7 @@ pin
 gGR
 gpW
 bUM
-stf
+dWq
 gFR
 bUM
 fIq
@@ -76815,7 +76813,7 @@ wqI
 hQf
 bUM
 bUM
-sfL
+qQC
 bUM
 wga
 jea
@@ -95676,7 +95674,7 @@ vKr
 vKr
 vKr
 cnn
-rwJ
+uMH
 cnn
 vKr
 vKr
@@ -96080,7 +96078,7 @@ vKr
 vKr
 vKr
 vKr
-ghU
+tYm
 cnn
 vKr
 vKr

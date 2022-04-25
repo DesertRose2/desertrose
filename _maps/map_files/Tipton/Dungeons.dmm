@@ -1065,11 +1065,6 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"dn" = (
-/mob/living/simple_animal/hostile/radscorpion,
-/obj/effect/decal/cleanable/blood,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "dp" = (
 /obj/item/crafting/coffee_pot,
 /obj/structure/table/reinforced,
@@ -1196,8 +1191,7 @@
 /area/f13/underground/cave)
 "dT" = (
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -1354,8 +1348,7 @@
 /area/f13/underground/cave)
 "ez" = (
 /obj/structure/window{
-	dir = 4;
-	icon_state = "window"
+	dir = 4
 	},
 /obj/machinery/sleeper{
 	dir = 8
@@ -1417,6 +1410,11 @@
 	dir = 8;
 	icon_state = "yellowsiding"
 	},
+/area/f13/underground/cave)
+"eK" = (
+/mob/living/simple_animal/hostile/radscorpion,
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "eM" = (
 /mob/living/simple_animal/hostile/megafauna/behemoth{
@@ -1617,6 +1615,10 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"fD" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "fE" = (
 /obj/structure/flora/tree/jungle,
@@ -2381,12 +2383,10 @@
 	},
 /obj/structure/table,
 /obj/structure/window/plasma{
-	dir = 4;
-	icon_state = "plasmawindow"
+	dir = 4
 	},
 /obj/structure/window/plasma{
-	dir = 8;
-	icon_state = "plasmawindow"
+	dir = 8
 	},
 /obj/item/twohanded/thermic_lance,
 /turf/open/floor/f13{
@@ -2671,6 +2671,14 @@
 	icon_state = "redmark"
 	},
 /area/f13/underground/cave)
+"kV" = (
+/obj/structure/ladder/unbreakable{
+	name = "mining ladder";
+	id = "miningwaster";
+	height = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "kZ" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/f13{
@@ -2782,8 +2790,7 @@
 /area/f13/underground/cave)
 "lH" = (
 /obj/machinery/light/broken{
-	dir = 4;
-	icon_state = "tube-broken"
+	dir = 4
 	},
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/grass/jungle,
@@ -3124,8 +3131,7 @@
 /area/f13/underground/cave)
 "nd" = (
 /obj/machinery/computer{
-	dir = 1;
-	icon_state = "computer"
+	dir = 1
 	},
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -3135,8 +3141,7 @@
 "ne" = (
 /obj/structure/bed/roller,
 /obj/structure/window{
-	dir = 8;
-	icon_state = "window"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -3319,8 +3324,7 @@
 "nT" = (
 /obj/structure/bed/roller,
 /obj/structure/window{
-	dir = 4;
-	icon_state = "window"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -3660,14 +3664,6 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"po" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "mininglegion";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "ps" = (
 /obj/machinery/shower,
 /obj/machinery/light{
@@ -3950,14 +3946,6 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"qJ" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "miningbos";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "qM" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/ancient,
@@ -4091,10 +4079,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/water,
 /area/f13/underground/cave)
-"ry" = (
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "rA" = (
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -4108,8 +4092,7 @@
 /area/f13/underground/cave)
 "rD" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
-	dir = 1;
-	icon_state = "red"
+	dir = 1
 	},
 /area/f13/underground/cave)
 "rE" = (
@@ -4731,8 +4714,7 @@
 "vm" = (
 /obj/structure/table,
 /obj/structure/window{
-	dir = 4;
-	icon_state = "window"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -4786,6 +4768,14 @@
 "vx" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/water,
+/area/f13/underground/cave)
+"vz" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "miningbos";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "vA" = (
 /obj/machinery/light{
@@ -4984,10 +4974,6 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
-/area/f13/underground/cave)
-"ws" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "wy" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -5574,14 +5560,6 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
-"zh" = (
-/obj/structure/ladder/unbreakable{
-	name = "mining ladder";
-	id = "miningwaster";
-	height = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "zj" = (
 /turf/open/floor/f13{
 	icon_state = "grass3"
@@ -5697,8 +5675,7 @@
 /area/f13/underground/cave)
 "zM" = (
 /obj/machinery/light/broken{
-	dir = 4;
-	icon_state = "tube-broken"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "grass2"
@@ -6070,14 +6047,6 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/underground/cave)
-"BG" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "miningncr";
-	name = "mining ladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "BH" = (
 /obj/structure/table,
@@ -6485,8 +6454,7 @@
 "DF" = (
 /obj/structure/table,
 /obj/structure/window{
-	dir = 8;
-	icon_state = "window"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -6541,8 +6509,7 @@
 /area/f13/underground/cave)
 "Ea" = (
 /obj/structure/chair/comfy/brown{
-	dir = 4;
-	icon_state = "comfychair"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/venus_human_trap{
 	faction = list("hostile","vines","plants", "jungle")
@@ -6694,8 +6661,7 @@
 /area/f13/underground/cave)
 "ES" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
-	dir = 1;
-	icon_state = "redcorner"
+	dir = 1
 	},
 /area/f13/underground/cave)
 "ET" = (
@@ -7095,10 +7061,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/underground/cave)
-"GZ" = (
-/mob/living/simple_animal/hostile/ghoul,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "Ha" = (
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/water,
@@ -7294,6 +7256,10 @@
 	icon_state = "bar"
 	},
 /area/f13/underground/cave)
+"Iq" = (
+/mob/living/simple_animal/hostile/radscorpion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "It" = (
 /obj/structure/barricade/bars,
 /turf/open/indestructible/ground/inside/subway,
@@ -7381,6 +7347,10 @@
 	dir = 5
 	},
 /area/f13/underground/cave)
+"Jh" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "Jk" = (
 /obj/structure/rack,
 /obj/item/stack/crafting/goodparts,
@@ -7398,10 +7368,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water,
-/area/f13/underground/cave)
-"Jp" = (
-/mob/living/simple_animal/hostile/radscorpion,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "Jq" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -7422,8 +7388,7 @@
 	name = "vault door 454"
 	},
 /obj/effect/turf_decal/stripes/red/line{
-	dir = 1;
-	icon_state = "warningline_red"
+	dir = 1
 	},
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -7545,8 +7510,7 @@
 /area/f13/underground/cave)
 "JU" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
-	dir = 8;
-	icon_state = "redcorner"
+	dir = 8
 	},
 /area/f13/underground/cave)
 "JV" = (
@@ -7805,6 +7769,10 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"LC" = (
+/mob/living/simple_animal/hostile/giantant,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "LD" = (
 /turf/open/floor/f13{
@@ -8102,8 +8070,7 @@
 "Ng" = (
 /obj/effect/spawner/lootdrop/seed_vault,
 /obj/machinery/light/broken{
-	dir = 8;
-	icon_state = "tube-broken"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "grass2"
@@ -8117,8 +8084,7 @@
 /area/f13/underground/cave)
 "Nj" = (
 /obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+	dir = 8
 	},
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/underground/cave)
@@ -8148,6 +8114,10 @@
 /turf/open/floor/f13{
 	icon_state = "grass3"
 	},
+/area/f13/underground/cave)
+"No" = (
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "Nq" = (
 /obj/structure/sink/puddle,
@@ -8655,8 +8625,7 @@
 /area/f13/underground/cave)
 "PO" = (
 /obj/machinery/door/window{
-	dir = 4;
-	icon_state = "left"
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "grass2"
@@ -8690,8 +8659,7 @@
 /area/f13/underground/cave)
 "PU" = (
 /obj/machinery/light/broken{
-	dir = 1;
-	icon_state = "tube-broken"
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
@@ -8906,10 +8874,6 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/underground/cave)
-"QP" = (
-/obj/effect/decal/cleanable/blood,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "QQ" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/spacevine{
@@ -9010,8 +8974,7 @@
 	light_color = "red"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/side{
-	dir = 1;
-	icon_state = "red"
+	dir = 1
 	},
 /area/f13/underground/cave)
 "Rp" = (
@@ -9170,8 +9133,7 @@
 "RQ" = (
 /obj/structure/dresser,
 /obj/machinery/light/broken{
-	dir = 1;
-	icon_state = "tube-broken"
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/underground/cave)
@@ -9222,6 +9184,14 @@
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
+"Sf" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "mininglegion";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "Sg" = (
 /obj/structure/cable{
@@ -9644,8 +9614,7 @@
 /area/f13/underground/cave)
 "Ua" = (
 /obj/structure/window{
-	dir = 8;
-	icon_state = "window"
+	dir = 8
 	},
 /obj/machinery/sleeper{
 	dir = 4
@@ -9931,6 +9900,14 @@
 	icon_state = "grass2"
 	},
 /area/f13/underground/cave)
+"Vr" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "miningncr";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "Vs" = (
 /obj/structure/flora/junglebush/large,
 /obj/structure/flora/grass/jungle,
@@ -10033,6 +10010,10 @@
 /turf/open/floor/f13{
 	icon_state = "grass2"
 	},
+/area/f13/underground/cave)
+"Wi" = (
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "Wl" = (
 /obj/structure/flora/junglebush/b,
@@ -10175,10 +10156,6 @@
 /turf/open/floor/f13{
 	icon_state = "grass3"
 	},
-/area/f13/underground/cave)
-"WO" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "WQ" = (
 /obj/structure/flora/grass/jungle/b,
@@ -10704,8 +10681,7 @@
 /area/f13/underground/cave)
 "ZM" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/corner{
-	dir = 4;
-	icon_state = "redcorner"
+	dir = 4
 	},
 /area/f13/underground/cave)
 "ZR" = (
@@ -16727,7 +16703,7 @@ cb
 cb
 cb
 cm
-BG
+Vr
 cm
 cb
 cb
@@ -20426,7 +20402,7 @@ cb
 cb
 cm
 cm
-qJ
+vz
 cm
 cm
 cb
@@ -21136,7 +21112,7 @@ jJ
 cb
 cm
 cm
-Jp
+Iq
 cm
 cb
 cb
@@ -21393,7 +21369,7 @@ jJ
 cb
 cm
 cm
-QP
+fD
 cm
 cb
 cb
@@ -33540,7 +33516,7 @@ cb
 cb
 cm
 cm
-WO
+LC
 cm
 cm
 cb
@@ -33796,8 +33772,8 @@ cb
 cb
 cb
 cb
-WO
-ry
+LC
+Jh
 cm
 cb
 cb
@@ -35479,7 +35455,7 @@ cb
 cb
 cb
 cm
-ws
+No
 cm
 cb
 cb
@@ -35736,7 +35712,7 @@ cb
 cm
 cm
 cm
-QP
+fD
 cm
 cb
 cb
@@ -35992,9 +35968,9 @@ cb
 cb
 cb
 cb
-GZ
+Wi
 cm
-QP
+fD
 cb
 cb
 cb
@@ -42956,7 +42932,7 @@ cb
 cb
 cb
 cm
-po
+Sf
 cm
 cm
 cb
@@ -53680,7 +53656,7 @@ cb
 cb
 cb
 cb
-Jp
+Iq
 cm
 cm
 cb
@@ -54452,7 +54428,7 @@ cb
 cb
 cb
 cm
-dn
+eK
 cm
 cm
 cb
@@ -68837,7 +68813,7 @@ cb
 cb
 cm
 cm
-zh
+kV
 cm
 cm
 cb
