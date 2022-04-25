@@ -2261,6 +2261,9 @@
 /area/f13/sewer)
 "ckT" = (
 /obj/structure/filingcabinet,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "ckW" = (
@@ -6638,10 +6641,6 @@
 /area/f13/sewer)
 "gvp" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small{
-	brightness = 7;
-	dir = 1
-	},
 /obj/item/clothing/mask/cigarette/pipe,
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_x = -1;
@@ -6760,7 +6759,7 @@
 /area/f13/tunnel)
 "gzW" = (
 /obj/machinery/door/unpowered/secure_NCR,
-/turf/closed/indestructible/wood,
+/turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "gAp" = (
 /obj/structure/closet/crate/bin,
@@ -9095,6 +9094,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/indestructible/ground/outside/ruins{
 	color = "#e6edf0";
 	name = "cobblestone floor"
@@ -10258,6 +10260,13 @@
 /obj/item/reagent_containers/food/drinks/bottle/brown/darkbrown,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"jRX" = (
+/obj/machinery/light/small{
+	brightness = 7;
+	dir = 4
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "jSl" = (
 /obj/structure/rack,
 /obj/effect/spawner/bundle/f13/armor/combat,
@@ -13772,6 +13781,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
 /area/f13/bunker)
+"ndj" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "ndl" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -20589,9 +20604,6 @@
 /obj/item/lighter/gold{
 	pixel_y = 8
 	},
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/decoration/clock{
 	pixel_x = 30
 	},
@@ -20681,6 +20693,7 @@
 	pixel_x = 4
 	},
 /obj/structure/table/booth,
+/obj/machinery/light,
 /turf/open/indestructible/ground/outside/ruins{
 	color = "#e6edf0";
 	name = "cobblestone floor"
@@ -25469,8 +25482,7 @@
 /area/f13/sewer)
 "xSU" = (
 /mob/living/simple_animal/hostile/xray{
-	desc = "A deserter with know-how and a grudge to boot.";
-	name = "NCR deserter"
+	desc = "A deserter with know-how and a grudge to boot."
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/f13/tunnel)
@@ -43412,11 +43424,11 @@ iBp
 wEf
 qhX
 joi
-joi
+ndj
 joi
 rcJ
 joi
-joi
+jRX
 xAK
 joi
 joi
@@ -44220,12 +44232,12 @@ iBp
 tNW
 xOO
 voS
+ndj
 joi
 joi
 joi
 joi
-joi
-joi
+ndj
 joi
 wpz
 tNW

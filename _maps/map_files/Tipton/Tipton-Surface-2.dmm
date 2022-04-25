@@ -1261,7 +1261,7 @@
 /area/f13/klamat)
 "aMM" = (
 /obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/brotherhood)
 "aNu" = (
 /obj/structure/table,
@@ -2835,9 +2835,7 @@
 /area/f13/wasteland)
 "bMs" = (
 /obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/f13{
-	icon_state = "bar"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/brotherhood/leisure)
 "bMw" = (
 /obj/structure/car{
@@ -8864,16 +8862,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/caves)
-"fOU" = (
-/obj/machinery/door/airlock/grunge{
-	id_tag = "bosarmoryacc";
-	name = "Armory";
-	req_access_txt = "120"
-	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/brotherhood)
 "fPk" = (
 /obj/structure/chair{
 	dir = 8
@@ -14866,7 +14854,6 @@
 	pixel_x = 6;
 	pixel_y = -2
 	},
-/obj/item/reagent_containers/food/snacks/grown/holymelon,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "jNo" = (
@@ -15218,7 +15205,7 @@
 /area/f13/building)
 "kbl" = (
 /obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/airless/floorgrime,
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/brotherhood)
 "kbB" = (
 /obj/structure/chair{
@@ -17685,10 +17672,6 @@
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/wasteland)
 "lPi" = (
-/obj/item/stock_parts/manipulator/femto{
-	pixel_x = 7;
-	pixel_y = 5
-	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -73285,7 +73268,7 @@ aLd
 qxb
 mWE
 xnW
-fOU
+lBy
 bXo
 bXo
 bXo
@@ -73487,7 +73470,7 @@ aLd
 eeb
 mWE
 xnW
-fOU
+lBy
 bXo
 bXo
 bXo
