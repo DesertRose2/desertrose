@@ -138,3 +138,21 @@
 	item_state = "trailrig"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
+
+//Custom item - Yeehawguvnah - Sprite based on existing cloak sprites
+/obj/item/clothing/suit/hooded/f13/rangerponcho
+	actions_types = list(/datum/action/item_action/toggle_suit)
+	name = "hooded poncho"
+	desc = "(IV) A lightweight poncho with a hood, lined with reinforced fibres imported from somewhere far to the east. It appears to be reversible - alt-click to toggle its colours."
+	icon_state = "rangercloak"
+	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = -0.2
+	var/inside_out = FALSE
+
+/obj/item/clothing/suit/hooded/f13/rangerponcho/AltClick(mob/living/user)
+	if(inside_out == FALSE)
+		inside_out = TRUE
+		icon_state = "rangerponcho_camo"
+	else
+		inside_out = FALSE
+		icon_state = "rangerponcho_green"
