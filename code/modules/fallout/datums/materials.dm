@@ -1,11 +1,3 @@
-/datum/material/lead
-	name = "lead"
-	desc = "Common lead ore often found in sedimentary and igneous layers of the crust."
-	color = "#878687"
-	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
-	sheet_type = /obj/item/stack/sheet/lead
-	value_per_unit = 0.0025
-
 /datum/material/blackpowder
 	name = "blackpowder"
 	desc = "blackpowder"
