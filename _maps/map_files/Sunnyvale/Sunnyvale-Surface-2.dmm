@@ -27856,21 +27856,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/raiders)
-"bHx" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13/underground/vault_atrium_upper;
-	dheight = 0;
-	dir = 1;
-	dwidth = 1;
-	height = 2;
-	id = "bos_elevator_top";
-	json_key = null;
-	name = "bos elevator top";
-	roundstart_template = null;
-	width = 2
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/raiders)
 "bHy" = (
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "horizontaloutermain0"
@@ -106708,7 +106693,7 @@ bGM
 vQi
 bHh
 bHp
-bHx
+bHp
 bHH
 are
 aab
