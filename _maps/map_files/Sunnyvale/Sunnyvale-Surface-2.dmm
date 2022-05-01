@@ -6211,21 +6211,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/followers)
-"atI" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13/underground/enclave_base;
-	dheight = 0;
-	dir = 1;
-	dwidth = 1;
-	height = 3;
-	id = "enclavefort_elevator_top";
-	json_key = null;
-	name = "enclave fort elevator top";
-	roundstart_template = /datum/map_template/shuttle/enclavefort/elevator;
-	width = 4
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/followers)
 "atJ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8;
@@ -43310,7 +43295,7 @@ arf
 arO
 ass
 ass
-atI
+ass
 aun
 auU
 avo

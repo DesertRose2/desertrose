@@ -101,21 +101,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/followers)
-"ap" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13/underground/enclave_base;
-	dheight = 0;
-	dir = 1;
-	dwidth = 1;
-	height = 3;
-	id = "enclavefort_elevator_down";
-	json_key = null;
-	name = "enclave fort elevator down";
-	roundstart_template = null;
-	width = 4
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/followers)
 "aq" = (
 /obj/effect/turf_decal/stripes/line{
 	icon_state = "warningline";
@@ -4324,18 +4309,6 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/underground/cave)
-"kL" = (
-/obj/docking_port/stationary{
-	dheight = 0;
-	dir = 8;
-	dwidth = 1;
-	height = 3;
-	id = "vault_elevator_down";
-	name = "vault elevator down";
-	width = 4
-	},
-/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/underground/cave)
 "kM" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -22666,7 +22639,7 @@ kh
 kh
 kz
 kz
-kL
+kz
 kz
 kh
 kV
@@ -93219,7 +93192,7 @@ Jk
 ag
 am
 am
-ap
+am
 aq
 SS
 ar
