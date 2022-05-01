@@ -370,6 +370,7 @@
 /obj/item/storage/box/large/custom_kit/aphelionroche/PopulateContents()
 	new /obj/item/clothing/suit/toggle/labcoat/fieldscribe(src)
 	new /obj/item/storage/belt/military/alt(src)
+	new /obj/item/clothing/mask/gas/seva(src)
 
 //Matt Sharp - soldierboy2
 /obj/item/storage/box/large/custom_kit/mattsharp/PopulateContents()
