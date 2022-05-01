@@ -2261,6 +2261,9 @@
 /area/f13/sewer)
 "ckT" = (
 /obj/structure/filingcabinet,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "ckW" = (
@@ -3992,6 +3995,10 @@
 /obj/structure/wreck/trash/one_barrel,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
+"dWq" = (
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "dWJ" = (
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
@@ -6634,10 +6641,6 @@
 /area/f13/sewer)
 "gvp" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small{
-	brightness = 7;
-	dir = 1
-	},
 /obj/item/clothing/mask/cigarette/pipe,
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_x = -1;
@@ -6756,7 +6759,7 @@
 /area/f13/tunnel)
 "gzW" = (
 /obj/machinery/door/unpowered/secure_NCR,
-/turf/closed/indestructible/wood,
+/turf/open/floor/wood/f13/old,
 /area/f13/ncr)
 "gAp" = (
 /obj/structure/closet/crate/bin,
@@ -9091,6 +9094,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/indestructible/ground/outside/ruins{
 	color = "#e6edf0";
 	name = "cobblestone floor"
@@ -10254,6 +10260,13 @@
 /obj/item/reagent_containers/food/drinks/bottle/brown/darkbrown,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"jRX" = (
+/obj/machinery/light/small{
+	brightness = 7;
+	dir = 4
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "jSl" = (
 /obj/structure/rack,
 /obj/effect/spawner/bundle/f13/armor/combat,
@@ -12034,6 +12047,14 @@
 	icon_state = "neutralrusty"
 	},
 /area/f13/bunker)
+"lwY" = (
+/obj/machinery/door/airlock/wood{
+	name = "Gatehouse";
+	req_access = 121;
+	req_access_txt = "121"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "lxd" = (
 /obj/structure/bed/old,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13377,6 +13398,14 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/legion)
+"mHv" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "miningbos";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "mHF" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
@@ -13472,6 +13501,14 @@
 "mLD" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"mLJ" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "miningncr";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "mMD" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/tunnel,
@@ -13744,6 +13781,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
 /area/f13/bunker)
+"ndj" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/ncr)
 "ndl" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -15772,9 +15815,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "oUT" = (
-/obj/machinery/vending/medical{
-	req_access = null
-	},
+/obj/machinery/vending/medical,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/airless/floorgrime,
 /area/f13/bunker)
@@ -17689,6 +17730,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/sewer)
+"qQC" = (
+/obj/machinery/door/unpowered/secure_legion,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "qQY" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/subway,
@@ -20445,6 +20490,14 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"tCs" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "mininglegion";
+	name = "mining ladder"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "tCv" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/strong,
@@ -20551,9 +20604,6 @@
 /obj/item/lighter/gold{
 	pixel_y = 8
 	},
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/decoration/clock{
 	pixel_x = 30
 	},
@@ -20643,6 +20693,7 @@
 	pixel_x = 4
 	},
 /obj/structure/table/booth,
+/obj/machinery/light,
 /turf/open/indestructible/ground/outside/ruins{
 	color = "#e6edf0";
 	name = "cobblestone floor"
@@ -20911,6 +20962,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/radiation)
+"tYm" = (
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "tYD" = (
 /mob/living/simple_animal/hostile/handy/gutsy,
 /obj/structure/chair/f13foldupchair{
@@ -21783,6 +21838,14 @@
 	},
 /turf/closed/wall/f13/ruins,
 /area/f13/shack)
+"uMH" = (
+/obj/structure/ladder/unbreakable{
+	name = "mining ladder";
+	id = "miningwaster";
+	height = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "uNi" = (
 /mob/living/simple_animal/hostile/ghoul/legendary,
 /turf/open/floor/plating/tunnel,
@@ -25419,8 +25482,7 @@
 /area/f13/sewer)
 "xSU" = (
 /mob/living/simple_animal/hostile/xray{
-	desc = "A deserter with know-how and a grudge to boot.";
-	name = "NCR deserter"
+	desc = "A deserter with know-how and a grudge to boot."
 	},
 /turf/open/floor/plating/dirt/dark,
 /area/f13/tunnel)
@@ -29230,7 +29292,7 @@ vKr
 vKr
 tRM
 vKr
-tRM
+krg
 tRM
 tRM
 tRM
@@ -29430,9 +29492,9 @@ vKr
 vKr
 vKr
 vKr
+mLJ
 tRM
-tRM
-tRM
+lwY
 dBi
 klS
 klS
@@ -43362,11 +43424,11 @@ iBp
 wEf
 qhX
 joi
-joi
+ndj
 joi
 rcJ
 joi
-joi
+jRX
 xAK
 joi
 joi
@@ -44170,12 +44232,12 @@ iBp
 tNW
 xOO
 voS
+ndj
 joi
 joi
 joi
 joi
-joi
-joi
+ndj
 joi
 wpz
 tNW
@@ -52165,7 +52227,7 @@ dhU
 dhU
 vKr
 vKr
-vKr
+iBp
 vKr
 tRM
 tRM
@@ -53580,7 +53642,7 @@ dhU
 vKr
 vKr
 vKr
-vKr
+iBp
 oNX
 lju
 yfB
@@ -54584,7 +54646,7 @@ rUO
 pnE
 fek
 efQ
-cnn
+mHv
 dhU
 dhU
 vKr
@@ -58819,10 +58881,10 @@ xvl
 vKr
 vKr
 vKr
-vKr
-vKr
-vKr
-vKr
+dhU
+dhU
+dhU
+dhU
 vKr
 vKr
 vKr
@@ -59021,10 +59083,10 @@ xvl
 vKr
 vKr
 vKr
-vKr
-vKr
-vKr
-vKr
+dhU
+dhU
+dhU
+dhU
 vKr
 vKr
 vKr
@@ -59223,10 +59285,10 @@ xvl
 vKr
 vKr
 vKr
-vKr
-vKr
-vKr
-vKr
+dhU
+dhU
+dhU
+dhU
 vKr
 vKr
 vKr
@@ -59425,10 +59487,10 @@ oNX
 lju
 tRM
 vKr
-vKr
-vKr
-vKr
-vKr
+dhU
+dhU
+dhU
+dhU
 vKr
 vKr
 vKr
@@ -75349,7 +75411,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+gFR
 vKr
 vKr
 vKr
@@ -75550,8 +75612,8 @@ vKr
 vKr
 vKr
 vKr
-vKr
-vKr
+tCs
+gFR
 vKr
 vKr
 vKr
@@ -75751,10 +75813,10 @@ vKr
 vKr
 vKr
 vKr
+dWq
+gFR
+gFR
 vKr
-vKr
-iBp
-iBp
 iBp
 iBp
 iBp
@@ -75950,12 +76012,12 @@ iBp
 iBp
 iBp
 iBp
-iBp
-iBp
-iBp
-iBp
-iBp
-iBp
+vKr
+vKr
+vKr
+vKr
+gFR
+gFR
 bUM
 bUM
 bUM
@@ -76156,8 +76218,8 @@ bUM
 bUM
 bUM
 bUM
-iBp
-iBp
+hMm
+gFR
 bUM
 iQP
 trG
@@ -76358,8 +76420,8 @@ pin
 gGR
 gpW
 bUM
-iBp
-uLx
+dWq
+gFR
 bUM
 fIq
 ldq
@@ -76561,7 +76623,7 @@ dTD
 hQf
 bUM
 oXF
-qHp
+gFR
 bUM
 nwb
 nwb
@@ -76763,7 +76825,7 @@ wqI
 hQf
 bUM
 bUM
-gFR
+qQC
 bUM
 wga
 jea
@@ -95018,7 +95080,7 @@ hQG
 hQG
 hQG
 hQG
-hQG
+hsT
 hQG
 hQG
 hQG
@@ -95220,7 +95282,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+cnn
 vKr
 vKr
 vKr
@@ -95422,7 +95484,7 @@ vKr
 vKr
 vKr
 vKr
-vKr
+cnn
 vKr
 vKr
 vKr
@@ -95623,9 +95685,9 @@ hQG
 vKr
 vKr
 vKr
-vKr
-vKr
-vKr
+cnn
+uMH
+cnn
 vKr
 vKr
 vKr
@@ -95825,9 +95887,9 @@ hQG
 vKr
 vKr
 vKr
-vKr
-dhU
-dhU
+jHA
+cnn
+cnn
 dhU
 dhU
 vKr
@@ -96028,8 +96090,8 @@ vKr
 vKr
 vKr
 vKr
-vKr
-vKr
+tYm
+cnn
 vKr
 vKr
 vKr
