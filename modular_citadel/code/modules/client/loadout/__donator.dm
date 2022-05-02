@@ -456,6 +456,11 @@
 	path = /obj/item/storage/box/large/custom_kit/lang
 	ckeywhitelist = list("pisshole")
 
+/datum/gear/donator/kits/pissholecoat
+	name = "CO Greatcoat"
+	path = /obj/item/storage/box/large/custom_kit/pissholecoat
+	ckeywhitelist = list("pisshole")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////

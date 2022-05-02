@@ -98,11 +98,11 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Rear Echelon",
@@ -152,8 +152,8 @@
 	path = /obj/item/clothing/head/beret/medical
 	restricted_desc = "NCR Medical Personnel"
 	restricted_roles = list(
-							"OSI Officer",
-							"NCR Combat Medic",
+							"OSI Representative",
+							"NCR Specialist",
 							"NCR Off-Duty"
 						)
 
@@ -163,7 +163,7 @@
 	path = /obj/item/clothing/head/beret/ncr_sapper
 	restricted_desc = "NCR Engineering Personnel"
 	restricted_roles = list(
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Off-Duty"
 						)
 
@@ -194,11 +194,11 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Recruit"
@@ -211,11 +211,11 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Recruit"
@@ -229,7 +229,9 @@
 	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",
+							"NCR Specialist",
 							"NCR Trooper",
+							"NCR Recruit"
 						)
 
 /datum/gear/head/ncr_slouch
@@ -240,5 +242,7 @@
 	restricted_roles = list(
 							"NCR Sergeant",
 							"NCR Corporal",
+							"NCR Specialist",
 							"NCR Trooper",
+							"NCR Recruit"
 						)
