@@ -4232,6 +4232,10 @@
 /obj/machinery/camera,
 /turf/open/floor/f13,
 /area/f13/caves)
+"Mw" = (
+/obj/machinery/workbench/advanced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "MA" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos{
@@ -26611,7 +26615,7 @@ Zm
 Zm
 Zm
 Zm
-Zm
+Mw
 sC
 Zm
 Zm

@@ -49,10 +49,6 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
-"acy" = (
-/obj/machinery/light,
-/turf/open/floor/f13,
-/area/f13/brotherhood)
 "acD" = (
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
@@ -557,6 +553,7 @@
 /area/f13/caves)
 "aDS" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/workbench/advanced,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "yellowsiding"
@@ -4360,10 +4357,6 @@
 /obj/effect/spawner/lootdrop/tool_box,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
-"eiF" = (
-/obj/effect/landmark/start/f13/outerwall,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/city)
 "eiR" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
@@ -6568,10 +6561,11 @@
 	},
 /area/f13/building)
 "gpp" = (
-/turf/closed/indestructible/riveted/boss{
-	name = "temple wall"
+/obj/machinery/light{
+	dir = 1
 	},
-/area/f13/caves)
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "gpA" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/clothing/under/f13/legskirt,
@@ -8042,6 +8036,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"hLK" = (
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "hLM" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -10952,6 +10950,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"kLj" = (
+/obj/structure/stairs/north,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "kLr" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -13127,9 +13129,9 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "mWf" = (
-/obj/effect/landmark/start/f13/wastelander,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/wasteland)
+/obj/machinery/light,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "mWv" = (
 /obj/structure/bed/oldalt,
 /turf/open/floor/wood/f13/old/ruinedcornerbl,
@@ -14093,11 +14095,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "nVu" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/f13/brotherhood)
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/tunnel)
 "nVM" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitepurplerustychess2"
@@ -19666,9 +19666,10 @@
 	},
 /area/f13/building)
 "tBu" = (
-/obj/effect/landmark/start/f13/wastelander,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/tunnel)
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/caves)
 "tBL" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -21517,9 +21518,9 @@
 	},
 /area/f13/wasteland)
 "vqj" = (
-/obj/structure/stairs/north,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/tunnel)
+/obj/item/bedsheet/black,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "vrh" = (
 /obj/item/bedsheet/hos{
 	name = "Knight-Captain's bedsheet"
@@ -22331,6 +22332,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"wji" = (
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/city)
 "wjp" = (
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
@@ -23340,8 +23345,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xhd" = (
-/obj/item/bedsheet/black,
-/turf/closed/indestructible/rock,
+/obj/machinery/workbench/advanced,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xht" = (
 /obj/structure/toilet{
@@ -24491,7 +24496,7 @@ uJh
 uJh
 uJh
 uJh
-xhd
+vqj
 uJh
 uJh
 uJh
@@ -24803,9 +24808,9 @@ iBA
 iBA
 xpN
 sdJ
-mWf
+hLK
 lTM
-mWf
+hLK
 pJj
 mYi
 iBA
@@ -24856,11 +24861,11 @@ yaf
 yaf
 epg
 whZ
-tBu
+nVu
 fdC
 qzb
 fdC
-tBu
+nVu
 bzq
 epg
 yaf
@@ -26976,7 +26981,7 @@ bxt
 bxt
 xPT
 nkY
-nVu
+gpp
 sqE
 sqE
 sqE
@@ -27238,7 +27243,7 @@ ihz
 sqE
 sqE
 sqE
-acy
+mWf
 nkY
 wKI
 qUL
@@ -28518,7 +28523,7 @@ kPQ
 bxt
 uXn
 nkY
-nVu
+gpp
 ihz
 gVb
 ihz
@@ -30334,7 +30339,7 @@ ihz
 sqE
 mMT
 sqE
-acy
+mWf
 nkY
 iBA
 iBA
@@ -31909,7 +31914,7 @@ yaf
 yaf
 yaf
 fnc
-gpp
+tBu
 fnc
 sRH
 aWI
@@ -32937,7 +32942,7 @@ yaf
 yaf
 fnc
 sRH
-vqj
+kLj
 uxT
 fnc
 aWI
@@ -33161,7 +33166,7 @@ sqE
 bqV
 nkY
 cBr
-acy
+mWf
 nkY
 iBA
 iBA
@@ -33194,7 +33199,7 @@ yaf
 yaf
 fnc
 sRH
-vqj
+kLj
 nuT
 fWr
 aWI
@@ -33451,7 +33456,7 @@ yaf
 yaf
 fnc
 sRH
-vqj
+kLj
 qhd
 fnc
 aWI
@@ -35250,9 +35255,9 @@ aWI
 yaf
 yaf
 yaf
-gpp
-gpp
-gpp
+tBu
+tBu
+tBu
 yaf
 aWI
 aWI
@@ -57374,7 +57379,7 @@ qdb
 rXJ
 cMP
 oLe
-eiF
+wji
 oLe
 oLe
 oLe
@@ -57888,7 +57893,7 @@ qdb
 nWw
 cMP
 oLe
-eiF
+wji
 oLe
 oLe
 oLe
@@ -88905,7 +88910,7 @@ oSn
 oSn
 oSn
 oSn
-pPJ
+xhd
 pPJ
 pPJ
 iyq
@@ -89478,11 +89483,11 @@ yaf
 yaf
 epg
 whZ
-tBu
+nVu
 fdC
 fdC
 fdC
-tBu
+nVu
 bzq
 epg
 yaf
@@ -89620,7 +89625,7 @@ yaf
 epg
 nKo
 whZ
-tBu
+nVu
 cKY
 cfw
 hih
