@@ -160,14 +160,6 @@
 /obj/structure/table/booth,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"bL" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant FIrst Class"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "bO" = (
 /obj/structure/chair/booth_right{
 	dir = 8
@@ -568,7 +560,7 @@
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "fX" = (
-/obj/structure/stairs/south,
+/obj/structure/stairs/north,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -1472,10 +1464,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
-"nX" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/space/basic,
-/area/f13/ncr)
 "nY" = (
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
@@ -2379,7 +2367,7 @@
 /obj/structure/ladder/unbreakable{
 	down = "metro_train_1";
 	id = "metrodungeonentrance";
-	up = null
+	up = "metrodungeonentrance"
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
@@ -2847,9 +2835,7 @@
 /turf/open/floor/f13,
 /area/f13/caves)
 "zg" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Commanding Officer"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3054,18 +3040,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
-"AM" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/securedoor{
-	name = "Privates";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "AN" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -3534,9 +3508,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "Fu" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Military Police"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -3954,17 +3926,6 @@
 "Jp" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
-"Jr" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Corporals"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Jt" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -4297,7 +4258,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/door/unpowered/securedoor,
+/obj/structure/simple_door/room,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -4400,16 +4361,9 @@
 	},
 /area/f13/ncr)
 "Nt" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
+/obj/effect/landmark/start/f13/ncrcombatengineer,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "Nu" = (
 /obj/structure/barricade/train{
 	dir = 8;
@@ -4418,10 +4372,6 @@
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"Nv" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "Nw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/booth,
@@ -4520,14 +4470,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
-"Op" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Recruits"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Or" = (
 /obj/structure/table,
 /obj/machinery/light/broken,
@@ -4877,7 +4819,7 @@
 	},
 /area/f13/building)
 "Qy" = (
-/obj/machinery/gibber/autogibber,
+/obj/machinery/gibber,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -5372,7 +5314,7 @@
 /obj/structure/ladder/unbreakable{
 	down = "metro_train_2";
 	id = "metrodungeonentrance";
-	up = null
+	up = "metrodungeonentrance"
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
@@ -5564,7 +5506,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "Wv" = (
-/obj/structure/stairs,
+/obj/structure/stairs/south,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "Ww" = (
@@ -27409,7 +27351,7 @@ Ho
 Ho
 Ho
 Ho
-AM
+MK
 ZK
 ZK
 Il
@@ -28202,7 +28144,7 @@ Uo
 jt
 kJ
 vH
-vH
+Nt
 vH
 kJ
 MY
@@ -28694,7 +28636,7 @@ Ho
 Ho
 Ho
 Ho
-Op
+zg
 ZK
 ZK
 kJ
@@ -30493,7 +30435,7 @@ Ho
 Jn
 Ho
 Ho
-Jr
+MK
 ZK
 ZK
 kJ
@@ -31261,7 +31203,7 @@ vH
 kJ
 SF
 SF
-Nv
+xy
 SF
 rM
 kJ
@@ -32289,7 +32231,7 @@ vH
 kJ
 SF
 SF
-nX
+xy
 SF
 rM
 kJ
@@ -32570,7 +32512,7 @@ Dy
 Uo
 Uo
 kJ
-Nt
+MK
 mT
 mT
 mT
@@ -33087,7 +33029,7 @@ kJ
 mT
 mT
 mT
-bL
+zg
 mT
 mT
 Im
@@ -33343,7 +33285,7 @@ jt
 kJ
 wU
 lq
-Nv
+xy
 lq
 lq
 mT
