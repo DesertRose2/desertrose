@@ -154,3 +154,9 @@
 	item_state = "tina_vet"
 	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
+//Custom item - Pisshole / - Sprite edited by Pisshole (not sure who made the original tell me and I will credit)
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_gcoat
+	name = "NCR Greatcoat"
+	desc = "(VI) An oversized trenchcoat, as if ready for cold weather, complete with an NCR vest atop a sweater under it all."
+	icon_state = "ncrofficergcoat"
+	item_state = "ncrofficergcoat"

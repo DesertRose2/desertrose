@@ -840,8 +840,8 @@
 /obj/item/storage/belt/holster/ncrcf_w
 	name = "Worn NCRCF Women's Jacket"
 	desc = "A worn, torn women's NCRCF jacket with 'pockets' slit into the inside, letting you hide some things in the seam. Somehow, it fills you with vague feelings of rebellion and mommy and daddy issues. You kind of wish you could fit drugs in this..."
-	icon_state = "ncrcf_w"
-	item_state = "ncrcf_w"
+	icon_state = "ncrcfw"
+	item_state = "ncrcfw"
 
 /obj/item/storage/belt/fannypack
 	name = "fannypack"
@@ -979,9 +979,8 @@
 	item_state = "ncr_belt"
 
 /obj/item/storage/belt/military/assault/ncr/engineer/PopulateContents()
-	new /obj/item/screwdriver(src)
-	new /obj/item/wrench(src)
-	new /obj/item/weldingtool(src)
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/weldingtool/largetank(src)
 	new /obj/item/crowbar(src)
 	new /obj/item/wirecutters(src)
 	new /obj/item/multitool(src)
