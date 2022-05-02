@@ -7944,7 +7944,7 @@
 /area/f13/building)
 "hDc" = (
 /obj/structure/table/wood/settler,
-/obj/machinery/chem_dispenser/drinks/beer/fullupgrade,
+/obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/city)
 "hFd" = (
@@ -13117,6 +13117,11 @@
 "mVM" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
+"mWf" = (
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/caves)
 "mWv" = (
 /obj/structure/bed/oldalt,
 /turf/open/floor/wood/f13/old/ruinedcornerbl,
@@ -14080,11 +14085,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "nVu" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/f13/brotherhood)
+/obj/structure/stairs/north,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "nVM" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitepurplerustychess2"
@@ -19653,9 +19656,11 @@
 	},
 /area/f13/building)
 "tBu" = (
-/obj/item/bedsheet/black,
-/turf/closed/indestructible/rock,
-/area/f13/caves)
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "tBL" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -20591,7 +20596,7 @@
 /area/f13/building)
 "uwS" = (
 /obj/structure/table/wood/settler,
-/obj/machinery/chem_dispenser/drinks/fullupgrade,
+/obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/city)
 "uwT" = (
@@ -21502,6 +21507,10 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland)
+"vqj" = (
+/obj/item/bedsheet/black,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "vrh" = (
 /obj/item/bedsheet/hos{
 	name = "Knight-Captain's bedsheet"
@@ -24473,7 +24482,7 @@ uJh
 uJh
 uJh
 uJh
-tBu
+vqj
 uJh
 uJh
 uJh
@@ -26958,7 +26967,7 @@ bxt
 bxt
 xPT
 nkY
-nVu
+tBu
 sqE
 sqE
 sqE
@@ -28500,7 +28509,7 @@ kPQ
 bxt
 uXn
 nkY
-nVu
+tBu
 ihz
 gVb
 ihz
@@ -31889,17 +31898,17 @@ yaf
 yaf
 yaf
 yaf
-uJh
-uJh
-yaf
-yaf
-yaf
-yaf
 yaf
 fnc
+mWf
 fnc
-fnc
-yaf
+sRH
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -32146,17 +32155,17 @@ yaf
 yaf
 yaf
 yaf
-yaf
-uJh
-uJh
-yaf
-yaf
-yaf
 fnc
 qCs
 qCs
 qCs
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -32403,17 +32412,17 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-uJh
-uJh
-yaf
-yaf
 fnc
 qCs
 qCs
 sRH
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -32660,17 +32669,17 @@ yaf
 yaf
 yaf
 yaf
-yaf
-yaf
-yaf
-uJh
-yaf
-yaf
 fnc
 qCs
 sRH
 kAx
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -32917,17 +32926,17 @@ yaf
 yaf
 yaf
 yaf
-aWI
-aWI
-yaf
-uJh
-uJh
-yaf
 fnc
 sRH
-azX
+nVu
 uxT
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -33173,18 +33182,18 @@ aWI
 yaf
 yaf
 yaf
-aWI
-aWI
 yaf
-yaf
-yaf
-uJh
-uJh
 fnc
 sRH
-azX
+nVu
 nuT
 fWr
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -33429,19 +33438,19 @@ aWI
 aWI
 aWI
 aWI
-aWI
-aWI
-yaf
-yaf
-yaf
-yaf
 yaf
 yaf
 fnc
 sRH
-azX
+nVu
 qhd
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -33687,18 +33696,18 @@ aWI
 yaf
 yaf
 yaf
-aWI
-aWI
-aWI
-yaf
-yaf
-yaf
 yaf
 fnc
 qCs
 sRH
 uxT
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -33945,17 +33954,17 @@ aWI
 yaf
 yaf
 yaf
-yaf
-aWI
-aWI
-yaf
-yaf
-yaf
 fnc
 qCs
 sRH
 fry
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -34200,20 +34209,20 @@ aWI
 aWI
 aWI
 aWI
-yaf
-yaf
-yaf
-yaf
-aWI
-aWI
 aWI
 yaf
-uJh
+qCs
 fnc
 fnc
 xfN
 fnc
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -34459,18 +34468,18 @@ aWI
 aWI
 aWI
 yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-yaf
-uJh
+qCs
 fnc
 dHb
 aWI
 aWI
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -34715,19 +34724,19 @@ aWI
 aWI
 plR
 aWI
-fkr
-aWI
 yaf
-yaf
-yaf
-yaf
-uJh
-uJh
+qCs
 fnc
 aWI
 aWI
 eMe
 pdF
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -34972,19 +34981,19 @@ yaf
 aWI
 aWI
 aWI
-fkr
-plR
-thU
 yaf
-yaf
-yaf
-uJh
-yaf
+sRH
 fnc
 aWI
 aWI
 ePO
 fnc
+aWI
+aWI
+aWI
+aWI
+aWI
+aWI
 aWI
 aWI
 aWI
@@ -35229,19 +35238,19 @@ yaf
 aWI
 aWI
 aWI
+yaf
+yaf
+yaf
+mWf
+mWf
+mWf
+yaf
 aWI
 aWI
-fkr
 aWI
-yaf
-yaf
-uJh
-yaf
-yaf
-fnc
-fnc
-fnc
-yaf
+aWI
+aWI
+aWI
 yaf
 aWI
 aWI
@@ -35486,10 +35495,10 @@ aWI
 aWI
 aWI
 aWI
-aWI
-aWI
-aWI
-aWI
+yaf
+yaf
+yaf
+yaf
 yaf
 yaf
 uJh
