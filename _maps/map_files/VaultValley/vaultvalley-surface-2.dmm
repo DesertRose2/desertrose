@@ -49,6 +49,10 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"acy" = (
+/obj/machinery/light,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "acD" = (
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
@@ -4356,6 +4360,10 @@
 /obj/effect/spawner/lootdrop/tool_box,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
+"eiF" = (
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/city)
 "eiR" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
@@ -6560,9 +6568,10 @@
 	},
 /area/f13/building)
 "gpp" = (
-/obj/machinery/light,
-/turf/open/floor/f13,
-/area/f13/brotherhood)
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/caves)
 "gpA" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/clothing/under/f13/legskirt,
@@ -13118,10 +13127,9 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "mWf" = (
-/turf/closed/indestructible/riveted/boss{
-	name = "temple wall"
-	},
-/area/f13/caves)
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "mWv" = (
 /obj/structure/bed/oldalt,
 /turf/open/floor/wood/f13/old/ruinedcornerbl,
@@ -14085,9 +14093,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "nVu" = (
-/obj/structure/stairs/north,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/tunnel)
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "nVM" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitepurplerustychess2"
@@ -19656,11 +19666,9 @@
 	},
 /area/f13/building)
 "tBu" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/f13/brotherhood)
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/tunnel)
 "tBL" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -20248,6 +20256,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "ufN" = (
+/obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
 	},
@@ -21508,9 +21517,9 @@
 	},
 /area/f13/wasteland)
 "vqj" = (
-/obj/item/bedsheet/black,
-/turf/closed/indestructible/rock,
-/area/f13/caves)
+/obj/structure/stairs/north,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "vrh" = (
 /obj/item/bedsheet/hos{
 	name = "Knight-Captain's bedsheet"
@@ -23331,9 +23340,9 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xhd" = (
-/obj/effect/landmark/start/f13/outerwall,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
+/obj/item/bedsheet/black,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "xht" = (
 /obj/structure/toilet{
 	dir = 8
@@ -24482,7 +24491,7 @@ uJh
 uJh
 uJh
 uJh
-vqj
+xhd
 uJh
 uJh
 uJh
@@ -24794,9 +24803,9 @@ iBA
 iBA
 xpN
 sdJ
+mWf
 lTM
-lTM
-lTM
+mWf
 pJj
 mYi
 iBA
@@ -24847,11 +24856,11 @@ yaf
 yaf
 epg
 whZ
-fdC
+tBu
 fdC
 qzb
 fdC
-fdC
+tBu
 bzq
 epg
 yaf
@@ -26967,7 +26976,7 @@ bxt
 bxt
 xPT
 nkY
-tBu
+nVu
 sqE
 sqE
 sqE
@@ -27229,7 +27238,7 @@ ihz
 sqE
 sqE
 sqE
-gpp
+acy
 nkY
 wKI
 qUL
@@ -28509,7 +28518,7 @@ kPQ
 bxt
 uXn
 nkY
-tBu
+nVu
 ihz
 gVb
 ihz
@@ -30325,7 +30334,7 @@ ihz
 sqE
 mMT
 sqE
-gpp
+acy
 nkY
 iBA
 iBA
@@ -31900,7 +31909,7 @@ yaf
 yaf
 yaf
 fnc
-mWf
+gpp
 fnc
 sRH
 aWI
@@ -32928,7 +32937,7 @@ yaf
 yaf
 fnc
 sRH
-nVu
+vqj
 uxT
 fnc
 aWI
@@ -33152,7 +33161,7 @@ sqE
 bqV
 nkY
 cBr
-gpp
+acy
 nkY
 iBA
 iBA
@@ -33185,7 +33194,7 @@ yaf
 yaf
 fnc
 sRH
-nVu
+vqj
 nuT
 fWr
 aWI
@@ -33442,7 +33451,7 @@ yaf
 yaf
 fnc
 sRH
-nVu
+vqj
 qhd
 fnc
 aWI
@@ -35241,9 +35250,9 @@ aWI
 yaf
 yaf
 yaf
-mWf
-mWf
-mWf
+gpp
+gpp
+gpp
 yaf
 aWI
 aWI
@@ -55046,7 +55055,7 @@ frt
 jbG
 abt
 qdb
-xhd
+qdb
 eeo
 uTr
 sXR
@@ -57365,7 +57374,7 @@ qdb
 rXJ
 cMP
 oLe
-oLe
+eiF
 oLe
 oLe
 oLe
@@ -57879,7 +57888,7 @@ qdb
 nWw
 cMP
 oLe
-oLe
+eiF
 oLe
 oLe
 oLe
@@ -89469,11 +89478,11 @@ yaf
 yaf
 epg
 whZ
+tBu
 fdC
 fdC
 fdC
-fdC
-fdC
+tBu
 bzq
 epg
 yaf
@@ -89611,7 +89620,7 @@ yaf
 epg
 nKo
 whZ
-fdC
+tBu
 cKY
 cfw
 hih
