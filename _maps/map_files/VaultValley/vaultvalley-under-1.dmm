@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/machinery/telecomms/server/presets/vault,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "ae" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -11,10 +15,33 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"af" = (
+/obj/machinery/telecomms/server/presets/enclave,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"al" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"am" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "at" = (
 /mob/living/simple_animal/hostile/mirelurk/hunter,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
+"aw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "ay" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -55,6 +82,10 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"aX" = (
+/obj/machinery/status_display,
+/turf/closed/wall,
+/area/f13/tcoms)
 "bc" = (
 /obj/machinery/light{
 	dir = 1
@@ -160,14 +191,6 @@
 /obj/structure/table/booth,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"bL" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant FIrst Class"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "bO" = (
 /obj/structure/chair/booth_right{
 	dir = 8
@@ -175,10 +198,21 @@
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"bP" = (
+/obj/machinery/telecomms/processor/preset_four,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "bR" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"bT" = (
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = -35
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "ca" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -239,6 +273,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"cI" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "cK" = (
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gibup1"
@@ -295,6 +333,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"db" = (
+/obj/machinery/telecomms/server/presets/medical,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "de" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/f13{
@@ -335,6 +377,10 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ncr)
+"dz" = (
+/obj/machinery/telecomms/server/presets/service,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "dB" = (
 /obj/structure/mopbucket,
 /obj/item/mop,
@@ -342,6 +388,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"dI" = (
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
 "dM" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
@@ -410,6 +463,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"ek" = (
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"el" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "ep" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -457,6 +517,25 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"eG" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
+"eI" = (
+/obj/structure/table,
+/obj/item/multitool,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 9
+	},
+/area/f13/tcoms)
 "eL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -561,6 +640,9 @@
 /obj/item/pen/fountain,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"fR" = (
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "fU" = (
 /obj/structure/chair/left{
 	dir = 4
@@ -568,7 +650,7 @@
 /turf/open/floor/f13,
 /area/f13/tunnel)
 "fX" = (
-/obj/structure/stairs/south,
+/obj/structure/stairs/north,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -594,6 +676,16 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"gk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "gm" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -717,6 +809,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"hk" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "hr" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/electrical,
@@ -724,6 +820,16 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/caves)
+"hu" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Telecomms Admin";
+	departmentType = 5;
+	name = "Telecomms RC";
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "hv" = (
 /obj/structure/rack,
 /obj/effect/spawner/bundle/f13/armor/metal,
@@ -738,6 +844,12 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"hA" = (
+/obj/structure/table,
+/obj/item/folder/blue,
+/obj/item/pen/blue,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "hE" = (
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -754,6 +866,14 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
+"hG" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "hJ" = (
 /obj/structure/simple_door/tentflap_cloth,
 /turf/open/indestructible/ground/inside/mountain,
@@ -1159,6 +1279,10 @@
 "kA" = (
 /turf/closed/mineral/iron,
 /area/f13/radiation)
+"kD" = (
+/obj/machinery/telecomms/server/presets/den,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "kH" = (
 /obj/structure/fluff/rails,
 /obj/effect/spawner/lootdrop/trash,
@@ -1170,6 +1294,11 @@
 "kK" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
+"kL" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "kO" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/emergency,
@@ -1203,6 +1332,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"la" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "lc" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
@@ -1229,6 +1364,15 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
+"lv" = (
+/obj/machinery/computer/telecomms/monitor{
+	dir = 4;
+	network = "tcommsat"
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 8
+	},
+/area/f13/tcoms)
 "lw" = (
 /mob/living/simple_animal/hostile/radscorpion/black{
 	health = 500;
@@ -1297,6 +1441,16 @@
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"lZ" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"mc" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
 "mi" = (
 /obj/structure/barricade/train,
 /turf/open/indestructible/ground/inside/subway,
@@ -1328,6 +1482,10 @@
 /obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"mw" = (
+/obj/machinery/telecomms/server/presets/science,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "mC" = (
 /obj/item/trash/chips,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -1383,6 +1541,10 @@
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/f13,
 /area/f13/ncr)
+"na" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "nc" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/brotherhood/mining)
@@ -1473,9 +1635,9 @@
 	},
 /area/f13/tunnel)
 "nX" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/space/basic,
-/area/f13/ncr)
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "nY" = (
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
@@ -1493,6 +1655,12 @@
 /obj/structure/barricade/tentclothedge,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"ok" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "om" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -1552,6 +1720,12 @@
 /obj/item/cultivator,
 /turf/open/floor/f13,
 /area/f13/ncr)
+"oV" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 9
+	},
+/area/f13/tcoms)
 "oX" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -1612,6 +1786,10 @@
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"pn" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "pt" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -1660,6 +1838,10 @@
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"pH" = (
+/obj/machinery/telecomms/server/presets/legion,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "pJ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
@@ -2084,6 +2266,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"sf" = (
+/obj/machinery/telecomms/hub/preset,
+/turf/open/floor/plasteel/vault/telecomms/mainframe{
+	dir = 8
+	},
+/area/f13/tcoms)
 "sg" = (
 /obj/structure/table,
 /obj/item/storage/box/ingredients/carnivore,
@@ -2100,6 +2288,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/ncr)
+"sm" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/tunnel)
 "sp" = (
 /obj/structure/table/wood,
 /obj/item/stack/f13Cash/caps/fivezerozero,
@@ -2140,11 +2332,20 @@
 /mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"sM" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "sP" = (
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
 /area/f13/building)
+"sS" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "sT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2153,6 +2354,10 @@
 "sX" = (
 /turf/closed/wall/f13/tunnel,
 /area/f13/tunnel)
+"sY" = (
+/obj/machinery/telecomms/server/presets/khans,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "sZ" = (
 /obj/machinery/door/airlock/centcom,
 /turf/open/floor/f13{
@@ -2379,7 +2584,7 @@
 /obj/structure/ladder/unbreakable{
 	down = "metro_train_1";
 	id = "metrodungeonentrance";
-	up = null
+	up = "metrodungeonentrance"
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
@@ -2405,6 +2610,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
+"vd" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
 "vf" = (
 /obj/structure/fluff/rails{
 	dir = 4
@@ -2510,6 +2721,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/mining)
+"wc" = (
+/turf/closed/wall/r_wall/f13superstore{
+	icon_state = "supermart0"
+	},
+/area/f13/tcoms)
 "wd" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/electrical,
@@ -2847,13 +3063,22 @@
 /turf/open/floor/f13,
 /area/f13/caves)
 "zg" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Commanding Officer"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"zj" = (
+/obj/structure/table,
+/obj/item/radio/off,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 10
+	},
+/area/f13/tcoms)
+"zk" = (
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "zm" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -2967,6 +3192,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"Ac" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Af" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/ncr)
@@ -3046,6 +3275,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"AH" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "AI" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -3054,18 +3287,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
-"AM" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/door/unpowered/securedoor{
-	name = "Privates";
-	req_one_access_txt = "28"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "AN" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -3153,6 +3374,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"Bk" = (
+/turf/closed/indestructible/rock,
+/area/f13/tcoms)
+"Bq" = (
+/turf/closed/wall/r_wall,
+/area/f13/tcoms)
 "Br" = (
 /obj/structure/simple_door/metal/barred,
 /obj/effect/decal/cleanable/blood/gibs{
@@ -3184,6 +3411,10 @@
 "By" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/rust,
+/area/f13/ncr)
+"BA" = (
+/obj/machinery/workbench/advanced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "BC" = (
 /obj/structure/wreck/trash/engine{
@@ -3374,6 +3605,18 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"DH" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"DJ" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Control Room";
+	req_access_txt = "19; 61"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "DL" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -3399,6 +3642,15 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"DS" = (
+/obj/item/radio/intercom{
+	dir = 8;
+	freerange = 1;
+	name = "Station Intercom (Telecomms)";
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "DV" = (
 /obj/item/tank/internals/anesthetic,
 /obj/item/tank/internals/anesthetic,
@@ -3511,6 +3763,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"Fc" = (
+/obj/machinery/light_switch{
+	pixel_x = 27
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "Fe" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/f13{
@@ -3534,9 +3792,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "Fu" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Military Police"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -3667,6 +3923,10 @@
 /obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"Go" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "Gx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3761,6 +4021,14 @@
 "Hv" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
+"HB" = (
+/obj/machinery/computer/message_monitor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 8
+	},
+/area/f13/tcoms)
 "HD" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -3954,17 +4222,6 @@
 "Jp" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
-"Jr" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Corporals"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Jt" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -4009,6 +4266,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"Ka" = (
+/obj/machinery/telecomms/server/presets/command,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Kc" = (
 /obj/structure/stairs,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -4067,6 +4328,14 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"Kx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "Ky" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13,
@@ -4119,6 +4388,16 @@
 	},
 /turf/closed/wall/f13/tunnel,
 /area/f13/tunnel)
+"Lb" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
 "Lg" = (
 /mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/floor/f13{
@@ -4176,6 +4455,10 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"LE" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "LM" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -4297,7 +4580,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/door/unpowered/securedoor,
+/obj/structure/simple_door/room,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -4400,16 +4683,9 @@
 	},
 /area/f13/ncr)
 "Nt" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Sergeant"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
+/obj/effect/landmark/start/f13/ncrcombatengineer,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "Nu" = (
 /obj/structure/barricade/train{
 	dir = 8;
@@ -4418,10 +4694,6 @@
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"Nv" = (
-/obj/machinery/door/unpowered/securedoor,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "Nw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/booth,
@@ -4476,6 +4748,10 @@
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating,
 /area/f13/building)
+"NT" = (
+/obj/machinery/telecomms/bus/preset_two,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Oc" = (
 /obj/structure/timeddoor{
 	deletion_time = 9000
@@ -4520,19 +4796,20 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
-"Op" = (
-/obj/machinery/door/unpowered/securedoor{
-	name = "Recruits"
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/ncr)
 "Or" = (
 /obj/structure/table,
 /obj/machinery/light/broken,
 /turf/open/floor/f13,
 /area/f13/tunnel)
+"Os" = (
+/obj/machinery/airalarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/machinery/light,
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "Ov" = (
 /obj/structure/railing{
 	dir = 1
@@ -4724,6 +5001,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"Pw" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Pz" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/indestructible/ground/inside/mountain,
@@ -4877,7 +5158,7 @@
 	},
 /area/f13/building)
 "Qy" = (
-/obj/machinery/gibber/autogibber,
+/obj/machinery/gibber,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -4911,6 +5192,21 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ncr)
+"QN" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
 "QO" = (
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt,
@@ -5053,6 +5349,10 @@
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/carpet/green,
 /area/f13/ncr)
+"Sr" = (
+/obj/machinery/telecomms/receiver/preset_right,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Ss" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/line{
@@ -5171,6 +5471,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"Ta" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'SERVER ROOM'.";
+	name = "SERVER ROOM"
+	},
+/turf/closed/wall,
+/area/f13/tcoms)
 "Td" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4;
@@ -5245,6 +5552,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"TI" = (
+/obj/machinery/telecomms/server/presets/ranger,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "TL" = (
 /mob/living/simple_animal/hostile/ghoul/soldier/armored,
 /obj/structure/reagent_dispensers/barrel/old,
@@ -5372,7 +5683,7 @@
 /obj/structure/ladder/unbreakable{
 	down = "metro_train_2";
 	id = "metrodungeonentrance";
-	up = null
+	up = "metrodungeonentrance"
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
@@ -5429,6 +5740,10 @@
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/radiation)
+"VD" = (
+/obj/machinery/telecomms/server/presets/engineering,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "VH" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
@@ -5513,6 +5828,11 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"VX" = (
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
 "VY" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress5"
@@ -5564,7 +5884,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "Wv" = (
-/obj/structure/stairs,
+/obj/structure/stairs/south,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "Ww" = (
@@ -5659,10 +5979,22 @@
 "Xb" = (
 /turf/closed/mineral/iron,
 /area/f13/caves)
+"Xc" = (
+/obj/machinery/telecomms/server/presets/bos,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Xl" = (
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"Xp" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "Xs" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/fakelattice,
@@ -5733,10 +6065,22 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"XQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "XR" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
+"XU" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
 "XX" = (
 /turf/closed/wall/mineral/iron,
 /area/f13/ncr)
@@ -5772,6 +6116,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"Yi" = (
+/obj/machinery/telecomms/server/presets/ncr,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "Yk" = (
 /obj/structure/chair/booth_right{
 	dir = 4
@@ -5932,6 +6280,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"ZA" = (
+/obj/machinery/computer/telecomms/server{
+	dir = 4;
+	network = "tcommsat"
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 10
+	},
+/area/f13/tcoms)
 "ZG" = (
 /obj/structure/table/snooker{
 	dir = 1
@@ -5956,6 +6313,9 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/ncr)
+"ZM" = (
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
 "ZQ" = (
 /obj/machinery/workbench/forge,
 /obj/effect/turf_decal/stripes/white/line{
@@ -5987,6 +6347,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"ZV" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "ZZ" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 6
@@ -6256,25 +6620,25 @@ xb
 "}
 (2,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+Bk
 vH
 vH
 vH
@@ -6513,25 +6877,25 @@ xb
 "}
 (3,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -6763,32 +7127,32 @@ xb
 xb
 RB
 lB
-lB
+sm
 lB
 RB
 xb
 "}
 (4,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+ek
+ek
+ek
+ek
+XU
+ek
+ek
+fR
+fR
+al
+fR
+fR
+ek
+ek
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -7027,25 +7391,25 @@ xb
 "}
 (5,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+ad
+Xc
+af
+sY
+fR
+VD
+AH
+nX
+fR
+ek
+fR
+zk
+lZ
+dz
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -7284,25 +7648,25 @@ xb
 "}
 (6,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-Jp
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+fR
+fR
+fR
+fR
+fR
+cI
+bP
+LE
+ek
+ek
+ek
+DH
+NT
+hk
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -7541,25 +7905,25 @@ xb
 "}
 (7,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+vd
+ek
+ek
+ek
+ek
+ek
+ek
+ek
+ek
+sf
+ek
+ek
+ek
+dI
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -7798,25 +8162,25 @@ xb
 "}
 (8,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+fR
+fR
+fR
+fR
+fR
+sS
+Ac
+Sr
+ek
+ek
+ek
+ZV
+pn
+el
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -8055,25 +8419,25 @@ xb
 "}
 (9,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+kD
+Yi
+pH
+TI
+fR
+Pw
+Ka
+fR
+fR
+ek
+fR
+fR
+db
+mw
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -8312,25 +8676,25 @@ xb
 "}
 (10,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+ek
+ek
+ek
+ek
+mc
+ek
+ek
+fR
+gk
+QN
+Kx
+fR
+ek
+ek
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -8569,25 +8933,25 @@ xb
 "}
 (11,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+am
+aw
+aw
+hG
+VX
+Lb
+aw
+aw
+sM
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -8826,25 +9190,25 @@ xb
 "}
 (12,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+wc
+wc
+wc
+wc
+wc
+wc
+Bq
+oV
+HB
+ZA
+aX
+eG
+Ta
+eI
+lv
+zj
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -9083,25 +9447,25 @@ xb
 "}
 (13,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+wc
+Bq
+DS
+ok
+ZM
+na
+XQ
+ZM
+ZM
+ok
+bT
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -9340,25 +9704,25 @@ xb
 "}
 (14,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+wc
+Bq
+la
+ZM
+ZM
+DJ
+ZM
+ZM
+ZM
+ZM
+Os
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -9597,25 +9961,25 @@ xb
 "}
 (15,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+wc
+Bq
+Bq
+kL
+hA
+na
+Go
+hu
+Fc
+ZM
+Xp
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -9854,25 +10218,25 @@ xb
 "}
 (16,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+wc
+wc
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+Bq
+wc
+Bk
 vH
 vH
 vH
@@ -10111,25 +10475,25 @@ xb
 "}
 (17,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+wc
+Bk
 vH
 vH
 vH
@@ -10368,25 +10732,25 @@ xb
 "}
 (18,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
 vH
 vH
 vH
@@ -10625,25 +10989,25 @@ xb
 "}
 (19,1,1) = {"
 xb
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-vH
-Jp
-Jp
-vH
-vH
-vH
-vH
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
 vH
 vH
 vH
@@ -26669,7 +27033,7 @@ Zm
 Zm
 Zm
 Zm
-Zm
+BA
 sC
 Zm
 Zm
@@ -27409,7 +27773,7 @@ Ho
 Ho
 Ho
 Ho
-AM
+MK
 ZK
 ZK
 Il
@@ -28202,7 +28566,7 @@ Uo
 jt
 kJ
 vH
-vH
+Nt
 vH
 kJ
 MY
@@ -28694,7 +29058,7 @@ Ho
 Ho
 Ho
 Ho
-Op
+zg
 ZK
 ZK
 kJ
@@ -30493,7 +30857,7 @@ Ho
 Jn
 Ho
 Ho
-Jr
+MK
 ZK
 ZK
 kJ
@@ -31261,7 +31625,7 @@ vH
 kJ
 SF
 SF
-Nv
+xy
 SF
 rM
 kJ
@@ -32289,7 +32653,7 @@ vH
 kJ
 SF
 SF
-nX
+xy
 SF
 rM
 kJ
@@ -32570,7 +32934,7 @@ Dy
 Uo
 Uo
 kJ
-Nt
+MK
 mT
 mT
 mT
@@ -33087,7 +33451,7 @@ kJ
 mT
 mT
 mT
-bL
+zg
 mT
 mT
 Im
@@ -33343,7 +33707,7 @@ jt
 kJ
 wU
 lq
-Nv
+xy
 lq
 lq
 mT

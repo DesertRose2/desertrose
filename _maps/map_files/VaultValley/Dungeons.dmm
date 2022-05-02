@@ -593,6 +593,10 @@
 /obj/machinery/light,
 /turf/open/floor/engine,
 /area/f13/bunker)
+"hl" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "hr" = (
 /obj/structure/campfire/stove,
 /turf/open/floor/f13/wood{
@@ -1519,6 +1523,9 @@
 /mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"rW" = (
+/turf/closed/indestructible/riveted,
+/area/f13/tcoms)
 "sc" = (
 /obj/structure/table/reinforced,
 /obj/item/scalpel,
@@ -1532,6 +1539,9 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"sj" = (
+/turf/open/indestructible,
+/area/f13/tcoms)
 "sk" = (
 /obj/effect/decal/cleanable/blood/gibs/human/up,
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
@@ -3396,6 +3406,10 @@
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"LX" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "Ml" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /obj/structure/chair/bench,
@@ -68625,11 +68639,11 @@ Lj
 "}
 (250,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+rW
+rW
+rW
+rW
+rW
 Lj
 Lj
 Lj
@@ -68882,11 +68896,11 @@ Lj
 "}
 (251,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+rW
+sj
+sj
+sj
+rW
 Lj
 Lj
 Lj
@@ -69139,11 +69153,11 @@ Lj
 "}
 (252,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+rW
+sj
+hl
+sj
+rW
 Lj
 Lj
 Lj
@@ -69396,11 +69410,11 @@ Lj
 "}
 (253,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+rW
+sj
+LX
+sj
+rW
 Lj
 Lj
 Lj
@@ -69653,11 +69667,11 @@ Lj
 "}
 (254,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+rW
+rW
+rW
+rW
+rW
 Lj
 Lj
 Lj
