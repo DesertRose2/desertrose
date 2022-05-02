@@ -2457,6 +2457,10 @@
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/f13,
 /area/f13/bunker)
+"CO" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/caves)
 "CP" = (
 /obj/structure/table/reinforced,
 /obj/item/surgical_drapes,
@@ -3354,6 +3358,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"Lu" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/caves)
 "LB" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/bunker)
@@ -3649,6 +3657,9 @@
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"PQ" = (
+/turf/open/indestructible,
+/area/f13/caves)
 "PU" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -3974,6 +3985,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"SJ" = (
+/turf/closed/indestructible/riveted,
+/area/f13/caves)
 "SQ" = (
 /obj/structure/table,
 /obj/structure/frame/computer{
@@ -68625,11 +68639,11 @@ Lj
 "}
 (250,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+SJ
+SJ
+SJ
+SJ
+SJ
 Lj
 Lj
 Lj
@@ -68882,11 +68896,11 @@ Lj
 "}
 (251,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+SJ
+PQ
+PQ
+PQ
+SJ
 Lj
 Lj
 Lj
@@ -69139,11 +69153,11 @@ Lj
 "}
 (252,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+SJ
+PQ
+CO
+PQ
+SJ
 Lj
 Lj
 Lj
@@ -69396,11 +69410,11 @@ Lj
 "}
 (253,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+SJ
+PQ
+Lu
+PQ
+SJ
 Lj
 Lj
 Lj
@@ -69653,11 +69667,11 @@ Lj
 "}
 (254,1,1) = {"
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+SJ
+SJ
+SJ
+SJ
+SJ
 Lj
 Lj
 Lj

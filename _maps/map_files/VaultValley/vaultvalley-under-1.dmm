@@ -191,6 +191,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/ncr)
+"ci" = (
+/obj/machinery/workbench/advanced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "ck" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -2974,6 +2978,10 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"Ak" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/tunnel)
 "An" = (
 /obj/structure/barricade/bars,
 /obj/structure/decoration/rag{
@@ -4232,10 +4240,6 @@
 /obj/machinery/camera,
 /turf/open/floor/f13,
 /area/f13/caves)
-"Mw" = (
-/obj/machinery/workbench/advanced,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
 "MA" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos{
@@ -6709,7 +6713,7 @@ xb
 xb
 RB
 lB
-lB
+Ak
 lB
 RB
 xb
@@ -26615,7 +26619,7 @@ Zm
 Zm
 Zm
 Zm
-Mw
+ci
 sC
 Zm
 Zm
