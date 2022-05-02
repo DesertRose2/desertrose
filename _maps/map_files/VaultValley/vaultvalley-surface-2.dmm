@@ -115,6 +115,10 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"agA" = (
+/obj/machinery/workbench/advanced,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ahm" = (
 /obj/structure/table/wood,
 /obj/item/phone,
@@ -1057,6 +1061,10 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/transparent/openspace,
 /area/f13/radiation)
+"bkq" = (
+/obj/effect/landmark/start/f13/outerwall,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/city)
 "bkw" = (
 /obj/structure/sink{
 	dir = 1;
@@ -5717,6 +5725,10 @@
 /obj/machinery/trading_machine/medical,
 /turf/closed/wall/f13/supermart,
 /area/f13/followers)
+"fCP" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "fCW" = (
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
@@ -6561,9 +6573,9 @@
 	},
 /area/f13/building)
 "gpp" = (
-/obj/structure/stairs/north,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/tunnel)
+/obj/machinery/light,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "gpA" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/clothing/under/f13/legskirt,
@@ -10607,6 +10619,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"ksv" = (
+/obj/item/bedsheet/black,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "kte" = (
 /obj/structure/ore_box,
 /turf/open/floor/f13,
@@ -13119,9 +13135,9 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "mWf" = (
-/obj/machinery/workbench/advanced,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland)
 "mWv" = (
 /obj/structure/bed/oldalt,
 /turf/open/floor/wood/f13/old/ruinedcornerbl,
@@ -14085,9 +14101,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "nVu" = (
-/obj/effect/landmark/start/f13/wastelander,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/wasteland)
+/turf/closed/indestructible/riveted/boss{
+	name = "temple wall"
+	},
+/area/f13/caves)
 "nVM" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitepurplerustychess2"
@@ -14506,12 +14523,6 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
-"omU" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/f13/brotherhood)
 "onE" = (
 /turf/closed/wall/f13/wood,
 /area/f13/building)
@@ -14993,10 +15004,6 @@
 /area/f13/building)
 "oSn" = (
 /turf/open/indestructible/ground/outside/water,
-/area/f13/caves)
-"oSJ" = (
-/obj/machinery/telecomms/allinone/indestructable,
-/turf/open/indestructible,
 /area/f13/caves)
 "oSO" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -16994,7 +17001,7 @@
 /area/f13/building)
 "qKB" = (
 /turf/closed/indestructible/riveted,
-/area/f13/caves)
+/area/f13/tcoms)
 "qKE" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowvertical"
@@ -18071,10 +18078,6 @@
 	icon_state = "floordirty"
 	},
 /area/f13/building)
-"rPE" = (
-/obj/item/bedsheet/black,
-/turf/closed/indestructible/rock,
-/area/f13/caves)
 "rQY" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/dirt{
@@ -21264,10 +21267,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
-"vcH" = (
-/obj/effect/landmark/start/f13/outerwall,
-/turf/open/indestructible/ground/outside/road,
-/area/f13/city)
 "vcO" = (
 /obj/structure/stairs,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -21525,9 +21524,9 @@
 	},
 /area/f13/wasteland)
 "vqj" = (
-/obj/machinery/light,
-/turf/open/floor/f13,
-/area/f13/brotherhood)
+/obj/structure/stairs/north,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/tunnel)
 "vrh" = (
 /obj/item/bedsheet/hos{
 	name = "Knight-Captain's bedsheet"
@@ -23083,7 +23082,7 @@
 /area/f13/building)
 "wTm" = (
 /turf/open/indestructible,
-/area/f13/caves)
+/area/f13/tcoms)
 "wTL" = (
 /obj/structure/grille/broken,
 /turf/open/floor/plasteel/f13{
@@ -23348,10 +23347,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xhd" = (
-/turf/closed/indestructible/riveted/boss{
-	name = "temple wall"
+/obj/machinery/light{
+	dir = 1
 	},
-/area/f13/caves)
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "xht" = (
 /obj/structure/toilet{
 	dir = 8
@@ -23571,7 +23571,7 @@
 "xrs" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
-/area/f13/caves)
+/area/f13/tcoms)
 "xru" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
@@ -24500,7 +24500,7 @@ uJh
 uJh
 uJh
 uJh
-rPE
+ksv
 uJh
 uJh
 uJh
@@ -24812,9 +24812,9 @@ iBA
 iBA
 xpN
 sdJ
-nVu
+mWf
 lTM
-nVu
+mWf
 pJj
 mYi
 iBA
@@ -25470,7 +25470,7 @@ uJh
 uJh
 qKB
 wTm
-oSJ
+fCP
 wTm
 qKB
 uJh
@@ -26985,7 +26985,7 @@ bxt
 bxt
 xPT
 nkY
-omU
+xhd
 sqE
 sqE
 sqE
@@ -27247,7 +27247,7 @@ ihz
 sqE
 sqE
 sqE
-vqj
+gpp
 nkY
 wKI
 qUL
@@ -28527,7 +28527,7 @@ kPQ
 bxt
 uXn
 nkY
-omU
+xhd
 ihz
 gVb
 ihz
@@ -30343,7 +30343,7 @@ ihz
 sqE
 mMT
 sqE
-vqj
+gpp
 nkY
 iBA
 iBA
@@ -31918,7 +31918,7 @@ yaf
 yaf
 yaf
 fnc
-xhd
+nVu
 fnc
 sRH
 aWI
@@ -32946,7 +32946,7 @@ yaf
 yaf
 fnc
 sRH
-gpp
+vqj
 uxT
 fnc
 aWI
@@ -33170,7 +33170,7 @@ sqE
 bqV
 nkY
 cBr
-vqj
+gpp
 nkY
 iBA
 iBA
@@ -33203,7 +33203,7 @@ yaf
 yaf
 fnc
 sRH
-gpp
+vqj
 nuT
 fWr
 aWI
@@ -33460,7 +33460,7 @@ yaf
 yaf
 fnc
 sRH
-gpp
+vqj
 qhd
 fnc
 aWI
@@ -35259,9 +35259,9 @@ aWI
 yaf
 yaf
 yaf
-xhd
-xhd
-xhd
+nVu
+nVu
+nVu
 yaf
 aWI
 aWI
@@ -57383,7 +57383,7 @@ qdb
 rXJ
 cMP
 oLe
-vcH
+bkq
 oLe
 oLe
 oLe
@@ -57897,7 +57897,7 @@ qdb
 nWw
 cMP
 oLe
-vcH
+bkq
 oLe
 oLe
 oLe
@@ -88914,7 +88914,7 @@ oSn
 oSn
 oSn
 oSn
-mWf
+agA
 pPJ
 pPJ
 iyq

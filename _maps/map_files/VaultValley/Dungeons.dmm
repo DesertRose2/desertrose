@@ -593,6 +593,10 @@
 /obj/machinery/light,
 /turf/open/floor/engine,
 /area/f13/bunker)
+"hl" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "hr" = (
 /obj/structure/campfire/stove,
 /turf/open/floor/f13/wood{
@@ -1519,6 +1523,9 @@
 /mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"rW" = (
+/turf/closed/indestructible/riveted,
+/area/f13/tcoms)
 "sc" = (
 /obj/structure/table/reinforced,
 /obj/item/scalpel,
@@ -1532,6 +1539,9 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"sj" = (
+/turf/open/indestructible,
+/area/f13/tcoms)
 "sk" = (
 /obj/effect/decal/cleanable/blood/gibs/human/up,
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
@@ -2457,10 +2467,6 @@
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/f13,
 /area/f13/bunker)
-"CO" = (
-/obj/machinery/telecomms/relay/preset/telecomms,
-/turf/open/indestructible,
-/area/f13/caves)
 "CP" = (
 /obj/structure/table/reinforced,
 /obj/item/surgical_drapes,
@@ -3358,10 +3364,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
-"Lu" = (
-/obj/machinery/telecomms/allinone/indestructable,
-/turf/open/indestructible,
-/area/f13/caves)
 "LB" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/bunker)
@@ -3404,6 +3406,10 @@
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"LX" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "Ml" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /obj/structure/chair/bench,
@@ -3657,9 +3663,6 @@
 /mob/living/simple_animal/hostile/raider/junker/hijacker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"PQ" = (
-/turf/open/indestructible,
-/area/f13/caves)
 "PU" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -3985,9 +3988,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"SJ" = (
-/turf/closed/indestructible/riveted,
-/area/f13/caves)
 "SQ" = (
 /obj/structure/table,
 /obj/structure/frame/computer{
@@ -68639,11 +68639,11 @@ Lj
 "}
 (250,1,1) = {"
 Lj
-SJ
-SJ
-SJ
-SJ
-SJ
+rW
+rW
+rW
+rW
+rW
 Lj
 Lj
 Lj
@@ -68896,11 +68896,11 @@ Lj
 "}
 (251,1,1) = {"
 Lj
-SJ
-PQ
-PQ
-PQ
-SJ
+rW
+sj
+sj
+sj
+rW
 Lj
 Lj
 Lj
@@ -69153,11 +69153,11 @@ Lj
 "}
 (252,1,1) = {"
 Lj
-SJ
-PQ
-CO
-PQ
-SJ
+rW
+sj
+hl
+sj
+rW
 Lj
 Lj
 Lj
@@ -69410,11 +69410,11 @@ Lj
 "}
 (253,1,1) = {"
 Lj
-SJ
-PQ
-Lu
-PQ
-SJ
+rW
+sj
+LX
+sj
+rW
 Lj
 Lj
 Lj
@@ -69667,11 +69667,11 @@ Lj
 "}
 (254,1,1) = {"
 Lj
-SJ
-SJ
-SJ
-SJ
-SJ
+rW
+rW
+rW
+rW
+rW
 Lj
 Lj
 Lj
