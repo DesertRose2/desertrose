@@ -43,6 +43,12 @@
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
 
+/datum/species/smutant/qualifies_for_rank(rank, list/features)
+	if(rank in GLOB.legion_positions) // haha, no
+		return 0
+	if(rank in GLOB.brotherhood_positions) //no.
+		return 0
+	return ..()
 
 //datum/species/smutant/get_racelist(mob/user)
 
