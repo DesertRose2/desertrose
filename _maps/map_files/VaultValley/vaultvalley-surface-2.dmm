@@ -543,6 +543,12 @@
 /obj/structure/bed,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"aBH" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/f13/radiation)
 "aCY" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -557,7 +563,6 @@
 /area/f13/caves)
 "aDS" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/workbench/advanced,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "yellowsiding"
@@ -1905,6 +1910,10 @@
 	icon_state = "verticaloutermainbottom"
 	},
 /area/f13/building)
+"bVG" = (
+/obj/machinery/workbench/advanced,
+/turf/open/indestructible/ground/inside/dirt,
+/area/f13/caves)
 "bWC" = (
 /obj/structure/simple_door/room,
 /turf/open/indestructible/ground/outside/desert,
@@ -2411,6 +2420,14 @@
 	dir = 8;
 	icon_state = "innerturn"
 	},
+/area/f13/wasteland)
+"cvC" = (
+/obj/structure/closet/crate/large,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/ore/blackpowder/twenty,
+/turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "cvG" = (
 /obj/effect/decal/cleanable/glass,
@@ -4190,6 +4207,10 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland)
+"eai" = (
+/obj/machinery/autolathe,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "eaN" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
@@ -4325,6 +4346,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/city)
+"ehn" = (
+/obj/machinery/autolathe/ammo,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ehp" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -5847,6 +5872,12 @@
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"fHp" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/f13/radiation)
 "fHM" = (
 /obj/structure/junk/locker,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -6047,6 +6078,9 @@
 "fQT" = (
 /obj/machinery/autolathe/ammo,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "fRo" = (
@@ -6575,6 +6609,17 @@
 "gpp" = (
 /obj/machinery/light,
 /turf/open/floor/f13,
+/area/f13/brotherhood)
+"gps" = (
+/obj/structure/closet/crate/large,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/ore/blackpowder/twenty,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "yellowsiding"
+	},
 /area/f13/brotherhood)
 "gpA" = (
 /obj/structure/closet/crate/wooden,
@@ -10742,6 +10787,12 @@
 "kAn" = (
 /turf/open/floor/carpet/blue,
 /area/f13/building)
+"kAo" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 1
+	},
+/turf/open/transparent/openspace,
+/area/f13/radiation)
 "kAx" = (
 /obj/structure/destructible/tribal_torch/lit,
 /obj/structure/stone_tile/slab/cracked,
@@ -11808,6 +11859,10 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
+"lBr" = (
+/obj/structure/barricade/tentclothcorner,
+/turf/open/transparent/openspace,
+/area/f13/radiation)
 "lCe" = (
 /obj/structure/closet,
 /obj/item/clothing/mask/luchador/tecnicos,
@@ -13349,6 +13404,17 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"nie" = (
+/obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "yellowsiding"
+	},
+/area/f13/brotherhood)
 "nif" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -14127,6 +14193,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nWw" = (
+/obj/machinery/door/airlock/highsecurity{
+	req_access_txt = 135
+	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -16956,11 +17025,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qIs" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/autolathe/constructionlathe,
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -18203,11 +18272,9 @@
 /turf/closed/wall/f13/supermart,
 /area/f13/building)
 "rXJ" = (
-/obj/machinery/door/poddoor/gate,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain0"
-	},
-/area/f13/city)
+/obj/machinery/workbench/advanced,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "rYB" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom2right"
@@ -19132,6 +19199,14 @@
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"sWU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/workbench/advanced,
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
+/area/f13/brotherhood)
 "sXk" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermaintop"
@@ -19748,9 +19823,10 @@
 /area/f13/wasteland)
 "tFu" = (
 /obj/structure/closet/crate/large,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/ore/blackpowder/twenty,
 /turf/open/floor/wood/f13/old,
 /area/f13/legion)
 "tGb" = (
@@ -20128,6 +20204,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building)
+"tXM" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "tXN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/workbench/pa,
@@ -29290,9 +29370,9 @@ ccs
 gPf
 ene
 qIs
-ccs
+gps
 tzt
-ene
+nie
 tRh
 ccs
 ccs
@@ -29547,7 +29627,7 @@ ihz
 hvj
 jEC
 beZ
-ihz
+eQX
 ihz
 jEC
 ukO
@@ -29799,7 +29879,7 @@ iBA
 iBA
 iBA
 nkY
-beZ
+sWU
 ihz
 ihz
 jEC
@@ -57116,7 +57196,7 @@ iAi
 qdb
 qdb
 iAi
-qdb
+tXM
 pEU
 xyU
 qdb
@@ -57380,7 +57460,7 @@ qdb
 qdb
 qdb
 qdb
-rXJ
+eFs
 cMP
 oLe
 bkq
@@ -57887,14 +57967,14 @@ frt
 frt
 frt
 frt
-qdb
+ehn
 qdb
 qdb
 iAi
 qdb
 qdb
 qdb
-nWw
+eFs
 cMP
 oLe
 bkq
@@ -58053,8 +58133,8 @@ pxt
 dLj
 kSl
 kSl
-kSl
-kSl
+kAo
+aBH
 kSl
 kSl
 kSl
@@ -58145,7 +58225,7 @@ fMq
 fMq
 frt
 frt
-qdb
+cvC
 qdb
 qdb
 qdb
@@ -58310,8 +58390,8 @@ pxt
 ujJ
 kSl
 kSl
-kSl
-kSl
+fHp
+lBr
 kSl
 kSl
 kSl
@@ -58402,7 +58482,7 @@ fMq
 fMq
 fMq
 frt
-qdb
+rXJ
 qdb
 qdb
 qdb
@@ -58659,7 +58739,7 @@ frt
 frt
 frt
 frt
-qdb
+eai
 qdb
 qdb
 qdb
@@ -83425,7 +83505,7 @@ drg
 drg
 drg
 drg
-drg
+bVG
 drg
 yaf
 yaf
