@@ -19,6 +19,17 @@
 /obj/machinery/telecomms/server/presets/enclave,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"ah" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/item/stack/ore/blackpowder/twenty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "al" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -2433,10 +2444,7 @@
 	},
 /area/f13/ncr)
 "to" = (
-/turf/closed/wall/f13/store{
-	desc = "A pre-War wall made of solid concrete.";
-	name = "concrete wall"
-	},
+/turf/closed/indestructible/f13vaultrusted,
 /area/f13/caves)
 "tr" = (
 /obj/structure/barricade/bars,
@@ -3716,6 +3724,10 @@
 /area/f13/building)
 "Ep" = (
 /obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/book/granter/crafting_recipe/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/book/granter/crafting_recipe/gunsmith_one,
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
 	},
@@ -4078,9 +4090,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
 	},
-/obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/ore/blackpowder/five,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "HZ" = (
@@ -4683,9 +4693,16 @@
 	},
 /area/f13/ncr)
 "Nt" = (
-/obj/effect/landmark/start/f13/ncrcombatengineer,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
+/obj/structure/rack,
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/item/stack/sheet/metal/fifty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "Nu" = (
 /obj/structure/barricade/train{
 	dir = 8;
@@ -28061,7 +28078,7 @@ Zm
 Zm
 oq
 Zm
-pX
+ah
 kJ
 Zm
 Zm
@@ -28566,7 +28583,7 @@ Uo
 jt
 kJ
 vH
-Nt
+vH
 vH
 kJ
 MY
@@ -28575,7 +28592,7 @@ Zm
 Zm
 oq
 Zm
-pX
+Nt
 kJ
 DL
 Zm

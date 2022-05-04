@@ -759,8 +759,16 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"gZ" = (
+/obj/structure/rack,
+/obj/item/storage/box/syringes,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "hd" = (
 /obj/structure/rack,
+/obj/item/storage/box/hug/medical,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -930,6 +938,12 @@
 /area/f13/wasteland)
 "iG" = (
 /obj/structure/closet/cabinet/anchored,
+/obj/item/clothing/neck/mantle/cmo,
+/obj/item/clothing/accessory/medal/ribbon/medical_doctor,
+/obj/item/toy/figure/clown,
+/obj/item/clothing/suit/bio_suit/cmo,
+/obj/item/clothing/head/bio_hood/cmo,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1169,8 +1183,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "kK" = (
-/obj/machinery/iv_drip,
-/obj/machinery/iv_drip,
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1272,7 +1285,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "lo" = (
-/obj/structure/chair/office/dark,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/structure/table/rolling,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1389,9 +1403,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/village)
 "md" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/gloves,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1434,10 +1446,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "mI" = (
-/obj/structure/table,
-/obj/machinery/computer/terminal{
-	dir = 1
-	},
+/obj/structure/rack,
+/obj/item/storage/box/beakers,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -1707,6 +1717,7 @@
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -2207,7 +2218,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "tP" = (
-/obj/structure/filingcabinet/employment,
+/obj/structure/junk/small/bed2,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -3775,6 +3786,13 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/village)
+"Hy" = (
+/obj/structure/table/wood/fancy,
+/obj/item/toy/figure/cmo,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "HI" = (
 /obj/structure/pondlily_big,
 /turf/open/indestructible/ground/outside/water,
@@ -3963,6 +3981,9 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/city)
+"Jk" = (
+/turf/open/transparent/openspace,
+/area/f13/caves)
 "Jl" = (
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -4192,7 +4213,7 @@
 	},
 /area/f13/building)
 "LF" = (
-/obj/structure/filingcabinet/security,
+/obj/structure/chair/stool,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -4231,7 +4252,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "Mf" = (
-/obj/structure/filingcabinet/medical,
+/obj/item/clothing/head/f13/nursehat,
+/obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -4509,7 +4531,12 @@
 /turf/open/floor/f13,
 /area/f13/brotherhood)
 "NW" = (
-/obj/structure/filingcabinet/chestdrawer,
+/obj/item/clothing/under/rank/nursesuit,
+/obj/structure/table,
+/obj/item/clothing/under/rank/medical/doctor/blue,
+/obj/item/clothing/under/rank/medical/doctor/green,
+/obj/item/clothing/under/rank/medical/doctor/purple,
+/obj/item/clothing/under/rank/medical/doctor/skirt,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -4797,7 +4824,7 @@
 	},
 /area/f13/wasteland)
 "QA" = (
-/obj/structure/closet/crate/freezer/blood/anchored,
+/obj/machinery/iv_drip,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -5014,6 +5041,13 @@
 "RZ" = (
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
+"Sa" = (
+/obj/item/clothing/neck/stethoscope,
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "Sb" = (
 /obj/machinery/computer/operating{
 	dir = 8
@@ -5240,6 +5274,13 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
+"Ud" = (
+/obj/item/storage/box/gloves,
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
 "Uf" = (
@@ -7481,9 +7522,9 @@ Cx
 yc
 we
 we
-fe
-fe
-fe
+we
+we
+we
 we
 we
 we
@@ -7737,12 +7778,12 @@ sA
 Wg
 yc
 we
-fe
-fe
-fe
-fe
-fe
-fe
+we
+we
+we
+we
+we
+we
 we
 we
 we
@@ -7750,9 +7791,9 @@ Kr
 tN
 tN
 tN
-tN
-tN
-tN
+ls
+ls
+Jk
 tN
 Kr
 Kr
@@ -7994,23 +8035,23 @@ Cx
 Cx
 yc
 Dx
-fe
-fe
-fe
-fe
-fe
-fe
-fe
-fe
+we
+we
+we
+we
+we
+we
+we
+we
 we
 tN
 tN
-tN
-Kr
-tN
-tN
-tN
-tN
+ls
+ls
+ls
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -8259,16 +8300,16 @@ ls
 ls
 ls
 ls
-we
-tN
-tN
-tN
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -8516,16 +8557,16 @@ ls
 ls
 ls
 ls
-we
-tN
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -8773,16 +8814,16 @@ ls
 ls
 ls
 ls
-we
-tN
-tN
-tN
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -9022,23 +9063,23 @@ tO
 Ro
 tO
 bP
-fe
-fe
-fe
-fe
-fe
-fe
-fe
-fe
 we
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
-Kr
+we
+we
+we
+we
+we
+we
+we
+we
+lk
+lk
+ls
+ls
+ls
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -9279,22 +9320,22 @@ Ro
 tO
 tO
 fe
-fe
-fe
-fe
-fe
-fe
-fe
+we
+we
+we
+we
+we
+we
 we
 we
 we
 oQ
 oQ
-oQ
-Kr
-Kr
-Kr
-Kr
+lk
+lk
+ls
+ls
+ls
 Kr
 Kr
 Kr
@@ -9536,8 +9577,8 @@ tO
 tO
 KR
 fe
-fe
-fe
+we
+we
 we
 we
 we
@@ -9939,8 +9980,8 @@ ls
 ls
 ls
 ls
-ls
-ls
+Kr
+Kr
 ls
 ls
 ls
@@ -10195,10 +10236,10 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
+Kr
+Kr
+Kr
+Kr
 ls
 ls
 ls
@@ -10452,10 +10493,10 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
+Kr
+Kr
+Kr
+Kr
 ls
 ls
 ls
@@ -10709,11 +10750,11 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
+Kr
+Kr
+Kr
+Kr
+Kr
 ls
 ls
 ls
@@ -10967,10 +11008,10 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
+Kr
+Kr
+Kr
+Kr
 ls
 ls
 ls
@@ -11224,9 +11265,9 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
+Kr
+Kr
+Kr
 ls
 ls
 ls
@@ -11482,7 +11523,7 @@ ls
 ls
 ls
 ls
-ls
+Kr
 ls
 ls
 ls
@@ -19408,13 +19449,13 @@ Wq
 qS
 qS
 qS
-Mf
+qS
 RF
+mO
 qS
 qS
 qS
-qS
-qS
+Sa
 RF
 zi
 qS
@@ -19661,17 +19702,17 @@ ls
 ls
 ls
 RF
-NW
 qS
+md
 qS
-qS
+LF
 tP
 RF
+NB
+md
 qS
 qS
-qS
-qS
-qS
+Mf
 RF
 qS
 qS
@@ -19918,17 +19959,17 @@ ls
 ls
 ls
 RF
-LF
 qS
 qS
 qS
-kk
+qS
+mO
 RF
+mO
 qS
 qS
 qS
-qS
-qS
+NW
 RF
 Ot
 qS
@@ -19937,7 +19978,7 @@ nw
 nw
 nw
 nw
-qS
+md
 qS
 qS
 Zj
@@ -20445,7 +20486,7 @@ qS
 qS
 qS
 qS
-qS
+md
 qS
 qS
 qS
@@ -20959,7 +21000,7 @@ RF
 RF
 RF
 RF
-qS
+Zb
 RF
 RF
 RF
@@ -21206,20 +21247,20 @@ RF
 AZ
 Iu
 qS
-lo
-mI
+qS
+kk
+RF
+Lt
+qS
+qS
+qS
+mO
 RF
 qS
 qS
 qS
 qS
-qS
-RF
 kK
-qS
-QA
-md
-NB
 RF
 qS
 qS
@@ -21462,17 +21503,17 @@ ls
 RF
 AZ
 Iu
+md
 qS
-lo
-mI
+kk
+RF
+zK
+qS
+md
+qS
+mO
 RF
 qS
-qS
-qS
-qS
-qS
-RF
-Sb
 qS
 qS
 qS
@@ -21720,20 +21761,20 @@ RF
 AZ
 Iu
 qS
-lo
-mI
+qS
+kk
 RF
-qS
-qS
-qS
-qS
-qS
-RF
-Qi
-qS
-zK
 kr
-Lt
+qS
+qS
+qS
+mO
+RF
+QA
+lo
+Qi
+Sb
+Ud
 RF
 qS
 qS
@@ -22764,7 +22805,7 @@ qS
 NM
 NM
 vP
-NM
+Hy
 NM
 qS
 Zj
@@ -23533,8 +23574,8 @@ ls
 RF
 Xs
 qS
-hd
-hd
+gZ
+mI
 hd
 qS
 iG
