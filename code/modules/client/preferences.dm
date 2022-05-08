@@ -1678,31 +1678,38 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/result = input(user, "Select a species", "Species Selection") as null|anything in GLOB.roundstart_race_names
 					if(result)
 						var/newtype = GLOB.species_list[GLOB.roundstart_race_names[result]]
-						pref_species = new newtype()
-						//let's ensure that no weird shit happens on species swapping.
-						custom_species = null
-						if(!parent.can_have_part("body_markings"))
-							features["body_markings"] = "None"
-						if(!parent.can_have_part("mam_body_markings"))
-							features["mam_body_markings"] = "None"
-						if(parent.can_have_part("mam_body_markings"))
-							if(features["mam_body_markings"] == "None")
-								features["mam_body_markings"] = "Plain"
-						if(parent.can_have_part("tail_lizard"))
-							features["tail_lizard"] = "Smooth"
-						if(pref_species.id == "felinid")
-							features["mam_tail"] = "Cat"
-							features["mam_ears"] = "Cat"
+						var/datum/species/to_check_wl = new newtype() //Instance of newtype specifically for checking whitelists
+						var/list/species_wl = to_check_wl.whitelist 
+						var/whitelist_accept = TRUE
+						if(to_check_wl.whitelisted == 1)
+							if(species_wl.Find(user.ckey) == 0)
+								to_chat(user, SPAN_DANGER("You are not whitelisted for this species!"))
+								whitelist_accept = FALSE
+						if(whitelist_accept == TRUE)
+							pref_species = new newtype()
+							//let's ensure that no weird shit happens on species swapping.
+							custom_species = null
+							if(!parent.can_have_part("body_markings"))
+								features["body_markings"] = "None"
+							if(!parent.can_have_part("mam_body_markings"))
+								features["mam_body_markings"] = "None"
+							if(parent.can_have_part("mam_body_markings"))
+								if(features["mam_body_markings"] == "None")
+									features["mam_body_markings"] = "Plain"
+							if(parent.can_have_part("tail_lizard"))
+								features["tail_lizard"] = "Smooth"
+							if(pref_species.id == "felinid")
+								features["mam_tail"] = "Cat"
+								features["mam_ears"] = "Cat"
 
-						//Now that we changed our species, we must verify that the mutant colour is still allowed.
-						var/temp_hsv = RGBtoHSV(features["mcolor"])
-						if(features["mcolor"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
-							features["mcolor"] = pref_species.default_color
-						if(features["mcolor2"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
-							features["mcolor2"] = pref_species.default_color
-						if(features["mcolor3"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
-							features["mcolor3"] = pref_species.default_color
-
+							//Now that we changed our species, we must verify that the mutant colour is still allowed.
+							var/temp_hsv = RGBtoHSV(features["mcolor"])
+							if(features["mcolor"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
+								features["mcolor"] = pref_species.default_color
+							if(features["mcolor2"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
+								features["mcolor2"] = pref_species.default_color
+							if(features["mcolor3"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
+								features["mcolor3"] = pref_species.default_color
 				if("custom_species")
 					var/new_species = reject_bad_name(input(user, "Choose your species subtype, if unique. This will show up on examinations and health scans. Do not abuse this:", "Character Preference", custom_species) as null|text)
 					if(new_species)
