@@ -643,7 +643,8 @@
 						"deathlysoul",
 						"lunaticluna",
 						"pisshole",
-						"akforeplay")
+						"akforeplay",
+						"yeehawguvnah")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
