@@ -691,7 +691,7 @@
 	new /obj/effect/decal/cleanable/ash(get_turf(user))
 	qdel(src)
 
-
+/*
 //Potion of Flight
 /obj/item/reagent_containers/glass/bottle/potion
 	icon = 'icons/obj/lavaland/artefacts.dmi'
@@ -727,7 +727,7 @@
 		M.adjustBruteLoss(20)
 		M.emote("scream")
 	..()
-
+*/
 
 /obj/item/jacobs_ladder
 	name = "jacob's ladder"
