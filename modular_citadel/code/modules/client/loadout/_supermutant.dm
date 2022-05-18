@@ -6,7 +6,7 @@
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04",
-					"yecrowbarman", "heroicam", "puglord777", "theman1178"
+					"yecrowbarman", "heroicam", "puglord777", "theman1178","yeehawguvnah"
 					)
 
 // Shoes

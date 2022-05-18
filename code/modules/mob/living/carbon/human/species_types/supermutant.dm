@@ -12,7 +12,7 @@
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04",
-					"yecrowbarman"
+					"yecrowbarman","yeehawguvnah"
 					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
 		OFFSET_HEAD = list(1,5),
