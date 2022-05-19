@@ -926,9 +926,6 @@ Outlaw
 	/datum/outfit/loadout/brawler,
 	/datum/outfit/loadout/spearman,
 	/datum/outfit/loadout/shaman,
-	/datum/outfit/loadout/wayfarermelee,
-	/datum/outfit/loadout/wayfarerranged,
-	/datum/outfit/loadout/wayfarershaman,
 	/datum/outfit/loadout/whitelegsmelee,
 	/datum/outfit/loadout/whitelegsranged,
 	/datum/outfit/loadout/whitelegsshaman,
@@ -1112,42 +1109,6 @@ Outlaw
 		/obj/item/ammo_box/shotgun/slug = 1,
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
 		/obj/item/storage/belt/utility/full = 1,
-	)
-
-//Wayfarers
-/datum/outfit/loadout/wayfarermelee
-	name = "Wayfarer Warrior"
-	suit = /obj/item/clothing/suit/armor/f13/tribe_armor
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/wayfarer = 1,
-		/obj/item/clothing/head/helmet/f13/wayfarer/hunter = 1,
-		/obj/item/twohanded/spear/bonespear = 1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
-	)
-
-/datum/outfit/loadout/wayfarerranged
-	name = "Wayfarer Archer"
-	suit = /obj/item/clothing/suit/armor/f13/kit
-	head = /obj/item/clothing/head/helmet/f13/wayfarer/antler
-	neck = /obj/item/clothing/neck/mantle/brown
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/sturdybow = 1,
-		/obj/item/storage/belt/tribe_quiver = 2,
-		/obj/item/binoculars = 1,
-		/obj/item/claymore/machete/warclub = 1,
-		)
-
-/datum/outfit/loadout/wayfarershaman
-	name = "Wayfarer Shaman"
-	suit = /obj/item/clothing/suit/armor/f13/tribe_armor
-	backpack_contents = list(
-		/obj/item/storage/bag/plants=1,
-		/obj/item/cultivator=1,
-		/obj/item/reagent_containers/glass/bucket/wood=1,
-		/obj/item/warpaint_bowl=1,
-		/obj/item/kitchen/knife/ritual = 1,
-		/obj/item/stack/medical/gauze/improvised = 1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
 	)
 
 //Rustwalkers
