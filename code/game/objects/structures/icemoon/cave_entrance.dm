@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 		if(2)
 			new /obj/item/clothing/glasses/godeye(loc)
 		if(3)
-			new /obj/item/reagent_containers/glass/bottle/potion/flight(loc)
+			// new /obj/item/reagent_containers/glass/bottle/potion/flight(loc)
 		if(4)
 			new /obj/item/organ/heart/cursed/wizard(loc)
 		if(5)
