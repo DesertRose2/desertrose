@@ -1086,3 +1086,150 @@
 	icon_state = "ptolemaic_armor"
 	item_state = "ptolemaic_armor"
 	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
+
+// Tribal 
+/obj/item/clothing/suit/f13/tribal
+	name = "tribal armor"
+	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."
+	icon_state = "tribal"
+	item_state = "tribal"
+	armor = list("tier" = 4, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
+	slowdown = 0.05
+
+/obj/item/clothing/suit/f13/tribal/light
+	name = "light tribal armor"
+	desc = "A set of armor made of a variety of tanned hides. It's not the best."
+	armor = list("tier" = 3, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
+	slowdown = 0.025
+
+/obj/item/clothing/suit/f13/tribal/heavy
+	name = "heavy tribal armor"
+	desc = "A heavy suit of armour made of brahmin and gecko hides. It seems rather heavy."
+	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	slowdown = 0.1
+
+/obj/item/clothing/suit/f13/tribal/light/rustwalkers
+	name = "Rustwalkers light armor"
+	desc = "A duster made from some combination of leather and cloth, probably torn out of an old car. The shoulders appear to have had parts of an engine either strapped or stitched onto them. Commonly worn by members of the Rustwalkers tribe."
+	icon_state = "rustwalkers_armour_light"
+	item_state = "rustwalkers_armour_light"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+
+/obj/item/clothing/suit/f13/tribal/rustwalkers
+	name = "Rustwalkers armor"
+	desc = "A chestplate, pauldron and vambrace that bear a distinct resemblance to a coolant tank, engine valves and an exhaust. Commonly worn by members of the Rustwalkers tribe"
+	icon_state = "rustwalkers_armour"
+	item_state = "rustwalkers_armour"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	slowdown = 0.1
+
+/obj/item/clothing/suit/f13/tribal/heavy/rustwalkers
+	name = "Rustwalkers heavy armor"
+	desc = "A car seat leather duster, a timing belt bandolier, and armour plating made from various parts of a car, it surely would weigh the wearer down. Commonly worn by members of the Rustwalkers tribe."
+	icon_state = "rustwalkers_armour_heavy"
+	item_state = "rustwalkers_armour_heavy"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	slowdown = 0.15
+
+/obj/item/clothing/suit/f13/tribal/light/whitelegs
+	name = "White Legs light armour"
+	desc = "A small series of tan and khaki armour plates, held in place with a thin bandolier. Commonly worn by members of the White Legs tribe."
+	icon_state = "white_legs_armour_light"
+	item_state = "white_legs_armour_light"
+
+/obj/item/clothing/suit/f13/tribal/whitelegs
+	name = "White Legs armour"
+	desc = "A series of tan and khaki armour plates, held in place with a considerable amount of strapping. Commonly worn by members of the White Legs tribe."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
+	icon_state = "white_legs_armour"
+	item_state = "white_legs_armour"
+
+/obj/item/clothing/suit/f13/tribal/heavy/whitelegs
+	name = "White Legs heavy armour"
+	desc = "A series of tan and khaki armour plates, held in place with a considerable amount of strapping and possibly duct tape. Commonly worn by members of the White Legs tribe."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
+	icon_state = "white_legs_armour_heavy"
+	item_state = "white_legs_armour_heavy"
+
+/obj/item/clothing/suit/f13/tribal/light/eighties
+	name = "80s light armour"
+	desc = "A black leather jacket with the number 80 stitched onto the back. Worn by the members of the 80s tribe."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	icon_state = "80s_armour_light"
+	item_state = "80s_armour_light"
+
+/obj/item/clothing/suit/f13/tribal/eighties
+	name = "80s armour"
+	desc = "A plain, slightly cropped leather jacket with a black lining and neck brace, paired with a set of metal vambraces and a black belt of pouches. Commonly worn by the members of the 80s tribe."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	icon_state = "80s_armour"
+	item_state = "80s_armour"
+
+/obj/item/clothing/suit/f13/tribal/heavy/eighties
+	name = "80s heavy armour"
+	desc = "A ballistic duster with the number 80 stitched onto the back worn over a breastplate made from a motorcycle's engine housing, with kneepads made from stirrups. Worn by the members of the 80s tribe."
+	icon_state = "80s_armour_heavy"
+	item_state = "80s_armour_heavy"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.1
+
+/obj/item/clothing/suit/f13/tribal/light/deadhorses
+	name = "Dead Horses light armour"
+	desc = "A simple leather bandolier and gecko hide chest covering. Worn by the members of the Dead Horses tribe."
+	icon_state = "dead_horses_armour_light"
+	item_state = "dead_horses_armour_light"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.01
+
+
+/obj/item/clothing/suit/f13/tribal/deadhorses
+	name = "Dead Horses armour"
+	desc = "A simple leather bandolier and gecko hide chest covering, with an engraved metal pauldron and a pair of black leather straps. Commonly worn by the members of the Dead Horses tribe."
+	icon_state = "dead_horses_armour"
+	item_state = "dead_horses_armour"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.025
+
+/obj/item/clothing/suit/f13/tribal/heavy/deadhorses
+	name = "Dead Horses heavy armour"
+	desc = "A simple leather bandolier and gecko hide chest covering, with an engraved metal pauldron and a set of black leather straps, one holding a shinpad in place. Commonly worn by the members of the Dead Horses tribe."
+	icon_state = "dead_horses_armour_heavy"
+	item_state = "dead_horses_armour_heavy"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.05
+
+/obj/item/clothing/suit/f13/tribal/light/sorrows
+	name = "Sorrows armour"
+	desc = "A worn ballistic vest from Salt Lake, adorned with feathers and turqoise beads, with an ornamental pattern painted over the sides. Commonly worn by the members of the peaceful Sorrows tribe."
+	icon_state = "sorrows_armour"
+	item_state = "sorrows_armour"
+	slowdown = 0.08
+
+/obj/item/clothing/suit/f13/tribal/light/bone
+	name = "Bone armor"
+	desc = "A tribal armor plate, crafted from animal bone."
+	icon_state = "bone_dancer_armor_light"
+	item_state = "bone_dancer_armor_light"
+	blood_overlay_type = "armor"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+
+/obj/item/clothing/suit/f13/tribal/bone
+	name = "Reinforced Bone armor"
+	desc = "A tribal armor plate, reinforced with leather and a few metal parts."
+	icon_state = "bone_dancer_armor"
+	item_state = "bone_dancer_armor"
+	blood_overlay_type = "armor"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	slowdown = 0.025
+
+/obj/item/clothing/suit/f13/tribal/heavy/bone
+	name = "Heavy Bone armor"
+	desc = "A tribal full armor plate, crafted from animal bone, metal and leather. Usually worn by the Bone Dancers"
+	icon_state = "bone_dancer_armor_heavy"
+	item_state = "bone_dancer_armor_heavy"
+	blood_overlay_type = "armor"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	slowdown = 0.05

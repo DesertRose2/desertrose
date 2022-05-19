@@ -923,52 +923,241 @@ Outlaw
 	minimal_access = list()
 
 	loadout_options = list(
-		/datum/outfit/loadout/tribalspearman,
-		/datum/outfit/loadout/tribalbowman,
-		/datum/outfit/loadout/tribalshaman,
-		/datum/outfit/loadout/wayfarer
+	/datum/outfit/loadout/brawler,
+	/datum/outfit/loadout/spearman,
+	/datum/outfit/loadout/shaman,
+	/datum/outfit/loadout/whitelegsmelee,
+	/datum/outfit/loadout/whitelegsranged,
+	/datum/outfit/loadout/whitelegsshaman,
+	/datum/outfit/loadout/deadhorsesmelee,
+	/datum/outfit/loadout/deadhorsesranged,
+	/datum/outfit/loadout/deadhorsesshaman,
+	/datum/outfit/loadout/sorrowshunter,
+	/datum/outfit/loadout/sorrowsshaman,
+	/datum/outfit/loadout/eightiesmelee,
+	/datum/outfit/loadout/eightiesranged,
+	/datum/outfit/loadout/eightiesshaman,
+	/datum/outfit/loadout/rustwalkersscipher,
+	/datum/outfit/loadout/rustwalkersscrapper,
+	/datum/outfit/loadout/rustwalkersshaman,
+	/datum/outfit/loadout/bonedancerexile
 	)
 
-/datum/outfit/loadout/tribalspearman
-	name = "Spearman"
+//Generic Tribals
+/datum/outfit/loadout/brawler
+	name = "Tribal Brawler"
+	suit = /obj/item/clothing/suit/armor/f13/tribal
+	head = /obj/item/clothing/head/helmet/f13/deathskull
 	backpack_contents = list(
-		/obj/item/twohanded/spear=1,
-		/obj/item/clothing/head/helmet/f13/fiend=1,
-		/obj/item/clothing/suit/armor/f13/tribal=1,
-		/obj/item/storage/belt/mining/primitive=1,
-		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2
-	)
+		/obj/item/twohanded/fireaxe/bmprsword = 1,
+		/obj/item/restraints/legcuffs/bola = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/stack/medical/gauze = 1,
+		)
 
-/datum/outfit/loadout/tribalbowman
-	name = "Bowman"
+/datum/outfit/loadout/spearman
+	name = "Tribal Spearman"
+	suit = /obj/item/clothing/suit/armor/bone
+	head = /obj/item/clothing/head/helmet/f13/fiend
+	mask = /obj/item/clothing/mask/facewrap
+	neck = /obj/item/clothing/neck/mantle/gray
 	backpack_contents = list(
-		/obj/item/storage/belt/tribe_quiver=1,
-		/obj/item/gun/ballistic/bow=1,
-		/obj/item/clothing/head/helmet/f13/wayfarer/antler=1,
-		/obj/item/clothing/suit/hooded/cloak/goliath/tatteredred=1,
-		/obj/item/clothing/neck/mantle/brown=1
-	)
+		/obj/item/twohanded/spear = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+		)
 
-/datum/outfit/loadout/tribalshaman
-	name = "Shaman"
+/datum/outfit/loadout/shaman
+	name = "Tribal Shaman"
+	suit = /obj/item/clothing/suit/hooded/cloak/desert
 	backpack_contents = list(
-		/obj/item/warpaint_bowl=1,
 		/obj/item/storage/bag/plants=1,
 		/obj/item/cultivator=1,
 		/obj/item/reagent_containers/glass/bucket/wood=1,
-		/obj/item/kitchen/knife/ritualdagger=1,
-		/obj/item/clothing/suit/hooded/cloak/desert=1
+		/obj/item/twohanded/sledgehammer/warmace = 1,
+		/obj/item/kitchen/knife/ritual = 1,
+		/obj/item/stack/medical/gauze/improvised = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1
 	)
 
-/datum/outfit/loadout/wayfarer
-	name = "Wayfarer"
+//White Legs
+/datum/outfit/loadout/whitelegsmelee
+	name = "White Legs Bone-Breaker"
+	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs
 	backpack_contents = list(
-		/obj/item/clothing/under/f13/wayfarer/hunter,
-		/obj/item/twohanded/sledgehammer/warmace=1,
-		/obj/item/clothing/suit/armor/f13/tribe_armor=1,
-		/obj/item/reagent_containers/pill/patch/f13/healingpowder=1,
-		/obj/item/clothing/head/helmet/f13/wayfarer/hunter=1,
-		/obj/item/storage/belt/mining/primitive=1
+		/obj/item/clothing/under/f13/whitelegs = 1,
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		/obj/item/melee/unarmed/maceglove = 1,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1
+	)
+
+/datum/outfit/loadout/whitelegsranged
+	name = "White Legs Storm-Drummer"
+	suit = /obj/item/clothing/suit/f13/tribal/whitelegs
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/whitelegs = 1,
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		/obj/item/gun/ballistic/automatic/smg/tommygun = 1,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1,
+		/obj/item/ammo_box/magazine/tommygunm45 = 2
+	)
+
+/datum/outfit/loadout/whitelegsshaman
+	name = "White Legs Arm-Makers"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/whitelegs = 1,
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		/obj/item/twohanded/fireaxe = 1,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+	)
+
+//Dead Horses
+/datum/outfit/loadout/deadhorsesmelee
+	name = "Dead Horses Stalker"
+	suit = /obj/item/clothing/suit/f13/tribal/deadhorses
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/deadhorses = 1,
+		/obj/item/clothing/under/f13/female/deadhorses = 1,
+		/obj/item/claymore/machete/warclub = 1,
+		/obj/item/storage/backpack/spearquiver = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+/datum/outfit/loadout/deadhorsesranged
+	name = "Dead Horses Disciple"
+	suit = /obj/item/clothing/suit/f13/tribal/heavy/deadhorses
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/deadhorses = 1,
+		/obj/item/clothing/under/f13/female/deadhorses = 1,
+		/obj/item/gun/ballistic/automatic/pistol/m1911=1,
+		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+/datum/outfit/loadout/deadhorsesshaman
+	name = "Dead Horses Shaman"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/deadhorses = 1,
+		/obj/item/clothing/under/f13/female/deadhorses = 1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/cultivator=1,
+		/obj/item/reagent_containers/glass/bucket/wood=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+//Sorrows
+/datum/outfit/loadout/sorrowshunter
+	name = "Sorrows Hunter-Guardian"
+	suit = /obj/item/clothing/suit/f13/tribal/light/sorrows
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/sorrows = 1,
+		/obj/item/clothing/under/f13/female/sorrows = 1,
+		/obj/item/kitchen/knife/combat/survival = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/gun/ballistic/bow = 1,
+		/obj/item/storage/belt/tribe_quiver = 1,
+	)
+
+/datum/outfit/loadout/sorrowsshaman
+	name = "Sorrows Ink-Shaman"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/sorrows = 1,
+		/obj/item/clothing/under/f13/female/sorrows = 1,
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/reagent_containers/glass/bucket/wood = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/warpaint_bowl = 1,
+		/obj/item/toy/crayon/spraycan = 2
+	)
+
+//Eighties
+/datum/outfit/loadout/eightiesmelee
+	name = "Eighties Path-Maker"
+	suit = /obj/item/clothing/suit/f13/tribal/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		/obj/item/gun/ballistic/shotgun/trench = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/datum/reagent/drug/turbo = 2,
+		/datum/reagent/drug/jet = 2
+	)
+
+/datum/outfit/loadout/eightiesranged
+	name = "Eighties Road-Warrior"
+	suit = /obj/item/clothing/suit/f13/tribal/heavy/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
+		/obj/item/ammo_box/shotgun/buck = 1,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+/datum/outfit/loadout/eightiesshaman
+	name = "Eighties Lay-Mechanic"
+	suit = /obj/item/clothing/suit/f13/tribal/light/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/storage/belt/utility/full = 1,
+	)
+
+//Rustwalkers
+/datum/outfit/loadout/rustwalkersscipher
+	name = "Rustwalkers Scipher"
+	suit = /obj/item/clothing/suit/f13/tribal/rustwalkers
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/rustwalkers = 1,
+		/obj/item/clothing/under/f13/female/rustwalkers = 1,
+		/obj/item/gun/ballistic/automatic/autopipe = 1,
+		/obj/item/ammo_box/magazine/autopipe = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/circular_saw = 1
+	)
+
+/datum/outfit/loadout/rustwalkersscrapper
+	name = "Rustwalkers Scrapper"
+	suit = /obj/item/clothing/suit/f13/tribal/light/rustwalkers
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/rustwalkers = 1,
+		/obj/item/clothing/under/f13/female/rustwalkers = 1,
+		/obj/item/gun/ballistic/revolver/pipe_rifle = 1,
+		/obj/item/ammo_box/c10mm = 1,
+		/obj/item/circular_saw = 1,
+		/obj/item/storage/belt/utility/full = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+/datum/outfit/loadout/rustwalkersshaman
+	name = "Rustwalkers Brain-Jack"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/rustwalkers = 1,
+		/obj/item/clothing/under/f13/female/rustwalkers = 1,
+		/obj/item/melee/unarmed/bladed = 1,
+		/obj/item/circular_saw = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
+		/obj/item/storage/belt/utility/full = 1,
+
+	)
+//Bone Dancer
+/datum/outfit/loadout/bonedancerexile
+	name = "Bone Dancer Exile"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/bone = 1,
+		/obj/item/clothing/head/helmet/skull = 1,
+		/obj/item/twohanded/spear/bonespear = 1,
+		/obj/item/warpaint_bowl=1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+
 	)
 
 /datum/outfit/job/wasteland/f13tribal
