@@ -620,6 +620,32 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
+//NCR Ranger service rifle rangemaster	Keywords: 5.56, Semi-Automatic, No Autosear (!) (classic Fallout 1/2 service rifle, by Pisshole)
+/obj/item/gun/ballistic/automatic/service/carbine/rangermaster
+	name = "Ranger's Hunting Rifle"
+	desc = "A true icon of California exploration, Colt Rangemaster rifles saw their post-war renaissance in the early days before and during the rise of the Republic. Falling out of use during the height of the Brotherhood War, some still cling whiteknuckle to these classic re-jiggered hunting rifles. This one's seen some battles and seems to be configured more classically rather than having many of the more common post-war upgrades."
+	icon_state = "rangermaster"
+	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	extra_damage = 8
+	burst_size = 1
+	fire_delay = 8
+	spread = 1
+	burst_size = 1
+	extra_penetration = 0.1
+	automatic_burst_overlay = FALSE
+	semi_auto = TRUE
+	can_attachments = FALSE
+	untinkerable = TRUE
+	can_bayonet = FALSE
+	can_scope = TRUE
+	scope_state = "rifle_scope"
+	scope_x_offset = 4
+	scope_y_offset = 11
+	can_suppress = TRUE
+	unique_reskin = list("Worn Ranger's Rifle" = "rangermaster",
+						"5.56 Hunting Rifle" = "rangemaster"
+						)
+
 //'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
@@ -727,6 +753,9 @@
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 16
+	unique_reskin = list("Classic Hunting Rifle" = "rangemaster",
+						"7.62 Modified" = "rangemasterclassic"
+						)
 
 //M1 Garand			Keywords: .308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear
 /obj/item/gun/ballistic/automatic/m1garand
@@ -817,10 +846,10 @@
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 10
+	fire_delay = 8
 	burst_size = 1
 	extra_penetration = 0.2
-	extra_damage = 8
+	extra_damage = 9
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	can_automatic = FALSE
@@ -914,6 +943,7 @@
 	fire_delay = 3.5
 	can_scope = FALSE
 	can_attachments = FALSE
+	extra_damage = 2
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 7
@@ -1022,9 +1052,10 @@
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	burst_size = 3
-	fire_delay = 4
+	fire_delay = 6
 	burst_shot_delay = 2
 	spread = 4
+	extra_damage = 4
 	can_attachments = FALSE
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -1057,6 +1088,7 @@
 	force = 20
 	burst_size = 2
 	fire_delay = 3
+	extra_damage = 2
 	burst_shot_delay = 2.2
 	spread = 20
 	can_attachments = FALSE

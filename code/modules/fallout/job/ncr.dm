@@ -927,6 +927,8 @@ Veteran Ranger
 	/datum/outfit/loadout/vrclassic,	//AMR
 	/datum/outfit/loadout/vrlite, 		//Republic's Pride
 	/datum/outfit/loadout/vrbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/vrauto,		//Assault Carbine
+	/datum/outfit/loadout/vrhunting,	//5.56 Rangemaster
 	)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -977,6 +979,19 @@ Veteran Ranger
 		/obj/item/attachments/scope=1,
 		/obj/item/ammo_box/tube/c4570=3)
 
+/datum/outfit/loadout/vrauto
+	name = "Assault Carbine Veteran Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/c5mm=2)
+
+/datum/outfit/loadout/vrhunting
+	name = "Hunting Veteran Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
+	backpack_contents = list(
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/m556/rifle=3)
+
 //NCR Ranger-Sergeant
 /datum/job/ncr/f13rangersergeant
 	title = "NCR Ranger Sergeant"
@@ -992,6 +1007,8 @@ Veteran Ranger
 	/datum/outfit/loadout/rsclassic,	//Sniper Rifle
 	/datum/outfit/loadout/rslite, 		//Scoped Garand
 	/datum/outfit/loadout/rsbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/rsauto,		//AK112
+	/datum/outfit/loadout/rshunting		//5.56 Rangemaster
 	)
 
 /datum/outfit/job/ncr/f13rangersergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1047,6 +1064,20 @@ Veteran Ranger
 		/obj/item/attachments/scope = 1,
 		/obj/item/ammo_box/tube/c4570 = 3
 		)
+
+/datum/outfit/loadout/rsauto
+	name = "Heavy Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/ak112
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/c5mm/extended = 2
+		)
+
+/datum/outfit/loadout/rshunting
+	name = "Hunting Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
+	backpack_contents = list(
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/m556/rifle=3)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
@@ -1116,7 +1147,10 @@ Veteran Ranger
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(
-		/obj/item/guncase = 1,
+		/obj/item/gun/ballistic/rifle/mag/commando = 1,
+		/obj/item/ammo_box/magazine/m45 = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/grenade/smokebomb = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/clothing/shoes/f13/military/leather/patrol = 1
 	)
