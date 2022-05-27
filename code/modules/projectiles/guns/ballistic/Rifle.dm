@@ -234,6 +234,7 @@
 	scope_state = "leveraction_scope"
 	scope_x_offset = 11
 	scope_y_offset = 21
+	extra_damage = 2
 
 //Brush Gun				Keywords: .45-70, Repeater rifle, auto-cycles
 /obj/item/gun/ballistic/rifle/automatic/hunting/brush
@@ -443,7 +444,7 @@
 	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	untinkerable = TRUE
-	extra_damage = 10
+	extra_damage = 12
 	fire_delay = 10
 	recoil = 1
 	spread = 0

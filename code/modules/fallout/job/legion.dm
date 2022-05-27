@@ -970,8 +970,8 @@ Explorer
 	exp_type = EXP_TYPE_PRIME
 
 	loadout_options = list(
-		/datum/outfit/loadout/excursor,	//Commando DMR
-		/datum/outfit/loadout/sapper	//Commando Carbine, C4
+		/datum/outfit/loadout/excursor,	//10mm smg, smokebomb
+		/datum/outfit/loadout/sapper	//Lever action shotgun, fire grenade
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
@@ -991,8 +991,8 @@ Explorer
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=2,
-		/obj/item/claymore/machete/reinforced=1
-		)
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/grenade/plastic=1)
 
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1005,19 +1005,19 @@ Explorer
 
 /datum/outfit/loadout/excursor
 	name = "Excursor (Runner)"
-	l_hand = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
+	l_hand = 	/obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45/extended=2,
-		/obj/item/attachments/scope=1)
+		/obj/item/ammo_box/magazine/m10mm_adv/ext=2,
+		/obj/item/grenade/smokebomb=1)
 
 /datum/outfit/loadout/sapper
 	name = "Sonspicio Munitor (Saboteur)"
 	gloves = 	/obj/item/clothing/gloves/f13/blacksmith
 	belt = 		/obj/item/storage/belt/utility/full/engi
-	l_hand =	/obj/item/gun/ballistic/rifle/mag/commando
+	l_hand =	/obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45/extended=1,
-		/obj/item/grenade/plastic=1)
+		/obj/item/ammo_box/magazine/d12g=2,
+		/obj/item/grenade/f13/incendinary=1)
 
 /*
 Auxilia
