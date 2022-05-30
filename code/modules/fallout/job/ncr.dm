@@ -190,7 +190,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT1
 	head 		= /obj/item/clothing/head/beret/ncr_lt
-	neck 		= /obj/item/storage/belt/holster/ncr_officer
+	neck 		= /obj/item/storage/belt/holster/commander10mm
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	ears 		= /obj/item/radio/headset/headset_ncr_com

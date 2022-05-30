@@ -167,7 +167,7 @@
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
-//N99  10mm								Keywords: 10mm, Semi-auto, 12/24 round magazine
+//N99  10mm - sprite by Pisshole		Keywords: 10mm, Semi-auto, 12/24 round magazine
 /obj/item/gun/ballistic/automatic/pistol/n99
 	name = "N99 pistol"
 	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol."
@@ -177,6 +177,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = TRUE
 	fire_delay = 2
+	extra_damage = 3
 	can_suppress = TRUE
 	can_automatic = FALSE
 	suppressor_state = "n99_suppressor"
@@ -190,10 +191,28 @@
 	icon_state = "executive"
 	can_suppress = TRUE
 	burst_size = 2
-	extra_damage = 2
+	extra_damage = 4
 	can_automatic = FALSE
 	extra_penetration = 0.2 //2x 35 damage, 10 AP- hits like a 2rd burst 5.56, but more accurate
 	semi_auto = FALSE
+
+//Gobi Campaign N99 - by Pisshole		Keywords: UNIQUE, Leadership, 10mm, Semi-auto, 12/24 round magazine
+obj/item/gun/ballistic/automatic/pistol/n99/gobin99
+	name = "Gobi Campaign Scout Sidearm"
+	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol. It's stripped a bit, with lighter parts in place of the standard issue, custom-modified internal specifications, and a worn-out desert camo finish. It seems to have been intended for use in the Gobi Desert - though whether it ever got there is up to your imagination. It even seems to have a side scope-mount, though you question its usefulness."
+	icon_state = "gobin99"
+	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
+	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_attachments = FALSE
+	fire_delay = 1
+	extra_damage = 5
+	can_suppress = FALSE
+	can_automatic = FALSE
+	can_scope = TRUE
+	unique_reskin = list("Gobi" = "gobin99",
+						"Standardized N99" = "n99"
+						)
 
 //Desert Eagle							Keywords: .44 Magnum, Semi-auto, Long barrel, 8 round magazine.
 /obj/item/gun/ballistic/automatic/pistol/deagle

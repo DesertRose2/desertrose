@@ -620,7 +620,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//NCR Ranger service rifle rangemaster	Keywords: 5.56, Semi-Automatic, No Autosear (!) (classic Fallout 1/2 service rifle, by Pisshole)
+//NCR-R Rangemaster - by Pisshole	Keywords: 5.56, Semi-Automatic, No Autosear (!) (classic Fallout 1/2 service rifle, by Pisshole)
 /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
 	name = "Ranger's Hunting Rifle"
 	desc = "A true icon of California exploration, Colt Rangemaster rifles saw their post-war renaissance in the early days before and during the rise of the Republic. Falling out of use during the height of the Brotherhood War, some still cling whiteknuckle to these classic re-jiggered hunting rifles. This one's seen some battles and seems to be configured more classically rather than having many of the more common post-war upgrades."
@@ -723,7 +723,7 @@
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
 
-//Colt Rangemaster		Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
+//Colt Rangemaster - sprite by Pisshole	Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "colt rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
