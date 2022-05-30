@@ -214,11 +214,11 @@
 
 /obj/effect/mob_spawn/human/corpse/enclave/scientist
 	name = "enclave scientist"
-	uniform = /obj/item/clothing/under/syndicate/combat
-	suit = /obj/item/clothing/suit/radiation
+	uniform = /obj/item/clothing/under/f13/enclave_officer/enclave_under
+	suit = /obj/item/clothing/suit/envirosuit
 	shoes = /obj/item/clothing/shoes/f13/military
 	gloves = /obj/item/clothing/gloves/f13/military
-	head = /obj/item/clothing/head/radiation
+	head = /obj/item/clothing/head/envirosuit
 
 /obj/effect/mob_spawn/human/corpse/enclave/armored
 	name = "enclave armored infantry"
