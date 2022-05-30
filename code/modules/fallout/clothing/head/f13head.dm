@@ -1024,3 +1024,18 @@
 	flash_protect = 1
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
+
+/obj/item/clothing/head/envirosuit
+	name = "envirosuit hood"
+	icon_state = "envirosuit"
+	item_state = "envirosuit"
+	desc = "(II) A hood with radiation protective properties. It looks advanced."
+	clothing_flags = THICKMATERIAL
+	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	armor = list("tier" = 2,"energy" = 0, "bomb" = 0, "bio" = 60, "rad" = 100, "fire" = 30, "acid" = 30)
+	strip_delay = 60
+	equip_delay_other = 60
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = NONE
+	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	mutantrace_variation = STYLE_MUZZLE

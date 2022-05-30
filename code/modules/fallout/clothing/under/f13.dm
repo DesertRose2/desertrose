@@ -564,9 +564,14 @@
 	name = "enclave officer uniform"
 	desc = "A standard Enclave officer uniform.<br>The outer layer is made of a sturdy material designed to withstand the harsh conditions of the wasteland."
 	icon_state = "enclave_o"
-	item_state = "bl_suit"
-	item_color = "enclave_o"
+	item_state = "enclave_o"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+
+/obj/item/clothing/under/f13/enclave_officer/enclave_under
+	name = "enclave undershirt uniform"
+	desc = "The standard Enclave uniform stripped down."
+	icon_state = "uniformenclaveopen"
+	item_state = "uniformenclaveopen"
 
 /obj/item/clothing/under/f13/navy
 	name = "navy jumpsuit"
@@ -1330,4 +1335,3 @@
 	alt_covers_chest = TRUE
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
-	

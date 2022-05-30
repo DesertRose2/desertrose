@@ -197,7 +197,7 @@
 	semi_auto = FALSE
 
 //Gobi Campaign N99 - by Pisshole		Keywords: UNIQUE, Leadership, 10mm, Semi-auto, 12/24 round magazine
-obj/item/gun/ballistic/automatic/pistol/n99/gobin99
+/obj/item/gun/ballistic/automatic/pistol/n99/gobin99
 	name = "Gobi Campaign Scout Sidearm"
 	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol. It's stripped a bit, with lighter parts in place of the standard issue, custom-modified internal specifications, and a worn-out desert camo finish. It seems to have been intended for use in the Gobi Desert - though whether it ever got there is up to your imagination. It even seems to have a side scope-mount, though you question its usefulness."
 	icon_state = "gobin99"
