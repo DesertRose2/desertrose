@@ -11,7 +11,7 @@
 	icon_dead = null
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	speak = list("Better this than the Mojave, I guess...", "Screw California!", "Well, it was this or be a Legion slampig...", "MARCHIN', SINGIN', HAVIN' A BALL, HEARD THAT KIMBALL'S DICK WAS SMALL! Oo-rah! ...do we say oo-rah?", "I wouldn't have deserted if Tandi was still around...", "Nowhere to go... not east... nor west...")
+	speak = list("Better this than the Mojave, I guess...", "Screw California!", "Well, it was this or be a Legion slampig...", "MARCHIN', SINGIN', HAVIN' A BALL, HEARD THAT KIMBALL'S DICK WAS SMALL!", "I'm an old-timer. I wouldn't have deserted if Tandi was still around...", "Nowhere to go... not east... nor west...", "It ain't me...")
 	speak_chance = 4
 	turns_per_move = 5
 	response_help_simple = "pokes"
@@ -83,7 +83,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/shotgun/trench)
 
 /mob/living/simple_animal/hostile/xray/marauder
-	name = "NCR Deserter Marauder"
+	name = "NCR Ranger Deserter"
 	desc = "A once proud member of the NCR turned thief. This one is clad in probably stolen valor."
 	icon_state = "marauder_pistol"
 	icon_living = "marauder_pistol"
@@ -98,12 +98,12 @@
 	stat_attack = UNCONSCIOUS
 
 /obj/effect/mob_spawn/human/corpse/xray_marauder
-	id_job = "NCR Deserter Marauder"
+	id_job = "NCR Ranger Deserter"
 	outfit = /datum/outfit/xraycompanymarauder
 
 /datum/outfit/xraycompanymarauder
-	name = "NCR Deserter Marauder"
-	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/marine
+	name = "NCR Ranger Deserter"
+	head = /obj/item/clothing/head/helmet/f13/rangerimitation
 	uniform = /obj/item/clothing/under/f13/dbdu
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/marine
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -126,8 +126,8 @@
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
 
 /mob/living/simple_animal/hostile/xray/marauder/sniper/laser
-	icon_state = "marauder_sniper"
-	icon_living = "marauder_sniper"
+	icon_state = "marauder_laser"
+	icon_living = "marauder_laser"
 	projectiletype = /obj/item/projectile/beam/laser/wattz2k
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder, /obj/item/gun/energy/laser/wattz2k)
 	projectilesound = 'sound/weapons/laser.ogg'

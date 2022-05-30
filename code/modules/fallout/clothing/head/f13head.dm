@@ -113,6 +113,16 @@
 	dynamic_fhair_suffix = ""
 	flash_protect = 1
 
+/obj/item/clothing/head/helmet/f13/rangerimitation
+	name = "faux riot helmet"
+	icon_state = "ranger_broken"
+	desc = "(I) On close inspection, it's apparent that it's only some rough imitation of the iconic ranger's mask. What's with it? It looks almost completely useless..."
+	armor = list("tier" = 1, "energy" = 5, "bomb" = 39, "bio" = 2, "rad" = 20, "fire" = 30, "acid" = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	flash_protect = 1
+
 /obj/item/clothing/head/helmet/f13/rangerbroken/fox
 	name = "broken reclaimed ranger-hunter helmet"
 	desc = "(VII) A riot helmet once cared and loved by it's owner, now an old combat relic. A large entry and exit hole is on the top of the helmet, 'DE OPPRESSO LIBER' is also stenciled on the top of the helmet, along with what seems to be faded whiskers painted on the front."

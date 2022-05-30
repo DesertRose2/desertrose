@@ -125,7 +125,7 @@
 
 /mob/living/simple_animal/hostile/enclave
 	name = "enclave specialist"
-	desc = "A Enclave soldier with combat armor and a G-11 rifle."
+	desc = "An Enclave officer of some description wielding a rifle. Watch out, they're using ballistics!"
 	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "enclave_specialist"
 	icon_living = "enclave_specialist"
@@ -163,7 +163,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("For the Enclave!", "Stars and Stripes!", "Liberty or death!")
-	speak_emote = list("pulls out a weapon", "shouts")
+	speak_emote = list("says", "lectures", "talks down")
 	speak_chance = 0
 
 // Enclave Scientist
@@ -188,7 +188,7 @@
 // Enclave Armored Infantry
 /mob/living/simple_animal/hostile/enclave/armoredinfantry
 	name = "enclave armored infantry"
-	desc = "A Enclave Soldier wearing Advanced Power Armor and a plasmacaster. Play time's over, mutie."
+	desc = "An Enclave Soldier wearing Advanced Power Armor and a plasma caster. Play time's over, mutie."
 	icon_state = "enclave_armored"
 	icon_living = "enclave_armored"
 	icon_dead = "enclave_soldier"
@@ -216,12 +216,14 @@
 
 /obj/effect/mob_spawn/human/corpse/enclave/specialist
 	name = "enclave specialist"
-	uniform = /obj/item/clothing/under/syndicate/combat
-	head = /obj/item/clothing/head/helmet/f13/combat/enclave
+	uniform = /obj/item/clothing/under/f13/enclave_officer
+	head = /obj/item/clothing/head/soft/f13/enclave
 
 /obj/effect/mob_spawn/human/corpse/enclave/armored
 	name = "enclave armored infantry"
 	uniform = /obj/item/clothing/under/syndicate/combat
+	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/mk2
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
 
 
 /////////////////////
