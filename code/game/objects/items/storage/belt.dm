@@ -830,6 +830,11 @@
 	new /obj/item/ammo_box/a556/stripper(src)
 	new /obj/item/ammo_box/a556/stripper(src)
 
+/obj/item/storage/belt/holster/commander10mm/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/pistol/n99/gobin99(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+
 /obj/item/storage/belt/holster/hip
 	name = "hip holster"
 	desc = "A low hanging holster to carry a handgun and ammo."

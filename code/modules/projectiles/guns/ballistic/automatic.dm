@@ -191,7 +191,7 @@
 						"Rockwell 'Special'" = "rockwell"
 						)
 
-//PPSH-41			Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
+//PPSH-41														Keywords: 9mm, Automatic, 71 round mags. Special modifiers: -2 damage, extra spread and larger burst size.
 /obj/item/gun/ballistic/automatic/smg/pps
 	name = "PPSH-41"
 	desc = "An extremely fast firing, inaccurate submachine gun from World War 2. Low muzzle velocity. Uses 9mm rounds."
@@ -233,7 +233,7 @@
 	update_icon()
 	return
 
-//Mini Uzi			Keywords: 9mm, Automatic, 32 round mags. Notes: Should be very fast firing; one of the fastest of SMGs.
+//Mini Uzi														Keywords: 9mm, Automatic, 32 round mags. Notes: Should be very fast firing; one of the fastest of SMGs.
 /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	name = "Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
@@ -277,7 +277,7 @@
 	update_icon()
 	return
 
-//MP-5			Keywords: 9mm, Automatic, 32 round mags. Note: Basically a superior version of the Mini-Uzi; bulkier but more accurate.
+//MP-5															Keywords: 9mm, Automatic, 32 round mags. Note: Basically a superior version of the Mini-Uzi; bulkier but more accurate.
 /obj/item/gun/ballistic/automatic/smg/mp5
 	name = "MP-5 SD"
 	desc = "An integrally suppressed sub machine chambered in 9mm. A classic."
@@ -295,7 +295,7 @@
 	can_suppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
 
-//10mm SMG				Keywords: 10mm, Automatic, 12/24 round mags. Notes: Should be faster-firing than the Grease due to smaller rounds and complex design.
+//10mm SMG														Keywords: 10mm, Automatic, 12/24 round mags. Notes: Should be faster-firing than the Grease due to smaller rounds and complex design.
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
 	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
@@ -340,7 +340,7 @@
 	update_icon()
 	return
 
-//P90					Keywords: 10mm, Automatic, ??? round snowflake mags. Notes: Snowflake gun top-loader, fast fire rate but likely inaccurate. Better 10mm SMG.
+//P90															Keywords: 10mm, Automatic, ??? round snowflake mags. Notes: Snowflake gun top-loader, fast fire rate but likely inaccurate. Better 10mm SMG.
 /obj/item/gun/ballistic/automatic/smg/p90
 	name = "FN P90c"
 	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
@@ -379,7 +379,7 @@
 	update_icon()
 	return
 
-//Greasegun				Keywords: .45 APC, Automatic, 30 round mags. Notes: Should be slow-firing due to simple design and the punch it packs.
+//Greasegun														Keywords: .45 APC, Automatic, 30 round mags. Notes: Should be slow-firing due to simple design and the punch it packs.
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "M3A1 grease gun"
 	desc = "An inexpensive submachine gun chambered in .45 ACP. Slow fire rate allows the operator to conserve ammunition in controllable bursts."
@@ -423,7 +423,7 @@
 	update_icon()
 	return
 
-//Tompson SMG			Keywords: .45 APC, Automatic, ??? round drum-mags. Notes: Big fuckin' capacity n' big fuckin' round. Likely high spread and heavy weapon class.
+//Thompson SMG													Keywords: .45 APC, Automatic, ??? round drum-mags. Notes: Big fuckin' capacity n' big fuckin' round. Likely high spread and heavy weapon class.
 /obj/item/gun/ballistic/automatic/smg/tommygun
 	name = "Thompson SMG"
 	desc = "Known colloquially as the 'Chicago Typewriter' the Thompson sub-machine gun is a relatively ancient yet famous weapon of the past. It's amazing it survived the war in such a good condition!"
@@ -471,7 +471,7 @@
 //For now these are all M1 Carbine varients. While the Marksman Carbine is called a Carbine it's basically a rifle due to the round type, damage it does and the gun its based off of.
 
 
-//M1 Carbine			Keywords: 10mm, Semi-auto, 12/24 rounds, 'Long barrel'. Notes: Can be made semi-auto. I guess it's realistic in a way due to prototype M1 Carbine models irl.
+//M1 Carbine													Keywords: 10mm, Semi-auto, 12/24 rounds, 'Long barrel'. Notes: Can be made semi-auto. I guess it's realistic in a way due to prototype M1 Carbine models irl.
 /obj/item/gun/ballistic/automatic/m1carbine
 	name = "M1 carbine"
 	desc = "The M1 Carbine is a renowned carbine that has been in service since WW2. Recently retired, these guns were transferred to National Guard Armouries and rechambered to 10mm."
@@ -505,7 +505,7 @@
 						"M1A1 - Para" = "m1a1carbine"
 						)
 
-//M1/NCR Carbine			Keywords: NCR, 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', No Autosear (!)
+//M1/NCR Carbine												Keywords: NCR, 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', No Autosear (!)
 /obj/item/gun/ballistic/automatic/m1carbine/ncr
 	name = "M1/N carbine"
 	desc = "The M1 Carbine is a renowned carbine that's been in service since WW2. This varient seems to sport a few modernizations alongside an NCR design in brahmin leather on its stock."
@@ -514,7 +514,7 @@
 	untinkerable = TRUE
 	extra_damage = 6
 
-//Compact M1A1 Carbine		Keywords: 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', Folding stock / Compact.
+//Compact M1A1 Carbine											Keywords: 10mm, Semi-Auto, 12/24 rounds, 'Long Barrel', Folding stock / Compact.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
 	name = "M1A1 carbine"
 	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."
@@ -551,7 +551,7 @@
 //SEMI-AUTO RIFLES//
 ////////////////////
 
-//Service Rifle 		Keywords: 5.56, Semi-Automatic, 20 (10-50) round mags, No Autosear (!)
+//Service Rifle 												Keywords: 5.56, Semi-Automatic, 20 (10-50) round mags, No Autosear (!)
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
@@ -579,7 +579,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//Combat Rifle		Keywords: .45 Caliber Rifle, No Autosear (!)
+//Combat Rifle													Keywords: .45 Caliber Rifle, No Autosear (!)
 /obj/item/gun/ballistic/automatic/combat
 	name = "Combat Rifle"
 	desc = "A .45 semi-automatic combat rifle, produced pre-war for National Guard forces."
@@ -604,7 +604,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//Scout Carbine		Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
+//Scout Carbine													Keywords: NCR, 5.56, Semi-Autoamtic, 20 (10-50) round mags, No Autosear, Scoped.
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
@@ -620,7 +620,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 16
 
-//NCR Ranger service rifle rangemaster	Keywords: 5.56, Semi-Automatic, No Autosear (!) (classic Fallout 1/2 service rifle, by Pisshole)
+//NCR-R Rangemaster - by Pisshole								Keywords: 5.56, Semi-Automatic, No Autosear (!) (classic Fallout 1/2 service rifle, by Pisshole)
 /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
 	name = "Ranger's Hunting Rifle"
 	desc = "A true icon of California exploration, Colt Rangemaster rifles saw their post-war renaissance in the early days before and during the rise of the Republic. Falling out of use during the height of the Brotherhood War, some still cling whiteknuckle to these classic re-jiggered hunting rifles. This one's seen some battles and seems to be configured more classically rather than having many of the more common post-war upgrades."
@@ -646,7 +646,7 @@
 						"5.56 Hunting Rifle" = "rangemaster"
 						)
 
-//'Maxson' Carbine				Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
+//'Maxson' Carbine												Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
@@ -663,7 +663,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 18
 
-//'Maxson' Scout Carbine		Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR.
+//'Maxson' Scout Carbine										Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR.
 /obj/item/gun/ballistic/automatic/service/maxson/caseless
 	name = "'Maxson' scout carbine"
 	desc = "A 4.73 semi-automatic service rifle manufactured post-war by the Senora Brotherhood chapter. This once fine AR-platform gun has been mangled into a strange firearm made for stealth due to its caseless ammunition and odd choice in round."
@@ -678,7 +678,7 @@
 	zoom_out_amt = 13
 	extra_damage = 2
 
-//'Maxson' Assault Carbine		Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
+//'Maxson' Assault Carbine										Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
 /obj/item/gun/ballistic/automatic/service/maxson/c5mm
 	name = "'Maxson' assault carbine"
 	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
@@ -693,7 +693,7 @@
 	can_attachments = FALSE
 
 
-//Marksman Carbine		Keywords: 5.56,Semi-Autoamtic, 20 (10-50) round mags, Scoped.
+//Marksman Carbine												Keywords: 5.56,Semi-Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
 	desc = "A marksman carbine built off the AR platform chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This particular model is a civilian version and is semi-auto only."
@@ -723,7 +723,7 @@
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
 
-//Colt Rangemaster		Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
+//Colt Rangemaster - sprite by Pisshole							Keywords: 7.62mm, Semi-Auto, 10/20 round mags, No Autosear
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "colt rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
@@ -757,7 +757,7 @@
 						"7.62 Modified" = "rangemasterclassic"
 						)
 
-//M1 Garand			Keywords: .308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear
+//M1 Garand														Keywords: .308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear
 /obj/item/gun/ballistic/automatic/m1garand
 	name = "battle rifle"
 	desc = "The WWII American Classic, the M1 Garand. Still has that satisfiying ping. Don't stick your thumb in it.."
@@ -792,7 +792,7 @@
 	if(.)
 		return
 
-//Old Glory					Keywords: UNIQUE, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: A lot of extra damage.
+//Old Glory														Keywords: UNIQUE, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: A lot of extra damage.
 /obj/item/gun/ballistic/automatic/m1garand/oldglory
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
@@ -800,7 +800,7 @@
 	untinkerable = TRUE
 	extra_damage = 10
 
-//Pawolskis Retribution		Keywords: UNIQUE, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Some exta damage.
+//Pawolskis Retribution											Keywords: UNIQUE, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Some exta damage.
 /obj/item/gun/ballistic/automatic/m1garand/ncr
 	name = "Pawolski's Retribution"
 	desc = "'I am your rifle, you are on guard duty.'"
@@ -808,7 +808,7 @@
 	untinkerable = TRUE
 	extra_damage = 5
 
-//Republics Pride			Keywords: UNIQUE, NCR, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Normal extra damage.
+//Republics Pride												Keywords: UNIQUE, NCR, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: Normal extra damage.
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Proudly issued to Scout Captains and packs a mean punch. Chambered in 7.62x51."
@@ -822,7 +822,7 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 
-//Republics Demise			Keywords: UNIQUE, Legion, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: A lot of extra damage.
+//Republics Demise												Keywords: UNIQUE, Legion, 308/7.62mm, Semi-Auto, 8 round internal mag, No Autosear. Note: A lot of extra damage.
 /obj/item/gun/ballistic/automatic/m1garand/republicsdemise
 	name = "Republic's Demise"
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. This one seems to be looted from a dead NCR Lieutenant and the flag replaced with a bull. Chambered in 7.62x51."
@@ -836,7 +836,7 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 
-//DKS 501 sniper rifle		Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed.
+//DKS 501 sniper rifle											Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed.
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
@@ -860,7 +860,7 @@
 //ASSAULT RIFLES//
 //////////////////
 
-//R91 Assault Rifle		Keywords: 5.56, Automatic, 20 (10-50) round mags.
+//R91 Assault Rifle												Keywords: 5.56, Automatic, 20 (10-50) round mags.
 /obj/item/gun/ballistic/automatic/assault_rifle
 	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
@@ -885,7 +885,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
-//R91 "Infiltrator"		Keywords: UNIQUE, 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
+//R91 "Infiltrator"												Keywords: UNIQUE, 5.56, Autoamtic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
 	name = "Infiltrator"
 	desc = "An incredibly rare and customized R91 assault rifle, with an integrated suppressor, cut down stock and polymer furniture. Built for the perfect assassination machine!"
@@ -915,7 +915,7 @@
 						"Wirestock" = "infiltrator"
 						)
 
-//NCR Assault Rifle			Keywords: NCR, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, No bayonet.
+//NCR Assault Rifle												Keywords: NCR, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, No bayonet.
 /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	name = "NCR assault carbine"
 	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
@@ -933,7 +933,7 @@
 						"NCR Homemade Special" = "R82_ncr"
 						)
 
-//"Pilum" Assault Rifle		Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+//"Pilum" Assault Rifle											Keywords: Legion, 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
 /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	name = "'Pilum' assault rifle"
 	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
@@ -952,7 +952,7 @@
 						"Makeshift Pilum" = "pilum"
 						)
 
-//VTCC Supression Rifle		Keywords: VTCC 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
+//VTCC Supression Rifle											Keywords: VTCC 5.56, Automatic, 20 (10-50) round mags, No attachments, No scope, Can bayonet.
 /obj/item/gun/ballistic/automatic/assault_rifle/vtcc
 	name = "supression rifle"
 	desc = "A humble assault rifle, based off the out-dated R91 assault rifle. Primarily seen in use by the armed forces of the VTCC."
@@ -970,7 +970,7 @@
 	spread = 5
 	can_suppress = TRUE
 
-//Type 93			Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
+//Type 93														Keywords: 5.56, Automatic, 20 (10-50) round mags. Notes: Some extra damage. Note: This gun has it's own unique DMI to show benifit of having seperate gun DMIs.
 /obj/item/gun/ballistic/automatic/type93
 	name = "Type 93 assault rifle"
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
@@ -998,7 +998,7 @@
 						"Homemade Rifle" = "homemade"
 						)
 
-//Bozar				Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
+//Bozar															Keywords: 5.56, Automatic, 20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/bozar
 	name = "Bozar"
 	desc = "The ultimate refinement of the sniper's art, the Bozar is a scoped, accurate, light machine gun that will make nice big holes in your enemy. Uses 5.56."
@@ -1021,7 +1021,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
-//H&K G11			Keywords: 4.73mm, Automatic, 50 round mags.
+//H&K G11														Keywords: 4.73mm, Automatic, 50 round mags.
 /obj/item/gun/ballistic/automatic/g11
 	name = "G11"
 	desc = "This gun revolutionized assault weapon design. The weapon fires a caseless cartridge consisting of a block of propellant with a bullet buried inside. The resultant weight and space savings allow this weapon to have a very high magazine capacity. Chambered in 4.73mm."
@@ -1042,7 +1042,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
-//Assault Carbine			Keywords: 5mm, Automatic, 20 (10-50) round mags, No bayonet.
+//Assault Carbine												Keywords: 5mm, Automatic, 20 (10-50) round mags, No bayonet.
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
@@ -1074,7 +1074,7 @@
 						"Classic" = "assault_carbine_old"
 						)
 
-//AK-112					Keywords: 5mm, Automatic, 24/48 mags
+//AK-112														Keywords: 5mm, Automatic, 24/48 mags
 /obj/item/gun/ballistic/automatic/ak112
 	name = "AK-112"
 	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
@@ -1097,7 +1097,7 @@
 	can_bayonet = FALSE
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
-//M-14						Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
+//M-14															Keywords: .308, Automatic, 10/20 round mags. Note: The reason this gun is automatic is due to its small burst in Fallout: Tactics. Basically the only 7.62 automatic rifle in this codebase besides the M1919.
 /obj/item/gun/ballistic/automatic/m14
 	name = "M14 battle rifle"
 	desc = "A prestine M-14 battle rifle, likely from a National Guard reserve armory. This rifle struggled to find its niche, outshadowed by more reliable rifles in 5.56 and a high recoil for a 7.62. Its saving grace is its burst fire capability."
@@ -1153,7 +1153,7 @@
 //MACHINE-GUNS//
 ////////////////
 
-//R84			Keywords: NCR, 5.56, 60 round mags.
+//R84															Keywords: NCR, 5.56, 60 round mags.
 /obj/item/gun/ballistic/automatic/r84
 	name = "R84 LMG"
 	desc = "A post war lmg, traditionally manufactured by NCR forces. It is designed as a suppressive support weapon, generally granted to Heavy Troopers to compliment their stripped power armor."
@@ -1190,7 +1190,7 @@
 	update_icon()
 	return
 
-//LSW Squad Support Weapon		Keywords: 5.56,20 (10-50) round mags, Scoped.
+//LSW Squad Support Weapon										Keywords: 5.56,20 (10-50) round mags, Scoped.
 /obj/item/gun/ballistic/automatic/lsw
 	name = "light support weapon"
 	desc = "This squad-level support weapon has a bullpup design. The bullpup design makes it difficult to use while lying down. Because of this it was remanded to National Guard units. It, however, earned a reputation as a reliable weapon that packs a lot of punch for its size."
@@ -1236,7 +1236,7 @@
 	update_icon()
 	return
 
-//BAR 1918			Keywords: 7.62, Automatic, 10-20 round mags, High damage - yet low fire rate and capacity. Larger burst is more spread.
+//BAR 1918														Keywords: 7.62, Automatic, 10-20 round mags, High damage - yet low fire rate and capacity. Larger burst is more spread.
 /obj/item/gun/ballistic/automatic/bar
 	name = "BAR 1918"
 	desc = "Old but still reliable machine gun chambered in 7.62; a rare find! These can be found in museums and national guard stockpiles as an old squad support training weapon."
@@ -1278,7 +1278,7 @@
 	return
 
 
-//M2A1 HMG			Keywords: .50 Cal, Automatic, ??? .50 belts. Notes: Holy shit a .50 machine gun. Don't use this often; admin spawn only for the love of god.
+//M2A1 HMG														Keywords: .50 Cal, Automatic, ??? .50 belts. Notes: Holy shit a .50 machine gun. Don't use this often; admin spawn only for the love of god.
 /obj/item/gun/ballistic/automatic/m2a1
 	name = "'Moses' Browning M2A1"
 	desc = "An old pre-war heavy machine gun used in service by the US Military around the time of the war."
@@ -1372,7 +1372,7 @@
 //MISC//
 ////////
 
-//M72 Gauss Rifle		Keywords: 2mm cartriage, 8 round capacity, scoped, ballistic-'energy' sniper.
+//M72 Gauss Rifle												Keywords: 2mm cartriage, 8 round capacity, scoped, ballistic-'energy' sniper.
 /obj/item/gun/ballistic/automatic/m72
 	name = "M72 gauss rifle"
 	desc = "The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed... and pierce almost any obstacle. Its range, accuracy and stopping power is almost unparalleled."
@@ -1391,7 +1391,7 @@
 	recoil = 2
 	semi_auto = TRUE
 
-//Auto-pipe rifle		Keywords: .357, 30 round belts, improvised.
+//Auto-pipe rifle												Keywords: .357, 30 round belts, improvised.
 //Select fire removed, too fancy. Belt fed and can tape bayonets to it now. Can't figure out how to make it change icons as the belt is depleted, like the L6 and C20r, sprites there, just dont know the code.
 /obj/item/gun/ballistic/automatic/autopipe
 	name = "Auto pipe rifle (.357)"
