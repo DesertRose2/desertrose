@@ -79,7 +79,7 @@
 //LIGHT PISTOLS//
 /////////////////
 
-//.22 Sport							Keywords: .22, Semi-auto, 16 round mags, Suppressed.
+//.22 Sport								Keywords: .22, Semi-auto, 16 round mags, Suppressed.
 /obj/item/gun/ballistic/automatic/pistol/pistol22
 	name = ".22 pistol"
 	desc = "The silenced .22 pistol is a .22LR round handgun with an integrated silencer."
@@ -252,7 +252,7 @@ obj/item/gun/ballistic/automatic/pistol/n99/gobin99
 /obj/item/gun/ballistic/automatic/pistol/m1911/no_mag
 	spawnwithmagazine = FALSE
 
-//.45 Autoloader						Keywords: 45 ACP, Semi-Auto, 12 round magazine
+//.45 Autoloader					Keywords: 45 ACP, Semi-Auto, 12 round magazine
 /obj/item/gun/ballistic/automatic/pistol/autoloader
 	name = ".45 Autoloader"
 	desc = "A sleek looking handgun chambered in .45 ACP for all your operating needs. Don't let the slide catch your finger though."
@@ -268,7 +268,7 @@ obj/item/gun/ballistic/automatic/pistol/n99/gobin99
 	suppressor_x_offset = 28
 	suppressor_y_offset = 20
 
-//12.7mm Pistol					Keywords: 12.7mm, Semi-Auto, 7 round mags
+//12.7mm Pistol						Keywords: 12.7mm, Semi-Auto, 7 round mags
 /obj/item/gun/ballistic/automatic/pistol/pistol127
 	name = "12.7mm pistol"
 	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting."
@@ -284,7 +284,7 @@ obj/item/gun/ballistic/automatic/pistol/n99/gobin99
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY
 
-//'Lil' Devil' 12.7mm Pistol 	Keywords: UNIQUE, 12.7mm, Semi-Auto, 7 round mags
+//'Lil' Devil' 12.7mm Pistol 		Keywords: UNIQUE, 12.7mm, Semi-Auto, 7 round mags
 /obj/item/gun/ballistic/automatic/pistol/pistol127/lildevil
 	name = "Lil' Devil 12.7mm pistol"
 	desc = "A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting. A finely tuned firearm from the Gunrunners."
