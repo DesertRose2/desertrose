@@ -137,10 +137,10 @@
 	minimum_distance = 6
 	extra_projectiles = 2
 	ranged_cooldown_time = 22
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/specialist)
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclave)
 	healable = 1
 	ranged = 1
-	attack_verb_simple = "pistol-whips"
+	attack_verb_simple = "gun-butts"
 	projectiletype = /obj/item/projectile/bullet/c46x30mm
 	projectilesound = 'sound/weapons/gunshot_smg.ogg'
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
@@ -163,7 +163,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("For the Enclave!", "Stars and Stripes!", "Liberty or death!")
-	speak_emote = list("says", "lectures", "talks down")
+	speak_emote = list("says", "lectures", "rants", "talks down", "goes on")
 	speak_chance = 0
 
 // Enclave Scientist
@@ -180,7 +180,7 @@
 	retreat_distance = 10
 	obj_damage = 0
 	environment_smash = 0
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclave)
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/scientist)
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/energy/declone
 	projectilesound = 'sound/weapons/wave.ogg'
@@ -207,6 +207,12 @@
 
 // Enclave corpses
 /obj/effect/mob_spawn/human/corpse/enclave
+	name = "enclave specialist"
+	uniform = /obj/item/clothing/under/f13/enclave_officer
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	head = /obj/item/clothing/head/soft/f13/enclave
+
+/obj/effect/mob_spawn/human/corpse/enclave/scientist
 	name = "enclave scientist"
 	uniform = /obj/item/clothing/under/syndicate/combat
 	suit = /obj/item/clothing/suit/radiation
@@ -214,16 +220,11 @@
 	gloves = /obj/item/clothing/gloves/f13/military
 	head = /obj/item/clothing/head/radiation
 
-/obj/effect/mob_spawn/human/corpse/enclave/specialist
-	name = "enclave specialist"
-	uniform = /obj/item/clothing/under/f13/enclave_officer
-	head = /obj/item/clothing/head/soft/f13/enclave
-
 /obj/effect/mob_spawn/human/corpse/enclave/armored
 	name = "enclave armored infantry"
 	uniform = /obj/item/clothing/under/syndicate/combat
-	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/mk2
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
+	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/mk2
 
 
 /////////////////////
