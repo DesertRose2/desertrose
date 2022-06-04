@@ -333,6 +333,12 @@
 /obj/effect/landmark/start/f13/researcher
 	name = "Researcher"
 
+/obj/effect/landmark/start/f13/townsec
+	name = "City Security Officer"
+
+/obj/effect/landmark/start/f13/provostsgt
+	name = "Provost Sergeant"
+
 /obj/effect/landmark/start/f13/provost
 	name = "Provost"
 
