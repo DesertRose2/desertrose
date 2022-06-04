@@ -499,7 +499,7 @@
 	color = "#100800" // rgb: 16, 8, 0
 	quality = DRINK_VERYGOOD
 	taste_description = "the future"
-	glass_icon_state = "nuka_colaglass"
+	glass_icon_state = "nukacola"
 	glass_name = "glass of Nuka Cola"
 	glass_desc = "Don't cry, Don't raise your eye, It's only nuclear wasteland."
 	value = REAGENT_VALUE_COMMON
