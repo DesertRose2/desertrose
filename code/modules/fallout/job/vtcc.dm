@@ -726,64 +726,6 @@
 		/obj/item/pda/medical=1,
 		/obj/item/healthanalyzer=1)
 
-/* Hoistway Preacher */
-
-/datum/job/vtcc/f13hoistway
-	title = "Hoistway Preacher"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Alderman and the Deus Ex Machina."
-	description = "You hear It's myriad demands and must work to fulfil them, by any means necessary. The more you convert to join the Hoistway, the more who serve Its divine will, the easier these tasks will be. The spiritual health of man, mutant and machine is your priority, for those healthy in mind are those who can greatly serve their betters. And the only one better is It."
-
-	outfit = /datum/outfit/job/vtcc/f13hoistway
-	exp_requirements = 900
-	exp_type = EXP_TYPE_VTCC
-
-	loadout_options = list(
-		/datum/outfit/loadout/techwhisperer,
-		/datum/outfit/loadout/engineer
-		)
-
-	access = list(ACCESS_VTCC)
-	minimal_access = list(ACCESS_VTCC)
-
-/datum/outfit/job/vtcc/f13hoistway/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-
-/datum/outfit/job/vtcc/f13hoistway
-	name = "Hoistway Preacher"
-	jobtype = /datum/job/vtcc/f13hoistway
-
-	ears = /obj/item/radio/headset/headset_vault/cogcity/priest
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	r_pocket = /obj/item/lighter/fusion
-	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
-	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
-	backpack_contents = list(
-		/obj/item/book/manual/ripley_build_and_repair=1,
-		/obj/item/bodypart/l_arm/robot=1,
-		/obj/item/bodypart/r_arm/robot=1,
-		/obj/item/bodypart/l_leg/robot=1,
-		/obj/item/bodypart/r_leg/robot=1
-		)
-
-/datum/outfit/loadout/engineer
-	name = "Engineer"
-	backpack_contents = list(
-	/obj/item/autosurgeon/toolset=1
-	)
-
-/datum/outfit/loadout/techwhisperer
-	name = "Tech Whisperer"
-	backpack_contents = list(
-	/obj/item/storage/fancy/candle_box=1
-	)
-
 /* Innkeeper */
 
 /datum/job/vtcc/f13innkeeper

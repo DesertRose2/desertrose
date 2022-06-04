@@ -2103,7 +2103,6 @@
 #include "code\modules\fallout\global_vars\mapping_lists.dm"
 #include "code\modules\fallout\global_vars\object_tracking_lists.dm"
 #include "code\modules\fallout\job\bos.dm"
-#include "code\modules\fallout\job\followers.dm"
 #include "code\modules\fallout\job\legion.dm"
 #include "code\modules\fallout\job\ncr.dm"
 #include "code\modules\fallout\job\silicon.dm"

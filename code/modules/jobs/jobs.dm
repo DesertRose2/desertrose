@@ -303,6 +303,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Outlaw",
 	"Faithful",
 	"Wastelander",
+	"Preacher",
 	"Tribal"
 ))
 GLOBAL_LIST_INIT(security_positions, list(
@@ -338,9 +339,9 @@ GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Chief of Development"
 ))
 
-/*GLOBAL_LIST_INIT(vtcc_provost_positions, list(
+GLOBAL_LIST_INIT(vtcc_provost_positions, list(
 	"Provost Sergeant"
-))*/
+))
 
 GLOBAL_LIST_INIT(vtcc_positions, list(
 	"Provost Sergeant",
