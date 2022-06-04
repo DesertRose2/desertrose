@@ -144,14 +144,14 @@
 	/obj/item/attachments/scope=2
 	)
 
-/* Chief Researcher */
+/* Chief of Development */
 
 /datum/job/vtcc/f13chresearcher
-	title = "Chief Researcher"
+	title = "Chief of Development"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Alderman and the Overseer"
-	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
+	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right. As the Chief of Development, the actions of the Followers are your responsibility."
 	req_admin_notify = 1
 
 	outfit = /datum/outfit/job/vtcc/f13chresearcher
@@ -175,7 +175,7 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
 /datum/outfit/job/vtcc/f13chresearcher
-	name = "Chief Researcher"
+	name = "Chief of Development"
 	jobtype = /datum/job/vtcc/f13chresearcher
 
 	ears = /obj/item/radio/headset/headset_vault/cogcity/sci_lead
@@ -587,7 +587,7 @@
 	title = "Researcher"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Alderman and the Overseer"
+	supervisors = "the Alderman, Chief of Development and the Overseer"
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
@@ -644,6 +644,87 @@
 	/obj/item/clothing/glasses/hud/diagnostic=1,
 	/obj/item/clothing/under/f13/roboticistalt=1
 	)
+
+/*Follower Doctor*/
+
+/datum/job/followers/f13practitioner
+	title = "Followers Doctor"
+	faction = "Followers"
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Chief of Development."
+	description ="You are a Followers Doctor. As a Followers Doctor it is your responsibility to maintain working order in the hospital and to manage its staff and to treat patients who come in regardless of whether or not they can afford care. Some Doctors are known for leaving the hospital to look for injured or those who need help who may not come to a health facility, however it is key that those who do travel around to give aid keep in touch with the rest of staff and if there are no other able physicans or chemist that they stay to offer the best aid possible."
+	forbids = "Causing harm to others except in times of self-defense."
+	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. Legion is our mistake and its our job to correct the mistake by speaking of the truth, but recognize that the best way to fight the legion is to teach them and sometimes that can mean helping them.Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
+	selection_color = "#FFDDFF"
+	exp_requirements = 3000
+	exp_type = EXP_TYPE_VTCC
+
+	outfit = /datum/outfit/job/followers/f13practitioner
+
+	loadout_options = list(
+	/datum/outfit/loadout/physician,
+	/datum/outfit/loadout/pharmacist,
+	/datum/outfit/loadout/paramedic
+	)
+
+	access = list(ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_FOLLOWER)
+
+/datum/outfit/job/followers/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_PRACTITIONER, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+
+/datum/outfit/job/followers/f13practitioner
+	name = "Followers Doctor"
+	jobtype = /datum/job/followers/f13practitioner
+	uniform = 	/obj/item/clothing/under/f13/followers
+	id = 		/obj/item/card/id/silver
+	chemwhiz = TRUE
+	backpack = 	/obj/item/storage/backpack/medic
+	satchel = 	/obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2,
+		/obj/item/reagent_containers/medspray/synthflesh=1,
+		/obj/item/storage/firstaid/ancient=1)
+
+/datum/outfit/loadout/physician
+	name = "Emergency Physician"
+	suit = 		/obj/item/clothing/suit/toggle/labcoat/f13/followers
+	mask = 		/obj/item/clothing/mask/surgical
+	gloves = 	/obj/item/clothing/gloves/color/latex/nitrile
+	glasses = 	/obj/item/clothing/glasses/hud/health
+	backpack_contents = list(
+		/obj/item/clothing/suit/hooded/surgical=1,
+		/obj/item/reagent_containers/medspray/synthflesh=1,
+		/obj/item/healthanalyzer/advanced=1,)
+
+/datum/outfit/loadout/pharmacist
+	name = "Pharmacist"
+	suit = 		/obj/item/clothing/suit/toggle/labcoat/chemist
+	head = 		/obj/item/clothing/head/soft/mime
+	gloves = 	/obj/item/clothing/gloves/color/latex
+	glasses = 	/obj/item/clothing/glasses/science
+	backpack_contents = list(
+		/obj/item/flashlight/pen=1,
+		/obj/item/pda/chemist=1)
+
+/datum/outfit/loadout/paramedic
+	name = "Paramedic"
+	head = 		/obj/item/clothing/head/soft/emt
+	suit = 		/obj/item/clothing/suit/toggle/labcoat/emt
+	glasses = 	/obj/item/clothing/glasses/hud/health
+	belt = 		/obj/item/storage/belt/medical
+	backpack_contents = list(
+		/obj/item/reagent_containers/medspray/synthflesh=2,
+		/obj/item/pda/medical=1,
+		/obj/item/healthanalyzer=1)
 
 /* Hoistway Preacher */
 

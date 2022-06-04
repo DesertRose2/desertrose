@@ -335,23 +335,24 @@ GLOBAL_LIST_INIT(followers_positions, list(
 GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Alderman",
 	"Provost Marshal",
-	"Chief Researcher"
+	"Chief of Development"
 ))
 
-GLOBAL_LIST_INIT(vtcc_provost_positions, list(
+/*GLOBAL_LIST_INIT(vtcc_provost_positions, list(
 	"Provost Sergeant"
-))
+))*/
 
 GLOBAL_LIST_INIT(vtcc_positions, list(
 	"Provost Sergeant",
 	"Provost",
 	"City Security Officer",
-	"City Security Cadet",
+	"Provost Cadet",
 	"Shopkeep",
 	"Roadie",
 	"Merchant",
 	"Innkeeper",
 	"Researcher",
+	"Followers Doctor",
 	"Hoistway Preacher",
 	"Inner Wall Citizen",
 	"Outer Wall Citizen"

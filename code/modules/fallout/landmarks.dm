@@ -328,7 +328,7 @@
 	name = "Merchant"
 
 /obj/effect/landmark/start/f13/chiefresearcher
-	name = "Chief Researcher"
+	name = "Chief of Development"
 
 /obj/effect/landmark/start/f13/researcher
 	name = "Researcher"
