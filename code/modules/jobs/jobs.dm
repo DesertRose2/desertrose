@@ -71,7 +71,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Alderman",
 	"Provost Marshal",
 	"Merchant",
-	"Chief Researcher"
+	"Chief of Development"
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -119,7 +119,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 "Alderman",
 "Provost Marshal",
-"Chief Researcher",
+"Chief of Development",
 "Provost Sergeant",
 "Provost",
 ))
@@ -393,7 +393,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
 	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR First Sergeant","NCR Veteran Ranger","OSI Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
-	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Chief Researcher"))
+	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Chief of Development"))
 
 ))
 
