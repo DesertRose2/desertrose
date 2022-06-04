@@ -244,7 +244,7 @@
 	icon_state = "Settler"
 
 /obj/effect/landmark/start/f13/shopkeeper
-	name = "Shopkeeper"
+	name = "Broker"
 	icon_state = "Shopkeeper"
 
 /obj/effect/landmark/start/f13/wastelander
@@ -333,17 +333,11 @@
 /obj/effect/landmark/start/f13/researcher
 	name = "Researcher"
 
-/obj/effect/landmark/start/f13/provostsgt
-	name = "Provost Sergeant"
-
 /obj/effect/landmark/start/f13/provost
 	name = "Provost"
 
-/obj/effect/landmark/start/f13/townsec
-	name = "City Security Officer"
-
 /obj/effect/landmark/start/f13/townsecscout
-	name = "City Security Cadet"
+	name = "Provost Cadet"
 
 /obj/effect/landmark/start/f13/roadie
 	name = "Roadie"

@@ -218,7 +218,7 @@
 	title = "Provost Marshal"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Aldermen, Marshals, High Marshals and the Overseer"
+	supervisors = "the Aldermen, Marshals and the Overseer"
 	description = "As the head of the security forces, you are the face of justice in the town. Uphold the law, or bend it to suit your needs, you set the precedent for how justice is doled out in the town, so bear that in mind when you sentence that pickpocket to death. Maintain the armoury and keep that watchful eye on the elevator to the Vault below. Whatever you do, don't lose your head."
 	req_admin_notify = 1
 
@@ -260,7 +260,7 @@
 
 /datum/outfit/loadout/secchief
 	name = "Commander"
-	suit_store = /obj/item/gun/energy/laser/scatter
+	suit_store = /obj/item/gun/energy/laser/wattz2k
 	backpack_contents = list(
 	/obj/item/stock_parts/cell/ammo/mfc=3,
 	/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
@@ -294,105 +294,12 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
-/* Provost Sergeant */
-
-/datum/job/vtcc/f13provostsergeant
-	title = "Provost Sergeant"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Aldermen and the Marshals."
-	description = "Battle-hardened and war-weary, you've seen your fair share of action. Leading strike squads against raider encampments and performing surgical strikes against enemies of the Coalition. Now, in the absence of any Marshal, you lead the Security forces and the elite Provosts into battle; enforcing the law is still the order of the day."
-
-	outfit = /datum/outfit/job/vtcc/f13provostsgt
-
-	loadout_options = list(
-		/datum/outfit/loadout/covertops,
-		/datum/outfit/loadout/platform,
-		/datum/outfit/loadout/riotsup
-	)
-
-	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
-	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
-
-/datum/outfit/job/vtcc/f13provostsgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-
-/datum/outfit/job/vtcc/f13provostsgt
-	name = "Provost Sergeant"
-	jobtype = 		/datum/job/vtcc/f13provostsergeant
-	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
-	id =            /obj/item/card/id
-	glasses = 		/obj/item/clothing/glasses/sunglasses/big
-	belt = 			/obj/item/storage/belt/military/assault
-	neck = 			/obj/item/storage/belt/holster
-	shoes = 		/obj/item/clothing/shoes/jackboots
-	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
-	r_hand =		/obj/item/gun/ballistic/automatic/pistol/n99
-	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/kitchen/knife/combat=1,
-		/obj/item/pda/security=1,
-		/obj/item/ammo_box/magazine/m10mm_adv=3,
-		/obj/item/autosurgeon/riotshield=1,
-		/obj/item/clothing/mask/gas/sechailer=1,
-		/obj/item/storage/survivalkit_aid=1
-	)
-
-/datum/outfit/loadout/covertops
-	name = "Covert Ops"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle/vtcc=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/suppressor = 1,
-		/obj/item/camera=1,
-		/obj/item/book/granter/trait/demolitions=1,
-		/obj/item/clothing/glasses/night=1,
-		/obj/item/storage/bag/ammo=1,
-		/obj/item/clothing/suit/armor/f13/riot/vault/provost/sgt=1,
-		/obj/item/clothing/head/helmet/riot/vaultsec/vc/provost=1
-	)
-
-/datum/outfit/loadout/platform
-	name = "Walking Weapons Platform"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/r84=1,
-		/obj/item/ammo_box/magazine/lmg=2,
-		/obj/item/clothing/head/helmet/f13/power_armor/vaulttec=1,
-		/obj/item/clothing/suit/armor/f13/power_armor/vaulttec=1,
-		/obj/item/gun/ballistic/automatic/pistol/autoloader=1,
-		/obj/item/ammo_box/magazine/m45=2
-	)
-
-/datum/outfit/loadout/riotsup
-	name = "Riot Suppression"
-	backpack_contents = list(
-		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller=1,
-		/obj/item/ammo_box/shotgun/buck=3,
-		/obj/item/clothing/suit/armor/f13/riot/vault/provost/sgt=1,
-		/obj/item/clothing/head/helmet/riot/vaultsec/vc/provost=1,
-		/obj/item/grenade/smokebomb=2,
-		/obj/item/grenade/chem_grenade/teargas=2,
-		/obj/item/book/granter/trait/trekking=1
-	)
-
-/datum/outfit/job/vtcc/f13provostsgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
-
 /* Provost */
 /datum/job/vtcc/f13provost
 	title = "Provost"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Aldermen and the Provost Sergeant."
+	supervisors = "the Aldermen and the Provost Marshal."
 	description = "Participating in strike squads against raider encampments and performing surgical strikes against enemies of the Coalition, you and the rest of the elite Provosts don't so much as charge into battle as you do prevent the battle from happening; enforcing the law is still the order of the day, but destabilising real threats and taking out bands of raiders is a priority."
 	exp_requirements = 1500
 	exp_type = EXP_TYPE_VTCCSEC
@@ -431,7 +338,9 @@
 		/obj/item/kitchen/knife/combat=1,
 		/obj/item/pda/security=1,
 		/obj/item/storage/survivalkit_aid=1,
-		/obj/item/clothing/mask/gas/sechailer=1
+		/obj/item/clothing/mask/gas/sechailer=1,
+		/obj/item/gun/ballistic/automatic/pistol/n99=1,
+		/obj/item/ammo_box/magazine/m10mm_adv=2
 	)
 
 /datum/outfit/job/vtcc/f13provost/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -447,9 +356,7 @@
 		/obj/item/gun/ballistic/automatic/combat=1,
 		/obj/item/ammo_box/magazine/greasegun=2,
 		/obj/item/suppressor = 1,
-		/obj/item/storage/bag/ammo=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv=2
+		/obj/item/storage/bag/ammo=1
 	)
 
 /datum/outfit/loadout/espionage
@@ -459,9 +366,7 @@
 		/obj/item/ammo_box/magazine/m10mm_adv/ext=3,
 		/obj/item/suppressor = 1,
 		/obj/item/camera=1,
-		/obj/item/book/granter/trait/demolitions=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv=2
+		/obj/item/book/granter/trait/demolitions=1
 	)
 
 /datum/outfit/loadout/enforcer
@@ -470,9 +375,7 @@
 		/obj/item/clothing/glasses/hud/health=1,
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/grenade/smokebomb=2,
+		/obj/item/grenade/smokebomb=2
 	)
 
 /datum/outfit/job/vtcc/f13provostsgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -483,11 +386,11 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
 
-/* City Sec Scout */
+/* Provost Scout */
 
 /datum/job/vtcc/f13citysecscout
-	title = "City Security Cadet"
-	total_positions = 3
+	title = "Provost Cadet"
+	total_positions = 2
 	spawn_positions = 1
 	supervisors = "the Provosts."
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it in with them, inside the outer ring. It's there that you will learn to dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
@@ -499,7 +402,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/newblood,
 		/datum/outfit/loadout/deepend,
-		/datum/outfit/loadout/vcfmedic
+		//datum/outfit/loadout/vcfmedic
 		)
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_SEC)
@@ -512,7 +415,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13citysecscout
-	name = "City Security Cadet"
+	name = "Provost Cadet"
 	jobtype = /datum/job/vtcc/f13citysecscout
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
@@ -543,7 +446,7 @@
 	/obj/item/shield/riot/tele=1
 	)
 
-/datum/outfit/loadout/vcfmedic
+/*datum/outfit/loadout/vcfmedic
 	name = "Field Medic"
 	backpack_contents = list(
 	/obj/item/gun/ballistic/automatic/pistol/n99=1,
@@ -553,7 +456,7 @@
 	/obj/item/storage/box/medicine/stimpak5=3,
 	/obj/item/defibrillator/compact/loaded=1,
 	/obj/item/clothing/glasses/hud/health=1
-	)
+	)*/
 
 /datum/outfit/job/vtcc/f13citycadet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -562,11 +465,11 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
-/* Shopkeep */
+/* Broker */
 
 /datum/job/vtcc/f13shopkeep
-	title = "Shopkeep"
-	total_positions = 1
+	title = "Broker"
+	total_positions = 2
 	spawn_positions = 1
 	supervisors = "the Merchant"
 	description = "Operate the shop for the Merchant and push your products on anyone in town you can. Sell to everyone; sell as much as you can - it's a firesale!"
@@ -579,7 +482,7 @@
 	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
 
 /datum/outfit/job/vtcc/f13shopkeep
-	name = "Shopkeep"
+	name = "Broker"
 	jobtype = 	/datum/job/vtcc/f13shopkeep
 	id =		/obj/item/card/id
 	ears = 		/obj/item/radio/headset/headset_vault/cogcity/merch
@@ -855,6 +758,17 @@
 	/obj/item/ammo_box/shotgun/bean=1,
 	/obj/item/gun/ballistic/revolver/widowmaker=1,
 	/obj/item/storage/box/drinkingglasses=1
+	)
+
+/datum/outfit/loadout/chef
+	name = "Chef"
+	backpack_contents = list(
+	/obj/item/storage/box/ingredients/fiesta=2,
+	/obj/item/storage/box/ingredients/italian=2,
+	/obj/item/storage/box/ingredients/american=2,
+	/obj/item/clothing/neck/apron/chef=1,
+	/obj/item/clothing/under/f13/westender=1,
+	/obj/item/clothing/head/flatcap=1
 	)
 
 /* Inner Wall Citizen */
