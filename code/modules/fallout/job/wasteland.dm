@@ -1232,20 +1232,15 @@ Outlaw
 
 /datum/outfit/loadout/hoistwaypreacher
 	name = "Hoistway Preacher"
-	jobtype = /datum/job/vtcc/f13hoistway
-
-	ears = /obj/item/radio/headset
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	r_pocket = /obj/item/lighter/fusion
-	suit = /obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured
-	l_pocket =		/obj/item/storage/bag/money/small/vaultcity
 	backpack_contents = list(
 		/obj/item/book/manual/ripley_build_and_repair=1,
 		/obj/item/bodypart/l_arm/robot=1,
 		/obj/item/bodypart/r_arm/robot=1,
 		/obj/item/bodypart/l_leg/robot=1,
-		/obj/item/bodypart/r_leg/robot=1
+		/obj/item/bodypart/r_leg/robot=1,
+		/obj/item/clothing/suit/armor/f13/battlecoat/vault/armoured=1,
+		/obj/item/lighter/fusion=1
+
 		)
 
 /datum/outfit/loadout/atompreacher
