@@ -52,6 +52,30 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
+/datum/crafting_recipe/legionshield
+	name = "Legion Shield"
+	result = /obj/item/shield/riot/legion
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/sheet/mineral/wood = 15,
+				/obj/item/stack/sheet/cloth = 5,
+				/obj/item/stack/sheet/leather = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+	always_availible = FALSE
+
+/datum/crafting_recipe/legionbuckler
+	name = "Legion Buckler"
+	result = /obj/item/shield/riot/legion
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/mineral/wood = 10,)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+	always_availible = FALSE
+
 /datum/crafting_recipe/twohanded/spear
 	name = "Spear"
 	result = /obj/item/twohanded/spear
