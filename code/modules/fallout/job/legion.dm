@@ -363,7 +363,7 @@ Decanii
 	loadout_options = list(
 	/datum/outfit/loadout/vetdecanline,		//Garand, .45 Revolver
 	/datum/outfit/loadout/vetdecanshock,	//Pilum
-	/datum/outfit/loadout/vetdecanmelee		//Hunting Revolver, Shield, Ripper, Spear Quiver
+	/datum/outfit/loadout/vetdecanmelee		//Hunting Revolver, Shield, Ripper, slower armour with shield storage
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -379,7 +379,6 @@ Decanii
 	name = "Legion Veteran Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanvet
 	id = 			/obj/item/card/id/dogtag/legveteran
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/decan
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/decan
 	mask =			/obj/item/clothing/mask/bandana/legvet/decan
 	neck =			/obj/item/storage/belt/holster/ranger45
@@ -396,6 +395,7 @@ Decanii
 /datum/outfit/loadout/vetdecanline
 	name = "Bellator (Line) Officer"
 	l_hand =  /obj/item/gun/ballistic/automatic/m1garand
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/magazine/garand308=3,
@@ -405,14 +405,15 @@ Decanii
 /datum/outfit/loadout/vetdecanshock
 	name = "Assassin (Scout) Officer"
 	l_hand =  /obj/item/gun/ballistic/automatic/assault_rifle/legion
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=2)
 
 /datum/outfit/loadout/vetdecanmelee
-	name = "Triarius (Melee) Officer"
+	name = "Aegis (Shield) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/hunting
 	r_hand =	/obj/item/shield/riot/legion
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan/aegis
 	backpack_contents = list(
-		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
 		/obj/item/ammo_box/c4570=1)
 
@@ -431,7 +432,7 @@ Decanii
 	loadout_options = list(
 	/datum/outfit/loadout/primedecline,		//Trail Carbine, .45 Revolver
 	/datum/outfit/loadout/primedecshock,	//Trench Shotgun, Shield, .357 Revolver
-	/datum/outfit/loadout/primedecmelee		//Legion Lance, .44 Revolver, Shield, Spear Quiver
+	/datum/outfit/loadout/primedecmelee		//.44 Revolver, Shield, slower armour with shield storage
 	)
 
 
@@ -448,7 +449,6 @@ Decanii
 	name = "Legion Prime Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decan
 	id = 			/obj/item/card/id/dogtag/legveteran
-	suit =			/obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head =			/obj/item/clothing/head/helmet/f13/legion/prime/decan
 	mask =			/obj/item/clothing/mask/bandana/legprime/decan
 	neck =			/obj/item/storage/belt/holster
@@ -465,6 +465,7 @@ Decanii
 /datum/outfit/loadout/primedecline
 	name = "Bellator (Line) Officer"
 	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
+	suit =	 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/gun/ballistic/revolver/revolver45=1,
@@ -474,6 +475,7 @@ Decanii
 /datum/outfit/loadout/primedecshock
 	name = "Testudo (Shock) Officer"
 	l_hand = /obj/item/gun/ballistic/shotgun/trench
+	suit =	 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
@@ -483,12 +485,11 @@ Decanii
 	)
 
 /datum/outfit/loadout/primedecmelee
-	name = "Triarius (Melee) Officer"
+	name = "Phalangite (Shield) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/m29
 	r_hand =	/obj/item/shield/riot/legion
+	suit =	 	/obj/item/clothing/suit/armor/f13/legion/prime/decan/phalanx
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance=1,
-		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/ammo_box/m44=3
 	)
 
