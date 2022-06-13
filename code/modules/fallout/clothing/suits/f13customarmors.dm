@@ -139,20 +139,21 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
 
-//Custom item - Yeehawguvnah - Sprite based on existing cloak sprites
-/obj/item/clothing/suit/hooded/f13/rangerponcho
-	actions_types = list(/datum/action/item_action/toggle_suit)
-	name = "hooded poncho"
-	desc = "(IV) A lightweight poncho with a hood, lined with reinforced fibres imported from somewhere far to the east. It appears to be reversible - alt-click to toggle its colours."
-	icon_state = "rangercloak"
-	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.2
-	var/inside_out = FALSE
+//Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
+/obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
+	name = "ranger-sergeant's light riot armour"
+	desc = "(VI) The under-armour component of riot gear, separated from its coat to allow the wearer a little more freedom of movement."
+	icon_state = "rangerkemble"
+	item_state = "rangerkemble"
 
-/obj/item/clothing/suit/hooded/f13/rangerponcho/AltClick(mob/living/user)
-	if(inside_out == FALSE)
-		inside_out = TRUE
-		icon_state = "rangerponcho_camo"
-	else
-		inside_out = FALSE
-		icon_state = "rangerponcho_green"
+//Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
+/obj/item/storage/belt/holster/light_riot
+	name = "ranger-sergeant's overcoat"
+	desc = "A coat stripped from a set of riot armour. This one seems to be reversible."
+	icon_state = "kemblecoat_green"
+	item_state = "kemblecoat_green"
+	alternate_worn_layer = HAIR_LAYER-1 //Display over hair
+	unique_reskin = list(
+						"Tan" = "kemblecoat_tan",
+						"Green" = "kemblecoat_green",
+						)

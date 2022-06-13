@@ -489,3 +489,9 @@
 	new /obj/item/clothing/suit/armor/f13/trailranger/trailrig(src)
 	new /obj/item/clothing/gloves/f13/leather/silverbangles(src)
 	new /obj/item/warpaint_bowl(src)
+
+//Trinity Kemble - Yeehawguvah
+/obj/item/storage/box/large/custom_kit/trinitykemble/PopulateContents()
+	new /obj/item/modkit/kemblehat(src)
+	new /obj/item/modkit/kemblearmor(src)
+	new /obj/item/storage/belt/holster/light_riot(src)

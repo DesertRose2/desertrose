@@ -446,6 +446,11 @@
 	path = /obj/item/storage/box/large/custom_kit/bangles
 	ckeywhitelist = list("pisshole")
 
+/datum/gear/donator/kits/trinitykemble
+	name = "Trinity Kemble's belongings"
+	path = /obj/item/storage/box/large/custom_kit/trinitykemble
+	ckeywhitelist = list("yeehawguvnah")
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
