@@ -160,3 +160,22 @@
 	desc = "(VI) An oversized trenchcoat, as if ready for cold weather, complete with an NCR vest atop a sweater under it all."
 	icon_state = "ncrofficergcoat"
 	item_state = "ncrofficergcoat"
+	
+//Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
+/obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
+	name = "ranger-sergeant's light riot armour"
+	desc = "(VI) The under-armour component of riot gear, separated from its coat to allow the wearer a little more freedom of movement."
+	icon_state = "rangerkemble"
+	item_state = "rangerkemble"
+
+//Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
+/obj/item/storage/belt/holster/light_riot
+	name = "ranger-sergeant's overcoat"
+	desc = "A coat stripped from a set of riot armour. This one seems to be reversible."
+	icon_state = "kemblecoat_green"
+	item_state = "kemblecoat_green"
+	alternate_worn_layer = HAIR_LAYER-1 //Display over hair
+	unique_reskin = list(
+						"Tan" = "kemblecoat_tan",
+						"Green" = "kemblecoat_green",
+						)

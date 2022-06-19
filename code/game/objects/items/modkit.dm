@@ -294,6 +294,16 @@
 	target_items = list(/obj/item/clothing/mask/gas/sechailer)
 	result_item = /obj/item/clothing/mask/gas/montana
 
+/obj/item/modkit/kemblehat
+	name = "Ranger slouch hat modkit"
+	target_items = list(/obj/item/clothing/head/f13/ranger/sergeant)
+	result_item = /obj/item/clothing/head/f13/ranger/sergeant/light_riot
+
+/obj/item/modkit/kemblearmor
+	name = "Light riot suit modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/rangercombat/sergeant)
+	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
+
 //Crusader Pistol Modkits
 
 /obj/item/modkit/crusader_10mm

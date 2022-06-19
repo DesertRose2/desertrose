@@ -51,3 +51,17 @@
 	icon_state = "trailbandana"
 	item_state = "trailbandana"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+
+//Custom item - Yeehawguvnah / Trinity Kemble - Sprite adapted from existing armour, creator unknown
+/obj/item/clothing/head/f13/ranger/sergeant/light_riot
+	name = "ranger slouch hat"
+	desc = "(VI) An NCR slouch hat, reinforced with ballistic fibres. There's a pair of goggles attached, seemingly salvaged from old riot gear. Despite the faint glow to the lenses, they no longer function."
+	icon_state = "rangerkemble"
+	item_state = "rangerkemble"
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/head/f13/ranger/sergeant/light_riot/attack_self(mob/user)
+	weldingvisortoggle(user)
+	icon_state = "rangerkembleup"
+	item_state = "rangerkembleup"
+	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
