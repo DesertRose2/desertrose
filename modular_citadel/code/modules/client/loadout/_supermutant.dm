@@ -6,7 +6,7 @@
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04",
-					"yecrowbarman", "heroicam", "puglord777", "theman1178"
+					"yecrowbarman", "heroicam", "puglord777", "theman1178","yeehawguvnah", "hallow96", "our lord spungus"
 					)
 
 // Shoes
@@ -30,11 +30,11 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Heavy Trooper",
@@ -82,11 +82,11 @@
 	restricted_desc = "NCR"
 	restricted_roles = list(
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Heavy Trooper",
@@ -163,11 +163,11 @@
 							"NCR Ranger Sergeant",
 							"NCR Ranger",
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Military Police",
 							"NCR Combat Medic",
 							"NCR Trooper",

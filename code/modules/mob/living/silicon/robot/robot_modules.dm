@@ -335,7 +335,7 @@
 		"Droid" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "medical"),
 		"Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekmed"),
 		"Marina" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "marinamed"),
-		"Eyebot" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "eyebotmed"),
+		"Eyebot" = image(icon = 'icons/fallout/mobs/robots/eyebots.dmi', icon_state = "eyebotmed"),
 		"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymed")
 		)
 		var/list/L = list("Medihound" = "medihound", "Medihound Dark" = "medihounddark", "Vale" = "valemed")
@@ -364,7 +364,7 @@
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Eyebot")
 			cyborg_base_icon = "eyebotmed"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
+			cyborg_icon_override = 'icons/fallout/mobs/robots/eyebots.dmi'
 		if("Heavy")
 			cyborg_base_icon = "heavymed"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
@@ -725,10 +725,6 @@
 	var/static/list/service_icons
 	if(!service_icons)
 		service_icons = list(
-		"(Service) Waitress" = image(icon = 'icons/mob/robots.dmi', icon_state = "service_f"),
-		"(Service) Butler" = image(icon = 'icons/mob/robots.dmi', icon_state = "service_m"),
-		"(Service) Bro" = image(icon = 'icons/mob/robots.dmi', icon_state = "brobot"),
-		"(Service) Can" = image(icon = 'icons/mob/robots.dmi', icon_state = "kent"),
 		"(Service) Tophat" = image(icon = 'icons/mob/robots.dmi', icon_state = "tophat"),
 		"(Service) Sleek" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "sleekserv"),
 		"(Service) Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyserv"),
@@ -751,23 +747,10 @@
 		service_icons = sortList(service_icons)
 	var/service_robot_icon = show_radial_menu(R, R , service_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(service_robot_icon)
-		if("(Service) Waitress")
-			cyborg_base_icon = "service_f"
-			special_light_key = "service"
-		if("(Service) Butler")
-			cyborg_base_icon = "service_m"
-			special_light_key = "service"
-		if("(Service) Bro")
-			cyborg_base_icon = "brobot"
-			special_light_key = "service"
-		if("(Service) Can")
-			cyborg_base_icon = "kent"
-			special_light_key = "medical"
-			hat_offset = 3
 		if("(Service) Tophat")
 			cyborg_base_icon = "tophat"
 			special_light_key = null
-			hat_offset = INFINITY //He is already wearing a hat
+			hat_offset = 3 //He is already wearing a hat
 		if("(Service) Sleek")
 			cyborg_base_icon = "sleekserv"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
@@ -888,7 +871,7 @@
 	hat_offset = 3 //what
 	borghealth = 450 //Assaultron health
 	cyborg_base_icon = "assaultron"
-	moduleselect_icon = "security"
+	moduleselect_icon = "assaultron"
 	hat_offset = 3
 
 /obj/item/robot_module/assaultron/rebuild_modules()
@@ -935,7 +918,7 @@
 		/obj/item/clockwork/slab/cyborg/medical,
 		/obj/item/clockwork/weapon/ratvarian_spear)
 	cyborg_base_icon = "assaultron_sase"
-
+	moduleselect_icon = "assaultron_sase"
 /obj/item/robot_module/syndicate
 	name = "Syndicate Assault"
 	basic_modules = list(

@@ -58,13 +58,13 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR Veteran Ranger",
 							"NCR First Sergeant",
 							"NCR Ranger Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Heavy Trooper",
 							"NCR Trooper",
@@ -81,13 +81,13 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Commanding Officer",
-							"OSI Officer",
+							"OSI Representative",
 							"NCR Veteran Ranger",
 							"NCR First Sergeant",
 							"NCR Ranger Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Combat Engineer",
+							"NCR Specialist",
 							"NCR Combat Medic",
 							"NCR Heavy Trooper",
 							"NCR Trooper",
@@ -105,7 +105,7 @@
 	restricted_roles = list(
 							"NCR Captain",
 							"NCR Commanding Officer",
-							"OSI Officer"
+							"OSI Representative"
 							)
 
 /datum/gear/uniform/ranger

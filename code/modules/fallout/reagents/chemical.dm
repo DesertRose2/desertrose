@@ -90,7 +90,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom
 	desc = "A handheld delivery system for medicine, this particular one will deliver a tailored cocktail."
-	icon_state = "stim"
+	icon_state = "stimpak"
 	list_reagents = null
 
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/custom/update_overlays()
@@ -118,7 +118,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super/custom
 	desc = "The super version comes in a hypodermic, but with an additional vial to inject more drugs than the basic model and a leather belt to strap the needle to a limb. This particular one will deliver a tailored cocktail."
-	icon_state = "superstim"
+	icon_state = "superstimpak"
 	volume = 20
 	amount_per_transfer_from_this = 20
 	list_reagents = null

@@ -139,6 +139,28 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = -0.2
 
+//Custom item - Pisshole / Judith Rhodes - Sprite by Pisshole
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_bandolierholster
+	name = "NCR LT's Bandolier kit"
+	desc = "(VI) The extra space for ammo comes with a little plate you can insert under your uniform. Well, it's something. Nobody will be tearing your intestines out by hand, at least."
+	icon_state = "bandolierholster"
+	item_state = "bandolierholster"
+
+//Custom item - Pisshole / Montana - Sprite by Pisshole
+/obj/item/clothing/suit/armor/f13/rangercombat/sergeant/tina_vet
+	name = "ranger LT's custom scout armor"
+	desc = "(VI) A rough, worn gear set consisting of an old ranger's coat affixed with the Veteran-issue water pack, a hand-sewn scarf and an old patrol chestplate. While the legs have room to move and breathe in this, you get the impression it's more something done to relieve pain from old wounds than anything else. The armor is maintained in a ranger-sergeant's style, despite the wearer's rank."
+	icon_state = "tina_vet"
+	item_state = "tina_vet"
+	armor = list("tier" = 6, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+
+//Custom item - Pisshole / - Sprite edited by Pisshole (not sure who made the original tell me and I will credit)
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/ncr_officer_gcoat
+	name = "NCR Greatcoat"
+	desc = "(VI) An oversized trenchcoat, as if ready for cold weather, complete with an NCR vest atop a sweater under it all."
+	icon_state = "ncrofficergcoat"
+	item_state = "ncrofficergcoat"
+	
 //Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
 /obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
 	name = "ranger-sergeant's light riot armour"

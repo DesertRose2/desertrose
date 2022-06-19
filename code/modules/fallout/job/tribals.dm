@@ -49,8 +49,8 @@ Tribal Chief
 /datum/job/tribal/f13chief
 	title = "Chief"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Elders of the tribe."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -101,8 +101,8 @@ Tribal Shaman
 /datum/job/tribal/f13shaman
 	title = "Shaman"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Elders of the tribe and the chief."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -163,8 +163,8 @@ Tribal Head Hunter
 /datum/job/tribal/f13Hhunter
 	title = "Head Hunter"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Elders of the tribe and the chief."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -202,8 +202,8 @@ Druid
 /datum/job/tribal/f13druid
 	title = "Druid"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Chief and the Shaman."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -275,8 +275,8 @@ Villager
 /datum/job/tribal/f13villager
 	title = "Villager"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "Tribal Chief, Shaman and Headhunter"
 	description = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe."
 	selection_color = "#006666"
@@ -353,8 +353,8 @@ Hunter
 /datum/job/tribal/f13hunter
 	title = "Hunter"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 3
+	spawn_positions = 2
 	supervisors = "The chief and Head Hunter."
 	enforces = "The ways of the Machine spirits."
 	forbids = "Abusing technology and using Pre-War weapons."
@@ -419,8 +419,8 @@ Spirit-Pledged
 /datum/job/tribal/f13spiritpledged
 	title = "Spirit-Pledged"
 	faction = "Village"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "All other tribals."
 	description = "An outsider to the tribe, you have been welcomed to learn their ways and grow closer to their culture and lifestyle."
 	selection_color = "#006666"

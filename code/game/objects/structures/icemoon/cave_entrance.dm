@@ -5,8 +5,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 									   /obj/item/stack/ore/gold = 50,
 									   /obj/item/stack/ore/diamond = 25,
 									   /obj/item/stack/ore/bananium = 5,
-									   /obj/item/stack/ore/titanium = 75,
-									   /obj/item/stack/ore/lead = 80))
+									   /obj/item/stack/ore/titanium = 75))
 
 /obj/structure/spawner/ice_moon
 	name = "cave entrance"
@@ -124,7 +123,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 		if(2)
 			new /obj/item/clothing/glasses/godeye(loc)
 		if(3)
-			new /obj/item/reagent_containers/glass/bottle/potion/flight(loc)
+			// new /obj/item/reagent_containers/glass/bottle/potion/flight(loc)
 		if(4)
 			new /obj/item/organ/heart/cursed/wizard(loc)
 		if(5)

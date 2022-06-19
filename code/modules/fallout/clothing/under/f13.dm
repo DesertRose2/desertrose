@@ -183,6 +183,12 @@
 	item_color = "chef"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
 
+/obj/item/clothing/under/f13/ranger/vet/chinesespecop
+	name = "chinese commando outfit"
+	desc = "A set of dark fatigues in the style and with the patches of the pre-war Chinese regime, complete with tactical accessorization."
+	icon_state = "chinesespecop"
+	item_state = "chinesespecop"
+
 //Roma Legion Legacy delete?
 
 /obj/item/clothing/under/f13/romaskirt
@@ -558,9 +564,14 @@
 	name = "enclave officer uniform"
 	desc = "A standard Enclave officer uniform.<br>The outer layer is made of a sturdy material designed to withstand the harsh conditions of the wasteland."
 	icon_state = "enclave_o"
-	item_state = "bl_suit"
-	item_color = "enclave_o"
+	item_state = "enclave_o"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+
+/obj/item/clothing/under/f13/enclave_officer/enclave_under
+	name = "enclave undershirt uniform"
+	desc = "The standard Enclave uniform stripped down."
+	icon_state = "uniformenclaveopen"
+	item_state = "uniformenclaveopen"
 
 /obj/item/clothing/under/f13/navy
 	name = "navy jumpsuit"
@@ -1238,3 +1249,89 @@
 	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"
+
+// tribals
+
+/obj/item/clothing/under/f13/whitelegs
+	name = "White Legs garb"
+	desc = "A segmented pair of dark leather shorts with an orange belt, paired with a distinct facewrap, worn by members of the White Legs tribe."
+	icon_state = "white_legs_under"
+	item_state = "white_legs_under"
+	item_color = "white_legs_under"
+	can_adjust = TRUE
+
+/obj/item/clothing/under/f13/female/whitelegs
+	name = "White Legs garb"
+	desc = "A segmented pair of dark leather shorts with an orange belt and matching sports bra, paired with a distinct facewrap, worn by members of the White Legs tribe."
+	icon_state = "white_legs_under_f"
+	item_state = "white_legs_under_f"
+	item_color = "white_legs_under_f"
+	can_adjust = TRUE
+
+/obj/item/clothing/under/f13/rustwalkers
+	name = "Rustwalkers outfit"
+	desc = "A plaid shirt with torn short sleeves with a set of grey cargo pants, commonly worn by members of the Rustwalkers tribe."
+	icon_state = "rustwalkers_under"
+	item_state = "rustwalkers_under"
+	item_color = "rustwalkers_under"
+	can_adjust = TRUE
+
+/obj/item/clothing/under/f13/female/rustwalkers
+	name = "Rustwalkers outfit"
+	desc = "A cropped red leather jacket with a torn sleeve, alongside a pair of torn brown trousers patched with fishnets, commonly worn by members of the Rustwalkers tribe."
+	icon_state = "rustwalkers_under_f"
+	item_state = "rustwalkers_under_f"
+	item_color = "rustwalkers_under_f"
+
+/obj/item/clothing/under/f13/eighties
+	name = "Eighties outfit"
+	desc = "A thin, short sleeved grey shirt that's longer down the back, with black jeans and a series of chains used as a belt. Commonly worn by members of the Eighties tribe."
+	icon_state = "80s_under"
+	item_state = "80s_under"
+	item_color = "80s_under"
+
+/obj/item/clothing/under/f13/female/eighties
+	name = "Eighties outfit"
+	desc = "A simple grey corset with brown jeans and a series of chains used as a belt and harness. Commonly worn by members of the Eighties tribe."
+	icon_state = "80s_under_f"
+	item_state = "80s_under_f"
+	item_color = "80s_under_f"
+
+/obj/item/clothing/under/f13/deadhorses
+	name = "Dead Horses garb"
+	desc = "A simple leather bandolier with a pouch, paired with a gecko-hide loincloth. Commonly worn by members of the Dead Horses tribe."
+	icon_state = "dead_horses_under"
+	item_state = "dead_horses_under"
+	item_color = "dead_horses_under"
+
+/obj/item/clothing/under/f13/female/deadhorses
+	name = "Dead Horses garb"
+	desc = "A simple gecko-hide sports bra and loincloth. Commonly worn by members of the Dead Horses tribe."
+	icon_state = "dead_horses_under_f"
+	item_state = "dead_horses_under_f"
+	item_color = "dead_horses_under_f"
+
+/obj/item/clothing/under/f13/sorrows
+	name = "Sorrows garb"
+	desc = "A simple pair of blue shorts with a length of the fabric extending down each leg. Commonly worn by members of the Sorrows tribe."
+	icon_state = "sorrows_under"
+	item_state = "sorrows_under"
+	item_color = "sorrows_under"
+
+/obj/item/clothing/under/f13/female/sorrows
+	name = "Sorrows garb"
+	desc = "A simple set of blue shorts with a length of the fabric extending down each leg and similarly coloured sports bra. Commonly worn by members of the Sorrows tribe."
+	icon_state = "sorrows_under_f"
+	item_state = "sorrows_under_f"
+	item_color = "sorrows_under_f"
+
+/obj/item/clothing/under/f13/bone
+	name = "Bone Dancer outfit"
+	desc = "A full body skin tight overalls, seemingly of brown color. Commonly worn by members of the Bone Dancers tribe."
+	icon_state = "bone_dancer"
+	item_state = "bone_dancer"
+	item_color = "bone_dancer"
+	var/sleeves_adjusted = 0
+	alt_covers_chest = TRUE
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = TRUE

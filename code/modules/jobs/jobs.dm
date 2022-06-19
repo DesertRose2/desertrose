@@ -51,7 +51,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"NCR Commanding Officer",
 	"NCR First Sergeant",
-	"OSI Officer",
+	"OSI Representative",
 
 	"Legion Centurion",
 	"Legion Venator",
@@ -259,22 +259,21 @@ GLOBAL_LIST_INIT(ncr_ranger_positions, list(
 GLOBAL_LIST_INIT(ncr_leadership_positions, list(
 	"NCR Commanding Officer",
 	"NCR First Sergeant",
-	"OSI Officer"
+	"OSI Representative"
 ))
 /*
 GLOBAL_LIST_INIT(ncr_general_positions, list(
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
-	"NCR Combat Engineer",
+	"NCR Specialist",
 	"NCR Off-Duty"
 ))
 */
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Sergeant",
 	"NCR Corporal",
-	"NCR Combat Medic",
-	"NCR Combat Engineer",
+	"NCR Specialist",
 	"NCR Heavy Trooper",
 	"NCR Military Police",
 	"NCR Trooper",

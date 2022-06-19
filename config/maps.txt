@@ -20,10 +20,11 @@ map stjeromesvalley
 	disabled
 endmap
 map sunnyvale
-	disabled
+	voteweight 0
 endmap
 map vaultvalley
 	voteweight 0
 endmap
 map tipton
+	voteweight 0
 endmap

@@ -32,6 +32,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmarinehelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionhelmsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionbuckler)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/dynamite)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/cateye)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
@@ -361,7 +363,7 @@ Decanii
 	loadout_options = list(
 	/datum/outfit/loadout/vetdecanline,		//Garand, .45 Revolver
 	/datum/outfit/loadout/vetdecanshock,	//Pilum
-	/datum/outfit/loadout/vetdecanmelee		//Hunting Revolver, Shield, Ripper, Spear Quiver
+	/datum/outfit/loadout/vetdecanmelee		//Hunting Revolver, Shield, Ripper, slower armour with shield storage
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -377,7 +379,6 @@ Decanii
 	name = "Legion Veteran Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanvet
 	id = 			/obj/item/card/id/dogtag/legveteran
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/decan
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/decan
 	mask =			/obj/item/clothing/mask/bandana/legvet/decan
 	neck =			/obj/item/storage/belt/holster/ranger45
@@ -394,6 +395,7 @@ Decanii
 /datum/outfit/loadout/vetdecanline
 	name = "Bellator (Line) Officer"
 	l_hand =  /obj/item/gun/ballistic/automatic/m1garand
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/magazine/garand308=3,
@@ -403,14 +405,15 @@ Decanii
 /datum/outfit/loadout/vetdecanshock
 	name = "Assassin (Scout) Officer"
 	l_hand =  /obj/item/gun/ballistic/automatic/assault_rifle/legion
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan
 	backpack_contents = list(/obj/item/ammo_box/magazine/m556/rifle/assault=2)
 
 /datum/outfit/loadout/vetdecanmelee
-	name = "Triarius (Melee) Officer"
+	name = "Aegis (Shield) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/hunting
 	r_hand =	/obj/item/shield/riot/legion
+	suit = 	  /obj/item/clothing/suit/armor/f13/legion/vet/decan/aegis
 	backpack_contents = list(
-		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
 		/obj/item/ammo_box/c4570=1)
 
@@ -429,7 +432,7 @@ Decanii
 	loadout_options = list(
 	/datum/outfit/loadout/primedecline,		//Trail Carbine, .45 Revolver
 	/datum/outfit/loadout/primedecshock,	//Trench Shotgun, Shield, .357 Revolver
-	/datum/outfit/loadout/primedecmelee		//Legion Lance, .44 Revolver, Shield, Spear Quiver
+	/datum/outfit/loadout/primedecmelee		//.44 Revolver, Shield, slower armour with shield storage
 	)
 
 
@@ -446,7 +449,6 @@ Decanii
 	name = "Legion Prime Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decan
 	id = 			/obj/item/card/id/dogtag/legveteran
-	suit =			/obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head =			/obj/item/clothing/head/helmet/f13/legion/prime/decan
 	mask =			/obj/item/clothing/mask/bandana/legprime/decan
 	neck =			/obj/item/storage/belt/holster
@@ -463,6 +465,7 @@ Decanii
 /datum/outfit/loadout/primedecline
 	name = "Bellator (Line) Officer"
 	l_hand = /obj/item/gun/ballistic/rifle/automatic/hunting/trail
+	suit =	 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3,
 		/obj/item/gun/ballistic/revolver/revolver45=1,
@@ -472,6 +475,7 @@ Decanii
 /datum/outfit/loadout/primedecshock
 	name = "Testudo (Shock) Officer"
 	l_hand = /obj/item/gun/ballistic/shotgun/trench
+	suit =	 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
@@ -481,12 +485,11 @@ Decanii
 	)
 
 /datum/outfit/loadout/primedecmelee
-	name = "Triarius (Melee) Officer"
+	name = "Phalangite (Shield) Officer"
 	l_hand =	/obj/item/gun/ballistic/revolver/m29
 	r_hand =	/obj/item/shield/riot/legion
+	suit =	 	/obj/item/clothing/suit/armor/f13/legion/prime/decan/phalanx
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance=1,
-		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/ammo_box/m44=3
 	)
 
@@ -669,7 +672,7 @@ Veteran Legionary
 		/datum/outfit/loadout/vetline,	//Garand, .45 Revolver
 		/datum/outfit/loadout/vetscout,	//Commando DMR, .44 Single Action Revolver
 		/datum/outfit/loadout/vetshock,	//Browning Auto-5, .44 Revolver
-		/datum/outfit/loadout/vetmelee	//Hunting Revolver, Shield, Bumper Sword, Spear Quiver
+		/datum/outfit/loadout/vetmelee	//Hunting Revolver, Shield, slower armour with shield mount
 	)
 
 
@@ -689,7 +692,6 @@ Veteran Legionary
 	mask =			/obj/item/clothing/mask/bandana/legvet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
 	neck = 			/obj/item/storage/belt/holster
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	glasses = 		/obj/item/clothing/glasses/legiongoggles/shielded
 	ears	=		/obj/item/radio/headset/headset_legion
 	r_pocket =		/obj/item/restraints/handcuffs
@@ -704,6 +706,7 @@ Veteran Legionary
 /datum/outfit/loadout/vetline
 	name = "Bellator (Line)"
 	l_hand = /obj/item/gun/ballistic/automatic/m1garand
+	suit = 	 /obj/item/clothing/suit/armor/f13/legion/vet
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45=1,
 		/obj/item/ammo_box/magazine/garand308=3,
@@ -713,6 +716,7 @@ Veteran Legionary
 /datum/outfit/loadout/vetscout
 	name = "Assassin (Scout)"
 	l_hand = /obj/item/gun/ballistic/rifle/mag/commando/dmr
+	suit = 	 /obj/item/clothing/suit/armor/f13/legion/vet
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45/extended=2,
 		/obj/item/attachments/scope=1,
@@ -722,6 +726,7 @@ Veteran Legionary
 /datum/outfit/loadout/vetshock
 	name = "Cataegis (Shock)"
 	l_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	suit = 	 /obj/item/clothing/suit/armor/f13/legion/vet
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1,
@@ -731,12 +736,11 @@ Veteran Legionary
 	)
 
 /datum/outfit/loadout/vetmelee
-	name = "Triarius (Melee)"
+	name = "Aegis (Shield)"
 	l_hand = 	/obj/item/gun/ballistic/revolver/hunting
 	r_hand = 	/obj/item/shield/riot/legion
+	suit = 		/obj/item/clothing/suit/armor/f13/legion/vet/aegis
 	backpack_contents = list(
-		/obj/item/storage/backpack/spearquiver=1,
-		/obj/item/twohanded/fireaxe/bmprsword=1,
 		/obj/item/ammo_box/c4570=1
 	)
 
@@ -757,7 +761,7 @@ Prime Legionairy
 	loadout_options = list(
 		/datum/outfit/loadout/primeline,	//Trail Carbine
 		/datum/outfit/loadout/primeshock,	//Lever Shotgun
-		/datum/outfit/loadout/primemelee	//Legion Lance, .44 Revolver, Shield, Spear Quiver
+		/datum/outfit/loadout/primemelee	//Shield, .44 revolver, slower armour with shield mount
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -776,7 +780,6 @@ Prime Legionairy
 	mask			= /obj/item/clothing/mask/bandana/legprime
 	head			= /obj/item/clothing/head/helmet/f13/legion/prime
 	neck			= /obj/item/storage/belt/holster
-	suit			= /obj/item/clothing/suit/armor/f13/legion/prime
 	glasses			= /obj/item/clothing/glasses/legiongoggles
 	ears			= /obj/item/radio/headset/headset_legion
 	r_pocket 		=/obj/item/restraints/handcuffs
@@ -790,23 +793,24 @@ Prime Legionairy
 /datum/outfit/loadout/primeline
 	name = "Milites (Line)"
 	l_hand =	/obj/item/gun/ballistic/rifle/automatic/hunting/trail
+	suit =		/obj/item/clothing/suit/armor/f13/legion/prime
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=3)
 
 /datum/outfit/loadout/primeshock
 	name = "Percutio (Shock)"
 	l_hand =	/obj/item/gun/ballistic/shotgun/lever
+	suit =		/obj/item/clothing/suit/armor/f13/legion/prime
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/ammo_box/shotgun/slug=1)
 
 /datum/outfit/loadout/primemelee
-	name = "Principes (Melee)"
+	name = "Phalangite (Shield)"
 	l_hand =	/obj/item/gun/ballistic/revolver/m29
 	r_hand =	/obj/item/shield/riot/legion
+	suit   =	/obj/item/clothing/suit/armor/f13/legion/prime/phalanx
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance=1,
-		/obj/item/storage/backpack/spearquiver=1,
 		/obj/item/ammo_box/m44=3
 	)
 
@@ -970,8 +974,8 @@ Explorer
 	exp_type = EXP_TYPE_PRIME
 
 	loadout_options = list(
-		/datum/outfit/loadout/excursor,	//Commando DMR
-		/datum/outfit/loadout/sapper	//Commando Carbine, C4
+		/datum/outfit/loadout/excursor,	//10mm smg, smokebomb
+		/datum/outfit/loadout/sapper	//Lever action shotgun, fire grenade
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
@@ -991,8 +995,8 @@ Explorer
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
 		/obj/item/storage/bag/money/small/legenlisted=1,
 		/obj/item/restraints/handcuffs=2,
-		/obj/item/claymore/machete/reinforced=1
-		)
+		/obj/item/claymore/machete/reinforced=1,
+		/obj/item/grenade/plastic=1)
 
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1005,19 +1009,19 @@ Explorer
 
 /datum/outfit/loadout/excursor
 	name = "Excursor (Runner)"
-	l_hand = 	/obj/item/gun/ballistic/rifle/mag/commando/dmr
+	l_hand = 	/obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45/extended=2,
-		/obj/item/attachments/scope=1)
+		/obj/item/ammo_box/magazine/m10mm_adv/ext=2,
+		/obj/item/grenade/smokebomb=1)
 
 /datum/outfit/loadout/sapper
 	name = "Sonspicio Munitor (Saboteur)"
 	gloves = 	/obj/item/clothing/gloves/f13/blacksmith
 	belt = 		/obj/item/storage/belt/utility/full/engi
-	l_hand =	/obj/item/gun/ballistic/rifle/mag/commando
+	l_hand =	/obj/item/gun/ballistic/shotgun/lever
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45/extended=1,
-		/obj/item/grenade/plastic=1)
+		/obj/item/ammo_box/magazine/d12g=2,
+		/obj/item/grenade/f13/incendinary=1)
 
 /*
 Auxilia

@@ -190,7 +190,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr/LT1
 	head 		= /obj/item/clothing/head/beret/ncr_lt
-	neck 		= /obj/item/storage/belt/holster/ncr_officer
+	neck 		= /obj/item/storage/belt/holster/commander10mm
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	gloves 		= /obj/item/clothing/gloves/f13/leather
 	ears 		= /obj/item/radio/headset/headset_ncr_com
@@ -234,7 +234,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 OSI Officer, renamed from Medical Officer
 */
 /datum/job/ncr/f13medicalofficer
-	title = "OSI Officer"
+	title = "OSI Representative"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are a representative of the OSI in Camp Miller as part of a joint operation with the army. You do not have any command authority unless it relates to supply, science, or medical purpose. You are not a soldier, though you have been granted clearance and pins granting you roughly officer rank. Your duties are to ensure supplies are in order, that the troopers are in good health and that every member of the supply branch are fulfilling their obligations."
@@ -250,7 +250,7 @@ OSI Officer, renamed from Medical Officer
 	)
 
 /datum/outfit/job/ncr/f13medicalofficer
-	name = "OSI Officer"
+	name = "OSI Representative"
 	jobtype		= /datum/job/ncr/f13medicalofficer
 	id			= /obj/item/card/id/dogtag/ncrlieutenant
 	uniform		= /obj/item/clothing/under/lawyer/blacksuit
@@ -551,13 +551,13 @@ Corporal
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /*
-Combat Medic
+Combat Medic (to be reworked into Supply)
 */
 
 /datum/job/ncr/f13combatmedic
 	title = "NCR Combat Medic"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a veteran enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -597,14 +597,14 @@ Combat Medic
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
 
 /*
-Combat Engineer
+NCR Specialist (formerly only Combat Engineer)
 */
 
 /datum/job/ncr/f13combatengineer
-	title = "NCR Combat Engineer"
-	total_positions = 1
-	spawn_positions = 1
-	description = "You are a veteran enlisted with an engineering skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
+	title = "NCR Specialist"
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are an enlisted trooper with a unique set of skills. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are no Corporals or above present."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
@@ -612,32 +612,26 @@ Combat Engineer
 	exp_requirements = 900
 	exp_type = EXP_TYPE_NCRTPR
 
+	loadout_options = list(
+	/datum/outfit/loadout/ncrcombatengi,	//Combat Engineer
+	/datum/outfit/loadout/ncrcombatmedic	//Combat Medic
+	)
+
 /datum/outfit/job/ncr/f13combatengineer
-	name = "NCR Combat Engineer"
-	jobtype 		= /datum/job/ncr/f13combatengineer
-	uniform 		= /obj/item/clothing/under/f13/ncr
-	shoes 			= /obj/item/clothing/shoes/f13/military/ncr
-	id 				= /obj/item/card/id/dogtag/ncrtrooper
-	neck 			= /obj/item/storage/belt/holster/ncr
-	head			= /obj/item/clothing/head/f13/ncr
-	mask			= /obj/item/clothing/mask/ncr_facewrap
-	suit 			= /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
-	glasses			= /obj/item/clothing/glasses/welding
-	belt 			= /obj/item/storage/belt/military/assault/ncr/engineer
-	gloves			= /obj/item/clothing/gloves/color/yellow
-	accessory		= /obj/item/clothing/accessory/armband/engine/ncr
-	suit_store		= /obj/item/gun/ballistic/automatic/service
-	l_pocket 		= /obj/item/flashlight
+	name = "NCR Specialist"
+	jobtype 	= /datum/job/ncr/f13combatengineer
+	uniform 	= /obj/item/clothing/under/f13/ncr
+	shoes 		= /obj/item/clothing/shoes/f13/military/ncr
+	id 			= /obj/item/card/id/dogtag/ncrtrooper
+	neck 		= /obj/item/storage/belt/holster/ncr
+	suit	 	= /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
+	suit_store 	= /obj/item/gun/ballistic/automatic/service
+	l_pocket 	= /obj/item/flashlight
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid=1, \
-		/obj/item/storage/bag/money/small/ncrenlisted=1, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/ammo_box/magazine/m556/rifle=3, \
-		/obj/item/grenade/plastic=1, \
-		/obj/item/stack/sheet/metal/fifty=1, \
-		/obj/item/stack/sheet/glass/fifty=1, \
-		/obj/item/kitchen/knife/combat/bayonet=1
-		)
+	/obj/item/storage/survivalkit_aid=1, \
+	/obj/item/storage/bag/money/small/ncrenlisted=1, \
+	/obj/item/ammo_box/magazine/m556/rifle=3, \
+	)
 
 /datum/outfit/job/ncr/f13combatengineer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -647,7 +641,43 @@ Combat Engineer
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/frag)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+
+/datum/outfit/loadout/ncrcombatengi
+	name = "Combat Engineer"
+	head 		= 	/obj/item/clothing/head/f13/ncr
+	mask 		= 	/obj/item/clothing/mask/ncr_facewrap
+	glasses 	= /obj/item/clothing/glasses/welding
+	belt 		= /obj/item/storage/belt/military/assault/ncr/engineer
+	gloves 		= /obj/item/clothing/gloves/color/yellow
+	accessory 	= /obj/item/clothing/accessory/armband/engine/ncr
+	backpack_contents = list(
+	/obj/item/grenade/plastic=1, \
+	/obj/item/stack/sheet/metal/fifty=1, \
+	/obj/item/stack/sheet/glass/fifty=1, \
+	/obj/item/stack/sheet/plasteel/five=2, \
+	/obj/item/stack/sheet/mineral/concrete/ten=1, \
+	/obj/item/stack/sheet/mineral/sandbags=10, \
+	/obj/item/shovel/trench=1
+	)
+
+/datum/outfit/loadout/ncrcombatmedic
+	name = "Combat Medic"
+	belt 		= /obj/item/storage/belt/military/assault/ncr
+	head 		= /obj/item/clothing/head/f13/ncr/steelpot_med
+	gloves 		= /obj/item/clothing/gloves/color/latex/nitrile
+	accessory 	= /obj/item/clothing/accessory/armband/med/ncr
+	l_hand 		= /obj/item/storage/firstaid/regular
+	mask 		= /obj/item/clothing/mask/surgical
+	backpack_contents = list(
+	/obj/item/storage/survivalkit_aid_adv=1, \
+	/obj/item/scalpel=1, \
+	/obj/item/defibrillator/compact=1, \
+	/obj/item/reagent_containers/glass/beaker/plastic=1, \
+	/obj/item/storage/bag/chemistry=1, \
+	/obj/item/reagent_containers/glass/beaker/large=6
+	)
 
 /*
 Mp
@@ -897,6 +927,8 @@ Veteran Ranger
 	/datum/outfit/loadout/vrclassic,	//AMR
 	/datum/outfit/loadout/vrlite, 		//Republic's Pride
 	/datum/outfit/loadout/vrbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/vrauto,		//Assault Carbine
+	/datum/outfit/loadout/vrhunting,	//5.56 Rangemaster
 	)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -914,7 +946,7 @@ Veteran Ranger
 	id = 			/obj/item/card/id/dogtag/ncrvetranger
 	uniform =  		/obj/item/clothing/under/f13/ranger/vet
 	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
-	belt =			/obj/item/storage/belt/military/assault/ncr
+	belt =			/obj/item/storage/belt/military/assault/ncr/crossbelt/reverse
 	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	gloves =		/obj/item/clothing/gloves/rifleman
 	shoes =			/obj/item/clothing/shoes/f13/military/leather
@@ -947,6 +979,19 @@ Veteran Ranger
 		/obj/item/attachments/scope=1,
 		/obj/item/ammo_box/tube/c4570=3)
 
+/datum/outfit/loadout/vrauto
+	name = "Assault Carbine Veteran Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/c5mm=2)
+
+/datum/outfit/loadout/vrhunting
+	name = "Hunting Veteran Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
+	backpack_contents = list(
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/m556/rifle=3)
+
 //NCR Ranger-Sergeant
 /datum/job/ncr/f13rangersergeant
 	title = "NCR Ranger Sergeant"
@@ -962,6 +1007,8 @@ Veteran Ranger
 	/datum/outfit/loadout/rsclassic,	//Sniper Rifle
 	/datum/outfit/loadout/rslite, 		//Scoped Garand
 	/datum/outfit/loadout/rsbrush, 		//Scoped Brushgun
+	/datum/outfit/loadout/rsauto,		//AK112
+	/datum/outfit/loadout/rshunting		//5.56 Rangemaster
 	)
 
 /datum/outfit/job/ncr/f13rangersergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1017,6 +1064,20 @@ Veteran Ranger
 		/obj/item/attachments/scope = 1,
 		/obj/item/ammo_box/tube/c4570 = 3
 		)
+
+/datum/outfit/loadout/rsauto
+	name = "Heavy Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/ak112
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/c5mm/extended = 2
+		)
+
+/datum/outfit/loadout/rshunting
+	name = "Hunting Ranger"
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine/rangermaster
+	backpack_contents = list(
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/m556/rifle=3)
 
 //NCR Ranger
 /datum/job/ncr/f13ranger
@@ -1086,7 +1147,10 @@ Veteran Ranger
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(
-		/obj/item/guncase = 1,
+		/obj/item/gun/ballistic/rifle/mag/commando = 1,
+		/obj/item/ammo_box/magazine/m45 = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/grenade/smokebomb = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/clothing/shoes/f13/military/leather/patrol = 1
 	)

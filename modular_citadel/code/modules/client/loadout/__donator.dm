@@ -446,11 +446,26 @@
 	path = /obj/item/storage/box/large/custom_kit/bangles
 	ckeywhitelist = list("pisshole")
 
+/datum/gear/donator/kits/judithrhodes
+	name = "Judith Rhodes' belongings"
+	path = /obj/item/storage/box/large/custom_kit/judithrhodes
+	ckeywhitelist = list("pisshole")
+
+/datum/gear/donator/kits/lang
+	name = "Lang's belongings"
+	path = /obj/item/storage/box/large/custom_kit/lang
+	ckeywhitelist = list("pisshole")
+
+/datum/gear/donator/kits/pissholecoat
+	name = "CO Greatcoat"
+	path = /obj/item/storage/box/large/custom_kit/pissholecoat
+	ckeywhitelist = list("pisshole")
+
 /datum/gear/donator/kits/trinitykemble
 	name = "Trinity Kemble's belongings"
 	path = /obj/item/storage/box/large/custom_kit/trinitykemble
 	ckeywhitelist = list("yeehawguvnah")
-
+	
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -459,9 +474,11 @@
 	name = "45-70 Gov't Service Revolver with fixed bayonet"
 	slot = SLOT_NECK
 	path = /obj/item/storage/belt/holster/ranger4570bayonet
-	ckeywhitelist = list("cythisisa",
-						"asterixcodix")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	ckeywhitelist = list("cythisia",
+						"asterixcodix",
+						"pisshole",
+						"thegreatcoward")
+	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
 /datum/gear/donator/ranger4570
 	name = "45-70 Gov't Service Revolver"
@@ -487,7 +504,7 @@
 						"tzula",
 						"ollieoxen",
 						"pisshole")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
 /datum/gear/donator/ranger44
 	name = ".44 Magnum Service Revolver"
@@ -542,7 +559,9 @@
 						"cythisia",
 						"honto335",
 						"spartan2548",
-						"lunaticluna")
+						"lunaticluna",
+						"mileswolfe",
+						"thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -558,7 +577,8 @@
 						"rangerbust",
 						"kayzach",
 						"pisshole",
-						"tzula")
+						"tzula",
+						"yeehawguvnah")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger10mm
@@ -572,7 +592,8 @@
 						 "marcusstephens",
 						 "landoorando",
 						 "luke313",
-						 "pisshole")
+						 "pisshole",
+						 "thegreatcoward")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangercaptainpins
@@ -627,7 +648,8 @@
 						"deathlysoul",
 						"lunaticluna",
 						"pisshole",
-						"akforeplay")
+						"akforeplay",
+						"yeehawguvnah")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/rangerpins
@@ -681,8 +703,10 @@
 						"luke313",
 						"spartan2548",
 						"lunaticluna",
-						"tzula")
-	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Off-Duty")
+						"tzula",
+						"mileswolfe",
+						"yeehawguvnah")
+	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
 ////////////////////////////
 ///Ranger items end here.///
@@ -782,4 +806,14 @@
 							"NCR Corporal",
 							"NCR Trooper",
 							"NCR Off-Duty"
+		)
+
+//LM and event only
+/datum/gear/donator/ncrpilot
+	name = "NCR pilot gear"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/storage/box/large/custom_kit/ncrpilot
+	ckeywhitelist = list(
+							"pisshole",
+							"thegreatcoward"
 		)

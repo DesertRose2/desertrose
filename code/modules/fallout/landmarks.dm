@@ -20,7 +20,7 @@
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrmedofficer
-	name = "OSI Officer"
+	name = "OSI Representative"
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrfirstsergeant
@@ -36,7 +36,7 @@
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrcombatengineer
-	name = "NCR Combat Engineer"
+	name = "NCR Specialist"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrcombatmedic
