@@ -246,6 +246,13 @@
 	slowdown = -0.05
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/legion/prime/phalanx
+	name = "legion phalanx armor"
+	desc = "(IV) A modified set of prime armor fitted with straps to carry a shield on one's back at the cost of mobility."
+	icon_state = "legphalanx"
+	slowdown = 0 //yes I know it's already 0 but this helps with clarity
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/shield) //Allows shields to be stored
+
 /obj/item/clothing/suit/armor/f13/legion/prime/explorer
 	name = "legion explorer armor"
 	desc = "(III) A modified set of prime armor with much of the metal replaced by layered strips of laminated linen and leather."
@@ -267,6 +274,13 @@
 	slowdown = -0.1
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/legion/vet/aegis
+	name = "legion aegis armor"
+	desc = "(V) A modified set of veteran armor fitted with straps to carry a shield on one's back at the cost of mobility."
+	icon_state = "legaegis"
+	slowdown = -0.05
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/shield) //Allows shields to be stored
+
 /obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	name = "legion recruit decanus armor"
 	desc = "(IV) Legion recruit armor is a common light armor, supplied to recruit legionaries and to recruit decanus units. Like most Legion armor, it is made from repurposed sports equipment, consisting of a football player's protective shoulder and chest pads reinforced with additional leather padding and worn over a baseball catcher's vest."
@@ -280,11 +294,25 @@
 	slowdown = -0.05
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
+/obj/item/clothing/suit/armor/f13/legion/prime/decan/phalanx
+	name = "legion prime decanus phalanx armor"
+	desc = "(IV) A modified set of prime armor fitted with straps to carry a shield on one's back at the cost of mobility."
+	icon_state = "legphalanx"
+	slowdown = 0
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/shield) //Allows shields to be stored
+
 /obj/item/clothing/suit/armor/f13/legion/vet/decan
 	name = "legion veteran decanus armor"
 	desc = "(VI) Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
 	icon_state = "legvet"
 	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/legion/vet/decan/aegis
+	name = "legion veteran decanus aegis armor"
+	desc = "(VI) A modified set of veteran armor fitted with straps to carry a shield on one's back at the cost of mobility."
+	icon_state = "legaegis"
+	slowdown = -0.05
+	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/nullrod/claymore/chainsaw_sword, /obj/item/shield) //Allows shields to be stored
 
 /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	name = "legion vexillarius armor"
