@@ -144,10 +144,10 @@
 	/obj/item/attachments/scope=2
 	)
 
-/* Chief of Development */
+/* Chief Researcher */
 
 /*datum/job/vtcc/f13chresearcher
-	title = "Chief of Development"
+	title = "Chief Researcher"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Alderman and the Overseer"
@@ -175,7 +175,7 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
 /datum/outfit/job/vtcc/f13chresearcher
-	name = "Chief of Development"
+	name = "Chief Researcher"
 	jobtype = /datum/job/vtcc/f13chresearcher
 
 	ears = /obj/item/radio/headset/headset_vault/cogcity/sci_lead
