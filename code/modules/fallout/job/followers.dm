@@ -32,7 +32,7 @@
 Administrator
 */
 
-/*datum/job/followers/f13leadpractitioner
+/datum/job/followers/f13leadpractitioner
 	title = "Followers Lead Practitioner"
 	head_announce = list("Security")
 	faction = "Followers"
@@ -87,9 +87,10 @@ Administrator
 		/obj/item/book/granter/trait/techno=1)
 
 
+/*
 Professor
-
-/datum/job/followers/f13Professor
+*/
+/*datum/job/followers/f13Professor
 	title = "Followers Scientist"
 	faction = "Followers"
 	total_positions = 3

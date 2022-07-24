@@ -146,7 +146,7 @@
 
 /* Chief of Development */
 
-/datum/job/vtcc/f13chresearcher
+/*datum/job/vtcc/f13chresearcher
 	title = "Chief of Development"
 	total_positions = 1
 	spawn_positions = 1
@@ -210,7 +210,7 @@
 	/obj/item/mmi=1,
 	/obj/item/storage/pill_bottle/mannitol=1,
 	/obj/item/storage/firstaid/brute=1
-	)
+	)*/
 
 /* Provost Marshal */
 
