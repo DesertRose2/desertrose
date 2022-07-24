@@ -241,7 +241,7 @@
 
 /datum/outfit/job/vtcc/f13marshal
 	name = "Marshal"
-	jobtype = 		/datum/job/vtcc/f13provostmarshal
+	jobtype = 		/datum/job/vtcc/f13marshal
 	id =            /obj/item/card/id/silver
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
 	r_pocket = 		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super
