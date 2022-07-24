@@ -321,8 +321,8 @@
 /obj/effect/landmark/start/f13/alderman
 	name = "Alderman"
 
-/obj/effect/landmark/start/f13/provostmarshal
-	name = "Provost Marshal"
+/obj/effect/landmark/start/f13/marshal
+	name = "Marshal"
 
 /obj/effect/landmark/start/f13/merchant
 	name = "Merchant"
@@ -340,10 +340,10 @@
 	name = "Provost Sergeant"
 
 /obj/effect/landmark/start/f13/provost
-	name = "Provost"
+	name = "Sherif"
 
 /obj/effect/landmark/start/f13/townsecscout
-	name = "Provost Cadet"
+	name = "Deputy"
 
 /obj/effect/landmark/start/f13/roadie
 	name = "Roadie"

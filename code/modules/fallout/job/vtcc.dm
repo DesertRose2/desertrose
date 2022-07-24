@@ -212,17 +212,17 @@
 	/obj/item/storage/firstaid/brute=1
 	)*/
 
-/* Provost Marshal */
+/* Marshal */
 
-/datum/job/vtcc/f13provostmarshal
-	title = "Provost Marshal"
+/datum/job/vtcc/f13marshal
+	title = "Marshal"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Aldermen, Marshals and the Overseer"
 	description = "As the head of the security forces, you are the face of justice in the town. Uphold the law, or bend it to suit your needs, you set the precedent for how justice is doled out in the town, so bear that in mind when you sentence that pickpocket to death. Maintain the armoury and keep that watchful eye on the elevator to the Vault below. Whatever you do, don't lose your head."
 	req_admin_notify = 1
 
-	outfit = /datum/outfit/job/vtcc/f13provostmarshal
+	outfit = /datum/outfit/job/vtcc/f13marshal
 	loadout_options = list(
 		/datum/outfit/loadout/secchief,
 		/datum/outfit/loadout/peacekeeper,
@@ -239,8 +239,8 @@
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
-/datum/outfit/job/vtcc/f13provostmarshal
-	name = "Provost Marshal"
+/datum/outfit/job/vtcc/f13marshal
+	name = "Marshal"
 	jobtype = 		/datum/job/vtcc/f13provostmarshal
 	id =            /obj/item/card/id/silver
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec_lead
@@ -294,12 +294,12 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
-/* Provost */
+/* Sheriff */
 /datum/job/vtcc/f13provost
-	title = "Provost"
+	title = "Sheriff"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Aldermen and the Provost Marshal."
+	supervisors = "the Aldermen and the Marshal."
 	description = "Participating in strike squads against raider encampments and performing surgical strikes against enemies of the Coalition, you and the rest of the elite Provosts don't so much as charge into battle as you do prevent the battle from happening; enforcing the law is still the order of the day, but destabilising real threats and taking out bands of raiders is a priority."
 	exp_requirements = 1500
 	exp_type = EXP_TYPE_VTCCSEC
@@ -322,7 +322,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13provost
-	name = "Provost"
+	name = "Sheriff"
 	jobtype = 		/datum/job/vtcc/f13provost
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
@@ -373,8 +373,8 @@
 	name = "Enforcer"
 	backpack_contents = list(
 		/obj/item/clothing/glasses/hud/health=1,
-		/obj/item/gun/energy/laser/aer9=1,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/assault_rifle/vtcc=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/grenade/smokebomb=2
 	)
 
@@ -386,13 +386,13 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vaultheavyhelm)
 
 
-/* Provost Scout */
+/* Deputy */
 
 /datum/job/vtcc/f13citysecscout
-	title = "Provost Cadet"
+	title = "Deputy"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Provosts."
+	supervisors = "the Sheriffs."
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it in with them, inside the outer ring. It's there that you will learn to dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
 
 	outfit = /datum/outfit/job/vtcc/f13citysecscout
@@ -415,7 +415,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/vtcc/f13citysecscout
-	name = "Provost Cadet"
+	name = "Deputy"
 	jobtype = /datum/job/vtcc/f13citysecscout
 	ears = 			/obj/item/radio/headset/headset_vault/cogcity/sec
 	id =            /obj/item/card/id
