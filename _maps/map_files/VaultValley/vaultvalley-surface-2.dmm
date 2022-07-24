@@ -4202,7 +4202,7 @@
 	},
 /area/f13/building)
 "eab" = (
-/obj/effect/landmark/start/f13/provostmarshal,
+/obj/effect/landmark/start/f13/marshal,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
