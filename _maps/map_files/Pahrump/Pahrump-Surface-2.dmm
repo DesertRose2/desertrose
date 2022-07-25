@@ -20793,6 +20793,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/skeleton/templar{
 	desc = "An ancient and quite maddened ghoul, his dessicated body is wasted and parchment dry beneath his armor... Faith it would seem is the only thing holding him together.";
+	faction = list("skeleton","town");
 	name = "Laz The Faithful"
 	},
 /turf/open/floor/carpet/red,
@@ -71799,6 +71800,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"xZG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/preacher,
+/turf/open/floor/carpet/green,
+/area/f13/building)
 "xZO" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/road{
@@ -110751,7 +110757,7 @@ koD
 vMR
 pOD
 swT
-swT
+xZG
 enr
 yaB
 gfo
