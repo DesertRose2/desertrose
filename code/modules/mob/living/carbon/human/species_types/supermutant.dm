@@ -51,8 +51,6 @@
 		return 0
 	return ..()
 
-//datum/species/smutant/get_racelist(mob/user)
-
 /datum/species/smutant/nightkin
 	name = "nightkin"
 	id = "nightkin"

@@ -120,6 +120,7 @@
 	icon_state = "mutie_bracer"
 	item_state = "mutie_bracer"
 	armor = list("tier" = 4, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	species_restricted = list("Super Mutant","Nightkin")
 
 /obj/item/clothing/gloves/f13/mutie/mk2
 	icon_state = "mutie_bracer_mk2"

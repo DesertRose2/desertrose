@@ -223,6 +223,7 @@
 	desc = "(V) Multiple sets of NCR patrol vests that have been fused, stitched and welded together in order to fit the frame of a Super Mutant."
 	icon_state = "mutie_ncr"
 	item_state = "mutie_ncr"
+	species_restricted = list("Super Mutant","Nightkin")
 
 //Not used
 /obj/item/clothing/suit/armor/f13/ncrarmor/captain
@@ -421,6 +422,7 @@
 	name = "mutant ranger combat helmet"
 	icon_state = "mutie_vet_ranger"
 	item_state = "mutie_vet_ranger"
+	species_restricted = list("Super Mutant","Nightkin")
 
 
 //Armours
@@ -485,11 +487,13 @@
 	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor, only redesigned to fit a super mutant."
 	icon_state = "mutie_ranger_armour"
 	item_state = "mutie_ranger_armour"
+	species_restricted = list("Super Mutant","Nightkin")
 
 /obj/item/clothing/suit/armor/f13/rangercombat/mutie
 	name = "mutant ranger combat armor"
 	icon_state = "mutie_vet_ranger"
 	item_state = "mutie_vet_ranger"
+	species_restricted = list("Super Mutant","Nightkin")
 
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"

@@ -124,12 +124,12 @@
 
 /datum/gear/supermutant/uniform
 	name = "Shorts"
-	path = /obj/item/clothing/under/f13/mutieshorts
+	path = /obj/item/clothing/under/f13/mutie
 	subcategory = LOADOUT_SUBCATEGORY_SMUTANT_UNIFORM
 
 /datum/gear/supermutant/uniform/loincloth
 	name = "Loincloth"
-	path = /obj/item/clothing/under/f13/mutieloincloth
+	path = /obj/item/clothing/under/f13/mutie/loincloth
 
 /datum/gear/supermutant/uniform/suit
 	name = "Suit"
@@ -149,15 +149,15 @@
 
 /datum/gear/supermutant/uniform/santa
 	name = "Santa Suit"
-	path = /obj/item/clothing/under/f13/mutiesanta
+	path = /obj/item/clothing/under/f13/mutie/santa
 
 /datum/gear/supermutant/uniform/vault
 	name = "Torn Vault suit"
-	path = /obj/item/clothing/under/f13/vaultmutie
+	path = /obj/item/clothing/under/f13/mutie/vault
 
 /datum/gear/supermutant/uniform/ranger
 	name = "NCR Uniform"
-	path = /obj/item/clothing/under/f13/ncrmutie
+	path = /obj/item/clothing/under/f13/mutie/ncr
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Veteran Ranger",
 							"NCR Ranger Sergeant",

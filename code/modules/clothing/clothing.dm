@@ -50,9 +50,9 @@
 	var/dynamic_fhair_suffix = ""//mask > head for facial hair
 
 	//basically a restriction list.
-	var/list/species_restricted = null
+	var/list/species_restricted = list("exclude","Super Mutant","Nightkin")
 	//Basically syntax is species_restricted = list("Species Name","Species Name")
-	//Add a "exclude" string to do the opposite, making it only only species listed that can't wear it.
+	//Add a "exclude" string to do the opposite, making it so the listed species can't wear it.
 	//You append this to clothing objects
 
 
