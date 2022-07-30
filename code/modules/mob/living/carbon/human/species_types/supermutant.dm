@@ -33,7 +33,9 @@
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage += 50
-	C.faction |= "supermutant"
+	C.maxHealth = 200
+	C.health = 200
+	C.faction = "supermutant"
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
 
