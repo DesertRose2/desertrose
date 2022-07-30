@@ -1099,8 +1099,8 @@ Outlaw
 		/obj/item/gun/ballistic/shotgun/trench = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
-		/datum/reagent/drug/turbo = 2,
-		/datum/reagent/drug/jet = 2
+		/obj/item/reagent_containers/pill/patch/f13/turbo = 2,
+		/obj/item/reagent_containers/pill/patch/f13/jet  = 2
 	)
 
 /datum/outfit/loadout/eightiesranged
