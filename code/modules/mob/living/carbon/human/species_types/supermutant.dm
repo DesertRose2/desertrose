@@ -26,14 +26,13 @@
 	use_skintones = 0
 	sexes = 0
 	armor = 10
-	speedmod = 0.75
+	speedmod = 0.9
 	liked_food = JUNKFOOD | FRIED | RAW
 
 /datum/species/smutant/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage += 50
-	C.crit_threshold = HEALTH_THRESHOLD_CRIT + 200
 	C.faction |= "supermutant"
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
