@@ -642,7 +642,8 @@ Outlaw
 	/datum/outfit/loadout/eidolon,
 	/datum/outfit/loadout/aviator,
 	/datum/outfit/loadout/trapper,
-	/datum/outfit/loadout/trouper)
+	/datum/outfit/loadout/trouper,
+	/datum/outfit/loadout/architect)
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -908,6 +909,22 @@ Outlaw
 		/obj/item/reagent_containers/food/drinks/bottle/goldschlager=1,
 		/obj/item/clothing/accessory/pocketprotector/cosmetology=1)
 
+
+/datum/outfit/loadout/architect //Donator loadout - Vincieyork
+	name = "Wasteland Architect"
+	uniform = /obj/item/clothing/under/pants/jeans
+	suit = /obj/item/clothing/suit/jacket/flannel/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/welding/f13
+	belt = /obj/item/storage/belt/utility/full
+	l_hand = /obj/item/gun/ballistic/revolver/widowmaker
+	backpack_contents = list(
+		/obj/item/stack/sheet/metal/ten=2,
+		/obj/item/stack/sheet/glass/ten=2,
+		/obj/item/stack/sheet/mineral/wood/twenty=2,
+		/obj/item/circuitboard/machine/autolathe=1,
+		/obj/item/storage/backpack/duffelbag/engineering=1)
+
 //Note: Recipes will be gone and into a book as soon as I figure out how to do that much
 /datum/job/wasteland/f13tribal
 	title = "Tribal"
@@ -1082,8 +1099,8 @@ Outlaw
 		/obj/item/gun/ballistic/shotgun/trench = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
-		/datum/reagent/drug/turbo = 2,
-		/datum/reagent/drug/jet = 2
+		/obj/item/reagent_containers/pill/patch/f13/turbo = 2,
+		/obj/item/reagent_containers/pill/patch/f13/jet  = 2
 	)
 
 /datum/outfit/loadout/eightiesranged
