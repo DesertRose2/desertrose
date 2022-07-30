@@ -147,15 +147,13 @@
 							"Outer Wall Citizen",
 							"Roadie",
 							"Innkeeper",
-							"Hoistway Preacher",
+							"Broker",
 							"Researcher",
-							"City Security Cadet",
-							"City Security Officer",
+							"Provost Cadet",
 							"Provost",
-							"Provost Sergeant",
 							"Provost Marshal",
 							"Alderman",
-							"Chief Researcher",
+							"Chief of Development",
 							"Merchant")
 
 /datum/gear/uniform/vault/greaser/skirt

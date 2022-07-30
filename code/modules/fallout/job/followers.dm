@@ -86,10 +86,11 @@ Administrator
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/book/granter/trait/techno=1)
 
+
 /*
 Professor
-
-/datum/job/followers/f13Professor
+*/
+/*datum/job/followers/f13Professor
 	title = "Followers Scientist"
 	faction = "Followers"
 	total_positions = 3

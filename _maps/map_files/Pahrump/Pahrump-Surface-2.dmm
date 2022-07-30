@@ -14854,8 +14854,8 @@
 "fdM" = (
 /obj/effect/overlay/dirt,
 /obj/structure/fence/wooden{
-	pixel_y = 24;
-	pixel_x = -17
+	pixel_x = -17;
+	pixel_y = 24
 	},
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -16714,12 +16714,12 @@
 /area/f13/raiders)
 "fJp" = (
 /mob/living/simple_animal/hostile/wolf/feral_dog/alpha{
+	faction = list("neutral");
+	health = 200;
+	icon_dead = "rottweiler_dead";
 	icon_living = "rottweiler";
 	icon_state = "rottweiler";
-	icon_dead = "rottweiler_dead";
-	name = "Guerrilla";
-	health = 200;
-	faction = list("neutral")
+	name = "Guerrilla"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
@@ -20793,6 +20793,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/skeleton/templar{
 	desc = "An ancient and quite maddened ghoul, his dessicated body is wasted and parchment dry beneath his armor... Faith it would seem is the only thing holding him together.";
+	faction = list("skeleton","town");
 	name = "Laz The Faithful"
 	},
 /turf/open/floor/carpet/red,
@@ -23651,8 +23652,8 @@
 "hYM" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/saltshaker{
-	pixel_y = -10;
-	pixel_x = 16
+	pixel_x = 16;
+	pixel_y = -10
 	},
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 16
@@ -24801,8 +24802,8 @@
 "iqZ" = (
 /obj/structure/table/wood,
 /obj/item/trash/plate{
-	pixel_y = -7;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = -7
 	},
 /turf/open/indestructible/ground/outside/dirt/sonora/corner{
 	dir = 8
@@ -28670,8 +28671,8 @@
 "jAh" = (
 /mob/living/simple_animal/hostile/retaliate/frog{
 	faction = list("neutral");
-	health = 100;
 	harm_intent_damage = 0;
+	health = 100;
 	maxHealth = 100
 	},
 /turf/open/water,
@@ -48912,8 +48913,8 @@
 	},
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
-	pixel_y = 21;
-	pixel_x = 17
+	pixel_x = 17;
+	pixel_y = 21
 	},
 /turf/open/indestructible/ground/outside/dirt/sonora,
 /area/f13/wasteland)
@@ -51411,7 +51412,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/provostmarshal,
+/obj/effect/landmark/start/f13/marshal,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -67535,8 +67536,8 @@
 "wHJ" = (
 /obj/structure/flora/tree/tall{
 	icon_state = "tree_3";
-	pixel_y = 8;
-	pixel_x = -15
+	pixel_x = -15;
+	pixel_y = 8
 	},
 /obj/structure/reagent_dispensers/barrel/dangerous{
 	pixel_x = -20;
@@ -70003,8 +70004,8 @@
 	pixel_y = 25
 	},
 /obj/structure/flora/rock/pile/largejungle{
-	pixel_y = -30;
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = -30
 	},
 /turf/open/water,
 /area/f13/wasteland)
@@ -71799,6 +71800,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"xZG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/preacher,
+/turf/open/floor/carpet/green,
+/area/f13/building)
 "xZO" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/road{
@@ -110751,7 +110757,7 @@ koD
 vMR
 pOD
 swT
-swT
+xZG
 enr
 yaB
 gfo
