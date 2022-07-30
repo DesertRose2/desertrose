@@ -560,6 +560,7 @@
 	icon_state = "mutie_power_armor_helmet"
 	item_state = "mutie_power_armor_helmet"
 	requires_training = FALSE
+	species_restricted = list("Super Mutant","Nightkin")
 	armor = list("tier" = 8, "energy" = 60, "bomb" = 50, "bio" = 30, "rad" = 0, "fire" = 90, "acid" = 0, "wound" = 60)
 	armor_block_chance = 80
 	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
@@ -995,6 +996,7 @@
 	icon_state = "mutie_bladed_helmet"
 	item_state = "mutie_bladed_helmet"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 28, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
+	species_restricted = list("Super Mutant","Nightkin")
 
 /obj/item/clothing/head/helmet/f13/mutie/knight
 	name = "mutant crusaders helm"

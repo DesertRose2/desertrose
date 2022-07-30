@@ -33,6 +33,7 @@
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage += 50
+	C.crit_threshold = HEALTH_THRESHOLD_CRIT + 200
 	C.faction |= "supermutant"
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
@@ -49,8 +50,6 @@
 	if(rank in GLOB.brotherhood_positions) //no.
 		return 0
 	return ..()
-
-//datum/species/smutant/get_racelist(mob/user)
 
 /datum/species/smutant/nightkin
 	name = "nightkin"

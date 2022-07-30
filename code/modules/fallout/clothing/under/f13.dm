@@ -1220,31 +1220,32 @@
 
 //Super Mutants
 
-/obj/item/clothing/under/f13/mutieshorts
+/obj/item/clothing/under/f13/mutie
 	name = "large torn shorts"
 	desc = "An incredibly damaged pair of shorts, large enough to fit a super mutant."
 	icon_state = "mutie_shorts"
 	item_state = "mutie_shorts"
+	species_restricted = list("Super Mutant","Nightkin")
 
-/obj/item/clothing/under/f13/mutieloincloth
+/obj/item/clothing/under/f13/mutie/loincloth
 	name = "large loincloth"
 	desc = "An incredibly large loincloth that's closer in appearance to a skirt than anything else."
 	icon_state = "mutie_loincloth"
 	item_state = "mutie_loincloth"
 
-/obj/item/clothing/under/f13/mutiesanta
+/obj/item/clothing/under/f13/mutie/santa
 	name = "red and white jumspuit"
 	desc = "A fairly damaged red and white shirt with matching shorts, large enough to fit a super mutant."
 	icon_state = "mutie_santa"
 	item_state = "mutie_santa"
 
-/obj/item/clothing/under/f13/vaultmutie
+/obj/item/clothing/under/f13/mutie/vault
 	name = "torn vault 113 jumpsuit"
 	desc = "Once, it was a blue jumpsuit with a yellow vault pattern and the number 11 printed on it, now torn and ripped."
 	icon_state = "mutie_vault_jumspuit"
 	item_state = "mutie_vault_jumspuit"
 
-/obj/item/clothing/under/f13/ncrmutie
+/obj/item/clothing/under/f13/mutie/ncr
 	name = "\improper NCR mutant uniform"
 	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
 	icon_state = "mutie_ranger_under"

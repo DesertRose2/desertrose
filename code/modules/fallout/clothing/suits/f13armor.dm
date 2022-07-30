@@ -515,6 +515,7 @@
 	requires_training = FALSE
 	armor_block_chance = 65
 	deflection_chance = 40
+	species_restricted = list("Super Mutant","Nightkin")
 
 
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
@@ -1032,6 +1033,11 @@
 
 //Mutants
 
+/obj/item/clothing/suit/armor/f13/mutie
+	name = "mutie armour template"
+	desc = "If you're seeing this item, report it as a bug"
+	species_restricted = list("Super Mutant","Nightkin")
+
 /obj/item/clothing/suit/armor/f13/mutie/poncho
 	name = "mutant poncho"
 	desc = "(IV) An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
@@ -1087,7 +1093,7 @@
 	item_state = "ptolemaic_armor"
 	armor = list("tier" = 7,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 60, "acid" = 50)
 
-// Tribal 
+// Tribal
 /obj/item/clothing/suit/f13/tribal
 	name = "tribal armor"
 	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."

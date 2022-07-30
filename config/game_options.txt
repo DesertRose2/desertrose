@@ -447,6 +447,7 @@ SILICON_MAX_LAW_AMOUNT 12
 ROUNDSTART_RACES human
 ROUNDSTART_RACES ghoul
 ROUNDSTART_RACES smutant
+ROUNDSTART_RACES nightkin
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 #ROUNDSTART_RACES lizard
