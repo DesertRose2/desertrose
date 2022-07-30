@@ -69,7 +69,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Followers Lead Practitioner",
 
 	"Alderman",
-	"Provost Marshal",
+	"Marshal",
 	"Merchant",
 	"Chief of Development"
 	))
@@ -118,7 +118,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Vault-tec Engineer",
 
 "Alderman",
-"Provost Marshal",
+"Marshal",
 "Chief of Development",
 "Provost Sergeant",
 "Provost",
@@ -335,7 +335,7 @@ GLOBAL_LIST_INIT(followers_positions, list(
 ))
 GLOBAL_LIST_INIT(vtcc_command_positions, list(
 	"Alderman",
-	"Provost Marshal",
+	"Marshal",
 	"Chief of Development"
 ))
 
@@ -393,7 +393,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Lead Practitioner")),
 	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Commanding Officer","NCR First Sergeant","NCR Veteran Ranger","OSI Officer")),
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Centurion","Legion Venator")),
-	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Provost Marshal", "Chief of Development"))
+	EXP_TYPE_VTCCCOMMAND   = list("titles" = list("Alderman", "Marshal", "Chief of Development"))
 
 ))
 
