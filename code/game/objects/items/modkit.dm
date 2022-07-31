@@ -58,6 +58,21 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/combat/ncr_patrol)
 	result_item = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
 
+/obj/item/modkit/worm_hat
+	name = "Brahmin slouch modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/brahmincowboyhat)
+	result_item = /obj/item/clothing/head/helmet/f13/brahminslouchhat
+
+/obj/item/modkit/worm_jacket
+	name = "Badland Bolero modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/raider/BadlandBolero
+
+/obj/item/modkit/worm_uniform
+	name = "old fashioned getup modkit"
+	target_items = list(/obj/item/clothing/under/f13/caravan)
+	result_item = /obj/item/clothing/under/f13/wormysuit
+
 /obj/item/modkit/shank
 	name = "follower's duster modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)

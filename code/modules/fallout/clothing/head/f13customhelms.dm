@@ -68,7 +68,7 @@
 
 /obj/item/clothing/head/helmet/f13/brahminslouchhat
 	name = "brahmin leather slouch hat"
-	desc = "(II) A cowboy hat made from brahmin hides, somebody unbent the sides from this one."
+	desc = "(II) A cowboy hat made from brahmin hides, somebody unbent the sides from this one. A silver eagle is pinned to the front."
 	icon_state = "BrahSlouch"
 	item_state = "BrahSlouch"
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
