@@ -177,8 +177,9 @@
 	alternate_worn_layer = HAIR_LAYER-1 //Display over hair
 	unique_reskin = list(
 						"Tan" = "kemblecoat_tan",
-						"Green" = "kemblecoat_green",
-						)
+						"Green" = "kemblecoat_green",)
+
+//Custom item - Gomezash - Sprite adapted from Vaquero and Badland
 /obj/item/clothing/suit/armor/f13/raider/BadlandBolero
 	name = "badlands bolero"
 	desc = "(IV) An old bolero jacket with a bandolier over it and a straps reinforcing the arms."
