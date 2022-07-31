@@ -151,7 +151,7 @@
 							"Researcher",
 							"Provost Cadet",
 							"Provost",
-							"Provost Marshal",
+							"Marshal",
 							"Alderman",
 							"Chief of Development",
 							"Merchant")
