@@ -29,6 +29,11 @@
 	path = /obj/item/storage/box/large/custom_kit/stephaniemoui
 	ckeywhitelist = list("xerdies")
 
+/datum/gear/donator/kits/Wormwood
+	name = "Wormwoods belongings"
+	path = /obj/item/storage/box/large/custom_kit/Wormwood
+	ckeywhitelist = list("Gomezash")
+
 /datum/gear/donator/kits/danaseshata
 	name = "Dana Seshata's belongings"
 	path = /obj/item/storage/box/large/custom_kit/danaseshata
@@ -465,7 +470,7 @@
 	name = "Trinity Kemble's belongings"
 	path = /obj/item/storage/box/large/custom_kit/trinitykemble
 	ckeywhitelist = list("yeehawguvnah")
-	
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////

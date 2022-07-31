@@ -10,6 +10,12 @@
 	new /obj/item/clothing/mask/bandana/skull(src)
 	new /obj/item/clothing/glasses/sunglasses/big(src)
 
+//Wormwood - Gomezash
+/obj/item/storage/box/large/custom_kit/Wormwood/PopulateContents()
+	new /obj/item/modkit/worm_hat(src)
+	new /obj/item/modkit/worm_jacket(src)
+	new /obj/item/modkit/worm_uniform(src)
+
 //Stephanie Moui - xerdies
 /obj/item/storage/box/large/custom_kit/stephaniemoui/PopulateContents()
 	new /obj/item/pda(src)
