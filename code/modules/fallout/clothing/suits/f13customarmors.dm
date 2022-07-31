@@ -160,13 +160,20 @@
 	desc = "(VI) An oversized trenchcoat, as if ready for cold weather, complete with an NCR vest atop a sweater under it all."
 	icon_state = "ncrofficergcoat"
 	item_state = "ncrofficergcoat"
-	
+
 //Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
 /obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
 	name = "ranger-sergeant's light riot armour"
 	desc = "(VI) The under-armour component of riot gear, separated from its coat to allow the wearer a little more freedom of movement."
 	icon_state = "rangerkemble"
 	item_state = "rangerkemble"
+
+//Custom item - Gomezash - sprite adapted from Badlands armour and Vaquero armour
+/obj/item/clothing/suit/armor/f13/raider/wormjacket
+	name = "badland bolero jacket"
+	desc = "(IV) An older bolero jacket with a bandolier over it and a straps reinforcing the arms."
+	icon_state = "badland_bolero"
+	item_state = "badland_bolero"
 
 //Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
 /obj/item/storage/belt/holster/light_riot

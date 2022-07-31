@@ -65,3 +65,10 @@
 	icon_state = "rangerkembleup"
 	item_state = "rangerkembleup"
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+
+//Custom item - Gomezash / Wormwood - sprite adapted from NCR slouch
+/obj/item/clothing/head/helmet/f13/raider/wormhat
+	name = "brahmin slouch hat"
+	desc = "(IV) An older looking brahmin skin cowboy hat, that somebody unbent the brim of. This one's got a silver eagle pinned to the front."
+	icon_state = "brahmin_slouch"
+	item_state = "brahmin_slouch"
