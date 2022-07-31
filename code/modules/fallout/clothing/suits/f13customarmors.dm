@@ -160,7 +160,7 @@
 	desc = "(VI) An oversized trenchcoat, as if ready for cold weather, complete with an NCR vest atop a sweater under it all."
 	icon_state = "ncrofficergcoat"
 	item_state = "ncrofficergcoat"
-	
+
 //Custom item - Yeehawguvnah - Sprite adapted from existing Elite Riot Gear and Combat Armour Mk. 2 sprites, original creator unknown
 /obj/item/clothing/suit/armor/f13/rangercombat/sergeant/light_riot
 	name = "ranger-sergeant's light riot armour"
@@ -179,3 +179,11 @@
 						"Tan" = "kemblecoat_tan",
 						"Green" = "kemblecoat_green",
 						)
+/obj/item/clothing/suit/armor/f13/raider/BadlandBolero
+	name = "badlands bolero"
+	desc = "(IV) An old bolero jacket with a bandolier over it and a straps reinforcing the arms."
+	icon_state = "BadlandBolero"
+	item_state = "BadlandBolero"
+		body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	strip_delay = 40

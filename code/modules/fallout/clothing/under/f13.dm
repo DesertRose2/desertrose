@@ -1186,6 +1186,12 @@
 	item_state = "marlowduds"
 	can_adjust = TRUE
 
+/obj/item/clothing/under/f13/wormysuit
+	name = "old fashioned getup"
+	desc = "A strange mix of clothing, that all together doesn't look that bad. That neck tie looks alarmingly like a legionaries sash."
+	icon_state = "YumahPioneer"
+	item_state = "YumahPioneer"
+
 /obj/item/clothing/under/f13/ikeduds
 	name = "gunfighter's gang attire"
 	desc = "A washed out crimson overshirt with blue neckerchief and raw buckskin trousers. The attire is synonymous with the colors of the criminal Marlow gang."

@@ -65,3 +65,11 @@
 	icon_state = "rangerkembleup"
 	item_state = "rangerkembleup"
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 39, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/brahminslouchhat
+	name = "brahmin leather slouch hat"
+	desc = "(II) A cowboy hat made from brahmin hides, somebody unbent the sides from this one."
+	icon_state = "BrahSlouch"
+	item_state = "BrahSlouch"
+	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+	flags_inv = HIDEEARS|HIDEHAIR
