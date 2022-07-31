@@ -28,6 +28,12 @@
 	new /obj/item/modkit/riotgear_helmet/fox(src)
 	new /obj/item/clothing/under/f13/ranger/vet/foxflannel(src)
 
+//Wormwood - Gomezash
+/obj/item/storage/box/large/custom_kit/wormwood/PopulateContents()
+	new /obj/item/modkit/wormsuit(src)
+	new /obj/item/modkit/wormhat(src)
+	new /obj/item/modkit/wormuniform(src)
+
 //Rigs - topbirb
 /obj/item/storage/box/large/custom_kit/rigs/PopulateContents()
 	new /obj/item/modkit/riotgear/rigs(src)
