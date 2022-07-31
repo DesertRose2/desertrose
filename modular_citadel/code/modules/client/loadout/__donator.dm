@@ -32,7 +32,7 @@
 /datum/gear/donator/kits/Wormwood
 	name = "Wormwoods belongings"
 	path = /obj/item/storage/box/large/custom_kit/Wormwood
-	ckeywhitelist = list("Gomezash")
+	ckeywhitelist = list("gomezash")
 
 /datum/gear/donator/kits/danaseshata
 	name = "Dana Seshata's belongings"
