@@ -185,6 +185,5 @@
 	desc = "(IV) An old bolero jacket with a bandolier over it and a straps reinforcing the arms."
 	icon_state = "BadlandBolero"
 	item_state = "BadlandBolero"
-		body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	strip_delay = 40
