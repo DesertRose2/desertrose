@@ -566,7 +566,8 @@
 						"spartan2548",
 						"lunaticluna",
 						"mileswolfe",
-						"thegreatcoward")
+						"thegreatcoward",
+						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -710,7 +711,8 @@
 						"lunaticluna",
 						"tzula",
 						"mileswolfe",
-						"yeehawguvnah")
+						"yeehawguvnah",
+						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
 ////////////////////////////
