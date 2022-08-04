@@ -232,7 +232,7 @@
 	access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
 	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_COMMAND, ACCESS_VTCC_SEC, ACCESS_VTCC_BAR, ACCESS_VTCC_SHOP, ACCESS_VTCC_SEC, ACCESS_VTCC_RESEARCH)
 
-/datum/outfit/job/vtcc/f13provostmarshal/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/vtcc/f13marshal/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
