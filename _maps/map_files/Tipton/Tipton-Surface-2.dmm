@@ -2490,7 +2490,9 @@
 /area/f13/klamat)
 "bDd" = (
 /obj/structure/closet/wardrobe/white,
-/obj/machinery/light/small,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "bDt" = (
@@ -9652,7 +9654,7 @@
 /area/f13/klamat)
 "gsp" = (
 /mob/living/simple_animal/hostile/gecko{
-	butcher_results = list(/mob/living/simple_animal/hostile/gecko = 2);
+	butcher_results = list(/mob/living/simple_animal/hostile/gecko=2);
 	color = "#fcba03";
 	desc = "A large mutated reptile with golden hide, sharp teeth and a kind-natured attitude. These creatures are rare up here - it seems it's seeking out warmth.";
 	faction = list("neutral");
@@ -12265,6 +12267,9 @@
 /area/f13/building)
 "iay" = (
 /obj/effect/mob_spawn/human/corpse/charredskeleton,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "iaB" = (
@@ -14446,6 +14451,12 @@
 /obj/item/pen,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"jzK" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/building)
 "jzN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/weather/dirt{
@@ -14765,7 +14776,7 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/klamat)
 "jKP" = (
-/obj/effect/landmark/start/f13/marshal,
+/obj/effect/landmark/start/f13/provostmarshal,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -20903,7 +20914,7 @@
 /area/f13/casino)
 "nSX" = (
 /mob/living/simple_animal/hostile/gecko{
-	butcher_results = list(/mob/living/simple_animal/hostile/gecko = 2);
+	butcher_results = list(/mob/living/simple_animal/hostile/gecko=2);
 	color = "#fcba03";
 	desc = "A large mutated reptile with golden hide, sharp teeth and a kind-natured attitude. These creatures are rare up here - it seems it's seeking out warmth.";
 	faction = list("neutral");
@@ -21435,7 +21446,6 @@
 /area/f13/wasteland)
 "omD" = (
 /obj/machinery/workbench/advanced,
-/obj/item/gun/ballistic/automatic/pistol/n99/executive,
 /turf/open/floor/wood,
 /area/f13/building)
 "omH" = (
@@ -24557,7 +24567,7 @@
 /area/f13/building)
 "qrV" = (
 /mob/living/simple_animal/hostile/gecko{
-	butcher_results = list(/mob/living/simple_animal/hostile/gecko = 2);
+	butcher_results = list(/mob/living/simple_animal/hostile/gecko=2);
 	color = "#fcba03";
 	desc = "A large mutated reptile with golden hide, sharp teeth and a kind-natured attitude. These creatures are rare up here - it seems it's seeking out warmth.";
 	faction = list("neutral");
@@ -29884,6 +29894,12 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/klamat)
+"uhv" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/temperatre,
+/area/f13/building)
 "uhI" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -31461,6 +31477,12 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
+/area/f13/building)
+"vlB" = (
+/obj/structure/ladder/unbreakable{
+	id = jungleunderground
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/building)
 "vmr" = (
 /obj/structure/chair/sofa/corner{
@@ -33798,8 +33820,8 @@
 /obj/machinery/button/door{
 	id = "bosdorm3";
 	normaldoorcontrol = 1;
-	pixel_y = 32;
-	specialfunctions = 4
+	specialfunctions = 4;
+	pixel_y = 32
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirty"
@@ -35939,8 +35961,8 @@ uHd
 uHd
 uHd
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 dbq
 dbq
@@ -36142,8 +36164,8 @@ uHd
 uHd
 uHd
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 dbq
 dbq
@@ -36345,8 +36367,8 @@ uHd
 uHd
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 dbq
 dbq
@@ -36549,7 +36571,7 @@ uHd
 dbq
 dbq
 dbq
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -36752,7 +36774,7 @@ uHd
 dbq
 dbq
 dbq
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -36954,8 +36976,8 @@ uHd
 uHd
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 dbq
 aHr
@@ -37157,7 +37179,7 @@ fkW
 uHd
 dbq
 dbq
-dbq
+aHr
 dbq
 dbq
 aHr
@@ -37360,8 +37382,8 @@ uHd
 uHd
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 aHr
 aHr
 dbq
@@ -37563,7 +37585,7 @@ uHd
 uHd
 dbq
 dbq
-dbq
+aHr
 aHr
 aHr
 dbq
@@ -38778,7 +38800,7 @@ uHd
 dbq
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -38980,7 +39002,7 @@ uHd
 dbq
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -39182,7 +39204,7 @@ uHd
 dbq
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -39384,7 +39406,7 @@ uHd
 dbq
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -39586,7 +39608,7 @@ aHr
 aHr
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -39788,7 +39810,7 @@ tvo
 tvo
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -39990,7 +40012,7 @@ tLi
 tvo
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -40192,7 +40214,7 @@ tLi
 tvo
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -40394,7 +40416,7 @@ tLi
 tvo
 aHr
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -40596,7 +40618,7 @@ tvo
 tvo
 tvo
 aHr
-dbq
+aHr
 dbq
 dbq
 dbq
@@ -42210,7 +42232,7 @@ tSi
 uHd
 dbq
 uHd
-uHd
+aHr
 aHr
 dbq
 dbq
@@ -42412,7 +42434,7 @@ tSi
 uHd
 uHd
 uHd
-dbq
+aHr
 aHr
 dbq
 dbq
@@ -42614,7 +42636,7 @@ tSi
 uHd
 uHd
 uHd
-dbq
+aHr
 aHr
 dbq
 dbq
@@ -42816,7 +42838,7 @@ tSi
 uHd
 uHd
 uHd
-dbq
+aHr
 aHr
 dbq
 dbq
@@ -43018,7 +43040,7 @@ tSi
 uHd
 uHd
 uHd
-dbq
+aHr
 aHr
 dbq
 dbq
@@ -43220,7 +43242,7 @@ tSi
 uHd
 uHd
 uHd
-uHd
+aHr
 aHr
 dbq
 dbq
@@ -43421,8 +43443,8 @@ tSi
 tSi
 uHd
 uHd
-uHd
-uHd
+aHr
+aHr
 aHr
 dbq
 dbq
@@ -43623,7 +43645,7 @@ tSi
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 aHr
 aHr
@@ -43825,7 +43847,7 @@ tSi
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 aHr
 aHr
@@ -44027,7 +44049,7 @@ tSi
 tSi
 tSi
 uHd
-uHd
+aHr
 uHd
 uHd
 aHr
@@ -44229,7 +44251,7 @@ tSi
 tSi
 tSi
 uHd
-uHd
+aHr
 uHd
 uHd
 aHr
@@ -44431,7 +44453,7 @@ tSi
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 uHd
 aHr
@@ -44633,7 +44655,7 @@ tSi
 tSi
 tSi
 uHd
-uHd
+aHr
 uHd
 uHd
 uHd
@@ -44834,8 +44856,8 @@ tSi
 tSi
 tSi
 tSi
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -45036,7 +45058,7 @@ tSi
 tSi
 tSi
 uHd
-uHd
+aHr
 uHd
 uHd
 uHd
@@ -45238,7 +45260,7 @@ tSi
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 uHd
 uHd
@@ -45440,7 +45462,7 @@ tSi
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 uHd
 uHd
@@ -45641,8 +45663,8 @@ tSi
 tSi
 uHd
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -45843,7 +45865,7 @@ gDm
 tSi
 uHd
 uHd
-uHd
+aHr
 uHd
 uHd
 uHd
@@ -46044,8 +46066,8 @@ tSi
 tSi
 tSi
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -46245,8 +46267,8 @@ tSi
 tSi
 tSi
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -46446,8 +46468,8 @@ tSi
 tSi
 tSi
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -46647,8 +46669,8 @@ tSi
 tSi
 tSi
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -46848,8 +46870,8 @@ uHd
 uHd
 uHd
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -47049,8 +47071,8 @@ dbq
 dbq
 dbq
 uHd
-uHd
-uHd
+aHr
+aHr
 uHd
 uHd
 uHd
@@ -47250,8 +47272,8 @@ dbq
 dbq
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 aHr
 aHr
 aHr
@@ -47452,7 +47474,7 @@ dbq
 dbq
 dbq
 dbq
-dbq
+aHr
 dbq
 aHr
 dbq
@@ -47653,8 +47675,8 @@ dbq
 dbq
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 aHr
 dbq
@@ -47854,8 +47876,8 @@ dbq
 dbq
 dbq
 dbq
-dbq
-dbq
+aHr
+aHr
 dbq
 dbq
 aHr
@@ -87822,7 +87844,7 @@ ubX
 ubX
 ubX
 ubX
-vsY
+jzK
 hyz
 hyz
 hyz
@@ -89237,9 +89259,9 @@ kFQ
 kFQ
 kFQ
 oEv
-vsY
-pdL
 hyz
+pdL
+vsY
 ubX
 gjb
 rxz
@@ -89448,7 +89470,7 @@ hyz
 pdL
 pdL
 ubX
-dqp
+uhv
 emo
 kAA
 kAA
@@ -89641,7 +89663,7 @@ fwy
 fwy
 jqD
 gkn
-hyz
+vlB
 hyz
 hyz
 ixy
@@ -90047,7 +90069,7 @@ fwy
 dTW
 rpV
 hyz
-hyz
+vsY
 ubX
 hrF
 hyz
@@ -91050,7 +91072,7 @@ pTz
 uXX
 huM
 ubX
-vsY
+jzK
 pdL
 hyz
 hyz
