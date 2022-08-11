@@ -14775,12 +14775,6 @@
 	},
 /turf/open/floor/plasteel/f13,
 /area/f13/klamat)
-"jKP" = (
-/obj/effect/landmark/start/f13/provostmarshal,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/klamat)
 "jKU" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -33820,8 +33814,8 @@
 /obj/machinery/button/door{
 	id = "bosdorm3";
 	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	pixel_y = 32
+	pixel_y = 32;
+	specialfunctions = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirty"
@@ -65637,7 +65631,7 @@ mlt
 efp
 lci
 eOn
-jKP
+eOn
 eOn
 qYo
 xxz
