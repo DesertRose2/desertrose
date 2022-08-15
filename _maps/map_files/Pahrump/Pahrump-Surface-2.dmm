@@ -4029,10 +4029,16 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bmW" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 23
+	},
+/obj/structure/stairs/east,
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "bnl" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/beer,
@@ -20630,13 +20636,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/rack{
-	pixel_y = 10
-	},
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 23
 	},
+/obj/structure/stairs/east,
 /turf/open/floor/f13/wood{
 	color = "#c5bab2"
 	},
@@ -22149,6 +22153,10 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
+"hyR" = (
+/obj/structure/stairs/north,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood)
 "hyX" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -26216,6 +26224,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"iKq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "iKW" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -29442,6 +29461,17 @@
 /obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/building)
+"jPq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "jPK" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/spray/plantbgone,
@@ -32968,6 +32998,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+"kVe" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/ncr)
 "kVf" = (
 /obj/item/ammo_casing/caseless,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -35637,6 +35673,17 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"lQB" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "lQG" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verylittleshadowright"
@@ -41082,6 +41129,17 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"nRy" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "nRz" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowbroken"
@@ -45463,12 +45521,11 @@
 	},
 /area/f13/wasteland)
 "pnN" = (
-/obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/prewar/poster94{
 	pixel_y = 30
 	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
+/turf/closed/wall,
 /area/f13/ncr)
 "pok" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -47202,14 +47259,13 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "pUb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
 /obj/structure/decoration/rag{
 	icon_state = "flag_ncr";
 	name = "NCR banner";
 	pixel_y = 32
 	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
+/obj/structure/stairs/west,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/ncr)
 "pUf" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -47574,13 +47630,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/white/whitepurplechess,
 /area/f13/city)
 "qcn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
 /obj/structure/sign/poster/contraband/pinup_topless{
 	pixel_x = 5;
 	pixel_y = 31
 	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/ncr)
 "qcw" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -49401,6 +49456,13 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/followers)
+"qGy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/ncr)
 "qGC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/house,
@@ -55355,6 +55417,17 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/f13/wood/house,
 /area/f13/building)
+"sEO" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "sER" = (
 /obj/structure/table/glass,
 /obj/machinery/light/broken,
@@ -56230,6 +56303,17 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/wasteland)
+"sUE" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/f13/wood{
+	color = "#c5bab2"
+	},
+/area/f13/legion)
 "sUP" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/light{
@@ -60607,6 +60691,10 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"unQ" = (
+/obj/structure/stairs/south,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "unY" = (
 /obj/structure/barricade/bars,
 /obj/structure/table/booth,
@@ -80696,7 +80784,7 @@ fbS
 diT
 aaL
 pUb
-jQq
+qGy
 tid
 xnf
 jQq
@@ -80953,7 +81041,7 @@ ubg
 koD
 rhr
 qcn
-tid
+kVe
 wuq
 rhr
 kBj
@@ -105832,8 +105920,8 @@ gcK
 gcK
 gcK
 dHK
-dHK
-bmW
+hyR
+bQI
 bQI
 bQI
 bPk
@@ -121085,8 +121173,8 @@ rpu
 vlz
 sYX
 rpu
+unQ
 sYX
-gcK
 gcK
 gcK
 iFZ
@@ -121343,7 +121431,7 @@ vcM
 yjG
 rpu
 sYX
-gcK
+sYX
 gcK
 mTd
 eMW
@@ -127865,8 +127953,8 @@ uXj
 uXj
 xYy
 pRm
-fYR
-vuC
+bmW
+nRy
 hdP
 pRm
 ohv
@@ -128122,8 +128210,8 @@ uXj
 uXj
 xYy
 eLl
-ats
-vuC
+sEO
+jPq
 xjZ
 oPC
 jIB
@@ -133262,8 +133350,8 @@ uXj
 uXj
 xYy
 ojU
-ats
-eGZ
+sUE
+lQB
 vuC
 oPC
 unI
@@ -133520,7 +133608,7 @@ uXj
 xYy
 pRm
 gYt
-eGZ
+iKq
 tcz
 pRm
 rEA
