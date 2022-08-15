@@ -34,8 +34,8 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 
 /turf/open/transparent/openspace/Initialize() // handle plane and layer here so that they don't cover other obs/turfs in Dream Maker
 	. = ..()
-
 	vis_contents += GLOB.openspace_backdrop_one_for_all //Special grey square for projecting backdrop darkness filter on it.
+
 
 /turf/open/transparent/openspace/can_have_cabling()
 	if(locate(/obj/structure/lattice/catwalk, src))
@@ -70,6 +70,7 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 	if(!CanBuildHere())
 		return
 	if(istype(C, /obj/item/stack/rods))
+		var/support
 		var/obj/item/stack/rods/R = C
 		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
 		var/obj/structure/lattice/catwalk/W = locate(/obj/structure/lattice/catwalk, src)
@@ -84,10 +85,17 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 			else
 				to_chat(user, SPAN_WARNING("You need two rods to build a catwalk!"))
 			return
-		if(R.use(1))
-			to_chat(user, SPAN_NOTICE("You construct a lattice."))
-			playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
-			ReplaceWithLattice()
+		for(var/turf/T in range(2, SSmapping.get_turf_below(src)))
+			if(istype(T, /turf/closed))
+				support++
+				break
+		if(support)
+			if(R.use(1))
+				to_chat(user, "<span class='notice'>You construct a lattice.</span>")
+				playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
+				ReplaceWithLattice()
+			else
+				to_chat(user, "<span class='warning'>You need some support under this space to make a lattice.</span>")
 		else
 			to_chat(user, SPAN_WARNING("You need one rod to build a lattice."))
 		return
@@ -117,7 +125,7 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 			if(L)
 				return list("mode" = RCD_FLOORWALL, "delay" = 0, "cost" = 1)
 			else
-				return list("mode" = RCD_FLOORWALL, "delay" = 0, "cost" = 3)
+				return FALSE
 	return FALSE
 
 /turf/open/transparent/openspace/rcd_act(mob/user, obj/item/construction/rcd/the_rcd, passed_mode)
@@ -137,3 +145,8 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 
 /turf/open/transparent/openspace/icemoon/can_zFall(atom/movable/A, levels = 1, turf/target)
 	return TRUE
+
+/turf/open/transparent/openspace/air
+	name = "air"
+	turf_light_range = 3
+	turf_light_power = 0.75
