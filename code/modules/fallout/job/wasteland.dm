@@ -940,7 +940,7 @@ Outlaw
 	minimal_access = list()
 
 	loadout_options = list(
-	/datum/outfit/loadout/brawler,
+	/datum/outfit/loadout/tbrawler,
 	/datum/outfit/loadout/spearman,
 	/datum/outfit/loadout/shaman,
 	/datum/outfit/loadout/whitelegsmelee,
@@ -961,7 +961,7 @@ Outlaw
 	)
 
 //Generic Tribals
-/datum/outfit/loadout/brawler
+/datum/outfit/loadout/tbrawler
 	name = "Tribal Brawler"
 	suit = /obj/item/clothing/suit/armor/f13/tribal
 	head = /obj/item/clothing/head/helmet/f13/deathskull
