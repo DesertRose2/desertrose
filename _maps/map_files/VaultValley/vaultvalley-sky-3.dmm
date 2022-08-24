@@ -655,9 +655,12 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "gh" = (
-/obj/machinery/telecomms/allinone/indestructable,
-/turf/open/indestructible,
-/area/f13/tcoms)
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "gj" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -971,7 +974,7 @@
 /obj/item/pda/heads/hop{
 	name = "Elder's PDA"
 	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/carpet/black,
 /area/f13/brotherhood)
 "iR" = (
 /obj/structure/window/fulltile/house{
@@ -1521,6 +1524,14 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/building)
+"nu" = (
+/obj/structure/filingcabinet/filingcabinet,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "nw" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -1538,6 +1549,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"nA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/brotherhood)
 "nF" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -2868,10 +2887,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "yO" = (
-/obj/structure/noticeboard{
-	layer = 2.5;
-	pixel_y = 3
-	},
 /obj/item/gun/ballistic/shotgun/trench{
 	anchored = 1;
 	pixel_y = 5
@@ -2880,6 +2895,7 @@
 	anchored = 1;
 	pixel_y = -3
 	},
+/obj/structure/guncase,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -2916,6 +2932,15 @@
 "zo" = (
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/wasteland)
+"zp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/landmark/start/f13/offduty,
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/brotherhood)
 "zq" = (
 /obj/machinery/hydroponics/soil{
 	mutmod = 0;
@@ -5811,11 +5836,10 @@
 	},
 /area/f13/building)
 "YJ" = (
-/mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/f13{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/building)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/indestructible/f13/matrix,
+/area/f13/brotherhood)
 "YP" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt{
@@ -7715,7 +7739,7 @@ ZT
 ZT
 Zq
 Bo
-Bo
+dg
 Bo
 Bo
 Zq
@@ -7971,7 +7995,7 @@ Zq
 ia
 ZT
 Gi
-dg
+Bo
 Bo
 Bo
 Bo
@@ -9267,7 +9291,7 @@ gF
 gF
 gF
 gF
-gF
+YJ
 gF
 gF
 WJ
@@ -10021,7 +10045,7 @@ Zq
 oB
 ox
 ox
-ox
+nu
 ox
 Zq
 EQ
@@ -10038,7 +10062,7 @@ Ec
 Ec
 Ec
 Ec
-Ec
+zp
 Ec
 Ec
 rZ
@@ -10269,7 +10293,7 @@ ls
 ls
 Zq
 EQ
-Wu
+Yz
 EQ
 EQ
 EQ
@@ -10293,9 +10317,9 @@ gF
 gF
 gF
 gF
+nA
 gF
-gF
-gF
+nA
 gF
 gF
 gF
@@ -14863,7 +14887,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -15120,7 +15144,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -15377,7 +15401,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -15634,7 +15658,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -15891,7 +15915,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -16148,7 +16172,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -16405,7 +16429,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -16662,7 +16686,7 @@ ls
 ls
 ls
 ls
-ls
+Rx
 Rx
 Rx
 Rx
@@ -30987,7 +31011,7 @@ HZ
 HZ
 tT
 Ql
-Cm
+HZ
 Cm
 wa
 ls
@@ -33741,7 +33765,7 @@ gU
 gU
 gU
 gU
-ls
+gU
 ls
 gU
 Yh
@@ -34626,7 +34650,7 @@ RF
 RF
 dx
 dC
-tS
+YC
 zx
 rY
 SQ
@@ -35142,7 +35166,7 @@ RF
 DO
 dC
 Wv
-YC
+tS
 sO
 RF
 ls
@@ -36170,7 +36194,7 @@ DO
 dC
 tS
 zx
-YC
+tS
 Rl
 RF
 ls
@@ -37198,7 +37222,7 @@ XR
 Ua
 DO
 zx
-YC
+tS
 vW
 RF
 ls
@@ -37710,7 +37734,7 @@ RF
 Mt
 ud
 dC
-dC
+gh
 tS
 ou
 Qr
@@ -37966,8 +37990,8 @@ ls
 RF
 nW
 kp
-tS
-YJ
+YC
+YC
 nW
 zx
 pI
@@ -45055,7 +45079,7 @@ El
 uF
 uF
 pD
-gU
+KW
 gU
 gU
 gU
@@ -70703,7 +70727,7 @@ we
 we
 sL
 Ow
-gh
+Ow
 Ow
 sL
 we
