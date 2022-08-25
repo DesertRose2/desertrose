@@ -5289,10 +5289,6 @@
 /area/f13/sewer)
 "ffa" = (
 /obj/structure/flora/grass/jungle/b,
-/obj/structure/ladder/unbreakable{
-	id = jungleunderground1;
-	level = 1
-	},
 /turf/open/floor/f13{
 	icon_state = "greenfull"
 	},
