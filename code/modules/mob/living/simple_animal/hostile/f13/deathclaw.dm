@@ -64,7 +64,7 @@
 	health = 1000
 	stat_attack = UNCONSCIOUS
 	melee_damage_lower = 70
-	melee_damage_upper = 80
+	melee_damage_upper = 75
 	armour_penetration = 0.75
 	color = rgb(95,104,94)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
