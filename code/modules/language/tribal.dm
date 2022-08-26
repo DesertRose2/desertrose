@@ -1,7 +1,8 @@
 /datum/language/tribal
 	name = "Tribal"
 	desc = "The language spoken by members of the tribals, boasting a complex system of phonemes and alien grammar. An expert ear of a researcher may notice the vague resemblance to the Indo-European language family."
-	key = "w"
+	key = "t"
+	icon_state = "tribal"
 	syllables = list(
 	"pa", "pe", "pi","pa", "pe", "pi","pr", "bm",
 	"ta", "te", "ti", "ta", "te", "ti", "tr", "dm",
