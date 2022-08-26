@@ -853,7 +853,7 @@ GLOBAL_LIST_INIT(special_phrases, list(
 /datum/emote/living/special
 	key = "special"
 	message = null
-	cooldown = 2.5 SECONDS // longer than it takes for the emote to run
+	var/cooldown = 2.5 // longer than it takes for the emote to run
 	stat_allowed = UNCONSCIOUS
 	/// Delay between doing the emote and getting the results
 	var/special_delay = 2 SECONDS
@@ -947,7 +947,7 @@ GLOBAL_LIST_INIT(special_phrases, list(
 		message = message_first,
 		self_message = message_first,
 		blind_message = message_first)
-	user.emote_for_ghost_sight(message_first)
+///	user.emote_for_ghost_sight(message_first)
 
 	spawn(special_delay)
 		if(!user)
@@ -971,4 +971,4 @@ GLOBAL_LIST_INIT(special_phrases, list(
 			message = message_second,
 			self_message = message_second,
 			blind_message = message_second)
-		user.emote_for_ghost_sight(message_second)
+///		user.emote_for_ghost_sight(message_second)
