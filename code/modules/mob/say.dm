@@ -28,12 +28,15 @@
 	set hidden = TRUE
 	set category = "IC"
 	display_typing_indicator()
-	var/message = input(usr, "", "me") as message|null
+	var/message = stripped_multiline_input_or_reflect(usr, "", "me")
 	// If they don't type anything just drop the message.
 	clear_typing_indicator()		// clear it immediately!
+	if(GLOB.say_disabled)
+		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+		return
 	if(!length(message))
 		return
-	return me_verb(message)
+	usr.emote("me",1,message,TRUE)
 
 /mob/verb/me_verb(message as message)
 	set name = "me"
