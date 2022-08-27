@@ -8,6 +8,15 @@
 	path = /obj/item/clothing/suit/hooded/cloak/david
 	cost = 3
 
+/datum/gear/suit/armorkit
+	name = "armor kit"
+	path = /obj/item/clothing/suit/armor/f13/kit
+	cost = 3
+
+/datum/gear/suit/armorkit/punk
+	name = "punk armor kit"
+	path = /obj/item/clothing/suit/armor/f13/punk
+
 /datum/gear/suit/jacketbomber
 	name = "Bomber jacket"
 	path = /obj/item/clothing/suit/jacket

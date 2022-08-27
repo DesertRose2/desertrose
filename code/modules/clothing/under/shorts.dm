@@ -55,29 +55,29 @@
 
 //Sprite by Pisshole
 /obj/item/clothing/under/shorts/jeanbshorts
-	name = "jean booty shorts"
-	desc = "A Pair of faded Daisy Dukes"
+	name = "minijorts"
+	desc = "These are really just jorts cut in half. Can you call these shorts anymore?"
 	icon_state = "jeanbshorts"
 	item_color = "jeanbshorts"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/shorts/darkbshorts
-	name = "dark booty shorts"
-	desc = "A pair of Daisy Dukes that haven't faded."
+	name = "dark minijorts"
+	desc = "A tiny pair of dark booty shorts. Who would wear these?"
 	icon_state = "darkbshorts"
 	item_color = "darkbshorts"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/shorts/blackbshorts
-	name = "black booty shorts"
-	desc = "A pair of black jeans cut super short."
+	name = "black denim minishorts"
+	desc = "The black denim does nothing to make you feel like less of a creep."
 	icon_state = "blackbshorts"
 	item_color = "blackbshorts"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/shorts/brownbshorts
-	name = "Cargo booty shorts"
-	desc = "A pair of Cargo pants cut super short."
+	name = "brown minishorts"
+	desc = "Dark bown... shorts? Looks small enough to be underwear."
 	icon_state = "brownbshorts"
 	item_color = "brownbshorts"
 	can_adjust = FALSE
