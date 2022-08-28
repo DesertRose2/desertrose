@@ -72,3 +72,4 @@
 	desc = "(IV) An older looking brahmin skin cowboy hat, that somebody unbent the brim of. This one's got a silver eagle pinned to the front."
 	icon_state = "brahmin_slouch"
 	item_state = "brahmin_slouch"
+	flags_inv = HIDEEARS|HIDEHAIR
