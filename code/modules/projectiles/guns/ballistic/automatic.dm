@@ -626,9 +626,9 @@
 	desc = "A true icon of California exploration, Colt Rangemaster rifles saw their post-war renaissance in the early days before and during the rise of the Republic. Falling out of use during the height of the Brotherhood War, some still cling whiteknuckle to these classic re-jiggered hunting rifles. This one's seen some battles and seems to be configured more classically rather than having many of the more common post-war upgrades."
 	icon_state = "rangermaster"
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	extra_damage = 8
+	extra_damage = 4
 	burst_size = 1
-	fire_delay = 8
+	fire_delay = 6
 	spread = 1
 	burst_size = 1
 	extra_penetration = 0.1
@@ -637,16 +637,13 @@
 	can_attachments = FALSE
 	untinkerable = TRUE
 	can_bayonet = FALSE
-	can_scope = TRUE
-	scope_state = "rifle_scope"
-	scope_x_offset = 4
-	scope_y_offset = 11
+	can_scope = FALSE
 	can_suppress = TRUE
 	unique_reskin = list("Worn Ranger's Rifle" = "rangermaster",
 						"5.56 Hunting Rifle" = "rangemaster"
 						)
 
-//'Maxson' Carbine												Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam.
+//'Maxson' Carbine												Keywords: BOS, 5.56, Semi-Automatic, 20 (10-50) round mags. Notes: Snowflake rifle for knights; on par with service rifle. Avoids laser spam. - Sprite by Rebel0
 /obj/item/gun/ballistic/automatic/service/maxson
 	name = "'Maxson' carbine"
 	desc = "A 5.56x45 semi-automatic service rifle manufactrued post-war by the Senora Brotherhood chapter. These clearly use AR-platform receivers but seem to have various surplus parts slapped to it."
@@ -663,7 +660,7 @@
 	suppressor_x_offset = 37
 	suppressor_y_offset = 18
 
-//'Maxson' Scout Carbine										Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR.
+//'Maxson' Scout Carbine										Keywords: BOS, 4.73 Caseless, Semi-Automatic, 12 round mags. Notes: Snowflake rifle for knight scouts; has a scope to be similar to scout carbine for NCR. - Sprite by Rebel0
 /obj/item/gun/ballistic/automatic/service/maxson/caseless
 	name = "'Maxson' scout carbine"
 	desc = "A 4.73 semi-automatic service rifle manufactured post-war by the Senora Brotherhood chapter. This once fine AR-platform gun has been mangled into a strange firearm made for stealth due to its caseless ammunition and odd choice in round."
@@ -678,7 +675,7 @@
 	zoom_out_amt = 13
 	extra_damage = 2
 
-//'Maxson' Assault Carbine										Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS.
+//'Maxson' Assault Carbine										Keywords: BOS, 5mm, Automatic, 24 (or 48) round mags, No Attachments.	Notes: Automatic version; made via protolathes for BOS. - Sprite by Rebel0
 /obj/item/gun/ballistic/automatic/service/maxson/c5mm
 	name = "'Maxson' assault carbine"
 	desc = "A 5mm conversion of the 'Maxson' 5.56 carbine. This model appears to lack a fire selector but makes up for it in quick, successive bursts with decent accuracy due to the lower caliber size."
@@ -943,7 +940,7 @@
 	fire_delay = 3.5
 	can_scope = FALSE
 	can_attachments = FALSE
-	extra_damage = 2
+	extra_damage = 1
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 7
@@ -1052,10 +1049,9 @@
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	burst_size = 3
-	fire_delay = 6
+	fire_delay = 5
 	burst_shot_delay = 2
 	spread = 4
-	extra_damage = 4
 	can_attachments = FALSE
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -1074,7 +1070,7 @@
 						"Classic" = "assault_carbine_old"
 						)
 
-//AK-112														Keywords: 5mm, Automatic, 24/48 mags
+//AK-112														Keywords: 5mm, Automatic, 24/48 mags - Sprite by Rebel0
 /obj/item/gun/ballistic/automatic/ak112
 	name = "AK-112"
 	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
@@ -1088,7 +1084,6 @@
 	force = 20
 	burst_size = 2
 	fire_delay = 3
-	extra_damage = 2
 	burst_shot_delay = 2.2
 	spread = 20
 	can_attachments = FALSE
