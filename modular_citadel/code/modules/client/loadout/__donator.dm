@@ -568,6 +568,7 @@
 						"lunaticluna",
 						"mileswolfe",
 						"thegreatcoward",
+						"conormackgegore",
 						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -714,6 +715,7 @@
 						"mileswolfe",
 						"yeehawguvnah",
 						"sigmaseth",
+						"conormackgegore",
 						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
