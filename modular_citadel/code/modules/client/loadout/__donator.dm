@@ -539,6 +539,7 @@
 						"jackmcintyre",
 						"deathlysoul",
 						"brainbodger",
+						"sigmaseth",
 						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -712,6 +713,7 @@
 						"tzula",
 						"mileswolfe",
 						"yeehawguvnah",
+						"sigmaseth",
 						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
