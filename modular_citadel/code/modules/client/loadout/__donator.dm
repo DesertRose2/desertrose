@@ -540,6 +540,7 @@
 						"deathlysoul",
 						"brainbodger",
 						"sigmaseth",
+						"cinnysuccubus",
 						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -569,6 +570,7 @@
 						"mileswolfe",
 						"thegreatcoward",
 						"conormackgegore",
+						"slraptor",
 						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -716,6 +718,8 @@
 						"yeehawguvnah",
 						"sigmaseth",
 						"conormackgegore",
+						"slraptor",
+						"cinnysuccubus",
 						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
