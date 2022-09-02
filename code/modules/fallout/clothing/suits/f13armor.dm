@@ -442,6 +442,14 @@
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
 	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/tesla/X03/hellfire
+	name = "Brotherhood modified X-03 Hellfire Power Armor"
+	desc = "(X) A salvaged and remodeled set of customized X-03 power armor, with its irrecoverable components filled in with altered-fit pieces of a T-60 chassis."
+	icon_state = "HellfireKit"
+	item_state = "t51tesla"
+	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	name = "brotherhood T-51b power armor"
 	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
