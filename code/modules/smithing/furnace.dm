@@ -1,13 +1,18 @@
 /obj/structure/furnace
 	name = "furnace"
 	desc = "A furnace."
-	icon = 'icons/obj/smith.dmi'
+	icon = 'code/modules/smithing/icons/blacksmith.dmi'
 	icon_state = "furnace0"
 	density = TRUE
 	anchored = TRUE
 	var/debug = FALSE //debugging only
 	var/working = TRUE
 	var/fueluse = 1
+//	light_system = MOVABLE_LIGHT // added var TEMPORARY bc DR
+	light_range = 2
+	light_power = 1.5
+	light_color = LIGHT_COLOR_FIRE
+	var/light_on = FALSE // added var TEMPORARY bc DR
 
 
 /obj/structure/furnace/Initialize()
@@ -25,10 +30,15 @@
 		return TRUE
 	if(reagents.remove_reagent(/datum/reagent/fuel, fueluse))
 		working = TRUE
+//		light_on(TRUE)  // TEMPORARY  replaced w below bc DR code
+		set_light(brightness_on)
 		if(icon_state == "furnace0")
 			icon_state = "furnace1"
+
 	else
 		working = FALSE
+//		light_on(FALSE)   // TEMPORARY  replaced w below bc DR code
+		set_light(0)
 		icon_state = "furnace0"
 
 /obj/structure/furnace/attackby(obj/item/I, mob/user)
@@ -37,6 +47,10 @@
 		if(working)
 			to_chat(user, "You heat the [notsword] in the [src].")
 			notsword.workability = "shapeable"
+			notsword.icon_state = "hot_ingot"
+//			notsword.set_light_on(TRUE) // TEMPROARY replace w below  bc DR code
+			notsword.set_light(brightness_on)
+			I.on_attack_hand(user)
 		else
 			to_chat(user, "The furnace isn't working!.")
 	else

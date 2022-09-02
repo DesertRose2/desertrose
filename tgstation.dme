@@ -3506,6 +3506,7 @@
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_eye.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_overlay.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_upgrades.dm"
+#include "code\modules\smithing\additions.dm"
 #include "code\modules\smithing\anvil.dm"
 #include "code\modules\smithing\finished_items.dm"
 #include "code\modules\smithing\furnace.dm"
