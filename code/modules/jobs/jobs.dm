@@ -214,7 +214,7 @@ GLOBAL_LIST_INIT(den_positions, list(
 	"Farmer",
 	"Prospector",
 	"Detective",
-	"Preacher",
+	//"Preacher",
 	"Barkeep"
 ))
 
