@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Chief of Security",
 
 	"Mayor",
-	"Sheriff",
+	//"Sheriff",
 
 	"Chief",
 	"Shaman",
@@ -95,8 +95,8 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Veteran Legionary",
 
 "Mayor",
-"Sheriff",
-"Deputy",
+/*"Sheriff",
+"Deputy",*/
 "Shopkeep",
 "Doctor",
 "Prospector",
@@ -120,8 +120,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Alderman",
 "Marshal",
 "Chief of Development",
-"Provost Sergeant",
-"Provost",
+"Sheriff"
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
@@ -203,14 +202,14 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 ))
 
 GLOBAL_LIST_INIT(den_command_positions, list(
-	"Mayor",
-	"Sheriff"
+	"Mayor"
+	//"Sheriff"
 ))
 
 GLOBAL_LIST_INIT(den_positions, list(
 	"Doctor",
 	"Citizen",
-	"Deputy",
+	//"Deputy",
 	"Shopkeeper",
 	"Farmer",
 	"Prospector",
@@ -344,11 +343,9 @@ GLOBAL_LIST_INIT(vtcc_provost_positions, list(
 ))
 
 GLOBAL_LIST_INIT(vtcc_positions, list(
-	"Provost Sergeant",
-	"Provost",
-	"City Security Officer",
-	"Provost Cadet",
-	"Shopkeep",
+	"Sheriff",
+	"Deputy",
+	"Broker",
 	"Roadie",
 	"Merchant",
 	"Innkeeper",
@@ -381,7 +378,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_FOLLOWERS     = list("titles" = followers_positions),
 	EXP_TYPE_VTCC          = list("titles" = vtcc_positions),
 	EXP_TYPE_ROADIE        = list("titles" = list("Roadie")),
-	EXP_TYPE_VTCCSEC       = list("titles" = list("City Security Cadet")),
+	EXP_TYPE_VTCCSEC       = list("titles" = list("Deputy")),
 	EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger", "NCR Ranger Sergeant","NCR Ranger")),
 	EXP_TYPE_SCRIBE        = list("titles" = list("Scribe", "Proctor")),
 	EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
