@@ -24,6 +24,11 @@
 	path = /obj/item/storage/box/large/custom_kit/terryklip
 	ckeywhitelist = list("luckydente")
 
+/datum/gear/donator/kits/wormwood
+	name = "Wormwoods belongings"
+	path = /obj/item/storage/box/large/custom_kit/wormwood
+	ckeywhitelist = list ("gomezash")
+
 /datum/gear/donator/kits/stephaniemoui
 	name = "Stephanie Moui's belongings"
 	path = /obj/item/storage/box/large/custom_kit/stephaniemoui
@@ -465,7 +470,7 @@
 	name = "Trinity Kemble's belongings"
 	path = /obj/item/storage/box/large/custom_kit/trinitykemble
 	ckeywhitelist = list("yeehawguvnah")
-	
+
 //////////////////////////////
 ///Ranger items start here.///
 //////////////////////////////
@@ -534,6 +539,8 @@
 						"jackmcintyre",
 						"deathlysoul",
 						"brainbodger",
+						"sigmaseth",
+						"cinnysuccubus",
 						"pisshole")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
@@ -561,7 +568,10 @@
 						"spartan2548",
 						"lunaticluna",
 						"mileswolfe",
-						"thegreatcoward")
+						"thegreatcoward",
+						"conormackgegore",
+						"slraptor",
+						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Ranger Sergeant", "NCR Veteran Ranger", "NCR Off-Duty")
 
 /datum/gear/donator/ranger357
@@ -705,7 +715,12 @@
 						"lunaticluna",
 						"tzula",
 						"mileswolfe",
-						"yeehawguvnah")
+						"yeehawguvnah",
+						"sigmaseth",
+						"conormackgegore",
+						"slraptor",
+						"cinnysuccubus",
+						"iliketogammon")
 	restricted_roles = list("NCR Ranger", "NCR Veteran Ranger", "NCR Ranger Sergeant", "NCR Off-Duty")
 
 ////////////////////////////

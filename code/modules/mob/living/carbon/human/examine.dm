@@ -445,6 +445,9 @@
 	else if(isobserver(user) && traitstring)
 		. += "<span class='info'><b>Traits:</b> [traitstring]</span>"
 
+	. += "\n[print_special()]\n"
+
+
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .) //This also handles flavor texts now
 
 	. += "*---------*</span>"

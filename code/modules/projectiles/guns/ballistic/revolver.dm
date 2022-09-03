@@ -128,7 +128,7 @@
 	icon_state = "colt6520"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6520
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
-	extra_damage = 5
+	extra_damage = 3
 	fire_delay = 4
 
 //Zhurong										Keywords: UNIQUE, 10mm, Double action, 12 round cylinder

@@ -940,7 +940,7 @@ Outlaw
 	minimal_access = list()
 
 	loadout_options = list(
-	/datum/outfit/loadout/brawler,
+	/datum/outfit/loadout/tbrawler,
 	/datum/outfit/loadout/spearman,
 	/datum/outfit/loadout/shaman,
 	/datum/outfit/loadout/whitelegsmelee,
@@ -961,7 +961,7 @@ Outlaw
 	)
 
 //Generic Tribals
-/datum/outfit/loadout/brawler
+/datum/outfit/loadout/tbrawler
 	name = "Tribal Brawler"
 	suit = /obj/item/clothing/suit/armor/f13/tribal
 	head = /obj/item/clothing/head/helmet/f13/deathskull
@@ -1202,6 +1202,7 @@ Outlaw
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
+	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	H.grant_language(/datum/language/tribal)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/heavytribe)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribe_armor)

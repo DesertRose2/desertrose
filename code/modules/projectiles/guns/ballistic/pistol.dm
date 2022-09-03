@@ -191,9 +191,7 @@
 	icon_state = "executive"
 	can_suppress = TRUE
 	burst_size = 2
-	extra_damage = 4
 	can_automatic = FALSE
-	extra_penetration = 0.2 //2x 35 damage, 10 AP- hits like a 2rd burst 5.56, but more accurate
 	semi_auto = FALSE
 
 //Gobi Campaign N99 - by Pisshole		Keywords: UNIQUE, Leadership, 10mm, Semi-auto, 12/24 round magazine
@@ -206,7 +204,6 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	can_attachments = FALSE
 	fire_delay = 1
-	extra_damage = 5
 	can_suppress = FALSE
 	can_automatic = FALSE
 	can_scope = TRUE

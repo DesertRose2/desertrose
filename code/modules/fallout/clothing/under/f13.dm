@@ -1218,6 +1218,12 @@
 	icon_state = "schlimmsuit"
 	item_state = "schlimmsuit"
 
+/obj/item/clothing/under/f13/wormsuit
+	name = "old fashioned suit"
+	desc = "A rather antique looking outift, it's oddly formal; however, it looks pretty decent. On a closer look, thats totally a legion sash around the neck."
+	icon_state = "pioneer"
+	item_state = "pioneer"
+
 //Super Mutants
 
 /obj/item/clothing/under/f13/mutie

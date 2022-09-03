@@ -24,13 +24,13 @@
 	response_help_simple  = "pets"
 	response_disarm_simple = "gently pushes aside"
 	response_harm_simple   = "hits"
-	maxHealth = 600
-	health = 600
+	maxHealth = 800
+	health = 800
 	obj_damage = 300
 	environment_smash = 2 //wall-busts
 	armour_penetration = 0.7
-	melee_damage_lower = 75
-	melee_damage_upper = 75
+	melee_damage_lower = 60
+	melee_damage_upper = 70
 	attack_verb_simple = "claws"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	faction = list("deathclaw")
@@ -60,11 +60,11 @@
 	name = "mother deathclaw"
 	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one is an angry mother."
 	gender = FEMALE
-	maxHealth = 800
-	health = 800
+	maxHealth = 1000
+	health = 1000
 	stat_attack = UNCONSCIOUS
-	melee_damage_lower = 80
-	melee_damage_upper = 80
+	melee_damage_lower = 70
+	melee_damage_upper = 75
 	armour_penetration = 0.75
 	color = rgb(95,104,94)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
@@ -75,12 +75,12 @@
 /mob/living/simple_animal/hostile/deathclaw/legendary
 	name = "legendary deathclaw"
 	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one is a legendary enemy."
-	maxHealth = 1200
-	health = 1200
+	maxHealth = 1400
+	health = 1400
 	color = "#FFFF00"
 	stat_attack = UNCONSCIOUS
-	melee_damage_lower = 90
-	melee_damage_upper = 90
+	melee_damage_lower = 80
+	melee_damage_upper = 80
 	armour_penetration = 0.9
 
 /mob/living/simple_animal/hostile/deathclaw/legendary/death(gibbed)
@@ -165,3 +165,17 @@
 
 	charging = FALSE
 	charging = FALSE
+
+//Power Armor Deathclaw the tankest and the scariest deathclaw in the West. One mistake will end you. May the choice be with you.
+/mob/living/simple_animal/hostile/deathclaw/power_armor
+	name = "power armored deathclaw"
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. Someone had managed to put power armor on him."
+	icon_state = "combatclaw"
+	icon_living = "combatclaw"
+	icon_dead = "combatclaw_dead"
+	maxHealth = 2500
+	health = 2500
+	stat_attack = UNCONSCIOUS
+	melee_damage_lower = 90
+	melee_damage_upper = 90
+	armour_penetration = 0.7

@@ -88,6 +88,21 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
 	result_item = /obj/item/clothing/suit/armor/f13/herbertranger
 
+/obj/item/modkit/wormsuit
+	name = "badland bolero modkit"
+	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
+	result_item = /obj/item/clothing/suit/armor/f13/raider/wormjacket
+
+/obj/item/modkit/wormhat
+	name = "brahmin slouch hat modkit"
+	target_items = list(/obj/item/clothing/head/helmet/f13/raider)
+	result_item = /obj/item/clothing/head/helmet/f13/raider/wormhat
+
+/obj/item/modkit/wormuniform
+	name = "old fashioned suit modkit"
+	target_items = list(/obj/item/clothing/under/f13/caravan)
+	result_item = /obj/item/clothing/under/f13/wormsuit
+
 /obj/item/modkit/digger_vest
 	name = "salvaged riot helmet modkit"
 	target_items = list(/obj/item/clothing/head/helmet/f13/raider)
