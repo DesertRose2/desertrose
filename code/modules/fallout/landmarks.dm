@@ -340,7 +340,7 @@
 	name = "Provost Sergeant"
 
 /obj/effect/landmark/start/f13/provost
-	name = "Sherif"
+	name = "Sheriff"
 
 /obj/effect/landmark/start/f13/townsecscout
 	name = "Deputy"
