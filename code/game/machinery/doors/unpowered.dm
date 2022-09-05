@@ -57,6 +57,15 @@
 	name = "Legion Castrum"
 	req_access_txt = "123"
 
+//khoor
+/obj/machinery/door/unpowered/securedoor/khandoor
+	name = "khan door"
+	req_access_txt = "125"
+
+// Wayfarer door
+/obj/machinery/door/unpowered/securedoor/wayfareroor
+	name = "wayfarer door"
+	req_access_txt = "131"
 
 //Steel version, very durable
 /obj/machinery/door/unpowered/secure_steeldoor
