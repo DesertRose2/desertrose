@@ -720,7 +720,7 @@
 	total_positions = 6
 	spawn_positions = 3
 	supervisors = "the Alderman."
-	description = "You may lead any one of many different lifestyles, each one vastly different to the last. As such, you're on the payroll of anyone who hires you. Or, you're striking out on your own in our concrete jungle, making a name for yourself and your business within our walls. Perhaps you're a refugee from some faraway location, on the run from a threat unknown, or a settler from some far off town, setting out for a fresh start."
+	description = "You may lead any one of many different lifestyles, each one vastly different to the last. As such, you're on the payroll of anyone who hires you within the vault. Or, you're striking out on your own in our concrete jungle, making a name for yourself and your business within our walls. Perhaps you're a refugee from some faraway location, on the run from a threat unknown, or a settler from some far off town, setting out for a fresh start. You are above those so-called 'outer citizen' peasents and Roadies."
 
 	outfit = /datum/outfit/job/vtcc/f13innerwall
 	loadout_options = list(
