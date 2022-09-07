@@ -516,7 +516,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite
 	name = "army ghoul commando"
-	desc = "An elite hulk towering over most in his T-45d grips a RCW between his massive palms."
+	desc = "An elite hulk towering over most in his T-45b grips a RCW between his massive palms."
 	icon_state = "rebound_chosen"
 	icon_living = "rebound_chosen"
 	icon_dead = null
@@ -566,7 +566,7 @@
 	qdel(src)
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/plasma
-	desc = "An elite hulk towering over most in his T-45d grips a plasma rifle between his massive palms."
+	desc = "An elite hulk towering over most in his T-45b grips a plasma rifle between his massive palms."
 	icon_state = "rebound_chosen_b"
 	icon_living = "rebound_chosen_b"
 	ranged_cooldown_time = 20
