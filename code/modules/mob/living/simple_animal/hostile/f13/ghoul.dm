@@ -211,7 +211,7 @@
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary
 	name = "mercenary ghoul"
-	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an assault carbine."
+	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Wields an assault carbine."
 	icon_state = "mercenary_ghoul"
 	icon_living = "mercenary_ghoul"
 	icon_dead = "mercenary_ghoul_dead"
@@ -224,7 +224,7 @@
 	extra_projectiles = 3
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/laser
-	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an AER-9."
+	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Wields an AER-9."
 	icon_state = "mercenary_ghoul_b"
 	icon_living = "mercenary_ghoul_b"
 	ranged_cooldown_time = 30
@@ -233,7 +233,7 @@
 	extra_projectiles = 1
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/breacher
-	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds a riot shotgun."
+	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Wields a riot shotgun."
 	icon_state = "mercenary_ghoul_c"
 	icon_living = "mercenary_ghoul_c"
 	ranged_cooldown_time = 25
@@ -242,7 +242,7 @@
 	extra_projectiles = 2
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/amr
-	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an anti-materiel rifle."
+	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Wields an anti-materiel rifle."
 	icon_state = "mercenary_ghoul_d"
 	icon_living = "mercenary_ghoul_d"
 	aggro_vision_range = 15
@@ -351,49 +351,34 @@
 	decompose = FALSE
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 
-//Rebound
+//Rebound - Remade into military
 /mob/living/simple_animal/hostile/ghoul/rebound
-	name = "rebound feral ghoul"
-	desc = "A feral ghoul of the Rebound, has few straps of leather armor tied over itself and a shock collar to keep it in line."
+	name = "feral ghoul slave"
+	desc = "A feral ghoul with few straps of leather armor tied over itself and a shock collar to keep it in line."
 	icon_state = "rebound"
 	icon_living = "rebound"
-	icon_dead = null
+	icon_dead = "rebound_dead"
 	maxHealth = 120
 	health = 120
 	speed = 3
 	harm_intent_damage = 30
 	melee_damage_lower = 30
 	melee_damage_upper = 30
-	faction = list("rebound")
-	loot = list(/obj/effect/mob_spawn/human/corpse/rebound)
 	status_flags = CANPUSH
-	del_on_death = 1
 
 	emote_taunt_sound = list('sound/f13npc/ghoul/taunt.ogg')
 	emote_taunt = list("gurgles", "stares", "growls", "yells")
 	taunt_chance = 30
 
-/obj/effect/mob_spawn/human/corpse/rebound
-	name = "rebound feral ghoul corpse"
-	uniform = /obj/item/clothing/under/pants/tan
-	suit = /obj/item/clothing/suit/armor/f13/kit
-	shoes = /obj/item/clothing/shoes/f13/raidertreads
-	neck = /obj/item/electropack/shockcollar
-	id = /obj/item/card/id/rusted/rebound
-	id_job = "Rebound Army Feral"
-	hair_style = "Bald"
-	facial_hair_style = "Shaved"
-	mob_species = /datum/species/ghoul
-
 /mob/living/simple_animal/hostile/ghoul/rebound/regular
-	name = "rebound ghoul initiate"
-	desc = "A ghoul serving under the banner of the Rebound. They hold a rusted hunting rifle shining against their metal chestplate."
+	name = "ghoul slave"
+	desc = "A ghoul holding a rusted hunting rifle shining against their metal chestplate right under his collar."
 	icon_state = "rebound_initiate"
 	icon_living = "rebound_initiate"
-	icon_dead = null
+	icon_dead = "rebound_initiate_dead"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	decompose = FALSE
-	speak = list("Destroy the non-believers....", "You will make fine addition to our army....", "There will be nothing left for them to bury...", "Glory to the All-Seeing One...")
+	decompose = TRUE
+	speak = list("You will make fine addition to our army....", "There will be nothing left for them to bury...")
 	speak_chance = 4
 	turns_per_move = 5
 	speed = 1.2
@@ -407,29 +392,13 @@
 	attack_verb_simple = "slices"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/effect/mob_spawn/human/corpse/rebound/regular)
-	faction = list("rebound")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
-	del_on_death = 1
 	ranged = 1
 	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/bullet/a762/match
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
 	taunt_chance = 0
-
-/obj/effect/mob_spawn/human/corpse/rebound/regular
-	name = "rebound ghoul initiate corpse"
-	uniform = /obj/item/clothing/under/f13/combat_shirt
-	suit = /obj/item/clothing/suit/armor/f13/metalarmor/reinforced
-	shoes = /obj/item/clothing/shoes/f13/military
-	gloves = /obj/item/clothing/gloves/combat
-	belt = /obj/item/storage/belt/military/army
-	id = /obj/item/card/id/rusted/rebound
-	id_job = "Rebound Army Initiate"
-	hair_style = "Bald"
-	facial_hair_style = "Shaved"
-	mob_species = /datum/species/ghoul
 
 /mob/living/simple_animal/hostile/ghoul/rebound/regular/thompson
 	desc = "A ghoul serving under the banner of the Rebound. They hold a rusted thompson M1A1 shining against their metal chestplate."
@@ -441,9 +410,11 @@
 	extra_projectiles = 4
 
 /mob/living/simple_animal/hostile/ghoul/rebound/regular/sniper
-	desc = "A ghoul serving under the banner of the Rebound. They hold a tinkered sniper rifle and are clad in a duster with a gasmask."
-	icon_state = "rebound_initiate_c"
-	icon_living = "rebound_initiate_c"
+	name = "ghoul pathfinder"
+	desc = "A ghoul holding a tinkered sniper rifle and are clad in a duster with a gasmask."
+	icon_state = "rebound_path"
+	icon_living = "rebound_path"
+	icon_dead = "rebound_path_dead"
 	aggro_vision_range = 15
 	retreat_distance = 3
 	minimum_distance = 10
@@ -453,15 +424,14 @@
 	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver
-	name = "rebound ghoul reaver"
-	desc = "A heavy ghoul serving under the banner of the Rebound. They wield an AK-112 and clad in a set of a combat armor."
+	name = "army ghoul reaver"
+	desc = "A heavy ghoul wielding an AK-112 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver"
 	icon_living = "rebound_reaver"
 	icon_dead = null
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	decompose = FALSE
-	speak = list("Remember Necropolis....", "You will suffer just as they did....", "Glory to the All-Seeing One...")
+	speak = list("Remember Necropolis....", "Not even your mother will recognize you once I am done...", "You just made your last mistake..", "Die, smoothskin scum..")
 	speak_chance = 4
 	turns_per_move = 5
 	speed = 1.4
@@ -475,11 +445,8 @@
 	attack_verb_simple = "slices"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/effect/mob_spawn/human/corpse/rebound/reaver)
-	faction = list("rebound")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
-	del_on_death = 1
 	ranged = 1
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/c5mm
@@ -487,22 +454,8 @@
 	extra_projectiles = 4
 	taunt_chance = 0
 
-/obj/effect/mob_spawn/human/corpse/rebound/reaver
-	name = "rebound ghoul reaver corpse"
-	head = /obj/item/clothing/head/helmet/f13/combat
-	uniform = /obj/item/clothing/under/f13/combat_shirt
-	suit = /obj/item/clothing/suit/armor/f13/combat
-	shoes = /obj/item/clothing/shoes/f13/military
-	gloves = /obj/item/clothing/gloves/combat
-	belt = /obj/item/storage/belt/military/army
-	id = /obj/item/card/id/rusted/rebound
-	id_job = "Rebound Army Reaver"
-	hair_style = "Bald"
-	facial_hair_style = "Shaved"
-	mob_species = /datum/species/ghoul
-
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/shotgun
-	desc = "A heavy ghoul serving under the banner of the Rebound. They weild a citykiller and clad in a set of a combat armor."
+	desc = "A heavy ghoul wielding a citykiller and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_b"
 	icon_living = "rebound_reaver_b"
 	ranged_cooldown_time = 35
@@ -511,7 +464,7 @@
 	extra_projectiles = 2
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/wattz
-	desc = "A heavy ghoul serving under the banner of the Rebound. They weild a wattz 2000 and clad in a set of a combat armor."
+	desc = "A heavy ghoul wielding a wattz 2000 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_c"
 	icon_living = "rebound_reaver_c"
 	retreat_distance = 4
@@ -522,15 +475,14 @@
 	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/commisar
-	name = "rebound ghoul commisar"
-	desc = "A heavy ghoul serving under the banner of the Rebound. These ones serve as NCOs and disciplinary commisars. Equiped with a coat, fashionable hat and a suprisingly well maintained FN-Fal"
+	name = "army ghoul squad leader"
+	desc = "A heavy ghoul seemingly serving as squad leader for other ghouls due to their attire, this one is wielding a FN-Fal."
 	icon_state = "rebound_commisar"
 	icon_living = "rebound_commisar"
-	icon_dead = null
+	icon_dead = "rebound_commisar_dead"
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	decompose = FALSE
-	speak = list("Your ignorance will be your death....", "I will cleanse this world of filth like you....", "If it isn't another one for the meatgrinder...", "Your skull will serve as another stepping stone to our greatness...", "Glory to the All-Seeing One...")
+	speak = list("You will regret crossing my path....", "I will cleanse this world of filth like you....", "If it isn't another one for the meatgrinder...", "I kill whelps like you every day, what makes you think you stand a chance...")
 	speak_chance = 4
 	turns_per_move = 5
 	speed = 1.4
@@ -542,10 +494,7 @@
 	attack_verb_simple = "slices"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/effect/mob_spawn/human/corpse/rebound/commisar)
-	faction = list("rebound")
 	status_flags = CANPUSH
-	del_on_death = 1
 	retreat_distance = 2
 	minimum_distance = 6
 	check_friendly_fire = 1
@@ -556,23 +505,8 @@
 	extra_projectiles = 2
 	taunt_chance = 0
 
-/obj/effect/mob_spawn/human/corpse/rebound/commisar
-	name = "rebound ghoul commisar corpse"
-	head = /obj/item/clothing/head/soft/f13/utility/tan
-	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/f13/combat_shirt
-	suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
-	shoes = /obj/item/clothing/shoes/f13/military
-	gloves = /obj/item/clothing/gloves/combat
-	belt = /obj/item/storage/belt/military/army
-	id = /obj/item/card/id/rusted/rebound
-	id_job = "Rebound Army Commisar"
-	hair_style = "Bald"
-	facial_hair_style = "Shaved"
-	mob_species = /datum/species/ghoul
-
 /mob/living/simple_animal/hostile/ghoul/rebound/commisar/battle
-	desc = "A heavy ghoul serving under the banner of the Rebound. These ones serve as NCOs and disciplinary commisars. Equiped with a coat, fashionable hat and a rechambered M-14."
+	desc = "A heavy ghoul seemingly serving as squad leader for other ghouls due to their attire, this one is wielding a M14."
 	icon_state = "rebound_commisar_b"
 	icon_living = "rebound_commisar_b"
 	ranged_cooldown_time = 35
@@ -581,18 +515,18 @@
 	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite
-	name = "rebound ghoul chosen"
-	desc = "A chosen ghoul from ranks of the Rebound. These elite hulks wear T-45b power armor and are equiped with a RCW."
+	name = "army ghoul commando"
+	desc = "An elite hulk towering over most in his T-45d grips a RCW between his massive palms."
 	icon_state = "rebound_chosen"
 	icon_living = "rebound_chosen"
-	icon_dead = "rebound_chosen"
+	icon_dead = null
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	decompose = FALSE
-	speak = list("You will regret stepping into my shadow...", "I eat normies like you for breakfast...", "I will grind your bones to dust...", "Reaper has arrived...", "Your pathetic death will amuse me...", "Glory to the All-Seeing One...", "DIE ALREADY YOU PATHETIC WORM!")
+	speak = list("You will regret stepping into my shadow...", "I eat normies like you for breakfast...", "I will grind your bones to dust...", "Reaper has arrived...", "Your pathetic death will amuse me...", "DIE ALREADY YOU PATHETIC WORM!")
 	speak_chance = 10
 	turns_per_move = 5
 	del_on_death = 0
+	decompose = FALSE
 	speed = 1
 	maxHealth = 1500
 	health = 1500
@@ -605,7 +539,6 @@
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
 	loot = list(/obj/effect/decal/cleanable/robot_debris)
-	faction = list("rebound")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	ranged = 1
@@ -633,25 +566,36 @@
 	qdel(src)
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/plasma
-	desc = "A chosen ghoul from ranks of the Rebound. These elite hulks wear T-45b power armor and are equiped with a plasma rifle."
+	desc = "An elite hulk towering over most in his T-45d grips a plasma rifle between his massive palms."
 	icon_state = "rebound_chosen_b"
 	icon_living = "rebound_chosen_b"
-	icon_dead = "rebound_chosen_b"
 	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/f13plasma
 	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
 	extra_projectiles = 1
 
+/mob/living/simple_animal/hostile/ghoul/rebound/elite/ion
+	desc = "An elite hulk hidden behind old enviromental armor gripping down an ion cannon"
+	icon_state = "rebound_chosen_d"
+	icon_living = "rebound_chosen_d"
+	icon_dead = "rebound_chosen_d"
+	maxHealth = 1000
+	health = 1000
+	ranged_cooldown_time = 25
+	projectiletype = /obj/item/projectile/ion
+	projectilesound = 'sound/magic/lightningbolt.ogg'
+	extra_projectiles = 0
+
 /mob/living/simple_animal/hostile/ghoul/rebound/captain
-	name = "Captain Kavad"
-	desc = "A high ranking officer of the rebound, outfitted with a pulse rifle and set of faded T-51a."
+	name = "army ghoul captain"
+	desc = "A high ranking officer outfitted with a pulse rifle and a set of faded T-51a."
 	maxHealth = 3000
 	health = 3000
-	speak = list("Bow before our might...", "You have pestered me with your insolence long enough...", "Your life is now forfeit...", "They will bury you in a lunchbox...", "I will enjoy watching you die...", "Your suffering shall be eternal...", "Soil is thirsty...", "Nothing like culling normies...", "Glory to the All-Seeing One...")
+	speak = list("Bow before our might...", "You have pestered me with your insolence long enough...", "Your life is now forfeit...", "They will bury you in a lunchbox...", "I will enjoy watching you die...", "Your suffering shall be eternal...", "Soil is thirsty...", "Nothing like culling normies...")
 	speak_chance = 15
 	icon_state = "rebound_chosen_c"
 	icon_living = "rebound_chosen_c"
-	icon_dead = "rebound_chosen_c"
+	icon_dead = null
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	decompose = FALSE
 	turns_per_move = 5
@@ -678,7 +622,7 @@
 	extra_projectiles = 2
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/death()
-	visible_message("In his last dying breath Captain Kavad says '...Semper...Fi....you have...no idea....what you just started...' turning on his self destruct.")
+	visible_message("In his last dying breath the captain says '...Semper...Fi......' turning on his self destruct.")
 	do_sparks(6, TRUE, src)
 	for(var/i in 1 to 3)
 		addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
