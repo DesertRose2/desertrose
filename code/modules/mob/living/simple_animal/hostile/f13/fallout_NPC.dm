@@ -226,6 +226,106 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/mk2
 
+//////////////////////
+//    SNEEDCLAVE   //
+/////////////////////
+
+/mob/living/simple_animal/hostile/modernenclave
+	name = "enclave infantryman"
+	desc = "A mysterious soldier wearing heavily modified combat armor very much ressembling a power armor at this point, he holds a G11."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
+	icon_state = "sneedclave_infantry"
+	icon_living = "sneedclave_infantry"
+	icon_dead = "sneedclave_dead"
+	maxHealth = 600
+	health = 600
+	melee_damage_lower = 35
+	melee_damage_upper = 40
+	extra_projectiles = 3
+	ranged_cooldown_time = 20
+	decompose = 0
+	healable = 1
+	ranged = 1
+	attack_verb_simple = "gun-butts"
+	projectiletype = /obj/item/projectile/bullet/a473
+	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
+	turns_per_move = 5
+	response_help_simple = "pokes"
+	response_disarm_simple = "shoves"
+	response_harm_simple = "hits"
+	speed = 1
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	a_intent = INTENT_HARM
+	faction = list("enclave")
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	del_on_death = 0
+	speak = list("For the Enclave!", "Stars and Stripes!", "Liberty or death!")
+	speak_emote = list("says", "lectures", "rants", "talks down", "goes on")
+	speak_chance = 4
+	taunt_chance = 0
+	retreat_distance = 2
+	minimum_distance = 4
+	check_friendly_fire = 1
+
+/mob/living/simple_animal/hostile/modernenclave/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
+	if(prob(70) || Proj.damage > 35)
+		return ..()
+	else
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
+		return FALSE
+
+/mob/living/simple_animal/hostile/modernenclave/xl7
+	desc = "A mysterious soldier wearing heavily modified combat armor very much ressembling a power armor at this point, he holds a XL70E3."
+	icon_state = "sneedclave_infantry_b"
+	icon_living = "sneedclave_infantry_b"
+	retreat_distance = 4
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/bullet/a762/match
+	projectilesound = 'sound/f13weapons/m14.ogg'
+	ranged_cooldown_time = 25
+	extra_projectiles = 1
+
+/mob/living/simple_animal/hostile/modernenclave/rocket
+	desc = "A mysterious soldier wearing heavily modified combat armor very much ressembling a power armor at this point, he holds a rocket launcher."
+	icon_state = "sneedclave_infantry_c"
+	icon_living = "sneedclave_infantry_c"
+	retreat_distance = 6
+	minimum_distance = 8
+	projectiletype = /obj/item/projectile/bullet/a84mm
+	projectilesound = 'sound/weapons/grenadelaunch.ogg'
+	ranged_cooldown_time = 75
+	extra_projectiles = 0
+
+/mob/living/simple_animal/hostile/modernenclave/heavy
+	name = "enclave elite"
+	desc = "A massive armored hulk covered up in pristine state of the art power armor, he menacingly wields a plasma rifle."
+	icon_state = "sneedclave_heavy"
+	icon_living = "sneedclave_heavy"
+	icon_dead = "sneedclave_heavy_dead"
+	maxHealth = 2000
+	health = 2000
+	extra_projectiles = 1
+	ranged_cooldown_time = 25
+	projectiletype = /obj/item/projectile/f13plasma
+	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
+	speed = 0.8
+	speak = list("For the Enclave!", "Stars and Stripes!", "Liberty or death!", "Just another naive bimbo to put down!", "I will be enjoying this!")
+	retreat_distance = 2
+	minimum_distance = 5
+
+/mob/living/simple_animal/hostile/modernenclave/heavy/pulse
+	desc = "A massive armored hulk covered up in pristine state of the art power armor, he menacingly wields a pulse rifle."
+	icon_state = "sneedclave_heavy_b"
+	icon_living = "sneedclave_heavy_b"
+	extra_projectiles = 2
+	ranged_cooldown_time = 30
+	projectiletype = /obj/item/projectile/beam/laser/oldpulse
+	projectilesound = 'sound/weapons/ionrifle.ogg'
 
 /////////////////////
 // BROTHERHOOD NPC //
