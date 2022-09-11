@@ -395,7 +395,7 @@
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	ranged = 1
-	ranged_cooldown_time = 35
+	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/a762/match
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
 	taunt_chance = 0
@@ -418,7 +418,7 @@
 	aggro_vision_range = 15
 	retreat_distance = 3
 	minimum_distance = 10
-	ranged_cooldown_time = 60
+	ranged_cooldown_time = 50
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
 	extra_projectiles = 0
@@ -448,20 +448,20 @@
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	ranged = 1
-	ranged_cooldown_time = 30
+	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/c5mm
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
-	extra_projectiles = 4
+	extra_projectiles = 3
 	taunt_chance = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/shotgun
 	desc = "A heavy ghoul wielding a citykiller and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_b"
 	icon_living = "rebound_reaver_b"
-	ranged_cooldown_time = 35
+	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
-	extra_projectiles = 2
+	extra_projectiles = 1
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/wattz
 	desc = "A heavy ghoul wielding a wattz 2000 and clad in a set of a combat armor."
@@ -486,8 +486,8 @@
 	speak_chance = 4
 	turns_per_move = 5
 	speed = 1.4
-	maxHealth = 800
-	health = 800
+	maxHealth = 600
+	health = 600
 	harm_intent_damage = 20
 	melee_damage_lower = 20
 	melee_damage_upper = 20
@@ -519,7 +519,7 @@
 	desc = "An elite hulk towering over most in his T-45b grips a RCW between his massive palms."
 	icon_state = "rebound_chosen"
 	icon_living = "rebound_chosen"
-	icon_dead = null
+	icon_dead = "rebound_chosen_dead"
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak = list("You will regret stepping into my shadow...", "I eat normies like you for breakfast...", "I will grind your bones to dust...", "Reaper has arrived...", "Your pathetic death will amuse me...", "DIE ALREADY YOU PATHETIC WORM!")
@@ -528,13 +528,16 @@
 	del_on_death = 0
 	decompose = FALSE
 	speed = 1
-	maxHealth = 1500
-	health = 1500
+	maxHealth = 1000
+	health = 1000
 	retreat_distance = 2
 	minimum_distance = 4
 	harm_intent_damage = 30
 	melee_damage_lower = 30
 	melee_damage_upper = 30
+	obj_damage = 200
+	environment_smash = 2
+	armour_penetration = 0.5 //powerfist
 	attack_verb_simple = "power slams"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
@@ -565,22 +568,31 @@
 	explosion(src,1,2,4,4)
 	qdel(src)
 
+/mob/living/simple_animal/hostile/ghoul/rebound/elite/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
+	if(prob(70) || Proj.damage > 25)
+		return ..()
+	else
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
+		return FALSE
+
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/plasma
 	desc = "An elite hulk towering over most in his T-45b grips a plasma rifle between his massive palms."
 	icon_state = "rebound_chosen_b"
 	icon_living = "rebound_chosen_b"
 	ranged_cooldown_time = 20
-	projectiletype = /obj/item/projectile/f13plasma
+	projectiletype = /obj/item/projectile/f13plasma/pistol
 	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
 	extra_projectiles = 1
-
+ 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/ion
 	desc = "An elite hulk hidden behind old enviromental armor gripping down an ion cannon"
-	icon_state = "rebound_chosen_d"
-	icon_living = "rebound_chosen_d"
-	icon_dead = "rebound_chosen_d"
-	maxHealth = 1000
-	health = 1000
+	icon_state = "rebound_antitank"
+	icon_living = "rebound_antitank"
+	icon_dead = "rebound_antitank_dead"
+	maxHealth = 700
+	health = 700
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/ion
 	projectilesound = 'sound/magic/lightningbolt.ogg'
@@ -589,13 +601,13 @@
 /mob/living/simple_animal/hostile/ghoul/rebound/captain
 	name = "army ghoul captain"
 	desc = "A high ranking officer outfitted with a pulse rifle and a set of faded T-51a."
-	maxHealth = 3000
-	health = 3000
+	maxHealth = 2500
+	health = 2500
 	speak = list("Bow before our might...", "You have pestered me with your insolence long enough...", "Your life is now forfeit...", "They will bury you in a lunchbox...", "I will enjoy watching you die...", "Your suffering shall be eternal...", "Soil is thirsty...", "Nothing like culling normies...")
 	speak_chance = 15
-	icon_state = "rebound_chosen_c"
-	icon_living = "rebound_chosen_c"
-	icon_dead = null
+	icon_state = "rebound_boss"
+	icon_living = "rebound_boss"
+	icon_dead = "rebound_boss_dead"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	decompose = FALSE
 	turns_per_move = 5
@@ -606,6 +618,9 @@
 	harm_intent_damage = 40
 	melee_damage_lower = 40
 	melee_damage_upper = 40
+	obj_damage = 200
+	environment_smash = 2
+	armour_penetration = 0.5 //powerfist
 	attack_verb_simple = "power slams"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
@@ -616,10 +631,10 @@
 	ranged = 1
 	stat_attack = UNCONSCIOUS
 	taunt_chance = 0	
-	ranged_cooldown_time = 15
+	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/beam/laser/oldpulse
 	projectilesound = 'sound/weapons/ionrifle.ogg'
-	extra_projectiles = 2
+	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/death()
 	visible_message("In his last dying breath the captain says '...Semper...Fi......' turning on his self destruct.")
@@ -636,3 +651,12 @@
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/proc/self_destruct()
 	explosion(src,2,2,8,8)
 	qdel(src)
+
+/mob/living/simple_animal/hostile/ghoul/rebound/captain/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
+	if(prob(70) || Proj.damage > 25)
+		return ..()
+	else
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
+		return FALSE

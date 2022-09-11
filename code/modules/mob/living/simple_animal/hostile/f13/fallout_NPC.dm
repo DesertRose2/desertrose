@@ -237,8 +237,8 @@
 	icon_state = "sneedclave_infantry"
 	icon_living = "sneedclave_infantry"
 	icon_dead = "sneedclave_dead"
-	maxHealth = 600
-	health = 600
+	maxHealth = 500
+	health = 500
 	melee_damage_lower = 35
 	melee_damage_upper = 40
 	extra_projectiles = 3
@@ -307,23 +307,27 @@
 	icon_state = "sneedclave_heavy"
 	icon_living = "sneedclave_heavy"
 	icon_dead = "sneedclave_heavy_dead"
-	maxHealth = 2000
-	health = 2000
+	maxHealth = 1500
+	health = 1500
 	extra_projectiles = 1
 	ranged_cooldown_time = 25
-	projectiletype = /obj/item/projectile/f13plasma
+	projectiletype = /obj/item/projectile/f13plasma/pistol
 	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
 	speed = 0.8
 	speak = list("For the Enclave!", "Stars and Stripes!", "Liberty or death!", "Just another naive bimbo to put down!", "I will be enjoying this!")
 	retreat_distance = 2
 	minimum_distance = 5
+	obj_damage = 200
+	environment_smash = 2
+	armour_penetration = 0.5 //powerfist
+	attack_verb_simple = "power-slams"
 
 /mob/living/simple_animal/hostile/modernenclave/heavy/pulse
 	desc = "A massive armored hulk covered up in pristine state of the art power armor, he menacingly wields a pulse rifle."
 	icon_state = "sneedclave_heavy_b"
 	icon_living = "sneedclave_heavy_b"
-	extra_projectiles = 2
-	ranged_cooldown_time = 30
+	extra_projectiles = 0
+	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/beam/laser/oldpulse
 	projectilesound = 'sound/weapons/ionrifle.ogg'
 
