@@ -640,7 +640,7 @@
 
 	loot = list(
 				/obj/item/twohanded/fireaxe,
-				/obj/item/twohanded/sledgehammer,
+				/obj/item/twohanded/sledgehammer/simple,
 				/obj/item/twohanded/fireaxe/bmprsword,
 				/obj/item/melee/unarmed/lacerator,
 				/obj/item/melee/unarmed/maceglove,

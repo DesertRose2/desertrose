@@ -8,11 +8,10 @@
 	var/debug = FALSE //debugging only
 	var/working = TRUE
 	var/fueluse = 1
-//	light_system = MOVABLE_LIGHT // added var TEMPORARY bc DR
 	light_range = 2
-	light_power = 1.5
+	light_power = GLOW_BRIGHT
 	light_color = LIGHT_COLOR_FIRE
-	var/light_on = FALSE // added var TEMPORARY bc DR
+	var/light_on = FALSE
 
 
 /obj/structure/furnace/Initialize()
@@ -30,26 +29,23 @@
 		return TRUE
 	if(reagents.remove_reagent(/datum/reagent/fuel, fueluse))
 		working = TRUE
-//		light_on(TRUE)  // TEMPORARY  replaced w below bc DR code
 		set_light(brightness_on)
 		if(icon_state == "furnace0")
 			icon_state = "furnace1"
 
 	else
 		working = FALSE
-//		light_on(FALSE)   // TEMPORARY  replaced w below bc DR code
 		set_light(0)
 		icon_state = "furnace0"
 
 /obj/structure/furnace/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/ingot))
-		var/obj/item/ingot/notsword = I
+	if(istype(I, /obj/item/blacksmith/ingot))
+		var/obj/item/blacksmith/ingot/notsword = I
 		if(working)
 			to_chat(user, "You heat the [notsword] in the [src].")
 			notsword.workability = "shapeable"
 			notsword.icon_state = "hot_ingot"
-//			notsword.set_light_on(TRUE) // TEMPROARY replace w below  bc DR code
-			notsword.set_light(brightness_on)
+			notsword.set_light(l_power = GLOW_MODERATE)
 			I.on_attack_hand(user)
 		else
 			to_chat(user, "The furnace isn't working!.")
@@ -73,17 +69,3 @@
 		to_chat(user, "<span class='notice'>You finish plunging the [name].")
 		reagents.reaction(get_turf(src), TOUCH) //splash on the floor
 		reagents.clear_reagents()
-
-/obj/structure/furnace/infinite
-	name = "fuelless furnace"
-	debug = TRUE
-	icon_state = "ratfurnace"
-
-
-/obj/structure/furnace/infinite/ratvar
-	name = "brass furnace"
-	desc = "A brass furnace. Powered by... something, but seems otherwise safe." //todo:sprites they're safe for noncultists because you're just putting ingots in them. also there';s a reason to steal them ig
-
-/obj/structure/furnace/infinite/narsie
-	name = "rune furnace"
-	desc = "A runed furnace. Powered by... something, but seems otherwise safe."

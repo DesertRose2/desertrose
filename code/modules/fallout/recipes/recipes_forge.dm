@@ -253,7 +253,7 @@
 
 /datum/crafting_recipe/sledge
 	name = "Sledgehammer"
-	result = /obj/item/twohanded/sledgehammer
+	result = /obj/item/twohanded/sledgehammer/simple
 	time = 1000
 	reqs = list(/obj/item/stack/sheet/metal = 30,
 				/obj/item/stack/sheet/mineral/wood = 5)
