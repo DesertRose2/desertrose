@@ -428,7 +428,7 @@
 	desc = "A heavy ghoul wielding an AK-112 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver"
 	icon_living = "rebound_reaver"
-	icon_dead = null
+	icon_dead = "rebound_reaver_dead"
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak = list("Remember Necropolis....", "Not even your mother will recognize you once I am done...", "You just made your last mistake..", "Die, smoothskin scum..")
