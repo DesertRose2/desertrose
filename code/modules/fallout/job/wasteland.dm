@@ -73,6 +73,7 @@ Great Khans
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 
 /datum/outfit/job/wasteland/f13genghis
 	name = "Genghis Khan"
@@ -162,6 +163,7 @@ Great Khans
 	ADD_TRAIT(H, TRAIT_CHEM_USER, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanbatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedkhanbatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 
 	if(!H.gang)
 		var/datum/gang/greatkhans/GK = GLOB.greatkhans

@@ -42,6 +42,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalshield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/nightshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_wayfareroor)
 
 /*
 Tribal Chief

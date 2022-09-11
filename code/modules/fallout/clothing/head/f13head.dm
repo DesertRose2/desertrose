@@ -493,6 +493,14 @@
 	item_state = "t51wboshelmet"
 	actions_types = list()
 
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/wbos/X03/Hellfire
+	name = "Brotherhood modified X-03 Hellfire Power Armor"
+	desc = "(X) A salvaged and remodeled set of customized X-03 power armor, with its irrecoverable components filled in with altered-fit pieces of a T-60 chassis."
+	icon_state = "HellfireHelm"
+	item_state = "t51wboshelmet"
+	actions_types = list()
+
+
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/reforgedwbos
 	name = "reforged Washington power helmet"
 	desc = "(X) It's a reforged Washington Brotherhood power helmet, designed to induce fear in a target."

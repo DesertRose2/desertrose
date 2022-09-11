@@ -36771,10 +36771,7 @@
 	},
 /area/f13/building)
 "mnj" = (
-/obj/structure/simple_door/metal/barred{
-	req_access_txt = "131";
-	req_one_access_txt = "131"
-	},
+/obj/machinery/door/unpowered/securedoor/wayfareroor,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mnv" = (
