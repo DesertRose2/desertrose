@@ -401,7 +401,7 @@
 	taunt_chance = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/regular/thompson
-	desc = "A ghoul serving under the banner of the Rebound. They hold a rusted thompson M1A1 shining against their metal chestplate."
+	desc = "A ghoul holding a rusted thompson shining against their metal chestplate right under his collar."
 	icon_state = "rebound_initiate_b"
 	icon_living = "rebound_initiate_b"
 	ranged_cooldown_time = 35
