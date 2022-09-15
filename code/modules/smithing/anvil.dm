@@ -30,9 +30,8 @@
 //Tablevil specific
 #define RECIPE_UNITOOL "bbb"  //bend bend bend
 #define RECIPE_MACHREFORG "fdf" //fold draw fold
-#define RECIPE_SCRAPSAW "fffd" //fold fold fold draw
 #define RECIPE_SWORD "ffdd" // fold fold draw draw
-#define RECIPE_SCRAPSAW "ffsu" //fold fold shrink upset
+#define RECIPE_SAW "ffsu" //fold fold shrink upset
 #define RECIPE_SCRAP "fffff" //fold fold fold fold fold
 #define RECIPE_CRUSHER "uupp" //upset upset punch punch
 #define RECIPE_TRIDENT "dddf" //draw draw draw fold
@@ -368,7 +367,7 @@
 	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
 	RECIPE_SWORD = /obj/item/smithing/swordblade,
 	RECIPE_MACE = /obj/item/smithing/macehead,
-	RECIPE_SCRAPSAW  = /obj/item/smithing/scrapsaw,
+	RECIPE_SAW  = /obj/item/smithing/scrapsaw,
 	RECIPE_SCRAP = /obj/item/smithing/scrapblade,
 	RECIPE_CRUSHER = /obj/item/smithing/crusherhead,
 	RECIPE_TRIDENT = /obj/item/smithing/tridenthead,
