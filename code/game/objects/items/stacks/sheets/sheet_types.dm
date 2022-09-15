@@ -317,6 +317,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 		user.visible_message("[user] begins whittling [src] into a rod, suitable for using as a handle for smithed axes and the like.", \
 				"<span class='notice'>You begin whittling [src] into a rod, suitable for using as a handle for smithed axes and the like.</span>", \
 				"<span class='italics'>You hear wood carving.</span>")
+		playsound(get_turf(src), 'sound/effects/wood_cutting.ogg', 10, 0, 0)
 		if(!do_after(user, 40, TRUE, src))
 			return
 		// Make stick

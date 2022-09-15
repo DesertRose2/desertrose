@@ -34,7 +34,7 @@
 			playsound(src, 'sound/effects/water_wade4.ogg',50, 1)
 			return
 		to_chat(user, "You temper the [untempered] by quenching it in the water. There is a loud hiss and a puff of steam.")
-		playsound(src, 'sound/machines/clockcult/steam_whoosh.ogg', 50, TRUE)
+		playsound(src, 'code/modules/smithing/sound/steam_whoosh.ogg', 40, TRUE)
 		flick("quench_boil",src)
 		var/datum/effect_system/steam_spread/puff = new /datum/effect_system/steam_spread/()
 		puff.effect_type = /obj/effect/particle_effect/steam
@@ -52,10 +52,10 @@
 	if(istype(I, /obj/item/blacksmith/ingot))
 		var/obj/item/blacksmith/ingot/notsword = I
 		if(notsword.workability == FALSE)
-			playsound(src, 'sound/effects/water_wade4.ogg',50, 1)
+			playsound(src, 'code/modules/smithing/sound/water_splash2.ogg',50, 1)
 			return
 		to_chat(user, "You cool the [notsword] in the water.")
-		playsound(src, 'sound/f13effects/steam_short.ogg',80, 1)
+		playsound(src, 'code/modules/smithing/sound/steam_short.ogg',70, 1)
 		flick("quench_boil",src)
 		var/datum/effect_system/steam_spread/puff = new /datum/effect_system/steam_spread/()
 		puff.effect_type = /obj/effect/particle_effect/steam
@@ -99,9 +99,9 @@
 // CUTTING LEATHER INTO STRIPS (for further crafting) TO DO - put in hand instead of drop on floor
 /obj/item/stack/sheet/leather/attackby(obj/item/W, mob/user, params)
 	if(W.get_sharpness())
-		playsound(loc, 'sound/weapons/slice.ogg', 50, 1, -1)
+		playsound(loc, 'code/modules/smithing/sound/ripped.ogg', 30, 1, -1)
 		user.visible_message("[user] starts shredding the [src] into strips.", "<span class='notice'>You start shredding the [src] into strips</span>", "<span class='italics'>You hear the sound of leather being ripped.</span>")
-		if(do_after(user, 40, target = src))
+		if(do_after(user, 30, target = src))
 			to_chat(user, "<span class='notice'>You cut strips from this [src.singular_name].</span>")
 			new /obj/item/stack/sheet/leatherstrips(user.drop_location(), 1)
 			use(1)
@@ -168,7 +168,7 @@ GLOBAL_LIST_INIT(leatherstrips_recipes, list ( \
 // ADVICE FOR BLACKSMITH ROOKIES //
 ///////////////////////////////////
 
-// Explains some things so you dont have to code dive to learn.
+// Explains most things ingame so you dont have to code dive to learn.
 /obj/item/book/manual/advice_blacksmith
 	name = "The Forgemasters Primer"
 	desc = "A thin book with some basic advice on how to use a hammer and anvil, copied by hand."

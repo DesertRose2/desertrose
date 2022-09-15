@@ -125,7 +125,7 @@
 		return
 	if(istype(A, /turf/closed/mineral))
 		mineral_scan_pulse(get_turf(user), range)
-		playsound(src, 'sound/f13items/pickaxe_2.ogg', 70, 1)
+		playsound(src, 'code/modules/smithing/sound/pickaxe_2.ogg', 70, 1)
 
 /obj/item/mining_scanner/prospector/attack_self(mob/user)
 	return
@@ -272,12 +272,12 @@
 	slowdown = 8
 	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
 	body_parts_covered = null
-	hitsound = 'sound/weapons/chainhit.ogg'
+	hitsound = 'code/modules/smithing/sound/chain.ogg'
 	var/quality = null
 
 /obj/item/clothing/shoes/ballandchain/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(loc == user && user.get_item_by_slot(SLOT_SHOES))
-		playsound(usr.loc, 'sound/weapons/chainhit.ogg', 75, 1)
+		playsound(usr.loc, 'code/modules/smithing/sound/chain.ogg', 75, 1)
 		to_chat(user, "<span class='warning'>The ball and chain are too hard to remove by yourself! You'll need help taking this off!</span>")
 		return
 	return ..()
@@ -298,7 +298,7 @@
 	sharpness = SHARP_EDGED
 	force = 21
 	throwforce = 23
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'code/modules/smithing/sound/hit_knife.ogg'
 	armour_penetration = 0.05
 	attack_speed = FAST_ATTACK
 
@@ -308,14 +308,14 @@
 		return ..()
 	if(user.zone_selected == BODY_ZONE_PRECISE_EYES)
 		M.apply_damage(7, BRUTE, BODY_ZONE_HEAD)
-		playsound(M, 'sound/effects/meatslap.ogg', 80, 1)
+		playsound(M, 'code/modules/smithing/sound/meatslap.ogg', 80, 1)
 		return eyestab(M,user)
 	else
 		return ..()
 
 /obj/item/melee/smith/dagger/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/butchering, 90, 90, 20)
+	AddComponent(/datum/component/butchering, 100, 100, 10)
 
 // ------------ BOWIE KNIFE ------------ // [33 AP 0.3 Eyestab]
 /obj/item/melee/smith/dagger/bowie 
@@ -323,8 +323,6 @@
 	icon_state = "bowie_smith"
 	overlay_state = "hilt_bowie"
 	force = 23
-	hitsound = 'sound/weapons/rapierhit.ogg'
-	attack_speed = FAST_ATTACK
 
 
 //////////////////////////////////
@@ -379,7 +377,7 @@
 	throwforce = 12
 	item_flags = ITEM_CAN_PARRY
 	block_parry_data = /datum/block_parry_data/waki
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'code/modules/smithing/sound/hit_sword.ogg'
 	block_chance = 5
 	wound_bonus = 5
 	bare_wound_bonus = 20
@@ -422,6 +420,7 @@
 	throwforce = 12
 	armour_penetration = 0.3
 	wound_bonus = 10
+	hitsound = 'code/modules/smithing/sound/hit_mace.ogg'
 
 /obj/item/melee/smith/mace/afterattack(mob/living/M, mob/living/user)
 	. = ..()
@@ -523,7 +522,7 @@
 	wielded_mult = 1.5
 	item_flags = ITEM_CAN_PARRY | NEEDS_PERMIT
 	block_parry_data = /datum/block_parry_data/smithkatana
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'code/modules/smithing/sound/hit_sword.ogg'
 	slot_flags = ITEM_SLOT_BELT
 	block_chance = 15
 	wound_bonus = 5
@@ -639,7 +638,7 @@
 	wound_bonus = 20
 	bare_wound_bonus = 30
 	wielded_mult = 1.5
-	hitsound = 'sound/weapons/genhit3.ogg'
+	hitsound = 'code/modules/smithing/sound/hit_mace.ogg'
 	slot_flags = null
 	armour_penetration = 0.1
 	attack_speed = SLOW_ATTACK
@@ -681,7 +680,7 @@
 	icon_prefix = "spear_smith"
 	overlay_state = "shaft_spear"
 	reach = 2
-	force = 10
+	force = 11
 	throwforce = 20
 	sharpness = SHARP_POINTY
 	armour_penetration = 0.1
@@ -692,11 +691,15 @@
 	icon_state = "trident_smith"
 	icon_prefix = "trident_smith"
 	overlay_state = "shaft_trident"
-	force = 11
+	force = 10
 	attack_speed = SLOW_ATTACK
 	throwforce = 30
 	embedding = list("pain_mult" = 2, "embed_chance" = 40, "fall_chance" = 30, "ignore_throwspeed_threshold" = TRUE)
 	armour_penetration = 0
+
+/obj/item/melee/smith/twohand/crusher/Initialize()
+	. = ..()
+	desc = "Made for spearing small lizard and fish, able to pin down the prey if thrown."
 
 // ------------ LEGION LANCE ------------ // [20/36 AP 0.1 Reach]
 /obj/item/melee/smith/twohand/spear/lance

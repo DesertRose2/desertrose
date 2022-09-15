@@ -42,7 +42,7 @@
 #define RECIPE_GLADIUS "fdf" //fold draw fold
 #define RECIPE_SPATHA "ffdd" // fold fold draw draw
 #define RECIPE_LONGSWORD "fffff" //fold fold fold fold fold
-#define RECIPE_WARAXE "uuff" //upset upset fold fold
+#define RECIPE_WARAXE "uupp" //upset upset punch punch
 #define RECIPE_LANCE "dddf" //draw draw draw fold
 
 /obj/structure/anvil
@@ -155,7 +155,52 @@
 	var/list/shapingsteps = list("weak hit", "strong hit", "heavy hit", "fold", "draw", "shrink", "bend", "punch", "upset") //weak/strong/heavy hit affect quality. All the other steps shape.
 	workpiece_state = WORKPIECE_INPROGRESS
 	var/stepdone = input(user, "How would you like to work the metal?") in shapingsteps
-	var/steptime = 40
+	var/steptime = 35
+	switch(stepdone)
+		if("weak hit")
+			playsound(src, 'code/modules/smithing/sound/anvil_weak.ogg',100)
+			user.visible_message("<span class='notice'>[user] carefully hammers out imperfections in the metal.</span>", \
+						"<span class='notice'>You carefully hammer out imperfections in the metal.</span>")
+		if("strong hit")
+			playsound(src, 'code/modules/smithing/sound/anvil_strong.ogg',80)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] hammers out imperfections in the metal.</span>", \
+						"<span class='notice'>You hammer out imperfections in the metal.</span>")
+		if("heavy hit")
+			playsound(src, 'code/modules/smithing/sound/anvil_heavy.ogg',90)
+			do_smithing_sparks(2, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] forcefully hammers out imperfections in the metal.</span>", \
+						"<span class='notice'>You forcefuly hammer out imperfections in the metal.</span>")
+		if("fold")
+			playsound(src, 'code/modules/smithing/sound/anvil_double1.ogg',90)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] folds the metal.</span>", \
+						"<span class='notice'>You fold the metal.</span>")
+		if("draw")
+			playsound(src, 'code/modules/smithing/sound/anvil_double2.ogg',90)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] hammers both sides of the metal, drawing it out.</span>", \
+						"<span class='notice'>You hammer both sides of the metal, drawing it out.</span>")
+		if("shrink")
+			playsound(src, 'code/modules/smithing/sound/anvil_rapid.ogg',110)
+			do_smithing_sparks(1, TRUE, src)
+			user.visible_message("<span class='notice'>[user] flattens the metal, shrinking it.</span>", \
+						"<span class='notice'>You flatten the metal, shrinking it.</span>")
+		if("bend")
+			playsound(src, 'code/modules/smithing/sound/anvil_single1.ogg',80)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] bends the metal, using the rounded end of the anvil.</span>", \
+						"<span class='notice'>You bend the metal, using the rounded end of the anvil.</span>")
+		if("punch")
+			playsound(src, 'code/modules/smithing/sound/anvil_single2.ogg',90)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] uses the puncher to make holes in the metal.</span>", \
+						"<span class='notice'>You use the puncher to make holes in the metal.</span>")
+		if("upset")
+			playsound(src, 'code/modules/smithing/sound/anvil_double3.ogg',90)
+			do_smithing_sparks(1, TRUE, src) 
+			user.visible_message("<span class='notice'>[user] upsets the metal by hammering the thick end.</span>", \
+						"<span class='notice'>You upset the metal by hammering the thick end.</span>")
 	if(!locate(src) in range(1, user))
 		busy = FALSE
 		F.busy = FALSE
@@ -163,7 +208,6 @@
 	if(user.mind.skill_holder)
 		var/skillmod = user.mind.get_skill_level(/datum/skill/level/dwarfy/blacksmithing)/10 + 1
 		steptime = 30 / skillmod
-	playsound(src, 'sound/effects/clang2.ogg',40, 2)
 	if(!do_after(user, steptime, target = src))
 		busy = FALSE
 		F.busy = FALSE
@@ -205,11 +249,6 @@
 			stepsdone += "u"
 			currentsteps += 1
 			currentquality -= 1
-	user.visible_message("<span class='notice'>[user] works the metal on the anvil with their hammer with a loud clang!</span>", \
-						"<span class='notice'>You [stepdone] the metal with a loud clang!</span>")
-	playsound(src, 'sound/effects/clang2.ogg',40, 2)
-	do_smithing_sparks(1, TRUE, src) 
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/effects/clang2.ogg', 40, 2), 15)
 	if(length(stepsdone) >= 3)
 		tryfinish(user)
 	busy = FALSE
@@ -248,9 +287,9 @@
 			cut_overlay(image(icon= 'code/modules/smithing/icons/blacksmith.dmi',icon_state="workpiece"))
 			set_light(l_power = 0)
 			if(artifact)
-				to_chat(user, "It is an artifact, a creation whose legacy shall live on forevermore.") //todo: SSblackbox
+				to_chat(user, "It is an artifact, a creation whose legacy shall live on forevermore.") 
 				currentquality = max(currentquality, 2)
-				finisheditem.quality = currentquality * 3//this is insane i know it's 1/2500 for most of the time and 0.8% at best
+				finisheditem.quality = currentquality * 2
 				finisheditem.artifact = TRUE
 			else
 				finisheditem.quality = min(currentquality, itemqualitymax)

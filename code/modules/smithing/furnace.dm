@@ -12,12 +12,14 @@
 	light_power = GLOW_BRIGHT
 	light_color = LIGHT_COLOR_FIRE
 	var/light_on = FALSE
+	var/datum/looping_sound/furnace/soundloop
 
 
 /obj/structure/furnace/Initialize()
 	. = ..()
 	create_reagents(250, TRANSPARENT)
 	START_PROCESSING(SSobj, src)
+	soundloop = new(list(src), FALSE)
 
 /obj/structure/furnace/Destroy()
 	STOP_PROCESSING(SSobj, src)
@@ -29,12 +31,14 @@
 		return TRUE
 	if(reagents.remove_reagent(/datum/reagent/fuel, fueluse))
 		working = TRUE
+		soundloop.start()
 		set_light(brightness_on)
 		if(icon_state == "furnace0")
 			icon_state = "furnace1"
 
 	else
 		working = FALSE
+		soundloop.stop()
 		set_light(0)
 		icon_state = "furnace0"
 
@@ -69,3 +73,8 @@
 		to_chat(user, "<span class='notice'>You finish plunging the [name].")
 		reagents.reaction(get_turf(src), TOUCH) //splash on the floor
 		reagents.clear_reagents()
+
+/datum/looping_sound/furnace
+	mid_sounds = list('code/modules/smithing/sound/furnace1.ogg'=1)
+	mid_length = 70
+	volume = 80

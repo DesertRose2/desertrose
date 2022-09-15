@@ -4,11 +4,11 @@
 //										//
 //////////////////////////////////////////
 
-
 /obj/item/blacksmith
 	icon = 'code/modules/smithing/icons/blacksmith.dmi'
 	righthand_file = 'code/modules/smithing/icons/onmob/righthand.dmi'
 	lefthand_file = 'code/modules/smithing/icons/onmob/lefthand.dmi'
+	force = 10
 	max_integrity = 50
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -58,6 +58,7 @@
 		var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 		if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
 			H.update_damage_overlays()
+		playsound(src, 'code/modules/smithing/sound/burned.ogg', 15, 1)
 		var/list/hand_items = list(H.get_active_held_item(),H.get_inactive_held_item())
 		if(src in hand_items)
 			H.dropItemToGround(src)
@@ -68,17 +69,20 @@
 		to_chat(user, "<span class='warning'>You need to quench the [src] before finishing it!</span>")
 		return
 	if(istype(I, LEATHER_STRIP))
-		to_chat(user, "<span class='warning'>You start to wrap the leathe strip around the [src].</span>")
+		to_chat(user, "<span class='warning'>You start to wrap the leather strip around the [src].</span>")
 		I.use(1)
-		if(!do_after(user, 20, TRUE, src))
+		playsound(src, 'code/modules/smithing/sound/latex.ogg', 70, 1)
+		if(!do_after(user, 30, TRUE, src))
 			return
 		startfinish()
 	else if(istype(I, finishingitem))
 		qdel(I)
 		to_chat(user, "<span class='warning'>You start to attach the handle and fittings to the [src].</span>")
-		if(!do_after(user, 20, TRUE, src))
+		playsound(src, 'code/modules/smithing/sound/craft_3.ogg', 90, 1)
+		if(!do_after(user, 30, TRUE, src))
 			return
 		startfinish()
+		user.put_in_hands(finalitem)
 	else
 		return ..()
 
@@ -168,6 +172,7 @@
 		return ..()
 	else
 		to_chat(user, "<span class='warning'>You try to move the [src], but you burn your hand on it!</span>")
+		playsound(src, 'code/modules/smithing/sound/burned.ogg', 15, 1)
 	if(H)
 		var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 		if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
@@ -209,13 +214,11 @@
 //								//
 //////////////////////////////////
 
-
 // -------- WOODEN ROD -------- //
 /obj/item/blacksmith/woodenrod
 	name = "wooden rod"
 	desc = "It's a rod, suitable for use of a handle of a tool. Also could serve as a weapon, in a pinch."
 	icon_state = "woodrod"
-	force = 10
 	resistance_flags = FLAMMABLE
 
 // Make a sword handle by wrapping leather strips on a rod
@@ -224,6 +227,7 @@
 		user.visible_message("[user] begins finishing the [src] into a sword handle.", \
 				"<span class='notice'>You begin wrapping the [src] with leather strips, and shaping the wood into a sword handle.</span>", \
 				"<span class='italics'>You hear faint sounds of handcrafting.</span>")
+		playsound(src, 'code/modules/smithing/sound/craft_3.ogg', 50, 1)
 		// 6 Second Timer
 		if(!do_after(user, 40, TRUE, src))
 			return
@@ -250,14 +254,14 @@
 	name = "length of chain"
 	desc = "It rattles and is pretty useless when not attached to stuff"
 	icon_state = "chain"
+	hitsound = 'code/modules/smithing/sound/chain.ogg'
 
 
 //////////////////////////////
 //							//
 //  	SMITHED TOOLS		//
 //							//
-//////////////////////////////
-
+////////////////////////////// - Known issues - force not modified correctly by quality. Toolspeed works though.
 
 // -------- BLACKSMITH HAMMER -------- //
 /obj/item/smithing/hammerhead
@@ -361,7 +365,6 @@
 	finalitem = finalforreal
 	..()
 
-
 // -------- KITCHEN KNIFE -------- //
 /obj/item/smithing/knifeblade
 	name = "smithed knife blade"
@@ -448,7 +451,6 @@
 //												//
 //////////////////////////////////////////////////
 
-
 // ------------ DAGGER ------------ //
 /obj/item/smithing/daggerblade
 	name = "smithed dagger blade"
@@ -509,6 +511,7 @@
 	name = "reforged machete blade"
 	desc = "Attach a sword handle."
 	icon_state = "macheter_smith"
+	finishingitem = SWORD_HANDLE
 	finalitem = /obj/item/melee/smith/machete/reforged
 
 /obj/item/smithing/macheterblade/startfinish()
@@ -653,6 +656,7 @@
 	finalitem = finalforreal
 	..()
 
+
 // ------------ HEAVY AXE ------------ //
 /obj/item/smithing/axehead
 	name = "smithed axehead"
@@ -694,6 +698,7 @@
 	finalforreal.AddComponent(/datum/component/two_handed, force_unwielded=finalforreal.force, force_wielded=finalforreal.wield_force, icon_wielded="[icon_state]2")
 	finalitem = finalforreal
 	..()
+
 
 // ------------ SPEAR ------------ //
 /obj/item/smithing/spearhead
