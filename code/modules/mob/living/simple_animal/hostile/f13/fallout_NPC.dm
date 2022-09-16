@@ -296,7 +296,7 @@
 	icon_living = "sneedclave_infantry_c"
 	retreat_distance = 6
 	minimum_distance = 8
-	projectiletype = /obj/item/projectile/bullet/a84mm
+	projectiletype = /obj/item/projectile/bullet/a40mm
 	projectilesound = 'sound/weapons/grenadelaunch.ogg'
 	ranged_cooldown_time = 75
 	extra_projectiles = 0
