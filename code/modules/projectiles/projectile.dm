@@ -326,6 +326,21 @@
 /obj/item/projectile/Bump(atom/A)
 	if(!trajectory)
 		return
+
+	if(ishuman(A))
+		var/mob/living/carbon/human/H = A
+		if(ishuman(firer))
+			var/datum/component/combat_mode/combat_mode_active_shooter = firer.GetComponent(/datum/component/combat_mode)
+			var/datum/component/combat_mode/combat_mode_shot = H.GetComponent(/datum/component/combat_mode)
+			if(!(combat_mode_active_shooter.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_active_shooter.mode_flags & COMBAT_MODE_ACTIVE))
+				visible_message(SPAN_DANGER("[firer] shoots around [H]!"), null, null, COMBAT_MESSAGE_RANGE)
+				forceMove(H.loc)
+				return BULLET_ACT_FORCE_PIERCE
+			if(!(combat_mode_shot.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_shot.mode_flags & COMBAT_MODE_ACTIVE))
+				visible_message(SPAN_DANGER("[H] dodge [firer] fire!"), null, null, COMBAT_MESSAGE_RANGE)
+				forceMove(H.loc)
+				return BULLET_ACT_FORCE_PIERCE
+
 	var/turf/T = get_turf(A)
 	if(check_ricochet_flag(A) && check_ricochet(A)) //if you can ricochet, attempt to ricochet off the object
 		ricochets++

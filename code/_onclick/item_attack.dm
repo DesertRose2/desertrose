@@ -8,6 +8,17 @@
  *afterattack. The return value does not matter.
  */
 /obj/item/proc/melee_attack_chain(mob/user, atom/target, params, attackchain_flags, damage_multiplier = 1)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = target
+		if(ishuman(target))
+			var/datum/component/combat_mode/combat_mode_husband = user.GetComponent(/datum/component/combat_mode)
+			var/datum/component/combat_mode/combat_mode_wife = H.GetComponent(/datum/component/combat_mode)
+			if(!(combat_mode_husband.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_husband.mode_flags & COMBAT_MODE_ACTIVE))
+				visible_message(SPAN_DANGER("[user] warns [target] with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
+				return FALSE
+			if(!(combat_mode_wife.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_wife.mode_flags & COMBAT_MODE_ACTIVE))
+				visible_message(SPAN_DANGER("[target] dodges [target]'s swing with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
+				return FALSE
 	if(isliving(user))
 		var/mob/living/L = user
 		if(!CHECK_MOBILITY(L, MOBILITY_USE) && !(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
