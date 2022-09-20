@@ -41,7 +41,7 @@
 //Keep this sorted alphabetically
 #include "anchored_mobs.dm"
 #include "character_saving.dm"
-#include "combat.dm"
+//#include "combat.dm"  - will error do to combat indicator stuff Trilby
 #include "component_tests.dm"
 #include "crafting_recipes.dm"
 #include "designs.dm"
