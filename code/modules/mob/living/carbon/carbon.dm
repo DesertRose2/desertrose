@@ -155,6 +155,16 @@
 	return
 
 /mob/living/carbon/throw_item(atom/target)
+	var/obj/item/I = get_active_held_item()
+
+	if(ishuman(src))
+		var/mob/living/carbon/human/H = src
+		var/datum/component/combat_mode/powergamer = H.GetComponent(/datum/component/combat_mode)
+		if(!(powergamer.mode_flags & COMBAT_MODE_TOGGLED) && !(powergamer.mode_flags & COMBAT_MODE_ACTIVE))
+			to_chat(src, SPAN_WARNING("You must turn on combat mode to throw items."))
+			visible_message(SPAN_DANGER("[src] grips their [I] intently preparing to throw it!"), null, null, COMBAT_MESSAGE_RANGE)
+			return FALSE
+
 	throw_mode_off()
 	if(!target || !isturf(loc))
 		return
@@ -169,7 +179,6 @@
 	var/random_turn = a_intent == INTENT_HARM
 	//END OF CIT CHANGES
 
-	var/obj/item/I = get_active_held_item()
 
 	var/atom/movable/thrown_thing
 	var/mob/living/throwable_mob
