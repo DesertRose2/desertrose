@@ -24,7 +24,7 @@
 	blood_volume = 0
 	var/heavy_emp_damage = 25
 
-	faction = list("hostile", "enclave", "wastebot", "ghoul", "cazador", "supermutant", "bighorner")
+	faction = list("hostile", "enclave", "wastebot", "ghoul", "cazador", "supermutant", "bighorner", "raider")
 
 	harm_intent_damage = 8
 	melee_damage_lower = 2
@@ -79,7 +79,7 @@
 	icon_gib = "floatingeye_d"
 
 	retreat_distance = 4
-	faction = list("hostile", "bs")
+	faction = list("hostile", "bs", "raider")
 
 	projectiletype = /obj/item/projectile/energy/electrode
 	projectilesound = 'sound/weapons/resonator_blast.ogg'

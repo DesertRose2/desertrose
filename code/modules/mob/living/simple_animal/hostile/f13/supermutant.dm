@@ -25,7 +25,7 @@
 	maxHealth = 300
 	health = 300
 	force_threshold = 15
-	faction = list("hostile", "supermutant")
+	faction = list("hostile", "supermutant", "raider")
 	melee_damage_lower = 45
 	melee_damage_upper = 55
 	mob_size = MOB_SIZE_LARGE
