@@ -291,19 +291,6 @@
 				if(istype(L))
 					L.update_equipment_speed_mods()
 
-/obj/item/clothing/suit/armor/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(check_armor_penetration(object) <= 0.15 && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(armor_block_chance))
-			var/ratio = rand(0,100)
-			if(ratio <= deflection_chance)
-				block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-				return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-			if(ismob(loc))
-				to_chat(loc, SPAN_WARNING("Your power armor absorbs the projectile's impact!"))
-			block_return[BLOCK_RETURN_SET_DAMAGE_TO] = 0
-			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
-
 /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	name = "salvaged T-45b power armor"
 	desc = "(VIII) It's a set of early-model T-45 power armor with a custom air conditioning module and stripped out servomotors. Bulky and slow, but almost as good as the real thing."
