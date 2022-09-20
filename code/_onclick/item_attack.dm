@@ -94,10 +94,10 @@
 			var/datum/component/combat_mode/combat_mode_husband = user.GetComponent(/datum/component/combat_mode)
 			var/datum/component/combat_mode/combat_mode_wife = H.GetComponent(/datum/component/combat_mode)
 			if(!(combat_mode_husband.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_husband.mode_flags & COMBAT_MODE_ACTIVE))
-				visible_message(SPAN_DANGER("[user] warns [target] with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
+				visible_message(SPAN_DANGER("[user] warns [M] with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
 				return FALSE
 			if(!(combat_mode_wife.mode_flags & COMBAT_MODE_TOGGLED) && !(combat_mode_wife.mode_flags & COMBAT_MODE_ACTIVE))
-				visible_message(SPAN_DANGER("[target] dodges [target]'s swing with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
+				visible_message(SPAN_DANGER("[M] dodges [M]'s swing with [src]!"), null, null, COMBAT_MESSAGE_RANGE)
 				return FALSE
 
 	var/bigleagues = force*0.5
