@@ -1131,10 +1131,7 @@ Veteran Ranger
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
 	backpack_contents = list(
-		/obj/item/gun/ballistic/rifle/mag/commando = 1,
-		/obj/item/ammo_box/magazine/m45 = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/grenade/smokebomb = 1,
+		/obj/item/guncase = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/clothing/shoes/f13/military/leather/patrol = 1
 	)
