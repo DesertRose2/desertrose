@@ -1130,8 +1130,8 @@ Veteran Ranger
 	head = /obj/item/clothing/head/f13/ranger
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	belt =	/obj/item/storage/belt/military/assault/ncr
-	backpack_contents = list(
-        /obj/item/guncase = 1,
+	backpack_contents = list	
+    	/obj/item/guncase	=	1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/clothing/shoes/f13/military/leather/patrol = 1
 	)
