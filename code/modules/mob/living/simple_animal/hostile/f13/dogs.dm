@@ -20,7 +20,7 @@
 	response_harm_simple = "kicks"
 	maxHealth = 75
 	health = 75
-	faction = list("hostile", "wolf")
+	faction = list("hostile", "wolf", "raider")
 	environment_smash = 0
 	butcher_results = list(/obj/item/stack/sheet/animalhide/f13/dog = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)

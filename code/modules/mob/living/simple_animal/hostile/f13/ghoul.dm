@@ -317,7 +317,7 @@
 	ranged_cooldown_time = 200
 	projectiletype = /obj/item/projectile/bullet/c9mm/simple
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	faction = list("scorched", "hostile")
+	faction = list("scorched", "hostile", "raider")
 	melee_damage_lower = 15
 	melee_damage_upper = 20
 	aggro_vision_range = 10
@@ -347,7 +347,7 @@
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
 	gold_core_spawnable = HOSTILE_SPAWN
-	faction = list("supermutant","ghoul")
+	faction = list("supermutant","ghoul", "raider")
 	decompose = FALSE
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 
@@ -365,7 +365,7 @@
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	status_flags = CANPUSH
-
+	faction = list("supermutant","ghoul", "raider")
 	emote_taunt_sound = list('sound/f13npc/ghoul/taunt.ogg')
 	emote_taunt = list("gurgles", "stares", "growls", "yells")
 	taunt_chance = 30
@@ -411,21 +411,23 @@
 
 /mob/living/simple_animal/hostile/ghoul/rebound/regular/sniper
 	name = "ghoul pathfinder"
-	desc = "A ghoul holding a tinkered sniper rifle and are clad in a duster with a gasmask."
+	desc = "A mercenarial ghoul holding a tinkered sniper rifle and are clad in a duster with a gasmask."
 	icon_state = "rebound_path"
 	icon_living = "rebound_path"
 	icon_dead = "rebound_path_dead"
-	aggro_vision_range = 15
-	retreat_distance = 3
+	aggro_vision_range = 21
+	retreat_distance = 7
 	minimum_distance = 10
-	ranged_cooldown_time = 50
-	projectiletype = /obj/item/projectile/bullet/a50MG
+	ranged_cooldown_time = 25
+	projectiletype = /obj/item/projectile/bullet/a762/ap
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
 	extra_projectiles = 0
+	vision_range = 14
+
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver
-	name = "army ghoul reaver"
-	desc = "A heavy ghoul wielding an AK-112 and clad in a set of a combat armor."
+	name = "Ghoulish Hired Goon"
+	desc = "A well armed and armoured mercenarial ghoul wielding an AK-112 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver"
 	icon_living = "rebound_reaver"
 	icon_dead = "rebound_reaver_dead"
@@ -455,7 +457,7 @@
 	taunt_chance = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/shotgun
-	desc = "A heavy ghoul wielding a citykiller and clad in a set of a combat armor."
+	desc = "A well armed and armoured mercenarial ghoul wielding a citykiller and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_b"
 	icon_living = "rebound_reaver_b"
 	ranged_cooldown_time = 30
@@ -464,19 +466,21 @@
 	extra_projectiles = 1
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/wattz
-	desc = "A heavy ghoul wielding a wattz 2000 and clad in a set of a combat armor."
+	desc = "A well armed and armoured mercenarial ghoul wielding a wattz 2000 and clad in a set of a combat armor."
 	icon_state = "rebound_reaver_c"
 	icon_living = "rebound_reaver_c"
-	retreat_distance = 4
-	minimum_distance = 8
+	aggro_vision_range = 21
+	retreat_distance = 7
+	minimum_distance = 10
 	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/beam/laser/wattz2k
 	projectilesound = 'sound/weapons/laser3.ogg'
 	extra_projectiles = 0
+	vision_range = 14
 
 /mob/living/simple_animal/hostile/ghoul/rebound/commisar
-	name = "army ghoul squad leader"
-	desc = "A heavy ghoul seemingly serving as squad leader for other ghouls due to their attire, this one is wielding a FN-Fal."
+	name = "Ghoulish Slavemaster"
+	desc = "A well armed and unscrupulous ghoul acting as a vile taskmaster for enslaved ghouls, this one is wielding a FN-Fal."
 	icon_state = "rebound_commisar"
 	icon_living = "rebound_commisar"
 	icon_dead = "rebound_commisar_dead"
@@ -499,24 +503,28 @@
 	minimum_distance = 6
 	check_friendly_fire = 1
 	ranged = 1
-	ranged_cooldown_time = 25
+	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/a762/match
 	projectilesound = 'sound/f13weapons/marksman_rifle.ogg'
 	extra_projectiles = 2
 	taunt_chance = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/commisar/battle
-	desc = "A heavy ghoul seemingly serving as squad leader for other ghouls due to their attire, this one is wielding a M14."
+	desc = "A well armed and unscrupulous ghoul acting as a vile taskmaster for enslaved ghouls, this one is wielding a M14."
 	icon_state = "rebound_commisar_b"
 	icon_living = "rebound_commisar_b"
-	ranged_cooldown_time = 35
-	projectiletype = /obj/item/projectile/bullet/a127mm
+	aggro_vision_range = 21
+	retreat_distance = 7
+	minimum_distance = 10
+	ranged_cooldown_time = 20
+	projectiletype = /obj/item/projectile/bullet/a762/ap
 	projectilesound = 'sound/f13weapons/m14.ogg'
+	vision_range = 14
 	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite
-	name = "army ghoul commando"
-	desc = "An elite hulk towering over most in his T-45b grips a RCW between his massive palms."
+	name = "Ghoulish Hired Muscle"
+	desc = "A deadly mercenarial hulk towering over most in his looted T-45b power armour, gripping a RCW between his massive palms."
 	icon_state = "rebound_chosen"
 	icon_living = "rebound_chosen"
 	icon_dead = "rebound_chosen_dead"
@@ -578,7 +586,7 @@
 		return FALSE
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite/plasma
-	desc = "An elite hulk towering over most in his T-45b grips a plasma rifle between his massive palms."
+	desc = "A deadly mercenarial hulk towering over most in his looted T-45b power armour, gripping a plasma rifle between his massive palms."
 	icon_state = "rebound_chosen_b"
 	icon_living = "rebound_chosen_b"
 	ranged_cooldown_time = 20
@@ -599,8 +607,8 @@
 	extra_projectiles = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain
-	name = "army ghoul captain"
-	desc = "A high ranking officer outfitted with a pulse rifle and a set of faded T-51a."
+	name = "Ghoulish Warlord"
+	desc = "A terrifying hulk of a ghoul, a soldier of fortune outfitted with a pulse rifle and a bloodspattered set of faded T-51a."
 	maxHealth = 2500
 	health = 2500
 	speak = list("Bow before our might...", "You have pestered me with your insolence long enough...", "Your life is now forfeit...", "They will bury you in a lunchbox...", "I will enjoy watching you die...", "Your suffering shall be eternal...", "Soil is thirsty...", "Nothing like culling normies...")

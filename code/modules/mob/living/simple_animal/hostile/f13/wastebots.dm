@@ -18,7 +18,7 @@
 	melee_damage_upper = 28 //as above
 	robust_searching = 1
 	attack_verb_simple = "saws"
-	faction = list("wastebot")
+	faction = list("wastebot", "raider")
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	speak_emote = list("states")
@@ -67,7 +67,7 @@
 /mob/living/simple_animal/hostile/handy/nsb //NSB + Raider Bunker specific
 	name = "Mr. Handy"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/gutsy
@@ -121,7 +121,7 @@
 /mob/living/simple_animal/hostile/handy/gutsy/nsb //NSB + Raider Bunker specific
 	name = "Mr. Gutsy"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 
 
@@ -185,7 +185,7 @@
 /mob/living/simple_animal/hostile/handy/securitron/nsb //NSB + Raider Bunker specific
 	name = "Securitron"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 	retreat_distance = 0 //perish, mortal
 
@@ -227,7 +227,7 @@
 /mob/living/simple_animal/hostile/handy/robobrain/nsb //NSB + Raider Bunker specific
 	name = "robobrain"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 	health = 300
 	maxHealth = 300
@@ -257,7 +257,7 @@
 	attack_sound = 'sound/weapons/punch1.ogg'
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/pistol
-	faction = list("wastebot")
+	faction = list("wastebot", "raider")
 	check_friendly_fire = TRUE
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five)
 
@@ -290,7 +290,7 @@
 /mob/living/simple_animal/hostile/handy/protectron/nsb //NSB + Raider Bunker specific
 	name = "protectron"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/pet/dog/protectron //Not an actual dog
@@ -342,7 +342,7 @@
 	attack_sound = 'sound/weapons/punch1.ogg'
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak
-	faction = list("wastebot")
+	faction = list("wastebot", "raider")
 	check_friendly_fire = TRUE
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five, /obj/item/stock_parts/cell/ammo/mfc)
 	var/warned = FALSE
@@ -462,7 +462,7 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
 	name = "sentry bot"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb/riot //NSB + Raider Bunker specific.
@@ -492,7 +492,7 @@
 	melee_damage_upper = 60
 	environment_smash = 2 //can smash walls
 	attack_verb_simple = "grinds their claws on"
-	faction = list("wastebot")
+	faction = list("wastebot", "raider")
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
 
 	emote_taunt_sound = list('sound/f13npc/assaultron/taunt1.ogg', 'sound/f13npc/assaultron/taunt2.ogg', 'sound/f13npc/assaultron/taunt3.ogg', 'sound/f13npc/assaultron/taunt4.ogg', 'sound/f13npc/assaultron/taunt5.ogg')
@@ -504,7 +504,7 @@
 /mob/living/simple_animal/hostile/handy/assaultron/nsb //NSB + Raider Bunker specific.
 	name = "assaultron"
 	aggro_vision_range = 15
-	faction = list("raider")
+	faction = list("wastebot", "raider")
 	obj_damage = 300
 
 /mob/living/simple_animal/hostile/handy/assaultron/playable

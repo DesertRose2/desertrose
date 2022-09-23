@@ -29,7 +29,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/shovel/trench)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("xray")
+	faction = list("xray", "raider")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
@@ -56,6 +56,8 @@
 	icon_state = "deserter_pistol"
 	icon_living = "deserter_pistol"
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/pistol/beretta)
+	ranged_cooldown_time = 20
+	extra_projectiles = 1
 	ranged = 1
 	maxHealth = 200
 	health = 200
@@ -67,7 +69,8 @@
 /mob/living/simple_animal/hostile/xray/ranged/rifle
 	icon_state = "deserter_rifle"
 	icon_living = "deserter_rifle"
-	projectiletype = /obj/item/projectile/bullet/a556/match
+	ranged_cooldown_time = 10
+	projectiletype = /obj/item/projectile/bullet/a556/ap
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/service)
 
@@ -78,6 +81,7 @@
 /mob/living/simple_animal/hostile/xray/ranged/shotgun
 	icon_state = "deserter_shotgun"
 	icon_living = "deserter_shotgun"
+	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/shotgun.ogg'
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/shotgun/trench)
@@ -114,6 +118,7 @@
 /mob/living/simple_animal/hostile/xray/marauder/rifle
 	icon_state = "marauder_rifle"
 	icon_living = "marauder_rifle"
+	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/bullet/a556/match
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder, /obj/item/gun/ballistic/automatic/marksman)
 	projectilesound = 'sound/f13weapons/marksman_rifle.ogg'
@@ -121,9 +126,14 @@
 /mob/living/simple_animal/hostile/xray/marauder/sniper
 	icon_state = "marauder_sniper"
 	icon_living = "marauder_sniper"
+	aggro_vision_range = 21
+	retreat_distance = 7
+	minimum_distance = 10
+	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/bullet/a762/match
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder, /obj/item/gun/ballistic/automatic/marksman/sniper)
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	vision_range = 14
 
 /mob/living/simple_animal/hostile/xray/marauder/sniper/laser
 	icon_state = "marauder_laser"
@@ -145,8 +155,8 @@
 	desc = "A once proud member of the NCR turned cutthroat. This one jacked themselves some pre-war marine combat gear."
 	icon_state = "mmarauder_mg"
 	icon_living = "mmarauder_mg"
-	maxHealth = 1100
-	health = 1100
+	maxHealth = 800
+	health = 800
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	extra_projectiles = 4
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/m2a1)

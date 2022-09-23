@@ -32,18 +32,21 @@
 	name = "Junker Hijacker"
 	icon_state	=	"junker_hijacker"
 	icon_living	=	"junker_hijacker"
+	attack_sound =	'sound/weapons/chainsawhit.ogg'
 	ranged = 0
-	melee_damage_lower = 30
+	melee_damage_lower = 60
 	melee_damage_upper = 60
-	retreat_distance = 5
+	retreat_distance = 1
 	minimum_distance = 0
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/cautery, /obj/item/bodypart/r_arm/robot, /obj/item/hatchet)
+	maxHealth = 350
+	health = 350
 
 /mob/living/simple_animal/hostile/raider/junker/scrapper
 	name = "Junker Scrapper"
 	icon_state	=	"junker_scrapper"
 	icon_living	=	"junker_scrapper"
-	projectiletype = /obj/item/projectile/ion/weak
+	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/shotgun.ogg'
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker/hijacker, /obj/item/gun/ballistic/revolver/ballisticfist)
 	maxHealth = 350
@@ -57,8 +60,8 @@
 	icon_state	=	"junker_boss"
 	icon_living	=	"junker_boss"
 	speak = list("GO GET ME JET!", "I'M GONNA SCRAP YOU FOR PARTS!", "We gotta expand soon... Else we're gonna be overrun by that town...")
-	maxHealth = 700
-	health = 700
+	maxHealth = 800
+	health = 800
 	retreat_distance = 8
 	minimum_distance = 6
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider/junker, /obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator)
@@ -103,13 +106,13 @@
 	melee_damage_lower = 40
 	melee_damage_upper = 55
 	attack_verb_simple = "attacks"
-	attack_sound = 'sound/weapons/punch1.ogg'
+	attack_sound = 'sound/items/welder.ogg'
 	a_intent = INTENT_HARM
 	loot = list(/obj/item/shishkebabpack, /obj/item/clothing/head/helmet/f13/sulphitehelm, /obj/item/clothing/suit/armor/f13/sulphitearmor)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	loot = list()
 	unsuitable_atmos_damage = 15
-	faction = list("raiders")
+	faction = list("raider")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 
@@ -122,9 +125,10 @@
 	ranged = 1
 	stat_attack = 1
 	robust_searching = 1
-	maxHealth = 400
-	health = 400
+	maxHealth = 800
+	health = 800
 	retreat_distance = 1
 	loot = list(/obj/item/gun/ballistic/rifle/mag/antimateriel/incinerator)
 	projectiletype = /obj/item/projectile/incendiary/flamethrower/incinerator
-	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
+	projectilesound = 'sound/weapons/flamethrower.ogg'
+	extra_projectiles = 4

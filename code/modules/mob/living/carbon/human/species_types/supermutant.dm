@@ -35,13 +35,13 @@
 		b.max_damage += 50
 	C.maxHealth = 200
 	C.health = 200
-	C.faction = "supermutant"
+	C.faction = "neutral"
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
 
 /datum/species/smutant/on_species_loss(mob/living/carbon/C)
 	..()
-	C.faction -= "supermutant"
+	C.faction -= "neutral"
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
 
