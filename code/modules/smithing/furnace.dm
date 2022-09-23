@@ -1,19 +1,25 @@
 /obj/structure/furnace
 	name = "furnace"
 	desc = "A furnace."
-	icon = 'icons/obj/smith.dmi'
+	icon = 'code/modules/smithing/icons/blacksmith.dmi'
 	icon_state = "furnace0"
 	density = TRUE
 	anchored = TRUE
 	var/debug = FALSE //debugging only
 	var/working = TRUE
 	var/fueluse = 1
+	light_range = 2
+	light_power = GLOW_BRIGHT
+	light_color = LIGHT_COLOR_FIRE
+	var/light_on = FALSE
+	var/datum/looping_sound/furnace/soundloop
 
 
 /obj/structure/furnace/Initialize()
 	. = ..()
 	create_reagents(250, TRANSPARENT)
 	START_PROCESSING(SSobj, src)
+	soundloop = new(list(src), FALSE)
 
 /obj/structure/furnace/Destroy()
 	STOP_PROCESSING(SSobj, src)
@@ -25,18 +31,26 @@
 		return TRUE
 	if(reagents.remove_reagent(/datum/reagent/fuel, fueluse))
 		working = TRUE
+		soundloop.start()
+		set_light(brightness_on)
 		if(icon_state == "furnace0")
 			icon_state = "furnace1"
+
 	else
 		working = FALSE
+		soundloop.stop()
+		set_light(0)
 		icon_state = "furnace0"
 
 /obj/structure/furnace/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/ingot))
-		var/obj/item/ingot/notsword = I
+	if(istype(I, /obj/item/blacksmith/ingot))
+		var/obj/item/blacksmith/ingot/notsword = I
 		if(working)
 			to_chat(user, "You heat the [notsword] in the [src].")
 			notsword.workability = "shapeable"
+			notsword.icon_state = "hot_ingot"
+			notsword.set_light(l_power = GLOW_MODERATE)
+			I.on_attack_hand(user)
 		else
 			to_chat(user, "The furnace isn't working!.")
 	else
@@ -60,16 +74,7 @@
 		reagents.reaction(get_turf(src), TOUCH) //splash on the floor
 		reagents.clear_reagents()
 
-/obj/structure/furnace/infinite
-	name = "fuelless furnace"
-	debug = TRUE
-	icon_state = "ratfurnace"
-
-
-/obj/structure/furnace/infinite/ratvar
-	name = "brass furnace"
-	desc = "A brass furnace. Powered by... something, but seems otherwise safe." //todo:sprites they're safe for noncultists because you're just putting ingots in them. also there';s a reason to steal them ig
-
-/obj/structure/furnace/infinite/narsie
-	name = "rune furnace"
-	desc = "A runed furnace. Powered by... something, but seems otherwise safe."
+/datum/looping_sound/furnace
+	mid_sounds = list('code/modules/smithing/sound/furnace1.ogg'=1)
+	mid_length = 70
+	volume = 80

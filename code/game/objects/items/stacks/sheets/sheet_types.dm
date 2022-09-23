@@ -27,9 +27,10 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("key", /obj/item/key, 1), \
 	new/datum/stack_recipe("key chain", /obj/item/storage/keys_set, 1), \
 	null, \
-	new/datum/stack_recipe("iron ingot", /obj/item/ingot/iron, 6, time = 100), \
+	new/datum/stack_recipe("iron ingot", /obj/item/blacksmith/ingot/iron, 6, time = 100), \
 	new/datum/stack_recipe("metal parts", /obj/item/stack/crafting/metalparts, 5), \
 	new/datum/stack_recipe("metal rod", /obj/item/stack/rods, 1, 2, 60), \
+	new/datum/stack_recipe("length of chain", /obj/item/blacksmith/chain, 1, time = 50), \
 	null, \
 	new/datum/stack_recipe("floor tile", /obj/item/stack/tile/plasteel, 1, 4, 20), \
 	new/datum/stack_recipe("wall girders", /obj/structure/girder, 2, time = 40, one_per_turf = TRUE, on_floor = TRUE, trait_booster = TRAIT_QUICK_BUILD, trait_modifier = 0.75), \
@@ -283,13 +284,12 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 1, time = 10),\
 	new/datum/stack_recipe("mortar", /obj/item/reagent_containers/glass/mortar, 3), \
 	null, \
-	new/datum/stack_recipe_list("Storage (Harvest, Medicine, Bottles, Seeds, alchemy table)", list(
+	new/datum/stack_recipe_list("Storage (Harvest, Medicine, Bottles, Seeds, Alchemy table)", list(
 		new /datum/stack_recipe("bottle rack", /obj/machinery/smartfridge/bottlerack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("harvest bin", /obj/machinery/smartfridge/bottlerack/grownbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("alchemy rack", /obj/machinery/smartfridge/bottlerack/alchemy_rack, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("seed bin", /obj/machinery/smartfridge/bottlerack/seedbin, 20, time = 40, one_per_turf = TRUE, on_floor = TRUE),\
 		new /datum/stack_recipe("primitive chemistry table", /obj/machinery/chem_master/primitive, 25, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
-
 		)),
 	null, \
 	))
@@ -314,16 +314,17 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 /obj/item/stack/sheet/mineral/wood/attackby(obj/item/W, mob/user, params) // NOTE: sheet_types.dm is where the WOOD stack lives. Maybe move this over there.
 	// Taken from /obj/item/stack/rods/attackby in [rods.dm]
 	if(W.get_sharpness())
-		user.visible_message("[user] begins whittling [src] into a pointy object.", \
-				SPAN_NOTICE("You begin whittling [src] into a sharp point at one end."), \
+		user.visible_message("[user] begins whittling [src] into a rod, suitable for using as a handle for smithed axes and the like.", \
+				"<span class='notice'>You begin whittling [src] into a rod, suitable for using as a handle for smithed axes and the like.</span>", \
 				"<span class='italics'>You hear wood carving.</span>")
-		// 8 Second Timer
-		if(!do_after(user, 80, TRUE, src))
+		playsound(get_turf(src), 'sound/effects/wood_cutting.ogg', 10, 0, 0)
+		if(!do_after(user, 40, TRUE, src))
 			return
-		// Make Stake
-		var/obj/item/stake/basic/new_item = new(user.loc)
-		user.visible_message("[user] finishes carving a stake out of [src].", \
-				SPAN_NOTICE("You finish carving a stake out of [src]."))
+		// Make stick
+		var/obj/item/blacksmith/woodenrod/new_item = new(user.loc)
+		user.put_in_hands(new_item)
+		user.visible_message("[user] finishes carving a rod from the [src].", \
+				"<span class='notice'>You finish carving a rod from the [src].</span>")
 		// Prepare to Put in Hands (if holding wood)
 		var/obj/item/stack/sheet/mineral/wood/N = src
 		var/replace = (user.get_inactive_held_item() == N)
@@ -603,9 +604,7 @@ GLOBAL_LIST_INIT(runed_metal_recipes, list ( \
 	new/datum/stack_recipe("forge", /obj/structure/destructible/cult/forge, 3, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("archives", /obj/structure/destructible/cult/tome, 3, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("altar", /obj/structure/destructible/cult/talisman, 3, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("anvil", /obj/structure/anvil/obtainable/narsie, 4, time = 40, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("runic ingot", /obj/item/ingot/cult, 2, time = 100), \
-		new/datum/stack_recipe("rune smith's hammer", /obj/item/melee/smith/hammer/narsie, 6), \
 	))
 
 /obj/item/stack/sheet/runed_metal
@@ -666,8 +665,6 @@ GLOBAL_LIST_INIT(brass_recipes, list ( \
 	new/datum/stack_recipe("brass window - fulltile", /obj/structure/window/reinforced/clockwork/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("brass chair", /obj/structure/chair/brass, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("brass table frame", /obj/structure/table_frame/brass, 1, time = 5, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass anvil", /obj/structure/anvil/obtainable/ratvar, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass furnace", /obj/structure/furnace/infinite/ratvar, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	new/datum/stack_recipe("sender - pressure sensor", /obj/structure/destructible/clockwork/trap/trigger/pressure_sensor, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("sender - mech sensor", /obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
@@ -679,7 +676,6 @@ GLOBAL_LIST_INIT(brass_recipes, list ( \
 	new/datum/stack_recipe("receiver - power nullifier", /obj/structure/destructible/clockwork/trap/power_nullifier, 5, time = 20, one_per_turf = TRUE, on_floor = TRUE, placement_checks = STACK_CHECK_CARDINALS), \
 	null, \
 	new/datum/stack_recipe("brass flask", /obj/item/reagent_containers/food/drinks/bottle/holyoil/empty), \
-	new/datum/stack_recipe("brass smith's hammer", /obj/item/melee/smith/hammer/ratvar, 6), \
 	new/datum/stack_recipe("brass ingot", /obj/item/ingot/ratvar, 6, time = 100), \
 ))
 
@@ -734,9 +730,7 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 	new/datum/stack_recipe("bronze suit", /obj/item/clothing/suit/bronze), \
 	new/datum/stack_recipe("bronze boots", /obj/item/clothing/shoes/bronze), \
 	null,
-	new/datum/stack_recipe("bronze anvil",/obj/structure/anvil/obtainable/bronze, 20, time = 110, one_per_turf = TRUE, on_floor = TRUE), \
-	null,
-	new/datum/stack_recipe("bronze ingot", /obj/item/ingot/bronze, 6, time = 100), \
+	new/datum/stack_recipe("bronze ingot", /obj/item/blacksmith/ingot/bronze, 6, time = 100), \
 	new/datum/stack_recipe("bronze floor tiles", /obj/item/stack/tile/bronze, 1, 4, 20), \
 ))
 

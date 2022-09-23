@@ -949,15 +949,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/underground/cave)
 "cQ" = (
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
-/obj/item/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
+/obj/item/blacksmith/ingot/gold,
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -6899,7 +6899,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/underground/cave)
 "Gl" = (
-/obj/item/ingot/adamantine,
+/obj/item/blacksmith/ingot/adamantine,
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,

@@ -178,8 +178,8 @@
 	if(!iscultist(user))
 		to_chat(user, SPAN_WARNING("The heat radiating from [src] pushes you back."))
 		return
-	if(istype(I, /obj/item/ingot))
-		var/obj/item/ingot/notsword = I
+	if(istype(I, /obj/item/blacksmith/ingot))
+		var/obj/item/blacksmith/ingot/notsword = I
 		to_chat(user, "You heat the [notsword] in the [src].")
 		notsword.workability = "shapeable"
 
