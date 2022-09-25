@@ -341,6 +341,11 @@
 	flashbang_range = 7
 	det_time = 1 SECONDS
 
+/obj/item/grenade/f13/frag/sentry
+	name = "tactical frag grenade"
+	ex_light = 0
+	det_time = 15
+
 /obj/item/grenade/smokebomb
 	desc = "A military-grade smokescreen grenade. This one produces white smoke."
 

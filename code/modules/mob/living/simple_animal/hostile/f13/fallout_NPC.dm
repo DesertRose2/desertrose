@@ -331,6 +331,81 @@
 	projectiletype = /obj/item/projectile/beam/laser/oldpulse
 	projectilesound = 'sound/weapons/ionrifle.ogg'
 
+//////////////////////
+//       HECU      //
+/////////////////////
+
+/mob/living/simple_animal/hostile/hecu
+	name = "HECU infantry member"
+	desc = "A member of the hazardous enviroment combat unit often shortened to just HECU, they bear West-tek markings and are clearly ready to kill."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
+	icon_state = "hecu"
+	icon_living = "hecu"
+	icon_dead = "hecu_dead"
+	maxHealth = 500
+	health = 500
+	melee_damage_lower = 80
+	melee_damage_upper = 80
+	attack_sound = 'sound/f13weapons/max_sawn_off.ogg'
+	attack_verb_simple = "point-blanks"
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.3
+	extra_projectiles = 2
+	ranged_cooldown_time = 35
+	decompose = 0
+	ranged = 1
+	projectiletype = /obj/item/projectile/bullet/c5mm
+	projectilesound = 'sound/f13weapons/marksman_rifle.ogg'
+	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
+	turns_per_move = 8
+	response_help_simple = "pokes"
+	response_disarm_simple = "shoves"
+	response_harm_simple = "hits"
+	speed = 0.8
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	a_intent = INTENT_HARM
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	del_on_death = 0
+	speak = list("Boogie sighted!", "Got eyes on the target!", "Engaging target!")
+	speak_chance = 4
+	taunt_chance = 0
+	retreat_distance = 2
+	minimum_distance = 4
+	check_friendly_fire = 1
+
+/mob/living/simple_animal/hostile/hecu/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
+	if(prob(10) && health > 1)
+		visible_message(SPAN_DANGER("\The [src] drops a frag grenade under their feet!"))
+		var/flashbang_turf = get_turf(src)
+		if(!flashbang_turf)
+			return
+		var/obj/item/grenade/f13/frag/sentry/S = new /obj/item/grenade/f13/frag/sentry(flashbang_turf)
+		S.preprime(user = null)
+	if(prob(90) || Proj.damage > 20)
+		return ..()
+	else
+		visible_message(SPAN_DANGER("\The [Proj] bounces off \the [src]'s armor plating!"))
+		return FALSE
+
+/mob/living/simple_animal/hostile/hecu/leader
+	name = "HECU infantry squad leader"
+	desc = "A member of the hazardous enviroment combat unit often shortened to just HECU, they bear West-tek markings and are clearly ready to kill. This one looks like he is in charge."
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
+	icon_state = "hecu_sl"
+	icon_living = "hecu_sl"
+	icon_dead = "hecu_sl_dead"
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	attack_verb_simple = "slashes"
+	armour_penetration = 0.2
+	extra_projectiles = 0
+	ranged_cooldown_time = 25
+	projectiletype = /obj/item/projectile/bullet/a50MG
+	projectilesound = 'sound/f13weapons/44mag.ogg'
+
 /////////////////////
 // BROTHERHOOD NPC //
 /////////////////////
