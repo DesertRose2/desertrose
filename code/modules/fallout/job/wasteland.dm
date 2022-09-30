@@ -365,7 +365,10 @@ Outlaw
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
-	/datum/outfit/loadout/raider_vault
+	/datum/outfit/loadout/raider_vault,
+	/datum/outfit/loadout/whiteleg,
+	/datum/outfit/loadout/eighties,
+	/datum/outfit/loadout/bonedancerexile
 	)
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -614,6 +617,48 @@ Outlaw
 		/obj/item/assembly/flash/handheld=1,
 		/obj/item/melee/classic_baton/telescopic=1
 		)
+
+/datum/outfit/loadout/whiteleg
+	name = "White Leg Tribal"
+	uniform = /obj/item/clothing/under/f13/whitelegs
+	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		/obj/item/gun/ballistic/automatic/smg/tommygun = 1,
+		/obj/item/ammo_box/magazine/tommygunm45 = 2,
+		/obj/item/melee/unarmed/maceglove = 1,
+		/obj/item/warpaint_bowl = 1,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
+	)
+
+/datum/outfit/loadout/eighties
+	name = "Eighties Tribal"
+	suit = /obj/item/clothing/suit/f13/tribal/heavy/eighties
+	uniform = /obj/item/clothing/under/f13/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 3,
+		/obj/item/reagent_containers/pill/patch/f13/turbo = 1,
+		/obj/item/reagent_containers/pill/patch/f13/jet  = 2,
+		/obj/item/warpaint_bowl = 1,
+		/obj/item/storage/belt/utility/full = 1
+	)
+
+/datum/outfit/loadout/bonedancerexile
+	name = "Bone Dancer Exile"
+	suit = /obj/item/clothing/suit/f13/tribal/heavy/bone
+	uniform = /obj/item/clothing/under/f13/bone
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/skull = 1,
+		/obj/item/twohanded/spear/bonespear = 1,
+		/obj/item/gun/ballistic/automatic/sturdybow = 1,
+		/obj/item/storage/belt/tribe_quiver = 1,
+		/obj/item/warpaint_bowl = 1,
+		/obj/item/ammo_casing/caseless/arrow/bone = 7,
+		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 3
+	)
 
 /datum/job/wasteland/f13wastelander
 	title = "Wastelander"
@@ -945,21 +990,14 @@ Outlaw
 	/datum/outfit/loadout/tbrawler,
 	/datum/outfit/loadout/spearman,
 	/datum/outfit/loadout/shaman,
-	/datum/outfit/loadout/whitelegsmelee,
-	/datum/outfit/loadout/whitelegsranged,
-	/datum/outfit/loadout/whitelegsshaman,
 	/datum/outfit/loadout/deadhorsesmelee,
 	/datum/outfit/loadout/deadhorsesranged,
 	/datum/outfit/loadout/deadhorsesshaman,
 	/datum/outfit/loadout/sorrowshunter,
 	/datum/outfit/loadout/sorrowsshaman,
-	/datum/outfit/loadout/eightiesmelee,
-	/datum/outfit/loadout/eightiesranged,
-	/datum/outfit/loadout/eightiesshaman,
 	/datum/outfit/loadout/rustwalkersscipher,
 	/datum/outfit/loadout/rustwalkersscrapper,
-	/datum/outfit/loadout/rustwalkersshaman,
-	/datum/outfit/loadout/bonedancerexile
+	/datum/outfit/loadout/rustwalkersshaman
 	)
 
 //Generic Tribals
@@ -998,38 +1036,6 @@ Outlaw
 		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1
 	)
 
-//White Legs
-/datum/outfit/loadout/whitelegsmelee
-	name = "White Legs Bone-Breaker"
-	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/whitelegs = 1,
-		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/melee/unarmed/maceglove = 1,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1
-	)
-
-/datum/outfit/loadout/whitelegsranged
-	name = "White Legs Storm-Drummer"
-	suit = /obj/item/clothing/suit/f13/tribal/whitelegs
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/whitelegs = 1,
-		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/gun/ballistic/automatic/smg/tommygun = 1,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 1,
-		/obj/item/ammo_box/magazine/tommygunm45 = 2
-	)
-
-/datum/outfit/loadout/whitelegsshaman
-	name = "White Legs Arm-Makers"
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/whitelegs = 1,
-		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/twohanded/fireaxe = 1,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-	)
 
 //Dead Horses
 /datum/outfit/loadout/deadhorsesmelee
@@ -1091,45 +1097,6 @@ Outlaw
 		/obj/item/toy/crayon/spraycan = 2
 	)
 
-//Eighties
-/datum/outfit/loadout/eightiesmelee
-	name = "Eighties Path-Maker"
-	suit = /obj/item/clothing/suit/f13/tribal/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		/obj/item/gun/ballistic/shotgun/trench = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
-		/obj/item/reagent_containers/pill/patch/f13/turbo = 2,
-		/obj/item/reagent_containers/pill/patch/f13/jet  = 2
-	)
-
-/datum/outfit/loadout/eightiesranged
-	name = "Eighties Road-Warrior"
-	suit = /obj/item/clothing/suit/f13/tribal/heavy/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
-		/obj/item/ammo_box/shotgun/buck = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/ammo_box/magazine/greasegun = 2,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
-	)
-
-/datum/outfit/loadout/eightiesshaman
-	name = "Eighties Lay-Mechanic"
-	suit = /obj/item/clothing/suit/f13/tribal/light/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
-		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2,
-		/obj/item/storage/belt/utility/full = 1,
-	)
-
 //Rustwalkers
 /datum/outfit/loadout/rustwalkersscipher
 	name = "Rustwalkers Scipher"
@@ -1167,17 +1134,7 @@ Outlaw
 		/obj/item/storage/belt/utility/full = 1,
 
 	)
-//Bone Dancer
-/datum/outfit/loadout/bonedancerexile
-	name = "Bone Dancer Exile"
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/bone = 1,
-		/obj/item/clothing/head/helmet/skull = 1,
-		/obj/item/twohanded/spear/bonespear = 1,
-		/obj/item/warpaint_bowl=1,
-		/obj/item/reagent_containers/pill/patch/f13/healpoultice = 2
 
-	)
 
 /datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"
