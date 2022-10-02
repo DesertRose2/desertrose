@@ -166,6 +166,7 @@
 	icon_state = "mutie_suit"
 	item_state = "mutie_suit"
 	can_adjust = FALSE
+	species_restricted = list("Super Mutant","Nightkin")
 
 /obj/item/clothing/under/suit/mutie/burgundy
 	icon_state = "mutie_burgundy_suit"

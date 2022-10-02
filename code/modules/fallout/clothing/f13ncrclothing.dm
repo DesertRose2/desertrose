@@ -342,6 +342,12 @@
 	item_state = "scoutclothes"
 	item_color = "scoutclothes"
 
+/obj/item/clothing/under/f13/mutie/ncr
+	name = "\improper NCR mutant uniform"
+	desc = "Standard issue NCR uniform... If you're 8 feet tall and 6 feet wide."
+	icon_state = "mutie_ranger_under"
+	item_state = "mutie_ranger_under"
+
 //Rangers
 //Hats and Helmets
 
