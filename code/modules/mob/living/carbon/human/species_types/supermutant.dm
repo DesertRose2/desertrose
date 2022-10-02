@@ -4,7 +4,7 @@
 	id = "smutant"
 	say_mod = "yells"
 	limbs_id = "smutant"
-	species_traits = list(NOTRANSSTING, NOGENITALS, NOAROUSAL)
+	species_traits = list(EYECOLOR, NOTRANSSTING, NOGENITALS, NOAROUSAL)
 	inherent_traits = list(TRAIT_RADIMMUNE)
 	inherent_biotypes = list(MOB_HUMANOID)
 	whitelisted = 1
@@ -12,7 +12,7 @@
 					"clearedobject", "magentaformula0", "ollieoxen", "fayettefrost", "allakai", "alanparkermasters",
 					"marrone", 	"melodicdeity", "alasania", "mirkoloio", "novaskelly", "usotsukihime", "cythisia",
 					"asterixcodix", "zestyspy", "psychoticcone", "julwalters", "thegreatcoward", "gurking", "whobeder04",
-					"yecrowbarman", "yeehawguvnah", "hallow96", "our lord spungus"
+					"yecrowbarman", "yeehawguvnah", "hallow96", "ourlordspungus", "muhsollini"
 					) // When adding someone to this list, make sure to add them to the "ckeywhitelist" in _supermutant.dm
 	offset_features = list (
 		OFFSET_HEAD = list(1,5),
@@ -35,13 +35,13 @@
 		b.max_damage += 50
 	C.maxHealth = 200
 	C.health = 200
-	C.faction = "neutral"
+	C.faction = "supermutant"
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiesalvagedarmorconversion)
 	C.mind.teach_crafting_recipe(/datum/crafting_recipe/mutiehelmsalvagedarmorconversion)
 
 /datum/species/smutant/on_species_loss(mob/living/carbon/C)
 	..()
-	C.faction -= "neutral"
+	C.faction -= "supermutant"
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage = initial(b.max_damage)
 
@@ -53,6 +53,6 @@
 	return ..()
 
 /datum/species/smutant/nightkin
-	name = "nightkin"
+	name = "Nightkin"
 	id = "nightkin"
 	limbs_id = "nightkin"
