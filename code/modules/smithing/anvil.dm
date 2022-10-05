@@ -3,46 +3,49 @@
 #define WORKPIECE_FINISHED 3
 #define WORKPIECE_SLAG 5
 
-#define RECIPE_PICKAXE "bff" //bend fold fold
-#define RECIPE_SHOVEL "buu" //bend upset upset
 #define RECIPE_HAMMER "bpp" //bend punch punch
+#define RECIPE_SHOVEL "buu" //bend upset upset
+#define RECIPE_PICKAXE "bff" //bend fold fold
 #define RECIPE_PROSPECTPICK "bfs" //bend fold shrink
 #define RECIPE_KITCHENKNIFE "bsd" //bend shrink draw
 #define RECIPE_CROWBAR "bbb" //bend bend bend
+#define RECIPE_UNITOOL "bbu"  //bend bend upset
+#define RECIPE_SCRAPSAW "ffsu" //fold fold shrink upset
 
 #define RECIPE_RING "sss" //shrink shrink shrink
 #define RECIPE_BALLANDCHAIN "pbu" //punch bend upset
 
-#define RECIPE_BOWIE "dds" //draw draw shrink
+#define RECIPE_BOWIE "dfs" //draw fold shrink
+#define RECIPE_DAGGER "dds" //draw draw shrink
+
 #define RECIPE_MACHETE "fdf" //fold draw fold
-#define RECIPE_WAKI "ffsu" //fold fold shrink upset
-#define RECIPE_MACE "uusp" //upset upset shrink punch
+#define RECIPE_MACHREFORG "fuf" //fold upset fold lawnmower classic
+
+#define RECIPE_SWORD "ffdf" // fold fold draw fold
 #define RECIPE_SABRE "ffdd" //fold fold draw draw
 
+#define RECIPE_LONGSWORD "fffdd" //fold fold fold draw draw
 #define RECIPE_KATANA "fffff" //fold fold fold fold fold
-#define RECIPE_AXE "uupp" //upset upset punch punch
+#define RECIPE_WAKI "fdff" //fold draw fold fold
+
+#define RECIPE_MACE "upu"  //upset punch upset
+#define RECIPE_SCRAP "udpp" //upset draw shrink punch
+#define RECIPE_AXE "udsp" //upset draw shrink punch
+
+#define RECIPE_CRUSHER "uupp" //upset upset punch punch
+
 #define RECIPE_SPEAR "dddf" //draw draw draw fold
+#define RECIPE_TRIDENT "ddbf" //draw draw bend fold
 
 #define RECIPE_JAVELIN "sdu" //shrink draw upset
-#define RECIPE_THROWING  "sdd" //shrink draw draw
+#define RECIPE_THROWING "sdd" //shrink draw draw
 #define RECIPE_BOLA "suu" //shrink upset upset
 
-//Tablevil specific
-#define RECIPE_UNITOOL "bbb"  //bend bend bend
-#define RECIPE_MACHREFORG "fdf" //fold draw fold
-#define RECIPE_SWORD "ffdd" // fold fold draw draw
-#define RECIPE_SAW "ffsu" //fold fold shrink upset
-#define RECIPE_SCRAP "fffff" //fold fold fold fold fold
-#define RECIPE_CRUSHER "uupp" //upset upset punch punch
-#define RECIPE_TRIDENT "dddf" //draw draw draw fold
-
 //Legion specific
-#define RECIPE_DAGGER "dds" //draw draw shrink
-#define RECIPE_GLADIUS "fdf" //fold draw fold
-#define RECIPE_SPATHA "ffdd" // fold fold draw draw
-#define RECIPE_LONGSWORD "fffff" //fold fold fold fold fold
-#define RECIPE_WARAXE "uupp" //upset upset punch punch
-#define RECIPE_LANCE "dddf" //draw draw draw fold
+#define RECIPE_GLADIUS "fbf" //fold bend fold
+#define RECIPE_SPATHA "ffbf" // fold fold bend fold
+#define RECIPE_WARAXE "udup" //upset draw upset punch
+#define RECIPE_LANCE "dbdf" //draw bend fold fold
 
 /obj/structure/anvil
 	name = "anvil"
@@ -73,16 +76,25 @@
 	RECIPE_PROSPECTPICK = /obj/item/smithing/prospectingpickhead,
 	RECIPE_KITCHENKNIFE = /obj/item/smithing/knifeblade,
 	RECIPE_CROWBAR = /obj/item/smithing/crowbar,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_SAW  = /obj/item/smithing/scrapsaw,
 	RECIPE_RING = /obj/item/smithing/special/jewelry/ring,
 	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
 	RECIPE_BOWIE = /obj/item/smithing/bowieblade,
+	RECIPE_DAGGER = /obj/item/smithing/daggerblade,
 	RECIPE_MACHETE = /obj/item/smithing/macheteblade,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SWORD = /obj/item/smithing/swordblade,
 	RECIPE_SABRE = /obj/item/smithing/sabreblade,
-	RECIPE_WAKI = /obj/item/smithing/wakiblade,
+	RECIPE_LONGSWORD = /obj/item/smithing/longswordblade,	
 	RECIPE_KATANA = /obj/item/smithing/katanablade,
+	RECIPE_WAKI = /obj/item/smithing/wakiblade,
 	RECIPE_MACE = /obj/item/smithing/macehead,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade,
 	RECIPE_AXE = /obj/item/smithing/axehead,
+	RECIPE_CRUSHER = /obj/item/smithing/crusherhead,
 	RECIPE_SPEAR = /obj/item/smithing/spearhead,
+	RECIPE_TRIDENT = /obj/item/smithing/tridenthead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
 	RECIPE_BOLA = /obj/item/smithing/bola,	
@@ -321,14 +333,14 @@
 /obj/structure/anvil/obtainable/basic
 	name = "anvil"
 	desc = "Made from solid steel, you wont be moving this around any time soon."
-	anvilquality = 1
+	anvilquality = 0
 
 // Don't make this craftable.
 /obj/structure/anvil/obtainable/legion
 	name = "anvil"
 	desc = "A solid steel anvil with a stamped bull on it."
 	icon_state = "legvil"
-	anvilquality = 1
+	anvilquality = 0
 	anchored = TRUE
 	smithrecipes = list(RECIPE_HAMMER = /obj/item/smithing/hammerhead,
 	RECIPE_SHOVEL = /obj/item/smithing/shovelhead,
@@ -336,17 +348,32 @@
 	RECIPE_PROSPECTPICK = /obj/item/smithing/prospectingpickhead,
 	RECIPE_KITCHENKNIFE = /obj/item/smithing/knifeblade,
 	RECIPE_CROWBAR = /obj/item/smithing/crowbar,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_SAW  = /obj/item/smithing/scrapsaw,
 	RECIPE_RING = /obj/item/smithing/special/jewelry/ring,
 	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
+	RECIPE_BOWIE = /obj/item/smithing/bowieblade,
 	RECIPE_DAGGER = /obj/item/smithing/daggerblade,
-	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
-	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_MACHETE = /obj/item/smithing/macheteblade,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SWORD = /obj/item/smithing/swordblade,
+	RECIPE_SABRE = /obj/item/smithing/sabreblade,
+	RECIPE_LONGSWORD = /obj/item/smithing/longswordblade,	
+	RECIPE_KATANA = /obj/item/smithing/katanablade,
+	RECIPE_WAKI = /obj/item/smithing/wakiblade,
 	RECIPE_MACE = /obj/item/smithing/macehead,
-	RECIPE_WARAXE = /obj/item/smithing/waraxehead,
-	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade,
+	RECIPE_AXE = /obj/item/smithing/axehead,
+	RECIPE_CRUSHER = /obj/item/smithing/crusherhead,
+	RECIPE_SPEAR = /obj/item/smithing/spearhead,
+	RECIPE_TRIDENT = /obj/item/smithing/tridenthead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
-	RECIPE_BOLA = /obj/item/smithing/bola,
+	RECIPE_BOLA = /obj/item/smithing/bola,	
+	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
+	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_WARAXE = /obj/item/smithing/waraxehead,
+	RECIPE_LANCE = /obj/item/smithing/lancehead,
 )
 
 // Decent makeshift anvil, can break, mobile. Several unique products
@@ -354,27 +381,7 @@
 	name = "table anvil"
 	desc = "A reinforced table. Usable as an anvil, favored by mad wastelanders and the dregs of the wasteland. Can be loosened from its bolts and moved."
 	icon_state = "tablevil"
-	anvilquality = -1
-	smithrecipes = list(RECIPE_HAMMER = /obj/item/smithing/hammerhead,
-	RECIPE_SHOVEL = /obj/item/smithing/shovelhead,
-	RECIPE_PICKAXE = /obj/item/smithing/pickaxehead,
-	RECIPE_PROSPECTPICK = /obj/item/smithing/prospectingpickhead,
-	RECIPE_KITCHENKNIFE = /obj/item/smithing/knifeblade,
-	RECIPE_UNITOOL = /obj/item/smithing/unitool,
-	RECIPE_RING = /obj/item/smithing/special/jewelry/ring,
-	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
-	RECIPE_BOWIE = /obj/item/smithing/bowieblade,
-	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
-	RECIPE_SWORD = /obj/item/smithing/swordblade,
-	RECIPE_MACE = /obj/item/smithing/macehead,
-	RECIPE_SAW  = /obj/item/smithing/scrapsaw,
-	RECIPE_SCRAP = /obj/item/smithing/scrapblade,
-	RECIPE_CRUSHER = /obj/item/smithing/crusherhead,
-	RECIPE_TRIDENT = /obj/item/smithing/tridenthead,
-	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
-	RECIPE_THROWING = /obj/item/smithing/throwingknife,
-	RECIPE_BOLA = /obj/item/smithing/bola,
-)
+	anvilquality = -2
 
 /obj/structure/anvil/obtainable/table/wrench_act(mob/living/user, obj/item/I)
 	..()
@@ -388,7 +395,7 @@
 	desc = "A big block of sandstone. Useable as an anvil."
 	custom_materials = list(/datum/material/sandstone=8000)
 	icon_state = "sandvil"
-	anvilquality = 0
+	anvilquality = -1
 
 // Debug anvil
 /obj/structure/anvil/debugsuper

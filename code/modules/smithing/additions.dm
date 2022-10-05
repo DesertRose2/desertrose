@@ -194,7 +194,7 @@ GLOBAL_LIST_INIT(leatherstrips_recipes, list ( \
 				The needed tools are: good gloves, metal ingots, a furnace, wood planks, an anvil, quenching trough and a special hammer.
 				<p>
 				<ol>
-				<li>Gloves: Not all gloves can handle red hot metal, blacksmith mittens is my personal preference but others work too. If you can move the hot metal from the furnace the gloves are good enough.</li>
+				<li>Forging mittens: Only very thick mittens are really reliable enough for touching red-hot metal. Make some from leather if you need to.</li>
 				<li>Metal ingots: Take the metal stack you want to work in your hand and fashion ingots from it. (inhand crafting) </li>
 				<li>Furnace: Needs fuel, welding fuel most commonly. Five measures of fuel burns fast but is enough to heat a couple ingots if you are fast.</li>
 				<li>Wooden bits: Cut down planks to rods with something sharp. Then cut leather to strips and wrap it around the rod for making a sword handle, or directly on the workpiece for some tools. </li>
@@ -224,34 +224,57 @@ GLOBAL_LIST_INIT(leatherstrips_recipes, list ( \
 				<p>
 				<ol>
 				<li>Hammer: (BPP) Bend the metal, then punch it like you would a profligates face until the hammerhead is done. Add a rod.</li>
+				<li>Shovel: (BUU) Bend the metal, then upset. Add a rod.</li>
 				<li>Crowbar: (BBB) Bend the metal until you got the crowbar done, then wrap it in leather strips. Better than the usual crowbars folks use nowadays.</li>
 				<li>Pickaxe: (BFF) Bend the metal, then fold it into shape twice, then add a wooden rod.</li>
 				<li>Prospecting pick: (BFS) Bend the metal, then fold it into shape and shrink it, then add a wooden rod. Useful for finding mineral deposits.</li>
 				<li>Kitchen knife: (BSD) Bend the metal, shrink and draw it, then add a knife handle. A perfect gift for women.</li>
+				<li>Universal tool: (BBU) Want a crowbar with a blade forgewelded on? Bend it twice, upset, then wrap it in leather strips when tempered.</li>
+				<li>Bonesaw: (FFSU) Fold twice, shrink and upset, wrap it with a leather strip once tempered. If you want a ugly ass saw, here you go. You could probably try to catch a blade with it I guess. </li>
+
 				<li>Rings: (SSS) Tiny things, my fingers hurt when I try to work it, but if you youngsters want to make one just shrink the metal to shape. Might cheer you up.</li>
 				<li>Ball and chain: (PBU) Punch the metal, bend and upset it. Add a chain and then snap it on the slaves leg, and laugh while they hobble about. Silly slave.</li>
 
+				<li>Bowie knife: (DFS) Draw fold and shrink it, add a sword handle and THIS is a knife. </li>
 				<li>Dagger: (DDS) Draw draw and shrink it, add a sword handle and you got a tiny little weapon. </li>
-				<li>Machete: (FDF) Fold the metal, draw it and ugh..yeah, fold it more. Add handle.</li>
-				<li>Small sword: (FFSU) Fold, shrink, upset, add a handle and you got a small dinky blade. </li>
-				<li>Sword: (FFDD) You must fold the metal some, then draw it into a proper thin shape. Add a handle and you got a fine blade! </li>
-				<li>Longsword: (FFFF) Fold, fold, then FOLD SOME MORE. Done right, you get a proper sharp sword, after adding a sword handle.</li>
-				<li>Heavy axe: (UUPP) Upset the hot metal, then use the puncher to make holes for the fittings. Add a wooden rod, then go chop down some wood or enemies. Easy. </li>
-				<li>Spear: (DDDF) Draw the metal thrice then fold it. Add a rod, and enjoy a simple but effective weapon.</li>
+
+				<li>Machete: (FDF) Fold the metal, draw it, fold it more. Add handle.</li>
+				<li>Lawnmower machete: (FUF) Fold the metal, upset it and ugh..yeah, fold it more. Add handle.</li>
+
+				<li>Sword: (FFDF) You must fold the metal some, then draw it and fold it again. Add a handle and you got a fine blade! </li>
+				<li>Sabre: (FFDD) You must fold the metal some, then draw it into a proper thin shape. Add a handle and you got a curved blade. </li>
+
+				<li>Longsword: (FFFDD) Fold, fold, fold then draw twice.. Done right, you get a proper sharp sword, after adding a sword handle.</li>
+				<li>Katana: (FFFFF) Fold, fold, then FOLD SOME MORE. These curved swords look weird but are reasonably sharp I guess.</li>
+				<li>Wakizashi: (FDFF) Fold, draw, and fold twice, add a handle and you got a small dinky blade. </li>
+
+				<li>Mace: (UPU) Fold, draw, and fold twice, add a handle and you got a small dinky blade. </li>
+				<li>Scrap blade: (UDPP) Fold, draw, and fold twice, add a handle and you got a small dinky blade. </li>
+
+				<li>Heavy axe: (UDSP) Upset the hot metal, draw it, shrink it, punch holes in it. Add a wooden rod, then go chop down some wood or enemies. Easy. </li>
+				<li>Crusher: (UUPP) Upset the hot metal, then use the puncher to make holes for the fittings. Add a wooden rod and crush those disgusting ghouls like twigs. </li>
+
+				<li>Spear: (DDDF) Draw the metal thrice then fold it. Add a rod, and enjoy a simple but effective weapon.</li>		
+				<li>Trident: (DDBF) Draw the metal thrice then fold it. Add a rod, and enjoy a simple but effective weapon.</li>	
 
 				<li>Javelin: (SDU) Shrink, draw, upset, add a wooden rod and throw it in someones face.</li>
 				<li>Throwing knife: (SDD) Shrink and draw the metal twice, then add leather strips and there you go.</li>
 				<li>Bola: (SUU) Shrink then upset twice, add a chain and you got a nice slavecatcher.</li>
 
+				<li>For forgemasters trained in the east, you of course also know the ways to make our own weapons, that outsiders are unfit to touch, unless its tasting its edge. </li>
+				<li>Legion Spatha: (FFBF) You must fold the metal some, then bend it and fold some more. Add a handle and marvel at the beauty of the Legions finest blade! </li>
+				<li>Legion Lance: (DBDF) Draw the metal thrice then fold it. Add a rod, and enjoy a simple but effective weapon.</li>
+				<li>Legion Waraxe: (UDUP) Upset the hot metal, draw, upset, and punch it. Add a wooden rod, and behold the perfection of a Legion war axe. </li>
+				<li>Legion Gladius: (FBF) Fold the metal, bend it and ugh..yeah, fold it more. Add handle.</li>
+
 				</ol>
 				<p>
 
-				Know that there are more things to learn, but this is enough to get you started. Know that there are three styles of smithing, each requiring its own kind of anvil. Some items can only me made on the right anvil, experimentation is the key!
+				Now go and make things of metal!
 
 				</body>
 				</html>
 				"}
-
 
 
 // --------------- DR Code compatiblity temporary addons ---------------------
