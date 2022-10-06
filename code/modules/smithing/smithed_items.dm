@@ -218,7 +218,7 @@
 /obj/item/blacksmith/woodenrod
 	name = "wooden rod"
 	desc = "It's a rod, suitable for use of a handle of a tool. Also could serve as a weapon, in a pinch."
-	icon_state = "woodrod"
+	icon_state = "woodenrod"
 	resistance_flags = FLAMMABLE
 
 // Make a sword handle by wrapping leather strips on a rod

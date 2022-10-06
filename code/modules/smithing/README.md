@@ -25,10 +25,7 @@ Sort of. It works, but the following was planned, before time and heart ran out.
 
 ## Whats new? 
 So much its hard to list
-Anvils: Three "cultures". Same recipes on each type may produce different results, to keep things varied and add some discovery in the system
-		Normal - Steel or Sandstone anvil (Machete, Sabre, Spear)
-		Legion - Legion anvil (Gladius, Lance, Spatha, War Axe)
-		Waster - Table anvil (Scrap Saw, Scrap Blade, Crusher, Omnitool, Reforged Machete, Trident)
+Anvils: Three quality types, bad (tablevil), decent (sandvil), good (steel and legion) Also the Legion one gets a couple special recipes for the cultural type weapons.
 
 Hammer quality a little less important, skill a little easier to earn XP for
 Item quality much less impactful (this just means low quality items arent completely useless)
