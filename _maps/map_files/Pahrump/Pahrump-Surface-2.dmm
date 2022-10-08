@@ -1116,11 +1116,37 @@
 	},
 /area/f13/building)
 "apa" = (
-/obj/machinery/vending/faction/leg,
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 23
 	},
+/obj/structure/rack{
+	icon_state = "rack-clothing"
+	},
+/obj/item/clothing/suit/f13/robe_liz,
+/obj/item/clothing/suit/f13/robe_liz,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "apd" = (
@@ -5248,7 +5274,39 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/vending/faction/ncr,
+/obj/structure/rack{
+	icon_state = "rack-clothing"
+	},
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -18284,6 +18342,8 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -29459,6 +29519,8 @@
 	pixel_x = -9;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -58486,6 +58548,8 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -59947,6 +60011,26 @@
 	color = "#363636"
 	},
 /obj/structure/closet/cabinet/anchored,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "ubO" = (

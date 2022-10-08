@@ -23670,13 +23670,43 @@
 /area/f13/ncr)
 "pNS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/faction/bos,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
+/obj/structure/rack{
+	icon_state = "rack-clothing"
+	},
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/syndicate/brotherhood,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/under/f13/bos/fatigues,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
