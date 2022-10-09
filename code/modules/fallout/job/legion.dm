@@ -757,6 +757,7 @@ Prime Legionairy
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 	exp_requirements = 300
+	exp_type = EXP_TYPE_LEGION
 
 	loadout_options = list(
 		/datum/outfit/loadout/primeline,	//Trail Carbine

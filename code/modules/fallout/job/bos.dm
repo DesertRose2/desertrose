@@ -726,7 +726,7 @@ Senior Knight
 	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 1200
-	exp_type = EXP_TYPE_KNIGHT
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta,

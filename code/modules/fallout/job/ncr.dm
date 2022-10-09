@@ -564,6 +564,7 @@ Combat Medic (to be reworked into Supply)
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
 	outfit = /datum/outfit/job/ncr/f13combatmedic
 	exp_requirements = 300
+	exp_type = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/f13combatmedic
 	name = "NCR Combat Medic"
