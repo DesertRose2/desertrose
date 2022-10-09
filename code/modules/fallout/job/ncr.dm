@@ -392,8 +392,8 @@ Sergeant
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
-	exp_requirements = 3000
-	exp_type = EXP_TYPE_NCRNCO
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
 	/datum/outfit/loadout/serreg,	//Service
@@ -477,8 +477,8 @@ Corporal
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
 	outfit = /datum/outfit/job/ncr/f13corporal
-	exp_requirements = 1200
-	exp_type = EXP_TYPE_NCRTPR
+	exp_requirements = 600
+	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
 	/datum/outfit/loadout/corpreg,		//Service
@@ -563,8 +563,8 @@ Combat Medic (to be reworked into Supply)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
 	outfit = /datum/outfit/job/ncr/f13combatmedic
-	exp_requirements = 900
-	exp_type = EXP_TYPE_NCRTPR
+	exp_requirements = 300
+	exp_type = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/f13combatmedic
 	name = "NCR Combat Medic"
@@ -609,8 +609,8 @@ NCR Specialist (formerly only Combat Engineer)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
 	outfit = /datum/outfit/job/ncr/f13combatengineer
-	exp_requirements = 900
-	exp_type = EXP_TYPE_NCRTPR
+	exp_requirements = 300
+	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
 	/datum/outfit/loadout/ncrcombatengi,	//Combat Engineer
@@ -692,8 +692,8 @@ Mp
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MILITARY_POLICE
 	outfit = /datum/outfit/job/ncr/f13militarypolice
-	exp_requirements = 3000
-	exp_type = EXP_TYPE_NCRNCO
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/f13militarypolice
 	name = "NCR Military Police"
@@ -742,8 +742,8 @@ Heavy Trooper
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
-	exp_requirements = 1200
-	exp_type = EXP_TYPE_NCRTPR
+	exp_requirements = 600
+	exp_type = EXP_TYPE_NCR
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 /datum/outfit/job/ncr/f13heavytrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -785,7 +785,8 @@ Trooper
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
-	exp_requirements = 600
+	exp_requirements = 300
+	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
 	/datum/outfit/loadout/troopreg,		//Service

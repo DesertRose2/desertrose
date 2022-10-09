@@ -190,7 +190,7 @@ Tribal Head Hunter
 	suit = 			/obj/item/clothing/suit/hooded/cloak/hhunter
 	suit_store =	/obj/item/melee/transforming/cleaving_saw
 	belt = 			/obj/item/storage/belt/mining/primitive
-	l_pocket =		/obj/item/flashlight/lantern	
+	l_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
@@ -362,7 +362,7 @@ Hunter
 	description = "You are a Hunter for the tribe; you bring back food and relics, anything that may house a machine spirit that can be purified by the shaman. You also are the protectors of the tribe, and work with the Head Hunter during Great Hunts or times of War."
 	selection_color = "#006666"
 
-	exp_requirements = 600
+	exp_requirements = 300
 	exp_type = EXP_TYPE_TRIBAL
 
 	outfit = /datum/outfit/job/tribal/f13hunter
