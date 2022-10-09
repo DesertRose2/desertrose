@@ -519,8 +519,8 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
-	exp_requirements = 3000
-	exp_type = EXP_TYPE_SCRIBE
+	exp_requirements = 1000
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
@@ -601,7 +601,8 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Proctor, or Head Scribe"
 	selection_color = "#95a5a6"
-	exp_requirements = 600
+	exp_requirements = 300
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 
 	loadout_options = list(
@@ -724,8 +725,8 @@ Senior Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
-	exp_requirements = 3000
-	exp_type = EXP_TYPE_KNIGHT
+	exp_requirements = 1000
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta,
@@ -813,7 +814,8 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Senior Knight, or Knight Captain"
 	selection_color = "#95a5a6"
-	exp_requirements = 600
+	exp_requirements = 300
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta,
@@ -1042,7 +1044,8 @@ Off-Duty
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
-	exp_requirements = 600
+	exp_requirements = 300
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/offa, //Junior Knight

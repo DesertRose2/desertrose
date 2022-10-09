@@ -301,7 +301,7 @@
 	spawn_positions = 2
 	supervisors = "the Aldermen and the Marshal."
 	description = "Participating in strike squads against raider encampments and performing surgical strikes against enemies of the Coalition, you and the rest of the elite Provosts don't so much as charge into battle as you do prevent the battle from happening; enforcing the law is still the order of the day, but destabilising real threats and taking out bands of raiders is a priority."
-	exp_requirements = 1500
+	exp_requirements = 600
 	exp_type = EXP_TYPE_VTCCSEC
 
 	outfit = /datum/outfit/job/vtcc/f13provost
@@ -396,7 +396,7 @@
 	description = "Day or night, you watch the walls with diligence. The wastes outside are lawless, but that's not your problem until they drag it in with them, inside the outer ring. It's there that you will learn to dispense justice with an iron fist, dragging those that would break laws penned by the Overseers to serve their sentences by any means necessary. The citizens of the inner ring are rarely a concern and should get off lighter than their counterparts in the outer ring."
 
 	outfit = /datum/outfit/job/vtcc/f13citysecscout
-	exp_requirements = 600
+	exp_requirements = 300
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
@@ -475,7 +475,7 @@
 	description = "Operate the shop for the Merchant and push your products on anyone in town you can. Sell to everyone; sell as much as you can - it's a firesale!"
 
 	outfit = /datum/outfit/job/vtcc/f13shopkeep
-	exp_requirements = 900
+	exp_requirements = 600
 	exp_type = EXP_TYPE_ROADIE
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
@@ -519,7 +519,7 @@
 	forbids = "Using the stock to go bunker busting. The stock is to be sold, not to be taken and used by personnel."
 
 	outfit = /datum/outfit/job/vtcc/f13roadie
-	exp_requirements = 600
+	exp_requirements = 300
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
@@ -591,7 +591,7 @@
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
-	exp_requirements = 3000
+	exp_requirements = 1500
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
