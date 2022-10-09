@@ -392,7 +392,7 @@ Sergeant
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
-	exp_requirements = 1500
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
@@ -691,7 +691,7 @@ Mp
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MILITARY_POLICE
 	outfit = /datum/outfit/job/ncr/f13militarypolice
-	exp_requirements = 1500
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_NCR
 
 /datum/outfit/job/ncr/f13militarypolice

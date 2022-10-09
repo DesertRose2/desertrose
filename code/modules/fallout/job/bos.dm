@@ -519,8 +519,8 @@ Proctor
 	selection_color = "#95a5a6"
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
-	exp_requirements = 600
-	exp_type = EXP_TYPE_SCRIBE
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
@@ -725,7 +725,7 @@ Senior Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
-	exp_requirements = 600
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(

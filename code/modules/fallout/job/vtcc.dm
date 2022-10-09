@@ -301,8 +301,8 @@
 	spawn_positions = 2
 	supervisors = "the Aldermen and the Marshal."
 	description = "Participating in strike squads against raider encampments and performing surgical strikes against enemies of the Coalition, you and the rest of the elite Provosts don't so much as charge into battle as you do prevent the battle from happening; enforcing the law is still the order of the day, but destabilising real threats and taking out bands of raiders is a priority."
-	exp_requirements = 600
-	exp_type = EXP_TYPE_VTCCSEC
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_VTCC
 
 	outfit = /datum/outfit/job/vtcc/f13provost
 
@@ -475,8 +475,8 @@
 	description = "Operate the shop for the Merchant and push your products on anyone in town you can. Sell to everyone; sell as much as you can - it's a firesale!"
 
 	outfit = /datum/outfit/job/vtcc/f13shopkeep
-	exp_requirements = 600
-	exp_type = EXP_TYPE_ROADIE
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_VTCC
 
 	access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
 	minimal_access = list(ACCESS_VTCC, ACCESS_VTCC_ROADIE, ACCESS_VTCC_SHOP)
@@ -519,7 +519,7 @@
 	forbids = "Using the stock to go bunker busting. The stock is to be sold, not to be taken and used by personnel."
 
 	outfit = /datum/outfit/job/vtcc/f13roadie
-	exp_requirements = 300
+	exp_requirements = 600
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
@@ -591,7 +591,7 @@
 	description = "Doctor, Scientist, Roboticist, each of you under the Vault's employ stands under the title of Researcher. The Vault's servers are regularly wiped by some glitch in the system, and it's down to the Scientists to restore these data files. To be a Roboticist is to uphold a tradition in the Vault that bears itself a marred reputation, so don't lose your head. The Medical Professionals, even those who handle quarantined patients, are the clinical cornerstone of the town, so long as the price is right."
 
 	outfit = /datum/outfit/job/vtcc/f13researcher
-	exp_requirements = 1500
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_VTCC
 
 	loadout_options = list(
