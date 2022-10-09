@@ -520,7 +520,7 @@ Proctor
 
 	outfit = /datum/outfit/job/bos/f13seniorscribe
 	exp_requirements = 600
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_type = EXP_TYPE_SCRIBE
 
 	loadout_options = list(
 	/datum/outfit/loadout/proctorsw,
@@ -726,7 +726,7 @@ Senior Knight
 	supervisors = "the Knight Captain"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta,
