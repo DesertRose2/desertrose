@@ -80,3 +80,13 @@
 
 /obj/structure/table/snooker/ComponentInitialize()
 	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_EIGHTDIR)
+
+
+/obj/structure/table/snooker/roulette
+	name = "roulette table"
+	desc = "A cloth surfaced roulette table for big winnings. Green! The house wins again!"
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "roulette"
+	framestack = /obj/item/stack/sheet/metal
+	buildstack = /obj/item/stack/sheet/cloth
+
