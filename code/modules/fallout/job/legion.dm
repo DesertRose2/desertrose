@@ -426,7 +426,7 @@ Decanii
 	supervisors = "the Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
-	exp_requirements = 1500
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_LEGION
 
 	loadout_options = list(
@@ -756,7 +756,7 @@ Prime Legionairy
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
-	exp_requirements = 600
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/primeline,	//Trail Carbine
@@ -970,8 +970,8 @@ Explorer
 	supervisors = "the Venator and Centurion"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	exp_requirements = 900
-	exp_type = EXP_TYPE_PRIME
+	exp_requirements = 300
+	exp_type = EXP_TYPE_LEGION
 
 	loadout_options = list(
 		/datum/outfit/loadout/excursor,	//10mm smg, smokebomb
@@ -1036,7 +1036,7 @@ Auxilia
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
 	exp_requirements = 600
-	exp_type = EXP_TYPE_CAMP
+	exp_type = EXP_TYPE_LEGION
 
 	loadout_options = list(
 	/datum/outfit/loadout/auxengi,
