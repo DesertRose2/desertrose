@@ -329,3 +329,8 @@
 			var/amount = min(beaker.reagents.get_reagent_amount(/datum/reagent/consumable/sugar), beaker.reagents.get_reagent_amount(/datum/reagent/consumable/ethanol/moonshine))
 			beaker.reagents.remove_reagent(/datum/reagent/consumable/sugar, amount)
 			beaker.reagents.remove_reagent(/datum/reagent/consumable/ethanol/moonshine, amount)
+		//Recipe to make whipped cream
+		if (beaker.reagents.has_reagent(/datum/reagent/consumable/cream))
+			var/amount = beaker.reagents.get_reagent_amount(/datum/reagent/consumable/cream)
+			beaker.reagents.remove_reagent(/datum/reagent/consumable/cream, amount)
+			beaker.reagents.add_reagent(/datum/reagent/consumable/whipped_cream, amount)
