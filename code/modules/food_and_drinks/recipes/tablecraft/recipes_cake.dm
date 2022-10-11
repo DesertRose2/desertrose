@@ -205,11 +205,10 @@
 /datum/crafting_recipe/food/pavlova
 	name = "Pavlova"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/store/cake/plain = 1,
-		/obj/item/reagent_containers/food/snacks/egg = 2,
-		/datum/reagent/consumable/cream = 5,
-		/datum/reagent/consumable/sugar = 5,
-		/obj/item/reagent_containers/food/snacks/grown/berries = 5
+		/datum/reagent/consumable/eggwhite = 12,
+		/datum/reagent/consumable/sugar = 15,
+		/datum/reagent/consumable/whipped_cream = 10,
+		/obj/item/food/grown/berries = 5
 	)
 	result = /obj/item/reagent_containers/food/snacks/store/cake/pavlova
 	subcategory = CAT_CAKE

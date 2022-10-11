@@ -885,3 +885,9 @@
 	taste_description = "fizzy sweetness"
 	value = REAGENT_VALUE_COMMON
 
+/datum/reagent/consumable/whipped_cream
+	name = "Whipped Cream"
+	description = "A white fluffy cream made from whipping cream at intense speed."
+	color = "#efeff0"
+	nutriment_factor = 4 * REAGENTS_METABOLISM
+	taste_description = "fluffy sweet cream"
