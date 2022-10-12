@@ -17,7 +17,8 @@
 /datum/crafting_recipe/food/khachapuri
 	name = "Khachapuri"
 	reqs = list(
-		/datum/reagent/consumable/eggyolk = 5,
+		/datum/reagent/consumable/eggyolk = 2,
+		/datum/reagent/consumable/eggwhite = 4,
 		/obj/item/reagent_containers/food/snacks/cheesewedge = 1,
 		/obj/item/reagent_containers/food/snacks/store/bread/plain = 1
 	)

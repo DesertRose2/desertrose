@@ -500,13 +500,13 @@
 	name = "Chocolate Pudding"
 	id = /datum/reagent/consumable/chocolatepudding
 	results = list(/datum/reagent/consumable/chocolatepudding = 20)
-	required_reagents = list(/datum/reagent/consumable/milk/chocolate_milk = 10, /datum/reagent/consumable/eggyolk = 5)
+	required_reagents = list(/datum/reagent/consumable/cream = 5, /datum/reagent/consumable/coco = 5, /datum/reagent/consumable/eggyolk = 2)
 
 /datum/chemical_reaction/vanillapudding
 	name = "Vanilla Pudding"
 	id = /datum/reagent/consumable/vanillapudding
 	results = list(/datum/reagent/consumable/vanillapudding = 20)
-	required_reagents = list(/datum/reagent/consumable/vanilla = 5, /datum/reagent/consumable/milk = 5, /datum/reagent/consumable/eggyolk = 5)
+	required_reagents = list(/datum/reagent/consumable/vanilla = 5, /datum/reagent/consumable/cream = 5, /datum/reagent/consumable/eggyolk = 2)
 
 /datum/chemical_reaction/drunkenblumpkin
 	name = "Drunken Blumpkin"
