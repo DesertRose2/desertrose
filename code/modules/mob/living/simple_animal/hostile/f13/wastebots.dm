@@ -433,8 +433,8 @@
 	retreat_distance = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS //wall-obliterator. perish.
 	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak/strong
-	speed = 3
-	rapid_melee = 3
+	speed = 2
+	rapid_melee = 2
 	color = "#75FFE2"
 	aggro_vision_range = 15
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1 //cannot self-harm with it's explosion spam
@@ -455,9 +455,9 @@
 	damage = 14
 	icon_state = "gaussstrong"
 	armour_penetration = 0.5
-	movement_type = FLYING | UNSTOPPABLE
+	movement_type = FLYING
 	pixels_per_second = TILES_TO_PIXELS(15)
-	range = 18
+	range = 14
 
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb //NSB + Raider Bunker specific.
 	name = "sentry bot"
