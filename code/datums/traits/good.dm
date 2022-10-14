@@ -217,3 +217,86 @@
 	value = 2
 	mob_trait = TRAIT_SELF_AWARE
 	medical_record_text = "Patient demonstrates an uncanny knack for self-diagnosis."
+
+///// Languages
+
+/datum/quirk/tribespeak
+	name = "Tribal Language Comprehension"
+	desc = "You're somehow capable of understanding and speaking the common tribal languages in the area."
+	value = 1
+	gain_text = span_notice("You remember the old ways of your tribe..")
+	lose_text = span_notice("You've forgotten the ways of your ancestors..")
+
+
+/datum/quirk/tribespeak/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/tribal)
+
+/datum/quirk/tribespeak/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!QDELETED(H))
+		H.remove_language(/datum/language/tribal)
+
+/datum/quirk/spanishspeak
+	name = "Spanish Language Comprehension"
+	desc = "You're somehow capable of understanding and speaking the common language of the mexican cartels in the south."
+	value = 1
+	gain_text = span_notice("You remember the old ways of the mexican cartels..")
+	lose_text = span_notice("You've forgotten the ways of the mexican cartels..")
+
+/datum/quirk/spanishspeak/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/spanish)
+
+/datum/quirk/spanishspeak/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!QDELETED(H))
+		H.remove_language(/datum/language/spanish)
+
+/datum/quirk/sorrowspeak
+	name = "Sorrows Language Comprehension"
+	desc = "You're somehow capable of understanding and speaking the common language of the sorrows."
+	value = 1
+	gain_text = span_notice("You remember the old ways of your tribe..")
+	lose_text = span_notice("You've forgotten the ways of your ancestors..")
+
+/datum/quirk/sorrowspeak/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/sorrows)
+
+/datum/quirk/sorrowspeak/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!QDELETED(H))
+		H.remove_language(/datum/language/sorrows)
+
+/datum/quirk/whitelegspeak
+	name = "White Leg Language Comprehension"
+	desc = "You're somehow capable of understanding and speaking the common language of the sorrows."
+	value = 1
+	gain_text = span_notice("You remember the old ways of your tribe..")
+	lose_text = span_notice("You've forgotten the ways of your ancestors..")
+
+/datum/quirk/whitelegspeak/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/whiteleg)
+
+/datum/quirk/whitelegspeak/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!QDELETED(H))
+		H.remove_language(/datum/language/whiteleg)
+
+/datum/quirk/deadhorsespeak
+	name = "Dead Horses Language Comprehension"
+	desc = "You're somehow capable of understanding and speaking the common language of the sorrows."
+	value = 1
+	gain_text = span_notice("You remember the old ways of your tribe..")
+	lose_text = span_notice("You've forgotten the ways of your ancestors..")
+
+/datum/quirk/deadhorsespeak/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/whiteleg)
+
+/datum/quirk/deadhorsespeak/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!QDELETED(H))
+		H.remove_language(/datum/language/whiteleg)

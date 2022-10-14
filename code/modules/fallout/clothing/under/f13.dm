@@ -391,6 +391,7 @@
 	icon_state = "khan"
 	item_state = "khan"
 	item_color = "khan"
+	fitted = NO_FEMALE_UNIFORM
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
 
 /obj/item/clothing/under/f13/khan/shorts

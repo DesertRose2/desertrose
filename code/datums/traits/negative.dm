@@ -236,6 +236,22 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 //Tier 3/4 Negative Quirks, provide crippling debuffs to you
 /////////////////////////////////////////////////////////////
 
+/datum/quirk/foreigner
+	name = "Foreigner"
+	desc = "You're not from around here. You don't know English!"
+	value = -3  /// You dont get another language with this, so you get 3 extra points.
+	gain_text = "<span class='notice'>The words being spoken around you don't make any sense."
+	lose_text = "<span class='notice'>You've developed fluency in English."
+
+/datum/quirk/foreigner/add()
+	var/mob/living/carbon/human/human_holder = quirk_holder
+	human_holder.add_blocked_language(/datum/language/common)
+
+/datum/quirk/foreigner/remove()
+	var/mob/living/carbon/human/human_holder = quirk_holder
+	human_holder.remove_blocked_language(/datum/language/common)
+
+
 /datum/quirk/brainproblems
 	name = "Brain Tumor"
 	desc = "You have a little friend in your brain that is making it quite difficult to perform day to day functions properly."
