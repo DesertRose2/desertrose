@@ -455,7 +455,7 @@
 	damage = 14
 	icon_state = "gaussstrong"
 	armour_penetration = 0.5
-	movement_type = FLYING
+	movement_type = FLYING | UNSTOPPABLE
 	pixels_per_second = TILES_TO_PIXELS(15)
 	range = 14
 
