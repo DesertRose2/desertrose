@@ -764,3 +764,11 @@
 /datum/chemical_reaction/ginger_amaretto
 	results = list(/datum/reagent/consumable/ethanol/ginger_amaretto = 4)
 	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/sol_dry = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/lemonjuice = 1)
+
+/datum/chemical_reaction/quintuplesec
+	name = "Quintuple Sec"
+	id = /datum/reagent/consumable/ethanol/quintuple_sec
+	results = list(/datum/reagent/consumable/ethanol/quintuple_sec = 15)
+	required_reagents = list(/datum/reagent/consumable/ethanol/quadruple_sec = 5, /datum/reagent/consumable/clownstears = 5, /datum/reagent/consumable/ethanol/syndicatebomb = 5)
+	mix_message = "Judgement is upon you."
+	mix_sound = 'sound/items/airhorn2.ogg'

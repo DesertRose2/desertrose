@@ -125,3 +125,71 @@
 	id = /datum/reagent/consumable/bluecherryshake
 	results = list(/datum/reagent/consumable/bluecherryshake = 3)
 	required_reagents = list(/datum/reagent/consumable/bluecherryjelly = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/cream = 1)
+
+/datum/chemical_reaction/icetea
+	name = "Iced Tea"
+	id = /datum/reagent/consumable/icetea
+	results = list(/datum/reagent/consumable/icetea = 4)
+	required_reagents = list(/datum/reagent/consumable/ice = 1, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/pinktea
+	name = "Strawberry Tea"
+	id = /datum/reagent/consumable/pinktea
+	results = list(/datum/reagent/consumable/pinktea = 5)
+	required_reagents = list(/datum/reagent/consumable/strawberryjuice = 1, /datum/reagent/consumable/tea/arnold_palmer = 1, /datum/reagent/consumable/sugar = 1)
+
+/datum/chemical_reaction/arnold_palmer
+	name = "Arnold Palmer"
+	id = /datum/reagent/consumable/tea/arnold_palmer
+	results = list(/datum/reagent/consumable/tea/arnold_palmer = 2)
+	required_reagents = list(/datum/reagent/consumable/tea = 1, /datum/reagent/consumable/lemonade = 1)
+	mix_message = "The smells of fresh green grass and sand traps waft through the air as the mixture turns a friendly yellow-orange."
+
+/datum/chemical_reaction/mush
+	name = "Mush Tea"
+	id = /datum/reagent/consumable/tea/mush
+	results = list(/datum/reagent/consumable/tea/mush = 3)
+	required_reagents = list(/datum/reagent/drug/mushroomhallucinogen = 3, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/foresttea1
+	name = "Forest Tea"
+	id = /datum/reagent/consumable/tea/forest
+	results = list(/datum/reagent/consumable/tea/forest = 3)
+	required_reagents = list(/datum/reagent/consumable/buzz_fuzz= 3, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/foresttea2
+	name = "Forest Tea"
+	id = /datum/reagent/consumable/tea/forest
+	results = list(/datum/reagent/consumable/tea/forest = 3)
+	required_reagents = list(/datum/reagent/consumable/honey = 1, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/redtea1
+	name = "Red Tea"
+	id = /datum/reagent/consumable/tea/red
+	results = list(/datum/reagent/consumable/tea/red = 3)
+	required_reagents = list(/datum/reagent/colorful_reagent/crayonpowder/red = 1, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/greentea1
+	name = "Green Tea"
+	id = /datum/reagent/consumable/tea/green
+	results = list(/datum/reagent/consumable/tea/green = 3)
+	required_reagents = list(/datum/reagent/colorful_reagent/crayonpowder/green = 1, /datum/reagent/consumable/tea = 3)
+
+/datum/chemical_reaction/redtea2
+	name = "Red Tea"
+	id = /datum/reagent/consumable/tea/red
+	results = list(/datum/reagent/consumable/tea/red = 3)
+	required_reagents = list(/datum/reagent/toxin/teapowder/red = 1, /datum/reagent/water = 3)
+
+/datum/chemical_reaction/greentea2
+	name = "Green Tea"
+	id = /datum/reagent/consumable/tea/green
+	results = list(/datum/reagent/consumable/tea/green = 3)
+	required_reagents = list(/datum/reagent/toxin/teapowder/green = 1, /datum/reagent/water = 3)
+
+/datum/chemical_reaction/cream_soda
+	name = "Cream Soda"
+	id = /datum/reagent/consumable/cream_soda
+	results = list(/datum/reagent/consumable/cream_soda = 4)
+	required_reagents = list(/datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/sodawater = 2, /datum/reagent/consumable/vanilla = 1)
+
