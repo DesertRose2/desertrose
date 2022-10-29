@@ -562,7 +562,7 @@
 /area/f13/bunker)
 "gT" = (
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb/riot{
-	faction = list("raider", "junker")
+	faction = list("raider","junker")
 	},
 /obj/machinery/light{
 	dir = 1
@@ -620,13 +620,13 @@
 /area/f13/bunker)
 "hF" = (
 /mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "hP" = (
 /mob/living/simple_animal/hostile/handy{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -731,7 +731,7 @@
 /area/f13/bunker)
 "je" = (
 /mob/living/simple_animal/hostile/handy/securitron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -1035,7 +1035,7 @@
 /area/f13/bunker)
 "mD" = (
 /mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -1651,7 +1651,7 @@
 /area/f13/bunker)
 "tM" = (
 /mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2299,7 +2299,7 @@
 "Bc" = (
 /obj/item/bodypart/head,
 /mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -2510,7 +2510,7 @@
 "CZ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/handy/assaultron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -2738,7 +2738,7 @@
 /area/f13/bunker)
 "Fl" = (
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb{
-	faction = list("raider", "junker")
+	faction = list("raider","junker")
 	},
 /turf/open/floor/engine,
 /area/f13/bunker)
@@ -2777,17 +2777,6 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
-"FS" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4;
-	name = "driver's seat"
-	},
-/obj/structure/ladder/unbreakable{
-	id = "metrodungeonentrance";
-	up = "metro_train_1"
-	},
-/turf/open/floor/f13,
 /area/f13/bunker)
 "FX" = (
 /obj/structure/table/wood,
@@ -2838,7 +2827,7 @@
 /area/f13/bunker)
 "Gj" = (
 /mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -3031,13 +3020,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "It" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4;
-	name = "driver's seat"
-	},
 /obj/structure/ladder/unbreakable{
 	id = "metrodungeonentrance";
-	up = "metro_train_2"
+	height = 1
 	},
 /turf/open/floor/f13,
 /area/f13/bunker)
@@ -3079,7 +3064,7 @@
 /area/f13/bunker)
 "IQ" = (
 /mob/living/simple_animal/hostile/handy/assaultron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -4068,7 +4053,7 @@
 /area/f13/bunker)
 "TX" = (
 /mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -16490,7 +16475,7 @@ yY
 AH
 GO
 xE
-FS
+DP
 Pr
 It
 vx
