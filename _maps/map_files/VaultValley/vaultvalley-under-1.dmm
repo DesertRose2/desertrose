@@ -970,14 +970,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
-"is" = (
-/obj/structure/ladder/unbreakable{
-	id = "metrodungeonentrance"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/tunnel)
 "ix" = (
 /obj/structure/toilet{
 	pixel_y = 13
@@ -2580,14 +2572,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/caves)
-"uM" = (
-/obj/structure/ladder/unbreakable{
-	down = "metro_train_1";
-	id = "metrodungeonentrance";
-	up = "metrodungeonentrance"
-	},
-/turf/open/floor/f13,
-/area/f13/tunnel)
 "uN" = (
 /mob/living/simple_animal/hostile/ghoul/soldier,
 /turf/open/indestructible/ground/inside/subway,
@@ -3584,7 +3568,7 @@
 /area/f13/ncr)
 "DD" = (
 /mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("wastebot", "junker");
+	faction = list("wastebot","junker");
 	name = "Junker Protectron"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -4129,7 +4113,7 @@
 /area/f13/ncr)
 "Ip" = (
 /mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("wastebot", "junker");
+	faction = list("wastebot","junker");
 	name = "Junker Mr. Gutsy"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -5691,9 +5675,8 @@
 /area/f13/caves)
 "UO" = (
 /obj/structure/ladder/unbreakable{
-	down = "metro_train_2";
 	id = "metrodungeonentrance";
-	up = "metrodungeonentrance"
+	height = 2
 	},
 /turf/open/floor/f13,
 /area/f13/tunnel)
@@ -54000,7 +53983,7 @@ vH
 vH
 vH
 PC
-is
+je
 je
 je
 vw
@@ -54257,7 +54240,7 @@ PC
 PC
 PC
 PC
-is
+je
 je
 je
 vw
@@ -60944,7 +60927,7 @@ vH
 vH
 sX
 Gk
-uM
+Kv
 Kv
 UO
 Nd

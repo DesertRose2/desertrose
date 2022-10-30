@@ -2521,7 +2521,7 @@
 /area/f13/wasteland)
 "cym" = (
 /mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
@@ -24162,7 +24162,7 @@
 /area/f13/wasteland)
 "xSi" = (
 /mob/living/simple_animal/hostile/handy/gutsy{
-	faction = list("wastebot", "junker")
+	faction = list("wastebot","junker")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
