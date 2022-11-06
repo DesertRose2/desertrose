@@ -319,9 +319,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient is unusually pacifistic and cannot bring themselves to cause physical harm."
 	antag_removal_text = "Your antagonistic nature has caused you to renounce your pacifism."
 
-/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 //Tier 3/4 Negative Quirks, provide crippling debuffs to you
-/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 
 /datum/quirk/brainproblems
 	name = "Brain Tumor"
