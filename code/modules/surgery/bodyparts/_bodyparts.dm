@@ -352,10 +352,15 @@
  */
 /obj/item/bodypart/proc/check_wounding(woundtype, damage, wound_bonus, bare_wound_bonus)
 	// actually roll wounds if applicable
+
+	damage = min(damage * CONFIG_GET(number/wound_damage_multiplier), WOUND_MAX_CONSIDERED_DAMAGE)
+
 	if(HAS_TRAIT(owner, TRAIT_EASYLIMBDISABLE))
 		damage *= 1.5
-	else
-		damage = min(damage, WOUND_MAX_CONSIDERED_DAMAGE)
+	if(woundtype == WOUND_BLUNT && HAS_TRAIT(owner, TRAIT_GLASS_BONES))
+		damage *= 1.5
+	if((woundtype in PAPER_SKIN_WOUNDS) && HAS_TRAIT(owner, TRAIT_PAPER_SKIN))
+		damage *= 1.5
 
 	var/base_roll = rand(max(damage/1.5,25), round(damage ** CONFIG_GET(number/wound_exponent))) + (get_damage()*CONFIG_GET(number/wound_damage_multiplier))
 	var/injury_roll = base_roll
