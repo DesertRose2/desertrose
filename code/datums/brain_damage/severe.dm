@@ -225,6 +225,9 @@
 					to_chat(owner, "<span class='userdanger'>You feel your heart lurching in your chest...</span>")
 					owner.adjustOxyLoss(8)
 
+		else
+			break
+
 /datum/brain_trauma/severe/discoordination
 	name = "Discoordination"
 	desc = "Patient is unable to use complex tools or machinery."
