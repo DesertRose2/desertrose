@@ -80,7 +80,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: 'Putnam3145/auxmos'
-          ref: 'fe6be06610fe366d01edf5b66e6ee602323050cf'
+          ref: 'v0.2.3'
           path: 'auxmos'
 
       - name: Cache cargo registry
