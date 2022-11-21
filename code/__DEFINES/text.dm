@@ -5,5 +5,7 @@
 #define span_alert(str) ("<span class='alert'>" + str + "</span>")
 #define span_notice(str) ("<span class='notice'>" + str + "</span>")
 #define span_green(str) ("<span class='green'>" + str + "</span>")
+#define span_nicegreen(str) ("<span class='nicegreen'>" + str + "</span>")
 #define span_red(str) ("<span class='red'>" + str + "</span>")
 #define span_phobia(str) ("<span class='phobia'>" + str + "</span>")
+#define span_userdanger(str) ("<span class='userdanger'>" + str + "</span>")

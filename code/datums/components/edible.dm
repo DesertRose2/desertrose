@@ -105,41 +105,87 @@ Behavior that's still missing from this component that original food items had t
 
 	. = COMPONENT_ITEM_NO_ATTACK //Point of no return I suppose
 
+	var/time_to_eat = eat_time
+	if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+		time_to_eat *= 0.5 // faster to eat, also faster to be fed
 	if(eater == feeder)//If you're eating it yourself.
-		if(!do_mob(feeder, eater, eat_time)) //Gotta pass the minimal eat time
+		if(!do_mob(feeder, eater, time_to_eat)) //Gotta pass the minimal eat time
 			return
 		var/eatverb = pick(eatverbs)
-		if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50 && !HAS_TRAIT(eater, TRAIT_VORACIOUS))
-			to_chat(eater, SPAN_WARNING("You don't feel like eating any more junk food at the moment!"))
-			return
-		else if(fullness <= 50)
-			eater.visible_message(SPAN_NOTICE("[eater] hungrily [eatverb]s \the [parent], gobbling it down!"), SPAN_NOTICE("You hungrily [eatverb] \the [parent], gobbling it down!"))
-		else if(fullness > 50 && fullness < 150)
-			eater.visible_message(SPAN_NOTICE("[eater] hungrily [eatverb]s \the [parent]."), SPAN_NOTICE("You hungrily [eatverb] \the [parent]."))
-		else if(fullness > 150 && fullness < 500)
-			eater.visible_message(SPAN_NOTICE("[eater] [eatverb]s \the [parent]."), SPAN_NOTICE("You [eatverb] \the [parent]."))
-		else if(fullness > 500 && fullness < 600)
-			eater.visible_message(SPAN_NOTICE("[eater] unwillingly [eatverb]s a bit of \the [parent]."), SPAN_NOTICE("You unwillingly [eatverb] a bit of \the [parent]."))
-		else if(fullness > (600 * (1 + eater.overeatduration / 2000)))	// The more you eat - the more you can eat
-			eater.visible_message(SPAN_WARNING("[eater] cannot force any more of \the [parent] to go down [eater.p_their()] throat!"), SPAN_WARNING("You cannot force any more of \the [parent] to go down your throat!"))
-			return
+		if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50)
+			if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+				to_chat(eater, span_notice("You happily choke down yet more junk food!"))
+				eater.adjust_disgust(-1)
+			else
+				to_chat(eater, SPAN_DANGER("You feel sick as you choke down yet more junk food!"))
+				eater.adjust_disgust(1)
+		switch(fullness)
+			if(-INFINITY to 50)
+				if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+					eater.visible_message(
+						span_notice("[eater] ravenously [eatverb]s \the [parent], gobbling it down!"), 
+						span_notice("You ravenously [eatverb] \the [parent], gobbling it down!"))
+				else
+					eater.visible_message(
+						span_notice("[eater] hungrily [eatverb]s \the [parent], gobbling it down!"), 
+						span_notice("You hungrily [eatverb] \the [parent], gobbling it down!"))
+			if(50 to 200)
+				if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+					eater.visible_message(
+						span_notice("[eater] ravenously [eatverb]s \the [parent]!"), 
+						span_notice("You ravenously [eatverb] \the [parent]!"))
+				else
+					eater.visible_message(
+						span_notice("[eater] hungrily [eatverb]s \the [parent]."), 
+						span_notice("You hungrily [eatverb] \the [parent]."))
+			if(200 to 500)
+				if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+					eater.visible_message(
+						span_notice("[eater] vigorously [eatverb]s \the [parent]!"), 
+						span_notice("You vigorously [eatverb] \the [parent]!"))
+				else
+					eater.visible_message(
+						span_notice("[eater] [eatverb]s \the [parent]."), 
+						span_notice("You [eatverb] \the [parent]."))
+			if(500 to 650)
+				if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+					eater.visible_message(
+						span_notice("[eater] gluttonously [eatverb]s \the [parent]!"), 
+						span_notice("You gluttonously [eatverb] \the [parent]!"))
+				else
+					eater.visible_message(
+						span_notice("[eater] unwillingly [eatverb]s \the [parent]."), 
+						span_notice("You unwillingly [eatverb] \the [parent]."))
+			if((600 * (1 + eater.overeatduration / 1000)) to INFINITY)
+				if(HAS_TRAIT(eater, TRAIT_VORACIOUS))
+					eater.visible_message(
+						span_notice("[eater] gluttonously [eatverb]s \the [parent], cramming it down [eater.p_their()] throat!"), 
+						span_notice("You gluttonously [eatverb] \the [parent], cramming it down your throat!"))
+				else
+					eater.visible_message(
+						SPAN_WARNING("[eater] cannot force any more of \the [parent] to go down [eater.p_their()] throat!"), 
+						SPAN_WARNING("You cannot force any more of \the [parent] to go down your throat!"))
+					return
 	else //If you're feeding it to someone else.
 		if(isbrain(eater))
 			to_chat(feeder, SPAN_WARNING("[eater] doesn't seem to have a mouth!"))
 			return
-		if(fullness <= (600 * (1 + eater.overeatduration / 1000)))
-			eater.visible_message(SPAN_DANGER("[feeder] attempts to feed [eater] [parent]."), \
-									"<span class='userdanger'>[feeder] attempts to feed you [parent].</span>")
+		if(fullness <= (600 * (1 + eater.overeatduration / 1000)) || HAS_TRAIT(eater, TRAIT_VORACIOUS))
+			eater.visible_message(
+				SPAN_WARNING("[feeder] attempts to feed [eater] [parent]."),
+				span_userdanger("[feeder] attempts to feed you [parent]."))
 		else
-			eater.visible_message(SPAN_WARNING("[feeder] cannot force any more of [parent] down [eater]'s throat!"), \
-									SPAN_WARNING("[feeder] cannot force any more of [parent] down your throat!"))
+			eater.visible_message(
+				SPAN_WARNING("[feeder] cannot force any more of [parent] down [eater]'s throat!"),
+				SPAN_WARNING("[feeder] cannot force any more of [parent] down your throat!"))
 			return
-		if(!do_mob(feeder, eater)) //Wait 3 seconds before you can feed
+		if(!do_mob(feeder, eater, time_to_eat)) //Wait 3 / 1.5 seconds before you can feed
 			return
 
 		log_combat(feeder, eater, "fed", owner.reagents.log_list())
-		eater.visible_message(SPAN_DANGER("[feeder] forces [eater] to eat [parent]!"), \
-									"<span class='userdanger'>[feeder] forces you to eat [parent]!</span>")
+		eater.visible_message(
+			SPAN_DANGER("[feeder] forces [eater] to eat [parent]!</span>"),
+			span_userdanger("[feeder] forces you to eat [parent]!</span>"))
 
 	TakeBite(eater, feeder)
 

@@ -192,9 +192,96 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "brightlight")
 
+/datum/quirk/illiterate
+	name = "Illiterate"
+	desc = "You can't read nor write, plain and simple."
+	value = -1
+	mob_trait = TRAIT_ILLITERATE
+	gain_text = "<span class='notice'>The knowledge of how to read seems to escape from you.</span>"
+	lose_text = "<span class='notice'>Written words suddenly make sense again."
+
+/datum/quirk/masked_mook
+	name = "Masked Mook"
+	desc = "For some reason you don't feel... right without wearing some kind of gas mask."
+	gain_text = "<span class='danger'>You start feeling unwell without any gas mask on.</span>"
+	lose_text = "<span class='notice'>You no longer have a need to wear some gas mask.</span>"
+	value = -1
+	mood_quirk = TRUE
+	medical_record_text = "Patient feels more secure when wearing a gas mask."
+	var/mood_category = "masked_mook"
+
+/datum/quirk/masked_mook/on_process()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/clothing/mask/gas/gasmask = H.get_item_by_slot(ITEM_SLOT_MASK)
+	if(istype(gasmask))
+		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, mood_category, /datum/mood_event/masked_mook_incomplete)
+		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, mood_category, /datum/mood_event/masked_mook)
+	else
+		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, mood_category, /datum/mood_event/masked_mook)
+		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, mood_category, /datum/mood_event/masked_mook_incomplete)
+
+/datum/mood_event/masked_mook
+	description = span_nicegreen("I'm safe in my protective mask.")
+	mood_change = 3
+	timeout = 0
+
+/datum/mood_event/masked_mook_incomplete
+	description = SPAN_WARNING("I'm forced to breathe the horrors of the wastes!")
+	mood_change = -3
+	timeout = 0
+
+/datum/quirk/masked_mook/on_spawn()
+	. = ..()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/clothing/mask/gas/gasmask = new(get_turf(quirk_holder))
+	H.equip_to_slot(gasmask, ITEM_SLOT_MASK)
+	H.regenerate_icons()
+
 /////////////////////////////////////////////////////////////////
 //Tier 2 Negative Quirks, provide some sort of meaningful debuff
 /////////////////////////////////////////////////////////////////
+
+/datum/quirk/no_guns
+	name = "Fat-Fingered"
+	desc = "Due to the shape of your hands, width of your fingers or just not having fingers at all, you're unable to fire guns without accommodation."
+	value = -2
+	mob_trait = TRAIT_CHUNKYFINGERS
+	gain_text = "<span class='notice'>Your fingers feel... thick.</span>"
+	lose_text = "<span class='notice'>Your fingers feel normal again.</span>"
+
+/datum/quirk/flimsy
+	name = "Flimsy"
+	desc = "Your body is a little more fragile then most, decreasing total health by 20%."
+	value = -2
+	medical_record_text = "Patient has abnormally low capacity for injury."
+	gain_text = "<span class='notice'>You feel like you could break with a single hit."
+	lose_text = "<span class='notice'>You feel more durable."
+
+/datum/quirk/flimsy/add()
+	quirk_holder.maxHealth *= 0.8
+
+/datum/quirk/flimsy/remove() //how do admins even remove traits?
+	if(!quirk_holder)
+		return
+	quirk_holder.maxHealth *= 1.25
+
+/datum/quirk/paper_skin
+	name = "Paper Skin"
+	desc = "Your flesh is weaker, resulting in receiving cuts more easily."
+	value = -2
+	mob_trait = TRAIT_PAPER_SKIN
+	gain_text = "<span class='notice'>Your flesh feels weak!</span>"
+	lose_text = "<span class='notice'>Your flesh feels more durable!</span>"
+	medical_record_text = "Patient suffers from weak flesh, resulting in them receiving cuts far more easily."
+
+/datum/quirk/glass_bones
+	name = "Glass Bones"
+	desc = "Your bones are far more brittle, and more vulnerable to breakage."
+	value = -2
+	mob_trait = TRAIT_GLASS_BONES
+	gain_text = "<span class='notice'>Your bones feels weak!</span>"
+	lose_text = "<span class='notice'>Your bones feels more durable!</span>"
+	medical_record_text = "Patient suffers from brittle bones, resulting in them receiving breakages far more easily."
 
 /datum/quirk/blooddeficiency
 	name = "Acute Blood Deficiency"
@@ -232,25 +319,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient is unusually pacifistic and cannot bring themselves to cause physical harm."
 	antag_removal_text = "Your antagonistic nature has caused you to renounce your pacifism."
 
-/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 //Tier 3/4 Negative Quirks, provide crippling debuffs to you
-/////////////////////////////////////////////////////////////
-
-/datum/quirk/foreigner
-	name = "Foreigner"
-	desc = "You're not from around here. You don't know English!"
-	value = -3  /// You dont get another language with this, so you get 3 extra points.
-	gain_text = "<span class='notice'>The words being spoken around you don't make any sense."
-	lose_text = "<span class='notice'>You've developed fluency in English."
-
-/datum/quirk/foreigner/add()
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	human_holder.add_blocked_language(/datum/language/common)
-
-/datum/quirk/foreigner/remove()
-	var/mob/living/carbon/human/human_holder = quirk_holder
-	human_holder.remove_blocked_language(/datum/language/common)
-
+////////////////////////////////////////////////////////////
 
 /datum/quirk/brainproblems
 	name = "Brain Tumor"

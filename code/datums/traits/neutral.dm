@@ -235,3 +235,46 @@
 /datum/quirk/longtimer/on_spawn()
 	var/mob/living/carbon/C = quirk_holder
 	C.generate_fake_scars(rand(min_scars, max_scars))
+
+/datum/quirk/foreigner
+	name = "Foreigner"
+	desc = "You're not from around here. You don't know English!"
+	value = 0
+	gain_text = "<span class='notice'>The words being spoken around you don't make any sense."
+	lose_text = "<span class='notice'>You've developed fluency in English."
+
+/datum/quirk/foreigner/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.remove_language(/datum/language/common)
+// You can pick languages for your character, if you don't pick anything, enjoy the rest of the round understanding nothing.
+
+/datum/quirk/foreigner/remove() //i mean, the lose text explains it, so i'm making it actually work
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/common)
+
+/datum/quirk/overweight
+	name = "Overweight"
+	desc = "You're particularly fond of food, and join the round being overweight."
+	value = 0
+	gain_text = "<span class='notice'>You feel a bit chubby!</span>"
+	//no lose_text cause why would there be?
+
+/datum/quirk/overweight/on_spawn()
+	var/mob/living/M = quirk_holder
+	M.nutrition = rand(NUTRITION_LEVEL_FAT + NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_FAT + NUTRITION_LEVEL_START_MAX)
+	M.overeatduration = 100
+	ADD_TRAIT(M, TRAIT_FAT, OBESITY)
+
+/datum/quirk/vegetarian
+	name = "Vegetarian"
+	desc = "You find the idea of eating meat morally and/or physically repulsive."
+	value = 0
+	gain_text = "<span class='notice'>You feel repulsion at the idea of eating meat.</span>"
+	lose_text = "<span class='notice'>You feel like eating meat isn't that bad.  Might could even go for a cheeseburger.</span>"
+	medical_record_text = "Patient reports a vegetarian diet."
+
+/datum/quirk/vegetarian/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.liked_food &= ~MEAT
+	species.disliked_food |= MEAT
