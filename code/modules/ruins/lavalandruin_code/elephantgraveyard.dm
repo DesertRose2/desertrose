@@ -123,7 +123,7 @@
 /obj/structure/closet/crate/grave/PopulateContents()  //GRAVEROBBING IS NOW A FEATURE
 	..()
 	new /obj/effect/decal/remains/human/grave(src)
-	switch(rand(1,8))
+	switch(rand(1,7))
 		if(1)
 			new /obj/item/coin/gold(src)
 			new /obj/item/storage/wallet(src)
@@ -145,8 +145,6 @@
 		if(7)
 			new /obj/item/clothing/glasses/sunglasses(src)
 			new /obj/item/clothing/mask/cigarette/rollie(src)
-		else
-			break
 
 /obj/structure/closet/crate/grave/open(mob/living/user, obj/item/S)
 	if(!opened)

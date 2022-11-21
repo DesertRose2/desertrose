@@ -185,7 +185,7 @@
 		return
 
 	var/high_stress = (stress > 60) //things get psychosomatic from here on
-	switch(rand(1,6))
+	switch(rand(1,5))
 		if(1)
 			if(!high_stress)
 				to_chat(owner, SPAN_WARNING("You feel sick..."))
@@ -224,9 +224,6 @@
 				else
 					to_chat(owner, "<span class='userdanger'>You feel your heart lurching in your chest...</span>")
 					owner.adjustOxyLoss(8)
-
-		else
-			break
 
 /datum/brain_trauma/severe/discoordination
 	name = "Discoordination"

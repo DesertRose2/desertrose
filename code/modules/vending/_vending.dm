@@ -451,7 +451,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 				if(16 to 25)
 					freebie(user, 1)
 				if(26 to 75)
-					break
+					return
 				if(76 to 90)
 					tilt(user)
 				if(91 to 100)
