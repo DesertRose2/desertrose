@@ -5,6 +5,7 @@
 		"EditorConfig.EditorConfig",
 		"arcanis.vscode-zipfs",
 		"dbaeumer.vscode-eslint",
-		"kevinkyang.auto-comment-blocks"
+		"anturk.dmi-editor",
+		"esbenp.prettier-vscode"
 	]
 }
