@@ -106,7 +106,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386
+          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssl-dev:i386
 
       - uses: actions-rs/toolchain@v1
         if: steps.rustg-cache.outputs.cache-hit != 'true'
