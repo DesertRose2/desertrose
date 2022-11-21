@@ -167,11 +167,6 @@ jobs:
           sudo apt install g++-7
           sudo apt install g++-7-multilib
 
-      - name: Download librust_g artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: librust_g
-
       - name: Download libauxmos artifact
         uses: actions/download-artifact@v2
         with:
