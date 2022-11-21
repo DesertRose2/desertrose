@@ -1828,7 +1828,7 @@
 "dog" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/junk/machinery,
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/bunker)
 "doK" = (
@@ -2994,6 +2994,10 @@
 /area/f13/bunker)
 "fud" = (
 /obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
+"fuh" = (
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "ful" = (
@@ -4970,8 +4974,8 @@
 	name = "Vault Intercom";
 	pixel_x = -30
 	},
-/mob/living/simple_animal/hostile/supermutant/legendary,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/playable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "ivt" = (
@@ -13293,6 +13297,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
 /area/f13/bunker)
+"xmU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/item/reagent_containers/pill/patch/f13/healingpowder,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/bunker)
 "xnc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/machinepiletwo,
@@ -13367,10 +13377,14 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/effect/spawner/lootdrop/f13/medical/wasteland,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/f13/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "xtw" = (
@@ -13433,6 +13447,7 @@
 	light_color = "#706891"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/carpet/black/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
 "xxh" = (
@@ -13448,6 +13463,13 @@
 /obj/structure/flora/junglebush/large,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water,
+/area/f13/bunker)
+"xyn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/carpet/black/fifty,
+/turf/closed/wall/r_wall/f13vault{
+	icon_state = "2-i"
+	},
 /area/f13/bunker)
 "xyt" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -22461,7 +22483,7 @@ xRz
 xRz
 xRz
 xRz
-vye
+xmU
 akP
 qXt
 jlj
@@ -25314,7 +25336,7 @@ bsh
 bsh
 bsh
 bsh
-rog
+fuh
 rog
 rog
 bsh
@@ -29428,7 +29450,7 @@ bsh
 bsh
 rog
 rog
-rog
+fuh
 bsh
 bsh
 bsh
@@ -30689,7 +30711,7 @@ bEV
 xRz
 xRz
 xRz
-xRz
+xyn
 jGA
 rKb
 wxR

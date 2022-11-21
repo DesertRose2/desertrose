@@ -165,10 +165,6 @@
 /turf/closed/wall,
 /area/f13/ncr)
 "aaM" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 5
@@ -654,15 +650,15 @@
 	},
 /area/f13/legion)
 "aiD" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
 	},
 /obj/effect/spawner/lootdrop/trash,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#b2b2b2"
 	},
@@ -1116,11 +1112,37 @@
 	},
 /area/f13/building)
 "apa" = (
-/obj/machinery/vending/faction/leg,
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 23
 	},
+/obj/structure/rack{
+	icon_state = "rack-clothing"
+	},
+/obj/item/clothing/suit/f13/robe_liz,
+/obj/item/clothing/suit/f13/robe_liz,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxilia,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legauxiliaf,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowerfemale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/campfollowermale,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
+/obj/item/clothing/under/f13/legskirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "apd" = (
@@ -2259,6 +2281,14 @@
 /area/f13/building)
 "aKm" = (
 /obj/effect/spawner/lootdrop/trash,
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "aKo" = (
@@ -2763,8 +2793,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -5248,7 +5277,39 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/vending/faction/ncr,
+/obj/structure/rack{
+	icon_state = "rack-clothing"
+	},
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_dress/skirt,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_officer,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -5911,12 +5972,8 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
-	},
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 4
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
@@ -7044,8 +7101,7 @@
 "csx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -8338,21 +8394,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "cTz" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/sign/poster/prewar/poster79,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
 	},
-/obj/structure/chair/wood/modern{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/legion)
+/area/f13/building)
 "cTA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/glass,
@@ -8948,13 +8995,13 @@
 	},
 /area/f13/building)
 "dcR" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10;
-	pixel_y = 15
+/obj/structure/sign/poster/contraband/robust_softdrinks,
+/turf/closed/wall/f13/store{
+	color = "#a9a1a1";
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
 	},
-/turf/open/floor/plating/dirt,
-/area/f13/caves)
+/area/f13/building)
 "dcY" = (
 /mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9305,10 +9352,6 @@
 /area/f13/building)
 "diA" = (
 /obj/effect/spawner/lootdrop/trash,
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 10
@@ -10391,14 +10434,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dBt" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
 	},
-/obj/effect/decal/cleanable/generic,
-/obj/structure/chair/booth{
-	icon_state = "booth_west_north"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "dBE" = (
 /obj/structure/chair/booth_left,
@@ -10532,10 +10573,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dFc" = (
-/obj/structure/chair/f13chair1{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/wood{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "dFn" = (
@@ -15014,12 +15055,13 @@
 	},
 /area/f13/wasteland)
 "fgl" = (
+/obj/structure/fence,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+	dir = 8;
+	pixel_x = 9
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
+	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland)
 "fgp" = (
@@ -15289,9 +15331,9 @@
 /turf/open/water,
 /area/f13/wasteland)
 "flu" = (
-/obj/structure/chair/pew/left{
-	dir = 8;
-	icon_state = "pewend_left_cog"
+/obj/structure/chair/sofa/corp/right{
+	color = "#614E6E";
+	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/f13/city)
@@ -15475,11 +15517,9 @@
 	},
 /area/f13/building)
 "fnB" = (
-/obj/structure/chair/wood/modern{
-	dir = 8
-	},
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/chair/wood,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fnE" = (
@@ -16436,14 +16476,12 @@
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "fEm" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+/obj/structure/sign/poster/contraband/lamarr,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
+/area/f13/building)
 "fEq" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -17398,13 +17436,12 @@
 	},
 /area/f13/ncr)
 "fWH" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/wood{
+	dir = 1
 	},
-/obj/structure/chair/booth{
-	icon_state = "booth_east_north"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "fWI" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -18036,13 +18073,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "ggB" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -18284,6 +18320,8 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -19380,9 +19418,9 @@
 /area/f13/wasteland)
 "gzY" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/wood{
+	dir = 8
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -19861,7 +19899,7 @@
 	},
 /area/f13/ncr)
 "gJA" = (
-/obj/item/chair/wood/modern,
+/obj/item/chair/wood,
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 9;
 	icon_state = "rubble"
@@ -20119,12 +20157,13 @@
 	},
 /area/f13/wasteland)
 "gNS" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/wood/modern{
-	dir = 1
+/obj/structure/chair/bench{
+	dir = 4
 	},
-/turf/open/floor/f13/wood,
-/area/f13/building)
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2left"
+	},
+/area/f13/wasteland)
 "gNT" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
@@ -20841,13 +20880,12 @@
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "hbY" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 9;
@@ -21578,10 +21616,6 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
 "hpu" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
-	},
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 9
@@ -21589,6 +21623,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 10
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -21966,9 +22004,7 @@
 /area/f13/tunnel)
 "hvP" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10;
-	pixel_y = 15
+	dir = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
@@ -22892,10 +22928,10 @@
 	},
 /area/f13/wasteland)
 "hKC" = (
-/obj/structure/chair/f13chair1{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/wood{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "hKH" = (
@@ -22991,14 +23027,10 @@
 /area/f13/building)
 "hMb" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/building)
+/turf/open/floor/plating/dirt,
+/area/f13/caves)
 "hMe" = (
 /obj/effect/mine/stun,
 /obj/effect/decal/cleanable/dirt,
@@ -23084,9 +23116,6 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "hNr" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
 	dir = 1
@@ -23126,15 +23155,16 @@
 	},
 /area/f13/wasteland)
 "hOq" = (
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 8
+	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+	dir = 4;
+	pixel_x = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/building)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
 "hOs" = (
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road,
@@ -23310,9 +23340,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/remains/human,
-/obj/structure/chair/booth{
-	icon_state = "booth_east_south"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "hTj" = (
@@ -23738,16 +23765,6 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/building)
-"hZv" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/f13chair1{
-	pixel_x = -10
-	},
-/obj/structure/chair/f13chair1{
-	pixel_x = 10
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/building)
 "hZw" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -25212,18 +25229,18 @@
 	},
 /area/f13/wasteland)
 "ixG" = (
+/obj/effect/turf_decal/weather/dirt{
+	color = "#a98c5d";
+	dir = 4
+	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/building)
+/area/f13/wasteland)
 "ixH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -25306,30 +25323,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "iyz" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/building)
-"iyD" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+	dir = 4;
+	pixel_x = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/building)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "iyH" = (
 /obj/structure/fluff/railing/corner{
 	dir = 8
@@ -25456,16 +25455,16 @@
 	},
 /area/f13/wasteland)
 "iAn" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
 	},
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
@@ -26120,8 +26119,8 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#b2b2b2"
@@ -28129,25 +28128,16 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"jqQ" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright1"
-	},
-/area/f13/wasteland)
 "jrd" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
 	},
 /obj/effect/spawner/lootdrop/trash,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#a1a1a1"
 	},
@@ -29184,6 +29174,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/sign/poster/contraband/lusty_xenomorph,
 /turf/closed/wall/f13/store{
 	desc = "A pre-War wall made of solid concrete.";
 	name = "concrete wall"
@@ -29459,6 +29450,8 @@
 	pixel_x = -9;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -29676,11 +29669,12 @@
 	},
 /area/f13/building)
 "jTB" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/item/binoculars,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -17;
+	pixel_y = 11
+	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2bottom"
 	},
@@ -29884,12 +29878,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jWa" = (
-/obj/structure/chair/wood/modern{
-	dir = 4;
-	icon_state = "wooden_chair_old"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/wood{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jWb" = (
@@ -30296,13 +30289,13 @@
 	pixel_y = 15
 	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10;
-	pixel_y = 15
-	},
-/obj/structure/chair/bench{
 	pixel_x = 15;
 	pixel_y = -5
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -17;
+	pixel_y = 11
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -30921,15 +30914,14 @@
 	},
 /area/f13/building)
 "klU" = (
-/obj/structure/chair/wood/modern{
-	dir = 4;
-	icon_state = "wooden_chair_old"
-	},
 /obj/effect/decal/remains{
 	icon_state = "remains"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/wood{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "kmn" = (
@@ -35074,6 +35066,14 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "lEC" = (
@@ -35220,13 +35220,13 @@
 	},
 /area/f13/building)
 "lHo" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#b2b2b2"
@@ -35489,12 +35489,11 @@
 	},
 /area/f13/wasteland)
 "lNa" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 5
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
+	},
+/obj/structure/chair/bench{
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -35656,6 +35655,14 @@
 	dir = 4
 	},
 /obj/effect/decal/remains/human,
+/obj/structure/fluff/railing{
+	color = "#968d87";
+	dir = 8
+	},
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "lPT" = (
@@ -35755,9 +35762,9 @@
 	dir = 8;
 	icon_state = "twindowold"
 	},
-/obj/structure/chair/stool{
-	dir = 4;
-	icon_state = "bench_center"
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/city)
@@ -35989,8 +35996,7 @@
 /area/f13/building)
 "lWj" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
+	dir = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -37408,8 +37414,8 @@
 	color = "#363636"
 	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	color = "#645546";
@@ -37638,12 +37644,12 @@
 /area/f13/caves)
 "mCK" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
-	},
 /obj/structure/sign/poster/prewar/poster89{
 	pixel_x = -32
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -13
 	},
 /turf/open/floor/wood{
 	icon_state = "housewood3-broken"
@@ -38065,8 +38071,8 @@
 "mMC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -5
+	dir = 8;
+	pixel_x = -13
 	},
 /turf/open/floor/wood{
 	icon_state = "housewood3-broken"
@@ -39008,15 +39014,6 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"ndG" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2right"
-	},
-/area/f13/wasteland)
 "ndH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt{
@@ -42659,13 +42656,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple/side,
 /area/f13/followers)
 "oqr" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
@@ -42777,18 +42774,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
-"orV" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "twindowold"
-	},
-/obj/structure/chair/stool{
-	icon_state = "bench"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
-	dir = 8
-	},
-/area/f13/city)
 "orZ" = (
 /obj/structure/table/wood/settler,
 /obj/structure/guillotine,
@@ -43657,15 +43642,14 @@
 /area/f13/wasteland)
 "oHu" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 5
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/machinery/light/small{
 	brightness = 3;
+	dir = 8
+	},
+/obj/structure/chair/bench{
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -44051,9 +44035,7 @@
 /area/f13/farm)
 "oNZ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/f13chair1{
-	pixel_x = -3
-	},
+/obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/building)
 "oOj" = (
@@ -45722,14 +45704,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"pqB" = (
-/obj/structure/chair/wood/modern{
-	dir = 4;
-	icon_state = "wooden_chair_old"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "pqE" = (
 /obj/structure/fence/handrail{
 	density = 0;
@@ -45970,8 +45944,9 @@
 /area/f13/wasteland)
 "pvk" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+	dir = 8;
+	pixel_x = -17;
+	pixel_y = 11
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright3"
@@ -48331,12 +48306,11 @@
 	},
 /area/f13/building)
 "qmy" = (
-/obj/structure/chair/wood/modern{
-	dir = 8;
-	icon_state = "wooden_chair_old"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qmz" = (
@@ -49445,7 +49419,8 @@
 /area/f13/building)
 "qEU" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical"
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -52122,7 +52097,6 @@
 /area/f13/wasteland)
 "rDz" = (
 /obj/structure/campfire/barrel,
-/obj/effect/decal/waste,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
 "rDF" = (
@@ -52385,10 +52359,6 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "rIG" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 5
-	},
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 6
@@ -52396,6 +52366,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 5
+	},
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/wasteland)
@@ -55075,15 +55049,15 @@
 	},
 /area/f13/building)
 "sza" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
 	},
 /obj/effect/spawner/lootdrop/trash,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
 	},
@@ -56119,8 +56093,7 @@
 "sQI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 5
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -56631,19 +56604,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"sYw" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "twindowold"
-	},
-/obj/structure/chair/stool{
-	dir = 1;
-	icon_state = "bench"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/side{
-	dir = 4
-	},
-/area/f13/city)
 "sYV" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -58486,6 +58446,8 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -58820,8 +58782,9 @@
 	dir = 4;
 	icon_state = "twindowold"
 	},
-/obj/structure/chair/stool{
-	icon_state = "bench"
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 4
@@ -58965,15 +58928,6 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
-"tME" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/chair/booth{
-	icon_state = "booth_west_south"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "tMK" = (
 /obj/structure/bed,
@@ -59206,12 +59160,6 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/city)
 "tQl" = (
-/obj/structure/chair/wood/modern{
-	dir = 1
-	},
-/obj/structure/chair/wood/modern{
-	dir = 1
-	},
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/light/small/broken,
@@ -59219,6 +59167,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
+	},
+/obj/structure/chair/wood{
+	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -59415,8 +59366,8 @@
 	dir = 8
 	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#a1a1a1"
@@ -59947,6 +59898,26 @@
 	color = "#363636"
 	},
 /obj/structure/closet/cabinet/anchored,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/f13/military/leather,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
+/obj/item/clothing/shoes/roman,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "ubO" = (
@@ -60013,8 +59984,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/f13/ruins{
-	color = "#d9cdb9"
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
 	},
 /area/f13/building)
 "ucZ" = (
@@ -60148,13 +60120,13 @@
 /turf/open/indestructible/ground/outside/dirt/sonora,
 /area/f13/farm)
 "ufI" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#a1a1a1"
@@ -61153,9 +61125,9 @@
 	dir = 4;
 	icon_state = "twindowold"
 	},
-/obj/structure/chair/stool{
+/obj/structure/chair/bench{
 	dir = 4;
-	icon_state = "bench_center"
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/city)
@@ -62124,9 +62096,9 @@
 /area/f13/building)
 "uSi" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10;
-	pixel_y = 15
+	dir = 4;
+	pixel_x = 16;
+	pixel_y = 11
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -63012,9 +62984,6 @@
 "vgd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/egg_smudge,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/building)
 "vgg" = (
@@ -67964,7 +67933,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/wood,
 /area/f13/bar)
 "wNu" = (
 /obj/structure/table/wood/settler,
@@ -67972,7 +67941,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet4"
+	},
 /area/f13/bar)
 "wNy" = (
 /obj/structure/fence,
@@ -68003,9 +67974,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/wood/f13/carpet{
-	icon_state = "torncarpet12"
-	},
+/turf/open/floor/wood/f13/carpet,
 /area/f13/bar)
 "wNS" = (
 /mob/living/simple_animal/hostile/ghoul,
@@ -68257,12 +68226,8 @@
 	dir = 8
 	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
-	},
-/obj/structure/fluff/railing{
-	color = "#968d87";
-	dir = 4
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#d7d7d7"
@@ -68299,15 +68264,15 @@
 /turf/open/floor/wood,
 /area/f13/bar)
 "wSc" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
 	},
 /obj/effect/spawner/lootdrop/trash,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "wSd" = (
@@ -68588,14 +68553,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"wWe" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/wood/f13/carpet{
-	icon_state = "damaged"
-	},
-/area/f13/bar)
 "wWh" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wooden,
@@ -68917,10 +68874,6 @@
 	},
 /area/f13/ncr)
 "xbP" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
-	},
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
 	dir = 4
@@ -70303,7 +70256,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "damaged"
+	},
 /area/f13/bar)
 "xzq" = (
 /turf/open/floor/f13/wood{
@@ -70546,12 +70501,11 @@
 /area/f13/building)
 "xEx" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 5
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
+	},
+/obj/structure/chair/bench{
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -70874,9 +70828,9 @@
 	dir = 8;
 	icon_state = "twindowold"
 	},
-/obj/structure/chair/stool{
-	dir = 1;
-	icon_state = "bench"
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
 	dir = 8
@@ -71095,13 +71049,13 @@
 	},
 /area/f13/building)
 "xMg" = (
-/obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
-	},
 /obj/structure/fluff/railing{
 	color = "#968d87";
 	dir = 4
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
@@ -71364,8 +71318,7 @@
 /area/f13/building)
 "xQh" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -71420,8 +71373,8 @@
 	dir = 8
 	},
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = 10
+	dir = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#b2b2b2"
@@ -71862,8 +71815,9 @@
 /area/f13/wasteland)
 "xYP" = (
 /obj/structure/chair/bench{
-	icon_state = "church vertical";
-	pixel_x = -10
+	dir = 8;
+	pixel_x = -17;
+	pixel_y = 11
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2"
@@ -71959,6 +71913,10 @@
 /area/f13/building)
 "xZO" = (
 /obj/structure/fence,
+/obj/structure/chair/bench{
+	dir = 8;
+	pixel_x = 9
+	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2left"
 	},
@@ -72036,19 +71994,15 @@
 	},
 /turf/open/floor/wood,
 /area/f13/building)
-"yaA" = (
-/obj/structure/chair/f13chair1,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "yaB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "yaJ" = (
-/obj/structure/chair/pew/right{
-	dir = 4;
-	icon_state = "pewend_right_cog"
+/obj/structure/chair/sofa/corp/left{
+	color = "#614E6E";
+	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/f13/city)
@@ -74597,7 +74551,7 @@ dlK
 lUt
 daK
 klG
-orV
+xJg
 lRL
 xJg
 yfB
@@ -76141,7 +76095,7 @@ vfx
 ecK
 tKf
 uwp
-sYw
+tKf
 xLw
 mvv
 mvv
@@ -78158,8 +78112,8 @@ gbL
 gcK
 gcK
 ayO
+hMb
 qqO
-dcR
 bcM
 bcM
 bcM
@@ -79442,8 +79396,8 @@ gcK
 gcK
 gcK
 qPm
-qqO
 hvP
+qqO
 mjt
 bcM
 mXy
@@ -87112,8 +87066,8 @@ wbd
 woH
 kBU
 wxq
-whp
-whp
+xuy
+xuy
 oYS
 xXh
 ykR
@@ -87370,7 +87324,7 @@ qFM
 kur
 wyt
 wNq
-whp
+wfG
 whp
 xCw
 whp
@@ -87627,7 +87581,7 @@ qFM
 ozx
 wyt
 whp
-wWe
+whp
 whp
 whp
 whp
@@ -89682,7 +89636,7 @@ whp
 whp
 whp
 xuy
-vug
+wfG
 xkI
 nsg
 cpK
@@ -91406,7 +91360,7 @@ aYK
 sYX
 eLe
 dvd
-gzY
+nXg
 gXY
 fyf
 kGc
@@ -92716,8 +92670,8 @@ iXW
 iXW
 bex
 jmD
-xPO
-xPO
+fWH
+gzY
 iXW
 iXW
 iXW
@@ -93745,9 +93699,9 @@ tKZ
 rdy
 wSx
 iXW
-pqB
+oTa
 ddo
-pqB
+nXg
 iXW
 rkZ
 sYX
@@ -94005,7 +93959,7 @@ iXW
 jWM
 iXW
 kmQ
-iXW
+mVL
 rkZ
 sYX
 fyf
@@ -94745,7 +94699,7 @@ eTq
 xPO
 nba
 fZO
-gNS
+oTa
 hwy
 bFJ
 pBv
@@ -98106,7 +98060,7 @@ emn
 hyj
 xZO
 xZO
-pWe
+fgl
 giZ
 giZ
 giZ
@@ -98361,9 +98315,9 @@ rYS
 bbz
 unI
 egK
-fgl
-fgl
-fEm
+wGJ
+wGJ
+erY
 giZ
 jRX
 kha
@@ -100160,8 +100114,8 @@ sBk
 dkg
 boU
 giZ
-hMb
-ixG
+jdg
+azc
 azc
 giZ
 ygZ
@@ -100418,7 +100372,7 @@ dkg
 umd
 giZ
 hNr
-iyz
+azc
 jdg
 gCw
 xqp
@@ -100674,8 +100628,8 @@ oKA
 dkg
 vQf
 giZ
-hOq
-iyD
+jdg
+azc
 azc
 giZ
 ygZ
@@ -104817,7 +104771,7 @@ eLF
 tOg
 iTE
 rdy
-hZv
+oNZ
 wBd
 bbf
 qvU
@@ -108269,7 +108223,7 @@ xGH
 mvv
 mvv
 mvv
-qEU
+iyz
 mvv
 mvv
 acn
@@ -111726,7 +111680,7 @@ jIB
 hqs
 omJ
 omJ
-fFF
+dBt
 eqv
 eqv
 hrx
@@ -112079,8 +112033,8 @@ koD
 cpK
 xJd
 oNH
-dBt
-tME
+oNH
+xQu
 xQu
 mAu
 lda
@@ -112850,7 +112804,7 @@ sBk
 cpK
 xJd
 xQu
-fWH
+xQu
 hSX
 xQu
 wFp
@@ -113008,12 +112962,12 @@ uPP
 fyf
 fyf
 tVV
-usx
+cTz
 hCa
 ipn
 iZL
 usx
-usx
+fEm
 usx
 kEn
 kOM
@@ -113522,7 +113476,7 @@ erY
 pWN
 oCi
 lae
-hvu
+dcR
 hDn
 iqT
 jas
@@ -116136,7 +116090,7 @@ vSp
 hyM
 ncw
 xQh
-ndG
+cam
 nPg
 hQr
 erY
@@ -116649,8 +116603,8 @@ pUB
 tOg
 tKk
 rJo
-hAj
-pyZ
+gNS
+cpK
 ajD
 wGJ
 apk
@@ -117893,7 +117847,7 @@ uAs
 ggK
 lab
 oPZ
-yaA
+ggK
 wRK
 wRK
 wRK
@@ -119304,14 +119258,14 @@ fyf
 rsE
 kGc
 dNT
-xYP
+gQv
 pvk
 jTB
 dNT
 dNT
 gQv
 jZE
-jqQ
+dNT
 xYP
 pvk
 muk
@@ -124198,7 +124152,7 @@ oqr
 oqr
 oqr
 oqr
-sza
+oqr
 oqr
 oqr
 oqr
@@ -124442,7 +124396,7 @@ pWz
 pWz
 xkK
 iVP
-cTz
+ozY
 ozY
 oHT
 pWz
@@ -129591,11 +129545,11 @@ mvv
 mvv
 doX
 xbP
-xbP
-xbP
-xbP
-xbP
-xbP
+ixG
+ixG
+ixG
+ixG
+ixG
 wDc
 fyf
 qTY
@@ -137811,18 +137765,18 @@ pWz
 pWz
 pWz
 wFo
-eId
+hOq
 lPQ
-eId
-eId
+hOq
+hOq
 lEn
 aKm
-eId
-eId
+hOq
+hOq
 ecX
 xuH
 sWQ
-eId
+hOq
 lEn
 dwO
 pWz
