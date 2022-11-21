@@ -71,6 +71,63 @@ jobs:
           tgui/bin/tgui --build
           bash tools/ci/dm.sh -DCIBUILDING -DCITESTING -DALL_MAPS tgstation.dme
 
+  rust_g:
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    name: Build RustG
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: 'tgstation/rust-g'
+          path: 'rustg'
+
+      - name: Cache cargo registry
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo/registry
+          key: rustg-registry-${{ hashFiles('rustg/Cargo.lock') }}
+
+      - name: Cache cargo index
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo/git
+          key: rustg-index-${{ hashFiles('rustg/Cargo.lock') }}
+
+      - name: Cache cargo build
+        id: rustg-cache
+        uses: actions/cache@v2
+        with:
+          path: rustg/target
+          key: rustg-build-target-${{ hashFiles('rustg/Cargo.lock') }}
+
+      - name: Install Ubuntu Deps
+        if: steps.rustg-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386
+
+      - uses: actions-rs/toolchain@v1
+        if: steps.rustg-cache.outputs.cache-hit != 'true'
+        with:
+          profile: minimal
+          toolchain: ${{env.toolchain}}
+          target: ${{env.target}}
+          override: true
+
+      - name: Build
+        if: steps.rustg-cache.outputs.cache-hit != 'true'
+        run: |
+          cargo rustc --manifest-path rustg/Cargo.toml --target=${{env.target}} --release --verbose --all-features
+          ldd rustg/target/${{env.target}}/release/librust_g.so
+      
+      - name: Upload librust_g artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: librust_g
+          path: rustg/target/${{env.target}}/release/librust_g.so
+
   auxmos:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     name: Build Auxmos
@@ -132,7 +189,7 @@ jobs:
   run_all_tests:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     name: Integration Tests
-    needs: [auxmos]
+    needs: [auxmos, rust_g]
     runs-on: ubuntu-20.04
     services:
       mysql:
@@ -167,13 +224,12 @@ jobs:
           sudo apt install g++-7
           sudo apt install g++-7-multilib
 
-      - name: Install rust-g
-        run: |
-          sudo apt install zlib1g:i386
-          sudo apt install libssl1.1:i386
-          bash tools/ci/install_rust_g.sh
+      - name: Download librust_g artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: librust_g
 
-      - name: Download libauxmos library
+      - name: Download libauxmos artifact
         uses: actions/download-artifact@v2
         with:
           name: libauxmos
