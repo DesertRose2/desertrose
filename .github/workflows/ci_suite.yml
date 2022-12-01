@@ -80,7 +80,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: 'Putnam3145/auxmos'
-          ref: 'fe6be06610fe366d01edf5b66e6ee602323050cf'
+          ref: 'v0.3.2'
           path: 'auxmos'
 
       - name: Cache cargo registry
@@ -166,14 +166,14 @@ jobs:
           sudo apt install gcc-multilib
           sudo apt install g++-7
           sudo apt install g++-7-multilib
-
+  
       - name: Install rust-g
         run: |
           sudo apt install zlib1g:i386
           sudo apt install libssl1.1:i386
           bash tools/ci/install_rust_g.sh
 
-      - name: Download libauxmos library
+      - name: Download libauxmos artifact
         uses: actions/download-artifact@v2
         with:
           name: libauxmos
