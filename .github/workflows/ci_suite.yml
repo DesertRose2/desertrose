@@ -166,6 +166,12 @@ jobs:
           sudo apt install gcc-multilib
           sudo apt install g++-7
           sudo apt install g++-7-multilib
+  
+      - name: Install rust-g
+        run: |
+          sudo apt install zlib1g:i386
+          sudo apt install libssl1.1:i386
+          bash tools/ci/install_rust_g.sh
 
       - name: Download libauxmos artifact
         uses: actions/download-artifact@v2
@@ -175,7 +181,6 @@ jobs:
       - name: Compile and run tests
         run: |
           bash tools/ci/install_byond.sh
-          bash tools/ci/install_rust_g.sh
           source $HOME/BYOND/byond/bin/byondsetup
           tgui/bin/tgui --build
           bash tools/ci/dm.sh -DCIBUILDING tgstation.dme
